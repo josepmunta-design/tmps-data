@@ -1419,6 +1419,51 @@ line-height:1;
 .subproc-desc {
   word-break: normal;
 }
+/* ===== ESTILO PREMIUM: MODELOS (Cómo lo entiende cada modelo) ===== */
+
+.tmps-mjps-root .modelo-body {
+  padding: 10px 12px 12px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* Separación clara entre bloques 0–5 */
+.tmps-mjps-root .modelo-body p {
+  margin: 0 0 12px 0;
+}
+
+/* Resaltar los encabezados numerados (0), (1)… */
+.tmps-mjps-root .modelo-body p strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Referencias */
+.tmps-mjps-root .modelo-body h4 {
+  margin-top: 14px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.tmps-mjps-root .modelo-body ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+.tmps-mjps-root .modelo-body li {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  opacity: 0.85;
+}
 
   </style>
 </head>
@@ -1662,11 +1707,91 @@ Capacidad de modular el estado de base del organismo —especialmente la activac
 `,
 
   subprocesos:[
+  {
+  id:'RF_resp',
+  label:'1RF. Respiración y control autonómico',
+  desc:`Intervenciones sobre ritmo respiratorio y activación vagal para modular la activación autonómica de base. 
+La respiración funciona aquí como una vía de acceso directa al sistema nervioso autónomo y establece las condiciones fisiológicas mínimas para que otros procesos terapéuticos puedan desplegarse.`,
+  
+  entiendeModelos: [
+
     {
-      id:'RF_resp',
-      label:'1RF. Respiración y control autonómico',
-      desc:'Intervenciones sobre ritmo respiratorio y activación vagal para subir o bajar la activación autonómica de base.'
+      modelo:'Somatic Experiencing',
+      autores:'Peter A. Levine',
+      comoEntiende:`
+En Somatic Experiencing, la respiración se entiende como un regulador central de la activación fisiológica asociada a respuestas defensivas incompletas. Las alteraciones respiratorias (hiperventilación, bloqueo respiratorio, respiración superficial) indican que el organismo permanece atrapado en estados de lucha, huida o colapso que no llegaron a completarse en el momento del evento traumático.
+
+La intervención sobre la respiración no busca imponer un patrón “correcto”, sino acompañar al sistema nervioso en la descarga progresiva de la activación residual. Cambios espontáneos en el ritmo respiratorio son leídos como señales de reorganización autonómica, no como simples efectos secundarios.
+
+Desde este modelo, la respiración es un marcador clínico del estado del sistema nervioso y una vía para restaurar la autorregulación biológica sin necesidad de exposición narrativa prematura.`,
+      refs:[
+        'Levine, P. A. (1997). Waking the Tiger. North Atlantic Books.',
+        'Levine, P. A. (2010). In an Unspoken Voice. North Atlantic Books.'
+      ]
     },
+
+    {
+      modelo:'Sensorimotor Psychotherapy',
+      autores:'Pat Ogden',
+      comoEntiende:`
+La Psicoterapia Sensoriomotriz entiende la respiración como parte del patrón somático global que organiza la experiencia. Cambios en la respiración están directamente vinculados a postura, tono muscular y orientación atencional, formando un sistema integrado de regulación.
+
+La respiración se utiliza para modular la activación desde abajo hacia arriba, permitiendo que el paciente permanezca dentro de la ventana de tolerancia mientras se activan contenidos emocionales o relacionales. No se trabaja como técnica aislada, sino como elemento del conjunto cuerpo-atención-emoción.
+
+El foco clínico está en ayudar al paciente a notar y diferenciar estados respiratorios, facilitando una relación más flexible con la activación corporal.`,
+      refs:[
+        'Ogden, P., Minton, K., & Pain, C. (2006). Trauma and the Body. Norton.',
+        'Ogden, P. (2015). Sensorimotor Psychotherapy. Norton.'
+      ]
+    },
+
+    {
+      modelo:'Modelo Polivagal',
+      autores:'Stephen W. Porges',
+      comoEntiende:`
+Desde la teoría polivagal, la respiración es un modulador directo del sistema vagal ventral, implicado en estados de seguridad y compromiso social. La respiración lenta y profunda favorece la activación de circuitos de calma que inhiben respuestas defensivas más primitivas.
+
+La respiración no se concibe solo como una técnica de relajación, sino como una señal neuroceptiva de seguridad que reorganiza la jerarquía autonómica. Cambios respiratorios influyen en la percepción implícita de amenaza o seguridad antes de cualquier evaluación cognitiva.
+
+Este modelo justifica el uso de la respiración como base fisiológica para el trabajo emocional y relacional posterior.`,
+      refs:[
+        'Porges, S. W. (2011). The Polyvagal Theory. Norton.',
+        'Porges, S. W. (2017). The Pocket Guide to the Polyvagal Theory. Norton.'
+      ]
+    },
+
+    {
+      modelo:'ACT',
+      autores:'Steven C. Hayes',
+      comoEntiende:`
+En ACT, la respiración no se utiliza primariamente para reducir síntomas, sino como ancla atencional que facilita la apertura a la experiencia presente. El foco está en cambiar la relación con las sensaciones corporales, no en eliminarlas.
+
+La respiración permite entrenar la observación consciente de la activación fisiológica sin lucha ni evitación, ampliando la flexibilidad psicológica. Se usa para contactar con el momento presente y sostener experiencias internas difíciles al servicio de valores.
+
+Desde esta perspectiva, la respiración es una herramienta de entrenamiento de conciencia y aceptación, no un método de control autonómico en sentido estricto.`,
+      refs:[
+        'Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2011). Acceptance and Commitment Therapy. Guilford Press.',
+        'Hayes, S. C. (2019). A Liberated Mind. Avery.'
+      ]
+    },
+
+    {
+      modelo:'DBT',
+      autores:'Marsha M. Linehan',
+      comoEntiende:`
+En DBT, la respiración se entiende como una estrategia directa de reducción de vulnerabilidad fisiológica en estados de alta activación emocional. Forma parte de los protocolos de tolerancia al malestar y regulación emocional.
+
+La respiración controlada se utiliza para recuperar control conductual y reducir impulsividad cuando la activación supera la capacidad de autorregulación del paciente. El objetivo no es exploratorio, sino funcional: estabilizar para evitar conductas desadaptativas.
+
+Este enfoque sitúa la respiración como una intervención pragmática y de primera línea en momentos de crisis.`,
+      refs:[
+        'Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). Guilford Press.'
+      ]
+    }
+
+  ]
+},
+
     {
       id:'RF_ground',
       label:'2RF. Grounding sensorial',
@@ -2782,11 +2907,151 @@ cambia: `
 Transforma la postura interna hacia pensamientos y emociones, permitiendo relacionarse con la experiencia en lugar de quedar atrapado en ella. Este proceso ha sido ampliamente descrito en la literatura contemporánea: Kabat-Zinn (1990) define mindfulness como la capacidad de observar pensamientos y emociones con apertura y sin juicio, lo que reduce reactividad automática. En ACT, Hayes et al. (1999/2011) muestran que la desfusión cognitiva permite ver los contenidos mentales como eventos transitorios, no como verdades que dictan conducta. Gilbert (2009) demuestra que el desarrollo de autocompasión activa sistemas de regulación afectiva basados en seguridad y cuidado, disminuyendo la autocrítica y la vergüenza. Desde la metacognición, Wells (2009) explica que cambiar la relación con los pensamientos —y no su contenido— reduce preocupación, rumiación y control mental improductivo. En conjunto, estos autores justifican que mejorar la relación interna implica adoptar una postura consciente, flexible y compasiva hacia la propia vida mental, lo que abre espacio para la elección, la regulación emocional y el cambio conductual.
 `,
   subprocesos:[
-  {
-    id:'RI_dialogoFuncional',
-    label:'Diálogo interno funcional',
-    desc:'Fomentar un diálogo interno claro, realista y útil, reduciendo la confusión y la autoexigencia desorganizada.'
-  },
+// SUSTITUYE tu subproceso actual RI_dialogoFuncional por este objeto COMPLETO:
+
+{
+  id:'RI_dialogoFuncional',
+  label:'Diálogo interno funcional',
+  desc:`Capacidad de mantener una conversación interna que orienta, regula y repara, en lugar de atacar, confundir o paralizar.
+Un diálogo interno funcional permite integrar emoción, necesidad y criterios de realidad para decidir y actuar con coherencia, sin rumiación estéril ni autoexigencia desorganizada.`,
+
+  entiendeModelos:[
+
+    {
+      modelo:'Internal Family Systems (IFS)',
+      autores:'Richard C. Schwartz',
+      comoEntiende:`0) ¿Dónde sitúa el núcleo del problema?
+IFS sitúa el núcleo del problema en la pérdida de liderazgo del Self y en la polarización del sistema interno. El malestar no reside en las partes en sí, sino en cómo se organizan y gobiernan la experiencia interna.
+
+1) ¿Qué es este subproceso para el modelo?
+El diálogo interno es la relación dinámica entre partes (subpersonalidades) con funciones protectoras o vulnerables. La experiencia interna se organiza como un sistema que puede estar coordinado o fragmentado.
+
+2) ¿Qué función adaptativa cumple?
+El diálogo interno sirve para proteger al sistema del dolor emocional, la vergüenza, el abandono o la desorganización. Incluso las voces más duras buscan evitar un daño mayor desde estrategias aprendidas.
+
+3) ¿Cómo se vuelve disfuncional o rígido?
+Se vuelve rígido cuando las partes actúan de forma extrema y automática debido a polarización interna y ausencia de Self. Las estrategias protectoras no se actualizan y se repiten fuera de contexto.
+
+4) ¿Cómo concibe el cambio en este subproceso?
+El cambio ocurre cuando el Self emerge como organizador central: las partes son escuchadas sin obediencia automática, se reduce la polarización y el sistema recupera coordinación y flexibilidad.
+
+5) ¿Indicadores clínicos de mejora?
+El tono interno se vuelve más calmado y curioso, disminuye la urgencia reactiva, aumenta la capacidad de elección y la persona puede sostener emociones difíciles sin atacarse ni desconectarse.`,
+      refs:[
+        'Schwartz, R. C. (1995). Internal Family Systems Therapy. Guilford Press.',
+        'Schwartz, R. C., & Sweezy, M. (2020). Internal Family Systems Therapy (2nd ed.). Guilford Press.'
+      ]
+    },
+
+    {
+      modelo:'Terapia Focalizada en la Emoción (EFT)',
+      autores:'Leslie S. Greenberg',
+      comoEntiende:`0) ¿Dónde sitúa el núcleo del problema?
+EFT sitúa el núcleo del problema en bloqueos de procesamiento emocional, especialmente en la incapacidad de acceder, sostener y transformar emociones primarias adaptativas.
+
+1) ¿Qué es este subproceso para el modelo?
+El diálogo interno es un intercambio entre posiciones del self asociadas a emociones distintas, a menudo organizado en torno a una voz crítica y un self vulnerable que porta necesidades no satisfechas.
+
+2) ¿Qué función adaptativa cumple?
+El diálogo interno regula la experiencia emocional y orienta la acción. La voz crítica intenta movilizar cambio, prevenir error o evitar rechazo, aunque lo haga mediante vergüenza o ataque.
+
+3) ¿Cómo se vuelve disfuncional o rígido?
+Se cronifica cuando dominan emociones secundarias desadaptativas (vergüenza, desprecio) que bloquean el acceso a emociones primarias transformadoras. El self vulnerable queda sin validación ni respuesta reparadora.
+
+4) ¿Cómo concibe el cambio en este subproceso?
+El cambio implica transformación emocional: el diálogo pasa de ser punitivo a integrador. El crítico se reconfigura, el vulnerable expresa necesidad sin colapso y emerge una respuesta interna nueva que integra validación, límite y dirección.
+
+5) ¿Indicadores clínicos de mejora?
+Disminuye la autoagresión, aumenta la autoafirmación realista, aparece compasión con límites y la persona puede nombrar necesidades y sostener emociones con mayor estabilidad.`,
+      refs:[
+        'Greenberg, L. S. (2011). Emotion-Focused Therapy. APA.',
+        'Greenberg, L. S. (2015). Emotion-Focused Therapy: Coaching Clients to Work Through Their Feelings. APA.'
+      ]
+    },
+
+    {
+      modelo:'Terapia Centrada en la Compasión (CFT)',
+      autores:'Paul Gilbert',
+      comoEntiende:`0) ¿Dónde sitúa el núcleo del problema?
+CFT sitúa el núcleo del problema en la hiperactivación del sistema de amenaza y en la ausencia de un sistema interno de seguridad y afiliación suficientemente desarrollado.
+
+1) ¿Qué es este subproceso para el modelo?
+El diálogo interno es la expresión verbal de sistemas motivacionales/emocionales (amenaza, impulso/logro, calma-afiliación). La voz interna refleja qué sistema domina la experiencia.
+
+2) ¿Qué función adaptativa cumple?
+La autocrítica cumple funciones defensivas aprendidas: controlar conducta, evitar rechazo, prevenir fracaso o mantener pertenencia social. No es patológica en origen.
+
+3) ¿Cómo se vuelve disfuncional o rígido?
+Se vuelve rígida cuando el sistema de amenaza permanece crónicamente activado. El tono interno hostil mantiene vergüenza, inhibe exploración y refuerza evitación y síntomas.
+
+4) ¿Cómo concibe el cambio en este subproceso?
+El cambio implica desarrollar una mente compasiva: una forma de relacionarse consigo que combina calidez, validación y responsabilidad, desplazando la regulación desde amenaza hacia seguridad.
+
+5) ¿Indicadores clínicos de mejora?
+Aumenta la sensación de seguridad interna, disminuyen vergüenza y autodesprecio, la persona se corrige sin humillarse y afronta retos con mayor estabilidad.`,
+      refs:[
+        'Gilbert, P. (2009). The Compassionate Mind. Constable & Robinson.',
+        'Gilbert, P. (2014). The Compassionate Mind. New Harbinger.'
+      ]
+    },
+
+    {
+      modelo:'Terapia de Esquemas (Schema Therapy)',
+      autores:'Jeffrey E. Young',
+      comoEntiende:`0) ¿Dónde sitúa el núcleo del problema?
+La Terapia de Esquemas sitúa el núcleo del problema en la dominancia de modos desadaptativos, especialmente el Padre Punitivo/Crítico, y en la falta de un Adulto Saludable consolidado.
+
+1) ¿Qué es este subproceso para el modelo?
+El diálogo interno es la interacción entre modos del self (Niño Vulnerable, Crítico, Protectores, Adulto Saludable), cada uno con afectos, creencias y tendencias de acción específicas.
+
+2) ¿Qué función adaptativa cumple?
+Los modos críticos y protectores intentan mantener control y evitar dolor emocional. Los modos infantiles expresan necesidades básicas de apego, cuidado y protección.
+
+3) ¿Cómo se vuelve disfuncional o rígido?
+Se cronifica cuando domina el Padre Punitivo y los Protectores bloquean el acceso a necesidades emocionales. El sistema oscila entre autocastigo y evitación/desconexión.
+
+4) ¿Cómo concibe el cambio en este subproceso?
+El cambio consiste en fortalecer el Adulto Saludable como organizador central: valida, protege, pone límites al crítico y satisface necesidades de forma realista.
+
+5) ¿Indicadores clínicos de mejora?
+Disminuye el autocastigo, aumenta el autocuidado firme, mejora la capacidad de poner límites internos y externos y hay mayor coherencia entre necesidades y acciones.`,
+      refs:[
+        'Young, J. E., Klosko, J. S., & Weishaar, M. E. (2003). Schema Therapy. Guilford Press.',
+        'Arntz, A., & van Genderen, H. (2009). Schema Therapy for Borderline Personality Disorder. Wiley.'
+      ]
+    },
+
+    {
+      modelo:'Metacognición (MCT) / Descentramiento (MBCT)',
+      autores:'Adrian Wells / Segal, Williams & Teasdale',
+      comoEntiende:`0) ¿Dónde sitúa el núcleo del problema?
+Estos enfoques sitúan el núcleo del problema en el estilo de procesamiento cognitivo, no en el contenido del diálogo interno. El foco está en la rumiación, la preocupación y la monitorización de amenaza.
+
+1) ¿Qué es este subproceso para el modelo?
+El diálogo interno es un patrón repetitivo y abstracto de pensamiento orientado a prevenir, analizar o controlar, más que a resolver o actuar.
+
+2) ¿Qué función adaptativa cumple?
+Busca anticipar peligros, evitar errores y reducir incertidumbre. A corto plazo genera sensación de control; a largo plazo mantiene activación y bloqueo conductual.
+
+3) ¿Cómo se vuelve disfuncional o rígido?
+Se mantiene por creencias metacognitivas y hábitos atencionales que refuerzan el CAS (Cognitive Attentional Syndrome), haciendo el diálogo improductivo y autoperpetuante.
+
+4) ¿Cómo concibe el cambio en este subproceso?
+El cambio implica modificar la relación con el pensamiento: descentramiento, flexibilidad atencional y reducción del estilo rumiativo, sin necesidad de cambiar contenidos.
+
+5) ¿Indicadores clínicos de mejora?
+Disminuye la rumiación improductiva, aumenta la capacidad de soltar bucles mentales y mejora la orientación a acción y toma de decisiones.`,
+      refs:[
+        'Wells, A. (2009). Metacognitive Therapy for Anxiety and Depression. Guilford Press.',
+        'Segal, Z. V., Williams, J. M. G., & Teasdale, J. D. (2013). Mindfulness-Based Cognitive Therapy (2nd ed.). Guilford Press.'
+      ]
+    }
+
+  ]
+},
+
+
+
   {
     id:'RI_criticoInterno',
     label:'Crítico interno y vergüenza',
@@ -3801,12 +4066,144 @@ Proceso que organiza los patrones de vinculación, comunicación, límites, ment
     label:'Comunicación emocional',
     desc:'Expresar sentimientos, necesidades e intenciones con claridad, autenticidad y ajuste relacional.'
   },
-  {
-    id:'R_limitesInterpersonales',
-    label:'Límites interpersonales',
-desc:'Percibir, declarar y sostener fronteras personales en la relación (decir no, pedir espacio, acercarse o alejarse) protegiendo la propia integridad emocional.'
+{
+  id:'R_limitesInterpersonales',
+  label:'Límites interpersonales',
+  desc:`Capacidad de percibir, declarar y sostener fronteras personales en la relación con otros —decir no, pedir espacio, acercarse o alejarse— protegiendo la propia integridad emocional sin recurrir a sumisión, evitación o control.`,
+  
+  entiendeModelos:[
 
-  },
+    {
+      modelo:'Teoría del Apego (clínica)',
+      autores:'John Bowlby / Mary Ainsworth / autores contemporáneos',
+      comoEntiende:`0 · Núcleo del problema
+La teoría del apego sitúa el núcleo del problema en la inseguridad relacional: la dificultad para regular cercanía y distancia sin activar estrategias defensivas de hiperactivación o desactivación.
+
+1 · Qué es este subproceso
+Los límites interpersonales son la capacidad de modular proximidad y separación manteniendo el vínculo. No se trata solo de decir “no”, sino de regular la distancia relacional de forma flexible según seguridad percibida.
+
+2 · Función adaptativa
+Los límites permiten proteger la integridad emocional y, a la vez, sostener el apego. Sirven para preservar autonomía sin perder conexión.
+
+3 · Cómo se vuelve disfuncional
+Se vuelve rígido cuando la persona depende excesivamente del otro para regular seguridad (apego ansioso) o cuando evita el vínculo para no depender (apego evitativo). El límite se sustituye por sumisión, fusión o retirada.
+
+4 · Cómo concibe el cambio
+El cambio implica desarrollar seguridad relacional interna: poder sostener cercanía o distancia sin colapso, amenaza de abandono o cierre emocional.
+
+5 · Indicadores de mejora
+La persona puede decir no sin culpa excesiva, pedir lo que necesita, tolerar el desacuerdo y mantener el vínculo sin sobreadaptarse ni desaparecer.`,
+      refs:[
+        'Bowlby, J. (1969/1988). Attachment and Loss. Basic Books.',
+        'Mikulincer, M., & Shaver, P. R. (2016). Attachment in Adulthood. Guilford Press.'
+      ]
+    },
+
+    {
+      modelo:'Terapia de Esquemas',
+      autores:'Jeffrey E. Young',
+      comoEntiende:`0 · Núcleo del problema
+La Terapia de Esquemas sitúa el problema en esquemas y modos que distorsionan la percepción de derecho, peligro o culpa al poner límites.
+
+1 · Qué es este subproceso
+Los límites interpersonales reflejan la capacidad del Adulto Saludable para proteger al Niño Vulnerable frente a demandas externas invasivas o relaciones abusivas.
+
+2 · Función adaptativa
+Permiten satisfacer necesidades emocionales básicas (seguridad, autonomía, respeto) sin recurrir a sumisión ni ataque.
+
+3 · Cómo se vuelve disfuncional
+Se vuelve disfuncional cuando dominan esquemas como Subyugación, Autosacrificio, Abandono o Defectuosidad, activando modos de sumisión, sobreentrega o evitación.
+
+4 · Cómo concibe el cambio
+El cambio consiste en fortalecer el Adulto Saludable como voz interna que valida necesidades y pone límites firmes, incluso frente a culpa o miedo al rechazo.
+
+5 · Indicadores de mejora
+Disminuye la culpa al decir no, aumenta la coherencia entre necesidades y acciones, y la persona puede sostener límites sin romper la relación.`,
+      refs:[
+        'Young, J. E., Klosko, J. S., & Weishaar, M. E. (2003). Schema Therapy. Guilford Press.',
+        'Arntz, A., & van Genderen, H. (2009). Schema Therapy for Borderline Personality Disorder. Wiley.'
+      ]
+    },
+
+    {
+      modelo:'Terapia Dialéctico-Conductual (DBT)',
+      autores:'Marsha M. Linehan',
+      comoEntiende:`0 · Núcleo del problema
+DBT sitúa el núcleo del problema en la desregulación emocional e interpersonal que impide sostener límites sin escalar conflicto o colapsar.
+
+1 · Qué es este subproceso
+Los límites interpersonales son habilidades para equilibrar objetivos, relación y autorrespeto en situaciones de interacción cargadas emocionalmente.
+
+2 · Función adaptativa
+Sirven para proteger la integridad personal y reducir resentimiento, explosiones emocionales o conductas impulsivas.
+
+3 · Cómo se vuelve disfuncional
+Se vuelve rígido cuando la activación emocional es tan alta que la persona oscila entre sumisión extrema y confrontación desregulada.
+
+4 · Cómo concibe el cambio
+El cambio implica aumentar tolerancia emocional y capacidad de autorregulación para sostener límites incluso bajo alta activación.
+
+5 · Indicadores de mejora
+La persona expresa límites con mayor claridad, menos escalada emocional y menor arrepentimiento posterior.`,
+      refs:[
+        'Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). Guilford Press.'
+      ]
+    },
+
+    {
+      modelo:'Terapia Sistémica (estructural / relacional)',
+      autores:'Salvador Minuchin y desarrollos posteriores',
+      comoEntiende:`0 · Núcleo del problema
+La terapia sistémica sitúa el problema en fronteras relacionales difusas o rígidas dentro del sistema interpersonal.
+
+1 · Qué es este subproceso
+Los límites interpersonales son reglas implícitas que organizan roles, jerarquías y grados de implicación entre miembros de un sistema.
+
+2 · Función adaptativa
+Permiten que el sistema mantenga diferenciación, protección y funcionamiento sin invasión ni aislamiento.
+
+3 · Cómo se vuelve disfuncional
+Se vuelve problemático cuando las fronteras son difusas (enmeshment) o excesivamente rígidas, generando triangulación, conflicto o desconexión.
+
+4 · Cómo concibe el cambio
+El cambio implica reorganizar fronteras y roles para restaurar diferenciación y flexibilidad relacional.
+
+5 · Indicadores de mejora
+Las interacciones se vuelven más claras, disminuye la confusión de roles y la persona puede ocupar su lugar sin sobrecarga.`,
+      refs:[
+        'Minuchin, S. (1974). Families and Family Therapy. Harvard University Press.',
+        'Nichols, M. (2013). Family Therapy: Concepts and Methods. Pearson.'
+      ]
+    },
+
+    {
+      modelo:'ACT (Acceptance and Commitment Therapy)',
+      autores:'Steven C. Hayes',
+      comoEntiende:`0 · Núcleo del problema
+ACT sitúa el problema en la evitación experiencial y en la fusión con reglas relacionales que impiden actuar según valores.
+
+1 · Qué es este subproceso
+Los límites interpersonales son conductas guiadas por valores que implican elegir cuándo acercarse o alejarse, incluso en presencia de malestar interno.
+
+2 · Función adaptativa
+Permiten vivir relaciones coherentes con valores personales, no solo reactivas al miedo, la culpa o la aprobación.
+
+3 · Cómo se vuelve disfuncional
+Se bloquea cuando la persona se fusiona con pensamientos (“si digo no, me rechazarán”) y evita el malestar asociado a poner límites.
+
+4 · Cómo concibe el cambio
+El cambio implica aumentar flexibilidad psicológica: poder poner límites mientras se acepta la incomodidad emocional que conllevan.
+
+5 · Indicadores de mejora
+La persona actúa de forma más coherente con valores, aunque aparezca culpa o ansiedad, y reduce conductas de sobreadaptación.`,
+      refs:[
+        'Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2011). Acceptance and Commitment Therapy. Guilford Press.'
+      ]
+    }
+
+  ]
+},
+
   {
     id:'R_reparacionRelacional',
     label:'Reparación relacional / experiencias correctivas',
@@ -13994,8 +14391,9 @@ const $philoTooltip = d3.select('body')
 function drawModeTabs(){
 const data = [
   {id:'guia',         label:'Guía'},
+  {id:'metaprocesos', label:'Base'},
   {id:'mjps',         label:'Procesos'},
-  {id:'metaprocesos', label:'Metaprocesos'},
+  
   {id:'modelos',      label:'Modelos'}
 ];
 
@@ -15949,6 +16347,63 @@ const select = selectWrap.append('select')
       .attr('class','muted subproc-desc')
       .text(subActual.desc);
   }
+// ================================
+//  CÓMO LO ENTIENDE CADA MODELO
+//  (por subproceso)
+// ================================
+if (subActual && Array.isArray(subActual.entiendeModelos) && subActual.entiendeModelos.length){
+
+  const emBox = $details.append('div').attr('class','box entiende-box');
+  emBox.append('h3').text('Cómo lo entiende cada modelo');
+
+  const cont = emBox.append('div').attr('class','modelos-list');
+
+  subActual.entiendeModelos.forEach(entry => {
+
+    const card = cont.append('div').attr('class','modelo-card');
+
+    const header = card.append('div').attr('class','modelo-header');
+
+    const titulo = [entry.modelo, entry.autores].filter(Boolean).join(' — ');
+
+    header.append('span')
+      .attr('class','modelo-name')
+      .text(titulo || 'Modelo');
+
+    const icon = header.append('span')
+      .attr('class','modelo-toggle')
+      .text('▸');
+
+    const body = card.append('div')
+      .attr('class','modelo-body')
+      .style('display','none');
+
+    if (entry.comoEntiende){
+      body.append('p')
+        .attr('class','muted')
+        .style('white-space','pre-line')
+        .text(entry.comoEntiende);
+    }
+
+    if (Array.isArray(entry.refs) && entry.refs.length){
+      body.append('h4')
+        .attr('class','muted')
+        .style('margin','10px 0 6px')
+        .text('Referencias');
+
+      const ul = body.append('ul').style('margin','0').style('padding-left','18px');
+      entry.refs.forEach(r => ul.append('li').text(r));
+    }
+
+    header.on('click', () => {
+      const isOpen = card.classed('open');
+      card.classed('open', !isOpen);
+      body.style('display', isOpen ? 'none' : 'block');
+      icon.text(isOpen ? '▸' : '▾');
+    });
+
+  });
+}
 
 }
 
