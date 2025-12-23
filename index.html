@@ -13877,7 +13877,9 @@ El progreso se evalúa mediante cambios observables y medibles: frecuencia, dura
 // =====================================================
 
 // Base de datos remota (GitHub Pages)
-const TMPS_JSON_BASE = `${location.origin}/data`;
+const TMPS_DATA_ORIGIN = 'https://tmps-data.pages.dev'; // <-- el Pages donde está /data
+const TMPS_JSON_BASE = `${TMPS_DATA_ORIGIN}/data`;
+
 async function fetchJSON(relPath){
   const url = `${TMPS_JSON_BASE}/${relPath}`.replace(/\/+/g,'/');
   const r = await fetch(url, { cache: 'no-store' });
@@ -14823,6 +14825,7 @@ merged.select('.meta').html('');
        // --- MODO: INTERVENCIONES POR MODELO ---
 
     if(mode === 'modelos'){
+      
     // Limpiar cualquier item anterior de otros modos
       $list.selectAll('.item').remove();
       // Lista de escuelas para el selector
