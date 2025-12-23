@@ -14829,9 +14829,18 @@ merged.select('.meta').html('');
     // Limpiar cualquier item anterior de otros modos
       $list.selectAll('.item').remove();
       // Lista de escuelas para el selector
-// Lista de escuelas desde GitHub (index.json)
-// Si aún no cargó por lo que sea, usa fallback para no romper UI
+// Si aún no hemos cargado el índice, lo lanzamos y salimos.
+// (Cuando termine, repintamos)
+if(!ESCUELAS_LABELS){
+  initEscuelasIndex()
+    .then(() => { drawProcessList(); drawDetails(); })
+    .catch(err => console.error('initEscuelasIndex failed', err));
+  return; // <- importantísimo para no seguir con ESCUELAS vacío
+}
+
+// Lista de escuelas ya disponible
 const ESCUELAS = ESCUELAS_LABELS || [];
+
 
 
 if(!escuelaActiva || ESCUELAS.indexOf(escuelaActiva) === -1){
