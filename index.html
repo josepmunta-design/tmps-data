@@ -13973,55 +13973,44 @@ function normalizePayload(payload){
 }
 
 // Carga una escuela desde JSON y la mezcla con DATA.enfoques
-async function ensureEscuelaLoaded(escuela){
-  if (!escuela) return [];
-
-
-  // 1️⃣ Si ya está en caché, no hacemos nada
-  if (ESCUELA_CACHE[escuela]) return ESCUELA_CACHE[escuela];
-  if (ESCUELA_LOADING[escuela]) return [];
-
-  const file = escuelaToFile(escuela);
-  if (!file) {
-    ESCUELA_CACHE[escuela] = [];
-    return [];
+async function ensureEscuelaLoaded(escuela) {
+  await initEscuelasIndex();
+  
+  const file = ESCUELA_FILE_MAP.get(escuela.toLowerCase()) || ESCUELA_FILE_MAP.get(escuela);
+  if (!file) throw new Error(`No se encontró archivo para escuela ${escuela}`);
+  
+  let modelos = await fetchJSON(file);  // carga el JSON básico de la escuela
+  
+  // Procesar cada modelo: si tiene detailUrl, cargar el JSON detallado
+  for (let i = 0; i < modelos.length; i++) {
+    const modeloBasico = modelos[i];
+    
+    if (modeloBasico.detailUrl) {
+      try {
+        const detalle = await fetchJSON(modeloBasico.detailUrl);
+        // Sobrescribimos/mergeamos: el detalle completo reemplaza al básico
+        modelos[i] = { ...modeloBasico, ...detalle };  // o simplemente modelos[i] = detalle;
+        // Si prefieres mantener algún campo básico: modelos[i] = { ...detalle, ...modeloBasico };
+      } catch (err) {
+        console.warn(`Error cargando detalle de ${modeloBasico.label}:`, err);
+        // Opcional: marcar como error en el modelo
+        modelos[i].error = 'No se pudo cargar el detalle';
+      }
+    }
   }
-
-  ESCUELA_LOADING[escuela] = true;
-
-  try {
- const payload = await fetchJSON(file);
-
-    const nuevos = normalizePayload(payload);
-
-    // Asegura grupo correcto
-    nuevos.forEach(m => {
-      if (!m.grupo) m.grupo = escuela;
-    });
-
-    // 2️⃣ Mezcla con los datos antiguos SIN duplicar ids
-    const existentes = Array.isArray(DATA.enfoques)
-      ? DATA.enfoques
-      : [];
-
-    const porId = {};
-    existentes.forEach(m => { porId[m.id] = m; });
-    nuevos.forEach(m => { porId[m.id] = m; });
-
-    DATA.enfoques = Object.values(porId);
-
-    // 3️⃣ Guarda en caché
-    ESCUELA_CACHE[escuela] = nuevos;
-
-    return nuevos;
-
-  } catch (e) {
-    console.error('Error cargando escuela', escuela, e);
-    ESCUELA_CACHE[escuela] = [];
-    return [];
-  } finally {
-    ESCUELA_LOADING[escuela] = false;
-  }
+  
+  // Ahora mezclamos los modelos (enriquecidos) en tu DATA global
+  modelos.forEach(modelo => {
+    // Tu lógica actual de merge/caché, por ejemplo:
+    const existente = DATA.enfoques.find(e => e.id === modelo.id);
+    if (existente) {
+      Object.assign(existente, modelo);  // actualiza
+    } else {
+      DATA.enfoques.push(modelo);
+    }
+  });
+  
+  console.log(`Escuela ${escuela} cargada con ${modelos.length} modelo(s)`);
 }
 // =====================================================
 // CARGA DE DETALLE POR MODELO (detailUrl)
