@@ -13878,15 +13878,20 @@ El progreso se evalúa mediante cambios observables y medibles: frecuencia, dura
 
 // Base de datos remota (GitHub Pages)
 const TMPS_DATA_ORIGIN = 'https://tmps-data.pages.dev';
-const TMPS_JSON_BASE = TMPS_DATA_ORIGIN; // BASE en raíz
+const TMPS_JSON_BASE = `${TMPS_DATA_ORIGIN}/data`;
 
 
 
-async function fetchJSON(relPath){
-  const url = `${TMPS_JSON_BASE}/${relPath}`.replace(/\/+/g,'/');
-  const r = await fetch(url, { cache: 'no-store' });
-  if (!r.ok) throw new Error(`HTTP ${r.status} → ${url}`);
-  return r.json();
+async function fetchJSON(path) {
+  // Quita slashes iniciales y siempre añade la base
+  const cleanPath = path.replace(/^\/+/, '');
+  const url = `${TMPS_JSON_BASE}/${cleanPath}`;
+  console.log('Fetching JSON:', url);  // Útil para depurar
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(`Error ${res.status} cargando ${url}`);
+  }
+  return await res.json();
 }
 async function loadEscuelasIndex(){
   return fetchJSON('data/index.json');
@@ -13896,24 +13901,38 @@ async function loadEscuelasIndex(){
     // =====================================================
 // INDEX de escuelas (para no hardcodear en el código)
 // =====================================================
-let ESCUELAS_INDEX = null;     // array de {id,label,file}
-let ESCUELA_FILE_MAP = null;   // { 'Psicoanálisis': 'escuelas/psicoanalisis.json', ... }
-let ESCUELAS_LABELS = null;    // ['Psicoanálisis', 'Conductual', ...]
+let ESCUELAS_INDEX = null;
+let ESCUELA_FILE_MAP = new Map();
+let ESCUELAS_LABELS = [];
+let isIndexLoaded = false;
+let isIndexLoading = false;
 
-async function initEscuelasIndex(){
-  if (ESCUELAS_INDEX && ESCUELA_FILE_MAP && ESCUELAS_LABELS) return;
+async function initEscuelasIndex() {
+  if (isIndexLoaded) return;
+  if (isIndexLoading) return;  // Evita cargas paralelas
 
-  const idx = await loadEscuelasIndex(); // lee escuelas/index.json
-  ESCUELAS_INDEX = Array.isArray(idx) ? idx : [];
-
-  ESCUELA_FILE_MAP = {};
-  ESCUELAS_LABELS = [];
-
-  ESCUELAS_INDEX.forEach(it => {
-    if (!it || !it.label || !it.file) return;
-    ESCUELA_FILE_MAP[it.label] = it.file;
-    ESCUELAS_LABELS.push(it.label);
-  });
+  isIndexLoading = true;
+  try {
+    ESCUELAS_INDEX = await fetchJSON('index.json');
+    
+    ESCUELA_FILE_MAP.clear();
+    ESCUELAS_INDEX.forEach(e => {
+      ESCUELA_FILE_MAP.set(e.label.toLowerCase(), e.file);
+      // Opcional: también por id
+      ESCUELA_FILE_MAP.set(e.id, e.file);
+    });
+    
+    ESCUELAS_LABELS = ESCUELAS_INDEX.map(e => e.label).sort();
+    
+    isIndexLoaded = true;
+    console.log('Índice de escuelas cargado:', ESCUELAS_LABELS);
+  } catch (err) {
+    console.error('Error cargando índice de escuelas:', err);
+    // Mensaje de error visible para el usuario
+    d3.select('#details').html('<div class="box"><p>Error cargando las escuelas. Revisa la conexión o recarga la página.</p></div>');
+  } finally {
+    isIndexLoading = false;
+  }
 }
 
 async function loadEscuelaByFile(file){
@@ -13956,7 +13975,7 @@ function normalizePayload(payload){
 // Carga una escuela desde JSON y la mezcla con DATA.enfoques
 async function ensureEscuelaLoaded(escuela){
   if (!escuela) return [];
-await initEscuelasIndex();
+
 
   // 1️⃣ Si ya está en caché, no hacemos nada
   if (ESCUELA_CACHE[escuela]) return ESCUELA_CACHE[escuela];
@@ -14146,22 +14165,50 @@ const tabEnter = $tabs.enter().append('div')
       return;
     }
 
-    // ✅ Modelos: carga index + escuela, pero sin bloquear UI
-    initEscuelasIndex()
-      .then(() => {
-        const ESCUELAS = (ESCUELAS_LABELS && ESCUELAS_LABELS.length) ? ESCUELAS_LABELS : [];
-        if (!escuelaActiva || ESCUELAS.indexOf(escuelaActiva) === -1) {
-          escuelaActiva = ESCUELAS.length ? ESCUELAS[0] : 'Humanista';
-        }
-        return ensureEscuelaLoaded(escuelaActiva);
-      })
-      .catch(err => {
-        console.warn('Fallo entrando en Modelos (index/escuela):', err);
-      })
-      .finally(() => {
-        drawProcessList();
-        drawDetails();
-      });
+// ✅ CASO MODELOS: manejo seguro y con feedback visual
+(async () => {
+  // 1. Mostrar loading inmediato para que el usuario vea que algo pasa
+  $details.html('<div class="box"><p>Cargando escuelas y modelos...</p></div>');
+  // Opcional: también limpiar la lista izquierda
+  d3.select('#processList').html('');
+
+  try {
+    // 2. Cargamos el índice (esperamos a que termine)
+    await initEscuelasIndex();
+
+    // 3. Si después de cargar sigue vacío → error visible
+    if (!isIndexLoaded || ESCUELAS_LABELS.length === 0) {
+      throw new Error('No se pudieron cargar las escuelas');
+    }
+
+    // 4. Seleccionar escuela activa (prioridad: la que ya tenía, sino la primera)
+    if (!escuelaActiva || !ESCUELAS_LABELS.includes(escuelaActiva)) {
+      escuelaActiva = ESCUELAS_LABELS[0];  // la primera de la lista ordenada
+    }
+
+    // 5. Cargar los datos de esa escuela
+    await ensureEscuelaLoaded(escuelaActiva);
+
+  } catch (err) {
+    console.error('Error en modo Modelos:', err);
+    $details.html(`
+      <div class="box">
+        <h3>Error al cargar los modelos</h3>
+        <p>No se pudieron cargar las escuelas o sus datos. 
+        Puede ser un problema temporal de conexión.</p>
+        <p><strong>Intenta recargar la página</strong> o verifica tu conexión.</p>
+      </div>
+    `);
+    // Limpiar lista izquierda también
+    d3.select('#processList').html('');
+    return;  // salimos aquí para no dibujar nada más
+  }
+
+  // 6. Todo bien → dibujamos lista y detalle
+  drawProcessList();  // aquí se llenará la columna izquierda con escuelas y modelos
+  drawDetails();
+
+})();
   });
 
 
@@ -16834,6 +16881,22 @@ const mapMJPS = {};
   drawTabs();
   drawProcessList();
   drawDetails();
+(async function boot() {
+  drawModeTabs();
+  drawTabs();
+  drawProcessList();
+  drawDetails();
+  
+  // Pre-cargamos el índice para que esté listo cuanto antes
+  await initEscuelasIndex();
+  
+  // Si el usuario ya está en la pestaña Modelos al cargar, refrescamos
+  if (mode === 'modelos') {
+    drawModelList();   // o la función que liste escuelas/modelos
+    drawDetails();
+  }
+})();
+
   </script>
 </body>
 </html>
