@@ -13728,20 +13728,47 @@ const TMPS_JSON_BASE = `${TMPS_DATA_ORIGIN}/data`;
 
 
 
+// ===============================
+// fetchJSON con caché global
+// ===============================
+const FETCH_JSON_CACHE = new Map();
+
 async function fetchJSON(path) {
-  // Quita slashes iniciales y siempre añade la base
-  const cleanPath = path.replace(/^\/+/, '');
-  const url = `${TMPS_JSON_BASE}/${cleanPath}`;
-  console.log('Fetching JSON:', url);  // Útil para depurar
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`Error ${res.status} cargando ${url}`);
+  const cleanPath = String(path).replace(/^\/+/, '');
+
+  // Si es URL absoluta, no se le añade la base
+  const isAbsolute = /^https?:\/\//i.test(cleanPath);
+  const url = isAbsolute
+    ? cleanPath
+    : `${TMPS_JSON_BASE}/${cleanPath}`;
+
+  // Caché por URL final
+  if (FETCH_JSON_CACHE.has(url)) {
+    return FETCH_JSON_CACHE.get(url);
   }
-  return await res.json();
+
+  const promise = fetch(url).then(async (res) => {
+    if (!res.ok) {
+      throw new Error(`Error ${res.status} cargando ${url}`);
+    }
+    return res.json();
+  });
+
+  FETCH_JSON_CACHE.set(url, promise);
+  return promise;
 }
+
+let ESCUELAS_INDEX_CACHE = null;
+
 async function loadEscuelasIndex(){
-  return fetchJSON('data/index.json');
+  if (ESCUELAS_INDEX_CACHE) return ESCUELAS_INDEX_CACHE;
+
+  const data = await fetchJSON('index.json');
+  ESCUELAS_INDEX_CACHE = data;
+  return data;
 }
+
+
 
 
     // =====================================================
