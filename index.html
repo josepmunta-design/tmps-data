@@ -13878,7 +13878,8 @@ El progreso se evalúa mediante cambios observables y medibles: frecuencia, dura
 
 // Base de datos remota (GitHub Pages)
 const TMPS_DATA_ORIGIN = 'https://tmps-data.pages.dev'; // <-- el Pages donde está /data
-const TMPS_JSON_BASE = `${TMPS_DATA_ORIGIN}/data`;
+const TMPS_JSON_BASE = TMPS_DATA_ORIGIN;
+
 
 async function fetchJSON(relPath){
   const url = `${TMPS_JSON_BASE}/${relPath}`.replace(/\/+/g,'/');
@@ -13887,8 +13888,9 @@ async function fetchJSON(relPath){
   return r.json();
 }
 async function loadEscuelasIndex(){
-  return fetchJSON('index.json');
+  return fetchJSON('data/index.json');
 }
+
 
     // =====================================================
 // INDEX de escuelas (para no hardcodear en el código)
