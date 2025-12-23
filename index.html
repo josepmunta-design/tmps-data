@@ -5376,13 +5376,11 @@ comprende y reorganiza sus esquemas emocionales básicos dentro de una relación
   refs:[
     'Greenberg, L. S. (2010). Emotion-Focused Therapy: Theory and Practice.',
     'Greenberg, L. S. (2015). Emotion-Focused Therapy: Coaching Clients to Work Through Their Feelings (2nd ed.).',
-    'Greenberg, L. S. & Watson, J. (2006). Emotion-Focused Therapy for Depression.',
-    'Greenberg, L. S. & Goldman, R. (2008). Emotion-Focused Couples Therapy.',
     'Elliott, R., Watson, J., Goldman, R., & Greenberg, L. S. (2004). Learning Emotion-Focused Therapy.'
   ],
 
   // =========================================================
-  // PROCEDIMIENTOS (mapeados a subprocesos)
+  // PROCEDIMIENTOS
   // =========================================================
   procedimientos:[
 
@@ -5390,6 +5388,7 @@ comprende y reorganiza sus esquemas emocionales básicos dentro de una relación
       nombre:'Dos sillas — autocrítica',
       codigo:'p_eft_dosSillasAutocritica',
       procesos:['RI_criticoInterno','AP_resolucionConflictos','RI_autocompasion'],
+      subfunciones:['F05_01','F05_03','F03_04','F11_04'],
       texto:`Procedimiento central para trabajar el crítico interno y la vergüenza. El paciente se sienta en una silla
 como parte crítica y en la otra como parte experimentadora herida. A través del diálogo guiado se hace
 consciente el impacto del crítico, se accede al dolor subyacente y se facilita la emergencia de una voz
@@ -5400,6 +5399,7 @@ protectora y compasiva hacia el yo vulnerable.`
       nombre:'Dos sillas — self-interrumpido',
       codigo:'p_eft_dosSillasInterrupcion',
       procesos:['I_conflictosSelf','AP_resolucionConflictos'],
+      subfunciones:['F06_02','F05_01','F05_03'],
       texto:`Se trabaja la escisión entre la parte que siente y la parte que interrumpe la emoción (p. ej. minimizando,
 intelectualizando o cambiando de tema). El paciente da voz a cada polo en sillas distintas, lo que permite
 visualizar el conflicto interno y desbloquear el acceso a la emoción primaria que estaba siendo cortada.`
@@ -5409,6 +5409,7 @@ visualizar el conflicto interno y desbloquear el acceso a la emoción primaria q
       nombre:'Silla vacía — asuntos inconclusos',
       codigo:'p_eft_sillaUnfinished',
       procesos:['AP_integracionMemorias','AP_trabajoCorrectivo','R_reparacionRelacional'],
+      subfunciones:['F05_01','F05_03','F11_01','F11_04'],
       texto:`Procedimiento dirigido a duelos bloqueados y heridas relacionales tempranas. El paciente se dirige en una
 silla vacía a una figura significativa (padre, madre, pareja) para expresar necesidades no satisfechas y
 emociones no dichas. La secuencia permite completar el vínculo a nivel emocional y reorganizar esquemas
@@ -5419,6 +5420,7 @@ de apego y de valor personal.`
       nombre:'Trabajo con figuras de apego',
       codigo:'p_eft_figurasApego',
       procesos:['R_estilosApego','R_reparacionRelacional','AP_trabajoCorrectivo'],
+      subfunciones:['F02_01','F05_03','F11_04'],
       texto:`Se evoca la representación interna de cuidadores significativos y se trabaja experiencialmente la vivencia
 de apoyo, rechazo o abandono. El objetivo es reconocer las necesidades afectivas básicas, actualizar la
 experiencia emocional y generar nuevas expectativas de cuidado y seguridad en el presente.`
@@ -5428,6 +5430,7 @@ experiencia emocional y generar nuevas expectativas de cuidado y seguridad en el
       nombre:'Evocación de escena primaria',
       codigo:'p_eft_escenaPrimaria',
       procesos:['AP_evocacion','AP_integracionMemorias'],
+      subfunciones:['F05_01','F05_04'],
       texto:`Se guía al paciente a revivir una escena específica que concentra el núcleo del patrón emocional problema
 (p. ej. un momento prototípico de rechazo o humillación). A partir de la revivencia se accede a emoción
 primaria, se clarifican necesidades y se inicia el reprocesamiento del esquema emocional asociado.`
@@ -5437,6 +5440,7 @@ primaria, se clarifican necesidades y se inicia el reprocesamiento del esquema e
       nombre:'Ciclo de transformación emocional',
       codigo:'p_eft_cicloTransformacion',
       procesos:['AP_procesamiento','RE_modulacion','RE_aceptacion'],
+      subfunciones:['F05_02','F05_03','F01_03'],
       texto:`Secuencia en la que se parte de una emoción secundaria o maladaptativa (p. ej. vergüenza, miedo aprendido)
 y se acompaña al paciente a atravesarla hasta conectar con emociones primarias adaptativas (enojo protector,
 tristeza por la pérdida, orgullo legítimo). Se sostienen los pasos de acceso, expansión, simbolización y
@@ -5447,6 +5451,7 @@ reorganización emocional.`
       nombre:'Reprocesamiento de vergüenza',
       codigo:'p_eft_reprocesarVerguenza',
       procesos:['AP_procesamiento','N_construccionAlternativa','I_autoimagen'],
+      subfunciones:['F03_03','F03_04','F05_03'],
       texto:`Procedimiento orientado a transformar esquemas de minusvalía y vergüenza tóxica. Se accede a recuerdos
 clave, se vivencia el dolor del yo humillado y se activa una respuesta emocional alternativa (enojo protector,
 dignidad, autocompasión) que permite reconstruir la autoimagen y el significado del evento.`
@@ -5456,6 +5461,7 @@ dignidad, autocompasión) que permite reconstruir la autoimagen y el significado
       nombre:'Reprocesamiento de miedo traumático',
       codigo:'p_eft_reprocesarMiedo',
       procesos:['AP_integracionMemorias','RF_exposicionInteroceptiva','RE_modulacion'],
+      subfunciones:['F01_01','F01_03','F05_03'],
       texto:`Se trabaja el miedo intenso vinculado a experiencias traumáticas o de amenaza. El terapeuta guía una
 exposición experiencial graduada, ayudando al paciente a permanecer en contacto con las sensaciones
 corporales y la emoción mientras introduce nuevos significados y apoyos internos, reduciendo reactividad.`
@@ -5465,6 +5471,7 @@ corporales y la emoción mientras introduce nuevos significados y apoyos interno
       nombre:'Tarea de auto-compasión',
       codigo:'p_eft_autoCompasion',
       procesos:['RI_autocompasion','RI_dialogoFuncional','RE_aceptacion'],
+      subfunciones:['F02_02','F03_04','F11_04'],
       texto:`Secuencia en la que se invita al paciente a adoptar una postura compasiva hacia sí mismo, a menudo en
 forma de diálogo entre el yo sufriente y un yo compasivo imaginado. El foco está en validar el dolor,
 reconocer necesidades y ofrecerse cuidado interno, generando una nueva relación con el propio sufrimiento.`
@@ -5474,60 +5481,17 @@ reconocer necesidades y ofrecerse cuidado interno, generando una nueva relación
       nombre:'Enactment emocional en sesión',
       codigo:'p_eft_enactment',
       procesos:['R_comunicacionEmocional','AP_evocacion','AG_necesidadesPropias'],
+      subfunciones:['F10_01','F11_02','F12_01'],
       texto:`El paciente expresa en voz alta, frente al terapeuta o en imaginería dirigida a otra persona, lo que nunca
 pudo decir. La verbalización emocionalmente cargada, acompañada por la identificación explícita de las
 necesidades, produce reorganización de esquemas relacionales y mayor claridad sobre límites y deseos.`
-    },
-
-    {
-      nombre:'Tarea de perdón experiencial',
-      codigo:'p_eft_perdon',
-      procesos:['AP_trabajoCorrectivo','R_reparacionRelacional','N_reformulacion'],
-      texto:`Procedimiento para trabajar el perdón hacia otros o hacia uno mismo. No se fuerza el perdón, sino que se
-acompaña un proceso de reconocimiento del daño, expresión emocional plena y eventual cambio en la forma
-de entender al otro y a sí mismo. Sólo cuando el yo herido se siente suficientemente validado, puede
-aparecer un perdón genuino.`
-    },
-
-    {
-      nombre:'Confrontación asertiva imaginada',
-      codigo:'p_eft_confrontacionAsertiva',
-      procesos:['AG_limitesAsertividad','R_limitesInterpersonales','AG_compromisoConductual'],
-      texto:`Se entrena al paciente a expresar de forma clara y firme sus límites y necesidades en escenas imaginadas
-relacionadas con figuras significativas. La vivencia de poder decir 'no', marcar límites o exigir respeto,
-permite actualizar la sensación de agencia y preparar conductas más ajustadas en la vida real.`
-    },
-
-    {
-      nombre:'Tarea de decisión experiencial',
-      codigo:'p_eft_decision',
-      procesos:['AG_tomaDecisiones','I_coherenciaInterna','N_metacognicion'],
-      texto:`Procedimiento para resolver dilemas vitales importantes. En lugar de decidir desde la pura reflexión
-cognitiva, se exploran experiencialmente las emociones asociadas a cada opción, de modo que el paciente
-pueda escuchar qué alternativa se alinea mejor con sus valores, su identidad y su bienestar a largo plazo.`
-    },
-
-    {
-      nombre:'Reparentalización imaginada del self vulnerable',
-      codigo:'p_eft_reparentalizacion',
-      procesos:['RI_reparacionRepresentaciones','R_reparacionRelacional','AP_trabajoCorrectivo'],
-      texto:`El paciente se relaciona con una versión más joven o vulnerable de sí mismo, ofreciéndole la protección,
-validación y cuidado que no recibió. Este encuentro correctivo modifica representaciones internas de apego,
-aumenta el sentimiento de merecimiento y fortalece la base segura interna.`
-    },
-
-    {
-      nombre:'Trabajo focalizado con el self vulnerable',
-      codigo:'p_eft_selfVulnerable',
-      procesos:['I_conflictosSelf','I_autoimagen','RI_mindfulnessSelf'],
-      texto:`Procedimiento en el que se centra la atención sostenida en la parte más herida o temerosa del self. Se
-facilita que esa parte pueda expresarse, ser escuchada y reconocida sin juicio, integrando su experiencia en
-una identidad más amplia y coherente.`
     }
+
   ],
 
+
   // =========================================================
-  // MICROINTERVENCIONES (mapeadas a subprocesos)
+  // MICROINTERVENCIONES (mapeadas a subprocesos + subfunciones)
   // =========================================================
   micros:[
 
@@ -5535,6 +5499,7 @@ una identidad más amplia y coherente.`
       nombre:'Señalar el marcador emocional',
       codigo:'m_eft_marcador',
       procesos:['AP_evocacion','N_metacognicion'],
+      subfunciones:['F04_01','F04_03'],
       texto:`El terapeuta identifica y nombra momentos clave (pausas, cambios de tono, lágrimas, endurecimiento)
 como señales de que ha aparecido un marcador emocional importante, invitando a detenerse ahí para
 explorarlo con más profundidad.`
@@ -5544,6 +5509,7 @@ explorarlo con más profundidad.`
       nombre:'Diferenciar emoción primaria y secundaria',
       codigo:'m_eft_primariaSecundaria',
       procesos:['RE_rotulacion','N_marcosCognitivos'],
+      subfunciones:['F04_02','F07_02'],
       texto:`Se ayuda al paciente a distinguir entre emociones reactivas (ira defensiva, culpa automática) y la emoción
 primaria subyacente (dolor, miedo, soledad). Esta discriminación orienta el trabajo hacia lo que realmente
 necesita ser vivido y transformado.`
@@ -5553,6 +5519,7 @@ necesita ser vivido y transformado.`
       nombre:'Pregunta experiencial focalizada',
       codigo:'m_eft_preguntaExperiencial',
       procesos:['AP_profundizacion'],
+      subfunciones:['F05_01','F05_02'],
       texto:`Preguntas del tipo '¿qué estás sintiendo justo ahora en tu interior?' o '¿qué pasa en tu cuerpo cuando
 dices eso?' que orientan la atención desde el relato hacia la experiencia inmediata, abriendo la puerta al
 acceso a emoción primaria.`
@@ -5562,6 +5529,7 @@ acceso a emoción primaria.`
       nombre:'Reflejo evocador de emoción',
       codigo:'m_eft_reflejoEvocador',
       procesos:['RE_rotulacion','RE_evitarEvitacion'],
+      subfunciones:['F05_02','F06_02'],
       texto:`El terapeuta refleja el contenido emocional con un tono y unas palabras que intensifican ligeramente
 el contacto con el afecto (p. ej. pasar de 'estás molesto' a 'parece que estás profundamente herido'),
 facilitando que la emoción emerja en lugar de ser evitada.`
@@ -5571,6 +5539,7 @@ facilitando que la emoción emerja en lugar de ser evitada.`
       nombre:'Validación empática intensa',
       codigo:'m_eft_validacionEmpatica',
       procesos:['RE_aceptacion','R_coregulacion'],
+      subfunciones:['F02_02','F02_01'],
       texto:`Respuesta en la que se reconoce explícitamente el sentido del dolor del paciente y su legitimidad ('tiene
 todo el sentido que te sientas así'), proporcionando una base de seguridad que permite arriesgarse a sentir
 más profundamente.`
@@ -5580,6 +5549,7 @@ más profundamente.`
       nombre:'Invitar a notar el cuerpo',
       codigo:'m_eft_cuerpo',
       procesos:['RF_interocepcion','AP_evocacion'],
+      subfunciones:['F05_04','F01_04'],
       texto:`Se dirige la atención a sensaciones corporales concretas (nudo en la garganta, presión en el pecho,
 tensión en la mandíbula) como vía directa de acceso a la emoción y para anclarla en la experiencia
 presente.`
@@ -5589,6 +5559,7 @@ presente.`
       nombre:'Seguimiento del hilo emocional',
       codigo:'m_eft_seguimientoHilo',
       procesos:['AP_profundizacion'],
+      subfunciones:['F05_03','F07_05'],
       texto:`El terapeuta mantiene el foco en la emoción relevante a lo largo de la sesión, devolviendo al paciente
 a ese hilo cuando aparecen desviaciones hacia el análisis o la evitación, de modo que el proceso no pierda
 profundidad.`
@@ -5598,6 +5569,7 @@ profundidad.`
       nombre:'Uso terapéutico del silencio',
       codigo:'m_eft_silencio',
       procesos:['RE_modulacion','R_coregulacion'],
+      subfunciones:['F02_03','F02_01'],
       texto:`Silencios acompañados y presentes que permiten que la emoción se despliegue sin ser interrumpida. El
 terapeuta sostiene la intensidad afectiva con la mirada, la postura y la respiración, ayudando a que el
 paciente no huya de lo que está sintiendo.`
@@ -5607,6 +5579,7 @@ paciente no huya de lo que está sintiendo.`
       nombre:'Explorar la necesidad asociada a la emoción',
       codigo:'m_eft_necesidad',
       procesos:['AG_necesidadesPropias','N_construccionAlternativa'],
+      subfunciones:['F11_03','F12_03'],
       texto:`Se pregunta '¿qué hubieras necesitado en ese momento?' o '¿qué necesitas ahora de esa persona?' para
 vincular la emoción a una necesidad concreta y poder generar acciones o significados nuevos en torno a
 ella.`
@@ -5616,6 +5589,7 @@ ella.`
       nombre:'Reetiquetar emoción desorganizada',
       codigo:'m_eft_reetiquetar',
       procesos:['RE_rotulacion','N_reformulacion'],
+      subfunciones:['F04_01','F07_04'],
       texto:`Cuando el paciente se siente 'mal' de forma difusa, el terapeuta propone palabras emocionales más
 precisas y las contrasta con él, ayudando a organizar la experiencia afectiva y a reducir la confusión.`
     },
@@ -5624,6 +5598,7 @@ precisas y las contrasta con él, ayudando a organizar la experiencia afectiva y
       nombre:'Metaprocesamiento de la tarea',
       codigo:'m_eft_metaprocesamiento',
       procesos:['N_metacognicion','RI_mindfulnessSelf'],
+      subfunciones:['F07_05','F08_01'],
       texto:`Al terminar o en medio de una tarea, se pregunta cómo ha sido para el paciente vivirla, qué ha notado
 que cambiaba dentro y qué significa para él ese cambio. Esto consolida la toma de conciencia sobre el
 proceso vivido.`
@@ -5633,6 +5608,7 @@ proceso vivido.`
       nombre:'Anclar el cambio emocional',
       codigo:'m_eft_anclaje',
       procesos:['AP_integracionMemorias','I_coherenciaInterna'],
+      subfunciones:['F09_04','F09_03'],
       texto:`Se invita al paciente a registrar la nueva experiencia (imagen, frase, sensación corporal) y a ligarla a su
 historia personal, de forma que el cambio no quede como algo aislado de la identidad sino integrado en
 su sentido de sí mismo.`
@@ -5642,6 +5618,7 @@ su sentido de sí mismo.`
       nombre:'Explorar imagen espontánea',
       codigo:'m_eft_imagen',
       procesos:['AP_evocacion','AP_procesamiento'],
+      subfunciones:['F05_01','F09_01'],
       texto:`Cuando aparece una imagen súbita (niño solo, puerta cerrada, mar agitado), el terapeuta la toma como
 entrada directa al esquema emocional y ayuda a desarrollarla y resignificarla, en lugar de descartarla
 como algo 'raro'.`
@@ -5651,6 +5628,7 @@ como algo 'raro'.`
       nombre:'Contrastar esquemas emocionales',
       codigo:'m_eft_contrasteEsquemas',
       procesos:['N_marcosCognitivos','N_construccionAlternativa'],
+      subfunciones:['F09_01','F07_02'],
       texto:`Se ponen lado a lado el esquema antiguo (p. ej. 'no valgo') y la nueva experiencia emocional ('siento
 rabia por cómo me trataron, no por ser inferior'). Esto permite construir un marco de significado más
 ajustado y menos culpabilizador.`
@@ -5660,6 +5638,7 @@ ajustado y menos culpabilizador.`
       nombre:'Dirigir la emoción hacia el otro en imaginería',
       codigo:'m_eft_dirigirOtro',
       procesos:['R_comunicacionEmocional','R_repertorioInterpersonal'],
+      subfunciones:['F10_01','F11_02'],
       texto:`Se anima al paciente a expresar en imaginería sus sentimientos y necesidades a una persona significativa,
 ensayando nuevas formas de comunicación emocional que pueden luego trasladarse, si procede, a la vida
 real.`
@@ -5669,6 +5648,7 @@ real.`
       nombre:'Activar el self compasivo observador',
       codigo:'m_eft_selfCompasivo',
       procesos:['RI_autocompasion','N_metacognicion'],
+      subfunciones:['F02_02','F11_04'],
       texto:`Se guía al paciente a adoptar una posición interna que observa su propio dolor con calidez y curiosidad,
 en lugar de juicio. Desde ahí puede ofrecerse mensajes de apoyo y comprensión que contrapesan la voz
 crítica habitual.`
@@ -5678,6 +5658,7 @@ crítica habitual.`
       nombre:'Micro-reencuadre de la vergüenza',
       codigo:'m_eft_reencuadreVerguenza',
       procesos:['N_reformulacion','I_autoimagen'],
+      subfunciones:['F03_03','F03_04','F09_02'],
       texto:`Intervenciones breves que desplazan el foco desde 'yo soy defectuoso' hacia 'fui tratado de manera injusta'
 o 'nadie me enseñó a hacerlo de otra forma', suavizando el ataque a la autoimagen y abriendo espacio para
 una visión más amable de sí.`
@@ -5687,6 +5668,7 @@ una visión más amable de sí.`
       nombre:'Invitación a mantenerse en la emoción',
       codigo:'m_eft_quedate',
       procesos:['AP_profundizacion','RE_evitarEvitacion'],
+      subfunciones:['F05_03','F06_02'],
       texto:`Cuando el paciente intenta salir rápido de una emoción intensa, el terapeuta propone '¿podemos quedarnos
 unos segundos más aquí, juntos, a ver qué aparece?'. Esto debilita el patrón de evitación y permite que la
 experiencia se complete.`
@@ -5696,6 +5678,7 @@ experiencia se complete.`
       nombre:'Co-regulación verbal y paraverbal',
       codigo:'m_eft_coregula',
       procesos:['RE_coregulacion','R_coregulacion'],
+      subfunciones:['F02_01','F01_03','F01_01'],
       texto:`El terapeuta ajusta tono, ritmo, volumen y proximidad física para modular la activación del paciente,
 acompañando con palabras que organizan la experiencia ('estamos aquí, no estás solo') y estabilizan el
 sistema emocional.`
@@ -5705,11 +5688,13 @@ sistema emocional.`
       nombre:'Cierre integrador de sesión',
       codigo:'m_eft_cierre',
       procesos:['N_narrativaAutobiografica','I_continuidadBiografica'],
+      subfunciones:['F09_03','F12_04','F07_05'],
       texto:`Al final de la sesión se invita a resumir qué ha cambiado internamente, qué se lleva y cómo encaja eso
 en su historia vital. Este cierre ayuda a dar continuidad biográfica al trabajo emocional realizado.`
     }
+
   ]
-},
+ },
 
       { id:'h6exp70', grupo:'Humanista', label:'Terapia experiencial (70s)',
         procesos:['Contacto con sentido sentido','Simbolización precisa','Insight encarnado'],
@@ -8782,6 +8767,7 @@ emocionales básicas. Tiene fuerte evidencia en TLP y trastornos de personalidad
 
   // =====================================================================
   // PROCEDIMIENTOS (descripciones amplias, 1 párrafo)
+  // + subfunciones:[...] añadido (IDs reales Fxx_yy)
   // =====================================================================
   procedimientos:[
 
@@ -8789,88 +8775,97 @@ emocionales básicas. Tiene fuerte evidencia en TLP y trastornos de personalidad
       nombre:'Evaluación e identificación de esquemas tempranos',
       codigo:'p_schema_evaluacion',
       procesos:['N_metacognicion','I_historiaDeVida'],
+      subfunciones:['F07_03','F07_05','F09_04'],
       texto:`Se identifican los esquemas tempranos desadaptativos reconstruyendo experiencias infantiles, necesidades 
 no satisfechas y patrones de relación repetidos. Se utiliza entrevista clínica, cuestionarios específicos 
 (YSQ), análisis de patrones relacionales y reconstrucción narrativa. El objetivo es comprender la raíz del 
 problema en términos de significado biográfico y reconocer cómo estos esquemas condicionan la visión de 
-uno mismo, de los otros y del mundo.` 
+uno mismo, de los otros y del mundo.`
     },
 
     {
       nombre:'Psicoeducación sobre esquemas y modos',
       codigo:'p_schema_psicoeducacion',
       procesos:['N_construccionAlternativa'],
+      subfunciones:['F03_01','F07_02','F07_04','F08_01'],
       texto:`Explicación detallada del modelo de esquemas, cómo se formaron, por qué se mantienen y cómo se expresan 
 en modos internos. El paciente aprende a identificar al “niño vulnerable”, al “crítico”, al “evitador”, etc., 
 adquiriendo un mapa claro de su mundo interno. Esta psicoeducación aumenta metacognición, reduce culpa, 
-favorece autoobservación y prepara el camino para el reparenting y la integración.` 
+favorece autoobservación y prepara el camino para el reparenting y la integración.`
     },
 
     {
       nombre:'Trabajo de reparenting limitado',
       codigo:'p_schema_reparenting',
       procesos:['R_reparacionRelacional','RI_autocompasion','I_coherenciaInterna'],
+      subfunciones:['F02_01','F02_02','F11_04'],
       texto:`El terapeuta adopta un estilo relacional cálido, firme y protector que proporciona correctivos 
 experienciales a carencias tempranas (validación, límites, protección, guía). No se trata de una 
 re-parentalización real, sino de un marco emocional seguro donde el paciente internaliza una relación 
 nutritiva y estable que reemplaza patrones de negligencia o crítica. Este procedimiento es central en 
-esquemas de abandono, desconfianza, exigencia o insuficiencia.` 
+esquemas de abandono, desconfianza, exigencia o insuficiencia.`
     },
 
     {
       nombre:'Imaginería con rescripting',
       codigo:'p_schema_rescripting',
       procesos:['AP_integracionMemorias','RE_modulacion'],
+      subfunciones:['F05_01','F05_02','F09_04','F10_03'],
       texto:`Técnica experiencial donde el paciente revive una escena traumática infantil y el terapeuta 
 (o el Self adulto del paciente) entra en la escena para proteger, validar y reparar la experiencia. 
 Permite reorganizar la memoria implícita, reducir la carga emocional y generar una nueva narrativa 
 interna donde el niño vulnerable recibe aquello que necesitó en su momento. Tiene evidencia robusta 
-en TLP y TEPT complejos.` 
+en TLP y TEPT complejos.`
     },
 
     {
       nombre:'Diálogo con modos (silla)',
       codigo:'p_schema_sillaModos',
       procesos:['RI_partesSubpersonalidades','AP_evocacion'],
+      subfunciones:['F05_01','F07_02','F08_01','F06_04'],
       texto:`Adaptación del diálogo gestáltico de silla aplicada a modos específicos: niño vulnerable, protector 
 evitador, crítico punitivo, modo impulsivo, padre exigente. Se ayuda al paciente a expresar cada modo, 
 escuchar su función y negociar límites sanos. Este procedimiento reduce polarizaciones internas y 
-resta poder al crítico, integrando necesidades del niño vulnerable y capacidades del adulto sano.` 
+resta poder al crítico, integrando necesidades del niño vulnerable y capacidades del adulto sano.`
     },
 
     {
       nombre:'Reestructuración cognitiva profunda',
       codigo:'p_schema_reestructuracion',
       procesos:['N_construccionAlternativa','I_coherenciaInterna'],
+      subfunciones:['F09_01','F09_02','F07_04'],
       texto:`Trabajo cognitivo específico para desafiar creencias centrales (“soy defectuoso”, “la gente me hará 
 daño”, “no merezco amor”) mediante evidencia autobiográfica, experiencias emocionales correctivas y 
 nuevas interpretaciones coherentes con el trabajo experiencial. No es simple reestructuración cognitiva: 
-está anclada en emoción, vínculo y rescripting, produciendo cambios más duraderos.` 
+está anclada en emoción, vínculo y rescripting, produciendo cambios más duraderos.`
     },
 
     {
       nombre:'Contratos conductuales y límites sanos',
       codigo:'p_schema_limites',
       procesos:['AG_limitesAsertividad','R_patronesInterpersonales'],
+      subfunciones:['F10_01','F10_04','F11_03','F12_01'],
       texto:`Procedimiento orientado a modificar conductas asociadas a modos de sumisión, autosacrificio, 
 impulsividad o autolesión. Se establecen límites claros, pautas de autocuidado y ensayos de 
 comportamientos alternativos en contextos reales. Ayuda a consolidar el modo “adulto sano” y frenar 
-dinámicas relacionales destructivas mantenidas por esquemas.` 
+dinámicas relacionales destructivas mantenidas por esquemas.`
     },
 
     {
       nombre:'Integración de modos y consolidación del adulto sano',
       codigo:'p_schema_integracion',
       procesos:['I_coherenciaInterna','RI_partesSubpersonalidades','N_construccionAlternativa'],
+      subfunciones:['F07_05','F09_03','F12_04','F08_01'],
       texto:`Última fase del tratamiento, donde se integran modos fragmentados en un self cohesionado y flexible. 
 El adulto sano asume liderazgo interno, reduce el poder del crítico, atiende al niño vulnerable y regula 
 protectoramente al resto de modos. Se trabaja narrativa, identidad y coherencia interna para consolidar 
-el cambio más allá del contexto terapéutico.` 
+el cambio más allá del contexto terapéutico.`
     }
   ],
 
   // =====================================================================
   // MICROINTERVENCIONES (descripciones un párrafo)
+  // + subfunciones:[...] añadido (IDs reales Fxx_yy)
   // =====================================================================
   micros:[
 
@@ -8878,75 +8873,84 @@ el cambio más allá del contexto terapéutico.`
       nombre:'Detectar activación del modo niño vulnerable',
       codigo:'m_schema_ninoVul',
       procesos:['AP_evocacion','RE_modulacion'],
+      subfunciones:['F04_01','F05_01','F02_02'],
       texto:`Se ayuda al paciente a notar cuándo aparece el niño vulnerable (temor, vergüenza, abandono, soledad), 
 identificando señales somáticas, emocionales y cognitivas. Esto permite modular la experiencia desde 
-calma, validar la emoción y evitar respuestas impulsivas de evitación o sumisión.` 
+calma, validar la emoción y evitar respuestas impulsivas de evitación o sumisión.`
     },
 
     {
       nombre:'Identificar el modo crítico punitivo',
       codigo:'m_schema_critico',
       procesos:['RI_dialogoFuncional','N_metacognicion'],
+      subfunciones:['F08_01','F07_04','F03_03'],
       texto:`Consiste en distinguir la voz del crítico interno, separándolo del self. Se analizan sus mensajes, 
 orígenes (padres críticos, exigencia, trauma relacional) y su impacto en autoestima y conducta. Esto 
-permite confrontarlo, reducir su poder y sustituirlo por una voz interna más compasiva y adulta.` 
+permite confrontarlo, reducir su poder y sustituirlo por una voz interna más compasiva y adulta.`
     },
 
     {
       nombre:'Hablar desde el modo adulto sano',
       codigo:'m_schema_adulto',
       procesos:['I_coherenciaInterna','RI_autocompasion'],
+      subfunciones:['F12_04','F12_01','F11_03'],
       texto:`Se guía al paciente a responder a modos vulnerables o críticos desde un tono calmado, protector y 
 realista. El adulto sano marca límites, valida necesidades, regula intensidad emocional y orienta 
-acciones coherentes. Es el núcleo del cambio identitario en terapia de esquemas.` 
+acciones coherentes. Es el núcleo del cambio identitario en terapia de esquemas.`
     },
 
     {
       nombre:'Imaginería breve para activar emoción',
       codigo:'m_schema_imagineriaBreve',
       procesos:['AP_evocacion','AP_profundizacion'],
+      subfunciones:['F05_01','F05_02'],
       texto:`Pequeñas escenas imaginadas para evocar la emoción asociada al esquema o al modo. Permite trabajar 
 a nivel experiencial sin necesidad de entrar en un rescripting completo. Facilita acceso al niño 
-vulnerable y mejora precisión del trabajo cognitivo posterior.` 
+vulnerable y mejora precisión del trabajo cognitivo posterior.`
     },
 
     {
       nombre:'Desmontar el modo protector evitador',
       codigo:'m_schema_protector',
       procesos:['RI_partesSubpersonalidades','N_metacognicion'],
+      subfunciones:['F06_02','F06_03','F07_04'],
       texto:`Se identifican estrategias de evitación emocional, aislamiento, consumo o intelectualización usadas 
 por el modo protector. El terapeuta valida su intención de protección, pero muestra su coste y facilita 
-alternativas guiadas por el adulto sano.` 
+alternativas guiadas por el adulto sano.`
     },
 
     {
       nombre:'Entrenar autodiálogo reparador',
       codigo:'m_schema_autodialogo',
       procesos:['RI_autocompasion','I_coherenciaInterna'],
+      subfunciones:['F02_02','F05_03','F11_04'],
       texto:`Se enseña al paciente a dirigirse mensajes de cuidado, límites y protección de forma interna, 
 sustituyendo la voz crítica por un tono compasivo y adulto. Este autodiálogo es el mecanismo que 
-sostiene el reparenting fuera de sesión.` 
+sostiene el reparenting fuera de sesión.`
     },
 
     {
       nombre:'Planificar ensayos conductuales correctivos',
       codigo:'m_schema_ensayo',
       procesos:['AG_compromisoConductual','R_patronesInterpersonales'],
+      subfunciones:['F10_01','F10_03','F11_02'],
       texto:`Pequeños actos guiados por el adulto sano (decir no, pedir ayuda, expresar emoción) que corrigen 
 patrones mantenidos por el esquema. Estos ensayos actualizan creencias y fortalecen nuevas identidades 
-y formas de vinculación.` 
+y formas de vinculación.`
     },
 
     {
       nombre:'Revisar coherencia entre valores y modos',
       codigo:'m_schema_valores',
       procesos:['I_valoresAspiracionales','N_metacognicion'],
+      subfunciones:['F12_03','F12_04','F07_05'],
       texto:`El terapeuta ayuda al paciente a comparar lo que desea en su vida con las decisiones guiadas por sus 
 modos (sumiso, criticado, impulsivo). Esto permite detectar incoherencias y reforzar elecciones más 
-alineadas con el adulto sano.` 
+alineadas con el adulto sano.`
     }
   ]
 },
+
       {
   id:'s1mri',
   grupo:'Sistémico',
@@ -14115,138 +14119,326 @@ El progreso se evalúa mediante cambios observables y medibles: frecuencia, dura
     ]
   ,
 funciones: [
+
+  // =========================================================
+  // F01 — Estabilizar / regular
+  // =========================================================
   {
     id:'F01',
     label:'Estabilizar / regular',
+    desc:`Esta función tiene como objetivo modificar activamente el estado psicofisiológico del paciente cuando este se encuentra en hiperactivación, colapso, crisis o desorganización. Se aplica cuando el nivel de activación impide el trabajo terapéutico y hace necesario cambiar el estado antes de comprender, elaborar o reflexionar. Es una función basal: sin un mínimo de regulación, la atención, la memoria, la capacidad reflexiva y la relación terapéutica se ven comprometidas, y el resto de intervenciones pierde eficacia o puede resultar iatrogénico. Su finalidad no es resolver el problema de fondo, sino crear las condiciones mínimas de seguridad y funcionamiento que permitan el trabajo posterior.`,
     subfunciones:[
-      { id:'F01_01', label:'Reducir hiperactivación' },
-      { id:'F01_02', label:'Salir del colapso / apagamiento' },
-      { id:'F01_03', label:'Ampliar ventana de tolerancia' },
-      { id:'F01_04', label:'Recuperar control corporal básico' }
+      {
+        id:'F01_01',
+        label:'Reducir hiperactivación',
+        desc:`Esta subfunción se orienta a disminuir estados de activación excesiva, como ansiedad intensa, pánico, agitación o sobreexcitación fisiológica, que saturan el sistema del paciente. El objetivo es reducir la intensidad hasta un nivel manejable que permita recuperar capacidad atencional, contacto con el entorno y mínima reflexión, evitando que el organismo permanezca en modo de alarma constante.`
+      },
+      {
+        id:'F01_02',
+        label:'Salir del colapso / apagamiento',
+        desc:`Esta subfunción se activa cuando el paciente se encuentra inhibido, desconectado, disociado o con un nivel de activación excesivamente bajo. El objetivo es devolver un grado suficiente de presencia, energía y orientación que permita el contacto con la experiencia y con el otro. Aquí regular no implica calmar, sino activar lo justo para salir del bloqueo, la desconexión o la pasividad extrema.`
+      },
+      {
+        id:'F01_03',
+        label:'Ampliar ventana de tolerancia',
+        desc:`Esta subfunción busca incrementar gradualmente la capacidad del paciente para sostener activación emocional o fisiológica sin desbordarse ni colapsar. No se trata de eliminar la activación, sino de ampliar el rango dentro del cual puede ser tolerada y procesada. Esta ampliación es clave para que el paciente pueda enfrentarse progresivamente a experiencias emocionales relevantes sin perder regulación.`
+      },
+      {
+        id:'F01_04',
+        label:'Recuperar control corporal básico',
+        desc:`Esta subfunción tiene como objetivo restablecer una sensación básica de control somático y orientación, mediante el contacto con la respiración, la postura, el entorno y las sensaciones corporales elementales. Recuperar este control básico proporciona una base inmediata de seguridad y anclaje en el presente, especialmente necesaria en situaciones de crisis o desorganización intensa.`
+      }
     ]
   },
+
+  // =========================================================
+  // F02 — Contener / sostener
+  // =========================================================
   {
     id:'F02',
     label:'Contener / sostener',
+    desc:`Esta función busca acompañar la experiencia del paciente sin intentar cambiarla, permitiendo que sea vivida dentro de un contexto relacional seguro. A diferencia de la regulación, no pretende modificar el estado emocional o fisiológico, sino hacer posible su vivencia compartida. La contención transmite que la experiencia es tolerable, comprensible y compartible, reduciendo la necesidad de huida, control o defensa. Es una función esencial cuando intervenir para cambiar el estado sería prematuro o invalidante.`,
     subfunciones:[
-      { id:'F02_01', label:'Presencia reguladora' },
-      { id:'F02_02', label:'Validación emocional' },
-      { id:'F02_03', label:'Aguante compartido del afecto' },
-      { id:'F02_04', label:'No-intervención deliberada' }
+      {
+        id:'F02_01',
+        label:'Presencia reguladora',
+        desc:`Esta subfunción consiste en ofrecer una presencia calmada, estable y disponible que, por sí misma, tenga un efecto organizador. No requiere intervención activa: el terapeuta funciona como un punto de referencia seguro que permite al paciente apoyarse y permanecer en contacto con su experiencia sin sentirse solo o desbordado.`
+      },
+      {
+        id:'F02_02',
+        label:'Validación emocional',
+        desc:`Esta subfunción se orienta a reconocer y legitimar la experiencia emocional del paciente, sin juzgarla, corregirla ni apresurar su cambio. Validar no implica estar de acuerdo con interpretaciones o conductas, sino reconocer la coherencia interna de la experiencia emocional, lo que reduce defensividad y favorece apertura.`
+      },
+      {
+        id:'F02_03',
+        label:'Aguante compartido del afecto',
+        desc:`Esta subfunción implica permanecer junto al paciente en emociones intensas o dolorosas, mostrando que pueden sostenerse en relación sin desbordar ni destruir el vínculo. A través de este aguante compartido, el paciente aprende que no necesita aislarse ni controlar compulsivamente su afecto para sobrevivir a él.`
+      },
+      {
+        id:'F02_04',
+        label:'No-intervención deliberada',
+        desc:`Esta subfunción consiste en decidir conscientemente no intervenir para permitir que la experiencia se despliegue y se procese de forma espontánea. No intervenir no es pasividad, sino una elección clínica activa que evita interrumpir procesos emergentes o imponer significado prematuramente.`
+      }
     ]
   },
 
+  // =========================================================
+  // F03 — Normalizar / despatologizar
+  // =========================================================
   {
     id:'F03',
     label:'Normalizar / despatologizar',
+    desc:`Esta función actúa sobre la vergüenza, la culpa y la autoacusación, devolviendo sentido humano a la experiencia del paciente. No se centra en cambiar síntomas ni en analizarlos en profundidad, sino en desactivar la lectura de “defecto personal” que bloquea el proceso terapéutico, la implicación y la agencia. Al normalizar, la experiencia deja de vivirse como señal de fallo moral o personal y pasa a entenderse como una respuesta comprensible dentro de un contexto vital y humano.`,
     subfunciones:[
-      { id:'F03_01', label:'Contextualizar la experiencia' },
-      { id:'F03_02', label:'Despersonalizar el síntoma' },
-      { id:'F03_03', label:'Reducir juicio moral' },
-      { id:'F03_04', label:'Restituir dignidad psicológica' }
+      {
+        id:'F03_01',
+        label:'Contextualizar la experiencia',
+        desc:`Esta subfunción busca situar los síntomas o reacciones dentro de un contexto vital, relacional o histórico, mostrando su coherencia como respuesta a determinadas circunstancias. Al contextualizar, la experiencia deja de percibirse como absurda o inexplicable y empieza a adquirir sentido, reduciendo la autoacusación.`
+      },
+      {
+        id:'F03_02',
+        label:'Despersonalizar el síntoma',
+        desc:`Esta subfunción se orienta a separar la identidad del paciente de sus dificultades, evitando que el síntoma sea vivido como una definición del yo. Al despersonalizar, el problema pasa a ser algo que le ocurre al paciente, no algo que el paciente “es”, lo que abre espacio para el cambio y la acción.`
+      },
+      {
+        id:'F03_03',
+        label:'Reducir juicio moral',
+        desc:`Esta subfunción tiene como objetivo desactivar interpretaciones morales asociadas al malestar psicológico, como debilidad, fracaso, culpa o falta de valor. Al reducir el juicio moral, disminuye la vergüenza y se facilita una relación más compasiva y funcional con la propia experiencia.`
+      },
+      {
+        id:'F03_04',
+        label:'Restituir dignidad psicológica',
+        desc:`Esta subfunción busca reafirmar el valor y la legitimidad del paciente como sujeto, independientemente de su sufrimiento o de sus dificultades actuales. Restituir dignidad psicológica permite que el paciente se relacione consigo mismo desde una posición menos punitiva y más respetuosa, condición clave para la implicación terapéutica y la recuperación de agencia.`
+      }
     ]
   },
 
+  // =========================================================
+  // F04 — Aumentar conciencia emocional
+  // =========================================================
   {
     id:'F04',
     label:'Aumentar conciencia emocional',
+    desc:`Esta función tiene como objetivo que el paciente reconozca, nombre y diferencie lo que le ocurre a nivel emocional, pasando de una vivencia difusa o confusa a una comprensión afectiva básica. Antes de regular, procesar, mentalizar o resignificar, es necesario que el paciente sepa qué siente. Aquí el trabajo es fundamentalmente descriptivo y discriminativo, no transformador: no se busca cambiar la emoción, sino hacerla inteligible. Esta función reduce confusión, previene intervenciones prematuras y sienta las bases para procesos emocionales más profundos.`,
     subfunciones:[
-      { id:'F04_01', label:'Identificar emociones' },
-      { id:'F04_02', label:'Diferenciar emociones similares' },
-      { id:'F04_03', label:'Vincular emoción–situación' },
-      { id:'F04_04', label:'Distinguir emoción de pensamiento' }
+      {
+        id:'F04_01',
+        label:'Identificar emociones',
+        desc:`Esta subfunción se orienta a reconocer qué emoción o emociones están presentes en una experiencia determinada. Muchas personas llegan a terapia con una vivencia global de malestar (“me siento mal”, “estoy fatal”) sin una diferenciación afectiva clara. Identificar emociones permite pasar de una sensación amorfa a un primer mapa emocional, facilitando una relación más consciente y manejable con la experiencia interna.`
+      },
+      {
+        id:'F04_02',
+        label:'Diferenciar emociones similares',
+        desc:`Esta subfunción busca discriminar entre estados afectivos próximos que suelen confundirse entre sí, como tristeza y culpa, miedo y vergüenza, enfado y frustración. La falta de diferenciación emocional suele conducir a respuestas inadecuadas o ineficaces. Al afinar esta distinción, el paciente puede responder de forma más ajustada a lo que realmente siente, en lugar de reaccionar ante una mezcla indiferenciada de afectos.`
+      },
+      {
+        id:'F04_03',
+        label:'Vincular emoción–situación',
+        desc:`Esta subfunción consiste en conectar las emociones con situaciones, desencadenantes o contextos concretos, rompiendo la sensación de que “las emociones aparecen de la nada”. Al establecer esta conexión, la experiencia emocional se vuelve más comprensible y predecible, disminuyendo la sensación de descontrol y facilitando posteriores intervenciones orientadas a la regulación, la acción o la resignificación.`
+      },
+      {
+        id:'F04_04',
+        label:'Distinguir emoción de pensamiento',
+        desc:`Esta subfunción tiene como objetivo separar el afecto de las interpretaciones cognitivas que lo acompañan. Muchas veces las personas viven pensamientos (“soy un fracaso”, “no valgo”) como si fueran emociones o hechos. Al distinguir emoción y pensamiento, se reduce la fusión experiencial y se clarifica el mapa interno, evitando confusiones que bloquean tanto el procesamiento emocional como el trabajo cognitivo posterior.`
+      }
     ]
   },
 
+  // =========================================================
+  // F05 — Facilitar acceso experiencial
+  // =========================================================
   {
     id:'F05',
     label:'Facilitar acceso experiencial',
+    desc:`Esta función busca que la emoción relevante esté viva, presente y disponible en la experiencia, no solo comprendida de forma intelectual. Supone pasar del relato, la explicación o el análisis a la vivencia directa en el aquí y ahora, condición necesaria para el cambio emocional profundo. A diferencia de la conciencia emocional, aquí el foco no está en identificar, sino en sentir y sostener la experiencia emocional de manera suficientemente intensa y continua como para que pueda transformarse.`,
     subfunciones:[
-      { id:'F05_01', label:'Evocar emoción en sesión' },
-      { id:'F05_02', label:'Intensificar experiencia relevante' },
-      { id:'F05_03', label:'Sostener emoción sin huida' },
-      { id:'F05_04', label:'Conectar emoción con cuerpo' }
+      {
+        id:'F05_01',
+        label:'Evocar emoción en sesión',
+        desc:`Esta subfunción se orienta a activar en el contexto terapéutico la emoción relevante, especialmente cuando el paciente habla de ella de forma distante o intelectualizada. Evocar emoción implica traer al presente la experiencia afectiva asociada a situaciones significativas, permitiendo que deje de ser solo un recuerdo o un relato y se convierta en una vivencia actual.`
+      },
+      {
+        id:'F05_02',
+        label:'Intensificar experiencia relevante',
+        desc:`Esta subfunción busca aumentar la carga experiencial cuando la emoción aparece de forma tenue, fragmentada o rápidamente evitada. Muchas emociones relevantes emergen de manera parcial o amortiguada; intensificar la experiencia permite que la emoción alcance un umbral suficiente como para ser procesada y transformada, sin desbordar al paciente.`
+      },
+      {
+        id:'F05_03',
+        label:'Sostener emoción sin huida',
+        desc:`Esta subfunción tiene como objetivo mantener el contacto con la emoción sin recurrir a estrategias automáticas de evitación, control o desconexión. Sostener la emoción implica aprender que puede ser tolerada en presencia de otro, sin necesidad de suprimirla o escapar de ella. Este sostén es clave para ampliar la tolerancia emocional y posibilitar cambios profundos.`
+      },
+      {
+        id:'F05_04',
+        label:'Conectar emoción con cuerpo',
+        desc:`Esta subfunción se centra en anclar la experiencia emocional en las sensaciones corporales asociadas a ella. Al conectar emoción y cuerpo, la vivencia se vuelve más concreta, integrada y accesible, evitando que quede reducida a un plano puramente cognitivo. Esta conexión favorece un contacto más pleno con la experiencia y facilita su elaboración posterior.`
+      }
     ]
   },
 
+  // =========================================================
+  // F06 — Desbloquear evitación y defensas
+  // =========================================================
   {
     id:'F06',
     label:'Desbloquear evitación y defensas',
+    desc:`Esta función tiene como objetivo desactivar estrategias rígidas que mantienen el problema, como la evitación conductual, la evitación emocional, el control cognitivo excesivo o determinadas defensas relacionales. No se orienta a forzar el cambio ni a imponer nuevas respuestas, sino a retirar los obstáculos que impiden que otros procesos terapéuticos puedan desplegarse con eficacia. Al flexibilizar estas estrategias, el paciente recupera margen de experiencia y acción, creando condiciones para que la regulación, el acceso emocional, la mentalización o el cambio conductual sean posibles.`,
     subfunciones:[
-      { id:'F06_01', label:'Reducir evitación conductual' },
-      { id:'F06_02', label:'Reducir evitación emocional' },
-      { id:'F06_03', label:'Cuestionar control excesivo' },
-      { id:'F06_04', label:'Confrontar defensas rígidas' }
+      {
+        id:'F06_01',
+        label:'Reducir evitación conductual',
+        desc:`Esta subfunción se centra en facilitar el contacto con situaciones, contextos o acciones que el paciente tiende a evitar cuando dicha evitación contribuye al mantenimiento del malestar. Al reducir la huida conductual, se amplía el rango de experiencias accesibles y se interrumpen patrones de restricción vital que refuerzan el problema. El foco no está en obligar a la acción, sino en hacer visible el coste de la evitación y abrir alternativas graduales de acercamiento.`
+      },
+      {
+        id:'F06_02',
+        label:'Reducir evitación emocional',
+        desc:`Esta subfunción busca disminuir estrategias destinadas a escapar del afecto, como la anestesia emocional, la distracción constante, la supresión o la desconexión. La evitación emocional suele impedir la elaboración de experiencias relevantes y perpetuar síntomas. Al flexibilizar estas estrategias, el paciente puede empezar a tolerar emociones difíciles sin necesidad de huir de ellas, creando condiciones para el acceso experiencial y el procesamiento emocional.`
+      },
+      {
+        id:'F06_03',
+        label:'Cuestionar control excesivo',
+        desc:`Esta subfunción se orienta a señalar y flexibilizar intentos rígidos de controlar pensamientos, emociones o relaciones que, paradójicamente, intensifican el malestar. El control excesivo suele surgir como una estrategia comprensible de autoprotección, pero acaba restringiendo la experiencia y aumentando la lucha interna. El trabajo aquí consiste en mostrar los límites y costes del control, facilitando una relación más flexible y funcional con la propia experiencia.`
+      },
+      {
+        id:'F06_04',
+        label:'Confrontar defensas rígidas',
+        desc:`Esta subfunción implica hacer explícitas defensas que ya no cumplen una función adaptativa, como la intelectualización, la proyección, la negación persistente o determinados patrones relacionales defensivos. La confrontación no se entiende como ataque ni desenmascaramiento brusco, sino como un acto clínico cuidadoso que permite al paciente reconocer sus defensas como estrategias históricamente útiles, pero actualmente limitantes. Al hacerlas visibles, se abre la posibilidad de alternativas más ajustadas.`
+      }
     ]
   },
 
+  // =========================================================
+  // F07 — Organizar y clarificar
+  // =========================================================
   {
     id:'F07',
     label:'Organizar y clarificar',
+    desc:`Esta función tiene como objetivo poner orden en la experiencia del paciente sin modificar todavía su significado. Se activa cuando el malestar aparece vivido como confuso, caótico, fragmentado o difícil de pensar. Organizar y clarificar no busca interpretar ni resignificar, sino construir una estructura mínima de comprensión que permita diferenciar elementos, establecer secuencias y reconocer patrones. Esta función es una condición de posibilidad para el trabajo posterior: sin un mínimo de orden, la exploración emocional, la mentalización o la resignificación suelen resultar prematuras o desorganizadoras.`,
     subfunciones:[
-      { id:'F07_01', label:'Secuenciar eventos' },
-      { id:'F07_02', label:'Diferenciar niveles' },
-      { id:'F07_03', label:'Detectar patrones repetidos' },
-      { id:'F07_04', label:'Nombrar dinámicas implícitas' },
-      { id:'F07_05', label:'Organizar el tratamiento' }
+      {
+        id:'F07_01',
+        label:'Secuenciar eventos',
+        desc:`Esta subfunción se centra en ordenar temporalmente los acontecimientos, distinguiendo qué ocurre antes, durante y después de un episodio problemático. Al secuenciar hechos, reacciones emocionales, conductas y consecuencias, el paciente puede salir de una vivencia global e indiferenciada del malestar y empezar a reconocer cadenas comprensibles. Esta organización temporal reduce la sensación de caos y facilita una lectura más manejable de la experiencia.`
+      },
+      {
+        id:'F07_02',
+        label:'Diferenciar niveles',
+        desc:`Esta subfunción busca separar planos de experiencia que suelen aparecer mezclados, como hechos, emociones, pensamientos, conductas y dinámicas relacionales. Al diferenciar niveles, se evita tratar interpretaciones como hechos o emociones como decisiones deliberadas. Esta discriminación favorece claridad, reduce confusión y previene intervenciones precipitadas que mezclan planos distintos del funcionamiento psicológico.`
+      },
+      {
+        id:'F07_03',
+        label:'Detectar patrones repetidos',
+        desc:`Esta subfunción tiene como objetivo identificar regularidades que el paciente suele vivir como eventos aislados o “mala suerte”. Al reconocer patrones recurrentes —en reacciones emocionales, elecciones, vínculos o conflictos— la experiencia deja de percibirse como caótica o impredecible y empieza a adquirir coherencia. Detectar patrones no implica explicarlos todavía, sino hacer visible su repetición como paso previo a cualquier cambio.`
+      },
+      {
+        id:'F07_04',
+        label:'Nombrar dinámicas implícitas',
+        desc:`Esta subfunción se orienta a hacer explícitas configuraciones que operan de fondo, ya sean relacionales, emocionales o internas, y que influyen en la experiencia sin ser claramente reconocidas. Nombrar estas dinámicas permite al paciente empezar a percibirlas como fenómenos observables, en lugar de vivirlas como rasgos fijos de la realidad o de sí mismo. El énfasis está en describir, no en interpretar.`
+      },
+      {
+        id:'F07_05',
+        label:'Organizar el tratamiento',
+        desc:`Esta subfunción se centra en clarificar el propio proceso terapéutico, incluyendo el foco de trabajo, los objetivos, las prioridades y el plan general de intervención. Permite al paciente entender qué se está trabajando, por qué y hacia dónde se dirige el proceso, reduciendo incertidumbre y desorientación. Organizar el tratamiento no busca controlar el proceso, sino ofrecer un marco comprensible que facilite implicación, seguimiento y continuidad del trabajo terapéutico.`
+      }
     ]
   },
 
+  // =========================================================
+  // F08 — Mentalizar / perspectivar
+  // =========================================================
   {
     id:'F08',
     label:'Mentalizar / perspectivar',
+    desc:`Esta función tiene como objetivo ampliar la capacidad del paciente para reflexionar sobre estados mentales propios y ajenos, introduciendo distancia, flexibilidad y complejidad en la comprensión de la experiencia. Mentalizar no implica interpretar ni explicar definitivamente lo que ocurre, sino reconocer que pensamientos, emociones e intenciones son fenómenos mentales, susceptibles de múltiples lecturas y no equivalentes a hechos objetivos. Esta función resulta clave cuando el sufrimiento se mantiene por lecturas rígidas, certezas absolutas o dificultades para considerar la perspectiva del otro.`,
     subfunciones:[
-      { id:'F08_01', label:'Reflexionar sobre estados propios' },
-      { id:'F08_02', label:'Reflexionar sobre estados ajenos' },
-      { id:'F08_03', label:'Detectar malentendidos relacionales' },
-      { id:'F08_04', label:'Salir de lecturas unívocas' }
+      { id:'F08_01', label:'Reflexionar sobre estados propios',
+        desc:`Esta subfunción se centra en explorar pensamientos, emociones e intenciones como eventos mentales, diferenciándolos de la realidad externa. Al reconocer que lo que se piensa o se siente no es necesariamente lo que “es”, el paciente gana distancia reflexiva y reduce la fusión con estados internos que antes dominaban su experiencia y su conducta.` },
+      { id:'F08_02', label:'Reflexionar sobre estados ajenos',
+        desc:`Esta subfunción busca considerar la mente del otro como una entidad separada, con emociones, intenciones y significados propios. Implica abrir la posibilidad de que las acciones ajenas no estén motivadas únicamente por rechazo, ataque o desinterés, favoreciendo una comprensión más matizada de las interacciones y reduciendo reacciones defensivas automáticas.` },
+      { id:'F08_03', label:'Detectar malentendidos relacionales',
+        desc:`Esta subfunción tiene como objetivo identificar inferencias automáticas que distorsionan la percepción del otro y de la relación. Al hacer visibles estas inferencias, el paciente puede revisar conclusiones precipitadas y reconocer cómo determinados supuestos mentales influyen en sus reacciones emocionales y conductuales.` },
+      { id:'F08_04', label:'Salir de lecturas unívocas',
+        desc:`Esta subfunción se orienta a introducir pluralidad interpretativa frente a visiones rígidas o dicotómicas de la experiencia. No se trata de decidir cuál interpretación es correcta, sino de ampliar el abanico de posibles lecturas, favoreciendo una postura más flexible, menos reactiva y abierta a la complejidad relacional.` }
     ]
   },
 
+  // =========================================================
+  // F09 — Reformular / resignificar
+  // =========================================================
   {
     id:'F09',
     label:'Reformular / resignificar',
+    desc:`Esta función tiene como objetivo modificar el marco de significado desde el que el paciente comprende su experiencia, sus síntomas y su historia personal. A diferencia de la mentalización, que amplía perspectivas sin fijar una lectura concreta, la resignificación introduce, propone o consolida una nueva comprensión que reorganiza la experiencia a nivel narrativo, cognitivo y emocional. Esta función resulta especialmente relevante cuando el sufrimiento se mantiene por interpretaciones rígidas, atribuciones cerradas o relatos personales que limitan la posibilidad de cambio.`,
     subfunciones:[
-      { id:'F09_01', label:'Introducir nueva lectura' },
-      { id:'F09_02', label:'Desplazar atribuciones rígidas' },
-      { id:'F09_03', label:'Reescribir narrativa personal' },
-      { id:'F09_04', label:'Integrar experiencias pasadas' }
+      { id:'F09_01', label:'Introducir nueva lectura',
+        desc:`Esta subfunción consiste en proponer un marco interpretativo alternativo al dominante, ofreciendo al paciente una manera distinta de entender lo que le ocurre. No se trata de imponer una explicación, sino de abrir una lectura que resulte más amplia, compleja o funcional, permitiendo que la experiencia deje de ser comprendida exclusivamente desde esquemas restrictivos o autoinculpatorios.` },
+      { id:'F09_02', label:'Desplazar atribuciones rígidas',
+        desc:`Esta subfunción se orienta a modificar explicaciones fijas sobre las causas del malestar, especialmente aquellas centradas en defectos personales, culpas absolutas o determinismos inamovibles. Al flexibilizar estas atribuciones, se reduce la sensación de impotencia y se amplía el margen de acción del paciente, favoreciendo una comprensión menos punitiva y más operativa de sí mismo y de su situación.` },
+      { id:'F09_03', label:'Reescribir narrativa personal',
+        desc:`Esta subfunción busca transformar la historia que el paciente cuenta sobre sí mismo, incorporando nuevos significados, matices y conexiones entre eventos vitales. El objetivo no es borrar el pasado, sino reorganizarlo narrativamente de forma que permita una identidad más coherente, menos fragmentada y abierta al cambio. La nueva narrativa integra tanto las dificultades como los recursos y aprendizajes.` },
+      { id:'F09_04', label:'Integrar experiencias pasadas',
+        desc:`Esta subfunción se centra en dar sentido a vivencias previas que han quedado aisladas, no elaboradas o cargadas de significado negativo. Al integrarlas dentro de una perspectiva más amplia, estas experiencias dejan de operar como núcleos traumáticos o determinantes silenciosos, pasando a formar parte de una historia personal más comprensible y menos restrictiva.` }
     ]
   },
 
+  // =========================================================
+  // F10 — Promover nuevas acciones y experiencias
+  // =========================================================
   {
     id:'F10',
     label:'Promover nuevas acciones y experiencias',
+    desc:`Esta función tiene como objetivo que algo distinto ocurra en la vida real del paciente, generando aprendizaje a través de la experiencia directa. No se centra en la mera ejecución de tareas ni en el cumplimiento de prescripciones, sino en producir vivencias nuevas que permitan revisar expectativas, flexibilizar patrones y ampliar el repertorio de respuestas disponibles. El cambio se produce aquí no por comprensión o insight, sino por la confrontación entre lo esperado y lo vivido, favoreciendo una reorganización progresiva de la conducta, la emoción y el significado.`,
     subfunciones:[
-      { id:'F10_01', label:'Ensayar nuevas conductas' },
-      { id:'F10_02', label:'Exposición a situaciones evitadas' },
-      { id:'F10_03', label:'Introducir experiencias correctivas' },
-      { id:'F10_04', label:'Romper patrones inerciales' }
+      { id:'F10_01', label:'Ensayar nuevas conductas',
+        desc:`Esta subfunción se orienta a probar respuestas distintas a las habituales en situaciones relevantes para el paciente. El énfasis está en el ensayo, no en el resultado: se trata de experimentar alternativas, observar sus efectos y extraer aprendizaje, más que de lograr un desempeño “correcto”. A través de estos ensayos, el paciente amplía su flexibilidad conductual y reduce la rigidez que mantiene el problema.` },
+      { id:'F10_02', label:'Exposición a situaciones evitadas',
+        desc:`Esta subfunción busca facilitar el contacto directo con contextos, estímulos o situaciones que el paciente tiende a evitar, cuando dicha evitación contribuye al mantenimiento del malestar. La exposición no se concibe como una mera técnica de habituación, sino como una oportunidad para experimentar que la situación temida puede ser afrontada y tolerada, permitiendo que se modifiquen expectativas de amenaza, incapacidad o catástrofe.` },
+      { id:'F10_03', label:'Introducir experiencias correctivas',
+        desc:`Esta subfunción se centra en generar vivencias que contradigan expectativas disfuncionales profundamente arraigadas, especialmente aquellas relacionadas con el daño, el rechazo, el fracaso o la imposibilidad de cambio. La experiencia correctiva no busca demostrar nada de forma intelectual, sino permitir que el paciente viva algo distinto a lo anticipado, abriendo la posibilidad de reorganizar esquemas emocionales y relacionales.` },
+      { id:'F10_04', label:'Romper patrones inerciales',
+        desc:`Esta subfunción tiene como objetivo interrumpir automatismos conductuales o vitales que se mantienen por inercia más que por elección consciente. Incluye acciones orientadas a introducir variación en rutinas, roles o secuencias repetitivas, creando pequeñas rupturas que permitan al paciente salir de circuitos cerrados y recuperar margen de elección y flexibilidad.` }
     ]
   },
 
+  // =========================================================
+  // F11 — Reparar, ensayar o fortalecer vínculos
+  // =========================================================
   {
     id:'F11',
     label:'Reparar, ensayar o fortalecer vínculos',
+    desc:`Esta función tiene como objetivo transformar los patrones relacionales que sostienen el malestar psicológico, tanto en las relaciones significativas del paciente como en la propia relación terapéutica. Parte de la idea de que el cambio no se produce únicamente a través de la comprensión individual, sino también mediante experiencias relacionales distintas que corrigen expectativas previas y amplían el repertorio vincular. Incluye intervenciones orientadas a reparar rupturas, ensayar nuevas formas de interacción y consolidar vínculos más seguros, flexibles y ajustados a las necesidades del paciente.`,
     subfunciones:[
-      { id:'F11_01', label:'Reparar rupturas' },
-      { id:'F11_02', label:'Ensayar nuevos modos relacionales' },
-      { id:'F11_03', label:'Explorar límites y necesidades' },
-      { id:'F11_04', label:'Internalizar relación segura' }
+      { id:'F11_01', label:'Reparar rupturas',
+        desc:`Esta subfunción se activa cuando se produce un quiebre en la conexión relacional, ya sea por malentendidos, conflictos explícitos, experiencias de decepción o sentimientos de no ser visto o comprendido. La reparación implica reconocer la ruptura, explorar su significado y restablecer la conexión, mostrando que el vínculo puede tolerar el conflicto sin romperse. En la relación terapéutica, esta subfunción es especialmente potente, ya que ofrece una experiencia correctiva frente a historias relacionales marcadas por la evitación, el abandono o la escalada conflictiva.` },
+      { id:'F11_02', label:'Ensayar nuevos modos relacionales',
+        desc:`Esta subfunción se orienta a practicar activamente formas alternativas de relacionarse que el paciente no ha podido desarrollar o sostener en su entorno habitual. El espacio terapéutico se utiliza como un contexto seguro para experimentar nuevas maneras de expresar emociones, formular demandas, afrontar el desacuerdo o acercarse al otro, sin el riesgo inmediato de consecuencias relacionales irreversibles. El énfasis no está en “hacerlo bien”, sino en ampliar el repertorio relacional y ganar flexibilidad.` },
+      { id:'F11_03', label:'Explorar límites y necesidades',
+        desc:`Esta subfunción busca clarificar los propios límites y necesidades relacionales, ayudando al paciente a reconocer qué necesita de los otros y hasta dónde puede o quiere llegar en una relación. Incluye tanto la identificación de límites difusos o rígidos como la capacidad de expresarlos de forma ajustada. El trabajo aquí permite salir de patrones de fusión, sumisión, control o aislamiento, y construir relaciones más equilibradas y sostenibles.` },
+      { id:'F11_04', label:'Internalizar relación segura',
+        desc:`Esta subfunción tiene como objetivo favorecer la incorporación interna de una experiencia relacional más segura, que pueda servir como referencia fuera del contexto terapéutico. A través de experiencias repetidas de sintonía, reparación y presencia confiable, el paciente va desarrollando una base interna de seguridad que modula expectativas, reacciones emocionales y conductas relacionales. No se trata de depender del terapeuta, sino de llevarse consigo una forma distinta de estar en relación, más estable y autorregulada.` }
     ]
   },
 
+  // =========================================================
+  // F12 — Incrementar agencia, autonomía y dirección
+  // =========================================================
   {
     id:'F12',
     label:'Incrementar agencia, autonomía y dirección',
+    desc:`Esta función tiene como objetivo consolidar al paciente como sujeto activo de su propia vida, capaz de reconocerse como autor de decisiones, acciones y orientaciones vitales. No se limita a “hacer cambios”, sino a asumir la propia capacidad de elección y la responsabilidad asociada a ella, sin quedar atrapado en la culpa, la dependencia o la pasividad. Es una función transversal —presente en distintos momentos del proceso—, pero adquiere especial relevancia en fases avanzadas y de cierre, cuando el trabajo terapéutico se orienta a la autonomía, la continuidad del cambio fuera de la terapia y la capacidad del paciente para sostener su propio rumbo sin el apoyo constante del terapeuta.`,
     subfunciones:[
-      { id:'F12_01', label:'Tomar decisiones propias' },
-      { id:'F12_02', label:'Asumir responsabilidad sin culpa' },
-      { id:'F12_03', label:'Clarificar valores y dirección' },
-      { id:'F12_04', label:'Movilizar motivación y compromiso' }
+      { id:'F12_01', label:'Tomar decisiones propias',
+        desc:`Esta subfunción se centra en facilitar elecciones conscientes, deliberadas y asumidas, diferenciándolas de reacciones automáticas, complacencia, evitación o delegación en otros. Implica ayudar al paciente a reconocer que, incluso en contextos limitados, existe siempre un margen de elección, y que decidir implica aceptar consecuencias sin quedar paralizado por el miedo a equivocarse. El foco no está en “tomar la decisión correcta”, sino en reconocerse como quien decide, reforzando la autoría personal frente a la inercia, la dependencia o la externalización de la responsabilidad.` },
+      { id:'F12_02', label:'Asumir responsabilidad sin culpa',
+        desc:`Esta subfunción busca distinguir claramente responsabilidad de autoacusación. Asumir responsabilidad implica reconocer el propio papel en lo que ocurre y en lo que se elige hacer a partir de ahora, sin convertir ese reconocimiento en castigo moral, vergüenza o autodesprecio. El trabajo clínico aquí consiste en desplazar la responsabilidad desde un eje punitivo (“todo es culpa mía”) hacia un eje operativo (“esto depende de mí ahora”), permitiendo al paciente recuperar capacidad de acción sin quedar atrapado en el reproche o la parálisis.` },
+      { id:'F12_03', label:'Clarificar valores y dirección',
+        desc:`Esta subfunción tiene como objetivo definir qué es importante para el paciente y hacia dónde quiere orientar su vida, más allá de la mera reducción de síntomas. Implica explorar criterios personales de sentido, coherencia y dirección, que sirvan como brújula para decisiones futuras. No se trata de imponer valores ni de alcanzar certezas absolutas, sino de construir una orientación suficientemente clara que permita al paciente evaluar elecciones, sostener esfuerzos y tolerar dificultades en función de algo que considera valioso.` },
+      { id:'F12_04', label:'Movilizar motivación y compromiso',
+        desc:`Esta subfunción se orienta a activar la disposición al cambio y el compromiso sostenido con el proceso, especialmente cuando aparecen ambivalencia, dudas o desgaste. No busca generar entusiasmo artificial, sino alinear expectativas realistas con los objetivos y valores del paciente, fortaleciendo la implicación activa. Aquí se trabaja la motivación como algo dinámico y fluctuante, ayudando al paciente a reconocer por qué cambiar, para qué hacerlo y qué está dispuesto a invertir, sin forzar ni moralizar.` }
     ]
   }
+
 ],
+
 
 
 };
@@ -14500,6 +14692,8 @@ async function ensureModeloDetalleLoaded(modelo){
 let mode = 'guia';
 let faseActiva = 'F3';
 let procesoActivo = null;
+    let subfuncionActivaId = null;   // para el modo "funciones"
+
 let subprocesoActivo = null;   // ⬅️ NUEVO
 let enfoqueActivo = null;
 let escuelaActiva = 'null';
@@ -17351,27 +17545,195 @@ const mapMJPS = {};
       return;
     }
 
-// --- DETALLE: FUNCIONES ---   ✅ AQUÍ
-  if(mode === 'funciones'){
-    $details.selectAll('*').remove();
+// --- DETALLE: FUNCIONES ---
+// --- DETALLE: FUNCIONES ---
+if(mode === 'funciones'){
+  $details.selectAll('*').remove();
 
-    if(!procesoActivo){
-      $details.append('div').attr('class','box')
-        .append('p').attr('class','muted')
-        .text('Selecciona una función para ver sus subfunciones.');
-      return;
-    }
-
-    const box = $details.append('div').attr('class','box');
-    box.append('h3').text(procesoActivo.label || '');
-
-    const ul = box.append('ul');
-    (procesoActivo.subfunciones || []).forEach(s=>{
-      ul.append('li').text(s.label || '');
-    });
-
+  if(!procesoActivo){
+    $details.append('div').attr('class','box')
+      .append('p').attr('class','muted')
+      .text('Selecciona una función para ver sus subfunciones.');
     return;
   }
+
+  // 1) CABECERA FUNCIÓN
+  const head = $details.append('div').attr('class','box');
+  head.append('h3').text((procesoActivo.label || '').toUpperCase());
+
+  if(procesoActivo.desc){
+    head.append('p').text(procesoActivo.desc);
+  }
+
+  const subs = (procesoActivo.subfunciones || []);
+  if(!subs.length){
+    $details.append('div').attr('class','box')
+      .append('p').attr('class','muted')
+      .text('Esta función aún no tiene subfunciones definidas.');
+    return;
+  }
+
+  // 2) Selector de SUBFUNCIÓN (igual idea que subprocesos)
+  // Si la subfunción activa no existe, por defecto la primera
+  if(!subfuncionActivaId || !subs.some(s => s.id === subfuncionActivaId)){
+    subfuncionActivaId = subs[0].id;
+  }
+
+  const selBox = $details.append('div').attr('class','box subproc-box');
+
+  const row = selBox.append('div').attr('class','subproc-selector');
+  row.append('label').attr('class','muted').text('Selecciona la subfunción');
+
+  const wrap = row.append('div').attr('class','subproc-select-wrap');
+  const sel = wrap.append('select').attr('class','subproc-select');
+
+  sel.selectAll('option')
+    .data(subs)
+    .enter()
+    .append('option')
+    .attr('value', d => d.id)
+    .text(d => d.label || d.id);
+
+  sel.property('value', subfuncionActivaId);
+
+  sel.on('change', (event)=>{
+    subfuncionActivaId = event.target.value;
+    drawDetails(); // <- IMPORTANTE: re-render del panel derecho
+  });
+
+  const sub = subs.find(s => s.id === subfuncionActivaId) || subs[0];
+
+  // 3) DETALLE RICO DE SUBFUNCIÓN
+  const box = $details.append('div').attr('class','box');
+  box.append('h3').text(sub.label || '');
+
+  if(sub.desc){
+    box.append('p').text(sub.desc);
+  }
+
+   // =====================================================
+  // TÉCNICAS (PROCEDIMIENTOS) ASIGNADAS A ESTA SUBFUNCIÓN
+  // =====================================================
+  const targetSF = String(subfuncionActivaId || '').toUpperCase();
+
+  // OJO: usa DATA.enfoques o DATA.modelos según tu estructura real
+  const MODELOS = (DATA.enfoques || DATA.modelos || []);
+
+  const tecnicasPorModelo = MODELOS
+    .map(m => {
+      const lista = (m.procedimientos || []).filter(pr => {
+        const sf = pr.subfunciones || [];
+        const arr = Array.isArray(sf) ? sf : [sf];
+        return arr.map(x => String(x||'').toUpperCase()).includes(targetSF);
+      });
+      return { modelo:m, items:lista };
+    })
+    .filter(x => x.items.length);
+
+  if(tecnicasPorModelo.length){
+    const bTec = $details.append('div').attr('class','box');
+    bTec.append('h3').text('Técnicas');
+
+    tecnicasPorModelo.forEach(({modelo, items})=>{
+      const card = bTec.append('div').attr('class','modelo-card');
+
+      const hdr = card.append('div').attr('class','modelo-header');
+      hdr.append('span').attr('class','modelo-name').text(modelo.label || modelo.id || 'Modelo');
+      const toggle = hdr.append('span').attr('class','modelo-toggle').text('+');
+
+      const body = card.append('div').attr('class','modelo-body').style('display','none');
+
+      items.forEach(pr=>{
+        const it = body.append('div').attr('class','micro-item');
+
+        const headBtn = it.append('button')
+          .attr('type','button')
+          .attr('class','micro-head')
+          .html(`<span class="micro-title">${pr.nombre || ''}</span><span class="micro-toggle">+</span>`);
+
+        const b = it.append('div').attr('class','micro-body').style('display','none');
+        if(pr.texto) b.append('p').text(pr.texto);
+
+        headBtn.on('click', ()=>{
+          const open = it.classed('open');
+          it.classed('open', !open);
+          b.style('display', open ? 'none' : 'block');
+          headBtn.select('.micro-toggle').text(open ? '+' : '−');
+        });
+      });
+
+      hdr.on('click', ()=>{
+        const open = card.classed('open');
+        card.classed('open', !open);
+        body.style('display', open ? 'none' : 'block');
+        toggle.text(open ? '+' : '−');
+      });
+    });
+  } else {
+    $details.append('div').attr('class','box')
+      .append('p').attr('class','muted')
+      .text('Aún no hay técnicas asignadas a esta subfunción.');
+  }
+
+  // =====================================================
+  // MICROINTERVENCIONES ASIGNADAS A ESTA SUBFUNCIÓN
+  // =====================================================
+  const microsPorModelo = MODELOS
+    .map(m => {
+      const lista = (m.micros || []).filter(mi => {
+        const sf = mi.subfunciones || [];
+        const arr = Array.isArray(sf) ? sf : [sf];
+        return arr.map(x => String(x||'').toUpperCase()).includes(targetSF);
+      });
+      return { modelo:m, items:lista };
+    })
+    .filter(x => x.items.length);
+
+  if(microsPorModelo.length){
+    const bMic = $details.append('div').attr('class','box');
+    bMic.append('h3').text('Microintervenciones');
+
+    microsPorModelo.forEach(({modelo, items})=>{
+      const card = bMic.append('div').attr('class','modelo-card');
+
+      const hdr = card.append('div').attr('class','modelo-header');
+      hdr.append('span').attr('class','modelo-name').text(modelo.label || modelo.id || 'Modelo');
+      const toggle = hdr.append('span').attr('class','modelo-toggle').text('+');
+
+      const body = card.append('div').attr('class','modelo-body').style('display','none');
+
+      items.forEach(mi=>{
+        const it = body.append('div').attr('class','micro-item');
+
+        const headBtn = it.append('button')
+          .attr('type','button')
+          .attr('class','micro-head')
+          .html(`<span class="micro-title">${mi.nombre || ''}</span><span class="micro-toggle">+</span>`);
+
+        const b = it.append('div').attr('class','micro-body').style('display','none');
+        if(mi.texto) b.append('p').text(mi.texto);
+
+        headBtn.on('click', ()=>{
+          const open = it.classed('open');
+          it.classed('open', !open);
+          b.style('display', open ? 'none' : 'block');
+          headBtn.select('.micro-toggle').text(open ? '+' : '−');
+        });
+      });
+
+      hdr.on('click', ()=>{
+        const open = card.classed('open');
+        card.classed('open', !open);
+        body.style('display', open ? 'none' : 'block');
+        toggle.text(open ? '+' : '−');
+      });
+    });
+  }
+
+  return;
+}
+
+
 
   }
 
