@@ -4655,8 +4655,7 @@ La sensibilidad al contexto permite adaptar el estilo terapéutico para evitar m
 }
 
 
-]
-,
+],
 
     mapPG: {
       PG1_base_segura: {
@@ -14114,7 +14113,143 @@ El progreso se evalúa mediante cambios observables y medibles: frecuencia, dura
       { id:'C_newSelf', label:'Rastreo de señales de nuevo self', tip:'Micro', origen:'Self-coherence', ref:'—' },
       { id:'C_intDiary', label:'Diario de integración', tip:'Tarea', origen:'Self-coherence', ref:'—' }
     ]
-  };
+  ,
+funciones: [
+  {
+    id:'F01',
+    label:'Estabilizar / regular',
+    subfunciones:[
+      { id:'F01_01', label:'Reducir hiperactivación' },
+      { id:'F01_02', label:'Salir del colapso / apagamiento' },
+      { id:'F01_03', label:'Ampliar ventana de tolerancia' },
+      { id:'F01_04', label:'Recuperar control corporal básico' }
+    ]
+  },
+  {
+    id:'F02',
+    label:'Contener / sostener',
+    subfunciones:[
+      { id:'F02_01', label:'Presencia reguladora' },
+      { id:'F02_02', label:'Validación emocional' },
+      { id:'F02_03', label:'Aguante compartido del afecto' },
+      { id:'F02_04', label:'No-intervención deliberada' }
+    ]
+  },
+
+  {
+    id:'F03',
+    label:'Normalizar / despatologizar',
+    subfunciones:[
+      { id:'F03_01', label:'Contextualizar la experiencia' },
+      { id:'F03_02', label:'Despersonalizar el síntoma' },
+      { id:'F03_03', label:'Reducir juicio moral' },
+      { id:'F03_04', label:'Restituir dignidad psicológica' }
+    ]
+  },
+
+  {
+    id:'F04',
+    label:'Aumentar conciencia emocional',
+    subfunciones:[
+      { id:'F04_01', label:'Identificar emociones' },
+      { id:'F04_02', label:'Diferenciar emociones similares' },
+      { id:'F04_03', label:'Vincular emoción–situación' },
+      { id:'F04_04', label:'Distinguir emoción de pensamiento' }
+    ]
+  },
+
+  {
+    id:'F05',
+    label:'Facilitar acceso experiencial',
+    subfunciones:[
+      { id:'F05_01', label:'Evocar emoción en sesión' },
+      { id:'F05_02', label:'Intensificar experiencia relevante' },
+      { id:'F05_03', label:'Sostener emoción sin huida' },
+      { id:'F05_04', label:'Conectar emoción con cuerpo' }
+    ]
+  },
+
+  {
+    id:'F06',
+    label:'Desbloquear evitación y defensas',
+    subfunciones:[
+      { id:'F06_01', label:'Reducir evitación conductual' },
+      { id:'F06_02', label:'Reducir evitación emocional' },
+      { id:'F06_03', label:'Cuestionar control excesivo' },
+      { id:'F06_04', label:'Confrontar defensas rígidas' }
+    ]
+  },
+
+  {
+    id:'F07',
+    label:'Organizar y clarificar',
+    subfunciones:[
+      { id:'F07_01', label:'Secuenciar eventos' },
+      { id:'F07_02', label:'Diferenciar niveles' },
+      { id:'F07_03', label:'Detectar patrones repetidos' },
+      { id:'F07_04', label:'Nombrar dinámicas implícitas' },
+      { id:'F07_05', label:'Organizar el tratamiento' }
+    ]
+  },
+
+  {
+    id:'F08',
+    label:'Mentalizar / perspectivar',
+    subfunciones:[
+      { id:'F08_01', label:'Reflexionar sobre estados propios' },
+      { id:'F08_02', label:'Reflexionar sobre estados ajenos' },
+      { id:'F08_03', label:'Detectar malentendidos relacionales' },
+      { id:'F08_04', label:'Salir de lecturas unívocas' }
+    ]
+  },
+
+  {
+    id:'F09',
+    label:'Reformular / resignificar',
+    subfunciones:[
+      { id:'F09_01', label:'Introducir nueva lectura' },
+      { id:'F09_02', label:'Desplazar atribuciones rígidas' },
+      { id:'F09_03', label:'Reescribir narrativa personal' },
+      { id:'F09_04', label:'Integrar experiencias pasadas' }
+    ]
+  },
+
+  {
+    id:'F10',
+    label:'Promover nuevas acciones y experiencias',
+    subfunciones:[
+      { id:'F10_01', label:'Ensayar nuevas conductas' },
+      { id:'F10_02', label:'Exposición a situaciones evitadas' },
+      { id:'F10_03', label:'Introducir experiencias correctivas' },
+      { id:'F10_04', label:'Romper patrones inerciales' }
+    ]
+  },
+
+  {
+    id:'F11',
+    label:'Reparar, ensayar o fortalecer vínculos',
+    subfunciones:[
+      { id:'F11_01', label:'Reparar rupturas' },
+      { id:'F11_02', label:'Ensayar nuevos modos relacionales' },
+      { id:'F11_03', label:'Explorar límites y necesidades' },
+      { id:'F11_04', label:'Internalizar relación segura' }
+    ]
+  },
+
+  {
+    id:'F12',
+    label:'Incrementar agencia, autonomía y dirección',
+    subfunciones:[
+      { id:'F12_01', label:'Tomar decisiones propias' },
+      { id:'F12_02', label:'Asumir responsabilidad sin culpa' },
+      { id:'F12_03', label:'Clarificar valores y dirección' },
+      { id:'F12_04', label:'Movilizar motivación y compromiso' }
+    ]
+  }
+],
+
+
+};
 // =====================================================
 // EXTENSIÓN DE DATOS POR ESCUELA (LOCAL + JSON REMOTO)
 // =====================================================
@@ -14393,7 +14528,8 @@ const data = [
   {id:'guia',         label:'Guía'},
   {id:'metaprocesos', label:'Base'},
   {id:'mjps',         label:'Procesos'},
-  
+  { id:'funciones', label:'Funciones' },
+
   {id:'modelos',      label:'Modelos'}
 ];
 
@@ -14491,7 +14627,8 @@ const tabEnter = $tabs.enter().append('div')
 
   function drawTabs(){
       // En metaprocesos (y en guía/modelos) no usamos fases
-  if (mode === 'metaprocesos' || mode === 'guia' || mode === 'modelos'){
+if (mode === 'metaprocesos' || mode === 'guia' || mode === 'modelos' || mode === 'funciones'){
+
     $phaseTabs.selectAll('.tab').remove();
     return;
   }
@@ -14534,7 +14671,38 @@ const tabEnter = $tabs.enter().append('div')
     return;
 
   }
-  
+  // --- MODO: FUNCIONES ---
+if(mode === 'funciones'){
+  const items = (DATA.funciones || []).filter(f =>
+    !filtro || (f.label||'').toLowerCase().includes(filtro)
+  );
+
+  const row = $list.selectAll('.item').data(items, d=>d.id);
+  const rowEnter = row.enter().append('div').attr('class','item');
+
+  rowEnter.append('div').attr('class','txt');
+  rowEnter.append('div').attr('class','meta');
+
+  const merged = rowEnter.merge(row)
+    .classed('active', d=> procesoActivo && procesoActivo.id===d.id)
+    .on('click', (e,d)=>{
+      procesoActivo = d;        // reutilizamos procesoActivo como “función seleccionada”
+      subprocesoActivo = null;
+      enfoqueActivo = null;
+      drawProcessList();
+      drawDetails();
+    });
+
+  merged.select('.txt').html(d =>
+    `<div class="line1"><span class="pill">${d.id}</span><span class="label">${d.label}</span></div>`
+  );
+
+  merged.select('.meta').text(d => `${(d.subfunciones||[]).length} subfunciones`);
+
+  row.exit().remove();
+  return;
+}
+
 
     // --- MODO: PROCESOS GENERALES ---
     if(mode === 'procesos_generales'){
@@ -17183,6 +17351,27 @@ const mapMJPS = {};
       return;
     }
 
+// --- DETALLE: FUNCIONES ---   ✅ AQUÍ
+  if(mode === 'funciones'){
+    $details.selectAll('*').remove();
+
+    if(!procesoActivo){
+      $details.append('div').attr('class','box')
+        .append('p').attr('class','muted')
+        .text('Selecciona una función para ver sus subfunciones.');
+      return;
+    }
+
+    const box = $details.append('div').attr('class','box');
+    box.append('h3').text(procesoActivo.label || '');
+
+    const ul = box.append('ul');
+    (procesoActivo.subfunciones || []).forEach(s=>{
+      ul.append('li').text(s.label || '');
+    });
+
+    return;
+  }
 
   }
 
