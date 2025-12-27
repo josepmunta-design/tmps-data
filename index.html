@@ -15134,12 +15134,16 @@ rowEnter.append('div').attr('class', 'meta');
 const merged = rowEnter.merge(row);
 
 // Formato idéntico al de funciones: pill + label
-merged.select('.txt').html(d => `
-  <div class="line1">
-    <span class="pill">${(d.code || d.id || '').toString().trim()}</span>
-    <span class="label">${(d.label || '').toString()}</span>
-  </div>
-`);
+merged.select('.txt').html(d =>
+  `<div class="line1">
+     <span class="pill">${d.id}</span>
+     <span class="label">${d.label || ''}</span>
+   </div>`
+);
+
+// deja meta vacío (o elimínalo si quieres)
+merged.select('.meta').html('');
+
 
 merged.classed('active', d => procesoActivo && d.id === procesoActivo.id);
 
@@ -15185,11 +15189,14 @@ if (mode === 'metaprocesos') {
 
 merged.select('.txt').html(d => `
   <div class="line1">
+    <span class="pill" style="display:none">${d.id}</span>
     <span class="proceso-icon"></span>
     <span class="label">${d.label || ''}</span>
   </div>
   <div class="meta">${d.cambia || ''}</div>
 `);
+
+
 merged.select('.proceso-icon').each(function(d){
 
   const svg = d3.select(this)
@@ -15325,13 +15332,14 @@ const items = (DATA.mjpsProcesos || [])
 
 
   // === CONTENIDO VISUAL DE LA LÍNEA (ICONO + TÍTULO + DESCRIPCIÓN CORTA) ===
-  merged.select('.txt').html(d => `
-    <div class="line1">
-      <span class="proceso-icon"></span>
-      <span class="label">${d.label}</span>
-    </div>
-    <div class="meta">${d.cambia || ''}</div>
-  `);
+merged.select('.txt').html(d => `
+  <div class="line1">
+    <span class="pill" style="display:none">${d.id}</span>
+    <span class="proceso-icon"></span>
+    <span class="label">${d.label || ''}</span>
+  </div>
+  <div class="meta">${d.cambia || ''}</div>
+`);
 
   // === ICONOS: REUTILIZAMOS LOS DE LA GUÍA DE USO, SIN CAMBIAR DISEÑO ===
   merged.select('.proceso-icon').each(function(d){
