@@ -1478,20 +1478,24 @@ html, body{
     overflow: hidden !important; /* evita scroll de la web */
   }
 
-  /* Tu contenedor raíz de la app (ajusta el selector si tu id/clase es distinto) */
-  #app, #tmps-root, #mjps-root, .tmps-root, .mjps-root{
-    position: fixed !important;
-    inset: 0 !important;         /* top/right/bottom/left:0 */
-    width: 100vw !important;
-    height: 100dvh !important;   /* mejor que 100vh en móviles */
-    max-width: none !important;
-    max-height: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-    overflow: hidden !important;
-    z-index: 999999 !important;
-  }
+ /* Tu contenedor raíz REAL */
+.tmps-mjps-root{
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
+  z-index: 2147483647 !important;
+}
+.tmps-mjps-root .wrap{ height: 100% !important; }
+.tmps-mjps-root .grid{ min-height: 0 !important; height: 100% !important; }
+.tmps-mjps-root .panel{ min-height: 0 !important; }
+
 
   /* Si dentro tienes columnas o wrappers que limitan alto */
   .container, .container-fluid, .row, .col, .wrapper, .content, main{
@@ -1507,6 +1511,46 @@ html, body{
     display: none !important;
   }
 }
+/* ===== FULLSCREEN TOGGLE (MJPS) ===== */
+
+html.mjps-fs-on, html.mjps-fs-on body{
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Root REAL a pantalla completa */
+html.mjps-fs-on .tmps-mjps-root{
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
+  z-index: 2147483647 !important;
+}
+
+/* Botón flotante */
+#mjpsFullscreenBtn{
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  z-index: 2147483647;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1;
+  background: rgba(0,0,0,0.78);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+#mjpsFullscreenBtn:active{ transform: scale(0.98); }
 
   </style>
 </head>
@@ -18030,6 +18074,88 @@ function goToSubprocesoById(subId){
   if (mode === 'modelos') {
     drawModelList();   // o la función que liste escuelas/modelos
     drawDetails();
+  }
+})();
+(function(){
+  const ROOT_SELECTOR = '.tmps-mjps-root';
+
+  // Selectores típicos de header/footer en builders (incluye varios por si Teachable cambia)
+  const HIDE_SELECTORS = [
+    'header','footer',
+    '#header','#footer',
+    '.header','.footer',
+    '.site-header','.site-footer',
+    '.navbar','.topbar',
+    '[role="banner"]','[role="contentinfo"]',
+    '.course-header','.course-footer',
+    '.block-header','.block-footer'
+  ];
+
+  function qsa(sel){ return Array.from(document.querySelectorAll(sel)); }
+
+  function setHidden(el, hide){
+    if(!el) return;
+    if(el.dataset.mjpsPrevDisplay === undefined){
+      el.dataset.mjpsPrevDisplay = el.style.display || '';
+    }
+    el.style.display = hide ? 'none' : (el.dataset.mjpsPrevDisplay || '');
+  }
+
+  function applyChromeHidden(on){
+    const els = Array.from(new Set(HIDE_SELECTORS.flatMap(s => qsa(s))));
+    els.forEach(el => setHidden(el, on));
+  }
+
+  async function tryRealFullscreen(on){
+    // En móvil puede fallar: no pasa nada, seguimos con fullscreen “visual”.
+    try{
+      const root = document.querySelector(ROOT_SELECTOR) || document.documentElement;
+      if(on){
+        if(!document.fullscreenElement && root.requestFullscreen){
+          await root.requestFullscreen({ navigationUI: "hide" });
+        }
+      }else{
+        if(document.fullscreenElement && document.exitFullscreen){
+          await document.exitFullscreen();
+        }
+      }
+    }catch(e){}
+  }
+
+  function setBtnLabel(btn, on){
+    btn.textContent = on ? 'Salir pantalla completa' : 'Pantalla completa';
+  }
+
+  function setFullscreen(on){
+    document.documentElement.classList.toggle('mjps-fs-on', on);
+    applyChromeHidden(on);
+
+    const btn = document.getElementById('mjpsFullscreenBtn');
+    if(btn) setBtnLabel(btn, on);
+
+    tryRealFullscreen(on);
+  }
+
+  function init(){
+    if(document.getElementById('mjpsFullscreenBtn')) return;
+
+    const btn = document.createElement('button');
+    btn.id = 'mjpsFullscreenBtn';
+    btn.type = 'button';
+    setBtnLabel(btn, false);
+
+    btn.addEventListener('click', () => {
+      const on = document.documentElement.classList.contains('mjps-fs-on');
+      setFullscreen(!on);
+    });
+
+    document.body.appendChild(btn);
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  }else{
+    init();
   }
 })();
 
