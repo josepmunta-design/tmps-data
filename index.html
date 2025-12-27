@@ -5932,7 +5932,7 @@ explícitos, se facilita una comprensión más honesta de sí mismo y se fortale
       },
      
 
-      {
+     {
   id:'h5focusing',
   grupo:'Humanista',
   label:'Focusing',
@@ -5941,7 +5941,11 @@ explícitos, se facilita una comprensión más honesta de sí mismo y se fortale
 
   descripcion:`Enfoque experiencial centrado en la “sensación sentida” (felt sense), una sensación corporal global
 que condensa significado implícito. El cambio en Focusing se da a través del “shift corporal”: un
-alivio o apertura que indica reorganización profunda del sentido personal.`,
+alivio o apertura que indica reorganización profunda del sentido personal.
+
+En términos funcionales, Focusing moviliza principalmente procesos de acceso y procesamiento emocional
+(AP) a través de la subfunción F05 · Facilitar acceso experiencial, permitiendo que el significado implícito
+se vuelva vivible y transformable desde el cuerpo.`,
 
   influencias:[
     'Psicoterapia centrada en la persona',
@@ -5954,8 +5958,7 @@ alivio o apertura que indica reorganización profunda del sentido personal.`,
     'Cambio experiencial (felt shift)'
   ],
 
-         mjps:['RF','AP','N'],
-
+  mjps:['RF','AP','N'],
 
   refs:[
     'Gendlin, E. T. (1981). Focusing. Bantam.',
@@ -5973,7 +5976,11 @@ alivio o apertura que indica reorganización profunda del sentido personal.`,
       procesos:['AP'],
       texto:`Secuencia en seis pasos para acceder al significado implícito a través del cuerpo: localizar un
 felt sense, sostenerlo con respeto, formular preguntas suaves y permitir que surja un shift corporal.
-El foco está en sentir, no en analizar.`
+El foco está en sentir, no en analizar.
+
+Este procedimiento moviliza el acceso experiencial (AP) a través de la subfunción F05 · Facilitar acceso
+experiencial, creando las condiciones para que la experiencia implícita se despliegue sin forzar
+interpretación ni regulación activa.`
     },
 
     {
@@ -5981,7 +5988,11 @@ El foco está en sentir, no en analizar.`
       codigo:'p_focus_problema',
       procesos:['AP'],
       texto:`Se escoge un problema concreto y se invita al cuerpo a formar una sensación global de “todo eso”.
-Se sostiene la sensación y se atienden los matices emergentes que reorganizan la vivencia.`
+Se sostiene la sensación y se atienden los matices emergentes que reorganizan la vivencia.
+
+Aquí el subproceso AP se moviliza también desde la subfunción F05 · Facilitar acceso experiencial, con un
+énfasis adicional en permitir que el problema sea sentido como totalidad corporal antes de cualquier
+elaboración narrativa o cognitiva.`
     },
 
     {
@@ -5989,7 +6000,11 @@ Se sostiene la sensación y se atienden los matices emergentes que reorganizan l
       codigo:'p_focus_sintoma',
       procesos:['AP'],
       texto:`Se utiliza una sensación corporal (nudo, presión) como puerta de entrada a significado implícito.
-El síntoma se trata como expresión de algo que busca integrarse, no como enemigo a eliminar.`
+El síntoma se trata como expresión de algo que busca integrarse, no como enemigo a eliminar.
+
+En este uso, el acceso experiencial (AP) se moviliza a través de la subfunción F05 · Facilitar acceso
+experiencial, evitando funciones de control o supresión y favoreciendo una relación exploratoria con
+la experiencia corporal.`
     }
   ],
 
@@ -6003,7 +6018,11 @@ El síntoma se trata como expresión de algo que busca integrarse, no como enemi
       codigo:'m_focus_feltSense',
       procesos:['RF_ground'],
       texto:`Invitar al cuerpo a formar una sensación global que condense una situación. Es la entrada al
-significado implícito y al cambio experiencial.`
+significado implícito y al cambio experiencial.
+
+Esta microintervención moviliza el grounding corporal (RF_ground) a través de la subfunción F01 ·
+Recuperar control corporal básico, estableciendo una base somática segura desde la que pueda
+emerger el acceso experiencial posterior.`
     },
 
     {
@@ -6011,7 +6030,10 @@ significado implícito y al cambio experiencial.`
       codigo:'m_focus_preguntar',
       procesos:['N'],
       texto:`Formular preguntas suaves al felt sense (“¿qué necesita esto?”). No se busca respuesta cognitiva,
-sino un matiz sentido que encaje.`
+sino un matiz sentido que encaje.
+
+Aquí el proceso narrativo-cognitivo (N) se moviliza a través de la subfunción F07 · Organizar y clarificar,
+permitiendo que el significado implícito se articule sin imponer interpretación ni reestructuración.`
     },
 
     {
@@ -6019,10 +6041,14 @@ sino un matiz sentido que encaje.`
       codigo:'m_focus_shift',
       procesos:['AP'],
       texto:`Observar pequeñas aperturas, respiraciones profundas o alivios que indican reorganización implícita.
-El shift consolida un nuevo significado vivido.`
+El shift consolida un nuevo significado vivido.
+
+Esta microintervención activa el procesamiento emocional (AP) a través de la subfunción F09 · Integrar
+experiencias pasadas / resignificar, consolidando corporalmente el nuevo sentido emergente.`
     }
   ]
 },
+
 
       { id:'h12enc', grupo:'Humanista', label:'Grupos de encuentro',
         procesos:['Autenticidad interpersonal','Feedback honesto','Presencia en relación'],
@@ -14441,6 +14467,7 @@ funciones: [
 
 
 
+
 };
 // =====================================================
 // EXTENSIÓN DE DATOS POR ESCUELA (LOCAL + JSON REMOTO)
@@ -14723,6 +14750,7 @@ const data = [
   {id:'metaprocesos', label:'Base'},
   {id:'mjps',         label:'Procesos'},
   { id:'funciones', label:'Funciones' },
+   { id:'momentos', label:'Momento' },   // ← NUEVO
 
   {id:'modelos',      label:'Modelos'}
 ];
@@ -17550,12 +17578,53 @@ const mapMJPS = {};
 if(mode === 'funciones'){
   $details.selectAll('*').remove();
 
-  if(!procesoActivo){
-    $details.append('div').attr('class','box')
-      .append('p').attr('class','muted')
-      .text('Selecciona una función para ver sus subfunciones.');
-    return;
-  }
+if(!procesoActivo){
+  const box = $details.append('div').attr('class','box');
+
+  box.append('h4')
+    .attr('class','section-title')
+    .text('Funciones clínicas');
+
+  box.append('p')
+    .attr('class','muted')
+    .text('Una función clínica describe el tipo de intervención que realiza el terapeuta para movilizar procesos de cambio en ese momento del proceso terapéutico.');
+
+  box.append('h4')
+    .attr('class','section-title')
+    .text('¿Qué pregunta responde una función?');
+
+  box.append('p')
+    .attr('class','muted')
+    .text('“¿Qué tipo de intervención necesito hacer ahora para movilizar determinados procesos, sin precipitarme ni quedarme corto?”');
+
+  box.append('h4')
+    .attr('class','section-title')
+    .text('Cómo leer el esquema');
+
+  const ul = box.append('ul').attr('class','muted');
+
+  ul.append('li')
+    .html('<strong>Función</strong> = tipo de intervención (acción clínica que realiza el terapeuta).');
+
+  ul.append('li')
+    .html('Subfunción = palanca clínica específica dentro de esa acción.');
+
+  ul.append('li')
+    .html('Proceso / subproceso = lo que se moviliza o cambia en el paciente.');
+
+  ul.append('li')
+    .html('Técnica = el vehículo concreto para ejecutar una subfunción.');
+
+  box.append('p')
+    .attr('class','muted')
+    .style('margin-top','8px')
+    .text('Selecciona una función para ver sus subfunciones y entender qué intervención estás realizando y qué procesos estás movilizando.');
+
+  return;
+}
+
+
+
 
   // 1) CABECERA FUNCIÓN
   const head = $details.append('div').attr('class','box');
@@ -17572,6 +17641,7 @@ if(mode === 'funciones'){
       .text('Esta función aún no tiene subfunciones definidas.');
     return;
   }
+
 
   // 2) Selector de SUBFUNCIÓN (igual idea que subprocesos)
   // Si la subfunción activa no existe, por defecto la primera
@@ -17609,6 +17679,125 @@ if(mode === 'funciones'){
 
   if(sub.desc){
     box.append('p').text(sub.desc);
+  }
+  // =====================================================
+  // SUBPROCESOS ASIGNADOS A ESTA SUBFUNCIÓN
+  // (se infiere a partir de micros/procedimientos que tengan
+  //  subfunciones:[...] y procesos:[...])
+  // =====================================================
+
+  // Normalizamos el ID objetivo (Fxx_yy)
+  const targetSF_SP = String(subfuncionActivaId || '').toUpperCase();
+
+
+  // Fuentes donde existe el mapeo subfunciones -> subprocesos
+  // 1) Datos globales (si los tienes)
+
+
+  // 2) Datos por modelo (si lo estás guardando dentro de cada modelo/enfoque)
+ const MODELOS_SP = (DATA.enfoques || DATA.modelos || []);
+
+
+  // Helper: recoge subprocesos desde una lista de items (micros/procedimientos)
+  function collectSubprocesosFrom(items){
+    const out = [];
+    (items || []).forEach(it => {
+      const sfs = it.subfunciones || [];
+      const sfArr = Array.isArray(sfs) ? sfs : [sfs];
+      const hasSF = sfArr.map(x => String(x||'').toUpperCase()).includes(targetSF_SP);
+
+      if(!hasSF) return;
+
+      const procs = it.procesos || [];
+      const procArr = Array.isArray(procs) ? procs : [procs];
+
+      procArr.forEach(p => {
+        const key = String(p||'').toUpperCase();
+        if(key) out.push(key);
+      });
+    });
+    return out;
+  }
+// 2) Recolectar SOLO desde los modelos/enfoques (fuente real)
+let subps_SP = [];
+
+MODELOS_SP.forEach(m => {
+  subps_SP = subps_SP
+    .concat(collectSubprocesosFrom(m.procedimientos || []))
+    .concat(collectSubprocesosFrom(m.micros || []));
+});
+
+// Unificar + ordenar
+subps_SP = Array.from(new Set(subps_SP)).sort((a,b)=>a.localeCompare(b));
+
+// Mostrar
+if(subps_SP.length){
+  const bSubp = $details.append('div').attr('class','box');
+  bSubp.append('h3').text('Subprocesos asignados');
+
+  const rowSubp = bSubp.append('div').attr('class','tagrow');
+
+  subps_SP.forEach(code=>{
+    rowSubp.append('span')
+  .attr('class','tag proc')
+  .style('cursor','pointer')
+  .attr('title','Ir a este subproceso')
+  .text(code)
+  .on('click', (event) => {
+    event.stopPropagation();
+    goToSubprocesoById(code);
+  });
+
+  });
+
+} else {
+  const bSubp = $details.append('div').attr('class','box');
+  bSubp.append('h3').text('Subprocesos asignados');
+  bSubp.append('p').attr('class','muted')
+    .text('Aún no hay subprocesos asociados a esta subfunción.');
+}
+
+  // 1) Recolectar de global
+  let subps = []
+    .concat(collectSubprocesosFrom(MICROS_GLOBAL))
+    .concat(collectSubprocesosFrom(PROC_GLOBAL));
+
+  // 2) Recolectar de cada modelo (micros + procedimientos)
+  MODELOS.forEach(m => {
+    subps = subps
+      .concat(collectSubprocesosFrom(m.micros || []))
+      .concat(collectSubprocesosFrom(m.procedimientos || []));
+  });
+
+  // Unificar + ordenar
+  subps = Array.from(new Set(subps)).sort((a,b)=>a.localeCompare(b));
+
+  // Mostrar
+  if(subps.length){
+    const bSubp = $details.append('div').attr('class','box');
+    bSubp.append('h3').text('Subprocesos asignados');
+
+    // Si ya usas .tagrow en otras secciones, esto encaja visualmente
+    const rowSubp = bSubp.append('div').attr('class','tagrow');
+
+    subps.forEach(code=>{
+ rowSubp.append('span')
+  .attr('class','tag proc')
+  .style('cursor','pointer')
+  .attr('title','Ir a este subproceso')
+  .text(code)
+  .on('click', (event) => {
+    event.stopPropagation();
+    goToSubprocesoById(code);
+  });
+
+    });
+
+  } else {
+    const bSubp = $details.append('div').attr('class','box');
+    bSubp.append('h3').text('Subprocesos asignados');
+    bSubp.append('p').attr('class','muted')
+      .text('Aún no hay subprocesos asociados a esta subfunción.');
   }
 
    // =====================================================
@@ -17736,7 +17925,43 @@ if(mode === 'funciones'){
 
 
   }
+// =======================================
+// NAVEGAR A UN SUBPROCESO (desde chips)
+// =======================================
+function goToSubprocesoById(subId){
+  if(!subId) return;
 
+  const code = String(subId).trim();
+  const parentId = code.split('_')[0].toUpperCase(); // RF_resp → RF
+
+  // 1) Cambiamos a modo Procesos (MJPS)
+  mode = 'mjps';
+  $root.attr('data-mode', mode);
+
+  // 2) Activamos el proceso padre
+  procesoActivo = (DATA.mjpsProcesos || [])
+    .find(p => String(p.id).toUpperCase() === parentId) || null;
+
+  // 3) Activamos el subproceso
+  if(procesoActivo){
+    const subs = (procesoActivo.subprocesos || []);
+    subprocesoActivo = subs.find(
+      sp => String(sp.id).toUpperCase() === code.toUpperCase()
+    ) || null;
+  } else {
+    subprocesoActivo = null;
+  }
+
+  // 4) Redibujamos
+  drawModeTabs();
+  drawTabs();
+  drawProcessList();
+  drawDetails();
+
+  // 5) Scroll arriba (opcional pero recomendable)
+  const el = document.querySelector('#details');
+  if(el) el.scrollTop = 0;
+}
   // =========================
   // EVENTOS
   // =========================
