@@ -1551,6 +1551,57 @@ html.mjps-fs-on .tmps-mjps-root{
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 #mjpsFullscreenBtn:active{ transform: scale(0.98); }
+/* Ocultar subtítulo en smartphone */
+@media (max-width: 900px){
+  .page-subtitle{
+    display: none !important;
+  }
+}
+/* =========================
+   MOBILE: LISTADO -> SELECTOR
+   ========================= */
+
+#mobilePicker{
+  display:none;
+}
+
+@media (max-width: 900px){
+
+  /* Oculta el panel izquierdo (Listado) */
+  .tmps-mjps-root .grid > .panel:first-child{
+    display:none !important;
+  }
+
+  /* El panel derecho ocupa todo */
+  .tmps-mjps-root .grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Muestra el selector */
+  #mobilePicker{
+    display:block;
+    margin: 10px 0 12px;
+  }
+
+  #mobilePicker .mp-label{
+    display:block;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 6px 2px;
+  }
+
+  #mobilePicker select{
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 14px;
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.06);
+    outline: none;
+  }
+}
 
   </style>
 </head>
@@ -14959,6 +15010,50 @@ if (mode === 'metaprocesos' || mode === 'guia' || mode === 'modelos' || mode ===
       });
     t.exit().remove();
   }
+function mountMobilePicker({ mode, items, selectedId, valueFn, labelFn, onSelect }) {
+  // contenedor donde vive la lista izquierda
+  const listEl = document.querySelector('#list');
+  if (!listEl) return;
+
+  // crea / reutiliza wrapper
+  let wrap = document.querySelector('#mobilePickerWrap');
+  if (!wrap) {
+    wrap = document.createElement('div');
+    wrap.id = 'mobilePickerWrap';
+    wrap.style.margin = '10px 0 12px 0';
+    listEl.prepend(wrap);
+  }
+
+  // crea / reutiliza select
+  let sel = wrap.querySelector('select');
+  if (!sel) {
+    sel = document.createElement('select');
+    sel.id = 'mobilePicker';
+    sel.style.width = '100%';
+    sel.style.padding = '10px 12px';
+    sel.style.borderRadius = '12px';
+    sel.style.border = '1px solid rgba(255,255,255,0.10)';
+    sel.style.background = '#15151A';
+    sel.style.color = '#EDEDED';
+    wrap.appendChild(sel);
+
+    sel.addEventListener('change', (e) => {
+      onSelect(e.target.value);
+    });
+  }
+
+  // rellena opciones
+  sel.innerHTML = '';
+  items.forEach(it => {
+    const opt = document.createElement('option');
+    opt.value = String(valueFn(it));
+    opt.textContent = String(labelFn(it));
+    sel.appendChild(opt);
+  });
+
+  // set seleccionado
+  if (selectedId) sel.value = String(selectedId);
+}
 
   // =========================
   // LISTA IZQUIERDA
@@ -15017,28 +15112,42 @@ if(mode === 'funciones'){
     if(mode === 'procesos_generales'){
       const items = (DATA.procesosGenerales||[]).filter(p=> !filtro || p.label.toLowerCase().includes(filtro));
 
-      const row = $list.selectAll('.item').data(items, d=>d.id);
-      const rowEnter = row.enter().append('div').attr('class','item');
-      rowEnter.append('div').attr('class','txt');
-      rowEnter.append('div').attr('class','meta');
+     // =========================
+// LISTA (PROCESOS) - MISMO FORMATO QUE FUNCIONES
+// =========================
+const row = $list.selectAll('.item').data(items, d => d.id);
 
-      const merged = rowEnter.merge(row)
-    .classed('active', d=> procesoActivo && procesoActivo.id===d.id)
-    .on('click', (e,d)=>{ 
-      procesoActivo = d; 
-      subprocesoActivo = null;   // ← reset subproceso al cambiar de proceso
-      enfoqueActivo = null; 
-      drawProcessList(); 
-      drawDetails(); 
-    });
+const rowEnter = row.enter()
+  .append('div')
+  .attr('class', 'item')
+  .on('click', (event, d) => {
+    procesoActivo = d;
+    subprocesoActivo = null;
+    enfoqueActivo = null;
+    drawProcessList();
+    drawDetails();
+  });
 
-      merged.select('.txt').html(d =>
-    `<div class="line1"><span class="pill">${d.code}</span><span class="label">${d.label}</span></div>`
-  );
+rowEnter.append('div').attr('class', 'txt');
+rowEnter.append('div').attr('class', 'meta');
 
+const merged = rowEnter.merge(row);
+
+// Formato idéntico al de funciones: pill + label
+merged.select('.txt').html(d => `
+  <div class="line1">
+    <span class="pill">${(d.code || d.id || '').toString().trim()}</span>
+    <span class="label">${(d.label || '').toString()}</span>
+  </div>
+`);
+
+merged.classed('active', d => procesoActivo && d.id === procesoActivo.id);
+
+// meta vacía
 merged.select('.meta').html('');
 
-
+row.exit().remove();
+return;
 
 
 
@@ -15580,6 +15689,7 @@ merged.select('.meta').html('');
 
 
   row.exit().remove();
+  
   return;
 }
 
@@ -18194,6 +18304,139 @@ function setFullscreen(on){
     });
 
     document.body.appendChild(btn);
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  }else{
+    init();
+  }
+})();
+// =========================
+// MOBILE PICKER (Listado -> Select)
+// =========================
+(function(){
+  const BREAKPOINT = 900;
+
+  function isMobile(){
+    return window.matchMedia(`(max-width:${BREAKPOINT}px)`).matches;
+  }
+
+  function ensurePicker(){
+    if(document.getElementById('mobilePicker')) return;
+
+    const root = document.querySelector('.tmps-mjps-root');
+    if(!root) return;
+
+    const modeTabs = document.getElementById('modeTabs');
+    const grid = root.querySelector('.grid');
+    if(!grid) return;
+
+    const picker = document.createElement('div');
+    picker.id = 'mobilePicker';
+    picker.innerHTML = `
+      <label class="mp-label" for="mobilePickSelect">Selecciona</label>
+      <select id="mobilePickSelect"></select>
+    `;
+
+    // Lo ponemos justo encima de la grid (debajo de las pestañas si existen)
+    if(modeTabs && modeTabs.parentNode){
+      modeTabs.parentNode.insertBefore(picker, grid);
+    }else{
+      root.insertBefore(picker, grid);
+    }
+
+    const select = picker.querySelector('#mobilePickSelect');
+
+    select.addEventListener('change', () => {
+      const val = select.value;
+      if(!val) return;
+
+      // Encuentra el item de la lista por "pill" y simula click
+      const items = Array.from(document.querySelectorAll('#list .item'));
+      const target = items.find(el => (el.dataset.pill || '') === val);
+      if(target){
+        target.click();
+
+        // baja al detalle
+        const details = document.getElementById('details');
+        if(details){
+          details.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      }
+    });
+  }
+
+  function rebuildOptions(){
+    if(!isMobile()) return;
+
+    ensurePicker();
+
+    const picker = document.getElementById('mobilePicker');
+    if(!picker) return;
+
+    const select = picker.querySelector('#mobilePickSelect');
+    if(!select) return;
+
+    const items = Array.from(document.querySelectorAll('#list .item'));
+
+    // Construye opciones desde el DOM ya renderizado por D3
+    const opts = items.map(el => {
+      const pill = (el.querySelector('.pill')?.textContent || '').trim();
+      const label = (el.querySelector('.label')?.textContent || el.textContent || '').trim();
+
+      // Guardamos pill para encontrarlo luego
+      if(pill) el.dataset.pill = pill;
+
+      return pill ? { value: pill, label: `${pill} — ${label}` } : null;
+    }).filter(Boolean);
+
+    // Si no hay lista (modo guía, etc.), oculta el picker
+    picker.style.display = opts.length ? '' : 'none';
+    if(!opts.length) return;
+
+    // Opciones
+    const current = select.value;
+    select.innerHTML = opts.map(o => `<option value="${escapeHtml(o.value)}">${escapeHtml(o.label)}</option>`).join('');
+
+    // Sincroniza con el activo
+    const active = document.querySelector('#list .item.active');
+    const activePill = (active?.dataset.pill || '').trim();
+
+    if(activePill){
+      select.value = activePill;
+    }else if(current && opts.some(o => o.value === current)){
+      select.value = current;
+    }else{
+      select.selectedIndex = 0;
+    }
+
+    // Ajusta label según pestaña
+    const tabActive = document.querySelector('#modeTabs .tab.active')?.textContent?.trim();
+    const lbl = picker.querySelector('.mp-label');
+    if(lbl) lbl.textContent = tabActive ? tabActive : 'Selecciona';
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    }[c]));
+  }
+
+  function installObserver(){
+    const list = document.getElementById('list');
+    if(!list) return;
+
+    // Observa cambios en la lista (cada vez que D3 redibuja)
+    const mo = new MutationObserver(() => rebuildOptions());
+    mo.observe(list, { childList:true, subtree:true });
+  }
+
+  function init(){
+    ensurePicker();
+    installObserver();
+    rebuildOptions();
+    window.addEventListener('resize', () => rebuildOptions());
   }
 
   if(document.readyState === 'loading'){
