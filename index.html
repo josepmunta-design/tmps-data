@@ -1464,6 +1464,49 @@ line-height:1;
   line-height: 1.45;
   opacity: 0.85;
 }
+/* ===== FULLSCREEN MOBILE ===== */
+html, body{
+  height: 100%;
+}
+
+@media (max-width: 900px){
+  html, body{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important; /* evita scroll de la web */
+  }
+
+  /* Tu contenedor raíz de la app (ajusta el selector si tu id/clase es distinto) */
+  #app, #tmps-root, #mjps-root, .tmps-root, .mjps-root{
+    position: fixed !important;
+    inset: 0 !important;         /* top/right/bottom/left:0 */
+    width: 100vw !important;
+    height: 100dvh !important;   /* mejor que 100vh en móviles */
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    z-index: 999999 !important;
+  }
+
+  /* Si dentro tienes columnas o wrappers que limitan alto */
+  .container, .container-fluid, .row, .col, .wrapper, .content, main{
+    max-width: none !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 900px){
+  header, footer,
+  .site-header, .site-footer,
+  .header, .footer,
+  #header, #footer{
+    display: none !important;
+  }
+}
 
   </style>
 </head>
