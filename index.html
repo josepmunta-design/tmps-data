@@ -18126,15 +18126,59 @@ function goToSubprocesoById(subId){
     btn.textContent = on ? 'Salir pantalla completa' : 'Pantalla completa';
   }
 
-  function setFullscreen(on){
-    document.documentElement.classList.toggle('mjps-fs-on', on);
-    applyChromeHidden(on);
+function setFullscreen(on){
+  const root = document.querySelector(ROOT_SELECTOR);
+  if(!root) return;
 
-    const btn = document.getElementById('mjpsFullscreenBtn');
-    if(btn) setBtnLabel(btn, on);
+  // 1) Toggle de clase global (tu CSS ya depende de esto)
+  document.documentElement.classList.toggle('mjps-fs-on', on);
 
-    tryRealFullscreen(on);
+  // 2) Ocultar “chrome” (header/footer/etc.)
+  applyChromeHidden(on);
+
+  // 3) Mover el root al <body> para evitar recortes por wrappers con overflow/transform
+  if(on){
+    if(!root.dataset.mjpsFsMoved){
+      // Guardamos dónde estaba
+      root.dataset.mjpsFsMoved = '1';
+      root.dataset.mjpsFsParentId = root.parentElement ? (root.parentElement.id || '') : '';
+      root.__mjpsFsParent = root.parentElement;
+      root.__mjpsFsNext = root.nextSibling;
+
+      document.body.appendChild(root);
+    }
+  }else{
+    if(root.dataset.mjpsFsMoved){
+      const parent = root.__mjpsFsParent;
+      const next = root.__mjpsFsNext;
+
+      try{
+        if(parent){
+          if(next && next.parentNode === parent){
+            parent.insertBefore(root, next);
+          }else{
+            parent.appendChild(root);
+          }
+        }
+      }catch(e){}
+
+      delete root.dataset.mjpsFsMoved;
+      root.__mjpsFsParent = null;
+      root.__mjpsFsNext = null;
+    }
   }
+
+  // 4) Etiqueta del botón
+  const btn = document.getElementById('mjpsFullscreenBtn');
+  if(btn) setBtnLabel(btn, on);
+
+  // 5) Fullscreen “real” si el navegador lo permite
+  tryRealFullscreen(on);
+
+  // 6) Extra: asegúrate de que el viewport quede arriba
+  window.scrollTo(0, 0);
+}
+
 
   function init(){
     if(document.getElementById('mjpsFullscreenBtn')) return;
