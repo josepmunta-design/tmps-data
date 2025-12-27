@@ -14282,6 +14282,7 @@ El progreso se evalúa mediante cambios observables y medibles: frecuencia, dura
       { id:'C_intDiary', label:'Diario de integración', tip:'Tarea', origen:'Self-coherence', ref:'—' }
     ]
   ,
+    
 funciones: [
 
   // =========================================================
@@ -14603,10 +14604,467 @@ funciones: [
 
 ],
 
+  // ==============================
+  // MOMENTOS DEL PROCESO TERAPÉUTICO
+  // ==============================
+  momentos: [
+    {
+      id:'M1',
+      label:'Inicio y encuadre',
+      descripcion:'Condiciones mínimas de viabilidad del proceso: marco, objetivos, expectativas, rol y seguridad básica.',
+      submomentos:[
+        'Clarificación del motivo de consulta',
+        'Construcción de un marco comprensible (qué haremos y para qué)',
+        'Reducción de incertidumbre y amenaza inicial',
+        'Ajuste de expectativas realistas'
+      ],
+      indicadores:[
+        'El paciente está desorientado o ansioso por empezar.',
+        'Necesita entender qué es la terapia antes de implicarse.',
+        'Aún no hay base suficiente para profundizar.'
+      ],
+    tecnicasIndicadas:[
+  // =========================
+  // FACTORES COMUNES / CONTEXTUAL
+  // =========================
+  {
+    id:'T_M1_CTX_01',
+    nombre:'Ritual de entrada: explicación breve del proceso (mapa + lógica de trabajo)',
+    descripcion:'Explicas en 2–3 minutos: qué es la terapia, cómo vais a trabajar, qué podéis esperar y cómo sabréis que avanzáis. Lenguaje simple y colaborativo.',
+    modelos:['Wampold (modelo contextual)','Frank & Frank'],
+    referencias:[
+      'Wampold, B. E., & Imel, Z. E. (2015). The Great Psychotherapy Debate (2nd ed.). Routledge.',
+      'Frank, J. D., & Frank, J. B. (1991). Persuasion and Healing (3rd ed.). Johns Hopkins University Press.'
+    ],
+    porQueAqui:'Reduce amenaza e incertidumbre y activa expectativas creíbles. Convierte “vengo mal” en “hay un método de trabajo”.',
+    fueraDeMomento:'Si aparece tarde puede sonar a control o corrección (“ahora me explicas esto”), y bajar agencia.',
+    cambioIntencion:'Aquí es entrada y seguridad; más adelante es re-contrato o reajuste del foco si el proceso se dispersa.'
+  },
+
+  // =========================
+  // ROGERIANA / CENTRADA EN LA PERSONA
+  // =========================
+  {
+    id:'T_M1_CCP_01',
+    nombre:'Inicio centrado en la experiencia: “¿Qué te gustaría que cambiara al salir hoy?”',
+    descripcion:'Una pregunta de apertura que lleva de la narrativa general al objetivo inmediato y experiencial de la sesión, sin “interrogar”.',
+    modelos:['Rogers (Terapia centrada en la persona)'],
+    referencias:[
+      'Rogers, C. R. (1951). Client-Centered Therapy. Houghton Mifflin.',
+      'Rogers, C. R. (1957). The necessary and sufficient conditions of therapeutic personality change. Journal of Consulting Psychology, 21(2), 95–103.'
+    ],
+    porQueAqui:'Coloca al paciente como agente desde el minuto uno y te da dirección sin imponer estructura dura.',
+    fueraDeMomento:'Si la usas en crisis aguda o alta desorganización puede sonar “bonita” pero poco contenedora.',
+    cambioIntencion:'Aquí crea orientación y colaboración; más adelante sirve para re-focalizar o cerrar sesión con integración.'
+  },
+
+  // =========================
+  // CBT / BECK
+  // =========================
+  {
+    id:'T_M1_CBT_01',
+    nombre:'Agenda colaborativa + objetivos de sesión (3 puntos máximos)',
+    descripcion:'Acuerdas una mini-agenda: 1) qué pasa, 2) qué mantener como foco, 3) qué tarea o cierre habrá. Se negocia, no se impone.',
+    modelos:['Beck (Terapia cognitiva)','CBT'],
+    referencias:[
+      'Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). Guilford Press.',
+      'Beck, A. T., Rush, A. J., Shaw, B. F., & Emery, G. (1979). Cognitive Therapy of Depression. Guilford Press.'
+    ],
+    porQueAqui:'Da estructura y sensación de eficacia temprana. Previene sesiones difusas.',
+    fueraDeMomento:'En pacientes muy controladores puede vivirse como “checklist” y alimentar rigidez.',
+    cambioIntencion:'Al inicio organiza; después se usa para sostener foco; en estancamiento sirve para cambiar estrategia explícitamente.'
+  },
+  {
+    id:'T_M1_CBT_02',
+    nombre:'Modelo breve “situación–pensamiento–emoción–conducta” aplicado al caso',
+    descripcion:'Presentas el esquema en 60–90 segundos y lo aplicas con un ejemplo real del paciente. Solo un ejemplo, no una clase.',
+    modelos:['Beck (Terapia cognitiva)','CBT'],
+    referencias:[
+      'Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). Guilford Press.'
+    ],
+    porQueAqui:'Da un mapa comprensible y “acción posible” sin entrar aún en reestructuración profunda.',
+    fueraDeMomento:'Si lo introduces tarde, puede sonar a re-educación innecesaria (“ahora me enseñas esto”).',
+    cambioIntencion:'Aquí es orientación; más adelante se usa para precisión técnica; en integración sirve para consolidar aprendizaje.'
+  },
+
+  // =========================
+  // REBT / ELLIS
+  // =========================
+  {
+    id:'T_M1_REBT_01',
+    nombre:'ABC inicial (evento–creencia–consecuencia) en lenguaje cotidiano',
+    descripcion:'Formulas un ABC muy simple con un episodio reciente y validas emoción + introduces la idea de “creencias evaluativas”.',
+    modelos:['Ellis (REBT)'],
+    referencias:[
+      'Ellis, A. (1962). Reason and Emotion in Psychotherapy. Lyle Stuart.',
+      'Dryden, W., & Ellis, A. (2001). Rational Emotive Behaviour Therapy. In: Encyclopedia of Psychotherapy (vol. 2).'
+    ],
+    porQueAqui:'Crea una explicación potente y directiva para pacientes que piden “herramientas” desde el principio.',
+    fueraDeMomento:'En trauma complejo o vergüenza alta, si se hace pronto puede sentirse invalidante (“todo está en tu mente”).',
+    cambioIntencion:'Aquí es psicoeducación orientadora; más adelante es disputa sistemática; en estancamiento ayuda a detectar exigencias rígidas.'
+  },
+
+  // =========================
+  // ACT / HAYES
+  // =========================
+  {
+    id:'T_M1_ACT_01',
+    nombre:'“Control vs vida”: reencuadre inicial del problema',
+    descripcion:'Exploras en 2–3 preguntas qué estrategias usa el paciente para controlar el malestar y el coste que han tenido, sin moralizar.',
+    modelos:['Hayes (ACT)'],
+    referencias:[
+      'Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2012). Acceptance and Commitment Therapy (2nd ed.). Guilford Press.'
+    ],
+    porQueAqui:'Da coherencia a la lucha del paciente y abre una dirección alternativa sin entrar aún en exposición/defusión formal.',
+    fueraDeMomento:'Si lo haces cuando el paciente necesita contención básica, puede sonar a “filosofía” y perder alianza.',
+    cambioIntencion:'Aquí es marco; más adelante se vuelve práctica (defusión, aceptación, acción comprometida); en cierre es mantenimiento y prevención de recaída.'
+  },
+  {
+    id:'T_M1_ACT_02',
+    nombre:'Valores mínimos: “¿qué te importa lo suficiente como para venir?”',
+    descripcion:'Identificas 1–2 áreas valiosas (relaciones, salud, trabajo) y las conectas con el objetivo terapéutico inmediato.',
+    modelos:['Hayes (ACT)'],
+    referencias:[
+      'Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2012). Acceptance and Commitment Therapy (2nd ed.). Guilford Press.'
+    ],
+    porQueAqui:'Convierte el inicio en dirección y sentido, no solo en reducción de síntomas.',
+    fueraDeMomento:'Si se fuerza cuando el paciente está en crisis puede resultar irreal o irritante.',
+    cambioIntencion:'Al inicio orienta; después guía decisiones clínicas; en integración/cierre consolida identidad y plan de continuidad.'
+  },
+
+  // =========================
+  // MI / ENTREVISTA MOTIVACIONAL
+  // =========================
+  {
+    id:'T_M1_MI_01',
+    nombre:'Elicit–Provide–Elicit (pedir permiso + ofrecer + comprobar)',
+    descripcion:'Antes de psicoeducar o encuadrar, pides permiso, das una explicación breve y preguntas qué se lleva el paciente / qué encaja.',
+    modelos:['Miller & Rollnick (Entrevista Motivacional)'],
+    referencias:[
+      'Miller, W. R., & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). Guilford Press.'
+    ],
+    porQueAqui:'Previene resistencia temprana y mantiene autonomía del paciente desde el minuto uno.',
+    fueraDeMomento:'Si se usa en exceso puede volver el inicio lento y “blando” cuando el paciente necesita dirección clara.',
+    cambioIntencion:'Aquí evita fricción; más adelante se usa para negociar tareas difíciles; en estancamiento ayuda a resolver ambivalencia.'
+  },
+
+  // =========================
+  // MBT / MENTALIZATION-BASED
+  // =========================
+  {
+    id:'T_M1_MBT_01',
+    nombre:'Contrato de mentalización: “vamos a intentar entender mentes, no sentenciar hechos”',
+    descripcion:'Introduces que trabajaréis con estados mentales (propios/ajenos) y que la terapia es un espacio para explorar incertidumbre con seguridad.',
+    modelos:['Fonagy & Bateman (MBT)'],
+    referencias:[
+      'Bateman, A., & Fonagy, P. (2016). Mentalization-Based Treatment for Personality Disorders (2nd ed.). Oxford University Press.'
+    ],
+    porQueAqui:'En pacientes con lecturas rígidas o conflicto relacional, este encuadre reduce escaladas y favorece curiosidad.',
+    fueraDeMomento:'Si lo haces con alguien que quiere soluciones rápidas puede percibirse como evasivo.',
+    cambioIntencion:'Al inicio instala el “modo mentalizador”; más adelante se usa para reparar rupturas y frenar certezas absolutas.'
+  },
+
+  // =========================
+  // DBT / LINEHAN
+  // =========================
+  {
+    id:'T_M1_DBT_01',
+    nombre:'Orientación DBT: objetivos + compromiso mínimo + jerarquía de prioridades',
+    descripcion:'Explicas el “cómo trabajaremos” (habilidades + práctica) y acuerdas un compromiso realista. Si aplica, introduces jerarquía (vida/seguridad, terapia, calidad de vida).',
+    modelos:['Linehan (DBT)'],
+    referencias:[
+      'Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). Guilford Press.'
+    ],
+    porQueAqui:'En alta desregulación, la claridad inicial evita caos y mejora adherencia.',
+    fueraDeMomento:'En pacientes con control/perfeccionismo puede vivirse como demasiado protocolario.',
+    cambioIntencion:'Aquí es orientación y seguridad; después se vuelve entrenamiento; en estancamiento se retoma compromiso y prioridades.'
+  },
+
+  // =========================
+  // TERAPIA SISTÉMICA / ESTRATÉGICA (ENCUADRE RELACIONAL)
+  // =========================
+  {
+    id:'T_M1_SYS_01',
+    nombre:'Reformulación relacional inicial (del “problema individual” al patrón)',
+    descripcion:'Tras escuchar, devuelves una formulación breve en términos de interacción: qué hace cada parte y cómo se mantiene el bucle.',
+    modelos:['Terapia sistémica / estratégica'],
+    referencias:[
+      'Watzlawick, P., Weakland, J., & Fisch, R. (1974). Change: Principles of Problem Formation and Problem Resolution. Norton.',
+      'Haley, J. (1976). Problem-Solving Therapy. Jossey-Bass.'
+    ],
+    porQueAqui:'Da sentido rápido cuando el síntoma está incrustado en relación/contexto y reduce culpabilización.',
+    fueraDeMomento:'Si se usa pronto en trauma individual puede sentirse como minimización del dolor personal.',
+    cambioIntencion:'Aquí organiza el mapa; más adelante guía intervenciones; en estancamiento redefine el problema para abrir opciones.'
+  },
+
+  // =========================
+  // SOLUTION-FOCUSED
+  // =========================
+  {
+    id:'T_M1_SFBT_01',
+    nombre:'Pregunta de objetivos concretos + señales de progreso (escala simple)',
+    descripcion:'Definís qué sería diferente si la terapia funcionara y cómo lo notaríais. Puedes usar una escala 0–10 como termómetro inicial.',
+    modelos:['de Shazer & Berg (Terapia centrada en soluciones)'],
+    referencias:[
+      'de Shazer, S. (1985). Keys to Solution in Brief Therapy. Norton.',
+      'de Shazer, S., Dolan, Y., Korman, H., Trepper, T., McCollum, E., & Berg, I. K. (2007). More than Miracles. Haworth.'
+    ],
+    porQueAqui:'Genera esperanza y dirección inmediata sin necesidad de análisis profundo temprano.',
+    fueraDeMomento:'Si se aplica cuando el paciente necesita ser validado primero puede vivirse como “prisa” o superficialidad.',
+    cambioIntencion:'Al inicio orienta; luego sirve para monitorizar; en cierre ayuda a consolidar indicadores de autonomía.'
+  }
+]
 
 
+    },
+
+    {
+      id:'M2',
+      label:'Construcción de alianza',
+      descripcion:'Generar una relación de trabajo segura, validante y colaborativa. No busca cambiar al paciente, sino hacer posible el trabajo conjunto.',
+      submomentos:[
+        'Validación y sintonía inicial',
+        'Reconocimiento del esfuerzo y del sufrimiento',
+        'Negociación de objetivos compartidos',
+        'Establecimiento de confianza básica'
+      ],
+      indicadores:[
+        'El paciente duda del proceso o del terapeuta.',
+        'Hay defensividad, retraimiento o complacencia.',
+        'La relación aún no sostiene trabajo emocional intenso.'
+      ],
+      tecnicasIndicadas:[]
+    },
+
+    {
+      id:'M3',
+      label:'Exploración',
+      descripcion:'Comprender problema, patrones, contexto y significado sin intentar transformarlo activamente. Aquí se amplía el mapa, no se fuerza el cambio.',
+      submomentos:[
+        'Exploración narrativa del problema',
+        'Detección de patrones repetidos',
+        'Comprensión contextual y relacional',
+        'Identificación de emociones y necesidades'
+      ],
+      indicadores:[
+        'El problema aún es confuso o poco diferenciado.',
+        'El paciente necesita ser comprendido antes de cambiar.',
+        'La formulación todavía está en construcción.'
+      ],
+      tecnicasIndicadas:[]
+    },
+
+    {
+      id:'M4',
+      label:'Profundización',
+      descripcion:'Trabajo emocional/relacional/identitario intenso, con mayor activación y riesgo subjetivo. Requiere regulación y alianza previas.',
+      submomentos:[
+        'Acceso experiencial a emoción primaria',
+        'Trabajo con esquemas, partes o self',
+        'Reprocesamiento de experiencias nucleares',
+        'Experiencias emocionales correctivas'
+      ],
+      indicadores:[
+        'El paciente puede sostener activación sin colapsar.',
+        'Existe alianza suficiente para arriesgarse.',
+        'El problema ya está suficientemente mapeado.'
+      ],
+      tecnicasIndicadas:[]
+    },
+
+    {
+      id:'M5',
+      label:'Bloqueo / estancamiento',
+      descripcion:'Cuando el proceso entra en bucles repetitivos, evitaciones persistentes o pérdida de movimiento. No se profundiza más: se desbloquea.',
+      submomentos:[
+        'Detección del patrón de bloqueo',
+        'Señalamiento de evitaciones o defensas',
+        'Cambio de estrategia o foco',
+        'Intervenciones paradójicas o meta'
+      ],
+      indicadores:[
+        'Sensación de “damos vueltas”.',
+        'Emoción que no avanza o se intelectualiza.',
+        'Fatiga, frustración o estancamiento compartido.'
+      ],
+      tecnicasIndicadas:[]
+    },
+
+    {
+      id:'M6',
+      label:'Integración',
+      descripcion:'Dar sentido a lo trabajado, conectarlo con la vida cotidiana y favorecer generalización. No es solo resumir: es organizar e integrar.',
+      submomentos:[
+        'Metaprocesamiento del trabajo realizado',
+        'Integración narrativa e identitaria',
+        'Traducción a la vida cotidiana',
+        'Consolidación de aprendizajes'
+      ],
+      indicadores:[
+        'Ha habido movimiento o insight relevante.',
+        'El paciente necesita ordenar lo vivido.',
+        'Se busca continuidad entre sesiones.'
+      ],
+      tecnicasIndicadas:[]
+    },
+
+    {
+      id:'M7',
+      label:'Cierre',
+      descripcion:'Consolidar autonomía, agencia y despedida. Un cierre mal hecho puede desorganizar logros previos.',
+      submomentos:[
+        'Revisión del camino recorrido',
+        'Reconocimiento del cambio y de los recursos propios',
+        'Preparación para la autonomía',
+        'Despedida relacional explícita'
+      ],
+      indicadores:[
+        'Objetivos principales alcanzados o redefinidos.',
+        'El paciente puede sostenerse sin el proceso.',
+        'Hay necesidad de cerrar y elaborar la separación.'
+      ],
+      tecnicasIndicadas:[
+  // =====================================================
+  // FACTORES COMUNES / CONTEXTUAL: cierre como ritual + sentido
+  // =====================================================
+  {
+    id:'T_M7_CTX_01',
+    nombre:'Revisión del camino recorrido (mapa de cambio compartido)',
+    descripcion:'Repasas con el paciente los hitos principales: qué cambió, qué lo hizo posible, qué se aprendió y qué queda pendiente. Se hace en formato colaborativo (“si tuviéramos que contar esta terapia en 5 minutos…”).',
+    modelos:['Wampold (modelo contextual)','Frank & Frank'],
+    referencias:[
+      'Wampold, B. E., & Imel, Z. E. (2015). The Great Psychotherapy Debate (2nd ed.). Routledge.',
+      'Frank, J. D., & Frank, J. B. (1991). Persuasion and Healing (3rd ed.). Johns Hopkins University Press.'
+    ],
+    porQueAqui:'El cierre necesita sentido y coherencia: consolidar narrativa de cambio aumenta agencia y reduce dependencia del terapeuta.',
+    fueraDeMomento:'Si lo haces demasiado pronto, puede vivirse como “me estás echando” o como invalidación de lo pendiente.',
+    cambioIntencion:'Aquí consolida y transfiere el cambio al paciente; en integración (M6) es ordenar, pero sin despedida ni autonomía final.'
+  },
+
+  // =====================================================
+  // ALIANZA / RUPTURAS: cerrar relación explícitamente
+  // =====================================================
+  {
+    id:'T_M7_ALI_01',
+    nombre:'Cierre relacional explícito (agradecimiento + despedida cuidada)',
+    descripcion:'Nombras explícitamente el vínculo y la separación: agradeces el trabajo, reconoces dificultades, validas ambivalencias y haces una despedida clara. Puede incluir “qué me llevo de ti / qué te llevas de mí”.',
+    modelos:['Safran & Muran (alianza / rupturas)','Bordin (alianza)'],
+    referencias:[
+      'Safran, J. D., & Muran, J. C. (2000). Negotiating the Therapeutic Alliance. Guilford Press.',
+      'Bordin, E. S. (1979). The generalizability of the psychoanalytic concept of the working alliance. Psychotherapy: Theory, Research & Practice, 16(3), 252–260.'
+    ],
+    porQueAqui:'La separación es un evento clínico. Si se hace bien, consolida seguridad y previene cierres “fantasma” o recaídas por duelo no elaborado.',
+    fueraDeMomento:'Si lo introduces sin que haya autonomía suficiente, puede disparar dependencia o ruptura.',
+    cambioIntencion:'Aquí es despedida y consolidación del vínculo internalizado; en momentos previos la reparación es para seguir trabajando, no para terminar.'
+  },
+
+  // =====================================================
+  // CBT: plan de mantenimiento y prevención de recaídas
+  // =====================================================
+  {
+    id:'T_M7_CBT_01',
+    nombre:'Plan de mantenimiento + prevención de recaídas (señales tempranas y respuestas)',
+    descripcion:'Definís señales tempranas de recaída, disparadores probables, acciones concretas y recursos. Incluye “qué haré si vuelvo a X” y cuándo pedir ayuda.',
+    modelos:['CBT (Beck)','Prevención de recaídas'],
+    referencias:[
+      'Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). Guilford Press.',
+      'Marlatt, G. A., & Donovan, D. M. (2005). Relapse Prevention (2nd ed.). Guilford Press.'
+    ],
+    porQueAqui:'En cierre, el objetivo es autonomía sostenible. Anticipar recaídas baja catastrofismo y mejora continuidad.',
+    fueraDeMomento:'Si se hace sin integración previa, se vuelve checklist y no se internaliza.',
+    cambioIntencion:'Aquí es transición a auto-terapia; en fases medias el “plan” es para sostener el trabajo, no para cerrarlo.'
+  },
+
+  // =====================================================
+  // ACT: continuidad basada en valores y acción comprometida
+  // =====================================================
+  {
+    id:'T_M7_ACT_01',
+    nombre:'Plan de continuidad basado en valores (rutinas y compromisos realistas)',
+    descripcion:'Conectas los logros con valores y acuerdas 2–3 compromisos sostenibles (acciones pequeñas, repetibles). Se explicita que el malestar puede volver y no invalida el camino.',
+    modelos:['Hayes (ACT)'],
+    referencias:[
+      'Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2012). Acceptance and Commitment Therapy (2nd ed.). Guilford Press.'
+    ],
+    porQueAqui:'El cierre en ACT es “seguir viviendo con dirección”, no “estar bien para siempre”.',
+    fueraDeMomento:'Si lo haces cuando aún hay crisis sin estabilizar, suena a consigna y puede irritar.',
+    cambioIntencion:'Aquí se vuelve plan vital; en fases iniciales “valores” es motivación/rumbo, no cierre ni autonomía.'
+  },
+
+  // =====================================================
+  // EMOCIONAL/EXPERIENCIAL (EFT): consolidar nueva emoción/posición
+  // =====================================================
+  {
+    id:'T_M7_EFT_01',
+    nombre:'Consolidación del cambio emocional (lo nuevo que ahora puedo sentir/hacer)',
+    descripcion:'Nombras el antes/después emocional: qué emoción primaria ahora es accesible, qué necesidad se reconoce y qué nueva posición aparece (p.ej., autocompasión, autoafirmación).',
+    modelos:['Greenberg (EFT / terapia focalizada en la emoción)'],
+    referencias:[
+      'Greenberg, L. S. (2015). Emotion-Focused Therapy: Coaching Clients to Work Through Their Feelings (2nd ed.). American Psychological Association.'
+    ],
+    porQueAqui:'El cierre requiere sellar “lo nuevo” para que no quede como algo que solo ocurre en sesión.',
+    fueraDeMomento:'Si se hace sin haber vivido experiencias emocionales correctivas reales, se convierte en discurso bonito.',
+    cambioIntencion:'Aquí es consolidación final; durante profundización es transformación en curso, todavía inestable.'
+  },
+
+  // =====================================================
+  // PSICODINÁMICA / INSIGHT: terminar la terapia como proceso clínico
+  // =====================================================
+  {
+    id:'T_M7_PDT_01',
+    nombre:'Elaboración del final (duelo, separación y significado)',
+    descripcion:'Exploras reacciones al final (pena, enfado, alivio, miedo), su significado relacional, y cómo se conectan con patrones previos (sin patologizar).',
+    modelos:['Psicodinámica / psicoterapia psicoanalítica'],
+    referencias:[
+      'Gabbard, G. O. (2010). Long-Term Psychodynamic Psychotherapy: A Basic Text (2nd ed.). American Psychiatric Publishing.',
+      'Greenson, R. R. (1967). The Technique and Practice of Psychoanalysis. International Universities Press.'
+    ],
+    porQueAqui:'El final activa temas nucleares de apego/separación. Elaborarlo puede ser parte central del cambio.',
+    fueraDeMomento:'Si se introduce pronto, puede crear dependencia o dramatizar la relación sin necesidad.',
+    cambioIntencion:'Aquí es cierre y duelo; antes es insight para seguir trabajando, no para terminar.'
+  },
+
+  // =====================================================
+  // SISTÉMICA: cierre como cambio en el patrón y mantenimiento ecológico
+  // =====================================================
+  {
+    id:'T_M7_SYS_01',
+    nombre:'Cierre ecológico: qué patrón cambió y cómo lo sostendremos en el sistema',
+    descripcion:'Identificas el patrón relacional que se modificó, qué hará cada parte para sostenerlo, y cómo detectarán el retorno del bucle antiguo.',
+    modelos:['Terapia sistémica'],
+    referencias:[
+      'Watzlawick, P., Weakland, J., & Fisch, R. (1974). Change: Principles of Problem Formation and Problem Resolution. Norton.',
+      'Nichols, M. P. (2013). Family Therapy: Concepts and Methods (10th ed.). Pearson.'
+    ],
+    porQueAqui:'Si el cambio fue relacional, el cierre debe incluir mantenimiento en el contexto real, no solo intrapsíquico.',
+    fueraDeMomento:'Si lo haces cuando el entorno aún es caótico y no hay acuerdos posibles, puede frustrar.',
+    cambioIntencion:'Aquí es estabilización del nuevo patrón; antes es formulación e intervención activa sobre el bucle.'
+  },
+
+  // =====================================================
+  // SOLUTION-FOCUSED: “cómo sabrás que sigues bien” + escalas finales
+  // =====================================================
+  {
+    id:'T_M7_SFBT_01',
+    nombre:'Señales de continuidad + escala final (qué harás para mantener el cambio)',
+    descripcion:'Definís señales observables de que va bien, señales tempranas de problema, y 2 acciones concretas que el paciente hará si baja la escala.',
+    modelos:['de Shazer & Berg (Terapia centrada en soluciones)'],
+    referencias:[
+      'de Shazer, S. (1985). Keys to Solution in Brief Therapy. Norton.',
+      'de Shazer, S., et al. (2007). More than Miracles. Haworth.'
+    ],
+    porQueAqui:'Cierre breve y operativo: el paciente sale con un “manual mínimo” propio.',
+    fueraDeMomento:'Si se usa sin validar el vínculo y la separación, puede sentirse frío.',
+    cambioIntencion:'Aquí es continuidad; durante el proceso las escalas son monitorización y orientación, no despedida.'
+  }
+]
+
+    }
+  ],
 
 };
+
+    
 // =====================================================
 // EXTENSIÓN DE DATOS POR ESCUELA (LOCAL + JSON REMOTO)
 // =====================================================
@@ -14987,7 +15445,8 @@ const tabEnter = $tabs.enter().append('div')
 
   function drawTabs(){
       // En metaprocesos (y en guía/modelos) no usamos fases
-if (mode === 'metaprocesos' || mode === 'guia' || mode === 'modelos' || mode === 'funciones'){
+if (mode === 'metaprocesos' || mode === 'guia' || mode === 'modelos' || mode === 'funciones' || mode === 'momentos'){
+
 
     $phaseTabs.selectAll('.tab').remove();
     return;
@@ -15107,6 +15566,51 @@ if(mode === 'funciones'){
   return;
 }
 
+// --- MODO: MOMENTOS ---
+if(mode === 'momentos'){
+
+  const items = (DATA.momentos || []).filter(m =>
+    !filtro || (m.label||'').toLowerCase().includes(filtro)
+  );
+if(!items.length){
+  $list.selectAll('.item').remove();
+  $list.append('div')
+    .attr('class','box')
+    .append('p')
+    .attr('class','muted')
+    .text('No hay momentos todavía (DATA.momentos está vacío).');
+  return;
+}
+
+  const row = $list.selectAll('.item').data(items, d=>d.id);
+  const rowEnter = row.enter().append('div').attr('class','item');
+
+  rowEnter.append('div').attr('class','txt');
+  rowEnter.append('div').attr('class','meta');
+
+  const merged = rowEnter.merge(row)
+    .classed('active', d=> procesoActivo && procesoActivo.id===d.id)
+    .on('click', (e,d)=>{
+      procesoActivo = d;          // reutilizamos procesoActivo como “momento seleccionado”
+      subprocesoActivo = null;
+      enfoqueActivo = null;
+      drawProcessList();
+      drawDetails();
+    });
+
+  merged.select('.txt').html(d =>
+    `<div class="line1"><span class="pill">${d.id}</span><span class="label">${d.label}</span></div>`
+  );
+
+  // meta: nº de técnicas curadas (no lista completa)
+  merged.select('.meta').text(d => {
+    const n = (d.tecnicasIndicadas || []).length;
+    return n ? `${n} técnicas indicadas` : '';
+  });
+
+  row.exit().remove();
+  return;
+}
 
     // --- MODO: PROCESOS GENERALES ---
     if(mode === 'procesos_generales'){
@@ -16012,6 +16516,111 @@ function renderAliPorModelos($details, subActual, targetProcRaw){
  function drawDetails(){
 
   $details.selectAll('*').remove();
+// --- DETALLE: MOMENTOS ---
+if(mode === 'momentos' && !procesoActivo){
+  $details.append('div').attr('class','box')
+    .html('<h3>Selecciona un momento</h3><p>Esta vista no es un inventario: aquí solo verás técnicas <strong>especialmente indicadas</strong> por timing clínico.</p>');
+  return;
+}
+if(mode === 'momentos'){
+
+  const m = procesoActivo;
+
+  // 1) Cabecera del momento
+  const head = $details.append('div').attr('class','box');
+  head.append('h3').text(m.label || '');
+if(m.descripcion) head.append('p').text(m.descripcion);
+else if(m.resumen) head.append('p').text(m.resumen);
+
+
+  // 2) Submomentos
+  if(Array.isArray(m.submomentos) && m.submomentos.length){
+    const box = $details.append('div').attr('class','box');
+    box.append('h3').text('Submomentos');
+    const ul = box.append('ul');
+    m.submomentos.forEach(s => ul.append('li').text(s));
+  }
+
+  // 3) Indicadores de idoneidad
+  if(Array.isArray(m.indicadores) && m.indicadores.length){
+    const box = $details.append('div').attr('class','box');
+    box.append('h3').text('Indicadores de idoneidad');
+    const ul = box.append('ul');
+    m.indicadores.forEach(s => ul.append('li').text(s));
+  }
+
+  // 4) ✅ Técnicas especialmente indicadas en este momento (lista corta y curada)
+  const techBox = $details.append('div').attr('class','box');
+  techBox.append('h3').text('Técnicas especialmente indicadas en este momento');
+
+  const techs = (m.tecnicasIndicadas || []);
+  if(!techs.length){
+    techBox.append('p').attr('class','muted')
+      .text('Aún no hay técnicas curadas para este momento.');
+    return;
+  }
+
+  // Acordeones con el estilo que ya usas en micro-intervenciones
+  techs.forEach(t => {
+
+    const item = techBox.append('div').attr('class','micro-item');
+
+    const headBtn = item.append('button')
+      .attr('type','button')
+      .attr('class','micro-head')
+      .html(`<span class="micro-title">${t.nombre || 'Técnica'}</span><span class="micro-toggle">▼</span>`);
+
+    const body = item.append('div')
+      .attr('class','micro-body')
+      .style('display','none');
+
+    // Contenido (sin iconos) + descripción + modelos + referencias
+
+// 1) Descripción de la técnica (tu DATA usa "descripcion")
+if(t.descripcion){
+  body.append('p').html(`<strong>Descripción:</strong> ${t.descripcion}`);
+}
+
+// 2) Modelos (tu DATA usa "modelos": arsray)
+if(Array.isArray(t.modelos) && t.modelos.length){
+  const mWrap = body.append('div');
+  mWrap.append('p').html('<strong>Modelos:</strong>');
+  const ulM = mWrap.append('ul').style('margin','6px 0 0 18px');
+  t.modelos.forEach(x => ulM.append('li').text(x));
+}
+
+// 3) Referencias (tu DATA usa "referencias": array)
+if(Array.isArray(t.referencias) && t.referencias.length){
+  const rWrap = body.append('div');
+  rWrap.append('p').html('<strong>Referencias:</strong>');
+  const ulR = rWrap.append('ul').style('margin','6px 0 0 18px');
+  t.referencias.forEach(r => ulR.append('li').text(r));
+}
+
+// 4) Timing clínico (sin iconos)
+if(t.porQueAqui){
+  body.append('p').html(`<strong>Por qué aquí:</strong> ${t.porQueAqui}`);
+}
+if(t.fueraDeMomento){
+  body.append('p').html(`<strong>Qué pasa si se usa fuera de momento:</strong> ${t.fueraDeMomento}`);
+}
+if(t.cambioIntencion){
+  body.append('p').html(`<strong>Cómo cambia su intención respecto a otros momentos:</strong> ${t.cambioIntencion}`);
+}
+
+
+    // Toggle
+    headBtn.on('click', ()=>{
+      const open = item.classed('open');
+      item.classed('open', !open);
+      body.style('display', open ? 'none' : 'block');
+      headBtn.select('.micro-toggle').text(open ? '▼' : '▲');
+    });
+
+  });
+
+  return;
+}
 
   // activar / desactivar layout especial de guía
   const grid = d3.select('.tmps-mjps-root .grid');
