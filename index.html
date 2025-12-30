@@ -19154,617 +19154,405 @@ if(t.cambioIntencion){
   // --- DETALLE: GUÍA DE USO ---
 if(mode === 'guia'){
 
-  // Vaciar lista izquierda (es una pestaña solo de texto explicativo)
+  // Vaciar lista izquierda (pestaña solo de lectura)
   $list.selectAll('.item').remove();
-// --- BOX 0: INTRODUCCIÓN GENERAL DEL DIAGRAMA ---
-const boxIntroGeneral = $details.append('div').attr('class','box');
 
-boxIntroGeneral.append('h3').text('Qué es este diagrama');
+  // ==========================================
+  // BOX 0: INTRODUCCIÓN GENERAL DEL DIAGRAMA
+  // ==========================================
+  const boxIntroGeneral = $details.append('div').attr('class','box');
 
-boxIntroGeneral.append('p').text(
-  'Este diagrama ofrece una forma clara de entender la psicoterapia a través de los procesos de cambio que transforman el self. '
-  + 'En lugar de partir de escuelas o diagnósticos, se centra en cómo mejora realmente una persona: regulación corporal y emocional, '
-  + 'procesamiento de la experiencia, reorganización del significado, fortalecimiento de la identidad, aumento de la agencia y '
-  + 'cambios en los patrones relacionales.'
-);
+  boxIntroGeneral.append('h3').text('Qué es este diagrama');
 
 boxIntroGeneral.append('p').text(
-  'Los 8 procesos que aquí se representan integran aportaciones de múltiples modelos —cognitivos, humanistas, sistémicos, '
-  + 'psicodinámicos, constructivistas y experienciales— y permiten ver qué función cumple cada técnica más allá del enfoque teórico.'
+  'Este diagrama ofrece una forma clara de entender la psicoterapia a través de procesos de cambio del self. '
+  + 'En lugar de partir de escuelas, técnicas o diagnósticos, se centra en cómo mejora realmente una persona: '
+  + 'regulación corporal y emocional, acceso y transformación de la experiencia, reorganización del significado, '
+  + 'fortalecimiento de la identidad, aumento de la agencia y cambios en patrones relacionales. '
+  + 'El diagrama está siempre al servicio de la formulación del caso clínico y nunca al revés: '
+  + 'no sustituye el juicio del terapeuta ni impone un itinerario, sino que ayuda a pensar con mayor claridad '
+  + 'qué procesos son relevantes para este paciente, en este momento y en este contexto.'
 );
 
-boxIntroGeneral.append('p').text(
-  'El objetivo no es proponer una nueva escuela, sino ofrecer un mapa que facilite la toma de decisiones clínicas: identificar qué '
-  + 'procesos están activos o bloqueados en un paciente concreto y qué intervenciones pueden movilizar un cambio útil en cada momento.'
-);
 
-boxIntroGeneral.append('p').text(
-  'En síntesis, este diagrama organiza la complejidad de la psicoterapia en procesos observables, comprensibles y clínicamente '
-  + 'accionables, ayudando a intervenir con mayor claridad e intención.'
-);
+  boxIntroGeneral.append('p').text(
+    'Los procesos aquí representados integran aportaciones de múltiples tradiciones (cognitivas, humanistas, sistémicas, '
+    + 'psicodinámicas, constructivistas y experienciales) y ayudan a ver qué función cumple cada técnica más allá del enfoque teórico.'
+  );
 
-  // --- BOX 1: QUÉ ES ESTE DIAGRAMA ---
-  const boxIntro = $details.append('div').attr('class','box');
-boxIntro.append('h3').text('Por qué 8');
-// NUEVO: criterios de por qué son exactamente 8 procesos
-boxIntro.append('p').text(
-  'Estos 8 procesos no son arbitrarios: representan los niveles donde convergen los principales modelos contemporáneos '
-  + '(somático, emocional, cognitivo-narrativo, identitario, agentivo y relacional). A continuación se resumen cuatro criterios '
-  + 'funcionales, apoyados en la literatura sobre mecanismos de cambio, que orientan su selección:'
-);
+  boxIntroGeneral.append('p').text(
+    'El objetivo no es proponer una nueva escuela. Es ofrecer un mapa para tomar mejores decisiones clínicas: '
+    + 'identificar qué procesos están activos o bloqueados en un caso concreto, y qué intervenciones pueden movilizar cambio '
+    + 'de forma útil en el momento adecuado.'
+  );
 
-// (1) CONSISTENCIA EN LA INVESTIGACIÓN PROCESUAL
-boxIntro.append('p').text(
-  '(1) Aparecen de manera consistente en la investigación procesual: distintos programas de investigación identifican '
-  + 'repetidamente dominios emocionales, cognitivos, conductuales, fisiológicos e interpersonales como núcleos del cambio.'
-);
 
-boxIntro.append('p')
-  .attr('class','quote')
-  .text(
+  // ==========================================
+  // BOX 1: POR QUÉ “8” (criterios)
+  // ==========================================
+  const boxPorQue8 = $details.append('div').attr('class','box');
+  boxPorQue8.append('h3').text('Por qué 8');
+
+  boxPorQue8.append('p').text(
+    'Estos 8 procesos no son arbitrarios: representan dominios donde convergen los principales modelos contemporáneos '
+    + '(somático, emocional, experiencial, cognitivo-narrativo, identitario, agentivo y relacional). '
+    + 'A continuación se resumen criterios funcionales apoyados en la literatura sobre mecanismos y procesos de cambio.'
+  );
+
+  boxPorQue8.append('p').text(
+    '(1) Consistencia en la investigación procesual: aparecen repetidamente dominios emocionales, cognitivos, conductuales, '
+    + 'fisiológicos e interpersonales como núcleos del cambio.'
+  );
+  boxPorQue8.append('p').attr('class','quote').text(
     '"Certain mechanisms consistently emerge across therapeutic approaches, including emotional, cognitive, behavioral, '
     + 'interpersonal, and physiological processes." (Kazdin, 2007; 2009)'
   );
 
-// (2) OBSERVABILIDAD CLÍNICA EN SESIÓN
-boxIntro.append('p').text(
-  '(2) Son observables clínicamente en sesión: cada proceso puede rastrearse momento a momento en la interacción terapéutica '
-  + 'como fenómenos visibles en el cuerpo, la emoción, la narrativa, la identidad, la agencia o la relación.'
-);
-
-boxIntro.append('p')
-  .attr('class','quote')
-  .text(
-    '"Therapeutic processes must be identifiable moment-to-moment in the clinical encounter: emotional arousal, meaning-making, '
-    + 'work with self-parts, and enactments of agency." (Greenberg, 2011)'
+  boxPorQue8.append('p').text(
+    '(2) Observabilidad clínica en sesión: pueden rastrearse momento a momento en cuerpo, emoción, narrativa, identidad, '
+    + 'agencia y relación.'
+  );
+  boxPorQue8.append('p').attr('class','quote').text(
+    '"Therapeutic processes must be identifiable moment-to-moment in the clinical encounter." (Greenberg, 2011)'
   );
 
-// (3) AGRUPAN TÉCNICAS POR FUNCIÓN Y NO POR ESCUELA
-boxIntro.append('p').text(
-  '(3) Permiten agrupar técnicas diversas por su función y no por la escuela: procedimientos de tradiciones distintas pueden '
-  + 'entenderse como variaciones de una misma función procesual (regular, procesar, resignificar, fortalecer identidad, promover '
-  + 'agencia o transformar patrones relacionales).'
-);
-
-boxIntro.append('p')
-  .attr('class','quote')
-  .text(
+  boxPorQue8.append('p').text(
+    '(3) Permiten agrupar técnicas por función (no por escuela): procedimientos de tradiciones distintas se entienden como '
+    + 'variaciones de una misma función procesual.'
+  );
+  boxPorQue8.append('p').attr('class','quote').text(
     '"Integration advances when techniques are classified by their function in change rather than by the school they come from." '
     + '(Norcross & Goldfried, 2005)'
   );
 
-// (4) CUBREN EL ESPECTRO DEL SELF SIN MULTIPLICAR PROCESOS REDUNDANTES
-boxIntro.append('p').text(
-  '(4) Cubren el espectro de cambio del self sin multiplicar procesos redundantes: abarcan los niveles fisiológico, emocional, '
-  + 'cognitivo-narrativo, identitario, agentivo y relacional que, en conjunto, describen la arquitectura del cambio personal.'
-);
-
-boxIntro.append('p')
-  .attr('class','quote')
-  .text(
-    '"Effective therapy operates across multiple levels of the person — physiological, emotional, cognitive, identity-related '
-    + 'and interpersonal — which together constitute the architecture of change." (Hayes & Hofmann, 2020)'
+  boxPorQue8.append('p').text(
+    '(4) Cubren el espectro del self sin multiplicar procesos redundantes: abarcan niveles fisiológico, emocional, '
+    + 'cognitivo-narrativo, identitario, agentivo y relacional como arquitectura del cambio.'
+  );
+  boxPorQue8.append('p').attr('class','quote').text(
+    '"Effective therapy operates across multiple levels of the person." (Hayes & Hofmann, 2020)'
   );
 
-// Procesos transversales
-boxIntro.append('p').text(
-  'Procesos como la atención/presencia o la motivación se entienden aquí como dimensiones transversales que modulan estos ocho '
-  + 'campos, en lugar de configurarse como procesos separados.'
-);
+  boxPorQue8.append('p').text(
+    'Dimensiones como atención/presencia o motivación se entienden aquí como moduladores transversales, no como procesos separados.'
+  );
 
 
-  // --- BOX 2: RELACIÓN CON LA EVIDENCIA EN PSICOTERAPIA ---
+  // ==========================================
+  // BOX 2: RELACIÓN CON LA EVIDENCIA (factores comunes + procesos)
+  // ==========================================
   const boxEvid = $details.append('div').attr('class','box');
-
   boxEvid.append('h3').text('Relación con la evidencia en psicoterapia');
 
   boxEvid.append('p').text(
-    'La investigación acumulada (Frank & Frank, Wampold & Imel, Norcross & Lambert, Castonguay & Beutler) muestra que la mayor parte '
-    + 'del cambio terapéutico se explica por procesos y factores comunes más que por técnicas aisladas de un modelo.'
+    'La investigación acumulada sugiere que una parte sustancial del cambio terapéutico se explica por factores comunes '
+    + '(alianza, expectativas, credibilidad del encuadre, participación del paciente) y por procesos transdiagnósticos, '
+    + 'más que por “ingredientes específicos” aislados de una escuela.'
   );
 
   boxEvid.append('p').text(
-    'Los 8 procesos de este diagrama recogen esos dominios de cambio: regulación de la activación y la emoción, elaboración y '
-    + 'transformación emocional, reorganización narrativa y cognitiva, trabajo con la relación interna y la identidad, promoción de la '
-    + 'agencia y modificación de patrones relacionales. Diferentes escuelas pueden contribuir a los mismos procesos con lenguajes y '
-    + 'rituales distintos.'
+    'Este diagrama organiza intervenciones por el proceso de cambio al que sirven (regular, acceder y transformar emoción, '
+    + 'reorganizar significado, fortalecer identidad, promover agencia, transformar patrones relacionales), permitiendo comparar '
+    + 'cómo diferentes modelos contribuyen a esos procesos con lenguajes y rituales distintos.'
   );
 
-  boxEvid.append('p').text(
-    'Por eso, las técnicas y microintervenciones aparecen agrupadas aquí no por orientación teórica, sino por el proceso de cambio al '
-    + 'que sirven en la experiencia del paciente.'
+  boxEvid.append('p').attr('class','quote').text(
+    '"The benefit of psychotherapy derives from the context, the relationship, and the meaning attributed to therapy, '
+    + 'rather than from specific ingredients." (Wampold & Imel, 2015)'
   );
 
-  boxEvid.append('p')
-    .attr('class','quote')
-    .text(
-      '"The benefit of psychotherapy derives from the context, the relationship, and the meaning attributed to therapy, '
-      + 'rather than from specific ingredients." (Wampold & Imel, 2015)'
-    );
+  boxEvid.append('p').attr('class','quote').text(
+    '"The common factors perspective emphasizes the healing context, expectations, and the therapeutic relationship." '
+    + '(Frank & Frank, 1991)'
+  );
 
-  // --- BOX 3: INTERDEPENDENCIA ENTRE PROCESOS ---
+
+  // ==========================================
+  // BOX 3: INTERDEPENDENCIA ENTRE PROCESOS (red dinámica)
+  // ==========================================
   const boxInterdep = $details.append('div').attr('class','box');
-
   boxInterdep.append('h3').text('Los procesos no actúan por separado');
 
   boxInterdep.append('p').text(
-    'En psicoterapia, activar un proceso casi nunca afecta sólo a ese proceso. La regulación mejora el procesamiento emocional, '
-    + 'un cambio narrativo modifica la identidad, y una experiencia de agencia influye en la regulación fisiológica y en la '
-    + 'dimensión relacional. Los procesos son sistemas interdependientes que se modulan recíprocamente.'
+    'En psicoterapia, activar un proceso rara vez afecta solo a ese proceso. La regulación cambia el acceso emocional; '
+    + 'un cambio narrativo reorganiza identidad; una experiencia de agencia influye en emoción y relación. '
+    + 'Los procesos forman un sistema interdependiente.'
   );
 
   boxInterdep.append('p').text(
-    'La investigación contemporánea sobre mecanismos de cambio muestra que estos procesos funcionan como redes dinámicas, no como '
-    + 'módulos aislados. Por eso, intervenir en el proceso correcto suele desbloquear otros de manera indirecta.'
+    'Por eso, el objetivo clínico no es “trabajar todos los procesos”, sino identificar el punto de palanca más útil en ese momento.'
   );
 
-  boxInterdep.append('p')
-    .attr('class','quote')
-    .text(
-      '"Change rarely occurs in a single domain; emotional, cognitive, behavioral and interpersonal processes shift together '
-      + 'in patterned ways." (Kazdin, 2007, 2009)'
-    );
-
-  boxInterdep.append('p')
-    .attr('class','quote')
-    .text(
-      '"Therapeutic change reflects the interaction of multiple biopsychosocial processes operating as a complex system." '
-      + '(Hayes & Hofmann, 2020)'
-    );
-
-  boxInterdep.append('p')
-    .attr('class','quote')
-    .text(
-      '"Targeting one mechanism often produces cascading effects across others, because mechanisms form interconnected '
-      + 'networks." (Holmes et al., 2018, *Lancet Psychiatry*)'
-    );
-
-  boxInterdep.append('p').text(
-    'Por eso, el objetivo clínico no es “trabajar todos los procesos”, sino identificar cuál es el punto de palanca más útil en ese '
-    + 'momento. Al mover un nodo del sistema, el resto tiende a reorganizarse.'
+  boxInterdep.append('p').attr('class','quote').text(
+    '"Change rarely occurs in a single domain; emotional, cognitive, behavioral and interpersonal processes shift together." '
+    + '(Kazdin, 2007; 2009)'
   );
-  // --- BOX X: ALIANZA TERAPÉUTICA (ALI) ---
+
+  boxInterdep.append('p').attr('class','quote').text(
+    '"Therapeutic change reflects the interaction of multiple biopsychosocial processes operating as a complex system." '
+    + '(Hayes & Hofmann, 2020)'
+  );
+
+
+  // ==========================================
+  // BOX 4: PROCESO · FUNCIÓN · MOMENTO (la bisagra del mapa)
+  // ==========================================
+  const boxPFM = $details.append('div').attr('class','box');
+  boxPFM.append('h3').text('Cómo decidir bien: Proceso · Función · Momento');
+
+  boxPFM.append('p').text(
+    'Este diagrama se usa correctamente cuando separa tres preguntas que suelen mezclarse: '
+    + '(1) ¿qué proceso quiere activar?, (2) ¿qué función clínica cumple lo que hará ahora?, y '
+    + '(3) ¿es el momento adecuado para hacerlo?.'
+  );
+
+  boxPFM.append('p').text(
+    '• Proceso = qué sistema de cambio moviliza (VB, RF, RE, AP, RI, N, I, AG, R). '
+    + '• Función = para qué interviene ahora (p. ej., estabilizar, explorar, intensificar, integrar, reparar vínculo, consolidar). '
+    + '• Momento = cuándo es clínicamente seguro y útil aplicar esa función.'
+  );
+
+  boxPFM.append('p').text(
+    'Una misma técnica puede servir a funciones distintas según el momento. '
+    + 'La técnica no “funciona” o “no funciona” en abstracto: funciona cuando proceso, función y momento encajan.'
+  );
+
+  boxPFM.append('p').attr('class','quote').text(
+    '"Psychotherapy is a persuasive and meaning-making process enacted within a healing relationship." (Frank & Frank, 1991)'
+  );
+
+  boxPFM.append('p').text(
+    'Ejemplos de calibración (evitan errores típicos):\n'
+    + '• Si el paciente está fuera de ventana de tolerancia: la función suele ser estabilizar → procesos VB/RF/RE; '
+    + 'insight narrativo (N) puede ser prematuro.\n'
+    + '• Si hay evitación crónica con regulación suficiente: la función puede ser intensificar/activar experiencia → AP (y/o exposición según modelo).\n'
+    + '• Si hay ruptura de alianza: la función es reparar → ALI (y a veces R) antes de “seguir con el contenido”.'
+  );
+
+
+  // ==========================================
+  // BOX 5: MOMENTOS CLÍNICOS (sin convertirlo en protocolo)
+  // ==========================================
+  const boxMomentos = $details.append('div').attr('class','box');
+  boxMomentos.append('h3').text('Momentos clínicos: cuándo tocar cada proceso');
+
+  boxMomentos.append('p').text(
+    'El “momento” no es una fase rígida. Es una lectura clínica: qué necesita ahora el sistema terapéutico para que el cambio '
+    + 'sea posible y sostenible. Una intervención potente en el momento equivocado puede desorganizar, aumentar evitación o erosionar la alianza.'
+  );
+
+  boxMomentos.append('p').text(
+    'Momentos típicos (orientativos):\n'
+    + '• Inicio / encuadre: alianza, expectativas, seguridad básica (ALI + VB/RF/RE).\n'
+    + '• Estabilización: ampliar tolerancia, bajar reactividad, sostener continuidad (VB/RF/RE).\n'
+    + '• Exploración: clarificar patrones, hipótesis, narrativa, significados (N/RI/R).\n'
+    + '• Trabajo transformacional: emoción viva + reconfiguración (AP + RI + N según caso).\n'
+    + '• Integración y consolidación: identidad, agencia, generalización a vida cotidiana (I/AG/R).\n'
+    + '• Ruptura/crisis: volver a alianza y regulación antes de empujar contenido (ALI + RF/RE).'
+  );
+
+  boxMomentos.append('p').attr('class','quote').text(
+    '"Alliance ruptures are common and clinically meaningful; successful repair is associated with better outcomes." '
+    + '(Safran & Muran, 2000; 2014)'
+  );
+
+
+  // ==========================================
+  // BOX 6: ALIANZA (ALI) como metaproceso
+  // ==========================================
   const boxAli = $details.append('div').attr('class','box');
-
   boxAli.append('h3').text('Alianza terapéutica: el metaproceso que sostiene todo');
 
   boxAli.append('p').text(
-    'En este diagrama, la alianza terapéutica no se entiende como “una técnica”, sino como un metaproceso transversal que sostiene y potencia '
-    + 'cualquier intervención. Cuando la alianza es sólida, los procesos específicos (RF, RE, AP, RI, N, I, AG, R) se vuelven más accesibles y eficaces; '
-    + 'cuando es frágil, incluso buenas técnicas pierden potencia.'
+    'En este diagrama, la alianza no se entiende como “una técnica”, sino como un metaproceso transversal que potencia '
+    + 'cualquier intervención. Cuando la alianza es sólida, los procesos específicos se vuelven más accesibles; cuando es frágil, '
+    + 'incluso buenas técnicas pierden potencia.'
   );
 
   boxAli.append('p').text(
-    'Por eso, ALI se representa de forma distinta: al entrar en Alianza y seleccionar un subproceso, el diagrama muestra cómo lo entiende cada modelo '
-    + '(en formato “Modelos”), en lugar de listar microintervenciones. La alianza se expresa de manera diferente según la epistemología, el estilo clínico y '
-    + 'la teoría del cambio de cada enfoque.'
+    'ALI se presenta de forma distinta: en “Alianza” el diagrama muestra cómo la entiende cada modelo (en formato “Modelos”), '
+    + 'porque su expresión depende de epistemología, estilo clínico y teoría del cambio.'
   );
 
   boxAli.append('p').attr('class','quote').text(
     '"The working alliance is a pan-theoretical construct involving bond, agreement on goals, and agreement on tasks." (Bordin, 1979)'
   );
 
-  boxAli.append('p').attr('class','quote').text(
-    '"Alliance ruptures are common and clinically meaningful; successful repair is associated with better outcomes." (Safran & Muran, 2000; 2014)'
-  );
-
-  // Lista breve de subprocesos (para que el usuario entienda qué está viendo)
   boxAli.append('p').text(
     'Subprocesos canónicos de ALI en este mapa: vínculo, objetivos, tareas, colaboración, sintonía, ruptura–reparación, monitorización y sensibilidad al contexto.'
   );
 
 
- // --- BOX X: WAMPOLD (por qué funciona una técnica y cómo presentarla) ---
-const boxWamp = $details.append('div').attr('class','box');
+  // ==========================================
+  // BOX 7: WAMPOLD / MODELO CONTEXTUAL (bien explicado)
+  // ==========================================
+  const boxWamp = $details.append('div').attr('class','box');
+  boxWamp.append('h3').text('Wampold y el modelo contextual: por qué funciona una intervención');
 
-boxWamp.append('h3').text('Wampold: por qué funciona una técnica y cómo presentarla');
+  boxWamp.append('p').text(
+    'En este diagrama, una técnica no se presenta solo por “lo que se hace”, sino por cómo se sostiene su eficacia clínica. '
+    + 'El modelo contextual (Wampold & Imel) ayuda a traducir cualquier intervención a condiciones que aumentan la probabilidad de cambio.'
+  );
 
-boxWamp.append('p').text(
-  'En la sección de Modelos, cada técnica y microintervención no aparece solo descrita por lo que se hace en sesión, sino también '
-  + 'por por qué puede resultar eficaz y cómo conviene presentarla para que funcione. Esta información se apoya en la propuesta de '
-  + 'Bruce Wampold sobre los factores que sostienen el cambio terapéutico más allá de la escuela teórica.'
-);
+  boxWamp.append('p').text(
+    'Este enfoque enfatiza que la eficacia no depende únicamente de ingredientes específicos, sino de cómo la intervención se inserta '
+    + 'en una relación de ayuda creíble y movilizadora.'
+  );
 
-boxWamp.append('p').text(
-  'El objetivo no es añadir teoría, sino ayudar al terapeuta a traducir la técnica a una experiencia clínica eficaz. '
-  + 'Por eso, junto a cada técnica se especifica cómo su uso se apoya en cuatro dimensiones que orientan directamente '
-  + 'la forma de introducirla, explicarla y sostenerla en sesión.'
-);
+  // Las “4 dimensiones” (claras, operativas)
+  boxWamp.append('p').text(
+    'Por eso, junto a técnicas y microintervenciones, este mapa puede anotar (cuando proceda) cuatro dimensiones clínicas:'
+  );
+
+  boxWamp.append('p').text(
+    '• Alianza y colaboración: cómo se construye cooperación (bond/objetivos/tareas) para que el paciente participe.\n'
+    + '• Expectativas y esperanza realista: cómo se incrementa la credibilidad de la ayuda sin prometer milagros.\n'
+    + '• Explicación/razón de ser (rationale): cómo se da sentido a la intervención para que el paciente la “compre”.\n'
+    + '• Ritual y participación: cómo se convierte en una práctica repetible que moviliza implicación y aprendizaje.'
+  );
+
+  boxWamp.append('p').attr('class','quote').text(
+    '"The psychotherapy relationship and the meaning attributed to therapy are central to outcomes." (Wampold & Imel, 2015)'
+  );
+
+  // Puente con factores comunes “parecidos”
+  boxWamp.append('p').text(
+    'Esto conecta con marcos “primos” de factores comunes (Frank & Frank; Norcross & Lambert), que subrayan: '
+    + 'contexto de curación, relato explicativo, vínculo, y participación activa como motores transversales del cambio.'
+  );
 
 
-boxWamp.append('p').text(
-  'De este modo, el diagrama no solo ayuda a entender qué es una técnica y por qué puede funcionar, '
-  + 'sino también cómo presentarla y sostenerla en sesión para maximizar su eficacia clínica.'
-);
-
-
-
-
-   // --- BOX X: NEIMEYER (niveles de organización del modelo) ---
+  // ==========================================
+  // BOX 8: NEIMEYER (niveles de organización)
+  // ==========================================
   const boxNei = $details.append('div').attr('class','box');
-
   boxNei.append('h3').text('Neimeyer: niveles de organización de un modelo terapéutico');
 
   boxNei.append('p').text(
-    'En la sección de Modelos, junto a la descripción general de cada enfoque, aparece una explicación del modelo organizada en '
-    + 'diferentes niveles, siguiendo la formulación estructural propuesta por Robert A. Neimeyer.'
+    'Este mapa asume que una psicoterapia no se define solo por técnicas. También incluye teoría clínica del cambio, teoría formal '
+    + 'y supuestos metateóricos. Dos enfoques pueden compartir técnicas y diferir profundamente en su teoría del cambio o su epistemología.'
   );
 
   boxNei.append('p').text(
-    'Según Neimeyer, una psicoterapia no se define solo por sus técnicas, sino por una estructura jerárquica que incluye: '
-    + '(1) estrategias y técnicas clínicas, '
-    + '(2) una teoría clínica que explica cómo ocurre el cambio, '
-    + '(3) una teoría formal que organiza conceptualmente ese cambio, '
-    + 'y (4) una metateoría que expresa los supuestos epistemológicos y ontológicos del modelo.'
+    'Por eso, la integración no consiste en mezclar técnicas sin criterio, sino en reconocer en qué nivel existe compatibilidad '
+    + '(técnico, clínico, teórico o metateórico).'
   );
 
-  boxNei.append('p').text(
-    'Por eso, en este diagrama, los modelos no se describen únicamente por “qué hacen en sesión”, sino por cómo se organizan en '
-    + 'estos distintos niveles. Dos enfoques pueden compartir técnicas o estrategias clínicas y, sin embargo, diferir profundamente '
-    + 'en su teoría del cambio o en sus supuestos epistemológicos.'
+  boxNei.append('p').attr('class','quote').text(
+    '"Integration is only viable when compatibility exists at the relevant levels." (Neimeyer, 1988; 1991)'
   );
 
-  boxNei.append('p').text(
-    'Esta distinción permite entender por qué la integración no consiste en mezclar técnicas, sino en reconocer en qué nivel se '
-    + 'produce la compatibilidad o la divergencia entre modelos: técnico, clínico, teórico o metateórico.'
-  );
 
-  boxNei.append('p')
-    .attr('class','quote')
-    .text(
-      '"Psychotherapeutic theories are organized hierarchically, ranging from concrete techniques to clinical theory, formal theory '
-      + 'and metatheoretical assumptions. Integration is only viable when compatibility exists at the relevant levels." '
-      + '(Neimeyer, 1988; 1991)'
-    );
-
-  // --- BOX 4: COMPATIBILIDAD CON LA TERAPIA BASADA EN PROCESOS (PBT) ---
+  // ==========================================
+  // BOX 9: COMPATIBILIDAD CON PBT (diferencia clara)
+  // ==========================================
   const boxPBT = $details.append('div').attr('class','box');
-
   boxPBT.append('h3').text('Compatibilidad con la Terapia Basada en Procesos (PBT)');
 
   boxPBT.append('p').text(
-    'La Terapia Basada en Procesos (Process-Based Therapy, PBT) propone formular los casos en términos de procesos biopsicosociales '
-    + 'que mantienen el problema (por ejemplo, evitación experiencial, rumiación, patrones interpersonales rígidos, déficit de '
-    + 'flexibilidad psicológica). El foco no está en aplicar un protocolo de manual, sino en entender qué procesos están atascados y '
-    + 'qué intervenciones pueden desbloquearlos.'
-  );
-
-  // NUEVO: diferencia explícita entre procesos PBT y procesos de este diagrama
-  boxPBT.append('p').text(
-    'En PBT, estos procesos se formulan de manera idiográfica y causal (qué mantiene el problema en este paciente concreto). '
-    + 'En este diagrama, los procesos se organizan como procesos terapéuticos funcionales: campos donde el terapeuta puede intervenir '
-    + 'para facilitar cambio (regulación, procesamiento, narrativa, identidad, agencia, relación), con independencia del diagnóstico.'
+    'La PBT propone formular casos en términos de procesos biopsicosociales que mantienen el problema (idiográficos y causales): '
+    + 'qué está manteniendo el sufrimiento en este paciente concreto, en este contexto concreto.'
   );
 
   boxPBT.append('p').text(
-    'Este diagrama es complementario a la PBT: la PBT le ayuda a decidir qué procesos del paciente son relevantes; el diagrama le ayuda '
-    + 'a decidir qué procesos terapéuticos quiere activar y con qué técnicas y microintervenciones concretas puede hacerlo.'
+    'En PBT, “proceso” suele referirse a variables mantenedoras (p. ej., evitación experiencial, rumiación, rigidez interoceptiva, '
+    + 'patrones interpersonales). En este diagrama, los procesos se organizan como campos terapéuticos funcionales: '
+    + 'dónde puede intervenir el terapeuta para facilitar cambio (VB/RF/RE/AP/RI/N/I/AG/R), independientemente del diagnóstico.'
   );
 
-  boxPBT.append('p')
-    .attr('class','quote')
-    .text(
-      '"Effective intervention requires identifying core processes and targeting them flexibly rather than delivering protocols." (Hayes & Hofmann, 2020)'
-    );
+  boxPBT.append('p').text(
+    'Son complementarios: PBT ayuda a decidir qué procesos del paciente son relevantes; este diagrama ayuda a decidir qué procesos '
+    + 'terapéuticos activar y con qué microintervenciones concretas hacerlo.'
+  );
 
-  // --- BOX 5: QUÉ VE CUANDO HACE CLIC EN UN PROCESO ---
+  boxPBT.append('p').attr('class','quote').text(
+    '"Effective intervention requires identifying core processes and targeting them flexibly rather than delivering protocols." '
+    + '(Hayes & Hofmann, 2020)'
+  );
+
+
+  // ==========================================
+  // BOX 10: QUÉ VE AL HACER CLIC (uso real)
+  // ==========================================
   const boxClick = $details.append('div').attr('class','box');
-
   boxClick.append('h3').text('Qué ve cuando hace clic en un proceso');
 
   boxClick.append('p').text(
-    'Al seleccionar un proceso (por ejemplo, “Acceso y procesamiento emocional” o “Agencia / acción”), el diagrama le mostrará '
-    + 'técnicas y microintervenciones de modelos diversos que pueden utilizarse para trabajar ese proceso con un paciente concreto.'
+    'Al seleccionar un proceso, el diagrama muestra técnicas y microintervenciones de modelos diversos que pueden trabajar ese '
+    + 'proceso con un caso concreto. No obliga a cambiar de orientación: ayuda a entender a qué proceso sirve lo que ya hace.'
   );
 
-  boxClick.append('p').text(
-    'Usted puede seguir trabajando desde una orientación cognitiva, sistémica, humanista, psicodinámica o constructivista. El diagrama '
-    + 'simplemente le ayuda a ver a qué proceso de cambio sirve cada técnica que aplica: si está regulando, procesando, resignificando, '
-    + 'reforzando identidad, promoviendo agencia o transformando patrones relacionales.'
+  boxClick.append('p').attr('class','quote').text(
+    '"Expert therapists flexibly integrate emotional, cognitive, relational, and behavioral dimensions moment by moment." (Hill, 2009)'
   );
 
-  boxClick.append('p')
-    .attr('class','quote')
-    .text(
-      '"Expert therapists flexibly integrate emotional, cognitive, relational, and behavioral dimensions moment by moment." (Hill, 2009)'
-    );
 
-  // --- BOX 6: LOS 8 PROCESOS (ICONOS + DESCRIPCIÓN BREVE) ---
+  // ==========================================
+  // BOX 11: LOS 8 PROCESOS (tarjetas)
+  // ==========================================
   const boxProcesos = $details.append('div').attr('class','box');
   boxProcesos.append('h3').text('Los 8 procesos de cambio del self');
 
   boxProcesos.append('p').text(
-    'Estos son los 8 procesos nucleares que se representan en el diagrama. Cada uno agrupa subprocesos y técnicas específicas que '
-    + 'podrá explorar al interactuar con los nodos.'
+    'Estos son los 8 procesos nucleares representados en el diagrama. Cada uno agrupa subprocesos y técnicas que puede explorar al interactuar con los nodos.'
   );
 
-  // NUEVO: pequeña jerarquía funcional sin convertirlo en protocolo
   boxProcesos.append('p').text(
-    'Aunque no existe una jerarquía rígida, algunos procesos funcionan habitualmente como condiciones de base (regulación fisiológica y '
-    + 'emocional), otros como procesos transformacionales (acceso y procesamiento emocional, relación interna), otros como organizadores '
-    + '(narrativa y significado, identidad) y otros como procesos ejecutivos y contextuales (agencia/acción y relacional/interpersonal). '
-    + 'Esta estructura orienta la intervención sin convertir el modelo en un protocolo secuencial.'
+    'No existe una jerarquía rígida. Aun así, suele ser útil pensar en condiciones de base (VB/RF/RE), procesos transformacionales (AP/RI), '
+    + 'organizadores (N/I) y procesos ejecutivos/contextuales (AG/R). Esto orienta sin convertir el mapa en un protocolo.'
   );
 
   const procesos = [
-    {
-      id: 'rf',
-      titulo: 'RF — Regulación fisiológica / corporal',
-      desc: 'Base somática de seguridad: respiración, grounding, relajación y trabajo con sensaciones.'
-    },
-    {
-      id: 're',
-      titulo: 'RE — Regulación emocional',
-      desc: 'Identificar, nombrar, aceptar y modular la emoción ampliando la ventana de tolerancia.'
-    },
-    {
-      id: 'ap',
-      titulo: 'AP — Acceso y procesamiento emocional',
-      desc: 'Acceder, profundizar y transformar la emoción mediante experiencias correctivas.'
-    },
-    {
-      id: 'ri',
-      titulo: 'RI — Relación interna',
-      desc: 'Diálogo interno, crítico, partes, compasión y reparación de representaciones internas.'
-    },
-    {
-      id: 'n',
-      titulo: 'N — Significado / narrativa / regulación cognitiva',
-      desc: 'Reorganizar marcos interpretativos, narrativa autobiográfica e insight.'
-    },
-    {
-      id: 'i',
-      titulo: 'I — Identidad / self',
-      desc: 'Coherencia interna, autoimagen, continuidad biográfica y valores aspiracionales.'
-    },
-    {
-      id: 'ag',
-      titulo: 'AG — Agencia y acción',
-      desc: 'Elegir, decidir, poner límites y sostener acciones alineadas con necesidades y valores.'
-    },
-    {
-      id: 'r',
-      titulo: 'R — Relacional / interpersonal',
-      desc: 'Transformar patrones vinculares: comunicación, límites, reparación y co-regulación.'
-    }
+    { id: 'vb', titulo: 'VB — Viabilidad del proceso terapéutico', desc: 'Condiciones basales (sueño, alimentación, sustancias, entorno) que modulan todos los procesos.' },
+    { id: 'rf', titulo: 'RF — Regulación fisiológica / corporal', desc: 'Base somática de seguridad: respiración, grounding, trabajo con sensaciones.' },
+    { id: 're', titulo: 'RE — Regulación emocional', desc: 'Identificar, aceptar y modular emoción ampliando ventana de tolerancia.' },
+    { id: 'ap', titulo: 'AP — Acceso y procesamiento emocional', desc: 'Acceder y transformar emoción mediante experiencias correctivas.' },
+    { id: 'ri', titulo: 'RI — Relación interna', desc: 'Diálogo interno, partes, compasión, reparación de representaciones internas.' },
+    { id: 'n',  titulo: 'N — Significado / narrativa / regulación cognitiva', desc: 'Reorganizar marcos interpretativos, narrativa autobiográfica e insight.' },
+    { id: 'i',  titulo: 'I — Identidad / self', desc: 'Coherencia interna, continuidad biográfica, valores y self aspiracional.' },
+    { id: 'ag', titulo: 'AG — Agencia y acción', desc: 'Elegir, decidir, poner límites, sostener acciones alineadas con valores.' },
+    { id: 'r',  titulo: 'R — Relacional / interpersonal', desc: 'Transformar patrones vinculares: comunicación, límites, reparación y co-regulación.' }
   ];
 
-  const grid = boxProcesos.append('div')
-    .attr('class','procesos-grid');
-
+  const grid = boxProcesos.append('div').attr('class','procesos-grid');
   const cards = grid.selectAll('.proceso-card')
     .data(procesos)
     .enter()
     .append('div')
     .attr('class','proceso-card');
 
-  const head = cards.append('div')
-    .attr('class','proceso-head');
+  const head = cards.append('div').attr('class','proceso-head');
 
-  const iconSpan = head.append('span')
-    .attr('class','proceso-icon');
+  head.append('span')
+    .attr('class','proceso-icon')
+    .each(function(d){
+      const svg = d3.select(this).html('').append('svg')
+        .attr('width', 44).attr('height', 44).attr('viewBox', '0 0 48 48');
 
-  iconSpan.each(function(d){
-    const svg = d3.select(this)
-      .html('')
-      .append('svg')
-      .attr('width', 44)
-      .attr('height', 44)
-      .attr('viewBox', '0 0 48 48');
+      const gold = '#d4af37';
+      const softGold = 'rgba(217,170,63,0.10)';
 
-    const gold = '#d4af37';
+      svg.append('rect')
+        .attr('x', 12).attr('y', 8)
+        .attr('width', 32).attr('height', 32)
+        .attr('rx', 10)
+        .attr('stroke', gold)
+        .attr('fill', softGold)
+        .attr('stroke-width', 1.8);
 
-    switch(d.id){
-
-      // RF — Regulación fisiológica / corporal
-      case 'rf': {
-        const softGold = 'rgba(217,170,63,0.10)';
-        svg.append('rect')
-          .attr('x', 12).attr('y', 8)
-          .attr('width', 32).attr('height', 32)
-          .attr('rx', 10)
-          .attr('stroke', gold)
-          .attr('fill', softGold)
-          .attr('stroke-width', 1.8);
-
-        svg.append('text')
-          .attr('x', 28)
-          .attr('y', 24)
-          .attr('fill', '#FFFFFF')
-          .attr('font-size', '13.2')
-          .attr('font-family', 'Montserrat, system-ui, sans-serif')
-          .attr('font-weight', '600')
-          .attr('letter-spacing', '0.5')
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'middle')
-          .text('RF');
-        break;
-      }
-
-      // RE — Regulación emocional
-      case 're': {
-        const softGold = 'rgba(217,170,63,0.10)';
-        svg.append('rect')
-          .attr('x', 12).attr('y', 8)
-          .attr('width', 32).attr('height', 32)
-          .attr('rx', 10)
-          .attr('stroke', gold)
-          .attr('fill', softGold)
-          .attr('stroke-width', 1.8);
-
-        svg.append('text')
-          .attr('x', 28)
-          .attr('y', 24)
-          .attr('fill', '#FFFFFF')
-          .attr('font-size', '13.2')
-          .attr('font-family', 'Montserrat, system-ui, sans-serif')
-          .attr('font-weight', '600')
-          .attr('letter-spacing', '0.5')
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'middle')
-          .text('RE');
-        break;
-      }
-
-      // AP — Acceso y Procesamiento emocional
-      case 'ap': {
-        const softGold = 'rgba(217,170,63,0.10)';
-        svg.append('rect')
-          .attr('x', 12).attr('y', 8)
-          .attr('width', 32).attr('height', 32)
-          .attr('rx', 10)
-          .attr('stroke', gold)
-          .attr('fill', softGold)
-          .attr('stroke-width', 1.8);
-
-        svg.append('text')
-          .attr('x', 28)
-          .attr('y', 24)
-          .attr('fill', '#FFFFFF')
-          .attr('font-size', '13.2')
-          .attr('font-family', 'Montserrat, system-ui, sans-serif')
-          .attr('font-weight', '600')
-          .attr('letter-spacing', '0.5')
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'middle')
-          .text('AP');
-        break;
-      }
-
-      // RI — Relación interna
-      case 'ri': {
-        const softGold = 'rgba(217,170,63,0.10)';
-        svg.append('rect')
-          .attr('x', 12).attr('y', 8)
-          .attr('width', 32).attr('height', 32)
-          .attr('rx', 10)
-          .attr('stroke', gold)
-          .attr('fill', softGold)
-          .attr('stroke-width', 1.8);
-
-        svg.append('text')
-          .attr('x', 28)
-          .attr('y', 24)
-          .attr('fill', '#FFFFFF')
-          .attr('font-size', '13.2')
-          .attr('font-family', 'Montserrat, system-ui, sans-serif')
-          .attr('font-weight', '600')
-          .attr('letter-spacing', '0.5')
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'middle')
-          .text('RI');
-        break;
-      }
-
-      // N — Narrativa / Significado
-      case 'n': {
-        const softGold = 'rgba(217,170,63,0.10)';
-        svg.append('rect')
-          .attr('x', 12).attr('y', 8)
-          .attr('width', 32).attr('height', 32)
-          .attr('rx', 10)
-          .attr('stroke', gold)
-          .attr('fill', softGold)
-          .attr('stroke-width', 1.8);
-
-        svg.append('text')
-          .attr('x', 28)
-          .attr('y', 24)
-          .attr('fill', '#FFFFFF')
-          .attr('font-size', '13.2')
-          .attr('font-family', 'Montserrat, system-ui, sans-serif')
-          .attr('font-weight', '600')
-          .attr('letter-spacing', '0.5')
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'middle')
-          .text('N');
-        break;
-      }
-
-      // I — Identidad
-      case 'i': {
-        const softGold = 'rgba(217,170,63,0.10)';
-        svg.append('rect')
-          .attr('x', 12).attr('y', 8)
-          .attr('width', 32).attr('height', 32)
-          .attr('rx', 10)
-          .attr('stroke', gold)
-          .attr('fill', softGold)
-          .attr('stroke-width', 1.8);
-
-        svg.append('text')
-          .attr('x', 28)
-          .attr('y', 24)
-          .attr('fill', '#FFFFFF')
-          .attr('font-size', '13.2')
-          .attr('font-family', 'Montserrat, system-ui, sans-serif')
-          .attr('font-weight', '600')
-          .attr('letter-spacing', '0.5')
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'middle')
-          .text('I');
-        break;
-      }
-
-      // AG — Agencia / Acción
-      case 'ag': {
-        const softGold = 'rgba(217,170,63,0.10)';
-        svg.append('rect')
-          .attr('x', 12).attr('y', 8)
-          .attr('width', 32).attr('height', 32)
-          .attr('rx', 10)
-          .attr('stroke', gold)
-          .attr('fill', softGold)
-          .attr('stroke-width', 1.8);
-
-        svg.append('text')
-          .attr('x', 28)
-          .attr('y', 24)
-          .attr('fill', '#FFFFFF')
-          .attr('font-size', '13.2')
-          .attr('font-family', 'Montserrat, system-ui, sans-serif')
-          .attr('font-weight', '600')
-          .attr('letter-spacing', '0.5')
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'middle')
-          .text('AG');
-        break;
-      }
-
-      // R — Relacional / Interpersonal
-      case 'r': {
-        const softGold = 'rgba(217,170,63,0.10)';
-        svg.append('rect')
-          .attr('x', 12).attr('y', 8)
-          .attr('width', 32).attr('height', 32)
-          .attr('rx', 10)
-          .attr('stroke', gold)
-          .attr('fill', softGold)
-          .attr('stroke-width', 1.8);
-
-        svg.append('text')
-          .attr('x', 28)
-          .attr('y', 24)
-          .attr('fill', '#FFFFFF')
-          .attr('font-size', '13.2')
-          .attr('font-family', 'Montserrat, system-ui, sans-serif')
-          .attr('font-weight', '600')
-          .attr('letter-spacing', '0.5')
-          .attr('text-anchor', 'middle')
-          .attr('dominant-baseline', 'middle')
-          .text('R');
-        break;
-      }
-
-      default:
-        svg.append('circle')
-          .attr('cx', 24).attr('cy', 24).attr('r', 12)
-          .attr('stroke', gold)
-          .attr('fill', 'none')
-          .attr('stroke-width', 1.4);
-        break;
-    }
-  });
+      // Texto (VB/RF/RE...)
+      const labelTxt = (d.id || '').toUpperCase();
+      svg.append('text')
+        .attr('x', 28).attr('y', 24)
+        .attr('fill', '#FFFFFF')
+        .attr('font-size', '12.6')
+        .attr('font-family', 'Montserrat, system-ui, sans-serif')
+        .attr('font-weight', '600')
+        .attr('letter-spacing', '0.5')
+        .attr('text-anchor', 'middle')
+        .attr('dominant-baseline', 'middle')
+        .text(labelTxt === 'VB' ? 'VB' : labelTxt);
+    });
 
   head.append('span')
     .attr('class','proceso-title')
@@ -19774,117 +19562,94 @@ boxWamp.append('p').text(
     .attr('class','proceso-desc')
     .text(d => d.desc);
 
-  // --- BOX 7: CÓMO NO USAR ESTE DIAGRAMA ---
-  const boxNoUsar = $details.append('div').attr('class','box');
 
+  // ==========================================
+  // BOX 12: CÓMO NO USAR ESTE DIAGRAMA (con coherencia epistemológica)
+  // ==========================================
+  const boxNoUsar = $details.append('div').attr('class','box');
   boxNoUsar.append('h3').text('Cómo NO usar este diagrama');
 
   boxNoUsar.append('p').text(
-    'Este diagrama no es un manual de pasos ni un protocolo. No pretende prescribir qué proceso debe abordarse primero ni '
-    + 'cómo debe organizarse una sesión.'
+    'Este diagrama no es un manual de pasos ni un protocolo. No prescribe qué proceso debe abordarse primero ni cómo organizar una sesión.'
   );
 
   boxNoUsar.append('p').text(
-    'Tampoco está diseñado para clasificar a los pacientes ni para encasillarlos en un único proceso: todas las personas '
-    + 'se mueven entre varios procesos simultáneamente y la prioridad depende del momento y del contexto.'
+    'Tampoco está diseñado para encasillar pacientes en un único proceso: las personas se mueven entre varios procesos, y la prioridad depende del momento y del contexto.'
   );
 
   boxNoUsar.append('p').text(
-    'No use el diagrama como una checklist que deba completarse. En terapia no existe la obligación de “pasar por todos los '
-    + 'procesos”; algunos serán irrelevantes para ciertos casos y otros aparecerán de manera natural sin intervención directa.'
+    'No lo use como checklist. No existe la obligación de “pasar por todos los procesos”. Algunos serán irrelevantes para ciertos casos y otros emergerán sin intervención directa.'
   );
 
   boxNoUsar.append('p').text(
-    'Evite también forzar técnicas sólo porque aparecen dentro de un proceso. La técnica debe responder a la formulación del '
-    + 'caso y a la necesidad real del paciente, no a una obligación derivada del esquema.'
-  );
-
-  // COHERENCIA EPISTEMOLÓGICA + EJEMPLO
-  boxNoUsar.append('p').text(
-    'Las intervenciones deben elegirse dentro de un marco epistemológico coherente. Un terapeuta constructivista, sistémico, '
-    + 'cognitivo-conductual o psicodinámico puede usar técnicas situadas en cualquier proceso del diagrama, pero siempre desde su '
-    + 'modo de entender la experiencia humana, el cambio y la relación terapéutica. La integración no consiste en mezclar técnicas '
-    + 'sin criterio, sino en mantener una lógica interna consistente que dé sentido a lo que hacemos y por qué lo hacemos.'
+    'Evite forzar técnicas porque “aparecen en el mapa”. La técnica responde a formulación del caso y necesidad real, no a la estructura del diagrama.'
   );
 
   boxNoUsar.append('p').text(
-    'Por ejemplo, un terapeuta sistémico puede trabajar regulación emocional mediante intervenciones sobre ciclos interactivos, '
-    + 'un terapeuta humanista puede trabajar agencia a través de experiencias emocionales correctivas, y un terapeuta cognitivo puede '
-    + 'trabajar narrativa sin limitarse a discutir “pensamientos irracionales”, sino reorganizando significados implícitos. La forma '
-    + 'de la técnica cambia según la teoría, pero la función procesual se mantiene.'
+    'Las intervenciones deben elegirse dentro de un marco epistemológico coherente. La integración no consiste en acumular técnicas, '
+    + 'sino en mantener una lógica interna consistente sobre persona, cambio y relación.'
   );
 
-  // CITAS PARA JUSTIFICAR LA COHERENCIA
-  boxNoUsar.append('p')
-    .attr('class','quote')
-    .text(
-      '"The aim of integration is not eclectic accumulation of techniques, but theoretical coherence that guides their use." '
-      + '(Norcross & Goldfried, 2005)'
-    );
+  boxNoUsar.append('p').attr('class','quote').text(
+    '"The aim of integration is not eclectic accumulation of techniques, but theoretical coherence that guides their use." '
+    + '(Norcross & Goldfried, 2005)'
+  );
 
-  boxNoUsar.append('p')
-    .attr('class','quote')
-    .text(
-      '"Our epistemological assumptions inevitably shape what we consider change, pathology and intervention." '
-      + '(Guidano, 1991; Mahoney, 1991)'
-    );
+  boxNoUsar.append('p').attr('class','quote').text(
+    '"Technique never exists in a vacuum; it is always an expression of a theory of change." (Wachtel, 2010)'
+  );
 
-  boxNoUsar.append('p')
-    .attr('class','quote')
-    .text(
-      '"Technique never exists in a vacuum; it is always an expression of a theory of change." (Wachtel, 2010)'
-    );
 
-  boxNoUsar.append('p')
-    .attr('class','quote')
-    .text(
-      '"Metatheoretical consistency is essential for meaningful integration in psychotherapy." (Safran & Segal, 1990)'
-    );
-
-  boxNoUsar.append('p')
-    .attr('class','quote')
-    .text(
-      '"Intervention is the narrative enactment of the therapist’s theory of personhood and change." (Neimeyer, 2009)'
-    );
-
-  boxNoUsar.append('p')
-    .attr('class','quote')
-    .text(
-      '"A map is useful to orient; it becomes dangerous when mistaken for the territory." (Korzybski, 1933)'
-    );
-
-  // --- BOX 8: RESUMEN OPERATIVO ---
+  // ==========================================
+  // BOX 13: RESUMEN OPERATIVO (brújula práctica)
+  // ==========================================
   const boxResumen = $details.append('div').attr('class','box');
-
   boxResumen.append('h3').text('Resumen operativo');
 
   boxResumen.append('p').text(
-    'Use este diagrama como un mapa de procesos: para cada paciente, pregúntese qué procesos están relativamente fuertes, '
-    + 'cuáles están bloqueados y qué técnicas o microintervenciones podrían movilizar el proceso que ahora mismo es más prioritario.'
+    'Use este diagrama como mapa de procesos: para cada caso, pregúntese qué procesos están relativamente fuertes, cuáles están bloqueados '
+    + 'y qué intervención puede movilizar el proceso prioritario en este momento.'
   );
 
   boxResumen.append('p').text(
-    'No se trata de “hacer de todo”, sino de intervenir con intención: a veces el foco principal será la regulación, otras el '
-    + 'procesamiento emocional, otras la narrativa, la identidad, la agencia o la dimensión relacional. El diagrama le ayuda a '
-    + 'mantener esa brújula clara durante el proceso terapéutico.'
+    'Cuando dos procesos parezcan igual de prioritarios, empiece por aquel cuya mejora tenga más probabilidad de desbloquear el funcionamiento '
+    + 'global en el corto plazo (por ejemplo, seguridad/viabilidad y regulación antes que exploración intensa).'
   );
 
-  // NUEVO: qué hacer cuando dos procesos parecen igual de prioritarios
-  boxResumen.append('p').text(
-    'Cuando dos procesos parezcan igual de prioritarios, comience por aquel cuya mejora tenga más probabilidad de desbloquear el '
-    + 'funcionamiento global del paciente en el corto plazo (por ejemplo, regulación antes que exploración narrativa intensa, o '
-    + 'seguridad relacional antes que trabajo identitario profundo).'
+  boxResumen.append('p').attr('class','quote').text(
+    '“Therapists who think in terms of processes, rather than rigid adherence to a single model, are better prepared for the complexity of real-world practice.” '
+    + '(adapted from Castonguay & Beutler, 2015)'
   );
 
-  boxResumen.append('p')
-    .attr('class','quote')
-    .text(
-      '“Therapists who think in terms of processes, rather than rigid adherence to a single model, are better prepared for the complexity of real-world practice.” '
-      + '(adapted from Castonguay & Beutler, 2015)'
-    );
+
+  // ==========================================
+  // BOX 14: REFERENCIAS CLAVE (para que la guía sea “seria”)
+  // ==========================================
+  const boxRefs = $details.append('div').attr('class','box');
+  boxRefs.append('h3').text('Referencias (selección)');
+
+  const refList = boxRefs.append('ul');
+
+  [
+    'Bordin, E. (1979). The generalizability of the psychoanalytic concept of the working alliance.',
+    'Castonguay, L. & Beutler, L. (2015). Principles of Therapeutic Change that Work.',
+    'Frank, J. & Frank, J. (1991). Persuasion and Healing.',
+    'Greenberg, L. (2011). Emotion-Focused Therapy (o trabajos clínicos sobre procesos en sesión).',
+    'Hayes, S. & Hofmann, S. (2020). Process-Based Therapy.',
+    'Hill, C. (2009). Helping Skills (y literatura sobre habilidades de terapeuta).',
+    'Kazdin, A. (2007; 2009). Mechanisms of Change in Psychotherapy.',
+    'Neimeyer, R. (1988; 1991). (propuestas jerárquicas sobre organización de teorías terapéuticas).',
+    'Norcross, J. & Goldfried, M. (2005). Handbook of Psychotherapy Integration.',
+    'Safran, J. & Muran, C. (2000; 2014). Negotiating the Therapeutic Alliance.',
+    'Wachtel, P. (2010). Therapeutic Communication / integrative perspectives.',
+    'Wampold, B. & Imel, Z. (2015). The Great Psychotherapy Debate.'
+  ].forEach(txt => {
+    refList.append('li').text(txt);
+  });
 
   return;
 }
+
 
 
 
