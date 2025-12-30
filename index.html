@@ -1602,6 +1602,62 @@ html.mjps-fs-on .tmps-mjps-root{
     outline: none;
   }
 }
+/* =========================================================
+   BULLET POINTS – FORMATO PREMIUM (VB, CBT-I, Nutritional)
+   ========================================================= */
+
+/* Asegura buena lectura de bloques largos con bullets */
+.subproc-desc,
+.procedimiento-desc,
+.micro-desc,
+.box p {
+  white-space: pre-line; /* ya lo usas, lo reforzamos */
+}
+
+/* Bullets en texto plano (•) */
+.subproc-desc::selection,
+.procedimiento-desc::selection,
+.micro-desc::selection {
+  background: rgba(217,170,63,0.25);
+}
+
+/* Mejora visual de líneas con bullets */
+.subproc-desc,
+.procedimiento-desc,
+.micro-desc {
+  line-height: 1.75;
+}
+
+/* Sangrado y separación de bullets */
+.subproc-desc,
+.procedimiento-desc,
+.micro-desc {
+  --bullet-indent: 1.1em;
+}
+
+.subproc-desc br + text,
+.procedimiento-desc br + text,
+.micro-desc br + text {
+  margin-top: 6px;
+}
+
+/* Ajuste específico para líneas que empiezan por • */
+.subproc-desc {
+  font-size: 0.88rem;
+}
+
+/* Simulación de lista sin <ul> */
+.subproc-desc {
+  padding-left: 0;
+}
+
+.subproc-desc {
+  text-indent: 0;
+}
+
+.subproc-desc {
+  word-break: normal;
+}
 
   </style>
 </head>
@@ -12439,6 +12495,266 @@ Tras tipificar, la intervención deja de ser genérica y se vuelve quirúrgica: 
       procesos:['RI_autocompasion','N_metacognicion'],
       texto:`Protocolo breve: (1) notar crítica, (2) validar emoción, (3) una frase compasiva firme, (4) una acción pequeña de cuidado. Evita espiral secundaria de vergüenza.`
     }
+  ]
+},
+{
+  id:'c1cbti',
+  grupo:'Conductismo',
+  label:'Terapia cognitivo-conductual para el insomnio (CBT-I)',
+  year:'1970s–actualidad',
+  autores:'Richard Bootzin; Arthur Spielman; Charles Morin; Colin Espie; Jack Edinger; Michael Perlis; Allison Harvey; Peter Hauri; Buysse; Lichstein',
+
+  influencias:[
+    'Medicina del sueño (regulación homeostática y circadiana)',
+    'Modelo 3P del insomnio (predisponentes–precipitantes–perpetuantes)',
+    'Conductismo aplicado al sueño (control de estímulos y aprendizaje asociativo)',
+    'Restricción/compresión del sueño y principios de consolidación',
+    'Modelos cognitivos del insomnio (hipervigilancia, creencias, esfuerzo por dormir)',
+    'Psicoeducación, autorregistro y toma de decisiones guiada por datos'
+  ],
+
+  descripcion:`La CBT-I es el tratamiento psicológico de primera línea para el insomnio crónico porque aborda directamente los mecanismos que lo mantienen: la asociación condicionada cama–vigilia, la pérdida de presión de sueño por “compensaciones” (siestas, acostarse demasiado pronto, permanecer en cama despierto) y la activación cognitiva/afectiva ligada al esfuerzo por dormir. Su centro operativo es conductual (sleep scheduling, restricción/compresión y control de estímulos), y se potencia con componentes cognitivos específicos (creencias, catastrofización, vigilancia del sueño, ansiedad de rendimiento) y con medidas de soporte (higiene del sueño, relajación, manejo de sustancias y entorno). El encuadre clínico es importante: CBT-I no pretende “resolver la vida” ni sustituir una psicoterapia orientada a conflictos, trauma o dilemas vitales; su función es reorganizar el sistema sueño-vigilia para reducir ruido fisiológico, mejorar energía y estabilidad diurna, y hacer más viable un trabajo psicoterapéutico posterior cuando hay comorbilidad o contenido psicológico dominante (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”, cap. 6 “Cognitive Therapy”, cap. 8 “Clinical and Treatment Implementation Issues”).`,
+
+  neimeyer: {
+
+    epistemologico: `
+Concepción de la realidad psicológica
+El insomnio se entiende, ante todo, como un problema biopsicoconductual observable y medible: patrones de sueño-vigilia, conductas y condiciones que mantienen la vigilia, y procesos cognitivos/afectivos que elevan la activación. La “realidad clínica” relevante no es la narrativa del paciente por sí sola, sino la combinación de (a) indicadores medibles (diario de sueño, latencia, despertares, eficiencia), (b) regularidades funcionales (qué lo empeora o lo mejora) y (c) mecanismos plausibles (hiperactivación, condicionamiento, desincronización, presión homeostática insuficiente). Se asume que la experiencia subjetiva importa, pero se contrasta con datos y con el patrón conductual real.
+
+Concepción del conocimiento terapéutico
+El conocimiento terapéutico es empírico, pragmático y orientado a resultados: se trabaja con hipótesis operativas que se ponen a prueba semana a semana (p. ej., “demasiado tiempo en cama está entrenando vigilia”, “la siesta está reduciendo la presión de sueño”). La intervención se guía por autorregistro y por reglas clínicas derivadas de evidencia, y se ajusta en función de la respuesta del paciente. No se busca “verdad psicológica profunda”, sino construir un plan eficaz basado en mecanismos conocidos y datos del caso.
+
+Concepción del ser humano y del cambio
+El ser humano se concibe como un organismo autorregulado en el que el sueño es un proceso biológico que emerge mejor cuando se alinean ritmos, presión homeostática y señales ambientales/conductuales. El cambio se produce principalmente por aprendizaje y reorganización de hábitos (condicionamiento y control de estímulos), por ajuste del timing (restricción/compresión, regularidad circadiana) y por reducción de procesos cognitivos que disparan hiperactivación (creencias disfuncionales, esfuerzo por dormir, vigilancia del reloj). La voluntad o el insight pueden ayudar, pero no son el motor central: el motor es la implementación consistente.
+
+Rol de la relación terapéutica
+La relación terapéutica es un facilitador técnico: mejora adherencia, motivación y tolerancia a la incomodidad inicial (somnolencia, frustración, miedo a “dormir menos”), y permite negociar barreras reales de implementación. La alianza importa porque CBT-I exige conductas concretas y consistentes; sin colaboración y confianza, el paciente abandona, flexibiliza demasiado las reglas o las aplica de forma rígida y ansiosa, perdiendo eficacia.`,
+
+    teoriaFormal: `
+Qué es el problema (modelo explicativo general)
+El insomnio crónico se explica como un trastorno mantenido por tres grandes ejes: (1) condicionamiento: la cama/dormitorio se asocia a alerta, rumiación y lucha; (2) desregulación de la “economía del sueño”: el paciente reduce la presión homeostática al ampliar tiempo en cama, hacer siestas o irregular horarios; (3) hiperactivación cognitiva/afectiva: preocupación por dormir, catastrofización de consecuencias, vigilancia del sueño y esfuerzo por controlar el inicio del sueño, que elevan arousal y perpetúan el problema. Estos ejes pueden coexistir con factores circadianos y comorbilidades, pero el mantenimiento suele estar en las rutinas y respuestas aprendidas.
+
+Cómo se explica el cambio
+El cambio ocurre al invertir sistemáticamente los mantenedores: se reentrena la asociación cama→sueño (control de estímulos), se compacta el sueño y aumenta eficiencia mediante restricción/compresión (más presión homeostática, menos vigilia en cama), se estabiliza el ritmo con un ancla de levantarse y exposición adecuada a señales temporales, y se reduce el “esfuerzo por dormir” mediante intervención cognitiva específica y estrategias de manejo de mente acelerada. El éxito se entiende como consolidación progresiva: menos tiempo despierto en cama, sueño más continuo, menor ansiedad anticipatoria y mayor automatismo del dormir.
+
+Qué mantiene el sufrimiento
+Lo mantiene un círculo de retroalimentación: malas noches → miedo a otra mala noche → más tiempo en cama / más intentos de control / más siestas → menos presión de sueño + más condicionamiento de vigilia → peor noche. A nivel cognitivo, lo mantiene el sesgo atencional (monitorización del reloj y del cuerpo), la interpretación amenazante (“mañana estaré fatal”), y reglas rígidas (“necesito X horas sí o sí”) que convierten el dormir en una tarea de rendimiento. A nivel conductual, lo mantiene la inconsistencia y las “excepciones” frecuentes (fines de semana, siestas, acostarse antes por miedo), que impiden que el aprendizaje se consolide.`,
+
+    teoriaClinica: `
+Cómo se conceptualiza un caso
+El caso se conceptualiza a partir de (a) fenotipo principal (dificultad de inicio, mantenimiento, despertar precoz o mixto), (b) patrón del diario (regularidad, eficiencia, variabilidad), (c) conductas perpetuantes (tiempo en cama excesivo, siestas, uso de cama para actividades, uso de alcohol/hipnóticos como “solución”), (d) procesos cognitivos clave (preocupación, esfuerzo por dormir, vigilancia del reloj, creencias disfuncionales), y (e) moduladores contextuales (turnos, niños, dolor, ansiedad/depresión, medicación). Se formula qué está manteniendo el problema hoy, más que qué lo originó históricamente, porque el plan de CBT-I actúa sobre mantenedores.
+
+Qué procesos terapéuticos se priorizan
+Se prioriza el núcleo conductual cuando hay mucha vigilia en cama y baja eficiencia: control de estímulos + restricción/compresión + regularidad de levantarse (y luego ajustes semanales). Se introduce el componente cognitivo cuando la ansiedad de rendimiento, la catastrofización o la mente acelerada están bloqueando la aplicación o elevando el arousal. Higiene del sueño se usa selectivamente para eliminar inhibidores relevantes (no como lista exhaustiva). La relajación se usa como habilidad de desactivación y como parte del wind-down, cuidando que no se convierta en “técnica para dormirse ya”. Si hay hipnóticos, se planifica coordinación y retirada gradual cuando corresponda.
+
+Cómo se evalúa el progreso terapéutico
+Se evalúa con métricas del diario: eficiencia del sueño, tiempo despierto tras inicio del sueño, latencia, variabilidad de horarios, consistencia 7/7, y necesidad de siestas. También con indicadores clínicos: reducción de ansiedad anticipatoria, menos monitorización del reloj, menos tiempo en cama despierto, mayor sensación de control conductual (no control del sueño), y estabilidad diurna (energía/funcionamiento). El progreso se interpreta por tendencia semanal y consolidación, no por noches sueltas, y se prepara prevención de recaídas como parte del cierre.`
+  },
+
+  procesos:[
+    'Evaluación y autorregistro (diario de sueño + formulación)',
+    'Sleep scheduling (núcleo conductual integrador)',
+    'Control de estímulos (cama = dormir)',
+    'Restricción/compresión del tiempo en cama (con ajustes semanales)',
+    'Intervención cognitiva específica del sueño (creencias, esfuerzo, catastrofización, hipervigilancia)',
+    'Relajación y rutina de wind-down (habilidad entrenable)',
+    'Higiene del sueño (soporte: reducir inhibidores)',
+    'Manejo de medicación hipnótica (si aplica) y prevención de recaídas',
+    'Adherencia y resolución de barreras (implementación clínica)'
+  ],
+
+  mjps:['VB','RF','RE','AG'],
+
+  refs:[
+    'Morin, C. M., & Espie, C. A. (2004). Insomnia: A Clinical Guide to Assessment and Treatment. Springer.',
+    'Bootzin, R. R. (1972). Stimulus control treatment for insomnia. (Trabajo seminal; múltiples reediciones/capítulos posteriores).',
+    'Spielman, A. J., Caruso, L. S., & Glovinsky, P. B. (1987). A behavioral perspective on insomnia treatment. (Modelo 3P y mantenimiento conductual).',
+    'Edinger, J. D., & Means, M. K. (2005). Cognitive–behavioral therapy for primary insomnia. Clinical Psychology Review, 25, 539–558.',
+    'Morin, C. M., Bootzin, R. R., Buysse, D. J., Edinger, J. D., Espie, C. A., & Lichstein, K. L. (2006). Psychological and behavioral treatment of insomnia: update of the recent evidence (1998–2004). Sleep, 29(11), 1398–1414.',
+    'Harvey, A. G. (2002). A cognitive model of insomnia. Behaviour Research and Therapy, 40(8), 869–893.',
+    'Perlis, M. L., Jungquist, C., Smith, M. T., & Posner, D. (2005). Cognitive Behavioral Treatment of Insomnia: A Session-by-Session Guide. Springer.'
+  ],
+
+  // =========================================================
+  // PROCEDIMIENTOS
+  // =========================================================
+  procedimientos:[
+
+    {
+      nombre:'Evaluación y diario de sueño (y lectura guiada del diario)',
+      codigo:'p_cbti_diarioSueno',
+      procesos:['VB_sueno'],
+      texto:`El diario de sueño es el instrumento que convierte el insomnio en un fenómeno medible y modificable, y por eso no se usa como “papel administrativo”, sino como palanca clínica. Se registra durante al menos 1–2 semanas la hora de acostarse y levantarse, latencia de inicio, despertares, tiempo total de sueño estimado, eficiencia del sueño, siestas, consumo de cafeína/alcohol/nicotina, medicación y calidad subjetiva, y en sesión se hace una lectura guiada: el paciente aprende a interpretar patrones, a distinguir somnolencia de cansancio, y a detectar qué conductas perpetúan el problema. Esto reduce sesgos típicos de percepción (“no he dormido nada”), mejora la adherencia porque el plan se apoya en datos del propio paciente y permite decidir con precisión la ventana inicial, los ajustes semanales y las barreras reales de implementación. En la tradición CBT-I, esta fase se vincula a la formulación de mantenimiento (modelo 3P) para identificar perpetuantes concretos que sostienen la cronificación (Morin & Espie, 2004, cap. 3 “Assessment and Differential Diagnosis of Insomnia” y cap. 5 “Sleep Scheduling”; Spielman et al., 1987).`
+    },
+
+    {
+      nombre:'Formulación del insomnio (modelo 3P y mapa de perpetuantes)',
+      codigo:'p_cbti_formulacion3P',
+      procesos:['VB_sueno','RF_intero'],
+      texto:`La formulación sirve para que el paciente entienda por qué su insomnio no se mantiene “por falta de fuerza de voluntad”, sino por un conjunto de perpetuantes muy específicos que se han vuelto automáticos: ampliar tiempo en cama, siestas compensatorias, quedarse en la cama despierto, monitorizar el reloj, luchar por dormir, usar alcohol como “sedante”, rumiar en el dormitorio o asociar la cama a amenaza/fracaso. Con el modelo 3P se diferencian factores predisponentes (rasgos, historia, vulnerabilidad), precipitantes (evento de inicio) y, sobre todo, perpetuantes (lo que lo cronifica). Este mapa guía el orden de intervención y reduce el error clínico de aplicar higiene del sueño como si fuera el núcleo, o de discutir cogniciones sin tocar primero los hábitos que alimentan la vigilia condicionada. También ayuda a alinear expectativas: el objetivo es consolidar y estabilizar, no lograr “nocturnas perfectas” (Morin & Espie, 2004, cap. 3 “Assessment…”, cap. 5 “Sleep Scheduling”; Spielman et al., 1987).`
+    },
+
+    {
+      nombre:'Sleep scheduling (núcleo conductual integrador)',
+      codigo:'p_cbti_sleepScheduling',
+      procesos:['VB_sueno'],
+      texto:`El sleep scheduling organiza el cambio como un programa conductual estable que integra control de estímulos y restricción/compresión del sueño en una rutina repetible. A partir del diario, se calcula el sueño medio real y se define una ventana inicial realista; se fija una hora de levantarse como ancla circadiana y se establece una hora más temprana para acostarse (“threshold time”), evitando acostarse por miedo o por cansancio sin somnolencia. El paciente aprende consistencia 7/7, reducción de conductas que erosionan presión de sueño (siestas, acostarse antes “por si acaso”) y normas claras ante la vigilia nocturna para romper el emparejamiento cama-activación. La lógica no es “disciplinar”, sino reentrenar predicción: cama→sueño, no cama→lucha. Este bloque suele ser el motor del cambio porque compacta el sueño, reduce el tiempo despierto en cama y baja la ansiedad anticipatoria al devolverle al cuerpo su automatismo (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”; Bootzin, 1972; Edinger & Means, 2005).`
+    },
+
+    {
+      nombre:'Control de estímulos',
+      codigo:'p_cbti_controlEstimulos',
+      procesos:['VB_sueno'],
+      texto:`El control de estímulos aborda el componente aprendido del insomnio: con el tiempo, la cama y el dormitorio se convierten en señales de alerta (rumiación, frustración, pantallas, planificación, miedo a no dormir), y el cuerpo responde con activación automática. El procedimiento restablece la función discriminativa de la cama como contexto de dormir (y sexualidad) y elimina “entrenamientos” de vigilia en ese lugar: no leer/trabajar/pantallas en la cama, acostarse solo con somnolencia, salir de la cama cuando la vigilia se prolonga y volver cuando reaparece somnolencia, mantener hora fija de levantarse y evitar siestas. Esto reduce la hipervigilancia y debilita la asociación cama-fracaso, que es uno de los perpetuantes más resistentes. La técnica es simple, pero su eficacia depende de consistencia y de anticipar barreras (pareja, hijos, vivienda pequeña, ansiedad) (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”; Bootzin, 1972).`
+    },
+
+    {
+      nombre:'Restricción/compresión del tiempo en cama y expansión gradual',
+      codigo:'p_cbti_restriccionCama',
+      procesos:['VB_sueno'],
+      texto:`La restricción (o compresión) del sueño corrige el perpetuante más común: ampliar tiempo en cama para “compensar”, lo que produce más tiempo despierto en el lugar de dormir y entrena vigilia. La intervención ajusta el tiempo permitido en cama al sueño real medio, incrementando presión homeostática y eficiencia del sueño; al inicio puede aumentar somnolencia diurna, y por eso se planifica seguridad y se monitoriza. A medida que el sueño se consolida, se amplía gradualmente la ventana en pequeños incrementos semanales, guiados por eficiencia y por tolerancia diurna, hasta encontrar el punto estable del paciente. Esta técnica suele ser decisiva en insomnio de mantenimiento y en patrones fragmentados, y se combina con control de estímulos para evitar que la ventana más estrecha se convierta en “tiempo de lucha” (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”; Morin et al., 2006; Edinger & Means, 2005).`
+    },
+
+    {
+      nombre:'Higiene del sueño como soporte (reducir inhibidores)',
+      codigo:'p_cbti_higieneSuenoSoporte',
+      procesos:['VB_sueno'],
+      texto:`La higiene del sueño se usa como “higiene de interferencias”: no cura por sí sola el insomnio crónico, pero elimina fricciones que pueden sabotear el núcleo conductual. Se revisan cafeína (incluidas fuentes ocultas), nicotina, alcohol, horario de ejercicio, alimentación, siestas, luz/pantallas, ruido, temperatura y comodidad, siempre con mentalidad funcional: qué sube activación, qué fragmenta, qué retrasa somnolencia. El encuadre importa: no se plantea como lista moral (“hazlo bien”) sino como ajustes elegidos estratégicamente para que el sleep scheduling y el control de estímulos funcionen con menos resistencia. También se identifican “falsos amigos” (p. ej., alcohol como sedante) y se diseñan sustitutos realistas (Morin & Espie, 2004, cap. 4 “Sleep Hygiene and Relaxation Therapy”).`
+    },
+
+    {
+      nombre:'Relajación y rutina de wind-down (habilidad entrenable)',
+      codigo:'p_cbti_relajacionWindDown',
+      procesos:['VB_sueno','RF_relax','RE_modulacion'],
+      texto:`La relajación en CBT-I se enseña como habilidad que reduce activación fisiológica y facilita la transición al sueño, pero evitando el error clásico de convertirla en una técnica “para dormirse ya”. Se prescribe una rutina de wind-down (60–90 minutos antes de acostarse) con reducción progresiva de demandas cognitivas y emocionales, y se entrenan ejercicios de relajación (muscular, respiratoria, imaginativa) también durante el día para automatizar la respuesta de desactivación. La clave clínica es el objetivo: relajación, no control del sueño; cuando el paciente deja de usar la técnica como examen, disminuye la ansiedad de rendimiento y el sueño aparece como consecuencia. Se adapta según el perfil del paciente (hiperarousal somático vs cognitivo) y se integra con el resto del paquete (Morin & Espie, 2004, cap. 4 “Sleep Hygiene and Relaxation Therapy”).`
+    },
+
+    {
+      nombre:'Intervención cognitiva específica del sueño',
+      codigo:'p_cbti_cognitivaSueno',
+      procesos:['VB_sueno','RF_intero','RE_reapreciacion'],
+      texto:`La intervención cognitiva de CBT-I no es una TCC genérica, sino un trabajo focal sobre creencias y procesos que disparan hiperarousal: expectativas rígidas (“necesito 8 horas”), catastrofización (“si no duermo, mañana será un desastre”), atribuciones erróneas (“todo lo malo es por no dormir”), monitorización del reloj y, sobre todo, esfuerzo por dormir (“tengo que dormirme ya”). Se usan reformulaciones realistas, experimentos conductuales y psicoeducación precisa para reducir vigilancia y presión; el objetivo no es “pensar positivo”, sino desmontar el bucle de amenaza-control que mantiene la vigilia. Este componente también se alinea con modelos cognitivos contemporáneos del insomnio que destacan la hipervigilancia y la interpretación amenazante de la vigilia nocturna (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”; Harvey, 2002).`
+    },
+
+    {
+      nombre:'Cognitive control (poner el día a descansar)',
+      codigo:'p_cbti_cognitiveControl',
+      procesos:['VB_sueno','RF_ground','RE_prevEvitacion'],
+      texto:`El cognitive control saca del dormitorio el “trabajo mental” que suele colonizar la cama: repaso del día, planificación, preocupación y resolución de problemas. Se reserva un bloque breve por la tarde para listar tareas pendientes, definir pasos concretos y cerrar el proceso; al acostarse, el paciente se recuerda que eso ya está atendido y, si aparece una preocupación nueva, la anota para el día siguiente. Esta técnica reduce intrusiones sin recurrir a supresión forzada (que a menudo rebota) y protege el aprendizaje asociativo: la cama deja de ser un despacho y vuelve a ser un contexto de descanso. Es especialmente útil en insomnio con mente acelerada y en perfiles con alto sentido de responsabilidad/rumiación (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).`
+    },
+
+    {
+      nombre:'Paradoxical intention (reducir ansiedad de rendimiento)',
+      codigo:'p_cbti_paradoxicalIntention',
+      procesos:['VB_sueno','RE_aceptacion'],
+      texto:`La intención paradójica se aplica cuando el insomnio está claramente mantenido por el esfuerzo por dormir y la ansiedad de rendimiento: cuanto más intenta el paciente dormirse, más se activa. La técnica cambia la meta: se instruye al paciente para permanecer despierto de forma pasiva y relajada, abandonando el intento directo de conciliar; al reducir presión y vigilancia, baja el arousal y el sueño puede emerger espontáneamente. Requiere un encuadre claro para evitar malentendidos (“no es resignación, es cortar el bucle esfuerzo-activación”) y se integra con el paquete conductual para que no se convierta en una estrategia aislada (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).`
+    },
+
+    {
+      nombre:'Articulatory suppression (interrupción verbal de rumiación)',
+      codigo:'p_cbti_articulatorySuppression',
+      procesos:['VB_sueno','RE_modulacion'],
+      texto:`La articulatory suppression es una técnica específica para rumiación nocturna predominantemente verbal: en lugar de “pelear” con pensamientos, se ocupa de forma neutra el canal verbal de la memoria de trabajo mediante repetición mental de un estímulo simple (por ejemlo repitiendo "the" cada segundo), reduciendo la entrada de material rumiativo. Se utiliza sobre todo en despertares nocturnos y se presenta como estrategia limitada y concreta (no como supresión general del pensamiento, que puede intensificar la vigilancia). Su utilidad clínica es disminuir la activación cognitiva sin aumentar el esfuerzo consciente, y por tanto sin alimentar la ansiedad de rendimiento (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).`
+    },
+
+    {
+      nombre:'Manejo de medicación hipnótica y retirada gradual (si aplica)',
+      codigo:'p_cbti_medicacionRetirada',
+      procesos:['VB_sueno','AG_compromisoConductual'],
+      texto:`En pacientes que usan hipnóticos de forma crónica, la CBT-I puede incluir coordinación y planificación para retirada gradual cuando sea clínicamente apropiado, evitando retiradas bruscas que incrementen rebote de insomnio y ansiedad. El trabajo combina psicoeducación (tolerancia, dependencia, expectativas), planificación escalonada, monitorización con diario y apoyo cognitivo para manejar el miedo a dormir sin medicación, integrándolo con el núcleo conductual para que el paciente disponga de habilidades alternativas. Este componente no es imprescindible en todos los casos, pero cuando existe uso mantenido puede ser decisivo para consolidar el cambio y reducir recaídas (Morin & Espie, 2004, cap. 7 “Pharmacological Treatment and Medication Withdrawal” y cap. 8 “Clinical and Treatment Implementation Issues”).`
+    },
+
+    {
+      nombre:'Implementación clínica: adherencia, barreras y prevención de recaídas',
+      codigo:'p_cbti_implementacion',
+      procesos:['VB_sueno','AG_compromisoConductual','ALI_tareas','ALI_colaboracion'],
+      texto:`La eficacia real de CBT-I depende tanto de “qué” se prescribe como de “cómo” se implementa: cada sesión revisa el diario, el cumplimiento de pautas (algunas visibles en el diario, otras no), las barreras concretas (contexto familiar, vivienda, turnos, comorbilidad, motivación), y se hace resolución de problemas muy práctica. Se ajustan objetivos sin desactivar el núcleo, se refuerza la racionalidad del plan y se prepara al paciente para lapsos: una mala noche no invalida el tratamiento; lo importante es volver al programa sin dramatizar. Este bloque incluye también la decisión clínica de individualizar (cuándo introducir cognición, cuándo insistir en scheduling, cuándo priorizar seguridad por somnolencia diurna) y de mantener un encuadre empático y firme (Morin & Espie, 2004, cap. 8 “Clinical and Treatment Implementation Issues”).`
+    }
+
+  ],
+
+  // =========================================================
+  // MICROINTERVENCIONES
+  // =========================================================
+  micros:[
+
+    {
+      nombre:'Diferenciar somnolencia vs cansancio (señal discriminativa)',
+      codigo:'m_cbti_somnolenciaVsCansancio',
+      procesos:['VB_sueno'],
+      texto:`Micropsicoeducación para entrenar una distinción que cambia la adherencia: cansancio puede ser agotamiento, ánimo bajo o fatiga, pero la somnolencia es la señal fisiológica de propensión a dormir; acostarse “por cansancio” sin somnolencia suele aumentar tiempo despierto en cama y reforzar el bucle de vigilancia. El paciente aprende a identificar señales corporales simples (bostezos, pesadez ocular, cabeceo) y a usarlas como criterio práctico, reduciendo el hábito de ir a la cama como estrategia de afrontamiento emocional. Esta diferenciación suele bajar la frustración porque el paciente deja de evaluar el día en términos de “me toca dormir ya” y empieza a seguir señales del sistema (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”).`
+    },
+
+    {
+      nombre:'Hora fija de levantarse (ancla circadiana 7/7)',
+      codigo:'m_cbti_horaFija',
+      procesos:['VB_sueno'],
+      texto:`Se acuerda una hora estable de levantarse todos los días, incluidos fines de semana, porque el sistema circadiano aprende sobre todo desde el despertar: la regularidad estabiliza la presión de sueño y reduce variabilidad, que es gasolina para el insomnio crónico. Esta microintervención se presenta como medida de alto impacto y baja complejidad, y se acompaña de planificación realista (alarma, exposición a luz, ritual breve) para que el paciente no lo viva como castigo sino como palanca biológica. Es especialmente importante en pacientes que intentan “arreglar” el insomnio acostándose antes, lo que suele empeorarlo (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”).`
+    },
+
+    {
+      nombre:'Threshold time (hora más temprana para acostarse)',
+      codigo:'m_cbti_thresholdTime',
+      procesos:['VB_sueno'],
+      texto:`Se define una hora más temprana para acostarse a partir del sueño medio real y la hora fija de levantarse, creando una ventana de sueño realista que compacta el dormir y reduce el tiempo de vigilia en cama. Se formula como experimento: no se busca “dormir perfecto”, sino consolidar, y por eso el criterio es funcional, no ideal. Esta microintervención da estructura al programa, reduce la negociación nocturna (“¿me acuesto ya?”) y baja el esfuerzo por dormir porque el paciente entiende que su tarea no es forzar, sino respetar el contenedor temporal que favorece el automatismo (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”).`
+    },
+
+    {
+      nombre:'Regla cama = dormir (y sexualidad) + “cama no es oficina”',
+      codigo:'m_cbti_camaDormir',
+      procesos:['VB_sueno'],
+      texto:`Se explicita que la cama debe predecir sueño, no alerta: se retiran actividades que entrenan vigilia (móvil, redes, trabajo, conversaciones tensas, rumiación deliberada) y se protege el dormitorio como contexto de descanso. Se presenta como aprendizaje asociativo: si cada noche el cerebro “practica” estar despierto en la cama, esa respuesta se automatiza. Aplicada con consistencia, esta regla reduce ansiedad anticipatoria y facilita que otras técnicas (restricción, salida de cama) funcionen con menos fricción (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”; Bootzin, 1972).`
+    },
+
+    {
+      nombre:'Salir de la cama ante vigilia prolongada (romper el bucle)',
+      codigo:'m_cbti_salirCama',
+      procesos:['VB_sueno'],
+      texto:`Cuando aparece vigilia prolongada o rumiación intensa, se aplica una respuesta conductual breve: salir de la cama, luz baja, actividad neutra y repetible, y volver solo cuando reaparece somnolencia; el objetivo no es “matar el tiempo”, sino evitar que la cama se asocie a lucha y frustración. Esta microintervención reduce impotencia aprendida (“no puedo hacer nada”) porque devuelve una acción eficaz y coherente con el aprendizaje, y protege el principio central del control de estímulos: cama→dormir, no cama→pelear (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”; Bootzin, 1972).`
+    },
+
+    {
+      nombre:'Evitar siestas (o limitar micro-siestas)',
+      codigo:'m_cbti_siestas',
+      procesos:['VB_sueno'],
+      texto:`Se revisa el patrón de siestas porque suelen funcionar como perpetuante: alivian a corto plazo, pero reducen presión de sueño nocturna y empeoran mantenimiento. La intervención se negocia de forma realista: idealmente evitarlas, y si no es posible, limitarlas en duración y horario para minimizar daño circadiano y homeostático. Se explica como economía del sueño: el sueño diurno se “cobra” parte del sueño nocturno y dificulta la consolidación (Morin & Espie, 2004, cap. 5 “Sleep Scheduling”).`
+    },
+
+    {
+      nombre:'Descatastrofización del “no dormir” (bajar amenaza)',
+      codigo:'m_cbti_descatastro',
+      procesos:['VB_sueno','RE_reapreciacion'],
+      texto:`Se hace una intervención cognitiva breve para desinflar la amenaza: separar cansancio de desastre, reducir la idea de que “todo irá mal”, y romper el círculo vigilancia→miedo→activación. Se construyen predicciones alternativas basadas en evidencia personal (“he funcionado suficientemente con menos horas”) y se corrige la atribución global (“todo problema es por no dormir”). Esto reduce monitorización del reloj y presión de rendimiento, dos de los combustibles más potentes del insomnio crónico (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”; Harvey, 2002).`
+    },
+
+    {
+      nombre:'Cognitive control en 2 pasos (tarde + anotación nocturna)',
+      codigo:'m_cbti_cognitiveControl',
+      procesos:['VB_sueno','RF_ground','RE_prevEvitacion'],
+      texto:`Se pauta un “cierre del día” breve por la tarde para listar pendientes y definir pasos concretos, y se añade una regla nocturna: si surge una preocupación en la cama, se anota y se deja para mañana. La lógica es simple: pensar no es el enemigo, el enemigo es pensar en el lugar y momento que entrena vigilia. Esta microintervención es especialmente útil en insomnio con rumiación y responsabilidad elevada, porque ofrece un canal legítimo para la mente sin regalarle el dormitorio (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).`
+    },
+
+    {
+      nombre:'Paradoxical intention (si hay esfuerzo por dormir)',
+      codigo:'m_cbti_PI',
+      procesos:['VB_sueno','RE_aceptacion'],
+      texto:`Cuando el paciente “se examina” para dormirse, se prescribe un cambio de meta: permanecer despierto pero relajado, sin intentar conciliar. El mensaje clínico es claro: el sueño no se produce por orden; aparece cuando la amenaza baja. Esta microintervención corta el bucle esfuerzo→activación y suele reducir la ansiedad anticipatoria de forma rápida si se explica bien y se integra con el resto del programa (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).`
+    },
+
+    {
+      nombre:'Higiene mínima de alto impacto (cafeína, alcohol, luz)',
+      codigo:'m_cbti_higieneMinima',
+      procesos:['VB_sueno'],
+      texto:`En vez de una lista infinita, se seleccionan 2–3 inhibidores de alto impacto según el caso: cafeína (horario y fuentes ocultas), alcohol (sedante falso que fragmenta) y luz/pantallas por la noche (activación y desplazamiento de somnolencia). Se negocia con realismo para mejorar adherencia: la meta no es “pureza”, sino reducir interferencias que sabotean el núcleo conductual. Este enfoque evita que el paciente convierta la higiene del sueño en un perfeccionismo más (Morin & Espie, 2004, cap. 4 “Sleep Hygiene and Relaxation Therapy”).`
+    },
+
+    {
+      nombre:'Wind-down 60–90 min (ritual de transición)',
+      codigo:'m_cbti_windDown',
+      procesos:['VB_sueno','RE_modulacion'],
+      texto:`Se diseña un tramo previo al sueño con reducción progresiva de exigencia mental y emocional, creando un ritual repetible que le dice al sistema “ya no toca rendimiento”. No es una rutina rígida: es una señal estable de cierre del día que baja activación y mejora consistencia del programa. Se adapta al contexto real (familia, trabajo, turnos) para que no se viva como una imposición imposible (Morin & Espie, 2004, cap. 4 “Sleep Hygiene and Relaxation Therapy”).`
+    }
+
   ]
 },
 
