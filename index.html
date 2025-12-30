@@ -1658,6 +1658,76 @@ html.mjps-fs-on .tmps-mjps-root{
 .subproc-desc {
   word-break: normal;
 }
+/* ===== SUBPROCESO: 2 líneas + … + desplegable ===== */
+
+.subproc-desc-wrap{
+  position: relative;
+  margin-top: 10px;
+}
+
+/* Reutilizamos tu bloque premium existente */
+.subproc-desc-wrap .subproc-desc{
+  margin-top: 0; /* el wrap ya pone margin */
+}
+
+/* Estado colapsado: “2 líneas” aproximadas (con tu line-height 1.75) */
+.subproc-desc-wrap.is-collapsed .subproc-desc{
+  max-height: calc(1.75em * 2);  /* 2 líneas */
+  overflow: hidden;
+}
+
+/* Botón “… / ▾” */
+/* ===== SUBPROCESO: toggle integrado (triángulo) ===== */
+
+/* Para que el botón no pise el texto */
+.subproc-desc-wrap .subproc-desc{
+  padding-right: 34px; /* deja hueco para el triángulo */
+}
+
+/* Botón triángulo integrado, pegado arriba a la derecha */
+.subproc-desc-toggle{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 26px;
+  height: 26px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: 1px solid rgba(217,170,63,0.30);
+  border-radius: 10px;
+
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.9;
+  transition: opacity .15s ease, background .15s ease, border-color .15s ease, transform .15s ease;
+}
+
+.subproc-desc-toggle:hover{
+  opacity: 1;
+  background: rgba(217,170,63,0.08);
+  border-color: rgba(217,170,63,0.55);
+  transform: translateY(-1px);
+}
+
+/* Triángulo */
+.subproc-desc-toggle .icon{
+  color: var(--gold);
+  font-size: 12px;
+  line-height: 1;
+  transform: rotate(0deg);
+  transition: transform .18s ease;
+}
+
+/* Abierto: rotamos el mismo triángulo */
+.subproc-desc-toggle.open .icon{
+  transform: rotate(180deg);
+}
+
 
   </style>
 </head>
@@ -19999,11 +20069,28 @@ const select = selectWrap.append('select')
   opt.exit().remove();
 
 if (subActual && subActual.desc){
-  subBox.append('p')
+
+  const sd = subBox.append('div')
+    .attr('class','subproc-desc-wrap is-collapsed');
+
+  sd.append('div')
     .attr('class','muted subproc-desc')
     .style('white-space','pre-line')
     .text(subActual.desc);
+
+const btn = sd.append('button')
+  .attr('type','button')
+  .attr('class','subproc-desc-toggle')
+  .html('<span class="icon">▾</span>')
+  .on('click', () => {
+    const collapsed = sd.classed('is-collapsed');
+    sd.classed('is-collapsed', !collapsed);
+    btn.classed('open', collapsed); // si estaba colapsado y abrimos -> open
+  });
+
+
 }
+
 
 // ================================
 //  CÓMO LO ENTIENDE CADA MODELO
