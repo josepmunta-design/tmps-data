@@ -1,0 +1,110 @@
+
+{
+  "id": "a2naikan1940",
+  "grupo": "No Occidentales",
+  "label": "Naikan",
+  "year": 1940,
+  "autores": "Yoshimoto Ishin",
+  "universidad": "—",
+  "ciudad": "Nara",
+  "pais": "Japón",
+  "lat": 34.685087,
+  "lon": 135.80485,
+
+  "influencias": [
+    "Budismo Jōdo Shinshū (Tierra Pura)",
+    "Prácticas de introspección moral japonesa",
+    "Ética relacional y gratitud en la cultura japonesa",
+    "Tradición confesional y contemplativa oriental"
+  ],
+
+  "libros": [
+    "Ishin, Y. (1956). Naikan: Jiko Kansatsu no Hōhō.",
+    "Reynolds, D. K. (1980). Naikan Psychotherapy: Meditation for Self-Development.",
+    "Reynolds, D. K. (1989). Flowing Bridges, Quiet Waters."
+  ],
+
+  "descripcion": "Naikan es un método de introspección estructurada desarrollado en Japón que se centra en la revisión sistemática de las relaciones significativas de la vida. La práctica se articula en torno a tres preguntas fundamentales: ¿qué he recibido de esta persona?, ¿qué he dado a esta persona? y ¿qué problemas o dificultades he causado a esta persona? A través de esta revisión, el individuo desplaza el foco del auto-centrismo y la queja hacia una conciencia profunda de interdependencia, responsabilidad y gratitud. El cambio terapéutico no se busca mediante la expresión emocional ni la reinterpretación cognitiva, sino mediante una reorientación ética y experiencial del self en relación con los demás. En contextos clínicos contemporáneos, Naikan se ha utilizado para trabajar culpa, resentimiento, depresión y conflictos relacionales, y ha influido en enfoques occidentales de psicoterapia contemplativa y programas de intervención basados en la gratitud y la responsabilidad personal.",
+
+  "procesos": [
+    "Introspección relacional estructurada",
+    "Revisión ética de la responsabilidad personal",
+    "Cultivo de gratitud e interdependencia",
+    "Reparación del vínculo y reducción del resentimiento"
+  ],
+
+  "mjps": ["RF", "RE", "AP", "RI", "N", "I", "AG", "R"],
+
+  "refs": [
+    "Ishin, Y. (1956). Naikan: Jiko Kansatsu no Hōhō.",
+    "Reynolds, D. K. (1980). Naikan Psychotherapy: Meditation for Self-Development.",
+    "Reynolds, D. K. (1989). Flowing Bridges, Quiet Waters."
+  ],
+
+  "procedimientos": [
+    {
+      "nombre": "Revisión Naikan de relaciones significativas (3 preguntas)",
+      "codigo": "p_naikan_revision_3preguntas",
+      "procesos": ["I_autoimagen", "RE_duelo", "R_reparacionRelacional"],
+      "texto": "Procedimiento central: revisión sistemática de una relación (madre, padre, pareja, etc.) a través de tres preguntas: (1) ¿qué he recibido?, (2) ¿qué he dado?, (3) ¿qué problemas/he causado? El foco no es catarsis ni reinterpretación cognitiva, sino recolocar la atención en hechos concretos, asimetrías relacionales, responsabilidad personal y reconocimiento de lo recibido. Favorece gratitud, humildad, reducción del resentimiento y disposición reparadora.",
+      "wampold": {
+        "alianza": "Requiere un encuadre muy seguro: el terapeuta guía sin moralizar. La alianza se sostiene cuando el paciente percibe que no está siendo juzgado, sino acompañado a mirar con precisión su historia relacional.",
+        "expectativas": "Suele aumentar la esperanza cuando se presenta como un método simple y potente para salir de la queja repetitiva y recuperar una perspectiva más amplia. Si el paciente teme culpa o vergüenza, conviene anticipar que la revisión es gradual y dosificada.",
+        "explicacion": "Explicación plausible: el sufrimiento se intensifica cuando la atención queda fijada en lo que falta o en la ofensa; al revisar de forma concreta lo recibido, lo dado y el daño causado, se reorganiza la percepción moral-relacional y se desbloquean respuestas de gratitud y reparación.",
+        "ritual": "Ritual alto: estructura fija de preguntas, foco en hechos, y revisión por periodos/relaciones. La forma ritualizada sostiene el proceso y evita que se convierta en rumiación o debate interpersonal.",
+        "modeloCambio": "El cambio ocurre por reorientación atencional y ética: de auto-centrismo/agravio a interdependencia/responsabilidad. Esto reduce resentimiento, promueve aceptación de costes relacionales y aumenta conductas de reparación."
+      }
+    },
+    {
+      "nombre": "Naikan intensivo (retiro estructurado)",
+      "codigo": "p_naikan_retiro_intensivo",
+      "procesos": ["RF_mindfulness", "RE_integracionNarrativa", "R_regulacionEmocional"],
+      "texto": "Formato intensivo (históricamente en contextos de retiro): periodos prolongados de introspección guiada, revisión por etapas de vida y por figuras relacionales, con entrevistas breves para mantener el foco en hechos y evitar autojustificación. Se prioriza profundidad, continuidad y reducción de distracciones para facilitar insight relacional sostenido."
+    },
+    {
+      "nombre": "Listado de hechos: recibido / dado / causado",
+      "codigo": "p_naikan_listado_hechos",
+      "procesos": ["N_marcosCognitivos", "I_coherenciaInterna"],
+      "texto": "Registro escrito muy concreto (hechos observables, no interpretaciones) en tres columnas: recibido, dado, causado. Reduce abstracción defensiva, mejora precisión autobiográfica y facilita un cambio de perspectiva estable (menos rumiación, más evidencia personal)."
+    }
+  ],
+
+  "micros": [
+    {
+      "nombre": "Volver a hechos observables",
+      "codigo": "m_naikan_hechos",
+      "procesos": ["N_reformulacion"],
+      "texto": "Cuando aparece juicio global ('siempre fue horrible'), se guía a listar hechos concretos (acciones, cuidados, omisiones) para mantener el trabajo anclado en evidencia autobiográfica."
+    },
+    {
+      "nombre": "Detectar el sesgo de agravio",
+      "codigo": "m_naikan_sesgo_agravio",
+      "procesos": ["N_metacognicion"],
+      "texto": "Se señala, con suavidad, cómo la mente selecciona lo que falta o lo que dolió, y se invita a equilibrar la balanza revisando también lo recibido y lo dado."
+    },
+    {
+      "nombre": "Graduar culpa vs. responsabilidad",
+      "codigo": "m_naikan_responsabilidad",
+      "procesos": ["R_regulacionEmocional", "I_autoestima"],
+      "texto": "Microajuste clínico clave: diferenciar responsabilidad (reconocer impacto y elegir reparación) de culpa tóxica (autocastigo). Mantiene el método terapéutico y evita derrumbes por vergüenza."
+    },
+    {
+      "nombre": "Reencuadre hacia interdependencia",
+      "codigo": "m_naikan_interdependencia",
+      "procesos": ["I_valoresAspiracionales"],
+      "texto": "Pregunta breve: '¿Qué dice esto de los vínculos que te han sostenido?' para desplazar la narrativa del yo aislado al yo-en-relación."
+    },
+    {
+      "nombre": "Pequeño gesto reparador",
+      "codigo": "m_naikan_reparacion",
+      "procesos": ["AG_compromisoConductual", "R_reparacionRelacional"],
+      "texto": "Tras una revisión relevante, se propone un gesto realista (mensaje, agradecimiento, devolución pendiente, conducta de cuidado) alineado con lo visto, sin forzar reconciliaciones imposibles."
+    },
+    {
+      "nombre": "Cierre con gratitud específica",
+      "codigo": "m_naikan_gratitud_especifica",
+      "procesos": ["RF_bienestar", "I_autoimagen"],
+      "texto": "Al final del bloque, formular 1–3 frases de gratitud específicas basadas en hechos ('recibí X cuando…'), para consolidar el cambio de foco."
+    }
+  ]
+}
