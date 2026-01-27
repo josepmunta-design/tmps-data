@@ -1,0 +1,157 @@
+{
+  "id": "h14psdrama",
+  "grupo": "Humanista",
+  "label": "Psicodrama",
+  "year": 1921,
+  "autores": "Jacob Levy Moreno",
+  "universidad": "",
+  "ciudad": "Viena",
+  "pais": "Austria",
+  "lat": 48.208174,
+  "lon": 16.373819,
+
+  "descripcion": "El Psicodrama es un modelo psicoterapéutico experiencial, humanista y relacional que concibe el cambio psicológico como un proceso de acción creativa y reorganización del self en contexto interpersonal. Parte de la idea de que el ser humano se expresa y se constituye a través de roles, y que el sufrimiento emerge cuando estos roles se rigidizan, empobrecen o quedan fijados a escenas no resueltas. La intervención psicodramática utiliza la dramatización, el cuerpo y la interacción grupal para externalizar conflictos, ensayar nuevas respuestas y generar experiencias emocionales correctivas que restauran la espontaneidad y la creatividad del self (Moreno, 1946; Moreno, 1953).",
+
+"influencias": [
+  "Teatro terapéutico",
+  "Trabajo grupal",
+  "Sociometría",
+  "Psicología social",
+  "Fenomenología / Hermenéutica"
+],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se entiende como relacional y enactiva, emergiendo de la acción y el encuentro. El conocimiento terapéutico no se transmite ni se interpreta desde fuera, sino que se co-construye en la experiencia vivida. El ser humano es un agente creativo orientado a la espontaneidad. El cambio ocurre mediante la acción emocional correctiva en un contexto relacional seguro. La relación terapéutica y grupal es un principio activo de cambio (Moreno, 1953).",
+    "teoriaFormal": "El self se concibe como un sistema dinámico de roles en interacción. El sufrimiento se mantiene cuando los roles se rigidizan, se empobrecen o quedan fijados a escenas relacionales no integradas. El cambio implica ampliar el repertorio de roles, recuperar espontaneidad y reorganizar la experiencia emocional a través de nuevas acciones (Moreno, 1946).",
+    "teoriaClinica": "El caso se conceptualiza identificando roles dominantes, roles bloqueados y escenas nucleares no resueltas. Se priorizan procesos de externalización enactiva, ensayo de respuestas alternativas y reparación simbólica. El progreso se evalúa por el aumento de espontaneidad, flexibilidad relacional y capacidad de respuesta creativa (Moreno, 1953)."
+  },
+
+  "procesos": [
+    "Externalización enactiva del conflicto",
+    "Ensayo de nuevas respuestas",
+    "Reparación simbólica",
+    "Ampliación del repertorio de roles"
+  ],
+
+  "mjps": ["RE", "AP", "I", "R", "AG", "ALI"],
+
+  "procedimientos": [
+    {
+      "nombre": "Dramatización psicodramática",
+      "codigo": "p_psdrama_dramatizacion",
+      "procesos": [
+        "AP_procesamiento",
+        "RE_modulacion",
+        "R_sist_interaccion"
+      ],
+      "texto": "Procedimiento central del Psicodrama que consiste en representar en acción escenas significativas de la vida del protagonista. La dramatización permite externalizar conflictos internos, activar emociones implícitas y reorganizar la experiencia mediante el cuerpo y la interacción. El escenario funciona como un espacio transicional donde se pueden ensayar alternativas sin las consecuencias del mundo real (Moreno, 1946)."
+    },
+    {
+      "nombre": "Trabajo de roles",
+      "codigo": "p_psdrama_roles",
+      "procesos": [
+        "I_posicionRelacional",
+        "R_repertorioInterpersonal",
+        "AG_compromisoConductual"
+      ],
+      "texto": "Procedimiento orientado a identificar, explorar y transformar los roles que la persona desempeña en sus relaciones. A través del juego dramático se amplía el repertorio de respuestas posibles y se flexibilizan posiciones relacionales rígidas, promoviendo una identidad más integrada y funcional (Moreno, 1953)."
+    },
+    {
+      "nombre": "Reparación simbólica de escenas",
+      "codigo": "p_psdrama_reparacion",
+      "procesos": [
+        "AP_trabajoCorrectivo",
+        "R_reparacionRelacional",
+        "I_continuidadBiografica"
+      ],
+      "texto": "Procedimiento terapéutico que introduce elementos simbólicos correctivos en escenas pasadas no resueltas. Permite vivir experiencias emocionales nuevas —protección, validación o cierre— que no fueron posibles en su momento, facilitando integración emocional y reducción de la carga afectiva asociada (Moreno, 1946)."
+    }
+  ],
+
+  "micros": [
+    {
+      "nombre": "Caldeamiento",
+      "codigo": "m_psdrama_caldeamiento",
+      "procesos": [
+        "RE_modulacion",
+        "R_coregulacion"
+      ],
+      "texto": "Fase inicial que prepara al individuo y al grupo para el trabajo dramático, aumentando la activación emocional óptima y la sensación de seguridad relacional. Facilita el paso de la conversación a la acción y promueve disponibilidad emocional para el proceso terapéutico (Moreno, 1953)."
+    },
+    {
+      "nombre": "Escena",
+      "codigo": "m_psdrama_escena",
+      "procesos": [
+        "AP_evocacion",
+        "AP_procesamiento",
+        "R_sist_interaccion"
+      ],
+      "texto": "Construcción explícita de una situación significativa que se representa en el escenario. Permite activar memorias emocionales, clarificar dinámicas relacionales y trabajar el conflicto en un formato visible y compartido (Moreno, 1946)."
+    },
+    {
+      "nombre": "Doblaje",
+      "codigo": "m_psdrama_doblaje",
+      "procesos": [
+        "RE_rotulacion",
+        "AP_evocacion",
+        "ALI_sintonia"
+      ],
+      "texto": "Intervención en la que el terapeuta o un auxiliar verbaliza emociones o pensamientos implícitos del protagonista. Facilita la toma de conciencia emocional, la validación interna y el acceso a experiencias afectivas no expresadas (Moreno, 1953)."
+    },
+    {
+      "nombre": "Espejo",
+      "codigo": "m_psdrama_espejo",
+      "procesos": [
+        "N_metacognicion",
+        "I_autoimagen",
+        "R_mentalizacion"
+      ],
+      "texto": "Técnica que permite al protagonista observar su propia conducta representada por otros. Favorece la toma de perspectiva, la reflexión sobre patrones relacionales y la reorganización de la autoimagen (Moreno, 1946)."
+    },
+    {
+      "nombre": "Inversión de roles",
+      "codigo": "m_psdrama_inversion",
+      "procesos": [
+        "R_mentalizacion",
+        "I_posicionRelacional",
+        "R_comunicacionEmocional"
+      ],
+      "texto": "Intervención clave del Psicodrama en la que el protagonista asume el rol de otra persona significativa. Permite comprender la experiencia del otro, flexibilizar posiciones rígidas y promover empatía relacional profunda (Moreno, 1953)."
+    },
+    {
+      "nombre": "Soliloquio",
+      "codigo": "m_psdrama_soliloquio",
+      "procesos": [
+        "RE_rotulacion",
+        "N_metacognicion",
+        "I_coherenciaInterna"
+      ],
+      "texto": "Técnica que invita al protagonista a verbalizar en voz alta su diálogo interno durante la escena. Facilita clarificación emocional, integración cognitiva y coherencia del self (Moreno, 1946)."
+    },
+    {
+      "nombre": "Sociometría",
+      "codigo": "m_psdrama_sociometria",
+      "procesos": [
+        "R_repertorioInterpersonal",
+        "R_sist_roles",
+        "ALI_vinculo"
+      ],
+      "texto": "Herramienta grupal que explora elecciones, rechazos y vínculos dentro del grupo terapéutico. Permite visualizar patrones relacionales, fortalecer la cohesión y aumentar conciencia del lugar que cada uno ocupa en el sistema (Moreno, 1953)."
+    },
+    {
+      "nombre": "Debriefing",
+      "codigo": "m_psdrama_debriefing",
+      "procesos": [
+        "N_narrativaAutobiografica",
+        "RE_modulacion",
+        "I_continuidadBiografica"
+      ],
+      "texto": "Fase final de integración verbal del trabajo dramático. Ayuda a simbolizar la experiencia vivida, regular la activación emocional y conectar lo ocurrido en escena con la historia personal del protagonista (Moreno, 1946)."
+    }
+  ],
+
+  "refs": [
+    "Moreno, J. L. (1946). Psychodrama, Volume I.",
+    "Moreno, J. L. (1953). Who Shall Survive?"
+  ]
+}
