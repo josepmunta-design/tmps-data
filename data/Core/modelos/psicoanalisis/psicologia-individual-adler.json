@@ -1,0 +1,228 @@
+{
+  "id": "psicologia-individual-adler",
+  "grupo": "Psicoanálisis",
+  "label": "Psicología individual",
+  "year": 1912,
+  "autores": "Alfred Adler",
+  "importancia": 2,
+  "file": "modelos/psicoanalisis/psicologia-individual-adler.json",
+
+  "universidad": "",
+  "ciudad": "Viena",
+  "pais": "Austria",
+  "lat": 48.2082,
+  "lon": 16.3738,
+
+  "influencias": [
+    "Psicoanálisis clásico",
+    "Psicología del desarrollo",
+    "Educación social",
+    "Fenomenología / Hermenéutica"
+  ],
+
+  "books": [
+    "Alfred Adler — Understanding Human Nature (1927)",
+    "Alfred Adler — What Life Could Mean to You (1931)",
+    "Alfred Adler — Social Interest: A Challenge to Mankind (1933)"
+  ],
+
+  "summary": "Adler se separa de Freud al proponer una visión teleológica del comportamiento humano. El motor del desarrollo no es la libido, sino la búsqueda de sentido y pertenencia. Introduce los conceptos de sentimiento de inferioridad, afán de superación y estilo de vida. Plantea la importancia del contexto social, el propósito y la cooperación como ejes del bienestar. Su pensamiento anticipa el enfoque humanista y educativo, integrando psicología y ética comunitaria.",
+
+  "descripcion": "La psicología individual, desarrollada por Alfred Adler, concibe al ser humano como un organismo unitario orientado hacia metas de sentido, pertenencia y valor, explicando la conducta de forma teleológica a través de propósitos y ficciones guía más que por causas lineales, y entendiendo los síntomas como intentos creativos de compensar sentimientos de inferioridad y proteger la autoestima dentro del contexto social; el estilo de vida describe la coherencia subjetiva con la que cada persona organiza su experiencia, sus metas y su lógica privada desde la infancia, en interacción con la constelación familiar, el orden de nacimiento y las primeras experiencias de pertenencia, y el cambio terapéutico se produce cuando el paciente toma conciencia de su lógica privada, flexibiliza metas rígidas, reduce tendencias de salvaguarda y desarrolla interés social, cooperación y responsabilidad comunitaria, integrando crecimiento personal con una ética relacional y educativa (Refs: Adler 1927, 1931, 1933).",
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica es fenomenológica y finalista: la experiencia se organiza en función de metas y significados subjetivos. El conocimiento terapéutico es interpretativo y educativo, orientado a comprender el propósito del síntoma y su función de pertenencia. El ser humano es agente activo que busca conexión y valor. El cambio ocurre cuando se modifican metas ficticias y se amplía el interés social. La relación terapéutica es cooperativa, alentadora y reeducativa.",
+    "teoriaFormal": "El self se configura como un estilo de vida unitario que integra percepciones, emociones y conductas orientadas a metas, sostenidas por una lógica privada y ficciones guía. El sufrimiento surge de sentimientos de inferioridad y estilos de vida rígidos, evitativos o egocéntricos, mantenidos por tendencias de salvaguarda y por una búsqueda de superioridad desconectada. El cambio implica reorientación de metas, mayor cooperación y desarrollo de competencias sociales.",
+    "teoriaClinica": "El caso se conceptualiza identificando estilo de vida, metas implícitas, lógica privada, ficciones guía, tendencias de salvaguarda, constelación familiar y nivel de interés social. Se prioriza insight teleológico, aliento, reeducación y tareas prosociales. El progreso se evalúa por mayor cooperación, responsabilidad, valentía social y sentido de pertenencia, junto a reducción de síntomas y evitación."
+  },
+
+  "mjps": ["ALI", "N", "I", "AG", "R", "RE"],
+
+  "alianzaModelo": {
+    "ALI_vinculo": "La alianza se basa en una relación igualitaria, cooperativa y alentadora, donde el terapeuta modela respeto y confianza en la capacidad del paciente.",
+    "ALI_objetivos": "Los objetivos se orientan a clarificar metas y lógica privada, reducir salvaguardas y aumentar interés social, pertenencia y responsabilidad.",
+    "ALI_tareas": "Las tareas combinan exploración narrativa, insight teleológico y experimentos conductuales orientados a reorientación del estilo de vida.",
+    "ALI_colaboracion": "Colaboración alta, con énfasis en corresponsabilidad y práctica entre sesiones.",
+    "ALI_sintonia": "Sintonía centrada en desánimo, vergüenza y pertenencia, con un estilo directo pero no humillante.",
+    "ALI_rupturaReparacion": "Las rupturas se abordan como amenazas al sentimiento de valor o pertenencia, restableciendo aliento y objetivos compartidos.",
+    "ALI_monitorizacion": "Seguimiento de evitación, salvaguardas, cambios en metas y conductas prosociales.",
+    "ALI_contexto": "Atención a familia, educación, comunidad y cultura, porque el bienestar se define por cooperación y pertenencia."
+  },
+
+  "procesos": [
+    "Clarificación del estilo de vida y lógica privada",
+    "Comprensión teleológica del síntoma",
+    "Transformación del sentimiento de inferioridad en valentía social",
+    "Reducción de tendencias de salvaguarda",
+    "Fomento del interés social y cooperación",
+    "Reorientación de metas vitales y pertenencia"
+  ],
+
+  "procedimientos": [
+    {
+      "nombre": "Entrevista y conceptualización adleriana del caso",
+      "codigo": "p_adler_entrevista_conceptualizacion",
+      "procesos": ["ALI_monitorizacion", "N_metacognicion", "I_continuidadBiografica"],
+      "texto": "La conceptualización adleriana integra historia vital, metas actuales, dificultades relacionales y patrones repetidos para inferir el estilo de vida y la lógica privada, formulando una hipótesis teleológica sobre el propósito del síntoma y su relación con pertenencia, autoestima y cooperación."
+    },
+    {
+      "nombre": "Análisis del estilo de vida",
+      "codigo": "p_adler_estilo_vida",
+      "procesos": ["N_metacognicion", "I_continuidadBiografica"],
+      "texto": "El análisis del estilo de vida explora cómo el individuo organiza de forma coherente sus percepciones, metas y estrategias relacionales desde la infancia, identificando patrones de compensación, expectativas sobre los demás y la dirección vital implícita que guía sus decisiones."
+    },
+    {
+      "nombre": "Exploración de constelación familiar y atmósfera temprana",
+      "codigo": "p_adler_constelacion_familiar",
+      "procesos": ["I_continuidadBiografica", "R_sist_guiones", "N_narrativaAutobiografica"],
+      "texto": "La exploración de la constelación familiar reconstruye roles, alianzas, tensiones, estilos parentales y clima emocional temprano para comprender cómo el paciente aprendió pertenencia, cooperación y valor, y cómo esas primeras posiciones influyen en su estilo de vida actual."
+    },
+    {
+      "nombre": "Orden de nacimiento y posiciones relacionales",
+      "codigo": "p_adler_orden_nacimiento",
+      "procesos": ["I_posicionRelacional", "R_sist_roles", "N_reformulacion"],
+      "texto": "Este procedimiento analiza cómo la posición fraterna y los cambios en el sistema familiar moldearon estrategias de competencia, cooperación, responsabilidad y búsqueda de atención, evitando determinismos y usándolo como lente para comprender el estilo de vida."
+    },
+    {
+      "nombre": "Exploración de recuerdos tempranos",
+      "codigo": "p_adler_recuerdos_tempranos",
+      "procesos": ["I_continuidadBiografica", "N_narrativaAutobiografica", "N_metacognicion"],
+      "texto": "La exploración de recuerdos tempranos utiliza escenas infantiles significativas como ventanas fenomenológicas que revelan prioridades, sensibilidades, miedos y metas implícitas, mostrando la lógica privada con la que la persona interpreta pertenencia, valor y amenaza."
+    },
+    {
+      "nombre": "Detección de metas, ficciones guía y lógica privada",
+      "codigo": "p_adler_ficciones_logica_privada",
+      "procesos": ["N_metacognicion", "N_reformulacion"],
+      "texto": "Este procedimiento identifica creencias nucleares y metas ficticias que organizan la conducta, distinguiendo entre sentido común compartido e interpretaciones privadas rígidas que sostienen evitación, superioridad defensiva o desánimo."
+    },
+    {
+      "nombre": "Interpretación teleológica del síntoma",
+      "codigo": "p_adler_teleologia_sintoma",
+      "procesos": ["N_reformulacion", "N_metacognicion"],
+      "texto": "La interpretación teleológica reformula el síntoma por su propósito adaptativo en el estilo de vida, mostrando cómo puede proteger de vergüenza, evitar fracaso, mantener control o asegurar un lugar en el sistema, abriendo alternativas más cooperativas y valientes."
+    },
+    {
+      "nombre": "Identificación de tendencias de salvaguarda",
+      "codigo": "p_adler_salvaguardas",
+      "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+      "texto": "La intervención sobre salvaguardas detecta estrategias que protegen la autoestima evitando el riesgo (excusas, retraimiento, agresión, victimismo, perfeccionismo o somatización) y las convierte en objetivos explícitos de cambio hacia afrontamiento responsable."
+    },
+    {
+      "nombre": "Trabajo con el desánimo y la vergüenza de inferioridad",
+      "codigo": "p_adler_desanimo_inferioridad",
+      "procesos": ["RE_aceptacion", "N_reformulacion", "AG_motivacionInterna"],
+      "texto": "Este procedimiento aborda el desánimo como núcleo clínico, validando el dolor de inferioridad y reformulándolo como señal de necesidad de pertenencia, promoviendo valentía social y pasos graduados de participación en lugar de retirada o control defensivo."
+    },
+    {
+      "nombre": "Aliento terapéutico como intervención central",
+      "codigo": "p_adler_aliento",
+      "procesos": ["ALI_vinculo", "AG_motivacionInterna"],
+      "texto": "El aliento terapéutico refuerza la percepción de capacidad, dignidad y contribución posible del paciente, diferenciándolo de elogio vacío, para movilizar iniciativa, tolerancia a la imperfección y compromiso con tareas prosociales."
+    },
+    {
+      "nombre": "Reorientación y reeducación del estilo de vida",
+      "codigo": "p_adler_reorientacion",
+      "procesos": ["AG_compromisoConductual", "N_reformulacion", "R_repertorioInterpersonal"],
+      "texto": "La reorientación traduce el insight en acciones nuevas, entrenando alternativas conductuales y relacionales coherentes con cooperación, límites y responsabilidad, de modo que el estilo de vida se flexibilice mediante práctica sostenida."
+    },
+    {
+      "nombre": "Entrenamiento en tareas de vida",
+      "codigo": "p_adler_tareas_vida",
+      "procesos": ["R_sist_contexto", "AG_compromisoConductual", "R_repertorioInterpersonal"],
+      "texto": "Este procedimiento organiza el cambio en torno a las tareas de vida adlerianas (vínculos, trabajo/contribución y comunidad), definiendo conductas observables de cooperación, participación y responsabilidad para consolidar pertenencia y sentido."
+    },
+    {
+      "nombre": "Trabajo educativo con familia y contexto",
+      "codigo": "p_adler_educacion_social",
+      "procesos": ["R_sist_contexto", "AG_autoriaResponsabilidad"],
+      "texto": "En su vertiente educativa, la intervención incorpora psicoeducación y reencuadres dirigidos a padres, escuela o entorno cuando procede, orientados a fomentar cooperación, límites consistentes y prácticas que refuercen interés social y responsabilidad."
+    },
+    {
+      "nombre": "Uso clínico de sueños como expresión de estilo de vida",
+      "codigo": "p_adler_suenos",
+      "procesos": ["N_narrativaAutobiografica", "N_reformulacion"],
+      "texto": "El trabajo con sueños se utiliza como material proyectivo de la lógica privada y del estilo de vida, explorando imágenes y emociones para inferir metas, temores y estrategias de salvaguarda, conectándolo con decisiones actuales sin convertirlo en explicación causal rígida."
+    }
+  ],
+
+  "micros": [
+    {
+      "nombre": "Señalamiento del desánimo",
+      "codigo": "m_adler_senalamiento_desanimo",
+      "procesos": ["N_metacognicion", "RE_aceptacion"],
+      "texto": "Esta microintervención nombra el desánimo como estado organizador del problema, ayudando al paciente a diferenciarlo de incapacidad real y a verlo como señal de necesidad de pertenencia y valor, lo que reduce vergüenza y abre agencia."
+    },
+    {
+      "nombre": "Aliento específico orientado a contribución",
+      "codigo": "m_adler_aliento_especifico",
+      "procesos": ["ALI_vinculo", "AG_motivacionInterna"],
+      "texto": "Consiste en reconocer capacidades y esfuerzos concretos vinculándolos a la posibilidad de contribuir y cooperar, fortaleciendo autoeficacia y valentía social sin caer en elogio inflado o dependencia del terapeuta."
+    },
+    {
+      "nombre": "Clarificación de meta implícita",
+      "codigo": "m_adler_clarificar_meta",
+      "procesos": ["N_metacognicion"],
+      "texto": "El terapeuta pregunta y resume para hacer explícita la meta implícita que guía una conducta problemática, mostrando cómo esa meta busca proteger la autoestima o asegurar pertenencia y permitiendo elegir metas más útiles."
+    },
+    {
+      "nombre": "Reencuadre teleológico breve",
+      "codigo": "m_adler_reencuadre_teleologico",
+      "procesos": ["N_reformulacion"],
+      "texto": "Microreformulación que desplaza la explicación desde culpa o defectos hacia propósito y función, haciendo el problema comprensible y modificable dentro del estilo de vida y sus estrategias de protección."
+    },
+    {
+      "nombre": "Identificación de lógica privada en tiempo real",
+      "codigo": "m_adler_logica_privada",
+      "procesos": ["N_metacognicion", "N_reformulacion"],
+      "texto": "Se detecta en sesión la interpretación privada rígida que el paciente está usando para anticipar rechazo o fracaso, y se contrasta con alternativas más realistas y cooperativas, sin confrontación humillante."
+    },
+    {
+      "nombre": "Catching oneself",
+      "codigo": "m_adler_catching_oneself",
+      "procesos": ["N_metacognicion", "AG_compromisoConductual"],
+      "texto": "La persona aprende a ‘pillarse’ en el inicio de su patrón de salvaguarda (evitación, ataque, excusa, perfeccionismo), nombrarlo y elegir una respuesta alternativa pequeña y practicable."
+    },
+    {
+      "nombre": "Acting as if",
+      "codigo": "m_adler_acting_as_if",
+      "procesos": ["AG_compromisoConductual"],
+      "texto": "Se invita a actuar ‘como si’ ya se poseyera la cualidad deseada (valentía, cooperación, calma) en conductas pequeñas y verificables, para debilitar la lógica privada de incapacidad mediante experiencia correctiva."
+    },
+    {
+      "nombre": "Spitting in the soup",
+      "codigo": "m_adler_spitting_in_the_soup",
+      "procesos": ["N_reformulacion", "AG_autoriaResponsabilidad"],
+      "texto": "Consiste en señalar con tacto el ‘beneficio oculto’ o la función de una conducta problemática de modo que pierda su atractivo automático, aumentando elección consciente sin acusación moral."
+    },
+    {
+      "nombre": "The question",
+      "codigo": "m_adler_the_question",
+      "procesos": ["N_metacognicion", "AG_tomaDecisiones"],
+      "texto": "Pregunta focal que revela prioridad vital al explorar qué haría el paciente si el síntoma desapareciera, conectando evitación actual con meta de vida y abriendo planificación concreta."
+    },
+    {
+      "nombre": "Push-button technique",
+      "codigo": "m_adler_push_button",
+      "procesos": ["RE_modulacion", "N_metacognicion"],
+      "texto": "Ejercicio breve para mostrar agencia emocional al evocar deliberadamente diferentes estados afectivos mediante imágenes y recuerdos, aumentando control flexible frente a reactividad y desánimo."
+    },
+    {
+      "nombre": "Tarea de interés social",
+      "codigo": "m_adler_tarea_interes_social",
+      "procesos": ["R_sist_contexto", "AG_compromisoConductual"],
+      "texto": "Se acuerda una acción concreta de cooperación o contribución en el entorno (familia, trabajo, comunidad) para consolidar pertenencia real y debilitar el estilo de vida centrado en superioridad defensiva o retirada."
+    },
+    {
+      "nombre": "Desafío amable de salvaguarda",
+      "codigo": "m_adler_desafio_salvaguarda",
+      "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+      "texto": "Intervención breve que hace visible una excusa, retirada o ataque como forma de protección de autoestima, invitando a un paso mínimo de afrontamiento responsable que preserve dignidad."
+    }
+  ],
+
+  "refs": [
+    "Adler, A. (1927). Understanding Human Nature.",
+    "Adler, A. (1931). What Life Could Mean to You.",
+    "Adler, A. (1933). Social Interest: A Challenge to Mankind."
+  ]
+}
