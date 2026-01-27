@@ -1,0 +1,165 @@
+{
+  "id": "terapia-familiar-estructural-1965",
+  "grupo": "Sistémico",
+  "label": "Terapia familiar estructural",
+  "year": 1965,
+  "importance": 3,
+  "isFundacional": false,
+
+  "autores": "Salvador Minuchin",
+  "universidad": "",
+  "ciudad": "Filadelfia, Pennsylvania",
+  "pais": "EE. UU.",
+  "lat": 39.952583,
+  "lon": -75.165222,
+
+  "derivesFrom": [
+    "Escuela de Palo Alto / MRI",
+    "Teoría general de sistemas",
+    "Cibernética",
+    "Antropología",
+    "Psicoanálisis",
+    "Gregory Bateson (cibernética y comunicación)"
+  ],
+
+  "influencias": [
+    "Escuela de Palo Alto / MRI",
+    "Teoría general de sistemas",
+    "Cibernética",
+    "Antropología",
+    "Psicoanálisis",
+    "Gregory Bateson (cibernética y comunicación)"
+  ],
+
+  "books": [
+    "Salvador Minuchin — Families and Family Therapy / Familias y terapia familiar (1974)",
+    "Minuchin & H. Charles Fishman — Family Therapy Techniques (1981)"
+  ],
+
+  "summary": "Minuchin concibe la familia como una estructura organizada por subsistemas (conyugal, parental, fraternal) delimitados por fronteras que regulan la interacción y la autoridad. Los problemas surgen cuando las jerarquías se vuelven difusas o rígidas. El terapeuta actúa como un “arquitecto de la interacción”, generando enactments que permiten reestructurar los límites y roles familiares. Su enfoque integra la observación de patrones comunicativos, las alianzas y coaliciones, y una intervención activa que promueve la flexibilidad estructural y el equilibrio entre cercanía y autonomía.",
+
+  "descripcion": "La Terapia Familiar Estructural entiende el síntoma individual como expresión de una organización relacional disfuncional. La familia se conceptualiza como un sistema jerárquico compuesto por subsistemas con límites que deben ser claros pero permeables. Cuando los límites son difusos (enmeshment) o excesivamente rígidos (disengagement), y cuando las jerarquías parentales se alteran, emergen síntomas que estabilizan la estructura. El terapeuta interviene de forma activa y directa, entrando en el sistema (‘joining’), provocando interacciones en vivo (‘enactments’) y reordenando fronteras, alianzas y jerarquías. El cambio se consolida cuando la familia experimenta nuevas formas de organización en sesión y las generaliza a su vida cotidiana.",
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se concibe como relacional y observable en patrones de interacción presentes. El conocimiento terapéutico es pragmático y contextual: se infiere a partir de la organización del sistema y se valida por el cambio estructural observado. El ser humano es un agente relacional cuyo funcionamiento depende de la posición que ocupa en la jerarquía y en los subsistemas. El cambio se produce mediante la reorganización de límites, roles y jerarquías, más que por insight narrativo. La relación terapéutica es una herramienta activa de intervención: el terapeuta se une al sistema para poder modificarlo.",
+    "teoriaFormal": "El self se entiende como funcionalmente determinado por la estructura familiar. El cambio ocurre cuando se restablecen límites adecuados, jerarquías claras y patrones de interacción más flexibles. El sufrimiento se mantiene por coaliciones encubiertas, triangulaciones, límites difusos o rígidos y por una autoridad parental debilitada o invertida.",
+    "teoriaClinica": "El caso se conceptualiza mapeando subsistemas, fronteras, jerarquías y alianzas. Se priorizan intervenciones experienciales en el aquí y ahora que reorganicen la estructura. El progreso se evalúa por cambios observables en la interacción, aumento de claridad jerárquica y reducción del uso del síntoma como regulador sistémico."
+  },
+
+  "alianzaModelo": {
+    "ALI_vinculo": "La alianza se construye mediante ‘joining’: el terapeuta se acopla al estilo, lenguaje y ritmo de la familia para ganar legitimidad interna. El vínculo no es neutral; es estratégico y sirve para intervenir sin ser expulsado del sistema.",
+    "ALI_objetivos": "Los objetivos se formulan en términos estructurales y funcionales (mejorar límites, fortalecer subsistema parental, reducir coaliciones), traducidos a cambios concretos en la interacción cotidiana.",
+    "ALI_tareas": "Las tareas son enactments y reordenamientos en vivo. La alianza se sostiene cuando la familia acepta participar activamente en escenas relacionales dentro de sesión.",
+    "ALI_colaboracion": "La colaboración no implica simetría total: el terapeuta asume liderazgo claro para reorganizar jerarquías, modelando autoridad funcional.",
+    "ALI_sintonia": "La sintonía se expresa en la capacidad del terapeuta para adaptarse al estilo familiar (cálido, confrontativo, caótico, rígido) sin perder dirección.",
+    "ALI_rupturaReparacion": "Las rupturas aparecen cuando la intervención amenaza alianzas existentes. Se reparan revalidando a los miembros y reajustando el nivel de confrontación.",
+    "ALI_monitorizacion": "La alianza se monitoriza observando resistencia, coaliciones contra el terapeuta y evitación de enactments.",
+    "ALI_contexto": "Se considera el contexto sociocultural de la familia al definir jerarquías y límites funcionales."
+  },
+
+  "procesos": [
+    "Mapeo de la estructura familiar",
+    "Clarificación de subsistemas y jerarquías",
+    "Reestructuración de límites",
+    "Interrupción de coaliciones disfuncionales",
+    "Fortalecimiento del subsistema parental",
+    "Generalización de nuevas interacciones"
+  ],
+
+  "mjps": [
+    "R",
+    "AG",
+    "RE",
+    "N",
+    "ALI"
+  ],
+
+  "procedimientos": [
+    {
+      "nombre": "Joining (unión terapéutica al sistema)",
+      "codigo": "p_struct_joining",
+      "procesos": ["ALI_vinculo", "R_sist_interaccion"],
+      "texto": "El terapeuta se integra activamente en el sistema familiar adoptando su estilo comunicativo para ganar influencia. El joining no es simpatía pasiva, sino una estrategia para intervenir desde dentro sin activar defensas sistémicas."
+    },
+    {
+      "nombre": "Enactment (escenificación en vivo)",
+      "codigo": "p_struct_enactment",
+      "procesos": ["R_sist_interaccion", "AG_compromisoConductual"],
+      "texto": "Se invita a la familia a interactuar en sesión como lo haría en casa, permitiendo observar y modificar la estructura en tiempo real. El cambio ocurre al experimentar una nueva organización relacional."
+    },
+    {
+      "nombre": "Reestructuración de límites",
+      "codigo": "p_struct_limites",
+      "procesos": ["R_sist_limites", "RE_modulacion"],
+      "texto": "Intervención dirigida a hacer los límites más claros o más permeables según el caso. Reduce enmeshment o disengagement y restablece autonomía y cercanía funcional."
+    },
+    {
+      "nombre": "Fortalecimiento del subsistema parental",
+      "codigo": "p_struct_parental",
+      "procesos": ["R_sist_jerarquia", "AG_autoriaResponsabilidad"],
+      "texto": "Se refuerza la autoridad parental funcional, evitando coaliciones con hijos. El terapeuta modela liderazgo claro y coherente."
+    },
+    {
+      "nombre": "Desarticulación de coaliciones",
+      "codigo": "p_struct_coaliciones",
+      "procesos": ["R_sist_triangulos", "N_reformulacion"],
+      "texto": "Identificación e interrupción de alianzas encubiertas que sostienen el síntoma. Se redistribuye la lealtad hacia subsistemas funcionales."
+    },
+    {
+      "nombre": "Intensificación",
+      "codigo": "p_struct_intensificacion",
+      "procesos": ["RE_modulacion", "AG_tomaDecisiones"],
+      "texto": "Aumento deliberado de la intensidad emocional o conductual para hacer visibles patrones rígidos y promover reorganización."
+    },
+    {
+      "nombre": "Reencuadre estructural",
+      "codigo": "p_struct_reencuadre",
+      "procesos": ["N_reformulacion"],
+      "texto": "El síntoma se redefine como indicador de una estructura disfuncional, reduciendo culpa individual y facilitando cambio sistémico."
+    }
+  ],
+
+  "micros": [
+    {
+      "nombre": "Señalar frontera difusa o rígida",
+      "codigo": "m_struct_frontera",
+      "procesos": ["R_sist_limites"],
+      "texto": "Nombrar explícitamente un límite problemático para hacerlo modificable en sesión."
+    },
+    {
+      "nombre": "Redistribuir turnos de palabra",
+      "codigo": "m_struct_turnos",
+      "procesos": ["R_sist_interaccion"],
+      "texto": "Intervenir en la conversación para reorganizar jerarquías y visibilizar subsistemas."
+    },
+    {
+      "nombre": "Bloqueo de coalición en vivo",
+      "codigo": "m_struct_bloqueo",
+      "procesos": ["R_sist_triangulos"],
+      "texto": "Interrumpir una alianza disfuncional en sesión para desactivar el patrón."
+    },
+    {
+      "nombre": "Apoyo explícito al rol parental",
+      "codigo": "m_struct_apoyo_parental",
+      "procesos": ["AG_autoriaResponsabilidad"],
+      "texto": "Reforzar verbalmente la autoridad parental funcional para consolidar jerarquía."
+    },
+    {
+      "nombre": "Repetición dirigida del enactment",
+      "codigo": "m_struct_repeticion",
+      "procesos": ["AG_compromisoConductual"],
+      "texto": "Hacer repetir una interacción con modificaciones para consolidar la nueva estructura."
+    },
+    {
+      "nombre": "Señalar cambio estructural emergente",
+      "codigo": "m_struct_cambio",
+      "procesos": ["N_metacognicion"],
+      "texto": "Nombrar microcambios en la organización familiar para fijarlos como aprendizaje."
+    }
+  ],
+
+  "refs": [
+    "Minuchin, S. (1974). Families and Family Therapy.",
+    "Minuchin, S., & Fishman, H. C. (1981). Family Therapy Techniques."
+  ]
+}
