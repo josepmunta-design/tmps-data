@@ -1,0 +1,118 @@
+{
+  "id": "eoria-bifactorial-ansiedad-mowrer",
+  "grupo": "Conductismo",
+  "label": "Teoría bifactorial de la ansiedad",
+  "year": 1947,
+  "autores": "O. Hobart Mowrer",
+  "tipo": "Estudio",
+  "universidad": "University of Illinois",
+  "ciudad": "Urbana–Champaign, Illinois",
+  "pais": "EE. UU.",
+  "lat": 40.1020,
+  "lon": -88.2272,
+  "summary": "La teoría bifactorial de la ansiedad de Mowrer explica el origen y mantenimiento del miedo patológico mediante la interacción de dos procesos de aprendizaje. El miedo se adquiere inicialmente por condicionamiento clásico, cuando un estímulo neutro se asocia a un estímulo aversivo y pasa a provocar una respuesta de ansiedad condicionada. Posteriormente, ese miedo se mantiene por condicionamiento operante: la evitación del estímulo temido reduce la ansiedad a corto plazo, funcionando como refuerzo negativo. Este alivio inmediato impide la extinción del miedo y consolida el problema a largo plazo. El modelo proporciona la base teórica fundamental de la exposición con prevención de respuesta y explica por qué las conductas de seguridad y evitación, aunque comprensibles, cronifican los trastornos de ansiedad.",
+  "influencias": [
+    "Condicionamiento clásico",
+    "Condicionamiento operante",
+    "Psicología del miedo",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+  "neimeyer": {
+    "epistemologico": "La ansiedad se concibe como un fenómeno psicológico objetivable y medible, explicable mediante leyes generales del aprendizaje. La realidad psicológica relevante es la relación funcional entre estímulos, respuestas y consecuencias observables. El conocimiento terapéutico es empírico y verificable, y el terapeuta adopta un rol técnico y directivo orientado a modificar contingencias ambientales. El cambio psicológico se entiende como resultado de nuevos aprendizajes inducidos de forma sistemática.",
+    "teoriaFormal": "El miedo es una respuesta condicionada adquirida por asociación entre estímulos, mientras que su persistencia se explica por la evitación reforzada negativamente. El sufrimiento se mantiene porque la evitación proporciona alivio inmediato, bloqueando la extinción del miedo condicionado. El cambio ocurre cuando se interrumpe este ciclo y se permite que el sistema de aprendizaje incorpore información correctiva mediante exposición.",
+    "teoriaClinica": "El caso se conceptualiza identificando estímulos condicionados, respuestas fisiológicas y emocionales de ansiedad, y patrones de evitación o escape que mantienen el problema. La intervención prioriza la exposición repetida y prolongada sin evitación, así como la eliminación de conductas de seguridad. El progreso se evalúa mediante la reducción sostenida de evitación, la habituación fisiológica y la recuperación funcional."
+  },
+  "procesos": [
+    "Extinción del miedo condicionado",
+    "Reducción de evitación",
+    "Aprendizaje inhibitorio",
+    "Recuperación conductual"
+  ],
+  "mjps": [
+    "RF",
+    "RE",
+    "AG"
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Exposición con prevención de respuesta",
+      "codigo": "p_mowrer_exposicion_pr",
+      "procesos": [
+        "RF_expo",
+        "AG_compromisoConductual"
+      ],
+      "texto": "Procedimiento central derivado directamente de la teoría bifactorial. Consiste en exponer al paciente de forma repetida y prolongada al estímulo temido sin permitir conductas de evitación, escape ni neutralización. Al impedir el refuerzo negativo, la ansiedad aumenta inicialmente pero disminuye progresivamente por habituación y extinción, permitiendo que el sistema de aprendizaje incorpore información correctiva. Es la base de los tratamientos conductuales para fobias, TOC y trastornos de ansiedad."
+    },
+    {
+      "nombre": "Jerarquización de estímulos",
+      "codigo": "p_mowrer_jerarquia",
+      "procesos": [
+        "AG_tomaDecisiones"
+      ],
+      "texto": "Procedimiento de planificación que consiste en ordenar los estímulos o situaciones temidas en función de su intensidad ansiógena. Permite estructurar la exposición de forma gradual, facilitando el compromiso del paciente y reduciendo la probabilidad de abandono. La jerarquía traduce el modelo teórico en un plan operativo claro y progresivo."
+    },
+    {
+      "nombre": "Eliminación de conductas de seguridad",
+      "codigo": "p_mowrer_seguridad",
+      "procesos": [
+        "AG_autoriaResponsabilidad"
+      ],
+      "texto": "Procedimiento dirigido a identificar y retirar conductas sutiles de control, neutralización o evitación encubierta que reducen la ansiedad a corto plazo. Estas conductas mantienen el miedo al impedir la extinción, por lo que su eliminación es esencial para que la exposición sea efectiva y el aprendizaje correctivo se consolide."
+    },
+    {
+      "nombre": "Exposición prolongada",
+      "codigo": "p_mowrer_exposicion_prolongada",
+      "procesos": [
+        "RF_expo"
+      ],
+      "texto": "Variante de la exposición que enfatiza la permanencia suficiente en la situación temida hasta que la ansiedad disminuye de forma natural. Evita exposiciones breves que podrían reforzar la idea de escape y garantiza la activación completa de los mecanismos de habituación y extinción."
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Permanecer en la ansiedad",
+      "codigo": "m_mowrer_permanecer",
+      "procesos": [
+        "RF_expo"
+      ],
+      "texto": "Indicaciones explícitas para que el paciente permanezca en la situación ansiógena sin distraerse ni escapar, permitiendo observar cómo la ansiedad alcanza un pico y luego desciende por sí sola. Esta experiencia directa debilita la asociación entre ansiedad y peligro."
+    },
+    {
+      "nombre": "Bloqueo de evitación",
+      "codigo": "m_mowrer_bloqueo",
+      "procesos": [
+        "AG_compromisoConductual"
+      ],
+      "texto": "Intervención puntual destinada a interrumpir respuestas automáticas de huida o neutralización que aparecen durante la exposición. Su objetivo es evitar que se reactive el refuerzo negativo y asegurar la continuidad del aprendizaje correctivo."
+    },
+    {
+      "nombre": "Identificación de estímulos condicionados",
+      "codigo": "m_mowrer_estimulos",
+      "procesos": [
+        "N_marcosCognitivos"
+      ],
+      "texto": "Microintervención centrada en discriminar con precisión qué estímulos, contextos o señales internas han adquirido valor ansiógeno por condicionamiento clásico, permitiendo afinar el diseño de la exposición."
+    },
+    {
+      "nombre": "Medición subjetiva de ansiedad",
+      "codigo": "m_mowrer_suds",
+      "procesos": [
+        "RF_intero"
+      ],
+      "texto": "Uso sistemático de escalas subjetivas para registrar el nivel de ansiedad durante la exposición, facilitando la observación de la habituación y reforzando la comprensión empírica del proceso por parte del paciente."
+    },
+    {
+      "nombre": "Repetición intensiva",
+      "codigo": "m_mowrer_repeticion",
+      "procesos": [
+        "AG_motivacionInterna"
+      ],
+      "texto": "Fomento de la repetición frecuente y sostenida de las exposiciones para acelerar la extinción del miedo y consolidar el nuevo aprendizaje, evitando recaídas por práctica insuficiente."
+    }
+  ],
+  "refs": [
+    "Mowrer, O. H. (1947). On the dual nature of learning — A re-interpretation of conditioning and problem-solving.",
+    "Mowrer, O. H. (1960). Learning Theory and Behavior. Wiley.",
+    "Barlow, D. H. (2002). Anxiety and Its Disorders. Guilford Press."
+  ]
+}
