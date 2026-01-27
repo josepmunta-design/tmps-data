@@ -1,0 +1,108 @@
+{
+  "id": "terapia-juego-centrada-nino-axline",
+  "grupo": "Humanista",
+  "label": "Terapia de Juego Centrada en el Niño",
+  "year": 1947,
+  "autores": "Virginia M. Axline",
+  "universidad": "Ohio State University",
+  "ciudad": "Columbus, Ohio",
+  "pais": "EE. UU.",
+  "lat": 39.998003,
+  "lon": -83.015143,
+
+  "descripcion": "La Terapia de Juego Centrada en el Niño, desarrollada por Virginia Axline, adapta los principios de la terapia centrada en la persona al trabajo clínico con niños. Se basa en un enfoque no directivo que confía en la tendencia innata del niño hacia el crecimiento y la autorregulación cuando se le ofrece un clima de aceptación, empatía y límites claros. El juego se concibe como el lenguaje natural del niño, a través del cual expresa simbólicamente su mundo interno, elabora conflictos y ensaya soluciones. El terapeuta acompaña con presencia respetuosa, facilitando seguridad emocional, autoestima y desarrollo espontáneo sin imponer interpretaciones ni directrices externas (Axline, 1947; Axline, 1964).",
+
+  "influencias": [
+    "Terapia centrada en la persona",
+    "Psicología del desarrollo",
+    "Educación humanista",
+    "Epistemología genética"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica del niño se entiende como subjetiva y simbólicamente expresada a través del juego. El conocimiento terapéutico no es impuesto por el adulto, sino que emerge del proceso de juego vivido. El niño es un organismo activo con capacidad de autorregulación cuando se dan las condiciones adecuadas. El cambio ocurre de forma autoorganizada dentro de un vínculo seguro. La relación terapéutica constituye el principal agente de cambio (Axline, 1947).",
+    "teoriaFormal": "El self infantil se concibe como un proceso en desarrollo que se organiza mediante la experiencia emocional y simbólica. El sufrimiento se mantiene cuando el niño carece de espacios seguros para expresar, simbolizar e integrar su experiencia. El cambio implica facilitar autorregulación emocional, simbolización de conflictos y fortalecimiento de la autoestima (Axline, 1964).",
+    "teoriaClinica": "El caso se conceptualiza atendiendo al nivel de seguridad emocional, capacidad simbólica y autorregulación del niño. Se priorizan procesos de juego libre, reflejo empático y establecimiento de límites consistentes. El progreso se evalúa por una mayor regulación emocional, espontaneidad en el juego y aumento de la seguridad y confianza en sí mismo (Axline, 1947)."
+  },
+
+  "procesos": [
+    "Autorregulación emocional",
+    "Simbolización a través del juego",
+    "Seguridad emocional y autoestima"
+  ],
+
+  "mjps": ["RE", "AP", "I", "R", "ALI"],
+
+  "procedimientos": [
+    {
+      "nombre": "Juego no directivo",
+      "codigo": "p_axline_juego",
+      "procesos": [
+        "AP_simbolizacion",
+        "RE_modulacion"
+      ],
+      "texto": "Procedimiento central de la terapia de Axline en el que el niño elige libremente cómo jugar y qué expresar. El juego funciona como medio simbólico de elaboración emocional y resolución interna de conflictos, sin intervenciones directivas del terapeuta (Axline, 1947)."
+    },
+    {
+      "nombre": "Sostén relacional seguro",
+      "codigo": "p_axline_seguridad",
+      "procesos": [
+        "ALI_vinculo",
+        "RE_coregulacion"
+      ],
+      "texto": "Procedimiento relacional que garantiza un clima constante de aceptación, respeto y previsibilidad. La seguridad del vínculo permite que el niño explore emociones difíciles y reorganice su experiencia interna con mayor libertad (Axline, 1964)."
+    }
+  ],
+
+  "micros": [
+    {
+      "nombre": "Reflejo de sentimiento",
+      "codigo": "m_axline_reflejo",
+      "procesos": [
+        "RE_rotulacion",
+        "ALI_sintonia"
+      ],
+      "texto": "Intervención empática que pone palabras sencillas a la emoción que el niño expresa en el juego o en su conducta. Facilita reconocimiento emocional, validación interna y desarrollo de conciencia afectiva (Axline, 1947)."
+    },
+    {
+      "nombre": "Tracking descriptivo",
+      "codigo": "m_axline_tracking",
+      "procesos": [
+        "AP_atencionFocalizada"
+      ],
+      "texto": "Descripción verbal neutra de las acciones del niño durante el juego. Ayuda a que el niño se sienta visto y comprendido, favoreciendo continuidad simbólica y profundización en la experiencia lúdica (Axline, 1947)."
+    },
+    {
+      "nombre": "Límites claros y consistentes",
+      "codigo": "m_axline_limites",
+      "procesos": [
+        "R_reglasSeguras",
+        "RE_modulacion"
+      ],
+      "texto": "Establecimiento de límites firmes y previsibles que protegen al niño, al terapeuta y al espacio terapéutico. Los límites proporcionan contención emocional y favorecen el desarrollo de autocontrol y seguridad (Axline, 1964)."
+    },
+    {
+      "nombre": "Ofrecer elecciones",
+      "codigo": "m_axline_elecciones",
+      "procesos": [
+        "AG_autonomia",
+        "I_autoeficacia"
+      ],
+      "texto": "Intervención que presenta opciones claras al niño dentro de los límites del encuadre, promoviendo sentido de control, responsabilidad y agencia personal (Axline, 1947)."
+    },
+    {
+      "nombre": "Cierre ritual",
+      "codigo": "m_axline_cierre",
+      "procesos": [
+        "RE_modulacion",
+        "I_continuidadBiografica"
+      ],
+      "texto": "Ritual predecible de finalización de la sesión que ayuda al niño a integrar la experiencia de juego, regular la activación emocional y mantener continuidad entre sesiones (Axline, 1964)."
+    }
+  ],
+
+  "refs": [
+    "Axline, V. M. (1947). Play Therapy.",
+    "Axline, V. M. (1964). Dibs in Search of Self."
+  ]
+}
