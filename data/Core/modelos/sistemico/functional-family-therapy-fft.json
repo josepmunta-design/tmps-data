@@ -1,0 +1,137 @@
+{
+  "id": "functional-family-therapy-fft",
+  "grupo": "Sistémico",
+  "label": "Functional Family Therapy (FFT)",
+  "year": 1973,
+  "autores": "James F. Alexander; Bruce Parsons",
+  "importancia": 2,
+  "file": "modelos/sistemico/functional-family-therapy-fft.json",
+
+  "universidad": "",
+  "ciudad": "Salt Lake City, Utah",
+  "pais": "EE. UU.",
+  "lat": 40.7608,
+  "lon": -111.8910,
+
+  "derivesFrom": [
+    "Terapia estratégica (Haley)",
+    "Aprendizaje social",
+    "Conductismo",
+    "Psicología cognitiva",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "books": [
+    "James F. Alexander & Bruce V. Parsons — Functional Family Therapy (1982)",
+    "Thomas L. Sexton & James F. Alexander — Functional Family Therapy for Adolescent Behavior Problems (2002)"
+  ],
+
+  "summary": "La FFT es un modelo manualizado con sólida evidencia empírica en población adolescente. Integra técnicas sistémicas, cognitivas y conductuales, organizadas en fases: compromiso y motivación, cambio conductual y generalización. Busca fortalecer los lazos familiares y modificar patrones de interacción coercitivos. Su eficacia se ha demostrado en contextos judiciales, escolares y comunitarios, convirtiéndose en un referente de la terapia familiar basada en la evidencia.",
+
+  "descripcion": "La Functional Family Therapy (FFT) es un tratamiento familiar breve, manualizado y basado en la evidencia para adolescentes con problemas de conducta, consumo de sustancias y delincuencia, que conceptualiza el síntoma como funcional dentro de patrones relacionales coercitivos mantenidos por atribuciones negativas, déficits de habilidades y contingencias desadaptativas; el modelo organiza la intervención en fases secuenciales —compromiso y motivación, cambio conductual y generalización— donde el terapeuta prioriza inicialmente la alianza y la reducción de la negatividad, reformula el problema en términos relacionales y no culpabilizantes, entrena habilidades de comunicación, resolución de problemas y parentalidad efectiva, y finalmente consolida los cambios promoviendo su transferencia a contextos escolares, judiciales y comunitarios; el cambio se considera logrado cuando disminuye la coerción, aumentan interacciones de apoyo, se estabilizan rutinas y la familia mantiene por sí misma los nuevos patrones funcionales (Refs: Alexander & Parsons 1982; Sexton & Alexander 2002).",
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se entiende de forma funcional y relacional: los problemas de conducta tienen una función dentro del sistema familiar. El conocimiento terapéutico es empírico y pragmático, validado por resultados observables. El ser humano responde a contingencias relacionales y cognitivas; el cambio ocurre al modificar interacciones, atribuciones y refuerzos. La relación terapéutica es instrumental y motivacional, condición para acceder a fases posteriores.",
+    "teoriaFormal": "El self se concibe como un repertorio de conductas, cogniciones y respuestas emocionales moldeadas por aprendizaje social y patrones familiares. El sufrimiento se mantiene por ciclos coercitivos, atribuciones hostiles y déficits de habilidades parentales y comunicativas. El cambio implica reatribución funcional, adquisición de habilidades y reorganización de contingencias.",
+    "teoriaClinica": "El caso se conceptualiza identificando funciones del síntoma, patrones coercitivos, atribuciones negativas y déficits de habilidades. Se prioriza reducir negatividad, aumentar motivación, entrenar habilidades y generalizar cambios. El progreso se evalúa por reducción de conductas problema, mejora relacional y mantenimiento en contextos naturales."
+  },
+
+  "mjps": ["ALI", "RE", "N", "R", "AG"],
+
+  "alianzaModelo": {
+    "ALI_vinculo": "La alianza es prioritaria y se construye activamente reduciendo culpa y defensividad mediante validación y respeto.",
+    "ALI_objetivos": "Objetivos claros, observables y consensuados, formulados en términos de funcionamiento familiar.",
+    "ALI_tareas": "Tareas progresivas por fases: compromiso, entrenamiento y generalización.",
+    "ALI_colaboracion": "Alta colaboración basada en motivación y utilidad práctica.",
+    "ALI_sintonia": "Sintonía estratégica para reducir negatividad y aumentar esperanza.",
+    "ALI_rupturaReparacion": "Las rupturas se reparan volviendo a la fase motivacional y ajustando el ritmo.",
+    "ALI_monitorizacion": "Seguimiento continuo de implicación, clima emocional y cumplimiento.",
+    "ALI_contexto": "Sensibilidad a contextos judiciales, escolares y comunitarios."
+  },
+
+  "procesos": [
+    "Reducción de negatividad y coerción",
+    "Motivación al cambio",
+    "Reatribución funcional",
+    "Entrenamiento de habilidades familiares",
+    "Reorganización de contingencias",
+    "Generalización y mantenimiento"
+  ],
+
+  "procedimientos": [
+    {
+      "nombre": "Fase de compromiso y motivación",
+      "codigo": "p_fft_motivacion",
+      "procesos": ["ALI_vinculo", "N_reformulacion"],
+      "texto": "Reducción de la negatividad, construcción de alianza y reformulación del problema en términos relacionales y funcionales."
+    },
+    {
+      "nombre": "Reencuadre funcional del síntoma",
+      "codigo": "p_fft_reencuadre",
+      "procesos": ["N_reformulacion", "N_metacognicion"],
+      "texto": "Presentar la conducta problema como comprensible y modificable dentro del sistema familiar."
+    },
+    {
+      "nombre": "Entrenamiento en comunicación",
+      "codigo": "p_fft_comunicacion",
+      "procesos": ["R_comunicacionEmocional", "AG_compromisoConductual"],
+      "texto": "Enseñanza de habilidades de escucha, petición clara y expresión no coercitiva."
+    },
+    {
+      "nombre": "Entrenamiento parental",
+      "codigo": "p_fft_parentalidad",
+      "procesos": ["R_sist_roles", "AG_autoriaResponsabilidad"],
+      "texto": "Fortalecimiento de supervisión, disciplina consistente y refuerzo positivo."
+    },
+    {
+      "nombre": "Resolución de problemas",
+      "codigo": "p_fft_problemas",
+      "procesos": ["AG_tomaDecisiones", "N_metacognicion"],
+      "texto": "Aplicación estructurada de pasos para abordar conflictos cotidianos."
+    },
+    {
+      "nombre": "Generalización y cierre",
+      "codigo": "p_fft_generalizacion",
+      "procesos": ["AG_compromisoConductual", "R_sist_contexto"],
+      "texto": "Transferencia de habilidades a escuela, justicia y comunidad y prevención de recaídas."
+    }
+  ],
+
+  "micros": [
+    {
+      "nombre": "Validación no culpabilizante",
+      "codigo": "m_fft_validacion",
+      "procesos": ["ALI_vinculo", "RE_aceptacion"],
+      "texto": "Reducir defensividad legitimando experiencias sin justificar conductas."
+    },
+    {
+      "nombre": "Interrupción de escalada coercitiva",
+      "codigo": "m_fft_desescalada",
+      "procesos": ["RE_modulacion", "R_sist_interaccion"],
+      "texto": "Cortar ciclos de ataque-defensa mediante pautas breves."
+    },
+    {
+      "nombre": "Ensayo conductual en sesión",
+      "codigo": "m_fft_ensayo",
+      "procesos": ["AG_compromisoConductual", "R_comunicacionEmocional"],
+      "texto": "Práctica guiada de nuevas habilidades comunicativas."
+    },
+    {
+      "nombre": "Refuerzo positivo inmediato",
+      "codigo": "m_fft_refuerzo",
+      "procesos": ["AG_motivacionInterna"],
+      "texto": "Consolidar conductas adaptativas mediante refuerzos claros."
+    },
+    {
+      "nombre": "Plan breve de mantenimiento",
+      "codigo": "m_fft_mantenimiento",
+      "procesos": ["AG_compromisoConductual", "N_reformulacion"],
+      "texto": "Anticipar riesgos y definir respuestas funcionales."
+    }
+  ],
+
+  "refs": [
+    "Alexander, J. F., & Parsons, B. V. (1982). Functional Family Therapy.",
+    "Sexton, T. L., & Alexander, J. F. (2002). Functional Family Therapy for Adolescent Behavior Problems."
+  ]
+}
