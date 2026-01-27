@@ -1,0 +1,117 @@
+{
+  "id": "modelado-imitacion-bandura",
+  "grupo": "Conductismo",
+  "label": "Modelado e imitacion",
+  "year": 1968,
+  "autores": "Albert Bandura",
+  "tipo": "Estudio",
+  "universidad": "Stanford University",
+  "ciudad": "Stanford, California",
+  "pais": "EE. UU.",
+  "lat": 37.4275,
+  "lon": -122.1697,
+  "descripcion": "El modelo de modelado e imitacion de Albert Bandura demuestra que una parte significativa del aprendizaje humano ocurre observando la conducta de otros y las consecuencias que reciben, sin necesidad de refuerzo directo. Introduce el concepto de refuerzo vicario y muestra que las personas pueden adquirir nuevas conductas, reglas y expectativas simplemente a traves de la observacion de modelos significativos. El modelo incorpora procesos cognitivos intermedios como la atencion, la retencion, la reproduccion y la motivacion, y formula el principio de determinismo reciproco entre persona, conducta y ambiente. Asimismo, Bandura introduce el constructo de autoeficacia como factor central del cambio conductual, estableciendo un puente claro entre el conductismo clasico y el giro cognitivo.",
+  "influencias": [
+    "Modelado",
+    "Aprendizaje social",
+    "Psicologia cognitiva temprana",
+    "Racionalismo representacional (Cognitivismo clasico)"
+  ],
+  "neimeyer": {
+    "epistemologico": "El modelo se sitúa en una posicion intermedia entre el objetivismo conductista y el cognitivismo emergente. La conducta es observable, pero el aprendizaje incluye procesos mentales mediadores. El conocimiento terapeutico es empirico, pero reconoce representaciones internas. El terapeuta actua como diseñador de contextos de aprendizaje y modelos conductuales. El cambio psicologico se explica por la interaccion dinamica entre observacion, cognicion y accion.",
+    "teoriaFormal": "La persona aprende nuevas conductas y reglas a traves de la observacion de modelos, evaluando las consecuencias que estos reciben y anticipando resultados similares. El sufrimiento se mantiene cuando existen modelos disfuncionales, expectativas de ineficacia o ausencia de experiencias de dominio. El cambio ocurre cuando se introducen modelos adecuados y se fortalece la creencia en la propia capacidad para actuar eficazmente.",
+    "teoriaClinica": "El caso se conceptualiza analizando los modelos observados por la persona, las expectativas de resultado y el nivel de autoeficacia percibida. La intervencion prioriza la exposicion a modelos funcionales, el ensayo conductual guiado y el refuerzo de experiencias de dominio progresivo. El progreso se evalua por el aumento de conductas adaptativas y la mejora de la autoeficacia."
+  },
+  "procesos": [
+    "Aprendizaje observacional",
+    "Imitacion conductual",
+    "Formacion de expectativas",
+    "Incremento de autoeficacia"
+  ],
+  "mjps": [
+    "N",
+    "AG",
+    "RE"
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Modelado directo",
+      "codigo": "p_bandura_modelado_directo",
+      "procesos": [
+        "AG_compromisoConductual"
+      ],
+      "texto": "Procedimiento en el que el terapeuta u otra figura relevante ejecuta de forma visible la conducta objetivo para que el paciente la observe. El modelado directo reduce incertidumbre, proporciona guias claras de accion y disminuye la ansiedad asociada a la novedad conductual."
+    },
+    {
+      "nombre": "Modelado simbolico",
+      "codigo": "p_bandura_modelado_simbolico",
+      "procesos": [
+        "N_marcosCognitivos"
+      ],
+      "texto": "Uso de videos, relatos o representaciones simbolicas donde un modelo ejecuta la conducta deseada. Permite ampliar el acceso a modelos funcionales y preparar al paciente para la accion directa."
+    },
+    {
+      "nombre": "Ensayo conductual guiado",
+      "codigo": "p_bandura_ensayo",
+      "procesos": [
+        "AG_compromisoConductual"
+      ],
+      "texto": "Procedimiento en el que el paciente practica activamente la conducta observada bajo supervision terapeutica. Facilita la transicion de la observacion a la ejecucion real y consolida el aprendizaje."
+    },
+    {
+      "nombre": "Entrenamiento en autoeficacia",
+      "codigo": "p_bandura_autoefficacia",
+      "procesos": [
+        "I_fortalezasRecursos"
+      ],
+      "texto": "Intervencion sistematica orientada a fortalecer la creencia del paciente en su capacidad para afrontar situaciones especificas. Se apoya en experiencias de exito progresivo, feedback correctivo y regulacion emocional."
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Atencion al modelo",
+      "codigo": "m_bandura_atencion",
+      "procesos": [
+        "N_metacognicion"
+      ],
+      "texto": "Focalizacion deliberada en los aspectos relevantes de la conducta del modelo para asegurar un aprendizaje eficaz y evitar imitaciones parciales o distorsionadas."
+    },
+    {
+      "nombre": "Retencion simbolica",
+      "codigo": "m_bandura_retencion",
+      "procesos": [
+        "N_marcosCognitivos"
+      ],
+      "texto": "Ayuda al paciente a codificar mentalmente la conducta observada mediante lenguaje, imagenes o reglas simples que faciliten su recuerdo posterior."
+    },
+    {
+      "nombre": "Reproduccion progresiva",
+      "codigo": "m_bandura_reproduccion",
+      "procesos": [
+        "AG_compromisoConductual"
+      ],
+      "texto": "Division de la conducta objetivo en pasos graduales que el paciente puede reproducir de forma progresiva, reduciendo frustracion y abandono."
+    },
+    {
+      "nombre": "Refuerzo vicario",
+      "codigo": "m_bandura_refuerzo_vicario",
+      "procesos": [
+        "RE_modulacion"
+      ],
+      "texto": "Observacion de consecuencias positivas en el modelo que incrementa la motivacion del paciente para intentar la conducta, incluso antes de experimentarla directamente."
+    },
+    {
+      "nombre": "Persuasion verbal realista",
+      "codigo": "m_bandura_persuasion",
+      "procesos": [
+        "I_fortalezasRecursos"
+      ],
+      "texto": "Mensajes verbales ajustados y creibles que refuerzan la expectativa de exito del paciente sin generar falsas promesas ni presion excesiva."
+    }
+  ],
+  "refs": [
+    "Bandura, A. (1968). Social learning theory of aggression.",
+    "Bandura, A. (1977). Social Learning Theory.",
+    "Bandura, A. (1986). Social Foundations of Thought and Action."
+  ]
+}
