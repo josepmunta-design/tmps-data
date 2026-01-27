@@ -1,0 +1,99 @@
+{
+  "id": "condicionamiento-aversivo",
+  "grupo": "Conductismo",
+  "label": "Condicionamiento aversivo",
+  "year": 1950,
+  "autores": "Joseph Wolpe; O. Hobart Mowrer; B. F. Skinner",
+  "tipo": "Procedimiento clínico",
+  "universidad": "Harvard University",
+  "ciudad": "Cambridge, Massachusetts",
+  "pais": "EE. UU.",
+  "lat": 42.3770,
+  "lon": -71.1167,
+  "summary": "El condicionamiento aversivo es un conjunto de procedimientos conductistas orientados a reducir la frecuencia de conductas desadaptativas mediante la asociación sistemática de dichas conductas con estímulos aversivos. Inicialmente fundamentado en el condicionamiento clásico, el método buscaba generar respuestas emocionales negativas ante comportamientos previamente reforzados, disminuyendo así su probabilidad de repetición. Posteriormente incorporó principios del condicionamiento operante, utilizando el castigo positivo o la retirada de reforzadores como mecanismos de control conductual. Fue ampliamente aplicado entre las décadas de 1950 y 1970 en adicciones, parafilias y conductas autodestructivas. Aunque mostró eficacia a corto plazo, su uso clínico disminuyó por limitaciones éticas, alta tasa de recaídas y ausencia de aprendizaje alternativo, siendo progresivamente sustituido por enfoques basados en exposición, autorregulación y refuerzo positivo.",
+  "influencias": [
+    "Condicionamiento clásico",
+    "Condicionamiento operante",
+    "Conductismo metodológico"
+  ],
+  "neimeyer": {
+    "epistemologico": "El modelo se sitúa en una epistemología objetivista y positivista, donde la conducta es entendida como un fenómeno observable y manipulable mediante leyes generales del aprendizaje. El conocimiento terapéutico es empírico y técnico, y el terapeuta adopta un rol directivo encargado de modificar contingencias ambientales. El cambio psicológico se concibe como resultado directo de asociaciones estímulo-respuesta y de la aplicación sistemática de consecuencias aversivas.",
+    "teoriaFormal": "La conducta desadaptativa se mantiene por historia de refuerzos previos y puede ser debilitada si se asocia de forma consistente a consecuencias aversivas. El sufrimiento no se explica por conflicto interno ni por significado personal, sino por patrones de aprendizaje disfuncionales. El cambio ocurre cuando la conducta pierde su valor funcional debido a la aparición de respuestas emocionales negativas o consecuencias desagradables.",
+    "teoriaClinica": "El caso se conceptualiza identificando conductas objetivo claramente definidas y las contingencias que las mantienen. La intervención prioriza la aplicación sistemática de estímulos aversivos contingentes a la conducta problema o la introducción de castigos operantes. El progreso se evalúa por la reducción observable de la conducta objetivo, sin requerir necesariamente cambios emocionales o cognitivos profundos."
+  },
+  "procesos": [
+    "Supresión conductual",
+    "Condicionamiento emocional negativo",
+    "Interrupción de patrones reforzados",
+    "Control externo de la conducta"
+  ],
+  "mjps": [
+    "RF",
+    "AG"
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Condicionamiento aversivo clásico",
+      "codigo": "p_aversivo_clasico",
+      "procesos": [
+        "RF_expo"
+      ],
+      "texto": "Procedimiento basado en el condicionamiento clásico que asocia una conducta o estímulo previamente neutro o reforzado con un estímulo aversivo, generando respuestas emocionales negativas como miedo, asco o malestar. El objetivo es reducir la probabilidad futura de la conducta mediante la adquisición de una respuesta condicionada aversiva."
+    },
+    {
+      "nombre": "Castigo positivo",
+      "codigo": "p_aversivo_castigo",
+      "procesos": [
+        "AG_autoriaResponsabilidad"
+      ],
+      "texto": "Aplicación contingente de un estímulo desagradable inmediatamente después de la conducta problema con el fin de disminuir su frecuencia. Aunque puede ser eficaz a corto plazo, no enseña conductas alternativas y suele generar evitación o respuestas emocionales secundarias."
+    },
+    {
+      "nombre": "Pérdida de reforzadores",
+      "codigo": "p_aversivo_castigo_negativo",
+      "procesos": [
+        "AG_tomaDecisiones"
+      ],
+      "texto": "Procedimiento operante que reduce la conducta problema retirando estímulos reforzantes previamente disponibles cuando aparece dicha conducta. Funciona como castigo negativo y fue utilizado como alternativa menos intensa al castigo físico."
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Emparejamiento estímulo–conducta",
+      "codigo": "m_aversivo_emparejamiento",
+      "procesos": [
+        "RF_expo"
+      ],
+      "texto": "Microintervención consistente en emparejar de forma inmediata y repetida la conducta objetivo con un estímulo aversivo claramente identificable, asegurando la contingencia temporal necesaria para el aprendizaje asociativo."
+    },
+    {
+      "nombre": "Control de contingencias",
+      "codigo": "m_aversivo_contingencias",
+      "procesos": [
+        "AG_compromisoConductual"
+      ],
+      "texto": "Ajuste preciso de las contingencias para garantizar que el estímulo aversivo solo aparece en presencia de la conducta problema, evitando generalizaciones no deseadas o aprendizaje caótico."
+    },
+    {
+      "nombre": "Monitorización de supresión conductual",
+      "codigo": "m_aversivo_monitorizacion",
+      "procesos": [
+        "AG_autoriaResponsabilidad"
+      ],
+      "texto": "Registro sistemático de la frecuencia e intensidad de la conducta objetivo para evaluar la eficacia del procedimiento, centrado exclusivamente en cambios observables."
+    },
+    {
+      "nombre": "Retirada progresiva del estímulo aversivo",
+      "codigo": "m_aversivo_retirada",
+      "procesos": [
+        "AG_tomaDecisiones"
+      ],
+      "texto": "Reducción gradual del estímulo aversivo una vez suprimida la conducta, con el objetivo de evitar efectos colaterales intensos y dependencia del control externo."
+    }
+  ],
+  "refs": [
+    "Skinner, B. F. (1953). Science and Human Behavior.",
+    "Wolpe, J. (1958). Psychotherapy by Reciprocal Inhibition.",
+    "Bandura, A., & Walters, R. (1963). Social Learning and Personality Development."
+  ]
+}
