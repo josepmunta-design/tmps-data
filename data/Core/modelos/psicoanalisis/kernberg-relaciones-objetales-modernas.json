@@ -57,4 +57,140 @@
     "teoriaFormal": "Qué es el self\nEl self es una organización estructural de representaciones integradas del yo y del objeto.\n\nCómo se explica el cambio\nEl cambio ocurre mediante la integración progresiva de díadas relacionales escindidas.\n\nQué mantiene el sufrimiento\nEl sufrimiento se mantiene por difusión de identidad y uso predominante de defensas primitivas.",
     "teoriaClinica": "Cómo se conceptualiza el caso\nEl caso se formula según el nivel de organización de la personalidad y la calidad de la identidad.\n\nQué procesos terapéuticos se priorizan\nSe prioriza el análisis de la transferencia y la integración estructural.\n\nCómo se evalúa el progreso terapéutico\nEl progreso se evalúa por mayor integración identitaria y regulación afectiva."
   },
-  "procedimientos":
+"procedimientos": [
+  {
+    "nombre": "Evaluación estructural de la personalidad",
+    "codigo": "p_kernberg_evaluacion_estructural",
+    "procesos": ["N_metacognicion", "I_coherenciaInterna", "RE_rotulacion"],
+    "texto": "Procedimiento diagnóstico-clínico que determina el nivel de organización de la personalidad (neurótico, límite o psicótico) evaluando identidad, defensas predominantes y prueba de realidad, lo que permite orientar la indicación terapéutica y el encuadre técnico adecuado (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*)."
+  },
+  {
+    "nombre": "Contrato terapéutico estructural",
+    "codigo": "p_kernberg_contrato_terapeutico",
+    "procesos": ["AG_autoriaResponsabilidad", "ALI_vinculo", "R_limitesInterpersonales"],
+    "texto": "Procedimiento inicial que establece de forma explícita normas, responsabilidades, manejo de acting out y compromiso con el tratamiento, proporcionando un marco contenedor indispensable para trabajar con pacientes con impulsividad y relaciones caóticas (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*)."
+  },
+  {
+    "nombre": "Clarificación sistemática del material clínico",
+    "codigo": "p_kernberg_clarificacion",
+    "procesos": ["RE_rotulacion", "R_mentalizacion", "N_metacognicion"],
+    "texto": "Procedimiento básico que busca describir con precisión conductas, afectos y percepciones contradictorias del paciente, reduciendo confusión y preparando el terreno para intervenciones interpretativas más profundas (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*)."
+  },
+  {
+    "nombre": "Confrontación de contradicciones y defensas primitivas",
+    "codigo": "p_kernberg_confrontacion",
+    "procesos": ["RE_prevEvitacion", "N_insightPsicodinamico", "RI_partesSubpersonalidades"],
+    "texto": "Procedimiento que señala de manera directa pero contenida las contradicciones entre relatos, afectos y conductas, así como el uso activo de defensas primitivas como la escisión, idealización y devaluación, facilitando conciencia sin desorganizar al paciente (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*)."
+  },
+  {
+    "nombre": "Análisis sistemático de la transferencia",
+    "codigo": "p_kernberg_analisis_transferencia",
+    "procesos": ["R_mentalizacion", "N_insightPsicodinamico", "AP_procesamiento"],
+    "texto": "Procedimiento central en el que se examinan las reacciones emocionales y conductuales del paciente hacia el terapeuta como expresión directa de díadas relacionales internas escindidas, utilizándolas como principal vía de cambio estructural (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*)."
+  },
+  {
+    "nombre": "Identificación de díadas relacionales escindidas",
+    "codigo": "p_kernberg_diad as_escindidas",
+    "procesos": ["RI_partesSubpersonalidades", "N_reformulacion", "I_coherenciaInterna"],
+    "texto": "Procedimiento que detecta configuraciones recurrentes de self-objeto cargadas de afecto (idealizadas vs persecutorias) activas en la transferencia, permitiendo su posterior integración mediante el trabajo interpretativo (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*)."
+  },
+  {
+    "nombre": "Interpretación de defensas primitivas en vivo",
+    "codigo": "p_kernberg_defensas_primitivas",
+    "procesos": ["N_insightPsicodinamico", "RE_modulacion", "R_mentalizacion"],
+    "texto": "Procedimiento interpretativo que aborda directamente escisión, identificación proyectiva, negación, idealización y devaluación tal como aparecen en la sesión, ayudando al paciente a reconocer su función protectora y su coste relacional (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*)."
+  },
+  {
+    "nombre": "Integración progresiva de representaciones del self y del objeto",
+    "codigo": "p_kernberg_integracion_representaciones",
+    "procesos": ["I_integracion", "N_reformulacion", "RE_aceptacion"],
+    "texto": "Procedimiento de largo recorrido que promueve la síntesis de aspectos amorosos y agresivos del self y del objeto, reduciendo la fragmentación identitaria y favoreciendo una identidad más coherente y estable (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*)."
+  },
+  {
+    "nombre": "Trabajo con agresión y odio en la transferencia",
+    "codigo": "p_kernberg_agresion_transferencia",
+    "procesos": ["RE_modulacion", "AP_profundizacion", "R_mentalizacion"],
+    "texto": "Procedimiento que legitima y analiza la expresión de agresión intensa hacia el terapeuta como componente central de las relaciones objetales escindidas, permitiendo su simbolización e integración sin acting destructivo (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*)."
+  },
+  {
+    "nombre": "Manejo activo del acting out",
+    "codigo": "p_kernberg_acting_out",
+    "procesos": ["R_limitesInterpersonales", "AG_autoriaResponsabilidad", "RE_prevEvitacion"],
+    "texto": "Procedimiento que aborda conductas impulsivas o autodestructivas fuera de sesión mediante límites claros y análisis de su significado transferencial, evitando tanto la permisividad como el castigo moralizante (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*)."
+  },
+  {
+    "nombre": "Fortalecimiento de funciones yoicas maduras",
+    "codigo": "p_kernberg_funciones_yoicas",
+    "procesos": ["AG_autonomia", "RE_modulacion", "N_metacognicion"],
+    "texto": "Procedimiento complementario que apoya el desarrollo de control de impulsos, tolerancia a la ambivalencia y capacidad reflexiva, especialmente cuando la desorganización afectiva amenaza el proceso interpretativo (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*)."
+  },
+  {
+    "nombre": "Consolidación de identidad integrada",
+    "codigo": "p_kernberg_consolidacion_identidad",
+    "procesos": ["I_coherenciaInterna", "I_continuidadBiografica", "AG_compromisoConductual"],
+    "texto": "Procedimiento integrador que consolida una identidad más estable y realista, caracterizada por relaciones menos extremas, mayor continuidad del self y reducción de defensas primitivas (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*)."
+  }
+],
+  "micros": [
+  {
+    "nombre": "Nombrar escisión activa en el aquí-ahora",
+    "codigo": "m_kernberg_nombrar_escision",
+    "procesos": ["RE_rotulacion", "R_mentalizacion"],
+    "texto": "Microintervención que señala de forma descriptiva cuándo el paciente está percibiendo al self o al otro en términos totalmente buenos o totalmente malos, ayudándole a observar la escisión como un estado mental transitorio y no como una realidad objetiva (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*)."
+  },
+  {
+    "nombre": "Señalar idealización y devaluación alternantes",
+    "codigo": "m_kernberg_idealizacion_devaluacion",
+    "procesos": ["N_insightPsicodinamico", "RE_modulacion"],
+    "texto": "Intervención breve que pone de relieve los cambios bruscos entre idealización y devaluación del terapeuta u otras figuras significativas, facilitando conciencia del patrón relacional escindido sin entrar en luchas defensivas (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*)."
+  },
+  {
+    "nombre": "Clarificar contradicciones afectivas",
+    "codigo": "m_kernberg_clarificar_contradicciones",
+    "procesos": ["R_mentalizacion", "N_metacognicion"],
+    "texto": "Microintervención que subraya la coexistencia de afectos opuestos —amor y odio, deseo y rechazo— ayudando al paciente a tolerar ambivalencia sin recurrir a defensas primitivas (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*)."
+  },
+  {
+    "nombre": "Devolver impacto agresivo en la relación",
+    "codigo": "m_kernberg_impacto_agresivo",
+    "procesos": ["R_mentalizacion", "RE_coregulacion"],
+    "texto": "Intervención breve que comunica de forma clínica el impacto emocional de la agresión o descalificación del paciente en el vínculo terapéutico, utilizándolo como vía para analizar la díada relacional activa (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*)."
+  },
+  {
+    "nombre": "Diferenciar fantasía persecutoria de realidad actual",
+    "codigo": "m_kernberg_fantasia_vs_realidad",
+    "procesos": ["N_metacognicion", "RE_modulacion"],
+    "texto": "Microintervención que ayuda a distinguir entre percepciones transferenciales persecutorias y la conducta real del terapeuta, reforzando prueba de realidad sin invalidar la experiencia emocional (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*)."
+  },
+  {
+    "nombre": "Contener impulso antes de actuar",
+    "codigo": "m_kernberg_contener_impulso",
+    "procesos": ["RE_prevEvitacion", "AG_autoriaResponsabilidad"],
+    "texto": "Intervención breve que introduce una pausa entre afecto intenso e impulso conductual, apoyando el desarrollo de control de impulsos y reduciendo acting out dentro y fuera de sesión (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*)."
+  },
+  {
+    "nombre": "Nombrar díada relacional dominante",
+    "codigo": "m_kernberg_nominar_diada",
+    "procesos": ["RI_partesSubpersonalidades", "N_reformulacion"],
+    "texto": "Microintervención que identifica explícitamente la configuración self–objeto activa (por ejemplo, self víctima–objeto persecutorio), facilitando su reconocimiento consciente y posterior integración (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*)."
+  },
+  {
+    "nombre": "Señalar avance hacia ambivalencia integrada",
+    "codigo": "m_kernberg_avance_integracion",
+    "procesos": ["ALI_monitorizacion", "I_integracion"],
+    "texto": "Intervención breve que destaca momentos en los que el paciente puede sostener simultáneamente aspectos positivos y negativos del self u objeto, reforzando el progreso estructural sin idealizarlo (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*)."
+  },
+  {
+    "nombre": "Reforzar responsabilidad sobre la conducta",
+    "codigo": "m_kernberg_responsabilidad",
+    "procesos": ["AG_autoriaResponsabilidad", "R_limitesInterpersonales"],
+    "texto": "Microintervención que devuelve al paciente la autoría de sus conductas impulsivas o agresivas sin culpabilizar, diferenciando comprensión dinámica de justificación conductual (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*)."
+  },
+  {
+    "nombre": "Cerrar sesión integrando afectos opuestos",
+    "codigo": "m_kernberg_cierre_integracion",
+    "procesos": ["I_coherenciaInterna", "RE_aceptacion"],
+    "texto": "Intervención de cierre que resume cómo afectos contradictorios han podido pensarse conjuntamente durante la sesión, consolidando la experiencia de integración y continuidad del self (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*)."
+  }
+]
+}
