@@ -57,4 +57,130 @@
     "teoriaFormal": "Qué es el self\nEl self se concibe como una organización dinámica de capacidades para pensar y tolerar la experiencia emocional.\n\nCómo se explica el cambio\nEl cambio se explica por la transformación de elementos beta en elementos alfa mediante la experiencia de contención.\n\nQué mantiene el sufrimiento\nEl sufrimiento se mantiene por fallos en la función alfa que conducen a evacuación emocional, acting y desorganización.",
     "teoriaClinica": "Cómo se conceptualiza el caso\nEl caso se formula identificando la capacidad de contención interna, el uso de identificación proyectiva y la tolerancia a la frustración.\n\nQué procesos terapéuticos se priorizan\nSe prioriza el desarrollo del pensar, la contención emocional y la metabolización de afectos primitivos.\n\nCómo se evalúa el progreso terapéutico\nEl progreso se evalúa por mayor simbolización, capacidad reflexiva y aprendizaje emocional."
   },
-  "procedimientos":
+  "procedimientos": [
+  {
+    "nombre": "Evaluación de la capacidad de pensar y de la función alfa",
+    "codigo": "p_bion_funcion_alfa_evaluacion",
+    "procesos": ["N_metacognicion", "RE_rotulacion", "AP_profundizacion"],
+    "texto": "Procedimiento clínico orientado a evaluar si la experiencia emocional del paciente puede transformarse en pensamiento o si es evacuada en forma de acting, somatización o confusión, observando tolerancia a la frustración, uso del lenguaje simbólico y calidad del sueño y del soñar, lo que permite inferir el grado de funcionamiento de la función alfa (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Contención emocional a través de la reverie",
+    "codigo": "p_bion_reverie_contencion",
+    "procesos": ["RE_coregulacion", "ALI_vinculo", "R_coregulacion"],
+    "texto": "Procedimiento central en el que el analista recibe las proyecciones emocionales del paciente en un estado de reverie —disponibilidad psíquica abierta, no defensiva ni saturada de teoría— metabolizando afectos crudos y devolviéndolos en una forma pensable, lo que permite al paciente internalizar progresivamente una función contenedora (Bion, 1962, *Learning from Experience*; Bion, 1970, *Attention and Interpretation*)."
+  },
+  {
+    "nombre": "Trabajo con la relación continente–contenido",
+    "codigo": "p_bion_continente_contenido",
+    "procesos": ["R_mentalizacion", "RE_modulacion", "AP_procesamiento"],
+    "texto": "Intervención que conceptualiza la relación terapéutica como un vínculo continente–contenido, donde el analista sostiene emocionalmente aquello que el paciente no puede pensar, permitiendo que la experiencia deje de ser evacuada y pueda transformarse en material simbólico compartido (Bion, 1963, *Elements of Psycho-Analysis*)."
+  },
+  {
+    "nombre": "Identificación y metabolización de elementos beta",
+    "codigo": "p_bion_elementos_beta",
+    "procesos": ["AP_profundizacion", "RE_rotulacion", "N_insightPsicodinamico"],
+    "texto": "Procedimiento orientado a detectar manifestaciones de elementos beta —sensaciones, imágenes o impulsos no pensados— y a transformarlos progresivamente en elementos alfa mediante contención y simbolización, reduciendo la necesidad de evacuación defensiva y favoreciendo el desarrollo del pensamiento (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Uso clínico de la identificación proyectiva",
+    "codigo": "p_bion_identificacion_proyectiva",
+    "procesos": ["R_mentalizacion", "RE_coregulacion", "N_insightPsicodinamico"],
+    "texto": "Procedimiento que aborda la identificación proyectiva no solo como defensa, sino como forma primitiva de comunicación, permitiendo al analista experimentar estados inducidos y devolverlos metabolizados para que el paciente pueda reconocerlos y pensarlos como propios (Bion, 1962, *Learning from Experience*; Ogden, 1982, *Projective Identification and Psychotherapeutic Technique*)."
+  },
+  {
+    "nombre": "Tolerancia a la frustración y suspensión de memoria y deseo",
+    "codigo": "p_bion_suspension_memoria_deseo",
+    "procesos": ["RE_aceptacion", "N_metacognicion", "ALI_sintonia"],
+    "texto": "Procedimiento que implica la capacidad del analista para suspender memoria, deseo y comprensión prematura, tolerando no saber y frustración con el fin de no imponer significados defensivos y permitir que emerja una experiencia emocional auténtica (Bion, 1970, *Attention and Interpretation*)."
+  },
+  {
+    "nombre": "Transformación de evacuación emocional en pensamiento",
+    "codigo": "p_bion_evacuacion_a_pensamiento",
+    "procesos": ["AP_procesamiento", "RE_modulacion", "I_coherenciaInterna"],
+    "texto": "Intervención orientada a sustituir la descarga emocional inmediata —acting, impulsividad, somatización— por un proceso de contención que permita simbolizar la experiencia, aumentando la capacidad de reflexión y aprendizaje emocional (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Atención al campo emocional compartido",
+    "codigo": "p_bion_campo_emocional",
+    "procesos": ["R_mentalizacion", "RE_coregulacion", "ALI_monitorizacion"],
+    "texto": "Procedimiento que amplía el foco desde el individuo hacia el campo emocional que se crea entre paciente y analista, observando cambios en atmósfera, afecto y ritmo como indicadores del proceso de contención y transformación en curso (Bion, 1970, *Attention and Interpretation*)."
+  },
+  {
+    "nombre": "Facilitación del aprendizaje a partir de la experiencia",
+    "codigo": "p_bion_aprendizaje_experiencia",
+    "procesos": ["N_reformulacion", "I_continuidadBiografica", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento que permite al paciente aprender de la experiencia emocional en lugar de repetirla compulsivamente, desarrollando una mente capaz de pensar, simbolizar y extraer significado de vivencias previamente intolerables (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Trabajo con fenómenos grupales básicos",
+    "codigo": "p_bion_grupos_basicos",
+    "procesos": ["R_mentalizacion", "RE_modulacion", "N_metacognicion"],
+    "texto": "Procedimiento aplicado cuando aparecen dinámicas grupales básicas —dependencia, ataque-huida, emparejamiento— incluso en terapia individual, interpretándolas como estados emocionales primitivos que interfieren con el pensar y requieren contención antes de ser analizados (Bion, 1961, *Experiences in Groups*)."
+  }
+],
+  "micros": [
+  {
+    "nombre": "Nombrar confusión emocional sin interpretarla",
+    "codigo": "m_bion_nombrar_confusion",
+    "procesos": ["RE_rotulacion", "RE_coregulacion"],
+    "texto": "Microintervención que pone palabras sencillas a estados de confusión, saturación o caos emocional sin intentar explicarlos ni darles sentido inmediato, permitiendo que la experiencia sea sostenida y contenida antes de ser pensada, evitando evacuaciones defensivas (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Sostener afecto intenso sin responder defensivamente",
+    "codigo": "m_bion_sostener_afecto",
+    "procesos": ["RE_coregulacion", "ALI_vinculo"],
+    "texto": "Intervención mínima en la que el analista mantiene presencia emocional estable frente a angustia, rabia o desesperación intensas, sin tranquilizar prematuramente ni interpretar, ofreciendo una experiencia de contención que el paciente puede internalizar (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Señalar evacuación emocional en curso",
+    "codigo": "m_bion_senalar_evacuacion",
+    "procesos": ["RE_prevEvitacion", "R_mentalizacion"],
+    "texto": "Microintervención que identifica de forma descriptiva cuándo la experiencia está siendo expulsada mediante acting, impulsividad o confusión, ayudando a frenar la descarga y a reconducirla hacia un espacio de contención compartida (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Transformar sensación corporal en experiencia pensable",
+    "codigo": "m_bion_cuerpo_a_pensamiento",
+    "procesos": ["AP_somaticoEsquematico", "AP_procesamiento"],
+    "texto": "Intervención breve que conecta sensaciones corporales intensas con el estado emocional presente, facilitando el paso desde lo somático no simbolizado hacia una experiencia que puede empezar a pensarse y nombrarse (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Mantener silencio contenedor",
+    "codigo": "m_bion_silencio_contenedor",
+    "procesos": ["RE_aceptacion", "ALI_sintonia"],
+    "texto": "Microintervención que consiste en sostener un silencio no intrusivo cuando el discurso se fragmenta o se acelera, permitiendo que el campo emocional se estabilice y evitando introducir significado defensivo (Bion, 1970, *Attention and Interpretation*)."
+  },
+  {
+    "nombre": "Nombrar ausencia de pensamiento",
+    "codigo": "m_bion_ausencia_pensar",
+    "procesos": ["N_metacognicion", "RE_rotulacion"],
+    "texto": "Intervención mínima que señala la dificultad para pensar o simbolizar una experiencia concreta, legitimando el no saber como punto de partida del aprendizaje emocional y reduciendo vergüenza o autoataque (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Devolver experiencia emocional metabolizada",
+    "codigo": "m_bion_devolver_metabolizado",
+    "procesos": ["AP_procesamiento", "N_insightPsicodinamico"],
+    "texto": "Microintervención en la que el analista devuelve en palabras simples una experiencia previamente recibida de forma caótica, mostrando cómo algo inicialmente intolerable puede transformarse en pensamiento compartido (Bion, 1963, *Elements of Psycho-Analysis*)."
+  },
+  {
+    "nombre": "Señalar cambio en la atmósfera emocional",
+    "codigo": "m_bion_atmosfera_emocional",
+    "procesos": ["ALI_monitorizacion", "R_mentalizacion"],
+    "texto": "Intervención breve que nombra variaciones en la atmósfera emocional de la sesión —alivio, pesadez, tensión— como indicadores del proceso de contención y transformación en curso (Bion, 1970, *Attention and Interpretation*)."
+  },
+  {
+    "nombre": "Invitar a tolerar frustración mínima",
+    "codigo": "m_bion_tolerar_frustracion",
+    "procesos": ["RE_aceptacion", "AG_autoriaResponsabilidad"],
+    "texto": "Microintervención que apoya la permanencia en una pequeña dosis de frustración sin evacuarla ni negarla, fortaleciendo gradualmente la capacidad de pensar y aprender de la experiencia (Bion, 1962, *Learning from Experience*)."
+  },
+  {
+    "nombre": "Cerrar sesión consolidando capacidad de pensar",
+    "codigo": "m_bion_cierre_pensar",
+    "procesos": ["I_coherenciaInterna", "N_metacognicion"],
+    "texto": "Intervención de cierre que subraya la posibilidad emergente de pensar una experiencia previamente caótica, reforzando el desarrollo de la función alfa y la continuidad del proceso de aprendizaje emocional (Bion, 1962, *Learning from Experience*)."
+  }
+]
+}
+
+
