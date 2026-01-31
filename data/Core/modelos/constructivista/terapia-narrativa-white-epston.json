@@ -21,7 +21,13 @@
   ],
 
   "descripcion": "La Terapia Narrativa concibe los problemas psicológicos como construcciones narrativas dominantes que han llegado a organizar la identidad y la experiencia de la persona. Desde esta perspectiva, las dificultades no residen en el individuo, sino en las historias problematizantes co-construidas en contextos relacionales, culturales y discursivos. El trabajo terapéutico se orienta a externalizar el problema, identificar resultados únicos y re-autorizar historias preferidas que reflejen valores, compromisos y capacidades ignoradas. El terapeuta adopta una posición colaborativa y no experta, actuando como facilitador de conversaciones que amplían el sentido de agencia, identidad y pertenencia, y utilizando prácticas como documentos terapéuticos, testigos externos y rituales narrativos para consolidar el cambio.",
+"neimeyer": {
+  "epistemologico": "CONCEPCIÓN DE LA REALIDAD PSICOLÓGICA\nLa realidad psicológica es construida narrativamente en contextos relacionales, culturales y discursivos. No existe una verdad psicológica objetiva independiente del lenguaje, sino múltiples historias posibles sobre la experiencia, algunas dominantes y otras marginalizadas. Los problemas se sostienen por narrativas hegemónicas que restringen el significado y la identidad.\n\nCONCEPCIÓN DEL CONOCIMIENTO TERAPÉUTICO\nEl conocimiento terapéutico es colaborativo, situado y discursivo. No se descubre, sino que se co-construye mediante conversaciones que amplían el repertorio narrativo y hacen visibles significados alternativos. El terapeuta adopta una posición descentralizada y de no-experto sobre la vida del paciente.\n\nCONCEPCIÓN DEL SER HUMANO Y DEL CAMBIO\nEl ser humano es un agente narrativo que da sentido a su experiencia a través de historias sobre sí mismo y el mundo. El cambio ocurre cuando se debilita la historia dominada por el problema y emergen narrativas preferidas más coherentes con valores, intenciones y compromisos personales.\n\nROL DE LA RELACIÓN TERAPÉUTICA\nLa relación terapéutica es un espacio dialógico y ético de co-autoría, donde se legitima la voz del paciente y se crean condiciones para que historias alternativas puedan ser contadas, reconocidas y sostenidas socialmente.",
 
+  "teoriaFormal": "QUÉ ES EL SELF\nEl self se concibe como una identidad narrativa en constante construcción, compuesta por múltiples historias que se organizan en torno a valores, relaciones y contextos culturales. No es una entidad fija, sino una trama dinámica que puede ser reescrita.\n\nCÓMO SE EXPLICA EL CAMBIO\nEl cambio se produce mediante procesos de externalización, deconstrucción de narrativas dominantes y re-autoría de historias preferidas. Al cambiar la forma en que se relata la experiencia, se transforman las posiciones subjetivas, las emociones asociadas y las posibilidades de acción.\n\nQUÉ MANTIENE EL SUFRIMIENTO\nEl sufrimiento se mantiene cuando una narrativa problemática se vuelve totalizante, invisibiliza actos de agencia y queda reforzada por discursos sociales, familiares o culturales que la legitiman como verdad incuestionable.",
+
+  "teoriaClinica": "CÓMO SE CONCEPTUALIZA EL CASO\nEl caso se conceptualiza identificando la historia dominante, los discursos que la sostienen, los efectos del problema en la vida de la persona y los valores o identidades que han quedado eclipsados. Se presta especial atención a resultados únicos y excepciones al dominio del problema.\n\nQUÉ PROCESOS TERAPÉUTICOS SE PRIORIZAN\nSe priorizan procesos de externalización, exploración de resultados únicos, re-autoría narrativa, fortalecimiento de identidades preferidas y uso de testigos externos y documentos narrativos para consolidar el cambio.\n\nCÓMO SE EVALÚA EL PROGRESO TERAPÉUTICO\nEl progreso se evalúa por el debilitamiento de la narrativa dominada por el problema, la expansión de historias alternativas, el aumento de agencia percibida y la integración social de la identidad preferida en la vida cotidiana."
+},
   "ideasPrincipales": [
     {
       "id": "idea_narrativa_1",
@@ -77,77 +83,133 @@
 
   "mjps": ["RF", "RE", "AP", "RI", "N", "I", "AG", "R"],
 
-  "procedimientos": [
-    {
-      "nombre": "Conversación externalizadora",
-      "codigo": "p_nar_externalizacion",
-      "procesos": ["N_reformulacion"],
-      "texto": "Procedimiento central que separa a la persona del problema mediante preguntas que lo describen como una entidad externa con tácticas, intenciones y efectos específicos. Reduce fusión identitaria y facilita una relación activa frente al problema (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
-    },
-    {
-      "nombre": "Mapa de influencia del problema",
-      "codigo": "p_nar_mapa_influencia",
-      "procesos": ["N_clarificacion"],
-      "texto": "Explora cómo el problema influye en distintas áreas de la vida y cómo la persona ha respondido a esa influencia, organizando el relato y delimitando el alcance real del problema (White, 2007, *Maps of Narrative Practice*)."
-    },
-    {
-      "nombre": "Búsqueda de resultados únicos",
-      "codigo": "p_nar_resultados_unicos",
-      "procesos": ["AG_autoriaResponsabilidad"],
-      "texto": "Identificación sistemática de episodios en los que el problema tuvo menos poder o fue resistido, revelando capacidades y elecciones alternativas que sustentan historias preferidas (White, 2007, *Maps of Narrative Practice*)."
-    },
-    {
-      "nombre": "Re-autoría narrativa",
-      "codigo": "p_nar_reautoria",
-      "procesos": ["N_narrativaAutobiografica"],
-      "texto": "Proceso de reconstrucción biográfica que integra resultados únicos en una nueva trama identitaria coherente, orientada por valores y compromisos personales (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
-    },
-    {
-      "nombre": "Testigos externos",
-      "codigo": "p_nar_testigos",
-      "procesos": ["R_comunicacionEmocional"],
-      "texto": "Conversaciones estructuradas donde otras personas reconocen y reflejan los valores y significados de la historia preferida, fortaleciendo su legitimidad relacional (White, 2007, *Maps of Narrative Practice*)."
-    },
-    {
-      "nombre": "Documentos terapéuticos",
-      "codigo": "p_nar_documentos",
-      "procesos": ["N_construccionAlternativa"],
-      "texto": "Elaboración de cartas, certificados o textos narrativos que consolidan y testifican el cambio, extendiendo el impacto terapéutico fuera de sesión (Epston, 1994, *Extending the Conversation*)."
-    }
-  ],
+"procesos": [
+  {
+    "id": "nar_externalizacion",
+    "nombre": "Externalización del problema",
+    "descripcion": "La externalización es el proceso mediante el cual se separa la identidad de la persona de los problemas que afectan a su vida, rompiendo la fusión entre ‘quién soy’ y ‘lo que me pasa’. El problema se conceptualiza como una entidad relacional y contextual, con efectos, tácticas e historia propia, lo que reduce culpa y vergüenza y permite adoptar una posición activa frente a él. Este proceso abre un espacio narrativo desde el cual la persona puede observar, evaluar y responder al problema sin quedar definida por él (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
+  },
+  {
+    "id": "nar_deconstruccion",
+    "nombre": "Deconstrucción de historias dominantes",
+    "descripcion": "Este proceso examina críticamente las narrativas dominantes que organizan la identidad problemática, explorando sus supuestos implícitos, orígenes culturales, discursos de poder y normas sociales que las sostienen. La deconstrucción no busca refutar la historia, sino mostrar que es solo una entre muchas posibles, debilitando su estatus de verdad única y abriendo espacio para relatos alternativos más complejos y vivibles (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "id": "nar_resultados_unicos",
+    "nombre": "Detección de resultados únicos",
+    "descripcion": "Este proceso se orienta a identificar episodios en los que el problema no logró dominar completamente la experiencia de la persona o fue resistido de algún modo. Los resultados únicos revelan actos de agencia, valores y capacidades que han quedado invisibilizados por la narrativa problemática. Al hacerlos explícitos, se introducen fisuras en la historia dominante y se generan puntos de apoyo para el desarrollo de narrativas alternativas (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "id": "nar_reautoria",
+    "nombre": "Re-autoría de historias preferidas",
+    "descripcion": "La re-autoría consiste en reorganizar la narrativa personal integrando resultados únicos dentro de una nueva trama coherente, orientada por valores, intenciones y compromisos significativos. Este proceso permite que la persona se reconozca como autora de su vida más allá del problema, fortaleciendo un sentido de identidad elegido y ampliando las posibilidades de acción futura (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
+  },
+  {
+    "id": "nar_construccion_identidad",
+    "nombre": "Construcción narrativa de la identidad",
+    "descripcion": "Desde la terapia narrativa, la identidad se entiende como una construcción dinámica que emerge de las historias que se viven y se cuentan en contextos relacionales y culturales. Este proceso aborda cómo ciertas narrativas llegan a organizar el sentido de sí mismo, y facilita la reconstrucción identitaria incorporando multiplicidad, contradicción y continuidad, evitando visiones esencialistas del self (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "id": "nar_agencia_responsabilidad",
+    "nombre": "Agencia y responsabilidad no culpabilizante",
+    "descripcion": "La terapia narrativa promueve la recuperación de la agencia personal mediante la visibilización de elecciones, actos de resistencia y posicionamientos éticos frente al problema. La responsabilidad se entiende como autoría y capacidad de respuesta, no como culpa, permitiendo que la persona asuma influencia sobre su vida sin quedar atrapada en autoacusaciones o discursos moralizantes (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
+  },
+  {
+    "id": "nar_continuidad_biografica",
+    "nombre": "Continuidad biográfica",
+    "descripcion": "Este proceso integra la historia preferida dentro de una narrativa vital coherente que conecta pasado, presente y futuro. La continuidad biográfica permite que el cambio no se viva como una ruptura artificial, sino como una evolución legítima de la trayectoria personal, reforzando estabilidad identitaria y sentido de dirección vital (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "id": "nar_remembering",
+    "nombre": "Re-membering y reorganización del vínculo interno",
+    "descripcion": "El proceso de re-membering reorganiza simbólicamente las relaciones significativas que forman parte del ‘club de la vida’ de la persona, revisando quiénes influyen en su identidad y de qué modo. Permite fortalecer vínculos internos que apoyan la identidad preferida y reducir la influencia de figuras internalizadas asociadas a la narrativa problemática (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "id": "nar_testigos_externos",
+    "nombre": "Reconocimiento relacional mediante testigos externos",
+    "descripcion": "Este proceso utiliza la presencia de otras personas como testigos para reflejar, reconocer y legitimar la historia preferida del paciente. El reconocimiento relacional aporta densidad social al cambio narrativo, ayudando a que la nueva identidad no dependa únicamente del espacio terapéutico, sino que se sostenga en la comunidad (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "id": "nar_documentacion",
+    "nombre": "Consolidación mediante documentos narrativos",
+    "descripcion": "La creación de documentos narrativos —cartas, certificados, declaraciones— actúa como proceso de consolidación del cambio, fijando por escrito los valores, compromisos y logros emergentes. Estos documentos funcionan como testigos materiales de la historia preferida y facilitan su continuidad y transmisión fuera de la sesión terapéutica (Epston, 1994, *Extending the Conversation*)."
+  }
+],
 
   "micros": [
-    {
-      "nombre": "Nombrar al problema",
-      "codigo": "m_nar_nominar",
-      "procesos": ["N_reformulacion"],
-      "texto": "Invitar a dar un nombre metafórico al problema para facilitar su externalización y el diálogo con él (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
-    },
-    {
-      "nombre": "Explorar actos de resistencia",
-      "codigo": "m_nar_resistencia",
-      "procesos": ["AG_autoriaResponsabilidad"],
-      "texto": "Identificar pequeñas acciones donde la persona no siguió el guion del problema, reforzando agencia y elección (White, 2007, *Maps of Narrative Practice*)."
-    },
-    {
-      "nombre": "Preguntas de paisaje de acción",
-      "codigo": "m_nar_paisaje_accion",
-      "procesos": ["I_coherenciaInterna"],
-      "texto": "Detallar qué hizo la persona, cuándo, cómo y con quién en episodios preferidos para densificar la narrativa alternativa (White, 2007, *Maps of Narrative Practice*)."
-    },
-    {
-      "nombre": "Preguntas de paisaje de identidad",
-      "codigo": "m_nar_paisaje_identidad",
-      "procesos": ["N_narrativaAutobiografica"],
-      "texto": "Explorar qué dicen esas acciones sobre quién es la persona y qué valores encarna (White, 2007, *Maps of Narrative Practice*)."
-    },
-    {
-      "nombre": "Micro-documentos narrativos",
-      "codigo": "m_nar_micro_documentos",
-      "procesos": ["N_construccionAlternativa"],
-      "texto": "Pequeños textos de reconocimiento que refuerzan la historia preferida entre sesiones (Epston, 1994, *Extending the Conversation*)."
-    }
-  ],
+  {
+    "nombre": "Nombrar al problema",
+    "codigo": "m_nar_nominar_problema",
+    "procesos": ["N_reformulacion"],
+    "texto": "Microintervención que invita a dar un nombre específico, a menudo metafórico, al problema para facilitar su externalización y permitir hablar de él como algo separado del self. El nombre elegido ayuda a objetivar el problema, explorar su influencia y reducir la identificación personal con el sufrimiento, creando un lenguaje común para el trabajo terapéutico (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
+  },
+  {
+    "nombre": "Describir tácticas e intenciones del problema",
+    "codigo": "m_nar_tacticas_problema",
+    "procesos": ["N_clarificacion"],
+    "texto": "Consiste en explorar cómo actúa el problema, cuándo aparece con más fuerza, qué intenta conseguir y qué estrategias utiliza para dominar la vida de la persona. Esta microintervención aumenta la conciencia estratégica, reduce la vivencia de indefensión y refuerza la posición activa frente al problema (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "nombre": "Explorar actos de resistencia",
+    "codigo": "m_nar_resistencia",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Intervención breve orientada a identificar acciones —por pequeñas que sean— en las que la persona no siguió el guion del problema o logró limitar su influencia. Al explorar estas resistencias se refuerza la agencia personal y se generan puntos de apoyo para narrativas alternativas de competencia y dignidad (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "nombre": "Preguntar por valores implicados en la resistencia",
+    "codigo": "m_nar_valores_resistencia",
+    "procesos": ["I_valoresAspiracionales"],
+    "texto": "Microintervención que profundiza en los valores, compromisos o principios que estaban siendo defendidos cuando la persona resistió al problema. Permite vincular la acción concreta con una identidad preferida y dar espesor ético a los resultados únicos (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "nombre": "Preguntas de paisaje de acción",
+    "codigo": "m_nar_paisaje_accion",
+    "procesos": ["I_coherenciaInterna"],
+    "texto": "Intervención que detalla con precisión qué hizo la persona, en qué contexto, con quién y cómo, durante episodios alineados con la historia preferida. Su función es densificar la trama narrativa, evitando generalizaciones abstractas y fortaleciendo la credibilidad del relato alternativo (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "nombre": "Preguntas de paisaje de identidad",
+    "codigo": "m_nar_paisaje_identidad",
+    "procesos": ["N_narrativaAutobiografica"],
+    "texto": "Estas preguntas exploran qué dice una acción concreta sobre quién es la persona, qué valores expresa y qué tipo de identidad se manifiesta en esa escena. Facilitan la transición de acciones aisladas a una narrativa identitaria coherente y reconocible (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "nombre": "Reformular la historia dominante en términos narrativos",
+    "codigo": "m_nar_reformulacion_historia",
+    "procesos": ["N_reformulacion"],
+    "texto": "Microintervención que reformula el relato problemático como una historia particular, situada y contingente, en lugar de como una verdad absoluta. Este movimiento debilita el estatus hegemónico de la narrativa dominante y prepara el terreno para su deconstrucción (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
+  },
+  {
+    "nombre": "Listado del ‘club de la vida’",
+    "codigo": "m_nar_club_vida",
+    "procesos": ["I_continuidadBiografica"],
+    "texto": "Intervención que invita a identificar personas significativas —presentes, pasadas o imaginadas— que han contribuido positivamente a la identidad de la persona. Permite reorganizar la comunidad interna de apoyo y fortalecer la continuidad biográfica desde vínculos significativos (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "nombre": "Carta desde el self preferido",
+    "codigo": "m_nar_carta_self_preferido",
+    "procesos": ["RI_regulacionInterna"],
+    "texto": "Redacción de una carta en la que la versión preferida del self se dirige al yo actual o pasado, ofreciendo comprensión, orientación y apoyo. Esta microintervención consolida la identidad emergente y facilita integración emocional y narrativa (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "nombre": "Carta a una figura significativa",
+    "codigo": "m_nar_carta_figura",
+    "procesos": ["RI_reparacionRepresentaciones"],
+    "texto": "Intervención narrativa que permite expresar palabras no dichas a una persona significativa, viva o fallecida, o a una figura internalizada. Facilita reorganización de significados relacionales y cierre simbólico de capítulos abiertos (Neimeyer, 2001, *Meaning Reconstruction and the Experience of Loss*)."
+  },
+  {
+    "nombre": "Reflexiones de testigos externos",
+    "codigo": "m_nar_reflexiones_testigos",
+    "procesos": ["R_comunicacionEmocional"],
+    "texto": "Tras escuchar la historia preferida, los testigos externos comparten qué les ha resonado, qué valores reconocen y cómo se han visto afectados por el relato. Esta microintervención aporta reconocimiento social y refuerza la legitimidad de la nueva identidad (White, 2007, *Maps of Narrative Practice*)."
+  },
+  {
+    "nombre": "Micro-documentos de reconocimiento",
+    "codigo": "m_nar_micro_documentos",
+    "procesos": ["N_construccionAlternativa"],
+    "texto": "Elaboración de textos breves —notas, certificados o mensajes— que reconocen logros, decisiones o valores emergentes. Funcionan como anclajes narrativos que mantienen viva la historia preferida entre sesiones (Epston, 1994, *Extending the Conversation*)."
+  }
+],
 
   "refs": [
     "White, M., & Epston, D. (1990). Narrative Means to Therapeutic Ends. W. W. Norton.",
