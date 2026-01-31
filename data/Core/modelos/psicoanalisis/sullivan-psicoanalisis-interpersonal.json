@@ -68,17 +68,165 @@
     "ALI_monitorizacion": "El progreso se monitoriza observando reducción de ansiedad interpersonal, menor uso de operaciones de seguridad, mayor flexibilidad relacional, aumento de mentalización y mejora en la calidad del contacto interpersonal.",
     "ALI_contexto": "El contexto social y cultural se integra activamente, considerando cómo normas, roles y expectativas relacionales actuales refuerzan ansiedad o seguridad, y diferenciando patrones históricos de condiciones presentes."
   },
-  "wampold": {
-    "alianza": "El modelo enfatiza la alianza como experiencia interpersonal correctiva donde se reduce ansiedad y se ensayan nuevas formas de relación.",
-    "expectativas": "Se establecen expectativas claras al explicar la lógica interpersonal del malestar y del cambio, reduciendo confusión y culpa.",
-    "razonDeSer": "El sufrimiento se entiende como producto de patrones interpersonales y operaciones de seguridad orientadas a manejar ansiedad relacional.",
-    "ritual": "El ritual terapéutico consiste en la exploración sistemática de episodios interpersonales y del aquí-ahora relacional.",
-    "procesosPsicologicos": "Los procesos clave incluyen reducción de ansiedad, mentalización interpersonal, flexibilización de patrones y aumento de seguridad relacional.",
-    "cualidadesTerapeuta": "Requiere capacidad de participación-observación, sensibilidad interpersonal, claridad comunicativa y habilidad para reparar rupturas.",
-    "participacionPaciente": "El paciente participa activamente observando y ensayando cambios en sus patrones relacionales, dentro y fuera de sesión."
-  },
+
   "neimeyer": {
     "epistemologico": "Concepción de la realidad psicológica\nLa realidad psicológica se construye interpersonalmente: la experiencia se organiza en relaciones, expectativas y significados compartidos, más que en impulsos intrapsíquicos aislados.\n\nConcepción del conocimiento terapéutico\nEl conocimiento terapéutico surge de la observación del proceso relacional y de la verificación experiencial de hipótesis en el aquí-ahora.\n\nConcepción del ser humano y del cambio\nEl ser humano busca seguridad interpersonal; el cambio ocurre cuando se reducen distorsiones y operaciones defensivas, permitiendo relaciones más seguras y flexibles.\n\nRol de la relación terapéutica\nLa relación terapéutica es el principal instrumento de cambio, al actualizar y transformar patrones interpersonales en vivo.",
     "teoriaFormal": "Qué es el self\nEl self se concibe como un sistema de personificaciones del self y de los otros, organizado para minimizar ansiedad y maximizar seguridad.\n\nCómo se explica el cambio\nEl cambio se explica por la observación y modificación de patrones interpersonales y operaciones de seguridad dentro de una relación segura.\n\nQué mantiene el sufrimiento\nEl sufrimiento se mantiene por distorsiones interpersonales, ansiedad crónica y operaciones de seguridad que rigidifican el contacto.",
     "teoriaClinica": "Cómo se conceptualiza el caso\nEl caso se conceptualiza identificando patrones relacionales recurrentes, fuentes de ansiedad interpersonal, personificaciones dominantes y operaciones de seguridad.\n\nQué procesos terapéuticos se priorizan\nSe prioriza la reducción de ansiedad, la clarificación del episodio interpersonal y la flexibilización de patrones.\n\nCómo se evalúa el progreso terapéutico\nEl progreso se evalúa por mayor seguridad interpersonal, menor ansiedad, mayor flexibilidad y mejor calidad relacional."
   },
+  "procedimientos": [
+  {
+    "nombre": "Mapeo del episodio interpersonal concreto",
+    "codigo": "p_sullivan_episodio_interpersonal",
+    "procesos": ["N_narrativaAutobiografica", "R_mentalizacion", "N_metacognicion"],
+    "texto": "Procedimiento central que reconstruye episodios interpersonales específicos paso a paso —contexto, expectativa, conducta propia, respuesta del otro, impacto emocional— para identificar cómo se organiza la ansiedad y qué patrón relacional se activa; al convertir la experiencia difusa en una secuencia observable, se facilita insight operativo y alternativas de respuesta."
+  },
+  {
+    "nombre": "Identificación de patrones relacionales recurrentes",
+    "codigo": "p_sullivan_patrones_recurrentes",
+    "procesos": ["N_reformulacion", "I_coherenciaInterna", "R_estilosApego"],
+    "texto": "Intervención de formulación que integra múltiples episodios para detectar regularidades en la forma de vincularse (sumisión, control, evitación, hostilidad encubierta), mostrando su función ansiolítica y su coste relacional, y abriendo la posibilidad de flexibilización."
+  },
+  {
+    "nombre": "Detección y reducción de ansiedad interpersonal",
+    "codigo": "p_sullivan_ansiedad_interpersonal",
+    "procesos": ["RE_rotulacion", "RE_modulacion", "RE_coregulacion"],
+    "texto": "Procedimiento orientado a identificar señales tempranas de ansiedad vinculada a amenaza de rechazo o desaprobación y a modularla mediante clarificación, ritmo y co-regulación, evitando que el paciente recurra automáticamente a operaciones de seguridad."
+  },
+  {
+    "nombre": "Análisis de operaciones de seguridad",
+    "codigo": "p_sullivan_operaciones_seguridad",
+    "procesos": ["N_insightPsicodinamico", "RE_prevEvitacion", "R_mentalizacion"],
+    "texto": "Trabajo sistemático con conductas y actitudes destinadas a reducir ansiedad a corto plazo —evitación, complacencia, hostilidad indirecta, control— explicando su lógica protectora y sus consecuencias a largo plazo sobre la calidad del vínculo."
+  },
+  {
+    "nombre": "Clarificación de personificaciones del self y del otro",
+    "codigo": "p_sullivan_personificaciones",
+    "procesos": ["I_autoimagen", "R_mentalizacion", "N_metacognicion"],
+    "texto": "Procedimiento que explora las imágenes internalizadas del self (bueno, malo, no-yo) y de los otros significativos, mostrando cómo organizan expectativas y reacciones interpersonales actuales y cómo pueden actualizarse con nueva información relacional."
+  },
+  {
+    "nombre": "Identificación de distorsiones paratáxicas",
+    "codigo": "p_sullivan_distorsion_parataxica",
+    "procesos": ["N_metacognicion", "R_mentalizacion", "N_reformulacion"],
+    "texto": "Intervención que señala inferencias automáticas y asociaciones erróneas entre experiencias pasadas y relaciones presentes, ayudando a diferenciar percepción actual de anticipación histórica y reduciendo reactividad interpersonal."
+  },
+  {
+    "nombre": "Uso del terapeuta como participante-observador",
+    "codigo": "p_sullivan_participante_observador",
+    "procesos": ["ALI_sintonia", "R_mentalizacion", "N_insightPsicodinamico"],
+    "texto": "Procedimiento mediante el cual el terapeuta participa activamente en la relación sin perder capacidad reflexiva, utilizando su experiencia en la interacción como dato para clarificar patrones y modelar una observación compartida del proceso."
+  },
+  {
+    "nombre": "Meta-comunicación del proceso relacional en sesión",
+    "codigo": "p_sullivan_metacomunicacion",
+    "procesos": ["R_comunicacionEmocional", "N_metacognicion", "ALI_rupturaReparacion"],
+    "texto": "Intervención que hace explícito lo que está ocurriendo entre terapeuta y paciente en el aquí-ahora (tensión, retirada, malentendido), reduciendo ansiedad, previniendo rupturas y promoviendo aprendizaje relacional directo."
+  },
+  {
+    "nombre": "Ensayo de respuestas interpersonales alternativas",
+    "codigo": "p_sullivan_ensayo_respuestas",
+    "procesos": ["AG_compromisoConductual", "R_habilidadesInterpersonales", "RE_modulacion"],
+    "texto": "Procedimiento experiencial que prueba en sesión nuevas formas de responder —pedir, poner límites, expresar desacuerdo— con feedback inmediato, facilitando generalización a contextos reales y consolidación de seguridad."
+  },
+  {
+    "nombre": "Clarificación de expectativas y roles relacionales",
+    "codigo": "p_sullivan_expectativas_roles",
+    "procesos": ["N_reformulacion", "R_valoresRelacionales", "AG_tomaDecisiones"],
+    "texto": "Intervención que explicita supuestos sobre cómo ‘deberían’ comportarse los otros en distintos roles, diferenciando expectativas realistas de exigencias ansiolíticas y favoreciendo acuerdos relacionales más claros."
+  },
+  {
+    "nombre": "Reparación de rupturas interpersonales",
+    "codigo": "p_sullivan_reparacion_rupturas",
+    "procesos": ["ALI_rupturaReparacion", "R_reparacionRelacional", "RE_coregulacion"],
+    "texto": "Procedimiento que aborda malentendidos y tensiones relacionales nombrando el impacto mutuo, aclarando intenciones y restaurando seguridad, modelando una forma eficaz de resolver conflictos interpersonales."
+  },
+  {
+    "nombre": "Generalización a contextos extra-sesión",
+    "codigo": "p_sullivan_generalizacion",
+    "procesos": ["AG_compromisoConductual", "ALI_monitorizacion", "I_continuidadBiografica"],
+    "texto": "Intervención que traslada aprendizajes relacionales de la sesión a la vida cotidiana mediante tareas de observación y experimentación, evaluando impacto y ajustando estrategias según resultados."
+  }
+],
+  "micros": [
+  {
+    "nombre": "Nombrar ansiedad interpersonal en el momento",
+    "codigo": "m_sullivan_nombrar_ansiedad",
+    "procesos": ["RE_rotulacion", "RE_coregulacion"],
+    "texto": "Microintervención que pone palabras claras y descriptivas a la ansiedad que emerge en la interacción (“aquí parece aparecer miedo a ser rechazado”), ayudando a que el paciente la reconozca como estado relacional y no como defecto personal, reduciendo reactividad inmediata."
+  },
+  {
+    "nombre": "Señalar una operación de seguridad activa",
+    "codigo": "m_sullivan_operacion_seguridad",
+    "procesos": ["N_insightPsicodinamico", "RE_prevEvitacion"],
+    "texto": "Intervención breve que identifica una conducta protectora en curso —complacencia, evitación, ironía, control— explicando su función ansiolítica sin juzgarla, lo que facilita que el paciente considere alternativas menos costosas relacionalmente."
+  },
+  {
+    "nombre": "Diferenciar percepción actual de expectativa pasada",
+    "codigo": "m_sullivan_diferenciar_expectativa",
+    "procesos": ["N_metacognicion", "R_mentalizacion"],
+    "texto": "Microintervención que separa lo que realmente ocurre en la relación presente de lo que se anticipa por experiencias previas, reduciendo distorsión paratáxica y permitiendo respuestas más ajustadas al aquí-ahora."
+  },
+  {
+    "nombre": "Reflejar impacto interpersonal inmediato",
+    "codigo": "m_sullivan_reflejar_impacto",
+    "procesos": ["R_comunicacionEmocional", "ALI_sintonia"],
+    "texto": "Intervención que devuelve de forma directa y regulada el impacto que una conducta tiene en el otro (“cuando dices esto, me siento presionado”), modelando comunicación honesta y reduciendo malentendidos."
+  },
+  {
+    "nombre": "Explorar expectativa implícita de rol",
+    "codigo": "m_sullivan_expectativa_rol",
+    "procesos": ["N_reformulacion", "R_valoresRelacionales"],
+    "texto": "Microintervención que pregunta o señala qué se espera implícitamente del otro en una situación concreta, ayudando a clarificar supuestos relacionales que generan ansiedad o conflicto."
+  },
+  {
+    "nombre": "Invitar a pausa antes de responder",
+    "codigo": "m_sullivan_pausa_respuesta",
+    "procesos": ["RE_modulacion", "AG_autoriaResponsabilidad"],
+    "texto": "Intervención breve que propone detener la respuesta automática ante ansiedad interpersonal, creando un espacio mínimo para elegir una conducta distinta y más alineada con los objetivos relacionales."
+  },
+  {
+    "nombre": "Convertir evitación en curiosidad relacional",
+    "codigo": "m_sullivan_evitacion_a_curiosidad",
+    "procesos": ["R_mentalizacion", "AG_necesidadesPropias"],
+    "texto": "Microintervención que transforma la evitación defensiva en exploración de lo que se teme que ocurra en el contacto, disminuyendo rigidez y ampliando posibilidades de vínculo."
+  },
+  {
+    "nombre": "Nombrar retirada o distanciamiento",
+    "codigo": "m_sullivan_nombrar_retirada",
+    "procesos": ["RE_prevEvitacion", "R_mentalizacion"],
+    "texto": "Intervención que señala el alejamiento emocional o comunicativo como estrategia de protección frente a ansiedad, reduciendo culpa y facilitando un retorno gradual al contacto."
+  },
+  {
+    "nombre": "Chequear seguridad tras una intervención",
+    "codigo": "m_sullivan_chequeo_seguridad",
+    "procesos": ["ALI_monitorizacion", "RE_coregulacion"],
+    "texto": "Microintervención que evalúa si la intervención aumentó o redujo la sensación de seguridad interpersonal, ajustando el ritmo y el nivel de profundidad para mantener el proceso terapéutico viable."
+  },
+  {
+    "nombre": "Ensayar petición directa y concreta",
+    "codigo": "m_sullivan_peticion_directa",
+    "procesos": ["AG_compromisoConductual", "R_comunicacionEmocional"],
+    "texto": "Intervención breve que ayuda a formular una petición clara y específica en lugar de insinuaciones o quejas, fortaleciendo agencia y reduciendo ansiedad relacional."
+  },
+  {
+    "nombre": "Meta-comentar una micro-ruptura",
+    "codigo": "m_sullivan_meta_ruptura",
+    "procesos": ["ALI_rupturaReparacion", "R_reparacionRelacional"],
+    "texto": "Microintervención que nombra un malentendido o tensión emergente en sesión y la explora de inmediato, mostrando que los conflictos pueden abordarse sin pérdida de vínculo."
+  },
+  {
+    "nombre": "Cerrar el episodio con aprendizaje relacional",
+    "codigo": "m_sullivan_cierre_aprendizaje",
+    "procesos": ["I_coherenciaInterna", "AG_tomaDecisiones"],
+    "texto": "Intervención de cierre que resume qué patrón se activó, cómo se manejó la ansiedad y qué alternativa resultó más segura, consolidando aprendizaje interpersonal transferible."
+  }
+],
+"refs": [
+  "Sullivan, H. S. (1953). The Interpersonal Theory of Psychiatry.",
+  "Sullivan, H. S. (1953). Conceptions of Modern Psychiatry.",
+  "Leary, T. (1957). Interpersonal Diagnosis of Personality.",
+  "Mitchell, S. A. (1988). Relational Concepts in Psychoanalysis.",
+  "Safran, J. D., & Muran, J. C. (2000). Negotiating the Therapeutic Alliance."
+]
+}
