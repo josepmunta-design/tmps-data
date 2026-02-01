@@ -50,11 +50,211 @@
     "teoriaClinica": "El caso se conceptualiza atendiendo a cómo la persona ha construido el significado de su experiencia y dónde se han producido rupturas narrativas que generan sufrimiento. Se priorizan procesos de exploración narrativa, diálogo reflexivo y reconstrucción de sentido, más que la modificación directa de síntomas. El progreso terapéutico se evalúa por la recuperación de coherencia biográfica, el aumento de agencia narrativa, la integración emocional de la experiencia y la capacidad de proyectarse hacia el futuro con sentido (Neimeyer, 1995; Neimeyer, 2016)."
   },
 
-  "procedimientos": [],
+ "procedimientos": [
+  {
+    "nombre": "Exploración narrativa del sistema de significados",
+    "codigo": "p_neim_exploracion_narrativa",
+    "procesos": ["N_narrativaAutobiografica", "I_continuidadBiografica"],
+    "texto": "Procedimiento central orientado a explorar cómo la persona organiza su experiencia vital en forma de relatos que le permiten dotar de coherencia, continuidad e identidad a su vida. El terapeuta facilita la narración de acontecimientos significativos, transiciones y crisis, atendiendo tanto al contenido como a la estructura narrativa (tramas, rupturas, silencios, contradicciones). El objetivo no es interpretar desde fuera, sino comprender cómo el cliente se explica a sí mismo lo ocurrido y qué significados sostienen su identidad actual (Neimeyer, 1995; Neimeyer, 2001)."
+  },
 
-  "micros": [],
+  {
+    "nombre": "Identificación de rupturas de significado",
+    "codigo": "p_neim_rupturas_significado",
+    "procesos": ["N_metacognicion", "RE_rotulacion"],
+    "texto": "Procedimiento destinado a identificar momentos vitales en los que el sistema de significados personales se ha visto desbordado, invalidado o fracturado, como pérdidas, traumas, migraciones, enfermedades o crisis existenciales. Estas rupturas suelen manifestarse como confusión, estancamiento narrativo o sufrimiento persistente. Detectarlas permite focalizar el trabajo terapéutico en los puntos donde el sentido se ha quebrado y la identidad ha quedado suspendida (Neimeyer, 2001; Neimeyer, 2016)."
+  },
 
-  "ideasPrincipales": [],
+  {
+    "nombre": "Reconstrucción de significado",
+    "codigo": "p_neim_reconstruccion_significado",
+    "procesos": ["N_construccionAlternativa", "I_coherenciaInterna"],
+    "texto": "Procedimiento orientado a ayudar al cliente a elaborar nuevos significados que integren la experiencia disruptiva dentro de una narrativa vital más amplia y coherente. La reconstrucción de significado no implica resignificación positiva forzada ni eliminación del dolor, sino encontrar una forma de comprender la experiencia que permita continuidad del self, agencia personal y orientación futura (Neimeyer, 2001; Neimeyer, 2016)."
+  },
+
+  {
+    "nombre": "Diálogo reflexivo colaborativo",
+    "codigo": "p_neim_dialogo_reflexivo",
+    "procesos": ["RI_dialogoFuncional", "ALI_colaboracion"],
+    "texto": "Procedimiento relacional en el que terapeuta y cliente dialogan de manera reflexiva sobre los significados emergentes, examinando supuestos, valores, dilemas identitarios y alternativas narrativas. El terapeuta no adopta una posición experta correctiva, sino colaborativa, ayudando al cliente a observar su propio proceso de construcción de sentido y a ampliar perspectivas sin imponer interpretaciones (Neimeyer, 1995)."
+  },
+
+  {
+    "nombre": "Uso terapéutico de la metáfora",
+    "codigo": "p_neim_metafora",
+    "procesos": ["N_marcosCognitivos", "AP_profundizacion"],
+    "texto": "Procedimiento que emplea metáforas, imágenes, símbolos y narrativas figurativas para expresar significados complejos que resultan difíciles de articular de forma literal. Las metáforas permiten acceder a niveles implícitos de la experiencia y facilitan reorganizaciones narrativas y emocionales sin confrontación directa, siendo especialmente útiles en contextos de duelo, trauma y crisis de sentido (Neimeyer, 1995; Neimeyer, 2016)."
+  },
+
+  {
+    "nombre": "Reautoría de la identidad",
+    "codigo": "p_neim_reautoria_identidad",
+    "procesos": ["I_continuidadBiografica", "I_valoresAspiracionales"],
+    "texto": "Procedimiento mediante el cual el cliente revisa y reescribe activamente aspectos centrales de su identidad a la luz de nuevas comprensiones, integrando pérdidas, cambios y contradicciones en un relato identitario más flexible. La reautoría no busca construir una historia idealizada, sino permitir que el self se reorganice sin quedar fijado a narrativas de daño, fracaso o victimización (Neimeyer, 2001)."
+  },
+
+  {
+    "nombre": "Trabajo narrativo con el duelo",
+    "codigo": "p_neim_duelo_narrativo",
+    "procesos": ["AP_integracionMemorias", "RE_modulacion"],
+    "texto": "Procedimiento específico para abordar procesos de duelo entendidos como crisis profundas de significado más que como simples reacciones emocionales. El trabajo se centra en reconstruir el sentido de la relación perdida, redefinir vínculos continuados y reorganizar la identidad del doliente en ausencia del ser querido, respetando la singularidad del proceso y evitando modelos normativos de duelo (Neimeyer, 2001; Neimeyer, 2016)."
+  },
+
+  {
+    "nombre": "Construcción de continuidad biográfica",
+    "codigo": "p_neim_continuidad_biografica",
+    "procesos": ["I_continuidadBiografica", "N_narrativaAutobiografica"],
+    "texto": "Procedimiento orientado a restablecer la sensación de continuidad entre el yo previo al acontecimiento disruptivo y el yo actual, integrando la experiencia dolorosa dentro de la historia vital sin borrar lo anterior. Esta continuidad biográfica es clave para reducir la sensación de extrañeza de uno mismo y restaurar un sentido estable de identidad (Neimeyer, 1995; Neimeyer, 2016)."
+  },
+
+  {
+    "nombre": "Exploración de valores y compromisos vitales",
+    "codigo": "p_neim_valores",
+    "procesos": ["I_valoresAspiracionales", "AG_motivacionInterna"],
+    "texto": "Procedimiento que explora los valores, principios y compromisos vitales que dan dirección y sentido a la vida del cliente, especialmente tras una ruptura de significado. Clarificar estos valores permite orientar la reconstrucción narrativa hacia futuros posibles que resulten coherentes con la identidad emergente y no solo con la reducción del malestar (Neimeyer, 2001)."
+  },
+
+  {
+    "nombre": "Orientación al self futuro",
+    "codigo": "p_neim_self_futuro",
+    "procesos": ["I_selfFuturo", "AG_tomaDecisiones"],
+    "texto": "Procedimiento que ayuda al cliente a imaginar, articular y comprometerse con posibles selves futuros que integren la experiencia vivida y abran horizontes de sentido. La construcción de un self futuro viable facilita la toma de decisiones, la recuperación de agencia y la salida del estancamiento narrativo característico de las crisis de significado (Neimeyer, 1995; Neimeyer, 2016)."
+  },
+
+  {
+    "nombre": "Integración narrativa en la vida cotidiana",
+    "codigo": "p_neim_integracion_vida_cotidiana",
+    "procesos": ["AG_compromisoConductual", "I_selfFuturo"],
+    "texto": "Procedimiento final orientado a traducir los nuevos significados y narrativas construidas en decisiones, acciones y proyectos concretos de la vida diaria. Esta integración conductual consolida el cambio narrativo, refuerza la sensación de agencia personal y permite que el sentido reconstruido se encarne en la experiencia cotidiana (Neimeyer, 1995; Neimeyer, 2016)."
+  }
+],
+
+
+  "micros": [
+  {
+    "nombre": "Invitación narrativa abierta",
+    "codigo": "m_neim_invitacion_narrativa",
+    "procesos": ["N_narrativaAutobiografica"],
+    "texto": "Microintervención que invita al cliente a relatar su experiencia con preguntas abiertas que no dirigen el contenido ni el significado, permitiendo que emerja la narrativa tal como está organizada en ese momento. El terapeuta evita estructurar o corregir la historia, facilitando que el relato revele espontáneamente rupturas, silencios y núcleos de sentido relevantes para el proceso terapéutico (Neimeyer, 1995)."
+  },
+
+  {
+    "nombre": "Detección de quiebres narrativos",
+    "codigo": "m_neim_quiebres_narrativos",
+    "procesos": ["N_metacognicion"],
+    "texto": "Microintervención atencional que señala momentos en los que la narrativa se interrumpe, se vuelve confusa o circular, indicando posibles rupturas de significado. El terapeuta no interpreta el quiebre, sino que lo hace visible para que pueda ser explorado conjuntamente, favoreciendo conciencia narrativa y focalización del trabajo terapéutico (Neimeyer, 2001)."
+  },
+
+  {
+    "nombre": "Rotulación tentativa de significado",
+    "codigo": "m_neim_rotulacion_significado",
+    "procesos": ["RE_rotulacion", "N_construccionAlternativa"],
+    "texto": "Micro que propone de forma provisional palabras o frases que podrían capturar el significado emergente de una experiencia, siempre presentadas como hipótesis abiertas. Esta rotulación facilita simbolización emocional sin imponer interpretación, permitiendo que el cliente confirme, matice o rechace el encuadre propuesto (Neimeyer, 1995)."
+  },
+
+  {
+    "nombre": "Exploración de la voz del self",
+    "codigo": "m_neim_voz_self",
+    "procesos": ["RI_dialogoFuncional"],
+    "texto": "Microintervención que invita al cliente a diferenciar y escuchar distintas voces internas implicadas en su narrativa (yo pasado, yo herido, yo crítico, yo que busca sentido). Esta diferenciación facilita diálogo interno funcional y reduce la fusión con posiciones rígidas del self (Neimeyer, 2001)."
+  },
+
+  {
+    "nombre": "Uso puntual de metáfora evocadora",
+    "codigo": "m_neim_metafora_evocadora",
+    "procesos": ["N_marcosCognitivos", "AP_profundizacion"],
+    "texto": "Microintervención que introduce o amplifica una metáfora surgida del propio cliente para profundizar en el significado de la experiencia. La metáfora actúa como puente entre emoción y narrativa, facilitando reorganización del sentido sin confrontación directa (Neimeyer, 1995; Neimeyer, 2016)."
+  },
+
+  {
+    "nombre": "Conexión emoción–significado",
+    "codigo": "m_neim_emocion_significado",
+    "procesos": ["AP_profundizacion", "RE_modulacion"],
+    "texto": "Micro destinada a vincular explícitamente la experiencia emocional presente con los significados narrativos asociados, ayudando al cliente a sentir cómo ciertas interpretaciones sostienen o intensifican el malestar. Esta conexión favorece integración emocional del proceso narrativo (Neimeyer, 2001)."
+  },
+
+  {
+    "nombre": "Comparación antes–después",
+    "codigo": "m_neim_antes_despues",
+    "procesos": ["I_continuidadBiografica"],
+    "texto": "Microintervención que explora las diferencias entre el self previo a la experiencia disruptiva y el self actual, sin idealizar el pasado ni patologizar el presente. Esta comparación facilita reconstrucción de continuidad biográfica y comprensión del impacto identitario de la pérdida o crisis (Neimeyer, 2001; Neimeyer, 2016)."
+  },
+
+  {
+    "nombre": "Externalización del problema de sentido",
+    "codigo": "m_neim_externalizacion_sentido",
+    "procesos": ["N_narrativaAutobiografica"],
+    "texto": "Micro que permite hablar de la pérdida de sentido, el vacío o la confusión como experiencias que le ocurren a la persona, y no como defectos personales. Esta externalización reduce autoatribución negativa y abre espacio para reconstrucción narrativa compartida (Neimeyer, 1995)."
+  },
+
+  {
+    "nombre": "Exploración de valores implícitos",
+    "codigo": "m_neim_valores_implicitos",
+    "procesos": ["I_valoresAspiracionales"],
+    "texto": "Microintervención que identifica valores y compromisos vitales implícitos en el relato del cliente, especialmente aquellos puestos en evidencia por la pérdida o el sufrimiento. Reconocer estos valores permite orientar la reconstrucción de significado hacia lo que sigue siendo importante para la persona (Neimeyer, 2001)."
+  },
+
+  {
+    "nombre": "Proyección narrativa al futuro",
+    "codigo": "m_neim_proyeccion_futuro",
+    "procesos": ["I_selfFuturo", "AG_motivacionInterna"],
+    "texto": "Micro que invita a imaginar escenarios futuros posibles donde los nuevos significados puedan encarnarse, aun en presencia de dolor residual. Esta proyección ayuda a salir del estancamiento narrativo y a recuperar orientación temporal y motivación interna (Neimeyer, 1995; Neimeyer, 2016)."
+  },
+
+  {
+    "nombre": "Chequeo de coherencia narrativa",
+    "codigo": "m_neim_chequeo_coherencia",
+    "procesos": ["N_metacognicion", "I_coherenciaInterna"],
+    "texto": "Microintervención reflexiva que examina si los nuevos significados construidos resultan coherentes, vivibles y sostenibles para el cliente. El terapeuta invita a evaluar la resonancia interna del relato emergente, evitando cierres narrativos artificiales o prematuros (Neimeyer, 1995)."
+  },
+
+  {
+    "nombre": "Traducción del significado a acción",
+    "codigo": "m_neim_traduccion_accion",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Micro final que ayuda a traducir los significados reconstruidos en pequeños actos, decisiones o cambios concretos en la vida cotidiana. Esta traducción encarna el sentido en la acción y consolida el cambio narrativo sin imponer tareas prescriptivas (Neimeyer, 2001; Neimeyer, 2016)."
+  }
+],
+
+
+ "ideasPrincipales": [
+  {
+    "id": "idea_neim_1",
+    "titulo": "La identidad es un sistema de significados en continua construcción",
+    "desarrollo": "La Psicoterapia Constructivista de Neimeyer concibe el self no como una entidad fija, sino como una organización dinámica de significados personales que se construyen y reconstruyen a lo largo del tiempo. Las personas dan sentido a su experiencia integrando pasado, presente y futuro en narrativas que sostienen coherencia identitaria y orientación vital. La identidad es, por tanto, un proceso narrativo activo, vulnerable a las transiciones vitales y dependiente de la capacidad de reorganizar el significado cuando las circunstancias cambian (Neimeyer, 1995)."
+  },
+  {
+    "id": "idea_neim_2",
+    "titulo": "El sufrimiento psicológico surge de rupturas de significado",
+    "desarrollo": "El malestar psicológico no se explica como déficit, distorsión o patología en sí misma, sino como una ruptura en el sistema de significados personales que deja a la persona sin marcos adecuados para comprender su experiencia. Acontecimientos como pérdidas, traumas, migraciones o crisis existenciales pueden invalidar creencias y valores fundamentales, generando desorientación, vacío y sufrimiento persistente. La psicoterapia se orienta a identificar y trabajar estas fracturas de sentido (Neimeyer, 2001; Neimeyer, 2016)."
+  },
+  {
+    "id": "idea_neim_3",
+    "titulo": "El cambio terapéutico es un proceso de reconstrucción de sentido",
+    "desarrollo": "El cambio psicológico no consiste en eliminar el dolor ni en corregir pensamientos erróneos, sino en reconstruir significados que permitan integrar la experiencia disruptiva dentro de una narrativa vital más amplia y viable. Esta reconstrucción de sentido no borra la pérdida ni el sufrimiento, pero transforma su lugar dentro de la identidad, devolviendo coherencia, agencia y orientación hacia el futuro (Neimeyer, 2001)."
+  },
+  {
+    "id": "idea_neim_4",
+    "titulo": "El cliente es el autor de su historia y el terapeuta un colaborador",
+    "desarrollo": "Neimeyer enfatiza el papel activo del cliente como autor de su mundo personal y de los significados que organizan su experiencia. El terapeuta no ocupa la posición de experto que interpreta o corrige, sino la de colaborador que acompaña, dialoga y facilita la emergencia de nuevas perspectivas. La terapia adopta así una forma de co-construcción narrativa basada en respeto epistemológico y colaboración reflexiva (Neimeyer, 1995)."
+  },
+  {
+    "id": "idea_neim_5",
+    "titulo": "El lenguaje y la narrativa son los principales vehículos del cambio",
+    "desarrollo": "El lenguaje no es un mero medio para describir la experiencia, sino el principal instrumento mediante el cual se organiza y transforma el significado. A través del relato, la metáfora y el diálogo reflexivo, la persona puede articular experiencias previamente no simbolizadas y reorganizar su comprensión de sí misma y del mundo. La narrativa se convierte así en el espacio central del trabajo terapéutico (Neimeyer, 1995; Neimeyer, 2016)."
+  },
+  {
+    "id": "idea_neim_6",
+    "titulo": "El duelo es una crisis de significado, no solo una reacción emocional",
+    "desarrollo": "Uno de los aportes centrales de Neimeyer es la comprensión del duelo como una crisis profunda de significado que afecta a la identidad, los valores y la continuidad biográfica, más allá de la intensidad emocional. La pérdida no solo duele: desorganiza el sentido de la vida y del self. El trabajo terapéutico se centra en reconstruir el significado de la relación perdida y en redefinir la identidad del doliente en ausencia del ser querido (Neimeyer, 2001; Neimeyer, 2016)."
+  },
+  {
+    "id": "idea_neim_7",
+    "titulo": "La salud psicológica implica continuidad, agencia y apertura al futuro",
+    "desarrollo": "Desde la Psicoterapia Constructivista, el bienestar psicológico no se define por la ausencia de dolor, sino por la capacidad de mantener continuidad biográfica, agencia narrativa y apertura hacia futuros posibles con sentido. Una persona psicológicamente sana puede integrar pérdidas y cambios dentro de su historia vital sin quedar fijada a ellos, conservando la posibilidad de elegir, proyectarse y vivir de acuerdo con valores significativos (Neimeyer, 1995; Neimeyer, 2016)."
+  }
+],
+
 
   "refs": [
     "Neimeyer, R. A. (1995). Constructivist Psychotherapy.",
