@@ -57,14 +57,248 @@
     "Feixas, Saúl — Rejilla de Constructos Personales (GRIDCOR)"
   ],
 
-  "procedimientos": [],
-  "micros": [],
-  "ideasPrincipales": [],
+  "procedimientos": [
+  {
+    "nombre": "Evaluación y formulación constructivista integrativa del caso",
+    "codigo": "p_feixas_formulacionCaso",
+    "procesos": ["N_metacognicion","I_coherenciaInterna","ALI_objetivos"],
+    "texto": "Procedimiento de inicio y revisión periódica donde terapeuta y paciente co-construyen una formulación centrada en el sistema de significados: constructos nucleares y periféricos, dilemas identitarios, patrones narrativos dominantes, puntos de invalidación y costes del cambio, conectándolo con objetivos clínicos concretos y viables; se explicita qué se va a explorar, por qué tiene sentido desde el modelo y qué señales indicarían progreso, cuidando que el mapa del caso aumente claridad sin rigidizar la identidad ni imponer interpretaciones. (Feixas, 2004)"
+  },
+  {
+    "nombre": "Rejilla de Constructos Personales (Rep Grid) para mapear el sistema de significados",
+    "codigo": "p_feixas_repgrid",
+    "procesos": ["N_marcosCognitivos","I_autoimagen","N_metacognicion"],
+    "texto": "Procedimiento empírico-clínico que utiliza la Rejilla de Constructos para elicitar y organizar cómo la persona diferencia y evalúa elementos significativos (self actual, self ideal, figuras relevantes, roles, situaciones), identificando constructos bipolares, polarización, rigidez, discrepancias Yo-ideal, áreas de conflicto y focos de amenaza identitaria; el análisis se usa terapéuticamente como espejo del significado personal, no como “test”, para abrir alternativas y orientar el plan de intervención con base en evidencia idiográfica del propio paciente. (Kelly, 1955; Fransella & Bannister, 1977; Feixas, 2004)"
+  },
+  {
+    "nombre": "Análisis asistido por software (GRIDCOR u herramientas equivalentes) para patrones y cambio",
+    "codigo": "p_feixas_gridcor",
+    "procesos": ["N_metacognicion","N_marcosCognitivos"],
+    "texto": "Procedimiento de apoyo que emplea herramientas como GRIDCOR (u otros análisis de rejilla) para visualizar patrones del sistema de constructos (por ejemplo, estructuras muy dicotómicas, conglomerados rígidos, discrepancias entre autoimagen y aspiraciones, cambios entre mediciones), devolviendo al paciente una representación clara y comprensible que facilite metacognición del propio funcionamiento y permita monitorizar evolución del significado a lo largo del tratamiento sin reducir la complejidad de la experiencia a métricas vacías. (Feixas, 2004)"
+  },
+  {
+    "nombre": "Auto-caracterización (Self-Characterization) y análisis narrativo del self",
+    "codigo": "p_feixas_autocaracterizacion",
+    "procesos": ["N_narrativaAutobiografica","I_continuidadBiografica","N_marcosCognitivos"],
+    "texto": "Procedimiento narrativo derivado del PCP donde el paciente escribe o relata una “auto-caracterización” en tercera persona, como si describiera a alguien conocido, permitiendo acceder a constructos implícitos, valores y tramas identitarias sin activar defensas directas; el terapeuta analiza junto al paciente el lenguaje, las metáforas y las oposiciones semánticas que organizan la identidad, conectándolo con dilemas y posibilidades de reautoría para ganar continuidad biográfica sin quedar atrapado en etiquetas rígidas. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Laddering (subir y bajar niveles de abstracción del significado)",
+    "codigo": "p_feixas_laddering",
+    "procesos": ["N_marcosCognitivos","I_coherenciaInterna"],
+    "texto": "Procedimiento que explora la jerarquía del significado personal preguntando “¿por qué es importante?” (hacia arriba) para llegar a constructos nucleares y valores, y “¿cómo se ve eso en lo concreto?” (hacia abajo) para traducirlos a conductas y decisiones observables; ayuda a clarificar coherencia interna, detectar contradicciones entre niveles y construir puentes prácticos entre identidad y acción, reduciendo el bloqueo típico de cambios que se sienten “correctos” pero no se pueden implementar. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Detección y trabajo de dilemas implicativos (Implicative Dilemmas)",
+    "codigo": "p_feixas_dilemasImplicativos",
+    "procesos": ["I_conflictosSelf","N_metacognicion","N_construccionAlternativa"],
+    "texto": "Procedimiento específico para identificar dilemas del tipo “si cambio en X, entonces me convierto en Y (indeseable)” que hacen que el cambio terapéutico se viva como amenaza identitaria; se detectan mediante diálogo clínico y/o rejilla (p. ej., mejorar asertividad implica “ser egoísta”), se hace explícita la lógica protectora del dilema y se trabaja para generar terceras posiciones o definiciones más complejas que permitan el cambio sin pérdida de pertenencia, valor o coherencia del self. (Feixas, 2004)"
+  },
+  {
+    "nombre": "Identificación y reestructuración de constructos nucleares rígidos",
+    "codigo": "p_feixas_constructosNucleares",
+    "procesos": ["N_marcosCognitivos","I_autoimagen","N_construccionAlternativa"],
+    "texto": "Procedimiento focal que localiza constructos nucleares altamente polarizados (p. ej., fuerte–débil, valioso–inútil) que gobiernan autoevaluación y relación, explora su origen narrativo/relacional y su función adaptativa, y promueve flexibilización mediante matices, excepciones y nuevas definiciones operativas; el objetivo no es “cambiar creencias” desde fuera, sino ampliar el repertorio interpretativo de modo que el paciente pueda anticipar y actuar sin quedar prisionero de dicotomías que intensifican vergüenza, culpa o ansiedad. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Construcción alternativa de sentido y reautoría narrativa",
+    "codigo": "p_feixas_reautoria",
+    "procesos": ["N_construccionAlternativa","N_narrativaAutobiografica","I_continuidadBiografica"],
+    "texto": "Procedimiento de reconstrucción narrativa donde se revisan episodios clave, giros biográficos y escenas repetidas para generar interpretaciones alternativas más complejas y compasivas, integrando información previamente disociada o desvalorizada; se buscan nuevas tramas identitarias que mantengan continuidad biográfica pero abran posibilidades futuras, pasando de historias cerradas (“siempre he sido así”) a historias con agencia (“he aprendido esto, puedo elegir aquello”), cuidando que la nueva narrativa sea vivible y no un relato “bonito” sin soporte experiencial. (Neimeyer, 1993/2009; Feixas, 2004)"
+  },
+  {
+    "nombre": "Coherencia experiencial: contrastar narrativas con experiencia vivida",
+    "codigo": "p_feixas_coherenciaExperiencial",
+    "procesos": ["AP_profundizacion","RE_rotulacion","N_metacognicion"],
+    "texto": "Procedimiento que asegura que la reconstrucción del significado no se quede en discurso: se exploran sensaciones, emociones y resonancias corporales asociadas a una narrativa o a una alternativa emergente, comprobando si “encaja” experiencialmente o si es un cambio defensivo; se afina el lenguaje emocional, se identifican señales de amenaza/vergüenza y se ajusta el ritmo para que la nueva comprensión sea integrada, regulada y sostenida, evitando pseudo-cambio cognitivo desconectado del self. (Guidano, 1991; Feixas, 2004)"
+  },
+  {
+    "nombre": "Metacognición del cambio: monitorización del proceso terapéutico con el paciente",
+    "codigo": "p_feixas_metacognicionCambio",
+    "procesos": ["N_metacognicion","ALI_monitorizacion","ALI_tareas"],
+    "texto": "Procedimiento recurrente donde terapeuta y paciente observan explícitamente cómo está ocurriendo el cambio: qué intervenciones ayudan, cuáles activan amenaza, qué se evita, qué se está pudiendo sostener y qué señales indican avance o estancamiento; se usa un lenguaje claro y colaborativo para convertir el proceso terapéutico en un objeto de reflexión compartida, reforzando agencia y evitando que la terapia se convierta en algo que “le pasa” al paciente sin control o comprensión. (Neimeyer, 1993/2009; Feixas, 2004)"
+  },
+  {
+    "nombre": "Terapia de Rol Fijo (Fixed-Role Therapy) adaptada a objetivos identitarios",
+    "codigo": "p_feixas_rolFijo",
+    "procesos": ["AG_compromisoConductual","I_selfFuturo","N_construccionAlternativa"],
+    "texto": "Procedimiento experiencial donde se diseña, junto al paciente, un rol alternativo coherente con su identidad pero más flexible (un “personaje” viable) y se ensaya en la vida cotidiana durante un periodo acotado; el énfasis está en vivir nuevas anticipaciones y recoger datos sobre qué cambia en emociones, relaciones y autoimagen, usando el ensayo como experimento de significado que amplía el self futuro posible sin exigir una conversión permanente inmediata. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Diseño de experimentos conductuales de significado",
+    "codigo": "p_feixas_experimentosSignificado",
+    "procesos": ["AG_compromisoConductual","N_metacognicion"],
+    "texto": "Procedimiento que propone acciones pequeñas y específicas para poner a prueba anticipaciones y significados nucleares (p. ej., “si digo que no, me rechazan”), recogiendo evidencia experiencial y revisando el sistema de constructos a partir del resultado; se prioriza que el experimento sea semánticamente relevante, graduado y seguro, y que el aprendizaje se formule en términos de nuevas interpretaciones viables, no solo como “éxito/fracaso” conductual. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Trabajo de discrepancias Yo actual – Yo ideal y metas identitarias",
+    "codigo": "p_feixas_yoActualYoIdeal",
+    "procesos": ["I_autoimagen","I_valoresAspiracionales","N_reformulacion"],
+    "texto": "Procedimiento que explora discrepancias entre self actual y self ideal (a menudo visibles en rejilla o en narrativas) para distinguir aspiraciones sanas de mandatos rígidos, clarificar valores nucleares y reformular metas de cambio en términos de identidad viable; se revisan estándares internalizados, se reduce perfeccionismo moralizado y se construyen objetivos alineados con coherencia interna y relación, evitando que el ideal funcione como fuente crónica de vergüenza o autoataque. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Reposicionamiento relacional desde el sistema de significados",
+    "codigo": "p_feixas_posicionRelacional",
+    "procesos": ["I_posicionRelacional","R_sist_roles","R_repertorioInterpersonal"],
+    "texto": "Procedimiento que traduce cambios de significado a nuevas posiciones del self en relación (límites, demandas, reparación, cercanía/distancia), analizando cómo los roles y expectativas del sistema sostienen constructos rígidos; se planifican movimientos relacionales graduados que preserven vínculo y dignidad, anticipando reacciones del entorno y preparando respuestas alternativas para que el cambio identitario no colapse por presión sistémica o por miedo a perder reconocimiento. (Feixas, 2004; Constructivismo social/relacional)"
+  },
+  {
+    "nombre": "Trabajo explícito de rupturas y reparación en clave constructivista",
+    "codigo": "p_feixas_rupturaReparacion",
+    "procesos": ["ALI_rupturaReparacion","RE_coregulacion","N_metacognicion"],
+    "texto": "Procedimiento donde se utilizan tensiones terapéuticas (sensación de juicio, prisa, incomprensión, vergüenza) como datos sobre el sistema de significados del paciente y como oportunidad de reconstrucción relacional; se nombra el impacto, se valida la lógica protectora, se clarifican objetivos/tareas y se co-regula la emoción para que el paciente pueda experimentar una relación donde el significado se negocia sin imposición, consolidando confianza y flexibilidad. (Wampold & Imel, 2015; Feixas, 2004)"
+  }
+],
 
-  "refs": [
-    "Feixas, G. (2004). La psicoterapia constructivista.",
-    "Kelly, G. A. (1955). The Psychology of Personal Constructs.",
-    "Guidano, V. F. (1987/1991). (Obras sobre organización del self y postracionalismo).",
-    "Neimeyer, R. A. (1993/2009). (Obras sobre psicoterapia constructivista y reconstrucción de significado)."
-  ]
+ "micros": [
+  {
+    "nombre": "Nombrar constructos implícitos",
+    "codigo": "m_feixas_nombrarConstructos",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Microintervención destinada a poner palabras precisas a distinciones implícitas con las que el paciente organiza su experiencia (por ejemplo, válido–inútil, cercano–invasivo), ayudándole a reconocer que está usando constructos bipolares y no descripciones objetivas de la realidad; al hacerlos explícitos se reduce fusión identitaria y se abre espacio para explorarlos y flexibilizarlos sin invalidación. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Clarificar anticipaciones",
+    "codigo": "m_feixas_anticipaciones",
+    "procesos": ["N_metacognicion"],
+    "texto": "Intervención breve que explora qué anticipa exactamente el paciente que ocurrirá si actúa de una determinada manera, diferenciando hechos, interpretaciones y consecuencias identitarias anticipadas; permite transformar ansiedad difusa en hipótesis contrastables y preparar experimentos de significado ajustados. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Señalar polarización dicotómica",
+    "codigo": "m_feixas_polarizacion",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Microintervención que detecta y devuelve al paciente lecturas extremas del tipo todo/nada, éxito/fracaso o fuerte/débil, mostrando cómo estas polarizaciones intensifican emoción y bloqueo; el objetivo es introducir gradientes, contextos y matices sin confrontar la lógica interna del constructo. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Explorar excepciones funcionales",
+    "codigo": "m_feixas_excepciones",
+    "procesos": ["N_construccionAlternativa"],
+    "texto": "Búsqueda focalizada de situaciones donde el patrón problemático no se cumple o se cumple de forma menos rígida, utilizándolas como evidencia viva de alternativas ya existentes dentro del sistema de significados del paciente; refuerza agencia y reduce sensación de inevitabilidad. (Feixas, 2004)"
+  },
+  {
+    "nombre": "Detectar dilemas implicativos en vivo",
+    "codigo": "m_feixas_dilemasVivo",
+    "procesos": ["I_conflictosSelf"],
+    "texto": "Identificación inmediata de dilemas del tipo “si cambio en X me convierto en Y” cuando emergen durante la sesión, permitiendo detener escaladas defensivas y trabajar el conflicto identitario en el momento exacto en que se activa. (Feixas, 2004)"
+  },
+  {
+    "nombre": "Desacoplar cambio y amenaza identitaria",
+    "codigo": "m_feixas_desacoplarAmenaza",
+    "procesos": ["I_coherenciaInterna"],
+    "texto": "Microintervención que separa explícitamente el cambio conductual o emocional de una redefinición global del self, reduciendo el miedo a “dejar de ser quien soy” y haciendo el cambio psicológicamente tolerable. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Rotulación emocional fina",
+    "codigo": "m_feixas_rotulacionEmocional",
+    "procesos": ["RE_rotulacion"],
+    "texto": "Ayuda a precisar emociones complejas o mezcladas (vergüenza, culpa, miedo, alivio) asociadas a la revisión de significados, mejorando regulación afectiva y coherencia experiencial durante el proceso de cambio. (Guidano, 1991; Feixas, 2004)"
+  },
+  {
+    "nombre": "Chequeo de coherencia experiencial",
+    "codigo": "m_feixas_chequeoExperiencial",
+    "procesos": ["AP_profundizacion"],
+    "texto": "Breve parada clínica para comprobar si una nueva comprensión o narrativa resuena corporal y emocionalmente o si se vive como forzada; permite ajustar el ritmo y evitar pseudo-cambio cognitivo desconectado del self. (Guidano, 1991; Feixas, 2004)"
+  },
+  {
+    "nombre": "Reformular el síntoma como solución de significado",
+    "codigo": "m_feixas_sintomaSolucion",
+    "procesos": ["N_reformulacion"],
+    "texto": "Intervención que presenta el síntoma como una estrategia coherente para proteger identidad, valor o pertenencia dentro del sistema de significados, reduciendo culpa y resistencia y preparando el terreno para alternativas menos costosas. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Introducir terceras posiciones",
+    "codigo": "m_feixas_tercerasPosiciones",
+    "procesos": ["N_construccionAlternativa"],
+    "texto": "Microtrabajo orientado a generar definiciones que no encajan en la dicotomía dominante (por ejemplo, autonomía con vínculo), ampliando el repertorio identitario sin obligar a elegir entre polos excluyentes. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Ensayo verbal de alternativas",
+    "codigo": "m_feixas_ensayoVerbal",
+    "procesos": ["R_comunicacionEmocional"],
+    "texto": "Pequeños ensayos en sesión donde el paciente prueba a expresarse desde una posición distinta, observando reacciones internas y del terapeuta antes de llevarlo a contextos reales; reduce riesgo y aumenta sensación de control. (Feixas, 2004)"
+  },
+  {
+    "nombre": "Microexperimentos de anticipación",
+    "codigo": "m_feixas_microexperimentos",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Diseño de acciones mínimas y reversibles para contrastar anticipaciones clave, recogiendo aprendizaje en términos de significado y no solo de resultado conductual. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Lectura metacognitiva del feedback",
+    "codigo": "m_feixas_feedback",
+    "procesos": ["N_metacognicion"],
+    "texto": "Ayuda a interpretar reacciones propias y del entorno como información para ajustar constructos y no como confirmación de defectos personales, previniendo recaídas identitarias. (Feixas, 2004)"
+  },
+  {
+    "nombre": "Alinear cambio con valores nucleares",
+    "codigo": "m_feixas_valores",
+    "procesos": ["I_valoresAspiracionales"],
+    "texto": "Breves preguntas que conectan alternativas emergentes con valores profundos del paciente, asegurando que el cambio tenga sentido identitario y motivacional. (Kelly, 1955; Feixas, 2004)"
+  },
+  {
+    "nombre": "Normalizar la incertidumbre del cambio",
+    "codigo": "m_feixas_incertidumbre",
+    "procesos": ["RE_modulacion"],
+    "texto": "Intervención que valida la incomodidad y ambigüedad propias de revisar constructos nucleares, ayudando a regular emoción y sostener el proceso sin volver a soluciones rígidas. (Guidano, 1991; Feixas, 2004)"
+  },
+  {
+    "nombre": "Cerrar provisionalmente significados",
+    "codigo": "m_feixas_cierreProvisional",
+    "procesos": ["I_continuidadBiografica"],
+    "texto": "Pequeños cierres narrativos temporales que integran lo trabajado hasta el momento en una historia coherente, evitando desorganización del self y preparando el siguiente paso terapéutico. (Neimeyer, 2009; Feixas, 2004)"
+  }
+],
+
+ "ideasPrincipales": [
+  {
+    "id": "idea_feixas_1",
+    "titulo": "La psicoterapia es un proceso de reconstrucción del significado, no de corrección del síntoma",
+    "desarrollo": "La psicoterapia constructivista integrativa entiende el malestar psicológico como el resultado de sistemas de significado rígidos, estrechos o incoherentes, más que como la presencia de síntomas aislados que deban ser eliminados directamente. El cambio terapéutico se produce cuando el paciente puede revisar, ampliar y reorganizar los significados con los que interpreta su experiencia, de modo que emociones, conductas y relaciones se transforman como consecuencia de una reconstrucción más profunda y sostenible del sentido personal. (Feixas, 2004; Kelly, 1955)."
+  },
+  {
+    "id": "idea_feixas_2",
+    "titulo": "El self es una organización dinámica de constructos y narrativas en interacción con la experiencia",
+    "desarrollo": "Desde este modelo, el self no se concibe como una entidad fija ni como un conjunto de rasgos estables, sino como una organización dinámica de constructos personales, narrativas autobiográficas y coherencia experiencial que se actualiza constantemente en relación con la historia y el contexto. La identidad se mantiene por la coherencia del sistema de significados y no por la ausencia de conflicto; por ello, el cambio implica reorganizar dicha coherencia más que sustituir una identidad por otra. (Kelly, 1955; Guidano, 1991; Feixas, 2004)."
+  },
+  {
+    "id": "idea_feixas_3",
+    "titulo": "El sufrimiento se mantiene por rigidez, dilemas identitarios y costes del cambio",
+    "desarrollo": "El malestar psicológico persiste cuando el sistema de significados se vuelve rígido o cuando el cambio amenaza aspectos nucleares de la identidad, generando dilemas implicativos del tipo “si cambio, dejo de ser quien soy”. Estos dilemas explican muchas resistencias terapéuticas aparentes y muestran que la estabilidad del sufrimiento puede ser preferible a una pérdida de coherencia o pertenencia. La terapia debe identificar y trabajar estos costes para que el cambio sea viable. (Feixas, 2004; Kelly, 1955)."
+  },
+  {
+    "id": "idea_feixas_4",
+    "titulo": "El cambio psicológico requiere coherencia experiencial, no solo comprensión intelectual",
+    "desarrollo": "Comprender una nueva explicación o narrativa no garantiza el cambio si esta no se integra a nivel emocional y corporal. La psicoterapia constructivista integrativa subraya la necesidad de contrastar cualquier reconstrucción del significado con la experiencia vivida del paciente, asegurando que el cambio sea sentido como auténtico y no como una adaptación defensiva o meramente racional. La coherencia experiencial es un criterio central de progreso terapéutico. (Guidano, 1991; Feixas, 2004)."
+  },
+  {
+    "id": "idea_feixas_5",
+    "titulo": "La terapia es una investigación colaborativa sobre la experiencia del paciente",
+    "desarrollo": "El terapeuta no actúa como un experto que corrige interpretaciones erróneas, sino como un colaborador que acompaña al paciente en la exploración de su propio sistema de significados. El proceso terapéutico se organiza como una investigación compartida: se formulan hipótesis, se contrastan mediante experiencias y se revisan a la luz de los resultados. Esta postura incrementa agencia, reduce defensividad y fortalece la alianza terapéutica. (Kelly, 1955; Feixas, 2004)."
+  },
+  {
+    "id": "idea_feixas_6",
+    "titulo": "La evidencia empírica idiográfica es compatible con una práctica clínica profunda",
+    "desarrollo": "La integración de herramientas como la Rejilla de Constructos y su análisis asistido por software muestra que es posible combinar rigor empírico e intervención clínica profunda sin reducir la complejidad subjetiva. La evidencia se construye a partir del propio sistema de significados del paciente, permitiendo monitorizar el cambio sin imponer categorías externas ni perder la singularidad del caso. (Feixas, 2004; Fransella & Bannister, 1977)."
+  },
+  {
+    "id": "idea_feixas_7",
+    "titulo": "La salud psicológica se expresa como flexibilidad, agencia y continuidad biográfica",
+    "desarrollo": "El bienestar psicológico se define por la capacidad de la persona para interpretar su experiencia de múltiples maneras, tomar decisiones con mayor libertad interna y mantener una sensación de continuidad biográfica coherente. El objetivo de la terapia no es eliminar el conflicto ni alcanzar certeza absoluta, sino ampliar el repertorio de significados y posiciones del self disponibles para afrontar la vida con mayor agencia y sentido. (Kelly, 1955; Neimeyer, 2009; Feixas, 2004)."
+  },
+  {
+    "id": "idea_feixas_8",
+    "titulo": "El proceso terapéutico debe ser monitorizado y ajustado de forma reflexiva",
+    "desarrollo": "La psicoterapia constructivista integrativa concibe el propio proceso terapéutico como objeto de reflexión continua. Observar qué ayuda, qué bloquea y cómo se vive el cambio permite ajustar objetivos, tareas y ritmo, evitando estancamientos y promoviendo una metacognición del cambio que refuerza la implicación activa del paciente y la eficacia clínica. (Neimeyer, 2009; Feixas, 2004)."
+  }
+],
+
+
+"refs": [
+  "Feixas, G. (2004). *La psicoterapia constructivista*. Barcelona: Paidós.",
+  "Feixas, G., & Villegas, M. (2000). *Constructivismo y psicoterapia: fundamentos teóricos y aplicaciones clínicas*. Barcelona: Paidós.",
+  "Feixas, G., & Saúl, L. A. (2004). *La rejilla de constructos personales: fundamentos teóricos, metodología y aplicaciones clínicas*. Barcelona: Paidós.",
+  "Feixas, G., & Saúl, L. A. (2005). *Evaluación y cambio en psicoterapia constructivista: aplicaciones de la técnica de la rejilla*. Revista de Psicoterapia, 16(61), 5–28.",
+  "Feixas, G., & Neimeyer, R. A. (2001). *Meaning reconstruction in psychotherapy: Constructivist perspectives*. Washington, DC: American Psychological Association."
+]
+
 }
