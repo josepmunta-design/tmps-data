@@ -130,38 +130,117 @@
   }
 ],
 
-  "micros": [
-    {
-      "nombre": "Explorar ambos polos del significado",
-      "codigo": "m_ugazio_polos",
-      "procesos": ["N_marcosCognitivos"],
-      "texto": "Microintervención que invita a describir y comprender los dos polos de una polaridad semántica, explorando qué valor, riesgo y función tiene cada uno. Reduce la vivencia dicotómica y favorece una comprensión más compleja del self y de los otros. (Ugazio, 2013)"
-    },
-    {
-      "nombre": "Detectar dilemas identitarios",
-      "codigo": "m_ugazio_dilemas",
-      "procesos": ["I_conflictosSelf"],
-      "texto": "Identificación de dilemas del tipo “si me muevo hacia este polo, pierdo quién soy”. Permite hacer visibles los costes identitarios anticipados del cambio y trabajar su integración. (Ugazio, 2013)"
-    },
-    {
-      "nombre": "Preguntas de flexibilización semántica",
-      "codigo": "m_ugazio_preguntas",
-      "procesos": ["N_construccionAlternativa"],
-      "texto": "Uso de preguntas que introducen excepciones, matices y contextos donde la polaridad no opera de forma rígida. Facilita la apertura de nuevas interpretaciones y reduce la sensación de destino identitario. (Ugazio, 2013)"
-    },
-    {
-      "nombre": "Reautoría de la posición del self",
-      "codigo": "m_ugazio_reautoria",
-      "procesos": ["I_continuidadBiografica","N_narrativaAutobiografica"],
-      "texto": "Microintervención narrativa que ayuda a reconstruir la historia personal desde una posición menos polarizada, integrando experiencias pasadas y presentes en una identidad más flexible y coherente. (Ugazio, 2013)"
-    },
-    {
-      "nombre": "Experimentación relacional guiada",
-      "codigo": "m_ugazio_experimentos",
-      "procesos": ["AG_compromisoConductual","R_repertorioInterpersonal"],
-      "texto": "Pequeños experimentos en la relación cotidiana que permiten ensayar nuevas posiciones frente a los otros, observando cómo cambia el significado y la respuesta relacional. Refuerza agencia y aprendizaje experiencial. (Ugazio, 2013)"
-    }
-  ],
+ "micros": [
+  {
+    "nombre": "Exploración guiada de ambos polos",
+    "codigo": "m_ugazio_explorarPolos",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Microintervención que invita a describir con detalle ambos polos de una polaridad semántica (emociones, valores, riesgos, ventajas, imágenes asociadas), evitando jerarquías implícitas. Permite reducir la lectura moralizada del polo opuesto y aumentar complejidad cognitiva y emocional, debilitando la rigidez identitaria asociada a la dicotomía. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Nombrar el campo semántico",
+    "codigo": "m_ugazio_nominarCampo",
+    "procesos": ["N_metacognicion"],
+    "texto": "Acto clínico de poner nombre explícito al campo semántico dominante (“aquí parece que todo se organiza entre control y libertad”), facilitando que el paciente lo observe como una construcción relacional y no como una verdad natural. Este nombrar introduce distancia reflexiva y reduce fusión con la identidad polarizada. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Señalar reglas implícitas",
+    "codigo": "m_ugazio_reglasImplicitas",
+    "procesos": ["R_sist_roles"],
+    "texto": "Microintervención que hace visibles reglas no dichas del sistema (“aquí no se puede necesitar”, “mostrar debilidad tiene consecuencias”), ayudando a comprender cómo se sostienen las posiciones polares. Al explicitar la regla, se abre la posibilidad de cuestionarla sin atacar a las personas. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Detectar dilemas semánticos en vivo",
+    "codigo": "m_ugazio_dilemasVivo",
+    "procesos": ["I_conflictosSelf"],
+    "texto": "Identificación inmediata de dilemas que emergen en sesión cuando el paciente se aproxima al polo prohibido (“si digo esto, quedaré como egoísta”). Permite frenar escaladas defensivas y trabajar el conflicto identitario en el momento exacto en que se activa. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Reformular el síntoma como solución semántica",
+    "codigo": "m_ugazio_sintomaSolucion",
+    "procesos": ["N_reformulacion"],
+    "texto": "Intervención breve que presenta el síntoma como una forma coherente de sostener pertenencia, valor o equilibrio dentro del campo semántico, reduciendo culpa y resistencia. Facilita una comprensión funcional del problema sin cronificarlo. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Introducir excepciones semánticas",
+    "codigo": "m_ugazio_excepciones",
+    "procesos": ["N_construccionAlternativa"],
+    "texto": "Búsqueda activa de contextos, momentos o relaciones donde la polaridad no opera de forma rígida, mostrando que el campo semántico no es total ni omnipresente. Estas excepciones funcionan como grietas por donde introducir nuevas posiciones. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Preguntas circulares de significado",
+    "codigo": "m_ugazio_preguntasCirculares",
+    "procesos": ["R_sist_ciclos"],
+    "texto": "Uso de preguntas que conectan conductas, significados y reacciones de los otros (“cuando tú te colocas aquí, ¿qué significado toma el otro y cómo responde?”), aumentando conciencia de circularidad y reduciendo atribuciones lineales. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Señalar oscilaciones defensivas",
+    "codigo": "m_ugazio_oscilaciones",
+    "procesos": ["I_posicionRelacional"],
+    "texto": "Microintervención que hace visibles cambios rápidos de polo (por ejemplo, de inferioridad a superioridad defensiva) como intentos de autorregulación identitaria. Ayuda a estabilizar el self y a reconocer patrones sin juicio. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Validación contextual del polo evitado",
+    "codigo": "m_ugazio_validacionPolo",
+    "procesos": ["RE_aceptacion"],
+    "texto": "Intervención que legitima emocionalmente el polo rechazado o temido, mostrando su sentido histórico y relacional. Reduce vergüenza y miedo al cambio, facilitando exploración sin desorganización afectiva. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Construcción de terceras posiciones",
+    "codigo": "m_ugazio_tercerasPosiciones",
+    "procesos": ["I_coherenciaInterna"],
+    "texto": "Microtrabajo clínico orientado a formular posiciones integradoras que no encajan en ninguno de los polos tradicionales, ampliando la identidad sin vivirse como traición. Favorece coherencia interna y crecimiento del self. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Ensayo verbal de nuevas posiciones",
+    "codigo": "m_ugazio_ensayoVerbal",
+    "procesos": ["R_comunicacionEmocional"],
+    "texto": "Pequeños ensayos conversacionales en sesión donde el paciente prueba a expresarse desde una posición distinta, observando reacciones internas y externas antes de llevarlo al contexto real. Reduce riesgo y aumenta confianza. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Microajustes de límites",
+    "codigo": "m_ugazio_limites",
+    "procesos": ["R_limitesInterpersonales"],
+    "texto": "Intervención focal que ayuda a introducir límites ligeramente distintos a los habituales, sin ruptura brusca del sistema. Permite experimentar cambios sostenibles en la posición relacional. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Desidentificación del rol familiar",
+    "codigo": "m_ugazio_desidentificacion",
+    "procesos": ["I_autoimagen"],
+    "texto": "Microintervención que separa al paciente del rol semántico asignado (“el fuerte”, “la dependiente”), mostrando que es una posición relacional y no la totalidad de su identidad. Aumenta libertad subjetiva. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Conectar cambio con valores relacionales",
+    "codigo": "m_ugazio_valoresRelacionales",
+    "procesos": ["R_valoresRelacionales"],
+    "texto": "Breves preguntas que vinculan el movimiento fuera de la polaridad con el tipo de relación que la persona quiere construir, alineando cambio identitario con ética del vínculo y sentido relacional. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Diseño de experimentos semánticos mínimos",
+    "codigo": "m_ugazio_experimentosMinimos",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Propuesta de acciones pequeñas y reversibles que permitan probar una nueva posición del self y observar cómo cambia el significado relacional, reduciendo miedo al error y favoreciendo aprendizaje experiencial. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Lectura semántica de reacciones del entorno",
+    "codigo": "m_ugazio_feedbackEntorno",
+    "procesos": ["N_metacognicion"],
+    "texto": "Microintervención que ayuda a interpretar las respuestas del entorno no como confirmación del fracaso personal, sino como ajustes del sistema ante una novedad semántica, previniendo recaídas identitarias. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Normalización de la incomodidad del cambio",
+    "codigo": "m_ugazio_normalizacion",
+    "procesos": ["RE_modulacion"],
+    "texto": "Intervención breve que anticipa y normaliza la incomodidad emocional asociada a salir de una polaridad rígida, ayudando a regular afecto y sostener el proceso sin abandonar el cambio. (Ugazio, 2013)"
+  },
+  {
+    "nombre": "Cierre semántico provisional",
+    "codigo": "m_ugazio_cierreProvisional",
+    "procesos": ["I_continuidadBiografica"],
+    "texto": "Pequeños cierres narrativos temporales que integran lo trabajado en una historia coherente hasta el momento, evitando desorganización identitaria y preparando el terreno para el siguiente movimiento terapéutico. (Ugazio, 2013)"
+  }
+],
+
 
   "refs": [
     "Ugazio, V. (2013). Semantic Polarities and Psychopathologies. London: Routledge."
