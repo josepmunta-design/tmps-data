@@ -1,6 +1,6 @@
 {
   "subprocesoId": "R_sist_triangulos",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 4,
   "modelos": [
     {
@@ -14,7 +14,8 @@
           "codigo": "p_ugazio_apoyoAlianzas",
           "nombre": "Movilización de apoyo y reconfiguración de alianzas",
           "texto": "Procedimiento que identifica redes de apoyo y alianzas/triangulaciones que mantienen la polaridad (coaliciones implícitas, lealtades invisibles, mensajeros) y reconfigura el sistema para sostener cambios sin aislamiento del miembro que se reposiciona. Se trabaja para redistribuir carga emocional, reducir triangulaciones improductivas y favorecer vínculos que validen nuevas identidades emergentes. El objetivo es que el cambio sea viable relacionalmente y no dependa solo de voluntad individual. (Ugazio, 2013)",
-          "sub": "R_sist_triangulos"
+          "sub": "R_sist_triangulos",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -29,7 +30,8 @@
           "codigo": "p_linares_triangulos",
           "nombre": "Trabajo sobre triangulaciones y alianzas",
           "texto": "Identificación de coaliciones, triangulaciones y desplazamientos de conflicto (p. ej., pareja–hijo). Se reorganiza la comunicación para devolver la responsabilidad al subsistema adecuado y facilitar reparación directa, evitando que el síntoma sostenga equilibrio disfuncional.",
-          "sub": "R_sist_triangulos"
+          "sub": "R_sist_triangulos",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -44,13 +46,15 @@
           "codigo": "p_bowen_destriangulacion",
           "nombre": "Destriangulación activa",
           "texto": "La destriangulación apunta a salir de los triángulos que estabilizan la ansiedad (p. ej., madre-hijo contra padre). El consultante aprende a no quedar atrapado como tercer vértice regulador del sistema y a devolver los conflictos a la díada correspondiente mediante presencia calma y comunicación directa. No es ‘retirarse’, sino cambiar la propia participación: sostener cercanía sin fusionarse y sostener autonomía sin cortar. Esta intervención suele ser el punto de inflexión cuando los síntomas estaban sirviendo para regular la tensión del sistema.",
-          "sub": "R_sist_triangulos"
+          "sub": "R_sist_triangulos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_bowen_nombrar_triangulo",
           "nombre": "Nombrar triángulo en tiempo real",
           "texto": "Señalar de forma descriptiva cómo aparece la triangulación (‘cuando tú y tu madre habláis, tu padre queda fuera y sube la tensión’). No se usa para acusar, sino para hacer visible la función reguladora del tercero. Nombrarlo suele reducir automáticamente la fuerza del patrón y abre alternativas de destriangulación.",
-          "sub": "R_sist_triangulos"
+          "sub": "R_sist_triangulos",
+          "tipo": "micro"
         }
       ]
     },
@@ -65,13 +69,15 @@
           "codigo": "p_struct_coaliciones",
           "nombre": "Desarticulación de coaliciones",
           "texto": "Identificación e interrupción de alianzas encubiertas que sostienen el síntoma. Se redistribuye la lealtad hacia subsistemas funcionales.",
-          "sub": "R_sist_triangulos"
+          "sub": "R_sist_triangulos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_struct_bloqueo",
           "nombre": "Bloqueo de coalición en vivo",
           "texto": "Interrumpir una alianza disfuncional en sesión para desactivar el patrón.",
-          "sub": "R_sist_triangulos"
+          "sub": "R_sist_triangulos",
+          "tipo": "micro"
         }
       ]
     }

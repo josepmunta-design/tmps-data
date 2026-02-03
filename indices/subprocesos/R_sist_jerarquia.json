@@ -1,6 +1,6 @@
 {
   "subprocesoId": "R_sist_jerarquia",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 2,
   "modelos": [
     {
@@ -14,13 +14,15 @@
           "codigo": "p_strat_jerarquias",
           "nombre": "Manipulación de jerarquías",
           "texto": "Intervenciones diseñadas para modificar posiciones de poder y autoridad dentro del sistema, devolviendo liderazgo funcional o desactivando coaliciones.",
-          "sub": "R_sist_jerarquia"
+          "sub": "R_sist_jerarquia",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_strat_control",
           "nombre": "Señalar control encubierto",
           "texto": "Hacer visible cómo el síntoma regula poder y evita confrontaciones directas.",
-          "sub": "R_sist_jerarquia"
+          "sub": "R_sist_jerarquia",
+          "tipo": "micro"
         }
       ]
     },
@@ -35,7 +37,8 @@
           "codigo": "p_struct_parental",
           "nombre": "Fortalecimiento del subsistema parental",
           "texto": "Se refuerza la autoridad parental funcional, evitando coaliciones con hijos. El terapeuta modela liderazgo claro y coherente.",
-          "sub": "R_sist_jerarquia"
+          "sub": "R_sist_jerarquia",
+          "tipo": "procedimiento"
         }
       ]
     }

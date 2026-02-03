@@ -1,6 +1,6 @@
 {
   "subprocesoId": "R_comunicacionEmocional",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 29,
   "modelos": [
     {
@@ -14,37 +14,43 @@
           "codigo": "p_sst_modelado",
           "nombre": "Modelado (demostración de la conducta objetivo)",
           "texto": "Procedimiento en el que el terapeuta o un modelo preparado ejecuta la conducta social deseada de forma visible y estructurada, mostrando verbalizaciones, tono, postura, contacto ocular, pausas y reparación de pequeños fallos; el objetivo es proporcionar una plantilla concreta que reduzca incertidumbre, aumente comprensión implícita y facilite la imitación selectiva de microconductas clave, especialmente en pacientes con carencias de aprendizaje social o alta ansiedad interpersonal.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_sst_escucha_validacion",
           "nombre": "Entrenamiento en escucha activa y validación",
           "texto": "Procedimiento específico para aumentar competencia receptiva: practicar la atención sostenida, reflejo de contenido y emoción, preguntas abiertas, y validación contextual sin ceder la propia posición; se entrenan señales paraverbales (entonación, pausas, ritmo) y microconductas de seguimiento, con el objetivo de reducir malentendidos, mejorar reciprocidad y crear interacciones más seguras, especialmente útil cuando los conflictos se mantienen por reactividad, interrupciones o interpretaciones defensivas.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_sst_conversacion",
           "nombre": "Entrenamiento en habilidades conversacionales (inicio, mantenimiento, cierre)",
           "texto": "Procedimiento para aumentar fluidez social entrenando aperturas simples, preguntas de seguimiento, autorrevelación gradual, señalización de interés y cierres adecuados, ajustando el estilo al contexto (formal/informal) y al objetivo (conectar, pedir, informar); se trabaja especialmente en ansiedad social y retraimiento, donde la dificultad no es “saber qué hacer” en abstracto sino ejecutar secuencias mínimas con naturalidad bajo activación.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_sst_pausa_reformular",
           "nombre": "Pausa y reformulación durante el ensayo",
           "texto": "Interrupción breve del role-play para regular activación y reintentar una frase o gesto con más claridad, evitando que el paciente practique errores bajo estrés y facilitando aprendizaje por repetición inmediata de la versión funcional.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         },
         {
           "codigo": "m_sst_no_verbal",
           "nombre": "Entrenamiento de contacto ocular, postura y prosodia",
           "texto": "Trabajo focal sobre componentes no verbales que cambian drásticamente el impacto interpersonal (mirada, distancia, tono, ritmo, volumen), entrenándolos como habilidades específicas y no como rasgos de personalidad; ayuda a mejorar recepción social incluso cuando el contenido verbal es adecuado.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         },
         {
           "codigo": "m_sst_turn_taking",
           "nombre": "Preguntas abiertas y seguimiento (turn-taking)",
           "texto": "Microintervención para mantener conversaciones fluidas entrenando preguntas abiertas, reflejos breves y señales de continuidad, reduciendo monólogos, silencios por bloqueo o interrogatorios rígidos, y mejorando reciprocidad sin forzar intimidad.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -59,13 +65,15 @@
           "codigo": "p_ugazio_enactments",
           "nombre": "Enactments conversacionales para cambiar la danza",
           "texto": "Procedimiento que utiliza momentos en sesión para observar y modificar en vivo los patrones de interacción que sostienen la polaridad (interrupciones, acusaciones, rescates, silencios, escaladas). Se guía la comunicación para que aparezcan significados implícitos, necesidades y temores asociados a cada polo, ayudando a que los miembros del sistema se escuchen en un registro menos defensivo. El objetivo es alterar la danza relacional en tiempo real y crear nuevas experiencias comunicativas que debiliten la confirmación automática del campo semántico. (Ugazio, 2013)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_ugazio_ensayoVerbal",
           "nombre": "Ensayo verbal de nuevas posiciones",
           "texto": "Pequeños ensayos conversacionales en sesión donde el paciente prueba a expresarse desde una posición distinta, observando reacciones internas y externas antes de llevarlo al contexto real. Reduce riesgo y aumenta confianza. (Ugazio, 2013)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -80,7 +88,8 @@
           "codigo": "m_feixas_ensayoVerbal",
           "nombre": "Ensayo verbal de alternativas",
           "texto": "Pequeños ensayos en sesión donde el paciente prueba a expresarse desde una posición distinta, observando reacciones internas y del terapeuta antes de llevarlo a contextos reales; reduce riesgo y aumenta sensación de control. (Feixas, 2004)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -95,7 +104,8 @@
           "codigo": "p_hermans_reposicionamientoRelacional",
           "nombre": "Reposicionamiento del self en relaciones (positioning & repositioning)",
           "texto": "Procedimiento que conecta posiciones internas con roles y guiones relacionales (“cuando estoy con mi jefe aparece mi yo sumiso”, “con mi pareja aparece mi yo controlador”) y trabaja un reposicionamiento elegido (más agencia, más autenticidad, más límites). Incluye definir la nueva posición, anticipar resistencias internas, practicar mensajes emocionales y sostener fronteras interpersonales, para que el cambio identitario se traduzca en interacción real y no quede solo como insight. (Hermans, 1996).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -110,13 +120,15 @@
           "codigo": "p_colab_lenguajeLocal",
           "nombre": "Trabajo con el lenguaje del cliente (lenguaje local)",
           "texto": "Procedimiento que consiste en seguir de cerca el vocabulario, metáforas, categorías y giros lingüísticos del consultante, evitando traducirlos a jergas profesionales o etiquetas psicopatológicas; el terapeuta utiliza el mismo lenguaje del cliente para co-construir significado, lo que incrementa sintonía, reduce asimetría de poder y permite que las nuevas narrativas sean vivibles y transportables fuera de sesión. (Anderson, 1997)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_colab_reflejoLenguaje",
           "nombre": "Reflejo fiel del lenguaje del cliente",
           "texto": "Uso deliberado de las mismas palabras, metáforas y expresiones del consultante al devolver lo escuchado, evitando traducciones técnicas o reinterpretaciones. Este reflejo aumenta la sensación de ser comprendido, fortalece la alianza y facilita que el cliente se escuche a sí mismo desde una nueva posición reflexiva. (Anderson, 1997)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -131,13 +143,15 @@
           "codigo": "p_od_reunion_abierta",
           "nombre": "Reunión abierta en presencia del paciente",
           "texto": "Procedimiento central en el que todas las conversaciones clínicas relevantes se realizan en presencia del paciente y su red, evitando deliberaciones profesionales cerradas o decisiones ocultas. Esta transparencia radical promueve confianza, reduce asimetrías de poder y convierte el encuentro en un espacio genuinamente dialógico donde cada voz puede ser escuchada y respondida (Seikkula, 2006).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_od_eco_dialogico",
           "nombre": "Eco dialógico",
           "texto": "Microintervención básica que consiste en devolver al hablante partes de sus propias palabras, manteniendo su lenguaje, tono y ritmo, sin reinterpretar ni corregir. El eco dialógico confirma que la voz ha sido escuchada y respetada, favoreciendo la continuidad del discurso y la emergencia de nuevos significados desde la propia experiencia del paciente o familiar. No busca clarificar ni cerrar, sino sostener el flujo conversacional (Seikkula, 2006; Olson et al., 2014).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -152,7 +166,8 @@
           "codigo": "m_nar_reflexiones_testigos",
           "nombre": "Reflexiones de testigos externos",
           "texto": "Tras escuchar la historia preferida, los testigos externos comparten qué les ha resonado, qué valores reconocen y cómo se han visto afectados por el relato. Esta microintervención aporta reconocimiento social y refuerza la legitimidad de la nueva identidad (White, 2007, *Maps of Narrative Practice*).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -167,7 +182,8 @@
           "codigo": "m_aedp_validacion",
           "nombre": "Validación explícita",
           "texto": "El terapeuta valida activamente la experiencia emocional del paciente, reduciendo vergüenza y aislamiento.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -182,7 +198,8 @@
           "codigo": "p_mi_oars_preguntas_abiertas",
           "nombre": "OARS: Preguntas abiertas (Open questions)",
           "texto": "Las preguntas abiertas abren espacio psicológico: permiten que el cliente explore significados, emociones y conflictos sin quedar encerrado en respuestas de sí/no. En MI se usan para dirigir suavemente hacia valores, discrepancias y posibilidades, sin presionar. Una buena pregunta abierta hace que el cliente piense y se escuche, y esa autoescucha es el combustible del cambio.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -197,13 +214,15 @@
           "codigo": "p_encuentro_grupal",
           "nombre": "Encuentro grupal no directivo",
           "texto": "Procedimiento central de los Grupos de Encuentro en el que el facilitador crea un clima de seguridad, aceptación y respeto sin dirigir contenidos específicos. El grupo se convierte en un espacio donde los participantes pueden expresarse libremente, explorar emociones y construir significado a partir del contacto directo con los demás (Rogers, 1970).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_encuentro_feedback",
           "nombre": "Feedback auténtico",
           "texto": "Expresión honesta y respetuosa del impacto interpersonal que otro miembro genera en uno mismo. Facilita conciencia relacional, ajuste de la autoimagen y profundización del contacto interpersonal (Rogers, 1970).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -218,7 +237,8 @@
           "codigo": "m_psdrama_inversion",
           "nombre": "Inversión de roles",
           "texto": "Intervención clave del Psicodrama en la que el protagonista asume el rol de otra persona significativa. Permite comprender la experiencia del otro, flexibilizar posiciones rígidas y promover empatía relacional profunda (Moreno, 1953).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -233,19 +253,22 @@
           "codigo": "p_esalen_encuentros",
           "nombre": "Encuentros experienciales",
           "texto": "Procedimiento relacional que promueve encuentros auténticos entre participantes mediante la expresión emocional directa, la escucha profunda y el feedback honesto. Estos encuentros generan experiencias correctivas de contacto, validación y reconocimiento mutuo (Murphy & Price, 1979).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_esalen_miniencounters",
           "nombre": "Mini-encounters",
           "texto": "Encuentros breves e intensos entre participantes que facilitan expresión emocional directa, contacto auténtico y ajuste relacional fino en un tiempo limitado (Murphy & Price, 1979).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         },
         {
           "codigo": "m_esalen_feedback",
           "nombre": "Feedback auténtico",
           "texto": "Intercambio honesto y directo de percepciones y vivencias interpersonales, orientado a aumentar la conciencia relacional y la coherencia entre experiencia interna y expresión externa (Murphy & Price, 1979).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -260,13 +283,15 @@
           "codigo": "p_pospsy_carta_gratitud",
           "nombre": "Carta y/o visita de gratitud (intervención relacional)",
           "texto": "Redactar y comunicar gratitud específica a una figura relevante. Se prepara la escena, se anticipan reacciones y se procesa el impacto emocional posterior para consolidar vínculo y sentido.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_pospsy_contacto_relacional",
           "nombre": "Contacto relacional positivo intencional",
           "texto": "Sugerir una microacción relacional (mensaje, agradecimiento específico, petición clara) alineada con el valor del vínculo.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -281,13 +306,15 @@
           "codigo": "p_exist_dialogo_profundo",
           "nombre": "Diálogo de profundidad",
           "texto": "Procedimiento dialógico que sostiene conversaciones de alta densidad experiencial, donde el terapeuta ayuda a mantener el contacto con lo vivido (no solo con ideas) y a expresar necesidades, miedos y anhelos con precisión emocional, facilitando autenticidad relacional (Schneider, Bugental & Pierson, 2015).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_exist_no_dicho",
           "nombre": "Nombrar lo no dicho",
           "texto": "Microintervención que invita a poner palabras a lo implícito en la relación o en el dilema (“hay algo que no estás diciendo aún”). Facilita autenticidad y reduce juegos relacionales defensivos (Schneider, Bugental & Pierson, 2015).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -302,7 +329,8 @@
           "codigo": "m_bugental_autorrevelacion",
           "nombre": "Autorrevelación prudente del terapeuta",
           "texto": "Uso cuidadoso y limitado de la experiencia interna del terapeuta como herramienta relacional. Busca aumentar autenticidad y profundidad del encuentro sin desplazar el foco del proceso del cliente (Bugental, 1965).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -317,7 +345,8 @@
           "codigo": "p_exp_reflejo",
           "nombre": "Reflejo empático procesual",
           "texto": "Reflejo empático que no solo devuelve contenido, sino que acompaña el proceso experiencial, destacando matices emergentes y facilitando profundización.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -332,25 +361,29 @@
           "codigo": "p_wachtel_comunicacionCiclo",
           "nombre": "Entrenamiento de comunicación emocional con foco en el ciclo",
           "texto": "Procedimiento que entrena formas de comunicación emocional directa y no acusatoria, ayudando al paciente a expresar necesidades, límites y afectos sin recurrir a estilos indirectos como la queja, el sarcasmo, la retirada o el ataque, que suelen mantener el ciclo. Se practican guiones breves, validación emocional y reparaciones relacionales para reducir malentendidos y crear transacciones cotidianas menos reactivas. (Wachtel, 2011; Wachtel, 2008)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_wachtel_necesidadEstrategia",
           "nombre": "Diferenciar necesidad de estrategia",
           "texto": "Microintervención que ayuda a distinguir entre la necesidad legítima subyacente (cercanía, respeto, seguridad, reconocimiento) y la estrategia defensiva utilizada para intentar satisfacerla (ataque, retirada, test, control). Esta diferenciación permite conservar la legitimidad del deseo mientras se cuestiona la forma, abriendo la posibilidad de pedir lo mismo de manera directa y menos reactiva, reduciendo así la escalada relacional. (Wachtel, 2008)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         },
         {
           "codigo": "m_wachtel_peticionDirecta",
           "nombre": "Ensayo breve de petición directa",
           "texto": "Microintervención de role-play breve (30–60 segundos) que permite ensayar una petición clara, directa y no acusatoria, sustituyendo estilos indirectos característicos del ciclo como la queja, la retirada o el ataque encubierto. Este ensayo aumenta la probabilidad de respuestas diferentes por parte del entorno y reduce la ansiedad asociada a pedir de forma explícita. (Wachtel, 2011)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         },
         {
           "codigo": "m_wachtel_reparacionMinima",
           "nombre": "Reparación mínima en el momento",
           "texto": "Microintervención que enseña a realizar una reparación relacional breve cuando el ciclo ya se ha activado, combinando reconocimiento del impacto, clarificación de la intención y un reintento inmediato. Esta reparación mínima evita que la interacción complete la secuencia confirmatoria habitual y entrena la capacidad de corregir el rumbo sin retirarse ni escalar el conflicto. (Wachtel, 2011)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -365,19 +398,22 @@
           "codigo": "p_lazarus_interpersonal_habilidades",
           "nombre": "Intervención en Interpersonal (I) mediante habilidades y repertorio relacional",
           "texto": "Procedimiento orientado a ampliar el repertorio interpersonal del paciente mediante entrenamiento de habilidades (asertividad, pedir, rechazar, negociar, validar, reparar), análisis de patrones y tareas de aplicación en contextos reales. Se usa cuando los problemas relacionales sostienen el malestar o bloquean cambios en otras modalidades, y se evalúa por resultados concretos en interacciones cotidianas. (Lazarus, 1976; Lazarus, 1989)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lazarus_roleplay_generalizacion",
           "nombre": "Ensayo conductual y role-playing para generalización",
           "texto": "Procedimiento de práctica en sesión de conductas específicas (peticiones, límites, conversaciones difíciles, afrontamiento) mediante role-play, con feedback y repetición hasta lograr una ejecución mínima viable. Se orienta a la generalización: que el paciente pueda usar la conducta en el contexto real, reduciendo evitación y aumentando sensación de competencia, especialmente cuando lo interpersonal es un mantenedor central. (Lazarus, 1976; Lazarus, 1989)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_lazarus_ensayo_habilidad",
           "nombre": "Ensayo breve de habilidad interpersonal",
           "texto": "Microintervención de role-play muy breve para practicar una habilidad concreta (pedir, decir no, validar, expresar desacuerdo), centrada en lograr una versión mínimamente eficaz y utilizable fuera de sesión. (Lazarus, 1976)",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -392,19 +428,22 @@
           "codigo": "p_balint_demanda_a_peticion",
           "nombre": "Transformación de la demanda difusa en petición directa",
           "texto": "Intervención orientada a convertir la urgencia regresiva —expresada como queja, reproche o síntoma— en peticiones claras, dosificadas y comunicables, modelando lenguaje directo y ensayando solicitudes que preserven vínculo y responsabilidad personal.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_balint_pedir_concrecion",
           "nombre": "Pedir concreción cuando la demanda es difusa",
           "texto": "Microintervención que solicita concretar qué ayudaría ahora mismo cuando la demanda es vaga o global, favoreciendo agencia y reduciendo frustración relacional.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         },
         {
           "codigo": "m_balint_peticion_minima",
           "nombre": "Invitar a una petición mínima",
           "texto": "Intervención breve que propone formular una petición pequeña y específica, ayudando a pasar de la demanda global a una comunicación viable que preserve el vínculo.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -419,19 +458,22 @@
           "codigo": "p_sullivan_metacomunicacion",
           "nombre": "Meta-comunicación del proceso relacional en sesión",
           "texto": "Intervención que hace explícito lo que está ocurriendo entre terapeuta y paciente en el aquí-ahora (tensión, retirada, malentendido), reduciendo ansiedad, previniendo rupturas y promoviendo aprendizaje relacional directo.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_sullivan_reflejar_impacto",
           "nombre": "Reflejar impacto interpersonal inmediato",
           "texto": "Intervención que devuelve de forma directa y regulada el impacto que una conducta tiene en el otro (“cuando dices esto, me siento presionado”), modelando comunicación honesta y reduciendo malentendidos.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         },
         {
           "codigo": "m_sullivan_peticion_directa",
           "nombre": "Ensayar petición directa y concreta",
           "texto": "Intervención breve que ayuda a formular una petición clara y específica en lugar de insinuaciones o quejas, fortaleciendo agencia y reduciendo ansiedad relacional.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -446,7 +488,8 @@
           "codigo": "m_bowlby_peticion_apoyo",
           "nombre": "Promover petición de apoyo clara",
           "texto": "Intervención breve que ayuda a transformar señales indirectas o protestas en peticiones claras de apoyo, favoreciendo vínculos más seguros y reduciendo frustración relacional (Bowlby, 1988, *A Secure Base*).",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -461,7 +504,8 @@
           "codigo": "m_winn_retorno_minimo_vinculo",
           "nombre": "Propuesta de retorno mínimo al vínculo (una frase auténtica)",
           "texto": "Intervención breve que pide un retorno mínimo (“una frase verdadera de cómo estás”) para reconectar sin abrumar, sustituyendo el todo-o-nada (fusión/huida) por contacto dosificado y sostenible.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -476,7 +520,8 @@
           "codigo": "m_abft_coaching",
           "nombre": "Coaching emocional parental",
           "texto": "Entrenar respuestas parentales sensibles y reguladoras ante la emoción intensa del hijo.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -491,13 +536,15 @@
           "codigo": "p_bateson_niveles_comunicacion",
           "nombre": "Lectura de niveles de comunicación (contenido vs relación)",
           "texto": "Procedimiento para discriminar lo que se dice (contenido) de lo que el mensaje hace en la relación (posición, poder, alianza, distancia). Permite ver que el conflicto muchas veces no es ‘sobre el tema’, sino sobre el vínculo y las reglas implícitas que organizan el intercambio.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_bateson_nivel_relacion",
           "nombre": "Señalar el nivel de relación del mensaje",
           "texto": "Microintervención para nombrar lo que el mensaje implica en la relación (crítica, demanda, retirada, superioridad, miedo). Ayuda a mentalizar el vínculo y a salir de discusiones atrapadas en contenido.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -512,13 +559,15 @@
           "codigo": "p_fft_comunicacion",
           "nombre": "Entrenamiento en comunicación",
           "texto": "Enseñanza de habilidades de escucha, petición clara y expresión no coercitiva.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_fft_ensayo",
           "nombre": "Ensayo conductual en sesión",
           "texto": "Práctica guiada de nuevas habilidades comunicativas.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -533,7 +582,8 @@
           "codigo": "p_mdft_familia",
           "nombre": "Sesiones familiares estructuradas",
           "texto": "Mejora de la comunicación, resolución de conflictos y alineación parental-adolescente.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -548,13 +598,15 @@
           "codigo": "p_mst_comunicacion_conflictos",
           "nombre": "Intervención sobre comunicación familiar y resolución de conflictos",
           "texto": "Estructuración de conversaciones para reducir escalada, aumentar peticiones claras, negociación y reparación, y disminuir patrones de ataque-defensa o retirada.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mst_micro_reparacion",
           "nombre": "Micro-reparación tras conflicto",
           "texto": "Estructura mínima para reparar: reconocer impacto, validar emoción, acordar conducta alternativa y cerrar con compromiso concreto.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -569,19 +621,22 @@
           "codigo": "p_linares_enactment",
           "nombre": "Enactment guiado y micro-reparaciones en sesión",
           "texto": "El terapeuta provoca y regula interacciones breves en sesión para observar el patrón vivo (no solo narrado) y practicar comunicación emocional y reparación. Se estructura con límites claros para evitar escalada y se cierra con integración y significado.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_linares_perspectiva",
           "nombre": "Invitar a la perspectiva del otro",
           "texto": "Pregunta breve que promueve mentalización: qué crees que el otro siente/teme/espera en ese momento. Facilita comunicación menos defensiva.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         },
         {
           "codigo": "m_linares_rotulacion",
           "nombre": "Rotulación emocional situada",
           "texto": "Nombrar emoción con precisión en el contexto interpersonal (“esto suena a miedo a perderte”, “esto parece vergüenza”). Mejora claridad y baja escalada.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     },
@@ -596,7 +651,8 @@
           "codigo": "m_whitaker_contacto",
           "nombre": "Contacto emocional directo",
           "texto": "Facilitar encuentros emocionales genuinos entre miembros, sin mediación intelectual excesiva.",
-          "sub": "R_comunicacionEmocional"
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
         }
       ]
     }

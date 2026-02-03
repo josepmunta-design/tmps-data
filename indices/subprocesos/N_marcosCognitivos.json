@@ -1,6 +1,6 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 19,
   "modelos": [
     {
@@ -14,7 +14,8 @@
           "codigo": "p_naikan_listado_hechos",
           "nombre": "Listado de hechos: recibido / dado / causado",
           "texto": "Registro escrito muy concreto (hechos observables, no interpretaciones) en tres columnas: recibido, dado, causado. Reduce abstracción defensiva, mejora precisión autobiográfica y facilita un cambio de perspectiva estable (menos rumiación, más evidencia personal).",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -29,19 +30,22 @@
           "codigo": "p_sst_instruccion_descomposicion",
           "nombre": "Instrucción psicoeducativa y descomposición de habilidades",
           "texto": "Procedimiento de encuadre y enseñanza explícita donde se define la habilidad objetivo, se aclaran sus componentes conductuales (qué decir, cómo decirlo, cuándo y con qué intención) y se descompone la secuencia en pasos practicables; se establecen criterios observables de ejecución y se anticipan obstáculos típicos (evitación, agresividad, sumisión), creando un mapa claro que convierte un problema interpersonal difuso en un objetivo entrenable y medible.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_sst_definir_objetivo",
           "nombre": "Definir conducta objetivo en términos observables",
           "texto": "Microintervención que transforma metas vagas (“ser más sociable”) en conductas medibles (“saludar, preguntar X, sostener mirada 2–3 segundos, cerrar con Y”), facilitando selección de ejercicios y evaluación de progreso sin ambigüedad, y reduciendo frustración por objetivos demasiado abstractos.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         },
         {
           "codigo": "m_sst_prevencion_recaidas",
           "nombre": "Plan de prevención de recaídas (señales tempranas y plan de acción)",
           "texto": "Microintervención que identifica señales tempranas de retroceso (retirada, irritabilidad, evitación) y define acciones concretas de recuperación (repetir ejercicios, pedir feedback, reparar, bajar dificultad), evitando que un tropiezo se convierta en abandono del repertorio.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -56,13 +60,15 @@
           "codigo": "p_bandura_modelado_simbolico",
           "nombre": "Modelado simbolico",
           "texto": "Uso de videos, relatos o representaciones simbolicas donde un modelo ejecuta la conducta deseada. Permite ampliar el acceso a modelos funcionales y preparar al paciente para la accion directa.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_bandura_retencion",
           "nombre": "Retencion simbolica",
           "texto": "Ayuda al paciente a codificar mentalmente la conducta observada mediante lenguaje, imagenes o reglas simples que faciliten su recuerdo posterior.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -77,7 +83,8 @@
           "codigo": "m_mowrer_estimulos",
           "nombre": "Identificación de estímulos condicionados",
           "texto": "Microintervención centrada en discriminar con precisión qué estímulos, contextos o señales internas han adquirido valor ansiógeno por condicionamiento clásico, permitiendo afinar el diseño de la exposición.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -92,13 +99,15 @@
           "codigo": "p_coh_descubrimiento_coherencia",
           "nombre": "Descubrimiento de la coherencia sintomática",
           "texto": "Procedimiento central de Coherence Therapy orientado a descubrir la lógica emocional implícita que hace necesario el síntoma. Mediante exploración fenomenológica guiada, el terapeuta ayuda al paciente a identificar cómo el síntoma cumple una función protectora, adaptativa o identitaria dentro de su sistema de significados, revelando que no es disfuncional sino coherente con necesidades profundas. Este descubrimiento transforma la relación del paciente con el síntoma, reduce la lucha interna y genera una base segura para el cambio profundo al validar la inteligencia emocional del sistema (Ecker, Hulley & Ticic, 2012).",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_coh_logica_sintomatica",
           "nombre": "Preguntas de lógica sintomática",
           "texto": "Microintervención exploratoria basada en preguntas cuidadosamente formuladas que buscan inferir la función adaptativa del síntoma sin confrontarlo directamente. Preguntas como “¿qué problema mayor evita esto?” o “¿qué tendría que ser cierto para que este síntoma fuera necesario?” permiten acceder a la coherencia implícita del síntoma respetando el sistema del paciente. Esta micro reduce resistencia y abre la puerta al descubrimiento experiencial del significado implícito (Ecker, Hulley & Ticic, 2012).",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -113,19 +122,22 @@
           "codigo": "p_kelly_repgrid",
           "nombre": "Rejilla de Constructos (Rep Grid)",
           "texto": "Procedimiento central del PCP. Permite mapear la arquitectura del sistema personal mediante una matriz \nque compara elementos relevantes (personas, roles, situaciones) y elicita constructos bipolares. \nRevela constructos nucleares, conflictos internos, rigidez, discrepancias identitarias y zonas de amenaza, \nofreciendo una representación explícita del significado personal para intervenir sobre él.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_kelly_polaridades",
           "nombre": "Explorar polaridades del constructo",
           "texto": "Exploración guiada de los dos polos del constructo (por ejemplo, fuerte–débil, autónomo–dependiente), \nbuscando matices intermedios y condiciones en las que cada polo tiene sentido. \nReduce la rigidez semántica y la intensidad emocional asociada.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         },
         {
           "codigo": "m_kelly_perifericos",
           "nombre": "Extensión de constructos periféricos",
           "texto": "Microintervención que amplía el campo de aplicación de constructos periféricos (no nucleares), \naumentando la flexibilidad del sistema sin activar amenaza identitaria.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -140,25 +152,29 @@
           "codigo": "p_ugazio_polaridades",
           "nombre": "Mapeo de polaridades semánticas",
           "texto": "Procedimiento central del modelo que identifica con precisión las polaridades semánticas dominantes (p. ej., autonomía–dependencia, superioridad–inferioridad, libertad–control) que organizan el campo de significados compartido del sistema familiar y las posiciones típicas que cada miembro ocupa frente a esos polos. Se exploran definiciones implícitas, criterios de valoración (qué polo se considera “deseable” o “vergonzante”), contextos donde cada polo se activa y cómo estas coordenadas semánticas estructuran identidades, lealtades, conflictos y síntomas. El objetivo es externalizar la gramática relacional que gobierna la experiencia para que paciente y familia puedan verla “desde fuera” y empezar a flexibilizarla, abriendo un espacio para narrativas y posiciones menos rígidas. (Ugazio, 2013)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_ugazio_campoSemantico",
           "nombre": "Reconstrucción del campo semántico familiar",
           "texto": "Procedimiento que reconstruye cómo se ha formado y mantenido históricamente el campo semántico dominante de la familia, identificando reglas implícitas, guiones relacionales, mandatos y oposiciones valorativas que determinan qué significa “ser alguien” dentro del sistema. Se rastrean historias familiares, episodios repetidos y mensajes explícitos o sutiles que consolidan la polaridad, mostrando cómo la identidad de cada miembro queda definida por su posición relativa (por ejemplo, “el fuerte” frente a “el débil”). Este trabajo desplaza el foco del síntoma individual a la lógica compartida del significado, preparando el terreno para el cambio sin culpabilización. (Ugazio, 2013)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_ugazio_dilemasIdentitarios",
           "nombre": "Detección de dilemas identitarios semánticos",
           "texto": "Procedimiento que identifica dilemas del tipo “si me muevo hacia este polo pierdo pertenencia, valor o amor” y aclara el coste identitario anticipado del cambio dentro del campo semántico. Se exploran las amenazas asociadas a abandonar una posición (p. ej., pasar de “dependiente” a “autónomo” puede vivirse como traición o frialdad) y cómo el síntoma funciona como solución semántica para no cruzar la frontera. Al hacer explícito el dilema, el paciente gana libertad para negociar significados y construir posiciones integradoras que preserven coherencia y vínculo. (Ugazio, 2013)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_ugazio_explorarPolos",
           "nombre": "Exploración guiada de ambos polos",
           "texto": "Microintervención que invita a describir con detalle ambos polos de una polaridad semántica (emociones, valores, riesgos, ventajas, imágenes asociadas), evitando jerarquías implícitas. Permite reducir la lectura moralizada del polo opuesto y aumentar complejidad cognitiva y emocional, debilitando la rigidez identitaria asociada a la dicotomía. (Ugazio, 2013)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -173,43 +189,50 @@
           "codigo": "p_feixas_repgrid",
           "nombre": "Rejilla de Constructos Personales (Rep Grid) para mapear el sistema de significados",
           "texto": "Procedimiento empírico-clínico que utiliza la Rejilla de Constructos para elicitar y organizar cómo la persona diferencia y evalúa elementos significativos (self actual, self ideal, figuras relevantes, roles, situaciones), identificando constructos bipolares, polarización, rigidez, discrepancias Yo-ideal, áreas de conflicto y focos de amenaza identitaria; el análisis se usa terapéuticamente como espejo del significado personal, no como “test”, para abrir alternativas y orientar el plan de intervención con base en evidencia idiográfica del propio paciente. (Kelly, 1955; Fransella & Bannister, 1977; Feixas, 2004)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_feixas_gridcor",
           "nombre": "Análisis asistido por software (GRIDCOR u herramientas equivalentes) para patrones y cambio",
           "texto": "Procedimiento de apoyo que emplea herramientas como GRIDCOR (u otros análisis de rejilla) para visualizar patrones del sistema de constructos (por ejemplo, estructuras muy dicotómicas, conglomerados rígidos, discrepancias entre autoimagen y aspiraciones, cambios entre mediciones), devolviendo al paciente una representación clara y comprensible que facilite metacognición del propio funcionamiento y permita monitorizar evolución del significado a lo largo del tratamiento sin reducir la complejidad de la experiencia a métricas vacías. (Feixas, 2004)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_feixas_autocaracterizacion",
           "nombre": "Auto-caracterización (Self-Characterization) y análisis narrativo del self",
           "texto": "Procedimiento narrativo derivado del PCP donde el paciente escribe o relata una “auto-caracterización” en tercera persona, como si describiera a alguien conocido, permitiendo acceder a constructos implícitos, valores y tramas identitarias sin activar defensas directas; el terapeuta analiza junto al paciente el lenguaje, las metáforas y las oposiciones semánticas que organizan la identidad, conectándolo con dilemas y posibilidades de reautoría para ganar continuidad biográfica sin quedar atrapado en etiquetas rígidas. (Kelly, 1955; Feixas, 2004)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_feixas_laddering",
           "nombre": "Laddering (subir y bajar niveles de abstracción del significado)",
           "texto": "Procedimiento que explora la jerarquía del significado personal preguntando “¿por qué es importante?” (hacia arriba) para llegar a constructos nucleares y valores, y “¿cómo se ve eso en lo concreto?” (hacia abajo) para traducirlos a conductas y decisiones observables; ayuda a clarificar coherencia interna, detectar contradicciones entre niveles y construir puentes prácticos entre identidad y acción, reduciendo el bloqueo típico de cambios que se sienten “correctos” pero no se pueden implementar. (Kelly, 1955; Feixas, 2004)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_feixas_constructosNucleares",
           "nombre": "Identificación y reestructuración de constructos nucleares rígidos",
           "texto": "Procedimiento focal que localiza constructos nucleares altamente polarizados (p. ej., fuerte–débil, valioso–inútil) que gobiernan autoevaluación y relación, explora su origen narrativo/relacional y su función adaptativa, y promueve flexibilización mediante matices, excepciones y nuevas definiciones operativas; el objetivo no es “cambiar creencias” desde fuera, sino ampliar el repertorio interpretativo de modo que el paciente pueda anticipar y actuar sin quedar prisionero de dicotomías que intensifican vergüenza, culpa o ansiedad. (Kelly, 1955; Feixas, 2004)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_feixas_nombrarConstructos",
           "nombre": "Nombrar constructos implícitos",
           "texto": "Microintervención destinada a poner palabras precisas a distinciones implícitas con las que el paciente organiza su experiencia (por ejemplo, válido–inútil, cercano–invasivo), ayudándole a reconocer que está usando constructos bipolares y no descripciones objetivas de la realidad; al hacerlos explícitos se reduce fusión identitaria y se abre espacio para explorarlos y flexibilizarlos sin invalidación. (Kelly, 1955; Feixas, 2004)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         },
         {
           "codigo": "m_feixas_polarizacion",
           "nombre": "Señalar polarización dicotómica",
           "texto": "Microintervención que detecta y devuelve al paciente lecturas extremas del tipo todo/nada, éxito/fracaso o fuerte/débil, mostrando cómo estas polarizaciones intensifican emoción y bloqueo; el objetivo es introducir gradientes, contextos y matices sin confrontar la lógica interna del constructo. (Kelly, 1955; Feixas, 2004)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -224,13 +247,15 @@
           "codigo": "p_neim_metafora",
           "nombre": "Uso terapéutico de la metáfora",
           "texto": "Procedimiento que emplea metáforas, imágenes, símbolos y narrativas figurativas para expresar significados complejos que resultan difíciles de articular de forma literal. Las metáforas permiten acceder a niveles implícitos de la experiencia y facilitan reorganizaciones narrativas y emocionales sin confrontación directa, siendo especialmente útiles en contextos de duelo, trauma y crisis de sentido (Neimeyer, 1995; Neimeyer, 2016).",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_neim_metafora_evocadora",
           "nombre": "Uso puntual de metáfora evocadora",
           "texto": "Microintervención que introduce o amplifica una metáfora surgida del propio cliente para profundizar en el significado de la experiencia. La metáfora actúa como puente entre emoción y narrativa, facilitando reorganización del sentido sin confrontación directa (Neimeyer, 1995; Neimeyer, 2016).",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -245,7 +270,8 @@
           "codigo": "p_mahoney_andamiaje_complejidad",
           "nombre": "Andamiaje de complejidad personal",
           "texto": "Procedimiento central del modelo de Mahoney que consiste en facilitar una expansión progresiva de la complejidad del sistema personal del paciente mediante la introducción gradual de distinciones, matices y conexiones alternativas. El terapeuta no busca sustituir creencias ni imponer nuevas interpretaciones, sino ampliar el campo de posibilidades interpretativas para que el sistema pueda reorganizarse de forma más flexible y estable. El ritmo del andamiaje se ajusta cuidadosamente a la tolerancia del paciente a la incertidumbre, evitando tanto el colapso desorganizativo como la cristalización defensiva del significado. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -260,25 +286,29 @@
           "codigo": "p_hermans_opuestosComoPersonajes",
           "nombre": "Confrontación dialógica de oposiciones (opposites as characters)",
           "texto": "Procedimiento descrito por Hermans para trabajar pares opuestos internalizados como “personajes” con intenciones y valores distintos (p. ej., independencia vs. pertenencia; ambición vs. cuidado; control vs. espontaneidad). Se externalizan como voces con identidad propia, se exploran sus argumentos y miedos y se hace visible el dilema (“si elijo X, pierdo Y”), evitando que el paciente quede atrapado en decisiones binarias y facilitando síntesis, negociación o alternancia contextual. (Hermans, 1996).",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_hermans_vocesCulturalesFamiliares",
           "nombre": "Trabajo con voces internalizadas culturales y familiares (external voices)",
           "texto": "Procedimiento para identificar voces “prestadas” que operan como mandatos (familia, cultura, ideología, figuras de autoridad) y que pueden colonizar el self (“debes poder con todo”, “sentir es debilidad”). Se explora su origen biográfico, su función de pertenencia/seguridad y su coste, diferenciando identidad propia vs. introyectos, y reubicando esas voces en el sistema dialógico como una perspectiva más, no como ley interna incuestionable. (Hermans et al., 1992; Hermans, 1996).",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_hermans_traducirVoces",
           "nombre": "Traducir entre voces",
           "texto": "Microintervención en la que el terapeuta ayuda a reformular el mensaje de una voz para que pueda ser escuchado por otra (por ejemplo, traduciendo crítica en preocupación). Reduce malentendidos internos y favorece cooperación entre posiciones que comparten objetivos pero usan estrategias incompatibles. (Hermans, 1996).",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         },
         {
           "codigo": "m_hermans_reubicarVozCultural",
           "nombre": "Reubicar una voz cultural o familiar",
           "texto": "Microintervención que diferencia identidad personal de mandatos culturales o familiares internalizados, ayudando a que estas voces pierdan su estatus normativo absoluto. Facilita desidentificación de introyectos y devuelve agencia al self. (Hermans, 1996).",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -293,13 +323,15 @@
           "codigo": "p_colab_lenguajeLocal",
           "nombre": "Trabajo con el lenguaje del cliente (lenguaje local)",
           "texto": "Procedimiento que consiste en seguir de cerca el vocabulario, metáforas, categorías y giros lingüísticos del consultante, evitando traducirlos a jergas profesionales o etiquetas psicopatológicas; el terapeuta utiliza el mismo lenguaje del cliente para co-construir significado, lo que incrementa sintonía, reduce asimetría de poder y permite que las nuevas narrativas sean vivibles y transportables fuera de sesión. (Anderson, 1997)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_colab_contextoSociocultural",
           "nombre": "Trabajo con contexto sociocultural del significado",
           "texto": "Procedimiento que integra explícitamente los marcos culturales, institucionales y relacionales que influyen en cómo el consultante se narra y es narrado (familia, género, clase, migración, instituciones), evitando universalizar categorías y reconociendo dinámicas de poder en el lenguaje; este trabajo amplía opciones discursivas, reduce auto-culpabilización y hace que las alternativas construidas sean realistas y sostenibles en el entorno del cliente. (Anderson, 1997)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -314,7 +346,8 @@
           "codigo": "p_ta_pan",
           "nombre": "Análisis estructural (Padre–Adulto–Niño)",
           "texto": "Mapea estados del Yo y sus funciones (protección, crítica, cuidado, adaptación, espontaneidad, evaluación). Ayuda a detectar desde dónde se responde y a ampliar el acceso al Adulto.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -329,13 +362,15 @@
           "codigo": "p_lazarus_cognicion_reestructuracion",
           "nombre": "Intervención en Cognición (C) mediante reatribución y auto-instrucciones",
           "texto": "Procedimiento que identifica pensamientos automáticos, reglas rígidas y sesgos interpretativos relevantes para el mantenimiento del problema y los trabaja con reatribución, búsqueda de alternativas y entrenamiento de auto-instrucciones funcionales. La meta no es “pensar positivo”, sino generar interpretaciones más ajustadas que permitan conductas nuevas y reduzcan afecto desbordante, integrando lo cognitivo como una modalidad más dentro del sistema. (Lazarus, 1989)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_lazarus_autoinstruccion",
           "nombre": "Auto-instrucción funcional",
           "texto": "Microintervención que construye frases breves de guía interna (“primero respiro, luego hablo”) para acompañar conductas nuevas en momentos de activación. Estas auto-instrucciones sirven como puente entre cognición y acción. (Lazarus, 1976)",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -350,13 +385,15 @@
           "codigo": "p_neopsy_fromm_analisis_sociocultural",
           "nombre": "Análisis sociocultural del carácter y la alienación (Fromm)",
           "texto": "Procedimiento que integra presiones culturales (estatus, productividad, consumo, competitividad, roles) en la formulación del malestar, diferenciando ‘fallo personal’ de alienación social; se exploran orientaciones de carácter y cómo el entorno refuerza vínculos instrumentales, promoviendo una lectura que aumente agencia y elección ética sin caer en culpabilización.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_neopsy_conformismo_coste",
           "nombre": "Nombrar conformismo automático y coste identitario (Fromm)",
           "texto": "Microintervención que muestra cuándo el paciente actúa para encajar más que por convicción, conectándolo con vacío, ansiedad o resentimiento, y abriendo una elección pequeña hacia autenticidad.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -371,7 +408,8 @@
           "codigo": "p_bateson_doble_vinculo",
           "nombre": "Detección y formulación de doble vínculo",
           "texto": "Procedimiento conceptual para identificar situaciones en las que una persona recibe mensajes contradictorios en niveles diferentes (p. ej., ‘te quiero’ con rechazo conductual), con prohibición implícita de señalar la contradicción. El uso clínico no es ‘diagnosticar esquizofrenia’, sino detectar configuraciones comunicacionales que generan atrapamiento, confusión y desregulación relacional.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -386,13 +424,15 @@
           "codigo": "p_erickson_lenguaje",
           "nombre": "Lenguaje sugestivo y ambiguo",
           "texto": "Uso deliberado de ambigüedad, presuposiciones y estructuras lingüísticas que permiten múltiples interpretaciones, facilitando que el paciente construya su propia solución sin imposición directa.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_erickson_presuposiciones",
           "nombre": "Presuposiciones implícitas",
           "texto": "Introducir supuestos de cambio dentro del lenguaje (p. ej., ‘cuando empieces a sentirte diferente…’), facilitando aceptación inconsciente.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -407,13 +447,15 @@
           "codigo": "p_linares_reglas_roles",
           "nombre": "Clarificación de reglas, roles y jerarquías",
           "texto": "Procedimiento para hacer explícitas reglas implícitas, expectativas y posiciones (quién decide, quién cuida, quién sostiene, quién calla). Se examina su función histórica y su coste actual. Se negocian alternativas más flexibles y sostenibles.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_linares_externalizar",
           "nombre": "Externalizar el patrón (no la persona)",
           "texto": "Nombrar el patrón como ‘tercera cosa’ (“la escalada”, “la retirada”, “el guion del sacrificio”) para reducir ataques personales y facilitar cooperación contra el problema.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -428,7 +470,8 @@
           "codigo": "p_nardone_simbolicas",
           "nombre": "Tareas simbólicas",
           "texto": "Tareas diseñadas para producir un impacto emocional y perceptivo que reestructure la relación con el síntoma sin necesidad de insight racional.",
-          "sub": "N_marcosCognitivos"
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "subprocesoId": "AG_motivacionInterna",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 13,
   "modelos": [
     {
@@ -14,7 +14,8 @@
           "codigo": "p_sst_feedback_refuerzo",
           "nombre": "Feedback correctivo específico y reforzamiento diferencial",
           "texto": "Procedimiento de retroalimentación inmediata y concreta tras cada ensayo, focalizada en conductas observables (contenido, forma, timing, coherencia no verbal) y orientada a reforzar aproximaciones útiles (shaping) mientras se corrigen elementos que bloquean el objetivo; el reforzamiento puede ser social (validación, reconocimiento), funcional (señalar eficacia) o programado, buscando consolidar el aprendizaje sin humillar ni aumentar vergüenza, y manteniendo el foco en progreso incremental.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -29,7 +30,8 @@
           "codigo": "m_mowrer_repeticion",
           "nombre": "Repetición intensiva",
           "texto": "Fomento de la repetición frecuente y sostenida de las exposiciones para acelerar la extinción del miedo y consolidar el nuevo aprendizaje, evitando recaídas por práctica insuficiente.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -44,13 +46,15 @@
           "codigo": "p_neim_valores",
           "nombre": "Exploración de valores y compromisos vitales",
           "texto": "Procedimiento que explora los valores, principios y compromisos vitales que dan dirección y sentido a la vida del cliente, especialmente tras una ruptura de significado. Clarificar estos valores permite orientar la reconstrucción narrativa hacia futuros posibles que resulten coherentes con la identidad emergente y no solo con la reducción del malestar (Neimeyer, 2001).",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_neim_proyeccion_futuro",
           "nombre": "Proyección narrativa al futuro",
           "texto": "Micro que invita a imaginar escenarios futuros posibles donde los nuevos significados puedan encarnarse, aun en presencia de dolor residual. Esta proyección ayuda a salir del estancamiento narrativo y a recuperar orientación temporal y motivación interna (Neimeyer, 1995; Neimeyer, 2016).",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -65,7 +69,8 @@
           "codigo": "m_mahoney_emergencia_novedad",
           "nombre": "Señalamiento de emergencias de novedad",
           "texto": "Microintervención que destaca la aparición de respuestas, emociones o significados nuevos, aunque sean frágiles o inconsistentes, señalándolos como indicadores de reorganización emergente. Al hacer visible la novedad, se refuerza su consolidación sin forzarla, favoreciendo trayectorias de cambio más complejas y estables. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -80,25 +85,29 @@
           "codigo": "p_mi_evocar",
           "nombre": "Proceso 3: Evocar (Evoking)",
           "texto": "Evocar es el núcleo de MI: facilitar que el cliente verbalice sus propias razones, deseos y necesidades para cambiar. El terapeuta dirige la conversación para que aparezca ‘change talk’ (deseo, capacidad, razones, necesidad, compromiso), en lugar de discutir con el ‘sustain talk’. La lógica es simple y potente: cuanto más el cliente se oye a sí mismo argumentando a favor del cambio, más probable es que actúe.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mi_reflejo_giro",
           "nombre": "Reflejo con giro (Reflection with a twist)",
           "texto": "Este reflejo devuelve lo que el cliente dice, pero orientándolo hacia posibilidad o valor sin negar su posición. El ‘giro’ es una invitación implícita a otra lectura más viable: mantiene aceptación y añade dirección. Es especialmente útil cuando el cliente está estancado y el terapeuta quiere abrir opciones sin presionar.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mi_darn",
           "nombre": "Evocar change talk (DARN: Deseo, Capacidad, Razones, Necesidad)",
           "texto": "DARN es un mapa práctico para generar conversación de cambio: qué quiere el cliente, qué cree que puede, por qué le importa y qué necesidad ve. El terapeuta formula preguntas y reflejos que hacen emerger estos elementos, porque constituyen la base motivacional previa al compromiso. Es un procedimiento de ‘encendido’ de motivación interna sin sermón.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mi_evocar_razones",
           "nombre": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
           "texto": "Una sola pregunta bien puesta puede generar change talk potente sin empujar: hace que el cliente formule por sí mismo el coste de la conducta actual. El terapeuta escucha y luego refleja estratégicamente esos fragmentos para consolidarlos. Es micro, pero mueve el sistema entero.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -113,7 +122,8 @@
           "codigo": "m_esalen_retiro",
           "nombre": "Retiro breve con objetivos",
           "texto": "Espacios experienciales intensivos de corta duración que permiten desconexión del contexto habitual, clarificación de objetivos vitales y reorganización de la narrativa personal desde una mayor conciencia y presencia (Kripal, 2007).",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -128,13 +138,15 @@
           "codigo": "p_pospsy_self_futuro",
           "nombre": "Mejor yo posible (Best Possible Self) y narrativa prospectiva",
           "texto": "Visualización y escritura guiada del yo posible deseado (y viable), conectándolo con valores, fortalezas y microdecisiones. Se traducen aspiraciones a pasos conductuales pequeños y medibles.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_pospsy_flujo",
           "nombre": "Diseño de experiencias de flujo",
           "texto": "Identificar actividades con potencial de flujo y ajustar condiciones: reto/habilidad, objetivos claros, feedback inmediato, tiempo protegido y reducción de distracciones. Se monitoriza energía y sostenibilidad.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -149,7 +161,8 @@
           "codigo": "m_wachtel_costeCiclo",
           "nombre": "Identificar el “precio” del ciclo",
           "texto": "Microintervención que hace explícito el coste acumulado de mantener el patrón —soledad, conflicto crónico, desgaste emocional u oportunidades perdidas— conectándolo con la identidad y los valores personales. El objetivo no es culpabilizar, sino activar motivación genuina para el cambio al contrastar lo que el ciclo promete proteger con lo que realmente termina generando. (Wachtel, 2008)",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -164,19 +177,22 @@
           "codigo": "p_adler_desanimo_inferioridad",
           "nombre": "Trabajo con el desánimo y la vergüenza de inferioridad",
           "texto": "Este procedimiento aborda el desánimo como núcleo clínico, validando el dolor de inferioridad y reformulándolo como señal de necesidad de pertenencia, promoviendo valentía social y pasos graduados de participación en lugar de retirada o control defensivo.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_adler_aliento",
           "nombre": "Aliento terapéutico como intervención central",
           "texto": "El aliento terapéutico refuerza la percepción de capacidad, dignidad y contribución posible del paciente, diferenciándolo de elogio vacío, para movilizar iniciativa, tolerancia a la imperfección y compromiso con tareas prosociales.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_adler_aliento_especifico",
           "nombre": "Aliento específico orientado a contribución",
           "texto": "Consiste en reconocer capacidades y esfuerzos concretos vinculándolos a la posibilidad de contribuir y cooperar, fortaleciendo autoeficacia y valentía social sin caer en elogio inflado o dependencia del terapeuta.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -191,13 +207,15 @@
           "codigo": "p_winn_gesto_espontaneo",
           "nombre": "Acceso al self verdadero mediante el gesto espontáneo",
           "texto": "Intervención que busca detectar y proteger señales pequeñas de espontaneidad (tono, impulso, elección, juego, emoción auténtica) antes de que el falso self las neutralice; el terapeuta refuerza el derecho a existir sin justificarse, valida el riesgo implícito de mostrarse y sostiene la ansiedad asociada para que el self verdadero pueda consolidarse como experiencia repetida y no como excepción.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_winn_proteger_gesto",
           "nombre": "Proteger un gesto espontáneo antes de interpretarlo",
           "texto": "Intervención breve que señala y cuida un acto espontáneo (una emoción genuina, una preferencia, un ‘no’) sin analizarlo de inmediato, para que el paciente lo sienta como permitido y real, no como material que será evaluado.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -212,7 +230,8 @@
           "codigo": "m_fft_refuerzo",
           "nombre": "Refuerzo positivo inmediato",
           "texto": "Consolidar conductas adaptativas mediante refuerzos claros.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -227,13 +246,15 @@
           "codigo": "p_mdft_adolescente",
           "nombre": "Intervención en el dominio del adolescente",
           "texto": "Trabajo individual con el adolescente centrado en motivación, regulación emocional, toma de decisiones y reducción del consumo.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mdft_motivacion",
           "nombre": "Entrevista motivacional estratégica",
           "texto": "Exploración breve de ambivalencias y razones personales para el cambio.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -248,7 +269,8 @@
           "codigo": "m_mst_metas_corto_plazo",
           "nombre": "Activación de motivación con metas a corto plazo",
           "texto": "Conectar cambios conductuales concretos con consecuencias valiosas (libertad, confianza, menos sanciones, más oportunidades), sin moralizar.",
-          "sub": "AG_motivacionInterna"
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     }

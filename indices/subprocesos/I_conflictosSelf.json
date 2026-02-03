@@ -1,6 +1,6 @@
 {
   "subprocesoId": "I_conflictosSelf",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 9,
   "modelos": [
     {
@@ -14,7 +14,8 @@
           "codigo": "m_kelly_dilemas",
           "nombre": "Exploración de dilemas personales",
           "texto": "Microintervención que identifica dilemas del tipo \"si cambio en X, pierdo Y\". \nPermite hacer visibles los costes identitarios anticipados del cambio y trabajar para integrar nuevas posiciones.",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "micro"
         }
       ]
     },
@@ -29,13 +30,15 @@
           "codigo": "p_ugazio_dilemasIdentitarios",
           "nombre": "Detección de dilemas identitarios semánticos",
           "texto": "Procedimiento que identifica dilemas del tipo “si me muevo hacia este polo pierdo pertenencia, valor o amor” y aclara el coste identitario anticipado del cambio dentro del campo semántico. Se exploran las amenazas asociadas a abandonar una posición (p. ej., pasar de “dependiente” a “autónomo” puede vivirse como traición o frialdad) y cómo el síntoma funciona como solución semántica para no cruzar la frontera. Al hacer explícito el dilema, el paciente gana libertad para negociar significados y construir posiciones integradoras que preserven coherencia y vínculo. (Ugazio, 2013)",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_ugazio_dilemasVivo",
           "nombre": "Detectar dilemas semánticos en vivo",
           "texto": "Identificación inmediata de dilemas que emergen en sesión cuando el paciente se aproxima al polo prohibido (“si digo esto, quedaré como egoísta”). Permite frenar escaladas defensivas y trabajar el conflicto identitario en el momento exacto en que se activa. (Ugazio, 2013)",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "micro"
         }
       ]
     },
@@ -50,13 +53,15 @@
           "codigo": "p_feixas_dilemasImplicativos",
           "nombre": "Detección y trabajo de dilemas implicativos (Implicative Dilemmas)",
           "texto": "Procedimiento específico para identificar dilemas del tipo “si cambio en X, entonces me convierto en Y (indeseable)” que hacen que el cambio terapéutico se viva como amenaza identitaria; se detectan mediante diálogo clínico y/o rejilla (p. ej., mejorar asertividad implica “ser egoísta”), se hace explícita la lógica protectora del dilema y se trabaja para generar terceras posiciones o definiciones más complejas que permitan el cambio sin pérdida de pertenencia, valor o coherencia del self. (Feixas, 2004)",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_feixas_dilemasVivo",
           "nombre": "Detectar dilemas implicativos en vivo",
           "texto": "Identificación inmediata de dilemas del tipo “si cambio en X me convierto en Y” cuando emergen durante la sesión, permitiendo detener escaladas defensivas y trabajar el conflicto identitario en el momento exacto en que se activa. (Feixas, 2004)",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "micro"
         }
       ]
     },
@@ -71,25 +76,29 @@
           "codigo": "p_hermans_vocesDominantesSilenciadas",
           "nombre": "Elicitación de voces dominantes y voces silenciadas",
           "texto": "Procedimiento focal para detectar qué voces monopolizan la narrativa (“la voz crítica”, “la voz exigente”, “la voz del deber”) y cuáles quedan inhibidas o invisibles (“la voz vulnerable”, “la voz que desea”, “la voz que pone límites”). Se exploran señales de activación (emocionales/corporales), beneficios del dominio (control, seguridad, pertenencia) y costes del silenciamiento (empobrecimiento identitario, rigidez, síntomas), abriendo espacio terapéutico para que voces inhibidas emerjan con seguridad y lenguaje propio. (Hermans, 1996; Hermans et al., 1992).",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_hermans_opuestosComoPersonajes",
           "nombre": "Confrontación dialógica de oposiciones (opposites as characters)",
           "texto": "Procedimiento descrito por Hermans para trabajar pares opuestos internalizados como “personajes” con intenciones y valores distintos (p. ej., independencia vs. pertenencia; ambición vs. cuidado; control vs. espontaneidad). Se externalizan como voces con identidad propia, se exploran sus argumentos y miedos y se hace visible el dilema (“si elijo X, pierdo Y”), evitando que el paciente quede atrapado en decisiones binarias y facilitando síntesis, negociación o alternancia contextual. (Hermans, 1996).",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_hermans_negociacionIntegracion",
           "nombre": "Negociación e integración de conflictos del self (coaliciones internas)",
           "texto": "Procedimiento para pasar de “guerra interna” a acuerdos funcionales: se definen objetivos comunes (seguridad, dignidad, cuidado), se construyen coaliciones temporales entre posiciones compatibles y se negocian reglas internas (cuándo aparece cada voz, qué límites tiene, qué señales indican exceso). El foco no es “ganar” al crítico o al evitativo, sino reorganizar el sistema para que las funciones protectoras se mantengan sin generar daño colateral ni bloqueo vital. (Hermans, 1996).",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_hermans_detectarDilema",
           "nombre": "Detectar dilema implícito",
           "texto": "Microintervención que señala dilemas implícitos del tipo \"si cambio en X pierdo Y\" que mantienen el conflicto entre voces. Nombrar el dilema reduce bloqueo decisional y abre la posibilidad de soluciones integradoras o alternancia contextual. (Hermans, 1996).",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "micro"
         }
       ]
     },
@@ -104,7 +113,8 @@
           "codigo": "p_colab_polifonia",
           "nombre": "Trabajo con múltiples voces y perspectivas (polifonía conversacional)",
           "texto": "Procedimiento que facilita que aparezcan distintas voces, posiciones y perspectivas del consultante (y, si procede, del sistema relacional) sin jerarquizarlas como verdaderas o falsas, promoviendo un diálogo interno más funcional y una identidad menos monolítica; al permitir polifonía, se reduce la tiranía de una única narrativa dominante y se amplía el repertorio de significado disponible para decidir y actuar. (Anderson, 1997)",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -119,13 +129,15 @@
           "codigo": "p_mit_integracion_estados",
           "nombre": "Integración de estados mentales contradictorios",
           "texto": "Procedimiento orientado a integrar estados mentales, emociones o representaciones del self que aparecen como contradictorias o incompatibles, reduciendo escisiones internas. La integración metacognitiva permite al paciente sostener ambivalencias sin desorganización, favoreciendo una identidad más compleja y flexible (Dimaggio et al., 2015).",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mit_integracion_ambivalencia",
           "nombre": "Integración de estados mentales contradictorios",
           "texto": "Micro que ayuda al paciente a sostener simultáneamente emociones, pensamientos o deseos contradictorios sin desorganizarse, promoviendo una identidad más compleja y menos escindida (Dimaggio et al., 2015).",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "micro"
         }
       ]
     },
@@ -140,13 +152,15 @@
           "codigo": "p_ta_juegos_payoff",
           "nombre": "Detección de juegos y análisis de payoff",
           "texto": "Identifica secuencias repetidas con ganancia oculta (payoff) que mantienen el guion. Permite interrumpir el patrón y construir necesidades legítimas y pedidos directos.",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_ta_juegos_payoff",
           "nombre": "Detección de juegos y pago",
           "texto": "Identificar el “giro” donde empieza el juego y explicitar el payoff para recuperar elección.",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "micro"
         }
       ]
     },
@@ -161,7 +175,8 @@
           "codigo": "p_freud_workingThrough",
           "nombre": "Elaboración progresiva del conflicto",
           "texto": "Se vuelve de forma reiterada sobre núcleos conflictivos para que la comprensión se traduzca en reorganización afectiva y relacional estable.",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -176,7 +191,8 @@
           "codigo": "p_winn_uso_objeto_supervivencia",
           "nombre": "Uso del objeto: destructividad, prueba y supervivencia del objeto",
           "texto": "Intervención que permite que el paciente ponga a prueba al terapeuta (crítica, rabia, desconfianza, retirada) como forma de verificar si el objeto sobrevive sin vengarse ni colapsar; el terapeuta sostiene, no retaliaciona, repara micro-rupturas y ayuda a simbolizar el ataque, favoreciendo la transición desde relaciones defensivas (cumplir/controlar/huir) a una relación auténtica donde el otro existe y puede ser usado sin ser destruido.",
-          "sub": "I_conflictosSelf"
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
         }
       ]
     }

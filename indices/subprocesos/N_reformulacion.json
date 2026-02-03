@@ -1,6 +1,6 @@
 {
   "subprocesoId": "N_reformulacion",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 45,
   "modelos": [
     {
@@ -14,7 +14,8 @@
           "codigo": "m_naikan_hechos",
           "nombre": "Volver a hechos observables",
           "texto": "Cuando aparece juicio global ('siempre fue horrible'), se guía a listar hechos concretos (acciones, cuidados, omisiones) para mantener el trabajo anclado en evidencia autobiográfica.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -29,7 +30,8 @@
           "codigo": "p_coh_desconfirmacion",
           "nombre": "Desconfirmación emocional del aprendizaje original",
           "texto": "Procedimiento mediante el cual el aprendizaje emocional implícito original queda desconfirmado por una experiencia actual que demuestra, a nivel emocional, que ya no es válido o necesario. Esta desconfirmación no es argumentativa ni cognitiva, sino vivencial, y constituye el momento crítico que permite la actualización duradera de la memoria emocional. Cuando es efectiva, el significado antiguo pierde automáticamente su poder organizador (Ecker, 2015).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -44,7 +46,8 @@
           "codigo": "m_kelly_predicciones",
           "nombre": "Desacoplar predicciones catastróficas",
           "texto": "Pequeñas desconfirmaciones guiadas de anticipaciones catastróficas (\"si digo que no, me rechazarán por completo\"). \nAyuda a reducir ansiedad y a reconstruir significados más ajustados.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -59,13 +62,15 @@
           "codigo": "p_ugazio_reformulacionSintoma",
           "nombre": "Reformulación semántica del síntoma",
           "texto": "Procedimiento que reubica el síntoma como una solución coherente dentro del campo semántico familiar (una forma de mantener pertenencia, evitar dilemas o estabilizar posiciones), reduciendo culpa y resistencia. Se reformula el problema en términos de función semántico-relacional: qué protege, qué evita, qué equilibra y qué define identitariamente. Esta reformulación no trivializa el sufrimiento; lo hace inteligible y transformable, creando una explicación plausible que habilita cambios sin amenaza identitaria masiva. (Ugazio, 2013)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_ugazio_sintomaSolucion",
           "nombre": "Reformular el síntoma como solución semántica",
           "texto": "Intervención breve que presenta el síntoma como una forma coherente de sostener pertenencia, valor o equilibrio dentro del campo semántico, reduciendo culpa y resistencia. Facilita una comprensión funcional del problema sin cronificarlo. (Ugazio, 2013)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -80,13 +85,15 @@
           "codigo": "p_guidano_reorganizacion",
           "nombre": "Reorganización narrativa del self",
           "texto": "Procedimiento de largo recorrido mediante el cual se facilita una narrativa personal más flexible e inclusiva, integrando experiencias previamente disociadas o rigidizadas dentro de una continuidad identitaria ampliada. El terapeuta no propone nuevas historias, sino que acompaña la emergencia de una organización narrativa más compleja, coherente con la vivencia emocional del paciente. (Guidano, 1991).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_guidano_microformulacion",
           "nombre": "Microformulación postracionalista de la coherencia del self",
           "texto": "Microintervención que devuelve una formulación breve sobre cómo el self mantiene coherencia en el episodio (“cuando aparece X, tu identidad se sostiene haciendo Y”), evitando moralizar o patologizar. Esta microformulación no pretende ‘explicar’ al paciente, sino ofrecerle una metaperspectiva utilizable: una descripción de su organización que pueda observar en vivo y flexibilizar con el tiempo. (Guidano, 1991).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -101,13 +108,15 @@
           "codigo": "p_feixas_yoActualYoIdeal",
           "nombre": "Trabajo de discrepancias Yo actual – Yo ideal y metas identitarias",
           "texto": "Procedimiento que explora discrepancias entre self actual y self ideal (a menudo visibles en rejilla o en narrativas) para distinguir aspiraciones sanas de mandatos rígidos, clarificar valores nucleares y reformular metas de cambio en términos de identidad viable; se revisan estándares internalizados, se reduce perfeccionismo moralizado y se construyen objetivos alineados con coherencia interna y relación, evitando que el ideal funcione como fuente crónica de vergüenza o autoataque. (Kelly, 1955; Feixas, 2004)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_feixas_sintomaSolucion",
           "nombre": "Reformular el síntoma como solución de significado",
           "texto": "Intervención que presenta el síntoma como una estrategia coherente para proteger identidad, valor o pertenencia dentro del sistema de significados, reduciendo culpa y resistencia y preparando el terreno para alternativas menos costosas. (Kelly, 1955; Feixas, 2004)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -122,25 +131,29 @@
           "codigo": "p_mahoney_asimilacion_acomodacion",
           "nombre": "Diálogo clínico de asimilación y acomodación",
           "texto": "Procedimiento destinado a explorar cómo el paciente intenta integrar experiencias nuevas dentro de estructuras previas de significado (asimilación) o, alternativamente, se ve forzado a modificar dichas estructuras cuando resultan insuficientes (acomodación). El terapeuta acompaña este diálogo sin presionar hacia el cambio, ayudando a discriminar cuándo una experiencia puede incorporarse sin alterar la coherencia del sistema y cuándo requiere una reorganización más profunda del self. Este proceso favorece una adaptación flexible al cambio y reduce respuestas defensivas ante la disonancia. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mahoney_nolinealidad",
           "nombre": "Normalización clínica de la no linealidad del cambio",
           "texto": "Procedimiento que consiste en reformular explícitamente el cambio psicológico como un proceso no lineal, caracterizado por oscilaciones, retrocesos aparentes y fases de inestabilidad transitoria. El terapeuta ayuda al paciente a comprender que estas fluctuaciones no indican fracaso, sino reorganización del sistema, reduciendo ansiedad, culpa y urgencia por control. Esta normalización incrementa la tolerancia a la incertidumbre y sostiene la continuidad del proceso terapéutico en momentos de desorganización temporal. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mahoney_normalizacion_oscilaciones",
           "nombre": "Normalización de oscilaciones y retrocesos",
           "texto": "Microintervención que reformula explícitamente retrocesos, ambivalencias y oscilaciones emocionales como manifestaciones normales de procesos de reorganización en sistemas complejos. Al presentar estos movimientos como señales de cambio en curso y no como fracaso terapéutico, se reduce la ansiedad, la autocrítica y la urgencia por estabilizarse, aumentando la tolerancia a la incertidumbre y sosteniendo el proceso de transformación. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_mahoney_reformulacion_nolineal",
           "nombre": "Micro-reformulación no lineal del cambio",
           "texto": "Reformulación breve que presenta el cambio psicológico como un proceso emergente, sensible a pequeñas variaciones y no predecible de forma lineal. Esta microintervención desplaza expectativas rígidas de progreso continuo y facilita una comprensión más realista del cambio, reduciendo frustración y fortaleciendo la perseverancia en contextos de incertidumbre. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -155,19 +168,22 @@
           "codigo": "p_colab_externalizacionConversacional",
           "nombre": "Externalización conversacional del problema",
           "texto": "Procedimiento que separa al consultante del problema a través del lenguaje, ayudando a describir el problema como algo que ocurre en la relación con la vida y no como una esencia de la persona; mediante reformulaciones respetuosas y preguntas que cambian el sujeto de la frase, se reduce autoacusación, se protege la identidad y se abre espacio para examinar cómo el problema se mantiene en ciertas conversaciones y contextos. (Anderson, 1997; Anderson & Goolishian, 1992)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_colab_desaturacionProblema",
           "nombre": "Des-saturación del problema (deconstrucción de conversaciones dominantes)",
           "texto": "Procedimiento que identifica cómo ciertas conversaciones repetidas (internas, familiares, institucionales) mantienen una versión dominante del problema y del self, y trabaja para debilitarlas introduciendo nuevas descripciones, contextos y puntos de vista; al deconstruir etiquetas rígidas y relatos totalizantes, se abren espacios lingüísticos donde el consultante puede ocupar posiciones menos problematizadas y más agentivas. (Anderson, 1997)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_colab_reformulacionMinima",
           "nombre": "Reformulación lingüística mínima",
           "texto": "Pequeños ajustes en la formulación del problema que mantienen el contenido del cliente pero alteran ligeramente la estructura del lenguaje para abrir nuevas lecturas, sin introducir interpretaciones externas ni explicaciones causales. (Anderson, 1997)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -182,13 +198,15 @@
           "codigo": "m_nar_nominar_problema",
           "nombre": "Nombrar al problema",
           "texto": "Microintervención que invita a dar un nombre específico, a menudo metafórico, al problema para facilitar su externalización y permitir hablar de él como algo separado del self. El nombre elegido ayuda a objetivar el problema, explorar su influencia y reducir la identificación personal con el sufrimiento, creando un lenguaje común para el trabajo terapéutico (White & Epston, 1990, *Narrative Means to Therapeutic Ends*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_nar_reformulacion_historia",
           "nombre": "Reformular la historia dominante en términos narrativos",
           "texto": "Microintervención que reformula el relato problemático como una historia particular, situada y contingente, en lugar de como una verdad absoluta. Este movimiento debilita el estatus hegemónico de la narrativa dominante y prepara el terreno para su deconstrucción (White & Epston, 1990, *Narrative Means to Therapeutic Ends*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -203,19 +221,22 @@
           "codigo": "p_mi_reflejo_amplificado",
           "nombre": "Reflejo amplificado (Amplified reflection)",
           "texto": "El reflejo amplificado exagera suavemente el sustain talk para que el cliente lo escuche y, con frecuencia, lo matice o lo corrija. Se usa con tacto, porque su función no es ridiculizar, sino provocar discrepancia interna sin discusión. Cuando se hace bien, el cliente suele responder con change talk espontáneo.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mi_balance_decisional",
           "nombre": "Balance decisional (pros y contras)",
           "texto": "El balance decisional ordena el conflicto: beneficios de seguir igual, costes de seguir igual, beneficios de cambiar y costes de cambiar. En MI se hace con cuidado para no reforzar el sustain talk: se exploran costes de seguir igual y beneficios de cambiar, y se resumen destacando discrepancia con valores. Es útil cuando la persona está atascada o confundida.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mi_epe",
           "nombre": "Elicit–Provide–Elicit (EPE) para información/psicoeducación",
           "texto": "EPE evita el modo ‘experto que sermonea’. Primero se elicita lo que el cliente sabe y quiere; luego se ofrece información breve y relevante; finalmente se elicita la reacción y significado. Así la información se integra en la narrativa del cliente y aumenta la probabilidad de adherencia sin reactancia.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -230,13 +251,15 @@
           "codigo": "p_logo_intencion_paradojica",
           "nombre": "Intención paradójica",
           "texto": "Procedimiento dirigido a reducir ansiedad anticipatoria invitando al paciente a exagerar voluntariamente el síntoma temido. Rompe el círculo de miedo–hipercontrol y devuelve sensación de libertad interior.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_logo_desidentificacion",
           "nombre": "Desidentificación del síntoma",
           "texto": "Separar la identidad personal del síntoma (‘tengo ansiedad’ vs. ‘soy ansiedad’), devolviendo libertad interna.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -251,13 +274,15 @@
           "codigo": "p_pospsy_optimismo",
           "nombre": "Optimismo aprendido (estilo explicativo y reapreciación)",
           "texto": "Trabajo estructurado sobre atribuciones (permanente/temporal, global/específico, interno/externo) para flexibilizar el estilo explicativo y reducir indefensión. Se entrena el paso de interpretación automática a interpretación alternativa plausible.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_pospsy_logro_minimo",
           "nombre": "Reencuadre de logro mínimo viable",
           "texto": "Transformar ‘no hice suficiente’ en ‘qué paso pequeño sí es sostenible’. Reduce autoexigencia y aumenta adherencia.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -272,7 +297,8 @@
           "codigo": "m_eft_reformulacion",
           "nombre": "Reformulación del problema en términos de apego",
           "texto": "Microintervención narrativa que traduce conflictos cotidianos en términos de necesidades de apego insatisfechas. Permite que la pareja comprenda el sentido profundo de sus reacciones y disminuya la polarización, facilitando una lectura más compasiva del conflicto (Johnson, 2004).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -287,19 +313,22 @@
           "codigo": "p_rt_control_interno",
           "nombre": "Evaluación de control interno vs externo",
           "texto": "Trabajo explícito para desplazar el foco desde el control de otros o de circunstancias hacia la responsabilidad personal. Se examinan creencias de impotencia y se reformulan como áreas de elección posible.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_rt_excusas",
           "nombre": "Rechazo de excusas y victimismo",
           "texto": "Intervención directa pero respetuosa para señalar patrones de justificación que mantienen conductas ineficaces. Se devuelve al cliente la capacidad de elegir sin culpabilizar.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_rt_eleccion",
           "nombre": "Desplazar de culpa a elección",
           "texto": "Microintervención que transforma narrativas de culpa o victimismo en lenguaje de elección posible.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -314,19 +343,22 @@
           "codigo": "p_wachtel_predicciones",
           "nombre": "Detección de predicciones relacionales y pruebas de realidad",
           "texto": "Procedimiento orientado a identificar las predicciones implícitas que guían la conducta del paciente en contextos relacionales (p. ej., “si me muestro vulnerable, me humillarán”) y a diseñar pruebas de realidad graduadas para contrastarlas en la experiencia cotidiana. Estas pruebas no buscan demostrar que el paciente está equivocado, sino generar evidencia nueva que permita flexibilizar expectativas rígidas y tolerar el riesgo emocional del cambio sin recurrir a evitación, sumisión o ataque defensivo. (Wachtel, 1977; Wachtel, 2011)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_wachtel_evidenciaReciente",
           "nombre": "Pregunta de evidencia reciente",
           "texto": "Microintervención que solicita ejemplos concretos y recientes que confirmen o contradigan la predicción central del ciclo, con el fin de debilitar generalizaciones rígidas y lecturas globales del otro y de uno mismo. Esta búsqueda de evidencia experiencial no pretende refutar al paciente, sino ampliar el campo interpretativo y generar una comprensión más matizada y flexible de la realidad relacional. (Wachtel, 2011)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_wachtel_lecturaMente",
           "nombre": "Desactivar lectura de mente",
           "texto": "Microintervención que frena inferencias rígidas sobre intenciones, pensamientos o emociones del otro y promueve preguntas de verificación directa. Al sustituir la lectura de mente por mentalización explícita, se reducen malentendidos que suelen activar el ciclo y se favorece una interacción más abierta y menos defensiva. (Wachtel, 2011)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -341,43 +373,50 @@
           "codigo": "p_lazarus_formulacion_mantenimiento",
           "nombre": "Formulación multimodal de mantenimiento (cadena por modalidades)",
           "texto": "Procedimiento de conceptualización que integra la información BASIC-ID en una formulación de mantenimiento: cómo se conectan conducta, emoción, sensaciones, imágenes, cogniciones, patrones interpersonales y factores biológicos para sostener el problema en bucles de retroalimentación. Se identifican disparadores típicos, respuestas automáticas y consecuencias que refuerzan el patrón, de modo que la formulación no sea solo descriptiva sino utilizable para seleccionar técnicas específicas y anticipar obstáculos de recaída. (Lazarus, 1989)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lazarus_psicoeducacion_basicid",
           "nombre": "Psicoeducación multimodal y explicación del modelo BASIC-ID",
           "texto": "Procedimiento de explicación plausible del enfoque, donde se presenta BASIC-ID como un mapa práctico del funcionamiento humano y se aclara por qué se emplearán técnicas diferentes según la modalidad predominante. Se busca aumentar colaboración, expectativas realistas y sentido de dirección, evitando que el paciente viva la integración técnica como incoherencia o improvisación, y fomentando que el propio paciente observe su experiencia en términos de modalidades. (Lazarus, 1989)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lazarus_imaginacion_intervencion",
           "nombre": "Intervención en Imaginación (I) mediante trabajo con imágenes y ensayos mentales",
           "texto": "Procedimiento que aborda la modalidad de imágenes mentales (intrusiones, catastrofización visual, recuerdos vívidos, escenas temidas) usando técnicas de modificación de imagen y ensayo imaginado de conductas alternativas. Al cambiar la imagen, se cambia la respuesta emocional y conductual asociada, lo que resulta especialmente útil cuando la imaginación es un disparador directo de ansiedad, vergüenza o evitación. (Lazarus, 1989)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lazarus_cognicion_reestructuracion",
           "nombre": "Intervención en Cognición (C) mediante reatribución y auto-instrucciones",
           "texto": "Procedimiento que identifica pensamientos automáticos, reglas rígidas y sesgos interpretativos relevantes para el mantenimiento del problema y los trabaja con reatribución, búsqueda de alternativas y entrenamiento de auto-instrucciones funcionales. La meta no es “pensar positivo”, sino generar interpretaciones más ajustadas que permitan conductas nuevas y reduzcan afecto desbordante, integrando lo cognitivo como una modalidad más dentro del sistema. (Lazarus, 1989)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_lazarus_modalidad_dominante",
           "nombre": "Identificación de modalidad dominante del episodio",
           "texto": "Microintervención que ayuda a identificar qué modalidad BASIC-ID está siendo dominante en un episodio concreto de malestar (conductual, emocional, somática, imaginativa, cognitiva, interpersonal o biológica), orientando la elección inmediata de la intervención más eficaz. Este enfoque reduce intervenciones genéricas y aumenta precisión clínica en tiempo real. (Lazarus, 1989)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_lazarus_traduccion_modal",
           "nombre": "Traducción de queja global a modalidades específicas",
           "texto": "Microintervención que transforma una queja difusa (“estoy fatal”, “todo va mal”) en descriptores concretos por modalidades BASIC-ID, facilitando claridad, reduciendo sensación de caos y permitiendo intervenir de forma focalizada. Esta traducción suele disminuir activación emocional y aumentar percepción de control. (Lazarus, 1976)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_lazarus_reencuadre_minimo",
           "nombre": "Reencuadre cognitivo mínimo",
           "texto": "Microintervención que introduce una reinterpretación breve y funcional de un pensamiento rígido, sin necesidad de debate prolongado, con el objetivo de desbloquear acción o reducir afecto intenso. Se prioriza utilidad inmediata sobre reestructuración exhaustiva. (Lazarus, 1989)",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -392,19 +431,22 @@
           "codigo": "p_balint_regresion_benigna_vs_maligna",
           "nombre": "Diferenciación entre regresión benigna y regresión maligna",
           "texto": "Procedimiento de formulación continua que distingue regresión reparadora —caracterizada por alivio, mayor simbolización y aumento de confianza— de regresión desorganizante, asociada a escalada de demandas, acting out o somatización, permitiendo ajustar el encuadre y las intervenciones para mantener el proceso dentro de una ventana terapéutica segura.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_balint_focal_breve",
           "nombre": "Intervención focal breve orientada a alivio funcional",
           "texto": "Procedimiento pragmático que, sin abandonar la comprensión profunda, prioriza alivio funcional y reorganización del vínculo en un foco acotado, facilitando cambios observables en regulación, petición de ayuda y adaptación relacional en un tiempo limitado.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_balint_necesidad_vs_exigencia",
           "nombre": "Separar necesidad legítima de exigencia defensiva",
           "texto": "Microintervención que discrimina entre la necesidad genuina de apoyo y la exigencia defensiva que busca eliminar toda frustración, reduciendo culpa y vergüenza y facilitando una formulación más directa y realista de lo que se necesita.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -419,7 +461,8 @@
           "codigo": "p_bion_aprendizaje_experiencia",
           "nombre": "Facilitación del aprendizaje a partir de la experiencia",
           "texto": "Procedimiento que permite al paciente aprender de la experiencia emocional en lugar de repetirla compulsivamente, desarrollando una mente capaz de pensar, simbolizar y extraer significado de vivencias previamente intolerables (Bion, 1962, *Learning from Experience*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -434,19 +477,22 @@
           "codigo": "p_kernberg_diad as_escindidas",
           "nombre": "Identificación de díadas relacionales escindidas",
           "texto": "Procedimiento que detecta configuraciones recurrentes de self-objeto cargadas de afecto (idealizadas vs persecutorias) activas en la transferencia, permitiendo su posterior integración mediante el trabajo interpretativo (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_kernberg_integracion_representaciones",
           "nombre": "Integración progresiva de representaciones del self y del objeto",
           "texto": "Procedimiento de largo recorrido que promueve la síntesis de aspectos amorosos y agresivos del self y del objeto, reduciendo la fragmentación identitaria y favoreciendo una identidad más coherente y estable (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_kernberg_nominar_diada",
           "nombre": "Nombrar díada relacional dominante",
           "texto": "Microintervención que identifica explícitamente la configuración self–objeto activa (por ejemplo, self víctima–objeto persecutorio), facilitando su reconocimiento consciente y posterior integración (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -461,19 +507,22 @@
           "codigo": "p_neopsy_distorsion_parataxica",
           "nombre": "Clarificación de distorsiones interpersonales (Sullivan: parataxic distortion)",
           "texto": "Intervención centrada en detectar cómo el paciente ‘lee’ al otro a través de plantillas relacionales antiguas, atribuyendo intenciones sin datos y reaccionando como si el presente fuese el pasado; el terapeuta contrasta suavemente la inferencia con evidencias, reconstruye la cadena de atribución y genera hipótesis alternativas más ajustadas para disminuir malentendidos repetitivos.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_neopsy_fromm_escape_libertad",
           "nombre": "Escape de la libertad: autoritarismo, destructividad y conformismo (Fromm)",
           "texto": "Procedimiento que identifica cómo el paciente maneja la angustia de libertad e incertidumbre a través de sumisión a figuras/ideas, ataques/destructividad o conformismo automático; se conectan estos movimientos con miedo, soledad y responsabilidad, y se diseñan elecciones graduales que incrementen autonomía sin ruptura abrupta del sentido de pertenencia.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_neopsy_necesidad_vs_estrategia",
           "nombre": "Separar necesidad legítima de estrategia defensiva",
           "texto": "Microintervención que distingue la necesidad (cercanía, respeto, reconocimiento) de la estrategia defensiva (controlar, complacer, retirarse), reduciendo culpa o vergüenza y facilitando peticiones directas y límites.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -488,7 +537,8 @@
           "codigo": "m_freud_interpretacionTentativa",
           "nombre": "Hipótesis interpretativa tentativa",
           "texto": "Ofrecer una interpretación no dogmática que se contrasta con la experiencia del paciente.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -503,19 +553,22 @@
           "codigo": "p_lacan_significante_amo",
           "nombre": "Aislamiento de significantes amo (S1)",
           "texto": "Intervención orientada a localizar los significantes privilegiados que organizan la identidad del sujeto —mandatos, ideales, nombres propios o etiquetas— mostrando cómo estos S1 estructuran la relación con el saber, el Otro y el goce, y cómo su cuestionamiento abre la posibilidad de una rectificación subjetiva (Lacan, 1969–1970, *The Other Side of Psychoanalysis*; Miller, 2008, *Paradigms of Jouissance*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lacan_rsi",
           "nombre": "Trabajo con los registros Real, Simbólico e Imaginario",
           "texto": "Procedimiento de orientación clínica que sitúa el material del paciente en los registros Real, Simbólico o Imaginario, permitiendo diferenciar conflictos de sentido, capturas narcisistas y puntos de imposibilidad de simbolización, y ajustar la intervención para no tratar lo Real como si fuera simbólico ni reforzar soluciones imaginarias (Lacan, 1974–1975, *The RSI Seminar*; Soler, 2011, *What Lacan Said about Women*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_lacan_s1",
           "nombre": "Nombrar el significante amo en juego",
           "texto": "Microintervención que identifica y nombra el significante privilegiado que organiza el discurso del sujeto en ese momento —ideal, mandato o etiqueta— permitiendo que se vuelva objeto de cuestionamiento y no de obediencia inconsciente (Lacan, 1969–1970, *The Other Side of Psychoanalysis*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -530,55 +583,64 @@
           "codigo": "p_adler_orden_nacimiento",
           "nombre": "Orden de nacimiento y posiciones relacionales",
           "texto": "Este procedimiento analiza cómo la posición fraterna y los cambios en el sistema familiar moldearon estrategias de competencia, cooperación, responsabilidad y búsqueda de atención, evitando determinismos y usándolo como lente para comprender el estilo de vida.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_adler_ficciones_logica_privada",
           "nombre": "Detección de metas, ficciones guía y lógica privada",
           "texto": "Este procedimiento identifica creencias nucleares y metas ficticias que organizan la conducta, distinguiendo entre sentido común compartido e interpretaciones privadas rígidas que sostienen evitación, superioridad defensiva o desánimo.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_adler_teleologia_sintoma",
           "nombre": "Interpretación teleológica del síntoma",
           "texto": "La interpretación teleológica reformula el síntoma por su propósito adaptativo en el estilo de vida, mostrando cómo puede proteger de vergüenza, evitar fracaso, mantener control o asegurar un lugar en el sistema, abriendo alternativas más cooperativas y valientes.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_adler_desanimo_inferioridad",
           "nombre": "Trabajo con el desánimo y la vergüenza de inferioridad",
           "texto": "Este procedimiento aborda el desánimo como núcleo clínico, validando el dolor de inferioridad y reformulándolo como señal de necesidad de pertenencia, promoviendo valentía social y pasos graduados de participación en lugar de retirada o control defensivo.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_adler_reorientacion",
           "nombre": "Reorientación y reeducación del estilo de vida",
           "texto": "La reorientación traduce el insight en acciones nuevas, entrenando alternativas conductuales y relacionales coherentes con cooperación, límites y responsabilidad, de modo que el estilo de vida se flexibilice mediante práctica sostenida.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_adler_suenos",
           "nombre": "Uso clínico de sueños como expresión de estilo de vida",
           "texto": "El trabajo con sueños se utiliza como material proyectivo de la lógica privada y del estilo de vida, explorando imágenes y emociones para inferir metas, temores y estrategias de salvaguarda, conectándolo con decisiones actuales sin convertirlo en explicación causal rígida.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_adler_reencuadre_teleologico",
           "nombre": "Reencuadre teleológico breve",
           "texto": "Microreformulación que desplaza la explicación desde culpa o defectos hacia propósito y función, haciendo el problema comprensible y modificable dentro del estilo de vida y sus estrategias de protección.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_adler_logica_privada",
           "nombre": "Identificación de lógica privada en tiempo real",
           "texto": "Se detecta en sesión la interpretación privada rígida que el paciente está usando para anticipar rechazo o fracaso, y se contrasta con alternativas más realistas y cooperativas, sin confrontación humillante.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_adler_spitting_in_the_soup",
           "nombre": "Spitting in the soup",
           "texto": "Consiste en señalar con tacto el ‘beneficio oculto’ o la función de una conducta problemática de modo que pierda su atractivo automático, aumentando elección consciente sin acusación moral.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -593,7 +655,8 @@
           "codigo": "p_kohut_internalizacion_transmutadora",
           "nombre": "Internalización transmutadora",
           "texto": "Procedimiento evolutivo mediante el cual funciones selfobject inicialmente proporcionadas por el terapeuta son progresivamente internalizadas por el paciente, dando lugar a mayor cohesión, autonomía y estabilidad del self (Kohut, 1971, *The Analysis of the Self*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -608,19 +671,22 @@
           "codigo": "p_spb_foco_dinamico",
           "nombre": "Formulación temprana del foco dinámico",
           "texto": "Procedimiento central que consiste en identificar desde las primeras sesiones un conflicto nuclear que articula síntomas, emociones, defensas y patrones relacionales, formulándolo de manera clara y compartida para orientar todo el tratamiento; esta focalización permite intensificar el trabajo terapéutico sin dispersión y aumentar la eficacia del tiempo limitado (Mann, 1973, *Time-Limited Psychotherapy*; Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_spb_ccrt",
           "nombre": "Construcción del CCRT (Core Conflictual Relationship Theme)",
           "texto": "Procedimiento específico del modelo de Luborsky que formula el conflicto relacional central en términos de deseos del self, respuestas esperadas de los otros y respuestas del self, permitiendo una conceptualización operativa del patrón inconsciente que guía intervenciones interpretativas consistentes (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_spb_nombrar_foco",
           "nombre": "Nombrar el foco dinámico en el aquí-ahora",
           "texto": "Microintervención que recuerda explícitamente cómo lo que está ocurriendo en la sesión se relaciona con el foco dinámico acordado, ayudando al paciente a mantener orientación y a reconocer la repetición del conflicto nuclear en tiempo real (Mann, 1973, *Time-Limited Psychotherapy*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -635,13 +701,15 @@
           "codigo": "p_fairbairn_objeto_rechazante",
           "nombre": "Análisis de la fijación al objeto rechazante",
           "texto": "Este procedimiento examina la persistente lealtad al objeto rechazante internalizado, ayudando a comprender por qué el sujeto mantiene vínculos dañinos con la esperanza inconsciente de reparación.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_fairbairn_ambivalencia",
           "nombre": "Interpretación de ambivalencia hacia el objeto",
           "texto": "Esta microintervención pone en palabras la coexistencia de amor y odio hacia el mismo objeto interno, facilitando insight e integración emocional.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -656,25 +724,29 @@
           "codigo": "p_sullivan_patrones_recurrentes",
           "nombre": "Identificación de patrones relacionales recurrentes",
           "texto": "Intervención de formulación que integra múltiples episodios para detectar regularidades en la forma de vincularse (sumisión, control, evitación, hostilidad encubierta), mostrando su función ansiolítica y su coste relacional, y abriendo la posibilidad de flexibilización.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_sullivan_distorsion_parataxica",
           "nombre": "Identificación de distorsiones paratáxicas",
           "texto": "Intervención que señala inferencias automáticas y asociaciones erróneas entre experiencias pasadas y relaciones presentes, ayudando a diferenciar percepción actual de anticipación histórica y reduciendo reactividad interpersonal.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_sullivan_expectativas_roles",
           "nombre": "Clarificación de expectativas y roles relacionales",
           "texto": "Intervención que explicita supuestos sobre cómo ‘deberían’ comportarse los otros en distintos roles, diferenciando expectativas realistas de exigencias ansiolíticas y favoreciendo acuerdos relacionales más claros.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_sullivan_expectativa_rol",
           "nombre": "Explorar expectativa implícita de rol",
           "texto": "Microintervención que pregunta o señala qué se espera implícitamente del otro en una situación concreta, ayudando a clarificar supuestos relacionales que generan ansiedad o conflicto.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -689,19 +761,22 @@
           "codigo": "p_bowlby_patrones_apego",
           "nombre": "Identificación de patrones de apego",
           "texto": "Procedimiento de formulación que clasifica los patrones relacionales predominantes —seguro, evitativo, ambivalente o desorganizado— a partir de narrativas biográficas, relaciones actuales y respuestas a la cercanía y la separación, permitiendo entender la coherencia histórica del estilo relacional y orientar la intervención sin etiquetar al paciente como deficitario (Bowlby, 1973, *Separation: Anxiety and Anger*; Ainsworth et al., 1978, *Patterns of Attachment*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_bowlby_estrategias_extremas",
           "nombre": "Revisión de estrategias de apego extremas",
           "texto": "Intervención que identifica y flexibiliza estrategias defensivas de apego —hiperactivación ansiosa o desactivación evitativa— mostrando su origen adaptativo y su coste actual, y promoviendo formas más equilibradas de búsqueda de apoyo y autonomía (Bowlby, 1973, *Separation: Anxiety and Anger*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_bowlby_reflejar_estrategia",
           "nombre": "Reflejar estrategia de apego dominante",
           "texto": "Microintervención que devuelve al paciente la estrategia de apego que está utilizando —hiperactivación ansiosa o desactivación evitativa— mostrando su lógica protectora sin juzgarla, lo que abre la posibilidad de flexibilizarla (Bowlby, 1969, *Attachment*).",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -716,25 +791,29 @@
           "codigo": "p_winn_consultas_terapeuticas",
           "nombre": "Consultas terapéuticas (intervenciones breves intensivas winnicottianas)",
           "texto": "Procedimiento de intervención breve en el que se ofrece rápidamente un entorno suficientemente bueno y un dispositivo de juego/observación que permita organizar una experiencia transformadora; se prioriza seguridad, contacto y formulaciones mínimas con alto encaje experiencial, buscando desbloquear desarrollo más que ‘explicar’ patología, y dejando al paciente con una experiencia utilizable tras pocas sesiones.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_winn_falso_self_supervivencia",
           "nombre": "Nombrar el falso self como ‘modo de supervivencia’",
           "texto": "Intervención breve que reencuadra el falso self como una solución de supervivencia relacional y no como defecto, reduciendo auto-odio y facilitando que el paciente se permita soltarlo gradualmente.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_winn_miedo_derrumbe_memoria",
           "nombre": "Nombrar miedo al derrumbe como memoria no vivida",
           "texto": "Intervención breve que formula el pánico/vacío como reactivación de catástrofe temprana no mentalizada, reduciendo vergüenza y urgencia de control, y abriendo la posibilidad de sostener la experiencia en dosis tolerables.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_winn_hacer_a_ser",
           "nombre": "Re-orientar del ‘hacer’ al ‘ser’",
           "texto": "Microintervención que detecta la prisa por producir soluciones o explicaciones y la devuelve como exigencia del falso self, invitando a permanecer un momento en la experiencia para que emerja necesidad auténtica y juego.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -749,7 +828,8 @@
           "codigo": "m_abft_externalizar",
           "nombre": "Externalizar el patrón, no al hijo",
           "texto": "Separar al adolescente del problema relacional para reducir culpabilización y aumentar cooperación.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -764,13 +844,15 @@
           "codigo": "p_bateson_reencuadre",
           "nombre": "Reencuadre sistémico (cambio de marco)",
           "texto": "Procedimiento de cambio de contexto interpretativo: una conducta deja de verse como ‘defecto individual’ y se entiende como función en el sistema (protección, señal, estabilización). El reencuadre reduce culpa/ataque y abre opciones de intervención sobre reglas y ciclos.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_bateson_micro_reencuadre",
           "nombre": "Micro-reencuadre funcional",
           "texto": "Reformular una conducta problemática como intento de regulación o protección dentro del sistema. Reduce escalada moral y facilita curiosidad: ‘¿qué está intentando conseguir esta conducta aquí?’.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -785,19 +867,22 @@
           "codigo": "p_fft_motivacion",
           "nombre": "Fase de compromiso y motivación",
           "texto": "Reducción de la negatividad, construcción de alianza y reformulación del problema en términos relacionales y funcionales.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_fft_reencuadre",
           "nombre": "Reencuadre funcional del síntoma",
           "texto": "Presentar la conducta problema como comprensible y modificable dentro del sistema familiar.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_fft_mantenimiento",
           "nombre": "Plan breve de mantenimiento",
           "texto": "Anticipar riesgos y definir respuestas funcionales.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -812,19 +897,22 @@
           "codigo": "p_erickson_utilizacion",
           "nombre": "Utilización de resistencias",
           "texto": "En lugar de confrontar la resistencia, el terapeuta la incorpora como parte de la intervención, transformándola en motor de cambio. Este enfoque evita luchas de poder y preserva la autonomía del paciente.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_erickson_metaforas",
           "nombre": "Metáforas terapéuticas",
           "texto": "Relatos simbólicos diseñados para reflejar la situación del paciente y sugerir soluciones de forma indirecta. Actúan a nivel experiencial más que racional.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_erickson_paradoja",
           "nombre": "Intervenciones paradójicas",
           "texto": "Prescripción o intensificación controlada del síntoma para desactivar luchas internas y devolver sensación de control. Muy influyente en la terapia estratégica posterior.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -839,13 +927,15 @@
           "codigo": "p_satir_reencuadre",
           "nombre": "Reencuadre humanista del síntoma",
           "texto": "El síntoma se redefine como intento de supervivencia y protección de la autoestima, reduciendo culpa y vergüenza.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_satir_apreciativa",
           "nombre": "Reformulación apreciativa",
           "texto": "Transformar críticas en reconocimiento de necesidades y valores.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -860,7 +950,8 @@
           "codigo": "m_mdft_reencuadre",
           "nombre": "Reencuadre sistémico del consumo",
           "texto": "Reformulación del consumo como problema relacional y contextual, no solo individual.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -875,19 +966,22 @@
           "codigo": "p_mst_mantenimiento",
           "nombre": "Prevención de recaídas y mantenimiento del cambio",
           "texto": "Identificación de situaciones de alto riesgo, señales tempranas y planes concretos de respuesta; consolidación de rutinas y apoyos para sostener logros tras el alta.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mst_metas_corto_plazo",
           "nombre": "Activación de motivación con metas a corto plazo",
           "texto": "Conectar cambios conductuales concretos con consecuencias valiosas (libertad, confianza, menos sanciones, más oportunidades), sin moralizar.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_mst_reencuadre_funcional",
           "nombre": "Reencuadre funcional del comportamiento",
           "texto": "Reformular la conducta como resultado de contingencias y contexto para pasar de culpa a plan operativo de cambio.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -902,13 +996,15 @@
           "codigo": "p_linares_ciclos",
           "nombre": "Mapa de ciclos relacionales (secuencia acción–reacción)",
           "texto": "Procedimiento estructurado para identificar secuencias repetitivas que mantienen el problema (escalada, retirada, persecución–huida, sobreprotección–incompetencia, etc.). Se dibuja o verbaliza la cadena de eventos, se localizan puntos de inflexión y se reformulan funciones relacionales del síntoma para abrir alternativas de interrupción del ciclo.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_linares_reformulacion",
           "nombre": "Reformulación relacional del síntoma",
           "texto": "Reencuadre breve: el síntoma como solución del sistema, señal o intento de regulación vincular. Reduce culpa y abre posibilidades de intervención en el patrón.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -923,13 +1019,15 @@
           "codigo": "p_nardone_soluciones",
           "nombre": "Análisis de soluciones intentadas",
           "texto": "Procedimiento central del modelo. Se identifican con precisión las conductas, pensamientos y estrategias que el paciente utiliza para controlar o evitar el problema y que, paradójicamente, lo mantienen.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_nardone_reformulacion",
           "nombre": "Reformulación estratégica",
           "texto": "Cambio del significado del síntoma para aumentar disposición al cambio.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -944,7 +1042,8 @@
           "codigo": "p_mri_reencuadre",
           "nombre": "Reencuadre pragmático",
           "texto": "El problema se redefine como resultado de intentos fallidos de solución, reduciendo culpa y aumentando apertura al cambio.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -959,7 +1058,8 @@
           "codigo": "m_sfbt_reformulacion",
           "nombre": "Reformulación positiva",
           "texto": "Transformar descripciones problemáticas en lenguaje de capacidad y recurso.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -974,13 +1074,15 @@
           "codigo": "p_contextual_responsabilidad",
           "nombre": "Clarificación de méritos y responsabilidades",
           "texto": "Este procedimiento busca diferenciar entre responsabilidades legítimas y cargas injustamente asumidas, ayudando a los miembros del sistema a reconocer qué obligaciones les corresponden éticamente y cuáles han sido interiorizadas de forma desproporcionada por lealtad, culpa o mandato relacional.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_contextual_reencuadre",
           "nombre": "Reencuadre ético del síntoma",
           "texto": "El reencuadre ético del síntoma permite comprender la conducta problemática como expresión de lealtad, deuda o desequilibrio ético relacional, desplazando lecturas patologizantes hacia una comprensión moral y contextual del sufrimiento.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -995,13 +1097,15 @@
           "codigo": "p_strat_paradoja",
           "nombre": "Intervenciones paradójicas",
           "texto": "Se prescribe el síntoma o la conducta problemática de forma controlada para desactivar la lucha de control. La paradoja hace que el problema pierda su función reguladora.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_strat_reencuadre",
           "nombre": "Reencuadre estratégico",
           "texto": "El síntoma se redefine como intento de solución o como conducta con función relacional, reduciendo resistencia y facilitando cumplimiento de tareas.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -1016,19 +1120,22 @@
           "codigo": "p_bowen_proyeccion",
           "nombre": "Análisis de proyección familiar",
           "texto": "Bowen describe cómo la ansiedad parental se proyecta sobre uno o varios hijos, que pasan a portar síntomas o roles (responsable, problemático, frágil). Este procedimiento ayuda al consultante a ver el patrón sin culpabilizar: reconocer funciones, cómo se refuerzan, y cómo retirar participación del juego. La reformulación reduce vergüenza y abre alternativas: el objetivo no es ‘demostrar’ nada, sino cambiar dinámicas de asignación de ansiedad.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_bowen_reencuadre_ansiedad",
           "nombre": "Reencuadre de ansiedad familiar (de ataque a presión sistémica)",
           "texto": "Convertir ataques personales en señales de ansiedad del sistema (‘cuando sube la ansiedad, buscáis un culpable’). Esto reduce vergüenza y defensividad, permitiendo respuestas más calmadas. El objetivo no es ‘justificar’, sino liberar al consultante del papel de objetivo y devolverle margen de elección.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         },
         {
           "codigo": "m_bowen_funcion_sintoma",
           "nombre": "Señalar ‘función del síntoma’ sin culpabilizar",
           "texto": "Microintervención que conecta el síntoma con la regulación del sistema (‘cuando tú colapsas, el conflicto entre ellos baja’). Se formula con cuidado para evitar que el consultante se sienta usado o culpable. Bien hecha, aumenta comprensión y abre destriangulación.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -1043,13 +1150,15 @@
           "codigo": "p_struct_coaliciones",
           "nombre": "Desarticulación de coaliciones",
           "texto": "Identificación e interrupción de alianzas encubiertas que sostienen el síntoma. Se redistribuye la lealtad hacia subsistemas funcionales.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_struct_reencuadre",
           "nombre": "Reencuadre estructural",
           "texto": "El síntoma se redefine como indicador de una estructura disfuncional, reduciendo culpa individual y facilitando cambio sistémico.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -1064,13 +1173,15 @@
           "codigo": "p_whitaker_simbolica",
           "nombre": "Intervención simbólica",
           "texto": "Uso de metáforas, imágenes, actos simbólicos y lenguaje evocador para acceder a niveles profundos de experiencia emocional y significado relacional.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_whitaker_descolocar",
           "nombre": "Descolocación experiencial",
           "texto": "Intervenciones inesperadas que rompen patrones previsibles y abren nuevas posibilidades de respuesta.",
-          "sub": "N_reformulacion"
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     }

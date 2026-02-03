@@ -1,6 +1,6 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 48,
   "modelos": [
     {
@@ -14,7 +14,8 @@
           "codigo": "m_naikan_reparacion",
           "nombre": "Pequeño gesto reparador",
           "texto": "Tras una revisión relevante, se propone un gesto realista (mensaje, agradecimiento, devolución pendiente, conducta de cuidado) alineado con lo visto, sin forzar reconciliaciones imposibles.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -29,7 +30,8 @@
           "codigo": "m_morita_tarea",
           "nombre": "Redirección inmediata a la tarea adecuada",
           "texto": "Intervención concisa y directa mediante la cual el terapeuta devuelve al paciente a la actividad que corresponde realizar en ese momento cuando este queda atrapado en la observación de su estado interno. La redirección se hace sin discusión ni elaboración emocional, reforzando la idea central de Morita: la acción adecuada no depende de cómo uno se siente. Esta microintervención rompe la rumiación, reduce la autoobservación patológica y fortalece la orientación a la realidad a través de la práctica repetida (Morita, 1928; LeVine, 1993).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -44,7 +46,8 @@
           "codigo": "m_aversivo_contingencias",
           "nombre": "Control de contingencias",
           "texto": "Ajuste preciso de las contingencias para garantizar que el estímulo aversivo solo aparece en presencia de la conducta problema, evitando generalizaciones no deseadas o aprendizaje caótico.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -59,37 +62,43 @@
           "codigo": "p_sst_ensayo_conductual",
           "nombre": "Ensayo conductual (role-playing) con coaching",
           "texto": "Procedimiento central del SST donde el paciente practica la habilidad en simulaciones realistas (role-playing) que reproducen situaciones habituales, mientras el terapeuta guía con indicaciones breves, pausas estratégicas y repetición de fragmentos para aumentar precisión y fluidez; se ajusta gradualmente la dificultad (interlocutor más exigente, mayor carga emocional, mayor ambigüedad) hasta que la conducta emerge de forma autónoma y aplicable fuera de sesión.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_sst_conversacion",
           "nombre": "Entrenamiento en habilidades conversacionales (inicio, mantenimiento, cierre)",
           "texto": "Procedimiento para aumentar fluidez social entrenando aperturas simples, preguntas de seguimiento, autorrevelación gradual, señalización de interés y cierres adecuados, ajustando el estilo al contexto (formal/informal) y al objetivo (conectar, pedir, informar); se trabaja especialmente en ansiedad social y retraimiento, donde la dificultad no es “saber qué hacer” en abstracto sino ejecutar secuencias mínimas con naturalidad bajo activación.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_sst_tareas_in_vivo",
           "nombre": "Tareas entre sesiones e integración in vivo",
           "texto": "Procedimiento de generalización que traduce el trabajo en sesión a experimentos conductuales reales, definiendo tareas específicas (p. ej., pedir algo concreto, iniciar una conversación breve, sostener un límite) con criterios de éxito realistas y plan de afrontamiento; se registran intentos, resultados y aprendizaje, priorizando repetición y ajuste contextual para evitar que el cambio quede encapsulado en la consulta.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_sst_generalizacion_recaidas",
           "nombre": "Generalización, mantenimiento y prevención de recaídas",
           "texto": "Procedimiento final de consolidación donde se identifican situaciones de alto riesgo (fatiga, conflicto, figuras intimidantes), se diseñan planes de práctica distribuida y se establecen estrategias de recuperación tras fallos (reparación, reintento, ajuste de dificultad); el foco es mantener el repertorio en el tiempo, reducir la dependencia del terapeuta y construir una narrativa práctica de aprendizaje continuo en lugar de perfeccionismo interpersonal.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_sst_shaping",
           "nombre": "Shaping (aproximaciones sucesivas)",
           "texto": "Microintervención que refuerza progresos parciales (p. ej., sostener la petición aunque la voz tiemble) para construir la conducta completa paso a paso, reduciendo evitación y aumentando autoeficacia conductual, especialmente en pacientes muy inhibidos o con historia de fracaso social.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_sst_exposicion_interpersonal",
           "nombre": "Exposición interpersonal graduada dentro del SST",
           "texto": "Microintervención que integra práctica de habilidades con exposición gradual a situaciones sociales temidas, asegurando que el paciente no solo “aprende” la habilidad en frío, sino que la ejecuta bajo activación real, reduciendo evitación y consolidando tolerancia al malestar social.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -104,19 +113,22 @@
           "codigo": "p_bandura_modelado_directo",
           "nombre": "Modelado directo",
           "texto": "Procedimiento en el que el terapeuta u otra figura relevante ejecuta de forma visible la conducta objetivo para que el paciente la observe. El modelado directo reduce incertidumbre, proporciona guias claras de accion y disminuye la ansiedad asociada a la novedad conductual.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_bandura_ensayo",
           "nombre": "Ensayo conductual guiado",
           "texto": "Procedimiento en el que el paciente practica activamente la conducta observada bajo supervision terapeutica. Facilita la transicion de la observacion a la ejecucion real y consolida el aprendizaje.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_bandura_reproduccion",
           "nombre": "Reproduccion progresiva",
           "texto": "Division de la conducta objetivo en pasos graduales que el paciente puede reproducir de forma progresiva, reduciendo frustracion y abandono.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -131,13 +143,15 @@
           "codigo": "p_mowrer_exposicion_pr",
           "nombre": "Exposición con prevención de respuesta",
           "texto": "Procedimiento central derivado directamente de la teoría bifactorial. Consiste en exponer al paciente de forma repetida y prolongada al estímulo temido sin permitir conductas de evitación, escape ni neutralización. Al impedir el refuerzo negativo, la ansiedad aumenta inicialmente pero disminuye progresivamente por habituación y extinción, permitiendo que el sistema de aprendizaje incorpore información correctiva. Es la base de los tratamientos conductuales para fobias, TOC y trastornos de ansiedad.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mowrer_bloqueo",
           "nombre": "Bloqueo de evitación",
           "texto": "Intervención puntual destinada a interrumpir respuestas automáticas de huida o neutralización que aparecen durante la exposición. Su objetivo es evitar que se reactive el refuerzo negativo y asegurar la continuidad del aprendizaje correctivo.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -152,7 +166,8 @@
           "codigo": "p_kelly_rolfijo",
           "nombre": "Terapia de Rol Fijo",
           "texto": "Procedimiento emblemático del PCP. Consiste en elaborar un rol alternativo, coherente con el sistema personal \npero más flexible. El paciente vive temporalmente \"como si\" fuera ese personaje en su vida cotidiana. \nActualiza constructos identitarios, aumenta la agencia y lleva a experimentar nuevas formas de actuar y relacionarse.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -167,13 +182,15 @@
           "codigo": "p_ugazio_tareasContexto",
           "nombre": "Tareas entre sesiones para consolidar nuevas posiciones",
           "texto": "Procedimiento que diseña tareas específicas y realistas para probar nuevas posiciones del self fuera de sesión sin romper el sistema (p. ej., ensayar un límite, pedir apoyo sin quedar en dependencia, ceder control sin perder autoridad). Las tareas se plantean como experimentos semánticos: se observa qué significado aparece, cómo reacciona el entorno y qué ajustes son necesarios. Su función es traducir la flexibilización del campo semántico en conducta sostenida, consolidando agencia y reduciendo recaídas. (Ugazio, 2013)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_ugazio_experimentosMinimos",
           "nombre": "Diseño de experimentos semánticos mínimos",
           "texto": "Propuesta de acciones pequeñas y reversibles que permitan probar una nueva posición del self y observar cómo cambia el significado relacional, reduciendo miedo al error y favoreciendo aprendizaje experiencial. (Ugazio, 2013)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -188,7 +205,8 @@
           "codigo": "m_guidano_autoobservacion_entre_sesiones",
           "nombre": "Autoobservación entre sesiones orientada a patrones",
           "texto": "Microintervención que acuerda una autoobservación concreta entre sesiones (no para ‘controlar’ síntomas), centrada en detectar cuándo se activa el patrón organizativo y qué señales tempranas aparecen (sensación corporal, emoción, guion narrativo). Se busca aumentar continuidad del trabajo terapéutico y consolidar la metaperspectiva como habilidad estable, sin convertirlo en tarea de rendimiento. (Guidano, 1991).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -203,19 +221,22 @@
           "codigo": "p_feixas_rolFijo",
           "nombre": "Terapia de Rol Fijo (Fixed-Role Therapy) adaptada a objetivos identitarios",
           "texto": "Procedimiento experiencial donde se diseña, junto al paciente, un rol alternativo coherente con su identidad pero más flexible (un “personaje” viable) y se ensaya en la vida cotidiana durante un periodo acotado; el énfasis está en vivir nuevas anticipaciones y recoger datos sobre qué cambia en emociones, relaciones y autoimagen, usando el ensayo como experimento de significado que amplía el self futuro posible sin exigir una conversión permanente inmediata. (Kelly, 1955; Feixas, 2004)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_feixas_experimentosSignificado",
           "nombre": "Diseño de experimentos conductuales de significado",
           "texto": "Procedimiento que propone acciones pequeñas y específicas para poner a prueba anticipaciones y significados nucleares (p. ej., “si digo que no, me rechazan”), recogiendo evidencia experiencial y revisando el sistema de constructos a partir del resultado; se prioriza que el experimento sea semánticamente relevante, graduado y seguro, y que el aprendizaje se formule en términos de nuevas interpretaciones viables, no solo como “éxito/fracaso” conductual. (Kelly, 1955; Feixas, 2004)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_feixas_microexperimentos",
           "nombre": "Microexperimentos de anticipación",
           "texto": "Diseño de acciones mínimas y reversibles para contrastar anticipaciones clave, recogiendo aprendizaje en términos de significado y no solo de resultado conductual. (Kelly, 1955; Feixas, 2004)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -230,13 +251,15 @@
           "codigo": "p_neim_integracion_vida_cotidiana",
           "nombre": "Integración narrativa en la vida cotidiana",
           "texto": "Procedimiento final orientado a traducir los nuevos significados y narrativas construidas en decisiones, acciones y proyectos concretos de la vida diaria. Esta integración conductual consolida el cambio narrativo, refuerza la sensación de agencia personal y permite que el sentido reconstruido se encarne en la experiencia cotidiana (Neimeyer, 1995; Neimeyer, 2016).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_neim_traduccion_accion",
           "nombre": "Traducción del significado a acción",
           "texto": "Micro final que ayuda a traducir los significados reconstruidos en pequeños actos, decisiones o cambios concretos en la vida cotidiana. Esta traducción encarna el sentido en la acción y consolida el cambio narrativo sin imponer tareas prescriptivas (Neimeyer, 2001; Neimeyer, 2016).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -251,7 +274,8 @@
           "codigo": "p_mahoney_micro_perturbaciones",
           "nombre": "Introducción de micro-perturbaciones seguras",
           "texto": "Este procedimiento introduce pequeñas variaciones deliberadas en patrones habituales de pensamiento, emoción o conducta con el objetivo de perturbar suavemente la estabilidad rígida del sistema personal. Las micro-perturbaciones actúan como catalizadores de reorganización, aprovechando la sensibilidad de los sistemas complejos a cambios mínimos sin generar desbordamiento emocional. El terapeuta diseña estas intervenciones para que sean suficientemente desafiantes como para promover cambio, pero lo bastante seguras como para preservar la coherencia identitaria. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -266,19 +290,22 @@
           "codigo": "p_hermans_posicionamientoPorValores",
           "nombre": "Clarificación de valores y elección de posicionamiento (posiciones guiadas por valores)",
           "texto": "Procedimiento que conecta el trabajo dialógico con dirección vital, identificando qué posiciones encarnan valores nucleares y eligiendo conscientemente desde qué voz actuar en situaciones clave. (Hermans, 1996).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_hermans_prevencionRecaidas",
           "nombre": "Prevención de recaídas dialógicas (plan ante monopolios de voz)",
           "texto": "Procedimiento de cierre que anticipa situaciones donde reaparecen monopolios de voz y establece respuestas pactadas para mantener el repertorio ampliado bajo estrés. (Hermans, 1996).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_hermans_ensayoNuevaVoz",
           "nombre": "Ensayo verbal de nueva posición",
           "texto": "Microintervención que invita al paciente a expresar en voz alta cómo hablaría o actuaría desde una posición alternativa elegida. Funciona como puente entre insight y acción, ayudando a consolidar nuevas voces antes de llevarlas a la vida cotidiana. (Hermans, 1996).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -293,7 +320,8 @@
           "codigo": "p_colab_cierreConsolidacion",
           "nombre": "Cierre conversacional y consolidación de nuevas narrativas",
           "texto": "Procedimiento de cierre de sesión o de fase terapéutica que recoge los cambios emergentes en el lenguaje y los organiza en una narrativa coherente y transportable, señalando nuevas posiciones identitarias y opciones de acción sin convertirlas en prescripciones; se consolidan formulaciones en el propio lenguaje del consultante y se acuerdan pequeños pasos coherentes con la nueva conversación, favoreciendo continuidad biográfica y mantenimiento del cambio. (Anderson, 1997)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -308,13 +336,15 @@
           "codigo": "p_od_seguimiento_red",
           "nombre": "Seguimiento adaptado al ritmo de la red",
           "texto": "Procedimiento que ajusta la frecuencia, duración y formato de los encuentros al ritmo y necesidades de la persona y su red, en lugar de seguir protocolos rígidos. Este ajuste continuo permite responder a cambios emergentes, sostener el diálogo en momentos críticos y favorecer la apropiación progresiva del proceso por parte de la red (Seikkula & Arnkil, 2017).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_od_cierre_abierto",
           "nombre": "Cierre abierto de la sesión",
           "texto": "Microintervención de cierre que resume lo ocurrido sin conclusiones definitivas ni tareas prescriptivas, manteniendo continuidad del diálogo hacia el próximo encuentro. El cierre abierto refuerza la sensación de proceso compartido y evita clausuras artificiales del significado (Seikkula & Arnkil, 2017).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -329,7 +359,8 @@
           "codigo": "p_mit_traduccion_accion",
           "nombre": "Traducción metacognitiva a la acción",
           "texto": "Procedimiento final orientado a ayudar al paciente a utilizar activamente su comprensión metacognitiva para guiar decisiones y acciones concretas en su vida cotidiana. La metacognición deja de ser solo reflexión y se convierte en una herramienta funcional para regular la conducta, sostener relaciones y prevenir recaídas (Dimaggio & Semerari, 2007; Dimaggio et al., 2015).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -344,31 +375,36 @@
           "codigo": "p_mi_planificar",
           "nombre": "Proceso 4: Planificar (Planning)",
           "texto": "Planificar es pasar de la intención a un compromiso realista: qué hará la persona, cuándo, cómo, con qué apoyos y cómo manejará obstáculos. En MI el plan no se impone ni se diseña en modo ‘tarea escolar’: se co-construye, se ajusta a viabilidad y se refuerza la autoeficacia. El plan se considera exitoso si es sostenible, no si es perfecto.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mi_cat",
           "nombre": "Fortalecer compromiso (CAT: Compromiso, Activación, Pasos)",
           "texto": "CAT organiza la transición a la acción: lenguaje de compromiso (‘voy a…’), activación (‘estoy listo’) y pasos concretos (‘esta semana haré…’). El terapeuta escucha y amplifica estas señales, ayudando a que el cliente convierta intención difusa en conducta programable. Es el puente natural del evocar al planificar.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mi_change_plan",
           "nombre": "Plan de cambio (Change plan) y compromisos específicos",
           "texto": "El plan de cambio recoge: objetivo, razones personales, pasos, apoyos, obstáculos y estrategias de afrontamiento. No es burocracia: es convertir motivación en conducta con soporte social y estructura. El plan se revisa y simplifica hasta que sea sostenible; el éxito es consistencia, no intensidad.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mi_capacidad",
           "nombre": "Pregunta de capacidad (¿cómo podrías hacerlo si decidieras?)",
           "texto": "Esta micro pregunta cambia el marco de impotencia a posibilidad: no exige compromiso, solo explora cómo sería posible. Al hacerlo, activa recursos y creatividad, y suele aumentar autoeficacia. Es especialmente útil cuando la persona dice ‘no puedo’.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_mi_paso_pequeno",
           "nombre": "Elicitar compromiso suave (¿qué paso pequeño sí harías?)",
           "texto": "En lugar de pedir grandes promesas, MI busca un paso mínimo viable que el cliente pueda sostener. Esta microintervención reduce presión y aumenta adherencia, porque convierte el cambio en algo practicable. Es el antídoto contra planes grandiosos que fracasan.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -383,7 +419,8 @@
           "codigo": "p_psdrama_roles",
           "nombre": "Trabajo de roles",
           "texto": "Procedimiento orientado a identificar, explorar y transformar los roles que la persona desempeña en sus relaciones. A través del juego dramático se amplía el repertorio de respuestas posibles y se flexibilizan posiciones relacionales rígidas, promoviendo una identidad más integrada y funcional (Moreno, 1953).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -398,7 +435,8 @@
           "codigo": "p_ta_contrato",
           "nombre": "Contrato terapéutico",
           "texto": "Procedimiento de encuadre: terapeuta y paciente acuerdan objetivos observables, responsabilidades y criterios de avance. Reduce ambigüedad, previene juegos en el encuadre y refuerza agencia.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -413,7 +451,8 @@
           "codigo": "p_logo_derreflexion",
           "nombre": "Derreflexión",
           "texto": "Reducción del foco excesivo en el síntoma o en uno mismo, redirigiendo la atención hacia tareas, personas o valores externos. Facilita autotrascendencia y disminuye rumiación.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -428,43 +467,50 @@
           "codigo": "p_pospsy_fortalezas",
           "nombre": "Evaluación y uso de fortalezas (perfil + plan de aplicación)",
           "texto": "Identificar fortalezas personales (dominantes y subutilizadas) y traducirlas a conductas concretas en contextos clave (trabajo, pareja, autocuidado). Se diseña un plan mínimo viable: cuándo, dónde, con qué señal y qué refuerzo.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_pospsy_perma_plan",
           "nombre": "Diseño PERMA (mapa de bienestar y plan semanal)",
           "texto": "Mapear el estado actual de cada componente PERMA y elegir microacciones semanales de alto impacto y baja fricción. Se revisa qué componentes están más bajos y cuál es el ‘cuello de botella’ del caso.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_pospsy_bondad",
           "nombre": "Actos de bondad planificados",
           "texto": "Planificar actos de contribución realistas y repetibles (no grandiosos) para aumentar conexión, propósito y agencia. Se evita convertirlo en autoexigencia o búsqueda de aprobación.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_pospsy_flujo",
           "nombre": "Diseño de experiencias de flujo",
           "texto": "Identificar actividades con potencial de flujo y ajustar condiciones: reto/habilidad, objetivos claros, feedback inmediato, tiempo protegido y reducción de distracciones. Se monitoriza energía y sostenibilidad.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_pospsy_sentido_metas",
           "nombre": "Formulación de metas con sentido (Meaning) y compromiso",
           "texto": "Clarificar valores y traducirlos a metas concretas, priorizando las que crean dirección vital. Se revisan obstáculos (miedo, evitación, contexto) y se establece un sistema simple de seguimiento.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_pospsy_logro_minimo",
           "nombre": "Reencuadre de logro mínimo viable",
           "texto": "Transformar ‘no hice suficiente’ en ‘qué paso pequeño sí es sostenible’. Reduce autoexigencia y aumenta adherencia.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_pospsy_diseno_friccion",
           "nombre": "Diseño de fricción (hacer fácil lo bueno)",
           "texto": "Ajustar entorno y hábitos para bajar fricción (señales, recordatorios, preparación) y sostener prácticas sin depender de fuerza de voluntad.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -479,7 +525,8 @@
           "codigo": "m_exist_compromiso",
           "nombre": "Compromiso pequeño y realista",
           "texto": "Microintervención que convierte una intuición existencial en un acto concreto de 24–72 horas (llamar, poner un límite, hacer una elección). Evita que la profundidad quede solo en conversación (Schneider, 2009).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -494,25 +541,29 @@
           "codigo": "p_rt_wdep",
           "nombre": "Sistema WDEP (Wants, Doing, Evaluation, Planning)",
           "texto": "Procedimiento estructural central de la Terapia de la Realidad. El terapeuta guía al cliente a clarificar qué quiere (Wants), qué está haciendo actualmente (Doing), si eso le funciona (Evaluation) y qué plan concreto está dispuesto a llevar a cabo (Planning). El WDEP convierte el proceso terapéutico en una secuencia clara de elección, evaluación y acción responsable.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_rt_samic3",
           "nombre": "Planificación conductual SAMIC3",
           "texto": "Diseño de planes conductuales que sean Simples, Alcanzables, Medibles, Inmediatos, Controlables por el cliente, Comprometidos y Consistentes. Garantiza viabilidad y adherencia.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_rt_compromiso",
           "nombre": "Contrato de compromiso",
           "texto": "Formalización verbal del compromiso del cliente con el plan elegido. Refuerza responsabilidad personal y reduce conductas evitativas.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_rt_compromiso",
           "nombre": "Chequeo de compromiso",
           "texto": "Explorar honestamente el nivel real de compromiso del cliente con el plan elegido, ajustándolo si es necesario.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -527,43 +578,50 @@
           "codigo": "p_wachtel_predicciones",
           "nombre": "Detección de predicciones relacionales y pruebas de realidad",
           "texto": "Procedimiento orientado a identificar las predicciones implícitas que guían la conducta del paciente en contextos relacionales (p. ej., “si me muestro vulnerable, me humillarán”) y a diseñar pruebas de realidad graduadas para contrastarlas en la experiencia cotidiana. Estas pruebas no buscan demostrar que el paciente está equivocado, sino generar evidencia nueva que permita flexibilizar expectativas rígidas y tolerar el riesgo emocional del cambio sin recurrir a evitación, sumisión o ataque defensivo. (Wachtel, 1977; Wachtel, 2011)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_wachtel_intervencionEstrategica",
           "nombre": "Intervención conductual estratégica para romper el bucle",
           "texto": "Procedimiento que consiste en seleccionar de manera estratégica un punto concreto del ciclo donde una modificación conductual sea viable y tenga alto impacto clínico, como cambiar el timing, el tono emocional, la forma de pedir, el establecimiento de límites o el patrón de retirada y acercamiento. La nueva respuesta se ensaya, se ajusta y se sostiene el tiempo suficiente para que el sistema relacional responda de forma distinta, debilitando así la retroalimentación que mantenía el patrón problemático. (Wachtel, 1977; Wachtel, 2008)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_wachtel_exposicionRelacional",
           "nombre": "Exposición a evitaciones relacionales (gradual y con sentido)",
           "texto": "Procedimiento que identifica y jerarquiza evitaciones interpersonales significativas —como pedir, decir no, expresar necesidad, tolerar desacuerdo o sostener cercanía emocional— y diseña exposiciones graduadas acompañadas de preparación emocional y revisión posterior. El objetivo es demostrar experiencialmente que es posible atravesar ansiedad, vergüenza o miedo sin que se produzca la catástrofe anticipada, ampliando la ventana de tolerancia y debilitando defensas que mantenían el ciclo. (Wachtel, 1977; Wachtel, 2008)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_wachtel_ajustesContexto",
           "nombre": "Ajustes contextuales deliberados",
           "texto": "Procedimiento que identifica variables contextuales que sostienen el ciclo —rutinas, proximidad, roles, reglas implícitas, disponibilidad emocional o redes de apoyo— y planifica cambios realistas para modificar esas condiciones. Al ajustar el entorno, se reduce la frecuencia de activación del patrón y se facilita que las nuevas respuestas del paciente se consoliden con menor coste emocional y menor fricción relacional. (Wachtel, 1977; Wachtel, 2008)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_wachtel_prevencionRecaidas",
           "nombre": "Prevención de recaídas como “re-entrada al ciclo”",
           "texto": "Procedimiento que redefine la recaída no como fracaso personal, sino como re-entrada predecible en el ciclo aprendido, enseñando a reconocer señales tempranas —sensaciones corporales, pensamientos, impulsos y estilos comunicativos— y a aplicar planes de interrupción concretos. Se normalizan las oscilaciones y se pone el foco en retomar elecciones distintas con rapidez, evitando culpa y fortaleciendo la sensación de agencia sostenida. (Wachtel, 2011; Wachtel, 2008)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_wachtel_peticionDirecta",
           "nombre": "Ensayo breve de petición directa",
           "texto": "Microintervención de role-play breve (30–60 segundos) que permite ensayar una petición clara, directa y no acusatoria, sustituyendo estilos indirectos característicos del ciclo como la queja, la retirada o el ataque encubierto. Este ensayo aumenta la probabilidad de respuestas diferentes por parte del entorno y reduce la ansiedad asociada a pedir de forma explícita. (Wachtel, 2011)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_wachtel_microExposicion",
           "nombre": "Micro-exposición pactada",
           "texto": "Microintervención que define un paso mínimo y concreto de exposición relacional para el periodo entre sesiones, ajustando cuidadosamente la dificultad para que sea realizable. Estas micro-exposiciones generan evidencia nueva, reducen evitación y permiten experimentar que el malestar anticipado puede ser tolerado sin que ocurra la catástrofe esperada. (Wachtel, 1977; Wachtel, 2008)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -578,61 +636,71 @@
           "codigo": "p_lazarus_plan_modalidades",
           "nombre": "Plan de tratamiento por modalidades (secuenciación estratégica)",
           "texto": "Procedimiento de diseño del tratamiento que traduce el perfil BASIC-ID en un plan secuenciado: qué modalidades se intervienen primero, qué técnicas se usarán en cada una y cómo se coordinarán entre sí para producir efectos en cascada. Se busca coherencia funcional (no “mezclar por mezclar”), definiendo tareas dentro y fuera de sesión, criterios de avance y ajustes contextuales que favorezcan generalización del cambio. (Lazarus, 1989)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lazarus_homework_multimodal",
           "nombre": "Asignación de tareas entre sesiones (homework multimodal)",
           "texto": "Procedimiento de diseño de tareas específicas para intervenir fuera de sesión en una o varias modalidades: experimentos conductuales, registros emocionales/somáticos, prácticas de relajación, ejercicios de imaginación, reestructuración cognitiva breve o ensayos comunicativos. Se calibran dificultad y contexto para asegurar adherencia, y se revisan resultados en términos de utilidad clínica (qué cambió y qué no), manteniendo el enfoque pragmático característico del modelo. (Lazarus, 1976; Lazarus, 1989)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lazarus_conducta_habitos",
           "nombre": "Intervención en Conducta (B) mediante activación y modificación de hábitos",
           "texto": "Procedimiento orientado a cambiar patrones conductuales que mantienen el problema (evitación, inactividad, impulsividad, rituales, desorganización), introduciendo activación graduada, planificación, reforzamiento y cambios de rutina para generar experiencias correctivas rápidas. Se prioriza lo observable y repetible, porque pequeñas modificaciones sostenidas en conducta suelen producir mejoras en afecto, autoimagen y relaciones, alineándose con la lógica multimodal de efectos en cascada. (Lazarus, 1976)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lazarus_roleplay_generalizacion",
           "nombre": "Ensayo conductual y role-playing para generalización",
           "texto": "Procedimiento de práctica en sesión de conductas específicas (peticiones, límites, conversaciones difíciles, afrontamiento) mediante role-play, con feedback y repetición hasta lograr una ejecución mínima viable. Se orienta a la generalización: que el paciente pueda usar la conducta en el contexto real, reduciendo evitación y aumentando sensación de competencia, especialmente cuando lo interpersonal es un mantenedor central. (Lazarus, 1976; Lazarus, 1989)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lazarus_exposicion_gradual",
           "nombre": "Exposición gradual a estímulos temidos (conductual y emocional)",
           "texto": "Procedimiento que diseña jerarquías de exposición y pasos graduados para reducir evitación y sensibilidad al miedo, integrando regulación emocional y fisiológica para sostener la activación sin colapsar. En multimodal se utiliza de forma pragmática, combinándola con intervenciones en cognición e imaginación cuando estas modalidades están alimentando la amenaza anticipada. (Lazarus, 1976)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_lazarus_prevencion_recaidas",
           "nombre": "Prevención de recaídas y plan de mantenimiento multimodal",
           "texto": "Procedimiento de cierre y mantenimiento que identifica señales tempranas de recaída por modalidades (conductas de evitación, escalada afectiva, síntomas somáticos, imágenes intrusivas, cogniciones rígidas, conflictos interpersonales, deterioro de sueño/sustancias) y define acciones específicas para responder antes de que el patrón se reinstale. Se construye un plan realista con hábitos, apoyos y recordatorios que sostengan los cambios y reduzcan dependencia de la sesión. (Lazarus, 1989)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_lazarus_interrupcion_conductual",
           "nombre": "Interrupción conductual mínima",
           "texto": "Microintervención que introduce un cambio conductual mínimo pero deliberado en una secuencia problemática (pausar, retrasar, reducir frecuencia o modificar contexto), con el objetivo de debilitar patrones automáticos sin exigir cambios radicales. Es especialmente útil en evitación, impulsividad o hábitos desadaptativos. (Lazarus, 1976)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_lazarus_ensayo_imaginado",
           "nombre": "Ensayo imaginado de afrontamiento",
           "texto": "Microintervención que guía al paciente a imaginar de forma vívida una conducta alternativa eficaz frente a una situación temida, preparando respuesta emocional y conductual antes de la exposición real. Este ensayo reduce evitación y aumenta probabilidad de acción. (Lazarus, 1989)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_lazarus_autoinstruccion",
           "nombre": "Auto-instrucción funcional",
           "texto": "Microintervención que construye frases breves de guía interna (“primero respiro, luego hablo”) para acompañar conductas nuevas en momentos de activación. Estas auto-instrucciones sirven como puente entre cognición y acción. (Lazarus, 1976)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_lazarus_ensayo_habilidad",
           "nombre": "Ensayo breve de habilidad interpersonal",
           "texto": "Microintervención de role-play muy breve para practicar una habilidad concreta (pedir, decir no, validar, expresar desacuerdo), centrada en lograr una versión mínimamente eficaz y utilizable fuera de sesión. (Lazarus, 1976)",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -647,19 +715,22 @@
           "codigo": "p_balint_demanda_a_peticion",
           "nombre": "Transformación de la demanda difusa en petición directa",
           "texto": "Intervención orientada a convertir la urgencia regresiva —expresada como queja, reproche o síntoma— en peticiones claras, dosificadas y comunicables, modelando lenguaje directo y ensayando solicitudes que preserven vínculo y responsabilidad personal.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_balint_focal_breve",
           "nombre": "Intervención focal breve orientada a alivio funcional",
           "texto": "Procedimiento pragmático que, sin abandonar la comprensión profunda, prioriza alivio funcional y reorganización del vínculo en un foco acotado, facilitando cambios observables en regulación, petición de ayuda y adaptación relacional en un tiempo limitado.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_balint_peticion_minima",
           "nombre": "Invitar a una petición mínima",
           "texto": "Intervención breve que propone formular una petición pequeña y específica, ayudando a pasar de la demanda global a una comunicación viable que preserve el vínculo.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -674,7 +745,8 @@
           "codigo": "p_kernberg_consolidacion_identidad",
           "nombre": "Consolidación de identidad integrada",
           "texto": "Procedimiento integrador que consolida una identidad más estable y realista, caracterizada por relaciones menos extremas, mayor continuidad del self y reducción de defensas primitivas (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -689,31 +761,36 @@
           "codigo": "p_neopsy_fromm_practica_amor",
           "nombre": "Terapia como educación del amor (Fromm: amor como práctica)",
           "texto": "Intervención centrada en traducir el amor a habilidades practicables: cuidado, responsabilidad, respeto y conocimiento, diferenciándolo de fusión ansiosa o control; se trabaja con ejercicios de atención al otro, límites, reciprocidad y coherencia, para que el vínculo deje de ser un intento de calmar ansiedad y se convierta en práctica ética sostenida.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_neopsy_repertorio_interpersonal",
           "nombre": "Reestructuración del repertorio interpersonal (ensayo y generalización)",
           "texto": "Procedimiento de cambio conductual-relacional que diseña alternativas específicas (petición directa, límite, desacuerdo, reparación) y las ensaya primero en sesión y luego fuera, con revisión detallada del resultado; busca ampliar repertorio sin perder seguridad, sustituyendo maniobras defensivas por habilidades interpersonales más claras y recíprocas.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_neopsy_resentimiento_a_peticion",
           "nombre": "Convertir resentimiento en petición directa",
           "texto": "Microintervención que detecta hostilidad encubierta y la traduce a una petición concreta y verificable, reduciendo pasivo-agresividad y aumentando claridad relacional.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_neopsy_acto_productivo",
           "nombre": "Micro-acto productivo (Fromm): cuidado/responsabilidad/respecto/conocimiento",
           "texto": "Microintervención que traduce un valor relacional a un gesto conductual pequeño (preguntar, escuchar, reparar, respetar un límite) para consolidar cambio en la vida real.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_neopsy_cierre_eleccion",
           "nombre": "Cierre de sesión orientado a elección concreta",
           "texto": "Microintervención final que convierte el aprendizaje en una elección concreta para la semana (una conversación, un límite, una reparación), para que el cambio no quede solo en insight.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -728,31 +805,36 @@
           "codigo": "p_adler_reorientacion",
           "nombre": "Reorientación y reeducación del estilo de vida",
           "texto": "La reorientación traduce el insight en acciones nuevas, entrenando alternativas conductuales y relacionales coherentes con cooperación, límites y responsabilidad, de modo que el estilo de vida se flexibilice mediante práctica sostenida.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_adler_tareas_vida",
           "nombre": "Entrenamiento en tareas de vida",
           "texto": "Este procedimiento organiza el cambio en torno a las tareas de vida adlerianas (vínculos, trabajo/contribución y comunidad), definiendo conductas observables de cooperación, participación y responsabilidad para consolidar pertenencia y sentido.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_adler_catching_oneself",
           "nombre": "Catching oneself",
           "texto": "La persona aprende a ‘pillarse’ en el inicio de su patrón de salvaguarda (evitación, ataque, excusa, perfeccionismo), nombrarlo y elegir una respuesta alternativa pequeña y practicable.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_adler_acting_as_if",
           "nombre": "Acting as if",
           "texto": "Se invita a actuar ‘como si’ ya se poseyera la cualidad deseada (valentía, cooperación, calma) en conductas pequeñas y verificables, para debilitar la lógica privada de incapacidad mediante experiencia correctiva.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_adler_tarea_interes_social",
           "nombre": "Tarea de interés social",
           "texto": "Se acuerda una acción concreta de cooperación o contribución en el entorno (familia, trabajo, comunidad) para consolidar pertenencia real y debilitar el estilo de vida centrado en superioridad defensiva o retirada.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -767,7 +849,8 @@
           "codigo": "p_kohut_vitalidad_self",
           "nombre": "Restauración de vitalidad y continuidad del self",
           "texto": "Procedimiento integrador que consolida el aumento de energía psíquica, sentido de continuidad y dirección vital como indicadores de un self más cohesionado y resiliente (Kohut, 1977, *The Restoration of the Self*).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -782,7 +865,8 @@
           "codigo": "m_hartmann_planificacion",
           "nombre": "Orientar a planificación concreta",
           "texto": "Microintervención que traduce comprensión psicológica en pasos prácticos y planificados, reforzando la función ejecutiva del yo y la adaptación activa al entorno.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -797,7 +881,8 @@
           "codigo": "m_klein_reparacion_realista",
           "nombre": "Orientar a reparación realista (un paso concreto)",
           "texto": "Tras insight de culpa o daño, el terapeuta pide un gesto pequeño y específico que sea sostenible (no grandioso), para evitar reparación maníaca y consolidar integración a través de acción coherente.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -812,19 +897,22 @@
           "codigo": "p_sullivan_ensayo_respuestas",
           "nombre": "Ensayo de respuestas interpersonales alternativas",
           "texto": "Procedimiento experiencial que prueba en sesión nuevas formas de responder —pedir, poner límites, expresar desacuerdo— con feedback inmediato, facilitando generalización a contextos reales y consolidación de seguridad.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_sullivan_generalizacion",
           "nombre": "Generalización a contextos extra-sesión",
           "texto": "Intervención que traslada aprendizajes relacionales de la sesión a la vida cotidiana mediante tareas de observación y experimentación, evaluando impacto y ajustando estrategias según resultados.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_sullivan_peticion_directa",
           "nombre": "Ensayar petición directa y concreta",
           "texto": "Intervención breve que ayuda a formular una petición clara y específica en lugar de insinuaciones o quejas, fortaleciendo agencia y reduciendo ansiedad relacional.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -839,19 +927,22 @@
           "codigo": "p_bowlby_exploracion_autonoma",
           "nombre": "Promoción de exploración autónoma desde la seguridad",
           "texto": "Procedimiento orientado a fortalecer la capacidad del paciente para explorar el mundo interpersonal, laboral o creativo desde una base de seguridad interna, reduciendo dependencia o evitación, y consolidando una vivencia de competencia personal compatible con el vínculo (Bowlby, 1988, *A Secure Base*).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_bowlby_figuras_apego_actuales",
           "nombre": "Intervención con figuras de apego actuales",
           "texto": "Procedimiento que integra relaciones actuales significativas —pareja, familia, parentalidad— como escenarios donde se activan modelos internos de trabajo, facilitando comprensión mutua, reparación relacional y prácticas de cuidado más seguras cuando el contexto terapéutico lo permite (Bowlby, 1988, *A Secure Base*).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_bowlby_peticion_apoyo",
           "nombre": "Promover petición de apoyo clara",
           "texto": "Intervención breve que ayuda a transformar señales indirectas o protestas en peticiones claras de apoyo, favoreciendo vínculos más seguros y reduciendo frustración relacional (Bowlby, 1988, *A Secure Base*).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -866,13 +957,15 @@
           "codigo": "m_winn_retorno_minimo_vinculo",
           "nombre": "Propuesta de retorno mínimo al vínculo (una frase auténtica)",
           "texto": "Intervención breve que pide un retorno mínimo (“una frase verdadera de cómo estás”) para reconectar sin abrumar, sustituyendo el todo-o-nada (fusión/huida) por contacto dosificado y sostenible.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_winn_evolucion_transicional",
           "nombre": "Objeto transicional: ayudar a evolucionarlo sin arrancarlo",
           "texto": "Intervención breve que acompaña el paso de un soporte transicional rígido a otros más flexibles (personas, actividades, símbolos), evitando que el paciente viva el cambio como pérdida traumática o imposición intrusiva.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -887,7 +980,8 @@
           "codigo": "p_abft_cierre",
           "nombre": "Tarea 5 – Cierre y consolidación",
           "texto": "Consolidación de cambios, integración narrativa y planificación de mantenimiento relacional.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -902,25 +996,29 @@
           "codigo": "p_fft_comunicacion",
           "nombre": "Entrenamiento en comunicación",
           "texto": "Enseñanza de habilidades de escucha, petición clara y expresión no coercitiva.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_fft_generalizacion",
           "nombre": "Generalización y cierre",
           "texto": "Transferencia de habilidades a escuela, justicia y comunidad y prevención de recaídas.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_fft_ensayo",
           "nombre": "Ensayo conductual en sesión",
           "texto": "Práctica guiada de nuevas habilidades comunicativas.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_fft_mantenimiento",
           "nombre": "Plan breve de mantenimiento",
           "texto": "Anticipar riesgos y definir respuestas funcionales.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -935,7 +1033,8 @@
           "codigo": "p_erickson_tareas",
           "nombre": "Tareas fuera de sesión",
           "texto": "Asignación de actividades estratégicas que generan experiencias nuevas en el contexto cotidiano del paciente. Las tareas suelen ser paradójicas o inesperadas para romper patrones rígidos.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -950,7 +1049,8 @@
           "codigo": "m_satir_expresion",
           "nombre": "Invitación a expresión directa",
           "texto": "Invitar a expresar sentimientos de forma clara y respetuosa en sesión.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -965,37 +1065,43 @@
           "codigo": "p_mst_domicilio_intensivo",
           "nombre": "Intervención domiciliaria intensiva con planificación semanal",
           "texto": "Trabajo en el hogar y contextos cotidianos con objetivos semanales, tareas específicas y revisión frecuente de resultados, ajustando el plan según datos observables.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mst_contingencias_hogar",
           "nombre": "Contratos conductuales y sistemas de refuerzo en casa",
           "texto": "Diseño de acuerdos operativos (normas, privilegios, consecuencias) y refuerzos prosociales para aumentar cumplimiento, reducir conflictos y estabilizar rutinas.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mst_mantenimiento",
           "nombre": "Prevención de recaídas y mantenimiento del cambio",
           "texto": "Identificación de situaciones de alto riesgo, señales tempranas y planes concretos de respuesta; consolidación de rutinas y apoyos para sostener logros tras el alta.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mst_chequeo_adherencia",
           "nombre": "Chequeo rápido de adherencia y barreras",
           "texto": "Microevaluación frecuente de qué se hizo, qué no y por qué, ajustando tareas para que sean viables y medibles.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_mst_micro_contrato",
           "nombre": "Micro-contrato de normas y privilegios",
           "texto": "Acuerdo pequeño y específico (horario, móvil, salidas, asistencia) con consecuencias claras e inmediatas.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         },
         {
           "codigo": "m_mst_bloqueo_riesgo",
           "nombre": "Bloqueo de oportunidades de riesgo",
           "texto": "Cambios inmediatos en rutinas/contexto para impedir acceso a situaciones de riesgo (lugares, horarios, transporte, dinero, compañía).",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -1010,7 +1116,8 @@
           "codigo": "p_linares_apoyo_contexto",
           "nombre": "Movilización de apoyo y ajustes contextuales",
           "texto": "Procedimiento para incorporar recursos (red, figuras significativas, coordinaciones) y modificar condiciones del entorno (rutinas, distancias, normas explícitas) que sostienen el patrón. Traduce insight relacional en cambios sostenibles.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -1025,25 +1132,29 @@
           "codigo": "p_nardone_paradoja",
           "nombre": "Prescripción paradójica",
           "texto": "Intervención que prescribe voluntariamente la conducta problemática o un ritual asociado, con el fin de romper el automatismo y devolver control al paciente.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_nardone_simbolicas",
           "nombre": "Tareas simbólicas",
           "texto": "Tareas diseñadas para producir un impacto emocional y perceptivo que reestructure la relación con el síntoma sin necesidad de insight racional.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_nardone_expo",
           "nombre": "Exposición estratégica indirecta",
           "texto": "Exposición no frontal al estímulo temido, integrada en prescripciones que evitan la lucha directa contra el miedo.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_nardone_microtarea",
           "nombre": "Micro-prescripción conductual",
           "texto": "Indicaciones muy concretas y limitadas que facilitan cumplimiento y refuerzan sensación de eficacia.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -1058,19 +1169,22 @@
           "codigo": "p_mri_diferencia",
           "nombre": "Prescripción de una diferencia",
           "texto": "Se introduce una conducta nueva, pequeña y viable que rompa la pauta repetitiva sin generar resistencia excesiva.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mri_tareas",
           "nombre": "Tareas entre sesiones",
           "texto": "Asignaciones concretas que permiten experimentar el cambio en el contexto real del cliente.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mri_microtarea",
           "nombre": "Microtarea experimental",
           "texto": "Pequeña acción acordada que permite probar una alternativa sin riesgo elevado.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -1085,7 +1199,8 @@
           "codigo": "p_sfbt_ampliacion",
           "nombre": "Ampliación de recursos",
           "texto": "Diseño de pequeñas acciones para repetir o intensificar conductas eficaces ya presentes en la vida del cliente.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -1100,13 +1215,15 @@
           "codigo": "p_contextual_reparacion",
           "nombre": "Facilitación de actos reparadores",
           "texto": "La facilitación de actos reparadores promueve gestos concretos, simbólicos o conductuales de restitución, reconocimiento o cuidado que permitan restablecer la equidad relacional, fortaleciendo la confianza mutua y transformando el reconocimiento ético en acciones observables.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_contextual_fiabilidad",
           "nombre": "Chequeo de fiabilidad",
           "texto": "Este chequeo evalúa la coherencia entre promesas, actos y responsabilidades asumidas por los miembros del sistema, señalando de forma cuidadosa los desajustes entre intención y conducta que erosionan la fiabilidad relacional.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -1121,13 +1238,15 @@
           "codigo": "p_strat_prescripcion",
           "nombre": "Prescripción directa de tareas",
           "texto": "Asignación clara y concreta de conductas a realizar fuera de sesión. Las tareas están diseñadas para interrumpir la pauta problema y generar experiencias nuevas.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_strat_directiva",
           "nombre": "Directiva breve y concreta",
           "texto": "Indicación clara que reduce ambigüedad y facilita acción inmediata.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -1142,19 +1261,22 @@
           "codigo": "p_bowen_contacto_familia_extensa",
           "nombre": "Coaching en contacto con la familia extensa",
           "texto": "Bowen trabaja con frecuencia mediante coaching: el terapeuta prepara al consultante para encuentros, llamadas o conversaciones con miembros de la familia extensa, anticipando presiones, provocaciones y riesgos de reactividad. El objetivo no es ‘convencer’ a la familia, sino entrenar diferenciación en vivo: mantener tono calmado, no entrar en escaladas, y sostener una postura clara. El cambio se consolida cuando se practica en el sistema real, no solo en sesión.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_bowen_regulacion_reactividad",
           "nombre": "Regulación de reactividad (pausas, ralentización, tono)",
           "texto": "Procedimiento práctico para bajar reactividad fisiológica y conductual ante presión familiar. Se entrenan microhabilidades: pausa antes de responder, ralentización, respiración discreta, y selección de frases de posición-yo. La idea es simple: sin regulación, no hay diferenciación; el sistema gana y el individuo vuelve al patrón. Esta práctica se diseña para aplicarse en situaciones reales, no solo en sesión.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_bowen_contacto_gradual",
           "nombre": "Plan de contacto gradual",
           "texto": "Diseñar un micro paso de contacto con la familia (mensaje neutral, llamada breve, encuentro corto) para salir del corte sin caer en fusión. El valor está en la consistencia: pequeñas acciones repetidas que entrenan diferenciación. Se ajusta a viabilidad y a nivel de ansiedad.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },
@@ -1169,13 +1291,15 @@
           "codigo": "p_struct_enactment",
           "nombre": "Enactment (escenificación en vivo)",
           "texto": "Se invita a la familia a interactuar en sesión como lo haría en casa, permitiendo observar y modificar la estructura en tiempo real. El cambio ocurre al experimentar una nueva organización relacional.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_struct_repeticion",
           "nombre": "Repetición dirigida del enactment",
           "texto": "Hacer repetir una interacción con modificaciones para consolidar la nueva estructura.",
-          "sub": "AG_compromisoConductual"
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     }

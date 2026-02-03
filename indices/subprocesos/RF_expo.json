@@ -1,6 +1,6 @@
 {
   "subprocesoId": "RF_expo",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 3,
   "modelos": [
     {
@@ -14,13 +14,15 @@
           "codigo": "p_aversivo_clasico",
           "nombre": "Condicionamiento aversivo clásico",
           "texto": "Procedimiento basado en el condicionamiento clásico que asocia una conducta o estímulo previamente neutro o reforzado con un estímulo aversivo, generando respuestas emocionales negativas como miedo, asco o malestar. El objetivo es reducir la probabilidad futura de la conducta mediante la adquisición de una respuesta condicionada aversiva.",
-          "sub": "RF_expo"
+          "sub": "RF_expo",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_aversivo_emparejamiento",
           "nombre": "Emparejamiento estímulo–conducta",
           "texto": "Microintervención consistente en emparejar de forma inmediata y repetida la conducta objetivo con un estímulo aversivo claramente identificable, asegurando la contingencia temporal necesaria para el aprendizaje asociativo.",
-          "sub": "RF_expo"
+          "sub": "RF_expo",
+          "tipo": "micro"
         }
       ]
     },
@@ -35,19 +37,22 @@
           "codigo": "p_mowrer_exposicion_pr",
           "nombre": "Exposición con prevención de respuesta",
           "texto": "Procedimiento central derivado directamente de la teoría bifactorial. Consiste en exponer al paciente de forma repetida y prolongada al estímulo temido sin permitir conductas de evitación, escape ni neutralización. Al impedir el refuerzo negativo, la ansiedad aumenta inicialmente pero disminuye progresivamente por habituación y extinción, permitiendo que el sistema de aprendizaje incorpore información correctiva. Es la base de los tratamientos conductuales para fobias, TOC y trastornos de ansiedad.",
-          "sub": "RF_expo"
+          "sub": "RF_expo",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_mowrer_exposicion_prolongada",
           "nombre": "Exposición prolongada",
           "texto": "Variante de la exposición que enfatiza la permanencia suficiente en la situación temida hasta que la ansiedad disminuye de forma natural. Evita exposiciones breves que podrían reforzar la idea de escape y garantiza la activación completa de los mecanismos de habituación y extinción.",
-          "sub": "RF_expo"
+          "sub": "RF_expo",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_mowrer_permanecer",
           "nombre": "Permanecer en la ansiedad",
           "texto": "Indicaciones explícitas para que el paciente permanezca en la situación ansiógena sin distraerse ni escapar, permitiendo observar cómo la ansiedad alcanza un pico y luego desciende por sí sola. Esta experiencia directa debilita la asociación entre ansiedad y peligro.",
-          "sub": "RF_expo"
+          "sub": "RF_expo",
+          "tipo": "micro"
         }
       ]
     },
@@ -62,7 +67,8 @@
           "codigo": "p_lazarus_exposicion_gradual",
           "nombre": "Exposición gradual a estímulos temidos (conductual y emocional)",
           "texto": "Procedimiento que diseña jerarquías de exposición y pasos graduados para reducir evitación y sensibilidad al miedo, integrando regulación emocional y fisiológica para sostener la activación sin colapsar. En multimodal se utiliza de forma pragmática, combinándola con intervenciones en cognición e imaginación cuando estas modalidades están alimentando la amenaza anticipada. (Lazarus, 1976)",
-          "sub": "RF_expo"
+          "sub": "RF_expo",
+          "tipo": "procedimiento"
         }
       ]
     }

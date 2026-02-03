@@ -1,6 +1,6 @@
 {
   "subprocesoId": "N_narrativaAutobiografica",
-  "updatedAt": "2026-02-03T10:41:20.660Z",
+  "updatedAt": "2026-02-03T10:46:53.842Z",
   "totalModelos": 31,
   "modelos": [
     {
@@ -14,13 +14,15 @@
           "codigo": "p_coh_integracion_narrativa",
           "nombre": "Integración narrativa del cambio",
           "texto": "Procedimiento final de integración en el que el paciente incorpora el cambio producido dentro de su narrativa autobiográfica y sentido de identidad, comprendiendo cómo el síntoma tenía sentido en su historia y por qué ya no es necesario. Esta integración refuerza la coherencia del self y previene reinterpretaciones patológicas del síntoma pasado, consolidando el cambio en la identidad consciente (Ecker et al., 2012).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_coh_integracion_narrativa",
           "nombre": "Integración narrativa no patologizante",
           "texto": "Microintervención final que ayuda al paciente a integrar el síntoma pasado dentro de su historia vital como una solución inteligente en un contexto anterior, y no como un fallo personal. Esta integración refuerza coherencia identitaria y previene reinterpretaciones autocríticas del proceso terapéutico (Ecker et al., 2012).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -35,7 +37,8 @@
           "codigo": "p_ugazio_narrativo",
           "nombre": "Análisis narrativo relacional",
           "texto": "Procedimiento que examina cómo las historias familiares y autobiográficas refuerzan polaridades semánticas y posiciones identitarias, atendiendo a metáforas recurrentes, etiquetas, episodios prototípicos y tramas que definen quién es “cada uno” en relación con los demás. Se identifican relatos totalizantes (“siempre has sido…”, “en esta familia…”) y se analizan sus efectos en la interacción, la autoimagen y las expectativas. La intervención introduce matices, contradicciones y excepciones para reautorizar narrativas preferidas y más complejas, debilitando la fijación rígida a un polo. (Ugazio, 2013)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -50,43 +53,50 @@
           "codigo": "p_guidano_secuenciacion",
           "nombre": "Secuenciación narrativa de episodios significativos",
           "texto": "Procedimiento clínico que organiza la experiencia del paciente mediante la reconstrucción detallada y temporalmente ordenada de episodios vitales emocionalmente relevantes, permitiendo identificar regularidades implícitas en la vivencia y en el modo de atribuir significado. La secuenciación ralentiza el relato, reduce la abstracción defensiva y facilita el acceso a la experiencia vivida, mostrando cómo se repiten patrones emocionales y narrativos que sostienen la continuidad del self. Este procedimiento es clave para pasar del discurso explicativo a la experiencia encarnada. (Guidano, 1991).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_guidano_renarracion",
           "nombre": "Re-narración detallada de episodios nucleares",
           "texto": "Procedimiento que consiste en recontar episodios vitales significativos en tiempo lento, integrando emoción, percepción, pensamiento y perspectiva actual. La re-narración no busca corregir el relato, sino ampliar su complejidad y coherencia emocional, permitiendo que emerjan nuevas articulaciones identitarias. Es un instrumento fundamental para reorganizar la continuidad del self. (Guidano, 1991).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_guidano_secuenciacion_episodio",
           "nombre": "Secuenciación de episodios en tiempo real",
           "texto": "Microintervención que guía al paciente a reconstruir un episodio significativo siguiendo el orden real de lo ocurrido (antes–durante–después), evitando saltos interpretativos, explicaciones generales o moralejas. Se busca que emerja la lógica experiencial del self: qué se sintió primero, qué se anticipó, qué se hizo para sostener coherencia, y cómo se cerró el episodio narrativamente, proporcionando material vivo para identificar patrones de significado personal. (Guidano, 1991).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         },
         {
           "codigo": "m_guidano_invariantes",
           "nombre": "Señalar invariantes narrativas del self",
           "texto": "Microintervención que subraya frases o giros que reaparecen en distintos episodios (“al final siempre…”, “me toca a mí…”, “siempre decepciono…”) y los presenta como invariantes de continuidad identitaria más que como ‘pensamientos erróneos’. El objetivo es que el paciente escuche su propia regularidad como forma de organización del self, facilitando una lectura más compleja y menos literal de su narrativa. (Guidano, 1991).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         },
         {
           "codigo": "m_guidano_pregunta_continuidad",
           "nombre": "Pregunta de continuidad: “y después, ¿qué hiciste para sostenerte?”",
           "texto": "Microintervención que desplaza el foco del ‘por qué’ al ‘cómo’, preguntando qué hizo el self para sostener coherencia y seguir funcionando tras el impacto emocional. Esta pregunta revela estrategias implícitas de autorregulación identitaria (control, evitación, sobre-responsabilidad, etc.) y fortalece agencia al hacer visible que el self actúa para mantenerse, incluso cuando el patrón sea costoso. (Guidano, 1991).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         },
         {
           "codigo": "m_guidano_renarracion_lenta",
           "nombre": "Re-narración en tiempo lento con integración afectiva",
           "texto": "Microintervención que solicita recontar el episodio con máxima concreción (escena, gestos, tono, silencios) manteniendo contacto con la emoción, para que la narrativa no funcione como defensa sino como integración. La re-narración lenta incrementa diferenciación, permite matices y facilita que aparezcan nuevas articulaciones identitarias sin imponer reinterpretaciones externas. (Guidano, 1991).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         },
         {
           "codigo": "m_guidano_cierre_integrador",
           "nombre": "Cierre integrador: síntesis mínima de coherencia ampliada",
           "texto": "Microintervención de cierre que resume en una o dos frases cómo se ha ampliado la coherencia del self en la sesión (qué se vio, qué emoción organizaba, qué estrategia sostenía continuidad), evitando conclusiones intelectuales extensas. Su función es consolidar integración narrativa y dejar una marca simple, recordable y experiencial que el paciente pueda reconocer fuera de sesión. (Guidano, 1991).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -101,13 +111,15 @@
           "codigo": "p_feixas_autocaracterizacion",
           "nombre": "Auto-caracterización (Self-Characterization) y análisis narrativo del self",
           "texto": "Procedimiento narrativo derivado del PCP donde el paciente escribe o relata una “auto-caracterización” en tercera persona, como si describiera a alguien conocido, permitiendo acceder a constructos implícitos, valores y tramas identitarias sin activar defensas directas; el terapeuta analiza junto al paciente el lenguaje, las metáforas y las oposiciones semánticas que organizan la identidad, conectándolo con dilemas y posibilidades de reautoría para ganar continuidad biográfica sin quedar atrapado en etiquetas rígidas. (Kelly, 1955; Feixas, 2004)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_feixas_reautoria",
           "nombre": "Construcción alternativa de sentido y reautoría narrativa",
           "texto": "Procedimiento de reconstrucción narrativa donde se revisan episodios clave, giros biográficos y escenas repetidas para generar interpretaciones alternativas más complejas y compasivas, integrando información previamente disociada o desvalorizada; se buscan nuevas tramas identitarias que mantengan continuidad biográfica pero abran posibilidades futuras, pasando de historias cerradas (“siempre he sido así”) a historias con agencia (“he aprendido esto, puedo elegir aquello”), cuidando que la nueva narrativa sea vivible y no un relato “bonito” sin soporte experiencial. (Neimeyer, 1993/2009; Feixas, 2004)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -122,25 +134,29 @@
           "codigo": "p_neim_exploracion_narrativa",
           "nombre": "Exploración narrativa del sistema de significados",
           "texto": "Procedimiento central orientado a explorar cómo la persona organiza su experiencia vital en forma de relatos que le permiten dotar de coherencia, continuidad e identidad a su vida. El terapeuta facilita la narración de acontecimientos significativos, transiciones y crisis, atendiendo tanto al contenido como a la estructura narrativa (tramas, rupturas, silencios, contradicciones). El objetivo no es interpretar desde fuera, sino comprender cómo el cliente se explica a sí mismo lo ocurrido y qué significados sostienen su identidad actual (Neimeyer, 1995; Neimeyer, 2001).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_neim_continuidad_biografica",
           "nombre": "Construcción de continuidad biográfica",
           "texto": "Procedimiento orientado a restablecer la sensación de continuidad entre el yo previo al acontecimiento disruptivo y el yo actual, integrando la experiencia dolorosa dentro de la historia vital sin borrar lo anterior. Esta continuidad biográfica es clave para reducir la sensación de extrañeza de uno mismo y restaurar un sentido estable de identidad (Neimeyer, 1995; Neimeyer, 2016).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_neim_invitacion_narrativa",
           "nombre": "Invitación narrativa abierta",
           "texto": "Microintervención que invita al cliente a relatar su experiencia con preguntas abiertas que no dirigen el contenido ni el significado, permitiendo que emerja la narrativa tal como está organizada en ese momento. El terapeuta evita estructurar o corregir la historia, facilitando que el relato revele espontáneamente rupturas, silencios y núcleos de sentido relevantes para el proceso terapéutico (Neimeyer, 1995).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         },
         {
           "codigo": "m_neim_externalizacion_sentido",
           "nombre": "Externalización del problema de sentido",
           "texto": "Micro que permite hablar de la pérdida de sentido, el vacío o la confusión como experiencias que le ocurren a la persona, y no como defectos personales. Esta externalización reduce autoatribución negativa y abre espacio para reconstrucción narrativa compartida (Neimeyer, 1995).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -155,13 +171,15 @@
           "codigo": "p_hermans_cartasEntrePosiciones",
           "nombre": "Cartas o mensajes entre posiciones (lettering dialógico)",
           "texto": "Procedimiento narrativo en el que dos posiciones se escriben entre sí con reglas claras de respeto y objetivo de comprensión, no de condena. Facilita expresión de necesidades, reconstrucción de significado y reparación de autoimagen, especialmente cuando el diálogo oral se bloquea o se vuelve defensivo. (Hermans et al., 1992; Hermans, 1996).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_hermans_reautoriaDialogica",
           "nombre": "Reautoría dialógica de la narrativa (historia con múltiples voces)",
           "texto": "Procedimiento que reescribe la historia personal incorporando perspectivas de varias posiciones del self, generando una narrativa más amplia y flexible que reduce monopolios narrativos y amplía la agencia. (Hermans et al., 1992; Hermans, 1996).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -176,25 +194,29 @@
           "codigo": "p_colab_conversacionPosibilidades",
           "nombre": "Conversación generativa centrada en posibilidades",
           "texto": "Procedimiento que orienta la conversación hacia la creación de posibilidades nuevas en lugar de quedarse atrapada en descripciones saturadas por el problema, explorando excepciones, deseos, valores y futuros posibles mediante preguntas abiertas que amplían el repertorio lingüístico; el cambio se conceptualiza como el surgimiento de nuevas formas de hablar que hacen visibles opciones de acción e identidad antes no disponibles para el consultante. (Anderson, 1997)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_colab_externalizacionConversacional",
           "nombre": "Externalización conversacional del problema",
           "texto": "Procedimiento que separa al consultante del problema a través del lenguaje, ayudando a describir el problema como algo que ocurre en la relación con la vida y no como una esencia de la persona; mediante reformulaciones respetuosas y preguntas que cambian el sujeto de la frase, se reduce autoacusación, se protege la identidad y se abre espacio para examinar cómo el problema se mantiene en ciertas conversaciones y contextos. (Anderson, 1997; Anderson & Goolishian, 1992)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_colab_desaturacionProblema",
           "nombre": "Des-saturación del problema (deconstrucción de conversaciones dominantes)",
           "texto": "Procedimiento que identifica cómo ciertas conversaciones repetidas (internas, familiares, institucionales) mantienen una versión dominante del problema y del self, y trabaja para debilitarlas introduciendo nuevas descripciones, contextos y puntos de vista; al deconstruir etiquetas rígidas y relatos totalizantes, se abren espacios lingüísticos donde el consultante puede ocupar posiciones menos problematizadas y más agentivas. (Anderson, 1997)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_colab_cierreConsolidacion",
           "nombre": "Cierre conversacional y consolidación de nuevas narrativas",
           "texto": "Procedimiento de cierre de sesión o de fase terapéutica que recoge los cambios emergentes en el lenguaje y los organiza en una narrativa coherente y transportable, señalando nuevas posiciones identitarias y opciones de acción sin convertirlas en prescripciones; se consolidan formulaciones en el propio lenguaje del consultante y se acuerdan pequeños pasos coherentes con la nueva conversación, favoreciendo continuidad biográfica y mantenimiento del cambio. (Anderson, 1997)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -209,13 +231,15 @@
           "codigo": "p_od_reunion_abierta",
           "nombre": "Reunión abierta en presencia del paciente",
           "texto": "Procedimiento central en el que todas las conversaciones clínicas relevantes se realizan en presencia del paciente y su red, evitando deliberaciones profesionales cerradas o decisiones ocultas. Esta transparencia radical promueve confianza, reduce asimetrías de poder y convierte el encuentro en un espacio genuinamente dialógico donde cada voz puede ser escuchada y respondida (Seikkula, 2006).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_od_externalizacion",
           "nombre": "Externalización dialógica de la experiencia",
           "texto": "Micro que permite hablar de experiencias extremas —voces, ideas delirantes, miedos intensos— como fenómenos compartibles en el diálogo, sin etiquetarlos inmediatamente como patología. Esta externalización reduce estigmatización y facilita que la experiencia pueda ser pensada colectivamente (Seikkula, 2006).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -230,7 +254,8 @@
           "codigo": "p_mit_narrativa_self",
           "nombre": "Construcción de una narrativa coherente del self",
           "texto": "Procedimiento central que busca ayudar al paciente a organizar su experiencia vital en una narrativa más coherente, continua y comprensible, integrando emociones, pensamientos y acontecimientos significativos. Muchas psicopatologías se asocian a narrativas fragmentadas o caóticas del self; este trabajo narrativo permite restaurar continuidad identitaria y sirve como base para el fortalecimiento metacognitivo (Dimaggio & Semerari, 2007).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -245,7 +270,8 @@
           "codigo": "m_nar_paisaje_identidad",
           "nombre": "Preguntas de paisaje de identidad",
           "texto": "Estas preguntas exploran qué dice una acción concreta sobre quién es la persona, qué valores expresa y qué tipo de identidad se manifiesta en esa escena. Facilitan la transición de acciones aisladas a una narrativa identitaria coherente y reconocible (White, 2007, *Maps of Narrative Practice*).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -260,7 +286,8 @@
           "codigo": "p_mi_back_forward",
           "nombre": "Mirar atrás y mirar adelante (Looking back/forward)",
           "texto": "Mirar atrás evoca discrepancia recordando cómo era la vida antes del problema; mirar adelante explora un futuro si nada cambia vs si cambia. Estas exploraciones no buscan dramatizar, sino ayudar a que el cliente contacte con consecuencias y con un self futuro más deseable. Suelen generar change talk de forma natural.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -275,7 +302,8 @@
           "codigo": "m_encuentro_cierre",
           "nombre": "Cierre integrador",
           "texto": "Fase final donde los participantes integran verbalmente lo vivido en el grupo, conectándolo con su historia personal y su vida cotidiana. Facilita consolidación del aprendizaje experiencial (Rogers, 1970).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -290,7 +318,8 @@
           "codigo": "m_psdrama_debriefing",
           "nombre": "Debriefing",
           "texto": "Fase final de integración verbal del trabajo dramático. Ayuda a simbolizar la experiencia vivida, regular la activación emocional y conectar lo ocurrido en escena con la historia personal del protagonista (Moreno, 1946).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -305,7 +334,8 @@
           "codigo": "m_logo_ejemplos",
           "nombre": "Referencia a ejemplos de sentido vivido",
           "texto": "Recordar experiencias pasadas donde el paciente encontró sentido, para ampliar continuidad biográfica.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -320,7 +350,8 @@
           "codigo": "m_esalen_retiro",
           "nombre": "Retiro breve con objetivos",
           "texto": "Espacios experienciales intensivos de corta duración que permiten desconexión del contexto habitual, clarificación de objetivos vitales y reorganización de la narrativa personal desde una mayor conciencia y presencia (Kripal, 2007).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -335,13 +366,15 @@
           "codigo": "p_pospsy_gratitud",
           "nombre": "Diario de gratitud / Tres cosas buenas",
           "texto": "Registro breve de experiencias positivas y su significado: qué ocurrió, qué hice yo, qué dice esto de mis recursos o de mis vínculos. Orientado a entrenar atención y memoria hacia señales de bienestar sin negar el malestar.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_pospsy_self_futuro",
           "nombre": "Mejor yo posible (Best Possible Self) y narrativa prospectiva",
           "texto": "Visualización y escritura guiada del yo posible deseado (y viable), conectándolo con valores, fortalezas y microdecisiones. Se traducen aspiraciones a pasos conductuales pequeños y medibles.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -356,25 +389,29 @@
           "codigo": "p_exist_dadas",
           "nombre": "Trabajo explícito con las dadas existenciales",
           "texto": "Procedimiento que aborda muerte/finitud, libertad, aislamiento y sentido como organizadores del sufrimiento y del crecimiento, vinculándolos con decisiones concretas y con la historia de la persona. No se trata de filosofía abstracta, sino de cómo esas dadas están actuando hoy en la vida del paciente (Yalom, 1980; Schneider, 2009).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_exist_sentido",
           "nombre": "Reautoría de sentido",
           "texto": "Procedimiento narrativo-experiencial que reorganiza la historia personal alrededor de significado, valores y continuidad biográfica, integrando pérdidas, límites y decisiones. No busca ‘positivizar’, sino construir un sentido más habitable y responsable (Schneider, Bugental & Pierson, 2015).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_exist_rituales",
           "nombre": "Rituales seculares de transición",
           "texto": "Procedimiento de diseño de rituales no religiosos (cartas, actos simbólicos, despedidas, compromisos) para marcar cierres, duelos, cambios de etapa y decisiones identitarias. Facilita integración emocional y consolidación del cambio en una forma vivible y recordable (Schneider, Bugental & Pierson, 2015).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_exist_micro_ritual",
           "nombre": "Micro-ritual de cierre",
           "texto": "Cierre breve (palabra, gesto, compromiso mínimo) que consolida el sentido de la sesión y ayuda a integrar lo trabajado. Funciona como pegamento entre experiencia vivida y continuidad en la vida cotidiana (Schneider, Bugental & Pierson, 2015).",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -389,7 +426,8 @@
           "codigo": "p_rt_presente_futuro",
           "nombre": "Enfoque en presente y futuro",
           "texto": "Redirección sistemática del discurso desde el pasado no modificable hacia elecciones actuales y metas futuras. Reduce rumiación y aumenta agencia.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -404,7 +442,8 @@
           "codigo": "m_wachtel_reautoriaEpisodio",
           "nombre": "Reautoría micro-narrativa del episodio",
           "texto": "Microintervención que reescribe un episodio reciente incorporando la comprensión del ciclo y el punto de elección disponible, consolidando el aprendizaje y debilitando narrativas fatalistas. Esta reautoría micro-narrativa refuerza la percepción de agencia y facilita la generalización del cambio a futuras situaciones. (Wachtel, 2008)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -419,13 +458,15 @@
           "codigo": "p_erskine_integracionSelf",
           "nombre": "Integración de estados del self escindidos",
           "texto": "Procedimiento orientado a integrar estados del self fragmentados o disociados que se desarrollaron en respuesta a necesidades relacionales no satisfechas. A través del contacto emocional sostenido y la elaboración narrativa progresiva, el paciente puede reconocer, aceptar e integrar partes previamente excluidas de su experiencia, ampliando coherencia identitaria y continuidad del self. (Erskine, 2015)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_erskine_integracionExperiencia",
           "nombre": "Integración verbal de la experiencia vivida",
           "texto": "Microintervención que ayuda a poner palabras a una experiencia emocional o relacional recientemente vivida en sesión, integrándola en la narrativa personal del paciente. Esta verbalización consolida aprendizaje y favorece continuidad del self. (Erskine, 2015)",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -440,7 +481,8 @@
           "codigo": "p_balint_episodio_interpersonal",
           "nombre": "Análisis del episodio interpersonal concreto",
           "texto": "Intervención focal que reconstruye episodios específicos paso a paso —disparador, expectativa, respuesta, resultado— para localizar el punto donde se activa la falla básica, convirtiendo experiencias globales en mapas operativos que abren alternativas de respuesta.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -455,13 +497,15 @@
           "codigo": "p_neopsy_indagacion_detallada",
           "nombre": "Indagación detallada del episodio interpersonal (Sullivan: detailed inquiry)",
           "texto": "Técnica de microanálisis narrativo que reconstruye un episodio interpersonal concreto paso a paso (qué se dijo, qué se supuso, qué se sintió, qué se evitó) para localizar puntos de bifurcación donde aparece ansiedad y se activa una operación de seguridad; convierte el relato en un mapa práctico para intervenir con cambios pequeños pero de alto impacto.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "m_neopsy_guion_relacional",
           "nombre": "Reformular un malentendido como guion relacional",
           "texto": "Microintervención que transforma un conflicto en un guion repetido (“cuando siento X, asumo Y, hago Z”) para reducir personalización, aumentar comprensión y preparar una intervención concreta.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -476,7 +520,8 @@
           "codigo": "p_freud_workingThrough",
           "nombre": "Elaboración progresiva del conflicto",
           "texto": "Se vuelve de forma reiterada sobre núcleos conflictivos para que la comprensión se traduzca en reorganización afectiva y relacional estable.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -491,19 +536,22 @@
           "codigo": "p_adler_constelacion_familiar",
           "nombre": "Exploración de constelación familiar y atmósfera temprana",
           "texto": "La exploración de la constelación familiar reconstruye roles, alianzas, tensiones, estilos parentales y clima emocional temprano para comprender cómo el paciente aprendió pertenencia, cooperación y valor, y cómo esas primeras posiciones influyen en su estilo de vida actual.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_adler_recuerdos_tempranos",
           "nombre": "Exploración de recuerdos tempranos",
           "texto": "La exploración de recuerdos tempranos utiliza escenas infantiles significativas como ventanas fenomenológicas que revelan prioridades, sensibilidades, miedos y metas implícitas, mostrando la lógica privada con la que la persona interpreta pertenencia, valor y amenaza.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         },
         {
           "codigo": "p_adler_suenos",
           "nombre": "Uso clínico de sueños como expresión de estilo de vida",
           "texto": "El trabajo con sueños se utiliza como material proyectivo de la lógica privada y del estilo de vida, explorando imágenes y emociones para inferir metas, temores y estrategias de salvaguarda, conectándolo con decisiones actuales sin convertirlo en explicación causal rígida.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -518,7 +566,8 @@
           "codigo": "m_klein_enactment_a_relato",
           "nombre": "Convertir enactment en relato (de actuación a significado)",
           "texto": "Tras una interacción tensa en sesión, el terapeuta ayuda a reconstruir la secuencia minuto a minuto (qué imaginaste, qué sentiste, qué necesitabas), convirtiendo la escena en narrativa pensable y reduciendo la repetición automática.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },
@@ -533,7 +582,8 @@
           "codigo": "p_sullivan_episodio_interpersonal",
           "nombre": "Mapeo del episodio interpersonal concreto",
           "texto": "Procedimiento central que reconstruye episodios interpersonales específicos paso a paso —contexto, expectativa, conducta propia, respuesta del otro, impacto emocional— para identificar cómo se organiza la ansiedad y qué patrón relacional se activa; al convertir la experiencia difusa en una secuencia observable, se facilita insight operativo y alternativas de respuesta.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -548,7 +598,8 @@
           "codigo": "p_winn_facilitar_juego",
           "nombre": "Facilitación del juego (playing) como mecanismo de cambio",
           "texto": "Intervención que promueve el juego en sentido amplio (no solo infantil): experimentar, imaginar, ensayar significados y sentir sin quedar atrapado en literalidad; el terapeuta ayuda a que el paciente pueda jugar con su experiencia en lugar de defenderse de ella, favoreciendo simbolización, continuidad narrativa y una relación más viva consigo mismo y con el otro.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -563,7 +614,8 @@
           "codigo": "p_erickson_metaforas",
           "nombre": "Metáforas terapéuticas",
           "texto": "Relatos simbólicos diseñados para reflejar la situación del paciente y sugerir soluciones de forma indirecta. Actúan a nivel experiencial más que racional.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -578,7 +630,8 @@
           "codigo": "p_linares_identidad_narrativa",
           "nombre": "Exploración narrativa de identidad relacional",
           "texto": "Procedimiento que explora cómo la identidad se ha construido en vínculos concretos (historias de reconocimiento/desconfirmación, pertenencia/exclusión, lealtades). Se trabaja reautoría: integrar versiones de sí más completas y menos prisioneras del guion familiar.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -593,7 +646,8 @@
           "codigo": "p_contextual_lealtades",
           "nombre": "Exploración de lealtades invisibles",
           "texto": "Este procedimiento explora los compromisos implícitos, mandatos familiares y lealtades transgeneracionales que vinculan al individuo con figuras significativas pasadas o presentes, mostrando cómo dichas lealtades, aun no conscientes, orientan elecciones vitales, sacrificios personales y patrones de sufrimiento.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -608,7 +662,8 @@
           "codigo": "p_bowen_investigacion",
           "nombre": "Investigación funcional de patrones familiares",
           "texto": "Procedimiento de exploración intencional para recoger información sobre la historia familiar y cómo se han gestionado ansiedad, conflicto, cercanía y distancia. La investigación reduce fantasías y narrativas polarizadas, y convierte el trabajo en un ejercicio de observación más que de acusación. Al comprender la lógica del sistema, el consultante deja de reaccionar como niño en el guion familiar y puede actuar como adulto diferenciado.",
-          "sub": "N_narrativaAutobiografica"
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     }
