@@ -1,6 +1,6 @@
 {
   "subprocesoId": "AP_procesamiento",
-  "updatedAt": "2026-02-03T10:20:29.600Z",
+  "updatedAt": "2026-02-03T10:28:30.257Z",
   "totalModelos": 14,
   "modelos": [
     {
@@ -13,15 +13,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Dramatización psicodramática",
+            "codigo": "p_psdrama_dramatizacion",
+            "nombre": "Dramatización psicodramática",
+            "texto": "Procedimiento central del Psicodrama que consiste en representar en acción escenas significativas de la vida del protagonista. La dramatización permite externalizar conflictos internos, activar emociones implícitas y reorganizar la experiencia mediante el cuerpo y la interacción. El escenario funciona como un espacio transicional donde se pueden ensayar alternativas sin las consecuencias del mundo real (Moreno, 1946).",
             "sub": "AP_procesamiento"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Escena",
+            "codigo": "m_psdrama_escena",
+            "nombre": "Escena",
+            "texto": "Construcción explícita de una situación significativa que se representa en el escenario. Permite activar memorias emocionales, clarificar dinámicas relacionales y trabajar el conflicto en un formato visible y compartido (Moreno, 1946).",
             "sub": "AP_procesamiento"
           }
         ]
@@ -37,13 +39,15 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Interpretación de fantasía inconsciente (a partir del aquí-ahora)",
+            "codigo": "p_klein_interpretacion_fantasia",
+            "nombre": "Interpretación de fantasía inconsciente (a partir del aquí-ahora)",
+            "texto": "Formulación e intervención interpretativa que liga conducta, afecto y escena interna actualizada en sesión (transferencia) con fantasías inconscientes subyacentes (por ejemplo, ataques, abandono, saqueo, intrusión), explicitando cómo esas fantasías organizan percepción y respuesta; se prioriza la cercanía al material inmediato, el lenguaje concreto y el vínculo con la ansiedad activa, para que la interpretación no sea una teoría externa sino una herramienta que transforma confusión en comprensión.",
             "sub": "AP_procesamiento"
           },
           {
-            "id": null,
-            "label": "Trabajo depresivo: culpa, duelo y preocupación por el objeto",
+            "codigo": "p_klein_posicion_depresiva",
+            "nombre": "Trabajo depresivo: culpa, duelo y preocupación por el objeto",
+            "texto": "Intervención enfocada en sostener la ambivalencia y la tristeza asociadas al reconocimiento del daño (real o fantaseado) al objeto, promoviendo una culpa diferenciada (no persecutoria) que abre a reparación; el terapeuta ayuda a transitar desde defensas maníacas hacia aceptación del límite, pérdida y dependencia, facilitando duelo y reconstrucción de la relación interna con el objeto como suficientemente bueno y no exclusivamente ideal o malo.",
             "sub": "AP_procesamiento"
           }
         ],
@@ -60,8 +64,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Clarificación y fortalecimiento de funciones autónomas",
+            "codigo": "p_hartmann_funciones_autonomas",
+            "nombre": "Clarificación y fortalecimiento de funciones autónomas",
+            "texto": "Trabajo clínico centrado en identificar, entrenar y consolidar funciones del yo relativamente libres de conflicto —como atención, pensamiento lógico, lenguaje y planificación— para mejorar la adaptación y reducir la dependencia de defensas rígidas.",
             "sub": "AP_procesamiento"
           }
         ],
@@ -78,15 +83,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Uso del silencio como operador clínico",
+            "codigo": "p_lacan_silencio_operador",
+            "nombre": "Uso del silencio como operador clínico",
+            "texto": "Procedimiento que utiliza el silencio como intervención activa destinada a impedir la saturación de sentido, sostener la falta y permitir que el deseo se articule sin ser obturado por explicaciones o respuestas tranquilizadoras; el silencio confronta al sujeto con el vacío estructural propio del lenguaje y con su responsabilidad en el decir (Lacan, 1966, *Écrits*; Dor, 1998, *Introduction to the Reading of Lacan*).",
             "sub": "AP_procesamiento"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Mantener un silencio operatorio",
+            "codigo": "m_lacan_silencio",
+            "nombre": "Mantener un silencio operatorio",
+            "texto": "Intervención mínima que consiste en sostener el silencio cuando el discurso tiende a cerrarse en explicaciones, permitiendo que la falta opere y que el deseo encuentre otra vía de articulación (Lacan, 1966, *Écrits*).",
             "sub": "AP_procesamiento"
           }
         ]
@@ -102,15 +109,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Creación activa del espacio potencial (entre lo interno y lo externo)",
+            "codigo": "p_winn_espacio_potencial",
+            "nombre": "Creación activa del espacio potencial (entre lo interno y lo externo)",
+            "texto": "Procedimiento que establece una zona intermedia de exploración donde el paciente no está obligado a decidir si algo es ‘real’ o ‘imaginado’, sino a experimentarlo con curiosidad; el terapeuta fomenta simbolización, metáfora, prueba segura y ambigüedad tolerable, reduciendo defensas de certeza, control o cinismo y facilitando creatividad psicológica.",
             "sub": "AP_procesamiento"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Micro-juego con metáfora (sin literalidad)",
+            "codigo": "m_winn_metafora_juego",
+            "nombre": "Micro-juego con metáfora (sin literalidad)",
+            "texto": "Intervención breve que invita a describir la experiencia como imagen, escena o metáfora (“si esto fuese un lugar, ¿cuál sería?”) para abrir el espacio potencial y facilitar simbolización sin exigir narrativa lineal.",
             "sub": "AP_procesamiento"
           }
         ]
@@ -127,8 +136,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Vocalización emocional",
+            "codigo": "m_bioenergetico_vocalizacion",
+            "nombre": "Vocalización emocional",
+            "texto": "Uso de la voz como vía de expresión emocional directa, permitiendo que sonidos y palabras emerjan desde la experiencia corporal. Favorece integración emoción-cuerpo y reducción de inhibiciones expresivas (Lowen, 1975).",
             "sub": "AP_procesamiento"
           }
         ]
@@ -144,8 +154,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Trabajo experiencial intensivo",
+            "codigo": "p_esalen_experiencial",
+            "nombre": "Trabajo experiencial intensivo",
+            "texto": "Procedimiento central del enfoque Esalen que utiliza experiencias intensivas y prolongadas para facilitar la ampliación de la conciencia y la integración emocional. El trabajo se apoya en la vivencia directa, el cuerpo y la relación como vías de transformación profunda, más que en la interpretación verbal del malestar (Murphy & Price, 1979).",
             "sub": "AP_procesamiento"
           }
         ],
@@ -162,25 +173,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Trabajo con la relación continente–contenido",
+            "codigo": "p_bion_continente_contenido",
+            "nombre": "Trabajo con la relación continente–contenido",
+            "texto": "Intervención que conceptualiza la relación terapéutica como un vínculo continente–contenido, donde el analista sostiene emocionalmente aquello que el paciente no puede pensar, permitiendo que la experiencia deje de ser evacuada y pueda transformarse en material simbólico compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
             "sub": "AP_procesamiento"
           },
           {
-            "id": null,
-            "label": "Transformación de evacuación emocional en pensamiento",
+            "codigo": "p_bion_evacuacion_a_pensamiento",
+            "nombre": "Transformación de evacuación emocional en pensamiento",
+            "texto": "Intervención orientada a sustituir la descarga emocional inmediata —acting, impulsividad, somatización— por un proceso de contención que permita simbolizar la experiencia, aumentando la capacidad de reflexión y aprendizaje emocional (Bion, 1962, *Learning from Experience*).",
             "sub": "AP_procesamiento"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Transformar sensación corporal en experiencia pensable",
+            "codigo": "m_bion_cuerpo_a_pensamiento",
+            "nombre": "Transformar sensación corporal en experiencia pensable",
+            "texto": "Intervención breve que conecta sensaciones corporales intensas con el estado emocional presente, facilitando el paso desde lo somático no simbolizado hacia una experiencia que puede empezar a pensarse y nombrarse (Bion, 1962, *Learning from Experience*).",
             "sub": "AP_procesamiento"
           },
           {
-            "id": null,
-            "label": "Devolver experiencia emocional metabolizada",
+            "codigo": "m_bion_devolver_metabolizado",
+            "nombre": "Devolver experiencia emocional metabolizada",
+            "texto": "Microintervención en la que el analista devuelve en palabras simples una experiencia previamente recibida de forma caótica, mostrando cómo algo inicialmente intolerable puede transformarse en pensamiento compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
             "sub": "AP_procesamiento"
           }
         ]
@@ -196,8 +211,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Trabajo con ansiedad de separación y pérdida",
+            "codigo": "p_bowlby_separacion_perdida",
+            "nombre": "Trabajo con ansiedad de separación y pérdida",
+            "texto": "Procedimiento orientado a elaborar experiencias de separación, abandono o pérdida que han dejado huella en el sistema de apego, diferenciando reacciones normales de duelo de respuestas traumáticas persistentes, y facilitando la integración emocional de tristeza, rabia y protesta sin recurrir a estrategias extremas de apego (Bowlby, 1973, *Separation: Anxiety and Anger*; Bowlby, 1980, *Loss: Sadness and Depression*).",
             "sub": "AP_procesamiento"
           }
         ],
@@ -214,8 +230,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Trabajo con marcadores emocionales",
+            "codigo": "p_exp_marcadores",
+            "nombre": "Trabajo con marcadores emocionales",
+            "texto": "Identificación de señales clínicas (bloqueos, emociones no resueltas, autoevaluaciones dolorosas) que indican la necesidad de intervenir experiencialmente para facilitar transformación emocional.",
             "sub": "AP_procesamiento"
           }
         ],
@@ -232,8 +249,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Interpretación focal y selectiva",
+            "codigo": "p_spb_interpretacion_focal",
+            "nombre": "Interpretación focal y selectiva",
+            "texto": "Procedimiento interpretativo que prioriza intervenciones directamente vinculadas al foco dinámico, evitando exploraciones laterales, con el fin de concentrar insight emocional y facilitar cambios estructurales dentro del tiempo limitado (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
             "sub": "AP_procesamiento"
           }
         ],
@@ -250,8 +268,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Trabajo con transferencia selfobject",
+            "codigo": "p_kohut_transferencia_selfobject",
+            "nombre": "Trabajo con transferencia selfobject",
+            "texto": "Procedimiento central que reconoce y sostiene transferencias selfobject en las que el terapeuta es vivido como fuente de regulación, admiración o pertenencia, evitando interpretarlas prematuramente como resistencia o regresión patológica (Kohut, 1971, *The Analysis of the Self*).",
             "sub": "AP_procesamiento"
           }
         ],
@@ -268,8 +287,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Análisis sistemático de la transferencia",
+            "codigo": "p_kernberg_analisis_transferencia",
+            "nombre": "Análisis sistemático de la transferencia",
+            "texto": "Procedimiento central en el que se examinan las reacciones emocionales y conductuales del paciente hacia el terapeuta como expresión directa de díadas relacionales internas escindidas, utilizándolas como principal vía de cambio estructural (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
             "sub": "AP_procesamiento"
           }
         ],
@@ -287,8 +307,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Desaceleración deliberada del proceso",
+            "codigo": "m_mahoney_desaceleracion",
+            "nombre": "Desaceleración deliberada del proceso",
+            "texto": "Microintervención que consiste en reducir intencionadamente el ritmo de exploración o acción cuando el sistema muestra señales de saturación o desorganización. Esta desaceleración protege la coherencia identitaria, permite una integración más profunda de la experiencia y previene cambios forzados que podrían generar rigidez defensiva. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
             "sub": "AP_procesamiento"
           }
         ]

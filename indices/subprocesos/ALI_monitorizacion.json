@@ -1,6 +1,6 @@
 {
   "subprocesoId": "ALI_monitorizacion",
-  "updatedAt": "2026-02-03T10:20:29.600Z",
+  "updatedAt": "2026-02-03T10:28:30.257Z",
   "totalModelos": 17,
   "modelos": [
     {
@@ -13,8 +13,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Entrevista y conceptualización adleriana del caso",
+            "codigo": "p_adler_entrevista_conceptualizacion",
+            "nombre": "Entrevista y conceptualización adleriana del caso",
+            "texto": "La conceptualización adleriana integra historia vital, metas actuales, dificultades relacionales y patrones repetidos para inferir el estilo de vida y la lógica privada, formulando una hipótesis teleológica sobre el propósito del síntoma y su relación con pertenencia, autoestima y cooperación.",
             "sub": "ALI_monitorizacion"
           }
         ],
@@ -31,15 +32,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Generalización a contextos extra-sesión",
+            "codigo": "p_sullivan_generalizacion",
+            "nombre": "Generalización a contextos extra-sesión",
+            "texto": "Intervención que traslada aprendizajes relacionales de la sesión a la vida cotidiana mediante tareas de observación y experimentación, evaluando impacto y ajustando estrategias según resultados.",
             "sub": "ALI_monitorizacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Chequear seguridad tras una intervención",
+            "codigo": "m_sullivan_chequeo_seguridad",
+            "nombre": "Chequear seguridad tras una intervención",
+            "texto": "Microintervención que evalúa si la intervención aumentó o redujo la sensación de seguridad interpersonal, ajustando el ritmo y el nivel de profundidad para mantener el proceso terapéutico viable.",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -55,20 +58,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Transiciones, separación y continuidad entre sesiones (preservar el going-on-being)",
+            "codigo": "p_winn_transiciones_continuidad",
+            "nombre": "Transiciones, separación y continuidad entre sesiones (preservar el going-on-being)",
+            "texto": "Procedimiento que cuida los finales, pausas, vacaciones y cambios para que no se vivan como derrumbe o intrusión; se anticipan reacciones, se construyen soportes transicionales (recordatorios, rituales, tareas simples) y se revisa el impacto, favoreciendo continuidad del ser y disminuyendo defensas de retirada o hipercontrol ante la separación.",
             "sub": "ALI_monitorizacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo de usabilidad de una intervención (¿te sirve o invade?)",
+            "codigo": "m_winn_chequeo_usabilidad",
+            "nombre": "Chequeo de usabilidad de una intervención (¿te sirve o invade?)",
+            "texto": "Microintervención que pregunta por el impacto inmediato de lo dicho (“¿esto te ayuda o se siente demasiado?”) para mantener la terapia como entorno facilitador, ajustar dosificación y evitar repetir fallos ambientales.",
             "sub": "ALI_monitorizacion"
           },
           {
-            "id": null,
-            "label": "Cierre con continuidad (transición cuidada)",
+            "codigo": "m_winn_cierre_continuidad",
+            "nombre": "Cierre con continuidad (transición cuidada)",
+            "texto": "Microintervención final que ayuda a hacer puente entre sesión y vida cotidiana (qué te llevas, qué sostén tendrás, qué recordarás), para evitar sensación de caída o intrusión y preservar el going-on-being.",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -85,8 +91,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Ajuste del observador (cómo influye el terapeuta)",
+            "codigo": "m_bateson_observador",
+            "nombre": "Ajuste del observador (cómo influye el terapeuta)",
+            "texto": "Microintervención reflexiva del terapeuta sobre el proceso: notar cuándo su presencia cambia el patrón y usarlo para ajustar ritmo, preguntas y foco. Sostiene rigor sistémico y evita intervenir desde supuestos lineales.",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -102,15 +109,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Atención al campo emocional compartido",
+            "codigo": "p_bion_campo_emocional",
+            "nombre": "Atención al campo emocional compartido",
+            "texto": "Procedimiento que amplía el foco desde el individuo hacia el campo emocional que se crea entre paciente y analista, observando cambios en atmósfera, afecto y ritmo como indicadores del proceso de contención y transformación en curso (Bion, 1970, *Attention and Interpretation*).",
             "sub": "ALI_monitorizacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Señalar cambio en la atmósfera emocional",
+            "codigo": "m_bion_atmosfera_emocional",
+            "nombre": "Señalar cambio en la atmósfera emocional",
+            "texto": "Intervención breve que nombra variaciones en la atmósfera emocional de la sesión —alivio, pesadez, tensión— como indicadores del proceso de contención y transformación en curso (Bion, 1970, *Attention and Interpretation*).",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -126,20 +135,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Diferenciación entre regresión benigna y regresión maligna",
+            "codigo": "p_balint_regresion_benigna_vs_maligna",
+            "nombre": "Diferenciación entre regresión benigna y regresión maligna",
+            "texto": "Procedimiento de formulación continua que distingue regresión reparadora —caracterizada por alivio, mayor simbolización y aumento de confianza— de regresión desorganizante, asociada a escalada de demandas, acting out o somatización, permitiendo ajustar el encuadre y las intervenciones para mantener el proceso dentro de una ventana terapéutica segura.",
             "sub": "ALI_monitorizacion"
           },
           {
-            "id": null,
-            "label": "Intervención focal breve orientada a alivio funcional",
+            "codigo": "p_balint_focal_breve",
+            "nombre": "Intervención focal breve orientada a alivio funcional",
+            "texto": "Procedimiento pragmático que, sin abandonar la comprensión profunda, prioriza alivio funcional y reorganización del vínculo en un foco acotado, facilitando cambios observables en regulación, petición de ayuda y adaptación relacional en un tiempo limitado.",
             "sub": "ALI_monitorizacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Chequear alivio vs escalada tras una intervención",
+            "codigo": "m_balint_chequeo_impacto",
+            "nombre": "Chequear alivio vs escalada tras una intervención",
+            "texto": "Intervención breve que observa si una respuesta produjo alivio o incrementó urgencia regresiva, ajustando el ritmo y el encuadre para mantener la regresión en modo benigna.",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -155,15 +167,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Observación del apego en el aquí-ahora relacional",
+            "codigo": "p_bowlby_apego_aqui_ahora",
+            "nombre": "Observación del apego en el aquí-ahora relacional",
+            "texto": "Intervención que analiza cómo el sistema de apego del paciente se activa dentro de la relación terapéutica —búsqueda de cercanía, pruebas, retirada, hipervigilancia— utilizando estas manifestaciones como material vivo para revisar expectativas relacionales y ofrecer experiencias correctivas en tiempo real (Bowlby, 1988, *A Secure Base*).",
             "sub": "ALI_monitorizacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Observar aumento de exploración como indicador de seguridad",
+            "codigo": "m_bowlby_exploracion_seguridad",
+            "nombre": "Observar aumento de exploración como indicador de seguridad",
+            "texto": "Microintervención que señala el incremento de curiosidad, iniciativa o autonomía como señales de mayor seguridad de apego, reforzando el cambio sin convertirlo en exigencia de rendimiento (Bowlby, 1969, *Attachment*).",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -180,13 +194,15 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Detectar micro-falla empática",
+            "codigo": "m_kohut_micro_falla_empatica",
+            "nombre": "Detectar micro-falla empática",
+            "texto": "Intervención mínima que reconoce un desajuste empático incipiente —tono, timing, incomprensión— antes de que produzca retraimiento o rabia narcisista, facilitando reparación temprana (Kohut, 1977, *The Restoration of the Self*).",
             "sub": "ALI_monitorizacion"
           },
           {
-            "id": null,
-            "label": "Señalar aumento de cohesión del self",
+            "codigo": "m_kohut_cohesion_self",
+            "nombre": "Señalar aumento de cohesión del self",
+            "texto": "Microintervención que destaca señales de mayor continuidad, estabilidad emocional o vitalidad como indicadores de cambio estructural, reforzando la internalización transmutadora (Kohut, 1971, *The Analysis of the Self*).",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -203,8 +219,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Señalar avance hacia ambivalencia integrada",
+            "codigo": "m_kernberg_avance_integracion",
+            "nombre": "Señalar avance hacia ambivalencia integrada",
+            "texto": "Intervención breve que destaca momentos en los que el paciente puede sostener simultáneamente aspectos positivos y negativos del self u objeto, reforzando el progreso estructural sin idealizarlo (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -220,8 +237,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Monitorización continua por modalidades (feedback y ajuste)",
+            "codigo": "p_lazarus_monitorizacion_modal",
+            "nombre": "Monitorización continua por modalidades (feedback y ajuste)",
+            "texto": "Procedimiento de seguimiento sistemático del progreso, evaluando cambios en cada modalidad (conductas clave, intensidad/claridad emocional, síntomas somáticos, intrusiones imaginativas, rumiación/cogniciones, calidad relacional, sueño/sustancias/medicación) para decidir qué mantener, qué intensificar y qué cambiar. Esta monitorización previene estancamientos y reduce el riesgo de tratamientos largos sin dirección, haciendo que la terapia sea adaptable sin perder estructura. (Lazarus, 1989)",
             "sub": "ALI_monitorizacion"
           }
         ],
@@ -239,8 +257,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo de utilidad",
+            "codigo": "m_sfbt_utilidad",
+            "nombre": "Chequeo de utilidad",
+            "texto": "Preguntar explícitamente si la conversación está siendo útil para ajustar la intervención.",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -256,20 +275,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Intervención domiciliaria intensiva con planificación semanal",
+            "codigo": "p_mst_domicilio_intensivo",
+            "nombre": "Intervención domiciliaria intensiva con planificación semanal",
+            "texto": "Trabajo en el hogar y contextos cotidianos con objetivos semanales, tareas específicas y revisión frecuente de resultados, ajustando el plan según datos observables.",
             "sub": "ALI_monitorizacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo rápido de adherencia y barreras",
+            "codigo": "m_mst_chequeo_adherencia",
+            "nombre": "Chequeo rápido de adherencia y barreras",
+            "texto": "Microevaluación frecuente de qué se hizo, qué no y por qué, ajustando tareas para que sean viables y medibles.",
             "sub": "ALI_monitorizacion"
           },
           {
-            "id": null,
-            "label": "Cierre semanal con datos observables",
+            "codigo": "m_mst_revision_datos",
+            "nombre": "Cierre semanal con datos observables",
+            "texto": "Revisión breve de indicadores (incidentes, escuela, contactos de riesgo, consumo si aplica) para ajustar plan y reforzar logros.",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -285,20 +307,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Reflexividad del terapeuta y transparencia conversacional",
+            "codigo": "p_colab_reflexividadTransparencia",
+            "nombre": "Reflexividad del terapeuta y transparencia conversacional",
+            "texto": "Procedimiento que implica que el terapeuta haga explícitos, de manera cuidadosa y no invasiva, sus propias dudas, resonancias y comprensiones provisionales como parte del diálogo, permitiendo que el cliente las confirme, matice o corrija; esta transparencia reduce la opacidad del poder experto, favorece una metaconversación sobre el proceso y mejora la sensibilidad al contexto cultural y relacional del consultante. (Anderson, 1997)",
             "sub": "ALI_monitorizacion"
           },
           {
-            "id": null,
-            "label": "Ajuste conversacional continuo (monitorización de alianza en tiempo real)",
+            "codigo": "p_colab_ajusteContinuo",
+            "nombre": "Ajuste conversacional continuo (monitorización de alianza en tiempo real)",
+            "texto": "Procedimiento de seguimiento constante donde el terapeuta atiende señales de cierre, confusión, incomodidad o distancia en la conversación (cambios de tono, silencios, respuestas mínimas) y ajusta preguntas, ritmo y nivel de abstracción para restaurar apertura; este ajuste protege la alianza y mantiene el diálogo como espacio generativo, evitando que la terapia derive en un intercambio estéril o en una imposición sutil. (Anderson, 1997)",
             "sub": "ALI_monitorizacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo colaborativo de comprensión",
+            "codigo": "m_colab_chequeoComprension",
+            "nombre": "Chequeo colaborativo de comprensión",
+            "texto": "Preguntas breves para verificar si lo comprendido por el terapeuta coincide con la experiencia del consultante, devolviendo el control del significado y previniendo malentendidos o micro-rupturas. (Anderson & Goolishian, 1992)",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -314,8 +339,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Metacognición del cambio: monitorización del proceso terapéutico con el paciente",
+            "codigo": "p_feixas_metacognicionCambio",
+            "nombre": "Metacognición del cambio: monitorización del proceso terapéutico con el paciente",
+            "texto": "Procedimiento recurrente donde terapeuta y paciente observan explícitamente cómo está ocurriendo el cambio: qué intervenciones ayudan, cuáles activan amenaza, qué se evita, qué se está pudiendo sostener y qué señales indican avance o estancamiento; se usa un lenguaje claro y colaborativo para convertir el proceso terapéutico en un objeto de reflexión compartida, reforzando agencia y evitando que la terapia se convierta en algo que “le pasa” al paciente sin control o comprensión. (Neimeyer, 1993/2009; Feixas, 2004)",
             "sub": "ALI_monitorizacion"
           }
         ],
@@ -332,15 +358,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Hipótesis reflexiva y metacomunicación del proceso",
+            "codigo": "p_linares_reflexividad",
+            "nombre": "Hipótesis reflexiva y metacomunicación del proceso",
+            "texto": "El terapeuta hace explícito el proceso terapéutico como co-construcción: comparte hipótesis como tentativas, pregunta por el impacto de su intervención y re-negocia dirección. Previene rupturas silenciosas y fortalece alianza.",
             "sub": "ALI_monitorizacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo de alianza y justicia relacional",
+            "codigo": "m_linares_alianza_check",
+            "nombre": "Chequeo de alianza y justicia relacional",
+            "texto": "Pregunta breve de ajuste: “¿cómo os está cayendo esto?”, “¿alguien siente que estoy tomando partido?”. Previene rupturas silenciosas.",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -357,8 +385,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo de seguridad emocional",
+            "codigo": "m_abft_seguridad",
+            "nombre": "Chequeo de seguridad emocional",
+            "texto": "Evaluación continua de activación emocional y riesgo para ajustar la intervención.",
             "sub": "ALI_monitorizacion"
           }
         ]
@@ -375,8 +404,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Reparación explícita de micro-ruptura",
+            "codigo": "m_exist_reparacion",
+            "nombre": "Reparación explícita de micro-ruptura",
+            "texto": "Intervención breve para nombrar distancia, tensión o malentendido (“creo que aquí nos hemos perdido”), validarlo y ajustar. Protege el proceso profundo y modela una forma madura de relación (Schneider, Bugental & Pierson, 2015).",
             "sub": "ALI_monitorizacion"
           }
         ]

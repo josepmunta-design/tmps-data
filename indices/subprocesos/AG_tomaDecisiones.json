@@ -1,6 +1,6 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-03T10:20:29.600Z",
+  "updatedAt": "2026-02-03T10:28:30.257Z",
   "totalModelos": 32,
   "modelos": [
     {
@@ -14,8 +14,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "The question",
+            "codigo": "m_adler_the_question",
+            "nombre": "The question",
+            "texto": "Pregunta focal que revela prioridad vital al explorar qué haría el paciente si el síntoma desapareciera, conectando evitación actual con meta de vida y abriendo planificación concreta.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -31,20 +32,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Escape de la libertad: autoritarismo, destructividad y conformismo (Fromm)",
+            "codigo": "p_neopsy_fromm_escape_libertad",
+            "nombre": "Escape de la libertad: autoritarismo, destructividad y conformismo (Fromm)",
+            "texto": "Procedimiento que identifica cómo el paciente maneja la angustia de libertad e incertidumbre a través de sumisión a figuras/ideas, ataques/destructividad o conformismo automático; se conectan estos movimientos con miedo, soledad y responsabilidad, y se diseñan elecciones graduales que incrementen autonomía sin ruptura abrupta del sentido de pertenencia.",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Detectar un ‘debería’ y traducirlo a valor elegido",
+            "codigo": "m_neopsy_deberia_a_valor",
+            "nombre": "Detectar un ‘debería’ y traducirlo a valor elegido",
+            "texto": "Intervención breve que identifica el mandato (‘tengo que’) y lo reconvierte en elección orientada a valor (‘quiero porque’), reduciendo tiranía interna y aumentando agencia sin romper la motivación.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Cierre de sesión orientado a elección concreta",
+            "codigo": "m_neopsy_cierre_eleccion",
+            "nombre": "Cierre de sesión orientado a elección concreta",
+            "texto": "Microintervención final que convierte el aprendizaje en una elección concreta para la semana (una conversación, un límite, una reparación), para que el cambio no quede solo en insight.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -60,8 +64,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Jerarquización de estímulos",
+            "codigo": "p_mowrer_jerarquia",
+            "nombre": "Jerarquización de estímulos",
+            "texto": "Procedimiento de planificación que consiste en ordenar los estímulos o situaciones temidas en función de su intensidad ansiógena. Permite estructurar la exposición de forma gradual, facilitando el compromiso del paciente y reduciendo la probabilidad de abandono. La jerarquía traduce el modelo teórico en un plan operativo claro y progresivo.",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -78,15 +83,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Pérdida de reforzadores",
+            "codigo": "p_aversivo_castigo_negativo",
+            "nombre": "Pérdida de reforzadores",
+            "texto": "Procedimiento operante que reduce la conducta problema retirando estímulos reforzantes previamente disponibles cuando aparece dicha conducta. Funciona como castigo negativo y fue utilizado como alternativa menos intensa al castigo físico.",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Retirada progresiva del estímulo aversivo",
+            "codigo": "m_aversivo_retirada",
+            "nombre": "Retirada progresiva del estímulo aversivo",
+            "texto": "Reducción gradual del estímulo aversivo una vez suprimida la conducta, con el objetivo de evitar efectos colaterales intensos y dependencia del control externo.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -102,15 +109,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Acto analítico",
+            "codigo": "p_lacan_acto_analitico",
+            "nombre": "Acto analítico",
+            "texto": "Intervención que no se reduce a técnica ni a interpretación, sino que implica una decisión ética del analista que introduce una marca simbólica irreversible, alterando la estructura del discurso y produciendo un antes y un después en la posición subjetiva del analizante (Lacan, 1967–1968, *The Psychoanalytic Act*; Miller, 2001, *The Act in Psychoanalysis*).",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Cerrar con una formulación mínima",
+            "codigo": "m_lacan_cierre_minimo",
+            "nombre": "Cerrar con una formulación mínima",
+            "texto": "Intervención de cierre que devuelve una frase breve o un significante aislado como resto de la sesión, evitando síntesis explicativas y permitiendo que el trabajo continúe por efectos de resonancia simbólica (Miller, 2001, *The Act in Psychoanalysis*).",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -126,15 +135,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Clarificación de expectativas y roles relacionales",
+            "codigo": "p_sullivan_expectativas_roles",
+            "nombre": "Clarificación de expectativas y roles relacionales",
+            "texto": "Intervención que explicita supuestos sobre cómo ‘deberían’ comportarse los otros en distintos roles, diferenciando expectativas realistas de exigencias ansiolíticas y favoreciendo acuerdos relacionales más claros.",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Cerrar el episodio con aprendizaje relacional",
+            "codigo": "m_sullivan_cierre_aprendizaje",
+            "nombre": "Cerrar el episodio con aprendizaje relacional",
+            "texto": "Intervención de cierre que resume qué patrón se activó, cómo se manejó la ansiedad y qué alternativa resultó más segura, consolidando aprendizaje interpersonal transferible.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -151,8 +162,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Devolver elección mínima (para salir de la sumisión ambiental)",
+            "codigo": "m_winn_eleccion_minima",
+            "nombre": "Devolver elección mínima (para salir de la sumisión ambiental)",
+            "texto": "Microintervención que ofrece una elección pequeña y concreta (“¿prefieres seguir aquí o cambiar de tema?”, “¿hablamos o descansamos un minuto?”) para devolver agencia sin forzar autonomía, debilitando el automatismo del falso self.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -168,8 +180,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Intervenciones paradójicas",
+            "codigo": "p_erickson_paradoja",
+            "nombre": "Intervenciones paradójicas",
+            "texto": "Prescripción o intensificación controlada del síntoma para desactivar luchas internas y devolver sensación de control. Muy influyente en la terapia estratégica posterior.",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -186,20 +199,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Destriangulación activa",
+            "codigo": "p_bowen_destriangulacion",
+            "nombre": "Destriangulación activa",
+            "texto": "La destriangulación apunta a salir de los triángulos que estabilizan la ansiedad (p. ej., madre-hijo contra padre). El consultante aprende a no quedar atrapado como tercer vértice regulador del sistema y a devolver los conflictos a la díada correspondiente mediante presencia calma y comunicación directa. No es ‘retirarse’, sino cambiar la propia participación: sostener cercanía sin fusionarse y sostener autonomía sin cortar. Esta intervención suele ser el punto de inflexión cuando los síntomas estaban sirviendo para regular la tensión del sistema.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Trabajo con corte emocional (emotional cutoff)",
+            "codigo": "p_bowen_corte_emocional",
+            "nombre": "Trabajo con corte emocional (emotional cutoff)",
+            "texto": "El corte emocional se entiende como una solución defensiva: distancia extrema para manejar ansiedad, que suele mantener dependencia invisible y reactividad latente. La intervención busca restablecer contacto gradual, directo y regulado, sin caer en fusión. Esto implica decisiones pequeñas pero consistentes: comunicaciones neutrales, encuentros breves, y práctica de posición-yo. Se trabaja para que la conexión sea posible sin que el sistema ‘se trague’ al individuo.",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo de fusión vs corte",
+            "codigo": "m_bowen_fusion_corte",
+            "nombre": "Chequeo de fusión vs corte",
+            "texto": "Microintervención para identificar el estilo habitual bajo presión: fusionarse (ceder, complacer, discutir) o cortar (desaparecer, bloquear, evitar). Nombrar el estilo permite elegir un tercer camino: contacto regulado con posición-yo. Es un chequeo rápido muy útil para prevenir recaídas en patrones.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -215,25 +231,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Sistema WDEP (Wants, Doing, Evaluation, Planning)",
+            "codigo": "p_rt_wdep",
+            "nombre": "Sistema WDEP (Wants, Doing, Evaluation, Planning)",
+            "texto": "Procedimiento estructural central de la Terapia de la Realidad. El terapeuta guía al cliente a clarificar qué quiere (Wants), qué está haciendo actualmente (Doing), si eso le funciona (Evaluation) y qué plan concreto está dispuesto a llevar a cabo (Planning). El WDEP convierte el proceso terapéutico en una secuencia clara de elección, evaluación y acción responsable.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Planificación conductual SAMIC3",
+            "codigo": "p_rt_samic3",
+            "nombre": "Planificación conductual SAMIC3",
+            "texto": "Diseño de planes conductuales que sean Simples, Alcanzables, Medibles, Inmediatos, Controlables por el cliente, Comprometidos y Consistentes. Garantiza viabilidad y adherencia.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Enfoque en presente y futuro",
+            "codigo": "p_rt_presente_futuro",
+            "nombre": "Enfoque en presente y futuro",
+            "texto": "Redirección sistemática del discurso desde el pasado no modificable hacia elecciones actuales y metas futuras. Reduce rumiación y aumenta agencia.",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Elección de conducta alternativa",
+            "codigo": "m_rt_alternativa",
+            "nombre": "Elección de conducta alternativa",
+            "texto": "Invitar a identificar una conducta concreta diferente que pueda probarse de inmediato.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -249,8 +269,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Intensificación",
+            "codigo": "p_struct_intensificacion",
+            "nombre": "Intensificación",
+            "texto": "Aumento deliberado de la intensidad emocional o conductual para hacer visibles patrones rígidos y promover reorganización.",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -267,13 +288,15 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Intervenciones paradójicas",
+            "codigo": "p_strat_paradoja",
+            "nombre": "Intervenciones paradójicas",
+            "texto": "Se prescribe el síntoma o la conducta problemática de forma controlada para desactivar la lucha de control. La paradoja hace que el problema pierda su función reguladora.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Secuenciación estratégica del cambio",
+            "codigo": "p_strat_secuenciacion",
+            "nombre": "Secuenciación estratégica del cambio",
+            "texto": "Planificación del orden y ritmo de las intervenciones para evitar resistencia excesiva y maximizar impacto.",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -290,15 +313,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Trabajo con dependencia y separación sin colapso",
+            "codigo": "p_balint_dependencia_separacion",
+            "nombre": "Trabajo con dependencia y separación sin colapso",
+            "texto": "Intervención que acompaña movimientos de cercanía y distancia ayudando a tolerar separación, límites y autonomía sin activar retirada defensiva ni demanda excesiva, ensayando transiciones cuidadas que consolidan seguridad interna.",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Cerrar el episodio devolviendo agencia",
+            "codigo": "m_balint_cierre_agencia",
+            "nombre": "Cerrar el episodio devolviendo agencia",
+            "texto": "Microintervención de cierre que resume el aprendizaje del episodio y devuelve una pequeña elección o acción al paciente, consolidando integración sin dependencia excesiva.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -314,15 +339,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Promoción de exploración autónoma desde la seguridad",
+            "codigo": "p_bowlby_exploracion_autonoma",
+            "nombre": "Promoción de exploración autónoma desde la seguridad",
+            "texto": "Procedimiento orientado a fortalecer la capacidad del paciente para explorar el mundo interpersonal, laboral o creativo desde una base de seguridad interna, reduciendo dependencia o evitación, y consolidando una vivencia de competencia personal compatible con el vínculo (Bowlby, 1988, *A Secure Base*).",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Observar aumento de exploración como indicador de seguridad",
+            "codigo": "m_bowlby_exploracion_seguridad",
+            "nombre": "Observar aumento de exploración como indicador de seguridad",
+            "texto": "Microintervención que señala el incremento de curiosidad, iniciativa o autonomía como señales de mayor seguridad de apego, reforzando el cambio sin convertirlo en exigencia de rendimiento (Bowlby, 1969, *Attachment*).",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -338,25 +365,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Instrucción psicoeducativa y descomposición de habilidades",
+            "codigo": "p_sst_instruccion_descomposicion",
+            "nombre": "Instrucción psicoeducativa y descomposición de habilidades",
+            "texto": "Procedimiento de encuadre y enseñanza explícita donde se define la habilidad objetivo, se aclaran sus componentes conductuales (qué decir, cómo decirlo, cuándo y con qué intención) y se descompone la secuencia en pasos practicables; se establecen criterios observables de ejecución y se anticipan obstáculos típicos (evitación, agresividad, sumisión), creando un mapa claro que convierte un problema interpersonal difuso en un objetivo entrenable y medible.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Negociación y resolución de conflictos interpersonales",
+            "codigo": "p_sst_negociacion_conflictos",
+            "nombre": "Negociación y resolución de conflictos interpersonales",
+            "texto": "Procedimiento orientado a transformar choques en acuerdos: definir el problema en términos conductuales, explicitar intereses, generar opciones, evaluar costes/beneficios y cerrar compromisos verificables; se entrenan turnos de palabra, propuestas concretas, cesiones realistas y reparación posterior, con role-plays que simulan tensiones habituales (pareja, familia, trabajo) para aumentar flexibilidad y disminuir patrones de dominancia, retirada o triangulación.",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Guionización breve (script) y tarjetas de apoyo",
+            "codigo": "m_sst_guionizacion",
+            "nombre": "Guionización breve (script) y tarjetas de apoyo",
+            "texto": "Uso de guiones cortos y recordatorios para sostener la secuencia en fases iniciales (frases de apertura, petición, límite, cierre), disminuyendo bloqueo por ansiedad y ayudando a automatizar la conducta; se retiran progresivamente para evitar rigidez y favorecer naturalidad.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Plan de prevención de recaídas (señales tempranas y plan de acción)",
+            "codigo": "m_sst_prevencion_recaidas",
+            "nombre": "Plan de prevención de recaídas (señales tempranas y plan de acción)",
+            "texto": "Microintervención que identifica señales tempranas de retroceso (retirada, irritabilidad, evitación) y define acciones concretas de recuperación (repetir ejercicios, pedir feedback, reparar, bajar dificultad), evitando que un tropiezo se convierta en abandono del repertorio.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -372,8 +403,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Resolución de problemas",
+            "codigo": "p_fft_problemas",
+            "nombre": "Resolución de problemas",
+            "texto": "Aplicación estructurada de pasos para abordar conflictos cotidianos.",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -390,8 +422,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Bloqueo de la solución intentada",
+            "codigo": "p_mri_bloqueo",
+            "nombre": "Bloqueo de la solución intentada",
+            "texto": "Se prescribe dejar de hacer aquello que mantiene el problema, creando un vacío funcional que obliga al sistema a reorganizarse.",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -408,15 +441,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Ajustes contextuales deliberados",
+            "codigo": "p_wachtel_ajustesContexto",
+            "nombre": "Ajustes contextuales deliberados",
+            "texto": "Procedimiento que identifica variables contextuales que sostienen el ciclo —rutinas, proximidad, roles, reglas implícitas, disponibilidad emocional o redes de apoyo— y planifica cambios realistas para modificar esas condiciones. Al ajustar el entorno, se reduce la frecuencia de activación del patrón y se facilita que las nuevas respuestas del paciente se consoliden con menor coste emocional y menor fricción relacional. (Wachtel, 1977; Wachtel, 2008)",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Señalar el punto de bifurcación",
+            "codigo": "m_wachtel_bifurcacion",
+            "nombre": "Señalar el punto de bifurcación",
+            "texto": "Microintervención que identifica el instante preciso dentro de la interacción donde una respuesta mínima alternativa —una pausa, una pregunta, un cambio de tono o una petición directa— podría haber modificado el curso del intercambio. Al hacer visible ese punto de bifurcación, se entrena la experiencia subjetiva de elección dentro de lo que suele vivirse como automatismo, fortaleciendo la agencia y reduciendo la sensación de inevitabilidad del patrón. (Wachtel, 2011)",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -432,20 +467,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Inventario de problemas y priorización por impacto y viabilidad",
+            "codigo": "p_lazarus_priorizacion_problemas",
+            "nombre": "Inventario de problemas y priorización por impacto y viabilidad",
+            "texto": "Procedimiento para convertir una queja global en una lista concreta de problemas y objetivos, priorizándolos según impacto en la vida diaria, urgencia clínica, riesgos, motivación y accesibilidad al cambio. Esta priorización evita dispersión típica de enfoques eclécticos y permite elegir secuencias terapéuticas realistas (qué se aborda primero y por qué), manteniendo un hilo conductor pese a intervenir en múltiples modalidades. (Lazarus, 1989)",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Entrenamiento en resolución de problemas y toma de decisiones",
+            "codigo": "p_lazarus_resolucion_problemas",
+            "nombre": "Entrenamiento en resolución de problemas y toma de decisiones",
+            "texto": "Procedimiento estructurado para definir problemas, generar opciones, anticipar consecuencias, elegir pasos y revisar resultados, aplicable tanto a decisiones personales como a dilemas interpersonales. Se utiliza para transformar rumiación y bloqueo en acción organizada, y encaja con el enfoque multimodal al convertir la terapia en una intervención pragmática sobre la vida cotidiana del paciente. (Lazarus, 1989)",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Selección de micro-objetivo por modalidad",
+            "codigo": "m_lazarus_microobjetivo_modal",
+            "nombre": "Selección de micro-objetivo por modalidad",
+            "texto": "Microintervención que define un objetivo pequeño, observable y alcanzable dentro de una modalidad concreta para el periodo entre sesiones, evitando metas vagas o excesivas. Esta focalización aumenta adherencia, refuerza agencia y permite evaluar progreso de forma clara. (Lazarus, 1989)",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -461,20 +499,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Pregunta milagro",
+            "codigo": "p_sfbt_pregunta_milagro",
+            "nombre": "Pregunta milagro",
+            "texto": "Pregunta diseñada para ayudar al cliente a describir con detalle un futuro sin el problema, clarificando objetivos y señales de cambio. Activa imaginación, esperanza y orientación a la acción.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Definición de objetivos bien formados",
+            "codigo": "p_sfbt_objetivos",
+            "nombre": "Definición de objetivos bien formados",
+            "texto": "Construcción de objetivos específicos, positivos y controlables por el cliente, que orientan la intervención.",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Pregunta de avance mínimo",
+            "codigo": "m_sfbt_avance_minimo",
+            "nombre": "Pregunta de avance mínimo",
+            "texto": "Explorar qué tendría que pasar para subir solo un punto en la escala, facilitando cambios pequeños y viables.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -490,43 +531,51 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Proceso 2: Enfocar (Focusing)",
+            "codigo": "p_mi_enfocar",
+            "nombre": "Proceso 2: Enfocar (Focusing)",
+            "texto": "Enfocar consiste en acordar con claridad el ‘tema de cambio’ sin imponerlo: qué conducta, hábito o dirección vital se va a trabajar ahora. Se negocia una agenda y se delimita el objetivo, evitando sesiones que se diluyen o se convierten en debate. Un buen enfoque reduce confusión, alinea expectativas y permite que la conversación se vuelva eficaz sin perder el espíritu colaborativo.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Proceso 4: Planificar (Planning)",
+            "codigo": "p_mi_planificar",
+            "nombre": "Proceso 4: Planificar (Planning)",
+            "texto": "Planificar es pasar de la intención a un compromiso realista: qué hará la persona, cuándo, cómo, con qué apoyos y cómo manejará obstáculos. En MI el plan no se impone ni se diseña en modo ‘tarea escolar’: se co-construye, se ajusta a viabilidad y se refuerza la autoeficacia. El plan se considera exitoso si es sostenible, no si es perfecto.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Fortalecer compromiso (CAT: Compromiso, Activación, Pasos)",
+            "codigo": "p_mi_cat",
+            "nombre": "Fortalecer compromiso (CAT: Compromiso, Activación, Pasos)",
+            "texto": "CAT organiza la transición a la acción: lenguaje de compromiso (‘voy a…’), activación (‘estoy listo’) y pasos concretos (‘esta semana haré…’). El terapeuta escucha y amplifica estas señales, ayudando a que el cliente convierta intención difusa en conducta programable. Es el puente natural del evocar al planificar.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Escalas de importancia y confianza (rulers)",
+            "codigo": "p_mi_rulers",
+            "nombre": "Escalas de importancia y confianza (rulers)",
+            "texto": "Las escalas convierten una discusión abstracta en información accionable: ‘del 0 al 10, ¿cuán importante…?, ¿cuán confiado…?’. Lo clave es la segunda pregunta: ‘¿por qué no es más bajo?’ para evocar razones de cambio, y ‘¿qué haría falta para subir un punto?’ para pasar a plan. Son simples y muy potentes para desbloquear ambivalencia.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Elicit–Provide–Elicit (EPE) para información/psicoeducación",
+            "codigo": "p_mi_epe",
+            "nombre": "Elicit–Provide–Elicit (EPE) para información/psicoeducación",
+            "texto": "EPE evita el modo ‘experto que sermonea’. Primero se elicita lo que el cliente sabe y quiere; luego se ofrece información breve y relevante; finalmente se elicita la reacción y significado. Así la información se integra en la narrativa del cliente y aumenta la probabilidad de adherencia sin reactancia.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Mapeo de agenda / menú de opciones",
+            "codigo": "p_mi_agenda_menu",
+            "nombre": "Mapeo de agenda / menú de opciones",
+            "texto": "El menú de opciones ofrece direcciones posibles sin imponer ninguna, permitiendo que el cliente elija dónde empezar. Se usa cuando hay múltiples problemas o cuando el terapeuta percibe desorganización. Elegir un punto de inicio ya es un acto de agencia y suele reducir la sensación de ‘esto es demasiado’.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Plan de cambio (Change plan) y compromisos específicos",
+            "codigo": "p_mi_change_plan",
+            "nombre": "Plan de cambio (Change plan) y compromisos específicos",
+            "texto": "El plan de cambio recoge: objetivo, razones personales, pasos, apoyos, obstáculos y estrategias de afrontamiento. No es burocracia: es convertir motivación en conducta con soporte social y estructura. El plan se revisa y simplifica hasta que sea sostenible; el éxito es consistencia, no intensidad.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+            "codigo": "p_mi_valores_eleccion",
+            "nombre": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+            "texto": "Cuando el conflicto es existencial (‘quiero A y B pero no caben’), MI trabaja desde valores para que la decisión sea identitaria, no impulsiva. El terapeuta ayuda a nombrar lo que importa de verdad, reconocer costes, y elegir una dirección con responsabilidad. Esto reduce el cambio ‘por presión’ y aumenta coherencia.",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -543,8 +592,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Interrupción de afiliación con pares antisociales y construcción de red prosocial",
+            "codigo": "p_mst_pares_red",
+            "nombre": "Interrupción de afiliación con pares antisociales y construcción de red prosocial",
+            "texto": "Reducción de exposición a pares de riesgo mediante cambios de rutinas y supervisión, y creación activa de alternativas prosociales (deporte, empleo, formación, mentores).",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -562,8 +612,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Identificación de puntos de bifurcación",
+            "codigo": "m_mahoney_bifurcaciones",
+            "nombre": "Identificación de puntos de bifurcación",
+            "texto": "Intervención breve que ayuda a identificar momentos específicos en los que pequeñas decisiones, interpretaciones o acciones produjeron cambios significativos en la trayectoria vital del paciente. Al hacer visibles estos puntos de bifurcación, se refuerza la comprensión del cambio como proceso sensible al contexto y se amplía la percepción de agencia personal. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -579,13 +630,15 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Conversación generativa centrada en posibilidades",
+            "codigo": "p_colab_conversacionPosibilidades",
+            "nombre": "Conversación generativa centrada en posibilidades",
+            "texto": "Procedimiento que orienta la conversación hacia la creación de posibilidades nuevas en lugar de quedarse atrapada en descripciones saturadas por el problema, explorando excepciones, deseos, valores y futuros posibles mediante preguntas abiertas que amplían el repertorio lingüístico; el cambio se conceptualiza como el surgimiento de nuevas formas de hablar que hacen visibles opciones de acción e identidad antes no disponibles para el consultante. (Anderson, 1997)",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Definición colaborativa de objetivos emergentes",
+            "codigo": "p_colab_objetivosEmergentes",
+            "nombre": "Definición colaborativa de objetivos emergentes",
+            "texto": "Procedimiento por el cual los objetivos no se establecen como un plan cerrado al inicio, sino que se formulan y reformulan a medida que la conversación revela qué es importante, qué tiene sentido y qué es viable para el consultante; se prioriza que los objetivos estén expresados en el lenguaje del cliente y que reflejen posibilidades reales de acción e identidad, evitando traducirlos a metas externas o normativas. (Anderson, 1997)",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -602,8 +655,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Orientación al self futuro",
+            "codigo": "p_neim_self_futuro",
+            "nombre": "Orientación al self futuro",
+            "texto": "Procedimiento que ayuda al cliente a imaginar, articular y comprometerse con posibles selves futuros que integren la experiencia vivida y abran horizontes de sentido. La construcción de un self futuro viable facilita la toma de decisiones, la recuperación de agencia y la salida del estancamiento narrativo característico de las crisis de significado (Neimeyer, 1995; Neimeyer, 2016).",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -620,15 +674,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Clarificación de valores y elección de posicionamiento (posiciones guiadas por valores)",
+            "codigo": "p_hermans_posicionamientoPorValores",
+            "nombre": "Clarificación de valores y elección de posicionamiento (posiciones guiadas por valores)",
+            "texto": "Procedimiento que conecta el trabajo dialógico con dirección vital, identificando qué posiciones encarnan valores nucleares y eligiendo conscientemente desde qué voz actuar en situaciones clave. (Hermans, 1996).",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Invitar a alternancia contextual de voces",
+            "codigo": "m_hermans_alternanciaContextual",
+            "nombre": "Invitar a alternancia contextual de voces",
+            "texto": "Microintervención que plantea que distintas voces pueden ser útiles en contextos distintos, evitando soluciones globales rígidas. Aumenta flexibilidad adaptativa del self y favorece elecciones situadas y coherentes con valores. (Hermans, 1996).",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -644,20 +700,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Diseño PERMA (mapa de bienestar y plan semanal)",
+            "codigo": "p_pospsy_perma_plan",
+            "nombre": "Diseño PERMA (mapa de bienestar y plan semanal)",
+            "texto": "Mapear el estado actual de cada componente PERMA y elegir microacciones semanales de alto impacto y baja fricción. Se revisa qué componentes están más bajos y cuál es el ‘cuello de botella’ del caso.",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Formulación de metas con sentido (Meaning) y compromiso",
+            "codigo": "p_pospsy_sentido_metas",
+            "nombre": "Formulación de metas con sentido (Meaning) y compromiso",
+            "texto": "Clarificar valores y traducirlos a metas concretas, priorizando las que crean dirección vital. Se revisan obstáculos (miedo, evitación, contexto) y se establece un sistema simple de seguimiento.",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Diseño de fricción (hacer fácil lo bueno)",
+            "codigo": "m_pospsy_diseno_friccion",
+            "nombre": "Diseño de fricción (hacer fácil lo bueno)",
+            "texto": "Ajustar entorno y hábitos para bajar fricción (señales, recordatorios, preparación) y sostener prácticas sin depender de fuerza de voluntad.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -673,8 +732,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Construcción compartida de decisiones",
+            "codigo": "p_od_decisiones_compartidas",
+            "nombre": "Construcción compartida de decisiones",
+            "texto": "Procedimiento mediante el cual todas las decisiones clínicas relevantes —frecuencia de encuentros, uso de medicación, objetivos provisionales— se toman de forma dialogada con el paciente y su red. Esta co-decisión refuerza la agencia distribuida, reduce dinámicas de dependencia institucional y favorece la continuidad del compromiso terapéutico (Seikkula, 2006).",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -692,8 +752,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Micro-límites y elección relacional",
+            "codigo": "m_linares_limites",
+            "nombre": "Micro-límites y elección relacional",
+            "texto": "Propuesta breve para delimitar conducta y sostener elección: pedir pausa, formular petición concreta, decir no sin ataque, acordar tiempos y turnos.",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -709,15 +770,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Traducción metacognitiva a la acción",
+            "codigo": "p_mit_traduccion_accion",
+            "nombre": "Traducción metacognitiva a la acción",
+            "texto": "Procedimiento final orientado a ayudar al paciente a utilizar activamente su comprensión metacognitiva para guiar decisiones y acciones concretas en su vida cotidiana. La metacognición deja de ser solo reflexión y se convierte en una herramienta funcional para regular la conducta, sostener relaciones y prevenir recaídas (Dimaggio & Semerari, 2007; Dimaggio et al., 2015).",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Traducción de comprensión metacognitiva a elección",
+            "codigo": "m_mit_traduccion_eleccion",
+            "nombre": "Traducción de comprensión metacognitiva a elección",
+            "texto": "Micro final que invita al paciente a decidir cómo actuar de forma diferente basándose en una comprensión metacognitiva más rica, consolidando el paso de la reflexión a la acción consciente y flexible (Dimaggio et al., 2015).",
             "sub": "AG_tomaDecisiones"
           }
         ]
@@ -733,8 +796,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Tarea 4 – Fomento de la autonomía",
+            "codigo": "p_abft_autonomia",
+            "nombre": "Tarea 4 – Fomento de la autonomía",
+            "texto": "Promoción de independencia progresiva del adolescente desde una base segura, negociando límites y responsabilidades.",
             "sub": "AG_tomaDecisiones"
           }
         ],
@@ -751,20 +815,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Clarificación de valores vividos",
+            "codigo": "p_exist_valores",
+            "nombre": "Clarificación de valores vividos",
+            "texto": "Procedimiento para distinguir valores elegidos de mandatos, miedos o inercia, traduciéndolos a criterios prácticos de elección. Se orienta a construir coherencia entre identidad y acción, evitando que ‘valores’ queden como discursos bonitos sin conducta (Schneider, 2009).",
             "sub": "AG_tomaDecisiones"
           },
           {
-            "id": null,
-            "label": "Puntos de elección y responsabilidad",
+            "codigo": "p_exist_eleccion",
+            "nombre": "Puntos de elección y responsabilidad",
+            "texto": "Procedimiento que identifica micro-momentos donde el paciente elige (aunque sea por omisión) y explora costes/beneficios existenciales de cada vía. El foco no es culpabilizar, sino devolver agencia realista y capacidad de respuesta consciente frente a la propia vida (Schneider, Bugental & Pierson, 2015).",
             "sub": "AG_tomaDecisiones"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Preguntas de elección",
+            "codigo": "m_exist_preguntas_eleccion",
+            "nombre": "Preguntas de elección",
+            "texto": "Preguntas que revelan opciones donde el paciente vive fatalismo (“¿qué eliges hacer ahora?”, “¿qué estás evitando elegir?”). Devuelven agencia sin moralizar, abriendo posibilidad de respuesta consciente (Schneider, Bugental & Pierson, 2015).",
             "sub": "AG_tomaDecisiones"
           }
         ]

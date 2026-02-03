@@ -1,6 +1,6 @@
 {
   "subprocesoId": "R_sist_ciclos",
-  "updatedAt": "2026-02-03T10:20:29.600Z",
+  "updatedAt": "2026-02-03T10:28:30.257Z",
   "totalModelos": 10,
   "modelos": [
     {
@@ -13,25 +13,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Análisis de patrones circulares (bucles de feedback)",
+            "codigo": "p_bateson_feedback_loops",
+            "nombre": "Análisis de patrones circulares (bucles de feedback)",
+            "texto": "Procedimiento de lectura sistémica que reemplaza la causalidad lineal por circularidad: se identifica cómo cada respuesta de un miembro del sistema se convierte en estímulo para el otro, generando bucles que estabilizan o amplifican el problema. En clínica, esto se traduce en mapear secuencias repetidas (acción–reacción–acción) y localizar la ‘solución intentada’ que refuerza el ciclo.",
             "sub": "R_sist_ciclos"
           },
           {
-            "id": null,
-            "label": "Reencuadre sistémico (cambio de marco)",
+            "codigo": "p_bateson_reencuadre",
+            "nombre": "Reencuadre sistémico (cambio de marco)",
+            "texto": "Procedimiento de cambio de contexto interpretativo: una conducta deja de verse como ‘defecto individual’ y se entiende como función en el sistema (protección, señal, estabilización). El reencuadre reduce culpa/ataque y abre opciones de intervención sobre reglas y ciclos.",
             "sub": "R_sist_ciclos"
           },
           {
-            "id": null,
-            "label": "Hipótesis de función comunicacional del síntoma",
+            "codigo": "p_bateson_funcion_sintoma",
+            "nombre": "Hipótesis de función comunicacional del síntoma",
+            "texto": "Procedimiento para explorar qué regula el síntoma en el sistema: qué evita, qué organiza, qué mantiene unido o separado, qué jerarquía sostiene. No es ‘justificar’ el problema, sino entender por qué el sistema lo necesita para conservar equilibrio, y qué alternativa sería menos costosa.",
             "sub": "R_sist_ciclos"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Pregunta circular (quién hace qué después de qué)",
+            "codigo": "m_bateson_pregunta_circular",
+            "nombre": "Pregunta circular (quién hace qué después de qué)",
+            "texto": "Microintervención que desplaza el foco de ‘culpas’ a secuencias: se pregunta por orden temporal, reacciones y consecuencias. Hace visible la circularidad de forma inmediata y reduce la tendencia a explicaciones lineales.",
             "sub": "R_sist_ciclos"
           }
         ]
@@ -48,8 +52,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Pregunta de proceso (¿qué pasa entre vosotros cuando…?)",
+            "codigo": "m_bowen_pregunta_proceso",
+            "nombre": "Pregunta de proceso (¿qué pasa entre vosotros cuando…?)",
+            "texto": "Microintervención para desplazar el foco de contenido y culpables hacia secuencias interaccionales. Ayuda a que el consultante observe patrones repetidos y detecte triángulos, escaladas o retiradas. Es una herramienta rápida para salir del ‘drama’ y entrar en análisis funcional.",
             "sub": "R_sist_ciclos"
           }
         ]
@@ -65,15 +70,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Definición estratégica del problema",
+            "codigo": "p_strat_definicion_problema",
+            "nombre": "Definición estratégica del problema",
+            "texto": "El problema se define de forma operativa y observable, evitando explicaciones intrapsíquicas. Se describe la pauta concreta que se repite, quién participa y qué ocurre justo antes y después, preparando una intervención quirúrgica.",
             "sub": "R_sist_ciclos"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Bloqueo de solución intentada",
+            "codigo": "m_strat_bloqueo",
+            "nombre": "Bloqueo de solución intentada",
+            "texto": "Interrumpir explícitamente la respuesta habitual que mantiene el problema.",
             "sub": "R_sist_ciclos"
           }
         ]
@@ -90,8 +97,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Señalar circularidad",
+            "codigo": "m_mri_circularidad",
+            "nombre": "Señalar circularidad",
+            "texto": "Hacer visible cómo las respuestas de cada parte mantienen el problema.",
             "sub": "R_sist_ciclos"
           }
         ]
@@ -107,25 +115,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Formulación del ciclo psicodinámico-conductual",
+            "codigo": "p_wachtel_formulacionCiclo",
+            "nombre": "Formulación del ciclo psicodinámico-conductual",
+            "texto": "Procedimiento central de la Psicodinámica cíclica que consiste en construir de forma colaborativa un mapa explícito del ciclo auto-mantenido que vincula disparadores contextuales, anticipaciones, emociones, defensas, conductas y respuestas del entorno. El objetivo no es explicar el pasado de forma abstracta, sino mostrar cómo la persona, sin pretenderlo, recrea en el presente las condiciones que confirman sus expectativas relacionales. Esta formulación sirve como brújula clínica para decidir dónde intervenir (conducta, comunicación, exposición, contexto o elaboración emocional) y para transformar el insight en una guía operativa de cambio, evitando moralización o intelectualización. (Wachtel, 1977; Wachtel, 2008)",
             "sub": "R_sist_ciclos"
           },
           {
-            "id": null,
-            "label": "Intervención conductual estratégica para romper el bucle",
+            "codigo": "p_wachtel_intervencionEstrategica",
+            "nombre": "Intervención conductual estratégica para romper el bucle",
+            "texto": "Procedimiento que consiste en seleccionar de manera estratégica un punto concreto del ciclo donde una modificación conductual sea viable y tenga alto impacto clínico, como cambiar el timing, el tono emocional, la forma de pedir, el establecimiento de límites o el patrón de retirada y acercamiento. La nueva respuesta se ensaya, se ajusta y se sostiene el tiempo suficiente para que el sistema relacional responda de forma distinta, debilitando así la retroalimentación que mantenía el patrón problemático. (Wachtel, 1977; Wachtel, 2008)",
             "sub": "R_sist_ciclos"
           },
           {
-            "id": null,
-            "label": "Prevención de recaídas como “re-entrada al ciclo”",
+            "codigo": "p_wachtel_prevencionRecaidas",
+            "nombre": "Prevención de recaídas como “re-entrada al ciclo”",
+            "texto": "Procedimiento que redefine la recaída no como fracaso personal, sino como re-entrada predecible en el ciclo aprendido, enseñando a reconocer señales tempranas —sensaciones corporales, pensamientos, impulsos y estilos comunicativos— y a aplicar planes de interrupción concretos. Se normalizan las oscilaciones y se pone el foco en retomar elecciones distintas con rapidez, evitando culpa y fortaleciendo la sensación de agencia sostenida. (Wachtel, 2011; Wachtel, 2008)",
             "sub": "R_sist_ciclos"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Nombrar el ciclo en una frase",
+            "codigo": "m_wachtel_fraseCiclo",
+            "nombre": "Nombrar el ciclo en una frase",
+            "texto": "Microintervención de síntesis clínica que condensa el patrón relacional auto-mantenido en una formulación breve, clara y recordable (por ejemplo, “cuando temo rechazo, me protejo atacando y el otro se aleja, confirmándolo”), con el objetivo de aumentar conciencia en vivo y facilitar que el paciente reconozca el bucle mientras ocurre. Esta formulación no busca simplificar en exceso, sino ofrecer un anclaje cognitivo-práctico que permita interrumpir el ciclo antes de que se complete automáticamente. (Wachtel, 2008)",
             "sub": "R_sist_ciclos"
           }
         ]
@@ -141,8 +153,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Formulación multimodal de mantenimiento (cadena por modalidades)",
+            "codigo": "p_lazarus_formulacion_mantenimiento",
+            "nombre": "Formulación multimodal de mantenimiento (cadena por modalidades)",
+            "texto": "Procedimiento de conceptualización que integra la información BASIC-ID en una formulación de mantenimiento: cómo se conectan conducta, emoción, sensaciones, imágenes, cogniciones, patrones interpersonales y factores biológicos para sostener el problema en bucles de retroalimentación. Se identifican disparadores típicos, respuestas automáticas y consecuencias que refuerzan el patrón, de modo que la formulación no sea solo descriptiva sino utilizable para seleccionar técnicas específicas y anticipar obstáculos de recaída. (Lazarus, 1989)",
             "sub": "R_sist_ciclos"
           }
         ],
@@ -159,20 +172,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Hipótesis sistémico-semánticas y circularidad",
+            "codigo": "p_ugazio_hipotesisCircularidad",
+            "nombre": "Hipótesis sistémico-semánticas y circularidad",
+            "texto": "Procedimiento que formula hipótesis en términos de circularidad relacional y semántica: cómo las conductas de cada miembro confirman el campo de significados y cómo el campo, a su vez, organiza las conductas. Se usan preguntas circulares para mostrar que el problema no reside en un individuo, sino en bucles de retroalimentación que sostienen posiciones polarizadas (“cuanto más uno controla, más el otro busca libertad, y cuanto más busca libertad, más aumenta el control”). El objetivo es aumentar metacognición relacional y abrir puntos de intervención donde introducir nuevas respuestas y significados. (Ugazio, 2013)",
             "sub": "R_sist_ciclos"
           },
           {
-            "id": null,
-            "label": "Reformulación semántica del síntoma",
+            "codigo": "p_ugazio_reformulacionSintoma",
+            "nombre": "Reformulación semántica del síntoma",
+            "texto": "Procedimiento que reubica el síntoma como una solución coherente dentro del campo semántico familiar (una forma de mantener pertenencia, evitar dilemas o estabilizar posiciones), reduciendo culpa y resistencia. Se reformula el problema en términos de función semántico-relacional: qué protege, qué evita, qué equilibra y qué define identitariamente. Esta reformulación no trivializa el sufrimiento; lo hace inteligible y transformable, creando una explicación plausible que habilita cambios sin amenaza identitaria masiva. (Ugazio, 2013)",
             "sub": "R_sist_ciclos"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Preguntas circulares de significado",
+            "codigo": "m_ugazio_preguntasCirculares",
+            "nombre": "Preguntas circulares de significado",
+            "texto": "Uso de preguntas que conectan conductas, significados y reacciones de los otros (“cuando tú te colocas aquí, ¿qué significado toma el otro y cómo responde?”), aumentando conciencia de circularidad y reduciendo atribuciones lineales. (Ugazio, 2013)",
             "sub": "R_sist_ciclos"
           }
         ]
@@ -188,8 +204,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Mapeo y externalización del ciclo negativo",
+            "codigo": "p_eft_ciclo",
+            "nombre": "Mapeo y externalización del ciclo negativo",
+            "texto": "Procedimiento central de la fase inicial de EFT-C que identifica y nombra el patrón interactivo negativo que mantiene el malestar de la pareja. El terapeuta ayuda a que ambos miembros reconozcan cómo sus reacciones emocionales se encadenan en una danza relacional predecible, desplazando la culpa desde las personas hacia el ciclo. Esta externalización reduce defensividad, aumenta alianza y crea una base compartida para el cambio (Johnson, 2004).",
             "sub": "R_sist_ciclos"
           }
         ],
@@ -206,25 +223,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Mapa de ciclos relacionales (secuencia acción–reacción)",
+            "codigo": "p_linares_ciclos",
+            "nombre": "Mapa de ciclos relacionales (secuencia acción–reacción)",
+            "texto": "Procedimiento estructurado para identificar secuencias repetitivas que mantienen el problema (escalada, retirada, persecución–huida, sobreprotección–incompetencia, etc.). Se dibuja o verbaliza la cadena de eventos, se localizan puntos de inflexión y se reformulan funciones relacionales del síntoma para abrir alternativas de interrupción del ciclo.",
             "sub": "R_sist_ciclos"
           },
           {
-            "id": null,
-            "label": "Trabajo sobre triangulaciones y alianzas",
+            "codigo": "p_linares_triangulos",
+            "nombre": "Trabajo sobre triangulaciones y alianzas",
+            "texto": "Identificación de coaliciones, triangulaciones y desplazamientos de conflicto (p. ej., pareja–hijo). Se reorganiza la comunicación para devolver la responsabilidad al subsistema adecuado y facilitar reparación directa, evitando que el síntoma sostenga equilibrio disfuncional.",
             "sub": "R_sist_ciclos"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Señalar el bucle en tiempo real",
+            "codigo": "m_linares_bucle",
+            "nombre": "Señalar el bucle en tiempo real",
+            "texto": "Microseñalamiento en sesión: nombrar la secuencia que está ocurriendo (persecución–huida, crítica–defensa, etc.) justo cuando emerge, para crear distancia reflexiva y abrir elección.",
             "sub": "R_sist_ciclos"
           },
           {
-            "id": null,
-            "label": "Reformulación relacional del síntoma",
+            "codigo": "m_linares_reformulacion",
+            "nombre": "Reformulación relacional del síntoma",
+            "texto": "Reencuadre breve: el síntoma como solución del sistema, señal o intento de regulación vincular. Reduce culpa y abre posibilidades de intervención en el patrón.",
             "sub": "R_sist_ciclos"
           }
         ]
@@ -241,8 +262,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Externalizar el patrón, no al hijo",
+            "codigo": "m_abft_externalizar",
+            "nombre": "Externalizar el patrón, no al hijo",
+            "texto": "Separar al adolescente del problema relacional para reducir culpabilización y aumentar cooperación.",
             "sub": "R_sist_ciclos"
           }
         ]

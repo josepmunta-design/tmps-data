@@ -1,6 +1,6 @@
 {
   "subprocesoId": "RE_rotulacion",
-  "updatedAt": "2026-02-03T10:20:29.600Z",
+  "updatedAt": "2026-02-03T10:28:30.257Z",
   "totalModelos": 34,
   "modelos": [
     {
@@ -14,13 +14,15 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Doblaje",
+            "codigo": "m_psdrama_doblaje",
+            "nombre": "Doblaje",
+            "texto": "Intervención en la que el terapeuta o un auxiliar verbaliza emociones o pensamientos implícitos del protagonista. Facilita la toma de conciencia emocional, la validación interna y el acceso a experiencias afectivas no expresadas (Moreno, 1953).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Soliloquio",
+            "codigo": "m_psdrama_soliloquio",
+            "nombre": "Soliloquio",
+            "texto": "Técnica que invita al protagonista a verbalizar en voz alta su diálogo interno durante la escena. Facilita clarificación emocional, integración cognitiva y coherencia del self (Moreno, 1946).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -36,40 +38,47 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Interpretación de posiciones esquizo-paranoide y depresiva",
+            "codigo": "p_klein_posiciones",
+            "nombre": "Interpretación de posiciones esquizo-paranoide y depresiva",
+            "texto": "Procedimiento de formulación y señalamiento clínico de la posición predominante en el momento (escisión y persecución vs integración y preocupación), ayudando a identificar oscilaciones, disparadores y costes; se nombra el patrón de organización (por ejemplo, idealización/devaluación, certeza persecutoria, culpa global), se lo vincula con afectos presentes y se orienta a ampliar la capacidad de sostener ambivalencia, facilitando integración del self y del objeto.",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Evaluación funcional de defensas (ansiedad → defensa → alivio → coste)",
+            "codigo": "p_klein_eval_funcional_defensas",
+            "nombre": "Evaluación funcional de defensas (ansiedad → defensa → alivio → coste)",
+            "texto": "Procedimiento de lectura funcional y no moralizante que identifica qué ansiedad específica dispara una defensa (persecutoria, pérdida, culpa, dependencia), cómo la defensa alivia a corto plazo (control, distancia, certeza, superioridad) y qué coste produce a medio plazo (fragmentación, conflicto, vacío, ataque al vínculo); el terapeuta construye con el paciente una secuencia repetitiva observable en sesión (y fuera) para que la defensa deje de vivirse como “yo soy así” y pase a verse como una solución protectora que puede flexibilizarse.",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Interpretación de ansiedad persecutoria y su lógica",
+            "codigo": "p_klein_ansiedad_persecutoria",
+            "nombre": "Interpretación de ansiedad persecutoria y su lógica",
+            "texto": "Procedimiento centrado en hacer explícita la experiencia de amenaza interna (ser atacado, invadido, aniquilado, controlado) que sostiene vigilancia, hostilidad o retraimiento; se describe la secuencia disparador-fantasía-afecto-defensa, se valida la vivencia sin asumir su literalidad externa y se orienta a ampliar la tolerancia a la incertidumbre, reduciendo el recurso automático a proyección y control omnipotente.",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Anclar interpretación a un afecto observable",
+            "codigo": "m_klein_anclar_afecto",
+            "nombre": "Anclar interpretación a un afecto observable",
+            "texto": "Antes de interpretar fantasía o defensa, el terapeuta nombra el afecto visible (tensión, urgencia, frialdad, enojo) y pide una verificación mínima, aumentando la tolerancia del paciente a sentir y reduciendo la vivencia de interpretación como invasión.",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Poner en palabras la ansiedad persecutoria (amenaza interna concreta)",
+            "codigo": "m_klein_poner_palabras_persecutoria",
+            "nombre": "Poner en palabras la ansiedad persecutoria (amenaza interna concreta)",
+            "texto": "Microintervención de etiquetado muy concreto (sin teoría) que traduce la activación en una frase experiencial (“ahora mismo suena a que viene un ataque / a que te van a invadir / a que te van a humillar”), para que el paciente pueda reconocer la ansiedad persecutoria como estado interno y no como certeza externa, reduciendo la escalada defensiva automática.",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Reformular la envidia como vulnerabilidad (sin justificar el ataque)",
+            "codigo": "m_klein_envidia_a_vulnerabilidad",
+            "nombre": "Reformular la envidia como vulnerabilidad (sin justificar el ataque)",
+            "texto": "Microintervención que identifica el núcleo vulnerable de la envidia (dolor por sentir que lo bueno está fuera o es inaccesible) y lo separa del impulso destructivo, permitiendo reconocer deseo, dependencia y pérdida sin convertirlo en ataque al objeto o en auto-desprecio.",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Microseñalar formación reactiva (cuidar/ser correcto para tapar hostilidad)",
+            "codigo": "m_klein_formacion_reactiva",
+            "nombre": "Microseñalar formación reactiva (cuidar/ser correcto para tapar hostilidad)",
+            "texto": "Microintervención que detecta un gesto de corrección excesiva, amabilidad rígida o complacencia que encubre agresión, envidia o resentimiento; el terapeuta lo formula como protección frente a culpa persecutoria, ayudando a reconocer la ambivalencia sin colapso ni actuación destructiva.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -85,8 +94,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Análisis funcional de defensas del yo",
+            "codigo": "p_hartmann_defensas_funcionales",
+            "nombre": "Análisis funcional de defensas del yo",
+            "texto": "Procedimiento que examina las defensas no como patología en sí mismas, sino como intentos adaptativos del yo para manejar tensiones; se evalúa su adecuación al contexto y se promueve una transición hacia defensas más maduras y flexibles.",
             "sub": "RE_rotulacion"
           }
         ],
@@ -103,15 +113,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Exploración de ansiedad básica (Horney)",
+            "codigo": "p_neopsy_ansiedad_basica_horney",
+            "nombre": "Exploración de ansiedad básica (Horney)",
+            "texto": "Intervención orientada a identificar la ansiedad básica como sensación de desamparo e inseguridad relacional, diferenciándola de emociones secundarias (rabia, frialdad, superioridad) y conectándola con experiencias de invalidación, hostilidad o inconsistencia; se trabaja nombrando señales somáticas y cognitivas, y creando un marco de seguridad para que el paciente pueda sentirla sin activar de inmediato operaciones defensivas.",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Localizar la amenaza primaria bajo la reacción",
+            "codigo": "m_neopsy_amenaza_primaria",
+            "nombre": "Localizar la amenaza primaria bajo la reacción",
+            "texto": "Intervención breve que pregunta y refleja qué amenaza interpersonal se activa (rechazo, humillación, control, abandono) para que el paciente conecte emoción con contexto y deje de actuar la defensa como si fuese identidad.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -128,8 +140,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Reflejo de sentimiento",
+            "codigo": "m_axline_reflejo",
+            "nombre": "Reflejo de sentimiento",
+            "texto": "Intervención empática que pone palabras sencillas a la emoción que el niño expresa en el juego o en su conducta. Facilita reconocimiento emocional, validación interna y desarrollo de conciencia afectiva (Axline, 1947).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -145,15 +158,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Detección y reducción de ansiedad interpersonal",
+            "codigo": "p_sullivan_ansiedad_interpersonal",
+            "nombre": "Detección y reducción de ansiedad interpersonal",
+            "texto": "Procedimiento orientado a identificar señales tempranas de ansiedad vinculada a amenaza de rechazo o desaprobación y a modularla mediante clarificación, ritmo y co-regulación, evitando que el paciente recurra automáticamente a operaciones de seguridad.",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Nombrar ansiedad interpersonal en el momento",
+            "codigo": "m_sullivan_nombrar_ansiedad",
+            "nombre": "Nombrar ansiedad interpersonal en el momento",
+            "texto": "Microintervención que pone palabras claras y descriptivas a la ansiedad que emerge en la interacción (“aquí parece aparecer miedo a ser rechazado”), ayudando a que el paciente la reconozca como estado relacional y no como defecto personal, reduciendo reactividad inmediata.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -170,8 +185,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Reflejo simple de estado (sin exigir explicación)",
+            "codigo": "m_winn_reflejo_simple_estado",
+            "nombre": "Reflejo simple de estado (sin exigir explicación)",
+            "texto": "Intervención breve que nombra lo evidente (“esto pesa”, “hay tensión”, “te noto lejos”) sin pedir justificación ni análisis, facilitando contacto con la experiencia y disminuyendo la presión de rendimiento que alimenta el cumplimiento defensivo.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -188,8 +204,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Vocalización emocional",
+            "codigo": "m_bioenergetico_vocalizacion",
+            "nombre": "Vocalización emocional",
+            "texto": "Uso de la voz como vía de expresión emocional directa, permitiendo que sonidos y palabras emerjan desde la experiencia corporal. Favorece integración emoción-cuerpo y reducción de inhibiciones expresivas (Lowen, 1975).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -206,8 +223,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo de contradicción (doble mensaje)",
+            "codigo": "m_bateson_chequeo_contradiccion",
+            "nombre": "Chequeo de contradicción (doble mensaje)",
+            "texto": "Invitar a notar una incongruencia entre palabras, tono y acción sin acusar: ‘una parte dice X y otra parece decir Y’. Facilita metacomunicación y reduce confusión relacional.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -223,8 +241,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Lenguaje sugestivo y ambiguo",
+            "codigo": "p_erickson_lenguaje",
+            "nombre": "Lenguaje sugestivo y ambiguo",
+            "texto": "Uso deliberado de ambigüedad, presuposiciones y estructuras lingüísticas que permiten múltiples interpretaciones, facilitando que el paciente construya su propia solución sin imposición directa.",
             "sub": "RE_rotulacion"
           }
         ],
@@ -241,25 +260,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Evaluación de la capacidad de pensar y de la función alfa",
+            "codigo": "p_bion_funcion_alfa_evaluacion",
+            "nombre": "Evaluación de la capacidad de pensar y de la función alfa",
+            "texto": "Procedimiento clínico orientado a evaluar si la experiencia emocional del paciente puede transformarse en pensamiento o si es evacuada en forma de acting, somatización o confusión, observando tolerancia a la frustración, uso del lenguaje simbólico y calidad del sueño y del soñar, lo que permite inferir el grado de funcionamiento de la función alfa (Bion, 1962, *Learning from Experience*).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Identificación y metabolización de elementos beta",
+            "codigo": "p_bion_elementos_beta",
+            "nombre": "Identificación y metabolización de elementos beta",
+            "texto": "Procedimiento orientado a detectar manifestaciones de elementos beta —sensaciones, imágenes o impulsos no pensados— y a transformarlos progresivamente en elementos alfa mediante contención y simbolización, reduciendo la necesidad de evacuación defensiva y favoreciendo el desarrollo del pensamiento (Bion, 1962, *Learning from Experience*).",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Nombrar confusión emocional sin interpretarla",
+            "codigo": "m_bion_nombrar_confusion",
+            "nombre": "Nombrar confusión emocional sin interpretarla",
+            "texto": "Microintervención que pone palabras sencillas a estados de confusión, saturación o caos emocional sin intentar explicarlos ni darles sentido inmediato, permitiendo que la experiencia sea sostenida y contenida antes de ser pensada, evitando evacuaciones defensivas (Bion, 1962, *Learning from Experience*).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Nombrar ausencia de pensamiento",
+            "codigo": "m_bion_ausencia_pensar",
+            "nombre": "Nombrar ausencia de pensamiento",
+            "texto": "Intervención mínima que señala la dificultad para pensar o simbolizar una experiencia concreta, legitimando el no saber como punto de partida del aprendizaje emocional y reduciendo vergüenza o autoataque (Bion, 1962, *Learning from Experience*).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -276,8 +299,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Expresión emocional en primera persona",
+            "codigo": "m_encuentro_emocion",
+            "nombre": "Expresión emocional en primera persona",
+            "texto": "Invitación a expresar emociones propias desde la experiencia inmediata, evitando interpretaciones o juicios sobre los demás. Favorece autenticidad, claridad emocional y congruencia interna (Rogers, 1961).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -293,25 +317,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Detección clínica de la falla básica",
+            "codigo": "p_balint_falla_basica_deteccion",
+            "nombre": "Detección clínica de la falla básica",
+            "texto": "Procedimiento diagnóstico-clínico orientado a identificar indicadores de falla básica —sensación persistente de carencia, hipersensibilidad a la frustración, expectativas implícitas de decepción, demandas relacionales difusas o retirada protectora— diferenciándolos de conflictos neuróticos clásicos; el terapeuta observa patrones repetidos en episodios concretos y en la transferencia, formulando hipótesis parciales que se contrastan con la experiencia inmediata para reducir confusión y orientar el encuadre hacia sostén y ajuste.",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Trabajo con somatización como vía relacional",
+            "codigo": "p_balint_somatizacion_vincular",
+            "nombre": "Trabajo con somatización como vía relacional",
+            "texto": "Procedimiento que comprende los síntomas corporales como formas de comunicación de necesidad y frustración no simbolizadas, traduciendo el síntoma a experiencia emocional y relacional sin invalidar lo médico, y reduciendo la escalada de pruebas, visitas y cronificación del malestar.",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Nombrar la sensación de carencia sin interpretarla",
+            "codigo": "m_balint_nombrar_carencia",
+            "nombre": "Nombrar la sensación de carencia sin interpretarla",
+            "texto": "Microintervención que pone palabras simples a la vivencia de vacío, falta o insuficiencia (“aquí aparece una sensación de que algo falta”) sin explicarla ni buscar causas, permitiendo que la experiencia sea reconocida y sostenida sin activar defensas de queja, exigencia o retirada.",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Detectar activación temprana de frustración",
+            "codigo": "m_balint_detectar_frustracion",
+            "nombre": "Detectar activación temprana de frustración",
+            "texto": "Intervención breve que señala las primeras señales de frustración (tensión, impaciencia, ironía, queja sutil) antes de que escalen a demanda regresiva o acting, ayudando a mentalizar el estado y a mantenerlo dentro de una ventana tolerable.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -327,20 +355,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Evaluación del sistema de apego y sus activadores",
+            "codigo": "p_bowlby_evaluacion_sistema_apego",
+            "nombre": "Evaluación del sistema de apego y sus activadores",
+            "texto": "Procedimiento clínico orientado a identificar cómo y cuándo se activa el sistema de apego del paciente —ante amenaza, separación, rechazo o incertidumbre— observando reacciones emocionales, conductuales y cognitivas, así como estrategias habituales de búsqueda de proximidad o evitación; este análisis permite comprender el malestar actual como expresión adaptativa de un sistema motivacional primario más que como rasgo patológico (Bowlby, 1969, *Attachment*).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Observación del apego en el aquí-ahora relacional",
+            "codigo": "p_bowlby_apego_aqui_ahora",
+            "nombre": "Observación del apego en el aquí-ahora relacional",
+            "texto": "Intervención que analiza cómo el sistema de apego del paciente se activa dentro de la relación terapéutica —búsqueda de cercanía, pruebas, retirada, hipervigilancia— utilizando estas manifestaciones como material vivo para revisar expectativas relacionales y ofrecer experiencias correctivas en tiempo real (Bowlby, 1988, *A Secure Base*).",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Nombrar activación del sistema de apego",
+            "codigo": "m_bowlby_activar_apego",
+            "nombre": "Nombrar activación del sistema de apego",
+            "texto": "Microintervención que pone palabras claras a la activación del sistema de apego en el momento presente (miedo, urgencia, hipervigilancia, retirada), ayudando al paciente a reconocer la reacción como una respuesta adaptativa ante amenaza relacional y no como un fallo personal (Bowlby, 1969, *Attachment*).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -356,15 +387,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Exploración guiada de la experiencia inmediata",
+            "codigo": "p_exp_exploracion_inmediata",
+            "nombre": "Exploración guiada de la experiencia inmediata",
+            "texto": "Seguimiento minucioso de lo que el cliente siente en el momento presente (emociones, sensaciones, impulsos), ayudando a diferenciar y poner palabras a la experiencia en desarrollo.",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo de resonancia",
+            "codigo": "m_exp_resonancia",
+            "nombre": "Chequeo de resonancia",
+            "texto": "Comprobar si una formulación o reflejo encaja corporalmente con la experiencia del cliente.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -381,18 +414,21 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Señalar repetición relacional sin acusar",
+            "codigo": "m_spb_senal_repeticion",
+            "nombre": "Señalar repetición relacional sin acusar",
+            "texto": "Intervención breve que identifica la repetición de expectativas y respuestas relacionales de forma descriptiva y no confrontativa, permitiendo que el paciente observe el patrón sin activar defensas excesivas (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Anclar interpretación a un afecto presente",
+            "codigo": "m_spb_anclar_afecto",
+            "nombre": "Anclar interpretación a un afecto presente",
+            "texto": "Microintervención que vincula cualquier interpretación al afecto observable en el momento, aumentando la probabilidad de insight emocional y evitando una comprensión meramente intelectual (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Diferenciar emoción primaria de defensa secundaria",
+            "codigo": "m_spb_emocion_vs_defensa",
+            "nombre": "Diferenciar emoción primaria de defensa secundaria",
+            "texto": "Intervención breve que ayuda a distinguir entre el afecto central del conflicto y las reacciones defensivas que lo cubren, facilitando un contacto emocional más directo y transformador (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -408,15 +444,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Identificación de déficits del self",
+            "codigo": "p_kohut_deficits_self",
+            "nombre": "Identificación de déficits del self",
+            "texto": "Procedimiento diagnóstico-clínico que evalúa fallas tempranas en las funciones selfobject —espejamiento, idealización y gemelaridad— responsables de fragmentación, vacío o hipersensibilidad narcisista, desplazando el foco del conflicto reprimido al déficit del desarrollo (Kohut, 1977, *The Restoration of the Self*).",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Nombrar necesidad selfobject activa",
+            "codigo": "m_kohut_necesidad_selfobject",
+            "nombre": "Nombrar necesidad selfobject activa",
+            "texto": "Intervención breve que pone palabras a la necesidad relacional activa (ser visto, idealizar, sentirse semejante), ayudando al paciente a reconocerla como legítima y evolutiva en lugar de vivenciarla como dependencia patológica (Kohut, 1977, *The Restoration of the Self*).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -432,20 +470,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Evaluación estructural de la personalidad",
+            "codigo": "p_kernberg_evaluacion_estructural",
+            "nombre": "Evaluación estructural de la personalidad",
+            "texto": "Procedimiento diagnóstico-clínico que determina el nivel de organización de la personalidad (neurótico, límite o psicótico) evaluando identidad, defensas predominantes y prueba de realidad, lo que permite orientar la indicación terapéutica y el encuadre técnico adecuado (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Clarificación sistemática del material clínico",
+            "codigo": "p_kernberg_clarificacion",
+            "nombre": "Clarificación sistemática del material clínico",
+            "texto": "Procedimiento básico que busca describir con precisión conductas, afectos y percepciones contradictorias del paciente, reduciendo confusión y preparando el terreno para intervenciones interpretativas más profundas (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Nombrar escisión activa en el aquí-ahora",
+            "codigo": "m_kernberg_nombrar_escision",
+            "nombre": "Nombrar escisión activa en el aquí-ahora",
+            "texto": "Microintervención que señala de forma descriptiva cuándo el paciente está percibiendo al self o al otro en términos totalmente buenos o totalmente malos, ayudándole a observar la escisión como un estado mental transitorio y no como una realidad objetiva (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -461,20 +502,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Análisis microsecuencial de interacción (aquí-ahora y fuera de sesión)",
+            "codigo": "p_wachtel_microsecuencia",
+            "nombre": "Análisis microsecuencial de interacción (aquí-ahora y fuera de sesión)",
+            "texto": "Procedimiento que descompone episodios concretos de interacción en micro-secuencias para identificar con precisión qué sintió, pensó, anticipó, hizo y comunicó cada parte, y cómo cada respuesta provocó la siguiente. Al ralentizar la escena, se hacen visibles automatismos que suelen vivirse como inevitables y se localizan puntos de bifurcación donde una respuesta mínima diferente podría haber cambiado la trayectoria del encuentro. Este análisis reduce culpa, aumenta conciencia procesual y prepara el terreno para ensayar alternativas más funcionales. (Wachtel, 2011; Wachtel, 2008)",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Entrenamiento de comunicación emocional con foco en el ciclo",
+            "codigo": "p_wachtel_comunicacionCiclo",
+            "nombre": "Entrenamiento de comunicación emocional con foco en el ciclo",
+            "texto": "Procedimiento que entrena formas de comunicación emocional directa y no acusatoria, ayudando al paciente a expresar necesidades, límites y afectos sin recurrir a estilos indirectos como la queja, el sarcasmo, la retirada o el ataque, que suelen mantener el ciclo. Se practican guiones breves, validación emocional y reparaciones relacionales para reducir malentendidos y crear transacciones cotidianas menos reactivas. (Wachtel, 2011; Wachtel, 2008)",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Rotulación de emoción antes de actuar",
+            "codigo": "m_wachtel_rotularAntes",
+            "nombre": "Rotulación de emoción antes de actuar",
+            "texto": "Microintervención que invita a identificar y nombrar la emoción dominante —vergüenza, miedo, rabia, anhelo— justo antes de la respuesta defensiva habitual, con el objetivo de ampliar la ventana de tolerancia emocional. Al introducir esta pausa de rotulación, se reduce la impulsividad, se modula la activación afectiva y se incrementa la probabilidad de elegir respuestas que no alimenten el ciclo relacional aprendido. (Wachtel, 2011)",
             "sub": "RE_rotulacion"
           }
         ]
@@ -490,20 +534,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Evaluación multimodal BASIC-ID (perfil inicial)",
+            "codigo": "p_lazarus_basicid_perfil",
+            "nombre": "Evaluación multimodal BASIC-ID (perfil inicial)",
+            "texto": "Procedimiento de evaluación estructurada que recoge información sistemática de las siete modalidades BASIC-ID (Conducta, Afecto, Sensación, Imaginación, Cognición, Interpersonal, Drogas/Biología) para identificar qué dominios están más implicados en el problema, cuáles actúan como mantenedores y qué recursos ya existen. El objetivo es construir un “mapa clínico” que evite reduccionismos (solo cognitivo, solo emocional, etc.) y permita diseñar un plan de intervención por modalidades, priorizando puntos de entrada de alto impacto y definiendo qué indicadores concretos señalarían mejoría. (Lazarus, 1976)",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Intervención en Afecto (A) mediante clarificación y regulación emocional",
+            "codigo": "p_lazarus_afecto_regulacion",
+            "nombre": "Intervención en Afecto (A) mediante clarificación y regulación emocional",
+            "texto": "Procedimiento que trabaja identificación, validación y modulación de emociones, detectando evitaciones afectivas y enseñando estrategias para sostener activación sin desbordarse (p. ej., rotulación precisa, tolerancia al malestar, exposición emocional breve cuando procede). No se trata de “hablar de emociones” como fin en sí mismo, sino de intervenir cuando el afecto es un mantenedor principal del problema o un bloqueador del cambio en otras modalidades. (Lazarus, 1989)",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Rotulación afectiva funcional",
+            "codigo": "m_lazarus_rotulacion_afecto",
+            "nombre": "Rotulación afectiva funcional",
+            "texto": "Microintervención que entrena la identificación precisa de emociones dominantes y secundarias, diferenciándolas de pensamientos o sensaciones corporales, para reducir confusión afectiva y reactividad. La claridad emocional facilita elecciones conductuales más ajustadas y reduce evitación emocional. (Lazarus, 1989)",
             "sub": "RE_rotulacion"
           }
         ]
@@ -520,8 +567,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Reflejo empático ampliado",
+            "codigo": "m_erskine_reflejoEmpatico",
+            "nombre": "Reflejo empático ampliado",
+            "texto": "Microintervención que devuelve al paciente su experiencia emocional integrando afecto, significado y necesidad relacional, mostrando una comprensión profunda más allá del contenido literal. Este reflejo empático favorece reconocimiento interno y fortalece la alianza terapéutica. (Erskine et al., 1999)",
             "sub": "RE_rotulacion"
           }
         ]
@@ -537,20 +585,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "OARS: Escucha reflexiva (Reflections)",
+            "codigo": "p_mi_oars_reflejos",
+            "nombre": "OARS: Escucha reflexiva (Reflections)",
+            "texto": "La escucha reflexiva devuelve al cliente el significado y el afecto de lo que dice, a menudo de forma más clara y organizada que su expresión original. En MI es una técnica estratégica: reduce resistencia, profundiza exploración y guía hacia change talk sin confrontación. El reflejo hace que el cliente se sienta entendido y, a la vez, orienta la conversación hacia lo que importa.",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Reflejos complejos (significado, emoción, intención)",
+            "codigo": "p_mi_reflejos_complejos",
+            "nombre": "Reflejos complejos (significado, emoción, intención)",
+            "texto": "Más allá del reflejo simple, los reflejos complejos añaden hipótesis cuidadosas sobre emoción, valor o intención, sin interpretar de forma intrusiva. Su poder está en que facilitan insight experiencial y ayudan a que el cliente encuentre lenguaje para su conflicto motivacional. Bien calibrados, generan ‘movimiento interno’ sin necesidad de confrontación.",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Reflejo de emoción (poner nombre al afecto subyacente)",
+            "codigo": "m_mi_reflejo_emocion",
+            "nombre": "Reflejo de emoción (poner nombre al afecto subyacente)",
+            "texto": "Nombrar la emoción implícita (‘suena a frustración / miedo / cansancio’) ayuda a que el cliente se entienda y baje la activación defensiva. También permite que el cambio se conecte con necesidades reales, no con argumentos abstractos. En muchos casos, este reflejo es el punto de giro hacia autenticidad.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -567,13 +618,15 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Moviola: pausa y zoom en el micro-momento",
+            "codigo": "m_guidano_moviola_zoom",
+            "nombre": "Moviola: pausa y zoom en el micro-momento",
+            "texto": "Microintervención dentro de la moviola que detiene el relato en un punto de densidad afectiva y realiza un “zoom” clínico sobre micro-segundos de experiencia (sensación corporal, impulso, emoción, pensamiento implícito), para que el paciente no lo explique sino que lo reexperimente con precisión. Esta pausa cambia el trabajo de ‘contar’ a ‘vivir’ y permite reconocer cómo el self se organiza en tiempo real para mantener continuidad (p. ej., cerrando, controlando, justificando o retirándose). (Guidano, 1991).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Nombrar la tonalidad emocional dominante",
+            "codigo": "m_guidano_rotular_tonalidad",
+            "nombre": "Nombrar la tonalidad emocional dominante",
+            "texto": "Microintervención que rotula con precisión la tonalidad afectiva que domina el episodio (vergüenza, humillación, vacío, amenaza, desamparo, indignación, etc.) y la vincula a la coherencia del self en ese momento, evitando etiquetas diagnósticas o moralizantes. El propósito es que el paciente reconozca el afecto como organizador del significado y no como ‘síntoma’ a eliminar, lo que facilita metaperspectiva y complejidad identitaria. (Guidano, 1991).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -590,8 +643,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo de resonancia emocional",
+            "codigo": "m_coh_chequeo_resonancia",
+            "nombre": "Chequeo de resonancia emocional",
+            "texto": "Micro destinada a verificar si una formulación o hipótesis realmente conecta con la experiencia emocional del paciente. Se observa lenguaje corporal, cambios afectivos y respuestas espontáneas para confirmar que el significado implícito está siendo tocado. Si no hay resonancia emocional, se ajusta la formulación, evitando falsas comprensiones cognitivas sin impacto terapéutico (Ecker et al., 2012).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -607,8 +661,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Preguntas abiertas y exploratorias (preguntar para comprender, no para dirigir)",
+            "codigo": "p_colab_preguntasAbiertas",
+            "nombre": "Preguntas abiertas y exploratorias (preguntar para comprender, no para dirigir)",
+            "texto": "Procedimiento basado en formular preguntas que invitan a ampliar descripción y comprensión sin empujar hacia una respuesta esperada, favoreciendo que el consultante descubra matices, significados emocionales y conexiones contextuales; estas preguntas funcionan como dispositivos generativos que facilitan claridad emocional y reflexión, manteniendo al cliente como autor del contenido y al terapeuta como facilitador del proceso. (Anderson & Goolishian, 1992; Anderson, 1997)",
             "sub": "RE_rotulacion"
           }
         ],
@@ -625,15 +680,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Identificación de rupturas de significado",
+            "codigo": "p_neim_rupturas_significado",
+            "nombre": "Identificación de rupturas de significado",
+            "texto": "Procedimiento destinado a identificar momentos vitales en los que el sistema de significados personales se ha visto desbordado, invalidado o fracturado, como pérdidas, traumas, migraciones, enfermedades o crisis existenciales. Estas rupturas suelen manifestarse como confusión, estancamiento narrativo o sufrimiento persistente. Detectarlas permite focalizar el trabajo terapéutico en los puntos donde el sentido se ha quebrado y la identidad ha quedado suspendida (Neimeyer, 2001; Neimeyer, 2016).",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Rotulación tentativa de significado",
+            "codigo": "m_neim_rotulacion_significado",
+            "nombre": "Rotulación tentativa de significado",
+            "texto": "Micro que propone de forma provisional palabras o frases que podrían capturar el significado emergente de una experiencia, siempre presentadas como hipótesis abiertas. Esta rotulación facilita simbolización emocional sin imponer interpretación, permitiendo que el cliente confirme, matice o rechace el encuadre propuesto (Neimeyer, 1995).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -649,20 +706,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Elicitación de voces dominantes y voces silenciadas",
+            "codigo": "p_hermans_vocesDominantesSilenciadas",
+            "nombre": "Elicitación de voces dominantes y voces silenciadas",
+            "texto": "Procedimiento focal para detectar qué voces monopolizan la narrativa (“la voz crítica”, “la voz exigente”, “la voz del deber”) y cuáles quedan inhibidas o invisibles (“la voz vulnerable”, “la voz que desea”, “la voz que pone límites”). Se exploran señales de activación (emocionales/corporales), beneficios del dominio (control, seguridad, pertenencia) y costes del silenciamiento (empobrecimiento identitario, rigidez, síntomas), abriendo espacio terapéutico para que voces inhibidas emerjan con seguridad y lenguaje propio. (Hermans, 1996; Hermans et al., 1992).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Diarios de voces y registro de activación (voice logging)",
+            "codigo": "p_hermans_diarioDeVoces",
+            "nombre": "Diarios de voces y registro de activación (voice logging)",
+            "texto": "Procedimiento de autoobservación estructurada en el que el paciente registra episodios cotidianos identificando: qué posición se activó, qué dijo, qué emoción apareció, qué desencadenante hubo y qué resultado produjo. Este “logging” incrementa conciencia de patrones, reduce fusión con voces automáticas y aporta material clínico concreto para intervenir, favoreciendo la generalización fuera de sesión. (Hermans, 1996).",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Localizar corporalmente la voz",
+            "codigo": "m_hermans_localizarVozCuerpo",
+            "nombre": "Localizar corporalmente la voz",
+            "texto": "Microintervención que explora cómo y dónde se manifiesta cada voz en el cuerpo (tensión, presión, calor, impulso), permitiendo distinguir posiciones no solo a nivel cognitivo sino también experiencial. Facilita acceso emocional sin sobreintelectualización y ayuda a modular activación cuando ciertas voces se activan de forma automática. (Hermans, 1996).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -678,15 +738,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Diario de gratitud / Tres cosas buenas",
+            "codigo": "p_pospsy_gratitud",
+            "nombre": "Diario de gratitud / Tres cosas buenas",
+            "texto": "Registro breve de experiencias positivas y su significado: qué ocurrió, qué hice yo, qué dice esto de mis recursos o de mis vínculos. Orientado a entrenar atención y memoria hacia señales de bienestar sin negar el malestar.",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Micro-rotulación de bienestar (poner nombre a lo bueno sin banalizar)",
+            "codigo": "m_pospsy_rotulacion_bienestar",
+            "nombre": "Micro-rotulación de bienestar (poner nombre a lo bueno sin banalizar)",
+            "texto": "Nombrar con precisión microestados positivos o neutros (calma, alivio, curiosidad, conexión) para aumentar discriminación emocional y contrapesar el sesgo hacia amenaza.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -702,15 +764,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Coherencia experiencial: contrastar narrativas con experiencia vivida",
+            "codigo": "p_feixas_coherenciaExperiencial",
+            "nombre": "Coherencia experiencial: contrastar narrativas con experiencia vivida",
+            "texto": "Procedimiento que asegura que la reconstrucción del significado no se quede en discurso: se exploran sensaciones, emociones y resonancias corporales asociadas a una narrativa o a una alternativa emergente, comprobando si “encaja” experiencialmente o si es un cambio defensivo; se afina el lenguaje emocional, se identifican señales de amenaza/vergüenza y se ajusta el ritmo para que la nueva comprensión sea integrada, regulada y sostenida, evitando pseudo-cambio cognitivo desconectado del self. (Guidano, 1991; Feixas, 2004)",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Rotulación emocional fina",
+            "codigo": "m_feixas_rotulacionEmocional",
+            "nombre": "Rotulación emocional fina",
+            "texto": "Ayuda a precisar emociones complejas o mezcladas (vergüenza, culpa, miedo, alivio) asociadas a la revisión de significados, mejorando regulación afectiva y coherencia experiencial durante el proceso de cambio. (Guidano, 1991; Feixas, 2004)",
             "sub": "RE_rotulacion"
           }
         ]
@@ -726,15 +790,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Escucha dialógica y polifonía de voces",
+            "codigo": "p_od_escucha_polifonica",
+            "nombre": "Escucha dialógica y polifonía de voces",
+            "texto": "Procedimiento clínico que prioriza la escucha activa, lenta y receptiva de todas las voces presentes, sin jerarquizar unas sobre otras ni buscar coherencia prematura. La polifonía permite que experiencias contradictorias coexistan sin ser corregidas, facilitando la simbolización progresiva del sufrimiento. El terapeuta escucha no solo contenidos, sino tonos emocionales, silencios y resonancias relacionales (Seikkula, 2006; Olson et al., 2014).",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Nombrar la emoción emergente",
+            "codigo": "m_od_rotulacion_emocional",
+            "nombre": "Nombrar la emoción emergente",
+            "texto": "Microintervención que pone palabras tentativas a emociones que emergen en el aquí y ahora del diálogo, siempre de forma abierta y no conclusiva. El terapeuta utiliza formulaciones suaves (“suena a que esto da miedo…”) que facilitan reconocimiento emocional sin imponer significado, promoviendo mentalización y regulación compartida (Seikkula, 2006).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -751,8 +817,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Nombrar la experiencia emergente",
+            "codigo": "m_aedp_rotulacion",
+            "nombre": "Nombrar la experiencia emergente",
+            "texto": "Ayuda a identificar y poner palabras a emociones emergentes en tiempo real, favoreciendo regulación y claridad.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -769,8 +836,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Rotulación emocional situada",
+            "codigo": "m_linares_rotulacion",
+            "nombre": "Rotulación emocional situada",
+            "texto": "Nombrar emoción con precisión en el contexto interpersonal (“esto suena a miedo a perderte”, “esto parece vergüenza”). Mejora claridad y baja escalada.",
             "sub": "RE_rotulacion"
           }
         ]
@@ -786,20 +854,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Identificación y clarificación de estados mentales",
+            "codigo": "p_mit_identificacion_estados",
+            "nombre": "Identificación y clarificación de estados mentales",
+            "texto": "Procedimiento orientado a mejorar la capacidad del paciente para reconocer y diferenciar sus propios estados mentales, especialmente emociones y pensamientos que suelen aparecer confusos, indiferenciados o evitados. El terapeuta facilita un lenguaje emocional preciso y una exploración experiencial gradual, fortaleciendo la base necesaria para una reflexión metacognitiva más compleja (Dimaggio et al., 2015).",
             "sub": "RE_rotulacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Chequeo de estados mentales propios",
+            "codigo": "m_mit_chequeo_estados_propios",
+            "nombre": "Chequeo de estados mentales propios",
+            "texto": "Microintervención que invita al paciente a identificar y nombrar con precisión qué está sintiendo y pensando en el momento presente, diferenciando emoción, pensamiento y sensación corporal. El terapeuta utiliza preguntas simples y concretas para fortalecer la conciencia metacognitiva básica y reducir la confusión afectiva característica de muchos pacientes con déficits metacognitivos (Dimaggio & Semerari, 2007).",
             "sub": "RE_rotulacion"
           },
           {
-            "id": null,
-            "label": "Diferenciación emoción–pensamiento",
+            "codigo": "m_mit_diferenciacion_emocion_pensamiento",
+            "nombre": "Diferenciación emoción–pensamiento",
+            "texto": "Micro destinada a ayudar al paciente a distinguir entre lo que siente y lo que piensa acerca de lo que siente, evitando fusiones típicas como vivir las interpretaciones como hechos. Esta diferenciación mejora la regulación emocional y constituye un prerrequisito para niveles metacognitivos más complejos (Dimaggio et al., 2015).",
             "sub": "RE_rotulacion"
           }
         ]
@@ -816,8 +887,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Explorar aislamiento y contacto",
+            "codigo": "m_exist_aislamiento_contacto",
+            "nombre": "Explorar aislamiento y contacto",
+            "texto": "Intervención breve que diferencia soledad existencial, retraimiento defensivo y necesidad legítima de vínculo, clarificando qué tipo de contacto se busca y qué se teme del otro. Aumenta precisión emocional e interpersonal (Yalom, 1980).",
             "sub": "RE_rotulacion"
           }
         ]

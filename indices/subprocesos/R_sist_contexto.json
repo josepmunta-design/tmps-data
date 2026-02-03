@@ -1,6 +1,6 @@
 {
   "subprocesoId": "R_sist_contexto",
-  "updatedAt": "2026-02-03T10:20:29.600Z",
+  "updatedAt": "2026-02-03T10:28:30.257Z",
   "totalModelos": 10,
   "modelos": [
     {
@@ -13,20 +13,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Entrenamiento en tareas de vida",
+            "codigo": "p_adler_tareas_vida",
+            "nombre": "Entrenamiento en tareas de vida",
+            "texto": "Este procedimiento organiza el cambio en torno a las tareas de vida adlerianas (vínculos, trabajo/contribución y comunidad), definiendo conductas observables de cooperación, participación y responsabilidad para consolidar pertenencia y sentido.",
             "sub": "R_sist_contexto"
           },
           {
-            "id": null,
-            "label": "Trabajo educativo con familia y contexto",
+            "codigo": "p_adler_educacion_social",
+            "nombre": "Trabajo educativo con familia y contexto",
+            "texto": "En su vertiente educativa, la intervención incorpora psicoeducación y reencuadres dirigidos a padres, escuela o entorno cuando procede, orientados a fomentar cooperación, límites consistentes y prácticas que refuercen interés social y responsabilidad.",
             "sub": "R_sist_contexto"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Tarea de interés social",
+            "codigo": "m_adler_tarea_interes_social",
+            "nombre": "Tarea de interés social",
+            "texto": "Se acuerda una acción concreta de cooperación o contribución en el entorno (familia, trabajo, comunidad) para consolidar pertenencia real y debilitar el estilo de vida centrado en superioridad defensiva o retirada.",
             "sub": "R_sist_contexto"
           }
         ]
@@ -42,8 +45,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Generalización y cierre",
+            "codigo": "p_fft_generalizacion",
+            "nombre": "Generalización y cierre",
+            "texto": "Transferencia de habilidades a escuela, justicia y comunidad y prevención de recaídas.",
             "sub": "R_sist_contexto"
           }
         ],
@@ -60,8 +64,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Ajustes contextuales deliberados",
+            "codigo": "p_wachtel_ajustesContexto",
+            "nombre": "Ajustes contextuales deliberados",
+            "texto": "Procedimiento que identifica variables contextuales que sostienen el ciclo —rutinas, proximidad, roles, reglas implícitas, disponibilidad emocional o redes de apoyo— y planifica cambios realistas para modificar esas condiciones. Al ajustar el entorno, se reduce la frecuencia de activación del patrón y se facilita que las nuevas respuestas del paciente se consoliden con menor coste emocional y menor fricción relacional. (Wachtel, 1977; Wachtel, 2008)",
             "sub": "R_sist_contexto"
           }
         ],
@@ -78,25 +83,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Plan de tratamiento por modalidades (secuenciación estratégica)",
+            "codigo": "p_lazarus_plan_modalidades",
+            "nombre": "Plan de tratamiento por modalidades (secuenciación estratégica)",
+            "texto": "Procedimiento de diseño del tratamiento que traduce el perfil BASIC-ID en un plan secuenciado: qué modalidades se intervienen primero, qué técnicas se usarán en cada una y cómo se coordinarán entre sí para producir efectos en cascada. Se busca coherencia funcional (no “mezclar por mezclar”), definiendo tareas dentro y fuera de sesión, criterios de avance y ajustes contextuales que favorezcan generalización del cambio. (Lazarus, 1989)",
             "sub": "R_sist_contexto"
           },
           {
-            "id": null,
-            "label": "Intervención en Conducta (B) mediante activación y modificación de hábitos",
+            "codigo": "p_lazarus_conducta_habitos",
+            "nombre": "Intervención en Conducta (B) mediante activación y modificación de hábitos",
+            "texto": "Procedimiento orientado a cambiar patrones conductuales que mantienen el problema (evitación, inactividad, impulsividad, rituales, desorganización), introduciendo activación graduada, planificación, reforzamiento y cambios de rutina para generar experiencias correctivas rápidas. Se prioriza lo observable y repetible, porque pequeñas modificaciones sostenidas en conducta suelen producir mejoras en afecto, autoimagen y relaciones, alineándose con la lógica multimodal de efectos en cascada. (Lazarus, 1976)",
             "sub": "R_sist_contexto"
           },
           {
-            "id": null,
-            "label": "Prevención de recaídas y plan de mantenimiento multimodal",
+            "codigo": "p_lazarus_prevencion_recaidas",
+            "nombre": "Prevención de recaídas y plan de mantenimiento multimodal",
+            "texto": "Procedimiento de cierre y mantenimiento que identifica señales tempranas de recaída por modalidades (conductas de evitación, escalada afectiva, síntomas somáticos, imágenes intrusivas, cogniciones rígidas, conflictos interpersonales, deterioro de sueño/sustancias) y define acciones específicas para responder antes de que el patrón se reinstale. Se construye un plan realista con hábitos, apoyos y recordatorios que sostengan los cambios y reduzcan dependencia de la sesión. (Lazarus, 1989)",
             "sub": "R_sist_contexto"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Micro-ajuste contextual",
+            "codigo": "m_lazarus_ajuste_contextual",
+            "nombre": "Micro-ajuste contextual",
+            "texto": "Microintervención que introduce pequeños cambios en el entorno cotidiano (horarios, exposición a estímulos, apoyos, rutinas) para facilitar el uso de conductas nuevas y reducir fricción contextual, aumentando probabilidad de mantenimiento del cambio. (Lazarus, 1989)",
             "sub": "R_sist_contexto"
           }
         ]
@@ -112,25 +121,29 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Evaluación ecológica multisistémica y formulación funcional",
+            "codigo": "p_mst_formulacion_ecologica",
+            "nombre": "Evaluación ecológica multisistémica y formulación funcional",
+            "texto": "Análisis funcional del problema por dominios (familia, escuela, pares, comunidad, instituciones) identificando desencadenantes, consecuencias y reforzadores reales para priorizar focos de intervención.",
             "sub": "R_sist_contexto"
           },
           {
-            "id": null,
-            "label": "Intervención en escuela y rendimiento académico",
+            "codigo": "p_mst_escuela",
+            "nombre": "Intervención en escuela y rendimiento académico",
+            "texto": "Coordinación con centro educativo para asistencia, conducta, apoyos, adaptaciones y seguimiento, alineando expectativas entre familia y escuela.",
             "sub": "R_sist_contexto"
           },
           {
-            "id": null,
-            "label": "Interrupción de afiliación con pares antisociales y construcción de red prosocial",
+            "codigo": "p_mst_pares_red",
+            "nombre": "Interrupción de afiliación con pares antisociales y construcción de red prosocial",
+            "texto": "Reducción de exposición a pares de riesgo mediante cambios de rutinas y supervisión, y creación activa de alternativas prosociales (deporte, empleo, formación, mentores).",
             "sub": "R_sist_contexto"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Bloqueo de oportunidades de riesgo",
+            "codigo": "m_mst_bloqueo_riesgo",
+            "nombre": "Bloqueo de oportunidades de riesgo",
+            "texto": "Cambios inmediatos en rutinas/contexto para impedir acceso a situaciones de riesgo (lugares, horarios, transporte, dinero, compañía).",
             "sub": "R_sist_contexto"
           }
         ]
@@ -146,8 +159,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Intervención en el contexto extrafamiliar",
+            "codigo": "p_mdft_contexto",
+            "nombre": "Intervención en el contexto extrafamiliar",
+            "texto": "Coordinación con escuela, servicios sociales, justicia juvenil y otros sistemas relevantes.",
             "sub": "R_sist_contexto"
           }
         ],
@@ -164,8 +178,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Trabajo con contexto sociocultural del significado",
+            "codigo": "p_colab_contextoSociocultural",
+            "nombre": "Trabajo con contexto sociocultural del significado",
+            "texto": "Procedimiento que integra explícitamente los marcos culturales, institucionales y relacionales que influyen en cómo el consultante se narra y es narrado (familia, género, clase, migración, instituciones), evitando universalizar categorías y reconociendo dinámicas de poder en el lenguaje; este trabajo amplía opciones discursivas, reduce auto-culpabilización y hace que las alternativas construidas sean realistas y sostenibles en el entorno del cliente. (Anderson, 1997)",
             "sub": "R_sist_contexto"
           }
         ],
@@ -182,8 +197,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Tareas entre sesiones para consolidar nuevas posiciones",
+            "codigo": "p_ugazio_tareasContexto",
+            "nombre": "Tareas entre sesiones para consolidar nuevas posiciones",
+            "texto": "Procedimiento que diseña tareas específicas y realistas para probar nuevas posiciones del self fuera de sesión sin romper el sistema (p. ej., ensayar un límite, pedir apoyo sin quedar en dependencia, ceder control sin perder autoridad). Las tareas se plantean como experimentos semánticos: se observa qué significado aparece, cómo reacciona el entorno y qué ajustes son necesarios. Su función es traducir la flexibilización del campo semántico en conducta sostenida, consolidando agencia y reduciendo recaídas. (Ugazio, 2013)",
             "sub": "R_sist_contexto"
           }
         ],
@@ -200,8 +216,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Seguimiento adaptado al ritmo de la red",
+            "codigo": "p_od_seguimiento_red",
+            "nombre": "Seguimiento adaptado al ritmo de la red",
+            "texto": "Procedimiento que ajusta la frecuencia, duración y formato de los encuentros al ritmo y necesidades de la persona y su red, en lugar de seguir protocolos rígidos. Este ajuste continuo permite responder a cambios emergentes, sostener el diálogo en momentos críticos y favorecer la apropiación progresiva del proceso por parte de la red (Seikkula & Arnkil, 2017).",
             "sub": "R_sist_contexto"
           }
         ],
@@ -218,8 +235,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Movilización de apoyo y ajustes contextuales",
+            "codigo": "p_linares_apoyo_contexto",
+            "nombre": "Movilización de apoyo y ajustes contextuales",
+            "texto": "Procedimiento para incorporar recursos (red, figuras significativas, coordinaciones) y modificar condiciones del entorno (rutinas, distancias, normas explícitas) que sostienen el patrón. Traduce insight relacional en cambios sostenibles.",
             "sub": "R_sist_contexto"
           }
         ],

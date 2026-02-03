@@ -1,6 +1,6 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-03T10:20:29.600Z",
+  "updatedAt": "2026-02-03T10:28:30.257Z",
   "totalModelos": 17,
   "modelos": [
     {
@@ -13,15 +13,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Asociación libre y atención flotante",
+            "codigo": "p_freud_asociacion",
+            "nombre": "Asociación libre y atención flotante",
+            "texto": "Se invita al paciente a decir todo lo que le venga a la mente sin censura, incluyendo pensamientos irrelevantes, vergonzosos o contradictorios. El terapeuta escucha con atención flotante, buscando conexiones, desplazamientos, silencios y puntos de resistencia.",
             "sub": "AP_evocacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Invitar a asociar sin censura",
+            "codigo": "m_freud_invitarAsociar",
+            "nombre": "Invitar a asociar sin censura",
+            "texto": "Recordar activamente la regla fundamental de decir todo lo que venga a la mente para reducir la autocensura.",
             "sub": "AP_evocacion"
           }
         ]
@@ -38,13 +40,15 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Escena",
+            "codigo": "m_psdrama_escena",
+            "nombre": "Escena",
+            "texto": "Construcción explícita de una situación significativa que se representa en el escenario. Permite activar memorias emocionales, clarificar dinámicas relacionales y trabajar el conflicto en un formato visible y compartido (Moreno, 1946).",
             "sub": "AP_evocacion"
           },
           {
-            "id": null,
-            "label": "Doblaje",
+            "codigo": "m_psdrama_doblaje",
+            "nombre": "Doblaje",
+            "texto": "Intervención en la que el terapeuta o un auxiliar verbaliza emociones o pensamientos implícitos del protagonista. Facilita la toma de conciencia emocional, la validación interna y el acceso a experiencias afectivas no expresadas (Moreno, 1953).",
             "sub": "AP_evocacion"
           }
         ]
@@ -60,8 +64,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Técnica del juego como asociación libre infantil",
+            "codigo": "p_klein_tecnica_juego",
+            "nombre": "Técnica del juego como asociación libre infantil",
+            "texto": "Uso sistemático del juego, dibujos, muñecos, historias y escenas para que el niño (o el adulto en registros simbólicos equivalentes) exprese fantasías inconscientes, ansiedades y relaciones de objeto internas en forma dramatizada; el terapeuta observa temas repetitivos, roles persecutorios/idealizados, cambios afectivos y micro-enactments, y los utiliza para formular interpretaciones que conviertan la actuación simbólica en pensamiento y significado, facilitando simbolización y tolerancia afectiva.",
             "sub": "AP_evocacion"
           }
         ],
@@ -78,30 +83,35 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Facilitación del juego (playing) como mecanismo de cambio",
+            "codigo": "p_winn_facilitar_juego",
+            "nombre": "Facilitación del juego (playing) como mecanismo de cambio",
+            "texto": "Intervención que promueve el juego en sentido amplio (no solo infantil): experimentar, imaginar, ensayar significados y sentir sin quedar atrapado en literalidad; el terapeuta ayuda a que el paciente pueda jugar con su experiencia en lugar de defenderse de ella, favoreciendo simbolización, continuidad narrativa y una relación más viva consigo mismo y con el otro.",
             "sub": "AP_evocacion"
           },
           {
-            "id": null,
-            "label": "Fenómenos y objetos transicionales (identificación, uso y función clínica)",
+            "codigo": "p_winn_transicionales",
+            "nombre": "Fenómenos y objetos transicionales (identificación, uso y función clínica)",
+            "texto": "Procedimiento que explora cómo el paciente utiliza objetos, rutinas, ideas, música, símbolos o incluso elementos del vínculo terapéutico como soporte transicional para tolerar separación, ausencia y ambivalencia; se identifica la función reguladora y simbólica del fenómeno transicional, se protege su valor sin ridiculizarlo y se acompaña su evolución hacia formas más integradas de seguridad interna.",
             "sub": "AP_evocacion"
           },
           {
-            "id": null,
-            "label": "Juego del garabato (Squiggle Game) y co-creación simbólica",
+            "codigo": "p_winn_squiggle",
+            "nombre": "Juego del garabato (Squiggle Game) y co-creación simbólica",
+            "texto": "Técnica de trabajo simbólico co-creado (especialmente útil con niños, pero adaptable a adultos) donde terapeuta y paciente generan material a partir de trazos, imágenes o formas ambiguas; el foco es abrir el espacio potencial, permitir proyecciones creativas y construir significado compartido sin intrusión interpretativa, facilitando expresión emocional y elaboración narrativa.",
             "sub": "AP_evocacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Objeto transicional: identificar y legitimar su función",
+            "codigo": "m_winn_legitimar_transicional",
+            "nombre": "Objeto transicional: identificar y legitimar su función",
+            "texto": "Microintervención que reconoce el valor regulador y simbólico de un objeto o ritual (sin ridiculizarlo), conectándolo con separación y consuelo, para sostener autonomía afectiva sin ruptura del vínculo.",
             "sub": "AP_evocacion"
           },
           {
-            "id": null,
-            "label": "Squiggle mini: pedir una imagen rápida (adultos/niños)",
+            "codigo": "m_winn_squiggle_mini_imagen",
+            "nombre": "Squiggle mini: pedir una imagen rápida (adultos/niños)",
+            "texto": "Microintervención que solicita una imagen simple (dibujo, forma, elección de palabra-imagen) para desbloquear simbolización y juego cuando el discurso está capturado por el falso self o por intelectualización defensiva.",
             "sub": "AP_evocacion"
           }
         ]
@@ -118,13 +128,15 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Respiración profunda cíclica",
+            "codigo": "m_bioenergetico_respiracion",
+            "nombre": "Respiración profunda cíclica",
+            "texto": "Uso deliberado de la respiración profunda para aumentar la carga energética, movilizar emociones y debilitar defensas corporales rígidas. La respiración actúa como vía directa de acceso a la experiencia emocional (Lowen, 1958).",
             "sub": "AP_evocacion"
           },
           {
-            "id": null,
-            "label": "Golpeteo con exhalación",
+            "codigo": "m_bioenergetico_golpeteo",
+            "nombre": "Golpeteo con exhalación",
+            "texto": "Técnica expresiva que combina movimiento rítmico y exhalación para facilitar la descarga de emociones contenidas, especialmente rabia o frustración, de forma controlada y consciente (Lowen, 1958).",
             "sub": "AP_evocacion"
           }
         ]
@@ -140,8 +152,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Hipnosis indirecta y naturalista",
+            "codigo": "p_erickson_hipnosis_indirecta",
+            "nombre": "Hipnosis indirecta y naturalista",
+            "texto": "Procedimiento central de Erickson que induce estados hipnóticos sin ritual formal, utilizando conversación, metáforas y focalización atencional. Reduce resistencia y permite que el paciente viva la experiencia como natural y autoinducida.",
             "sub": "AP_evocacion"
           }
         ],
@@ -159,8 +172,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Invitaciones a habitar la emoción",
+            "codigo": "m_bugental_habitar",
+            "nombre": "Invitaciones a habitar la emoción",
+            "texto": "Intervenciones verbales suaves que invitan al cliente a permanecer con una emoción emergente en lugar de explicarla o evitarla. Facilitan contacto directo con la vivencia emocional y aumentan la profundidad experiencial (Bugental, 1978).",
             "sub": "AP_evocacion"
           }
         ]
@@ -177,8 +191,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Expresión emocional en primera persona",
+            "codigo": "m_encuentro_emocion",
+            "nombre": "Expresión emocional en primera persona",
+            "texto": "Invitación a expresar emociones propias desde la experiencia inmediata, evitando interpretaciones o juicios sobre los demás. Favorece autenticidad, claridad emocional y congruencia interna (Rogers, 1961).",
             "sub": "AP_evocacion"
           }
         ]
@@ -194,8 +209,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Trabajo con marcadores emocionales",
+            "codigo": "p_exp_marcadores",
+            "nombre": "Trabajo con marcadores emocionales",
+            "texto": "Identificación de señales clínicas (bloqueos, emociones no resueltas, autoevaluaciones dolorosas) que indican la necesidad de intervenir experiencialmente para facilitar transformación emocional.",
             "sub": "AP_evocacion"
           }
         ],
@@ -212,20 +228,23 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Intervención en Imaginación (I) mediante trabajo con imágenes y ensayos mentales",
+            "codigo": "p_lazarus_imaginacion_intervencion",
+            "nombre": "Intervención en Imaginación (I) mediante trabajo con imágenes y ensayos mentales",
+            "texto": "Procedimiento que aborda la modalidad de imágenes mentales (intrusiones, catastrofización visual, recuerdos vívidos, escenas temidas) usando técnicas de modificación de imagen y ensayo imaginado de conductas alternativas. Al cambiar la imagen, se cambia la respuesta emocional y conductual asociada, lo que resulta especialmente útil cuando la imaginación es un disparador directo de ansiedad, vergüenza o evitación. (Lazarus, 1989)",
             "sub": "AP_evocacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Detección de imágenes mentales activadoras",
+            "codigo": "m_lazarus_imagenes_activadoras",
+            "nombre": "Detección de imágenes mentales activadoras",
+            "texto": "Microintervención que identifica imágenes mentales espontáneas que disparan ansiedad, vergüenza o evitación, diferenciándolas de pensamientos verbales. Al hacer explícita la imagen, se abre la posibilidad de modificarla o neutralizar su impacto emocional. (Lazarus, 1989)",
             "sub": "AP_evocacion"
           },
           {
-            "id": null,
-            "label": "Ensayo imaginado de afrontamiento",
+            "codigo": "m_lazarus_ensayo_imaginado",
+            "nombre": "Ensayo imaginado de afrontamiento",
+            "texto": "Microintervención que guía al paciente a imaginar de forma vívida una conducta alternativa eficaz frente a una situación temida, preparando respuesta emocional y conductual antes de la exposición real. Este ensayo reduce evitación y aumenta probabilidad de acción. (Lazarus, 1989)",
             "sub": "AP_evocacion"
           }
         ]
@@ -241,15 +260,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Acceso y profundización en emociones primarias",
+            "codigo": "p_erskine_emocionesPrimarias",
+            "nombre": "Acceso y profundización en emociones primarias",
+            "texto": "Procedimiento que facilita el acceso a emociones primarias vinculadas a experiencias relacionales tempranas —tristeza, miedo, rabia, anhelo— que suelen quedar encapsuladas bajo defensas secundarias. El terapeuta sostiene la activación emocional mediante sintonía y regulación compartida, permitiendo que la emoción sea experimentada plenamente y no solo comprendida, favoreciendo procesos de integración afectiva. (Erskine et al., 1999)",
             "sub": "AP_evocacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Pregunta de contacto experiencial",
+            "codigo": "m_erskine_preguntaContacto",
+            "nombre": "Pregunta de contacto experiencial",
+            "texto": "Microintervención que invita al paciente a describir su experiencia inmediata (sensaciones, emociones, impulsos) en lugar de narrativas explicativas, facilitando el acceso al aquí-y-ahora experiencial. Esta pregunta ayuda a desplazar el foco desde la cognición defensiva hacia el contacto emocional. (Erskine, 2015)",
             "sub": "AP_evocacion"
           }
         ]
@@ -265,8 +286,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Prescripción paradójica",
+            "codigo": "p_nardone_paradoja",
+            "nombre": "Prescripción paradójica",
+            "texto": "Intervención que prescribe voluntariamente la conducta problemática o un ritual asociado, con el fin de romper el automatismo y devolver control al paciente.",
             "sub": "AP_evocacion"
           }
         ],
@@ -283,15 +305,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Elicitación del conocimiento emocional implícito",
+            "codigo": "p_coh_elicitacion_impl",
+            "nombre": "Elicitación del conocimiento emocional implícito",
+            "texto": "Procedimiento destinado a acceder directamente al conocimiento emocional implícito que sostiene el síntoma, más allá de explicaciones racionales o narrativas conscientes. A través de evocaciones guiadas, escenas relacionales, imágenes o formulaciones en primera persona, se facilita que el paciente experimente emocionalmente las creencias y aprendizajes no conscientes que organizan su conducta. La activación experiencial completa de este conocimiento es condición necesaria para que pueda producirse la reconsolidación de la memoria emocional (Ecker et al., 2012; Lane et al., 2015).",
             "sub": "AP_evocacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Evocación experiencial focalizada",
+            "codigo": "m_coh_evocacion_focalizada",
+            "nombre": "Evocación experiencial focalizada",
+            "texto": "Microintervención experiencial que guía al paciente a revivir una escena, relación o situación donde el significado implícito se activa con claridad. El objetivo no es recordar hechos, sino reactivar el estado emocional asociado para hacerlo plenamente accesible en el presente. Esta evocación es imprescindible para que el aprendizaje emocional entre en estado lábil y pueda modificarse (Lane et al., 2015).",
             "sub": "AP_evocacion"
           }
         ]
@@ -307,15 +331,17 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Imaginación guiada de encuentro entre voces (guided dialogical imagery)",
+            "codigo": "p_hermans_imaginacionEncuentroVoces",
+            "nombre": "Imaginación guiada de encuentro entre voces (guided dialogical imagery)",
+            "texto": "Procedimiento en el que se evoca una escena interna simbólica donde posiciones relevantes se encuentran, permitiendo acceso emocional, experiencia correctiva y modificación de representaciones internas rígidas en un contexto seguro y guiado. (Hermans, 1996).",
             "sub": "AP_evocacion"
           }
         ],
         "micros": [
           {
-            "id": null,
-            "label": "Localizar corporalmente la voz",
+            "codigo": "m_hermans_localizarVozCuerpo",
+            "nombre": "Localizar corporalmente la voz",
+            "texto": "Microintervención que explora cómo y dónde se manifiesta cada voz en el cuerpo (tensión, presión, calor, impulso), permitiendo distinguir posiciones no solo a nivel cognitivo sino también experiencial. Facilita acceso emocional sin sobreintelectualización y ayuda a modular activación cuando ciertas voces se activan de forma automática. (Hermans, 1996).",
             "sub": "AP_evocacion"
           }
         ]
@@ -332,8 +358,9 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Evocación emocional focalizada",
+            "codigo": "m_eft_evocacion",
+            "nombre": "Evocación emocional focalizada",
+            "texto": "Intervención breve que utiliza preguntas, pausas y focalización corporal para intensificar la experiencia emocional en el aquí y ahora. El objetivo es que la emoción primaria sea vivida plenamente en sesión y no solo descrita cognitivamente (Greenberg & Johnson, 1988).",
             "sub": "AP_evocacion"
           }
         ]
@@ -349,8 +376,9 @@
       "matches": {
         "tecnicas": [
           {
-            "id": null,
-            "label": "Evocación y profundización emocional",
+            "codigo": "p_aedp_evocacion",
+            "nombre": "Evocación y profundización emocional",
+            "texto": "Activación deliberada de emociones adaptativas básicas mediante atención experiencial, focalización corporal y seguimiento del afecto emergente, manteniendo regulación y seguridad.",
             "sub": "AP_evocacion"
           }
         ],
@@ -368,23 +396,27 @@
         "tecnicas": [],
         "micros": [
           {
-            "id": null,
-            "label": "Invitación a habitar la vulnerabilidad",
+            "codigo": "m_exist_vulnerabilidad",
+            "nombre": "Invitación a habitar la vulnerabilidad",
+            "texto": "Microintervención que propone permanecer con la emoción primaria (miedo, pena, soledad, anhelo) sin huir a explicaciones. Ayuda a transformar la evitación en presencia, con cuidado de la ventana de tolerancia (Schneider, 2009).",
             "sub": "AP_evocacion"
           },
           {
-            "id": null,
-            "label": "Foco en el cuerpo del significado",
+            "codigo": "m_exist_cuerpo_significado",
+            "nombre": "Foco en el cuerpo del significado",
+            "texto": "Microintervención que pregunta por sensaciones corporales asociadas a un dilema (“¿dónde lo notas?”) para anclar la exploración existencial en experiencia encarnada. Evita que ‘sentido’ sea puramente intelectual (Schneider, 2009).",
             "sub": "AP_evocacion"
           },
           {
-            "id": null,
-            "label": "Asombro guiado",
+            "codigo": "m_exist_asombro",
+            "nombre": "Asombro guiado",
+            "texto": "Intervenciones que abren la percepción a lo extraordinario dentro de lo cotidiano (finitud, belleza, misterio), no como positividad tóxica, sino como ampliación de conciencia. Puede desbloquear rigidizaciones y reconectar con valor y vida (Schneider, 2009).",
             "sub": "AP_evocacion"
           },
           {
-            "id": null,
-            "label": "Nombrar lo no dicho",
+            "codigo": "m_exist_no_dicho",
+            "nombre": "Nombrar lo no dicho",
+            "texto": "Microintervención que invita a poner palabras a lo implícito en la relación o en el dilema (“hay algo que no estás diciendo aún”). Facilita autenticidad y reduce juegos relacionales defensivos (Schneider, Bugental & Pierson, 2015).",
             "sub": "AP_evocacion"
           }
         ]
