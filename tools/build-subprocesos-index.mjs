@@ -36,16 +36,27 @@ function walkJsonFiles(dir) {
 // Normaliza campos posibles donde guardas subproceso
 function extractSubIds(x) {
   if (!x) return [];
-  // acepta: "RF_resp", ["RF_resp","RF_ground"], {subproceso:"RF_resp"}, etc.
+
+  // ✅ TU ESTRUCTURA REAL (lo más importante)
+  // En procedimientos/micros: "procesos": ["N_metacognicion", ...]
+  if (typeof x === "object" && Array.isArray(x.procesos)) {
+    return x.procesos.map(String).filter(Boolean);
+  }
+
+  // Compat: si te pasan directamente el array/string
   if (typeof x === "string") return [x].filter(Boolean);
   if (Array.isArray(x)) return x.map(String).filter(Boolean);
+
+  // Compat: otros nombres posibles
   if (typeof x === "object") {
     if (x.subproceso) return extractSubIds(x.subproceso);
     if (x.subprocesos) return extractSubIds(x.subprocesos);
     if (x.mjps) return extractSubIds(x.mjps);
   }
+
   return [];
 }
+
 
 // Coge técnicas/micros desde campos típicos
 function listItems(model, key) {
@@ -89,15 +100,21 @@ for (const abs of modelFiles) {
   const head = minimalModelHeader(model, rel);
 
   // Ajusta aquí si tus claves reales son otras:
-  const tecnicas = listItems(model, "tecnicas");
-  const micros = listItems(model, "micros");
+const tecnicas = [
+  ...listItems(model, "procedimientos"),
+  ...listItems(model, "tecnicas") // compatibilidad con modelos antiguos
+];
+
+const micros = listItems(model, "micros");
+
 
   // mapa subId -> {tecnicas:[], micros:[]}
   const matches = new Map();
 
   // técnicas
   for (const t of tecnicas) {
-    const subIds = extractSubIds(t?.subproceso || t?.subprocesos || t?.mjps);
+    const subIds = extractSubIds(t);
+
     for (const subId of subIds) {
       if (!matches.has(subId)) matches.set(subId, { tecnicas: [], micros: [] });
       matches.get(subId).tecnicas.push({
@@ -110,7 +127,8 @@ for (const abs of modelFiles) {
 
   // micros
   for (const m of micros) {
-    const subIds = extractSubIds(m?.subproceso || m?.subprocesos || m?.mjps);
+    const subIds = extractSubIds(m);
+
     for (const subId of subIds) {
       if (!matches.has(subId)) matches.set(subId, { tecnicas: [], micros: [] });
       matches.get(subId).micros.push({
@@ -169,4 +187,5 @@ fs.writeFileSync(
 );
 
 console.log(`✅ Generado: ${index.length} subprocesos en ${OUT_DIR}`);
+
 
