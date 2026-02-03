@@ -117,11 +117,17 @@ const micros = listItems(model, "micros");
 
     for (const subId of subIds) {
       if (!matches.has(subId)) matches.set(subId, { tecnicas: [], micros: [] });
-      matches.get(subId).tecnicas.push({
-        id: t?.id ?? null,
-        label: t?.label ?? t?.nombre ?? null,
-        sub: subId
-      });
+matches.get(subId).tecnicas.push({
+  codigo: t?.codigo ?? t?.id ?? null,
+  nombre: t?.nombre ?? t?.label ?? null,
+  texto:
+    (t?.texto && String(t.texto).trim()) ? t.texto :
+    (t?.descripcion && String(t.descripcion).trim()) ? t.descripcion :
+    (t?.desc && String(t.desc).trim()) ? t.desc :
+    '',
+  sub: subId
+});
+
     }
   }
 
@@ -131,11 +137,17 @@ const micros = listItems(model, "micros");
 
     for (const subId of subIds) {
       if (!matches.has(subId)) matches.set(subId, { tecnicas: [], micros: [] });
-      matches.get(subId).micros.push({
-        id: m?.id ?? null,
-        label: m?.label ?? m?.nombre ?? null,
-        sub: subId
-      });
+ matches.get(subId).micros.push({
+  codigo: m?.codigo ?? m?.id ?? null,
+  nombre: m?.nombre ?? m?.label ?? null,
+  texto:
+    (m?.texto && String(m.texto).trim()) ? m.texto :
+    (m?.descripcion && String(m.descripcion).trim()) ? m.descripcion :
+    (m?.desc && String(m.desc).trim()) ? m.desc :
+    '',
+  sub: subId
+});
+
     }
   }
 
