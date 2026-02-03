@@ -162,15 +162,15 @@ const entry = {
   modelAutores: head.autores,
   modelYear: head.year,
 
-  // unificamos técnicas + micros en una sola lista
   items: [
-    ...(mm.tecnicas || []),
-    ...(mm.micros || [])
+    ...(mm.tecnicas || []).map(t => ({ ...t, tipo: 'procedimiento' })),
+    ...(mm.micros || []).map(m => ({ ...m, tipo: 'micro' }))
   ]
 };
 
 if (!bySub.has(subId)) bySub.set(subId, []);
 bySub.get(subId).push(entry);
+
 
   }
 }
