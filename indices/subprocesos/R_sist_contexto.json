@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_contexto",
-  "updatedAt": "2026-02-03T09:53:55.342Z",
-  "totalModelos": 9,
+  "updatedAt": "2026-02-03T10:02:12.944Z",
+  "totalModelos": 10,
   "modelos": [
     {
       "id": "psicologia-individual-adler",
@@ -66,6 +66,40 @@
           }
         ],
         "micros": []
+      }
+    },
+    {
+      "id": "psicoterapia-multimodal-basic-id-lazarus",
+      "label": "Psicoterapia multimodal (BASIC-ID)",
+      "year": 1977,
+      "autores": "Arnold A. Lazarus",
+      "grupo": "Integrativo",
+      "file": "data/Core/modelos/integrativo/psicoterapia-multimodal-basic-id-lazarus.json",
+      "matches": {
+        "tecnicas": [
+          {
+            "id": null,
+            "label": "Plan de tratamiento por modalidades (secuenciación estratégica)",
+            "sub": "R_sist_contexto"
+          },
+          {
+            "id": null,
+            "label": "Intervención en Conducta (B) mediante activación y modificación de hábitos",
+            "sub": "R_sist_contexto"
+          },
+          {
+            "id": null,
+            "label": "Prevención de recaídas y plan de mantenimiento multimodal",
+            "sub": "R_sist_contexto"
+          }
+        ],
+        "micros": [
+          {
+            "id": null,
+            "label": "Micro-ajuste contextual",
+            "sub": "R_sist_contexto"
+          }
+        ]
       }
     },
     {
