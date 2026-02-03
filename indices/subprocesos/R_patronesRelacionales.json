@@ -1,26 +1,22 @@
 {
   "subprocesoId": "R_patronesRelacionales",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 1,
   "modelos": [
     {
-      "id": "p1freud",
-      "label": "Psicoanálisis clásico",
-      "year": 1896,
-      "autores": "Sigmund Freud",
-      "grupo": "psicoanalisis",
-      "file": "data/Core/modelos/psicoanalisis/p1freud.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_freud_transferencia",
-            "nombre": "Trabajo con la transferencia",
-            "texto": "Se examina cómo el paciente actualiza en el vínculo terapéutico expectativas y patrones relacionales aprendidos, usando la transferencia como material clínico vivo.",
-            "sub": "R_patronesRelacionales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "p1freud",
+      "modelLabel": "Psicoanálisis clásico",
+      "modelGrupo": "psicoanalisis",
+      "modelAutores": "Sigmund Freud",
+      "modelYear": 1896,
+      "items": [
+        {
+          "codigo": "p_freud_transferencia",
+          "nombre": "Trabajo con la transferencia",
+          "texto": "Se examina cómo el paciente actualiza en el vínculo terapéutico expectativas y patrones relacionales aprendidos, usando la transferencia como material clínico vivo.",
+          "sub": "R_patronesRelacionales"
+        }
+      ]
     }
   ]
 }

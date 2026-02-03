@@ -1,256 +1,208 @@
 {
   "subprocesoId": "R_sist_roles",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 11,
   "modelos": [
     {
-      "id": "psicologia-individual-adler",
-      "label": "Psicología individual",
-      "year": 1912,
-      "autores": "Alfred Adler",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_adler_orden_nacimiento",
-            "nombre": "Orden de nacimiento y posiciones relacionales",
-            "texto": "Este procedimiento analiza cómo la posición fraterna y los cambios en el sistema familiar moldearon estrategias de competencia, cooperación, responsabilidad y búsqueda de atención, evitando determinismos y usándolo como lente para comprender el estilo de vida.",
-            "sub": "R_sist_roles"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "polaridades-semanticas",
+      "modelLabel": "Modelo de polaridades semánticas",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Valeria Ugazio",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_ugazio_polaridades",
+          "nombre": "Mapeo de polaridades semánticas",
+          "texto": "Procedimiento central del modelo que identifica con precisión las polaridades semánticas dominantes (p. ej., autonomía–dependencia, superioridad–inferioridad, libertad–control) que organizan el campo de significados compartido del sistema familiar y las posiciones típicas que cada miembro ocupa frente a esos polos. Se exploran definiciones implícitas, criterios de valoración (qué polo se considera “deseable” o “vergonzante”), contextos donde cada polo se activa y cómo estas coordenadas semánticas estructuran identidades, lealtades, conflictos y síntomas. El objetivo es externalizar la gramática relacional que gobierna la experiencia para que paciente y familia puedan verla “desde fuera” y empezar a flexibilizarla, abriendo un espacio para narrativas y posiciones menos rígidas. (Ugazio, 2013)",
+          "sub": "R_sist_roles"
+        },
+        {
+          "codigo": "p_ugazio_cartografiaPosiciones",
+          "nombre": "Cartografía de posiciones del self en la relación",
+          "texto": "Procedimiento que traza de forma sistemática las posiciones típicas que el paciente adopta con distintas figuras (pareja, padres, hermanos, trabajo) dentro de la polaridad dominante, identificando transiciones, rigideces y “zonas prohibidas” del repertorio identitario. Se observan oscilaciones (por ejemplo, de inferioridad a superioridad defensiva) y cómo el sistema reacciona cuando alguien intenta cambiar de posición. Esta cartografía permite diseñar intervenciones de reposicionamiento realistas y clínicamente seguras, evitando cambios que disparen rupturas relacionales o recaídas semánticas. (Ugazio, 2013)",
+          "sub": "R_sist_roles"
+        },
+        {
+          "codigo": "m_ugazio_reglasImplicitas",
+          "nombre": "Señalar reglas implícitas",
+          "texto": "Microintervención que hace visibles reglas no dichas del sistema (“aquí no se puede necesitar”, “mostrar debilidad tiene consecuencias”), ayudando a comprender cómo se sostienen las posiciones polares. Al explicitar la regla, se abre la posibilidad de cuestionarla sin atacar a las personas. (Ugazio, 2013)",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "h14psdrama1921",
-      "label": "Psicodrama",
-      "year": 1921,
-      "autores": "Jacob Levy Moreno",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/h14psdrama1921.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_psdrama_sociometria",
-            "nombre": "Sociometría",
-            "texto": "Herramienta grupal que explora elecciones, rechazos y vínculos dentro del grupo terapéutico. Permite visualizar patrones relacionales, fortalecer la cohesión y aumentar conciencia del lugar que cada uno ocupa en el sistema (Moreno, 1953).",
-            "sub": "R_sist_roles"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-integrativa",
+      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_feixas_posicionRelacional",
+          "nombre": "Reposicionamiento relacional desde el sistema de significados",
+          "texto": "Procedimiento que traduce cambios de significado a nuevas posiciones del self en relación (límites, demandas, reparación, cercanía/distancia), analizando cómo los roles y expectativas del sistema sostienen constructos rígidos; se planifican movimientos relacionales graduados que preserven vínculo y dignidad, anticipando reacciones del entorno y preparando respuestas alternativas para que el cambio identitario no colapse por presión sistémica o por miedo a perder reconocimiento. (Feixas, 2004; Constructivismo social/relacional)",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "cibernetica-teoria-comunicacion-1956",
-      "label": "Cibernética y teoría de la comunicación (Gregory Bateson)",
-      "year": 1956,
-      "autores": "Gregory Bateson",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/cibernetica-teoria-comunicacion-1956.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bateson_niveles_comunicacion",
-            "nombre": "Lectura de niveles de comunicación (contenido vs relación)",
-            "texto": "Procedimiento para discriminar lo que se dice (contenido) de lo que el mensaje hace en la relación (posición, poder, alianza, distancia). Permite ver que el conflicto muchas veces no es ‘sobre el tema’, sino sobre el vínculo y las reglas implícitas que organizan el intercambio.",
-            "sub": "R_sist_roles"
-          },
-          {
-            "codigo": "p_bateson_funcion_sintoma",
-            "nombre": "Hipótesis de función comunicacional del síntoma",
-            "texto": "Procedimiento para explorar qué regula el síntoma en el sistema: qué evita, qué organiza, qué mantiene unido o separado, qué jerarquía sostiene. No es ‘justificar’ el problema, sino entender por qué el sistema lo necesita para conservar equilibrio, y qué alternativa sería menos costosa.",
-            "sub": "R_sist_roles"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_bateson_regla_implicita",
-            "nombre": "Nombrar una regla implícita del sistema",
-            "texto": "Hacer explícita una norma no dicha (‘aquí no se habla de X’, ‘no se puede pedir’, ‘hay que estar bien’). Convertir la regla en objeto de conversación abre opciones de cambio de orden superior.",
-            "sub": "R_sist_roles"
-          }
-        ]
-      }
+      "modelId": "h14psdrama1921",
+      "modelLabel": "Psicodrama",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Jacob Levy Moreno",
+      "modelYear": 1921,
+      "items": [
+        {
+          "codigo": "m_psdrama_sociometria",
+          "nombre": "Sociometría",
+          "texto": "Herramienta grupal que explora elecciones, rechazos y vínculos dentro del grupo terapéutico. Permite visualizar patrones relacionales, fortalecer la cohesión y aumentar conciencia del lugar que cada uno ocupa en el sistema (Moreno, 1953).",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "terapia-familiar-bowen-1960",
-      "label": "Terapia familiar de Bowen",
-      "year": 1960,
-      "autores": "Murray Bowen",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-familiar-bowen-1960.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_bowen_funcion_sintoma",
-            "nombre": "Señalar ‘función del síntoma’ sin culpabilizar",
-            "texto": "Microintervención que conecta el síntoma con la regulación del sistema (‘cuando tú colapsas, el conflicto entre ellos baja’). Se formula con cuidado para evitar que el consultante se sienta usado o culpable. Bien hecha, aumenta comprensión y abre destriangulación.",
-            "sub": "R_sist_roles"
-          }
-        ]
-      }
+      "modelId": "psicologia-individual-adler",
+      "modelLabel": "Psicología individual",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Alfred Adler",
+      "modelYear": 1912,
+      "items": [
+        {
+          "codigo": "p_adler_orden_nacimiento",
+          "nombre": "Orden de nacimiento y posiciones relacionales",
+          "texto": "Este procedimiento analiza cómo la posición fraterna y los cambios en el sistema familiar moldearon estrategias de competencia, cooperación, responsabilidad y búsqueda de atención, evitando determinismos y usándolo como lente para comprender el estilo de vida.",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "functional-family-therapy-fft",
-      "label": "Functional Family Therapy (FFT)",
-      "year": 1973,
-      "autores": "James F. Alexander; Bruce Parsons",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/functional-family-therapy-fft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_fft_parentalidad",
-            "nombre": "Entrenamiento parental",
-            "texto": "Fortalecimiento de supervisión, disciplina consistente y refuerzo positivo.",
-            "sub": "R_sist_roles"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "attachment-based-family-therapy-abft",
+      "modelLabel": "ABFT – Terapia familiar basada en el apego",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_abft_parental",
+          "nombre": "Tarea 2 – Reestructuración parental",
+          "texto": "Trabajo con padres para aumentar sensibilidad al apego, reducir respuestas críticas o evitativas y fortalecer la función protectora.",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "multisystemic-therapy-mst",
-      "label": "Multisystemic Therapy (MST)",
-      "year": 1990,
-      "autores": "Scott Henggeler; Sonia Rowland",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/multisystemic-therapy-mst.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mst_supervision_parental",
-            "nombre": "Fortalecimiento de supervisión parental y consistencia",
-            "texto": "Entrenamiento a cuidadores en monitoreo, establecimiento de normas, consistencia, seguimiento de horarios y supervisión de amistades y actividades, con foco en control efectivo no coercitivo.",
-            "sub": "R_sist_roles"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mst_plan_supervision",
-            "nombre": "Plan diario de supervisión parental",
-            "texto": "Definir pasos diarios de monitoreo (dónde, con quién, qué, cuándo) y cómo verificar información sin escalada.",
-            "sub": "R_sist_roles"
-          }
-        ]
-      }
+      "modelId": "cibernetica-teoria-comunicacion-1956",
+      "modelLabel": "Cibernética y teoría de la comunicación (Gregory Bateson)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Gregory Bateson",
+      "modelYear": 1956,
+      "items": [
+        {
+          "codigo": "p_bateson_niveles_comunicacion",
+          "nombre": "Lectura de niveles de comunicación (contenido vs relación)",
+          "texto": "Procedimiento para discriminar lo que se dice (contenido) de lo que el mensaje hace en la relación (posición, poder, alianza, distancia). Permite ver que el conflicto muchas veces no es ‘sobre el tema’, sino sobre el vínculo y las reglas implícitas que organizan el intercambio.",
+          "sub": "R_sist_roles"
+        },
+        {
+          "codigo": "p_bateson_funcion_sintoma",
+          "nombre": "Hipótesis de función comunicacional del síntoma",
+          "texto": "Procedimiento para explorar qué regula el síntoma en el sistema: qué evita, qué organiza, qué mantiene unido o separado, qué jerarquía sostiene. No es ‘justificar’ el problema, sino entender por qué el sistema lo necesita para conservar equilibrio, y qué alternativa sería menos costosa.",
+          "sub": "R_sist_roles"
+        },
+        {
+          "codigo": "m_bateson_regla_implicita",
+          "nombre": "Nombrar una regla implícita del sistema",
+          "texto": "Hacer explícita una norma no dicha (‘aquí no se habla de X’, ‘no se puede pedir’, ‘hay que estar bien’). Convertir la regla en objeto de conversación abre opciones de cambio de orden superior.",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "multidimensional-family-therapy-mdft",
-      "label": "Multidimensional Family Therapy (MDFT)",
-      "year": 1991,
-      "autores": "Howard A. Liddle",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/multidimensional-family-therapy-mdft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mdft_parental",
-            "nombre": "Entrenamiento y apoyo parental",
-            "texto": "Fortalecimiento de prácticas parentales: supervisión, límites claros, apoyo emocional y consistencia educativa.",
-            "sub": "R_sist_roles"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "functional-family-therapy-fft",
+      "modelLabel": "Functional Family Therapy (FFT)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "James F. Alexander; Bruce Parsons",
+      "modelYear": 1973,
+      "items": [
+        {
+          "codigo": "p_fft_parentalidad",
+          "nombre": "Entrenamiento parental",
+          "texto": "Fortalecimiento de supervisión, disciplina consistente y refuerzo positivo.",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "polaridades-semanticas",
-      "label": "Modelo de polaridades semánticas",
-      "year": 1998,
-      "autores": "Valeria Ugazio",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/polaridades-semanticas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_ugazio_polaridades",
-            "nombre": "Mapeo de polaridades semánticas",
-            "texto": "Procedimiento central del modelo que identifica con precisión las polaridades semánticas dominantes (p. ej., autonomía–dependencia, superioridad–inferioridad, libertad–control) que organizan el campo de significados compartido del sistema familiar y las posiciones típicas que cada miembro ocupa frente a esos polos. Se exploran definiciones implícitas, criterios de valoración (qué polo se considera “deseable” o “vergonzante”), contextos donde cada polo se activa y cómo estas coordenadas semánticas estructuran identidades, lealtades, conflictos y síntomas. El objetivo es externalizar la gramática relacional que gobierna la experiencia para que paciente y familia puedan verla “desde fuera” y empezar a flexibilizarla, abriendo un espacio para narrativas y posiciones menos rígidas. (Ugazio, 2013)",
-            "sub": "R_sist_roles"
-          },
-          {
-            "codigo": "p_ugazio_cartografiaPosiciones",
-            "nombre": "Cartografía de posiciones del self en la relación",
-            "texto": "Procedimiento que traza de forma sistemática las posiciones típicas que el paciente adopta con distintas figuras (pareja, padres, hermanos, trabajo) dentro de la polaridad dominante, identificando transiciones, rigideces y “zonas prohibidas” del repertorio identitario. Se observan oscilaciones (por ejemplo, de inferioridad a superioridad defensiva) y cómo el sistema reacciona cuando alguien intenta cambiar de posición. Esta cartografía permite diseñar intervenciones de reposicionamiento realistas y clínicamente seguras, evitando cambios que disparen rupturas relacionales o recaídas semánticas. (Ugazio, 2013)",
-            "sub": "R_sist_roles"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_ugazio_reglasImplicitas",
-            "nombre": "Señalar reglas implícitas",
-            "texto": "Microintervención que hace visibles reglas no dichas del sistema (“aquí no se puede necesitar”, “mostrar debilidad tiene consecuencias”), ayudando a comprender cómo se sostienen las posiciones polares. Al explicitar la regla, se abre la posibilidad de cuestionarla sin atacar a las personas. (Ugazio, 2013)",
-            "sub": "R_sist_roles"
-          }
-        ]
-      }
+      "modelId": "multidimensional-family-therapy-mdft",
+      "modelLabel": "Multidimensional Family Therapy (MDFT)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Howard A. Liddle",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_mdft_parental",
+          "nombre": "Entrenamiento y apoyo parental",
+          "texto": "Fortalecimiento de prácticas parentales: supervisión, límites claros, apoyo emocional y consistencia educativa.",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-integrativa",
-      "label": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
-      "year": 2000,
-      "autores": "Guillem Feixas; Manuel Villegas Besora",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-integrativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_feixas_posicionRelacional",
-            "nombre": "Reposicionamiento relacional desde el sistema de significados",
-            "texto": "Procedimiento que traduce cambios de significado a nuevas posiciones del self en relación (límites, demandas, reparación, cercanía/distancia), analizando cómo los roles y expectativas del sistema sostienen constructos rígidos; se planifican movimientos relacionales graduados que preserven vínculo y dignidad, anticipando reacciones del entorno y preparando respuestas alternativas para que el cambio identitario no colapse por presión sistémica o por miedo a perder reconocimiento. (Feixas, 2004; Constructivismo social/relacional)",
-            "sub": "R_sist_roles"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "multisystemic-therapy-mst",
+      "modelLabel": "Multisystemic Therapy (MST)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Scott Henggeler; Sonia Rowland",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mst_supervision_parental",
+          "nombre": "Fortalecimiento de supervisión parental y consistencia",
+          "texto": "Entrenamiento a cuidadores en monitoreo, establecimiento de normas, consistencia, seguimiento de horarios y supervisión de amistades y actividades, con foco en control efectivo no coercitivo.",
+          "sub": "R_sist_roles"
+        },
+        {
+          "codigo": "m_mst_plan_supervision",
+          "nombre": "Plan diario de supervisión parental",
+          "texto": "Definir pasos diarios de monitoreo (dónde, con quién, qué, cuándo) y cómo verificar información sin escalada.",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "s20linares",
-      "label": "Psicoterapia relacional sistémica (Linares)",
-      "year": 2000,
-      "autores": "Juan Luis Linares",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/s20linares.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_linares_reglas_roles",
-            "nombre": "Clarificación de reglas, roles y jerarquías",
-            "texto": "Procedimiento para hacer explícitas reglas implícitas, expectativas y posiciones (quién decide, quién cuida, quién sostiene, quién calla). Se examina su función histórica y su coste actual. Se negocian alternativas más flexibles y sostenibles.",
-            "sub": "R_sist_roles"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_linares_regla",
-            "nombre": "Pregunta por regla implícita",
-            "texto": "Microintervención para hacer consciente la norma invisible (“¿qué regla está operando aquí?”, “¿qué no se puede decir en esta familia/pareja?”).",
-            "sub": "R_sist_roles"
-          }
-        ]
-      }
+      "modelId": "s20linares",
+      "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Juan Luis Linares",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_linares_reglas_roles",
+          "nombre": "Clarificación de reglas, roles y jerarquías",
+          "texto": "Procedimiento para hacer explícitas reglas implícitas, expectativas y posiciones (quién decide, quién cuida, quién sostiene, quién calla). Se examina su función histórica y su coste actual. Se negocian alternativas más flexibles y sostenibles.",
+          "sub": "R_sist_roles"
+        },
+        {
+          "codigo": "m_linares_regla",
+          "nombre": "Pregunta por regla implícita",
+          "texto": "Microintervención para hacer consciente la norma invisible (“¿qué regla está operando aquí?”, “¿qué no se puede decir en esta familia/pareja?”).",
+          "sub": "R_sist_roles"
+        }
+      ]
     },
     {
-      "id": "attachment-based-family-therapy-abft",
-      "label": "ABFT – Terapia familiar basada en el apego",
-      "year": 2002,
-      "autores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/attachment-based-family-therapy-abft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_abft_parental",
-            "nombre": "Tarea 2 – Reestructuración parental",
-            "texto": "Trabajo con padres para aumentar sensibilidad al apego, reducir respuestas críticas o evitativas y fortalecer la función protectora.",
-            "sub": "R_sist_roles"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-familiar-bowen-1960",
+      "modelLabel": "Terapia familiar de Bowen",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Murray Bowen",
+      "modelYear": 1960,
+      "items": [
+        {
+          "codigo": "m_bowen_funcion_sintoma",
+          "nombre": "Señalar ‘función del síntoma’ sin culpabilizar",
+          "texto": "Microintervención que conecta el síntoma con la regulación del sistema (‘cuando tú colapsas, el conflicto entre ellos baja’). Se formula con cuidado para evitar que el consultante se sienta usado o culpable. Bien hecha, aumenta comprensión y abre destriangulación.",
+          "sub": "R_sist_roles"
+        }
+      ]
     }
   ]
 }

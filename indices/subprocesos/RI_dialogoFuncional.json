@@ -1,141 +1,121 @@
 {
   "subprocesoId": "RI_dialogoFuncional",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 4,
   "modelos": [
     {
-      "id": "terapia-colaborativa",
-      "label": "Terapia colaborativa",
-      "year": 1994,
-      "autores": "Harlene Anderson; Harold Goolishian",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-colaborativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_colab_polifonia",
-            "nombre": "Trabajo con múltiples voces y perspectivas (polifonía conversacional)",
-            "texto": "Procedimiento que facilita que aparezcan distintas voces, posiciones y perspectivas del consultante (y, si procede, del sistema relacional) sin jerarquizarlas como verdaderas o falsas, promoviendo un diálogo interno más funcional y una identidad menos monolítica; al permitir polifonía, se reduce la tiranía de una única narrativa dominante y se amplía el repertorio de significado disponible para decidir y actuar. (Anderson, 1997)",
-            "sub": "RI_dialogoFuncional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_colab_multiplesPerspectivas",
-            "nombre": "Invitación a múltiples perspectivas",
-            "texto": "Invitación a considerar cómo una situación podría verse desde diferentes voces o posiciones sin jerarquizarlas, promoviendo polifonía interna y reduciendo la rigidez de una única narrativa dominante. (Anderson, 1997)",
-            "sub": "RI_dialogoFuncional"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-neimeyer",
+      "modelLabel": "Neimeyer – Psicoterapia constructivista",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Robert A. Neimeyer",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_neim_dialogo_reflexivo",
+          "nombre": "Diálogo reflexivo colaborativo",
+          "texto": "Procedimiento relacional en el que terapeuta y cliente dialogan de manera reflexiva sobre los significados emergentes, examinando supuestos, valores, dilemas identitarios y alternativas narrativas. El terapeuta no adopta una posición experta correctiva, sino colaborativa, ayudando al cliente a observar su propio proceso de construcción de sentido y a ampliar perspectivas sin imponer interpretaciones (Neimeyer, 1995).",
+          "sub": "RI_dialogoFuncional"
+        },
+        {
+          "codigo": "m_neim_voz_self",
+          "nombre": "Exploración de la voz del self",
+          "texto": "Microintervención que invita al cliente a diferenciar y escuchar distintas voces internas implicadas en su narrativa (yo pasado, yo herido, yo crítico, yo que busca sentido). Esta diferenciación facilita diálogo interno funcional y reduce la fusión con posiciones rígidas del self (Neimeyer, 2001).",
+          "sub": "RI_dialogoFuncional"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-neimeyer",
-      "label": "Neimeyer – Psicoterapia constructivista",
-      "year": 1995,
-      "autores": "Robert A. Neimeyer",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-neimeyer.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neim_dialogo_reflexivo",
-            "nombre": "Diálogo reflexivo colaborativo",
-            "texto": "Procedimiento relacional en el que terapeuta y cliente dialogan de manera reflexiva sobre los significados emergentes, examinando supuestos, valores, dilemas identitarios y alternativas narrativas. El terapeuta no adopta una posición experta correctiva, sino colaborativa, ayudando al cliente a observar su propio proceso de construcción de sentido y a ampliar perspectivas sin imponer interpretaciones (Neimeyer, 1995).",
-            "sub": "RI_dialogoFuncional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neim_voz_self",
-            "nombre": "Exploración de la voz del self",
-            "texto": "Microintervención que invita al cliente a diferenciar y escuchar distintas voces internas implicadas en su narrativa (yo pasado, yo herido, yo crítico, yo que busca sentido). Esta diferenciación facilita diálogo interno funcional y reduce la fusión con posiciones rígidas del self (Neimeyer, 2001).",
-            "sub": "RI_dialogoFuncional"
-          }
-        ]
-      }
+      "modelId": "self-dialogico-hermans",
+      "modelLabel": "Teoría del self dialógico",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Hubert J. M. Hermans",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_hermans_secuenciacionDialogica",
+          "nombre": "Secuenciación dialógica de episodios (microanálisis de diálogo interno)",
+          "texto": "Procedimiento que reconstruye un episodio concreto (discusión, fracaso, crítica, evitación) paso a paso, identificando qué posición aparece primero, qué dice/hace, qué voz responde, cómo escala el conflicto y dónde se rompe la mentalización o la regulación. El terapeuta convierte el “me pasa” en una secuencia observable (turnos internos), favoreciendo metacognición y permitiendo intervenir en puntos de bifurcación (pausas, cambios de tono, introducción de una voz mediadora) para flexibilizar el patrón. (Hermans, 1996).",
+          "sub": "RI_dialogoFuncional"
+        },
+        {
+          "codigo": "p_hermans_dialogoFacilitado",
+          "nombre": "Diálogo interno facilitado (turn-taking entre posiciones)",
+          "texto": "Procedimiento en el que el terapeuta estructura un intercambio explícito entre dos o más posiciones del self, asegurando turnos, límites y condiciones de seguridad (sin humillación, sin monopolio, con escucha). Se promueve que cada voz exprese necesidades, temores y criterios de protección, y que pueda escuchar el impacto de su estilo sobre otras partes, transformando el diálogo estereotipado (crítico–culpable, exigente–fracasado) en comunicación interna más realista y regulada. (Hermans, 1996; Hermans et al., 1992).",
+          "sub": "RI_dialogoFuncional"
+        },
+        {
+          "codigo": "p_hermans_cartasEntrePosiciones",
+          "nombre": "Cartas o mensajes entre posiciones (lettering dialógico)",
+          "texto": "Procedimiento narrativo en el que dos posiciones se escriben entre sí con reglas claras de respeto y objetivo de comprensión, no de condena. Facilita expresión de necesidades, reconstrucción de significado y reparación de autoimagen, especialmente cuando el diálogo oral se bloquea o se vuelve defensivo. (Hermans et al., 1992; Hermans, 1996).",
+          "sub": "RI_dialogoFuncional"
+        },
+        {
+          "codigo": "p_hermans_chairworkVoces",
+          "nombre": "Enactment en sillas (chairwork) para voces internas",
+          "texto": "Procedimiento experiencial que dramatiza posiciones del self en sillas distintas para aumentar vividez emocional y claridad de voz, permitiendo que cada parte se exprese plenamente y que el paciente experimente la transición entre posiciones. Se usa para desbloquear conflictos estancados y reorganizar el diálogo interno, cuidando la ventana de tolerancia. (Hermans, 1996).",
+          "sub": "RI_dialogoFuncional"
+        },
+        {
+          "codigo": "m_hermans_darTurnoVoz",
+          "nombre": "Dar turno a una voz silenciada",
+          "texto": "Microintervención que consiste en frenar explícitamente a la voz dominante y abrir espacio para que una voz inhibida pueda expresarse con seguridad. Amplía el repertorio identitario, reduce monopolios internos y facilita la emergencia de necesidades, emociones o valores previamente bloqueados. (Hermans, 1996).",
+          "sub": "RI_dialogoFuncional"
+        },
+        {
+          "codigo": "m_hermans_traducirVoces",
+          "nombre": "Traducir entre voces",
+          "texto": "Microintervención en la que el terapeuta ayuda a reformular el mensaje de una voz para que pueda ser escuchado por otra (por ejemplo, traduciendo crítica en preocupación). Reduce malentendidos internos y favorece cooperación entre posiciones que comparten objetivos pero usan estrategias incompatibles. (Hermans, 1996).",
+          "sub": "RI_dialogoFuncional"
+        }
+      ]
     },
     {
-      "id": "self-dialogico-hermans",
-      "label": "Teoría del self dialógico",
-      "year": 1996,
-      "autores": "Hubert J. M. Hermans",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/self-dialogico-hermans.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hermans_secuenciacionDialogica",
-            "nombre": "Secuenciación dialógica de episodios (microanálisis de diálogo interno)",
-            "texto": "Procedimiento que reconstruye un episodio concreto (discusión, fracaso, crítica, evitación) paso a paso, identificando qué posición aparece primero, qué dice/hace, qué voz responde, cómo escala el conflicto y dónde se rompe la mentalización o la regulación. El terapeuta convierte el “me pasa” en una secuencia observable (turnos internos), favoreciendo metacognición y permitiendo intervenir en puntos de bifurcación (pausas, cambios de tono, introducción de una voz mediadora) para flexibilizar el patrón. (Hermans, 1996).",
-            "sub": "RI_dialogoFuncional"
-          },
-          {
-            "codigo": "p_hermans_dialogoFacilitado",
-            "nombre": "Diálogo interno facilitado (turn-taking entre posiciones)",
-            "texto": "Procedimiento en el que el terapeuta estructura un intercambio explícito entre dos o más posiciones del self, asegurando turnos, límites y condiciones de seguridad (sin humillación, sin monopolio, con escucha). Se promueve que cada voz exprese necesidades, temores y criterios de protección, y que pueda escuchar el impacto de su estilo sobre otras partes, transformando el diálogo estereotipado (crítico–culpable, exigente–fracasado) en comunicación interna más realista y regulada. (Hermans, 1996; Hermans et al., 1992).",
-            "sub": "RI_dialogoFuncional"
-          },
-          {
-            "codigo": "p_hermans_cartasEntrePosiciones",
-            "nombre": "Cartas o mensajes entre posiciones (lettering dialógico)",
-            "texto": "Procedimiento narrativo en el que dos posiciones se escriben entre sí con reglas claras de respeto y objetivo de comprensión, no de condena. Facilita expresión de necesidades, reconstrucción de significado y reparación de autoimagen, especialmente cuando el diálogo oral se bloquea o se vuelve defensivo. (Hermans et al., 1992; Hermans, 1996).",
-            "sub": "RI_dialogoFuncional"
-          },
-          {
-            "codigo": "p_hermans_chairworkVoces",
-            "nombre": "Enactment en sillas (chairwork) para voces internas",
-            "texto": "Procedimiento experiencial que dramatiza posiciones del self en sillas distintas para aumentar vividez emocional y claridad de voz, permitiendo que cada parte se exprese plenamente y que el paciente experimente la transición entre posiciones. Se usa para desbloquear conflictos estancados y reorganizar el diálogo interno, cuidando la ventana de tolerancia. (Hermans, 1996).",
-            "sub": "RI_dialogoFuncional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_hermans_darTurnoVoz",
-            "nombre": "Dar turno a una voz silenciada",
-            "texto": "Microintervención que consiste en frenar explícitamente a la voz dominante y abrir espacio para que una voz inhibida pueda expresarse con seguridad. Amplía el repertorio identitario, reduce monopolios internos y facilita la emergencia de necesidades, emociones o valores previamente bloqueados. (Hermans, 1996).",
-            "sub": "RI_dialogoFuncional"
-          },
-          {
-            "codigo": "m_hermans_traducirVoces",
-            "nombre": "Traducir entre voces",
-            "texto": "Microintervención en la que el terapeuta ayuda a reformular el mensaje de una voz para que pueda ser escuchado por otra (por ejemplo, traduciendo crítica en preocupación). Reduce malentendidos internos y favorece cooperación entre posiciones que comparten objetivos pero usan estrategias incompatibles. (Hermans, 1996).",
-            "sub": "RI_dialogoFuncional"
-          }
-        ]
-      }
+      "modelId": "terapia-colaborativa",
+      "modelLabel": "Terapia colaborativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Harlene Anderson; Harold Goolishian",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_colab_polifonia",
+          "nombre": "Trabajo con múltiples voces y perspectivas (polifonía conversacional)",
+          "texto": "Procedimiento que facilita que aparezcan distintas voces, posiciones y perspectivas del consultante (y, si procede, del sistema relacional) sin jerarquizarlas como verdaderas o falsas, promoviendo un diálogo interno más funcional y una identidad menos monolítica; al permitir polifonía, se reduce la tiranía de una única narrativa dominante y se amplía el repertorio de significado disponible para decidir y actuar. (Anderson, 1997)",
+          "sub": "RI_dialogoFuncional"
+        },
+        {
+          "codigo": "m_colab_multiplesPerspectivas",
+          "nombre": "Invitación a múltiples perspectivas",
+          "texto": "Invitación a considerar cómo una situación podría verse desde diferentes voces o posiciones sin jerarquizarlas, promoviendo polifonía interna y reduciendo la rigidez de una única narrativa dominante. (Anderson, 1997)",
+          "sub": "RI_dialogoFuncional"
+        }
+      ]
     },
     {
-      "id": "terapia-metacognitiva-interpersonal-mit",
-      "label": "Terapia Metacognitiva Interpersonal (MIT)",
-      "year": 2002,
-      "autores": "Giancarlo Dimaggio; Antonio Semerari; Paul Lysaker",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-metacognitiva-interpersonal-mit.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mit_evaluacion_metacognitiva",
-            "nombre": "Evaluación del perfil metacognitivo",
-            "texto": "Procedimiento inicial orientado a evaluar de manera clínica y narrativa las capacidades metacognitivas del paciente: identificación de estados mentales propios, comprensión de los estados mentales ajenos, reflexión sobre ellos e integración para guiar la acción. Esta evaluación no se realiza como test estandarizado, sino a través del análisis del discurso, la narrativa autobiográfica y las interacciones terapéuticas, permitiendo identificar déficits específicos que guiarán la intervención posterior (Dimaggio & Semerari, 2007; Dimaggio et al., 2015).",
-            "sub": "RI_dialogoFuncional"
-          },
-          {
-            "codigo": "p_mit_reflexion_metacognitiva",
-            "nombre": "Reflexión metacognitiva guiada",
-            "texto": "Procedimiento mediante el cual el terapeuta guía explícitamente al paciente a reflexionar sobre sus propios estados mentales y los de los demás, examinando cómo influyen en la conducta y en las relaciones. Esta reflexión se realiza de forma gradual y colaborativa, ajustándose al nivel metacognitivo del paciente para evitar sobrecarga o retraimiento (Dimaggio & Semerari, 2007).",
-            "sub": "RI_dialogoFuncional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mit_reflexion_escalonada",
-            "nombre": "Reflexión metacognitiva escalonada",
-            "texto": "Micro que ajusta el nivel de reflexión metacognitiva a la capacidad actual del paciente, pasando progresivamente de identificación emocional a comprensión de estados mentales complejos. Esta escalada evita sobrecarga cognitiva y retraimiento defensivo (Dimaggio et al., 2015).",
-            "sub": "RI_dialogoFuncional"
-          }
-        ]
-      }
+      "modelId": "terapia-metacognitiva-interpersonal-mit",
+      "modelLabel": "Terapia Metacognitiva Interpersonal (MIT)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Giancarlo Dimaggio; Antonio Semerari; Paul Lysaker",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mit_evaluacion_metacognitiva",
+          "nombre": "Evaluación del perfil metacognitivo",
+          "texto": "Procedimiento inicial orientado a evaluar de manera clínica y narrativa las capacidades metacognitivas del paciente: identificación de estados mentales propios, comprensión de los estados mentales ajenos, reflexión sobre ellos e integración para guiar la acción. Esta evaluación no se realiza como test estandarizado, sino a través del análisis del discurso, la narrativa autobiográfica y las interacciones terapéuticas, permitiendo identificar déficits específicos que guiarán la intervención posterior (Dimaggio & Semerari, 2007; Dimaggio et al., 2015).",
+          "sub": "RI_dialogoFuncional"
+        },
+        {
+          "codigo": "p_mit_reflexion_metacognitiva",
+          "nombre": "Reflexión metacognitiva guiada",
+          "texto": "Procedimiento mediante el cual el terapeuta guía explícitamente al paciente a reflexionar sobre sus propios estados mentales y los de los demás, examinando cómo influyen en la conducta y en las relaciones. Esta reflexión se realiza de forma gradual y colaborativa, ajustándose al nivel metacognitivo del paciente para evitar sobrecarga o retraimiento (Dimaggio & Semerari, 2007).",
+          "sub": "RI_dialogoFuncional"
+        },
+        {
+          "codigo": "m_mit_reflexion_escalonada",
+          "nombre": "Reflexión metacognitiva escalonada",
+          "texto": "Micro que ajusta el nivel de reflexión metacognitiva a la capacidad actual del paciente, pasando progresivamente de identificación emocional a comprensión de estados mentales complejos. Esta escalada evita sobrecarga cognitiva y retraimiento defensivo (Dimaggio et al., 2015).",
+          "sub": "RI_dialogoFuncional"
+        }
+      ]
     }
   ]
 }

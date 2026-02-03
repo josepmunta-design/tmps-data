@@ -1,515 +1,451 @@
 {
   "subprocesoId": "N_insightPsicodinamico",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 14,
   "modelos": [
     {
-      "id": "p1freud",
-      "label": "Psicoanálisis clásico",
-      "year": 1896,
-      "autores": "Sigmund Freud",
-      "grupo": "psicoanalisis",
-      "file": "data/Core/modelos/psicoanalisis/p1freud.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_freud_transferencia",
-            "nombre": "Trabajo con la transferencia",
-            "texto": "Se examina cómo el paciente actualiza en el vínculo terapéutico expectativas y patrones relacionales aprendidos, usando la transferencia como material clínico vivo.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_freud_interpretacionTentativa",
-            "nombre": "Hipótesis interpretativa tentativa",
-            "texto": "Ofrecer una interpretación no dogmática que se contrasta con la experiencia del paciente.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ]
-      }
+      "modelId": "analisis-bioenergetico",
+      "modelLabel": "Análisis Bioenergético",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Alexander Lowen",
+      "modelYear": 1956,
+      "items": [
+        {
+          "codigo": "p_bioenergetico_caracter",
+          "nombre": "Análisis de la estructura del carácter",
+          "texto": "Procedimiento de conceptualización clínica que relaciona patrones corporales, emocionales y relacionales con estilos caracterológicos. Permite comprender cómo la historia emocional se expresa en el cuerpo y orientar la intervención terapéutica de forma integrada (Lowen, 1958).",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "relaciones-objeto-klein",
-      "label": "Relaciones de objeto (Klein)",
-      "year": 1932,
-      "autores": "Melanie Klein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/relaciones-objeto-klein.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_klein_tecnica_juego",
-            "nombre": "Técnica del juego como asociación libre infantil",
-            "texto": "Uso sistemático del juego, dibujos, muñecos, historias y escenas para que el niño (o el adulto en registros simbólicos equivalentes) exprese fantasías inconscientes, ansiedades y relaciones de objeto internas en forma dramatizada; el terapeuta observa temas repetitivos, roles persecutorios/idealizados, cambios afectivos y micro-enactments, y los utiliza para formular interpretaciones que conviertan la actuación simbólica en pensamiento y significado, facilitando simbolización y tolerancia afectiva.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_interpretacion_fantasia",
-            "nombre": "Interpretación de fantasía inconsciente (a partir del aquí-ahora)",
-            "texto": "Formulación e intervención interpretativa que liga conducta, afecto y escena interna actualizada en sesión (transferencia) con fantasías inconscientes subyacentes (por ejemplo, ataques, abandono, saqueo, intrusión), explicitando cómo esas fantasías organizan percepción y respuesta; se prioriza la cercanía al material inmediato, el lenguaje concreto y el vínculo con la ansiedad activa, para que la interpretación no sea una teoría externa sino una herramienta que transforma confusión en comprensión.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_transferencia_temprana",
-            "nombre": "Análisis de la transferencia temprana y negativa",
-            "texto": "Trabajo deliberado con la actualización inmediata de objetos internos en la relación terapéutica, incluyendo formas negativas (desconfianza, ataques, devaluación) entendidas como manifestaciones de ansiedad persecutoria y defensas; el terapeuta interpreta cómo el paciente “convierte” al terapeuta en un objeto idealizado o persecutorio y cómo eso protege de dependencia, culpa o pérdida, favoreciendo una lectura más mentalizada del vínculo y disminuyendo la literalidad persecutoria.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_posiciones",
-            "nombre": "Interpretación de posiciones esquizo-paranoide y depresiva",
-            "texto": "Procedimiento de formulación y señalamiento clínico de la posición predominante en el momento (escisión y persecución vs integración y preocupación), ayudando a identificar oscilaciones, disparadores y costes; se nombra el patrón de organización (por ejemplo, idealización/devaluación, certeza persecutoria, culpa global), se lo vincula con afectos presentes y se orienta a ampliar la capacidad de sostener ambivalencia, facilitando integración del self y del objeto.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_defensas_primitivas",
-            "nombre": "Trabajo con defensas primitivas en vivo (escisión, proyección, negación)",
-            "texto": "Identificación y clarificación inmediata de defensas activas que fragmentan la experiencia (escisión), expulsan afectos intolerables (proyección) o borran daño/dependencia (negación y defensas maníacas), mostrando su función protectora y su coste relacional; el terapeuta describe el movimiento defensivo tal como ocurre (sin acusar), lo enlaza con la ansiedad que intenta evitar y abre alternativas de sostén interno para que el paciente pueda re-integrar lo expulsado con menos vergüenza y menos ataque.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_eval_funcional_defensas",
-            "nombre": "Evaluación funcional de defensas (ansiedad → defensa → alivio → coste)",
-            "texto": "Procedimiento de lectura funcional y no moralizante que identifica qué ansiedad específica dispara una defensa (persecutoria, pérdida, culpa, dependencia), cómo la defensa alivia a corto plazo (control, distancia, certeza, superioridad) y qué coste produce a medio plazo (fragmentación, conflicto, vacío, ataque al vínculo); el terapeuta construye con el paciente una secuencia repetitiva observable en sesión (y fuera) para que la defensa deje de vivirse como “yo soy así” y pase a verse como una solución protectora que puede flexibilizarse.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_interpretacion_graduada_defensas",
-            "nombre": "Interpretación graduada de defensas (clarificación → señalamiento → interpretación)",
-            "texto": "Técnica de timing que ordena la intervención sobre defensas en tres niveles: primero clarificar el estado (qué emoción/amenaza hay), luego señalar el movimiento defensivo tal como ocurre (por ejemplo, escisión, negación, control omnipotente, devaluación) y solo después interpretar la fantasía y el objeto interno implicados; esta gradación permite sostener la ventana de tolerancia, evita interpretaciones que se vivan como intrusivas y convierte el análisis de defensas en una experiencia de regulación e integración, especialmente cuando aparecen ataques al vínculo.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_defensas_en_transferencia",
-            "nombre": "Trabajo con defensas en transferencia (objeto persecutorio / objeto idealizado / objeto necesitado)",
-            "texto": "Procedimiento que localiza las defensas en el aquí-ahora relacional: cómo el paciente convierte al terapeuta en un objeto persecutorio o idealizado y qué defensa sostiene esa construcción (proyección, identificación proyectiva, idealización/devaluación, negación, manía, retirada); el terapeuta devuelve la secuencia como hipótesis mentalizadora (“cuando sientes X aparece Y y entonces necesitas Z para no sentir…”) y repara micro-rupturas para que la transferencia deje de ser un campo de batalla y se vuelva un laboratorio de integración.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_identificacion_proyectiva",
-            "nombre": "Análisis de identificación proyectiva y uso de la contratransferencia como instrumento",
-            "texto": "Exploración de cómo el paciente induce estados en el terapeuta (por presión relacional, tono, urgencia, acusación, seducción o retirada) para evacuar afectos o controlar al objeto, distinguiendo identificación proyectiva evacuativa de formas comunicativas; el terapeuta registra su experiencia contratransferencial como dato, la metaboliza y la devuelve en forma de interpretación mentalizadora, lo que convierte una descarga relacional en comprensión compartida y reduce enactments repetitivos.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_ansiedad_persecutoria",
-            "nombre": "Interpretación de ansiedad persecutoria y su lógica",
-            "texto": "Procedimiento centrado en hacer explícita la experiencia de amenaza interna (ser atacado, invadido, aniquilado, controlado) que sostiene vigilancia, hostilidad o retraimiento; se describe la secuencia disparador-fantasía-afecto-defensa, se valida la vivencia sin asumir su literalidad externa y se orienta a ampliar la tolerancia a la incertidumbre, reduciendo el recurso automático a proyección y control omnipotente.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_idealizacion_devaluacion",
-            "nombre": "Análisis de idealización y devaluación (objeto parcial)",
-            "texto": "Trabajo clínico sobre la oscilación extrema entre ver al otro (o al self) como totalmente bueno o totalmente malo, entendida como manifestación de escisión para manejar ansiedad; el terapeuta señala cómo la idealización protege de pérdida y cómo la devaluación protege de dependencia y vergüenza, promoviendo una percepción más integrada del objeto total y una autoimagen menos fragmentada.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_defensas_maniacas",
-            "nombre": "Interpretación de defensas maníacas (triunfo, desprecio, negación de dependencia)",
-            "texto": "Identificación de movimientos de superioridad, prisa, desdén o hiper-eficacia que sirven para evitar tristeza, culpa o dependencia; el terapeuta formula la función protectora de la manía (no sentir necesidad) y su coste (aislamiento, daño relacional), abriendo espacio para reconocer necesidades reales y sostener afectos depresivos sin colapsar.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_envidia_gratitud",
-            "nombre": "Trabajo con envidia y gratitud en la relación con el objeto",
-            "texto": "Exploración de la envidia como impulso a atacar o vaciar al objeto bueno cuando se vive como inaccesible o humillante, y de la gratitud como capacidad de reconocer aporte sin necesidad de control; el terapeuta ayuda a identificar micro-señales de resentimiento, comparación y descalificación, a enlazarlas con vulnerabilidad y dependencia, y a construir una relación más ética y menos destructiva con lo valioso (en el otro y en uno mismo).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_klein_resistencia_encuadre",
-            "nombre": "Análisis de resistencia y ataques al vínculo (incluido el encuadre)",
-            "texto": "Lectura clínica de interrupciones, olvidos, impuntualidad, discusiones sobre reglas o competencia con el terapeuta como expresiones de ansiedad y fantasía transferencial (por ejemplo, temor a ser controlado o devorado), diferenciando conflicto real del encuadre de la escena interna proyectada; se trabaja sosteniendo límites claros, interpretando la función defensiva y reparando rupturas sin entrar en luchas de poder.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_klein_nombrar_escision",
-            "nombre": "Nombrar la escisión en el momento (dos mundos incompatibles)",
-            "texto": "Microintervención que señala con lenguaje sencillo cuándo la experiencia queda partida en dos versiones absolutas (todo bueno/todo malo), ayudando a que el paciente observe la división como un estado y no como “la realidad”, abriendo el puente hacia matices y ambivalencia sin forzar integración prematura.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "m_klein_senal_idealizacion_devaluacion",
-            "nombre": "Señalar idealización/devaluación sin confrontar al self",
-            "texto": "Intervención corta que devuelve el cambio brusco de valoración como un movimiento protector frente a ansiedad, manteniendo un tono no acusatorio para que el paciente pueda sostener la vergüenza y no necesite defenderse con más ataque o retiro.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "m_klein_micro_ip",
-            "nombre": "Micro-interpretación de identificación proyectiva (impacto en el terapeuta)",
-            "texto": "Intervención breve que devuelve el impacto contratransferencial en forma de hipótesis suave (por ejemplo, “me llega una presión a hacer X, quizá así te libras de sentir Y”), facilitando que el paciente reconozca el mecanismo sin sentir que se le acusa.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "m_klein_senal_negacion_minimizacion",
-            "nombre": "Señalar negación y minimización del daño (sin moralizar)",
-            "texto": "Intervención breve que devuelve el gesto de negar, minimizar o pasar página (“esto no fue para tanto”, “da igual”) como una protección frente a culpa, tristeza o dependencia, manteniendo un tono no acusatorio para que el paciente pueda aproximarse al afecto depresivo sin sentirse juzgado.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "m_klein_ataque_vinculo_minima",
-            "nombre": "Interpretación mínima del ataque al vínculo (cuando aparece)",
-            "texto": "Microintervención en el mismo momento del ataque (descalificación, competencia, ironía, frialdad) que lo nombra como intento de protegerse de dependencia o vulnerabilidad, y lo vincula con la fantasía subyacente (“si me acerco, me invaden / me controlan / me hacen daño”), abriendo una salida distinta sin entrar en lucha de poder.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "m_klein_formacion_reactiva",
-            "nombre": "Microseñalar formación reactiva (cuidar/ser correcto para tapar hostilidad)",
-            "texto": "Microintervención que detecta un gesto de corrección excesiva, amabilidad rígida o complacencia que encubre agresión, envidia o resentimiento; el terapeuta lo formula como protección frente a culpa persecutoria, ayudando a reconocer la ambivalencia sin colapso ni actuación destructiva.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ]
-      }
+      "modelId": "psicodinamica-ciclica-wachtel",
+      "modelLabel": "Psicodinámica cíclica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Paul L. Wachtel",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_wachtel_formulacionCiclo",
+          "nombre": "Formulación del ciclo psicodinámico-conductual",
+          "texto": "Procedimiento central de la Psicodinámica cíclica que consiste en construir de forma colaborativa un mapa explícito del ciclo auto-mantenido que vincula disparadores contextuales, anticipaciones, emociones, defensas, conductas y respuestas del entorno. El objetivo no es explicar el pasado de forma abstracta, sino mostrar cómo la persona, sin pretenderlo, recrea en el presente las condiciones que confirman sus expectativas relacionales. Esta formulación sirve como brújula clínica para decidir dónde intervenir (conducta, comunicación, exposición, contexto o elaboración emocional) y para transformar el insight en una guía operativa de cambio, evitando moralización o intelectualización. (Wachtel, 1977; Wachtel, 2008)",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_wachtel_enactmentSesion",
+          "nombre": "Trabajo con enactments del ciclo en sesión",
+          "texto": "Procedimiento que utiliza la relación terapéutica como laboratorio vivo para detectar cuándo el ciclo relacional del paciente se reactiva en sesión mediante retirada, desafío, complacencia, acusación o frialdad emocional. El terapeuta hace explícito el proceso con sensibilidad, nombra el miedo o la expectativa subyacente y facilita una respuesta diferente dentro de un vínculo seguro, generando una experiencia relacional correctiva que puede ser internalizada y generalizada fuera de la consulta. (Wachtel, 2008; Wachtel, 2011)",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_wachtel_interpretacionUtil",
+          "nombre": "Interpretación contextualizada y utilizable",
+          "texto": "Procedimiento interpretativo que vincula las defensas y expectativas actuales con su función protectora en la historia relacional del paciente, mostrando cómo surgieron para evitar vergüenza, abandono o intrusión. La interpretación se formula de manera que aumente la compasión hacia la parte protectora y se traduzca en elecciones actuales concretas, evitando explicaciones cerradas que refuercen autoataque, fatalismo identitario o pasividad terapéutica. (Wachtel, 1977; Wachtel, 2008)",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_wachtel_funcionDefensa",
+          "nombre": "Hipótesis protectora (qué evita la defensa)",
+          "texto": "Microintervención que formula explícitamente la función protectora de una defensa concreta (por ejemplo, “si me muestro necesitado, me humillarán”), validando su lógica histórica y relacional. Al reconocer qué amenaza intenta evitar la defensa, se reduce la vergüenza y el autoataque, y se crea un clima interno más compasivo que facilita ensayar conductas nuevas sin vivenciarlas como traición a uno mismo. (Wachtel, 1977; Wachtel, 2008)",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "psicologia-yo-hartmann",
-      "label": "Psicología del yo",
-      "year": 1939,
-      "autores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-yo-hartmann.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hartmann_funciones_autonomas",
-            "nombre": "Clarificación y fortalecimiento de funciones autónomas",
-            "texto": "Trabajo clínico centrado en identificar, entrenar y consolidar funciones del yo relativamente libres de conflicto —como atención, pensamiento lógico, lenguaje y planificación— para mejorar la adaptación y reducir la dependencia de defensas rígidas.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-integrativa-erskine",
+      "modelLabel": "Terapia integrativa",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard G. Erskine",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "m_erskine_normalizarDefensa",
+          "nombre": "Normalización histórica de la defensa",
+          "texto": "Microintervención que contextualiza una defensa relacional dentro de la historia vital del paciente, subrayando su función protectora original. Esta normalización reduce autoataque y vergüenza, facilitando que la defensa pueda relajarse sin sentirse invalidada. (Erskine, 2015)",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "neopsicoanalisis",
-      "label": "Neopsicoanálisis",
-      "year": 1940,
-      "autores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/neopsicoanalisis.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neopsy_fromm_orientaciones_caracter",
-            "nombre": "Trabajo con orientaciones de carácter (Fromm) y estilo relacional",
-            "texto": "Técnica de formulación que explora tendencias relacionales como receptividad pasiva, explotación, acumulación/retención, marketing (self como producto) y orientación productiva, observando cómo se organizan la intimidad, el poder y la pertenencia; el objetivo clínico es avanzar hacia formas productivas basadas en cuidado, respeto, responsabilidad y conocimiento del otro.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "balint-falla-basica-regresion-benigna",
+      "modelLabel": "Balint – Falla básica y regresión benigna",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Michael Balint",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_balint_interpretacion_dosificada",
+          "nombre": "Dosificación interpretativa orientada al sostén",
+          "texto": "Procedimiento que emplea interpretaciones breves, cercanas al afecto y al aquí-ahora solo cuando el paciente puede utilizarlas sin sentirse invadido, haciendo de la interpretación una respuesta ambiental ajustada y no una exigencia cognitiva.",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "psicoanalisis-lacaniano",
-      "label": "Psicoanálisis lacaniano",
-      "year": 1953,
-      "autores": "Jacques Lacan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicoanalisis-lacaniano.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_lacan_escucha_significante",
-            "nombre": "Escucha del significante y del decir",
-            "texto": "Procedimiento fundamental que privilegia la escucha del significante por encima del contenido manifiesto, atendiendo a repeticiones, lapsus, equívocos, silencios, cortes del discurso y modos de enunciación, con el fin de aislar la lógica inconsciente que organiza el decir del sujeto y su posición frente al deseo; el analista no busca comprender empáticamente ni reconstruir coherencia narrativa, sino localizar puntos de insistencia significante que revelan la estructura del síntoma (Lacan, 1966, *Écrits*; Lacan, 1973, *The Four Fundamental Concepts of Psychoanalysis*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_lacan_interpretacion_equivoco",
-            "nombre": "Interpretación lacaniana por equívoco y desplazamiento de sentido",
-            "texto": "Intervención puntual y no explicativa que introduce un equívoco, un juego significante o un desplazamiento mínimo del sentido, produciendo un efecto de sorpresa que desorganiza la fijación imaginaria del significado y permite que emerja otra lectura del deseo; la interpretación no añade sentido psicológico, sino que opera sobre la cadena significante como corte, según la lógica desarrollada por Lacan en su retorno a Freud (Lacan, 1966, *Écrits*; Miller, 1987, *Interpreting the Cause*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_lacan_transferencia_simbolica",
-            "nombre": "Análisis de la transferencia como relación con el Otro simbólico",
-            "texto": "Trabajo clínico que aborda la transferencia no como vínculo afectivo real ni como alianza terapéutica, sino como actualización de la relación del sujeto con el Otro del lenguaje, permitiendo leer demandas, idealizaciones y resistencias como efectos del discurso y no como necesidades a satisfacer; esta concepción evita la captura imaginaria y sostiene la función analítica del deseo (Lacan, 1964/1973, *Seminar XI: The Four Fundamental Concepts of Psychoanalysis*; Fink, 1997, *A Clinical Introduction to Lacanian Psychoanalysis*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_lacan_sintoma_metafora",
-            "nombre": "Lectura del síntoma como formación significante",
-            "texto": "Procedimiento que entiende el síntoma no como conducta desadaptativa ni como déficit funcional, sino como una formación del inconsciente estructurada como metáfora, portadora de verdad subjetiva y ligada al goce; el trabajo clínico no busca eliminar el síntoma, sino modificar la relación del sujeto con él (Lacan, 1957, *The Instance of the Letter in the Unconscious*; Lacan, 1975, *RSI Seminar*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_lacan_goce",
-            "nombre": "Análisis del goce y de sus fijaciones",
-            "texto": "Intervención que explora los modos repetitivos de satisfacción paradójica implicados en el síntoma, diferenciando placer de goce y permitiendo al sujeto reconocer su implicación en aquello que le hace sufrir, desplazando la clínica del sentido hacia la ética del deseo (Lacan, 1969–1970, *The Other Side of Psychoanalysis*; Braunstein, 1990, *Jouissance: A Lacanian Concept*).",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_lacan_equivoco",
-            "nombre": "Señalar un equívoco significante",
-            "texto": "Microintervención que destaca un juego de palabras, homofonía o ambigüedad emergente en el decir del sujeto para producir un desplazamiento mínimo del sentido y abrir otra lectura del deseo sin explicación añadida, operando como interpretación por equívoco según la clínica del significante (Lacan, 1966, *Écrits*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "m_lacan_goce",
-            "nombre": "Señalar un desplazamiento del goce",
-            "texto": "Microintervención que apunta a un cambio en el modo de satisfacción ligado al síntoma, ayudando al sujeto a reconocer su implicación en aquello que le hace sufrir sin moralizar ni normalizar (Lacan, 1969–1970, *The Other Side of Psychoanalysis*; Braunstein, 1990, *Jouissance: A Lacanian Concept*).",
-            "sub": "N_insightPsicodinamico"
-          }
-        ]
-      }
+      "modelId": "bion-teoria-pensar-contencion",
+      "modelLabel": "Bion – Teoría del pensar y contención",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Wilfred R. Bion",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "p_bion_elementos_beta",
+          "nombre": "Identificación y metabolización de elementos beta",
+          "texto": "Procedimiento orientado a detectar manifestaciones de elementos beta —sensaciones, imágenes o impulsos no pensados— y a transformarlos progresivamente en elementos alfa mediante contención y simbolización, reduciendo la necesidad de evacuación defensiva y favoreciendo el desarrollo del pensamiento (Bion, 1962, *Learning from Experience*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_bion_identificacion_proyectiva",
+          "nombre": "Uso clínico de la identificación proyectiva",
+          "texto": "Procedimiento que aborda la identificación proyectiva no solo como defensa, sino como forma primitiva de comunicación, permitiendo al analista experimentar estados inducidos y devolverlos metabolizados para que el paciente pueda reconocerlos y pensarlos como propios (Bion, 1962, *Learning from Experience*; Ogden, 1982, *Projective Identification and Psychotherapeutic Technique*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_bion_devolver_metabolizado",
+          "nombre": "Devolver experiencia emocional metabolizada",
+          "texto": "Microintervención en la que el analista devuelve en palabras simples una experiencia previamente recibida de forma caótica, mostrando cómo algo inicialmente intolerable puede transformarse en pensamiento compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "sullivan-psicoanalisis-interpersonal",
-      "label": "Interpersonal – Sullivan",
-      "year": 1953,
-      "autores": "Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_sullivan_operaciones_seguridad",
-            "nombre": "Análisis de operaciones de seguridad",
-            "texto": "Trabajo sistemático con conductas y actitudes destinadas a reducir ansiedad a corto plazo —evitación, complacencia, hostilidad indirecta, control— explicando su lógica protectora y sus consecuencias a largo plazo sobre la calidad del vínculo.",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_sullivan_participante_observador",
-            "nombre": "Uso del terapeuta como participante-observador",
-            "texto": "Procedimiento mediante el cual el terapeuta participa activamente en la relación sin perder capacidad reflexiva, utilizando su experiencia en la interacción como dato para clarificar patrones y modelar una observación compartida del proceso.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_sullivan_operacion_seguridad",
-            "nombre": "Señalar una operación de seguridad activa",
-            "texto": "Intervención breve que identifica una conducta protectora en curso —complacencia, evitación, ironía, control— explicando su función ansiolítica sin juzgarla, lo que facilita que el paciente considere alternativas menos costosas relacionalmente.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ]
-      }
+      "modelId": "kernberg-relaciones-objetales-modernas",
+      "modelLabel": "Kernberg – Relaciones objetales modernas",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_kernberg_confrontacion",
+          "nombre": "Confrontación de contradicciones y defensas primitivas",
+          "texto": "Procedimiento que señala de manera directa pero contenida las contradicciones entre relatos, afectos y conductas, así como el uso activo de defensas primitivas como la escisión, idealización y devaluación, facilitando conciencia sin desorganizar al paciente (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_kernberg_analisis_transferencia",
+          "nombre": "Análisis sistemático de la transferencia",
+          "texto": "Procedimiento central en el que se examinan las reacciones emocionales y conductuales del paciente hacia el terapeuta como expresión directa de díadas relacionales internas escindidas, utilizándolas como principal vía de cambio estructural (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_kernberg_defensas_primitivas",
+          "nombre": "Interpretación de defensas primitivas en vivo",
+          "texto": "Procedimiento interpretativo que aborda directamente escisión, identificación proyectiva, negación, idealización y devaluación tal como aparecen en la sesión, ayudando al paciente a reconocer su función protectora y su coste relacional (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_kernberg_idealizacion_devaluacion",
+          "nombre": "Señalar idealización y devaluación alternantes",
+          "texto": "Intervención breve que pone de relieve los cambios bruscos entre idealización y devaluación del terapeuta u otras figuras significativas, facilitando conciencia del patrón relacional escindido sin entrar en luchas defensivas (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_interpretacion_dosificada",
-            "nombre": "Interpretación dosificada (interpretar como ‘respuesta ambiental’ y no como intrusión)",
-            "texto": "Procedimiento que sitúa la interpretación al servicio del holding: se utiliza lenguaje simple, cercano al afecto y al aquí-ahora, y solo cuando el paciente puede ‘usarla’ sin sentirse invadido; se priorizan formulaciones que devuelven continuidad y sentido sin imponer una teoría, evitando que el insight se convierta en nueva exigencia del falso self.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "neopsicoanalisis",
+      "modelLabel": "Neopsicoanálisis",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_neopsy_fromm_orientaciones_caracter",
+          "nombre": "Trabajo con orientaciones de carácter (Fromm) y estilo relacional",
+          "texto": "Técnica de formulación que explora tendencias relacionales como receptividad pasiva, explotación, acumulación/retención, marketing (self como producto) y orientación productiva, observando cómo se organizan la intimidad, el poder y la pertenencia; el objetivo clínico es avanzar hacia formas productivas basadas en cuidado, respeto, responsabilidad y conocimiento del otro.",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "analisis-bioenergetico",
-      "label": "Análisis Bioenergético",
-      "year": 1956,
-      "autores": "Alexander Lowen",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/analisis-bioenergetico.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bioenergetico_caracter",
-            "nombre": "Análisis de la estructura del carácter",
-            "texto": "Procedimiento de conceptualización clínica que relaciona patrones corporales, emocionales y relacionales con estilos caracterológicos. Permite comprender cómo la historia emocional se expresa en el cuerpo y orientar la intervención terapéutica de forma integrada (Lowen, 1958).",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "p1freud",
+      "modelLabel": "Psicoanálisis clásico",
+      "modelGrupo": "psicoanalisis",
+      "modelAutores": "Sigmund Freud",
+      "modelYear": 1896,
+      "items": [
+        {
+          "codigo": "p_freud_transferencia",
+          "nombre": "Trabajo con la transferencia",
+          "texto": "Se examina cómo el paciente actualiza en el vínculo terapéutico expectativas y patrones relacionales aprendidos, usando la transferencia como material clínico vivo.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_freud_interpretacionTentativa",
+          "nombre": "Hipótesis interpretativa tentativa",
+          "texto": "Ofrecer una interpretación no dogmática que se contrasta con la experiencia del paciente.",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "bion-teoria-pensar-contencion",
-      "label": "Bion – Teoría del pensar y contención",
-      "year": 1962,
-      "autores": "Wilfred R. Bion",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/bion-teoria-pensar-contencion.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bion_elementos_beta",
-            "nombre": "Identificación y metabolización de elementos beta",
-            "texto": "Procedimiento orientado a detectar manifestaciones de elementos beta —sensaciones, imágenes o impulsos no pensados— y a transformarlos progresivamente en elementos alfa mediante contención y simbolización, reduciendo la necesidad de evacuación defensiva y favoreciendo el desarrollo del pensamiento (Bion, 1962, *Learning from Experience*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_bion_identificacion_proyectiva",
-            "nombre": "Uso clínico de la identificación proyectiva",
-            "texto": "Procedimiento que aborda la identificación proyectiva no solo como defensa, sino como forma primitiva de comunicación, permitiendo al analista experimentar estados inducidos y devolverlos metabolizados para que el paciente pueda reconocerlos y pensarlos como propios (Bion, 1962, *Learning from Experience*; Ogden, 1982, *Projective Identification and Psychotherapeutic Technique*).",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_bion_devolver_metabolizado",
-            "nombre": "Devolver experiencia emocional metabolizada",
-            "texto": "Microintervención en la que el analista devuelve en palabras simples una experiencia previamente recibida de forma caótica, mostrando cómo algo inicialmente intolerable puede transformarse en pensamiento compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
-            "sub": "N_insightPsicodinamico"
-          }
-        ]
-      }
+      "modelId": "psicoanalisis-lacaniano",
+      "modelLabel": "Psicoanálisis lacaniano",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Jacques Lacan",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_lacan_escucha_significante",
+          "nombre": "Escucha del significante y del decir",
+          "texto": "Procedimiento fundamental que privilegia la escucha del significante por encima del contenido manifiesto, atendiendo a repeticiones, lapsus, equívocos, silencios, cortes del discurso y modos de enunciación, con el fin de aislar la lógica inconsciente que organiza el decir del sujeto y su posición frente al deseo; el analista no busca comprender empáticamente ni reconstruir coherencia narrativa, sino localizar puntos de insistencia significante que revelan la estructura del síntoma (Lacan, 1966, *Écrits*; Lacan, 1973, *The Four Fundamental Concepts of Psychoanalysis*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_lacan_interpretacion_equivoco",
+          "nombre": "Interpretación lacaniana por equívoco y desplazamiento de sentido",
+          "texto": "Intervención puntual y no explicativa que introduce un equívoco, un juego significante o un desplazamiento mínimo del sentido, produciendo un efecto de sorpresa que desorganiza la fijación imaginaria del significado y permite que emerja otra lectura del deseo; la interpretación no añade sentido psicológico, sino que opera sobre la cadena significante como corte, según la lógica desarrollada por Lacan en su retorno a Freud (Lacan, 1966, *Écrits*; Miller, 1987, *Interpreting the Cause*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_lacan_transferencia_simbolica",
+          "nombre": "Análisis de la transferencia como relación con el Otro simbólico",
+          "texto": "Trabajo clínico que aborda la transferencia no como vínculo afectivo real ni como alianza terapéutica, sino como actualización de la relación del sujeto con el Otro del lenguaje, permitiendo leer demandas, idealizaciones y resistencias como efectos del discurso y no como necesidades a satisfacer; esta concepción evita la captura imaginaria y sostiene la función analítica del deseo (Lacan, 1964/1973, *Seminar XI: The Four Fundamental Concepts of Psychoanalysis*; Fink, 1997, *A Clinical Introduction to Lacanian Psychoanalysis*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_lacan_sintoma_metafora",
+          "nombre": "Lectura del síntoma como formación significante",
+          "texto": "Procedimiento que entiende el síntoma no como conducta desadaptativa ni como déficit funcional, sino como una formación del inconsciente estructurada como metáfora, portadora de verdad subjetiva y ligada al goce; el trabajo clínico no busca eliminar el síntoma, sino modificar la relación del sujeto con él (Lacan, 1957, *The Instance of the Letter in the Unconscious*; Lacan, 1975, *RSI Seminar*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_lacan_goce",
+          "nombre": "Análisis del goce y de sus fijaciones",
+          "texto": "Intervención que explora los modos repetitivos de satisfacción paradójica implicados en el síntoma, diferenciando placer de goce y permitiendo al sujeto reconocer su implicación en aquello que le hace sufrir, desplazando la clínica del sentido hacia la ética del deseo (Lacan, 1969–1970, *The Other Side of Psychoanalysis*; Braunstein, 1990, *Jouissance: A Lacanian Concept*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_lacan_equivoco",
+          "nombre": "Señalar un equívoco significante",
+          "texto": "Microintervención que destaca un juego de palabras, homofonía o ambigüedad emergente en el decir del sujeto para producir un desplazamiento mínimo del sentido y abrir otra lectura del deseo sin explicación añadida, operando como interpretación por equívoco según la clínica del significante (Lacan, 1966, *Écrits*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_lacan_goce",
+          "nombre": "Señalar un desplazamiento del goce",
+          "texto": "Microintervención que apunta a un cambio en el modo de satisfacción ligado al síntoma, ayudando al sujeto a reconocer su implicación en aquello que le hace sufrir sin moralizar ni normalizar (Lacan, 1969–1970, *The Other Side of Psychoanalysis*; Braunstein, 1990, *Jouissance: A Lacanian Concept*).",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "balint-falla-basica-regresion-benigna",
-      "label": "Balint – Falla básica y regresión benigna",
-      "year": 1968,
-      "autores": "Michael Balint",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/balint-falla-basica-regresion-benigna.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_balint_interpretacion_dosificada",
-            "nombre": "Dosificación interpretativa orientada al sostén",
-            "texto": "Procedimiento que emplea interpretaciones breves, cercanas al afecto y al aquí-ahora solo cuando el paciente puede utilizarlas sin sentirse invadido, haciendo de la interpretación una respuesta ambiental ajustada y no una exigencia cognitiva.",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "p_hartmann_funciones_autonomas",
+          "nombre": "Clarificación y fortalecimiento de funciones autónomas",
+          "texto": "Trabajo clínico centrado en identificar, entrenar y consolidar funciones del yo relativamente libres de conflicto —como atención, pensamiento lógico, lenguaje y planificación— para mejorar la adaptación y reducir la dependencia de defensas rígidas.",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-psicodinamica-breve",
-      "label": "Psicoterapia psicodinámica breve",
-      "year": 1970,
-      "autores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_spb_transferencia_temprana",
-            "nombre": "Trabajo intensivo con la transferencia temprana",
-            "texto": "Procedimiento que aborda la transferencia desde las primeras sesiones, interpretando cómo el conflicto nuclear se reactiva en la relación terapéutica actual, permitiendo que el paciente observe en vivo sus expectativas, defensas y respuestas emocionales habituales (Strupp & Binder, 1984, *Psychotherapy in a New Key*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_spb_interpretacion_focal",
-            "nombre": "Interpretación focal y selectiva",
-            "texto": "Procedimiento interpretativo que prioriza intervenciones directamente vinculadas al foco dinámico, evitando exploraciones laterales, con el fin de concentrar insight emocional y facilitar cambios estructurales dentro del tiempo limitado (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_spb_defensas_predominantes",
-            "nombre": "Trabajo activo con defensas predominantes",
-            "texto": "Procedimiento dirigido a identificar y señalar defensas que interfieren con el contacto emocional —intelectualización, evitación, racionalización— mostrando su función protectora y su relación con el conflicto nuclear, sin desmontarlas prematuramente (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_spb_emocion_vs_defensa",
-            "nombre": "Diferenciar emoción primaria de defensa secundaria",
-            "texto": "Intervención breve que ayuda a distinguir entre el afecto central del conflicto y las reacciones defensivas que lo cubren, facilitando un contacto emocional más directo y transformador (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
-            "sub": "N_insightPsicodinamico"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_transferencia_temprana",
+          "nombre": "Trabajo intensivo con la transferencia temprana",
+          "texto": "Procedimiento que aborda la transferencia desde las primeras sesiones, interpretando cómo el conflicto nuclear se reactiva en la relación terapéutica actual, permitiendo que el paciente observe en vivo sus expectativas, defensas y respuestas emocionales habituales (Strupp & Binder, 1984, *Psychotherapy in a New Key*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_spb_interpretacion_focal",
+          "nombre": "Interpretación focal y selectiva",
+          "texto": "Procedimiento interpretativo que prioriza intervenciones directamente vinculadas al foco dinámico, evitando exploraciones laterales, con el fin de concentrar insight emocional y facilitar cambios estructurales dentro del tiempo limitado (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_spb_defensas_predominantes",
+          "nombre": "Trabajo activo con defensas predominantes",
+          "texto": "Procedimiento dirigido a identificar y señalar defensas que interfieren con el contacto emocional —intelectualización, evitación, racionalización— mostrando su función protectora y su relación con el conflicto nuclear, sin desmontarlas prematuramente (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_spb_emocion_vs_defensa",
+          "nombre": "Diferenciar emoción primaria de defensa secundaria",
+          "texto": "Intervención breve que ayuda a distinguir entre el afecto central del conflicto y las reacciones defensivas que lo cubren, facilitando un contacto emocional más directo y transformador (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "kernberg-relaciones-objetales-modernas",
-      "label": "Kernberg – Relaciones objetales modernas",
-      "year": 1975,
-      "autores": "Otto F. Kernberg",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/kernberg-relaciones-objetales-modernas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kernberg_confrontacion",
-            "nombre": "Confrontación de contradicciones y defensas primitivas",
-            "texto": "Procedimiento que señala de manera directa pero contenida las contradicciones entre relatos, afectos y conductas, así como el uso activo de defensas primitivas como la escisión, idealización y devaluación, facilitando conciencia sin desorganizar al paciente (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_kernberg_analisis_transferencia",
-            "nombre": "Análisis sistemático de la transferencia",
-            "texto": "Procedimiento central en el que se examinan las reacciones emocionales y conductuales del paciente hacia el terapeuta como expresión directa de díadas relacionales internas escindidas, utilizándolas como principal vía de cambio estructural (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_kernberg_defensas_primitivas",
-            "nombre": "Interpretación de defensas primitivas en vivo",
-            "texto": "Procedimiento interpretativo que aborda directamente escisión, identificación proyectiva, negación, idealización y devaluación tal como aparecen en la sesión, ayudando al paciente a reconocer su función protectora y su coste relacional (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_kernberg_idealizacion_devaluacion",
-            "nombre": "Señalar idealización y devaluación alternantes",
-            "texto": "Intervención breve que pone de relieve los cambios bruscos entre idealización y devaluación del terapeuta u otras figuras significativas, facilitando conciencia del patrón relacional escindido sin entrar en luchas defensivas (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
-            "sub": "N_insightPsicodinamico"
-          }
-        ]
-      }
+      "modelId": "relaciones-objeto-klein",
+      "modelLabel": "Relaciones de objeto (Klein)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Melanie Klein",
+      "modelYear": 1932,
+      "items": [
+        {
+          "codigo": "p_klein_tecnica_juego",
+          "nombre": "Técnica del juego como asociación libre infantil",
+          "texto": "Uso sistemático del juego, dibujos, muñecos, historias y escenas para que el niño (o el adulto en registros simbólicos equivalentes) exprese fantasías inconscientes, ansiedades y relaciones de objeto internas en forma dramatizada; el terapeuta observa temas repetitivos, roles persecutorios/idealizados, cambios afectivos y micro-enactments, y los utiliza para formular interpretaciones que conviertan la actuación simbólica en pensamiento y significado, facilitando simbolización y tolerancia afectiva.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_interpretacion_fantasia",
+          "nombre": "Interpretación de fantasía inconsciente (a partir del aquí-ahora)",
+          "texto": "Formulación e intervención interpretativa que liga conducta, afecto y escena interna actualizada en sesión (transferencia) con fantasías inconscientes subyacentes (por ejemplo, ataques, abandono, saqueo, intrusión), explicitando cómo esas fantasías organizan percepción y respuesta; se prioriza la cercanía al material inmediato, el lenguaje concreto y el vínculo con la ansiedad activa, para que la interpretación no sea una teoría externa sino una herramienta que transforma confusión en comprensión.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_transferencia_temprana",
+          "nombre": "Análisis de la transferencia temprana y negativa",
+          "texto": "Trabajo deliberado con la actualización inmediata de objetos internos en la relación terapéutica, incluyendo formas negativas (desconfianza, ataques, devaluación) entendidas como manifestaciones de ansiedad persecutoria y defensas; el terapeuta interpreta cómo el paciente “convierte” al terapeuta en un objeto idealizado o persecutorio y cómo eso protege de dependencia, culpa o pérdida, favoreciendo una lectura más mentalizada del vínculo y disminuyendo la literalidad persecutoria.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_posiciones",
+          "nombre": "Interpretación de posiciones esquizo-paranoide y depresiva",
+          "texto": "Procedimiento de formulación y señalamiento clínico de la posición predominante en el momento (escisión y persecución vs integración y preocupación), ayudando a identificar oscilaciones, disparadores y costes; se nombra el patrón de organización (por ejemplo, idealización/devaluación, certeza persecutoria, culpa global), se lo vincula con afectos presentes y se orienta a ampliar la capacidad de sostener ambivalencia, facilitando integración del self y del objeto.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_defensas_primitivas",
+          "nombre": "Trabajo con defensas primitivas en vivo (escisión, proyección, negación)",
+          "texto": "Identificación y clarificación inmediata de defensas activas que fragmentan la experiencia (escisión), expulsan afectos intolerables (proyección) o borran daño/dependencia (negación y defensas maníacas), mostrando su función protectora y su coste relacional; el terapeuta describe el movimiento defensivo tal como ocurre (sin acusar), lo enlaza con la ansiedad que intenta evitar y abre alternativas de sostén interno para que el paciente pueda re-integrar lo expulsado con menos vergüenza y menos ataque.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_eval_funcional_defensas",
+          "nombre": "Evaluación funcional de defensas (ansiedad → defensa → alivio → coste)",
+          "texto": "Procedimiento de lectura funcional y no moralizante que identifica qué ansiedad específica dispara una defensa (persecutoria, pérdida, culpa, dependencia), cómo la defensa alivia a corto plazo (control, distancia, certeza, superioridad) y qué coste produce a medio plazo (fragmentación, conflicto, vacío, ataque al vínculo); el terapeuta construye con el paciente una secuencia repetitiva observable en sesión (y fuera) para que la defensa deje de vivirse como “yo soy así” y pase a verse como una solución protectora que puede flexibilizarse.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_interpretacion_graduada_defensas",
+          "nombre": "Interpretación graduada de defensas (clarificación → señalamiento → interpretación)",
+          "texto": "Técnica de timing que ordena la intervención sobre defensas en tres niveles: primero clarificar el estado (qué emoción/amenaza hay), luego señalar el movimiento defensivo tal como ocurre (por ejemplo, escisión, negación, control omnipotente, devaluación) y solo después interpretar la fantasía y el objeto interno implicados; esta gradación permite sostener la ventana de tolerancia, evita interpretaciones que se vivan como intrusivas y convierte el análisis de defensas en una experiencia de regulación e integración, especialmente cuando aparecen ataques al vínculo.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_defensas_en_transferencia",
+          "nombre": "Trabajo con defensas en transferencia (objeto persecutorio / objeto idealizado / objeto necesitado)",
+          "texto": "Procedimiento que localiza las defensas en el aquí-ahora relacional: cómo el paciente convierte al terapeuta en un objeto persecutorio o idealizado y qué defensa sostiene esa construcción (proyección, identificación proyectiva, idealización/devaluación, negación, manía, retirada); el terapeuta devuelve la secuencia como hipótesis mentalizadora (“cuando sientes X aparece Y y entonces necesitas Z para no sentir…”) y repara micro-rupturas para que la transferencia deje de ser un campo de batalla y se vuelva un laboratorio de integración.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_identificacion_proyectiva",
+          "nombre": "Análisis de identificación proyectiva y uso de la contratransferencia como instrumento",
+          "texto": "Exploración de cómo el paciente induce estados en el terapeuta (por presión relacional, tono, urgencia, acusación, seducción o retirada) para evacuar afectos o controlar al objeto, distinguiendo identificación proyectiva evacuativa de formas comunicativas; el terapeuta registra su experiencia contratransferencial como dato, la metaboliza y la devuelve en forma de interpretación mentalizadora, lo que convierte una descarga relacional en comprensión compartida y reduce enactments repetitivos.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_ansiedad_persecutoria",
+          "nombre": "Interpretación de ansiedad persecutoria y su lógica",
+          "texto": "Procedimiento centrado en hacer explícita la experiencia de amenaza interna (ser atacado, invadido, aniquilado, controlado) que sostiene vigilancia, hostilidad o retraimiento; se describe la secuencia disparador-fantasía-afecto-defensa, se valida la vivencia sin asumir su literalidad externa y se orienta a ampliar la tolerancia a la incertidumbre, reduciendo el recurso automático a proyección y control omnipotente.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_idealizacion_devaluacion",
+          "nombre": "Análisis de idealización y devaluación (objeto parcial)",
+          "texto": "Trabajo clínico sobre la oscilación extrema entre ver al otro (o al self) como totalmente bueno o totalmente malo, entendida como manifestación de escisión para manejar ansiedad; el terapeuta señala cómo la idealización protege de pérdida y cómo la devaluación protege de dependencia y vergüenza, promoviendo una percepción más integrada del objeto total y una autoimagen menos fragmentada.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_defensas_maniacas",
+          "nombre": "Interpretación de defensas maníacas (triunfo, desprecio, negación de dependencia)",
+          "texto": "Identificación de movimientos de superioridad, prisa, desdén o hiper-eficacia que sirven para evitar tristeza, culpa o dependencia; el terapeuta formula la función protectora de la manía (no sentir necesidad) y su coste (aislamiento, daño relacional), abriendo espacio para reconocer necesidades reales y sostener afectos depresivos sin colapsar.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_envidia_gratitud",
+          "nombre": "Trabajo con envidia y gratitud en la relación con el objeto",
+          "texto": "Exploración de la envidia como impulso a atacar o vaciar al objeto bueno cuando se vive como inaccesible o humillante, y de la gratitud como capacidad de reconocer aporte sin necesidad de control; el terapeuta ayuda a identificar micro-señales de resentimiento, comparación y descalificación, a enlazarlas con vulnerabilidad y dependencia, y a construir una relación más ética y menos destructiva con lo valioso (en el otro y en uno mismo).",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_klein_resistencia_encuadre",
+          "nombre": "Análisis de resistencia y ataques al vínculo (incluido el encuadre)",
+          "texto": "Lectura clínica de interrupciones, olvidos, impuntualidad, discusiones sobre reglas o competencia con el terapeuta como expresiones de ansiedad y fantasía transferencial (por ejemplo, temor a ser controlado o devorado), diferenciando conflicto real del encuadre de la escena interna proyectada; se trabaja sosteniendo límites claros, interpretando la función defensiva y reparando rupturas sin entrar en luchas de poder.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_klein_nombrar_escision",
+          "nombre": "Nombrar la escisión en el momento (dos mundos incompatibles)",
+          "texto": "Microintervención que señala con lenguaje sencillo cuándo la experiencia queda partida en dos versiones absolutas (todo bueno/todo malo), ayudando a que el paciente observe la división como un estado y no como “la realidad”, abriendo el puente hacia matices y ambivalencia sin forzar integración prematura.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_klein_senal_idealizacion_devaluacion",
+          "nombre": "Señalar idealización/devaluación sin confrontar al self",
+          "texto": "Intervención corta que devuelve el cambio brusco de valoración como un movimiento protector frente a ansiedad, manteniendo un tono no acusatorio para que el paciente pueda sostener la vergüenza y no necesite defenderse con más ataque o retiro.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_klein_micro_ip",
+          "nombre": "Micro-interpretación de identificación proyectiva (impacto en el terapeuta)",
+          "texto": "Intervención breve que devuelve el impacto contratransferencial en forma de hipótesis suave (por ejemplo, “me llega una presión a hacer X, quizá así te libras de sentir Y”), facilitando que el paciente reconozca el mecanismo sin sentir que se le acusa.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_klein_senal_negacion_minimizacion",
+          "nombre": "Señalar negación y minimización del daño (sin moralizar)",
+          "texto": "Intervención breve que devuelve el gesto de negar, minimizar o pasar página (“esto no fue para tanto”, “da igual”) como una protección frente a culpa, tristeza o dependencia, manteniendo un tono no acusatorio para que el paciente pueda aproximarse al afecto depresivo sin sentirse juzgado.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_klein_ataque_vinculo_minima",
+          "nombre": "Interpretación mínima del ataque al vínculo (cuando aparece)",
+          "texto": "Microintervención en el mismo momento del ataque (descalificación, competencia, ironía, frialdad) que lo nombra como intento de protegerse de dependencia o vulnerabilidad, y lo vincula con la fantasía subyacente (“si me acerco, me invaden / me controlan / me hacen daño”), abriendo una salida distinta sin entrar en lucha de poder.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_klein_formacion_reactiva",
+          "nombre": "Microseñalar formación reactiva (cuidar/ser correcto para tapar hostilidad)",
+          "texto": "Microintervención que detecta un gesto de corrección excesiva, amabilidad rígida o complacencia que encubre agresión, envidia o resentimiento; el terapeuta lo formula como protección frente a culpa persecutoria, ayudando a reconocer la ambivalencia sin colapso ni actuación destructiva.",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "psicodinamica-ciclica-wachtel",
-      "label": "Psicodinámica cíclica",
-      "year": 1977,
-      "autores": "Paul L. Wachtel",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_wachtel_formulacionCiclo",
-            "nombre": "Formulación del ciclo psicodinámico-conductual",
-            "texto": "Procedimiento central de la Psicodinámica cíclica que consiste en construir de forma colaborativa un mapa explícito del ciclo auto-mantenido que vincula disparadores contextuales, anticipaciones, emociones, defensas, conductas y respuestas del entorno. El objetivo no es explicar el pasado de forma abstracta, sino mostrar cómo la persona, sin pretenderlo, recrea en el presente las condiciones que confirman sus expectativas relacionales. Esta formulación sirve como brújula clínica para decidir dónde intervenir (conducta, comunicación, exposición, contexto o elaboración emocional) y para transformar el insight en una guía operativa de cambio, evitando moralización o intelectualización. (Wachtel, 1977; Wachtel, 2008)",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_wachtel_enactmentSesion",
-            "nombre": "Trabajo con enactments del ciclo en sesión",
-            "texto": "Procedimiento que utiliza la relación terapéutica como laboratorio vivo para detectar cuándo el ciclo relacional del paciente se reactiva en sesión mediante retirada, desafío, complacencia, acusación o frialdad emocional. El terapeuta hace explícito el proceso con sensibilidad, nombra el miedo o la expectativa subyacente y facilita una respuesta diferente dentro de un vínculo seguro, generando una experiencia relacional correctiva que puede ser internalizada y generalizada fuera de la consulta. (Wachtel, 2008; Wachtel, 2011)",
-            "sub": "N_insightPsicodinamico"
-          },
-          {
-            "codigo": "p_wachtel_interpretacionUtil",
-            "nombre": "Interpretación contextualizada y utilizable",
-            "texto": "Procedimiento interpretativo que vincula las defensas y expectativas actuales con su función protectora en la historia relacional del paciente, mostrando cómo surgieron para evitar vergüenza, abandono o intrusión. La interpretación se formula de manera que aumente la compasión hacia la parte protectora y se traduzca en elecciones actuales concretas, evitando explicaciones cerradas que refuercen autoataque, fatalismo identitario o pasividad terapéutica. (Wachtel, 1977; Wachtel, 2008)",
-            "sub": "N_insightPsicodinamico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_wachtel_funcionDefensa",
-            "nombre": "Hipótesis protectora (qué evita la defensa)",
-            "texto": "Microintervención que formula explícitamente la función protectora de una defensa concreta (por ejemplo, “si me muestro necesitado, me humillarán”), validando su lógica histórica y relacional. Al reconocer qué amenaza intenta evitar la defensa, se reduce la vergüenza y el autoataque, y se crea un clima interno más compasivo que facilita ensayar conductas nuevas sin vivenciarlas como traición a uno mismo. (Wachtel, 1977; Wachtel, 2008)",
-            "sub": "N_insightPsicodinamico"
-          }
-        ]
-      }
+      "modelId": "sullivan-psicoanalisis-interpersonal",
+      "modelLabel": "Interpersonal – Sullivan",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Harry Stack Sullivan",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_sullivan_operaciones_seguridad",
+          "nombre": "Análisis de operaciones de seguridad",
+          "texto": "Trabajo sistemático con conductas y actitudes destinadas a reducir ansiedad a corto plazo —evitación, complacencia, hostilidad indirecta, control— explicando su lógica protectora y sus consecuencias a largo plazo sobre la calidad del vínculo.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "p_sullivan_participante_observador",
+          "nombre": "Uso del terapeuta como participante-observador",
+          "texto": "Procedimiento mediante el cual el terapeuta participa activamente en la relación sin perder capacidad reflexiva, utilizando su experiencia en la interacción como dato para clarificar patrones y modelar una observación compartida del proceso.",
+          "sub": "N_insightPsicodinamico"
+        },
+        {
+          "codigo": "m_sullivan_operacion_seguridad",
+          "nombre": "Señalar una operación de seguridad activa",
+          "texto": "Intervención breve que identifica una conducta protectora en curso —complacencia, evitación, ironía, control— explicando su función ansiolítica sin juzgarla, lo que facilita que el paciente considere alternativas menos costosas relacionalmente.",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     },
     {
-      "id": "terapia-integrativa-erskine",
-      "label": "Terapia integrativa",
-      "year": 1978,
-      "autores": "Richard G. Erskine",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/terapia-integrativa-erskine.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_erskine_normalizarDefensa",
-            "nombre": "Normalización histórica de la defensa",
-            "texto": "Microintervención que contextualiza una defensa relacional dentro de la historia vital del paciente, subrayando su función protectora original. Esta normalización reduce autoataque y vergüenza, facilitando que la defensa pueda relajarse sin sentirse invalidada. (Erskine, 2015)",
-            "sub": "N_insightPsicodinamico"
-          }
-        ]
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_interpretacion_dosificada",
+          "nombre": "Interpretación dosificada (interpretar como ‘respuesta ambiental’ y no como intrusión)",
+          "texto": "Procedimiento que sitúa la interpretación al servicio del holding: se utiliza lenguaje simple, cercano al afecto y al aquí-ahora, y solo cuando el paciente puede ‘usarla’ sin sentirse invadido; se priorizan formulaciones que devuelven continuidad y sentido sin imponer una teoría, evitando que el insight se convierta en nueva exigencia del falso self.",
+          "sub": "N_insightPsicodinamico"
+        }
+      ]
     }
   ]
 }

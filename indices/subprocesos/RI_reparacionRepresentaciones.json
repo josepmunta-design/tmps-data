@@ -1,58 +1,49 @@
 {
   "subprocesoId": "RI_reparacionRepresentaciones",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 2,
   "modelos": [
     {
-      "id": "terapia-narrativa-white-epston",
-      "label": "Terapia narrativa",
-      "year": 1990,
-      "autores": "Michael White; David Epston",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_nar_carta_figura",
-            "nombre": "Carta a una figura significativa",
-            "texto": "Intervención narrativa que permite expresar palabras no dichas a una persona significativa, viva o fallecida, o a una figura internalizada. Facilita reorganización de significados relacionales y cierre simbólico de capítulos abiertos (Neimeyer, 2001, *Meaning Reconstruction and the Experience of Loss*).",
-            "sub": "RI_reparacionRepresentaciones"
-          }
-        ]
-      }
+      "modelId": "self-dialogico-hermans",
+      "modelLabel": "Teoría del self dialógico",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Hubert J. M. Hermans",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_hermans_vocesCulturalesFamiliares",
+          "nombre": "Trabajo con voces internalizadas culturales y familiares (external voices)",
+          "texto": "Procedimiento para identificar voces “prestadas” que operan como mandatos (familia, cultura, ideología, figuras de autoridad) y que pueden colonizar el self (“debes poder con todo”, “sentir es debilidad”). Se explora su origen biográfico, su función de pertenencia/seguridad y su coste, diferenciando identidad propia vs. introyectos, y reubicando esas voces en el sistema dialógico como una perspectiva más, no como ley interna incuestionable. (Hermans et al., 1992; Hermans, 1996).",
+          "sub": "RI_reparacionRepresentaciones"
+        },
+        {
+          "codigo": "p_hermans_imaginacionEncuentroVoces",
+          "nombre": "Imaginación guiada de encuentro entre voces (guided dialogical imagery)",
+          "texto": "Procedimiento en el que se evoca una escena interna simbólica donde posiciones relevantes se encuentran, permitiendo acceso emocional, experiencia correctiva y modificación de representaciones internas rígidas en un contexto seguro y guiado. (Hermans, 1996).",
+          "sub": "RI_reparacionRepresentaciones"
+        },
+        {
+          "codigo": "m_hermans_validarHistoriaVoz",
+          "nombre": "Validar la función histórica de una voz",
+          "texto": "Microintervención que reconoce explícitamente la función adaptativa que una voz tuvo en la historia del paciente, situándola en su contexto biográfico. Reduce vergüenza y resistencia, y permite actualizar la función de la voz al presente sin negarla ni expulsarla del sistema del self. (Hermans, 1996).",
+          "sub": "RI_reparacionRepresentaciones"
+        }
+      ]
     },
     {
-      "id": "self-dialogico-hermans",
-      "label": "Teoría del self dialógico",
-      "year": 1996,
-      "autores": "Hubert J. M. Hermans",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/self-dialogico-hermans.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hermans_vocesCulturalesFamiliares",
-            "nombre": "Trabajo con voces internalizadas culturales y familiares (external voices)",
-            "texto": "Procedimiento para identificar voces “prestadas” que operan como mandatos (familia, cultura, ideología, figuras de autoridad) y que pueden colonizar el self (“debes poder con todo”, “sentir es debilidad”). Se explora su origen biográfico, su función de pertenencia/seguridad y su coste, diferenciando identidad propia vs. introyectos, y reubicando esas voces en el sistema dialógico como una perspectiva más, no como ley interna incuestionable. (Hermans et al., 1992; Hermans, 1996).",
-            "sub": "RI_reparacionRepresentaciones"
-          },
-          {
-            "codigo": "p_hermans_imaginacionEncuentroVoces",
-            "nombre": "Imaginación guiada de encuentro entre voces (guided dialogical imagery)",
-            "texto": "Procedimiento en el que se evoca una escena interna simbólica donde posiciones relevantes se encuentran, permitiendo acceso emocional, experiencia correctiva y modificación de representaciones internas rígidas en un contexto seguro y guiado. (Hermans, 1996).",
-            "sub": "RI_reparacionRepresentaciones"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_hermans_validarHistoriaVoz",
-            "nombre": "Validar la función histórica de una voz",
-            "texto": "Microintervención que reconoce explícitamente la función adaptativa que una voz tuvo en la historia del paciente, situándola en su contexto biográfico. Reduce vergüenza y resistencia, y permite actualizar la función de la voz al presente sin negarla ni expulsarla del sistema del self. (Hermans, 1996).",
-            "sub": "RI_reparacionRepresentaciones"
-          }
-        ]
-      }
+      "modelId": "terapia-narrativa-white-epston",
+      "modelLabel": "Terapia narrativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Michael White; David Epston",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "m_nar_carta_figura",
+          "nombre": "Carta a una figura significativa",
+          "texto": "Intervención narrativa que permite expresar palabras no dichas a una persona significativa, viva o fallecida, o a una figura internalizada. Facilita reorganización de significados relacionales y cierre simbólico de capítulos abiertos (Neimeyer, 2001, *Meaning Reconstruction and the Experience of Loss*).",
+          "sub": "RI_reparacionRepresentaciones"
+        }
+      ]
     }
   ]
 }

@@ -1,71 +1,58 @@
 {
   "subprocesoId": "AP_integracionMemorias",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 3,
   "modelos": [
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_fear_breakdown",
-            "nombre": "Manejo de derrumbe, vacío y temor a la desintegración (fear of breakdown)",
-            "texto": "Procedimiento para sostener experiencias de vacío, colapso o pánico sin resolverlas con prisa interpretativa; se conceptualiza como reactivación de catástrofes no vividas/mentalizadas en su momento, y se acompaña su aparición con contención, traducción emocional y una integración gradual que devuelve continuidad y reduce defensas de hipercontrol o desconexión.",
-            "sub": "AP_integracionMemorias"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_winn_miedo_derrumbe_memoria",
-            "nombre": "Nombrar miedo al derrumbe como memoria no vivida",
-            "texto": "Intervención breve que formula el pánico/vacío como reactivación de catástrofe temprana no mentalizada, reduciendo vergüenza y urgencia de control, y abriendo la posibilidad de sostener la experiencia en dosis tolerables.",
-            "sub": "AP_integracionMemorias"
-          }
-        ]
-      }
+      "modelId": "k13coherence-therapy-1993",
+      "modelLabel": "Terapia de la coherencia",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Bruce Ecker; Laurel Hulley; Robin Ticic",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_coh_reconsolidacion",
+          "nombre": "Reconsolidación de la memoria emocional",
+          "texto": "Procedimiento neuropsicológico implícito activado tras la desconfirmación emocional, mediante el cual la memoria emocional original se reescribe incorporando la nueva experiencia contradictoria. El resultado es una transformación duradera del patrón sintomático sin necesidad de repetición, entrenamiento ni esfuerzo voluntario. La desaparición espontánea del síntoma es el indicador clínico principal de que la reconsolidación se ha completado (Ecker et al., 2012; Lane et al., 2015).",
+          "sub": "AP_integracionMemorias"
+        }
+      ]
     },
     {
-      "id": "k13coherence-therapy-1993",
-      "label": "Terapia de la coherencia",
-      "year": 1993,
-      "autores": "Bruce Ecker; Laurel Hulley; Robin Ticic",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/k13coherence-therapy-1993.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_coh_reconsolidacion",
-            "nombre": "Reconsolidación de la memoria emocional",
-            "texto": "Procedimiento neuropsicológico implícito activado tras la desconfirmación emocional, mediante el cual la memoria emocional original se reescribe incorporando la nueva experiencia contradictoria. El resultado es una transformación duradera del patrón sintomático sin necesidad de repetición, entrenamiento ni esfuerzo voluntario. La desaparición espontánea del síntoma es el indicador clínico principal de que la reconsolidación se ha completado (Ecker et al., 2012; Lane et al., 2015).",
-            "sub": "AP_integracionMemorias"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicoterapia-constructivista-neimeyer",
+      "modelLabel": "Neimeyer – Psicoterapia constructivista",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Robert A. Neimeyer",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_neim_duelo_narrativo",
+          "nombre": "Trabajo narrativo con el duelo",
+          "texto": "Procedimiento específico para abordar procesos de duelo entendidos como crisis profundas de significado más que como simples reacciones emocionales. El trabajo se centra en reconstruir el sentido de la relación perdida, redefinir vínculos continuados y reorganizar la identidad del doliente en ausencia del ser querido, respetando la singularidad del proceso y evitando modelos normativos de duelo (Neimeyer, 2001; Neimeyer, 2016).",
+          "sub": "AP_integracionMemorias"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-neimeyer",
-      "label": "Neimeyer – Psicoterapia constructivista",
-      "year": 1995,
-      "autores": "Robert A. Neimeyer",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-neimeyer.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neim_duelo_narrativo",
-            "nombre": "Trabajo narrativo con el duelo",
-            "texto": "Procedimiento específico para abordar procesos de duelo entendidos como crisis profundas de significado más que como simples reacciones emocionales. El trabajo se centra en reconstruir el sentido de la relación perdida, redefinir vínculos continuados y reorganizar la identidad del doliente en ausencia del ser querido, respetando la singularidad del proceso y evitando modelos normativos de duelo (Neimeyer, 2001; Neimeyer, 2016).",
-            "sub": "AP_integracionMemorias"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_fear_breakdown",
+          "nombre": "Manejo de derrumbe, vacío y temor a la desintegración (fear of breakdown)",
+          "texto": "Procedimiento para sostener experiencias de vacío, colapso o pánico sin resolverlas con prisa interpretativa; se conceptualiza como reactivación de catástrofes no vividas/mentalizadas en su momento, y se acompaña su aparición con contención, traducción emocional y una integración gradual que devuelve continuidad y reduce defensas de hipercontrol o desconexión.",
+          "sub": "AP_integracionMemorias"
+        },
+        {
+          "codigo": "m_winn_miedo_derrumbe_memoria",
+          "nombre": "Nombrar miedo al derrumbe como memoria no vivida",
+          "texto": "Intervención breve que formula el pánico/vacío como reactivación de catástrofe temprana no mentalizada, reduciendo vergüenza y urgencia de control, y abriendo la posibilidad de sostener la experiencia en dosis tolerables.",
+          "sub": "AP_integracionMemorias"
+        }
+      ]
     }
   ]
 }

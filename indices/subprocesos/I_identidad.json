@@ -1,26 +1,22 @@
 {
   "subprocesoId": "I_identidad",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 1,
   "modelos": [
     {
-      "id": "psicologia-self-kohut",
-      "label": "Psicología del self",
-      "year": 1971,
-      "autores": "Heinz Kohut",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-self-kohut.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kohut_gemelaridad",
-            "nombre": "Facilitación de la gemelaridad (alter ego)",
-            "texto": "Procedimiento orientado a reconocer la necesidad de semejanza y pertenencia del paciente, validando la experiencia de ser humano entre humanos y reduciendo sentimientos de extrañeza o aislamiento narcisista (Kohut, 1977, *The Restoration of the Self*).",
-            "sub": "I_identidad"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_gemelaridad",
+          "nombre": "Facilitación de la gemelaridad (alter ego)",
+          "texto": "Procedimiento orientado a reconocer la necesidad de semejanza y pertenencia del paciente, validando la experiencia de ser humano entre humanos y reduciendo sentimientos de extrañeza o aislamiento narcisista (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "I_identidad"
+        }
+      ]
     }
   ]
 }

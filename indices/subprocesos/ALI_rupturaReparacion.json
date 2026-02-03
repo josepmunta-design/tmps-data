@@ -1,302 +1,250 @@
 {
   "subprocesoId": "ALI_rupturaReparacion",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 11,
   "modelos": [
     {
-      "id": "relaciones-objeto-klein",
-      "label": "Relaciones de objeto (Klein)",
-      "year": 1932,
-      "autores": "Melanie Klein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/relaciones-objeto-klein.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_klein_interpretacion_graduada_defensas",
-            "nombre": "Interpretación graduada de defensas (clarificación → señalamiento → interpretación)",
-            "texto": "Técnica de timing que ordena la intervención sobre defensas en tres niveles: primero clarificar el estado (qué emoción/amenaza hay), luego señalar el movimiento defensivo tal como ocurre (por ejemplo, escisión, negación, control omnipotente, devaluación) y solo después interpretar la fantasía y el objeto interno implicados; esta gradación permite sostener la ventana de tolerancia, evita interpretaciones que se vivan como intrusivas y convierte el análisis de defensas en una experiencia de regulación e integración, especialmente cuando aparecen ataques al vínculo.",
-            "sub": "ALI_rupturaReparacion"
-          },
-          {
-            "codigo": "p_klein_resistencia_encuadre",
-            "nombre": "Análisis de resistencia y ataques al vínculo (incluido el encuadre)",
-            "texto": "Lectura clínica de interrupciones, olvidos, impuntualidad, discusiones sobre reglas o competencia con el terapeuta como expresiones de ansiedad y fantasía transferencial (por ejemplo, temor a ser controlado o devorado), diferenciando conflicto real del encuadre de la escena interna proyectada; se trabaja sosteniendo límites claros, interpretando la función defensiva y reparando rupturas sin entrar en luchas de poder.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_klein_ataque_vinculo_minima",
-            "nombre": "Interpretación mínima del ataque al vínculo (cuando aparece)",
-            "texto": "Microintervención en el mismo momento del ataque (descalificación, competencia, ironía, frialdad) que lo nombra como intento de protegerse de dependencia o vulnerabilidad, y lo vincula con la fantasía subyacente (“si me acerco, me invaden / me controlan / me hacen daño”), abriendo una salida distinta sin entrar en lucha de poder.",
-            "sub": "ALI_rupturaReparacion"
-          },
-          {
-            "codigo": "m_klein_retirada_autismo_defensivo",
-            "nombre": "Nombrar retirada/autismo defensivo (apagarse para no necesitar)",
-            "texto": "Señalamiento breve de la desconexión (silencio, frialdad, ausencia, “me da igual”) como defensa ante dependencia, culpa o miedo a la intrusión, devolviendo su función protectora y su coste vincular; se invita a un retorno mínimo al contacto sin presionar, para que la sesión no se convierta en retirada crónica.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-integrativa",
+      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_feixas_rupturaReparacion",
+          "nombre": "Trabajo explícito de rupturas y reparación en clave constructivista",
+          "texto": "Procedimiento donde se utilizan tensiones terapéuticas (sensación de juicio, prisa, incomprensión, vergüenza) como datos sobre el sistema de significados del paciente y como oportunidad de reconstrucción relacional; se nombra el impacto, se valida la lógica protectora, se clarifican objetivos/tareas y se co-regula la emoción para que el paciente pueda experimentar una relación donde el significado se negocia sin imposición, consolidando confianza y flexibilidad. (Wampold & Imel, 2015; Feixas, 2004)",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "neopsicoanalisis",
-      "label": "Neopsicoanálisis",
-      "year": 1940,
-      "autores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/neopsicoanalisis.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neopsy_participante_observador",
-            "nombre": "Participante-observador y meta-comunicación del proceso relacional",
-            "texto": "Procedimiento donde el terapeuta usa su participación relacional (impacto, malentendidos, tensiones) como dato clínico, meta-comunicándolo de forma responsable para aumentar conciencia interpersonal; esto permite reparar rupturas en vivo, reducir distorsiones y enseñar al paciente a observar la relación sin colapsar ni atacar.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neopsy_reparacion_inmediata",
-            "nombre": "Reparación relacional inmediata tras micro-ruptura",
-            "texto": "Intervención breve para cerrar un malentendido en sesión (nombrar, validar, aclarar intención y pedir/otorgar reparación), modelando una salida distinta a la habitual.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ]
-      }
+      "modelId": "terapia-colaborativa",
+      "modelLabel": "Terapia colaborativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Harlene Anderson; Harold Goolishian",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_colab_reparacionRupturas",
+          "nombre": "Reparación colaborativa de rupturas",
+          "texto": "Procedimiento que aborda explícitamente malentendidos, vivencias de juicio o sensación de no ser escuchado, tratándolos como eventos conversacionales que deben ser nombrados y comprendidos dentro del diálogo; la reparación se realiza retomando la postura de no-saber, validando la experiencia del consultante, clarificando intenciones y renegociando tareas u objetivos, convirtiendo la ruptura en una oportunidad de crear un nuevo significado relacional. (Anderson, 1997; Anderson & Goolishian, 1992)",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "sullivan-psicoanalisis-interpersonal",
-      "label": "Interpersonal – Sullivan",
-      "year": 1953,
-      "autores": "Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_sullivan_metacomunicacion",
-            "nombre": "Meta-comunicación del proceso relacional en sesión",
-            "texto": "Intervención que hace explícito lo que está ocurriendo entre terapeuta y paciente en el aquí-ahora (tensión, retirada, malentendido), reduciendo ansiedad, previniendo rupturas y promoviendo aprendizaje relacional directo.",
-            "sub": "ALI_rupturaReparacion"
-          },
-          {
-            "codigo": "p_sullivan_reparacion_rupturas",
-            "nombre": "Reparación de rupturas interpersonales",
-            "texto": "Procedimiento que aborda malentendidos y tensiones relacionales nombrando el impacto mutuo, aclarando intenciones y restaurando seguridad, modelando una forma eficaz de resolver conflictos interpersonales.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_sullivan_meta_ruptura",
-            "nombre": "Meta-comentar una micro-ruptura",
-            "texto": "Microintervención que nombra un malentendido o tensión emergente en sesión y la explora de inmediato, mostrando que los conflictos pueden abordarse sin pérdida de vínculo.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ]
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_rodar_resistencia",
+          "nombre": "Rodar con la resistencia / cambiar de marcha (Rolling with resistance)",
+          "texto": "Cuando aparece resistencia, MI interpreta que es un problema de ajuste, no un defecto del cliente. El terapeuta ‘cambia de marcha’: devuelve autonomía, refleja, resume, pregunta permiso o cambia foco. El objetivo es restaurar colaboración y reducir reactancia para que el cambio vuelva a ser elección.",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_impingement_aquiahora",
-            "nombre": "Trabajo con impingement (intrusión) y fallos ambientales en el aquí-ahora",
-            "texto": "Intervención que detecta y repara micro-intrusiones (del terapeuta, del encuadre o del entorno) que reactivan defensas de adaptación, retirada o complacencia; el terapeuta nombra el impacto sin culpar, ajusta el ritmo y devuelve control al paciente, de modo que la sesión no repita el patrón temprano de ‘tener que acomodarse’ para sobrevivir relacionalmente.",
-            "sub": "ALI_rupturaReparacion"
-          },
-          {
-            "codigo": "p_winn_tendencia_antisocial",
-            "nombre": "Trabajo con tendencia antisocial y deprivación (esperanza de ambiente)",
-            "texto": "Intervención que entiende ciertos actos transgresores como búsqueda de un entorno que falle menos: una demanda de sostén con esperanza encapsulada; se sostienen límites firmes sin humillar, se explora la deprivación que el acto intenta ‘hacer aparecer’, y se construyen vías de reparación y responsabilidad que permitan recuperar vínculo y seguridad sin repetir abandono o castigo.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_winn_nombrar_intrusion_ajustar",
-            "nombre": "Nombrar intrusión y ajustar el ritmo",
-            "texto": "Intervención breve que reconoce que algo pudo sentirse demasiado (“igual fui rápido”, “puede haber sonado invasivo”) y ajusta el ritmo, reparando la confianza para que el paciente no tenga que volver al cumplimiento o a la retirada.",
-            "sub": "ALI_rupturaReparacion"
-          },
-          {
-            "codigo": "m_winn_reparacion_micro_ruptura",
-            "nombre": "Reparación inmediata de micro-ruptura (nombrar, validar, ajustar)",
-            "texto": "Intervención breve que cierra malentendidos en el momento: nombrar lo ocurrido, validar el impacto, aclarar intención y ajustar el proceder, modelando que el vínculo puede sostener fallos sin exigir adaptación defensiva.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-existencial-humanista-contemporanea",
+      "modelLabel": "Psicoterapia Existencial-Humanista Contemporánea",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Kirk J. Schneider, James F. T. Bugental",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_exist_autenticidad_relacional",
+          "nombre": "Trabajo relacional con autenticidad",
+          "texto": "Procedimiento que usa la relación terapéutica como laboratorio existencial: se exploran evitaciones, demandas, distancias y deseos en el vínculo con el terapeuta, reparando rupturas y ensayando una forma más auténtica de estar con otro (Schneider, Bugental & Pierson, 2015).",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_exist_reparacion",
+          "nombre": "Reparación explícita de micro-ruptura",
+          "texto": "Intervención breve para nombrar distancia, tensión o malentendido (“creo que aquí nos hemos perdido”), validarlo y ajustar. Protege el proceso profundo y modela una forma madura de relación (Schneider, Bugental & Pierson, 2015).",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "balint-falla-basica-regresion-benigna",
-      "label": "Balint – Falla básica y regresión benigna",
-      "year": 1968,
-      "autores": "Michael Balint",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/balint-falla-basica-regresion-benigna.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_balint_reparacion_micro_rupturas",
-            "nombre": "Reparación de micro-rupturas sin sumisión ni castigo",
-            "texto": "Procedimiento que nombra y repara fallos del vínculo en el momento, validando la necesidad subyacente y restableciendo el encuadre sin castigar ni someterse, para que el paciente experimente que la relación sobrevive a la frustración.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_balint_reparar_micro_ruptura",
-            "nombre": "Reparar micro-ruptura en el momento",
-            "texto": "Microintervención que nombra un malentendido o tensión en sesión y lo repara de inmediato, mostrando que la relación puede fallar y recuperarse sin colapsar.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ]
-      }
+      "modelId": "balint-falla-basica-regresion-benigna",
+      "modelLabel": "Balint – Falla básica y regresión benigna",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Michael Balint",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_balint_reparacion_micro_rupturas",
+          "nombre": "Reparación de micro-rupturas sin sumisión ni castigo",
+          "texto": "Procedimiento que nombra y repara fallos del vínculo en el momento, validando la necesidad subyacente y restableciendo el encuadre sin castigar ni someterse, para que el paciente experimente que la relación sobrevive a la frustración.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_balint_reparar_micro_ruptura",
+          "nombre": "Reparar micro-ruptura en el momento",
+          "texto": "Microintervención que nombra un malentendido o tensión en sesión y lo repara de inmediato, mostrando que la relación puede fallar y recuperarse sin colapsar.",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "psicologia-self-kohut",
-      "label": "Psicología del self",
-      "year": 1971,
-      "autores": "Heinz Kohut",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-self-kohut.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kohut_fallas_empaticas",
-            "nombre": "Detección y elaboración de fallas empáticas",
-            "texto": "Procedimiento que aborda las inevitables fallas empáticas del terapeuta como oportunidades terapéuticas, explicitándolas y reparándolas para favorecer la internalización de funciones de autorregulación del self (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_kohut_reparar_falla",
-            "nombre": "Reparar explícitamente una falla empática",
-            "texto": "Microintervención que nombra y repara una falla empática reconociendo el impacto en el paciente, promoviendo internalización de funciones reguladoras y fortaleciendo la confianza en el vínculo (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ]
-      }
+      "modelId": "neopsicoanalisis",
+      "modelLabel": "Neopsicoanálisis",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_neopsy_participante_observador",
+          "nombre": "Participante-observador y meta-comunicación del proceso relacional",
+          "texto": "Procedimiento donde el terapeuta usa su participación relacional (impacto, malentendidos, tensiones) como dato clínico, meta-comunicándolo de forma responsable para aumentar conciencia interpersonal; esto permite reparar rupturas en vivo, reducir distorsiones y enseñar al paciente a observar la relación sin colapsar ni atacar.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_neopsy_reparacion_inmediata",
+          "nombre": "Reparación relacional inmediata tras micro-ruptura",
+          "texto": "Intervención breve para cerrar un malentendido en sesión (nombrar, validar, aclarar intención y pedir/otorgar reparación), modelando una salida distinta a la habitual.",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_rodar_resistencia",
-            "nombre": "Rodar con la resistencia / cambiar de marcha (Rolling with resistance)",
-            "texto": "Cuando aparece resistencia, MI interpreta que es un problema de ajuste, no un defecto del cliente. El terapeuta ‘cambia de marcha’: devuelve autonomía, refleja, resume, pregunta permiso o cambia foco. El objetivo es restaurar colaboración y reducir reactancia para que el cambio vuelva a ser elección.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_fallas_empaticas",
+          "nombre": "Detección y elaboración de fallas empáticas",
+          "texto": "Procedimiento que aborda las inevitables fallas empáticas del terapeuta como oportunidades terapéuticas, explicitándolas y reparándolas para favorecer la internalización de funciones de autorregulación del self (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_kohut_reparar_falla",
+          "nombre": "Reparar explícitamente una falla empática",
+          "texto": "Microintervención que nombra y repara una falla empática reconociendo el impacto en el paciente, promoviendo internalización de funciones reguladoras y fortaleciendo la confianza en el vínculo (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "terapia-colaborativa",
-      "label": "Terapia colaborativa",
-      "year": 1994,
-      "autores": "Harlene Anderson; Harold Goolishian",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-colaborativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_colab_reparacionRupturas",
-            "nombre": "Reparación colaborativa de rupturas",
-            "texto": "Procedimiento que aborda explícitamente malentendidos, vivencias de juicio o sensación de no ser escuchado, tratándolos como eventos conversacionales que deben ser nombrados y comprendidos dentro del diálogo; la reparación se realiza retomando la postura de no-saber, validando la experiencia del consultante, clarificando intenciones y renegociando tareas u objetivos, convirtiendo la ruptura en una oportunidad de crear un nuevo significado relacional. (Anderson, 1997; Anderson & Goolishian, 1992)",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "relaciones-objeto-klein",
+      "modelLabel": "Relaciones de objeto (Klein)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Melanie Klein",
+      "modelYear": 1932,
+      "items": [
+        {
+          "codigo": "p_klein_interpretacion_graduada_defensas",
+          "nombre": "Interpretación graduada de defensas (clarificación → señalamiento → interpretación)",
+          "texto": "Técnica de timing que ordena la intervención sobre defensas en tres niveles: primero clarificar el estado (qué emoción/amenaza hay), luego señalar el movimiento defensivo tal como ocurre (por ejemplo, escisión, negación, control omnipotente, devaluación) y solo después interpretar la fantasía y el objeto interno implicados; esta gradación permite sostener la ventana de tolerancia, evita interpretaciones que se vivan como intrusivas y convierte el análisis de defensas en una experiencia de regulación e integración, especialmente cuando aparecen ataques al vínculo.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "p_klein_resistencia_encuadre",
+          "nombre": "Análisis de resistencia y ataques al vínculo (incluido el encuadre)",
+          "texto": "Lectura clínica de interrupciones, olvidos, impuntualidad, discusiones sobre reglas o competencia con el terapeuta como expresiones de ansiedad y fantasía transferencial (por ejemplo, temor a ser controlado o devorado), diferenciando conflicto real del encuadre de la escena interna proyectada; se trabaja sosteniendo límites claros, interpretando la función defensiva y reparando rupturas sin entrar en luchas de poder.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_klein_ataque_vinculo_minima",
+          "nombre": "Interpretación mínima del ataque al vínculo (cuando aparece)",
+          "texto": "Microintervención en el mismo momento del ataque (descalificación, competencia, ironía, frialdad) que lo nombra como intento de protegerse de dependencia o vulnerabilidad, y lo vincula con la fantasía subyacente (“si me acerco, me invaden / me controlan / me hacen daño”), abriendo una salida distinta sin entrar en lucha de poder.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_klein_retirada_autismo_defensivo",
+          "nombre": "Nombrar retirada/autismo defensivo (apagarse para no necesitar)",
+          "texto": "Señalamiento breve de la desconexión (silencio, frialdad, ausencia, “me da igual”) como defensa ante dependencia, culpa o miedo a la intrusión, devolviendo su función protectora y su coste vincular; se invita a un retorno mínimo al contacto sin presionar, para que la sesión no se convierta en retirada crónica.",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-integrativa",
-      "label": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
-      "year": 2000,
-      "autores": "Guillem Feixas; Manuel Villegas Besora",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-integrativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_feixas_rupturaReparacion",
-            "nombre": "Trabajo explícito de rupturas y reparación en clave constructivista",
-            "texto": "Procedimiento donde se utilizan tensiones terapéuticas (sensación de juicio, prisa, incomprensión, vergüenza) como datos sobre el sistema de significados del paciente y como oportunidad de reconstrucción relacional; se nombra el impacto, se valida la lógica protectora, se clarifican objetivos/tareas y se co-regula la emoción para que el paciente pueda experimentar una relación donde el significado se negocia sin imposición, consolidando confianza y flexibilidad. (Wampold & Imel, 2015; Feixas, 2004)",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "sullivan-psicoanalisis-interpersonal",
+      "modelLabel": "Interpersonal – Sullivan",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Harry Stack Sullivan",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_sullivan_metacomunicacion",
+          "nombre": "Meta-comunicación del proceso relacional en sesión",
+          "texto": "Intervención que hace explícito lo que está ocurriendo entre terapeuta y paciente en el aquí-ahora (tensión, retirada, malentendido), reduciendo ansiedad, previniendo rupturas y promoviendo aprendizaje relacional directo.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "p_sullivan_reparacion_rupturas",
+          "nombre": "Reparación de rupturas interpersonales",
+          "texto": "Procedimiento que aborda malentendidos y tensiones relacionales nombrando el impacto mutuo, aclarando intenciones y restaurando seguridad, modelando una forma eficaz de resolver conflictos interpersonales.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_sullivan_meta_ruptura",
+          "nombre": "Meta-comentar una micro-ruptura",
+          "texto": "Microintervención que nombra un malentendido o tensión emergente en sesión y la explora de inmediato, mostrando que los conflictos pueden abordarse sin pérdida de vínculo.",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "s20linares",
-      "label": "Psicoterapia relacional sistémica (Linares)",
-      "year": 2000,
-      "autores": "Juan Luis Linares",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/s20linares.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_linares_reflexividad",
-            "nombre": "Hipótesis reflexiva y metacomunicación del proceso",
-            "texto": "El terapeuta hace explícito el proceso terapéutico como co-construcción: comparte hipótesis como tentativas, pregunta por el impacto de su intervención y re-negocia dirección. Previene rupturas silenciosas y fortalece alianza.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_linares_alianza_check",
-            "nombre": "Chequeo de alianza y justicia relacional",
-            "texto": "Pregunta breve de ajuste: “¿cómo os está cayendo esto?”, “¿alguien siente que estoy tomando partido?”. Previene rupturas silenciosas.",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ]
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_impingement_aquiahora",
+          "nombre": "Trabajo con impingement (intrusión) y fallos ambientales en el aquí-ahora",
+          "texto": "Intervención que detecta y repara micro-intrusiones (del terapeuta, del encuadre o del entorno) que reactivan defensas de adaptación, retirada o complacencia; el terapeuta nombra el impacto sin culpar, ajusta el ritmo y devuelve control al paciente, de modo que la sesión no repita el patrón temprano de ‘tener que acomodarse’ para sobrevivir relacionalmente.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "p_winn_tendencia_antisocial",
+          "nombre": "Trabajo con tendencia antisocial y deprivación (esperanza de ambiente)",
+          "texto": "Intervención que entiende ciertos actos transgresores como búsqueda de un entorno que falle menos: una demanda de sostén con esperanza encapsulada; se sostienen límites firmes sin humillar, se explora la deprivación que el acto intenta ‘hacer aparecer’, y se construyen vías de reparación y responsabilidad que permitan recuperar vínculo y seguridad sin repetir abandono o castigo.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_winn_nombrar_intrusion_ajustar",
+          "nombre": "Nombrar intrusión y ajustar el ritmo",
+          "texto": "Intervención breve que reconoce que algo pudo sentirse demasiado (“igual fui rápido”, “puede haber sonado invasivo”) y ajusta el ritmo, reparando la confianza para que el paciente no tenga que volver al cumplimiento o a la retirada.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_winn_reparacion_micro_ruptura",
+          "nombre": "Reparación inmediata de micro-ruptura (nombrar, validar, ajustar)",
+          "texto": "Intervención breve que cierra malentendidos en el momento: nombrar lo ocurrido, validar el impacto, aclarar intención y ajustar el proceder, modelando que el vínculo puede sostener fallos sin exigir adaptación defensiva.",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-existencial-humanista-contemporanea",
-      "label": "Psicoterapia Existencial-Humanista Contemporánea",
-      "year": 2005,
-      "autores": "Kirk J. Schneider, James F. T. Bugental",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/psicoterapia-existencial-humanista-contemporanea.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_exist_autenticidad_relacional",
-            "nombre": "Trabajo relacional con autenticidad",
-            "texto": "Procedimiento que usa la relación terapéutica como laboratorio existencial: se exploran evitaciones, demandas, distancias y deseos en el vínculo con el terapeuta, reparando rupturas y ensayando una forma más auténtica de estar con otro (Schneider, Bugental & Pierson, 2015).",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_exist_reparacion",
-            "nombre": "Reparación explícita de micro-ruptura",
-            "texto": "Intervención breve para nombrar distancia, tensión o malentendido (“creo que aquí nos hemos perdido”), validarlo y ajustar. Protege el proceso profundo y modela una forma madura de relación (Schneider, Bugental & Pierson, 2015).",
-            "sub": "ALI_rupturaReparacion"
-          }
-        ]
-      }
+      "modelId": "s20linares",
+      "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Juan Luis Linares",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_linares_reflexividad",
+          "nombre": "Hipótesis reflexiva y metacomunicación del proceso",
+          "texto": "El terapeuta hace explícito el proceso terapéutico como co-construcción: comparte hipótesis como tentativas, pregunta por el impacto de su intervención y re-negocia dirección. Previene rupturas silenciosas y fortalece alianza.",
+          "sub": "ALI_rupturaReparacion"
+        },
+        {
+          "codigo": "m_linares_alianza_check",
+          "nombre": "Chequeo de alianza y justicia relacional",
+          "texto": "Pregunta breve de ajuste: “¿cómo os está cayendo esto?”, “¿alguien siente que estoy tomando partido?”. Previene rupturas silenciosas.",
+          "sub": "ALI_rupturaReparacion"
+        }
+      ]
     }
   ]
 }

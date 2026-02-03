@@ -1,161 +1,130 @@
 {
   "subprocesoId": "AP_somaticoEsquematico",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 7,
   "modelos": [
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_handling_somatico",
-            "nombre": "Handling terapéutico (sostén del cuerpo vivido y del tono somático)",
-            "texto": "Intervención dirigida a reparar fallos tempranos de cuidado experiencial atendiendo a cómo el paciente habita su cuerpo en sesión (tensión, colapso, anestesia, hipercontrol), usando ritmo, pausas, respiración espontánea, orientación sensorial y lenguaje simple para organizar el self corporizado; el objetivo no es “técnica corporal” en sí, sino facilitar integración psicosomática y reducir disociación/despersonalización como defensas del falso self.",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "aedp-2000",
+      "modelLabel": "AEDP (Accelerated Experiential Dynamic Psychotherapy)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Diana Fosha",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_aedp_somatico",
+          "nombre": "Seguimiento somático del afecto",
+          "texto": "Invitar a notar sensaciones corporales asociadas a la emoción para profundizar el procesamiento experiencial.",
+          "sub": "AP_somaticoEsquematico"
+        }
+      ]
     },
     {
-      "id": "analisis-bioenergetico",
-      "label": "Análisis Bioenergético",
-      "year": 1956,
-      "autores": "Alexander Lowen",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/analisis-bioenergetico.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bioenergetico_cuerpo",
-            "nombre": "Trabajo corporal bioenergético",
-            "texto": "Procedimiento central del Análisis Bioenergético que utiliza posturas, movimiento y respiración para aumentar la conciencia corporal y liberar tensiones musculares crónicas. El trabajo corporal permite acceder a emociones implícitas y reorganizar patrones defensivos inscritos en el cuerpo (Lowen, 1975).",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_bioenergetico_arco",
-            "nombre": "Postura del arco",
-            "texto": "Postura clásica del Análisis Bioenergético que intensifica la activación corporal y revela patrones de tensión crónica. Facilita la liberación emocional y el contacto con impulsos vitales bloqueados (Lowen, 1975).",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ]
-      }
+      "modelId": "analisis-bioenergetico",
+      "modelLabel": "Análisis Bioenergético",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Alexander Lowen",
+      "modelYear": 1956,
+      "items": [
+        {
+          "codigo": "p_bioenergetico_cuerpo",
+          "nombre": "Trabajo corporal bioenergético",
+          "texto": "Procedimiento central del Análisis Bioenergético que utiliza posturas, movimiento y respiración para aumentar la conciencia corporal y liberar tensiones musculares crónicas. El trabajo corporal permite acceder a emociones implícitas y reorganizar patrones defensivos inscritos en el cuerpo (Lowen, 1975).",
+          "sub": "AP_somaticoEsquematico"
+        },
+        {
+          "codigo": "m_bioenergetico_arco",
+          "nombre": "Postura del arco",
+          "texto": "Postura clásica del Análisis Bioenergético que intensifica la activación corporal y revela patrones de tensión crónica. Facilita la liberación emocional y el contacto con impulsos vitales bloqueados (Lowen, 1975).",
+          "sub": "AP_somaticoEsquematico"
+        }
+      ]
     },
     {
-      "id": "movimiento-potencial-humano-esalen",
-      "label": "Movimiento del Potencial Humano (Esalen)",
-      "year": 1962,
-      "autores": "Michael Murphy, Richard Price",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/movimiento-potencial-humano-esalen.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_esalen_cuerpomente",
-            "nombre": "Integración cuerpo-mente",
-            "texto": "Procedimiento orientado a restaurar la conexión entre sensaciones corporales, emociones y conciencia. A través del movimiento, la respiración y la atención plena, se facilita la reorganización de la experiencia implícita y la reducción de bloqueos somáticos y emocionales (Kripal, 2007).",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_esalen_movimiento",
-            "nombre": "Yoga y movimiento expresivo",
-            "texto": "Uso del movimiento consciente y expresivo para aumentar la conciencia corporal, liberar tensiones y facilitar la expresión emocional no verbal. Permite acceder a contenidos implícitos y promover integración cuerpo-emoción (Murphy & Price, 1979).",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ]
-      }
+      "modelId": "movimiento-potencial-humano-esalen",
+      "modelLabel": "Movimiento del Potencial Humano (Esalen)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Michael Murphy, Richard Price",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "p_esalen_cuerpomente",
+          "nombre": "Integración cuerpo-mente",
+          "texto": "Procedimiento orientado a restaurar la conexión entre sensaciones corporales, emociones y conciencia. A través del movimiento, la respiración y la atención plena, se facilita la reorganización de la experiencia implícita y la reducción de bloqueos somáticos y emocionales (Kripal, 2007).",
+          "sub": "AP_somaticoEsquematico"
+        },
+        {
+          "codigo": "m_esalen_movimiento",
+          "nombre": "Yoga y movimiento expresivo",
+          "texto": "Uso del movimiento consciente y expresivo para aumentar la conciencia corporal, liberar tensiones y facilitar la expresión emocional no verbal. Permite acceder a contenidos implícitos y promover integración cuerpo-emoción (Murphy & Price, 1979).",
+          "sub": "AP_somaticoEsquematico"
+        }
+      ]
     },
     {
-      "id": "bion-teoria-pensar-contencion",
-      "label": "Bion – Teoría del pensar y contención",
-      "year": 1962,
-      "autores": "Wilfred R. Bion",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/bion-teoria-pensar-contencion.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_bion_cuerpo_a_pensamiento",
-            "nombre": "Transformar sensación corporal en experiencia pensable",
-            "texto": "Intervención breve que conecta sensaciones corporales intensas con el estado emocional presente, facilitando el paso desde lo somático no simbolizado hacia una experiencia que puede empezar a pensarse y nombrarse (Bion, 1962, *Learning from Experience*).",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ]
-      }
+      "modelId": "terapia-experiencial-1970",
+      "modelLabel": "Terapia Experiencial",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Eugene T. Gendlin; Laura N. Rice; Leslie S. Greenberg",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_exp_focusing",
+          "nombre": "Focusing experiencial",
+          "texto": "Procedimiento central desarrollado por Gendlin para facilitar el acceso a la ‘felt sense’: una vivencia corporal global, difusa pero significativa. El terapeuta guía al cliente a atenderla, describirla, dialogar con ella y permitir que se transforme.",
+          "sub": "AP_somaticoEsquematico"
+        }
+      ]
     },
     {
-      "id": "balint-falla-basica-regresion-benigna",
-      "label": "Balint – Falla básica y regresión benigna",
-      "year": 1968,
-      "autores": "Michael Balint",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/balint-falla-basica-regresion-benigna.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_balint_somatizacion_vincular",
-            "nombre": "Trabajo con somatización como vía relacional",
-            "texto": "Procedimiento que comprende los síntomas corporales como formas de comunicación de necesidad y frustración no simbolizadas, traduciendo el síntoma a experiencia emocional y relacional sin invalidar lo médico, y reduciendo la escalada de pruebas, visitas y cronificación del malestar.",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_balint_somatizacion_a_emocion",
-            "nombre": "Convertir somatización en lenguaje emocional",
-            "texto": "Intervención breve que conecta el síntoma corporal con el contexto relacional inmediato (“esto apareció después de…”), facilitando que el cuerpo deje de ser el único canal de expresión del malestar.",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ]
-      }
+      "modelId": "balint-falla-basica-regresion-benigna",
+      "modelLabel": "Balint – Falla básica y regresión benigna",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Michael Balint",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_balint_somatizacion_vincular",
+          "nombre": "Trabajo con somatización como vía relacional",
+          "texto": "Procedimiento que comprende los síntomas corporales como formas de comunicación de necesidad y frustración no simbolizadas, traduciendo el síntoma a experiencia emocional y relacional sin invalidar lo médico, y reduciendo la escalada de pruebas, visitas y cronificación del malestar.",
+          "sub": "AP_somaticoEsquematico"
+        },
+        {
+          "codigo": "m_balint_somatizacion_a_emocion",
+          "nombre": "Convertir somatización en lenguaje emocional",
+          "texto": "Intervención breve que conecta el síntoma corporal con el contexto relacional inmediato (“esto apareció después de…”), facilitando que el cuerpo deje de ser el único canal de expresión del malestar.",
+          "sub": "AP_somaticoEsquematico"
+        }
+      ]
     },
     {
-      "id": "terapia-experiencial-1970",
-      "label": "Terapia Experiencial",
-      "year": 1970,
-      "autores": "Eugene T. Gendlin; Laura N. Rice; Leslie S. Greenberg",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/terapia-experiencial-1970.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_exp_focusing",
-            "nombre": "Focusing experiencial",
-            "texto": "Procedimiento central desarrollado por Gendlin para facilitar el acceso a la ‘felt sense’: una vivencia corporal global, difusa pero significativa. El terapeuta guía al cliente a atenderla, describirla, dialogar con ella y permitir que se transforme.",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "bion-teoria-pensar-contencion",
+      "modelLabel": "Bion – Teoría del pensar y contención",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Wilfred R. Bion",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "m_bion_cuerpo_a_pensamiento",
+          "nombre": "Transformar sensación corporal en experiencia pensable",
+          "texto": "Intervención breve que conecta sensaciones corporales intensas con el estado emocional presente, facilitando el paso desde lo somático no simbolizado hacia una experiencia que puede empezar a pensarse y nombrarse (Bion, 1962, *Learning from Experience*).",
+          "sub": "AP_somaticoEsquematico"
+        }
+      ]
     },
     {
-      "id": "aedp-2000",
-      "label": "AEDP (Accelerated Experiential Dynamic Psychotherapy)",
-      "year": 2000,
-      "autores": "Diana Fosha",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/aedp-2000.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_aedp_somatico",
-            "nombre": "Seguimiento somático del afecto",
-            "texto": "Invitar a notar sensaciones corporales asociadas a la emoción para profundizar el procesamiento experiencial.",
-            "sub": "AP_somaticoEsquematico"
-          }
-        ]
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_handling_somatico",
+          "nombre": "Handling terapéutico (sostén del cuerpo vivido y del tono somático)",
+          "texto": "Intervención dirigida a reparar fallos tempranos de cuidado experiencial atendiendo a cómo el paciente habita su cuerpo en sesión (tensión, colapso, anestesia, hipercontrol), usando ritmo, pausas, respiración espontánea, orientación sensorial y lenguaje simple para organizar el self corporizado; el objetivo no es “técnica corporal” en sí, sino facilitar integración psicosomática y reducir disociación/despersonalización como defensas del falso self.",
+          "sub": "AP_somaticoEsquematico"
+        }
+      ]
     }
   ]
 }

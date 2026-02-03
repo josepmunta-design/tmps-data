@@ -1,33 +1,28 @@
 {
   "subprocesoId": "VB_sueno",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 1,
   "modelos": [
     {
-      "id": "psicoterapia-multimodal-basic-id-lazarus",
-      "label": "Psicoterapia multimodal (BASIC-ID)",
-      "year": 1977,
-      "autores": "Arnold A. Lazarus",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicoterapia-multimodal-basic-id-lazarus.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_lazarus_biologia_sustancias",
-            "nombre": "Intervención en Drogas/Biología (D) y coordinación médico-contextual",
-            "texto": "Procedimiento que incluye evaluación y manejo de factores biológicos y de consumo (sueño, medicación, alcohol/cannabis/estimulantes, salud física), con psicoeducación y, cuando procede, coordinación con recursos médicos. El objetivo es evitar atribuir a “lo psicológico” fenómenos primariamente fisiológicos y reducir ruido biológico que empeora regulación emocional y control conductual, mejorando viabilidad del proceso terapéutico. (Lazarus, 1989)",
-            "sub": "VB_sueno"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_lazarus_chequeo_biologico",
-            "nombre": "Chequeo de sueño, medicación y consumo",
-            "texto": "Microintervención que revisa factores biológicos básicos que pueden estar influyendo en el estado emocional y conductual (calidad del sueño, adherencia a medicación, consumo de sustancias), evitando interpretaciones psicológicas de fenómenos primariamente fisiológicos. (Lazarus, 1989)",
-            "sub": "VB_sueno"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-multimodal-basic-id-lazarus",
+      "modelLabel": "Psicoterapia multimodal (BASIC-ID)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Arnold A. Lazarus",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_lazarus_biologia_sustancias",
+          "nombre": "Intervención en Drogas/Biología (D) y coordinación médico-contextual",
+          "texto": "Procedimiento que incluye evaluación y manejo de factores biológicos y de consumo (sueño, medicación, alcohol/cannabis/estimulantes, salud física), con psicoeducación y, cuando procede, coordinación con recursos médicos. El objetivo es evitar atribuir a “lo psicológico” fenómenos primariamente fisiológicos y reducir ruido biológico que empeora regulación emocional y control conductual, mejorando viabilidad del proceso terapéutico. (Lazarus, 1989)",
+          "sub": "VB_sueno"
+        },
+        {
+          "codigo": "m_lazarus_chequeo_biologico",
+          "nombre": "Chequeo de sueño, medicación y consumo",
+          "texto": "Microintervención que revisa factores biológicos básicos que pueden estar influyendo en el estado emocional y conductual (calidad del sueño, adherencia a medicación, consumo de sustancias), evitando interpretaciones psicológicas de fenómenos primariamente fisiológicos. (Lazarus, 1989)",
+          "sub": "VB_sueno"
+        }
+      ]
     }
   ]
 }

@@ -1,26 +1,22 @@
 {
   "subprocesoId": "AG_autocontrol",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 1,
   "modelos": [
     {
-      "id": "psicologia-yo-hartmann",
-      "label": "Psicología del yo",
-      "year": 1939,
-      "autores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-yo-hartmann.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_hartmann_emocion_vs_accion",
-            "nombre": "Diferenciar emoción de acción",
-            "texto": "Intervención breve que separa lo que se siente de lo que se hace, reforzando el control de impulsos y la capacidad del yo para elegir respuestas más adaptativas.",
-            "sub": "AG_autocontrol"
-          }
-        ]
-      }
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "m_hartmann_emocion_vs_accion",
+          "nombre": "Diferenciar emoción de acción",
+          "texto": "Intervención breve que separa lo que se siente de lo que se hace, reforzando el control de impulsos y la capacidad del yo para elegir respuestas más adaptativas.",
+          "sub": "AG_autocontrol"
+        }
+      ]
     }
   ]
 }

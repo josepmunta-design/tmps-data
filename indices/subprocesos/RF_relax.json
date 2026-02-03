@@ -1,64 +1,52 @@
 {
   "subprocesoId": "RF_relax",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 3,
   "modelos": [
     {
-      "id": "analisis-bioenergetico",
-      "label": "Análisis Bioenergético",
-      "year": 1956,
-      "autores": "Alexander Lowen",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/analisis-bioenergetico.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_bioenergetico_vibracion",
-            "nombre": "Vibración de piernas",
-            "texto": "Ejercicio que induce temblores involuntarios en las piernas para descargar tensión acumulada y restaurar la autorregulación corporal. Favorece sensación de alivio y aumento de vitalidad (Lowen, 1975).",
-            "sub": "RF_relax"
-          }
-        ]
-      }
+      "modelId": "analisis-bioenergetico",
+      "modelLabel": "Análisis Bioenergético",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Alexander Lowen",
+      "modelYear": 1956,
+      "items": [
+        {
+          "codigo": "m_bioenergetico_vibracion",
+          "nombre": "Vibración de piernas",
+          "texto": "Ejercicio que induce temblores involuntarios en las piernas para descargar tensión acumulada y restaurar la autorregulación corporal. Favorece sensación de alivio y aumento de vitalidad (Lowen, 1975).",
+          "sub": "RF_relax"
+        }
+      ]
     },
     {
-      "id": "movimiento-potencial-humano-esalen",
-      "label": "Movimiento del Potencial Humano (Esalen)",
-      "year": 1962,
-      "autores": "Michael Murphy, Richard Price",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/movimiento-potencial-humano-esalen.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_esalen_respiracion",
-            "nombre": "Respiración y relajación profunda",
-            "texto": "Uso deliberado de la respiración y la relajación para modular la activación fisiológica, facilitar estados de conciencia ampliada y promover integración emocional (Kripal, 2007).",
-            "sub": "RF_relax"
-          }
-        ]
-      }
+      "modelId": "movimiento-potencial-humano-esalen",
+      "modelLabel": "Movimiento del Potencial Humano (Esalen)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Michael Murphy, Richard Price",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "m_esalen_respiracion",
+          "nombre": "Respiración y relajación profunda",
+          "texto": "Uso deliberado de la respiración y la relajación para modular la activación fisiológica, facilitar estados de conciencia ampliada y promover integración emocional (Kripal, 2007).",
+          "sub": "RF_relax"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-multimodal-basic-id-lazarus",
-      "label": "Psicoterapia multimodal (BASIC-ID)",
-      "year": 1977,
-      "autores": "Arnold A. Lazarus",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicoterapia-multimodal-basic-id-lazarus.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_lazarus_sensacion_somatica",
-            "nombre": "Intervención en Sensación (S) mediante regulación somática y manejo fisiológico",
-            "texto": "Procedimiento centrado en reducir hiperactivación o desconexión corporal mediante técnicas somáticas (respiración, relajación muscular, grounding) y entrenamiento de conciencia corporal funcional. Se utiliza cuando síntomas fisiológicos (tensión, agitación, somatización, pánico) están amplificando afecto y cogniciones, de modo que estabilizar el cuerpo aumenta accesibilidad al resto del trabajo terapéutico. (Lazarus, 1976; Lazarus, 1989)",
-            "sub": "RF_relax"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicoterapia-multimodal-basic-id-lazarus",
+      "modelLabel": "Psicoterapia multimodal (BASIC-ID)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Arnold A. Lazarus",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_lazarus_sensacion_somatica",
+          "nombre": "Intervención en Sensación (S) mediante regulación somática y manejo fisiológico",
+          "texto": "Procedimiento centrado en reducir hiperactivación o desconexión corporal mediante técnicas somáticas (respiración, relajación muscular, grounding) y entrenamiento de conciencia corporal funcional. Se utiliza cuando síntomas fisiológicos (tensión, agitación, somatización, pánico) están amplificando afecto y cogniciones, de modo que estabilizar el cuerpo aumenta accesibilidad al resto del trabajo terapéutico. (Lazarus, 1976; Lazarus, 1989)",
+          "sub": "RF_relax"
+        }
+      ]
     }
   ]
 }

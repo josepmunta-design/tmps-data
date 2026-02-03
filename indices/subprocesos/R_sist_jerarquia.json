@@ -1,52 +1,43 @@
 {
   "subprocesoId": "R_sist_jerarquia",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 2,
   "modelos": [
     {
-      "id": "terapia-familiar-estructural-1965",
-      "label": "Terapia familiar estructural",
-      "year": 1965,
-      "autores": "Salvador Minuchin",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-familiar-estructural-1965.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_struct_parental",
-            "nombre": "Fortalecimiento del subsistema parental",
-            "texto": "Se refuerza la autoridad parental funcional, evitando coaliciones con hijos. El terapeuta modela liderazgo claro y coherente.",
-            "sub": "R_sist_jerarquia"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-estrategica-1967",
+      "modelLabel": "Terapia estratégica",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Jay Haley; Cloe Madanes; Milton H. Erickson",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_strat_jerarquias",
+          "nombre": "Manipulación de jerarquías",
+          "texto": "Intervenciones diseñadas para modificar posiciones de poder y autoridad dentro del sistema, devolviendo liderazgo funcional o desactivando coaliciones.",
+          "sub": "R_sist_jerarquia"
+        },
+        {
+          "codigo": "m_strat_control",
+          "nombre": "Señalar control encubierto",
+          "texto": "Hacer visible cómo el síntoma regula poder y evita confrontaciones directas.",
+          "sub": "R_sist_jerarquia"
+        }
+      ]
     },
     {
-      "id": "terapia-estrategica-1967",
-      "label": "Terapia estratégica",
-      "year": 1967,
-      "autores": "Jay Haley; Cloe Madanes; Milton H. Erickson",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-estrategica-1967.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_strat_jerarquias",
-            "nombre": "Manipulación de jerarquías",
-            "texto": "Intervenciones diseñadas para modificar posiciones de poder y autoridad dentro del sistema, devolviendo liderazgo funcional o desactivando coaliciones.",
-            "sub": "R_sist_jerarquia"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_strat_control",
-            "nombre": "Señalar control encubierto",
-            "texto": "Hacer visible cómo el síntoma regula poder y evita confrontaciones directas.",
-            "sub": "R_sist_jerarquia"
-          }
-        ]
-      }
+      "modelId": "terapia-familiar-estructural-1965",
+      "modelLabel": "Terapia familiar estructural",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Salvador Minuchin",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "p_struct_parental",
+          "nombre": "Fortalecimiento del subsistema parental",
+          "texto": "Se refuerza la autoridad parental funcional, evitando coaliciones con hijos. El terapeuta modela liderazgo claro y coherente.",
+          "sub": "R_sist_jerarquia"
+        }
+      ]
     }
   ]
 }

@@ -1,91 +1,76 @@
 {
   "subprocesoId": "ALI_contexto",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 3,
   "modelos": [
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_pedir_permiso",
-            "nombre": "Pedir permiso antes de aconsejar",
-            "texto": "Pedir permiso protege autonomía y reduce resistencia: ‘¿te puedo compartir una idea?’ o ‘¿te gustaría que viéramos opciones?’. Es una microdecisión que cambia el clima de poder y convierte el consejo en colaboración. En MI este gesto es estructural, no cortesía.",
-            "sub": "ALI_contexto"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mi_autonomia",
-            "nombre": "Afirmación de autonomía (recordar que el cambio es elección)",
-            "texto": "Recordar explícitamente que la decisión final es del cliente reduce reactancia y abre espacio para explorar ambivalencia sin sentirse atrapado. No es un eslogan: es una intervención reguladora del poder relacional. Suele desbloquear conversaciones estancadas y hace que el cliente vuelva a ‘poseer’ el cambio.",
-            "sub": "ALI_contexto"
-          }
-        ]
-      }
+      "modelId": "terapia-colaborativa",
+      "modelLabel": "Terapia colaborativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Harlene Anderson; Harold Goolishian",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_colab_reflexividadTransparencia",
+          "nombre": "Reflexividad del terapeuta y transparencia conversacional",
+          "texto": "Procedimiento que implica que el terapeuta haga explícitos, de manera cuidadosa y no invasiva, sus propias dudas, resonancias y comprensiones provisionales como parte del diálogo, permitiendo que el cliente las confirme, matice o corrija; esta transparencia reduce la opacidad del poder experto, favorece una metaconversación sobre el proceso y mejora la sensibilidad al contexto cultural y relacional del consultante. (Anderson, 1997)",
+          "sub": "ALI_contexto"
+        },
+        {
+          "codigo": "p_colab_contextoSociocultural",
+          "nombre": "Trabajo con contexto sociocultural del significado",
+          "texto": "Procedimiento que integra explícitamente los marcos culturales, institucionales y relacionales que influyen en cómo el consultante se narra y es narrado (familia, género, clase, migración, instituciones), evitando universalizar categorías y reconociendo dinámicas de poder en el lenguaje; este trabajo amplía opciones discursivas, reduce auto-culpabilización y hace que las alternativas construidas sean realistas y sostenibles en el entorno del cliente. (Anderson, 1997)",
+          "sub": "ALI_contexto"
+        },
+        {
+          "codigo": "m_colab_suspensionJuicio",
+          "nombre": "Suspensión explícita de juicio",
+          "texto": "Microintervención en la que el terapeuta explicita que no está evaluando, diagnosticando ni comparando la experiencia del consultante con normas externas, reduciendo vergüenza y defensividad. Refuerza el carácter no jerárquico y colaborativo de la relación terapéutica. (Anderson, 1997)",
+          "sub": "ALI_contexto"
+        }
+      ]
     },
     {
-      "id": "multisystemic-therapy-mst",
-      "label": "Multisystemic Therapy (MST)",
-      "year": 1990,
-      "autores": "Scott Henggeler; Sonia Rowland",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/multisystemic-therapy-mst.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mst_instituciones_case",
-            "nombre": "Coordinación con justicia juvenil y servicios (case management)",
-            "texto": "Trabajo coordinado con sistemas formales (justicia, servicios sociales, salud, recursos comunitarios) para alinear objetivos, reducir fricción institucional y sostener el plan de cambio.",
-            "sub": "ALI_contexto"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mst_contacto_escuela",
-            "nombre": "Contacto operativo con escuela",
-            "texto": "Microcoordinación: acuerdos de seguimiento, comunicación de incidencias y refuerzo de asistencia y conducta.",
-            "sub": "ALI_contexto"
-          }
-        ]
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_pedir_permiso",
+          "nombre": "Pedir permiso antes de aconsejar",
+          "texto": "Pedir permiso protege autonomía y reduce resistencia: ‘¿te puedo compartir una idea?’ o ‘¿te gustaría que viéramos opciones?’. Es una microdecisión que cambia el clima de poder y convierte el consejo en colaboración. En MI este gesto es estructural, no cortesía.",
+          "sub": "ALI_contexto"
+        },
+        {
+          "codigo": "m_mi_autonomia",
+          "nombre": "Afirmación de autonomía (recordar que el cambio es elección)",
+          "texto": "Recordar explícitamente que la decisión final es del cliente reduce reactancia y abre espacio para explorar ambivalencia sin sentirse atrapado. No es un eslogan: es una intervención reguladora del poder relacional. Suele desbloquear conversaciones estancadas y hace que el cliente vuelva a ‘poseer’ el cambio.",
+          "sub": "ALI_contexto"
+        }
+      ]
     },
     {
-      "id": "terapia-colaborativa",
-      "label": "Terapia colaborativa",
-      "year": 1994,
-      "autores": "Harlene Anderson; Harold Goolishian",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-colaborativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_colab_reflexividadTransparencia",
-            "nombre": "Reflexividad del terapeuta y transparencia conversacional",
-            "texto": "Procedimiento que implica que el terapeuta haga explícitos, de manera cuidadosa y no invasiva, sus propias dudas, resonancias y comprensiones provisionales como parte del diálogo, permitiendo que el cliente las confirme, matice o corrija; esta transparencia reduce la opacidad del poder experto, favorece una metaconversación sobre el proceso y mejora la sensibilidad al contexto cultural y relacional del consultante. (Anderson, 1997)",
-            "sub": "ALI_contexto"
-          },
-          {
-            "codigo": "p_colab_contextoSociocultural",
-            "nombre": "Trabajo con contexto sociocultural del significado",
-            "texto": "Procedimiento que integra explícitamente los marcos culturales, institucionales y relacionales que influyen en cómo el consultante se narra y es narrado (familia, género, clase, migración, instituciones), evitando universalizar categorías y reconociendo dinámicas de poder en el lenguaje; este trabajo amplía opciones discursivas, reduce auto-culpabilización y hace que las alternativas construidas sean realistas y sostenibles en el entorno del cliente. (Anderson, 1997)",
-            "sub": "ALI_contexto"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_colab_suspensionJuicio",
-            "nombre": "Suspensión explícita de juicio",
-            "texto": "Microintervención en la que el terapeuta explicita que no está evaluando, diagnosticando ni comparando la experiencia del consultante con normas externas, reduciendo vergüenza y defensividad. Refuerza el carácter no jerárquico y colaborativo de la relación terapéutica. (Anderson, 1997)",
-            "sub": "ALI_contexto"
-          }
-        ]
-      }
+      "modelId": "multisystemic-therapy-mst",
+      "modelLabel": "Multisystemic Therapy (MST)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Scott Henggeler; Sonia Rowland",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mst_instituciones_case",
+          "nombre": "Coordinación con justicia juvenil y servicios (case management)",
+          "texto": "Trabajo coordinado con sistemas formales (justicia, servicios sociales, salud, recursos comunitarios) para alinear objetivos, reducir fricción institucional y sostener el plan de cambio.",
+          "sub": "ALI_contexto"
+        },
+        {
+          "codigo": "m_mst_contacto_escuela",
+          "nombre": "Contacto operativo con escuela",
+          "texto": "Microcoordinación: acuerdos de seguimiento, comunicación de incidencias y refuerzo de asistencia y conducta.",
+          "sub": "ALI_contexto"
+        }
+      ]
     }
   ]
 }

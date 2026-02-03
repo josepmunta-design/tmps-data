@@ -1,52 +1,43 @@
 {
   "subprocesoId": "I_integracion",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 2,
   "modelos": [
     {
-      "id": "psicologia-self-kohut",
-      "label": "Psicología del self",
-      "year": 1971,
-      "autores": "Heinz Kohut",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-self-kohut.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kohut_fragmentacion",
-            "nombre": "Trabajo con fragmentación del self",
-            "texto": "Procedimiento orientado a sostener estados de desorganización, vacío o colapso narcisista sin interpretarlos como resistencia, priorizando la contención empática hasta que el self recupere cohesión suficiente para elaborar la experiencia (Kohut, 1977, *The Restoration of the Self*).",
-            "sub": "I_integracion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "kernberg-relaciones-objetales-modernas",
+      "modelLabel": "Kernberg – Relaciones objetales modernas",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_kernberg_integracion_representaciones",
+          "nombre": "Integración progresiva de representaciones del self y del objeto",
+          "texto": "Procedimiento de largo recorrido que promueve la síntesis de aspectos amorosos y agresivos del self y del objeto, reduciendo la fragmentación identitaria y favoreciendo una identidad más coherente y estable (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
+          "sub": "I_integracion"
+        },
+        {
+          "codigo": "m_kernberg_avance_integracion",
+          "nombre": "Señalar avance hacia ambivalencia integrada",
+          "texto": "Intervención breve que destaca momentos en los que el paciente puede sostener simultáneamente aspectos positivos y negativos del self u objeto, reforzando el progreso estructural sin idealizarlo (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
+          "sub": "I_integracion"
+        }
+      ]
     },
     {
-      "id": "kernberg-relaciones-objetales-modernas",
-      "label": "Kernberg – Relaciones objetales modernas",
-      "year": 1975,
-      "autores": "Otto F. Kernberg",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/kernberg-relaciones-objetales-modernas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kernberg_integracion_representaciones",
-            "nombre": "Integración progresiva de representaciones del self y del objeto",
-            "texto": "Procedimiento de largo recorrido que promueve la síntesis de aspectos amorosos y agresivos del self y del objeto, reduciendo la fragmentación identitaria y favoreciendo una identidad más coherente y estable (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
-            "sub": "I_integracion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_kernberg_avance_integracion",
-            "nombre": "Señalar avance hacia ambivalencia integrada",
-            "texto": "Intervención breve que destaca momentos en los que el paciente puede sostener simultáneamente aspectos positivos y negativos del self u objeto, reforzando el progreso estructural sin idealizarlo (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
-            "sub": "I_integracion"
-          }
-        ]
-      }
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_fragmentacion",
+          "nombre": "Trabajo con fragmentación del self",
+          "texto": "Procedimiento orientado a sostener estados de desorganización, vacío o colapso narcisista sin interpretarlos como resistencia, priorizando la contención empática hasta que el self recupere cohesión suficiente para elaborar la experiencia (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "I_integracion"
+        }
+      ]
     }
   ]
 }

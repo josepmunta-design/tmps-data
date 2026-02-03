@@ -1,128 +1,106 @@
 {
   "subprocesoId": "RF_ground",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 5,
   "modelos": [
     {
-      "id": "psicologia-yo-hartmann",
-      "label": "Psicología del yo",
-      "year": 1939,
-      "autores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-yo-hartmann.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hartmann_eval_yo",
-            "nombre": "Evaluación estructural del yo",
-            "texto": "Procedimiento sistemático de evaluación clínica del nivel de funcionamiento del yo, incluyendo prueba de realidad, tolerancia a la frustración, control de impulsos, capacidad reflexiva y flexibilidad defensiva; esta evaluación guía el tipo y la intensidad de las intervenciones para evitar desorganización y promover adaptación progresiva.",
-            "sub": "RF_ground"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "analisis-bioenergetico",
+      "modelLabel": "Análisis Bioenergético",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Alexander Lowen",
+      "modelYear": 1956,
+      "items": [
+        {
+          "codigo": "m_bioenergetico_grounding",
+          "nombre": "Grounding",
+          "texto": "Ejercicio fundamental que busca aumentar el contacto con el suelo y la sensación de sostén corporal. Facilita regulación autonómica, presencia y conexión con la realidad corporal inmediata (Lowen, 1975).",
+          "sub": "RF_ground"
+        }
+      ]
     },
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_holding_encuadre",
-            "nombre": "Encuadre fiable como holding (fiabilidad, continuidad, no intrusión)",
-            "texto": "Procedimiento central que convierte el encuadre en una forma activa de sostén: regularidad, límites claros, continuidad y una presencia no intrusiva que permite al paciente dejar de “funcionar para el otro”; el terapeuta protege el espacio de presiones de rendimiento y de interpretaciones prematuras, de modo que el paciente pueda experimentar seguridad suficiente para descansar defensas, contactar necesidades de dependencia y recuperar continuidad del ser.",
-            "sub": "RF_ground"
-          },
-          {
-            "codigo": "p_winn_transiciones_continuidad",
-            "nombre": "Transiciones, separación y continuidad entre sesiones (preservar el going-on-being)",
-            "texto": "Procedimiento que cuida los finales, pausas, vacaciones y cambios para que no se vivan como derrumbe o intrusión; se anticipan reacciones, se construyen soportes transicionales (recordatorios, rituales, tareas simples) y se revisa el impacto, favoreciendo continuidad del ser y disminuyendo defensas de retirada o hipercontrol ante la separación.",
-            "sub": "RF_ground"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_winn_pausa_cuerpo",
-            "nombre": "Micro-pausa para notar el cuerpo (anclaje suave)",
-            "texto": "Microintervención que introduce una pausa de segundos para notar sensaciones simples (peso, respiración, apoyo) cuando aparece intrusión, prisa o desconexión, ayudando a reorganizar el self corporizado sin convertirlo en ejercicio técnico rígido.",
-            "sub": "RF_ground"
-          },
-          {
-            "codigo": "m_winn_cierre_continuidad",
-            "nombre": "Cierre con continuidad (transición cuidada)",
-            "texto": "Microintervención final que ayuda a hacer puente entre sesión y vida cotidiana (qué te llevas, qué sostén tendrás, qué recordarás), para evitar sensación de caída o intrusión y preservar el going-on-being.",
-            "sub": "RF_ground"
-          }
-        ]
-      }
+      "modelId": "psicodinamica-ciclica-wachtel",
+      "modelLabel": "Psicodinámica cíclica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Paul L. Wachtel",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "m_wachtel_pausaSomatica",
+          "nombre": "Pausa somática para salir del automatismo",
+          "texto": "Microintervención que introduce una pausa corporal breve —anclaje sensorial o respiración consciente— en el momento en que emerge el impulso defensivo, con el objetivo de reducir activación fisiológica y recuperar margen de elección. Esta pausa somática permite interrumpir el automatismo del ciclo antes de que se traduzca en acción relacional. (Wachtel, 2011)",
+          "sub": "RF_ground"
+        }
+      ]
     },
     {
-      "id": "analisis-bioenergetico",
-      "label": "Análisis Bioenergético",
-      "year": 1956,
-      "autores": "Alexander Lowen",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/analisis-bioenergetico.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_bioenergetico_grounding",
-            "nombre": "Grounding",
-            "texto": "Ejercicio fundamental que busca aumentar el contacto con el suelo y la sensación de sostén corporal. Facilita regulación autonómica, presencia y conexión con la realidad corporal inmediata (Lowen, 1975).",
-            "sub": "RF_ground"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-multimodal-basic-id-lazarus",
+      "modelLabel": "Psicoterapia multimodal (BASIC-ID)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Arnold A. Lazarus",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_lazarus_sensacion_somatica",
+          "nombre": "Intervención en Sensación (S) mediante regulación somática y manejo fisiológico",
+          "texto": "Procedimiento centrado en reducir hiperactivación o desconexión corporal mediante técnicas somáticas (respiración, relajación muscular, grounding) y entrenamiento de conciencia corporal funcional. Se utiliza cuando síntomas fisiológicos (tensión, agitación, somatización, pánico) están amplificando afecto y cogniciones, de modo que estabilizar el cuerpo aumenta accesibilidad al resto del trabajo terapéutico. (Lazarus, 1976; Lazarus, 1989)",
+          "sub": "RF_ground"
+        },
+        {
+          "codigo": "m_lazarus_anclaje_somatico",
+          "nombre": "Anclaje somático breve",
+          "texto": "Microintervención que utiliza respiración, presión corporal o estimulación sensorial breve para reducir activación fisiológica cuando la modalidad Sensación está amplificando el problema. Este anclaje mejora acceso a cognición y conducta sin necesidad de intervenciones largas. (Lazarus, 1976)",
+          "sub": "RF_ground"
+        }
+      ]
     },
     {
-      "id": "psicodinamica-ciclica-wachtel",
-      "label": "Psicodinámica cíclica",
-      "year": 1977,
-      "autores": "Paul L. Wachtel",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_wachtel_pausaSomatica",
-            "nombre": "Pausa somática para salir del automatismo",
-            "texto": "Microintervención que introduce una pausa corporal breve —anclaje sensorial o respiración consciente— en el momento en que emerge el impulso defensivo, con el objetivo de reducir activación fisiológica y recuperar margen de elección. Esta pausa somática permite interrumpir el automatismo del ciclo antes de que se traduzca en acción relacional. (Wachtel, 2011)",
-            "sub": "RF_ground"
-          }
-        ]
-      }
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "p_hartmann_eval_yo",
+          "nombre": "Evaluación estructural del yo",
+          "texto": "Procedimiento sistemático de evaluación clínica del nivel de funcionamiento del yo, incluyendo prueba de realidad, tolerancia a la frustración, control de impulsos, capacidad reflexiva y flexibilidad defensiva; esta evaluación guía el tipo y la intensidad de las intervenciones para evitar desorganización y promover adaptación progresiva.",
+          "sub": "RF_ground"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-multimodal-basic-id-lazarus",
-      "label": "Psicoterapia multimodal (BASIC-ID)",
-      "year": 1977,
-      "autores": "Arnold A. Lazarus",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicoterapia-multimodal-basic-id-lazarus.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_lazarus_sensacion_somatica",
-            "nombre": "Intervención en Sensación (S) mediante regulación somática y manejo fisiológico",
-            "texto": "Procedimiento centrado en reducir hiperactivación o desconexión corporal mediante técnicas somáticas (respiración, relajación muscular, grounding) y entrenamiento de conciencia corporal funcional. Se utiliza cuando síntomas fisiológicos (tensión, agitación, somatización, pánico) están amplificando afecto y cogniciones, de modo que estabilizar el cuerpo aumenta accesibilidad al resto del trabajo terapéutico. (Lazarus, 1976; Lazarus, 1989)",
-            "sub": "RF_ground"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_lazarus_anclaje_somatico",
-            "nombre": "Anclaje somático breve",
-            "texto": "Microintervención que utiliza respiración, presión corporal o estimulación sensorial breve para reducir activación fisiológica cuando la modalidad Sensación está amplificando el problema. Este anclaje mejora acceso a cognición y conducta sin necesidad de intervenciones largas. (Lazarus, 1976)",
-            "sub": "RF_ground"
-          }
-        ]
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_holding_encuadre",
+          "nombre": "Encuadre fiable como holding (fiabilidad, continuidad, no intrusión)",
+          "texto": "Procedimiento central que convierte el encuadre en una forma activa de sostén: regularidad, límites claros, continuidad y una presencia no intrusiva que permite al paciente dejar de “funcionar para el otro”; el terapeuta protege el espacio de presiones de rendimiento y de interpretaciones prematuras, de modo que el paciente pueda experimentar seguridad suficiente para descansar defensas, contactar necesidades de dependencia y recuperar continuidad del ser.",
+          "sub": "RF_ground"
+        },
+        {
+          "codigo": "p_winn_transiciones_continuidad",
+          "nombre": "Transiciones, separación y continuidad entre sesiones (preservar el going-on-being)",
+          "texto": "Procedimiento que cuida los finales, pausas, vacaciones y cambios para que no se vivan como derrumbe o intrusión; se anticipan reacciones, se construyen soportes transicionales (recordatorios, rituales, tareas simples) y se revisa el impacto, favoreciendo continuidad del ser y disminuyendo defensas de retirada o hipercontrol ante la separación.",
+          "sub": "RF_ground"
+        },
+        {
+          "codigo": "m_winn_pausa_cuerpo",
+          "nombre": "Micro-pausa para notar el cuerpo (anclaje suave)",
+          "texto": "Microintervención que introduce una pausa de segundos para notar sensaciones simples (peso, respiración, apoyo) cuando aparece intrusión, prisa o desconexión, ayudando a reorganizar el self corporizado sin convertirlo en ejercicio técnico rígido.",
+          "sub": "RF_ground"
+        },
+        {
+          "codigo": "m_winn_cierre_continuidad",
+          "nombre": "Cierre con continuidad (transición cuidada)",
+          "texto": "Microintervención final que ayuda a hacer puente entre sesión y vida cotidiana (qué te llevas, qué sostén tendrás, qué recordarás), para evitar sensación de caída o intrusión y preservar el going-on-being.",
+          "sub": "RF_ground"
+        }
+      ]
     }
   ]
 }

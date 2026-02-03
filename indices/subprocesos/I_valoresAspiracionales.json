@@ -1,402 +1,331 @@
 {
   "subprocesoId": "I_valoresAspiracionales",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 16,
   "modelos": [
     {
-      "id": "a2naikan1940",
-      "label": "Naikan",
-      "year": 1940,
-      "autores": "Yoshimoto Ishin",
-      "grupo": "No Occidentales",
-      "file": "data/Core/modelos/Otros/a2naikan1940.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_naikan_interdependencia",
-            "nombre": "Reencuadre hacia interdependencia",
-            "texto": "Pregunta breve: '¿Qué dice esto de los vínculos que te han sostenido?' para desplazar la narrativa del yo aislado al yo-en-relación.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "a2naikan1940",
+      "modelLabel": "Naikan",
+      "modelGrupo": "No Occidentales",
+      "modelAutores": "Yoshimoto Ishin",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "m_naikan_interdependencia",
+          "nombre": "Reencuadre hacia interdependencia",
+          "texto": "Pregunta breve: '¿Qué dice esto de los vínculos que te han sostenido?' para desplazar la narrativa del yo aislado al yo-en-relación.",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "logoterapia-1940",
-      "label": "Logoterapia",
-      "year": 1940,
-      "autores": "Viktor E. Frankl",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/logoterapia-1940.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_logo_sentido",
-            "nombre": "Clarificación de sentido vital",
-            "texto": "Exploración sistemática de fuentes de sentido a través del trabajo, el amor y la actitud ante el sufrimiento. El terapeuta formula preguntas existenciales que facilitan el descubrimiento de valores y propósitos concretos.",
-            "sub": "I_valoresAspiracionales"
-          },
-          {
-            "codigo": "p_logo_dialogo",
-            "nombre": "Diálogo socrático existencial",
-            "texto": "Uso de preguntas abiertas y no directivas para que el paciente descubra por sí mismo significados y responsabilidades, evitando imponer valores externos.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_logo_valores_acto",
-            "nombre": "Nombrar valores en acto",
-            "texto": "Identificar valores que ya están presentes en la conducta del paciente, incluso en medio del sufrimiento.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "k1kelly55",
+      "modelLabel": "Teoría de los Constructos Personales (PCP)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "George A. Kelly",
+      "modelYear": 1955,
+      "items": [
+        {
+          "codigo": "m_kelly_identidad",
+          "nombre": "Preguntas de compatibilidad identitaria",
+          "texto": "Preguntas breves del tipo \"¿qué diría esto sobre quién eres?\" o \"¿encaja esto con la persona que quieres ser?\" \npara alinear las decisiones de cambio con la identidad nuclear y evitar vivencias de traición a uno mismo.",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "neopsicoanalisis",
-      "label": "Neopsicoanálisis",
-      "year": 1940,
-      "autores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/neopsicoanalisis.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neopsy_fromm_analisis_sociocultural",
-            "nombre": "Análisis sociocultural del carácter y la alienación (Fromm)",
-            "texto": "Procedimiento que integra presiones culturales (estatus, productividad, consumo, competitividad, roles) en la formulación del malestar, diferenciando ‘fallo personal’ de alienación social; se exploran orientaciones de carácter y cómo el entorno refuerza vínculos instrumentales, promoviendo una lectura que aumente agencia y elección ética sin caer en culpabilización.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neopsy_deberia_a_valor",
-            "nombre": "Detectar un ‘debería’ y traducirlo a valor elegido",
-            "texto": "Intervención breve que identifica el mandato (‘tengo que’) y lo reconvierte en elección orientada a valor (‘quiero porque’), reduciendo tiranía interna y aumentando agencia sin romper la motivación.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-integrativa",
+      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_feixas_yoActualYoIdeal",
+          "nombre": "Trabajo de discrepancias Yo actual – Yo ideal y metas identitarias",
+          "texto": "Procedimiento que explora discrepancias entre self actual y self ideal (a menudo visibles en rejilla o en narrativas) para distinguir aspiraciones sanas de mandatos rígidos, clarificar valores nucleares y reformular metas de cambio en términos de identidad viable; se revisan estándares internalizados, se reduce perfeccionismo moralizado y se construyen objetivos alineados con coherencia interna y relación, evitando que el ideal funcione como fuente crónica de vergüenza o autoataque. (Kelly, 1955; Feixas, 2004)",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "m_feixas_valores",
+          "nombre": "Alinear cambio con valores nucleares",
+          "texto": "Breves preguntas que conectan alternativas emergentes con valores profundos del paciente, asegurando que el cambio tenga sentido identitario y motivacional. (Kelly, 1955; Feixas, 2004)",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "k1kelly55",
-      "label": "Teoría de los Constructos Personales (PCP)",
-      "year": 1955,
-      "autores": "George A. Kelly",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/k1kelly55.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_kelly_identidad",
-            "nombre": "Preguntas de compatibilidad identitaria",
-            "texto": "Preguntas breves del tipo \"¿qué diría esto sobre quién eres?\" o \"¿encaja esto con la persona que quieres ser?\" \npara alinear las decisiones de cambio con la identidad nuclear y evitar vivencias de traición a uno mismo.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-neimeyer",
+      "modelLabel": "Neimeyer – Psicoterapia constructivista",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Robert A. Neimeyer",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_neim_reautoria_identidad",
+          "nombre": "Reautoría de la identidad",
+          "texto": "Procedimiento mediante el cual el cliente revisa y reescribe activamente aspectos centrales de su identidad a la luz de nuevas comprensiones, integrando pérdidas, cambios y contradicciones en un relato identitario más flexible. La reautoría no busca construir una historia idealizada, sino permitir que el self se reorganice sin quedar fijado a narrativas de daño, fracaso o victimización (Neimeyer, 2001).",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "p_neim_valores",
+          "nombre": "Exploración de valores y compromisos vitales",
+          "texto": "Procedimiento que explora los valores, principios y compromisos vitales que dan dirección y sentido a la vida del cliente, especialmente tras una ruptura de significado. Clarificar estos valores permite orientar la reconstrucción narrativa hacia futuros posibles que resulten coherentes con la identidad emergente y no solo con la reducción del malestar (Neimeyer, 2001).",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "m_neim_valores_implicitos",
+          "nombre": "Exploración de valores implícitos",
+          "texto": "Microintervención que identifica valores y compromisos vitales implícitos en el relato del cliente, especialmente aquellos puestos en evidencia por la pérdida o el sufrimiento. Reconocer estos valores permite orientar la reconstrucción de significado hacia lo que sigue siendo importante para la persona (Neimeyer, 2001).",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "movimiento-potencial-humano-esalen",
-      "label": "Movimiento del Potencial Humano (Esalen)",
-      "year": 1962,
-      "autores": "Michael Murphy, Richard Price",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/movimiento-potencial-humano-esalen.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_esalen_retiro",
-            "nombre": "Retiro breve con objetivos",
-            "texto": "Espacios experienciales intensivos de corta duración que permiten desconexión del contexto habitual, clarificación de objetivos vitales y reorganización de la narrativa personal desde una mayor conciencia y presencia (Kripal, 2007).",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "self-dialogico-hermans",
+      "modelLabel": "Teoría del self dialógico",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Hubert J. M. Hermans",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_hermans_ampliacionRepertorio",
+          "nombre": "Ampliación del repertorio de posiciones (repertory expansion)",
+          "texto": "Procedimiento que busca aumentar la variedad de posiciones disponibles (p. ej., “yo que pone límites”, “yo que pide ayuda”, “yo que descansa”, “yo compasivo”), especialmente cuando el self está empobrecido o colonizado por pocas voces. Se construyen nuevas posiciones a partir de excepciones, recursos, modelos internos/externos y valores, y se ensayan microcomportamientos congruentes para que esas voces ganen estabilidad y acceso en contextos relevantes. (Hermans et al., 1992; Hermans, 1996).",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "p_hermans_posicionamientoPorValores",
+          "nombre": "Clarificación de valores y elección de posicionamiento (posiciones guiadas por valores)",
+          "texto": "Procedimiento que conecta el trabajo dialógico con dirección vital, identificando qué posiciones encarnan valores nucleares y eligiendo conscientemente desde qué voz actuar en situaciones clave. (Hermans, 1996).",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "m_hermans_ensayoNuevaVoz",
+          "nombre": "Ensayo verbal de nueva posición",
+          "texto": "Microintervención que invita al paciente a expresar en voz alta cómo hablaría o actuaría desde una posición alternativa elegida. Funciona como puente entre insight y acción, ayudando a consolidar nuevas voces antes de llevarlas a la vida cotidiana. (Hermans, 1996).",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "h19ta64",
-      "label": "Análisis Transaccional (TA)",
-      "year": "1964",
-      "autores": "Eric Berne",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/h19ta64.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_ta_redecision",
-            "nombre": "Re-decisión",
-            "texto": "Explorar la decisión temprana que sostiene el guion y formular una alternativa viable en el presente.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "terapia-narrativa-white-epston",
+      "modelLabel": "Terapia narrativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Michael White; David Epston",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "m_nar_valores_resistencia",
+          "nombre": "Preguntar por valores implicados en la resistencia",
+          "texto": "Microintervención que profundiza en los valores, compromisos o principios que estaban siendo defendidos cuando la persona resistió al problema. Permite vincular la acción concreta con una identidad preferida y dar espesor ético a los resultados únicos (White, 2007, *Maps of Narrative Practice*).",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "terapia-de-la-realidad-1965",
-      "label": "Terapia de la Realidad / Teoría de la Elección",
-      "year": 1965,
-      "autores": "William Glasser",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/terapia-de-la-realidad-1965.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_rt_necesidades",
-            "nombre": "Clarificación de necesidades básicas",
-            "texto": "Exploración sistemática de cómo se están satisfaciendo (o no) las cinco necesidades básicas propuestas por Glasser. Ayuda al cliente a comprender la lógica funcional de su conducta sin patologizarla y a orientar nuevas elecciones.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_evocar",
+          "nombre": "Proceso 3: Evocar (Evoking)",
+          "texto": "Evocar es el núcleo de MI: facilitar que el cliente verbalice sus propias razones, deseos y necesidades para cambiar. El terapeuta dirige la conversación para que aparezca ‘change talk’ (deseo, capacidad, razones, necesidad, compromiso), en lugar de discutir con el ‘sustain talk’. La lógica es simple y potente: cuanto más el cliente se oye a sí mismo argumentando a favor del cambio, más probable es que actúe.",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "p_mi_discrepancia",
+          "nombre": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+          "texto": "La discrepancia en MI no es culpa ni regaño: es clarificar con delicadeza la distancia entre lo que la persona valora y lo que su conducta produce. Se hace evocando valores, futuro deseado y consecuencias vividas, para que el cliente vea por sí mismo la incoherencia costosa. Esta discrepancia adaptativa aumenta motivación sin presión externa.",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "p_mi_rulers",
+          "nombre": "Escalas de importancia y confianza (rulers)",
+          "texto": "Las escalas convierten una discusión abstracta en información accionable: ‘del 0 al 10, ¿cuán importante…?, ¿cuán confiado…?’. Lo clave es la segunda pregunta: ‘¿por qué no es más bajo?’ para evocar razones de cambio, y ‘¿qué haría falta para subir un punto?’ para pasar a plan. Son simples y muy potentes para desbloquear ambivalencia.",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "p_mi_valores_eleccion",
+          "nombre": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "texto": "Cuando el conflicto es existencial (‘quiero A y B pero no caben’), MI trabaja desde valores para que la decisión sea identitaria, no impulsiva. El terapeuta ayuda a nombrar lo que importa de verdad, reconocer costes, y elegir una dirección con responsabilidad. Esto reduce el cambio ‘por presión’ y aumenta coherencia.",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "psicodinamica-ciclica-wachtel",
-      "label": "Psicodinámica cíclica",
-      "year": 1977,
-      "autores": "Paul L. Wachtel",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_wachtel_costeCiclo",
-            "nombre": "Identificar el “precio” del ciclo",
-            "texto": "Microintervención que hace explícito el coste acumulado de mantener el patrón —soledad, conflicto crónico, desgaste emocional u oportunidades perdidas— conectándolo con la identidad y los valores personales. El objetivo no es culpabilizar, sino activar motivación genuina para el cambio al contrastar lo que el ciclo promete proteger con lo que realmente termina generando. (Wachtel, 2008)",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "h19ta64",
+      "modelLabel": "Análisis Transaccional (TA)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Eric Berne",
+      "modelYear": "1964",
+      "items": [
+        {
+          "codigo": "m_ta_redecision",
+          "nombre": "Re-decisión",
+          "texto": "Explorar la decisión temprana que sostiene el guion y formular una alternativa viable en el presente.",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "terapia-integrativa-erskine",
-      "label": "Terapia integrativa",
-      "year": 1978,
-      "autores": "Richard G. Erskine",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/terapia-integrativa-erskine.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_erskine_cierreIntegracion",
-            "nombre": "Cierre e integración del proceso terapéutico",
-            "texto": "Procedimiento de cierre que integra los cambios relacionales, emocionales y identitarios logrados durante la terapia, ayudando al paciente a reconocer nuevas capacidades de contacto y a sostenerlas fuera del contexto terapéutico. El cierre se concibe como una transición relacional elaborada, no como simple final técnico, consolidando autonomía y continuidad del self. (Erskine, 2015)",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_erskine_cierreSesion",
-            "nombre": "Cierre relacional de la sesión",
-            "texto": "Microintervención de cierre que revisa brevemente cómo se va el paciente de la sesión a nivel emocional y relacional, reforzando sensación de continuidad del vínculo y ayudando a transitar de la experiencia terapéutica al mundo externo con mayor integración. (Erskine et al., 1999)",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "logoterapia-1940",
+      "modelLabel": "Logoterapia",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Viktor E. Frankl",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_logo_sentido",
+          "nombre": "Clarificación de sentido vital",
+          "texto": "Exploración sistemática de fuentes de sentido a través del trabajo, el amor y la actitud ante el sufrimiento. El terapeuta formula preguntas existenciales que facilitan el descubrimiento de valores y propósitos concretos.",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "p_logo_dialogo",
+          "nombre": "Diálogo socrático existencial",
+          "texto": "Uso de preguntas abiertas y no directivas para que el paciente descubra por sí mismo significados y responsabilidades, evitando imponer valores externos.",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "m_logo_valores_acto",
+          "nombre": "Nombrar valores en acto",
+          "texto": "Identificar valores que ya están presentes en la conducta del paciente, incluso en medio del sufrimiento.",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_evocar",
-            "nombre": "Proceso 3: Evocar (Evoking)",
-            "texto": "Evocar es el núcleo de MI: facilitar que el cliente verbalice sus propias razones, deseos y necesidades para cambiar. El terapeuta dirige la conversación para que aparezca ‘change talk’ (deseo, capacidad, razones, necesidad, compromiso), en lugar de discutir con el ‘sustain talk’. La lógica es simple y potente: cuanto más el cliente se oye a sí mismo argumentando a favor del cambio, más probable es que actúe.",
-            "sub": "I_valoresAspiracionales"
-          },
-          {
-            "codigo": "p_mi_discrepancia",
-            "nombre": "Desarrollar discrepancia (conducta actual vs valores/metas)",
-            "texto": "La discrepancia en MI no es culpa ni regaño: es clarificar con delicadeza la distancia entre lo que la persona valora y lo que su conducta produce. Se hace evocando valores, futuro deseado y consecuencias vividas, para que el cliente vea por sí mismo la incoherencia costosa. Esta discrepancia adaptativa aumenta motivación sin presión externa.",
-            "sub": "I_valoresAspiracionales"
-          },
-          {
-            "codigo": "p_mi_rulers",
-            "nombre": "Escalas de importancia y confianza (rulers)",
-            "texto": "Las escalas convierten una discusión abstracta en información accionable: ‘del 0 al 10, ¿cuán importante…?, ¿cuán confiado…?’. Lo clave es la segunda pregunta: ‘¿por qué no es más bajo?’ para evocar razones de cambio, y ‘¿qué haría falta para subir un punto?’ para pasar a plan. Son simples y muy potentes para desbloquear ambivalencia.",
-            "sub": "I_valoresAspiracionales"
-          },
-          {
-            "codigo": "p_mi_valores_eleccion",
-            "nombre": "Resolver ambivalencia con valores (clarificación orientada a elección)",
-            "texto": "Cuando el conflicto es existencial (‘quiero A y B pero no caben’), MI trabaja desde valores para que la decisión sea identitaria, no impulsiva. El terapeuta ayuda a nombrar lo que importa de verdad, reconocer costes, y elegir una dirección con responsabilidad. Esto reduce el cambio ‘por presión’ y aumenta coherencia.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "movimiento-potencial-humano-esalen",
+      "modelLabel": "Movimiento del Potencial Humano (Esalen)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Michael Murphy, Richard Price",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "m_esalen_retiro",
+          "nombre": "Retiro breve con objetivos",
+          "texto": "Espacios experienciales intensivos de corta duración que permiten desconexión del contexto habitual, clarificación de objetivos vitales y reorganización de la narrativa personal desde una mayor conciencia y presencia (Kripal, 2007).",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "terapia-narrativa-white-epston",
-      "label": "Terapia narrativa",
-      "year": 1990,
-      "autores": "Michael White; David Epston",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_nar_valores_resistencia",
-            "nombre": "Preguntar por valores implicados en la resistencia",
-            "texto": "Microintervención que profundiza en los valores, compromisos o principios que estaban siendo defendidos cuando la persona resistió al problema. Permite vincular la acción concreta con una identidad preferida y dar espesor ético a los resultados únicos (White, 2007, *Maps of Narrative Practice*).",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "psicologia-positiva-1998",
+      "modelLabel": "Psicología Positiva",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Martin E. P. Seligman; Mihaly Csikszentmihalyi",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_pospsy_sentido_metas",
+          "nombre": "Formulación de metas con sentido (Meaning) y compromiso",
+          "texto": "Clarificar valores y traducirlos a metas concretas, priorizando las que crean dirección vital. Se revisan obstáculos (miedo, evitación, contexto) y se establece un sistema simple de seguimiento.",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "m_pospsy_anclaje_sentido",
+          "nombre": "Anclaje de sentido (¿para qué vale la pena esto?)",
+          "texto": "Microintervención para conectar una conducta o decisión con valores y propósito, incrementando motivación interna.",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-neimeyer",
-      "label": "Neimeyer – Psicoterapia constructivista",
-      "year": 1995,
-      "autores": "Robert A. Neimeyer",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-neimeyer.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neim_reautoria_identidad",
-            "nombre": "Reautoría de la identidad",
-            "texto": "Procedimiento mediante el cual el cliente revisa y reescribe activamente aspectos centrales de su identidad a la luz de nuevas comprensiones, integrando pérdidas, cambios y contradicciones en un relato identitario más flexible. La reautoría no busca construir una historia idealizada, sino permitir que el self se reorganice sin quedar fijado a narrativas de daño, fracaso o victimización (Neimeyer, 2001).",
-            "sub": "I_valoresAspiracionales"
-          },
-          {
-            "codigo": "p_neim_valores",
-            "nombre": "Exploración de valores y compromisos vitales",
-            "texto": "Procedimiento que explora los valores, principios y compromisos vitales que dan dirección y sentido a la vida del cliente, especialmente tras una ruptura de significado. Clarificar estos valores permite orientar la reconstrucción narrativa hacia futuros posibles que resulten coherentes con la identidad emergente y no solo con la reducción del malestar (Neimeyer, 2001).",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neim_valores_implicitos",
-            "nombre": "Exploración de valores implícitos",
-            "texto": "Microintervención que identifica valores y compromisos vitales implícitos en el relato del cliente, especialmente aquellos puestos en evidencia por la pérdida o el sufrimiento. Reconocer estos valores permite orientar la reconstrucción de significado hacia lo que sigue siendo importante para la persona (Neimeyer, 2001).",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-existencial-humanista-contemporanea",
+      "modelLabel": "Psicoterapia Existencial-Humanista Contemporánea",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Kirk J. Schneider, James F. T. Bugental",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_exist_dadas",
+          "nombre": "Trabajo explícito con las dadas existenciales",
+          "texto": "Procedimiento que aborda muerte/finitud, libertad, aislamiento y sentido como organizadores del sufrimiento y del crecimiento, vinculándolos con decisiones concretas y con la historia de la persona. No se trata de filosofía abstracta, sino de cómo esas dadas están actuando hoy en la vida del paciente (Yalom, 1980; Schneider, 2009).",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "p_exist_valores",
+          "nombre": "Clarificación de valores vividos",
+          "texto": "Procedimiento para distinguir valores elegidos de mandatos, miedos o inercia, traduciéndolos a criterios prácticos de elección. Se orienta a construir coherencia entre identidad y acción, evitando que ‘valores’ queden como discursos bonitos sin conducta (Schneider, 2009).",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "self-dialogico-hermans",
-      "label": "Teoría del self dialógico",
-      "year": 1996,
-      "autores": "Hubert J. M. Hermans",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/self-dialogico-hermans.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hermans_ampliacionRepertorio",
-            "nombre": "Ampliación del repertorio de posiciones (repertory expansion)",
-            "texto": "Procedimiento que busca aumentar la variedad de posiciones disponibles (p. ej., “yo que pone límites”, “yo que pide ayuda”, “yo que descansa”, “yo compasivo”), especialmente cuando el self está empobrecido o colonizado por pocas voces. Se construyen nuevas posiciones a partir de excepciones, recursos, modelos internos/externos y valores, y se ensayan microcomportamientos congruentes para que esas voces ganen estabilidad y acceso en contextos relevantes. (Hermans et al., 1992; Hermans, 1996).",
-            "sub": "I_valoresAspiracionales"
-          },
-          {
-            "codigo": "p_hermans_posicionamientoPorValores",
-            "nombre": "Clarificación de valores y elección de posicionamiento (posiciones guiadas por valores)",
-            "texto": "Procedimiento que conecta el trabajo dialógico con dirección vital, identificando qué posiciones encarnan valores nucleares y eligiendo conscientemente desde qué voz actuar en situaciones clave. (Hermans, 1996).",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_hermans_ensayoNuevaVoz",
-            "nombre": "Ensayo verbal de nueva posición",
-            "texto": "Microintervención que invita al paciente a expresar en voz alta cómo hablaría o actuaría desde una posición alternativa elegida. Funciona como puente entre insight y acción, ayudando a consolidar nuevas voces antes de llevarlas a la vida cotidiana. (Hermans, 1996).",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "terapia-de-la-realidad-1965",
+      "modelLabel": "Terapia de la Realidad / Teoría de la Elección",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William Glasser",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "p_rt_necesidades",
+          "nombre": "Clarificación de necesidades básicas",
+          "texto": "Exploración sistemática de cómo se están satisfaciendo (o no) las cinco necesidades básicas propuestas por Glasser. Ayuda al cliente a comprender la lógica funcional de su conducta sin patologizarla y a orientar nuevas elecciones.",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "psicologia-positiva-1998",
-      "label": "Psicología Positiva",
-      "year": 1998,
-      "autores": "Martin E. P. Seligman; Mihaly Csikszentmihalyi",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/psicologia-positiva-1998.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_pospsy_sentido_metas",
-            "nombre": "Formulación de metas con sentido (Meaning) y compromiso",
-            "texto": "Clarificar valores y traducirlos a metas concretas, priorizando las que crean dirección vital. Se revisan obstáculos (miedo, evitación, contexto) y se establece un sistema simple de seguimiento.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_pospsy_anclaje_sentido",
-            "nombre": "Anclaje de sentido (¿para qué vale la pena esto?)",
-            "texto": "Microintervención para conectar una conducta o decisión con valores y propósito, incrementando motivación interna.",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "psicodinamica-ciclica-wachtel",
+      "modelLabel": "Psicodinámica cíclica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Paul L. Wachtel",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "m_wachtel_costeCiclo",
+          "nombre": "Identificar el “precio” del ciclo",
+          "texto": "Microintervención que hace explícito el coste acumulado de mantener el patrón —soledad, conflicto crónico, desgaste emocional u oportunidades perdidas— conectándolo con la identidad y los valores personales. El objetivo no es culpabilizar, sino activar motivación genuina para el cambio al contrastar lo que el ciclo promete proteger con lo que realmente termina generando. (Wachtel, 2008)",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-integrativa",
-      "label": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
-      "year": 2000,
-      "autores": "Guillem Feixas; Manuel Villegas Besora",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-integrativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_feixas_yoActualYoIdeal",
-            "nombre": "Trabajo de discrepancias Yo actual – Yo ideal y metas identitarias",
-            "texto": "Procedimiento que explora discrepancias entre self actual y self ideal (a menudo visibles en rejilla o en narrativas) para distinguir aspiraciones sanas de mandatos rígidos, clarificar valores nucleares y reformular metas de cambio en términos de identidad viable; se revisan estándares internalizados, se reduce perfeccionismo moralizado y se construyen objetivos alineados con coherencia interna y relación, evitando que el ideal funcione como fuente crónica de vergüenza o autoataque. (Kelly, 1955; Feixas, 2004)",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_feixas_valores",
-            "nombre": "Alinear cambio con valores nucleares",
-            "texto": "Breves preguntas que conectan alternativas emergentes con valores profundos del paciente, asegurando que el cambio tenga sentido identitario y motivacional. (Kelly, 1955; Feixas, 2004)",
-            "sub": "I_valoresAspiracionales"
-          }
-        ]
-      }
+      "modelId": "terapia-integrativa-erskine",
+      "modelLabel": "Terapia integrativa",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard G. Erskine",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "p_erskine_cierreIntegracion",
+          "nombre": "Cierre e integración del proceso terapéutico",
+          "texto": "Procedimiento de cierre que integra los cambios relacionales, emocionales y identitarios logrados durante la terapia, ayudando al paciente a reconocer nuevas capacidades de contacto y a sostenerlas fuera del contexto terapéutico. El cierre se concibe como una transición relacional elaborada, no como simple final técnico, consolidando autonomía y continuidad del self. (Erskine, 2015)",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "m_erskine_cierreSesion",
+          "nombre": "Cierre relacional de la sesión",
+          "texto": "Microintervención de cierre que revisa brevemente cómo se va el paciente de la sesión a nivel emocional y relacional, reforzando sensación de continuidad del vínculo y ayudando a transitar de la experiencia terapéutica al mundo externo con mayor integración. (Erskine et al., 1999)",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-existencial-humanista-contemporanea",
-      "label": "Psicoterapia Existencial-Humanista Contemporánea",
-      "year": 2005,
-      "autores": "Kirk J. Schneider, James F. T. Bugental",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/psicoterapia-existencial-humanista-contemporanea.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_exist_dadas",
-            "nombre": "Trabajo explícito con las dadas existenciales",
-            "texto": "Procedimiento que aborda muerte/finitud, libertad, aislamiento y sentido como organizadores del sufrimiento y del crecimiento, vinculándolos con decisiones concretas y con la historia de la persona. No se trata de filosofía abstracta, sino de cómo esas dadas están actuando hoy en la vida del paciente (Yalom, 1980; Schneider, 2009).",
-            "sub": "I_valoresAspiracionales"
-          },
-          {
-            "codigo": "p_exist_valores",
-            "nombre": "Clarificación de valores vividos",
-            "texto": "Procedimiento para distinguir valores elegidos de mandatos, miedos o inercia, traduciéndolos a criterios prácticos de elección. Se orienta a construir coherencia entre identidad y acción, evitando que ‘valores’ queden como discursos bonitos sin conducta (Schneider, 2009).",
-            "sub": "I_valoresAspiracionales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "neopsicoanalisis",
+      "modelLabel": "Neopsicoanálisis",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_neopsy_fromm_analisis_sociocultural",
+          "nombre": "Análisis sociocultural del carácter y la alienación (Fromm)",
+          "texto": "Procedimiento que integra presiones culturales (estatus, productividad, consumo, competitividad, roles) en la formulación del malestar, diferenciando ‘fallo personal’ de alienación social; se exploran orientaciones de carácter y cómo el entorno refuerza vínculos instrumentales, promoviendo una lectura que aumente agencia y elección ética sin caer en culpabilización.",
+          "sub": "I_valoresAspiracionales"
+        },
+        {
+          "codigo": "m_neopsy_deberia_a_valor",
+          "nombre": "Detectar un ‘debería’ y traducirlo a valor elegido",
+          "texto": "Intervención breve que identifica el mandato (‘tengo que’) y lo reconvierte en elección orientada a valor (‘quiero porque’), reduciendo tiranía interna y aumentando agencia sin romper la motivación.",
+          "sub": "I_valoresAspiracionales"
+        }
+      ]
     }
   ]
 }

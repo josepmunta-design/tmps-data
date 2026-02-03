@@ -1,319 +1,259 @@
 {
   "subprocesoId": "R_limitesInterpersonales",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 14,
   "modelos": [
     {
-      "id": "relaciones-objeto-klein",
-      "label": "Relaciones de objeto (Klein)",
-      "year": 1932,
-      "autores": "Melanie Klein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/relaciones-objeto-klein.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_klein_resistencia_encuadre",
-            "nombre": "Análisis de resistencia y ataques al vínculo (incluido el encuadre)",
-            "texto": "Lectura clínica de interrupciones, olvidos, impuntualidad, discusiones sobre reglas o competencia con el terapeuta como expresiones de ansiedad y fantasía transferencial (por ejemplo, temor a ser controlado o devorado), diferenciando conflicto real del encuadre de la escena interna proyectada; se trabaja sosteniendo límites claros, interpretando la función defensiva y reparando rupturas sin entrar en luchas de poder.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "entrenamiento-habilidades-sociales",
+      "modelLabel": "Entrenamiento en habilidades sociales",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Arnold P. Goldstein; Robert P. Liberman",
+      "modelYear": 1973,
+      "items": [
+        {
+          "codigo": "p_sst_asertividad",
+          "nombre": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+          "texto": "Procedimiento para desarrollar respuestas asertivas que equilibren respeto por uno mismo y por el otro, entrenando peticiones claras, negativa firme sin agresión, manejo de insistencia y expresión de necesidades con lenguaje conductual; se trabaja el “disco rayado”, alternativas a la justificación excesiva y la tolerancia al malestar interpersonal, orientado a romper patrones de sumisión/evitación o escalada agresiva que mantienen ansiedad social, dependencia o conflictos reiterados.",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "neopsicoanalisis",
-      "label": "Neopsicoanálisis",
-      "year": 1940,
-      "autores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/neopsicoanalisis.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neopsy_fromm_practica_amor",
-            "nombre": "Terapia como educación del amor (Fromm: amor como práctica)",
-            "texto": "Intervención centrada en traducir el amor a habilidades practicables: cuidado, responsabilidad, respeto y conocimiento, diferenciándolo de fusión ansiosa o control; se trabaja con ejercicios de atención al otro, límites, reciprocidad y coherencia, para que el vínculo deje de ser un intento de calmar ansiedad y se convierta en práctica ética sostenida.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neopsy_resentimiento_a_peticion",
-            "nombre": "Convertir resentimiento en petición directa",
-            "texto": "Microintervención que detecta hostilidad encubierta y la traduce a una petición concreta y verificable, reduciendo pasivo-agresividad y aumentando claridad relacional.",
-            "sub": "R_limitesInterpersonales"
-          },
-          {
-            "codigo": "m_neopsy_frase_limite",
-            "nombre": "Ensayo de frase-límite de una línea",
-            "texto": "Intervención de práctica rápida donde el paciente formula un límite en una frase corta, sin justificar de más, para sostener autonomía y reducir el patrón de sumisión o ataque.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ]
-      }
+      "modelId": "polaridades-semanticas",
+      "modelLabel": "Modelo de polaridades semánticas",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Valeria Ugazio",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "m_ugazio_limites",
+          "nombre": "Microajustes de límites",
+          "texto": "Intervención focal que ayuda a introducir límites ligeramente distintos a los habituales, sin ruptura brusca del sistema. Permite experimentar cambios sostenibles en la posición relacional. (Ugazio, 2013)",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_tendencia_antisocial",
-            "nombre": "Trabajo con tendencia antisocial y deprivación (esperanza de ambiente)",
-            "texto": "Intervención que entiende ciertos actos transgresores como búsqueda de un entorno que falle menos: una demanda de sostén con esperanza encapsulada; se sostienen límites firmes sin humillar, se explora la deprivación que el acto intenta ‘hacer aparecer’, y se construyen vías de reparación y responsabilidad que permitan recuperar vínculo y seguridad sin repetir abandono o castigo.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_winn_cuidado_vs_control",
-            "nombre": "Diferenciar cuidado de control (en el vínculo)",
-            "texto": "Intervención breve que discrimina entre conductas de cuidado y maniobras de control o captura, ayudando a construir límites y reciprocidad sin convertir la relación en instrumento de regulación ansiosa.",
-            "sub": "R_limitesInterpersonales"
-          },
-          {
-            "codigo": "m_winn_limite_cuidadoso",
-            "nombre": "Límite cuidadoso (firme sin humillar)",
-            "texto": "Microintervención que sostiene un límite claro con tono cuidadoso para que el encuadre sea seguro y no castigador, especialmente cuando hay pruebas del objeto; el objetivo es que el paciente experimente contención sin vergüenza ni sometimiento.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ]
-      }
+      "modelId": "self-dialogico-hermans",
+      "modelLabel": "Teoría del self dialógico",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Hubert J. M. Hermans",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_hermans_reposicionamientoRelacional",
+          "nombre": "Reposicionamiento del self en relaciones (positioning & repositioning)",
+          "texto": "Procedimiento que conecta posiciones internas con roles y guiones relacionales (“cuando estoy con mi jefe aparece mi yo sumiso”, “con mi pareja aparece mi yo controlador”) y trabaja un reposicionamiento elegido (más agencia, más autenticidad, más límites). Incluye definir la nueva posición, anticipar resistencias internas, practicar mensajes emocionales y sostener fronteras interpersonales, para que el cambio identitario se traduzca en interacción real y no quede solo como insight. (Hermans, 1996).",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "entrenamiento-habilidades-sociales",
-      "label": "Entrenamiento en habilidades sociales",
-      "year": 1973,
-      "autores": "Arnold P. Goldstein; Robert P. Liberman",
-      "grupo": "Conductismo",
-      "file": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_sst_asertividad",
-            "nombre": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
-            "texto": "Procedimiento para desarrollar respuestas asertivas que equilibren respeto por uno mismo y por el otro, entrenando peticiones claras, negativa firme sin agresión, manejo de insistencia y expresión de necesidades con lenguaje conductual; se trabaja el “disco rayado”, alternativas a la justificación excesiva y la tolerancia al malestar interpersonal, orientado a romper patrones de sumisión/evitación o escalada agresiva que mantienen ansiedad social, dependencia o conflictos reiterados.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicodinamica-ciclica-wachtel",
+      "modelLabel": "Psicodinámica cíclica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Paul L. Wachtel",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_wachtel_exposicionRelacional",
+          "nombre": "Exposición a evitaciones relacionales (gradual y con sentido)",
+          "texto": "Procedimiento que identifica y jerarquiza evitaciones interpersonales significativas —como pedir, decir no, expresar necesidad, tolerar desacuerdo o sostener cercanía emocional— y diseña exposiciones graduadas acompañadas de preparación emocional y revisión posterior. El objetivo es demostrar experiencialmente que es posible atravesar ansiedad, vergüenza o miedo sin que se produzca la catástrofe anticipada, ampliando la ventana de tolerancia y debilitando defensas que mantenían el ciclo. (Wachtel, 1977; Wachtel, 2008)",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "kernberg-relaciones-objetales-modernas",
-      "label": "Kernberg – Relaciones objetales modernas",
-      "year": 1975,
-      "autores": "Otto F. Kernberg",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/kernberg-relaciones-objetales-modernas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kernberg_contrato_terapeutico",
-            "nombre": "Contrato terapéutico estructural",
-            "texto": "Procedimiento inicial que establece de forma explícita normas, responsabilidades, manejo de acting out y compromiso con el tratamiento, proporcionando un marco contenedor indispensable para trabajar con pacientes con impulsividad y relaciones caóticas (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "R_limitesInterpersonales"
-          },
-          {
-            "codigo": "p_kernberg_acting_out",
-            "nombre": "Manejo activo del acting out",
-            "texto": "Procedimiento que aborda conductas impulsivas o autodestructivas fuera de sesión mediante límites claros y análisis de su significado transferencial, evitando tanto la permisividad como el castigo moralizante (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_kernberg_responsabilidad",
-            "nombre": "Reforzar responsabilidad sobre la conducta",
-            "texto": "Microintervención que devuelve al paciente la autoría de sus conductas impulsivas o agresivas sin culpabilizar, diferenciando comprensión dinámica de justificación conductual (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "R_limitesInterpersonales"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-multimodal-basic-id-lazarus",
+      "modelLabel": "Psicoterapia multimodal (BASIC-ID)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Arnold A. Lazarus",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_lazarus_interpersonal_habilidades",
+          "nombre": "Intervención en Interpersonal (I) mediante habilidades y repertorio relacional",
+          "texto": "Procedimiento orientado a ampliar el repertorio interpersonal del paciente mediante entrenamiento de habilidades (asertividad, pedir, rechazar, negociar, validar, reparar), análisis de patrones y tareas de aplicación en contextos reales. Se usa cuando los problemas relacionales sostienen el malestar o bloquean cambios en otras modalidades, y se evalúa por resultados concretos en interacciones cotidianas. (Lazarus, 1976; Lazarus, 1989)",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "psicodinamica-ciclica-wachtel",
-      "label": "Psicodinámica cíclica",
-      "year": 1977,
-      "autores": "Paul L. Wachtel",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_wachtel_exposicionRelacional",
-            "nombre": "Exposición a evitaciones relacionales (gradual y con sentido)",
-            "texto": "Procedimiento que identifica y jerarquiza evitaciones interpersonales significativas —como pedir, decir no, expresar necesidad, tolerar desacuerdo o sostener cercanía emocional— y diseña exposiciones graduadas acompañadas de preparación emocional y revisión posterior. El objetivo es demostrar experiencialmente que es posible atravesar ansiedad, vergüenza o miedo sin que se produzca la catástrofe anticipada, ampliando la ventana de tolerancia y debilitando defensas que mantenían el ciclo. (Wachtel, 1977; Wachtel, 2008)",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-integrativa-erskine",
+      "modelLabel": "Terapia integrativa",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard G. Erskine",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "m_erskine_clarificarLimites",
+          "nombre": "Clarificación de límites relacionales",
+          "texto": "Microintervención que explicita límites relacionales de manera clara y respetuosa cuando una necesidad no puede ser satisfecha directamente, diferenciando límite de rechazo. Esta clarificación protege la relación terapéutica y ofrece una experiencia nueva de límite sin abandono. (Erskine, 2015)",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-multimodal-basic-id-lazarus",
-      "label": "Psicoterapia multimodal (BASIC-ID)",
-      "year": 1977,
-      "autores": "Arnold A. Lazarus",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicoterapia-multimodal-basic-id-lazarus.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_lazarus_interpersonal_habilidades",
-            "nombre": "Intervención en Interpersonal (I) mediante habilidades y repertorio relacional",
-            "texto": "Procedimiento orientado a ampliar el repertorio interpersonal del paciente mediante entrenamiento de habilidades (asertividad, pedir, rechazar, negociar, validar, reparar), análisis de patrones y tareas de aplicación en contextos reales. Se usa cuando los problemas relacionales sostienen el malestar o bloquean cambios en otras modalidades, y se evalúa por resultados concretos en interacciones cotidianas. (Lazarus, 1976; Lazarus, 1989)",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "kernberg-relaciones-objetales-modernas",
+      "modelLabel": "Kernberg – Relaciones objetales modernas",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_kernberg_contrato_terapeutico",
+          "nombre": "Contrato terapéutico estructural",
+          "texto": "Procedimiento inicial que establece de forma explícita normas, responsabilidades, manejo de acting out y compromiso con el tratamiento, proporcionando un marco contenedor indispensable para trabajar con pacientes con impulsividad y relaciones caóticas (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "R_limitesInterpersonales"
+        },
+        {
+          "codigo": "p_kernberg_acting_out",
+          "nombre": "Manejo activo del acting out",
+          "texto": "Procedimiento que aborda conductas impulsivas o autodestructivas fuera de sesión mediante límites claros y análisis de su significado transferencial, evitando tanto la permisividad como el castigo moralizante (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "R_limitesInterpersonales"
+        },
+        {
+          "codigo": "m_kernberg_responsabilidad",
+          "nombre": "Reforzar responsabilidad sobre la conducta",
+          "texto": "Microintervención que devuelve al paciente la autoría de sus conductas impulsivas o agresivas sin culpabilizar, diferenciando comprensión dinámica de justificación conductual (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "terapia-integrativa-erskine",
-      "label": "Terapia integrativa",
-      "year": 1978,
-      "autores": "Richard G. Erskine",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/terapia-integrativa-erskine.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_erskine_clarificarLimites",
-            "nombre": "Clarificación de límites relacionales",
-            "texto": "Microintervención que explicita límites relacionales de manera clara y respetuosa cuando una necesidad no puede ser satisfecha directamente, diferenciando límite de rechazo. Esta clarificación protege la relación terapéutica y ofrece una experiencia nueva de límite sin abandono. (Erskine, 2015)",
-            "sub": "R_limitesInterpersonales"
-          }
-        ]
-      }
+      "modelId": "neopsicoanalisis",
+      "modelLabel": "Neopsicoanálisis",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_neopsy_fromm_practica_amor",
+          "nombre": "Terapia como educación del amor (Fromm: amor como práctica)",
+          "texto": "Intervención centrada en traducir el amor a habilidades practicables: cuidado, responsabilidad, respeto y conocimiento, diferenciándolo de fusión ansiosa o control; se trabaja con ejercicios de atención al otro, límites, reciprocidad y coherencia, para que el vínculo deje de ser un intento de calmar ansiedad y se convierta en práctica ética sostenida.",
+          "sub": "R_limitesInterpersonales"
+        },
+        {
+          "codigo": "m_neopsy_resentimiento_a_peticion",
+          "nombre": "Convertir resentimiento en petición directa",
+          "texto": "Microintervención que detecta hostilidad encubierta y la traduce a una petición concreta y verificable, reduciendo pasivo-agresividad y aumentando claridad relacional.",
+          "sub": "R_limitesInterpersonales"
+        },
+        {
+          "codigo": "m_neopsy_frase_limite",
+          "nombre": "Ensayo de frase-límite de una línea",
+          "texto": "Intervención de práctica rápida donde el paciente formula un límite en una frase corta, sin justificar de más, para sostener autonomía y reducir el patrón de sumisión o ataque.",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "multisystemic-therapy-mst",
-      "label": "Multisystemic Therapy (MST)",
-      "year": 1990,
-      "autores": "Scott Henggeler; Sonia Rowland",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/multisystemic-therapy-mst.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mst_contingencias_hogar",
-            "nombre": "Contratos conductuales y sistemas de refuerzo en casa",
-            "texto": "Diseño de acuerdos operativos (normas, privilegios, consecuencias) y refuerzos prosociales para aumentar cumplimiento, reducir conflictos y estabilizar rutinas.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mst_micro_contrato",
-            "nombre": "Micro-contrato de normas y privilegios",
-            "texto": "Acuerdo pequeño y específico (horario, móvil, salidas, asistencia) con consecuencias claras e inmediatas.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ]
-      }
+      "modelId": "relaciones-objeto-klein",
+      "modelLabel": "Relaciones de objeto (Klein)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Melanie Klein",
+      "modelYear": 1932,
+      "items": [
+        {
+          "codigo": "p_klein_resistencia_encuadre",
+          "nombre": "Análisis de resistencia y ataques al vínculo (incluido el encuadre)",
+          "texto": "Lectura clínica de interrupciones, olvidos, impuntualidad, discusiones sobre reglas o competencia con el terapeuta como expresiones de ansiedad y fantasía transferencial (por ejemplo, temor a ser controlado o devorado), diferenciando conflicto real del encuadre de la escena interna proyectada; se trabaja sosteniendo límites claros, interpretando la función defensiva y reparando rupturas sin entrar en luchas de poder.",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "multidimensional-family-therapy-mdft",
-      "label": "Multidimensional Family Therapy (MDFT)",
-      "year": 1991,
-      "autores": "Howard A. Liddle",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/multidimensional-family-therapy-mdft.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_mdft_limites",
-            "nombre": "Clarificación de límites parentales",
-            "texto": "Definición concreta de normas, consecuencias y expectativas.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ]
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_tendencia_antisocial",
+          "nombre": "Trabajo con tendencia antisocial y deprivación (esperanza de ambiente)",
+          "texto": "Intervención que entiende ciertos actos transgresores como búsqueda de un entorno que falle menos: una demanda de sostén con esperanza encapsulada; se sostienen límites firmes sin humillar, se explora la deprivación que el acto intenta ‘hacer aparecer’, y se construyen vías de reparación y responsabilidad que permitan recuperar vínculo y seguridad sin repetir abandono o castigo.",
+          "sub": "R_limitesInterpersonales"
+        },
+        {
+          "codigo": "m_winn_cuidado_vs_control",
+          "nombre": "Diferenciar cuidado de control (en el vínculo)",
+          "texto": "Intervención breve que discrimina entre conductas de cuidado y maniobras de control o captura, ayudando a construir límites y reciprocidad sin convertir la relación en instrumento de regulación ansiosa.",
+          "sub": "R_limitesInterpersonales"
+        },
+        {
+          "codigo": "m_winn_limite_cuidadoso",
+          "nombre": "Límite cuidadoso (firme sin humillar)",
+          "texto": "Microintervención que sostiene un límite claro con tono cuidadoso para que el encuadre sea seguro y no castigador, especialmente cuando hay pruebas del objeto; el objetivo es que el paciente experimente contención sin vergüenza ni sometimiento.",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "self-dialogico-hermans",
-      "label": "Teoría del self dialógico",
-      "year": 1996,
-      "autores": "Hubert J. M. Hermans",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/self-dialogico-hermans.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hermans_reposicionamientoRelacional",
-            "nombre": "Reposicionamiento del self en relaciones (positioning & repositioning)",
-            "texto": "Procedimiento que conecta posiciones internas con roles y guiones relacionales (“cuando estoy con mi jefe aparece mi yo sumiso”, “con mi pareja aparece mi yo controlador”) y trabaja un reposicionamiento elegido (más agencia, más autenticidad, más límites). Incluye definir la nueva posición, anticipar resistencias internas, practicar mensajes emocionales y sostener fronteras interpersonales, para que el cambio identitario se traduzca en interacción real y no quede solo como insight. (Hermans, 1996).",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "attachment-based-family-therapy-abft",
+      "modelLabel": "ABFT – Terapia familiar basada en el apego",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_abft_autonomia",
+          "nombre": "Tarea 4 – Fomento de la autonomía",
+          "texto": "Promoción de independencia progresiva del adolescente desde una base segura, negociando límites y responsabilidades.",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "polaridades-semanticas",
-      "label": "Modelo de polaridades semánticas",
-      "year": 1998,
-      "autores": "Valeria Ugazio",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/polaridades-semanticas.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_ugazio_limites",
-            "nombre": "Microajustes de límites",
-            "texto": "Intervención focal que ayuda a introducir límites ligeramente distintos a los habituales, sin ruptura brusca del sistema. Permite experimentar cambios sostenibles en la posición relacional. (Ugazio, 2013)",
-            "sub": "R_limitesInterpersonales"
-          }
-        ]
-      }
+      "modelId": "multidimensional-family-therapy-mdft",
+      "modelLabel": "Multidimensional Family Therapy (MDFT)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Howard A. Liddle",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "m_mdft_limites",
+          "nombre": "Clarificación de límites parentales",
+          "texto": "Definición concreta de normas, consecuencias y expectativas.",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "s20linares",
-      "label": "Psicoterapia relacional sistémica (Linares)",
-      "year": 2000,
-      "autores": "Juan Luis Linares",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/s20linares.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_linares_limites",
-            "nombre": "Micro-límites y elección relacional",
-            "texto": "Propuesta breve para delimitar conducta y sostener elección: pedir pausa, formular petición concreta, decir no sin ataque, acordar tiempos y turnos.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ]
-      }
+      "modelId": "multisystemic-therapy-mst",
+      "modelLabel": "Multisystemic Therapy (MST)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Scott Henggeler; Sonia Rowland",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mst_contingencias_hogar",
+          "nombre": "Contratos conductuales y sistemas de refuerzo en casa",
+          "texto": "Diseño de acuerdos operativos (normas, privilegios, consecuencias) y refuerzos prosociales para aumentar cumplimiento, reducir conflictos y estabilizar rutinas.",
+          "sub": "R_limitesInterpersonales"
+        },
+        {
+          "codigo": "m_mst_micro_contrato",
+          "nombre": "Micro-contrato de normas y privilegios",
+          "texto": "Acuerdo pequeño y específico (horario, móvil, salidas, asistencia) con consecuencias claras e inmediatas.",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     },
     {
-      "id": "attachment-based-family-therapy-abft",
-      "label": "ABFT – Terapia familiar basada en el apego",
-      "year": 2002,
-      "autores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/attachment-based-family-therapy-abft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_abft_autonomia",
-            "nombre": "Tarea 4 – Fomento de la autonomía",
-            "texto": "Promoción de independencia progresiva del adolescente desde una base segura, negociando límites y responsabilidades.",
-            "sub": "R_limitesInterpersonales"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "s20linares",
+      "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Juan Luis Linares",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_linares_limites",
+          "nombre": "Micro-límites y elección relacional",
+          "texto": "Propuesta breve para delimitar conducta y sostener elección: pedir pausa, formular petición concreta, decir no sin ataque, acordar tiempos y turnos.",
+          "sub": "R_limitesInterpersonales"
+        }
+      ]
     }
   ]
 }

@@ -1,39 +1,34 @@
 {
   "subprocesoId": "RE_profundizacion",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 1,
   "modelos": [
     {
-      "id": "terapia-integrativa-erskine",
-      "label": "Terapia integrativa",
-      "year": 1978,
-      "autores": "Richard G. Erskine",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/terapia-integrativa-erskine.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_erskine_emocionesPrimarias",
-            "nombre": "Acceso y profundización en emociones primarias",
-            "texto": "Procedimiento que facilita el acceso a emociones primarias vinculadas a experiencias relacionales tempranas —tristeza, miedo, rabia, anhelo— que suelen quedar encapsuladas bajo defensas secundarias. El terapeuta sostiene la activación emocional mediante sintonía y regulación compartida, permitiendo que la emoción sea experimentada plenamente y no solo comprendida, favoreciendo procesos de integración afectiva. (Erskine et al., 1999)",
-            "sub": "RE_profundizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_erskine_preguntaContacto",
-            "nombre": "Pregunta de contacto experiencial",
-            "texto": "Microintervención que invita al paciente a describir su experiencia inmediata (sensaciones, emociones, impulsos) en lugar de narrativas explicativas, facilitando el acceso al aquí-y-ahora experiencial. Esta pregunta ayuda a desplazar el foco desde la cognición defensiva hacia el contacto emocional. (Erskine, 2015)",
-            "sub": "RE_profundizacion"
-          },
-          {
-            "codigo": "m_erskine_permanecerEmocion",
-            "nombre": "Invitación a permanecer en la emoción",
-            "texto": "Microintervención que invita suavemente al paciente a permanecer unos momentos más en una emoción emergente, con el apoyo regulador del terapeuta, en lugar de salir rápidamente hacia la explicación o la evitación. Este permanecer facilita integración afectiva y contacto pleno. (Erskine et al., 1999)",
-            "sub": "RE_profundizacion"
-          }
-        ]
-      }
+      "modelId": "terapia-integrativa-erskine",
+      "modelLabel": "Terapia integrativa",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard G. Erskine",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "p_erskine_emocionesPrimarias",
+          "nombre": "Acceso y profundización en emociones primarias",
+          "texto": "Procedimiento que facilita el acceso a emociones primarias vinculadas a experiencias relacionales tempranas —tristeza, miedo, rabia, anhelo— que suelen quedar encapsuladas bajo defensas secundarias. El terapeuta sostiene la activación emocional mediante sintonía y regulación compartida, permitiendo que la emoción sea experimentada plenamente y no solo comprendida, favoreciendo procesos de integración afectiva. (Erskine et al., 1999)",
+          "sub": "RE_profundizacion"
+        },
+        {
+          "codigo": "m_erskine_preguntaContacto",
+          "nombre": "Pregunta de contacto experiencial",
+          "texto": "Microintervención que invita al paciente a describir su experiencia inmediata (sensaciones, emociones, impulsos) en lugar de narrativas explicativas, facilitando el acceso al aquí-y-ahora experiencial. Esta pregunta ayuda a desplazar el foco desde la cognición defensiva hacia el contacto emocional. (Erskine, 2015)",
+          "sub": "RE_profundizacion"
+        },
+        {
+          "codigo": "m_erskine_permanecerEmocion",
+          "nombre": "Invitación a permanecer en la emoción",
+          "texto": "Microintervención que invita suavemente al paciente a permanecer unos momentos más en una emoción emergente, con el apoyo regulador del terapeuta, en lugar de salir rápidamente hacia la explicación o la evitación. Este permanecer facilita integración afectiva y contacto pleno. (Erskine et al., 1999)",
+          "sub": "RE_profundizacion"
+        }
+      ]
     }
   ]
 }

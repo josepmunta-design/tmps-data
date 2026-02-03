@@ -1,33 +1,28 @@
 {
   "subprocesoId": "R_sist_limites",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 1,
   "modelos": [
     {
-      "id": "terapia-familiar-estructural-1965",
-      "label": "Terapia familiar estructural",
-      "year": 1965,
-      "autores": "Salvador Minuchin",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-familiar-estructural-1965.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_struct_limites",
-            "nombre": "Reestructuración de límites",
-            "texto": "Intervención dirigida a hacer los límites más claros o más permeables según el caso. Reduce enmeshment o disengagement y restablece autonomía y cercanía funcional.",
-            "sub": "R_sist_limites"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_struct_frontera",
-            "nombre": "Señalar frontera difusa o rígida",
-            "texto": "Nombrar explícitamente un límite problemático para hacerlo modificable en sesión.",
-            "sub": "R_sist_limites"
-          }
-        ]
-      }
+      "modelId": "terapia-familiar-estructural-1965",
+      "modelLabel": "Terapia familiar estructural",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Salvador Minuchin",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "p_struct_limites",
+          "nombre": "Reestructuración de límites",
+          "texto": "Intervención dirigida a hacer los límites más claros o más permeables según el caso. Reduce enmeshment o disengagement y restablece autonomía y cercanía funcional.",
+          "sub": "R_sist_limites"
+        },
+        {
+          "codigo": "m_struct_frontera",
+          "nombre": "Señalar frontera difusa o rígida",
+          "texto": "Nombrar explícitamente un límite problemático para hacerlo modificable en sesión.",
+          "sub": "R_sist_limites"
+        }
+      ]
     }
   ]
 }

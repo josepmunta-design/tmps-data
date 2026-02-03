@@ -1,77 +1,64 @@
 {
   "subprocesoId": "ALI_tareas",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 3,
   "modelos": [
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_enfocar",
-            "nombre": "Proceso 2: Enfocar (Focusing)",
-            "texto": "Enfocar consiste en acordar con claridad el ‘tema de cambio’ sin imponerlo: qué conducta, hábito o dirección vital se va a trabajar ahora. Se negocia una agenda y se delimita el objetivo, evitando sesiones que se diluyen o se convierten en debate. Un buen enfoque reduce confusión, alinea expectativas y permite que la conversación se vuelva eficaz sin perder el espíritu colaborativo.",
-            "sub": "ALI_tareas"
-          },
-          {
-            "codigo": "p_mi_oars_resumenes",
-            "nombre": "OARS: Resúmenes (Summaries)",
-            "texto": "Los resúmenes integran lo dicho y muestran continuidad, ayudando al cliente a verse con perspectiva: ambivalencia, valores, razones y pasos. En MI los resúmenes se usan para consolidar change talk y para transiciones (cerrar un tema, abrir otro, pasar a plan). Cuando están bien hechos, el cliente siente: ‘sí, eso es’, y esa validación organiza el cambio.",
-            "sub": "ALI_tareas"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mi_resumen_change",
-            "nombre": "Resumir change talk (resumen selectivo)",
-            "texto": "El resumen selectivo recoge especialmente las frases a favor del cambio, sin manipular ni negar la ambivalencia. Su efecto es que el cliente se oye a sí mismo de forma organizada y coherente, lo que aumenta probabilidad de compromiso. Es una consolidación rápida del avance.",
-            "sub": "ALI_tareas"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-integrativa",
+      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_feixas_metacognicionCambio",
+          "nombre": "Metacognición del cambio: monitorización del proceso terapéutico con el paciente",
+          "texto": "Procedimiento recurrente donde terapeuta y paciente observan explícitamente cómo está ocurriendo el cambio: qué intervenciones ayudan, cuáles activan amenaza, qué se evita, qué se está pudiendo sostener y qué señales indican avance o estancamiento; se usa un lenguaje claro y colaborativo para convertir el proceso terapéutico en un objeto de reflexión compartida, reforzando agencia y evitando que la terapia se convierta en algo que “le pasa” al paciente sin control o comprensión. (Neimeyer, 1993/2009; Feixas, 2004)",
+          "sub": "ALI_tareas"
+        }
+      ]
     },
     {
-      "id": "terapia-colaborativa",
-      "label": "Terapia colaborativa",
-      "year": 1994,
-      "autores": "Harlene Anderson; Harold Goolishian",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-colaborativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_colab_ajusteContinuo",
-            "nombre": "Ajuste conversacional continuo (monitorización de alianza en tiempo real)",
-            "texto": "Procedimiento de seguimiento constante donde el terapeuta atiende señales de cierre, confusión, incomodidad o distancia en la conversación (cambios de tono, silencios, respuestas mínimas) y ajusta preguntas, ritmo y nivel de abstracción para restaurar apertura; este ajuste protege la alianza y mantiene el diálogo como espacio generativo, evitando que la terapia derive en un intercambio estéril o en una imposición sutil. (Anderson, 1997)",
-            "sub": "ALI_tareas"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-colaborativa",
+      "modelLabel": "Terapia colaborativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Harlene Anderson; Harold Goolishian",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_colab_ajusteContinuo",
+          "nombre": "Ajuste conversacional continuo (monitorización de alianza en tiempo real)",
+          "texto": "Procedimiento de seguimiento constante donde el terapeuta atiende señales de cierre, confusión, incomodidad o distancia en la conversación (cambios de tono, silencios, respuestas mínimas) y ajusta preguntas, ritmo y nivel de abstracción para restaurar apertura; este ajuste protege la alianza y mantiene el diálogo como espacio generativo, evitando que la terapia derive en un intercambio estéril o en una imposición sutil. (Anderson, 1997)",
+          "sub": "ALI_tareas"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-integrativa",
-      "label": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
-      "year": 2000,
-      "autores": "Guillem Feixas; Manuel Villegas Besora",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-integrativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_feixas_metacognicionCambio",
-            "nombre": "Metacognición del cambio: monitorización del proceso terapéutico con el paciente",
-            "texto": "Procedimiento recurrente donde terapeuta y paciente observan explícitamente cómo está ocurriendo el cambio: qué intervenciones ayudan, cuáles activan amenaza, qué se evita, qué se está pudiendo sostener y qué señales indican avance o estancamiento; se usa un lenguaje claro y colaborativo para convertir el proceso terapéutico en un objeto de reflexión compartida, reforzando agencia y evitando que la terapia se convierta en algo que “le pasa” al paciente sin control o comprensión. (Neimeyer, 1993/2009; Feixas, 2004)",
-            "sub": "ALI_tareas"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_enfocar",
+          "nombre": "Proceso 2: Enfocar (Focusing)",
+          "texto": "Enfocar consiste en acordar con claridad el ‘tema de cambio’ sin imponerlo: qué conducta, hábito o dirección vital se va a trabajar ahora. Se negocia una agenda y se delimita el objetivo, evitando sesiones que se diluyen o se convierten en debate. Un buen enfoque reduce confusión, alinea expectativas y permite que la conversación se vuelva eficaz sin perder el espíritu colaborativo.",
+          "sub": "ALI_tareas"
+        },
+        {
+          "codigo": "p_mi_oars_resumenes",
+          "nombre": "OARS: Resúmenes (Summaries)",
+          "texto": "Los resúmenes integran lo dicho y muestran continuidad, ayudando al cliente a verse con perspectiva: ambivalencia, valores, razones y pasos. En MI los resúmenes se usan para consolidar change talk y para transiciones (cerrar un tema, abrir otro, pasar a plan). Cuando están bien hechos, el cliente siente: ‘sí, eso es’, y esa validación organiza el cambio.",
+          "sub": "ALI_tareas"
+        },
+        {
+          "codigo": "m_mi_resumen_change",
+          "nombre": "Resumir change talk (resumen selectivo)",
+          "texto": "El resumen selectivo recoge especialmente las frases a favor del cambio, sin manipular ni negar la ambivalencia. Su efecto es que el cliente se oye a sí mismo de forma organizada y coherente, lo que aumenta probabilidad de compromiso. Es una consolidación rápida del avance.",
+          "sub": "ALI_tareas"
+        }
+      ]
     }
   ]
 }

@@ -1,571 +1,463 @@
 {
   "subprocesoId": "ALI_vinculo",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 24,
   "modelos": [
     {
-      "id": "psicologia-individual-adler",
-      "label": "Psicología individual",
-      "year": 1912,
-      "autores": "Alfred Adler",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_adler_aliento",
-            "nombre": "Aliento terapéutico como intervención central",
-            "texto": "El aliento terapéutico refuerza la percepción de capacidad, dignidad y contribución posible del paciente, diferenciándolo de elogio vacío, para movilizar iniciativa, tolerancia a la imperfección y compromiso con tareas prosociales.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_adler_aliento_especifico",
-            "nombre": "Aliento específico orientado a contribución",
-            "texto": "Consiste en reconocer capacidades y esfuerzos concretos vinculándolos a la posibilidad de contribuir y cooperar, fortaleciendo autoeficacia y valentía social sin caer en elogio inflado o dependencia del terapeuta.",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "terapia-colaborativa",
+      "modelLabel": "Terapia colaborativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Harlene Anderson; Harold Goolishian",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_colab_espacioConversacional",
+          "nombre": "Construcción del espacio conversacional seguro",
+          "texto": "Procedimiento orientado a crear un contexto relacional donde el consultante pueda hablar sin temor a ser evaluado, etiquetado o corregido, utilizando escucha profunda, validación del lenguaje propio del cliente y un estilo dialógico que reduce defensividad; el objetivo es que la conversación misma actúe como regulación co-construida, facilitando la exploración de significados sensibles y la emergencia de alternativas sin activar vergüenza ni retraimiento. (Anderson, 1997)",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "p_colab_clienteExperto",
+          "nombre": "Posicionamiento del cliente como experto en su vida",
+          "texto": "Procedimiento que sostiene explícitamente la idea de que el consultante es la autoridad principal sobre su experiencia, prioridades y significados, y que el terapeuta aporta una estructura dialógica, no contenido experto sobre “qué le pasa”; esto incrementa agencia, reduce dependencia del terapeuta y transforma la terapia en un proceso donde el cliente recupera autoría sobre su narrativa e identidad. (Anderson & Goolishian, 1992)",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_colab_reflejoLenguaje",
+          "nombre": "Reflejo fiel del lenguaje del cliente",
+          "texto": "Uso deliberado de las mismas palabras, metáforas y expresiones del consultante al devolver lo escuchado, evitando traducciones técnicas o reinterpretaciones. Este reflejo aumenta la sensación de ser comprendido, fortalece la alianza y facilita que el cliente se escuche a sí mismo desde una nueva posición reflexiva. (Anderson, 1997)",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_colab_conocimientoLocal",
+          "nombre": "Validación del conocimiento local",
+          "texto": "Reconocimiento explícito de que el consultante posee conocimiento válido y situado sobre su vida y sus relaciones, reforzando autoestima, agencia y participación activa en la co-construcción del proceso terapéutico. (Anderson & Goolishian, 1992)",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "h14psdrama1921",
-      "label": "Psicodrama",
-      "year": 1921,
-      "autores": "Jacob Levy Moreno",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/h14psdrama1921.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_psdrama_sociometria",
-            "nombre": "Sociometría",
-            "texto": "Herramienta grupal que explora elecciones, rechazos y vínculos dentro del grupo terapéutico. Permite visualizar patrones relacionales, fortalecer la cohesión y aumentar conciencia del lugar que cada uno ocupa en el sistema (Moreno, 1953).",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_enganchar",
+          "nombre": "Proceso 1: Enganchar (Engaging)",
+          "texto": "Enganchar es construir una relación de trabajo segura, respetuosa y colaborativa, donde el cliente pueda hablar sin miedo a ser presionado. El terapeuta prioriza empatía, presencia y comprensión del mundo interno del cliente, porque sin este suelo MI se vuelve persuasión y aumenta reactancia. El objetivo práctico es que el cliente se sienta acompañado y libre, de modo que la ambivalencia pueda explorarse sin defensa.",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_mi_normalizar",
+          "nombre": "Normalizar ambivalencia",
+          "texto": "Normalizar (‘es muy humano que una parte quiera y otra no’) reduce vergüenza y defensividad, y permite explorar el conflicto sin sentirse defectuoso. Esta micro intervención es clave en adicciones, hábitos y salud, donde el juicio suele ser alto. Abre la puerta a la curiosidad y a la elección.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "terapia-juego-centrada-nino-axline",
-      "label": "Terapia de Juego Centrada en el Niño",
-      "year": 1947,
-      "autores": "Virginia M. Axline",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/terapia-juego-centrada-nino-axline.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_axline_seguridad",
-            "nombre": "Sostén relacional seguro",
-            "texto": "Procedimiento relacional que garantiza un clima constante de aceptación, respeto y previsibilidad. La seguridad del vínculo permite que el niño explore emociones difíciles y reorganice su experiencia interna con mayor libertad (Axline, 1964).",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "grupos-encuentro",
+      "modelLabel": "Grupos de Encuentro",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Carl R. Rogers",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_encuentro_grupal",
+          "nombre": "Encuentro grupal no directivo",
+          "texto": "Procedimiento central de los Grupos de Encuentro en el que el facilitador crea un clima de seguridad, aceptación y respeto sin dirigir contenidos específicos. El grupo se convierte en un espacio donde los participantes pueden expresarse libremente, explorar emociones y construir significado a partir del contacto directo con los demás (Rogers, 1970).",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_encuentro_escucha",
+          "nombre": "Escucha empática grupal",
+          "texto": "Práctica implícita del grupo orientada a escuchar al otro con comprensión empática y sin respuestas defensivas. Facilita seguridad relacional y profundización del encuentro (Rogers, 1970).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_holding_encuadre",
-            "nombre": "Encuadre fiable como holding (fiabilidad, continuidad, no intrusión)",
-            "texto": "Procedimiento central que convierte el encuadre en una forma activa de sostén: regularidad, límites claros, continuidad y una presencia no intrusiva que permite al paciente dejar de “funcionar para el otro”; el terapeuta protege el espacio de presiones de rendimiento y de interpretaciones prematuras, de modo que el paciente pueda experimentar seguridad suficiente para descansar defensas, contactar necesidades de dependencia y recuperar continuidad del ser.",
-            "sub": "ALI_vinculo"
-          },
-          {
-            "codigo": "p_winn_consultas_terapeuticas",
-            "nombre": "Consultas terapéuticas (intervenciones breves intensivas winnicottianas)",
-            "texto": "Procedimiento de intervención breve en el que se ofrece rápidamente un entorno suficientemente bueno y un dispositivo de juego/observación que permita organizar una experiencia transformadora; se prioriza seguridad, contacto y formulaciones mínimas con alto encaje experiencial, buscando desbloquear desarrollo más que ‘explicar’ patología, y dejando al paciente con una experiencia utilizable tras pocas sesiones.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_winn_limite_cuidadoso",
-            "nombre": "Límite cuidadoso (firme sin humillar)",
-            "texto": "Microintervención que sostiene un límite claro con tono cuidadoso para que el encuadre sea seguro y no castigador, especialmente cuando hay pruebas del objeto; el objetivo es que el paciente experimente contención sin vergüenza ni sometimiento.",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "h14psdrama1921",
+      "modelLabel": "Psicodrama",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Jacob Levy Moreno",
+      "modelYear": 1921,
+      "items": [
+        {
+          "codigo": "m_psdrama_sociometria",
+          "nombre": "Sociometría",
+          "texto": "Herramienta grupal que explora elecciones, rechazos y vínculos dentro del grupo terapéutico. Permite visualizar patrones relacionales, fortalecer la cohesión y aumentar conciencia del lugar que cada uno ocupa en el sistema (Moreno, 1953).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "movimiento-potencial-humano-esalen",
-      "label": "Movimiento del Potencial Humano (Esalen)",
-      "year": 1962,
-      "autores": "Michael Murphy, Richard Price",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/movimiento-potencial-humano-esalen.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_esalen_encuentros",
-            "nombre": "Encuentros experienciales",
-            "texto": "Procedimiento relacional que promueve encuentros auténticos entre participantes mediante la expresión emocional directa, la escucha profunda y el feedback honesto. Estos encuentros generan experiencias correctivas de contacto, validación y reconocimiento mutuo (Murphy & Price, 1979).",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "movimiento-potencial-humano-esalen",
+      "modelLabel": "Movimiento del Potencial Humano (Esalen)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Michael Murphy, Richard Price",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "p_esalen_encuentros",
+          "nombre": "Encuentros experienciales",
+          "texto": "Procedimiento relacional que promueve encuentros auténticos entre participantes mediante la expresión emocional directa, la escucha profunda y el feedback honesto. Estos encuentros generan experiencias correctivas de contacto, validación y reconocimiento mutuo (Murphy & Price, 1979).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "bion-teoria-pensar-contencion",
-      "label": "Bion – Teoría del pensar y contención",
-      "year": 1962,
-      "autores": "Wilfred R. Bion",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/bion-teoria-pensar-contencion.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bion_reverie_contencion",
-            "nombre": "Contención emocional a través de la reverie",
-            "texto": "Procedimiento central en el que el analista recibe las proyecciones emocionales del paciente en un estado de reverie —disponibilidad psíquica abierta, no defensiva ni saturada de teoría— metabolizando afectos crudos y devolviéndolos en una forma pensable, lo que permite al paciente internalizar progresivamente una función contenedora (Bion, 1962, *Learning from Experience*; Bion, 1970, *Attention and Interpretation*).",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_bion_sostener_afecto",
-            "nombre": "Sostener afecto intenso sin responder defensivamente",
-            "texto": "Intervención mínima en la que el analista mantiene presencia emocional estable frente a angustia, rabia o desesperación intensas, sin tranquilizar prematuramente ni interpretar, ofreciendo una experiencia de contención que el paciente puede internalizar (Bion, 1962, *Learning from Experience*).",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-existencial-humanista-contemporanea",
+      "modelLabel": "Psicoterapia Existencial-Humanista Contemporánea",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Kirk J. Schneider, James F. T. Bugental",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_exist_presencia",
+          "nombre": "Presencia clínica intensiva",
+          "texto": "Procedimiento base donde el terapeuta sostiene una presencia genuina, afectivamente disponible y responsiva, usando tono, ritmo, silencios y autenticidad para crear un campo de encuentro que favorece profundidad y verdad emocional. La presencia no es “estilo”, es una intervención que aumenta seguridad y reduce defensividad, permitiendo que emerja lo esencial (Bugental, 1978; Schneider, 2009).",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_exist_autorrevelacion",
+          "nombre": "Autorrevelación prudente",
+          "texto": "Uso mínimo y cuidadoso de la experiencia del terapeuta para aumentar autenticidad y encuentro, sin desplazar el foco del cliente. Se usa cuando incrementa profundidad y verdad relacional (Bugental, 1978).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "terapia-existencial-humanista-bugental",
-      "label": "Terapia Existencial-Humanista (Bugental)",
-      "year": 1965,
-      "autores": "James F. T. Bugental",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/terapia-existencial-humanista-bugental.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_bugental_autorrevelacion",
-            "nombre": "Autorrevelación prudente del terapeuta",
-            "texto": "Uso cuidadoso y limitado de la experiencia interna del terapeuta como herramienta relacional. Busca aumentar autenticidad y profundidad del encuentro sin desplazar el foco del proceso del cliente (Bugental, 1965).",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "terapia-existencial-humanista-bugental",
+      "modelLabel": "Terapia Existencial-Humanista (Bugental)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "James F. T. Bugental",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "m_bugental_autorrevelacion",
+          "nombre": "Autorrevelación prudente del terapeuta",
+          "texto": "Uso cuidadoso y limitado de la experiencia interna del terapeuta como herramienta relacional. Busca aumentar autenticidad y profundidad del encuentro sin desplazar el foco del proceso del cliente (Bugental, 1965).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "terapia-familiar-estructural-1965",
-      "label": "Terapia familiar estructural",
-      "year": 1965,
-      "autores": "Salvador Minuchin",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-familiar-estructural-1965.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_struct_joining",
-            "nombre": "Joining (unión terapéutica al sistema)",
-            "texto": "El terapeuta se integra activamente en el sistema familiar adoptando su estilo comunicativo para ganar influencia. El joining no es simpatía pasiva, sino una estrategia para intervenir desde dentro sin activar defensas sistémicas.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-juego-centrada-nino-axline",
+      "modelLabel": "Terapia de Juego Centrada en el Niño",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Virginia M. Axline",
+      "modelYear": 1947,
+      "items": [
+        {
+          "codigo": "p_axline_seguridad",
+          "nombre": "Sostén relacional seguro",
+          "texto": "Procedimiento relacional que garantiza un clima constante de aceptación, respeto y previsibilidad. La seguridad del vínculo permite que el niño explore emociones difíciles y reorganice su experiencia interna con mayor libertad (Axline, 1964).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "grupos-encuentro",
-      "label": "Grupos de Encuentro",
-      "year": 1967,
-      "autores": "Carl R. Rogers",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/grupos-encuentro.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_encuentro_grupal",
-            "nombre": "Encuentro grupal no directivo",
-            "texto": "Procedimiento central de los Grupos de Encuentro en el que el facilitador crea un clima de seguridad, aceptación y respeto sin dirigir contenidos específicos. El grupo se convierte en un espacio donde los participantes pueden expresarse libremente, explorar emociones y construir significado a partir del contacto directo con los demás (Rogers, 1970).",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_encuentro_escucha",
-            "nombre": "Escucha empática grupal",
-            "texto": "Práctica implícita del grupo orientada a escuchar al otro con comprensión empática y sin respuestas defensivas. Facilita seguridad relacional y profundización del encuentro (Rogers, 1970).",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "balint-falla-basica-regresion-benigna",
+      "modelLabel": "Balint – Falla básica y regresión benigna",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Michael Balint",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_balint_ajuste_encuadre_regresion",
+          "nombre": "Ajuste del encuadre para sostener regresión benigna",
+          "texto": "Intervención que adapta ritmo, límites y dosificación interpretativa del encuadre terapéutico para permitir la emergencia de estados regresivos sin desorganización, incrementando fiabilidad y reduciendo intrusión, de modo que la necesidad pueda sentirse y simbolizarse sin transformarse en acting, somatización o colapso del vínculo.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "modelo-crecimiento-familiar-satir-1967",
-      "label": "Modelo de crecimiento familiar (Satir)",
-      "year": 1967,
-      "autores": "Virginia Satir",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/modelo-crecimiento-familiar-satir-1967.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_satir_validacion",
-            "nombre": "Validación emocional directa",
-            "texto": "El terapeuta valida explícitamente la experiencia interna del cliente, fortaleciendo autoestima y seguridad relacional.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_satir_contacto_visual",
-            "nombre": "Contacto visual y corporal",
-            "texto": "Uso consciente de presencia corporal y mirada para fortalecer conexión.",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "bion-teoria-pensar-contencion",
+      "modelLabel": "Bion – Teoría del pensar y contención",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Wilfred R. Bion",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "p_bion_reverie_contencion",
+          "nombre": "Contención emocional a través de la reverie",
+          "texto": "Procedimiento central en el que el analista recibe las proyecciones emocionales del paciente en un estado de reverie —disponibilidad psíquica abierta, no defensiva ni saturada de teoría— metabolizando afectos crudos y devolviéndolos en una forma pensable, lo que permite al paciente internalizar progresivamente una función contenedora (Bion, 1962, *Learning from Experience*; Bion, 1970, *Attention and Interpretation*).",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_bion_sostener_afecto",
+          "nombre": "Sostener afecto intenso sin responder defensivamente",
+          "texto": "Intervención mínima en la que el analista mantiene presencia emocional estable frente a angustia, rabia o desesperación intensas, sin tranquilizar prematuramente ni interpretar, ofreciendo una experiencia de contención que el paciente puede internalizar (Bion, 1962, *Learning from Experience*).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "terapia-estrategica-1967",
-      "label": "Terapia estratégica",
-      "year": 1967,
-      "autores": "Jay Haley; Cloe Madanes; Milton H. Erickson",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-estrategica-1967.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_strat_validacion",
-            "nombre": "Validación instrumental",
-            "texto": "Reconocer la lógica del sistema para facilitar aceptación de la intervención.",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "kernberg-relaciones-objetales-modernas",
+      "modelLabel": "Kernberg – Relaciones objetales modernas",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_kernberg_contrato_terapeutico",
+          "nombre": "Contrato terapéutico estructural",
+          "texto": "Procedimiento inicial que establece de forma explícita normas, responsabilidades, manejo de acting out y compromiso con el tratamiento, proporcionando un marco contenedor indispensable para trabajar con pacientes con impulsividad y relaciones caóticas (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "balint-falla-basica-regresion-benigna",
-      "label": "Balint – Falla básica y regresión benigna",
-      "year": 1968,
-      "autores": "Michael Balint",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/balint-falla-basica-regresion-benigna.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_balint_ajuste_encuadre_regresion",
-            "nombre": "Ajuste del encuadre para sostener regresión benigna",
-            "texto": "Intervención que adapta ritmo, límites y dosificación interpretativa del encuadre terapéutico para permitir la emergencia de estados regresivos sin desorganización, incrementando fiabilidad y reduciendo intrusión, de modo que la necesidad pueda sentirse y simbolizarse sin transformarse en acting, somatización o colapso del vínculo.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-individual-adler",
+      "modelLabel": "Psicología individual",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Alfred Adler",
+      "modelYear": 1912,
+      "items": [
+        {
+          "codigo": "p_adler_aliento",
+          "nombre": "Aliento terapéutico como intervención central",
+          "texto": "El aliento terapéutico refuerza la percepción de capacidad, dignidad y contribución posible del paciente, diferenciándolo de elogio vacío, para movilizar iniciativa, tolerancia a la imperfección y compromiso con tareas prosociales.",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_adler_aliento_especifico",
+          "nombre": "Aliento específico orientado a contribución",
+          "texto": "Consiste en reconocer capacidades y esfuerzos concretos vinculándolos a la posibilidad de contribuir y cooperar, fortaleciendo autoeficacia y valentía social sin caer en elogio inflado o dependencia del terapeuta.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "teoria-apego-bowlby",
-      "label": "Teoría del apego",
-      "year": 1969,
-      "autores": "John Bowlby",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/teoria-apego-bowlby.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bowlby_base_segura",
-            "nombre": "Uso de la relación terapéutica como base segura",
-            "texto": "Procedimiento central que utiliza la consistencia, disponibilidad y sensibilidad del terapeuta para ofrecer una base segura desde la cual el paciente pueda explorar recuerdos, emociones y vínculos difíciles sin desbordarse, reproduciendo condiciones relacionales que favorecen regulación emocional y reorganización de modelos internos (Bowlby, 1988, *A Secure Base*).",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_escucha_empatica",
+          "nombre": "Escucha empática como método clínico",
+          "texto": "Procedimiento fundamental que utiliza la empatía no solo como actitud ética sino como método clínico para acceder a la organización del self desde la vivencia subjetiva del paciente; el terapeuta intenta comprender la experiencia desde dentro, suspendiendo explicaciones conflictuales para captar necesidades selfobject activas (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "p_kohut_idealizacion",
+          "nombre": "Idealización terapéutica contenida",
+          "texto": "Procedimiento que permite y sostiene la idealización del terapeuta como selfobject regulador, entendida como necesidad evolutiva del self, evitando desmentidos abruptos y facilitando una internalización gradual de funciones estabilizadoras (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_kohut_reflejo_empatico",
+          "nombre": "Reflejo empático preciso del estado del self",
+          "texto": "Microintervención que devuelve con precisión la vivencia subjetiva del paciente —emociones, aspiraciones, heridas— sin interpretarla ni corregirla, fortaleciendo la cohesión del self y reduciendo la necesidad de defensas grandiosas (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "terapia-familiar-simbolico-experiencial-1969",
-      "label": "Terapia familiar simbólico-experiencial",
-      "year": 1969,
-      "autores": "Carl Whitaker",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-familiar-simbolico-experiencial-1969.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_whitaker_self",
-            "nombre": "Uso del self del terapeuta",
-            "texto": "El terapeuta se implica emocionalmente de forma genuina, utilizando sus propias reacciones, emociones y espontaneidad como catalizador del cambio. No actúa desde neutralidad, sino desde presencia viva.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_whitaker_espontaneo",
-            "nombre": "Comentario espontáneo del terapeuta",
-            "texto": "Expresión auténtica e inmediata del terapeuta que introduce humanidad y rompe rigidez.",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "teoria-apego-bowlby",
+      "modelLabel": "Teoría del apego",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "John Bowlby",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_bowlby_base_segura",
+          "nombre": "Uso de la relación terapéutica como base segura",
+          "texto": "Procedimiento central que utiliza la consistencia, disponibilidad y sensibilidad del terapeuta para ofrecer una base segura desde la cual el paciente pueda explorar recuerdos, emociones y vínculos difíciles sin desbordarse, reproduciendo condiciones relacionales que favorecen regulación emocional y reorganización de modelos internos (Bowlby, 1988, *A Secure Base*).",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "terapia-familiar-simbolico-experiencial-whitaker",
-      "label": "Terapia familiar simbólico-experiencial",
-      "year": 1969,
-      "autores": "Carl Whitaker",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-familiar-simbolico-experiencial-whitaker.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_whitaker_self",
-            "nombre": "Uso del self del terapeuta",
-            "texto": "El terapeuta utiliza activamente su propia personalidad, emociones y reacciones como instrumento clínico, mostrando autenticidad, implicación y presencia real para catalizar experiencias emocionales transformadoras en la familia.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_holding_encuadre",
+          "nombre": "Encuadre fiable como holding (fiabilidad, continuidad, no intrusión)",
+          "texto": "Procedimiento central que convierte el encuadre en una forma activa de sostén: regularidad, límites claros, continuidad y una presencia no intrusiva que permite al paciente dejar de “funcionar para el otro”; el terapeuta protege el espacio de presiones de rendimiento y de interpretaciones prematuras, de modo que el paciente pueda experimentar seguridad suficiente para descansar defensas, contactar necesidades de dependencia y recuperar continuidad del ser.",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "p_winn_consultas_terapeuticas",
+          "nombre": "Consultas terapéuticas (intervenciones breves intensivas winnicottianas)",
+          "texto": "Procedimiento de intervención breve en el que se ofrece rápidamente un entorno suficientemente bueno y un dispositivo de juego/observación que permita organizar una experiencia transformadora; se prioriza seguridad, contacto y formulaciones mínimas con alto encaje experiencial, buscando desbloquear desarrollo más que ‘explicar’ patología, y dejando al paciente con una experiencia utilizable tras pocas sesiones.",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_winn_limite_cuidadoso",
+          "nombre": "Límite cuidadoso (firme sin humillar)",
+          "texto": "Microintervención que sostiene un límite claro con tono cuidadoso para que el encuadre sea seguro y no castigador, especialmente cuando hay pruebas del objeto; el objetivo es que el paciente experimente contención sin vergüenza ni sometimiento.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "psicologia-self-kohut",
-      "label": "Psicología del self",
-      "year": 1971,
-      "autores": "Heinz Kohut",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-self-kohut.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kohut_escucha_empatica",
-            "nombre": "Escucha empática como método clínico",
-            "texto": "Procedimiento fundamental que utiliza la empatía no solo como actitud ética sino como método clínico para acceder a la organización del self desde la vivencia subjetiva del paciente; el terapeuta intenta comprender la experiencia desde dentro, suspendiendo explicaciones conflictuales para captar necesidades selfobject activas (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "ALI_vinculo"
-          },
-          {
-            "codigo": "p_kohut_idealizacion",
-            "nombre": "Idealización terapéutica contenida",
-            "texto": "Procedimiento que permite y sostiene la idealización del terapeuta como selfobject regulador, entendida como necesidad evolutiva del self, evitando desmentidos abruptos y facilitando una internalización gradual de funciones estabilizadoras (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_kohut_reflejo_empatico",
-            "nombre": "Reflejo empático preciso del estado del self",
-            "texto": "Microintervención que devuelve con precisión la vivencia subjetiva del paciente —emociones, aspiraciones, heridas— sin interpretarla ni corregirla, fortaleciendo la cohesión del self y reduciendo la necesidad de defensas grandiosas (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "attachment-based-family-therapy-abft",
+      "modelLabel": "ABFT – Terapia familiar basada en el apego",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_abft_alianza",
+          "nombre": "Tarea 1 – Construcción de la alianza",
+          "texto": "Establecimiento de una relación segura con adolescente y padres por separado, validando experiencias y reduciendo defensividad para preparar el trabajo reparador.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "functional-family-therapy-fft",
-      "label": "Functional Family Therapy (FFT)",
-      "year": 1973,
-      "autores": "James F. Alexander; Bruce Parsons",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/functional-family-therapy-fft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_fft_motivacion",
-            "nombre": "Fase de compromiso y motivación",
-            "texto": "Reducción de la negatividad, construcción de alianza y reformulación del problema en términos relacionales y funcionales.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_fft_validacion",
-            "nombre": "Validación no culpabilizante",
-            "texto": "Reducir defensividad legitimando experiencias sin justificar conductas.",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "functional-family-therapy-fft",
+      "modelLabel": "Functional Family Therapy (FFT)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "James F. Alexander; Bruce Parsons",
+      "modelYear": 1973,
+      "items": [
+        {
+          "codigo": "p_fft_motivacion",
+          "nombre": "Fase de compromiso y motivación",
+          "texto": "Reducción de la negatividad, construcción de alianza y reformulación del problema en términos relacionales y funcionales.",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_fft_validacion",
+          "nombre": "Validación no culpabilizante",
+          "texto": "Reducir defensividad legitimando experiencias sin justificar conductas.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "terapia-contextual-boszormenyi-nagy",
-      "label": "Terapia contextual",
-      "year": 1973,
-      "autores": "Ivan Boszormenyi-Nagy; Geraldine Spark",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-contextual-boszormenyi-nagy.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_contextual_parcialidad",
-            "nombre": "Parcialidad multidireccional",
-            "texto": "La parcialidad multidireccional implica que el terapeuta se posicione activamente reconociendo la legitimidad ética de cada miembro del sistema sin adoptar una neutralidad moral, validando simultáneamente las distintas perspectivas relacionales para promover justicia, responsabilidad compartida y apertura a la reparación.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_contextual_validacion",
-            "nombre": "Validación de injusticia relacional",
-            "texto": "Esta microintervención consiste en reconocer explícitamente experiencias de injusticia, sacrificio o falta de reconocimiento vividas por un miembro del sistema, legitimando su vivencia ética sin culpabilizar a otros y reduciendo la invisibilidad relacional que mantiene el malestar.",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "modelo-crecimiento-familiar-satir-1967",
+      "modelLabel": "Modelo de crecimiento familiar (Satir)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Virginia Satir",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_satir_validacion",
+          "nombre": "Validación emocional directa",
+          "texto": "El terapeuta valida explícitamente la experiencia interna del cliente, fortaleciendo autoestima y seguridad relacional.",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_satir_contacto_visual",
+          "nombre": "Contacto visual y corporal",
+          "texto": "Uso consciente de presencia corporal y mirada para fortalecer conexión.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "kernberg-relaciones-objetales-modernas",
-      "label": "Kernberg – Relaciones objetales modernas",
-      "year": 1975,
-      "autores": "Otto F. Kernberg",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/kernberg-relaciones-objetales-modernas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kernberg_contrato_terapeutico",
-            "nombre": "Contrato terapéutico estructural",
-            "texto": "Procedimiento inicial que establece de forma explícita normas, responsabilidades, manejo de acting out y compromiso con el tratamiento, proporcionando un marco contenedor indispensable para trabajar con pacientes con impulsividad y relaciones caóticas (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "s20linares",
+      "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Juan Luis Linares",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_linares_validacion",
+          "nombre": "Validación relacional correctiva",
+          "texto": "Validación breve que reconoce historia y función del patrón sin justificar daño. Sostiene seguridad para explorar partes dolorosas de la trama.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_enganchar",
-            "nombre": "Proceso 1: Enganchar (Engaging)",
-            "texto": "Enganchar es construir una relación de trabajo segura, respetuosa y colaborativa, donde el cliente pueda hablar sin miedo a ser presionado. El terapeuta prioriza empatía, presencia y comprensión del mundo interno del cliente, porque sin este suelo MI se vuelve persuasión y aumenta reactancia. El objetivo práctico es que el cliente se sienta acompañado y libre, de modo que la ambivalencia pueda explorarse sin defensa.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mi_normalizar",
-            "nombre": "Normalizar ambivalencia",
-            "texto": "Normalizar (‘es muy humano que una parte quiera y otra no’) reduce vergüenza y defensividad, y permite explorar el conflicto sin sentirse defectuoso. Esta micro intervención es clave en adicciones, hábitos y salud, donde el juicio suele ser alto. Abre la puerta a la curiosidad y a la elección.",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "terapia-contextual-boszormenyi-nagy",
+      "modelLabel": "Terapia contextual",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Ivan Boszormenyi-Nagy; Geraldine Spark",
+      "modelYear": 1973,
+      "items": [
+        {
+          "codigo": "p_contextual_parcialidad",
+          "nombre": "Parcialidad multidireccional",
+          "texto": "La parcialidad multidireccional implica que el terapeuta se posicione activamente reconociendo la legitimidad ética de cada miembro del sistema sin adoptar una neutralidad moral, validando simultáneamente las distintas perspectivas relacionales para promover justicia, responsabilidad compartida y apertura a la reparación.",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_contextual_validacion",
+          "nombre": "Validación de injusticia relacional",
+          "texto": "Esta microintervención consiste en reconocer explícitamente experiencias de injusticia, sacrificio o falta de reconocimiento vividas por un miembro del sistema, legitimando su vivencia ética sin culpabilizar a otros y reduciendo la invisibilidad relacional que mantiene el malestar.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "terapia-colaborativa",
-      "label": "Terapia colaborativa",
-      "year": 1994,
-      "autores": "Harlene Anderson; Harold Goolishian",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-colaborativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_colab_espacioConversacional",
-            "nombre": "Construcción del espacio conversacional seguro",
-            "texto": "Procedimiento orientado a crear un contexto relacional donde el consultante pueda hablar sin temor a ser evaluado, etiquetado o corregido, utilizando escucha profunda, validación del lenguaje propio del cliente y un estilo dialógico que reduce defensividad; el objetivo es que la conversación misma actúe como regulación co-construida, facilitando la exploración de significados sensibles y la emergencia de alternativas sin activar vergüenza ni retraimiento. (Anderson, 1997)",
-            "sub": "ALI_vinculo"
-          },
-          {
-            "codigo": "p_colab_clienteExperto",
-            "nombre": "Posicionamiento del cliente como experto en su vida",
-            "texto": "Procedimiento que sostiene explícitamente la idea de que el consultante es la autoridad principal sobre su experiencia, prioridades y significados, y que el terapeuta aporta una estructura dialógica, no contenido experto sobre “qué le pasa”; esto incrementa agencia, reduce dependencia del terapeuta y transforma la terapia en un proceso donde el cliente recupera autoría sobre su narrativa e identidad. (Anderson & Goolishian, 1992)",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_colab_reflejoLenguaje",
-            "nombre": "Reflejo fiel del lenguaje del cliente",
-            "texto": "Uso deliberado de las mismas palabras, metáforas y expresiones del consultante al devolver lo escuchado, evitando traducciones técnicas o reinterpretaciones. Este reflejo aumenta la sensación de ser comprendido, fortalece la alianza y facilita que el cliente se escuche a sí mismo desde una nueva posición reflexiva. (Anderson, 1997)",
-            "sub": "ALI_vinculo"
-          },
-          {
-            "codigo": "m_colab_conocimientoLocal",
-            "nombre": "Validación del conocimiento local",
-            "texto": "Reconocimiento explícito de que el consultante posee conocimiento válido y situado sobre su vida y sus relaciones, reforzando autoestima, agencia y participación activa en la co-construcción del proceso terapéutico. (Anderson & Goolishian, 1992)",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "terapia-estrategica-1967",
+      "modelLabel": "Terapia estratégica",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Jay Haley; Cloe Madanes; Milton H. Erickson",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "m_strat_validacion",
+          "nombre": "Validación instrumental",
+          "texto": "Reconocer la lógica del sistema para facilitar aceptación de la intervención.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "s20linares",
-      "label": "Psicoterapia relacional sistémica (Linares)",
-      "year": 2000,
-      "autores": "Juan Luis Linares",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/s20linares.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_linares_validacion",
-            "nombre": "Validación relacional correctiva",
-            "texto": "Validación breve que reconoce historia y función del patrón sin justificar daño. Sostiene seguridad para explorar partes dolorosas de la trama.",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "terapia-familiar-estructural-1965",
+      "modelLabel": "Terapia familiar estructural",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Salvador Minuchin",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "p_struct_joining",
+          "nombre": "Joining (unión terapéutica al sistema)",
+          "texto": "El terapeuta se integra activamente en el sistema familiar adoptando su estilo comunicativo para ganar influencia. El joining no es simpatía pasiva, sino una estrategia para intervenir desde dentro sin activar defensas sistémicas.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "attachment-based-family-therapy-abft",
-      "label": "ABFT – Terapia familiar basada en el apego",
-      "year": 2002,
-      "autores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/attachment-based-family-therapy-abft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_abft_alianza",
-            "nombre": "Tarea 1 – Construcción de la alianza",
-            "texto": "Establecimiento de una relación segura con adolescente y padres por separado, validando experiencias y reduciendo defensividad para preparar el trabajo reparador.",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-familiar-simbolico-experiencial-1969",
+      "modelLabel": "Terapia familiar simbólico-experiencial",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Carl Whitaker",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_whitaker_self",
+          "nombre": "Uso del self del terapeuta",
+          "texto": "El terapeuta se implica emocionalmente de forma genuina, utilizando sus propias reacciones, emociones y espontaneidad como catalizador del cambio. No actúa desde neutralidad, sino desde presencia viva.",
+          "sub": "ALI_vinculo"
+        },
+        {
+          "codigo": "m_whitaker_espontaneo",
+          "nombre": "Comentario espontáneo del terapeuta",
+          "texto": "Expresión auténtica e inmediata del terapeuta que introduce humanidad y rompe rigidez.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-existencial-humanista-contemporanea",
-      "label": "Psicoterapia Existencial-Humanista Contemporánea",
-      "year": 2005,
-      "autores": "Kirk J. Schneider, James F. T. Bugental",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/psicoterapia-existencial-humanista-contemporanea.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_exist_presencia",
-            "nombre": "Presencia clínica intensiva",
-            "texto": "Procedimiento base donde el terapeuta sostiene una presencia genuina, afectivamente disponible y responsiva, usando tono, ritmo, silencios y autenticidad para crear un campo de encuentro que favorece profundidad y verdad emocional. La presencia no es “estilo”, es una intervención que aumenta seguridad y reduce defensividad, permitiendo que emerja lo esencial (Bugental, 1978; Schneider, 2009).",
-            "sub": "ALI_vinculo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_exist_autorrevelacion",
-            "nombre": "Autorrevelación prudente",
-            "texto": "Uso mínimo y cuidadoso de la experiencia del terapeuta para aumentar autenticidad y encuentro, sin desplazar el foco del cliente. Se usa cuando incrementa profundidad y verdad relacional (Bugental, 1978).",
-            "sub": "ALI_vinculo"
-          }
-        ]
-      }
+      "modelId": "terapia-familiar-simbolico-experiencial-whitaker",
+      "modelLabel": "Terapia familiar simbólico-experiencial",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Carl Whitaker",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_whitaker_self",
+          "nombre": "Uso del self del terapeuta",
+          "texto": "El terapeuta utiliza activamente su propia personalidad, emociones y reacciones como instrumento clínico, mostrando autenticidad, implicación y presencia real para catalizar experiencias emocionales transformadoras en la familia.",
+          "sub": "ALI_vinculo"
+        }
+      ]
     }
   ]
 }

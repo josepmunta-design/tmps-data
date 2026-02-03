@@ -1,70 +1,61 @@
 {
   "subprocesoId": "RE_expresion",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 2,
   "modelos": [
     {
-      "id": "modelo-crecimiento-familiar-satir-1967",
-      "label": "Modelo de crecimiento familiar (Satir)",
-      "year": 1967,
-      "autores": "Virginia Satir",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/modelo-crecimiento-familiar-satir-1967.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_satir_escultura",
-            "nombre": "Escultura familiar",
-            "texto": "Técnica experiencial donde los miembros representan corporalmente las relaciones familiares, haciendo visibles alianzas, distancias y tensiones. Permite acceder a significados implícitos y generar reorganización emocional profunda.",
-            "sub": "RE_expresion"
-          },
-          {
-            "codigo": "p_satir_contacto",
-            "nombre": "Contacto experiencial guiado",
-            "texto": "Facilitación de contacto emocional directo con sentimientos presentes para promover integración y congruencia.",
-            "sub": "RE_expresion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_satir_emocion",
-            "nombre": "Nombrar emoción presente",
-            "texto": "Poner palabras a la emoción inmediata para aumentar conciencia y regulación.",
-            "sub": "RE_expresion"
-          }
-        ]
-      }
+      "modelId": "modelo-crecimiento-familiar-satir-1967",
+      "modelLabel": "Modelo de crecimiento familiar (Satir)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Virginia Satir",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_satir_escultura",
+          "nombre": "Escultura familiar",
+          "texto": "Técnica experiencial donde los miembros representan corporalmente las relaciones familiares, haciendo visibles alianzas, distancias y tensiones. Permite acceder a significados implícitos y generar reorganización emocional profunda.",
+          "sub": "RE_expresion"
+        },
+        {
+          "codigo": "p_satir_contacto",
+          "nombre": "Contacto experiencial guiado",
+          "texto": "Facilitación de contacto emocional directo con sentimientos presentes para promover integración y congruencia.",
+          "sub": "RE_expresion"
+        },
+        {
+          "codigo": "m_satir_emocion",
+          "nombre": "Nombrar emoción presente",
+          "texto": "Poner palabras a la emoción inmediata para aumentar conciencia y regulación.",
+          "sub": "RE_expresion"
+        }
+      ]
     },
     {
-      "id": "terapia-familiar-simbolico-experiencial-1969",
-      "label": "Terapia familiar simbólico-experiencial",
-      "year": 1969,
-      "autores": "Carl Whitaker",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-familiar-simbolico-experiencial-1969.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_whitaker_self",
-            "nombre": "Uso del self del terapeuta",
-            "texto": "El terapeuta se implica emocionalmente de forma genuina, utilizando sus propias reacciones, emociones y espontaneidad como catalizador del cambio. No actúa desde neutralidad, sino desde presencia viva.",
-            "sub": "RE_expresion"
-          },
-          {
-            "codigo": "p_whitaker_simbolica",
-            "nombre": "Intervención simbólica",
-            "texto": "Uso de metáforas, dramatizaciones, humor y actos simbólicos para acceder a niveles profundos de experiencia familiar que no se alcanzan mediante el lenguaje racional.",
-            "sub": "RE_expresion"
-          },
-          {
-            "codigo": "p_whitaker_juego",
-            "nombre": "Activación del juego y el humor",
-            "texto": "Introducción deliberada de juego, ironía y humor para flexibilizar defensas y permitir nuevas formas de relación.",
-            "sub": "RE_expresion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-familiar-simbolico-experiencial-1969",
+      "modelLabel": "Terapia familiar simbólico-experiencial",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Carl Whitaker",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_whitaker_self",
+          "nombre": "Uso del self del terapeuta",
+          "texto": "El terapeuta se implica emocionalmente de forma genuina, utilizando sus propias reacciones, emociones y espontaneidad como catalizador del cambio. No actúa desde neutralidad, sino desde presencia viva.",
+          "sub": "RE_expresion"
+        },
+        {
+          "codigo": "p_whitaker_simbolica",
+          "nombre": "Intervención simbólica",
+          "texto": "Uso de metáforas, dramatizaciones, humor y actos simbólicos para acceder a niveles profundos de experiencia familiar que no se alcanzan mediante el lenguaje racional.",
+          "sub": "RE_expresion"
+        },
+        {
+          "codigo": "p_whitaker_juego",
+          "nombre": "Activación del juego y el humor",
+          "texto": "Introducción deliberada de juego, ironía y humor para flexibilizar defensas y permitir nuevas formas de relación.",
+          "sub": "RE_expresion"
+        }
+      ]
     }
   ]
 }

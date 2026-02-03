@@ -1,102 +1,85 @@
 {
   "subprocesoId": "ALI_objetivos",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 4,
   "modelos": [
     {
-      "id": "h19ta64",
-      "label": "Análisis Transaccional (TA)",
-      "year": "1964",
-      "autores": "Eric Berne",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/h19ta64.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_ta_contrato",
-            "nombre": "Contrato terapéutico",
-            "texto": "Procedimiento de encuadre: terapeuta y paciente acuerdan objetivos observables, responsabilidades y criterios de avance. Reduce ambigüedad, previene juegos en el encuadre y refuerza agencia.",
-            "sub": "ALI_objetivos"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_ta_contrato",
-            "nombre": "Contrato terapéutico (micro)",
-            "texto": "Formular en una frase el objetivo operativo de la sesión y acordar una acción concreta para probarlo.",
-            "sub": "ALI_objetivos"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-integrativa",
+      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_feixas_formulacionCaso",
+          "nombre": "Evaluación y formulación constructivista integrativa del caso",
+          "texto": "Procedimiento de inicio y revisión periódica donde terapeuta y paciente co-construyen una formulación centrada en el sistema de significados: constructos nucleares y periféricos, dilemas identitarios, patrones narrativos dominantes, puntos de invalidación y costes del cambio, conectándolo con objetivos clínicos concretos y viables; se explicita qué se va a explorar, por qué tiene sentido desde el modelo y qué señales indicarían progreso, cuidando que el mapa del caso aumente claridad sin rigidizar la identidad ni imponer interpretaciones. (Feixas, 2004)",
+          "sub": "ALI_objetivos"
+        }
+      ]
     },
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_enfocar",
-            "nombre": "Proceso 2: Enfocar (Focusing)",
-            "texto": "Enfocar consiste en acordar con claridad el ‘tema de cambio’ sin imponerlo: qué conducta, hábito o dirección vital se va a trabajar ahora. Se negocia una agenda y se delimita el objetivo, evitando sesiones que se diluyen o se convierten en debate. Un buen enfoque reduce confusión, alinea expectativas y permite que la conversación se vuelva eficaz sin perder el espíritu colaborativo.",
-            "sub": "ALI_objetivos"
-          },
-          {
-            "codigo": "p_mi_agenda_menu",
-            "nombre": "Mapeo de agenda / menú de opciones",
-            "texto": "El menú de opciones ofrece direcciones posibles sin imponer ninguna, permitiendo que el cliente elija dónde empezar. Se usa cuando hay múltiples problemas o cuando el terapeuta percibe desorganización. Elegir un punto de inicio ya es un acto de agencia y suele reducir la sensación de ‘esto es demasiado’.",
-            "sub": "ALI_objetivos"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-colaborativa",
+      "modelLabel": "Terapia colaborativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Harlene Anderson; Harold Goolishian",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_colab_coautoria",
+          "nombre": "Co-autoría y negociación de significados",
+          "texto": "Procedimiento continuo donde terapeuta y consultante negocian activamente el significado de palabras, eventos y posiciones identitarias, reconociendo que diferentes descripciones producen diferentes realidades prácticas; la co-autoría evita la imposición de marcos externos y permite crear definiciones más útiles y menos restrictivas del problema, de la identidad y de las relaciones, alineando la conversación con objetivos emergentes. (Anderson, 1997)",
+          "sub": "ALI_objetivos"
+        },
+        {
+          "codigo": "p_colab_objetivosEmergentes",
+          "nombre": "Definición colaborativa de objetivos emergentes",
+          "texto": "Procedimiento por el cual los objetivos no se establecen como un plan cerrado al inicio, sino que se formulan y reformulan a medida que la conversación revela qué es importante, qué tiene sentido y qué es viable para el consultante; se prioriza que los objetivos estén expresados en el lenguaje del cliente y que reflejen posibilidades reales de acción e identidad, evitando traducirlos a metas externas o normativas. (Anderson, 1997)",
+          "sub": "ALI_objetivos"
+        }
+      ]
     },
     {
-      "id": "terapia-colaborativa",
-      "label": "Terapia colaborativa",
-      "year": 1994,
-      "autores": "Harlene Anderson; Harold Goolishian",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-colaborativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_colab_coautoria",
-            "nombre": "Co-autoría y negociación de significados",
-            "texto": "Procedimiento continuo donde terapeuta y consultante negocian activamente el significado de palabras, eventos y posiciones identitarias, reconociendo que diferentes descripciones producen diferentes realidades prácticas; la co-autoría evita la imposición de marcos externos y permite crear definiciones más útiles y menos restrictivas del problema, de la identidad y de las relaciones, alineando la conversación con objetivos emergentes. (Anderson, 1997)",
-            "sub": "ALI_objetivos"
-          },
-          {
-            "codigo": "p_colab_objetivosEmergentes",
-            "nombre": "Definición colaborativa de objetivos emergentes",
-            "texto": "Procedimiento por el cual los objetivos no se establecen como un plan cerrado al inicio, sino que se formulan y reformulan a medida que la conversación revela qué es importante, qué tiene sentido y qué es viable para el consultante; se prioriza que los objetivos estén expresados en el lenguaje del cliente y que reflejen posibilidades reales de acción e identidad, evitando traducirlos a metas externas o normativas. (Anderson, 1997)",
-            "sub": "ALI_objetivos"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_enfocar",
+          "nombre": "Proceso 2: Enfocar (Focusing)",
+          "texto": "Enfocar consiste en acordar con claridad el ‘tema de cambio’ sin imponerlo: qué conducta, hábito o dirección vital se va a trabajar ahora. Se negocia una agenda y se delimita el objetivo, evitando sesiones que se diluyen o se convierten en debate. Un buen enfoque reduce confusión, alinea expectativas y permite que la conversación se vuelva eficaz sin perder el espíritu colaborativo.",
+          "sub": "ALI_objetivos"
+        },
+        {
+          "codigo": "p_mi_agenda_menu",
+          "nombre": "Mapeo de agenda / menú de opciones",
+          "texto": "El menú de opciones ofrece direcciones posibles sin imponer ninguna, permitiendo que el cliente elija dónde empezar. Se usa cuando hay múltiples problemas o cuando el terapeuta percibe desorganización. Elegir un punto de inicio ya es un acto de agencia y suele reducir la sensación de ‘esto es demasiado’.",
+          "sub": "ALI_objetivos"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-integrativa",
-      "label": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
-      "year": 2000,
-      "autores": "Guillem Feixas; Manuel Villegas Besora",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-integrativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_feixas_formulacionCaso",
-            "nombre": "Evaluación y formulación constructivista integrativa del caso",
-            "texto": "Procedimiento de inicio y revisión periódica donde terapeuta y paciente co-construyen una formulación centrada en el sistema de significados: constructos nucleares y periféricos, dilemas identitarios, patrones narrativos dominantes, puntos de invalidación y costes del cambio, conectándolo con objetivos clínicos concretos y viables; se explicita qué se va a explorar, por qué tiene sentido desde el modelo y qué señales indicarían progreso, cuidando que el mapa del caso aumente claridad sin rigidizar la identidad ni imponer interpretaciones. (Feixas, 2004)",
-            "sub": "ALI_objetivos"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "h19ta64",
+      "modelLabel": "Análisis Transaccional (TA)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Eric Berne",
+      "modelYear": "1964",
+      "items": [
+        {
+          "codigo": "p_ta_contrato",
+          "nombre": "Contrato terapéutico",
+          "texto": "Procedimiento de encuadre: terapeuta y paciente acuerdan objetivos observables, responsabilidades y criterios de avance. Reduce ambigüedad, previene juegos en el encuadre y refuerza agencia.",
+          "sub": "ALI_objetivos"
+        },
+        {
+          "codigo": "m_ta_contrato",
+          "nombre": "Contrato terapéutico (micro)",
+          "texto": "Formular en una frase el objetivo operativo de la sesión y acordar una acción concreta para probarlo.",
+          "sub": "ALI_objetivos"
+        }
+      ]
     }
   ]
 }

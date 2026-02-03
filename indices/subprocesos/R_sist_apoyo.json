@@ -1,172 +1,142 @@
 {
   "subprocesoId": "R_sist_apoyo",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 7,
   "modelos": [
     {
-      "id": "psicoterapia-multimodal-basic-id-lazarus",
-      "label": "Psicoterapia multimodal (BASIC-ID)",
-      "year": 1977,
-      "autores": "Arnold A. Lazarus",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicoterapia-multimodal-basic-id-lazarus.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_lazarus_biologia_sustancias",
-            "nombre": "Intervención en Drogas/Biología (D) y coordinación médico-contextual",
-            "texto": "Procedimiento que incluye evaluación y manejo de factores biológicos y de consumo (sueño, medicación, alcohol/cannabis/estimulantes, salud física), con psicoeducación y, cuando procede, coordinación con recursos médicos. El objetivo es evitar atribuir a “lo psicológico” fenómenos primariamente fisiológicos y reducir ruido biológico que empeora regulación emocional y control conductual, mejorando viabilidad del proceso terapéutico. (Lazarus, 1989)",
-            "sub": "R_sist_apoyo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "polaridades-semanticas",
+      "modelLabel": "Modelo de polaridades semánticas",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Valeria Ugazio",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_ugazio_apoyoAlianzas",
+          "nombre": "Movilización de apoyo y reconfiguración de alianzas",
+          "texto": "Procedimiento que identifica redes de apoyo y alianzas/triangulaciones que mantienen la polaridad (coaliciones implícitas, lealtades invisibles, mensajeros) y reconfigura el sistema para sostener cambios sin aislamiento del miembro que se reposiciona. Se trabaja para redistribuir carga emocional, reducir triangulaciones improductivas y favorecer vínculos que validen nuevas identidades emergentes. El objetivo es que el cambio sea viable relacionalmente y no dependa solo de voluntad individual. (Ugazio, 2013)",
+          "sub": "R_sist_apoyo"
+        }
+      ]
     },
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_change_plan",
-            "nombre": "Plan de cambio (Change plan) y compromisos específicos",
-            "texto": "El plan de cambio recoge: objetivo, razones personales, pasos, apoyos, obstáculos y estrategias de afrontamiento. No es burocracia: es convertir motivación en conducta con soporte social y estructura. El plan se revisa y simplifica hasta que sea sostenible; el éxito es consistencia, no intensidad.",
-            "sub": "R_sist_apoyo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-dialogica",
+      "modelLabel": "Terapia dialógica / Open Dialogue",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Jaakko Seikkula; Tom Andersen",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_od_inclusion_red",
+          "nombre": "Inclusión de la red social significativa",
+          "texto": "Procedimiento que implica convocar desde el inicio a la familia, allegados y figuras significativas del entorno de la persona en crisis, considerándolos parte activa del proceso terapéutico. La red no es un recurso auxiliar, sino el contexto donde se construyen y transforman los significados del sufrimiento. Su inclusión permite distribuir la carga emocional, ampliar perspectivas y sostener cambios relacionales duraderos (Seikkula & Arnkil, 2017).",
+          "sub": "R_sist_apoyo"
+        }
+      ]
     },
     {
-      "id": "multisystemic-therapy-mst",
-      "label": "Multisystemic Therapy (MST)",
-      "year": 1990,
-      "autores": "Scott Henggeler; Sonia Rowland",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/multisystemic-therapy-mst.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mst_crisis_seguridad",
-            "nombre": "Gestión de crisis y plan de seguridad",
-            "texto": "Protocolos de estabilización ante escaladas (violencia, fuga, intoxicación, conflictos agudos), incluyendo red de apoyo, pasos de desescalada, límites y coordinación con recursos formales cuando sea necesario.",
-            "sub": "R_sist_apoyo"
-          },
-          {
-            "codigo": "p_mst_escuela",
-            "nombre": "Intervención en escuela y rendimiento académico",
-            "texto": "Coordinación con centro educativo para asistencia, conducta, apoyos, adaptaciones y seguimiento, alineando expectativas entre familia y escuela.",
-            "sub": "R_sist_apoyo"
-          },
-          {
-            "codigo": "p_mst_instituciones_case",
-            "nombre": "Coordinación con justicia juvenil y servicios (case management)",
-            "texto": "Trabajo coordinado con sistemas formales (justicia, servicios sociales, salud, recursos comunitarios) para alinear objetivos, reducir fricción institucional y sostener el plan de cambio.",
-            "sub": "R_sist_apoyo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mst_contacto_escuela",
-            "nombre": "Contacto operativo con escuela",
-            "texto": "Microcoordinación: acuerdos de seguimiento, comunicación de incidencias y refuerzo de asistencia y conducta.",
-            "sub": "R_sist_apoyo"
-          },
-          {
-            "codigo": "m_mst_red_apoyo",
-            "nombre": "Red de apoyo y recursos comunitarios",
-            "texto": "Activar apoyos reales (familia extensa, mentores, entrenadores, servicios) que aumenten supervisión y alternativas prosociales.",
-            "sub": "R_sist_apoyo"
-          }
-        ]
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_change_plan",
+          "nombre": "Plan de cambio (Change plan) y compromisos específicos",
+          "texto": "El plan de cambio recoge: objetivo, razones personales, pasos, apoyos, obstáculos y estrategias de afrontamiento. No es burocracia: es convertir motivación en conducta con soporte social y estructura. El plan se revisa y simplifica hasta que sea sostenible; el éxito es consistencia, no intensidad.",
+          "sub": "R_sist_apoyo"
+        }
+      ]
     },
     {
-      "id": "multidimensional-family-therapy-mdft",
-      "label": "Multidimensional Family Therapy (MDFT)",
-      "year": 1991,
-      "autores": "Howard A. Liddle",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/multidimensional-family-therapy-mdft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mdft_contexto",
-            "nombre": "Intervención en el contexto extrafamiliar",
-            "texto": "Coordinación con escuela, servicios sociales, justicia juvenil y otros sistemas relevantes.",
-            "sub": "R_sist_apoyo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mdft_recursos",
-            "nombre": "Activación de recursos comunitarios",
-            "texto": "Conectar al adolescente y la familia con apoyos educativos, deportivos o sociales.",
-            "sub": "R_sist_apoyo"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-multimodal-basic-id-lazarus",
+      "modelLabel": "Psicoterapia multimodal (BASIC-ID)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Arnold A. Lazarus",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_lazarus_biologia_sustancias",
+          "nombre": "Intervención en Drogas/Biología (D) y coordinación médico-contextual",
+          "texto": "Procedimiento que incluye evaluación y manejo de factores biológicos y de consumo (sueño, medicación, alcohol/cannabis/estimulantes, salud física), con psicoeducación y, cuando procede, coordinación con recursos médicos. El objetivo es evitar atribuir a “lo psicológico” fenómenos primariamente fisiológicos y reducir ruido biológico que empeora regulación emocional y control conductual, mejorando viabilidad del proceso terapéutico. (Lazarus, 1989)",
+          "sub": "R_sist_apoyo"
+        }
+      ]
     },
     {
-      "id": "polaridades-semanticas",
-      "label": "Modelo de polaridades semánticas",
-      "year": 1998,
-      "autores": "Valeria Ugazio",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/polaridades-semanticas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_ugazio_apoyoAlianzas",
-            "nombre": "Movilización de apoyo y reconfiguración de alianzas",
-            "texto": "Procedimiento que identifica redes de apoyo y alianzas/triangulaciones que mantienen la polaridad (coaliciones implícitas, lealtades invisibles, mensajeros) y reconfigura el sistema para sostener cambios sin aislamiento del miembro que se reposiciona. Se trabaja para redistribuir carga emocional, reducir triangulaciones improductivas y favorecer vínculos que validen nuevas identidades emergentes. El objetivo es que el cambio sea viable relacionalmente y no dependa solo de voluntad individual. (Ugazio, 2013)",
-            "sub": "R_sist_apoyo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "multidimensional-family-therapy-mdft",
+      "modelLabel": "Multidimensional Family Therapy (MDFT)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Howard A. Liddle",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_mdft_contexto",
+          "nombre": "Intervención en el contexto extrafamiliar",
+          "texto": "Coordinación con escuela, servicios sociales, justicia juvenil y otros sistemas relevantes.",
+          "sub": "R_sist_apoyo"
+        },
+        {
+          "codigo": "m_mdft_recursos",
+          "nombre": "Activación de recursos comunitarios",
+          "texto": "Conectar al adolescente y la familia con apoyos educativos, deportivos o sociales.",
+          "sub": "R_sist_apoyo"
+        }
+      ]
     },
     {
-      "id": "terapia-dialogica",
-      "label": "Terapia dialógica / Open Dialogue",
-      "year": 2000,
-      "autores": "Jaakko Seikkula; Tom Andersen",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-dialogica.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_od_inclusion_red",
-            "nombre": "Inclusión de la red social significativa",
-            "texto": "Procedimiento que implica convocar desde el inicio a la familia, allegados y figuras significativas del entorno de la persona en crisis, considerándolos parte activa del proceso terapéutico. La red no es un recurso auxiliar, sino el contexto donde se construyen y transforman los significados del sufrimiento. Su inclusión permite distribuir la carga emocional, ampliar perspectivas y sostener cambios relacionales duraderos (Seikkula & Arnkil, 2017).",
-            "sub": "R_sist_apoyo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "multisystemic-therapy-mst",
+      "modelLabel": "Multisystemic Therapy (MST)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Scott Henggeler; Sonia Rowland",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mst_crisis_seguridad",
+          "nombre": "Gestión de crisis y plan de seguridad",
+          "texto": "Protocolos de estabilización ante escaladas (violencia, fuga, intoxicación, conflictos agudos), incluyendo red de apoyo, pasos de desescalada, límites y coordinación con recursos formales cuando sea necesario.",
+          "sub": "R_sist_apoyo"
+        },
+        {
+          "codigo": "p_mst_escuela",
+          "nombre": "Intervención en escuela y rendimiento académico",
+          "texto": "Coordinación con centro educativo para asistencia, conducta, apoyos, adaptaciones y seguimiento, alineando expectativas entre familia y escuela.",
+          "sub": "R_sist_apoyo"
+        },
+        {
+          "codigo": "p_mst_instituciones_case",
+          "nombre": "Coordinación con justicia juvenil y servicios (case management)",
+          "texto": "Trabajo coordinado con sistemas formales (justicia, servicios sociales, salud, recursos comunitarios) para alinear objetivos, reducir fricción institucional y sostener el plan de cambio.",
+          "sub": "R_sist_apoyo"
+        },
+        {
+          "codigo": "m_mst_contacto_escuela",
+          "nombre": "Contacto operativo con escuela",
+          "texto": "Microcoordinación: acuerdos de seguimiento, comunicación de incidencias y refuerzo de asistencia y conducta.",
+          "sub": "R_sist_apoyo"
+        },
+        {
+          "codigo": "m_mst_red_apoyo",
+          "nombre": "Red de apoyo y recursos comunitarios",
+          "texto": "Activar apoyos reales (familia extensa, mentores, entrenadores, servicios) que aumenten supervisión y alternativas prosociales.",
+          "sub": "R_sist_apoyo"
+        }
+      ]
     },
     {
-      "id": "s20linares",
-      "label": "Psicoterapia relacional sistémica (Linares)",
-      "year": 2000,
-      "autores": "Juan Luis Linares",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/s20linares.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_linares_apoyo_contexto",
-            "nombre": "Movilización de apoyo y ajustes contextuales",
-            "texto": "Procedimiento para incorporar recursos (red, figuras significativas, coordinaciones) y modificar condiciones del entorno (rutinas, distancias, normas explícitas) que sostienen el patrón. Traduce insight relacional en cambios sostenibles.",
-            "sub": "R_sist_apoyo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "s20linares",
+      "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Juan Luis Linares",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_linares_apoyo_contexto",
+          "nombre": "Movilización de apoyo y ajustes contextuales",
+          "texto": "Procedimiento para incorporar recursos (red, figuras significativas, coordinaciones) y modificar condiciones del entorno (rutinas, distancias, normas explícitas) que sostienen el patrón. Traduce insight relacional en cambios sostenibles.",
+          "sub": "R_sist_apoyo"
+        }
+      ]
     }
   ]
 }

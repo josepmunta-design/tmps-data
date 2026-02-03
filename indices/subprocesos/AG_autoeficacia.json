@@ -1,26 +1,22 @@
 {
   "subprocesoId": "AG_autoeficacia",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 1,
   "modelos": [
     {
-      "id": "psicologia-yo-hartmann",
-      "label": "Psicología del yo",
-      "year": 1939,
-      "autores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-yo-hartmann.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_hartmann_refuerzo_yo",
-            "nombre": "Refuerzo explícito de competencia yoica",
-            "texto": "Señalamiento deliberado de conductas eficaces y decisiones realistas del paciente para consolidar una autoimagen de competencia y fortalecer la confianza en las propias funciones del yo.",
-            "sub": "AG_autoeficacia"
-          }
-        ]
-      }
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "m_hartmann_refuerzo_yo",
+          "nombre": "Refuerzo explícito de competencia yoica",
+          "texto": "Señalamiento deliberado de conductas eficaces y decisiones realistas del paciente para consolidar una autoimagen de competencia y fortalecer la confianza en las propias funciones del yo.",
+          "sub": "AG_autoeficacia"
+        }
+      ]
     }
   ]
 }

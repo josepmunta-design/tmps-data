@@ -1,546 +1,445 @@
 {
   "subprocesoId": "R_reparacionRelacional",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 22,
   "modelos": [
     {
-      "id": "h14psdrama1921",
-      "label": "Psicodrama",
-      "year": 1921,
-      "autores": "Jacob Levy Moreno",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/h14psdrama1921.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_psdrama_reparacion",
-            "nombre": "Reparación simbólica de escenas",
-            "texto": "Procedimiento terapéutico que introduce elementos simbólicos correctivos en escenas pasadas no resueltas. Permite vivir experiencias emocionales nuevas —protección, validación o cierre— que no fueron posibles en su momento, facilitando integración emocional y reducción de la carga afectiva asociada (Moreno, 1946).",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "a2naikan1940",
+      "modelLabel": "Naikan",
+      "modelGrupo": "No Occidentales",
+      "modelAutores": "Yoshimoto Ishin",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_naikan_revision_3preguntas",
+          "nombre": "Revisión Naikan de relaciones significativas (3 preguntas)",
+          "texto": "Procedimiento central: revisión sistemática de una relación (madre, padre, pareja, etc.) a través de tres preguntas: (1) ¿qué he recibido?, (2) ¿qué he dado?, (3) ¿qué problemas/he causado? El foco no es catarsis ni reinterpretación cognitiva, sino recolocar la atención en hechos concretos, asimetrías relacionales, responsabilidad personal y reconocimiento de lo recibido. Favorece gratitud, humildad, reducción del resentimiento y disposición reparadora.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_naikan_reparacion",
+          "nombre": "Pequeño gesto reparador",
+          "texto": "Tras una revisión relevante, se propone un gesto realista (mensaje, agradecimiento, devolución pendiente, conducta de cuidado) alineado con lo visto, sin forzar reconciliaciones imposibles.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "relaciones-objeto-klein",
-      "label": "Relaciones de objeto (Klein)",
-      "year": 1932,
-      "autores": "Melanie Klein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/relaciones-objeto-klein.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_klein_reparacion",
-            "nombre": "Facilitación de reparación (interna y relacional) sin omnipotencia",
-            "texto": "Procedimiento dirigido a transformar la urgencia de “arreglarlo todo” (reparación maníaca) en actos de reparación realistas y sostenibles; se clarifica la diferencia entre reparar para negar el daño vs reparar para reconocerlo y responsabilizarse, y se apoya la puesta en práctica gradual de gestos concretos (disculpa, cuidado, límites, coherencia), integrando agencia con humildad y disminuyendo ciclos de culpa-omnipotencia-colapso.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_klein_reparacion_realista",
-            "nombre": "Orientar a reparación realista (un paso concreto)",
-            "texto": "Tras insight de culpa o daño, el terapeuta pide un gesto pequeño y específico que sea sostenible (no grandioso), para evitar reparación maníaca y consolidar integración a través de acción coherente.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "entrenamiento-habilidades-sociales",
+      "modelLabel": "Entrenamiento en habilidades sociales",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Arnold P. Goldstein; Robert P. Liberman",
+      "modelYear": 1973,
+      "items": [
+        {
+          "codigo": "p_sst_manejo_critica",
+          "nombre": "Manejo de críticas y confrontación no defensiva",
+          "texto": "Procedimiento para responder a críticas sin colapsar ni atacar: se entrenan respuestas de clarificación, acuerdo parcial, petición de ejemplos, reconocimiento de impacto y propuesta de reparación cuando procede; se practican microhabilidades de regulación (respirar, pausar, reformular) para disminuir reactividad y evitar rupturas, mejorando la capacidad de sostener conversaciones difíciles y mantener vínculos funcionales sin evitación.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_sst_reparacion",
+          "nombre": "Ensayo de reparación (disculpa, aclaración, reintento)",
+          "texto": "Práctica específica de reparar fallos sociales (interrumpir, sonar brusco, malentender) mediante disculpa breve, clarificación de intención y reintento, para disminuir miedo al error y romper la evitación perfeccionista que bloquea la exposición interpersonal.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "a2naikan1940",
-      "label": "Naikan",
-      "year": 1940,
-      "autores": "Yoshimoto Ishin",
-      "grupo": "No Occidentales",
-      "file": "data/Core/modelos/Otros/a2naikan1940.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_naikan_revision_3preguntas",
-            "nombre": "Revisión Naikan de relaciones significativas (3 preguntas)",
-            "texto": "Procedimiento central: revisión sistemática de una relación (madre, padre, pareja, etc.) a través de tres preguntas: (1) ¿qué he recibido?, (2) ¿qué he dado?, (3) ¿qué problemas/he causado? El foco no es catarsis ni reinterpretación cognitiva, sino recolocar la atención en hechos concretos, asimetrías relacionales, responsabilidad personal y reconocimiento de lo recibido. Favorece gratitud, humildad, reducción del resentimiento y disposición reparadora.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_naikan_reparacion",
-            "nombre": "Pequeño gesto reparador",
-            "texto": "Tras una revisión relevante, se propone un gesto realista (mensaje, agradecimiento, devolución pendiente, conducta de cuidado) alineado con lo visto, sin forzar reconciliaciones imposibles.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "terapia-dialogica",
+      "modelLabel": "Terapia dialógica / Open Dialogue",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Jaakko Seikkula; Tom Andersen",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_od_continuidad_equipo",
+          "nombre": "Continuidad del equipo terapéutico",
+          "texto": "Procedimiento organizativo que garantiza que el mismo equipo acompañe a la persona y su red a lo largo de todo el proceso, evitando rotaciones que fragmenten el vínculo. La continuidad relacional permite construir confianza profunda, sostener diálogos difíciles y ofrecer un anclaje estable durante periodos prolongados de incertidumbre o crisis (Seikkula, 2006).",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "neopsicoanalisis",
-      "label": "Neopsicoanálisis",
-      "year": 1940,
-      "autores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/neopsicoanalisis.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neopsy_repertorio_interpersonal",
-            "nombre": "Reestructuración del repertorio interpersonal (ensayo y generalización)",
-            "texto": "Procedimiento de cambio conductual-relacional que diseña alternativas específicas (petición directa, límite, desacuerdo, reparación) y las ensaya primero en sesión y luego fuera, con revisión detallada del resultado; busca ampliar repertorio sin perder seguridad, sustituyendo maniobras defensivas por habilidades interpersonales más claras y recíprocas.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neopsy_reparacion_inmediata",
-            "nombre": "Reparación relacional inmediata tras micro-ruptura",
-            "texto": "Intervención breve para cerrar un malentendido en sesión (nombrar, validar, aclarar intención y pedir/otorgar reparación), modelando una salida distinta a la habitual.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "aedp-2000",
+      "modelLabel": "AEDP (Accelerated Experiential Dynamic Psychotherapy)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Diana Fosha",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_aedp_correctivo",
+          "nombre": "Trabajo emocional correctivo",
+          "texto": "Creación de experiencias emocionales nuevas en la relación terapéutica que contradicen expectativas relacionales previas de abandono, rechazo o soledad.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "relaciones-objeto-fairbairn",
-      "label": "Relaciones de objeto (Fairbairn)",
-      "year": 1952,
-      "autores": "Ronald Fairbairn",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/relaciones-objeto-fairbairn.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_fairbairn_transferencia",
-            "nombre": "Trabajo con la transferencia relacional",
-            "texto": "La transferencia se aborda como reactivación viva de relaciones de objeto internalizadas, permitiendo observar en la relación terapéutica las expectativas, miedos y demandas propias del mundo interno del paciente.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "h14psdrama1921",
+      "modelLabel": "Psicodrama",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Jacob Levy Moreno",
+      "modelYear": 1921,
+      "items": [
+        {
+          "codigo": "p_psdrama_reparacion",
+          "nombre": "Reparación simbólica de escenas",
+          "texto": "Procedimiento terapéutico que introduce elementos simbólicos correctivos en escenas pasadas no resueltas. Permite vivir experiencias emocionales nuevas —protección, validación o cierre— que no fueron posibles en su momento, facilitando integración emocional y reducción de la carga afectiva asociada (Moreno, 1946).",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "sullivan-psicoanalisis-interpersonal",
-      "label": "Interpersonal – Sullivan",
-      "year": 1953,
-      "autores": "Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_sullivan_reparacion_rupturas",
-            "nombre": "Reparación de rupturas interpersonales",
-            "texto": "Procedimiento que aborda malentendidos y tensiones relacionales nombrando el impacto mutuo, aclarando intenciones y restaurando seguridad, modelando una forma eficaz de resolver conflictos interpersonales.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_sullivan_meta_ruptura",
-            "nombre": "Meta-comentar una micro-ruptura",
-            "texto": "Microintervención que nombra un malentendido o tensión emergente en sesión y la explora de inmediato, mostrando que los conflictos pueden abordarse sin pérdida de vínculo.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-existencial-humanista-contemporanea",
+      "modelLabel": "Psicoterapia Existencial-Humanista Contemporánea",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Kirk J. Schneider, James F. T. Bugental",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_exist_autenticidad_relacional",
+          "nombre": "Trabajo relacional con autenticidad",
+          "texto": "Procedimiento que usa la relación terapéutica como laboratorio existencial: se exploran evitaciones, demandas, distancias y deseos en el vínculo con el terapeuta, reparando rupturas y ensayando una forma más auténtica de estar con otro (Schneider, Bugental & Pierson, 2015).",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_uso_objeto_supervivencia",
-            "nombre": "Uso del objeto: destructividad, prueba y supervivencia del objeto",
-            "texto": "Intervención que permite que el paciente ponga a prueba al terapeuta (crítica, rabia, desconfianza, retirada) como forma de verificar si el objeto sobrevive sin vengarse ni colapsar; el terapeuta sostiene, no retaliaciona, repara micro-rupturas y ayuda a simbolizar el ataque, favoreciendo la transición desde relaciones defensivas (cumplir/controlar/huir) a una relación auténtica donde el otro existe y puede ser usado sin ser destruido.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_winn_tolerar_critica_sin_retaliar",
-            "nombre": "Micro-uso de objeto: tolerar crítica sin retaliación",
-            "texto": "Microintervención relacional donde el terapeuta sostiene crítica o desconfianza sin defenderse ni contraatacar, y devuelve el sentido emocional del ataque, ofreciendo una experiencia de supervivencia del objeto que transforma patrones de miedo y control.",
-            "sub": "R_reparacionRelacional"
-          },
-          {
-            "codigo": "m_winn_reparacion_micro_ruptura",
-            "nombre": "Reparación inmediata de micro-ruptura (nombrar, validar, ajustar)",
-            "texto": "Intervención breve que cierra malentendidos en el momento: nombrar lo ocurrido, validar el impacto, aclarar intención y ajustar el proceder, modelando que el vínculo puede sostener fallos sin exigir adaptación defensiva.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "s13eftp1999",
+      "modelLabel": "Terapia Focalizada en las Emociones de Pareja (EFT-C)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Sue Johnson",
+      "modelYear": 1999,
+      "items": [
+        {
+          "codigo": "p_eft_enactments",
+          "nombre": "Enactments de apego",
+          "texto": "Intervención estructurada en la que el terapeuta organiza intercambios emocionales directos entre los miembros de la pareja. Estos enactments permiten expresar necesidades de apego de forma clara y vulnerable, y recibir respuestas nuevas por parte del otro, generando experiencias emocionales correctivas en tiempo real (Johnson, 2004).",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "cibernetica-teoria-comunicacion-1956",
-      "label": "Cibernética y teoría de la comunicación (Gregory Bateson)",
-      "year": 1956,
-      "autores": "Gregory Bateson",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/cibernetica-teoria-comunicacion-1956.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bateson_metacomunicacion",
-            "nombre": "Metacomunicación guiada",
-            "texto": "Procedimiento para ayudar al sistema a hablar sobre cómo habla: hacer explícitas reglas, supuestos y efectos del intercambio. Introduce un nivel de observación que suele desbloquear escaladas y permite renegociar normas relacionales sin entrar en contenido interminable.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicodinamica-ciclica-wachtel",
+      "modelLabel": "Psicodinámica cíclica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Paul L. Wachtel",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_wachtel_comunicacionCiclo",
+          "nombre": "Entrenamiento de comunicación emocional con foco en el ciclo",
+          "texto": "Procedimiento que entrena formas de comunicación emocional directa y no acusatoria, ayudando al paciente a expresar necesidades, límites y afectos sin recurrir a estilos indirectos como la queja, el sarcasmo, la retirada o el ataque, que suelen mantener el ciclo. Se practican guiones breves, validación emocional y reparaciones relacionales para reducir malentendidos y crear transacciones cotidianas menos reactivas. (Wachtel, 2011; Wachtel, 2008)",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_wachtel_reparacionMinima",
+          "nombre": "Reparación mínima en el momento",
+          "texto": "Microintervención que enseña a realizar una reparación relacional breve cuando el ciclo ya se ha activado, combinando reconocimiento del impacto, clarificación de la intención y un reintento inmediato. Esta reparación mínima evita que la interacción complete la secuencia confirmatoria habitual y entrena la capacidad de corregir el rumbo sin retirarse ni escalar el conflicto. (Wachtel, 2011)",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "balint-falla-basica-regresion-benigna",
-      "label": "Balint – Falla básica y regresión benigna",
-      "year": 1968,
-      "autores": "Michael Balint",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/balint-falla-basica-regresion-benigna.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_balint_reparacion_micro_rupturas",
-            "nombre": "Reparación de micro-rupturas sin sumisión ni castigo",
-            "texto": "Procedimiento que nombra y repara fallos del vínculo en el momento, validando la necesidad subyacente y restableciendo el encuadre sin castigar ni someterse, para que el paciente experimente que la relación sobrevive a la frustración.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_balint_reparar_micro_ruptura",
-            "nombre": "Reparar micro-ruptura en el momento",
-            "texto": "Microintervención que nombra un malentendido o tensión en sesión y lo repara de inmediato, mostrando que la relación puede fallar y recuperarse sin colapsar.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "terapia-integrativa-erskine",
+      "modelLabel": "Terapia integrativa",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard G. Erskine",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "p_erskine_contratransferencia",
+          "nombre": "Uso terapéutico de la contratransferencia y la auto-revelación",
+          "texto": "Procedimiento que utiliza de forma reflexiva las respuestas emocionales del terapeuta y, cuando es clínicamente apropiado, la auto-revelación calibrada para clarificar dinámicas relacionales y reparar rupturas del contacto. Estas intervenciones se emplean con cautela y finalidad clínica explícita, modelando una relación auténtica donde la experiencia del otro es reconocida y tenida en cuenta. (Erskine et al., 1999)",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "p_erskine_reparacionRupturas",
+          "nombre": "Reparación relacional de rupturas en sesión",
+          "texto": "Procedimiento que aborda rupturas relacionales inevitables dentro de la terapia —malentendidos, fallos de sintonía, límites frustrantes— reconociéndolas explícamente y trabajando su reparación. La reparación no se vive como corrección técnica, sino como experiencia relacional nueva donde el conflicto no implica pérdida del vínculo, fortaleciendo seguridad y confianza relacional. (Erskine et al., 1999)",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_erskine_reparacionInmediata",
+          "nombre": "Reparación inmediata de desajuste relacional",
+          "texto": "Microintervención que reconoce y repara de forma inmediata un fallo de sintonía o malentendido en sesión, mostrando responsabilidad relacional y disponibilidad al ajuste. Esta reparación modela una forma saludable de manejar rupturas sin retraimiento ni ataque. (Erskine et al., 1999)",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "teoria-apego-bowlby",
-      "label": "Teoría del apego",
-      "year": 1969,
-      "autores": "John Bowlby",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/teoria-apego-bowlby.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bowlby_figuras_apego_actuales",
-            "nombre": "Intervención con figuras de apego actuales",
-            "texto": "Procedimiento que integra relaciones actuales significativas —pareja, familia, parentalidad— como escenarios donde se activan modelos internos de trabajo, facilitando comprensión mutua, reparación relacional y prácticas de cuidado más seguras cuando el contexto terapéutico lo permite (Bowlby, 1988, *A Secure Base*).",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "balint-falla-basica-regresion-benigna",
+      "modelLabel": "Balint – Falla básica y regresión benigna",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Michael Balint",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_balint_reparacion_micro_rupturas",
+          "nombre": "Reparación de micro-rupturas sin sumisión ni castigo",
+          "texto": "Procedimiento que nombra y repara fallos del vínculo en el momento, validando la necesidad subyacente y restableciendo el encuadre sin castigar ni someterse, para que el paciente experimente que la relación sobrevive a la frustración.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_balint_reparar_micro_ruptura",
+          "nombre": "Reparar micro-ruptura en el momento",
+          "texto": "Microintervención que nombra un malentendido o tensión en sesión y lo repara de inmediato, mostrando que la relación puede fallar y recuperarse sin colapsar.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "entrenamiento-habilidades-sociales",
-      "label": "Entrenamiento en habilidades sociales",
-      "year": 1973,
-      "autores": "Arnold P. Goldstein; Robert P. Liberman",
-      "grupo": "Conductismo",
-      "file": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_sst_manejo_critica",
-            "nombre": "Manejo de críticas y confrontación no defensiva",
-            "texto": "Procedimiento para responder a críticas sin colapsar ni atacar: se entrenan respuestas de clarificación, acuerdo parcial, petición de ejemplos, reconocimiento de impacto y propuesta de reparación cuando procede; se practican microhabilidades de regulación (respirar, pausar, reformular) para disminuir reactividad y evitar rupturas, mejorando la capacidad de sostener conversaciones difíciles y mantener vínculos funcionales sin evitación.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_sst_reparacion",
-            "nombre": "Ensayo de reparación (disculpa, aclaración, reintento)",
-            "texto": "Práctica específica de reparar fallos sociales (interrumpir, sonar brusco, malentender) mediante disculpa breve, clarificación de intención y reintento, para disminuir miedo al error y romper la evitación perfeccionista que bloquea la exposición interpersonal.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "neopsicoanalisis",
+      "modelLabel": "Neopsicoanálisis",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_neopsy_repertorio_interpersonal",
+          "nombre": "Reestructuración del repertorio interpersonal (ensayo y generalización)",
+          "texto": "Procedimiento de cambio conductual-relacional que diseña alternativas específicas (petición directa, límite, desacuerdo, reparación) y las ensaya primero en sesión y luego fuera, con revisión detallada del resultado; busca ampliar repertorio sin perder seguridad, sustituyendo maniobras defensivas por habilidades interpersonales más claras y recíprocas.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_neopsy_reparacion_inmediata",
+          "nombre": "Reparación relacional inmediata tras micro-ruptura",
+          "texto": "Intervención breve para cerrar un malentendido en sesión (nombrar, validar, aclarar intención y pedir/otorgar reparación), modelando una salida distinta a la habitual.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "terapia-contextual-boszormenyi-nagy",
-      "label": "Terapia contextual",
-      "year": 1973,
-      "autores": "Ivan Boszormenyi-Nagy; Geraldine Spark",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/terapia-contextual-boszormenyi-nagy.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_contextual_parcialidad",
-            "nombre": "Parcialidad multidireccional",
-            "texto": "La parcialidad multidireccional implica que el terapeuta se posicione activamente reconociendo la legitimidad ética de cada miembro del sistema sin adoptar una neutralidad moral, validando simultáneamente las distintas perspectivas relacionales para promover justicia, responsabilidad compartida y apertura a la reparación.",
-            "sub": "R_reparacionRelacional"
-          },
-          {
-            "codigo": "p_contextual_reparacion",
-            "nombre": "Facilitación de actos reparadores",
-            "texto": "La facilitación de actos reparadores promueve gestos concretos, simbólicos o conductuales de restitución, reconocimiento o cuidado que permitan restablecer la equidad relacional, fortaleciendo la confianza mutua y transformando el reconocimiento ético en acciones observables.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_contextual_micro_reparacion",
-            "nombre": "Micro-reparación relacional",
-            "texto": "La micro-reparación relacional se concreta en pequeños actos verbales o simbólicos de restitución —disculpas, reconocimientos, gestos de cuidado— que comienzan a restaurar la confianza sin requerir cambios estructurales inmediatos.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "relaciones-objeto-fairbairn",
+      "modelLabel": "Relaciones de objeto (Fairbairn)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Ronald Fairbairn",
+      "modelYear": 1952,
+      "items": [
+        {
+          "codigo": "p_fairbairn_transferencia",
+          "nombre": "Trabajo con la transferencia relacional",
+          "texto": "La transferencia se aborda como reactivación viva de relaciones de objeto internalizadas, permitiendo observar en la relación terapéutica las expectativas, miedos y demandas propias del mundo interno del paciente.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "psicodinamica-ciclica-wachtel",
-      "label": "Psicodinámica cíclica",
-      "year": 1977,
-      "autores": "Paul L. Wachtel",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_wachtel_comunicacionCiclo",
-            "nombre": "Entrenamiento de comunicación emocional con foco en el ciclo",
-            "texto": "Procedimiento que entrena formas de comunicación emocional directa y no acusatoria, ayudando al paciente a expresar necesidades, límites y afectos sin recurrir a estilos indirectos como la queja, el sarcasmo, la retirada o el ataque, que suelen mantener el ciclo. Se practican guiones breves, validación emocional y reparaciones relacionales para reducir malentendidos y crear transacciones cotidianas menos reactivas. (Wachtel, 2011; Wachtel, 2008)",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_wachtel_reparacionMinima",
-            "nombre": "Reparación mínima en el momento",
-            "texto": "Microintervención que enseña a realizar una reparación relacional breve cuando el ciclo ya se ha activado, combinando reconocimiento del impacto, clarificación de la intención y un reintento inmediato. Esta reparación mínima evita que la interacción complete la secuencia confirmatoria habitual y entrena la capacidad de corregir el rumbo sin retirarse ni escalar el conflicto. (Wachtel, 2011)",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "relaciones-objeto-klein",
+      "modelLabel": "Relaciones de objeto (Klein)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Melanie Klein",
+      "modelYear": 1932,
+      "items": [
+        {
+          "codigo": "p_klein_reparacion",
+          "nombre": "Facilitación de reparación (interna y relacional) sin omnipotencia",
+          "texto": "Procedimiento dirigido a transformar la urgencia de “arreglarlo todo” (reparación maníaca) en actos de reparación realistas y sostenibles; se clarifica la diferencia entre reparar para negar el daño vs reparar para reconocerlo y responsabilizarse, y se apoya la puesta en práctica gradual de gestos concretos (disculpa, cuidado, límites, coherencia), integrando agencia con humildad y disminuyendo ciclos de culpa-omnipotencia-colapso.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_klein_reparacion_realista",
+          "nombre": "Orientar a reparación realista (un paso concreto)",
+          "texto": "Tras insight de culpa o daño, el terapeuta pide un gesto pequeño y específico que sea sostenible (no grandioso), para evitar reparación maníaca y consolidar integración a través de acción coherente.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "terapia-integrativa-erskine",
-      "label": "Terapia integrativa",
-      "year": 1978,
-      "autores": "Richard G. Erskine",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/terapia-integrativa-erskine.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_erskine_contratransferencia",
-            "nombre": "Uso terapéutico de la contratransferencia y la auto-revelación",
-            "texto": "Procedimiento que utiliza de forma reflexiva las respuestas emocionales del terapeuta y, cuando es clínicamente apropiado, la auto-revelación calibrada para clarificar dinámicas relacionales y reparar rupturas del contacto. Estas intervenciones se emplean con cautela y finalidad clínica explícita, modelando una relación auténtica donde la experiencia del otro es reconocida y tenida en cuenta. (Erskine et al., 1999)",
-            "sub": "R_reparacionRelacional"
-          },
-          {
-            "codigo": "p_erskine_reparacionRupturas",
-            "nombre": "Reparación relacional de rupturas en sesión",
-            "texto": "Procedimiento que aborda rupturas relacionales inevitables dentro de la terapia —malentendidos, fallos de sintonía, límites frustrantes— reconociéndolas explícamente y trabajando su reparación. La reparación no se vive como corrección técnica, sino como experiencia relacional nueva donde el conflicto no implica pérdida del vínculo, fortaleciendo seguridad y confianza relacional. (Erskine et al., 1999)",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_erskine_reparacionInmediata",
-            "nombre": "Reparación inmediata de desajuste relacional",
-            "texto": "Microintervención que reconoce y repara de forma inmediata un fallo de sintonía o malentendido en sesión, mostrando responsabilidad relacional y disponibilidad al ajuste. Esta reparación modela una forma saludable de manejar rupturas sin retraimiento ni ataque. (Erskine et al., 1999)",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "sullivan-psicoanalisis-interpersonal",
+      "modelLabel": "Interpersonal – Sullivan",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Harry Stack Sullivan",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_sullivan_reparacion_rupturas",
+          "nombre": "Reparación de rupturas interpersonales",
+          "texto": "Procedimiento que aborda malentendidos y tensiones relacionales nombrando el impacto mutuo, aclarando intenciones y restaurando seguridad, modelando una forma eficaz de resolver conflictos interpersonales.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_sullivan_meta_ruptura",
+          "nombre": "Meta-comentar una micro-ruptura",
+          "texto": "Microintervención que nombra un malentendido o tensión emergente en sesión y la explora de inmediato, mostrando que los conflictos pueden abordarse sin pérdida de vínculo.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "multisystemic-therapy-mst",
-      "label": "Multisystemic Therapy (MST)",
-      "year": 1990,
-      "autores": "Scott Henggeler; Sonia Rowland",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/multisystemic-therapy-mst.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mst_comunicacion_conflictos",
-            "nombre": "Intervención sobre comunicación familiar y resolución de conflictos",
-            "texto": "Estructuración de conversaciones para reducir escalada, aumentar peticiones claras, negociación y reparación, y disminuir patrones de ataque-defensa o retirada.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mst_micro_reparacion",
-            "nombre": "Micro-reparación tras conflicto",
-            "texto": "Estructura mínima para reparar: reconocer impacto, validar emoción, acordar conducta alternativa y cerrar con compromiso concreto.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "teoria-apego-bowlby",
+      "modelLabel": "Teoría del apego",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "John Bowlby",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_bowlby_figuras_apego_actuales",
+          "nombre": "Intervención con figuras de apego actuales",
+          "texto": "Procedimiento que integra relaciones actuales significativas —pareja, familia, parentalidad— como escenarios donde se activan modelos internos de trabajo, facilitando comprensión mutua, reparación relacional y prácticas de cuidado más seguras cuando el contexto terapéutico lo permite (Bowlby, 1988, *A Secure Base*).",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "multidimensional-family-therapy-mdft",
-      "label": "Multidimensional Family Therapy (MDFT)",
-      "year": 1991,
-      "autores": "Howard A. Liddle",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/multidimensional-family-therapy-mdft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mdft_familia",
-            "nombre": "Sesiones familiares estructuradas",
-            "texto": "Mejora de la comunicación, resolución de conflictos y alineación parental-adolescente.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_uso_objeto_supervivencia",
+          "nombre": "Uso del objeto: destructividad, prueba y supervivencia del objeto",
+          "texto": "Intervención que permite que el paciente ponga a prueba al terapeuta (crítica, rabia, desconfianza, retirada) como forma de verificar si el objeto sobrevive sin vengarse ni colapsar; el terapeuta sostiene, no retaliaciona, repara micro-rupturas y ayuda a simbolizar el ataque, favoreciendo la transición desde relaciones defensivas (cumplir/controlar/huir) a una relación auténtica donde el otro existe y puede ser usado sin ser destruido.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_winn_tolerar_critica_sin_retaliar",
+          "nombre": "Micro-uso de objeto: tolerar crítica sin retaliación",
+          "texto": "Microintervención relacional donde el terapeuta sostiene crítica o desconfianza sin defenderse ni contraatacar, y devuelve el sentido emocional del ataque, ofreciendo una experiencia de supervivencia del objeto que transforma patrones de miedo y control.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_winn_reparacion_micro_ruptura",
+          "nombre": "Reparación inmediata de micro-ruptura (nombrar, validar, ajustar)",
+          "texto": "Intervención breve que cierra malentendidos en el momento: nombrar lo ocurrido, validar el impacto, aclarar intención y ajustar el proceder, modelando que el vínculo puede sostener fallos sin exigir adaptación defensiva.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "s13eftp1999",
-      "label": "Terapia Focalizada en las Emociones de Pareja (EFT-C)",
-      "year": 1999,
-      "autores": "Sue Johnson",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/s13eftp1999.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_eft_enactments",
-            "nombre": "Enactments de apego",
-            "texto": "Intervención estructurada en la que el terapeuta organiza intercambios emocionales directos entre los miembros de la pareja. Estos enactments permiten expresar necesidades de apego de forma clara y vulnerable, y recibir respuestas nuevas por parte del otro, generando experiencias emocionales correctivas en tiempo real (Johnson, 2004).",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "attachment-based-family-therapy-abft",
+      "modelLabel": "ABFT – Terapia familiar basada en el apego",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_abft_reparadora",
+          "nombre": "Tarea 3 – Conversación reparadora",
+          "texto": "Conversación guiada donde el adolescente expresa necesidades y heridas de apego, y los padres responden con reconocimiento y reparación.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_abft_validacion",
+          "nombre": "Validación explícita de heridas de apego",
+          "texto": "Nombrar y legitimar experiencias de abandono, miedo o invalidez vividas por el adolescente.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_abft_ensayo",
+          "nombre": "Ensayo de reparación",
+          "texto": "Práctica guiada de disculpa, reconocimiento y protección dentro de la sesión.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "terapia-dialogica",
-      "label": "Terapia dialógica / Open Dialogue",
-      "year": 2000,
-      "autores": "Jaakko Seikkula; Tom Andersen",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-dialogica.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_od_continuidad_equipo",
-            "nombre": "Continuidad del equipo terapéutico",
-            "texto": "Procedimiento organizativo que garantiza que el mismo equipo acompañe a la persona y su red a lo largo de todo el proceso, evitando rotaciones que fragmenten el vínculo. La continuidad relacional permite construir confianza profunda, sostener diálogos difíciles y ofrecer un anclaje estable durante periodos prolongados de incertidumbre o crisis (Seikkula, 2006).",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "cibernetica-teoria-comunicacion-1956",
+      "modelLabel": "Cibernética y teoría de la comunicación (Gregory Bateson)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Gregory Bateson",
+      "modelYear": 1956,
+      "items": [
+        {
+          "codigo": "p_bateson_metacomunicacion",
+          "nombre": "Metacomunicación guiada",
+          "texto": "Procedimiento para ayudar al sistema a hablar sobre cómo habla: hacer explícitas reglas, supuestos y efectos del intercambio. Introduce un nivel de observación que suele desbloquear escaladas y permite renegociar normas relacionales sin entrar en contenido interminable.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "aedp-2000",
-      "label": "AEDP (Accelerated Experiential Dynamic Psychotherapy)",
-      "year": 2000,
-      "autores": "Diana Fosha",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/aedp-2000.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_aedp_correctivo",
-            "nombre": "Trabajo emocional correctivo",
-            "texto": "Creación de experiencias emocionales nuevas en la relación terapéutica que contradicen expectativas relacionales previas de abandono, rechazo o soledad.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "multidimensional-family-therapy-mdft",
+      "modelLabel": "Multidimensional Family Therapy (MDFT)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Howard A. Liddle",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_mdft_familia",
+          "nombre": "Sesiones familiares estructuradas",
+          "texto": "Mejora de la comunicación, resolución de conflictos y alineación parental-adolescente.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "s20linares",
-      "label": "Psicoterapia relacional sistémica (Linares)",
-      "year": 2000,
-      "autores": "Juan Luis Linares",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/s20linares.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_linares_triangulos",
-            "nombre": "Trabajo sobre triangulaciones y alianzas",
-            "texto": "Identificación de coaliciones, triangulaciones y desplazamientos de conflicto (p. ej., pareja–hijo). Se reorganiza la comunicación para devolver la responsabilidad al subsistema adecuado y facilitar reparación directa, evitando que el síntoma sostenga equilibrio disfuncional.",
-            "sub": "R_reparacionRelacional"
-          },
-          {
-            "codigo": "p_linares_enactment",
-            "nombre": "Enactment guiado y micro-reparaciones en sesión",
-            "texto": "El terapeuta provoca y regula interacciones breves en sesión para observar el patrón vivo (no solo narrado) y practicar comunicación emocional y reparación. Se estructura con límites claros para evitar escalada y se cierra con integración y significado.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_linares_reparacion",
-            "nombre": "Micro-reparación guiada",
-            "texto": "Estructura mínima de reparación: reconocer impacto + validar emoción + expresar intención + proponer ajuste concreto.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "multisystemic-therapy-mst",
+      "modelLabel": "Multisystemic Therapy (MST)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Scott Henggeler; Sonia Rowland",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mst_comunicacion_conflictos",
+          "nombre": "Intervención sobre comunicación familiar y resolución de conflictos",
+          "texto": "Estructuración de conversaciones para reducir escalada, aumentar peticiones claras, negociación y reparación, y disminuir patrones de ataque-defensa o retirada.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_mst_micro_reparacion",
+          "nombre": "Micro-reparación tras conflicto",
+          "texto": "Estructura mínima para reparar: reconocer impacto, validar emoción, acordar conducta alternativa y cerrar con compromiso concreto.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "attachment-based-family-therapy-abft",
-      "label": "ABFT – Terapia familiar basada en el apego",
-      "year": 2002,
-      "autores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/attachment-based-family-therapy-abft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_abft_reparadora",
-            "nombre": "Tarea 3 – Conversación reparadora",
-            "texto": "Conversación guiada donde el adolescente expresa necesidades y heridas de apego, y los padres responden con reconocimiento y reparación.",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_abft_validacion",
-            "nombre": "Validación explícita de heridas de apego",
-            "texto": "Nombrar y legitimar experiencias de abandono, miedo o invalidez vividas por el adolescente.",
-            "sub": "R_reparacionRelacional"
-          },
-          {
-            "codigo": "m_abft_ensayo",
-            "nombre": "Ensayo de reparación",
-            "texto": "Práctica guiada de disculpa, reconocimiento y protección dentro de la sesión.",
-            "sub": "R_reparacionRelacional"
-          }
-        ]
-      }
+      "modelId": "s20linares",
+      "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Juan Luis Linares",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_linares_triangulos",
+          "nombre": "Trabajo sobre triangulaciones y alianzas",
+          "texto": "Identificación de coaliciones, triangulaciones y desplazamientos de conflicto (p. ej., pareja–hijo). Se reorganiza la comunicación para devolver la responsabilidad al subsistema adecuado y facilitar reparación directa, evitando que el síntoma sostenga equilibrio disfuncional.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "p_linares_enactment",
+          "nombre": "Enactment guiado y micro-reparaciones en sesión",
+          "texto": "El terapeuta provoca y regula interacciones breves en sesión para observar el patrón vivo (no solo narrado) y practicar comunicación emocional y reparación. Se estructura con límites claros para evitar escalada y se cierra con integración y significado.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_linares_reparacion",
+          "nombre": "Micro-reparación guiada",
+          "texto": "Estructura mínima de reparación: reconocer impacto + validar emoción + expresar intención + proponer ajuste concreto.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-existencial-humanista-contemporanea",
-      "label": "Psicoterapia Existencial-Humanista Contemporánea",
-      "year": 2005,
-      "autores": "Kirk J. Schneider, James F. T. Bugental",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/psicoterapia-existencial-humanista-contemporanea.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_exist_autenticidad_relacional",
-            "nombre": "Trabajo relacional con autenticidad",
-            "texto": "Procedimiento que usa la relación terapéutica como laboratorio existencial: se exploran evitaciones, demandas, distancias y deseos en el vínculo con el terapeuta, reparando rupturas y ensayando una forma más auténtica de estar con otro (Schneider, Bugental & Pierson, 2015).",
-            "sub": "R_reparacionRelacional"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-contextual-boszormenyi-nagy",
+      "modelLabel": "Terapia contextual",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Ivan Boszormenyi-Nagy; Geraldine Spark",
+      "modelYear": 1973,
+      "items": [
+        {
+          "codigo": "p_contextual_parcialidad",
+          "nombre": "Parcialidad multidireccional",
+          "texto": "La parcialidad multidireccional implica que el terapeuta se posicione activamente reconociendo la legitimidad ética de cada miembro del sistema sin adoptar una neutralidad moral, validando simultáneamente las distintas perspectivas relacionales para promover justicia, responsabilidad compartida y apertura a la reparación.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "p_contextual_reparacion",
+          "nombre": "Facilitación de actos reparadores",
+          "texto": "La facilitación de actos reparadores promueve gestos concretos, simbólicos o conductuales de restitución, reconocimiento o cuidado que permitan restablecer la equidad relacional, fortaleciendo la confianza mutua y transformando el reconocimiento ético en acciones observables.",
+          "sub": "R_reparacionRelacional"
+        },
+        {
+          "codigo": "m_contextual_micro_reparacion",
+          "nombre": "Micro-reparación relacional",
+          "texto": "La micro-reparación relacional se concreta en pequeños actos verbales o simbólicos de restitución —disculpas, reconocimientos, gestos de cuidado— que comienzan a restaurar la confianza sin requerir cambios estructurales inmediatos.",
+          "sub": "R_reparacionRelacional"
+        }
+      ]
     }
   ]
 }

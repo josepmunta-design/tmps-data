@@ -1,116 +1,94 @@
 {
   "subprocesoId": "RI_autocompasion",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 5,
   "modelos": [
     {
-      "id": "neopsicoanalisis",
-      "label": "Neopsicoanálisis",
-      "year": 1940,
-      "autores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/neopsicoanalisis.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neopsy_vergüenza_auto_odio",
-            "nombre": "Trabajo con vergüenza y auto-odio (Horney) desde el vínculo",
-            "texto": "Intervención que identifica la vergüenza crónica como núcleo de muchas defensas interpersonales (sumisión, superioridad, retirada), ayudando a desactivar el auto-odio y la autoexigencia mediante comprensión del origen relacional, práctica de autocompasión y experiencias correctivas de aceptación con límites, para sostener autenticidad sin colapso.",
-            "sub": "RI_autocompasion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "self-dialogico-hermans",
+      "modelLabel": "Teoría del self dialógico",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Hubert J. M. Hermans",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_hermans_transformarCritico",
+          "nombre": "Transformación del crítico interno en voz protectora",
+          "texto": "Procedimiento específico cuando el self está dominado por crítica, vergüenza o autoexigencia: se explora la intención protectora del crítico (evitar rechazo, evitar fracaso, mantener control), se identifican sus estrategias dañinas (humillación, absolutismos) y se reconduce hacia una voz protectora y realista que pueda cuidar sin atacar. Se apoya en autocompasión y modulación emocional para que el cambio sea sostenible y no active amenaza identitaria. (Hermans, 1996).",
+          "sub": "RI_autocompasion"
+        },
+        {
+          "codigo": "m_hermans_intencionProtectora",
+          "nombre": "Explorar la intención protectora de la voz",
+          "texto": "Microintervención breve basada en preguntas del tipo \"¿qué intenta proteger esta voz?\" o \"¿de qué te quiere salvar?\", orientada a transformar la relación con voces críticas, controladoras o evitativas. Reduce polarización interna, activa autocompasión y permite trabajar cambios sin activar amenaza ni lucha interna. (Hermans, 1996).",
+          "sub": "RI_autocompasion"
+        }
+      ]
     },
     {
-      "id": "psicodinamica-ciclica-wachtel",
-      "label": "Psicodinámica cíclica",
-      "year": 1977,
-      "autores": "Paul L. Wachtel",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_wachtel_compasionParte",
-            "nombre": "Compasión hacia la parte protectora",
-            "texto": "Microintervención que valida la intención protectora de la parte defensiva —control, distancia, ataque o complacencia— y la invita a permitir un experimento alternativo. Al reducir la polarización interna y aumentar autocompasión, se facilita la persistencia en el cambio y la integración de nuevas respuestas sin vivenciar el proceso como auto-traición. (Wachtel, 2008)",
-            "sub": "RI_autocompasion"
-          }
-        ]
-      }
+      "modelId": "psicodinamica-ciclica-wachtel",
+      "modelLabel": "Psicodinámica cíclica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Paul L. Wachtel",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "m_wachtel_compasionParte",
+          "nombre": "Compasión hacia la parte protectora",
+          "texto": "Microintervención que valida la intención protectora de la parte defensiva —control, distancia, ataque o complacencia— y la invita a permitir un experimento alternativo. Al reducir la polarización interna y aumentar autocompasión, se facilita la persistencia en el cambio y la integración de nuevas respuestas sin vivenciar el proceso como auto-traición. (Wachtel, 2008)",
+          "sub": "RI_autocompasion"
+        }
+      ]
     },
     {
-      "id": "terapia-integrativa-erskine",
-      "label": "Terapia integrativa",
-      "year": 1978,
-      "autores": "Richard G. Erskine",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/terapia-integrativa-erskine.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_erskine_defensasAdaptativas",
-            "nombre": "Trabajo con defensas relacionales como adaptaciones históricas",
-            "texto": "Procedimiento que aborda defensas psicológicas y relacionales como adaptaciones con sentido histórico, desarrolladas para preservar el vínculo o la integridad del self en contextos tempranos adversos. El terapeuta valida la función protectora de estas defensas y ayuda al paciente a diferenciarlas de su identidad actual, reduciendo autoataque y permitiendo que nuevas formas de contacto emerjan sin vivirse como amenaza. (Erskine, 2015)",
-            "sub": "RI_autocompasion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_erskine_normalizarDefensa",
-            "nombre": "Normalización histórica de la defensa",
-            "texto": "Microintervención que contextualiza una defensa relacional dentro de la historia vital del paciente, subrayando su función protectora original. Esta normalización reduce autoataque y vergüenza, facilitando que la defensa pueda relajarse sin sentirse invalidada. (Erskine, 2015)",
-            "sub": "RI_autocompasion"
-          }
-        ]
-      }
+      "modelId": "terapia-integrativa-erskine",
+      "modelLabel": "Terapia integrativa",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard G. Erskine",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "p_erskine_defensasAdaptativas",
+          "nombre": "Trabajo con defensas relacionales como adaptaciones históricas",
+          "texto": "Procedimiento que aborda defensas psicológicas y relacionales como adaptaciones con sentido histórico, desarrolladas para preservar el vínculo o la integridad del self en contextos tempranos adversos. El terapeuta valida la función protectora de estas defensas y ayuda al paciente a diferenciarlas de su identidad actual, reduciendo autoataque y permitiendo que nuevas formas de contacto emerjan sin vivirse como amenaza. (Erskine, 2015)",
+          "sub": "RI_autocompasion"
+        },
+        {
+          "codigo": "m_erskine_normalizarDefensa",
+          "nombre": "Normalización histórica de la defensa",
+          "texto": "Microintervención que contextualiza una defensa relacional dentro de la historia vital del paciente, subrayando su función protectora original. Esta normalización reduce autoataque y vergüenza, facilitando que la defensa pueda relajarse sin sentirse invalidada. (Erskine, 2015)",
+          "sub": "RI_autocompasion"
+        }
+      ]
     },
     {
-      "id": "self-dialogico-hermans",
-      "label": "Teoría del self dialógico",
-      "year": 1996,
-      "autores": "Hubert J. M. Hermans",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/self-dialogico-hermans.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hermans_transformarCritico",
-            "nombre": "Transformación del crítico interno en voz protectora",
-            "texto": "Procedimiento específico cuando el self está dominado por crítica, vergüenza o autoexigencia: se explora la intención protectora del crítico (evitar rechazo, evitar fracaso, mantener control), se identifican sus estrategias dañinas (humillación, absolutismos) y se reconduce hacia una voz protectora y realista que pueda cuidar sin atacar. Se apoya en autocompasión y modulación emocional para que el cambio sea sostenible y no active amenaza identitaria. (Hermans, 1996).",
-            "sub": "RI_autocompasion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_hermans_intencionProtectora",
-            "nombre": "Explorar la intención protectora de la voz",
-            "texto": "Microintervención breve basada en preguntas del tipo \"¿qué intenta proteger esta voz?\" o \"¿de qué te quiere salvar?\", orientada a transformar la relación con voces críticas, controladoras o evitativas. Reduce polarización interna, activa autocompasión y permite trabajar cambios sin activar amenaza ni lucha interna. (Hermans, 1996).",
-            "sub": "RI_autocompasion"
-          }
-        ]
-      }
+      "modelId": "neopsicoanalisis",
+      "modelLabel": "Neopsicoanálisis",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_neopsy_vergüenza_auto_odio",
+          "nombre": "Trabajo con vergüenza y auto-odio (Horney) desde el vínculo",
+          "texto": "Intervención que identifica la vergüenza crónica como núcleo de muchas defensas interpersonales (sumisión, superioridad, retirada), ayudando a desactivar el auto-odio y la autoexigencia mediante comprensión del origen relacional, práctica de autocompasión y experiencias correctivas de aceptación con límites, para sostener autenticidad sin colapso.",
+          "sub": "RI_autocompasion"
+        }
+      ]
     },
     {
-      "id": "attachment-based-family-therapy-abft",
-      "label": "ABFT – Terapia familiar basada en el apego",
-      "year": 2002,
-      "autores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/attachment-based-family-therapy-abft.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_abft_parental",
-            "nombre": "Tarea 2 – Reestructuración parental",
-            "texto": "Trabajo con padres para aumentar sensibilidad al apego, reducir respuestas críticas o evitativas y fortalecer la función protectora.",
-            "sub": "RI_autocompasion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "attachment-based-family-therapy-abft",
+      "modelLabel": "ABFT – Terapia familiar basada en el apego",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Guy S. Diamond; Gary Diamond; Suzanne Levy",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_abft_parental",
+          "nombre": "Tarea 2 – Reestructuración parental",
+          "texto": "Trabajo con padres para aumentar sensibilidad al apego, reducir respuestas críticas o evitativas y fortalecer la función protectora.",
+          "sub": "RI_autocompasion"
+        }
+      ]
     }
   ]
 }

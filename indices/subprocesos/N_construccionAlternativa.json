@@ -1,484 +1,406 @@
 {
   "subprocesoId": "N_construccionAlternativa",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 17,
   "modelos": [
     {
-      "id": "logoterapia-1940",
-      "label": "Logoterapia",
-      "year": 1940,
-      "autores": "Viktor E. Frankl",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/logoterapia-1940.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_logo_sentido",
-            "nombre": "Clarificación de sentido vital",
-            "texto": "Exploración sistemática de fuentes de sentido a través del trabajo, el amor y la actitud ante el sufrimiento. El terapeuta formula preguntas existenciales que facilitan el descubrimiento de valores y propósitos concretos.",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_logo_para_que",
-            "nombre": "Pregunta por el para qué",
-            "texto": "Microintervención que desplaza la pregunta del ‘por qué me pasa esto’ al ‘para qué podría servir’, abriendo horizontes de sentido.",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "k13coherence-therapy-1993",
+      "modelLabel": "Terapia de la coherencia",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Bruce Ecker; Laurel Hulley; Robin Ticic",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_coh_formulacion_significado",
+          "nombre": "Formulación explícita del significado implícito",
+          "texto": "Procedimiento de traducción clínica en el que el significado emocional implícito descubierto se formula de manera clara, concisa y emocionalmente resonante, generalmente en primera persona y tiempo presente. Esta formulación no busca reinterpretar ni corregir, sino poner palabras precisas a una verdad emocional previamente tácita, facilitando su integración consciente sin invalidar su función original. Una formulación bien ajustada genera reconocimiento inmediato y sensación de obviedad emocional en el paciente (Ecker, Hulley & Ticic, 2012).",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_coh_formulacion_primera_persona",
+          "nombre": "Formulación en primera persona del significado implícito",
+          "texto": "Microintervención verbal en la que el terapeuta ayuda al paciente a expresar el significado emocional implícito en primera persona y tiempo presente, por ejemplo: “Necesito esto para no quedar expuesto”. Esta formulación genera reconocimiento inmediato y sensación de verdad emocional, facilitando la integración consciente del aprendizaje implícito sin invalidarlo. Es un paso clave para preparar la activación experiencial posterior (Ecker, Hulley & Ticic, 2012).",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "neopsicoanalisis",
-      "label": "Neopsicoanálisis",
-      "year": 1940,
-      "autores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/neopsicoanalisis.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neopsy_fromm_analisis_sociocultural",
-            "nombre": "Análisis sociocultural del carácter y la alienación (Fromm)",
-            "texto": "Procedimiento que integra presiones culturales (estatus, productividad, consumo, competitividad, roles) en la formulación del malestar, diferenciando ‘fallo personal’ de alienación social; se exploran orientaciones de carácter y cómo el entorno refuerza vínculos instrumentales, promoviendo una lectura que aumente agencia y elección ética sin caer en culpabilización.",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "k1kelly55",
+      "modelLabel": "Teoría de los Constructos Personales (PCP)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "George A. Kelly",
+      "modelYear": 1955,
+      "items": [
+        {
+          "codigo": "p_kelly_slotrattling",
+          "nombre": "Slot-rattling (sacudir casillas)",
+          "texto": "Procedimiento dirigido a flexibilizar constructos dicotómicos rígidos introduciendo elementos \nque contradicen o amplían los polos del constructo. \nAfloja la estructura sin romperla, permitiendo matices, complejidad y anticipaciones menos extremas, \nlo que reduce la reactividad emocional asociada a lecturas absolutas.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_kelly_alternativas",
+          "nombre": "Construcción de alternativas",
+          "texto": "Microintervención destinada a generar interpretaciones alternativas que mantengan la coherencia identitaria. \nDisminuye la sensación de inevitabilidad (\"solo puede ser así\") y abre repertorios de anticipación más flexibles.",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_espacio_potencial",
-            "nombre": "Creación activa del espacio potencial (entre lo interno y lo externo)",
-            "texto": "Procedimiento que establece una zona intermedia de exploración donde el paciente no está obligado a decidir si algo es ‘real’ o ‘imaginado’, sino a experimentarlo con curiosidad; el terapeuta fomenta simbolización, metáfora, prueba segura y ambigüedad tolerable, reduciendo defensas de certeza, control o cinismo y facilitando creatividad psicológica.",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_winn_squiggle",
-            "nombre": "Juego del garabato (Squiggle Game) y co-creación simbólica",
-            "texto": "Técnica de trabajo simbólico co-creado (especialmente útil con niños, pero adaptable a adultos) donde terapeuta y paciente generan material a partir de trazos, imágenes o formas ambiguas; el foco es abrir el espacio potencial, permitir proyecciones creativas y construir significado compartido sin intrusión interpretativa, facilitando expresión emocional y elaboración narrativa.",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_winn_metafora_juego",
-            "nombre": "Micro-juego con metáfora (sin literalidad)",
-            "texto": "Intervención breve que invita a describir la experiencia como imagen, escena o metáfora (“si esto fuese un lugar, ¿cuál sería?”) para abrir el espacio potencial y facilitar simbolización sin exigir narrativa lineal.",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "m_winn_ambiguedad_permisiva",
-            "nombre": "Abrir el espacio potencial con ambigüedad permisiva",
-            "texto": "Intervención breve que permite que dos experiencias convivan (“puede ser ambas cosas”) sin resolverlas de inmediato, facilitando tolerancia a ambivalencia y reduciendo defensas de certeza y control.",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "m_winn_evolucion_transicional",
-            "nombre": "Objeto transicional: ayudar a evolucionarlo sin arrancarlo",
-            "texto": "Intervención breve que acompaña el paso de un soporte transicional rígido a otros más flexibles (personas, actividades, símbolos), evitando que el paciente viva el cambio como pérdida traumática o imposición intrusiva.",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "polaridades-semanticas",
+      "modelLabel": "Modelo de polaridades semánticas",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Valeria Ugazio",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_ugazio_tercerasPosiciones",
+          "nombre": "Despolarización y creación de terceras posiciones",
+          "texto": "Procedimiento que trabaja explícitamente para salir de la lógica binaria del campo semántico, generando posiciones intermedias o integradoras (no como compromisos tibios, sino como nuevas coordenadas de sentido). Se exploran matices, excepciones y combinaciones posibles (“autonomía con vínculo”, “fuerza vulnerable”, “libertad responsable”) y se valida la complejidad como signo de crecimiento identitario. El objetivo es aumentar coherencia interna sin quedar atrapado en etiquetas polarizadas, ampliando el rango de experiencia y acción. (Ugazio, 2013)",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_ugazio_excepciones",
+          "nombre": "Introducir excepciones semánticas",
+          "texto": "Búsqueda activa de contextos, momentos o relaciones donde la polaridad no opera de forma rígida, mostrando que el campo semántico no es total ni omnipresente. Estas excepciones funcionan como grietas por donde introducir nuevas posiciones. (Ugazio, 2013)",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "k1kelly55",
-      "label": "Teoría de los Constructos Personales (PCP)",
-      "year": 1955,
-      "autores": "George A. Kelly",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/k1kelly55.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kelly_slotrattling",
-            "nombre": "Slot-rattling (sacudir casillas)",
-            "texto": "Procedimiento dirigido a flexibilizar constructos dicotómicos rígidos introduciendo elementos \nque contradicen o amplían los polos del constructo. \nAfloja la estructura sin romperla, permitiendo matices, complejidad y anticipaciones menos extremas, \nlo que reduce la reactividad emocional asociada a lecturas absolutas.",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_kelly_alternativas",
-            "nombre": "Construcción de alternativas",
-            "texto": "Microintervención destinada a generar interpretaciones alternativas que mantengan la coherencia identitaria. \nDisminuye la sensación de inevitabilidad (\"solo puede ser así\") y abre repertorios de anticipación más flexibles.",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-integrativa",
+      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_feixas_dilemasImplicativos",
+          "nombre": "Detección y trabajo de dilemas implicativos (Implicative Dilemmas)",
+          "texto": "Procedimiento específico para identificar dilemas del tipo “si cambio en X, entonces me convierto en Y (indeseable)” que hacen que el cambio terapéutico se viva como amenaza identitaria; se detectan mediante diálogo clínico y/o rejilla (p. ej., mejorar asertividad implica “ser egoísta”), se hace explícita la lógica protectora del dilema y se trabaja para generar terceras posiciones o definiciones más complejas que permitan el cambio sin pérdida de pertenencia, valor o coherencia del self. (Feixas, 2004)",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_feixas_constructosNucleares",
+          "nombre": "Identificación y reestructuración de constructos nucleares rígidos",
+          "texto": "Procedimiento focal que localiza constructos nucleares altamente polarizados (p. ej., fuerte–débil, valioso–inútil) que gobiernan autoevaluación y relación, explora su origen narrativo/relacional y su función adaptativa, y promueve flexibilización mediante matices, excepciones y nuevas definiciones operativas; el objetivo no es “cambiar creencias” desde fuera, sino ampliar el repertorio interpretativo de modo que el paciente pueda anticipar y actuar sin quedar prisionero de dicotomías que intensifican vergüenza, culpa o ansiedad. (Kelly, 1955; Feixas, 2004)",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_feixas_reautoria",
+          "nombre": "Construcción alternativa de sentido y reautoría narrativa",
+          "texto": "Procedimiento de reconstrucción narrativa donde se revisan episodios clave, giros biográficos y escenas repetidas para generar interpretaciones alternativas más complejas y compasivas, integrando información previamente disociada o desvalorizada; se buscan nuevas tramas identitarias que mantengan continuidad biográfica pero abran posibilidades futuras, pasando de historias cerradas (“siempre he sido así”) a historias con agencia (“he aprendido esto, puedo elegir aquello”), cuidando que la nueva narrativa sea vivible y no un relato “bonito” sin soporte experiencial. (Neimeyer, 1993/2009; Feixas, 2004)",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_feixas_rolFijo",
+          "nombre": "Terapia de Rol Fijo (Fixed-Role Therapy) adaptada a objetivos identitarios",
+          "texto": "Procedimiento experiencial donde se diseña, junto al paciente, un rol alternativo coherente con su identidad pero más flexible (un “personaje” viable) y se ensaya en la vida cotidiana durante un periodo acotado; el énfasis está en vivir nuevas anticipaciones y recoger datos sobre qué cambia en emociones, relaciones y autoimagen, usando el ensayo como experimento de significado que amplía el self futuro posible sin exigir una conversión permanente inmediata. (Kelly, 1955; Feixas, 2004)",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_feixas_excepciones",
+          "nombre": "Explorar excepciones funcionales",
+          "texto": "Búsqueda focalizada de situaciones donde el patrón problemático no se cumple o se cumple de forma menos rígida, utilizándolas como evidencia viva de alternativas ya existentes dentro del sistema de significados del paciente; refuerza agencia y reduce sensación de inevitabilidad. (Feixas, 2004)",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_feixas_tercerasPosiciones",
+          "nombre": "Introducir terceras posiciones",
+          "texto": "Microtrabajo orientado a generar definiciones que no encajan en la dicotomía dominante (por ejemplo, autonomía con vínculo), ampliando el repertorio identitario sin obligar a elegir entre polos excluyentes. (Kelly, 1955; Feixas, 2004)",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "terapia-experiencial-1970",
-      "label": "Terapia Experiencial",
-      "year": 1970,
-      "autores": "Eugene T. Gendlin; Laura N. Rice; Leslie S. Greenberg",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/terapia-experiencial-1970.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_exp_simbolizacion",
-            "nombre": "Simbolización y clarificación fenomenológica",
-            "texto": "Ayudar al cliente a encontrar palabras, imágenes o gestos que encajen con su experiencia sentida, promoviendo coherencia interna y sensación de avance.",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_exp_palabra_justa",
-            "nombre": "Búsqueda de la palabra justa",
-            "texto": "Explorar distintos términos hasta encontrar aquel que ‘resuena’ con la experiencia sentida del cliente.",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-neimeyer",
+      "modelLabel": "Neimeyer – Psicoterapia constructivista",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Robert A. Neimeyer",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_neim_reconstruccion_significado",
+          "nombre": "Reconstrucción de significado",
+          "texto": "Procedimiento orientado a ayudar al cliente a elaborar nuevos significados que integren la experiencia disruptiva dentro de una narrativa vital más amplia y coherente. La reconstrucción de significado no implica resignificación positiva forzada ni eliminación del dolor, sino encontrar una forma de comprender la experiencia que permita continuidad del self, agencia personal y orientación futura (Neimeyer, 2001; Neimeyer, 2016).",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_neim_rotulacion_significado",
+          "nombre": "Rotulación tentativa de significado",
+          "texto": "Micro que propone de forma provisional palabras o frases que podrían capturar el significado emergente de una experiencia, siempre presentadas como hipótesis abiertas. Esta rotulación facilita simbolización emocional sin imponer interpretación, permitiendo que el cliente confirme, matice o rechace el encuadre propuesto (Neimeyer, 1995).",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_reflejos_complejos",
-            "nombre": "Reflejos complejos (significado, emoción, intención)",
-            "texto": "Más allá del reflejo simple, los reflejos complejos añaden hipótesis cuidadosas sobre emoción, valor o intención, sin interpretar de forma intrusiva. Su poder está en que facilitan insight experiencial y ayudan a que el cliente encuentre lenguaje para su conflicto motivacional. Bien calibrados, generan ‘movimiento interno’ sin necesidad de confrontación.",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_mi_reflejo_giro",
-            "nombre": "Reflejo con giro (Reflection with a twist)",
-            "texto": "Este reflejo devuelve lo que el cliente dice, pero orientándolo hacia posibilidad o valor sin negar su posición. El ‘giro’ es una invitación implícita a otra lectura más viable: mantiene aceptación y añade dirección. Es especialmente útil cuando el cliente está estancado y el terapeuta quiere abrir opciones sin presionar.",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_mi_discrepancia",
-            "nombre": "Desarrollar discrepancia (conducta actual vs valores/metas)",
-            "texto": "La discrepancia en MI no es culpa ni regaño: es clarificar con delicadeza la distancia entre lo que la persona valora y lo que su conducta produce. Se hace evocando valores, futuro deseado y consecuencias vividas, para que el cliente vea por sí mismo la incoherencia costosa. Esta discrepancia adaptativa aumenta motivación sin presión externa.",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_mi_extremos",
-            "nombre": "Consultar extremos (Querying extremes)",
-            "texto": "Se pregunta por el mejor y peor escenario, o por el punto máximo de coste del problema, para ampliar perspectiva y romper minimización rígida. También puede usarse para detectar valores: ‘¿qué sería lo peor de…?’ a veces revela lo que la persona más protege. Bien usado, facilita claridad y decisión.",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "self-dialogico-hermans",
+      "modelLabel": "Teoría del self dialógico",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Hubert J. M. Hermans",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_hermans_ampliacionRepertorio",
+          "nombre": "Ampliación del repertorio de posiciones (repertory expansion)",
+          "texto": "Procedimiento que busca aumentar la variedad de posiciones disponibles (p. ej., “yo que pone límites”, “yo que pide ayuda”, “yo que descansa”, “yo compasivo”), especialmente cuando el self está empobrecido o colonizado por pocas voces. Se construyen nuevas posiciones a partir de excepciones, recursos, modelos internos/externos y valores, y se ensayan microcomportamientos congruentes para que esas voces ganen estabilidad y acceso en contextos relevantes. (Hermans et al., 1992; Hermans, 1996).",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_hermans_reautoriaDialogica",
+          "nombre": "Reautoría dialógica de la narrativa (historia con múltiples voces)",
+          "texto": "Procedimiento que reescribe la historia personal incorporando perspectivas de varias posiciones del self, generando una narrativa más amplia y flexible que reduce monopolios narrativos y amplía la agencia. (Hermans et al., 1992; Hermans, 1996).",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_hermans_cierreSintesis",
+          "nombre": "Cerrar el diálogo con síntesis integradora",
+          "texto": "Microintervención de cierre que resume los puntos de acuerdo, tensiones y aprendizajes emergidos del diálogo interno, integrándolos en una formulación breve y coherente. Ayuda a consolidar el cambio y evita que la sesión termine con fragmentación interna. (Hermans, 1996).",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "terapia-narrativa-white-epston",
-      "label": "Terapia narrativa",
-      "year": 1990,
-      "autores": "Michael White; David Epston",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_nar_micro_documentos",
-            "nombre": "Micro-documentos de reconocimiento",
-            "texto": "Elaboración de textos breves —notas, certificados o mensajes— que reconocen logros, decisiones o valores emergentes. Funcionan como anclajes narrativos que mantienen viva la historia preferida entre sesiones (Epston, 1994, *Extending the Conversation*).",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "terapia-colaborativa",
+      "modelLabel": "Terapia colaborativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Harlene Anderson; Harold Goolishian",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_colab_conversacionPosibilidades",
+          "nombre": "Conversación generativa centrada en posibilidades",
+          "texto": "Procedimiento que orienta la conversación hacia la creación de posibilidades nuevas en lugar de quedarse atrapada en descripciones saturadas por el problema, explorando excepciones, deseos, valores y futuros posibles mediante preguntas abiertas que amplían el repertorio lingüístico; el cambio se conceptualiza como el surgimiento de nuevas formas de hablar que hacen visibles opciones de acción e identidad antes no disponibles para el consultante. (Anderson, 1997)",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_colab_coautoria",
+          "nombre": "Co-autoría y negociación de significados",
+          "texto": "Procedimiento continuo donde terapeuta y consultante negocian activamente el significado de palabras, eventos y posiciones identitarias, reconociendo que diferentes descripciones producen diferentes realidades prácticas; la co-autoría evita la imposición de marcos externos y permite crear definiciones más útiles y menos restrictivas del problema, de la identidad y de las relaciones, alineando la conversación con objetivos emergentes. (Anderson, 1997)",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_colab_desaturacionProblema",
+          "nombre": "Des-saturación del problema (deconstrucción de conversaciones dominantes)",
+          "texto": "Procedimiento que identifica cómo ciertas conversaciones repetidas (internas, familiares, institucionales) mantienen una versión dominante del problema y del self, y trabaja para debilitarlas introduciendo nuevas descripciones, contextos y puntos de vista; al deconstruir etiquetas rígidas y relatos totalizantes, se abren espacios lingüísticos donde el consultante puede ocupar posiciones menos problematizadas y más agentivas. (Anderson, 1997)",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_colab_objetivosEmergentes",
+          "nombre": "Definición colaborativa de objetivos emergentes",
+          "texto": "Procedimiento por el cual los objetivos no se establecen como un plan cerrado al inicio, sino que se formulan y reformulan a medida que la conversación revela qué es importante, qué tiene sentido y qué es viable para el consultante; se prioriza que los objetivos estén expresados en el lenguaje del cliente y que reflejen posibilidades reales de acción e identidad, evitando traducirlos a metas externas o normativas. (Anderson, 1997)",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "k13coherence-therapy-1993",
-      "label": "Terapia de la coherencia",
-      "year": 1993,
-      "autores": "Bruce Ecker; Laurel Hulley; Robin Ticic",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/k13coherence-therapy-1993.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_coh_formulacion_significado",
-            "nombre": "Formulación explícita del significado implícito",
-            "texto": "Procedimiento de traducción clínica en el que el significado emocional implícito descubierto se formula de manera clara, concisa y emocionalmente resonante, generalmente en primera persona y tiempo presente. Esta formulación no busca reinterpretar ni corregir, sino poner palabras precisas a una verdad emocional previamente tácita, facilitando su integración consciente sin invalidar su función original. Una formulación bien ajustada genera reconocimiento inmediato y sensación de obviedad emocional en el paciente (Ecker, Hulley & Ticic, 2012).",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_coh_formulacion_primera_persona",
-            "nombre": "Formulación en primera persona del significado implícito",
-            "texto": "Microintervención verbal en la que el terapeuta ayuda al paciente a expresar el significado emocional implícito en primera persona y tiempo presente, por ejemplo: “Necesito esto para no quedar expuesto”. Esta formulación genera reconocimiento inmediato y sensación de verdad emocional, facilitando la integración consciente del aprendizaje implícito sin invalidarlo. Es un paso clave para preparar la activación experiencial posterior (Ecker, Hulley & Ticic, 2012).",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "terapia-dialogica",
+      "modelLabel": "Terapia dialógica / Open Dialogue",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Jaakko Seikkula; Tom Andersen",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_od_no_cierre",
+          "nombre": "No-cierre interpretativo",
+          "texto": "Microintervención consistente en abstenerse deliberadamente de cerrar el significado de lo expresado mediante interpretaciones, diagnósticos o conclusiones. El terapeuta sostiene preguntas abiertas y formulaciones incompletas, preservando la incertidumbre como condición para que el diálogo siga vivo y transformador (Seikkula, 2006).",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "terapia-colaborativa",
-      "label": "Terapia colaborativa",
-      "year": 1994,
-      "autores": "Harlene Anderson; Harold Goolishian",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-colaborativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_colab_conversacionPosibilidades",
-            "nombre": "Conversación generativa centrada en posibilidades",
-            "texto": "Procedimiento que orienta la conversación hacia la creación de posibilidades nuevas en lugar de quedarse atrapada en descripciones saturadas por el problema, explorando excepciones, deseos, valores y futuros posibles mediante preguntas abiertas que amplían el repertorio lingüístico; el cambio se conceptualiza como el surgimiento de nuevas formas de hablar que hacen visibles opciones de acción e identidad antes no disponibles para el consultante. (Anderson, 1997)",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_colab_coautoria",
-            "nombre": "Co-autoría y negociación de significados",
-            "texto": "Procedimiento continuo donde terapeuta y consultante negocian activamente el significado de palabras, eventos y posiciones identitarias, reconociendo que diferentes descripciones producen diferentes realidades prácticas; la co-autoría evita la imposición de marcos externos y permite crear definiciones más útiles y menos restrictivas del problema, de la identidad y de las relaciones, alineando la conversación con objetivos emergentes. (Anderson, 1997)",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_colab_desaturacionProblema",
-            "nombre": "Des-saturación del problema (deconstrucción de conversaciones dominantes)",
-            "texto": "Procedimiento que identifica cómo ciertas conversaciones repetidas (internas, familiares, institucionales) mantienen una versión dominante del problema y del self, y trabaja para debilitarlas introduciendo nuevas descripciones, contextos y puntos de vista; al deconstruir etiquetas rígidas y relatos totalizantes, se abren espacios lingüísticos donde el consultante puede ocupar posiciones menos problematizadas y más agentivas. (Anderson, 1997)",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_colab_objetivosEmergentes",
-            "nombre": "Definición colaborativa de objetivos emergentes",
-            "texto": "Procedimiento por el cual los objetivos no se establecen como un plan cerrado al inicio, sino que se formulan y reformulan a medida que la conversación revela qué es importante, qué tiene sentido y qué es viable para el consultante; se prioriza que los objetivos estén expresados en el lenguaje del cliente y que reflejen posibilidades reales de acción e identidad, evitando traducirlos a metas externas o normativas. (Anderson, 1997)",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-metacognitiva-interpersonal-mit",
+      "modelLabel": "Terapia Metacognitiva Interpersonal (MIT)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Giancarlo Dimaggio; Antonio Semerari; Paul Lysaker",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "m_mit_reformulacion_colaborativa",
+          "nombre": "Reformulación metacognitiva colaborativa",
+          "texto": "Microintervención donde terapeuta y paciente reformulan conjuntamente una experiencia problemática integrando estados mentales propios y ajenos, sin imponer interpretaciones externas. Esta reformulación amplía el sentido y reduce rigidez narrativa (Dimaggio & Semerari, 2007).",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-neimeyer",
-      "label": "Neimeyer – Psicoterapia constructivista",
-      "year": 1995,
-      "autores": "Robert A. Neimeyer",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-neimeyer.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neim_reconstruccion_significado",
-            "nombre": "Reconstrucción de significado",
-            "texto": "Procedimiento orientado a ayudar al cliente a elaborar nuevos significados que integren la experiencia disruptiva dentro de una narrativa vital más amplia y coherente. La reconstrucción de significado no implica resignificación positiva forzada ni eliminación del dolor, sino encontrar una forma de comprender la experiencia que permita continuidad del self, agencia personal y orientación futura (Neimeyer, 2001; Neimeyer, 2016).",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neim_rotulacion_significado",
-            "nombre": "Rotulación tentativa de significado",
-            "texto": "Micro que propone de forma provisional palabras o frases que podrían capturar el significado emergente de una experiencia, siempre presentadas como hipótesis abiertas. Esta rotulación facilita simbolización emocional sin imponer interpretación, permitiendo que el cliente confirme, matice o rechace el encuadre propuesto (Neimeyer, 1995).",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "terapia-narrativa-white-epston",
+      "modelLabel": "Terapia narrativa",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Michael White; David Epston",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "m_nar_micro_documentos",
+          "nombre": "Micro-documentos de reconocimiento",
+          "texto": "Elaboración de textos breves —notas, certificados o mensajes— que reconocen logros, decisiones o valores emergentes. Funcionan como anclajes narrativos que mantienen viva la historia preferida entre sesiones (Epston, 1994, *Extending the Conversation*).",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "self-dialogico-hermans",
-      "label": "Teoría del self dialógico",
-      "year": 1996,
-      "autores": "Hubert J. M. Hermans",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/self-dialogico-hermans.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hermans_ampliacionRepertorio",
-            "nombre": "Ampliación del repertorio de posiciones (repertory expansion)",
-            "texto": "Procedimiento que busca aumentar la variedad de posiciones disponibles (p. ej., “yo que pone límites”, “yo que pide ayuda”, “yo que descansa”, “yo compasivo”), especialmente cuando el self está empobrecido o colonizado por pocas voces. Se construyen nuevas posiciones a partir de excepciones, recursos, modelos internos/externos y valores, y se ensayan microcomportamientos congruentes para que esas voces ganen estabilidad y acceso en contextos relevantes. (Hermans et al., 1992; Hermans, 1996).",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_hermans_reautoriaDialogica",
-            "nombre": "Reautoría dialógica de la narrativa (historia con múltiples voces)",
-            "texto": "Procedimiento que reescribe la historia personal incorporando perspectivas de varias posiciones del self, generando una narrativa más amplia y flexible que reduce monopolios narrativos y amplía la agencia. (Hermans et al., 1992; Hermans, 1996).",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_hermans_cierreSintesis",
-            "nombre": "Cerrar el diálogo con síntesis integradora",
-            "texto": "Microintervención de cierre que resume los puntos de acuerdo, tensiones y aprendizajes emergidos del diálogo interno, integrándolos en una formulación breve y coherente. Ayuda a consolidar el cambio y evita que la sesión termine con fragmentación interna. (Hermans, 1996).",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_reflejos_complejos",
+          "nombre": "Reflejos complejos (significado, emoción, intención)",
+          "texto": "Más allá del reflejo simple, los reflejos complejos añaden hipótesis cuidadosas sobre emoción, valor o intención, sin interpretar de forma intrusiva. Su poder está en que facilitan insight experiencial y ayudan a que el cliente encuentre lenguaje para su conflicto motivacional. Bien calibrados, generan ‘movimiento interno’ sin necesidad de confrontación.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_mi_reflejo_giro",
+          "nombre": "Reflejo con giro (Reflection with a twist)",
+          "texto": "Este reflejo devuelve lo que el cliente dice, pero orientándolo hacia posibilidad o valor sin negar su posición. El ‘giro’ es una invitación implícita a otra lectura más viable: mantiene aceptación y añade dirección. Es especialmente útil cuando el cliente está estancado y el terapeuta quiere abrir opciones sin presionar.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_mi_discrepancia",
+          "nombre": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+          "texto": "La discrepancia en MI no es culpa ni regaño: es clarificar con delicadeza la distancia entre lo que la persona valora y lo que su conducta produce. Se hace evocando valores, futuro deseado y consecuencias vividas, para que el cliente vea por sí mismo la incoherencia costosa. Esta discrepancia adaptativa aumenta motivación sin presión externa.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_mi_extremos",
+          "nombre": "Consultar extremos (Querying extremes)",
+          "texto": "Se pregunta por el mejor y peor escenario, o por el punto máximo de coste del problema, para ampliar perspectiva y romper minimización rígida. También puede usarse para detectar valores: ‘¿qué sería lo peor de…?’ a veces revela lo que la persona más protege. Bien usado, facilita claridad y decisión.",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "polaridades-semanticas",
-      "label": "Modelo de polaridades semánticas",
-      "year": 1998,
-      "autores": "Valeria Ugazio",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/polaridades-semanticas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_ugazio_tercerasPosiciones",
-            "nombre": "Despolarización y creación de terceras posiciones",
-            "texto": "Procedimiento que trabaja explícitamente para salir de la lógica binaria del campo semántico, generando posiciones intermedias o integradoras (no como compromisos tibios, sino como nuevas coordenadas de sentido). Se exploran matices, excepciones y combinaciones posibles (“autonomía con vínculo”, “fuerza vulnerable”, “libertad responsable”) y se valida la complejidad como signo de crecimiento identitario. El objetivo es aumentar coherencia interna sin quedar atrapado en etiquetas polarizadas, ampliando el rango de experiencia y acción. (Ugazio, 2013)",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_ugazio_excepciones",
-            "nombre": "Introducir excepciones semánticas",
-            "texto": "Búsqueda activa de contextos, momentos o relaciones donde la polaridad no opera de forma rígida, mostrando que el campo semántico no es total ni omnipresente. Estas excepciones funcionan como grietas por donde introducir nuevas posiciones. (Ugazio, 2013)",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "logoterapia-1940",
+      "modelLabel": "Logoterapia",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Viktor E. Frankl",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_logo_sentido",
+          "nombre": "Clarificación de sentido vital",
+          "texto": "Exploración sistemática de fuentes de sentido a través del trabajo, el amor y la actitud ante el sufrimiento. El terapeuta formula preguntas existenciales que facilitan el descubrimiento de valores y propósitos concretos.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_logo_para_que",
+          "nombre": "Pregunta por el para qué",
+          "texto": "Microintervención que desplaza la pregunta del ‘por qué me pasa esto’ al ‘para qué podría servir’, abriendo horizontes de sentido.",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "psicologia-positiva-1998",
-      "label": "Psicología Positiva",
-      "year": 1998,
-      "autores": "Martin E. P. Seligman; Mihaly Csikszentmihalyi",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/psicologia-positiva-1998.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_pospsy_anclaje_sentido",
-            "nombre": "Anclaje de sentido (¿para qué vale la pena esto?)",
-            "texto": "Microintervención para conectar una conducta o decisión con valores y propósito, incrementando motivación interna.",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "psicologia-positiva-1998",
+      "modelLabel": "Psicología Positiva",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Martin E. P. Seligman; Mihaly Csikszentmihalyi",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "m_pospsy_anclaje_sentido",
+          "nombre": "Anclaje de sentido (¿para qué vale la pena esto?)",
+          "texto": "Microintervención para conectar una conducta o decisión con valores y propósito, incrementando motivación interna.",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-integrativa",
-      "label": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
-      "year": 2000,
-      "autores": "Guillem Feixas; Manuel Villegas Besora",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-integrativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_feixas_dilemasImplicativos",
-            "nombre": "Detección y trabajo de dilemas implicativos (Implicative Dilemmas)",
-            "texto": "Procedimiento específico para identificar dilemas del tipo “si cambio en X, entonces me convierto en Y (indeseable)” que hacen que el cambio terapéutico se viva como amenaza identitaria; se detectan mediante diálogo clínico y/o rejilla (p. ej., mejorar asertividad implica “ser egoísta”), se hace explícita la lógica protectora del dilema y se trabaja para generar terceras posiciones o definiciones más complejas que permitan el cambio sin pérdida de pertenencia, valor o coherencia del self. (Feixas, 2004)",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_feixas_constructosNucleares",
-            "nombre": "Identificación y reestructuración de constructos nucleares rígidos",
-            "texto": "Procedimiento focal que localiza constructos nucleares altamente polarizados (p. ej., fuerte–débil, valioso–inútil) que gobiernan autoevaluación y relación, explora su origen narrativo/relacional y su función adaptativa, y promueve flexibilización mediante matices, excepciones y nuevas definiciones operativas; el objetivo no es “cambiar creencias” desde fuera, sino ampliar el repertorio interpretativo de modo que el paciente pueda anticipar y actuar sin quedar prisionero de dicotomías que intensifican vergüenza, culpa o ansiedad. (Kelly, 1955; Feixas, 2004)",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_feixas_reautoria",
-            "nombre": "Construcción alternativa de sentido y reautoría narrativa",
-            "texto": "Procedimiento de reconstrucción narrativa donde se revisan episodios clave, giros biográficos y escenas repetidas para generar interpretaciones alternativas más complejas y compasivas, integrando información previamente disociada o desvalorizada; se buscan nuevas tramas identitarias que mantengan continuidad biográfica pero abran posibilidades futuras, pasando de historias cerradas (“siempre he sido así”) a historias con agencia (“he aprendido esto, puedo elegir aquello”), cuidando que la nueva narrativa sea vivible y no un relato “bonito” sin soporte experiencial. (Neimeyer, 1993/2009; Feixas, 2004)",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "p_feixas_rolFijo",
-            "nombre": "Terapia de Rol Fijo (Fixed-Role Therapy) adaptada a objetivos identitarios",
-            "texto": "Procedimiento experiencial donde se diseña, junto al paciente, un rol alternativo coherente con su identidad pero más flexible (un “personaje” viable) y se ensaya en la vida cotidiana durante un periodo acotado; el énfasis está en vivir nuevas anticipaciones y recoger datos sobre qué cambia en emociones, relaciones y autoimagen, usando el ensayo como experimento de significado que amplía el self futuro posible sin exigir una conversión permanente inmediata. (Kelly, 1955; Feixas, 2004)",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_feixas_excepciones",
-            "nombre": "Explorar excepciones funcionales",
-            "texto": "Búsqueda focalizada de situaciones donde el patrón problemático no se cumple o se cumple de forma menos rígida, utilizándolas como evidencia viva de alternativas ya existentes dentro del sistema de significados del paciente; refuerza agencia y reduce sensación de inevitabilidad. (Feixas, 2004)",
-            "sub": "N_construccionAlternativa"
-          },
-          {
-            "codigo": "m_feixas_tercerasPosiciones",
-            "nombre": "Introducir terceras posiciones",
-            "texto": "Microtrabajo orientado a generar definiciones que no encajan en la dicotomía dominante (por ejemplo, autonomía con vínculo), ampliando el repertorio identitario sin obligar a elegir entre polos excluyentes. (Kelly, 1955; Feixas, 2004)",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-existencial-humanista-contemporanea",
+      "modelLabel": "Psicoterapia Existencial-Humanista Contemporánea",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Kirk J. Schneider, James F. T. Bugental",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_exist_sentido",
+          "nombre": "Reautoría de sentido",
+          "texto": "Procedimiento narrativo-experiencial que reorganiza la historia personal alrededor de significado, valores y continuidad biográfica, integrando pérdidas, límites y decisiones. No busca ‘positivizar’, sino construir un sentido más habitable y responsable (Schneider, Bugental & Pierson, 2015).",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_exist_significado_alternativo",
+          "nombre": "Construcción de significado alternativo",
+          "texto": "Microintervención que genera marcos de sentido más amplios sin negar dolor ni límites (“¿qué otra lectura es posible que también sea verdadera?”). Reduce estrechamiento y abre agencia narrativa (Schneider, Bugental & Pierson, 2015).",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "terapia-dialogica",
-      "label": "Terapia dialógica / Open Dialogue",
-      "year": 2000,
-      "autores": "Jaakko Seikkula; Tom Andersen",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-dialogica.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_od_no_cierre",
-            "nombre": "No-cierre interpretativo",
-            "texto": "Microintervención consistente en abstenerse deliberadamente de cerrar el significado de lo expresado mediante interpretaciones, diagnósticos o conclusiones. El terapeuta sostiene preguntas abiertas y formulaciones incompletas, preservando la incertidumbre como condición para que el diálogo siga vivo y transformador (Seikkula, 2006).",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "terapia-experiencial-1970",
+      "modelLabel": "Terapia Experiencial",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Eugene T. Gendlin; Laura N. Rice; Leslie S. Greenberg",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_exp_simbolizacion",
+          "nombre": "Simbolización y clarificación fenomenológica",
+          "texto": "Ayudar al cliente a encontrar palabras, imágenes o gestos que encajen con su experiencia sentida, promoviendo coherencia interna y sensación de avance.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_exp_palabra_justa",
+          "nombre": "Búsqueda de la palabra justa",
+          "texto": "Explorar distintos términos hasta encontrar aquel que ‘resuena’ con la experiencia sentida del cliente.",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "terapia-metacognitiva-interpersonal-mit",
-      "label": "Terapia Metacognitiva Interpersonal (MIT)",
-      "year": 2002,
-      "autores": "Giancarlo Dimaggio; Antonio Semerari; Paul Lysaker",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-metacognitiva-interpersonal-mit.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_mit_reformulacion_colaborativa",
-            "nombre": "Reformulación metacognitiva colaborativa",
-            "texto": "Microintervención donde terapeuta y paciente reformulan conjuntamente una experiencia problemática integrando estados mentales propios y ajenos, sin imponer interpretaciones externas. Esta reformulación amplía el sentido y reduce rigidez narrativa (Dimaggio & Semerari, 2007).",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "neopsicoanalisis",
+      "modelLabel": "Neopsicoanálisis",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_neopsy_fromm_analisis_sociocultural",
+          "nombre": "Análisis sociocultural del carácter y la alienación (Fromm)",
+          "texto": "Procedimiento que integra presiones culturales (estatus, productividad, consumo, competitividad, roles) en la formulación del malestar, diferenciando ‘fallo personal’ de alienación social; se exploran orientaciones de carácter y cómo el entorno refuerza vínculos instrumentales, promoviendo una lectura que aumente agencia y elección ética sin caer en culpabilización.",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-existencial-humanista-contemporanea",
-      "label": "Psicoterapia Existencial-Humanista Contemporánea",
-      "year": 2005,
-      "autores": "Kirk J. Schneider, James F. T. Bugental",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/psicoterapia-existencial-humanista-contemporanea.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_exist_sentido",
-            "nombre": "Reautoría de sentido",
-            "texto": "Procedimiento narrativo-experiencial que reorganiza la historia personal alrededor de significado, valores y continuidad biográfica, integrando pérdidas, límites y decisiones. No busca ‘positivizar’, sino construir un sentido más habitable y responsable (Schneider, Bugental & Pierson, 2015).",
-            "sub": "N_construccionAlternativa"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_exist_significado_alternativo",
-            "nombre": "Construcción de significado alternativo",
-            "texto": "Microintervención que genera marcos de sentido más amplios sin negar dolor ni límites (“¿qué otra lectura es posible que también sea verdadera?”). Reduce estrechamiento y abre agencia narrativa (Schneider, Bugental & Pierson, 2015).",
-            "sub": "N_construccionAlternativa"
-          }
-        ]
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_espacio_potencial",
+          "nombre": "Creación activa del espacio potencial (entre lo interno y lo externo)",
+          "texto": "Procedimiento que establece una zona intermedia de exploración donde el paciente no está obligado a decidir si algo es ‘real’ o ‘imaginado’, sino a experimentarlo con curiosidad; el terapeuta fomenta simbolización, metáfora, prueba segura y ambigüedad tolerable, reduciendo defensas de certeza, control o cinismo y facilitando creatividad psicológica.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "p_winn_squiggle",
+          "nombre": "Juego del garabato (Squiggle Game) y co-creación simbólica",
+          "texto": "Técnica de trabajo simbólico co-creado (especialmente útil con niños, pero adaptable a adultos) donde terapeuta y paciente generan material a partir de trazos, imágenes o formas ambiguas; el foco es abrir el espacio potencial, permitir proyecciones creativas y construir significado compartido sin intrusión interpretativa, facilitando expresión emocional y elaboración narrativa.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_winn_metafora_juego",
+          "nombre": "Micro-juego con metáfora (sin literalidad)",
+          "texto": "Intervención breve que invita a describir la experiencia como imagen, escena o metáfora (“si esto fuese un lugar, ¿cuál sería?”) para abrir el espacio potencial y facilitar simbolización sin exigir narrativa lineal.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_winn_ambiguedad_permisiva",
+          "nombre": "Abrir el espacio potencial con ambigüedad permisiva",
+          "texto": "Intervención breve que permite que dos experiencias convivan (“puede ser ambas cosas”) sin resolverlas de inmediato, facilitando tolerancia a ambivalencia y reduciendo defensas de certeza y control.",
+          "sub": "N_construccionAlternativa"
+        },
+        {
+          "codigo": "m_winn_evolucion_transicional",
+          "nombre": "Objeto transicional: ayudar a evolucionarlo sin arrancarlo",
+          "texto": "Intervención breve que acompaña el paso de un soporte transicional rígido a otros más flexibles (personas, actividades, símbolos), evitando que el paciente viva el cambio como pérdida traumática o imposición intrusiva.",
+          "sub": "N_construccionAlternativa"
+        }
+      ]
     }
   ]
 }

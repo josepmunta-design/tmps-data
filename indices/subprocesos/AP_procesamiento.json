@@ -1,319 +1,259 @@
 {
   "subprocesoId": "AP_procesamiento",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 14,
   "modelos": [
     {
-      "id": "h14psdrama1921",
-      "label": "Psicodrama",
-      "year": 1921,
-      "autores": "Jacob Levy Moreno",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/h14psdrama1921.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_psdrama_dramatizacion",
-            "nombre": "Dramatización psicodramática",
-            "texto": "Procedimiento central del Psicodrama que consiste en representar en acción escenas significativas de la vida del protagonista. La dramatización permite externalizar conflictos internos, activar emociones implícitas y reorganizar la experiencia mediante el cuerpo y la interacción. El escenario funciona como un espacio transicional donde se pueden ensayar alternativas sin las consecuencias del mundo real (Moreno, 1946).",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_psdrama_escena",
-            "nombre": "Escena",
-            "texto": "Construcción explícita de una situación significativa que se representa en el escenario. Permite activar memorias emocionales, clarificar dinámicas relacionales y trabajar el conflicto en un formato visible y compartido (Moreno, 1946).",
-            "sub": "AP_procesamiento"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-procesos-cambio-mahoney",
+      "modelLabel": "Psicoterapia constructivista de los procesos de cambio humano",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Michael J. Mahoney",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "m_mahoney_desaceleracion",
+          "nombre": "Desaceleración deliberada del proceso",
+          "texto": "Microintervención que consiste en reducir intencionadamente el ritmo de exploración o acción cuando el sistema muestra señales de saturación o desorganización. Esta desaceleración protege la coherencia identitaria, permite una integración más profunda de la experiencia y previene cambios forzados que podrían generar rigidez defensiva. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "relaciones-objeto-klein",
-      "label": "Relaciones de objeto (Klein)",
-      "year": 1932,
-      "autores": "Melanie Klein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/relaciones-objeto-klein.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_klein_interpretacion_fantasia",
-            "nombre": "Interpretación de fantasía inconsciente (a partir del aquí-ahora)",
-            "texto": "Formulación e intervención interpretativa que liga conducta, afecto y escena interna actualizada en sesión (transferencia) con fantasías inconscientes subyacentes (por ejemplo, ataques, abandono, saqueo, intrusión), explicitando cómo esas fantasías organizan percepción y respuesta; se prioriza la cercanía al material inmediato, el lenguaje concreto y el vínculo con la ansiedad activa, para que la interpretación no sea una teoría externa sino una herramienta que transforma confusión en comprensión.",
-            "sub": "AP_procesamiento"
-          },
-          {
-            "codigo": "p_klein_posicion_depresiva",
-            "nombre": "Trabajo depresivo: culpa, duelo y preocupación por el objeto",
-            "texto": "Intervención enfocada en sostener la ambivalencia y la tristeza asociadas al reconocimiento del daño (real o fantaseado) al objeto, promoviendo una culpa diferenciada (no persecutoria) que abre a reparación; el terapeuta ayuda a transitar desde defensas maníacas hacia aceptación del límite, pérdida y dependencia, facilitando duelo y reconstrucción de la relación interna con el objeto como suficientemente bueno y no exclusivamente ideal o malo.",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "analisis-bioenergetico",
+      "modelLabel": "Análisis Bioenergético",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Alexander Lowen",
+      "modelYear": 1956,
+      "items": [
+        {
+          "codigo": "m_bioenergetico_vocalizacion",
+          "nombre": "Vocalización emocional",
+          "texto": "Uso de la voz como vía de expresión emocional directa, permitiendo que sonidos y palabras emerjan desde la experiencia corporal. Favorece integración emoción-cuerpo y reducción de inhibiciones expresivas (Lowen, 1975).",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "psicologia-yo-hartmann",
-      "label": "Psicología del yo",
-      "year": 1939,
-      "autores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-yo-hartmann.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hartmann_funciones_autonomas",
-            "nombre": "Clarificación y fortalecimiento de funciones autónomas",
-            "texto": "Trabajo clínico centrado en identificar, entrenar y consolidar funciones del yo relativamente libres de conflicto —como atención, pensamiento lógico, lenguaje y planificación— para mejorar la adaptación y reducir la dependencia de defensas rígidas.",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "h14psdrama1921",
+      "modelLabel": "Psicodrama",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Jacob Levy Moreno",
+      "modelYear": 1921,
+      "items": [
+        {
+          "codigo": "p_psdrama_dramatizacion",
+          "nombre": "Dramatización psicodramática",
+          "texto": "Procedimiento central del Psicodrama que consiste en representar en acción escenas significativas de la vida del protagonista. La dramatización permite externalizar conflictos internos, activar emociones implícitas y reorganizar la experiencia mediante el cuerpo y la interacción. El escenario funciona como un espacio transicional donde se pueden ensayar alternativas sin las consecuencias del mundo real (Moreno, 1946).",
+          "sub": "AP_procesamiento"
+        },
+        {
+          "codigo": "m_psdrama_escena",
+          "nombre": "Escena",
+          "texto": "Construcción explícita de una situación significativa que se representa en el escenario. Permite activar memorias emocionales, clarificar dinámicas relacionales y trabajar el conflicto en un formato visible y compartido (Moreno, 1946).",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "psicoanalisis-lacaniano",
-      "label": "Psicoanálisis lacaniano",
-      "year": 1953,
-      "autores": "Jacques Lacan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicoanalisis-lacaniano.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_lacan_silencio_operador",
-            "nombre": "Uso del silencio como operador clínico",
-            "texto": "Procedimiento que utiliza el silencio como intervención activa destinada a impedir la saturación de sentido, sostener la falta y permitir que el deseo se articule sin ser obturado por explicaciones o respuestas tranquilizadoras; el silencio confronta al sujeto con el vacío estructural propio del lenguaje y con su responsabilidad en el decir (Lacan, 1966, *Écrits*; Dor, 1998, *Introduction to the Reading of Lacan*).",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_lacan_silencio",
-            "nombre": "Mantener un silencio operatorio",
-            "texto": "Intervención mínima que consiste en sostener el silencio cuando el discurso tiende a cerrarse en explicaciones, permitiendo que la falta opere y que el deseo encuentre otra vía de articulación (Lacan, 1966, *Écrits*).",
-            "sub": "AP_procesamiento"
-          }
-        ]
-      }
+      "modelId": "movimiento-potencial-humano-esalen",
+      "modelLabel": "Movimiento del Potencial Humano (Esalen)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Michael Murphy, Richard Price",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "p_esalen_experiencial",
+          "nombre": "Trabajo experiencial intensivo",
+          "texto": "Procedimiento central del enfoque Esalen que utiliza experiencias intensivas y prolongadas para facilitar la ampliación de la conciencia y la integración emocional. El trabajo se apoya en la vivencia directa, el cuerpo y la relación como vías de transformación profunda, más que en la interpretación verbal del malestar (Murphy & Price, 1979).",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_espacio_potencial",
-            "nombre": "Creación activa del espacio potencial (entre lo interno y lo externo)",
-            "texto": "Procedimiento que establece una zona intermedia de exploración donde el paciente no está obligado a decidir si algo es ‘real’ o ‘imaginado’, sino a experimentarlo con curiosidad; el terapeuta fomenta simbolización, metáfora, prueba segura y ambigüedad tolerable, reduciendo defensas de certeza, control o cinismo y facilitando creatividad psicológica.",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_winn_metafora_juego",
-            "nombre": "Micro-juego con metáfora (sin literalidad)",
-            "texto": "Intervención breve que invita a describir la experiencia como imagen, escena o metáfora (“si esto fuese un lugar, ¿cuál sería?”) para abrir el espacio potencial y facilitar simbolización sin exigir narrativa lineal.",
-            "sub": "AP_procesamiento"
-          }
-        ]
-      }
+      "modelId": "terapia-experiencial-1970",
+      "modelLabel": "Terapia Experiencial",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Eugene T. Gendlin; Laura N. Rice; Leslie S. Greenberg",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_exp_marcadores",
+          "nombre": "Trabajo con marcadores emocionales",
+          "texto": "Identificación de señales clínicas (bloqueos, emociones no resueltas, autoevaluaciones dolorosas) que indican la necesidad de intervenir experiencialmente para facilitar transformación emocional.",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "analisis-bioenergetico",
-      "label": "Análisis Bioenergético",
-      "year": 1956,
-      "autores": "Alexander Lowen",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/analisis-bioenergetico.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_bioenergetico_vocalizacion",
-            "nombre": "Vocalización emocional",
-            "texto": "Uso de la voz como vía de expresión emocional directa, permitiendo que sonidos y palabras emerjan desde la experiencia corporal. Favorece integración emoción-cuerpo y reducción de inhibiciones expresivas (Lowen, 1975).",
-            "sub": "AP_procesamiento"
-          }
-        ]
-      }
+      "modelId": "bion-teoria-pensar-contencion",
+      "modelLabel": "Bion – Teoría del pensar y contención",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Wilfred R. Bion",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "p_bion_continente_contenido",
+          "nombre": "Trabajo con la relación continente–contenido",
+          "texto": "Intervención que conceptualiza la relación terapéutica como un vínculo continente–contenido, donde el analista sostiene emocionalmente aquello que el paciente no puede pensar, permitiendo que la experiencia deje de ser evacuada y pueda transformarse en material simbólico compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
+          "sub": "AP_procesamiento"
+        },
+        {
+          "codigo": "p_bion_evacuacion_a_pensamiento",
+          "nombre": "Transformación de evacuación emocional en pensamiento",
+          "texto": "Intervención orientada a sustituir la descarga emocional inmediata —acting, impulsividad, somatización— por un proceso de contención que permita simbolizar la experiencia, aumentando la capacidad de reflexión y aprendizaje emocional (Bion, 1962, *Learning from Experience*).",
+          "sub": "AP_procesamiento"
+        },
+        {
+          "codigo": "m_bion_cuerpo_a_pensamiento",
+          "nombre": "Transformar sensación corporal en experiencia pensable",
+          "texto": "Intervención breve que conecta sensaciones corporales intensas con el estado emocional presente, facilitando el paso desde lo somático no simbolizado hacia una experiencia que puede empezar a pensarse y nombrarse (Bion, 1962, *Learning from Experience*).",
+          "sub": "AP_procesamiento"
+        },
+        {
+          "codigo": "m_bion_devolver_metabolizado",
+          "nombre": "Devolver experiencia emocional metabolizada",
+          "texto": "Microintervención en la que el analista devuelve en palabras simples una experiencia previamente recibida de forma caótica, mostrando cómo algo inicialmente intolerable puede transformarse en pensamiento compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "movimiento-potencial-humano-esalen",
-      "label": "Movimiento del Potencial Humano (Esalen)",
-      "year": 1962,
-      "autores": "Michael Murphy, Richard Price",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/movimiento-potencial-humano-esalen.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_esalen_experiencial",
-            "nombre": "Trabajo experiencial intensivo",
-            "texto": "Procedimiento central del enfoque Esalen que utiliza experiencias intensivas y prolongadas para facilitar la ampliación de la conciencia y la integración emocional. El trabajo se apoya en la vivencia directa, el cuerpo y la relación como vías de transformación profunda, más que en la interpretación verbal del malestar (Murphy & Price, 1979).",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "kernberg-relaciones-objetales-modernas",
+      "modelLabel": "Kernberg – Relaciones objetales modernas",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_kernberg_analisis_transferencia",
+          "nombre": "Análisis sistemático de la transferencia",
+          "texto": "Procedimiento central en el que se examinan las reacciones emocionales y conductuales del paciente hacia el terapeuta como expresión directa de díadas relacionales internas escindidas, utilizándolas como principal vía de cambio estructural (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "bion-teoria-pensar-contencion",
-      "label": "Bion – Teoría del pensar y contención",
-      "year": 1962,
-      "autores": "Wilfred R. Bion",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/bion-teoria-pensar-contencion.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bion_continente_contenido",
-            "nombre": "Trabajo con la relación continente–contenido",
-            "texto": "Intervención que conceptualiza la relación terapéutica como un vínculo continente–contenido, donde el analista sostiene emocionalmente aquello que el paciente no puede pensar, permitiendo que la experiencia deje de ser evacuada y pueda transformarse en material simbólico compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
-            "sub": "AP_procesamiento"
-          },
-          {
-            "codigo": "p_bion_evacuacion_a_pensamiento",
-            "nombre": "Transformación de evacuación emocional en pensamiento",
-            "texto": "Intervención orientada a sustituir la descarga emocional inmediata —acting, impulsividad, somatización— por un proceso de contención que permita simbolizar la experiencia, aumentando la capacidad de reflexión y aprendizaje emocional (Bion, 1962, *Learning from Experience*).",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_bion_cuerpo_a_pensamiento",
-            "nombre": "Transformar sensación corporal en experiencia pensable",
-            "texto": "Intervención breve que conecta sensaciones corporales intensas con el estado emocional presente, facilitando el paso desde lo somático no simbolizado hacia una experiencia que puede empezar a pensarse y nombrarse (Bion, 1962, *Learning from Experience*).",
-            "sub": "AP_procesamiento"
-          },
-          {
-            "codigo": "m_bion_devolver_metabolizado",
-            "nombre": "Devolver experiencia emocional metabolizada",
-            "texto": "Microintervención en la que el analista devuelve en palabras simples una experiencia previamente recibida de forma caótica, mostrando cómo algo inicialmente intolerable puede transformarse en pensamiento compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
-            "sub": "AP_procesamiento"
-          }
-        ]
-      }
+      "modelId": "psicoanalisis-lacaniano",
+      "modelLabel": "Psicoanálisis lacaniano",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Jacques Lacan",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_lacan_silencio_operador",
+          "nombre": "Uso del silencio como operador clínico",
+          "texto": "Procedimiento que utiliza el silencio como intervención activa destinada a impedir la saturación de sentido, sostener la falta y permitir que el deseo se articule sin ser obturado por explicaciones o respuestas tranquilizadoras; el silencio confronta al sujeto con el vacío estructural propio del lenguaje y con su responsabilidad en el decir (Lacan, 1966, *Écrits*; Dor, 1998, *Introduction to the Reading of Lacan*).",
+          "sub": "AP_procesamiento"
+        },
+        {
+          "codigo": "m_lacan_silencio",
+          "nombre": "Mantener un silencio operatorio",
+          "texto": "Intervención mínima que consiste en sostener el silencio cuando el discurso tiende a cerrarse en explicaciones, permitiendo que la falta opere y que el deseo encuentre otra vía de articulación (Lacan, 1966, *Écrits*).",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "teoria-apego-bowlby",
-      "label": "Teoría del apego",
-      "year": 1969,
-      "autores": "John Bowlby",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/teoria-apego-bowlby.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bowlby_separacion_perdida",
-            "nombre": "Trabajo con ansiedad de separación y pérdida",
-            "texto": "Procedimiento orientado a elaborar experiencias de separación, abandono o pérdida que han dejado huella en el sistema de apego, diferenciando reacciones normales de duelo de respuestas traumáticas persistentes, y facilitando la integración emocional de tristeza, rabia y protesta sin recurrir a estrategias extremas de apego (Bowlby, 1973, *Separation: Anxiety and Anger*; Bowlby, 1980, *Loss: Sadness and Depression*).",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_transferencia_selfobject",
+          "nombre": "Trabajo con transferencia selfobject",
+          "texto": "Procedimiento central que reconoce y sostiene transferencias selfobject en las que el terapeuta es vivido como fuente de regulación, admiración o pertenencia, evitando interpretarlas prematuramente como resistencia o regresión patológica (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "terapia-experiencial-1970",
-      "label": "Terapia Experiencial",
-      "year": 1970,
-      "autores": "Eugene T. Gendlin; Laura N. Rice; Leslie S. Greenberg",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/terapia-experiencial-1970.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_exp_marcadores",
-            "nombre": "Trabajo con marcadores emocionales",
-            "texto": "Identificación de señales clínicas (bloqueos, emociones no resueltas, autoevaluaciones dolorosas) que indican la necesidad de intervenir experiencialmente para facilitar transformación emocional.",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "p_hartmann_funciones_autonomas",
+          "nombre": "Clarificación y fortalecimiento de funciones autónomas",
+          "texto": "Trabajo clínico centrado en identificar, entrenar y consolidar funciones del yo relativamente libres de conflicto —como atención, pensamiento lógico, lenguaje y planificación— para mejorar la adaptación y reducir la dependencia de defensas rígidas.",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-psicodinamica-breve",
-      "label": "Psicoterapia psicodinámica breve",
-      "year": 1970,
-      "autores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_spb_interpretacion_focal",
-            "nombre": "Interpretación focal y selectiva",
-            "texto": "Procedimiento interpretativo que prioriza intervenciones directamente vinculadas al foco dinámico, evitando exploraciones laterales, con el fin de concentrar insight emocional y facilitar cambios estructurales dentro del tiempo limitado (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_interpretacion_focal",
+          "nombre": "Interpretación focal y selectiva",
+          "texto": "Procedimiento interpretativo que prioriza intervenciones directamente vinculadas al foco dinámico, evitando exploraciones laterales, con el fin de concentrar insight emocional y facilitar cambios estructurales dentro del tiempo limitado (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "psicologia-self-kohut",
-      "label": "Psicología del self",
-      "year": 1971,
-      "autores": "Heinz Kohut",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-self-kohut.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kohut_transferencia_selfobject",
-            "nombre": "Trabajo con transferencia selfobject",
-            "texto": "Procedimiento central que reconoce y sostiene transferencias selfobject en las que el terapeuta es vivido como fuente de regulación, admiración o pertenencia, evitando interpretarlas prematuramente como resistencia o regresión patológica (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "relaciones-objeto-klein",
+      "modelLabel": "Relaciones de objeto (Klein)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Melanie Klein",
+      "modelYear": 1932,
+      "items": [
+        {
+          "codigo": "p_klein_interpretacion_fantasia",
+          "nombre": "Interpretación de fantasía inconsciente (a partir del aquí-ahora)",
+          "texto": "Formulación e intervención interpretativa que liga conducta, afecto y escena interna actualizada en sesión (transferencia) con fantasías inconscientes subyacentes (por ejemplo, ataques, abandono, saqueo, intrusión), explicitando cómo esas fantasías organizan percepción y respuesta; se prioriza la cercanía al material inmediato, el lenguaje concreto y el vínculo con la ansiedad activa, para que la interpretación no sea una teoría externa sino una herramienta que transforma confusión en comprensión.",
+          "sub": "AP_procesamiento"
+        },
+        {
+          "codigo": "p_klein_posicion_depresiva",
+          "nombre": "Trabajo depresivo: culpa, duelo y preocupación por el objeto",
+          "texto": "Intervención enfocada en sostener la ambivalencia y la tristeza asociadas al reconocimiento del daño (real o fantaseado) al objeto, promoviendo una culpa diferenciada (no persecutoria) que abre a reparación; el terapeuta ayuda a transitar desde defensas maníacas hacia aceptación del límite, pérdida y dependencia, facilitando duelo y reconstrucción de la relación interna con el objeto como suficientemente bueno y no exclusivamente ideal o malo.",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "kernberg-relaciones-objetales-modernas",
-      "label": "Kernberg – Relaciones objetales modernas",
-      "year": 1975,
-      "autores": "Otto F. Kernberg",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/kernberg-relaciones-objetales-modernas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kernberg_analisis_transferencia",
-            "nombre": "Análisis sistemático de la transferencia",
-            "texto": "Procedimiento central en el que se examinan las reacciones emocionales y conductuales del paciente hacia el terapeuta como expresión directa de díadas relacionales internas escindidas, utilizándolas como principal vía de cambio estructural (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "AP_procesamiento"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "teoria-apego-bowlby",
+      "modelLabel": "Teoría del apego",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "John Bowlby",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_bowlby_separacion_perdida",
+          "nombre": "Trabajo con ansiedad de separación y pérdida",
+          "texto": "Procedimiento orientado a elaborar experiencias de separación, abandono o pérdida que han dejado huella en el sistema de apego, diferenciando reacciones normales de duelo de respuestas traumáticas persistentes, y facilitando la integración emocional de tristeza, rabia y protesta sin recurrir a estrategias extremas de apego (Bowlby, 1973, *Separation: Anxiety and Anger*; Bowlby, 1980, *Loss: Sadness and Depression*).",
+          "sub": "AP_procesamiento"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-procesos-cambio-mahoney",
-      "label": "Psicoterapia constructivista de los procesos de cambio humano",
-      "year": 1991,
-      "autores": "Michael J. Mahoney",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-procesos-cambio-mahoney.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_mahoney_desaceleracion",
-            "nombre": "Desaceleración deliberada del proceso",
-            "texto": "Microintervención que consiste en reducir intencionadamente el ritmo de exploración o acción cuando el sistema muestra señales de saturación o desorganización. Esta desaceleración protege la coherencia identitaria, permite una integración más profunda de la experiencia y previene cambios forzados que podrían generar rigidez defensiva. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
-            "sub": "AP_procesamiento"
-          }
-        ]
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_espacio_potencial",
+          "nombre": "Creación activa del espacio potencial (entre lo interno y lo externo)",
+          "texto": "Procedimiento que establece una zona intermedia de exploración donde el paciente no está obligado a decidir si algo es ‘real’ o ‘imaginado’, sino a experimentarlo con curiosidad; el terapeuta fomenta simbolización, metáfora, prueba segura y ambigüedad tolerable, reduciendo defensas de certeza, control o cinismo y facilitando creatividad psicológica.",
+          "sub": "AP_procesamiento"
+        },
+        {
+          "codigo": "m_winn_metafora_juego",
+          "nombre": "Micro-juego con metáfora (sin literalidad)",
+          "texto": "Intervención breve que invita a describir la experiencia como imagen, escena o metáfora (“si esto fuese un lugar, ¿cuál sería?”) para abrir el espacio potencial y facilitar simbolización sin exigir narrativa lineal.",
+          "sub": "AP_procesamiento"
+        }
+      ]
     }
   ]
 }

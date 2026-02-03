@@ -1,862 +1,751 @@
 {
   "subprocesoId": "R_mentalizacion",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 24,
   "modelos": [
     {
-      "id": "h14psdrama1921",
-      "label": "Psicodrama",
-      "year": 1921,
-      "autores": "Jacob Levy Moreno",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/h14psdrama1921.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_psdrama_espejo",
-            "nombre": "Espejo",
-            "texto": "Técnica que permite al protagonista observar su propia conducta representada por otros. Favorece la toma de perspectiva, la reflexión sobre patrones relacionales y la reorganización de la autoimagen (Moreno, 1946).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_psdrama_inversion",
-            "nombre": "Inversión de roles",
-            "texto": "Intervención clave del Psicodrama en la que el protagonista asume el rol de otra persona significativa. Permite comprender la experiencia del otro, flexibilizar posiciones rígidas y promover empatía relacional profunda (Moreno, 1953).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "entrenamiento-habilidades-sociales",
+      "modelLabel": "Entrenamiento en habilidades sociales",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Arnold P. Goldstein; Robert P. Liberman",
+      "modelYear": 1973,
+      "items": [
+        {
+          "codigo": "p_sst_escucha_validacion",
+          "nombre": "Entrenamiento en escucha activa y validación",
+          "texto": "Procedimiento específico para aumentar competencia receptiva: practicar la atención sostenida, reflejo de contenido y emoción, preguntas abiertas, y validación contextual sin ceder la propia posición; se entrenan señales paraverbales (entonación, pausas, ritmo) y microconductas de seguimiento, con el objetivo de reducir malentendidos, mejorar reciprocidad y crear interacciones más seguras, especialmente útil cuando los conflictos se mantienen por reactividad, interrupciones o interpretaciones defensivas.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_sst_role_reversal",
+          "nombre": "Role reversal (cambio de roles)",
+          "texto": "Microintervención donde el paciente adopta el rol del otro en el role-play para comprender intenciones, necesidades y percepciones ajenas, reduciendo atribuciones rígidas y mejorando ajuste comunicativo; es especialmente útil en conflictos, TLP y patrones interpersonales polarizados.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "relaciones-objeto-klein",
-      "label": "Relaciones de objeto (Klein)",
-      "year": 1932,
-      "autores": "Melanie Klein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/relaciones-objeto-klein.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_klein_transferencia_temprana",
-            "nombre": "Análisis de la transferencia temprana y negativa",
-            "texto": "Trabajo deliberado con la actualización inmediata de objetos internos en la relación terapéutica, incluyendo formas negativas (desconfianza, ataques, devaluación) entendidas como manifestaciones de ansiedad persecutoria y defensas; el terapeuta interpreta cómo el paciente “convierte” al terapeuta en un objeto idealizado o persecutorio y cómo eso protege de dependencia, culpa o pérdida, favoreciendo una lectura más mentalizada del vínculo y disminuyendo la literalidad persecutoria.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_klein_defensas_en_transferencia",
-            "nombre": "Trabajo con defensas en transferencia (objeto persecutorio / objeto idealizado / objeto necesitado)",
-            "texto": "Procedimiento que localiza las defensas en el aquí-ahora relacional: cómo el paciente convierte al terapeuta en un objeto persecutorio o idealizado y qué defensa sostiene esa construcción (proyección, identificación proyectiva, idealización/devaluación, negación, manía, retirada); el terapeuta devuelve la secuencia como hipótesis mentalizadora (“cuando sientes X aparece Y y entonces necesitas Z para no sentir…”) y repara micro-rupturas para que la transferencia deje de ser un campo de batalla y se vuelva un laboratorio de integración.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_klein_identificacion_proyectiva",
-            "nombre": "Análisis de identificación proyectiva y uso de la contratransferencia como instrumento",
-            "texto": "Exploración de cómo el paciente induce estados en el terapeuta (por presión relacional, tono, urgencia, acusación, seducción o retirada) para evacuar afectos o controlar al objeto, distinguiendo identificación proyectiva evacuativa de formas comunicativas; el terapeuta registra su experiencia contratransferencial como dato, la metaboliza y la devuelve en forma de interpretación mentalizadora, lo que convierte una descarga relacional en comprensión compartida y reduce enactments repetitivos.",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_klein_rastrear_proyeccion",
-            "nombre": "Rastrear proyección persecutoria (de dentro a fuera)",
-            "texto": "Preguntas y reflejos breves que reconstruyen cómo un afecto interno (miedo, rabia, vergüenza) se convierte en certeza sobre la intención del otro, diferenciando sensación de hecho y ofreciendo una formulación alternativa más mentalizada que reduzca reactividad.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_klein_enactment_a_relato",
-            "nombre": "Convertir enactment en relato (de actuación a significado)",
-            "texto": "Tras una interacción tensa en sesión, el terapeuta ayuda a reconstruir la secuencia minuto a minuto (qué imaginaste, qué sentiste, qué necesitabas), convirtiendo la escena en narrativa pensable y reduciendo la repetición automática.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_klein_verificacion_experiencial",
-            "nombre": "Cerrar una interpretación con verificación experiencial",
-            "texto": "Tras una interpretación, el terapeuta pide un chequeo breve (“¿te encaja ahora mismo?”, “¿qué te pasa por dentro al oírlo?”) para ajustar timing y precisión, reducir vivencia de intrusión y convertir el insight en experiencia compartida en lugar de explicación impuesta.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_klein_sensacion_vs_hecho",
-            "nombre": "Distinguir defensa de realidad (sensación vs hecho)",
-            "texto": "Microintervención que separa la vivencia interna (pánico, vergüenza, rabia) de la atribución externa cerrada (“me atacan”, “me controlan”), para debilitar proyección persecutoria sin invalidar la emoción; abre un margen de duda que reduce la necesidad de defensas rígidas y facilita una formulación más integrada del objeto.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_klein_desplazamiento_blanco_seguro",
-            "nombre": "Marcar desplazamiento (la rabia va a un blanco seguro) y devolverla al origen",
-            "texto": "Microintervención que muestra cómo una emoción intensa cambia de objetivo (del objeto temido al objeto seguro) para evitar ansiedad persecutoria o culpa; el terapeuta ayuda a reconstruir la cadena y devolver significado al vínculo original, evitando que la defensa se cronifique como conflicto lateral.",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "terapia-dialogica",
+      "modelLabel": "Terapia dialógica / Open Dialogue",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Jaakko Seikkula; Tom Andersen",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_od_escucha_polifonica",
+          "nombre": "Escucha dialógica y polifonía de voces",
+          "texto": "Procedimiento clínico que prioriza la escucha activa, lenta y receptiva de todas las voces presentes, sin jerarquizar unas sobre otras ni buscar coherencia prematura. La polifonía permite que experiencias contradictorias coexistan sin ser corregidas, facilitando la simbolización progresiva del sufrimiento. El terapeuta escucha no solo contenidos, sino tonos emocionales, silencios y resonancias relacionales (Seikkula, 2006; Olson et al., 2014).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_od_reflexion_equipo",
+          "nombre": "Reflexión en voz alta del equipo terapéutico",
+          "texto": "Procedimiento donde los profesionales comparten entre ellos, en presencia del paciente y la red, sus resonancias, dudas y pensamientos provisionales surgidos durante la sesión. Estas reflexiones no se presentan como interpretaciones expertas, sino como aportaciones tentativas al diálogo, modelando apertura, humildad epistemológica y mentalización compartida (Andersen, 1995; Seikkula, 2006).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_od_chequeo_comprension",
+          "nombre": "Chequeo de comprensión compartida",
+          "texto": "Microintervención breve que verifica si lo que se ha dicho ha sido comprendido por los distintos participantes, invitando a correcciones o matices. Este chequeo reduce malentendidos, promueve mentalización interpersonal y refuerza la sensación de ser tenido en cuenta dentro del diálogo (Olson et al., 2014).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "neopsicoanalisis",
-      "label": "Neopsicoanálisis",
-      "year": 1940,
-      "autores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/neopsicoanalisis.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neopsy_patrones_interpersonales",
-            "nombre": "Análisis de patrones interpersonales recurrentes (laboratorio relacional)",
-            "texto": "Procedimiento central que identifica secuencias repetidas de relación (disparador → expectativa → conducta → respuesta del otro → conclusión) tanto en la vida del paciente como en la sesión, para convertir lo automático en observable; el terapeuta usa el aquí-ahora como laboratorio, ayudando a detectar cómo el paciente anticipa rechazo, control o humillación y cómo sus respuestas (sumisión, ataque, retirada) recrean el resultado temido, abriendo alternativas concretas de contacto.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_neopsy_hostilidad_encubierta",
-            "nombre": "Análisis de la hostilidad encubierta y la ambivalencia",
-            "texto": "Procedimiento que hace explícitas capas de resentimiento, envidia o rabia que se expresan de forma indirecta (pasivo-agresividad, ironía, olvido, retirada) para mantener seguridad y pertenencia; se trabaja sosteniendo ambivalencia sin moralizar, conectando la hostilidad con necesidades frustradas y entrenando formas más directas y reguladas de expresión y límite.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_neopsy_distorsion_parataxica",
-            "nombre": "Clarificación de distorsiones interpersonales (Sullivan: parataxic distortion)",
-            "texto": "Intervención centrada en detectar cómo el paciente ‘lee’ al otro a través de plantillas relacionales antiguas, atribuyendo intenciones sin datos y reaccionando como si el presente fuese el pasado; el terapeuta contrasta suavemente la inferencia con evidencias, reconstruye la cadena de atribución y genera hipótesis alternativas más ajustadas para disminuir malentendidos repetitivos.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_neopsy_indagacion_detallada",
-            "nombre": "Indagación detallada del episodio interpersonal (Sullivan: detailed inquiry)",
-            "texto": "Técnica de microanálisis narrativo que reconstruye un episodio interpersonal concreto paso a paso (qué se dijo, qué se supuso, qué se sintió, qué se evitó) para localizar puntos de bifurcación donde aparece ansiedad y se activa una operación de seguridad; convierte el relato en un mapa práctico para intervenir con cambios pequeños pero de alto impacto.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_neopsy_participante_observador",
-            "nombre": "Participante-observador y meta-comunicación del proceso relacional",
-            "texto": "Procedimiento donde el terapeuta usa su participación relacional (impacto, malentendidos, tensiones) como dato clínico, meta-comunicándolo de forma responsable para aumentar conciencia interpersonal; esto permite reparar rupturas en vivo, reducir distorsiones y enseñar al paciente a observar la relación sin colapsar ni atacar.",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neopsy_evidencia_vs_atribucion",
-            "nombre": "Verificar evidencia vs atribución (distorsión paratáxica)",
-            "texto": "Intervención breve que pregunta qué datos reales sostienen una conclusión sobre el otro y qué parte es suposición, para disminuir lecturas antiguas aplicadas al presente y abrir hipótesis alternativas.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_neopsy_mapa_episodio_3",
-            "nombre": "Micro-mapa de episodio interpersonal (3 pasos)",
-            "texto": "Intervención breve que resume un episodio en tres pasos (disparador, interpretación, respuesta) para localizar el punto exacto donde se dispara ansiedad y elegir una alternativa en el próximo episodio.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_neopsy_competicion_defensiva",
-            "nombre": "Desactivar competición moral/intelectual como defensa interpersonal",
-            "texto": "Intervención breve que muestra cómo la competición sirve para evitar vulnerabilidad y dependencia, devolviendo el foco a la necesidad subyacente y a un contacto más directo.",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "terapia-metacognitiva-interpersonal-mit",
+      "modelLabel": "Terapia Metacognitiva Interpersonal (MIT)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Giancarlo Dimaggio; Antonio Semerari; Paul Lysaker",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mit_diferenciacion_realidad",
+          "nombre": "Diferenciación entre experiencia interna y realidad interpersonal",
+          "texto": "Procedimiento que ayuda al paciente a distinguir entre sus interpretaciones internas (pensamientos, emociones, creencias) y los estados mentales reales de los demás, reduciendo inferencias automáticas y lecturas rígidas de la conducta ajena. Esta diferenciación es clave para mejorar la mentalización interpersonal y disminuir conflictos relacionales basados en malentendidos sistemáticos (Dimaggio et al., 2015).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_mit_estado_mental_otro",
+          "nombre": "Clarificación del estado mental del otro",
+          "texto": "Microintervención que explora qué cree el paciente que el otro estaba pensando, sintiendo o intentando hacer en una interacción concreta, promoviendo mentalización interpersonal y reduciendo lecturas rígidas o paranoides de la conducta ajena (Dimaggio & Semerari, 2007).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_mit_aqui_ahora_relacional",
+          "nombre": "Uso del aquí-y-ahora relacional",
+          "texto": "Microintervención que utiliza lo que ocurre en la relación terapéutica en tiempo real para explorar estados mentales propios y del terapeuta, favoreciendo aprendizaje metacognitivo vivo y transferencia directa a otras relaciones (Dimaggio & Semerari, 2007).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "psicoanalisis-lacaniano",
-      "label": "Psicoanálisis lacaniano",
-      "year": 1953,
-      "autores": "Jacques Lacan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicoanalisis-lacaniano.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_lacan_transferencia_simbolica",
-            "nombre": "Análisis de la transferencia como relación con el Otro simbólico",
-            "texto": "Trabajo clínico que aborda la transferencia no como vínculo afectivo real ni como alianza terapéutica, sino como actualización de la relación del sujeto con el Otro del lenguaje, permitiendo leer demandas, idealizaciones y resistencias como efectos del discurso y no como necesidades a satisfacer; esta concepción evita la captura imaginaria y sostiene la función analítica del deseo (Lacan, 1964/1973, *Seminar XI: The Four Fundamental Concepts of Psychoanalysis*; Fink, 1997, *A Clinical Introduction to Lacanian Psychoanalysis*).",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "aedp-2000",
+      "modelLabel": "AEDP (Accelerated Experiential Dynamic Psychotherapy)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Diana Fosha",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_aedp_reflejo",
+          "nombre": "Reflejo empático intensificado",
+          "texto": "Reflejo empático profundo que devuelve no solo contenido, sino la vivencia afectiva central.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "sullivan-psicoanalisis-interpersonal",
-      "label": "Interpersonal – Sullivan",
-      "year": 1953,
-      "autores": "Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_sullivan_episodio_interpersonal",
-            "nombre": "Mapeo del episodio interpersonal concreto",
-            "texto": "Procedimiento central que reconstruye episodios interpersonales específicos paso a paso —contexto, expectativa, conducta propia, respuesta del otro, impacto emocional— para identificar cómo se organiza la ansiedad y qué patrón relacional se activa; al convertir la experiencia difusa en una secuencia observable, se facilita insight operativo y alternativas de respuesta.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_sullivan_operaciones_seguridad",
-            "nombre": "Análisis de operaciones de seguridad",
-            "texto": "Trabajo sistemático con conductas y actitudes destinadas a reducir ansiedad a corto plazo —evitación, complacencia, hostilidad indirecta, control— explicando su lógica protectora y sus consecuencias a largo plazo sobre la calidad del vínculo.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_sullivan_personificaciones",
-            "nombre": "Clarificación de personificaciones del self y del otro",
-            "texto": "Procedimiento que explora las imágenes internalizadas del self (bueno, malo, no-yo) y de los otros significativos, mostrando cómo organizan expectativas y reacciones interpersonales actuales y cómo pueden actualizarse con nueva información relacional.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_sullivan_distorsion_parataxica",
-            "nombre": "Identificación de distorsiones paratáxicas",
-            "texto": "Intervención que señala inferencias automáticas y asociaciones erróneas entre experiencias pasadas y relaciones presentes, ayudando a diferenciar percepción actual de anticipación histórica y reduciendo reactividad interpersonal.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_sullivan_participante_observador",
-            "nombre": "Uso del terapeuta como participante-observador",
-            "texto": "Procedimiento mediante el cual el terapeuta participa activamente en la relación sin perder capacidad reflexiva, utilizando su experiencia en la interacción como dato para clarificar patrones y modelar una observación compartida del proceso.",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_sullivan_diferenciar_expectativa",
-            "nombre": "Diferenciar percepción actual de expectativa pasada",
-            "texto": "Microintervención que separa lo que realmente ocurre en la relación presente de lo que se anticipa por experiencias previas, reduciendo distorsión paratáxica y permitiendo respuestas más ajustadas al aquí-ahora.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_sullivan_evitacion_a_curiosidad",
-            "nombre": "Convertir evitación en curiosidad relacional",
-            "texto": "Microintervención que transforma la evitación defensiva en exploración de lo que se teme que ocurra en el contacto, disminuyendo rigidez y ampliando posibilidades de vínculo.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_sullivan_nombrar_retirada",
-            "nombre": "Nombrar retirada o distanciamiento",
-            "texto": "Intervención que señala el alejamiento emocional o comunicativo como estrategia de protección frente a ansiedad, reduciendo culpa y facilitando un retorno gradual al contacto.",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_enganchar",
+          "nombre": "Proceso 1: Enganchar (Engaging)",
+          "texto": "Enganchar es construir una relación de trabajo segura, respetuosa y colaborativa, donde el cliente pueda hablar sin miedo a ser presionado. El terapeuta prioriza empatía, presencia y comprensión del mundo interno del cliente, porque sin este suelo MI se vuelve persuasión y aumenta reactancia. El objetivo práctico es que el cliente se sienta acompañado y libre, de modo que la ambivalencia pueda explorarse sin defensa.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_mi_oars_preguntas_abiertas",
+          "nombre": "OARS: Preguntas abiertas (Open questions)",
+          "texto": "Las preguntas abiertas abren espacio psicológico: permiten que el cliente explore significados, emociones y conflictos sin quedar encerrado en respuestas de sí/no. En MI se usan para dirigir suavemente hacia valores, discrepancias y posibilidades, sin presionar. Una buena pregunta abierta hace que el cliente piense y se escuche, y esa autoescucha es el combustible del cambio.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_mi_oars_reflejos",
+          "nombre": "OARS: Escucha reflexiva (Reflections)",
+          "texto": "La escucha reflexiva devuelve al cliente el significado y el afecto de lo que dice, a menudo de forma más clara y organizada que su expresión original. En MI es una técnica estratégica: reduce resistencia, profundiza exploración y guía hacia change talk sin confrontación. El reflejo hace que el cliente se sienta entendido y, a la vez, orienta la conversación hacia lo que importa.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_mi_reflejos_complejos",
+          "nombre": "Reflejos complejos (significado, emoción, intención)",
+          "texto": "Más allá del reflejo simple, los reflejos complejos añaden hipótesis cuidadosas sobre emoción, valor o intención, sin interpretar de forma intrusiva. Su poder está en que facilitan insight experiencial y ayudan a que el cliente encuentre lenguaje para su conflicto motivacional. Bien calibrados, generan ‘movimiento interno’ sin necesidad de confrontación.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_mi_reflejo_simple",
+          "nombre": "Reflejo simple (paráfrasis ajustada)",
+          "texto": "Devolver lo que el cliente dice con fidelidad y calidez aumenta seguridad y continuidad conversacional. Aunque parezca básico, en MI es una herramienta activa para mantener al cliente hablando desde su experiencia en lugar de entrar en debate. Es especialmente útil al inicio y cuando hay tensión.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_mi_reflejo_emocion",
+          "nombre": "Reflejo de emoción (poner nombre al afecto subyacente)",
+          "texto": "Nombrar la emoción implícita (‘suena a frustración / miedo / cansancio’) ayuda a que el cliente se entienda y baje la activación defensiva. También permite que el cambio se conecte con necesidades reales, no con argumentos abstractos. En muchos casos, este reflejo es el punto de giro hacia autenticidad.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "cibernetica-teoria-comunicacion-1956",
-      "label": "Cibernética y teoría de la comunicación (Gregory Bateson)",
-      "year": 1956,
-      "autores": "Gregory Bateson",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/cibernetica-teoria-comunicacion-1956.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_bateson_nivel_relacion",
-            "nombre": "Señalar el nivel de relación del mensaje",
-            "texto": "Microintervención para nombrar lo que el mensaje implica en la relación (crítica, demanda, retirada, superioridad, miedo). Ayuda a mentalizar el vínculo y a salir de discusiones atrapadas en contenido.",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "grupos-encuentro",
+      "modelLabel": "Grupos de Encuentro",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Carl R. Rogers",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "m_encuentro_escucha",
+          "nombre": "Escucha empática grupal",
+          "texto": "Práctica implícita del grupo orientada a escuchar al otro con comprensión empática y sin respuestas defensivas. Facilita seguridad relacional y profundización del encuentro (Rogers, 1970).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "bion-teoria-pensar-contencion",
-      "label": "Bion – Teoría del pensar y contención",
-      "year": 1962,
-      "autores": "Wilfred R. Bion",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/bion-teoria-pensar-contencion.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bion_continente_contenido",
-            "nombre": "Trabajo con la relación continente–contenido",
-            "texto": "Intervención que conceptualiza la relación terapéutica como un vínculo continente–contenido, donde el analista sostiene emocionalmente aquello que el paciente no puede pensar, permitiendo que la experiencia deje de ser evacuada y pueda transformarse en material simbólico compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_bion_identificacion_proyectiva",
-            "nombre": "Uso clínico de la identificación proyectiva",
-            "texto": "Procedimiento que aborda la identificación proyectiva no solo como defensa, sino como forma primitiva de comunicación, permitiendo al analista experimentar estados inducidos y devolverlos metabolizados para que el paciente pueda reconocerlos y pensarlos como propios (Bion, 1962, *Learning from Experience*; Ogden, 1982, *Projective Identification and Psychotherapeutic Technique*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_bion_campo_emocional",
-            "nombre": "Atención al campo emocional compartido",
-            "texto": "Procedimiento que amplía el foco desde el individuo hacia el campo emocional que se crea entre paciente y analista, observando cambios en atmósfera, afecto y ritmo como indicadores del proceso de contención y transformación en curso (Bion, 1970, *Attention and Interpretation*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_bion_grupos_basicos",
-            "nombre": "Trabajo con fenómenos grupales básicos",
-            "texto": "Procedimiento aplicado cuando aparecen dinámicas grupales básicas —dependencia, ataque-huida, emparejamiento— incluso en terapia individual, interpretándolas como estados emocionales primitivos que interfieren con el pensar y requieren contención antes de ser analizados (Bion, 1961, *Experiences in Groups*).",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_bion_senalar_evacuacion",
-            "nombre": "Señalar evacuación emocional en curso",
-            "texto": "Microintervención que identifica de forma descriptiva cuándo la experiencia está siendo expulsada mediante acting, impulsividad o confusión, ayudando a frenar la descarga y a reconducirla hacia un espacio de contención compartida (Bion, 1962, *Learning from Experience*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_bion_atmosfera_emocional",
-            "nombre": "Señalar cambio en la atmósfera emocional",
-            "texto": "Intervención breve que nombra variaciones en la atmósfera emocional de la sesión —alivio, pesadez, tensión— como indicadores del proceso de contención y transformación en curso (Bion, 1970, *Attention and Interpretation*).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "h14psdrama1921",
+      "modelLabel": "Psicodrama",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Jacob Levy Moreno",
+      "modelYear": 1921,
+      "items": [
+        {
+          "codigo": "m_psdrama_espejo",
+          "nombre": "Espejo",
+          "texto": "Técnica que permite al protagonista observar su propia conducta representada por otros. Favorece la toma de perspectiva, la reflexión sobre patrones relacionales y la reorganización de la autoimagen (Moreno, 1946).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_psdrama_inversion",
+          "nombre": "Inversión de roles",
+          "texto": "Intervención clave del Psicodrama en la que el protagonista asume el rol de otra persona significativa. Permite comprender la experiencia del otro, flexibilizar posiciones rígidas y promover empatía relacional profunda (Moreno, 1953).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "grupos-encuentro",
-      "label": "Grupos de Encuentro",
-      "year": 1967,
-      "autores": "Carl R. Rogers",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/grupos-encuentro.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_encuentro_escucha",
-            "nombre": "Escucha empática grupal",
-            "texto": "Práctica implícita del grupo orientada a escuchar al otro con comprensión empática y sin respuestas defensivas. Facilita seguridad relacional y profundización del encuentro (Rogers, 1970).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-existencial-humanista-contemporanea",
+      "modelLabel": "Psicoterapia Existencial-Humanista Contemporánea",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Kirk J. Schneider, James F. T. Bugental",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "m_exist_aislamiento_contacto",
+          "nombre": "Explorar aislamiento y contacto",
+          "texto": "Intervención breve que diferencia soledad existencial, retraimiento defensivo y necesidad legítima de vínculo, clarificando qué tipo de contacto se busca y qué se teme del otro. Aumenta precisión emocional e interpersonal (Yalom, 1980).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "balint-falla-basica-regresion-benigna",
-      "label": "Balint – Falla básica y regresión benigna",
-      "year": 1968,
-      "autores": "Michael Balint",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/balint-falla-basica-regresion-benigna.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_balint_falla_basica_deteccion",
-            "nombre": "Detección clínica de la falla básica",
-            "texto": "Procedimiento diagnóstico-clínico orientado a identificar indicadores de falla básica —sensación persistente de carencia, hipersensibilidad a la frustración, expectativas implícitas de decepción, demandas relacionales difusas o retirada protectora— diferenciándolos de conflictos neuróticos clásicos; el terapeuta observa patrones repetidos en episodios concretos y en la transferencia, formulando hipótesis parciales que se contrastan con la experiencia inmediata para reducir confusión y orientar el encuadre hacia sostén y ajuste.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_balint_expectativas_cuidado",
-            "nombre": "Clarificación de expectativas implícitas de cuidado",
-            "texto": "Procedimiento que explora supuestos no verbalizados sobre cómo el otro debería responder, mostrando cómo esas expectativas organizan quejas, pruebas o retiradas, y facilitando que se transformen en negociaciones relacionales y peticiones más directas y realistas.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_balint_somatizacion_vincular",
-            "nombre": "Trabajo con somatización como vía relacional",
-            "texto": "Procedimiento que comprende los síntomas corporales como formas de comunicación de necesidad y frustración no simbolizadas, traduciendo el síntoma a experiencia emocional y relacional sin invalidar lo médico, y reduciendo la escalada de pruebas, visitas y cronificación del malestar.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_balint_episodio_interpersonal",
-            "nombre": "Análisis del episodio interpersonal concreto",
-            "texto": "Intervención focal que reconstruye episodios específicos paso a paso —disparador, expectativa, respuesta, resultado— para localizar el punto donde se activa la falla básica, convirtiendo experiencias globales en mapas operativos que abren alternativas de respuesta.",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_balint_queja_comunicacion",
-            "nombre": "Señalar la queja como forma de comunicación",
-            "texto": "Microintervención que devuelve la queja reiterada como un intento de comunicar necesidad y frustración más que como ataque o manipulación, abriendo la posibilidad de traducirla en una petición comprensible y relacionalmente eficaz.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_balint_somatizacion_a_emocion",
-            "nombre": "Convertir somatización en lenguaje emocional",
-            "texto": "Intervención breve que conecta el síntoma corporal con el contexto relacional inmediato (“esto apareció después de…”), facilitando que el cuerpo deje de ser el único canal de expresión del malestar.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_balint_expectativa_decepcion",
-            "nombre": "Nombrar expectativa implícita de decepción",
-            "texto": "Intervención breve que hace visible la anticipación automática de falla o decepción del otro, ayudando al paciente a diferenciar experiencia pasada de relación presente.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_balint_nombrar_retirada",
-            "nombre": "Nombrar retirada protectora",
-            "texto": "Microintervención que señala la retirada o el distanciamiento como protección frente a nueva falla, reduciendo autoacusación y facilitando un retorno gradual al contacto.",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "terapia-experiencial-1970",
+      "modelLabel": "Terapia Experiencial",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Eugene T. Gendlin; Laura N. Rice; Leslie S. Greenberg",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_exp_reflejo",
+          "nombre": "Reflejo empático procesual",
+          "texto": "Reflejo empático que no solo devuelve contenido, sino que acompaña el proceso experiencial, destacando matices emergentes y facilitando profundización.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "teoria-apego-bowlby",
-      "label": "Teoría del apego",
-      "year": 1969,
-      "autores": "John Bowlby",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/teoria-apego-bowlby.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bowlby_evaluacion_sistema_apego",
-            "nombre": "Evaluación del sistema de apego y sus activadores",
-            "texto": "Procedimiento clínico orientado a identificar cómo y cuándo se activa el sistema de apego del paciente —ante amenaza, separación, rechazo o incertidumbre— observando reacciones emocionales, conductuales y cognitivas, así como estrategias habituales de búsqueda de proximidad o evitación; este análisis permite comprender el malestar actual como expresión adaptativa de un sistema motivacional primario más que como rasgo patológico (Bowlby, 1969, *Attachment*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_bowlby_modelos_internos",
-            "nombre": "Exploración de modelos internos de trabajo",
-            "texto": "Intervención dirigida a hacer explícitos los modelos internos de trabajo que organizan expectativas sobre uno mismo y los otros —disponibilidad, fiabilidad, valor personal— mostrando cómo estos esquemas relacionales guían percepción, emoción y conducta de forma automática y cómo pueden actualizarse a la luz de nuevas experiencias vinculares (Bowlby, 1969, *Attachment*; Bretherton, 1992, *The Origins of Attachment Theory*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_bowlby_apego_aqui_ahora",
-            "nombre": "Observación del apego en el aquí-ahora relacional",
-            "texto": "Intervención que analiza cómo el sistema de apego del paciente se activa dentro de la relación terapéutica —búsqueda de cercanía, pruebas, retirada, hipervigilancia— utilizando estas manifestaciones como material vivo para revisar expectativas relacionales y ofrecer experiencias correctivas en tiempo real (Bowlby, 1988, *A Secure Base*).",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_bowlby_activar_apego",
-            "nombre": "Nombrar activación del sistema de apego",
-            "texto": "Microintervención que pone palabras claras a la activación del sistema de apego en el momento presente (miedo, urgencia, hipervigilancia, retirada), ayudando al paciente a reconocer la reacción como una respuesta adaptativa ante amenaza relacional y no como un fallo personal (Bowlby, 1969, *Attachment*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_bowlby_retirada_defensiva",
-            "nombre": "Señalar retirada defensiva",
-            "texto": "Microintervención que identifica el distanciamiento emocional o la autosuficiencia rígida como estrategias de apego evitativo ante el riesgo de decepción, facilitando una comprensión más compasiva del propio cierre afectivo (Bowlby, 1973, *Separation: Anxiety and Anger*).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "psicodinamica-ciclica-wachtel",
+      "modelLabel": "Psicodinámica cíclica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Paul L. Wachtel",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "m_wachtel_lecturaMente",
+          "nombre": "Desactivar lectura de mente",
+          "texto": "Microintervención que frena inferencias rígidas sobre intenciones, pensamientos o emociones del otro y promueve preguntas de verificación directa. Al sustituir la lectura de mente por mentalización explícita, se reducen malentendidos que suelen activar el ciclo y se favorece una interacción más abierta y menos defensiva. (Wachtel, 2011)",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "terapia-experiencial-1970",
-      "label": "Terapia Experiencial",
-      "year": 1970,
-      "autores": "Eugene T. Gendlin; Laura N. Rice; Leslie S. Greenberg",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/terapia-experiencial-1970.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_exp_reflejo",
-            "nombre": "Reflejo empático procesual",
-            "texto": "Reflejo empático que no solo devuelve contenido, sino que acompaña el proceso experiencial, destacando matices emergentes y facilitando profundización.",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicoterapia-multimodal-basic-id-lazarus",
+      "modelLabel": "Psicoterapia multimodal (BASIC-ID)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Arnold A. Lazarus",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "m_lazarus_feedback_interpersonal",
+          "nombre": "Chequeo interpersonal de respuesta del entorno",
+          "texto": "Microintervención que explora cómo responde el entorno cuando el paciente cambia una conducta o forma de comunicación, ayudando a ajustar expectativas y a leer reacciones reales frente a anticipaciones catastróficas. (Lazarus, 1989)",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-psicodinamica-breve",
-      "label": "Psicoterapia psicodinámica breve",
-      "year": 1970,
-      "autores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_spb_patron_relacional",
-            "nombre": "Identificación del patrón relacional repetitivo",
-            "texto": "Procedimiento orientado a detectar la repetición de un mismo patrón relacional a través de distintas relaciones pasadas y presentes, incluyendo la relación terapéutica, mostrando cómo expectativas, emociones y respuestas del paciente tienden a organizarse de forma predecible en torno al conflicto nuclear (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_spb_ccrt",
-            "nombre": "Construcción del CCRT (Core Conflictual Relationship Theme)",
-            "texto": "Procedimiento específico del modelo de Luborsky que formula el conflicto relacional central en términos de deseos del self, respuestas esperadas de los otros y respuestas del self, permitiendo una conceptualización operativa del patrón inconsciente que guía intervenciones interpretativas consistentes (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_spb_transferencia_temprana",
-            "nombre": "Trabajo intensivo con la transferencia temprana",
-            "texto": "Procedimiento que aborda la transferencia desde las primeras sesiones, interpretando cómo el conflicto nuclear se reactiva en la relación terapéutica actual, permitiendo que el paciente observe en vivo sus expectativas, defensas y respuestas emocionales habituales (Strupp & Binder, 1984, *Psychotherapy in a New Key*).",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_spb_nombrar_foco",
-            "nombre": "Nombrar el foco dinámico en el aquí-ahora",
-            "texto": "Microintervención que recuerda explícitamente cómo lo que está ocurriendo en la sesión se relaciona con el foco dinámico acordado, ayudando al paciente a mantener orientación y a reconocer la repetición del conflicto nuclear en tiempo real (Mann, 1973, *Time-Limited Psychotherapy*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_spb_senal_repeticion",
-            "nombre": "Señalar repetición relacional sin acusar",
-            "texto": "Intervención breve que identifica la repetición de expectativas y respuestas relacionales de forma descriptiva y no confrontativa, permitiendo que el paciente observe el patrón sin activar defensas excesivas (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_spb_impacto_relacional",
-            "nombre": "Devolver impacto relacional del paciente",
-            "texto": "Microintervención que devuelve al paciente el impacto emocional que genera en el terapeuta como hipótesis clínica, permitiendo explorar cómo ese efecto se reproduce en otros vínculos significativos (Strupp & Binder, 1984, *Psychotherapy in a New Key*).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "terapia-integrativa-erskine",
+      "modelLabel": "Terapia integrativa",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard G. Erskine",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "p_erskine_necesidadesRelacionales",
+          "nombre": "Evaluación de necesidades relacionales no satisfechas",
+          "texto": "Procedimiento de evaluación clínica que identifica qué necesidades relacionales fundamentales (seguridad, validación, aceptación, iniciativa del otro, confiabilidad, protección, impacto, reciprocidad) han quedado crónicamente frustradas en la historia del paciente y cómo estas carencias organizan sus síntomas actuales y patrones de contacto. La evaluación no se limita a recabar información histórica, sino que observa cómo dichas necesidades emergen implícitamente en la relación terapéutica, permitiendo formular hipótesis vivas que guían el ritmo y el foco del trabajo relacional. (Erskine et al., 1999; Erskine, 2015)",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_erskine_nombrarNecesidad",
+          "nombre": "Nombrar la necesidad relacional emergente",
+          "texto": "Microintervención que pone palabras explícitas a una necesidad relacional que aparece implícitamente en la experiencia del paciente (p. ej., ser visto, sentirse protegido, recibir validación), ayudando a diferenciarla de la emoción o de la defensa que la encubre. Nombrar la necesidad reduce confusión interna y prepara el terreno para una respuesta relacional adecuada dentro del vínculo terapéutico. (Erskine et al., 1999)",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "psicologia-self-kohut",
-      "label": "Psicología del self",
-      "year": 1971,
-      "autores": "Heinz Kohut",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-self-kohut.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kohut_escucha_empatica",
-            "nombre": "Escucha empática como método clínico",
-            "texto": "Procedimiento fundamental que utiliza la empatía no solo como actitud ética sino como método clínico para acceder a la organización del self desde la vivencia subjetiva del paciente; el terapeuta intenta comprender la experiencia desde dentro, suspendiendo explicaciones conflictuales para captar necesidades selfobject activas (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_kohut_transferencia_selfobject",
-            "nombre": "Trabajo con transferencia selfobject",
-            "texto": "Procedimiento central que reconoce y sostiene transferencias selfobject en las que el terapeuta es vivido como fuente de regulación, admiración o pertenencia, evitando interpretarlas prematuramente como resistencia o regresión patológica (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_kohut_fallas_empaticas",
-            "nombre": "Detección y elaboración de fallas empáticas",
-            "texto": "Procedimiento que aborda las inevitables fallas empáticas del terapeuta como oportunidades terapéuticas, explicitándolas y reparándolas para favorecer la internalización de funciones de autorregulación del self (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_kohut_necesidad_selfobject",
-            "nombre": "Nombrar necesidad selfobject activa",
-            "texto": "Intervención breve que pone palabras a la necesidad relacional activa (ser visto, idealizar, sentirse semejante), ayudando al paciente a reconocerla como legítima y evolutiva en lugar de vivenciarla como dependencia patológica (Kohut, 1977, *The Restoration of the Self*).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "balint-falla-basica-regresion-benigna",
+      "modelLabel": "Balint – Falla básica y regresión benigna",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Michael Balint",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_balint_falla_basica_deteccion",
+          "nombre": "Detección clínica de la falla básica",
+          "texto": "Procedimiento diagnóstico-clínico orientado a identificar indicadores de falla básica —sensación persistente de carencia, hipersensibilidad a la frustración, expectativas implícitas de decepción, demandas relacionales difusas o retirada protectora— diferenciándolos de conflictos neuróticos clásicos; el terapeuta observa patrones repetidos en episodios concretos y en la transferencia, formulando hipótesis parciales que se contrastan con la experiencia inmediata para reducir confusión y orientar el encuadre hacia sostén y ajuste.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_balint_expectativas_cuidado",
+          "nombre": "Clarificación de expectativas implícitas de cuidado",
+          "texto": "Procedimiento que explora supuestos no verbalizados sobre cómo el otro debería responder, mostrando cómo esas expectativas organizan quejas, pruebas o retiradas, y facilitando que se transformen en negociaciones relacionales y peticiones más directas y realistas.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_balint_somatizacion_vincular",
+          "nombre": "Trabajo con somatización como vía relacional",
+          "texto": "Procedimiento que comprende los síntomas corporales como formas de comunicación de necesidad y frustración no simbolizadas, traduciendo el síntoma a experiencia emocional y relacional sin invalidar lo médico, y reduciendo la escalada de pruebas, visitas y cronificación del malestar.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_balint_episodio_interpersonal",
+          "nombre": "Análisis del episodio interpersonal concreto",
+          "texto": "Intervención focal que reconstruye episodios específicos paso a paso —disparador, expectativa, respuesta, resultado— para localizar el punto donde se activa la falla básica, convirtiendo experiencias globales en mapas operativos que abren alternativas de respuesta.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_balint_queja_comunicacion",
+          "nombre": "Señalar la queja como forma de comunicación",
+          "texto": "Microintervención que devuelve la queja reiterada como un intento de comunicar necesidad y frustración más que como ataque o manipulación, abriendo la posibilidad de traducirla en una petición comprensible y relacionalmente eficaz.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_balint_somatizacion_a_emocion",
+          "nombre": "Convertir somatización en lenguaje emocional",
+          "texto": "Intervención breve que conecta el síntoma corporal con el contexto relacional inmediato (“esto apareció después de…”), facilitando que el cuerpo deje de ser el único canal de expresión del malestar.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_balint_expectativa_decepcion",
+          "nombre": "Nombrar expectativa implícita de decepción",
+          "texto": "Intervención breve que hace visible la anticipación automática de falla o decepción del otro, ayudando al paciente a diferenciar experiencia pasada de relación presente.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_balint_nombrar_retirada",
+          "nombre": "Nombrar retirada protectora",
+          "texto": "Microintervención que señala la retirada o el distanciamiento como protección frente a nueva falla, reduciendo autoacusación y facilitando un retorno gradual al contacto.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "entrenamiento-habilidades-sociales",
-      "label": "Entrenamiento en habilidades sociales",
-      "year": 1973,
-      "autores": "Arnold P. Goldstein; Robert P. Liberman",
-      "grupo": "Conductismo",
-      "file": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_sst_escucha_validacion",
-            "nombre": "Entrenamiento en escucha activa y validación",
-            "texto": "Procedimiento específico para aumentar competencia receptiva: practicar la atención sostenida, reflejo de contenido y emoción, preguntas abiertas, y validación contextual sin ceder la propia posición; se entrenan señales paraverbales (entonación, pausas, ritmo) y microconductas de seguimiento, con el objetivo de reducir malentendidos, mejorar reciprocidad y crear interacciones más seguras, especialmente útil cuando los conflictos se mantienen por reactividad, interrupciones o interpretaciones defensivas.",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_sst_role_reversal",
-            "nombre": "Role reversal (cambio de roles)",
-            "texto": "Microintervención donde el paciente adopta el rol del otro en el role-play para comprender intenciones, necesidades y percepciones ajenas, reduciendo atribuciones rígidas y mejorando ajuste comunicativo; es especialmente útil en conflictos, TLP y patrones interpersonales polarizados.",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "bion-teoria-pensar-contencion",
+      "modelLabel": "Bion – Teoría del pensar y contención",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Wilfred R. Bion",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "p_bion_continente_contenido",
+          "nombre": "Trabajo con la relación continente–contenido",
+          "texto": "Intervención que conceptualiza la relación terapéutica como un vínculo continente–contenido, donde el analista sostiene emocionalmente aquello que el paciente no puede pensar, permitiendo que la experiencia deje de ser evacuada y pueda transformarse en material simbólico compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_bion_identificacion_proyectiva",
+          "nombre": "Uso clínico de la identificación proyectiva",
+          "texto": "Procedimiento que aborda la identificación proyectiva no solo como defensa, sino como forma primitiva de comunicación, permitiendo al analista experimentar estados inducidos y devolverlos metabolizados para que el paciente pueda reconocerlos y pensarlos como propios (Bion, 1962, *Learning from Experience*; Ogden, 1982, *Projective Identification and Psychotherapeutic Technique*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_bion_campo_emocional",
+          "nombre": "Atención al campo emocional compartido",
+          "texto": "Procedimiento que amplía el foco desde el individuo hacia el campo emocional que se crea entre paciente y analista, observando cambios en atmósfera, afecto y ritmo como indicadores del proceso de contención y transformación en curso (Bion, 1970, *Attention and Interpretation*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_bion_grupos_basicos",
+          "nombre": "Trabajo con fenómenos grupales básicos",
+          "texto": "Procedimiento aplicado cuando aparecen dinámicas grupales básicas —dependencia, ataque-huida, emparejamiento— incluso en terapia individual, interpretándolas como estados emocionales primitivos que interfieren con el pensar y requieren contención antes de ser analizados (Bion, 1961, *Experiences in Groups*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_bion_senalar_evacuacion",
+          "nombre": "Señalar evacuación emocional en curso",
+          "texto": "Microintervención que identifica de forma descriptiva cuándo la experiencia está siendo expulsada mediante acting, impulsividad o confusión, ayudando a frenar la descarga y a reconducirla hacia un espacio de contención compartida (Bion, 1962, *Learning from Experience*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_bion_atmosfera_emocional",
+          "nombre": "Señalar cambio en la atmósfera emocional",
+          "texto": "Intervención breve que nombra variaciones en la atmósfera emocional de la sesión —alivio, pesadez, tensión— como indicadores del proceso de contención y transformación en curso (Bion, 1970, *Attention and Interpretation*).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "kernberg-relaciones-objetales-modernas",
-      "label": "Kernberg – Relaciones objetales modernas",
-      "year": 1975,
-      "autores": "Otto F. Kernberg",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/kernberg-relaciones-objetales-modernas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kernberg_clarificacion",
-            "nombre": "Clarificación sistemática del material clínico",
-            "texto": "Procedimiento básico que busca describir con precisión conductas, afectos y percepciones contradictorias del paciente, reduciendo confusión y preparando el terreno para intervenciones interpretativas más profundas (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_kernberg_analisis_transferencia",
-            "nombre": "Análisis sistemático de la transferencia",
-            "texto": "Procedimiento central en el que se examinan las reacciones emocionales y conductuales del paciente hacia el terapeuta como expresión directa de díadas relacionales internas escindidas, utilizándolas como principal vía de cambio estructural (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_kernberg_defensas_primitivas",
-            "nombre": "Interpretación de defensas primitivas en vivo",
-            "texto": "Procedimiento interpretativo que aborda directamente escisión, identificación proyectiva, negación, idealización y devaluación tal como aparecen en la sesión, ayudando al paciente a reconocer su función protectora y su coste relacional (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_kernberg_agresion_transferencia",
-            "nombre": "Trabajo con agresión y odio en la transferencia",
-            "texto": "Procedimiento que legitima y analiza la expresión de agresión intensa hacia el terapeuta como componente central de las relaciones objetales escindidas, permitiendo su simbolización e integración sin acting destructivo (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_kernberg_nombrar_escision",
-            "nombre": "Nombrar escisión activa en el aquí-ahora",
-            "texto": "Microintervención que señala de forma descriptiva cuándo el paciente está percibiendo al self o al otro en términos totalmente buenos o totalmente malos, ayudándole a observar la escisión como un estado mental transitorio y no como una realidad objetiva (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_kernberg_clarificar_contradicciones",
-            "nombre": "Clarificar contradicciones afectivas",
-            "texto": "Microintervención que subraya la coexistencia de afectos opuestos —amor y odio, deseo y rechazo— ayudando al paciente a tolerar ambivalencia sin recurrir a defensas primitivas (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_kernberg_impacto_agresivo",
-            "nombre": "Devolver impacto agresivo en la relación",
-            "texto": "Intervención breve que comunica de forma clínica el impacto emocional de la agresión o descalificación del paciente en el vínculo terapéutico, utilizándolo como vía para analizar la díada relacional activa (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "kernberg-relaciones-objetales-modernas",
+      "modelLabel": "Kernberg – Relaciones objetales modernas",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_kernberg_clarificacion",
+          "nombre": "Clarificación sistemática del material clínico",
+          "texto": "Procedimiento básico que busca describir con precisión conductas, afectos y percepciones contradictorias del paciente, reduciendo confusión y preparando el terreno para intervenciones interpretativas más profundas (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_kernberg_analisis_transferencia",
+          "nombre": "Análisis sistemático de la transferencia",
+          "texto": "Procedimiento central en el que se examinan las reacciones emocionales y conductuales del paciente hacia el terapeuta como expresión directa de díadas relacionales internas escindidas, utilizándolas como principal vía de cambio estructural (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_kernberg_defensas_primitivas",
+          "nombre": "Interpretación de defensas primitivas en vivo",
+          "texto": "Procedimiento interpretativo que aborda directamente escisión, identificación proyectiva, negación, idealización y devaluación tal como aparecen en la sesión, ayudando al paciente a reconocer su función protectora y su coste relacional (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_kernberg_agresion_transferencia",
+          "nombre": "Trabajo con agresión y odio en la transferencia",
+          "texto": "Procedimiento que legitima y analiza la expresión de agresión intensa hacia el terapeuta como componente central de las relaciones objetales escindidas, permitiendo su simbolización e integración sin acting destructivo (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_kernberg_nombrar_escision",
+          "nombre": "Nombrar escisión activa en el aquí-ahora",
+          "texto": "Microintervención que señala de forma descriptiva cuándo el paciente está percibiendo al self o al otro en términos totalmente buenos o totalmente malos, ayudándole a observar la escisión como un estado mental transitorio y no como una realidad objetiva (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_kernberg_clarificar_contradicciones",
+          "nombre": "Clarificar contradicciones afectivas",
+          "texto": "Microintervención que subraya la coexistencia de afectos opuestos —amor y odio, deseo y rechazo— ayudando al paciente a tolerar ambivalencia sin recurrir a defensas primitivas (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_kernberg_impacto_agresivo",
+          "nombre": "Devolver impacto agresivo en la relación",
+          "texto": "Intervención breve que comunica de forma clínica el impacto emocional de la agresión o descalificación del paciente en el vínculo terapéutico, utilizándolo como vía para analizar la díada relacional activa (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "psicodinamica-ciclica-wachtel",
-      "label": "Psicodinámica cíclica",
-      "year": 1977,
-      "autores": "Paul L. Wachtel",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_wachtel_lecturaMente",
-            "nombre": "Desactivar lectura de mente",
-            "texto": "Microintervención que frena inferencias rígidas sobre intenciones, pensamientos o emociones del otro y promueve preguntas de verificación directa. Al sustituir la lectura de mente por mentalización explícita, se reducen malentendidos que suelen activar el ciclo y se favorece una interacción más abierta y menos defensiva. (Wachtel, 2011)",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "neopsicoanalisis",
+      "modelLabel": "Neopsicoanálisis",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_neopsy_patrones_interpersonales",
+          "nombre": "Análisis de patrones interpersonales recurrentes (laboratorio relacional)",
+          "texto": "Procedimiento central que identifica secuencias repetidas de relación (disparador → expectativa → conducta → respuesta del otro → conclusión) tanto en la vida del paciente como en la sesión, para convertir lo automático en observable; el terapeuta usa el aquí-ahora como laboratorio, ayudando a detectar cómo el paciente anticipa rechazo, control o humillación y cómo sus respuestas (sumisión, ataque, retirada) recrean el resultado temido, abriendo alternativas concretas de contacto.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_neopsy_hostilidad_encubierta",
+          "nombre": "Análisis de la hostilidad encubierta y la ambivalencia",
+          "texto": "Procedimiento que hace explícitas capas de resentimiento, envidia o rabia que se expresan de forma indirecta (pasivo-agresividad, ironía, olvido, retirada) para mantener seguridad y pertenencia; se trabaja sosteniendo ambivalencia sin moralizar, conectando la hostilidad con necesidades frustradas y entrenando formas más directas y reguladas de expresión y límite.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_neopsy_distorsion_parataxica",
+          "nombre": "Clarificación de distorsiones interpersonales (Sullivan: parataxic distortion)",
+          "texto": "Intervención centrada en detectar cómo el paciente ‘lee’ al otro a través de plantillas relacionales antiguas, atribuyendo intenciones sin datos y reaccionando como si el presente fuese el pasado; el terapeuta contrasta suavemente la inferencia con evidencias, reconstruye la cadena de atribución y genera hipótesis alternativas más ajustadas para disminuir malentendidos repetitivos.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_neopsy_indagacion_detallada",
+          "nombre": "Indagación detallada del episodio interpersonal (Sullivan: detailed inquiry)",
+          "texto": "Técnica de microanálisis narrativo que reconstruye un episodio interpersonal concreto paso a paso (qué se dijo, qué se supuso, qué se sintió, qué se evitó) para localizar puntos de bifurcación donde aparece ansiedad y se activa una operación de seguridad; convierte el relato en un mapa práctico para intervenir con cambios pequeños pero de alto impacto.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_neopsy_participante_observador",
+          "nombre": "Participante-observador y meta-comunicación del proceso relacional",
+          "texto": "Procedimiento donde el terapeuta usa su participación relacional (impacto, malentendidos, tensiones) como dato clínico, meta-comunicándolo de forma responsable para aumentar conciencia interpersonal; esto permite reparar rupturas en vivo, reducir distorsiones y enseñar al paciente a observar la relación sin colapsar ni atacar.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_neopsy_evidencia_vs_atribucion",
+          "nombre": "Verificar evidencia vs atribución (distorsión paratáxica)",
+          "texto": "Intervención breve que pregunta qué datos reales sostienen una conclusión sobre el otro y qué parte es suposición, para disminuir lecturas antiguas aplicadas al presente y abrir hipótesis alternativas.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_neopsy_mapa_episodio_3",
+          "nombre": "Micro-mapa de episodio interpersonal (3 pasos)",
+          "texto": "Intervención breve que resume un episodio en tres pasos (disparador, interpretación, respuesta) para localizar el punto exacto donde se dispara ansiedad y elegir una alternativa en el próximo episodio.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_neopsy_competicion_defensiva",
+          "nombre": "Desactivar competición moral/intelectual como defensa interpersonal",
+          "texto": "Intervención breve que muestra cómo la competición sirve para evitar vulnerabilidad y dependencia, devolviendo el foco a la necesidad subyacente y a un contacto más directo.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-multimodal-basic-id-lazarus",
-      "label": "Psicoterapia multimodal (BASIC-ID)",
-      "year": 1977,
-      "autores": "Arnold A. Lazarus",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicoterapia-multimodal-basic-id-lazarus.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_lazarus_feedback_interpersonal",
-            "nombre": "Chequeo interpersonal de respuesta del entorno",
-            "texto": "Microintervención que explora cómo responde el entorno cuando el paciente cambia una conducta o forma de comunicación, ayudando a ajustar expectativas y a leer reacciones reales frente a anticipaciones catastróficas. (Lazarus, 1989)",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "psicoanalisis-lacaniano",
+      "modelLabel": "Psicoanálisis lacaniano",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Jacques Lacan",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_lacan_transferencia_simbolica",
+          "nombre": "Análisis de la transferencia como relación con el Otro simbólico",
+          "texto": "Trabajo clínico que aborda la transferencia no como vínculo afectivo real ni como alianza terapéutica, sino como actualización de la relación del sujeto con el Otro del lenguaje, permitiendo leer demandas, idealizaciones y resistencias como efectos del discurso y no como necesidades a satisfacer; esta concepción evita la captura imaginaria y sostiene la función analítica del deseo (Lacan, 1964/1973, *Seminar XI: The Four Fundamental Concepts of Psychoanalysis*; Fink, 1997, *A Clinical Introduction to Lacanian Psychoanalysis*).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "terapia-integrativa-erskine",
-      "label": "Terapia integrativa",
-      "year": 1978,
-      "autores": "Richard G. Erskine",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/terapia-integrativa-erskine.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_erskine_necesidadesRelacionales",
-            "nombre": "Evaluación de necesidades relacionales no satisfechas",
-            "texto": "Procedimiento de evaluación clínica que identifica qué necesidades relacionales fundamentales (seguridad, validación, aceptación, iniciativa del otro, confiabilidad, protección, impacto, reciprocidad) han quedado crónicamente frustradas en la historia del paciente y cómo estas carencias organizan sus síntomas actuales y patrones de contacto. La evaluación no se limita a recabar información histórica, sino que observa cómo dichas necesidades emergen implícitamente en la relación terapéutica, permitiendo formular hipótesis vivas que guían el ritmo y el foco del trabajo relacional. (Erskine et al., 1999; Erskine, 2015)",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_erskine_nombrarNecesidad",
-            "nombre": "Nombrar la necesidad relacional emergente",
-            "texto": "Microintervención que pone palabras explícitas a una necesidad relacional que aparece implícitamente en la experiencia del paciente (p. ej., ser visto, sentirse protegido, recibir validación), ayudando a diferenciarla de la emoción o de la defensa que la encubre. Nombrar la necesidad reduce confusión interna y prepara el terreno para una respuesta relacional adecuada dentro del vínculo terapéutico. (Erskine et al., 1999)",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_escucha_empatica",
+          "nombre": "Escucha empática como método clínico",
+          "texto": "Procedimiento fundamental que utiliza la empatía no solo como actitud ética sino como método clínico para acceder a la organización del self desde la vivencia subjetiva del paciente; el terapeuta intenta comprender la experiencia desde dentro, suspendiendo explicaciones conflictuales para captar necesidades selfobject activas (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_kohut_transferencia_selfobject",
+          "nombre": "Trabajo con transferencia selfobject",
+          "texto": "Procedimiento central que reconoce y sostiene transferencias selfobject en las que el terapeuta es vivido como fuente de regulación, admiración o pertenencia, evitando interpretarlas prematuramente como resistencia o regresión patológica (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_kohut_fallas_empaticas",
+          "nombre": "Detección y elaboración de fallas empáticas",
+          "texto": "Procedimiento que aborda las inevitables fallas empáticas del terapeuta como oportunidades terapéuticas, explicitándolas y reparándolas para favorecer la internalización de funciones de autorregulación del self (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_kohut_necesidad_selfobject",
+          "nombre": "Nombrar necesidad selfobject activa",
+          "texto": "Intervención breve que pone palabras a la necesidad relacional activa (ser visto, idealizar, sentirse semejante), ayudando al paciente a reconocerla como legítima y evolutiva en lugar de vivenciarla como dependencia patológica (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_enganchar",
-            "nombre": "Proceso 1: Enganchar (Engaging)",
-            "texto": "Enganchar es construir una relación de trabajo segura, respetuosa y colaborativa, donde el cliente pueda hablar sin miedo a ser presionado. El terapeuta prioriza empatía, presencia y comprensión del mundo interno del cliente, porque sin este suelo MI se vuelve persuasión y aumenta reactancia. El objetivo práctico es que el cliente se sienta acompañado y libre, de modo que la ambivalencia pueda explorarse sin defensa.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_mi_oars_preguntas_abiertas",
-            "nombre": "OARS: Preguntas abiertas (Open questions)",
-            "texto": "Las preguntas abiertas abren espacio psicológico: permiten que el cliente explore significados, emociones y conflictos sin quedar encerrado en respuestas de sí/no. En MI se usan para dirigir suavemente hacia valores, discrepancias y posibilidades, sin presionar. Una buena pregunta abierta hace que el cliente piense y se escuche, y esa autoescucha es el combustible del cambio.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_mi_oars_reflejos",
-            "nombre": "OARS: Escucha reflexiva (Reflections)",
-            "texto": "La escucha reflexiva devuelve al cliente el significado y el afecto de lo que dice, a menudo de forma más clara y organizada que su expresión original. En MI es una técnica estratégica: reduce resistencia, profundiza exploración y guía hacia change talk sin confrontación. El reflejo hace que el cliente se sienta entendido y, a la vez, orienta la conversación hacia lo que importa.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_mi_reflejos_complejos",
-            "nombre": "Reflejos complejos (significado, emoción, intención)",
-            "texto": "Más allá del reflejo simple, los reflejos complejos añaden hipótesis cuidadosas sobre emoción, valor o intención, sin interpretar de forma intrusiva. Su poder está en que facilitan insight experiencial y ayudan a que el cliente encuentre lenguaje para su conflicto motivacional. Bien calibrados, generan ‘movimiento interno’ sin necesidad de confrontación.",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mi_reflejo_simple",
-            "nombre": "Reflejo simple (paráfrasis ajustada)",
-            "texto": "Devolver lo que el cliente dice con fidelidad y calidez aumenta seguridad y continuidad conversacional. Aunque parezca básico, en MI es una herramienta activa para mantener al cliente hablando desde su experiencia en lugar de entrar en debate. Es especialmente útil al inicio y cuando hay tensión.",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_mi_reflejo_emocion",
-            "nombre": "Reflejo de emoción (poner nombre al afecto subyacente)",
-            "texto": "Nombrar la emoción implícita (‘suena a frustración / miedo / cansancio’) ayuda a que el cliente se entienda y baje la activación defensiva. También permite que el cambio se conecte con necesidades reales, no con argumentos abstractos. En muchos casos, este reflejo es el punto de giro hacia autenticidad.",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_patron_relacional",
+          "nombre": "Identificación del patrón relacional repetitivo",
+          "texto": "Procedimiento orientado a detectar la repetición de un mismo patrón relacional a través de distintas relaciones pasadas y presentes, incluyendo la relación terapéutica, mostrando cómo expectativas, emociones y respuestas del paciente tienden a organizarse de forma predecible en torno al conflicto nuclear (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_spb_ccrt",
+          "nombre": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+          "texto": "Procedimiento específico del modelo de Luborsky que formula el conflicto relacional central en términos de deseos del self, respuestas esperadas de los otros y respuestas del self, permitiendo una conceptualización operativa del patrón inconsciente que guía intervenciones interpretativas consistentes (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_spb_transferencia_temprana",
+          "nombre": "Trabajo intensivo con la transferencia temprana",
+          "texto": "Procedimiento que aborda la transferencia desde las primeras sesiones, interpretando cómo el conflicto nuclear se reactiva en la relación terapéutica actual, permitiendo que el paciente observe en vivo sus expectativas, defensas y respuestas emocionales habituales (Strupp & Binder, 1984, *Psychotherapy in a New Key*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_spb_nombrar_foco",
+          "nombre": "Nombrar el foco dinámico en el aquí-ahora",
+          "texto": "Microintervención que recuerda explícitamente cómo lo que está ocurriendo en la sesión se relaciona con el foco dinámico acordado, ayudando al paciente a mantener orientación y a reconocer la repetición del conflicto nuclear en tiempo real (Mann, 1973, *Time-Limited Psychotherapy*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_spb_senal_repeticion",
+          "nombre": "Señalar repetición relacional sin acusar",
+          "texto": "Intervención breve que identifica la repetición de expectativas y respuestas relacionales de forma descriptiva y no confrontativa, permitiendo que el paciente observe el patrón sin activar defensas excesivas (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_spb_impacto_relacional",
+          "nombre": "Devolver impacto relacional del paciente",
+          "texto": "Microintervención que devuelve al paciente el impacto emocional que genera en el terapeuta como hipótesis clínica, permitiendo explorar cómo ese efecto se reproduce en otros vínculos significativos (Strupp & Binder, 1984, *Psychotherapy in a New Key*).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "terapia-dialogica",
-      "label": "Terapia dialógica / Open Dialogue",
-      "year": 2000,
-      "autores": "Jaakko Seikkula; Tom Andersen",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-dialogica.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_od_escucha_polifonica",
-            "nombre": "Escucha dialógica y polifonía de voces",
-            "texto": "Procedimiento clínico que prioriza la escucha activa, lenta y receptiva de todas las voces presentes, sin jerarquizar unas sobre otras ni buscar coherencia prematura. La polifonía permite que experiencias contradictorias coexistan sin ser corregidas, facilitando la simbolización progresiva del sufrimiento. El terapeuta escucha no solo contenidos, sino tonos emocionales, silencios y resonancias relacionales (Seikkula, 2006; Olson et al., 2014).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "p_od_reflexion_equipo",
-            "nombre": "Reflexión en voz alta del equipo terapéutico",
-            "texto": "Procedimiento donde los profesionales comparten entre ellos, en presencia del paciente y la red, sus resonancias, dudas y pensamientos provisionales surgidos durante la sesión. Estas reflexiones no se presentan como interpretaciones expertas, sino como aportaciones tentativas al diálogo, modelando apertura, humildad epistemológica y mentalización compartida (Andersen, 1995; Seikkula, 2006).",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_od_chequeo_comprension",
-            "nombre": "Chequeo de comprensión compartida",
-            "texto": "Microintervención breve que verifica si lo que se ha dicho ha sido comprendido por los distintos participantes, invitando a correcciones o matices. Este chequeo reduce malentendidos, promueve mentalización interpersonal y refuerza la sensación de ser tenido en cuenta dentro del diálogo (Olson et al., 2014).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "relaciones-objeto-klein",
+      "modelLabel": "Relaciones de objeto (Klein)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Melanie Klein",
+      "modelYear": 1932,
+      "items": [
+        {
+          "codigo": "p_klein_transferencia_temprana",
+          "nombre": "Análisis de la transferencia temprana y negativa",
+          "texto": "Trabajo deliberado con la actualización inmediata de objetos internos en la relación terapéutica, incluyendo formas negativas (desconfianza, ataques, devaluación) entendidas como manifestaciones de ansiedad persecutoria y defensas; el terapeuta interpreta cómo el paciente “convierte” al terapeuta en un objeto idealizado o persecutorio y cómo eso protege de dependencia, culpa o pérdida, favoreciendo una lectura más mentalizada del vínculo y disminuyendo la literalidad persecutoria.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_klein_defensas_en_transferencia",
+          "nombre": "Trabajo con defensas en transferencia (objeto persecutorio / objeto idealizado / objeto necesitado)",
+          "texto": "Procedimiento que localiza las defensas en el aquí-ahora relacional: cómo el paciente convierte al terapeuta en un objeto persecutorio o idealizado y qué defensa sostiene esa construcción (proyección, identificación proyectiva, idealización/devaluación, negación, manía, retirada); el terapeuta devuelve la secuencia como hipótesis mentalizadora (“cuando sientes X aparece Y y entonces necesitas Z para no sentir…”) y repara micro-rupturas para que la transferencia deje de ser un campo de batalla y se vuelva un laboratorio de integración.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_klein_identificacion_proyectiva",
+          "nombre": "Análisis de identificación proyectiva y uso de la contratransferencia como instrumento",
+          "texto": "Exploración de cómo el paciente induce estados en el terapeuta (por presión relacional, tono, urgencia, acusación, seducción o retirada) para evacuar afectos o controlar al objeto, distinguiendo identificación proyectiva evacuativa de formas comunicativas; el terapeuta registra su experiencia contratransferencial como dato, la metaboliza y la devuelve en forma de interpretación mentalizadora, lo que convierte una descarga relacional en comprensión compartida y reduce enactments repetitivos.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_klein_rastrear_proyeccion",
+          "nombre": "Rastrear proyección persecutoria (de dentro a fuera)",
+          "texto": "Preguntas y reflejos breves que reconstruyen cómo un afecto interno (miedo, rabia, vergüenza) se convierte en certeza sobre la intención del otro, diferenciando sensación de hecho y ofreciendo una formulación alternativa más mentalizada que reduzca reactividad.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_klein_enactment_a_relato",
+          "nombre": "Convertir enactment en relato (de actuación a significado)",
+          "texto": "Tras una interacción tensa en sesión, el terapeuta ayuda a reconstruir la secuencia minuto a minuto (qué imaginaste, qué sentiste, qué necesitabas), convirtiendo la escena en narrativa pensable y reduciendo la repetición automática.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_klein_verificacion_experiencial",
+          "nombre": "Cerrar una interpretación con verificación experiencial",
+          "texto": "Tras una interpretación, el terapeuta pide un chequeo breve (“¿te encaja ahora mismo?”, “¿qué te pasa por dentro al oírlo?”) para ajustar timing y precisión, reducir vivencia de intrusión y convertir el insight en experiencia compartida en lugar de explicación impuesta.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_klein_sensacion_vs_hecho",
+          "nombre": "Distinguir defensa de realidad (sensación vs hecho)",
+          "texto": "Microintervención que separa la vivencia interna (pánico, vergüenza, rabia) de la atribución externa cerrada (“me atacan”, “me controlan”), para debilitar proyección persecutoria sin invalidar la emoción; abre un margen de duda que reduce la necesidad de defensas rígidas y facilita una formulación más integrada del objeto.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_klein_desplazamiento_blanco_seguro",
+          "nombre": "Marcar desplazamiento (la rabia va a un blanco seguro) y devolverla al origen",
+          "texto": "Microintervención que muestra cómo una emoción intensa cambia de objetivo (del objeto temido al objeto seguro) para evitar ansiedad persecutoria o culpa; el terapeuta ayuda a reconstruir la cadena y devolver significado al vínculo original, evitando que la defensa se cronifique como conflicto lateral.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "aedp-2000",
-      "label": "AEDP (Accelerated Experiential Dynamic Psychotherapy)",
-      "year": 2000,
-      "autores": "Diana Fosha",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/aedp-2000.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_aedp_reflejo",
-            "nombre": "Reflejo empático intensificado",
-            "texto": "Reflejo empático profundo que devuelve no solo contenido, sino la vivencia afectiva central.",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "sullivan-psicoanalisis-interpersonal",
+      "modelLabel": "Interpersonal – Sullivan",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Harry Stack Sullivan",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_sullivan_episodio_interpersonal",
+          "nombre": "Mapeo del episodio interpersonal concreto",
+          "texto": "Procedimiento central que reconstruye episodios interpersonales específicos paso a paso —contexto, expectativa, conducta propia, respuesta del otro, impacto emocional— para identificar cómo se organiza la ansiedad y qué patrón relacional se activa; al convertir la experiencia difusa en una secuencia observable, se facilita insight operativo y alternativas de respuesta.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_sullivan_operaciones_seguridad",
+          "nombre": "Análisis de operaciones de seguridad",
+          "texto": "Trabajo sistemático con conductas y actitudes destinadas a reducir ansiedad a corto plazo —evitación, complacencia, hostilidad indirecta, control— explicando su lógica protectora y sus consecuencias a largo plazo sobre la calidad del vínculo.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_sullivan_personificaciones",
+          "nombre": "Clarificación de personificaciones del self y del otro",
+          "texto": "Procedimiento que explora las imágenes internalizadas del self (bueno, malo, no-yo) y de los otros significativos, mostrando cómo organizan expectativas y reacciones interpersonales actuales y cómo pueden actualizarse con nueva información relacional.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_sullivan_distorsion_parataxica",
+          "nombre": "Identificación de distorsiones paratáxicas",
+          "texto": "Intervención que señala inferencias automáticas y asociaciones erróneas entre experiencias pasadas y relaciones presentes, ayudando a diferenciar percepción actual de anticipación histórica y reduciendo reactividad interpersonal.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_sullivan_participante_observador",
+          "nombre": "Uso del terapeuta como participante-observador",
+          "texto": "Procedimiento mediante el cual el terapeuta participa activamente en la relación sin perder capacidad reflexiva, utilizando su experiencia en la interacción como dato para clarificar patrones y modelar una observación compartida del proceso.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_sullivan_diferenciar_expectativa",
+          "nombre": "Diferenciar percepción actual de expectativa pasada",
+          "texto": "Microintervención que separa lo que realmente ocurre en la relación presente de lo que se anticipa por experiencias previas, reduciendo distorsión paratáxica y permitiendo respuestas más ajustadas al aquí-ahora.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_sullivan_evitacion_a_curiosidad",
+          "nombre": "Convertir evitación en curiosidad relacional",
+          "texto": "Microintervención que transforma la evitación defensiva en exploración de lo que se teme que ocurra en el contacto, disminuyendo rigidez y ampliando posibilidades de vínculo.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_sullivan_nombrar_retirada",
+          "nombre": "Nombrar retirada o distanciamiento",
+          "texto": "Intervención que señala el alejamiento emocional o comunicativo como estrategia de protección frente a ansiedad, reduciendo culpa y facilitando un retorno gradual al contacto.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "s20linares",
-      "label": "Psicoterapia relacional sistémica (Linares)",
-      "year": 2000,
-      "autores": "Juan Luis Linares",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/s20linares.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_linares_circularidad",
-            "nombre": "Preguntas circulares y de perspectiva",
-            "texto": "Uso sistemático de preguntas que desplazan de causalidad lineal a circularidad: cómo reacciona cada uno, qué anticipa del otro, qué señales se leen, qué intención se atribuye. Introduce perspectiva y mentalización, reduce certezas defensivas y permite ver la danza relacional desde fuera.",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_linares_perspectiva",
-            "nombre": "Invitar a la perspectiva del otro",
-            "texto": "Pregunta breve que promueve mentalización: qué crees que el otro siente/teme/espera en ese momento. Facilita comunicación menos defensiva.",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "teoria-apego-bowlby",
+      "modelLabel": "Teoría del apego",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "John Bowlby",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_bowlby_evaluacion_sistema_apego",
+          "nombre": "Evaluación del sistema de apego y sus activadores",
+          "texto": "Procedimiento clínico orientado a identificar cómo y cuándo se activa el sistema de apego del paciente —ante amenaza, separación, rechazo o incertidumbre— observando reacciones emocionales, conductuales y cognitivas, así como estrategias habituales de búsqueda de proximidad o evitación; este análisis permite comprender el malestar actual como expresión adaptativa de un sistema motivacional primario más que como rasgo patológico (Bowlby, 1969, *Attachment*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_bowlby_modelos_internos",
+          "nombre": "Exploración de modelos internos de trabajo",
+          "texto": "Intervención dirigida a hacer explícitos los modelos internos de trabajo que organizan expectativas sobre uno mismo y los otros —disponibilidad, fiabilidad, valor personal— mostrando cómo estos esquemas relacionales guían percepción, emoción y conducta de forma automática y cómo pueden actualizarse a la luz de nuevas experiencias vinculares (Bowlby, 1969, *Attachment*; Bretherton, 1992, *The Origins of Attachment Theory*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "p_bowlby_apego_aqui_ahora",
+          "nombre": "Observación del apego en el aquí-ahora relacional",
+          "texto": "Intervención que analiza cómo el sistema de apego del paciente se activa dentro de la relación terapéutica —búsqueda de cercanía, pruebas, retirada, hipervigilancia— utilizando estas manifestaciones como material vivo para revisar expectativas relacionales y ofrecer experiencias correctivas en tiempo real (Bowlby, 1988, *A Secure Base*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_bowlby_activar_apego",
+          "nombre": "Nombrar activación del sistema de apego",
+          "texto": "Microintervención que pone palabras claras a la activación del sistema de apego en el momento presente (miedo, urgencia, hipervigilancia, retirada), ayudando al paciente a reconocer la reacción como una respuesta adaptativa ante amenaza relacional y no como un fallo personal (Bowlby, 1969, *Attachment*).",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_bowlby_retirada_defensiva",
+          "nombre": "Señalar retirada defensiva",
+          "texto": "Microintervención que identifica el distanciamiento emocional o la autosuficiencia rígida como estrategias de apego evitativo ante el riesgo de decepción, facilitando una comprensión más compasiva del propio cierre afectivo (Bowlby, 1973, *Separation: Anxiety and Anger*).",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "terapia-metacognitiva-interpersonal-mit",
-      "label": "Terapia Metacognitiva Interpersonal (MIT)",
-      "year": 2002,
-      "autores": "Giancarlo Dimaggio; Antonio Semerari; Paul Lysaker",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/terapia-metacognitiva-interpersonal-mit.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mit_diferenciacion_realidad",
-            "nombre": "Diferenciación entre experiencia interna y realidad interpersonal",
-            "texto": "Procedimiento que ayuda al paciente a distinguir entre sus interpretaciones internas (pensamientos, emociones, creencias) y los estados mentales reales de los demás, reduciendo inferencias automáticas y lecturas rígidas de la conducta ajena. Esta diferenciación es clave para mejorar la mentalización interpersonal y disminuir conflictos relacionales basados en malentendidos sistemáticos (Dimaggio et al., 2015).",
-            "sub": "R_mentalizacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_mit_estado_mental_otro",
-            "nombre": "Clarificación del estado mental del otro",
-            "texto": "Microintervención que explora qué cree el paciente que el otro estaba pensando, sintiendo o intentando hacer en una interacción concreta, promoviendo mentalización interpersonal y reduciendo lecturas rígidas o paranoides de la conducta ajena (Dimaggio & Semerari, 2007).",
-            "sub": "R_mentalizacion"
-          },
-          {
-            "codigo": "m_mit_aqui_ahora_relacional",
-            "nombre": "Uso del aquí-y-ahora relacional",
-            "texto": "Microintervención que utiliza lo que ocurre en la relación terapéutica en tiempo real para explorar estados mentales propios y del terapeuta, favoreciendo aprendizaje metacognitivo vivo y transferencia directa a otras relaciones (Dimaggio & Semerari, 2007).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "cibernetica-teoria-comunicacion-1956",
+      "modelLabel": "Cibernética y teoría de la comunicación (Gregory Bateson)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Gregory Bateson",
+      "modelYear": 1956,
+      "items": [
+        {
+          "codigo": "m_bateson_nivel_relacion",
+          "nombre": "Señalar el nivel de relación del mensaje",
+          "texto": "Microintervención para nombrar lo que el mensaje implica en la relación (crítica, demanda, retirada, superioridad, miedo). Ayuda a mentalizar el vínculo y a salir de discusiones atrapadas en contenido.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-existencial-humanista-contemporanea",
-      "label": "Psicoterapia Existencial-Humanista Contemporánea",
-      "year": 2005,
-      "autores": "Kirk J. Schneider, James F. T. Bugental",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/psicoterapia-existencial-humanista-contemporanea.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_exist_aislamiento_contacto",
-            "nombre": "Explorar aislamiento y contacto",
-            "texto": "Intervención breve que diferencia soledad existencial, retraimiento defensivo y necesidad legítima de vínculo, clarificando qué tipo de contacto se busca y qué se teme del otro. Aumenta precisión emocional e interpersonal (Yalom, 1980).",
-            "sub": "R_mentalizacion"
-          }
-        ]
-      }
+      "modelId": "s20linares",
+      "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Juan Luis Linares",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_linares_circularidad",
+          "nombre": "Preguntas circulares y de perspectiva",
+          "texto": "Uso sistemático de preguntas que desplazan de causalidad lineal a circularidad: cómo reacciona cada uno, qué anticipa del otro, qué señales se leen, qué intención se atribuye. Introduce perspectiva y mentalización, reduce certezas defensivas y permite ver la danza relacional desde fuera.",
+          "sub": "R_mentalizacion"
+        },
+        {
+          "codigo": "m_linares_perspectiva",
+          "nombre": "Invitar a la perspectiva del otro",
+          "texto": "Pregunta breve que promueve mentalización: qué crees que el otro siente/teme/espera en ese momento. Facilita comunicación menos defensiva.",
+          "sub": "R_mentalizacion"
+        }
+      ]
     }
   ]
 }

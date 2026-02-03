@@ -1,45 +1,37 @@
 {
   "subprocesoId": "I_integracionSelf",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 2,
   "modelos": [
     {
-      "id": "relaciones-objeto-fairbairn",
-      "label": "Relaciones de objeto (Fairbairn)",
-      "year": 1952,
-      "autores": "Ronald Fairbairn",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/relaciones-objeto-fairbairn.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_fairbairn_integracion",
-            "nombre": "Facilitación de la integración del yo",
-            "texto": "Este procedimiento promueve la elaboración emocional de las escisiones internas para fortalecer el yo central, reduciendo la dominancia de objetos internos patológicos.",
-            "sub": "I_integracionSelf"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-integrativa-erskine",
+      "modelLabel": "Terapia integrativa",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard G. Erskine",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "p_erskine_integracionSelf",
+          "nombre": "Integración de estados del self escindidos",
+          "texto": "Procedimiento orientado a integrar estados del self fragmentados o disociados que se desarrollaron en respuesta a necesidades relacionales no satisfechas. A través del contacto emocional sostenido y la elaboración narrativa progresiva, el paciente puede reconocer, aceptar e integrar partes previamente excluidas de su experiencia, ampliando coherencia identitaria y continuidad del self. (Erskine, 2015)",
+          "sub": "I_integracionSelf"
+        }
+      ]
     },
     {
-      "id": "terapia-integrativa-erskine",
-      "label": "Terapia integrativa",
-      "year": 1978,
-      "autores": "Richard G. Erskine",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/terapia-integrativa-erskine.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_erskine_integracionSelf",
-            "nombre": "Integración de estados del self escindidos",
-            "texto": "Procedimiento orientado a integrar estados del self fragmentados o disociados que se desarrollaron en respuesta a necesidades relacionales no satisfechas. A través del contacto emocional sostenido y la elaboración narrativa progresiva, el paciente puede reconocer, aceptar e integrar partes previamente excluidas de su experiencia, ampliando coherencia identitaria y continuidad del self. (Erskine, 2015)",
-            "sub": "I_integracionSelf"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "relaciones-objeto-fairbairn",
+      "modelLabel": "Relaciones de objeto (Fairbairn)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Ronald Fairbairn",
+      "modelYear": 1952,
+      "items": [
+        {
+          "codigo": "p_fairbairn_integracion",
+          "nombre": "Facilitación de la integración del yo",
+          "texto": "Este procedimiento promueve la elaboración emocional de las escisiones internas para fortalecer el yo central, reduciendo la dominancia de objetos internos patológicos.",
+          "sub": "I_integracionSelf"
+        }
+      ]
     }
   ]
 }

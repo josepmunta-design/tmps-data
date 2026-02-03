@@ -1,402 +1,337 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 14,
   "modelos": [
     {
-      "id": "p1freud",
-      "label": "Psicoanálisis clásico",
-      "year": 1896,
-      "autores": "Sigmund Freud",
-      "grupo": "psicoanalisis",
-      "file": "data/Core/modelos/psicoanalisis/p1freud.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_freud_resistencias",
-            "nombre": "Análisis de resistencias",
-            "texto": "Se identifican momentos en que el proceso se bloquea y se explora qué afecto o significado se vuelve intolerable y qué función cumple la resistencia.",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_freud_senalResistencia",
-            "nombre": "Señalar un punto de resistencia",
-            "texto": "Marcar con tacto cambios de tema, silencios o racionalizaciones para abrir curiosidad clínica.",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "self-dialogico-hermans",
+      "modelLabel": "Teoría del self dialógico",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Hubert J. M. Hermans",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_hermans_prevencionRecaidas",
+          "nombre": "Prevención de recaídas dialógicas (plan ante monopolios de voz)",
+          "texto": "Procedimiento de cierre que anticipa situaciones donde reaparecen monopolios de voz y establece respuestas pactadas para mantener el repertorio ampliado bajo estrés. (Hermans, 1996).",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_hermans_senalarMonopolio",
+          "nombre": "Señalar monopolio de una voz",
+          "texto": "Microintervención directa que hace visible cuándo una voz está colonizando toda la experiencia subjetiva. Previene rumiación, fomenta equilibrio interno y abre espacio para introducir otras posiciones en el diálogo interno. (Hermans, 1996).",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "relaciones-objeto-klein",
-      "label": "Relaciones de objeto (Klein)",
-      "year": 1932,
-      "autores": "Melanie Klein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/relaciones-objeto-klein.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_klein_defensas_primitivas",
-            "nombre": "Trabajo con defensas primitivas en vivo (escisión, proyección, negación)",
-            "texto": "Identificación y clarificación inmediata de defensas activas que fragmentan la experiencia (escisión), expulsan afectos intolerables (proyección) o borran daño/dependencia (negación y defensas maníacas), mostrando su función protectora y su coste relacional; el terapeuta describe el movimiento defensivo tal como ocurre (sin acusar), lo enlaza con la ansiedad que intenta evitar y abre alternativas de sostén interno para que el paciente pueda re-integrar lo expulsado con menos vergüenza y menos ataque.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "p_klein_defensas_en_transferencia",
-            "nombre": "Trabajo con defensas en transferencia (objeto persecutorio / objeto idealizado / objeto necesitado)",
-            "texto": "Procedimiento que localiza las defensas en el aquí-ahora relacional: cómo el paciente convierte al terapeuta en un objeto persecutorio o idealizado y qué defensa sostiene esa construcción (proyección, identificación proyectiva, idealización/devaluación, negación, manía, retirada); el terapeuta devuelve la secuencia como hipótesis mentalizadora (“cuando sientes X aparece Y y entonces necesitas Z para no sentir…”) y repara micro-rupturas para que la transferencia deje de ser un campo de batalla y se vuelva un laboratorio de integración.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "p_klein_defensas_maniacas",
-            "nombre": "Interpretación de defensas maníacas (triunfo, desprecio, negación de dependencia)",
-            "texto": "Identificación de movimientos de superioridad, prisa, desdén o hiper-eficacia que sirven para evitar tristeza, culpa o dependencia; el terapeuta formula la función protectora de la manía (no sentir necesidad) y su coste (aislamiento, daño relacional), abriendo espacio para reconocer necesidades reales y sostener afectos depresivos sin colapsar.",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_klein_defensa_maniaca_prisa",
-            "nombre": "Detectar defensa maníaca en forma de prisa/triunfo",
-            "texto": "Señalamiento breve de la aceleración, la superioridad o el desprecio como forma de no tocar tristeza o dependencia, invitando a una pausa y a reconocer la necesidad subyacente sin humillar ni moralizar.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "m_klein_senal_negacion_minimizacion",
-            "nombre": "Señalar negación y minimización del daño (sin moralizar)",
-            "texto": "Intervención breve que devuelve el gesto de negar, minimizar o pasar página (“esto no fue para tanto”, “da igual”) como una protección frente a culpa, tristeza o dependencia, manteniendo un tono no acusatorio para que el paciente pueda aproximarse al afecto depresivo sin sentirse juzgado.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "m_klein_control_omnipotente",
-            "nombre": "Microseñalar control omnipotente (necesidad de tenerlo todo atado)",
-            "texto": "Intervención breve que devuelve el impulso a controlar al otro, al terapeuta o el encuadre como defensa ante amenaza interna y dependencia, haciendo visible el coste (tensión, aislamiento, conflicto) y proponiendo una pausa para reconocer la necesidad primaria que se intenta evitar sentir.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "m_klein_retirada_autismo_defensivo",
-            "nombre": "Nombrar retirada/autismo defensivo (apagarse para no necesitar)",
-            "texto": "Señalamiento breve de la desconexión (silencio, frialdad, ausencia, “me da igual”) como defensa ante dependencia, culpa o miedo a la intrusión, devolviendo su función protectora y su coste vincular; se invita a un retorno mínimo al contacto sin presionar, para que la sesión no se convierta en retirada crónica.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "m_klein_anulacion_undoing",
-            "nombre": "Señalar anulación (undoing) y reparaciones impulsivas",
-            "texto": "Intervención breve cuando el paciente intenta borrar el daño con actos rápidos (regalos, promesas grandiosas, explicaciones interminables), identificándolo como anulación defensiva que evita culpa depresiva; se orienta a un paso reparativo realista y a sostener el afecto difícil sin necesidad de borrarlo.",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-multimodal-basic-id-lazarus",
+      "modelLabel": "Psicoterapia multimodal (BASIC-ID)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Arnold A. Lazarus",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_lazarus_afecto_regulacion",
+          "nombre": "Intervención en Afecto (A) mediante clarificación y regulación emocional",
+          "texto": "Procedimiento que trabaja identificación, validación y modulación de emociones, detectando evitaciones afectivas y enseñando estrategias para sostener activación sin desbordarse (p. ej., rotulación precisa, tolerancia al malestar, exposición emocional breve cuando procede). No se trata de “hablar de emociones” como fin en sí mismo, sino de intervenir cuando el afecto es un mantenedor principal del problema o un bloqueador del cambio en otras modalidades. (Lazarus, 1989)",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "neopsicoanalisis",
-      "label": "Neopsicoanálisis",
-      "year": 1940,
-      "autores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/neopsicoanalisis.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neopsy_horney_tres_movimientos",
-            "nombre": "Mapa de movimientos de seguridad: hacia, contra o lejos (Horney)",
-            "texto": "Procedimiento de formulación que clasifica las estrategias del paciente en tres estilos predominantes: moverse hacia los otros (complacer, fusionarse), contra los otros (dominar, competir) o lejos de los otros (retirarse, autosuficiencia defensiva), analizando qué amenaza intenta evitar cada estilo y qué coste interpersonal genera; el objetivo clínico es ampliar repertorio y flexibilizar el movimiento según contexto.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "p_neopsy_operaciones_seguridad",
-            "nombre": "Operaciones de seguridad (Sullivan) y ansiedad interpersonal",
-            "texto": "Procedimiento para identificar maniobras que reducen ansiedad a corto plazo pero empobrecen vínculo (evitación, chistes defensivos, intelectualización, sumisión, control), describiendo su función protectora y su coste; se diseñan sustitutos graduales (pausas, petición directa, límites) para mantener seguridad sin sacrificar autenticidad.",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neopsy_pausa_seguridad",
-            "nombre": "Pausa de 10 segundos antes de la operación de seguridad",
-            "texto": "Microintervención de interrupción del piloto automático (retirada, ataque, complacencia) introduciendo una pausa breve para notar ansiedad y elegir una alternativa mínima, manteniendo seguridad sin repetir el patrón completo.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "m_neopsy_selectiva_inatencion",
-            "nombre": "Señalar selectiva inatención (lo que no se permite notar)",
-            "texto": "Intervención breve que hace visible cómo el paciente deja fuera información emocional o interpersonal para mantener seguridad (por ejemplo, no notar tristeza o no registrar señales de aceptación), ampliando la percepción sin desbordar.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "m_neopsy_retirada_retorno_minimo",
-            "nombre": "Nombrar retirada defensiva y proponer retorno mínimo al contacto",
-            "texto": "Microintervención que identifica la retirada como operación de seguridad y propone un retorno mínimo (una frase, una emoción, una pregunta) para no perder vínculo ni autonomía.",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "balint-falla-basica-regresion-benigna",
+      "modelLabel": "Balint – Falla básica y regresión benigna",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Michael Balint",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "m_balint_nombrar_retirada",
+          "nombre": "Nombrar retirada protectora",
+          "texto": "Microintervención que señala la retirada o el distanciamiento como protección frente a nueva falla, reduciendo autoacusación y facilitando un retorno gradual al contacto.",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "psicoanalisis-lacaniano",
-      "label": "Psicoanálisis lacaniano",
-      "year": 1953,
-      "autores": "Jacques Lacan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicoanalisis-lacaniano.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_lacan_imaginario",
-            "nombre": "Señalar una captura imaginaria",
-            "texto": "Microintervención que nombra una identificación narcisista, rivalidad o comparación que rigidifica el discurso, permitiendo diferenciar imagen de estructura simbólica y reducir la fijación imaginaria (Lacan, 1949/1966, *The Mirror Stage as Formative of the I*).",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "bion-teoria-pensar-contencion",
+      "modelLabel": "Bion – Teoría del pensar y contención",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Wilfred R. Bion",
+      "modelYear": 1962,
+      "items": [
+        {
+          "codigo": "m_bion_senalar_evacuacion",
+          "nombre": "Señalar evacuación emocional en curso",
+          "texto": "Microintervención que identifica de forma descriptiva cuándo la experiencia está siendo expulsada mediante acting, impulsividad o confusión, ayudando a frenar la descarga y a reconducirla hacia un espacio de contención compartida (Bion, 1962, *Learning from Experience*).",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "sullivan-psicoanalisis-interpersonal",
-      "label": "Interpersonal – Sullivan",
-      "year": 1953,
-      "autores": "Harry Stack Sullivan",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_sullivan_operaciones_seguridad",
-            "nombre": "Análisis de operaciones de seguridad",
-            "texto": "Trabajo sistemático con conductas y actitudes destinadas a reducir ansiedad a corto plazo —evitación, complacencia, hostilidad indirecta, control— explicando su lógica protectora y sus consecuencias a largo plazo sobre la calidad del vínculo.",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_sullivan_operacion_seguridad",
-            "nombre": "Señalar una operación de seguridad activa",
-            "texto": "Intervención breve que identifica una conducta protectora en curso —complacencia, evitación, ironía, control— explicando su función ansiolítica sin juzgarla, lo que facilita que el paciente considere alternativas menos costosas relacionalmente.",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "m_sullivan_nombrar_retirada",
-            "nombre": "Nombrar retirada o distanciamiento",
-            "texto": "Intervención que señala el alejamiento emocional o comunicativo como estrategia de protección frente a ansiedad, reduciendo culpa y facilitando un retorno gradual al contacto.",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "kernberg-relaciones-objetales-modernas",
+      "modelLabel": "Kernberg – Relaciones objetales modernas",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_kernberg_confrontacion",
+          "nombre": "Confrontación de contradicciones y defensas primitivas",
+          "texto": "Procedimiento que señala de manera directa pero contenida las contradicciones entre relatos, afectos y conductas, así como el uso activo de defensas primitivas como la escisión, idealización y devaluación, facilitando conciencia sin desorganizar al paciente (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "p_kernberg_acting_out",
+          "nombre": "Manejo activo del acting out",
+          "texto": "Procedimiento que aborda conductas impulsivas o autodestructivas fuera de sesión mediante límites claros y análisis de su significado transferencial, evitando tanto la permisividad como el castigo moralizante (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_kernberg_contener_impulso",
+          "nombre": "Contener impulso antes de actuar",
+          "texto": "Intervención breve que introduce una pausa entre afecto intenso e impulso conductual, apoyando el desarrollo de control de impulsos y reduciendo acting out dentro y fuera de sesión (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "winnicott-objeto-transicional-ambiente",
-      "label": "Winnicott – Objeto transicional y ambiente",
-      "year": 1953,
-      "autores": "Donald W. Winnicott",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/winnicott-objeto-transicional-ambiente.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_winn_impingement_aquiahora",
-            "nombre": "Trabajo con impingement (intrusión) y fallos ambientales en el aquí-ahora",
-            "texto": "Intervención que detecta y repara micro-intrusiones (del terapeuta, del encuadre o del entorno) que reactivan defensas de adaptación, retirada o complacencia; el terapeuta nombra el impacto sin culpar, ajusta el ritmo y devuelve control al paciente, de modo que la sesión no repita el patrón temprano de ‘tener que acomodarse’ para sobrevivir relacionalmente.",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_winn_senal_retirada_sin_forzar",
-            "nombre": "Señalar retirada sin forzar contacto",
-            "texto": "Microintervención que nombra la retirada (mirada perdida, monosílabos, frialdad) como protección y ofrece presencia sin presión, permitiendo un retorno gradual al contacto sin repetir intrusión.",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "neopsicoanalisis",
+      "modelLabel": "Neopsicoanálisis",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Erich Fromm; Karen Horney; Harry Stack Sullivan",
+      "modelYear": 1940,
+      "items": [
+        {
+          "codigo": "p_neopsy_horney_tres_movimientos",
+          "nombre": "Mapa de movimientos de seguridad: hacia, contra o lejos (Horney)",
+          "texto": "Procedimiento de formulación que clasifica las estrategias del paciente en tres estilos predominantes: moverse hacia los otros (complacer, fusionarse), contra los otros (dominar, competir) o lejos de los otros (retirarse, autosuficiencia defensiva), analizando qué amenaza intenta evitar cada estilo y qué coste interpersonal genera; el objetivo clínico es ampliar repertorio y flexibilizar el movimiento según contexto.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "p_neopsy_operaciones_seguridad",
+          "nombre": "Operaciones de seguridad (Sullivan) y ansiedad interpersonal",
+          "texto": "Procedimiento para identificar maniobras que reducen ansiedad a corto plazo pero empobrecen vínculo (evitación, chistes defensivos, intelectualización, sumisión, control), describiendo su función protectora y su coste; se diseñan sustitutos graduales (pausas, petición directa, límites) para mantener seguridad sin sacrificar autenticidad.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_neopsy_pausa_seguridad",
+          "nombre": "Pausa de 10 segundos antes de la operación de seguridad",
+          "texto": "Microintervención de interrupción del piloto automático (retirada, ataque, complacencia) introduciendo una pausa breve para notar ansiedad y elegir una alternativa mínima, manteniendo seguridad sin repetir el patrón completo.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_neopsy_selectiva_inatencion",
+          "nombre": "Señalar selectiva inatención (lo que no se permite notar)",
+          "texto": "Intervención breve que hace visible cómo el paciente deja fuera información emocional o interpersonal para mantener seguridad (por ejemplo, no notar tristeza o no registrar señales de aceptación), ampliando la percepción sin desbordar.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_neopsy_retirada_retorno_minimo",
+          "nombre": "Nombrar retirada defensiva y proponer retorno mínimo al contacto",
+          "texto": "Microintervención que identifica la retirada como operación de seguridad y propone un retorno mínimo (una frase, una emoción, una pregunta) para no perder vínculo ni autonomía.",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "bion-teoria-pensar-contencion",
-      "label": "Bion – Teoría del pensar y contención",
-      "year": 1962,
-      "autores": "Wilfred R. Bion",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/bion-teoria-pensar-contencion.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_bion_senalar_evacuacion",
-            "nombre": "Señalar evacuación emocional en curso",
-            "texto": "Microintervención que identifica de forma descriptiva cuándo la experiencia está siendo expulsada mediante acting, impulsividad o confusión, ayudando a frenar la descarga y a reconducirla hacia un espacio de contención compartida (Bion, 1962, *Learning from Experience*).",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "p1freud",
+      "modelLabel": "Psicoanálisis clásico",
+      "modelGrupo": "psicoanalisis",
+      "modelAutores": "Sigmund Freud",
+      "modelYear": 1896,
+      "items": [
+        {
+          "codigo": "p_freud_resistencias",
+          "nombre": "Análisis de resistencias",
+          "texto": "Se identifican momentos en que el proceso se bloquea y se explora qué afecto o significado se vuelve intolerable y qué función cumple la resistencia.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_freud_senalResistencia",
+          "nombre": "Señalar un punto de resistencia",
+          "texto": "Marcar con tacto cambios de tema, silencios o racionalizaciones para abrir curiosidad clínica.",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "balint-falla-basica-regresion-benigna",
-      "label": "Balint – Falla básica y regresión benigna",
-      "year": 1968,
-      "autores": "Michael Balint",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/balint-falla-basica-regresion-benigna.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_balint_nombrar_retirada",
-            "nombre": "Nombrar retirada protectora",
-            "texto": "Microintervención que señala la retirada o el distanciamiento como protección frente a nueva falla, reduciendo autoacusación y facilitando un retorno gradual al contacto.",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "psicoanalisis-lacaniano",
+      "modelLabel": "Psicoanálisis lacaniano",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Jacques Lacan",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "m_lacan_imaginario",
+          "nombre": "Señalar una captura imaginaria",
+          "texto": "Microintervención que nombra una identificación narcisista, rivalidad o comparación que rigidifica el discurso, permitiendo diferenciar imagen de estructura simbólica y reducir la fijación imaginaria (Lacan, 1949/1966, *The Mirror Stage as Formative of the I*).",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "teoria-apego-bowlby",
-      "label": "Teoría del apego",
-      "year": 1969,
-      "autores": "John Bowlby",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/teoria-apego-bowlby.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_bowlby_estrategias_extremas",
-            "nombre": "Revisión de estrategias de apego extremas",
-            "texto": "Intervención que identifica y flexibiliza estrategias defensivas de apego —hiperactivación ansiosa o desactivación evitativa— mostrando su origen adaptativo y su coste actual, y promoviendo formas más equilibradas de búsqueda de apoyo y autonomía (Bowlby, 1973, *Separation: Anxiety and Anger*).",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_bowlby_retirada_defensiva",
-            "nombre": "Señalar retirada defensiva",
-            "texto": "Microintervención que identifica el distanciamiento emocional o la autosuficiencia rígida como estrategias de apego evitativo ante el riesgo de decepción, facilitando una comprensión más compasiva del propio cierre afectivo (Bowlby, 1973, *Separation: Anxiety and Anger*).",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_defensas_predominantes",
+          "nombre": "Trabajo activo con defensas predominantes",
+          "texto": "Procedimiento dirigido a identificar y señalar defensas que interfieren con el contacto emocional —intelectualización, evitación, racionalización— mostrando su función protectora y su relación con el conflicto nuclear, sin desmontarlas prematuramente (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_spb_confrontar_evitacion",
+          "nombre": "Confrontar evitación con suavidad",
+          "texto": "Intervención breve que señala movimientos de evitación —cambio de tema, intelectualización, humor defensivo— mostrando su función protectora sin descalificarlos, para reabrir el contacto con el núcleo emocional (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-psicodinamica-breve",
-      "label": "Psicoterapia psicodinámica breve",
-      "year": 1970,
-      "autores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_spb_defensas_predominantes",
-            "nombre": "Trabajo activo con defensas predominantes",
-            "texto": "Procedimiento dirigido a identificar y señalar defensas que interfieren con el contacto emocional —intelectualización, evitación, racionalización— mostrando su función protectora y su relación con el conflicto nuclear, sin desmontarlas prematuramente (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_spb_confrontar_evitacion",
-            "nombre": "Confrontar evitación con suavidad",
-            "texto": "Intervención breve que señala movimientos de evitación —cambio de tema, intelectualización, humor defensivo— mostrando su función protectora sin descalificarlos, para reabrir el contacto con el núcleo emocional (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "relaciones-objeto-klein",
+      "modelLabel": "Relaciones de objeto (Klein)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Melanie Klein",
+      "modelYear": 1932,
+      "items": [
+        {
+          "codigo": "p_klein_defensas_primitivas",
+          "nombre": "Trabajo con defensas primitivas en vivo (escisión, proyección, negación)",
+          "texto": "Identificación y clarificación inmediata de defensas activas que fragmentan la experiencia (escisión), expulsan afectos intolerables (proyección) o borran daño/dependencia (negación y defensas maníacas), mostrando su función protectora y su coste relacional; el terapeuta describe el movimiento defensivo tal como ocurre (sin acusar), lo enlaza con la ansiedad que intenta evitar y abre alternativas de sostén interno para que el paciente pueda re-integrar lo expulsado con menos vergüenza y menos ataque.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "p_klein_defensas_en_transferencia",
+          "nombre": "Trabajo con defensas en transferencia (objeto persecutorio / objeto idealizado / objeto necesitado)",
+          "texto": "Procedimiento que localiza las defensas en el aquí-ahora relacional: cómo el paciente convierte al terapeuta en un objeto persecutorio o idealizado y qué defensa sostiene esa construcción (proyección, identificación proyectiva, idealización/devaluación, negación, manía, retirada); el terapeuta devuelve la secuencia como hipótesis mentalizadora (“cuando sientes X aparece Y y entonces necesitas Z para no sentir…”) y repara micro-rupturas para que la transferencia deje de ser un campo de batalla y se vuelva un laboratorio de integración.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "p_klein_defensas_maniacas",
+          "nombre": "Interpretación de defensas maníacas (triunfo, desprecio, negación de dependencia)",
+          "texto": "Identificación de movimientos de superioridad, prisa, desdén o hiper-eficacia que sirven para evitar tristeza, culpa o dependencia; el terapeuta formula la función protectora de la manía (no sentir necesidad) y su coste (aislamiento, daño relacional), abriendo espacio para reconocer necesidades reales y sostener afectos depresivos sin colapsar.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_klein_defensa_maniaca_prisa",
+          "nombre": "Detectar defensa maníaca en forma de prisa/triunfo",
+          "texto": "Señalamiento breve de la aceleración, la superioridad o el desprecio como forma de no tocar tristeza o dependencia, invitando a una pausa y a reconocer la necesidad subyacente sin humillar ni moralizar.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_klein_senal_negacion_minimizacion",
+          "nombre": "Señalar negación y minimización del daño (sin moralizar)",
+          "texto": "Intervención breve que devuelve el gesto de negar, minimizar o pasar página (“esto no fue para tanto”, “da igual”) como una protección frente a culpa, tristeza o dependencia, manteniendo un tono no acusatorio para que el paciente pueda aproximarse al afecto depresivo sin sentirse juzgado.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_klein_control_omnipotente",
+          "nombre": "Microseñalar control omnipotente (necesidad de tenerlo todo atado)",
+          "texto": "Intervención breve que devuelve el impulso a controlar al otro, al terapeuta o el encuadre como defensa ante amenaza interna y dependencia, haciendo visible el coste (tensión, aislamiento, conflicto) y proponiendo una pausa para reconocer la necesidad primaria que se intenta evitar sentir.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_klein_retirada_autismo_defensivo",
+          "nombre": "Nombrar retirada/autismo defensivo (apagarse para no necesitar)",
+          "texto": "Señalamiento breve de la desconexión (silencio, frialdad, ausencia, “me da igual”) como defensa ante dependencia, culpa o miedo a la intrusión, devolviendo su función protectora y su coste vincular; se invita a un retorno mínimo al contacto sin presionar, para que la sesión no se convierta en retirada crónica.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_klein_anulacion_undoing",
+          "nombre": "Señalar anulación (undoing) y reparaciones impulsivas",
+          "texto": "Intervención breve cuando el paciente intenta borrar el daño con actos rápidos (regalos, promesas grandiosas, explicaciones interminables), identificándolo como anulación defensiva que evita culpa depresiva; se orienta a un paso reparativo realista y a sostener el afecto difícil sin necesidad de borrarlo.",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "kernberg-relaciones-objetales-modernas",
-      "label": "Kernberg – Relaciones objetales modernas",
-      "year": 1975,
-      "autores": "Otto F. Kernberg",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/kernberg-relaciones-objetales-modernas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kernberg_confrontacion",
-            "nombre": "Confrontación de contradicciones y defensas primitivas",
-            "texto": "Procedimiento que señala de manera directa pero contenida las contradicciones entre relatos, afectos y conductas, así como el uso activo de defensas primitivas como la escisión, idealización y devaluación, facilitando conciencia sin desorganizar al paciente (Kernberg, 1975, *Borderline Conditions and Pathological Narcissism*).",
-            "sub": "RE_prevEvitacion"
-          },
-          {
-            "codigo": "p_kernberg_acting_out",
-            "nombre": "Manejo activo del acting out",
-            "texto": "Procedimiento que aborda conductas impulsivas o autodestructivas fuera de sesión mediante límites claros y análisis de su significado transferencial, evitando tanto la permisividad como el castigo moralizante (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_kernberg_contener_impulso",
-            "nombre": "Contener impulso antes de actuar",
-            "texto": "Intervención breve que introduce una pausa entre afecto intenso e impulso conductual, apoyando el desarrollo de control de impulsos y reduciendo acting out dentro y fuera de sesión (Kernberg et al., 2006, *Transference-Focused Psychotherapy for Borderline Personality Disorder*).",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "sullivan-psicoanalisis-interpersonal",
+      "modelLabel": "Interpersonal – Sullivan",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Harry Stack Sullivan",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_sullivan_operaciones_seguridad",
+          "nombre": "Análisis de operaciones de seguridad",
+          "texto": "Trabajo sistemático con conductas y actitudes destinadas a reducir ansiedad a corto plazo —evitación, complacencia, hostilidad indirecta, control— explicando su lógica protectora y sus consecuencias a largo plazo sobre la calidad del vínculo.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_sullivan_operacion_seguridad",
+          "nombre": "Señalar una operación de seguridad activa",
+          "texto": "Intervención breve que identifica una conducta protectora en curso —complacencia, evitación, ironía, control— explicando su función ansiolítica sin juzgarla, lo que facilita que el paciente considere alternativas menos costosas relacionalmente.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_sullivan_nombrar_retirada",
+          "nombre": "Nombrar retirada o distanciamiento",
+          "texto": "Intervención que señala el alejamiento emocional o comunicativo como estrategia de protección frente a ansiedad, reduciendo culpa y facilitando un retorno gradual al contacto.",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-multimodal-basic-id-lazarus",
-      "label": "Psicoterapia multimodal (BASIC-ID)",
-      "year": 1977,
-      "autores": "Arnold A. Lazarus",
-      "grupo": "Integrativo",
-      "file": "data/Core/modelos/integrativo/psicoterapia-multimodal-basic-id-lazarus.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_lazarus_afecto_regulacion",
-            "nombre": "Intervención en Afecto (A) mediante clarificación y regulación emocional",
-            "texto": "Procedimiento que trabaja identificación, validación y modulación de emociones, detectando evitaciones afectivas y enseñando estrategias para sostener activación sin desbordarse (p. ej., rotulación precisa, tolerancia al malestar, exposición emocional breve cuando procede). No se trata de “hablar de emociones” como fin en sí mismo, sino de intervenir cuando el afecto es un mantenedor principal del problema o un bloqueador del cambio en otras modalidades. (Lazarus, 1989)",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "teoria-apego-bowlby",
+      "modelLabel": "Teoría del apego",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "John Bowlby",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_bowlby_estrategias_extremas",
+          "nombre": "Revisión de estrategias de apego extremas",
+          "texto": "Intervención que identifica y flexibiliza estrategias defensivas de apego —hiperactivación ansiosa o desactivación evitativa— mostrando su origen adaptativo y su coste actual, y promoviendo formas más equilibradas de búsqueda de apoyo y autonomía (Bowlby, 1973, *Separation: Anxiety and Anger*).",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_bowlby_retirada_defensiva",
+          "nombre": "Señalar retirada defensiva",
+          "texto": "Microintervención que identifica el distanciamiento emocional o la autosuficiencia rígida como estrategias de apego evitativo ante el riesgo de decepción, facilitando una comprensión más compasiva del propio cierre afectivo (Bowlby, 1973, *Separation: Anxiety and Anger*).",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "s21nardone",
-      "label": "Terapia estratégica breve (Nardone)",
-      "year": 1990,
-      "autores": "Giorgio Nardone",
-      "grupo": "Sistémico",
-      "file": "data/Core/modelos/sistemico/s21nardone.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_nardone_evitar",
-            "nombre": "Bloqueo de evitación",
-            "texto": "Intervenciones destinadas a impedir conductas evitativas que mantienen el problema.",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "winnicott-objeto-transicional-ambiente",
+      "modelLabel": "Winnicott – Objeto transicional y ambiente",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Donald W. Winnicott",
+      "modelYear": 1953,
+      "items": [
+        {
+          "codigo": "p_winn_impingement_aquiahora",
+          "nombre": "Trabajo con impingement (intrusión) y fallos ambientales en el aquí-ahora",
+          "texto": "Intervención que detecta y repara micro-intrusiones (del terapeuta, del encuadre o del entorno) que reactivan defensas de adaptación, retirada o complacencia; el terapeuta nombra el impacto sin culpar, ajusta el ritmo y devuelve control al paciente, de modo que la sesión no repita el patrón temprano de ‘tener que acomodarse’ para sobrevivir relacionalmente.",
+          "sub": "RE_prevEvitacion"
+        },
+        {
+          "codigo": "m_winn_senal_retirada_sin_forzar",
+          "nombre": "Señalar retirada sin forzar contacto",
+          "texto": "Microintervención que nombra la retirada (mirada perdida, monosílabos, frialdad) como protección y ofrece presencia sin presión, permitiendo un retorno gradual al contacto sin repetir intrusión.",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     },
     {
-      "id": "self-dialogico-hermans",
-      "label": "Teoría del self dialógico",
-      "year": 1996,
-      "autores": "Hubert J. M. Hermans",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/self-dialogico-hermans.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hermans_prevencionRecaidas",
-            "nombre": "Prevención de recaídas dialógicas (plan ante monopolios de voz)",
-            "texto": "Procedimiento de cierre que anticipa situaciones donde reaparecen monopolios de voz y establece respuestas pactadas para mantener el repertorio ampliado bajo estrés. (Hermans, 1996).",
-            "sub": "RE_prevEvitacion"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_hermans_senalarMonopolio",
-            "nombre": "Señalar monopolio de una voz",
-            "texto": "Microintervención directa que hace visible cuándo una voz está colonizando toda la experiencia subjetiva. Previene rumiación, fomenta equilibrio interno y abre espacio para introducir otras posiciones en el diálogo interno. (Hermans, 1996).",
-            "sub": "RE_prevEvitacion"
-          }
-        ]
-      }
+      "modelId": "s21nardone",
+      "modelLabel": "Terapia estratégica breve (Nardone)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Giorgio Nardone",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "m_nardone_evitar",
+          "nombre": "Bloqueo de evitación",
+          "texto": "Intervenciones destinadas a impedir conductas evitativas que mantienen el problema.",
+          "sub": "RE_prevEvitacion"
+        }
+      ]
     }
   ]
 }

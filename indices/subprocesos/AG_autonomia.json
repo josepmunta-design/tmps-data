@@ -1,83 +1,67 @@
 {
   "subprocesoId": "AG_autonomia",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 4,
   "modelos": [
     {
-      "id": "psicologia-yo-hartmann",
-      "label": "Psicología del yo",
-      "year": 1939,
-      "autores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-yo-hartmann.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_hartmann_apoyo_yo",
-            "nombre": "Apoyo del yo (ego-supportive therapy)",
-            "texto": "Intervención orientada a reforzar las capacidades existentes del yo mediante validación, estructuración, clarificación y orientación a la realidad, especialmente indicada cuando el yo está debilitado o sobrecargado, permitiendo estabilizar el funcionamiento antes de cualquier trabajo interpretativo profundo.",
-            "sub": "AG_autonomia"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "terapia-juego-centrada-nino-axline",
+      "modelLabel": "Terapia de Juego Centrada en el Niño",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Virginia M. Axline",
+      "modelYear": 1947,
+      "items": [
+        {
+          "codigo": "m_axline_elecciones",
+          "nombre": "Ofrecer elecciones",
+          "texto": "Intervención que presenta opciones claras al niño dentro de los límites del encuadre, promoviendo sentido de control, responsabilidad y agencia personal (Axline, 1947).",
+          "sub": "AG_autonomia"
+        }
+      ]
     },
     {
-      "id": "terapia-juego-centrada-nino-axline",
-      "label": "Terapia de Juego Centrada en el Niño",
-      "year": 1947,
-      "autores": "Virginia M. Axline",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/terapia-juego-centrada-nino-axline.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_axline_elecciones",
-            "nombre": "Ofrecer elecciones",
-            "texto": "Intervención que presenta opciones claras al niño dentro de los límites del encuadre, promoviendo sentido de control, responsabilidad y agencia personal (Axline, 1947).",
-            "sub": "AG_autonomia"
-          }
-        ]
-      }
+      "modelId": "kernberg-relaciones-objetales-modernas",
+      "modelLabel": "Kernberg – Relaciones objetales modernas",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_kernberg_funciones_yoicas",
+          "nombre": "Fortalecimiento de funciones yoicas maduras",
+          "texto": "Procedimiento complementario que apoya el desarrollo de control de impulsos, tolerancia a la ambivalencia y capacidad reflexiva, especialmente cuando la desorganización afectiva amenaza el proceso interpretativo (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
+          "sub": "AG_autonomia"
+        }
+      ]
     },
     {
-      "id": "psicologia-self-kohut",
-      "label": "Psicología del self",
-      "year": 1971,
-      "autores": "Heinz Kohut",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/psicologia-self-kohut.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kohut_internalizacion_transmutadora",
-            "nombre": "Internalización transmutadora",
-            "texto": "Procedimiento evolutivo mediante el cual funciones selfobject inicialmente proporcionadas por el terapeuta son progresivamente internalizadas por el paciente, dando lugar a mayor cohesión, autonomía y estabilidad del self (Kohut, 1971, *The Analysis of the Self*).",
-            "sub": "AG_autonomia"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_internalizacion_transmutadora",
+          "nombre": "Internalización transmutadora",
+          "texto": "Procedimiento evolutivo mediante el cual funciones selfobject inicialmente proporcionadas por el terapeuta son progresivamente internalizadas por el paciente, dando lugar a mayor cohesión, autonomía y estabilidad del self (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "AG_autonomia"
+        }
+      ]
     },
     {
-      "id": "kernberg-relaciones-objetales-modernas",
-      "label": "Kernberg – Relaciones objetales modernas",
-      "year": 1975,
-      "autores": "Otto F. Kernberg",
-      "grupo": "Psicoanálisis",
-      "file": "data/Core/modelos/psicoanalisis/kernberg-relaciones-objetales-modernas.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_kernberg_funciones_yoicas",
-            "nombre": "Fortalecimiento de funciones yoicas maduras",
-            "texto": "Procedimiento complementario que apoya el desarrollo de control de impulsos, tolerancia a la ambivalencia y capacidad reflexiva, especialmente cuando la desorganización afectiva amenaza el proceso interpretativo (Kernberg, 1976, *Object Relations Theory and Clinical Psychoanalysis*).",
-            "sub": "AG_autonomia"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "p_hartmann_apoyo_yo",
+          "nombre": "Apoyo del yo (ego-supportive therapy)",
+          "texto": "Intervención orientada a reforzar las capacidades existentes del yo mediante validación, estructuración, clarificación y orientación a la realidad, especialmente indicada cuando el yo está debilitado o sobrecargado, permitiendo estabilizar el funcionamiento antes de cualquier trabajo interpretativo profundo.",
+          "sub": "AG_autonomia"
+        }
+      ]
     }
   ]
 }

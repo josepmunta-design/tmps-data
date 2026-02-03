@@ -1,26 +1,22 @@
 {
   "subprocesoId": "RI_desidentificacion",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 1,
   "modelos": [
     {
-      "id": "o1morita",
-      "label": "Terapia Morita",
-      "year": 1919,
-      "autores": "Shoma Morita",
-      "grupo": "Otros",
-      "file": "data/Core/modelos/Otros/o1morita.json",
-      "matches": {
-        "tecnicas": [],
-        "micros": [
-          {
-            "codigo": "m_morita_noRefuerzo",
-            "nombre": "No refuerzo del síntoma como eje conversacional",
-            "texto": "Microajuste clínico que consiste en evitar preguntas, comentarios o validaciones centradas en el síntoma, impidiendo que la ansiedad o el malestar se conviertan en el organizador principal del diálogo terapéutico y del self del paciente. Al no reforzar narrativamente el síntoma, el terapeuta facilita una desidentificación progresiva entre la identidad personal y el estado emocional, reduciendo la centralidad del sufrimiento sin necesidad de confrontarlo explícitamente (Morita, 1930; Ishiyama, 2003).",
-            "sub": "RI_desidentificacion"
-          }
-        ]
-      }
+      "modelId": "o1morita",
+      "modelLabel": "Terapia Morita",
+      "modelGrupo": "Otros",
+      "modelAutores": "Shoma Morita",
+      "modelYear": 1919,
+      "items": [
+        {
+          "codigo": "m_morita_noRefuerzo",
+          "nombre": "No refuerzo del síntoma como eje conversacional",
+          "texto": "Microajuste clínico que consiste en evitar preguntas, comentarios o validaciones centradas en el síntoma, impidiendo que la ansiedad o el malestar se conviertan en el organizador principal del diálogo terapéutico y del self del paciente. Al no reforzar narrativamente el síntoma, el terapeuta facilita una desidentificación progresiva entre la identidad personal y el estado emocional, reduciendo la centralidad del sufrimiento sin necesidad de confrontarlo explícitamente (Morita, 1930; Ishiyama, 2003).",
+          "sub": "RI_desidentificacion"
+        }
+      ]
     }
   ]
 }

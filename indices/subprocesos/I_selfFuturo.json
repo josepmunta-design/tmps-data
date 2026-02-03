@@ -1,96 +1,79 @@
 {
   "subprocesoId": "I_selfFuturo",
-  "updatedAt": "2026-02-03T10:28:30.257Z",
+  "updatedAt": "2026-02-03T10:41:20.660Z",
   "totalModelos": 4,
   "modelos": [
     {
-      "id": "entrevista-motivacional-1983",
-      "label": "Entrevista Motivacional (Motivational Interviewing, MI)",
-      "year": 1983,
-      "autores": "William R. Miller; Stephen Rollnick",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/entrevista-motivacional-1983.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_mi_back_forward",
-            "nombre": "Mirar atrás y mirar adelante (Looking back/forward)",
-            "texto": "Mirar atrás evoca discrepancia recordando cómo era la vida antes del problema; mirar adelante explora un futuro si nada cambia vs si cambia. Estas exploraciones no buscan dramatizar, sino ayudar a que el cliente contacte con consecuencias y con un self futuro más deseable. Suelen generar change talk de forma natural.",
-            "sub": "I_selfFuturo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicoterapia-constructivista-integrativa",
+      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_feixas_rolFijo",
+          "nombre": "Terapia de Rol Fijo (Fixed-Role Therapy) adaptada a objetivos identitarios",
+          "texto": "Procedimiento experiencial donde se diseña, junto al paciente, un rol alternativo coherente con su identidad pero más flexible (un “personaje” viable) y se ensaya en la vida cotidiana durante un periodo acotado; el énfasis está en vivir nuevas anticipaciones y recoger datos sobre qué cambia en emociones, relaciones y autoimagen, usando el ensayo como experimento de significado que amplía el self futuro posible sin exigir una conversión permanente inmediata. (Kelly, 1955; Feixas, 2004)",
+          "sub": "I_selfFuturo"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-neimeyer",
-      "label": "Neimeyer – Psicoterapia constructivista",
-      "year": 1995,
-      "autores": "Robert A. Neimeyer",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-neimeyer.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_neim_self_futuro",
-            "nombre": "Orientación al self futuro",
-            "texto": "Procedimiento que ayuda al cliente a imaginar, articular y comprometerse con posibles selves futuros que integren la experiencia vivida y abran horizontes de sentido. La construcción de un self futuro viable facilita la toma de decisiones, la recuperación de agencia y la salida del estancamiento narrativo característico de las crisis de significado (Neimeyer, 1995; Neimeyer, 2016).",
-            "sub": "I_selfFuturo"
-          },
-          {
-            "codigo": "p_neim_integracion_vida_cotidiana",
-            "nombre": "Integración narrativa en la vida cotidiana",
-            "texto": "Procedimiento final orientado a traducir los nuevos significados y narrativas construidas en decisiones, acciones y proyectos concretos de la vida diaria. Esta integración conductual consolida el cambio narrativo, refuerza la sensación de agencia personal y permite que el sentido reconstruido se encarne en la experiencia cotidiana (Neimeyer, 1995; Neimeyer, 2016).",
-            "sub": "I_selfFuturo"
-          }
-        ],
-        "micros": [
-          {
-            "codigo": "m_neim_proyeccion_futuro",
-            "nombre": "Proyección narrativa al futuro",
-            "texto": "Micro que invita a imaginar escenarios futuros posibles donde los nuevos significados puedan encarnarse, aun en presencia de dolor residual. Esta proyección ayuda a salir del estancamiento narrativo y a recuperar orientación temporal y motivación interna (Neimeyer, 1995; Neimeyer, 2016).",
-            "sub": "I_selfFuturo"
-          }
-        ]
-      }
+      "modelId": "psicoterapia-constructivista-neimeyer",
+      "modelLabel": "Neimeyer – Psicoterapia constructivista",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Robert A. Neimeyer",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_neim_self_futuro",
+          "nombre": "Orientación al self futuro",
+          "texto": "Procedimiento que ayuda al cliente a imaginar, articular y comprometerse con posibles selves futuros que integren la experiencia vivida y abran horizontes de sentido. La construcción de un self futuro viable facilita la toma de decisiones, la recuperación de agencia y la salida del estancamiento narrativo característico de las crisis de significado (Neimeyer, 1995; Neimeyer, 2016).",
+          "sub": "I_selfFuturo"
+        },
+        {
+          "codigo": "p_neim_integracion_vida_cotidiana",
+          "nombre": "Integración narrativa en la vida cotidiana",
+          "texto": "Procedimiento final orientado a traducir los nuevos significados y narrativas construidas en decisiones, acciones y proyectos concretos de la vida diaria. Esta integración conductual consolida el cambio narrativo, refuerza la sensación de agencia personal y permite que el sentido reconstruido se encarne en la experiencia cotidiana (Neimeyer, 1995; Neimeyer, 2016).",
+          "sub": "I_selfFuturo"
+        },
+        {
+          "codigo": "m_neim_proyeccion_futuro",
+          "nombre": "Proyección narrativa al futuro",
+          "texto": "Micro que invita a imaginar escenarios futuros posibles donde los nuevos significados puedan encarnarse, aun en presencia de dolor residual. Esta proyección ayuda a salir del estancamiento narrativo y a recuperar orientación temporal y motivación interna (Neimeyer, 1995; Neimeyer, 2016).",
+          "sub": "I_selfFuturo"
+        }
+      ]
     },
     {
-      "id": "psicologia-positiva-1998",
-      "label": "Psicología Positiva",
-      "year": 1998,
-      "autores": "Martin E. P. Seligman; Mihaly Csikszentmihalyi",
-      "grupo": "Humanista",
-      "file": "data/Core/modelos/humanista/psicologia-positiva-1998.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_pospsy_self_futuro",
-            "nombre": "Mejor yo posible (Best Possible Self) y narrativa prospectiva",
-            "texto": "Visualización y escritura guiada del yo posible deseado (y viable), conectándolo con valores, fortalezas y microdecisiones. Se traducen aspiraciones a pasos conductuales pequeños y medibles.",
-            "sub": "I_selfFuturo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "entrevista-motivacional-1983",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "William R. Miller; Stephen Rollnick",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_mi_back_forward",
+          "nombre": "Mirar atrás y mirar adelante (Looking back/forward)",
+          "texto": "Mirar atrás evoca discrepancia recordando cómo era la vida antes del problema; mirar adelante explora un futuro si nada cambia vs si cambia. Estas exploraciones no buscan dramatizar, sino ayudar a que el cliente contacte con consecuencias y con un self futuro más deseable. Suelen generar change talk de forma natural.",
+          "sub": "I_selfFuturo"
+        }
+      ]
     },
     {
-      "id": "psicoterapia-constructivista-integrativa",
-      "label": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
-      "year": 2000,
-      "autores": "Guillem Feixas; Manuel Villegas Besora",
-      "grupo": "Constructivista",
-      "file": "data/Core/modelos/constructivista/psicoterapia-constructivista-integrativa.json",
-      "matches": {
-        "tecnicas": [
-          {
-            "codigo": "p_feixas_rolFijo",
-            "nombre": "Terapia de Rol Fijo (Fixed-Role Therapy) adaptada a objetivos identitarios",
-            "texto": "Procedimiento experiencial donde se diseña, junto al paciente, un rol alternativo coherente con su identidad pero más flexible (un “personaje” viable) y se ensaya en la vida cotidiana durante un periodo acotado; el énfasis está en vivir nuevas anticipaciones y recoger datos sobre qué cambia en emociones, relaciones y autoimagen, usando el ensayo como experimento de significado que amplía el self futuro posible sin exigir una conversión permanente inmediata. (Kelly, 1955; Feixas, 2004)",
-            "sub": "I_selfFuturo"
-          }
-        ],
-        "micros": []
-      }
+      "modelId": "psicologia-positiva-1998",
+      "modelLabel": "Psicología Positiva",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Martin E. P. Seligman; Mihaly Csikszentmihalyi",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_pospsy_self_futuro",
+          "nombre": "Mejor yo posible (Best Possible Self) y narrativa prospectiva",
+          "texto": "Visualización y escritura guiada del yo posible deseado (y viable), conectándolo con valores, fortalezas y microdecisiones. Se traducen aspiraciones a pasos conductuales pequeños y medibles.",
+          "sub": "I_selfFuturo"
+        }
+      ]
     }
   ]
 }
