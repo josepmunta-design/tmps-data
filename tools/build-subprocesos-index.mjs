@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 // ✅ ajusta si tu repo es distinto
 const REPO_ROOT = path.resolve(__dirname, "..");
-const MODELOS_DIR = path.join(REPO_ROOT, "modelos");
+const MODELOS_DIR = path.join(REPO_ROOT, "data", "Core", "modelos");
 const OUT_DIR = path.join(REPO_ROOT, "indices", "subprocesos");
 
 // ---------------------------
