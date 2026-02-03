@@ -155,13 +155,23 @@ matches.get(subId).tecnicas.push({
   for (const [subId, mm] of matches.entries()) {
     if (!subId) continue;
 
-    const entry = {
-      ...head,
-      matches: mm
-    };
+const entry = {
+  modelId: head.id,
+  modelLabel: head.label,
+  modelGrupo: head.grupo,
+  modelAutores: head.autores,
+  modelYear: head.year,
 
-    if (!bySub.has(subId)) bySub.set(subId, []);
-    bySub.get(subId).push(entry);
+  // unificamos técnicas + micros en una sola lista
+  items: [
+    ...(mm.tecnicas || []),
+    ...(mm.micros || [])
+  ]
+};
+
+if (!bySub.has(subId)) bySub.set(subId, []);
+bySub.get(subId).push(entry);
+
   }
 }
 
