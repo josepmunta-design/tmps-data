@@ -1,8 +1,52 @@
 {
   "subprocesoId": "RE_validacion",
-  "updatedAt": "2026-02-04T08:56:49.742Z",
-  "totalModelos": 2,
+  "updatedAt": "2026-02-04T09:04:04.975Z",
+  "totalModelos": 3,
   "modelos": [
+    {
+      "modelId": "ifs-schwartz-1991",
+      "modelLabel": "Internal Family Systems (IFS)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard C. Schwartz",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_ifs_protectores",
+          "nombre": "Trabajo con partes protectoras (managers y bomberos)",
+          "texto": "Procedimiento centrado en establecer una relación respetuosa con las partes protectoras, comprendiendo su función preventiva frente al dolor de los exiliados. Se busca reducir su activación extrema, ganar su confianza en el liderazgo del Self y evitar confrontaciones que aumentarían la rigidez del sistema interno. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RE_validacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_testimonio",
+          "nombre": "Testimonio compasivo del Self hacia el exiliado",
+          "texto": "Procedimiento mediante el cual el Self presencia y valida la experiencia del exiliado tal como fue vivida, sin minimizarla ni reinterpretarla. Este testimonio compasivo reduce aislamiento, vergüenza y carga emocional, y es un paso esencial previo a la liberación de cargas traumáticas. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RE_validacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_critico_verguenza",
+          "nombre": "Trabajo con partes críticas y vergüenza internalizada",
+          "texto": "Procedimiento orientado a comprender y transformar partes críticas, atacantes o avergonzantes que internalizan mensajes relacionales tempranos. El trabajo busca aliviar su carga, reconocer su función protectora y ayudarles a adoptar roles más protectores y menos dañinos para la identidad. Referencia: Schwartz (1995); Schwartz & Sweezy (2019).",
+          "sub": "RE_validacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ifs_intencion_positiva",
+          "nombre": "Pregunta por la intención protectora",
+          "texto": "Microintervención que explora la función protectora de una parte (“¿qué intenta evitar o proteger?”), reduciendo juicio, vergüenza y conflicto interno, y estableciendo una relación de respeto que facilita cooperación posterior. Referencia: Schwartz (1995).",
+          "sub": "RE_validacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ifs_testimonio",
+          "nombre": "Testimonio compasivo",
+          "texto": "El Self escucha y valida la experiencia de una parte exiliada tal como fue vivida, sin reinterpretarla ni minimizarla, reduciendo aislamiento y vergüenza y preparando el terreno para la liberación de cargas traumáticas. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RE_validacion",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "psicologia-self-kohut",
       "modelLabel": "Psicología del self",

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_somaticoEsquematico",
-  "updatedAt": "2026-02-04T08:56:49.742Z",
-  "totalModelos": 8,
+  "updatedAt": "2026-02-04T09:04:04.975Z",
+  "totalModelos": 9,
   "modelos": [
     {
       "modelId": "aedp-2000",
@@ -99,6 +99,29 @@
           "codigo": "m_emdr_sensaciones",
           "nombre": "Escaneo corporal focal",
           "texto": "Exploración consciente de sensaciones corporales residuales asociadas al recuerdo reprocesado. Permite detectar activación no verbalizada y completar la integración somática del evento traumático. Referencia: Shapiro, F. (2001).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ifs-schwartz-1991",
+      "modelLabel": "Internal Family Systems (IFS)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard C. Schwartz",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_ifs_somatico_partes",
+          "nombre": "Trabajo somático con partes",
+          "texto": "Procedimiento que utiliza sensaciones corporales como vía principal de acceso a partes internas, especialmente cuando el contenido verbal es limitado o el trauma es temprano. El terapeuta guía la atención somática desde el Self para facilitar regulación, identificación de partes implícitas y liberación de cargas corporales. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ifs_localizacion_somatica",
+          "nombre": "Localización corporal de la parte",
+          "texto": "Exploración breve de dónde se manifiesta una parte en el cuerpo (tensión, presión, calor, vacío), utilizando la sensación corporal como vía directa de acceso y regulación, especialmente útil cuando el lenguaje es limitado o el trauma es temprano. Referencia: Schwartz & Sweezy (2019).",
           "sub": "AP_somaticoEsquematico",
           "tipo": "micro"
         }

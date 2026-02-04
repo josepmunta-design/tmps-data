@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-04T08:56:49.742Z",
-  "totalModelos": 60,
+  "updatedAt": "2026-02-04T09:04:04.975Z",
+  "totalModelos": 61,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -969,6 +969,36 @@
           "codigo": "m_emdr_reevaluacion",
           "nombre": "Reevaluación entre sesiones",
           "texto": "Exploración de cambios espontáneos en emociones, cogniciones, sueños o reacciones tras una sesión de EMDR. Permite valorar la consolidación del reprocesamiento y detectar material adicional relevante. Referencia: Shapiro, F. (2018).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ifs-schwartz-1991",
+      "modelLabel": "Internal Family Systems (IFS)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard C. Schwartz",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_ifs_mapeo_partes",
+          "nombre": "Mapeo del sistema interno de partes",
+          "texto": "Procedimiento de exploración estructurada del sistema interno que identifica partes protectoras (managers y bomberos), partes exiliadas, sus roles, emociones, relaciones y polarizaciones. El mapeo reduce confusión interna, organiza la conceptualización del caso y permite intervenir de forma segura y estratégica respetando la ecología del sistema psíquico. Referencia: Schwartz (1995).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_polarizaciones",
+          "nombre": "Detección y trabajo con polarizaciones internas",
+          "texto": "Procedimiento orientado a identificar y desescalar conflictos entre partes protectoras polarizadas que luchan entre sí con estrategias opuestas pero una misma intención protectora. El trabajo busca que ambas partes sean escuchadas desde el Self, reduciendo la lucha interna y favoreciendo cooperación y flexibilidad del sistema. Referencia: Schwartz (1995); Schwartz & Sweezy (2019).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ifs_chequeo_polarizacion",
+          "nombre": "Chequeo de polarización",
+          "texto": "Exploración breve para detectar si otra parte se activa en oposición durante el trabajo, permitiendo intervenir antes de que se intensifique el conflicto interno. Referencia: Schwartz (1995).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

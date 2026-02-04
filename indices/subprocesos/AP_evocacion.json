@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-04T08:56:49.742Z",
-  "totalModelos": 18,
+  "updatedAt": "2026-02-04T09:04:04.975Z",
+  "totalModelos": 19,
   "modelos": [
     {
       "modelId": "k13coherence-therapy-1993",
@@ -230,6 +230,29 @@
           "codigo": "m_emdr_imagen_diana",
           "nombre": "Identificación de imagen diana",
           "texto": "Selección de la imagen más representativa del evento traumático que concentra la carga emocional principal. Esta microintervención permite focalizar el reprocesamiento en un nodo específico de la red mnésica, aumentando la eficacia del trabajo terapéutico. Referencia: Shapiro, F. (1995).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ifs-schwartz-1991",
+      "modelLabel": "Internal Family Systems (IFS)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard C. Schwartz",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_ifs_exiliados",
+          "nombre": "Acceso regulado a partes exiliadas",
+          "texto": "Procedimiento cuidadosamente titulado para contactar con partes exiliadas que contienen memorias traumáticas, emociones intensas o necesidades relacionales no satisfechas. El acceso solo se realiza cuando los protectores dan permiso y el Self está presente, priorizando seguridad interna y evitando reactivación abrumadora. Referencia: Schwartz (1995).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ifs_historia_parte",
+          "nombre": "Exploración de historia de la parte",
+          "texto": "Microintervención para indagar cuándo apareció la parte y en qué contexto empezó a desempeñar su rol, ayudando a situar su función en una narrativa temporal coherente sin retraumatizar. Referencia: Schwartz (1995).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }

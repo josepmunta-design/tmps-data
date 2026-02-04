@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RI_dialogoFuncional",
-  "updatedAt": "2026-02-04T08:56:49.742Z",
-  "totalModelos": 5,
+  "updatedAt": "2026-02-04T09:04:04.975Z",
+  "totalModelos": 6,
   "modelos": [
     {
       "modelId": "psicoterapia-constructivista-neimeyer",
@@ -148,6 +148,71 @@
           "codigo": "m_emdr_no_interferencia",
           "nombre": "Intervención mínima del terapeuta",
           "texto": "Actitud técnica consistente en no interpretar, no dirigir ni analizar el contenido emergente durante el reprocesamiento. El terapeuta sostiene el marco y confía en la capacidad autoorganizativa del sistema del paciente, reduciendo interferencias cognitivas externas. Referencia: Shapiro, F. (2018).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ifs-schwartz-1991",
+      "modelLabel": "Internal Family Systems (IFS)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard C. Schwartz",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_ifs_mapeo_partes",
+          "nombre": "Mapeo del sistema interno de partes",
+          "texto": "Procedimiento de exploración estructurada del sistema interno que identifica partes protectoras (managers y bomberos), partes exiliadas, sus roles, emociones, relaciones y polarizaciones. El mapeo reduce confusión interna, organiza la conceptualización del caso y permite intervenir de forma segura y estratégica respetando la ecología del sistema psíquico. Referencia: Schwartz (1995).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_protectores",
+          "nombre": "Trabajo con partes protectoras (managers y bomberos)",
+          "texto": "Procedimiento centrado en establecer una relación respetuosa con las partes protectoras, comprendiendo su función preventiva frente al dolor de los exiliados. Se busca reducir su activación extrema, ganar su confianza en el liderazgo del Self y evitar confrontaciones que aumentarían la rigidez del sistema interno. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_negociacion_protectores",
+          "nombre": "Negociación con partes protectoras extremas",
+          "texto": "Procedimiento específico para negociar con protectores que utilizan estrategias extremas como evitación rígida, control, impulsividad, consumo o autolesión. El objetivo es acordar pausas, límites o alternativas temporales que preserven la seguridad del sistema interno y permitan avanzar terapéuticamente sin desbordamiento ni retraumatización. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_polarizaciones",
+          "nombre": "Detección y trabajo con polarizaciones internas",
+          "texto": "Procedimiento orientado a identificar y desescalar conflictos entre partes protectoras polarizadas que luchan entre sí con estrategias opuestas pero una misma intención protectora. El trabajo busca que ambas partes sean escuchadas desde el Self, reduciendo la lucha interna y favoreciendo cooperación y flexibilidad del sistema. Referencia: Schwartz (1995); Schwartz & Sweezy (2019).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_integracion_sistema",
+          "nombre": "Integración del sistema interno bajo liderazgo del Self",
+          "texto": "Procedimiento transversal y de cierre que consolida la cooperación entre partes, reduce polarizaciones residuales y estabiliza el liderazgo del Self como organizador central del sistema psíquico. Marca el paso de intervención focal a funcionamiento interno más autónomo y armonizado. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ifs_permiso",
+          "nombre": "Permiso interno para continuar",
+          "texto": "Chequeo breve para confirmar que las partes protectoras permiten avanzar hacia material más sensible, respetando la ecología del sistema interno y previniendo reacciones defensivas posteriores. Referencia: Schwartz (1995).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ifs_dialogo_guiado",
+          "nombre": "Diálogo interno guiado",
+          "texto": "Facilitación de un intercambio respetuoso entre el Self y una parte específica, promoviendo comprensión mutua, clarificación de miedos y reducción de polarización interna sin confrontación. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ifs_cierre_integrador",
+          "nombre": "Cierre integrador del sistema interno",
+          "texto": "Microintervención de cierre que revisa el estado del sistema interno tras el trabajo, verifica cooperación entre partes y refuerza el liderazgo del Self antes de finalizar la sesión. Referencia: Schwartz & Sweezy (2019).",
           "sub": "RI_dialogoFuncional",
           "tipo": "micro"
         }

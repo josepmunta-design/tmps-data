@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_integracionMemorias",
-  "updatedAt": "2026-02-04T08:56:49.742Z",
-  "totalModelos": 4,
+  "updatedAt": "2026-02-04T09:04:04.975Z",
+  "totalModelos": 5,
   "modelos": [
     {
       "modelId": "k13coherence-therapy-1993",
@@ -48,6 +48,50 @@
           "texto": "Procedimiento central del modelo EMDR que estructura la intervención en ocho fases secuenciales: historia clínica y planificación, preparación y estabilización, evaluación de la memoria diana, desensibilización mediante estimulación bilateral, instalación de cognición positiva, escaneo corporal, cierre y reevaluación. Este protocolo permite activar memorias traumáticas de forma controlada y facilitar su reprocesamiento adaptativo sin necesidad de exposición prolongada ni elaboración cognitiva explícita, garantizando integración emocional, somática y narrativa progresiva. Referencia: Shapiro, F. (2001, 2018).",
           "sub": "AP_integracionMemorias",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "ifs-schwartz-1991",
+      "modelLabel": "Internal Family Systems (IFS)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard C. Schwartz",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_ifs_testimonio",
+          "nombre": "Testimonio compasivo del Self hacia el exiliado",
+          "texto": "Procedimiento mediante el cual el Self presencia y valida la experiencia del exiliado tal como fue vivida, sin minimizarla ni reinterpretarla. Este testimonio compasivo reduce aislamiento, vergüenza y carga emocional, y es un paso esencial previo a la liberación de cargas traumáticas. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "AP_integracionMemorias",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_unburdening",
+          "nombre": "Descarga de cargas traumáticas (unburdening)",
+          "texto": "Procedimiento central del modelo IFS en el que una parte exiliada libera creencias, emociones, sensaciones corporales o significados extremos asociados a experiencias traumáticas. La descarga permite que la parte se reorganice de forma adaptativa y abandone el rol fijado por el trauma. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "AP_integracionMemorias",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_actualizacion_temporal",
+          "nombre": "Actualización temporal y contextual del exiliado",
+          "texto": "Procedimiento posterior al unburdening que ayuda a la parte exiliada a reconocer que el evento traumático pertenece al pasado y que el contexto actual es diferente y más seguro. Esta actualización reduce reactivación automática, confusión temporal y respuestas descontextualizadas. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "AP_integracionMemorias",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ifs_testimonio",
+          "nombre": "Testimonio compasivo",
+          "texto": "El Self escucha y valida la experiencia de una parte exiliada tal como fue vivida, sin reinterpretarla ni minimizarla, reduciendo aislamiento y vergüenza y preparando el terreno para la liberación de cargas traumáticas. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "AP_integracionMemorias",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ifs_invitar_soltar",
+          "nombre": "Invitación a soltar la carga",
+          "texto": "Microintervención que invita a la parte exiliada a liberar creencias, emociones o sensaciones extremas asociadas al trauma, respetando su ritmo y elección, como paso previo o parcial del unburdening. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "AP_integracionMemorias",
+          "tipo": "micro"
         }
       ]
     },

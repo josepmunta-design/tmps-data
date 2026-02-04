@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-04T08:56:49.742Z",
-  "totalModelos": 51,
+  "updatedAt": "2026-02-04T09:04:04.975Z",
+  "totalModelos": 52,
   "modelos": [
     {
       "modelId": "entrenamiento-habilidades-sociales",
@@ -525,6 +525,57 @@
           "codigo": "m_emdr_cierre",
           "nombre": "Cierre regulador de sesión",
           "texto": "Microintervención orientada a devolver al paciente a un estado de estabilidad emocional y orientación temporal al final de la sesión, especialmente si el reprocesamiento no ha concluido. Previene activación residual y favorece sensación de control. Referencia: Shapiro, F. (2001).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ifs-schwartz-1991",
+      "modelLabel": "Internal Family Systems (IFS)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Richard C. Schwartz",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_ifs_acceso_self",
+          "nombre": "Acceso y diferenciación del Self",
+          "texto": "Procedimiento inicial orientado a facilitar que el cliente distinga entre el Self y las partes activas, identificando estados de calma, curiosidad, claridad y compasión desde los cuales observar la experiencia interna. Esta diferenciación reduce la fusión con partes reactivas y establece la base del liderazgo interno necesario para todo el trabajo posterior en IFS. Referencia: Schwartz (1995); Schwartz & Sweezy (2019).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_negociacion_protectores",
+          "nombre": "Negociación con partes protectoras extremas",
+          "texto": "Procedimiento específico para negociar con protectores que utilizan estrategias extremas como evitación rígida, control, impulsividad, consumo o autolesión. El objetivo es acordar pausas, límites o alternativas temporales que preserven la seguridad del sistema interno y permitan avanzar terapéuticamente sin desbordamiento ni retraumatización. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ifs_somatico_partes",
+          "nombre": "Trabajo somático con partes",
+          "texto": "Procedimiento que utiliza sensaciones corporales como vía principal de acceso a partes internas, especialmente cuando el contenido verbal es limitado o el trauma es temprano. El terapeuta guía la atención somática desde el Self para facilitar regulación, identificación de partes implícitas y liberación de cargas corporales. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ifs_chequeo_self",
+          "nombre": "Chequeo de presencia del Self",
+          "texto": "Verificación breve y repetida de si el cliente se siente en calma, curioso y compasivo antes de profundizar en el trabajo con partes, asegurando que el liderazgo del Self esté activo y previniendo que una parte tome el control del proceso terapéutico. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ifs_intensidad",
+          "nombre": "Chequeo de intensidad emocional",
+          "texto": "Microintervención reguladora que monitoriza el nivel de activación emocional durante el trabajo con partes, ajustando ritmo y profundidad para mantener la experiencia dentro de la ventana de tolerancia. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ifs_pausa",
+          "nombre": "Pausa reguladora desde el Self",
+          "texto": "Microintervención de desaceleración que devuelve foco a respiración, postura y presencia del Self cuando la activación amenaza con desbordar el sistema interno, priorizando seguridad sobre avance técnico. Referencia: Schwartz & Sweezy (2019).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }
