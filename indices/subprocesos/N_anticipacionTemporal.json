@@ -1,0 +1,30 @@
+{
+  "subprocesoId": "N_anticipacionTemporal",
+  "updatedAt": "2026-02-04T11:55:03.262Z",
+  "totalModelos": 1,
+  "modelos": [
+    {
+      "modelId": "programas-refuerzo-skinner-1957",
+      "modelLabel": "Programas de refuerzo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "C. B. Ferster; B. F. Skinner",
+      "modelYear": 1957,
+      "items": [
+        {
+          "codigo": "p_refuerzo_intervalo_fijo",
+          "nombre": "Diseño de programas de intervalo fijo (FI)",
+          "texto": "Procedimiento en el que el reforzamiento se entrega a la primera respuesta emitida tras un intervalo temporal fijo, generando patrones característicos de respuesta en forma de \"scallop\" (aceleración progresiva conforme se acerca el refuerzo). Se emplea para conductas que deben mantenerse a lo largo del tiempo, considerando que puede inducir periodos de baja respuesta tras el reforzamiento. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "N_anticipacionTemporal",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_refuerzo_fi",
+          "nombre": "Aplicación de refuerzo en intervalo fijo (FI)",
+          "texto": "Microintervención que refuerza la primera respuesta emitida tras un intervalo temporal fijo, produciendo el patrón característico de aceleración progresiva de la respuesta conforme se aproxima el refuerzo. Se usa para sostener conductas a lo largo del tiempo, teniendo en cuenta la posible baja tasa inmediatamente posterior al refuerzo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "N_anticipacionTemporal",
+          "tipo": "micro"
+        }
+      ]
+    }
+  ]
+}
