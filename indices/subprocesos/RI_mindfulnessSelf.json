@@ -1,8 +1,31 @@
 {
   "subprocesoId": "RI_mindfulnessSelf",
-  "updatedAt": "2026-02-04T11:37:45.351Z",
-  "totalModelos": 10,
+  "updatedAt": "2026-02-04T11:48:13.784Z",
+  "totalModelos": 11,
   "modelos": [
+    {
+      "modelId": "Compassion Focused Therapy (CFT)",
+      "modelLabel": "Compassion Focused Therapy (CFT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Paul Gilbert",
+      "modelYear": "2009",
+      "items": [
+        {
+          "codigo": "p_cft_attention",
+          "nombre": "Entrenamiento de atención compasiva (atención, tono, ritmo, amabilidad)",
+          "texto": "Prácticas para entrenar la mente a notar (sin juicio) la orientación automática a amenaza y redirigirla a señales de seguridad/afiliación. Incluye aprender a cambiar tono interno, ritmo, y estilo atencional (menos escaneo de fallo, más anclaje en suficiencia y cuidado).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cft_threat_scan_shift",
+          "nombre": "Detectar escaneo de amenaza y redirigir",
+          "texto": "Notar cuándo la mente busca fallo/juicio y practicar un “giro” hacia señales de suficiencia/seguridad (sin negar problemas).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "k13coherence-therapy-1993",
       "modelLabel": "Terapia de la coherencia",
