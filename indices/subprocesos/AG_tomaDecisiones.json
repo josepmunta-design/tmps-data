@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-04T09:28:05.514Z",
-  "totalModelos": 33,
+  "updatedAt": "2026-02-04T09:36:47.727Z",
+  "totalModelos": 34,
   "modelos": [
     {
       "modelId": "condicionamiento-aversivo",
@@ -353,6 +353,29 @@
           "codigo": "m_rt_alternativa",
           "nombre": "Elección de conducta alternativa",
           "texto": "Invitar a identificar una conducta concreta diferente que pueda probarse de inmediato.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cbasp-mccullough",
+      "modelLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "James P. McCullough Jr.",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbasp_tareasInterpersonales",
+          "nombre": "Planificación de Tareas Interpersonales entre Sesiones (Between-session Interpersonal Tasks)",
+          "texto": "Procedimiento estructurado para trasladar el aprendizaje a la vida cotidiana mediante tareas interpersonales específicas derivadas del análisis situacional: se define una situación objetivo, una conducta alternativa medible, criterios de éxito realistas y una forma de registrar resultados; después se revisan las consecuencias obtenidas y se ajusta el plan, manteniendo el foco en contingencias reales más que en intención o deseo, con el objetivo de romper la pasividad crónica y construir evidencia experiencial de impacto interpersonal. (McCullough, 2000; McCullough, 2006).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbasp_alternativaConductual",
+          "nombre": "Formulación explícita de alternativa conductual",
+          "texto": "Microintervención en la que terapeuta y paciente formulan conjuntamente una conducta alternativa concreta, viable y observable que podría aumentar la probabilidad de alcanzar el resultado deseado, fortaleciendo capacidad de elección y planificación interpersonal. (McCullough, 2000).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
