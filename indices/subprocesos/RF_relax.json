@@ -1,8 +1,87 @@
 {
   "subprocesoId": "RF_relax",
-  "updatedAt": "2026-02-04T09:42:40.680Z",
-  "totalModelos": 4,
+  "updatedAt": "2026-02-04T09:43:44.312Z",
+  "totalModelos": 5,
   "modelos": [
+    {
+      "modelId": "relajacion-jacobson-benson",
+      "modelLabel": "Técnicas de relajación (Jacobson, Benson)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Edmund Jacobson; Herbert Benson",
+      "modelYear": 1938,
+      "items": [
+        {
+          "codigo": "p_relax_jacobson_clasica",
+          "nombre": "Relajación Muscular Progresiva (Jacobson) – versión clásica por grupos",
+          "texto": "Procedimiento secuencial en el que el paciente tensa de forma breve y controlada (sin dolor) y después suelta de manera completa distintos grupos musculares en un orden pautado (manos/brazos, cara/cuello, hombros/pecho, abdomen/espalda, piernas/pies), entrenando la discriminación fina entre tensión y relajación y reduciendo el tono muscular basal asociado a ansiedad; la repetición consolida una vía de autorregulación somática y mejora la detección temprana de microtensiones que preceden a la escalada autonómica. (Jacobson, 1938).",
+          "sub": "RF_relax",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_jacobson_abreviada",
+          "nombre": "Relajación Muscular Progresiva abreviada",
+          "texto": "Versión condensada de la RMP que mantiene la lógica tensión–soltura pero reduce el número de grupos y el tiempo total, priorizando zonas diana (mandíbula, hombros, abdomen, manos) para aumentar adherencia y uso en el día a día; se emplea como entrenamiento y también como intervención rápida cuando sube la activación, facilitando una bajada autonómica sin necesidad de un protocolo largo. (Jacobson, 1938).",
+          "sub": "RF_relax",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_diferencial",
+          "nombre": "Relajación Diferencial (Jacobson)",
+          "texto": "Procedimiento destinado a aprender a mantener relajados los músculos no implicados en una actividad mientras se usa solo la tensión mínima necesaria para la tarea (p. ej., escribir, conducir, trabajar frente a pantalla), reduciendo la sobrecontracción crónica y el gasto fisiológico; es especialmente útil en personas con hipercontrol y tensión basal alta porque traslada la relajación al funcionamiento cotidiano, no solo a momentos de práctica. (Jacobson, 1938).",
+          "sub": "RF_relax",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_aplicada",
+          "nombre": "Relajación Aplicada (applied relaxation)",
+          "texto": "Procedimiento que entrena la capacidad de inducir relajación de forma cada vez más rápida y portable (de minutos a segundos) y aplicarla inmediatamente cuando aparecen señales tempranas de ansiedad, combinando conciencia de señales, liberación muscular rápida y práctica en situaciones progresivamente más activadoras; se usa como puente hacia exposición o afrontamiento, porque permite entrar en contextos temidos con un recurso regulador disponible. (Jacobson, 1938).",
+          "sub": "RF_relax",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_release_awareness",
+          "nombre": "Liberación por conciencia (release by awareness)",
+          "texto": "Procedimiento en el que el paciente dirige atención suave a una zona corporal y permite que la tensión se reorganice y afloje sin un ciclo previo de tensión voluntaria, lo que lo hace especialmente adecuado cuando tensar activa más, hay hipervigilancia corporal o sensibilidad traumática; potencia confianza corporal y regulación desde seguridad y control interno. (Jacobson, 1938).",
+          "sub": "RF_relax",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_imagineria",
+          "nombre": "Relajación con imaginería calmante (visualización de seguridad)",
+          "texto": "Procedimiento en el que se combina inducción fisiológica de calma (respiración lenta o soltura muscular) con imaginería de un lugar seguro o escena tranquilizadora, usando detalles sensoriales para intensificar el efecto parasimpático y generar un ancla mental reproducible; se emplea para bajar activación y también para crear un recurso previo a exposición o a situaciones estresantes. (Benson, 1975).",
+          "sub": "RF_relax",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_audio_guia",
+          "nombre": "Relajación autoaplicada con audio-guía (entrenamiento domiciliario)",
+          "texto": "Procedimiento de consolidación basado en práctica regular fuera de sesión mediante audios estructurados (RMP, body scan o respiración guiada), con registro breve de frecuencia, dificultad y efecto percibido; su función es transformar la relajación en hábito, aumentar generalización y reducir dependencia de la sesión como único contexto regulador. (Jacobson, 1938; Benson, 1975).",
+          "sub": "RF_relax",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_relax_soltura_post_tension",
+          "nombre": "Soltura voluntaria tras tensión breve",
+          "texto": "Intervención breve en la que, tras una contracción muscular ligera y controlada, se enfatiza la fase de soltura completa, focalizando la atención en la diferencia sensorial entre ambos estados; refuerza el aprendizaje somático de relajación y acelera la reducción del tono muscular basal. (Jacobson, 1938).",
+          "sub": "RF_relax",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_relax_automensaje_soltura",
+          "nombre": "Automensaje de soltura en la exhalación",
+          "texto": "Asociación de palabras internas simples como “soltar”, “aflojar” o “descansar” con la fase de exhalación para condicionar una respuesta de liberación somática y reducir la valoración amenazante de la tensión corporal. (Jacobson, 1938).",
+          "sub": "RF_relax",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_relax_microtensiones",
+          "nombre": "Liberación pasiva de microtensiones",
+          "texto": "Identificación y liberación consciente de microtensiones habituales (mandíbula, lengua, hombros, abdomen, glúteos) sin contracción previa, entrenando una postura corporal más suelta y previniendo la acumulación crónica de activación somática. (Jacobson, 1938).",
+          "sub": "RF_relax",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "relajacion-jacobson-benson",
       "modelLabel": "Técnicas de relajación (Jacobson, Benson)",
