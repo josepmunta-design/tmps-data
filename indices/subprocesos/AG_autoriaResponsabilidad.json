@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-02-04T08:50:01.772Z",
-  "totalModelos": 41,
+  "updatedAt": "2026-02-04T08:56:49.742Z",
+  "totalModelos": 42,
   "modelos": [
     {
       "modelId": "condicionamiento-aversivo",
@@ -749,6 +749,43 @@
           "codigo": "m_linares_excepciones",
           "nombre": "Detectar excepción funcional",
           "texto": "Buscar momentos donde el ciclo no se activó o se reparó. Extraer qué hicieron distinto y cómo replicarlo.",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-centrada-soluciones-1982",
+      "modelLabel": "Terapia centrada en soluciones",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Steve de Shazer; Insoo Kim Berg",
+      "modelYear": 1982,
+      "items": [
+        {
+          "codigo": "p_sfbt_exploracion_excepciones",
+          "nombre": "Exploración de excepciones",
+          "texto": "Procedimiento sistemático para identificar momentos (pasados, recientes o actuales) en los que el problema no aparece, aparece menos, o el cliente logra responder de una manera más útil, incluso si fue breve o accidental. Se exploran condiciones contextuales (dónde, cuándo, con quién), decisiones o microconductas del cliente, y qué diferencia concreta produjo un resultado mejor; luego se formula cómo repetir o amplificar esa excepción de forma deliberada. El objetivo no es “buscar lo positivo”, sino extraer del funcionamiento real del cliente un patrón de eficacia ya existente, convertirlo en una pauta replicable y expandir su repertorio de acción. Referencia: de Shazer (1985); Berg & De Jong (1996).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sfbt_cambio_pre_sesion",
+          "nombre": "Pregunta de cambio pre-sesión",
+          "texto": "Procedimiento breve al inicio de cada sesión que explora si algo ha ido mejor desde que se pidió cita o desde la última sesión, incluso si el cambio parece pequeño o no intencional. La intervención capitaliza mejoras espontáneas, identifica condiciones que las favorecieron y convierte esos microcambios en evidencia de capacidad y dirección, evitando que la conversación se reinicie siempre desde el problema. Además, refuerza la expectativa de progreso y orienta la sesión hacia amplificación de lo útil en lugar de repetición de quejas. Referencia: Berg & De Jong (1996); De Jong & Berg (2013).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sfbt_mantenimiento",
+          "nombre": "Pregunta de mantenimiento del cambio",
+          "texto": "Microintervención orientada a identificar qué está haciendo el cliente para que la situación no empeore o para mantener pequeñas mejoras, reforzando autoría y percepción de eficacia incluso antes de lograr el objetivo completo. Referencia: De Jong & Berg (2013).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sfbt_coherencia_objetivo",
+          "nombre": "Señalar coherencia entre objetivo y acción",
+          "texto": "Microintervención que conecta explícitamente una acción reciente del cliente con el objetivo formulado, ayudando a consolidar sentido de dirección y coherencia entre lo que se quiere y lo que se hace. Referencia: Berg & De Jong (1996).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }

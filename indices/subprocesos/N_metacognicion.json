@@ -1,6 +1,6 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-04T08:50:01.772Z",
+  "updatedAt": "2026-02-04T08:56:49.742Z",
   "totalModelos": 60,
   "modelos": [
     {
@@ -2170,23 +2170,58 @@
       "modelYear": 1982,
       "items": [
         {
-          "codigo": "p_sfbt_excepciones",
-          "nombre": "Exploración de excepciones",
-          "texto": "Identificación de momentos en los que el problema no ocurre o es menos intenso. Estas excepciones revelan recursos ya existentes que pueden ampliarse.",
-          "sub": "N_metacognicion",
-          "tipo": "procedimiento"
-        },
-        {
-          "codigo": "p_sfbt_escalas",
+          "codigo": "p_sfbt_escalas_0_10",
           "nombre": "Escalas de progreso (0–10)",
-          "texto": "Herramienta para evaluar progreso, motivación y confianza. Facilita microobjetivos y refuerza avances parciales.",
+          "texto": "Procedimiento de monitorización y microplanificación que convierte constructos vagos (motivación, esperanza, control, confianza, intensidad del problema) en una medida subjetiva simple (0–10) para anclar la conversación al avance incremental. Tras ubicar el número, el terapeuta explora qué hace que no sea más bajo (recursos ya presentes), qué tendría que ocurrir para subir medio punto o un punto (microacciones), y cómo sabrá el cliente que ha subido (señales observables). Las escalas funcionan también como herramienta de alianza porque permiten ajustar ritmo y tareas al nivel real del cliente y detectar estancamientos sin confrontación. Referencia: Berg & De Jong (1996); De Jong & Berg (2013).",
           "sub": "N_metacognicion",
           "tipo": "procedimiento"
         },
         {
-          "codigo": "m_sfbt_diferencias",
+          "codigo": "p_sfbt_exploracion_excepciones",
+          "nombre": "Exploración de excepciones",
+          "texto": "Procedimiento sistemático para identificar momentos (pasados, recientes o actuales) en los que el problema no aparece, aparece menos, o el cliente logra responder de una manera más útil, incluso si fue breve o accidental. Se exploran condiciones contextuales (dónde, cuándo, con quién), decisiones o microconductas del cliente, y qué diferencia concreta produjo un resultado mejor; luego se formula cómo repetir o amplificar esa excepción de forma deliberada. El objetivo no es “buscar lo positivo”, sino extraer del funcionamiento real del cliente un patrón de eficacia ya existente, convertirlo en una pauta replicable y expandir su repertorio de acción. Referencia: de Shazer (1985); Berg & De Jong (1996).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sfbt_cambio_pre_sesion",
+          "nombre": "Pregunta de cambio pre-sesión",
+          "texto": "Procedimiento breve al inicio de cada sesión que explora si algo ha ido mejor desde que se pidió cita o desde la última sesión, incluso si el cambio parece pequeño o no intencional. La intervención capitaliza mejoras espontáneas, identifica condiciones que las favorecieron y convierte esos microcambios en evidencia de capacidad y dirección, evitando que la conversación se reinicie siempre desde el problema. Además, refuerza la expectativa de progreso y orienta la sesión hacia amplificación de lo útil en lugar de repetición de quejas. Referencia: Berg & De Jong (1996); De Jong & Berg (2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sfbt_consolidacion_prevencion",
+          "nombre": "Consolidación y prevención de recaídas (mantener lo que funciona)",
+          "texto": "Procedimiento final (o de fases avanzadas) que identifica qué cambios ya están estabilizados, qué condiciones los mantienen y qué señales tempranas indicarían retroceso, diseñando respuestas simples y tempranas para sostener el progreso. En lugar de centrarse en “riesgos” como déficits, se construye un plan de mantenimiento basado en lo que ya funciona: rutinas, conversaciones útiles, apoyos, decisiones y límites que el cliente puede repetir cuando aparezcan dificultades. El objetivo es que el cliente salga con un mapa pragmático de continuidad del cambio, compatible con la filosofía breve del modelo. Referencia: De Jong & Berg (2013); Berg & De Jong (1996).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sfbt_avance_minimo",
+          "nombre": "Pregunta de avance mínimo",
+          "texto": "Microintervención que explora qué tendría que pasar para que el cliente suba solo medio punto o un punto en una escala de progreso, reduciendo la exigencia de cambio global y favoreciendo decisiones pequeñas y viables. Este enfoque disminuye bloqueo y perfeccionismo, traduce objetivos abstractos en acciones concretas y refuerza la percepción de control personal sobre el cambio. Referencia: Berg & De Jong (1996); De Jong & Berg (2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sfbt_diferencias_utiles",
           "nombre": "Señalar diferencias útiles",
-          "texto": "Destacar cambios sutiles para consolidarlos como evidencia de progreso.",
+          "texto": "Microintervención consistente en destacar diferencias sutiles entre momentos problemáticos y momentos ligeramente mejores (más calma, menos intensidad, respuestas distintas), ayudando al cliente a percibir variabilidad donde antes veía el problema como constante. Estas diferencias se convierten en pistas clínicas para ampliar excepciones y consolidar progreso. Referencia: de Shazer (1985).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sfbt_excepcion_parcial",
+          "nombre": "Pregunta de excepción parcial",
+          "texto": "Microintervención que explora situaciones en las que el problema estuvo presente pero fue menos intenso o duró menos tiempo, ampliando el campo de excepciones más allá del todo/nada. Facilita detectar microhabilidades ya disponibles en el cliente. Referencia: de Shazer (1985).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sfbt_mantenimiento",
+          "nombre": "Pregunta de mantenimiento del cambio",
+          "texto": "Microintervención orientada a identificar qué está haciendo el cliente para que la situación no empeore o para mantener pequeñas mejoras, reforzando autoría y percepción de eficacia incluso antes de lograr el objetivo completo. Referencia: De Jong & Berg (2013).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

@@ -1,6 +1,6 @@
 {
   "subprocesoId": "ALI_monitorizacion",
-  "updatedAt": "2026-02-04T08:50:01.772Z",
+  "updatedAt": "2026-02-04T08:56:49.742Z",
   "totalModelos": 18,
   "modelos": [
     {
@@ -374,9 +374,16 @@
       "modelYear": 1982,
       "items": [
         {
-          "codigo": "m_sfbt_utilidad",
-          "nombre": "Chequeo de utilidad",
-          "texto": "Preguntar explícitamente si la conversación está siendo útil para ajustar la intervención.",
+          "codigo": "p_sfbt_escalas_0_10",
+          "nombre": "Escalas de progreso (0–10)",
+          "texto": "Procedimiento de monitorización y microplanificación que convierte constructos vagos (motivación, esperanza, control, confianza, intensidad del problema) en una medida subjetiva simple (0–10) para anclar la conversación al avance incremental. Tras ubicar el número, el terapeuta explora qué hace que no sea más bajo (recursos ya presentes), qué tendría que ocurrir para subir medio punto o un punto (microacciones), y cómo sabrá el cliente que ha subido (señales observables). Las escalas funcionan también como herramienta de alianza porque permiten ajustar ritmo y tareas al nivel real del cliente y detectar estancamientos sin confrontación. Referencia: Berg & De Jong (1996); De Jong & Berg (2013).",
+          "sub": "ALI_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sfbt_chequeo_utilidad",
+          "nombre": "Chequeo explícito de utilidad",
+          "texto": "Microintervención que pregunta de forma directa si la conversación, la pregunta o la tarea están siendo útiles para el cliente, permitiendo ajustar el rumbo sin confrontación. Este chequeo protege la alianza y refuerza la posición colaborativa y no experta del terapeuta. Referencia: De Jong & Berg (2013).",
           "sub": "ALI_monitorizacion",
           "tipo": "micro"
         }

@@ -1,6 +1,6 @@
 {
   "subprocesoId": "RE_aceptacion",
-  "updatedAt": "2026-02-04T08:50:01.772Z",
+  "updatedAt": "2026-02-04T08:56:49.742Z",
   "totalModelos": 32,
   "modelos": [
     {
@@ -697,11 +697,18 @@
       "modelYear": 1982,
       "items": [
         {
-          "codigo": "p_sfbt_excepciones",
-          "nombre": "Exploración de excepciones",
-          "texto": "Identificación de momentos en los que el problema no ocurre o es menos intenso. Estas excepciones revelan recursos ya existentes que pueden ampliarse.",
+          "codigo": "p_sfbt_preguntas_afrontamiento",
+          "nombre": "Preguntas de afrontamiento (coping questions)",
+          "texto": "Procedimiento para momentos de desesperanza, depresión o bloqueo en el que se explora cómo el cliente ha conseguido sostenerse pese a la situación (“¿cómo has aguantado hasta ahora?”, “¿qué te ayuda a que no sea peor?”). Estas preguntas hacen visibles competencias invisibles (persistencia, cuidado de otros, autocontrol, búsqueda de ayuda), reducen culpa o vergüenza y reconstruyen la autoimagen como alguien que ya está haciendo algo eficaz. A partir de ahí se seleccionan uno o dos recursos para amplificarlos de manera concreta, manteniendo el foco en lo que funciona sin negar el dolor. Referencia: Berg & De Jong (1996); De Jong & Berg (2013).",
           "sub": "RE_aceptacion",
           "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sfbt_normalizacion",
+          "nombre": "Normalización pragmática del estancamiento",
+          "texto": "Microintervención que normaliza momentos sin avance o con retrocesos leves como parte esperable del proceso de cambio, evitando que el cliente interprete la ausencia de mejora como fracaso personal. Mantiene esperanza realista y continuidad del trabajo orientado a soluciones. Referencia: Berg & De Jong (1996).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
         }
       ]
     },
