@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-02-04T11:11:56.942Z",
-  "totalModelos": 21,
+  "updatedAt": "2026-02-04T11:18:41.916Z",
+  "totalModelos": 22,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -392,6 +392,29 @@
           "codigo": "m_emdr_cognicion_negativa",
           "nombre": "Identificación de cognición negativa",
           "texto": "Detección de la creencia nuclear disfuncional asociada al recuerdo traumático (por ejemplo, \"estoy en peligro\", \"no tengo control\", \"soy defectuoso\"). Esta cognición organiza la respuesta emocional y conductual actual, y su transformación es un marcador clave de integración adaptativa. Referencia: Shapiro, F. (2001).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ibct-christensen-jacobson-1995",
+      "modelLabel": "Integrative Behavioral Couple Therapy (IBCT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Andrew Christensen; Neil S. Jacobson",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_ibct_evaluacion_funcional",
+          "nombre": "Evaluación funcional del conflicto de pareja",
+          "texto": "Procedimiento inicial orientado a identificar los patrones repetidos de interacción que mantienen el conflicto de pareja, analizando antecedentes, conductas y consecuencias en ambos miembros. La evaluación funcional desplaza el foco de la culpa individual hacia la comprensión del ciclo relacional, permitiendo que la pareja empiece a verse como atrapada en un proceso compartido más que enfrentada entre sí. Este encuadre reduce defensividad y sienta las bases para el trabajo de aceptación posterior. (Jacobson & Christensen, 1996).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ibct_polarizacion",
+          "nombre": "Nombrar la polarización relacional",
+          "texto": "Microintervención que hace explícita la danza de polarización (perseguidor–retirado, controlador–evitativo) en tiempo real, sin asignar culpables. Al nombrar el ciclo mientras ocurre, se interrumpe la escalada automática y se favorece una toma de conciencia compartida del proceso interactivo. (Christensen et al., 2015).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }

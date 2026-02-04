@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-04T11:11:56.942Z",
-  "totalModelos": 55,
+  "updatedAt": "2026-02-04T11:18:41.916Z",
+  "totalModelos": 56,
   "modelos": [
     {
       "modelId": "entrenamiento-habilidades-sociales",
@@ -576,6 +576,29 @@
           "codigo": "m_emdr_cierre",
           "nombre": "Cierre regulador de sesión",
           "texto": "Microintervención orientada a devolver al paciente a un estado de estabilidad emocional y orientación temporal al final de la sesión, especialmente si el reprocesamiento no ha concluido. Previene activación residual y favorece sensación de control. Referencia: Shapiro, F. (2001).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ibct-christensen-jacobson-1995",
+      "modelLabel": "Integrative Behavioral Couple Therapy (IBCT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Andrew Christensen; Neil S. Jacobson",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_ibct_desescalada",
+          "nombre": "Desescalada de patrones coercitivos",
+          "texto": "Procedimiento orientado a interrumpir ciclos de interacción caracterizados por crítica, retirada, control o escalada emocional. El terapeuta interviene activamente para ralentizar la interacción, modular la activación afectiva y promover respuestas menos reactivas. La desescalada no busca resolver el conflicto de fondo, sino crear condiciones emocionales mínimas para un trabajo relacional más profundo. (Christensen et al., 2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ibct_pausa",
+          "nombre": "Pausa terapéutica de desescalada",
+          "texto": "Microintervención directa para detener momentáneamente una escalada emocional en sesión mediante ralentización, cambio de foco o intervención reguladora del terapeuta. No busca resolver el contenido, sino restaurar condiciones mínimas de seguridad y contacto relacional. (Christensen et al., 2015).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_interaccion",
-  "updatedAt": "2026-02-04T11:11:56.942Z",
-  "totalModelos": 12,
+  "updatedAt": "2026-02-04T11:18:41.916Z",
+  "totalModelos": 13,
   "modelos": [
     {
       "modelId": "polaridades-semanticas",
@@ -67,6 +67,36 @@
           "codigo": "m_eft_tracking",
           "nombre": "Seguimiento del ciclo en vivo",
           "texto": "Intervención de micro-seguimiento donde el terapeuta señala en tiempo real cómo el ciclo negativo se activa durante la sesión. Este tracking aumenta la conciencia relacional y permite interrumpir el patrón antes de que escale (Johnson, 2004).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ibct-christensen-jacobson-1995",
+      "modelLabel": "Integrative Behavioral Couple Therapy (IBCT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Andrew Christensen; Neil S. Jacobson",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_ibct_desescalada",
+          "nombre": "Desescalada de patrones coercitivos",
+          "texto": "Procedimiento orientado a interrumpir ciclos de interacción caracterizados por crítica, retirada, control o escalada emocional. El terapeuta interviene activamente para ralentizar la interacción, modular la activación afectiva y promover respuestas menos reactivas. La desescalada no busca resolver el conflicto de fondo, sino crear condiciones emocionales mínimas para un trabajo relacional más profundo. (Christensen et al., 2015).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ibct_pausa",
+          "nombre": "Pausa terapéutica de desescalada",
+          "texto": "Microintervención directa para detener momentáneamente una escalada emocional en sesión mediante ralentización, cambio de foco o intervención reguladora del terapeuta. No busca resolver el contenido, sino restaurar condiciones mínimas de seguridad y contacto relacional. (Christensen et al., 2015).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ibct_reflejo_vivo",
+          "nombre": "Reflejar el patrón en tiempo real",
+          "texto": "Intervención en la que el terapeuta describe de forma inmediata y concreta lo que está ocurriendo entre la pareja en ese momento (tono, retirada, ataque, silencios), ayudando a hacer consciente el proceso interactivo mientras se despliega. Potencia aprendizaje experiencial directo. (Christensen & Jacobson, 1996).",
           "sub": "R_sist_interaccion",
           "tipo": "micro"
         }
