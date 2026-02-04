@@ -1,8 +1,108 @@
 {
   "subprocesoId": "RF_intero",
-  "updatedAt": "2026-02-04T09:36:47.727Z",
-  "totalModelos": 9,
+  "updatedAt": "2026-02-04T09:42:40.680Z",
+  "totalModelos": 10,
   "modelos": [
+    {
+      "modelId": "relajacion-jacobson-benson",
+      "modelLabel": "Técnicas de relajación (Jacobson, Benson)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Edmund Jacobson; Herbert Benson",
+      "modelYear": 1938,
+      "items": [
+        {
+          "codigo": "p_relax_jacobson_clasica",
+          "nombre": "Relajación Muscular Progresiva (Jacobson) – versión clásica por grupos",
+          "texto": "Procedimiento secuencial en el que el paciente tensa de forma breve y controlada (sin dolor) y después suelta de manera completa distintos grupos musculares en un orden pautado (manos/brazos, cara/cuello, hombros/pecho, abdomen/espalda, piernas/pies), entrenando la discriminación fina entre tensión y relajación y reduciendo el tono muscular basal asociado a ansiedad; la repetición consolida una vía de autorregulación somática y mejora la detección temprana de microtensiones que preceden a la escalada autonómica. (Jacobson, 1938).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_jacobson_abreviada",
+          "nombre": "Relajación Muscular Progresiva abreviada",
+          "texto": "Versión condensada de la RMP que mantiene la lógica tensión–soltura pero reduce el número de grupos y el tiempo total, priorizando zonas diana (mandíbula, hombros, abdomen, manos) para aumentar adherencia y uso en el día a día; se emplea como entrenamiento y también como intervención rápida cuando sube la activación, facilitando una bajada autonómica sin necesidad de un protocolo largo. (Jacobson, 1938).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_diferencial",
+          "nombre": "Relajación Diferencial (Jacobson)",
+          "texto": "Procedimiento destinado a aprender a mantener relajados los músculos no implicados en una actividad mientras se usa solo la tensión mínima necesaria para la tarea (p. ej., escribir, conducir, trabajar frente a pantalla), reduciendo la sobrecontracción crónica y el gasto fisiológico; es especialmente útil en personas con hipercontrol y tensión basal alta porque traslada la relajación al funcionamiento cotidiano, no solo a momentos de práctica. (Jacobson, 1938).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_release_awareness",
+          "nombre": "Liberación por conciencia (release by awareness)",
+          "texto": "Procedimiento en el que el paciente dirige atención suave a una zona corporal y permite que la tensión se reorganice y afloje sin un ciclo previo de tensión voluntaria, lo que lo hace especialmente adecuado cuando tensar activa más, hay hipervigilancia corporal o sensibilidad traumática; potencia confianza corporal y regulación desde seguridad y control interno. (Jacobson, 1938).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_benson_estandar",
+          "nombre": "Respuesta de Relajación (Benson) – protocolo estándar",
+          "texto": "Inducción deliberada de un estado psicofisiológico opuesto al estrés mediante cuatro componentes: postura cómoda, foco repetitivo (palabra, frase, sonido o respiración), actitud pasiva ante distracciones y práctica regular; el objetivo es activar parasimpático, reducir reactividad y entrenar una respuesta condicionada de calma que pueda replicarse como hábito diario y como recurso ante estrés mantenido. (Benson, 1975).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_interoceptivo_calma",
+          "nombre": "Entrenamiento interoceptivo de calma (anclaje en sensaciones de seguridad)",
+          "texto": "Procedimiento que entrena la capacidad de percibir y sostener sensaciones corporales de baja activación (peso, apoyo, temperatura, expansión torácica) sin juicio ni urgencia de control, consolidando una relación más segura con la experiencia interna; reduce miedo a sensaciones y prepara el terreno para regulación emocional y para trabajos posteriores de procesamiento. (Benson, 1975).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relax_body_scan",
+          "nombre": "Escaneo corporal guiado (body scan)",
+          "texto": "Recorrido guiado de la atención por el cuerpo (de pies a cabeza o viceversa) observando sensaciones de tensión, vibración, vacío o calor sin forzar cambios inmediatos; favorece presencia corporal, reduce fusión ansiosa con síntomas somáticos y facilita una relajación progresiva inducida por atención sostenida, siendo útil tanto para insomnio como para somatización y ansiedad generalizada. (Benson, 1975).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_relax_discriminacion_tensional",
+          "nombre": "Discriminación tensional fina",
+          "texto": "Microintervención destinada a entrenar la percepción de diferencias sutiles entre estados de tensión y relajación en zonas corporales específicas, ayudando al paciente a reconocer activación temprana antes de que escale a ansiedad plena; esta habilidad es central en el enfoque de Jacobson porque convierte la regulación somática en un proceso consciente y prevenible. (Jacobson, 1938).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_relax_microtensiones",
+          "nombre": "Liberación pasiva de microtensiones",
+          "texto": "Identificación y liberación consciente de microtensiones habituales (mandíbula, lengua, hombros, abdomen, glúteos) sin contracción previa, entrenando una postura corporal más suelta y previniendo la acumulación crónica de activación somática. (Jacobson, 1938).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_relax_anclaje_seguridad",
+          "nombre": "Anclaje atencional en sensación de seguridad corporal",
+          "texto": "Microintervención que guía la atención hacia sensaciones corporales neutras o agradables (peso, apoyo, calor, contacto con la superficie) para consolidar una experiencia implícita de seguridad fisiológica y reducir hipervigilancia somática. (Benson, 1975).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_relax_escaneo_zonas",
+          "nombre": "Escaneo puntual de zonas diana",
+          "texto": "Breve recorrido atencional por zonas corporales especialmente reactivas para el paciente, con el fin de detectar activación temprana y aplicar soltura inmediata sin necesidad de un escaneo corporal completo. (Jacobson, 1938).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_relax_senales_tempranas",
+          "nombre": "Señalización temprana de activación",
+          "texto": "Intervención breve orientada a identificar señales corporales iniciales de activación (rigidez mandibular, respiración alta, presión torácica) y nombrarlas como indicadores de acción reguladora inmediata, fortaleciendo autoría y prevención. (Jacobson, 1938).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_relax_cierre_integrativo",
+          "nombre": "Cierre corporal integrativo",
+          "texto": "Microintervención de cierre que invita a registrar y verbalizar brevemente el estado corporal tras la práctica, facilitando integración consciente del cambio fisiológico y aumentando probabilidad de generalización fuera de sesión. (Benson, 1975).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "eoria-bifactorial-ansiedad-mowrer",
       "modelLabel": "Teoría bifactorial de la ansiedad",
