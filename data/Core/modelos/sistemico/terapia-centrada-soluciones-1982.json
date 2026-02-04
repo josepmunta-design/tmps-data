@@ -73,82 +73,203 @@
     "ALI_monitorizacion": "La alianza se monitoriza mediante feedback continuo sobre utilidad y progreso.",
     "ALI_contexto": "Se consideran recursos y restricciones contextuales reales para asegurar viabilidad del cambio."
   },
+"ideasPrincipales": [
+  {
+    "id": "idea_sfbt_1",
+    "titulo": "No es necesario comprender el origen del problema para generar cambio",
+    "desarrollo": "La Terapia Centrada en Soluciones sostiene que el cambio terapéutico no requiere analizar las causas históricas del problema ni sus mecanismos de mantenimiento. Comprender por qué algo ocurre no es condición necesaria para que deje de ocurrir. El foco clínico se desplaza hacia lo que el cliente quiere que sea diferente y hacia las condiciones prácticas que permitirían que ese cambio empiece a suceder. Esta orientación reduce rumiación causal y acelera la movilización de recursos. (de Shazer, 1985; Berg & De Jong, 1996)."
+  },
+  {
+    "id": "idea_sfbt_2",
+    "titulo": "El lenguaje no describe la realidad: la construye",
+    "desarrollo": "Desde una epistemología constructivista y de segundo orden, la Terapia Centrada en Soluciones entiende que las descripciones que se hacen del problema y del cambio configuran la experiencia misma. Conversaciones centradas en déficit y fracaso estrechan el campo de posibilidades, mientras que conversaciones orientadas a soluciones generan nuevas realidades operables. El cambio terapéutico ocurre a través de nuevas formas de hablar que habilitan nuevas formas de actuar. (de Shazer, 1984; de Shazer, 1985)."
+  },
+  {
+    "id": "idea_sfbt_3",
+    "titulo": "El cliente es el experto en su vida y en sus soluciones",
+    "desarrollo": "La Terapia Centrada en Soluciones adopta una postura explícitamente no experta por parte del terapeuta, reconociendo que el cliente posee conocimiento privilegiado sobre lo que le funciona, sus valores y su contexto. El rol del terapeuta es facilitar una conversación que haga visible ese saber práctico, no imponer interpretaciones ni prescripciones externas. Esta postura fortalece agencia, colaboración y responsabilidad personal. (Berg & De Jong, 1996)."
+  },
+  {
+    "id": "idea_sfbt_4",
+    "titulo": "Siempre existen excepciones al problema",
+    "desarrollo": "Incluso los problemas más persistentes presentan momentos en los que no aparecen, aparecen con menor intensidad o se gestionan mejor. La Terapia Centrada en Soluciones asume que estas excepciones no son irrelevantes ni accidentales, sino la clave del cambio. Identificarlas y ampliarlas permite construir soluciones a partir del funcionamiento real del cliente, en lugar de intentar crear habilidades completamente nuevas. (de Shazer, 1985)."
+  },
+  {
+    "id": "idea_sfbt_5",
+    "titulo": "Pequeños cambios pueden generar transformaciones sostenidas",
+    "desarrollo": "El modelo se basa en una lógica de diferencias mínimas: no es necesario un cambio radical para que el sistema empiece a reorganizarse. Pequeñas variaciones en conducta, percepción o interacción pueden producir efectos acumulativos y no lineales. Por ello, la terapia se orienta a microacciones viables que, una vez amplificadas, generan cambios duraderos. (de Shazer, 1985; Berg & De Jong, 1996)."
+  },
+  {
+    "id": "idea_sfbt_6",
+    "titulo": "Los objetivos claros y bien formulados organizan el proceso terapéutico",
+    "desarrollo": "El cambio se vuelve posible cuando el cliente puede describir con precisión cómo sabrá que la terapia ha sido útil. La Terapia Centrada en Soluciones da prioridad a la construcción de objetivos positivos, concretos y observables, que actúan como brújula clínica. Estos objetivos permiten evaluar progreso, diseñar tareas y mantener la conversación orientada al futuro deseado. (Berg & De Jong, 1996)."
+  },
+  {
+    "id": "idea_sfbt_7",
+    "titulo": "La utilidad pragmática es el principal criterio de verdad clínica",
+    "desarrollo": "En este enfoque, las intervenciones no se evalúan por su coherencia teórica ni por su profundidad explicativa, sino por su utilidad para el cliente. Una conversación es válida si ayuda a avanzar, independientemente de si ofrece una explicación completa del problema. Este criterio pragmático favorece flexibilidad, adaptación al contexto y una práctica clínica centrada en resultados. (de Shazer, 1985; De Jong & Berg, 2013)."
+  },
+  {
+    "id": "idea_sfbt_8",
+    "titulo": "El cambio se consolida al repetir y mantener lo que funciona",
+    "desarrollo": "La Terapia Centrada en Soluciones entiende el cierre terapéutico como un proceso de consolidación: identificar qué cambios ya están en marcha, qué condiciones los sostienen y cómo mantenerlos cuando surjan dificultades. No se trata de prevenir recaídas desde el déficit, sino de fortalecer rutinas, decisiones y conversaciones que ya han demostrado ser útiles en la vida del cliente. (De Jong & Berg, 2013; Berg & De Jong, 1996)."
+  }
+],
 
   "procedimientos": [
-    {
-      "nombre": "Pregunta milagro",
-      "codigo": "p_sfbt_pregunta_milagro",
-      "procesos": ["N_proyeccionFuturo", "AG_tomaDecisiones"],
-      "texto": "Pregunta diseñada para ayudar al cliente a describir con detalle un futuro sin el problema, clarificando objetivos y señales de cambio. Activa imaginación, esperanza y orientación a la acción."
-    },
-    {
-      "nombre": "Exploración de excepciones",
-      "codigo": "p_sfbt_excepciones",
-      "procesos": ["N_metacognicion", "RE_aceptacion"],
-      "texto": "Identificación de momentos en los que el problema no ocurre o es menos intenso. Estas excepciones revelan recursos ya existentes que pueden ampliarse."
-    },
-    {
-      "nombre": "Escalas de progreso (0–10)",
-      "codigo": "p_sfbt_escalas",
-      "procesos": ["AG_autoevaluacion", "N_metacognicion"],
-      "texto": "Herramienta para evaluar progreso, motivación y confianza. Facilita microobjetivos y refuerza avances parciales."
-    },
-    {
-      "nombre": "Definición de objetivos bien formados",
-      "codigo": "p_sfbt_objetivos",
-      "procesos": ["AG_tomaDecisiones"],
-      "texto": "Construcción de objetivos específicos, positivos y controlables por el cliente, que orientan la intervención."
-    },
-    {
-      "nombre": "Ampliación de recursos",
-      "codigo": "p_sfbt_ampliacion",
-      "procesos": ["AG_compromisoConductual"],
-      "texto": "Diseño de pequeñas acciones para repetir o intensificar conductas eficaces ya presentes en la vida del cliente."
-    },
-    {
-      "nombre": "Elogio terapéutico",
-      "codigo": "p_sfbt_elogio",
-      "procesos": ["RE_validacion"],
-      "texto": "Reconocimiento explícito de esfuerzos y competencias, fortaleciendo autoeficacia y motivación."
-    }
-  ],
+  {
+    "nombre": "Definición de objetivos bien formados",
+    "codigo": "p_sfbt_objetivos_bien_formados",
+    "procesos": ["AG_tomaDecisiones", "N_construccionAlternativa", "ALI_objetivos"],
+    "texto": "Procedimiento de arranque (y reencuadre recurrente) que transforma una queja o demanda difusa en un objetivo terapéutico concreto, positivo, observable y bajo control del cliente (qué hará/dirá/pensará diferente, en qué contextos y con qué señales visibles). El terapeuta ayuda a pasar de “quitar el problema” a “construir lo deseado”, afinando el objetivo hasta que sea describible en términos de conductas y microcambios verificables, y asegurando que el lenguaje es el del cliente y que el objetivo es viable en su contexto real. Este paso organiza toda la conversación posterior, porque permite que cada pregunta (excepciones, escalas, tareas) apunte a señales específicas de avance y consolide agencia en lugar de dependencia del terapeuta. Referencia: de Shazer (1985); Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Pregunta milagro",
+    "codigo": "p_sfbt_pregunta_milagro",
+    "procesos": ["N_construccionAlternativa", "I_selfFuturo", "AG_tomaDecisiones"],
+    "texto": "Procedimiento de construcción de futuro en el que se invita al cliente a describir con detalle sensorial y conductual cómo sería su vida si el problema desapareciera “mientras duerme” y no lo supiera aún, explorando la primera señal, las siguientes señales y qué notarían los demás. La potencia clínica no es fantasear, sino concretar indicadores de cambio (acciones, emociones, interacciones, rutinas) que luego se convierten en objetivos, tareas y criterios de progreso; además, al desplazar la conversación del porqué al cómo, aumenta esperanza pragmática y reduce rumiación causal. El terapeuta sostiene la descripción con preguntas de precisión (“¿qué es lo primero que harías diferente?”, “¿quién lo notaría?”) hasta que el futuro deseado se vuelva operable. Referencia: de Shazer (1985); Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Escalas de progreso (0–10)",
+    "codigo": "p_sfbt_escalas_0_10",
+    "procesos": ["N_metacognicion", "AG_compromisoConductual", "ALI_monitorizacion"],
+    "texto": "Procedimiento de monitorización y microplanificación que convierte constructos vagos (motivación, esperanza, control, confianza, intensidad del problema) en una medida subjetiva simple (0–10) para anclar la conversación al avance incremental. Tras ubicar el número, el terapeuta explora qué hace que no sea más bajo (recursos ya presentes), qué tendría que ocurrir para subir medio punto o un punto (microacciones), y cómo sabrá el cliente que ha subido (señales observables). Las escalas funcionan también como herramienta de alianza porque permiten ajustar ritmo y tareas al nivel real del cliente y detectar estancamientos sin confrontación. Referencia: Berg & De Jong (1996); De Jong & Berg (2013)."
+  },
+  {
+    "nombre": "Exploración de excepciones",
+    "codigo": "p_sfbt_exploracion_excepciones",
+    "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad", "R_repertorioInterpersonal"],
+    "texto": "Procedimiento sistemático para identificar momentos (pasados, recientes o actuales) en los que el problema no aparece, aparece menos, o el cliente logra responder de una manera más útil, incluso si fue breve o accidental. Se exploran condiciones contextuales (dónde, cuándo, con quién), decisiones o microconductas del cliente, y qué diferencia concreta produjo un resultado mejor; luego se formula cómo repetir o amplificar esa excepción de forma deliberada. El objetivo no es “buscar lo positivo”, sino extraer del funcionamiento real del cliente un patrón de eficacia ya existente, convertirlo en una pauta replicable y expandir su repertorio de acción. Referencia: de Shazer (1985); Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Preguntas de afrontamiento (coping questions)",
+    "codigo": "p_sfbt_preguntas_afrontamiento",
+    "procesos": ["RE_aceptacion", "I_fortalezasRecursos", "N_reformulacion"],
+    "texto": "Procedimiento para momentos de desesperanza, depresión o bloqueo en el que se explora cómo el cliente ha conseguido sostenerse pese a la situación (“¿cómo has aguantado hasta ahora?”, “¿qué te ayuda a que no sea peor?”). Estas preguntas hacen visibles competencias invisibles (persistencia, cuidado de otros, autocontrol, búsqueda de ayuda), reducen culpa o vergüenza y reconstruyen la autoimagen como alguien que ya está haciendo algo eficaz. A partir de ahí se seleccionan uno o dos recursos para amplificarlos de manera concreta, manteniendo el foco en lo que funciona sin negar el dolor. Referencia: Berg & De Jong (1996); De Jong & Berg (2013)."
+  },
+  {
+    "nombre": "Pregunta de cambio pre-sesión",
+    "codigo": "p_sfbt_cambio_pre_sesion",
+    "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento breve al inicio de cada sesión que explora si algo ha ido mejor desde que se pidió cita o desde la última sesión, incluso si el cambio parece pequeño o no intencional. La intervención capitaliza mejoras espontáneas, identifica condiciones que las favorecieron y convierte esos microcambios en evidencia de capacidad y dirección, evitando que la conversación se reinicie siempre desde el problema. Además, refuerza la expectativa de progreso y orienta la sesión hacia amplificación de lo útil en lugar de repetición de quejas. Referencia: Berg & De Jong (1996); De Jong & Berg (2013)."
+  },
+  {
+    "nombre": "Preguntas relacionales y de perspectiva (relationship questions)",
+    "codigo": "p_sfbt_preguntas_relacionales",
+    "procesos": ["R_mentalizacion", "R_comunicacionEmocional", "N_construccionAlternativa"],
+    "texto": "Procedimiento que invita al cliente a describir cómo notarían el cambio otras personas significativas y qué harían diferente en respuesta (pareja, hijos, jefe, amigos), introduciendo perspectiva interpersonal sin patologizar ni buscar culpables. Sirve para concretar indicadores observables del objetivo, anticipar obstáculos y diseñar microconductas comunicacionales que aumenten probabilidades de cambio. En terapia sistémica breve, estas preguntas ayudan a desplazar el foco del “yo soy el problema” o “ellos son el problema” hacia patrones interactivos y señales relacionales de progreso. Referencia: de Shazer (1985); Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Amplificación de recursos y excepciones (tareas entre sesiones)",
+    "codigo": "p_sfbt_amplificacion_tareas",
+    "procesos": ["AG_compromisoConductual", "R_repertorioInterpersonal", "I_fortalezasRecursos"],
+    "texto": "Procedimiento para traducir lo descubierto en sesión (excepciones, recursos, señales del milagro) en acciones pequeñas, concretas y sostenibles entre sesiones, con instrucciones formuladas como experimentos y no como exigencias. Las tareas típicas consisten en repetir lo que ya funciona, hacerlo un poco más, o hacer algo distinto una vez en un contexto específico, registrando qué diferencia produce. El objetivo es generar evidencia vivida que consolide autoeficacia, amplíe repertorio conductual y mantenga la terapia breve orientada a resultados. Referencia: de Shazer (1985); Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Elogio terapéutico (compliments)",
+    "codigo": "p_sfbt_elogio_terapeutico",
+    "procesos": ["I_autoimagen", "RE_reapreciacion", "ALI_vinculo"],
+    "texto": "Procedimiento de reconocimiento explícito, específico y vinculado a conductas/decisiones reales del cliente (no halagos genéricos) para fortalecer la autoimagen, aumentar motivación y estabilizar la alianza. En SFBT, el elogio es una intervención estratégica: señala competencias ya demostradas, valida esfuerzos invisibles y refuerza direcciones útiles de cambio. Se formula con lenguaje del cliente y suele conectarse con la tarea entre sesiones (“esto que hiciste sugiere que puedes…”), evitando que el paciente lo viva como manipulación. Referencia: Berg & De Jong (1996); De Jong & Berg (2013)."
+  },
+  {
+    "nombre": "Intervención de pausa y mensaje (break + message)",
+    "codigo": "p_sfbt_break_message",
+    "procesos": ["ALI_tareas", "N_reformulacion", "AG_compromisoConductual"],
+    "texto": "Procedimiento clásico de la tradición breve en el que el terapeuta hace una breve pausa (a veces con equipo) para sintetizar en un mensaje final tres elementos: validación/elogio, reformulación útil centrada en recursos, y una sugerencia/tarea concreta para la próxima semana. La estructura del mensaje actúa como cierre ritual, aumenta claridad, protege la alianza y facilita que el cliente salga de sesión con una pauta accionable alineada con objetivos y excepciones. Referencia: de Shazer (1985); Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Consolidación y prevención de recaídas (mantener lo que funciona)",
+    "codigo": "p_sfbt_consolidacion_prevencion",
+    "procesos": ["AG_compromisoConductual", "N_metacognicion", "R_reparacionRelacional"],
+    "texto": "Procedimiento final (o de fases avanzadas) que identifica qué cambios ya están estabilizados, qué condiciones los mantienen y qué señales tempranas indicarían retroceso, diseñando respuestas simples y tempranas para sostener el progreso. En lugar de centrarse en “riesgos” como déficits, se construye un plan de mantenimiento basado en lo que ya funciona: rutinas, conversaciones útiles, apoyos, decisiones y límites que el cliente puede repetir cuando aparezcan dificultades. El objetivo es que el cliente salga con un mapa pragmático de continuidad del cambio, compatible con la filosofía breve del modelo. Referencia: De Jong & Berg (2013); Berg & De Jong (1996)."
+  }
+],
 
-  "micros": [
-    {
-      "nombre": "Pregunta de avance mínimo",
-      "codigo": "m_sfbt_avance_minimo",
-      "procesos": ["AG_tomaDecisiones"],
-      "texto": "Explorar qué tendría que pasar para subir solo un punto en la escala, facilitando cambios pequeños y viables."
-    },
-    {
-      "nombre": "Reformulación positiva",
-      "codigo": "m_sfbt_reformulacion",
-      "procesos": ["N_reformulacion"],
-      "texto": "Transformar descripciones problemáticas en lenguaje de capacidad y recurso."
-    },
-    {
-      "nombre": "Señalar diferencias útiles",
-      "codigo": "m_sfbt_diferencias",
-      "procesos": ["N_metacognicion"],
-      "texto": "Destacar cambios sutiles para consolidarlos como evidencia de progreso."
-    },
-    {
-      "nombre": "Chequeo de utilidad",
-      "codigo": "m_sfbt_utilidad",
-      "procesos": ["ALI_monitorizacion"],
-      "texto": "Preguntar explícitamente si la conversación está siendo útil para ajustar la intervención."
-    },
-    {
-      "nombre": "Lenguaje del cliente",
-      "codigo": "m_sfbt_lenguaje_cliente",
-      "procesos": ["ALI_sintonia"],
-      "texto": "Adoptar palabras y metáforas del cliente para fortalecer alianza y coherencia narrativa."
-    }
-  ],
+"micros": [
+  {
+    "nombre": "Pregunta de avance mínimo",
+    "codigo": "m_sfbt_avance_minimo",
+    "procesos": ["AG_tomaDecisiones", "N_metacognicion"],
+    "texto": "Microintervención que explora qué tendría que pasar para que el cliente suba solo medio punto o un punto en una escala de progreso, reduciendo la exigencia de cambio global y favoreciendo decisiones pequeñas y viables. Este enfoque disminuye bloqueo y perfeccionismo, traduce objetivos abstractos en acciones concretas y refuerza la percepción de control personal sobre el cambio. Referencia: Berg & De Jong (1996); De Jong & Berg (2013)."
+  },
+  {
+    "nombre": "Señalar diferencias útiles",
+    "codigo": "m_sfbt_diferencias_utiles",
+    "procesos": ["N_metacognicion"],
+    "texto": "Microintervención consistente en destacar diferencias sutiles entre momentos problemáticos y momentos ligeramente mejores (más calma, menos intensidad, respuestas distintas), ayudando al cliente a percibir variabilidad donde antes veía el problema como constante. Estas diferencias se convierten en pistas clínicas para ampliar excepciones y consolidar progreso. Referencia: de Shazer (1985)."
+  },
+  {
+    "nombre": "Uso sistemático del lenguaje del cliente",
+    "codigo": "m_sfbt_lenguaje_cliente",
+    "procesos": ["ALI_sintonia", "N_construccionAlternativa"],
+    "texto": "Microintervención mediante la cual el terapeuta adopta palabras, expresiones y metáforas exactas del cliente para formular preguntas y reformulaciones, aumentando coherencia narrativa, alianza y sensación de ser comprendido. Este ajuste lingüístico refuerza la cooperación y evita imponer marcos conceptuales externos. Referencia: de Shazer (1984)."
+  },
+  {
+    "nombre": "Reformulación en términos de capacidad",
+    "codigo": "m_sfbt_reformulacion_capacidad",
+    "procesos": ["N_reformulacion", "I_autoimagen"],
+    "texto": "Microintervención que transforma descripciones deficitarias o problematizadoras en formulaciones centradas en capacidades, esfuerzos o intentos de solución, sin negar la dificultad. Esta reformulación reduce autoataque, fortalece autoimagen y mantiene la conversación orientada a recursos reales. Referencia: Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Chequeo explícito de utilidad",
+    "codigo": "m_sfbt_chequeo_utilidad",
+    "procesos": ["ALI_monitorizacion"],
+    "texto": "Microintervención que pregunta de forma directa si la conversación, la pregunta o la tarea están siendo útiles para el cliente, permitiendo ajustar el rumbo sin confrontación. Este chequeo protege la alianza y refuerza la posición colaborativa y no experta del terapeuta. Referencia: De Jong & Berg (2013)."
+  },
+  {
+    "nombre": "Normalización pragmática del estancamiento",
+    "codigo": "m_sfbt_normalizacion",
+    "procesos": ["RE_aceptacion"],
+    "texto": "Microintervención que normaliza momentos sin avance o con retrocesos leves como parte esperable del proceso de cambio, evitando que el cliente interprete la ausencia de mejora como fracaso personal. Mantiene esperanza realista y continuidad del trabajo orientado a soluciones. Referencia: Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Pregunta de excepción parcial",
+    "codigo": "m_sfbt_excepcion_parcial",
+    "procesos": ["N_metacognicion"],
+    "texto": "Microintervención que explora situaciones en las que el problema estuvo presente pero fue menos intenso o duró menos tiempo, ampliando el campo de excepciones más allá del todo/nada. Facilita detectar microhabilidades ya disponibles en el cliente. Referencia: de Shazer (1985)."
+  },
+  {
+    "nombre": "Anclaje de señal observable",
+    "codigo": "m_sfbt_senal_observable",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Microintervención que traduce objetivos y excepciones en señales externas claras (qué hará distinto, qué dirá, qué notarán otros), aumentando la probabilidad de implementación y seguimiento del cambio. Referencia: Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Pregunta de mantenimiento del cambio",
+    "codigo": "m_sfbt_mantenimiento",
+    "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+    "texto": "Microintervención orientada a identificar qué está haciendo el cliente para que la situación no empeore o para mantener pequeñas mejoras, reforzando autoría y percepción de eficacia incluso antes de lograr el objetivo completo. Referencia: De Jong & Berg (2013)."
+  },
+  {
+    "nombre": "Micro-elogio específico",
+    "codigo": "m_sfbt_micro_elogio",
+    "procesos": ["RE_reapreciacion", "I_autoimagen"],
+    "texto": "Reconocimiento breve y específico de una conducta, decisión o esfuerzo concreto del cliente durante la sesión, diseñado para reforzar direcciones útiles sin generar dependencia ni halago vacío. Referencia: Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Pregunta de proyección inmediata",
+    "codigo": "m_sfbt_proyeccion_inmediata",
+    "procesos": ["I_selfFuturo"],
+    "texto": "Microintervención que invita a imaginar cómo será la próxima hora, tarde o día si el cambio empezara a ocurrir, manteniendo la proyección de futuro en un horizonte cercano y practicable. Referencia: de Shazer (1985)."
+  },
+  {
+    "nombre": "Señalar coherencia entre objetivo y acción",
+    "codigo": "m_sfbt_coherencia_objetivo",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Microintervención que conecta explícitamente una acción reciente del cliente con el objetivo formulado, ayudando a consolidar sentido de dirección y coherencia entre lo que se quiere y lo que se hace. Referencia: Berg & De Jong (1996)."
+  },
+  {
+    "nombre": "Ajuste lingüístico de metas",
+    "codigo": "m_sfbt_ajuste_metas",
+    "procesos": ["N_construccionAlternativa"],
+    "texto": "Microintervención que refina la formulación de metas cuando estas resultan demasiado abstractas, negativas o dependientes de otros, manteniendo el lenguaje simple, positivo y accionable. Referencia: de Shazer (1985)."
+  },
+  {
+    "nombre": "Cierre con orientación a lo útil",
+    "codigo": "m_sfbt_cierre_util",
+    "procesos": ["ALI_vinculo", "AG_compromisoConductual"],
+    "texto": "Microintervención de cierre de sesión que resume lo que ha sido útil, destaca recursos activados y recuerda la pequeña acción acordada, reforzando claridad y continuidad sin sobrecargar al cliente. Referencia: Berg & De Jong (1996)."
+  }
+]
 
-  "refs": [
-    "de Shazer, S. (1985). Keys to Solution in Brief Therapy.",
-    "de Shazer, S. (1984). The Language of Change.",
-    "Berg, I. K., & De Jong, P. (1996). Solution-Building Conversations."
-  ]
 }
