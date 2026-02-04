@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_procesamiento",
-  "updatedAt": "2026-02-04T08:49:43.476Z",
-  "totalModelos": 14,
+  "updatedAt": "2026-02-04T08:50:01.772Z",
+  "totalModelos": 15,
   "modelos": [
     {
       "modelId": "psicoterapia-constructivista-procesos-cambio-mahoney",
@@ -87,6 +87,36 @@
           "texto": "Identificación de señales clínicas (bloqueos, emociones no resueltas, autoevaluaciones dolorosas) que indican la necesidad de intervenir experiencialmente para facilitar transformación emocional.",
           "sub": "AP_procesamiento",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "emdr-shapiro-1989",
+      "modelLabel": "EMDR",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Francine Shapiro",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_emdr_8fases",
+          "nombre": "Protocolo estándar de EMDR (8 fases)",
+          "texto": "Procedimiento central del modelo EMDR que estructura la intervención en ocho fases secuenciales: historia clínica y planificación, preparación y estabilización, evaluación de la memoria diana, desensibilización mediante estimulación bilateral, instalación de cognición positiva, escaneo corporal, cierre y reevaluación. Este protocolo permite activar memorias traumáticas de forma controlada y facilitar su reprocesamiento adaptativo sin necesidad de exposición prolongada ni elaboración cognitiva explícita, garantizando integración emocional, somática y narrativa progresiva. Referencia: Shapiro, F. (2001, 2018).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_emdr_desensibilizacion",
+          "nombre": "Desensibilización con estimulación bilateral",
+          "texto": "Procedimiento mediante el cual el paciente mantiene la atención dual entre la memoria activada y la estimulación bilateral mientras permite que emerjan asociaciones espontáneas. El terapeuta interviene mínimamente, facilitando que el sistema de procesamiento adaptativo reorganice la experiencia de forma autónoma. Este proceso reduce progresivamente la carga emocional y modifica la respuesta automática al recuerdo. Referencia: Shapiro, F. (1995, 2001).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_emdr_estim_bilateral",
+          "nombre": "Estimulación bilateral",
+          "texto": "Microintervención nuclear de EMDR consistente en la aplicación rítmica de estimulación alternante (movimientos oculares, tapping bilateral o estímulos auditivos) mientras el paciente mantiene atención dual. Facilita el reprocesamiento adaptativo al activar mecanismos neurofisiológicos que permiten integrar memorias disfuncionales sin sobrecarga consciente. Referencia: Shapiro, F. (2001).",
+          "sub": "AP_procesamiento",
+          "tipo": "micro"
         }
       ]
     },

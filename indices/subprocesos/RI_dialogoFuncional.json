@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RI_dialogoFuncional",
-  "updatedAt": "2026-02-04T08:49:43.476Z",
-  "totalModelos": 4,
+  "updatedAt": "2026-02-04T08:50:01.772Z",
+  "totalModelos": 5,
   "modelos": [
     {
       "modelId": "psicoterapia-constructivista-neimeyer",
@@ -125,6 +125,29 @@
           "codigo": "m_mit_reflexion_escalonada",
           "nombre": "Reflexión metacognitiva escalonada",
           "texto": "Micro que ajusta el nivel de reflexión metacognitiva a la capacidad actual del paciente, pasando progresivamente de identificación emocional a comprensión de estados mentales complejos. Esta escalada evita sobrecarga cognitiva y retraimiento defensivo (Dimaggio et al., 2015).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "emdr-shapiro-1989",
+      "modelLabel": "EMDR",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Francine Shapiro",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_emdr_bloqueos",
+          "nombre": "Trabajo con bloqueos de reprocesamiento",
+          "texto": "Procedimiento clínico utilizado cuando el reprocesamiento se estanca debido a creencias defensivas, miedo al cambio, lealtades implícitas o interferencias cognitivas. El terapeuta introduce intervenciones breves para desbloquear el proceso sin forzar la elaboración, permitiendo que el sistema retome el procesamiento adaptativo de forma autónoma. Referencia: Shapiro, F. (2018).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_emdr_no_interferencia",
+          "nombre": "Intervención mínima del terapeuta",
+          "texto": "Actitud técnica consistente en no interpretar, no dirigir ni analizar el contenido emergente durante el reprocesamiento. El terapeuta sostiene el marco y confía en la capacidad autoorganizativa del sistema del paciente, reduciendo interferencias cognitivas externas. Referencia: Shapiro, F. (2018).",
           "sub": "RI_dialogoFuncional",
           "tipo": "micro"
         }

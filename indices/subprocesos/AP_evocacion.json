@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-04T08:49:43.476Z",
-  "totalModelos": 17,
+  "updatedAt": "2026-02-04T08:50:01.772Z",
+  "totalModelos": 18,
   "modelos": [
     {
       "modelId": "k13coherence-therapy-1993",
@@ -209,6 +209,29 @@
           "texto": "Identificación de señales clínicas (bloqueos, emociones no resueltas, autoevaluaciones dolorosas) que indican la necesidad de intervenir experiencialmente para facilitar transformación emocional.",
           "sub": "AP_evocacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "emdr-shapiro-1989",
+      "modelLabel": "EMDR",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Francine Shapiro",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_emdr_memoria_diana",
+          "nombre": "Evaluación de memoria diana",
+          "texto": "Procedimiento clínico destinado a identificar y estructurar la memoria traumática específica que será reprocesada. Incluye la selección de la imagen representativa, la cognición negativa asociada, la cognición positiva alternativa, la emoción dominante, el nivel de perturbación subjetiva y las sensaciones corporales vinculadas. Esta evaluación permite focalizar el reprocesamiento y activar de forma precisa la red de memoria disfuncional. Referencia: Shapiro, F. (2001).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_emdr_imagen_diana",
+          "nombre": "Identificación de imagen diana",
+          "texto": "Selección de la imagen más representativa del evento traumático que concentra la carga emocional principal. Esta microintervención permite focalizar el reprocesamiento en un nodo específico de la red mnésica, aumentando la eficacia del trabajo terapéutico. Referencia: Shapiro, F. (1995).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
         }
       ]
     },

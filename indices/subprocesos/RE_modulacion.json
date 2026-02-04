@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-04T08:49:43.476Z",
-  "totalModelos": 50,
+  "updatedAt": "2026-02-04T08:50:01.772Z",
+  "totalModelos": 51,
   "modelos": [
     {
       "modelId": "entrenamiento-habilidades-sociales",
@@ -495,6 +495,36 @@
           "codigo": "m_axline_cierre",
           "nombre": "Cierre ritual",
           "texto": "Ritual predecible de finalización de la sesión que ayuda al niño a integrar la experiencia de juego, regular la activación emocional y mantener continuidad entre sesiones (Axline, 1964).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "emdr-shapiro-1989",
+      "modelLabel": "EMDR",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Francine Shapiro",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_emdr_preparacion",
+          "nombre": "Preparación y estabilización previa",
+          "texto": "Procedimiento previo al reprocesamiento orientado a asegurar que el paciente dispone de suficientes recursos de regulación emocional y fisiológica antes de activar memorias traumáticas. Incluye psicoeducación sobre el modelo AIP, establecimiento de señales de control, entrenamiento en regulación emocional y evaluación de la ventana de tolerancia. Es especialmente imprescindible en trauma complejo, apego desorganizado y pacientes con historia de disociación. Referencia: Shapiro, F. (2018).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_emdr_atencion_dual",
+          "nombre": "Atención dual",
+          "texto": "Microintervención implícita mediante la cual el paciente mantiene simultáneamente contacto con la memoria traumática y con el presente seguro. Esta doble focalización evita la inmersión traumática completa y permite procesar el recuerdo sin perder orientación temporal ni corporal. Referencia: Shapiro, F. (2001).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_emdr_cierre",
+          "nombre": "Cierre regulador de sesión",
+          "texto": "Microintervención orientada a devolver al paciente a un estado de estabilidad emocional y orientación temporal al final de la sesión, especialmente si el reprocesamiento no ha concluido. Previene activación residual y favorece sensación de control. Referencia: Shapiro, F. (2001).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }
