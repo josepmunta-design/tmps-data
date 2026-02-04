@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_rotulacion",
-  "updatedAt": "2026-02-04T08:40:16.969Z",
-  "totalModelos": 34,
+  "updatedAt": "2026-02-04T08:49:43.476Z",
+  "totalModelos": 35,
   "modelos": [
     {
       "modelId": "k13coherence-therapy-1993",
@@ -361,6 +361,36 @@
           "codigo": "m_axline_reflejo",
           "nombre": "Reflejo de sentimiento",
           "texto": "Intervención empática que pone palabras sencillas a la emoción que el niño expresa en el juego o en su conducta. Facilita reconocimiento emocional, validación interna y desarrollo de conciencia afectiva (Axline, 1947).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mbt-fonagy-bateman-1998",
+      "modelLabel": "Mentalization-Based Treatment (MBT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Peter Fonagy; Anthony Bateman",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_mbt_episodios_concretos",
+          "nombre": "Trabajo con episodios concretos (análisis de escena)",
+          "texto": "Procedimiento central que toma una situación específica reciente (o surgida en sesión) y reconstruye paso a paso qué pasó, qué sintió el paciente, qué pensó que el otro pensaba y qué decisiones tomó. Esta reconstrucción reduce generalizaciones, aumenta granularidad emocional y permite detectar exactamente el punto de colapso mentalizador para ensayar alternativas más realistas. Referencia: Bateman & Fonagy (2004, 2006).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbt_foco_afecto",
+          "nombre": "Focalización en afecto y mentalización de la emoción",
+          "texto": "Procedimiento que guía al paciente a identificar y sostener el afecto relevante en el episodio sin desbordarse, distinguiendo emociones primarias de reacciones secundarias y conectándolas con significados e intenciones. El objetivo no es catarsis, sino recuperar capacidad de pensar sobre la emoción mientras se siente, manteniendo la mente online. Referencia: Fonagy et al. (2002); Bateman & Fonagy (2006).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbt_rotulacion",
+          "nombre": "Rotulación emocional precisa",
+          "texto": "Microintervención para nombrar con precisión el afecto dominante y diferenciarlo de mezclas globales (“mal”, “ansiedad”), aumentando organización emocional y capacidad de pensar sobre lo sentido sin colapsar. Referencia: Fonagy et al. (2002).",
           "sub": "RE_rotulacion",
           "tipo": "micro"
         }

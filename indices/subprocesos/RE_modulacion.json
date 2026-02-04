@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-04T08:40:16.969Z",
-  "totalModelos": 49,
+  "updatedAt": "2026-02-04T08:49:43.476Z",
+  "totalModelos": 50,
   "modelos": [
     {
       "modelId": "entrenamiento-habilidades-sociales",
@@ -495,6 +495,36 @@
           "codigo": "m_axline_cierre",
           "nombre": "Cierre ritual",
           "texto": "Ritual predecible de finalización de la sesión que ayuda al niño a integrar la experiencia de juego, regular la activación emocional y mantener continuidad entre sesiones (Axline, 1964).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mbt-fonagy-bateman-1998",
+      "modelLabel": "Mentalization-Based Treatment (MBT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Peter Fonagy; Anthony Bateman",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_mbt_stopandstand",
+          "nombre": "Detección y manejo de colapso mentalizador (stop and stand)",
+          "texto": "Procedimiento de intervención en caliente cuando el paciente entra en escalada afectiva, certeza hostil, confusión o modo pre-mentalizador. El terapeuta ralentiza, pausa el contenido, valida el estado y reorienta hacia el proceso (qué está pasando en la mente ahora) para recuperar mentalización antes de continuar con el tema, priorizando seguridad y claridad. Referencia: Bateman & Fonagy (2006).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbt_plan_crisis",
+          "nombre": "Plan de crisis orientado a mentalización",
+          "texto": "Procedimiento estructurado para manejar picos de riesgo (autolesión, impulsividad, desorganización) priorizando restaurar regulación y mentalización antes de tomar decisiones. Incluye señales tempranas, pasos concretos, contacto de apoyo y estrategias para evitar actuar desde colapso mentalizador, protegiendo al paciente y al tratamiento. Referencia: Bateman & Fonagy (2006).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbt_pausa",
+          "nombre": "Pausa y ralentización (stop)",
+          "texto": "Microintervención reguladora que desacelera la conversación cuando hay escalada, priorizando recuperar claridad y respiración mental antes de seguir con contenido conflictivo, para evitar actuación impulsiva. Referencia: Bateman & Fonagy (2006).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }
