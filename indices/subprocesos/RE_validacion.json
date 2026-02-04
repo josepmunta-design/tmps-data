@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_validacion",
-  "updatedAt": "2026-02-04T09:20:39.483Z",
-  "totalModelos": 3,
+  "updatedAt": "2026-02-04T09:28:05.514Z",
+  "totalModelos": 4,
   "modelos": [
     {
       "modelId": "ifs-schwartz-1991",
@@ -42,6 +42,29 @@
           "codigo": "m_ifs_testimonio",
           "nombre": "Testimonio compasivo",
           "texto": "El Self escucha y valida la experiencia de una parte exiliada tal como fue vivida, sin reinterpretarla ni minimizarla, reduciendo aislamiento y vergüenza y preparando el terreno para la liberación de cargas traumáticas. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "RE_validacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ipt-klerman-weissman-1984",
+      "modelLabel": "Interpersonal Psychotherapy (IPT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Gerald L. Klerman; Myrna Weissman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_ipt_psicoeducacion",
+          "nombre": "Psicoeducación interpersonal sobre síntomas y depresión",
+          "texto": "Procedimiento psicoeducativo que vincula explícitamente los síntomas psicológicos con dificultades interpersonales actuales, normalizando la experiencia del paciente y reduciendo culpa o autoatribución patológica. Se explica el modelo IPT y su lógica relacional, reforzando expectativas realistas de cambio y colaboración terapéutica. Referencia: Klerman et al. (1984); Weissman et al. (2000).",
+          "sub": "RE_validacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ipt_normalizacion_conflicto",
+          "nombre": "Normalización del conflicto interpersonal",
+          "texto": "Validación breve de que los conflictos y tensiones son parte esperable de las relaciones, reduciendo vergüenza y catastrofismo, y facilitando abordaje activo del problema. Referencia: Weissman et al. (2000).",
           "sub": "RE_validacion",
           "tipo": "micro"
         }

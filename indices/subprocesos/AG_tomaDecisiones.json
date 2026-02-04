@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-04T09:20:39.483Z",
-  "totalModelos": 32,
+  "updatedAt": "2026-02-04T09:28:05.514Z",
+  "totalModelos": 33,
   "modelos": [
     {
       "modelId": "condicionamiento-aversivo",
@@ -353,6 +353,29 @@
           "codigo": "m_rt_alternativa",
           "nombre": "Elección de conducta alternativa",
           "texto": "Invitar a identificar una conducta concreta diferente que pueda probarse de inmediato.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ipt-klerman-weissman-1984",
+      "modelLabel": "Interpersonal Psychotherapy (IPT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Gerald L. Klerman; Myrna Weissman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_ipt_area_problema",
+          "nombre": "Selección del área problema interpersonal",
+          "texto": "Procedimiento mediante el cual terapeuta y paciente acuerdan una de las cuatro áreas problema clásicas de IPT (duelo, disputas interpersonales, transiciones de rol o déficits interpersonales) como foco central del tratamiento. Esta selección proporciona estructura, claridad de objetivos y coherencia estratégica, facilitando un trabajo intensivo y limitado en el tiempo. Referencia: Klerman et al. (1984).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ipt_alternativas_comunicativas",
+          "nombre": "Exploración de alternativas comunicativas",
+          "texto": "Generación rápida de distintas formas posibles de comunicar un mensaje (más directa, más emocional, más clara), ayudando al paciente a ampliar repertorio interpersonal. Referencia: Klerman et al. (1984).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

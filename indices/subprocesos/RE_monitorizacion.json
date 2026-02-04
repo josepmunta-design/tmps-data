@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_monitorizacion",
-  "updatedAt": "2026-02-04T09:20:39.483Z",
-  "totalModelos": 3,
+  "updatedAt": "2026-02-04T09:28:05.514Z",
+  "totalModelos": 4,
   "modelos": [
     {
       "modelId": "emdr-shapiro-1989",
@@ -14,6 +14,29 @@
           "codigo": "m_emdr_sud",
           "nombre": "Medición de perturbación subjetiva (SUD)",
           "texto": "Evaluación repetida del nivel de perturbación emocional asociada al recuerdo mediante la escala SUD. Esta microintervención permite monitorizar el progreso del reprocesamiento y ajustar el ritmo del trabajo para mantenerlo dentro de la ventana de tolerancia. Referencia: Shapiro, F. (2001).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ipt-klerman-weissman-1984",
+      "modelLabel": "Interpersonal Psychotherapy (IPT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Gerald L. Klerman; Myrna Weissman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_ipt_monitorizacion",
+          "nombre": "Monitorización de síntomas y progreso interpersonal",
+          "texto": "Procedimiento continuo de seguimiento de síntomas y cambios interpersonales, evaluando la relación entre mejoras relacionales y reducción sintomática. Permite ajustar el foco terapéutico y mantener la orientación a objetivos. Referencia: Weissman et al. (2000).",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ipt_revision_resultado",
+          "nombre": "Revisión de resultado interpersonal",
+          "texto": "Breve revisión de cómo resultó una acción interpersonal realizada entre sesiones, extrayendo aprendizaje clínico y ajustando estrategias sin culpabilización. Referencia: Weissman et al. (2000).",
           "sub": "RE_monitorizacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-04T09:20:39.483Z",
-  "totalModelos": 63,
+  "updatedAt": "2026-02-04T09:28:05.514Z",
+  "totalModelos": 64,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -999,6 +999,71 @@
           "codigo": "m_ifs_chequeo_polarizacion",
           "nombre": "Chequeo de polarización",
           "texto": "Exploración breve para detectar si otra parte se activa en oposición durante el trabajo, permitiendo intervenir antes de que se intensifique el conflicto interno. Referencia: Schwartz (1995).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ipt-klerman-weissman-1984",
+      "modelLabel": "Interpersonal Psychotherapy (IPT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Gerald L. Klerman; Myrna Weissman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_ipt_formulacion_interpersonal",
+          "nombre": "Evaluación interpersonal y formulación del foco terapéutico",
+          "texto": "Procedimiento inicial en el que se evalúa la relación entre los síntomas actuales y el contexto interpersonal del paciente, identificando patrones relacionales relevantes, eventos vitales recientes y redes de apoyo. A partir de esta evaluación se formula un foco interpersonal principal que organiza todo el tratamiento, delimitando claramente el ámbito de intervención y reduciendo la dispersión clínica. Referencia: Klerman et al. (1984); Weissman et al. (2000).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ipt_area_problema",
+          "nombre": "Selección del área problema interpersonal",
+          "texto": "Procedimiento mediante el cual terapeuta y paciente acuerdan una de las cuatro áreas problema clásicas de IPT (duelo, disputas interpersonales, transiciones de rol o déficits interpersonales) como foco central del tratamiento. Esta selección proporciona estructura, claridad de objetivos y coherencia estratégica, facilitando un trabajo intensivo y limitado en el tiempo. Referencia: Klerman et al. (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ipt_analisis_comunicacion",
+          "nombre": "Análisis de comunicación interpersonal",
+          "texto": "Procedimiento estructurado que examina intercambios comunicativos concretos para identificar malentendidos, omisiones, mensajes ambiguos o estilos ineficaces. El análisis se centra en lo que se dijo, cómo se dijo y cómo fue recibido, permitiendo detectar puntos de ruptura y oportunidades de cambio comunicativo. Referencia: Klerman et al. (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ipt_monitorizacion",
+          "nombre": "Monitorización de síntomas y progreso interpersonal",
+          "texto": "Procedimiento continuo de seguimiento de síntomas y cambios interpersonales, evaluando la relación entre mejoras relacionales y reducción sintomática. Permite ajustar el foco terapéutico y mantener la orientación a objetivos. Referencia: Weissman et al. (2000).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ipt_vinculo_sintoma_relacion",
+          "nombre": "Vinculación explícita síntoma–relación",
+          "texto": "Microintervención que conecta de forma explícita un síntoma actual con una situación interpersonal concreta, ayudando al paciente a comprender el carácter relacional del malestar sin culpabilización. Esta vinculación orienta la atención clínica hacia el presente interpersonal como vía de cambio. Referencia: Klerman et al. (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ipt_expectativas",
+          "nombre": "Exploración de expectativas relacionales",
+          "texto": "Indagación puntual sobre lo que el paciente espera de una relación concreta y lo que cree que la otra persona espera de él, revelando discrepancias implícitas que suelen sostener conflictos interpersonales. Referencia: Klerman et al. (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ipt_micro_analisis_comunicacion",
+          "nombre": "Análisis micro de intercambio comunicativo",
+          "texto": "Revisión detallada de una interacción específica (qué se dijo, tono, momento, reacción del otro) para identificar fallos comunicativos sutiles y oportunidades de cambio inmediato. Referencia: Klerman et al. (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ipt_impacto",
+          "nombre": "Chequeo de impacto interpersonal",
+          "texto": "Pregunta breve orientada a explorar cómo cree el paciente que su conducta o mensaje fue recibido por el otro, fomentando mentalización interpersonal sin análisis intrapsíquico extenso. Referencia: Weissman et al. (2000).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

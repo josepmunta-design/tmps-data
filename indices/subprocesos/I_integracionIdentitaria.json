@@ -1,7 +1,7 @@
 {
   "subprocesoId": "I_integracionIdentitaria",
-  "updatedAt": "2026-02-04T09:20:39.483Z",
-  "totalModelos": 3,
+  "updatedAt": "2026-02-04T09:28:05.514Z",
+  "totalModelos": 4,
   "modelos": [
     {
       "modelId": "ifs-schwartz-1991",
@@ -21,6 +21,36 @@
           "codigo": "m_ifs_cierre_integrador",
           "nombre": "Cierre integrador del sistema interno",
           "texto": "Microintervención de cierre que revisa el estado del sistema interno tras el trabajo, verifica cooperación entre partes y refuerza el liderazgo del Self antes de finalizar la sesión. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "I_integracionIdentitaria",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ipt-klerman-weissman-1984",
+      "modelLabel": "Interpersonal Psychotherapy (IPT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Gerald L. Klerman; Myrna Weissman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_ipt_duelo",
+          "nombre": "Trabajo con duelo interpersonal",
+          "texto": "Procedimiento focalizado en la elaboración de pérdidas significativas no resueltas, ayudando al paciente a expresar emociones asociadas, reconstruir el vínculo interno con la persona perdida y reinvertir afectivamente en relaciones actuales. El objetivo es desbloquear el proceso de duelo y reducir síntomas asociados. Referencia: Klerman et al. (1984); Weissman et al. (2000).",
+          "sub": "I_integracionIdentitaria",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ipt_cierre_prevencion",
+          "nombre": "Cierre del tratamiento y prevención de recaídas interpersonales",
+          "texto": "Procedimiento final que revisa los logros alcanzados, consolida habilidades interpersonales adquiridas y prepara al paciente para futuras dificultades relacionales, reforzando autonomía y continuidad del cambio tras el fin de la terapia. Referencia: Klerman et al. (1984); Weissman et al. (2000).",
+          "sub": "I_integracionIdentitaria",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ipt_cierre",
+          "nombre": "Cierre interpersonal de sesión",
+          "texto": "Síntesis final que conecta lo trabajado en sesión con el foco interpersonal del tratamiento, reforzando coherencia, dirección terapéutica y continuidad entre sesiones. Referencia: Klerman et al. (1984).",
           "sub": "I_integracionIdentitaria",
           "tipo": "micro"
         }
