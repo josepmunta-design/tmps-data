@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-04T09:14:33.881Z",
-  "totalModelos": 20,
+  "updatedAt": "2026-02-04T09:20:39.483Z",
+  "totalModelos": 21,
   "modelos": [
     {
       "modelId": "k13coherence-therapy-1993",
@@ -306,6 +306,36 @@
           "codigo": "m_sm_impulso_accion",
           "nombre": "Identificación de impulso de acción",
           "texto": "Exploración breve del impulso corporal espontáneo asociado a una emoción o sensación (empujar, huir, protegerse, acercarse), ayudando a reconocer respuestas defensivas implícitas sin ejecutarlas automáticamente. Referencia: Ogden et al. (2006).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "somatic-experiencing-levine-1997",
+      "modelLabel": "Somatic Experiencing (SE)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Peter A. Levine",
+      "modelYear": 1997,
+      "items": [
+        {
+          "codigo": "p_se_memoria_implicita",
+          "nombre": "Acceso gradual a memorias implícitas traumáticas",
+          "texto": "Procedimiento que permite que memorias traumáticas emerjan a través de sensaciones, impulsos y emociones corporales, sin necesidad de relato narrativo detallado. El foco permanece en la experiencia presente del cuerpo, no en la historia. Referencia: Levine (1997).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_se_impulsos_defensa",
+          "nombre": "Activación y seguimiento de impulsos de defensa instintivos",
+          "texto": "Procedimiento que identifica y acompaña impulsos biológicos de huida, lucha, orientación o protección que se activaron durante el trauma pero no pudieron completarse, permitiendo su expresión gradual y consciente. Referencia: Levine (2010).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_se_impulso_defensivo",
+          "nombre": "Identificación de impulso defensivo emergente",
+          "texto": "Exploración del impulso biológico espontáneo que emerge en el cuerpo (huir, empujar, orientarse, protegerse) sin ejecutarlo de inmediato, permitiendo reconocer respuestas instintivas truncadas asociadas al trauma. Referencia: Levine (2010).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }

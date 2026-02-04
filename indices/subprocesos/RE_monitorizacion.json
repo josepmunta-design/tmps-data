@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_monitorizacion",
-  "updatedAt": "2026-02-04T09:14:33.881Z",
-  "totalModelos": 2,
+  "updatedAt": "2026-02-04T09:20:39.483Z",
+  "totalModelos": 3,
   "modelos": [
     {
       "modelId": "emdr-shapiro-1989",
@@ -44,6 +44,29 @@
           "codigo": "m_sm_chequeo_activacion",
           "nombre": "Chequeo de nivel de activación",
           "texto": "Microintervención de monitorización continua que evalúa si el nivel de activación se mantiene dentro de la ventana de tolerancia, ajustando ritmo y foco antes de que aparezca hiperactivación o colapso. Referencia: Ogden & Fisher (2015).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "somatic-experiencing-levine-1997",
+      "modelLabel": "Somatic Experiencing (SE)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Peter A. Levine",
+      "modelYear": 1997,
+      "items": [
+        {
+          "codigo": "p_se_formulacion_neurofisiologica",
+          "nombre": "Evaluación somática y formulación neurofisiológica del caso",
+          "texto": "Procedimiento inicial de evaluación que identifica el perfil autonómico dominante (hiperactivación simpática, hipoactivación parasimpática dorsal, congelación), la capacidad de orientación, los recursos somáticos disponibles y los patrones de respuesta ante amenaza. La formulación se construye desde la fisiología del sistema nervioso más que desde la narrativa, definiendo objetivos terapéuticos en términos de regulación, oscilación y descarga progresiva. Referencia: Levine (1997); Levine (2010).",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_se_chequeo_activacion",
+          "nombre": "Chequeo continuo de nivel de activación",
+          "texto": "Evaluación repetida y explícita del nivel de activación autonómica mediante observación de respiración, tono muscular, ritmo cardíaco subjetivo y claridad perceptiva, permitiendo ajustar ritmo e intensidad del trabajo antes de que aparezca desbordamiento o colapso. Referencia: Levine (2010).",
           "sub": "RE_monitorizacion",
           "tipo": "micro"
         }

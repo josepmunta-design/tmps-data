@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_regulacionAutonomica",
-  "updatedAt": "2026-02-04T09:14:33.881Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-04T09:20:39.483Z",
+  "totalModelos": 2,
   "modelos": [
     {
       "modelId": "sensorimotor-ogden-2001",
@@ -21,6 +21,36 @@
           "codigo": "m_sm_activacion_dosificada",
           "nombre": "Activación dosificada en hipoactivación",
           "texto": "Uso de estímulos suaves de activación (movimiento, presión, orientación visual) para salir gradualmente de estados de colapso o entumecimiento sin provocar hiperactivación. Referencia: Ogden & Fisher (2015).",
+          "sub": "RF_regulacionAutonomica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "somatic-experiencing-levine-1997",
+      "modelLabel": "Somatic Experiencing (SE)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Peter A. Levine",
+      "modelYear": 1997,
+      "items": [
+        {
+          "codigo": "p_se_recursos_somaticos",
+          "nombre": "Construcción y fortalecimiento de recursos somáticos",
+          "texto": "Procedimiento destinado a identificar, amplificar y entrenar sensaciones corporales asociadas a seguridad, placer, estabilidad o fuerza, que funcionarán como anclas reguladoras durante el trabajo traumático. Los recursos somáticos aumentan resiliencia autonómica y previenen desbordamiento. Referencia: Levine (2010).",
+          "sub": "RF_regulacionAutonomica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_se_generalizacion",
+          "nombre": "Generalización a la vida cotidiana y prevención de recaídas",
+          "texto": "Procedimiento final que traduce la regulación recuperada en estrategias prácticas para la vida diaria, ayudando al paciente a reconocer señales tempranas de activación y responder con recursos somáticos aprendidos. Referencia: Levine (2010).",
+          "sub": "RF_regulacionAutonomica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_se_activacion_dosificada",
+          "nombre": "Activación dosificada en estados de colapso",
+          "texto": "Introducción cuidadosa de estímulos activadores suaves (movimiento lento, orientación visual, presión) para salir gradualmente de estados de hipoactivación o inmovilidad sin provocar hiperactivación. Referencia: Levine (2010).",
           "sub": "RF_regulacionAutonomica",
           "tipo": "micro"
         }

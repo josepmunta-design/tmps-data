@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_ground",
-  "updatedAt": "2026-02-04T09:14:33.881Z",
-  "totalModelos": 8,
+  "updatedAt": "2026-02-04T09:20:39.483Z",
+  "totalModelos": 9,
   "modelos": [
     {
       "modelId": "analisis-bioenergetico",
@@ -150,6 +150,57 @@
           "codigo": "m_sm_aterrizaje",
           "nombre": "Aterrizaje corporal al cierre",
           "texto": "Intervención final que devuelve la atención al cuerpo y al entorno, asegurando regulación suficiente antes de cerrar la sesión y previniendo reactivación post-terapia. Referencia: Ogden & Fisher (2015).",
+          "sub": "RF_ground",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "somatic-experiencing-levine-1997",
+      "modelLabel": "Somatic Experiencing (SE)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Peter A. Levine",
+      "modelYear": 1997,
+      "items": [
+        {
+          "codigo": "p_se_seguridad_orientacion",
+          "nombre": "Establecimiento de seguridad y orientación al presente",
+          "texto": "Procedimiento de estabilización temprana que utiliza orientación sensorial, percepción de límites, contacto con el entorno y señales de seguridad para reducir activación defensiva y permitir que el sistema nervioso abandone el estado de amenaza implícita. Este paso es imprescindible antes de cualquier contacto con activación traumática. Referencia: Levine (1997).",
+          "sub": "RF_ground",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_se_congelacion_colapso",
+          "nombre": "Trabajo con congelación y colapso parasimpático dorsal",
+          "texto": "Procedimiento específico para estados de inmovilidad, entumecimiento o apagamiento en los que la activación está bloqueada. Se utiliza activación dosificada, orientación y recursos para salir gradualmente del colapso sin provocar hiperactivación. Referencia: Levine (2010).",
+          "sub": "RF_ground",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_se_cierre",
+          "nombre": "Cierre de sesión y estabilización post-trabajo",
+          "texto": "Procedimiento de cierre que asegura que el sistema nervioso se encuentra orientado y regulado antes de finalizar la sesión, previniendo reactivación posterior y consolidando sensación de seguridad corporal. Referencia: Levine (1997).",
+          "sub": "RF_ground",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_se_orientacion_sensorial",
+          "nombre": "Orientación sensorial externa",
+          "texto": "Microintervención básica que dirige la atención a estímulos sensoriales externos (colores, formas, sonidos, temperatura, contacto con superficies) para actualizar señales de seguridad y sacar al sistema nervioso del estado de amenaza implícita. Es una intervención fundamental para estabilizar y reorientar tras activación traumática. Referencia: Levine (1997).",
+          "sub": "RF_ground",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_se_orientacion_visual",
+          "nombre": "Orientación visual activa",
+          "texto": "Movimiento deliberado de la mirada para explorar el entorno y actualizar señales de seguridad presentes, ayudando al sistema nervioso a salir de estados de congelación o hipervigilancia. Referencia: Levine (1997).",
+          "sub": "RF_ground",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_se_aterrizaje",
+          "nombre": "Aterrizaje somático al cierre",
+          "texto": "Intervención final que devuelve la atención al cuerpo y al entorno, asegurando que el sistema nervioso se encuentra orientado, regulado y estable antes de cerrar la sesión. Referencia: Levine (1997).",
           "sub": "RF_ground",
           "tipo": "micro"
         }

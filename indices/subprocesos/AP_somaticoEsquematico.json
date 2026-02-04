@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_somaticoEsquematico",
-  "updatedAt": "2026-02-04T09:14:33.881Z",
-  "totalModelos": 10,
+  "updatedAt": "2026-02-04T09:20:39.483Z",
+  "totalModelos": 11,
   "modelos": [
     {
       "modelId": "aedp-2000",
@@ -173,6 +173,43 @@
           "codigo": "m_sm_seguimiento_sensacion",
           "nombre": "Seguimiento de sensación corporal específica",
           "texto": "Focalización consciente y sostenida en una sensación concreta (presión, calor, vibración, vacío) para observar su evolución sin intentar modificarla, favoreciendo regulación autonómica y procesamiento implícito desde la experiencia directa. Referencia: Ogden & Fisher (2015).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "somatic-experiencing-levine-1997",
+      "modelLabel": "Somatic Experiencing (SE)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Peter A. Levine",
+      "modelYear": 1997,
+      "items": [
+        {
+          "codigo": "p_se_formulacion_neurofisiologica",
+          "nombre": "Evaluación somática y formulación neurofisiológica del caso",
+          "texto": "Procedimiento inicial de evaluación que identifica el perfil autonómico dominante (hiperactivación simpática, hipoactivación parasimpática dorsal, congelación), la capacidad de orientación, los recursos somáticos disponibles y los patrones de respuesta ante amenaza. La formulación se construye desde la fisiología del sistema nervioso más que desde la narrativa, definiendo objetivos terapéuticos en términos de regulación, oscilación y descarga progresiva. Referencia: Levine (1997); Levine (2010).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_se_interocepcion",
+          "nombre": "Desarrollo de conciencia interoceptiva graduada",
+          "texto": "Procedimiento que entrena la percepción consciente de sensaciones internas sutiles (temperatura, vibración, presión, pulso) asociadas a activación y descarga, sin interpretación cognitiva. Esta conciencia interoceptiva permite detectar microcambios autonómicos y facilita autorregulación temprana. Referencia: Levine (2010).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_se_seguimiento_sensacion",
+          "nombre": "Seguimiento de sensación corporal específica",
+          "texto": "Focalización consciente en una sensación concreta (presión, calor, vibración, expansión, vacío) observando su movimiento, intensidad y cambios sin intentar modificarla, facilitando regulación espontánea y procesamiento implícito del trauma. Referencia: Levine (1997).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_se_micro_movimiento",
+          "nombre": "Seguimiento de micro-movimiento espontáneo",
+          "texto": "Atención y permiso a movimientos corporales pequeños y espontáneos (ajustes posturales, sacudidas leves, respiración profunda) que indican inicio de descarga o reorganización autonómica, sin interferir ni dirigir. Referencia: Levine (1997).",
           "sub": "AP_somaticoEsquematico",
           "tipo": "micro"
         }
