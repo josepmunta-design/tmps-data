@@ -1,0 +1,179 @@
+{
+  "id": "programas-refuerzo-skinner-1957",
+  "grupo": "Conductismo",
+  "label": "Programas de refuerzo",
+  "year": 1957,
+  "importance": 2,
+  "autores": "C. B. Ferster; B. F. Skinner",
+  "universidad": "Harvard University",
+  "ciudad": "Cambridge, Massachusetts",
+  "pais": "EE. UU.",
+  "lat": 42.377003,
+  "lon": -71.11666,
+
+  "type": "Estudio",
+
+  "descripcion": "El estudio de los programas de refuerzo describe cómo distintas contingencias temporales y cuantitativas de reforzamiento —razón fija, razón variable, intervalo fijo e intervalo variable— producen patrones de conducta característicos en términos de tasa de respuesta, regularidad, pausas post-refuerzo y resistencia a la extinción. Este trabajo demuestra que la conducta no solo depende del reforzador en sí, sino de la estructura del programa que lo administra. El conocimiento de estos patrones permite diseñar intervenciones conductuales más eficientes, mantener conductas objetivo con menor coste de reforzamiento y comprender fenómenos como la persistencia conductual, la recaída y la resistencia al cambio.",
+
+  "influencias": [
+    "Condicionamiento operante",
+    "Psicología experimental",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se concibe como un conjunto de relaciones funcionales observables entre conducta y contingencias ambientales. El conocimiento válido es empírico, experimental y replicable, obtenido mediante el control sistemático de variables. El cambio conductual se explica sin recurrir a constructos mentales no observables, priorizando regularidades funcionales entre estímulos, respuestas y consecuencias.",
+
+    "teoriaFormal": "La conducta se mantiene o debilita en función de sus consecuencias, y los programas de refuerzo determinan la forma temporal y cuantitativa de esa relación. Diferentes programaciones generan patrones estables de respuesta que pueden predecirse y modificarse experimentalmente. El organismo es entendido como un sistema sensible a contingencias, cuya conducta se moldea progresivamente.",
+
+    "teoriaClinica": "La intervención se conceptualiza como el diseño y ajuste de contingencias de reforzamiento que aumenten, mantengan o extingan conductas objetivo. El progreso se evalúa por cambios observables en frecuencia, tasa, estabilidad y resistencia a la extinción de la conducta, ajustando los programas según los efectos obtenidos."
+  },
+
+  "mjps": ["AG", "R", "N"],
+
+  "procedimientos": [
+  {
+    "nombre": "Diseño de programas de razón fija (FR)",
+    "codigo": "p_refuerzo_razon_fija",
+    "procesos": ["AG_compromisoConductual", "R_aprendizajeInstrumental"],
+    "texto": "Procedimiento consistente en establecer un reforzamiento contingente a un número fijo de respuestas (p. ej., FR-10), generando tasas altas de conducta con pausas post-refuerzo características. Se utiliza clínicamente para aumentar conductas objetivo de forma rápida y clara cuando se requiere adquisición inicial o incremento estable del comportamiento, teniendo en cuenta el riesgo de fatiga o extinción abrupta si el requisito es excesivo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Diseño de programas de razón variable (VR)",
+    "codigo": "p_refuerzo_razon_variable",
+    "procesos": ["AG_compromisoConductual", "R_aprendizajeInstrumental"],
+    "texto": "Procedimiento basado en reforzar la conducta tras un número variable e impredecible de respuestas alrededor de una media, lo que produce tasas muy altas y persistentes de conducta con mínima pausa post-refuerzo. Es especialmente útil para mantener conductas a largo plazo y aumentar la resistencia a la extinción, siendo uno de los programas más robustos conocidos experimentalmente. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Diseño de programas de intervalo fijo (FI)",
+    "codigo": "p_refuerzo_intervalo_fijo",
+    "procesos": ["AG_compromisoConductual", "N_anticipacionTemporal"],
+    "texto": "Procedimiento en el que el reforzamiento se entrega a la primera respuesta emitida tras un intervalo temporal fijo, generando patrones característicos de respuesta en forma de \"scallop\" (aceleración progresiva conforme se acerca el refuerzo). Se emplea para conductas que deben mantenerse a lo largo del tiempo, considerando que puede inducir periodos de baja respuesta tras el reforzamiento. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Diseño de programas de intervalo variable (VI)",
+    "codigo": "p_refuerzo_intervalo_variable",
+    "procesos": ["AG_compromisoConductual", "R_aprendizajeInstrumental"],
+    "texto": "Procedimiento en el que el reforzamiento se administra tras intervalos temporales variables e impredecibles, produciendo tasas moderadas pero muy estables de conducta y alta resistencia a la extinción. Es adecuado para mantener comportamientos continuos y sostenidos sin generar picos ni pausas pronunciadas. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Comparación funcional de programas de refuerzo",
+    "codigo": "p_refuerzo_comparacion_funcional",
+    "procesos": ["N_analisisFuncional", "N_metacognicion"],
+    "texto": "Procedimiento experimental y aplicado que consiste en comparar sistemáticamente distintos programas de refuerzo para evaluar sus efectos diferenciales sobre tasa de respuesta, estabilidad, resistencia a la extinción y patrones temporales de conducta. Permite seleccionar el programa más eficiente según el objetivo conductual y el contexto de intervención. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Ajuste progresivo de requisitos de reforzamiento (thinning)",
+    "codigo": "p_refuerzo_thinning",
+    "procesos": ["AG_compromisoConductual", "R_mantenimientoConductual"],
+    "texto": "Procedimiento destinado a reducir gradualmente la frecuencia o densidad del reforzamiento una vez adquirida la conducta, manteniendo su estabilidad y evitando extinción abrupta. El thinning se aplica de forma planificada ajustando razones o intervalos para favorecer autonomía conductual y generalización. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Análisis de resistencia a la extinción",
+    "codigo": "p_refuerzo_resistencia_extincion",
+    "procesos": ["N_analisisFuncional", "R_mantenimientoConductual"],
+    "texto": "Procedimiento orientado a evaluar cómo distintos programas de refuerzo influyen en la persistencia de la conducta cuando el reforzamiento se retira. Este análisis permite anticipar recaídas, diseñar programas más robustos y comprender por qué ciertas conductas persisten a pesar de la ausencia de consecuencias reforzantes. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  }
+],
+
+
+ "micros": [
+  {
+    "nombre": "Aplicación de refuerzo en razón fija (FR)",
+    "codigo": "m_refuerzo_fr",
+    "procesos": ["AG_compromisoConductual", "R_aprendizajeInstrumental"],
+    "texto": "Microintervención consistente en administrar refuerzo tras un número fijo de respuestas emitidas, produciendo incrementos rápidos de la conducta y pausas post-refuerzo predecibles. Se utiliza para adquisición inicial o aumento controlado de una conducta, ajustando el tamaño de la razón para evitar fatiga o extinción temprana. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Aplicación de refuerzo en razón variable (VR)",
+    "codigo": "m_refuerzo_vr",
+    "procesos": ["AG_compromisoConductual", "R_aprendizajeInstrumental"],
+    "texto": "Microintervención basada en reforzar tras un número impredecible de respuestas alrededor de una media, generando tasas muy altas y persistentes de conducta con mínima pausa post-refuerzo. Es uno de los kernels más potentes para el mantenimiento conductual y la resistencia a la extinción. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Aplicación de refuerzo en intervalo fijo (FI)",
+    "codigo": "m_refuerzo_fi",
+    "procesos": ["AG_compromisoConductual", "N_anticipacionTemporal"],
+    "texto": "Microintervención que refuerza la primera respuesta emitida tras un intervalo temporal fijo, produciendo el patrón característico de aceleración progresiva de la respuesta conforme se aproxima el refuerzo. Se usa para sostener conductas a lo largo del tiempo, teniendo en cuenta la posible baja tasa inmediatamente posterior al refuerzo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Aplicación de refuerzo en intervalo variable (VI)",
+    "codigo": "m_refuerzo_vi",
+    "procesos": ["AG_compromisoConductual", "R_aprendizajeInstrumental"],
+    "texto": "Microintervención en la que el refuerzo se administra tras intervalos temporales variables e impredecibles, generando tasas moderadas pero estables de conducta y alta resistencia a la extinción. Se emplea para mantener comportamientos continuos sin picos ni pausas marcadas. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Pausa post-refuerzo",
+    "codigo": "m_refuerzo_pausa_post",
+    "procesos": ["N_monitorizacion", "R_mantenimientoConductual"],
+    "texto": "Observación y manejo de la disminución temporal de la respuesta inmediatamente después del reforzamiento, especialmente característica de programas de razón fija e intervalo fijo. Esta microintervención permite ajustar el programa para optimizar continuidad y evitar interpretaciones erróneas de pérdida de aprendizaje. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Señal discriminativa asociada al refuerzo",
+    "codigo": "m_refuerzo_sd",
+    "procesos": ["N_analisisFuncional", "R_aprendizajeInstrumental"],
+    "texto": "Uso de estímulos discriminativos que indican la disponibilidad del refuerzo bajo un programa específico, facilitando la discriminación contextual y aumentando la eficiencia del aprendizaje instrumental. Esta microintervención permite un control más preciso de la conducta en contextos aplicados. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Ajuste incremental de la razón o intervalo",
+    "codigo": "m_refuerzo_ajuste_gradual",
+    "procesos": ["AG_compromisoConductual", "R_mantenimientoConductual"],
+    "texto": "Microintervención consistente en modificar de forma gradual los parámetros del programa de refuerzo (razón o intervalo) para mantener la conducta con menor densidad de reforzamiento, evitando caídas abruptas del rendimiento. Es un kernel central para la autonomía conductual. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+  {
+    "nombre": "Extinción programada tras programas intermitentes",
+    "codigo": "m_refuerzo_extincion",
+    "procesos": ["R_mantenimientoConductual", "N_analisisFuncional"],
+    "texto": "Microintervención que consiste en retirar el reforzamiento tras historial de programas intermitentes, observando la persistencia diferencial de la conducta según el tipo de programa previo. Permite anticipar recaídas y comprender la robustez conductual generada por distintos schedules. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  }
+],
+
+
+  "ideasPrincipales": [
+  {
+    "id": "idea_refuerzo_1",
+    "titulo": "La conducta está determinada por contingencias, no por el reforzador aislado",
+    "desarrollo": "El análisis de los programas de refuerzo demuestra que el efecto del reforzamiento sobre la conducta depende críticamente de la estructura temporal y cuantitativa de las contingencias, y no solo de la presencia del reforzador. Distintos schedules producen patrones conductuales sistemáticos y predecibles, lo que refuta explicaciones simplistas basadas únicamente en la recompensa en sí. (Ferster & Skinner, 1957)."
+  },
+  {
+    "id": "idea_refuerzo_2",
+    "titulo": "Cada programa de refuerzo genera patrones de respuesta característicos",
+    "desarrollo": "Los programas de razón e intervalo, fijos y variables, producen configuraciones específicas de tasa de respuesta, pausas post-refuerzo y regularidad conductual que pueden identificarse empíricamente. Estos patrones no son accidentales, sino propiedades funcionales estables de cada tipo de programa. (Ferster & Skinner, 1957)."
+  },
+  {
+    "id": "idea_refuerzo_3",
+    "titulo": "La resistencia a la extinción depende del historial de reforzamiento",
+    "desarrollo": "La persistencia de una conducta cuando el refuerzo se retira no es un rasgo del organismo, sino una función directa del programa de refuerzo previo. Los programas intermitentes, especialmente de razón variable, generan conductas notablemente resistentes a la extinción, fenómeno clave para comprender recaídas y hábitos persistentes. (Ferster & Skinner, 1957)."
+  },
+  {
+    "id": "idea_refuerzo_4",
+    "titulo": "La predicción conductual es posible mediante análisis experimental",
+    "desarrollo": "El estudio sistemático de los programas de refuerzo muestra que la conducta puede predecirse y modificarse con alta fiabilidad cuando se controlan experimentalmente las contingencias. Este principio fundamenta la aspiración científica del conductismo radical a una psicología basada en regularidades observables y replicables. (Ferster & Skinner, 1957)."
+  },
+  {
+    "id": "idea_refuerzo_5",
+    "titulo": "La pausa post-refuerzo es una propiedad funcional del programa",
+    "desarrollo": "Las pausas post-refuerzo observadas en ciertos programas, especialmente en razón fija e intervalo fijo, no representan desmotivación ni pérdida de aprendizaje, sino efectos estructurales del schedule. Comprender este fenómeno evita interpretaciones mentalistas erróneas y permite ajustar adecuadamente la intervención. (Ferster & Skinner, 1957)."
+  },
+  {
+    "id": "idea_refuerzo_6",
+    "titulo": "El control de la conducta puede optimizarse ajustando el schedule",
+    "desarrollo": "El diseño y modificación progresiva de programas de refuerzo permite maximizar la eficiencia del control conductual, reduciendo la necesidad de reforzamiento continuo y favoreciendo la estabilidad de la conducta. Este principio es central para aplicaciones clínicas, educativas y organizacionales. (Ferster & Skinner, 1957)."
+  },
+  {
+    "id": "idea_refuerzo_7",
+    "titulo": "La historia de reforzamiento explica la persistencia conductual",
+    "desarrollo": "Los patrones actuales de conducta solo pueden comprenderse plenamente a la luz de la historia de reforzamiento del organismo. Los programas de refuerzo proporcionan un marco explicativo funcional para entender por qué ciertas conductas persisten incluso cuando ya no producen consecuencias reforzantes evidentes. (Ferster & Skinner, 1957)."
+  },
+  {
+    "id": "idea_refuerzo_8",
+    "titulo": "El análisis de programas de refuerzo elimina explicaciones mentalistas",
+    "desarrollo": "Al mostrar que patrones complejos de conducta emergen de contingencias simples sistemáticamente organizadas, los programas de refuerzo permiten explicar fenómenos tradicionalmente atribuidos a constructos internos hipotéticos sin recurrir a ellos, consolidando el enfoque funcional del conductismo radical. (Ferster & Skinner, 1957)."
+  }
+],
+
+
+  "refs": [
+    "Ferster, C. B., & Skinner, B. F. (1957). Schedules of Reinforcement."
+  ]
+}
