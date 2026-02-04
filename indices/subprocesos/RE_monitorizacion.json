@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_monitorizacion",
-  "updatedAt": "2026-02-04T09:04:04.975Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-04T09:14:33.881Z",
+  "totalModelos": 2,
   "modelos": [
     {
       "modelId": "emdr-shapiro-1989",
@@ -14,6 +14,36 @@
           "codigo": "m_emdr_sud",
           "nombre": "Medición de perturbación subjetiva (SUD)",
           "texto": "Evaluación repetida del nivel de perturbación emocional asociada al recuerdo mediante la escala SUD. Esta microintervención permite monitorizar el progreso del reprocesamiento y ajustar el ritmo del trabajo para mantenerlo dentro de la ventana de tolerancia. Referencia: Shapiro, F. (2001).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "sensorimotor-ogden-2001",
+      "modelLabel": "Psicoterapia sensoriomotriz",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Pat Ogden",
+      "modelYear": 2001,
+      "items": [
+        {
+          "codigo": "p_sm_formulacion_somatico",
+          "nombre": "Evaluación somática y formulación sensoriomotriz del caso",
+          "texto": "Procedimiento inicial de conceptualización en el que se identifican patrones corporales dominantes (hiperactivación, colapso, inmovilidad, tensión crónica), disparadores, señales tempranas de escalada, impulsos de acción, estrategias de regulación ya disponibles y restricciones médicas o de seguridad. La formulación se construye desde el cuerpo (cómo se organiza la experiencia implícita) y enlaza estos patrones con historia de trauma y apego sin forzar narrativa, definiendo objetivos clínicos somáticos claros (ventana de tolerancia, orientación, capacidad de acción y relación) que guiarán la titulación del tratamiento. Referencia: Ogden, Minton, & Pain (2006); Ogden & Fisher (2015).",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sm_titulacion_pendulacion",
+          "nombre": "Titulación y pendulación de la activación durante el trabajo traumático",
+          "texto": "Procedimiento de dosificación clínica que regula cuánta activación se permite y durante cuánto tiempo, alternando intencionalmente entre estados de mayor carga y estados de recurso o calma para evitar inundación o disociación. Se ajusta el ritmo, el foco y la intensidad del contacto con sensaciones, imágenes o impulsos, entrenando flexibilidad autonómica y asegurando que el procesamiento somático ocurra dentro de límites tolerables. Referencia: Ogden et al. (2006); Ogden & Fisher (2015).",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sm_chequeo_activacion",
+          "nombre": "Chequeo de nivel de activación",
+          "texto": "Microintervención de monitorización continua que evalúa si el nivel de activación se mantiene dentro de la ventana de tolerancia, ajustando ritmo y foco antes de que aparezca hiperactivación o colapso. Referencia: Ogden & Fisher (2015).",
           "sub": "RE_monitorizacion",
           "tipo": "micro"
         }

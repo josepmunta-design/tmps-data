@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_somaticoEsquematico",
-  "updatedAt": "2026-02-04T09:04:04.975Z",
-  "totalModelos": 9,
+  "updatedAt": "2026-02-04T09:14:33.881Z",
+  "totalModelos": 10,
   "modelos": [
     {
       "modelId": "aedp-2000",
@@ -122,6 +122,57 @@
           "codigo": "m_ifs_localizacion_somatica",
           "nombre": "Localización corporal de la parte",
           "texto": "Exploración breve de dónde se manifiesta una parte en el cuerpo (tensión, presión, calor, vacío), utilizando la sensación corporal como vía directa de acceso y regulación, especialmente útil cuando el lenguaje es limitado o el trauma es temprano. Referencia: Schwartz & Sweezy (2019).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "sensorimotor-ogden-2001",
+      "modelLabel": "Psicoterapia sensoriomotriz",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Pat Ogden",
+      "modelYear": 2001,
+      "items": [
+        {
+          "codigo": "p_sm_formulacion_somatico",
+          "nombre": "Evaluación somática y formulación sensoriomotriz del caso",
+          "texto": "Procedimiento inicial de conceptualización en el que se identifican patrones corporales dominantes (hiperactivación, colapso, inmovilidad, tensión crónica), disparadores, señales tempranas de escalada, impulsos de acción, estrategias de regulación ya disponibles y restricciones médicas o de seguridad. La formulación se construye desde el cuerpo (cómo se organiza la experiencia implícita) y enlaza estos patrones con historia de trauma y apego sin forzar narrativa, definiendo objetivos clínicos somáticos claros (ventana de tolerancia, orientación, capacidad de acción y relación) que guiarán la titulación del tratamiento. Referencia: Ogden, Minton, & Pain (2006); Ogden & Fisher (2015).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sm_conciencia_corporal",
+          "nombre": "Entrenamiento en mindfulness somático y conciencia sensoriomotriz",
+          "texto": "Procedimiento que desarrolla la habilidad de observar con precisión sensaciones internas, postura, micro-movimientos, respiración y cambios autonómicos sin reaccionar automáticamente. Se practica la atención dual (sentir y observar), la descripción fenomenológica (qué noto exactamente) y la diferenciación entre sensación, emoción e interpretación, creando espacio para elegir respuestas nuevas y reduciendo la dominancia de hábitos implícitos traumáticos. Referencia: Ogden & Fisher (2015).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sm_experimentacion",
+          "nombre": "Experimentación sensoriomotriz guiada",
+          "texto": "Procedimiento central basado en diseñar experimentos corporales pequeños, precisos y graduales (micro-movimientos, cambios posturales, orientación visual, variaciones de respiración o distancia interpersonal) para explorar alternativas a patrones traumáticos automatizados. El terapeuta guía la curiosidad (“¿qué pasa si…?”), observa cambios autonómicos y emocionales, y ayuda a consolidar nuevas respuestas corporales como opciones disponibles, evitando forzar y priorizando siempre la estabilidad del sistema. Referencia: Ogden et al. (2006); Ogden & Fisher (2015).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sm_disociacion_colapso",
+          "nombre": "Trabajo con disociación, hipoactivación y colapso",
+          "texto": "Procedimiento específico para estados de desconexión, entumecimiento, colapso o inmovilidad en los que la presencia y la mentalización se reducen. Se utilizan intervenciones de orientación, activación dosificada, contacto con sensaciones seguras, micro-movimiento y apoyo relacional para volver gradualmente a la experiencia sin disparar hiperactivación, ayudando a diferenciar “ausencia” de “seguridad” y restaurar continuidad del self corporal. Referencia: Ogden & Fisher (2015); Ogden et al. (2006).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sm_apego_encarnado",
+          "nombre": "Trabajo con apego encarnado y patrones relacionales somáticos",
+          "texto": "Procedimiento que aborda cómo el sistema de apego se expresa corporalmente (acercamiento, evitación, congelación ante la proximidad, colapso ante el conflicto, hipervigilancia en contacto), usando el aquí-y-ahora del vínculo terapéutico para explorar distancia, mirada, tono, postura y límites. Se entrenan experiencias relacionales seguras mediante microajustes corporales y co-regulación, reorganizando expectativas implícitas de amenaza o abandono y fortaleciendo un self corporal con derecho a límites y cercanía. Referencia: Ogden & Fisher (2015).",
+          "sub": "AP_somaticoEsquematico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sm_seguimiento_sensacion",
+          "nombre": "Seguimiento de sensación corporal específica",
+          "texto": "Focalización consciente y sostenida en una sensación concreta (presión, calor, vibración, vacío) para observar su evolución sin intentar modificarla, favoreciendo regulación autonómica y procesamiento implícito desde la experiencia directa. Referencia: Ogden & Fisher (2015).",
           "sub": "AP_somaticoEsquematico",
           "tipo": "micro"
         }
