@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-04T12:16:38.756Z",
-  "totalModelos": 70,
+  "updatedAt": "2026-02-04T12:18:34.934Z",
+  "totalModelos": 71,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -58,6 +58,50 @@
           "codigo": "m_cft_repair_after_relapse",
           "nombre": "Reparación rápida tras recaída en autocrítica",
           "texto": "Protocolo breve: (1) notar crítica, (2) validar emoción, (3) una frase compasiva firme, (4) una acción pequeña de cuidado. Evita espiral secundaria de vergüenza.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "analisis-funcional-clinico-kanfer-saslow-1969",
+      "modelLabel": "Análisis funcional (clínico)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Frederick H. Kanfer; A. P. Saslow",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_af_hipotesis_funcionales",
+          "nombre": "Formulación de hipótesis funcionales",
+          "texto": "Procedimiento mediante el cual el terapeuta integra la información del análisis ABC, las funciones conductuales y las variables de establecimiento en hipótesis explicativas provisionales. Estas hipótesis describen por qué la conducta es funcional para la persona en ese contexto y orientan la selección de intervenciones específicas. Se formulan siempre como hipótesis contrastables y revisables, no como explicaciones cerradas. (Kanfer & Saslow, 1969; Haynes & O’Brien, 2000).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_af_evaluacion_continua",
+          "nombre": "Evaluación continua y ajuste funcional",
+          "texto": "Procedimiento de monitorización sistemática del impacto de la intervención sobre la conducta problema y sus funciones. Permite detectar rápidamente efectos no deseados, cambios de función o nuevas variables de establecimiento. El análisis funcional se entiende como un proceso dinámico y circular, no como una formulación estática inicial. (Haynes & O’Brien, 2000; Kanfer & Saslow, 1969).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_af_antecedente_inmediato",
+          "nombre": "Preguntar por el justo antes",
+          "texto": "Microintervención breve que focaliza en identificar el estímulo, pensamiento, emoción o contexto inmediatamente previo a la conducta problema. Evita explicaciones retrospectivas globales y ancla el análisis en secuencias funcionales reales. Facilita el reconocimiento de disparadores específicos y patrones repetidos. (Kanfer & Saslow, 1969).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_af_comparacion_contextual",
+          "nombre": "Comparar contextos con y sin conducta",
+          "texto": "Microintervención que explora diferencias contextuales entre situaciones donde la conducta aparece y donde no, permitiendo identificar variables de establecimiento o antecedentes protectores. Esta comparación suele revelar condiciones invisibles que mantienen el problema. (Haynes & O’Brien, 2000).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_af_revision_hipotesis",
+          "nombre": "Revisar hipótesis tras el cambio",
+          "texto": "Microintervención reflexiva que revisa explícitamente la hipótesis funcional tras observar cambios conductuales, reforzando una actitud científica y flexible hacia el propio funcionamiento psicológico. Previene dogmatismo terapéutico y favorece aprendizaje autorregulado. (Haynes & O’Brien, 2000).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

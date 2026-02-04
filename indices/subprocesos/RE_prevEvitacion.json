@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-04T12:16:38.756Z",
-  "totalModelos": 16,
+  "updatedAt": "2026-02-04T12:18:34.934Z",
+  "totalModelos": 17,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -28,6 +28,29 @@
           "codigo": "m_cft_dose_titration",
           "nombre": "Titulación de compasión (dosis tolerable)",
           "texto": "Introducir compasión en microdosis para no disparar vergüenza: frases mínimas, prácticas breves, más cuerpo y menos narrativa al inicio.",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "analisis-funcional-clinico-kanfer-saslow-1969",
+      "modelLabel": "Análisis funcional (clínico)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Frederick H. Kanfer; A. P. Saslow",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_af_funciones",
+          "nombre": "Identificación de funciones de la conducta",
+          "texto": "Procedimiento orientado a determinar la función principal que cumple la conducta problema, como evitación/escape de estímulos aversivos, obtención de atención, acceso a reforzadores tangibles o autorregulación sensorial/emocional. Este análisis permite diferenciar conductas topográficamente similares pero funcionalmente distintas, evitando intervenciones genéricas ineficaces. Identificar la función es clave para sustituir la conducta por alternativas funcionalmente equivalentes. (Kanfer & Saslow, 1969; Miltenberger, 2012).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_af_alivio_corto_plazo",
+          "nombre": "Explorar alivio inmediato",
+          "texto": "Microintervención orientada a detectar qué alivio inmediato produce la conducta problema, incluso cuando es claramente desadaptativa a largo plazo. Ayuda al paciente a comprender por qué mantiene la conducta sin recurrir a culpa o patologización, revelando su función reguladora o evitativa. (Ferster, 1973; Miltenberger, 2012).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
