@@ -1,0 +1,262 @@
+{
+  "id": "desensibilizacion-sistematica-wolpe-1958",
+  "grupo": "Conductismo",
+  "label": "Desensibilización sistemática",
+  "year": 1958,
+  "importance": 2,
+  "autores": "Joseph Wolpe",
+  "universidad": "",
+  "ciudad": "Johannesburgo",
+  "pais": "Sudáfrica",
+  "lat": -26.204103,
+  "lon": 28.047305,
+
+  "influencias": [
+    "Condicionamiento clásico",
+    "Inhibición recíproca",
+    "Relajación",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "descripcion": "La desensibilización sistemática propone la reducción de la ansiedad mediante un proceso de contracondicionamiento basado en el principio de inhibición recíproca. Wolpe planteó que una respuesta incompatible con la ansiedad, principalmente la relajación, podía inhibir progresivamente las respuestas ansiosas si se emparejaba de forma gradual con los estímulos temidos. El procedimiento incluye la construcción de jerarquías de estímulos, el entrenamiento en técnicas de relajación y la exposición gradual —imaginal o in vivo— al estímulo ansiógeno. Este modelo constituyó un hito histórico en la psicoterapia conductual y sirvió como puente conceptual y técnico hacia los tratamientos modernos de exposición.",
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se concibe como un conjunto de asociaciones aprendidas entre estímulos y respuestas observables. El conocimiento terapéutico válido es empírico, experimental y replicable, obtenido mediante la manipulación sistemática de variables ambientales. El cambio psicológico se explica a través de procesos de aprendizaje sin recurrir a constructos mentales no observables.",
+
+    "teoriaFormal": "La ansiedad se entiende como una respuesta condicionada que puede ser inhibida mediante la activación de respuestas incompatibles. El contracondicionamiento, apoyado en la presentación jerárquica de estímulos, permite debilitar progresivamente la asociación entre estímulo condicionado y respuesta ansiosa.",
+
+    "teoriaClinica": "La intervención clínica se centra en entrenar respuestas incompatibles con la ansiedad y presentarlas de forma gradual junto a los estímulos temidos. El progreso terapéutico se evalúa por la reducción observable de la respuesta ansiosa y la capacidad del paciente para afrontar estímulos previamente evitados."
+  },
+
+  "mjps": ["RE", "RF", "AG"],
+
+"procedimientos": [
+  {
+    "nombre": "Evaluación conductual y análisis funcional de la ansiedad",
+    "codigo": "p_ds_analisis_funcional",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Procedimiento inicial orientado a identificar estímulos condicionados específicos, respuestas ansiosas observables y patrones de evitación o escape, formulando el problema en términos funcionales estímulo–respuesta. Permite delimitar con precisión el foco de intervención y seleccionar los estímulos relevantes para la jerarquía de desensibilización. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Psicoeducación en el principio de inhibición recíproca",
+    "codigo": "p_ds_psicoeducacion",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Explicación del modelo de inhibición recíproca y del racional del tratamiento, presentando la ansiedad como una respuesta condicionada que puede debilitarse al emparejarse con una respuesta incompatible. Este procedimiento aumenta comprensión, expectativas realistas y adhesión a las tareas de exposición. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Entrenamiento en relajación muscular progresiva",
+    "codigo": "p_ds_relajacion_muscular",
+    "procesos": ["RF_relax"],
+    "texto": "Entrenamiento sistemático en relajación muscular progresiva con el objetivo de establecer una respuesta fisiológica incompatible con la ansiedad. Se practica hasta lograr una inducción fiable y voluntaria, que pueda mantenerse durante la exposición sin convertirse en estrategia de evitación. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Entrenamiento complementario en respiración reguladora",
+    "codigo": "p_ds_resp_reguladora",
+    "procesos": ["RF_resp"],
+    "texto": "Procedimiento auxiliar orientado a estabilizar la activación autonómica mediante control respiratorio, facilitando la reducción de hiperventilación y la inducción de estados fisiológicos incompatibles con la respuesta ansiosa. Refuerza la eficacia de la relajación durante la exposición. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Entrenamiento en evocación imaginal",
+    "codigo": "p_ds_evocacion_imaginal",
+    "procesos": ["AP_evocacion"],
+    "texto": "Entrenamiento dirigido a mejorar la capacidad del paciente para evocar mentalmente escenas ansiógenas de forma clara y sostenida, condición necesaria para una desensibilización imaginal eficaz cuando la exposición directa no es viable inicialmente. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Construcción de jerarquía de estímulos ansiógenos",
+    "codigo": "p_ds_jerarquia",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Elaboración colaborativa de una jerarquía gradual de estímulos temidos, ordenados de menor a mayor intensidad ansiosa y definidos de manera conductualmente específica. Permite una progresión sistemática y controlada de la exposición. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Desensibilización sistemática imaginal",
+    "codigo": "p_ds_desensibilizacion_imaginal",
+    "procesos": ["AP_evocacion", "RF_relax"],
+    "texto": "Aplicación progresiva de la jerarquía mediante evocación imaginal de los estímulos mientras se mantiene la respuesta de relajación, repitiendo cada ítem hasta que la ansiedad se inhibe de forma consistente. Constituye el núcleo del procedimiento de contracondicionamiento. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Desensibilización sistemática in vivo",
+    "codigo": "p_ds_desensibilizacion_vivo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Exposición gradual a los estímulos reales siguiendo la jerarquía establecida, manteniendo la respuesta incompatible y evitando escape o evitación. Permite consolidar el aprendizaje y generalizar los efectos terapéuticos al contexto natural. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Control del ritmo de avance y repetición de ítems",
+    "codigo": "p_ds_control_ritmo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Procedimiento de ajuste del ritmo terapéutico que regula cuándo avanzar o repetir un nivel de la jerarquía, evitando progresiones prematuras que puedan generar sensibilización o reforzar la evitación. Garantiza aprendizaje estable y acumulativo. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Práctica entre sesiones de exposición y relajación",
+    "codigo": "p_ds_tareas_entre_sesiones",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Asignación sistemática de tareas de práctica fuera de sesión, incluyendo ejercicios de relajación y exposición gradual a ítems jerárquicos, con el objetivo de consolidar el aprendizaje y aumentar la autonomía del paciente. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Generalización del afrontamiento a nuevos contextos",
+    "codigo": "p_ds_generalizacion",
+    "procesos": ["R_repertorioInterpersonal"],
+    "texto": "Extensión deliberada del afrontamiento aprendido a situaciones, contextos y variaciones no entrenadas directamente, reduciendo la especificidad contextual del aprendizaje y previniendo recaídas conductuales. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Mantenimiento y prevención de recaídas",
+    "codigo": "p_ds_mantenimiento",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Procedimiento final orientado a mantener los logros terapéuticos mediante exposiciones ocasionales, detección temprana de evitación y uso autónomo de las habilidades aprendidas, asegurando la estabilidad del cambio a medio y largo plazo. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  }
+],
+
+
+
+ "micros": [
+  {
+    "nombre": "Identificación operativa del estímulo temido",
+    "codigo": "m_ds_identificar_estimulo",
+    "procesos": ["N"],
+    "texto": "Microintervención dirigida a definir con precisión el estímulo condicionado responsable de la respuesta ansiosa, evitando formulaciones vagas o globales. Se concreta en términos observables (situaciones, objetos, acciones, señales internas) para garantizar que la exposición se dirija al estímulo funcionalmente relevante. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Identificación de la respuesta ansiosa observable",
+    "codigo": "m_ds_identificar_respuesta",
+    "procesos": ["RE"],
+    "texto": "Consiste en delimitar de forma explícita la respuesta ansiosa (activación fisiológica, conductas motoras, impulsos de escape) para facilitar su monitorización durante la desensibilización y diferenciar ansiedad de otras respuestas emocionales. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Inducción breve de relajación muscular",
+    "codigo": "m_ds_induccion_relajacion",
+    "procesos": ["RF"],
+    "texto": "Aplicación puntual de relajación muscular progresiva abreviada con el objetivo de activar la respuesta incompatible antes o durante la exposición, asegurando que la ansiedad se inhiba fisiológicamente sin recurrir a evitación. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Discriminación consciente entre tensión y relajación",
+    "codigo": "m_ds_discriminacion_corporal",
+    "procesos": ["RF"],
+    "texto": "Micropráctica orientada a aumentar la capacidad del paciente para reconocer diferencias corporales entre estados de tensión y relajación, fortaleciendo el control voluntario de la respuesta incompatible durante la exposición. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Ordenación gradual de ítems jerárquicos",
+    "codigo": "m_ds_ordenacion_jerarquia",
+    "procesos": ["N"],
+    "texto": "Ajuste fino del orden de los estímulos dentro de la jerarquía, garantizando incrementos pequeños y manejables de ansiedad entre ítems para evitar sensibilización o bloqueo del proceso. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Evaluación subjetiva del nivel de ansiedad",
+    "codigo": "m_ds_evaluacion_ansiedad",
+    "procesos": ["RE"],
+    "texto": "Estimación continuada de la intensidad de la ansiedad durante la exposición para decidir si mantener, repetir o finalizar el ítem, asegurando que la respuesta incompatible se imponga de forma efectiva. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Presentación imaginal controlada del estímulo",
+    "codigo": "m_ds_presentacion_imaginal",
+    "procesos": ["AP"],
+    "texto": "Evocación deliberada y progresiva del estímulo temido en imaginación, manteniendo simultáneamente la respuesta de relajación, hasta que la ansiedad disminuye de forma observable. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Repetición del ítem hasta inhibición de la ansiedad",
+    "codigo": "m_ds_repeticion_item",
+    "procesos": ["RE"],
+    "texto": "Permanencia en un mismo ítem jerárquico hasta que la ansiedad se inhibe de forma consistente, evitando avances prematuros que comprometan el contracondicionamiento. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Transición gradual al siguiente estímulo",
+    "codigo": "m_ds_transicion_item",
+    "procesos": ["AG"],
+    "texto": "Paso deliberado al siguiente estímulo de la jerarquía solo cuando se cumplen criterios claros de reducción de ansiedad, garantizando progresión segura y acumulativa. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Exposición en vivo con permanencia sin escape",
+    "codigo": "m_ds_exposicion_vivo",
+    "procesos": ["AG"],
+    "texto": "Contacto directo con el estímulo real durante un tiempo suficiente para que la ansiedad disminuya sin huida ni escape, permitiendo que se consolide el aprendizaje inhibitorio en el contexto natural. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Detección de conductas de evitación encubierta",
+    "codigo": "m_ds_detectar_evitacion",
+    "procesos": ["N"],
+    "texto": "Identificación de microconductas de evitación o escape sutil (distracción, retirada atencional, acortamiento de la exposición) que interfieren con el aprendizaje y deben ser reducidas. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Mantenimiento voluntario de la exposición",
+    "codigo": "m_ds_mantenimiento_exposicion",
+    "procesos": ["AG"],
+    "texto": "Sostener activamente la conducta de exposición pese a la ansiedad inicial, reforzando la sensación de control y favoreciendo la inhibición progresiva de la respuesta condicionada. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Práctica autónoma de relajación",
+    "codigo": "m_ds_practica_relajacion",
+    "procesos": ["RF"],
+    "texto": "Repetición independiente de ejercicios de relajación fuera de sesión para aumentar la rapidez y fiabilidad de la respuesta incompatible durante la exposición jerárquica. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Exposición repetida en contextos variados",
+    "codigo": "m_ds_variacion_contextual",
+    "procesos": ["R"],
+    "texto": "Aplicación deliberada de la exposición a variaciones del estímulo y a diferentes contextos para evitar que la reducción de ansiedad quede ligada a una situación única. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Registro de afrontamiento exitoso",
+    "codigo": "m_ds_registro_afrontamiento",
+    "procesos": ["N"],
+    "texto": "Anotación sistemática de exposiciones completadas con éxito para consolidar el aprendizaje, aumentar la percepción de autoeficacia y facilitar la generalización del afrontamiento. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  },
+  {
+    "nombre": "Reactivación del plan ante reaparición de evitación",
+    "codigo": "m_ds_reactivacion_plan",
+    "procesos": ["AG"],
+    "texto": "Aplicación inmediata de exposiciones graduadas cuando reaparece evitación o ansiedad significativa, previniendo la reinstalación del patrón condicionado. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*."
+  }
+],
+
+
+  "ideasPrincipales": [
+  {
+    "id": "idea_ds_1",
+    "titulo": "La ansiedad es una respuesta condicionada aprendida",
+    "desarrollo": "La desensibilización sistemática parte de la premisa de que la ansiedad no es un rasgo interno ni un conflicto simbólico, sino una respuesta condicionada adquirida mediante procesos de aprendizaje. Como tal, puede ser modificada aplicando principios experimentales del condicionamiento clásico sin necesidad de recurrir a interpretación psicológica. (Wolpe, 1958, *Psychotherapy by Reciprocal Inhibition*)."
+  },
+  {
+    "id": "idea_ds_2",
+    "titulo": "Las respuestas incompatibles pueden inhibir la ansiedad",
+    "desarrollo": "El principio central del modelo es la inhibición recíproca: dos respuestas fisiológicas incompatibles no pueden coexistir plenamente. Al entrenar una respuesta incompatible con la ansiedad, principalmente la relajación, y presentarla junto al estímulo temido, la respuesta ansiosa se debilita progresivamente. (Wolpe, 1958)."
+  },
+  {
+    "id": "idea_ds_3",
+    "titulo": "El contracondicionamiento requiere presentación gradual del estímulo",
+    "desarrollo": "Para que el contracondicionamiento sea eficaz, los estímulos ansiógenos deben presentarse de forma progresiva y jerárquica. La gradación evita la sensibilización y permite que la respuesta incompatible se imponga de manera estable sobre la ansiedad condicionada. (Wolpe, 1958)."
+  },
+  {
+    "id": "idea_ds_4",
+    "titulo": "La evitación y el escape mantienen la respuesta ansiosa",
+    "desarrollo": "El modelo asume que la evitación y el escape refuerzan negativamente la ansiedad al impedir la extinción o inhibición de la respuesta condicionada. Por ello, la permanencia controlada ante el estímulo temido es condición necesaria para el cambio terapéutico. (Wolpe, 1958)."
+  },
+  {
+    "id": "idea_ds_5",
+    "titulo": "La práctica repetida consolida el aprendizaje inhibitorio",
+    "desarrollo": "La reducción de la ansiedad no ocurre por una única exposición, sino mediante repetición sistemática y controlada. La práctica continuada permite que la inhibición de la respuesta ansiosa se generalice y se mantenga en el tiempo. (Wolpe, 1958)."
+  },
+  {
+    "id": "idea_ds_6",
+    "titulo": "El progreso terapéutico se evalúa por cambios observables",
+    "desarrollo": "La desensibilización sistemática evalúa su eficacia a través de indicadores conductuales y fisiológicos observables, como la reducción de la activación ansiosa y la capacidad de afrontar estímulos previamente evitados, sin recurrir a constructos subjetivos no operacionales. (Wolpe, 1958)."
+  },
+  {
+    "id": "idea_ds_7",
+    "titulo": "La generalización requiere variabilidad contextual",
+    "desarrollo": "Para evitar que la mejora quede restringida a un único contexto, el modelo enfatiza la exposición a variaciones del estímulo y a diferentes situaciones. La generalización del afrontamiento es un objetivo explícito del tratamiento. (Wolpe, 1958)."
+  },
+  {
+    "id": "idea_ds_8",
+    "titulo": "La desensibilización sistemática es un modelo técnicamente estructurado",
+    "desarrollo": "El modelo de Wolpe no es una técnica aislada, sino un procedimiento estructurado con fases definidas: evaluación, entrenamiento en respuesta incompatible, jerarquización y exposición progresiva. Esta estructura garantiza replicabilidad y control experimental del proceso terapéutico. (Wolpe, 1958)."
+  },
+  {
+    "id": "idea_ds_9",
+    "titulo": "La desensibilización sistemática actúa como puente histórico hacia la exposición moderna",
+    "desarrollo": "Aunque basada en el contracondicionamiento, la desensibilización sistemática sentó las bases conceptuales y técnicas de los tratamientos contemporáneos de exposición, marcando la transición entre el conductismo clásico y los enfoques conductuales posteriores. (Wolpe, 1958)."
+  }
+],
+
+
+  "refs": [
+    "Wolpe, J. (1958). Psychotherapy by Reciprocal Inhibition."
+  ]
+}
