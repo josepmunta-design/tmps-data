@@ -1,0 +1,261 @@
+{
+  "id": "manejo-contingencias-adicciones-1994",
+  "grupo": "Conductismo",
+  "label": "Manejo de contingencias (adicciones)",
+  "year": 1994,
+  "importance": 2,
+  "autores": "Stephen T. Higgins; Nancy M. Petry",
+  "universidad": "University of Vermont",
+  "ciudad": "Burlington, Vermont",
+  "pais": "EE. UU.",
+  "lat": 44.475883,
+  "lon": -73.212072,
+
+  "descripcion": "El Manejo de Contingencias (Contingency Management, CM) es un modelo de intervención conductual aplicado principalmente al tratamiento de las adicciones y otras conductas de salud, basado en los principios del condicionamiento operante. Su núcleo consiste en la aplicación sistemática de reforzadores tangibles (dinero, vales, incentivos materiales) o sociales, contingentes a la verificación objetiva de conductas objetivo como la abstinencia, la adherencia al tratamiento o la asistencia a sesiones. Desarrollado y validado empíricamente desde los años noventa por Higgins, Petry y colaboradores, el modelo ha demostrado efectos robustos, replicables y de gran magnitud en trastornos por uso de sustancias, incluso en poblaciones con alta cronicidad y resistencia a otros tratamientos. CM se caracteriza por su claridad tecnológica, su alta fidelidad a datos objetivos (tests toxicológicos, registros verificables) y su énfasis en modificar contingencias ambientales reales que mantienen el consumo.",
+
+  "influencias": [
+    "Condicionamiento operante",
+    "Economía de fichas",
+    "Refuerzo diferencial",
+    "Análisis aplicado de la conducta"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica relevante para el cambio se define en términos de conducta observable y contingencias ambientales objetivas. El conocimiento terapéutico se valida empíricamente mediante datos verificables (por ejemplo, pruebas toxicológicas), no por interpretación subjetiva. El ser humano es entendido como un organismo sensible a contingencias, cuya conducta se organiza en función de consecuencias inmediatas y diferidas. El cambio ocurre cuando se alteran de forma sistemática las contingencias que mantienen el comportamiento problema. La relación terapéutica es un medio facilitador, pero no el principio explicativo central del cambio.",
+    "teoriaFormal": "La conducta adictiva se mantiene porque produce consecuencias reforzantes inmediatas y potentes, mientras que las consecuencias negativas son diferidas o inconsistentes. El cambio psicológico se explica como una reorganización del balance de reforzamiento: cuando la abstinencia y la adherencia reciben consecuencias positivas inmediatas y fiables, estas conductas aumentan en frecuencia y estabilidad. El sufrimiento se mantiene por entornos donde el refuerzo del consumo supera al refuerzo de las alternativas adaptativas.",
+    "teoriaClinica": "El caso se conceptualiza identificando conductas objetivo verificables (consumo, abstinencia, asistencia, cumplimiento) y las contingencias reales que las rodean. La intervención prioriza reforzadores claros, contingentes y escalonados, con criterios explícitos de ganancia y pérdida. El progreso terapéutico se evalúa mediante indicadores objetivos y continuos, permitiendo ajustes rápidos del programa de refuerzo."
+  },
+
+  "mjps": [
+    "AG",
+    "R",
+    "RF"
+  ],
+
+ "procedimientos": [
+  {
+    "nombre": "Definición de conductas objetivo verificables",
+    "codigo": "p_cm_definicion_conductas",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Procedimiento inicial que consiste en operacionalizar con máxima precisión las conductas diana (p. ej., muestras de orina negativas, asistencia a sesión, toma de medicación), asegurando que sean objetivamente verificables, dicotómicas cuando es posible y clínicamente relevantes; esta definición es crítica para que la contingencia sea clara, justa y no negociable, evitando ambigüedades que erosionen el efecto del reforzamiento. (Higgins et al., 1994; Petry, 2012)."
+  },
+  {
+    "nombre": "Verificación objetiva y frecuente de la conducta",
+    "codigo": "p_cm_verificacion_objetiva",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Establecimiento de un sistema de comprobación regular y fiable de la conducta objetivo (tests toxicológicos supervisados, registros electrónicos, recuentos objetivos), con alta frecuencia inicial para maximizar control de contingencias; la fiabilidad de la verificación es un requisito estructural del modelo, ya que sin datos objetivos el reforzamiento pierde poder discriminativo. (Higgins et al., 1994; Petry, 2012)."
+  },
+  {
+    "nombre": "Diseño del reforzador tangible o incentivo",
+    "codigo": "p_cm_diseno_reforzador",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Selección y estructuración de reforzadores tangibles (dinero, vales, premios, servicios) o sociales con valor real para la persona, cuidando su inmediatez, equivalencia económica y aceptabilidad ética; el reforzador debe competir eficazmente con el refuerzo del consumo, especialmente en fases tempranas del tratamiento. (Petry, 2000; Petry, 2012)."
+  },
+  {
+    "nombre": "Programa de reforzamiento contingente a abstinencia",
+    "codigo": "p_cm_refuerzo_abstinencia",
+    "procesos": ["AG_compromisoConductual", "RF_prevEvitacion"],
+    "texto": "Aplicación sistemática del reforzador únicamente cuando la conducta objetivo se verifica (p. ej., muestra negativa), estableciendo una relación directa e inequívoca entre abstinencia y consecuencia positiva; este procedimiento reorganiza el balance motivacional del paciente. (Higgins et al., 1994; Petry, 2012)."
+  },
+  {
+    "nombre": "Escalado progresivo del reforzamiento (escalating schedules)",
+    "codigo": "p_cm_escalado_refuerzo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Incremento gradual del valor del reforzador con cada verificación consecutiva de la conducta objetivo, generando un fuerte incentivo para la continuidad y la estabilidad de la abstinencia; el escalado refuerza especialmente la persistencia y reduce recaídas tempranas. (Higgins et al., 1994)."
+  },
+  {
+    "nombre": "Reinicio del reforzamiento tras incumplimiento (reset)",
+    "codigo": "p_cm_reset_refuerzo",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Restablecimiento del valor inicial del reforzador tras una verificación positiva de consumo o incumplimiento del criterio, sin castigo adicional ni confrontación; este procedimiento mantiene la contingencia clara y predecible, evitando escaladas punitivas. (Higgins et al., 1994; Petry, 2012)."
+  },
+  {
+    "nombre": "Economía de fichas aplicada a consumo de sustancias",
+    "codigo": "p_cm_economia_fichas",
+    "procesos": ["AG_compromisoConductual", "R_sist_contexto"],
+    "texto": "Implementación de sistemas de puntos o vales canjeables por reforzadores mayores, permitiendo reforzamiento inmediato incluso cuando el incentivo final no es viable en el momento; exige reglas claras de acumulación, canje y control para evitar inflación o pérdida de credibilidad. (Petry, 2000)."
+  },
+  {
+    "nombre": "Manejo de contingencias con sorteos (prize-based CM)",
+    "codigo": "p_cm_prize_based",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Uso de sorteos con probabilidades diferenciadas de premios como reforzador contingente a la abstinencia o adherencia, aumentando motivación con costes controlados; este formato mantiene eficacia clínica con menor inversión económica directa. (Petry et al., 2005; Petry, 2012)."
+  },
+  {
+    "nombre": "Reforzamiento de adherencia al tratamiento",
+    "codigo": "p_cm_adherencia",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Aplicación de incentivos contingentes a conductas de adherencia como asistencia a sesiones, cumplimiento farmacológico o participación en actividades terapéuticas, especialmente útil en fases iniciales o poblaciones con alta tasa de abandono. (Petry, 2012)."
+  },
+  {
+    "nombre": "Integración de CM con otros tratamientos psicosociales",
+    "codigo": "p_cm_integracion_tratamientos",
+    "procesos": ["R_sist_interaccion", "AG_compromisoConductual"],
+    "texto": "Coordinación del manejo de contingencias con intervenciones cognitivo-conductuales, farmacológicas o comunitarias, utilizando CM como catalizador de adherencia y reducción de consumo sin sustituir otros componentes terapéuticos. (Petry, 2012; Higgins et al., 2000)."
+  },
+  {
+    "nombre": "Monitorización continua y ajuste del programa",
+    "codigo": "p_cm_monitorizacion_ajuste",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Revisión periódica de datos de abstinencia, costes y respuesta del paciente para ajustar frecuencia de verificación, valor de reforzadores o criterios de escalado, manteniendo sensibilidad clínica y eficiencia del programa. (Petry, 2012)."
+  },
+  {
+    "nombre": "Programación de mantenimiento y retirada gradual del refuerzo",
+    "codigo": "p_cm_mantenimiento_fading",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Planificación explícita para reducir progresivamente los incentivos artificiales y transferir control a reforzadores naturales (salud, relaciones, estabilidad vital), minimizando dependencia del sistema de incentivos. (Higgins et al., 2000; Petry, 2012)."
+  },
+  {
+    "nombre": "Evaluación de validez social y aceptabilidad ética",
+    "codigo": "p_cm_validez_social",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Evaluación de la aceptabilidad del programa para pacientes, profesionales e instituciones, considerando percepciones de justicia, estigma y coste-beneficio, asegurando sostenibilidad y legitimidad clínica del uso de incentivos. (Petry, 2012)."
+  }
+],
+
+
+ "micros": [
+  {
+    "nombre": "Comunicación explícita de la contingencia",
+    "codigo": "m_cm_explicitar_contingencia",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Explicación clara y repetida de la regla conductual (qué conducta produce qué consecuencia y cuándo), usando lenguaje simple y ejemplos concretos para asegurar discriminación de la contingencia y reducir interpretaciones ambiguas que debilitan el control del reforzamiento. (Higgins et al., 1994; Petry, 2012)."
+  },
+  {
+    "nombre": "Entrega inmediata del incentivo tras verificación",
+    "codigo": "m_cm_inmediatez_incentivo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Aplicación del incentivo lo más cercana posible temporalmente a la verificación objetiva de la conducta (p. ej., resultado negativo), maximizando el poder reforzante y la asociación conducta–consecuencia. (Skinner, 1953; Petry, 2012)."
+  },
+  {
+    "nombre": "Chequeo rápido de elegibilidad",
+    "codigo": "m_cm_chequeo_elegibilidad",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Confirmación breve y estandarizada de que se cumplen los criterios de obtención del refuerzo antes de la entrega, evitando errores que erosionen la credibilidad del programa. (Petry, 2012)."
+  },
+  {
+    "nombre": "Rotulación neutral del resultado",
+    "codigo": "m_cm_rotulacion_neutral",
+    "procesos": ["RE_modulacion"],
+    "texto": "Comunicación del resultado de la prueba (positivo/negativo) con tono neutro y descriptivo, sin juicio ni confrontación, para preservar la contingencia y evitar reforzamiento emocional inadvertido del consumo. (Petry, 2012)."
+  },
+  {
+    "nombre": "Refuerzo social complementario",
+    "codigo": "m_cm_refuerzo_social",
+    "procesos": ["R_comunicacionEmocional"],
+    "texto": "Acompañamiento del incentivo tangible con reconocimiento social breve y específico (p. ej., “cumpliste el criterio esta semana”), incrementando valor reforzante sin sustituir la contingencia principal. (Higgins et al., 1994)."
+  },
+  {
+    "nombre": "Actualización visual del progreso",
+    "codigo": "m_cm_feedback_visual",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Uso de registros visibles (gráficas, contadores, tarjetas) que muestran rachas consecutivas y valor acumulado, fortaleciendo control discriminativo y persistencia. (Petry, 2012)."
+  },
+  {
+    "nombre": "Incremento unitario del valor en escalado",
+    "codigo": "m_cm_incremento_unitario",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Aplicación consistente del aumento predefinido del incentivo tras cada cumplimiento consecutivo, manteniendo previsibilidad y evitando negociaciones ad hoc. (Higgins et al., 1994)."
+  },
+  {
+    "nombre": "Aplicación automática del reset",
+    "codigo": "m_cm_reset_automatico",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Reinicio inmediato del valor del incentivo tras incumplimiento, sin castigo adicional ni discusión, preservando la claridad de la regla y reduciendo escaladas emocionales. (Higgins et al., 1994; Petry, 2012)."
+  },
+  {
+    "nombre": "Programación de sorteos (probabilidades)",
+    "codigo": "m_cm_probabilidades_sorteo",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Asignación explícita de probabilidades y tamaños de premio en CM basado en sorteos para equilibrar motivación y costes, manteniendo transparencia del sistema. (Petry et al., 2005; Petry, 2012)."
+  },
+  {
+    "nombre": "Control de saciación del reforzador",
+    "codigo": "m_cm_control_saciacion",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Rotación y ajuste del tipo/valor del incentivo para prevenir pérdida de eficacia por saciación, especialmente en programas prolongados. (Petry, 2012)."
+  },
+  {
+    "nombre": "Ajuste de frecuencia de pruebas",
+    "codigo": "m_cm_ajuste_frecuencia",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Modulación de la frecuencia de verificación (más alta al inicio, más espaciada con estabilidad) para optimizar control de contingencias y costes. (Higgins et al., 2000; Petry, 2012)."
+  },
+  {
+    "nombre": "Vinculación del incentivo a metas intermedias",
+    "codigo": "m_cm_metas_intermedias",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Asociación temporal del refuerzo a hitos parciales (p. ej., asistencia, adherencia) cuando la abstinencia completa aún no es viable, manteniendo dirección conductual. (Petry, 2012)."
+  },
+  {
+    "nombre": "Transferencia a reforzadores naturales",
+    "codigo": "m_cm_transferencia_natural",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Señalización explícita y aprovechamiento de consecuencias naturales positivas (salud, relaciones, estabilidad) conforme avanza el programa, preparando el fading del incentivo artificial. (Higgins et al., 2000)."
+  },
+  {
+    "nombre": "Chequeo ético y consentimiento informado",
+    "codigo": "m_cm_consentimiento_etico",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Revisión breve y periódica del consentimiento, reglas y límites del programa para sostener legitimidad, comprensión y adherencia. (Petry, 2012)."
+  },
+  {
+    "nombre": "Registro inmediato de costes y resultados",
+    "codigo": "m_cm_coste_resultado",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Anotación sistemática de incentivos entregados y resultados conductuales para análisis coste-efectividad y ajustes rápidos del programa. (Petry, 2012)."
+  }
+],
+
+
+  "ideasPrincipales": [
+  {
+    "id": "idea_cm_1",
+    "titulo": "La conducta adictiva responde de forma robusta a contingencias ambientales",
+    "desarrollo": "El Manejo de Contingencias parte de la premisa de que el consumo de sustancias no es inmune a las leyes del aprendizaje, sino que se mantiene porque produce consecuencias inmediatas y potentes. Cuando se introducen contingencias alternativas claras, inmediatas y fiables, la conducta adictiva puede modificarse de forma predecible incluso en poblaciones con alta cronicidad. (Higgins et al., 1994; Petry, 2012)."
+  },
+  {
+    "id": "idea_cm_2",
+    "titulo": "La inmediatez del refuerzo es un factor crítico del cambio",
+    "desarrollo": "CM demuestra que la proximidad temporal entre la conducta objetivo y el reforzador es más determinante que el significado simbólico del incentivo. La inmediatez compite eficazmente con el refuerzo inmediato del consumo, algo que otras intervenciones basadas en consecuencias diferidas no logran. (Skinner, 1953; Higgins et al., 1994)."
+  },
+  {
+    "id": "idea_cm_3",
+    "titulo": "La verificación objetiva protege la alianza y la eficacia",
+    "desarrollo": "El uso de indicadores objetivos y verificables (p. ej., pruebas toxicológicas) elimina negociaciones implícitas, reduce conflictos relacionales y preserva la claridad de la contingencia. Esta objetivación permite que la relación terapéutica no quede atrapada en juicios morales o discusiones sobre veracidad. (Petry, 2012)."
+  },
+  {
+    "id": "idea_cm_4",
+    "titulo": "El escalado del refuerzo potencia la persistencia conductual",
+    "desarrollo": "Los esquemas de reforzamiento escalonado incrementan progresivamente el valor de la abstinencia continuada, reforzando no solo el inicio del cambio sino su mantenimiento. Este principio explica la especial eficacia de CM para sostener rachas prolongadas de no consumo. (Higgins et al., 1994)."
+  },
+  {
+    "id": "idea_cm_5",
+    "titulo": "El reset no es castigo, sino claridad funcional",
+    "desarrollo": "La retirada del escalado tras incumplimiento no busca penalizar, sino restablecer una contingencia comprensible y predecible. Al evitar castigos adicionales, el modelo reduce evitación, abandono y confrontación, manteniendo al paciente dentro del sistema de cambio. (Higgins et al., 1994; Petry, 2012)."
+  },
+  {
+    "id": "idea_cm_6",
+    "titulo": "El incentivo no compra la abstinencia, la hace viable",
+    "desarrollo": "CM no sostiene que las personas cambien solo por dinero, sino que el incentivo permite que conductas alternativas compitan en un contexto donde el consumo domina el sistema de refuerzos. El reforzador actúa como andamiaje temporal hasta que emergen reforzadores naturales más estables. (Petry, 2012)."
+  },
+  {
+    "id": "idea_cm_7",
+    "titulo": "La eficacia del modelo no depende de insight ni motivación previa",
+    "desarrollo": "CM muestra efectos significativos incluso en personas con baja motivación inicial o escaso insight, cuestionando la idea de que el cambio en adicciones requiere primero conciencia o voluntad. La motivación puede ser consecuencia del cambio conductual, no su prerrequisito. (Higgins et al., 1994; Higgins et al., 2000)."
+  },
+  {
+    "id": "idea_cm_8",
+    "titulo": "La generalización exige transferencia a reforzadores naturales",
+    "desarrollo": "El modelo reconoce que los incentivos artificiales no pueden mantenerse indefinidamente. Por ello, la retirada gradual del refuerzo y su sustitución por consecuencias naturales es un componente estructural del tratamiento, no una fase opcional. (Higgins et al., 2000; Petry, 2012)."
+  }
+],
+
+
+  "refs": [
+    "Higgins, S. T., Budney, A. J., Bickel, W. K., Foerg, F. E., Donham, R., & Badger, G. J. (1994). Incentives improve outcome in outpatient behavioral treatment of cocaine dependence.",
+    "Petry, N. M. (2000). A comprehensive guide to the application of contingency management procedures.",
+    "Petry, N. M. (2012). Contingency management for substance abuse treatment.",
+    "Cooper, J. O., Heron, T. E., & Heward, W. L. (2007). Applied Behavior Analysis."
+  ]
+}
