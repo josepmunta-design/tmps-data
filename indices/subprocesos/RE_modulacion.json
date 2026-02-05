@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-04T12:45:13.325Z",
-  "totalModelos": 57,
+  "updatedAt": "2026-02-05T12:23:07.182Z",
+  "totalModelos": 58,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -56,6 +56,29 @@
           "codigo": "m_cft_dose_titration",
           "nombre": "Titulación de compasión (dosis tolerable)",
           "texto": "Introducir compasión en microdosis para no disparar vergüenza: frases mínimas, prácticas breves, más cuerpo y menos narrativa al inicio.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "autocontrol-conductual-kanfer-karoly",
+      "modelLabel": "Autocontrol conductual",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Frederick H. Kanfer; Michael Karoly",
+      "modelYear": 1972,
+      "items": [
+        {
+          "codigo": "p_autocontrol_demora_gratificacion",
+          "nombre": "Entrenamiento en demora de la gratificación",
+          "texto": "Procedimiento dirigido a aumentar la tolerancia a la demora del refuerzo, entrenando al individuo para posponer recompensas inmediatas en favor de beneficios a largo plazo. Se trabaja mediante tareas graduadas y contingencias planificadas que reducen la impulsividad conductual. Este procedimiento es clave en problemas de autocontrol relacionados con adicciones, hábitos y conductas impulsivas. Referencia: Kanfer & Karoly (1972).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_autocontrol_pausa_demora",
+          "nombre": "Demora de respuesta (pausa antes de actuar)",
+          "texto": "Microintervención de autocontrol que introduce una pausa breve (p. ej., 30–120 segundos) entre impulso y conducta, con una acción alternativa simple durante la pausa; esta demora reduce respuesta automática y permite que entren en juego contingencias elegidas, especialmente en conductas impulsivas mantenidas por refuerzo inmediato. Referencia: Kanfer & Karoly (1972).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

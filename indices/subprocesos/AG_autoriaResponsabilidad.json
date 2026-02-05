@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-02-04T12:45:13.325Z",
-  "totalModelos": 49,
+  "updatedAt": "2026-02-05T12:23:07.182Z",
+  "totalModelos": 50,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -51,6 +51,71 @@
           "codigo": "m_af_coste_largo_plazo",
           "nombre": "Contrastar coste a largo plazo",
           "texto": "Microintervención que invita a observar las consecuencias diferidas de la conducta problema en áreas como relaciones, autoestima o proyectos vitales. No busca moralizar, sino ampliar la conciencia funcional más allá del refuerzo inmediato, preparando el terreno para el cambio conductual. (Kanfer & Saslow, 1969).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "autocontrol-conductual-kanfer-karoly",
+      "modelLabel": "Autocontrol conductual",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Frederick H. Kanfer; Michael Karoly",
+      "modelYear": 1972,
+      "items": [
+        {
+          "codigo": "p_autocontrol_autoregistro",
+          "nombre": "Autorregistro sistemático de la conducta",
+          "texto": "Procedimiento central del autocontrol conductual que consiste en entrenar a la persona para observar y registrar de forma sistemática la ocurrencia de la conducta problema, sus antecedentes y sus consecuencias. El autorregistro incrementa la conciencia funcional del comportamiento, reduce la automaticidad y actúa en sí mismo como un modulador conductual al introducir feedback inmediato. No busca insight interpretativo, sino discriminación precisa de patrones conductuales y situacionales que permiten intervenir posteriormente sobre contingencias específicas. Referencia: Kanfer & Karoly (1972), *Self-Control: A Behavioristic Excursion*.",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_autocontrol_analisis_funcional",
+          "nombre": "Análisis funcional autoaplicado",
+          "texto": "Procedimiento mediante el cual el individuo aprende a identificar de forma operativa las relaciones funcionales entre estímulos antecedentes, respuestas conductuales y consecuencias reforzantes o aversivas. A diferencia del análisis funcional clásico realizado por el terapeuta, aquí se entrena al paciente para aplicar este análisis a su propia conducta cotidiana, aumentando su capacidad de predicción y control conductual. Constituye la base técnica para cualquier modificación posterior del entorno o de las contingencias. Referencia: Kanfer & Karoly (1972).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_autocontrol_autocastigo",
+          "nombre": "Auto-castigo y costes de respuesta",
+          "texto": "Procedimiento conductual que implica la aplicación de consecuencias aversivas leves o la retirada de reforzadores contingentes a la emisión de conductas problema. Su uso se concibe como secundario y cuidadosamente delimitado, priorizando siempre estrategias de refuerzo positivo. El objetivo no es generar culpa, sino introducir contingencias claras que reduzcan la probabilidad de respuestas indeseadas cuando el refuerzo positivo resulta insuficiente. Referencia: Kanfer & Karoly (1972).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_autocontrol_autoevaluacion",
+          "nombre": "Autoevaluación y revisión de objetivos",
+          "texto": "Procedimiento de seguimiento sistemático en el que la persona evalúa periódicamente su propio progreso conductual en relación con criterios previamente definidos. Incluye la revisión y ajuste de objetivos para mantenerlos realistas y funcionales, evitando tanto la autoexigencia punitiva como la laxitud. La autoevaluación consolida el aprendizaje autorregulador y favorece el mantenimiento del cambio conductual. Referencia: Kanfer & Karoly (1972).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_autocontrol_definir_conducta_diana",
+          "nombre": "Definir conducta diana en términos operacionales",
+          "texto": "Microintervención inicial que traduce un objetivo vago (p. ej., “comer mejor”, “procrastino”) a una definición observable, medible y contextualizada (qué hace exactamente, cuándo, cuánto, con qué señales y con qué excepciones), porque sin definición operacional no hay autorregulación ni contingencias claras; esta precisión reduce autoengaño, permite autorregistro fiable y hace posible diseñar estímulos y consecuencias pertinentes. Referencia: Kanfer & Karoly (1972), *Self-Control: A Behavioristic Excursion*.",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_autocontrol_linea_base",
+          "nombre": "Tomar línea base breve antes de intervenir",
+          "texto": "Microintervención que consiste en registrar la conducta tal como ocurre durante un periodo corto (p. ej., 3–7 días) antes de introducir cambios, para estimar patrón y variabilidad natural; esto evita atribuir a la intervención fluctuaciones espontáneas y mejora la toma de decisiones posteriores sobre control de estímulos y reforzamiento. Referencia: Kanfer & Karoly (1972).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_autocontrol_coste_respuesta_pactado",
+          "nombre": "Auto-castigo leve o coste de respuesta pactado",
+          "texto": "Microintervención que define una consecuencia aversiva leve o una retirada de privilegio (coste) solo si ocurre la conducta problema, y siempre pactada y limitada; se usa con prudencia para no derivar en autocrítica, y su función es reequilibrar contingencias cuando el refuerzo inmediato de la conducta problema es muy potente. Referencia: Kanfer & Karoly (1972).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_autocontrol_revision_semanal_ajuste",
+          "nombre": "Revisión semanal del plan y ajuste de contingencias",
+          "texto": "Microintervención de mantenimiento que consiste en revisar datos del autorregistro, detectar patrones (momentos de fallo, contextos de éxito) y ajustar una sola variable por vez (señal, criterio o reforzador), evitando cambios caóticos; esta revisión convierte el programa en un ciclo de autorregulación estable y acumulativo. Referencia: Kanfer & Karoly (1972).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }
