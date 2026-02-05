@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-02-05T20:26:03.611Z",
-  "totalModelos": 58,
+  "updatedAt": "2026-02-05T20:34:05.231Z",
+  "totalModelos": 59,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -234,6 +234,85 @@
           "codigo": "m_aversivo_monitorizacion",
           "nombre": "Monitorización de supresión conductual",
           "texto": "Registro sistemático de la frecuencia e intensidad de la conducta objetivo para evaluar la eficacia del procedimiento, centrado exclusivamente en cambios observables.",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-clasico-pavlov-1927",
+      "modelLabel": "Condicionamiento clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Iván P. Pavlov",
+      "modelYear": 1927,
+      "items": [
+        {
+          "codigo": "p_pavlov_operacionalizacion_componentes",
+          "nombre": "Definición y operacionalización de EI/RI y EC/RC",
+          "texto": "Procedimiento fundacional que consiste en definir con precisión qué estímulo funciona como incondicionado (EI) y qué respuesta aparece de forma refleja (RI), así como el estímulo condicionado (EC) inicialmente neutro y la respuesta condicionada (RC) objetivo, estableciendo criterios observables de inicio/fin, intensidad, frecuencia y latencia para asegurar medición replicable del aprendizaje asociativo. Referencia: Pavlov (1927).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_linea_base_control",
+          "nombre": "Establecimiento de línea base y control de estímulos",
+          "texto": "Registro previo de respuestas en ausencia de emparejamientos y control del entorno (contexto, señales competidoras, horarios, instrucciones) para determinar reactividad basal y evitar asociaciones espurias, garantizando que los cambios posteriores se atribuyan a la contingencia EC–EI y no a variables de confusión. Referencia: Pavlov (1927).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_adquisicion_ec_ei",
+          "nombre": "Adquisición por emparejamiento EC–EI (condicionamiento excitatorio)",
+          "texto": "Emparejamiento repetido y sistemático del EC con el EI de forma que el EC prediga al EI, promoviendo el aumento progresivo de la RC; el procedimiento incluye manipular número de ensayos, intervalos entre estímulos y consistencia de la contingencia para modelar la velocidad y fuerza del condicionamiento. Referencia: Pavlov (1927); Rescorla (1968).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_contigüidad_contingencia",
+          "nombre": "Manipulación de contigüidad y contingencia",
+          "texto": "Ajuste deliberado del intervalo temporal EC→EI y de la probabilidad de EI en presencia/ausencia del EC para demostrar que el aprendizaje depende críticamente de la predictividad del EC (contingencia) además de la mera cercanía temporal (contigüidad), afinando la conceptualización moderna del condicionamiento. Referencia: Rescorla (1968); Pavlov (1927).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_recuperacion_espontanea",
+          "nombre": "Recuperación espontánea y evaluación de retorno de respuesta",
+          "texto": "Evaluación de la reaparición parcial de la RC tras el paso del tiempo después de la extinción, mostrando la fragilidad contextual del aprendizaje extintivo y justificando estrategias clínicas de mantenimiento y repetición en múltiples contextos. Referencia: Bouton (2004).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_respuesta_emocional_condicionada",
+          "nombre": "Evaluación de respuestas condicionadas emocionales",
+          "texto": "Procedimiento para identificar y medir RC emocionales y fisiológicas (miedo, activación autonómica, respuestas somáticas) ante EC relevantes, permitiendo mapear disparadores, intensidad y patrones de generalización, y conectando directamente el condicionamiento con la clínica de fobias, ansiedad y trauma. Referencia: Pavlov (1927).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pavlov_neutralidad_inicial",
+          "nombre": "Asegurar que el EC es inicialmente neutro",
+          "texto": "Comprobar que antes del emparejamiento el EC no provoca por sí mismo una respuesta significativa, garantizando que el aumento posterior de RC se debe al aprendizaje asociativo y no a reactividad previa. Referencia: Pavlov (1927).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_consistencia_contingencia",
+          "nombre": "Mantener consistencia de contingencia",
+          "texto": "Evitar emparejamientos erráticos donde el EI ocurre con igual probabilidad sin EC, porque reduce la predictividad y debilita el aprendizaje; la contingencia es clave para que el EC funcione como predictor. Referencia: Rescorla (1968).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_curva_adquisicion",
+          "nombre": "Registrar curva de adquisición",
+          "texto": "Medir la evolución de la RC a lo largo de ensayos para observar incremento gradual y detectar plateaus, aportando base cuantitativa para decisiones sobre intensidad/duración del entrenamiento. Referencia: Pavlov (1927).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_test_recuperacion",
+          "nombre": "Probar recuperación espontánea tras descanso",
+          "texto": "Reevaluar la RC tras un intervalo temporal para estimar recuperación espontánea y planificar repetición o generalización del aprendizaje extintivo. Referencia: Bouton (2004).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }

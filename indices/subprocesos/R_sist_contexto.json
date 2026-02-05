@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_contexto",
-  "updatedAt": "2026-02-05T20:26:03.611Z",
-  "totalModelos": 16,
+  "updatedAt": "2026-02-05T20:34:05.231Z",
+  "totalModelos": 17,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -135,6 +135,64 @@
           "codigo": "m_biofb_chequeo_fatiga",
           "nombre": "Chequeo de fatiga y saciación",
           "texto": "Evaluación rápida del cansancio o sobreentrenamiento para ajustar duración y prevenir decrementos del aprendizaje. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-clasico-pavlov-1927",
+      "modelLabel": "Condicionamiento clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Iván P. Pavlov",
+      "modelYear": 1927,
+      "items": [
+        {
+          "codigo": "p_pavlov_linea_base_control",
+          "nombre": "Establecimiento de línea base y control de estímulos",
+          "texto": "Registro previo de respuestas en ausencia de emparejamientos y control del entorno (contexto, señales competidoras, horarios, instrucciones) para determinar reactividad basal y evitar asociaciones espurias, garantizando que los cambios posteriores se atribuyan a la contingencia EC–EI y no a variables de confusión. Referencia: Pavlov (1927).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_renovacion_contextual",
+          "nombre": "Renovación contextual (efectos del contexto en extinción)",
+          "texto": "Procedimiento que examina cómo la extinción aprendida en un contexto puede no transferirse plenamente a otros, provocando retorno de la respuesta (renovación), y que fundamenta la necesidad de generalizar exposiciones a distintos entornos y señales para consolidar aprendizaje inhibitorio. Referencia: Bouton (2004).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_reinstalacion",
+          "nombre": "Reinstalación (reinstatement) por exposición al EI",
+          "texto": "Evaluación del retorno de la RC tras reexposición al EI o a eventos aversivos similares, mostrando cómo nuevos episodios estresantes pueden reactivar respuestas condicionadas incluso tras extinción, y orientando prevención de recaídas y planificación de afrontamiento contextual. Referencia: Bouton (2004).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_inhibicion_condicionada",
+          "nombre": "Inhibición condicionada (señales de seguridad)",
+          "texto": "Entrenamiento de estímulos que predicen la ausencia del EI (señales de seguridad) para generar inhibición de la RC, aportando una base para comprender la regulación por señales seguras y también el papel problemático de ciertas conductas de seguridad cuando impiden la extinción natural. Referencia: Pavlov (1927); Bouton (2004).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pavlov_control_competidores",
+          "nombre": "Controlar estímulos contextuales competidores",
+          "texto": "Reducir señales del ambiente que puedan convertirse en EC accidentales (contexto, voz, rituales), previniendo condicionamiento al contexto y aumentando claridad causal del emparejamiento. Referencia: Bouton (2004).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_introducir_ec_menos",
+          "nombre": "Introducir EC− como señal de seguridad",
+          "texto": "Añadir estímulos que predicen ausencia del EI para entrenar discriminación y reducir falsas alarmas, construyendo control inhibitorio sobre la respuesta condicionada. Referencia: Pavlov (1927).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_cambio_contexto",
+          "nombre": "Cambiar de contexto para detectar renovación",
+          "texto": "Presentar el EC en un contexto distinto al de extinción para observar renovación y, si aparece, justificar entrenamiento adicional en contextos múltiples. Referencia: Bouton (2004).",
           "sub": "R_sist_contexto",
           "tipo": "micro"
         }

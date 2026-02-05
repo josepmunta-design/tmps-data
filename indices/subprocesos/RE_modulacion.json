@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-05T20:26:03.611Z",
-  "totalModelos": 62,
+  "updatedAt": "2026-02-05T20:34:05.231Z",
+  "totalModelos": 63,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -146,6 +146,43 @@
           "codigo": "m_biofb_autoobservacion",
           "nombre": "Autoobservación interoceptiva guiada",
           "texto": "Invitación a describir sensaciones corporales asociadas al cambio fisiológico para consolidar mapas internos útiles fuera de la consulta. Referencia: Green & Green (1977).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-clasico-pavlov-1927",
+      "modelLabel": "Condicionamiento clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Iván P. Pavlov",
+      "modelYear": 1927,
+      "items": [
+        {
+          "codigo": "p_pavlov_inhibicion_condicionada",
+          "nombre": "Inhibición condicionada (señales de seguridad)",
+          "texto": "Entrenamiento de estímulos que predicen la ausencia del EI (señales de seguridad) para generar inhibición de la RC, aportando una base para comprender la regulación por señales seguras y también el papel problemático de ciertas conductas de seguridad cuando impiden la extinción natural. Referencia: Pavlov (1927); Bouton (2004).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_contracondicionamiento",
+          "nombre": "Contracondicionamiento (emparejar EC con EI apetitivo/incompatible)",
+          "texto": "Procedimiento que busca cambiar la valencia de un EC previamente aversivo asociándolo con un EI positivo o con respuestas incompatibles, ofreciendo una vía alternativa a la extinción para modificar asociaciones emocionales condicionadas y fundamento histórico de intervenciones como desensibilización y reentrenamientos afectivos. Referencia: Pavlov (1927).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pavlov_introducir_ec_menos",
+          "nombre": "Introducir EC− como señal de seguridad",
+          "texto": "Añadir estímulos que predicen ausencia del EI para entrenar discriminación y reducir falsas alarmas, construyendo control inhibitorio sobre la respuesta condicionada. Referencia: Pavlov (1927).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_contracondicionamiento_incompatible",
+          "nombre": "Aplicar contracondicionamiento con estímulos incompatibles",
+          "texto": "Emparejar el EC con experiencias incompatibles con miedo/aversión (o con EI apetitivo) para cambiar valencia aprendida cuando la extinción pura no basta o cuando se busca acelerar cambio afectivo. Referencia: Pavlov (1927).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

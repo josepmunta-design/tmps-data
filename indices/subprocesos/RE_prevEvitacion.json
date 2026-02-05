@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-05T20:26:03.611Z",
-  "totalModelos": 17,
+  "updatedAt": "2026-02-05T20:34:05.231Z",
+  "totalModelos": 18,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -51,6 +51,29 @@
           "codigo": "m_af_alivio_corto_plazo",
           "nombre": "Explorar alivio inmediato",
           "texto": "Microintervención orientada a detectar qué alivio inmediato produce la conducta problema, incluso cuando es claramente desadaptativa a largo plazo. Ayuda al paciente a comprender por qué mantiene la conducta sin recurrir a culpa o patologización, revelando su función reguladora o evitativa. (Ferster, 1973; Miltenberger, 2012).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-clasico-pavlov-1927",
+      "modelLabel": "Condicionamiento clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Iván P. Pavlov",
+      "modelYear": 1927,
+      "items": [
+        {
+          "codigo": "p_pavlov_extincion",
+          "nombre": "Extinción (presentación repetida de EC sin EI)",
+          "texto": "Presentación repetida del EC sin el EI para reducir progresivamente la RC, entendiendo la extinción como nuevo aprendizaje (no simple borrado) y como base funcional de la exposición clínica, donde el contacto sin evitación permite debilitar respuestas condicionadas de miedo y reactividad. Referencia: Pavlov (1927); Bouton (2004).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pavlov_evitar_seguridad",
+          "nombre": "Evitar ‘conductas de seguridad’ que impidan extinción",
+          "texto": "Detectar y reducir respuestas que alivian a corto plazo pero bloquean el aprendizaje (p. ej., neutralizaciones), porque preservan la expectativa de amenaza y debilitan el efecto de la exposición/extinción. Referencia: Bouton (2004).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

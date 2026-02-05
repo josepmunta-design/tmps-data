@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-05T20:26:03.611Z",
-  "totalModelos": 42,
+  "updatedAt": "2026-02-05T20:34:05.231Z",
+  "totalModelos": 43,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -144,6 +144,85 @@
           "codigo": "m_aversivo_retirada",
           "nombre": "Retirada progresiva del estímulo aversivo",
           "texto": "Reducción gradual del estímulo aversivo una vez suprimida la conducta, con el objetivo de evitar efectos colaterales intensos y dependencia del control externo.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-clasico-pavlov-1927",
+      "modelLabel": "Condicionamiento clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Iván P. Pavlov",
+      "modelYear": 1927,
+      "items": [
+        {
+          "codigo": "p_pavlov_operacionalizacion_componentes",
+          "nombre": "Definición y operacionalización de EI/RI y EC/RC",
+          "texto": "Procedimiento fundacional que consiste en definir con precisión qué estímulo funciona como incondicionado (EI) y qué respuesta aparece de forma refleja (RI), así como el estímulo condicionado (EC) inicialmente neutro y la respuesta condicionada (RC) objetivo, estableciendo criterios observables de inicio/fin, intensidad, frecuencia y latencia para asegurar medición replicable del aprendizaje asociativo. Referencia: Pavlov (1927).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_contigüidad_contingencia",
+          "nombre": "Manipulación de contigüidad y contingencia",
+          "texto": "Ajuste deliberado del intervalo temporal EC→EI y de la probabilidad de EI en presencia/ausencia del EC para demostrar que el aprendizaje depende críticamente de la predictividad del EC (contingencia) además de la mera cercanía temporal (contigüidad), afinando la conceptualización moderna del condicionamiento. Referencia: Rescorla (1968); Pavlov (1927).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_discriminacion",
+          "nombre": "Discriminación (entrenamiento EC+ / EC−)",
+          "texto": "Entrenamiento diferencial donde un estímulo (EC+) predice EI y otro (EC−) no lo hace, con el fin de reducir generalización excesiva y afinar la respuesta, demostrando cómo se aprenden señales de seguridad y cómo se puede restaurar selectividad ante amenazas reales frente a falsas alarmas. Referencia: Pavlov (1927).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_recuperacion_espontanea",
+          "nombre": "Recuperación espontánea y evaluación de retorno de respuesta",
+          "texto": "Evaluación de la reaparición parcial de la RC tras el paso del tiempo después de la extinción, mostrando la fragilidad contextual del aprendizaje extintivo y justificando estrategias clínicas de mantenimiento y repetición en múltiples contextos. Referencia: Bouton (2004).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_reinstalacion",
+          "nombre": "Reinstalación (reinstatement) por exposición al EI",
+          "texto": "Evaluación del retorno de la RC tras reexposición al EI o a eventos aversivos similares, mostrando cómo nuevos episodios estresantes pueden reactivar respuestas condicionadas incluso tras extinción, y orientando prevención de recaídas y planificación de afrontamiento contextual. Referencia: Bouton (2004).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_segundo_orden",
+          "nombre": "Condicionamiento de orden superior (segundo orden)",
+          "texto": "Procedimiento donde un nuevo estímulo neutro se empareja con un EC ya condicionado (en lugar de con el EI) para adquirir capacidad evocadora, explicando cómo redes de señales pueden volverse disparadores de respuesta sin contacto directo con el evento original, especialmente relevante para señales de trauma y ansiedad generalizada. Referencia: Pavlov (1927).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pavlov_identificar_ec_funcional",
+          "nombre": "Identificar con precisión el EC funcional",
+          "texto": "Delimitar cuál es la señal real que está funcionando como EC (a veces distinta de la señal “obvia”), para evitar errores de atribución y asegurar que el entrenamiento y la medición se aplican al estímulo que realmente predice el EI. Referencia: Pavlov (1927).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_medida_rc_sensible",
+          "nombre": "Elegir una medida de RC sensible",
+          "texto": "Seleccionar un índice de respuesta (latencia, intensidad, frecuencia, fisiología) que capture cambios pequeños y progresivos, evitando medidas gruesas que oculten aprendizaje temprano o parcial. Referencia: Pavlov (1927).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_intervalo_ec_ei",
+          "nombre": "Ajustar el intervalo EC→EI",
+          "texto": "Modificar el tiempo entre EC y EI para optimizar aprendizaje (mejor predicción), ya que intervalos mal calibrados pueden debilitar la asociación o producir aprendizaje ambiguo. Referencia: Pavlov (1927).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_reexposicion_ei",
+          "nombre": "Reexposición al EI para evaluar reinstalación",
+          "texto": "Observar si un evento aversivo posterior reactiva la RC ante el EC para comprender vulnerabilidad a recaídas y necesidad de mantenimiento. Referencia: Bouton (2004).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

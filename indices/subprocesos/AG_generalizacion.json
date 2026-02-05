@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_generalizacion",
-  "updatedAt": "2026-02-05T20:26:03.611Z",
-  "totalModelos": 5,
+  "updatedAt": "2026-02-05T20:34:05.231Z",
+  "totalModelos": 6,
   "modelos": [
     {
       "modelId": "biofeedback-1969",
@@ -35,6 +35,43 @@
           "codigo": "m_biofb_practica_encubierta",
           "nombre": "Práctica encubierta sin instrumentación",
           "texto": "Ensayos breves de autorregulación sin feedback durante la sesión para comprobar transferencia inmediata y ajustar instrucciones internas. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "AG_generalizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-clasico-pavlov-1927",
+      "modelLabel": "Condicionamiento clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Iván P. Pavlov",
+      "modelYear": 1927,
+      "items": [
+        {
+          "codigo": "p_pavlov_generalizacion",
+          "nombre": "Generalización de estímulo",
+          "texto": "Evaluación sistemática de la respuesta condicionada ante estímulos similares al EC para determinar gradientes de generalización, explicando por qué el miedo condicionado puede extenderse a señales parecidas y orientando intervenciones clínicas que requieren mapear el rango real de disparadores. Referencia: Pavlov (1927).",
+          "sub": "AG_generalizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_renovacion_contextual",
+          "nombre": "Renovación contextual (efectos del contexto en extinción)",
+          "texto": "Procedimiento que examina cómo la extinción aprendida en un contexto puede no transferirse plenamente a otros, provocando retorno de la respuesta (renovación), y que fundamenta la necesidad de generalizar exposiciones a distintos entornos y señales para consolidar aprendizaje inhibitorio. Referencia: Bouton (2004).",
+          "sub": "AG_generalizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pavlov_sondeo_generalizacion",
+          "nombre": "Sondear generalización con estímulos cercanos",
+          "texto": "Presentar variantes del EC para estimar el rango real de disparo de la RC y construir un mapa funcional de señales, especialmente relevante cuando el problema clínico implica generalización excesiva. Referencia: Pavlov (1927).",
+          "sub": "AG_generalizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_cambio_contexto",
+          "nombre": "Cambiar de contexto para detectar renovación",
+          "texto": "Presentar el EC en un contexto distinto al de extinción para observar renovación y, si aparece, justificar entrenamiento adicional en contextos múltiples. Referencia: Bouton (2004).",
           "sub": "AG_generalizacion",
           "tipo": "micro"
         }

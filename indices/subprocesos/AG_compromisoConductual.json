@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-05T20:26:03.611Z",
-  "totalModelos": 69,
+  "updatedAt": "2026-02-05T20:34:05.231Z",
+  "totalModelos": 70,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -497,6 +497,57 @@
           "codigo": "m_aversivo_contingencias",
           "nombre": "Control de contingencias",
           "texto": "Ajuste preciso de las contingencias para garantizar que el estímulo aversivo solo aparece en presencia de la conducta problema, evitando generalizaciones no deseadas o aprendizaje caótico.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-clasico-pavlov-1927",
+      "modelLabel": "Condicionamiento clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Iván P. Pavlov",
+      "modelYear": 1927,
+      "items": [
+        {
+          "codigo": "p_pavlov_adquisicion_ec_ei",
+          "nombre": "Adquisición por emparejamiento EC–EI (condicionamiento excitatorio)",
+          "texto": "Emparejamiento repetido y sistemático del EC con el EI de forma que el EC prediga al EI, promoviendo el aumento progresivo de la RC; el procedimiento incluye manipular número de ensayos, intervalos entre estímulos y consistencia de la contingencia para modelar la velocidad y fuerza del condicionamiento. Referencia: Pavlov (1927); Rescorla (1968).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_discriminacion",
+          "nombre": "Discriminación (entrenamiento EC+ / EC−)",
+          "texto": "Entrenamiento diferencial donde un estímulo (EC+) predice EI y otro (EC−) no lo hace, con el fin de reducir generalización excesiva y afinar la respuesta, demostrando cómo se aprenden señales de seguridad y cómo se puede restaurar selectividad ante amenazas reales frente a falsas alarmas. Referencia: Pavlov (1927).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_extincion",
+          "nombre": "Extinción (presentación repetida de EC sin EI)",
+          "texto": "Presentación repetida del EC sin el EI para reducir progresivamente la RC, entendiendo la extinción como nuevo aprendizaje (no simple borrado) y como base funcional de la exposición clínica, donde el contacto sin evitación permite debilitar respuestas condicionadas de miedo y reactividad. Referencia: Pavlov (1927); Bouton (2004).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pavlov_contracondicionamiento",
+          "nombre": "Contracondicionamiento (emparejar EC con EI apetitivo/incompatible)",
+          "texto": "Procedimiento que busca cambiar la valencia de un EC previamente aversivo asociándolo con un EI positivo o con respuestas incompatibles, ofreciendo una vía alternativa a la extinción para modificar asociaciones emocionales condicionadas y fundamento histórico de intervenciones como desensibilización y reentrenamientos afectivos. Referencia: Pavlov (1927).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pavlov_extincion_prolongada",
+          "nombre": "Extinción con presentaciones prolongadas del EC",
+          "texto": "Mantener el EC el tiempo suficiente y repetirlo las veces necesarias para permitir descenso de RC y aprendizaje inhibitorio, evitando exposiciones demasiado breves que mantienen la respuesta. Referencia: Bouton (2004).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pavlov_contracondicionamiento_incompatible",
+          "nombre": "Aplicar contracondicionamiento con estímulos incompatibles",
+          "texto": "Emparejar el EC con experiencias incompatibles con miedo/aversión (o con EI apetitivo) para cambiar valencia aprendida cuando la extinción pura no basta o cuando se busca acelerar cambio afectivo. Referencia: Pavlov (1927).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
