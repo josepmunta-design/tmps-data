@@ -1,0 +1,153 @@
+{
+  "id": "pe-prolonged-exposure-1986",
+  "grupo": "Conductismo",
+  "label": "PE – Prolonged Exposure",
+  "year": 1986,
+  "importance": 2,
+  "autores": "Edna B. Foa; Michael J. Kozak",
+  "universidad": "University of Pennsylvania",
+  "ciudad": "Filadelfia, Pennsylvania",
+  "pais": "EE. UU.",
+  "lat": 39.952218,
+  "lon": -75.193214,
+
+  "descripcion": "La Terapia de Exposición Prolongada (Prolonged Exposure, PE) es un tratamiento conductual manualizado desarrollado por Edna B. Foa y Michael J. Kozak para el abordaje del trastorno de estrés postraumático y otros trastornos de ansiedad. Basada en la teoría del procesamiento emocional del miedo, la PE combina psicoeducación, entrenamiento en respiración, exposición imaginaria prolongada al recuerdo traumático y exposición en vivo a estímulos evitados. El objetivo central es activar la estructura de miedo y facilitar su modificación mediante habituación, inhibición del miedo y aprendizaje correctivo, reduciendo la evitación conductual y cognitiva que mantiene el trastorno. PE constituye uno de los tratamientos de primera línea con mayor respaldo empírico para el TEPT, con protocolos altamente estructurados y replicables.",
+
+  "influencias": [
+    "Condicionamiento clásico",
+    "Teoría bifactorial de la ansiedad",
+    "Habituación / inhibición del miedo",
+    "Psicoterapia conductual"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "El sufrimiento traumático se explica en términos de estructuras de miedo desadaptativas que se mantienen por evitación. La realidad clínica relevante es accesible a través de respuestas emocionales, fisiológicas y conductuales observables durante la exposición. El conocimiento terapéutico se valida empíricamente mediante reducción de síntomas y evitación. El cambio ocurre por activación y modificación de la estructura de miedo, no por insight narrativo. La relación terapéutica facilita la exposición, pero no es el mecanismo explicativo central.",
+    "teoriaFormal": "El TEPT se mantiene porque los recuerdos traumáticos y señales asociadas activan respuestas intensas de miedo que son evitadas, impidiendo la corrección de expectativas catastróficas. La exposición prolongada permite habituación e inhibición del miedo, integrando nueva información incompatible con la amenaza percibida.",
+    "teoriaClinica": "El caso se conceptualiza identificando recuerdos traumáticos nucleares y patrones de evitación. La intervención se centra en exposiciones repetidas y prolongadas, con evaluación sistemática del descenso de ansiedad y reducción de evitación como indicadores de cambio."
+  },
+
+  "mjps": [
+    "RF",
+    "RE",
+    "AG"
+  ],
+
+"procedimientos": [
+  {
+    "nombre": "Evaluación diagnóstica y análisis de evitación",
+    "codigo": "p_pe_evaluacion",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Evaluación estructurada del TEPT y análisis funcional de la evitación conductual, cognitiva y emocional, identificando recuerdos traumáticos nucleares y señales evitadas que mantienen el trastorno. Referencia: Foa & Rothbaum (1998)."
+  },
+  {
+    "nombre": "Psicoeducación sobre trauma y exposición",
+    "codigo": "p_pe_psicoeducacion",
+    "procesos": ["RE_rotulacion", "N_normalizacion"],
+    "texto": "Explicación del modelo de procesamiento emocional del miedo, la función de la evitación y el racional de la exposición prolongada para aumentar comprensión, adherencia y sentido del tratamiento. Referencia: Foa, Hembree & Rothbaum (2007)."
+  },
+  {
+    "nombre": "Entrenamiento en respiración controlada",
+    "codigo": "p_pe_respiracion",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Entrenamiento breve en respiración lenta para manejar activación fisiológica general, sin usarla como conducta de seguridad durante la exposición. Referencia: Foa & Rothbaum (1998)."
+  },
+  {
+    "nombre": "Exposición imaginaria prolongada al trauma",
+    "codigo": "p_pe_exposicion_imaginaria",
+    "procesos": ["RF_regulacionFisiologica", "AG_compromisoConductual"],
+    "texto": "Revivencia repetida y prolongada del recuerdo traumático en imaginación, en tiempo presente y con máximo detalle sensorial, para activar y modificar la estructura de miedo. Referencia: Foa & Kozak (1986)."
+  },
+  {
+    "nombre": "Procesamiento post-exposición",
+    "codigo": "p_pe_procesamiento",
+    "procesos": ["RE_rotulacion"],
+    "texto": "Reflexión guiada posterior a la exposición para integrar aprendizajes correctivos sin reestructuración cognitiva formal. Referencia: Foa et al. (2007)."
+  },
+  {
+    "nombre": "Exposición en vivo a estímulos evitados",
+    "codigo": "p_pe_exposicion_vivo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Exposición gradual y repetida a situaciones, lugares u objetos evitados, eliminando conductas de seguridad y favoreciendo generalización del aprendizaje. Referencia: Foa & Rothbaum (1998)."
+  },
+  {
+    "nombre": "Asignación de tareas de exposición entre sesiones",
+    "codigo": "p_pe_tareas",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Prescripción sistemática de exposiciones imaginarias y en vivo entre sesiones para consolidar habituación e inhibición del miedo. Referencia: Foa et al. (2007)."
+  },
+  {
+    "nombre": "Monitorización del progreso y ajuste",
+    "codigo": "p_pe_monitorizacion",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Seguimiento continuo de ansiedad, evitación y síntomas para ajustar intensidad y foco de la exposición. Referencia: Foa et al. (2007)."
+  }
+],
+
+"micros": [
+  {
+    "nombre": "Narración en tiempo presente",
+    "codigo": "m_pe_tiempo_presente",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Guía al paciente para relatar el trauma como si estuviera ocurriendo ahora, maximizando activación emocional. Referencia: Foa & Rothbaum (1998)."
+  },
+  {
+    "nombre": "Repetición del núcleo traumático",
+    "codigo": "m_pe_repeticion_nucleo",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Reiteración de los momentos más temidos del recuerdo para favorecer habituación profunda. Referencia: Foa & Kozak (1986)."
+  },
+  {
+    "nombre": "Bloqueo de evitación cognitiva",
+    "codigo": "m_pe_bloqueo_evitacion",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Redirección inmediata cuando el paciente se distancia emocionalmente o intelectualiza. Referencia: Foa et al. (2007)."
+  },
+  {
+    "nombre": "Escala SUDS continua",
+    "codigo": "m_pe_suds",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Uso repetido de SUDS para monitorizar activación y descenso durante la exposición. Referencia: Foa & Rothbaum (1998)."
+  },
+  {
+    "nombre": "Escucha de grabaciones",
+    "codigo": "m_pe_grabaciones",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Reescucha repetida del relato grabado para consolidar aprendizaje entre sesiones. Referencia: Foa et al. (2007)."
+  }
+],
+
+"ideasPrincipales": [
+  {
+    "id": "idea_pe_1",
+    "titulo": "La evitación mantiene el trauma",
+    "desarrollo": "PE sostiene que el TEPT persiste porque la evitación impide la corrección de expectativas de amenaza asociadas al recuerdo traumático. Referencia: Foa & Kozak (1986)."
+  },
+  {
+    "id": "idea_pe_2",
+    "titulo": "La activación es condición de cambio",
+    "desarrollo": "La exposición debe activar plenamente la estructura de miedo para que pueda modificarse. Referencia: Foa & Rothbaum (1998)."
+  },
+  {
+    "id": "idea_pe_3",
+    "titulo": "La habituación no es el único mecanismo",
+    "desarrollo": "El aprendizaje inhibitorio y la integración de nueva información explican gran parte del cambio. Referencia: Foa et al. (2007)."
+  },
+  {
+    "id": "idea_pe_4",
+    "titulo": "El recuerdo deja de ser peligroso",
+    "desarrollo": "El paciente aprende que recordar no equivale a revivir ni a ser dañado. Referencia: Foa & Kozak (1986)."
+  },
+  {
+    "id": "idea_pe_5",
+    "titulo": "La repetición consolida el cambio",
+    "desarrollo": "La mejora es función directa de la repetición prolongada sin evitación. Referencia: Foa & Rothbaum (1998)."
+  }
+],
+
+
+  "refs": [
+    "Foa, E. B., & Kozak, M. J. (1986). Emotional processing of fear.",
+    "Foa, E. B., & Rothbaum, B. O. (1998). Treating the Trauma of Rape.",
+    "Foa, E. B., Hembree, E. A., & Rothbaum, B. O. (2007). Prolonged Exposure Therapy for PTSD."
+  ]
+}
