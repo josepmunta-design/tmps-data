@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_roles",
-  "updatedAt": "2026-02-05T19:59:06.255Z",
-  "totalModelos": 12,
+  "updatedAt": "2026-02-05T20:05:33.725Z",
+  "totalModelos": 13,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -56,6 +56,29 @@
           "codigo": "m_aba_bloqueo_refuerzo_accidental",
           "nombre": "Bloqueo de reforzamiento accidental",
           "texto": "Prevención activa de consecuencias inadvertidas que mantienen la conducta problema (miradas, comentarios, retirada de demandas), asegurando coherencia del entorno durante extinción o DRA. (Cooper, Heron & Heward, 2007).",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "inundacion-implosion-1967",
+      "modelLabel": "Inundación / Implosión",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Thomas Stampfl; James Levis",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_implo_consentimiento",
+          "nombre": "Consentimiento informado reforzado",
+          "texto": "Obtención explícita y reiterada del consentimiento del paciente, detallando intensidad, duración, ausencia de evitación y posibles reacciones emocionales, dada la elevada activación que provoca la técnica y sus implicaciones éticas y clínicas. Referencia: Marks (1987).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_implo_sosten_verbal_minimo",
+          "nombre": "Sostén verbal mínimo no tranquilizador",
+          "texto": "Presencia del terapeuta con verbalizaciones breves orientadas a mantener la exposición (p. ej., “sigue”, “permanece”), evitando mensajes calmantes que funcionen como reforzadores de seguridad. Referencia: Stampfl & Levis (1967).",
           "sub": "R_sist_roles",
           "tipo": "micro"
         }

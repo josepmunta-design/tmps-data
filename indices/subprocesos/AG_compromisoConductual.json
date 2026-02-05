@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-05T19:59:06.255Z",
-  "totalModelos": 64,
+  "updatedAt": "2026-02-05T20:05:33.725Z",
+  "totalModelos": 65,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -585,6 +585,50 @@
           "codigo": "m_sst_exposicion_interpersonal",
           "nombre": "Exposición interpersonal graduada dentro del SST",
           "texto": "Microintervención que integra práctica de habilidades con exposición gradual a situaciones sociales temidas, asegurando que el paciente no solo “aprende” la habilidad en frío, sino que la ejecuta bajo activación real, reduciendo evitación y consolidando tolerancia al malestar social.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "inundacion-implosion-1967",
+      "modelLabel": "Inundación / Implosión",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Thomas Stampfl; James Levis",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_implo_exposicion_masiva",
+          "nombre": "Exposición prolongada sin evitación (inundación)",
+          "texto": "Aplicación central del procedimiento mediante exposición continua e intensa al estímulo temido durante un periodo prolongado, impidiendo cualquier forma de escape o neutralización, hasta que se observe una reducción espontánea de la ansiedad por habituación y extinción. Referencia: Stampfl & Levis (1967).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_implo_repeticion_sesiones",
+          "nombre": "Repetición intensiva de sesiones implosivas",
+          "texto": "Aplicación repetida del procedimiento en sesiones consecutivas o muy próximas en el tiempo para consolidar la extinción y prevenir recuperación espontánea del miedo, especialmente en fobias intensas. Referencia: Stampfl & Levis (1967).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_implo_instruccion_permanencia",
+          "nombre": "Instrucción explícita de permanencia sin escape",
+          "texto": "Indicación clara y directa de que la tarea consiste en permanecer en contacto con el estímulo sin evitar, distraerse o neutralizar la ansiedad, reforzando la regla conductual que sostiene la intervención implosiva. Referencia: Marks (1987).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_implo_prolongacion",
+          "nombre": "Prolongación deliberada más allá del alivio inicial",
+          "texto": "Extensión intencionada de la exposición incluso cuando la ansiedad ya ha bajado para prevenir aprendizaje de alivio rápido y asegurar extinción más profunda. Referencia: Marks (1987).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_implo_tarea_entre_sesiones",
+          "nombre": "Asignación de exposición masiva entre sesiones",
+          "texto": "Prescripción de contactos prolongados y no graduados con el estímulo temido fuera de sesión, manteniendo la coherencia del modelo implosivo y reduciendo recuperación espontánea. Referencia: Stampfl & Levis (1967).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

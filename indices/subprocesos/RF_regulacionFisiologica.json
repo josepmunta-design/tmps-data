@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_regulacionFisiologica",
-  "updatedAt": "2026-02-05T19:59:06.255Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-05T20:05:33.725Z",
+  "totalModelos": 2,
   "modelos": [
     {
       "modelId": "biofeedback-1969",
@@ -77,6 +77,43 @@
           "codigo": "m_biofb_discriminacion_estados",
           "nombre": "Discriminación tensión–relajación",
           "texto": "Entrenamiento específico para identificar sensaciones internas asociadas a diferentes niveles del indicador, fortaleciendo la conciencia interoceptiva útil para la transferencia sin equipo. Referencia: Green & Green (1977).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "inundacion-implosion-1967",
+      "modelLabel": "Inundación / Implosión",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Thomas Stampfl; James Levis",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_implo_exposicion_masiva",
+          "nombre": "Exposición prolongada sin evitación (inundación)",
+          "texto": "Aplicación central del procedimiento mediante exposición continua e intensa al estímulo temido durante un periodo prolongado, impidiendo cualquier forma de escape o neutralización, hasta que se observe una reducción espontánea de la ansiedad por habituación y extinción. Referencia: Stampfl & Levis (1967).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_implo_mantenimiento_exposicion",
+          "nombre": "Mantenimiento de la exposición hasta habituación",
+          "texto": "Prolongación deliberada de la exposición más allá del pico de ansiedad inicial, manteniéndola hasta que se observe un descenso significativo y estable de la activación, condición necesaria para la extinción del miedo condicionado. Referencia: Marks (1987).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_implo_activacion_maxima",
+          "nombre": "Activación inicial máxima del estímulo temido",
+          "texto": "Inicio deliberado de la exposición en el punto de mayor carga ansiógena para provocar una activación intensa y clara de la respuesta de miedo desde el comienzo, condición necesaria para que el proceso de habituación y extinción sea rápido y completo. Referencia: Stampfl & Levis (1967).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_implo_mantenimiento_post_pico",
+          "nombre": "Mantenimiento tras el pico ansiógeno",
+          "texto": "Continuación de la exposición una vez alcanzado el pico de ansiedad para permitir el descenso espontáneo de la activación, condición crítica para la habituación y la extinción. Referencia: Marks (1987).",
           "sub": "RF_regulacionFisiologica",
           "tipo": "micro"
         }

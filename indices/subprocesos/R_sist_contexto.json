@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_contexto",
-  "updatedAt": "2026-02-05T19:59:06.255Z",
-  "totalModelos": 13,
+  "updatedAt": "2026-02-05T20:05:33.725Z",
+  "totalModelos": 14,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -135,6 +135,43 @@
           "codigo": "m_biofb_chequeo_fatiga",
           "nombre": "Chequeo de fatiga y saciación",
           "texto": "Evaluación rápida del cansancio o sobreentrenamiento para ajustar duración y prevenir decrementos del aprendizaje. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "inundacion-implosion-1967",
+      "modelLabel": "Inundación / Implosión",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Thomas Stampfl; James Levis",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_implo_analisis_evitacion",
+          "nombre": "Análisis de conductas de evitación y escape",
+          "texto": "Detección sistemática de todas las formas abiertas y encubiertas de evitación (conductuales, cognitivas y fisiológicas) que podrían interferir con la extinción, ya que cualquier escape funcional mantiene la respuesta de miedo y debilita el procedimiento de inundación. Referencia: Marks (1987).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_implo_bloqueo_seguridad",
+          "nombre": "Bloqueo activo de conductas de seguridad",
+          "texto": "Identificación y neutralización de conductas de seguridad sutiles (distracción, control respiratorio intencional, verbalizaciones tranquilizadoras) que podrían impedir el procesamiento completo del miedo durante la exposición. Referencia: Foa & Kozak (1986).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_implo_bloqueo_manifiesto",
+          "nombre": "Bloqueo inmediato de conductas de seguridad manifiestas",
+          "texto": "Interrupción activa de conductas visibles de seguridad (cerrar ojos, cambiar postura, alejarse físicamente) para impedir el mantenimiento del miedo mediante escape parcial durante la exposición. Referencia: Foa & Kozak (1986).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_implo_cierre_sin_compensacion",
+          "nombre": "Cierre sin conductas compensatorias",
+          "texto": "Finalización de la sesión sin rituales de relajación, distracción o tranquilización, evitando que el alivio se atribuya a estrategias externas y manteniendo la lógica de extinción pura. Referencia: Stampfl & Levis (1967).",
           "sub": "R_sist_contexto",
           "tipo": "micro"
         }
