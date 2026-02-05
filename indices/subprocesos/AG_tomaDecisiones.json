@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-05T20:22:22.428Z",
-  "totalModelos": 41,
+  "updatedAt": "2026-02-05T20:26:03.611Z",
+  "totalModelos": 42,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -276,6 +276,36 @@
           "codigo": "m_implo_evitacion_encubierta",
           "nombre": "Detección y neutralización de evitación encubierta",
           "texto": "Identificación de estrategias internas de evitación como distracción cognitiva, repetición de frases tranquilizadoras o control respiratorio deliberado, y redirección inmediata al estímulo temido para asegurar procesamiento completo del miedo. Referencia: Marks (1987).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ley-efecto-thorndike-1911",
+      "modelLabel": "Ley del efecto",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Edward L. Thorndike",
+      "modelYear": 1911,
+      "items": [
+        {
+          "codigo": "p_thorndike_conductas_objetivo",
+          "nombre": "Identificación de conductas objetivo observables",
+          "texto": "Definición precisa de las respuestas conductuales a estudiar o modificar, asegurando que sean observables, medibles y diferenciables de otras conductas, condición necesaria para aplicar la lógica de consecuencias de la Ley del efecto. Referencia: Thorndike (1911).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_thorndike_criterio_respuesta",
+          "nombre": "Definir criterio de respuesta correcta",
+          "texto": "Especificar qué respuesta concreta se considera exitosa para evitar ambigüedad en la aplicación de consecuencias. Referencia: Thorndike (1911).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_thorndike_comparacion",
+          "nombre": "Comparar respuestas alternativas",
+          "texto": "Observar qué respuestas se fortalecen frente a otras en función de sus consecuencias, permitiendo análisis diferencial del aprendizaje. Referencia: Thorndike (1911).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

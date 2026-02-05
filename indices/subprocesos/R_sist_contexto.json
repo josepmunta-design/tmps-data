@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_contexto",
-  "updatedAt": "2026-02-05T20:22:22.428Z",
-  "totalModelos": 15,
+  "updatedAt": "2026-02-05T20:26:03.611Z",
+  "totalModelos": 16,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -202,6 +202,43 @@
           "codigo": "m_implo_cierre_sin_compensacion",
           "nombre": "Cierre sin conductas compensatorias",
           "texto": "Finalización de la sesión sin rituales de relajación, distracción o tranquilización, evitando que el alivio se atribuya a estrategias externas y manteniendo la lógica de extinción pura. Referencia: Stampfl & Levis (1967).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ley-efecto-thorndike-1911",
+      "modelLabel": "Ley del efecto",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Edward L. Thorndike",
+      "modelYear": 1911,
+      "items": [
+        {
+          "codigo": "p_thorndike_analisis_consecuencias",
+          "nombre": "Análisis de consecuencias conductuales",
+          "texto": "Identificación sistemática de las consecuencias que siguen a una conducta, distinguiendo entre efectos satisfactorios e insatisfactorios, para comprender qué respuestas tienden a fortalecerse o debilitarse en un contexto dado. Referencia: Thorndike (1911).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_thorndike_manipulacion_consecuencias",
+          "nombre": "Manipulación sistemática de consecuencias",
+          "texto": "Ajuste deliberado de las consecuencias ambientales para aumentar la probabilidad de respuestas deseadas y reducir conductas ineficaces, anticipando el principio de refuerzo diferencial. Referencia: Thorndike (1932).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_thorndike_consecuencia_inmediata",
+          "nombre": "Introducir consecuencias inmediatas",
+          "texto": "Asegurar que la consecuencia siga de forma inmediata a la respuesta para fortalecer la asociación conducta–resultado. Referencia: Thorndike (1932).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_thorndike_interferencias",
+          "nombre": "Reducir interferencias contextuales",
+          "texto": "Controlar estímulos irrelevantes que puedan dificultar la discriminación de qué respuesta produce el efecto satisfactorio. Referencia: Thorndike (1911).",
           "sub": "R_sist_contexto",
           "tipo": "micro"
         }
