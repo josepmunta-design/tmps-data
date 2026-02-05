@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_contexto",
-  "updatedAt": "2026-02-05T20:12:06.967Z",
-  "totalModelos": 14,
+  "updatedAt": "2026-02-05T20:22:22.428Z",
+  "totalModelos": 15,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -135,6 +135,36 @@
           "codigo": "m_biofb_chequeo_fatiga",
           "nombre": "Chequeo de fatiga y saciación",
           "texto": "Evaluación rápida del cansancio o sobreentrenamiento para ajustar duración y prevenir decrementos del aprendizaje. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "conductismo-clasico-watson-1913",
+      "modelLabel": "Conductismo clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "John B. Watson",
+      "modelYear": 1913,
+      "items": [
+        {
+          "codigo": "p_watson_analisis_sr_habitos",
+          "nombre": "Análisis estímulo–respuesta y construcción de hábitos",
+          "texto": "Identificación de estímulos antecedentes relevantes y de respuestas asociadas, conceptualizando la conducta como hábito aprendido; se formula la hipótesis de que modificar estímulos y prácticas de aprendizaje cambia el repertorio conductual, anticipando una lógica tecnológica de intervención. Referencia: Watson (1930).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_watson_manipulacion_entorno",
+          "nombre": "Manipulación sistemática del entorno para modificar conducta",
+          "texto": "Aplicación del principio programático de que la conducta puede cambiarse diseñando condiciones ambientales (estímulos, rutinas, exposición, práctica) que favorezcan respuestas deseadas y debiliten hábitos indeseados, con foco en control de antecedentes más que en interpretación de significados internos. Referencia: Watson (1930).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_watson_aislar_antecedentes",
+          "nombre": "Aislar estímulos antecedentes dominantes",
+          "texto": "Identificar los estímulos del entorno que preceden de forma consistente a la respuesta para orientar el análisis S–R y el control experimental. Referencia: Watson (1930).",
           "sub": "R_sist_contexto",
           "tipo": "micro"
         }

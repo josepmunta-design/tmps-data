@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-02-05T20:12:06.967Z",
-  "totalModelos": 55,
+  "updatedAt": "2026-02-05T20:22:22.428Z",
+  "totalModelos": 57,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -240,6 +240,43 @@
       ]
     },
     {
+      "modelId": "conductismo-clasico-watson-1913",
+      "modelLabel": "Conductismo clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "John B. Watson",
+      "modelYear": 1913,
+      "items": [
+        {
+          "codigo": "p_watson_diseno_experimental_control",
+          "nombre": "Diseño experimental con control de variables",
+          "texto": "Planificación de investigación y evaluación mediante manipulación controlada de estímulos y condiciones, con comparación sistemática entre situaciones para aislar relaciones estímulo–respuesta y sostener inferencias causales sin apelar a estados mentales privados como explicación principal. Referencia: Watson (1913); Watson (1930).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_watson_medicion_objetiva",
+          "nombre": "Medición objetiva y estandarizada de respuestas",
+          "texto": "Implementación de procedimientos de registro cuantitativo (frecuencia, latencia, duración, intensidad) y criterios uniformes de observación para maximizar fiabilidad interobservador y minimizar sesgos, estableciendo el estándar positivista de datos públicos en psicología. Referencia: Watson (1913).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_watson_registro_estandar",
+          "nombre": "Registrar bajo reglas estandarizadas",
+          "texto": "Aplicar un protocolo de registro idéntico entre sesiones/observadores para mejorar replicabilidad y comparabilidad de resultados. Referencia: Watson (1913).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_watson_control_confusores",
+          "nombre": "Reducir variables de confusión",
+          "texto": "Mantener constantes condiciones irrelevantes (hora, lugar, instrucciones) para atribuir cambios a la manipulación principal y no al ruido situacional. Referencia: Watson (1913).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "entrenamiento-habilidades-sociales",
       "modelLabel": "Entrenamiento en habilidades sociales",
       "modelGrupo": "Conductismo",
@@ -338,6 +375,29 @@
           "codigo": "m_cm_coste_resultado",
           "nombre": "Registro inmediato de costes y resultados",
           "texto": "Anotación sistemática de incentivos entregados y resultados conductuales para análisis coste-efectividad y ajustes rápidos del programa. (Petry, 2012).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "pe-prolonged-exposure-1986",
+      "modelLabel": "PE – Prolonged Exposure",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Edna B. Foa; Michael J. Kozak",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_pe_monitorizacion",
+          "nombre": "Monitorización del progreso y ajuste",
+          "texto": "Seguimiento continuo de ansiedad, evitación y síntomas para ajustar intensidad y foco de la exposición. Referencia: Foa et al. (2007).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pe_suds",
+          "nombre": "Escala SUDS continua",
+          "texto": "Uso repetido de SUDS para monitorizar activación y descenso durante la exposición. Referencia: Foa & Rothbaum (1998).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-05T20:12:06.967Z",
-  "totalModelos": 39,
+  "updatedAt": "2026-02-05T20:22:22.428Z",
+  "totalModelos": 41,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -150,6 +150,64 @@
       ]
     },
     {
+      "modelId": "conductismo-clasico-watson-1913",
+      "modelLabel": "Conductismo clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "John B. Watson",
+      "modelYear": 1913,
+      "items": [
+        {
+          "codigo": "p_watson_operacionalizacion_conducta",
+          "nombre": "Operacionalización del fenómeno psicológico como conducta observable",
+          "texto": "Traducción sistemática de conceptos psicológicos a definiciones operativas conductuales (qué se observa, cómo se registra, con qué criterios), de modo que el objeto de estudio sea público, medible y replicable, eliminando ambigüedad interpretativa y permitiendo acumulación científica y evaluación del cambio. Referencia: Watson (1913).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_watson_analisis_sr_habitos",
+          "nombre": "Análisis estímulo–respuesta y construcción de hábitos",
+          "texto": "Identificación de estímulos antecedentes relevantes y de respuestas asociadas, conceptualizando la conducta como hábito aprendido; se formula la hipótesis de que modificar estímulos y prácticas de aprendizaje cambia el repertorio conductual, anticipando una lógica tecnológica de intervención. Referencia: Watson (1930).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_watson_criterios_verificabilidad",
+          "nombre": "Criterios de verificabilidad y rechazo de la introspección como método",
+          "texto": "Aplicación de un criterio metodológico: solo se consideran datos válidos aquellos observables y compartibles; los informes introspectivos no se aceptan como fundamento científico del modelo, lo que reorienta la investigación hacia la conducta y su control experimental. Referencia: Watson (1913).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_watson_topografia_criterio",
+          "nombre": "Definir topografía y criterio de ocurrencia",
+          "texto": "Especificar qué acciones exactas cuentan como conducta objetivo y cuáles no, para impedir que el observador “rellene” con interpretaciones y asegurar medición consistente. Referencia: Watson (1913).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_watson_unidad_medida",
+          "nombre": "Elegir unidad de medida conductual",
+          "texto": "Seleccionar la dimensión que mejor captura el fenómeno (frecuencia, duración, latencia, intensidad) para obtener datos sensibles al cambio real. Referencia: Watson (1913).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_watson_hipotesis_falsable",
+          "nombre": "Formular hipótesis S–R falsables",
+          "texto": "Redactar hipótesis en forma estímulo–respuesta que pueda confirmarse o refutarse con observación y manipulación, evitando explicaciones circulares. Referencia: Watson (1913).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_watson_prediccion_control",
+          "nombre": "Priorizar predicción y control como criterio de éxito",
+          "texto": "Evaluar la utilidad del modelo por su capacidad para predecir y modificar conducta observable, no por su coherencia introspectiva o narrativa. Referencia: Watson (1930).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "entrenamiento-habilidades-sociales",
       "modelLabel": "Entrenamiento en habilidades sociales",
       "modelGrupo": "Conductismo",
@@ -262,6 +320,29 @@
           "codigo": "m_cm_ajuste_frecuencia",
           "nombre": "Ajuste de frecuencia de pruebas",
           "texto": "Modulación de la frecuencia de verificación (más alta al inicio, más espaciada con estabilidad) para optimizar control de contingencias y costes. (Higgins et al., 2000; Petry, 2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "pe-prolonged-exposure-1986",
+      "modelLabel": "PE – Prolonged Exposure",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Edna B. Foa; Michael J. Kozak",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_pe_evaluacion",
+          "nombre": "Evaluación diagnóstica y análisis de evitación",
+          "texto": "Evaluación estructurada del TEPT y análisis funcional de la evitación conductual, cognitiva y emocional, identificando recuerdos traumáticos nucleares y señales evitadas que mantienen el trastorno. Referencia: Foa & Rothbaum (1998).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pe_bloqueo_evitacion",
+          "nombre": "Bloqueo de evitación cognitiva",
+          "texto": "Redirección inmediata cuando el paciente se distancia emocionalmente o intelectualiza. Referencia: Foa et al. (2007).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

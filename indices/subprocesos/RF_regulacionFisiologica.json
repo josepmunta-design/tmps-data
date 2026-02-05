@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_regulacionFisiologica",
-  "updatedAt": "2026-02-05T20:12:06.967Z",
-  "totalModelos": 2,
+  "updatedAt": "2026-02-05T20:22:22.428Z",
+  "totalModelos": 3,
   "modelos": [
     {
       "modelId": "biofeedback-1969",
@@ -114,6 +114,36 @@
           "codigo": "m_implo_mantenimiento_post_pico",
           "nombre": "Mantenimiento tras el pico ansiógeno",
           "texto": "Continuación de la exposición una vez alcanzado el pico de ansiedad para permitir el descenso espontáneo de la activación, condición crítica para la habituación y la extinción. Referencia: Marks (1987).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "pe-prolonged-exposure-1986",
+      "modelLabel": "PE – Prolonged Exposure",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Edna B. Foa; Michael J. Kozak",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_pe_respiracion",
+          "nombre": "Entrenamiento en respiración controlada",
+          "texto": "Entrenamiento breve en respiración lenta para manejar activación fisiológica general, sin usarla como conducta de seguridad durante la exposición. Referencia: Foa & Rothbaum (1998).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pe_exposicion_imaginaria",
+          "nombre": "Exposición imaginaria prolongada al trauma",
+          "texto": "Revivencia repetida y prolongada del recuerdo traumático en imaginación, en tiempo presente y con máximo detalle sensorial, para activar y modificar la estructura de miedo. Referencia: Foa & Kozak (1986).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pe_repeticion_nucleo",
+          "nombre": "Repetición del núcleo traumático",
+          "texto": "Reiteración de los momentos más temidos del recuerdo para favorecer habituación profunda. Referencia: Foa & Kozak (1986).",
           "sub": "RF_regulacionFisiologica",
           "tipo": "micro"
         }

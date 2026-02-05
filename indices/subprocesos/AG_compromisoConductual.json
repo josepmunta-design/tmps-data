@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-05T20:12:06.967Z",
-  "totalModelos": 66,
+  "updatedAt": "2026-02-05T20:22:22.428Z",
+  "totalModelos": 68,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -503,6 +503,22 @@
       ]
     },
     {
+      "modelId": "conductismo-clasico-watson-1913",
+      "modelLabel": "Conductismo clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "John B. Watson",
+      "modelYear": 1913,
+      "items": [
+        {
+          "codigo": "p_watson_manipulacion_entorno",
+          "nombre": "Manipulación sistemática del entorno para modificar conducta",
+          "texto": "Aplicación del principio programático de que la conducta puede cambiarse diseñando condiciones ambientales (estímulos, rutinas, exposición, práctica) que favorezcan respuestas deseadas y debiliten hábitos indeseados, con foco en control de antecedentes más que en interpretación de significados internos. Referencia: Watson (1930).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "desensibilizacion-sistematica-wolpe-1958",
       "modelLabel": "Desensibilización sistemática",
       "modelGrupo": "Conductismo",
@@ -745,6 +761,50 @@
           "codigo": "m_bandura_reproduccion",
           "nombre": "Reproduccion progresiva",
           "texto": "Division de la conducta objetivo en pasos graduales que el paciente puede reproducir de forma progresiva, reduciendo frustracion y abandono.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "pe-prolonged-exposure-1986",
+      "modelLabel": "PE – Prolonged Exposure",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Edna B. Foa; Michael J. Kozak",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_pe_exposicion_imaginaria",
+          "nombre": "Exposición imaginaria prolongada al trauma",
+          "texto": "Revivencia repetida y prolongada del recuerdo traumático en imaginación, en tiempo presente y con máximo detalle sensorial, para activar y modificar la estructura de miedo. Referencia: Foa & Kozak (1986).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pe_exposicion_vivo",
+          "nombre": "Exposición en vivo a estímulos evitados",
+          "texto": "Exposición gradual y repetida a situaciones, lugares u objetos evitados, eliminando conductas de seguridad y favoreciendo generalización del aprendizaje. Referencia: Foa & Rothbaum (1998).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pe_tareas",
+          "nombre": "Asignación de tareas de exposición entre sesiones",
+          "texto": "Prescripción sistemática de exposiciones imaginarias y en vivo entre sesiones para consolidar habituación e inhibición del miedo. Referencia: Foa et al. (2007).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pe_tiempo_presente",
+          "nombre": "Narración en tiempo presente",
+          "texto": "Guía al paciente para relatar el trauma como si estuviera ocurriendo ahora, maximizando activación emocional. Referencia: Foa & Rothbaum (1998).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pe_grabaciones",
+          "nombre": "Escucha de grabaciones",
+          "texto": "Reescucha repetida del relato grabado para consolidar aprendizaje entre sesiones. Referencia: Foa et al. (2007).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

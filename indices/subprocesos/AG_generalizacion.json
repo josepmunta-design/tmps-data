@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_generalizacion",
-  "updatedAt": "2026-02-05T20:12:06.967Z",
-  "totalModelos": 3,
+  "updatedAt": "2026-02-05T20:22:22.428Z",
+  "totalModelos": 4,
   "modelos": [
     {
       "modelId": "biofeedback-1969",
@@ -35,6 +35,29 @@
           "codigo": "m_biofb_practica_encubierta",
           "nombre": "Práctica encubierta sin instrumentación",
           "texto": "Ensayos breves de autorregulación sin feedback durante la sesión para comprobar transferencia inmediata y ajustar instrucciones internas. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "AG_generalizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "conductismo-clasico-watson-1913",
+      "modelLabel": "Conductismo clásico",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "John B. Watson",
+      "modelYear": 1913,
+      "items": [
+        {
+          "codigo": "p_watson_generalizacion_variacion",
+          "nombre": "Generalización por variación de condiciones",
+          "texto": "Extensión del aprendizaje a múltiples contextos mediante variación deliberada de estímulos y situaciones, evitando que la conducta adaptativa dependa de un único ambiente, y reforzando la idea de que la ciencia psicológica debe producir regularidades robustas. Referencia: Watson (1930).",
+          "sub": "AG_generalizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_watson_variacion_sistematica",
+          "nombre": "Introducir variación sistemática de estímulos",
+          "texto": "Cambiar deliberadamente el contexto y el estímulo para comprobar robustez del aprendizaje y prevenir dependencia situacional. Referencia: Watson (1930).",
           "sub": "AG_generalizacion",
           "tipo": "micro"
         }
