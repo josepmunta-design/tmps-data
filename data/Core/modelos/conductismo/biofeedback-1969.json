@@ -1,0 +1,279 @@
+{
+  "id": "biofeedback-1969",
+  "grupo": "Conductismo",
+  "label": "Biofeedback",
+  "year": 1969,
+  "importance": 1,
+  "autores": "Neal E. Miller; Elmer Green",
+  "universidad": "Rockefeller University",
+  "ciudad": "Nueva York",
+  "pais": "EE. UU.",
+  "lat": 40.762400,
+  "lon": -73.955600,
+
+  "descripcion": "El Biofeedback es un modelo de intervención psicofisiológica que utiliza dispositivos de registro instrumental para proporcionar retroalimentación inmediata sobre procesos fisiológicos habitualmente no accesibles a la conciencia, como la actividad electromiográfica, la frecuencia cardíaca, la conductancia de la piel o la temperatura periférica. A partir de los trabajos pioneros de Neal E. Miller y Elmer Green a finales de los años sesenta, el modelo demostró que respuestas autonómicas y somáticas pueden ser moduladas voluntariamente cuando se hacen explícitas mediante señales visuales o auditivas. Integrado dentro del marco del condicionamiento operante y la medicina conductual, el biofeedback se ha aplicado de forma consistente en el tratamiento del dolor crónico, cefaleas tensionales y migrañas, ansiedad, trastornos psicosomáticos y procesos de rehabilitación, favoreciendo el desarrollo de autorregulación fisiológica y control voluntario de la activación.",
+
+  "influencias": [
+    "Psicofisiología",
+    "Condicionamiento operante",
+    "Medicina conductual",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica relevante se concibe como objetivable a través de correlatos fisiológicos medibles. El conocimiento terapéutico se valida mediante registros instrumentales y cambios observables en variables fisiológicas, no por inferencias introspectivas. El ser humano es entendido como un organismo capaz de aprender control voluntario sobre procesos fisiológicos cuando se establecen contingencias claras entre señal y respuesta. El cambio ocurre mediante aprendizaje operante guiado por retroalimentación inmediata. La relación terapéutica es un contexto facilitador del aprendizaje, pero no el principio explicativo central del cambio.",
+    "teoriaFormal": "La activación fisiológica es un componente central de múltiples formas de malestar psicológico y somático. El cambio se explica como la adquisición progresiva de habilidades de autorregulación fisiológica mediante retroalimentación continua, reforzamiento diferencial y práctica repetida. El sufrimiento se mantiene cuando los sistemas fisiológicos operan de forma rígida, desregulada o fuera del control voluntario.",
+    "teoriaClinica": "El caso se conceptualiza identificando patrones específicos de activación fisiológica asociados al síntoma (p. ej., tensión muscular, hiperactivación autonómica). La intervención prioriza el entrenamiento sistemático en la modulación de estas respuestas mediante dispositivos de biofeedback, con evaluación continua del progreso basada en registros fisiológicos y transferencia gradual a contextos sin instrumentación."
+  },
+
+  "mjps": [
+    "RF",
+    "RE",
+    "AG"
+  ],
+
+ "procedimientos": [
+  {
+    "nombre": "Evaluación psicofisiológica inicial",
+    "codigo": "p_biofb_eval_psicofisiologica",
+    "procesos": ["RF_regulacionFisiologica", "AG_tomaDecisiones"],
+    "texto": "Registro basal de las variables fisiológicas relevantes (EMG, frecuencia cardiaca, variabilidad de la frecuencia cardiaca, conductancia de la piel, temperatura periférica, respiración, EEG cuando procede) en condiciones controladas y funcionales, con el objetivo de identificar patrones de activación asociados al síntoma y seleccionar el canal de biofeedback más pertinente para la intervención. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Selección del canal de biofeedback y del objetivo fisiológico",
+    "codigo": "p_biofb_seleccion_canal",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Decisión clínica sobre qué variable fisiológica entrenar en función del problema presentado (p. ej., EMG para cefalea tensional, temperatura periférica para migraña, HRV para ansiedad), asegurando que el parámetro elegido sea modificable, relevante clínicamente y comprensible para el paciente. Referencia: Blanchard & Andrasik (1985)."
+  },
+  {
+    "nombre": "Psicoeducación psicofisiológica",
+    "codigo": "p_biofb_psicoeducacion",
+    "procesos": ["RE_rotulacion", "N_normalizacion"],
+    "texto": "Explicación clara y accesible del vínculo entre activación fisiológica, emoción y síntoma, así como del funcionamiento del dispositivo de biofeedback, con el fin de aumentar comprensión, reducir atribuciones catastrofistas y favorecer una actitud activa y colaborativa en el entrenamiento. Referencia: Green & Green (1977)."
+  },
+  {
+    "nombre": "Entrenamiento en biofeedback electromiográfico (EMG)",
+    "codigo": "p_biofb_emg",
+    "procesos": ["RF_regulacionFisiologica", "AG_compromisoConductual"],
+    "texto": "Procedimiento de entrenamiento dirigido a reducir la tensión muscular mediante retroalimentación visual o auditiva de la actividad electromiográfica, reforzando descensos progresivos del tono basal y promoviendo discriminación fina entre estados de tensión y relajación. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Entrenamiento en biofeedback de temperatura periférica",
+    "codigo": "p_biofb_temperatura",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Entrenamiento orientado a incrementar la vasodilatación periférica mediante retroalimentación de temperatura cutánea, utilizado especialmente en migraña y trastornos vasomotores, facilitando control voluntario sobre respuestas autonómicas simpáticas. Referencia: Blanchard & Andrasik (1985)."
+  },
+  {
+    "nombre": "Entrenamiento en biofeedback de frecuencia cardiaca y HRV",
+    "codigo": "p_biofb_hrv",
+    "procesos": ["RF_regulacionFisiologica", "RE_modulacion"],
+    "texto": "Procedimiento centrado en la modulación de la frecuencia cardiaca y el aumento de la variabilidad cardiaca mediante respiración guiada y retroalimentación en tiempo real, con impacto demostrado en ansiedad, estrés y autorregulación emocional. Referencia: Lehrer, Vaschillo & Vaschillo (2000)."
+  },
+  {
+    "nombre": "Entrenamiento en biofeedback de conductancia de la piel (EDA)",
+    "codigo": "p_biofb_eda",
+    "procesos": ["RF_regulacionFisiologica", "RE_modulacion"],
+    "texto": "Uso de retroalimentación de la actividad electrodérmica para entrenar la reducción de la hiperactivación autonómica asociada a ansiedad, hipervigilancia y estrés crónico, mejorando la capacidad de detectar y modular estados de activación. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Entrenamiento en biofeedback respiratorio",
+    "codigo": "p_biofb_respiracion",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Procedimiento que utiliza retroalimentación del ritmo y profundidad respiratoria para entrenar patrones respiratorios lentos y regulares, reduciendo hiperventilación y favoreciendo equilibrio autonómico. Referencia: Lehrer et al. (2000)."
+  },
+  {
+    "nombre": "Entrenamiento en neurofeedback (cuando procede)",
+    "codigo": "p_biofb_neurofeedback",
+    "procesos": ["RF_regulacionFisiologica", "AG_compromisoConductual"],
+    "texto": "Uso de retroalimentación electroencefalográfica para modificar patrones de activación cortical específicos, aplicado en contextos como TDAH, epilepsia o rehabilitación, mediante reforzamiento diferencial de bandas de frecuencia objetivo. Referencia: Hammond (2005)."
+  },
+  {
+    "nombre": "Moldeamiento progresivo del control fisiológico",
+    "codigo": "p_biofb_moldeamiento",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Aplicación de principios de moldeamiento operante para reforzar aproximaciones sucesivas hacia el patrón fisiológico deseado, ajustando criterios de éxito conforme aumenta la habilidad de autorregulación del paciente. Referencia: Miller (1969)."
+  },
+  {
+    "nombre": "Transferencia del control a contextos sin feedback",
+    "codigo": "p_biofb_transferencia",
+    "procesos": ["AG_generalizacion"],
+    "texto": "Procedimiento destinado a reducir progresivamente la dependencia del dispositivo mediante práctica imaginada, señales internas y tareas entre sesiones, promoviendo la generalización del control fisiológico a la vida cotidiana. Referencia: Green & Green (1977)."
+  },
+  {
+    "nombre": "Integración con técnicas de relajación y afrontamiento",
+    "codigo": "p_biofb_integracion_relajacion",
+    "procesos": ["RE_modulacion", "AG_compromisoConductual"],
+    "texto": "Combinación del entrenamiento en biofeedback con técnicas como relajación progresiva, visualización o respiración diafragmática para potenciar el aprendizaje y facilitar la aplicación autónoma del control fisiológico. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Monitorización del progreso y ajuste del protocolo",
+    "codigo": "p_biofb_monitorizacion",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Seguimiento sistemático de los cambios fisiológicos y clínicos sesión a sesión, ajustando parámetros, frecuencia y objetivos del entrenamiento para optimizar eficacia y eficiencia terapéutica. Referencia: Blanchard & Andrasik (1985)."
+  },
+  {
+    "nombre": "Evaluación de mantenimiento y prevención de recaídas",
+    "codigo": "p_biofb_mantenimiento",
+    "procesos": ["AG_generalizacion"],
+    "texto": "Evaluación de la estabilidad del control fisiológico tras finalizar el entrenamiento instrumental y diseño de estrategias de práctica autónoma para prevenir recaídas en patrones de desregulación. Referencia: Schwartz & Andrasik (2003)."
+  }
+],
+
+
+"micros": [
+  {
+    "nombre": "Establecimiento de línea base fisiológica estable",
+    "codigo": "m_biofb_linea_base",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Obtención de un registro basal suficientemente prolongado y estable antes de iniciar el entrenamiento para discriminar variabilidad espontánea de cambios inducidos por aprendizaje, evitando falsas atribuciones de control voluntario. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Calibración y verificación del sensor",
+    "codigo": "m_biofb_calibracion_sensor",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Ajuste técnico del equipo (sensibilidad, ganancia, artefactos) y comprobación de señal válida antes de cada sesión para garantizar que la retroalimentación refleje cambios fisiológicos reales y no ruido instrumental. Referencia: Green & Green (1977)."
+  },
+  {
+    "nombre": "Rotulación simple del indicador fisiológico",
+    "codigo": "m_biofb_rotulacion_indicador",
+    "procesos": ["RE_rotulacion"],
+    "texto": "Asignación de un significado comprensible al indicador visual/auditivo (p. ej., “barra baja = menos tensión”) para facilitar discriminación estímulo–respuesta y acelerar el aprendizaje operante. Referencia: Miller (1969)."
+  },
+  {
+    "nombre": "Feedback inmediato y continuo",
+    "codigo": "m_biofb_feedback_continuo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Provisión de retroalimentación en tiempo real sin retrasos perceptibles para maximizar la contigüidad entre cambio fisiológico y consecuencia perceptiva, condición clave del aprendizaje. Referencia: Skinner (1953); Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Refuerzo diferencial de microcambios",
+    "codigo": "m_biofb_refuerzo_microcambios",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Señalización explícita y reforzamiento de descensos o incrementos mínimos en la variable objetivo para construir control progresivo mediante aproximaciones sucesivas. Referencia: Miller (1969)."
+  },
+  {
+    "nombre": "Ajuste dinámico del criterio de éxito",
+    "codigo": "m_biofb_ajuste_criterio",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Modificación gradual del umbral que define éxito conforme mejora el desempeño, evitando tanto frustración por criterios inalcanzables como estancamiento por criterios laxos. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Respiración guiada sincronizada con feedback",
+    "codigo": "m_biofb_respiracion_sincronizada",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Uso de pautas respiratorias (p. ej., 6 respiraciones/min) coordinadas con la señal para facilitar el control autonómico y acelerar la adquisición del patrón fisiológico deseado. Referencia: Lehrer, Vaschillo & Vaschillo (2000)."
+  },
+  {
+    "nombre": "Discriminación tensión–relajación",
+    "codigo": "m_biofb_discriminacion_estados",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Entrenamiento específico para identificar sensaciones internas asociadas a diferentes niveles del indicador, fortaleciendo la conciencia interoceptiva útil para la transferencia sin equipo. Referencia: Green & Green (1977)."
+  },
+  {
+    "nombre": "Reducción de artefactos conductuales",
+    "codigo": "m_biofb_reduccion_artefactos",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Corrección de conductas que contaminan la señal (movimientos, apretar mandíbula, cambios posturales) para asegurar que el aprendizaje se base en control fisiológico genuino. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Fading progresivo de la señal",
+    "codigo": "m_biofb_fading_senal",
+    "procesos": ["AG_generalizacion"],
+    "texto": "Disminución gradual de la intensidad o frecuencia del feedback para transferir el control desde la señal externa a claves internas, preparando la autonomía. Referencia: Green & Green (1977)."
+  },
+  {
+    "nombre": "Práctica encubierta sin instrumentación",
+    "codigo": "m_biofb_practica_encubierta",
+    "procesos": ["AG_generalizacion"],
+    "texto": "Ensayos breves de autorregulación sin feedback durante la sesión para comprobar transferencia inmediata y ajustar instrucciones internas. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Autoobservación interoceptiva guiada",
+    "codigo": "m_biofb_autoobservacion",
+    "procesos": ["RE_modulacion"],
+    "texto": "Invitación a describir sensaciones corporales asociadas al cambio fisiológico para consolidar mapas internos útiles fuera de la consulta. Referencia: Green & Green (1977)."
+  },
+  {
+    "nombre": "Integración con señal verbal mínima",
+    "codigo": "m_biofb_senal_verbal_minima",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Uso de breves palabras clave (“suave”, “afloja”) emparejadas al éxito fisiológico para crear mediadores portables del control. Referencia: Miller (1969)."
+  },
+  {
+    "nombre": "Chequeo de fatiga y saciación",
+    "codigo": "m_biofb_chequeo_fatiga",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Evaluación rápida del cansancio o sobreentrenamiento para ajustar duración y prevenir decrementos del aprendizaje. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Tareas entre sesiones con criterios claros",
+    "codigo": "m_biofb_tareas_entre_sesiones",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Asignación de prácticas breves y específicas (contexto, duración, señal interna) para consolidar el aprendizaje y promover generalización. Referencia: Green & Green (1977)."
+  },
+  {
+    "nombre": "Registro subjetivo–objetivo combinado",
+    "codigo": "m_biofb_registro_combinado",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Comparación de percepciones subjetivas con datos instrumentales para afinar calibración interna y corregir sesgos de autoevaluación. Referencia: Schwartz & Andrasik (2003)."
+  },
+  {
+    "nombre": "Cierre con refuerzo natural",
+    "codigo": "m_biofb_refuerzo_natural",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Finalización de la sesión destacando beneficios inmediatos (confort, claridad, calma) para favorecer mantenimiento mediante consecuencias naturales. Referencia: Blanchard & Andrasik (1985)."
+  }
+],
+
+
+"ideasPrincipales": [
+  {
+    "id": "idea_biofb_1",
+    "titulo": "La autorregulación fisiológica puede aprenderse",
+    "desarrollo": "El Biofeedback demuestra empíricamente que funciones fisiológicas tradicionalmente consideradas involuntarias pueden entrar bajo control consciente cuando se hacen accesibles mediante retroalimentación inmediata. El cambio no depende de insight ni sugestión, sino de aprendizaje operante basado en señal–respuesta–consecuencia. (Miller, 1969; Green & Green, 1977)."
+  },
+  {
+    "id": "idea_biofb_2",
+    "titulo": "La retroalimentación convierte lo implícito en entrenable",
+    "desarrollo": "Al transformar procesos fisiológicos invisibles en señales perceptibles, el biofeedback reduce la opacidad del cuerpo y permite entrenar la regulación de forma directa y específica. Esta explicitación instrumental acelera el aprendizaje y reduce atribuciones mágicas o difusas sobre el malestar corporal. (Schwartz & Andrasik, 2003)."
+  },
+  {
+    "id": "idea_biofb_3",
+    "titulo": "La regulación corporal es una vía de entrada al cambio psicológico",
+    "desarrollo": "El modelo asume que muchos síntomas emocionales y cognitivos están mediados por estados de activación fisiológica desregulada. Intervenir a nivel corporal no es periférico, sino una forma eficaz de modificar la base sobre la que se organizan emoción, atención y conducta. (Blanchard & Andrasik, 1985)."
+  },
+  {
+    "id": "idea_biofb_4",
+    "titulo": "El aprendizaje es gradual y depende de moldeamiento",
+    "desarrollo": "El control fisiológico no emerge de forma súbita, sino mediante aproximaciones sucesivas reforzadas diferencialmente. El biofeedback opera como un proceso de moldeamiento fino, donde pequeños cambios sostenidos generan reorganización estable del patrón fisiológico. (Miller, 1969)."
+  },
+  {
+    "id": "idea_biofb_5",
+    "titulo": "La transferencia es el criterio real de eficacia",
+    "desarrollo": "El objetivo del biofeedback no es el control con el dispositivo, sino la capacidad de autorregulación en ausencia de feedback externo. La retirada progresiva de la señal y la práctica en contextos naturales son condiciones estructurales del modelo, no fases opcionales. (Green & Green, 1977)."
+  },
+  {
+    "id": "idea_biofb_6",
+    "titulo": "La objetivación reduce conflicto terapéutico",
+    "desarrollo": "El uso de indicadores fisiológicos medibles desplaza la discusión terapéutica desde interpretaciones subjetivas hacia datos observables, disminuyendo confrontación, culpa o duda sobre la veracidad del cambio, y favoreciendo una alianza centrada en el entrenamiento. (Schwartz & Andrasik, 2003)."
+  },
+  {
+    "id": "idea_biofb_7",
+    "titulo": "El cuerpo aprende antes que el relato",
+    "desarrollo": "En muchos casos, la mejora fisiológica precede a la comprensión cognitiva o narrativa del problema. El modelo invierte la secuencia clásica: primero se regula, luego se explica, mostrando que el cambio no siempre requiere elaboración simbólica previa. (Miller, 1969; Blanchard & Andrasik, 1985)."
+  },
+  {
+    "id": "idea_biofb_8",
+    "titulo": "El biofeedback actúa como andamiaje temporal",
+    "desarrollo": "La señal instrumental funciona como un soporte transitorio que facilita el aprendizaje de autorregulación hasta que emergen señales internas suficientemente discriminadas. El éxito del modelo implica que el dispositivo deje de ser necesario. (Green & Green, 1977)."
+  }
+],
+
+
+  "refs": [
+    "Miller, N. E. (1969). Learning of visceral and glandular responses.",
+    "Green, E., & Green, A. (1977). Beyond Biofeedback.",
+    "Schwartz, M. S., & Andrasik, F. (2003). Biofeedback: A Practitioner’s Guide.",
+    "Blanchard, E. B., & Andrasik, F. (1985). Management of chronic headaches."
+  ]
+}
