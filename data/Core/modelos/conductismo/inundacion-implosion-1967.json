@@ -1,0 +1,236 @@
+{
+  "id": "inundacion-implosion-1967",
+  "grupo": "Conductismo",
+  "label": "Inundación / Implosión",
+  "year": 1967,
+  "importance": 1,
+  "autores": "Thomas Stampfl; James Levis",
+  "universidad": "",
+  "ciudad": "Wisconsin",
+  "pais": "EE. UU.",
+  "lat": 43.784440,
+  "lon": -88.787868,
+
+  "descripcion": "La Inundación o Terapia Implosiva es un procedimiento de exposición conductual desarrollado a finales de los años sesenta por Thomas Stampfl y James Levis, basado en los principios del condicionamiento clásico y la extinción del miedo. El modelo consiste en la exposición prolongada, intensa y no graduada a estímulos temidos —reales o imaginados— sin permitir conductas de evitación o escape, con el objetivo de producir una reducción rápida de la respuesta de ansiedad mediante habituación y extinción. A diferencia de los protocolos graduales posteriores, la implosión busca provocar una activación máxima desde el inicio, asumiendo que la ausencia de consecuencias aversivas conduce al colapso de la respuesta condicionada. Aunque mostró eficacia en algunos trastornos de ansiedad, su baja tolerabilidad, riesgo de abandono y consideraciones éticas favorecieron su sustitución progresiva por exposiciones graduadas y por la Exposición con Prevención de Respuesta (ERP).",
+
+  "influencias": [
+    "Condicionamiento clásico",
+    "Exposición",
+    "Psicoterapia conductual temprana",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "El sufrimiento psicológico se explica en términos de respuestas condicionadas de miedo ante estímulos específicos. La realidad clínica relevante es observable y se manifiesta como activación fisiológica y conductual ante dichos estímulos. El conocimiento terapéutico se valida empíricamente por la reducción de la respuesta de miedo tras la exposición prolongada sin consecuencias aversivas. El cambio ocurre por extinción, no por insight, significado o elaboración simbólica. La relación terapéutica cumple una función instrumental de sostén del procedimiento.",
+    "teoriaFormal": "El miedo patológico se mantiene por evitación y escape, que impiden la extinción de la respuesta condicionada. La exposición intensa y sostenida sin evitación conduce a habituación fisiológica y extinción del vínculo estímulo–respuesta. El aprendizaje correctivo ocurre cuando la activación máxima no es seguida de daño real.",
+    "teoriaClinica": "El caso se conceptualiza identificando estímulos fóbicos centrales y respuestas de evitación asociadas. La intervención consiste en exponer de forma directa y masiva a dichos estímulos, impidiendo escape, hasta que la ansiedad disminuye. La eficacia se evalúa por la reducción observable del miedo y de las conductas evitativas."
+  },
+
+  "mjps": [
+    "RF",
+    "RE",
+    "AG"
+  ],
+
+ "procedimientos": [
+  {
+    "nombre": "Evaluación conductual del miedo y selección del estímulo nuclear",
+    "codigo": "p_implo_evaluacion_miedo",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Identificación precisa del estímulo o situación temida central, diferenciándolo de estímulos secundarios, rituales de seguridad y conductas de evitación, con el objetivo de seleccionar el foco de exposición más potente y clínicamente relevante. La implosión requiere trabajar con el núcleo del miedo, no con aproximaciones periféricas. Referencia: Stampfl & Levis (1967)."
+  },
+  {
+    "nombre": "Análisis de conductas de evitación y escape",
+    "codigo": "p_implo_analisis_evitacion",
+    "procesos": ["AG_tomaDecisiones", "R_sist_contexto"],
+    "texto": "Detección sistemática de todas las formas abiertas y encubiertas de evitación (conductuales, cognitivas y fisiológicas) que podrían interferir con la extinción, ya que cualquier escape funcional mantiene la respuesta de miedo y debilita el procedimiento de inundación. Referencia: Marks (1987)."
+  },
+  {
+    "nombre": "Psicoeducación en el modelo de extinción del miedo",
+    "codigo": "p_implo_psicoeducacion",
+    "procesos": ["RE_rotulacion", "N_normalizacion"],
+    "texto": "Explicación clara del racional conductual de la inundación, enfatizando que la ansiedad es una respuesta condicionada que disminuirá por exposición prolongada sin consecuencias aversivas, y que el objetivo no es relajarse sino permanecer en contacto hasta que el miedo colapse. Referencia: Stampfl & Levis (1967)."
+  },
+  {
+    "nombre": "Consentimiento informado reforzado",
+    "codigo": "p_implo_consentimiento",
+    "procesos": ["R_sist_roles"],
+    "texto": "Obtención explícita y reiterada del consentimiento del paciente, detallando intensidad, duración, ausencia de evitación y posibles reacciones emocionales, dada la elevada activación que provoca la técnica y sus implicaciones éticas y clínicas. Referencia: Marks (1987)."
+  },
+  {
+    "nombre": "Diseño del escenario de exposición masiva",
+    "codigo": "p_implo_diseno_escenario",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Construcción detallada del estímulo temido en modalidad imaginada o en vivo, buscando máxima activación desde el inicio (escenario implosivo), sin graduación progresiva y con inclusión de los elementos más amenazantes para el paciente. Referencia: Stampfl & Levis (1967)."
+  },
+  {
+    "nombre": "Exposición prolongada sin evitación (inundación)",
+    "codigo": "p_implo_exposicion_masiva",
+    "procesos": ["RF_regulacionFisiologica", "AG_compromisoConductual"],
+    "texto": "Aplicación central del procedimiento mediante exposición continua e intensa al estímulo temido durante un periodo prolongado, impidiendo cualquier forma de escape o neutralización, hasta que se observe una reducción espontánea de la ansiedad por habituación y extinción. Referencia: Stampfl & Levis (1967)."
+  },
+  {
+    "nombre": "Bloqueo activo de conductas de seguridad",
+    "codigo": "p_implo_bloqueo_seguridad",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Identificación y neutralización de conductas de seguridad sutiles (distracción, control respiratorio intencional, verbalizaciones tranquilizadoras) que podrían impedir el procesamiento completo del miedo durante la exposición. Referencia: Foa & Kozak (1986)."
+  },
+  {
+    "nombre": "Mantenimiento de la exposición hasta habituación",
+    "codigo": "p_implo_mantenimiento_exposicion",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Prolongación deliberada de la exposición más allá del pico de ansiedad inicial, manteniéndola hasta que se observe un descenso significativo y estable de la activación, condición necesaria para la extinción del miedo condicionado. Referencia: Marks (1987)."
+  },
+  {
+    "nombre": "Repetición intensiva de sesiones implosivas",
+    "codigo": "p_implo_repeticion_sesiones",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Aplicación repetida del procedimiento en sesiones consecutivas o muy próximas en el tiempo para consolidar la extinción y prevenir recuperación espontánea del miedo, especialmente en fobias intensas. Referencia: Stampfl & Levis (1967)."
+  },
+  {
+    "nombre": "Evaluación post-exposición de respuesta de miedo",
+    "codigo": "p_implo_evaluacion_post",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Medición sistemática de la reducción de la ansiedad subjetiva, fisiológica y conductual tras la exposición, comparándola con la línea base para verificar efectos de extinción y decidir continuidad o ajuste del procedimiento. Referencia: Marks (1987)."
+  },
+  {
+    "nombre": "Generalización de la extinción a estímulos relacionados",
+    "codigo": "p_implo_generalizacion",
+    "procesos": ["AG_generalizacion"],
+    "texto": "Extensión del contacto sin evitación a situaciones o estímulos asociados al miedo original para reducir riesgo de reaparición de la respuesta condicionada en contextos no entrenados. Referencia: Wolpe (1958)."
+  },
+  {
+    "nombre": "Seguimiento y detección de recaídas",
+    "codigo": "p_implo_seguimiento",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Monitorización posterior de posibles recuperaciones espontáneas del miedo o reinstalación de evitaciones, con indicación de nuevas exposiciones masivas si fuera necesario para mantener la extinción. Referencia: Marks (1987)."
+  }
+],
+
+
+"micros": [
+  {
+    "nombre": "Activación inicial máxima del estímulo temido",
+    "codigo": "m_implo_activacion_maxima",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Inicio deliberado de la exposición en el punto de mayor carga ansiógena para provocar una activación intensa y clara de la respuesta de miedo desde el comienzo, condición necesaria para que el proceso de habituación y extinción sea rápido y completo. Referencia: Stampfl & Levis (1967)."
+  },
+  {
+    "nombre": "Instrucción explícita de permanencia sin escape",
+    "codigo": "m_implo_instruccion_permanencia",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Indicación clara y directa de que la tarea consiste en permanecer en contacto con el estímulo sin evitar, distraerse o neutralizar la ansiedad, reforzando la regla conductual que sostiene la intervención implosiva. Referencia: Marks (1987)."
+  },
+  {
+    "nombre": "Bloqueo inmediato de conductas de seguridad manifiestas",
+    "codigo": "m_implo_bloqueo_manifiesto",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Interrupción activa de conductas visibles de seguridad (cerrar ojos, cambiar postura, alejarse físicamente) para impedir el mantenimiento del miedo mediante escape parcial durante la exposición. Referencia: Foa & Kozak (1986)."
+  },
+  {
+    "nombre": "Detección y neutralización de evitación encubierta",
+    "codigo": "m_implo_evitacion_encubierta",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Identificación de estrategias internas de evitación como distracción cognitiva, repetición de frases tranquilizadoras o control respiratorio deliberado, y redirección inmediata al estímulo temido para asegurar procesamiento completo del miedo. Referencia: Marks (1987)."
+  },
+  {
+    "nombre": "Sostén verbal mínimo no tranquilizador",
+    "codigo": "m_implo_sosten_verbal_minimo",
+    "procesos": ["R_sist_roles"],
+    "texto": "Presencia del terapeuta con verbalizaciones breves orientadas a mantener la exposición (p. ej., “sigue”, “permanece”), evitando mensajes calmantes que funcionen como reforzadores de seguridad. Referencia: Stampfl & Levis (1967)."
+  },
+  {
+    "nombre": "Observación guiada del pico de ansiedad",
+    "codigo": "m_implo_observacion_pico",
+    "procesos": ["RE_rotulacion"],
+    "texto": "Invitación a notar el aumento máximo de ansiedad sin intentar modificarla, favoreciendo la experiencia directa de que la activación puede sostenerse sin consecuencias catastróficas. Referencia: Foa & Kozak (1986)."
+  },
+  {
+    "nombre": "Mantenimiento tras el pico ansiógeno",
+    "codigo": "m_implo_mantenimiento_post_pico",
+    "procesos": ["RF_regulacionFisiologica"],
+    "texto": "Continuación de la exposición una vez alcanzado el pico de ansiedad para permitir el descenso espontáneo de la activación, condición crítica para la habituación y la extinción. Referencia: Marks (1987)."
+  },
+  {
+    "nombre": "Señalización del descenso de la ansiedad",
+    "codigo": "m_implo_senalizacion_descenso",
+    "procesos": ["RE_rotulacion"],
+    "texto": "Marcado verbal del inicio del descenso ansiógeno para facilitar el aprendizaje discriminativo de que la ansiedad disminuye sin escape, consolidando el aprendizaje correctivo. Referencia: Stampfl & Levis (1967)."
+  },
+  {
+    "nombre": "Prolongación deliberada más allá del alivio inicial",
+    "codigo": "m_implo_prolongacion",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Extensión intencionada de la exposición incluso cuando la ansiedad ya ha bajado para prevenir aprendizaje de alivio rápido y asegurar extinción más profunda. Referencia: Marks (1987)."
+  },
+  {
+    "nombre": "Cierre sin conductas compensatorias",
+    "codigo": "m_implo_cierre_sin_compensacion",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Finalización de la sesión sin rituales de relajación, distracción o tranquilización, evitando que el alivio se atribuya a estrategias externas y manteniendo la lógica de extinción pura. Referencia: Stampfl & Levis (1967)."
+  },
+  {
+    "nombre": "Registro inmediato de la experiencia",
+    "codigo": "m_implo_registro_experiencia",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Anotación breve post-exposición de niveles de ansiedad, duración y ausencia de consecuencias negativas para reforzar el aprendizaje basado en evidencia directa. Referencia: Marks (1987)."
+  },
+  {
+    "nombre": "Asignación de exposición masiva entre sesiones",
+    "codigo": "m_implo_tarea_entre_sesiones",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Prescripción de contactos prolongados y no graduados con el estímulo temido fuera de sesión, manteniendo la coherencia del modelo implosivo y reduciendo recuperación espontánea. Referencia: Stampfl & Levis (1967)."
+  }
+],
+
+
+"ideasPrincipales": [
+  {
+    "id": "idea_implo_1",
+    "titulo": "El miedo patológico se mantiene por evitación",
+    "desarrollo": "La Inundación / Implosión parte de la idea de que la evitación y el escape impiden la extinción del miedo condicionado. Mientras la persona evita el estímulo temido, la respuesta de ansiedad se refuerza negativamente y se mantiene intacta. Eliminar la evitación es, por tanto, una condición necesaria para el cambio. (Stampfl & Levis, 1967; Marks, 1987)."
+  },
+  {
+    "id": "idea_implo_2",
+    "titulo": "La activación intensa es un requisito terapéutico",
+    "desarrollo": "A diferencia de los modelos graduados, la implosión sostiene que la activación máxima del miedo desde el inicio acelera la extinción al exponer de forma directa la asociación estímulo–respuesta. El cambio no ocurre a pesar de la ansiedad, sino a través de ella. (Stampfl & Levis, 1967)."
+  },
+  {
+    "id": "idea_implo_3",
+    "titulo": "La extinción ocurre cuando el miedo no tiene consecuencias",
+    "desarrollo": "El aprendizaje correctivo central del modelo es que la intensa activación ansiosa no conduce a daño real. Al mantenerse la exposición sin consecuencias aversivas, el vínculo condicionado se debilita progresivamente hasta colapsar. (Foa & Kozak, 1986)."
+  },
+  {
+    "id": "idea_implo_4",
+    "titulo": "La tolerancia precede al alivio",
+    "desarrollo": "La técnica asume que el alivio no debe buscarse activamente, sino que emerge de la capacidad de tolerar la ansiedad durante el tiempo suficiente. La permanencia sin escape es más terapéutica que cualquier intento de reducción inmediata del malestar. (Marks, 1987)."
+  },
+  {
+    "id": "idea_implo_5",
+    "titulo": "Las conductas de seguridad invalidan la exposición",
+    "desarrollo": "Cualquier forma de neutralización, tranquilización o distracción durante la exposición interfiere con el procesamiento completo del miedo y debilita la extinción. La implosión exige una exposición ‘limpia’, sin amortiguadores. (Foa & Kozak, 1986)."
+  },
+  {
+    "id": "idea_implo_6",
+    "titulo": "La eficacia clínica no equivale a tolerabilidad",
+    "desarrollo": "Aunque la inundación puede producir extinción rápida del miedo, su alta intensidad incrementa abandono, rechazo y riesgo de desregulación en algunos pacientes. Esta tensión entre eficacia y tolerabilidad explica su progresiva sustitución por protocolos más graduados. (Marks, 1987)."
+  },
+  {
+    "id": "idea_implo_7",
+    "titulo": "El cambio no requiere insight ni reestructuración cognitiva",
+    "desarrollo": "El modelo sostiene que la reducción del miedo puede lograrse sin modificar creencias explícitas ni narrativas personales. La experiencia directa de no-catástrofe es suficiente para reorganizar la respuesta emocional. (Stampfl & Levis, 1967)."
+  },
+  {
+    "id": "idea_implo_8",
+    "titulo": "La implosión es un antecedente histórico de la ERP moderna",
+    "desarrollo": "Aunque hoy se utiliza poco, la Inundación / Implosión sentó las bases conceptuales de la Exposición con Prevención de Respuesta y de los modelos contemporáneos de exposición, aportando la intuición clave de que evitar la evitación es el núcleo del tratamiento del miedo. (Foa & Kozak, 1986; Marks, 1987)."
+  }
+],
+
+  "refs": [
+    "Stampfl, T. G., & Levis, D. J. (1967). Implosive therapy.",
+    "Wolpe, J. (1958). Psychotherapy by Reciprocal Inhibition.",
+    "Marks, I. M. (1987). Fears, Phobias, and Rituals.",
+    "Foa, E. B., & Kozak, M. J. (1986). Emotional processing of fear."
+  ]
+}
