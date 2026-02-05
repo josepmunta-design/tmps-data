@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-05T19:43:59.236Z",
-  "totalModelos": 35,
+  "updatedAt": "2026-02-05T19:51:04.458Z",
+  "totalModelos": 36,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -144,6 +144,50 @@
           "codigo": "m_sst_prevencion_recaidas",
           "nombre": "Plan de prevención de recaídas (señales tempranas y plan de acción)",
           "texto": "Microintervención que identifica señales tempranas de retroceso (retirada, irritabilidad, evitación) y define acciones concretas de recuperación (repetir ejercicios, pedir feedback, reparar, bajar dificultad), evitando que un tropiezo se convierta en abandono del repertorio.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "manejo-contingencias-adicciones-1994",
+      "modelLabel": "Manejo de contingencias (adicciones)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Stephen T. Higgins; Nancy M. Petry",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_cm_definicion_conductas",
+          "nombre": "Definición de conductas objetivo verificables",
+          "texto": "Procedimiento inicial que consiste en operacionalizar con máxima precisión las conductas diana (p. ej., muestras de orina negativas, asistencia a sesión, toma de medicación), asegurando que sean objetivamente verificables, dicotómicas cuando es posible y clínicamente relevantes; esta definición es crítica para que la contingencia sea clara, justa y no negociable, evitando ambigüedades que erosionen el efecto del reforzamiento. (Higgins et al., 1994; Petry, 2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cm_diseno_reforzador",
+          "nombre": "Diseño del reforzador tangible o incentivo",
+          "texto": "Selección y estructuración de reforzadores tangibles (dinero, vales, premios, servicios) o sociales con valor real para la persona, cuidando su inmediatez, equivalencia económica y aceptabilidad ética; el reforzador debe competir eficazmente con el refuerzo del consumo, especialmente en fases tempranas del tratamiento. (Petry, 2000; Petry, 2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cm_explicitar_contingencia",
+          "nombre": "Comunicación explícita de la contingencia",
+          "texto": "Explicación clara y repetida de la regla conductual (qué conducta produce qué consecuencia y cuándo), usando lenguaje simple y ejemplos concretos para asegurar discriminación de la contingencia y reducir interpretaciones ambiguas que debilitan el control del reforzamiento. (Higgins et al., 1994; Petry, 2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cm_probabilidades_sorteo",
+          "nombre": "Programación de sorteos (probabilidades)",
+          "texto": "Asignación explícita de probabilidades y tamaños de premio en CM basado en sorteos para equilibrar motivación y costes, manteniendo transparencia del sistema. (Petry et al., 2005; Petry, 2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cm_ajuste_frecuencia",
+          "nombre": "Ajuste de frecuencia de pruebas",
+          "texto": "Modulación de la frecuencia de verificación (más alta al inicio, más espaciada con estabilidad) para optimizar control de contingencias y costes. (Higgins et al., 2000; Petry, 2012).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

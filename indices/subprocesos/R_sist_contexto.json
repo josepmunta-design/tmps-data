@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_contexto",
-  "updatedAt": "2026-02-05T19:43:59.236Z",
-  "totalModelos": 11,
+  "updatedAt": "2026-02-05T19:51:04.458Z",
+  "totalModelos": 12,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -119,6 +119,43 @@
           "codigo": "m_aba_chequeo_motivacional",
           "nombre": "Chequeo rápido de operaciones motivacionales",
           "texto": "Evaluación breve de saciación, privación, cansancio o malestar antes de la tarea para ajustar demandas y reforzadores y prevenir fallos de intervención por causas motivacionales. (Michael, 1993; Cooper, Heron & Heward, 2007).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "manejo-contingencias-adicciones-1994",
+      "modelLabel": "Manejo de contingencias (adicciones)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Stephen T. Higgins; Nancy M. Petry",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_cm_economia_fichas",
+          "nombre": "Economía de fichas aplicada a consumo de sustancias",
+          "texto": "Implementación de sistemas de puntos o vales canjeables por reforzadores mayores, permitiendo reforzamiento inmediato incluso cuando el incentivo final no es viable en el momento; exige reglas claras de acumulación, canje y control para evitar inflación o pérdida de credibilidad. (Petry, 2000).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cm_validez_social",
+          "nombre": "Evaluación de validez social y aceptabilidad ética",
+          "texto": "Evaluación de la aceptabilidad del programa para pacientes, profesionales e instituciones, considerando percepciones de justicia, estigma y coste-beneficio, asegurando sostenibilidad y legitimidad clínica del uso de incentivos. (Petry, 2012).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cm_control_saciacion",
+          "nombre": "Control de saciación del reforzador",
+          "texto": "Rotación y ajuste del tipo/valor del incentivo para prevenir pérdida de eficacia por saciación, especialmente en programas prolongados. (Petry, 2012).",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cm_consentimiento_etico",
+          "nombre": "Chequeo ético y consentimiento informado",
+          "texto": "Revisión breve y periódica del consentimiento, reglas y límites del programa para sostener legitimidad, comprensión y adherencia. (Petry, 2012).",
           "sub": "R_sist_contexto",
           "tipo": "micro"
         }

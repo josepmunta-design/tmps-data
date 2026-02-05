@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-05T19:43:59.236Z",
-  "totalModelos": 62,
+  "updatedAt": "2026-02-05T19:51:04.458Z",
+  "totalModelos": 63,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -513,6 +513,92 @@
           "codigo": "m_sst_exposicion_interpersonal",
           "nombre": "Exposición interpersonal graduada dentro del SST",
           "texto": "Microintervención que integra práctica de habilidades con exposición gradual a situaciones sociales temidas, asegurando que el paciente no solo “aprende” la habilidad en frío, sino que la ejecuta bajo activación real, reduciendo evitación y consolidando tolerancia al malestar social.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "manejo-contingencias-adicciones-1994",
+      "modelLabel": "Manejo de contingencias (adicciones)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Stephen T. Higgins; Nancy M. Petry",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_cm_refuerzo_abstinencia",
+          "nombre": "Programa de reforzamiento contingente a abstinencia",
+          "texto": "Aplicación sistemática del reforzador únicamente cuando la conducta objetivo se verifica (p. ej., muestra negativa), estableciendo una relación directa e inequívoca entre abstinencia y consecuencia positiva; este procedimiento reorganiza el balance motivacional del paciente. (Higgins et al., 1994; Petry, 2012).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cm_escalado_refuerzo",
+          "nombre": "Escalado progresivo del reforzamiento (escalating schedules)",
+          "texto": "Incremento gradual del valor del reforzador con cada verificación consecutiva de la conducta objetivo, generando un fuerte incentivo para la continuidad y la estabilidad de la abstinencia; el escalado refuerza especialmente la persistencia y reduce recaídas tempranas. (Higgins et al., 1994).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cm_economia_fichas",
+          "nombre": "Economía de fichas aplicada a consumo de sustancias",
+          "texto": "Implementación de sistemas de puntos o vales canjeables por reforzadores mayores, permitiendo reforzamiento inmediato incluso cuando el incentivo final no es viable en el momento; exige reglas claras de acumulación, canje y control para evitar inflación o pérdida de credibilidad. (Petry, 2000).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cm_prize_based",
+          "nombre": "Manejo de contingencias con sorteos (prize-based CM)",
+          "texto": "Uso de sorteos con probabilidades diferenciadas de premios como reforzador contingente a la abstinencia o adherencia, aumentando motivación con costes controlados; este formato mantiene eficacia clínica con menor inversión económica directa. (Petry et al., 2005; Petry, 2012).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cm_adherencia",
+          "nombre": "Reforzamiento de adherencia al tratamiento",
+          "texto": "Aplicación de incentivos contingentes a conductas de adherencia como asistencia a sesiones, cumplimiento farmacológico o participación en actividades terapéuticas, especialmente útil en fases iniciales o poblaciones con alta tasa de abandono. (Petry, 2012).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cm_integracion_tratamientos",
+          "nombre": "Integración de CM con otros tratamientos psicosociales",
+          "texto": "Coordinación del manejo de contingencias con intervenciones cognitivo-conductuales, farmacológicas o comunitarias, utilizando CM como catalizador de adherencia y reducción de consumo sin sustituir otros componentes terapéuticos. (Petry, 2012; Higgins et al., 2000).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cm_mantenimiento_fading",
+          "nombre": "Programación de mantenimiento y retirada gradual del refuerzo",
+          "texto": "Planificación explícita para reducir progresivamente los incentivos artificiales y transferir control a reforzadores naturales (salud, relaciones, estabilidad vital), minimizando dependencia del sistema de incentivos. (Higgins et al., 2000; Petry, 2012).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cm_inmediatez_incentivo",
+          "nombre": "Entrega inmediata del incentivo tras verificación",
+          "texto": "Aplicación del incentivo lo más cercana posible temporalmente a la verificación objetiva de la conducta (p. ej., resultado negativo), maximizando el poder reforzante y la asociación conducta–consecuencia. (Skinner, 1953; Petry, 2012).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cm_incremento_unitario",
+          "nombre": "Incremento unitario del valor en escalado",
+          "texto": "Aplicación consistente del aumento predefinido del incentivo tras cada cumplimiento consecutivo, manteniendo previsibilidad y evitando negociaciones ad hoc. (Higgins et al., 1994).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cm_metas_intermedias",
+          "nombre": "Vinculación del incentivo a metas intermedias",
+          "texto": "Asociación temporal del refuerzo a hitos parciales (p. ej., asistencia, adherencia) cuando la abstinencia completa aún no es viable, manteniendo dirección conductual. (Petry, 2012).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cm_transferencia_natural",
+          "nombre": "Transferencia a reforzadores naturales",
+          "texto": "Señalización explícita y aprovechamiento de consecuencias naturales positivas (salud, relaciones, estabilidad) conforme avanza el programa, preparando el fading del incentivo artificial. (Higgins et al., 2000).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
