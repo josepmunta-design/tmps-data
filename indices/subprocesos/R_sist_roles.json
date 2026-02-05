@@ -1,8 +1,66 @@
 {
   "subprocesoId": "R_sist_roles",
-  "updatedAt": "2026-02-05T12:23:07.182Z",
-  "totalModelos": 11,
+  "updatedAt": "2026-02-05T19:43:59.236Z",
+  "totalModelos": 12,
   "modelos": [
+    {
+      "modelId": "aba-analisis-conducta-aplicado-1968",
+      "modelLabel": "ABA – Análisis de conducta aplicado",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Donald Baer; Montrose Wolf; Todd Risley; Ole Ivar Lovaas",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_aba_plan_intervencion_tecnologico",
+          "nombre": "Plan de intervención conductual (BIP) y especificación tecnológica",
+          "texto": "Redacción del plan con instrucciones paso a paso (qué hacer, cuándo, cómo, con qué materiales), criterios de inicio/fin, guiones de respuesta del adulto, protocolos de seguridad y procedimientos de generalización, de modo que otro profesional pueda implementarlo fielmente; la precisión tecnológica reduce variabilidad, aumenta integridad y convierte la intervención en un procedimiento replicable, no en “estilo personal”. (Baer, Wolf & Risley, 1968; Cooper, Heron & Heward, 2007).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_aba_integridad_tratamiento",
+          "nombre": "Medición de integridad del tratamiento (treatment integrity)",
+          "texto": "Evaluación de si el plan se implementa como fue diseñado (checklists, observación directa, muestreos), distinguiendo fallo de intervención de fallo de implementación; sin integridad, los datos pierden interpretabilidad y se atribuyen erróneamente fracasos al paciente, por lo que este procedimiento es imprescindible para sostener el criterio “tecnológico” y “analítico” de ABA. (Baer, Wolf & Risley, 1968; Cooper, Heron & Heward, 2007).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_aba_economia_fichas",
+          "nombre": "Economía de fichas y sistemas de puntos",
+          "texto": "Implementación de un sistema condicionado (fichas/puntos) que se gana por conductas objetivo y se canjea por reforzadores, permitiendo reforzar de forma inmediata en entornos donde el reforzador final no es viable; exige reglas claras, control de inflación, equilibrio entre obtención y canje, y retirada gradual para sostener el cambio sin convertir el sistema en una negociación constante. (Cooper, Heron & Heward, 2007).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_aba_refuerzo_diferencial",
+          "nombre": "Intervenciones basadas en reforzamiento diferencial (DRA, DRI, DRO, DRL, DRH)",
+          "texto": "Reducción de conducta problema reforzando sistemáticamente conductas alternativas, incompatibles o tasas adecuadas y retirando el reforzamiento que mantenía la conducta objetivo, con criterios claros y consistentes; este procedimiento es un pilar de ABA porque cambia el repertorio sin depender solo de castigo, y exige precisión para no reforzar accidentalmente variantes de la conducta problema o cadenas encubiertas. (Cooper, Heron & Heward, 2007).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_aba_extincion",
+          "nombre": "Extinción (con planificación de estallido y seguridad)",
+          "texto": "Retirada sistemática del reforzador que mantiene una conducta (p. ej., no dar atención a conductas mantenidas por atención, no retirar demandas en conductas mantenidas por escape) para debilitarla, anticipando y gestionando estallido de extinción y respuestas emocionales asociadas; requiere coherencia del entorno y protocolos de seguridad, porque la inconsistencia convierte la extinción en reforzamiento intermitente y puede empeorar el problema. (Cooper, Heron & Heward, 2007).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_aba_entrenamiento_cuidadores",
+          "nombre": "Entrenamiento y coaching a cuidadores/implementadores (parent training)",
+          "texto": "Capacitación sistemática de padres/profesores/monitores para aplicar el plan con integridad (uso de reforzadores, prompts, manejo de demandas, extinción/FCT), incluyendo observación en contexto, feedback en vivo y ajustes realistas según recursos; es clave para mantenimiento y generalización porque en ABA el entorno es parte del tratamiento y, si no cambia, el cambio no se sostiene. (Cooper, Heron & Heward, 2007; Bearss et al., 2015).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_aba_bloqueo_refuerzo_accidental",
+          "nombre": "Bloqueo de reforzamiento accidental",
+          "texto": "Prevención activa de consecuencias inadvertidas que mantienen la conducta problema (miradas, comentarios, retirada de demandas), asegurando coherencia del entorno durante extinción o DRA. (Cooper, Heron & Heward, 2007).",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "polaridades-semanticas",
       "modelLabel": "Modelo de polaridades semánticas",

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-05T12:23:07.182Z",
-  "totalModelos": 58,
+  "updatedAt": "2026-02-05T19:43:59.236Z",
+  "totalModelos": 59,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -56,6 +56,36 @@
           "codigo": "m_cft_dose_titration",
           "nombre": "Titulación de compasión (dosis tolerable)",
           "texto": "Introducir compasión en microdosis para no disparar vergüenza: frases mínimas, prácticas breves, más cuerpo y menos narrativa al inicio.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "aba-analisis-conducta-aplicado-1968",
+      "modelLabel": "ABA – Análisis de conducta aplicado",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Donald Baer; Montrose Wolf; Todd Risley; Ole Ivar Lovaas",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_aba_intervenciones_antecedente",
+          "nombre": "Intervenciones antecedente: manipulación de demandas, elección y señales",
+          "texto": "Modificación de condiciones previas que disparan conducta problema (ajuste de dificultad, intercalado de tareas, elección, avisos de transición, instrucciones claras, alta probabilidad, horarios visuales) para reducir evocación y aumentar cooperación; no sustituye el trabajo en habilidades, pero baja fricción y crea condiciones para que el aprendizaje ocurra sin necesidad de escalar a crisis. (Cooper, Heron & Heward, 2007).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_aba_manejo_crisis_desescalada",
+          "nombre": "Manejo de crisis conductual y desescalada (plan de seguridad)",
+          "texto": "Protocolos para episodios de alta intensidad (agresión, autoagresión, fuga) que priorizan seguridad y reducción de activación: ajustes ambientales inmediatos, reducción de lenguaje y demandas, distancia y bloqueo seguro cuando procede, y vuelta gradual a condiciones de aprendizaje; debe estar definido, ensayado y coordinado con cuidadores/centros para evitar respuestas improvisadas que refuercen la conducta problema o aumenten riesgo. (Cooper, Heron & Heward, 2007; Luiselli, 2012).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_aba_redireccion_neutra",
+          "nombre": "Redirección neutra ante error",
+          "texto": "Corrección del error sin carga emocional ni atención excesiva, seguida de nueva oportunidad de respuesta, reduciendo frustración y aprendizaje de evitación. (Cooper, Heron & Heward, 2007).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }
