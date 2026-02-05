@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-05T19:51:04.458Z",
-  "totalModelos": 36,
+  "updatedAt": "2026-02-05T19:59:06.255Z",
+  "totalModelos": 37,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -84,6 +84,43 @@
           "codigo": "m_aba_funcion_conducta",
           "nombre": "Identificación de función primaria de la conducta",
           "texto": "Clasificación de la conducta problema según su función predominante (atención, escape/evitación, acceso a tangibles o auto-refuerzo) para guiar la selección de reforzamiento diferencial, extinción o FCT. (Iwata et al., 1994; Cooper, Heron & Heward, 2007).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "biofeedback-1969",
+      "modelLabel": "Biofeedback",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Neal E. Miller; Elmer Green",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_biofb_eval_psicofisiologica",
+          "nombre": "Evaluación psicofisiológica inicial",
+          "texto": "Registro basal de las variables fisiológicas relevantes (EMG, frecuencia cardiaca, variabilidad de la frecuencia cardiaca, conductancia de la piel, temperatura periférica, respiración, EEG cuando procede) en condiciones controladas y funcionales, con el objetivo de identificar patrones de activación asociados al síntoma y seleccionar el canal de biofeedback más pertinente para la intervención. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_seleccion_canal",
+          "nombre": "Selección del canal de biofeedback y del objetivo fisiológico",
+          "texto": "Decisión clínica sobre qué variable fisiológica entrenar en función del problema presentado (p. ej., EMG para cefalea tensional, temperatura periférica para migraña, HRV para ansiedad), asegurando que el parámetro elegido sea modificable, relevante clínicamente y comprensible para el paciente. Referencia: Blanchard & Andrasik (1985).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_biofb_calibracion_sensor",
+          "nombre": "Calibración y verificación del sensor",
+          "texto": "Ajuste técnico del equipo (sensibilidad, ganancia, artefactos) y comprobación de señal válida antes de cada sesión para garantizar que la retroalimentación refleje cambios fisiológicos reales y no ruido instrumental. Referencia: Green & Green (1977).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_biofb_ajuste_criterio",
+          "nombre": "Ajuste dinámico del criterio de éxito",
+          "texto": "Modificación gradual del umbral que define éxito conforme mejora el desempeño, evitando tanto frustración por criterios inalcanzables como estancamiento por criterios laxos. Referencia: Schwartz & Andrasik (2003).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

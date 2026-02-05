@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-05T19:51:04.458Z",
-  "totalModelos": 60,
+  "updatedAt": "2026-02-05T19:59:06.255Z",
+  "totalModelos": 61,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -109,6 +109,43 @@
           "codigo": "m_autocontrol_pausa_demora",
           "nombre": "Demora de respuesta (pausa antes de actuar)",
           "texto": "Microintervención de autocontrol que introduce una pausa breve (p. ej., 30–120 segundos) entre impulso y conducta, con una acción alternativa simple durante la pausa; esta demora reduce respuesta automática y permite que entren en juego contingencias elegidas, especialmente en conductas impulsivas mantenidas por refuerzo inmediato. Referencia: Kanfer & Karoly (1972).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "biofeedback-1969",
+      "modelLabel": "Biofeedback",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Neal E. Miller; Elmer Green",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_biofb_hrv",
+          "nombre": "Entrenamiento en biofeedback de frecuencia cardiaca y HRV",
+          "texto": "Procedimiento centrado en la modulación de la frecuencia cardiaca y el aumento de la variabilidad cardiaca mediante respiración guiada y retroalimentación en tiempo real, con impacto demostrado en ansiedad, estrés y autorregulación emocional. Referencia: Lehrer, Vaschillo & Vaschillo (2000).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_eda",
+          "nombre": "Entrenamiento en biofeedback de conductancia de la piel (EDA)",
+          "texto": "Uso de retroalimentación de la actividad electrodérmica para entrenar la reducción de la hiperactivación autonómica asociada a ansiedad, hipervigilancia y estrés crónico, mejorando la capacidad de detectar y modular estados de activación. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_integracion_relajacion",
+          "nombre": "Integración con técnicas de relajación y afrontamiento",
+          "texto": "Combinación del entrenamiento en biofeedback con técnicas como relajación progresiva, visualización o respiración diafragmática para potenciar el aprendizaje y facilitar la aplicación autónoma del control fisiológico. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_biofb_autoobservacion",
+          "nombre": "Autoobservación interoceptiva guiada",
+          "texto": "Invitación a describir sensaciones corporales asociadas al cambio fisiológico para consolidar mapas internos útiles fuera de la consulta. Referencia: Green & Green (1977).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

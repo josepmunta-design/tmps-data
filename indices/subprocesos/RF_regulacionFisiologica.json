@@ -1,0 +1,86 @@
+{
+  "subprocesoId": "RF_regulacionFisiologica",
+  "updatedAt": "2026-02-05T19:59:06.255Z",
+  "totalModelos": 1,
+  "modelos": [
+    {
+      "modelId": "biofeedback-1969",
+      "modelLabel": "Biofeedback",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Neal E. Miller; Elmer Green",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_biofb_eval_psicofisiologica",
+          "nombre": "Evaluación psicofisiológica inicial",
+          "texto": "Registro basal de las variables fisiológicas relevantes (EMG, frecuencia cardiaca, variabilidad de la frecuencia cardiaca, conductancia de la piel, temperatura periférica, respiración, EEG cuando procede) en condiciones controladas y funcionales, con el objetivo de identificar patrones de activación asociados al síntoma y seleccionar el canal de biofeedback más pertinente para la intervención. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_emg",
+          "nombre": "Entrenamiento en biofeedback electromiográfico (EMG)",
+          "texto": "Procedimiento de entrenamiento dirigido a reducir la tensión muscular mediante retroalimentación visual o auditiva de la actividad electromiográfica, reforzando descensos progresivos del tono basal y promoviendo discriminación fina entre estados de tensión y relajación. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_temperatura",
+          "nombre": "Entrenamiento en biofeedback de temperatura periférica",
+          "texto": "Entrenamiento orientado a incrementar la vasodilatación periférica mediante retroalimentación de temperatura cutánea, utilizado especialmente en migraña y trastornos vasomotores, facilitando control voluntario sobre respuestas autonómicas simpáticas. Referencia: Blanchard & Andrasik (1985).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_hrv",
+          "nombre": "Entrenamiento en biofeedback de frecuencia cardiaca y HRV",
+          "texto": "Procedimiento centrado en la modulación de la frecuencia cardiaca y el aumento de la variabilidad cardiaca mediante respiración guiada y retroalimentación en tiempo real, con impacto demostrado en ansiedad, estrés y autorregulación emocional. Referencia: Lehrer, Vaschillo & Vaschillo (2000).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_eda",
+          "nombre": "Entrenamiento en biofeedback de conductancia de la piel (EDA)",
+          "texto": "Uso de retroalimentación de la actividad electrodérmica para entrenar la reducción de la hiperactivación autonómica asociada a ansiedad, hipervigilancia y estrés crónico, mejorando la capacidad de detectar y modular estados de activación. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_respiracion",
+          "nombre": "Entrenamiento en biofeedback respiratorio",
+          "texto": "Procedimiento que utiliza retroalimentación del ritmo y profundidad respiratoria para entrenar patrones respiratorios lentos y regulares, reduciendo hiperventilación y favoreciendo equilibrio autonómico. Referencia: Lehrer et al. (2000).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_neurofeedback",
+          "nombre": "Entrenamiento en neurofeedback (cuando procede)",
+          "texto": "Uso de retroalimentación electroencefalográfica para modificar patrones de activación cortical específicos, aplicado en contextos como TDAH, epilepsia o rehabilitación, mediante reforzamiento diferencial de bandas de frecuencia objetivo. Referencia: Hammond (2005).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_biofb_linea_base",
+          "nombre": "Establecimiento de línea base fisiológica estable",
+          "texto": "Obtención de un registro basal suficientemente prolongado y estable antes de iniciar el entrenamiento para discriminar variabilidad espontánea de cambios inducidos por aprendizaje, evitando falsas atribuciones de control voluntario. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_biofb_respiracion_sincronizada",
+          "nombre": "Respiración guiada sincronizada con feedback",
+          "texto": "Uso de pautas respiratorias (p. ej., 6 respiraciones/min) coordinadas con la señal para facilitar el control autonómico y acelerar la adquisición del patrón fisiológico deseado. Referencia: Lehrer, Vaschillo & Vaschillo (2000).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_biofb_discriminacion_estados",
+          "nombre": "Discriminación tensión–relajación",
+          "texto": "Entrenamiento específico para identificar sensaciones internas asociadas a diferentes niveles del indicador, fortaleciendo la conciencia interoceptiva útil para la transferencia sin equipo. Referencia: Green & Green (1977).",
+          "sub": "RF_regulacionFisiologica",
+          "tipo": "micro"
+        }
+      ]
+    }
+  ]
+}

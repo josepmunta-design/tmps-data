@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-05T19:51:04.458Z",
-  "totalModelos": 63,
+  "updatedAt": "2026-02-05T19:59:06.255Z",
+  "totalModelos": 64,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -409,6 +409,78 @@
           "codigo": "m_autocontrol_plan_recaida_contingencias",
           "nombre": "Preparar plan de recaída como gestión de contingencias",
           "texto": "Microintervención que define por adelantado qué hacer tras un desliz (cómo registrar, qué ajuste aplicar, qué reforzar al día siguiente) para evitar abandono por ‘fracaso’; se trata la recaída como dato funcional que requiere rediseño de estímulos/contingencias, no como defecto personal. Referencia: Kanfer & Karoly (1972).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "biofeedback-1969",
+      "modelLabel": "Biofeedback",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Neal E. Miller; Elmer Green",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_biofb_emg",
+          "nombre": "Entrenamiento en biofeedback electromiográfico (EMG)",
+          "texto": "Procedimiento de entrenamiento dirigido a reducir la tensión muscular mediante retroalimentación visual o auditiva de la actividad electromiográfica, reforzando descensos progresivos del tono basal y promoviendo discriminación fina entre estados de tensión y relajación. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_neurofeedback",
+          "nombre": "Entrenamiento en neurofeedback (cuando procede)",
+          "texto": "Uso de retroalimentación electroencefalográfica para modificar patrones de activación cortical específicos, aplicado en contextos como TDAH, epilepsia o rehabilitación, mediante reforzamiento diferencial de bandas de frecuencia objetivo. Referencia: Hammond (2005).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_moldeamiento",
+          "nombre": "Moldeamiento progresivo del control fisiológico",
+          "texto": "Aplicación de principios de moldeamiento operante para reforzar aproximaciones sucesivas hacia el patrón fisiológico deseado, ajustando criterios de éxito conforme aumenta la habilidad de autorregulación del paciente. Referencia: Miller (1969).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_biofb_integracion_relajacion",
+          "nombre": "Integración con técnicas de relajación y afrontamiento",
+          "texto": "Combinación del entrenamiento en biofeedback con técnicas como relajación progresiva, visualización o respiración diafragmática para potenciar el aprendizaje y facilitar la aplicación autónoma del control fisiológico. Referencia: Schwartz & Andrasik (2003).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_biofb_feedback_continuo",
+          "nombre": "Feedback inmediato y continuo",
+          "texto": "Provisión de retroalimentación en tiempo real sin retrasos perceptibles para maximizar la contigüidad entre cambio fisiológico y consecuencia perceptiva, condición clave del aprendizaje. Referencia: Skinner (1953); Schwartz & Andrasik (2003).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_biofb_refuerzo_microcambios",
+          "nombre": "Refuerzo diferencial de microcambios",
+          "texto": "Señalización explícita y reforzamiento de descensos o incrementos mínimos en la variable objetivo para construir control progresivo mediante aproximaciones sucesivas. Referencia: Miller (1969).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_biofb_senal_verbal_minima",
+          "nombre": "Integración con señal verbal mínima",
+          "texto": "Uso de breves palabras clave (“suave”, “afloja”) emparejadas al éxito fisiológico para crear mediadores portables del control. Referencia: Miller (1969).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_biofb_tareas_entre_sesiones",
+          "nombre": "Tareas entre sesiones con criterios claros",
+          "texto": "Asignación de prácticas breves y específicas (contexto, duración, señal interna) para consolidar el aprendizaje y promover generalización. Referencia: Green & Green (1977).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_biofb_refuerzo_natural",
+          "nombre": "Cierre con refuerzo natural",
+          "texto": "Finalización de la sesión destacando beneficios inmediatos (confort, claridad, calma) para favorecer mantenimiento mediante consecuencias naturales. Referencia: Blanchard & Andrasik (1985).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
