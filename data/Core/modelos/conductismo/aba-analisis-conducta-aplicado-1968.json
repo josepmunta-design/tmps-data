@@ -1,0 +1,424 @@
+{
+  "id": "aba-analisis-conducta-aplicado-1968",
+  "grupo": "Conductismo",
+  "label": "ABA – Análisis de conducta aplicado",
+  "year": 1968,
+  "importance": 2,
+  "autores": "Donald Baer; Montrose Wolf; Todd Risley; Ole Ivar Lovaas",
+  "universidad": "University of California, Los Angeles (UCLA)",
+  "ciudad": "Los Ángeles, California",
+  "pais": "EE. UU.",
+  "lat": 34.068921,
+  "lon": -118.445181,
+
+  "descripcion": "El Análisis de Conducta Aplicado (Applied Behavior Analysis, ABA) es un marco metodológico derivado del análisis experimental de la conducta cuyo objetivo es producir cambios conductuales socialmente relevantes mediante procedimientos basados en principios del condicionamiento operante. Definido formalmente por Baer, Wolf y Risley (1968), ABA establece siete dimensiones de calidad —aplicado, conductual, analítico, tecnológico, conceptualmente sistemático, efectivo y generalizable— que funcionan como criterios para evaluar la validez y utilidad de una intervención. El foco no está en explicar la conducta por constructos inferidos, sino en identificar relaciones funcionales observables entre antecedentes, conducta y consecuencias, diseñando intervenciones replicables y evaluables empíricamente. ABA ha tenido un impacto especialmente significativo en trastornos del neurodesarrollo, educación especial, modificación de hábitos, seguridad, salud pública y contextos institucionales, y constituye el estándar metodológico más riguroso dentro del conductismo aplicado.",
+
+  "influencias": [
+    "Condicionamiento operante",
+    "Análisis experimental de la conducta",
+    "Análisis funcional",
+    "Conductismo radical (B. F. Skinner)"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se concibe como observable, mensurable y explicable a través de relaciones funcionales entre estímulos, respuestas y consecuencias. El conocimiento terapéutico se valida empíricamente mediante diseño experimental y análisis de datos, no por interpretación subjetiva. El ser humano es entendido como un organismo activo cuya conducta está moldeada por contingencias ambientales. El cambio ocurre cuando se modifican sistemáticamente dichas contingencias. La relación terapéutica no es un principio epistemológico central, sino un contexto instrumental que facilita la implementación eficaz de los procedimientos.",
+    "teoriaFormal": "La conducta es el principal objeto de análisis y se explica en función de su historia de reforzamiento y de las contingencias actuales. El cambio psicológico se produce mediante la adquisición, extinción o modificación de repertorios conductuales observables. El sufrimiento o desadaptación se mantiene por patrones de reforzamiento ineficaces, ausencia de habilidades o presencia de contingencias que fortalecen conductas problema.",
+    "teoriaClinica": "El caso se conceptualiza identificando conductas objetivo operacionalizadas, sus antecedentes y consecuencias, y las variables contextuales que las mantienen. La intervención prioriza la modificación directa del entorno y del repertorio conductual, evaluando el progreso mediante registros sistemáticos y análisis continuo de datos conductuales."
+  },
+
+  "mjps": [
+    "AG",
+    "R",
+    "RF",
+    "RE"
+  ],
+
+"procedimientos": [
+  {
+    "nombre": "Selección de conductas objetivo y definición operacional",
+    "codigo": "p_aba_definicion_operacional",
+    "procesos": ["AG_tomaDecisiones", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento inicial para traducir quejas difusas (p. ej., “se porta mal”, “no atiende”) en conductas observables y medibles (topografía, límites, ejemplos/no-ejemplos) y seleccionar objetivos socialmente relevantes, priorizando conductas de seguridad, habilidades funcionales y reducción de interferencias críticas; la definición operacional estandariza qué cuenta como ocurrencia, permite fiabilidad entre observadores y evita que el plan dependa de interpretaciones subjetivas del terapeuta o del contexto. (Baer, Wolf & Risley, 1968; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Evaluación inicial y entrevista funcional con informantes",
+    "codigo": "p_aba_entrevista_funcional",
+    "procesos": ["R_sist_contexto", "AG_tomaDecisiones"],
+    "texto": "Recogida estructurada de información con paciente/cuidadores/profesores para identificar clases de conducta problema, contextos típicos, antecedentes frecuentes, consecuencias habituales, historia de aprendizaje, variables médicas/ambientales relevantes, repertorios de habilidades y objetivos prácticos; se formula una hipótesis funcional preliminar y se definen condiciones de observación y medición, cuidando que el análisis sea útil para diseñar intervención y no un inventario clínico generalista. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Registro ABC y análisis descriptivo de contingencias",
+    "codigo": "p_aba_registro_abc",
+    "procesos": ["AG_autoriaResponsabilidad", "R_sist_interaccion"],
+    "texto": "Observación directa y registro Antecedente–Conducta–Consecuencia para describir patrones recurrentes en contexto natural (clase, casa, consulta), detectando qué eventos suelen preceder y seguir a la conducta y cómo reacciona el entorno; aunque no demuestra causalidad, permite refinar hipótesis funcionales, identificar variables contextuales modificables (demandas, transiciones, atención) y seleccionar manipulación experimental o intervención antecedente/consecuente más probable. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Medición de línea base y elección de dimensiones conductuales",
+    "codigo": "p_aba_linea_base_medicion",
+    "procesos": ["AG_autoriaResponsabilidad", "AG_compromisoConductual"],
+    "texto": "Establecimiento de una línea base previa al cambio (frecuencia, tasa, duración, latencia, intensidad, intervalos, muestreo temporal) y definición de criterios de dominio; este procedimiento crea un punto de comparación objetivo, reduce sesgos de impresión, permite estimar variabilidad natural y facilita decidir si la intervención produce cambios clínicamente significativos y sostenibles. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Evaluación de preferencias (preferencia ≠ reforzador) y sondeos",
+    "codigo": "p_aba_evaluacion_preferencias",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Identificación sistemática de estímulos preferidos (parejas, elección múltiple, MSWO, free operant) para aumentar la probabilidad de contar con reforzadores eficaces y variados; se actualiza con frecuencia porque la preferencia cambia con saciación/privación y contexto, y se usa tanto para diseñar programas de reforzamiento como para enriquecer el entorno y reducir la dependencia de un único reforzador. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Evaluación funcional del comportamiento (FBA) e hipótesis funcional",
+    "codigo": "p_aba_fba_hipotesis",
+    "procesos": ["AG_tomaDecisiones", "R_sist_contexto"],
+    "texto": "Integración de datos de entrevista, registros descriptivos y mediciones para formular hipótesis funcionales explícitas (función: atención, escape/evitación, acceso a tangibles, auto-refuerzo; y variables establecedoras/discriminativas) y traducirlas en un plan de prueba/intervención; la hipótesis debe predecir cuándo ocurre la conducta y qué consecuencias la mantienen, porque de esa precisión depende que el tratamiento sea “analítico” y no una colección de técnicas. (Baer, Wolf & Risley, 1968; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Análisis funcional experimental (FA) de Iwata",
+    "codigo": "p_aba_analisis_funcional_iwata",
+    "procesos": ["AG_tomaDecisiones", "RF_crisis"],
+    "texto": "Procedimiento experimental para demostrar la función de la conducta manipulando condiciones (atención, demanda/escape, solo/automático, tangible y control/juego) y comparando tasas de respuesta; se realiza con criterios de seguridad, entrenamiento y control ambiental, porque implica evocar conducta problema para aislar variables mantenedoras y así diseñar tratamientos específicos (p. ej., FCT, DRA, extinción) con mayor probabilidad de éxito. (Iwata et al., 1982/1994; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Análisis funcional práctico (PFA) y entrevista IISCA",
+    "codigo": "p_aba_pfa_iisca",
+    "procesos": ["AG_tomaDecisiones", "RF_crisis"],
+    "texto": "Evaluación funcional adaptada a contextos aplicados que combina entrevista estructurada (IISCA) con análisis de contingencias relevantes en un formato más rápido y ecológico, priorizando seguridad y validez social; se usa especialmente en conductas intensas para identificar paquetes de contingencias reales (p. ej., escape + atención + tangibles) y construir intervención basada en tolerancia a la demora y comunicación funcional. (Hanley, Jin, Vanselow & Hanratty, 2014)."
+  },
+  {
+    "nombre": "Diseño experimental de caso único y lógica de demostración",
+    "codigo": "p_aba_diseno_caso_unico",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Planificación de la demostración de control experimental mediante diseños de caso único (ABAB/retirada, líneas base múltiples, alternante, cambio de criterio), definiendo fases, criterios y reglas de decisión; este procedimiento es el núcleo “analítico” de ABA porque permite atribuir cambios a la intervención en el propio caso, sosteniendo decisiones clínicas basadas en datos y no en impresiones. (Baer, Wolf & Risley, 1968; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Plan de intervención conductual (BIP) y especificación tecnológica",
+    "codigo": "p_aba_plan_intervencion_tecnologico",
+    "procesos": ["AG_compromisoConductual", "R_sist_roles"],
+    "texto": "Redacción del plan con instrucciones paso a paso (qué hacer, cuándo, cómo, con qué materiales), criterios de inicio/fin, guiones de respuesta del adulto, protocolos de seguridad y procedimientos de generalización, de modo que otro profesional pueda implementarlo fielmente; la precisión tecnológica reduce variabilidad, aumenta integridad y convierte la intervención en un procedimiento replicable, no en “estilo personal”. (Baer, Wolf & Risley, 1968; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Monitorización continua de datos y decisiones basadas en tendencia/nivel",
+    "codigo": "p_aba_monitorizacion_datos_decisiones",
+    "procesos": ["AG_autoriaResponsabilidad", "AG_tomaDecisiones"],
+    "texto": "Revisión sistemática de gráficos para detectar cambios en nivel, tendencia y variabilidad, y aplicar reglas explícitas de modificación del plan (p. ej., si no hay mejora tras X sesiones, ajustar reforzadores, prompts o antecedentes); el objetivo es que la intervención sea auto-correctiva y sensible al caso, evitando tanto la inercia (“seguir igual”) como el cambio impulsivo sin evidencia. (Baer, Wolf & Risley, 1968; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Medición de integridad del tratamiento (treatment integrity)",
+    "codigo": "p_aba_integridad_tratamiento",
+    "procesos": ["AG_autoriaResponsabilidad", "R_sist_roles"],
+    "texto": "Evaluación de si el plan se implementa como fue diseñado (checklists, observación directa, muestreos), distinguiendo fallo de intervención de fallo de implementación; sin integridad, los datos pierden interpretabilidad y se atribuyen erróneamente fracasos al paciente, por lo que este procedimiento es imprescindible para sostener el criterio “tecnológico” y “analítico” de ABA. (Baer, Wolf & Risley, 1968; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Evaluación de validez social",
+    "codigo": "p_aba_validez_social",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Comprobación de que objetivos, procedimientos y resultados son relevantes y aceptables para la persona y su contexto (familia, escuela, entorno comunitario), evaluando utilidad práctica, carga de intervención y significación del cambio; este procedimiento protege contra intervenciones eficaces pero irrelevantes o intrusivas y asegura que el éxito no sea solo estadístico, sino vital. (Wolf, 1978; Baer, Wolf & Risley, 1968)."
+  },
+  {
+    "nombre": "Análisis de tareas (task analysis) para habilidades complejas",
+    "codigo": "p_aba_analisis_tareas",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Descomposición de una habilidad compleja (p. ej., higiene, preparar mochila, iniciar conversación) en pasos observables y ordenados, definiendo criterios por paso y puntos de ayuda; permite programar enseñanza sistemática, reducir frustración y localizar exactamente dónde falla la cadena conductual para intervenir con prompts, reforzamiento diferencial y encadenamiento. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Encadenamiento (forward, backward y total task) y enseñanza secuencial",
+    "codigo": "p_aba_encadenamiento",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Procedimiento para enseñar cadenas conductuales reforzando sistemáticamente eslabones (hacia delante, hacia atrás o tarea completa), combinándolo con ayudas y desvanecimiento; se selecciona la modalidad según motivación, contacto con reforzadores naturales y coste de error, buscando que la persona complete rutinas con independencia progresiva. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Moldeamiento (shaping) por aproximaciones sucesivas",
+    "codigo": "p_aba_moldeamiento",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Construcción de una conducta nueva reforzando aproximaciones cada vez más parecidas a la respuesta objetivo y retirando refuerzo a aproximaciones previas; es crucial cuando la conducta no existe en el repertorio o aparece en forma muy incipiente, y exige criterios claros para evitar estancamiento, frustración o reforzamiento accidental de topografías no deseadas. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Programas de reforzamiento (continuo e intermitente) y adelgazamiento",
+    "codigo": "p_aba_programas_reforzamiento",
+    "procesos": ["AG_compromisoConductual", "R_sist_contexto"],
+    "texto": "Diseño del calendario de refuerzo (FR, VR, FI, VI, DRH, etc.) para adquisición, mantenimiento y transición hacia reforzadores naturales; el adelgazamiento planificado reduce dependencia de refuerzo artificial, mejora generalización y previene recaídas por extinción accidental, ajustando el programa al nivel de habilidad y a la realidad del contexto. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Economía de fichas y sistemas de puntos",
+    "codigo": "p_aba_economia_fichas",
+    "procesos": ["AG_compromisoConductual", "R_sist_roles"],
+    "texto": "Implementación de un sistema condicionado (fichas/puntos) que se gana por conductas objetivo y se canjea por reforzadores, permitiendo reforzar de forma inmediata en entornos donde el reforzador final no es viable; exige reglas claras, control de inflación, equilibrio entre obtención y canje, y retirada gradual para sostener el cambio sin convertir el sistema en una negociación constante. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Control de estímulos: discriminación, señales y práctica en contexto",
+    "codigo": "p_aba_control_estimulos",
+    "procesos": ["AG_compromisoConductual", "R_sist_contexto"],
+    "texto": "Diseño de señales discriminativas (SD), reglas ambientales y ayudas contextuales para que la conducta ocurra donde debe ocurrir y no donde no debe, entrenando discriminación y generalización programada; es esencial en habilidades sociales, cumplimiento de normas, autocontrol y reducción de conductas problema disparadas por contextos específicos (transiciones, ruido, demandas). (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Prompting (ayudas) y desvanecimiento (fading) para independencia",
+    "codigo": "p_aba_prompting_fading",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Uso planificado de ayudas (físicas, gestuales, modelado, verbal, visual, posicional) para evocar respuestas correctas y retirada progresiva para transferir control al estímulo natural; incluye estrategias como least-to-most, most-to-least, time delay y errorless learning, cuidando evitar dependencia de prompts y promoviendo autonomía real. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Modelado y aprendizaje por imitación",
+    "codigo": "p_aba_modelado_imitacion",
+    "procesos": ["AG_compromisoConductual", "R_repertorioInterpersonal"],
+    "texto": "Demostración de la conducta objetivo (por terapeuta, iguales o vídeo) seguida de oportunidades de práctica reforzada, útil para habilidades motoras, académicas y sociales; el procedimiento requiere definir exactamente qué componentes se modelan, asegurar atención a los estímulos relevantes y reforzar la imitación correcta, pasando después a variaciones para generalización. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Entrenamiento en ensayos discretos (DTT)",
+    "codigo": "p_aba_dtt",
+    "procesos": ["AG_compromisoConductual", "R_sist_contexto"],
+    "texto": "Enseñanza estructurada en unidades breves (SD–respuesta–consecuencia–pausa), con control de estímulos, prompts, reforzamiento y registro trial-by-trial, especialmente útil en adquisición inicial de habilidades en TEA y retrasos del desarrollo; se combina con mantenimiento y generalización para evitar repertorios rígidos dependientes de mesa y para trasladar habilidades a ambientes naturales. (Lovaas, 1987; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Enseñanza en ambiente natural (NET) e incidental teaching",
+    "codigo": "p_aba_net_incidental",
+    "procesos": ["AG_compromisoConductual", "R_sist_contexto"],
+    "texto": "Procedimiento de enseñanza en contextos naturales usando intereses del niño/persona, oportunidades espontáneas y reforzadores intrínsecos (acceso al objeto/actividad), priorizando iniciación, lenguaje funcional y generalización; se estructura sin perder rigor (objetivos, prompts, criterios) para evitar que “lo natural” se convierta en falta de intervención. (McGee, Krantz & McClannahan, 1985; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Intervenciones basadas en reforzamiento diferencial (DRA, DRI, DRO, DRL, DRH)",
+    "codigo": "p_aba_refuerzo_diferencial",
+    "procesos": ["AG_compromisoConductual", "R_sist_roles"],
+    "texto": "Reducción de conducta problema reforzando sistemáticamente conductas alternativas, incompatibles o tasas adecuadas y retirando el reforzamiento que mantenía la conducta objetivo, con criterios claros y consistentes; este procedimiento es un pilar de ABA porque cambia el repertorio sin depender solo de castigo, y exige precisión para no reforzar accidentalmente variantes de la conducta problema o cadenas encubiertas. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Extinción (con planificación de estallido y seguridad)",
+    "codigo": "p_aba_extincion",
+    "procesos": ["RF_crisis", "R_sist_roles"],
+    "texto": "Retirada sistemática del reforzador que mantiene una conducta (p. ej., no dar atención a conductas mantenidas por atención, no retirar demandas en conductas mantenidas por escape) para debilitarla, anticipando y gestionando estallido de extinción y respuestas emocionales asociadas; requiere coherencia del entorno y protocolos de seguridad, porque la inconsistencia convierte la extinción en reforzamiento intermitente y puede empeorar el problema. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Reforzamiento no contingente (NCR) y enriquecimiento del entorno",
+    "codigo": "p_aba_ncr",
+    "procesos": ["AG_compromisoConductual", "R_sist_contexto"],
+    "texto": "Entrega programada de reforzadores (atención, pausas, acceso a actividades) independientemente de la conducta problema para reducir la motivación de emitirla y estabilizar el entorno, especialmente útil como intervención antecedente o fase de reducción de crisis; debe diseñarse con adelgazamiento progresivo y coordinación con enseñanza de alternativas para evitar dependencia y sostener generalización. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Entrenamiento en comunicación funcional (FCT)",
+    "codigo": "p_aba_fct",
+    "procesos": ["R_comunicacionEmocional", "AG_compromisoConductual"],
+    "texto": "Sustitución de conducta problema por una respuesta comunicativa simple y eficaz que produce el mismo resultado funcional (pedir ayuda, pedir pausa, pedir atención, pedir objeto), combinando reforzamiento diferencial y, cuando procede, extinción de la conducta problema; es especialmente potente en conductas mantenidas por escape o atención y debe incluir programación de tolerancia a la demora y variabilidad para prevenir colapso cuando el reforzador no es inmediato. (Carr & Durand, 1985; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Intervenciones antecedente: manipulación de demandas, elección y señales",
+    "codigo": "p_aba_intervenciones_antecedente",
+    "procesos": ["R_sist_contexto", "RE_modulacion"],
+    "texto": "Modificación de condiciones previas que disparan conducta problema (ajuste de dificultad, intercalado de tareas, elección, avisos de transición, instrucciones claras, alta probabilidad, horarios visuales) para reducir evocación y aumentar cooperación; no sustituye el trabajo en habilidades, pero baja fricción y crea condiciones para que el aprendizaje ocurra sin necesidad de escalar a crisis. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Trabajo con Operaciones Motivacionales (EO/AO) y competencia motivacional",
+    "codigo": "p_aba_operaciones_motivacionales",
+    "procesos": ["R_sist_contexto", "AG_tomaDecisiones"],
+    "texto": "Identificación y manipulación de variables que alteran el valor de un reforzador y la probabilidad de conductas relacionadas (privación/saciación, fatiga, dolor, acceso previo, estrés), ajustando momentos de enseñanza, selección de reforzadores y demandas; este procedimiento suele marcar la diferencia entre un plan “correcto en papel” y uno viable en vida real, porque muchas escaladas conductuales son fallos motivacionales, no “mala actitud”. (Michael, 1993; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Manejo de crisis conductual y desescalada (plan de seguridad)",
+    "codigo": "p_aba_manejo_crisis_desescalada",
+    "procesos": ["RF_crisis", "RE_modulacion"],
+    "texto": "Protocolos para episodios de alta intensidad (agresión, autoagresión, fuga) que priorizan seguridad y reducción de activación: ajustes ambientales inmediatos, reducción de lenguaje y demandas, distancia y bloqueo seguro cuando procede, y vuelta gradual a condiciones de aprendizaje; debe estar definido, ensayado y coordinado con cuidadores/centros para evitar respuestas improvisadas que refuercen la conducta problema o aumenten riesgo. (Cooper, Heron & Heward, 2007; Luiselli, 2012)."
+  },
+  {
+    "nombre": "Entrenamiento conductual de habilidades (BST: instrucción–modelado–ensayo–feedback)",
+    "codigo": "p_aba_bst",
+    "procesos": ["R_repertorioInterpersonal", "AG_compromisoConductual"],
+    "texto": "Procedimiento para enseñar habilidades (sociales, autocuidado, seguridad, competencias parentales) mediante explicación clara, demostración, práctica repetida y feedback correctivo/reforzante, con programación de generalización; BST es especialmente útil para entrenar a cuidadores y personal porque convierte “saber qué hacer” en desempeño observable y consistente bajo estrés. (Miltenberger, 2012; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Entrenamiento y coaching a cuidadores/implementadores (parent training)",
+    "codigo": "p_aba_entrenamiento_cuidadores",
+    "procesos": ["R_sist_roles", "R_sist_apoyo"],
+    "texto": "Capacitación sistemática de padres/profesores/monitores para aplicar el plan con integridad (uso de reforzadores, prompts, manejo de demandas, extinción/FCT), incluyendo observación en contexto, feedback en vivo y ajustes realistas según recursos; es clave para mantenimiento y generalización porque en ABA el entorno es parte del tratamiento y, si no cambia, el cambio no se sostiene. (Cooper, Heron & Heward, 2007; Bearss et al., 2015)."
+  },
+  {
+    "nombre": "Programación explícita de generalización (personas, contextos, estímulos, respuestas)",
+    "codigo": "p_aba_programacion_generalizacion",
+    "procesos": ["R_sist_contexto", "AG_compromisoConductual"],
+    "texto": "Diseño deliberado para que la conducta aprendida ocurra fuera de la situación de entrenamiento: múltiples ejemplares, variación de estímulos, entrenamiento en entornos naturales, mediadores comunes (señales/ayudas), auto-registros y refuerzo natural; sin este procedimiento, ABA produce cambios “de consulta” y no cambios de vida, por lo que la generalización debe planificarse desde el inicio. (Stokes & Baer, 1977; Baer, Wolf & Risley, 1968)."
+  },
+  {
+    "nombre": "Mantenimiento y seguimiento (fading del soporte y prevención de recaídas)",
+    "codigo": "p_aba_mantenimiento_seguimiento",
+    "procesos": ["AG_compromisoConductual", "R_sist_contexto"],
+    "texto": "Transición planificada desde apoyos intensivos a condiciones naturales: adelgazamiento de refuerzos, retirada de prompts, incremento de intervalos, chequeos espaciados y planes de respuesta ante retrocesos; el objetivo es estabilidad a largo plazo con mínima intrusión, evitando que el cambio dependa indefinidamente del terapeuta o de sistemas artificiales. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Intervención temprana intensiva basada en ABA (EIBI)",
+    "codigo": "p_aba_eibi",
+    "procesos": ["AG_compromisoConductual", "R_sist_apoyo"],
+    "texto": "Programa intensivo para niños pequeños (especialmente TEA) que combina enseñanza estructurada, objetivos amplios (lenguaje, juego, autonomía), alta dosificación y trabajo coordinado con familia/escuela, usando análisis funcional y reforzamiento para construir repertorios básicos; requiere supervisión clínica y objetivos funcionales para evitar entrenamiento mecánico desconectado del desarrollo real del niño. (Lovaas, 1987; Smith, 2010)."
+  },
+  {
+    "nombre": "Intervenciones naturalistas ABA (p. ej., PRT y variantes)",
+    "codigo": "p_aba_intervenciones_naturalistas_prt",
+    "procesos": ["AG_compromisoConductual", "R_repertorioInterpersonal"],
+    "texto": "Procedimientos de enseñanza que priorizan motivación, iniciativa, reforzadores naturales, variación de tareas y objetivos “pivote” (como responsividad, imitación, juego y comunicación), buscando cambios amplios con menor rigidez que los formatos de mesa; se diseñan con criterios conductuales claros y datos, manteniendo rigor ABA mientras se incrementa validez ecológica. (Koegel & Koegel, 2006; Schreibman et al., 2015)."
+  }
+],
+
+
+"micros": [
+  {
+    "nombre": "Definición operativa en lenguaje observable",
+    "codigo": "m_aba_definicion_operativa",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Formulación precisa de una conducta en términos observables y medibles (qué hace la persona, cuándo empieza y cuándo termina), evitando inferencias o etiquetas clínicas, para asegurar consistencia en la medición y en la aplicación de consecuencias entre distintos implementadores. (Baer, Wolf & Risley, 1968; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Selección de dimensión conductual relevante",
+    "codigo": "m_aba_dimension_conductual",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Elección de la dimensión más sensible al cambio esperado (frecuencia, duración, latencia, intensidad o intervalo) para captar efectos reales de la intervención y evitar conclusiones erróneas por mediciones mal ajustadas al fenómeno clínico. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Registro de eventos ABC en tiempo real",
+    "codigo": "m_aba_registro_abc_eventos",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Anotación inmediata de antecedentes, conducta y consecuencias durante o justo después del episodio, minimizando sesgos de memoria y permitiendo detectar patrones funcionales útiles para ajustar intervención. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Identificación de función primaria de la conducta",
+    "codigo": "m_aba_funcion_conducta",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Clasificación de la conducta problema según su función predominante (atención, escape/evitación, acceso a tangibles o auto-refuerzo) para guiar la selección de reforzamiento diferencial, extinción o FCT. (Iwata et al., 1994; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Entrega inmediata de reforzador",
+    "codigo": "m_aba_refuerzo_inmediato",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Aplicación del reforzador inmediatamente tras la respuesta objetivo para maximizar la relación contingente conducta–consecuencia y acelerar la adquisición del repertorio. (Skinner, 1953; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Emparejamiento estímulo–reforzador",
+    "codigo": "m_aba_emparejamiento",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Asociación sistemática del terapeuta, la tarea o el entorno con reforzadores para aumentar valor motivacional y reducir conductas de evitación antes de introducir demandas. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Uso de ayuda física mínima eficaz",
+    "codigo": "m_aba_prompt_fisico_minimo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Aplicación de la menor ayuda física necesaria para evocar la respuesta correcta, evitando sobreasistencia que genere dependencia del prompt. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Desvanecimiento sistemático del prompt",
+    "codigo": "m_aba_fading_prompt",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Retirada progresiva y planificada de ayudas para transferir control del comportamiento al estímulo natural, promoviendo independencia funcional. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Refuerzo diferencial de conducta alternativa (DRA)",
+    "codigo": "m_aba_dra",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Refuerzo inmediato y consistente de una conducta alternativa funcional mientras se reduce el reforzamiento de la conducta problema, facilitando sustitución conductual sin escalada punitiva. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Bloqueo de reforzamiento accidental",
+    "codigo": "m_aba_bloqueo_refuerzo_accidental",
+    "procesos": ["R_sist_roles"],
+    "texto": "Prevención activa de consecuencias inadvertidas que mantienen la conducta problema (miradas, comentarios, retirada de demandas), asegurando coherencia del entorno durante extinción o DRA. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Moldeamiento por criterio progresivo",
+    "codigo": "m_aba_moldeamiento_criterio",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Refuerzo de aproximaciones sucesivas cada vez más cercanas a la conducta objetivo, ajustando el criterio para evitar estancamiento o frustración. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Ensayo conductual con feedback inmediato",
+    "codigo": "m_aba_ensayo_feedback",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Práctica repetida de la conducta objetivo seguida de retroalimentación inmediata y específica que corrige errores y refuerza aciertos. (Miltenberger, 2012)."
+  },
+  {
+    "nombre": "Uso de señales discriminativas claras (SD)",
+    "codigo": "m_aba_sd",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Presentación consistente de estímulos que indican disponibilidad de reforzamiento para una respuesta concreta, aumentando probabilidad de ocurrencia en contextos apropiados. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Variación de estímulos para generalización",
+    "codigo": "m_aba_variacion_estimulos",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Introducción deliberada de cambios en personas, materiales o contextos durante el entrenamiento para promover transferencia del aprendizaje a situaciones no entrenadas. (Stokes & Baer, 1977)."
+  },
+  {
+    "nombre": "Programación de demora en el reforzamiento",
+    "codigo": "m_aba_demora_refuerzo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Incremento gradual del tiempo entre la respuesta y el acceso al reforzador para construir tolerancia a la espera y aproximar condiciones naturales. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Chequeo rápido de operaciones motivacionales",
+    "codigo": "m_aba_chequeo_motivacional",
+    "procesos": ["R_sist_contexto"],
+    "texto": "Evaluación breve de saciación, privación, cansancio o malestar antes de la tarea para ajustar demandas y reforzadores y prevenir fallos de intervención por causas motivacionales. (Michael, 1993; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Redirección neutra ante error",
+    "codigo": "m_aba_redireccion_neutra",
+    "procesos": ["RE_modulacion"],
+    "texto": "Corrección del error sin carga emocional ni atención excesiva, seguida de nueva oportunidad de respuesta, reduciendo frustración y aprendizaje de evitación. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Cierre de ensayo con reforzador natural",
+    "codigo": "m_aba_refuerzo_natural",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Finalización de la tarea con acceso al reforzador intrínseco de la actividad (uso del objeto, continuación del juego), favoreciendo mantenimiento y generalización. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "nombre": "Registro gráfico inmediato de datos",
+    "codigo": "m_aba_registro_grafico",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Anotación y graficado inmediato de datos tras la sesión para mantener sensibilidad al cambio y facilitar decisiones clínicas basadas en tendencia y nivel. (Baer, Wolf & Risley, 1968)."
+  }
+],
+
+
+"ideasPrincipales": [
+  {
+    "id": "idea_aba_1",
+    "titulo": "La conducta es el objeto legítimo y suficiente de intervención clínica",
+    "desarrollo": "ABA sostiene que el cambio psicológico puede lograrse interviniendo directamente sobre la conducta observable sin recurrir a constructos inferidos no medibles. La conducta es entendida como una interacción funcional con el entorno, y su modificación sistemática permite producir mejoras clínicas relevantes y verificables. Esta posición no niega la experiencia interna, pero la sitúa fuera del núcleo explicativo y operativo del modelo. (Skinner, 1953; Baer, Wolf & Risley, 1968)."
+  },
+  {
+    "id": "idea_aba_2",
+    "titulo": "El análisis funcional es el corazón del cambio terapéutico",
+    "desarrollo": "ABA afirma que no existen técnicas universales, sino intervenciones funcionales a contingencias específicas. La identificación precisa de antecedentes y consecuencias que mantienen una conducta permite diseñar tratamientos ajustados al caso, aumentando eficacia y reduciendo intervenciones arbitrarias o moralizantes. Sin análisis funcional, la intervención pierde su carácter analítico. (Iwata et al., 1994; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "id": "idea_aba_3",
+    "titulo": "La evidencia del cambio debe demostrarse en el propio caso",
+    "desarrollo": "El modelo prioriza la demostración de control experimental a nivel individual mediante diseños de caso único. El progreso terapéutico no se infiere por impresión clínica, sino por cambios sistemáticos en nivel, tendencia y variabilidad de la conducta tras introducir la intervención, garantizando atribución causal en el propio paciente. (Baer, Wolf & Risley, 1968; Kazdin, 2011)."
+  },
+  {
+    "id": "idea_aba_4",
+    "titulo": "El entorno es parte activa del tratamiento",
+    "desarrollo": "ABA concibe el contexto —familia, escuela, institución— como un componente central del problema y de la solución. Las contingencias ambientales moldean y mantienen la conducta, por lo que el cambio duradero exige modificar prácticas del entorno y entrenar a quienes interactúan cotidianamente con la persona. (Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "id": "idea_aba_5",
+    "titulo": "El reforzamiento es el principal motor del aprendizaje adaptativo",
+    "desarrollo": "El modelo establece que las conductas se adquieren, mantienen o debilitan en función de sus consecuencias. El uso sistemático del reforzamiento —y su programación adecuada— permite construir repertorios funcionales, sustituir conductas problema y promover mantenimiento y generalización sin recurrir prioritariamente a procedimientos aversivos. (Skinner, 1953; Cooper, Heron & Heward, 2007)."
+  },
+  {
+    "id": "idea_aba_6",
+    "titulo": "La intervención debe ser tecnológica y replicable",
+    "desarrollo": "Una intervención ABA válida debe describirse con tal precisión que otro profesional pueda implementarla sin ambigüedad. Esta exigencia tecnológica protege contra la deriva idiosincrásica del terapeuta y convierte la intervención en un procedimiento evaluable, corregible y transferible. (Baer, Wolf & Risley, 1968)."
+  },
+  {
+    "id": "idea_aba_7",
+    "titulo": "La eficacia clínica no es suficiente sin validez social",
+    "desarrollo": "ABA subraya que el cambio debe ser significativo para la persona y su entorno, no solo estadísticamente detectable. Los objetivos, procedimientos y resultados han de ser relevantes, aceptables y funcionales en la vida cotidiana, evitando intervenciones eficaces pero irrelevantes o excesivamente intrusivas. (Wolf, 1978)."
+  },
+  {
+    "id": "idea_aba_8",
+    "titulo": "La generalización y el mantenimiento se programan, no se esperan",
+    "desarrollo": "El modelo asume que el aprendizaje es inicialmente contextual y frágil. Por ello, la transferencia a nuevos contextos y su mantenimiento a largo plazo deben planificarse explícitamente mediante variación de estímulos, adelgazamiento de reforzadores y entrenamiento en ambientes naturales. (Stokes & Baer, 1977; Cooper, Heron & Heward, 2007)."
+  }
+],
+
+
+  "refs": [
+    "Baer, D. M., Wolf, M. M., & Risley, T. R. (1968). Some current dimensions of applied behavior analysis.",
+    "Skinner, B. F. (1953). Science and Human Behavior.",
+    "Cooper, J. O., Heron, T. E., & Heward, W. L. (2007). Applied Behavior Analysis.",
+    "Lovaas, O. I. (1987). Behavioral treatment and normal educational and intellectual functioning in young autistic children."
+  ]
+}
