@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-05T20:05:33.725Z",
-  "totalModelos": 61,
+  "updatedAt": "2026-02-05T20:12:06.967Z",
+  "totalModelos": 62,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -259,6 +259,36 @@
           "codigo": "m_relax_respiracion_ritmica",
           "nombre": "Respiración rítmica regular",
           "texto": "Microintervención que establece un ritmo respiratorio constante y predecible (sin forzar profundidad) con el objetivo de reducir variabilidad caótica, estabilizar el sistema nervioso autónomo y generar sensación de control fisiológico. (Benson, 1975).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-pareja-conductual-tradicional-1979",
+      "modelLabel": "Terapia de pareja conductual tradicional",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Richard Stuart; Neil S. Jacobson; Gayla Margolin",
+      "modelYear": 1979,
+      "items": [
+        {
+          "codigo": "p_tbct_expresion_quejas",
+          "nombre": "Entrenamiento en expresión de quejas sin castigo",
+          "texto": "Aprendizaje de formas conductualmente eficaces de expresar insatisfacción o petición de cambio sin recurrir a crítica global, desprecio o amenazas, reduciendo la probabilidad de respuestas defensivas y castigos cruzados. Referencia: Jacobson & Margolin (1979).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tbct_reduccion_aversivos",
+          "nombre": "Reducción de conductas aversivas y coercitivas",
+          "texto": "Identificación y disminución deliberada de conductas punitivas como crítica, sarcasmo, retirada afectiva o hostilidad abierta, que mantienen ciclos de castigo mutuo y deterioro relacional, sustituyéndolas por respuestas menos aversivas. Referencia: Stuart (1969); Jacobson & Margolin (1979).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tbct_interrupcion_escalada",
+          "nombre": "Interrupción de escaladas coercitivas",
+          "texto": "Detección temprana y parada explícita de secuencias de crítica–defensa–contraataque durante la sesión para evitar el refuerzo de patrones disfuncionales. Referencia: Patterson (1982).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

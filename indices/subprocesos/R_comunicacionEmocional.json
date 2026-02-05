@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_comunicacionEmocional",
-  "updatedAt": "2026-02-05T20:05:33.725Z",
-  "totalModelos": 38,
+  "updatedAt": "2026-02-05T20:12:06.967Z",
+  "totalModelos": 39,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -81,6 +81,43 @@
           "codigo": "m_cm_refuerzo_social",
           "nombre": "Refuerzo social complementario",
           "texto": "Acompañamiento del incentivo tangible con reconocimiento social breve y específico (p. ej., “cumpliste el criterio esta semana”), incrementando valor reforzante sin sustituir la contingencia principal. (Higgins et al., 1994).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-pareja-conductual-tradicional-1979",
+      "modelLabel": "Terapia de pareja conductual tradicional",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Richard Stuart; Neil S. Jacobson; Gayla Margolin",
+      "modelYear": 1979,
+      "items": [
+        {
+          "codigo": "p_tbct_comunicacion_conductual",
+          "nombre": "Entrenamiento en habilidades de comunicación conductual",
+          "texto": "Entrenamiento estructurado en emisión de mensajes claros, específicos y no aversivos, escucha activa y validación mínima, con el objetivo de reducir escaladas punitivas y aumentar intercambios comprensibles y funcionales. Referencia: Margolin & Weiss (1978); Jacobson & Margolin (1979).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tbct_expresion_quejas",
+          "nombre": "Entrenamiento en expresión de quejas sin castigo",
+          "texto": "Aprendizaje de formas conductualmente eficaces de expresar insatisfacción o petición de cambio sin recurrir a crítica global, desprecio o amenazas, reduciendo la probabilidad de respuestas defensivas y castigos cruzados. Referencia: Jacobson & Margolin (1979).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tbct_refuerzo_verbal",
+          "nombre": "Refuerzo verbal inmediato de conductas positivas",
+          "texto": "Entrenamiento en la emisión de reconocimiento verbal inmediato y específico tras conductas positivas del otro, aumentando la probabilidad de repetición del comportamiento. Referencia: Stuart (1969).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tbct_modelado_comunicacion",
+          "nombre": "Modelado de comunicación no aversiva",
+          "texto": "Demostración explícita por parte del terapeuta de formas de comunicación directa, descriptiva y no punitiva, facilitando el aprendizaje por imitación. Referencia: Jacobson & Margolin (1979).",
           "sub": "R_comunicacionEmocional",
           "tipo": "micro"
         }
