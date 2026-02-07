@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RI_autocompasion",
-  "updatedAt": "2026-02-07T21:26:58.241Z",
-  "totalModelos": 7,
+  "updatedAt": "2026-02-07T21:27:38.930Z",
+  "totalModelos": 8,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -42,6 +42,29 @@
           "codigo": "m_cft_repair_after_relapse",
           "nombre": "Reparación rápida tras recaída en autocrítica",
           "texto": "Protocolo breve: (1) notar crítica, (2) validar emoción, (3) una frase compasiva firme, (4) una acción pequeña de cuidado. Evita espiral secundaria de vergüenza.",
+          "sub": "RI_autocompasion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rebt-terapia-racional-emotiva-ellis",
+      "modelLabel": "Terapia racional emotiva conductual (REBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Albert Ellis",
+      "modelYear": 1955,
+      "items": [
+        {
+          "codigo": "m_rebt_reatribucion",
+          "nombre": "Reatribución racional de fallos",
+          "texto": "Desmontar la idea de que los errores definen el valor personal. Introduce dignidad y falibilidad humana.\n(Referencia: Ellis & Dryden, 1997.)",
+          "sub": "RI_autocompasion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_rebt_autoaceptacion",
+          "nombre": "Autoaceptación incondicional",
+          "texto": "Desmantela la autoevaluación global (“soy inútil / soy valioso”) y la sustituye por una visión no condicional de uno mismo.\n(Referencia: Ellis, 1962.)",
           "sub": "RI_autocompasion",
           "tipo": "micro"
         }

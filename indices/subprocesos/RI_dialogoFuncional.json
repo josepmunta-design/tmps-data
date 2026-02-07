@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RI_dialogoFuncional",
-  "updatedAt": "2026-02-07T21:26:58.241Z",
-  "totalModelos": 8,
+  "updatedAt": "2026-02-07T21:27:38.930Z",
+  "totalModelos": 9,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -35,6 +35,29 @@
           "codigo": "m_cft_comp_limits",
           "nombre": "Límites compasivos con uno mismo",
           "texto": "Firmeza sin crueldad: “no voy a seguir atacándome” + plan concreto (descanso, pausa, pedir ayuda, reintentar).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rebt-terapia-racional-emotiva-ellis",
+      "modelLabel": "Terapia racional emotiva conductual (REBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Albert Ellis",
+      "modelYear": 1955,
+      "items": [
+        {
+          "codigo": "p_rebt_filosofia",
+          "nombre": "Reestructuración filosófica",
+          "texto": "Transformación de la filosofía vital: abandonar “debo/terrible” y adoptar preferencias flexibles, autodirección, tolerancia a la frustración y aceptación de la falibilidad humana.\n(Referencia: Ellis, 1962.)",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_rebt_autoinstrucciones",
+          "nombre": "Auto-instrucciones racionales breves",
+          "texto": "Frases para guiar acción y regulación en momentos críticos (“puedo tolerarlo”, “preferiría, pero no es necesario”).\n(Referencia: Ellis, 1962.)",
           "sub": "RI_dialogoFuncional",
           "tipo": "micro"
         }
