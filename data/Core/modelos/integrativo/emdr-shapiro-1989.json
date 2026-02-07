@@ -41,47 +41,112 @@
     "pasos": [
       {
         "orden": 1,
+        "fase": "evaluacion",
         "accion": "Historia clínica y planificación del tratamiento",
         "explicacion": "Se recogen antecedentes relevantes, se identifican eventos traumáticos pasados, disparadores presentes y situaciones futuras problemáticas, y se elabora un plan de trabajo basado en memorias diana. Esta fase permite comprender el problema en términos de redes de memoria y priorizar objetivos terapéuticos sin activar aún material traumático."
       },
       {
         "orden": 2,
+        "fase": "estabilizacion",
         "accion": "Preparación y estabilización",
         "explicacion": "Se asegura que el paciente dispone de recursos suficientes de regulación emocional y orientación al presente antes de iniciar el reprocesamiento. Incluye psicoeducación sobre EMDR, establecimiento de señales de control, fortalecimiento de la ventana de tolerancia e instalación de recursos cuando es necesario."
       },
       {
         "orden": 3,
+        "fase": "evaluacion_diana",
         "accion": "Evaluación de la memoria diana",
         "explicacion": "Se selecciona y estructura la memoria específica que será reprocesada, identificando la imagen representativa, la cognición negativa asociada, la cognición positiva deseada, la emoción predominante, el nivel de perturbación subjetiva y las sensaciones corporales vinculadas."
       },
       {
         "orden": 4,
+        "fase": "reprocesamiento",
         "accion": "Desensibilización y reprocesamiento",
         "explicacion": "El paciente activa la memoria diana mientras se aplica estimulación bilateral, permitiendo que emerjan asociaciones espontáneas. El sistema de procesamiento adaptativo reorganiza progresivamente la experiencia, reduciendo la carga emocional y transformando el significado del recuerdo."
       },
       {
         "orden": 5,
+        "fase": "instalacion",
         "accion": "Instalación de la cognición positiva",
         "explicacion": "Una vez reducida la perturbación, se refuerza una cognición adaptativa coherente con la experiencia reprocesada. Esta fase consolida el nuevo significado personal del recuerdo y fortalece cambios en la autoimagen y en la percepción de control."
       },
       {
         "orden": 6,
+        "fase": "integracion_somatica",
         "accion": "Escaneo corporal",
         "explicacion": "Se explora el cuerpo para detectar posibles restos de activación somática asociados a la memoria. Si aparecen sensaciones perturbadoras, se continúa el reprocesamiento hasta lograr una integración corporal completa."
       },
       {
         "orden": 7,
+        "fase": "cierre",
         "accion": "Cierre de la sesión",
         "explicacion": "Se garantiza que el paciente finaliza la sesión en un estado de estabilidad emocional y orientación temporal adecuada. Si el reprocesamiento no se ha completado, se utilizan estrategias de contención y autorregulación para evitar activación residual."
       },
       {
         "orden": 8,
+        "fase": "reevaluacion",
         "accion": "Reevaluación",
         "explicacion": "Al inicio de la siguiente sesión se revisan los efectos del trabajo previo, evaluando cambios espontáneos en emociones, cogniciones, sueños o respuestas conductuales. Esta fase permite decidir si se continúa con la misma memoria, se pasa a otra o se trabaja la generalización del cambio."
       }
     ]
+  },
+  {
+    "id": "seq_emdr_trauma_complejo",
+    "nombre": "Secuencia de EMDR en trauma complejo",
+    "descripcion": "Secuencia clínica adaptada para trauma complejo, apego desorganizado y disociación, caracterizada por un movimiento cíclico entre estabilización, reprocesamiento parcial e integración. A diferencia del protocolo estándar, esta secuencia no es lineal: prioriza seguridad, regulación y dosificación del material traumático, permitiendo avanzar y retroceder entre fases según la respuesta del sistema.",
+    "tipo": "protocolo_ciclico",
+    "pasos": [
+      {
+        "orden": 1,
+        "fase": "formulacion",
+        "accion": "Evaluación ampliada y formulación por redes de memoria",
+        "explicacion": "Se realiza una evaluación prolongada que incluye historia traumática relacional, patrones de apego, niveles de disociación y recursos disponibles. El foco no está en una memoria aislada, sino en redes de experiencias repetidas que organizan el funcionamiento actual."
+      },
+      {
+        "orden": 2,
+        "fase": "estabilizacion",
+        "accion": "Estabilización y ampliación de la ventana de tolerancia",
+        "explicacion": "Se dedica un tiempo significativo a desarrollar capacidades de autorregulación, orientación al presente y sensación de control interno."
+      },
+      {
+        "orden": 3,
+        "fase": "activacion_dosificada",
+        "accion": "Activación dosificada de material traumático",
+        "explicacion": "Se accede a fragmentos limitados de experiencia traumática evitando la activación completa de memorias altamente desorganizantes."
+      },
+      {
+        "orden": 4,
+        "fase": "reprocesamiento_parcial",
+        "accion": "Reprocesamiento parcial con estimulación bilateral",
+        "explicacion": "Se utiliza estimulación bilateral de forma más breve o intermitente, priorizando la seguridad."
+      },
+      {
+        "orden": 5,
+        "fase": "regulacion",
+        "accion": "Interrupción consciente y retorno a regulación",
+        "explicacion": "Se interrumpe activamente el reprocesamiento cuando aparecen señales de sobrecarga o disociación."
+      },
+      {
+        "orden": 6,
+        "fase": "integracion",
+        "accion": "Integración progresiva del significado y la autoimagen",
+        "explicacion": "Se facilita la emergencia gradual de significados adaptativos relacionados con seguridad, agencia y valor personal."
+      },
+      {
+        "orden": 7,
+        "fase": "cierre_reforzado",
+        "accion": "Cierre reforzado y orientación al presente",
+        "explicacion": "Se refuerza la orientación temporal, la estabilidad corporal y la percepción de control."
+      },
+      {
+        "orden": 8,
+        "fase": "reevaluacion",
+        "accion": "Reevaluación continua y ajuste del ritmo",
+        "explicacion": "Cada sesión comienza evaluando el impacto del trabajo previo y ajustando el foco terapéutico."
+      }
+    ]
   }
 ],
+
 
   "procesos": [
     "Integración de memorias emocionales",
