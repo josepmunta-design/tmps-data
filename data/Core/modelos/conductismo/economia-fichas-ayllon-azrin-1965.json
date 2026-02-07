@@ -26,48 +26,61 @@
   {
     "id": "te_seq_clasica",
     "nombre": "Secuencia clásica de economía de fichas",
-    "descripcion": "Secuencia típica de diseño, implementación, mantenimiento y retirada del sistema de economía de fichas en contextos institucionales.",
+    "descripcion": "Secuencia típica de diseño, implementación, mantenimiento y retirada del sistema de economía de fichas en contextos institucionales. La lógica es progresiva: primero se define el sistema, luego se implementa con consistencia, se estabiliza y finalmente se desvanece para favorecer generalización y mantenimiento sin fichas.",
     "tipo": "programa",
     "pasos": [
       {
         "orden": 1,
+        "accion": "Definir el sistema de fichas y los reforzadores de respaldo",
+        "explicacion": "Se concreta qué es una ficha, cómo se gana, cómo se almacena y cómo se canjea, y se seleccionan reforzadores de respaldo (privilegios, actividades, objetos) realmente valiosos para la población diana. Se fijan reglas simples y observables para minimizar ambigüedad, trampas y conflictos en el equipo. Se prepara material (fichas, registro, menú de canje) y se anticipan problemas de logística y equidad.",
+        "fase": "Diseño",
         "ref": "p_te_definicion_fichas",
-        "refTipo": "procedimiento",
-        "fase": "Diseño"
+        "refTipo": "procedimiento"
       },
       {
         "orden": 2,
+        "accion": "Seleccionar conductas objetivo y criterios operativos",
+        "explicacion": "Se eligen pocas conductas prioritarias (observables y medibles) que puedan cambiar de forma realista con el sistema. Se definen topografías concretas y criterios de logro (qué cuenta y qué no), se establecen líneas base cuando es posible y se decide si el reforzamiento será por frecuencia, duración, calidad o ausencia de conducta problema. Se busca consenso del equipo para asegurar aplicación consistente.",
+        "fase": "Diseño",
         "ref": "p_te_seleccion_conductas",
-        "refTipo": "procedimiento",
-        "fase": "Diseño"
+        "refTipo": "procedimiento"
       },
       {
         "orden": 3,
+        "accion": "Establecer criterios de obtención y canje (tasas, precios y reglas)",
+        "explicacion": "Se fija la relación entre conducta y fichas (cuántas fichas por conducta, umbrales, bonus, pérdida si aplica) y el ‘precio’ de los reforzadores de respaldo. Se ajusta para que haya reforzamiento frecuente al inicio y para evitar inflación (que todo sea demasiado barato) o frustración (que sea inalcanzable). Se formalizan reglas: cuándo se puede canjear, límites, acumulación, y cómo se gestionan incidencias.",
+        "fase": "Implementación",
         "ref": "p_te_criterios_obtencion",
-        "refTipo": "procedimiento",
-        "fase": "Implementación"
+        "refTipo": "procedimiento"
       },
       {
         "orden": 4,
+        "accion": "Entregar la ficha de forma inmediata y contingente (con feedback breve)",
+        "explicacion": "En el momento en que ocurre la conducta objetivo, se entrega la ficha sin demora y se nombra brevemente la conducta (“por recoger tu material sin recordatorio”). Esto fortalece la contingencia y reduce la confusión sobre por qué se recibe la ficha. Si la entrega se retrasa o se mezcla con regaños, el aprendizaje se debilita. Se cuida que la entrega sea consistente entre profesionales y turnos.",
+        "fase": "Implementación",
         "ref": "m_te_entrega_inmediata",
-        "refTipo": "micro",
-        "fase": "Implementación"
+        "refTipo": "micro"
       },
       {
         "orden": 5,
+        "accion": "Programar y monitorizar la entrega (consistencia, registros y ajustes)",
+        "explicacion": "Se implementa un sistema de registro sencillo (quién entrega, cuándo, por qué, cuántas fichas) para vigilar fidelidad y resultados. Se revisan semanalmente tasas de ganancia, canjes, conductas objetivo y efectos indeseados (manipulación, conflictos, dependencia del sistema). Con esos datos se ajustan precios, criterios y frecuencia de reforzamiento para mantener motivación y progresar hacia mayor autonomía.",
+        "fase": "Mantenimiento",
         "ref": "p_te_programacion_entrega",
-        "refTipo": "procedimiento",
-        "fase": "Mantenimiento"
+        "refTipo": "procedimiento"
       },
       {
         "orden": 6,
+        "accion": "Retirar y desvanecer el sistema (fading) para generalizar y mantener",
+        "explicacion": "Cuando las conductas se estabilizan, se reduce gradualmente la dependencia de fichas: se espacian oportunidades, se aumenta el criterio para ganar, se sustituye parte del refuerzo por reforzamiento social natural y se promueve autorrefuerzo. El objetivo es que la conducta se mantenga por contingencias del entorno real y por habilidades adquiridas, minimizando recaídas al retirar el programa. Se planifica la retirada para evitar caídas bruscas.",
+        "fase": "Retirada",
         "ref": "m_te_desvanecimiento_ficha",
-        "refTipo": "micro",
-        "fase": "Retirada"
+        "refTipo": "micro"
       }
     ]
   }
 ],
+
 
 "procedimientos": [
 
