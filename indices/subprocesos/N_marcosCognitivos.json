@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-02-07T19:28:22.633Z",
-  "totalModelos": 28,
+  "updatedAt": "2026-02-07T19:32:53.359Z",
+  "totalModelos": 29,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -268,6 +268,29 @@
           "codigo": "m_bandura_retencion",
           "nombre": "Retencion simbolica",
           "texto": "Ayuda al paciente a codificar mentalmente la conducta observada mediante lenguaje, imagenes o reglas simples que faciliten su recuerdo posterior.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "programas-refuerzo-ferster-skinner-1957",
+      "modelLabel": "Programas de refuerzo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "C. B. Ferster; B. F. Skinner",
+      "modelYear": 1957,
+      "items": [
+        {
+          "codigo": "p_pr_multiples",
+          "nombre": "Programas múltiples de reforzamiento",
+          "texto": "Procedimiento en el que distintos programas de reforzamiento se alternan de forma señalizada mediante estímulos discriminativos, permitiendo observar cambios sistemáticos en la tasa de respuesta según el contexto. Este diseño muestra cómo el comportamiento queda bajo control conjunto de programación y estímulos antecedentes. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pr_control_discriminativo_tasa",
+          "nombre": "Control discriminativo de la tasa de respuesta",
+          "texto": "Microfenómeno en el que estímulos asociados a distintos programas de reforzamiento modulan de forma diferencial la tasa de respuesta, permitiendo que el organismo ajuste su conducta según el contexto señalizado. Este efecto muestra la interacción entre programación del refuerzo y estímulos discriminativos. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }

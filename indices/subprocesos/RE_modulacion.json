@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-07T19:28:22.633Z",
-  "totalModelos": 65,
+  "updatedAt": "2026-02-07T19:32:53.359Z",
+  "totalModelos": 66,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -354,6 +354,36 @@
           "codigo": "m_bandura_refuerzo_vicario",
           "nombre": "Refuerzo vicario",
           "texto": "Observacion de consecuencias positivas en el modelo que incrementa la motivacion del paciente para intentar la conducta, incluso antes de experimentarla directamente.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "programas-refuerzo-ferster-skinner-1957",
+      "modelLabel": "Programas de refuerzo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "C. B. Ferster; B. F. Skinner",
+      "modelYear": 1957,
+      "items": [
+        {
+          "codigo": "p_pr_resistencia_extincion",
+          "nombre": "Análisis de resistencia a la extinción",
+          "texto": "Procedimiento analítico que examina cómo distintos programas de reforzamiento influyen en la persistencia de la conducta cuando el refuerzo se retira. Ferster y Skinner muestran que la programación previa del refuerzo es un determinante clave de la vulnerabilidad o persistencia conductual ante la extinción. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pr_pausa_postrefuerzo",
+          "nombre": "Pausa post-refuerzo",
+          "texto": "Microfenómeno conductual caracterizado por una interrupción temporal de la respuesta inmediatamente después de la entrega del refuerzo, especialmente pronunciado en programas de razón fija. Ferster y Skinner describen esta pausa como función directa de la programación del refuerzo y no como fatiga o decisión del organismo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pr_resistencia_extincion",
+          "nombre": "Resistencia diferencial a la extinción",
+          "texto": "Microfenómeno que describe cómo la persistencia de la conducta durante la extinción depende de la historia previa de programación del refuerzo, siendo mayor tras programas variables que tras programas fijos. Ferster y Skinner demuestran que la extinción no es un proceso uniforme, sino dependiente de contingencias previas. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

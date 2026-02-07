@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-07T19:28:22.633Z",
-  "totalModelos": 73,
+  "updatedAt": "2026-02-07T19:32:53.359Z",
+  "totalModelos": 74,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -308,6 +308,43 @@
           "codigo": "m_bandura_atencion",
           "nombre": "Atencion al modelo",
           "texto": "Focalizacion deliberada en los aspectos relevantes de la conducta del modelo para asegurar un aprendizaje eficaz y evitar imitaciones parciales o distorsionadas.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "programas-refuerzo-ferster-skinner-1957",
+      "modelLabel": "Programas de refuerzo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "C. B. Ferster; B. F. Skinner",
+      "modelYear": 1957,
+      "items": [
+        {
+          "codigo": "p_pr_fi",
+          "nombre": "Programación de intervalo fijo (FI)",
+          "texto": "Procedimiento en el que el primer comportamiento emitido tras un intervalo temporal fijo es reforzado, produciendo el patrón típico de aceleración progresiva de la respuesta conforme se aproxima el momento del refuerzo. Este patrón, conocido como ‘scalloping’, ilustra cómo el tiempo funciona como variable de control conductual independiente del número de respuestas. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pr_mixtos",
+          "nombre": "Programas mixtos de reforzamiento",
+          "texto": "Procedimiento experimental en el que dos o más programas de reforzamiento se alternan sin señales discriminativas claras, permitiendo analizar cómo la conducta se ajusta a cambios no señalizados en las contingencias. Ferster y Skinner utilizan estos programas para estudiar la sensibilidad conductual a variaciones encubiertas del entorno. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pr_scalloping",
+          "nombre": "Scalloping (aceleración progresiva)",
+          "texto": "Patrón microconductual típico de los programas de intervalo fijo, caracterizado por una baja tasa de respuesta tras el refuerzo seguida de una aceleración gradual conforme se aproxima el siguiente intervalo reforzable. Este patrón ilustra el control temporal ejercido por el programa de reforzamiento. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pr_cambio_tasa_transicion",
+          "nombre": "Cambio abrupto de tasa por transición de programa",
+          "texto": "Microfenómeno observado cuando se altera el tipo de programa de reforzamiento, produciendo modificaciones inmediatas en la tasa y patrón de respuesta. Ferster y Skinner emplean estas transiciones para demostrar la sensibilidad del comportamiento a cambios estructurales en las contingencias. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

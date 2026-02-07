@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-07T19:28:22.633Z",
-  "totalModelos": 44,
+  "updatedAt": "2026-02-07T19:32:53.359Z",
+  "totalModelos": 45,
   "modelos": [
     {
       "modelId": "rebt-terapia-racional-emotiva-ellis",
@@ -468,6 +468,29 @@
           "codigo": "m_pe_bloqueo_evitacion",
           "nombre": "Bloqueo de evitación cognitiva",
           "texto": "Redirección inmediata cuando el paciente se distancia emocionalmente o intelectualiza. Referencia: Foa et al. (2007).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "programas-refuerzo-ferster-skinner-1957",
+      "modelLabel": "Programas de refuerzo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "C. B. Ferster; B. F. Skinner",
+      "modelYear": 1957,
+      "items": [
+        {
+          "codigo": "p_pr_concurrentes",
+          "nombre": "Programas concurrentes",
+          "texto": "Procedimiento en el que dos o más programas de reforzamiento están disponibles simultáneamente, permitiendo al organismo distribuir su conducta entre alternativas. Ferster y Skinner utilizan estos programas para analizar la asignación relativa de respuestas en función de las contingencias, sentando las bases del estudio experimental de la elección. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pr_distribucion_respuestas",
+          "nombre": "Distribución de respuestas entre alternativas",
+          "texto": "Microfenómeno observado en programas concurrentes en el que el organismo reparte su conducta entre distintas opciones de respuesta en función de las contingencias relativas de refuerzo. Ferster y Skinner describen este reparto como un ajuste funcional, sin apelar a procesos deliberativos internos. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

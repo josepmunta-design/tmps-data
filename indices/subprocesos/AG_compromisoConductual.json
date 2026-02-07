@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-07T19:28:22.633Z",
-  "totalModelos": 72,
+  "updatedAt": "2026-02-07T19:32:53.359Z",
+  "totalModelos": 73,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -1002,6 +1002,71 @@
           "codigo": "m_pe_grabaciones",
           "nombre": "Escucha de grabaciones",
           "texto": "Reescucha repetida del relato grabado para consolidar aprendizaje entre sesiones. Referencia: Foa et al. (2007).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "programas-refuerzo-ferster-skinner-1957",
+      "modelLabel": "Programas de refuerzo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "C. B. Ferster; B. F. Skinner",
+      "modelYear": 1957,
+      "items": [
+        {
+          "codigo": "p_pr_fr",
+          "nombre": "Programación de razón fija (FR)",
+          "texto": "Procedimiento experimental en el que el refuerzo se administra tras un número fijo de respuestas, produciendo tasas altas de respuesta con pausas post-refuerzo características. Ferster y Skinner describen cómo este patrón refleja la sensibilidad de la conducta a la exigencia de respuesta y permite analizar la relación entre esfuerzo, pausa y persistencia conductual. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pr_vr",
+          "nombre": "Programación de razón variable (VR)",
+          "texto": "Procedimiento en el que el refuerzo se entrega tras un número variable e impredecible de respuestas, generando tasas muy altas y estables de conducta con mínima pausa post-refuerzo. Ferster y Skinner muestran que esta programación maximiza la resistencia a la extinción y explica la persistencia conductual en ausencia de refuerzo inmediato. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pr_vi",
+          "nombre": "Programación de intervalo variable (VI)",
+          "texto": "Procedimiento en el que el refuerzo se hace disponible tras intervalos temporales variables e impredecibles, reforzando la primera respuesta emitida después de cada intervalo. Ferster y Skinner describen cómo este tipo de programación genera tasas moderadas pero muy estables de respuesta, con alta resistencia a la extinción. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pr_tandem",
+          "nombre": "Programas en tándem",
+          "texto": "Procedimiento que combina dos o más programas de reforzamiento de forma secuencial sin estímulos discriminativos que señalen el cambio entre componentes. Permite analizar cómo la conducta se ajusta a secuencias de exigencias cuando el control contextual es mínimo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pr_encadenados",
+          "nombre": "Programas encadenados",
+          "texto": "Procedimiento en el que dos o más programas se presentan secuencialmente con estímulos discriminativos distintos para cada componente, de modo que completar uno da acceso al siguiente. Ferster y Skinner lo utilizan para estudiar secuencias conductuales complejas bajo control explícito de señales ambientales. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pr_alta_tasa_respuesta",
+          "nombre": "Alta tasa de respuesta sostenida",
+          "texto": "Microfenómeno observado principalmente en programas de razón variable, donde la conducta se mantiene a tasas muy elevadas y estables debido a la imprevisibilidad del refuerzo. Ferster y Skinner muestran que esta estabilidad no depende de motivación interna, sino de la estructura de contingencias. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pr_estabilidad_vi",
+          "nombre": "Estabilidad conductual bajo intervalo variable",
+          "texto": "Microfenómeno por el cual los programas de intervalo variable generan tasas de respuesta moderadas pero altamente estables, con mínima variabilidad y gran resistencia a cambios momentáneos en el entorno. Ferster y Skinner lo utilizan para mostrar la robustez del control por contingencias temporales impredecibles. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pr_persistencia_sin_refuerzo",
+          "nombre": "Persistencia conductual sin refuerzo inmediato",
+          "texto": "Microfenómeno por el cual la conducta se mantiene activa durante periodos prolongados sin refuerzo inmediato, especialmente bajo programas variables. Ferster y Skinner muestran que esta persistencia es una propiedad emergente de la programación previa del refuerzo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
