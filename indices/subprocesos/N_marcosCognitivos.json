@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-02-07T10:25:30.896Z",
-  "totalModelos": 27,
+  "updatedAt": "2026-02-07T19:27:59.597Z",
+  "totalModelos": 28,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -148,6 +148,43 @@
           "codigo": "m_autocontrol_identificar_reforzador",
           "nombre": "Identificar reforzador inmediato que mantiene la conducta problema",
           "texto": "Microintervención focal que busca localizar qué consecuencia inmediata (alivio, comodidad, evitación de esfuerzo, atención, reducción de ansiedad) está reforzando la conducta problema, porque el mantenimiento suele depender más del refuerzo a corto plazo que de intenciones; nombrar el reforzador real permite diseñar sustitutos reforzantes para la conducta objetivo. Referencia: Kanfer & Karoly (1972).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-operante-skinner-1938",
+      "modelLabel": "Condicionamiento operante",
+      "modelGrupo": "Conductista",
+      "modelAutores": "B. F. Skinner",
+      "modelYear": 1938,
+      "items": [
+        {
+          "codigo": "p_op_control_estimulos",
+          "nombre": "Control de estímulos",
+          "texto": "Procedimiento que describe cómo la probabilidad de una conducta queda bajo el control de estímulos discriminativos presentes en el entorno, en función de su historia de reforzamiento. El control de estímulos explica por qué una conducta ocurre en ciertas condiciones y no en otras, sin necesidad de postular decisiones internas o intenciones conscientes. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_op_generalizacion_discriminacion",
+          "nombre": "Generalización y discriminación",
+          "texto": "Procedimiento descriptivo que explica cómo una conducta reforzada en presencia de ciertos estímulos puede extenderse a estímulos similares (generalización) o restringirse progresivamente a condiciones específicas (discriminación). Estos procesos permiten comprender la adaptabilidad y precisión del comportamiento operante en entornos complejos. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_op_estimulo_discriminativo",
+          "nombre": "Presentación de estímulo discriminativo (SD)",
+          "texto": "Microintervención que consiste en la presencia de un estímulo antecedente asociado a la disponibilidad de refuerzo, aumentando la probabilidad de emisión de la conducta. El SD no causa la conducta, sino que señala condiciones históricas de reforzamiento. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_estimulo_delta",
+          "nombre": "Ausencia de refuerzo en estímulo delta (SΔ)",
+          "texto": "Microintervención complementaria al estímulo discriminativo en la que la conducta no es reforzada en presencia de ciertos estímulos, contribuyendo al establecimiento de discriminación conductual. Explica la precisión contextual del comportamiento operante. Referencia: Skinner (1938), *The Behavior of Organisms*.",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }

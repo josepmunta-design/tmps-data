@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_motivacionInterna",
-  "updatedAt": "2026-02-07T10:25:30.896Z",
-  "totalModelos": 16,
+  "updatedAt": "2026-02-07T19:27:59.597Z",
+  "totalModelos": 17,
   "modelos": [
     {
       "modelId": "analisis-funcional-clinico-kanfer-saslow-1969",
@@ -51,6 +51,43 @@
           "codigo": "m_autocontrol_reforzar_aproximaciones",
           "nombre": "Reforzar aproximaciones y no solo el logro final",
           "texto": "Microintervención que aplica refuerzo a pasos parciales (aproximaciones sucesivas) cuando el objetivo completo aún no es estable, evitando el ‘todo o nada’; esto protege la adherencia y permite consolidar el cambio como aprendizaje progresivo, no como prueba de fuerza de voluntad. Referencia: Kanfer & Karoly (1972).",
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-operante-skinner-1938",
+      "modelLabel": "Condicionamiento operante",
+      "modelGrupo": "Conductista",
+      "modelAutores": "B. F. Skinner",
+      "modelYear": 1938,
+      "items": [
+        {
+          "codigo": "p_op_refuerzo_positivo",
+          "nombre": "Refuerzo positivo",
+          "texto": "Procedimiento mediante el cual la presentación contingente de un estímulo reforzador tras una respuesta incrementa la probabilidad futura de dicha conducta. El refuerzo positivo constituye el mecanismo básico de selección conductual, explicando la adquisición y mantenimiento de repertorios sin apelar a intención, conciencia o motivación interna como causas primarias. Referencia: Skinner (1953), *Science and Human Behavior*.",
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_op_presentacion_reforzador",
+          "nombre": "Presentación contingente de reforzador",
+          "texto": "Microintervención que consiste en presentar un estímulo reforzante inmediatamente después de la emisión de una conducta, fortaleciendo la relación respuesta–consecuencia. Su eficacia depende de la contingencia temporal y de la historia previa del organismo, ilustrando el principio básico de selección por consecuencias sin necesidad de mediadores internos. Referencia: Skinner (1953), *Science and Human Behavior*.",
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_demora_refuerzo",
+          "nombre": "Demora del refuerzo",
+          "texto": "Microintervención que introduce un intervalo temporal entre la respuesta y la consecuencia, reduciendo la eficacia del refuerzo. Skinner muestra que la inmediatez es una variable crítica para la selección conductual. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_privacion_reforzador",
+          "nombre": "Privación del reforzador",
+          "texto": "Microfenómeno que incrementa el valor reforzante de un estímulo tras un periodo sin acceso a él, aumentando la probabilidad de respuestas asociadas. Skinner lo considera un determinante motivacional básico del comportamiento operante. Referencia: Skinner (1938), *The Behavior of Organisms*.",
           "sub": "AG_motivacionInterna",
           "tipo": "micro"
         }

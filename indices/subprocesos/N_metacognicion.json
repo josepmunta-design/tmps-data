@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-07T10:25:30.896Z",
-  "totalModelos": 72,
+  "updatedAt": "2026-02-07T19:27:59.597Z",
+  "totalModelos": 73,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -204,6 +204,57 @@
           "codigo": "m_autocontrol_revision_semanal_ajuste",
           "nombre": "Revisión semanal del plan y ajuste de contingencias",
           "texto": "Microintervención de mantenimiento que consiste en revisar datos del autorregistro, detectar patrones (momentos de fallo, contextos de éxito) y ajustar una sola variable por vez (señal, criterio o reforzador), evitando cambios caóticos; esta revisión convierte el programa en un ciclo de autorregulación estable y acumulativo. Referencia: Kanfer & Karoly (1972).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-operante-skinner-1938",
+      "modelLabel": "Condicionamiento operante",
+      "modelGrupo": "Conductista",
+      "modelAutores": "B. F. Skinner",
+      "modelYear": 1938,
+      "items": [
+        {
+          "codigo": "p_op_analisis_funcional_abc",
+          "nombre": "Análisis funcional de contingencias (ABC)",
+          "texto": "Procedimiento central del condicionamiento operante orientado a identificar la relación funcional entre estímulos antecedentes, conducta observable y consecuencias ambientales, describiendo cómo estas últimas seleccionan y mantienen la respuesta a lo largo del tiempo. El análisis funcional permite explicar la conducta sin recurrir a constructos mentales causales, localizando las variables de control en el entorno y proporcionando la base para cualquier manipulación experimental o intervención conductual. Referencia: Skinner (1953), *Science and Human Behavior*.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_op_definicion_operativa",
+          "nombre": "Definición operativa de la conducta",
+          "texto": "Procedimiento metodológico mediante el cual la conducta se describe en términos observables, medibles y replicables, evitando categorías inferenciales o interpretativas. Definir operativamente la conducta permite su registro sistemático, comparación experimental y análisis funcional preciso, constituyendo un prerrequisito para el estudio científico del comportamiento en el marco del conductismo radical. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_op_medicion_registro",
+          "nombre": "Medición conductual y registro experimental",
+          "texto": "Procedimiento de cuantificación sistemática de la conducta mediante medidas como frecuencia, tasa de respuesta, duración o latencia, con el objetivo de analizar cambios producidos por la manipulación de contingencias. Para Skinner, la medición continua es esencial para establecer relaciones funcionales fiables y distinguir cambios reales de variaciones anecdóticas. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_op_refuerzo_negativo",
+          "nombre": "Refuerzo negativo",
+          "texto": "Procedimiento por el cual una conducta aumenta su frecuencia al producir la retirada, reducción o evitación de un estímulo aversivo. En el análisis skinneriano, el refuerzo negativo explica conductas de escape y evitación sin recurrir a constructos como miedo o ansiedad como causas, situando el control conductual en la historia de contingencias. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_op_retirada_aversivo",
+          "nombre": "Retirada contingente de estímulo aversivo",
+          "texto": "Microintervención mediante la cual una conducta incrementa su probabilidad al producir la retirada o reducción de un estímulo aversivo presente, ejemplificando el mecanismo de refuerzo negativo. Permite analizar conductas de escape sin recurrir a constructos emocionales como causa explicativa primaria. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_saciedad_reforzador",
+          "nombre": "Saciedad del reforzador",
+          "texto": "Microfenómeno por el cual la eficacia de un reforzador disminuye tras su presentación repetida, afectando la tasa de respuesta. Skinner lo describe como una variable motivacional básica dependiente de la historia reciente de reforzamiento. Referencia: Skinner (1953), *Science and Human Behavior*.",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

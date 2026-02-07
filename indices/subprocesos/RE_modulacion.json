@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-07T10:25:30.896Z",
-  "totalModelos": 64,
+  "updatedAt": "2026-02-07T19:27:59.597Z",
+  "totalModelos": 65,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -241,6 +241,57 @@
           "codigo": "m_pavlov_contracondicionamiento_incompatible",
           "nombre": "Aplicar contracondicionamiento con estímulos incompatibles",
           "texto": "Emparejar el EC con experiencias incompatibles con miedo/aversión (o con EI apetitivo) para cambiar valencia aprendida cuando la extinción pura no basta o cuando se busca acelerar cambio afectivo. Referencia: Pavlov (1927).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-operante-skinner-1938",
+      "modelLabel": "Condicionamiento operante",
+      "modelGrupo": "Conductista",
+      "modelAutores": "B. F. Skinner",
+      "modelYear": 1938,
+      "items": [
+        {
+          "codigo": "p_op_extincion",
+          "nombre": "Extinción operante",
+          "texto": "Procedimiento que consiste en la retirada sistemática del reforzador que mantenía una conducta previamente reforzada, produciendo una disminución progresiva de su frecuencia. Skinner describe fenómenos asociados como el aumento transitorio de la respuesta y la variabilidad conductual, subrayando que la extinción no implica olvido, sino cambio en las condiciones de reforzamiento. Referencia: Skinner (1953), *Science and Human Behavior*.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_op_castigo",
+          "nombre": "Castigo",
+          "texto": "Procedimiento mediante el cual la presentación de una consecuencia aversiva o la retirada de un estímulo reforzador reduce la probabilidad futura de una conducta. Skinner analiza el castigo de forma descriptiva y crítica, señalando su eficacia limitada, sus efectos colaterales emocionales y su incapacidad para generar aprendizaje alternativo, lo que lo sitúa como un mecanismo secundario frente al refuerzo. Referencia: Skinner (1953), *Science and Human Behavior*.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_op_omision_reforzador",
+          "nombre": "Omisión del reforzador esperado",
+          "texto": "Microintervención que consiste en no presentar el reforzador previamente contingente a una conducta, generando una disminución progresiva de su frecuencia. Skinner describe esta omisión como el mecanismo elemental de la extinción operante, acompañado de variabilidad y aumento transitorio de respuestas. Referencia: Skinner (1953), *Science and Human Behavior*.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_estallido_extincion",
+          "nombre": "Incremento transitorio de la tasa de respuesta",
+          "texto": "Microfenómeno observado tras la retirada del refuerzo en el que la conducta aumenta temporalmente en frecuencia o intensidad antes de disminuir. Skinner lo describe como parte normal del proceso de extinción y no como resistencia psicológica. Referencia: Skinner (1953), *Science and Human Behavior*.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_consecuencia_aversiva",
+          "nombre": "Presentación de consecuencia aversiva",
+          "texto": "Microintervención mediante la cual una respuesta va seguida de un estímulo aversivo, reduciendo su probabilidad futura. Skinner describe este efecto de supresión conductual y analiza críticamente sus efectos colaterales y su baja utilidad formativa. Referencia: Skinner (1953), *Science and Human Behavior*.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_retirada_reforzador",
+          "nombre": "Retirada de reforzador",
+          "texto": "Microintervención que consiste en retirar un estímulo previamente reforzante tras una conducta, produciendo disminución de su frecuencia. Skinner la incluye dentro del análisis del castigo negativo, señalando su función supresora sin generación de repertorios alternativos. Referencia: Skinner (1953), *Science and Human Behavior*.",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

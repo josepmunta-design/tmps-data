@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-07T10:25:30.896Z",
-  "totalModelos": 71,
+  "updatedAt": "2026-02-07T19:27:59.597Z",
+  "totalModelos": 72,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -620,6 +620,57 @@
           "codigo": "m_pavlov_contracondicionamiento_incompatible",
           "nombre": "Aplicar contracondicionamiento con estímulos incompatibles",
           "texto": "Emparejar el EC con experiencias incompatibles con miedo/aversión (o con EI apetitivo) para cambiar valencia aprendida cuando la extinción pura no basta o cuando se busca acelerar cambio afectivo. Referencia: Pavlov (1927).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "condicionamiento-operante-skinner-1938",
+      "modelLabel": "Condicionamiento operante",
+      "modelGrupo": "Conductista",
+      "modelAutores": "B. F. Skinner",
+      "modelYear": 1938,
+      "items": [
+        {
+          "codigo": "p_op_moldeamiento",
+          "nombre": "Moldeamiento por aproximaciones sucesivas",
+          "texto": "Procedimiento mediante el cual se refuerzan respuestas que se aproximan progresivamente a la conducta objetivo, permitiendo la adquisición de conductas nuevas que no existen inicialmente en el repertorio del organismo. El moldeamiento ilustra el principio de selección conductual gradual y constituye una demostración empírica del poder explicativo del refuerzo. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_op_programas_reforzamiento_simples",
+          "nombre": "Programas simples de reforzamiento",
+          "texto": "Procedimiento experimental que organiza la relación entre respuestas y refuerzos según patrones básicos de razón o intervalo, mostrando cómo distintas contingencias producen tasas de respuesta y resistencias a la extinción diferentes. En el trabajo temprano de Skinner, estos programas sirven para demostrar leyes funcionales del comportamiento, no como técnicas aplicadas. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_op_variacion_respuesta",
+          "nombre": "Variación espontánea de la respuesta",
+          "texto": "Microfenómeno conductual por el cual, ante cambios en las contingencias, el organismo emite respuestas variables que pueden ser seleccionadas por refuerzo. Esta variabilidad no es intencional, sino una propiedad básica del comportamiento operante que permite el moldeamiento gradual. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_refuerzo_aproximaciones",
+          "nombre": "Refuerzo diferencial de aproximaciones",
+          "texto": "Microintervención que refuerza respuestas cada vez más cercanas a la conducta objetivo mientras se deja de reforzar las anteriores, constituyendo la unidad mínima del moldeamiento. Permite comprender cómo se construyen conductas complejas sin planificación consciente del organismo. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_variabilidad_extincion",
+          "nombre": "Variabilidad conductual bajo extinción",
+          "texto": "Microintervención descriptiva en la que, al cesar el refuerzo, el organismo emite respuestas nuevas o inusuales, aumentando la exploración del repertorio. Esta variabilidad es una fuente esencial para la selección de nuevas respuestas por refuerzo. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_op_ajuste_tasa_refuerzo",
+          "nombre": "Ajuste de tasa de reforzamiento",
+          "texto": "Microintervención experimental que modifica la frecuencia con la que el refuerzo sigue a la respuesta, alterando la tasa de emisión conductual. Skinner utiliza este ajuste para demostrar leyes funcionales entre contingencias y comportamiento. Referencia: Skinner (1938), *The Behavior of Organisms*.",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
