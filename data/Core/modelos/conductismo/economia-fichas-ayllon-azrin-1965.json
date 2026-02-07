@@ -22,6 +22,52 @@
   ],
 
   "isFundacional": false,
+"secuencias": [
+  {
+    "id": "te_seq_clasica",
+    "nombre": "Secuencia clásica de economía de fichas",
+    "descripcion": "Secuencia típica de diseño, implementación, mantenimiento y retirada del sistema de economía de fichas en contextos institucionales.",
+    "tipo": "programa",
+    "pasos": [
+      {
+        "orden": 1,
+        "ref": "p_te_definicion_fichas",
+        "refTipo": "procedimiento",
+        "fase": "Diseño"
+      },
+      {
+        "orden": 2,
+        "ref": "p_te_seleccion_conductas",
+        "refTipo": "procedimiento",
+        "fase": "Diseño"
+      },
+      {
+        "orden": 3,
+        "ref": "p_te_criterios_obtencion",
+        "refTipo": "procedimiento",
+        "fase": "Implementación"
+      },
+      {
+        "orden": 4,
+        "ref": "m_te_entrega_inmediata",
+        "refTipo": "micro",
+        "fase": "Implementación"
+      },
+      {
+        "orden": 5,
+        "ref": "p_te_programacion_entrega",
+        "refTipo": "procedimiento",
+        "fase": "Mantenimiento"
+      },
+      {
+        "orden": 6,
+        "ref": "m_te_desvanecimiento_ficha",
+        "refTipo": "micro",
+        "fase": "Retirada"
+      }
+    ]
+  }
+],
 
 "procedimientos": [
 
