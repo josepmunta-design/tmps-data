@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-02-07T21:37:46.191Z",
-  "totalModelos": 30,
+  "updatedAt": "2026-02-07T21:40:29.035Z",
+  "totalModelos": 31,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -346,6 +346,36 @@
           "codigo": "m_coh_logica_sintomatica",
           "nombre": "Preguntas de lógica sintomática",
           "texto": "Microintervención exploratoria basada en preguntas cuidadosamente formuladas que buscan inferir la función adaptativa del síntoma sin confrontarlo directamente. Preguntas como “¿qué problema mayor evita esto?” o “¿qué tendría que ser cierto para que este síntoma fuera necesario?” permiten acceder a la coherencia implícita del síntoma respetando el sistema del paciente. Esta micro reduce resistencia y abre la puerta al descubrimiento experiencial del significado implícito (Ecker, Hulley & Ticic, 2012).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "seq_pcp_ciclo_experiencia_kelly",
+      "modelLabel": "Teoría de los Constructos Personales (PCP)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "George A. Kelly",
+      "modelYear": 1955,
+      "items": [
+        {
+          "codigo": "p_kelly_repgrid",
+          "nombre": "Rejilla de Constructos (Rep Grid)",
+          "texto": "Procedimiento central del PCP. Permite mapear la arquitectura del sistema personal mediante una matriz \nque compara elementos relevantes (personas, roles, situaciones) y elicita constructos bipolares. \nRevela constructos nucleares, conflictos internos, rigidez, discrepancias identitarias y zonas de amenaza, \nofreciendo una representación explícita del significado personal para intervenir sobre él.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kelly_polaridades",
+          "nombre": "Explorar polaridades del constructo",
+          "texto": "Exploración guiada de los dos polos del constructo (por ejemplo, fuerte–débil, autónomo–dependiente), \nbuscando matices intermedios y condiciones en las que cada polo tiene sentido. \nReduce la rigidez semántica y la intensidad emocional asociada.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kelly_perifericos",
+          "nombre": "Extensión de constructos periféricos",
+          "texto": "Microintervención que amplía el campo de aplicación de constructos periféricos (no nucleares), \naumentando la flexibilidad del sistema sin activar amenaza identitaria.",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }
