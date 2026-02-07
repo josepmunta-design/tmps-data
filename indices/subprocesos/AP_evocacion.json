@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-07T20:25:22.735Z",
-  "totalModelos": 25,
+  "updatedAt": "2026-02-07T20:28:14.727Z",
+  "totalModelos": 26,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -152,6 +152,36 @@
           "codigo": "m_bioenergetico_golpeteo",
           "nombre": "Golpeteo con exhalación",
           "texto": "Técnica expresiva que combina movimiento rítmico y exhalación para facilitar la descarga de emociones contenidas, especialmente rabia o frustración, de forma controlada y consciente (Lowen, 1958).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "focusing-gendlin-1961",
+      "modelLabel": "Focusing",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Eugene T. Gendlin",
+      "modelYear": 1961,
+      "items": [
+        {
+          "codigo": "p_focusing_elicitacion_felt_sense",
+          "nombre": "Elicitación del felt sense (formar el sentido corporal global)",
+          "texto": "Procedimiento para formar explícitamente el felt sense: se elige un tema concreto y se invita a notar “cómo se siente todo eso en el cuerpo” como una cualidad global (vaga pero significativa), evitando pasar a explicaciones o emociones sueltas; el objetivo es que la experiencia implícita tome forma suficiente para poder sostenerla y trabajar con ella en sesión. Referencia: Gendlin (1962), *Experiencing and the Creation of Meaning*.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_focusing_cualidad_global",
+          "nombre": "Señalar la cualidad global del malestar",
+          "texto": "Microintervención que invita a notar la sensación corporal total de una situación problemática sin fragmentarla en emociones o pensamientos, favoreciendo la formación inicial del felt sense como una cualidad vaga pero coherente que puede ser sostenida y trabajada. Referencia: Gendlin (1981), *Focusing*.",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_focusing_imagenes_espontaneas",
+          "nombre": "Usar imágenes espontáneas emergentes",
+          "texto": "Intervención que acoge imágenes simbólicas que surgen del felt sense como vías de acceso al significado implícito, sin interpretarlas, permitiendo que guíen el proceso experiencial. Referencia: Gendlin (1962), *Experiencing and the Creation of Meaning*.",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }
