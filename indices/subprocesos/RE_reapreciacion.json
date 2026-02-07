@@ -1,8 +1,59 @@
 {
   "subprocesoId": "RE_reapreciacion",
-  "updatedAt": "2026-02-05T20:34:05.231Z",
-  "totalModelos": 14,
+  "updatedAt": "2026-02-07T08:31:37.195Z",
+  "totalModelos": 15,
   "modelos": [
+    {
+      "modelId": "rebt-terapia-racional-emotiva-ellis",
+      "modelLabel": "Terapia racional emotiva conductual (REBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Albert Ellis",
+      "modelYear": 1955,
+      "items": [
+        {
+          "codigo": "p_rebt_abcde",
+          "nombre": "Modelo A-B-C-D-E",
+          "texto": "Andamiaje central de REBT: A (activador), B (creencias), C (consecuencia), D (disputa), E (efecto racional). Permite localizar el punto exacto del sistema donde aparece la irracionalidad y construir una alternativa flexible.\n(Referencia: Ellis, A. (1962). *Reason and Emotion in Psychotherapy*. Lyle Stuart.)",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_rebt_disputaAvanzada",
+          "nombre": "Disputa racional avanzada",
+          "texto": "Método intensivo que combina: disputa lógica, empírica, pragmática, semántica, funcional y metafórica. Ayuda a deshacer creencias irracionales complejas y resilientes.\n(Referencia: Ellis & Dryden, 1997, *The Practice of Rational Emotive Behavior Therapy*.)",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_rebt_humor",
+          "nombre": "Entrenamiento en humor racional",
+          "texto": "Uso clínicamente guiado del humor para romper dramatización, literalismo emocional y absolutismo.\n(Referencia: Ellis & Dryden, 1997.)",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_rebt_semantica",
+          "nombre": "Disputa semántica",
+          "texto": "Análisis del lenguaje absolutista (“terrible”, “horrible”, “debo”) para sustituirlo por formulaciones racionales.\n(Referencia: Ellis, 1962.)",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_rebt_humor",
+          "nombre": "Desdramatización humorística",
+          "texto": "Uso de humor racional para romper dramatización y absolutismo emocional.\n(Referencia: Ellis, 1962.)",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_rebt_molesto",
+          "nombre": "Técnica del “no es terrible, es molesto”",
+          "texto": "Reclasificación emocional para reducir catastrofismo y modular intensidad.\n(Referencia: Ellis & Dryden, 1997.)",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "relajacion-jacobson-benson",
       "modelLabel": "Técnicas de relajación (Jacobson, Benson)",
