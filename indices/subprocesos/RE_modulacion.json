@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-07T19:43:50.540Z",
-  "totalModelos": 66,
+  "updatedAt": "2026-02-07T19:48:50.807Z",
+  "totalModelos": 67,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -292,6 +292,43 @@
           "codigo": "m_op_retirada_reforzador",
           "nombre": "Retirada de reforzador",
           "texto": "Microintervención que consiste en retirar un estímulo previamente reforzante tras una conducta, produciendo disminución de su frecuencia. Skinner la incluye dentro del análisis del castigo negativo, señalando su función supresora sin generación de repertorios alternativos. Referencia: Skinner (1953), *Science and Human Behavior*.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "economia-fichas-ayllon-azrin-1965",
+      "modelLabel": "Economía de fichas",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Teodoro Ayllon; Nathan Azrin",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "p_te_programacion_entrega",
+          "nombre": "Programación de la entrega de fichas",
+          "texto": "Procedimiento que organiza la frecuencia, cantidad y patrón temporal de entrega de fichas en función de la conducta emitida, incorporando principios de programas de refuerzo. Aunque el diseño es del terapeuta, el patrón resultante configura directamente la experiencia contingente del sujeto. Referencia: Ayllon & Azrin (1968), *The Token Economy*.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_te_costo_respuesta",
+          "nombre": "Aplicación de costos de respuesta",
+          "texto": "Procedimiento en el que se retiran fichas previamente obtenidas como consecuencia contingente a conductas no deseadas, reduciendo su probabilidad futura. Ayllon y Azrin describen el costo de respuesta como una forma controlada de castigo negativo integrada dentro del sistema de fichas. Referencia: Ayllon & Azrin (1968), *The Token Economy*.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_te_acumulacion_visible",
+          "nombre": "Acumulación visible de fichas",
+          "texto": "Microfenómeno por el cual las fichas obtenidas se mantienen visibles para el sujeto, incrementando su valor motivacional y modulando la persistencia conductual. La visibilidad refuerza la relación entre esfuerzo previo y consecuencias futuras. Referencia: Ayllon & Azrin (1968), *The Token Economy*.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_te_retirada_fichas",
+          "nombre": "Retirada contingente de fichas",
+          "texto": "Microintervención consistente en la retirada de fichas como consecuencia inmediata de conductas no deseadas, reduciendo su probabilidad futura mediante castigo negativo. Ayllon y Azrin describen esta operación como parte integrada del sistema, no como intervención aislada. Referencia: Ayllon & Azrin (1968), *The Token Economy*.",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

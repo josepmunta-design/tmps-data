@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_motivacionInterna",
-  "updatedAt": "2026-02-07T19:43:50.540Z",
-  "totalModelos": 18,
+  "updatedAt": "2026-02-07T19:48:50.807Z",
+  "totalModelos": 19,
   "modelos": [
     {
       "modelId": "analisis-funcional-clinico-kanfer-saslow-1969",
@@ -88,6 +88,29 @@
           "codigo": "m_op_privacion_reforzador",
           "nombre": "Privación del reforzador",
           "texto": "Microfenómeno que incrementa el valor reforzante de un estímulo tras un periodo sin acceso a él, aumentando la probabilidad de respuestas asociadas. Skinner lo considera un determinante motivacional básico del comportamiento operante. Referencia: Skinner (1938), *The Behavior of Organisms*.",
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "economia-fichas-ayllon-azrin-1965",
+      "modelLabel": "Economía de fichas",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Teodoro Ayllon; Nathan Azrin",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "p_te_implementacion_canje",
+          "nombre": "Implementación del canje de fichas",
+          "texto": "Procedimiento mediante el cual el sujeto intercambia fichas acumuladas por reforzadores de respaldo, experimentando la relación entre esfuerzo conductual y acceso a consecuencias valiosas. Este momento consolida el valor de las fichas como reforzadores generalizados. Referencia: Ayllon & Azrin (1968), *The Token Economy*.",
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_te_canje_reforzadores",
+          "nombre": "Canje de fichas por reforzadores de respaldo",
+          "texto": "Microintervención en la que el sujeto intercambia fichas acumuladas por bienes, privilegios o actividades, consolidando el valor de las fichas como reforzadores generalizados. El canje es el momento en que la relación simbólica se traduce en consecuencias tangibles. Referencia: Ayllon & Azrin (1968), *The Token Economy*.",
           "sub": "AG_motivacionInterna",
           "tipo": "micro"
         }
