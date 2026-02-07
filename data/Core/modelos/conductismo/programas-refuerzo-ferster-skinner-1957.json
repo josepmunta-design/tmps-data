@@ -1,0 +1,220 @@
+{
+  "id": "programas-refuerzo-ferster-skinner-1957",
+  "grupo": "Conductismo",
+  "label": "Programas de refuerzo",
+  "year": 1957,
+  "importance": 2,
+
+  "autores": "C. B. Ferster; B. F. Skinner",
+  "universidad": "Harvard University",
+  "ciudad": "Cambridge, Massachusetts",
+  "pais": "EE. UU.",
+  "lat": 42.377003,
+  "lon": -71.116660,
+
+  "isFundacional": true,
+
+  "descripcion": "El estudio de los programas de refuerzo analiza cómo distintas relaciones temporales y cuantitativas entre respuestas y consecuencias —razón o intervalo, fijos o variables— generan patrones característicos de conducta, como tasas altas y estables de respuesta, pausas post-refuerzo o mayor resistencia a la extinción. Ferster y Skinner demuestran que la conducta no solo depende de la presencia del refuerzo, sino de su programación, estableciendo leyes funcionales que explican la persistencia, regularidad y vulnerabilidad del comportamiento operante en contextos naturales y experimentales.",
+
+  "influencias": [
+    "Condicionamiento operante (Skinner)",
+    "Psicología experimental",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "refs": [
+    "Ferster, C. B., & Skinner, B. F. (1957). Schedules of Reinforcement."
+  ],
+"neimeyer": {
+
+  "epistemologico": "Concepción de la realidad psicológica\nLa realidad psicológica se entiende como un conjunto de relaciones funcionales entre la conducta observable y las contingencias ambientales que la seleccionan. Los patrones conductuales son hechos empíricos explicables por la estructura objetiva de los programas de reforzamiento, sin recurrir a constructos mentales causales.\n\nConcepción del conocimiento terapéutico\nEl conocimiento se produce mediante análisis experimental riguroso de variables independientes (programas de reforzamiento) y sus efectos sistemáticos sobre la conducta. La validez del conocimiento depende de la replicabilidad y del control de las contingencias, no de la interpretación subjetiva del significado.\n\nConcepción del ser humano y del cambio\nEl ser humano es un organismo cuya conducta se ajusta de manera sensible a la programación del refuerzo. El cambio psicológico se explica por la modificación de la estructura temporal y cuantitativa de las contingencias, que reorganiza los patrones de respuesta sin requerir insight ni intención consciente.\n\nRol de la relación terapéutica\nLa relación no constituye un principio epistemológico del cambio. En este marco, es irrelevante o instrumental, en tanto que solo adquiere importancia si funciona como estímulo discriminativo o fuente de consecuencias dentro de un programa de reforzamiento.",
+
+  "teoriaFormal": "Qué es el self\nEl self no se conceptualiza como entidad psicológica con poder causal. Es entendido como una descripción verbal de regularidades conductuales mantenidas por contingencias sociales. No participa como mecanismo explicativo del ajuste conductual.\n\nCómo se explica el cambio\nEl cambio se explica como una reorganización de la tasa, estabilidad y persistencia de la conducta producida por diferentes programas de reforzamiento. La programación (razón/intervalo; fija/variable) determina patrones predecibles de respuesta, resistencia a la extinción y sensibilidad a cambios ambientales.\n\nQué mantiene el sufrimiento\nEl sufrimiento psicológico se mantiene por historias de programación del refuerzo que estabilizan conductas desadaptativas o excesivamente persistentes. La continuidad del problema no se atribuye a conflictos internos, sino a contingencias previas que siguen seleccionando el patrón conductual.",
+
+  "teoriaClinica": "Cómo se conceptualiza el caso\nEl caso se conceptualiza como un patrón estable de respuesta mantenido por un tipo específico de programación del refuerzo. El análisis se centra en identificar qué programa está operando (p. ej., variable vs. fijo) y cómo este organiza la conducta en términos de tasa, regularidad y persistencia.\n\nQué procesos terapéuticos se priorizan\nSe priorizan procesos de análisis de la programación del refuerzo y de sus efectos funcionales sobre la conducta, con el objetivo de comprender por qué ciertos patrones son altamente resistentes o sensibles a la extinción. No se prioriza la exploración emocional ni cognitiva.\n\nCómo se evalúa el progreso terapéutico\nEl progreso se evalúa mediante cambios observables en los patrones de respuesta —tasa, estabilidad, variabilidad y resistencia a la extinción— tras modificaciones en la programación del refuerzo. La evaluación es continua, objetiva y basada en datos conductuales."
+},
+
+ "procedimientos": [
+
+  {
+    "nombre": "Programación de razón fija (FR)",
+    "codigo": "p_pr_fr",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Procedimiento experimental en el que el refuerzo se administra tras un número fijo de respuestas, produciendo tasas altas de respuesta con pausas post-refuerzo características. Ferster y Skinner describen cómo este patrón refleja la sensibilidad de la conducta a la exigencia de respuesta y permite analizar la relación entre esfuerzo, pausa y persistencia conductual. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Programación de razón variable (VR)",
+    "codigo": "p_pr_vr",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Procedimiento en el que el refuerzo se entrega tras un número variable e impredecible de respuestas, generando tasas muy altas y estables de conducta con mínima pausa post-refuerzo. Ferster y Skinner muestran que esta programación maximiza la resistencia a la extinción y explica la persistencia conductual en ausencia de refuerzo inmediato. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Programación de intervalo fijo (FI)",
+    "codigo": "p_pr_fi",
+    "procesos": ["N_metacognicion"],
+    "texto": "Procedimiento en el que el primer comportamiento emitido tras un intervalo temporal fijo es reforzado, produciendo el patrón típico de aceleración progresiva de la respuesta conforme se aproxima el momento del refuerzo. Este patrón, conocido como ‘scalloping’, ilustra cómo el tiempo funciona como variable de control conductual independiente del número de respuestas. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Programación de intervalo variable (VI)",
+    "codigo": "p_pr_vi",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Procedimiento en el que el refuerzo se hace disponible tras intervalos temporales variables e impredecibles, reforzando la primera respuesta emitida después de cada intervalo. Ferster y Skinner describen cómo este tipo de programación genera tasas moderadas pero muy estables de respuesta, con alta resistencia a la extinción. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Programas mixtos de reforzamiento",
+    "codigo": "p_pr_mixtos",
+    "procesos": ["N_metacognicion"],
+    "texto": "Procedimiento experimental en el que dos o más programas de reforzamiento se alternan sin señales discriminativas claras, permitiendo analizar cómo la conducta se ajusta a cambios no señalizados en las contingencias. Ferster y Skinner utilizan estos programas para estudiar la sensibilidad conductual a variaciones encubiertas del entorno. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Programas múltiples de reforzamiento",
+    "codigo": "p_pr_multiples",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Procedimiento en el que distintos programas de reforzamiento se alternan de forma señalizada mediante estímulos discriminativos, permitiendo observar cambios sistemáticos en la tasa de respuesta según el contexto. Este diseño muestra cómo el comportamiento queda bajo control conjunto de programación y estímulos antecedentes. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Programas concurrentes",
+    "codigo": "p_pr_concurrentes",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Procedimiento en el que dos o más programas de reforzamiento están disponibles simultáneamente, permitiendo al organismo distribuir su conducta entre alternativas. Ferster y Skinner utilizan estos programas para analizar la asignación relativa de respuestas en función de las contingencias, sentando las bases del estudio experimental de la elección. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Programas en tándem",
+    "codigo": "p_pr_tandem",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Procedimiento que combina dos o más programas de reforzamiento de forma secuencial sin estímulos discriminativos que señalen el cambio entre componentes. Permite analizar cómo la conducta se ajusta a secuencias de exigencias cuando el control contextual es mínimo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Programas encadenados",
+    "codigo": "p_pr_encadenados",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Procedimiento en el que dos o más programas se presentan secuencialmente con estímulos discriminativos distintos para cada componente, de modo que completar uno da acceso al siguiente. Ferster y Skinner lo utilizan para estudiar secuencias conductuales complejas bajo control explícito de señales ambientales. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Análisis de resistencia a la extinción",
+    "codigo": "p_pr_resistencia_extincion",
+    "procesos": ["RE_modulacion"],
+    "texto": "Procedimiento analítico que examina cómo distintos programas de reforzamiento influyen en la persistencia de la conducta cuando el refuerzo se retira. Ferster y Skinner muestran que la programación previa del refuerzo es un determinante clave de la vulnerabilidad o persistencia conductual ante la extinción. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  }
+
+],
+
+
+ "micros": [
+
+  {
+    "nombre": "Pausa post-refuerzo",
+    "codigo": "m_pr_pausa_postrefuerzo",
+    "procesos": ["RE_modulacion"],
+    "texto": "Microfenómeno conductual caracterizado por una interrupción temporal de la respuesta inmediatamente después de la entrega del refuerzo, especialmente pronunciado en programas de razón fija. Ferster y Skinner describen esta pausa como función directa de la programación del refuerzo y no como fatiga o decisión del organismo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Alta tasa de respuesta sostenida",
+    "codigo": "m_pr_alta_tasa_respuesta",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Microfenómeno observado principalmente en programas de razón variable, donde la conducta se mantiene a tasas muy elevadas y estables debido a la imprevisibilidad del refuerzo. Ferster y Skinner muestran que esta estabilidad no depende de motivación interna, sino de la estructura de contingencias. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Scalloping (aceleración progresiva)",
+    "codigo": "m_pr_scalloping",
+    "procesos": ["N_metacognicion"],
+    "texto": "Patrón microconductual típico de los programas de intervalo fijo, caracterizado por una baja tasa de respuesta tras el refuerzo seguida de una aceleración gradual conforme se aproxima el siguiente intervalo reforzable. Este patrón ilustra el control temporal ejercido por el programa de reforzamiento. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Estabilidad conductual bajo intervalo variable",
+    "codigo": "m_pr_estabilidad_vi",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Microfenómeno por el cual los programas de intervalo variable generan tasas de respuesta moderadas pero altamente estables, con mínima variabilidad y gran resistencia a cambios momentáneos en el entorno. Ferster y Skinner lo utilizan para mostrar la robustez del control por contingencias temporales impredecibles. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Resistencia diferencial a la extinción",
+    "codigo": "m_pr_resistencia_extincion",
+    "procesos": ["RE_modulacion"],
+    "texto": "Microfenómeno que describe cómo la persistencia de la conducta durante la extinción depende de la historia previa de programación del refuerzo, siendo mayor tras programas variables que tras programas fijos. Ferster y Skinner demuestran que la extinción no es un proceso uniforme, sino dependiente de contingencias previas. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Cambio abrupto de tasa por transición de programa",
+    "codigo": "m_pr_cambio_tasa_transicion",
+    "procesos": ["N_metacognicion"],
+    "texto": "Microfenómeno observado cuando se altera el tipo de programa de reforzamiento, produciendo modificaciones inmediatas en la tasa y patrón de respuesta. Ferster y Skinner emplean estas transiciones para demostrar la sensibilidad del comportamiento a cambios estructurales en las contingencias. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Control discriminativo de la tasa de respuesta",
+    "codigo": "m_pr_control_discriminativo_tasa",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Microfenómeno en el que estímulos asociados a distintos programas de reforzamiento modulan de forma diferencial la tasa de respuesta, permitiendo que el organismo ajuste su conducta según el contexto señalizado. Este efecto muestra la interacción entre programación del refuerzo y estímulos discriminativos. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Distribución de respuestas entre alternativas",
+    "codigo": "m_pr_distribucion_respuestas",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Microfenómeno observado en programas concurrentes en el que el organismo reparte su conducta entre distintas opciones de respuesta en función de las contingencias relativas de refuerzo. Ferster y Skinner describen este reparto como un ajuste funcional, sin apelar a procesos deliberativos internos. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "nombre": "Persistencia conductual sin refuerzo inmediato",
+    "codigo": "m_pr_persistencia_sin_refuerzo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Microfenómeno por el cual la conducta se mantiene activa durante periodos prolongados sin refuerzo inmediato, especialmente bajo programas variables. Ferster y Skinner muestran que esta persistencia es una propiedad emergente de la programación previa del refuerzo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  }
+
+],
+
+
+"ideasPrincipales": [
+
+  {
+    "id": "pr_idea_1",
+    "titulo": "La conducta depende de cómo se programa el refuerzo, no solo de su presencia",
+    "desarrollo": "Ferster y Skinner muestran que no basta con reforzar una conducta: la relación temporal y cuantitativa entre respuesta y consecuencia determina patrones específicos de comportamiento. La programación del refuerzo es una variable crítica que explica diferencias en tasa de respuesta, regularidad y persistencia conductual más allá del simple refuerzo ocasional. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "id": "pr_idea_2",
+    "titulo": "Distintos programas generan patrones de respuesta predecibles",
+    "desarrollo": "Cada tipo de programa de reforzamiento produce configuraciones conductuales características —pausas post-refuerzo, aceleraciones progresivas o tasas estables— que pueden anticiparse y describirse funcionalmente. Estos patrones no reflejan rasgos del organismo, sino la estructura objetiva de las contingencias. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "id": "pr_idea_3",
+    "titulo": "La resistencia a la extinción depende de la historia de programación",
+    "desarrollo": "La persistencia de la conducta cuando el refuerzo se retira no es uniforme, sino función directa del programa bajo el cual fue adquirida. Los programas variables producen mayor resistencia a la extinción que los programas fijos, demostrando que la vulnerabilidad conductual está determinada por contingencias previas y no por fuerza de voluntad. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "id": "pr_idea_4",
+    "titulo": "El tiempo puede controlar la conducta independientemente del número de respuestas",
+    "desarrollo": "Los programas de intervalo revelan que el comportamiento puede quedar regulado por variables temporales, generando patrones como el scalloping en intervalos fijos. Esto demuestra que la tasa de respuesta no depende únicamente del esfuerzo emitido, sino del control temporal ejercido por la programación del refuerzo. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "id": "pr_idea_5",
+    "titulo": "La variabilidad y estabilidad conductual son productos de la programación",
+    "desarrollo": "La regularidad o variabilidad de la conducta emerge de la estructura del programa de reforzamiento y no de estados internos fluctuantes. Programas variables generan estabilidad sostenida, mientras que programas fijos producen oscilaciones predecibles, evidenciando el poder explicativo de las contingencias. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  },
+
+  {
+    "id": "pr_idea_6",
+    "titulo": "El comportamiento se ajusta rápidamente a cambios en las contingencias",
+    "desarrollo": "Las transiciones entre distintos programas de reforzamiento producen cambios inmediatos en la tasa y patrón de respuesta, mostrando la alta sensibilidad del comportamiento a la estructura del entorno. Este ajuste rápido refuerza la tesis de que el control conductual reside en las contingencias y no en procesos deliberativos internos. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*."
+  }
+
+]
+
+}
