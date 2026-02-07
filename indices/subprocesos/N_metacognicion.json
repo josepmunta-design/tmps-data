@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-07T10:24:57.423Z",
-  "totalModelos": 71,
+  "updatedAt": "2026-02-07T10:25:30.896Z",
+  "totalModelos": 72,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -58,6 +58,50 @@
           "codigo": "m_cft_repair_after_relapse",
           "nombre": "Reparación rápida tras recaída en autocrítica",
           "texto": "Protocolo breve: (1) notar crítica, (2) validar emoción, (3) una frase compasiva firme, (4) una acción pequeña de cuidado. Evita espiral secundaria de vergüenza.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rebt-terapia-racional-emotiva-ellis",
+      "modelLabel": "Terapia racional emotiva conductual (REBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Albert Ellis",
+      "modelYear": 1955,
+      "items": [
+        {
+          "codigo": "p_rebt_disputaAvanzada",
+          "nombre": "Disputa racional avanzada",
+          "texto": "Método intensivo que combina: disputa lógica, empírica, pragmática, semántica, funcional y metafórica. Ayuda a deshacer creencias irracionales complejas y resilientes.\n(Referencia: Ellis & Dryden, 1997, *The Practice of Rational Emotive Behavior Therapy*.)",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_rebt_logico",
+          "nombre": "Debate lógico",
+          "texto": "Identificar contradicciones internas en la creencia irracional mediante preguntas socráticas.\n(Referencia: Ellis, 1962.)",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_rebt_empirico",
+          "nombre": "Debate empírico",
+          "texto": "Examinar evidencias reales a favor y en contra de la creencia para mostrar que no se sostiene.\n(Referencia: Ellis & Dryden, 1997.)",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_rebt_prediccion",
+          "nombre": "Predicciones alternativas racionales",
+          "texto": "Generar resultados alternativos realistas frente a predicciones catastróficas.\n(Referencia: DiGiuseppe et al., 2014.)",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_rebt_demanda",
+          "nombre": "Identificación de demandas irracionales",
+          "texto": "Detectar exigencias absolutistas (“debo hacerlo perfecto”, “no puedo fallar”) y convertirlas en preferencias.\n(Referencia: Ellis, 1962.)",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
