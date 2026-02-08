@@ -1,0 +1,243 @@
+{
+  "id": "freud-modelo-topografico-1900",
+  "grupo": "Psicoanálisis",
+  "label": "Modelo topográfico",
+  "year": 1900,
+  "importance": 2,
+  "autores": "Sigmund Freud",
+  "universidad": "Universidad de Viena",
+  "ciudad": "Viena",
+  "pais": "Austria",
+  "lat": 48.208174,
+  "lon": 16.373819,
+
+  "descripcion": "El modelo topográfico distingue tres sistemas de la mente: consciente, preconsciente e inconsciente. Propone que gran parte de la vida psíquica opera fuera de la conciencia y se manifiesta simbólicamente en sueños, lapsus y síntomas. Introduce el método interpretativo para acceder al contenido latente del material manifiesto. Representa el primer intento de cartografiar el funcionamiento mental y establecer la noción de conflicto intrapsíquico como motor de la vida psicológica.",
+
+  "influencias": [
+    "Psicoanálisis clásico",
+    "Interpretación de los sueños",
+    "Filosofía de la mente",
+    "Empirismo objetivista / Positivismo lógico",
+    "Fenomenología / Hermenéutica"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "",
+    "teoriaFormal": "",
+    "teoriaClinica": ""
+  },
+
+  "mjps": ["RF", "RE", "AP", "RI", "N", "I"],
+
+"procedimientos": [
+  {
+    "nombre": "Asociación libre",
+    "codigo": "p_freud_topo_asociacion_libre",
+    "procesos": ["AP_evocacion", "N_insightPsicodinamico"],
+    "texto": "Procedimiento fundamental del modelo topográfico mediante el cual el paciente verbaliza pensamientos, imágenes, recuerdos y afectos sin censura deliberada, permitiendo que emerjan contenidos inconscientes a través de encadenamientos asociativos. La asociación libre reduce el control consciente del pensamiento y facilita el acceso a material reprimido que se expresa de forma indirecta, haciendo visible la dinámica entre inconsciente, preconsciente y consciente. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Interpretación del contenido manifiesto y latente",
+    "codigo": "p_freud_topo_interpretacion_latente",
+    "procesos": ["N_insightPsicodinamico"],
+    "texto": "Procedimiento interpretativo que distingue entre el contenido manifiesto (lo que aparece directamente en sueños, lapsus o relatos) y el contenido latente (los deseos, conflictos y significados inconscientes subyacentes). El trabajo clínico consiste en traducir el material manifiesto a su sentido latente mediante asociaciones, revelando el conflicto intrapsíquico que permanece fuera de la conciencia. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Análisis de sueños",
+    "codigo": "p_freud_topo_suenos",
+    "procesos": ["AP_evocacion", "N_insightPsicodinamico"],
+    "texto": "Procedimiento privilegiado de acceso al inconsciente que explora los sueños como formaciones simbólicas donde se expresan deseos reprimidos. Se analizan los mecanismos del trabajo del sueño —condensación, desplazamiento, figurabilidad y elaboración secundaria— para reconstruir el contenido latente y comprender la lógica inconsciente que organiza el conflicto psíquico. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Análisis de lapsus y actos fallidos",
+    "codigo": "p_freud_topo_lapsus",
+    "procesos": ["N_insightPsicodinamico"],
+    "texto": "Procedimiento clínico que utiliza errores cotidianos aparentemente accidentales (lapsus linguae, olvidos, equivocaciones) como vías de expresión del inconsciente. Estos fenómenos se entienden como irrupciones de contenidos reprimidos en la conciencia, permitiendo acceder al conflicto sin necesidad de evocación directa del material. Referencia: Freud, S. (1901). *The Psychopathology of Everyday Life*."
+  },
+  {
+    "nombre": "Atención flotante del analista",
+    "codigo": "p_freud_topo_atencion_flotante",
+    "procesos": ["N_metacognicion"],
+    "texto": "Procedimiento técnico complementario a la asociación libre por el cual el terapeuta evita focalizar selectivamente la atención, manteniendo una escucha abierta y no dirigida. Esta postura permite captar resonancias, repeticiones y conexiones significativas entre contenidos conscientes y preconscientes del discurso del paciente, favoreciendo inferencias sobre el material inconsciente. Referencia: Freud, S. (1912). *Recommendations to Physicians Practising Psycho-Analysis*."
+  },
+  {
+    "nombre": "Señalamiento de resistencias a la conciencia",
+    "codigo": "p_freud_topo_resistencias",
+    "procesos": ["N_insightPsicodinamico", "RE_modulacion"],
+    "texto": "Procedimiento orientado a identificar y señalar los obstáculos que impiden el paso de contenidos inconscientes a la conciencia, como silencios, olvidos, racionalizaciones o cambios bruscos de tema. El trabajo clínico no fuerza el acceso, sino que hace consciente la resistencia misma, permitiendo que el paciente reconozca la función defensiva de estos bloqueos. Referencia: Freud, S. (1914). *Remembering, Repeating and Working-Through*."
+  },
+  {
+    "nombre": "Reconstrucción interpretativa del conflicto intrapsíquico",
+    "codigo": "p_freud_topo_reconstruccion_conflicto",
+    "procesos": ["N_insightPsicodinamico", "I_continuidadBiografica"],
+    "texto": "Procedimiento mediante el cual el terapeuta integra asociaciones, sueños, lapsus y resistencias para reconstruir el conflicto inconsciente que organiza el sufrimiento del paciente. Esta reconstrucción no es narrativa histórica exacta, sino una hipótesis clínica funcional que conecta pasado y presente y amplía la comprensión consciente del funcionamiento psíquico. Referencia: Freud, S. (1900); Freud, S. (1914)."
+  },
+
+  {
+    "nombre": "Elicitación sistemática de asociaciones al sueño (cadena asociativa onírica)",
+    "codigo": "p_freud_topo_asociaciones_sueno",
+    "procesos": ["AP_evocacion", "N_insightPsicodinamico"],
+    "texto": "Procedimiento específico dentro del trabajo con sueños que consiste en pedir asociaciones libres a cada elemento del contenido manifiesto (escena, personaje, objeto, palabra, afecto) para reconstruir el material latente sin imponer significados prefabricados; el objetivo es seguir la lógica asociativa que conecta el sueño con deseos, recuerdos y conflictos inconscientes, evitando lecturas simbólicas universales no sustentadas por las asociaciones del paciente. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Análisis del trabajo del sueño (censura y mecanismos de deformación)",
+    "codigo": "p_freud_topo_trabajo_del_sueno",
+    "procesos": ["N_metacognicion", "N_insightPsicodinamico"],
+    "texto": "Procedimiento centrado en identificar cómo el contenido latente se transforma en contenido manifiesto mediante el trabajo del sueño (condensación, desplazamiento, figurabilidad y elaboración secundaria) y la acción de la censura; en lugar de buscar “qué significa” directamente el sueño, se analiza “cómo se deformó” para poder inferir qué contenidos inconscientes necesitaban disfraz. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Registro y trabajo continuado con material onírico (serie de sueños)",
+    "codigo": "p_freud_topo_registro_suenos",
+    "procesos": ["AP_evocacion", "N_narrativaAutobiografica"],
+    "texto": "Procedimiento de continuidad clínica que invita a registrar sueños o a reconstruirlos con el máximo detalle posible para trabajar con series oníricas a lo largo del tiempo, detectando temas repetidos, desplazamientos de escena, cambios afectivos y asociaciones recurrentes; esto permite observar la persistencia del conflicto intrapsíquico y su evolución sin convertir el sueño en un “evento aislado” interpretado de una vez. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Análisis de olvidos, pérdidas y equivocaciones en la vida cotidiana",
+    "codigo": "p_freud_topo_olvidos_equivocaciones",
+    "procesos": ["N_insightPsicodinamico"],
+    "texto": "Procedimiento que amplía el trabajo con lapsus a fenómenos cotidianos como olvidar nombres, perder objetos, confundir citas o “olvidar” tareas, explorándolos como actos psíquicos con determinantes inconscientes y no como simples fallos atencionales; se trabaja mediante asociación sobre el contexto y el contenido del olvido para acceder al conflicto que empuja fuera de la conciencia cierta intención, afecto o representación. Referencia: Freud, S. (1901). *The Psychopathology of Everyday Life*."
+  },
+  {
+    "nombre": "Trabajo con recuerdos encubridores (screen memories)",
+    "codigo": "p_freud_topo_recuerdos_encubridores",
+    "procesos": ["AP_evocacion", "N_insightPsicodinamico"],
+    "texto": "Procedimiento que explora recuerdos infantiles muy vívidos pero aparentemente triviales como posibles formaciones encubridoras que sustituyen o disfrazan contenidos más conflictivos; se investiga su composición, afecto asociado, escenas contiguas y asociaciones actuales para inferir qué material inconsciente queda protegido por ese recuerdo y cómo se mantiene fuera de la conciencia. Referencia: Freud, S. (1899). *Screen Memories*."
+  },
+  {
+    "nombre": "Interpretación de síntomas como retorno de lo reprimido (vía topográfica)",
+    "codigo": "p_freud_topo_sintoma_retorno_reprimido",
+    "procesos": ["N_insightPsicodinamico", "RE_rotulacion"],
+    "texto": "Procedimiento interpretativo que conceptualiza el síntoma como un modo indirecto en que contenidos inconscientes intentan acceder a la conciencia, encontrando resistencia y expresándose de forma disfrazada; el trabajo consiste en seguir las asociaciones del síntoma (cuándo aparece, qué evita, qué significa, qué escena lo activa) para reconstruir su sentido latente y ampliar la conciencia del conflicto que lo sostiene sin saltar a explicaciones estructurales de instancias. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Trabajo interpretativo con “ocurrencias” y asociaciones preconscientes",
+    "codigo": "p_freud_topo_preconsciente_ocurrencias",
+    "procesos": ["N_metacognicion", "N_insightPsicodinamico"],
+    "texto": "Procedimiento que presta atención clínica a ideas fugaces, formulaciones a medias, cambios de tono, chistes espontáneos o imágenes repentinas como material preconsciente en tránsito, explorándolos antes de que sean racionalizados o descartados; permite captar el momento en que el inconsciente intenta hacerse representable y observar la acción de la censura en tiempo real. Referencia: Freud, S. (1912). *Recommendations to Physicians Practising Psycho-Analysis*."
+  },
+  {
+    "nombre": "Interpretación de chistes e ingenio como vía al inconsciente",
+    "codigo": "p_freud_topo_chistes_ingenio",
+    "procesos": ["N_insightPsicodinamico", "RE_modulacion"],
+    "texto": "Procedimiento que analiza chistes, juegos de palabras e “ingenios” del paciente como formaciones donde el inconsciente logra expresión indirecta mediante condensación, desplazamiento y desinhibición momentánea; se exploran asociaciones al chiste, su afecto (placer, vergüenza, hostilidad) y su contexto para inferir el contenido latente que pudo emerger bajo menor censura. Referencia: Freud, S. (1905). *Jokes and Their Relation to the Unconscious*."
+  }
+],
+
+
+"micros": [
+  {
+    "nombre": "Invitación a asociar sin dirección",
+    "codigo": "m_freud_topo_invitar_asociar",
+    "procesos": ["AP_evocacion"],
+    "texto": "Intervención mínima en la que el terapeuta invita al paciente a decir lo primero que le venga a la mente sin orientar el contenido, reduciendo la censura consciente y favoreciendo el tránsito de material desde el inconsciente al preconsciente. Su valor clínico reside en desactivar el control voluntario del pensamiento sin confrontación directa. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Señalamiento de un silencio significativo",
+    "codigo": "m_freud_topo_silencio",
+    "procesos": ["N_insightPsicodinamico", "RE_modulacion"],
+    "texto": "Microintervención que nombra un silencio, bloqueo o pausa prolongada como dato clínico relevante, sugiriendo que algo difícil de pensar o decir puede estar operando fuera de la conciencia. Facilita curiosidad y reduce ansiedad sin forzar la verbalización inmediata del contenido. Referencia: Freud, S. (1914). *Remembering, Repeating and Working-Through*."
+  },
+  {
+    "nombre": "Exploración inmediata de una ocurrencia",
+    "codigo": "m_freud_topo_ocurrencia",
+    "procesos": ["AP_evocacion", "N_metacognicion"],
+    "texto": "Intervención breve que detiene el discurso para explorar una idea, imagen o palabra recién aparecida, antes de que sea racionalizada o descartada. Permite captar material preconsciente en tránsito y ampliar el acceso al significado latente. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Lectura de un lapsus en el momento",
+    "codigo": "m_freud_topo_lapsus_momento",
+    "procesos": ["N_insightPsicodinamico"],
+    "texto": "Microintervención que toma un lapsus, error verbal u olvido inmediato como indicio de un contenido inconsciente activo, invitando a asociar sobre él sin imponer interpretación cerrada. Facilita acceso indirecto al conflicto con bajo nivel de amenaza. Referencia: Freud, S. (1901). *The Psychopathology of Everyday Life*."
+  },
+  {
+    "nombre": "Pregunta asociativa abierta",
+    "codigo": "m_freud_topo_pregunta_abierta",
+    "procesos": ["AP_evocacion"],
+    "texto": "Pregunta breve del tipo “¿qué le viene ahora a la mente con esto?” utilizada para mantener el flujo asociativo cuando el discurso se empobrece o se intelectualiza. Refuerza la exploración sin introducir contenido externo ni dirigir el sentido. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Señalamiento de contradicción en el relato",
+    "codigo": "m_freud_topo_contradiccion",
+    "procesos": ["N_insightPsicodinamico", "N_metacognicion"],
+    "texto": "Microintervención que pone en evidencia una incoherencia, cambio de versión o ambigüedad en el discurso, sugiriendo la coexistencia de contenidos conscientes y preconscientes en tensión. Abre el trabajo interpretativo sin introducir aún hipótesis latentes complejas. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Diferenciación entre lo dicho y lo pensado",
+    "codigo": "m_freud_topo_dicho_pensado",
+    "procesos": ["N_metacognicion"],
+    "texto": "Intervención que invita a distinguir entre lo que el paciente expresa y lo que reconoce haber pensado pero no dicho, haciendo visible la función de la censura y el paso entre sistemas psíquicos. Facilita conciencia del funcionamiento topográfico sin confrontación. Referencia: Freud, S. (1912). *Recommendations to Physicians Practising Psycho-Analysis*."
+  },
+  {
+    "nombre": "Suspensión de interpretación prematura",
+    "codigo": "m_freud_topo_suspension",
+    "procesos": ["ALI_sintonia"],
+    "texto": "Decisión técnica consciente de no interpretar un material emergente cuando el Yo aún no puede tolerarlo, sosteniendo la exploración asociativa para evitar cierre defensivo. Protege la alianza y mantiene abierto el acceso progresivo a la conciencia. Referencia: Freud, S. (1912)."
+  },
+  {
+    "nombre": "Retorno a un elemento previamente mencionado",
+    "codigo": "m_freud_topo_retorno_elemento",
+    "procesos": ["N_insightPsicodinamico"],
+    "texto": "Microintervención que recupera una palabra, imagen o recuerdo mencionado anteriormente para reactivar asociaciones y detectar conexiones latentes. Favorece la elaboración progresiva del material inconsciente sin necesidad de interpretación directa. Referencia: Freud, S. (1900). *The Interpretation of Dreams*."
+  },
+  {
+    "nombre": "Invitación a describir sensaciones al recordar",
+    "codigo": "m_freud_topo_sensaciones",
+    "procesos": ["AP_evocacion", "RE_rotulacion"],
+    "texto": "Intervención breve que pide al paciente que describa sensaciones o afectos asociados a un recuerdo o imagen, facilitando el paso del material desde lo implícito a lo preconsciente y enriqueciendo la comprensión del significado latente. Referencia: Freud, S. (1900)."
+  }
+],
+
+  "ideasPrincipales": [
+  {
+    "id": "idea_freud_topo_1",
+    "titulo": "La vida psíquica se organiza en sistemas según su accesibilidad a la conciencia",
+    "desarrollo": "El modelo topográfico propone que la mente se estructura en tres sistemas —consciente, preconsciente e inconsciente— definidos no por funciones ni instancias, sino por el grado de acceso de los contenidos a la conciencia. Esta diferenciación permite explicar por qué gran parte de la actividad psíquica permanece fuera del registro consciente y solo se manifiesta de forma indirecta. (Freud, 1900, *The Interpretation of Dreams*)."
+  },
+  {
+    "id": "idea_freud_topo_2",
+    "titulo": "El inconsciente opera según leyes propias distintas del pensamiento consciente",
+    "desarrollo": "Los contenidos inconscientes no siguen la lógica racional ni temporal del pensamiento consciente, sino procesos primarios caracterizados por condensación, desplazamiento y ausencia de contradicción. El modelo topográfico introduce así una concepción no racionalista de la mente, en la que el significado no es inmediatamente transparente para la conciencia. (Freud, 1900)."
+  },
+  {
+    "id": "idea_freud_topo_3",
+    "titulo": "La censura regula el paso entre sistemas psíquicos",
+    "desarrollo": "Entre el inconsciente y el preconsciente actúa una función de censura que impide que ciertos contenidos accedan a la conciencia debido a su carácter conflictivo. Esta censura explica la deformación del material inconsciente y la necesidad de vías indirectas de expresión como sueños, lapsus y síntomas. (Freud, 1900)."
+  },
+  {
+    "id": "idea_freud_topo_4",
+    "titulo": "El sueño es la vía regia de acceso al inconsciente",
+    "desarrollo": "Freud sostiene que el sueño constituye la vía privilegiada para acceder al inconsciente, ya que durante el dormir la censura se relaja parcialmente y permite la expresión simbólica de deseos reprimidos. El análisis onírico se convierte así en el modelo paradigmático del trabajo interpretativo topográfico. (Freud, 1900)."
+  },
+  {
+    "id": "idea_freud_topo_5",
+    "titulo": "El material manifiesto oculta un contenido latente",
+    "desarrollo": "Los productos de la vida psíquica accesibles a la conciencia —sueños, relatos, lapsus— no expresan directamente su significado inconsciente, sino que lo presentan deformado. El trabajo clínico consiste en reconstruir el contenido latente a partir del material manifiesto mediante asociaciones, sin recurrir a símbolos universales prefijados. (Freud, 1900)."
+  },
+  {
+    "id": "idea_freud_topo_6",
+    "titulo": "Los lapsus y errores cotidianos no son accidentales",
+    "desarrollo": "El modelo topográfico amplía el campo de lo clínicamente significativo al mostrar que olvidos, lapsus y equivocaciones responden a determinantes inconscientes. Estos fenómenos revelan la actividad constante del inconsciente incluso en la vida cotidiana y refuerzan la idea de que la conciencia no es dueña de la vida psíquica. (Freud, 1901, *The Psychopathology of Everyday Life*)."
+  },
+  {
+    "id": "idea_freud_topo_7",
+    "titulo": "El síntoma es una forma de expresión indirecta del inconsciente",
+    "desarrollo": "Desde la perspectiva topográfica, el síntoma se entiende como una vía deformada por la que contenidos inconscientes logran acceso parcial a la conciencia. No se explica aún por la interacción de instancias estructurales, sino por el fracaso de la censura en mantener completamente reprimido el material conflictivo. (Freud, 1900)."
+  },
+  {
+    "id": "idea_freud_topo_8",
+    "titulo": "La interpretación es el método central de acceso a lo inconsciente",
+    "desarrollo": "El modelo topográfico establece la interpretación como procedimiento clínico fundamental para traducir el material manifiesto en significado latente. El conocimiento terapéutico no surge de la observación directa, sino de inferencias construidas a partir de asociaciones y regularidades del discurso del paciente. (Freud, 1900)."
+  },
+  {
+    "id": "idea_freud_topo_9",
+    "titulo": "Hacer consciente lo inconsciente es el objetivo terapéutico central",
+    "desarrollo": "El cambio terapéutico se concibe como un proceso de ampliación de la conciencia mediante el acceso progresivo a contenidos inconscientes previamente reprimidos. El modelo topográfico formula así el principio clásico según el cual el alivio del sufrimiento depende de transformar lo inconsciente en consciente. (Freud, 1900; Freud, 1914)."
+  }
+],
+
+
+  "refs": [
+    "Freud, S. (1900). The Interpretation of Dreams.",
+    "Freud, S. (1901). The Psychopathology of Everyday Life."
+  ]
+}
