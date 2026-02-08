@@ -1,0 +1,271 @@
+{
+  "id": "pst-solucion-problemas-dzurilla-goldfried-1971",
+  "grupo": "Cognitivo",
+  "label": "Terapia de Solución de Problemas (PST)",
+  "year": 1971,
+  "importance": 2,
+  "autores": "Thomas J. D’Zurilla; Marvin R. Goldfried; Arthur M. Nezu",
+  "universidad": "",
+  "ciudad": "Estados Unidos",
+  "pais": "EE. UU.",
+  "lat": 39.828175,
+  "lon": -98.579500,
+
+  "descripcion": "La Terapia de Solución de Problemas (Problem-Solving Therapy, PST) es un modelo cognitivo-conductual estructurado que concibe el malestar psicológico como resultado, en parte, de déficits en la orientación al problema y en las habilidades sistemáticas para afrontar eficazmente las demandas de la vida cotidiana. El modelo distingue entre una orientación al problema —conjunto de creencias, actitudes y respuestas emocionales ante las dificultades— y un estilo de solución de problemas basado en fases secuenciales: definición del problema, generación de alternativas, toma de decisiones, implementación y evaluación de resultados. PST no se limita a reducir síntomas, sino que busca incrementar competencia percibida, autoeficacia y afrontamiento activo, transformando problemas difusos o rumiativos en tareas concretas, abordables y evaluables, con amplia evidencia empírica en depresión, ansiedad, estrés y problemas de adaptación.",
+
+  "influencias": [
+    "Conductual",
+    "Cognitivo",
+    "Toma de decisiones",
+    "Psicología aplicada",
+    "Racionalismo representacional (Cognitivismo clásico)",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La PST se inscribe en una epistemología cognitivo-empirista que concibe la realidad psicológica como susceptible de análisis racional y modificación a través de procedimientos estructurados. El conocimiento terapéutico se considera transmisible y entrenable, basado en modelos normativos de toma de decisiones y resolución de problemas. El ser humano es entendido como un agente capaz de aprender habilidades cognitivas y conductuales que optimizan su adaptación. El cambio psicológico ocurre cuando se modifican actitudes disfuncionales hacia los problemas y se adquieren estrategias eficaces para afrontarlos. La relación terapéutica cumple una función principalmente instrumental y facilitadora del aprendizaje.",
+    "teoriaFormal": "El self se concibe como un sistema de habilidades, actitudes y creencias relacionadas con la percepción de problemas y la capacidad para resolverlos. El sufrimiento se mantiene cuando la persona interpreta los problemas como amenazas incontrolables, responde con evitación o rumiación y carece de estrategias sistemáticas para afrontarlos. El cambio se explica por la adquisición de una orientación positiva al problema y por el entrenamiento en pasos estructurados que incrementan la probabilidad de soluciones eficaces y reducen la indefensión.",
+    "teoriaClinica": "El caso se conceptualiza identificando déficits en orientación al problema, sesgos cognitivos en la definición de dificultades, estilos impulsivos o evitativos de decisión y fallos en la implementación o evaluación de soluciones. Se prioriza el entrenamiento gradual en habilidades de solución de problemas aplicadas a situaciones reales del paciente. El progreso terapéutico se evalúa por la mejora en afrontamiento activo, reducción de rumiación, aumento de autoeficacia y resolución efectiva de problemas cotidianos."
+  },
+
+  "mjps": ["RE", "N", "AG"],
+"secuencias": [
+  {
+    "id": "seq_pst_ciclo_solucion_problemas_1971",
+    "nombre": "Ciclo estándar de Solución de Problemas (PST)",
+    "descripcion": "Secuencia explícita y canónica del modelo PST: una condición transversal de orientación al problema y cinco fases operativas (definir, generar alternativas, decidir, implementar y evaluar). Se concibe como un proceso iterativo: si la solución no funciona o es parcial, el sistema vuelve a redefinir el problema o a generar nuevas alternativas, consolidando un estilo de afrontamiento basado en aprendizaje y ajuste, no en rumiación o evitación.",
+    "tipo": "circular",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Orientación al problema (activar postura de aproximación)",
+        "explicacion": "Se establece una orientación positiva al problema (reto abordable) y se reduce la orientación negativa (amenaza/fracaso), aumentando autoeficacia y tolerancia al malestar para poder aplicar el método con claridad; funciona como condición transversal que sostiene las fases posteriores."
+      },
+      {
+        "orden": 2,
+        "accion": "Definir y formular el problema",
+        "explicacion": "Se convierte una queja difusa en una formulación concreta y operativa (qué ocurre, dónde, cuándo, con quién), separando hechos de interpretaciones y delimitando qué aspectos son modificables, para crear una diana de trabajo clara."
+      },
+      {
+        "orden": 3,
+        "accion": "Generar alternativas (brainstorming sin juicio)",
+        "explicacion": "Se amplía el repertorio de opciones separando creación de evaluación: primero cantidad y diversidad de ideas, sin autocensura, para reducir bloqueo, evitación y rumiación y abrir posibilidades reales de acción."
+      },
+      {
+        "orden": 4,
+        "accion": "Tomar decisiones (selección de opción suficientemente buena)",
+        "explicacion": "Se comparan alternativas con criterios explícitos (eficacia probable, costes/beneficios, riesgos, factibilidad, recursos disponibles) y se elige una opción funcional y revisable, evitando perfeccionismo decisional o impulsividad."
+      },
+      {
+        "orden": 5,
+        "accion": "Implementar la solución (plan en pasos)",
+        "explicacion": "Se traduce la decisión en un plan ejecutable: descomposición en pasos, calendarización, anticipación de obstáculos (emocionales/contextuales/relacionales) y apoyos, para maximizar la probabilidad de ejecución en la vida real."
+      },
+      {
+        "orden": 6,
+        "accion": "Evaluar resultados y ajustar",
+        "explicacion": "Se revisa qué ocurrió, en qué grado se logró la meta y qué se aprendió, evitando autocrítica global; si el resultado es parcial o ineficaz, se reformula el problema o se generan nuevas alternativas y se reinicia el ciclo."
+      }
+    ]
+  }
+],
+
+ "procedimientos": [
+  {
+    "nombre": "Evaluación inicial de orientación al problema y estilo de solución de problemas",
+    "codigo": "p_pst_evaluacion_orientacion",
+    "procesos": ["N_metacognicion", "N_marcosCognitivos"],
+    "texto": "Procedimiento de evaluación clínica centrado en identificar cómo la persona percibe los problemas (amenaza vs reto), qué atribuciones hace (controlabilidad, competencia, expectativas), y qué estilo predominante utiliza (evitativo, impulsivo, racional), diferenciando déficits de habilidad (no sabe cómo) de déficits motivacionales/actitudinales (no se siente capaz o evita). Se recogen ejemplos concretos recientes, se describen cadenas de afrontamiento y se detecta rumiación, evitación y decisiones postergadas para establecer dianas de entrenamiento y criterios de progreso. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Psicoeducación y formulación del modelo PST (orientación al problema + cinco fases)",
+    "codigo": "p_pst_psicoeducacion_modelo",
+    "procesos": ["N_reformulacion", "N_marcosCognitivos"],
+    "texto": "Procedimiento de encuadre terapéutico en el que se explica que el malestar se mantiene cuando los problemas se perciben como incontrolables o indefinidos y se responden con evitación/rumiación, y que el objetivo será aprender un método replicable: (1) definir el problema, (2) generar alternativas, (3) decidir, (4) implementar y (5) evaluar, además de trabajar la orientación positiva al problema como condición de eficacia. Se vincula el método con ejemplos reales del paciente para convertir “bloqueos” en tareas entrenables y medibles. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Entrenamiento en orientación positiva al problema",
+    "codigo": "p_pst_orientacion_positiva",
+    "procesos": ["N_reformulacion", "RE_modulacion"],
+    "texto": "Procedimiento dirigido a transformar la respuesta inicial ante dificultades: pasar de amenaza/fracaso personal a reto abordable, aumentando autoeficacia y tolerancia al malestar para poder pensar con claridad. Incluye identificar autoverbalizaciones desorganizadoras (“no puedo”, “es demasiado”), reemplazarlas por formulaciones funcionales (“puedo dar un primer paso”, “puedo probar opciones”), y entrenar una postura de aproximación que reduzca parálisis y evitación. (D’Zurilla & Nezu, 2007; D’Zurilla & Goldfried, 1971)."
+  },
+  {
+    "nombre": "Definición y formulación operativa del problema",
+    "codigo": "p_pst_definicion_problema",
+    "procesos": ["N_metacognicion", "RE_rotulacion", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento para convertir un problema vago o rumiativo en una definición concreta y accionable: se delimita qué ocurre, dónde, cuándo, con quién, qué señales indican que existe el problema, qué parte es modificable por la persona y qué parte no, separando hechos de interpretaciones y clarificando el componente emocional asociado. Se busca una formulación específica (no “mi vida es un desastre”, sino “estoy evitando llamadas de trabajo y eso retrasa entregas”), estableciendo el punto de inicio del entrenamiento. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Clarificación de metas y criterios de éxito (objetivos SMART)",
+    "codigo": "p_pst_clarificacion_metas",
+    "procesos": ["AG_tomaDecisiones", "N_marcosCognitivos"],
+    "texto": "Procedimiento para traducir el problema definido en metas concretas y criterios de éxito verificables (qué cambio específico se busca, en qué plazo, con qué indicadores). Se priorizan objetivos realistas, graduados y compatibles con recursos actuales, reduciendo el perfeccionismo y la indefinición que sostienen la postergación. La meta se formula de forma que permita evaluar avances sin ambigüedad y sostener la motivación durante la implementación. (D’Zurilla & Nezu, 2007; D’Zurilla & Goldfried, 1971)."
+  },
+  {
+    "nombre": "Generación amplia de alternativas (brainstorming diferido)",
+    "codigo": "p_pst_generacion_alternativas",
+    "procesos": ["N_construccionAlternativa", "RE_prevEvitacion"],
+    "texto": "Procedimiento para producir un repertorio amplio de posibles soluciones antes de decidir, separando deliberadamente la fase creativa de la fase evaluativa para evitar autocensura, evitación y bloqueo por miedo a equivocarse. Se entrenan reglas de brainstorming (cantidad primero, juicio después) y se promueve generar opciones “imperfectas” o parciales para abrir camino a soluciones combinadas, aumentando flexibilidad y disminuyendo la rumiación circular. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Toma de decisiones sistemática (análisis de consecuencias y factibilidad)",
+    "codigo": "p_pst_toma_decisiones",
+    "procesos": ["AG_tomaDecisiones", "N_metacognicion"],
+    "texto": "Procedimiento para seleccionar la(s) mejor(es) alternativa(s) mediante criterios explícitos: probabilidad de eficacia, costes/beneficios a corto y largo plazo, compatibilidad con valores y recursos, riesgos aceptables y factibilidad real. Se comparan opciones con matrices sencillas de pros/contras y se reduce el estilo impulsivo o evitativo, buscando una decisión suficientemente buena y revisable, no perfecta, para desbloquear la acción. (D’Zurilla & Nezu, 2007; D’Zurilla & Goldfried, 1971)."
+  },
+  {
+    "nombre": "Plan de implementación y ejecución (descomposición en pasos + barreras)",
+    "codigo": "p_pst_implementacion_plan",
+    "procesos": ["AG_compromisoConductual", "RE_modulacion", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento para convertir la decisión en un plan conductual ejecutable: se divide en pasos pequeños, se calendariza, se prevén obstáculos (emocionales, contextuales, relacionales), se planifican respuestas alternativas y se establecen apoyos o recordatorios. Incluye ensayar la primera acción concreta (el “primer paso”) y acordar tareas entre sesiones, de modo que el método impacte en la vida cotidiana y genere feedback real. (D’Zurilla & Nezu, 2007; D’Zurilla & Goldfried, 1971)."
+  },
+  {
+    "nombre": "Verificación, evaluación de resultados y ajuste iterativo (ciclo de mejora)",
+    "codigo": "p_pst_evaluacion_ajuste",
+    "procesos": ["N_metacognicion", "N_reformulacion", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento para revisar sistemáticamente qué ocurrió tras implementar la solución: si la meta se alcanzó, en qué medida, qué funcionó, qué falló y por qué, evitando conclusiones globales (“soy incapaz”) y transformando el resultado en aprendizaje. Si la solución fue parcial o ineficaz, se reformula el problema, se ajustan metas, se generan nuevas alternativas o se replanifica la implementación, consolidando un estilo de afrontamiento basado en ensayo y corrección en lugar de rumiación o evitación. (D’Zurilla & Nezu, 2007; D’Zurilla & Goldfried, 1971)."
+  },
+  {
+    "nombre": "Generalización y prevención de recaídas en afrontamiento evitativo/rumiativo",
+    "codigo": "p_pst_generalizacion_prevencion",
+    "procesos": ["AG_compromisoConductual", "RE_prevEvitacion", "N_marcosCognitivos"],
+    "texto": "Procedimiento para consolidar PST como habilidad transversal: se identifican señales tempranas de recaída (rumiación, procrastinación, catastrofismo, evitación), se diseñan planes de afrontamiento para futuros problemas y se establecen rutinas de aplicación del método (por ejemplo, usar el formato de cinco fases ante dificultades recurrentes). El foco es que la persona mantenga un estilo de aproximación, use decisiones revisables y recupere rápidamente el método cuando aparezca estrés o desánimo. (D’Zurilla & Nezu, 2007; D’Zurilla & Goldfried, 1971)."
+  }
+],
+
+"micros": [
+  {
+    "nombre": "Rotular el problema en una frase concreta",
+    "codigo": "m_pst_rotular_problema",
+    "procesos": ["N_metacognicion", "RE_rotulacion"],
+    "texto": "Microintervención destinada a transformar una queja difusa en una formulación concreta y específica mediante una sola frase operacional (qué ocurre, dónde, cuándo), reduciendo rumiación y carga emocional asociada al desorden cognitivo inicial y creando un punto de entrada claro para el trabajo posterior. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Separar hechos de interpretaciones",
+    "codigo": "m_pst_hechos_interpretaciones",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Microintervención breve que ayuda a distinguir entre datos observables y conclusiones subjetivas al describir el problema, disminuyendo catastrofismo y sesgos atribucionales que bloquean la toma de decisiones y la generación de alternativas funcionales. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Identificar controlabilidad personal",
+    "codigo": "m_pst_controlabilidad",
+    "procesos": ["AG_autoriaResponsabilidad", "N_reformulacion"],
+    "texto": "Microintervención orientada a delimitar qué aspectos del problema dependen directa o indirectamente de la acción del paciente y cuáles no, reduciendo indefensión aprendida y focalizando la energía en áreas modificables. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Formular meta mínima alcanzable",
+    "codigo": "m_pst_meta_minima",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Intervención puntual para definir una meta mínima, concreta y realista asociada al problema, evitando objetivos maximalistas que favorecen evitación y postergación y facilitando el inicio de la acción. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Brainstorming sin juicio temporal",
+    "codigo": "m_pst_brainstorming",
+    "procesos": ["N_construccionAlternativa", "RE_prevEvitacion"],
+    "texto": "Microintervención que insta a generar opciones durante un tiempo delimitado sin evaluar su calidad, reduciendo autocensura, miedo al error y bloqueo cognitivo, y ampliando el repertorio de posibles soluciones. (D’Zurilla & Goldfried, 1971)."
+  },
+  {
+    "nombre": "Listar pros y contras inmediatos",
+    "codigo": "m_pst_pros_contras",
+    "procesos": ["N_metacognicion", "AG_tomaDecisiones"],
+    "texto": "Intervención breve que compara alternativas mediante consecuencias a corto plazo, ayudando a ordenar la decisión cuando hay parálisis o impulsividad, sin requerir análisis complejo. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Evaluar coste emocional de cada opción",
+    "codigo": "m_pst_coste_emocional",
+    "procesos": ["RE_modulacion", "AG_tomaDecisiones"],
+    "texto": "Microintervención que incorpora explícitamente el impacto emocional anticipado de cada alternativa, evitando decisiones aparentemente racionales pero inviables por sobrecarga afectiva. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Elegir opción suficientemente buena",
+    "codigo": "m_pst_opcion_suficiente",
+    "procesos": ["N_reformulacion", "AG_tomaDecisiones"],
+    "texto": "Intervención destinada a desactivar perfeccionismo decisional, promoviendo la elección de una opción funcional y revisable en lugar de la búsqueda de la solución óptima, facilitando el paso a la acción. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Descomponer en primer paso observable",
+    "codigo": "m_pst_primer_paso",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Microintervención que traduce la decisión en un primer paso pequeño, concreto y fechable, reduciendo evitación conductual y aumentando probabilidad de ejecución real. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Anticipar obstáculos previsibles",
+    "codigo": "m_pst_obstaculos",
+    "procesos": ["N_metacognicion", "RE_prevEvitacion"],
+    "texto": "Intervención breve para identificar barreras emocionales, contextuales o relacionales antes de actuar y preparar respuestas alternativas, disminuyendo abandonos prematuros. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Autoevaluación post-acción",
+    "codigo": "m_pst_autoevaluacion",
+    "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+    "texto": "Microintervención que revisa de forma estructurada qué ocurrió tras ejecutar una acción, evitando autocrítica global y transformando el resultado en aprendizaje utilizable. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Reformular el problema tras resultado parcial",
+    "codigo": "m_pst_reformulacion_ciclo",
+    "procesos": ["N_reformulacion"],
+    "texto": "Intervención puntual que ajusta la definición del problema cuando la solución no funciona plenamente, manteniendo el enfoque iterativo del método y evitando conclusiones derrotistas. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Detectar señales tempranas de rumiación",
+    "codigo": "m_pst_senales_rumiacion",
+    "procesos": ["RE_prevEvitacion", "N_metacognicion"],
+    "texto": "Microintervención para identificar indicadores internos de retorno a rumiación o evitación (pensamiento circular, postergación), activando de nuevo el método PST como respuesta automática. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "nombre": "Aplicar el método a problemas futuros similares",
+    "codigo": "m_pst_transferencia",
+    "procesos": ["AG_compromisoConductual", "N_marcosCognitivos"],
+    "texto": "Intervención final orientada a generalizar el uso del procedimiento de solución de problemas a situaciones futuras, consolidándolo como habilidad transversal de afrontamiento. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  }
+],
+
+"ideasPrincipales": [
+  {
+    "id": "idea_pst_1",
+    "titulo": "Los problemas psicológicos son, en parte, déficits de afrontamiento entrenables",
+    "desarrollo": "La PST sostiene que una proporción significativa del malestar emocional se mantiene no por la existencia de problemas en sí, sino por déficits en la orientación al problema y en las habilidades para afrontarlos de forma sistemática. Al conceptualizar los problemas como tareas abordables y entrenables, el modelo desplaza el foco del síntoma a la competencia, incrementando autoeficacia y reduciendo indefensión. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "id": "idea_pst_2",
+    "titulo": "La orientación al problema es tan importante como las habilidades",
+    "desarrollo": "PST diferencia entre saber resolver problemas y estar dispuesto a afrontarlos. Una orientación negativa —ver los problemas como amenazas incontrolables o fracasos personales— bloquea el uso de habilidades incluso cuando estas existen. Por ello, el modelo prioriza modificar actitudes, creencias y respuestas emocionales iniciales ante las dificultades como condición de eficacia del método. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "id": "idea_pst_3",
+    "titulo": "Resolver problemas es un proceso secuencial y explícito",
+    "desarrollo": "El modelo define la solución de problemas como un proceso compuesto por fases diferenciadas: definición del problema, generación de alternativas, toma de decisiones, implementación y evaluación. Hacer explícitas estas fases reduce impulsividad, rumiación y evitación, permitiendo intervenir con precisión cuando el proceso se bloquea en un punto concreto. (D’Zurilla & Goldfried, 1971)."
+  },
+  {
+    "id": "idea_pst_4",
+    "titulo": "La definición operativa del problema es el núcleo del cambio",
+    "desarrollo": "PST subraya que muchos bloqueos terapéuticos derivan de problemas mal definidos, vagos o globales. Convertir una queja difusa en una formulación concreta, específica y modificable reduce carga emocional, clarifica agencia y hace posible la acción. Sin una buena definición, las fases posteriores pierden eficacia. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "id": "idea_pst_5",
+    "titulo": "La toma de decisiones debe ser suficiente, no perfecta",
+    "desarrollo": "El modelo rechaza la búsqueda de la solución óptima como requisito para actuar, ya que el perfeccionismo decisional mantiene parálisis y evitación. PST promueve decisiones suficientemente buenas, revisables y basadas en criterios explícitos, favoreciendo la acción y el aprendizaje iterativo frente al control excesivo. (D’Zurilla & Goldfried, 1971; D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "id": "idea_pst_6",
+    "titulo": "La acción real es condición de aprendizaje terapéutico",
+    "desarrollo": "PST considera que el cambio no se consolida en la reflexión, sino en la implementación de soluciones en la vida cotidiana. La ejecución de planes, incluso imperfectos, proporciona feedback correctivo que permite ajustar definiciones, decisiones y expectativas, transformando la experiencia en aprendizaje funcional. (D’Zurilla & Nezu, 2007)."
+  },
+  {
+    "id": "idea_pst_7",
+    "titulo": "El error es una fuente de información, no de autocrítica",
+    "desarrollo": "Dentro de PST, los resultados parciales o fallidos no se interpretan como incapacidad personal, sino como datos para reformular el problema o ajustar la estrategia. Esta postura reduce vergüenza, rumiación y abandono, promoviendo un estilo de afrontamiento basado en ensayo y corrección. (D’Zurilla & Goldfried, 1971)."
+  },
+  {
+    "id": "idea_pst_8",
+    "titulo": "El método debe generalizarse como habilidad transversal",
+    "desarrollo": "El objetivo final de PST no es resolver un problema aislado, sino que la persona incorpore el método como una competencia generalizable a futuras dificultades. La prevención de recaídas se basa en detectar tempranamente evitación y rumiación y reactivar el proceso de solución de problemas de forma autónoma. (D’Zurilla & Nezu, 2007)."
+  }
+],
+
+
+  "refs": [
+    "D’Zurilla, T. J., & Goldfried, M. R. (1971). Problem Solving and Behavior Modification.",
+    "D’Zurilla, T. J., & Nezu, A. M. (2007). Problem-Solving Therapy: A Positive Approach to Clinical Intervention."
+  ]
+}
