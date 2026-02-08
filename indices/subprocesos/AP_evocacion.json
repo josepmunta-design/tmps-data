@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-08T16:22:25.673Z",
-  "totalModelos": 27,
+  "updatedAt": "2026-02-08T16:31:12.056Z",
+  "totalModelos": 28,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -511,6 +511,78 @@
           "codigo": "m_freud_lapsus_compromiso",
           "nombre": "Lectura de un lapsus o acto fallido como formación de compromiso",
           "texto": "Microintervención que toma un lapsus, olvido significativo o error cotidiano como pista para explorar deseo, censura y defensa, sin convertirlo en “prueba” sino en invitación a asociar; su valor es abrir una vía suave de acceso al conflicto cuando el contenido directo es demasiado amenazante para el Yo. Referencia: Freud, S. (1901). The Psychopathology of Everyday Life.",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "freud-modelo-topografico-1900",
+      "modelLabel": "Modelo topográfico",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Sigmund Freud",
+      "modelYear": 1900,
+      "items": [
+        {
+          "codigo": "p_freud_topo_asociacion_libre",
+          "nombre": "Asociación libre",
+          "texto": "Procedimiento fundamental del modelo topográfico mediante el cual el paciente verbaliza pensamientos, imágenes, recuerdos y afectos sin censura deliberada, permitiendo que emerjan contenidos inconscientes a través de encadenamientos asociativos. La asociación libre reduce el control consciente del pensamiento y facilita el acceso a material reprimido que se expresa de forma indirecta, haciendo visible la dinámica entre inconsciente, preconsciente y consciente. Referencia: Freud, S. (1900). *The Interpretation of Dreams*.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_suenos",
+          "nombre": "Análisis de sueños",
+          "texto": "Procedimiento privilegiado de acceso al inconsciente que explora los sueños como formaciones simbólicas donde se expresan deseos reprimidos. Se analizan los mecanismos del trabajo del sueño —condensación, desplazamiento, figurabilidad y elaboración secundaria— para reconstruir el contenido latente y comprender la lógica inconsciente que organiza el conflicto psíquico. Referencia: Freud, S. (1900). *The Interpretation of Dreams*.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_asociaciones_sueno",
+          "nombre": "Elicitación sistemática de asociaciones al sueño (cadena asociativa onírica)",
+          "texto": "Procedimiento específico dentro del trabajo con sueños que consiste en pedir asociaciones libres a cada elemento del contenido manifiesto (escena, personaje, objeto, palabra, afecto) para reconstruir el material latente sin imponer significados prefabricados; el objetivo es seguir la lógica asociativa que conecta el sueño con deseos, recuerdos y conflictos inconscientes, evitando lecturas simbólicas universales no sustentadas por las asociaciones del paciente. Referencia: Freud, S. (1900). *The Interpretation of Dreams*.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_registro_suenos",
+          "nombre": "Registro y trabajo continuado con material onírico (serie de sueños)",
+          "texto": "Procedimiento de continuidad clínica que invita a registrar sueños o a reconstruirlos con el máximo detalle posible para trabajar con series oníricas a lo largo del tiempo, detectando temas repetidos, desplazamientos de escena, cambios afectivos y asociaciones recurrentes; esto permite observar la persistencia del conflicto intrapsíquico y su evolución sin convertir el sueño en un “evento aislado” interpretado de una vez. Referencia: Freud, S. (1900). *The Interpretation of Dreams*.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_recuerdos_encubridores",
+          "nombre": "Trabajo con recuerdos encubridores (screen memories)",
+          "texto": "Procedimiento que explora recuerdos infantiles muy vívidos pero aparentemente triviales como posibles formaciones encubridoras que sustituyen o disfrazan contenidos más conflictivos; se investiga su composición, afecto asociado, escenas contiguas y asociaciones actuales para inferir qué material inconsciente queda protegido por ese recuerdo y cómo se mantiene fuera de la conciencia. Referencia: Freud, S. (1899). *Screen Memories*.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_freud_topo_invitar_asociar",
+          "nombre": "Invitación a asociar sin dirección",
+          "texto": "Intervención mínima en la que el terapeuta invita al paciente a decir lo primero que le venga a la mente sin orientar el contenido, reduciendo la censura consciente y favoreciendo el tránsito de material desde el inconsciente al preconsciente. Su valor clínico reside en desactivar el control voluntario del pensamiento sin confrontación directa. Referencia: Freud, S. (1900). *The Interpretation of Dreams*.",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_topo_ocurrencia",
+          "nombre": "Exploración inmediata de una ocurrencia",
+          "texto": "Intervención breve que detiene el discurso para explorar una idea, imagen o palabra recién aparecida, antes de que sea racionalizada o descartada. Permite captar material preconsciente en tránsito y ampliar el acceso al significado latente. Referencia: Freud, S. (1900). *The Interpretation of Dreams*.",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_topo_pregunta_abierta",
+          "nombre": "Pregunta asociativa abierta",
+          "texto": "Pregunta breve del tipo “¿qué le viene ahora a la mente con esto?” utilizada para mantener el flujo asociativo cuando el discurso se empobrece o se intelectualiza. Refuerza la exploración sin introducir contenido externo ni dirigir el sentido. Referencia: Freud, S. (1900). *The Interpretation of Dreams*.",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_topo_sensaciones",
+          "nombre": "Invitación a describir sensaciones al recordar",
+          "texto": "Intervención breve que pide al paciente que describa sensaciones o afectos asociados a un recuerdo o imagen, facilitando el paso del material desde lo implícito a lo preconsciente y enriqueciendo la comprensión del significado latente. Referencia: Freud, S. (1900).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }
