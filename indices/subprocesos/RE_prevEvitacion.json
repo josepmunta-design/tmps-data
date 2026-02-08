@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-08T17:54:05.646Z",
-  "totalModelos": 22,
+  "updatedAt": "2026-02-08T17:59:54.610Z",
+  "totalModelos": 23,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -137,6 +137,29 @@
           "codigo": "m_rebt_tolerancia",
           "nombre": "Tolerancia al malestar racional",
           "texto": "Microentrenamiento en soportar incomodidad sin transformarla en catástrofe o intolerabilidad.\n(Referencia: Ellis & Dryden, 1997.)",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-racional-autoinstruccional-meichenbaum-1971",
+      "modelLabel": "Terapia racional-autoinstruccional",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_sit_prevencion_recaidas",
+          "nombre": "Prevención de recaídas en diálogo interno impulsivo",
+          "texto": "Procedimiento final centrado en identificar señales tempranas de retorno a autoverbalizaciones impulsivas, caóticas o punitivas, y reactivar conscientemente las secuencias autoinstruccionales entrenadas, manteniendo el autocontrol bajo estrés o activación emocional. (Meichenbaum, 1977).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sit_reactivacion_secuencia",
+          "nombre": "Reactivación consciente de la secuencia autoinstruccional",
+          "texto": "Microintervención destinada a reconocer señales tempranas de desorganización y reactivar deliberadamente la secuencia completa de autoinstrucciones entrenadas, previniendo recaídas en diálogo interno impulsivo. (Meichenbaum, 1977).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

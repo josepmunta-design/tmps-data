@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RI_dialogoFuncional",
-  "updatedAt": "2026-02-08T17:54:05.646Z",
-  "totalModelos": 9,
+  "updatedAt": "2026-02-08T17:59:54.610Z",
+  "totalModelos": 10,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -58,6 +58,57 @@
           "codigo": "m_rebt_autoinstrucciones",
           "nombre": "Auto-instrucciones racionales breves",
           "texto": "Frases para guiar acción y regulación en momentos críticos (“puedo tolerarlo”, “preferiría, pero no es necesario”).\n(Referencia: Ellis, 1962.)",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-racional-autoinstruccional-meichenbaum-1971",
+      "modelLabel": "Terapia racional-autoinstruccional",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_sit_modelado_externo",
+          "nombre": "Modelado externo de autoinstrucciones racionales",
+          "texto": "Procedimiento en el que el terapeuta ejecuta la tarea problemática verbalizando en voz alta una secuencia de autoinstrucciones reguladoras (orientación, planificación, ejecución y evaluación), proporcionando un modelo explícito de diálogo interno funcional. El objetivo es que el paciente observe cómo el lenguaje organiza la conducta paso a paso antes de intentar aplicarlo por sí mismo. (Meichenbaum & Goodman, 1971; Meichenbaum, 1977).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sit_guia_verbal_externa",
+          "nombre": "Guía externa con verbalización del paciente en voz alta",
+          "texto": "Procedimiento en el que el paciente realiza la tarea verbalizando en voz alta las autoinstrucciones previamente modeladas, con apoyo y correcciones del terapeuta. Esta fase permite consolidar la secuencia verbal reguladora, reducir impulsividad y aumentar control atencional antes de iniciar la internalización progresiva. (Meichenbaum & Goodman, 1971).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sit_autoinstrucciones_encubiertas",
+          "nombre": "Autoinstrucciones encubiertas (internalización completa)",
+          "texto": "Procedimiento central del modelo en el que las autoinstrucciones se utilizan de forma completamente interna durante la ejecución de la tarea, consolidando el autocontrol cognitivo y conductual. El paciente aprende a activar la secuencia verbal reguladora de manera autónoma en situaciones reales, sin necesidad de verbalización externa. (Meichenbaum, 1977).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sit_parada_verbal",
+          "nombre": "Introducir autoinstrucción de parada",
+          "texto": "Microintervención consistente en entrenar una autoinstrucción breve de detención (“para”, “espera un segundo”) que interrumpe la secuencia impulsiva inicial, creando un margen temporal mínimo para activar instrucciones reguladoras posteriores. (Meichenbaum, 1977).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sit_autocontrol_ejecucion",
+          "nombre": "Autoverbalización de autocontrol durante la ejecución",
+          "texto": "Microintervención centrada en verbalizaciones reguladoras durante la acción (“despacio”, “sigue así”, “mantén el foco”), que ayudan a sostener ritmo, inhibir impulsos y reducir errores bajo activación. (Meichenbaum, 1977).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sit_afrontamiento_emocional",
+          "nombre": "Autoinstrucción de afrontamiento emocional",
+          "texto": "Microintervención que introduce frases internas para tolerar malestar (“puedo sentir esto y seguir”, “no necesito escapar”), evitando que la emoción desorganice la conducta. (Meichenbaum, 1977).",
           "sub": "RI_dialogoFuncional",
           "tipo": "micro"
         }
