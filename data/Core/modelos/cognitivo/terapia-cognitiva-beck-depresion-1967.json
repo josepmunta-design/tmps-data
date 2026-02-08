@@ -1,0 +1,309 @@
+{
+  "id": "terapia-cognitiva-beck-depresion-1967",
+  "grupo": "Cognitivo",
+  "label": "Terapia cognitiva (depresión)",
+  "year": 1967,
+  "importance": 4,
+  "autores": "Aaron T. Beck",
+  "universidad": "University of Pennsylvania",
+  "ciudad": "Filadelfia, Pennsylvania",
+  "pais": "EE. UU.",
+  "lat": 39.952583,
+  "lon": -75.165222,
+
+  "descripcion": "La Terapia Cognitiva de Beck para la depresión sostiene que el malestar depresivo se mantiene por sesgos sistemáticos en el procesamiento de la información: pensamientos automáticos negativos, errores cognitivos y esquemas disfuncionales que organizan la experiencia, cristalizando la tríada cognitiva (visión negativa de uno mismo, del mundo y del futuro). El tratamiento se estructura como una colaboración empírica (empirismo colaborativo) que entrena al paciente a observar, cuestionar y poner a prueba sus interpretaciones, promoviendo una reevaluación más ajustada de la evidencia y cambios conductuales que retroalimentan el estado de ánimo. Beck introduce el descubrimiento guiado, el trabajo con registros y la lógica de metas, agenda y tareas, estableciendo un modelo clínico replicable que se convierte en la columna vertebral de la TCC moderna.",
+
+  "influencias": [
+    "Psicoanálisis (ruptura)",
+    "Psicología experimental",
+    "Medición psicométrica",
+    "Racionalismo representacional (Cognitivismo clásico)",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "El conocimiento clínico se concibe como una investigación empírica y colaborativa sobre la experiencia del paciente: los significados que atribuye a los eventos son hipótesis que pueden examinarse, contrastarse y revisarse. La realidad psicológica relevante es la realidad interpretada (cogniciones evaluativas y expectativas) en tanto que guía emoción y conducta, y el terapeuta adopta un rol activo, pero no dogmático, orientado a someter las creencias a prueba mediante evidencia y razonamiento. El ser humano es entendido como un procesador de información que construye representaciones del self, del mundo y del futuro, y el cambio ocurre cuando se modifican de forma sistemática los patrones de interpretación y evaluación que organizan la experiencia. (Beck, 1967; Beck et al., 1979).",
+    "teoriaFormal": "La depresión se explica por la activación de esquemas disfuncionales que sesgan la atención, la memoria y la inferencia hacia significados negativos, generando pensamientos automáticos que parecen verdaderos y que organizan la tríada cognitiva. Estos sesgos mantienen un bucle en el que cognición, afecto y conducta se retroalimentan: interpretaciones negativas incrementan tristeza e inhibición, y la reducción de actividad y refuerzo refuerza la confirmación de los esquemas. El cambio terapéutico implica debilitar la credibilidad de los pensamientos automáticos, flexibilizar supuestos y reglas subyacentes, y reconstruir creencias nucleares hacia formulaciones más complejas y funcionales. (Beck, 1967; Beck et al., 1979).",
+    "teoriaClinica": "El caso se conceptualiza identificando síntomas y situaciones diana, pensamientos automáticos y emociones asociadas, patrones de evitación/inhibición conductual y esquemas que sostienen interpretaciones depresógenas. La intervención se organiza con objetivos explícitos, agenda y tareas entre sesiones, combinando evaluación sistemática del pensamiento con pruebas conductuales que generen nueva evidencia experiencial. El progreso se evalúa por cambios en la frecuencia/credibilidad de pensamientos automáticos, la flexibilidad de supuestos, el aumento de actividad adaptativa y la reducción sostenida de síntomas, manteniendo un estilo de trabajo de colaboración empírica y descubrimiento guiado. (Beck et al., 1979)."
+  },
+
+  "mjps": ["N", "RE", "AG", "AP", "RI", "RF", "I"],
+"secuencias": [
+  {
+    "id": "seq_beck_estructura_sesion",
+    "nombre": "Estructura estándar de la sesión en Terapia Cognitiva",
+    "descripcion": "Secuencia explícita que organiza cada sesión de la Terapia Cognitiva de Beck. Esta estructura se repite de forma consistente a lo largo del tratamiento y garantiza foco, colaboración, evaluación continua y transferencia del aprendizaje fuera de sesión.",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Evaluación breve del estado de ánimo y revisión de la semana",
+        "explicacion": "La sesión comienza con una valoración rápida del estado de ánimo actual y de los acontecimientos relevantes desde la última sesión. Esto permite situar el foco clínico y monitorizar cambios emocionales de forma sistemática."
+      },
+      {
+        "orden": 2,
+        "accion": "Establecer agenda colaborativa",
+        "explicacion": "Terapeuta y paciente acuerdan conjuntamente los temas prioritarios a trabajar en la sesión, fomentando participación activa, claridad de objetivos y sentido de control del paciente sobre el proceso."
+      },
+      {
+        "orden": 3,
+        "accion": "Trabajo cognitivo y conductual focalizado",
+        "explicacion": "Se abordan los problemas seleccionados mediante identificación de pensamientos automáticos, cuestionamiento socrático, generación de alternativas y, cuando procede, diseño de experimentos conductuales o activación conductual."
+      },
+      {
+        "orden": 4,
+        "accion": "Síntesis y conclusiones de la sesión",
+        "explicacion": "Se resume de forma colaborativa lo trabajado, reforzando los aprendizajes clave y verificando la comprensión y utilidad percibida por el paciente."
+      },
+      {
+        "orden": 5,
+        "accion": "Asignación de tareas entre sesiones",
+        "explicacion": "Se acuerdan tareas concretas y realizables para practicar las habilidades aprendidas fuera de sesión, favoreciendo generalización y consolidación del cambio."
+      }
+    ]
+  },
+  {
+    "id": "seq_beck_progresion_cognitiva",
+    "nombre": "Progresión cognitiva del cambio terapéutico",
+    "descripcion": "Secuencia conceptual y técnica que describe el orden habitual de trabajo cognitivo en la terapia de Beck, desde cogniciones superficiales hasta estructuras más profundas. Aunque flexible, esta progresión está explícitamente descrita en el modelo original.",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Identificación de pensamientos automáticos",
+        "explicacion": "Se comienza trabajando con pensamientos automáticos negativos vinculados a situaciones concretas, por ser más accesibles, observables y directamente conectados con el afecto."
+      },
+      {
+        "orden": 2,
+        "accion": "Evaluación y reformulación de pensamientos",
+        "explicacion": "Los pensamientos automáticos se examinan como hipótesis mediante evidencia, alternativas y consecuencias, reduciendo su credibilidad y su impacto emocional."
+      },
+      {
+        "orden": 3,
+        "accion": "Identificación de supuestos y reglas intermedias",
+        "explicacion": "A partir de patrones repetidos, se identifican reglas condicionales y actitudes subyacentes que organizan la experiencia cognitiva del paciente."
+      },
+      {
+        "orden": 4,
+        "accion": "Trabajo con esquemas nucleares",
+        "explicacion": "En fases más avanzadas del tratamiento se abordan creencias nucleares rígidas sobre el self, el mundo y el futuro, fundamentales para consolidar el cambio y prevenir recaídas."
+      }
+    ]
+  }
+],
+
+"procedimientos": [
+  {
+    "nombre": "Estructuración de la sesión (agenda, foco y cierre)",
+    "codigo": "p_beck_estructura_sesion",
+    "procesos": ["AG_tomaDecisiones", "N_metacognicion"],
+    "texto": "Procedimiento básico de la Terapia Cognitiva de Beck que organiza cada sesión mediante una agenda colaborativa, revisión breve del estado de ánimo, selección de temas prioritarios, trabajo focalizado y cierre con síntesis y tareas. Esta estructura proporciona predictibilidad, fomenta la participación activa del paciente y asegura que el trabajo cognitivo se mantenga orientado a objetivos clínicos concretos. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Conceptualización cognitiva del caso",
+    "codigo": "p_beck_conceptualizacion",
+    "procesos": ["N_marcosCognitivos", "I_autoimagen"],
+    "texto": "Procedimiento mediante el cual el terapeuta construye junto al paciente una formulación del problema que integra síntomas actuales, situaciones activadoras, pensamientos automáticos, emociones, conductas y esquemas subyacentes. La conceptualización guía la selección de intervenciones y se revisa de forma continua a lo largo del tratamiento. Referencia: Beck et al. (1979); Beck (1967)."
+  },
+  {
+    "nombre": "Psicoeducación en el modelo cognitivo",
+    "codigo": "p_beck_psicoeducacion",
+    "procesos": ["N_metacognicion", "RE_normalizacion"],
+    "texto": "Procedimiento orientado a explicar al paciente la relación entre pensamiento, emoción y conducta, así como la tríada cognitiva de la depresión. La psicoeducación permite que el paciente comprenda el sentido del trabajo terapéutico y adopte una actitud activa y colaborativa frente al cambio. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Identificación de pensamientos automáticos",
+    "codigo": "p_beck_pensamientos_automaticos",
+    "procesos": ["N_identificacionPensamientos", "RE_rotulacion"],
+    "texto": "Procedimiento central que enseña al paciente a detectar pensamientos automáticos negativos asociados a cambios emocionales, especialmente en situaciones cotidianas. Estos pensamientos se formulan como hipótesis examinables y constituyen el punto de entrada principal al trabajo cognitivo en depresión. Referencia: Beck (1967); Beck et al. (1979)."
+  },
+  {
+    "nombre": "Evaluación de evidencia y reestructuración cognitiva",
+    "codigo": "p_beck_reestructuracion",
+    "procesos": ["N_reformulacion", "N_metacognicion"],
+    "texto": "Procedimiento mediante el cual se examina de forma sistemática la evidencia a favor y en contra de los pensamientos automáticos, se generan interpretaciones alternativas más equilibradas y se evalúa su impacto emocional. Este proceso debilita la credibilidad de cogniciones depresógenas sin imponer interpretaciones externas. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Descubrimiento guiado",
+    "codigo": "p_beck_descubrimiento_guiado",
+    "procesos": ["N_insight", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento socrático característico de Beck en el que el terapeuta utiliza preguntas estratégicas para que el paciente examine sus propias creencias y llegue a conclusiones alternativas por sí mismo. Refuerza agencia, aprendizaje autónomo y mantenimiento del cambio. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Registro cognitivo estructurado",
+    "codigo": "p_beck_registro",
+    "procesos": ["N_monitorizacion", "RE_monitorizacion"],
+    "texto": "Uso sistemático de registros escritos para anotar situaciones, pensamientos automáticos, emociones, conductas y respuestas alternativas. El registro permite objetivar patrones cognitivos repetitivos y facilita el trabajo entre sesiones. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Activación conductual",
+    "codigo": "p_beck_activacion_conductual",
+    "procesos": ["AG_compromisoConductual", "RE_regulacionAfectiva"],
+    "texto": "Procedimiento destinado a aumentar progresivamente la implicación del paciente en actividades gratificantes o con sentido, rompiendo el ciclo de inhibición y retraimiento característico de la depresión. En el modelo de Beck, la activación conductual se integra con el trabajo cognitivo y refuerza el cambio emocional. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Experimentos conductuales",
+    "codigo": "p_beck_experimentos",
+    "procesos": ["AG_experimentacion", "N_contrastacion"],
+    "texto": "Procedimiento mediante el cual se diseñan y llevan a cabo pruebas conductuales para contrastar creencias negativas en la vida real. Los experimentos permiten generar evidencia experiencial que modifica convicciones rígidas más eficazmente que la discusión puramente verbal. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Trabajo con supuestos y reglas intermedias",
+    "codigo": "p_beck_supuestos",
+    "procesos": ["N_marcosCognitivos", "I_coherenciaInterna"],
+    "texto": "Procedimiento orientado a identificar y flexibilizar reglas, actitudes y supuestos condicionales del tipo “si… entonces…” que organizan la experiencia depresiva. Este trabajo conecta pensamientos automáticos con esquemas más profundos. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Trabajo con esquemas nucleares",
+    "codigo": "p_beck_esquemas",
+    "procesos": ["I_autoimagen", "N_construccionAlternativa"],
+    "texto": "Procedimiento avanzado que aborda creencias nucleares rígidas sobre el self, el mundo y el futuro, especialmente sentimientos de inutilidad, fracaso o indefensión. La modificación de esquemas es clave para prevenir recaídas y consolidar cambios duraderos. Referencia: Beck (1967); Beck et al. (1979)."
+  },
+  {
+    "nombre": "Asignación y revisión de tareas entre sesiones",
+    "codigo": "p_beck_tareas",
+    "procesos": ["AG_autoriaResponsabilidad", "N_aprendizaje"],
+    "texto": "Procedimiento mediante el cual se acuerdan tareas específicas para practicar habilidades cognitivas y conductuales fuera de sesión, y se revisan sistemáticamente sus resultados. Las tareas consolidan el aprendizaje y fomentan autonomía terapéutica. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Prevención de recaídas",
+    "codigo": "p_beck_prevencion_recaidas",
+    "procesos": ["N_metacognicion", "AG_planificacion"],
+    "texto": "Procedimiento final del tratamiento que identifica señales tempranas de recaída, refuerza habilidades adquiridas y elabora planes de afrontamiento futuros. Busca consolidar una actitud activa y preventiva frente a posibles episodios depresivos. Referencia: Beck et al. (1979)."
+  }
+],
+
+ "micros": [
+  {
+    "nombre": "Definir una agenda colaborativa",
+    "codigo": "m_beck_agenda",
+    "procesos": ["AG_tomaDecisiones", "ALI_colaboracion"],
+    "texto": "Microintervención al inicio de sesión en la que terapeuta y paciente acuerdan conjuntamente los temas a trabajar y el orden de prioridad, promoviendo foco, previsibilidad y participación activa. Refuerza el empirismo colaborativo y la orientación a objetivos. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Escala rápida de estado de ánimo",
+    "codigo": "m_beck_estado_animo",
+    "procesos": ["RE_monitorizacion"],
+    "texto": "Uso breve de una escala subjetiva (0–10) para registrar el estado de ánimo al inicio y cierre de la sesión, facilitando monitorización del cambio y vínculo entre intervenciones y afecto. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Detección de pensamiento automático",
+    "codigo": "m_beck_detectar_pa",
+    "procesos": ["N_identificacionPensamientos"],
+    "texto": "Intervención puntual que invita a identificar el pensamiento que pasó por la mente justo antes del cambio emocional, formulándolo en primera persona y en tiempo presente. Es la puerta de entrada al trabajo cognitivo. Referencia: Beck (1967); Beck et al. (1979)."
+  },
+  {
+    "nombre": "Rotular emoción asociada",
+    "codigo": "m_beck_rotular_emocion",
+    "procesos": ["RE_rotulacion"],
+    "texto": "Nombrar explícitamente la emoción vinculada al pensamiento automático para clarificar la relación cognición–afecto y aumentar conciencia emocional. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Cuestionamiento socrático",
+    "codigo": "m_beck_socratico",
+    "procesos": ["N_metacognicion", "N_reformulacion"],
+    "texto": "Serie breve de preguntas guiadas (evidencia, alternativas, consecuencias) que ayudan al paciente a examinar la validez del pensamiento sin imponer conclusiones, promoviendo insight autónomo. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Búsqueda de evidencia a favor y en contra",
+    "codigo": "m_beck_evidencia",
+    "procesos": ["N_contrastacion"],
+    "texto": "Microintervención que lista datos concretos que apoyan y contradicen un pensamiento automático, debilitando sesgos confirmatorios y favoreciendo interpretaciones más equilibradas. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Generación de pensamiento alternativo",
+    "codigo": "m_beck_alternativo",
+    "procesos": ["N_construccionAlternativa"],
+    "texto": "Formulación breve de una interpretación alternativa más realista y útil, evaluando su credibilidad y efecto emocional inmediato. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Reevaluación emocional tras alternativa",
+    "codigo": "m_beck_reevaluacion_emocion",
+    "procesos": ["RE_monitorizacion"],
+    "texto": "Comparación del nivel emocional antes y después de adoptar el pensamiento alternativo para comprobar impacto y consolidar aprendizaje. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Registro en formato ABC/registro de pensamientos",
+    "codigo": "m_beck_registro_abc",
+    "procesos": ["N_monitorizacion"],
+    "texto": "Anotación estructurada de situación, pensamiento, emoción y respuesta alternativa durante la sesión o como tarea, facilitando objetivación de patrones. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Identificación de distorsión cognitiva",
+    "codigo": "m_beck_distorsiones",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Señalar de forma concreta el tipo de error cognitivo (catastrofismo, sobregeneralización, lectura de mente, etc.) presente en un pensamiento, aumentando distancia reflexiva. Referencia: Beck (1967); Beck et al. (1979)."
+  },
+  {
+    "nombre": "Programación de actividad específica",
+    "codigo": "m_beck_programar_actividad",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Definir una actividad concreta, acotada y calendarizada para la semana, orientada a romper la inhibición conductual y generar refuerzo. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Predicción y comprobación conductual",
+    "codigo": "m_beck_prediccion",
+    "procesos": ["AG_experimentacion", "N_contrastacion"],
+    "texto": "Antes de una tarea, se registra la predicción del resultado y el afecto esperado; después se compara con el resultado real para debilitar creencias negativas. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Revisión de tareas entre sesiones",
+    "codigo": "m_beck_revision_tareas",
+    "procesos": ["AG_aprendizaje"],
+    "texto": "Exploración breve y no punitiva de las tareas realizadas, extrayendo aprendizajes y ajustando dificultades, reforzando adherencia y agencia. Referencia: Beck et al. (1979)."
+  },
+  {
+    "nombre": "Síntesis de sesión",
+    "codigo": "m_beck_sintesis",
+    "procesos": ["N_metacognicion"],
+    "texto": "Resumen colaborativo al final de la sesión que integra lo trabajado y acuerda tareas, consolidando memoria y transferencia del aprendizaje. Referencia: Beck et al. (1979)."
+  }
+],
+
+ "ideasPrincipales": [
+  {
+    "id": "idea_beck_1",
+    "titulo": "La depresión se mantiene por sesgos sistemáticos en el procesamiento cognitivo",
+    "desarrollo": "La terapia cognitiva de Beck sostiene que la depresión no se explica únicamente por acontecimientos vitales negativos, sino por patrones sistemáticos de interpretación sesgada de la experiencia. Estos sesgos afectan a la atención, la memoria y la inferencia, generando una visión persistentemente negativa que mantiene el estado depresivo. (Beck, 1967; Beck et al., 1979)."
+  },
+  {
+    "id": "idea_beck_2",
+    "titulo": "La tríada cognitiva organiza la experiencia depresiva",
+    "desarrollo": "El modelo identifica una tríada cognitiva característica de la depresión: visión negativa de uno mismo, del mundo y del futuro. Estas tres dimensiones se refuerzan mutuamente y proporcionan una estructura coherente, aunque disfuncional, a la experiencia subjetiva del paciente deprimido. (Beck, 1967)."
+  },
+  {
+    "id": "idea_beck_3",
+    "titulo": "Los pensamientos automáticos median entre situación y emoción",
+    "desarrollo": "Beck introduce el concepto de pensamientos automáticos como evaluaciones rápidas, involuntarias y plausibles que median entre los acontecimientos y las respuestas emocionales. Aunque suelen percibirse como hechos objetivos, estos pensamientos son hipótesis cognitivas que pueden ser examinadas y modificadas. (Beck et al., 1979)."
+  },
+  {
+    "id": "idea_beck_4",
+    "titulo": "Los esquemas cognitivos estructuran la vulnerabilidad depresiva",
+    "desarrollo": "Los esquemas son estructuras cognitivas profundas que organizan la interpretación de la experiencia y que, cuando son rígidas y negativas, predisponen a episodios depresivos. La activación de estos esquemas explica la recurrencia de la depresión ante determinados estresores. (Beck, 1967; Beck et al., 1979)."
+  },
+  {
+    "id": "idea_beck_5",
+    "titulo": "La cognición, la emoción y la conducta se retroalimentan",
+    "desarrollo": "El modelo cognitivo plantea una interacción recíproca entre pensamiento, emoción y conducta, de modo que las interpretaciones negativas incrementan la tristeza y la inhibición conductual, y estas a su vez refuerzan la credibilidad de las cogniciones depresógenas. El cambio puede iniciarse desde cualquiera de estos niveles. (Beck et al., 1979)."
+  },
+  {
+    "id": "idea_beck_6",
+    "titulo": "El cambio terapéutico se produce mediante evaluación empírica de creencias",
+    "desarrollo": "Beck concibe el proceso terapéutico como una investigación empírica colaborativa en la que las creencias del paciente se tratan como hipótesis contrastables. El objetivo no es sustituir unas creencias por otras impuestas, sino modificar su grado de credibilidad a la luz de la evidencia. (Beck et al., 1979)."
+  },
+  {
+    "id": "idea_beck_7",
+    "titulo": "El empirismo colaborativo es el núcleo de la relación terapéutica",
+    "desarrollo": "La relación terapéutica en la terapia cognitiva se define por el empirismo colaborativo: terapeuta y paciente trabajan como co-investigadores, compartiendo responsabilidad en la formulación, el contraste de hipótesis y la evaluación del progreso, evitando posiciones autoritarias o pasivas. (Beck et al., 1979)."
+  },
+  {
+    "id": "idea_beck_8",
+    "titulo": "La modificación de esquemas es clave para prevenir recaídas",
+    "desarrollo": "Aunque el alivio sintomático puede lograrse mediante el trabajo con pensamientos automáticos, la prevención de recaídas requiere abordar esquemas y supuestos subyacentes que organizan la vulnerabilidad depresiva. La consolidación del cambio implica una reorganización cognitiva más profunda y estable. (Beck et al., 1979)."
+  }
+],
+
+
+  "refs": [
+    "Beck, A. T. (1967). Depression: Clinical, Experimental, and Theoretical Aspects.",
+    "Beck, A. T., Rush, A. J., Shaw, B. F., & Emery, G. (1979). Cognitive Therapy of Depression."
+  ]
+}
