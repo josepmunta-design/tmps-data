@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_monitorizacion",
-  "updatedAt": "2026-02-08T17:27:28.764Z",
-  "totalModelos": 4,
+  "updatedAt": "2026-02-08T17:27:59.911Z",
+  "totalModelos": 5,
   "modelos": [
     {
       "modelId": "emdr-shapiro-1989",
@@ -90,6 +90,29 @@
           "codigo": "m_se_chequeo_activacion",
           "nombre": "Chequeo continuo de nivel de activación",
           "texto": "Evaluación repetida y explícita del nivel de activación autonómica mediante observación de respiración, tono muscular, ritmo cardíaco subjetivo y claridad perceptiva, permitiendo ajustar ritmo e intensidad del trabajo antes de que aparezca desbordamiento o colapso. Referencia: Levine (2010).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "istdp-davanloo-1978",
+      "modelLabel": "ISTDP (Intensive Short-Term Dynamic Psychotherapy)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Habib Davanloo",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "p_istdp_ansiedad_somatica",
+          "nombre": "Seguimiento de señales somáticas de ansiedad",
+          "texto": "Procedimiento técnico clave que monitoriza de forma continua las manifestaciones somáticas de la ansiedad (tensión muscular, respiración, síntomas gastrointestinales, disociación) para determinar la capacidad del sistema nervioso de procesar afecto. El terapeuta ajusta la presión o regula la intervención según la vía de descarga de la ansiedad. Referencia: Davanloo, H. (1990); Abbass, A. (2015).",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_istdp_lectura_ansiedad",
+          "nombre": "Lectura de ansiedad a partir del cuerpo",
+          "texto": "Microintervención observacional que verbaliza signos somáticos de ansiedad (tensión mandibular, respiración superficial, mareo, somnolencia) para ajustar la intensidad del trabajo. Permite decidir si aumentar presión, clarificar defensas o regular antes de continuar. Referencia: Davanloo, H. (1990); Abbass, A. (2015).",
           "sub": "RE_monitorizacion",
           "tipo": "micro"
         }

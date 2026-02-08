@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_insightPsicodinamico",
-  "updatedAt": "2026-02-08T17:27:28.764Z",
-  "totalModelos": 18,
+  "updatedAt": "2026-02-08T17:27:59.911Z",
+  "totalModelos": 19,
   "modelos": [
     {
       "modelId": "analisis-bioenergetico",
@@ -348,6 +348,43 @@
           "codigo": "m_freud_topo_retorno_elemento",
           "nombre": "Retorno a un elemento previamente mencionado",
           "texto": "Microintervención que recupera una palabra, imagen o recuerdo mencionado anteriormente para reactivar asociaciones y detectar conexiones latentes. Favorece la elaboración progresiva del material inconsciente sin necesidad de interpretación directa. Referencia: Freud, S. (1900). *The Interpretation of Dreams*.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "istdp-davanloo-1978",
+      "modelLabel": "ISTDP (Intensive Short-Term Dynamic Psychotherapy)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Habib Davanloo",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "p_istdp_evaluacion_dinamica",
+          "nombre": "Evaluación dinámica inicial y formulación del foco",
+          "texto": "Procedimiento inicial orientado a evaluar la capacidad del paciente para tolerar afecto, identificar defensas predominantes, nivel de resistencia y patrón de ansiedad, y formular un foco dinámico claro ligado al conflicto central inconsciente. La evaluación no es descriptiva, sino activa, observando en tiempo real cómo el paciente responde a la presión emocional y a la exploración directa del conflicto. Referencia: Davanloo, H. (1990). *Unlocking the Unconscious*.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_istdp_clarificacion_defensas",
+          "nombre": "Clarificación de defensas",
+          "texto": "Procedimiento mediante el cual el terapeuta identifica, nombra y describe de forma explícita las defensas que el paciente utiliza en sesión para evitar el contacto con afectos dolorosos o prohibidos. La clarificación no confronta aún, sino que hace visible la función defensiva y su coste, preparando el terreno para intervenciones más activas sobre la resistencia. Referencia: Davanloo, H. (1990); Abbass, A. (2015).",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_istdp_senalamiento_defensa",
+          "nombre": "Señalamiento inmediato de una defensa en curso",
+          "texto": "Microintervención que nombra en el momento exacto una defensa activa (intelectualización, evitación visual, humor, pasividad) y la vincula con su función de evitar el afecto. El señalamiento es descriptivo y concreto, sin interpretación histórica, con el objetivo de aumentar conciencia y reducir la eficacia defensiva en tiempo real. Referencia: Davanloo, H. (1990). *Unlocking the Unconscious*.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_istdp_vinculo_afecto_defensa",
+          "nombre": "Vinculación inmediata afecto–defensa",
+          "texto": "Intervención que conecta explícitamente un aumento de afecto con la defensa que surge para evitarlo, mostrando su secuencia funcional en tiempo real. Incrementa comprensión implícita y debilita la automatización defensiva. Referencia: Davanloo, H. (1990).",
           "sub": "N_insightPsicodinamico",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-08T17:27:28.764Z",
-  "totalModelos": 28,
+  "updatedAt": "2026-02-08T17:27:59.911Z",
+  "totalModelos": 29,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -583,6 +583,43 @@
           "codigo": "m_freud_topo_sensaciones",
           "nombre": "Invitación a describir sensaciones al recordar",
           "texto": "Intervención breve que pide al paciente que describa sensaciones o afectos asociados a un recuerdo o imagen, facilitando el paso del material desde lo implícito a lo preconsciente y enriqueciendo la comprensión del significado latente. Referencia: Freud, S. (1900).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "istdp-davanloo-1978",
+      "modelLabel": "ISTDP (Intensive Short-Term Dynamic Psychotherapy)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Habib Davanloo",
+      "modelYear": 1978,
+      "items": [
+        {
+          "codigo": "p_istdp_evaluacion_dinamica",
+          "nombre": "Evaluación dinámica inicial y formulación del foco",
+          "texto": "Procedimiento inicial orientado a evaluar la capacidad del paciente para tolerar afecto, identificar defensas predominantes, nivel de resistencia y patrón de ansiedad, y formular un foco dinámico claro ligado al conflicto central inconsciente. La evaluación no es descriptiva, sino activa, observando en tiempo real cómo el paciente responde a la presión emocional y a la exploración directa del conflicto. Referencia: Davanloo, H. (1990). *Unlocking the Unconscious*.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_istdp_presion_afecto",
+          "nombre": "Presión terapéutica graduada hacia el afecto",
+          "texto": "Procedimiento central de ISTDP que consiste en incrementar de forma progresiva la invitación al contacto con afectos subyacentes al conflicto, manteniendo el foco en experiencias emocionales concretas y actuales. La presión es ajustada continuamente según la respuesta del paciente y su nivel de ansiedad, evitando tanto la evitación crónica como el desbordamiento. Referencia: Davanloo, H. (1990).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_istdp_presion_focal",
+          "nombre": "Presión focal hacia el afecto específico",
+          "texto": "Intervención breve que incrementa la invitación a contactar con un afecto concreto que está emergiendo (por ejemplo, rabia o tristeza), formulada de manera directa y sostenida. La presión se mantiene mientras el paciente pueda tolerarla, ajustándose continuamente a las señales de ansiedad observadas. Referencia: Davanloo, H. (1990).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_istdp_pregunta_afecto",
+          "nombre": "Pregunta directa orientada al afecto",
+          "texto": "Pregunta simple y directa del tipo “¿qué siente ahora hacia…?” utilizada para cortar narrativas defensivas y llevar la atención al afecto presente. Esta microintervención reduce la elaboración cognitiva y facilita el acceso experiencial inmediato. Referencia: Davanloo, H. (1990).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }
