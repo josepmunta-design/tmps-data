@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-08T17:47:26.995Z",
-  "totalModelos": 74,
+  "updatedAt": "2026-02-08T17:54:05.646Z",
+  "totalModelos": 75,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -56,6 +56,36 @@
           "codigo": "m_cft_dose_titration",
           "nombre": "Titulación de compasión (dosis tolerable)",
           "texto": "Introducir compasión en microdosis para no disparar vergüenza: frases mínimas, prácticas breves, más cuerpo y menos narrativa al inicio.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "pst-solucion-problemas-dzurilla-goldfried-1971",
+      "modelLabel": "Terapia de Solución de Problemas (PST)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas J. D’Zurilla; Marvin R. Goldfried; Arthur M. Nezu",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_pst_orientacion_positiva",
+          "nombre": "Entrenamiento en orientación positiva al problema",
+          "texto": "Procedimiento dirigido a transformar la respuesta inicial ante dificultades: pasar de amenaza/fracaso personal a reto abordable, aumentando autoeficacia y tolerancia al malestar para poder pensar con claridad. Incluye identificar autoverbalizaciones desorganizadoras (“no puedo”, “es demasiado”), reemplazarlas por formulaciones funcionales (“puedo dar un primer paso”, “puedo probar opciones”), y entrenar una postura de aproximación que reduzca parálisis y evitación. (D’Zurilla & Nezu, 2007; D’Zurilla & Goldfried, 1971).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pst_implementacion_plan",
+          "nombre": "Plan de implementación y ejecución (descomposición en pasos + barreras)",
+          "texto": "Procedimiento para convertir la decisión en un plan conductual ejecutable: se divide en pasos pequeños, se calendariza, se prevén obstáculos (emocionales, contextuales, relacionales), se planifican respuestas alternativas y se establecen apoyos o recordatorios. Incluye ensayar la primera acción concreta (el “primer paso”) y acordar tareas entre sesiones, de modo que el método impacte en la vida cotidiana y genere feedback real. (D’Zurilla & Nezu, 2007; D’Zurilla & Goldfried, 1971).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pst_coste_emocional",
+          "nombre": "Evaluar coste emocional de cada opción",
+          "texto": "Microintervención que incorpora explícitamente el impacto emocional anticipado de cada alternativa, evitando decisiones aparentemente racionales pero inviables por sobrecarga afectiva. (D’Zurilla & Nezu, 2007).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }
