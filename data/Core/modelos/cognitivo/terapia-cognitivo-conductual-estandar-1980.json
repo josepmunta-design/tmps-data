@@ -1,0 +1,333 @@
+{
+  "id": "terapia-cognitivo-conductual-estandar-1980",
+  "grupo": "Cognitivo",
+  "label": "Terapia cognitivo-conductual estándar",
+  "year": 1980,
+  "importance": 3,
+  "autores": "Aaron T. Beck; Albert Ellis; Donald Meichenbaum; Thomas D’Zurilla",
+  "universidad": "",
+  "ciudad": "Estados Unidos",
+  "pais": "EE. UU.",
+  "lat": 39.828175,
+  "lon": -98.579500,
+
+  "descripcion": "La Terapia Cognitivo-Conductual estándar (TCC) surge en las décadas de 1970 y 1980 como una síntesis operativa de la terapia cognitiva de Beck, la terapia racional emotiva de Ellis, la modificación cognitivo-conductual de Meichenbaum y los principios del condicionamiento operante y el aprendizaje social. A diferencia de los modelos fundacionales específicos, la TCC estándar no se define por una teoría psicopatológica propia, sino por un marco pragmático de intervención centrado en la interacción pensamiento–emoción–conducta, la formulación de problemas, la psicoeducación, la evaluación empírica y la aplicación sistemática de técnicas cognitivo-conductuales. Su objetivo es modificar patrones desadaptativos actuales mediante procedimientos estructurados, replicables y evaluables, consolidándose como el enfoque hegemónico de la segunda generación de la TCC.",
+
+  "influencias": [
+    "Terapia cognitiva (depresión)",
+    "Terapia racional emotiva conductual (REBT)",
+    "Condicionamiento operante",
+    "Aprendizaje social",
+    "Empirismo objetivista / Positivismo lógico",
+    "Racionalismo representacional (Cognitivismo clásico)"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "",
+    "teoriaFormal": "",
+    "teoriaClinica": ""
+  },
+
+  "mjps": ["N", "RE", "AG", "AP", "RF"],
+
+"secuencias": [
+  {
+    "id": "seq_tccstd_ciclo_intervencion",
+    "nombre": "Ciclo estándar de intervención cognitivo-conductual",
+    "descripcion": "Secuencia explícita y recurrente en la literatura clásica de la Terapia Cognitivo-Conductual estándar que describe el ciclo básico de evaluación, intervención y aprendizaje. No es un protocolo cerrado ni diagnóstico-específico, sino una lógica operativa que se repite a lo largo del tratamiento y organiza la práctica clínica basada en evidencia.",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Evaluar el problema actual y definir objetivos",
+        "explicacion": "El proceso comienza con la evaluación del problema presente, su formulación funcional y la definición de objetivos concretos y observables. Esta fase traduce las quejas del paciente en metas clínicas operativas que guían la selección de técnicas."
+      },
+      {
+        "orden": 2,
+        "accion": "Seleccionar estrategias cognitivo-conductuales",
+        "explicacion": "A partir de la conceptualización del caso, el terapeuta elige procedimientos adecuados (reestructuración cognitiva, exposición, activación, entrenamiento en habilidades, etc.) en función de los mecanismos identificados, manteniendo un criterio pragmático y empírico."
+      },
+      {
+        "orden": 3,
+        "accion": "Aplicar la intervención y asignar tareas",
+        "explicacion": "Las técnicas seleccionadas se aplican en sesión y se extienden fuera de ella mediante tareas estructuradas, experimentos conductuales y práctica deliberada, favoreciendo la generalización del aprendizaje."
+      },
+      {
+        "orden": 4,
+        "accion": "Evaluar resultados y extraer aprendizaje",
+        "explicacion": "Se revisan los efectos de la intervención utilizando registros, medidas subjetivas u observación conductual, identificando qué ha funcionado y qué no, y explicitando el aprendizaje obtenido."
+      },
+      {
+        "orden": 5,
+        "accion": "Ajustar la formulación y continuar el ciclo",
+        "explicacion": "En función de los resultados, se ajustan hipótesis, objetivos y estrategias, reiniciando el ciclo de intervención de forma iterativa hasta alcanzar los cambios deseados o redefinir el foco terapéutico."
+      }
+    ]
+  }
+],
+
+  
+"procedimientos": [
+  {
+    "nombre": "Evaluación inicial estructurada y establecimiento de objetivos",
+    "codigo": "p_tccstd_evaluacion_objetivos",
+    "procesos": ["N_metacognicion", "AG_tomaDecisiones"],
+    "texto": "Procedimiento de inicio en TCC estándar que recoge historia del problema, síntomas actuales, contexto, recursos y limitaciones, y traduce las quejas en objetivos operativos y medibles. Se define qué se quiere cambiar, cómo se sabrá que ha cambiado y qué indicadores se monitorizarán, con un estilo pragmático y centrado en problemas que orienta toda la intervención posterior. Referencia: Meichenbaum (1977); Mahoney (1974)."
+  },
+  {
+    "nombre": "Conceptualización cognitivo-conductual del caso",
+    "codigo": "p_tccstd_conceptualizacion",
+    "procesos": ["N_marcosCognitivos", "AP_analisisFuncional"],
+    "texto": "Procedimiento que integra una formulación funcional y cognitiva del problema en términos de disparadores, interpretaciones, emociones, respuestas fisiológicas y patrones conductuales mantenedores. A diferencia del modelo de Beck centrado en depresión, aquí la conceptualización es transdiagnóstica y orientada a seleccionar técnicas (exposición, reestructuración, habilidades) según los mecanismos relevantes en el caso. Referencia: Meichenbaum (1977); Mahoney (1974)."
+  },
+  {
+    "nombre": "Psicoeducación y modelo pensamiento–emoción–conducta",
+    "codigo": "p_tccstd_psicoeducacion",
+    "procesos": ["N_metacognicion", "RE_normalizacion"],
+    "texto": "Procedimiento transversal que explica el modelo cognitivo-conductual básico y el racional de las técnicas, incluyendo el papel de la evitación, el refuerzo, las creencias y la atención selectiva. La psicoeducación se usa para aumentar comprensión, adherencia y expectativa de cambio, convirtiendo el tratamiento en un aprendizaje activo más que en una conversación exploratoria. Referencia: Mahoney (1974); Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Estructuración de sesión (agenda, tareas, revisión y cierre)",
+    "codigo": "p_tccstd_estructura_sesion",
+    "procesos": ["AG_planificacion", "N_monitorizacion"],
+    "texto": "Procedimiento de organización del trabajo clínico que estandariza la sesión: revisión breve de estado y tareas, fijación de agenda, intervención focalizada y cierre con síntesis y nuevas tareas. Esta estructura sostiene la eficiencia, permite seguimiento empírico y facilita generalización del aprendizaje, siendo un rasgo definitorio de la TCC estándar como práctica profesionalizada. Referencia: Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Auto-registro y monitorización sistemática",
+    "codigo": "p_tccstd_autoregistro",
+    "procesos": ["N_monitorizacion", "RE_monitorizacion"],
+    "texto": "Procedimiento que utiliza registros de pensamientos, emociones, conductas, situaciones y consecuencias para objetivar patrones y detectar disparadores y mantenedores. El auto-registro permite medir progreso, identificar sesgos y convertir la experiencia cotidiana en datos clínicos útiles, haciendo posible la intervención basada en evidencia dentro del propio caso. Referencia: Mahoney (1974); Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Reestructuración cognitiva transdiagnóstica",
+    "codigo": "p_tccstd_reestructuracion",
+    "procesos": ["N_reformulacion", "N_contrastacion"],
+    "texto": "Procedimiento que identifica cogniciones desadaptativas (pensamientos automáticos, inferencias, interpretaciones y creencias) y las somete a examen mediante evidencia, alternativas y pruebas en la realidad. En TCC estándar la reestructuración se aplica de forma transversal a múltiples problemas (ansiedad, depresión, ira, culpa) y se integra con tareas conductuales para producir cambio estable. Referencia: Mahoney (1974); Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Entrenamiento en solución de problemas",
+    "codigo": "p_tccstd_solucion_problemas",
+    "procesos": ["AG_tomaDecisiones", "N_planificacion"],
+    "texto": "Procedimiento estructurado para abordar problemas cotidianos mediante definición precisa del problema, generación de alternativas, evaluación de consecuencias, selección de la mejor opción y planificación de implementación. Es un núcleo de la TCC estándar por su valor transdiagnóstico y por reforzar agencia y afrontamiento activo, especialmente en depresión y estrés. Referencia: D’Zurilla & Goldfried (1971); D’Zurilla & Nezu (1982)."
+  },
+  {
+    "nombre": "Activación conductual y programación de actividades",
+    "codigo": "p_tccstd_activacion_conductual",
+    "procesos": ["AG_compromisoConductual", "RE_regulacionAfectiva"],
+    "texto": "Procedimiento que incrementa sistemáticamente actividades gratificantes, valiosas o de dominio para romper ciclos de evitación e inhibición. En TCC estándar se utiliza tanto en depresión como en apatía, anhedonia y retraimiento por ansiedad, combinando planificación, seguimiento y análisis de barreras para restaurar refuerzo y sentido de eficacia. Referencia: Lewinsohn (1974); Beck et al. (1979)."
+  },
+  {
+    "nombre": "Exposición gradual (en vivo, imaginaria e interoceptiva)",
+    "codigo": "p_tccstd_exposicion",
+    "procesos": ["AP_exposicion", "RE_modulacion"],
+    "texto": "Procedimiento conductual esencial en la TCC estándar para problemas de ansiedad y evitación, que consiste en afrontar de forma planificada estímulos temidos (externos, internos o recuerdos) para reducir miedo condicionado y conductas de seguridad, promoviendo aprendizaje inhibitorio y habituación cuando procede. Se aplica con jerarquías, prevención de escape y revisión de resultados. Referencia: Wolpe (1958); Foa & Kozak (1986)."
+  },
+  {
+    "nombre": "Desensibilización sistemática y contracondicionamiento",
+    "codigo": "p_tccstd_desensibilizacion",
+    "procesos": ["AP_exposicion", "RE_modulacion"],
+    "texto": "Procedimiento clásico integrado en la tradición TCC que combina exposición imaginada gradual con respuestas incompatibles con la ansiedad (relajación), para debilitar asociaciones fóbicas y aumentar tolerancia a estímulos temidos. Aunque hoy se usa menos que la exposición directa, forma parte del repertorio estándar histórico de la segunda generación. Referencia: Wolpe (1958)."
+  },
+  {
+    "nombre": "Relajación y entrenamiento fisiológico básico",
+    "codigo": "p_tccstd_relajacion",
+    "procesos": ["RF_downregulation", "RE_modulacion"],
+    "texto": "Procedimiento orientado a reducir activación fisiológica mediante técnicas como relajación muscular progresiva, respiración lenta o entrenamiento en señales corporales. Se emplea como apoyo en ansiedad, estrés y control de impulsos, y como componente de preparación para exposición o afrontamiento de activación intensa. Referencia: Bernstein & Borkovec (1973)."
+  },
+  {
+    "nombre": "Entrenamiento en habilidades sociales y asertividad",
+    "codigo": "p_tccstd_habilidades_sociales",
+    "procesos": ["R_habilidadesSociales", "AG_practica"],
+    "texto": "Procedimiento que enseña habilidades de comunicación, asertividad, negociación y manejo de conflictos mediante modelado, role-playing, retroalimentación y tareas en contextos reales. Se utiliza en problemas de inhibición social, dependencia, ira y dificultades interpersonales, integrando aprendizaje social y práctica conductual. Referencia: Bandura (1977); Liberman (1982)."
+  },
+  {
+    "nombre": "Entrenamiento en inoculación de estrés",
+    "codigo": "p_tccstd_inoculacion_estres",
+    "procesos": ["RE_modulacion", "AG_planificacion"],
+    "texto": "Procedimiento integrador de Meichenbaum que prepara al paciente para manejar estresores mediante psicoeducación, reestructuración de autoverbalizaciones, ensayo de afrontamiento y práctica en escenarios graduados. Es característico de la TCC estándar por su enfoque de entrenamiento en habilidades aplicables a múltiples problemas. Referencia: Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Entrenamiento en autoinstrucciones",
+    "codigo": "p_tccstd_autoinstrucciones",
+    "procesos": ["N_autoverbalizacion", "AG_autocontrol"],
+    "texto": "Procedimiento que modifica el diálogo interno para mejorar autorregulación, afrontamiento y rendimiento, sustituyendo autoverbalizaciones desorganizadoras por autoinstrucciones funcionales. Se aplica en impulsividad, ansiedad de desempeño, ira y tareas complejas, enfatizando práctica y generalización. Referencia: Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Prevención de respuesta y eliminación de conductas de seguridad",
+    "codigo": "p_tccstd_prevencion_respuesta",
+    "procesos": ["AP_exposicion", "AG_inhibicionImpulsos"],
+    "texto": "Procedimiento complementario a la exposición que impide rituales, evitación sutil o conductas de seguridad que mantienen el problema (por ejemplo, comprobaciones, neutralizaciones, escapes), favoreciendo aprendizaje correctivo. Es un componente estándar en el tratamiento de TOC y ansiedad mantenida por evitación. Referencia: Meyer (1966); Foa & Kozak (1986)."
+  },
+  {
+    "nombre": "Manejo de contingencias y refuerzo",
+    "codigo": "p_tccstd_contingencias",
+    "procesos": ["AG_habitos", "AP_aprendizaje"],
+    "texto": "Procedimiento conductual que identifica contingencias que mantienen conductas problema y reorganiza consecuencias para aumentar conductas adaptativas mediante refuerzo diferencial, control de estímulos y planificación de recompensas. En TCC estándar se integra con objetivos cognitivos para sostener cambios observables en la vida diaria. Referencia: Skinner (1953); Ferster (1973)."
+  },
+  {
+    "nombre": "Prevención de recaídas y plan de mantenimiento",
+    "codigo": "p_tccstd_prevencion_recaidas",
+    "procesos": ["AG_planificacion", "N_metacognicion"],
+    "texto": "Procedimiento de cierre que consolida habilidades aprendidas, identifica señales tempranas de recaída, elabora planes de afrontamiento y prepara al paciente para manejar futuros episodios sin dependencia del terapeuta. En TCC estándar es un elemento distintivo de orientación a autonomía y continuidad del cambio. Referencia: Marlatt & Gordon (1985)."
+  },
+  {
+    "nombre": "Generalización y transferencia del aprendizaje",
+    "codigo": "p_tccstd_generalizacion",
+    "procesos": ["AG_aprendizaje", "AP_generalizacion"],
+    "texto": "Procedimiento transversal que asegura que lo aprendido en sesión se aplica en contextos cotidianos mediante práctica planificada, variación de situaciones, seguimiento de resultados y ajuste de estrategias. La generalización es un criterio de éxito central en la TCC estándar por su orientación empírica y funcional. Referencia: Bandura (1977); Meichenbaum (1977)."
+  }
+],
+
+"micros": [
+  {
+    "nombre": "Definir objetivo conductual concreto",
+    "codigo": "m_tccstd_objetivo_concreto",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Microintervención que traduce una queja vaga en un objetivo observable, específico y medible (qué, cuándo, cuánto), facilitando foco y evaluación del cambio. Es característica de la orientación pragmática de la TCC estándar. Referencia: Mahoney (1974)."
+  },
+  {
+    "nombre": "Auto-registro inmediato de situación",
+    "codigo": "m_tccstd_autoregistro_situacion",
+    "procesos": ["N_monitorizacion"],
+    "texto": "Invitación puntual a anotar una situación concreta cuando ocurre o inmediatamente después, capturando contexto, respuesta y consecuencia para análisis funcional posterior. Referencia: Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Identificar conducta de evitación",
+    "codigo": "m_tccstd_evitacion",
+    "procesos": ["AP_analisisFuncional"],
+    "texto": "Señalar explícitamente una conducta de evitación activa o sutil que reduce malestar a corto plazo pero mantiene el problema, preparándola para intervención conductual. Referencia: Wolpe (1958); Foa & Kozak (1986)."
+  },
+  {
+    "nombre": "Describir cadena A-B-C",
+    "codigo": "m_tccstd_abc",
+    "procesos": ["AP_analisisFuncional", "N_metacognicion"],
+    "texto": "Microintervención que ordena una experiencia concreta en antecedentes, conducta y consecuencias, facilitando comprensión funcional sin entrar aún en creencias profundas. Referencia: Skinner (1953); Mahoney (1974)."
+  },
+  {
+    "nombre": "Formular predicción conductual",
+    "codigo": "m_tccstd_prediccion",
+    "procesos": ["N_contrastacion"],
+    "texto": "Antes de una tarea o exposición, se formula una predicción explícita sobre lo que ocurrirá, creando una hipótesis contrastable que luego se compara con el resultado real. Referencia: Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Cuestionar utilidad de una cognición",
+    "codigo": "m_tccstd_utilidad_cognicion",
+    "procesos": ["N_reformulacion"],
+    "texto": "Intervención breve que evalúa una cognición por su utilidad funcional más que por su veracidad filosófica, diferenciando TCC estándar de enfoques más racionalistas. Referencia: Mahoney (1974)."
+  },
+  {
+    "nombre": "Programar tarea graduada",
+    "codigo": "m_tccstd_tarea_graduada",
+    "procesos": ["AG_planificacion"],
+    "texto": "Definición de una tarea con dificultad ajustada y pasos progresivos para asegurar ejecución y refuerzo temprano, clave en activación y exposición. Referencia: Lewinsohn (1974)."
+  },
+  {
+    "nombre": "Eliminar conducta de seguridad",
+    "codigo": "m_tccstd_seguridad",
+    "procesos": ["AP_exposicion"],
+    "texto": "Identificación y retirada explícita de conductas que reducen ansiedad durante la exposición pero impiden el aprendizaje correctivo. Referencia: Foa & Kozak (1986)."
+  },
+  {
+    "nombre": "Ensayo conductual en sesión",
+    "codigo": "m_tccstd_ensayo",
+    "procesos": ["AG_practica"],
+    "texto": "Práctica breve en sesión de una conducta o habilidad (decir no, pedir algo, afrontar estímulo) antes de llevarla al contexto real. Referencia: Bandura (1977)."
+  },
+  {
+    "nombre": "Modelado explícito del terapeuta",
+    "codigo": "m_tccstd_modelado",
+    "procesos": ["AP_aprendizaje"],
+    "texto": "El terapeuta muestra de forma directa una conducta o habilidad para facilitar aprendizaje vicario y reducir incertidumbre del paciente. Referencia: Bandura (1977)."
+  },
+  {
+    "nombre": "Feedback conductual inmediato",
+    "codigo": "m_tccstd_feedback",
+    "procesos": ["AG_aprendizaje"],
+    "texto": "Retroalimentación concreta y descriptiva tras una conducta o ensayo, enfocada en qué funcionó y qué ajustar, evitando interpretaciones globales. Referencia: Liberman (1982)."
+  },
+  {
+    "nombre": "Entrenar respiración lenta",
+    "codigo": "m_tccstd_respiracion",
+    "procesos": ["RF_downregulation"],
+    "texto": "Instrucción breve para ralentizar respiración y reducir activación fisiológica, usada como apoyo en ansiedad y control de impulsos, no como evitación. Referencia: Bernstein & Borkovec (1973)."
+  },
+  {
+    "nombre": "Rotular respuesta fisiológica",
+    "codigo": "m_tccstd_rotular_fisiologia",
+    "procesos": ["RE_rotulacion"],
+    "texto": "Nombrar sensaciones corporales específicas para reducir catastrofismo somático y aumentar discriminación interoceptiva. Referencia: Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Reforzar logro conductual",
+    "codigo": "m_tccstd_refuerzo",
+    "procesos": ["AG_habitos"],
+    "texto": "Señalar y reforzar explícitamente un avance conductual, consolidando repetición del comportamiento adaptativo mediante refuerzo diferencial. Referencia: Ferster (1973)."
+  },
+  {
+    "nombre": "Revisar tarea sin juicio",
+    "codigo": "m_tccstd_revision_tarea",
+    "procesos": ["AG_aprendizaje"],
+    "texto": "Explorar una tarea realizada o no realizada desde un enfoque funcional y no punitivo, identificando barreras y ajustando el plan. Referencia: Meichenbaum (1977)."
+  },
+  {
+    "nombre": "Extraer aprendizaje de la experiencia",
+    "codigo": "m_tccstd_aprendizaje_experiencia",
+    "procesos": ["N_metacognicion"],
+    "texto": "Cierre micro de una intervención conductual o experimento para explicitar qué se ha aprendido y cómo aplicarlo a otros contextos. Referencia: Mahoney (1974)."
+  },
+  {
+    "nombre": "Síntesis funcional de sesión",
+    "codigo": "m_tccstd_sintesis",
+    "procesos": ["N_metacognicion"],
+    "texto": "Resumen breve que integra conductas, cogniciones y aprendizajes clave de la sesión, asegurando transferencia y claridad antes del cierre. Referencia: Meichenbaum (1977)."
+  }
+],
+
+"ideasPrincipales": [
+  {
+    "id": "idea_tccstd_1",
+    "titulo": "La psicopatología se mantiene por patrones actuales modificables",
+    "desarrollo": "La TCC estándar parte del supuesto de que los problemas psicológicos se sostienen principalmente por patrones actuales de pensamiento, emoción y conducta, más que por causas históricas profundas. El foco terapéutico se sitúa en identificar y modificar estos patrones presentes para producir alivio clínico eficaz y medible. (Mahoney, 1974; Meichenbaum, 1977)."
+  },
+  {
+    "id": "idea_tccstd_2",
+    "titulo": "Pensamiento, emoción y conducta interactúan de forma recíproca",
+    "desarrollo": "El modelo cognitivo-conductual estándar concibe la experiencia psicológica como el resultado de la interacción dinámica entre cogniciones, respuestas emocionales, activación fisiológica y conductas observables. El cambio puede iniciarse en cualquiera de estos niveles y propagarse al resto del sistema. (Mahoney, 1974)."
+  },
+  {
+    "id": "idea_tccstd_3",
+    "titulo": "La intervención se orienta a problemas concretos y objetivos operativos",
+    "desarrollo": "A diferencia de modelos explicativos cerrados, la TCC estándar se define por su orientación pragmática a problemas específicos y metas formuladas en términos observables y evaluables. El éxito terapéutico se valora por cambios funcionales en la vida cotidiana del paciente. (Meichenbaum, 1977)."
+  },
+  {
+    "id": "idea_tccstd_4",
+    "titulo": "La terapia es un proceso de aprendizaje activo",
+    "desarrollo": "La TCC estándar entiende la psicoterapia como un proceso de aprendizaje en el que el paciente adquiere habilidades cognitivas, conductuales y emocionales aplicables fuera de sesión. La generalización del aprendizaje es un criterio central de eficacia clínica. (Bandura, 1977; Meichenbaum, 1977)."
+  },
+  {
+    "id": "idea_tccstd_5",
+    "titulo": "La evidencia empírica guía la práctica clínica",
+    "desarrollo": "El modelo se apoya en principios de evaluación empírica, tanto a nivel de investigación como dentro del propio caso clínico, utilizando registros, medidas y contrastación de hipótesis para guiar decisiones terapéuticas. (Mahoney, 1974)."
+  },
+  {
+    "id": "idea_tccstd_6",
+    "titulo": "La modificación conductual es un componente central del cambio",
+    "desarrollo": "La TCC estándar integra principios del condicionamiento operante y del aprendizaje social, considerando que la exposición, el refuerzo y la práctica conductual son mecanismos fundamentales para producir cambios estables, más allá de la comprensión cognitiva. (Skinner, 1953; Bandura, 1977)."
+  },
+  {
+    "id": "idea_tccstd_7",
+    "titulo": "La relación terapéutica es colaborativa y funcional",
+    "desarrollo": "Aunque no se teoriza como agente de cambio en sí mismo, la relación terapéutica en la TCC estándar se concibe como una colaboración activa orientada a objetivos, basada en claridad de roles, psicoeducación y trabajo conjunto, facilitando adherencia y compromiso. (Meichenbaum, 1977)."
+  },
+  {
+    "id": "idea_tccstd_8",
+    "titulo": "La autonomía del paciente es un objetivo explícito",
+    "desarrollo": "El tratamiento busca que el paciente desarrolle competencias para convertirse en su propio terapeuta, previniendo recaídas mediante habilidades de afrontamiento, planificación y autoevaluación que puedan mantenerse tras el alta. (Marlatt & Gordon, 1985)."
+  }
+],
+
+
+  "refs": [
+    "Mahoney, M. J. (1974). Cognition and Behavior Modification.",
+    "Meichenbaum, D. (1977). Cognitive-Behavior Modification: An Integrative Approach."
+  ]
+}
