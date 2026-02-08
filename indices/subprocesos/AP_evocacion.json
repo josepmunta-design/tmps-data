@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-08T16:09:44.427Z",
-  "totalModelos": 26,
+  "updatedAt": "2026-02-08T16:22:25.673Z",
+  "totalModelos": 27,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -481,6 +481,36 @@
           "codigo": "m_erskine_preguntaContacto",
           "nombre": "Pregunta de contacto experiencial",
           "texto": "Microintervención que invita al paciente a describir su experiencia inmediata (sensaciones, emociones, impulsos) en lugar de narrativas explicativas, facilitando el acceso al aquí-y-ahora experiencial. Esta pregunta ayuda a desplazar el foco desde la cognición defensiva hacia el contacto emocional. (Erskine, 2015)",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "freud-modelo-estructural-ello-yo-superyo-1923",
+      "modelLabel": "Modelo estructural (Ello–Yo–Superyó)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Sigmund Freud",
+      "modelYear": 1923,
+      "items": [
+        {
+          "codigo": "p_freud_asociacion_libre",
+          "nombre": "Asociación libre",
+          "texto": "Procedimiento base para producir material psíquico relativamente no censurado: el paciente verbaliza pensamientos, imágenes, recuerdos y afectos tal como surgen, incluyendo lo aparentemente irrelevante, facilitando que emerjan derivaciones del conflicto (deseo, defensa, culpa, angustia) y permitiendo al terapeuta detectar patrones, desplazamientos y zonas de resistencia que orientan la interpretación hacia el conflicto estructural Ello–Yo–Superyó. Referencia: Freud, S. (1904/1913). Technique of Psycho-Analysis (escritos técnicos, varios).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_suenos",
+          "nombre": "Interpretación de sueños (contenido manifiesto/latente)",
+          "texto": "Procedimiento de acceso al material inconsciente a través del análisis del trabajo del sueño (condensación, desplazamiento, figurabilidad, elaboración secundaria), diferenciando contenido manifiesto y latente. En el marco estructural, el sueño se comprende además como escenario donde se negocian deseos del Ello, censura/sanción superyoica y soluciones de compromiso del Yo, ofreciendo una vía privilegiada para mapear conflicto y defensas con menor censura consciente. Referencia: Freud, S. (1900). The Interpretation of Dreams.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_freud_lapsus_compromiso",
+          "nombre": "Lectura de un lapsus o acto fallido como formación de compromiso",
+          "texto": "Microintervención que toma un lapsus, olvido significativo o error cotidiano como pista para explorar deseo, censura y defensa, sin convertirlo en “prueba” sino en invitación a asociar; su valor es abrir una vía suave de acceso al conflicto cuando el contenido directo es demasiado amenazante para el Yo. Referencia: Freud, S. (1901). The Psychopathology of Everyday Life.",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }

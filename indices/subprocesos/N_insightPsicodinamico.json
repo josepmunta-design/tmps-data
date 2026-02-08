@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_insightPsicodinamico",
-  "updatedAt": "2026-02-08T16:09:44.427Z",
-  "totalModelos": 14,
+  "updatedAt": "2026-02-08T16:22:25.673Z",
+  "totalModelos": 15,
   "modelos": [
     {
       "modelId": "analisis-bioenergetico",
@@ -113,6 +113,113 @@
           "codigo": "m_bion_devolver_metabolizado",
           "nombre": "Devolver experiencia emocional metabolizada",
           "texto": "Microintervención en la que el analista devuelve en palabras simples una experiencia previamente recibida de forma caótica, mostrando cómo algo inicialmente intolerable puede transformarse en pensamiento compartido (Bion, 1963, *Elements of Psycho-Analysis*).",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "freud-modelo-estructural-ello-yo-superyo-1923",
+      "modelLabel": "Modelo estructural (Ello–Yo–Superyó)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Sigmund Freud",
+      "modelYear": 1923,
+      "items": [
+        {
+          "codigo": "p_freud_asociacion_libre",
+          "nombre": "Asociación libre",
+          "texto": "Procedimiento base para producir material psíquico relativamente no censurado: el paciente verbaliza pensamientos, imágenes, recuerdos y afectos tal como surgen, incluyendo lo aparentemente irrelevante, facilitando que emerjan derivaciones del conflicto (deseo, defensa, culpa, angustia) y permitiendo al terapeuta detectar patrones, desplazamientos y zonas de resistencia que orientan la interpretación hacia el conflicto estructural Ello–Yo–Superyó. Referencia: Freud, S. (1904/1913). Technique of Psycho-Analysis (escritos técnicos, varios).",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_transferencia",
+          "nombre": "Análisis de la transferencia",
+          "texto": "Procedimiento central por el cual se observa y trabaja la reactivación en la relación terapéutica de prototipos relacionales y conflictos intrapsíquicos: deseos, temores, defensas y expectativas se despliegan con el terapeuta como objeto actual, permitiendo identificar la repetición, comprender su función y elaborar nuevas formas de relación interna y externa a través del insight y la experiencia relacional sostenida. Referencia: Freud, S. (1912). The Dynamics of Transference.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_resistencias",
+          "nombre": "Análisis de resistencias",
+          "texto": "Procedimiento destinado a identificar, señalar y comprender los movimientos (conscientes e inconscientes) que bloquean el acceso al conflicto: silencios, olvidos, intelectualización, cambios de tema, acting-out o adhesión rígida al síntoma. El trabajo consiste en hacer visible la función protectora de la resistencia, su relación con angustia y culpa, y facilitar una aproximación gradual que el Yo pueda tolerar, evitando tanto la confrontación brusca como la collusión con la evitación. Referencia: Freud, S. (1914). Remembering, Repeating and Working-Through.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_interpretacion_estructural",
+          "nombre": "Interpretación del conflicto estructural (Ello–Yo–Superyó)",
+          "texto": "Procedimiento interpretativo que formula hipótesis clínicas sobre cómo se organiza el conflicto entre impulsos (Ello), defensas/mediaciones (Yo) y exigencias normativas/ideales (Superyó), conectándolo con síntomas, angustia y culpa en el aquí-y-ahora. La interpretación eficaz integra contenido y función (qué deseo aparece, qué castigo superyoico lo prohíbe, qué defensa yoica lo maneja) y lo vincula con la historia y la transferencia, favoreciendo una comprensión que reorganiza la relación interna y reduce la necesidad del síntoma. Referencia: Freud, S. (1923). The Ego and the Id.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_defensas_yo",
+          "nombre": "Análisis de defensas (estilo defensivo del Yo)",
+          "texto": "Procedimiento de lectura clínica del repertorio defensivo: se identifican defensas predominantes (represión, negación, aislamiento, formación reactiva, proyección, racionalización, etc.), su función protectora y sus costes (rigidez, síntomas, empobrecimiento afectivo). El objetivo no es “quitar defensas” sino flexibilizarlas, ampliar opciones yoicas y permitir que afectos e impulsos sean simbolizados sin colapso, reduciendo el control punitivo del Superyó o la descarga impulsiva del Ello. Referencia: Freud, A. (1936). The Ego and the Mechanisms of Defence.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_working_through",
+          "nombre": "Trabajo de elaboración (working-through)",
+          "texto": "Procedimiento longitudinal por el cual el insight se consolida a través de repeticiones clínicas: el mismo conflicto reaparece en nuevas variantes (síntoma, relación, sueño, sesión), y el trabajo consiste en sostener interpretaciones, revisar defensas y tolerar afectos hasta que el Yo integre de forma más estable lo antes reprimido o negado. La elaboración transforma comprensión puntual en cambio estructural, disminuyendo la compulsión a la repetición y ampliando libertad interna. Referencia: Freud, S. (1914). Remembering, Repeating and Working-Through.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_suenos",
+          "nombre": "Interpretación de sueños (contenido manifiesto/latente)",
+          "texto": "Procedimiento de acceso al material inconsciente a través del análisis del trabajo del sueño (condensación, desplazamiento, figurabilidad, elaboración secundaria), diferenciando contenido manifiesto y latente. En el marco estructural, el sueño se comprende además como escenario donde se negocian deseos del Ello, censura/sanción superyoica y soluciones de compromiso del Yo, ofreciendo una vía privilegiada para mapear conflicto y defensas con menor censura consciente. Referencia: Freud, S. (1900). The Interpretation of Dreams.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_freud_senalamiento_resistencia",
+          "nombre": "Señalamiento de resistencia en tiempo real",
+          "texto": "Microintervención breve que pone en palabras, en el momento, el giro defensivo (cambio de tema, risa, intelectualización, olvido) y lo vincula con un aumento de tensión o evitación, abriendo curiosidad sin confrontación hostil; su función es crear un puente entre experiencia inmediata y comprensión del conflicto, manteniendo al Yo dentro de una ventana tolerable. Referencia: Freud, S. (1914). Remembering, Repeating and Working-Through.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_triangulo_deseo_defensa_angustia",
+          "nombre": "Clarificación del triángulo deseo–defensa–angustia",
+          "texto": "Microintervención que ayuda a discriminar qué deseo/impulso se activa, qué defensa aparece para manejarlo y qué forma de angustia o culpa emerge como señal; esta clarificación reduce confusión, organiza el material clínico y prepara interpretaciones más profundas del conflicto estructural sin saturar al paciente. Referencia: Freud, S. (1926). Inhibitions, Symptoms and Anxiety.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_hipotesis_superyo_punitivo",
+          "nombre": "Hipótesis del Superyó punitivo (voz crítica y castigo interno)",
+          "texto": "Microintervención que formula con tacto la posibilidad de que la autoacusación, vergüenza o necesidad de castigo expresen una severidad superyoica internalizada (ideales imposibles, mandatos, prohibiciones), conectándola con inhibiciones y sufrimiento; busca descentrar la culpa moral absoluta y abrir una lectura histórica y funcional de la autocrítica. Referencia: Freud, S. (1923). The Ego and the Id.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_vinculo_repeticion_historia",
+          "nombre": "Vincular un patrón actual con una repetición histórica",
+          "texto": "Microintervención que enlaza un episodio presente (síntoma, conflicto relacional, decisión) con un patrón repetido en la biografía, destacando continuidad y función defensiva; su efecto es convertir la repetición en material pensable, disminuyendo la vivencia de inevitabilidad y aumentando libertad para elegir respuestas nuevas. Referencia: Freud, S. (1914). Remembering, Repeating and Working-Through.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_interpretacion_tentativa",
+          "nombre": "Interpretación tentativa (en forma de posibilidad, no de sentencia)",
+          "texto": "Microintervención que ofrece una interpretación como hipótesis (“me pregunto si…”, “podría ser que…”) para reducir reactancia y permitir que el paciente la pruebe desde su experiencia, favoreciendo colaboración y precisión clínica; es especialmente útil cuando el Yo está frágil o la resistencia está alta, manteniendo el trabajo interpretativo sin ruptura. Referencia: Freud, S. (1912). Recommendations to Physicians Practising Psycho-Analysis.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_nombrar_ambivalencia",
+          "nombre": "Nombrar la ambivalencia (amor–rabia, deseo–miedo, autonomía–lealtad)",
+          "texto": "Microintervención que identifica y valida la coexistencia de emociones o tendencias opuestas, reduciendo la necesidad de defensas polarizadoras; al hacer explícita la ambivalencia se facilita que el Yo integre sin escisión y se debilite la compulsión a resolver el conflicto vía síntoma o auto-castigo. Referencia: Freud, S. (1915). Papers on Metapsychology.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_lapsus_compromiso",
+          "nombre": "Lectura de un lapsus o acto fallido como formación de compromiso",
+          "texto": "Microintervención que toma un lapsus, olvido significativo o error cotidiano como pista para explorar deseo, censura y defensa, sin convertirlo en “prueba” sino en invitación a asociar; su valor es abrir una vía suave de acceso al conflicto cuando el contenido directo es demasiado amenazante para el Yo. Referencia: Freud, S. (1901). The Psychopathology of Everyday Life.",
           "sub": "N_insightPsicodinamico",
           "tipo": "micro"
         }
