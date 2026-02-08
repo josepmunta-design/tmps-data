@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_rotulacion",
-  "updatedAt": "2026-02-08T17:24:14.395Z",
-  "totalModelos": 46,
+  "updatedAt": "2026-02-08T17:27:28.764Z",
+  "totalModelos": 47,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -1041,6 +1041,43 @@
           "codigo": "m_bowlby_activar_apego",
           "nombre": "Nombrar activación del sistema de apego",
           "texto": "Microintervención que pone palabras claras a la activación del sistema de apego en el momento presente (miedo, urgencia, hipervigilancia, retirada), ayudando al paciente a reconocer la reacción como una respuesta adaptativa ante amenaza relacional y no como un fallo personal (Bowlby, 1969, *Attachment*).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_clarificacion",
+          "nombre": "Clarificación",
+          "texto": "Procedimiento técnico básico orientado a ayudar al paciente a describir con mayor precisión sus estados internos, conductas, afectos y percepciones relacionales, especialmente cuando el discurso es confuso, contradictorio o desorganizado. La clarificación aumenta la coherencia del material clínico y prepara el terreno para intervenciones más profundas sin confrontar prematuramente defensas. Referencia: Kernberg (1984); Yeomans et al. (2015).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_transferencia_aqui_ahora",
+          "nombre": "Señalar la activación transferencial inmediata",
+          "texto": "Microintervención consistente en señalar explícitamente que una reacción emocional intensa del paciente está ocurriendo en relación directa con el terapeuta en el momento presente, ayudando a desplazar el foco desde eventos externos hacia la dinámica transferencial viva. Facilita conciencia del aquí-y-ahora sin interpretar aún el significado profundo. Referencia: Kernberg (1984); Yeomans et al. (2015).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tfp_rotulacion_afecto",
+          "nombre": "Nombrar el afecto dominante",
+          "texto": "Intervención breve que identifica y nombra el afecto principal que organiza la experiencia del paciente en ese momento (rabia, miedo, desprecio, idealización), especialmente cuando aparece de forma confusa o desbordante. Ayuda a estabilizar el material clínico y preparar la exploración estructural posterior. Referencia: Clarkin et al. (2006).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tfp_secuencia",
+          "nombre": "Clarificar secuencia afecto–fantasía–conducta",
+          "texto": "Intervención breve que ordena la experiencia inmediata del paciente distinguiendo qué sintió, qué pensó del otro y cómo actuó, ayudando a estructurar material clínico fragmentado y a reducir confusión interna. Referencia: Clarkin et al. (2006).",
           "sub": "RE_rotulacion",
           "tipo": "micro"
         }

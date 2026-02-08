@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_coregulacion",
-  "updatedAt": "2026-02-08T17:24:14.395Z",
-  "totalModelos": 14,
+  "updatedAt": "2026-02-08T17:27:28.764Z",
+  "totalModelos": 15,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -248,6 +248,36 @@
           "codigo": "m_bowlby_anclar_regulacion",
           "nombre": "Anclar regulación emocional en la relación",
           "texto": "Intervención breve que utiliza la presencia, el tono y la coherencia relacional del terapeuta para co-regular estados emocionales intensos, permitiendo que el paciente experimente seguridad antes de intentar autorregularse (Bowlby, 1969, *Attachment*; Schore, 2001, *Effects of Secure Attachment*).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_neutralidad",
+          "nombre": "Neutralidad técnica estructurada",
+          "texto": "Procedimiento que mantiene una postura técnica activa pero no colusiva, evitando alinearse con polos idealizados o devaluados del self del paciente. La neutralidad en TFP no es pasividad, sino una posición estructurante que permite que las escisiones se desplieguen y puedan ser analizadas sin reforzarse. Referencia: Kernberg (1984); Clarkin et al. (2006).",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_neutralidad_idealizacion",
+          "nombre": "Mantener neutralidad frente a idealización",
+          "texto": "Intervención mínima consistente en no reforzar verbal ni conductualmente la idealización del terapeuta, manteniendo una respuesta estable y no colusiva. Previene la cristalización de polos idealizados que sostienen la escisión. Referencia: Kernberg (1984).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tfp_neutralidad_devaluacion",
+          "nombre": "Mantener neutralidad frente a devaluación",
+          "texto": "Microintervención que sostiene una posición firme y regulada frente a ataques, descalificaciones o desconfianza extrema del paciente, evitando respuestas defensivas o punitivas. Permite que el afecto agresivo se mantenga presente sin ruptura del encuadre. Referencia: Yeomans et al. (2015).",
           "sub": "R_coregulacion",
           "tipo": "micro"
         }

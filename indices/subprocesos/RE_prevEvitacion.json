@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-08T17:24:14.395Z",
-  "totalModelos": 20,
+  "updatedAt": "2026-02-08T17:27:28.764Z",
+  "totalModelos": 21,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -510,6 +510,29 @@
           "codigo": "m_bowlby_retirada_defensiva",
           "nombre": "Señalar retirada defensiva",
           "texto": "Microintervención que identifica el distanciamiento emocional o la autosuficiencia rígida como estrategias de apego evitativo ante el riesgo de decepción, facilitando una comprensión más compasiva del propio cierre afectivo (Bowlby, 1973, *Separation: Anxiety and Anger*).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_acting_out",
+          "nombre": "Manejo del acting out",
+          "texto": "Procedimiento orientado a identificar, contener y analizar conductas impulsivas o destructivas que el paciente enactúa fuera de sesión como expresión de conflictos transferenciales no mentalizados. El acting out se aborda siempre dentro del marco contractual y se vincula explícitamente a la dinámica relacional activada con el terapeuta. Referencia: Kernberg (1984); Clarkin et al. (2006).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_acting_transferencia",
+          "nombre": "Vincular conducta impulsiva con transferencia",
+          "texto": "Microintervención que conecta una conducta impulsiva o acting out reciente con la dinámica transferencial activada en sesión, ayudando al paciente a reconocer la función relacional de la conducta sin moralizarla. Refuerza responsabilidad sin culpabilización. Referencia: Clarkin et al. (2006).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

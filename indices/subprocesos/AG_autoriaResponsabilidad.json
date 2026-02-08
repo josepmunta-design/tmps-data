@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-02-08T17:24:14.395Z",
-  "totalModelos": 60,
+  "updatedAt": "2026-02-08T17:27:28.764Z",
+  "totalModelos": 61,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -1240,6 +1240,43 @@
           "codigo": "m_sullivan_pausa_respuesta",
           "nombre": "Invitar a pausa antes de responder",
           "texto": "Intervención breve que propone detener la respuesta automática ante ansiedad interpersonal, creando un espacio mínimo para elegir una conducta distinta y más alineada con los objetivos relacionales.",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_contrato",
+          "nombre": "Contrato terapéutico estructurado",
+          "texto": "Procedimiento inicial y continuo en TFP que establece de forma explícita el encuadre del tratamiento, incluyendo objetivos, roles, responsabilidades del paciente y del terapeuta, reglas sobre conductas suicidas, parasuicidas, acting out y uso de recursos externos. El contrato no es meramente administrativo, sino una intervención clínica central que protege el tratamiento, previene rupturas graves y sitúa la responsabilidad del control conductual dentro de la relación terapéutica. Referencia: Clarkin, Yeomans & Kernberg (2006/2015).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tfp_acting_out",
+          "nombre": "Manejo del acting out",
+          "texto": "Procedimiento orientado a identificar, contener y analizar conductas impulsivas o destructivas que el paciente enactúa fuera de sesión como expresión de conflictos transferenciales no mentalizados. El acting out se aborda siempre dentro del marco contractual y se vincula explícitamente a la dinámica relacional activada con el terapeuta. Referencia: Kernberg (1984); Clarkin et al. (2006).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_acting_transferencia",
+          "nombre": "Vincular conducta impulsiva con transferencia",
+          "texto": "Microintervención que conecta una conducta impulsiva o acting out reciente con la dinámica transferencial activada en sesión, ayudando al paciente a reconocer la función relacional de la conducta sin moralizarla. Refuerza responsabilidad sin culpabilización. Referencia: Clarkin et al. (2006).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tfp_encuadre",
+          "nombre": "Reafirmar encuadre ante presión transferencial",
+          "texto": "Microintervención que recuerda de forma clara y no reactiva los límites del encuadre cuando el paciente intenta transgredirlos desde la transferencia (exigencias especiales, amenazas de abandono, ataques al tratamiento). Protege la continuidad del proceso. Referencia: Clarkin et al. (2006).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }
