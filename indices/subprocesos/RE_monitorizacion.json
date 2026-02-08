@@ -1,8 +1,38 @@
 {
   "subprocesoId": "RE_monitorizacion",
-  "updatedAt": "2026-02-08T17:27:59.911Z",
-  "totalModelos": 5,
+  "updatedAt": "2026-02-08T17:40:12.768Z",
+  "totalModelos": 6,
   "modelos": [
+    {
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_beck_registro",
+          "nombre": "Registro cognitivo estructurado",
+          "texto": "Uso sistemático de registros escritos para anotar situaciones, pensamientos automáticos, emociones, conductas y respuestas alternativas. El registro permite objetivar patrones cognitivos repetitivos y facilita el trabajo entre sesiones. Referencia: Beck et al. (1979).",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_beck_estado_animo",
+          "nombre": "Escala rápida de estado de ánimo",
+          "texto": "Uso breve de una escala subjetiva (0–10) para registrar el estado de ánimo al inicio y cierre de la sesión, facilitando monitorización del cambio y vínculo entre intervenciones y afecto. Referencia: Beck et al. (1979).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_beck_reevaluacion_emocion",
+          "nombre": "Reevaluación emocional tras alternativa",
+          "texto": "Comparación del nivel emocional antes y después de adoptar el pensamiento alternativo para comprobar impacto y consolidar aprendizaje. Referencia: Beck et al. (1979).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "emdr-shapiro-1989",
       "modelLabel": "EMDR",

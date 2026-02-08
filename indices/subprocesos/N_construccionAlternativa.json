@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_construccionAlternativa",
-  "updatedAt": "2026-02-08T17:27:59.911Z",
-  "totalModelos": 26,
+  "updatedAt": "2026-02-08T17:40:12.768Z",
+  "totalModelos": 27,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -86,6 +86,29 @@
           "codigo": "m_rebt_prediccion",
           "nombre": "Predicciones alternativas racionales",
           "texto": "Generar resultados alternativos realistas frente a predicciones catastróficas.\n(Referencia: DiGiuseppe et al., 2014.)",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_beck_esquemas",
+          "nombre": "Trabajo con esquemas nucleares",
+          "texto": "Procedimiento avanzado que aborda creencias nucleares rígidas sobre el self, el mundo y el futuro, especialmente sentimientos de inutilidad, fracaso o indefensión. La modificación de esquemas es clave para prevenir recaídas y consolidar cambios duraderos. Referencia: Beck (1967); Beck et al. (1979).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_beck_alternativo",
+          "nombre": "Generación de pensamiento alternativo",
+          "texto": "Formulación breve de una interpretación alternativa más realista y útil, evaluando su credibilidad y efecto emocional inmediato. Referencia: Beck et al. (1979).",
           "sub": "N_construccionAlternativa",
           "tipo": "micro"
         }

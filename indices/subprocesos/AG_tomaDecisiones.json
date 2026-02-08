@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-08T17:27:59.911Z",
-  "totalModelos": 47,
+  "updatedAt": "2026-02-08T17:40:12.768Z",
+  "totalModelos": 48,
   "modelos": [
     {
       "modelId": "rebt-terapia-racional-emotiva-ellis",
@@ -14,6 +14,29 @@
           "codigo": "m_rebt_pragmatico",
           "nombre": "Debate pragmático",
           "texto": "Evaluar si mantener la creencia ayuda o perjudica en términos de metas y bienestar.\n(Referencia: DiGiuseppe et al., 2014.)",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_beck_estructura_sesion",
+          "nombre": "Estructuración de la sesión (agenda, foco y cierre)",
+          "texto": "Procedimiento básico de la Terapia Cognitiva de Beck que organiza cada sesión mediante una agenda colaborativa, revisión breve del estado de ánimo, selección de temas prioritarios, trabajo focalizado y cierre con síntesis y tareas. Esta estructura proporciona predictibilidad, fomenta la participación activa del paciente y asegura que el trabajo cognitivo se mantenga orientado a objetivos clínicos concretos. Referencia: Beck et al. (1979).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_beck_agenda",
+          "nombre": "Definir una agenda colaborativa",
+          "texto": "Microintervención al inicio de sesión en la que terapeuta y paciente acuerdan conjuntamente los temas a trabajar y el orden de prioridad, promoviendo foco, previsibilidad y participación activa. Refuerza el empirismo colaborativo y la orientación a objetivos. Referencia: Beck et al. (1979).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

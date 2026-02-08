@@ -1,19 +1,26 @@
 {
   "subprocesoId": "N_monitorizacion",
-  "updatedAt": "2026-02-07T19:55:04.401Z",
+  "updatedAt": "2026-02-08T17:40:12.768Z",
   "totalModelos": 1,
   "modelos": [
     {
-      "modelId": "programas-refuerzo-skinner-1957",
-      "modelLabel": "Programas de refuerzo",
-      "modelGrupo": "Conductismo",
-      "modelAutores": "C. B. Ferster; B. F. Skinner",
-      "modelYear": 1957,
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck",
+      "modelYear": 1967,
       "items": [
         {
-          "codigo": "m_refuerzo_pausa_post",
-          "nombre": "Pausa post-refuerzo",
-          "texto": "Observación y manejo de la disminución temporal de la respuesta inmediatamente después del reforzamiento, especialmente característica de programas de razón fija e intervalo fijo. Esta microintervención permite ajustar el programa para optimizar continuidad y evitar interpretaciones erróneas de pérdida de aprendizaje. Referencia: Ferster & Skinner (1957), *Schedules of Reinforcement*.",
+          "codigo": "p_beck_registro",
+          "nombre": "Registro cognitivo estructurado",
+          "texto": "Uso sistemático de registros escritos para anotar situaciones, pensamientos automáticos, emociones, conductas y respuestas alternativas. El registro permite objetivar patrones cognitivos repetitivos y facilita el trabajo entre sesiones. Referencia: Beck et al. (1979).",
+          "sub": "N_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_beck_registro_abc",
+          "nombre": "Registro en formato ABC/registro de pensamientos",
+          "texto": "Anotación estructurada de situación, pensamiento, emoción y respuesta alternativa durante la sesión o como tarea, facilitando objetivación de patrones. Referencia: Beck et al. (1979).",
           "sub": "N_monitorizacion",
           "tipo": "micro"
         }

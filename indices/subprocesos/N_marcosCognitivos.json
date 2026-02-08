@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-02-08T17:27:59.911Z",
-  "totalModelos": 33,
+  "updatedAt": "2026-02-08T17:40:12.768Z",
+  "totalModelos": 34,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -67,6 +67,36 @@
           "codigo": "m_rebt_demanda",
           "nombre": "Identificación de demandas irracionales",
           "texto": "Detectar exigencias absolutistas (“debo hacerlo perfecto”, “no puedo fallar”) y convertirlas en preferencias.\n(Referencia: Ellis, 1962.)",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_beck_conceptualizacion",
+          "nombre": "Conceptualización cognitiva del caso",
+          "texto": "Procedimiento mediante el cual el terapeuta construye junto al paciente una formulación del problema que integra síntomas actuales, situaciones activadoras, pensamientos automáticos, emociones, conductas y esquemas subyacentes. La conceptualización guía la selección de intervenciones y se revisa de forma continua a lo largo del tratamiento. Referencia: Beck et al. (1979); Beck (1967).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_beck_supuestos",
+          "nombre": "Trabajo con supuestos y reglas intermedias",
+          "texto": "Procedimiento orientado a identificar y flexibilizar reglas, actitudes y supuestos condicionales del tipo “si… entonces…” que organizan la experiencia depresiva. Este trabajo conecta pensamientos automáticos con esquemas más profundos. Referencia: Beck et al. (1979).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_beck_distorsiones",
+          "nombre": "Identificación de distorsión cognitiva",
+          "texto": "Señalar de forma concreta el tipo de error cognitivo (catastrofismo, sobregeneralización, lectura de mente, etc.) presente en un pensamiento, aumentando distancia reflexiva. Referencia: Beck (1967); Beck et al. (1979).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-08T17:27:59.911Z",
-  "totalModelos": 78,
+  "updatedAt": "2026-02-08T17:40:12.768Z",
+  "totalModelos": 79,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -102,6 +102,57 @@
           "codigo": "m_rebt_demanda",
           "nombre": "Identificación de demandas irracionales",
           "texto": "Detectar exigencias absolutistas (“debo hacerlo perfecto”, “no puedo fallar”) y convertirlas en preferencias.\n(Referencia: Ellis, 1962.)",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_beck_estructura_sesion",
+          "nombre": "Estructuración de la sesión (agenda, foco y cierre)",
+          "texto": "Procedimiento básico de la Terapia Cognitiva de Beck que organiza cada sesión mediante una agenda colaborativa, revisión breve del estado de ánimo, selección de temas prioritarios, trabajo focalizado y cierre con síntesis y tareas. Esta estructura proporciona predictibilidad, fomenta la participación activa del paciente y asegura que el trabajo cognitivo se mantenga orientado a objetivos clínicos concretos. Referencia: Beck et al. (1979).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_beck_psicoeducacion",
+          "nombre": "Psicoeducación en el modelo cognitivo",
+          "texto": "Procedimiento orientado a explicar al paciente la relación entre pensamiento, emoción y conducta, así como la tríada cognitiva de la depresión. La psicoeducación permite que el paciente comprenda el sentido del trabajo terapéutico y adopte una actitud activa y colaborativa frente al cambio. Referencia: Beck et al. (1979).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_beck_reestructuracion",
+          "nombre": "Evaluación de evidencia y reestructuración cognitiva",
+          "texto": "Procedimiento mediante el cual se examina de forma sistemática la evidencia a favor y en contra de los pensamientos automáticos, se generan interpretaciones alternativas más equilibradas y se evalúa su impacto emocional. Este proceso debilita la credibilidad de cogniciones depresógenas sin imponer interpretaciones externas. Referencia: Beck et al. (1979).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_beck_prevencion_recaidas",
+          "nombre": "Prevención de recaídas",
+          "texto": "Procedimiento final del tratamiento que identifica señales tempranas de recaída, refuerza habilidades adquiridas y elabora planes de afrontamiento futuros. Busca consolidar una actitud activa y preventiva frente a posibles episodios depresivos. Referencia: Beck et al. (1979).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_beck_socratico",
+          "nombre": "Cuestionamiento socrático",
+          "texto": "Serie breve de preguntas guiadas (evidencia, alternativas, consecuencias) que ayudan al paciente a examinar la validez del pensamiento sin imponer conclusiones, promoviendo insight autónomo. Referencia: Beck et al. (1979).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_beck_sintesis",
+          "nombre": "Síntesis de sesión",
+          "texto": "Resumen colaborativo al final de la sesión que integra lo trabajado y acuerda tareas, consolidando memoria y transferencia del aprendizaje. Referencia: Beck et al. (1979).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

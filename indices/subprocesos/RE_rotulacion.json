@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_rotulacion",
-  "updatedAt": "2026-02-08T17:27:59.911Z",
-  "totalModelos": 48,
+  "updatedAt": "2026-02-08T17:40:12.768Z",
+  "totalModelos": 49,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -35,6 +35,29 @@
           "codigo": "m_cft_name_shame",
           "nombre": "Nombrar vergüenza como emoción social",
           "texto": "Rotular “esto es vergüenza” y ligarla a pertenencia/exclusión reduce confusión y moralización (“soy malo”) y permite trabajar desde compasión.",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_beck_pensamientos_automaticos",
+          "nombre": "Identificación de pensamientos automáticos",
+          "texto": "Procedimiento central que enseña al paciente a detectar pensamientos automáticos negativos asociados a cambios emocionales, especialmente en situaciones cotidianas. Estos pensamientos se formulan como hipótesis examinables y constituyen el punto de entrada principal al trabajo cognitivo en depresión. Referencia: Beck (1967); Beck et al. (1979).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_beck_rotular_emocion",
+          "nombre": "Rotular emoción asociada",
+          "texto": "Nombrar explícitamente la emoción vinculada al pensamiento automático para clarificar la relación cognición–afecto y aumentar conciencia emocional. Referencia: Beck et al. (1979).",
           "sub": "RE_rotulacion",
           "tipo": "micro"
         }

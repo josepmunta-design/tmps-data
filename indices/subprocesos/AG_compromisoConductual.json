@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-08T17:27:59.911Z",
-  "totalModelos": 76,
+  "updatedAt": "2026-02-08T17:40:12.768Z",
+  "totalModelos": 77,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -132,6 +132,29 @@
           "codigo": "m_rebt_riesgo",
           "nombre": "Entrenamiento en riesgo social",
           "texto": "Pequeños actos que desafían miedo al juicio: hacer preguntas simples, pedir aclaraciones, exponerse al error.\n(Referencia: Ellis, 1962.)",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck",
+      "modelYear": 1967,
+      "items": [
+        {
+          "codigo": "p_beck_activacion_conductual",
+          "nombre": "Activación conductual",
+          "texto": "Procedimiento destinado a aumentar progresivamente la implicación del paciente en actividades gratificantes o con sentido, rompiendo el ciclo de inhibición y retraimiento característico de la depresión. En el modelo de Beck, la activación conductual se integra con el trabajo cognitivo y refuerza el cambio emocional. Referencia: Beck et al. (1979).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_beck_programar_actividad",
+          "nombre": "Programación de actividad específica",
+          "texto": "Definir una actividad concreta, acotada y calendarizada para la semana, orientada a romper la inhibición conductual y generar refuerzo. Referencia: Beck et al. (1979).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
