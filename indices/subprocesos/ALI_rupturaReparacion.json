@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ALI_rupturaReparacion",
-  "updatedAt": "2026-02-08T16:46:23.442Z",
-  "totalModelos": 12,
+  "updatedAt": "2026-02-08T17:00:40.084Z",
+  "totalModelos": 13,
   "modelos": [
     {
       "modelId": "psicoterapia-constructivista-integrativa",
@@ -131,6 +131,29 @@
           "codigo": "m_neopsy_reparacion_inmediata",
           "nombre": "Reparación relacional inmediata tras micro-ruptura",
           "texto": "Intervención breve para cerrar un malentendido en sesión (nombrar, validar, aclarar intención y pedir/otorgar reparación), modelando una salida distinta a la habitual.",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "modelLabel": "Psicoanálisis relacional",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Jay R. Greenberg; Stephen A. Mitchell",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_relacional_ruptura_reparacion",
+          "nombre": "Trabajo con rupturas y reparaciones relacionales",
+          "texto": "Procedimiento orientado a detectar, explorar y reparar rupturas en la relación terapéutica, entendidas como momentos de desajuste, retraimiento, confrontación o pérdida de sintonía. En el enfoque relacional, estas rupturas no se evitan ni se interpretan únicamente, sino que se utilizan como oportunidades privilegiadas para generar experiencias relacionales nuevas, donde el conflicto puede ser reconocido, mentalizado y reparado sin abandono. Referencia: Safran & Muran (2000); Mitchell (1997).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_relacional_error",
+          "nombre": "Reconocer un error terapéutico",
+          "texto": "Intervención breve en la que el terapeuta reconoce explícitamente un error, malentendido o intervención desafinada, mostrando responsabilidad relacional. Tiene un potente efecto reparador y modela una forma no defensiva de afrontar el conflicto interpersonal. Referencia: Safran & Muran (2000).",
           "sub": "ALI_rupturaReparacion",
           "tipo": "micro"
         }

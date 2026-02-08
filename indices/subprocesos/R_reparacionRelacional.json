@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_reparacionRelacional",
-  "updatedAt": "2026-02-08T16:46:23.442Z",
-  "totalModelos": 27,
+  "updatedAt": "2026-02-08T17:00:40.084Z",
+  "totalModelos": 28,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -322,6 +322,43 @@
           "codigo": "m_neopsy_reparacion_inmediata",
           "nombre": "Reparación relacional inmediata tras micro-ruptura",
           "texto": "Intervención breve para cerrar un malentendido en sesión (nombrar, validar, aclarar intención y pedir/otorgar reparación), modelando una salida distinta a la habitual.",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "modelLabel": "Psicoanálisis relacional",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Jay R. Greenberg; Stephen A. Mitchell",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_relacional_enactments",
+          "nombre": "Exploración de enactments relacionales",
+          "texto": "Procedimiento orientado a identificar y trabajar los enactments que emergen en la relación terapéutica, entendidos como escenas relacionales cocreadas que no pueden pensarse inicialmente de forma reflexiva. En lugar de interpretarlos como resistencias del paciente, se consideran expresiones del campo relacional que involucran a ambos participantes. El análisis posterior del enactment permite transformar una repetición implícita en una experiencia relacional consciente y potencialmente correctiva. Referencia: Mitchell (1997); Stern et al. (1998).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_relacional_ruptura_reparacion",
+          "nombre": "Trabajo con rupturas y reparaciones relacionales",
+          "texto": "Procedimiento orientado a detectar, explorar y reparar rupturas en la relación terapéutica, entendidas como momentos de desajuste, retraimiento, confrontación o pérdida de sintonía. En el enfoque relacional, estas rupturas no se evitan ni se interpretan únicamente, sino que se utilizan como oportunidades privilegiadas para generar experiencias relacionales nuevas, donde el conflicto puede ser reconocido, mentalizado y reparado sin abandono. Referencia: Safran & Muran (2000); Mitchell (1997).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_relacional_desacelerar_enactment",
+          "nombre": "Desacelerar un enactment incipiente",
+          "texto": "Intervención mínima orientada a frenar una escalada relacional emergente (silencio prolongado, confrontación brusca, retirada), invitando a pausar y observar lo que está ocurriendo entre ambos antes de actuar. Previene la cristalización del enactment y abre espacio para la simbolización. Referencia: Stern et al. (1998); Davies (2004).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_relacional_error",
+          "nombre": "Reconocer un error terapéutico",
+          "texto": "Intervención breve en la que el terapeuta reconoce explícitamente un error, malentendido o intervención desafinada, mostrando responsabilidad relacional. Tiene un potente efecto reparador y modela una forma no defensiva de afrontar el conflicto interpersonal. Referencia: Safran & Muran (2000).",
           "sub": "R_reparacionRelacional",
           "tipo": "micro"
         }

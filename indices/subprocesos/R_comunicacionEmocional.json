@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_comunicacionEmocional",
-  "updatedAt": "2026-02-08T16:46:23.442Z",
-  "totalModelos": 40,
+  "updatedAt": "2026-02-08T17:00:40.084Z",
+  "totalModelos": 41,
   "modelos": [
     {
       "modelId": "rebt-terapia-racional-emotiva-ellis",
@@ -679,6 +679,29 @@
           "codigo": "m_balint_peticion_minima",
           "nombre": "Invitar a una petición mínima",
           "texto": "Intervención breve que propone formular una petición pequeña y específica, ayudando a pasar de la demanda global a una comunicación viable que preserve el vínculo.",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "modelLabel": "Psicoanálisis relacional",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Jay R. Greenberg; Stephen A. Mitchell",
+      "modelYear": 1983,
+      "items": [
+        {
+          "codigo": "p_relacional_autorevelacion",
+          "nombre": "Auto-revelación terapéutica limitada",
+          "texto": "Procedimiento que contempla el uso cuidadoso y clínicamente intencionado de la auto-revelación del terapeuta cuando esta contribuye a clarificar el campo intersubjetivo o reparar impasses relacionales. No se trata de transparencia total, sino de intervenciones selectivas que permiten al paciente experimentar una relación más auténtica y menos enigmática, desafiando patrones relacionales previos de ocultamiento, idealización o sometimiento. Referencia: Aron (1996); Davies (2004).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_relacional_aqui_ahora",
+          "nombre": "Nombrar el aquí-y-ahora relacional",
+          "texto": "Microintervención consistente en poner palabras a lo que está ocurriendo en el vínculo terapéutico en tiempo real (distancia, tensión, alivio, confusión), sin interpretarlo como defensa ni como rasgo del paciente. Facilita conciencia compartida del campo intersubjetivo y reduce actuaciones implícitas al transformarlas en experiencia pensable. Referencia: Mitchell (1993); Stern et al. (1998).",
           "sub": "R_comunicacionEmocional",
           "tipo": "micro"
         }
