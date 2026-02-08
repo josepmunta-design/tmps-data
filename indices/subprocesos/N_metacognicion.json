@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-08T17:40:12.768Z",
-  "totalModelos": 79,
+  "updatedAt": "2026-02-08T17:47:26.995Z",
+  "totalModelos": 80,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -153,6 +153,57 @@
           "codigo": "m_beck_sintesis",
           "nombre": "Síntesis de sesión",
           "texto": "Resumen colaborativo al final de la sesión que integra lo trabajado y acuerda tareas, consolidando memoria y transferencia del aprendizaje. Referencia: Beck et al. (1979).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitivo-conductual-estandar-1980",
+      "modelLabel": "Terapia cognitivo-conductual estándar",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck; Albert Ellis; Donald Meichenbaum; Thomas D’Zurilla",
+      "modelYear": 1980,
+      "items": [
+        {
+          "codigo": "p_tccstd_evaluacion_objetivos",
+          "nombre": "Evaluación inicial estructurada y establecimiento de objetivos",
+          "texto": "Procedimiento de inicio en TCC estándar que recoge historia del problema, síntomas actuales, contexto, recursos y limitaciones, y traduce las quejas en objetivos operativos y medibles. Se define qué se quiere cambiar, cómo se sabrá que ha cambiado y qué indicadores se monitorizarán, con un estilo pragmático y centrado en problemas que orienta toda la intervención posterior. Referencia: Meichenbaum (1977); Mahoney (1974).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tccstd_psicoeducacion",
+          "nombre": "Psicoeducación y modelo pensamiento–emoción–conducta",
+          "texto": "Procedimiento transversal que explica el modelo cognitivo-conductual básico y el racional de las técnicas, incluyendo el papel de la evitación, el refuerzo, las creencias y la atención selectiva. La psicoeducación se usa para aumentar comprensión, adherencia y expectativa de cambio, convirtiendo el tratamiento en un aprendizaje activo más que en una conversación exploratoria. Referencia: Mahoney (1974); Meichenbaum (1977).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tccstd_prevencion_recaidas",
+          "nombre": "Prevención de recaídas y plan de mantenimiento",
+          "texto": "Procedimiento de cierre que consolida habilidades aprendidas, identifica señales tempranas de recaída, elabora planes de afrontamiento y prepara al paciente para manejar futuros episodios sin dependencia del terapeuta. En TCC estándar es un elemento distintivo de orientación a autonomía y continuidad del cambio. Referencia: Marlatt & Gordon (1985).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tccstd_abc",
+          "nombre": "Describir cadena A-B-C",
+          "texto": "Microintervención que ordena una experiencia concreta en antecedentes, conducta y consecuencias, facilitando comprensión funcional sin entrar aún en creencias profundas. Referencia: Skinner (1953); Mahoney (1974).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tccstd_aprendizaje_experiencia",
+          "nombre": "Extraer aprendizaje de la experiencia",
+          "texto": "Cierre micro de una intervención conductual o experimento para explicitar qué se ha aprendido y cómo aplicarlo a otros contextos. Referencia: Mahoney (1974).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tccstd_sintesis",
+          "nombre": "Síntesis funcional de sesión",
+          "texto": "Resumen breve que integra conductas, cogniciones y aprendizajes clave de la sesión, asegurando transferencia y claridad antes del cierre. Referencia: Meichenbaum (1977).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

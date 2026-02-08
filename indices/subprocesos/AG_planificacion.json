@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_planificacion",
-  "updatedAt": "2026-02-08T17:40:12.768Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-08T17:47:26.995Z",
+  "totalModelos": 2,
   "modelos": [
     {
       "modelId": "terapia-cognitiva-beck-depresion-1967",
@@ -16,6 +16,43 @@
           "texto": "Procedimiento final del tratamiento que identifica señales tempranas de recaída, refuerza habilidades adquiridas y elabora planes de afrontamiento futuros. Busca consolidar una actitud activa y preventiva frente a posibles episodios depresivos. Referencia: Beck et al. (1979).",
           "sub": "AG_planificacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitivo-conductual-estandar-1980",
+      "modelLabel": "Terapia cognitivo-conductual estándar",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck; Albert Ellis; Donald Meichenbaum; Thomas D’Zurilla",
+      "modelYear": 1980,
+      "items": [
+        {
+          "codigo": "p_tccstd_estructura_sesion",
+          "nombre": "Estructuración de sesión (agenda, tareas, revisión y cierre)",
+          "texto": "Procedimiento de organización del trabajo clínico que estandariza la sesión: revisión breve de estado y tareas, fijación de agenda, intervención focalizada y cierre con síntesis y nuevas tareas. Esta estructura sostiene la eficiencia, permite seguimiento empírico y facilita generalización del aprendizaje, siendo un rasgo definitorio de la TCC estándar como práctica profesionalizada. Referencia: Meichenbaum (1977).",
+          "sub": "AG_planificacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tccstd_inoculacion_estres",
+          "nombre": "Entrenamiento en inoculación de estrés",
+          "texto": "Procedimiento integrador de Meichenbaum que prepara al paciente para manejar estresores mediante psicoeducación, reestructuración de autoverbalizaciones, ensayo de afrontamiento y práctica en escenarios graduados. Es característico de la TCC estándar por su enfoque de entrenamiento en habilidades aplicables a múltiples problemas. Referencia: Meichenbaum (1977).",
+          "sub": "AG_planificacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tccstd_prevencion_recaidas",
+          "nombre": "Prevención de recaídas y plan de mantenimiento",
+          "texto": "Procedimiento de cierre que consolida habilidades aprendidas, identifica señales tempranas de recaída, elabora planes de afrontamiento y prepara al paciente para manejar futuros episodios sin dependencia del terapeuta. En TCC estándar es un elemento distintivo de orientación a autonomía y continuidad del cambio. Referencia: Marlatt & Gordon (1985).",
+          "sub": "AG_planificacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tccstd_tarea_graduada",
+          "nombre": "Programar tarea graduada",
+          "texto": "Definición de una tarea con dificultad ajustada y pasos progresivos para asegurar ejecución y refuerzo temprano, clave en activación y exposición. Referencia: Lewinsohn (1974).",
+          "sub": "AG_planificacion",
+          "tipo": "micro"
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_aprendizaje",
-  "updatedAt": "2026-02-08T17:40:12.768Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-08T17:47:26.995Z",
+  "totalModelos": 2,
   "modelos": [
     {
       "modelId": "terapia-cognitiva-beck-depresion-1967",
@@ -14,6 +14,36 @@
           "codigo": "m_beck_revision_tareas",
           "nombre": "Revisión de tareas entre sesiones",
           "texto": "Exploración breve y no punitiva de las tareas realizadas, extrayendo aprendizajes y ajustando dificultades, reforzando adherencia y agencia. Referencia: Beck et al. (1979).",
+          "sub": "AG_aprendizaje",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitivo-conductual-estandar-1980",
+      "modelLabel": "Terapia cognitivo-conductual estándar",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck; Albert Ellis; Donald Meichenbaum; Thomas D’Zurilla",
+      "modelYear": 1980,
+      "items": [
+        {
+          "codigo": "p_tccstd_generalizacion",
+          "nombre": "Generalización y transferencia del aprendizaje",
+          "texto": "Procedimiento transversal que asegura que lo aprendido en sesión se aplica en contextos cotidianos mediante práctica planificada, variación de situaciones, seguimiento de resultados y ajuste de estrategias. La generalización es un criterio de éxito central en la TCC estándar por su orientación empírica y funcional. Referencia: Bandura (1977); Meichenbaum (1977).",
+          "sub": "AG_aprendizaje",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tccstd_feedback",
+          "nombre": "Feedback conductual inmediato",
+          "texto": "Retroalimentación concreta y descriptiva tras una conducta o ensayo, enfocada en qué funcionó y qué ajustar, evitando interpretaciones globales. Referencia: Liberman (1982).",
+          "sub": "AG_aprendizaje",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tccstd_revision_tarea",
+          "nombre": "Revisar tarea sin juicio",
+          "texto": "Explorar una tarea realizada o no realizada desde un enfoque funcional y no punitivo, identificando barreras y ajustando el plan. Referencia: Meichenbaum (1977).",
           "sub": "AG_aprendizaje",
           "tipo": "micro"
         }

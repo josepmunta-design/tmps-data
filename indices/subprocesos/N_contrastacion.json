@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_contrastacion",
-  "updatedAt": "2026-02-08T17:40:12.768Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-08T17:47:26.995Z",
+  "totalModelos": 2,
   "modelos": [
     {
       "modelId": "terapia-cognitiva-beck-depresion-1967",
@@ -28,6 +28,29 @@
           "codigo": "m_beck_prediccion",
           "nombre": "Predicción y comprobación conductual",
           "texto": "Antes de una tarea, se registra la predicción del resultado y el afecto esperado; después se compara con el resultado real para debilitar creencias negativas. Referencia: Beck et al. (1979).",
+          "sub": "N_contrastacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitivo-conductual-estandar-1980",
+      "modelLabel": "Terapia cognitivo-conductual estándar",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Aaron T. Beck; Albert Ellis; Donald Meichenbaum; Thomas D’Zurilla",
+      "modelYear": 1980,
+      "items": [
+        {
+          "codigo": "p_tccstd_reestructuracion",
+          "nombre": "Reestructuración cognitiva transdiagnóstica",
+          "texto": "Procedimiento que identifica cogniciones desadaptativas (pensamientos automáticos, inferencias, interpretaciones y creencias) y las somete a examen mediante evidencia, alternativas y pruebas en la realidad. En TCC estándar la reestructuración se aplica de forma transversal a múltiples problemas (ansiedad, depresión, ira, culpa) y se integra con tareas conductuales para producir cambio estable. Referencia: Mahoney (1974); Meichenbaum (1977).",
+          "sub": "N_contrastacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tccstd_prediccion",
+          "nombre": "Formular predicción conductual",
+          "texto": "Antes de una tarea o exposición, se formula una predicción explícita sobre lo que ocurrirá, creando una hipótesis contrastable que luego se compara con el resultado real. Referencia: Meichenbaum (1977).",
           "sub": "N_contrastacion",
           "tipo": "micro"
         }
