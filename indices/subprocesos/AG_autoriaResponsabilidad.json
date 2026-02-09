@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-02-09T10:12:08.151Z",
-  "totalModelos": 67,
+  "updatedAt": "2026-02-09T10:40:58.287Z",
+  "totalModelos": 69,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -37,6 +37,29 @@
           "codigo": "m_bandura_autorregistro_minimo",
           "nombre": "Autorregistro mínimo de práctica",
           "texto": "Microintervención que introduce registros simples y de bajo coste cognitivo (frecuencia de práctica, contexto, resultado básico) para transformar la experiencia en datos observables. El autorregistro favorece la autorregulación, corrige sesgos de memoria y permite ajustar decisiones sobre continuidad, dificultad y estrategias de práctica. (Bandura, 1977; Bandura, 1997).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cognitive-processing-therapy-resick-1992",
+      "modelLabel": "Cognitive Processing Therapy (CPT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Patricia A. Resick; Candice M. Monson; Kathleen M. Chard",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_cpt_generalizacion",
+          "nombre": "Generalización del cambio y prevención de recaídas",
+          "texto": "Procedimiento final orientado a consolidar los cambios cognitivos logrados, anticipar posibles reactivaciones futuras de atascos traumáticos y reforzar el uso autónomo de habilidades de procesamiento cognitivo para mantener los beneficios terapéuticos a largo plazo. (Resick et al., 2016).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cpt_refuerzo_autonomia",
+          "nombre": "Refuerzo del uso autónomo de herramientas cognitivas",
+          "texto": "Reconocimiento explícito del uso independiente de hojas de trabajo, cuestionamiento cognitivo o reformulaciones fuera de sesión, fortaleciendo la autoeficacia y la generalización del cambio terapéutico. (Resick et al., 2016).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }
@@ -129,6 +152,43 @@
           "texto": "Procedimiento mediante el cual se acuerdan tareas específicas para practicar habilidades cognitivas y conductuales fuera de sesión, y se revisan sistemáticamente sus resultados. Las tareas consolidan el aprendizaje y fomentan autonomía terapéutica. Referencia: Beck et al. (1979).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-de-esquemas-young-1990",
+      "modelLabel": "Terapia de esquemas",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Jeffrey E. Young; Arnoud Arntz",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_schema_adulto_saludable",
+          "nombre": "Fortalecimiento e internalización del Modo Adulto Saludable",
+          "texto": "Procedimiento transversal destinado a consolidar un modo interno capaz de cuidar al Niño Vulnerable, regular emociones intensas, poner límites a modos disfuncionales y tomar decisiones realistas y protectoras, convirtiéndose en el principal regulador del funcionamiento psicológico del paciente. (Young et al., 2003; Arntz & van Genderen, 2009).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_schema_generalizacion",
+          "nombre": "Generalización del cambio y prevención de recaídas",
+          "texto": "Procedimiento final orientado a consolidar los logros terapéuticos, anticipar futuras activaciones de esquemas y modos, y reforzar el uso autónomo del Adulto Saludable para mantener cambios estables y prevenir recaídas en contextos vitales exigentes. (Young et al., 2003).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_schema_activar_adulto",
+          "nombre": "Activación guiada del Adulto Saludable",
+          "texto": "Microintervención orientada a invitar al paciente a responder desde el Adulto Saludable ante una activación de esquema, utilizando un tono interno protector, realista y regulador que integra cuidado emocional y toma de decisiones adaptativas. (Young et al., 2003).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_schema_refuerzo_adulto",
+          "nombre": "Refuerzo de conductas coherentes con el Adulto Saludable",
+          "texto": "Reconocimiento explícito y reforzamiento de acciones, decisiones o límites coherentes con el Adulto Saludable, consolidando una autoimagen competente y facilitando la generalización del cambio fuera de la sesión. (Young et al., 2003).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-09T10:12:08.151Z",
-  "totalModelos": 25,
+  "updatedAt": "2026-02-09T10:40:58.287Z",
+  "totalModelos": 27,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -28,6 +28,36 @@
           "codigo": "m_cft_dose_titration",
           "nombre": "Titulación de compasión (dosis tolerable)",
           "texto": "Introducir compasión en microdosis para no disparar vergüenza: frases mínimas, prácticas breves, más cuerpo y menos narrativa al inicio.",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cognitive-processing-therapy-resick-1992",
+      "modelLabel": "Cognitive Processing Therapy (CPT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Patricia A. Resick; Candice M. Monson; Kathleen M. Chard",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_cpt_exposicion_escrita",
+          "nombre": "Exposición escrita al recuerdo traumático",
+          "texto": "Procedimiento de exposición narrativa mediante escritura detallada y repetida del evento traumático, orientado a reducir evitación cognitiva y emocional, aumentar tolerancia al recuerdo y facilitar su integración narrativa sin recurrir a exposición prolongada en vivo. (Resick & Schnicke, 1993).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cpt_evitar_seguridad",
+          "nombre": "Reducción de conductas de evitación y seguridad",
+          "texto": "Procedimiento orientado a identificar y disminuir conductas de evitación y estrategias de seguridad que mantienen creencias traumáticas y refuerzan hipervigilancia, promoviendo aproximaciones graduales y conductas coherentes con creencias más flexibles. (Resick et al., 2016).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cpt_creencia_evitacion",
+          "nombre": "Conexión entre creencia traumática y evitación actual",
+          "texto": "Intervención puntual que señala cómo un atasco cognitivo concreto mantiene conductas de evitación o seguridad en la vida actual, ayudando al paciente a comprender el coste funcional de sostener la creencia traumática. (Resick et al., 2016).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
@@ -160,6 +190,22 @@
           "codigo": "m_sit_prevencion_evitacion",
           "nombre": "Prevención de evitación sutil",
           "texto": "Detección y corrección de microconductas de evitación encubierta (posponer, minimizar, distraerse en exceso) que debilitan el entrenamiento bajo estrés, promoviendo aproximaciones graduadas y consistentes alineadas con el plan de afrontamiento. (Meichenbaum, 1985).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-de-esquemas-young-1990",
+      "modelLabel": "Terapia de esquemas",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Jeffrey E. Young; Arnoud Arntz",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "m_schema_confrontacion_evitativo",
+          "nombre": "Confrontación empática del modo evitativo",
+          "texto": "Intervención breve que señala de forma empática cómo el modo Protector Desligado o evitativo reduce el malestar a corto plazo pero mantiene el esquema a largo plazo, promoviendo una aproximación gradual a la experiencia emocional evitada. (Young et al., 2003).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

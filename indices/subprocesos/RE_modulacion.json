@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-09T10:12:08.151Z",
-  "totalModelos": 79,
+  "updatedAt": "2026-02-09T10:40:58.287Z",
+  "totalModelos": 81,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -74,6 +74,29 @@
           "texto": "Procedimiento central del modelo en el que el terapeuta o un modelo competente demuestra la conducta diana y el paciente la ensaya de forma progresiva, con apoyo, correcciones y aumento gradual de dificultad. Este enfoque asegura experiencias de dominio reales (mastery experiences), consideradas la fuente más potente de autoeficacia, y resulta especialmente eficaz en ansiedad, habilidades sociales y afrontamiento de situaciones temidas. (Bandura, 1977; Bandura, 1997).",
           "sub": "RE_modulacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "cognitive-processing-therapy-resick-1992",
+      "modelLabel": "Cognitive Processing Therapy (CPT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Patricia A. Resick; Candice M. Monson; Kathleen M. Chard",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_cpt_procesamiento_relato",
+          "nombre": "Revisión y procesamiento del relato traumático",
+          "texto": "Procedimiento en el que terapeuta y paciente revisan conjuntamente el relato escrito del trauma para identificar atascos cognitivos emergentes, emociones asociadas y patrones de significado, promoviendo una lectura más contextualizada y menos absolutista del evento. (Resick et al., 2016).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cpt_revision_impacto",
+          "nombre": "Revisión guiada del escrito de impacto",
+          "texto": "Microintervención en la que terapeuta y paciente revisan fragmentos concretos del escrito de impacto para detectar significados implícitos, emociones asociadas y atascos emergentes, favoreciendo una lectura más contextualizada y regulada del trauma. (Resick et al., 2016).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -236,6 +259,29 @@
           "texto": "Procedimiento integrador de Meichenbaum que prepara al paciente para manejar estresores mediante psicoeducación, reestructuración de autoverbalizaciones, ensayo de afrontamiento y práctica en escenarios graduados. Es característico de la TCC estándar por su enfoque de entrenamiento en habilidades aplicables a múltiples problemas. Referencia: Meichenbaum (1977).",
           "sub": "RE_modulacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-de-esquemas-young-1990",
+      "modelLabel": "Terapia de esquemas",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Jeffrey E. Young; Arnoud Arntz",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_schema_padre_punitivo",
+          "nombre": "Despotenciación del Padre Punitivo y Exigente",
+          "texto": "Procedimiento específico orientado a reducir la influencia de modos parentales internalizados críticos, castigadores o hiperexigentes mediante confrontación experiencial, reatribución y límites internos, disminuyendo culpa, vergüenza y autoataque crónico. (Young et al., 2003; Arntz & van Genderen, 2009).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_schema_interrumpir_padre_punitivo",
+          "nombre": "Interrupción del Padre Punitivo",
+          "texto": "Intervención puntual destinada a detener verbal y experiencialmente mensajes internos críticos o castigadores, señalándolos como expresión del modo Padre Punitivo y no como verdades, reduciendo autoataque y creando espacio para respuestas más compasivas. (Young et al., 2003).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
         }
       ]
     },

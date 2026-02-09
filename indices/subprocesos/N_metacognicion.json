@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-09T10:12:08.151Z",
-  "totalModelos": 85,
+  "updatedAt": "2026-02-09T10:40:58.287Z",
+  "totalModelos": 87,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -90,6 +90,57 @@
           "texto": "Procedimiento final orientado a transferir habilidades y autoeficacia a múltiples contextos y situaciones, introduciendo variabilidad deliberada en la práctica, anticipación de obstáculos y planes de recuperación tras fallos. Se protege la autoeficacia evitando interpretaciones globales del error y consolidando rutinas de autorregulación que permitan sostener el cambio a largo plazo. (Bandura, 1997; Bandura, 1977).",
           "sub": "N_metacognicion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "cognitive-processing-therapy-resick-1992",
+      "modelLabel": "Cognitive Processing Therapy (CPT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Patricia A. Resick; Candice M. Monson; Kathleen M. Chard",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_cpt_psicoeducacion",
+          "nombre": "Psicoeducación sobre el TEPT y el modelo CPT",
+          "texto": "Procedimiento psicoeducativo orientado a que el paciente comprenda las reacciones postraumáticas como respuestas aprendidas y mantenidas por creencias traumáticas rígidas, introduciendo el concepto de asimilación, acomodación y sobreacomodación, y clarificando la lógica del tratamiento para reducir confusión, culpa y evitación cognitiva. (Resick & Schnicke, 1993; Resick et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cpt_atascos_cognitivos",
+          "nombre": "Identificación de atascos cognitivos relacionados con el trauma",
+          "texto": "Procedimiento central en el que el paciente aprende a identificar creencias traumáticas rígidas o distorsionadas (“atascos”) derivadas del intento de integrar el evento traumático, especialmente aquellas asociadas a culpa, vergüenza, peligro permanente o desconfianza global, transformándolas en dianas explícitas de intervención cognitiva. (Resick et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cpt_detectar_atasco",
+          "nombre": "Detección explícita de un atasco cognitivo",
+          "texto": "Microintervención en la que el terapeuta ayuda al paciente a identificar una creencia rígida o absolutista vinculada al trauma (atasco cognitivo) en el discurso espontáneo o en el relato escrito, transformando una reacción emocional difusa en un objeto cognitivo concreto susceptible de análisis y cambio. (Resick et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cpt_clasificar_dominio",
+          "nombre": "Clasificación del atasco por dominio traumático",
+          "texto": "Intervención breve que consiste en ubicar el atasco cognitivo dentro de uno de los dominios centrales del trauma (seguridad, confianza, poder/control, estima o cercanía), facilitando una comprensión organizada del impacto traumático y orientando el trabajo cognitivo posterior. (Resick et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cpt_asimilacion_sobreacomodacion",
+          "nombre": "Identificación de asimilación y sobreacomodación",
+          "texto": "Intervención breve orientada a identificar si el atasco cognitivo refleja un intento de asimilación (culpa, autorresponsabilización excesiva) o de sobreacomodación (generalizaciones extremas sobre uno mismo, los otros o el mundo), clarificando el tipo de distorsión predominante. (Resick & Schnicke, 1993; Resick et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cpt_creencia_evitacion",
+          "nombre": "Conexión entre creencia traumática y evitación actual",
+          "texto": "Intervención puntual que señala cómo un atasco cognitivo concreto mantiene conductas de evitación o seguridad en la vida actual, ayudando al paciente a comprender el coste funcional de sostener la creencia traumática. (Resick et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
         }
       ]
     },
@@ -336,6 +387,50 @@
           "codigo": "m_tccstd_sintesis",
           "nombre": "Síntesis funcional de sesión",
           "texto": "Resumen breve que integra conductas, cogniciones y aprendizajes clave de la sesión, asegurando transferencia y claridad antes del cierre. Referencia: Meichenbaum (1977).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-de-esquemas-young-1990",
+      "modelLabel": "Terapia de esquemas",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Jeffrey E. Young; Arnoud Arntz",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_schema_psicoeducacion",
+          "nombre": "Psicoeducación experiencial sobre esquemas y modos",
+          "texto": "Procedimiento psicoeducativo orientado a que el paciente comprenda vivencialmente los esquemas y modos como patrones aprendidos y estados internos transitorios, reduciendo autoacusación y aumentando la capacidad de observar y diferenciar sus reacciones emocionales y conductuales sin fusionarse con ellas. (Young et al., 2003).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_schema_nombrar_esquema",
+          "nombre": "Nombrar el esquema activado",
+          "texto": "Microintervención consistente en ayudar al paciente a identificar y nombrar explícitamente el esquema que se ha activado en una situación concreta (por ejemplo, abandono, defectuosidad o desconfianza), transformando una experiencia emocional difusa en un patrón reconocible y diferenciable del self actual, lo que reduce fusión y facilita regulación posterior. (Young et al., 2003).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_schema_nombrar_modo",
+          "nombre": "Nombrar el modo activo",
+          "texto": "Intervención breve en la que el paciente aprende a identificar en tiempo real qué modo está activo (Niño Vulnerable, Protector Desligado, Padre Punitivo, etc.), favoreciendo la diferenciación interna entre estados del self y permitiendo respuestas más ajustadas desde el Adulto Saludable. (Young et al., 2003).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_schema_dialogo_breve_modos",
+          "nombre": "Diálogo interno breve entre modos",
+          "texto": "Intervención corta que facilita un intercambio interno entre modos (por ejemplo, Adulto Saludable y Niño Vulnerable) sin desplegar trabajo completo de sillas, favoreciendo integración y regulación en el aquí y ahora. (Young et al., 2003).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_schema_senalizacion_patrones",
+          "nombre": "Señalización de patrones relacionales repetitivos",
+          "texto": "Microintervención que señala de forma inmediata la repetición de un patrón relacional guiado por esquemas en la sesión o en la vida cotidiana, ayudando al paciente a reconocer ciclos automáticos y abrir posibilidades de respuesta alternativa. (Young et al., 2003).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

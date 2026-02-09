@@ -1,8 +1,40 @@
 {
   "subprocesoId": "RE_validacion",
-  "updatedAt": "2026-02-09T10:12:08.151Z",
-  "totalModelos": 4,
+  "updatedAt": "2026-02-09T10:40:58.287Z",
+  "totalModelos": 6,
   "modelos": [
+    {
+      "modelId": "cognitive-processing-therapy-resick-1992",
+      "modelLabel": "Cognitive Processing Therapy (CPT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Patricia A. Resick; Candice M. Monson; Kathleen M. Chard",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "m_cpt_normalizacion",
+          "nombre": "Normalización de reacciones postraumáticas",
+          "texto": "Intervención breve que valida las reacciones emocionales y cognitivas postraumáticas como respuestas comprensibles ante una experiencia extrema, reduciendo vergüenza y autoacusación sin reforzar creencias disfuncionales. (Resick & Schnicke, 1993).",
+          "sub": "RE_validacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-de-esquemas-young-1990",
+      "modelLabel": "Terapia de esquemas",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Jeffrey E. Young; Arnoud Arntz",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "m_schema_validacion_nino",
+          "nombre": "Validación emocional del Niño Vulnerable",
+          "texto": "Microintervención relacional en la que el terapeuta valida explícitamente la emoción y la necesidad del Niño Vulnerable activado, proporcionando una experiencia inmediata de comprensión y legitimación emocional que reduce vergüenza y defensividad. (Young et al., 2003).",
+          "sub": "RE_validacion",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "ifs-schwartz-1991",
       "modelLabel": "Internal Family Systems (IFS)",
