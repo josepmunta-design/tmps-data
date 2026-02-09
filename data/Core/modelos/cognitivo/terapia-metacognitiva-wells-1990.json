@@ -1,0 +1,266 @@
+{
+  "id": "terapia-metacognitiva-wells-1990",
+  "grupo": "Cognitivo",
+  "label": "Terapia metacognitiva (MCT)",
+  "year": 1990,
+  "importance": 2,
+  "autores": "Adrian Wells",
+  "universidad": "University of Manchester",
+  "ciudad": "Manchester",
+  "pais": "Reino Unido",
+  "lat": 53.466849,
+  "lon": -2.233883,
+
+  "descripcion": "La Terapia Metacognitiva (MCT) es un modelo psicoterapéutico cognitivo que explica el sufrimiento emocional, especialmente la ansiedad y la depresión, a partir del mantenimiento del síndrome cognitivo-atencional (CAS), caracterizado por preocupación, rumiación, vigilancia de amenaza y estrategias de afrontamiento desadaptativas. Este síndrome se sostiene por creencias metacognitivas positivas y negativas sobre el pensamiento, como la necesidad de preocuparse o el peligro de no controlar la mente. La intervención no se centra en el contenido de los pensamientos, sino en modificar la relación con ellos, entrenar el control atencional y abandonar patrones cognitivos perseverativos, promoviendo una postura mental descentralizada y flexible.",
+
+  "influencias": [
+    "Terapia cognitiva (depresión)",
+    "Procesos metacognitivos",
+    "Atención",
+    "Racionalismo representacional (Cognitivismo clásico)",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se concibe como mediada por procesos metacognitivos que regulan el uso de la cognición más que por el contenido cognitivo en sí. El conocimiento terapéutico se construye de forma empírica y funcional, orientado a identificar patrones de procesamiento que mantienen el malestar. El ser humano es entendido como un agente capaz de regular su atención y su relación con los pensamientos. El cambio se produce al modificar creencias metacognitivas y desactivar estilos de procesamiento perseverativos, y la relación terapéutica actúa como un contexto estructurado que facilita experimentación y aprendizaje metacognitivo.",
+    "teoriaFormal": "El self se conceptualiza como un sistema autorregulador en el que la atención y la metacognición organizan la experiencia emocional. El sufrimiento se mantiene por la activación persistente del síndrome cognitivo-atencional, sostenido por creencias sobre la utilidad, peligrosidad o incontrolabilidad del pensamiento. El cambio terapéutico ocurre cuando se debilitan estas creencias y se restablece un control flexible de la atención y del procesamiento mental, permitiendo que los pensamientos se experimenten como eventos transitorios sin impacto emocional prolongado.",
+    "teoriaClinica": "El caso se conceptualiza identificando el patrón específico de CAS, las creencias metacognitivas que lo mantienen y las estrategias de afrontamiento contraproducentes asociadas. Se priorizan procesos de toma de distancia metacognitiva, control atencional y abandono de rumiación y preocupación. El progreso terapéutico se evalúa por la reducción del procesamiento perseverativo, el aumento de flexibilidad atencional y la disminución sostenida del malestar emocional."
+  },
+
+  "procesos": [
+    "Desactivación del síndrome cognitivo-atencional",
+    "Regulación atencional",
+    "Descentramiento metacognitivo",
+    "Abandono de estrategias cognitivas desadaptativas"
+  ],
+
+  "mjps": ["N", "RI", "RE", "AG"],
+
+"procedimientos": [
+  {
+    "nombre": "Formulación metacognitiva del caso (CAS)",
+    "codigo": "p_mct_formulacion_cas",
+    "texto": "Procedimiento central conducido por el terapeuta para identificar y mapear el síndrome cognitivo-atencional específico del paciente, incluyendo preocupación o rumiación dominante, vigilancia de amenaza, conductas de afrontamiento contraproducentes y las creencias metacognitivas positivas y negativas que los mantienen, proporcionando una conceptualización funcional clara que guía toda la intervención posterior y sustituye explicaciones basadas en contenido cognitivo. (Wells, 2009)."
+  },
+{
+  "nombre": "Psicoeducación metacognitiva",
+  "codigo": "p_mct_psicoeducacion",
+  "procesos": ["N_metacognicion"],
+  "texto": "Procedimiento psicoeducativo orientado a movilizar al paciente hacia una comprensión metacognitiva del malestar, diferenciando pensamientos de procesos mentales e introduciendo el concepto de síndrome cognitivo-atencional (CAS), con el objetivo de debilitar la implicación automática en la rumiación y la preocupación y preparar activamente el cambio en la relación con la actividad mental. (Wells, 2009)."
+},
+
+  {
+    "nombre": "Identificación de creencias metacognitivas",
+    "codigo": "p_mct_creencias_metacognitivas",
+    "procesos": ["N_metacognicion"],
+    "texto": "Procedimiento en el que el paciente identifica activamente creencias metacognitivas positivas (p. ej., \"preocuparme me protege\") y negativas (p. ej., \"si no controlo mis pensamientos me volveré loco\"), haciéndolas explícitas como hipótesis reguladoras del procesamiento mental y no como hechos, lo que permite abordarlas posteriormente de forma experiencial y experimental. (Wells, 2009)."
+  },
+  {
+    "nombre": "Entrenamiento en Atención Desacoplada (Detached Mindfulness)",
+    "codigo": "p_mct_detached_mindfulness",
+    "procesos": ["RI_mindfulnessSelf", "N_metacognicion"],
+    "texto": "Procedimiento experiencial clave en MCT en el que el paciente aprende a relacionarse con pensamientos, imágenes y sensaciones como eventos mentales pasajeros sin analizarlos, responderles ni intentar controlarlos, favoreciendo una postura de observación desapegada que debilita el CAS y reduce la fusión cognitiva mantenedora del malestar. (Wells, 2009)."
+  },
+  {
+    "nombre": "Entrenamiento en Control Atencional (ATT)",
+    "codigo": "p_mct_att",
+    "procesos": ["AG_tomaDecisiones", "RE_modulacion"],
+    "texto": "Procedimiento estructurado de entrenamiento atencional que fortalece la capacidad del paciente para dirigir, alternar y sostener voluntariamente la atención independientemente del contenido mental, reduciendo la dominancia automática de la amenaza y aumentando la flexibilidad cognitiva y emocional frente a estímulos internos y externos. (Wells, 1997; Wells, 2009)."
+  },
+  {
+    "nombre": "Desactivación sistemática de la rumiación y la preocupación",
+    "codigo": "p_mct_desactivacion_rumiacion",
+    "procesos": ["RE_prevEvitacion", "AG_compromisoConductual"],
+    "texto": "Procedimiento mediante el cual el paciente aprende a interrumpir deliberadamente la rumiación y la preocupación como estilos de procesamiento, no como pensamientos aislados, sustituyendo la perseveración cognitiva por respuestas metacognitivas neutrales, lo que reduce la duración y el impacto emocional de los episodios de malestar. (Wells, 2009)."
+  },
+  {
+    "nombre": "Modificación de creencias metacognitivas positivas",
+    "codigo": "p_mct_modificacion_creencias_positivas",
+    "procesos": ["N_reformulacion"],
+    "texto": "Procedimiento orientado a debilitar la creencia de que la preocupación, la rumiación o la vigilancia de amenaza son útiles o necesarias, utilizando diálogo socrático experiencial y experimentos conductuales que demuestran que abandonar estos procesos no incrementa el riesgo ni reduce el control. (Wells, 2009)."
+  },
+  {
+    "nombre": "Modificación de creencias metacognitivas negativas",
+    "codigo": "p_mct_modificacion_creencias_negativas",
+    "procesos": ["N_reformulacion", "RE_modulacion"],
+    "texto": "Procedimiento dirigido a cuestionar y transformar creencias sobre la peligrosidad, incontrolabilidad o consecuencias catastróficas del pensamiento, ayudando al paciente a experimentar que los pensamientos no causan daño por sí mismos y que el control rígido no es necesario para la estabilidad emocional. (Wells, 2009)."
+  },
+  {
+    "nombre": "Eliminación de conductas de afrontamiento contraproducentes",
+    "codigo": "p_mct_eliminacion_afrontamiento",
+    "procesos": ["RE_prevEvitacion", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento focalizado en identificar y abandonar conductas como comprobación, búsqueda de seguridad, evitación cognitiva o supresión del pensamiento, que mantienen el CAS a largo plazo, promoviendo respuestas metacognitivas más simples y no defensivas ante la activación mental. (Wells, 2009)."
+  },
+  {
+    "nombre": "Exposición metacognitiva a activadores internos",
+    "codigo": "p_mct_exposicion_metacognitiva",
+    "procesos": ["RE_aceptacion", "RI_mindfulnessSelf"],
+    "texto": "Procedimiento en el que el paciente permite la activación de pensamientos, imágenes o sensaciones temidas sin entrar en rumiación ni control, utilizando la postura metacognitiva para demostrar que la activación interna es tolerable y autolimitada cuando no se alimenta mediante procesamiento perseverativo. (Wells, 2009)."
+  },
+  {
+    "nombre": "Generalización del control metacognitivo",
+    "codigo": "p_mct_generalizacion",
+    "procesos": ["AG_compromisoConductual", "N_construccionAlternativa"],
+    "texto": "Procedimiento final orientado a extender el uso flexible de las habilidades metacognitivas a distintos contextos vitales, consolidando una relación estable y no reactiva con la actividad mental y reduciendo la probabilidad de reactivación futura del CAS ante nuevos estresores. (Wells, 2009)."
+  }
+],
+
+  "micros": [
+  {
+    "nombre": "Nombrar el CAS en tiempo real",
+    "codigo": "m_mct_nombrar_cas",
+    "procesos": ["N_metacognicion"],
+    "texto": "Microintervención consistente en que el paciente identifique explícitamente cuándo está entrando en rumiación, preocupación o vigilancia de amenaza y lo nombre como activación del síndrome cognitivo-atencional (CAS), desplazando la experiencia de un contenido amenazante a un proceso reconocible y modificable, lo que reduce implicación automática y prepara la interrupción del estilo perseverativo. (Wells, 2009)."
+  },
+  {
+    "nombre": "Posponer la rumiación y la preocupación",
+    "codigo": "m_mct_posponer_preocupacion",
+    "procesos": ["AG_tomaDecisiones", "RE_prevEvitacion"],
+    "texto": "Microintervención mediante la cual el paciente decide conscientemente posponer la rumiación o la preocupación a un momento específico, demostrando experiencialmente que no son incontrolables ni necesarias en el instante en que aparecen, lo que debilita creencias metacognitivas negativas y reduce la duración del procesamiento perseverativo. (Wells, 2009)."
+  },
+  {
+    "nombre": "Dejar pasar pensamientos sin responder",
+    "codigo": "m_mct_dejar_pasar",
+    "procesos": ["RI_mindfulnessSelf"],
+    "texto": "Aplicación puntual de la postura metacognitiva de observación desapegada, en la que el paciente permite que pensamientos, imágenes o impulsos aparezcan y desaparezcan sin analizarlos, suprimirlos ni responderles, favoreciendo una experiencia directa de no fusión que debilita el CAS. (Wells, 2009)."
+  },
+  {
+    "nombre": "Cambio voluntario del foco atencional",
+    "codigo": "m_mct_cambio_foco",
+    "procesos": ["AG_tomaDecisiones", "RE_modulacion"],
+    "texto": "Microintervención que entrena el desplazamiento consciente del foco atencional desde la amenaza interna hacia estímulos externos o neutros, demostrando control atencional flexible y reduciendo la dominancia automática del contenido amenazante sobre la experiencia emocional. (Wells, 1997; Wells, 2009)."
+  },
+  {
+    "nombre": "Cancelación activa de la preocupación",
+    "codigo": "m_mct_cancelacion_preocupacion",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Intervención breve en la que el paciente interrumpe deliberadamente la preocupación como proceso (no como pensamiento) cuando detecta su inicio, aplicando la instrucción de detener el estilo perseverativo y regresar a la actividad presente sin sustituirlo por análisis alternativo. (Wells, 2009)."
+  },
+  {
+    "nombre": "Desconfirmación experiencial de la incontrolabilidad del pensamiento",
+    "codigo": "m_mct_desconfirmacion_incontrolabilidad",
+    "procesos": ["N_reformulacion"],
+    "texto": "Microexperimento en el que el paciente observa que los pensamientos disminuyen o desaparecen cuando no se les responde, generando evidencia directa contra la creencia de que la mente es incontrolable o peligrosa si no se vigila activamente. (Wells, 2009)."
+  },
+  {
+    "nombre": "Exposición breve a activadores internos sin procesamiento",
+    "codigo": "m_mct_exposicion_interna",
+    "procesos": ["RE_aceptacion", "RI_mindfulnessSelf"],
+    "texto": "Permitir de forma intencional la aparición de pensamientos o imágenes temidas durante un tiempo breve sin entrar en rumiación, control ni neutralización, mostrando que la activación interna es tolerable y se autorregula cuando no se alimenta mediante el CAS. (Wells, 2009)."
+  },
+  {
+    "nombre": "Identificación de respuestas metacognitivas alternativas",
+    "codigo": "m_mct_respuestas_metacognitivas",
+    "procesos": ["N_construccionAlternativa"],
+    "texto": "Microintervención que ayuda al paciente a generar respuestas simples y no defensivas ante la activación mental (por ejemplo, observar, posponer, redirigir atención), ampliando el repertorio metacognitivo más allá de la rumiación o el control. (Wells, 2009)."
+  },
+  {
+    "nombre": "Reducción de comprobación mental",
+    "codigo": "m_mct_reduccion_comprobacion",
+    "procesos": ["RE_prevEvitacion", "AG_autoriaResponsabilidad"],
+    "texto": "Interrupción consciente de conductas de comprobación interna (revisar si la ansiedad ha bajado, si el pensamiento sigue ahí), que mantienen el CAS al reforzar vigilancia, favoreciendo una relación más pasiva y no evaluativa con la experiencia interna. (Wells, 2009)."
+  },
+  {
+    "nombre": "Normalización de la aparición de pensamientos intrusivos",
+    "codigo": "m_mct_normalizacion_intrusivos",
+    "procesos": ["N_reformulacion"],
+    "texto": "Reatribución breve que sitúa los pensamientos intrusivos como fenómenos mentales comunes y no significativos, reduciendo su carga amenazante y la necesidad de responderles, lo que contribuye a debilitar la activación del CAS. (Wells, 2009)."
+  },
+  {
+    "nombre": "Autoobservación del tiempo dedicado al CAS",
+    "codigo": "m_mct_autoobservacion_cas",
+    "procesos": ["N_metacognicion"],
+    "texto": "Registro breve del tiempo y frecuencia dedicados a rumiación, preocupación y vigilancia de amenaza, aumentando conciencia del coste real del CAS y facilitando decisiones activas para su reducción progresiva. (Wells, 2009)."
+  },
+  {
+    "nombre": "Proyección de respuesta metacognitiva futura",
+    "codigo": "m_mct_respuesta_futura",
+    "procesos": ["I_selfFuturo", "N_construccionAlternativa"],
+    "texto": "Microintervención prospectiva en la que el paciente imagina futuras activaciones mentales respondiendo desde una postura metacognitiva flexible, reforzando una identidad futura menos reactiva y más autorregulada frente a la actividad mental. (Wells, 2009)."
+  }
+],
+
+"ideasPrincipales": [
+  {
+    "id": "idea_mct_1",
+    "titulo": "El malestar psicológico se mantiene por el síndrome cognitivo-atencional",
+    "desarrollo": "La Terapia Metacognitiva sostiene que la ansiedad y la depresión se mantienen por la activación persistente del síndrome cognitivo-atencional (CAS), caracterizado por rumiación, preocupación, vigilancia de amenaza y conductas de afrontamiento contraproducentes, más que por el contenido específico de los pensamientos. El foco clínico se desplaza así desde qué se piensa a cómo se procesa la experiencia mental. (Wells, 2009)."
+  },
+  {
+    "id": "idea_mct_2",
+    "titulo": "Las creencias metacognitivas regulan el uso de la cognición",
+    "desarrollo": "MCT postula que las personas desarrollan creencias sobre la utilidad, peligrosidad o controlabilidad del pensamiento que gobiernan cuándo y cómo se activan procesos como la preocupación o la rumiación. Estas creencias metacognitivas, positivas y negativas, son el motor principal del CAS y constituyen una diana terapéutica prioritaria. (Wells, 2009)."
+  },
+  {
+    "id": "idea_mct_3",
+    "titulo": "El contenido del pensamiento no es el objetivo principal del cambio",
+    "desarrollo": "A diferencia de la terapia cognitiva clásica, MCT no busca evaluar, discutir ni reemplazar el contenido de los pensamientos, sino modificar la relación del paciente con su actividad mental. El cambio terapéutico ocurre cuando el pensamiento pierde su poder regulador sobre la emoción al dejar de ser procesado de forma perseverativa. (Wells, 2009)."
+  },
+  {
+    "id": "idea_mct_4",
+    "titulo": "La atención es un mecanismo central de autorregulación",
+    "desarrollo": "El modelo concede a la atención un papel central en la génesis y mantenimiento del malestar emocional. La capacidad de dirigir, alternar y soltar el foco atencional permite debilitar la vigilancia de amenaza y restaurar flexibilidad cognitiva, reduciendo la activación emocional sostenida. (Wells, 1997; Wells, 2009)."
+  },
+  {
+    "id": "idea_mct_5",
+    "titulo": "La postura metacognitiva permite el descentramiento sin análisis",
+    "desarrollo": "MCT introduce una postura de observación desapegada —detached mindfulness— que permite experimentar pensamientos y sensaciones como eventos mentales pasajeros sin analizarlos, evaluarlos ni controlarlos. Este descentramiento no es meditativo ni contemplativo, sino funcional y orientado a desactivar el CAS. (Wells, 2009)."
+  },
+  {
+    "id": "idea_mct_6",
+    "titulo": "Intentar controlar la mente mantiene el problema",
+    "desarrollo": "El modelo sostiene que los intentos persistentes de controlar, suprimir o analizar los pensamientos refuerzan el CAS y perpetúan el malestar. La reducción del sufrimiento ocurre cuando el paciente abandona estas estrategias y adopta respuestas metacognitivas simples y no defensivas. (Wells, 2009)."
+  },
+  {
+    "id": "idea_mct_7",
+    "titulo": "El cambio se produce mediante aprendizaje experiencial",
+    "desarrollo": "MCT enfatiza el aprendizaje experiencial sobre la persuasión verbal o el insight intelectual. A través de experimentos metacognitivos, el paciente comprueba directamente que los pensamientos no son peligrosos ni incontrolables cuando no se les responde, consolidando un cambio estable en la autorregulación mental. (Wells, 2009)."
+  },
+  {
+    "id": "idea_mct_8",
+    "titulo": "El objetivo terapéutico es una mente flexible, no silenciosa",
+    "desarrollo": "El objetivo final de la Terapia Metacognitiva no es eliminar pensamientos ni reducir su frecuencia, sino desarrollar una relación flexible y no reactiva con la actividad mental, en la que los pensamientos puedan aparecer sin desencadenar cascadas de procesamiento que mantengan el malestar emocional. (Wells, 2009)."
+  }
+],
+"secuencias": [
+  {
+    "id": "seq_mct_desactivacion_cas",
+    "nombre": "Secuencia clínica de MCT para desactivar el CAS",
+    "descripcion": "Secuencia programática descrita en MCT que organiza la intervención para desactivar el síndrome cognitivo-atencional (CAS) mediante formulación metacognitiva, interrupción del procesamiento perseverativo, entrenamiento atencional, modificación de creencias metacognitivas y generalización. Aunque flexible en su aplicación, el orden de estas fases es clínicamente relevante porque establece primero la lógica del modelo, luego las habilidades nucleares y finalmente la consolidación del cambio.",
+    "tipo": "programa",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Formulación metacognitiva del CAS y psicoeducación",
+        "explicacion": "Se identifica el patrón específico de preocupación, rumiación y vigilancia de amenaza, junto con estrategias contraproducentes y creencias metacognitivas que lo sostienen, estableciendo una explicación compartida centrada en procesos y no en contenidos."
+      },
+      {
+        "orden": 2,
+        "accion": "Interrupción del procesamiento perseverativo (Detached Mindfulness)",
+        "explicacion": "Se entrena una postura metacognitiva de observación desapegada para permitir pensamientos y sensaciones sin analizarlos ni responderles, reduciendo la implicación automática en rumiación y preocupación y debilitando el CAS."
+      },
+      {
+        "orden": 3,
+        "accion": "Entrenamiento en control atencional (ATT) y reducción de vigilancia de amenaza",
+        "explicacion": "Se fortalece la capacidad de dirigir y alternar voluntariamente la atención para disminuir la dominancia de la amenaza interna y externa, aumentando flexibilidad atencional y reduciendo la activación sostenida mantenida por monitorización de amenaza."
+      },
+      {
+        "orden": 4,
+        "accion": "Modificación de creencias metacognitivas",
+        "explicacion": "Se trabajan creencias metacognitivas positivas (utilidad de preocuparse/rumiar) y negativas (peligro o incontrolabilidad del pensamiento) mediante diálogo y experimentos metacognitivos, desactivando los motores que reactivan el CAS."
+      },
+      {
+        "orden": 5,
+        "accion": "Generalización, mantenimiento y prevención de recaídas",
+        "explicacion": "Se aplica la postura metacognitiva y el control atencional en situaciones cotidianas, se anticipan activadores futuros y se consolidan estrategias de respuesta simples y no defensivas para mantener el cambio y reducir reactivaciones del CAS."
+      }
+    ]
+  }
+],
+
+
+  "refs": [
+    "Wells, A. (1997). Cognitive Therapy of Anxiety Disorders.",
+    "Wells, A. (2009). Metacognitive Therapy for Anxiety and Depression."
+  ]
+}
