@@ -72,39 +72,82 @@
     "ALI_monitorizacion": "La monitorización se centra en el nivel de implicación en las tareas, la capacidad de sostener la acción pese a la fluctuación emocional y la reducción de conductas de evitación. El progreso no se evalúa por el descenso inmediato del malestar, sino por la ampliación del repertorio conductual y la disminución de la preocupación por los síntomas.",
     "ALI_contexto": "La Terapia Morita es altamente sensible al contexto vital del paciente: trabajo, familia, deberes sociales y circunstancias reales. El terapeuta adapta las tareas para que encajen con la vida cotidiana concreta, evitando intervenciones abstractas o descontextualizadas. La realidad externa es el principal anclaje del proceso terapéutico."
   },
-
-"procesos": [
+"procedimientos": [
   {
-    "nombre": "Aceptación de la experiencia emocional",
-    "id": "morita_aceptacion_experiencia",
-    "descripcion": "Proceso central de la Terapia Morita que consiste en permitir la presencia de emociones, pensamientos y sensaciones tal como aparecen, sin intentar controlarlos, modificarlos ni interpretarlos. La aceptación no se plantea como una actitud reflexiva o verbal, sino como una disposición pasiva y experiencial ante el flujo natural de la vida emocional. Este proceso debilita la lucha secundaria contra el malestar, reduce la intensificación paradójica de la ansiedad y sienta las bases para una relación más funcional con la experiencia interna, donde la emoción deja de ser el criterio que gobierna la conducta (Morita, 1928; Morita, 1930)."
+    "nombre": "Psychoeducación Morita y formulación del “ciclo de preocupación”",
+    "codigo": "p_morita_psicoeducacion_ciclo",
+    "procesos": ["N_marcosCognitivos", "RE_reapreciacion", "RE_prevEvitacion"],
+    "texto": "Procedimiento inicial en el que el terapeuta explica el marco Morita: las emociones (ansiedad, miedo, obsesión) son fenómenos naturales y el problema aparece cuando la persona entra en autoobservación ansiosa, interpreta el estado interno como peligro y organiza su vida para evitarlo, lo que estrecha la conducta y amplifica el malestar; se formula el caso como un bucle de atención al síntoma → lucha/evitación → restricción vital → mayor preocupación, y se establece el criterio de progreso como acción adecuada con emoción presente, no reducción inmediata del síntoma (Morita, 1928; Morita, 1930; LeVine, 1993)."
   },
   {
-    "nombre": "Descentrado del self respecto a los estados internos",
-    "id": "morita_descentrado_self",
-    "descripcion": "Proceso mediante el cual la persona deja de organizar su identidad y su atención en torno a lo que siente en cada momento. En Morita, el sufrimiento se mantiene cuando el self queda atrapado en la autoobservación ansiosa y en la evaluación constante del estado interno. El descentrado implica recuperar una posición en la que pensamientos y emociones son experimentados como fenómenos pasajeros, no como definidores del yo ni como señales que dictan qué puede o no hacerse. Este proceso reduce la fusión entre emoción, identidad y acción, favoreciendo una vivencia más amplia y flexible del self (Morita, 1930; Ishiyama, 2003)."
+    "nombre": "Reposo estructurado y retiro de la lucha (fase 1 clásica)",
+    "codigo": "p_morita_reposo_estructurado",
+    "procesos": ["RE_aceptacion", "RI_mindfulnessSelf", "RE_modulacion"],
+    "texto": "Procedimiento de inicio (clásico en formato residencial) que reduce al mínimo la estimulación y la conducta de control, con el objetivo de cortar el “hacer para sentirme mejor” y permitir que pensamientos, sensaciones y emociones fluctúen sin intervención; se sostiene una actitud de observación pasiva (sin análisis ni búsqueda de alivio) para debilitar la hiperobservación y restaurar una regulación más espontánea, cuidando que el reposo no se convierta en evitación (Morita, 1928; Morita, 1930; LeVine, 1993)."
   },
   {
-    "nombre": "Orientación a la acción y a la realidad",
-    "id": "morita_orientacion_realidad",
-    "descripcion": "Proceso que desplaza el eje de la vida psicológica desde el estado emocional hacia las demandas concretas de la realidad externa. La Terapia Morita sostiene que la acción adecuada no debe depender de sentirse bien, sino de lo que la situación requiere. A través de este proceso, la persona aprende a actuar conforme a responsabilidades reales —trabajo, estudio, cuidado, compromisos— aun cuando la ansiedad o el miedo estén presentes. La realidad cotidiana se convierte así en el principal regulador del comportamiento, debilitando la centralidad del síntoma y restaurando una vida funcional (Morita, 1928; LeVine, 1993)."
+    "nombre": "Diario Morita (registro fenomenológico no interpretativo)",
+    "codigo": "p_morita_diario",
+    "procesos": ["N_metacognicion", "RI_mindfulnessSelf", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento continuo en el que el paciente escribe un diario breve centrado en hechos y experiencia inmediata (lo que ocurrió, lo que hice, lo que apareció en el cuerpo/mente) evitando explicaciones, análisis o rumiación; el terapeuta revisa el diario para reforzar el desplazamiento del foco desde el síntoma hacia la conducta y la realidad cotidiana, y para detectar patrones de evitación o de búsqueda de certeza que reactivan el ciclo de preocupación (Morita, 1928; LeVine, 1993; Ishiyama, 2003)."
   },
   {
-    "nombre": "Reducción de la autoobservación patológica",
-    "id": "morita_reduccion_autoobservacion",
-    "descripcion": "Proceso específico dirigido a disminuir la atención excesiva y autorreferencial sobre sensaciones, pensamientos y emociones. En Morita, la autoobservación constante actúa como un amplificador del malestar y refuerza la creencia de que el estado interno debe ser vigilado y controlado. La reducción de esta autoobservación no se logra mediante confrontación cognitiva, sino mediante la reorientación sistemática hacia tareas externas y la aceptación pasiva de la experiencia interna, lo que permite que la emoción pierda protagonismo sin necesidad de combatirla (Morita, 1930; LeVine, 1993)."
+    "nombre": "Prohibición de conductas de seguridad y del “hablar del síntoma” como centro",
+    "codigo": "p_morita_no_refuerzo_sintoma",
+    "procesos": ["RE_prevEvitacion", "RI_mindfulnessSelf", "AG_compromisoConductual"],
+    "texto": "Procedimiento de encuadre mediante el cual se limitan sistemáticamente las conductas de seguridad (comprobaciones, búsqueda de tranquilidad, rituales, consultas repetitivas) y se evita que la conversación gire alrededor del síntoma, no por frialdad sino para impedir el refuerzo del foco autoobservacional; cuando el paciente vuelve a la preocupación, se redirige a la acción adecuada del momento, consolidando que el criterio es vivir funcionalmente con emoción presente (Morita, 1930; LeVine, 1993; Ishiyama, 2003)."
   },
   {
-    "nombre": "Reaprendizaje implícito de funcionalidad con malestar presente",
-    "id": "morita_reaprendizaje_funcional",
-    "descripcion": "Proceso de cambio implícito mediante el cual la persona descubre, a través de la experiencia directa, que puede vivir de manera eficaz y responsable aun en presencia de ansiedad, miedo u otras emociones desagradables. Este reaprendizaje no se produce por insight verbal, sino por la repetición de acciones funcionales mientras el malestar está presente. Con el tiempo, esta experiencia debilita la asociación aprendida entre emoción y evitación, reduce la preocupación por los síntomas y consolida una relación más natural y no temerosa con la vida emocional (LeVine, 1993; Ishiyama, 2003)."
+    "nombre": "Introducción progresiva de actividad ligera estructurada (fase 2 clásica)",
+    "codigo": "p_morita_actividad_ligera",
+    "procesos": ["AG_compromisoConductual", "RE_aceptacion", "RE_modulacion"],
+    "texto": "Procedimiento de transición donde se introducen tareas simples, repetibles y concretas (orden, autocuidado, pequeñas responsabilidades) con instrucciones claras y evaluación por cumplimiento, no por estado emocional; la meta es entrenar la combinación Morita de aceptación pasiva de la experiencia interna y acción activa en el mundo, demostrando por experiencia directa que se puede actuar correctamente aunque la ansiedad fluctúe (Morita, 1928; Morita, 1930; LeVine, 1993)."
   },
   {
-    "nombre": "Estabilización mediante hábitos y disciplina cotidiana",
-    "id": "morita_estabilizacion_habitos",
-    "descripcion": "Proceso de consolidación que se apoya en la instauración de rutinas estables de vida cotidiana —trabajo, descanso, autocuidado y responsabilidades sociales— como soporte del cambio psicológico. En Morita, los hábitos funcionan como una estructura externa que sostiene la acción cuando la motivación emocional fluctúa. Esta disciplina no persigue control emocional, sino continuidad vital, reduciendo la dependencia del estado interno para decidir cómo vivir y proporcionando una base sólida para mantener los avances terapéuticos a largo plazo (Morita, 1928; Ishiyama, 2003)."
+    "nombre": "Terapia ocupacional y trabajo con tareas reales (fase 3 clásica)",
+    "codigo": "p_morita_trabajo_tareas_reales",
+    "procesos": ["AG_compromisoConductual", "AG_autoriaResponsabilidad", "RE_prevEvitacion"],
+    "texto": "Procedimiento central de la fase activa en el que se incrementa el nivel de exigencia hacia tareas con utilidad real (estudio, trabajo manual, responsabilidades domésticas o académicas) para reemplazar el patrón de vida centrado en el síntoma por una vida centrada en lo que hay que hacer; el terapeuta prescribe y ajusta tareas para que el paciente experimente eficacia conductual con malestar presente, debilitando la evitación y la dependencia del “sentirme bien” como condición para vivir (Morita, 1928; LeVine, 1993; Ishiyama, 2003)."
+  },
+  {
+    "nombre": "Entrenamiento en atención a la realidad (desplazamiento atencional externo)",
+    "codigo": "p_morita_atencion_realidad",
+    "procesos": ["RI_mindfulnessSelf", "AG_compromisoConductual", "RE_prevEvitacion"],
+    "texto": "Procedimiento deliberado para romper la autoobservación patológica entrenando el retorno de la atención a tareas y estímulos externos (entorno, materiales, personas, secuencias de acción) cada vez que el paciente se engancha a monitorizar su estado interno; no se discute si la emoción “debería estar”, se reconoce su presencia y se vuelve al aquí-y-ahora de la acción, consolidando un estilo de funcionamiento guiado por la realidad más que por el síntoma (Morita, 1930; LeVine, 1993)."
+  },
+  {
+    "nombre": "Acción con emoción presente (exposición naturalista no etiquetada)",
+    "codigo": "p_morita_accion_con_emocion",
+    "procesos": ["AG_compromisoConductual", "RE_aceptacion", "RE_prevEvitacion"],
+    "texto": "Procedimiento experiencial en el que se planifican y ejecutan acciones relevantes precisamente en presencia de ansiedad o miedo (llamar, salir, acudir, presentar, estudiar), sin convertirlo en “exposición” como objetivo explícito; la tarea se justifica por necesidad o responsabilidad y se evalúa por conducta, lo que produce aprendizaje correctivo implícito: la emoción puede estar y, aun así, la vida continúa, reduciendo evitación y centralidad del síntoma por vía práctica (LeVine, 1993; Ishiyama, 2003)."
+  },
+  {
+    "nombre": "Disciplina cotidiana y ritmo de vida (higiene conductual Morita)",
+    "codigo": "p_morita_disciplina_rutinas",
+    "procesos": ["AG_compromisoConductual", "AG_autoriaResponsabilidad", "RE_modulacion"],
+    "texto": "Procedimiento de consolidación que estructura horarios y hábitos (sueño, comidas, trabajo/estudio, descanso, actividad física ligera) para sostener un funcionamiento estable que no dependa de fluctuaciones emocionales; el énfasis no está en controlar la emoción, sino en mantener una vida ordenada que reduzca oportunidades de rumiación y refuerce identidad funcional, favoreciendo que la autorregulación se restablezca por no interferencia y repetición de conducta adecuada (Morita, 1928; LeVine, 1993)."
+  },
+  {
+    "nombre": "Guía directiva sobria y feedback centrado en conducta",
+    "codigo": "p_morita_guia_directiva_feedback",
+    "procesos": ["AG_autoriaResponsabilidad", "ALI_tareas", "N_reformulacion"],
+    "texto": "Procedimiento relacional-técnico donde el terapeuta adopta un estilo claro y sobrio: prescribe tareas, revisa cumplimiento, corrige desviaciones hacia el control del síntoma y ofrece feedback sobre conducta observable y adecuación a la realidad, evitando entrar en debates interminables sobre “cómo me siento”; este encuadre refuerza expectativas correctas del método, reduce el refuerzo de la preocupación y sostiene la motivación mediante criterios operativos de progreso (Morita, 1930; LeVine, 1993; Ishiyama, 2003)."
+  },
+  {
+    "nombre": "Reintegración social y generalización (fase 4 clásica)",
+    "codigo": "p_morita_reintegracion_social",
+    "procesos": ["AG_compromisoConductual", "R_repertorioInterpersonal", "RE_aceptacion"],
+    "texto": "Procedimiento final orientado a trasladar el aprendizaje Morita a contextos reales (trabajo, estudio, familia, vida social) aumentando gradualmente exposición a demandas y responsabilidades, y entrenando continuidad de hábitos fuera del entorno terapéutico; se refuerza un repertorio interpersonal funcional y se mantiene el criterio de éxito como acción responsable con emoción presente, no ausencia de ansiedad (Morita, 1928; LeVine, 1993)."
+  },
+  {
+    "nombre": "Prevención de recaídas como “retorno al ciclo de preocupación”",
+    "codigo": "p_morita_prevencion_recaidas",
+    "procesos": ["N_metacognicion", "RE_prevEvitacion", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento de cierre que enseña a identificar precozmente señales de recaída entendidas como reenganche al ciclo de autoobservación-lucha-evitación (buscar certeza, monitorizar síntomas, posponer vida) y a responder con el protocolo Morita: reconocer emoción como natural, abandonar el esfuerzo de control y volver a la tarea adecuada; se planifican estrategias concretas de mantenimiento (rutinas, tareas, diario breve si es útil) para sostener a largo plazo una vida guiada por realidad (Morita, 1930; LeVine, 1993; Ishiyama, 2003)."
   }
 ],
+
+
 "micros": [
   {
     "nombre": "Normalización del malestar como fenómeno natural",
@@ -175,4 +218,5 @@
     "Ishiyama, F. I. (2003). Morita Therapy: A qualitative analysis. Journal of Counseling Psychology."
   ]
 }
+
 
