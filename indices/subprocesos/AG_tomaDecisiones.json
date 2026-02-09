@@ -1,8 +1,38 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 51,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 54,
   "modelos": [
+    {
+      "modelId": "aprendizaje-social-bandura-1977",
+      "modelLabel": "Aprendizaje social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Albert Bandura",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_bandura_evaluacion_autoeficacia",
+          "nombre": "Evaluación y formulación de autoeficacia específica por dominio",
+          "texto": "Procedimiento clínico orientado a evaluar y formular la autoeficacia de manera específica y situada —no global— respecto a conductas diana y contextos concretos, diferenciando claramente expectativas de eficacia (capacidad percibida) y expectativas de resultado (consecuencias anticipadas). Esta formulación permite predecir iniciación, esfuerzo y persistencia, y seleccionar tareas graduadas acordes al nivel actual del paciente, evitando tanto la sobreexigencia como la infraestimulación. (Bandura, 1997; Bandura, 1977).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_bandura_metas_plan_autorefuerzo",
+          "nombre": "Establecimiento de metas, planificación y auto-refuerzo",
+          "texto": "Procedimiento que organiza la intervención en metas conductuales concretas, planes de práctica y criterios explícitos de revisión, incorporando estrategias de auto-refuerzo para sostener la conducta en el tiempo. El progreso se vincula de manera explícita a la práctica y a las estrategias utilizadas, fortaleciendo la agencia personal y el mantenimiento del cambio. (Bandura, 1997).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_bandura_si_entonces",
+          "nombre": "Plan ‘si–entonces’ ante obstáculos",
+          "texto": "Microintervención orientada a anticipar barreras previsibles mediante planes condicionales del tipo “si ocurre X, entonces haré Y”, automatizando respuestas funcionales ante dificultades. Esta preparación reduce abandono, protege la continuidad de la práctica y facilita la autorregulación bajo estrés. (Bandura, 1997).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "pst-solucion-problemas-dzurilla-goldfried-1971",
       "modelLabel": "Terapia de Solución de Problemas (PST)",
@@ -71,6 +101,22 @@
       ]
     },
     {
+      "modelId": "sit-inoculacion-estres-meichenbaum-1977",
+      "modelLabel": "Terapia de inoculación de estrés (SIT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "m_sit_descomposicion_tarea",
+          "nombre": "Descomposición de la tarea estresante",
+          "texto": "Intervención que divide una situación estresante compleja en pasos manejables y secuenciales, reduciendo sensación de sobrecarga y facilitando la ejecución progresiva, especialmente útil en contextos de presión temporal o evaluativa. (Meichenbaum, 1985).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "terapia-cognitiva-beck-depresion-1967",
       "modelLabel": "Terapia cognitiva (depresión)",
       "modelGrupo": "Cognitivo",
@@ -118,6 +164,36 @@
           "codigo": "m_tccstd_objetivo_concreto",
           "nombre": "Definir objetivo conductual concreto",
           "texto": "Microintervención que traduce una queja vaga en un objetivo observable, específico y medible (qué, cuándo, cuánto), facilitando foco y evaluación del cambio. Es característica de la orientación pragmática de la TCC estándar. Referencia: Mahoney (1974).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-metacognitiva-wells-1990",
+      "modelLabel": "Terapia metacognitiva (MCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Adrian Wells",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mct_att",
+          "nombre": "Entrenamiento en Control Atencional (ATT)",
+          "texto": "Procedimiento estructurado de entrenamiento atencional que fortalece la capacidad del paciente para dirigir, alternar y sostener voluntariamente la atención independientemente del contenido mental, reduciendo la dominancia automática de la amenaza y aumentando la flexibilidad cognitiva y emocional frente a estímulos internos y externos. (Wells, 1997; Wells, 2009).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mct_posponer_preocupacion",
+          "nombre": "Posponer la rumiación y la preocupación",
+          "texto": "Microintervención mediante la cual el paciente decide conscientemente posponer la rumiación o la preocupación a un momento específico, demostrando experiencialmente que no son incontrolables ni necesarias en el instante en que aparecen, lo que debilita creencias metacognitivas negativas y reduce la duración del procesamiento perseverativo. (Wells, 2009).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mct_cambio_foco",
+          "nombre": "Cambio voluntario del foco atencional",
+          "texto": "Microintervención que entrena el desplazamiento consciente del foco atencional desde la amenaza interna hacia estímulos externos o neutros, demostrando control atencional flexible y reduciendo la dominancia automática del contenido amenazante sobre la experiencia emocional. (Wells, 1997; Wells, 2009).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

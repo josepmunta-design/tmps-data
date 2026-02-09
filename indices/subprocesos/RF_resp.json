@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_resp",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 6,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 7,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -21,6 +21,29 @@
           "codigo": "m_cft_srb_intention",
           "nombre": "Respiración calmante con intención afiliativa",
           "texto": "No solo “respirar”: hacerlo con actitud amable (suavidad, paciencia). El componente afiliativo es parte del mecanismo de cambio.",
+          "sub": "RF_resp",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "sit-inoculacion-estres-meichenbaum-1977",
+      "modelLabel": "Terapia de inoculación de estrés (SIT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_sit_regulacion_fisiologica",
+          "nombre": "Entrenamiento en técnicas de regulación fisiológica",
+          "texto": "Procedimiento de entrenamiento activo en habilidades de regulación fisiológica (respiración controlada, relajación muscular u otras técnicas compatibles) destinado a reducir hiperactivación y aumentar sensación de control corporal durante situaciones estresantes, integrando estas técnicas como recursos de afrontamiento que acompañan al trabajo cognitivo y conductual. (Meichenbaum, 1985).",
+          "sub": "RF_resp",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sit_respiracion_reguladora",
+          "nombre": "Respiración reguladora integrada al afrontamiento",
+          "texto": "Uso breve y funcional de la respiración controlada como apoyo al afrontamiento (no como evitación), permitiendo reducir picos de activación fisiológica para sostener la exposición y la aplicación de habilidades cognitivas y conductuales bajo estrés. (Meichenbaum, 1985).",
           "sub": "RF_resp",
           "tipo": "micro"
         }

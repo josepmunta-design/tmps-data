@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_aceptacion",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 40,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 41,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -28,6 +28,29 @@
           "codigo": "m_cft_access_vulnerable",
           "nombre": "Acceder a la parte avergonzada/vulnerable",
           "texto": "Bajar del debate cognitivo a la experiencia: localizar dónde se siente la vergüenza y qué necesita esa parte.",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-metacognitiva-wells-1990",
+      "modelLabel": "Terapia metacognitiva (MCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Adrian Wells",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mct_exposicion_metacognitiva",
+          "nombre": "Exposición metacognitiva a activadores internos",
+          "texto": "Procedimiento en el que el paciente permite la activación de pensamientos, imágenes o sensaciones temidas sin entrar en rumiación ni control, utilizando la postura metacognitiva para demostrar que la activación interna es tolerable y autolimitada cuando no se alimenta mediante procesamiento perseverativo. (Wells, 2009).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mct_exposicion_interna",
+          "nombre": "Exposición breve a activadores internos sin procesamiento",
+          "texto": "Permitir de forma intencional la aparición de pensamientos o imágenes temidas durante un tiempo breve sin entrar en rumiación, control ni neutralización, mostrando que la activación interna es tolerable y se autorregula cuando no se alimenta mediante el CAS. (Wells, 2009).",
           "sub": "RE_aceptacion",
           "tipo": "micro"
         }

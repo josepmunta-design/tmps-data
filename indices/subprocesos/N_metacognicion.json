@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 82,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 85,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -60,6 +60,36 @@
           "texto": "Protocolo breve: (1) notar crítica, (2) validar emoción, (3) una frase compasiva firme, (4) una acción pequeña de cuidado. Evita espiral secundaria de vergüenza.",
           "sub": "N_metacognicion",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "aprendizaje-social-bandura-1977",
+      "modelLabel": "Aprendizaje social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Albert Bandura",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_bandura_evaluacion_autoeficacia",
+          "nombre": "Evaluación y formulación de autoeficacia específica por dominio",
+          "texto": "Procedimiento clínico orientado a evaluar y formular la autoeficacia de manera específica y situada —no global— respecto a conductas diana y contextos concretos, diferenciando claramente expectativas de eficacia (capacidad percibida) y expectativas de resultado (consecuencias anticipadas). Esta formulación permite predecir iniciación, esfuerzo y persistencia, y seleccionar tareas graduadas acordes al nivel actual del paciente, evitando tanto la sobreexigencia como la infraestimulación. (Bandura, 1997; Bandura, 1977).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_bandura_autoobservacion_autorregistro",
+          "nombre": "Autoobservación y autorregistro para autorregulación",
+          "texto": "Procedimiento de autorregulación en el que el paciente monitoriza de forma sistemática conductas diana, antecedentes, consecuencias, esfuerzo invertido y resultados obtenidos, transformando la experiencia en información útil para ajustar estrategias. El autorregistro reduce sesgos cognitivos, incrementa sensación de control y apoya decisiones clínicas sobre continuidad o modificación del plan de acción. (Bandura, 1977; Bandura, 1997).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_bandura_generalizacion_prevencion",
+          "nombre": "Generalización, mantenimiento y prevención de recaídas de autoeficacia",
+          "texto": "Procedimiento final orientado a transferir habilidades y autoeficacia a múltiples contextos y situaciones, introduciendo variabilidad deliberada en la práctica, anticipación de obstáculos y planes de recuperación tras fallos. Se protege la autoeficacia evitando interpretaciones globales del error y consolidando rutinas de autorregulación que permitan sostener el cambio a largo plazo. (Bandura, 1997; Bandura, 1977).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -180,6 +210,36 @@
       ]
     },
     {
+      "modelId": "sit-inoculacion-estres-meichenbaum-1977",
+      "modelLabel": "Terapia de inoculación de estrés (SIT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_sit_autodialogo",
+          "nombre": "Identificación y análisis del autodiálogo estresógeno",
+          "texto": "Procedimiento centrado en que el paciente detecte y observe sus autoverbalizaciones antes, durante y después de situaciones estresantes, identificando contenidos catastrofistas, imperativos rígidos y mensajes de descontrol que amplifican la activación emocional, transformando el diálogo interno en un objeto consciente y modificable sobre el que se podrá entrenar afrontamiento cognitivo posterior. (Meichenbaum, 1985).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sit_senales_tempranas",
+          "nombre": "Registro de señales tempranas de estrés",
+          "texto": "Microintervención orientada a que el paciente identifique y registre señales iniciales de activación (cognitivas, emocionales y somáticas) antes de que el estrés escale, favoreciendo detección precoz y posibilidad de intervención autorregulada, y transformando el estrés de un evento abrupto en un proceso anticipable y manejable. (Meichenbaum, 1985).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sit_descomposicion_tarea",
+          "nombre": "Descomposición de la tarea estresante",
+          "texto": "Intervención que divide una situación estresante compleja en pasos manejables y secuenciales, reduciendo sensación de sobrecarga y facilitando la ejecución progresiva, especialmente útil en contextos de presión temporal o evaluativa. (Meichenbaum, 1985).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "terapia-cognitiva-beck-depresion-1967",
       "modelLabel": "Terapia cognitiva (depresión)",
       "modelGrupo": "Cognitivo",
@@ -276,6 +336,50 @@
           "codigo": "m_tccstd_sintesis",
           "nombre": "Síntesis funcional de sesión",
           "texto": "Resumen breve que integra conductas, cogniciones y aprendizajes clave de la sesión, asegurando transferencia y claridad antes del cierre. Referencia: Meichenbaum (1977).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-metacognitiva-wells-1990",
+      "modelLabel": "Terapia metacognitiva (MCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Adrian Wells",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mct_psicoeducacion",
+          "nombre": "Psicoeducación metacognitiva",
+          "texto": "Procedimiento psicoeducativo orientado a movilizar al paciente hacia una comprensión metacognitiva del malestar, diferenciando pensamientos de procesos mentales e introduciendo el concepto de síndrome cognitivo-atencional (CAS), con el objetivo de debilitar la implicación automática en la rumiación y la preocupación y preparar activamente el cambio en la relación con la actividad mental. (Wells, 2009).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mct_creencias_metacognitivas",
+          "nombre": "Identificación de creencias metacognitivas",
+          "texto": "Procedimiento en el que el paciente identifica activamente creencias metacognitivas positivas (p. ej., \"preocuparme me protege\") y negativas (p. ej., \"si no controlo mis pensamientos me volveré loco\"), haciéndolas explícitas como hipótesis reguladoras del procesamiento mental y no como hechos, lo que permite abordarlas posteriormente de forma experiencial y experimental. (Wells, 2009).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mct_detached_mindfulness",
+          "nombre": "Entrenamiento en Atención Desacoplada (Detached Mindfulness)",
+          "texto": "Procedimiento experiencial clave en MCT en el que el paciente aprende a relacionarse con pensamientos, imágenes y sensaciones como eventos mentales pasajeros sin analizarlos, responderles ni intentar controlarlos, favoreciendo una postura de observación desapegada que debilita el CAS y reduce la fusión cognitiva mantenedora del malestar. (Wells, 2009).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mct_nombrar_cas",
+          "nombre": "Nombrar el CAS en tiempo real",
+          "texto": "Microintervención consistente en que el paciente identifique explícitamente cuándo está entrando en rumiación, preocupación o vigilancia de amenaza y lo nombre como activación del síndrome cognitivo-atencional (CAS), desplazando la experiencia de un contenido amenazante a un proceso reconocible y modificable, lo que reduce implicación automática y prepara la interrupción del estilo perseverativo. (Wells, 2009).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mct_autoobservacion_cas",
+          "nombre": "Autoobservación del tiempo dedicado al CAS",
+          "texto": "Registro breve del tiempo y frecuencia dedicados a rumiación, preocupación y vigilancia de amenaza, aumentando conciencia del coste real del CAS y facilitando decisiones activas para su reducción progresiva. (Wells, 2009).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

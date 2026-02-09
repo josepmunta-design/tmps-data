@@ -1,8 +1,31 @@
 {
   "subprocesoId": "RE_reapreciacion",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 15,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 16,
   "modelos": [
+    {
+      "modelId": "aprendizaje-social-bandura-1977",
+      "modelLabel": "Aprendizaje social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Albert Bandura",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_bandura_reinterpretacion_activacion",
+          "nombre": "Reinterpretación de activación fisiológica y emociones como información (no amenaza)",
+          "texto": "Procedimiento clínico dirigido a trabajar una de las fuentes clave de la autoeficacia: la interpretación del estado fisiológico y emocional. Se entrena al paciente a comprender la activación (ansiedad, tensión, taquicardia) como señal de esfuerzo o desafío y no como prueba de incapacidad, vinculando este reencuadre a experiencias conductuales correctivas que reduzcan evitación. (Bandura, 1997).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_bandura_normalizar_activacion",
+          "nombre": "Normalizar activación fisiológica",
+          "texto": "Microintervención orientada a reinterpretar la activación fisiológica (ansiedad, tensión, incremento de la frecuencia cardíaca) como una señal de esfuerzo, activación adaptativa o novedad, y no como evidencia de incapacidad o peligro. Este reencuadre reduce evitación, facilita la exposición conductual y protege la autoeficacia durante tareas desafiantes. (Bandura, 1997).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "rebt-terapia-racional-emotiva-ellis",
       "modelLabel": "Terapia racional emotiva conductual (REBT)",

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RI_dialogoFuncional",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 10,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 11,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -58,6 +58,43 @@
           "codigo": "m_rebt_autoinstrucciones",
           "nombre": "Auto-instrucciones racionales breves",
           "texto": "Frases para guiar acción y regulación en momentos críticos (“puedo tolerarlo”, “preferiría, pero no es necesario”).\n(Referencia: Ellis, 1962.)",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "sit-inoculacion-estres-meichenbaum-1977",
+      "modelLabel": "Terapia de inoculación de estrés (SIT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_sit_autodialogo",
+          "nombre": "Identificación y análisis del autodiálogo estresógeno",
+          "texto": "Procedimiento centrado en que el paciente detecte y observe sus autoverbalizaciones antes, durante y después de situaciones estresantes, identificando contenidos catastrofistas, imperativos rígidos y mensajes de descontrol que amplifican la activación emocional, transformando el diálogo interno en un objeto consciente y modificable sobre el que se podrá entrenar afrontamiento cognitivo posterior. (Meichenbaum, 1985).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sit_autoinstrucciones",
+          "nombre": "Entrenamiento en autoinstrucciones de afrontamiento",
+          "texto": "Procedimiento de adquisición de habilidades en el que el paciente aprende y practica autoinstrucciones específicas para distintas fases del afrontamiento (anticipación, ejecución y evaluación), sustituyendo mensajes desorganizadores por verbalizaciones orientadas a tarea, control y tolerancia al malestar, con el objetivo de modular la activación y sostener la conducta eficaz bajo estrés. (Meichenbaum, 1985).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sit_autoinstrucciones_anticipacion",
+          "nombre": "Autoinstrucciones anticipatorias",
+          "texto": "Uso de verbalizaciones breves antes de exponerse a un estresor (por ejemplo, “puedo manejarlo paso a paso”, “no necesito hacerlo perfecto”) para reducir amenaza anticipada, organizar la atención y preparar una respuesta de afrontamiento funcional que disminuya la probabilidad de evitación. (Meichenbaum, 1985).",
+          "sub": "RI_dialogoFuncional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sit_autoinstrucciones_ejecucion",
+          "nombre": "Autoinstrucciones durante la ejecución",
+          "texto": "Microintervención consistente en guiar la acción bajo estrés mediante autoverbalizaciones orientadas a tarea (“concéntrate en el siguiente paso”, “respira y continúa”), facilitando regulación de la activación y mantenimiento de la conducta eficaz mientras la demanda está activa. (Meichenbaum, 1985).",
           "sub": "RI_dialogoFuncional",
           "tipo": "micro"
         }

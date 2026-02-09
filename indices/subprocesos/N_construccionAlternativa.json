@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_construccionAlternativa",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 28,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 30,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -115,6 +115,36 @@
       ]
     },
     {
+      "modelId": "sit-inoculacion-estres-meichenbaum-1977",
+      "modelLabel": "Terapia de inoculación de estrés (SIT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_sit_generalizacion",
+          "nombre": "Generalización y prevención de recaídas",
+          "texto": "Procedimiento final orientado a consolidar el uso flexible de habilidades de afrontamiento en distintos contextos, anticipar futuros estresores, ajustar autoinstrucciones y reforzar una narrativa de competencia personal, reduciendo la probabilidad de recaídas y promoviendo un estilo estable de autorregulación frente al estrés. (Meichenbaum, 2007).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sit_ensayo_encubierto",
+          "nombre": "Ensayo encubierto de afrontamiento",
+          "texto": "Visualización guiada breve en la que el paciente imagina la situación estresante aplicando con éxito sus habilidades de afrontamiento, fortaleciendo anticipaciones funcionales y preparando la respuesta conductual antes de la exposición real. (Meichenbaum, 1985).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sit_anticipacion_futuro",
+          "nombre": "Anticipación de estresores futuros",
+          "texto": "Exploración breve de escenarios estresantes previsibles y planificación de respuestas de afrontamiento específicas, fortaleciendo preparación anticipatoria y una identidad futura competente frente al estrés. (Meichenbaum, 2007).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "terapia-cognitiva-beck-depresion-1967",
       "modelLabel": "Terapia cognitiva (depresión)",
       "modelGrupo": "Cognitivo",
@@ -132,6 +162,36 @@
           "codigo": "m_beck_alternativo",
           "nombre": "Generación de pensamiento alternativo",
           "texto": "Formulación breve de una interpretación alternativa más realista y útil, evaluando su credibilidad y efecto emocional inmediato. Referencia: Beck et al. (1979).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-metacognitiva-wells-1990",
+      "modelLabel": "Terapia metacognitiva (MCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Adrian Wells",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mct_generalizacion",
+          "nombre": "Generalización del control metacognitivo",
+          "texto": "Procedimiento final orientado a extender el uso flexible de las habilidades metacognitivas a distintos contextos vitales, consolidando una relación estable y no reactiva con la actividad mental y reduciendo la probabilidad de reactivación futura del CAS ante nuevos estresores. (Wells, 2009).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mct_respuestas_metacognitivas",
+          "nombre": "Identificación de respuestas metacognitivas alternativas",
+          "texto": "Microintervención que ayuda al paciente a generar respuestas simples y no defensivas ante la activación mental (por ejemplo, observar, posponer, redirigir atención), ampliando el repertorio metacognitivo más allá de la rumiación o el control. (Wells, 2009).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mct_respuesta_futura",
+          "nombre": "Proyección de respuesta metacognitiva futura",
+          "texto": "Microintervención prospectiva en la que el paciente imagina futuras activaciones mentales respondiendo desde una postura metacognitiva flexible, reforzando una identidad futura menos reactiva y más autorregulada frente a la actividad mental. (Wells, 2009).",
           "sub": "N_construccionAlternativa",
           "tipo": "micro"
         }

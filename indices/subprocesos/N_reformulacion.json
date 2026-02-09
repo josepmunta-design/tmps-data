@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_reformulacion",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 64,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 67,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -37,6 +37,22 @@
           "codigo": "m_cft_name_shame",
           "nombre": "Nombrar vergüenza como emoción social",
           "texto": "Rotular “esto es vergüenza” y ligarla a pertenencia/exclusión reduce confusión y moralización (“soy malo”) y permite trabajar desde compasión.",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "aprendizaje-social-bandura-1977",
+      "modelLabel": "Aprendizaje social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Albert Bandura",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "m_bandura_reencuadre_fallo",
+          "nombre": "Reencuadre del fallo como información",
+          "texto": "Microintervención que transforma errores y resultados parciales en información útil para ajustar estrategia, evitando interpretaciones globales de fracaso personal que erosionan la autoeficacia. El fallo se integra como parte del aprendizaje progresivo dentro del ciclo de práctica y mejora. (Bandura, 1977; Bandura, 1997).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }
@@ -110,6 +126,43 @@
       ]
     },
     {
+      "modelId": "sit-inoculacion-estres-meichenbaum-1977",
+      "modelLabel": "Terapia de inoculación de estrés (SIT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_sit_autoinstrucciones",
+          "nombre": "Entrenamiento en autoinstrucciones de afrontamiento",
+          "texto": "Procedimiento de adquisición de habilidades en el que el paciente aprende y practica autoinstrucciones específicas para distintas fases del afrontamiento (anticipación, ejecución y evaluación), sustituyendo mensajes desorganizadores por verbalizaciones orientadas a tarea, control y tolerancia al malestar, con el objetivo de modular la activación y sostener la conducta eficaz bajo estrés. (Meichenbaum, 1985).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sit_autoinstrucciones_anticipacion",
+          "nombre": "Autoinstrucciones anticipatorias",
+          "texto": "Uso de verbalizaciones breves antes de exponerse a un estresor (por ejemplo, “puedo manejarlo paso a paso”, “no necesito hacerlo perfecto”) para reducir amenaza anticipada, organizar la atención y preparar una respuesta de afrontamiento funcional que disminuya la probabilidad de evitación. (Meichenbaum, 1985).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sit_autoinstrucciones_revision",
+          "nombre": "Autoinstrucciones de evaluación posterior",
+          "texto": "Verbalizaciones posteriores al afrontamiento destinadas a evaluar el desempeño de forma realista y no punitiva (“ha sido difícil y lo he sostenido”, “he aprendido algo útil”), consolidando aprendizaje, autoeficacia y una autoimagen competente frente al estrés. (Meichenbaum, 1985).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sit_reformulacion_funcional",
+          "nombre": "Reformulación funcional del estresor",
+          "texto": "Microreencuadre cognitivo inmediato que redefine la situación estresante como reto entrenable o experiencia de práctica (“esto es un ensayo, no un examen”), disminuyendo catastrofismo y facilitando una aproximación activa en lugar de defensiva. (Meichenbaum, 1985).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "terapia-cognitiva-beck-depresion-1967",
       "modelLabel": "Terapia cognitiva (depresión)",
       "modelGrupo": "Cognitivo",
@@ -150,6 +203,43 @@
           "codigo": "m_tccstd_utilidad_cognicion",
           "nombre": "Cuestionar utilidad de una cognición",
           "texto": "Intervención breve que evalúa una cognición por su utilidad funcional más que por su veracidad filosófica, diferenciando TCC estándar de enfoques más racionalistas. Referencia: Mahoney (1974).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-metacognitiva-wells-1990",
+      "modelLabel": "Terapia metacognitiva (MCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Adrian Wells",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mct_modificacion_creencias_positivas",
+          "nombre": "Modificación de creencias metacognitivas positivas",
+          "texto": "Procedimiento orientado a debilitar la creencia de que la preocupación, la rumiación o la vigilancia de amenaza son útiles o necesarias, utilizando diálogo socrático experiencial y experimentos conductuales que demuestran que abandonar estos procesos no incrementa el riesgo ni reduce el control. (Wells, 2009).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mct_modificacion_creencias_negativas",
+          "nombre": "Modificación de creencias metacognitivas negativas",
+          "texto": "Procedimiento dirigido a cuestionar y transformar creencias sobre la peligrosidad, incontrolabilidad o consecuencias catastróficas del pensamiento, ayudando al paciente a experimentar que los pensamientos no causan daño por sí mismos y que el control rígido no es necesario para la estabilidad emocional. (Wells, 2009).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mct_desconfirmacion_incontrolabilidad",
+          "nombre": "Desconfirmación experiencial de la incontrolabilidad del pensamiento",
+          "texto": "Microexperimento en el que el paciente observa que los pensamientos disminuyen o desaparecen cuando no se les responde, generando evidencia directa contra la creencia de que la mente es incontrolable o peligrosa si no se vigila activamente. (Wells, 2009).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mct_normalizacion_intrusivos",
+          "nombre": "Normalización de la aparición de pensamientos intrusivos",
+          "texto": "Reatribución breve que sitúa los pensamientos intrusivos como fenómenos mentales comunes y no significativos, reduciendo su carga amenazante y la necesidad de responderles, lo que contribuye a debilitar la activación del CAS. (Wells, 2009).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }

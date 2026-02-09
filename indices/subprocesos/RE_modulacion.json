@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 76,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 79,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -58,6 +58,22 @@
           "texto": "Introducir compasión en microdosis para no disparar vergüenza: frases mínimas, prácticas breves, más cuerpo y menos narrativa al inicio.",
           "sub": "RE_modulacion",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "aprendizaje-social-bandura-1977",
+      "modelLabel": "Aprendizaje social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Albert Bandura",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_bandura_modelado_practica_gradual",
+          "nombre": "Modelado guiado con práctica gradual (guided mastery)",
+          "texto": "Procedimiento central del modelo en el que el terapeuta o un modelo competente demuestra la conducta diana y el paciente la ensaya de forma progresiva, con apoyo, correcciones y aumento gradual de dificultad. Este enfoque asegura experiencias de dominio reales (mastery experiences), consideradas la fuente más potente de autoeficacia, y resulta especialmente eficaz en ansiedad, habilidades sociales y afrontamiento de situaciones temidas. (Bandura, 1977; Bandura, 1997).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -150,6 +166,43 @@
       ]
     },
     {
+      "modelId": "sit-inoculacion-estres-meichenbaum-1977",
+      "modelLabel": "Terapia de inoculación de estrés (SIT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_sit_regulacion_fisiologica",
+          "nombre": "Entrenamiento en técnicas de regulación fisiológica",
+          "texto": "Procedimiento de entrenamiento activo en habilidades de regulación fisiológica (respiración controlada, relajación muscular u otras técnicas compatibles) destinado a reducir hiperactivación y aumentar sensación de control corporal durante situaciones estresantes, integrando estas técnicas como recursos de afrontamiento que acompañan al trabajo cognitivo y conductual. (Meichenbaum, 1985).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_sit_ensayo_conductual",
+          "nombre": "Ensayo conductual y role-playing bajo condiciones simuladas",
+          "texto": "Procedimiento experiencial en el que el paciente practica activamente habilidades de afrontamiento en situaciones simuladas o role-playing que reproducen demandas estresantes relevantes, permitiendo consolidar autoinstrucciones, regular activación y corregir errores en un contexto seguro antes de la aplicación en la vida real. (Meichenbaum, 1985).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sit_respiracion_reguladora",
+          "nombre": "Respiración reguladora integrada al afrontamiento",
+          "texto": "Uso breve y funcional de la respiración controlada como apoyo al afrontamiento (no como evitación), permitiendo reducir picos de activación fisiológica para sostener la exposición y la aplicación de habilidades cognitivas y conductuales bajo estrés. (Meichenbaum, 1985).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sit_detencion_autocritica",
+          "nombre": "Detención de espiral autocrítica",
+          "texto": "Interrupción consciente de autoverbalizaciones autocríticas que intensifican el estrés (“no sirvo”, “voy a fallar”) mediante sustitución por mensajes funcionales, reduciendo vergüenza, bloqueo y abandono prematuro del afrontamiento. (Meichenbaum, 1985).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "terapia-cognitivo-conductual-estandar-1980",
       "modelLabel": "Terapia cognitivo-conductual estándar",
       "modelGrupo": "Cognitivo",
@@ -183,6 +236,36 @@
           "texto": "Procedimiento integrador de Meichenbaum que prepara al paciente para manejar estresores mediante psicoeducación, reestructuración de autoverbalizaciones, ensayo de afrontamiento y práctica en escenarios graduados. Es característico de la TCC estándar por su enfoque de entrenamiento en habilidades aplicables a múltiples problemas. Referencia: Meichenbaum (1977).",
           "sub": "RE_modulacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-metacognitiva-wells-1990",
+      "modelLabel": "Terapia metacognitiva (MCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Adrian Wells",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mct_att",
+          "nombre": "Entrenamiento en Control Atencional (ATT)",
+          "texto": "Procedimiento estructurado de entrenamiento atencional que fortalece la capacidad del paciente para dirigir, alternar y sostener voluntariamente la atención independientemente del contenido mental, reduciendo la dominancia automática de la amenaza y aumentando la flexibilidad cognitiva y emocional frente a estímulos internos y externos. (Wells, 1997; Wells, 2009).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mct_modificacion_creencias_negativas",
+          "nombre": "Modificación de creencias metacognitivas negativas",
+          "texto": "Procedimiento dirigido a cuestionar y transformar creencias sobre la peligrosidad, incontrolabilidad o consecuencias catastróficas del pensamiento, ayudando al paciente a experimentar que los pensamientos no causan daño por sí mismos y que el control rígido no es necesario para la estabilidad emocional. (Wells, 2009).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mct_cambio_foco",
+          "nombre": "Cambio voluntario del foco atencional",
+          "texto": "Microintervención que entrena el desplazamiento consciente del foco atencional desde la amenaza interna hacia estímulos externos o neutros, demostrando control atencional flexible y reduciendo la dominancia automática del contenido amenazante sobre la experiencia emocional. (Wells, 1997; Wells, 2009).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
         }
       ]
     },

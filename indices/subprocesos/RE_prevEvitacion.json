@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-08T17:59:54.610Z",
-  "totalModelos": 23,
+  "updatedAt": "2026-02-09T10:12:08.151Z",
+  "totalModelos": 25,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -137,6 +137,66 @@
           "codigo": "m_rebt_tolerancia",
           "nombre": "Tolerancia al malestar racional",
           "texto": "Microentrenamiento en soportar incomodidad sin transformarla en catástrofe o intolerabilidad.\n(Referencia: Ellis & Dryden, 1997.)",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "sit-inoculacion-estres-meichenbaum-1977",
+      "modelLabel": "Terapia de inoculación de estrés (SIT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Donald Meichenbaum",
+      "modelYear": 1977,
+      "items": [
+        {
+          "codigo": "p_sit_exposicion_graduada",
+          "nombre": "Exposición graduada a estresores reales",
+          "texto": "Procedimiento de aplicación progresiva en el que el paciente se expone de forma planificada a situaciones estresantes reales siguiendo la jerarquía acordada, utilizando activamente las habilidades entrenadas para reducir evitación, aumentar tolerancia al malestar y fortalecer la autoeficacia mediante experiencias correctivas de afrontamiento exitoso. (Meichenbaum, 1985; Meichenbaum, 2007).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_sit_prevencion_evitacion",
+          "nombre": "Prevención de evitación sutil",
+          "texto": "Detección y corrección de microconductas de evitación encubierta (posponer, minimizar, distraerse en exceso) que debilitan el entrenamiento bajo estrés, promoviendo aproximaciones graduadas y consistentes alineadas con el plan de afrontamiento. (Meichenbaum, 1985).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-metacognitiva-wells-1990",
+      "modelLabel": "Terapia metacognitiva (MCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Adrian Wells",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_mct_desactivacion_rumiacion",
+          "nombre": "Desactivación sistemática de la rumiación y la preocupación",
+          "texto": "Procedimiento mediante el cual el paciente aprende a interrumpir deliberadamente la rumiación y la preocupación como estilos de procesamiento, no como pensamientos aislados, sustituyendo la perseveración cognitiva por respuestas metacognitivas neutrales, lo que reduce la duración y el impacto emocional de los episodios de malestar. (Wells, 2009).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mct_eliminacion_afrontamiento",
+          "nombre": "Eliminación de conductas de afrontamiento contraproducentes",
+          "texto": "Procedimiento focalizado en identificar y abandonar conductas como comprobación, búsqueda de seguridad, evitación cognitiva o supresión del pensamiento, que mantienen el CAS a largo plazo, promoviendo respuestas metacognitivas más simples y no defensivas ante la activación mental. (Wells, 2009).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mct_posponer_preocupacion",
+          "nombre": "Posponer la rumiación y la preocupación",
+          "texto": "Microintervención mediante la cual el paciente decide conscientemente posponer la rumiación o la preocupación a un momento específico, demostrando experiencialmente que no son incontrolables ni necesarias en el instante en que aparecen, lo que debilita creencias metacognitivas negativas y reduce la duración del procesamiento perseverativo. (Wells, 2009).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mct_reduccion_comprobacion",
+          "nombre": "Reducción de comprobación mental",
+          "texto": "Interrupción consciente de conductas de comprobación interna (revisar si la ansiedad ha bajado, si el pensamiento sigue ahí), que mantienen el CAS al reforzar vigilancia, favoreciendo una relación más pasiva y no evaluativa con la experiencia interna. (Wells, 2009).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
