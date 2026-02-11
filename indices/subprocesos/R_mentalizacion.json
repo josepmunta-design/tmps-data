@@ -1,8 +1,38 @@
 {
   "subprocesoId": "R_mentalizacion",
-  "updatedAt": "2026-02-11T09:17:56.914Z",
-  "totalModelos": 30,
+  "updatedAt": "2026-02-11T09:23:26.235Z",
+  "totalModelos": 31,
   "modelos": [
+    {
+      "modelId": "functional-analytic-psychotherapy-fap-1991",
+      "modelLabel": "Functional Analytic Psychotherapy (FAP)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Robert J. Kohlenberg; Mavis Tsai",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_fap_feedback_funcional",
+          "nombre": "Análisis funcional en vivo (feedback contingente inmediato)",
+          "texto": "Procedimiento que consiste en ofrecer al paciente un análisis funcional inmediato de su conducta en sesión, conectando antecedentes, conducta y consecuencias dentro de la interacción terapéutica. El feedback se formula de manera descriptiva y contextual, ayudando al paciente a comprender el impacto interpersonal de su comportamiento sin caer en interpretaciones intrapsíquicas. Este análisis en vivo incrementa conciencia funcional y favorece cambios conductuales inmediatos. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009).",
+          "sub": "R_mentalizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fap_senalar_ccr1",
+          "nombre": "Señalar en vivo una CCR1",
+          "texto": "Microintervención consistente en señalar de forma inmediata y descriptiva una conducta problema que está ocurriendo en sesión (CCR1), por ejemplo evitación emocional, cambio de tema o minimización afectiva, ayudando al paciente a tomar conciencia funcional de su patrón en tiempo real sin juicio ni confrontación agresiva. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009).",
+          "sub": "R_mentalizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fap_feedback_impacto",
+          "nombre": "Feedback sobre impacto interpersonal",
+          "texto": "Describir cómo una conducta del paciente afecta al terapeuta en ese momento, permitiendo que el paciente observe consecuencias interpersonales reales y modifique su repertorio conductual desde la experiencia directa. Referencia: Kohlenberg & Tsai (1991).",
+          "sub": "R_mentalizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "entrenamiento-habilidades-sociales",
       "modelLabel": "Entrenamiento en habilidades sociales",

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-11T09:17:56.914Z",
-  "totalModelos": 30,
+  "updatedAt": "2026-02-11T09:23:26.235Z",
+  "totalModelos": 31,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -125,6 +125,29 @@
           "codigo": "m_cpt_creencia_evitacion",
           "nombre": "Conexión entre creencia traumática y evitación actual",
           "texto": "Intervención puntual que señala cómo un atasco cognitivo concreto mantiene conductas de evitación o seguridad en la vida actual, ayudando al paciente a comprender el coste funcional de sostener la creencia traumática. (Resick et al., 2016).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "functional-analytic-psychotherapy-fap-1991",
+      "modelLabel": "Functional Analytic Psychotherapy (FAP)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Robert J. Kohlenberg; Mavis Tsai",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_fap_evocacion_ccr",
+          "nombre": "Evocación estratégica de Conductas Clínicamente Relevantes",
+          "texto": "Procedimiento orientado a crear condiciones dentro de la sesión que incrementen la probabilidad de que aparezcan CCR1 o CCR2 relevantes para el tratamiento. El terapeuta utiliza autorrevelación, preguntas emocionales directas, silencios estratégicos o respuestas diferenciales para evocar patrones relacionales habituales del paciente, especialmente aquellos que suelen mantenerse fuera de la conciencia o evitarse emocionalmente. La evocación no es confrontativa sino funcional: busca que el problema ocurra en vivo para poder modificar sus contingencias en el momento. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fap_silencio_evocador",
+          "nombre": "Silencio evocador",
+          "texto": "Uso deliberado del silencio para aumentar la probabilidad de que emerja una conducta relevante, especialmente cuando el paciente tiende a evitar o intelectualizar, facilitando contacto emocional directo dentro de la relación terapéutica. Referencia: Tsai et al. (2009).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

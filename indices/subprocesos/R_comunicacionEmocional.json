@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_comunicacionEmocional",
-  "updatedAt": "2026-02-11T09:17:56.914Z",
-  "totalModelos": 43,
+  "updatedAt": "2026-02-11T09:23:26.235Z",
+  "totalModelos": 44,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -14,6 +14,50 @@
           "codigo": "m_han_autorizacion_expresion",
           "nombre": "Autorizar la expresión emocional sin ruptura del vínculo",
           "texto": "Microintervención que legitima la expresión de dolor, tristeza o rabia dentro de límites relacionales seguros, desactivando el miedo a dañar al otro o perder pertenencia. Facilita comunicación emocional diferenciada y reduce inhibición afectiva crónica (Min, 2009).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "functional-analytic-psychotherapy-fap-1991",
+      "modelLabel": "Functional Analytic Psychotherapy (FAP)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Robert J. Kohlenberg; Mavis Tsai",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_fap_evocacion_ccr",
+          "nombre": "Evocación estratégica de Conductas Clínicamente Relevantes",
+          "texto": "Procedimiento orientado a crear condiciones dentro de la sesión que incrementen la probabilidad de que aparezcan CCR1 o CCR2 relevantes para el tratamiento. El terapeuta utiliza autorrevelación, preguntas emocionales directas, silencios estratégicos o respuestas diferenciales para evocar patrones relacionales habituales del paciente, especialmente aquellos que suelen mantenerse fuera de la conciencia o evitarse emocionalmente. La evocación no es confrontativa sino funcional: busca que el problema ocurra en vivo para poder modificar sus contingencias en el momento. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fap_vulnerabilidad",
+          "nombre": "Trabajo deliberado con la vulnerabilidad emocional",
+          "texto": "Procedimiento mediante el cual el terapeuta fomenta la expresión directa de emociones primarias en sesión, especialmente aquellas asociadas a vergüenza, miedo al rechazo o necesidad de conexión. La vulnerabilidad expresada y reforzada diferencialmente constituye uno de los principales mecanismos de cambio en FAP, ya que transforma patrones relacionales evitativos o defensivos en experiencias correctivas interpersonales. Referencia: Tsai et al. (2009).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fap_silencio_evocador",
+          "nombre": "Silencio evocador",
+          "texto": "Uso deliberado del silencio para aumentar la probabilidad de que emerja una conducta relevante, especialmente cuando el paciente tiende a evitar o intelectualizar, facilitando contacto emocional directo dentro de la relación terapéutica. Referencia: Tsai et al. (2009).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fap_reflejo_emocion",
+          "nombre": "Reflejar emoción primaria emergente",
+          "texto": "Nombrar explícitamente una emoción primaria que emerge en sesión para facilitar su expresión directa y reforzar vulnerabilidad interpersonal adaptativa. Referencia: Tsai et al. (2009).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fap_pregunta_vulnerabilidad",
+          "nombre": "Evocar vulnerabilidad mediante pregunta directa",
+          "texto": "Formular una pregunta directa orientada a contactar con emoción nuclear (por ejemplo, miedo al rechazo o vergüenza) para aumentar probabilidad de CCR2 asociada a apertura emocional. Referencia: Tsai et al. (2009).",
           "sub": "R_comunicacionEmocional",
           "tipo": "micro"
         }

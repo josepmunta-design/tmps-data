@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-11T09:17:56.914Z",
-  "totalModelos": 90,
+  "updatedAt": "2026-02-11T09:23:26.235Z",
+  "totalModelos": 91,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -178,6 +178,36 @@
           "codigo": "m_cpt_creencia_evitacion",
           "nombre": "Conexión entre creencia traumática y evitación actual",
           "texto": "Intervención puntual que señala cómo un atasco cognitivo concreto mantiene conductas de evitación o seguridad en la vida actual, ayudando al paciente a comprender el coste funcional de sostener la creencia traumática. (Resick et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "functional-analytic-psychotherapy-fap-1991",
+      "modelLabel": "Functional Analytic Psychotherapy (FAP)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Robert J. Kohlenberg; Mavis Tsai",
+      "modelYear": 1991,
+      "items": [
+        {
+          "codigo": "p_fap_identificacion_ccr",
+          "nombre": "Identificación y clasificación de Conductas Clínicamente Relevantes (CCR1, CCR2, CCR3)",
+          "texto": "Procedimiento central de FAP que consiste en identificar en tiempo real dentro de la sesión las Conductas Clínicamente Relevantes: CCR1 (conductas problema que se manifiestan en la relación terapéutica), CCR2 (mejorías o conductas más adaptativas emitidas en sesión) y CCR3 (verbalizaciones del paciente que analizan funcionalmente su propia conducta). Este procedimiento requiere una escucha funcional continua y la capacidad del terapeuta para discriminar microconductas interpersonales relevantes, no solo contenido verbal. La clasificación permite intervenir contingencialmente sobre conductas observables y convertir la sesión en un contexto de aprendizaje interpersonal directo. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fap_senalar_ccr1",
+          "nombre": "Señalar en vivo una CCR1",
+          "texto": "Microintervención consistente en señalar de forma inmediata y descriptiva una conducta problema que está ocurriendo en sesión (CCR1), por ejemplo evitación emocional, cambio de tema o minimización afectiva, ayudando al paciente a tomar conciencia funcional de su patrón en tiempo real sin juicio ni confrontación agresiva. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fap_refuerzo_ccr3",
+          "nombre": "Reforzar análisis funcional del paciente (CCR3)",
+          "texto": "Validar y reforzar verbalizaciones del paciente que describen de manera funcional su propia conducta y sus consecuencias, fortaleciendo conciencia conductual y autoría del cambio. Referencia: Kohlenberg & Tsai (1991).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
