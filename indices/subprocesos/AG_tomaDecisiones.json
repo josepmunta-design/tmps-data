@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-11T10:54:41.209Z",
-  "totalModelos": 56,
+  "updatedAt": "2026-02-11T11:06:17.082Z",
+  "totalModelos": 57,
   "modelos": [
     {
       "modelId": "act-hayes-strosahl-wilson-1999",
@@ -21,6 +21,43 @@
           "codigo": "m_act_hacia_contra",
           "nombre": "Pregunta hacia o contra valores",
           "texto": "Intervención breve que pregunta ante una conducta inminente: '¿esto te acerca o te aleja de la persona que quieres ser?', facilitando discriminación funcional inmediata entre evitación y acción valiosa. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "activacion-conductual-jacobson-1996",
+      "modelLabel": "Activación conductual (BA)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Neil S. Jacobson; Christopher Martell; Sona Dimidjian",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_ba_barreras",
+          "nombre": "Resolución de barreras conductuales",
+          "texto": "Procedimiento destinado a identificar obstáculos prácticos, cognitivos o contextuales que interfieren con la activación planificada, desarrollando soluciones concretas y estrategias alternativas. Se trabaja sobre problemas reales (logísticos, interpersonales, de organización) para garantizar implementación efectiva de las actividades programadas. Referencia: Martell et al. (2010).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ba_resolucion_problemas",
+          "nombre": "Entrenamiento en resolución de problemas conductual",
+          "texto": "Procedimiento estructurado para abordar problemas vitales que perpetúan la depresión mediante generación de alternativas, evaluación de consecuencias y selección de acciones específicas. Se orienta a restaurar sensación de eficacia personal y reducir indefensión aprendida a través de acción deliberada. Referencia: Martell et al. (2010).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ba_contexto",
+          "nombre": "Planificación conductual basada en contexto",
+          "texto": "Ajuste específico de actividades a condiciones reales del entorno (horarios, recursos, energía disponible), evitando planes idealizados que favorezcan abandono. Referencia: Martell et al. (2010).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ba_inicio",
+          "nombre": "Análisis de inicio conductual",
+          "texto": "Exploración específica del momento exacto de inicio de una tarea para identificar qué facilitó o bloqueó la acción, afinando estrategias futuras de activación. Referencia: Martell et al. (2010).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

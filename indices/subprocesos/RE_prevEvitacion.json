@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-11T10:54:41.209Z",
-  "totalModelos": 33,
+  "updatedAt": "2026-02-11T11:06:17.082Z",
+  "totalModelos": 34,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -132,6 +132,43 @@
           "codigo": "m_act_urge_surfing",
           "nombre": "Surfear impulso de evitación",
           "texto": "Observación deliberada de un impulso de evitar como una ola que sube y baja sin actuar automáticamente sobre él, fortaleciendo tolerancia al malestar y debilitando conducta gobernada por urgencia emocional. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "activacion-conductual-jacobson-1996",
+      "modelLabel": "Activación conductual (BA)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Neil S. Jacobson; Christopher Martell; Sona Dimidjian",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_ba_evitacion",
+          "nombre": "Identificación de patrones de evitación",
+          "texto": "Procedimiento orientado a detectar conductas de evitación abierta o encubierta (procrastinación, rumiación, sueño excesivo, distracción compulsiva) que alivian malestar a corto plazo pero mantienen la depresión a largo plazo. Se examina la función reguladora inmediata de la evitación y sus costes acumulativos, generando conciencia funcional que permite intervenir de forma estratégica. Referencia: Martell et al. (2010).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ba_exposicion",
+          "nombre": "Exposición conductual a situaciones evitadas",
+          "texto": "Procedimiento que implica acercamiento directo y repetido a contextos o actividades temidas o evitadas, reduciendo evitación mantenedora y permitiendo aprendizaje correctivo. Aunque BA no es un protocolo de exposición clásico, integra exposición funcional como herramienta clave para romper ciclos de retirada y pasividad. Referencia: Jacobson et al. (1996).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ba_cinco_minutos",
+          "nombre": "Regla de los cinco minutos",
+          "texto": "Invitación a iniciar una tarea durante solo cinco minutos como estrategia para reducir resistencia anticipatoria, facilitando que la acción comience aunque la motivación sea baja. Frecuentemente el inicio parcial rompe la inercia conductual. Referencia: Martell et al. (2010).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ba_evitacion_encubierta",
+          "nombre": "Identificación de evitación encubierta",
+          "texto": "Señalamiento específico de conductas como rumiación, sueño excesivo o distracción digital como formas de evitación funcional, ayudando al paciente a reconocer su función reguladora inmediata y su coste a largo plazo. Referencia: Martell et al. (2010).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

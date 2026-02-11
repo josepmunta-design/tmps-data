@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-11T10:54:41.209Z",
-  "totalModelos": 93,
+  "updatedAt": "2026-02-11T11:06:17.082Z",
+  "totalModelos": 94,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -169,6 +169,85 @@
           "codigo": "m_act_registro_funcional",
           "nombre": "Registro funcional evitación vs acción valiosa",
           "texto": "Hoja breve que registra disparador, experiencia interna, conducta de evitación, alivio inmediato, coste a largo plazo y alternativa valiosa posible, consolidando aprendizaje funcional entre sesiones. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "activacion-conductual-jacobson-1996",
+      "modelLabel": "Activación conductual (BA)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Neil S. Jacobson; Christopher Martell; Sona Dimidjian",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_ba_analisis_funcional",
+          "nombre": "Análisis funcional detallado (modelo ABC ampliado)",
+          "texto": "Procedimiento central de BA que examina antecedentes, conducta y consecuencias de episodios depresivos o de evitación, identificando patrones específicos que mantienen el bajo estado de ánimo. Se analizan disparadores contextuales, respuestas conductuales (retirada, rumiación, aislamiento) y consecuencias inmediatas y diferidas, permitiendo comprender la función de la conducta y diseñar intervenciones ajustadas al caso. Referencia: Jacobson et al. (1996); Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ba_monitorizacion",
+          "nombre": "Monitorización sistemática de actividades y estado de ánimo",
+          "texto": "Procedimiento que implica registrar de forma estructurada actividades realizadas, nivel de disfrute, sentido de logro y estado de ánimo asociado, con el objetivo de detectar relaciones entre conducta y afecto. La monitorización rompe la percepción global de 'todo está mal', genera datos concretos para el análisis funcional y orienta la planificación estratégica de actividades reforzantes. Referencia: Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ba_evitacion",
+          "nombre": "Identificación de patrones de evitación",
+          "texto": "Procedimiento orientado a detectar conductas de evitación abierta o encubierta (procrastinación, rumiación, sueño excesivo, distracción compulsiva) que alivian malestar a corto plazo pero mantienen la depresión a largo plazo. Se examina la función reguladora inmediata de la evitación y sus costes acumulativos, generando conciencia funcional que permite intervenir de forma estratégica. Referencia: Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ba_rumiacion",
+          "nombre": "Reducción de rumiación mediante activación alternativa",
+          "texto": "Procedimiento orientado a identificar la rumiación como conducta encubierta mantenedora de la depresión y sustituirla por acción concreta orientada a tareas externas. Se conceptualiza la rumiación como forma de evitación pasiva que reduce contacto con refuerzo, promoviendo intervención conductual directa en lugar de debate cognitivo prolongado. Referencia: Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ba_revision",
+          "nombre": "Revisión sistemática de resultados y ajuste del plan",
+          "texto": "Procedimiento continuo de evaluación del impacto de las actividades implementadas, ajustando intensidad, frecuencia o tipo de tareas según resultados observados. Permite mantener flexibilidad clínica, reforzar avances y corregir estrategias ineficaces sin abandonar el modelo conductual. Referencia: Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ba_registro_horario",
+          "nombre": "Registro horario detallado",
+          "texto": "Registro minucioso por franjas horarias de lo que el paciente hace realmente a lo largo del día, incluyendo actividades aparentemente triviales, con el objetivo de obtener datos conductuales objetivos y romper la percepción global negativa típica de la depresión. Este micro permite detectar huecos conductuales, patrones de evitación y momentos potencialmente reforzantes. Referencia: Martell, Dimidjian & Herman-Dunn (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ba_disfrute_logro",
+          "nombre": "Escala de disfrute y logro",
+          "texto": "Asignación de puntuaciones breves de disfrute y sensación de logro a cada actividad realizada, permitiendo discriminar qué conductas generan refuerzo positivo o dominio personal. Esta microintervención facilita que el paciente detecte evidencia concreta de eficacia y contrarreste generalizaciones depresivas. Referencia: Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ba_evitacion_encubierta",
+          "nombre": "Identificación de evitación encubierta",
+          "texto": "Señalamiento específico de conductas como rumiación, sueño excesivo o distracción digital como formas de evitación funcional, ayudando al paciente a reconocer su función reguladora inmediata y su coste a largo plazo. Referencia: Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ba_coste_evitacion",
+          "nombre": "Evaluación de coste a largo plazo de la evitación",
+          "texto": "Exploración breve del impacto acumulativo de conductas evitativas en distintas áreas vitales, facilitando conciencia funcional sin entrar en reestructuración cognitiva profunda. Referencia: Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ba_chequeo_post",
+          "nombre": "Chequeo post-actividad",
+          "texto": "Revisión inmediata tras realizar una actividad para evaluar efecto emocional real frente a anticipaciones negativas previas, fortaleciendo aprendizaje correctivo basado en experiencia directa. Referencia: Martell et al. (2010).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
