@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RI_autocompasion",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 9,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 10,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -65,6 +65,29 @@
           "codigo": "m_rebt_autoaceptacion",
           "nombre": "Autoaceptación incondicional",
           "texto": "Desmantela la autoevaluación global (“soy inútil / soy valioso”) y la sustituye por una visión no condicional de uno mismo.\n(Referencia: Ellis, 1962.)",
+          "sub": "RI_autocompasion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_validacion_sistematica",
+          "nombre": "Estrategias de validación (niveles y uso sistemático)",
+          "texto": "La validación en DBT es un procedimiento técnico con niveles (escucha precisa, reflejo, lectura contextual, normalización, validación radical, etc.) para reducir vergüenza, defensividad y escalada, especialmente en historia de invalidación crónica; se valida la experiencia y su función sin validar conductas dañinas, sosteniendo aceptación radical mientras se prepara el terreno para cambio conductual y análisis funcional sin ruptura de alianza. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RI_autocompasion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_validacion_impulso",
+          "nombre": "Validación dialéctica del impulso autodestructivo",
+          "texto": "Microintervención específica en crisis donde el terapeuta valida la función reguladora del impulso (autolesión, consumo, atracón) sin validar la conducta en sí, reduciendo vergüenza y defensividad y abriendo espacio para elegir alternativas más seguras. Referencia: Linehan (1993).",
           "sub": "RI_autocompasion",
           "tipo": "micro"
         }

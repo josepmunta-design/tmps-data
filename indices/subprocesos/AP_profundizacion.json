@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_profundizacion",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 27,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 28,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -32,6 +32,29 @@
           "texto": "Revivir deliberadamente emociones perturbadoras mientras se instalan pensamientos racionales. Produce cambio emocional rápido y generalización.\n(Referencia: DiGiuseppe et al., 2014, *A Practitioner’s Guide to REBT*.)",
           "sub": "AP_profundizacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_pe_exposicion_imaginada",
+          "nombre": "DBT-PE: Exposición imaginada estructurada",
+          "texto": "Procedimiento específico dentro de DBT-PE donde el paciente revive de forma prolongada y repetida la memoria traumática en sesión, con grabación y escucha entre sesiones, mientras aplica habilidades de regulación para mantenerse dentro de la ventana de tolerancia. El objetivo es reducir evitación traumática, integrar la memoria en la narrativa autobiográfica y debilitar la reactividad condicionada sin perder el marco conductual de seguridad. Referencia: Harned et al. (2014).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_pe_grabacion",
+          "nombre": "Grabación y escucha repetida de exposición imaginada",
+          "texto": "Tras la exposición imaginada en sesión, el paciente escucha la grabación entre sesiones para consolidar la habituación emocional y debilitar la evitación traumática. Este micro facilita integración progresiva y reduce reactividad condicionada mediante repetición estructurada fuera del entorno terapéutico. Referencia: Harned et al. (2014).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
         }
       ]
     },

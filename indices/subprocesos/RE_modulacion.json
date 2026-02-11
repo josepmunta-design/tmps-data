@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 83,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 84,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -333,6 +333,92 @@
           "codigo": "m_schema_interrumpir_padre_punitivo",
           "nombre": "Interrupción del Padre Punitivo",
           "texto": "Intervención puntual destinada a detener verbal y experiencialmente mensajes internos críticos o castigadores, señalándolos como expresión del modo Padre Punitivo y no como verdades, reduciendo autoataque y creando espacio para respuestas más compasivas. (Young et al., 2003).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_solution_analysis",
+          "nombre": "Análisis de soluciones y plan alternativo (Solution Analysis)",
+          "texto": "Después de la cadena, DBT traduce el análisis en un plan práctico: qué habilidad usar en cada punto crítico, cómo pedir ayuda, qué estímulos retirar, qué pasos concretos ejecutar en crisis y cómo ensayar la respuesta; se diseña una cadena alternativa realista que prioriza seguridad y viabilidad, y se anticipan obstáculos para aumentar probabilidad de ejecución cuando el paciente esté activado y con poco margen cognitivo. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_skills_training",
+          "nombre": "Entrenamiento grupal estructurado en habilidades (Skills Training)",
+          "texto": "El entrenamiento en habilidades es un procedimiento manualizado y repetitivo (enseñar–modelar–practicar–tareas) que construye repertorio conductual alternativo al caos, la evitación y la impulsividad; se organiza por módulos (mindfulness, tolerancia al malestar, regulación emocional, efectividad interpersonal) y se acompaña de hojas, prácticas entre sesiones y revisión, funcionando como “escuela de habilidades” para aprender a sobrevivir a crisis, modular emoción y actuar con eficacia en la vida real. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_modulo_tolerancia_malestar",
+          "nombre": "Módulo de Tolerancia al malestar (crisis y aceptación de la realidad)",
+          "texto": "Este módulo estructura dos familias de procedimientos: (a) supervivencia a crisis (estrategias rápidas para no empeorar: STOP, TIP/TIPP, distracción, autoconsuelo, mejora del momento) y (b) aceptación de la realidad (aceptación radical, mente dispuesta, girar la mente), con el objetivo de atravesar olas emocionales extremas sin conductas de alto coste, reduciendo el refuerzo negativo de la evitación y creando condiciones mínimas para intervenir después con más profundidad. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_modulo_regulacion_emocional",
+          "nombre": "Módulo de Regulación emocional (comprender, prevenir y modular emociones)",
+          "texto": "DBT convierte la regulación en un plan entrenable: psicoeducación sobre función de emociones, identificación y rotulación fina, detección de vulnerabilidades y mantenimiento (PLEASE/ABC), aumento de eventos positivos y competencia, y técnicas de cambio como acción opuesta cuando la emoción no encaja con los hechos; el procedimiento apunta a reducir picos, aumentar tolerancia y prevenir recaídas conductuales derivadas de estados emocionales extremos sostenidos. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_ensayo_conductual",
+          "nombre": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+          "texto": "Cuando una habilidad no se ejecuta en la vida real, DBT la baja a conducta observable y la entrena en sesión con ensayo repetido, modelado, feedback y refinamiento (p. ej., pedir, decir no, reparar, usar STOP); el objetivo es que el paciente salga con una respuesta practicada y más automática bajo activación, reduciendo la brecha entre comprensión y ejecución y aumentando confianza basada en experiencia. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_pe_integracion",
+          "nombre": "DBT-PE: Integración de Exposición Prolongada para TEPT",
+          "texto": "DBT-PE integra formalmente el protocolo de Exposición Prolongada (PE) dentro de la estructura estándar de DBT una vez que el paciente ha alcanzado estabilidad suficiente en conductas de alto riesgo. Se introducen exposición imaginada a memorias traumáticas y exposición en vivo a estímulos evitados, manteniendo la jerarquía de objetivos de DBT y el uso continuo de habilidades para regular activación. El tratamiento no sustituye DBT, sino que la amplía, combinando procesamiento traumático estructurado con contención conductual y validación dialéctica. Referencia: Harned, M. S., Korslund, K. E., & Linehan, M. M. (2014); Linehan (2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_pe_exposicion_imaginada",
+          "nombre": "DBT-PE: Exposición imaginada estructurada",
+          "texto": "Procedimiento específico dentro de DBT-PE donde el paciente revive de forma prolongada y repetida la memoria traumática en sesión, con grabación y escucha entre sesiones, mientras aplica habilidades de regulación para mantenerse dentro de la ventana de tolerancia. El objetivo es reducir evitación traumática, integrar la memoria en la narrativa autobiográfica y debilitar la reactividad condicionada sin perder el marco conductual de seguridad. Referencia: Harned et al. (2014).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_sud_abstinencia_dialectica",
+          "nombre": "Abstinencia dialéctica y plan de recaídas",
+          "texto": "Procedimiento específico de DBT-SUD que combina un compromiso claro con abstinencia total con una preparación activa ante posibles recaídas, evitando la lógica dicotómica de 'todo o nada'. El paciente diseña planes concretos para minimizar daño y retomar abstinencia rápidamente, reduciendo vergüenza paralizante y abandono terapéutico tras deslizamientos. Referencia: Linehan et al. (1999).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_ed_adaptacion",
+          "nombre": "Adaptación DBT para Trastornos de la Conducta Alimentaria (DBT-ED)",
+          "texto": "DBT-ED aplica el modelo a conductas alimentarias desreguladas (atracones, purgas, restricción impulsiva) conceptualizándolas como intentos de regulación emocional. Se prioriza el análisis en cadena de episodios alimentarios, el entrenamiento en tolerancia al malestar previo a impulsos y la estabilización conductual antes de trabajar aspectos identitarios más complejos, integrando psicoeducación nutricional cuando procede sin abandonar la lógica conductual-dialéctica. Referencia: Safer, Telch & Chen (2009).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_pe_ventana",
+          "nombre": "Chequeo de ventana de tolerancia durante exposición",
+          "texto": "Microintervención continua que monitoriza activación fisiológica y emocional durante exposición traumática, ajustando intensidad cuando se supera la ventana de tolerancia. Permite sostener procesamiento profundo sin disociación ni desregulación extrema. Referencia: Harned et al. (2014).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dbt_ed_demora",
+          "nombre": "Demora conductual estructurada antes de purga",
+          "texto": "Microintervención que introduce un retraso temporal obligatorio antes de conductas purgativas o restrictivas, durante el cual se aplican habilidades de tolerancia al malestar, reduciendo automatismo impulsivo y ampliando margen de elección conductual. Referencia: Safer et al. (2009).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_rotulacion",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 54,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 55,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -136,6 +136,43 @@
           "codigo": "m_tccstd_rotular_fisiologia",
           "nombre": "Rotular respuesta fisiológica",
           "texto": "Nombrar sensaciones corporales específicas para reducir catastrofismo somático y aumentar discriminación interoceptiva. Referencia: Meichenbaum (1977).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_diary_card",
+          "nombre": "Registro diario (Diary Card) y revisión sistemática en sesión",
+          "texto": "El Diary Card es el instrumento semanal central: el paciente registra intensidad emocional, impulsos, conductas diana (autolesión, consumo, etc.) y uso de habilidades, y el terapeuta lo revisa al inicio para detectar picos, anticipar crisis, seleccionar qué cadena analizar y reforzar aprendizajes; este procedimiento convierte la terapia en un sistema de monitorización visible, reduce el “me pasa y no sé por qué” y hace medible la generalización de habilidades fuera de sesión. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_modulo_regulacion_emocional",
+          "nombre": "Módulo de Regulación emocional (comprender, prevenir y modular emociones)",
+          "texto": "DBT convierte la regulación en un plan entrenable: psicoeducación sobre función de emociones, identificación y rotulación fina, detección de vulnerabilidades y mantenimiento (PLEASE/ABC), aumento de eventos positivos y competencia, y técnicas de cambio como acción opuesta cuando la emoción no encaja con los hechos; el procedimiento apunta a reducir picos, aumentar tolerancia y prevenir recaídas conductuales derivadas de estados emocionales extremos sostenidos. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_ed_cadena_alimentaria",
+          "nombre": "Análisis en cadena de episodios alimentarios",
+          "texto": "Procedimiento específico dentro de DBT-ED que reconstruye con precisión los antecedentes emocionales, cognitivos y situacionales de un episodio de atracón o purga, identificando vulnerabilidades biológicas, disparadores relacionales y reforzadores posteriores. Permite insertar habilidades de regulación y tolerancia al malestar antes del punto de no retorno conductual, debilitando el ciclo impulsivo. Referencia: Safer et al. (2009).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_ed_mapa_emocional",
+          "nombre": "Mapa emocional previo al atracón (DBT-ED)",
+          "texto": "Exploración detallada de estados emocionales y cognitivos que preceden al episodio alimentario desregulado, ayudando a diferenciar hambre fisiológica de activación emocional y detectando puntos tempranos de intervención con habilidades. Referencia: Safer et al. (2009).",
           "sub": "RE_rotulacion",
           "tipo": "micro"
         }

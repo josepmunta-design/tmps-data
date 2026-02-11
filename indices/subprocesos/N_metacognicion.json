@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 89,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 90,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -470,6 +470,64 @@
           "codigo": "m_schema_senalizacion_patrones",
           "nombre": "Señalización de patrones relacionales repetitivos",
           "texto": "Microintervención que señala de forma inmediata la repetición de un patrón relacional guiado por esquemas en la sesión o en la vida cotidiana, ayudando al paciente a reconocer ciclos automáticos y abrir posibilidades de respuesta alternativa. (Young et al., 2003).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_jerarquia_objetivos",
+          "nombre": "Jerarquía de objetivos y priorización semanal",
+          "texto": "DBT organiza el trabajo con una jerarquía no negociable que guía cada semana: (1) conductas que amenazan la vida (suicidio/autolesión), (2) conductas que interfieren con la terapia (inasistencias, ocultación, hostilidad, no usar coaching), (3) conductas que deterioran la calidad de vida (consumo, caos relacional, problemas funcionales) y (4) adquisición y generalización de habilidades, lo que reduce discusiones sobre “qué toca” y convierte la sesión en un plan operativo basado en riesgos, patrones y costes reales. (Linehan, 1993; Linehan, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_diary_card",
+          "nombre": "Registro diario (Diary Card) y revisión sistemática en sesión",
+          "texto": "El Diary Card es el instrumento semanal central: el paciente registra intensidad emocional, impulsos, conductas diana (autolesión, consumo, etc.) y uso de habilidades, y el terapeuta lo revisa al inicio para detectar picos, anticipar crisis, seleccionar qué cadena analizar y reforzar aprendizajes; este procedimiento convierte la terapia en un sistema de monitorización visible, reduce el “me pasa y no sé por qué” y hace medible la generalización de habilidades fuera de sesión. (Linehan, 1993; Linehan, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_chain_analysis",
+          "nombre": "Análisis en cadena de conductas problema (Chain Analysis)",
+          "texto": "Tras una conducta problema o una crisis, se reconstruye con detalle la secuencia: vulnerabilidades previas, evento desencadenante, interpretaciones, emociones, sensaciones, impulsos, conductas intermedias y consecuencias inmediatas/diferidas; el objetivo es identificar puntos específicos de intervención y romper el automatismo, incluyendo cuándo apareció evitación emocional, qué reforzadores mantuvieron la conducta y qué habilidades concretas podrían insertarse en futuros eslabones similares. (Linehan, 1993; Linehan, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_homework_practica",
+          "nombre": "Tareas entre sesiones y práctica deliberada de habilidades",
+          "texto": "DBT prescribe tareas concretas (practicar una habilidad en un contexto específico, completar registros, ensayar una petición, preparar un cope-ahead) y las revisa como datos clínicos, no como examen; la lógica es conductual: sin práctica en contexto real no hay generalización, y la revisión permite ajustar el plan, reforzar aproximaciones y detectar evitaciones, barreras o contingencias que sabotean el aprendizaje. (Linehan, 1993; Linehan, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_ed_cadena_alimentaria",
+          "nombre": "Análisis en cadena de episodios alimentarios",
+          "texto": "Procedimiento específico dentro de DBT-ED que reconstruye con precisión los antecedentes emocionales, cognitivos y situacionales de un episodio de atracón o purga, identificando vulnerabilidades biológicas, disparadores relacionales y reforzadores posteriores. Permite insertar habilidades de regulación y tolerancia al malestar antes del punto de no retorno conductual, debilitando el ciclo impulsivo. Referencia: Safer et al. (2009).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_sud_craving",
+          "nombre": "Análisis funcional del craving (DBT-SUD)",
+          "texto": "Identificación precisa de antecedentes emocionales, pensamientos automáticos, señales ambientales y consecuencias asociadas al deseo de consumir, conceptualizando el craving como respuesta condicionada reguladora de malestar. Facilita inserción estratégica de habilidades antes del consumo. Referencia: Linehan et al. (1999).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dbt_ed_mapa_emocional",
+          "nombre": "Mapa emocional previo al atracón (DBT-ED)",
+          "texto": "Exploración detallada de estados emocionales y cognitivos que preceden al episodio alimentario desregulado, ayudando a diferenciar hambre fisiológica de activación emocional y detectando puntos tempranos de intervención con habilidades. Referencia: Safer et al. (2009).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

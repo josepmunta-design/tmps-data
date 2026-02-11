@@ -1,8 +1,31 @@
 {
   "subprocesoId": "VB_sustancias",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 2,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 3,
   "modelos": [
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_sud_adaptacion",
+          "nombre": "Adaptación DBT para Trastornos por Consumo de Sustancias (DBT-SUD)",
+          "texto": "DBT-SUD adapta el modelo para pacientes con consumo problemático incorporando estrategias específicas como el concepto de 'abstinencia dialéctica' (compromiso firme con abstinencia junto a planificación de recaídas posibles), análisis funcional centrado en craving, manejo de estímulos asociados y reforzamiento diferencial del no consumo. Se enfatiza la prevención de recaídas sin abandonar la jerarquía DBT, integrando consumo como conducta de calidad de vida prioritaria. Referencia: Linehan et al. (1999); Linehan (2015).",
+          "sub": "VB_sustancias",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_check_vulnerabilidad",
+          "nombre": "Chequeo rápido de vulnerabilidad biológica (PLEASE)",
+          "texto": "Evaluación breve y sistemática de sueño, alimentación, sustancias y estado físico antes de abordar crisis emocional, para distinguir vulnerabilidad biológica de contenido psicológico y ajustar intervención sin sobreinterpretar activación fisiológica. Referencia: Linehan (2015).",
+          "sub": "VB_sustancias",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "terapia-dialogica",
       "modelLabel": "Terapia dialógica / Open Dialogue",

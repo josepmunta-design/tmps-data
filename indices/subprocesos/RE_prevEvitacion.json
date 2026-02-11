@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 29,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 30,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -273,6 +273,85 @@
           "codigo": "m_schema_confrontacion_evitativo",
           "nombre": "Confrontación empática del modo evitativo",
           "texto": "Intervención breve que señala de forma empática cómo el modo Protector Desligado o evitativo reduce el malestar a corto plazo pero mantiene el esquema a largo plazo, promoviendo una aproximación gradual a la experiencia emocional evitada. (Young et al., 2003).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_chain_analysis",
+          "nombre": "Análisis en cadena de conductas problema (Chain Analysis)",
+          "texto": "Tras una conducta problema o una crisis, se reconstruye con detalle la secuencia: vulnerabilidades previas, evento desencadenante, interpretaciones, emociones, sensaciones, impulsos, conductas intermedias y consecuencias inmediatas/diferidas; el objetivo es identificar puntos específicos de intervención y romper el automatismo, incluyendo cuándo apareció evitación emocional, qué reforzadores mantuvieron la conducta y qué habilidades concretas podrían insertarse en futuros eslabones similares. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_modulo_tolerancia_malestar",
+          "nombre": "Módulo de Tolerancia al malestar (crisis y aceptación de la realidad)",
+          "texto": "Este módulo estructura dos familias de procedimientos: (a) supervivencia a crisis (estrategias rápidas para no empeorar: STOP, TIP/TIPP, distracción, autoconsuelo, mejora del momento) y (b) aceptación de la realidad (aceptación radical, mente dispuesta, girar la mente), con el objetivo de atravesar olas emocionales extremas sin conductas de alto coste, reduciendo el refuerzo negativo de la evitación y creando condiciones mínimas para intervenir después con más profundidad. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_homework_practica",
+          "nombre": "Tareas entre sesiones y práctica deliberada de habilidades",
+          "texto": "DBT prescribe tareas concretas (practicar una habilidad en un contexto específico, completar registros, ensayar una petición, preparar un cope-ahead) y las revisa como datos clínicos, no como examen; la lógica es conductual: sin práctica en contexto real no hay generalización, y la revisión permite ajustar el plan, reforzar aproximaciones y detectar evitaciones, barreras o contingencias que sabotean el aprendizaje. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_contingency_management",
+          "nombre": "Manejo de contingencias (refuerzo, extinción y límites conductuales)",
+          "texto": "DBT aplica principios conductuales para disminuir conductas problema y aumentar habilidades: se refuerzan aproximaciones (p. ej., pedir ayuda a tiempo), se reduce reforzamiento inadvertido de crisis, y se establecen límites claros ante conductas que interfieren con la terapia; el foco es funcional (qué mantiene qué) y se comunica de forma validante para evitar que el paciente lo viva como castigo, manteniendo a la vez firmeza protectora. (Linehan, 1993; Linehan, 2015).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_pe_exposicion_vivo",
+          "nombre": "DBT-PE: Exposición en vivo a estímulos evitados",
+          "texto": "Este procedimiento implica diseñar y ejecutar una jerarquía de aproximación gradual a situaciones, lugares o actividades evitadas por miedo traumático, integrando uso activo de habilidades DBT para prevenir desregulación o conductas autolesivas. Se trabaja con planificación precisa, revisión de resultados y ajuste de la jerarquía, reduciendo evitación conductual que mantiene el TEPT. Referencia: Harned et al. (2014).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_sud_adaptacion",
+          "nombre": "Adaptación DBT para Trastornos por Consumo de Sustancias (DBT-SUD)",
+          "texto": "DBT-SUD adapta el modelo para pacientes con consumo problemático incorporando estrategias específicas como el concepto de 'abstinencia dialéctica' (compromiso firme con abstinencia junto a planificación de recaídas posibles), análisis funcional centrado en craving, manejo de estímulos asociados y reforzamiento diferencial del no consumo. Se enfatiza la prevención de recaídas sin abandonar la jerarquía DBT, integrando consumo como conducta de calidad de vida prioritaria. Referencia: Linehan et al. (1999); Linehan (2015).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_ed_adaptacion",
+          "nombre": "Adaptación DBT para Trastornos de la Conducta Alimentaria (DBT-ED)",
+          "texto": "DBT-ED aplica el modelo a conductas alimentarias desreguladas (atracones, purgas, restricción impulsiva) conceptualizándolas como intentos de regulación emocional. Se prioriza el análisis en cadena de episodios alimentarios, el entrenamiento en tolerancia al malestar previo a impulsos y la estabilización conductual antes de trabajar aspectos identitarios más complejos, integrando psicoeducación nutricional cuando procede sin abandonar la lógica conductual-dialéctica. Referencia: Safer, Telch & Chen (2009).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_pe_grabacion",
+          "nombre": "Grabación y escucha repetida de exposición imaginada",
+          "texto": "Tras la exposición imaginada en sesión, el paciente escucha la grabación entre sesiones para consolidar la habituación emocional y debilitar la evitación traumática. Este micro facilita integración progresiva y reduce reactividad condicionada mediante repetición estructurada fuera del entorno terapéutico. Referencia: Harned et al. (2014).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dbt_sud_craving",
+          "nombre": "Análisis funcional del craving (DBT-SUD)",
+          "texto": "Identificación precisa de antecedentes emocionales, pensamientos automáticos, señales ambientales y consecuencias asociadas al deseo de consumir, conceptualizando el craving como respuesta condicionada reguladora de malestar. Facilita inserción estratégica de habilidades antes del consumo. Referencia: Linehan et al. (1999).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dbt_ed_exposicion_alimentos",
+          "nombre": "Exposición a alimentos temidos",
+          "texto": "Acercamiento gradual y planificado a alimentos evitados o altamente temidos, trabajando simultáneamente regulación emocional y prevención de purga o compensación. Debilita asociaciones miedo–alimento y reduce ciclo evitación–atracón. Referencia: Safer et al. (2009).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

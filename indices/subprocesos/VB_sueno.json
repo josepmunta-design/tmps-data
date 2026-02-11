@@ -1,8 +1,31 @@
 {
   "subprocesoId": "VB_sueno",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 2,
   "modelos": [
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_modulo_regulacion_emocional",
+          "nombre": "Módulo de Regulación emocional (comprender, prevenir y modular emociones)",
+          "texto": "DBT convierte la regulación en un plan entrenable: psicoeducación sobre función de emociones, identificación y rotulación fina, detección de vulnerabilidades y mantenimiento (PLEASE/ABC), aumento de eventos positivos y competencia, y técnicas de cambio como acción opuesta cuando la emoción no encaja con los hechos; el procedimiento apunta a reducir picos, aumentar tolerancia y prevenir recaídas conductuales derivadas de estados emocionales extremos sostenidos. (Linehan, 1993; Linehan, 2015).",
+          "sub": "VB_sueno",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_check_vulnerabilidad",
+          "nombre": "Chequeo rápido de vulnerabilidad biológica (PLEASE)",
+          "texto": "Evaluación breve y sistemática de sueño, alimentación, sustancias y estado físico antes de abordar crisis emocional, para distinguir vulnerabilidad biológica de contenido psicológico y ajustar intervención sin sobreinterpretar activación fisiológica. Referencia: Linehan (2015).",
+          "sub": "VB_sueno",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "psicoterapia-multimodal-basic-id-lazarus",
       "modelLabel": "Psicoterapia multimodal (BASIC-ID)",

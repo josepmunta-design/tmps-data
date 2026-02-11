@@ -1,8 +1,45 @@
 {
   "subprocesoId": "AP_procesamiento",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 16,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 17,
   "modelos": [
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_pe_integracion",
+          "nombre": "DBT-PE: Integración de Exposición Prolongada para TEPT",
+          "texto": "DBT-PE integra formalmente el protocolo de Exposición Prolongada (PE) dentro de la estructura estándar de DBT una vez que el paciente ha alcanzado estabilidad suficiente en conductas de alto riesgo. Se introducen exposición imaginada a memorias traumáticas y exposición en vivo a estímulos evitados, manteniendo la jerarquía de objetivos de DBT y el uso continuo de habilidades para regular activación. El tratamiento no sustituye DBT, sino que la amplía, combinando procesamiento traumático estructurado con contención conductual y validación dialéctica. Referencia: Harned, M. S., Korslund, K. E., & Linehan, M. M. (2014); Linehan (2015).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_pe_exposicion_vivo",
+          "nombre": "DBT-PE: Exposición en vivo a estímulos evitados",
+          "texto": "Este procedimiento implica diseñar y ejecutar una jerarquía de aproximación gradual a situaciones, lugares o actividades evitadas por miedo traumático, integrando uso activo de habilidades DBT para prevenir desregulación o conductas autolesivas. Se trabaja con planificación precisa, revisión de resultados y ajuste de la jerarquía, reduciendo evitación conductual que mantiene el TEPT. Referencia: Harned et al. (2014).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_pe_jerarquia",
+          "nombre": "Jerarquía individualizada de exposición (DBT-PE)",
+          "texto": "Construcción colaborativa de una jerarquía graduada de recuerdos o situaciones traumáticas evitadas, ordenadas por intensidad subjetiva, que guiará la exposición imaginada y en vivo dentro de DBT-PE. Permite planificar el procesamiento con seguridad, reducir evitación sistemática y aumentar control anticipatorio sin desbordamiento. Referencia: Harned et al. (2014).",
+          "sub": "AP_procesamiento",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dbt_ed_exposicion_alimentos",
+          "nombre": "Exposición a alimentos temidos",
+          "texto": "Acercamiento gradual y planificado a alimentos evitados o altamente temidos, trabajando simultáneamente regulación emocional y prevención de purga o compensación. Debilita asociaciones miedo–alimento y reduce ciclo evitación–atracón. Referencia: Safer et al. (2009).",
+          "sub": "AP_procesamiento",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "psicoterapia-constructivista-procesos-cambio-mahoney",
       "modelLabel": "Psicoterapia constructivista de los procesos de cambio humano",

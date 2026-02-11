@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-02-11T08:57:20.623Z",
-  "totalModelos": 71,
+  "updatedAt": "2026-02-11T09:10:57.858Z",
+  "totalModelos": 72,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -247,6 +247,50 @@
           "codigo": "m_schema_refuerzo_adulto",
           "nombre": "Refuerzo de conductas coherentes con el Adulto Saludable",
           "texto": "Reconocimiento explícito y reforzamiento de acciones, decisiones o límites coherentes con el Adulto Saludable, consolidando una autoimagen competente y facilitando la generalización del cambio fuera de la sesión. (Young et al., 2003).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Marsha M. Linehan",
+      "modelYear": 1993,
+      "items": [
+        {
+          "codigo": "p_dbt_jerarquia_objetivos",
+          "nombre": "Jerarquía de objetivos y priorización semanal",
+          "texto": "DBT organiza el trabajo con una jerarquía no negociable que guía cada semana: (1) conductas que amenazan la vida (suicidio/autolesión), (2) conductas que interfieren con la terapia (inasistencias, ocultación, hostilidad, no usar coaching), (3) conductas que deterioran la calidad de vida (consumo, caos relacional, problemas funcionales) y (4) adquisición y generalización de habilidades, lo que reduce discusiones sobre “qué toca” y convierte la sesión en un plan operativo basado en riesgos, patrones y costes reales. (Linehan, 1993; Linehan, 2015).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_diary_card",
+          "nombre": "Registro diario (Diary Card) y revisión sistemática en sesión",
+          "texto": "El Diary Card es el instrumento semanal central: el paciente registra intensidad emocional, impulsos, conductas diana (autolesión, consumo, etc.) y uso de habilidades, y el terapeuta lo revisa al inicio para detectar picos, anticipar crisis, seleccionar qué cadena analizar y reforzar aprendizajes; este procedimiento convierte la terapia en un sistema de monitorización visible, reduce el “me pasa y no sé por qué” y hace medible la generalización de habilidades fuera de sesión. (Linehan, 1993; Linehan, 2015).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_terapy_interfering",
+          "nombre": "Gestión de conductas que interfieren con la terapia (estructura, límites y reparación)",
+          "texto": "DBT trata las conductas que sabotean el tratamiento como objetivos clínicos en sí mismos (inasistencias, silencios, mentiras, ataques, no usar habilidades), analizándolas funcionalmente, validando su función y estableciendo límites y tareas concretas para cambiarlas; el procedimiento protege la continuidad, hace explícitos los acuerdos y usa rupturas como material terapéutico para entrenar habilidades interpersonales y autorregulación. (Linehan, 1993; Linehan, 2015).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dbt_sud_adaptacion",
+          "nombre": "Adaptación DBT para Trastornos por Consumo de Sustancias (DBT-SUD)",
+          "texto": "DBT-SUD adapta el modelo para pacientes con consumo problemático incorporando estrategias específicas como el concepto de 'abstinencia dialéctica' (compromiso firme con abstinencia junto a planificación de recaídas posibles), análisis funcional centrado en craving, manejo de estímulos asociados y reforzamiento diferencial del no consumo. Se enfatiza la prevención de recaídas sin abandonar la jerarquía DBT, integrando consumo como conducta de calidad de vida prioritaria. Referencia: Linehan et al. (1999); Linehan (2015).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dbt_sud_reparacion_recaida",
+          "nombre": "Plan de reparación inmediata tras recaída",
+          "texto": "Intervención breve posterior a un consumo para evitar espiral de abandono ('ya lo he estropeado'), redefiniendo la recaída como evento puntual y activando pasos inmediatos de reparación conductual. Reduce vergüenza paralizante y reinstala compromiso terapéutico. Referencia: Linehan et al. (1999).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }
