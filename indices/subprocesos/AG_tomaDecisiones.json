@@ -1,8 +1,31 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-11T10:38:22.501Z",
-  "totalModelos": 55,
+  "updatedAt": "2026-02-11T10:40:44.853Z",
+  "totalModelos": 56,
   "modelos": [
+    {
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Steven C. Hayes; Kirk D. Strosahl; Kelly G. Wilson",
+      "modelYear": 1999,
+      "items": [
+        {
+          "codigo": "p_act_valores",
+          "nombre": "Clarificación estructurada de valores",
+          "texto": "Procedimiento que explora áreas vitales significativas diferenciando valores (dirección continua), objetivos concretos y mandatos del crítico. Se traduce en elecciones conductuales específicas alineadas con identidad aspiracional, sirviendo como base motivacional para la acción comprometida. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_act_hacia_contra",
+          "nombre": "Pregunta hacia o contra valores",
+          "texto": "Intervención breve que pregunta ante una conducta inminente: '¿esto te acerca o te aleja de la persona que quieres ser?', facilitando discriminación funcional inmediata entre evitación y acción valiosa. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "aprendizaje-social-bandura-1977",
       "modelLabel": "Aprendizaje social",

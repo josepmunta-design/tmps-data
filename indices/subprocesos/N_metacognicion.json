@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-11T10:38:22.501Z",
-  "totalModelos": 92,
+  "updatedAt": "2026-02-11T10:40:44.853Z",
+  "totalModelos": 93,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -97,6 +97,78 @@
           "codigo": "m_cft_repair_after_relapse",
           "nombre": "Reparación rápida tras recaída en autocrítica",
           "texto": "Protocolo breve: (1) notar crítica, (2) validar emoción, (3) una frase compasiva firme, (4) una acción pequeña de cuidado. Evita espiral secundaria de vergüenza.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Steven C. Hayes; Kirk D. Strosahl; Kelly G. Wilson",
+      "modelYear": 1999,
+      "items": [
+        {
+          "codigo": "p_act_formulacion_funcional",
+          "nombre": "Formulación funcional ACT (ciclo disparador → experiencia interna → control/evitación → alivio → coste)",
+          "texto": "Procedimiento de conceptualización del caso que traza, con ejemplos recientes y específicos, cómo un disparador activa eventos privados (ansiedad, vergüenza, autocrítica), qué hace la persona para controlar o evitar esa experiencia, qué alivio obtiene a corto plazo y qué coste paga a largo plazo en términos de vida más estrecha y desconexión de valores. La formulación se mantiene funcional y pragmática, centrada en consecuencias observables, y orienta la priorización de procesos a entrenar dentro del hexaflex. Referencia: Hayes, Strosahl & Wilson (1999, 2012).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_act_hexaflex",
+          "nombre": "Mapa Hexaflex (diagnóstico de procesos y plan operativo)",
+          "texto": "Procedimiento estructurado para identificar qué procesos del hexaflex están más comprometidos (fusión, evitación, rigidez atencional, self como contenido, desconexión de valores, inacción o impulsividad) y traducir esta evaluación a un plan concreto de intervención, seleccionando prácticas experienciales y acciones comprometidas medibles que respondan al patrón dominante del caso. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_act_matriz",
+          "nombre": "Matriz ACT (interno/externo × hacia/contra valores)",
+          "texto": "Procedimiento visual y experiencial que organiza ejemplos concretos en cuatro cuadrantes: disparadores externos, experiencia interna difícil, conductas de evitación/control y conductas de acercamiento a valores. Se utiliza como brújula decisional en sesión para clarificar si una conducta aleja o acerca de la dirección vital elegida, facilitando elecciones conscientes en presencia de malestar. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_act_creativa_desesperanza",
+          "nombre": "Creativa desesperanza (revisión de la agenda de control)",
+          "texto": "Procedimiento experiencial que examina de forma honesta y funcional los intentos previos de controlar pensamientos y emociones (evitación, supresión, rumiación, perfeccionismo), evaluando su eficacia a corto plazo y sus costes acumulativos. No busca inducir resignación, sino abrir espacio a una estrategia distinta basada en aceptación y acción valiosa. Referencia: Hayes, Strosahl & Wilson (1999, 2012).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_act_defusion",
+          "nombre": "Entrenamiento estructurado en defusión cognitiva",
+          "texto": "Procedimiento sistemático para debilitar la literalidad del pensamiento mediante ejercicios repetidos que alteran su función (etiquetado metacognitivo, repetición, cambio de formato, externalización del crítico). El objetivo no es eliminar contenido mental sino reducir su dominio conductual y ampliar margen de elección en presencia de cogniciones difíciles. Referencia: Hayes, Strosahl & Wilson (1999, 2012).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_act_estoy_teniendo_el_pensamiento",
+          "nombre": "Etiqueta metacognitiva básica",
+          "texto": "Microintervención de defusión que consiste en reformular un pensamiento literal añadiendo la frase 'estoy teniendo el pensamiento de que…', desplazando la experiencia de contenido a evento mental observado. No se discute la veracidad del pensamiento, sino su función, generando distancia psicológica inmediata y reduciendo su control conductual. Referencia: Hayes, Strosahl & Wilson (1999, 2012).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_act_repeticion_palabra",
+          "nombre": "Repetición rápida hasta pérdida de significado",
+          "texto": "Se invita al paciente a repetir en voz alta una palabra autocrítica o temida durante 30–60 segundos hasta que pierda su carga semántica y se perciba como sonido. El objetivo es alterar la función del lenguaje, debilitando la literalidad del pensamiento sin discutir su contenido. Referencia: Hayes, Strosahl & Wilson (1999).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_act_pieza_tablero",
+          "nombre": "Chequeo pieza o tablero",
+          "texto": "Pregunta breve en sesión o en contexto real ('¿estás en nivel de pieza o de tablero?') que reactiva la metáfora del tablero de ajedrez y facilita regresar a la perspectiva observadora cuando la persona está atrapada en la lucha interna. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_act_registro_funcional",
+          "nombre": "Registro funcional evitación vs acción valiosa",
+          "texto": "Hoja breve que registra disparador, experiencia interna, conducta de evitación, alivio inmediato, coste a largo plazo y alternativa valiosa posible, consolidando aprendizaje funcional entre sesiones. Referencia: Hayes, Strosahl & Wilson (2012).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
