@@ -1,0 +1,313 @@
+{
+  "id": "functional-analytic-psychotherapy-fap-1991",
+  "grupo": "Cognitivo",
+  "label": "Functional Analytic Psychotherapy (FAP)",
+  "year": 1991,
+  "importance": 2,
+  "autores": "Robert J. Kohlenberg; Mavis Tsai",
+  "universidad": "University of Washington",
+  "ciudad": "Seattle, Washington",
+  "pais": "EE. UU.",
+  "lat": 47.655335,
+  "lon": -122.303520,
+
+  "descripcion": "La Functional Analytic Psychotherapy (FAP) es un modelo contextual derivado del conductismo radical que sitúa la relación terapéutica como el contexto principal de cambio. Parte de la premisa de que los problemas interpersonales del paciente se manifiestan en vivo dentro de la sesión como Conductas Clínicamente Relevantes (CCR), y que el terapeuta puede evocarlas, discriminarlas y reforzarlas diferencialmente para promover nuevas formas de relación más adaptativas. El cambio ocurre a través del análisis funcional preciso de la conducta en contexto y del uso deliberado de contingencias naturales dentro de la relación terapéutica, favoreciendo la generalización a la vida cotidiana.",
+
+  "influencias": [
+    "Conductismo radical",
+    "Análisis funcional",
+    "Contextualismo funcional (Hayes)",
+    "Terapia conductual"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se entiende desde una epistemología contextual y funcional: la conducta solo puede comprenderse en relación con las contingencias que la mantienen. No se postula una verdad interna a descubrir, sino patrones funcionales observables en interacción. El conocimiento terapéutico no es interpretativo sino conductual-contextual, y el terapeuta actúa como analista funcional en tiempo real. El ser humano es concebido como un organismo sensible a contingencias relacionales, cuyo cambio emerge cuando se modifican los reforzadores naturales en contextos significativos. La relación terapéutica no es solo medio técnico, sino el laboratorio principal donde se producen nuevas contingencias de aprendizaje.",
+
+    "teoriaFormal": "El self se conceptualiza como un repertorio conductual moldeado históricamente por contingencias interpersonales. El sufrimiento psicológico se mantiene por patrones relacionales desadaptativos reforzados en contextos pasados y que continúan operando en el presente. El cambio ocurre cuando se evocan en sesión estas conductas clínicamente relevantes (CCR) y se modifican sus consecuencias mediante reforzamiento diferencial natural. No se trata de insight cognitivo, sino de aprendizaje interpersonal directo y experiencial.",
+
+    "teoriaClinica": "El caso se conceptualiza identificando las Conductas Clínicamente Relevantes tipo 1 (CCR1: problemáticas), tipo 2 (CCR2: mejorías) y tipo 3 (CCR3: análisis funcional verbal del paciente). El terapeuta prioriza la evocación natural de estas conductas en sesión y el reforzamiento inmediato de las respuestas más adaptativas. El progreso se evalúa por el aumento de CCR2, la disminución de CCR1 y la generalización observable fuera de sesión, confirmada mediante seguimiento funcional."
+  },
+
+  "mjps": ["RE","RI","N","I","AG","R"],
+
+"secuencias": [
+
+  {
+    "id": "seq_fap_reglas_basicas",
+    "nombre": "Las cinco reglas básicas de FAP",
+    "descripcion": "Secuencia operativa descrita por Kohlenberg y Tsai que organiza la intervención clínica en cinco pasos funcionales aplicados de manera dinámica durante la sesión.",
+    "tipo": "reglas_operativas",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Observar las Conductas Clínicamente Relevantes (CCR)",
+        "explicacion": "El terapeuta mantiene una atención funcional continua para discriminar CCR1, CCR2 y CCR3 cuando emergen en la interacción en vivo."
+      },
+      {
+        "orden": 2,
+        "accion": "Evocar CCR relevantes",
+        "explicacion": "Se crean condiciones interpersonales que aumenten la probabilidad de que aparezcan en sesión las conductas problema o las conductas mejoradas."
+      },
+      {
+        "orden": 3,
+        "accion": "Reforzar diferencialmente las CCR2",
+        "explicacion": "Se aplican contingencias naturales inmediatas que fortalezcan conductas adaptativas emergentes."
+      },
+      {
+        "orden": 4,
+        "accion": "Observar el efecto del reforzamiento",
+        "explicacion": "Se evalúa si las contingencias aplicadas modifican la frecuencia, intensidad o calidad de la conducta."
+      },
+      {
+        "orden": 5,
+        "accion": "Promover generalización",
+        "explicacion": "Se planifica la transferencia de las nuevas conductas al entorno natural del paciente."
+      }
+    ]
+  },
+
+  {
+    "id": "seq_fap_proceso_ccr",
+    "nombre": "Secuencia de trabajo con una CCR en sesión",
+    "descripcion": "Microsecuencia clínica descrita en manuales de FAP que organiza la intervención cuando una conducta clínicamente relevante aparece en vivo.",
+    "tipo": "microproceso_interaccional",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Detección en tiempo real",
+        "explicacion": "El terapeuta identifica la CCR mientras ocurre en la interacción."
+      },
+      {
+        "orden": 2,
+        "accion": "Señalamiento funcional",
+        "explicacion": "Se describe la conducta y su contexto de forma no punitiva."
+      },
+      {
+        "orden": 3,
+        "accion": "Aplicación de contingencia",
+        "explicacion": "Se refuerza o se retira reforzamiento según corresponda."
+      },
+      {
+        "orden": 4,
+        "accion": "Exploración del impacto",
+        "explicacion": "Se analiza con el paciente qué efecto tuvo la conducta y la consecuencia."
+      }
+    ]
+  }
+
+],
+
+  
+ "procedimientos": [
+
+  {
+    "nombre": "Identificación y clasificación de Conductas Clínicamente Relevantes (CCR1, CCR2, CCR3)",
+    "codigo": "p_fap_identificacion_ccr",
+    "procesos": ["R_repertorioInterpersonal", "N_metacognicion"],
+    "texto": "Procedimiento central de FAP que consiste en identificar en tiempo real dentro de la sesión las Conductas Clínicamente Relevantes: CCR1 (conductas problema que se manifiestan en la relación terapéutica), CCR2 (mejorías o conductas más adaptativas emitidas en sesión) y CCR3 (verbalizaciones del paciente que analizan funcionalmente su propia conducta). Este procedimiento requiere una escucha funcional continua y la capacidad del terapeuta para discriminar microconductas interpersonales relevantes, no solo contenido verbal. La clasificación permite intervenir contingencialmente sobre conductas observables y convertir la sesión en un contexto de aprendizaje interpersonal directo. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Evocación estratégica de Conductas Clínicamente Relevantes",
+    "codigo": "p_fap_evocacion_ccr",
+    "procesos": ["R_comunicacionEmocional", "RE_prevEvitacion"],
+    "texto": "Procedimiento orientado a crear condiciones dentro de la sesión que incrementen la probabilidad de que aparezcan CCR1 o CCR2 relevantes para el tratamiento. El terapeuta utiliza autorrevelación, preguntas emocionales directas, silencios estratégicos o respuestas diferenciales para evocar patrones relacionales habituales del paciente, especialmente aquellos que suelen mantenerse fuera de la conciencia o evitarse emocionalmente. La evocación no es confrontativa sino funcional: busca que el problema ocurra en vivo para poder modificar sus contingencias en el momento. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Reforzamiento diferencial natural de CCR2",
+    "codigo": "p_fap_reforzamiento_ccr2",
+    "procesos": ["R_reparacionRelacional", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento mediante el cual el terapeuta refuerza de forma contingente, inmediata y genuina las conductas adaptativas emitidas por el paciente en sesión (CCR2), utilizando reforzadores naturales como validación emocional auténtica, mayor cercanía, reconocimiento explícito o cambios relacionales positivos. El reforzamiento debe ser funcional y no artificial, de modo que modele relaciones reales y facilite la generalización a otros contextos interpersonales. La clave es la sensibilidad contingencial y la coherencia emocional del terapeuta. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Extinción o no reforzamiento de CCR1",
+    "codigo": "p_fap_extincion_ccr1",
+    "procesos": ["R_limitesInterpersonales", "RI_dialogoFuncional"],
+    "texto": "Procedimiento orientado a debilitar conductas problema que aparecen en sesión (CCR1) mediante la retirada estratégica de reforzadores que históricamente las mantenían. El terapeuta evita reforzar patrones como evitación emocional, manipulación relacional o retraimiento excesivo, estableciendo límites claros cuando es necesario. La intervención se realiza con sensibilidad relacional para evitar ruptura de alianza, pero manteniendo coherencia funcional en las contingencias. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Modelado interpersonal del terapeuta",
+    "codigo": "p_fap_modelado_terapeuta",
+    "procesos": ["R_valoresRelacionales", "I_posicionRelacional"],
+    "texto": "Procedimiento en el que el terapeuta actúa como modelo explícito de conductas interpersonales auténticas, vulnerables y responsables, mostrando cómo expresar emociones, establecer límites y reparar rupturas en tiempo real. Este modelado no es didáctico sino experiencial: el paciente aprende observando y participando en una interacción diferente a las que ha vivido previamente. El terapeuta utiliza su propia conducta como instrumento clínico deliberado. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Análisis funcional en vivo (feedback contingente inmediato)",
+    "codigo": "p_fap_feedback_funcional",
+    "procesos": ["N_reformulacion", "R_mentalizacion"],
+    "texto": "Procedimiento que consiste en ofrecer al paciente un análisis funcional inmediato de su conducta en sesión, conectando antecedentes, conducta y consecuencias dentro de la interacción terapéutica. El feedback se formula de manera descriptiva y contextual, ayudando al paciente a comprender el impacto interpersonal de su comportamiento sin caer en interpretaciones intrapsíquicas. Este análisis en vivo incrementa conciencia funcional y favorece cambios conductuales inmediatos. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Entrenamiento en generalización fuera de sesión",
+    "codigo": "p_fap_generalizacion",
+    "procesos": ["AG_compromisoConductual", "R_repertorioInterpersonal"],
+    "texto": "Procedimiento orientado a facilitar que las nuevas conductas aprendidas en sesión se transfieran a contextos naturales del paciente. Incluye planificación de situaciones reales, discriminación de estímulos relevantes y seguimiento de resultados conductuales. La generalización es un criterio explícito de éxito terapéutico en FAP y requiere que el terapeuta vincule continuamente el trabajo en sesión con la vida interpersonal cotidiana. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Trabajo deliberado con la vulnerabilidad emocional",
+    "codigo": "p_fap_vulnerabilidad",
+    "procesos": ["RE_aceptacion", "R_comunicacionEmocional"],
+    "texto": "Procedimiento mediante el cual el terapeuta fomenta la expresión directa de emociones primarias en sesión, especialmente aquellas asociadas a vergüenza, miedo al rechazo o necesidad de conexión. La vulnerabilidad expresada y reforzada diferencialmente constituye uno de los principales mecanismos de cambio en FAP, ya que transforma patrones relacionales evitativos o defensivos en experiencias correctivas interpersonales. Referencia: Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Uso estratégico de autorrevelación terapéutica",
+    "codigo": "p_fap_autorrevelacion",
+    "procesos": ["R_reparacionRelacional", "ALI_vinculo"],
+    "texto": "Procedimiento consistente en compartir de forma cuidadosamente seleccionada experiencias o reacciones personales del terapeuta con el objetivo de modelar autenticidad y fortalecer la contingencia relacional. La autorrevelación se utiliza funcionalmente para evocar CCR, reforzar vulnerabilidad o reparar rupturas, nunca como expresión catártica del terapeuta. Su eficacia depende de la precisión contextual y de la coherencia ética. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  }
+
+],
+
+
+ "micros": [
+
+  {
+    "nombre": "Señalar en vivo una CCR1",
+    "codigo": "m_fap_senalar_ccr1",
+    "procesos": ["R_mentalizacion", "N_metacognicion"],
+    "texto": "Microintervención consistente en señalar de forma inmediata y descriptiva una conducta problema que está ocurriendo en sesión (CCR1), por ejemplo evitación emocional, cambio de tema o minimización afectiva, ayudando al paciente a tomar conciencia funcional de su patrón en tiempo real sin juicio ni confrontación agresiva. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Reforzamiento verbal inmediato de una CCR2",
+    "codigo": "m_fap_refuerzo_inmediato",
+    "procesos": ["R_reparacionRelacional", "AG_autoriaResponsabilidad"],
+    "texto": "Microintervención mediante la cual el terapeuta valida explícitamente una conducta adaptativa emergente (CCR2), reforzándola con reconocimiento genuino y emocionalmente congruente para aumentar su probabilidad futura y modelar consecuencias relacionales naturales. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Silencio evocador",
+    "codigo": "m_fap_silencio_evocador",
+    "procesos": ["RE_prevEvitacion", "R_comunicacionEmocional"],
+    "texto": "Uso deliberado del silencio para aumentar la probabilidad de que emerja una conducta relevante, especialmente cuando el paciente tiende a evitar o intelectualizar, facilitando contacto emocional directo dentro de la relación terapéutica. Referencia: Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Autorrevelación funcional breve",
+    "codigo": "m_fap_autorrevelacion_breve",
+    "procesos": ["R_valoresRelacionales", "ALI_vinculo"],
+    "texto": "Compartir una reacción personal del terapeuta de manera breve y estratégica para modelar autenticidad relacional o reforzar vulnerabilidad del paciente, siempre con intención funcional y no expresiva. Referencia: Kohlenberg & Tsai (1991); Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Feedback sobre impacto interpersonal",
+    "codigo": "m_fap_feedback_impacto",
+    "procesos": ["R_mentalizacion", "N_reformulacion"],
+    "texto": "Describir cómo una conducta del paciente afecta al terapeuta en ese momento, permitiendo que el paciente observe consecuencias interpersonales reales y modifique su repertorio conductual desde la experiencia directa. Referencia: Kohlenberg & Tsai (1991)."
+  },
+
+  {
+    "nombre": "Reflejar emoción primaria emergente",
+    "codigo": "m_fap_reflejo_emocion",
+    "procesos": ["RE_rotulacion", "R_comunicacionEmocional"],
+    "texto": "Nombrar explícitamente una emoción primaria que emerge en sesión para facilitar su expresión directa y reforzar vulnerabilidad interpersonal adaptativa. Referencia: Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Interrumpir reforzamiento accidental de CCR1",
+    "codigo": "m_fap_interrupcion_refuerzo",
+    "procesos": ["R_limitesInterpersonales", "RI_dialogoFuncional"],
+    "texto": "Retirar atención o validación cuando se detecta que el terapeuta está reforzando inadvertidamente una conducta problema, ajustando la contingencia en tiempo real para debilitar el patrón disfuncional. Referencia: Kohlenberg & Tsai (1991)."
+  },
+
+  {
+    "nombre": "Evocar vulnerabilidad mediante pregunta directa",
+    "codigo": "m_fap_pregunta_vulnerabilidad",
+    "procesos": ["RE_aceptacion", "R_comunicacionEmocional"],
+    "texto": "Formular una pregunta directa orientada a contactar con emoción nuclear (por ejemplo, miedo al rechazo o vergüenza) para aumentar probabilidad de CCR2 asociada a apertura emocional. Referencia: Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Reforzar análisis funcional del paciente (CCR3)",
+    "codigo": "m_fap_refuerzo_ccr3",
+    "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+    "texto": "Validar y reforzar verbalizaciones del paciente que describen de manera funcional su propia conducta y sus consecuencias, fortaleciendo conciencia conductual y autoría del cambio. Referencia: Kohlenberg & Tsai (1991)."
+  },
+
+  {
+    "nombre": "Modelar establecimiento de límites",
+    "codigo": "m_fap_modelado_limites",
+    "procesos": ["R_limitesInterpersonales", "I_posicionRelacional"],
+    "texto": "Mostrar explícitamente cómo establecer límites interpersonales claros dentro de la sesión cuando es necesario, ofreciendo una experiencia correctiva de firmeza no punitiva. Referencia: Tsai et al. (2009)."
+  },
+
+  {
+    "nombre": "Invitar a repetir una CCR2",
+    "codigo": "m_fap_repeticion_ccr2",
+    "procesos": ["AG_compromisoConductual", "R_repertorioInterpersonal"],
+    "texto": "Solicitar que el paciente repita una conducta adaptativa que acaba de emerger para consolidar aprendizaje y aumentar discriminación conductual. Referencia: Kohlenberg & Tsai (1991)."
+  },
+
+  {
+    "nombre": "Validación diferencial",
+    "codigo": "m_fap_validacion_diferencial",
+    "procesos": ["RE_coregulacion", "R_reparacionRelacional"],
+    "texto": "Ofrecer validación selectiva a expresiones emocionales abiertas y responsables, diferenciándolas de conductas evitativas o defensivas, para moldear progresivamente un repertorio más funcional. Referencia: Tsai et al. (2009)."
+  }
+
+],
+
+"ideasPrincipales": [
+
+  {
+    "id": "idea_fap_1",
+    "titulo": "La sesión terapéutica es el principal contexto de cambio",
+    "desarrollo": "FAP sostiene que la relación terapéutica no es únicamente un medio facilitador, sino el laboratorio central donde se manifiestan y transforman los patrones interpersonales del paciente. Las dificultades relacionales no se analizan solo narrativamente, sino que se evocan y modifican en vivo dentro de la interacción terapeuta–paciente. El cambio ocurre cuando las contingencias interpersonales reales en sesión alteran el repertorio conductual del paciente. (Kohlenberg & Tsai, 1991)."
+  },
+
+  {
+    "id": "idea_fap_2",
+    "titulo": "Las Conductas Clínicamente Relevantes organizan la intervención",
+    "desarrollo": "El modelo distingue entre CCR1 (conductas problema en sesión), CCR2 (mejorías en sesión) y CCR3 (análisis funcional verbal del propio comportamiento), estableciendo que la intervención debe centrarse en discriminar, evocar y reforzar estas conductas. Esta clasificación convierte la sesión en un contexto de aprendizaje interpersonal contingente, guiado por principios conductuales y no por interpretación intrapsíquica. (Kohlenberg & Tsai, 1991; Tsai et al., 2009)."
+  },
+
+  {
+    "id": "idea_fap_3",
+    "titulo": "El cambio se produce por aprendizaje interpersonal directo",
+    "desarrollo": "FAP enfatiza que el insight cognitivo no es suficiente para modificar repertorios relacionales arraigados; el cambio ocurre cuando el paciente experimenta nuevas consecuencias interpersonales dentro de la sesión. El reforzamiento diferencial natural de conductas adaptativas genera aprendizaje experiencial que puede generalizarse a otros contextos. (Kohlenberg & Tsai, 1991)."
+  },
+
+  {
+    "id": "idea_fap_4",
+    "titulo": "La autenticidad del terapeuta es instrumento clínico",
+    "desarrollo": "El terapeuta en FAP no adopta una posición neutral distante, sino que utiliza su propia experiencia emocional y conductual como herramienta terapéutica deliberada. La autenticidad, la vulnerabilidad funcional y la respuesta emocional genuina forman parte del sistema de contingencias que modela nuevas formas de relación. (Tsai et al., 2009)."
+  },
+
+  {
+    "id": "idea_fap_5",
+    "titulo": "El análisis funcional es continuo y contextual",
+    "desarrollo": "La comprensión clínica en FAP se basa en el análisis funcional de la conducta en contexto, identificando antecedentes, conducta y consecuencias dentro de la interacción presente. Este análisis es dinámico y en tiempo real, evitando explicaciones basadas en rasgos o constructos estáticos del self. (Kohlenberg & Tsai, 1991)."
+  },
+
+  {
+    "id": "idea_fap_6",
+    "titulo": "La vulnerabilidad reforzada genera reorganización relacional",
+    "desarrollo": "FAP considera que la expresión directa de emociones primarias, especialmente aquellas asociadas a vergüenza o miedo al rechazo, constituye un núcleo de cambio. Cuando la vulnerabilidad es reforzada diferencialmente en un contexto seguro, se reorganizan expectativas interpersonales y se debilitan patrones evitativos o defensivos previos. (Tsai et al., 2009)."
+  },
+
+  {
+    "id": "idea_fap_7",
+    "titulo": "La generalización es criterio explícito de eficacia",
+    "desarrollo": "El éxito terapéutico en FAP no se define únicamente por cambios en sesión, sino por la transferencia observable de nuevos repertorios interpersonales a la vida cotidiana. La intervención incluye planificación deliberada para facilitar la generalización de CCR2 fuera del contexto terapéutico. (Kohlenberg & Tsai, 1991)."
+  },
+
+  {
+    "id": "idea_fap_8",
+    "titulo": "La alianza es contingencial y no solo afectiva",
+    "desarrollo": "En FAP, la alianza terapéutica no se concibe únicamente como vínculo emocional positivo, sino como un sistema de contingencias activas donde reforzamiento, evocación y modelado operan constantemente. La calidad de la relación se define por su capacidad de moldear conductas adaptativas en tiempo real. (Tsai et al., 2009)."
+  }
+
+],
+
+  "refs": [
+    "Kohlenberg, R. J., & Tsai, M. (1991). Functional Analytic Psychotherapy.",
+    "Tsai, M., Kohlenberg, R. J., Kanter, J. W., et al. (2009). A Guide to Functional Analytic Psychotherapy."
+  ]
+}
