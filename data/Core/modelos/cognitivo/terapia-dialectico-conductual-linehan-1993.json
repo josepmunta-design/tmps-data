@@ -1,0 +1,506 @@
+{
+  "id": "terapia-dialectico-conductual-linehan-1993",
+  "grupo": "Cognitivo",
+  "label": "Terapia dialéctico–conductual (DBT)",
+  "year": 1993,
+  "importance": 2,
+  "autores": "Marsha M. Linehan",
+  "universidad": "University of Washington",
+  "ciudad": "Seattle, Washington",
+  "pais": "EE. UU.",
+  "lat": 47.655335,
+  "lon": -122.303520,
+
+  "descripcion": "La Terapia Dialéctico–Conductual (DBT) es un modelo estructurado desarrollado por Marsha Linehan para el tratamiento de la desregulación emocional severa y, en particular, del trastorno límite de la personalidad y la conducta suicida crónica. Integra principios conductuales, filosofía dialéctica y prácticas de mindfulness, articulando un equilibrio constante entre aceptación radical y cambio conductual activo. El tratamiento combina terapia individual, entrenamiento grupal en habilidades, coaching telefónico y equipo de consulta para terapeutas, organizándose en torno a una jerarquía clara de objetivos clínicos. DBT entiende el sufrimiento como resultado de una vulnerabilidad biológica a la desregulación emocional interactuando con entornos invalidantes, y propone un entrenamiento sistemático en habilidades que permita construir una vida vivible y con sentido.",
+
+  "influencias": [
+    "Terapia conductual",
+    "Contextualismo funcional (Hayes)",
+    "Mindfulness",
+    "Filosofía dialéctica",
+    "Psicoeducación",
+    "Prevención de recaídas"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "DBT se sitúa en un marco contextual–funcional donde la conducta y la experiencia emocional se comprenden en función de su contexto histórico y situacional. La realidad psicológica no se interpreta como distorsión intrapsíquica sino como patrón funcional aprendido en interacción con un entorno invalidante. El conocimiento terapéutico es estructurado y directivo, pero colaborativo: el terapeuta guía activamente el proceso dentro de un marco explícito. El ser humano es entendido como un organismo vulnerable pero capaz de aprendizaje y autorregulación. El cambio ocurre mediante entrenamiento conductual sistemático sostenido por una relación validante. La relación terapéutica no es solo medio técnico, sino instrumento activo de regulación y validación.",
+    "teoriaFormal": "El self se concibe como un sistema vulnerable a la desregulación emocional cuando existe sensibilidad biológica elevada y déficit en habilidades de regulación. El sufrimiento se mantiene por ciclos de evitación, impulsividad, reforzamiento conductual disfuncional y entornos invalidantes. El cambio psicológico ocurre mediante el aprendizaje y generalización de habilidades específicas que permiten modular emoción, tolerar malestar y actuar conforme a metas y valores, reorganizando patrones conductuales y relacionales.",
+    "teoriaClinica": "El caso se conceptualiza a través del análisis funcional detallado de conductas problema y su jerarquización según riesgo vital, interferencia terapéutica y deterioro de calidad de vida. Se activan procesos de regulación emocional, tolerancia al malestar, mindfulness, habilidades interpersonales y compromiso conductual. El progreso se evalúa conductualmente: reducción de conductas suicidas o autolesivas, mayor uso de habilidades, estabilidad emocional creciente y construcción progresiva de una vida con sentido."
+  },
+
+  "mjps": ["RF","RE","AP","RI","N","I","AG","R","VB"],
+
+
+  "procedimientos": [
+    {
+      "nombre": "Orientación inicial, contrato terapéutico y compromiso con DBT",
+      "codigo": "p_dbt_orientacion_compromiso",
+      "procesos": ["AG_compromisoConductual", "ALI_objetivos", "ALI_tareas"],
+      "texto": "Al inicio, DBT dedica sesiones específicas a explicar el modelo biosocial, el equilibrio aceptación–cambio, el formato del tratamiento (individual + grupo + coaching + equipo), y a negociar compromisos conductuales explícitos para sostener la continuidad (p. ej., priorizar conductas de riesgo, asistir, completar registros y practicar habilidades); se clarifican reglas, límites y expectativas para reducir ambigüedad, proteger la alianza y aumentar adherencia en pacientes con alta impulsividad y crisis recurrentes. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Jerarquía de objetivos y priorización semanal",
+      "codigo": "p_dbt_jerarquia_objetivos",
+      "procesos": ["AG_autoriaResponsabilidad", "N_metacognicion", "ALI_objetivos"],
+      "texto": "DBT organiza el trabajo con una jerarquía no negociable que guía cada semana: (1) conductas que amenazan la vida (suicidio/autolesión), (2) conductas que interfieren con la terapia (inasistencias, ocultación, hostilidad, no usar coaching), (3) conductas que deterioran la calidad de vida (consumo, caos relacional, problemas funcionales) y (4) adquisición y generalización de habilidades, lo que reduce discusiones sobre “qué toca” y convierte la sesión en un plan operativo basado en riesgos, patrones y costes reales. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Registro diario (Diary Card) y revisión sistemática en sesión",
+      "codigo": "p_dbt_diary_card",
+      "procesos": ["N_metacognicion", "RE_rotulacion", "AG_autoriaResponsabilidad"],
+      "texto": "El Diary Card es el instrumento semanal central: el paciente registra intensidad emocional, impulsos, conductas diana (autolesión, consumo, etc.) y uso de habilidades, y el terapeuta lo revisa al inicio para detectar picos, anticipar crisis, seleccionar qué cadena analizar y reforzar aprendizajes; este procedimiento convierte la terapia en un sistema de monitorización visible, reduce el “me pasa y no sé por qué” y hace medible la generalización de habilidades fuera de sesión. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Análisis en cadena de conductas problema (Chain Analysis)",
+      "codigo": "p_dbt_chain_analysis",
+      "procesos": ["AP_evocacion", "N_metacognicion", "RE_prevEvitacion"],
+      "texto": "Tras una conducta problema o una crisis, se reconstruye con detalle la secuencia: vulnerabilidades previas, evento desencadenante, interpretaciones, emociones, sensaciones, impulsos, conductas intermedias y consecuencias inmediatas/diferidas; el objetivo es identificar puntos específicos de intervención y romper el automatismo, incluyendo cuándo apareció evitación emocional, qué reforzadores mantuvieron la conducta y qué habilidades concretas podrían insertarse en futuros eslabones similares. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Análisis de soluciones y plan alternativo (Solution Analysis)",
+      "codigo": "p_dbt_solution_analysis",
+      "procesos": ["AG_compromisoConductual", "RE_modulacion", "R_repertorioInterpersonal"],
+      "texto": "Después de la cadena, DBT traduce el análisis en un plan práctico: qué habilidad usar en cada punto crítico, cómo pedir ayuda, qué estímulos retirar, qué pasos concretos ejecutar en crisis y cómo ensayar la respuesta; se diseña una cadena alternativa realista que prioriza seguridad y viabilidad, y se anticipan obstáculos para aumentar probabilidad de ejecución cuando el paciente esté activado y con poco margen cognitivo. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Plan de seguridad y manejo de crisis (incluye medios letales y apoyos)",
+      "codigo": "p_dbt_plan_seguridad_crisis",
+      "procesos": ["RF_crisis", "AG_compromisoConductual", "VB_entorno"],
+      "texto": "DBT formaliza planes de crisis con pasos específicos y pactados: reducir acceso a medios letales, aplicar habilidades de estabilización rápida, activar apoyos y buscar ayuda en el orden acordado antes de autolesionarse; el plan se formula como conducta entrenable y no como exhortación moral, reduciendo la improvisación en picos de activación y aumentando la probabilidad de que el paciente haga “lo siguiente seguro” aunque siga sintiéndose fatal. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Entrenamiento grupal estructurado en habilidades (Skills Training)",
+      "codigo": "p_dbt_skills_training",
+      "procesos": ["AG_compromisoConductual", "RE_modulacion", "RI_mindfulnessSelf"],
+      "texto": "El entrenamiento en habilidades es un procedimiento manualizado y repetitivo (enseñar–modelar–practicar–tareas) que construye repertorio conductual alternativo al caos, la evitación y la impulsividad; se organiza por módulos (mindfulness, tolerancia al malestar, regulación emocional, efectividad interpersonal) y se acompaña de hojas, prácticas entre sesiones y revisión, funcionando como “escuela de habilidades” para aprender a sobrevivir a crisis, modular emoción y actuar con eficacia en la vida real. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Módulo de Mindfulness (bases y habilidades núcleo)",
+      "codigo": "p_dbt_modulo_mindfulness",
+      "procesos": ["RI_mindfulnessSelf", "RF_intero", "RE_aceptacion"],
+      "texto": "DBT enseña mindfulness de manera operativa (qué hacer y cómo hacerlo): observar, describir y participar (habilidades “qué”) y hacerlo sin juzgar, una cosa cada vez y con eficacia (habilidades “cómo”); este procedimiento se usa como base transversal para detectar impulsos antes de actuar, sostener emoción sin huir y aumentar claridad interna, reforzando la “mente sabia” como posición reguladora aplicable a cualquier módulo. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Módulo de Tolerancia al malestar (crisis y aceptación de la realidad)",
+      "codigo": "p_dbt_modulo_tolerancia_malestar",
+      "procesos": ["RF_crisis", "RE_modulacion", "RE_prevEvitacion"],
+      "texto": "Este módulo estructura dos familias de procedimientos: (a) supervivencia a crisis (estrategias rápidas para no empeorar: STOP, TIP/TIPP, distracción, autoconsuelo, mejora del momento) y (b) aceptación de la realidad (aceptación radical, mente dispuesta, girar la mente), con el objetivo de atravesar olas emocionales extremas sin conductas de alto coste, reduciendo el refuerzo negativo de la evitación y creando condiciones mínimas para intervenir después con más profundidad. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Módulo de Regulación emocional (comprender, prevenir y modular emociones)",
+      "codigo": "p_dbt_modulo_regulacion_emocional",
+      "procesos": ["RE_rotulacion", "RE_modulacion", "VB_sueno"],
+      "texto": "DBT convierte la regulación en un plan entrenable: psicoeducación sobre función de emociones, identificación y rotulación fina, detección de vulnerabilidades y mantenimiento (PLEASE/ABC), aumento de eventos positivos y competencia, y técnicas de cambio como acción opuesta cuando la emoción no encaja con los hechos; el procedimiento apunta a reducir picos, aumentar tolerancia y prevenir recaídas conductuales derivadas de estados emocionales extremos sostenidos. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Módulo de Efectividad interpersonal (pedir, decir no y cuidar vínculos)",
+      "codigo": "p_dbt_modulo_efectividad_interpersonal",
+      "procesos": ["R_repertorioInterpersonal", "R_limitesInterpersonales", "R_comunicacionEmocional"],
+      "texto": "El entrenamiento interpersonal se organiza en guías conductuales (DEAR MAN, GIVE, FAST) para formular peticiones, negociar, sostener límites y proteger autoestima sin destruir la relación; se practica con role-play, tareas y revisión de consecuencias, ampliando repertorio en personas que oscilan entre sumisión y agresión, y reduciendo crisis relacionales que disparan autolesión, consumo o rupturas terapéuticas. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Tareas entre sesiones y práctica deliberada de habilidades",
+      "codigo": "p_dbt_homework_practica",
+      "procesos": ["AG_compromisoConductual", "N_metacognicion", "RE_prevEvitacion"],
+      "texto": "DBT prescribe tareas concretas (practicar una habilidad en un contexto específico, completar registros, ensayar una petición, preparar un cope-ahead) y las revisa como datos clínicos, no como examen; la lógica es conductual: sin práctica en contexto real no hay generalización, y la revisión permite ajustar el plan, reforzar aproximaciones y detectar evitaciones, barreras o contingencias que sabotean el aprendizaje. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Coaching telefónico para generalización en contexto real",
+      "codigo": "p_dbt_phone_coaching",
+      "procesos": ["RE_coregulacion", "AG_compromisoConductual", "ALI_tareas"],
+      "texto": "El coaching telefónico ofrece apoyo breve y focal para elegir y aplicar una habilidad en el momento crítico, priorizando llamar antes de autolesionarse y convertir la crisis en una oportunidad de generalización; no es “terapia por teléfono”, sino transferencia del aprendizaje al entorno, reforzando uso de habilidades, reduciendo dependencia pasiva y aumentando la sensación de acompañamiento regulador sin reemplazar la sesión. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Manejo de contingencias (refuerzo, extinción y límites conductuales)",
+      "codigo": "p_dbt_contingency_management",
+      "procesos": ["AG_compromisoConductual", "RE_prevEvitacion", "R_limitesInterpersonales"],
+      "texto": "DBT aplica principios conductuales para disminuir conductas problema y aumentar habilidades: se refuerzan aproximaciones (p. ej., pedir ayuda a tiempo), se reduce reforzamiento inadvertido de crisis, y se establecen límites claros ante conductas que interfieren con la terapia; el foco es funcional (qué mantiene qué) y se comunica de forma validante para evitar que el paciente lo viva como castigo, manteniendo a la vez firmeza protectora. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Estrategias de validación (niveles y uso sistemático)",
+      "codigo": "p_dbt_validacion_sistematica",
+      "procesos": ["RE_coregulacion", "RI_autocompasion", "R_reparacionRelacional"],
+      "texto": "La validación en DBT es un procedimiento técnico con niveles (escucha precisa, reflejo, lectura contextual, normalización, validación radical, etc.) para reducir vergüenza, defensividad y escalada, especialmente en historia de invalidación crónica; se valida la experiencia y su función sin validar conductas dañinas, sosteniendo aceptación radical mientras se prepara el terreno para cambio conductual y análisis funcional sin ruptura de alianza. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Estrategias de cambio: solución de problemas conductual",
+      "codigo": "p_dbt_problem_solving",
+      "procesos": ["AG_tomaDecisiones", "AG_compromisoConductual", "N_reformulacion"],
+      "texto": "DBT usa solución de problemas de estilo conductual para transformar objetivos en pasos: definir problema operativamente, generar alternativas, evaluar consecuencias, elegir, planificar, ejecutar y revisar resultados; esto reduce sensación de bloqueo y convierte el “no sé qué hacer” en secuencias entrenables, integrando habilidad con contexto y aumentando agencia real en áreas de calidad de vida. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Estrategias dialécticas (sí/y, síntesis y flexibilización de polaridades)",
+      "codigo": "p_dbt_estrategias_dialecticas",
+      "procesos": ["N_construccionAlternativa", "RI_dialogoFuncional", "RE_aceptacion"],
+      "texto": "DBT emplea procedimientos dialécticos para reducir pensamiento polarizado y oscilaciones extremas, promoviendo síntesis entre aceptación y cambio mediante reencuadres, paradojas, búsqueda activa de “algo verdadero en ambos polos” y lenguaje “sí, y…”; clínicamente, esto desactiva escaladas de vergüenza/ira, mejora tolerancia a ambivalencias y permite sostener metas de cambio sin sentirse invalidado o atacado. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+      "codigo": "p_dbt_ensayo_conductual",
+      "procesos": ["R_repertorioInterpersonal", "AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Cuando una habilidad no se ejecuta en la vida real, DBT la baja a conducta observable y la entrena en sesión con ensayo repetido, modelado, feedback y refinamiento (p. ej., pedir, decir no, reparar, usar STOP); el objetivo es que el paciente salga con una respuesta practicada y más automática bajo activación, reduciendo la brecha entre comprensión y ejecución y aumentando confianza basada en experiencia. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Estrategias de comunicación terapéutica (incluye estilo irreverente cuando procede)",
+      "codigo": "p_dbt_estilo_terapeutico",
+      "procesos": ["ALI_sintonia", "ALI_rupturaReparacion", "RE_coregulacion"],
+      "texto": "DBT utiliza un estilo comunicativo flexible (cálido, directo, a veces irreverente) para interrumpir patrones, reducir dramatización o evitación y mantener el equilibrio aceptación–cambio; la irreverencia se usa con timing fino y sobre base de vínculo, como herramienta para desenganchar rigidez o autocompasión victimista sin humillar, y se combina con validación para evitar rupturas y sostener motivación en tratamientos largos y exigentes. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Gestión de conductas que interfieren con la terapia (estructura, límites y reparación)",
+      "codigo": "p_dbt_terapy_interfering",
+      "procesos": ["ALI_rupturaReparacion", "R_limitesInterpersonales", "AG_autoriaResponsabilidad"],
+      "texto": "DBT trata las conductas que sabotean el tratamiento como objetivos clínicos en sí mismos (inasistencias, silencios, mentiras, ataques, no usar habilidades), analizándolas funcionalmente, validando su función y estableciendo límites y tareas concretas para cambiarlas; el procedimiento protege la continuidad, hace explícitos los acuerdos y usa rupturas como material terapéutico para entrenar habilidades interpersonales y autorregulación. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Coordinación de caso y trabajo con el entorno (cuando es necesario)",
+      "codigo": "p_dbt_case_management",
+      "procesos": ["VB_entorno", "R_sist_contexto", "R_sist_apoyo"],
+      "texto": "En casos con alta complejidad (riesgo, comorbilidad, precariedad), DBT incorpora coordinación pragmática con recursos sanitarios, familiares o comunitarios para estabilizar condiciones mínimas y alinear contingencias externas con los objetivos terapéuticos; no sustituye el entrenamiento en habilidades, pero evita que el contexto destruya la viabilidad del tratamiento, movilizando apoyos y ajustando condiciones que mantienen crisis recurrentes. (Linehan, 1993; Linehan, 2015)."
+    },
+    {
+      "nombre": "Equipo de consulta DBT para terapeutas (Consultation Team)",
+      "codigo": "p_dbt_consultation_team",
+      "procesos": ["ALI_monitorizacion", "R_valoresRelacionales", "RE_coregulacion"],
+      "texto": "DBT incluye un equipo regular de consulta donde los terapeutas revisan casos, coherencia con el modelo, límites, riesgos y desgaste, funcionando como sistema de soporte y control de calidad para mantener una postura estable de aceptación–cambio; este procedimiento no es accesorio: protege al terapeuta de burn-out, reduce respuestas punitivas o evitativas ante crisis y mejora consistencia del tratamiento, especialmente con pacientes de alta intensidad relacional. (Linehan, 1993; Linehan, 2015)."
+    },
+
+    {
+      "nombre": "DBT-PE: Integración de Exposición Prolongada para TEPT",
+      "codigo": "p_dbt_pe_integracion",
+      "procesos": ["AP_procesamiento", "RE_modulacion", "AG_compromisoConductual"],
+      "texto": "DBT-PE integra formalmente el protocolo de Exposición Prolongada (PE) dentro de la estructura estándar de DBT una vez que el paciente ha alcanzado estabilidad suficiente en conductas de alto riesgo. Se introducen exposición imaginada a memorias traumáticas y exposición en vivo a estímulos evitados, manteniendo la jerarquía de objetivos de DBT y el uso continuo de habilidades para regular activación. El tratamiento no sustituye DBT, sino que la amplía, combinando procesamiento traumático estructurado con contención conductual y validación dialéctica. Referencia: Harned, M. S., Korslund, K. E., & Linehan, M. M. (2014); Linehan (2015)."
+    },
+
+    {
+      "nombre": "DBT-PE: Exposición imaginada estructurada",
+      "codigo": "p_dbt_pe_exposicion_imaginada",
+      "procesos": ["AP_evocacion", "AP_profundizacion", "RE_modulacion"],
+      "texto": "Procedimiento específico dentro de DBT-PE donde el paciente revive de forma prolongada y repetida la memoria traumática en sesión, con grabación y escucha entre sesiones, mientras aplica habilidades de regulación para mantenerse dentro de la ventana de tolerancia. El objetivo es reducir evitación traumática, integrar la memoria en la narrativa autobiográfica y debilitar la reactividad condicionada sin perder el marco conductual de seguridad. Referencia: Harned et al. (2014)."
+    },
+
+    {
+      "nombre": "DBT-PE: Exposición en vivo a estímulos evitados",
+      "codigo": "p_dbt_pe_exposicion_vivo",
+      "procesos": ["AP_procesamiento", "AG_compromisoConductual", "RE_prevEvitacion"],
+      "texto": "Este procedimiento implica diseñar y ejecutar una jerarquía de aproximación gradual a situaciones, lugares o actividades evitadas por miedo traumático, integrando uso activo de habilidades DBT para prevenir desregulación o conductas autolesivas. Se trabaja con planificación precisa, revisión de resultados y ajuste de la jerarquía, reduciendo evitación conductual que mantiene el TEPT. Referencia: Harned et al. (2014)."
+    },
+
+    {
+      "nombre": "Adaptación DBT para Trastornos por Consumo de Sustancias (DBT-SUD)",
+      "codigo": "p_dbt_sud_adaptacion",
+      "procesos": ["RE_prevEvitacion", "AG_autoriaResponsabilidad", "VB_sustancias"],
+      "texto": "DBT-SUD adapta el modelo para pacientes con consumo problemático incorporando estrategias específicas como el concepto de 'abstinencia dialéctica' (compromiso firme con abstinencia junto a planificación de recaídas posibles), análisis funcional centrado en craving, manejo de estímulos asociados y reforzamiento diferencial del no consumo. Se enfatiza la prevención de recaídas sin abandonar la jerarquía DBT, integrando consumo como conducta de calidad de vida prioritaria. Referencia: Linehan et al. (1999); Linehan (2015)."
+    },
+
+    {
+      "nombre": "Abstinencia dialéctica y plan de recaídas",
+      "codigo": "p_dbt_sud_abstinencia_dialectica",
+      "procesos": ["AG_compromisoConductual", "N_construccionAlternativa", "RE_modulacion"],
+      "texto": "Procedimiento específico de DBT-SUD que combina un compromiso claro con abstinencia total con una preparación activa ante posibles recaídas, evitando la lógica dicotómica de 'todo o nada'. El paciente diseña planes concretos para minimizar daño y retomar abstinencia rápidamente, reduciendo vergüenza paralizante y abandono terapéutico tras deslizamientos. Referencia: Linehan et al. (1999)."
+    },
+
+    {
+      "nombre": "Adaptación DBT para Trastornos de la Conducta Alimentaria (DBT-ED)",
+      "codigo": "p_dbt_ed_adaptacion",
+      "procesos": ["RE_modulacion", "RE_prevEvitacion", "AG_compromisoConductual"],
+      "texto": "DBT-ED aplica el modelo a conductas alimentarias desreguladas (atracones, purgas, restricción impulsiva) conceptualizándolas como intentos de regulación emocional. Se prioriza el análisis en cadena de episodios alimentarios, el entrenamiento en tolerancia al malestar previo a impulsos y la estabilización conductual antes de trabajar aspectos identitarios más complejos, integrando psicoeducación nutricional cuando procede sin abandonar la lógica conductual-dialéctica. Referencia: Safer, Telch & Chen (2009)."
+    },
+
+    {
+      "nombre": "Análisis en cadena de episodios alimentarios",
+      "codigo": "p_dbt_ed_cadena_alimentaria",
+      "procesos": ["AP_evocacion", "RE_rotulacion", "N_metacognicion"],
+      "texto": "Procedimiento específico dentro de DBT-ED que reconstruye con precisión los antecedentes emocionales, cognitivos y situacionales de un episodio de atracón o purga, identificando vulnerabilidades biológicas, disparadores relacionales y reforzadores posteriores. Permite insertar habilidades de regulación y tolerancia al malestar antes del punto de no retorno conductual, debilitando el ciclo impulsivo. Referencia: Safer et al. (2009)."
+    }
+
+
+
+  ],
+
+
+
+  "micros": [
+
+    {
+      "nombre": "Jerarquía individualizada de exposición (DBT-PE)",
+      "codigo": "m_dbt_pe_jerarquia",
+      "procesos": ["AP_procesamiento", "AG_compromisoConductual"],
+      "texto": "Construcción colaborativa de una jerarquía graduada de recuerdos o situaciones traumáticas evitadas, ordenadas por intensidad subjetiva, que guiará la exposición imaginada y en vivo dentro de DBT-PE. Permite planificar el procesamiento con seguridad, reducir evitación sistemática y aumentar control anticipatorio sin desbordamiento. Referencia: Harned et al. (2014)."
+    },
+
+    {
+      "nombre": "Grabación y escucha repetida de exposición imaginada",
+      "codigo": "m_dbt_pe_grabacion",
+      "procesos": ["AP_profundizacion", "RE_prevEvitacion"],
+      "texto": "Tras la exposición imaginada en sesión, el paciente escucha la grabación entre sesiones para consolidar la habituación emocional y debilitar la evitación traumática. Este micro facilita integración progresiva y reduce reactividad condicionada mediante repetición estructurada fuera del entorno terapéutico. Referencia: Harned et al. (2014)."
+    },
+
+    {
+      "nombre": "Chequeo de ventana de tolerancia durante exposición",
+      "codigo": "m_dbt_pe_ventana",
+      "procesos": ["RE_modulacion", "RF_intero"],
+      "texto": "Microintervención continua que monitoriza activación fisiológica y emocional durante exposición traumática, ajustando intensidad cuando se supera la ventana de tolerancia. Permite sostener procesamiento profundo sin disociación ni desregulación extrema. Referencia: Harned et al. (2014)."
+    },
+
+    {
+      "nombre": "Análisis funcional del craving (DBT-SUD)",
+      "codigo": "m_dbt_sud_craving",
+      "procesos": ["N_metacognicion", "RE_prevEvitacion"],
+      "texto": "Identificación precisa de antecedentes emocionales, pensamientos automáticos, señales ambientales y consecuencias asociadas al deseo de consumir, conceptualizando el craving como respuesta condicionada reguladora de malestar. Facilita inserción estratégica de habilidades antes del consumo. Referencia: Linehan et al. (1999)."
+    },
+
+    {
+      "nombre": "Urge Surfing dialéctico",
+      "codigo": "m_dbt_sud_urge_surfing",
+      "procesos": ["RE_aceptacion", "RI_mindfulnessSelf"],
+      "texto": "Aplicación estructurada de mindfulness para observar la urgencia de consumir como una ola transitoria, sin actuar sobre ella, combinando aceptación radical y compromiso con abstinencia. Reduce impulsividad sin lucha supresiva. Referencia: Linehan et al. (1999)."
+    },
+
+    {
+      "nombre": "Plan de reparación inmediata tras recaída",
+      "codigo": "m_dbt_sud_reparacion_recaida",
+      "procesos": ["AG_autoriaResponsabilidad", "N_reformulacion"],
+      "texto": "Intervención breve posterior a un consumo para evitar espiral de abandono ('ya lo he estropeado'), redefiniendo la recaída como evento puntual y activando pasos inmediatos de reparación conductual. Reduce vergüenza paralizante y reinstala compromiso terapéutico. Referencia: Linehan et al. (1999)."
+    },
+
+    {
+      "nombre": "Mapa emocional previo al atracón (DBT-ED)",
+      "codigo": "m_dbt_ed_mapa_emocional",
+      "procesos": ["RE_rotulacion", "N_metacognicion"],
+      "texto": "Exploración detallada de estados emocionales y cognitivos que preceden al episodio alimentario desregulado, ayudando a diferenciar hambre fisiológica de activación emocional y detectando puntos tempranos de intervención con habilidades. Referencia: Safer et al. (2009)."
+    },
+
+    {
+      "nombre": "Demora conductual estructurada antes de purga",
+      "codigo": "m_dbt_ed_demora",
+      "procesos": ["AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Microintervención que introduce un retraso temporal obligatorio antes de conductas purgativas o restrictivas, durante el cual se aplican habilidades de tolerancia al malestar, reduciendo automatismo impulsivo y ampliando margen de elección conductual. Referencia: Safer et al. (2009)."
+    },
+
+    {
+      "nombre": "Exposición a alimentos temidos",
+      "codigo": "m_dbt_ed_exposicion_alimentos",
+      "procesos": ["AP_procesamiento", "RE_prevEvitacion"],
+      "texto": "Acercamiento gradual y planificado a alimentos evitados o altamente temidos, trabajando simultáneamente regulación emocional y prevención de purga o compensación. Debilita asociaciones miedo–alimento y reduce ciclo evitación–atracón. Referencia: Safer et al. (2009)."
+    },
+
+    {
+      "nombre": "Validación dialéctica del impulso autodestructivo",
+      "codigo": "m_dbt_validacion_impulso",
+      "procesos": ["RE_coregulacion", "RI_autocompasion"],
+      "texto": "Microintervención específica en crisis donde el terapeuta valida la función reguladora del impulso (autolesión, consumo, atracón) sin validar la conducta en sí, reduciendo vergüenza y defensividad y abriendo espacio para elegir alternativas más seguras. Referencia: Linehan (1993)."
+    },
+
+    {
+      "nombre": "Chequeo rápido de vulnerabilidad biológica (PLEASE)",
+      "codigo": "m_dbt_check_vulnerabilidad",
+      "procesos": ["VB_sueno", "VB_alimentacion", "VB_sustancias"],
+      "texto": "Evaluación breve y sistemática de sueño, alimentación, sustancias y estado físico antes de abordar crisis emocional, para distinguir vulnerabilidad biológica de contenido psicológico y ajustar intervención sin sobreinterpretar activación fisiológica. Referencia: Linehan (2015)."
+    },
+
+    {
+      "nombre": "Compromiso verbal reforzado en sesión",
+      "codigo": "m_dbt_compromiso_verbal",
+      "procesos": ["AG_compromisoConductual", "ALI_tareas"],
+      "texto": "Petición explícita de compromiso verbal con una acción concreta entre sesiones (llamar antes de autolesionarse, practicar habilidad X, asistir a grupo), reforzando agencia y responsabilidad activa frente a conductas de alto riesgo. Referencia: Linehan (1993)."
+    }
+
+  ],
+
+
+ 
+  "ideasPrincipales": [
+
+    {
+      "id": "idea_dbt_1",
+      "titulo": "La desregulación emocional surge de la interacción entre vulnerabilidad biológica y entorno invalidante",
+      "desarrollo": "El modelo biosocial de DBT sostiene que la desregulación emocional severa no es simplemente un rasgo de personalidad ni un déficit moral, sino el resultado de una alta sensibilidad biológica combinada con contextos invalidantes que no enseñaron habilidades de regulación. La emoción intensa no es el problema en sí; el problema es la ausencia de repertorio para modularla y la experiencia repetida de que sentir es incorrecto o inaceptable. Esta formulación desplaza el foco desde la culpa hacia la comprensión funcional y el entrenamiento sistemático en habilidades. (Linehan, 1993)."
+    },
+
+    {
+      "id": "idea_dbt_2",
+      "titulo": "Aceptación y cambio no son opuestos, sino polos dialécticos necesarios",
+      "desarrollo": "DBT se organiza en torno a una tensión dialéctica permanente entre validar la experiencia actual del paciente y promover cambios conductuales activos. La aceptación sin cambio cronifica el sufrimiento; el cambio sin aceptación genera vergüenza y ruptura terapéutica. El equilibrio dinámico entre ambos polos constituye el principio organizador del tratamiento y se expresa en el estilo del terapeuta, en la jerarquía de objetivos y en el entrenamiento de habilidades. (Linehan, 1993; Linehan, 2015)."
+    },
+
+    {
+      "id": "idea_dbt_3",
+      "titulo": "El tratamiento debe priorizar la supervivencia antes que la exploración profunda",
+      "desarrollo": "DBT establece una jerarquía explícita donde las conductas que amenazan la vida y la continuidad del tratamiento tienen prioridad absoluta sobre cualquier otro objetivo. Esta organización refleja una premisa ética y clínica: sin seguridad conductual mínima no es posible un trabajo emocional profundo ni procesamiento traumático. La estructura no es rigidez burocrática, sino una condición de viabilidad terapéutica. (Linehan, 1993)."
+    },
+
+    {
+      "id": "idea_dbt_4",
+      "titulo": "Las habilidades son el vehículo principal del cambio",
+      "desarrollo": "DBT conceptualiza muchos síntomas como déficits o ausencias de habilidades entrenables. En lugar de centrarse exclusivamente en insight, el modelo propone entrenamiento conductual sistemático en mindfulness, regulación emocional, tolerancia al malestar y efectividad interpersonal. El cambio se consolida cuando el paciente dispone de respuestas alternativas disponibles bajo alta activación emocional. (Linehan, 2015)."
+    },
+
+    {
+      "id": "idea_dbt_5",
+      "titulo": "La conducta problema cumple una función reguladora",
+      "desarrollo": "Autolesiones, consumo, atracones o explosiones de ira no se entienden como actos irracionales sin sentido, sino como intentos de regular estados emocionales intolerables. El análisis funcional identifica qué refuerzos mantienen estas conductas y permite sustituirlas por habilidades menos costosas. Esta perspectiva funcional reduce moralización y aumenta precisión clínica. (Linehan, 1993)."
+    },
+
+    {
+      "id": "idea_dbt_6",
+      "titulo": "La validación es una intervención activa y técnica",
+      "desarrollo": "En DBT la validación no es simpatía general, sino un procedimiento estructurado que reduce activación emocional, vergüenza y resistencia. Validar implica reconocer la lógica interna de la experiencia del paciente en su contexto histórico, sin validar conductas dañinas. Esta distinción permite mantener el equilibrio aceptación–cambio sin colusión ni confrontación destructiva. (Linehan, 1993)."
+    },
+
+    {
+      "id": "idea_dbt_7",
+      "titulo": "La generalización del aprendizaje requiere intervención en contexto real",
+      "desarrollo": "El modelo asume que aprender habilidades en sesión no garantiza su uso bajo activación real. Por ello incorpora coaching telefónico y tareas estructuradas que transfieren el aprendizaje al entorno cotidiano. Sin generalización conductual, el cambio permanece teórico y vulnerable a recaídas. (Linehan, 2015)."
+    },
+
+    {
+      "id": "idea_dbt_8",
+      "titulo": "La terapia es un sistema estructurado, no solo una relación",
+      "desarrollo": "DBT no se limita a la relación individual terapeuta–paciente; se concibe como un sistema compuesto por terapia individual, grupo de habilidades, coaching y equipo de consulta. Esta arquitectura protege al terapeuta del desgaste, mantiene coherencia técnica y aumenta probabilidad de adherencia en pacientes de alta complejidad. El sistema es parte del tratamiento. (Linehan, 1993)."
+    },
+
+    {
+      "id": "idea_dbt_9",
+      "titulo": "La abstinencia dialéctica evita el pensamiento dicotómico en adicciones",
+      "desarrollo": "En DBT-SUD, la abstinencia dialéctica combina un compromiso firme con dejar de consumir y la preparación explícita ante posibles recaídas. Esta síntesis evita la lógica de todo o nada que conduce al abandono tras un deslizamiento, reduciendo vergüenza y aumentando responsabilidad sostenida. (Linehan et al., 1999)."
+    },
+
+    {
+      "id": "idea_dbt_10",
+      "titulo": "El procesamiento traumático requiere estabilidad previa",
+      "desarrollo": "La integración de Exposición Prolongada dentro de DBT (DBT-PE) solo se introduce cuando las conductas suicidas y autolesivas están suficientemente estabilizadas. Esta secuenciación refleja que el procesamiento emocional profundo es eficaz únicamente cuando existe regulación mínima y compromiso conductual. La estructura precede a la exposición. (Harned et al., 2014)."
+    },
+
+    {
+      "id": "idea_dbt_11",
+      "titulo": "Construir una vida que merezca la pena vivir es el objetivo final",
+      "desarrollo": "Más allá de reducir crisis, DBT orienta el tratamiento hacia la construcción activa de una vida con sentido subjetivo. La reducción sintomática es condición necesaria pero no suficiente; el cambio completo implica metas, relaciones y actividades coherentes con valores personales que sostengan estabilidad a largo plazo. (Linehan, 1993)."
+    }
+
+  ],
+
+  "secuencias": [
+
+    {
+      "id": "seq_dbt_jerarquia_tratamiento",
+      "nombre": "Jerarquía estructural del tratamiento DBT",
+      "descripcion": "Secuencia organizadora que determina el orden obligatorio de prioridades clínicas en cada sesión y a lo largo del tratamiento.",
+      "tipo": "jerarquia",
+      "pasos": [
+        { "orden": 1, "accion": "Reducir conductas que amenazan la vida", "explicacion": "Suicidio, autolesión, conductas de alto riesgo tienen prioridad absoluta." },
+        { "orden": 2, "accion": "Reducir conductas que interfieren con la terapia", "explicacion": "Inasistencias, sabotaje, ocultación, hostilidad, no uso de coaching." },
+        { "orden": 3, "accion": "Reducir conductas que deterioran calidad de vida", "explicacion": "Consumo, caos relacional, problemas laborales o legales." },
+        { "orden": 4, "accion": "Adquirir y generalizar habilidades", "explicacion": "Entrenamiento sistemático en módulos DBT." }
+      ]
+    },
+
+    {
+      "id": "seq_dbt_sesion_individual",
+      "nombre": "Estructura estándar de sesión individual DBT",
+      "descripcion": "Flujo operativo típico de una sesión individual dentro del modelo DBT.",
+      "tipo": "flujo",
+      "pasos": [
+        { "orden": 1, "accion": "Revisión del Diary Card", "explicacion": "Identificar picos emocionales y conductas diana." },
+        { "orden": 2, "accion": "Aplicación de jerarquía de prioridades", "explicacion": "Seleccionar el foco principal de la sesión." },
+        { "orden": 3, "accion": "Análisis en cadena si hubo conducta problema", "explicacion": "Reconstrucción detallada de la secuencia conductual." },
+        { "orden": 4, "accion": "Análisis de soluciones", "explicacion": "Diseño de cadena alternativa con habilidades específicas." },
+        { "orden": 5, "accion": "Entrenamiento o ensayo de habilidad", "explicacion": "Role-play o práctica guiada." },
+        { "orden": 6, "accion": "Asignación de tareas y compromiso verbal", "explicacion": "Definir acción concreta entre sesiones." }
+      ]
+    },
+
+    {
+      "id": "seq_dbt_chain_analysis",
+      "nombre": "Secuencia completa del análisis en cadena",
+      "descripcion": "Descomposición estructurada de una conducta problema para identificar puntos de intervención.",
+      "tipo": "protocolo",
+      "pasos": [
+        { "orden": 1, "accion": "Identificar conducta problema específica", "explicacion": "Definirla de forma observable y concreta." },
+        { "orden": 2, "accion": "Detectar vulnerabilidades previas", "explicacion": "Sueño, consumo, conflicto previo, activación basal." },
+        { "orden": 3, "accion": "Identificar evento desencadenante", "explicacion": "Situación inmediata que inicia la cadena." },
+        { "orden": 4, "accion": "Registrar pensamientos e interpretaciones", "explicacion": "Significados asociados al evento." },
+        { "orden": 5, "accion": "Registrar emociones y sensaciones corporales", "explicacion": "Activación emocional progresiva." },
+        { "orden": 6, "accion": "Identificar impulsos y microconductas", "explicacion": "Pequeños pasos previos a la conducta final." },
+        { "orden": 7, "accion": "Describir conducta problema", "explicacion": "Ejecución final del patrón." },
+        { "orden": 8, "accion": "Analizar consecuencias inmediatas y tardías", "explicacion": "Refuerzos que mantienen el patrón." }
+      ]
+    },
+
+    {
+      "id": "seq_dbt_skills_training",
+      "nombre": "Secuencia del entrenamiento en habilidades DBT",
+      "descripcion": "Estructura didáctica estándar del grupo de habilidades.",
+      "tipo": "protocolo",
+      "pasos": [
+        { "orden": 1, "accion": "Revisión de tarea previa", "explicacion": "Evaluar aplicación en contexto real." },
+        { "orden": 2, "accion": "Introducción de nueva habilidad", "explicacion": "Explicación conceptual breve." },
+        { "orden": 3, "accion": "Modelado por parte del terapeuta", "explicacion": "Demostración concreta." },
+        { "orden": 4, "accion": "Práctica guiada en sesión", "explicacion": "Ensayo estructurado." },
+        { "orden": 5, "accion": "Asignación de tarea", "explicacion": "Aplicación específica entre sesiones." }
+      ]
+    },
+
+    {
+      "id": "seq_dbt_crisis",
+      "nombre": "Secuencia operativa de manejo de crisis",
+      "descripcion": "Flujo conductual recomendado ante activación extrema o impulso autolesivo.",
+      "tipo": "flujo",
+      "pasos": [
+        { "orden": 1, "accion": "Aplicar STOP", "explicacion": "Detener impulsividad inmediata." },
+        { "orden": 2, "accion": "Aplicar TIPP u otra regulación fisiológica", "explicacion": "Reducir activación corporal." },
+        { "orden": 3, "accion": "Activar apoyo o coaching", "explicacion": "Buscar regulación co-compartida." },
+        { "orden": 4, "accion": "Aplicar habilidad alternativa específica", "explicacion": "Elegir conducta segura." }
+      ]
+    },
+
+    {
+      "id": "seq_dbt_pe",
+      "nombre": "Secuencia DBT-PE para TEPT",
+      "descripcion": "Integración estructurada de exposición prolongada dentro de DBT.",
+      "tipo": "protocolo",
+      "pasos": [
+        { "orden": 1, "accion": "Verificar estabilidad conductual previa", "explicacion": "Ausencia reciente de conductas suicidas." },
+        { "orden": 2, "accion": "Construir jerarquía de exposición", "explicacion": "Ordenar recuerdos o situaciones evitadas." },
+        { "orden": 3, "accion": "Realizar exposición imaginada en sesión", "explicacion": "Revividencia prolongada estructurada." },
+        { "orden": 4, "accion": "Asignar escucha grabada entre sesiones", "explicacion": "Consolidar habituación." },
+        { "orden": 5, "accion": "Exposición en vivo gradual", "explicacion": "Reducir evitación situacional." }
+      ]
+    },
+
+    {
+      "id": "seq_dbt_sud_abstinencia_dialectica",
+      "nombre": "Secuencia de abstinencia dialéctica (DBT-SUD)",
+      "descripcion": "Flujo estratégico para sostener abstinencia y manejar recaídas.",
+      "tipo": "flujo",
+      "pasos": [
+        { "orden": 1, "accion": "Compromiso explícito con abstinencia total", "explicacion": "Declaración clara de meta." },
+        { "orden": 2, "accion": "Análisis funcional del craving", "explicacion": "Detectar antecedentes y señales." },
+        { "orden": 3, "accion": "Aplicar habilidades ante impulso", "explicacion": "Urge surfing y regulación." },
+        { "orden": 4, "accion": "Si ocurre recaída, activar plan inmediato de reparación", "explicacion": "Evitar abandono total." }
+      ]
+    },
+
+    {
+      "id": "seq_dbt_ed",
+      "nombre": "Secuencia de intervención en episodio alimentario (DBT-ED)",
+      "descripcion": "Estructura operativa para interrumpir ciclo de atracón o purga.",
+      "tipo": "flujo",
+      "pasos": [
+        { "orden": 1, "accion": "Detectar vulnerabilidad y emoción previa", "explicacion": "Mapa emocional inicial." },
+        { "orden": 2, "accion": "Introducir demora conductual", "explicacion": "Retrasar impulsividad." },
+        { "orden": 3, "accion": "Aplicar tolerancia al malestar", "explicacion": "Regular activación." },
+        { "orden": 4, "accion": "Registrar episodio y analizar cadena", "explicacion": "Aprendizaje posterior." }
+      ]
+    }
+
+  ],
+
+
+
+
+  "refs": [
+    "Linehan, M. M. (1993). Cognitive-Behavioral Treatment of Borderline Personality Disorder.",
+    "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.)."
+  ]
+}
