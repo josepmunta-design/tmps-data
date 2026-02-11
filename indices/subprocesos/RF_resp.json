@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_resp",
-  "updatedAt": "2026-02-11T09:23:26.235Z",
-  "totalModelos": 7,
+  "updatedAt": "2026-02-11T09:28:40.151Z",
+  "totalModelos": 8,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -44,6 +44,29 @@
           "codigo": "m_sit_respiracion_reguladora",
           "nombre": "Respiración reguladora integrada al afrontamiento",
           "texto": "Uso breve y funcional de la respiración controlada como apoyo al afrontamiento (no como evitación), permitiendo reducir picos de activación fisiológica para sostener la exposición y la aplicación de habilidades cognitivas y conductuales bajo estrés. (Meichenbaum, 1985).",
+          "sub": "RF_resp",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-para-psicosis-cbtp-1994",
+      "modelLabel": "Terapia cognitiva para psicosis (CBTp)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David Kingdon; Douglas Turkington; Nicholas Tarrier",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_cbtp_regulacion_ansiedad",
+          "nombre": "Manejo de ansiedad y activación fisiológica asociada a síntomas",
+          "texto": "Procedimiento que incorpora técnicas de respiración, relajación y regulación emocional para reducir activación fisiológica que intensifica interpretación catastrófica de experiencias inusuales. Referencia: Turkington et al. (2006).",
+          "sub": "RF_resp",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbtp_respiracion",
+          "nombre": "Respiración reguladora ante activación persecutoria",
+          "texto": "Aplicar respiración lenta y controlada cuando la activación fisiológica incrementa la convicción delirante o el miedo asociado a la experiencia psicótica. Referencia: Turkington et al. (2006).",
           "sub": "RF_resp",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-11T09:23:26.235Z",
-  "totalModelos": 84,
+  "updatedAt": "2026-02-11T09:28:40.151Z",
+  "totalModelos": 85,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -273,6 +273,50 @@
           "codigo": "m_sit_detencion_autocritica",
           "nombre": "Detención de espiral autocrítica",
           "texto": "Interrupción consciente de autoverbalizaciones autocríticas que intensifican el estrés (“no sirvo”, “voy a fallar”) mediante sustitución por mensajes funcionales, reduciendo vergüenza, bloqueo y abandono prematuro del afrontamiento. (Meichenbaum, 1985).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-para-psicosis-cbtp-1994",
+      "modelLabel": "Terapia cognitiva para psicosis (CBTp)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David Kingdon; Douglas Turkington; Nicholas Tarrier",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_cbtp_normalizacion",
+          "nombre": "Normalización de experiencias psicóticas",
+          "texto": "Procedimiento psicoeducativo orientado a presentar alucinaciones y creencias inusuales como fenómenos que pueden aparecer en población general bajo estrés, fatiga o trauma, reduciendo vergüenza, aislamiento y catastrofización sin validar el contenido delirante. Referencia: Kingdon & Turkington (2005); Turkington et al. (2006).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbtp_afrontamiento_voces",
+          "nombre": "Entrenamiento en afrontamiento de voces",
+          "texto": "Procedimiento orientado a reducir malestar asociado a alucinaciones auditivas mediante técnicas de distracción, diálogo estructurado con la voz, modificación de atribuciones sobre su poder y entrenamiento en control atencional, sin centrarse exclusivamente en su eliminación. Referencia: Turkington et al. (2006).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbtp_regulacion_ansiedad",
+          "nombre": "Manejo de ansiedad y activación fisiológica asociada a síntomas",
+          "texto": "Procedimiento que incorpora técnicas de respiración, relajación y regulación emocional para reducir activación fisiológica que intensifica interpretación catastrófica de experiencias inusuales. Referencia: Turkington et al. (2006).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbtp_distraccion",
+          "nombre": "Entrenamiento en distracción focalizada",
+          "texto": "Enseñar técnicas de distracción atencional estructurada para reducir la intensidad percibida de las voces cuando generan angustia elevada. Referencia: Turkington et al. (2006).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbtp_respiracion",
+          "nombre": "Respiración reguladora ante activación persecutoria",
+          "texto": "Aplicar respiración lenta y controlada cuando la activación fisiológica incrementa la convicción delirante o el miedo asociado a la experiencia psicótica. Referencia: Turkington et al. (2006).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-11T09:23:26.235Z",
-  "totalModelos": 87,
+  "updatedAt": "2026-02-11T09:28:40.151Z",
+  "totalModelos": 88,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -382,6 +382,36 @@
           "codigo": "m_beck_programar_actividad",
           "nombre": "Programación de actividad específica",
           "texto": "Definir una actividad concreta, acotada y calendarizada para la semana, orientada a romper la inhibición conductual y generar refuerzo. Referencia: Beck et al. (1979).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-para-psicosis-cbtp-1994",
+      "modelLabel": "Terapia cognitiva para psicosis (CBTp)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David Kingdon; Douglas Turkington; Nicholas Tarrier",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_cbtp_experimentos",
+          "nombre": "Experimentos conductuales en psicosis",
+          "texto": "Procedimiento que diseña pruebas conductuales seguras para evaluar predicciones asociadas a delirios o miedos derivados de voces, permitiendo generar evidencia experiencial correctiva y debilitar interpretaciones rígidas mediante aprendizaje directo. Referencia: Kingdon & Turkington (2005).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbtp_experimento_breve",
+          "nombre": "Experimento conductual breve",
+          "texto": "Diseñar una pequeña prueba conductual para comprobar predicciones asociadas a la creencia delirante (por ejemplo, salir sin realizar una conducta de seguridad) y evaluar el resultado real frente al esperado. Referencia: Kingdon & Turkington (2005).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbtp_reduccion_seguridad",
+          "nombre": "Reducción gradual de conducta de seguridad",
+          "texto": "Planificar eliminación progresiva de conductas que mantienen la creencia delirante (por ejemplo, evitar lugares públicos) para generar aprendizaje correctivo. Referencia: Tarrier (2005).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

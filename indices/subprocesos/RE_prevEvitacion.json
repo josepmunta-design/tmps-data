@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-11T09:23:26.235Z",
-  "totalModelos": 31,
+  "updatedAt": "2026-02-11T09:28:40.151Z",
+  "totalModelos": 32,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -280,6 +280,29 @@
           "codigo": "m_sit_prevencion_evitacion",
           "nombre": "Prevención de evitación sutil",
           "texto": "Detección y corrección de microconductas de evitación encubierta (posponer, minimizar, distraerse en exceso) que debilitan el entrenamiento bajo estrés, promoviendo aproximaciones graduadas y consistentes alineadas con el plan de afrontamiento. (Meichenbaum, 1985).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-cognitiva-para-psicosis-cbtp-1994",
+      "modelLabel": "Terapia cognitiva para psicosis (CBTp)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David Kingdon; Douglas Turkington; Nicholas Tarrier",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_cbtp_evitacion",
+          "nombre": "Reducción de conductas de seguridad y evitación",
+          "texto": "Procedimiento que identifica conductas evitativas o ritualizadas mantenedoras del delirio (aislamiento, hipervigilancia, comprobaciones) y promueve reducción gradual mediante exposición conductual y fortalecimiento de agencia personal. Referencia: Tarrier (2005).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbtp_reduccion_seguridad",
+          "nombre": "Reducción gradual de conducta de seguridad",
+          "texto": "Planificar eliminación progresiva de conductas que mantienen la creencia delirante (por ejemplo, evitar lugares públicos) para generar aprendizaje correctivo. Referencia: Tarrier (2005).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
