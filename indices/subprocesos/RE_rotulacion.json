@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_rotulacion",
-  "updatedAt": "2026-02-11T11:06:17.082Z",
-  "totalModelos": 57,
+  "updatedAt": "2026-02-11T11:20:27.118Z",
+  "totalModelos": 58,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -74,6 +74,43 @@
           "codigo": "m_fap_reflejo_emocion",
           "nombre": "Reflejar emoción primaria emergente",
           "texto": "Nombrar explícitamente una emoción primaria que emerge en sesión para facilitar su expresión directa y reforzar vulnerabilidad interpersonal adaptativa. Referencia: Tsai et al. (2009).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mbct-segal-williams-teasdale-2002",
+      "modelLabel": "CBT 3ª ola – MBCT",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mbct_senales_recaida",
+          "nombre": "Entrenamiento en detección temprana de señales de recaída (early warning signs)",
+          "texto": "Procedimiento de monitorización sistemática para identificar señales sutiles que preceden recaídas (cambios de sueño, fatiga, irritabilidad, autocrítica, retirada, tensión corporal). Se entrena discriminación fina (qué es señal vs. ruido) y se vincula cada señal con acciones concretas de respuesta mindful, para actuar antes de que el episodio se consolide. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_inquiry",
+          "nombre": "Indagación (inquiry) posterior a práctica: elaboración guiada de la experiencia",
+          "texto": "Procedimiento de diálogo estructurado tras las prácticas para ayudar a poner palabras a la experiencia, detectar patrones (lucha, juicio, evitación, somnolencia), y extraer principios de aprendizaje (“qué ocurre cuando me engancho / cuando vuelvo al cuerpo”). Consolida metaconciencia y convierte la práctica en conocimiento funcional aplicable a recaídas. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbct_parar_reconocer",
+          "nombre": "Parar y reconocer (\"dándome cuenta\")",
+          "texto": "Microintervención de interrumpir el piloto automático y nombrar internamente lo que está ocurriendo (por ejemplo, “esto es rumiación”, “esto es tristeza”, “esto es tensión”), para pasar de modo reactivo a modo observador y abrir margen de elección antes de que el bucle ánimo–pensamiento escale. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_breathingspace_paso1",
+          "nombre": "Respiración de 3 minutos – Paso 1 (reconocer qué hay ahora)",
+          "texto": "Microintervención del primer paso del 3-Minute Breathing Space: detenerse y reconocer experiencia presente (pensamientos, emociones, sensaciones) para salir del automatismo y detectar el inicio de la espiral. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "RE_rotulacion",
           "tipo": "micro"
         }

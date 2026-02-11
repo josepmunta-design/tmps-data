@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-11T11:06:17.082Z",
-  "totalModelos": 90,
+  "updatedAt": "2026-02-11T11:20:27.118Z",
+  "totalModelos": 91,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -322,6 +322,50 @@
           "codigo": "m_fap_repeticion_ccr2",
           "nombre": "Invitar a repetir una CCR2",
           "texto": "Solicitar que el paciente repita una conducta adaptativa que acaba de emerger para consolidar aprendizaje y aumentar discriminación conductual. Referencia: Kohlenberg & Tsai (1991).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mbct-segal-williams-teasdale-2002",
+      "modelLabel": "CBT 3ª ola – MBCT",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mbct_movimiento_consciente",
+          "nombre": "Movimiento consciente (mindful movement / yoga suave)",
+          "texto": "Procedimiento experiencial que integra conciencia corporal en movimiento para ampliar ventana de tolerancia, detectar tensión/evitación y cultivar un estilo de acción más atento y menos automático. Facilita que el paciente aprenda a permanecer con sensaciones y límites sin forzar, y a relacionarse con el cuerpo desde cuidado y ajuste, no desde exigencia o desconexión. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_mindfulness_informal",
+          "nombre": "Prácticas informales de mindfulness en actividades cotidianas",
+          "texto": "Procedimiento para trasladar la atención plena a lo diario (comer, ducharse, caminar, tareas domésticas) con el fin de reducir piloto automático y fortalecer continuidad de práctica. Se define una rutina concreta, se anticipan obstáculos y se revisa la experiencia real para consolidar habilidad, no “cumplimiento”. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_plan_prevencion_recaida",
+          "nombre": "Plan de acción ante señales de recaída (relapse prevention/action plan)",
+          "texto": "Procedimiento de cierre y generalización donde se diseña un plan concreto: señales personales → respuestas inmediatas (3 minutos, práctica formal breve, ajuste de rutina) → apoyos → escalado si empeora (contacto profesional, red). Se busca que la respuesta sea automática por diseño, reduciendo el tiempo entre señal y acción eficaz. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_home_practice",
+          "nombre": "Tareas para casa y adherencia a la práctica (home practice protocol)",
+          "texto": "Procedimiento operativo que estructura práctica entre sesiones (audios, frecuencia, registro breve) y trabaja barreras típicas (perfeccionismo, ‘no me sale’, falta de tiempo). Se insiste en orientación a aprendizaje (notar, volver) más que a rendimiento, y se usa revisión sistemática para aumentar adherencia realista. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbct_microaccion_respuesta",
+          "nombre": "Elegir respuesta pequeña (micro-acción anti-espiral)",
+          "texto": "Microintervención de seleccionar una acción mínima y concreta tras notar señales tempranas (paseo breve, ducha consciente, llamar a alguien, ordenar una tarea simple) para prevenir retirada/apatía y consolidar ‘responder’ frente a ‘reaccionar’. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

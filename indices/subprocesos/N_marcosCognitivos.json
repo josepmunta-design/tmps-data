@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-02-11T11:06:17.082Z",
-  "totalModelos": 42,
+  "updatedAt": "2026-02-11T11:20:27.118Z",
+  "totalModelos": 43,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -122,6 +122,50 @@
           "codigo": "m_bandura_eficacia_vs_resultado",
           "nombre": "Diferenciar expectativa de eficacia y expectativa de resultado",
           "texto": "Microintervención orientada a clarificar la distinción entre la creencia en la propia capacidad para ejecutar una conducta (expectativa de eficacia) y la anticipación de las consecuencias de dicha conducta (expectativa de resultado), corrigiendo confusiones frecuentes que bloquean la acción. Esta diferenciación permite intervenir con mayor precisión cuando la inhibición conductual no se debe a falta de habilidad, sino a dudas sobre el impacto o valor del resultado esperado. (Bandura, 1997).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mbct-segal-williams-teasdale-2002",
+      "modelLabel": "CBT 3ª ola – MBCT",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mbct_formulacion_recaida",
+          "nombre": "Evaluación de vulnerabilidad a recaída y formulación del bucle rumiación–ánimo",
+          "texto": "Procedimiento inicial para identificar el patrón personal de recaída: señales tempranas (cognitivas, emocionales y somáticas), disparadores típicos, estilos de afrontamiento que empeoran (rumiación, evitación) y el bucle “ánimo bajo → pensamiento negativo → más ánimo bajo”. Se construye una formulación sencilla y compartida que enmarca el objetivo de MBCT: detectar pronto la activación y cambiar el modo de respuesta antes de que el bucle se autoalimente. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_psicoeducacion_recaidas",
+          "nombre": "Psicoeducación sobre depresión recurrente y prevención de recaídas",
+          "texto": "Procedimiento didáctico-clínico que explica la lógica de la recaída (reactivación de patrones aprendidos) y el foco diferencial de MBCT (cambiar la relación con los eventos mentales, no discutir su contenido). Incluye normalización de síntomas residuales, explicación de rumiación y evitación como mantenedores y establecimiento de expectativas realistas sobre práctica y aprendizaje gradual. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_pensamientos_no_son_hechos",
+          "nombre": "Trabajo con pensamientos depresógenos: ‘pensamientos no son hechos’ (decentramiento)",
+          "texto": "Procedimiento cognitivo-mindfulness para debilitar la fusión con contenido negativo: se entrena observar pensamientos como eventos (palabras/imágenes), detectar tono absolutista, y notar su carácter transitorio sin entrar en debate ni supresión. El objetivo es cambiar el modo de procesamiento (de elaborativo a observacional), reduciendo el poder rumiativo de cogniciones típicas de recaída. (Segal, Williams & Teasdale, 2002; Teasdale, Segal & Williams, 1995).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbct_pensamientos_no_hechos",
+          "nombre": "Descentramiento explícito (\"pensamientos no son hechos\")",
+          "texto": "Microintervención de recordatorio explícito de que los pensamientos son eventos mentales, no descripciones literales de la realidad, para reducir su autoridad inmediata y prevenir que activen rumiación elaborativa. (Segal, Williams & Teasdale, 2002; Teasdale, Segal & Williams, 1995).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_evento_desagradable_registro",
+          "nombre": "Registro breve de evento desagradable (hechos vs interpretaciones)",
+          "texto": "Microintervención de anotar un evento desagradable separando hechos, pensamientos automáticos, emoción y reacción corporal, para identificar el punto exacto donde se activa la elaboración rumiativa y entrenar respuesta alternativa. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }

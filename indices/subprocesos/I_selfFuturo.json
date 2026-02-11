@@ -1,8 +1,31 @@
 {
   "subprocesoId": "I_selfFuturo",
-  "updatedAt": "2026-02-11T11:06:17.082Z",
-  "totalModelos": 10,
+  "updatedAt": "2026-02-11T11:20:27.118Z",
+  "totalModelos": 11,
   "modelos": [
+    {
+      "modelId": "mbct-segal-williams-teasdale-2002",
+      "modelLabel": "CBT 3ª ola – MBCT",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mbct_plan_prevencion_recaida",
+          "nombre": "Plan de acción ante señales de recaída (relapse prevention/action plan)",
+          "texto": "Procedimiento de cierre y generalización donde se diseña un plan concreto: señales personales → respuestas inmediatas (3 minutos, práctica formal breve, ajuste de rutina) → apoyos → escalado si empeora (contacto profesional, red). Se busca que la respuesta sea automática por diseño, reduciendo el tiempo entre señal y acción eficaz. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "I_selfFuturo",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbct_si_entonces_recaida",
+          "nombre": "Plan ‘si–entonces’ para recaída (implementación inmediata)",
+          "texto": "Microintervención de traducir señales tempranas en reglas conductuales concretas (p. ej., “si noto rumiación + cansancio, entonces 3 minutos + caminar 10 min + avisar a X”) para reducir ambivalencia y acelerar respuesta eficaz. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "I_selfFuturo",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "sit-inoculacion-estres-meichenbaum-1977",
       "modelLabel": "Terapia de inoculación de estrés (SIT)",

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_aceptacion",
-  "updatedAt": "2026-02-11T11:06:17.082Z",
-  "totalModelos": 46,
+  "updatedAt": "2026-02-11T11:20:27.118Z",
+  "totalModelos": 47,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -127,6 +127,50 @@
           "codigo": "m_fap_pregunta_vulnerabilidad",
           "nombre": "Evocar vulnerabilidad mediante pregunta directa",
           "texto": "Formular una pregunta directa orientada a contactar con emoción nuclear (por ejemplo, miedo al rechazo o vergüenza) para aumentar probabilidad de CCR2 asociada a apertura emocional. Referencia: Tsai et al. (2009).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mbct-segal-williams-teasdale-2002",
+      "modelLabel": "CBT 3ª ola – MBCT",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mbct_body_scan",
+          "nombre": "Entrenamiento en práctica formal: escaneo corporal (body scan)",
+          "texto": "Procedimiento de mindfulness formal centrado en recorrer sistemáticamente el cuerpo con atención sostenida para entrenar interocepción, anclaje y una actitud de aceptación hacia sensaciones agradables, neutras o incómodas. Se usa para fortalecer conciencia temprana de activación, ampliar tolerancia a la experiencia corporal y reducir automatismos de evitación o lucha con el malestar. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_autocritica_actitud_amable",
+          "nombre": "Trabajo con autocrítica y tono interno desde una actitud compasiva implícita",
+          "texto": "Procedimiento para reconocer autocrítica como patrón mental, detectar su impacto corporal/emocional y responder con una postura amable y no punitiva (curiosidad, humanidad compartida, permitir). Aunque MBCT no es CFT, este trabajo suele ser necesario para sostener la práctica y reducir espirales depresógenas basadas en vergüenza. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbct_reinicio_amable",
+          "nombre": "Volver y empezar de nuevo (reinicio amable)",
+          "texto": "Microintervención de detectar distracción y reiniciar la práctica con amabilidad (sin reprimirse), convirtiendo cada “me fui” en un ensayo de aprendizaje, lo que disminuye autocrítica y sostiene adherencia realista a la práctica. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_permitir_espacio",
+          "nombre": "Permitir y hacer espacio (\"dejar estar\")",
+          "texto": "Microintervención de soltar la lucha con la experiencia interna (emociones/sensaciones) y permitir su presencia sin actuar inmediatamente para eliminarla, reduciendo evitación experiencial y escalada depresógena. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_observar_autocritica",
+          "nombre": "Autoobservación de autocrítica (tono/mandato) sin debate",
+          "texto": "Microintervención de detectar frases autocríticas y observar su tono/efecto corporal sin entrar en argumentación, tratándolas como eventos mentales que disparan amenaza y rumiación, para luego volver a ancla y elegir respuesta. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "RE_aceptacion",
           "tipo": "micro"
         }

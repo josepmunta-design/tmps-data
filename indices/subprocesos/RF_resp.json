@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_resp",
-  "updatedAt": "2026-02-11T11:06:17.082Z",
-  "totalModelos": 8,
+  "updatedAt": "2026-02-11T11:20:27.118Z",
+  "totalModelos": 9,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -21,6 +21,36 @@
           "codigo": "m_cft_srb_intention",
           "nombre": "Respiración calmante con intención afiliativa",
           "texto": "No solo “respirar”: hacerlo con actitud amable (suavidad, paciencia). El componente afiliativo es parte del mecanismo de cambio.",
+          "sub": "RF_resp",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mbct-segal-williams-teasdale-2002",
+      "modelLabel": "CBT 3ª ola – MBCT",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mbct_3min_breathing_space",
+          "nombre": "Espacio de respiración de 3 minutos (Three-Minute Breathing Space)",
+          "texto": "Procedimiento breve y altamente transferible para interrumpir automatismos cuando aparece malestar: 1) reconocer “qué está pasando”, 2) focalizar en respiración como ancla, 3) expandir atención al cuerpo completo y a la situación. Actúa como “freno de emergencia” para reducir reactividad y elegir respuesta antes de caer en rumiación o evitación. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RF_resp",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbct_anclaje_respiracion",
+          "nombre": "Anclaje en respiración (sensación concreta, no idea)",
+          "texto": "Microintervención de llevar la atención a una sensación respiratoria específica (narinas, pecho o abdomen) y usarla como punto de apoyo estable, entrenando regreso repetido sin esfuerzo y reduciendo la absorción en cadenas rumiativas. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RF_resp",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_breathingspace_paso2",
+          "nombre": "Respiración de 3 minutos – Paso 2 (focalizar en respiración)",
+          "texto": "Microintervención del segundo paso del 3-Minute Breathing Space: estrechar el foco a la respiración como ancla para estabilizar atención y bajar reactividad antes de decidir qué hacer. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "RF_resp",
           "tipo": "micro"
         }

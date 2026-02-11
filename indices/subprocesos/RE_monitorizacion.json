@@ -1,8 +1,31 @@
 {
   "subprocesoId": "RE_monitorizacion",
-  "updatedAt": "2026-02-11T11:06:17.082Z",
-  "totalModelos": 7,
+  "updatedAt": "2026-02-11T11:20:27.118Z",
+  "totalModelos": 8,
   "modelos": [
+    {
+      "modelId": "mbct-segal-williams-teasdale-2002",
+      "modelLabel": "CBT 3ª ola – MBCT",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "m_mbct_detectar_rumiacion",
+          "nombre": "Detectar rumiación (señal de ‘modo hacer’ disfuncional)",
+          "texto": "Microintervención de reconocer la rumiación como proceso (dar vueltas, analizar sin salida) y tratarla como una señal de cambio de estrategia: volver a ancla corporal/respiratoria y reducir alimentación del bucle. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_firma_recaida",
+          "nombre": "Señales tempranas personalizadas (lista corta ‘mi firma de recaída’)",
+          "texto": "Microintervención de definir y revisar una lista breve de señales propias (sueño, irritabilidad, retirada, rumiación, tensión) para detectar activación precoz y activar el plan de respuesta antes de que el episodio se consolide. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "terapia-cognitiva-beck-depresion-1967",
       "modelLabel": "Terapia cognitiva (depresión)",

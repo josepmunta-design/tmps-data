@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-11T11:06:17.082Z",
-  "totalModelos": 94,
+  "updatedAt": "2026-02-11T11:20:27.118Z",
+  "totalModelos": 95,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -359,6 +359,141 @@
           "codigo": "m_fap_refuerzo_ccr3",
           "nombre": "Reforzar análisis funcional del paciente (CCR3)",
           "texto": "Validar y reforzar verbalizaciones del paciente que describen de manera funcional su propia conducta y sus consecuencias, fortaleciendo conciencia conductual y autoría del cambio. Referencia: Kohlenberg & Tsai (1991).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mbct-segal-williams-teasdale-2002",
+      "modelLabel": "CBT 3ª ola – MBCT",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mbct_formulacion_recaida",
+          "nombre": "Evaluación de vulnerabilidad a recaída y formulación del bucle rumiación–ánimo",
+          "texto": "Procedimiento inicial para identificar el patrón personal de recaída: señales tempranas (cognitivas, emocionales y somáticas), disparadores típicos, estilos de afrontamiento que empeoran (rumiación, evitación) y el bucle “ánimo bajo → pensamiento negativo → más ánimo bajo”. Se construye una formulación sencilla y compartida que enmarca el objetivo de MBCT: detectar pronto la activación y cambiar el modo de respuesta antes de que el bucle se autoalimente. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_meditacion_sentada",
+          "nombre": "Entrenamiento en práctica formal: meditación sentada (atención a respiración, cuerpo, sonidos y pensamientos)",
+          "texto": "Procedimiento central para entrenar atención sostenida y abierta, observar la mente en tiempo real y desarrollar descentramiento (“los pensamientos son eventos mentales”). Incluye volver una y otra vez al ancla (respiración/cuerpo), reconocer distracciones y cultivar una respuesta no reactividad ante emociones y cogniciones activadas, reduciendo escalada rumiativa. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_senales_recaida",
+          "nombre": "Entrenamiento en detección temprana de señales de recaída (early warning signs)",
+          "texto": "Procedimiento de monitorización sistemática para identificar señales sutiles que preceden recaídas (cambios de sueño, fatiga, irritabilidad, autocrítica, retirada, tensión corporal). Se entrena discriminación fina (qué es señal vs. ruido) y se vincula cada señal con acciones concretas de respuesta mindful, para actuar antes de que el episodio se consolide. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_pensamientos_no_son_hechos",
+          "nombre": "Trabajo con pensamientos depresógenos: ‘pensamientos no son hechos’ (decentramiento)",
+          "texto": "Procedimiento cognitivo-mindfulness para debilitar la fusión con contenido negativo: se entrena observar pensamientos como eventos (palabras/imágenes), detectar tono absolutista, y notar su carácter transitorio sin entrar en debate ni supresión. El objetivo es cambiar el modo de procesamiento (de elaborativo a observacional), reduciendo el poder rumiativo de cogniciones típicas de recaída. (Segal, Williams & Teasdale, 2002; Teasdale, Segal & Williams, 1995).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_prevencion_evitacion",
+          "nombre": "Exploración de patrones de evitación y estrategias que mantienen (rumiación, retirada, control)",
+          "texto": "Procedimiento para mapear qué hace la persona cuando se siente mal (evitar, aislarse, rumiar, anestesiarse) y cómo eso alivia a corto plazo pero mantiene a largo plazo. Se entrenan alternativas basadas en aproximación mindful (permitir sentir, volver al cuerpo, acción pequeña con sentido) y se refuerza el aprendizaje por evidencia personal. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_inquiry",
+          "nombre": "Indagación (inquiry) posterior a práctica: elaboración guiada de la experiencia",
+          "texto": "Procedimiento de diálogo estructurado tras las prácticas para ayudar a poner palabras a la experiencia, detectar patrones (lucha, juicio, evitación, somnolencia), y extraer principios de aprendizaje (“qué ocurre cuando me engancho / cuando vuelvo al cuerpo”). Consolida metaconciencia y convierte la práctica en conocimiento funcional aplicable a recaídas. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_home_practice",
+          "nombre": "Tareas para casa y adherencia a la práctica (home practice protocol)",
+          "texto": "Procedimiento operativo que estructura práctica entre sesiones (audios, frecuencia, registro breve) y trabaja barreras típicas (perfeccionismo, ‘no me sale’, falta de tiempo). Se insiste en orientación a aprendizaje (notar, volver) más que a rendimiento, y se usa revisión sistemática para aumentar adherencia realista. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbct_parar_reconocer",
+          "nombre": "Parar y reconocer (\"dándome cuenta\")",
+          "texto": "Microintervención de interrumpir el piloto automático y nombrar internamente lo que está ocurriendo (por ejemplo, “esto es rumiación”, “esto es tristeza”, “esto es tensión”), para pasar de modo reactivo a modo observador y abrir margen de elección antes de que el bucle ánimo–pensamiento escale. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_etiquetado_breve",
+          "nombre": "Etiquetado breve de actividad mental (\"pensando\", \"planeando\", \"recordando\")",
+          "texto": "Microintervención de poner una etiqueta simple a la actividad mental detectada para favorecer descentramiento y debilitar fusión con el contenido, sin analizar ni discutir el pensamiento. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_pensamientos_no_hechos",
+          "nombre": "Descentramiento explícito (\"pensamientos no son hechos\")",
+          "texto": "Microintervención de recordatorio explícito de que los pensamientos son eventos mentales, no descripciones literales de la realidad, para reducir su autoridad inmediata y prevenir que activen rumiación elaborativa. (Segal, Williams & Teasdale, 2002; Teasdale, Segal & Williams, 1995).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_pensamientos_eventos",
+          "nombre": "Observar pensamientos como imágenes/palabras (reificación mínima)",
+          "texto": "Microintervención de notar el pensamiento como forma (imagen, frase, película mental) y no como mensaje a obedecer, facilitando que pase por la mente sin engancharse ni prolongarlo con elaboración secundaria. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_curiosidad_compasiva",
+          "nombre": "Curiosidad compasiva (tono no punitivo hacia la experiencia)",
+          "texto": "Microintervención de adoptar una actitud de curiosidad y amabilidad (“¿cómo se siente esto en el cuerpo?”) ante el malestar, disminuyendo autocrítica y facilitando permanencia dentro de la ventana de tolerancia. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_breathingspace_paso1",
+          "nombre": "Respiración de 3 minutos – Paso 1 (reconocer qué hay ahora)",
+          "texto": "Microintervención del primer paso del 3-Minute Breathing Space: detenerse y reconocer experiencia presente (pensamientos, emociones, sensaciones) para salir del automatismo y detectar el inicio de la espiral. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_evento_desagradable_registro",
+          "nombre": "Registro breve de evento desagradable (hechos vs interpretaciones)",
+          "texto": "Microintervención de anotar un evento desagradable separando hechos, pensamientos automáticos, emoción y reacción corporal, para identificar el punto exacto donde se activa la elaboración rumiativa y entrenar respuesta alternativa. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_detectar_rumiacion",
+          "nombre": "Detectar rumiación (señal de ‘modo hacer’ disfuncional)",
+          "texto": "Microintervención de reconocer la rumiación como proceso (dar vueltas, analizar sin salida) y tratarla como una señal de cambio de estrategia: volver a ancla corporal/respiratoria y reducir alimentación del bucle. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_observar_autocritica",
+          "nombre": "Autoobservación de autocrítica (tono/mandato) sin debate",
+          "texto": "Microintervención de detectar frases autocríticas y observar su tono/efecto corporal sin entrar en argumentación, tratándolas como eventos mentales que disparan amenaza y rumiación, para luego volver a ancla y elegir respuesta. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_firma_recaida",
+          "nombre": "Señales tempranas personalizadas (lista corta ‘mi firma de recaída’)",
+          "texto": "Microintervención de definir y revisar una lista breve de señales propias (sueño, irritabilidad, retirada, rumiación, tensión) para detectar activación precoz y activar el plan de respuesta antes de que el episodio se consolide. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_cierre_consciente",
+          "nombre": "Cierre consciente tras práctica (nota final de estado y cuidado)",
+          "texto": "Microintervención breve de comprobar el estado al terminar una práctica (activación, calma, tristeza) y realizar un gesto mínimo de cuidado/grounding si hace falta, para prevenir que la sesión o práctica deje reactividad residual. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

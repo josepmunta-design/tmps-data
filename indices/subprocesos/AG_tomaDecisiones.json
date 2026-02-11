@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-11T11:06:17.082Z",
-  "totalModelos": 57,
+  "updatedAt": "2026-02-11T11:20:27.118Z",
+  "totalModelos": 58,
   "modelos": [
     {
       "modelId": "act-hayes-strosahl-wilson-1999",
@@ -88,6 +88,36 @@
           "codigo": "m_bandura_si_entonces",
           "nombre": "Plan ‘si–entonces’ ante obstáculos",
           "texto": "Microintervención orientada a anticipar barreras previsibles mediante planes condicionales del tipo “si ocurre X, entonces haré Y”, automatizando respuestas funcionales ante dificultades. Esta preparación reduce abandono, protege la continuidad de la práctica y facilita la autorregulación bajo estrés. (Bandura, 1997).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mbct-segal-williams-teasdale-2002",
+      "modelLabel": "CBT 3ª ola – MBCT",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
+      "modelYear": 2002,
+      "items": [
+        {
+          "codigo": "p_mbct_plan_prevencion_recaida",
+          "nombre": "Plan de acción ante señales de recaída (relapse prevention/action plan)",
+          "texto": "Procedimiento de cierre y generalización donde se diseña un plan concreto: señales personales → respuestas inmediatas (3 minutos, práctica formal breve, ajuste de rutina) → apoyos → escalado si empeora (contacto profesional, red). Se busca que la respuesta sea automática por diseño, reduciendo el tiempo entre señal y acción eficaz. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mbct_microaccion_respuesta",
+          "nombre": "Elegir respuesta pequeña (micro-acción anti-espiral)",
+          "texto": "Microintervención de seleccionar una acción mínima y concreta tras notar señales tempranas (paseo breve, ducha consciente, llamar a alguien, ordenar una tarea simple) para prevenir retirada/apatía y consolidar ‘responder’ frente a ‘reaccionar’. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mbct_si_entonces_recaida",
+          "nombre": "Plan ‘si–entonces’ para recaída (implementación inmediata)",
+          "texto": "Microintervención de traducir señales tempranas en reglas conductuales concretas (p. ej., “si noto rumiación + cansancio, entonces 3 minutos + caminar 10 min + avisar a X”) para reducir ambivalencia y acelerar respuesta eficaz. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
