@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-11T10:34:56.569Z",
-  "totalModelos": 32,
+  "updatedAt": "2026-02-11T10:35:45.882Z",
+  "totalModelos": 33,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -95,6 +95,43 @@
           "codigo": "m_cft_dose_titration",
           "nombre": "Titulación de compasión (dosis tolerable)",
           "texto": "Introducir compasión en microdosis para no disparar vergüenza: frases mínimas, prácticas breves, más cuerpo y menos narrativa al inicio.",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Steven C. Hayes; Kirk D. Strosahl; Kelly G. Wilson",
+      "modelYear": 1999,
+      "items": [
+        {
+          "codigo": "p_act_formulacion_funcional",
+          "nombre": "Formulación funcional ACT (ciclo disparador → experiencia interna → control/evitación → alivio → coste)",
+          "texto": "Procedimiento de conceptualización del caso que traza, con ejemplos recientes y específicos, cómo un disparador activa eventos privados (ansiedad, vergüenza, autocrítica), qué hace la persona para controlar o evitar esa experiencia, qué alivio obtiene a corto plazo y qué coste paga a largo plazo en términos de vida más estrecha y desconexión de valores. La formulación se mantiene funcional y pragmática, centrada en consecuencias observables, y orienta la priorización de procesos a entrenar dentro del hexaflex. Referencia: Hayes, Strosahl & Wilson (1999, 2012).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_act_aceptacion",
+          "nombre": "Entrenamiento en aceptación/expansión experiencial",
+          "texto": "Procedimiento orientado a aumentar la disposición a experimentar emociones, sensaciones y recuerdos sin lucha ni evitación, utilizando contacto corporal, respiración y apertura atencional para reducir la resistencia secundaria y permitir que la conducta esté guiada por valores y no por la urgencia de aliviar malestar. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_act_accion_comprometida",
+          "nombre": "Plan de acción comprometida con exposición experiencial",
+          "texto": "Procedimiento de diseño e implementación de acciones pequeñas, repetidas y medibles al servicio de valores, integrando exposición tanto a contextos externos como a experiencia interna temida sin recurrir a control. Se revisan barreras, ajustes y consistencia semanalmente para consolidar agencia y coherencia vital. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_act_urge_surfing",
+          "nombre": "Surfear impulso de evitación",
+          "texto": "Observación deliberada de un impulso de evitar como una ola que sube y baja sin actuar automáticamente sobre él, fortaleciendo tolerancia al malestar y debilitando conducta gobernada por urgencia emocional. Referencia: Hayes, Strosahl & Wilson (2012).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
