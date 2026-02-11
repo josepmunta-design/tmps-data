@@ -287,39 +287,38 @@
   }
 
 ],
-
 "secuencias": [
 
   {
     "id": "seq_cbtp_estructura_basica_tratamiento",
     "nombre": "Estructura básica del tratamiento CBTp",
-    "descripcion": "Secuencia general descrita en manuales de CBTp que organiza el tratamiento en fases progresivas desde el establecimiento de alianza hasta prevención de recaídas.",
+    "descripcion": "Secuencia progresiva descrita en los manuales clásicos de CBTp que organiza el tratamiento desde la construcción de una alianza suficientemente segura hasta la prevención de recaídas, integrando evaluación colaborativa, formulación individualizada e intervenciones cognitivas y conductuales específicas. Aunque flexible y adaptada al ritmo del paciente, esta estructura establece una lógica clínica clara que evita confrontaciones prematuras y prioriza reducción de angustia, aumento de agencia y fortalecimiento del funcionamiento global.",
     "tipo": "estructura_progresiva",
     "pasos": [
       {
         "orden": 1,
         "accion": "Establecimiento de alianza y evaluación inicial",
-        "explicacion": "Construcción de vínculo, evaluación colaborativa de síntomas, historia clínica y formulación preliminar."
+        "explicacion": "Se construye una relación terapéutica basada en colaboración, respeto y validación, especialmente crucial ante posibles experiencias persecutorias o suspicacia. Se exploran síntomas actuales, historia de episodios previos, contexto vital, tratamiento farmacológico y nivel de insight, estableciendo una comprensión compartida sin cuestionar directamente la veracidad del delirio."
       },
       {
         "orden": 2,
         "accion": "Formulación compartida del caso",
-        "explicacion": "Desarrollo de modelo individualizado que explique aparición y mantenimiento de síntomas psicóticos."
+        "explicacion": "Se desarrolla un modelo individualizado que conecta vulnerabilidades previas, eventos estresantes, creencias nucleares y factores mantenedores, ayudando al paciente a comprender cómo se activan y mantienen los síntomas dentro de un marco explicativo no estigmatizante."
       },
       {
         "orden": 3,
         "accion": "Intervenciones cognitivas y conductuales dirigidas",
-        "explicacion": "Trabajo con delirios, voces, conductas de seguridad y esquemas nucleares mediante experimentos y reatribuciones."
+        "explicacion": "Se aplican técnicas específicas como análisis de evidencia, generación de hipótesis alternativas, experimentos conductuales y trabajo con conductas de seguridad, orientadas a reducir convicción delirante, modificar atribuciones y disminuir malestar asociado a voces o ideas de referencia."
       },
       {
         "orden": 4,
         "accion": "Consolidación y generalización",
-        "explicacion": "Fortalecimiento de habilidades de afrontamiento y aplicación en contextos reales."
+        "explicacion": "Se refuerzan habilidades de afrontamiento desarrolladas en sesión y se promueve su aplicación en contextos cotidianos, aumentando autonomía, funcionamiento social y capacidad de regulación emocional ante experiencias inusuales."
       },
       {
         "orden": 5,
         "accion": "Prevención de recaídas",
-        "explicacion": "Identificación de señales tempranas y planificación de respuesta ante descompensaciones."
+        "explicacion": "Se identifican señales tempranas de descompensación, cambios en sueño o aislamiento y aumento de suspicacia, elaborando planes concretos de respuesta temprana que incluyan apoyo social y coordinación con tratamiento farmacológico."
       }
     ]
   },
@@ -327,33 +326,33 @@
   {
     "id": "seq_cbtp_trabajo_delirio",
     "nombre": "Secuencia explícita de trabajo con un delirio",
-    "descripcion": "Microsecuencia descrita en CBTp para abordar una creencia delirante específica mediante empirismo guiado.",
+    "descripcion": "Microsecuencia estructurada descrita en CBTp para abordar una creencia delirante específica mediante empirismo colaborativo y gradual, evitando confrontación directa y favoreciendo flexibilización progresiva de la convicción.",
     "tipo": "microproceso_cognitivo",
     "pasos": [
       {
         "orden": 1,
         "accion": "Explorar contenido y convicción",
-        "explicacion": "Identificación precisa de la creencia y grado de convicción subjetiva."
+        "explicacion": "Se clarifica con precisión el contenido del delirio, su significado personal y el grado de convicción subjetiva en distintos contextos, introduciendo gradación en una creencia inicialmente vivida como absoluta."
       },
       {
         "orden": 2,
         "accion": "Explorar evidencia percibida",
-        "explicacion": "Análisis de datos que sustentan la creencia desde la perspectiva del paciente."
+        "explicacion": "Se analizan los datos que el paciente considera confirmatorios de su creencia, comprendiendo su lógica interna y evitando descalificación prematura, lo que preserva la alianza terapéutica."
       },
       {
         "orden": 3,
         "accion": "Generar hipótesis alternativas",
-        "explicacion": "Construcción conjunta de explicaciones plausibles alternativas."
+        "explicacion": "Se construyen conjuntamente explicaciones alternativas plausibles que no niegan la experiencia subjetiva, pero ofrecen marcos interpretativos menos amenazantes o persecutorios."
       },
       {
         "orden": 4,
         "accion": "Diseñar experimento conductual",
-        "explicacion": "Prueba empírica segura para evaluar predicciones asociadas al delirio."
+        "explicacion": "Se planifica una prueba conductual segura que permita contrastar predicciones derivadas del delirio con resultados observables, favoreciendo aprendizaje experiencial más potente que el debate lógico."
       },
       {
         "orden": 5,
         "accion": "Reevaluar convicción",
-        "explicacion": "Medición posterior del grado de creencia tras la experiencia."
+        "explicacion": "Tras la experiencia, se mide nuevamente el grado de convicción y se analiza cualquier cambio en interpretación o intensidad emocional, reforzando pequeñas flexibilizaciones."
       }
     ]
   },
@@ -361,38 +360,39 @@
   {
     "id": "seq_cbtp_trabajo_voces",
     "nombre": "Secuencia de intervención con voces",
-    "descripcion": "Estructura progresiva utilizada en CBTp para reducir malestar asociado a alucinaciones auditivas.",
+    "descripcion": "Estructura progresiva utilizada en CBTp para reducir malestar asociado a alucinaciones auditivas, centrada en modificar atribuciones sobre su origen, poder e intencionalidad, así como en fortalecer estrategias de afrontamiento.",
     "tipo": "proceso_especifico_sintoma",
     "pasos": [
       {
         "orden": 1,
         "accion": "Evaluar características y contexto de las voces",
-        "explicacion": "Frecuencia, contenido, desencadenantes y reacción emocional."
+        "explicacion": "Se exploran frecuencia, intensidad, contenido, tono emocional y situaciones desencadenantes, junto con la reacción emocional y conductual del paciente ante las voces."
       },
       {
         "orden": 2,
         "accion": "Normalizar y reatribuir",
-        "explicacion": "Presentar explicaciones alternativas sobre origen y reducir atribución externa persecutoria."
+        "explicacion": "Se introduce la idea de que experiencias auditivas pueden surgir bajo estrés o trauma y se exploran explicaciones alternativas sobre su origen interno, reduciendo atribuciones externas persecutorias."
       },
       {
         "orden": 3,
         "accion": "Trabajar creencias sobre poder y autoridad",
-        "explicacion": "Cuestionar omnipotencia y control atribuido a la voz."
+        "explicacion": "Se cuestionan creencias sobre la omnipotencia, control o capacidad real de daño atribuida a la voz, fortaleciendo una posición interna más autónoma frente a ella."
       },
       {
         "orden": 4,
         "accion": "Entrenar estrategias de afrontamiento",
-        "explicacion": "Aplicar distracción, diálogo estructurado o técnicas atencionales."
+        "explicacion": "Se enseñan técnicas como distracción atencional, diálogo estructurado con la voz o establecimiento de límites internos, orientadas a disminuir angustia y aumentar sensación de control."
       },
       {
         "orden": 5,
         "accion": "Generalizar estrategias",
-        "explicacion": "Aplicar habilidades fuera de sesión en situaciones reales."
+        "explicacion": "Se planifica la aplicación deliberada de estas habilidades en situaciones reales fuera de sesión, reforzando autonomía y reducción sostenida del malestar."
       }
     ]
   }
 
 ],
+
 
   "refs": [
     "Kingdon, D. G., & Turkington, D. (2005). Cognitive Therapy of Schizophrenia.",
