@@ -1,0 +1,402 @@
+{
+  "id": "terapia-cognitiva-para-psicosis-cbtp-1994",
+  "grupo": "Cognitivo",
+  "label": "Terapia cognitiva para psicosis (CBTp)",
+  "year": 1994,
+  "importance": 1,
+  "autores": "David Kingdon; Douglas Turkington; Nicholas Tarrier",
+  "universidad": "",
+  "ciudad": "Londres",
+  "pais": "Reino Unido",
+  "lat": 51.507351,
+  "lon": -0.127758,
+
+  "descripcion": "La Terapia Cognitiva para Psicosis (CBTp) es una adaptación de la terapia cognitiva clásica aplicada a personas con esquizofrenia y otros trastornos psicóticos, centrada en reducir el malestar asociado a delirios, alucinaciones y experiencias inusuales más que en eliminarlas directamente. El modelo parte de que las interpretaciones, creencias metacognitivas y estilos de afrontamiento influyen en la intensidad del sufrimiento y en la conducta asociada a los síntomas psicóticos. A través de evaluación colaborativa, normalización, experimentos conductuales y trabajo con voces y creencias delirantes, la CBTp busca aumentar la flexibilidad cognitiva, mejorar la regulación emocional y fortalecer la agencia, complementando el tratamiento farmacológico y los programas de rehabilitación.",
+
+  "influencias": [
+    "Terapia cognitiva (depresión)",
+    "Psicosis",
+    "Rehabilitación",
+    "Racionalismo representacional (Cognitivismo clásico)",
+    "Empirismo objetivista / Positivismo lógico"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La CBTp se sitúa en una epistemología cognitiva racionalista moderada, donde las experiencias psicóticas no se consideran necesariamente falsas en sí mismas, sino interpretadas de forma disfuncional o rígida. El conocimiento terapéutico se construye de manera colaborativa mediante empirismo guiado, evitando confrontaciones directas sobre la veracidad del delirio. El ser humano es concebido como capaz de evaluar hipótesis alternativas incluso en presencia de síntomas psicóticos. El cambio se produce cuando se flexibilizan interpretaciones y se modifican creencias centrales asociadas a amenaza, control o estigma. La relación terapéutica es condición de posibilidad del trabajo cognitivo, especialmente por la desconfianza frecuente en estos cuadros.",
+
+    "teoriaFormal": "El self se conceptualiza como organizado en torno a esquemas y creencias que también influyen en la formación y mantenimiento de delirios y alucinaciones. El sufrimiento no deriva exclusivamente de la experiencia perceptiva inusual, sino del significado atribuido a la misma (por ejemplo, amenaza, persecución o control externo). El cambio ocurre mediante reatribución, experimentación conductual y desarrollo de interpretaciones alternativas menos catastróficas o estigmatizantes.",
+
+    "teoriaClinica": "El caso se conceptualiza identificando creencias nucleares asociadas a la experiencia psicótica, factores precipitantes y mantenedores (evitación, aislamiento, hipervigilancia, consumo de sustancias) y nivel de insight disponible. Se prioriza la reducción de angustia, la mejora del afrontamiento y el aumento de funcionalidad. El progreso se evalúa por disminución del malestar, mayor flexibilidad interpretativa y mejor adaptación conductual, más que por desaparición total de síntomas."
+  },
+
+  "mjps": ["RF","RE","N","I","AG","R"],
+
+"procedimientos": [
+
+  {
+    "nombre": "Evaluación cognitiva colaborativa de síntomas psicóticos",
+    "codigo": "p_cbtp_evaluacion_colaborativa",
+    "procesos": ["N_metacognicion", "R_mentalizacion"],
+    "texto": "Procedimiento inicial que consiste en explorar de manera colaborativa el contenido, convicción, evidencia percibida, antecedentes y consecuencias conductuales de delirios y alucinaciones, evitando confrontaciones directas sobre su veracidad y promoviendo una actitud de curiosidad empírica compartida. Este análisis funcional permite comprender el significado personal del síntoma y establecer una formulación individualizada. Referencia: Kingdon & Turkington (2005); Turkington et al. (2006)."
+  },
+
+  {
+    "nombre": "Formulación individualizada del caso en psicosis",
+    "codigo": "p_cbtp_formulacion",
+    "procesos": ["N_marcosCognitivos", "I_autoimagen"],
+    "texto": "Procedimiento estructurado para integrar vulnerabilidades previas, acontecimientos vitales estresantes, esquemas nucleares y factores mantenedores que contribuyen a la aparición y persistencia de síntomas psicóticos, construyendo un modelo comprensible que reduzca estigma y aumente sensación de control personal. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Normalización de experiencias psicóticas",
+    "codigo": "p_cbtp_normalizacion",
+    "procesos": ["N_reformulacion", "RE_modulacion"],
+    "texto": "Procedimiento psicoeducativo orientado a presentar alucinaciones y creencias inusuales como fenómenos que pueden aparecer en población general bajo estrés, fatiga o trauma, reduciendo vergüenza, aislamiento y catastrofización sin validar el contenido delirante. Referencia: Kingdon & Turkington (2005); Turkington et al. (2006)."
+  },
+
+  {
+    "nombre": "Trabajo cognitivo con creencias delirantes",
+    "codigo": "p_cbtp_delirios",
+    "procesos": ["N_reformulacion", "N_construccionAlternativa"],
+    "texto": "Procedimiento dirigido a examinar evidencia a favor y en contra de creencias delirantes, explorar explicaciones alternativas y graduar el nivel de convicción mediante empirismo guiado, evitando confrontaciones directas y favoreciendo flexibilidad interpretativa progresiva. Referencia: Kingdon & Turkington (2005); Tarrier (2005)."
+  },
+
+  {
+    "nombre": "Experimentos conductuales en psicosis",
+    "codigo": "p_cbtp_experimentos",
+    "procesos": ["AG_compromisoConductual", "N_metacognicion"],
+    "texto": "Procedimiento que diseña pruebas conductuales seguras para evaluar predicciones asociadas a delirios o miedos derivados de voces, permitiendo generar evidencia experiencial correctiva y debilitar interpretaciones rígidas mediante aprendizaje directo. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Entrenamiento en afrontamiento de voces",
+    "codigo": "p_cbtp_afrontamiento_voces",
+    "procesos": ["RE_modulacion", "RI_dialogoFuncional"],
+    "texto": "Procedimiento orientado a reducir malestar asociado a alucinaciones auditivas mediante técnicas de distracción, diálogo estructurado con la voz, modificación de atribuciones sobre su poder y entrenamiento en control atencional, sin centrarse exclusivamente en su eliminación. Referencia: Turkington et al. (2006)."
+  },
+
+  {
+    "nombre": "Reatribución del significado de las alucinaciones",
+    "codigo": "p_cbtp_reatribucion_voces",
+    "procesos": ["N_reformulacion", "N_marcosCognitivos"],
+    "texto": "Procedimiento destinado a explorar explicaciones alternativas sobre el origen de las voces (por ejemplo, procesos internos de pensamiento) reduciendo interpretaciones persecutorias o omnipotentes que incrementan angustia y sumisión conductual. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Trabajo con creencias sobre el poder y autoridad de las voces",
+    "codigo": "p_cbtp_poder_voces",
+    "procesos": ["I_posicionRelacional", "N_construccionAlternativa"],
+    "texto": "Procedimiento que examina la relación subjetiva del paciente con las voces, cuestionando creencias sobre su omnipotencia, intencionalidad o autoridad moral, y promoviendo una posición interna más autónoma frente a ellas. Referencia: Turkington et al. (2006)."
+  },
+
+  {
+    "nombre": "Reducción de conductas de seguridad y evitación",
+    "codigo": "p_cbtp_evitacion",
+    "procesos": ["RE_prevEvitacion", "AG_necesidadesPropias"],
+    "texto": "Procedimiento que identifica conductas evitativas o ritualizadas mantenedoras del delirio (aislamiento, hipervigilancia, comprobaciones) y promueve reducción gradual mediante exposición conductual y fortalecimiento de agencia personal. Referencia: Tarrier (2005)."
+  },
+
+  {
+    "nombre": "Trabajo con autoestima y esquemas nucleares",
+    "codigo": "p_cbtp_autoestima",
+    "procesos": ["I_autoimagen", "N_reformulacion"],
+    "texto": "Procedimiento orientado a modificar creencias nucleares negativas sobre el self (defectuosidad, vulnerabilidad, inferioridad) que aumentan susceptibilidad a interpretaciones persecutorias o de amenaza. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Manejo de ansiedad y activación fisiológica asociada a síntomas",
+    "codigo": "p_cbtp_regulacion_ansiedad",
+    "procesos": ["RF_resp", "RE_modulacion"],
+    "texto": "Procedimiento que incorpora técnicas de respiración, relajación y regulación emocional para reducir activación fisiológica que intensifica interpretación catastrófica de experiencias inusuales. Referencia: Turkington et al. (2006)."
+  },
+
+  {
+    "nombre": "Prevención de recaídas en psicosis",
+    "codigo": "p_cbtp_prevencion_recaidas",
+    "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento estructurado para identificar señales tempranas de descompensación, planificar estrategias de afrontamiento y fortalecer adherencia al tratamiento farmacológico y psicosocial, reduciendo riesgo de recaída. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Coordinación con tratamiento farmacológico y rehabilitación",
+    "codigo": "p_cbtp_coordinacion",
+    "procesos": ["R_coregulacion", "AG_autoriaResponsabilidad"],
+    "texto": "Procedimiento que integra la intervención cognitiva con tratamiento farmacológico y programas de rehabilitación psicosocial, promoviendo adherencia y comprensión del papel complementario de cada modalidad terapéutica. Referencia: Turkington et al. (2006)."
+  }
+
+],
+
+
+"micros": [
+
+  {
+    "nombre": "Escala de convicción del delirio",
+    "codigo": "m_cbtp_escala_conviccion",
+    "procesos": ["N_metacognicion"],
+    "texto": "Solicitar al paciente que valore numéricamente su grado de convicción en una creencia delirante en distintos momentos del día para introducir gradación y variabilidad en una creencia inicialmente vivida como absoluta. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Exploración de evidencia a favor y en contra",
+    "codigo": "m_cbtp_evidencia",
+    "procesos": ["N_reformulacion", "N_metacognicion"],
+    "texto": "Guiar al paciente a identificar datos que apoyan y contradicen su creencia delirante, promoviendo análisis empírico colaborativo sin confrontación directa sobre la veracidad del contenido. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Búsqueda de explicaciones alternativas",
+    "codigo": "m_cbtp_alternativas",
+    "procesos": ["N_construccionAlternativa"],
+    "texto": "Introducir hipótesis alternativas plausibles que expliquen la experiencia inusual, ayudando a debilitar la rigidez interpretativa sin invalidar la vivencia subjetiva. Referencia: Turkington et al. (2006)."
+  },
+
+  {
+    "nombre": "Registro de voces y contexto",
+    "codigo": "m_cbtp_registro_voces",
+    "procesos": ["N_metacognicion", "RE_rotulacion"],
+    "texto": "Registrar frecuencia, intensidad, contenido y contexto situacional de las voces para identificar patrones desencadenantes y modular su impacto emocional. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Cuestionamiento del poder de la voz",
+    "codigo": "m_cbtp_cuestionar_poder",
+    "procesos": ["N_reformulacion", "I_posicionRelacional"],
+    "texto": "Explorar con el paciente si la voz realmente puede ejecutar amenazas o controlar eventos externos, reduciendo creencias sobre su omnipotencia y aumentando sensación de autonomía. Referencia: Turkington et al. (2006)."
+  },
+
+  {
+    "nombre": "Experimento conductual breve",
+    "codigo": "m_cbtp_experimento_breve",
+    "procesos": ["AG_compromisoConductual", "N_metacognicion"],
+    "texto": "Diseñar una pequeña prueba conductual para comprobar predicciones asociadas a la creencia delirante (por ejemplo, salir sin realizar una conducta de seguridad) y evaluar el resultado real frente al esperado. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Reatribución interna de la voz",
+    "codigo": "m_cbtp_reatribucion",
+    "procesos": ["N_reformulacion"],
+    "texto": "Explorar la posibilidad de que la voz represente pensamientos internalizados o recuerdos activados bajo estrés, reduciendo atribuciones externas persecutorias. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Entrenamiento en distracción focalizada",
+    "codigo": "m_cbtp_distraccion",
+    "procesos": ["RE_modulacion"],
+    "texto": "Enseñar técnicas de distracción atencional estructurada para reducir la intensidad percibida de las voces cuando generan angustia elevada. Referencia: Turkington et al. (2006)."
+  },
+
+  {
+    "nombre": "Respiración reguladora ante activación persecutoria",
+    "codigo": "m_cbtp_respiracion",
+    "procesos": ["RF_resp", "RE_modulacion"],
+    "texto": "Aplicar respiración lenta y controlada cuando la activación fisiológica incrementa la convicción delirante o el miedo asociado a la experiencia psicótica. Referencia: Turkington et al. (2006)."
+  },
+
+  {
+    "nombre": "Normalización comparativa",
+    "codigo": "m_cbtp_normalizacion",
+    "procesos": ["N_reformulacion"],
+    "texto": "Presentar datos sobre prevalencia de experiencias perceptivas inusuales en población general para reducir estigmatización y catastrofización. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Identificación de señales tempranas de recaída",
+    "codigo": "m_cbtp_senales_recaida",
+    "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+    "texto": "Ayudar al paciente a reconocer cambios tempranos en sueño, aislamiento o aumento de suspicacia que preceden a descompensaciones, promoviendo intervención precoz. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Reestructuración de creencias sobre estigma",
+    "codigo": "m_cbtp_estigma",
+    "procesos": ["I_autoimagen", "N_reformulacion"],
+    "texto": "Explorar y modificar creencias nucleares negativas asociadas al diagnóstico de psicosis que impactan autoestima y retraimiento social. Referencia: Kingdon & Turkington (2005)."
+  },
+
+  {
+    "nombre": "Reducción gradual de conducta de seguridad",
+    "codigo": "m_cbtp_reduccion_seguridad",
+    "procesos": ["AG_compromisoConductual", "RE_prevEvitacion"],
+    "texto": "Planificar eliminación progresiva de conductas que mantienen la creencia delirante (por ejemplo, evitar lugares públicos) para generar aprendizaje correctivo. Referencia: Tarrier (2005)."
+  },
+
+  {
+    "nombre": "Chequeo de impacto emocional del síntoma",
+    "codigo": "m_cbtp_impacto_emocional",
+    "procesos": ["RE_rotulacion", "N_metacognicion"],
+    "texto": "Explorar qué emoción específica genera el delirio o la voz (miedo, vergüenza, ira) para intervenir sobre el malestar más que sobre el contenido literal del síntoma. Referencia: Turkington et al. (2006)."
+  }
+
+],
+
+
+"ideasPrincipales": [
+
+  {
+    "id": "idea_cbtp_1",
+    "titulo": "El malestar psicótico depende del significado atribuido a la experiencia",
+    "desarrollo": "CBTp sostiene que las alucinaciones y creencias delirantes no generan sufrimiento exclusivamente por su presencia, sino por la interpretación que la persona realiza sobre ellas (por ejemplo, amenaza, persecución o control externo). La intervención se centra en modificar el significado y la convicción asociada, no necesariamente en eliminar el fenómeno perceptivo. (Kingdon & Turkington, 2005)."
+  },
+
+  {
+    "id": "idea_cbtp_2",
+    "titulo": "La confrontación directa del delirio suele ser contraproducente",
+    "desarrollo": "El modelo enfatiza el empirismo colaborativo en lugar de la confrontación sobre la veracidad del delirio. Cuestionar frontalmente la creencia puede aumentar desconfianza y resistencia; por ello, se promueve exploración gradual, formulación compartida y generación de hipótesis alternativas. (Kingdon & Turkington, 2005; Turkington et al., 2006)."
+  },
+
+  {
+    "id": "idea_cbtp_3",
+    "titulo": "La alianza terapéutica es condición de posibilidad en psicosis",
+    "desarrollo": "Debido a la frecuente presencia de suspicacia y experiencias persecutorias, la alianza en CBTp no es solo facilitadora sino estructural. Sin un vínculo de confianza suficiente, el trabajo cognitivo no puede sostenerse ni generalizarse. (Kingdon & Turkington, 2005)."
+  },
+
+  {
+    "id": "idea_cbtp_4",
+    "titulo": "Las experiencias psicóticas existen en un continuo con la normalidad",
+    "desarrollo": "CBTp adopta un modelo dimensional en el que alucinaciones y creencias inusuales se entienden como extremos de procesos cognitivos presentes en la población general bajo determinadas condiciones de estrés o vulnerabilidad, reduciendo estigmatización y facilitando formulación comprensible. (Kingdon & Turkington, 2005)."
+  },
+
+  {
+    "id": "idea_cbtp_5",
+    "titulo": "La flexibilidad cognitiva es más relevante que la desaparición del síntoma",
+    "desarrollo": "El objetivo terapéutico no es necesariamente eliminar delirios o voces, sino disminuir su convicción, poder atribuido y angustia asociada, aumentando la capacidad del paciente para considerar explicaciones alternativas y actuar de forma funcional. (Turkington et al., 2006)."
+  },
+
+  {
+    "id": "idea_cbtp_6",
+    "titulo": "Las creencias nucleares del self influyen en el contenido psicótico",
+    "desarrollo": "CBTp reconoce que esquemas centrales de vulnerabilidad, inferioridad o amenaza pueden moldear el contenido de delirios y alucinaciones, por lo que el trabajo sobre autoestima y autoconcepto es parte integral del tratamiento. (Kingdon & Turkington, 2005)."
+  },
+
+  {
+    "id": "idea_cbtp_7",
+    "titulo": "El aprendizaje experiencial modifica convicciones delirantes",
+    "desarrollo": "Los experimentos conductuales permiten generar evidencia directa que contradiga predicciones asociadas al delirio, favoreciendo debilitamiento progresivo de la convicción a través de experiencia y no solo de argumentación lógica. (Kingdon & Turkington, 2005)."
+  },
+
+  {
+    "id": "idea_cbtp_8",
+    "titulo": "La regulación emocional modula la intensidad del síntoma",
+    "desarrollo": "La activación fisiológica y la ansiedad aumentan la probabilidad de interpretaciones persecutorias o catastróficas; por ello, el entrenamiento en regulación emocional y reducción de activación es parte esencial del abordaje. (Turkington et al., 2006)."
+  },
+
+  {
+    "id": "idea_cbtp_9",
+    "titulo": "CBTp es complementaria, no sustitutiva, del tratamiento farmacológico",
+    "desarrollo": "El modelo se concibe como intervención psicológica complementaria a antipsicóticos y rehabilitación psicosocial, mejorando afrontamiento, adherencia y funcionamiento global, sin negar la base neurobiológica de la psicosis. (Kingdon & Turkington, 2005)."
+  }
+
+],
+
+"secuencias": [
+
+  {
+    "id": "seq_cbtp_estructura_basica_tratamiento",
+    "nombre": "Estructura básica del tratamiento CBTp",
+    "descripcion": "Secuencia general descrita en manuales de CBTp que organiza el tratamiento en fases progresivas desde el establecimiento de alianza hasta prevención de recaídas.",
+    "tipo": "estructura_progresiva",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Establecimiento de alianza y evaluación inicial",
+        "explicacion": "Construcción de vínculo, evaluación colaborativa de síntomas, historia clínica y formulación preliminar."
+      },
+      {
+        "orden": 2,
+        "accion": "Formulación compartida del caso",
+        "explicacion": "Desarrollo de modelo individualizado que explique aparición y mantenimiento de síntomas psicóticos."
+      },
+      {
+        "orden": 3,
+        "accion": "Intervenciones cognitivas y conductuales dirigidas",
+        "explicacion": "Trabajo con delirios, voces, conductas de seguridad y esquemas nucleares mediante experimentos y reatribuciones."
+      },
+      {
+        "orden": 4,
+        "accion": "Consolidación y generalización",
+        "explicacion": "Fortalecimiento de habilidades de afrontamiento y aplicación en contextos reales."
+      },
+      {
+        "orden": 5,
+        "accion": "Prevención de recaídas",
+        "explicacion": "Identificación de señales tempranas y planificación de respuesta ante descompensaciones."
+      }
+    ]
+  },
+
+  {
+    "id": "seq_cbtp_trabajo_delirio",
+    "nombre": "Secuencia explícita de trabajo con un delirio",
+    "descripcion": "Microsecuencia descrita en CBTp para abordar una creencia delirante específica mediante empirismo guiado.",
+    "tipo": "microproceso_cognitivo",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Explorar contenido y convicción",
+        "explicacion": "Identificación precisa de la creencia y grado de convicción subjetiva."
+      },
+      {
+        "orden": 2,
+        "accion": "Explorar evidencia percibida",
+        "explicacion": "Análisis de datos que sustentan la creencia desde la perspectiva del paciente."
+      },
+      {
+        "orden": 3,
+        "accion": "Generar hipótesis alternativas",
+        "explicacion": "Construcción conjunta de explicaciones plausibles alternativas."
+      },
+      {
+        "orden": 4,
+        "accion": "Diseñar experimento conductual",
+        "explicacion": "Prueba empírica segura para evaluar predicciones asociadas al delirio."
+      },
+      {
+        "orden": 5,
+        "accion": "Reevaluar convicción",
+        "explicacion": "Medición posterior del grado de creencia tras la experiencia."
+      }
+    ]
+  },
+
+  {
+    "id": "seq_cbtp_trabajo_voces",
+    "nombre": "Secuencia de intervención con voces",
+    "descripcion": "Estructura progresiva utilizada en CBTp para reducir malestar asociado a alucinaciones auditivas.",
+    "tipo": "proceso_especifico_sintoma",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Evaluar características y contexto de las voces",
+        "explicacion": "Frecuencia, contenido, desencadenantes y reacción emocional."
+      },
+      {
+        "orden": 2,
+        "accion": "Normalizar y reatribuir",
+        "explicacion": "Presentar explicaciones alternativas sobre origen y reducir atribución externa persecutoria."
+      },
+      {
+        "orden": 3,
+        "accion": "Trabajar creencias sobre poder y autoridad",
+        "explicacion": "Cuestionar omnipotencia y control atribuido a la voz."
+      },
+      {
+        "orden": 4,
+        "accion": "Entrenar estrategias de afrontamiento",
+        "explicacion": "Aplicar distracción, diálogo estructurado o técnicas atencionales."
+      },
+      {
+        "orden": 5,
+        "accion": "Generalizar estrategias",
+        "explicacion": "Aplicar habilidades fuera de sesión en situaciones reales."
+      }
+    ]
+  }
+
+],
+
+  "refs": [
+    "Kingdon, D. G., & Turkington, D. (2005). Cognitive Therapy of Schizophrenia.",
+    "Turkington, D., Kingdon, D., & Weiden, P. (2006). Cognitive Behavior Therapy for Schizophrenia.",
+    "Tarrier, N. (2005). Cognitive Behavior Therapy for Schizophrenia."
+  ]
+}
