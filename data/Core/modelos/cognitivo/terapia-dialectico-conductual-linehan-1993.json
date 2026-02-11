@@ -380,121 +380,157 @@
 
   ],
 
-  "secuencias": [
+"secuencias": [
 
+  {
+    "id": "seq_dbt_jerarquia_tratamiento",
+    "nombre": "Jerarquía estructural del tratamiento DBT",
+    "descripcion": "Secuencia organizadora central del modelo DBT que establece un orden obligatorio y no negociable de prioridades clínicas tanto dentro de cada sesión como a lo largo de todo el tratamiento. Esta jerarquía protege la vida, mantiene la viabilidad del proceso terapéutico y orienta el trabajo hacia la construcción progresiva de una vida que merezca ser vivida.",
+    "tipo": "jerarquia",
+    "pasos": [
+      { 
+        "orden": 1, 
+        "accion": "Reducir conductas que amenazan la vida", 
+        "explicacion": "Cualquier conducta suicida, autolesiva o de riesgo vital tiene prioridad absoluta. El terapeuta interrumpe otros contenidos para abordar directamente pensamientos suicidas, intentos recientes o planes activos, ya que sin seguridad básica no es posible sostener ningún otro proceso terapéutico."
+      },
+      { 
+        "orden": 2, 
+        "accion": "Reducir conductas que interfieren con la terapia", 
+        "explicacion": "Se abordan conductas que ponen en peligro la continuidad del tratamiento, como inasistencias, mentiras relevantes, sabotaje del vínculo, hostilidad persistente o no uso del coaching telefónico, porque la terapia debe mantenerse operativa para que el cambio sea posible."
+      },
+      { 
+        "orden": 3, 
+        "accion": "Reducir conductas que deterioran calidad de vida", 
+        "explicacion": "Incluye consumo de sustancias, relaciones abusivas, conductas impulsivas, problemas laborales o legales crónicos. Estas áreas mantienen el sufrimiento y deben trabajarse una vez estabilizada la seguridad y la alianza."
+      },
+      { 
+        "orden": 4, 
+        "accion": "Adquirir y generalizar habilidades", 
+        "explicacion": "El entrenamiento sistemático en mindfulness, regulación emocional, tolerancia al malestar y efectividad interpersonal permite construir repertorios alternativos que sustituyan progresivamente las conductas problema."
+      }
+    ]
+  },
+
+  {
+    "id": "seq_dbt_sesion_individual",
+    "nombre": "Estructura estándar de sesión individual DBT",
+    "descripcion": "Flujo operativo estructurado que organiza cada sesión individual DBT, asegurando coherencia con la jerarquía del tratamiento y garantizando que la intervención sea conductual, estratégica y orientada a objetivos concretos.",
+    "tipo": "flujo",
+    "pasos": [
+      { 
+        "orden": 1, 
+        "accion": "Revisión del Diary Card", 
+        "explicacion": "Se examinan registros diarios de emociones, impulsos, conductas y uso de habilidades para identificar picos de activación y seleccionar objetivos clínicos prioritarios."
+      },
+      { 
+        "orden": 2, 
+        "accion": "Aplicación de jerarquía de prioridades", 
+        "explicacion": "El terapeuta decide qué conducta abordar según la jerarquía estructural, evitando dispersión temática o conversaciones que eludan lo clínicamente relevante."
+      },
+      { 
+        "orden": 3, 
+        "accion": "Análisis en cadena si hubo conducta problema", 
+        "explicacion": "Se reconstruye paso a paso la secuencia completa que llevó a la conducta problemática, identificando vulnerabilidades, desencadenantes y microdecisiones intermedias."
+      },
+      { 
+        "orden": 4, 
+        "accion": "Análisis de soluciones", 
+        "explicacion": "Se construye una cadena alternativa en la que se introducen habilidades específicas en puntos críticos donde la conducta podría haberse modificado."
+      },
+      { 
+        "orden": 5, 
+        "accion": "Entrenamiento o ensayo de habilidad", 
+        "explicacion": "Se practica activamente la habilidad seleccionada mediante role-play, modelado o ensayo conductual para aumentar probabilidad de uso real."
+      },
+      { 
+        "orden": 6, 
+        "accion": "Asignación de tareas y compromiso verbal", 
+        "explicacion": "Se acuerdan acciones específicas entre sesiones, con compromiso explícito, reforzando responsabilidad y generalización."
+      }
+    ]
+  },
+
+{
+  "id": "seq_dbt_chain_analysis",
+  "nombre": "Secuencia completa del análisis en cadena",
+  "descripcion": "Procedimiento estructurado y exhaustivo que descompone una conducta problema en todos sus eslabones funcionales con el objetivo de identificar con precisión dónde intervenir. El análisis en cadena no busca comprender narrativamente el evento, sino mapear de forma conductual y temporal la secuencia completa de vulnerabilidades, eventos, cogniciones, emociones, impulsos y consecuencias que llevaron a la conducta, permitiendo introducir habilidades específicas en puntos críticos futuros.",
+  "tipo": "protocolo",
+  "pasos": [
     {
-      "id": "seq_dbt_jerarquia_tratamiento",
-      "nombre": "Jerarquía estructural del tratamiento DBT",
-      "descripcion": "Secuencia organizadora que determina el orden obligatorio de prioridades clínicas en cada sesión y a lo largo del tratamiento.",
-      "tipo": "jerarquia",
-      "pasos": [
-        { "orden": 1, "accion": "Reducir conductas que amenazan la vida", "explicacion": "Suicidio, autolesión, conductas de alto riesgo tienen prioridad absoluta." },
-        { "orden": 2, "accion": "Reducir conductas que interfieren con la terapia", "explicacion": "Inasistencias, sabotaje, ocultación, hostilidad, no uso de coaching." },
-        { "orden": 3, "accion": "Reducir conductas que deterioran calidad de vida", "explicacion": "Consumo, caos relacional, problemas laborales o legales." },
-        { "orden": 4, "accion": "Adquirir y generalizar habilidades", "explicacion": "Entrenamiento sistemático en módulos DBT." }
-      ]
+      "orden": 1,
+      "accion": "Identificar conducta problema específica",
+      "explicacion": "Se define la conducta en términos observables, concretos y verificables (qué ocurrió exactamente, cuándo, dónde y cómo), evitando etiquetas globales como “me descontrolé” o interpretaciones morales. La precisión conductual es esencial porque toda la cadena se organiza alrededor de este punto final claramente delimitado."
     },
-
     {
-      "id": "seq_dbt_sesion_individual",
-      "nombre": "Estructura estándar de sesión individual DBT",
-      "descripcion": "Flujo operativo típico de una sesión individual dentro del modelo DBT.",
-      "tipo": "flujo",
-      "pasos": [
-        { "orden": 1, "accion": "Revisión del Diary Card", "explicacion": "Identificar picos emocionales y conductas diana." },
-        { "orden": 2, "accion": "Aplicación de jerarquía de prioridades", "explicacion": "Seleccionar el foco principal de la sesión." },
-        { "orden": 3, "accion": "Análisis en cadena si hubo conducta problema", "explicacion": "Reconstrucción detallada de la secuencia conductual." },
-        { "orden": 4, "accion": "Análisis de soluciones", "explicacion": "Diseño de cadena alternativa con habilidades específicas." },
-        { "orden": 5, "accion": "Entrenamiento o ensayo de habilidad", "explicacion": "Role-play o práctica guiada." },
-        { "orden": 6, "accion": "Asignación de tareas y compromiso verbal", "explicacion": "Definir acción concreta entre sesiones." }
-      ]
+      "orden": 2,
+      "accion": "Detectar vulnerabilidades previas",
+      "explicacion": "Se identifican factores que aumentaron la susceptibilidad ese día o en ese periodo: falta de sueño, consumo de sustancias, conflictos recientes, activación emocional basal elevada, enfermedad física, recuerdos activados o acumulación de estrés. Estas vulnerabilidades no causan la conducta por sí mismas, pero reducen el umbral de regulación."
     },
-
     {
-      "id": "seq_dbt_chain_analysis",
-      "nombre": "Secuencia completa del análisis en cadena",
-      "descripcion": "Descomposición estructurada de una conducta problema para identificar puntos de intervención.",
-      "tipo": "protocolo",
-      "pasos": [
-        { "orden": 1, "accion": "Identificar conducta problema específica", "explicacion": "Definirla de forma observable y concreta." },
-        { "orden": 2, "accion": "Detectar vulnerabilidades previas", "explicacion": "Sueño, consumo, conflicto previo, activación basal." },
-        { "orden": 3, "accion": "Identificar evento desencadenante", "explicacion": "Situación inmediata que inicia la cadena." },
-        { "orden": 4, "accion": "Registrar pensamientos e interpretaciones", "explicacion": "Significados asociados al evento." },
-        { "orden": 5, "accion": "Registrar emociones y sensaciones corporales", "explicacion": "Activación emocional progresiva." },
-        { "orden": 6, "accion": "Identificar impulsos y microconductas", "explicacion": "Pequeños pasos previos a la conducta final." },
-        { "orden": 7, "accion": "Describir conducta problema", "explicacion": "Ejecución final del patrón." },
-        { "orden": 8, "accion": "Analizar consecuencias inmediatas y tardías", "explicacion": "Refuerzos que mantienen el patrón." }
-      ]
+      "orden": 3,
+      "accion": "Identificar evento desencadenante",
+      "explicacion": "Se delimita con precisión la situación específica que inició la escalada conductual, distinguiéndola de interpretaciones subjetivas. El desencadenante suele ser un evento externo concreto o una interacción interpersonal puntual que activó la cadena."
     },
-
     {
-      "id": "seq_dbt_skills_training",
-      "nombre": "Secuencia del entrenamiento en habilidades DBT",
-      "descripcion": "Estructura didáctica estándar del grupo de habilidades.",
-      "tipo": "protocolo",
-      "pasos": [
-        { "orden": 1, "accion": "Revisión de tarea previa", "explicacion": "Evaluar aplicación en contexto real." },
-        { "orden": 2, "accion": "Introducción de nueva habilidad", "explicacion": "Explicación conceptual breve." },
-        { "orden": 3, "accion": "Modelado por parte del terapeuta", "explicacion": "Demostración concreta." },
-        { "orden": 4, "accion": "Práctica guiada en sesión", "explicacion": "Ensayo estructurado." },
-        { "orden": 5, "accion": "Asignación de tarea", "explicacion": "Aplicación específica entre sesiones." }
-      ]
+      "orden": 4,
+      "accion": "Registrar pensamientos e interpretaciones",
+      "explicacion": "Se exploran las evaluaciones automáticas, juicios, suposiciones o creencias activadas inmediatamente tras el desencadenante, identificando cómo el significado atribuido intensificó la activación emocional y orientó la conducta posterior."
     },
-
     {
-      "id": "seq_dbt_crisis",
-      "nombre": "Secuencia operativa de manejo de crisis",
-      "descripcion": "Flujo conductual recomendado ante activación extrema o impulso autolesivo.",
-      "tipo": "flujo",
-      "pasos": [
-        { "orden": 1, "accion": "Aplicar STOP", "explicacion": "Detener impulsividad inmediata." },
-        { "orden": 2, "accion": "Aplicar TIPP u otra regulación fisiológica", "explicacion": "Reducir activación corporal." },
-        { "orden": 3, "accion": "Activar apoyo o coaching", "explicacion": "Buscar regulación co-compartida." },
-        { "orden": 4, "accion": "Aplicar habilidad alternativa específica", "explicacion": "Elegir conducta segura." }
-      ]
+      "orden": 5,
+      "accion": "Registrar emociones y sensaciones corporales",
+      "explicacion": "Se detallan las emociones primarias y secundarias que emergieron (ira, vergüenza, miedo, vacío, desesperación), junto con cambios fisiológicos específicos como tensión muscular, taquicardia o sensación de calor, mostrando cómo la activación corporal fue aumentando progresivamente."
     },
-
     {
-      "id": "seq_dbt_pe",
-      "nombre": "Secuencia DBT-PE para TEPT",
-      "descripcion": "Integración estructurada de exposición prolongada dentro de DBT.",
-      "tipo": "protocolo",
-      "pasos": [
-        { "orden": 1, "accion": "Verificar estabilidad conductual previa", "explicacion": "Ausencia reciente de conductas suicidas." },
-        { "orden": 2, "accion": "Construir jerarquía de exposición", "explicacion": "Ordenar recuerdos o situaciones evitadas." },
-        { "orden": 3, "accion": "Realizar exposición imaginada en sesión", "explicacion": "Revividencia prolongada estructurada." },
-        { "orden": 4, "accion": "Asignar escucha grabada entre sesiones", "explicacion": "Consolidar habituación." },
-        { "orden": 5, "accion": "Exposición en vivo gradual", "explicacion": "Reducir evitación situacional." }
-      ]
+      "orden": 6,
+      "accion": "Identificar impulsos y microconductas",
+      "explicacion": "Se analizan pequeños comportamientos intermedios —como aislarse, enviar un mensaje impulsivo, rumiar o elevar el tono de voz— que fueron acercando gradualmente a la conducta final, permitiendo detectar múltiples puntos potenciales de intervención temprana."
     },
-
     {
-      "id": "seq_dbt_sud_abstinencia_dialectica",
-      "nombre": "Secuencia de abstinencia dialéctica (DBT-SUD)",
-      "descripcion": "Flujo estratégico para sostener abstinencia y manejar recaídas.",
-      "tipo": "flujo",
-      "pasos": [
-        { "orden": 1, "accion": "Compromiso explícito con abstinencia total", "explicacion": "Declaración clara de meta." },
-        { "orden": 2, "accion": "Análisis funcional del craving", "explicacion": "Detectar antecedentes y señales." },
-        { "orden": 3, "accion": "Aplicar habilidades ante impulso", "explicacion": "Urge surfing y regulación." },
-        { "orden": 4, "accion": "Si ocurre recaída, activar plan inmediato de reparación", "explicacion": "Evitar abandono total." }
-      ]
+      "orden": 7,
+      "accion": "Describir conducta problema",
+      "explicacion": "Se examina con detalle la ejecución de la conducta objetivo, incluyendo duración, intensidad y contexto inmediato, sin juicio moral, entendiendo que fue el resultado funcional de la cadena previa."
     },
-
     {
-      "id": "seq_dbt_ed",
-      "nombre": "Secuencia de intervención en episodio alimentario (DBT-ED)",
-      "descripcion": "Estructura operativa para interrumpir ciclo de atracón o purga.",
-      "tipo": "flujo",
-      "pasos": [
-        { "orden": 1, "accion": "Detectar vulnerabilidad y emoción previa", "explicacion": "Mapa emocional inicial." },
-        { "orden": 2, "accion": "Introducir demora conductual", "explicacion": "Retrasar impulsividad." },
-        { "orden": 3, "accion": "Aplicar tolerancia al malestar", "explicacion": "Regular activación." },
-        { "orden": 4, "accion": "Registrar episodio y analizar cadena", "explicacion": "Aprendizaje posterior." }
-      ]
+      "orden": 8,
+      "accion": "Analizar consecuencias inmediatas y tardías",
+      "explicacion": "Se identifican reforzadores positivos y negativos a corto plazo (alivio, descarga emocional, atención, escape) y consecuencias a largo plazo (culpa, deterioro relacional, problemas médicos o legales), mostrando cómo el mantenimiento del patrón se basa en reforzamiento inmediato."
     }
+  ]
+},
 
-  ],
+{
+  "id": "seq_dbt_crisis",
+  "nombre": "Secuencia operativa de manejo de crisis",
+  "descripcion": "Flujo conductual estructurado diseñado para interrumpir de forma inmediata escaladas emocionales intensas y prevenir conductas autolesivas o altamente impulsivas. Esta secuencia prioriza regulación fisiológica rápida antes de cualquier análisis cognitivo, ya que en estados de activación extrema la capacidad reflexiva está significativamente reducida.",
+  "tipo": "flujo",
+  "pasos": [
+    {
+      "orden": 1,
+      "accion": "Aplicar STOP",
+      "explicacion": "Detener físicamente la acción en curso, congelar el movimiento impulsivo, tomar distancia mental de la situación y observar sin reaccionar. Este paso introduce una microinterrupción conductual que crea espacio entre impulso y acción."
+    },
+    {
+      "orden": 2,
+      "accion": "Aplicar TIPP u otra regulación fisiológica",
+      "explicacion": "Utilizar técnicas de regulación fisiológica rápida como estimulación con frío intenso, ejercicio breve de alta intensidad, respiración diafragmática lenta o relajación muscular para reducir activación simpática y restaurar capacidad de control cortical."
+    },
+    {
+      "orden": 3,
+      "accion": "Activar apoyo o coaching",
+      "explicacion": "Contactar con terapeuta o persona de apoyo entrenada para introducir regulación interpersonal, validación externa y guía directa en el uso de habilidades, evitando aislamiento durante la crisis."
+    },
+    {
+      "orden": 4,
+      "accion": "Aplicar habilidad alternativa específica",
+      "explicacion": "Seleccionar deliberadamente una conducta segura y funcional que sustituya el impulso autolesivo o impulsivo, consolidando la experiencia de que es posible atravesar la crisis sin recurrir al patrón habitual."
+    }
+  ]
+}
+
+
+],
+
 
 
 
