@@ -1,0 +1,270 @@
+{
+  "id": "process-based-therapy-hayes-hofmann-2020",
+  "grupo": "Cognitivo",
+  "label": "Terapia Basada en Procesos (PBT)",
+  "year": 2020,
+  "importance": 1,
+  "autores": "Steven C. Hayes; Stefan G. Hofmann",
+  "universidad": "University of Nevada, Reno / Boston University",
+  "ciudad": "Reno, Nevada",
+  "pais": "EE. UU.",
+  "lat": 39.529633,
+  "lon": -119.813803,
+
+  "descripcion": "La Terapia Basada en Procesos (Process-Based Therapy, PBT) es un metamarco contemporáneo que propone reorganizar la intervención psicológica en torno a procesos biopsicosociales diana, en lugar de protocolos manualizados por trastorno. Desarrollada principalmente por Steven C. Hayes y Stefan G. Hofmann, PBT integra la ciencia contextual conductual, la tradición cognitivo-conductual y la investigación transdiagnóstica para identificar mecanismos de cambio que operan a distintos niveles (cognitivo, emocional, conductual, relacional y biológico). El modelo sostiene que los problemas psicológicos emergen de redes dinámicas de procesos disfuncionales, y que el tratamiento debe seleccionarse funcionalmente según qué procesos mantienen el sufrimiento en cada caso concreto. PBT no es un conjunto cerrado de técnicas, sino un sistema de toma de decisiones clínicas basado en evidencia, medición idiográfica y análisis funcional dinámico.",
+
+  "influencias": [
+    "Contextualismo funcional (Hayes)",
+    "CBT 3ª ola – ACT",
+    "DBT",
+    "MBCT",
+    "CFT",
+    "Ciencia contextual conductual",
+    "Lambert - Factores comunes"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se concibe como un sistema dinámico de procesos interrelacionados que emergen en contextos históricos, biológicos y sociales específicos. El conocimiento terapéutico no es la aplicación rígida de protocolos, sino la identificación funcional de procesos modificables que explican el sufrimiento en cada individuo. El ser humano es entendido como un organismo adaptativo inmerso en redes contextuales complejas, capaz de reorganización cuando se modifican las contingencias y los marcos de significado. El cambio no se impone desde fuera, sino que emerge cuando se interviene estratégicamente sobre procesos clave con base empírica. La relación terapéutica es un contexto facilitador que potencia expectativas, motivación y aprendizaje, integrándose como proceso activo dentro del sistema de cambio.",
+    "teoriaFormal": "El self se entiende como una organización dinámica de procesos cognitivos, emocionales, conductuales y relacionales en interacción constante con el contexto. El sufrimiento psicológico se mantiene por configuraciones rígidas o desadaptativas de procesos como evitación experiencial, fusión cognitiva, desregulación emocional, déficits de mentalización, patrones interpersonales rígidos o bucles de retroalimentación conductual. El cambio psicológico ocurre cuando se alteran estos procesos mediante intervenciones dirigidas y se genera una reorganización más flexible del sistema global.",
+    "teoriaClinica": "El caso se conceptualiza mediante un análisis funcional procesual que identifica qué procesos específicos mantienen el problema y cómo interactúan entre sí. No se parte de una categoría diagnóstica como guía principal, sino de mapas dinámicos personalizados basados en medición idiográfica y monitorización continua. Se priorizan procesos modificables con mayor impacto sistémico y se evalúa el progreso observando cambios en dichos procesos, más que en la reducción sintomática aislada."
+  },
+
+  "mjps": ["RF", "RE", "AP", "RI", "N", "I", "AG", "R"],
+
+  "procedimientos": [
+
+  {
+    "nombre": "Análisis funcional procesual dinámico",
+    "codigo": "p_pbt_analisis_funcional_dinamico",
+    "texto": "Procedimiento metaclínico central de PBT orientado a identificar los procesos biopsicosociales específicos que mantienen el sufrimiento en un individuo concreto, más allá de la etiqueta diagnóstica. Implica mapear bucles dinámicos entre cognición, emoción, conducta, fisiología y contexto, evaluando su función adaptativa o desadaptativa en tiempo real y detectando nodos modificables de alto impacto sistémico. La formulación se actualiza continuamente a partir de datos idiográficos. Referencia: Hofmann & Hayes (2019); Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Selección estratégica de procesos diana",
+    "codigo": "p_pbt_seleccion_procesos_diana",
+    "texto": "Procedimiento de toma de decisiones clínicas mediante el cual el terapeuta prioriza qué procesos intervenir primero según su centralidad en la red funcional, su evidencia empírica y su potencial efecto cascada. Sustituye la lógica de protocolo por diagnóstico por una lógica procesual personalizada basada en mecanismos de cambio. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Monitorización idiográfica continua",
+    "codigo": "p_pbt_monitorizacion_idiografica",
+    "texto": "Procedimiento sistemático de medición personalizada y repetida de los procesos diana seleccionados, utilizando instrumentos breves y contextualizados que permiten observar dinámicas no lineales de cambio. Los datos obtenidos guían ajustes estratégicos en tiempo real y convierten la terapia en un proceso experimental basado en evidencia individual. Referencia: Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Reformulación procesual compartida",
+    "codigo": "p_pbt_reformulacion_procesual",
+    "procesos": ["N_reformulacion", "ALI_colaboracion"],
+    "texto": "Procedimiento colaborativo mediante el cual terapeuta y paciente construyen un mapa funcional comprensible de los procesos que mantienen el problema, sustituyendo explicaciones centradas en déficit o diagnóstico por una formulación dinámica basada en mecanismos modificables. Aumenta agencia y reduce autoestigmatización. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Intervención modular basada en evidencia",
+    "codigo": "p_pbt_intervencion_modular",
+    "procesos": ["RE_modulacion", "RI_mindfulnessSelf", "AG_compromisoConductual"],
+    "texto": "Procedimiento que integra técnicas provenientes de distintos modelos basados en evidencia (ACT, DBT, MBCT, CFT, CBT tradicional) según su capacidad demostrada para modificar el proceso diana identificado. Las técnicas se aplican como módulos funcionales estratégicamente seleccionados, manteniendo coherencia contextual y evitando eclecticismo desorganizado. Referencia: Hofmann & Hayes (2019); Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Desmantelamiento de bucles de evitación experiencial",
+    "codigo": "p_pbt_desmantelamiento_evitacion",
+    "procesos": ["RE_prevEvitacion", "AP_evocacion", "AG_compromisoConductual"],
+    "texto": "Procedimiento dirigido a identificar y debilitar patrones de evitación que mantienen el malestar a largo plazo, facilitando contacto emocional regulado y acción coherente con valores. Integra aceptación, exposición experiencial y compromiso conductual para romper ciclos de mantenimiento transdiagnósticos. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Entrenamiento en flexibilidad psicológica",
+    "codigo": "p_pbt_flexibilidad_psicologica",
+    "procesos": ["RI_mindfulnessSelf", "N_construccionAlternativa", "AG_motivacionInterna"],
+    "texto": "Procedimiento orientado a fortalecer la capacidad de mantener contacto con experiencias internas difíciles mientras se actúa de forma coherente con valores personales. Considerado un proceso transdiagnóstico central, su fortalecimiento produce reorganización sistémica amplia en múltiples dominios funcionales. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Optimización de procesos de regulación emocional",
+    "codigo": "p_pbt_optimizacion_regulacion_emocional",
+    "procesos": ["RE_rotulacion", "RE_modulacion", "RE_aceptacion"],
+    "texto": "Procedimiento dirigido a restaurar regulación emocional flexible identificando déficits específicos en reconocimiento, aceptación o modulación afectiva y aplicando intervenciones focalizadas basadas en evidencia para cada componente. Referencia: Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Reconfiguración de redes interpersonales disfuncionales",
+    "codigo": "p_pbt_reconfiguracion_relacional",
+    "procesos": ["R_estilosApego", "R_repertorioInterpersonal"],
+    "texto": "Procedimiento orientado a modificar procesos relacionales que mantienen el malestar, incluyendo patrones de apego, comunicación emocional y repertorios interpersonales rígidos, promoviendo aprendizaje correctivo en contextos reales y coherentes con valores personales. Referencia: Hofmann & Hayes (2021)."
+  }
+
+],
+
+"micros": [
+
+  {
+    "nombre": "Mapeo de bucle proceso–consecuencia",
+    "codigo": "m_pbt_mapeo_bucle",
+    "procesos": ["N_metacognicion"],
+    "texto": "Identificación explícita en sesión de la secuencia estímulo–respuesta–consecuencia que mantiene el problema, dibujando el bucle en tiempo real para hacer visible la dinámica autorreforzante del proceso (por ejemplo, preocupación → alivio momentáneo → mayor vulnerabilidad posterior). Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Micro-análisis de contingencia inmediata",
+    "codigo": "m_pbt_contingencia_inmediata",
+    "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+    "texto": "Exploración detallada de qué ocurrió justo antes y después de una conducta problemática específica, aislando reforzadores positivos o negativos que la mantienen, con foco en aprendizaje situacional más que en contenido cognitivo. Referencia: Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Discriminación emoción primaria vs secundaria",
+    "codigo": "m_pbt_emocion_primaria_secundaria",
+    "procesos": ["RE_rotulacion"],
+    "texto": "Diferenciación breve entre emoción primaria adaptativa y reacción secundaria defensiva (por ejemplo, tristeza cubierta por irritación), permitiendo intervenir sobre el proceso relevante en lugar de sobre la emoción superficial. Referencia: Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Interrupción de sobre-generalización",
+    "codigo": "m_pbt_sobregeneralizacion",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Señalamiento inmediato de inferencias globales derivadas de eventos aislados, delimitando contexto, frecuencia y condiciones específicas para reducir expansión innecesaria del proceso disfuncional. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Reducción de evitación situacional graduada",
+    "codigo": "m_pbt_evitacion_situacional",
+    "procesos": ["RE_prevEvitacion"],
+    "texto": "Diseño de acercamientos progresivos a contextos evitados con medición breve de activación antes y después, focalizando aprendizaje correctivo en el proceso de evitación más que en el miedo en sí mismo. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Entrenamiento en cambio de foco atencional",
+    "codigo": "m_pbt_cambio_foco",
+    "procesos": ["RE_modulacion"],
+    "texto": "Práctica estructurada de alternancia atencional entre estímulos amenazantes y neutros/positivos para debilitar sesgos atencionales rígidos asociados a ansiedad o depresión. Referencia: Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Identificación de regla conductual implícita",
+    "codigo": "m_pbt_regla_implicita",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Extracción de la regla no verbalizada que guía una conducta repetitiva (por ejemplo, “si no controlo, algo malo ocurrirá”), haciéndola explícita para poder testarla empíricamente en contexto real. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Test conductual de hipótesis personal",
+    "codigo": "m_pbt_test_hipotesis",
+    "procesos": ["AG_compromisoConductual", "N_metacognicion"],
+    "texto": "Diseño de un pequeño experimento conductual dirigido a comprobar una predicción específica vinculada al proceso disfuncional, registrando resultado y discrepancias con la expectativa inicial. Referencia: Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Ajuste de nivel de activación fisiológica",
+    "codigo": "m_pbt_ajuste_activacion",
+    "procesos": ["RF_resp", "RE_modulacion"],
+    "texto": "Uso puntual de respiración lenta o activación conductual breve para modificar estado autonómico cuando la activación fisiológica interfiere con el procesamiento cognitivo o emocional en curso. Referencia: Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Revisión de coste-beneficio del proceso",
+    "codigo": "m_pbt_coste_beneficio",
+    "procesos": ["N_reformulacion"],
+    "texto": "Análisis breve de ventajas inmediatas y costes a medio plazo de mantener un proceso específico (como evitar, rumiar o controlar), favoreciendo toma de decisiones basada en funcionalidad real. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Entrenamiento en comunicación directa",
+    "codigo": "m_pbt_comunicacion_directa",
+    "procesos": ["R_comunicacionEmocional", "R_repertorioInterpersonal"],
+    "texto": "Práctica estructurada de expresar necesidades o emociones de forma clara y específica para modificar patrones interpersonales mantenedores del problema. Referencia: Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Identificación de efecto dominó procesual",
+    "codigo": "m_pbt_efecto_domino",
+    "procesos": ["N_metacognicion"],
+    "texto": "Señalamiento de cómo un pequeño cambio en un proceso (por ejemplo, reducir evitación) impacta en otros nodos del sistema, aumentando motivación al mostrar interdependencia dinámica. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Micro-reforzamiento de conducta adaptativa",
+    "codigo": "m_pbt_reforzamiento",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Reconocimiento explícito y contingente de conductas alineadas con el proceso diana para fortalecer aprendizaje y consolidar cambio conductual emergente. Referencia: Hofmann & Hayes (2021)."
+  },
+
+  {
+    "nombre": "Desacoplamiento de identidad y proceso",
+    "codigo": "m_pbt_desacoplar_identidad",
+    "procesos": ["I_autoimagen", "N_reformulacion"],
+    "texto": "Separación explícita entre el proceso disfuncional (“estoy atrapado en rumiación”) y la identidad global (“soy una persona defectuosa”), reduciendo fusión identitaria con el síntoma sin recurrir a técnicas clásicas de defusión. Referencia: Hofmann & Hayes (2019)."
+  },
+
+  {
+    "nombre": "Revisión contextual de metas rígidas",
+    "codigo": "m_pbt_metas_rigidas",
+    "procesos": ["I_valoresAspiracionales"],
+    "texto": "Exploración de metas absolutizadas que generan estrés crónico, ajustándolas a contexto actual y recursos disponibles para restaurar viabilidad conductual. Referencia: Hofmann & Hayes (2021)."
+  }
+
+],
+
+  "ideasPrincipales": [
+
+  {
+    "id": "idea_pbt_1",
+    "titulo": "El foco terapéutico deben ser los procesos, no los diagnósticos",
+    "desarrollo": "PBT sostiene que los trastornos categoriales no constituyen unidades causales homogéneas, sino agrupaciones descriptivas de síntomas heterogéneos. La intervención eficaz requiere identificar mecanismos modificables que mantienen el sufrimiento en cada individuo concreto, desplazando el eje desde la categoría diagnóstica hacia procesos dinámicos transdiagnósticos empíricamente estudiados. (Hofmann & Hayes, 2019)."
+  },
+
+  {
+    "id": "idea_pbt_2",
+    "titulo": "Los problemas psicológicos emergen de redes dinámicas interdependientes",
+    "desarrollo": "El malestar psicológico no se explica por un único déficit aislado, sino por la interacción recursiva entre procesos cognitivos, emocionales, conductuales, fisiológicos y contextuales. PBT adopta una perspectiva de sistemas dinámicos donde pequeños cambios en nodos centrales pueden generar efectos en cascada sobre el conjunto de la red funcional. (Hofmann & Hayes, 2019; 2021)."
+  },
+
+  {
+    "id": "idea_pbt_3",
+    "titulo": "La formulación clínica es un proceso continuo basado en datos",
+    "desarrollo": "La conceptualización del caso no es un evento inicial estático, sino una hipótesis dinámica que se revisa constantemente mediante medición idiográfica y monitorización repetida. PBT integra la recogida sistemática de datos individuales como parte constitutiva del proceso terapéutico, reduciendo decisiones basadas en intuición no contrastada. (Hofmann & Hayes, 2021)."
+  },
+
+  {
+    "id": "idea_pbt_4",
+    "titulo": "Las técnicas son instrumentos al servicio de procesos específicos",
+    "desarrollo": "PBT no propone un repertorio técnico propio cerrado, sino un sistema de selección estratégica de intervenciones basadas en evidencia dirigidas a modificar procesos diana concretos. Las técnicas pierden centralidad ontológica y pasan a ser herramientas intercambiables dentro de un marco funcional coherente. (Hofmann & Hayes, 2019)."
+  },
+
+  {
+    "id": "idea_pbt_5",
+    "titulo": "El cambio clínico requiere precisión mecanicista",
+    "desarrollo": "Para que la psicoterapia avance como ciencia acumulativa, es necesario identificar con precisión qué mecanismos producen cambio y bajo qué condiciones contextuales. PBT promueve una aproximación mecanicista que conecta intervención, proceso y resultado, evitando explicaciones circulares basadas únicamente en mejoría sintomática global. (Hofmann & Hayes, 2019)."
+  },
+
+  {
+    "id": "idea_pbt_6",
+    "titulo": "La personalización supera al protocolo estandarizado",
+    "desarrollo": "Aunque los protocolos manualizados han demostrado eficacia promedio, PBT defiende que la variabilidad individual exige intervenciones personalizadas basadas en el perfil procesual específico del paciente. La personalización no es eclecticismo, sino aplicación sistemática de principios funcionales individualizados. (Hofmann & Hayes, 2021)."
+  },
+
+  {
+    "id": "idea_pbt_7",
+    "titulo": "Los procesos operan en múltiples niveles de análisis",
+    "desarrollo": "PBT integra niveles biológicos, cognitivos, emocionales, conductuales y sociales dentro de un marco unificado, reconociendo que los mecanismos de cambio pueden situarse en distintos planos simultáneamente. La coherencia teórica se mantiene mediante el análisis funcional contextual que conecta estos niveles sin reducir uno al otro. (Hofmann & Hayes, 2019)."
+  },
+
+  {
+    "id": "idea_pbt_8",
+    "titulo": "La alianza terapéutica es también un proceso modificable",
+    "desarrollo": "La relación terapéutica no es solo condición de fondo, sino un proceso activo susceptible de análisis funcional y optimización. Variables como expectativas, colaboración y reparación de rupturas pueden conceptualizarse como mecanismos que influyen directamente en el cambio clínico. (Hofmann & Hayes, 2019; Lambert, 2013)."
+  },
+
+  {
+    "id": "idea_pbt_9",
+    "titulo": "La psicoterapia debe orientarse a la acumulación científica transdiagnóstica",
+    "desarrollo": "PBT propone reorganizar la investigación y la práctica clínica en torno a procesos replicables que atraviesan categorías diagnósticas, facilitando acumulación de conocimiento y mayor precisión predictiva. Este enfoque busca superar la fragmentación histórica de escuelas mediante un lenguaje común centrado en mecanismos de cambio. (Hofmann & Hayes, 2019)."
+  }
+
+],
+
+
+  "refs": [
+    "Hofmann, S. G., & Hayes, S. C. (2019). Process-Based CBT.",
+    "Hofmann, S. G., & Hayes, S. C. (2021). Learning Process-Based Therapy."
+  ]
+}
