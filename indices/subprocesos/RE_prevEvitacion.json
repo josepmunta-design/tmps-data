@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-12T15:02:28.917Z",
-  "totalModelos": 36,
+  "updatedAt": "2026-02-12T15:11:50.042Z",
+  "totalModelos": 37,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -571,6 +571,78 @@
           "codigo": "m_sit_reactivacion_secuencia",
           "nombre": "Reactivación consciente de la secuencia autoinstruccional",
           "texto": "Microintervención destinada a reconocer señales tempranas de desorganización y reactivar deliberadamente la secuencia completa de autoinstrucciones entrenadas, previniendo recaídas en diálogo interno impulsivo. (Meichenbaum, 1977).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "unified-protocol-up-barlow-2011",
+      "modelLabel": "Protocolo Unificado (UP)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Shannon Sauer-Zavala; y cols.",
+      "modelYear": 2011,
+      "items": [
+        {
+          "codigo": "p_up_formulacion_funcional_ciclo_emocional",
+          "nombre": "Formulación funcional unificada del ciclo emocional (ABC transdiagnóstico)",
+          "texto": "Procedimiento de conceptualización compartida donde terapeuta y paciente construyen un mapa simple y operativo del ciclo que mantiene el problema (antecedentes/disparadores → emoción/sensación → interpretación/atención → conductas impulsadas por emoción y evitación → consecuencias a corto y largo plazo), para identificar puntos de palanca (especialmente evitación y EDBs) y crear una lógica de intervención que sirva para ansiedad, depresión y cuadros mixtos. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_reduccion_evitacion_conductas_seguridad",
+          "nombre": "Análisis y modificación de evitación emocional y conductas de seguridad",
+          "texto": "Procedimiento para identificar evitaciones evidentes y sutiles (escape, control, comprobación, distracción compulsiva, rumiación como evitación, consumo, aislamiento) y sustituirlas por respuestas alternativas que permitan permanecer con la emoción el tiempo suficiente para aprender, retirando conductas de seguridad que mantienen la amenaza percibida y bloquean la corrección experiencial. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_jerarquia_exposicion_emocional_experimentos",
+          "nombre": "Jerarquía de exposición emocional y diseño de experimentos",
+          "texto": "Procedimiento para construir una jerarquía personalizada de situaciones internas y externas que evocan emociones temidas, definiendo objetivos de aprendizaje (qué emoción tolerar, qué evitación retirar, qué conducta elegida practicar) y diseñando tareas como experimentos repetidos, con graduación precisa, criterios de permanencia y revisión posterior para maximizar corrección experiencial. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_exposicion_situacional_experiencial",
+          "nombre": "Exposición situacional y experiencial con prevención de evitación",
+          "texto": "Procedimiento nuclear en UP donde el paciente se acerca de forma repetida a contextos evitados (sociales, interpersonales, desempeño, incertidumbre, tristeza/apatía) permaneciendo lo suficiente para permitir habituación parcial y, sobre todo, aprendizaje inhibitorio y tolerancia, eliminando conductas de seguridad y practicando respuestas elegidas, para que la emoción deje de dictar la conducta en la vida real. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_prevencion_recaidas_mantenimiento",
+          "nombre": "Prevención de recaídas y plan de mantenimiento basado en procesos",
+          "texto": "Procedimiento final para consolidar habilidades y anticipar vulnerabilidades: identificar señales tempranas (retorno de evitación, EDBs, rigidez cognitiva), definir un plan de respuesta por procesos (qué práctica activar primero y cómo), programar exposiciones de mantenimiento, y construir una narrativa prospectiva realista de continuidad del cambio, reduciendo la probabilidad de volver al ciclo emoción–evitación. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_up_identificar_edb",
+          "nombre": "Identificación de conducta impulsada por emoción (EDB)",
+          "texto": "Señalamiento concreto de la conducta que aparece bajo emoción (evitar, comprobar, aislarse, discutir, rumiar) y su función de alivio inmediato, haciendo explícito el refuerzo a corto plazo que mantiene el problema a largo plazo. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_up_permitir_emocion_cronometro",
+          "nombre": "Permitir emoción durante tiempo cronometrado",
+          "texto": "Permanencia intencional con la emoción durante un intervalo concreto sin realizar conductas de seguridad, facilitando aprendizaje de tolerancia y demostrando que la activación es transitoria y manejable. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_up_evitacion_sutil",
+          "nombre": "Detección de evitación sutil",
+          "texto": "Identificación de microconductas de escape menos evidentes (bromear para cambiar tema, mirar el móvil, tranquilizarse mentalmente) que interfieren con el aprendizaje durante exposición o conversación emocional. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_up_plan_24h",
+          "nombre": "Plan de acción de 24 horas ante señal temprana",
+          "texto": "Definición concreta de una acción pequeña y ejecutable dentro de las próximas 24 horas cuando aparecen señales de recaída (retorno de evitación, rumiación, aislamiento), reforzando mantenimiento del cambio y agencia sostenida. Referencia: Barlow et al. (2018).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-12T15:02:28.917Z",
-  "totalModelos": 32,
+  "updatedAt": "2026-02-12T15:11:50.042Z",
+  "totalModelos": 33,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -113,6 +113,29 @@
           "codigo": "p_dbt_ed_cadena_alimentaria",
           "nombre": "Análisis en cadena de episodios alimentarios",
           "texto": "Procedimiento específico dentro de DBT-ED que reconstruye con precisión los antecedentes emocionales, cognitivos y situacionales de un episodio de atracón o purga, identificando vulnerabilidades biológicas, disparadores relacionales y reforzadores posteriores. Permite insertar habilidades de regulación y tolerancia al malestar antes del punto de no retorno conductual, debilitando el ciclo impulsivo. Referencia: Safer et al. (2009).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "unified-protocol-up-barlow-2011",
+      "modelLabel": "Protocolo Unificado (UP)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Shannon Sauer-Zavala; y cols.",
+      "modelYear": 2011,
+      "items": [
+        {
+          "codigo": "p_up_jerarquia_exposicion_emocional_experimentos",
+          "nombre": "Jerarquía de exposición emocional y diseño de experimentos",
+          "texto": "Procedimiento para construir una jerarquía personalizada de situaciones internas y externas que evocan emociones temidas, definiendo objetivos de aprendizaje (qué emoción tolerar, qué evitación retirar, qué conducta elegida practicar) y diseñando tareas como experimentos repetidos, con graduación precisa, criterios de permanencia y revisión posterior para maximizar corrección experiencial. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_exposicion_situacional_experiencial",
+          "nombre": "Exposición situacional y experiencial con prevención de evitación",
+          "texto": "Procedimiento nuclear en UP donde el paciente se acerca de forma repetida a contextos evitados (sociales, interpersonales, desempeño, incertidumbre, tristeza/apatía) permaneciendo lo suficiente para permitir habituación parcial y, sobre todo, aprendizaje inhibitorio y tolerancia, eliminando conductas de seguridad y practicando respuestas elegidas, para que la emoción deje de dictar la conducta en la vida real. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
           "sub": "AP_evocacion",
           "tipo": "procedimiento"
         }

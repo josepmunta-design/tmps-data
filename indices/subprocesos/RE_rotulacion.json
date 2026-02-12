@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_rotulacion",
-  "updatedAt": "2026-02-12T15:02:28.917Z",
-  "totalModelos": 59,
+  "updatedAt": "2026-02-12T15:11:50.042Z",
+  "totalModelos": 60,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -295,6 +295,50 @@
           "codigo": "m_sit_detectar_impulso",
           "nombre": "Detectar autoverbalización impulsiva inicial",
           "texto": "Microintervención dirigida a identificar la primera autoverbalización automática que precede a la pérdida de control (por ejemplo, “da igual”, “no pienso”, “no puedo parar”), ayudando al paciente a reconocer el punto exacto donde el diálogo interno deja de cumplir una función reguladora y pasa a facilitar la impulsividad o el bloqueo. (Meichenbaum & Goodman, 1971; Meichenbaum, 1977).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "unified-protocol-up-barlow-2011",
+      "modelLabel": "Protocolo Unificado (UP)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Shannon Sauer-Zavala; y cols.",
+      "modelYear": 2011,
+      "items": [
+        {
+          "codigo": "p_up_evaluacion_transdiagnostica_linea_base",
+          "nombre": "Evaluación transdiagnóstica y línea base de procesos emocionales",
+          "texto": "Procedimiento inicial en UP para establecer una línea base funcional de cómo opera el sistema emocional del paciente (disparadores, respuestas fisiológicas, interpretaciones, conductas impulsadas por emoción y evitaciones), usando entrevista estructurada, autorregistros y medidas de seguimiento para orientar el tratamiento a procesos y no a etiquetas, y para disponer de indicadores repetidos de cambio a lo largo de los módulos. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_monitorizacion_sistematica_autorregistros",
+          "nombre": "Monitorización sistemática de emociones, disparadores, evitación y EDBs",
+          "texto": "Procedimiento continuo de autorregistro y revisión en sesión para identificar patrones (qué emociones aparecen, cómo se nombran, qué se hace para reducirlas, qué conductas impulsadas por emoción se activan y qué consecuencias generan), convirtiendo la terapia en un proceso de aprendizaje basado en datos del propio caso y permitiendo ajustes finos del plan (módulos, jerarquías de exposición, objetivos semanales). Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_conciencia_emocional_mindfulness",
+          "nombre": "Entrenamiento en conciencia emocional y observación mindful",
+          "texto": "Procedimiento para aumentar la conciencia momento a momento de la emoción (sensaciones, impulsos, etiquetas, tendencia a actuar) mediante atención plena aplicada a la experiencia interna, con práctica deliberada de observar sin actuar de inmediato, lo que reduce reactividad automática, mejora discriminación emocional y crea espacio psicológico para responder con elección. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_up_registro_ciclo_vivo",
+          "nombre": "Registro puntual del ciclo emocional en vivo",
+          "texto": "Microintervención consistente en detenerse en sesión o tras un evento reciente para desglosar en tiempo real disparador, emoción primaria, sensaciones corporales, interpretación automática, conducta impulsada por emoción y consecuencia, con el fin de hacer visible el ciclo mantenedor y aumentar conciencia funcional sin análisis excesivo. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_up_rotulacion_emocion_primaria",
+          "nombre": "Rotulación específica de emoción primaria",
+          "texto": "Identificación precisa de la emoción predominante (miedo, tristeza, culpa, vergüenza, ira) diferenciándola de estados globales como “ansiedad” o “malestar”, lo que reduce confusión afectiva y facilita elegir una respuesta adaptativa coherente con la emoción real en lugar de reaccionar automáticamente. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
           "sub": "RE_rotulacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-12T15:02:28.917Z",
-  "totalModelos": 96,
+  "updatedAt": "2026-02-12T15:11:50.042Z",
+  "totalModelos": 97,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -1034,6 +1034,64 @@
           "codigo": "m_sit_comprobacion_progreso",
           "nombre": "Autoverbalización de comprobación de progreso",
           "texto": "Microintervención breve que entrena al paciente a revisar mentalmente si está siguiendo el plan (“voy bien”, “necesito ajustar”), manteniendo control consciente sobre la ejecución sin caer en rumiación. (Meichenbaum, 1977).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "unified-protocol-up-barlow-2011",
+      "modelLabel": "Protocolo Unificado (UP)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Shannon Sauer-Zavala; y cols.",
+      "modelYear": 2011,
+      "items": [
+        {
+          "codigo": "p_up_evaluacion_transdiagnostica_linea_base",
+          "nombre": "Evaluación transdiagnóstica y línea base de procesos emocionales",
+          "texto": "Procedimiento inicial en UP para establecer una línea base funcional de cómo opera el sistema emocional del paciente (disparadores, respuestas fisiológicas, interpretaciones, conductas impulsadas por emoción y evitaciones), usando entrevista estructurada, autorregistros y medidas de seguimiento para orientar el tratamiento a procesos y no a etiquetas, y para disponer de indicadores repetidos de cambio a lo largo de los módulos. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_formulacion_funcional_ciclo_emocional",
+          "nombre": "Formulación funcional unificada del ciclo emocional (ABC transdiagnóstico)",
+          "texto": "Procedimiento de conceptualización compartida donde terapeuta y paciente construyen un mapa simple y operativo del ciclo que mantiene el problema (antecedentes/disparadores → emoción/sensación → interpretación/atención → conductas impulsadas por emoción y evitación → consecuencias a corto y largo plazo), para identificar puntos de palanca (especialmente evitación y EDBs) y crear una lógica de intervención que sirva para ansiedad, depresión y cuadros mixtos. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_monitorizacion_sistematica_autorregistros",
+          "nombre": "Monitorización sistemática de emociones, disparadores, evitación y EDBs",
+          "texto": "Procedimiento continuo de autorregistro y revisión en sesión para identificar patrones (qué emociones aparecen, cómo se nombran, qué se hace para reducirlas, qué conductas impulsadas por emoción se activan y qué consecuencias generan), convirtiendo la terapia en un proceso de aprendizaje basado en datos del propio caso y permitiendo ajustes finos del plan (módulos, jerarquías de exposición, objetivos semanales). Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_up_generalizacion_aprendizaje_emocional",
+          "nombre": "Generalización del aprendizaje emocional a múltiples contextos y emociones",
+          "texto": "Procedimiento para evitar que el cambio quede restringido a una sola emoción o situación, planificando variación sistemática de prácticas (distintos lugares, personas, niveles de activación, emociones como miedo, tristeza, culpa o vergüenza) y revisando qué reglas de evitación reaparecen, de modo que el aprendizaje sea robusto y transferible a la vida cotidiana. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_up_registro_ciclo_vivo",
+          "nombre": "Registro puntual del ciclo emocional en vivo",
+          "texto": "Microintervención consistente en detenerse en sesión o tras un evento reciente para desglosar en tiempo real disparador, emoción primaria, sensaciones corporales, interpretación automática, conducta impulsada por emoción y consecuencia, con el fin de hacer visible el ciclo mantenedor y aumentar conciencia funcional sin análisis excesivo. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_up_revision_post_exposicion",
+          "nombre": "Revisión funcional post-exposición",
+          "texto": "Análisis inmediato tras una práctica de qué se anticipaba, qué ocurrió realmente y qué se aprendió sobre la emoción y la capacidad de afrontamiento, consolidando aprendizaje inhibitorio. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_up_evitacion_sutil",
+          "nombre": "Detección de evitación sutil",
+          "texto": "Identificación de microconductas de escape menos evidentes (bromear para cambiar tema, mirar el móvil, tranquilizarse mentalmente) que interfieren con el aprendizaje durante exposición o conversación emocional. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
