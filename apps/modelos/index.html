@@ -2105,10 +2105,8 @@ transform: translateY(-50%);
   justify-content: center;
   padding: 18px;
 
-  background:
-    radial-gradient(1200px 700px at 20% 10%, rgba(255,255,255,0.06), transparent 55%),
-    radial-gradient(900px 600px at 80% 30%, rgba(255,255,255,0.04), transparent 60%),
-    rgba(0,0,0,0.74);
+background: rgba(8,10,14,0.88);
+
 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -2119,22 +2117,21 @@ transform: translateY(-50%);
 .landingOverlay.is-on{ display: flex; }
 
 .landingCard{
-  width: min(1100px, 100%);
-  max-height: min(84vh, 760px);
-  overflow: auto;
+  width: min(900px, 100%);
+  max-height: 80vh;
 
-  border-radius: 22px;
-  padding: 18px;
+  border-radius: 28px;
+  padding: 48px 56px;
 
-  background: rgba(18,22,28,0.72);
-  border: 1px solid rgba(255,255,255,0.10);
-  box-shadow: 0 24px 70px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(24px) saturate(140%);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+
+  box-shadow: 0 30px 90px rgba(0,0,0,0.6);
 }
-/* ===== Scrollbar glass SOLO en la landing ===== */
-.landingCard{
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: rgba(255,255,255,0.18) rgba(255,255,255,0.06);
-}
+
 
 /* Chrome / Edge / Safari */
 .landingCard::-webkit-scrollbar{
@@ -2205,72 +2202,62 @@ transform: translateY(-50%);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
 
-  background:
-    /* brillo superior tipo “glass” */
-    linear-gradient(180deg,
-      rgba(255,255,255,0.10),
-      rgba(255,255,255,0.04) 35%,
-      rgba(0,0,0,0.10)
-    ),
-    /* glow suave con el color de la escuela (muy Apple) */
-    radial-gradient(520px 220px at 18% 22%,
-      color-mix(in srgb, var(--schoolColor) 18%, transparent),
-      transparent 62%
-    );
+background:
+linear-gradient(180deg,
+  rgba(255,255,255,0.05),
+  rgba(255,255,255,0.022) 45%,
+  rgba(0,0,0,0.12)
+),
+  radial-gradient(520px 220px at 18% 22%,
+    color-mix(in srgb, var(--schoolColor) 9%, transparent),
+    transparent 65%
+  );
+
 
   border: 1px solid rgba(255,255,255,0.12);
-  box-shadow:
-    0 18px 60px rgba(0,0,0,0.38),
-    inset 0 1px 0 rgba(255,255,255,0.10);
+box-shadow:
+  0 14px 44px rgba(0,0,0,0.34),
+  inset 0 1px 0 rgba(255,255,255,0.08);
+
   transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
 }
 
 .landingSchool:hover{
   transform: translateY(-1px);
-  border-color: rgba(255,255,255,0.18);
+  border-color: color-mix(in srgb, var(--schoolColor) 18%, rgba(255,255,255,0.14));
   box-shadow:
-    0 22px 70px rgba(0,0,0,0.46),
-    inset 0 1px 0 rgba(255,255,255,0.12);
+    0 20px 60px rgba(0,0,0,0.42),
+    inset 0 1px 0 rgba(255,255,255,0.10);
 }
 
-.landingSchool:active{ transform: translateY(0px); }
-
-
-.landingSchool:hover{
-  transform: translateY(-1px);
-  border-color: rgba(255,255,255,0.16);
-  background:
-    radial-gradient(800px 220px at 20% 10%,
-      color-mix(in srgb, var(--schoolColor) 28%, transparent),
-      transparent 60%),
-    rgba(255,255,255,0.06);
-}
-
-.landingSchool:active{ transform: translateY(0px); }
 
 /* banda color (firma visual de la escuela) */
 .landingSchool::before{
   content:'';
   position:absolute;
   left: 0; top: 0; bottom: 0;
-  width: 7px;
+  width: 4px;
   border-radius: 18px 0 0 18px;
-  background: color-mix(in srgb, var(--schoolColor) 80%, transparent);
-  opacity: .95;
+  background: color-mix(in srgb, var(--schoolColor) 70%, transparent);
+  opacity: .72;
   pointer-events:none;
 }
 
+
 .landingSchoolName{
-  font-weight: 900;
+  font-weight: 750;
   font-size: 15px;
-  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
+
 
 .landingSchoolMeta{
   margin-top: 7px;
   font-size: 12px;
-  opacity: .72;
+  opacity: .62;
+  font-weight: 600;
 }
+
 
 /* ================== /LANDING ================== */
 
@@ -2405,6 +2392,51 @@ body{
 #app, #root, .app, .tmpsApp{
   margin: 0 !important;
   padding: 0 !important;
+}
+.landing-hero{
+  text-align:center;
+  margin-bottom:48px;
+}
+
+.landing-hero h1{
+  font-size:44px;
+  font-weight:750;
+  letter-spacing:-0.028em;
+  margin:0 0 12px;
+}
+
+
+.landing-hero p{
+  font-size:17px;
+  opacity:.68;
+  line-height:1.6;
+  margin:0;
+}
+
+/* Micro-noise ultra sutil (Apple style) */
+.landingSchool::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius: inherit;
+  pointer-events:none;
+
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='1'/></filter><rect width='120' height='120' filter='url(%23n)' opacity='.02'/></svg>");
+
+  mix-blend-mode: overlay;
+}
+.landingSchool{
+  background-clip: padding-box;
+}
+
+.landingSchool::before{
+  /* tu banda sigue igual */
+}
+
+.landingSchool::marker{ display:none; } /* por si acaso */
+.landingSchool .spec{
+  display:none;
 }
 
   </style>
@@ -8859,19 +8891,16 @@ renderSchoolInfo(currentSchool);
 
 <!-- ================== LANDING (pantalla inicio) ================== -->
 <div id="landingOverlay" class="landingOverlay" aria-hidden="true">
-  <div class="landingCard">
-    <div class="landingTop">
-      <div class="landingEyebrow">Buscador por</div>
-      <div class="landingTitle">Modelos</div>
-      <div class="landingSub">
-        Elige una escuela para empezar a explorar sus modelos
-      </div>
+  <div class="landingShell">
+    <div class="landingHero">
+      <div class="landingKicker">Biblioteca</div>
+      <h1 class="landingH1">Modelos Psicoterapéuticos</h1>
+      <p class="landingLead">Explora enfoques clínicos organizados por escuelas, con rigor y claridad.</p>
     </div>
 
     <div id="landingGrid" class="landingGrid"></div>
 
-<div class="landingFooter"></div>
-
+    <div class="landingFooter"></div>
   </div>
 </div>
 <!-- ================== /LANDING ================== -->
