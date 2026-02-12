@@ -287,16 +287,11 @@ rgba(255,255,255,0.008) 12px
 }
 
 /* banda vertical izquierda */
+/* sin banda lateral en marcos */
 .mi-item.is-marco::before{
-  content:'';
-  position:absolute;
-  left:0; top:0; bottom:0;
-  width:6px;
-  border-radius: 14px 0 0 14px;
-  background: color-mix(in srgb, var(--schoolColor) 55%, transparent);
-  opacity: .5;
-  pointer-events:none;
+  display: none;
 }
+
 /* ===== MODELOS: banda vertical izquierda (destacar modelos) ===== */
 .mi-item:not(.is-marco)::before{
   content:'';
@@ -321,38 +316,30 @@ opacity: .75;
     inset 0 1px 0 rgba(255,255,255,0.12);
 }
 
+/* Etiqueta MARCO minimalista: solo texto */
 .mi-marcoTag{
-  position:absolute;
+
+  position: absolute;
 
   right: 12px;
-  bottom: 8px;      /* ⬅️ abajo-derecha */
-  top: auto;
-  left: auto;
+  bottom: 8px;
 
-  display:flex;
-  gap:5px;
-  align-items:center;
+  padding: 0;              /* sin caja */
+  border: none;           /* sin borde */
+  background: none;       /* sin fondo */
+  box-shadow: none;       /* sin sombra */
+  backdrop-filter: none;
 
-  padding: 3px 8px;
-  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .6px;
+  text-transform: uppercase;
 
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: .4px;
+  color: rgba(231,237,245,0.65);  /* discreto */
 
-  color: rgba(235,240,245,0.85);
-
-  background: rgba(0,0,0,0.28);
-  border: 1px solid rgba(255,255,255,0.14);
-
-  box-shadow:
-    0 4px 12px rgba(0,0,0,0.25),
-    inset 0 1px 0 rgba(255,255,255,0.08);
-
-  backdrop-filter: blur(6px);
-
-  pointer-events:none;
+  pointer-events: none;
 }
+
 
 
     .mi-top{display:flex; justify-content:space-between; gap:10px; align-items:flex-start;}
@@ -8027,10 +8014,10 @@ function buildLandingSchools(){
 
 const marcoClass = m && m.isMarco ? 'is-marco' : '';
 const marcoTag = (m && m.isMarco)
-  ? `<div class="mi-marcoTag" aria-label="Marco">
-       <span class="mi-marcoIcon">⧉</span>
+ ? `<div class="mi-marcoTag" aria-label="Marco">
        <span class="mi-marcoTxt">MARCO</span>
      </div>`
+
   : '';
 
 return `
@@ -8217,11 +8204,12 @@ modelInfoEl.style.removeProperty('--schoolColor');
   ].filter(Boolean).join('');
 
   // contadores
-  const nInflu = Array.isArray(m.influencias) ? m.influencias.filter(Boolean).length : 0;
-  const nRefs  = Array.isArray(m.refs) ? m.refs.filter(Boolean).length : 0;
-  const nProc  = Array.isArray(m.procedimientos) ? m.procedimientos.filter(Boolean).length : 0;
-  const nMicro = Array.isArray(m.micros) ? m.micros.filter(Boolean).length : 0;
-const nSeq = Array.isArray(m.secuencias) ? m.secuencias.filter(Boolean).length : 0;
+const nInflu = Array.isArray(m.influencias) ? m.influencias.filter(Boolean).length : 0;
+const nRefs  = Array.isArray(m.refs) ? m.refs.filter(Boolean).length : 0;
+const nProc  = Array.isArray(m.procedimientos) ? m.procedimientos.filter(Boolean).length : 0;
+const nMicro = Array.isArray(m.micros) ? m.micros.filter(Boolean).length : 0;
+const nSeq   = Array.isArray(m.secuencias) ? m.secuencias.filter(Boolean).length : 0;
+const nIdeas = Array.isArray(m.ideasPrincipales) ? m.ideasPrincipales.filter(Boolean).length : 0;
 
   // alianza/neimeyer
   const nAli = (m.alianzaModelo && typeof m.alianzaModelo === 'object')
@@ -8297,20 +8285,21 @@ const authorHTML =
 
     <div class="mp-acc">
       ${acc('Influencias', nInflu, sectionListInner(m.influencias, {asList:false}), true)}
-      ${acc(
-  'Ideas principales del modelo',
-  (m && Array.isArray(m.ideasPrincipales) ? m.ideasPrincipales.length : 0),
-  sectionIdeasInner(m ? m.ideasPrincipales : null),
-  false
-)}
-${acc('Niveles del modelo', nNei, sectionNeimeyerInner(m.neimeyer), false)}
-      ${acc('Procedimientos', nProc, sectionProceduresInner(m.procedimientos), false)}
+      ${nIdeas ? acc('Ideas principales', nIdeas, sectionIdeasInner(m.ideasPrincipales), false) : ''}
+
+${nNei ? acc('Niveles', nNei, sectionNeimeyerInner(m.neimeyer), false) : ''}
+
+     ${nProc ? acc('Procedimientos', nProc, sectionProceduresInner(m.procedimientos), false) : ''}
+
      ${nSeq ? acc('Secuencias', nSeq, sectionSequencesInner(m.secuencias), false) : ''}
 
-      ${acc('Microintervenciones', nMicro, sectionProceduresInner(m.micros), false)}
-      ${acc('Referencias', nRefs, sectionListInner(m.refs, {asList:true}), false)}
+     ${nMicro ? acc('Microintervenciones', nMicro, sectionProceduresInner(m.micros), false) : ''}
 
-      ${acc('Alianza terapéutica', nAli, sectionAliInner(m.alianzaModelo), false)}
+${nRefs ? acc('Referencias', nRefs, sectionListInner(m.refs, {asList:true}), false) : ''}
+
+
+      ${nAli ? acc('Alianza terapéutica', nAli, sectionAliInner(m.alianzaModelo), false) : ''}
+
       
     </div>
   `;
