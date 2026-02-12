@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-11T11:53:28.129Z",
-  "totalModelos": 91,
+  "updatedAt": "2026-02-12T09:27:33.353Z",
+  "totalModelos": 92,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -366,6 +366,36 @@
           "codigo": "m_mbct_microaccion_respuesta",
           "nombre": "Elegir respuesta pequeña (micro-acción anti-espiral)",
           "texto": "Microintervención de seleccionar una acción mínima y concreta tras notar señales tempranas (paseo breve, ducha consciente, llamar a alguien, ordenar una tarea simple) para prevenir retirada/apatía y consolidar ‘responder’ frente a ‘reaccionar’. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "process-based-therapy-hayes-hofmann-2020",
+      "modelLabel": "Terapia Basada en Procesos (PBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Steven C. Hayes; Stefan G. Hofmann",
+      "modelYear": 2020,
+      "items": [
+        {
+          "codigo": "p_pbt_intervencion_modular",
+          "nombre": "Intervención modular basada en evidencia",
+          "texto": "Procedimiento que integra técnicas provenientes de distintos modelos basados en evidencia (ACT, DBT, MBCT, CFT, CBT tradicional) según su capacidad demostrada para modificar el proceso diana identificado. Las técnicas se aplican como módulos funcionales estratégicamente seleccionados, manteniendo coherencia contextual y evitando eclecticismo desorganizado. Referencia: Hofmann & Hayes (2019); Hofmann & Hayes (2021).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pbt_desmantelamiento_evitacion",
+          "nombre": "Desmantelamiento de bucles de evitación experiencial",
+          "texto": "Procedimiento dirigido a identificar y debilitar patrones de evitación que mantienen el malestar a largo plazo, facilitando contacto emocional regulado y acción coherente con valores. Integra aceptación, exposición experiencial y compromiso conductual para romper ciclos de mantenimiento transdiagnósticos. Referencia: Hofmann & Hayes (2019).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pbt_test_hipotesis",
+          "nombre": "Test conductual de hipótesis personal",
+          "texto": "Diseño de un pequeño experimento conductual dirigido a comprobar una predicción específica vinculada al proceso disfuncional, registrando resultado y discrepancias con la expectativa inicial. Referencia: Hofmann & Hayes (2021).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

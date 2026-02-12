@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-11T11:53:28.129Z",
-  "totalModelos": 95,
+  "updatedAt": "2026-02-12T09:27:33.353Z",
+  "totalModelos": 96,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -494,6 +494,43 @@
           "codigo": "m_mbct_cierre_consciente",
           "nombre": "Cierre consciente tras práctica (nota final de estado y cuidado)",
           "texto": "Microintervención breve de comprobar el estado al terminar una práctica (activación, calma, tristeza) y realizar un gesto mínimo de cuidado/grounding si hace falta, para prevenir que la sesión o práctica deje reactividad residual. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "process-based-therapy-hayes-hofmann-2020",
+      "modelLabel": "Terapia Basada en Procesos (PBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Steven C. Hayes; Stefan G. Hofmann",
+      "modelYear": 2020,
+      "items": [
+        {
+          "codigo": "m_pbt_mapeo_bucle",
+          "nombre": "Mapeo de bucle proceso–consecuencia",
+          "texto": "Identificación explícita en sesión de la secuencia estímulo–respuesta–consecuencia que mantiene el problema, dibujando el bucle en tiempo real para hacer visible la dinámica autorreforzante del proceso (por ejemplo, preocupación → alivio momentáneo → mayor vulnerabilidad posterior). Referencia: Hofmann & Hayes (2019).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pbt_contingencia_inmediata",
+          "nombre": "Micro-análisis de contingencia inmediata",
+          "texto": "Exploración detallada de qué ocurrió justo antes y después de una conducta problemática específica, aislando reforzadores positivos o negativos que la mantienen, con foco en aprendizaje situacional más que en contenido cognitivo. Referencia: Hofmann & Hayes (2021).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pbt_test_hipotesis",
+          "nombre": "Test conductual de hipótesis personal",
+          "texto": "Diseño de un pequeño experimento conductual dirigido a comprobar una predicción específica vinculada al proceso disfuncional, registrando resultado y discrepancias con la expectativa inicial. Referencia: Hofmann & Hayes (2021).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pbt_efecto_domino",
+          "nombre": "Identificación de efecto dominó procesual",
+          "texto": "Señalamiento de cómo un pequeño cambio en un proceso (por ejemplo, reducir evitación) impacta en otros nodos del sistema, aumentando motivación al mostrar interdependencia dinámica. Referencia: Hofmann & Hayes (2019).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

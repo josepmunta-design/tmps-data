@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-11T11:53:28.129Z",
-  "totalModelos": 88,
+  "updatedAt": "2026-02-12T09:27:33.353Z",
+  "totalModelos": 89,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -245,6 +245,43 @@
           "codigo": "m_mbct_cierre_consciente",
           "nombre": "Cierre consciente tras práctica (nota final de estado y cuidado)",
           "texto": "Microintervención breve de comprobar el estado al terminar una práctica (activación, calma, tristeza) y realizar un gesto mínimo de cuidado/grounding si hace falta, para prevenir que la sesión o práctica deje reactividad residual. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "process-based-therapy-hayes-hofmann-2020",
+      "modelLabel": "Terapia Basada en Procesos (PBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Steven C. Hayes; Stefan G. Hofmann",
+      "modelYear": 2020,
+      "items": [
+        {
+          "codigo": "p_pbt_intervencion_modular",
+          "nombre": "Intervención modular basada en evidencia",
+          "texto": "Procedimiento que integra técnicas provenientes de distintos modelos basados en evidencia (ACT, DBT, MBCT, CFT, CBT tradicional) según su capacidad demostrada para modificar el proceso diana identificado. Las técnicas se aplican como módulos funcionales estratégicamente seleccionados, manteniendo coherencia contextual y evitando eclecticismo desorganizado. Referencia: Hofmann & Hayes (2019); Hofmann & Hayes (2021).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pbt_optimizacion_regulacion_emocional",
+          "nombre": "Optimización de procesos de regulación emocional",
+          "texto": "Procedimiento dirigido a restaurar regulación emocional flexible identificando déficits específicos en reconocimiento, aceptación o modulación afectiva y aplicando intervenciones focalizadas basadas en evidencia para cada componente. Referencia: Hofmann & Hayes (2021).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pbt_cambio_foco",
+          "nombre": "Entrenamiento en cambio de foco atencional",
+          "texto": "Práctica estructurada de alternancia atencional entre estímulos amenazantes y neutros/positivos para debilitar sesgos atencionales rígidos asociados a ansiedad o depresión. Referencia: Hofmann & Hayes (2021).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pbt_ajuste_activacion",
+          "nombre": "Ajuste de nivel de activación fisiológica",
+          "texto": "Uso puntual de respiración lenta o activación conductual breve para modificar estado autonómico cuando la activación fisiológica interfiere con el procesamiento cognitivo o emocional en curso. Referencia: Hofmann & Hayes (2021).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

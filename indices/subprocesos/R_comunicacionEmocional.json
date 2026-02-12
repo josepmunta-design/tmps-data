@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_comunicacionEmocional",
-  "updatedAt": "2026-02-11T11:53:28.129Z",
-  "totalModelos": 44,
+  "updatedAt": "2026-02-12T09:27:33.353Z",
+  "totalModelos": 45,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -58,6 +58,22 @@
           "codigo": "m_fap_pregunta_vulnerabilidad",
           "nombre": "Evocar vulnerabilidad mediante pregunta directa",
           "texto": "Formular una pregunta directa orientada a contactar con emoción nuclear (por ejemplo, miedo al rechazo o vergüenza) para aumentar probabilidad de CCR2 asociada a apertura emocional. Referencia: Tsai et al. (2009).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "process-based-therapy-hayes-hofmann-2020",
+      "modelLabel": "Terapia Basada en Procesos (PBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Steven C. Hayes; Stefan G. Hofmann",
+      "modelYear": 2020,
+      "items": [
+        {
+          "codigo": "m_pbt_comunicacion_directa",
+          "nombre": "Entrenamiento en comunicación directa",
+          "texto": "Práctica estructurada de expresar necesidades o emociones de forma clara y específica para modificar patrones interpersonales mantenedores del problema. Referencia: Hofmann & Hayes (2021).",
           "sub": "R_comunicacionEmocional",
           "tipo": "micro"
         }
