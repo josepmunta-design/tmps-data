@@ -48,7 +48,9 @@
     radial-gradient(900px 600px at 50% 80%, rgba(255,255,255,.04), transparent 65%),
     linear-gradient(180deg, #0b0f14 0%, #0a0e13 100%);
       color: var(--text);
-      overflow:hidden;
+        overflow-x: hidden;
+  overflow-y: auto;
+
       font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     }
 
@@ -2140,23 +2142,51 @@ background: rgba(8,10,14,0.88);
 }
 
 
+/* =========================
+   Scrollbar glass (landing) — igual que paneles
+   ========================= */
+
+/* Firefox */
+.landingCard{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(231,237,245,0.28) rgba(255,255,255,0.06);
+}
 
 /* Chrome / Edge / Safari */
-.landingCard::-webkit-scrollbar{
-  width: 10px;
-}
+.landingCard::-webkit-scrollbar{ width:10px; }
 .landingCard::-webkit-scrollbar-track{
   background: rgba(255,255,255,0.05);
   border-radius: 999px;
-  margin: 10px;
+  border: 1px solid rgba(255,255,255,0.06);
 }
 .landingCard::-webkit-scrollbar-thumb{
-  background: rgba(255,255,255,0.18);
-  border: 2px solid rgba(0,0,0,0.20);
+  background: linear-gradient(180deg, rgba(231,237,245,0.28), rgba(231,237,245,0.14));
   border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
 }
 .landingCard::-webkit-scrollbar-thumb:hover{
-  background: rgba(255,255,255,0.26);
+  background: linear-gradient(180deg, rgba(231,237,245,0.36), rgba(231,237,245,0.18));
+}
+/* Si el scroll ocurre en el overlay (móvil), mantenemos el mismo look */
+.landingOverlay{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(231,237,245,0.28) rgba(255,255,255,0.06);
+}
+.landingOverlay::-webkit-scrollbar{ width:10px; }
+.landingOverlay::-webkit-scrollbar-track{
+  background: rgba(255,255,255,0.05);
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.landingOverlay::-webkit-scrollbar-thumb{
+  background: linear-gradient(180deg, rgba(231,237,245,0.28), rgba(231,237,245,0.14));
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
+}
+.landingOverlay::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(180deg, rgba(231,237,245,0.36), rgba(231,237,245,0.18));
 }
 
 
@@ -2470,6 +2500,30 @@ body{
     font-size: 26px;
     line-height: 1.15;
   }
+}
+/* =========================
+   SCROLL FIX LANDING (móvil)
+   ========================= */
+
+/* Fondo bloqueado SOLO cuando la landing está activa */
+body.landing-on{
+  overflow: hidden !important;
+  height: 100%;
+}
+
+/* El overlay es el contenedor scrolleable */
+.landingOverlay{
+  height: 100dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+/* La tarjeta también puede scrollear (doble seguridad) */
+.landingCard{
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 
   </style>
