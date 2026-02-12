@@ -13,6 +13,120 @@
 
   "descripcion": "La Terapia Basada en Procesos (Process-Based Therapy, PBT) es un metamarco contemporáneo que propone reorganizar la intervención psicológica en torno a procesos biopsicosociales diana, en lugar de protocolos manualizados por trastorno. Desarrollada principalmente por Steven C. Hayes y Stefan G. Hofmann, PBT integra la ciencia contextual conductual, la tradición cognitivo-conductual y la investigación transdiagnóstica para identificar mecanismos de cambio que operan a distintos niveles (cognitivo, emocional, conductual, relacional y biológico). El modelo sostiene que los problemas psicológicos emergen de redes dinámicas de procesos disfuncionales, y que el tratamiento debe seleccionarse funcionalmente según qué procesos mantienen el sufrimiento en cada caso concreto. PBT no es un conjunto cerrado de técnicas, sino un sistema de toma de decisiones clínicas basado en evidencia, medición idiográfica y análisis funcional dinámico.",
 
+  "secuencias": [
+
+  {
+    "id": "seq_pbt_modelo_idiografico_proceso",
+    "nombre": "Secuencia de formulación procesual idiográfica",
+    "descripcion": "Secuencia metaclínica central en PBT que organiza el trabajo desde la identificación de procesos hasta la intervención personalizada basada en evidencia.",
+    "tipo": "estructura_progresiva",
+    "referencia": "Hofmann & Hayes (2019); Hofmann & Hayes (2021).",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Evaluación amplia de procesos biopsicosociales",
+        "explicacion": "Recogida de datos transdiagnósticos para identificar procesos cognitivos, emocionales, conductuales, relacionales y fisiológicos relevantes."
+      },
+      {
+        "orden": 2,
+        "accion": "Mapeo dinámico de red procesual",
+        "explicacion": "Identificación de interacciones entre procesos y detección de nodos centrales que mantienen el sufrimiento."
+      },
+      {
+        "orden": 3,
+        "accion": "Selección estratégica de procesos diana",
+        "explicacion": "Priorización de procesos modificables con mayor impacto sistémico y evidencia empírica."
+      },
+      {
+        "orden": 4,
+        "accion": "Selección modular de intervenciones",
+        "explicacion": "Aplicación de técnicas basadas en evidencia dirigidas específicamente al proceso seleccionado."
+      },
+      {
+        "orden": 5,
+        "accion": "Monitorización idiográfica continua",
+        "explicacion": "Medición repetida de los procesos intervenidos para ajustar decisiones clínicas en tiempo real."
+      },
+      {
+        "orden": 6,
+        "accion": "Reformulación dinámica",
+        "explicacion": "Actualización del mapa procesual según los cambios observados y redefinición estratégica si es necesario."
+      }
+    ]
+  },
+
+  {
+    "id": "seq_pbt_decision_clinica_mecanismos",
+    "nombre": "Secuencia de toma de decisiones basada en mecanismos",
+    "descripcion": "Algoritmo clínico implícito en PBT para conectar intervención con mecanismo de cambio específico.",
+    "tipo": "algoritmo_funcional",
+    "referencia": "Hofmann & Hayes (2019).",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Identificar proceso problemático específico",
+        "explicacion": "Definir operacionalmente el mecanismo que mantiene el malestar (por ejemplo, evitación experiencial)."
+      },
+      {
+        "orden": 2,
+        "accion": "Confirmar su función en el sistema del paciente",
+        "explicacion": "Analizar si realmente cumple función mantenedora y no es epifenómeno."
+      },
+      {
+        "orden": 3,
+        "accion": "Seleccionar intervención con evidencia mecanicista",
+        "explicacion": "Elegir técnica que haya demostrado modificar ese proceso concreto."
+      },
+      {
+        "orden": 4,
+        "accion": "Evaluar impacto directo sobre el proceso",
+        "explicacion": "Observar si la intervención modifica el mecanismo y no solo el síntoma."
+      },
+      {
+        "orden": 5,
+        "accion": "Escalar o cambiar proceso si no hay efecto",
+        "explicacion": "Reorientar intervención hacia otro nodo central si el primero no genera cambio sistémico."
+      }
+    ]
+  },
+
+  {
+    "id": "seq_pbt_ciclo_experimental_terapeutico",
+    "nombre": "Ciclo experimental terapéutico continuo",
+    "descripcion": "Modelo cíclico donde la terapia se concibe como experimento adaptativo en tiempo real.",
+    "tipo": "ciclo_iterativo",
+    "referencia": "Hofmann & Hayes (2021).",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Formular hipótesis mecanicista",
+        "explicacion": "Definir qué proceso se cree responsable del mantenimiento del problema."
+      },
+      {
+        "orden": 2,
+        "accion": "Intervenir estratégicamente",
+        "explicacion": "Aplicar módulo clínico dirigido a modificar el proceso identificado."
+      },
+      {
+        "orden": 3,
+        "accion": "Medir cambio en proceso",
+        "explicacion": "Recoger datos idiográficos que indiquen modificación real del mecanismo."
+      },
+      {
+        "orden": 4,
+        "accion": "Evaluar efectos en red",
+        "explicacion": "Observar si el cambio genera efectos en cascada en otros procesos."
+      },
+      {
+        "orden": 5,
+        "accion": "Ajustar hipótesis",
+        "explicacion": "Reformular modelo funcional según resultados observados."
+      }
+    ]
+  }
+
+],
+
   "influencias": [
     "Contextualismo funcional (Hayes)",
     "CBT 3ª ola – ACT",
