@@ -2115,10 +2115,17 @@ background: rgba(8,10,14,0.88);
 
 
 .landingOverlay.is-on{ display: flex; }
-
 .landingCard{
   width: min(900px, 100%);
+
+  /* Fallbacks sólidos para móviles */
   max-height: 80vh;
+  max-height: 90svh;            /* iOS moderno */
+  max-height: min(80vh, 90dvh); /* viewport real móvil */
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* ✅ iOS: scroll fluido */
+  overscroll-behavior: contain;      /* ✅ evita “rebote” raro */
 
   border-radius: 28px;
   padding: 48px 56px;
@@ -2131,6 +2138,7 @@ background: rgba(8,10,14,0.88);
 
   box-shadow: 0 30px 90px rgba(0,0,0,0.6);
 }
+
 
 
 /* Chrome / Edge / Safari */
@@ -2437,6 +2445,31 @@ body{
 .landingSchool::marker{ display:none; } /* por si acaso */
 .landingSchool .spec{
   display:none;
+}
+/* =========================
+   LANDING · FIX SMARTPHONE
+   ========================= */
+
+@media (max-width: 768px){
+
+  .landingOverlay{
+    align-items: flex-start;   /* no centra vertical */
+    padding-top: 12px;
+  }
+
+  .landingCard{
+    margin-top: 12px;
+
+    max-height: 92dvh;
+    padding: 28px 22px;
+
+    border-radius: 22px;
+  }
+
+  .landingTitle{
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 
   </style>
@@ -6185,51 +6218,7 @@ Se evalúa con métricas del diario: eficiencia del sueño, tiempo despierto tra
   ]
 },
 
-    {
-      id:'c24pbt20',
-      grupo:'Cognitivo',
-      label:'Terapia basada en procesos (PBT)',
-      year:2020,
-      autores:'Steven C. Hayes & Stefan G. Hofmann',
-      influencias:[
-        'Terapias contextuales y de tercera ola',
-        'Modelos transdiagnósticos',
-        'Investigación en procesos de cambio'
-      ],
-      procesos:[
-        'Análisis de procesos idiosincráticos relevantes',
-        'Selección de kernels o micro-intervenciones basadas en evidencia',
-        'Monitorización continua y ajuste flexible'
-      ],
-      mjps:['RF','RE','AP','N','AG','A','V','R'],
-      refs:[
-        'Hayes, S. C., & Hofmann, S. G. (2018). Process-Based CBT.',
-        'Hayes, S. C., & Hofmann, S. G. (2020). Beyond the DSM: Toward a Process-Based Alternative for Diagnosis.'
-      ],
-      micros:[
-        {
-          nombre:'Formulación de caso centrada en procesos',
-          texto:`En lugar de basarse en categorías diagnósticas, la PBT propone formular el caso identificando procesos concretos que parecen estar manteniendo el problema (evitación experiencial, fusión cognitiva, desregulación emocional, etc.).
-Se integran datos de la historia del paciente, la observación clínica y, cuando es posible, medidas estandarizadas de procesos.
-La formulación busca ser funcional (qué hace cada proceso en la vida del paciente) y contextual (en qué condiciones se activa y se mantiene).
-Este mapa procesual sirve como guía dinámica para elegir intervenciones y ajustar el tratamiento a la singularidad de la persona.`
-        },
-        {
-          nombre:'Selección de kernels por función',
-          texto:`Se eligen micro-intervenciones (“kernels”) con apoyo empírico que cumplan una determinada función sobre el proceso diana (por ejemplo, defusión para la fusión cognitiva, exposición para la evitación, entrenamiento en habilidades para la desregulación).
-La atención se centra en la función que ejerce la técnica en el contexto del paciente, más que en la fidelidad a un protocolo de escuela específica.
-Esto permite combinar procedimientos de distintas tradiciones siempre que sean coherentes funcionalmente con los procesos identificados.
-La PBT, así, ofrece un marco para integrar técnicas heterogéneas sin perder rigor ni caer en un eclecticismo desordenado.`
-        },
-        {
-          nombre:'Monitorización y ajuste dinámico',
-          texto:`A lo largo del tratamiento se monitorizan de forma sistemática tanto los síntomas como los procesos elegidos como diana, mediante escalas breves, auto-registros o indicadores conductuales.
-Si un kernel no está produciendo el cambio esperado en el proceso, se reconsidera su uso, se modifica su intensidad o se sustituye por otro más adecuado.
-Este ciclo continuo de evaluación e intervención convierte la terapia en un proceso experimental colaborativo, donde paciente y terapeuta aprenden juntos qué funciona mejor en ese caso concreto.
-La monitorización también favorece la toma de decisiones informada y reduce la inercia de mantener intervenciones ineficaces solo por tradición o preferencia teórica.`
-        }
-      ]
-    },
+
       
       
        // =========================================================
