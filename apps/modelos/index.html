@@ -2307,71 +2307,113 @@ transform: translateY(-50%);
 
 .landingSchool{
   position: relative;
-  border-radius: 18px;
-  padding: 14px 14px 12px 26px;
+  border-radius: 16px;
 
-  cursor: pointer;
-  user-select: none;
+  /* más compacta */
+  padding: 12px 16px 10px 18px;
 
-  overflow: hidden; /* ✅ clave: recorta todo dentro del radio */
+  background: rgba(255,255,255,0.055);
+  border: 1px solid rgba(255,255,255,0.10);
+
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
 
-background:
-linear-gradient(180deg,
-  rgba(255,255,255,0.05),
-  rgba(255,255,255,0.022) 45%,
-  rgba(0,0,0,0.12)
-),
-  radial-gradient(520px 220px at 18% 22%,
-    color-mix(in srgb, var(--schoolColor) 9%, transparent),
-    transparent 65%
-  );
+  /* sombra más editorial */
+  box-shadow:
+    0 14px 36px rgba(0,0,0,0.42),
+    inset 0 1px 0 rgba(255,255,255,0.05);
 
-
-  border: 1px solid rgba(255,255,255,0.12);
-box-shadow:
-  0 14px 44px rgba(0,0,0,0.34),
-  inset 0 1px 0 rgba(255,255,255,0.08);
-
-  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background .16s ease;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .landingSchool:hover{
   transform: translateY(-1px);
-  border-color: color-mix(in srgb, var(--schoolColor) 18%, rgba(255,255,255,0.14));
+  border-color: rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.065);
   box-shadow:
-    0 20px 60px rgba(0,0,0,0.42),
-    inset 0 1px 0 rgba(255,255,255,0.10);
+    0 20px 48px rgba(0,0,0,0.48),
+    inset 0 1px 0 rgba(255,255,255,0.06);
 }
+
+.landingSchool:active{
+  transform: translateY(0px);
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.40),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
 
 
 /* banda color (firma visual de la escuela) */
 .landingSchool::before{
-  content:'';
+  content:"";
   position:absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 4px;
-  border-radius: 18px 0 0 18px;
-  background: color-mix(in srgb, var(--schoolColor) 70%, transparent);
-  opacity: .72;
-  pointer-events:none;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+
+  border-radius: 6px;
+
+  
+  opacity: .85;
 }
+
 
 
 .landingSchoolName{
-  font-weight: 750;
-  font-size: 15px;
-  letter-spacing: -0.01em;
+  font-weight: 950;
+  font-size: 22px;
+  line-height: 1.05;
+  letter-spacing: -0.6px;
+
+  color: var(--schoolColor, #fff);
+  text-shadow: 0 0 18px rgba(0,0,0,0.28);
 }
+
 
 
 .landingSchoolMeta{
-  margin-top: 7px;
-  font-size: 12px;
-  opacity: .62;
-  font-weight: 600;
+  margin-top: 8px;
+
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+
+  display:flex;
+  gap: 8px;
+  align-items: baseline;
+
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: rgba(231,237,245,0.62);
 }
+
+.landingSchoolMeta .landingCount{
+  color: rgba(231,237,245,0.92);
+  font-weight: 950;
+}
+
+.landingSchoolMeta .landingCountLabel{
+  color: rgba(231,237,245,0.62);
+  font-weight: 800;
+}
+
+
+.landingSchoolMeta .landingCount{
+  color: rgba(231,237,245,0.92);
+}
+
+.landingSchoolMeta .landingCountLabel{
+  color: rgba(231,237,245,0.68);
+  font-weight: 700;
+}
+
 
 
 /* ================== /LANDING ================== */
@@ -8116,14 +8158,17 @@ function buildLandingSchools(){
   const col = groupColor.get(label) || '#D9AA3F';
 
   // Pinta placeholder; luego lo rellenamos async
-  return `
-    <div class="landingSchool" data-school="${escapeHtml(label)}" style="--schoolColor:${col}">
-      <div class="landingSchoolName">${escapeHtml(label)}</div>
-      <div class="landingSchoolMeta">
-        <span class="landingCount" data-count-for="${escapeHtml(label)}">…</span> modelo(s)/marco(s)
-      </div>
+return `
+  <div class="landingSchool" data-school="${escapeHtml(label)}" style="--schoolColor:${col}">
+    <div class="landingSchoolName">${escapeHtml(label)}</div>
+
+    <div class="landingSchoolMeta">
+      <span class="landingCount" data-count-for="${escapeHtml(label)}">…</span>
+      <span class="landingCountLabel">modelos</span>
     </div>
-  `;
+  </div>
+`;
+
 }).join('');
 
 // Relleno async de conteos (GitHub real)
@@ -8131,7 +8176,14 @@ function buildLandingSchools(){
   for (const label of schools){
     const n = await landingCountForSchool(label);
     const el = grid.querySelector(`.landingCount[data-count-for="${CSS.escape(label)}"]`);
-    if (el) el.textContent = String(n);
+   if (el){
+  const nn = Number(n) || 0;
+  el.textContent = String(nn);
+
+  const lab = el.closest('.landingSchool')?.querySelector('.landingCountLabel');
+  if (lab) lab.textContent = (nn === 1) ? 'modelo' : 'modelos';
+}
+
   }
 })();
 
@@ -9161,4 +9213,3 @@ renderSchoolInfo(currentSchool);
 
 </body>
 </html>
-
