@@ -8266,6 +8266,17 @@ return `
     });
   }
 }
+const schoolOrder = [
+  'Psicoanálisis',
+  'Conductismo',
+  'Humanista',
+  'Cognitivo',
+  'Sistémico',
+  'Constructivista',
+  'Integrativo',
+  'Transversal',
+  'Otros'
+];
 
  function buildSchoolOptions(){
   const localSchools = uniq(LOCAL_MODELS.map(m => m.grupo));
@@ -8273,7 +8284,21 @@ return `
 
   // unión sin duplicados
   const set = new Set([...localSchools, ...ghSchools]);
-  const schools = [...set].sort((a,b)=>a.localeCompare(b,'es'));
+ const schools = [...set].sort((a,b)=>{
+  const ia = schoolOrder.indexOf(a);
+  const ib = schoolOrder.indexOf(b);
+
+  // ✅ si ambos están en la lista, orden histórico
+  if (ia !== -1 && ib !== -1) return ia - ib;
+
+  // ✅ si solo uno está, ese va primero
+  if (ia !== -1) return -1;
+  if (ib !== -1) return 1;
+
+  // ✅ si ninguno está, fallback alfabético
+  return a.localeCompare(b,'es');
+});
+
 
   schoolSelect.innerHTML = schools
     .map(g => `<option value="${escapeHtml(g)}">${escapeHtml(g)}</option>`)
