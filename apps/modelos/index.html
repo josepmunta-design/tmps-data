@@ -2138,14 +2138,21 @@ transform: translateY(-50%);
 .landingCard{
   width: min(900px, 100%);
 
-  /* Fallbacks sólidos para móviles */
   max-height: 80vh;
-  max-height: 90svh;            /* iOS moderno */
-  max-height: min(80vh, 90dvh); /* viewport real móvil */
+  max-height: 90svh;
+  max-height: min(80vh, 90dvh);
 
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* ✅ iOS: scroll fluido */
-  overscroll-behavior: contain;      /* ✅ evita “rebote” raro */
+  overflow-x: hidden;
+
+  scroll-behavior: auto; /* evita interpolaciones raras */
+  overscroll-behavior: contain;
+
+  -webkit-overflow-scrolling: touch;
+
+  will-change: scroll-position;
+  transform: translateZ(0);
+}
 
   border-radius: 28px;
   padding: 48px 56px;
@@ -2153,8 +2160,8 @@ transform: translateY(-50%);
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.12);
 
-  backdrop-filter: blur(24px) saturate(140%);
-  -webkit-backdrop-filter: blur(24px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(125%);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
 
   box-shadow: 0 30px 90px rgba(0,0,0,0.6);
 }
@@ -2357,57 +2364,30 @@ transform: translateY(-50%);
 
 
 /* banda color (firma visual de la escuela) */
+.landingSchool::before{
+  content:"";
+  position:absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
 
+  border-radius: 6px;
 
-/* ✅ dot breathing (acento real) */
-
-
-@keyframes landingDotBreath{
-  0%,100%{ transform: scale(1);   filter: brightness(1);   }
-  50%    { transform: scale(1.22);filter: brightness(1.1); }
+  
+  opacity: .85;
 }
-
 
 
 
 .landingSchoolName{
   font-weight: 950;
-  font-size: 22px;
+  font-size: 19px;
   line-height: 1.05;
   letter-spacing: -0.6px;
 
-  color: rgba(255,255,255,0.92);           /* ✅ neutro */
-  text-shadow: 0 1px 0 rgba(0,0,0,0.22);   /* ✅ más editorial, menos glow */
-}.landingSchoolName{
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  font-weight: 750;
-  font-size: 22px;
-  line-height: 1.05;
-  letter-spacing: -0.6px;
-
-  color: rgba(255,255,255,0.92);
-  text-shadow: 0 1px 0 rgba(0,0,0,0.22);
-}
-
-.landingSchoolName::before{
-  content:"";
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-
-  background: color-mix(in srgb, var(--schoolColor) 85%, rgba(255,255,255,0.10));
-
-  box-shadow:
-    0 0 0 5px color-mix(in srgb, var(--schoolColor) 14%, transparent),
-    0 0 16px color-mix(in srgb, var(--schoolColor) 24%, transparent);
-
-  animation: landingDotBreath 3.2s ease-in-out infinite;
-
-  flex: 0 0 auto;
+  color: var(--schoolColor, #fff);
+  text-shadow: 0 0 18px rgba(0,0,0,0.28);
 }
 
 
@@ -2608,39 +2588,18 @@ body{
 }
 
 /* Micro-noise ultra sutil (Apple style) */
-/* ===== Blob de color por escuela (landing) ===== */
-
 .landingSchool::after{
   content:"";
   position:absolute;
+  inset:0;
+  border-radius: inherit;
+  pointer-events:none;
 
-  top: -80px;
-  right: -100px;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='1'/></filter><rect width='120' height='120' filter='url(%23n)' opacity='.02'/></svg>");
 
-  width: 260px;
-  height: 260px;
-
-  border-radius: 999px;
-
-  background:
-    radial-gradient(circle at 30% 30%,
-      color-mix(in srgb, var(--schoolColor) 85%, transparent),
-      transparent 15%
-    );
-
-  filter: blur(48px);
-  opacity: .55;
-
-  pointer-events: none;
-
-  z-index: 0;
+  mix-blend-mode: overlay;
 }
-/* ✅ El contenido siempre por encima del blob */
-.landingSchool > *{
-  position: relative;
-  z-index: 1;
-}
-
 .landingSchool{
   background-clip: padding-box;
 }
@@ -2691,9 +2650,9 @@ body.landing-on{
 /* El overlay es el contenedor scrolleable */
 .landingOverlay{
   height: 100dvh;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
+  overflow: hidden;              /* ✅ evita doble scroll */
+  -webkit-overflow-scrolling: auto;
+  touch-action: none;
 }
 
 /* La tarjeta también puede scrollear (doble seguridad) */
@@ -8266,17 +8225,6 @@ return `
     });
   }
 }
-const schoolOrder = [
-  'Psicoanálisis',
-  'Conductismo',
-  'Humanista',
-  'Cognitivo',
-  'Sistémico',
-  'Constructivista',
-  'Integrativo',
-  'Transversal',
-  'Otros'
-];
 
  function buildSchoolOptions(){
   const localSchools = uniq(LOCAL_MODELS.map(m => m.grupo));
@@ -8284,21 +8232,7 @@ const schoolOrder = [
 
   // unión sin duplicados
   const set = new Set([...localSchools, ...ghSchools]);
- const schools = [...set].sort((a,b)=>{
-  const ia = schoolOrder.indexOf(a);
-  const ib = schoolOrder.indexOf(b);
-
-  // ✅ si ambos están en la lista, orden histórico
-  if (ia !== -1 && ib !== -1) return ia - ib;
-
-  // ✅ si solo uno está, ese va primero
-  if (ia !== -1) return -1;
-  if (ib !== -1) return 1;
-
-  // ✅ si ninguno está, fallback alfabético
-  return a.localeCompare(b,'es');
-});
-
+  const schools = [...set].sort((a,b)=>a.localeCompare(b,'es'));
 
   schoolSelect.innerHTML = schools
     .map(g => `<option value="${escapeHtml(g)}">${escapeHtml(g)}</option>`)
