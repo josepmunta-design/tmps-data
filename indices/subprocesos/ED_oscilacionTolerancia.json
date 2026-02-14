@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_oscilacionTolerancia",
-  "updatedAt": "2026-02-14T18:00:50.941Z",
-  "totalModelos": 3,
+  "updatedAt": "2026-02-14T18:02:26.384Z",
+  "totalModelos": 4,
   "modelos": [
     {
       "modelId": "k_shear_cgt",
@@ -72,6 +72,22 @@
           "codigo": "m_dpm_dosificar",
           "nombre": "Dosificar contacto emocional",
           "texto": "Ayuda a ajustar duración e intensidad del contacto con el dolor, favoreciendo entradas breves y salidas seguras. Se usa especialmente en pacientes con tendencia a la inundación emocional.",
+          "sub": "ED_oscilacionTolerancia",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_worden_duelo",
+      "modelLabel": "Tareas del duelo",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "J. William Worden",
+      "modelYear": 1982,
+      "items": [
+        {
+          "codigo": "m_worden_dosificacion",
+          "nombre": "Dosificar contacto con el dolor",
+          "texto": "Intervención reguladora que ayuda a calibrar el ritmo de contacto con el dolor del duelo, facilitando entradas y salidas seguras. Previene tanto la evitación crónica como la inundación emocional.",
           "sub": "ED_oscilacionTolerancia",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_identidadReinversion",
-  "updatedAt": "2026-02-14T18:00:50.941Z",
-  "totalModelos": 5,
+  "updatedAt": "2026-02-14T18:02:26.384Z",
+  "totalModelos": 6,
   "modelos": [
     {
       "modelId": "k_klass_silverman_nickman_cb",
@@ -113,6 +113,29 @@
           "codigo": "m_cgt_autorizar_vida",
           "nombre": "Autorizar vida con duelo",
           "texto": "Intervención que legitima una vida significativa que incluye recuerdo y dolor, pero no queda definida exclusivamente por ellos.",
+          "sub": "ED_identidadReinversion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_worden_duelo",
+      "modelLabel": "Tareas del duelo",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "J. William Worden",
+      "modelYear": 1982,
+      "items": [
+        {
+          "codigo": "p_worden_reinversion",
+          "nombre": "Reinversión vital progresiva",
+          "texto": "Procedimiento centrado en facilitar el retorno gradual al deseo, al placer y al compromiso con la vida tras la pérdida. Se trabaja la culpa asociada al bienestar, la vivencia de traición al vínculo perdido y el miedo a olvidar o sustituir.\n\nLa reinversión no se plantea como un salto abrupto ni como una exigencia de crecimiento, sino como un proceso progresivo y coherente con la continuidad biográfica. El terapeuta acompaña la exploración de nuevos intereses, vínculos y proyectos, ayudando a integrar el pasado con el presente sin renunciar a ninguno.",
+          "sub": "ED_identidadReinversion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_worden_autorizar",
+          "nombre": "Autorizar bienestar sin traición",
+          "texto": "Microintervención dirigida a legitimar experiencias de bienestar, placer y compromiso vital sin vivirse como traición al vínculo perdido. Facilita la reinversión vital y la continuidad identitaria.",
           "sub": "ED_identidadReinversion",
           "tipo": "micro"
         }

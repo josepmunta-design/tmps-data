@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_reconocimiento",
-  "updatedAt": "2026-02-14T18:00:50.941Z",
-  "totalModelos": 3,
+  "updatedAt": "2026-02-14T18:02:26.384Z",
+  "totalModelos": 4,
   "modelos": [
     {
       "modelId": "k_rando_r_processes",
@@ -37,6 +37,36 @@
           "codigo": "m_cgt_bloqueo",
           "nombre": "Nombrar el bloqueo del duelo",
           "texto": "Microintervención que ayuda a conceptualizar el duelo prolongado como un proceso bloqueado y no como una incapacidad personal, reduciendo vergüenza y aumentando disposición al trabajo terapéutico.",
+          "sub": "ED_reconocimiento",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_worden_duelo",
+      "modelLabel": "Tareas del duelo",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "J. William Worden",
+      "modelYear": 1982,
+      "items": [
+        {
+          "codigo": "p_worden_narrativa",
+          "nombre": "Narrativa de la pérdida",
+          "texto": "Procedimiento clínico central en el modelo de Worden. Consiste en facilitar la construcción de una narrativa coherente sobre la pérdida que permita integrar el acontecimiento a nivel cognitivo y emocional. El terapeuta invita a relatar qué ocurrió, cómo se supo, qué pasó antes y después, y cómo se fue comprendiendo la pérdida con el paso del tiempo.\n\nEl foco no está en provocar una descarga emocional intensa ni en repetir el relato como exposición, sino en observar cómo se cuenta la historia: vacíos narrativos, saltos temporales, uso persistente del condicional, tono excesivamente intelectualizado o minimizador. Estos indicadores permiten detectar negación encubierta, duelos no autorizados o dificultades para reconocer la irreversibilidad. A medida que la narrativa se vuelve más concreta y afectivamente conectada, el reconocimiento de la pérdida se consolida sin forzarlo.",
+          "sub": "ED_reconocimiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_worden_irreversibilidad",
+          "nombre": "Nombrar la irreversibilidad",
+          "texto": "Intervención breve y focal que consiste en poner palabras claras y concretas a la irreversibilidad de la pérdida. El terapeuta ayuda a diferenciar entre esperanza funcional y fantasías defensivas de reversión. Se utiliza con especial cuidado para evitar confrontaciones prematuras.",
+          "sub": "ED_reconocimiento",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_worden_condicionales",
+          "nombre": "Detectar condicionales de negación",
+          "texto": "Señalamiento suave del uso reiterado del condicional como indicador de dificultad para reconocer la pérdida. Se introduce como observación clínica, no como corrección, favoreciendo la toma de conciencia sin ruptura de la alianza.",
           "sub": "ED_reconocimiento",
           "tipo": "micro"
         }
