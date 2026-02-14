@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_narrativaAutobiografica",
-  "updatedAt": "2026-02-14T09:45:13.039Z",
-  "totalModelos": 39,
+  "updatedAt": "2026-02-14T09:51:10.495Z",
+  "totalModelos": 40,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -488,6 +488,36 @@
           "codigo": "m_exist_micro_ritual",
           "nombre": "Micro-ritual de cierre",
           "texto": "Cierre breve (palabra, gesto, compromiso mínimo) que consolida el sentido de la sesión y ayuda a integrar lo trabajado. Funciona como pegamento entre experiencia vivida y continuidad en la vida cotidiana (Schneider, Bugental & Pierson, 2015).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-centrada-en-la-persona-rogers-1951",
+      "modelLabel": "Terapia centrada en la persona",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Carl R. Rogers",
+      "modelYear": 1951,
+      "items": [
+        {
+          "codigo": "p_pcp_clarificacion",
+          "nombre": "Clarificación de significado personal",
+          "texto": "Procedimiento destinado a ayudar al cliente a explorar el significado subjetivo de sus experiencias, reformulando y organizando narrativamente lo vivido para aumentar coherencia entre experiencia y autoconcepto. (Rogers, 1951; 1961).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pcp_reflejo_contenido",
+          "nombre": "Reflejo simple de contenido",
+          "texto": "Reformulación breve del contenido expresado por el cliente utilizando palabras similares para mostrar comprensión básica y facilitar que el propio cliente continúe elaborando su experiencia sin sentirse interrumpido ni reinterpretado. (Rogers, 1951).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pcp_resumen",
+          "nombre": "Resumen integrador",
+          "texto": "Síntesis periódica de lo expresado durante la sesión que organiza los temas y emociones principales, permitiendo al cliente verse reflejado de forma coherente y continuar el proceso con mayor claridad. (Rogers, 1951).",
           "sub": "N_narrativaAutobiografica",
           "tipo": "micro"
         }

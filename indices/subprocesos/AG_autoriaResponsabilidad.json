@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-02-14T09:45:13.039Z",
-  "totalModelos": 80,
+  "updatedAt": "2026-02-14T09:51:10.495Z",
+  "totalModelos": 81,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -1357,6 +1357,36 @@
           "codigo": "m_exist_lenguaje_responsabilidad",
           "nombre": "Lenguaje de responsabilidad",
           "texto": "Ajustes del lenguaje para pasar de pasividad (“me hacen”, “no se puede”) a autoría realista (“yo hago”, “yo decido”, “yo no elijo”). Refuerza responsabilidad como capacidad de responder, no como culpa (Yalom, 1980).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-centrada-en-la-persona-rogers-1951",
+      "modelLabel": "Terapia centrada en la persona",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Carl R. Rogers",
+      "modelYear": 1951,
+      "items": [
+        {
+          "codigo": "p_pcp_confianza_organismica",
+          "nombre": "Fomento de confianza organísmica",
+          "texto": "Procedimiento implícito en el proceso terapéutico donde el cliente aprende gradualmente a confiar en sus propias experiencias y valoraciones internas en lugar de depender exclusivamente de criterios externos, fortaleciendo autonomía y autorregulación. (Rogers, 1961).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pcp_no_directividad",
+          "nombre": "Acompañamiento no directivo del proceso",
+          "texto": "Procedimiento consistente en evitar dirigir activamente el contenido o las decisiones del cliente, respetando su ritmo y prioridades, y confiando en que el proceso de exploración libre dentro de un clima facilitador conducirá al crecimiento psicológico. (Rogers, 1951; 1961).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pcp_autonomia",
+          "nombre": "Fomento de autonomía decisional",
+          "texto": "Recordatorio implícito o explícito de que las decisiones corresponden al cliente, reforzando confianza en su experiencia interna y evitando dependencia del terapeuta como autoridad externa. (Rogers, 1961).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }

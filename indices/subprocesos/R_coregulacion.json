@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_coregulacion",
-  "updatedAt": "2026-02-14T09:45:13.039Z",
-  "totalModelos": 19,
+  "updatedAt": "2026-02-14T09:51:10.495Z",
+  "totalModelos": 20,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -195,6 +195,64 @@
           "codigo": "m_eft_conexion",
           "nombre": "Tareas de conexión emocional",
           "texto": "Pequeñas tareas estructuradas fuera de sesión que invitan a la pareja a practicar accesibilidad y responsividad emocional en contextos cotidianos. Refuerzan la consolidación del apego seguro y generalizan el cambio más allá de la consulta (Johnson, 2019).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-centrada-en-la-persona-rogers-1951",
+      "modelLabel": "Terapia centrada en la persona",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Carl R. Rogers",
+      "modelYear": 1951,
+      "items": [
+        {
+          "codigo": "p_pcp_clima_facilitador",
+          "nombre": "Establecimiento de clima facilitador",
+          "texto": "Procedimiento continuo mediante el cual el terapeuta crea un clima psicológico seguro caracterizado por aceptación, respeto y ausencia de juicio, permitiendo que el cliente explore libremente su experiencia sin temor a evaluación externa, condición fundamental para que la tendencia actualizante pueda desplegarse. (Rogers, 1951; 1961).",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pcp_empatia_precisa",
+          "nombre": "Empatía precisa y comprensión experiencial",
+          "texto": "Procedimiento relacional en el que el terapeuta se esfuerza por comprender el mundo interno del cliente como si fuera propio, sin perder la cualidad de “como si”, devolviendo esa comprensión mediante reformulaciones que captan significado emocional implícito y favorecen mayor simbolización de la experiencia. (Rogers, 1951; 1961).",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pcp_aceptacion_incondicional",
+          "nombre": "Aceptación positiva incondicional",
+          "texto": "Procedimiento consistente en ofrecer una actitud de aceptación y valoración del cliente como persona independientemente de sus conductas o emociones, contrarrestando condiciones de valor internalizadas y facilitando que experiencias previamente negadas puedan ser reconocidas e integradas. (Rogers, 1951; 1961).",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pcp_no_directividad",
+          "nombre": "Acompañamiento no directivo del proceso",
+          "texto": "Procedimiento consistente en evitar dirigir activamente el contenido o las decisiones del cliente, respetando su ritmo y prioridades, y confiando en que el proceso de exploración libre dentro de un clima facilitador conducirá al crecimiento psicológico. (Rogers, 1951; 1961).",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pcp_reflejo_sentimiento",
+          "nombre": "Reflejo de sentimiento explícito",
+          "texto": "Identificación y devolución directa de la emoción claramente expresada por el cliente, ayudando a que la reconozca con mayor claridad y profundidad, y promoviendo mayor conciencia afectiva. (Rogers, 1951; 1961).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pcp_silencio",
+          "nombre": "Silencio facilitador",
+          "texto": "Uso intencional del silencio para permitir que el cliente contacte con su experiencia interna sin interrupciones, favoreciendo simbolización espontánea y autoexploración profunda. (Rogers, 1961).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pcp_validacion",
+          "nombre": "Validación no evaluativa",
+          "texto": "Expresión de aceptación y comprensión sin juicio ni consejo, que comunica respeto profundo por la experiencia del cliente y reduce defensividad derivada de condiciones de valor internalizadas. (Rogers, 1951).",
           "sub": "R_coregulacion",
           "tipo": "micro"
         }

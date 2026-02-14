@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_rotulacion",
-  "updatedAt": "2026-02-14T09:45:13.039Z",
-  "totalModelos": 63,
+  "updatedAt": "2026-02-14T09:51:10.495Z",
+  "totalModelos": 64,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -889,6 +889,50 @@
           "codigo": "m_exist_aislamiento_contacto",
           "nombre": "Explorar aislamiento y contacto",
           "texto": "Intervención breve que diferencia soledad existencial, retraimiento defensivo y necesidad legítima de vínculo, clarificando qué tipo de contacto se busca y qué se teme del otro. Aumenta precisión emocional e interpersonal (Yalom, 1980).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-centrada-en-la-persona-rogers-1951",
+      "modelLabel": "Terapia centrada en la persona",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Carl R. Rogers",
+      "modelYear": 1951,
+      "items": [
+        {
+          "codigo": "p_pcp_empatia_precisa",
+          "nombre": "Empatía precisa y comprensión experiencial",
+          "texto": "Procedimiento relacional en el que el terapeuta se esfuerza por comprender el mundo interno del cliente como si fuera propio, sin perder la cualidad de “como si”, devolviendo esa comprensión mediante reformulaciones que captan significado emocional implícito y favorecen mayor simbolización de la experiencia. (Rogers, 1951; 1961).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pcp_reflejo_sentimientos",
+          "nombre": "Reflejo de sentimientos",
+          "texto": "Procedimiento clásico donde el terapeuta devuelve al cliente el contenido emocional implícito en su discurso, ayudando a clarificar, diferenciar y profundizar en la experiencia afectiva, promoviendo mayor conciencia y reorganización interna. (Rogers, 1951).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pcp_simbolizacion",
+          "nombre": "Facilitación de simbolización emocional",
+          "texto": "Procedimiento mediante el cual el terapeuta acompaña al cliente en el proceso de poner en palabras experiencias previamente vagas, negadas o distorsionadas, permitiendo que pasen de lo implícito a lo simbolizado y puedan integrarse en el self. (Rogers, 1951).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pcp_reflejo_sentimiento",
+          "nombre": "Reflejo de sentimiento explícito",
+          "texto": "Identificación y devolución directa de la emoción claramente expresada por el cliente, ayudando a que la reconozca con mayor claridad y profundidad, y promoviendo mayor conciencia afectiva. (Rogers, 1951; 1961).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pcp_reflejo_implicito",
+          "nombre": "Reflejo de sentimiento implícito",
+          "texto": "Señalamiento empático de una emoción no explícitamente verbalizada pero inferida con cautela desde el tono y contexto del discurso, favoreciendo acceso a experiencia emocional más profunda sin imponer interpretación. (Rogers, 1961).",
           "sub": "RE_rotulacion",
           "tipo": "micro"
         }
