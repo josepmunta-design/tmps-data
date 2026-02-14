@@ -3925,42 +3925,56 @@ ${keys.length ? `
     // =========================================================
     // 4) Render ficha de modelo (sin procesos/mjps)
     // =========================================================
-    function renderModelInfo(m){
-  // 🛡️ BLINDAJE: si no hay modelo (init o reset), muestra mensaje y sal
-   // 🛡️ BLINDAJE REAL: si no hay modelo, NO toques el panel
+   function renderModelInfo(m){
+
+  // ✅ Si no hay modelo: pinta SIEMPRE el hero y resetea estados
   if(!m || !m.id){
+
+    modelInfoEl.classList.remove('school-view');
+    modelInfoEl.style.removeProperty('--schoolColor');
+
+    // resetea glow suave
+    const rightPanel = document.querySelector('.panel.right');
+    if (rightPanel){
+      rightPanel.style.setProperty('--panelGlow', 'rgba(217,170,63,0.12)');
+    }
+
+    // oculta sticky header si existía
+    if (window.__SMH){
+      window.__SMH.setTitle('');
+      window.__SMH.setAuthor('');
+      window.__SMH.hide?.();
+    }
+    const smh = document.getElementById('stickyModelHeader');
+    if (smh) smh.classList.remove('is-on');
+
+    modelInfoEl.innerHTML = `
+      <div class="mp-hero">
+        <div class="mp-hero-eyebrow">Biblioteca viva</div>
+        <div class="mp-hero-title">Modelos psicoterapéuticos</div>
+        <div class="mp-hero-text">
+          Explora cómo distintas escuelas entienden el cambio, el sufrimiento y la intervención clínica.
+        </div>
+
+        <div class="mp-hero-steps">
+          <div class="mp-step"><span class="mp-step-dot"></span>1) Elige una escuela</div>
+          <div class="mp-step"><span class="mp-step-dot"></span>2) Haz clic en un modelo</div>
+          <div class="mp-step"><span class="mp-step-dot"></span>3) Lee influencias, procedimientos y micros</div>
+        </div>
+      </div>
+
+      <div class="mp-hint">Selecciona una escuela y luego un modelo para ver toda su información.</div>
+    `;
     return;
   }
-  if(!m){
-   modelInfoEl.innerHTML = `
-  <div class="mp-hero">
-    <div class="mp-hero-eyebrow">Biblioteca viva</div>
-    <div class="mp-hero-title">Modelos psicoterapéuticos</div>
-    <div class="mp-hero-text">
-      Explora cómo distintas escuelas entienden el cambio, el sufrimiento y la intervención clínica.
-    </div>
 
-    <div class="mp-hero-steps">
-      <div class="mp-step"><span class="mp-step-dot"></span>1) Elige una escuela</div>
-      <div class="mp-step"><span class="mp-step-dot"></span>2) Haz clic en un modelo</div>
-      <div class="mp-step"><span class="mp-step-dot"></span>3) Lee influencias, procedimientos y micros</div>
-    </div>
-  </div>
-
-  <div class="mp-hint">Selecciona una escuela y luego un modelo para ver toda su información.</div>
-`;
- 
-  }
-try{
-  // (deja esto solo mientras depuras)
-  console.log('OPEN MODEL', m.label, m.id);
-}catch(e){}
-
+  // ---- a partir de aquí, ya hay modelo real ----
+  try{ console.log('OPEN MODEL', m.label, m.id); }catch(e){}
   const col = groupColor.get(m.grupo) || '#ffffff';
-      modelInfoEl.classList.remove('school-view');
-modelInfoEl.style.removeProperty('--schoolColor');
 
-  // ✅ aplica “tinte” del grupo al panel derecho (glass glow)
+  modelInfoEl.classList.remove('school-view');
+  modelInfoEl.style.removeProperty('--schoolColor');
+
   const rightPanel = document.querySelector('.panel.right');
   if (rightPanel){
     rightPanel.style.setProperty('--panelGlow', hexToRgba(col, 0.22));
