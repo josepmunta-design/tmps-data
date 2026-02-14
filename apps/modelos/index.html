@@ -2425,8 +2425,8 @@ contain: layout paint;
 
 /* ================== /LANDING ================== */
 
-    // secuencias circulares. 
-  /* ===== SECUENCIAS (FLOW) — modo CIRCULAR para protocolo_ciclico ===== */
+/* secuencias circulares. */
+/* ===== SECUENCIAS (FLOW) — modo CIRCULAR para protocolo_ciclico ===== */
 .mp-flow.mp-flow-circ{
   position: relative;
 
@@ -3003,35 +3003,7 @@ function hexToRgba(hex, a=0.14){
   const b = n & 255;
   return `rgba(${r},${g},${b},${a})`;
 }
-     function getAuthorPhoto(autorNombre) {
-  if (!FOTOS || !FOTOS.authors) return null;
   
-  // Normaliza la clave: minúsculas, quita espacios extra
-  const key = String(autorNombre || '')
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, ' '); // maneja "Albert Ellis" → "albert ellis"
-  
-  const fileName = FOTOS.authors[key];
-  if (!fileName) return null;
-  
-  return `https://raw.githubusercontent.com/josepmunta-design/tmps-data/main/data/Core/fotos/${fileName}`;
-}
-
-function getModelPhoto(modelId, autorFallback) {
-  if (!FOTOS || !FOTOS.models) return null;
-  
-  const key = String(modelId || '').toLowerCase().trim();
-  const fileName = FOTOS.models[key];
-  
-  // Si hay foto específica del modelo → úsala
-  if (fileName) {
-    return `https://raw.githubusercontent.com/josepmunta-design/tmps-data/main/data/Core/fotos/${fileName}`;
-  }
-  
-  // Sino → fallback a foto del autor
-  return getAuthorPhoto(autorFallback);
-}
 function tintForModel(model, selectedSchool){
   // Prioridad 1: escuela seleccionada (tu UI trabaja por escuela)
   if (selectedSchool && groupColor.has(selectedSchool)) return groupColor.get(selectedSchool);
@@ -3801,7 +3773,8 @@ const schools = [...set].sort((a,b)=>{
 
   const list = filteredModelsBySchool(currentSchool);
 
-  modelsList.style.setProperty('--schoolColor', groupColor.get(currentSchool) || '#D9AA3F');
+  modelsListEl.style.setProperty('--schoolColor', groupColor.get(currentSchool) || '#D9AA3F');
+
 
   countLine.innerHTML = `
     <span class="count-n">${list.length}</span>
@@ -3868,18 +3841,6 @@ return `
   }
 }
 
-// ================== Fotos de autores ==================
-function getAuthorPhoto(authorName){
-  const name = String(authorName ?? '').trim().toLowerCase();
-
-  // ✅ aquí solo empezamos con Pavlov
-  if (name === 'iván pávlov' || name === 'ivan pavlov' || name.includes('pavlov')){
-    // 👇 PON AQUÍ la URL EXACTA a la imagen en GitHub (raw)
-    return 'PEGA_AQUI_TU_URL_RAW_DE_PAVLOV';
-  }
-
-  return null;
-}
 
 function renderSchoolInfo(grupo){
   if(!grupo){
