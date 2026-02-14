@@ -1,0 +1,85 @@
+{
+  "id": "k_stroebe_schut_dpm",
+  "grupo": "Integrativo",
+  "label": "Dual Process Model of Coping with Bereavement",
+  "year": 1999,
+  "autores": "Margaret Stroebe & Henk Schut",
+  "hideInModels": true,
+  "descripcion": "El Dual Process Model (DPM) concibe el duelo como un proceso dinámico de afrontamiento que oscila entre dos orientaciones fundamentales: la orientación hacia la pérdida y la orientación hacia la restauración. A diferencia de los modelos centrados en tareas o contenidos específicos, el DPM introduce como núcleo clínico el ritmo del proceso. El duelo saludable no implica permanecer en el dolor ni evitarlo, sino alternar de forma flexible entre el contacto con la ausencia y el compromiso con la vida cotidiana.\n\nEl sufrimiento se cronifica cuando esta oscilación se rigidiza: ya sea por evitación persistente del dolor (hiperorientación a la restauración) o por inmersión prolongada en la pérdida (hiperorientación a la pérdida). El objetivo terapéutico no es elegir un polo, sino restaurar la capacidad de oscilar, ajustando el ritmo, la duración y el contexto de cada orientación.",
+  "mjps": ["ED"],
+  "subprocesos": [
+    "ED_oscilacionTolerancia",
+    "ED_expresionVinculada",
+    "ED_ajusteMundoPerdidasSec"
+  ],
+  "conceptos": [
+    {
+      "nombre": "Orientación hacia la pérdida",
+      "descripcion": "Conjunto de experiencias centradas en el dolor de la ausencia: tristeza, añoranza, rabia, culpa, recuerdos, confrontación con la realidad de la pérdida y con el vínculo roto. Incluye tanto el contacto emocional como la evitación defensiva de estos contenidos."
+    },
+    {
+      "nombre": "Orientación hacia la restauración",
+      "descripcion": "Conjunto de actividades y procesos dirigidos a reorganizar la vida cotidiana: asumir nuevos roles, resolver problemas prácticos, distraerse, comprometerse con tareas, relaciones y proyectos, y construir una vida funcional sin lo perdido."
+    },
+    {
+      "nombre": "Oscilación",
+      "descripcion": "Movimiento flexible y autorregulado entre orientación a la pérdida y orientación a la restauración. La oscilación permite dosificar el dolor y prevenir tanto la sobrecarga emocional como la desconexión afectiva."
+    }
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Psicoeducación sobre oscilación",
+      "codigo": "p_dpm_psicoeducacion",
+      "procesos": ["ED_oscilacionTolerancia"],
+      "texto": "Procedimiento psicoeducativo destinado a normalizar la alternancia entre momentos de contacto con el dolor y momentos de implicación en la vida cotidiana. El terapeuta explica explícitamente que no es necesario ni saludable estar siempre mal ni estar siempre ocupado, y que ambos polos cumplen una función reguladora.\n\nEsta psicoeducación reduce culpa (si me distraigo, traiciono) y miedo (si entro en el dolor, no saldré), y proporciona un marco comprensible que legitima el ritmo natural del duelo."
+    },
+    {
+      "nombre": "Mapeo de patrones de oscilación",
+      "codigo": "p_dpm_mapeo",
+      "procesos": ["ED_oscilacionTolerancia"],
+      "texto": "Exploración conjunta de cómo oscila actualmente la persona entre pérdida y restauración. Se identifican momentos, contextos y señales corporales que indican entrada o salida de cada orientación, así como rigideces (evitación crónica o inmersión prolongada).\n\nEl mapeo permite transformar vivencias caóticas en un patrón observable y modulable, facilitando intervenciones ajustadas al ritmo real del sistema."
+    },
+    {
+      "nombre": "Facilitación de entrada al polo de pérdida",
+      "codigo": "p_dpm_entrada_perdida",
+      "procesos": ["ED_expresionVinculada"],
+      "texto": "Procedimiento destinado a facilitar un contacto dosificado con el dolor cuando existe evitación persistente. Incluye focalización emocional, evocación de recuerdos, expresión dirigida y trabajo con la ausencia, siempre dentro de la ventana de tolerancia.\n\nEl objetivo no es intensificar el sufrimiento, sino permitir que el dolor tenga un espacio legítimo y limitado, evitando su cronificación por evitación."
+    },
+    {
+      "nombre": "Facilitación de salida hacia restauración",
+      "codigo": "p_dpm_salida_restauracion",
+      "procesos": ["ED_ajusteMundoPerdidasSec"],
+      "texto": "Procedimiento que ayuda a la persona a reorientarse hacia actividades de la vida cotidiana cuando existe inmersión prolongada en la pérdida. Se trabaja la legitimación del descanso emocional, la distracción funcional y la resolución de tareas prácticas.\n\nNo se trata de huir del duelo, sino de permitir pausas reguladoras que previenen el colapso emocional y sostienen el proceso a largo plazo."
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Normalizar la alternancia",
+      "codigo": "m_dpm_normalizar",
+      "procesos": ["ED_oscilacionTolerancia"],
+      "texto": "Intervención breve que valida explícitamente el ir y venir entre dolor y funcionalidad como señal de regulación, no de incoherencia. Reduce autojuicio y expectativas irreales de duelo continuo."
+    },
+    {
+      "nombre": "Detectar rigidez de polo",
+      "codigo": "m_dpm_rigidez",
+      "procesos": ["ED_oscilacionTolerancia"],
+      "texto": "Señalamiento clínico de patrones de fijación en uno de los polos (solo dolor o solo actividad), introducido como observación descriptiva y no como crítica."
+    },
+    {
+      "nombre": "Autorizar pausas del duelo",
+      "codigo": "m_dpm_pausas",
+      "procesos": ["ED_ajusteMundoPerdidasSec"],
+      "texto": "Intervención que legitima momentos de descanso emocional, distracción o disfrute sin vivirse como evitación patológica ni traición al vínculo."
+    },
+    {
+      "nombre": "Dosificar contacto emocional",
+      "codigo": "m_dpm_dosificar",
+      "procesos": ["ED_oscilacionTolerancia"],
+      "texto": "Ayuda a ajustar duración e intensidad del contacto con el dolor, favoreciendo entradas breves y salidas seguras. Se usa especialmente en pacientes con tendencia a la inundación emocional."
+    }
+  ],
+  "refs": [
+    "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement.",
+    "Stroebe, M. & Schut, H. (2010). The dual process model of coping with bereavement: A decade on."
+  ]
+}
