@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_oscilacionTolerancia",
-  "updatedAt": "2026-02-14T17:58:59.784Z",
-  "totalModelos": 2,
+  "updatedAt": "2026-02-14T18:00:50.941Z",
+  "totalModelos": 3,
   "modelos": [
     {
       "modelId": "k_shear_cgt",
@@ -28,6 +28,50 @@
           "codigo": "m_cgt_evitacion",
           "nombre": "Reducir evitación protectora",
           "texto": "Intervención breve que señala cómo la evitación, aunque protectora a corto plazo, mantiene el dolor a largo plazo, facilitando una apertura gradual al contacto emocional.",
+          "sub": "ED_oscilacionTolerancia",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_stroebe_schut_dpm",
+      "modelLabel": "Dual Process Model of Coping with Bereavement",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Margaret Stroebe & Henk Schut",
+      "modelYear": 1999,
+      "items": [
+        {
+          "codigo": "p_dpm_psicoeducacion",
+          "nombre": "Psicoeducación sobre oscilación",
+          "texto": "Procedimiento psicoeducativo destinado a normalizar la alternancia entre momentos de contacto con el dolor y momentos de implicación en la vida cotidiana. El terapeuta explica explícitamente que no es necesario ni saludable estar siempre mal ni estar siempre ocupado, y que ambos polos cumplen una función reguladora.\n\nEsta psicoeducación reduce culpa (si me distraigo, traiciono) y miedo (si entro en el dolor, no saldré), y proporciona un marco comprensible que legitima el ritmo natural del duelo.",
+          "sub": "ED_oscilacionTolerancia",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dpm_mapeo",
+          "nombre": "Mapeo de patrones de oscilación",
+          "texto": "Exploración conjunta de cómo oscila actualmente la persona entre pérdida y restauración. Se identifican momentos, contextos y señales corporales que indican entrada o salida de cada orientación, así como rigideces (evitación crónica o inmersión prolongada).\n\nEl mapeo permite transformar vivencias caóticas en un patrón observable y modulable, facilitando intervenciones ajustadas al ritmo real del sistema.",
+          "sub": "ED_oscilacionTolerancia",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dpm_normalizar",
+          "nombre": "Normalizar la alternancia",
+          "texto": "Intervención breve que valida explícitamente el ir y venir entre dolor y funcionalidad como señal de regulación, no de incoherencia. Reduce autojuicio y expectativas irreales de duelo continuo.",
+          "sub": "ED_oscilacionTolerancia",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dpm_rigidez",
+          "nombre": "Detectar rigidez de polo",
+          "texto": "Señalamiento clínico de patrones de fijación en uno de los polos (solo dolor o solo actividad), introducido como observación descriptiva y no como crítica.",
+          "sub": "ED_oscilacionTolerancia",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dpm_dosificar",
+          "nombre": "Dosificar contacto emocional",
+          "texto": "Ayuda a ajustar duración e intensidad del contacto con el dolor, favoreciendo entradas breves y salidas seguras. Se usa especialmente en pacientes con tendencia a la inundación emocional.",
           "sub": "ED_oscilacionTolerancia",
           "tipo": "micro"
         }
