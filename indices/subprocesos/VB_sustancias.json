@@ -1,7 +1,7 @@
 {
   "subprocesoId": "VB_sustancias",
-  "updatedAt": "2026-02-14T22:30:25.223Z",
-  "totalModelos": 4,
+  "updatedAt": "2026-02-14T22:30:43.983Z",
+  "totalModelos": 3,
   "modelos": [
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
@@ -60,106 +60,6 @@
           "codigo": "m_lazarus_chequeo_biologico",
           "nombre": "Chequeo de sueño, medicación y consumo",
           "texto": "Microintervención que revisa factores biológicos básicos que pueden estar influyendo en el estado emocional y conductual (calidad del sueño, adherencia a medicación, consumo de sustancias), evitando interpretaciones psicológicas de fenómenos primariamente fisiológicos. (Lazarus, 1989)",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        }
-      ]
-    },
-    {
-      "modelId": "ttm_prochaska_diclemente",
-      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
-      "modelGrupo": "Transversal",
-      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
-      "modelYear": "1983–actualidad",
-      "items": [
-        {
-          "codigo": "p_ttm_control_estimulos",
-          "nombre": "Control de estímulos (diseño del entorno)",
-          "texto": "Modificar señales ambientales que disparan la conducta (sustancias, pantallas, horarios, lugares, compañías). Es un puente directo de preparación→acción y reduce carga de “fuerza de voluntad”.",
-          "sub": "VB_sustancias",
-          "tipo": "procedimiento"
-        },
-        {
-          "codigo": "m_ttm_vb_estadio",
-          "nombre": "Evaluar estadio por conducta VB (no “motivación general”)",
-          "texto": "Evaluación específica del estadio aplicado a cada condición basal relevante. Permite intervenciones finas: acción en sueño, contemplación en alcohol, precontemplación en cannabis, etc.",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_mmv",
-          "nombre": "VB — Meta mínima viable (MMV) como criterio de “viabilidad terapéutica”",
-          "texto": "Definir una MMV que no sea “vida ideal”, sino mínimo suficiente para que la terapia funcione: sueño suficiente para no estar disociado/irritable, reducción o no consumo para poder mentalizar, etc.",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_conciencia",
-          "nombre": "VB – Sustancias: conciencia funcional sin confrontación (precontemplación)",
-          "texto": "Conciencia basada en funcionamiento: efectos en sueño, regulación, memoria, impulsividad, adherencia y capacidad reflexiva. Sin moralizar ni discutir etiquetas diagnósticas.",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_registro",
-          "nombre": "VB – Sustancias: feedback de patrón (registro breve + mapa de disparadores)",
-          "texto": "Registrar episodios (disparadores, emoción, contexto, consecuencia) para convertir el “consumo” en patrón observable. Base para decisiones realistas y para prevención de recaídas.",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_balance",
-          "nombre": "VB – Sustancias: ambivalencia y balance decisional (con ganancias del consumo)",
-          "texto": "Balance pros/contras incorporando beneficios percibidos (alivio, pertenencia, anestesia emocional) y costes clínicos (bloqueo emocional, inestabilidad, recaídas sintomáticas).",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_si_entonces",
-          "nombre": "VB – Sustancias: “si–entonces” para momentos de riesgo",
-          "texto": "Plan específico: “Si aparece X (ansiedad, fin de semana, llamada de tal persona), entonces haré Y (conducta alternativa + apoyo)”. Reduce recaída impulsiva.",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_estimulos",
-          "nombre": "VB – Sustancias: control de estímulos (entorno y compañía)",
-          "texto": "Modificar señales: lugares, rutinas, acceso, dinero, compañía, horarios. Reduce tentación sin exigir control interno máximo desde el día 1.",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_reduccion",
-          "nombre": "VB – Sustancias: reducción de daño como puente (preparación→acción)",
-          "texto": "Cuando abstinencia no es viable: reducir dosis/frecuencia/contextos de riesgo y evitar combinaciones peligrosas. Se define como avance (no como “fracaso moral”).",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_noConsumo",
-          "nombre": "VB – Sustancias: no consumo como condición funcional de la terapia",
-          "texto": "Cuando el consumo bloquea procesos nucleares (regulación, mentalización, adherencia), se formula el no consumo como condición terapéutica funcional, negociada y explícita.",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_refuerzo",
-          "nombre": "VB – Sustancias: manejo de reforzadores (sustituir refuerzos)",
-          "texto": "Sustituir el refuerzo del consumo por refuerzos alternativos inmediatos (placer, conexión, calma) y planificar recompensas por pasos de cambio. Evita depender solo de motivación.",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_recaida",
-          "nombre": "VB – Sustancias: recaída/reciclaje sin ruptura (análisis + ajuste de plan)",
-          "texto": "Recaída como información: disparadores, vulnerabilidades y decisiones previas. Se ajusta el plan y el estadio sin castigo ni banalización, cuidando continuidad y alianza.",
-          "sub": "VB_sustancias",
-          "tipo": "micro"
-        },
-        {
-          "codigo": "m_ttm_vb_sustancias_narrativa",
-          "nombre": "VB – Sustancias: consolidación identitaria (mantenimiento profundo)",
-          "texto": "Integrar el cambio en identidad narrativa: quién soy sin consumir, qué regula ahora, qué valores sostienen el cambio. Disminuye el “control forzado” y sostiene mantenimiento.",
           "sub": "VB_sustancias",
           "tipo": "micro"
         }
