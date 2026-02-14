@@ -1,0 +1,85 @@
+{
+  "id": "k_klass_silverman_nickman_cb",
+  "grupo": "Integrativo",
+  "label": "Continuing Bonds (Vínculo continuo)",
+  "year": 1996,
+  "autores": "Dennis Klass, Phyllis Silverman & Steven Nickman",
+  "hideInModels": true,
+  "descripcion": "El modelo de Continuing Bonds propone que el duelo saludable no implica necesariamente desligarse emocionalmente de la persona perdida, sino transformar la relación con ella. Frente a los modelos clásicos que entendían la resolución del duelo como desapego, esta perspectiva sostiene que muchas personas mantienen vínculos internos duraderos con quienes han perdido, y que dichos vínculos pueden ser adaptativos o desadaptativos según su forma.\n\nEl núcleo clínico del modelo no es la presencia o ausencia del vínculo, sino su reorganización. El sufrimiento se mantiene cuando el vínculo permanece fijado a la ausencia externa (búsqueda, evitación extrema o congelación), mientras que la adaptación se produce cuando el vínculo se integra de forma flexible en la vida psíquica, permitiendo recordar, dialogar simbólicamente y mantener un sentido de continuidad sin quedar atrapado en la pérdida.",
+  "mjps": ["ED"],
+  "subprocesos": [
+    "ED_vinculoContinuo",
+    "ED_expresionVinculada",
+    "ED_identidadReinversion"
+  ],
+  "conceptos": [
+    {
+      "nombre": "Vínculo continuo",
+      "descripcion": "Relación interna y simbólica con la persona perdida que puede mantenerse a lo largo del tiempo. El vínculo no desaparece, sino que cambia de forma y función dentro del sistema psíquico."
+    },
+    {
+      "nombre": "Reorganización del vínculo",
+      "descripcion": "Proceso mediante el cual el vínculo pasa de estar anclado a la presencia externa o a la ausencia dolorosa, a convertirse en una presencia interna integrada, flexible y reguladora."
+    },
+    {
+      "nombre": "Vínculo adaptativo vs. desadaptativo",
+      "descripcion": "Un vínculo es adaptativo cuando permite continuidad, sentido y regulación emocional sin bloquear la vida actual; es desadaptativo cuando se asocia a búsqueda compulsiva, evitación extrema, culpa intensa o congelación identitaria."
+    }
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Exploración del vínculo actual",
+      "codigo": "p_cb_exploracion_vinculo",
+      "procesos": ["ED_vinculoContinuo"],
+      "texto": "Procedimiento clínico destinado a explorar cómo se mantiene actualmente el vínculo con la persona perdida. El terapeuta indaga si el vínculo se expresa a través de recuerdos, objetos, rituales, pensamientos recurrentes, diálogo interno o evitación del recuerdo.\n\nEl objetivo es comprender la forma y función del vínculo, diferenciando entre presencia interna integrada y fijación a la ausencia externa. Esta exploración permite detectar bloqueos del duelo relacionados con búsqueda compulsiva, congelación emocional o ruptura defensiva del vínculo."
+    },
+    {
+      "nombre": "Construcción de vínculo simbólico",
+      "codigo": "p_cb_vinculo_simbolico",
+      "procesos": ["ED_vinculoContinuo"],
+      "texto": "Procedimiento orientado a facilitar la transición del vínculo hacia una forma simbólica e interna. Incluye la elaboración de rituales, objetos simbólicos, cartas, conversaciones imaginadas o actos conmemorativos que permiten mantener la relación sin depender de la presencia externa.\n\nEl trabajo no busca crear fantasía ni negar la muerte, sino ofrecer un contenedor simbólico que permita sostener el vínculo de forma regulada y compatible con la vida actual."
+    },
+    {
+      "nombre": "Diferenciación entre recordar y quedar atrapado",
+      "codigo": "p_cb_diferenciar_recuerdo",
+      "procesos": ["ED_vinculoContinuo"],
+      "texto": "Procedimiento clínico que ayuda a diferenciar entre recordar de forma integrada y quedar atrapado en la ausencia. Se exploran señales de regulación versus señales de colapso, rumiación o bloqueo vital asociadas al recuerdo.\n\nEsta diferenciación permite legitimar el recuerdo sin miedo a “no salir”, reduciendo evitación defensiva y favoreciendo una relación más flexible con la memoria."
+    },
+    {
+      "nombre": "Integración del legado relacional",
+      "codigo": "p_cb_legado",
+      "procesos": ["ED_identidadReinversion"],
+      "texto": "Procedimiento destinado a explorar qué valores, aprendizajes, actitudes o formas de relación permanecen como legado de la persona perdida. El vínculo se integra así en la identidad actual, no como mandato rígido, sino como fuente de continuidad y sentido.\n\nEste trabajo facilita la reinversión vital al permitir que el pasado nutra el presente sin gobernarlo."
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Validar el vínculo continuo",
+      "codigo": "m_cb_validar_vinculo",
+      "procesos": ["ED_vinculoContinuo"],
+      "texto": "Intervención breve que normaliza la existencia de un vínculo interno con la persona perdida, reduciendo culpa y temor a estar “duelando mal”."
+    },
+    {
+      "nombre": "Detectar búsqueda externa",
+      "codigo": "m_cb_busqueda",
+      "procesos": ["ED_vinculoContinuo"],
+      "texto": "Señalamiento clínico de conductas de búsqueda compulsiva (objetos, lugares, señales) que indican fijación a la ausencia externa y bloqueo del proceso de reorganización del vínculo."
+    },
+    {
+      "nombre": "Autorizar recuerdo regulado",
+      "codigo": "m_cb_recuerdo_regulado",
+      "procesos": ["ED_vinculoContinuo"],
+      "texto": "Microintervención que legitima el recuerdo cuando este cumple una función reguladora y no desorganizante, reduciendo evitación del recuerdo por miedo a desbordarse."
+    },
+    {
+      "nombre": "Desacoplar lealtad de sufrimiento",
+      "codigo": "m_cb_lealtad",
+      "procesos": ["ED_identidadReinversion"],
+      "texto": "Intervención destinada a diferenciar la lealtad al vínculo de la obligación de sufrir. Ayuda a liberar la reinversión vital de mandatos implícitos de dolor perpetuo."
+    }
+  ],
+  "refs": [
+    "Klass, D., Silverman, P. R., & Nickman, S. (1996). Continuing Bonds: New Understandings of Grief.",
+    "Klass, D. (2014). Continuing bonds in the resolution of grief."
+  ]
+}
