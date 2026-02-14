@@ -577,16 +577,15 @@ opacity: .75;
 }
 
 .modelPanel .mp-hero-title{
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -0.2px;
-  line-height: 1.2;
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.15px;
+  line-height: 1.25;
 
-  color: rgba(231,237,245,0.95);
-  margin: 2px 0 8px 0;
-
-  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  color: rgba(231,237,245,0.92);
+  text-shadow: none;
 }
+
 
 
 .modelPanel .mp-hero-text{
@@ -1099,12 +1098,7 @@ body.loaded .mp-hero{
   padding-top: 22px; /* más aire arriba */
 }
 
-.modelPanel .mp-hero-title{
-  font-size: 30px;
-  font-weight: 950;
-  letter-spacing: -0.6px;
-  line-height: 1.06;
-}
+
 
 .modelPanel .mp-hero-text{
   font-size: 13.5px;
@@ -2138,21 +2132,14 @@ transform: translateY(-50%);
 .landingCard{
   width: min(900px, 100%);
 
+  /* Fallbacks sólidos para móviles */
   max-height: 80vh;
-  max-height: 90svh;
-  max-height: min(80vh, 90dvh);
+  max-height: 90svh;            /* iOS moderno */
+  max-height: min(80vh, 90dvh); /* viewport real móvil */
 
   overflow-y: auto;
-  overflow-x: hidden;
-
-  scroll-behavior: auto; /* evita interpolaciones raras */
-  overscroll-behavior: contain;
-
-  -webkit-overflow-scrolling: touch;
-
-  will-change: scroll-position;
-  transform: translateZ(0);
-}
+  -webkit-overflow-scrolling: touch; /* ✅ iOS: scroll fluido */
+  overscroll-behavior: contain;      /* ✅ evita “rebote” raro */
 
   border-radius: 28px;
   padding: 48px 56px;
@@ -2160,8 +2147,8 @@ transform: translateY(-50%);
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.12);
 
-  backdrop-filter: blur(18px) saturate(125%);
-  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  backdrop-filter: blur(24px) saturate(140%);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
 
   box-shadow: 0 30px 90px rgba(0,0,0,0.6);
 }
@@ -2250,22 +2237,18 @@ transform: translateY(-50%);
 .landingH1{
   margin: 8px 0 0 0;
   font-size: 40px;
-  font-weight: 950;
-  letter-spacing: -0.035em;
-  line-height: 1.05;
+  font-weight: 750;           /* menos “bloque” */
+  letter-spacing: -0.03em;
+  line-height: 1.06;
 
-  /* “Apple gradient” muy suave */
-  background: linear-gradient(180deg,
-    rgba(255,255,255,0.96),
-    rgba(255,255,255,0.72)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  background: none;           /* fuera gradient */
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: rgba(231,237,245,0.94);
 
-  /* micro-profundidad sin “neón” */
-  text-shadow: 0 1px 0 rgba(0,0,0,0.22);
+  text-shadow: none;          /* fuera “profundidad” */
 }
+
 
 .landingH1::after{
   content:"";
@@ -2381,7 +2364,7 @@ transform: translateY(-50%);
 
 
 .landingSchoolName{
-  font-weight: 950;
+  font-weight: 850;
   font-size: 19px;
   line-height: 1.05;
   letter-spacing: -0.6px;
@@ -2393,7 +2376,14 @@ transform: translateY(-50%);
 
 
 .landingSchoolMeta{
-  margin-top: 8px;
+  margin-top: 0;
+
+  display:inline-flex;
+  gap: 6px;
+  align-items: center;
+
+  margin-left: 8px;
+  vertical-align: middle;
 
   background: none !important;
   border: none !important;
@@ -2401,11 +2391,7 @@ transform: translateY(-50%);
   padding: 0 !important;
   border-radius: 0 !important;
 
-  display:flex;
-  gap: 8px;
-  align-items: baseline;
-
-  font-size: 12.5px;
+  font-size: 10.5px;
   font-weight: 800;
   letter-spacing: 0.2px;
   color: rgba(231,237,245,0.62);
@@ -2650,9 +2636,9 @@ body.landing-on{
 /* El overlay es el contenedor scrolleable */
 .landingOverlay{
   height: 100dvh;
-  overflow: hidden;              /* ✅ evita doble scroll */
-  -webkit-overflow-scrolling: auto;
-  touch-action: none;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 
 /* La tarjeta también puede scrollear (doble seguridad) */
@@ -8232,7 +8218,26 @@ return `
 
   // unión sin duplicados
   const set = new Set([...localSchools, ...ghSchools]);
-  const schools = [...set].sort((a,b)=>a.localeCompare(b,'es'));
+ const schoolOrder = [
+  'Psicoanálisis',
+  'Conductismo',
+  'Humanista',
+  'Cognitivo',
+  'Sistémico',
+  'Constructivista',
+  'Integrativo',
+  'Transversal',
+  'Otros'
+];
+
+const orderMap = new Map(schoolOrder.map((s,i)=>[s,i]));
+
+const schools = [...set].sort((a,b)=>{
+  const ia = orderMap.has(a) ? orderMap.get(a) : 999;
+  const ib = orderMap.has(b) ? orderMap.get(b) : 999;
+  return (ia - ib) || a.localeCompare(b,'es');
+});
+
 
   schoolSelect.innerHTML = schools
     .map(g => `<option value="${escapeHtml(g)}">${escapeHtml(g)}</option>`)
