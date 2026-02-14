@@ -1,0 +1,97 @@
+{
+  "id": "k_shear_cgt",
+  "grupo": "Integrativo",
+  "label": "Complicated Grief Treatment (CGT)",
+  "year": 2005,
+  "autores": "Katherine Shear",
+  "hideInModels": true,
+  "descripcion": "El modelo de Complicated Grief Treatment (CGT) conceptualiza el duelo prolongado como una alteración específica del proceso natural de elaboración de la pérdida, caracterizada por bloqueos persistentes en la integración de la irreversibilidad, una activación sostenida del sistema de apego y patrones de evitación experiencial que impiden la reorganización del vínculo y la reinversión vital. A diferencia de enfoques generales del duelo, CGT ofrece un protocolo clínico estructurado y basado en evidencia para intervenir cuando el duelo no progresa de forma espontánea.\n\nDesde la perspectiva del MJPS, CGT no introduce un proceso nuevo, sino que describe una desviación clínica del macroproceso ED, en la que varios subprocesos quedan crónicamente bloqueados. El objetivo del tratamiento es desbloquear estos subprocesos mediante intervenciones activas, dosificadas y sostenidas, respetando la ventana de tolerancia y evitando tanto la evitación crónica como la exposición desorganizante.",
+  "mjps": ["ED"],
+  "subprocesos": [
+    "ED_reconocimiento",
+    "ED_oscilacionTolerancia",
+    "ED_expresionVinculada",
+    "ED_vinculoContinuo",
+    "ED_identidadReinversion"
+  ],
+  "conceptos": [
+    {
+      "nombre": "Duelo prolongado",
+      "codigo": "c_cgt_dueloProlongado",
+      "descripcion": "Condición clínica en la que el dolor por la pérdida permanece intenso, dominante y poco modulable a lo largo del tiempo, interfiriendo de forma significativa en el funcionamiento vital y la identidad. Se caracteriza por añoranza persistente, dificultad para aceptar la irreversibilidad, evitación del recuerdo, culpa intensa, aislamiento y bloqueo de la reinversión vital. CGT entiende este cuadro como un fallo en la integración del duelo, no como debilidad personal ni falta de motivación."
+    },
+    {
+      "nombre": "Bloqueo del sistema de apego",
+      "codigo": "c_cgt_apegoBloqueado",
+      "descripcion": "Activación persistente del sistema de apego orientada a la figura perdida, que se manifiesta en búsqueda mental constante, rumiación, protesta emocional o evitación extrema del recuerdo. Este bloqueo impide que el vínculo se reorganice de forma interna y flexible, manteniendo a la persona atrapada entre anhelo intenso y evitación defensiva."
+    },
+    {
+      "nombre": "Evitación experiencial",
+      "codigo": "c_cgt_evitacion",
+      "descripcion": "Conjunto de estrategias cognitivas, emocionales y conductuales destinadas a evitar el contacto con el dolor de la pérdida. Aunque reducen el malestar a corto plazo, mantienen el duelo prolongado al impedir el reconocimiento emocional de la irreversibilidad y la integración progresiva del vínculo."
+    }
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Psicoeducación sobre duelo prolongado",
+      "codigo": "p_cgt_psicoeducacion",
+      "procesos": ["ED"],
+      "texto": "Procedimiento inicial que explica el duelo prolongado como un bloqueo del proceso natural de elaboración, normalizando la experiencia del paciente y reduciendo culpa, vergüenza y autoacusación. Se clarifica que el tratamiento no busca olvidar ni “superar” la pérdida, sino integrar la realidad de la muerte y reorganizar la vida sin perder el vínculo interno."
+    },
+    {
+      "nombre": "Exposición imaginada a la pérdida",
+      "codigo": "p_cgt_exposicion_imaginada",
+      "procesos": ["ED_reconocimiento", "ED_oscilacionTolerancia"],
+      "texto": "Procedimiento central de CGT que guía al paciente a revivir de forma imaginada y dosificada el momento de la muerte o el impacto de la pérdida. Facilita el reconocimiento emocional de la irreversibilidad y reduce la evitación, siempre dentro de una alianza sólida y cuidando la ventana de tolerancia."
+    },
+    {
+      "nombre": "Exposición situacional",
+      "codigo": "p_cgt_exposicion_situacional",
+      "procesos": ["ED_oscilacionTolerancia"],
+      "texto": "Procedimiento dirigido a abordar la evitación de lugares, objetos o actividades asociadas a la persona fallecida. La exposición progresiva permite recuperar espacios vitales sin desorganización emocional y restablecer la capacidad de oscilar entre contacto con la pérdida y restauración."
+    },
+    {
+      "nombre": "Trabajo con el vínculo persistente",
+      "codigo": "p_cgt_vinculo",
+      "procesos": ["ED_vinculoContinuo", "ED_expresionVinculada"],
+      "texto": "Procedimiento destinado a transformar la relación con la persona fallecida de una presencia externa anhelada a un vínculo interno integrado. Incluye diálogos imaginarios, cartas y elaboración de emociones no resueltas, facilitando la reorganización del vínculo sin ruptura abrupta."
+    },
+    {
+      "nombre": "Restauración de objetivos vitales",
+      "codigo": "p_cgt_reinversion",
+      "procesos": ["ED_identidadReinversion"],
+      "texto": "Procedimiento orientado a reactivar proyectos, relaciones y compromisos vitales que quedaron congelados tras la pérdida. Se trabaja explícitamente la culpa asociada al bienestar y la vivencia de traición, promoviendo una reinversión gradual, coherente y no forzada."
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Nombrar el bloqueo del duelo",
+      "codigo": "m_cgt_bloqueo",
+      "procesos": ["ED_reconocimiento"],
+      "texto": "Microintervención que ayuda a conceptualizar el duelo prolongado como un proceso bloqueado y no como una incapacidad personal, reduciendo vergüenza y aumentando disposición al trabajo terapéutico."
+    },
+    {
+      "nombre": "Reducir evitación protectora",
+      "codigo": "m_cgt_evitacion",
+      "procesos": ["ED_oscilacionTolerancia"],
+      "texto": "Intervención breve que señala cómo la evitación, aunque protectora a corto plazo, mantiene el dolor a largo plazo, facilitando una apertura gradual al contacto emocional."
+    },
+    {
+      "nombre": "Validar vínculo sin presencia",
+      "codigo": "m_cgt_validar_vinculo",
+      "procesos": ["ED_vinculoContinuo"],
+      "texto": "Microintervención que legitima la continuidad del vínculo sin necesidad de presencia externa, reduciendo miedo a olvidar o a traicionar a la persona perdida."
+    },
+    {
+      "nombre": "Autorizar vida con duelo",
+      "codigo": "m_cgt_autorizar_vida",
+      "procesos": ["ED_identidadReinversion"],
+      "texto": "Intervención que legitima una vida significativa que incluye recuerdo y dolor, pero no queda definida exclusivamente por ellos."
+    }
+  ],
+  "refs": [
+    "Shear, K. et al. (2005). Treatment of Complicated Grief.",
+    "Shear, K. (2012). Grief and mourning gone awry.",
+    "Shear, K. (2021). Complicated Grief Treatment."
+  ]
+}
