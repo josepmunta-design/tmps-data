@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_identidadReinversion",
-  "updatedAt": "2026-02-14T17:56:04.631Z",
-  "totalModelos": 4,
+  "updatedAt": "2026-02-14T17:57:40.588Z",
+  "totalModelos": 5,
   "modelos": [
     {
       "modelId": "k_klass_silverman_nickman_cb",
@@ -90,6 +90,29 @@
           "codigo": "m_rubin_adapt_parcial",
           "nombre": "Validar adaptación parcial",
           "texto": "Intervención que legitima que una persona pueda estar adaptándose en un plano mientras sigue en proceso en otro, reduciendo autoexigencia y lecturas dicotómicas de éxito/fracaso.",
+          "sub": "ED_identidadReinversion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_shear_cgt",
+      "modelLabel": "Complicated Grief Treatment (CGT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Katherine Shear",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_cgt_reinversion",
+          "nombre": "Restauración de objetivos vitales",
+          "texto": "Procedimiento orientado a reactivar proyectos, relaciones y compromisos vitales que quedaron congelados tras la pérdida. Se trabaja explícitamente la culpa asociada al bienestar y la vivencia de traición, promoviendo una reinversión gradual, coherente y no forzada.",
+          "sub": "ED_identidadReinversion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cgt_autorizar_vida",
+          "nombre": "Autorizar vida con duelo",
+          "texto": "Intervención que legitima una vida significativa que incluye recuerdo y dolor, pero no queda definida exclusivamente por ellos.",
           "sub": "ED_identidadReinversion",
           "tipo": "micro"
         }

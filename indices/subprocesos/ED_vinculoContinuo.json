@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_vinculoContinuo",
-  "updatedAt": "2026-02-14T17:56:04.631Z",
-  "totalModelos": 3,
+  "updatedAt": "2026-02-14T17:57:40.588Z",
+  "totalModelos": 4,
   "modelos": [
     {
       "modelId": "k_klass_silverman_nickman_cb",
@@ -95,6 +95,29 @@
           "codigo": "m_rubin_track_gap",
           "nombre": "Detectar disociación entre tracks",
           "texto": "Señalamiento clínico de discrepancias significativas entre el Track I y el Track II, introducido como observación descriptiva que orienta el foco del trabajo terapéutico.",
+          "sub": "ED_vinculoContinuo",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_shear_cgt",
+      "modelLabel": "Complicated Grief Treatment (CGT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Katherine Shear",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_cgt_vinculo",
+          "nombre": "Trabajo con el vínculo persistente",
+          "texto": "Procedimiento destinado a transformar la relación con la persona fallecida de una presencia externa anhelada a un vínculo interno integrado. Incluye diálogos imaginarios, cartas y elaboración de emociones no resueltas, facilitando la reorganización del vínculo sin ruptura abrupta.",
+          "sub": "ED_vinculoContinuo",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cgt_validar_vinculo",
+          "nombre": "Validar vínculo sin presencia",
+          "texto": "Microintervención que legitima la continuidad del vínculo sin necesidad de presencia externa, reduciendo miedo a olvidar o a traicionar a la persona perdida.",
           "sub": "ED_vinculoContinuo",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_reconocimiento",
-  "updatedAt": "2026-02-14T17:56:04.631Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-14T17:57:40.588Z",
+  "totalModelos": 2,
   "modelos": [
     {
       "modelId": "k_rando_r_processes",
@@ -14,6 +14,29 @@
           "codigo": "m_rando_pseudo",
           "nombre": "Detectar pseudoelaboración",
           "texto": "Intervención destinada a identificar aparentes avances del duelo que en realidad encubren negación, evitación o resignación defensiva.",
+          "sub": "ED_reconocimiento",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_shear_cgt",
+      "modelLabel": "Complicated Grief Treatment (CGT)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Katherine Shear",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_cgt_exposicion_imaginada",
+          "nombre": "Exposición imaginada a la pérdida",
+          "texto": "Procedimiento central de CGT que guía al paciente a revivir de forma imaginada y dosificada el momento de la muerte o el impacto de la pérdida. Facilita el reconocimiento emocional de la irreversibilidad y reduce la evitación, siempre dentro de una alianza sólida y cuidando la ventana de tolerancia.",
+          "sub": "ED_reconocimiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cgt_bloqueo",
+          "nombre": "Nombrar el bloqueo del duelo",
+          "texto": "Microintervención que ayuda a conceptualizar el duelo prolongado como un proceso bloqueado y no como una incapacidad personal, reduciendo vergüenza y aumentando disposición al trabajo terapéutico.",
           "sub": "ED_reconocimiento",
           "tipo": "micro"
         }
