@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-14T18:32:53.892Z",
-  "totalModelos": 102,
+  "updatedAt": "2026-02-14T18:43:41.696Z",
+  "totalModelos": 103,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -166,6 +166,36 @@
           "texto": "Procedimiento central del modelo en el que el terapeuta o un modelo competente demuestra la conducta diana y el paciente la ensaya de forma progresiva, con apoyo, correcciones y aumento gradual de dificultad. Este enfoque asegura experiencias de dominio reales (mastery experiences), consideradas la fuente más potente de autoeficacia, y resulta especialmente eficaz en ansiedad, habilidades sociales y afrontamiento de situaciones temidas. (Bandura, 1977; Bandura, 1997).",
           "sub": "RE_modulacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "cbti-insomnio-cronico",
+      "modelLabel": "Terapia cognitivo-conductual para el insomnio (CBT-I)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Richard Bootzin; Arthur Spielman; Charles Morin; Colin Espie; Jack Edinger; Michael Perlis; Allison Harvey; Peter Hauri; Buysse; Lichstein",
+      "modelYear": "1970",
+      "items": [
+        {
+          "codigo": "p_cbti_relajacionWindDown",
+          "nombre": "Relajación y rutina de wind-down (habilidad entrenable)",
+          "texto": "La relajación en CBT-I se enseña como habilidad que reduce activación fisiológica y facilita la transición al sueño, pero evitando el error clásico de convertirla en una técnica “para dormirse ya”. Se prescribe una rutina de wind-down (60–90 minutos antes de acostarse) con reducción progresiva de demandas cognitivas y emocionales, y se entrenan ejercicios de relajación (muscular, respiratoria, imaginativa) también durante el día para automatizar la respuesta de desactivación. La clave clínica es el objetivo: relajación, no control del sueño; cuando el paciente deja de usar la técnica como examen, disminuye la ansiedad de rendimiento y el sueño aparece como consecuencia. Se adapta según el perfil del paciente (hiperarousal somático vs cognitivo) y se integra con el resto del paquete (Morin & Espie, 2004, cap. 4 “Sleep Hygiene and Relaxation Therapy”).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbti_articulatorySuppression",
+          "nombre": "Articulatory suppression (interrupción verbal de rumiación)",
+          "texto": "La articulatory suppression es una técnica específica para rumiación nocturna predominantemente verbal: en lugar de “pelear” con pensamientos, se ocupa de forma neutra el canal verbal de la memoria de trabajo mediante repetición mental de un estímulo simple (por ejemlo repitiendo \"the\" cada segundo), reduciendo la entrada de material rumiativo. Se utiliza sobre todo en despertares nocturnos y se presenta como estrategia limitada y concreta (no como supresión general del pensamiento, que puede intensificar la vigilancia). Su utilidad clínica es disminuir la activación cognitiva sin aumentar el esfuerzo consciente, y por tanto sin alimentar la ansiedad de rendimiento (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbti_windDown",
+          "nombre": "Wind-down 60–90 min (ritual de transición)",
+          "texto": "Se diseña un tramo previo al sueño con reducción progresiva de exigencia mental y emocional, creando un ritual repetible que le dice al sistema “ya no toca rendimiento”. No es una rutina rígida: es una señal estable de cierre del día que baja activación y mejora consistencia del programa. Se adapta al contexto real (familia, trabajo, turnos) para que no se viva como una imposición imposible (Morin & Espie, 2004, cap. 4 “Sleep Hygiene and Relaxation Therapy”).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
         }
       ]
     },

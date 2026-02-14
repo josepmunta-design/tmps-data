@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_aceptacion",
-  "updatedAt": "2026-02-14T18:32:53.892Z",
-  "totalModelos": 53,
+  "updatedAt": "2026-02-14T18:43:41.696Z",
+  "totalModelos": 54,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -88,6 +88,29 @@
           "codigo": "m_act_expansion_somatica",
           "nombre": "Expansión somática guiada",
           "texto": "Se guía al paciente a localizar una sensación emocional en el cuerpo, describir su forma y permitir su presencia mediante respiración amplia y actitud abierta, reduciendo lucha secundaria y facilitando conducta valiosa en su presencia. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cbti-insomnio-cronico",
+      "modelLabel": "Terapia cognitivo-conductual para el insomnio (CBT-I)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Richard Bootzin; Arthur Spielman; Charles Morin; Colin Espie; Jack Edinger; Michael Perlis; Allison Harvey; Peter Hauri; Buysse; Lichstein",
+      "modelYear": "1970",
+      "items": [
+        {
+          "codigo": "p_cbti_paradoxicalIntention",
+          "nombre": "Paradoxical intention (reducir ansiedad de rendimiento)",
+          "texto": "La intención paradójica se aplica cuando el insomnio está claramente mantenido por el esfuerzo por dormir y la ansiedad de rendimiento: cuanto más intenta el paciente dormirse, más se activa. La técnica cambia la meta: se instruye al paciente para permanecer despierto de forma pasiva y relajada, abandonando el intento directo de conciliar; al reducir presión y vigilancia, baja el arousal y el sueño puede emerger espontáneamente. Requiere un encuadre claro para evitar malentendidos (“no es resignación, es cortar el bucle esfuerzo-activación”) y se integra con el paquete conductual para que no se convierta en una estrategia aislada (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbti_PI",
+          "nombre": "Paradoxical intention (si hay esfuerzo por dormir)",
+          "texto": "Cuando el paciente “se examina” para dormirse, se prescribe un cambio de meta: permanecer despierto pero relajado, sin intentar conciliar. El mensaje clínico es claro: el sueño no se produce por orden; aparece cuando la amenaza baja. Esta microintervención corta el bucle esfuerzo→activación y suele reducir la ansiedad anticipatoria de forma rápida si se explica bien y se integra con el resto del programa (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).",
           "sub": "RE_aceptacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_ground",
-  "updatedAt": "2026-02-14T18:32:53.892Z",
-  "totalModelos": 15,
+  "updatedAt": "2026-02-14T18:43:41.696Z",
+  "totalModelos": 16,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -51,6 +51,29 @@
           "codigo": "m_act_anclaje_30s",
           "nombre": "Anclaje atencional de 30 segundos",
           "texto": "Micropráctica de contacto con el presente que utiliza respiración, apoyo de pies en el suelo o sonidos ambientales durante 30–90 segundos para interrumpir rumiación o hiperactivación, restaurando margen de elección antes de actuar. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "RF_ground",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cbti-insomnio-cronico",
+      "modelLabel": "Terapia cognitivo-conductual para el insomnio (CBT-I)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Richard Bootzin; Arthur Spielman; Charles Morin; Colin Espie; Jack Edinger; Michael Perlis; Allison Harvey; Peter Hauri; Buysse; Lichstein",
+      "modelYear": "1970",
+      "items": [
+        {
+          "codigo": "p_cbti_cognitiveControl",
+          "nombre": "Cognitive control (poner el día a descansar)",
+          "texto": "El cognitive control saca del dormitorio el “trabajo mental” que suele colonizar la cama: repaso del día, planificación, preocupación y resolución de problemas. Se reserva un bloque breve por la tarde para listar tareas pendientes, definir pasos concretos y cerrar el proceso; al acostarse, el paciente se recuerda que eso ya está atendido y, si aparece una preocupación nueva, la anota para el día siguiente. Esta técnica reduce intrusiones sin recurrir a supresión forzada (que a menudo rebota) y protege el aprendizaje asociativo: la cama deja de ser un despacho y vuelve a ser un contexto de descanso. Es especialmente útil en insomnio con mente acelerada y en perfiles con alto sentido de responsabilidad/rumiación (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).",
+          "sub": "RF_ground",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbti_cognitiveControl",
+          "nombre": "Cognitive control en 2 pasos (tarde + anotación nocturna)",
+          "texto": "Se pauta un “cierre del día” breve por la tarde para listar pendientes y definir pasos concretos, y se añade una regla nocturna: si surge una preocupación en la cama, se anota y se deja para mañana. La lógica es simple: pensar no es el enemigo, el enemigo es pensar en el lugar y momento que entrena vigilia. Esta microintervención es especialmente útil en insomnio con rumiación y responsabilidad elevada, porque ofrece un canal legítimo para la mente sin regalarle el dormitorio (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”).",
           "sub": "RF_ground",
           "tipo": "micro"
         }

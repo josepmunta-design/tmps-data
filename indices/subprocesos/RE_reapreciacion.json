@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_reapreciacion",
-  "updatedAt": "2026-02-14T18:32:53.892Z",
-  "totalModelos": 21,
+  "updatedAt": "2026-02-14T18:43:41.696Z",
+  "totalModelos": 22,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -53,6 +53,29 @@
           "codigo": "m_bandura_normalizar_activacion",
           "nombre": "Normalizar activación fisiológica",
           "texto": "Microintervención orientada a reinterpretar la activación fisiológica (ansiedad, tensión, incremento de la frecuencia cardíaca) como una señal de esfuerzo, activación adaptativa o novedad, y no como evidencia de incapacidad o peligro. Este reencuadre reduce evitación, facilita la exposición conductual y protege la autoeficacia durante tareas desafiantes. (Bandura, 1997).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cbti-insomnio-cronico",
+      "modelLabel": "Terapia cognitivo-conductual para el insomnio (CBT-I)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Richard Bootzin; Arthur Spielman; Charles Morin; Colin Espie; Jack Edinger; Michael Perlis; Allison Harvey; Peter Hauri; Buysse; Lichstein",
+      "modelYear": "1970",
+      "items": [
+        {
+          "codigo": "p_cbti_cognitivaSueno",
+          "nombre": "Intervención cognitiva específica del sueño",
+          "texto": "La intervención cognitiva de CBT-I no es una TCC genérica, sino un trabajo focal sobre creencias y procesos que disparan hiperarousal: expectativas rígidas (“necesito 8 horas”), catastrofización (“si no duermo, mañana será un desastre”), atribuciones erróneas (“todo lo malo es por no dormir”), monitorización del reloj y, sobre todo, esfuerzo por dormir (“tengo que dormirme ya”). Se usan reformulaciones realistas, experimentos conductuales y psicoeducación precisa para reducir vigilancia y presión; el objetivo no es “pensar positivo”, sino desmontar el bucle de amenaza-control que mantiene la vigilia. Este componente también se alinea con modelos cognitivos contemporáneos del insomnio que destacan la hipervigilancia y la interpretación amenazante de la vigilia nocturna (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”; Harvey, 2002).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbti_descatastro",
+          "nombre": "Descatastrofización del “no dormir” (bajar amenaza)",
+          "texto": "Se hace una intervención cognitiva breve para desinflar la amenaza: separar cansancio de desastre, reducir la idea de que “todo irá mal”, y romper el círculo vigilancia→miedo→activación. Se construyen predicciones alternativas basadas en evidencia personal (“he funcionado suficientemente con menos horas”) y se corrige la atribución global (“todo problema es por no dormir”). Esto reduce monitorización del reloj y presión de rendimiento, dos de los combustibles más potentes del insomnio crónico (Morin & Espie, 2004, cap. 6 “Cognitive Therapy”; Harvey, 2002).",
           "sub": "RE_reapreciacion",
           "tipo": "micro"
         }
