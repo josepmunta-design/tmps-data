@@ -1,7 +1,7 @@
 {
   "subprocesoId": "VB_sueno",
-  "updatedAt": "2026-02-14T18:22:55.653Z",
-  "totalModelos": 2,
+  "updatedAt": "2026-02-14T18:25:52.292Z",
+  "totalModelos": 3,
   "modelos": [
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
@@ -44,6 +44,43 @@
           "codigo": "m_lazarus_chequeo_biologico",
           "nombre": "Chequeo de sueño, medicación y consumo",
           "texto": "Microintervención que revisa factores biológicos básicos que pueden estar influyendo en el estado emocional y conductual (calidad del sueño, adherencia a medicación, consumo de sustancias), evitando interpretaciones psicológicas de fenómenos primariamente fisiológicos. (Lazarus, 1989)",
+          "sub": "VB_sueno",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "p_ttm_control_estimulos",
+          "nombre": "Control de estímulos (diseño del entorno)",
+          "texto": "Modificar señales ambientales que disparan la conducta (sustancias, pantallas, horarios, lugares, compañías). Es un puente directo de preparación→acción y reduce carga de “fuerza de voluntad”.",
+          "sub": "VB_sueno",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ttm_vb_estadio",
+          "nombre": "Evaluar estadio por conducta VB (no “motivación general”)",
+          "texto": "Evaluación específica del estadio aplicado a cada condición basal relevante. Permite intervenciones finas: acción en sueño, contemplación en alcohol, precontemplación en cannabis, etc.",
+          "sub": "VB_sueno",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_mmv",
+          "nombre": "VB — Meta mínima viable (MMV) como criterio de “viabilidad terapéutica”",
+          "texto": "Definir una MMV que no sea “vida ideal”, sino mínimo suficiente para que la terapia funcione: sueño suficiente para no estar disociado/irritable, reducción o no consumo para poder mentalizar, etc.",
+          "sub": "VB_sueno",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sueno_estimulos",
+          "nombre": "VB – Sueño: estadio + diseño de entorno (pantallas, horarios, activación)",
+          "texto": "Aplicar estadio al sueño y usar control de estímulos (horario, luz, pantallas, rutina) con metas mínimas viables antes de pedir trabajo emocional profundo.",
           "sub": "VB_sueno",
           "tipo": "micro"
         }

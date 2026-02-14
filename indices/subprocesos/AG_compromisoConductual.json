@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-14T18:22:55.653Z",
-  "totalModelos": 98,
+  "updatedAt": "2026-02-14T18:25:52.292Z",
+  "totalModelos": 99,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -3556,6 +3556,127 @@
           "texto": "Procedimiento que traslada la práctica de atención plena a actividades cotidianas (comer, ducharse, comunicarse), promoviendo generalización del aprendizaje y continuidad del proceso fuera de la sesión. Facilita integración del mindfulness como forma de estar en la experiencia y no solo como ejercicio formal. (Kabat-Zinn, 1990).",
           "sub": "AG_compromisoConductual",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "p_ttm_procesosCambio",
+          "nombre": "Activar procesos de cambio adecuados al estadio",
+          "texto": "Seleccionar procesos de cambio según el estadio: aumentar conciencia y reevaluación en estadios tempranos; compromiso, sustitución conductual y control de estímulos en acción; refuerzo y prevención de recaídas en mantenimiento. Aporta una lógica clara de “qué toca ahora”.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_meta_minima",
+          "nombre": "Regla de “meta mínima” y escalado de objetivos",
+          "texto": "Definir una meta mínima viable (MMV) en preparación: lo suficientemente pequeña para ser cumplible, pero clínicamente significativa. Se escala tras evidencia de cumplimiento (acción → mantenimiento).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_contrato_cambio",
+          "nombre": "Contratos de cambio y auto-liberación (compromiso explícito)",
+          "texto": "Formalizar compromiso: qué se cambia, desde cuándo, con qué apoyos y qué se hará ante tentación. Refuerza “self-liberation” (decisión activa) y reduce el “ya veré”.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_control_estimulos",
+          "nombre": "Control de estímulos (diseño del entorno)",
+          "texto": "Modificar señales ambientales que disparan la conducta (sustancias, pantallas, horarios, lugares, compañías). Es un puente directo de preparación→acción y reduce carga de “fuerza de voluntad”.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_refuerzo",
+          "nombre": "Manejo de reforzadores (refuerzo y recompensas)",
+          "texto": "Planificar refuerzos inmediatos por conducta objetivo (o por abstinencia/reducción) y retirar refuerzos inadvertidos de la conducta problema. Útil en acción/mantenimiento.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_si_entonces",
+          "nombre": "Implementación “si–entonces” (intenciones de implementación)",
+          "texto": "Convertir intención en plan ejecutable: “Si ocurre X (disparador), entonces haré Y (respuesta alternativa)”. Reduce la brecha entre decisión y acción.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_apoyo_social",
+          "nombre": "Activar apoyo social (helping relationships)",
+          "texto": "Diseñar red de apoyo realista (una persona concreta + un contexto concreto + una conducta concreta). Reduce recaída, aumenta adherencia y sostiene mantenimiento.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ttm_vb_mmv",
+          "nombre": "VB — Meta mínima viable (MMV) como criterio de “viabilidad terapéutica”",
+          "texto": "Definir una MMV que no sea “vida ideal”, sino mínimo suficiente para que la terapia funcione: sueño suficiente para no estar disociado/irritable, reducción o no consumo para poder mentalizar, etc.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_si_entonces",
+          "nombre": "VB – Sustancias: “si–entonces” para momentos de riesgo",
+          "texto": "Plan específico: “Si aparece X (ansiedad, fin de semana, llamada de tal persona), entonces haré Y (conducta alternativa + apoyo)”. Reduce recaída impulsiva.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_estimulos",
+          "nombre": "VB – Sustancias: control de estímulos (entorno y compañía)",
+          "texto": "Modificar señales: lugares, rutinas, acceso, dinero, compañía, horarios. Reduce tentación sin exigir control interno máximo desde el día 1.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_reduccion",
+          "nombre": "VB – Sustancias: reducción de daño como puente (preparación→acción)",
+          "texto": "Cuando abstinencia no es viable: reducir dosis/frecuencia/contextos de riesgo y evitar combinaciones peligrosas. Se define como avance (no como “fracaso moral”).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_noConsumo",
+          "nombre": "VB – Sustancias: no consumo como condición funcional de la terapia",
+          "texto": "Cuando el consumo bloquea procesos nucleares (regulación, mentalización, adherencia), se formula el no consumo como condición terapéutica funcional, negociada y explícita.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_refuerzo",
+          "nombre": "VB – Sustancias: manejo de reforzadores (sustituir refuerzos)",
+          "texto": "Sustituir el refuerzo del consumo por refuerzos alternativos inmediatos (placer, conexión, calma) y planificar recompensas por pasos de cambio. Evita depender solo de motivación.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sueno_estimulos",
+          "nombre": "VB – Sueño: estadio + diseño de entorno (pantallas, horarios, activación)",
+          "texto": "Aplicar estadio al sueño y usar control de estímulos (horario, luz, pantallas, rutina) con metas mínimas viables antes de pedir trabajo emocional profundo.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_movimiento_plan",
+          "nombre": "VB – Movimiento: intención→plan “si–entonces” + refuerzo",
+          "texto": "Convertir “tengo que moverme” en plan ejecutable (si–entonces) y reforzar cumplimiento. Ideal en preparación/acción para aumentar autoeficacia.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_alimentacion_registro",
+          "nombre": "VB – Alimentación: registro breve + metas mínimas (sin perfeccionismo)",
+          "texto": "Registro mínimo (patrón real) + meta mínima viable para estabilizar energía/irritabilidad. Se evita exigir “dieta ideal” al inicio del proceso.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     }

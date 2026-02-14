@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-14T18:22:55.653Z",
-  "totalModelos": 100,
+  "updatedAt": "2026-02-14T18:25:52.292Z",
+  "totalModelos": 101,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -3133,6 +3133,99 @@
           "texto": "Procedimiento orientado a desarrollar una relación observacional con los pensamientos, percibiéndolos como eventos mentales transitorios y no como hechos o mandatos. Esta práctica reduce la fusión cognitiva, disminuye reactividad emocional asociada al contenido mental y facilita respuestas más flexibles frente a rumiación y autocrítica. (Kabat-Zinn, 2003; Segal et al., 2002).",
           "sub": "RE_modulacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "p_ttm_procesosCambio",
+          "nombre": "Activar procesos de cambio adecuados al estadio",
+          "texto": "Seleccionar procesos de cambio según el estadio: aumentar conciencia y reevaluación en estadios tempranos; compromiso, sustitución conductual y control de estímulos en acción; refuerzo y prevención de recaídas en mantenimiento. Aporta una lógica clara de “qué toca ahora”.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_meta_minima",
+          "nombre": "Regla de “meta mínima” y escalado de objetivos",
+          "texto": "Definir una meta mínima viable (MMV) en preparación: lo suficientemente pequeña para ser cumplible, pero clínicamente significativa. Se escala tras evidencia de cumplimiento (acción → mantenimiento).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_refuerzo",
+          "nombre": "Manejo de reforzadores (refuerzo y recompensas)",
+          "texto": "Planificar refuerzos inmediatos por conducta objetivo (o por abstinencia/reducción) y retirar refuerzos inadvertidos de la conducta problema. Útil en acción/mantenimiento.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_si_entonces",
+          "nombre": "Implementación “si–entonces” (intenciones de implementación)",
+          "texto": "Convertir intención en plan ejecutable: “Si ocurre X (disparador), entonces haré Y (respuesta alternativa)”. Reduce la brecha entre decisión y acción.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_autoeficacia",
+          "nombre": "Entrenar autoeficacia y manejar tentación",
+          "texto": "Fortalecer capacidad percibida para sostener el cambio y anticipar situaciones de tentación/recaída. Incluye respuestas alternativas, apoyos y planes de contingencia.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_recaidas",
+          "nombre": "Prevención de recaídas y reciclaje",
+          "texto": "Entender la recaída como parte del proceso, no como fracaso. Analizar vulnerabilidades, disparadores y “decisiones aparentemente irrelevantes”, ajustando plan y estadio.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_conciencia",
+          "nombre": "VB – Sustancias: conciencia funcional sin confrontación (precontemplación)",
+          "texto": "Conciencia basada en funcionamiento: efectos en sueño, regulación, memoria, impulsividad, adherencia y capacidad reflexiva. Sin moralizar ni discutir etiquetas diagnósticas.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_si_entonces",
+          "nombre": "VB – Sustancias: “si–entonces” para momentos de riesgo",
+          "texto": "Plan específico: “Si aparece X (ansiedad, fin de semana, llamada de tal persona), entonces haré Y (conducta alternativa + apoyo)”. Reduce recaída impulsiva.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_reduccion",
+          "nombre": "VB – Sustancias: reducción de daño como puente (preparación→acción)",
+          "texto": "Cuando abstinencia no es viable: reducir dosis/frecuencia/contextos de riesgo y evitar combinaciones peligrosas. Se define como avance (no como “fracaso moral”).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_refuerzo",
+          "nombre": "VB – Sustancias: manejo de reforzadores (sustituir refuerzos)",
+          "texto": "Sustituir el refuerzo del consumo por refuerzos alternativos inmediatos (placer, conexión, calma) y planificar recompensas por pasos de cambio. Evita depender solo de motivación.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sueno_estimulos",
+          "nombre": "VB – Sueño: estadio + diseño de entorno (pantallas, horarios, activación)",
+          "texto": "Aplicar estadio al sueño y usar control de estímulos (horario, luz, pantallas, rutina) con metas mínimas viables antes de pedir trabajo emocional profundo.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_movimiento_plan",
+          "nombre": "VB – Movimiento: intención→plan “si–entonces” + refuerzo",
+          "texto": "Convertir “tengo que moverme” en plan ejecutable (si–entonces) y reforzar cumplimiento. Ideal en preparación/acción para aumentar autoeficacia.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
         }
       ]
     }

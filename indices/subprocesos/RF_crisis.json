@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_crisis",
-  "updatedAt": "2026-02-14T18:22:55.653Z",
-  "totalModelos": 6,
+  "updatedAt": "2026-02-14T18:25:52.292Z",
+  "totalModelos": 7,
   "modelos": [
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
@@ -152,6 +152,29 @@
           "texto": "Procedimiento estructurado para manejar picos de riesgo (autolesión, impulsividad, desorganización) priorizando restaurar regulación y mentalización antes de tomar decisiones. Incluye señales tempranas, pasos concretos, contacto de apoyo y estrategias para evitar actuar desde colapso mentalizador, protegiendo al paciente y al tratamiento. Referencia: Bateman & Fonagy (2006).",
           "sub": "RF_crisis",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "p_ttm_recaidas",
+          "nombre": "Prevención de recaídas y reciclaje",
+          "texto": "Entender la recaída como parte del proceso, no como fracaso. Analizar vulnerabilidades, disparadores y “decisiones aparentemente irrelevantes”, ajustando plan y estadio.",
+          "sub": "RF_crisis",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_recaida",
+          "nombre": "VB – Sustancias: recaída/reciclaje sin ruptura (análisis + ajuste de plan)",
+          "texto": "Recaída como información: disparadores, vulnerabilidades y decisiones previas. Se ajusta el plan y el estadio sin castigo ni banalización, cuidando continuidad y alianza.",
+          "sub": "RF_crisis",
+          "tipo": "micro"
         }
       ]
     }

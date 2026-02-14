@@ -1,7 +1,7 @@
 {
   "subprocesoId": "VB_alimentacion",
-  "updatedAt": "2026-02-14T18:22:55.653Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-14T18:25:52.292Z",
+  "totalModelos": 2,
   "modelos": [
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
@@ -14,6 +14,29 @@
           "codigo": "m_dbt_check_vulnerabilidad",
           "nombre": "Chequeo rápido de vulnerabilidad biológica (PLEASE)",
           "texto": "Evaluación breve y sistemática de sueño, alimentación, sustancias y estado físico antes de abordar crisis emocional, para distinguir vulnerabilidad biológica de contenido psicológico y ajustar intervención sin sobreinterpretar activación fisiológica. Referencia: Linehan (2015).",
+          "sub": "VB_alimentacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "m_ttm_vb_estadio",
+          "nombre": "Evaluar estadio por conducta VB (no “motivación general”)",
+          "texto": "Evaluación específica del estadio aplicado a cada condición basal relevante. Permite intervenciones finas: acción en sueño, contemplación en alcohol, precontemplación en cannabis, etc.",
+          "sub": "VB_alimentacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_alimentacion_registro",
+          "nombre": "VB – Alimentación: registro breve + metas mínimas (sin perfeccionismo)",
+          "texto": "Registro mínimo (patrón real) + meta mínima viable para estabilizar energía/irritabilidad. Se evita exigir “dieta ideal” al inicio del proceso.",
           "sub": "VB_alimentacion",
           "tipo": "micro"
         }

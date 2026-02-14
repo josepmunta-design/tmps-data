@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_coregulacion",
-  "updatedAt": "2026-02-14T18:22:55.653Z",
-  "totalModelos": 20,
+  "updatedAt": "2026-02-14T18:25:52.292Z",
+  "totalModelos": 21,
   "modelos": [
     {
       "modelId": "Compassion Focused Therapy (CFT)",
@@ -444,6 +444,43 @@
           "codigo": "m_winn_senal_retirada_sin_forzar",
           "nombre": "Señalar retirada sin forzar contacto",
           "texto": "Microintervención que nombra la retirada (mirada perdida, monosílabos, frialdad) como protección y ofrece presencia sin presión, permitiendo un retorno gradual al contacto sin repetir intrusión.",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "p_ttm_procesosCambio",
+          "nombre": "Activar procesos de cambio adecuados al estadio",
+          "texto": "Seleccionar procesos de cambio según el estadio: aumentar conciencia y reevaluación en estadios tempranos; compromiso, sustitución conductual y control de estímulos en acción; refuerzo y prevención de recaídas en mantenimiento. Aporta una lógica clara de “qué toca ahora”.",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_mi_changeTalk",
+          "nombre": "Elicitar “change talk” y resolver ambivalencia (integración MI)",
+          "texto": "Usar preguntas evocadoras, reflejo y resúmenes estratégicos para aumentar lenguaje de cambio y disminuir lenguaje de mantenimiento. Especialmente útil en contemplación/preparación.",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_apoyo_social",
+          "nombre": "Activar apoyo social (helping relationships)",
+          "texto": "Diseñar red de apoyo realista (una persona concreta + un contexto concreto + una conducta concreta). Reduce recaída, aumenta adherencia y sostiene mantenimiento.",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_narrativa",
+          "nombre": "VB – Sustancias: consolidación identitaria (mantenimiento profundo)",
+          "texto": "Integrar el cambio en identidad narrativa: quién soy sin consumir, qué regula ahora, qué valores sostienen el cambio. Disminuye el “control forzado” y sostiene mantenimiento.",
           "sub": "R_coregulacion",
           "tipo": "micro"
         }

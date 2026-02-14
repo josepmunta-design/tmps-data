@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-14T18:22:55.653Z",
-  "totalModelos": 105,
+  "updatedAt": "2026-02-14T18:25:52.292Z",
+  "totalModelos": 106,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -4387,6 +4387,78 @@
           "codigo": "m_kr_negociacion",
           "nombre": "Explorar acuerdos de negociación",
           "texto": "Detectar y explorar expresiones de negociación para clarificar su función reguladora sin reforzar ilusiones de reversión.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "p_ttm_estadio",
+          "nombre": "Ubicar estadio de cambio",
+          "texto": "Identificar el estadio de cambio respecto a una conducta concreta (precontemplación, contemplación, preparación, acción, mantenimiento o recaída). Evita intervenciones desajustadas y protege la alianza al respetar el momento real del paciente.\n\n• Objetivo clínico: alinear intervención y expectativas con el estadio\n• Se observa: menos confrontación improductiva\n• Funciona cuando: el estadio se revisa periódicamente\n• Error frecuente: asumir “motivación” donde hay ambivalencia",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_balance",
+          "nombre": "Balance decisional (pros y contras)",
+          "texto": "Explorar beneficios y costes de mantener la conducta y de cambiarla. Hace visible la ambivalencia y facilita una decisión apropiada del paciente, no inducida por presión externa.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_registro",
+          "nombre": "Autoobservación y registro breve (self-monitoring)",
+          "texto": "Registro simple de episodios (antecedentes, emoción, conducta, consecuencia). Aumenta conciencia, detecta patrones y ofrece datos para decisiones realistas (especialmente en VB).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_recaidas",
+          "nombre": "Prevención de recaídas y reciclaje",
+          "texto": "Entender la recaída como parte del proceso, no como fracaso. Analizar vulnerabilidades, disparadores y “decisiones aparentemente irrelevantes”, ajustando plan y estadio.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ttm_vb_estadio",
+          "nombre": "Evaluar estadio por conducta VB (no “motivación general”)",
+          "texto": "Evaluación específica del estadio aplicado a cada condición basal relevante. Permite intervenciones finas: acción en sueño, contemplación en alcohol, precontemplación en cannabis, etc.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_registro",
+          "nombre": "VB – Sustancias: feedback de patrón (registro breve + mapa de disparadores)",
+          "texto": "Registrar episodios (disparadores, emoción, contexto, consecuencia) para convertir el “consumo” en patrón observable. Base para decisiones realistas y para prevención de recaídas.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_balance",
+          "nombre": "VB – Sustancias: ambivalencia y balance decisional (con ganancias del consumo)",
+          "texto": "Balance pros/contras incorporando beneficios percibidos (alivio, pertenencia, anestesia emocional) y costes clínicos (bloqueo emocional, inestabilidad, recaídas sintomáticas).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_recaida",
+          "nombre": "VB – Sustancias: recaída/reciclaje sin ruptura (análisis + ajuste de plan)",
+          "texto": "Recaída como información: disparadores, vulnerabilidades y decisiones previas. Se ajusta el plan y el estadio sin castigo ni banalización, cuidando continuidad y alianza.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_alimentacion_registro",
+          "nombre": "VB – Alimentación: registro breve + metas mínimas (sin perfeccionismo)",
+          "texto": "Registro mínimo (patrón real) + meta mínima viable para estabilizar energía/irritabilidad. Se evita exigir “dieta ideal” al inicio del proceso.",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
