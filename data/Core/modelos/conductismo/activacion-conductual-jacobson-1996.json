@@ -1,0 +1,310 @@
+{
+  "id": "activacion-conductual-jacobson-1996",
+  "grupo": "Conductismo",
+  "label": "Activación conductual (Behavioral Activation, BA)",
+  "year": 1996,
+  "importance": 3,
+  "autores": "Neil S. Jacobson; Christopher Martell; Sona Dimidjian; Ruth Herman-Dunn; Peter Lewinsohn",
+  "universidad": "University of Washington",
+  "ciudad": "Seattle, Washington",
+  "pais": "EE. UU.",
+  "lat": 47.655335,
+  "lon": -122.303520,
+
+  "descripcion": "La Activación Conductual (BA) es un modelo conductual para la depresión que plantea que el bajo estado de ánimo se mantiene por patrones de evitación y retirada que reducen el contacto con fuentes de refuerzo positivo. El objetivo terapéutico no es modificar directamente cogniciones, sino reorganizar la conducta para incrementar actividades con valor y disminuir evitaciones que perpetúan el ciclo depresivo. BA utiliza análisis funcional, programación de actividades y exposición a situaciones evitadas para restaurar contingencias de refuerzo natural. La evidencia empírica demuestra que BA es eficaz y comparable a intervenciones cognitivas más complejas, manteniendo una estructura parsimoniosa centrada en comportamiento observable.",
+
+  "influencias": [
+    "Conductismo (refuerzo y contingencias)",
+    "Modelo de evitación y retirada conductual",
+    "Terapia cognitivo-conductual",
+    "Análisis funcional de la conducta"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se entiende desde un marco conductual contextual: la conducta es función de contingencias ambientales y patrones de refuerzo. El conocimiento terapéutico se basa en análisis funcional empírico más que en interpretación introspectiva. El ser humano es agente capaz de modificar su entorno conductual mediante acción deliberada. El cambio ocurre alterando patrones de evitación y aumentando contacto con reforzadores naturales. La relación terapéutica es colaborativa y funcional, orientada a diseñar experimentos conductuales.",
+    "teoriaFormal": "El self no se conceptualiza como estructura intrapsíquica central, sino como patrón organizado de conductas mantenidas por contingencias. La depresión se mantiene por evitación experiencial, disminución de actividades reforzantes y reducción de refuerzo positivo. El cambio psicológico ocurre cuando la persona incrementa conductas alineadas con valor y recibe nuevas contingencias que modifican el estado de ánimo.",
+    "teoriaClinica": "El caso se conceptualiza identificando ciclos de evitación, inercia conductual y pérdida de refuerzo. Se prioriza el análisis funcional de antecedentes y consecuencias, la programación gradual de actividades y la reducción de conductas de escape. El progreso se evalúa por aumento de actividad significativa, reducción de evitación y mejora en estado de ánimo asociado a cambio conductual."
+  },
+
+  "mjps": ["VB", "AG", "RE"],
+
+  "procedimientos": [
+
+  {
+    "nombre": "Análisis funcional de la depresión",
+    "codigo": "p_ba_analisis_funcional",
+    "procesos": ["VB_analisisConductual", "N_metacognicion"],
+    "texto": "Procedimiento central del modelo en el que se identifican antecedentes, conductas problema (especialmente evitación y retirada) y consecuencias que mantienen el estado depresivo. Se analiza cómo la evitación reduce malestar a corto plazo pero disminuye acceso a refuerzo positivo a largo plazo, perpetuando el ciclo depresivo. Este análisis guía toda la intervención conductual posterior. Referencia: Jacobson et al. (1996); Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Psicoeducación conductual sobre el modelo de refuerzo",
+    "codigo": "p_ba_psicoeducacion",
+    "procesos": ["N_reformulacion"],
+    "texto": "Explicación clara del modelo conductual de la depresión: bajo estado de ánimo como consecuencia de reducción de refuerzo y aumento de evitación. Se presenta la hipótesis de que la acción precede a la motivación, preparando al paciente para intervenir sobre conducta más que sobre cognición. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Monitorización diaria de actividades",
+    "codigo": "p_ba_monitorizacion",
+    "procesos": ["VB_monitorizacion", "N_metacognicion"],
+    "texto": "Registro sistemático de actividades realizadas y estado de ánimo asociado para identificar patrones de retirada, momentos de mayor refuerzo y relaciones entre conducta y afecto. La monitorización genera datos empíricos personalizados que sustentan decisiones clínicas. Referencia: Jacobson et al. (1996); Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Programación estructurada de actividades",
+    "codigo": "p_ba_programacion",
+    "procesos": ["VB_planificacion", "AG_compromisoConductual"],
+    "texto": "Planificación calendarizada de actividades concretas con potencial reforzante, independientemente del estado motivacional inicial. Se prioriza especificidad, viabilidad y ajuste gradual. El objetivo es incrementar contacto con contingencias positivas y reducir inercia conductual. Referencia: Jacobson et al. (1996); Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Reducción sistemática de evitación",
+    "codigo": "p_ba_reduccion_evitacion",
+    "procesos": ["VB_exposicionConductual", "AG_autoriaResponsabilidad"],
+    "texto": "Identificación y afrontamiento progresivo de situaciones evitadas que mantienen aislamiento o pasividad. Se utilizan principios de exposición conductual para aumentar tolerancia al malestar y restaurar acceso a refuerzo natural. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Activación gradual por jerarquías",
+    "codigo": "p_ba_jerarquia_activacion",
+    "procesos": ["VB_planificacion", "AG_compromisoConductual"],
+    "texto": "Construcción de una jerarquía de actividades ordenadas por dificultad para facilitar progresión gradual y sostenida. El énfasis está en continuidad y consistencia más que en intensidad. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Resolución de problemas conductual",
+    "codigo": "p_ba_resolucion_problemas",
+    "procesos": ["AG_tomaDecisiones", "VB_planificacion"],
+    "texto": "Procedimiento estructurado para identificar barreras prácticas que impiden la activación (logísticas, sociales, económicas) y generar soluciones conductuales concretas que faciliten ejecución de actividades programadas. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Revisión de contingencias y refuerzos",
+    "codigo": "p_ba_revision_refuerzo",
+    "procesos": ["VB_analisisConductual", "N_metacognicion"],
+    "texto": "Evaluación continua de qué actividades generan refuerzo real y cuáles no, ajustando el plan conductual en función de datos observables. Se prioriza reforzamiento natural más que recompensa artificial. Referencia: Jacobson et al. (1996)."
+  },
+
+  {
+    "nombre": "Prevención de recaídas conductual",
+    "codigo": "p_ba_prevencion_recaidas",
+    "procesos": ["VB_planificacion", "AG_autoriaResponsabilidad"],
+    "texto": "Identificación de señales tempranas de retirada y establecimiento de planes de acción conductuales para mantener activación ante futuras caídas del estado de ánimo. El énfasis está en mantener patrones conductuales funcionales más que en prevenir pensamientos negativos. Referencia: Martell et al. (2010)."
+  }
+
+],
+
+
+"micros": [
+
+  {
+    "nombre": "Registro horario simple",
+    "codigo": "m_ba_registro_horario",
+    "procesos": ["VB_monitorizacion"],
+    "texto": "Microintervención en la que el paciente anota por franjas horarias qué ha hecho realmente durante el día, sin interpretar ni evaluar, generando una línea base objetiva sobre patrones de inactividad y momentos de posible refuerzo. Referencia: Jacobson et al. (1996); Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Escala breve de ánimo asociada a actividad",
+    "codigo": "m_ba_escala_animo",
+    "procesos": ["VB_monitorizacion", "N_metacognicion"],
+    "texto": "Asignación de una puntuación simple de estado de ánimo tras cada actividad relevante para identificar relaciones funcionales entre conducta y afecto, desmontando la creencia de que 'nada cambia'. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Especificación conductual de tarea",
+    "codigo": "m_ba_especificacion_tarea",
+    "procesos": ["VB_planificacion"],
+    "texto": "Transformación de metas vagas ('hacer algo productivo') en conductas observables y delimitadas ('enviar un correo concreto a las 10:00'), reduciendo ambigüedad y fricción ejecutiva. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Descomposición en pasos mínimos",
+    "codigo": "m_ba_pasos_minimos",
+    "procesos": ["VB_planificacion", "AG_compromisoConductual"],
+    "texto": "Fragmentación de una tarea evitada en unidades muy pequeñas y realizables para facilitar inicio de acción y disminuir evitación por sobrecarga percibida. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Activación programada independiente del ánimo",
+    "codigo": "m_ba_independencia_animo",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Reforzar la regla clínica de actuar según planificación y no según estado emocional momentáneo, promoviendo acción previa a motivación como principio conductual básico. Referencia: Jacobson et al. (1996)."
+  },
+
+  {
+    "nombre": "Identificación de conductas de escape",
+    "codigo": "m_ba_escape",
+    "procesos": ["VB_analisisConductual"],
+    "texto": "Detección concreta de conductas que reducen malestar inmediato pero mantienen retirada (p. ej., quedarse en cama, evitar llamadas), registrándolas como objetivos de intervención conductual. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Sustitución por conducta alternativa activa",
+    "codigo": "m_ba_sustitucion",
+    "procesos": ["VB_exposicionConductual"],
+    "texto": "Introducción de una conducta alternativa breve frente a una conducta evitativa habitual, incrementando contacto con entorno en lugar de retirada automática. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Ensayo conductual en sesión",
+    "codigo": "m_ba_ensayo_sesion",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Práctica breve en sesión de una acción evitada (p. ej., redactar mensaje, hacer llamada simulada), reduciendo barrera inicial y aumentando probabilidad de ejecución fuera de consulta. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Evaluación de refuerzo natural",
+    "codigo": "m_ba_refuerzo_natural",
+    "procesos": ["VB_analisisConductual"],
+    "texto": "Identificación explícita de qué actividades generan sensación de logro, conexión o placer real, diferenciándolas de conductas neutras o anestésicas. Referencia: Jacobson et al. (1996)."
+  },
+
+  {
+    "nombre": "Programación anticipada semanal",
+    "codigo": "m_ba_programacion_semanal",
+    "procesos": ["VB_planificacion"],
+    "texto": "Planificación escrita de actividades clave antes de iniciar la semana, reduciendo decisiones improvisadas que favorecen evitación. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Regla de los cinco minutos",
+    "codigo": "m_ba_cinco_minutos",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Compromiso de iniciar una tarea durante al menos cinco minutos independientemente del estado anímico, disminuyendo resistencia inicial y aumentando probabilidad de continuidad. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Revisión de cumplimiento sin juicio",
+    "codigo": "m_ba_revision_sin_juicio",
+    "procesos": ["N_metacognicion", "VB_monitorizacion"],
+    "texto": "Análisis de tareas realizadas o no realizadas sin crítica ni interpretación cognitiva, manteniendo foco en ajuste conductual y aprendizaje funcional. Referencia: Jacobson et al. (1996)."
+  },
+
+  {
+    "nombre": "Identificación de patrones de retirada social",
+    "codigo": "m_ba_retirada_social",
+    "procesos": ["VB_analisisConductual", "R_repertorioInterpersonal"],
+    "texto": "Detección específica de reducción de contacto social como factor mantenedor del estado depresivo, señalándolo como objetivo de activación progresiva. Referencia: Martell et al. (2010)."
+  },
+
+  {
+    "nombre": "Activación en dominio clave",
+    "codigo": "m_ba_dominio_clave",
+    "procesos": ["VB_planificacion", "AG_compromisoConductual"],
+    "texto": "Selección de un dominio vital prioritario (laboral, social, autocuidado) y activación focalizada en ese ámbito para generar efecto cascada en refuerzo general. Referencia: Martell et al. (2010)."
+  }
+
+],
+
+
+"ideasPrincipales": [
+
+  {
+    "id": "idea_ba_1",
+    "titulo": "La depresión se mantiene por reducción de refuerzo positivo",
+    "desarrollo": "La Activación Conductual sostiene que la depresión no es únicamente un fenómeno intrapsíquico, sino el resultado de una disminución sostenida en el contacto con contingencias reforzantes. La retirada y la evitación reducen exposición a experiencias gratificantes, consolidando bajo estado de ánimo. El tratamiento apunta a restaurar esas contingencias más que a modificar directamente cogniciones. (Jacobson et al., 1996)."
+  },
+
+  {
+    "id": "idea_ba_2",
+    "titulo": "La evitación es el mecanismo central de mantenimiento",
+    "desarrollo": "Las conductas de escape y evitación reducen malestar inmediato pero mantienen el ciclo depresivo al impedir la exposición a refuerzos naturales. La BA conceptualiza la evitación como objetivo primario de intervención, utilizando análisis funcional para identificarla y sustituirla por acción dirigida. (Martell, Dimidjian & Herman-Dunn, 2010)."
+  },
+
+  {
+    "id": "idea_ba_3",
+    "titulo": "La acción precede a la motivación",
+    "desarrollo": "BA desafía la creencia de que primero debe mejorar el ánimo para actuar. El modelo propone que la activación conductual puede generar cambios en estado emocional como consecuencia, no como prerrequisito. Se interviene sobre conducta incluso cuando la motivación es baja. (Jacobson et al., 1996)."
+  },
+
+  {
+    "id": "idea_ba_4",
+    "titulo": "El análisis funcional guía la intervención",
+    "desarrollo": "El tratamiento se basa en identificar antecedentes y consecuencias que mantienen conductas depresivas. La intervención no es genérica, sino individualizada a partir de patrones observables en la vida cotidiana del paciente. El análisis funcional es la brújula clínica del modelo. (Martell et al., 2010)."
+  },
+
+  {
+    "id": "idea_ba_5",
+    "titulo": "La depresión puede tratarse sin modificar cogniciones explícitamente",
+    "desarrollo": "El estudio de componentes de Jacobson demostró que la activación conductual por sí sola producía resultados comparables a la terapia cognitiva completa, cuestionando la necesidad de intervenir directamente sobre pensamientos para lograr mejoría clínica. (Jacobson et al., 1996)."
+  },
+
+  {
+    "id": "idea_ba_6",
+    "titulo": "El refuerzo natural es más potente que la recompensa artificial",
+    "desarrollo": "BA prioriza aumentar contacto con reforzadores naturales del entorno (logro, conexión social, productividad) en lugar de introducir recompensas externas arbitrarias. El cambio sostenible ocurre cuando la vida cotidiana vuelve a ofrecer contingencias reforzantes reales. (Martell et al., 2010)."
+  },
+
+  {
+    "id": "idea_ba_7",
+    "titulo": "La estructura y planificación reducen dependencia del estado emocional",
+    "desarrollo": "La programación calendarizada de actividades disminuye la improvisación influida por el ánimo. Al establecer compromisos conductuales previos, se protege la acción frente a fluctuaciones emocionales características de la depresión. (Martell et al., 2010)."
+  },
+
+  {
+    "id": "idea_ba_8",
+    "titulo": "El cambio conductual genera evidencia experiencial",
+    "desarrollo": "Cuando el paciente actúa y observa cambios en energía o estado de ánimo, se genera aprendizaje directo que debilita creencias depresivas sin necesidad de debate cognitivo formal. La experiencia conductual funciona como corrector implícito de expectativas negativas. (Jacobson et al., 1996)."
+  },
+
+  {
+    "id": "idea_ba_9",
+    "titulo": "La prevención de recaídas depende de mantener activación",
+    "desarrollo": "La estabilidad clínica no se basa en eliminar pensamientos negativos, sino en mantener patrones de conducta que aseguren contacto continuo con refuerzo y reduzcan probabilidad de retirada futura. La recaída se conceptualiza como retorno a evitación, no como fallo cognitivo. (Martell et al., 2010)."
+  }
+
+],
+"secuencias": [
+  {
+    "id": "seq_ba_estructura_tratamiento",
+    "nombre": "Estructura progresiva del tratamiento en Activación Conductual",
+    "tipo": "estructura_progresiva",
+    "descripcion": "Secuencia clínica descrita en los manuales de BA que organiza el tratamiento desde la conceptualización conductual inicial hasta la consolidación y prevención de recaídas, manteniendo foco en análisis funcional, activación y reducción de evitación.",
+    "pasos": [
+      {
+        "orden": 1,
+        "accion": "Evaluación y análisis funcional",
+        "explicacion": "Identificación de síntomas depresivos, patrones de retirada y evitación, y análisis de antecedentes y consecuencias que mantienen el ciclo depresivo. Se formula el caso en términos de contingencias y pérdida de refuerzo."
+      },
+      {
+        "orden": 2,
+        "accion": "Monitorización sistemática de actividad",
+        "explicacion": "Registro estructurado de actividades diarias y estado de ánimo asociado para establecer línea base conductual e identificar oportunidades de intervención."
+      },
+      {
+        "orden": 3,
+        "accion": "Programación estructurada de actividades",
+        "explicacion": "Planificación calendarizada de conductas específicas con potencial reforzante, independientemente del estado motivacional inicial, priorizando viabilidad y progresión gradual."
+      },
+      {
+        "orden": 4,
+        "accion": "Intervención sobre evitación y escape",
+        "explicacion": "Identificación y afrontamiento progresivo de conductas evitativas que mantienen el problema, utilizando principios de exposición conductual y resolución de problemas."
+      },
+      {
+        "orden": 5,
+        "accion": "Ajuste de contingencias y optimización de refuerzo",
+        "explicacion": "Revisión continua de qué actividades generan refuerzo natural efectivo, modificando el plan conductual en función de resultados observables."
+      },
+      {
+        "orden": 6,
+        "accion": "Consolidación y prevención de recaídas",
+        "explicacion": "Identificación de señales tempranas de retirada futura y establecimiento de planes conductuales preventivos para mantener activación sostenida en el tiempo."
+      }
+    ],
+    "referencias": [
+      "Jacobson, N. S. et al. (1996). A component analysis of cognitive-behavioral treatment for depression.",
+      "Martell, C. R., Dimidjian, S., & Herman-Dunn, R. (2010). Behavioral Activation for Depression."
+    ]
+  }
+]
+
+
+  "refs": [
+    "Jacobson, N. S. et al. (1996). A component analysis of cognitive-behavioral treatment for depression.",
+    "Martell, C. R., Dimidjian, S., & Herman-Dunn, R. (2010). Behavioral Activation for Depression.",
+    "Dimidjian, S. et al. (2011). The origins and current status of behavioral activation treatments for depression."
+  ]
+}
