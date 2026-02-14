@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_reapreciacion",
-  "updatedAt": "2026-02-12T15:11:50.042Z",
-  "totalModelos": 18,
+  "updatedAt": "2026-02-14T09:31:38.515Z",
+  "totalModelos": 19,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -53,6 +53,36 @@
           "codigo": "m_bandura_normalizar_activacion",
           "nombre": "Normalizar activación fisiológica",
           "texto": "Microintervención orientada a reinterpretar la activación fisiológica (ansiedad, tensión, incremento de la frecuencia cardíaca) como una señal de esfuerzo, activación adaptativa o novedad, y no como evidencia de incapacidad o peligro. Este reencuadre reduce evitación, facilita la exposición conductual y protege la autoeficacia durante tareas desafiantes. (Bandura, 1997).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ert-mennin-fresco-2013",
+      "modelLabel": "ERT – Emotion Regulation Therapy",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Douglas S. Mennin; David M. Fresco",
+      "modelYear": 2013,
+      "items": [
+        {
+          "codigo": "p_ert_regulacion_metacognitiva",
+          "nombre": "Entrenamiento en regulación metacognitiva (distancing y reframing funcional)",
+          "texto": "Procedimiento destinado a modificar la relación con pensamientos autorreferenciales reactivos mediante técnicas de distanciamiento y reformulación funcional. Se trabaja la capacidad de observar preocupación y autocrítica como procesos mentales transitorios, reduciendo fusión cognitiva y ampliando margen de elección conductual. No busca sustituir contenido cognitivo, sino cambiar la postura desde la que se responde a él. (Mennin & Fresco, 2014).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ert_reencuadre_motivacional",
+          "nombre": "Reencuadre funcional motivacional",
+          "texto": "Pequeño ajuste interpretativo donde se traduce la emoción en términos de señal adaptativa (“esta ansiedad indica que esto me importa”), desplazando la respuesta desde amenaza pura hacia significado motivacional y facilitando decisiones más alineadas con valores. (Mennin & Fresco, 2014).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ert_revision_aprendizaje",
+          "nombre": "Revisión posterior de aprendizaje emocional",
+          "texto": "Exploración breve tras una situación activadora para identificar qué ocurrió cuando se respondió de forma counteractive o proactiva, consolidando aprendizaje inhibitorio y reforzando percepción de eficacia regulatoria. (Renna et al., 2017).",
           "sub": "RE_reapreciacion",
           "tipo": "micro"
         }

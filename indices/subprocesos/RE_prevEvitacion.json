@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-12T15:11:50.042Z",
-  "totalModelos": 37,
+  "updatedAt": "2026-02-14T09:31:38.515Z",
+  "totalModelos": 38,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -199,6 +199,36 @@
           "codigo": "m_cpt_creencia_evitacion",
           "nombre": "Conexión entre creencia traumática y evitación actual",
           "texto": "Intervención puntual que señala cómo un atasco cognitivo concreto mantiene conductas de evitación o seguridad en la vida actual, ayudando al paciente a comprender el coste funcional de sostener la creencia traumática. (Resick et al., 2016).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ert-mennin-fresco-2013",
+      "modelLabel": "ERT – Emotion Regulation Therapy",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Douglas S. Mennin; David M. Fresco",
+      "modelYear": 2013,
+      "items": [
+        {
+          "codigo": "p_ert_cyr",
+          "nombre": "Automonitorización estructurada con CYR (Catch Yourself Reacting)",
+          "texto": "Procedimiento sistemático de análisis de episodios emocionales intensos donde el paciente identifica disparadores, emoción primaria, tirón motivacional (seguridad/recompensa), respuestas cognitivas reactivas y conductas asociadas. Se utiliza como herramienta continua para aumentar detección temprana de reactividad y preparar la transición hacia respuestas regulatorias alternativas más flexibles. (Renna et al., 2017).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ert_exposicion_experiencial",
+          "nombre": "Exposición experiencial guiada",
+          "texto": "Procedimiento orientado a activar deliberadamente experiencias emocionales evitadas dentro de la ventana de tolerancia, facilitando aprendizaje inhibitorio y reorganización motivacional. A diferencia de la exposición clásica centrada solo en reducción de ansiedad, aquí el foco está en permanecer con la emoción primaria relevante y traducirla en acciones valiosas, reduciendo progresivamente la dependencia de estrategias de seguridad. (Fresco et al., 2016; Renna et al., 2017).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ert_tiron_seguridad",
+          "nombre": "Detección temprana del tirón hacia seguridad",
+          "texto": "Consiste en identificar el momento exacto en que aparece el impulso automático de buscar control, certeza o evitación ante activación emocional, permitiendo interrumpir la transición hacia preocupación o conductas de seguridad y abrir espacio para una respuesta más flexible. (Fresco et al., 2016).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

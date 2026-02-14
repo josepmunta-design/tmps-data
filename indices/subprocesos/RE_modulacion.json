@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-12T15:11:50.042Z",
-  "totalModelos": 90,
+  "updatedAt": "2026-02-14T09:31:38.515Z",
+  "totalModelos": 91,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -187,6 +187,36 @@
           "codigo": "m_cpt_revision_impacto",
           "nombre": "Revisión guiada del escrito de impacto",
           "texto": "Microintervención en la que terapeuta y paciente revisan fragmentos concretos del escrito de impacto para detectar significados implícitos, emociones asociadas y atascos emergentes, favoreciendo una lectura más contextualizada y regulada del trauma. (Resick et al., 2016).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ert-mennin-fresco-2013",
+      "modelLabel": "ERT – Emotion Regulation Therapy",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Douglas S. Mennin; David M. Fresco",
+      "modelYear": 2013,
+      "items": [
+        {
+          "codigo": "p_ert_regulacion_atencional",
+          "nombre": "Entrenamiento en regulación atencional (orienting y allowing)",
+          "texto": "Procedimiento central de la primera fase donde se entrenan prácticas de orientación deliberada de la atención hacia respiración, cuerpo y experiencia emocional emergente, junto con la capacidad de sostenerla sin evitación ni sobreelaboración cognitiva. Busca aumentar interocepción, flexibilidad atencional y tolerancia emocional, reduciendo el impulso automático de preocupación o rumiación ante activación afectiva. Incluye práctica formal entre sesiones y aplicación en tiempo real ante activadores cotidianos. (Renna et al., 2017).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ert_orientacion_respiracion",
+          "nombre": "Orientación atencional a respiración",
+          "texto": "Micropráctica breve donde el paciente dirige deliberadamente la atención a la respiración para estabilizar activación y recuperar presencia corporal antes de responder a la emoción, reduciendo la probabilidad de escalada cognitiva reactiva. (Renna et al., 2017).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ert_sostener_emocion",
+          "nombre": "Sostener emoción sin elaboración",
+          "texto": "Intervención breve destinada a permanecer con la sensación emocional en el cuerpo durante unos segundos adicionales sin añadir análisis ni juicio, entrenando tolerancia y evitando que la mente amplifique la experiencia mediante rumiación o catastrofización. (Mennin & Fresco, 2014).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

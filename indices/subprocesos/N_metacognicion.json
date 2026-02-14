@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-12T15:11:50.042Z",
-  "totalModelos": 97,
+  "updatedAt": "2026-02-14T09:31:38.515Z",
+  "totalModelos": 98,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -329,6 +329,64 @@
           "codigo": "m_cpt_creencia_evitacion",
           "nombre": "Conexión entre creencia traumática y evitación actual",
           "texto": "Intervención puntual que señala cómo un atasco cognitivo concreto mantiene conductas de evitación o seguridad en la vida actual, ayudando al paciente a comprender el coste funcional de sostener la creencia traumática. (Resick et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ert-mennin-fresco-2013",
+      "modelLabel": "ERT – Emotion Regulation Therapy",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Douglas S. Mennin; David M. Fresco",
+      "modelYear": 2013,
+      "items": [
+        {
+          "codigo": "p_ert_formulacion_idiografica",
+          "nombre": "Formulación idiográfica iterativa basada en procesos motivacionales",
+          "texto": "La conceptualización en ERT se construye de manera colaborativa identificando patrones reactivos (preocupación, rumiación, evitación), respuestas conductuales asociadas y bloqueos en acción dirigida a valores. Se revisa continuamente a lo largo del tratamiento para mapear la transición desde reactividad automática hacia respuestas counteractive y posteriormente proactivas. Este procedimiento permite individualizar el modelo transdiagnóstico a la historia motivacional concreta del paciente. (Fresco et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ert_regulacion_metacognitiva",
+          "nombre": "Entrenamiento en regulación metacognitiva (distancing y reframing funcional)",
+          "texto": "Procedimiento destinado a modificar la relación con pensamientos autorreferenciales reactivos mediante técnicas de distanciamiento y reformulación funcional. Se trabaja la capacidad de observar preocupación y autocrítica como procesos mentales transitorios, reduciendo fusión cognitiva y ampliando margen de elección conductual. No busca sustituir contenido cognitivo, sino cambiar la postura desde la que se responde a él. (Mennin & Fresco, 2014).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ert_cyr",
+          "nombre": "Automonitorización estructurada con CYR (Catch Yourself Reacting)",
+          "texto": "Procedimiento sistemático de análisis de episodios emocionales intensos donde el paciente identifica disparadores, emoción primaria, tirón motivacional (seguridad/recompensa), respuestas cognitivas reactivas y conductas asociadas. Se utiliza como herramienta continua para aumentar detección temprana de reactividad y preparar la transición hacia respuestas regulatorias alternativas más flexibles. (Renna et al., 2017).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ert_tiron_seguridad",
+          "nombre": "Detección temprana del tirón hacia seguridad",
+          "texto": "Consiste en identificar el momento exacto en que aparece el impulso automático de buscar control, certeza o evitación ante activación emocional, permitiendo interrumpir la transición hacia preocupación o conductas de seguridad y abrir espacio para una respuesta más flexible. (Fresco et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ert_distanciamiento_preocupacion",
+          "nombre": "Distanciamiento de preocupación",
+          "texto": "Microintervención que consiste en etiquetar explícitamente la preocupación como proceso mental en curso (“estoy preocupándome”) en lugar de tratar su contenido como hecho, reduciendo fusión cognitiva y aumentando margen de elección conductual. (Renna et al., 2017).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ert_cyr_breve",
+          "nombre": "Aplicación breve de CYR en vivo",
+          "texto": "Versión abreviada del análisis Catch Yourself Reacting aplicada en el momento, identificando disparador, emoción y respuesta reactiva en menos de un minuto para interrumpir automatismos y elegir una respuesta alternativa más adaptativa. (Renna et al., 2017).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ert_revision_aprendizaje",
+          "nombre": "Revisión posterior de aprendizaje emocional",
+          "texto": "Exploración breve tras una situación activadora para identificar qué ocurrió cuando se respondió de forma counteractive o proactiva, consolidando aprendizaje inhibitorio y reforzando percepción de eficacia regulatoria. (Renna et al., 2017).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
