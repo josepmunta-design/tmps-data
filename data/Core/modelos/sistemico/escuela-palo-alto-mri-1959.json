@@ -1,0 +1,319 @@
+{
+  "id": "escuela-palo-alto-mri-1959",
+  "grupo": "Sistémico",
+  "label": "Escuela de Palo Alto / MRI",
+  "year": 1959,
+  "importance": 3,
+  "autores": "Paul Watzlawick; John Weakland; Richard Fisch",
+  "universidad": "Mental Research Institute (MRI)",
+  "ciudad": "Palo Alto, California",
+  "pais": "EE. UU.",
+  "lat": 37.441883,
+  "lon": -122.143019,
+
+  "descripcion": "La Escuela de Palo Alto constituye el núcleo histórico del pensamiento sistémico aplicado a la clínica. Desde el Mental Research Institute (MRI), Watzlawick y su equipo conceptualizaron los problemas psicológicos como patrones de interacción mantenidos por intentos de solución que, paradójicamente, los perpetúan. Inspirados en la cibernética y la teoría general de sistemas, distinguieron entre cambio de primer orden (variación dentro del mismo marco) y cambio de segundo orden (transformación del marco). El enfoque desplaza la pregunta del 'por qué' al 'cómo funciona el problema', privilegiando intervenciones breves, estratégicas y orientadas a modificar secuencias de interacción y reglas implícitas del sistema. (Watzlawick, Weakland & Fisch, 1974).",
+
+  "influencias": [
+    "Teoría general de sistemas",
+    "Cibernética",
+    "Pragmática de la comunicación humana",
+    "Gregory Bateson",
+    "Milton H. Erickson",
+    "Psiquiatría estratégica"
+  ],
+
+  "mjps": ["R", "AG", "N", "RE"],
+
+  "neimeyer": {
+    "epistemologico": "Marco pragmático y cibernético de segundo orden. La realidad clínica se entiende como construida en patrones de interacción observables. El terapeuta interviene en secuencias comunicacionales más que en estructuras intrapsíquicas.",
+    "teoriaFormal": "El problema es una pauta relacional sostenida por soluciones intentadas. Los sistemas tienden a la homeostasis mediante retroalimentación. El cambio puede ser de primer orden (variación dentro del sistema) o de segundo orden (cambio del sistema).",
+    "teoriaClinica": "La intervención se centra en identificar el patrón repetitivo y diseñar maniobras estratégicas que alteren la secuencia. El foco está en modificar interacciones presentes más que en explorar historia pasada."
+  },
+
+ "procedimientos": [
+  {
+    "nombre": "Definición operativa del problema y del sistema cliente",
+    "codigo": "p_mri_definicionProblema",
+    "procesos": ["R_sist_ciclos", "R_sist_interaccion", "N_marcosCognitivos"],
+    "texto": "Delimitar el problema en términos conductuales y relacionales (“qué pasa, entre quiénes y en qué orden”), identificando el sistema cliente (quién participa activamente en la pauta y quién puede/va a hacer cambios) y evitando definiciones intrapsíquicas vagas; esta definición operativa crea una diana manipulable y observable para intervenir sobre secuencias y retroalimentaciones. (Watzlawick, Weakland & Fisch, 1974; Weakland, Fisch, Watzlawick & Bodin, 1974)."
+  },
+  {
+    "nombre": "Evaluación de la demanda y construcción del contrato de cambio",
+    "codigo": "p_mri_demandaContrato",
+    "procesos": ["R_sist_roles", "AG_tomaDecisiones", "N_marcosCognitivos"],
+    "texto": "Explorar quién define el problema, quién quiere el cambio, quién paga el coste del cambio y qué expectativas explícitas e implícitas trae cada actor, estableciendo un contrato pragmático (qué cambio concreto se busca, en qué plazos y con qué tareas) para evitar intervenciones sin sistema cliente real o con objetivos incompatibles. (Watzlawick, Beavin & Jackson, 1967; Weakland et al., 1974)."
+  },
+  {
+    "nombre": "Recogida de datos por secuencias (quién-hace-qué-cuándo) y patrones de comunicación",
+    "codigo": "p_mri_mapeoSecuencias",
+    "procesos": ["R_sist_interaccion", "R_sist_ciclos"],
+    "texto": "Construir un mapa fino de la interacción: episodios típicos, desencadenantes, respuestas, escaladas y puntos de inflexión, atendiendo a niveles de contenido y relación (metamensajes) para identificar la pauta circular que organiza el problema y los lugares de palanca donde un cambio mínimo puede alterar el bucle. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974)."
+  },
+  {
+    "nombre": "Análisis de soluciones intentadas",
+    "codigo": "p_mri_solucionesIntentadas",
+    "procesos": ["R_sist_ciclos", "R_sist_roles", "AG_autoriaResponsabilidad"],
+    "texto": "Identificar las maniobras repetidas (explicar, insistir, controlar, evitar, tranquilizar, castigar, ceder, vigilar, discutir…) que se aplican para resolver el problema y mostrar cómo, por su lógica, lo perpetúan; este análisis desplaza el foco del síntoma a la pauta “problema–solución intentada–agravamiento” y prepara el diseño de tareas que interrumpan esa lógica. (Watzlawick, Weakland & Fisch, 1974; Weakland et al., 1974)."
+  },
+  {
+    "nombre": "Fijación de un objetivo concreto y observable",
+    "codigo": "p_mri_objetivoConcreto",
+    "procesos": ["AG_tomaDecisiones", "AG_compromisoConductual", "N_marcosCognitivos"],
+    "texto": "Transformar el problema en una meta específica, medible y situada (qué conducta/interacción cambiará, en qué contexto y con qué frecuencia) para que la intervención sea diseñable y evaluable; MRI enfatiza que el objetivo debe describirse como comportamiento y secuencia, no como estados internos genéricos. (Watzlawick, Weakland & Fisch, 1974; Weakland et al., 1974)."
+  },
+  {
+    "nombre": "Diferenciar cambio de 1º orden y 2º orden (y elegir estrategia)",
+    "codigo": "p_mri_cambio1y2",
+    "procesos": ["N_marcosCognitivos", "N_reformulacion"],
+    "texto": "Evaluar si el sistema está intentando variaciones dentro del mismo marco (cambio 1º orden) sin éxito y, si es así, diseñar una maniobra que cambie el marco/regla que sostiene la pauta (cambio 2º orden); esta distinción guía cuándo conviene una intervención directa vs paradójica/indirecta. (Watzlawick, Weakland & Fisch, 1974)."
+  },
+  {
+    "nombre": "Reencuadre del problema (redefinición estratégica)",
+    "codigo": "p_mri_reencuadre",
+    "procesos": ["N_reformulacion", "N_marcosCognitivos", "RE_reapreciacion"],
+    "texto": "Modificar el significado funcional de la conducta problemática (p. ej., como intento de protección, protesta, control de la cercanía, regulación del sistema) para reducir resistencia, desactivar culpabilización y abrir alternativas de acción; el reencuadre no busca “verdad”, sino utilidad para cambiar la pauta. (Watzlawick, Weakland & Fisch, 1974; Watzlawick, Beavin & Jackson, 1967)."
+  },
+  {
+    "nombre": "Intervención sobre reglas, normas y contratos relacionales implícitos",
+    "codigo": "p_mri_reglasContratos",
+    "procesos": ["R_sist_roles", "R_sist_guiones", "AG_limitesAsertividad"],
+    "texto": "Hacer explícitas reglas invisibles que organizan el sistema (“aquí no se discute”, “X debe ceder”, “Y no puede fallar”) y diseñar micro-cambios que las flexibilicen, porque muchas soluciones intentadas son obediencia rígida a esas reglas; trabajar reglas permite pasar de cambio conductual superficial a reorganización del patrón. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974)."
+  },
+  {
+    "nombre": "Reestructuración de secuencias de interacción",
+    "codigo": "p_mri_reestructuracionSecuencia",
+    "procesos": ["R_sist_interaccion", "R_sist_ciclos", "R_sist_roles"],
+    "texto": "Proponer cambios concretos en el orden conducta–respuesta (quién inicia, quién responde, cuándo se para, qué se omite) para romper la circularidad y generar nueva retroalimentación; la diana es la secuencia, no la persona, y el éxito se mide por cambio de patrón observable. (Watzlawick, Beavin & Jackson, 1967; Weakland et al., 1974)."
+  },
+  {
+    "nombre": "Tarea de “hacer algo diferente”",
+    "codigo": "p_mri_hacerDiferente",
+    "procesos": ["AG_compromisoConductual", "AG_tomaDecisiones", "R_sist_contexto"],
+    "texto": "Asignar una tarea deliberadamente simple que cambie cualquier elemento del patrón repetitivo (hacerlo antes, hacerlo después, hacerlo menos, hacerlo en otro lugar, con otra forma) para introducir variación y observar cómo responde el sistema; es una estrategia pragmática para producir información nueva y debilitar soluciones intentadas rígidas. (Weakland, Fisch, Watzlawick & Bodin, 1974; Watzlawick, Weakland & Fisch, 1974)."
+  },
+  {
+    "nombre": "Prescripción del síntoma (ritualización / programación / intensificación)",
+    "codigo": "p_mri_prescripcionSintoma",
+    "procesos": ["R_sist_interaccion", "R_sist_ciclos", "AG_compromisoConductual"],
+    "texto": "Pedir que la conducta problemática se realice de forma deliberada y pautada (cuándo, cuánto, cómo) para cambiar su función en el sistema (de espontánea a voluntaria), generar pérdida de control del síntoma sobre la persona y crear condiciones de cambio de segundo orden; se usa especialmente cuando la resistencia o la escalada hacen ineficaz el consejo directo. (Watzlawick, Weakland & Fisch, 1974; Weakland et al., 1974)."
+  },
+  {
+    "nombre": "Restricción paradójica del cambio (paradoxical injunction / ir más despacio)",
+    "codigo": "p_mri_restriccionCambio",
+    "procesos": ["R_sist_roles", "R_sist_ciclos", "RE_modulacion"],
+    "texto": "Indicar que no cambien demasiado rápido, o incluso que mantengan temporalmente la pauta, para reducir oposición/reactancia y desplazar el control del cambio a la propia decisión del sistema; al neutralizar la lucha por el poder, el sistema puede moverse por su cuenta hacia alternativas más funcionales. (Watzlawick, Weakland & Fisch, 1974)."
+  },
+  {
+    "nombre": "Intervenciones sobre escaladas simétricas y complementariedades rígidas",
+    "codigo": "p_mri_escaladas_complementariedad",
+    "procesos": ["R_sist_interaccion", "R_sist_ciclos", "R_sist_roles"],
+    "texto": "Detectar si la pauta es una escalada simétrica (competencia, intensificación mutua) o una complementariedad rígida (uno “arriba”/otro “abajo”) y diseñar tareas que rompan la regla de respuesta automática (p. ej., interrumpir la simetría con desescalada prescrita o flexibilizar roles complementarios), evitando que el sistema vuelva al mismo equilibrio. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974)."
+  },
+  {
+    "nombre": "Metacomunicación y clarificación de paradojas (incluido doble vínculo)",
+    "codigo": "p_mri_metacomunicacion_dobleVinculo",
+    "procesos": ["R_sist_ciclos", "R_sist_interaccion", "N_marcosCognitivos"],
+    "texto": "Intervenir en el nivel de la relación (no solo contenido) para hacer explícitos mensajes contradictorios, reglas imposibles o paradojas comunicacionales, abriendo opciones de salida del juego (nombrar la paradoja, cambiar canal, cambiar regla de respuesta); útil cuando el patrón se sostiene por imposibilidad comunicativa. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974)."
+  },
+  {
+    "nombre": "Uso estratégico del tiempo, formato y encuadre de sesiones",
+    "codigo": "p_mri_tiempoContexto",
+    "procesos": ["R_sist_contexto", "AG_compromisoConductual"],
+    "texto": "Manipular variables de encuadre (frecuencia, duración, intervalos, quién asiste, momento del día) como intervención sistémica: el encuadre no es neutro, altera la pauta y puede reducir escaladas, aumentar cooperación o cortar bucles de consulta interminable; se usa con lógica pragmática y breve. (Weakland et al., 1974; Watzlawick, Weakland & Fisch, 1974)."
+  },
+  {
+    "nombre": "Diseño de tareas entre sesiones como motor del cambio",
+    "codigo": "p_mri_tareas_entre_sesiones",
+    "procesos": ["AG_compromisoConductual", "R_sist_contexto"],
+    "texto": "Asignar tareas precisas para que el sistema produzca nueva información fuera de sesión (qué hacer, cuándo, con quién, qué observar) y revisar el resultado para ajustar la siguiente maniobra; el MRI concibe la sesión como lugar de diseño estratégico y el entre-sesiones como el laboratorio real de cambio. (Weakland, Fisch, Watzlawick & Bodin, 1974)."
+  },
+  {
+    "nombre": "Movilización de apoyos y reconfiguración del sistema ampliado",
+    "codigo": "p_mri_movilizarApoyo",
+    "procesos": ["R_sist_apoyo", "R_sist_contexto", "R_sist_roles"],
+    "texto": "Incluir o coordinar figuras relevantes (familia extendida, escuela, profesionales) cuando su participación cambia contingencias y reduce bucles cerrados del sistema nuclear; se decide por utilidad estratégica: quién puede introducir la variación que el sistema actual no consigue. (Watzlawick, Beavin & Jackson, 1967; Weakland et al., 1974)."
+  },
+  {
+    "nombre": "Posición del terapeuta como consultor estratégico (neutralidad pragmática)",
+    "codigo": "p_mri_posicion_terapeuta",
+    "procesos": ["R_sist_roles", "N_marcosCognitivos"],
+    "texto": "Sostener una postura de consultoría orientada a resolver el problema definido (no a diagnosticar identidades), usando lenguaje no patologizante y evitando coaliciones; esta posición facilita que el sistema acepte tareas y cambios sin sentirse atacado, manteniendo foco en pauta y soluciones intentadas. (Watzlawick, Weakland & Fisch, 1974; Weakland et al., 1974)."
+  }
+],
+
+
+"micros": [
+
+  {
+    "nombre": "Preguntas de secuencia concreta",
+    "codigo": "m_mri_preguntaSecuencia",
+    "procesos": ["R_sist_interaccion"],
+    "texto": "Explorar en detalle quién hace qué, en qué orden y con qué respuesta inmediata, reconstruyendo la pauta circular del problema sin interpretaciones intrapsíquicas. Esta microintervención permite visibilizar la estructura repetitiva del sistema. Referencia: Watzlawick, Beavin & Jackson (1967), cap. 3."
+  },
+
+  {
+    "nombre": "Focalización en conductas observables",
+    "codigo": "m_mri_conductaObservable",
+    "procesos": ["R_sist_interaccion"],
+    "texto": "Redirigir cualquier explicación abstracta hacia descripciones conductuales verificables (“¿qué hizo exactamente?”), manteniendo el trabajo en el nivel pragmático y evitando teorías internas sobre motivaciones profundas. Referencia: Weakland et al. (1974)."
+  },
+
+  {
+    "nombre": "Señalar el bucle problema–solución intentada",
+    "codigo": "m_mri_senalBucle",
+    "procesos": ["R_sist_ciclos", "AG_autoriaResponsabilidad"],
+    "texto": "Nombrar explícitamente la secuencia en la que la solución repetida mantiene el problema, ayudando al sistema a reconocer la lógica circular que hasta entonces operaba implícitamente. Referencia: Watzlawick, Weakland & Fisch (1974), caps. 2–3."
+  },
+
+  {
+    "nombre": "Lenguaje no patologizante",
+    "codigo": "m_mri_lenguajePragmatico",
+    "procesos": ["N_reformulacion"],
+    "texto": "Sustituir etiquetas diagnósticas por descripciones de interacción (“cuando ocurre X, Y responde…”), desplazando la explicación del interior del individuo hacia la pauta relacional. Referencia: Watzlawick, Beavin & Jackson (1967)."
+  },
+
+  {
+    "nombre": "Normalización funcional del problema",
+    "codigo": "m_mri_normalizacion",
+    "procesos": ["RE_reapreciacion", "N_reformulacion"],
+    "texto": "Presentar la conducta problemática como intento lógico dentro del sistema, reduciendo culpa y resistencia, y preparando el terreno para modificar la pauta sin confrontación directa. Referencia: Watzlawick, Weakland & Fisch (1974)."
+  },
+
+  {
+    "nombre": "Micro-reencuadre pragmático",
+    "codigo": "m_mri_microReencuadre",
+    "procesos": ["N_reformulacion", "N_marcosCognitivos"],
+    "texto": "Introducir una redefinición breve y funcional del problema que abra posibilidad de acción diferente, sin buscar verdad psicológica profunda sino utilidad estratégica. Referencia: Watzlawick, Weakland & Fisch (1974), cap. 4."
+  },
+
+  {
+    "nombre": "Introducir duda en certezas absolutas",
+    "codigo": "m_mri_microDuda",
+    "procesos": ["N_construccionAlternativa"],
+    "texto": "Cuestionar afirmaciones rígidas mediante preguntas como “¿siempre ocurre así?”, debilitando narrativas absolutas que sostienen la pauta repetitiva. Referencia: Watzlawick, Weakland & Fisch (1974)."
+  },
+
+  {
+    "nombre": "Resumen circular de la interacción",
+    "codigo": "m_mri_resumenCircular",
+    "procesos": ["R_sist_ciclos", "N_narrativaAutobiografica"],
+    "texto": "El terapeuta describe la secuencia completa de interacción en términos circulares para que el sistema pueda verse desde fuera y reconocer su propia estructura repetitiva. Referencia: Weakland et al. (1974)."
+  },
+
+  {
+    "nombre": "Señalar escalada simétrica",
+    "codigo": "m_mri_escaladaSimetrica",
+    "procesos": ["R_sist_ciclos"],
+    "texto": "Nombrar el patrón de competencia creciente donde ambos miembros aumentan intensidad de respuesta, identificando la dinámica que mantiene el conflicto. Referencia: Watzlawick, Beavin & Jackson (1967), cap. 3."
+  },
+
+  {
+    "nombre": "Señalar complementariedad rígida",
+    "codigo": "m_mri_complementariedad",
+    "procesos": ["R_sist_roles"],
+    "texto": "Identificar relaciones rígidas de dominancia–sumisión que impiden flexibilidad del sistema, mostrando cómo esa polarización sostiene el problema. Referencia: Watzlawick, Beavin & Jackson (1967)."
+  },
+
+  {
+    "nombre": "Pequeña variación estratégica",
+    "codigo": "m_mri_variacionMinima",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Proponer un cambio mínimo y concreto en la secuencia habitual para generar nueva retroalimentación en el sistema, siguiendo el principio de que pequeñas alteraciones pueden producir reorganización mayor. Referencia: Weakland et al. (1974)."
+  },
+
+  {
+    "nombre": "Interrupción puntual de la secuencia",
+    "codigo": "m_mri_interrupcion",
+    "procesos": ["AG_compromisoConductual", "RE_modulacion"],
+    "texto": "Sugerir detener la interacción antes del punto crítico de escalada, introduciendo una ruptura concreta que impida la repetición automática del patrón. Referencia: Weakland et al. (1974)."
+  },
+
+  {
+    "nombre": "Focalización en aquí–ahora interactivo",
+    "codigo": "m_mri_aquiAhora",
+    "procesos": ["R_sist_interaccion"],
+    "texto": "Dirigir la atención a cómo se está interactuando en sesión cuando se reproduce la pauta, utilizando el momento presente como muestra directa del sistema. Referencia: Watzlawick, Weakland & Fisch (1974)."
+  },
+
+  {
+    "nombre": "Clarificación de metacomunicación",
+    "codigo": "m_mri_metacomunicacion",
+    "procesos": ["R_sist_interaccion", "N_marcosCognitivos"],
+    "texto": "Diferenciar entre contenido y relación en un mensaje, señalando incongruencias o dobles niveles comunicacionales que mantienen confusión sistémica. Referencia: Watzlawick, Beavin & Jackson (1967)."
+  },
+
+  {
+    "nombre": "Definición de tarea concreta entre sesiones",
+    "codigo": "m_mri_tareaConcreta",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Cerrar sesión con una instrucción específica y delimitada que introduzca variación en la pauta fuera de consulta, entendiendo el entre-sesiones como espacio real de cambio. Referencia: Weakland et al. (1974)."
+  }
+
+],
+
+
+"ideasPrincipales": [
+
+  {
+    "id": "idea_mri_1",
+    "titulo": "El problema es una pauta de interacción, no una patología interna",
+    "desarrollo": "La Escuela de Palo Alto sostiene que los problemas psicológicos no residen en la mente individual como entidades internas, sino en secuencias repetitivas de interacción que se autorrefuerzan mediante retroalimentación. El síntoma forma parte de un sistema comunicacional y solo puede comprenderse dentro de ese patrón relacional. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974)."
+  },
+
+  {
+    "id": "idea_mri_2",
+    "titulo": "Las soluciones intentadas mantienen el problema",
+    "desarrollo": "El núcleo explicativo del MRI es que las personas repiten soluciones que parecen lógicas pero que, por su propia estructura, perpetúan el problema. Cuanto más se aplica la misma solución, más se consolida la pauta disfuncional. El foco terapéutico consiste en interrumpir esa lógica repetitiva. (Watzlawick, Weakland & Fisch, 1974, caps. 2–3)."
+  },
+
+  {
+    "id": "idea_mri_3",
+    "titulo": "Toda conducta es comunicación",
+    "desarrollo": "Desde la pragmática de la comunicación humana, toda conducta tiene valor comunicativo y ocurre en un contexto relacional. No se puede no comunicar. El análisis clínico debe distinguir entre contenido y relación, y atender a cómo los mensajes organizan el sistema. (Watzlawick, Beavin & Jackson, 1967, cap. 1)."
+  },
+
+  {
+    "id": "idea_mri_4",
+    "titulo": "Cambio de primer orden y cambio de segundo orden",
+    "desarrollo": "El MRI distingue entre cambios que ocurren dentro del mismo marco lógico (primer orden) y cambios que transforman el marco que organiza el sistema (segundo orden). Cuando las soluciones intentadas pertenecen al mismo nivel lógico del problema, solo un cambio de segundo orden puede alterar realmente la pauta. (Watzlawick, Weakland & Fisch, 1974)."
+  },
+
+  {
+    "id": "idea_mri_5",
+    "titulo": "El foco clínico es el cómo, no el por qué",
+    "desarrollo": "La terapia breve estratégica desplaza la pregunta causal ('¿por qué ocurre?') hacia el análisis funcional de la pauta ('¿cómo se mantiene?'). El cambio no requiere comprender el origen histórico del problema, sino intervenir sobre la secuencia actual que lo sostiene. (Watzlawick, Weakland & Fisch, 1974)."
+  },
+
+  {
+    "id": "idea_mri_6",
+    "titulo": "Los sistemas tienden a la homeostasis",
+    "desarrollo": "Los sistemas humanos buscan estabilidad mediante retroalimentación negativa, resistiendo cambios que alteren el equilibrio existente, incluso si ese equilibrio es disfuncional. Por ello, la intervención debe considerar la resistencia sistémica y utilizar maniobras estratégicas que sorteen la homeostasis. (Watzlawick, Beavin & Jackson, 1967)."
+  },
+
+  {
+    "id": "idea_mri_7",
+    "titulo": "Pequeños cambios pueden producir reorganizaciones mayores",
+    "desarrollo": "Debido a la naturaleza circular de los sistemas, una variación mínima en la secuencia puede desencadenar una reorganización significativa del patrón completo. El terapeuta estratégico busca el punto de palanca más económico y eficaz dentro de la pauta. (Weakland et al., 1974)."
+  },
+
+  {
+    "id": "idea_mri_8",
+    "titulo": "La intervención es pragmática y orientada a resultados",
+    "desarrollo": "El criterio de verdad en el MRI es la utilidad: una intervención es válida si modifica la pauta problemática. No se privilegia la coherencia teórica interna ni la interpretación profunda, sino la eficacia en producir cambio observable en el sistema. (Watzlawick, Weakland & Fisch, 1974)."
+  },
+
+  {
+    "id": "idea_mri_9",
+    "titulo": "El terapeuta actúa como diseñador estratégico",
+    "desarrollo": "El terapeuta no diagnostica identidades ni explora estructuras intrapsíquicas, sino que diseña intervenciones específicas destinadas a alterar secuencias comunicacionales. Su posición es consultiva y estratégica, orientada a producir variación en el sistema. (Weakland et al., 1974)."
+  }
+
+],
+
+
+  "refs": [
+    "Watzlawick, P., Beavin, J., & Jackson, D. (1967). Pragmatics of Human Communication.",
+    "Watzlawick, P., Weakland, J., & Fisch, R. (1974). Change.",
+    "Weakland, J., Fisch, R., Watzlawick, P., & Bodin, A. (1974). Brief Therapy: Focused Problem Resolution."
+  ]
+}
