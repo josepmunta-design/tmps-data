@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-14T09:31:38.515Z",
-  "totalModelos": 59,
+  "updatedAt": "2026-02-14T09:37:28.105Z",
+  "totalModelos": 60,
   "modelos": [
     {
       "modelId": "act-hayes-strosahl-wilson-1999",
@@ -1171,6 +1171,29 @@
           "codigo": "m_rt_alternativa",
           "nombre": "Elección de conducta alternativa",
           "texto": "Invitar a identificar una conducta concreta diferente que pueda probarse de inmediato.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-transpersonal-1968",
+      "modelLabel": "Terapia transpersonal",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Abraham H. Maslow; Anthony Sutich; Stanislav Grof; Ken Wilber",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_tp_sentido_valores",
+          "nombre": "Trabajo existencial de sentido, valores y propósito (más allá del síntoma)",
+          "texto": "Procedimiento centrado en clarificar qué da sentido a la vida del paciente, qué valores quiere encarnar y cómo su sufrimiento se relaciona con dilemas existenciales; se traduce en elecciones concretas, compromisos y límites, evitando que la espiritualidad se use para no decidir o no confrontar realidades difíciles. (Frankl, 1946; Yalom, 1980; Wilber, 1977).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tp_contrato_practica_graduada",
+          "nombre": "Contrato de práctica graduada",
+          "texto": "Ajuste fino de dosis y frecuencia de práctica contemplativa con revisión semanal de efectos, para prevenir desregulación y sostener progresión segura y sostenible. (Britton, 2019; Kabat-Zinn, 1990).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
