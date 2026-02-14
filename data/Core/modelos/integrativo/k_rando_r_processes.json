@@ -1,0 +1,95 @@
+{
+  "id": "k_rando_r_processes",
+  "grupo": "Integrativo",
+  "label": "Procesos del duelo (R Processes)",
+  "year": 1984,
+  "autores": "Therese A. Rando",
+  "hideInModels": true,
+  "descripcion": "El modelo de los “R Processes” de Therese Rando concibe el duelo como un conjunto de procesos psicológicos interrelacionados que la persona necesita atravesar para integrar una pérdida significativa. A diferencia de modelos por etapas, Rando describe funciones clínicas que pueden activarse, bloquearse o reactivarse a lo largo del tiempo. Su enfoque es especialmente útil para el trabajo terapéutico porque permite identificar con precisión qué aspecto del duelo está comprometido —reconocimiento, reacción emocional, recuerdo, renuncia, reajuste o reinversión— sin imponer una secuencia fija. El modelo destaca que el duelo problemático suele deberse a bloqueos específicos en alguno de estos procesos más que a una “mala evolución global”.",
+  "mjps": ["ED"],
+  "subprocesos": [
+    "ED_reconocimiento",
+    "ED_oscilacionTolerancia",
+    "ED_expresionVinculada",
+    "ED_ajusteMundoPerdidasSec",
+    "ED_vinculoContinuo",
+    "ED_identidadReinversion"
+  ],
+  "procesosR": [
+    {
+      "nombre": "Reconocer la pérdida",
+      "codigo": "r_rando_recognize",
+      "ed": ["ED_reconocimiento"],
+      "descripcion": "Proceso mediante el cual la persona llega a reconocer plenamente la realidad, irreversibilidad y significado de la pérdida. Incluye tanto el reconocimiento cognitivo como el impacto emocional, y se ve obstaculizado por negación persistente, minimización, intelectualización o fantasías de reversión. Rando subraya que sin este reconocimiento, los procesos posteriores quedan debilitados o se convierten en pseudoelaboraciones."
+    },
+    {
+      "nombre": "Reaccionar a la pérdida",
+      "codigo": "r_rando_react",
+      "ed": ["ED_oscilacionTolerancia", "ED_expresionVinculada"],
+      "descripcion": "Proceso que implica experimentar y expresar las respuestas emocionales, cognitivas y físicas a la pérdida. Incluye tristeza, rabia, culpa, alivio, ansiedad y desorganización somática. La reacción saludable no se define por intensidad, sino por la capacidad de oscilar entre contacto y regulación. La inhibición crónica o la inundación emocional prolongada indican bloqueos en este proceso."
+    },
+    {
+      "nombre": "Recordar y reexperimentar",
+      "codigo": "r_rando_recollect",
+      "ed": ["ED_vinculoContinuo"],
+      "descripcion": "Proceso mediante el cual la persona puede recordar y reexperimentar la relación con lo perdido de forma integrada, sin evitación ni fijación traumática. Incluye recuerdos positivos y negativos, momentos compartidos y representaciones internas. El objetivo no es borrar recuerdos, sino permitir que se integren como parte de la historia vital sin desorganizar el presente."
+    },
+    {
+      "nombre": "Renunciar a viejos apegos y asunciones",
+      "codigo": "r_rando_relinquish",
+      "ed": ["ED_ajusteMundoPerdidasSec", "ED_identidadReinversion"],
+      "descripcion": "Proceso que implica soltar expectativas, roles, proyectos y supuestos vitales que ya no pueden sostenerse tras la pérdida. Esta renuncia no es olvido ni traición, sino un reajuste necesario para vivir en un mundo transformado. Los bloqueos aparecen cuando la persona se aferra rígidamente a cómo “debería haber sido” la vida."
+    },
+    {
+      "nombre": "Reajustarse a un mundo sin lo perdido",
+      "codigo": "r_rando_readjust",
+      "ed": ["ED_ajusteMundoPerdidasSec"],
+      "descripcion": "Proceso centrado en la adaptación práctica, relacional y psicológica a la vida cotidiana tras la pérdida. Incluye asumir nuevos roles, reorganizar rutinas, redefinir relaciones y reconstruir sensación de competencia. Rando subraya que este reajuste es un proceso activo que requiere apoyo y no debe confundirse con evitación emocional."
+    },
+    {
+      "nombre": "Reinvertir en la vida",
+      "codigo": "r_rando_reinvest",
+      "ed": ["ED_identidadReinversion"],
+      "descripcion": "Proceso mediante el cual la persona vuelve a invertir energía emocional en vínculos, proyectos y actividades significativas, sin borrar la relación con lo perdido. La reinversión saludable implica autorizar el deseo y el compromiso vital sin culpa ni vivencias de deslealtad, integrando pasado y presente en una identidad renovada."
+    }
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Evaluación de bloqueos por proceso",
+      "codigo": "p_rando_evaluacion",
+      "procesos": ["ED"],
+      "texto": "Procedimiento clínico que consiste en evaluar de forma sistemática en qué procesos del duelo (reconocer, reaccionar, recordar, renunciar, reajustar, reinvertir) existen bloqueos, evitaciones o rigideces. Esta evaluación permite formular el caso de manera precisa y orientar la intervención sin asumir que todo el duelo está detenido."
+    },
+    {
+      "nombre": "Facilitación secuencial flexible",
+      "codigo": "p_rando_facilitacion",
+      "procesos": ["ED"],
+      "texto": "Procedimiento que acompaña el despliegue de los procesos del duelo de forma flexible, respetando el orden funcional pero no imponiendo una secuencia rígida. El terapeuta prioriza el proceso bloqueado sabiendo que otros pueden reactivarse posteriormente."
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Detectar pseudoelaboración",
+      "codigo": "m_rando_pseudo",
+      "procesos": ["ED_reconocimiento"],
+      "texto": "Intervención destinada a identificar aparentes avances del duelo que en realidad encubren negación, evitación o resignación defensiva."
+    },
+    {
+      "nombre": "Normalizar reacciones complejas",
+      "codigo": "m_rando_normalizar",
+      "procesos": ["ED_expresionVinculada"],
+      "texto": "Microintervención que valida la coexistencia de reacciones emocionales contradictorias sin jerarquizarlas ni moralizarlas."
+    },
+    {
+      "nombre": "Autorizar renuncia sin traición",
+      "codigo": "m_rando_renuncia",
+      "procesos": ["ED_identidadReinversion"],
+      "texto": "Intervención breve que legitima soltar expectativas y proyectos imposibles sin vivirse como abandono del vínculo perdido."
+    }
+  ],
+  "refs": [
+    "Rando, T. A. (1984). Grieving: How to Go On Living When Someone You Love Dies.",
+    "Rando, T. A. (1993). Treatment of Complicated Mourning.",
+    "Rando, T. A. (2018). Grief and Mourning: Accommodating to Loss."
+  ]
+}
