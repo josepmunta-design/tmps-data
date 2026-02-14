@@ -2425,8 +2425,8 @@ contain: layout paint;
 
 /* ================== /LANDING ================== */
 
-/* secuencias circulares. */
-/* ===== SECUENCIAS (FLOW) — modo CIRCULAR para protocolo_ciclico ===== */
+    // secuencias circulares. 
+  /* ===== SECUENCIAS (FLOW) — modo CIRCULAR para protocolo_ciclico ===== */
 .mp-flow.mp-flow-circ{
   position: relative;
 
@@ -2802,7 +2802,8 @@ async function loadAuthorPhotoIndex(){
   const url = 'https://josepmunta-design.github.io/tmps-data/data/Core/fotos/foto.json';
 
   try{
-    const r = await fetch(url, { cache: 'no-store' });
+  const r = await fetch(withVer(url), { cache: 'force-cache' });
+
     if (!r.ok) throw new Error('foto.json HTTP ' + r.status);
 
     const data = await r.json();
@@ -2861,7 +2862,8 @@ window.getAuthorPhoto = function(authorName){
 
   if (!file) return null;
 
-  return 'https://josepmunta-design.github.io/tmps-data/data/Core/fotos/' + file;
+  return 'https://cdn.jsdelivr.net/gh/josepmunta-design/tmps-data@main/data/Core/fotos/' + file;
+
 };
 
 window.getModelPhoto = function(modelId, authorName){
@@ -3003,7 +3005,35 @@ function hexToRgba(hex, a=0.14){
   const b = n & 255;
   return `rgba(${r},${g},${b},${a})`;
 }
+     function getAuthorPhoto(autorNombre) {
+  if (!FOTOS || !FOTOS.authors) return null;
   
+  // Normaliza la clave: minúsculas, quita espacios extra
+  const key = String(autorNombre || '')
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, ' '); // maneja "Albert Ellis" → "albert ellis"
+  
+  const fileName = FOTOS.authors[key];
+  if (!fileName) return null;
+  
+  return `https://raw.githubusercontent.com/josepmunta-design/tmps-data/main/data/Core/fotos/${fileName}`;
+}
+
+function getModelPhoto(modelId, autorFallback) {
+  if (!FOTOS || !FOTOS.models) return null;
+  
+  const key = String(modelId || '').toLowerCase().trim();
+  const fileName = FOTOS.models[key];
+  
+  // Si hay foto específica del modelo → úsala
+  if (fileName) {
+    return `https://raw.githubusercontent.com/josepmunta-design/tmps-data/main/data/Core/fotos/${fileName}`;
+  }
+  
+  // Sino → fallback a foto del autor
+  return getAuthorPhoto(autorFallback);
+}
 function tintForModel(model, selectedSchool){
   // Prioridad 1: escuela seleccionada (tu UI trabaja por escuela)
   if (selectedSchool && groupColor.has(selectedSchool)) return groupColor.get(selectedSchool);
@@ -3027,14 +3057,7 @@ function tintForModel(model, selectedSchool){
     //    (nota: esta app NO muestra "procesos" ni "mjps" aunque existan)
     // =========================================================
     const LOCAL_MODELS = [
-    {
-    "id": "psicodrama-moreno-1921",
-    "grupo": "Humanista",
-    "label": "Psicodrama",
-    "year": 1921,
-    "autores": "Jacob Levy Moreno",
-    "file": "modelos/humanista/psicodrama-moreno-1921.json"
-  }
+
 
 ];
 // =========================================================
@@ -3048,8 +3071,10 @@ const MINI_WORLD = { loaded:false, countries:null };
 async function miniLoadWorld(){
   if (MINI_WORLD.loaded) return MINI_WORLD.countries;
 
-  const world = await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json')
-    .then(r => r.json()); // igual que Mapamundi
+const world = await fetch(withVer('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json'), {
+  cache: 'force-cache'
+}).then(r => r.json());
+
 
   MINI_WORLD.countries = topojson.feature(world, world.objects.countries);
   MINI_WORLD.loaded = true;
@@ -3176,13 +3201,25 @@ const projection = d3.geoMercator()
 }
 
 // ⬇️ Usa GitHub Pages (más fiable que raw en embeds tipo Teachable)
-const GH_BASE = 'https://josepmunta-design.github.io/tmps-data/data';
+// ✅ CDN (mucho más rápido que GitHub Pages)
+const GH_BASE = 'https://cdn.jsdelivr.net/gh/josepmunta-design/tmps-data@main/data';
+
+
+const APP_VER = '2026-02-14'; // cambia SOLO cuando publiques cambios
+
+function withVer(url){
+  return url.includes('?') ? `${url}&v=${APP_VER}` : `${url}?v=${APP_VER}`;
+}
 
 async function fetchJson(url){
-  const res = await fetch(url, { cache: 'no-store' });
+  const res = await fetch(withVer(url), {
+    cache: 'force-cache'   // ✅ usa caché de verdad
+    // mode por defecto ok
+  });
   if(!res.ok) throw new Error(`HTTP ${res.status} al cargar ${url}`);
   return await res.json();
 }
+
 function gh(path){ return `${GH_BASE}/${path}`; }
 
 // ✅ El resto de tu código seguirá usando MODELS
@@ -3691,19 +3728,21 @@ return `
 
 // Relleno async de conteos (GitHub real)
 (async () => {
-  for (const label of schools){
+  const tasks = schools.map(async (label) => {
     const n = await landingCountForSchool(label);
     const el = grid.querySelector(`.landingCount[data-count-for="${CSS.escape(label)}"]`);
-   if (el){
-  const nn = Number(n) || 0;
-  el.textContent = String(nn);
+    if (el){
+      const nn = Number(n) || 0;
+      el.textContent = String(nn);
+      const lab = el.closest('.landingSchool')?.querySelector('.landingCountLabel');
+      if (lab) lab.textContent = (nn === 1) ? 'modelo' : 'modelos';
+    }
+  });
 
-  const lab = el.closest('.landingSchool')?.querySelector('.landingCountLabel');
-  if (lab) lab.textContent = (nn === 1) ? 'modelo' : 'modelos';
-}
-
-  }
+  // ✅ paralelo (si una falla, no bloquea todo)
+  await Promise.allSettled(tasks);
 })();
+
 
 
   if (!grid.__bound){
@@ -3773,8 +3812,7 @@ const schools = [...set].sort((a,b)=>{
 
   const list = filteredModelsBySchool(currentSchool);
 
-  modelsListEl.style.setProperty('--schoolColor', groupColor.get(currentSchool) || '#D9AA3F');
-
+  modelsList.style.setProperty('--schoolColor', groupColor.get(currentSchool) || '#D9AA3F');
 
   countLine.innerHTML = `
     <span class="count-n">${list.length}</span>
@@ -3841,6 +3879,18 @@ return `
   }
 }
 
+// ================== Fotos de autores ==================
+function getAuthorPhoto(authorName){
+  const name = String(authorName ?? '').trim().toLowerCase();
+
+  // ✅ aquí solo empezamos con Pavlov
+  if (name === 'iván pávlov' || name === 'ivan pavlov' || name.includes('pavlov')){
+    // 👇 PON AQUÍ la URL EXACTA a la imagen en GitHub (raw)
+    return 'PEGA_AQUI_TU_URL_RAW_DE_PAVLOV';
+  }
+
+  return null;
+}
 
 function renderSchoolInfo(grupo){
   if(!grupo){
@@ -3925,56 +3975,42 @@ ${keys.length ? `
     // =========================================================
     // 4) Render ficha de modelo (sin procesos/mjps)
     // =========================================================
-   function renderModelInfo(m){
-
-  // ✅ Si no hay modelo: pinta SIEMPRE el hero y resetea estados
+    function renderModelInfo(m){
+  // 🛡️ BLINDAJE: si no hay modelo (init o reset), muestra mensaje y sal
+   // 🛡️ BLINDAJE REAL: si no hay modelo, NO toques el panel
   if(!m || !m.id){
-
-    modelInfoEl.classList.remove('school-view');
-    modelInfoEl.style.removeProperty('--schoolColor');
-
-    // resetea glow suave
-    const rightPanel = document.querySelector('.panel.right');
-    if (rightPanel){
-      rightPanel.style.setProperty('--panelGlow', 'rgba(217,170,63,0.12)');
-    }
-
-    // oculta sticky header si existía
-    if (window.__SMH){
-      window.__SMH.setTitle('');
-      window.__SMH.setAuthor('');
-      window.__SMH.hide?.();
-    }
-    const smh = document.getElementById('stickyModelHeader');
-    if (smh) smh.classList.remove('is-on');
-
-    modelInfoEl.innerHTML = `
-      <div class="mp-hero">
-        <div class="mp-hero-eyebrow">Biblioteca viva</div>
-        <div class="mp-hero-title">Modelos psicoterapéuticos</div>
-        <div class="mp-hero-text">
-          Explora cómo distintas escuelas entienden el cambio, el sufrimiento y la intervención clínica.
-        </div>
-
-        <div class="mp-hero-steps">
-          <div class="mp-step"><span class="mp-step-dot"></span>1) Elige una escuela</div>
-          <div class="mp-step"><span class="mp-step-dot"></span>2) Haz clic en un modelo</div>
-          <div class="mp-step"><span class="mp-step-dot"></span>3) Lee influencias, procedimientos y micros</div>
-        </div>
-      </div>
-
-      <div class="mp-hint">Selecciona una escuela y luego un modelo para ver toda su información.</div>
-    `;
     return;
   }
+  if(!m){
+   modelInfoEl.innerHTML = `
+  <div class="mp-hero">
+    <div class="mp-hero-eyebrow">Biblioteca viva</div>
+    <div class="mp-hero-title">Modelos psicoterapéuticos</div>
+    <div class="mp-hero-text">
+      Explora cómo distintas escuelas entienden el cambio, el sufrimiento y la intervención clínica.
+    </div>
 
-  // ---- a partir de aquí, ya hay modelo real ----
-  try{ console.log('OPEN MODEL', m.label, m.id); }catch(e){}
+    <div class="mp-hero-steps">
+      <div class="mp-step"><span class="mp-step-dot"></span>1) Elige una escuela</div>
+      <div class="mp-step"><span class="mp-step-dot"></span>2) Haz clic en un modelo</div>
+      <div class="mp-step"><span class="mp-step-dot"></span>3) Lee influencias, procedimientos y micros</div>
+    </div>
+  </div>
+
+  <div class="mp-hint">Selecciona una escuela y luego un modelo para ver toda su información.</div>
+`;
+ 
+  }
+try{
+  // (deja esto solo mientras depuras)
+  console.log('OPEN MODEL', m.label, m.id);
+}catch(e){}
+
   const col = groupColor.get(m.grupo) || '#ffffff';
+      modelInfoEl.classList.remove('school-view');
+modelInfoEl.style.removeProperty('--schoolColor');
 
-  modelInfoEl.classList.remove('school-view');
-  modelInfoEl.style.removeProperty('--schoolColor');
-
+  // ✅ aplica “tinte” del grupo al panel derecho (glass glow)
   const rightPanel = document.querySelector('.panel.right');
   if (rightPanel){
     rightPanel.style.setProperty('--panelGlow', hexToRgba(col, 0.22));
@@ -4471,11 +4507,8 @@ async function openModel(id){
   renderModelsList();
    try {
   // Carga índice de fotos, pero SI falla → continua sin fotos (no rompe el modelo)
-  try {
-    await loadAuthorPhotoIndex();
-  } catch (fotoErr) {
-    console.warn('⚠️ No se pudo cargar foto.json, continuando sin fotos:', fotoErr);
-  }
+  // ✅ ya se carga al inicio. No lo repitas aquí.
+
 
 
   m = await ensureModelFull(m);
