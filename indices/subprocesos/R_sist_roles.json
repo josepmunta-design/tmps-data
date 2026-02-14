@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_roles",
-  "updatedAt": "2026-02-14T10:23:39.354Z",
-  "totalModelos": 14,
+  "updatedAt": "2026-02-14T10:29:31.355Z",
+  "totalModelos": 15,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -219,6 +219,78 @@
           "codigo": "m_bateson_regla_implicita",
           "nombre": "Nombrar una regla implícita del sistema",
           "texto": "Hacer explícita una norma no dicha (‘aquí no se habla de X’, ‘no se puede pedir’, ‘hay que estar bien’). Convertir la regla en objeto de conversación abre opciones de cambio de orden superior.",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "escuela-palo-alto-mri-1959",
+      "modelLabel": "Escuela de Palo Alto / MRI",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Paul Watzlawick; John Weakland; Richard Fisch",
+      "modelYear": 1959,
+      "items": [
+        {
+          "codigo": "p_mri_demandaContrato",
+          "nombre": "Evaluación de la demanda y construcción del contrato de cambio",
+          "texto": "Explorar quién define el problema, quién quiere el cambio, quién paga el coste del cambio y qué expectativas explícitas e implícitas trae cada actor, estableciendo un contrato pragmático (qué cambio concreto se busca, en qué plazos y con qué tareas) para evitar intervenciones sin sistema cliente real o con objetivos incompatibles. (Watzlawick, Beavin & Jackson, 1967; Weakland et al., 1974).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_solucionesIntentadas",
+          "nombre": "Análisis de soluciones intentadas",
+          "texto": "Identificar las maniobras repetidas (explicar, insistir, controlar, evitar, tranquilizar, castigar, ceder, vigilar, discutir…) que se aplican para resolver el problema y mostrar cómo, por su lógica, lo perpetúan; este análisis desplaza el foco del síntoma a la pauta “problema–solución intentada–agravamiento” y prepara el diseño de tareas que interrumpan esa lógica. (Watzlawick, Weakland & Fisch, 1974; Weakland et al., 1974).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_reglasContratos",
+          "nombre": "Intervención sobre reglas, normas y contratos relacionales implícitos",
+          "texto": "Hacer explícitas reglas invisibles que organizan el sistema (“aquí no se discute”, “X debe ceder”, “Y no puede fallar”) y diseñar micro-cambios que las flexibilicen, porque muchas soluciones intentadas son obediencia rígida a esas reglas; trabajar reglas permite pasar de cambio conductual superficial a reorganización del patrón. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_reestructuracionSecuencia",
+          "nombre": "Reestructuración de secuencias de interacción",
+          "texto": "Proponer cambios concretos en el orden conducta–respuesta (quién inicia, quién responde, cuándo se para, qué se omite) para romper la circularidad y generar nueva retroalimentación; la diana es la secuencia, no la persona, y el éxito se mide por cambio de patrón observable. (Watzlawick, Beavin & Jackson, 1967; Weakland et al., 1974).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_restriccionCambio",
+          "nombre": "Restricción paradójica del cambio (paradoxical injunction / ir más despacio)",
+          "texto": "Indicar que no cambien demasiado rápido, o incluso que mantengan temporalmente la pauta, para reducir oposición/reactancia y desplazar el control del cambio a la propia decisión del sistema; al neutralizar la lucha por el poder, el sistema puede moverse por su cuenta hacia alternativas más funcionales. (Watzlawick, Weakland & Fisch, 1974).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_escaladas_complementariedad",
+          "nombre": "Intervenciones sobre escaladas simétricas y complementariedades rígidas",
+          "texto": "Detectar si la pauta es una escalada simétrica (competencia, intensificación mutua) o una complementariedad rígida (uno “arriba”/otro “abajo”) y diseñar tareas que rompan la regla de respuesta automática (p. ej., interrumpir la simetría con desescalada prescrita o flexibilizar roles complementarios), evitando que el sistema vuelva al mismo equilibrio. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_movilizarApoyo",
+          "nombre": "Movilización de apoyos y reconfiguración del sistema ampliado",
+          "texto": "Incluir o coordinar figuras relevantes (familia extendida, escuela, profesionales) cuando su participación cambia contingencias y reduce bucles cerrados del sistema nuclear; se decide por utilidad estratégica: quién puede introducir la variación que el sistema actual no consigue. (Watzlawick, Beavin & Jackson, 1967; Weakland et al., 1974).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_posicion_terapeuta",
+          "nombre": "Posición del terapeuta como consultor estratégico (neutralidad pragmática)",
+          "texto": "Sostener una postura de consultoría orientada a resolver el problema definido (no a diagnosticar identidades), usando lenguaje no patologizante y evitando coaliciones; esta posición facilita que el sistema acepte tareas y cambios sin sentirse atacado, manteniendo foco en pauta y soluciones intentadas. (Watzlawick, Weakland & Fisch, 1974; Weakland et al., 1974).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mri_complementariedad",
+          "nombre": "Señalar complementariedad rígida",
+          "texto": "Identificar relaciones rígidas de dominancia–sumisión que impiden flexibilidad del sistema, mostrando cómo esa polarización sostiene el problema. Referencia: Watzlawick, Beavin & Jackson (1967).",
           "sub": "R_sist_roles",
           "tipo": "micro"
         }

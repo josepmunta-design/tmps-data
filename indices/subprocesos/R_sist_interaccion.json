@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_interaccion",
-  "updatedAt": "2026-02-14T10:23:39.354Z",
-  "totalModelos": 16,
+  "updatedAt": "2026-02-14T10:29:31.355Z",
+  "totalModelos": 17,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -233,6 +233,85 @@
           "codigo": "m_bateson_chequeo_contradiccion",
           "nombre": "Chequeo de contradicción (doble mensaje)",
           "texto": "Invitar a notar una incongruencia entre palabras, tono y acción sin acusar: ‘una parte dice X y otra parece decir Y’. Facilita metacomunicación y reduce confusión relacional.",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "escuela-palo-alto-mri-1959",
+      "modelLabel": "Escuela de Palo Alto / MRI",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Paul Watzlawick; John Weakland; Richard Fisch",
+      "modelYear": 1959,
+      "items": [
+        {
+          "codigo": "p_mri_definicionProblema",
+          "nombre": "Definición operativa del problema y del sistema cliente",
+          "texto": "Delimitar el problema en términos conductuales y relacionales (“qué pasa, entre quiénes y en qué orden”), identificando el sistema cliente (quién participa activamente en la pauta y quién puede/va a hacer cambios) y evitando definiciones intrapsíquicas vagas; esta definición operativa crea una diana manipulable y observable para intervenir sobre secuencias y retroalimentaciones. (Watzlawick, Weakland & Fisch, 1974; Weakland, Fisch, Watzlawick & Bodin, 1974).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_mapeoSecuencias",
+          "nombre": "Recogida de datos por secuencias (quién-hace-qué-cuándo) y patrones de comunicación",
+          "texto": "Construir un mapa fino de la interacción: episodios típicos, desencadenantes, respuestas, escaladas y puntos de inflexión, atendiendo a niveles de contenido y relación (metamensajes) para identificar la pauta circular que organiza el problema y los lugares de palanca donde un cambio mínimo puede alterar el bucle. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_reestructuracionSecuencia",
+          "nombre": "Reestructuración de secuencias de interacción",
+          "texto": "Proponer cambios concretos en el orden conducta–respuesta (quién inicia, quién responde, cuándo se para, qué se omite) para romper la circularidad y generar nueva retroalimentación; la diana es la secuencia, no la persona, y el éxito se mide por cambio de patrón observable. (Watzlawick, Beavin & Jackson, 1967; Weakland et al., 1974).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_prescripcionSintoma",
+          "nombre": "Prescripción del síntoma (ritualización / programación / intensificación)",
+          "texto": "Pedir que la conducta problemática se realice de forma deliberada y pautada (cuándo, cuánto, cómo) para cambiar su función en el sistema (de espontánea a voluntaria), generar pérdida de control del síntoma sobre la persona y crear condiciones de cambio de segundo orden; se usa especialmente cuando la resistencia o la escalada hacen ineficaz el consejo directo. (Watzlawick, Weakland & Fisch, 1974; Weakland et al., 1974).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_escaladas_complementariedad",
+          "nombre": "Intervenciones sobre escaladas simétricas y complementariedades rígidas",
+          "texto": "Detectar si la pauta es una escalada simétrica (competencia, intensificación mutua) o una complementariedad rígida (uno “arriba”/otro “abajo”) y diseñar tareas que rompan la regla de respuesta automática (p. ej., interrumpir la simetría con desescalada prescrita o flexibilizar roles complementarios), evitando que el sistema vuelva al mismo equilibrio. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mri_metacomunicacion_dobleVinculo",
+          "nombre": "Metacomunicación y clarificación de paradojas (incluido doble vínculo)",
+          "texto": "Intervenir en el nivel de la relación (no solo contenido) para hacer explícitos mensajes contradictorios, reglas imposibles o paradojas comunicacionales, abriendo opciones de salida del juego (nombrar la paradoja, cambiar canal, cambiar regla de respuesta); útil cuando el patrón se sostiene por imposibilidad comunicativa. (Watzlawick, Beavin & Jackson, 1967; Watzlawick, Weakland & Fisch, 1974).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mri_preguntaSecuencia",
+          "nombre": "Preguntas de secuencia concreta",
+          "texto": "Explorar en detalle quién hace qué, en qué orden y con qué respuesta inmediata, reconstruyendo la pauta circular del problema sin interpretaciones intrapsíquicas. Esta microintervención permite visibilizar la estructura repetitiva del sistema. Referencia: Watzlawick, Beavin & Jackson (1967), cap. 3.",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mri_conductaObservable",
+          "nombre": "Focalización en conductas observables",
+          "texto": "Redirigir cualquier explicación abstracta hacia descripciones conductuales verificables (“¿qué hizo exactamente?”), manteniendo el trabajo en el nivel pragmático y evitando teorías internas sobre motivaciones profundas. Referencia: Weakland et al. (1974).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mri_aquiAhora",
+          "nombre": "Focalización en aquí–ahora interactivo",
+          "texto": "Dirigir la atención a cómo se está interactuando en sesión cuando se reproduce la pauta, utilizando el momento presente como muestra directa del sistema. Referencia: Watzlawick, Weakland & Fisch (1974).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mri_metacomunicacion",
+          "nombre": "Clarificación de metacomunicación",
+          "texto": "Diferenciar entre contenido y relación en un mensaje, señalando incongruencias o dobles niveles comunicacionales que mantienen confusión sistémica. Referencia: Watzlawick, Beavin & Jackson (1967).",
           "sub": "R_sist_interaccion",
           "tipo": "micro"
         }
