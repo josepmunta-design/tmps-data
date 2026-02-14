@@ -1,0 +1,92 @@
+{
+  "id": "k_worden_duelo",
+  "grupo": "Integrativo",
+  "label": "Tareas del duelo",
+  "year": 1982,
+  "autores": "J. William Worden",
+  "hideInModels": true,
+  "descripcion": "El modelo de Worden conceptualiza el duelo como un proceso activo de adaptación psicológica ante una pérdida irreversible. El sufrimiento no se entiende como un estado pasivo que se atraviesa, sino como un conjunto de tareas psicológicas que la persona necesita elaborar para integrar la pérdida y poder seguir viviendo de forma significativa. Estas tareas no son fases secuenciales ni universales: pueden solaparse, reactivarse y presentar bloqueos específicos. El trabajo clínico consiste en identificar qué tarea está comprometida en cada momento y facilitar su elaboración respetando el ritmo, las condiciones contextuales y la singularidad del vínculo perdido.",
+  "mjps": ["ED"],
+  "subprocesos": [
+    "ED_reconocimiento",
+    "ED_oscilacionTolerancia",
+    "ED_expresionVinculada",
+    "ED_ajusteMundoPerdidasSec",
+    "ED_vinculoContinuo",
+    "ED_identidadReinversion"
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Narrativa de la pérdida",
+      "codigo": "p_worden_narrativa",
+      "procesos": ["ED_reconocimiento"],
+      "texto": "Procedimiento clínico central en el modelo de Worden. Consiste en facilitar la construcción de una narrativa coherente sobre la pérdida que permita integrar el acontecimiento a nivel cognitivo y emocional. El terapeuta invita a relatar qué ocurrió, cómo se supo, qué pasó antes y después, y cómo se fue comprendiendo la pérdida con el paso del tiempo.\n\nEl foco no está en provocar una descarga emocional intensa ni en repetir el relato como exposición, sino en observar cómo se cuenta la historia: vacíos narrativos, saltos temporales, uso persistente del condicional, tono excesivamente intelectualizado o minimizador. Estos indicadores permiten detectar negación encubierta, duelos no autorizados o dificultades para reconocer la irreversibilidad. A medida que la narrativa se vuelve más concreta y afectivamente conectada, el reconocimiento de la pérdida se consolida sin forzarlo."
+    },
+    {
+      "nombre": "Expresión emocional dirigida",
+      "codigo": "p_worden_expresion",
+      "procesos": ["ED_expresionVinculada"],
+      "texto": "Procedimiento orientado a facilitar la expresión de emociones complejas y ambivalentes dirigidas específicamente hacia la figura, relación o proyecto perdido. A diferencia de la expresión emocional general, aquí el énfasis está en el destinatario de la emoción. Se trabaja con cartas no enviadas, diálogos imaginarios, imaginería relacional o verbalización directa en sesión.\n\nEste procedimiento permite que emociones moralizadas o inhibidas —rabia, reproche, alivio, culpa, decepción— encuentren un canal legítimo de expresión. Al clarificar a quién va dirigida la emoción, se reduce la somatización, la irritabilidad difusa y el desplazamiento afectivo. El objetivo no es resolver el vínculo, sino permitir que la ambivalencia se exprese sin autocensura ni culpa."
+    },
+    {
+      "nombre": "Identificación de pérdidas secundarias",
+      "codigo": "p_worden_perdidas_sec",
+      "procesos": ["ED_ajusteMundoPerdidasSec"],
+      "texto": "Procedimiento destinado a hacer explícitas las pérdidas derivadas de la pérdida principal, que a menudo quedan invisibilizadas pero sostienen gran parte del malestar. Incluye la exploración de cambios en roles, rutinas, estatus social, seguridad económica, proyectos de futuro, red de apoyo y sentido de pertenencia.\n\nEl terapeuta ayuda a diferenciar entre el dolor por la pérdida primaria y el sufrimiento asociado a estas pérdidas secundarias, evitando que se mezclen de forma confusa. Este trabajo permite intervenir sobre ajustes prácticos y relacionales sin patologizar el duelo, y previene que la persona se culpe por no avanzar cuando en realidad está afrontando múltiples pérdidas simultáneas."
+    },
+    {
+      "nombre": "Reorganización del vínculo interno",
+      "codigo": "p_worden_vinculo",
+      "procesos": ["ED_vinculoContinuo"],
+      "texto": "Procedimiento orientado a transformar el vínculo con lo perdido de una relación basada en presencia externa o búsqueda compulsiva a una relación interna flexible e integrada. El trabajo no consiste en soltar o cerrar, sino en recolocar el vínculo de modo que pueda mantenerse sin bloquear la vida actual.\n\nIncluye la elaboración de recuerdos significativos, la construcción de rituales simbólicos, la identificación del legado relacional y el desarrollo de un diálogo interno regulado. El terapeuta ayuda a diferenciar entre recordar y quedar atrapado, entre mantener un vínculo y vivir en función de la ausencia. El objetivo es que el vínculo continúe sin dominar ni desaparecer."
+    },
+    {
+      "nombre": "Reinversión vital progresiva",
+      "codigo": "p_worden_reinversion",
+      "procesos": ["ED_identidadReinversion"],
+      "texto": "Procedimiento centrado en facilitar el retorno gradual al deseo, al placer y al compromiso con la vida tras la pérdida. Se trabaja la culpa asociada al bienestar, la vivencia de traición al vínculo perdido y el miedo a olvidar o sustituir.\n\nLa reinversión no se plantea como un salto abrupto ni como una exigencia de crecimiento, sino como un proceso progresivo y coherente con la continuidad biográfica. El terapeuta acompaña la exploración de nuevos intereses, vínculos y proyectos, ayudando a integrar el pasado con el presente sin renunciar a ninguno."
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Nombrar la irreversibilidad",
+      "codigo": "m_worden_irreversibilidad",
+      "procesos": ["ED_reconocimiento"],
+      "texto": "Intervención breve y focal que consiste en poner palabras claras y concretas a la irreversibilidad de la pérdida. El terapeuta ayuda a diferenciar entre esperanza funcional y fantasías defensivas de reversión. Se utiliza con especial cuidado para evitar confrontaciones prematuras."
+    },
+    {
+      "nombre": "Detectar condicionales de negación",
+      "codigo": "m_worden_condicionales",
+      "procesos": ["ED_reconocimiento"],
+      "texto": "Señalamiento suave del uso reiterado del condicional como indicador de dificultad para reconocer la pérdida. Se introduce como observación clínica, no como corrección, favoreciendo la toma de conciencia sin ruptura de la alianza."
+    },
+    {
+      "nombre": "Validar ambivalencia afectiva",
+      "codigo": "m_worden_ambivalencia",
+      "procesos": ["ED_expresionVinculada"],
+      "texto": "Microintervención destinada a legitimar la coexistencia de emociones contradictorias hacia lo perdido. Reduce la autocensura moral y permite que rabia, alivio o cansancio se expresen sin vivirse como señales de desamor o deslealtad."
+    },
+    {
+      "nombre": "Dosificar contacto con el dolor",
+      "codigo": "m_worden_dosificacion",
+      "procesos": ["ED_oscilacionTolerancia"],
+      "texto": "Intervención reguladora que ayuda a calibrar el ritmo de contacto con el dolor del duelo, facilitando entradas y salidas seguras. Previene tanto la evitación crónica como la inundación emocional."
+    },
+    {
+      "nombre": "Mapear pérdidas secundarias",
+      "codigo": "m_worden_mapear_sec",
+      "procesos": ["ED_ajusteMundoPerdidasSec"],
+      "texto": "Intervención breve para enumerar y diferenciar las pérdidas secundarias asociadas a la pérdida principal. Ayuda a clarificar fuentes adicionales de sufrimiento y a orientar intervenciones prácticas y relacionales específicas."
+    },
+    {
+      "nombre": "Autorizar bienestar sin traición",
+      "codigo": "m_worden_autorizar",
+      "procesos": ["ED_identidadReinversion"],
+      "texto": "Microintervención dirigida a legitimar experiencias de bienestar, placer y compromiso vital sin vivirse como traición al vínculo perdido. Facilita la reinversión vital y la continuidad identitaria."
+    }
+  ],
+  "refs": [
+    "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.).",
+    "Worden, J. W. (2018). Grief Counseling and Grief Therapy (5th ed.)."
+  ]
+}
