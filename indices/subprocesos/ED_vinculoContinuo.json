@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_vinculoContinuo",
-  "updatedAt": "2026-02-14T17:53:32.726Z",
-  "totalModelos": 2,
+  "updatedAt": "2026-02-14T17:54:45.955Z",
+  "totalModelos": 3,
   "modelos": [
     {
       "modelId": "k_klass_silverman_nickman_cb",
@@ -67,6 +67,36 @@
           "texto": "Procedimiento que facilita un diálogo simbólico con la experiencia de la pérdida o con la figura perdida para explorar su significado en la historia vital. A través de cartas, relatos o preguntas guiadas, se examina qué representa la pérdida, qué ha cambiado de forma irreversible y qué elementos del vínculo pueden mantenerse de forma transformada. Este diálogo no busca consuelo inmediato, sino profundizar en la comprensión del impacto existencial de la pérdida y su lugar en la narrativa personal.",
           "sub": "ED_vinculoContinuo",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "k_rubin_two_track",
+      "modelLabel": "Two-Track Model of Bereavement",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Simon Shimshon Rubin",
+      "modelYear": 1981,
+      "items": [
+        {
+          "codigo": "p_rubin_eval_tracks",
+          "nombre": "Evaluación diferenciada de los dos tracks",
+          "texto": "Procedimiento clínico que consiste en evaluar de forma explícita y separada el funcionamiento cotidiano (Track I) y la relación con el fallecido (Track II). El terapeuta explora indicadores funcionales —rutinas, relaciones, autocuidado, rendimiento— junto con indicadores vinculares —recuerdos, emociones, diálogo interno, evitación o búsqueda—, evitando inferencias automáticas entre ambos planos. Esta evaluación clarifica el foco real de la intervención y previene errores clínicos basados en la apariencia de adaptación.",
+          "sub": "ED_vinculoContinuo",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_rubin_track_focal",
+          "nombre": "Intervención focalizada por track",
+          "texto": "Procedimiento que ajusta la intervención al track prioritario identificado. Cuando el bloqueo principal está en el Track I, se priorizan apoyos prácticos, regulación y reorganización vital; cuando está en el Track II, se trabaja la relación interna con el fallecido. El modelo evita forzar intervenciones emocionales profundas cuando el problema principal es funcional, o centrarse solo en lo práctico cuando el vínculo interno permanece desorganizado.",
+          "sub": "ED_vinculoContinuo",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_rubin_track_gap",
+          "nombre": "Detectar disociación entre tracks",
+          "texto": "Señalamiento clínico de discrepancias significativas entre el Track I y el Track II, introducido como observación descriptiva que orienta el foco del trabajo terapéutico.",
+          "sub": "ED_vinculoContinuo",
+          "tipo": "micro"
         }
       ]
     }
