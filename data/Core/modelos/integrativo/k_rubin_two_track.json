@@ -1,0 +1,77 @@
+{
+  "id": "k_rubin_two_track",
+  "grupo": "Integrativo",
+  "label": "Two-Track Model of Bereavement",
+  "year": 1981,
+  "autores": "Simon Shimshon Rubin",
+  "hideInModels": true,
+  "descripcion": "El Two-Track Model de Rubin propone que el duelo debe evaluarse y abordarse simultáneamente en dos planos relativamente independientes pero interrelacionados: el funcionamiento biopsicosocial general de la persona (Track I) y la relación continua con la persona fallecida (Track II). Frente a modelos que colapsan el duelo en un único eje, Rubin muestra que una persona puede funcionar adecuadamente en la vida cotidiana mientras mantiene un vínculo interno profundamente perturbador, o viceversa. El modelo aporta una matriz clínica clara para evitar reduccionismos, permitiendo discriminar dónde está el bloqueo real del proceso y ajustar la intervención sin confundir adaptación externa con elaboración interna del vínculo.",
+  "mjps": ["ED"],
+  "subprocesos": [
+    "ED_ajusteMundoPerdidasSec",
+    "ED_vinculoContinuo",
+    "ED_identidadReinversion"
+  ],
+  "conceptos": [
+    {
+      "nombre": "Track I — Funcionamiento biopsicosocial",
+      "codigo": "c_rubin_track1",
+      "descripcion": "El Track I se refiere al nivel de funcionamiento general de la persona en áreas como salud física, estado emocional, desempeño laboral o académico, relaciones sociales, rutinas cotidianas y capacidad de autorregulación. Este plano evalúa cómo la persona está viviendo y funcionando en el mundo tras la pérdida, sin asumir que un buen funcionamiento externo implique necesariamente una elaboración saludable del duelo. Clínicamente, el Track I permite detectar desorganización funcional significativa, pero también previene interpretar la funcionalidad como “resolución” del duelo."
+    },
+    {
+      "nombre": "Track II — Relación con el fallecido",
+      "codigo": "c_rubin_track2",
+      "descripcion": "El Track II se centra en la relación psicológica continua con la persona fallecida, incluyendo recuerdos, emociones, representaciones internas, diálogos imaginarios, idealización, culpa, rabia o evitación del recuerdo. Este plano evalúa la calidad, flexibilidad e integración del vínculo interno, independientemente del funcionamiento externo. Rubin subraya que muchos duelos problemáticos se sostienen en alteraciones del Track II que pasan desapercibidas si solo se observa la adaptación conductual o social."
+    },
+    {
+      "nombre": "Evaluación en dos ejes",
+      "codigo": "c_rubin_2tracks",
+      "descripcion": "El valor clínico central del modelo reside en la evaluación simultánea e independiente de ambos tracks. Esta evaluación bidimensional evita diagnósticos simplistas y permite identificar perfiles diferenciados de duelo: buen funcionamiento con vínculo perturbador, vínculo integrado con deterioro funcional, dificultades en ambos planos o adaptación saludable en los dos. Esta matriz orienta decisiones clínicas precisas y previene intervenciones desajustadas."
+    }
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Evaluación diferenciada de los dos tracks",
+      "codigo": "p_rubin_eval_tracks",
+      "procesos": ["ED_ajusteMundoPerdidasSec", "ED_vinculoContinuo"],
+      "texto": "Procedimiento clínico que consiste en evaluar de forma explícita y separada el funcionamiento cotidiano (Track I) y la relación con el fallecido (Track II). El terapeuta explora indicadores funcionales —rutinas, relaciones, autocuidado, rendimiento— junto con indicadores vinculares —recuerdos, emociones, diálogo interno, evitación o búsqueda—, evitando inferencias automáticas entre ambos planos. Esta evaluación clarifica el foco real de la intervención y previene errores clínicos basados en la apariencia de adaptación."
+    },
+    {
+      "nombre": "Intervención focalizada por track",
+      "codigo": "p_rubin_track_focal",
+      "procesos": ["ED_ajusteMundoPerdidasSec", "ED_vinculoContinuo"],
+      "texto": "Procedimiento que ajusta la intervención al track prioritario identificado. Cuando el bloqueo principal está en el Track I, se priorizan apoyos prácticos, regulación y reorganización vital; cuando está en el Track II, se trabaja la relación interna con el fallecido. El modelo evita forzar intervenciones emocionales profundas cuando el problema principal es funcional, o centrarse solo en lo práctico cuando el vínculo interno permanece desorganizado."
+    },
+    {
+      "nombre": "Integración progresiva de ambos tracks",
+      "codigo": "p_rubin_track_integracion",
+      "procesos": ["ED_identidadReinversion"],
+      "texto": "Procedimiento orientado a facilitar la integración gradual entre funcionamiento y vínculo, de modo que la vida cotidiana y la relación interna con el fallecido puedan coexistir sin interferirse mutuamente. Se acompaña la construcción de una identidad que incluya tanto la continuidad del vínculo como la capacidad de vivir, decidir y comprometerse en el presente."
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Diferenciar funcionamiento de elaboración",
+      "codigo": "m_rubin_func_vs_elab",
+      "procesos": ["ED_ajusteMundoPerdidasSec"],
+      "texto": "Microintervención que ayuda a distinguir explícitamente entre “funcionar” y “haber elaborado”, evitando interpretaciones erróneas del progreso terapéutico basadas únicamente en el desempeño externo."
+    },
+    {
+      "nombre": "Detectar disociación entre tracks",
+      "codigo": "m_rubin_track_gap",
+      "procesos": ["ED_vinculoContinuo"],
+      "texto": "Señalamiento clínico de discrepancias significativas entre el Track I y el Track II, introducido como observación descriptiva que orienta el foco del trabajo terapéutico."
+    },
+    {
+      "nombre": "Validar adaptación parcial",
+      "codigo": "m_rubin_adapt_parcial",
+      "procesos": ["ED_identidadReinversion"],
+      "texto": "Intervención que legitima que una persona pueda estar adaptándose en un plano mientras sigue en proceso en otro, reduciendo autoexigencia y lecturas dicotómicas de éxito/fracaso."
+    }
+  ],
+  "refs": [
+    "Rubin, S. S. (1981). A two-track model of bereavement.",
+    "Rubin, S. S. (1999). The two-track model of bereavement.",
+    "Rubin, S. S., Malkinson, R., & Witztum, E. (2011). Working with the bereaved."
+  ]
+}
