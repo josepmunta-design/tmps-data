@@ -1,0 +1,44 @@
+{
+  "subprocesoId": "VB_monitorizacion",
+  "updatedAt": "2026-02-14T19:45:20.635Z",
+  "totalModelos": 1,
+  "modelos": [
+    {
+      "modelId": "activacion-conductual-jacobson-1996",
+      "modelLabel": "Activación conductual (Behavioral Activation, BA)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Neil S. Jacobson; Christopher Martell; Sona Dimidjian; Ruth Herman-Dunn; Peter Lewinsohn",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_ba_monitorizacion",
+          "nombre": "Monitorización diaria de actividades",
+          "texto": "Registro sistemático de actividades realizadas y estado de ánimo asociado para identificar patrones de retirada, momentos de mayor refuerzo y relaciones entre conducta y afecto. La monitorización genera datos empíricos personalizados que sustentan decisiones clínicas. Referencia: Jacobson et al. (1996); Martell et al. (2010).",
+          "sub": "VB_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ba_registro_horario",
+          "nombre": "Registro horario simple",
+          "texto": "Microintervención en la que el paciente anota por franjas horarias qué ha hecho realmente durante el día, sin interpretar ni evaluar, generando una línea base objetiva sobre patrones de inactividad y momentos de posible refuerzo. Referencia: Jacobson et al. (1996); Martell et al. (2010).",
+          "sub": "VB_monitorizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ba_escala_animo",
+          "nombre": "Escala breve de ánimo asociada a actividad",
+          "texto": "Asignación de una puntuación simple de estado de ánimo tras cada actividad relevante para identificar relaciones funcionales entre conducta y afecto, desmontando la creencia de que 'nada cambia'. Referencia: Martell et al. (2010).",
+          "sub": "VB_monitorizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ba_revision_sin_juicio",
+          "nombre": "Revisión de cumplimiento sin juicio",
+          "texto": "Análisis de tareas realizadas o no realizadas sin crítica ni interpretación cognitiva, manteniendo foco en ajuste conductual y aprendizaje funcional. Referencia: Jacobson et al. (1996).",
+          "sub": "VB_monitorizacion",
+          "tipo": "micro"
+        }
+      ]
+    }
+  ]
+}

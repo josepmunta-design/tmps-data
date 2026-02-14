@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-14T19:25:07.572Z",
-  "totalModelos": 109,
+  "updatedAt": "2026-02-14T19:45:20.635Z",
+  "totalModelos": 110,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -1432,6 +1432,50 @@
           "codigo": "m_up_evitacion_sutil",
           "nombre": "Detección de evitación sutil",
           "texto": "Identificación de microconductas de escape menos evidentes (bromear para cambiar tema, mirar el móvil, tranquilizarse mentalmente) que interfieren con el aprendizaje durante exposición o conversación emocional. Referencia: Barlow et al. (2011); Barlow et al. (2018).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "activacion-conductual-jacobson-1996",
+      "modelLabel": "Activación conductual (Behavioral Activation, BA)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Neil S. Jacobson; Christopher Martell; Sona Dimidjian; Ruth Herman-Dunn; Peter Lewinsohn",
+      "modelYear": 1996,
+      "items": [
+        {
+          "codigo": "p_ba_analisis_funcional",
+          "nombre": "Análisis funcional de la depresión",
+          "texto": "Procedimiento central del modelo en el que se identifican antecedentes, conductas problema (especialmente evitación y retirada) y consecuencias que mantienen el estado depresivo. Se analiza cómo la evitación reduce malestar a corto plazo pero disminuye acceso a refuerzo positivo a largo plazo, perpetuando el ciclo depresivo. Este análisis guía toda la intervención conductual posterior. Referencia: Jacobson et al. (1996); Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ba_monitorizacion",
+          "nombre": "Monitorización diaria de actividades",
+          "texto": "Registro sistemático de actividades realizadas y estado de ánimo asociado para identificar patrones de retirada, momentos de mayor refuerzo y relaciones entre conducta y afecto. La monitorización genera datos empíricos personalizados que sustentan decisiones clínicas. Referencia: Jacobson et al. (1996); Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ba_revision_refuerzo",
+          "nombre": "Revisión de contingencias y refuerzos",
+          "texto": "Evaluación continua de qué actividades generan refuerzo real y cuáles no, ajustando el plan conductual en función de datos observables. Se prioriza reforzamiento natural más que recompensa artificial. Referencia: Jacobson et al. (1996).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ba_escala_animo",
+          "nombre": "Escala breve de ánimo asociada a actividad",
+          "texto": "Asignación de una puntuación simple de estado de ánimo tras cada actividad relevante para identificar relaciones funcionales entre conducta y afecto, desmontando la creencia de que 'nada cambia'. Referencia: Martell et al. (2010).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ba_revision_sin_juicio",
+          "nombre": "Revisión de cumplimiento sin juicio",
+          "texto": "Análisis de tareas realizadas o no realizadas sin crítica ni interpretación cognitiva, manteniendo foco en ajuste conductual y aprendizaje funcional. Referencia: Jacobson et al. (1996).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
