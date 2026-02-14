@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-14T10:33:34.578Z",
-  "totalModelos": 37,
+  "updatedAt": "2026-02-14T16:53:12.838Z",
+  "totalModelos": 38,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -876,6 +876,36 @@
           "codigo": "m_freud_invitarAsociar",
           "nombre": "Invitar a asociar sin censura",
           "texto": "Recordar activamente la regla fundamental de decir todo lo que venga a la mente para reducir la autocensura.",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicologia-analitica-jung-1913",
+      "modelLabel": "Psicología analítica",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Carl Gustav Jung",
+      "modelYear": 1913,
+      "items": [
+        {
+          "codigo": "p_jung_analisis_suenos",
+          "nombre": "Análisis e interpretación de sueños",
+          "texto": "Procedimiento central en psicología analítica que trabaja el sueño como producción simbólica del inconsciente (personal y, en ocasiones, arquetípico) para comprender conflictos, compensaciones y direcciones de desarrollo del self; incluye recogida detallada del sueño, asociaciones del soñante, identificación de imágenes-clave, afectos y movimientos narrativos, y elaboración interpretativa que conecte el símbolo con la vida actual sin reducirlo a explicación literal, orientando el trabajo hacia integración y individuación. Referencia: Jung, C. G. (1916/1948; 1954).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_jung_asociacion_personal",
+          "nombre": "Asociación personal al símbolo",
+          "texto": "Invitar al paciente a asociar libremente a una imagen onírica o simbólica desde su biografía concreta antes de introducir amplificación cultural, para evitar interpretaciones prematuras y anclar el símbolo en su experiencia vivida, facilitando que emerjan afectos, recuerdos y significados personales relevantes. Referencia: Jung, C. G. (1954).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_jung_sintoma_simbolico",
+          "nombre": "Lectura simbólica de síntoma",
+          "texto": "Plantear el síntoma no solo como problema a eliminar sino como posible portador de significado, preguntando qué mensaje o necesidad podría estar expresando de forma indirecta, favoreciendo actitud exploratoria en lugar de lucha frontal. Referencia: Jung, C. G. (1959).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }
