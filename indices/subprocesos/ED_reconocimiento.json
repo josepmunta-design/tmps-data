@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_reconocimiento",
-  "updatedAt": "2026-02-14T17:57:40.588Z",
-  "totalModelos": 2,
+  "updatedAt": "2026-02-14T17:58:59.784Z",
+  "totalModelos": 3,
   "modelos": [
     {
       "modelId": "k_rando_r_processes",
@@ -37,6 +37,43 @@
           "codigo": "m_cgt_bloqueo",
           "nombre": "Nombrar el bloqueo del duelo",
           "texto": "Microintervención que ayuda a conceptualizar el duelo prolongado como un proceso bloqueado y no como una incapacidad personal, reduciendo vergüenza y aumentando disposición al trabajo terapéutico.",
+          "sub": "ED_reconocimiento",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_kublerross69",
+      "modelLabel": "Modelo de Kübler-Ross (estados frecuentes ante la pérdida)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Elisabeth Kübler-Ross",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_kr_narrativa",
+          "nombre": "Trabajo con narrativas biográficas",
+          "texto": "Guiar al paciente en la reconstrucción de su propia historia de pérdida vinculando experiencias emocionales con su trayectoria de vida para integrar el significado personal de la pérdida.",
+          "sub": "ED_reconocimiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kr_normalizar_negacion",
+          "nombre": "Normalizar negación protectora",
+          "texto": "Validar temporalmente el uso de negación como amortiguador del impacto, explicando su función reguladora sin reforzarla como solución permanente.",
+          "sub": "ED_reconocimiento",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kr_negociacion",
+          "nombre": "Explorar acuerdos de negociación",
+          "texto": "Detectar y explorar expresiones de negociación para clarificar su función reguladora sin reforzar ilusiones de reversión.",
+          "sub": "ED_reconocimiento",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kr_reencuadrar_aceptacion",
+          "nombre": "Reencuadre de aceptación",
+          "texto": "Aclarar que aceptación no es ausencia de dolor ni cierre definitivo, sino una forma de convivir con la irreversibilidad.",
           "sub": "ED_reconocimiento",
           "tipo": "micro"
         }
