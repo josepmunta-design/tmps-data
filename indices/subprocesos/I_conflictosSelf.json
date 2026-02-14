@@ -1,7 +1,7 @@
 {
   "subprocesoId": "I_conflictosSelf",
-  "updatedAt": "2026-02-14T09:51:10.495Z",
-  "totalModelos": 11,
+  "updatedAt": "2026-02-14T09:58:28.071Z",
+  "totalModelos": 12,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -175,6 +175,36 @@
           "codigo": "m_ta_juegos_payoff",
           "nombre": "Detección de juegos y pago",
           "texto": "Identificar el “giro” donde empieza el juego y explicitar el payoff para recuperar elección.",
+          "sub": "I_conflictosSelf",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-gestalt-perls-1951",
+      "modelLabel": "Terapia Gestalt",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Fritz Perls; Laura Perls; Paul Goodman",
+      "modelYear": 1951,
+      "items": [
+        {
+          "codigo": "p_gestalt_dos_sillas_polaridades",
+          "nombre": "Dos sillas para polaridades internas (topdog/underdog, crítico/vulnerable, control/impulso)",
+          "texto": "Procedimiento para integrar escisiones: se externalizan dos posiciones internas en sillas diferentes y se facilita un diálogo que haga visibles funciones, miedos y necesidades de cada parte; el objetivo es pasar de la guerra interna a una integración funcional (jerarquía flexible y cooperación), reduciendo bloqueo y autocrítica desorganizadora. (Perls, 1969; Greenberg, Rice & Elliott, 1993).",
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_integracion_polaridades",
+          "nombre": "Integración de polaridades (reconocer y unir opuestos del self)",
+          "texto": "Procedimiento para ampliar identidad: se identifican polaridades rígidas (fuerte/débil, bueno/malo, libre/dependiente), se exploran funciones y temores de cada polo y se construyen posiciones integradas que permitan matiz y flexibilidad; reduce escisión y sostiene un self más coherente y habitable. (Perls, 1969; Polster & Polster, 1973).",
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gestalt_cambio_silla",
+          "nombre": "Cambio de silla instantáneo",
+          "texto": "Invitación breve a moverse físicamente a otra silla para hablar desde la parte opuesta en un conflicto interno, externalizando la polaridad y aumentando diferenciación e integración (Perls, 1969; Greenberg, Rice & Elliott, 1993).",
           "sub": "I_conflictosSelf",
           "tipo": "micro"
         }

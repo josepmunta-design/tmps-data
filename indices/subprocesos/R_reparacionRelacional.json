@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_reparacionRelacional",
-  "updatedAt": "2026-02-14T09:51:10.495Z",
-  "totalModelos": 34,
+  "updatedAt": "2026-02-14T09:58:28.071Z",
+  "totalModelos": 35,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -239,6 +239,43 @@
           "codigo": "m_pcp_autorrevelacion",
           "nombre": "Autorrevelación congruente limitada",
           "texto": "Comunicación breve y genuina de la experiencia del terapeuta cuando es relevante para el proceso, utilizada con cautela para modelar autenticidad y fortalecer la relación sin desplazar el foco del cliente. (Rogers, 1980).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-gestalt-perls-1951",
+      "modelLabel": "Terapia Gestalt",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Fritz Perls; Laura Perls; Paul Goodman",
+      "modelYear": 1951,
+      "items": [
+        {
+          "codigo": "p_gestalt_silla_vacia",
+          "nombre": "Silla vacía (diálogo con figura ausente)",
+          "texto": "Procedimiento experiencial para activar y elaborar asuntos pendientes con figuras significativas: el paciente dialoga con la persona ausente (o con un aspecto de la relación) en una silla, alternando posiciones para contactar con emociones primarias, necesidades no expresadas y límites; facilita cierre, reparación simbólica y reorganización relacional interna. (Perls, 1969; Polster & Polster, 1973).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_dialogo_autentico",
+          "nombre": "Diálogo auténtico (encuentro yo-tú) y presencia del terapeuta",
+          "texto": "Procedimiento relacional: el terapeuta utiliza presencia, contacto ocular, tono y feedback fenomenológico (sin moralizar) para co-regular y sostener el trabajo experiencial; se favorece una relación auténtica donde lo que ocurre entre ambos es material clínico, y las micro-rupturas se nombran y reparan como parte del cambio. (Yontef, 1993; Wheeler, 1991).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gestalt_figura_ausente",
+          "nombre": "Traer la figura ausente al presente",
+          "texto": "Invitación puntual a imaginar a la persona relevante frente a sí y dirigirle una frase directa, activando emoción primaria para facilitar cierre o reparación simbólica (Perls, 1969).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_mini_reparacion",
+          "nombre": "Mini-escena de reparación",
+          "texto": "Pequeña dramatización de una frase pendiente (“cuando hiciste eso, me dolió”) para generar experiencia correctiva breve y disminuir repetición automática en vínculos actuales (Polster & Polster, 1973).",
           "sub": "R_reparacionRelacional",
           "tipo": "micro"
         }
