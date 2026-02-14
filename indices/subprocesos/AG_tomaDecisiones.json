@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-14T09:58:28.071Z",
-  "totalModelos": 62,
+  "updatedAt": "2026-02-14T10:15:38.898Z",
+  "totalModelos": 63,
   "modelos": [
     {
       "modelId": "act-hayes-strosahl-wilson-1999",
@@ -1201,6 +1201,36 @@
           "codigo": "m_rt_alternativa",
           "nombre": "Elección de conducta alternativa",
           "texto": "Invitar a identificar una conducta concreta diferente que pueda probarse de inmediato.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-existencial-may-yalom-1961",
+      "modelLabel": "Terapia existencial",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Rollo May; Irvin D. Yalom; Viktor Frankl; Emmy van Deurzen",
+      "modelYear": 1961,
+      "items": [
+        {
+          "codigo": "p_exist_confrontacion_directa",
+          "nombre": "Confrontación existencial directa",
+          "texto": "Intervención en la que el terapeuta señala con claridad contradicciones, autoengaños o decisiones evitadas, invitando al paciente a reconocer su participación activa en el mantenimiento del estancamiento. Se realiza desde autenticidad y respeto, no desde crítica moral. Referencia: Yalom, I. (1980).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exist_decisiones_bloqueadas",
+          "nombre": "Análisis de decisiones vitales bloqueadas",
+          "texto": "Procedimiento focalizado en identificar decisiones postergadas o crónicamente evitadas que mantienen vacío o ambivalencia. Se clarifican alternativas reales, costes y compromisos, ayudando al paciente a asumir la inevitabilidad de elegir. Referencia: van Deurzen, E. (2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_exist_coste_inaccion",
+          "nombre": "Clarificación del coste de no actuar",
+          "texto": "Intervención puntual que explora el precio emocional, relacional o vital de evitar una decisión o cambio, haciendo visible cómo la inacción perpetúa sufrimiento o vacío existencial. Referencia: van Deurzen, E. (2012).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

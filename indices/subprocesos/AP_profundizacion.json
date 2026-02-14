@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_profundizacion",
-  "updatedAt": "2026-02-14T09:58:28.071Z",
-  "totalModelos": 32,
+  "updatedAt": "2026-02-14T10:15:38.898Z",
+  "totalModelos": 33,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -468,6 +468,57 @@
           "codigo": "m_bugental_ralentizar",
           "nombre": "Ralentizar y profundizar",
           "texto": "Microintervención que reduce el ritmo de la sesión para permitir que la experiencia se despliegue con mayor riqueza. Ayuda a detectar matices emocionales y corporales que suelen perderse en un discurso rápido o intelectualizado (Bugental, 1965).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-existencial-may-yalom-1961",
+      "modelLabel": "Terapia existencial",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Rollo May; Irvin D. Yalom; Viktor Frankl; Emmy van Deurzen",
+      "modelYear": 1961,
+      "items": [
+        {
+          "codigo": "p_exist_dadas_existenciales",
+          "nombre": "Exploración de las dadas existenciales",
+          "texto": "Procedimiento central de la terapia existencial que consiste en explorar cómo la persona se relaciona con las cuatro preocupaciones últimas descritas por Yalom: muerte, libertad, aislamiento y falta de sentido. El terapeuta facilita una indagación profunda sobre cómo estas realidades influyen en decisiones, miedos y bloqueos actuales, permitiendo que emerjan emociones primarias y significados implícitos que suelen permanecer evitados. Referencia: Yalom, I. (1980). Existential Psychotherapy.",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exist_ansiedad_existencial",
+          "nombre": "Exploración de ansiedad existencial",
+          "texto": "Proceso mediante el cual se acompaña al paciente a sostener gradualmente la ansiedad derivada de libertad, muerte o aislamiento, sin intentar eliminarla. Se trabaja ampliando tolerancia y diferenciando ansiedad neurótica de angustia existencial normal. Referencia: May, R. (1950); Yalom, I. (1980).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exist_muerte_finitud",
+          "nombre": "Trabajo con muerte y finitud",
+          "texto": "Exploración explícita de la conciencia de mortalidad como organizador profundo de decisiones y prioridades vitales. Se examina cómo la evitación de la muerte restringe autenticidad y cómo su aceptación puede intensificar sentido y urgencia de vivir. Referencia: Yalom, I. (1980).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_exist_fenomenologia_presente",
+          "nombre": "Exploración fenomenológica del presente",
+          "texto": "Invitación breve a describir con precisión la experiencia inmediata (sensaciones, emociones, pensamientos) sin interpretaciones automáticas, ampliando conciencia del modo en que el paciente vive el mundo aquí y ahora. Referencia: van Deurzen, E. (2012).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exist_finitud_pregunta",
+          "nombre": "Pregunta sobre finitud",
+          "texto": "Intervención en la que el terapeuta introduce la perspectiva de la mortalidad (“si el tiempo fuera limitado, ¿qué sería importante?”), facilitando reorganización de prioridades y clarificación de valores auténticos. Referencia: Yalom, I. (1980).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exist_silencio",
+          "nombre": "Silencio reflexivo sostenido",
+          "texto": "Uso deliberado del silencio para permitir que el paciente confronte su propia experiencia sin distracción, favoreciendo introspección y contacto con emociones profundas relacionadas con dilemas existenciales. Referencia: Yalom, I. (1980).",
           "sub": "AP_profundizacion",
           "tipo": "micro"
         }
