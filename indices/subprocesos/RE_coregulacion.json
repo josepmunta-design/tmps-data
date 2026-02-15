@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_coregulacion",
-  "updatedAt": "2026-02-15T09:50:01.700Z",
-  "totalModelos": 33,
+  "updatedAt": "2026-02-15T09:52:38.670Z",
+  "totalModelos": 34,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -21,6 +21,36 @@
           "codigo": "m_han_validacion_injusticia",
           "nombre": "Validación explícita de la injusticia vivida",
           "texto": "Microintervención relacional en la que el terapeuta reconoce de forma explícita el carácter injusto del sufrimiento narrado, sin minimizarlo ni neutralizarlo con reencuadres prematuros. Esta validación actúa como corrector del silenciamiento cultural y reduce vergüenza y aislamiento emocional asociados al han (Min, 2009).",
+          "sub": "RE_coregulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cft-gilbert-2009",
+      "modelLabel": "Compassion Focused Therapy (CFT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Paul Gilbert",
+      "modelYear": 2009,
+      "items": [
+        {
+          "codigo": "p_cft_compOther",
+          "nombre": "Figura compasiva (Compassionate Other) e internalización",
+          "texto": "Imaginería de una figura compasiva ideal (real o imaginaria) con cualidades específicas (sabiduría, fuerza, calidez, valentía). Se practica recibir su mirada/voz y luego internalizarla como recurso regulador.",
+          "sub": "RE_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cft_give_receive",
+          "nombre": "Compasión hacia otros y recibir compasión (equilibrio dar/recibir)",
+          "texto": "Explorar bloqueos a recibir cuidado y a darlo sin sacrificio. Entrenar reciprocidad afiliativa y seguridad en el vínculo, especialmente si hay historia de apego inseguro o vergüenza por necesitar.",
+          "sub": "RE_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cft_compOther_qualities",
+          "nombre": "Figura compasiva: cualidades explícitas",
+          "texto": "Definir cualidades (sabiduría, fuerza, calidez, valentía, compromiso) para evitar figuras “blandas” que el paciente rechaza.",
           "sub": "RE_coregulacion",
           "tipo": "micro"
         }
