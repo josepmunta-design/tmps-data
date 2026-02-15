@@ -12,26 +12,38 @@
 
 <script>
 (function(){
-  function load(src, onOk, onFail){
-    var s=document.createElement('script');
-    s.src=src; s.async=true;
-    s.onload=onOk;
-    s.onerror=onFail;
-    document.head.appendChild(s);
+  function load(src){
+    return new Promise((ok, fail)=>{
+      const s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      s.onload = ok;
+      s.onerror = fail;
+      document.head.appendChild(s);
+    });
   }
 
-  load("https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js",
-    function(){ console.log("D3 OK (jsDelivr)"); },
-    function(){
-      console.warn("Fallo jsDelivr, pruebo unpkg…");
-      load("https://unpkg.com/d3@7/dist/d3.min.js",
-        function(){ console.log("D3 OK (unpkg)"); },
-        function(){ console.error("Fallo cargando D3 desde CDNs"); }
-      );
+  const sources = [
+    "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js",
+    "https://unpkg.com/d3@7/dist/d3.min.js",
+    "https://d3js.org/d3.v7.min.js"
+  ];
+
+  (async function(){
+    for (const src of sources){
+      try{
+        await load(src);
+        console.log("D3 OK:", src);
+        return;
+      }catch(e){
+        console.warn("D3 FAIL:", src);
+      }
     }
-  );
+    console.error("No se pudo cargar D3 desde ningún CDN.");
+  })();
 })();
 </script>
+
 
 
 <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
