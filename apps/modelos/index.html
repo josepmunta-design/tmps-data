@@ -10,7 +10,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
- <script defer src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(function(){
+  function load(src, onOk, onFail){
+    var s=document.createElement('script');
+    s.src=src; s.async=true;
+    s.onload=onOk;
+    s.onerror=onFail;
+    document.head.appendChild(s);
+  }
+
+  load("https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js",
+    function(){ console.log("D3 OK (jsDelivr)"); },
+    function(){
+      console.warn("Fallo jsDelivr, pruebo unpkg…");
+      load("https://unpkg.com/d3@7/dist/d3.min.js",
+        function(){ console.log("D3 OK (unpkg)"); },
+        function(){ console.error("Fallo cargando D3 desde CDNs"); }
+      );
+    }
+  );
+})();
+</script>
+
+
 <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 
   
@@ -3179,10 +3202,22 @@ const projection = d3.geoMercator()
 const GH_BASE = 'https://josepmunta-design.github.io/tmps-data/data';
 
 async function fetchJson(url){
-  const res = await fetch(url, { cache: 'no-store' });
-  if(!res.ok) throw new Error(`HTTP ${res.status} al cargar ${url}`);
-  return await res.json();
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 12000); // 12s
+
+  try{
+    const res = await fetch(url, { cache: 'force-cache', signal: ctrl.signal });
+  if(!res.ok){
+  console.warn(`No encontrado: ${url}`);
+  return null;
 }
+
+    return await res.json();
+  } finally {
+    clearTimeout(t);
+  }
+}
+
 function gh(path){ return `${GH_BASE}/${path}`; }
 
 // ✅ El resto de tu código seguirá usando MODELS
@@ -4605,7 +4640,7 @@ let FOTOS = null;
 async function loadFotos() {
   if (FOTOS) return FOTOS;
   try {
-    const res = await fetch('https://raw.githubusercontent.com/josepmunta-design/tmps-data/main/data/Core/fotos/foto.json');
+    const res = await fetch('https://josepmunta-design.github.io/tmps-data/data/Core/fotos/foto.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     FOTOS = await res.json();
     console.log('FOTOS cargado:', FOTOS); // ← para depurar
