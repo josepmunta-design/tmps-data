@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-15T09:52:38.670Z",
-  "totalModelos": 109,
+  "updatedAt": "2026-02-15T09:53:23.536Z",
+  "totalModelos": 110,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -417,6 +417,288 @@
           "codigo": "m_fap_refuerzo_ccr3",
           "nombre": "Reforzar análisis funcional del paciente (CCR3)",
           "texto": "Validar y reforzar verbalizaciones del paciente que describen de manera funcional su propia conducta y sus consecuencias, fortaleciendo conciencia conductual y autoría del cambio. Referencia: Kohlenberg & Tsai (1991).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "kahneman-sesgos-cognitivos-heuristics-biases",
+      "modelLabel": "Sesgos cognitivos (Kahneman y Tversky)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Daniel Kahneman; Amos Tversky",
+      "modelYear": "1974",
+      "items": [
+        {
+          "codigo": "p_kah_psicoeducacion",
+          "nombre": "Psicoeducación en heurísticos y sesgos",
+          "texto": "Procedimiento didáctico que enseña al paciente a reconocer errores de juicio como productos normales del Sistema 1. Se presentan sesgos concretos con ejemplos próximos a su vida (relaciones, trabajo, salud), se muestran sus costes funcionales y se entrenan señales de alerta internas (“esto suena demasiado rápido/seguro”). El objetivo no es eliminar el Sistema 1, sino aprender cuándo distorsiona la realidad y cómo activar pausas deliberativas más útiles.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kah_debiasing",
+          "nombre": "Chequeos de debiasing (pausas de Sistema 2)",
+          "texto": "Secuencia breve de verificación antes de concluir o decidir: pedir datos base, estimar rangos en lugar de puntos, buscar activamente contraejemplos, hacer la pregunta alternativa (“¿qué evidencia me haría cambiar?”), y revisar costes hundidos/encuadres. En práctica clínica se usa como micro-ritual metacognitivo en momentos de activación emocional, para que la persona no confunda sensación de certeza con evidencia suficiente.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kah_disponibilidad",
+          "nombre": "Heurístico de disponibilidad",
+          "texto": "Tendencia a estimar frecuencias y riesgos según lo fácil que vienen a la mente ejemplos, de modo que eventos recientes, vívidos o emocionalmente cargados parecen más probables de lo que son. En psicoterapia explica miedos sobredimensionados tras noticias o experiencias puntuales, y también la infraestimación de riesgos poco visibles. Intervenir implica introducir datos base, ampliar el muestreo de recuerdos y diferenciar viveza subjetiva de probabilidad real.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_representatividad",
+          "nombre": "Heurístico de representatividad",
+          "texto": "Sesgo por el que juzgamos la probabilidad de algo por su parecido con un prototipo, ignorando estadísticas previas y variabilidad. Lleva a conclusiones rápidas tipo “esto es como X, por tanto acabará igual”, muy típicas en ansiedad y depresión. Clínicamente se trabaja confrontando tasas base, explorando excepciones y haciendo explícito el salto automático de similitud a certeza.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_anclaje",
+          "nombre": "Heurístico de anclaje y ajuste",
+          "texto": "La mente se fija en un valor inicial —aunque sea arbitrario— y ajusta insuficientemente a partir de él, arrastrando estimaciones y decisiones posteriores. En clínica aparece cuando una primera impresión (“soy un desastre”, “esto irá mal”) condiciona todo el razonamiento posterior. La intervención busca detectar el ancla, generar anclas alternativas y recalibrar con información nueva.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_afectivo",
+          "nombre": "Heurístico afectivo",
+          "texto": "Evaluación de riesgos y beneficios guiada por la valencia emocional inmediata: lo que gusta parece seguro y lo que asusta parece peligroso. Sustituye análisis por sensación, amplificando evitación experiencial. En terapia se trabaja distinguiendo emoción de evidencia, tolerando afecto sin concluir de inmediato y usando exposición emocional para verificar hipótesis.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_tasasBase",
+          "nombre": "Negligencia de tasas base",
+          "texto": "Ignorar probabilidades previas y datos poblacionales a favor de información concreta o narrativa. Hace que historias individuales dominen el juicio y se subestime lo estadísticamente probable. En psicoterapia se ve en decisiones impulsivas o creencias rígidas sobre los demás. Se corrige introduciendo tasas base, preguntando “¿qué suele pasar en general?” y comparando con el caso propio.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_pequenosNumeros",
+          "nombre": "Ley de los pequeños números",
+          "texto": "Creer que muestras pequeñas reflejan fielmente una población, lo que lleva a sobreinterpretar rachas y patrones en eventos aleatorios. Es clave en pensamiento paranoide o mágico cotidiano (“si pasó dos veces, siempre pasa”). La intervención enfatiza tamaño muestral, azar, y busca ampliar experiencia observada.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_tamMuestra",
+          "nombre": "Insensibilidad al tamaño muestral",
+          "texto": "No ajustar el nivel de confianza según cuántos casos hay detrás de una impresión; una anécdota pesa como una serie robusta. En clínica alimenta generalizaciones excesivas y autoetiquetas (“soy así”). Se trabaja cuantificando experiencia, diferenciando anécdota de patrón y entrenando lenguaje probabilístico.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_conjuncion",
+          "nombre": "Falacia de la conjunción",
+          "texto": "Asignar mayor probabilidad a una historia específica y coherente que a uno de sus componentes simples, porque la coherencia narrativa engaña al Sistema 1. En psicoterapia sostiene explicaciones cerradas y culpabilizantes. Se desarma separando hechos de añadidos interpretativos y estimando probabilidades por partes.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_jugador",
+          "nombre": "Falacia del jugador",
+          "texto": "Esperar que la aleatoriedad “compense” a corto plazo (tras varias pérdidas, “toca” ganar). Genera falsas expectativas y lecturas erróneas de coincidencias. Se ve en decisiones de riesgo, relaciones repetitivas o recaídas. Intervenir implica psicoeducación sobre azar y reformular rachas sin moralizarlas.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_ilusionValidez",
+          "nombre": "Ilusión de validez",
+          "texto": "Exceso de confianza en predicciones basadas en pocos datos pero narrativamente coherentes. “Suena bien, por tanto es verdad”. En clínica impulsa certezas diagnósticas sobre uno mismo o los otros. Se trabaja aumentando tolerancia a la incertidumbre y buscando evidencia externa y longitudinal.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_regresionMedia",
+          "nombre": "Regresión a la media ignorada",
+          "texto": "Atribuir cambios posteriores a causas personales sin considerar que los extremos tienden estadísticamente a volver al promedio. Favorece explicaciones mágicas o culpabilización. En terapia ayuda a normalizar oscilaciones emocionales y a no sacar conclusiones globales de picos o bajones.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_framing",
+          "nombre": "Efecto de encuadre (framing)",
+          "texto": "La decisión cambia según se presente como ganancia o pérdida aunque el resultado sea equivalente. El encuadre activa circuitos emocionales distintos y guía la elección. En clínica, cambiar el framing (“fracaso” vs “aprendizaje”) altera motivación y evitación. Se trabaja reencuadrando y comparando opciones en formatos alternativos.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_aversPerdida",
+          "nombre": "Aversión a la pérdida",
+          "texto": "Las pérdidas pesan más que las ganancias equivalentes; por eso se evita cambiar incluso cuando el cambio es beneficioso. Mantiene conductas disfuncionales por miedo a perder seguridad aparente. En terapia se aborda exponiendo a pérdidas pequeñas, clarificando valores y calculando costes de no cambiar.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_dotacion",
+          "nombre": "Efecto dotación",
+          "texto": "Valorar más lo que ya se posee solo por poseerlo, elevando el coste subjetivo de renunciar. En psicoterapia explica apego a identidades dolorosas, relaciones tóxicas o hábitos. Se trabaja aumentando perspectiva temporal y ensayando micro-renuncias para recalibrar valor real.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_statusQuo",
+          "nombre": "Sesgo de statu quo",
+          "texto": "Preferir que nada cambie, sobreestimando riesgos del cambio y minimizando costes de mantener el estado actual. Fuerte en depresión y ansiedad social. La intervención clarifica costes ocultos del statu quo y estructura cambios graduados hacia valores.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_costesHundidos",
+          "nombre": "Costes hundidos (sunk cost)",
+          "texto": "Persistir en una decisión por inversión previa (tiempo, dinero, esfuerzo) aunque continuar empeore la situación. En clínica aparece en relaciones prolongadas o carreras vitales no elegidas. Se trabaja distinguiendo pasado irrecuperable de opciones presentes y autorizando a “dejar de cavar”.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_contabilidadMental",
+          "nombre": "Contabilidad mental",
+          "texto": "Asignar recursos a “cuentas” psicológicas separadas (dinero, tiempo, energía) y tomar decisiones incoherentes con el valor global. En terapia se ve en auto-permisos o auto-castigos. Se corrige recombinando cuentas y evaluando objetivos a nivel de vida completa.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_certeza",
+          "nombre": "Efecto certeza",
+          "texto": "Sobrevalorar resultados seguros frente a probabilísticos, eligiendo opciones con menor valor esperado porque dan sensación de control. Alimenta evitación de riesgo saludable. En clínica se trabaja tolerancia a incertidumbre y pensamiento por rangos.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_posibilidad",
+          "nombre": "Efecto posibilidad",
+          "texto": "Sobreponderar cambios desde 0% a “algo” más que cambios equivalentes en probabilidades medias, lo que explica fascinación por apuestas pequeñas o esperanzas mínimas. En terapia se usa para entender enganches a “quizá cambie” en vínculos dañinos y recalibrar expectativas.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_negligProb",
+          "nombre": "Negligencia de probabilidad",
+          "texto": "Reaccionar al resultado posible ignorando su probabilidad real, generando miedos intensos a eventos raros o expectativas desmedidas. En ansiedad ayuda a entender por qué lo improbable gobierna conducta. Se corrige con estimaciones explícitas y exposición a incertidumbre.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_resultado",
+          "nombre": "Sesgo del resultado",
+          "texto": "Valorar una decisión por su desenlace final y no por la calidad del proceso con la información disponible en el momento. Genera auto-culpa retrospectiva y perfeccionismo. En terapia se revisa la decisión “en su contexto” y se refuerza aprendizaje del proceso.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_hindsight",
+          "nombre": "Sesgo retrospectivo (hindsight)",
+          "texto": "Una vez ocurrido algo, se percibe como obvio y predecible (“ya lo sabía”), distorsionando memoria y aumentando culpa. En clínica aparece tras rupturas o recaídas. Se trabaja reconstruyendo incertidumbre original y normalizando límites de predicción.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_atribFundamental",
+          "nombre": "Error fundamental de atribución",
+          "texto": "Explicar la conducta ajena por rasgos internos y subestimar factores situacionales. Mantiene resentimiento y rigidez moral. En terapia se entrena perspectiva contextual, mentalización y búsqueda de variables externas.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_ilusionComprension",
+          "nombre": "Ilusión de comprensión",
+          "texto": "Construir explicaciones coherentes post hoc que dan falsa sensación de entender causas, aunque la realidad sea más compleja. En psicoterapia alimenta narrativas cerradas de identidad. Se trabaja introduciendo pluralidad causal y humildad epistémica.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_falaciaNarrativa",
+          "nombre": "Falacia narrativa",
+          "texto": "Preferir historias causales simples que encajan bien a explicaciones probabilísticas complejas, lo cual reduce ansiedad a costa de distorsionar la realidad. En clínica refuerza culpabilización o victimismo. Se corrige separando hechos de relato y aceptando complejidad.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_optimismo",
+          "nombre": "Sesgo de optimismo",
+          "texto": "Sobreestimar el éxito propio e infravalorar riesgos, útil para emprender pero peligroso en decisiones impulsivas. En terapia puede sostener recaídas o negación. Se trabaja calibrando riesgos sin destruir esperanza.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_ilusionControl",
+          "nombre": "Ilusión de control",
+          "texto": "Creer que uno controla lo que depende en gran parte del azar o de variables externas, generando culpa cuando no sale y falsa seguridad cuando sale. En clínica aparece en ansiedad generalizada y TOC. Se interviene distinguiendo control real vs deseado.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_planificacion",
+          "nombre": "Falacia de planificación",
+          "texto": "Subestimar tiempo, coste y dificultad de proyectos futuros y sobreestimar beneficios, incluso con experiencia previa que contradice la estimación. Mantiene procrastinación y frustración crónica. Se trabaja usando datos de proyectos anteriores y planificando con márgenes.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_halo",
+          "nombre": "Efecto halo",
+          "texto": "Una impresión global positiva o negativa contamina juicios sobre rasgos específicos, haciendo que la mente rellene huecos con coherencia. En terapia explica idealización/devaluación rápida en vínculos. Se corrige desglosando dimensiones y verificando evidencia por rasgo.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_sustitucion",
+          "nombre": "Sustitución de preguntas",
+          "texto": "Responder una pregunta difícil con otra fácil sin darse cuenta (core del Sistema 1), por ejemplo sustituir “¿qué vida quiero?” por “¿qué me apetece ahora?”. En clínica sostiene decisiones de corto plazo contra valores. Se trabaja devolviendo la pregunta original.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_confirmacion",
+          "nombre": "Sesgo de confirmación",
+          "texto": "Buscar, interpretar y recordar información que confirma creencias previas, evitando la que las contradice. Central en ansiedad, depresión y conflicto de pareja. Se trabaja con experimentos conductuales, búsqueda activa de contra-evidencia y exposición a disconfirmación.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_picoFinal",
+          "nombre": "Regla pico-final",
+          "texto": "Recordar una experiencia por su pico emocional y su final, ignorando la duración total; guía decisiones futuras más que la vivencia real. En terapia es clave en trauma y relaciones: una escena final contamina todo. Se trabaja revisando la curva completa de experiencia.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_duracion",
+          "nombre": "Negligencia de duración",
+          "texto": "La duración de una experiencia pesa poco en su evaluación retrospectiva; importa más cómo terminó. Esto distorsiona decisiones (p. ej., soportar mal un proceso breve si finaliza mal). En clínica se usa para re-evaluar historias vitales con más precisión temporal.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_dosYos",
+          "nombre": "Yo que experimenta vs. yo que recuerda",
+          "texto": "Distinción entre el ‘yo que vive’ el momento y el ‘yo que recuerda’ después, siendo este último quien decide. Explica por qué alguien repite experiencias que fueron malas pero acabaron bien. En terapia se exploran ambas voces para tomar decisiones más ajustadas.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_excesoConfianza",
+          "nombre": "Exceso de confianza",
+          "texto": "Sobreestimar la exactitud del propio juicio, especialmente en predicción, porque la coherencia interna se confunde con verdad. En clínica alimenta rigidez, discusiones y mala estimación de riesgos. Se trabaja con calibración probabilística y feedback realista.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_primacia",
+          "nombre": "Efecto de primacía",
+          "texto": "La información inicial pesa más que la posterior al formar una impresión; primeras escenas de una relación o terapia marcan evaluación global. En clínica explica “primeros golpes” de trauma relacional. Se interviene revisando datos posteriores y re-equilibrando el relato.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kah_recencia",
+          "nombre": "Efecto de recencia",
+          "texto": "La información más reciente domina el juicio sobre una secuencia, de manera que un evento final colorea todo lo anterior. En terapia aparece en evaluación de progresos (“esta semana fatal, entonces todo va mal”). Se corrige volviendo a la serie completa.",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
