@@ -9,8 +9,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-
 <script>
+const IS_GHPAGES = location.hostname.endsWith('github.io');
+
+const DATA_BASE = IS_GHPAGES
+  ? (location.origin + '/data')
+  : 'https://cdn.jsdelivr.net/gh/josepmunta-design/tmps-data@main/data';
+
+function gh(p){
+  return `${DATA_BASE}/${String(p).replace(/^\/+/, '')}`;
+}
+
+// 👇 ESTE BLOQUE TIENE QUE ESTAR DENTRO DEL SCRIPT
 (function(){
   function load(src){
     return new Promise((ok, fail)=>{
@@ -44,11 +54,8 @@
 })();
 </script>
 
-
-
 <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 
-  
   <style>
     
 :root{
@@ -2834,7 +2841,8 @@ console.log('✅ script fotos cargado', location.href);
 
 async function loadAuthorPhotoIndex(){
 
-  const url = 'https://josepmunta-design.github.io/tmps-data/data/Core/fotos/foto.json';
+  const url = 'https://cdn.jsdelivr.net/gh/josepmunta-design/tmps-data@main/data/Core/fotos/foto.json';
+
 
   try{
     const r = await fetch(url, { cache: 'no-store' });
@@ -2896,7 +2904,8 @@ window.getAuthorPhoto = function(authorName){
 
   if (!file) return null;
 
-  return 'https://josepmunta-design.github.io/tmps-data/data/Core/fotos/' + file;
+  return `${DATA_BASE}/Core/fotos/${file}`;
+
 };
 
 window.getModelPhoto = function(modelId, authorName){
@@ -2908,7 +2917,8 @@ window.getModelPhoto = function(modelId, authorName){
   if (models && modelId){
     const fileById = models[String(modelId).trim()];
     if (fileById){
-      return 'https://josepmunta-design.github.io/tmps-data/data/Core/fotos/' + fileById;
+      return `${DATA_BASE}/Core/fotos/${fileById}`;
+
     }
   }
 
@@ -3244,7 +3254,9 @@ const projection = d3.geoMercator()
 }
 
 // ⬇️ Usa GitHub Pages (más fiable que raw en embeds tipo Teachable)
-const GH_BASE = 'https://josepmunta-design.github.io/tmps-data/data';
+
+
+
 
 async function fetchJson(url){
   const ctrl = new AbortController();
@@ -3281,7 +3293,6 @@ async function fetchJson(url){
 }
 
 
-function gh(path){ return `${GH_BASE}/${path}`; }
 
 // ✅ El resto de tu código seguirá usando MODELS
 let MODELS = LOCAL_MODELS.filter(m => !m.hideInModels);
@@ -3310,14 +3321,14 @@ function hasLocalSchoolModels(label){
 // Carga index de escuelas de GitHub (si falla, no pasa nada)
 async function loadGhSchoolsIndex(){
   try{
-    // Ajusta ruta si tu repo lo tiene en otro sitio
-    // En tu captura se ve: data/Core/escuelas/index.json
-    GH_SCHOOLS = await fetchJson(gh('Core/escuelas/index.json'));
+GH_SCHOOLS = await fetchJson(gh('Core/escuelas/index.json'));
+
   }catch(e){
     console.warn('No se pudo cargar index de escuelas desde GitHub:', e);
     GH_SCHOOLS = [];
   }
 }
+
 
 // ✅ promesas en vuelo por escuela (evita carreras)
 const GH_SCHOOL_PENDING = new Map(); // id -> Promise
@@ -3352,7 +3363,9 @@ async function ensureSchoolFromGitHub(schoolLabel){
   const promise = (async () => {
 
     // usa entry.file
-    const school = await fetchJson(gh(`Core/${entry.file}`));
+const school = await fetchJson(gh('Core/' + entry.file));
+
+
 
     const summaries = (school.modelos || []).map(m => ({
       ...m,
@@ -4121,14 +4134,16 @@ const IDX = window.AUTHOR_PHOTO_INDEX || { authors:{}, models:{} };
 // Busca por autor (con la MISMA normalización que usas en el index)
 const authorKey = normAuthorKey(autorFotoKey);
 if (IDX.authors?.[authorKey]) {
-  fotoUrl = 'https://josepmunta-design.github.io/tmps-data/data/Core/fotos/' + IDX.authors[authorKey];
+  fotoUrl = `${DATA_BASE}/Core/fotos/${IDX.authors[authorKey]}`;
+
 }
 
 // Fallback por modelo
 if (!fotoUrl) {
   const modelKey = String(m.id ?? '').trim();
   if (IDX.models?.[modelKey]) {
-    fotoUrl = 'https://josepmunta-design.github.io/tmps-data/data/Core/fotos/' + IDX.models[modelKey];
+   fotoUrl = `${DATA_BASE}/Core/fotos/${IDX.models[modelKey]}`;
+
   }
 }
 
@@ -4703,7 +4718,8 @@ let FOTOS = null;
 async function loadFotos() {
   if (FOTOS) return FOTOS;
   try {
-    const res = await fetch('https://josepmunta-design.github.io/tmps-data/data/Core/fotos/foto.json?v=' + Date.now(), { cache:'no-store' });
+    const res = await fetch(gh('Core/fotos/foto.json') + '?v=' + Date.now())
+
 
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     FOTOS = await res.json();
