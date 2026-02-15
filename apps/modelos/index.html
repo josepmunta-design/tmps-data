@@ -2917,6 +2917,39 @@ window.getModelPhoto = function(modelId, authorName){
 };
 
 
+async function ensureD3(timeoutMs = 8000){
+  if (window.d3) return true;
+
+  const sources = [
+    "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js",
+    "https://unpkg.com/d3@7/dist/d3.min.js",
+    "https://d3js.org/d3.v7.min.js"
+  ];
+
+  function load(src){
+    return new Promise((ok, fail)=>{
+      const s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      s.onload = ok;
+      s.onerror = fail;
+      document.head.appendChild(s);
+    });
+  }
+
+  const t0 = Date.now();
+  for (const src of sources){
+    try{
+      await Promise.race([
+        load(src),
+        new Promise((_,rej)=>setTimeout(()=>rej(new Error("timeout")), 2500))
+      ]);
+      if (window.d3) return true;
+    }catch(e){}
+    if (Date.now() - t0 > timeoutMs) break;
+  }
+  return !!window.d3;
+}
 
    window.addEventListener('DOMContentLoaded', async () => {
 
