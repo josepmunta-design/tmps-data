@@ -1,0 +1,306 @@
+{
+"id": "ttm_prochaska_diclemente",
+
+  "grupo": "Transversal",
+  "label": "Modelo Transteórico del Cambio (TTM)",
+  "year": "1983–actualidad",
+  "autores": "James O. Prochaska; Carlo C. DiClemente",
+  "influencias": [
+    "Psicología del cambio conductual",
+    "Motivational Interviewing",
+    "Modelo biopsicosocial",
+    "Prevención de recaídas"
+  ],
+  "descripcion": "El Modelo Transteórico del Cambio (TTM) es un modelo transversal que describe cómo las personas modifican conductas relevantes para su salud y funcionamiento psicológico. Propone que el cambio no ocurre de forma lineal ni por simple insight, sino a través de estadios reconocibles (precontemplación, contemplación, preparación, acción, mantenimiento y recaída/reciclaje), movilizados por procesos de cambio específicos.\n\nEl TTM se aplica a una amplia gama de conductas: consumo de sustancias, adherencia terapéutica, hábitos de sueño, ejercicio, alimentación, autocuidado y cumplimiento de acuerdos clínicos. En psicoterapia, el modelo permite ajustar la intervención al momento real del paciente, evitando exigir acciones para las que aún no hay decisión ni recursos, y protegiendo la alianza mediante un encuadre realista del cambio.\n\nEn tu arquitectura, el TTM actúa como modelo meta–decisional: organiza cuándo profundizar, cuándo estabilizar condiciones basales (VB) y cuándo trabajar motivación, compromiso o prevención de recaídas.",
+  "mjps": ["VB", "N", "AG", "RE", "RF", "R"],
+  "refs": [
+    "Prochaska, J. O., & DiClemente, C. C. (1983). Stages and processes of self-change of smoking. Journal of Consulting and Clinical Psychology.",
+    "Prochaska, J. O., & DiClemente, C. C. (1992). Stages of change in the modification of problem behaviors. Progress in Behavior Modification.",
+    "Prochaska, J. O., Norcross, J. C., & DiClemente, C. C. (1994). Changing for Good. William Morrow.",
+    "DiClemente, C. C. (2003). Addiction and Change. Guilford Press.",
+    "Miller, W. R., & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). Guilford Press.",
+    "Marlatt, G. A., & Gordon, J. R. (1985). Relapse Prevention. Guilford Press.",
+    "Gollwitzer, P. M. (1999). Implementation intentions. American Psychologist.",
+    "Kazdin, A. E. (2001). Behavior Modification in Applied Settings (6th ed.). Waveland Press."
+  ],
+  "procedimientos": [
+    {
+      "nombre": "Ubicar estadio de cambio",
+      "codigo": "p_ttm_estadio",
+      "procesos": ["N_metacognicion", "AG_tomaDecisiones"],
+      "texto": "Identificar el estadio de cambio respecto a una conducta concreta (precontemplación, contemplación, preparación, acción, mantenimiento o recaída). Evita intervenciones desajustadas y protege la alianza al respetar el momento real del paciente.\n\n• Objetivo clínico: alinear intervención y expectativas con el estadio\n• Se observa: menos confrontación improductiva\n• Funciona cuando: el estadio se revisa periódicamente\n• Error frecuente: asumir “motivación” donde hay ambivalencia",
+      "refs": [
+        "Prochaska & DiClemente (1983).",
+        "Prochaska & DiClemente (1992).",
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "DiClemente (2003)."
+      ]
+    },
+    {
+      "nombre": "Psychoeducación de estadios y normalización del “reciclaje”",
+      "codigo": "p_ttm_psicoeducacion_estadios",
+      "procesos": ["N_reformulacion", "R_acuerdoTerapia"],
+      "texto": "Explicar al paciente la lógica de estadios (incluida recaída/reciclaje) como mapa práctico. Reduce vergüenza, aumenta colaboración y permite acordar objetivos realistas sin forzar acción prematura.",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "DiClemente (2003)."
+      ]
+    },
+    {
+      "nombre": "Activar procesos de cambio adecuados al estadio",
+      "codigo": "p_ttm_procesosCambio",
+      "procesos": [
+        "N_reformulacion",
+        "RE_modulacion",
+        "R_coregulacion",
+        "AG_compromisoConductual"
+      ],
+      "texto": "Seleccionar procesos de cambio según el estadio: aumentar conciencia y reevaluación en estadios tempranos; compromiso, sustitución conductual y control de estímulos en acción; refuerzo y prevención de recaídas en mantenimiento. Aporta una lógica clara de “qué toca ahora”.",
+      "refs": [
+        "Prochaska & DiClemente (1983).",
+        "Prochaska & DiClemente (1992).",
+        "Prochaska, Norcross, & DiClemente (1994)."
+      ]
+    },
+    {
+      "nombre": "Balance decisional (pros y contras)",
+      "codigo": "p_ttm_balance",
+      "procesos": ["N_metacognicion", "AG_tomaDecisiones"],
+      "texto": "Explorar beneficios y costes de mantener la conducta y de cambiarla. Hace visible la ambivalencia y facilita una decisión apropiada del paciente, no inducida por presión externa.",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "DiClemente (2003).",
+        "Miller & Rollnick (2013)."
+      ]
+    },
+    {
+      "nombre": "Elicitar “change talk” y resolver ambivalencia (integración MI)",
+      "codigo": "p_ttm_mi_changeTalk",
+      "procesos": ["AG_tomaDecisiones", "R_coregulacion", "N_reformulacion"],
+      "texto": "Usar preguntas evocadoras, reflejo y resúmenes estratégicos para aumentar lenguaje de cambio y disminuir lenguaje de mantenimiento. Especialmente útil en contemplación/preparación.",
+      "refs": [
+        "Miller & Rollnick (2013).",
+        "DiClemente (2003)."
+      ]
+    },
+    {
+      "nombre": "Regla de “meta mínima” y escalado de objetivos",
+      "codigo": "p_ttm_meta_minima",
+      "procesos": ["AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Definir una meta mínima viable (MMV) en preparación: lo suficientemente pequeña para ser cumplible, pero clínicamente significativa. Se escala tras evidencia de cumplimiento (acción → mantenimiento).",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "Kazdin (2001)."
+      ]
+    },
+    {
+      "nombre": "Contratos de cambio y auto-liberación (compromiso explícito)",
+      "codigo": "p_ttm_contrato_cambio",
+      "procesos": ["AG_compromisoConductual", "R_acuerdoTerapia"],
+      "texto": "Formalizar compromiso: qué se cambia, desde cuándo, con qué apoyos y qué se hará ante tentación. Refuerza “self-liberation” (decisión activa) y reduce el “ya veré”.",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "DiClemente (2003)."
+      ]
+    },
+    {
+      "nombre": "Autoobservación y registro breve (self-monitoring)",
+      "codigo": "p_ttm_registro",
+      "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+      "texto": "Registro simple de episodios (antecedentes, emoción, conducta, consecuencia). Aumenta conciencia, detecta patrones y ofrece datos para decisiones realistas (especialmente en VB).",
+      "refs": ["Kazdin (2001).", "DiClemente (2003)."]
+    },
+    {
+      "nombre": "Control de estímulos (diseño del entorno)",
+      "codigo": "p_ttm_control_estimulos",
+      "procesos": ["AG_compromisoConductual", "VB_sustancias", "VB_sueno"],
+      "texto": "Modificar señales ambientales que disparan la conducta (sustancias, pantallas, horarios, lugares, compañías). Es un puente directo de preparación→acción y reduce carga de “fuerza de voluntad”.",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "Kazdin (2001)."
+      ]
+    },
+    {
+      "nombre": "Manejo de reforzadores (refuerzo y recompensas)",
+      "codigo": "p_ttm_refuerzo",
+      "procesos": ["AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Planificar refuerzos inmediatos por conducta objetivo (o por abstinencia/reducción) y retirar refuerzos inadvertidos de la conducta problema. Útil en acción/mantenimiento.",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "Kazdin (2001)."
+      ]
+    },
+    {
+      "nombre": "Implementación “si–entonces” (intenciones de implementación)",
+      "codigo": "p_ttm_si_entonces",
+      "procesos": ["AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Convertir intención en plan ejecutable: “Si ocurre X (disparador), entonces haré Y (respuesta alternativa)”. Reduce la brecha entre decisión y acción.",
+      "refs": ["Gollwitzer (1999)."]
+    },
+    {
+      "nombre": "Entrenar autoeficacia y manejar tentación",
+      "codigo": "p_ttm_autoeficacia",
+      "procesos": ["RE_modulacion", "AG_autoriaResponsabilidad"],
+      "texto": "Fortalecer capacidad percibida para sostener el cambio y anticipar situaciones de tentación/recaída. Incluye respuestas alternativas, apoyos y planes de contingencia.",
+      "refs": [
+        "DiClemente (2003).",
+        "Marlatt & Gordon (1985).",
+        "Prochaska, Norcross, & DiClemente (1994)."
+      ]
+    },
+    {
+      "nombre": "Prevención de recaídas y reciclaje",
+      "codigo": "p_ttm_recaidas",
+      "procesos": ["N_metacognicion", "RE_modulacion", "RF_crisis", "AG_tomaDecisiones"],
+      "texto": "Entender la recaída como parte del proceso, no como fracaso. Analizar vulnerabilidades, disparadores y “decisiones aparentemente irrelevantes”, ajustando plan y estadio.",
+      "refs": [
+        "Marlatt & Gordon (1985).",
+        "DiClemente (2003).",
+        "Prochaska, Norcross, & DiClemente (1994)."
+      ]
+    },
+    {
+      "nombre": "Activar apoyo social (helping relationships)",
+      "codigo": "p_ttm_apoyo_social",
+      "procesos": ["R_coregulacion", "AG_compromisoConductual"],
+      "texto": "Diseñar red de apoyo realista (una persona concreta + un contexto concreto + una conducta concreta). Reduce recaída, aumenta adherencia y sostiene mantenimiento.",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "DiClemente (2003)."
+      ]
+    }
+  ],
+  "micros": [
+    {
+      "nombre": "Evaluar estadio por conducta VB (no “motivación general”)",
+      "codigo": "m_ttm_vb_estadio",
+      "procesos": [
+        "VB_sueno",
+        "VB_alimentacion",
+        "VB_movimiento",
+        "VB_sustancias",
+        "N_metacognicion"
+      ],
+      "texto": "Evaluación específica del estadio aplicado a cada condición basal relevante. Permite intervenciones finas: acción en sueño, contemplación en alcohol, precontemplación en cannabis, etc.",
+      "refs": [
+        "Prochaska & DiClemente (1992).",
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "DiClemente (2003)."
+      ]
+    },
+    {
+      "nombre": "VB — Meta mínima viable (MMV) como criterio de “viabilidad terapéutica”",
+      "codigo": "m_ttm_vb_mmv",
+      "procesos": ["VB_sueno", "VB_sustancias", "AG_compromisoConductual", "R_acuerdoTerapia"],
+      "texto": "Definir una MMV que no sea “vida ideal”, sino mínimo suficiente para que la terapia funcione: sueño suficiente para no estar disociado/irritable, reducción o no consumo para poder mentalizar, etc.",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "Kazdin (2001).",
+        "DiClemente (2003)."
+      ]
+    },
+    {
+      "nombre": "VB – Sustancias: conciencia funcional sin confrontación (precontemplación)",
+      "codigo": "m_ttm_vb_sustancias_conciencia",
+      "procesos": ["VB_sustancias", "N_reformulacion", "RE_modulacion"],
+      "texto": "Conciencia basada en funcionamiento: efectos en sueño, regulación, memoria, impulsividad, adherencia y capacidad reflexiva. Sin moralizar ni discutir etiquetas diagnósticas.",
+      "refs": [
+        "DiClemente (2003).",
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "Miller & Rollnick (2013)."
+      ]
+    },
+    {
+      "nombre": "VB – Sustancias: feedback de patrón (registro breve + mapa de disparadores)",
+      "codigo": "m_ttm_vb_sustancias_registro",
+      "procesos": ["VB_sustancias", "N_metacognicion", "AG_autoriaResponsabilidad"],
+      "texto": "Registrar episodios (disparadores, emoción, contexto, consecuencia) para convertir el “consumo” en patrón observable. Base para decisiones realistas y para prevención de recaídas.",
+      "refs": ["Kazdin (2001).", "DiClemente (2003).", "Marlatt & Gordon (1985)."]
+    },
+    {
+      "nombre": "VB – Sustancias: ambivalencia y balance decisional (con ganancias del consumo)",
+      "codigo": "m_ttm_vb_sustancias_balance",
+      "procesos": ["VB_sustancias", "N_metacognicion", "AG_tomaDecisiones"],
+      "texto": "Balance pros/contras incorporando beneficios percibidos (alivio, pertenencia, anestesia emocional) y costes clínicos (bloqueo emocional, inestabilidad, recaídas sintomáticas).",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "DiClemente (2003).",
+        "Miller & Rollnick (2013)."
+      ]
+    },
+    {
+      "nombre": "VB – Sustancias: “si–entonces” para momentos de riesgo",
+      "codigo": "m_ttm_vb_sustancias_si_entonces",
+      "procesos": ["VB_sustancias", "AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Plan específico: “Si aparece X (ansiedad, fin de semana, llamada de tal persona), entonces haré Y (conducta alternativa + apoyo)”. Reduce recaída impulsiva.",
+      "refs": ["Gollwitzer (1999).", "Marlatt & Gordon (1985)."]
+    },
+    {
+      "nombre": "VB – Sustancias: control de estímulos (entorno y compañía)",
+      "codigo": "m_ttm_vb_sustancias_estimulos",
+      "procesos": ["VB_sustancias", "AG_compromisoConductual"],
+      "texto": "Modificar señales: lugares, rutinas, acceso, dinero, compañía, horarios. Reduce tentación sin exigir control interno máximo desde el día 1.",
+      "refs": [
+        "Prochaska, Norcross, & DiClemente (1994).",
+        "Kazdin (2001).",
+        "DiClemente (2003)."
+      ]
+    },
+    {
+      "nombre": "VB – Sustancias: reducción de daño como puente (preparación→acción)",
+      "codigo": "m_ttm_vb_sustancias_reduccion",
+      "procesos": ["VB_sustancias", "AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Cuando abstinencia no es viable: reducir dosis/frecuencia/contextos de riesgo y evitar combinaciones peligrosas. Se define como avance (no como “fracaso moral”).",
+      "refs": ["DiClemente (2003).", "Prochaska, Norcross, & DiClemente (1994)."]
+    },
+    {
+      "nombre": "VB – Sustancias: no consumo como condición funcional de la terapia",
+      "codigo": "m_ttm_vb_sustancias_noConsumo",
+      "procesos": ["VB_sustancias", "AG_compromisoConductual", "R_acuerdoTerapia"],
+      "texto": "Cuando el consumo bloquea procesos nucleares (regulación, mentalización, adherencia), se formula el no consumo como condición terapéutica funcional, negociada y explícita.",
+      "refs": ["DiClemente (2003).", "Miller & Rollnick (2013).", "Prochaska, Norcross, & DiClemente (1994)."]
+    },
+    {
+      "nombre": "VB – Sustancias: manejo de reforzadores (sustituir refuerzos)",
+      "codigo": "m_ttm_vb_sustancias_refuerzo",
+      "procesos": ["VB_sustancias", "AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Sustituir el refuerzo del consumo por refuerzos alternativos inmediatos (placer, conexión, calma) y planificar recompensas por pasos de cambio. Evita depender solo de motivación.",
+      "refs": ["Kazdin (2001).", "Prochaska, Norcross, & DiClemente (1994)."]
+    },
+    {
+      "nombre": "VB – Sustancias: recaída/reciclaje sin ruptura (análisis + ajuste de plan)",
+      "codigo": "m_ttm_vb_sustancias_recaida",
+      "procesos": ["VB_sustancias", "N_metacognicion", "RF_crisis", "AG_tomaDecisiones"],
+      "texto": "Recaída como información: disparadores, vulnerabilidades y decisiones previas. Se ajusta el plan y el estadio sin castigo ni banalización, cuidando continuidad y alianza.",
+      "refs": ["Marlatt & Gordon (1985).", "DiClemente (2003).", "Prochaska, Norcross, & DiClemente (1994)."]
+    },
+    {
+      "nombre": "VB – Sustancias: consolidación identitaria (mantenimiento profundo)",
+      "codigo": "m_ttm_vb_sustancias_narrativa",
+      "procesos": ["VB_sustancias", "N_identidad", "R_coregulacion"],
+      "texto": "Integrar el cambio en identidad narrativa: quién soy sin consumir, qué regula ahora, qué valores sostienen el cambio. Disminuye el “control forzado” y sostiene mantenimiento.",
+      "refs": ["DiClemente (2003).", "Prochaska, Norcross, & DiClemente (1994)."]
+    },
+    {
+      "nombre": "VB – Sueño: estadio + diseño de entorno (pantallas, horarios, activación)",
+      "codigo": "m_ttm_vb_sueno_estimulos",
+      "procesos": ["VB_sueno", "AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Aplicar estadio al sueño y usar control de estímulos (horario, luz, pantallas, rutina) con metas mínimas viables antes de pedir trabajo emocional profundo.",
+      "refs": ["Prochaska, Norcross, & DiClemente (1994).", "Kazdin (2001)."]
+    },
+    {
+      "nombre": "VB – Movimiento: intención→plan “si–entonces” + refuerzo",
+      "codigo": "m_ttm_vb_movimiento_plan",
+      "procesos": ["VB_movimiento", "AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Convertir “tengo que moverme” en plan ejecutable (si–entonces) y reforzar cumplimiento. Ideal en preparación/acción para aumentar autoeficacia.",
+      "refs": ["Gollwitzer (1999).", "Kazdin (2001).", "Prochaska, Norcross, & DiClemente (1994)."]
+    },
+    {
+      "nombre": "VB – Alimentación: registro breve + metas mínimas (sin perfeccionismo)",
+      "codigo": "m_ttm_vb_alimentacion_registro",
+      "procesos": ["VB_alimentacion", "N_metacognicion", "AG_compromisoConductual"],
+      "texto": "Registro mínimo (patrón real) + meta mínima viable para estabilizar energía/irritabilidad. Se evita exigir “dieta ideal” al inicio del proceso.",
+      "refs": ["Kazdin (2001).", "Prochaska, Norcross, & DiClemente (1994)."]
+    }
+  ]
+}

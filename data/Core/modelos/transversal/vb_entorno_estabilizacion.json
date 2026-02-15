@@ -1,0 +1,167 @@
+{
+ "id": "vb_entorno_estabilizacion",
+  "grupo": "Transversal",
+  "label": "Modelo de Estabilización del Entorno Vital",
+  "year": "1990–actualidad",
+  "autores": "Judith Herman; desarrollos en trauma-informed care y salud mental comunitaria",
+
+  "influencias": [
+    "Trauma-informed care",
+    "Case management clínico",
+    "Modelo biopsicosocial",
+    "Psicoterapia contextual",
+    "Prevención de recaídas (contexto)"
+  ],
+
+  "descripcion": "El Modelo de Estabilización del Entorno Vital sostiene que la psicoterapia solo puede desplegar procesos profundos de cambio cuando existe un umbral mínimo de estabilidad externa. En contextos de amenaza persistente —violencia, precariedad extrema, inestabilidad habitacional, crisis económicas repetidas o ausencia total de red— el sistema psicológico del paciente permanece orientado a la supervivencia inmediata. En estas condiciones, la terapia tiende a convertirse en una intervención reactiva y de contención, con escasa capacidad para promover simbolización, elaboración emocional o reorganización narrativa sostenida (Herman, 1992; SAMHSA, 2014).\n\nEl objetivo del modelo no es “mejorar la vida” ni alcanzar bienestar subjetivo, sino establecer una Estabilidad Mínima Suficiente (EMS): un conjunto acotado de condiciones externas que permita continuidad terapéutica, reducción de amenazas inmediatas y un mínimo de previsibilidad cotidiana. Esta EMS no se define en términos ideales ni estructurales, sino como un umbral funcional que haga posible la regulación emocional, el compromiso con tareas terapéuticas y la toma de decisiones no reactivas (Herman, 2015; Rapp & Goscha, 2012).\n\nDentro de la arquitectura MJPS, este modelo fundamenta el subproceso VB_entorno como condición de viabilidad clínica.",
+
+  "mjps": ["VB", "RE", "AG", "R", "RF"],
+
+  "refs": [
+    "Herman, J. L. (1992). Trauma and Recovery. Basic Books.",
+    "Herman, J. L. (2015). Trauma and Recovery (2nd ed.). Basic Books.",
+    "SAMHSA (2014). Trauma-Informed Care in Behavioral Health Services.",
+    "Rapp, C. A., & Goscha, R. J. (2012). The Strengths Model. Oxford University Press.",
+    "Marlatt, G. A., & Gordon, J. R. (1985). Relapse Prevention. Guilford Press."
+  ],
+
+  "procedimientos": [
+
+    {
+      "nombre": "Evaluar VB_entorno (umbral de estabilidad)",
+      "codigo": "p_vb_entorno_evaluacion",
+      "procesos": ["VB_entorno", "N_metacognicion"],
+      "texto": "Procedimiento de evaluación sistemática del entorno vital que analiza hasta qué punto las condiciones externas interfieren con la regulación, la continuidad y la capacidad de aprovechamiento de la psicoterapia.",
+      "refs": [
+        "Herman, J. L. (1992).",
+        "SAMHSA (2014)."
+      ]
+    },
+
+    {
+      "nombre": "Definir Estabilidad Mínima Suficiente (EMS) y acordarla",
+      "codigo": "p_vb_entorno_ems",
+      "procesos": ["VB_entorno", "AG_tomaDecisiones", "R_acuerdoTerapia"],
+      "texto": "Intervención colaborativa orientada a definir qué condiciones mínimas deben cumplirse para que la terapia sea viable.",
+      "refs": [
+        "Herman, J. L. (2015).",
+        "Rapp, C. A., & Goscha, R. J. (2012)."
+      ]
+    },
+
+    {
+      "nombre": "Triage clínico: estabilización antes que profundización",
+      "codigo": "p_vb_entorno_triage",
+      "procesos": ["VB_entorno", "AG_tomaDecisiones", "RF_crisis"],
+      "texto": "Procedimiento decisional mediante el cual el terapeuta modula explícitamente el tipo de intervención según el nivel de estabilidad.",
+      "refs": [
+        "Herman, J. L. (1992).",
+        "SAMHSA (2014)."
+      ]
+    },
+
+    {
+      "nombre": "Activar apoyos y coordinar recursos",
+      "codigo": "p_vb_entorno_recursos",
+      "procesos": ["VB_entorno", "R_coregulacion", "AG_compromisoConductual"],
+      "texto": "Intervención orientada a identificar, activar y coordinar apoyos externos.",
+      "refs": [
+        "Rapp, C. A., & Goscha, R. J. (2012).",
+        "SAMHSA (2014)."
+      ]
+    },
+
+    {
+      "nombre": "Plan si–entonces para crisis de entorno",
+      "codigo": "p_vb_entorno_si_entonces",
+      "procesos": ["VB_entorno", "AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Procedimiento de planificación anticipatoria para traducir riesgos en respuestas ejecutables.",
+      "refs": [
+        "SAMHSA (2014).",
+        "Marlatt, G. A., & Gordon, J. R. (1985)."
+      ]
+    },
+
+    {
+      "nombre": "Revisión periódica de VB_entorno",
+      "codigo": "p_vb_entorno_reevaluacion",
+      "procesos": ["VB_entorno", "N_metacognicion", "AG_tomaDecisiones"],
+      "texto": "Procedimiento de seguimiento de la estabilidad contextual.",
+      "refs": [
+        "Herman, J. L. (2015).",
+        "SAMHSA (2014)."
+      ]
+    }
+
+  ],
+
+  "micros": [
+
+    {
+      "nombre": "Mapa rápido de estabilidad del entorno (5 dominios)",
+      "codigo": "m_vb_entorno_mapa5",
+      "procesos": ["VB_entorno", "N_metacognicion"],
+      "texto": "Cribado rápido de cinco dominios clave del entorno.",
+      "refs": [
+        "SAMHSA (2014).",
+        "Herman, J. L. (1992)."
+      ]
+    },
+
+    {
+      "nombre": "Reducir demanda terapéutica cuando EMS no se cumple",
+      "codigo": "m_vb_entorno_bajarDemanda",
+      "procesos": ["VB_entorno", "R_acuerdoTerapia"],
+      "texto": "Ajuste microestratégico de exigencia terapéutica.",
+      "refs": [
+        "Herman, J. L. (2015).",
+        "SAMHSA (2014)."
+      ]
+    },
+
+    {
+      "nombre": "Microestabilidades",
+      "codigo": "m_vb_entorno_microestabilidades",
+      "procesos": ["VB_entorno", "AG_compromisoConductual"],
+      "texto": "Creación deliberada de islas mínimas de predictibilidad.",
+      "refs": [
+        "Rapp, C. A., & Goscha, R. J. (2012).",
+        "SAMHSA (2014)."
+      ]
+    },
+
+    {
+      "nombre": "Control de estímulos del entorno",
+      "codigo": "m_vb_entorno_controlEstimulos",
+      "procesos": ["VB_entorno", "AG_compromisoConductual", "RE_modulacion"],
+      "texto": "Reducción progresiva de estímulos desreguladores.",
+      "refs": [
+        "Marlatt, G. A., & Gordon, J. R. (1985).",
+        "SAMHSA (2014)."
+      ]
+    },
+
+    {
+      "nombre": "Plan de continuidad terapéutica en caos",
+      "codigo": "m_vb_entorno_continuidad",
+      "procesos": ["VB_entorno", "AG_compromisoConductual", "R_acuerdoTerapia"],
+      "texto": "Definición explícita de mínimos de continuidad.",
+      "refs": [
+        "Herman, J. L. (1992).",
+        "SAMHSA (2014)."
+      ]
+    },
+
+    {
+      "nombre": "Validación estructural de límites",
+      "codigo": "m_vb_entorno_validacionLimites",
+      "procesos": ["VB_entorno", "R_coregulacion"],
+      "texto": "Nombrar límites reales de la psicoterapia.",
+      "refs": [
+        "Herman, J. L. (1992).",
+        "SAMHSA (2014)."
+      ]
+    }
+
+  ]
+}

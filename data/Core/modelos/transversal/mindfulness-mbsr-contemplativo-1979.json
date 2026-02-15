@@ -1,0 +1,205 @@
+{
+  "id": "mindfulness-mbsr-contemplativo-1979",
+  "grupo": "Transversal",
+  "label": "Mindfulness (MBSR y tradición contemplativa)",
+  "year": 1979,
+  "importance": 3,
+  "autores": "Jon Kabat-Zinn",
+  "universidad": "University of Massachusetts Medical School",
+  "ciudad": "Worcester, Massachusetts",
+  "pais": "EE. UU.",
+  "lat": 42.262593,
+  "lon": -71.802293,
+
+  "descripcion": "Mindfulness, tal como se articula en el programa Mindfulness-Based Stress Reduction (MBSR) y en la tradición contemplativa secularizada, constituye un conjunto de prácticas experienciales orientadas al entrenamiento sistemático de la atención plena: una conciencia abierta, intencional y no enjuiciadora de la experiencia presente. Más que un modelo psicoterapéutico autónomo, mindfulness funciona como un enfoque transversal que potencia procesos psicológicos fundamentales como el descentramiento, la regulación atencional, la tolerancia al malestar y la autocompasión. Su integración clínica se ha extendido a múltiples modelos contemporáneos —ACT, DBT, MBCT, CFT y enfoques somáticos— actuando como catalizador de cambio más que como intervención explicativa del sufrimiento.",
+
+  "influencias": [
+    "Prácticas contemplativas",
+    "Budismo secular"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "Mindfulness se apoya en una epistemología fenomenológica y experiencial, donde la realidad psicológica se conoce a través de la observación directa de la experiencia tal como se manifiesta momento a momento. El conocimiento no se deriva primariamente de la interpretación cognitiva, sino del contacto consciente y sostenido con los fenómenos internos y externos. El cambio se produce al modificar la relación con la experiencia, más que al alterar su contenido.",
+    "teoriaFormal": "Desde una perspectiva formal, mindfulness concibe el sufrimiento psicológico como resultado de la fusión con los contenidos mentales, la evitación experiencial y la reactividad automática. El self no se entiende como una entidad fija, sino como un flujo de experiencias observables. El cambio emerge cuando la persona desarrolla una capacidad estable de observación, aceptación y respuesta flexible ante pensamientos, emociones y sensaciones corporales.",
+    "teoriaClinica": "La conceptualización clínica se centra en evaluar el grado de conciencia, reactividad, evitación y fusión experiencial del paciente. La intervención prioriza el entrenamiento atencional y la actitud de aceptación para ampliar la ventana de tolerancia y favorecer respuestas más reguladas. El progreso se evalúa por el aumento de presencia, descentramiento y capacidad de sostener la experiencia sin reactividad excesiva."
+  },
+
+  "mjps": ["RF", "RE", "AP", "N", "I"],
+
+"procedimientos": [
+  {
+    "nombre": "Entrenamiento en atención plena a la respiración",
+    "codigo": "p_mind_resp_atencion_plena",
+    "procesos": ["RF_resp", "N_regulacionAtencional", "RI_mindfulnessSelf"],
+    "texto": "Procedimiento básico de mindfulness que utiliza la respiración como ancla atencional para estabilizar la conciencia en el momento presente. A través de la observación deliberada del ritmo respiratorio, se entrena la capacidad de redirigir la atención, reducir la dispersión mental y modular la activación fisiológica. Constituye una base transversal para la regulación autonómica y el desarrollo de presencia consciente. (Kabat-Zinn, 1990; Kabat-Zinn, 2003)."
+  },
+  {
+    "nombre": "Body scan (exploración corporal consciente)",
+    "codigo": "p_mind_body_scan",
+    "procesos": ["AP_concienciaCorporal", "RE_toleranciaMalestar", "RI_mindfulnessSelf"],
+    "texto": "Procedimiento experiencial que consiste en recorrer sistemáticamente las sensaciones corporales con una actitud abierta y no enjuiciadora. El body scan favorece la reconexión cuerpo–mente, incrementa la sensibilidad interoceptiva y entrena la capacidad de sostener sensaciones agradables y desagradables sin evitación, ampliando la ventana de tolerancia emocional. (Kabat-Zinn, 1990)."
+  },
+  {
+    "nombre": "Observación consciente de pensamientos",
+    "codigo": "p_mind_pensamientos",
+    "procesos": ["N_descentramiento", "RE_modulacion", "RI_mindfulnessSelf"],
+    "texto": "Procedimiento orientado a desarrollar una relación observacional con los pensamientos, percibiéndolos como eventos mentales transitorios y no como hechos o mandatos. Esta práctica reduce la fusión cognitiva, disminuye reactividad emocional asociada al contenido mental y facilita respuestas más flexibles frente a rumiación y autocrítica. (Kabat-Zinn, 2003; Segal et al., 2002)."
+  },
+  {
+    "nombre": "Observación consciente de emociones",
+    "codigo": "p_mind_emociones",
+    "procesos": ["RE_rotulacion", "RE_toleranciaMalestar", "RI_mindfulnessSelf"],
+    "texto": "Procedimiento que entrena la capacidad de reconocer, nombrar y sostener emociones tal como emergen en la experiencia, sin intentar suprimirlas ni amplificarlas. Facilita alfabetización emocional, reduce evitación experiencial y promueve una regulación basada en aceptación en lugar de control reactivo. (Kabat-Zinn, 1990; Hanh, 1991)."
+  },
+  {
+    "nombre": "Práctica de aceptación y no juicio",
+    "codigo": "p_mind_aceptacion",
+    "procesos": ["RE_aceptacion", "N_reformulacion", "RI_mindfulnessSelf"],
+    "texto": "Procedimiento actitudinal central de mindfulness que entrena una disposición de apertura y no juicio hacia la experiencia interna y externa. La aceptación reduce la lucha secundaria contra el malestar, modifica el significado atribuido a la experiencia y actúa como modulador transversal del sufrimiento psicológico. (Kabat-Zinn, 2003; Hanh, 1991)."
+  },
+  {
+    "nombre": "Mindfulness en movimiento (yoga consciente / caminar atento)",
+    "codigo": "p_mind_movimiento",
+    "procesos": ["AP_concienciaCorporal", "RF_ground", "RI_mindfulnessSelf"],
+    "texto": "Procedimiento que integra atención plena con movimiento corporal suave, favoreciendo regulación somática, enraizamiento y presencia encarnada. Especialmente útil en pacientes con dificultad para la práctica sentada o con activación elevada, facilita el acceso progresivo a estados de regulación y conciencia corporal segura. (Kabat-Zinn, 1990)."
+  },
+  {
+    "nombre": "Práctica de autocompasión consciente",
+    "codigo": "p_mind_autocompasion",
+    "procesos": ["RI_autocompasion", "RE_aceptacion", "I_autoimagen"],
+    "texto": "Procedimiento derivado de la tradición contemplativa que cultiva una actitud amable y comprensiva hacia el propio sufrimiento. Reduce autocrítica, vergüenza y hostilidad interna, favoreciendo una relación más segura con uno mismo y fortaleciendo recursos de regulación emocional y cuidado del self. (Hanh, 1991; Neff, 2003)."
+  },
+  {
+    "nombre": "Aplicación informal de mindfulness en la vida cotidiana",
+    "codigo": "p_mind_informal",
+    "procesos": ["AG_compromisoConductual", "N_generalizacion", "RI_mindfulnessSelf"],
+    "texto": "Procedimiento que traslada la práctica de atención plena a actividades cotidianas (comer, ducharse, comunicarse), promoviendo generalización del aprendizaje y continuidad del proceso fuera de la sesión. Facilita integración del mindfulness como forma de estar en la experiencia y no solo como ejercicio formal. (Kabat-Zinn, 1990)."
+  }
+],
+
+
+
+"micros": [
+  {
+    "nombre": "Volver amablemente al ancla atencional",
+    "codigo": "m_mind_volver_ancla",
+    "procesos": ["RI_mindfulnessSelf", "N_regulacionAtencional", "RE_aceptacion"],
+    "texto": "Microintervención que consiste en redirigir la atención al objeto elegido (respiración, cuerpo) cada vez que se detecta distracción, con una actitud amable y no punitiva. Entrena regulación atencional sostenida y reduce autocrítica asociada a la dispersión mental, fortaleciendo la capacidad de presencia estable. (Kabat-Zinn, 1990)."
+  },
+  {
+    "nombre": "Nombrar mentalmente la experiencia",
+    "codigo": "m_mind_rotulacion",
+    "procesos": ["RI_mindfulnessSelf", "RE_rotulacion", "N_metacognicion"],
+    "texto": "Microintervención que introduce etiquetas simples (“pensando”, “tensión”, “tristeza”) para identificar la experiencia en curso sin elaborarla narrativamente. Facilita toma de distancia, clarifica estados internos y reduce fusión con el contenido mental o emocional. (Kabat-Zinn, 2003)."
+  },
+  {
+    "nombre": "Permitir la sensación tal como es",
+    "codigo": "m_mind_permitir",
+    "procesos": ["RI_mindfulnessSelf", "RE_toleranciaMalestar", "RE_aceptacion"],
+    "texto": "Microintervención experiencial que invita a dejar estar una sensación o emoción sin intentar cambiarla, controlarla o evitarla. Amplía la ventana de tolerancia y reduce reactividad automática frente al malestar, favoreciendo regulación basada en aceptación. (Hanh, 1991; Kabat-Zinn, 1990)."
+  },
+  {
+    "nombre": "Observar el pensamiento como evento mental",
+    "codigo": "m_mind_evento_mental",
+    "procesos": ["RI_mindfulnessSelf", "N_descentramiento", "N_reformulacion"],
+    "texto": "Microintervención que guía a observar pensamientos como fenómenos transitorios que aparecen y desaparecen en la conciencia. Disminuye fusión cognitiva, debilita el impacto literal del pensamiento y facilita respuestas más flexibles ante rumiación o juicio interno. (Segal et al., 2002; Kabat-Zinn, 2003)."
+  },
+  {
+    "nombre": "Explorar la sensación con curiosidad",
+    "codigo": "m_mind_curiosidad_sensacion",
+    "procesos": ["RI_mindfulnessSelf", "AP_concienciaCorporal", "N_metacognicion"],
+    "texto": "Microintervención que orienta la atención a cualidades específicas de la sensación corporal (intensidad, temperatura, movimiento) desde una actitud exploratoria. Reduce evitación somática y transforma la experiencia corporal en una fuente de información reguladora. (Kabat-Zinn, 1990)."
+  },
+  {
+    "nombre": "Detectar impulso y pausar la respuesta",
+    "codigo": "m_mind_pausa_impulso",
+    "procesos": ["RI_mindfulnessSelf", "RE_modulacion", "AG_inhibicion"],
+    "texto": "Microintervención que identifica el surgimiento de un impulso reactivo (huir, atacar, evitar) y crea un breve espacio consciente antes de actuar. Este microespacio facilita elección conductual y disminuye respuestas automáticas desadaptativas. (Kabat-Zinn, 2003)."
+  },
+  {
+    "nombre": "Anclar al cuerpo para estabilizar activación",
+    "codigo": "m_mind_anclaje_cuerpo",
+    "procesos": ["RI_mindfulnessSelf", "RF_ground", "AP_concienciaCorporal"],
+    "texto": "Microintervención somática que dirige la atención a puntos de contacto o apoyo corporal para reducir activación excesiva o disociación. Favorece regulación autonómica y sensación de seguridad corporal en momentos de sobrecarga emocional. (Kabat-Zinn, 1990)."
+  },
+  {
+    "nombre": "Ampliar el campo de conciencia",
+    "codigo": "m_mind_conciencia_abierta",
+    "procesos": ["RI_mindfulnessSelf", "N_regulacionAtencional", "I_perspectiva"],
+    "texto": "Microintervención que pasa de un foco atencional estrecho a una conciencia abierta que incluye múltiples aspectos de la experiencia. Reduce fijación rígida y promueve una perspectiva más amplia e integradora del momento presente. (Kabat-Zinn, 2003)."
+  },
+  {
+    "nombre": "Dirigir una frase amable hacia uno mismo",
+    "codigo": "m_mind_frase_amable",
+    "procesos": ["RI_autocompasion", "I_autoimagen", "RE_aceptacion"],
+    "texto": "Microintervención de autocompasión que introduce frases breves de amabilidad (“que pueda estar en paz”) ante el sufrimiento. Modula autocrítica, fortalece un tono interno cuidador y apoya regulación emocional en momentos de dificultad. (Hanh, 1991; Neff, 2003)."
+  },
+  {
+    "nombre": "Reconectar con la experiencia presente cotidiana",
+    "codigo": "m_mind_cotidiano",
+    "procesos": ["RI_mindfulnessSelf", "N_generalizacion", "AG_compromisoConductual"],
+    "texto": "Microintervención que invita a aplicar atención plena a una acción concreta del día a día, favoreciendo transferencia y consolidación del aprendizaje fuera de la práctica formal. Refuerza continuidad entre sesión y vida cotidiana. (Kabat-Zinn, 1990)."
+  }
+],
+
+
+
+  "ideasPrincipales": [
+
+  {
+    "id": "idea_mind_1",
+    "titulo": "El cambio terapéutico ocurre al modificar la relación con la experiencia",
+    "desarrollo": "Mindfulness sostiene que el sufrimiento psicológico no depende únicamente del contenido de pensamientos, emociones o sensaciones, sino de la relación reactiva que se establece con ellos. El entrenamiento en atención plena modifica esta relación —de fusión y evitación a observación y aceptación— generando una reducción del malestar incluso cuando el contenido experiencial permanece. (Kabat-Zinn, 1990; Kabat-Zinn, 2003)."
+  },
+
+  {
+    "id": "idea_mind_2",
+    "titulo": "La conciencia no enjuiciadora es una habilidad entrenable",
+    "desarrollo": "La atención plena no se concibe como un rasgo estable o espiritual, sino como una capacidad psicológica que puede entrenarse sistemáticamente mediante práctica deliberada. A través de ejercicios formales e informales, las personas desarrollan una conciencia más estable, abierta y flexible frente a la experiencia presente. (Kabat-Zinn, 1990)."
+  },
+
+  {
+    "id": "idea_mind_3",
+    "titulo": "La aceptación reduce la reactividad y la lucha secundaria",
+    "desarrollo": "Mindfulness distingue entre el malestar primario inherente a la experiencia humana y el sufrimiento secundario generado por la resistencia, el juicio y la evitación. La práctica de aceptación consciente reduce esta lucha secundaria, ampliando la ventana de tolerancia y facilitando una regulación emocional más adaptativa. (Hanh, 1991; Kabat-Zinn, 2003)."
+  },
+
+  {
+    "id": "idea_mind_4",
+    "titulo": "Los pensamientos son eventos mentales, no hechos",
+    "desarrollo": "Un principio central de mindfulness es el descentramiento cognitivo: la capacidad de observar los pensamientos como fenómenos transitorios de la mente. Esta perspectiva debilita la fusión cognitiva, reduce rumiación y autocrítica, y permite respuestas más flexibles frente al contenido mental. (Segal et al., 2002; Kabat-Zinn, 2003)."
+  },
+
+  {
+    "id": "idea_mind_5",
+    "titulo": "El cuerpo es una vía primaria de regulación y conciencia",
+    "desarrollo": "Mindfulness otorga un papel central a la experiencia corporal como ancla de la atención y fuente de regulación emocional. La conciencia interoceptiva permite detectar señales tempranas de activación o desconexión, favoreciendo autorregulación y sensación de seguridad encarnada. (Kabat-Zinn, 1990)."
+  },
+
+  {
+    "id": "idea_mind_6",
+    "titulo": "La práctica continuada transforma patrones automáticos",
+    "desarrollo": "El enfoque mindfulness enfatiza que los cambios clínicamente relevantes emergen de la práctica repetida y sostenida, no de intervenciones puntuales. La repetición deliberada modifica patrones automáticos de atención, reactividad y evitación, generando cambios estables en la forma de responder a la experiencia. (Kabat-Zinn, 1990; Kabat-Zinn, 2003)."
+  },
+
+  {
+    "id": "idea_mind_7",
+    "titulo": "La autocompasión es un regulador clave del sufrimiento",
+    "desarrollo": "La tradición contemplativa integrada en mindfulness subraya la importancia de una actitud compasiva hacia el propio sufrimiento. La autocompasión reduce vergüenza, autocrítica y hostilidad interna, facilitando una relación más segura con uno mismo y apoyando procesos de regulación emocional. (Hanh, 1991; Neff, 2003)."
+  },
+
+  {
+    "id": "idea_mind_8",
+    "titulo": "Mindfulness actúa como enfoque transversal, no como modelo explicativo cerrado",
+    "desarrollo": "Mindfulness no pretende explicar de forma exhaustiva la psicopatología, sino potenciar procesos psicológicos básicos que facilitan el cambio en múltiples modelos terapéuticos. Su valor clínico reside en su capacidad de integrarse transversalmente como catalizador de regulación, conciencia y flexibilidad psicológica. (Kabat-Zinn, 2003)."
+  }
+
+],
+
+
+  "refs": [
+    "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+    "Kabat-Zinn, J. (2003). Mindfulness-Based Interventions in Context. Clinical Psychology: Science and Practice.",
+    "Hanh, T. N. (1991). The Miracle of Mindfulness. Boston: Beacon Press."
+  ]
+}
