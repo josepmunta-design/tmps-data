@@ -3248,20 +3248,38 @@ const GH_BASE = 'https://josepmunta-design.github.io/tmps-data/data';
 
 async function fetchJson(url){
   const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), 12000); // 12s
+  const t = setTimeout(() => ctrl.abort(), 25000); // ✅ 25s (móvil + redes lentas)
+
+  // ✅ cache-buster para evitar “me quedé con un 404/HTML cacheado”
+  const sep = url.includes('?') ? '&' : '?';
+  const bustUrl = `${url}${sep}v=${Date.now()}`;
 
   try{
-    const res = await fetch(url, { cache: 'force-cache', signal: ctrl.signal });
-  if(!res.ok){
-  console.warn(`No encontrado: ${url}`);
-  return null;
-}
+    const res = await fetch(bustUrl, {
+      cache: 'no-store',                 // ✅ no uses force-cache aquí
+      signal: ctrl.signal,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if(!res.ok){
+      console.warn(`No encontrado: ${url} (HTTP ${res.status})`);
+      return null;
+    }
+
+    // ✅ si GitHub Pages te devolviese HTML (caché / error), esto lo detecta
+    const ct = res.headers.get('content-type') || '';
+    if(!ct.includes('application/json')){
+      const txt = await res.text();
+      console.warn('Respuesta no-JSON en:', url, 'CT=', ct, 'Body head=', txt.slice(0,120));
+      return null;
+    }
 
     return await res.json();
   } finally {
     clearTimeout(t);
   }
 }
+
 
 function gh(path){ return `${GH_BASE}/${path}`; }
 
@@ -4685,7 +4703,8 @@ let FOTOS = null;
 async function loadFotos() {
   if (FOTOS) return FOTOS;
   try {
-    const res = await fetch('https://josepmunta-design.github.io/tmps-data/data/Core/fotos/foto.json');
+    const res = await fetch('https://josepmunta-design.github.io/tmps-data/data/Core/fotos/foto.json?v=' + Date.now(), { cache:'no-store' });
+
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     FOTOS = await res.json();
     console.log('FOTOS cargado:', FOTOS); // ← para depurar
