@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-15T09:49:13.315Z",
-  "totalModelos": 104,
+  "updatedAt": "2026-02-15T09:50:01.700Z",
+  "totalModelos": 108,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -4357,6 +4357,161 @@
           "codigo": "m_whitaker_no_dicho",
           "nombre": "Nombrar lo no dicho",
           "texto": "Poner palabras a tensiones implícitas para hacerlas vivibles y transformables.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_kublerross69",
+      "modelLabel": "Modelo de Kübler-Ross (estados frecuentes ante la pérdida)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Elisabeth Kübler-Ross",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_kr_psicoeducacion",
+          "nombre": "Psicoeducación de las respuestas emocionales",
+          "texto": "Introducir el modelo de estados emocionales como vocabulario clínico para identificar y nombrar reacciones de negación, ira, negociación, tristeza y aceptación, aclarando que no se trata de “fases” obligatorias ni lineales, sino de respuestas posibles que pueden aparecer, coexistir o repetirse. Esto normaliza la experiencia y reduce autojuicio.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kr_mapeo",
+          "nombre": "Mapeo de experiencias emocionales",
+          "texto": "Explorar con el paciente qué respuestas emocionales ha experimentado, con qué intensidad y en qué contextos, diferenciando experiencias que regulan de aquellas que bloquean. Este mapeo ayuda a detectar rigideces y planificar intervenciones en procesos ED subyacentes.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kr_negociacion",
+          "nombre": "Explorar acuerdos de negociación",
+          "texto": "Detectar y explorar expresiones de negociación para clarificar su función reguladora sin reforzar ilusiones de reversión.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mindfulness-mbsr-contemplativo-1979",
+      "modelLabel": "Mindfulness (MBSR y tradición contemplativa)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Jon Kabat-Zinn",
+      "modelYear": 1979,
+      "items": [
+        {
+          "codigo": "m_mind_rotulacion",
+          "nombre": "Nombrar mentalmente la experiencia",
+          "texto": "Microintervención que introduce etiquetas simples (“pensando”, “tensión”, “tristeza”) para identificar la experiencia en curso sin elaborarla narrativamente. Facilita toma de distancia, clarifica estados internos y reduce fusión con el contenido mental o emocional. (Kabat-Zinn, 2003).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mind_curiosidad_sensacion",
+          "nombre": "Explorar la sensación con curiosidad",
+          "texto": "Microintervención que orienta la atención a cualidades específicas de la sensación corporal (intensidad, temperatura, movimiento) desde una actitud exploratoria. Reduce evitación somática y transforma la experiencia corporal en una fuente de información reguladora. (Kabat-Zinn, 1990).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "p_ttm_estadio",
+          "nombre": "Ubicar estadio de cambio",
+          "texto": "Identificar el estadio de cambio respecto a una conducta concreta (precontemplación, contemplación, preparación, acción, mantenimiento o recaída). Evita intervenciones desajustadas y protege la alianza al respetar el momento real del paciente.\n\n• Objetivo clínico: alinear intervención y expectativas con el estadio\n• Se observa: menos confrontación improductiva\n• Funciona cuando: el estadio se revisa periódicamente\n• Error frecuente: asumir “motivación” donde hay ambivalencia",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_balance",
+          "nombre": "Balance decisional (pros y contras)",
+          "texto": "Explorar beneficios y costes de mantener la conducta y de cambiarla. Hace visible la ambivalencia y facilita una decisión apropiada del paciente, no inducida por presión externa.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_registro",
+          "nombre": "Autoobservación y registro breve (self-monitoring)",
+          "texto": "Registro simple de episodios (antecedentes, emoción, conducta, consecuencia). Aumenta conciencia, detecta patrones y ofrece datos para decisiones realistas (especialmente en VB).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_recaidas",
+          "nombre": "Prevención de recaídas y reciclaje",
+          "texto": "Entender la recaída como parte del proceso, no como fracaso. Analizar vulnerabilidades, disparadores y “decisiones aparentemente irrelevantes”, ajustando plan y estadio.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ttm_vb_estadio",
+          "nombre": "Evaluar estadio por conducta VB (no “motivación general”)",
+          "texto": "Evaluación específica del estadio aplicado a cada condición basal relevante. Permite intervenciones finas: acción en sueño, contemplación en alcohol, precontemplación en cannabis, etc.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_registro",
+          "nombre": "VB – Sustancias: feedback de patrón (registro breve + mapa de disparadores)",
+          "texto": "Registrar episodios (disparadores, emoción, contexto, consecuencia) para convertir el “consumo” en patrón observable. Base para decisiones realistas y para prevención de recaídas.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_balance",
+          "nombre": "VB – Sustancias: ambivalencia y balance decisional (con ganancias del consumo)",
+          "texto": "Balance pros/contras incorporando beneficios percibidos (alivio, pertenencia, anestesia emocional) y costes clínicos (bloqueo emocional, inestabilidad, recaídas sintomáticas).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_recaida",
+          "nombre": "VB – Sustancias: recaída/reciclaje sin ruptura (análisis + ajuste de plan)",
+          "texto": "Recaída como información: disparadores, vulnerabilidades y decisiones previas. Se ajusta el plan y el estadio sin castigo ni banalización, cuidando continuidad y alianza.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_alimentacion_registro",
+          "nombre": "VB – Alimentación: registro breve + metas mínimas (sin perfeccionismo)",
+          "texto": "Registro mínimo (patrón real) + meta mínima viable para estabilizar energía/irritabilidad. Se evita exigir “dieta ideal” al inicio del proceso.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "vb_entorno_estabilizacion",
+      "modelLabel": "Modelo de Estabilización del Entorno Vital",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Judith Herman; desarrollos en trauma-informed care y salud mental comunitaria",
+      "modelYear": "1990–actualidad",
+      "items": [
+        {
+          "codigo": "p_vb_entorno_evaluacion",
+          "nombre": "Evaluar VB_entorno (umbral de estabilidad)",
+          "texto": "Procedimiento de evaluación sistemática del entorno vital que analiza hasta qué punto las condiciones externas interfieren con la regulación, la continuidad y la capacidad de aprovechamiento de la psicoterapia.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_vb_entorno_reevaluacion",
+          "nombre": "Revisión periódica de VB_entorno",
+          "texto": "Procedimiento de seguimiento de la estabilidad contextual.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_vb_entorno_mapa5",
+          "nombre": "Mapa rápido de estabilidad del entorno (5 dominios)",
+          "texto": "Cribado rápido de cinco dominios clave del entorno.",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

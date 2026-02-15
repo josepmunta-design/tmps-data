@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-15T09:49:13.315Z",
-  "totalModelos": 99,
+  "updatedAt": "2026-02-15T09:50:01.700Z",
+  "totalModelos": 103,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -3066,6 +3066,182 @@
           "codigo": "m_whitaker_descolocar",
           "nombre": "Descolocación experiencial",
           "texto": "Intervenciones inesperadas que rompen patrones previsibles y abren nuevas posibilidades de respuesta.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_kublerross69",
+      "modelLabel": "Modelo de Kübler-Ross (estados frecuentes ante la pérdida)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Elisabeth Kübler-Ross",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_kr_psicoeducacion",
+          "nombre": "Psicoeducación de las respuestas emocionales",
+          "texto": "Introducir el modelo de estados emocionales como vocabulario clínico para identificar y nombrar reacciones de negación, ira, negociación, tristeza y aceptación, aclarando que no se trata de “fases” obligatorias ni lineales, sino de respuestas posibles que pueden aparecer, coexistir o repetirse. Esto normaliza la experiencia y reduce autojuicio.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kr_metaforas",
+          "nombre": "Uso de metáforas curativas",
+          "texto": "Utilizar metáforas extraídas de los escritos y talleres de Kübler-Ross para facilitar un entendimiento más rico del dolor emocional que reduzca miedo y aumente sentido compartido.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kr_apertura_ira",
+          "nombre": "Apertura a la ira",
+          "texto": "Facilitar la expresión segura de rabia o protesta ante la pérdida, validando que no es irresponsable ni patológico, sino una respuesta humana al dolor.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kr_acompanar_tristeza",
+          "nombre": "Acompañar tristeza profunda",
+          "texto": "Ofrecer presencia validante en momentos de tristeza profunda, normalizando el llanto y la retirada energética.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "mindfulness-mbsr-contemplativo-1979",
+      "modelLabel": "Mindfulness (MBSR y tradición contemplativa)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Jon Kabat-Zinn",
+      "modelYear": 1979,
+      "items": [
+        {
+          "codigo": "p_mind_pensamientos",
+          "nombre": "Observación consciente de pensamientos",
+          "texto": "Procedimiento orientado a desarrollar una relación observacional con los pensamientos, percibiéndolos como eventos mentales transitorios y no como hechos o mandatos. Esta práctica reduce la fusión cognitiva, disminuye reactividad emocional asociada al contenido mental y facilita respuestas más flexibles frente a rumiación y autocrítica. (Kabat-Zinn, 2003; Segal et al., 2002).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mind_pausa_impulso",
+          "nombre": "Detectar impulso y pausar la respuesta",
+          "texto": "Microintervención que identifica el surgimiento de un impulso reactivo (huir, atacar, evitar) y crea un breve espacio consciente antes de actuar. Este microespacio facilita elección conductual y disminuye respuestas automáticas desadaptativas. (Kabat-Zinn, 2003).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "p_ttm_procesosCambio",
+          "nombre": "Activar procesos de cambio adecuados al estadio",
+          "texto": "Seleccionar procesos de cambio según el estadio: aumentar conciencia y reevaluación en estadios tempranos; compromiso, sustitución conductual y control de estímulos en acción; refuerzo y prevención de recaídas en mantenimiento. Aporta una lógica clara de “qué toca ahora”.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_meta_minima",
+          "nombre": "Regla de “meta mínima” y escalado de objetivos",
+          "texto": "Definir una meta mínima viable (MMV) en preparación: lo suficientemente pequeña para ser cumplible, pero clínicamente significativa. Se escala tras evidencia de cumplimiento (acción → mantenimiento).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_refuerzo",
+          "nombre": "Manejo de reforzadores (refuerzo y recompensas)",
+          "texto": "Planificar refuerzos inmediatos por conducta objetivo (o por abstinencia/reducción) y retirar refuerzos inadvertidos de la conducta problema. Útil en acción/mantenimiento.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_si_entonces",
+          "nombre": "Implementación “si–entonces” (intenciones de implementación)",
+          "texto": "Convertir intención en plan ejecutable: “Si ocurre X (disparador), entonces haré Y (respuesta alternativa)”. Reduce la brecha entre decisión y acción.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_autoeficacia",
+          "nombre": "Entrenar autoeficacia y manejar tentación",
+          "texto": "Fortalecer capacidad percibida para sostener el cambio y anticipar situaciones de tentación/recaída. Incluye respuestas alternativas, apoyos y planes de contingencia.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_recaidas",
+          "nombre": "Prevención de recaídas y reciclaje",
+          "texto": "Entender la recaída como parte del proceso, no como fracaso. Analizar vulnerabilidades, disparadores y “decisiones aparentemente irrelevantes”, ajustando plan y estadio.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_conciencia",
+          "nombre": "VB – Sustancias: conciencia funcional sin confrontación (precontemplación)",
+          "texto": "Conciencia basada en funcionamiento: efectos en sueño, regulación, memoria, impulsividad, adherencia y capacidad reflexiva. Sin moralizar ni discutir etiquetas diagnósticas.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_si_entonces",
+          "nombre": "VB – Sustancias: “si–entonces” para momentos de riesgo",
+          "texto": "Plan específico: “Si aparece X (ansiedad, fin de semana, llamada de tal persona), entonces haré Y (conducta alternativa + apoyo)”. Reduce recaída impulsiva.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_reduccion",
+          "nombre": "VB – Sustancias: reducción de daño como puente (preparación→acción)",
+          "texto": "Cuando abstinencia no es viable: reducir dosis/frecuencia/contextos de riesgo y evitar combinaciones peligrosas. Se define como avance (no como “fracaso moral”).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_refuerzo",
+          "nombre": "VB – Sustancias: manejo de reforzadores (sustituir refuerzos)",
+          "texto": "Sustituir el refuerzo del consumo por refuerzos alternativos inmediatos (placer, conexión, calma) y planificar recompensas por pasos de cambio. Evita depender solo de motivación.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sueno_estimulos",
+          "nombre": "VB – Sueño: estadio + diseño de entorno (pantallas, horarios, activación)",
+          "texto": "Aplicar estadio al sueño y usar control de estímulos (horario, luz, pantallas, rutina) con metas mínimas viables antes de pedir trabajo emocional profundo.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_movimiento_plan",
+          "nombre": "VB – Movimiento: intención→plan “si–entonces” + refuerzo",
+          "texto": "Convertir “tengo que moverme” en plan ejecutable (si–entonces) y reforzar cumplimiento. Ideal en preparación/acción para aumentar autoeficacia.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "vb_entorno_estabilizacion",
+      "modelLabel": "Modelo de Estabilización del Entorno Vital",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Judith Herman; desarrollos en trauma-informed care y salud mental comunitaria",
+      "modelYear": "1990–actualidad",
+      "items": [
+        {
+          "codigo": "p_vb_entorno_si_entonces",
+          "nombre": "Plan si–entonces para crisis de entorno",
+          "texto": "Procedimiento de planificación anticipatoria para traducir riesgos en respuestas ejecutables.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_vb_entorno_controlEstimulos",
+          "nombre": "Control de estímulos del entorno",
+          "texto": "Reducción progresiva de estímulos desreguladores.",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_acuerdoTerapia",
-  "updatedAt": "2026-02-14T22:30:25.223Z",
-  "totalModelos": 1,
+  "updatedAt": "2026-02-15T09:50:01.700Z",
+  "totalModelos": 2,
   "modelos": [
     {
       "modelId": "ttm_prochaska_diclemente",
@@ -35,6 +35,36 @@
           "codigo": "m_ttm_vb_sustancias_noConsumo",
           "nombre": "VB – Sustancias: no consumo como condición funcional de la terapia",
           "texto": "Cuando el consumo bloquea procesos nucleares (regulación, mentalización, adherencia), se formula el no consumo como condición terapéutica funcional, negociada y explícita.",
+          "sub": "R_acuerdoTerapia",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "vb_entorno_estabilizacion",
+      "modelLabel": "Modelo de Estabilización del Entorno Vital",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Judith Herman; desarrollos en trauma-informed care y salud mental comunitaria",
+      "modelYear": "1990–actualidad",
+      "items": [
+        {
+          "codigo": "p_vb_entorno_ems",
+          "nombre": "Definir Estabilidad Mínima Suficiente (EMS) y acordarla",
+          "texto": "Intervención colaborativa orientada a definir qué condiciones mínimas deben cumplirse para que la terapia sea viable.",
+          "sub": "R_acuerdoTerapia",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_vb_entorno_bajarDemanda",
+          "nombre": "Reducir demanda terapéutica cuando EMS no se cumple",
+          "texto": "Ajuste microestratégico de exigencia terapéutica.",
+          "sub": "R_acuerdoTerapia",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_vb_entorno_continuidad",
+          "nombre": "Plan de continuidad terapéutica en caos",
+          "texto": "Definición explícita de mínimos de continuidad.",
           "sub": "R_acuerdoTerapia",
           "tipo": "micro"
         }

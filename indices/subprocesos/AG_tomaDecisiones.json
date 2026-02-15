@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-15T09:49:13.315Z",
-  "totalModelos": 66,
+  "updatedAt": "2026-02-15T09:50:01.700Z",
+  "totalModelos": 68,
   "modelos": [
     {
       "modelId": "act-hayes-strosahl-wilson-1999",
@@ -1796,6 +1796,87 @@
           "codigo": "p_struct_intensificacion",
           "nombre": "Intensificación",
           "texto": "Aumento deliberado de la intensidad emocional o conductual para hacer visibles patrones rígidos y promover reorganización.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "ttm_prochaska_diclemente",
+      "modelLabel": "Modelo Transteórico del Cambio (TTM)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James O. Prochaska; Carlo C. DiClemente",
+      "modelYear": "1983–actualidad",
+      "items": [
+        {
+          "codigo": "p_ttm_estadio",
+          "nombre": "Ubicar estadio de cambio",
+          "texto": "Identificar el estadio de cambio respecto a una conducta concreta (precontemplación, contemplación, preparación, acción, mantenimiento o recaída). Evita intervenciones desajustadas y protege la alianza al respetar el momento real del paciente.\n\n• Objetivo clínico: alinear intervención y expectativas con el estadio\n• Se observa: menos confrontación improductiva\n• Funciona cuando: el estadio se revisa periódicamente\n• Error frecuente: asumir “motivación” donde hay ambivalencia",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_balance",
+          "nombre": "Balance decisional (pros y contras)",
+          "texto": "Explorar beneficios y costes de mantener la conducta y de cambiarla. Hace visible la ambivalencia y facilita una decisión apropiada del paciente, no inducida por presión externa.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_mi_changeTalk",
+          "nombre": "Elicitar “change talk” y resolver ambivalencia (integración MI)",
+          "texto": "Usar preguntas evocadoras, reflejo y resúmenes estratégicos para aumentar lenguaje de cambio y disminuir lenguaje de mantenimiento. Especialmente útil en contemplación/preparación.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ttm_recaidas",
+          "nombre": "Prevención de recaídas y reciclaje",
+          "texto": "Entender la recaída como parte del proceso, no como fracaso. Analizar vulnerabilidades, disparadores y “decisiones aparentemente irrelevantes”, ajustando plan y estadio.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_balance",
+          "nombre": "VB – Sustancias: ambivalencia y balance decisional (con ganancias del consumo)",
+          "texto": "Balance pros/contras incorporando beneficios percibidos (alivio, pertenencia, anestesia emocional) y costes clínicos (bloqueo emocional, inestabilidad, recaídas sintomáticas).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ttm_vb_sustancias_recaida",
+          "nombre": "VB – Sustancias: recaída/reciclaje sin ruptura (análisis + ajuste de plan)",
+          "texto": "Recaída como información: disparadores, vulnerabilidades y decisiones previas. Se ajusta el plan y el estadio sin castigo ni banalización, cuidando continuidad y alianza.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "vb_entorno_estabilizacion",
+      "modelLabel": "Modelo de Estabilización del Entorno Vital",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Judith Herman; desarrollos en trauma-informed care y salud mental comunitaria",
+      "modelYear": "1990–actualidad",
+      "items": [
+        {
+          "codigo": "p_vb_entorno_ems",
+          "nombre": "Definir Estabilidad Mínima Suficiente (EMS) y acordarla",
+          "texto": "Intervención colaborativa orientada a definir qué condiciones mínimas deben cumplirse para que la terapia sea viable.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_vb_entorno_triage",
+          "nombre": "Triage clínico: estabilización antes que profundización",
+          "texto": "Procedimiento decisional mediante el cual el terapeuta modula explícitamente el tipo de intervención según el nivel de estabilidad.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_vb_entorno_reevaluacion",
+          "nombre": "Revisión periódica de VB_entorno",
+          "texto": "Procedimiento de seguimiento de la estabilidad contextual.",
           "sub": "AG_tomaDecisiones",
           "tipo": "procedimiento"
         }

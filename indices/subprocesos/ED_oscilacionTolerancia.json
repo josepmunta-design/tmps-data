@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ED_oscilacionTolerancia",
-  "updatedAt": "2026-02-15T09:49:13.315Z",
-  "totalModelos": 3,
+  "updatedAt": "2026-02-15T09:50:01.700Z",
+  "totalModelos": 4,
   "modelos": [
     {
       "modelId": "k_shear_cgt",
@@ -88,6 +88,36 @@
           "codigo": "m_worden_dosificacion",
           "nombre": "Dosificar contacto con el dolor",
           "texto": "Intervención reguladora que ayuda a calibrar el ritmo de contacto con el dolor del duelo, facilitando entradas y salidas seguras. Previene tanto la evitación crónica como la inundación emocional.",
+          "sub": "ED_oscilacionTolerancia",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "k_kublerross69",
+      "modelLabel": "Modelo de Kübler-Ross (estados frecuentes ante la pérdida)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Elisabeth Kübler-Ross",
+      "modelYear": 1969,
+      "items": [
+        {
+          "codigo": "p_kr_psicoeducacion",
+          "nombre": "Psicoeducación de las respuestas emocionales",
+          "texto": "Introducir el modelo de estados emocionales como vocabulario clínico para identificar y nombrar reacciones de negación, ira, negociación, tristeza y aceptación, aclarando que no se trata de “fases” obligatorias ni lineales, sino de respuestas posibles que pueden aparecer, coexistir o repetirse. Esto normaliza la experiencia y reduce autojuicio.",
+          "sub": "ED_oscilacionTolerancia",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kr_mapeo",
+          "nombre": "Mapeo de experiencias emocionales",
+          "texto": "Explorar con el paciente qué respuestas emocionales ha experimentado, con qué intensidad y en qué contextos, diferenciando experiencias que regulan de aquellas que bloquean. Este mapeo ayuda a detectar rigideces y planificar intervenciones en procesos ED subyacentes.",
+          "sub": "ED_oscilacionTolerancia",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kr_acompanar_tristeza",
+          "nombre": "Acompañar tristeza profunda",
+          "texto": "Ofrecer presencia validante en momentos de tristeza profunda, normalizando el llanto y la retirada energética.",
           "sub": "ED_oscilacionTolerancia",
           "tipo": "micro"
         }
