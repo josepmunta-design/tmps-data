@@ -3542,7 +3542,22 @@ async function ensureModelFull(m){
       return m;
     }
 
-    const url = gh(`Core/${m.file}`);
+ const file = String(m.file || '').trim();
+const url = gh(`Core/${file}`);
+
+// ✅ Fallback por si "file" trae la carpeta en minúsculas y en GitHub está con mayúscula (case-sensitive)
+const tryUrls = [url];
+
+if (file.startsWith('modelos/')){
+  const parts = file.split('/');
+  // parts[0] = 'modelos', parts[1] = carpeta (a veces viene en minúsculas)
+  if (parts[1]){
+    const fixedFolder = parts[1].charAt(0).toUpperCase() + parts[1].slice(1);
+    const altFile = ['modelos', fixedFolder, ...parts.slice(2)].join('/');
+    tryUrls.push(gh(`Core/${altFile}`));
+  }
+}
+
 
     // ✅ reintentos con backoff (esto es lo que te elimina el “segundo clic”)
     const delays = [0, 250, 700, 1500]; // ms
@@ -3551,7 +3566,24 @@ async function ensureModelFull(m){
     for (let i = 0; i < delays.length; i++){
       if (delays[i]) await new Promise(r => setTimeout(r, delays[i]));
       try{
-        const full = await fetchJson(url);
+        let full = null;
+let last = null;
+
+for (const u of tryUrls){
+  try{
+    full = await fetchJson(u);
+    if(full){
+      last = u;
+      break;
+    }
+  }catch(e){
+    // guardamos error y seguimos probando
+    last = u;
+  }
+}
+
+if(!full) throw new Error(`No se pudo cargar JSON del modelo. Probadas: ${tryUrls.join(' | ')}`);
+
 
         // mezcla segura: full gana, pero mantenemos grupo/label si vinieran mejor en resumen
         const merged = { ...m, ...full };
@@ -4658,11 +4690,12 @@ function sectionIdeasInner(ideas){
     // =========================================================
     // 5) Interacción
     // =========================================================
-  function getAllModelsPool(){
-  const all = window.MODELS_ALL;
-  if(Array.isArray(all) && all.length) return all;
-  return MODELS; // fallback
+function getAllModelsPool(){
+  return (window.MODELS_ALL && Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
+    ? window.MODELS_ALL
+    : (Array.isArray(MODELS) ? MODELS : []);
 }
+
 
 async function openModel(id){
   const target = String(id ?? '').trim();
@@ -4697,13 +4730,31 @@ let m =
   m = ALL.find(x => String(x?.id ?? '').trim() === target) || found;
 }
 }else{
-  // 5) último intento: fuerza "todas" (por si MODELS_ALL no existe o está incompleto)
-  currentSchool = "todas";
-  try{ await ensureSchoolFromGitHub(currentSchool); }catch(e){}
+// 5) último intento REAL: carga escuelas desde GitHub hasta encontrar el ID
+try{ await loadGhSchoolsIndex?.(); }catch(e){}
+
+let found = null;
+
+for (const s of (window.GH_SCHOOLS || [])){
+  const schoolKey = (s && (s.label || s.id)) ? String(s.label || s.id).trim() : "";
+  if(!schoolKey) continue;
+
+  try{
+    await ensureSchoolFromGitHub(schoolKey);  // esto irá rellenando MODELS
+  }catch(e){}
 
   // IMPORTANTÍSIMO: ahora busca en pool completo
   const ALL = getAllModelsPool();
-  m = ALL.find(x => String(x?.id ?? '').trim() === target);
+  found = ALL.find(x => String(x?.id ?? '').trim() === target);
+
+  if(found){
+    currentSchool = schoolKey; // deja el selector coherente
+    break;
+  }
+}
+
+m = found;
+
 }
 
 
