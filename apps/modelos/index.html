@@ -20,8 +20,12 @@ function gh(p){
   return `${DATA_BASE}/${String(p).replace(/^\/+/, '')}`;
 }
 
-// 👇 ESTE BLOQUE TIENE QUE ESTAR DENTRO DEL SCRIPT
-(function(){
+/* ============================
+   ENSURE D3 (fallback CDNs)
+   ============================ */
+async function ensureD3(timeoutMs = 8000){
+  if (window.d3) return true;
+
   function load(src){
     return new Promise((ok, fail)=>{
       const s = document.createElement("script");
@@ -39,20 +43,29 @@ function gh(p){
     "https://d3js.org/d3.v7.min.js"
   ];
 
-  (async function(){
-    for (const src of sources){
-      try{
-        await load(src);
+  const started = Date.now();
+
+  for (const src of sources){
+    try{
+      await Promise.race([
+        load(src),
+        new Promise((_, rej)=>setTimeout(()=>rej(new Error("timeout")), timeoutMs))
+      ]);
+      if (window.d3){
         console.log("D3 OK:", src);
-        return;
-      }catch(e){
-        console.warn("D3 FAIL:", src);
+        return true;
       }
+    }catch(e){
+      console.warn("D3 FAIL:", src, e?.message || e);
+      if (Date.now() - started > timeoutMs * sources.length) break;
     }
-    console.error("No se pudo cargar D3 desde ningún CDN.");
-  })();
-})();
+  }
+
+  console.error("No se pudo cargar D3 desde ningún CDN.");
+  return false;
+}
 </script>
+
 
 <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 
@@ -2807,21 +2820,33 @@ body.embedMode .mainPanel{
    EMBED MODE (iframe)
    ?embed=1&open=<id>
    ========================= */
-body.is-embed .panel.left,
-body.is-embed .panel.right{
+
+
+/* En embed: fuera el panel izquierdo (lista) */
+body.is-embed .panel.left{
   display: none !important;
 }
 
+/* En embed: panel derecho visible y a pantalla completa */
+body.is-embed .panel.right{
+  display: block !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+/* Quita padding general */
 body.is-embed .app{
   padding: 0 !important;
 }
 
-/* Por si tu landing/overlay se cuela visualmente */
-body.is-embed #landingOverlay{
+/* Fuera overlays/landing/menús rápidos */
+body.is-embed #landingOverlay,
+body.is-embed .nav-speed{
   display: none !important;
 }
 
-/* Asegura que la ficha ocupe “todo” en embed */
+/* La ficha ocupa todo */
 body.is-embed .sheet,
 body.is-embed #modelSheet{
   width: 100vw !important;
@@ -2830,24 +2855,7 @@ body.is-embed #modelSheet{
   max-height: none !important;
   border-radius: 0 !important;
 }
-/* =========================
-   EMBED MODE: solo ficha (panel derecho)
-   ========================= */
-body.is-embed .panel.left{
-  display:none !important;
-}
 
-/* el panel derecho ocupa todo */
-body.is-embed .panel.right{
-  left: var(--edgePad) !important;
-  width: calc(100vw - (var(--edgePad) * 2)) !important;
-}
-
-/* fuera menús/landing/fabs en embed */
-body.is-embed .nav-speed,
-body.is-embed #landingOverlay{
-  display:none !important;
-}
 
 
   </style>
@@ -3425,13 +3433,14 @@ function hasLocalSchoolModels(label){
 // Carga index de escuelas de GitHub (si falla, no pasa nada)
 async function loadGhSchoolsIndex(){
   try{
-GH_SCHOOLS = await fetchJson(gh('Core/escuelas/index.json'));
-
+    GH_SCHOOLS = await fetchJson(gh('Core/escuelas/index.json')) || [];
   }catch(e){
     console.warn('No se pudo cargar index de escuelas desde GitHub:', e);
     GH_SCHOOLS = [];
   }
+  window.GH_SCHOOLS = GH_SCHOOLS;
 }
+
 
 
 // ✅ promesas en vuelo por escuela (evita carreras)
@@ -4569,20 +4578,40 @@ function sectionIdeasInner(ideas){
 
   return `
     <div class="mp-ideas">
-      ${list.map(it => {
-        const title = (it?.titulo ?? it?.title ?? '').toString().trim();
-        const body  = (it?.desarrollo ?? it?.texto ?? it?.descripcion ?? '').toString().trim();
+      ${list.map((it, idx) => {
+        // Admite ideas como string o como objeto
+        if (typeof it === 'string'){
+          const t = `Idea ${idx+1}`;
+          const b = it.trim();
+          return `
+            <details class="mp-idea">
+              <summary class="mp-idea-title">${escapeHtml(t)}</summary>
+              <div class="mp-idea-body">${escapeHtml(b || '—')}</div>
+            </details>
+          `;
+        }
+
+        const titleRaw = String(it?.titulo ?? it?.title ?? `Idea ${idx+1}`).trim();
+        const bodyRaw  = String(
+          it?.desarrollo ??
+          it?.texto ??
+          it?.body ??
+          it?.descripcion ??
+          ''
+        ).trim();
 
         return `
           <details class="mp-idea">
-            <summary class="mp-idea-title">${escapeHtml(title || 'Idea')}</summary>
-            <div class="mp-idea-body">${escapeHtml(body || '—')}</div>
+            <summary class="mp-idea-title">${escapeHtml(titleRaw || `Idea ${idx+1}`)}</summary>
+            <div class="mp-idea-body">${escapeHtml(bodyRaw || '—')}</div>
           </details>
         `;
       }).join('')}
     </div>
   `;
 }
+
+
 
     function sectionProcedures(title, arr){
       const a = Array.isArray(arr) ? arr.filter(Boolean) : [];
@@ -4738,7 +4767,8 @@ try{ await loadGhSchoolsIndex?.(); }catch(e){}
 
 let found = null;
 
-for (const s of (window.GH_SCHOOLS || [])){
+for (const s of (GH_SCHOOLS || [])){
+
   const schoolKey = (s && (s.label || s.id)) ? String(s.label || s.id).trim() : "";
   if(!schoolKey) continue;
 
