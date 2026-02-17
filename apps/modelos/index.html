@@ -1670,6 +1670,10 @@ body.infoFull .panel.left{
   top: 0;
   z-index: 999998;
 
+  width: 100%;
+  left: 0;
+  right: 0;
+
   /* ✅ no ocupa, no empuja, no mueve scroll */
   height: 0;
   margin: 0;
@@ -1677,12 +1681,18 @@ body.infoFull .panel.left{
   overflow: visible;
 }
 
+
 /* capa visual */
 #stickyModelHeader .smh-overlay{
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  z-index: 999999;
 
   display: flex;
   align-items: center;
@@ -1693,7 +1703,6 @@ body.infoFull .panel.left{
   opacity: 0;
   transform: translateY(-6px);
   pointer-events: none;
-
   /* ✅ fondo y estética (lo que te falta ahora) */
   background: linear-gradient(
     180deg,
@@ -3032,6 +3041,18 @@ body.is-embed .panel.right{
 }
 
 
+/* ✅ FIX: evita recorte del sticky header (contain recorta pintura) */
+body.is-embed .panel.right,
+body.infoFull .panel.right{
+  contain: none !important;
+}
+
+/* ✅ por si algún wrapper limita el ancho en embed/full */
+body.is-embed #stickyModelHeader .smh-overlay,
+body.infoFull #stickyModelHeader .smh-overlay{
+  width: 100% !important;
+  max-width: 100% !important;
+}
 
 
   </style>
