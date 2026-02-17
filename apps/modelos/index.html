@@ -2856,6 +2856,57 @@ body.is-embed #modelSheet{
   border-radius: 0 !important;
 }
 
+/* =========================
+   EMBED MODE — anclar arriba
+   ========================= */
+body.is-embed,
+body.is-embed html{
+  height: 100%;
+}
+
+body.is-embed{
+  overflow-y: auto;
+}
+
+/* 1) si algún wrapper centraba, lo anulamos */
+body.is-embed *{
+  scroll-margin-top: 0;
+}
+
+/* 2) ancla arriba el primer contenedor "grande" típico */
+body.is-embed .app,
+body.is-embed .page,
+body.is-embed .wrap,
+body.is-embed .container,
+body.is-embed main,
+body.is-embed #app,
+body.is-embed #root{
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+/* 3) si tu layout es flex centrado, esto lo rompe a favor de arriba */
+body.is-embed .app,
+body.is-embed #app,
+body.is-embed #root,
+body.is-embed main{
+  min-height: 0 !important;
+  height: auto !important;
+  padding-top: max(12px, env(safe-area-inset-top)) !important;
+}
+
+/* 4) por si hay un "centering" vía grid */
+body.is-embed .app,
+body.is-embed #app,
+body.is-embed #root,
+body.is-embed main{
+  place-items: start !important;
+}
+
+/* 5) si hay margin-top raro en el panel principal */
+body.is-embed .panel{
+  margin-top: 0 !important;
+}
 
 
   </style>
