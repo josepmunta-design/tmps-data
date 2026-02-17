@@ -3038,14 +3038,32 @@ async function ensureD3(timeoutMs = 8000){
   return !!window.d3;
 }
 
-   window.addEventListener('DOMContentLoaded', async () => {
+// ✅ NUEVO: topojson también puede no estar listo aunque esté con defer
+async function ensureTopojson(timeoutMs = 6000){
+  if (window.topojson) return true;
+
+  // si tu <script defer ...> está, normalmente bastaría con esperar un poco
+  const t0 = Date.now();
+  while (!window.topojson && (Date.now() - t0) < timeoutMs){
+    await new Promise(r => setTimeout(r, 50));
+  }
+  return !!window.topojson;
+}
+
+
+window.addEventListener('DOMContentLoaded', async () => {
   const __params = new URLSearchParams(location.search);
-  const __EMBED  = __params.get("embed") === "1";
+  const __EMBED  = ["1","true","yes"].includes((__params.get("embed") || "").toLowerCase());
   const __OPENID = (__params.get("open") || "").trim();
 
   if(__EMBED){
     document.body.classList.add("embedMode");
+    document.body.classList.add("is-embed"); // ✅ usa UNA convención consistente
   }
+
+  // ✅ dependencias primero (evita “a veces sí / a veces no”)
+  await ensureD3();
+  await ensureTopojson();
 
 await loadAuthorPhotoIndex();
     // =========================================================
@@ -4758,24 +4776,8 @@ resetRightPanelToTop();
         .replaceAll('"','&quot;')
         .replaceAll("'","&#039;");
     }
-function hexToRgba(hex, a = 0.2){
-  const h = String(hex || '').trim();
-  if (!h.startsWith('#')) return `rgba(255,255,255,${a})`;
+// (eliminada: ya existe hexToRgba arriba; evita duplicados)
 
-  let r=255,g=255,b=255;
-
-  if (h.length === 4){
-    r = parseInt(h[1]+h[1], 16);
-    g = parseInt(h[2]+h[2], 16);
-    b = parseInt(h[3]+h[3], 16);
-  } else if (h.length === 7){
-    r = parseInt(h.slice(1,3), 16);
-    g = parseInt(h.slice(3,5), 16);
-    b = parseInt(h.slice(5,7), 16);
-  }
-
-  return `rgba(${r},${g},${b},${a})`;
-}
 // =========================
 // URL PARAMS (embed)
 // =========================
@@ -4784,59 +4786,54 @@ const IS_EMBED = ["1","true","yes"].includes((QS.get("embed") || "").toLowerCase
 const OPEN_ID  = (QS.get("open") || "").trim();
 
 // init (local + GitHub)
+// init (local + GitHub)
 (async function init(){
   try{
-    // ✅ modo embed: aplica clase lo antes posible
-    if(__EMBED) document.body.classList.add("is-embed");
-
-    // 1) carga índice de escuelas desde GitHub (si falla, no rompe)
+    // 1) índice de escuelas GH
     await loadGhSchoolsIndex();
 
-    // 2) construye selector combinando locales + GitHub
+    // 2) selector
     buildSchoolOptions();
 
-    // 2.5) landing solo si NO embed
-    if(!__EMBED){
+    // 3) precarga escuela inicial (si procede) + pinta
+    if (currentSchool){
+      await ensureSchoolFromGitHub(currentSchool);
+      renderModelsList();
+      renderSchoolInfo(currentSchool);
+      resetRightPanelToTop();
+    }else{
+      renderModelsList();
+      renderModelInfo(null);
+    }
+
+    // 4) landing solo si NO embed y no viene open directo
+    if(!__EMBED && !__OPENID){
       buildLandingSchools();
       showLanding();
     }else{
-      // por si acaso: asegúrate de que no se ve nada “landing”
       try{ hideLanding(); }catch(e){}
     }
 
-    // 3) si la escuela inicial no es local, tráela de GitHub
-    if(currentSchool){
-      await ensureSchoolFromGitHub(currentSchool);
+    // 5) open directo: abrir modelo
+    if (__OPENID){
+      // si el modelo pertenece a otra escuela, primero lo traemos:
+      // (rápido: intentamos en la escuela actual; si no, no rompemos)
+      try{
+        await ensureSchoolFromGitHub(currentSchool);
+      }catch(e){}
+
+      await openModel(__OPENID);
     }
 
-    // 4) render inicial
-    await loadAuthorPhotoIndex(); // ✅ Espera al índice global de fotos
+    // 6) micro-ritual “loaded”
+    requestAnimationFrame(()=> document.body.classList.add('loaded'));
 
-    renderModelsList();
-    renderSchoolInfo(currentSchool);
-
-    // ✅ Deep-link: abrir modelo por URL (?open=<id>)
-    if(__OPENID){
-      const tryOpen = () => {
-        const found = (MODELS || []).find(m => m.id === __OPENID);
-        if(found){
-          openModel(found);
-          return;
-        }
-        setTimeout(tryOpen, 60);
-      };
-      tryOpen();
-    }
-
-    // 5) marca como cargado
-    requestAnimationFrame(() => {
-      document.body.classList.add("loaded");
-    });
-
-  }catch(err){
-    console.error(err);
+  }catch(e){
+    console.error('❌ init falló', e);
+    document.body.classList.add('loaded');
   }
 })();
+
 
 
 });
