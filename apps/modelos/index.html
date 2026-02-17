@@ -2831,27 +2831,24 @@ body.is-embed #modelSheet{
   border-radius: 0 !important;
 }
 /* =========================
-   EMBED: solo ficha (sin listas)
+   EMBED MODE: solo ficha (panel derecho)
    ========================= */
-body.is-embed .panel.left,
-body.is-embed .panel.right,
-body.is-embed .landing,
-body.is-embed .landingOverlay,
-body.is-embed .searchPanel,
-body.is-embed .listPanel{
-  display: none !important;
+body.is-embed .panel.left{
+  display:none !important;
 }
 
-/* si tu ficha usa un overlay/hoja */
-body.is-embed .sheet,
-body.is-embed #modelSheet,
-body.is-embed .modelSheet{
-  width: 100vw !important;
-  height: 100vh !important;
-  max-width: none !important;
-  max-height: none !important;
-  border-radius: 0 !important;
+/* el panel derecho ocupa todo */
+body.is-embed .panel.right{
+  left: var(--edgePad) !important;
+  width: calc(100vw - (var(--edgePad) * 2)) !important;
 }
+
+/* fuera menús/landing/fabs en embed */
+body.is-embed .nav-speed,
+body.is-embed #landingOverlay{
+  display:none !important;
+}
+
 
   </style>
 </head>
