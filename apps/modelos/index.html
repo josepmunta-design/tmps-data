@@ -3395,6 +3395,7 @@ async function fetchJson(url){
 }
 
 
+window.MODELS_ALL = LOCAL_MODELS.slice();
 
 // ✅ El resto de tu código seguirá usando MODELS
 let MODELS = LOCAL_MODELS.filter(m => !m.hideInModels);
