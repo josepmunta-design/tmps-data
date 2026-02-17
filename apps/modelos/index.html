@@ -2824,9 +2824,7 @@ body.landing-on{
 /* =========================
    EMBED MODE (para iframes)
    ========================= */
-body.embedMode{
-  overflow: hidden;
-}
+
 
 /* fuera landing y nav */
 body.embedMode #landingOverlay{ display:none !important; }
@@ -2861,18 +2859,24 @@ body.is-embed .panel.left{
 }
 
 /* En embed: panel derecho visible y a pantalla completa */
+/* ✅ EMBED: EL SCROLL REAL */
 body.is-embed .panel.right{
   display: block !important;
+  position: relative !important;
+
   left: 0 !important;
   width: 100vw !important;
   height: 100vh !important;
+  max-height: 100vh !important;
 
-  overflow-y: auto !important;          /* ✅ ESTE es el scroll */
+  overflow-y: auto !important;
   overflow-x: hidden !important;
+
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
   touch-action: pan-y;
 }
+
 body.is-embed .panel.right{
   scrollbar-width: thin;
   scrollbar-color: rgba(231,237,245,0.28) rgba(255,255,255,0.06);
@@ -2909,11 +2913,16 @@ body.is-embed .nav-speed{
 body.is-embed .sheet,
 body.is-embed #modelSheet{
   width: 100vw !important;
-  height: 100vh !important;
+  height: auto !important;
+  min-height: 100vh !important;
+
   max-width: none !important;
   max-height: none !important;
   border-radius: 0 !important;
+
+  overflow: visible !important;   /* ✅ SIN scroll interno */
 }
+
 
 /* =========================
    EMBED MODE — anclar arriba
@@ -2972,13 +2981,7 @@ html, body{
   height: 100%;
 }
 
-body.embedMode{
-  height: 100dvh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
-}
+
 
 
 /* ✅ Tu shell y panel principal deben ocupar toda la altura */
@@ -3016,20 +3019,6 @@ body.embedMode .panel.left{
   margin: 0 0 12px 0 !important;
 }
 
-/* Panel derecho: que sea “página” normal, pegada arriba */
-body.is-embed .panel.right,
-body.embedMode .panel.right{
-  position: relative !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-
-  max-height: none !important;
-  height: auto !important;
-  overflow: visible !important;
-
-  margin: 0 !important;
-}
 
 /* Importante: evita offsets del layout de escritorio */
 body.is-embed :root,
@@ -3041,18 +3030,9 @@ body.embedMode :root{
 body.embedMode .panel.left{
   display: none !important;
 }
-    body.is-embed .panel.right{
-  overflow-y: auto !important;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
-}
 
-body.is-embed .sheet,
-body.is-embed #modelSheet{
-  overflow-y: auto !important;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
-}
+
+
 
   </style>
 </head>
