@@ -3441,6 +3441,9 @@ const GH_SCHOOL_PENDING = new Map(); // id -> Promise
 // Carga una escuela desde GitHub y añade sus modelos a MODELS (solo si no existe local)
 // Carga una escuela desde GitHub y añade sus modelos a MODELS (solo si no existe local)
 async function ensureSchoolFromGitHub(schoolLabel){
+  if(!schoolLabel || String(schoolLabel).trim().toLowerCase() === "todas"){
+    return; // "todas" no es una escuela de GH_SCHOOLS
+  }
 
   // ✅ mapa de promesas "en vuelo" SIN declarar globals (evita carreras y redeclare)
   ensureSchoolFromGitHub._pending = ensureSchoolFromGitHub._pending || new Map();
