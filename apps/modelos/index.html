@@ -2907,7 +2907,27 @@ body.is-embed main{
 body.is-embed .panel{
   margin-top: 0 !important;
 }
+/* ✅ Embed: el documento debe medir la altura del iframe */
+html, body{
+  height: 100%;
+}
 
+body.embedMode{
+  height: 100dvh;        /* clave en iOS/Safari/iframes */
+  overflow: hidden;      /* evita scroll “de la página” que corta paneles */
+}
+
+/* ✅ Tu shell y panel principal deben ocupar toda la altura */
+body.embedMode .appShell{
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+}
+
+body.embedMode .mainPanel{
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  overflow: hidden !important;  /* que no recorte internamente por accidente */
+}
 
   </style>
 </head>
@@ -3122,6 +3142,13 @@ window.addEventListener('DOMContentLoaded', async () => {
   await ensureTopojson();
 
 await loadAuthorPhotoIndex();
+  // ✅ índice GH_SCHOOLS: útil, pero NO puede romper el render si falla
+try{
+  await loadGhSchoolsIndex();
+}catch(e){
+  console.warn("[GH_SCHOOLS] no se pudo cargar (continúo sin él):", e);
+  window.GH_SCHOOLS = window.GH_SCHOOLS || {};
+}
     // =========================================================
     // 1) COLORES de escuelas (puedes copiar los tuyos)
     // =========================================================
@@ -4786,110 +4813,77 @@ function getAllModelsPool(){
 
 async function openModel(id){
   const target = String(id ?? '').trim();
+  if(!target) return;
 
-// 🔍 busca el modelo (primero en el pool filtrado, luego en el pool completo REAL)
-const ALL = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
-  ? window.MODELS_ALL
-  : (Array.isArray(LOCAL_MODELS) ? LOCAL_MODELS : MODELS);
+  // pool completo REAL
+  const ALL = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
+    ? window.MODELS_ALL
+    : (Array.isArray(MODELS) ? MODELS : []);
 
-let m =
-  MODELS.find(x => String(x?.id ?? '').trim() === target) ||
-  ALL.find(x => String(x?.id ?? '').trim() === target);
+  // 1) Buscar en lo ya cargado
+  let m =
+    (Array.isArray(MODELS) ? MODELS : []).find(x => String(x?.id ?? '').trim() === target) ||
+    ALL.find(x => String(x?.id ?? '').trim() === target);
 
-
-
-  // ✅ Si no está en la escuela actual, búscalo en el pool completo y cambia de escuela
+  // 2) Si no está, intenta cargar escuelas GH hasta encontrarlo
   if(!m){
-    // 1) intenta localizarlo en el pool completo (si existe)
-    const mAll = (Array.isArray(window.MODELS_ALL) ? window.MODELS_ALL : (Array.isArray(MODELS_ALL) ? MODELS_ALL : null));
-    const found = mAll ? mAll.find(x => String(x?.id ?? '').trim() === target) : null;
+    const schools = Array.isArray(window.GH_SCHOOLS) ? window.GH_SCHOOLS : (Array.isArray(GH_SCHOOLS) ? GH_SCHOOLS : []);
+    for (const s of schools){
+      const label = s?.label || s?.id;
+      if(!label) continue;
 
-    if(found){
-      // 2) cambia escuela a la del modelo (si la tienes) o fuerza "todas"
-      currentSchool = String(found?.grupo ?? '').trim() || "todas";
+      try{
+        await ensureSchoolFromGitHub(label);
+      }catch(e){
+        // no rompemos: seguimos con la siguiente escuela
+      }
 
-      // 3) recarga esa escuela / reconstruye MODELS
-      try{ await ensureSchoolFromGitHub(currentSchool); }catch(e){}
-
-// 4) vuelve a buscar ya con MODELS actualizado
-{
-  const ALL = getAllModelsPool();
-  m = ALL.find(x => String(x?.id ?? '').trim() === target) || found;
-}
-}else{
-// 5) último intento REAL: carga escuelas desde GitHub hasta encontrar el ID
-try{ await loadGhSchoolsIndex?.(); }catch(e){}
-
-let found = null;
-
-for (const s of (Array.isArray(GH_SCHOOLS) ? GH_SCHOOLS : (window.GH_SCHOOLS || []))){
-
-
-  const schoolKey = (s && (s.label || s.id)) ? String(s.label || s.id).trim() : "";
-  if(!schoolKey) continue;
-
-  try{
-    await ensureSchoolFromGitHub(schoolKey);  // esto irá rellenando MODELS
-  }catch(e){}
-
-  // IMPORTANTÍSIMO: ahora busca en pool completo
-  const ALL = getAllModelsPool();
-  found = ALL.find(x => String(x?.id ?? '').trim() === target);
-
-  if(found){
-    currentSchool = schoolKey; // deja el selector coherente
-    break;
-  }
-}
-
-m = found;
-
-}
-
-
-    if(!m){
-      console.warn('❌ Modelo no encontrado (ni en MODELS ni tras cambiar escuela):', target);
-      modelInfoEl.innerHTML = `
-        <div class="mp-hint">
-          <b>Modelo no encontrado.</b><br>
-          ID: <code>${escapeHtml(target)}</code>
-        </div>
-      `;
-      return;
+      const pool = getAllModelsPool();
+      m = pool.find(x => String(x?.id ?? '').trim() === target);
+      if(m) break;
     }
-    // si el modelo existe pero no está en el listado filtrado actual, cambia a "todas"
-if(m && !MODELS.some(x => String(x?.id) === String(m.id))){
-  currentSchool = "todas";
-  MODELS = (window.MODELS_ALL || LOCAL_MODELS || []).filter(mm => !mm.hideInModels);
-  renderModelsList();
-}
-
   }
 
-  // ✅ AÑADE ESTO
-  currentModelId = target;
-  renderModelsList();
-   try {
-  // Carga índice de fotos, pero SI falla → continua sin fotos (no rompe el modelo)
-  try {
-    await loadAuthorPhotoIndex();
-  } catch (fotoErr) {
-    console.warn('⚠️ No se pudo cargar foto.json, continuando sin fotos:', fotoErr);
+  if(!m){
+    console.warn('❌ openModel: no encontrado', target);
+    // deja el panel derecho como estaba, pero puedes mostrar aviso si quieres
+    return;
   }
 
+  // 3) Si el modelo pertenece a otra escuela, cambia de escuela y re-render lista
+  const modelSchool = String(m.grupo ?? '').trim();
+  if(modelSchool && modelSchool !== currentSchool){
+    currentSchool = modelSchool;
+    if (schoolSelect){
+      schoolSelect.value = currentSchool;
+    }
 
-  m = await ensureModelFull(m);
-  renderModelInfo(m);
-  resetRightPanelToTop();
-} catch (err) {
-  console.error('❌ Error abriendo modelo', target, err);
-  modelInfoEl.innerHTML = `
-    <div class="mp-hint">
-      <b>No se pudo cargar la ficha del modelo.</b><br>
-      ID: <code>${escapeHtml(target)}</code>
-    </div>
-  `;
-}
+    // asegúrate de que está cargada (por si venía de GH y aún no estaba)
+    try{ await ensureSchoolFromGitHub(currentSchool); }catch(e){}
+
+    renderModelsList();
+    renderSchoolInfo(currentSchool); // pinta la vista escuela mientras carga el modelo
+  }
+
+  // 4) Marca activo y renderiza ficha completa
+  currentModelId = String(m.id ?? '').trim();
+  renderModelsList();
+
+  // expande (si venía como resumen de GH)
+  const full = await ensureModelFull(m);
+
+  renderModelInfo(full);
+
+  // 5) Arriba del panel (consistencia)
+  const rp = document.querySelector('.panel.right');
+  if (rp) rp.scrollTop = 0;
+
+  // 6) URL (opcional, pero útil para embed/open)
+  try{
+    const u = new URL(location.href);
+    u.searchParams.set('open', currentModelId);
+    history.replaceState(null, '', u.toString());
+  }catch(e){}
 }
 function resetRightPanelToTop(){
 
