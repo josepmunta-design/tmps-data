@@ -4957,9 +4957,9 @@ resetRightPanelToTop();
 // =========================
 // URL PARAMS (embed)
 // =========================
-const QS = new URLSearchParams(location.search);
-const IS_EMBED = ["1","true","yes"].includes((QS.get("embed") || "").toLowerCase());
-const OPEN_ID  = (QS.get("open") || "").trim();
+window.__QS = window.__QS || new URLSearchParams(location.search);
+window.__EMBED  = ["1","true","yes"].includes((window.__QS.get("embed") || "").toLowerCase());
+window.__OPENID = (window.__QS.get("open") || "").trim();
 
 // init (local + GitHub)
 // init (local + GitHub)
@@ -4982,8 +4982,8 @@ const OPEN_ID  = (QS.get("open") || "").trim();
       renderModelInfo(null);
     }
 
-    // 4) landing solo si NO embed y no viene open directo
-if(!IS_EMBED && !OPEN_ID){
+// 4) landing solo si NO embed y no viene open directo
+if(!window.__EMBED && !window.__OPENID){
   buildLandingSchools();
   showLanding();
 }else{
@@ -4991,14 +4991,14 @@ if(!IS_EMBED && !OPEN_ID){
 }
 
     // 5) open directo: abrir modelo
-if (OPEN_ID){
+if (window.__OPENID){
 
   // Nota: si currentSchool es null, este ensure fallará y no pasa nada (lo atrapamos)
   try{
     if(currentSchool) await ensureSchoolFromGitHub(currentSchool);
   }catch(e){}
 
-  await openModel(OPEN_ID);
+await openModel(window.__OPENID);
 
   // En embed, forzar scroll arriba tras pintar
   if(IS_EMBED){
