@@ -3002,33 +3002,33 @@ body.embedMode .mainPanel{
 body.is-embed .app,
 body.embedMode .app{
   width: 100% !important;
-  height: auto !important;       /* ✅ no 100vh dentro de iframe */
-  min-height: 100vh !important;  /* ✅ rellena la altura visible */
+  height: 100% !important;
+  min-height: 0 !important;
 }
+
 
 /* Desactiva el layout de 2 paneles fijos dentro del iframe */
+/* En embed: fuera el panel izquierdo */
 body.is-embed .panel.left,
 body.embedMode .panel.left{
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  width: auto !important;
-  max-width: none !important;
-  max-height: none !important;
-  overflow: visible !important;
-  margin: 0 0 12px 0 !important;
+  display: none !important;
 }
 
 
-/* Importante: evita offsets del layout de escritorio */
-body.is-embed :root,
-body.embedMode :root{
-  /* si tu CSS usa esto para separar paneles */
+html:root{
   --midGap: 0px;
 }
-    body.is-embed .panel.left,
-body.embedMode .panel.left{
-  display: none !important;
+/* ✅ Embed: panel derecho fijo, scroll real */
+body.is-embed .panel.right{
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
 
 
