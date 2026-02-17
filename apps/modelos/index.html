@@ -4841,14 +4841,22 @@ if(m && !MODELS.some(x => String(x?.id) === String(m.id))){
 }
 }
 function resetRightPanelToTop(){
+
+  // panel derecho
   const rp = document.querySelector('.panel.right');
-  if (!rp) return;
+  if (rp){
+    rp.scrollTop = 0;
+    requestAnimationFrame(() => { rp.scrollTop = 0; });
+  }
 
-  // 1) corte inmediato
-  rp.scrollTop = 0;
+  // documento completo (embed / iframe fix)
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
 
-  // 2) refuerzo en el siguiente frame (evita anchoring/inercia)
-  requestAnimationFrame(() => { rp.scrollTop = 0; });
+  requestAnimationFrame(() => {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  });
 }
 
 function scrollLeftPanelToStickyPoint(){
