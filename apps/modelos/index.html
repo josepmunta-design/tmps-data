@@ -4949,15 +4949,21 @@ const OPEN_ID  = (QS.get("open") || "").trim();
     }
 
     // 5) open directo: abrir modelo
-    if (__OPENID){
-      // si el modelo pertenece a otra escuela, primero lo traemos:
-      // (rápido: intentamos en la escuela actual; si no, no rompemos)
-      try{
-        await ensureSchoolFromGitHub(currentSchool);
-      }catch(e){}
+if (__OPENID){
 
-      await openModel(__OPENID);
-    }
+  try{
+    await ensureSchoolFromGitHub(currentSchool);
+  }catch(e){}
+
+await openModel(__OPENID);
+
+// ✅ FIX: en embed, forzar scroll arriba tras cargar
+setTimeout(() => {
+  resetRightPanelToTop();
+}, 60);
+
+}
+
 
     // 6) micro-ritual “loaded”
     requestAnimationFrame(()=> document.body.classList.add('loaded'));
