@@ -3222,6 +3222,10 @@ function tintForModel(model, selectedSchool){
   }
 
 ];
+  // ===== MODELS GLOBAL (debe existir antes de usarlo) =====
+let MODELS = LOCAL_MODELS.filter(m => !m.hideInModels);
+window.MODELS_ALL = MODELS.slice();
+
 // =========================================================
 // 2B) DATOS: GitHub + compatibilidad con datos locales
 // =========================================================
@@ -3399,15 +3403,6 @@ async function fetchJson(url){
   }
 }
 
-
-window.MODELS_ALL = MODELS.filter(m => !m.hideInModels);
-
-
-
-// ✅ El resto de tu código seguirá usando MODELS
-let MODELS = LOCAL_MODELS.filter(m => !m.hideInModels);
-// ✅ Guardar lista completa para embeds / open desde fuera
-window.MODELS_ALL = MODELS.filter(m => !m.hideInModels);
 
 
 
