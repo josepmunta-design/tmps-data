@@ -2216,6 +2216,34 @@ box-shadow: 0 18px 60px rgba(0,0,0,0.45);
 contain: layout paint;
 
 }
+/* =========================
+   Scrollbar glass (EMBED) — para la ficha en iframe
+   ========================= */
+
+/* Firefox */
+body.is-embed .sheet,
+body.is-embed #modelSheet{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(231,237,245,0.28) rgba(255,255,255,0.06);
+}
+
+/* Chrome / Edge / Safari */
+body.is-embed .sheet::-webkit-scrollbar,
+body.is-embed #modelSheet::-webkit-scrollbar{ width:10px; }
+
+body.is-embed .sheet::-webkit-scrollbar-track,
+body.is-embed #modelSheet::-webkit-scrollbar-track{
+  background: rgba(255,255,255,0.05);
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+body.is-embed .sheet::-webkit-scrollbar-thumb,
+body.is-embed #modelSheet::-webkit-scrollbar-thumb{
+  background: linear-gradient(180deg, rgba(231,237,245,0.28), rgba(231,237,245,0.14));
+  border-radius: 999px;
+  border: 1px solid rgba(231,237,245,0.10);
+}
 
 
 /* =========================
@@ -5128,7 +5156,29 @@ if(window.IS_EMBED){
 
 });
 
-  
+  /* =========================
+   EMBED HEIGHT SYNC
+   ========================= */
+
+function sendEmbedHeight(){
+  try{
+    const h = Math.max(
+      document.documentElement.scrollHeight,
+      document.body ? document.body.scrollHeight : 0
+    );
+    window.parent && window.parent.postMessage(
+      { type:"tmps:embedHeight", h },
+      "*"
+    );
+  }catch(e){}
+}
+
+// al cargar
+window.addEventListener("load", ()=> setTimeout(sendEmbedHeight, 50));
+
+// cuando cambie tamaño
+window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
+
   </script>
   
 
