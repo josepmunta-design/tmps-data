@@ -1697,7 +1697,11 @@ body.infoFull .panel.left{
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 14px;
+  padding: 12px 12px;
+body.is-embed #stickyModelHeader .smh-overlay,
+body.infoFull #stickyModelHeader .smh-overlay{
+  padding-top: calc(16px + env(safe-area-inset-top));
+}
 
   /* apagado por defecto */
   opacity: 0;
@@ -2970,7 +2974,7 @@ body.is-embed #root,
 body.is-embed main{
   min-height: 0 !important;
   height: auto !important;
-  padding-top: max(12px, env(safe-area-inset-top)) !important;
+  padding-top: 0 !important;
 }
 
 /* 4) por si hay un "centering" vía grid */
