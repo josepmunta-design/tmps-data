@@ -10,9 +10,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <script>
-  // ✅ compatibilidad global (evita ReferenceError)
+// ✅ compatibilidad global (evita ReferenceError)
 var IS_EMBED = false;
 var OPEN_ID = "";
+
+/* =========================
+   Detectar modo EMBED
+   ========================= */
+const __params = new URLSearchParams(location.search);
+const __EMBED = ["1","true","yes"].includes(
+  (__params.get("embed") || "").toLowerCase()
+);
+
+if(__EMBED){
+  document.body.classList.add("is-embed");
+  IS_EMBED = true;
+}
+
   // ✅ evita TDZ (Cannot access before initialization)
 var GH_SCHOOLS = null;
 const IS_GHPAGES = location.hostname.endsWith('github.io');
@@ -3058,6 +3072,15 @@ body.infoFull #stickyModelHeader .smh-overlay{
   max-width: 100% !important;
 }
 
+/* =========================
+   EMBED: fondo transparente (para uso en iframe)
+   ========================= */
+
+
+
+body.is-embed .app{
+  background: transparent !important;
+}
 
   </style>
 </head>
