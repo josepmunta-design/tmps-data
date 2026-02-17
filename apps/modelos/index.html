@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <script>
+  // ✅ compatibilidad global (evita ReferenceError)
+var IS_EMBED = false;
+  // ✅ evita TDZ (Cannot access before initialization)
+var GH_SCHOOLS = null;
 const IS_GHPAGES = location.hostname.endsWith('github.io');
 
 const DATA_BASE = IS_GHPAGES
@@ -3128,13 +3132,14 @@ async function ensureTopojson(timeoutMs = 6000){
 
 
 window.addEventListener('DOMContentLoaded', async () => {
-  const __params = new URLSearchParams(location.search);
-  const __EMBED  = ["1","true","yes"].includes((__params.get("embed") || "").toLowerCase());
-  const __OPENID = (__params.get("open") || "").trim();
+  // ✅ PARAMS GLOBALES (una sola fuente de verdad)
+  window.__QS = window.__QS || new URLSearchParams(location.search);
+  window.__EMBED  = ["1","true","yes"].includes((window.__QS.get("embed") || "").toLowerCase());
+  window.__OPENID = (window.__QS.get("open") || "").trim();
 
-  if(__EMBED){
+  if(window.__EMBED){
     document.body.classList.add("embedMode");
-    document.body.classList.add("is-embed"); // ✅ usa UNA convención consistente
+    document.body.classList.add("is-embed");
   }
 
   // ✅ dependencias primero (evita “a veces sí / a veces no”)
@@ -3274,7 +3279,7 @@ function tintForModel(model, selectedSchool){
   // Prioridad 2: inferir por texto del grupo si no coincide exacto
   const g = (model?.grupo || '').toLowerCase();
   if (g.includes('cognit')) return groupColor.get('Cognitivo') || '#E15759';
-  if (g.includes('conduct')) return groupColor.get('Conductista') || '#d69640';
+ if (g.includes('conduct')) return groupColor.get('Conductismo') || '#d69640';
   if (g.includes('psicoan')) return groupColor.get('Psicoanálisis') || '#4E79A7';
   if (g.includes('human')) return groupColor.get('Humanista') || '#76B7B2';
   if (g.includes('sist')) return groupColor.get('Sistémico') || '#F1CE63';
@@ -3486,7 +3491,7 @@ async function fetchJson(url){
 
 
 // Escuelas disponibles en GitHub (solo para poblar el selector)
-let GH_SCHOOLS = []; // array de {id,label,color,order...} o lo que tengas
+GH_SCHOOLS = []; // array de {id,label,color,order...} o lo que tengas
 
 // Cache de escuelas/modelos cargados desde GitHub
 const GH_SCHOOL_LOADED = new Set();   // slugs (ej: "humanista")
@@ -5001,13 +5006,13 @@ if (window.__OPENID){
 await openModel(window.__OPENID);
 
   // En embed, forzar scroll arriba tras pintar
-  if(IS_EMBED){
+  if(window.__EMBED){
     setTimeout(() => {
       resetRightPanelToTop();
     }, 60);
   }
 }
-if(IS_EMBED){
+if(window.__EMBED){
   document.body.classList.add("embedMode", "is-embed");
 }
 
