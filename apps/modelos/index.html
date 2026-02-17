@@ -3395,12 +3395,14 @@ async function fetchJson(url){
 }
 
 
-window.MODELS_ALL = LOCAL_MODELS.slice();
+window.MODELS_ALL = LOCAL_MODELS.filter(m => !m.hideInModels);
+
 
 // ✅ El resto de tu código seguirá usando MODELS
 let MODELS = LOCAL_MODELS.filter(m => !m.hideInModels);
 // ✅ Guardar lista completa para embeds / open desde fuera
-window.MODELS_ALL = MODELS.slice();
+window.MODELS_ALL = LOCAL_MODELS.filter(m => !m.hideInModels);
+
 
 
 // Escuelas disponibles en GitHub (solo para poblar el selector)
@@ -4704,10 +4706,10 @@ function getAllModelsPool(){
 async function openModel(id){
   const target = String(id ?? '').trim();
 
-// 🔍 busca el modelo (primero en el pool filtrado, luego en el pool completo)
+// 🔍 busca el modelo (primero en el pool filtrado, luego en el pool completo REAL)
 const ALL = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
   ? window.MODELS_ALL
-  : MODELS;
+  : (Array.isArray(LOCAL_MODELS) ? LOCAL_MODELS : MODELS);
 
 let m =
   MODELS.find(x => String(x?.id ?? '').trim() === target) ||
@@ -4772,6 +4774,13 @@ m = found;
       `;
       return;
     }
+    // si el modelo existe pero no está en el listado filtrado actual, cambia a "todas"
+if(m && !MODELS.some(x => String(x?.id) === String(m.id))){
+  currentSchool = "todas";
+  MODELS = (window.MODELS_ALL || LOCAL_MODELS || []).filter(mm => !mm.hideInModels);
+  renderModelsList();
+}
+
   }
 
   // ✅ AÑADE ESTO
