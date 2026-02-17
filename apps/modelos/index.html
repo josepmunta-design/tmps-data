@@ -2803,6 +2803,55 @@ body.embedMode .mainPanel{
   width: 100% !important;
   max-width: 100% !important;
 }
+/* =========================
+   EMBED MODE (iframe)
+   ?embed=1&open=<id>
+   ========================= */
+body.is-embed .panel.left,
+body.is-embed .panel.right{
+  display: none !important;
+}
+
+body.is-embed .app{
+  padding: 0 !important;
+}
+
+/* Por si tu landing/overlay se cuela visualmente */
+body.is-embed #landingOverlay{
+  display: none !important;
+}
+
+/* Asegura que la ficha ocupe “todo” en embed */
+body.is-embed .sheet,
+body.is-embed #modelSheet{
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  border-radius: 0 !important;
+}
+/* =========================
+   EMBED: solo ficha (sin listas)
+   ========================= */
+body.is-embed .panel.left,
+body.is-embed .panel.right,
+body.is-embed .landing,
+body.is-embed .landingOverlay,
+body.is-embed .searchPanel,
+body.is-embed .listPanel{
+  display: none !important;
+}
+
+/* si tu ficha usa un overlay/hoja */
+body.is-embed .sheet,
+body.is-embed #modelSheet,
+body.is-embed .modelSheet{
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  border-radius: 0 !important;
+}
 
   </style>
 </head>
@@ -4727,22 +4776,33 @@ function hexToRgba(hex, a = 0.2){
 
   return `rgba(${r},${g},${b},${a})`;
 }
+// =========================
+// URL PARAMS (embed)
+// =========================
+const QS = new URLSearchParams(location.search);
+const IS_EMBED = ["1","true","yes"].includes((QS.get("embed") || "").toLowerCase());
+const OPEN_ID  = (QS.get("open") || "").trim();
 
-  // init (local + GitHub)
+// init (local + GitHub)
 (async function init(){
   try{
+    // ✅ modo embed: aplica clase lo antes posible
+    if(__EMBED) document.body.classList.add("is-embed");
+
     // 1) carga índice de escuelas desde GitHub (si falla, no rompe)
     await loadGhSchoolsIndex();
 
     // 2) construye selector combinando locales + GitHub
-buildSchoolOptions();
+    buildSchoolOptions();
 
-if(!__EMBED){
-  buildLandingSchools();
-  showLanding();
-}
-
-
+    // 2.5) landing solo si NO embed
+    if(!__EMBED){
+      buildLandingSchools();
+      showLanding();
+    }else{
+      // por si acaso: asegúrate de que no se ve nada “landing”
+      try{ hideLanding(); }catch(e){}
+    }
 
     // 3) si la escuela inicial no es local, tráela de GitHub
     if(currentSchool){
@@ -4750,54 +4810,34 @@ if(!__EMBED){
     }
 
     // 4) render inicial
-// Carga global de fotos (solo una vez)
-let FOTOS = null;
+    await loadAuthorPhotoIndex(); // ✅ Espera al índice global de fotos
 
-async function loadFotos() {
-  if (FOTOS) return FOTOS;
-  try {
-    const res = await fetch(gh('Core/fotos/foto.json') + '?v=' + Date.now())
+    renderModelsList();
+    renderSchoolInfo(currentSchool);
 
-
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    FOTOS = await res.json();
-    console.log('FOTOS cargado:', FOTOS); // ← para depurar
-    return FOTOS;
-  } catch (err) {
-    console.error('Error cargando foto.json:', err);
-    FOTOS = { authors: {}, models: {} };
-    return FOTOS;
-  }
-}
-
-// 4) render inicial
-await loadAuthorPhotoIndex(); // ✅ Espera al índice global de fotos
-
-renderModelsList();
-renderSchoolInfo(currentSchool);
-    
-// ✅ Deep-link: abrir modelo por URL (?open=<id>)
-if(__OPENID){
-  const tryOpen = () => {
-    const found = (MODELS || []).find(m => m.id === __OPENID);
-    if(found){
-      openModel(found);
-      return;
+    // ✅ Deep-link: abrir modelo por URL (?open=<id>)
+    if(__OPENID){
+      const tryOpen = () => {
+        const found = (MODELS || []).find(m => m.id === __OPENID);
+        if(found){
+          openModel(found);
+          return;
+        }
+        setTimeout(tryOpen, 60);
+      };
+      tryOpen();
     }
-    setTimeout(tryOpen, 60);
-  };
-  tryOpen();
-}
-
 
     // 5) marca como cargado
     requestAnimationFrame(() => {
-      document.body.classList.add('loaded');
+      document.body.classList.add("loaded");
     });
+
   }catch(err){
     console.error(err);
   }
 })();
+
 
 });
 
