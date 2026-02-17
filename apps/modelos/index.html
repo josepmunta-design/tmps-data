@@ -2838,7 +2838,33 @@ body.is-embed .panel.right{
   left: 0 !important;
   width: 100vw !important;
   height: 100vh !important;
+
+  overflow-y: auto !important;          /* ✅ ESTE es el scroll */
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
+body.is-embed .panel.right{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(231,237,245,0.28) rgba(255,255,255,0.06);
+}
+body.is-embed .panel.right::-webkit-scrollbar{ width:10px; }
+body.is-embed .panel.right::-webkit-scrollbar-track{
+  background: rgba(255,255,255,0.05);
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+body.is-embed .panel.right::-webkit-scrollbar-thumb{
+  background: linear-gradient(180deg, rgba(231,237,245,0.28), rgba(231,237,245,0.14));
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
+}
+body.is-embed .panel.right::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(180deg, rgba(231,237,245,0.36), rgba(231,237,245,0.18));
+}
+
 
 /* Quita padding general */
 body.is-embed .app{
@@ -2870,8 +2896,9 @@ body.is-embed html{
 }
 
 body.is-embed{
-  overflow-y: auto;
+  overflow: hidden;               /* ✅ el body NO scrollea en embed */
 }
+
 
 /* 1) si algún wrapper centraba, lo anulamos */
 body.is-embed *{
