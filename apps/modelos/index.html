@@ -12,6 +12,7 @@
 <script>
   // ✅ compatibilidad global (evita ReferenceError)
 var IS_EMBED = false;
+var OPEN_ID = "";
   // ✅ evita TDZ (Cannot access before initialization)
 var GH_SCHOOLS = null;
 const IS_GHPAGES = location.hostname.endsWith('github.io');
@@ -3132,16 +3133,14 @@ async function ensureTopojson(timeoutMs = 6000){
 
 
 window.addEventListener('DOMContentLoaded', async () => {
-  // ✅ PARAMS GLOBALES (una sola fuente de verdad)
-  window.__QS = window.__QS || new URLSearchParams(location.search);
-  window.__EMBED  = ["1","true","yes"].includes((window.__QS.get("embed") || "").toLowerCase());
-  window.__OPENID = (window.__QS.get("open") || "").trim();
 
-  if(window.__EMBED){
-    document.body.classList.add("embedMode");
+  const qs = new URLSearchParams(location.search);
+  IS_EMBED = ["1","true","yes"].includes((qs.get("embed") || "").toLowerCase());
+  OPEN_ID  = (qs.get("open") || "").trim();
+
+  if(IS_EMBED){
     document.body.classList.add("is-embed");
   }
-
   // ✅ dependencias primero (evita “a veces sí / a veces no”)
   await ensureD3();
   await ensureTopojson();
@@ -4963,8 +4962,8 @@ resetRightPanelToTop();
 // URL PARAMS (embed)
 // =========================
 window.__QS = window.__QS || new URLSearchParams(location.search);
-window.__EMBED  = ["1","true","yes"].includes((window.__QS.get("embed") || "").toLowerCase());
-window.__OPENID = (window.__QS.get("open") || "").trim();
+window.IS_EMBED  = ["1","true","yes"].includes((window.__QS.get("embed") || "").toLowerCase());
+window.OPEN_ID = (window.__QS.get("open") || "").trim();
 
 // init (local + GitHub)
 // init (local + GitHub)
@@ -4988,7 +4987,7 @@ window.__OPENID = (window.__QS.get("open") || "").trim();
     }
 
 // 4) landing solo si NO embed y no viene open directo
-if(!window.__EMBED && !window.__OPENID){
+if(!window.IS_EMBED && !window.OPEN_ID){
   buildLandingSchools();
   showLanding();
 }else{
@@ -4996,23 +4995,23 @@ if(!window.__EMBED && !window.__OPENID){
 }
 
     // 5) open directo: abrir modelo
-if (window.__OPENID){
+if (window.OPEN_ID){
 
   // Nota: si currentSchool es null, este ensure fallará y no pasa nada (lo atrapamos)
   try{
     if(currentSchool) await ensureSchoolFromGitHub(currentSchool);
   }catch(e){}
 
-await openModel(window.__OPENID);
+await openModel(window.OPEN_ID);
 
   // En embed, forzar scroll arriba tras pintar
-  if(window.__EMBED){
+  if(window.IS_EMBED){
     setTimeout(() => {
       resetRightPanelToTop();
     }, 60);
   }
 }
-if(window.__EMBED){
+if(window.IS_EMBED){
   document.body.classList.add("embedMode", "is-embed");
 }
 
