@@ -3400,13 +3400,15 @@ async function fetchJson(url){
 }
 
 
-window.MODELS_ALL = LOCAL_MODELS.filter(m => !m.hideInModels);
+window.MODELS_ALL = MODELS.filter(m => !m.hideInModels);
+
 
 
 // ✅ El resto de tu código seguirá usando MODELS
 let MODELS = LOCAL_MODELS.filter(m => !m.hideInModels);
 // ✅ Guardar lista completa para embeds / open desde fuera
-window.MODELS_ALL = LOCAL_MODELS.filter(m => !m.hideInModels);
+window.MODELS_ALL = MODELS.filter(m => !m.hideInModels);
+
 
 
 
@@ -3433,13 +3435,17 @@ function hasLocalSchoolModels(label){
 // Carga index de escuelas de GitHub (si falla, no pasa nada)
 async function loadGhSchoolsIndex(){
   try{
-    GH_SCHOOLS = await fetchJson(gh('Core/escuelas/index.json')) || [];
+    GH_SCHOOLS = await fetchJson(gh('Core/escuelas/index.json'));
+    if (!Array.isArray(GH_SCHOOLS)) GH_SCHOOLS = [];
   }catch(e){
     console.warn('No se pudo cargar index de escuelas desde GitHub:', e);
     GH_SCHOOLS = [];
+  }finally{
+    // ✅ clave: para que openModel() pueda iterar aunque uses window.GH_SCHOOLS
+    window.GH_SCHOOLS = GH_SCHOOLS;
   }
-  window.GH_SCHOOLS = GH_SCHOOLS;
 }
+
 
 
 
@@ -3498,11 +3504,14 @@ const school = await fetchJson(gh('Core/' + entry.file));
       }
     }
 
-    GH_SCHOOL_LOADED.add(entry.id);
+GH_SCHOOL_LOADED.add(entry.id);
 
-    // ✅ Asegura visibilidad antes de devolver (micro-wait)
-    // (esto hace que openModel encuentre a la primera incluso si hay render justo en medio)
-    await Promise.resolve();
+// ✅ IMPORTANTÍSIMO: el pool “completo” debe incluir lo que acabas de añadir
+window.MODELS_ALL = MODELS.filter(mm => !mm.hideInModels);
+
+// ✅ Asegura visibilidad antes de devolver (micro-wait)
+await Promise.resolve();
+
 
   })();
 
@@ -4767,7 +4776,8 @@ try{ await loadGhSchoolsIndex?.(); }catch(e){}
 
 let found = null;
 
-for (const s of (GH_SCHOOLS || [])){
+for (const s of (Array.isArray(GH_SCHOOLS) ? GH_SCHOOLS : (window.GH_SCHOOLS || []))){
+
 
   const schoolKey = (s && (s.label || s.id)) ? String(s.label || s.id).trim() : "";
   if(!schoolKey) continue;
