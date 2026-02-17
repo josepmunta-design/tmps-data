@@ -3398,6 +3398,8 @@ async function fetchJson(url){
 
 // ✅ El resto de tu código seguirá usando MODELS
 let MODELS = LOCAL_MODELS.filter(m => !m.hideInModels);
+// ✅ Guardar lista completa para embeds / open desde fuera
+window.MODELS_ALL = MODELS.slice();
 
 
 // Escuelas disponibles en GitHub (solo para poblar el selector)
@@ -4659,19 +4661,36 @@ function sectionIdeasInner(ideas){
 async function openModel(id){
   const target = String(id ?? '').trim();
 
-  // 🔍 busca el modelo
-  let m = MODELS.find(x => String(x?.id ?? '').trim() === target);
+   // 🔍 busca el modelo (primero en el pool filtrado)
+let m =
+  MODELS.find(x => String(x?.id ?? '').trim() === target) ||
+  (window.MODELS_ALL || []).find(x => String(x?.id ?? '').trim() === target);
 
+
+  // ✅ Si no está en la escuela actual, búscalo en el pool completo y cambia de escuela
   if(!m){
-    // 🛟 Reintento escuela (si tu código ya lo tiene, déjalo; aquí va completo)
-    try{
-      await ensureSchoolFromGitHub(currentSchool);
-    }catch(e){}
+    // 1) intenta localizarlo en el pool completo (si existe)
+    const mAll = (Array.isArray(window.MODELS_ALL) ? window.MODELS_ALL : (Array.isArray(MODELS_ALL) ? MODELS_ALL : null));
+    const found = mAll ? mAll.find(x => String(x?.id ?? '').trim() === target) : null;
 
-    m = MODELS.find(x => String(x?.id ?? '').trim() === target);
+    if(found){
+      // 2) cambia escuela a la del modelo (si la tienes) o fuerza "todas"
+      currentSchool = String(found?.grupo ?? '').trim() || "todas";
+
+      // 3) recarga esa escuela / reconstruye MODELS
+      try{ await ensureSchoolFromGitHub(currentSchool); }catch(e){}
+
+      // 4) vuelve a buscar ya con MODELS actualizado
+      m = MODELS.find(x => String(x?.id ?? '').trim() === target) || found;
+    }else{
+      // 5) último intento: fuerza "todas" (por si MODELS_ALL no existe o está incompleto)
+      currentSchool = "todas";
+      try{ await ensureSchoolFromGitHub(currentSchool); }catch(e){}
+      m = MODELS.find(x => String(x?.id ?? '').trim() === target);
+    }
 
     if(!m){
-      console.warn('❌ Modelo no encontrado en MODELS:', target);
+      console.warn('❌ Modelo no encontrado (ni en MODELS ni tras cambiar escuela):', target);
       modelInfoEl.innerHTML = `
         <div class="mp-hint">
           <b>Modelo no encontrado.</b><br>
@@ -4681,6 +4700,7 @@ async function openModel(id){
       return;
     }
   }
+
   // ✅ AÑADE ESTO
   currentModelId = target;
   renderModelsList();
