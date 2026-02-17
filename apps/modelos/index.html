@@ -4658,13 +4658,24 @@ function sectionIdeasInner(ideas){
     // =========================================================
     // 5) Interacción
     // =========================================================
+  function getAllModelsPool(){
+  const all = window.MODELS_ALL;
+  if(Array.isArray(all) && all.length) return all;
+  return MODELS; // fallback
+}
+
 async function openModel(id){
   const target = String(id ?? '').trim();
 
-   // 🔍 busca el modelo (primero en el pool filtrado)
+// 🔍 busca el modelo (primero en el pool filtrado, luego en el pool completo)
+const ALL = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
+  ? window.MODELS_ALL
+  : MODELS;
+
 let m =
   MODELS.find(x => String(x?.id ?? '').trim() === target) ||
-  (window.MODELS_ALL || []).find(x => String(x?.id ?? '').trim() === target);
+  ALL.find(x => String(x?.id ?? '').trim() === target);
+
 
 
   // ✅ Si no está en la escuela actual, búscalo en el pool completo y cambia de escuela
@@ -4680,14 +4691,21 @@ let m =
       // 3) recarga esa escuela / reconstruye MODELS
       try{ await ensureSchoolFromGitHub(currentSchool); }catch(e){}
 
-      // 4) vuelve a buscar ya con MODELS actualizado
-      m = MODELS.find(x => String(x?.id ?? '').trim() === target) || found;
-    }else{
-      // 5) último intento: fuerza "todas" (por si MODELS_ALL no existe o está incompleto)
-      currentSchool = "todas";
-      try{ await ensureSchoolFromGitHub(currentSchool); }catch(e){}
-      m = MODELS.find(x => String(x?.id ?? '').trim() === target);
-    }
+// 4) vuelve a buscar ya con MODELS actualizado
+{
+  const ALL = getAllModelsPool();
+  m = ALL.find(x => String(x?.id ?? '').trim() === target) || found;
+}
+}else{
+  // 5) último intento: fuerza "todas" (por si MODELS_ALL no existe o está incompleto)
+  currentSchool = "todas";
+  try{ await ensureSchoolFromGitHub(currentSchool); }catch(e){}
+
+  // IMPORTANTÍSIMO: ahora busca en pool completo
+  const ALL = getAllModelsPool();
+  m = ALL.find(x => String(x?.id ?? '').trim() === target);
+}
+
 
     if(!m){
       console.warn('❌ Modelo no encontrado (ni en MODELS ni tras cambiar escuela):', target);
