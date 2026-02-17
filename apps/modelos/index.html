@@ -2775,6 +2775,34 @@ body.landing-on{
     animation: none !important;
   }
 }
+/* =========================
+   EMBED MODE (para iframes)
+   ========================= */
+body.embedMode{
+  overflow: hidden;
+}
+
+/* fuera landing y nav */
+body.embedMode #landingOverlay{ display:none !important; }
+body.embedMode .nav-speed{ display:none !important; }
+
+/* esconder panel izquierdo si existe */
+body.embedMode .leftPanel,
+body.embedMode .schoolsPanel,
+body.embedMode .sidePanel{
+  display:none !important;
+}
+
+/* el panel principal a full */
+body.embedMode .appShell{
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+body.embedMode .mainPanel{
+  width: 100% !important;
+  max-width: 100% !important;
+}
 
   </style>
 </head>
@@ -2962,6 +2990,13 @@ async function ensureD3(timeoutMs = 8000){
 }
 
    window.addEventListener('DOMContentLoaded', async () => {
+  const __params = new URLSearchParams(location.search);
+  const __EMBED  = __params.get("embed") === "1";
+  const __OPENID = (__params.get("open") || "").trim();
+
+  if(__EMBED){
+    document.body.classList.add("embedMode");
+  }
 
 await loadAuthorPhotoIndex();
     // =========================================================
@@ -4701,8 +4736,11 @@ function hexToRgba(hex, a = 0.2){
 
     // 2) construye selector combinando locales + GitHub
 buildSchoolOptions();
-buildLandingSchools();
-showLanding();
+
+if(!__EMBED){
+  buildLandingSchools();
+  showLanding();
+}
 
 
 
@@ -4738,6 +4776,18 @@ await loadAuthorPhotoIndex(); // ✅ Espera al índice global de fotos
 renderModelsList();
 renderSchoolInfo(currentSchool);
     
+// ✅ Deep-link: abrir modelo por URL (?open=<id>)
+if(__OPENID){
+  const tryOpen = () => {
+    const found = (MODELS || []).find(m => m.id === __OPENID);
+    if(found){
+      openModel(found);
+      return;
+    }
+    setTimeout(tryOpen, 60);
+  };
+  tryOpen();
+}
 
 
     // 5) marca como cargado
