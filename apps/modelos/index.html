@@ -21,10 +21,36 @@ const IS_GHPAGES =
   HOST.endsWith('github.io') ||
   HOST.endsWith('tumentorpsicologia.com');
 
+
 const DATA_BASE = IS_GHPAGES
   ? (location.origin + '/data')
   : 'https://cdn.jsdelivr.net/gh/josepmunta-design/tmps-data@main/data';
 
+  // =========================
+// Auto cache-buster por commit (GitHub)
+// =========================
+const GH_OWNER = "josepmunta-design";
+const GH_REPO  = "tmps-data";
+
+let __ASSET_VER = "";
+
+async function loadAssetVersion(){
+  try{
+    const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/commits?per_page=1`;
+    const res = await fetch(url, { cache: "no-store" });
+    if(!res.ok) throw new Error("GH API fail");
+
+    const data = await res.json();
+    const sha = data?.[0]?.sha || "";
+    return sha ? sha.slice(0,12) : "";
+
+  }catch(e){
+    // fallback: cambia cada hora si GitHub falla
+    return String(Math.floor(Date.now() / 3600000));
+  }
+}
+
+  
 function gh(p){
   return `${DATA_BASE}/${String(p).replace(/^\/+/, '')}`;
 }
@@ -3137,7 +3163,8 @@ console.log('✅ script fotos cargado', location.href);
 
 async function loadAuthorPhotoIndex(){
 
-  const url = 'https://cdn.jsdelivr.net/gh/josepmunta-design/tmps-data@main/data/Core/fotos/foto.json';
+  const url = `https://cdn.jsdelivr.net/gh/josepmunta-design/tmps-data@main/data/Core/fotos/foto.json?v=${__ASSET_VER || ""}`;
+
 
 
   try{
@@ -3200,7 +3227,8 @@ window.getAuthorPhoto = function(authorName){
 
   if (!file) return null;
 
-  return `${DATA_BASE}/Core/fotos/${file}`;
+ return `${DATA_BASE}/Core/fotos/${file}?v=${__ASSET_VER}`;
+
 
 };
 
@@ -3213,7 +3241,8 @@ window.getModelPhoto = function(modelId, authorName){
   if (models && modelId){
     const fileById = models[String(modelId).trim()];
     if (fileById){
-      return `${DATA_BASE}/Core/fotos/${fileById}`;
+     return `${DATA_BASE}/Core/fotos/${fileById}?v=${__ASSET_VER}`;
+
 
     }
   }
@@ -3272,6 +3301,8 @@ async function ensureTopojson(timeoutMs = 6000){
 
 window.addEventListener('DOMContentLoaded', async () => {
 
+__ASSET_VER = await loadAssetVersion(); // ✅ antes de cargar foto.json y fotos
+  
   const qs = new URLSearchParams(location.search);
   IS_EMBED = ["1","true","yes"].includes((qs.get("embed") || "").toLowerCase());
   OPEN_ID  = (qs.get("open") || "").trim();
