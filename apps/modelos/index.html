@@ -15,7 +15,12 @@ var IS_EMBED = false;
 var OPEN_ID = "";
   // ✅ evita TDZ (Cannot access before initialization)
 var GH_SCHOOLS = null;
-const IS_GHPAGES = location.hostname.endsWith('github.io');
+const HOST = location.hostname.toLowerCase();
+
+const IS_GHPAGES =
+  HOST.endsWith('github.io') ||
+  HOST.endsWith('tumentorpsicologia.com');
+
 
 const DATA_BASE = IS_GHPAGES
   ? (location.origin + '/data')
