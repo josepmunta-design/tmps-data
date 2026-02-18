@@ -21,9 +21,7 @@ const IS_GHPAGES = HOST.endsWith('github.io');
 
 
 
-const DATA_BASE = IS_GHPAGES
-  ? (location.origin + '/data')
-  : 'https://cdn.jsdelivr.net/gh/josepmunta-design/tmps-data@main/data';
+
 
   // =========================
 // Auto cache-buster por commit (GitHub)
@@ -31,24 +29,29 @@ const DATA_BASE = IS_GHPAGES
 const GH_OWNER = "josepmunta-design";
 const GH_REPO  = "tmps-data";
 
-let __ASSET_VER = "";
+let __ASSET_VER = ""; // SHA corto (12)
 
 async function loadAssetVersion(){
   try{
     const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/commits?per_page=1`;
-    const res = await fetch(url, { cache: "no-store" });
-    if(!res.ok) throw new Error("GH API fail");
-
-    const data = await res.json();
-    const sha = data?.[0]?.sha || "";
-    return sha ? sha.slice(0,12) : "";
-
+    const r = await fetch(url, { cache: "no-store" });
+    const j = await r.json();
+    __ASSET_VER = j?.[0]?.sha?.slice(0,12) || "";
   }catch(e){
-    // fallback: cambia cada hora si GitHub falla
-    return String(Math.floor(Date.now() / 3600000));
+    __ASSET_VER = "";
   }
 }
 
+// Base jsDelivr “versionada” por commit
+function cdnBase(){
+  // si falla el SHA, cae a @main (no rompe nada)
+  const tag = __ASSET_VER ? `@${__ASSET_VER}` : "@main";
+  return `https://cdn.jsdelivr.net/gh/${GH_OWNER}/${GH_REPO}${tag}`;
+}
+
+const DATA_BASE = IS_GHPAGES
+  ? (location.origin + '/data')
+  : (cdnBase() + '/data');
   
 function gh(p){
   return `${DATA_BASE}/${String(p).replace(/^\/+/, '')}`;
@@ -3299,8 +3302,10 @@ async function ensureTopojson(timeoutMs = 6000){
 
 
 window.addEventListener('DOMContentLoaded', async () => {
+  
 
-__ASSET_VER = await loadAssetVersion(); // ✅ antes de cargar foto.json y fotos
+await loadAssetVersion(); // ✅ antes de cargar foto.json y fotos
+
   
   const qs = new URLSearchParams(location.search);
   IS_EMBED = ["1","true","yes"].includes((qs.get("embed") || "").toLowerCase());
