@@ -3165,7 +3165,7 @@ console.log('✅ script fotos cargado', location.href);
 
 async function loadAuthorPhotoIndex(){
 
-  const url = `https://cdn.jsdelivr.net/gh/josepmunta-design/tmps-data@main/data/Core/fotos/foto.json?v=${__ASSET_VER || ""}`;
+const url = `${cdnBase()}/data/Core/fotos/foto.json?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
 
 
 
@@ -4555,24 +4555,25 @@ const IDX = window.AUTHOR_PHOTO_INDEX || { authors:{}, models:{} };
 // Busca por autor (con la MISMA normalización que usas en el index)
 const authorKey = normAuthorKey(autorFotoKey);
 if (IDX.authors?.[authorKey]) {
-  fotoUrl = `${DATA_BASE}/Core/fotos/${IDX.authors[authorKey]}`;
-
+  fotoUrl = `${DATA_BASE}/Core/fotos/${IDX.authors[authorKey]}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
 }
+
 
 // Fallback por modelo
 if (!fotoUrl) {
   const modelKey = String(m.id ?? '').trim();
   if (IDX.models?.[modelKey]) {
-   fotoUrl = `${DATA_BASE}/Core/fotos/${IDX.models[modelKey]}`;
-
+    fotoUrl = `${DATA_BASE}/Core/fotos/${IDX.models[modelKey]}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
   }
 }
+
 
 const authorHTML =
   '<div class="mp-author mp-author-wrap">' +
 
     (fotoUrl
-      ? '<img class="mp-author-photo" src="' + fotoUrl + '" alt="' + escapeHtml(autoresDisplay) + '" loading="lazy" decoding="async">'
+      ? '<img class="mp-author-photo" src="' + fotoUrl + (window.__ASSET_VER ? ('?v=' + window.__ASSET_VER) : '') + '" alt="' + escapeHtml(autoresDisplay) + '" loading="lazy" decoding="async">'
+
       : '<div class="mp-author-photo" aria-hidden="true"></div>'
     ) +
     '<div class="mp-author-text">' +
