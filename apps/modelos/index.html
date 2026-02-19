@@ -30,15 +30,21 @@ const GH_OWNER = "josepmunta-design";
 const GH_REPO  = "tmps-data";
 
 let __ASSET_VER = ""; // SHA corto (12)
+window.__ASSET_VER = ""; // ✅ también global, por consistencia
+
 
 async function loadAssetVersion(){
   try{
     const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/commits?per_page=1`;
     const r = await fetch(url, { cache: "no-store" });
     const j = await r.json();
-    __ASSET_VER = j?.[0]?.sha?.slice(0,12) || "";
+ __ASSET_VER = j?.[0]?.sha?.slice(0,12) || "";
+window.__ASSET_VER = __ASSET_VER;
+
   }catch(e){
-    __ASSET_VER = "";
+__ASSET_VER = "";
+window.__ASSET_VER = "";
+
   }
 }
 
@@ -49,9 +55,10 @@ function cdnBase(){
   return `https://cdn.jsdelivr.net/gh/${GH_OWNER}/${GH_REPO}${tag}`;
 }
 
-const DATA_BASE = IS_GHPAGES
+let DATA_BASE = IS_GHPAGES
   ? (location.origin + '/data')
   : (cdnBase() + '/data');
+
   
 function gh(p){
   return `${DATA_BASE}/${String(p).replace(/^\/+/, '')}`;
@@ -457,6 +464,48 @@ opacity: .75;
       border:1px solid rgba(255,255,255,0.10);
       color:#dfe6f1;
     }
+/* =========================
+   Fade al cambiar de modelo
+   ✅ SOLO smartphone/tablet (<=980px)
+   ========================= */
+
+/* Desktop: SIN fade (por defecto) */
+#modelInfo,
+.modelPanel{
+  transition: none !important;
+  will-change: auto !important;
+}
+#modelInfo.is-loading,
+.modelPanel.is-loading{
+  opacity: 1 !important;
+  transform: none !important;
+  pointer-events: auto !important;
+}
+
+/* Móvil: CON fade */
+@media (max-width: 980px){
+  #modelInfo{
+    transition: opacity .22s ease, transform .22s ease;
+    will-change: opacity, transform;
+  }
+
+  #modelInfo.is-loading{
+    opacity: 0;
+    transform: translateY(4px);
+    pointer-events: none;
+  }
+
+  .modelPanel{
+    transition: opacity .22s ease, transform .22s ease;
+  }
+
+  .modelPanel.is-loading{
+    opacity: 0;
+    transform: translateY(4px);
+    pointer-events: none;
+  }
+}
+
 
     /* ===== Panel derecho: modelPanel (doc) ===== */
     .model-panel{ padding:0; overflow:hidden; }
@@ -3305,6 +3354,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   
 
 await loadAssetVersion(); // ✅ antes de cargar foto.json y fotos
+// ✅ IMPORTANTÍSIMO: recalcula DATA_BASE ya con el SHA cargado
+DATA_BASE = IS_GHPAGES
+  ? (location.origin + '/data')
+  : (cdnBase() + '/data');
 
   
   const qs = new URLSearchParams(location.search);
@@ -3898,6 +3951,19 @@ if(!full) throw new Error(`No se pudo cargar JSON del modelo. Probadas: ${tryUrl
     const modelsListEl = document.getElementById('modelsList');
     const countLine = document.getElementById('countLine');
     const modelInfoEl = document.getElementById('modelInfo');
+  function infoFadeOut(){
+  if(!modelInfoEl) return;
+  modelInfoEl.classList.add('is-loading');
+}
+
+function infoFadeIn(){
+  if(!modelInfoEl) return;
+  // 2 RAF = garantiza que el browser “ve” el render antes de animar
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    modelInfoEl.classList.remove('is-loading');
+  }));
+}
+
 // ================= MODO LECTURA PANEL DERECHO (SUAVE) =================
 
 const leftPanel  = document.querySelector('.panel.left');
@@ -4565,7 +4631,7 @@ const authorHTML =
   '<div class="mp-author mp-author-wrap">' +
 
     (fotoUrl
-      ? '<img class="mp-author-photo" src="' + fotoUrl + (window.__ASSET_VER ? ('?v=' + window.__ASSET_VER) : '') + '" alt="' + escapeHtml(autoresDisplay) + '" loading="lazy" decoding="async">'
+? '<img class="mp-author-photo" src="' + fotoUrl + '" alt="' + escapeHtml(autoresDisplay) + '" loading="lazy" decoding="async">'
 
       : '<div class="mp-author-photo" aria-hidden="true"></div>'
     ) +
@@ -4997,81 +5063,58 @@ function getAllModelsPool(){
 
 
 async function openModel(id){
-  const target = String(id ?? '').trim();
-  if(!target) return;
+  // ✅ 1) Fade OUT inmediato
+  infoFadeOut();
 
-  // helper: busca el modelo en los pools actuales
-  const findInPools = () => {
-    const pool = getAllModelsPool();
-    return pool.find(x => String(x?.id ?? '').trim() === target) || null;
-  };
+  try{
+    // (tu lógica actual: localizar modelo, cargar escuela GH si hace falta, etc.)
+    currentModelId = id;
 
-  // 1) intenta con lo ya cargado
-  let m = findInPools();
+    // ✅ si tu modelo puede estar en una escuela GH aún no cargada:
+    // (si ya lo haces, deja tu versión)
+    // await ensureSchoolFromGitHub(currentSchool);
 
-  // 2) si no aparece, intenta cargar escuelas desde GH (una a una) y re-buscar
-  if(!m){
-    // A) primero intenta con la escuela actualmente seleccionada
-    if (currentSchool && currentSchool !== 'todas'){
-      try{
-        await ensureSchoolFromGitHub(currentSchool);
-        m = findInPools();
-      }catch(e){}
-    }
+    // Busca en pool completo
+    const ALL = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
+      ? window.MODELS_ALL
+      : MODELS;
 
-    // B) si aún no aparece, recorre el índice GH_SCHOOLS
+    let m =
+      MODELS.find(x => String(x?.id ?? '').trim() === String(id).trim()) ||
+      ALL.find(x => String(x?.id ?? '').trim() === String(id).trim());
+
     if(!m){
-      const ghList = Array.isArray(window.GH_SCHOOLS) ? window.GH_SCHOOLS : (Array.isArray(GH_SCHOOLS) ? GH_SCHOOLS : []);
-
-      for (const s of ghList){
-        const label = s?.label || s?.id;
-        if(!label) continue;
-
-        try{
-          await ensureSchoolFromGitHub(label);
-        }catch(e){}
-
-        m = findInPools();
-        if(m) break;
-      }
+      console.warn("Modelo no encontrado:", id);
+      renderModelInfo(null);
+      return;
     }
+
+    // ✅ 2) Expande a “full” si hace falta
+    m = await ensureModelFull(m);
+
+    // ✅ 3) Render ficha
+    renderModelInfo(m);
+
+    // ✅ 4) Mini mapa (si existe el SVG)
+    const svgEl = document.getElementById('miniMapSvgBg');
+    if (svgEl){
+      try{ await miniRender(svgEl, m); }catch(e){}
+    }
+
+    // ✅ 5) Marca activo en lista (si lo haces en otro lado, ok)
+    renderModelsList();
+
+    // ✅ 6) Sticky header: rescaneo tras render
+    if (window.__SMH) window.__SMH.rescan();
+
+  }catch(err){
+    console.error("openModel error:", err);
+  }finally{
+    // ✅ 7) Fade IN garantizado (siempre)
+    infoFadeIn();
   }
-
-  // 3) si sigue sin aparecer, no rompas UI
-  if(!m){
-    console.warn('⚠️ openModel: no encontrado', target);
-    return;
-  }
-
-  // 4) ya tenemos algo: marca currentModelId y activa item en lista
-  currentModelId = String(m.id ?? '').trim();
-
-// 6) render INMEDIATO (resumen)
-renderModelInfo(m);
-
-// 5) enriquece en segundo plano y repinta
-ensureModelFull(m).then(full => {
-  if(full && full.id === m.id){
-    renderModelInfo(full);
-  }
-}).catch(()=>{});
-
-
-if (document.body.classList.contains("is-embed") || document.body.classList.contains("embedMode")) {
-  requestAnimationFrame(() => {
-    window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-  });
 }
 
-  // 7) repinta lista con active (si estamos en modo normal)
-  try{ renderModelsList(); }catch(e){}
-
-  // 8) scroll arriba del panel derecho para que se vea el inicio
-  const rp = document.querySelector('.panel.right');
-  if (rp) rp.scrollTop = 0;
-}
 function resetRightPanelToTop(){
 
   // panel derecho
