@@ -3372,13 +3372,21 @@ DATA_BASE = IS_GHPAGES
   await ensureTopojson();
 
 await loadAuthorPhotoIndex();
-  // ✅ índice GH_SCHOOLS: útil, pero NO puede romper el render si falla
+
+// ✅ GH_SCHOOLS: útil, pero JAMÁS debe romper el render
 try{
-  await loadGhSchoolsIndex();
+  const idx = await loadGhSchoolsIndex();      // que devuelva un objeto
+  if(idx && typeof idx === "object"){
+    GH_SCHOOLS = idx;                          // ✅ la variable que usa tu app
+  }else{
+    console.warn("[GH_SCHOOLS] respuesta inválida, uso {}");
+    GH_SCHOOLS = GH_SCHOOLS && typeof GH_SCHOOLS === "object" ? GH_SCHOOLS : {};
+  }
 }catch(e){
   console.warn("[GH_SCHOOLS] no se pudo cargar (continúo sin él):", e);
-  window.GH_SCHOOLS = window.GH_SCHOOLS || {};
+  GH_SCHOOLS = GH_SCHOOLS && typeof GH_SCHOOLS === "object" ? GH_SCHOOLS : {};
 }
+
     // =========================================================
     // 1) COLORES de escuelas (puedes copiar los tuyos)
     // =========================================================
@@ -3800,7 +3808,8 @@ const school = await fetchJson(gh('Core/' + entry.file));
 
     const summaries = (school.modelos || []).map(m => ({
       ...m,
-      grupo: school.label || schoolLabel
+      grupo: String(school.label || schoolLabel).trim()
+
     }));
 
     // Añade a MODELS sin duplicar
@@ -4354,11 +4363,17 @@ const schools = [...set].sort((a,b)=>{
 }
 
 
-    function filteredModelsBySchool(grupo){
-      return MODELS
-        .filter(m => m.grupo === grupo)
-        .sort((a,b) => (+a.year||0) - (+b.year||0) || String(a.label).localeCompare(String(b.label)));
-    }
+function filteredModelsBySchool(grupo){
+  const target = normSchoolName(grupo);
+
+  return MODELS
+    .filter(m => normSchoolName(m.grupo) === target)
+    .sort((a,b) =>
+      (+a.year||0) - (+b.year||0) ||
+      String(a.label).localeCompare(String(b.label),'es')
+    );
+}
+
 
  function renderModelsList(){
 
@@ -5184,27 +5199,31 @@ function scrollLeftPanelToStickyPoint(){
 
 
 schoolSelect.addEventListener('change', async () => {
+  currentSchool = schoolSelect.value;
+  currentModelId = null;
+
+  // 1) Panel derecho en modo "escuela" + top limpio (instantáneo)
+  renderSchoolInfo(currentSchool);
+  resetRightPanelToTop();
+
+  // 2) Intenta traer modelos de GitHub, pero NO bloquees si falla
   try{
-    currentSchool = schoolSelect.value;
-    currentModelId = null;
-
-    // 👇 si es escuela nueva (sin modelos locales), la trae de GitHub
     await ensureSchoolFromGitHub(currentSchool);
+  }catch(err){
+    console.warn('[ensureSchoolFromGitHub] fallo, sigo con lo local:', err);
+  }
 
-    renderModelsList();
+  // 3) Render de lista (con lo que haya: GH + local)
+  renderModelsList();
 
-    // ✅ mantiene el selector arriba fijo y la primera tarjeta justo debajo (sin baile)
+  // 4) Ajuste sticky sin baile (doble RAF para asegurar layout)
+  requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       scrollLeftPanelToStickyPoint();
     });
-
- renderSchoolInfo(currentSchool);
-resetRightPanelToTop();
-
-  }catch(err){
-    console.error(err);
-  }
+  });
 });
+
 
 
 
