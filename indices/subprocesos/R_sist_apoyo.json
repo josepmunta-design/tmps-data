@@ -1,8 +1,31 @@
 {
   "subprocesoId": "R_sist_apoyo",
-  "updatedAt": "2026-02-19T11:28:18.731Z",
-  "totalModelos": 10,
+  "updatedAt": "2026-02-19T11:31:44.330Z",
+  "totalModelos": 11,
   "modelos": [
+    {
+      "modelId": "whanau-ora-modelo-maori-2000",
+      "modelLabel": "Whānau Ora (modelo maorí de bienestar y psicoterapia)",
+      "modelGrupo": "Otros",
+      "modelAutores": "Desarrollos maoríes en salud mental",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_whanau_redes",
+          "nombre": "Movilización de redes comunitarias",
+          "texto": "Procedimiento que activa recursos externos como líderes comunitarios, organizaciones maoríes o redes de apoyo cultural, ampliando el sistema de sostén más allá del espacio terapéutico individual y fortaleciendo agencia colectiva y corresponsabilidad relacional. Referencia: Ministry of Health NZ (2014).",
+          "sub": "R_sist_apoyo",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_whanau_invitar_miembro",
+          "nombre": "Invitar a un miembro clave de la whānau a la sesión",
+          "texto": "Propuesta concreta de incorporar a un familiar significativo para ampliar sostén emocional y redistribuir carga relacional. Este pequeño movimiento altera la dinámica individualizante del tratamiento y fortalece co-regulación interpersonal. Referencia: Ministry of Health NZ (2014).",
+          "sub": "R_sist_apoyo",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
       "modelLabel": "Terapia dialéctico–conductual (DBT)",

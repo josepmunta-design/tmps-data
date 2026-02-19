@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_coregulacion",
-  "updatedAt": "2026-02-19T11:28:18.731Z",
-  "totalModelos": 23,
+  "updatedAt": "2026-02-19T11:31:44.330Z",
+  "totalModelos": 24,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -63,6 +63,36 @@
           "codigo": "m_kyokan_presencia_contenida",
           "nombre": "Compartir presencia emocional contenida",
           "texto": "Expresión mínima y contenida de emoción por parte del terapeuta (por ejemplo, tono más cálido o mirada compasiva) que comunica co-experiencia sin desplazar el foco del paciente, fortaleciendo sensación de vínculo seguro. Referencia: Rogers, C. R. (1951); Kawai, H. (1982).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "whanau-ora-modelo-maori-2000",
+      "modelLabel": "Whānau Ora (modelo maorí de bienestar y psicoterapia)",
+      "modelGrupo": "Otros",
+      "modelAutores": "Desarrollos maoríes en salud mental",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_whanau_reunion_familiar",
+          "nombre": "Reuniones terapéuticas con participación de la whānau",
+          "texto": "Intervenciones clínicas que involucran activamente a miembros significativos de la familia extensa para restaurar cohesión, clarificar roles y reforzar apoyo colectivo. Estas reuniones permiten desplazar el foco del síntoma individual hacia dinámicas relacionales compartidas, interrumpir ciclos disfuncionales y fortalecer regulación interpersonal en vivo. Referencia: Ministry of Health NZ (2014). Whānau Ora Framework.",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_whanau_invitar_miembro",
+          "nombre": "Invitar a un miembro clave de la whānau a la sesión",
+          "texto": "Propuesta concreta de incorporar a un familiar significativo para ampliar sostén emocional y redistribuir carga relacional. Este pequeño movimiento altera la dinámica individualizante del tratamiento y fortalece co-regulación interpersonal. Referencia: Ministry of Health NZ (2014).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_whanau_logros_colectivos",
+          "nombre": "Celebrar pequeños logros familiares compartidos",
+          "texto": "Reconocimiento explícito de avances alcanzados por la whānau como unidad, reforzando cohesión, motivación colectiva y regulación emocional positiva compartida. Referencia: Ministry of Health NZ (2014).",
           "sub": "R_coregulacion",
           "tipo": "micro"
         }
