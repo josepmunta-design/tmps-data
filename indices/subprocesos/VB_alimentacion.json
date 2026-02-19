@@ -1,8 +1,31 @@
 {
   "subprocesoId": "VB_alimentacion",
-  "updatedAt": "2026-02-19T08:04:57.009Z",
-  "totalModelos": 3,
+  "updatedAt": "2026-02-19T09:31:20.012Z",
+  "totalModelos": 4,
   "modelos": [
+    {
+      "modelId": "psicologia-ayurvedica-moderna-1951",
+      "modelLabel": "Ayurveda y mente (psicología ayurvédica moderna)",
+      "modelGrupo": "otros",
+      "modelAutores": "Tradición Ayurveda (institucionalización moderna)",
+      "modelYear": 1951,
+      "items": [
+        {
+          "codigo": "p_ayurveda_dieta",
+          "nombre": "Intervención dietética personalizada",
+          "texto": "Procedimiento clínico que modifica cualidades de la dieta (ligera/pesada, caliente/fría, seca/oleosa) según la constitución y el desequilibrio presente, entendiendo que la alimentación influye directamente en claridad mental, estabilidad emocional y energía, restaurando equilibrio metabólico que sostiene regulación psicológica. Referencia: Charaka Samhita; Sharma, P. V. (1992).",
+          "sub": "VB_alimentacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ayurveda_ajuste_alimentario",
+          "nombre": "Microajuste alimentario correctivo",
+          "texto": "Pequeña modificación puntual de la cualidad de una comida (más ligera, más caliente, menos estimulante) cuando se detecta aumento de agitación o pesadez mental, utilizando la alimentación como modulador inmediato del estado psicofísico. Referencia: Sharma (1992).",
+          "sub": "VB_alimentacion",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
       "modelLabel": "Terapia dialéctico–conductual (DBT)",

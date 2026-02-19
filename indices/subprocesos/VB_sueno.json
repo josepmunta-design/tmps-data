@@ -1,8 +1,38 @@
 {
   "subprocesoId": "VB_sueno",
-  "updatedAt": "2026-02-19T08:04:57.009Z",
-  "totalModelos": 4,
+  "updatedAt": "2026-02-19T09:31:20.012Z",
+  "totalModelos": 5,
   "modelos": [
+    {
+      "modelId": "psicologia-ayurvedica-moderna-1951",
+      "modelLabel": "Ayurveda y mente (psicología ayurvédica moderna)",
+      "modelGrupo": "otros",
+      "modelAutores": "Tradición Ayurveda (institucionalización moderna)",
+      "modelYear": 1951,
+      "items": [
+        {
+          "codigo": "p_ayurveda_dinacharya",
+          "nombre": "Dinacharya (regulación de rutinas diarias)",
+          "texto": "Procedimiento estructurado que establece horarios regulares de sueño, alimentación, higiene, movimiento y descanso adaptados a la constitución individual, con el objetivo de estabilizar ritmos biológicos, reducir fluctuaciones emocionales y crear una base regulatoria estable que facilite equilibrio mental sostenido. Referencia: Charaka Samhita; Sharma, P. V. (1992).",
+          "sub": "VB_sueno",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ayurveda_registro_sueno",
+          "nombre": "Registro de ritmos de sueño",
+          "texto": "Registro simple de horarios de sueño y calidad percibida durante la semana para identificar irregularidades que incrementen desequilibrio vata o pitta, permitiendo intervenciones concretas sobre ritmos antes de profundizar en trabajo emocional complejo. Referencia: Charaka Samhita; Sharma (1992).",
+          "sub": "VB_sueno",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ayurveda_ritual_nocturno",
+          "nombre": "Ritual nocturno de desaceleración",
+          "texto": "Secuencia breve y repetible antes de dormir que incluye reducción de estímulos, respiración calmante y desconexión progresiva de actividad cognitiva intensa para facilitar transición fisiológica hacia descanso reparador y reducir hiperactivación mental nocturna. Referencia: Charaka Samhita.",
+          "sub": "VB_sueno",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "cbti-insomnio-cronico",
       "modelLabel": "Terapia cognitivo-conductual para el insomnio (CBT-I)",
