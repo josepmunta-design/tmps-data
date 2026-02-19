@@ -4405,30 +4405,57 @@ return `
 `;
 
   }).join('');
+  // ✅ Prefetch: reduce muchísimo el “primer click” en cada escuela
+  setTimeout(() => {
+    try{
+      const pre = list.slice(0, 6);
+      for (const mm of pre){
+        // lanza en background (no await)
+        ensureModelFull(mm).catch(()=>{});
+      }
+    }catch(e){}
+  }, 0);
 
   // 2) Delegación de eventos (se engancha una sola vez)
   if(!modelsListEl.__boundClick){
     modelsListEl.__boundClick = true;
 
-    modelsListEl.addEventListener('click', async (evt) => {
-      const item = evt.target.closest('.mi-item');
-      if(!item) return;
+  modelsListEl.addEventListener('click', async (evt) => {
+  const item = evt.target.closest('.mi-item');
+  if(!item) return;
 
-      const raw = item.getAttribute('data-id') || '';
-      const id = decodeURIComponent(raw);
+  const raw = item.getAttribute('data-id') || '';
+  const id = decodeURIComponent(raw);
 
-      // evita doble clic accidental mientras carga
-      if (modelsListEl.__loading) return;
-      modelsListEl.__loading = true;
+  // evita doble clic accidental mientras carga
+  if (modelsListEl.__loading) return;
+  modelsListEl.__loading = true;
 
-      try{
-        await openModel(id);
-      }catch(err){
-        console.error('openModel falló:', id, err);
-      }finally{
-        modelsListEl.__loading = false;
-      }
-    });
+  try{
+    // ✅ 1) pinta selección INMEDIATA (sin esperar red)
+    currentModelId = id;
+
+    // quita active del resto (rápido)
+    modelsListEl.querySelectorAll('.mi-item.active').forEach(el => el.classList.remove('active'));
+    item.classList.add('active');
+
+    // ✅ 2) feedback visual en panel derecho antes del fetch
+    infoFadeOut();
+
+    // ✅ 3) cede un frame para que el navegador renderice (esto mata el “lag percibido”)
+    await new Promise(r => requestAnimationFrame(r));
+
+    // ✅ 4) carga real
+    await openModel(id);
+
+  }catch(err){
+    console.error('openModel falló:', id, err);
+  }finally{
+    modelsListEl.__loading = false;
+    infoFadeIn(); // por si openModel no lo hace siempre
+  }
+});
+
   }
 }
 
