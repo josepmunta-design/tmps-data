@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_reparacionRelacional",
-  "updatedAt": "2026-02-19T11:31:44.330Z",
-  "totalModelos": 37,
+  "updatedAt": "2026-02-19T11:34:56.129Z",
+  "totalModelos": 38,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -21,6 +21,50 @@
           "codigo": "m_naikan_reparacion",
           "nombre": "Pequeño gesto reparador",
           "texto": "Tras una revisión relevante, se propone un gesto realista (mensaje, agradecimiento, devolución pendiente, conducta de cuidado) alineado con lo visto, sin forzar reconciliaciones imposibles.",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-comunitaria-ubuntu-1995",
+      "modelLabel": "Psicoterapia comunitaria basada en Ubuntu",
+      "modelGrupo": "Otros",
+      "modelAutores": "Desarrollos clínicos africanos (África austral)",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_ubuntu_mediacion_restaurativa",
+          "nombre": "Mediación restaurativa",
+          "texto": "Intervención orientada a restaurar vínculos dañados mediante reconocimiento del daño, asunción de responsabilidad y compromiso de reparación. El foco no es castigo ni análisis intrapsíquico, sino reconstrucción del equilibrio moral y relacional en la comunidad. Referencia: Louw, D. (2010).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ubuntu_reconocimiento_publico",
+          "nombre": "Restitución pública del reconocimiento",
+          "texto": "Acto simbólico o explícito mediante el cual la comunidad reafirma la dignidad y pertenencia de un miembro tras conflicto o exclusión, fortaleciendo identidad relacional y cohesión grupal. Referencia: Louw, D. (2010).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ubuntu_reconocimiento_dano",
+          "nombre": "Reconocimiento público del daño causado",
+          "texto": "Acto verbal explícito en el que la persona reconoce el impacto de su conducta en otros miembros de la comunidad, facilitando reparación y restauración del equilibrio moral colectivo. Referencia: Mkhize, N. (2004).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ubuntu_perdon",
+          "nombre": "Facilitar petición directa de perdón",
+          "texto": "Intervención que guía a la persona a formular una solicitud clara de perdón ante el grupo, permitiendo experiencia emocional correctiva y restauración de dignidad mutua. Referencia: Mkhize, N. (2004).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ubuntu_afirmacion_pertenencia",
+          "nombre": "Afirmar públicamente la pertenencia al grupo",
+          "texto": "Declaración explícita de que la persona sigue siendo parte de la comunidad pese al conflicto, reforzando continuidad identitaria y reduciendo vivencias de exclusión permanente. Referencia: Louw, D. (2010).",
           "sub": "R_reparacionRelacional",
           "tipo": "micro"
         }
