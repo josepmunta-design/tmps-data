@@ -1,0 +1,209 @@
+{
+  "id": "psicologia-ayurvedica-moderna-1951",
+  "grupo": "otros",
+  "label": "Ayurveda y mente (psicología ayurvédica moderna)",
+  "year": 1951,
+  "importance": 2,
+  "autores": "Tradición Ayurveda (institucionalización moderna)",
+  "universidad": "Banaras Hindu University",
+  "ciudad": "Varanasi",
+  "pais": "India",
+  "lat": 25.317645,
+  "lon": 82.973915,
+
+  "descripcion": "La psicología ayurvédica moderna surge del diálogo entre el sistema tradicional del Ayurveda y la institucionalización académica y médica de la India en el siglo XX, especialmente tras la independencia del país. Desde esta perspectiva, la mente no se concibe como una entidad aislada, sino como parte de un sistema integrado cuerpo–mente–entorno, organizado en torno a principios como los doshas (vata, pitta, kapha) y las gunas (sattva, rajas, tamas), que describen tendencias dinámicas del funcionamiento psicofísico. El malestar psicológico se entiende como un desequilibrio en estos sistemas, influido por el estilo de vida, la alimentación, el ritmo diario, las relaciones y el contexto vital. La intervención no se centra exclusivamente en la exploración verbal del conflicto, sino en la restauración del equilibrio mediante cambios en hábitos, prácticas contemplativas, regulación del sueño, dieta, ejercicio, respiración y actitudes mentales. En contextos contemporáneos, la psicología ayurvédica ha influido en enfoques de psicoterapia integrativa, medicina mente-cuerpo y programas de bienestar que buscan una comprensión más holística del sufrimiento psicológico.",
+
+  "influencias": [
+    "Filosofía védica y upanishádica",
+    "Sistema Ayurveda clásico (doshas, gunas, prakriti)",
+    "Yoga clásico y psicología del Yoga (Patañjali)",
+    "Medicina tradicional india y salud integral",
+    "Diálogo moderno entre psicología, psiquiatría y medicina integrativa"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se concibe como una expresión del equilibrio dinámico entre cuerpo, mente y entorno, no como un fenómeno exclusivamente intrapsíquico. El conocimiento terapéutico es contextual, experiencial y parcialmente transmitido desde una tradición médica-filosófica milenaria, pero adaptado al diálogo contemporáneo con la medicina y la psicología académica. El ser humano es entendido como un sistema autoorganizado en constante interacción con su entorno, cuya salud depende de la armonía entre constitución individual (prakriti), hábitos y contexto vital. El cambio no se impone desde la confrontación cognitiva, sino que emerge al restablecer condiciones de equilibrio fisiológico, emocional y conductual. La relación terapéutica actúa como guía experta y acompañamiento regulador, integrando orientación técnica con sensibilidad a la singularidad constitucional del paciente.",
+    "teoriaFormal": "El self se entiende como una configuración psicofísica determinada por la interacción de los doshas y modulada por las gunas, que influyen en temperamento, reactividad emocional y estilo cognitivo. El sufrimiento psicológico se mantiene cuando existe un desequilibrio sostenido en estos principios, producto de hábitos desajustados, estrés prolongado o desconexión de la naturaleza constitucional propia. El cambio ocurre mediante la restauración progresiva del equilibrio a través de intervenciones sobre estilo de vida, prácticas corporales, regulación emocional y cultivo de cualidades mentales asociadas a sattva (claridad y equilibrio).",
+    "teoriaClinica": "El caso se conceptualiza evaluando la constitución individual (prakriti), el estado actual de desequilibrio (vikriti), los patrones de vida y las condiciones ambientales que mantienen la desarmonía. Se priorizan intervenciones graduales orientadas a regular sueño, alimentación, respiración, movimiento y hábitos mentales, antes o en paralelo al trabajo emocional profundo. El progreso terapéutico se evalúa por la mejora en estabilidad fisiológica, reducción de reactividad emocional y aumento de claridad mental, coherentes con un mayor predominio de sattva y una disminución de estados rajas o tamas excesivos."
+  },
+
+  "mjps": ["RF","RE","AP","RI","N","I","AG","R"],
+
+  "procedimientos": [
+  {
+    "nombre": "Evaluación constitucional (Prakriti–Vikriti)",
+    "codigo": "p_ayurveda_prakriti",
+    "procesos": [],
+    "texto": "Procedimiento clínico inicial destinado a identificar la constitución psicofísica predominante (prakriti) y el estado actual de desequilibrio (vikriti) mediante entrevista detallada sobre sueño, digestión, energía, regulación emocional, patrones cognitivos y estilo de vida, permitiendo comprender el malestar como expresión de desarmonía sistémica y fundamentar recomendaciones personalizadas. Referencia: Charaka Samhita; Sharma, P. V. (1992)."
+  },
+  {
+    "nombre": "Formulación constitucional integrativa",
+    "codigo": "p_ayurveda_formulacion",
+    "procesos": [],
+    "texto": "Procedimiento de síntesis clínica mediante el cual el terapeuta integra constitución, hábitos actuales y contexto vital para explicar cómo determinados patrones incrementan desequilibrios en vata, pitta o kapha y afectan estabilidad mental, generando un mapa comprensible del problema sin reducirlo a síntoma aislado. Referencia: Sharma, P. V. (1992); Rao et al. (2008)."
+  },
+  {
+    "nombre": "Dinacharya (regulación de rutinas diarias)",
+    "codigo": "p_ayurveda_dinacharya",
+    "procesos": ["VB_sueno", "AG_compromisoConductual"],
+    "texto": "Procedimiento estructurado que establece horarios regulares de sueño, alimentación, higiene, movimiento y descanso adaptados a la constitución individual, con el objetivo de estabilizar ritmos biológicos, reducir fluctuaciones emocionales y crear una base regulatoria estable que facilite equilibrio mental sostenido. Referencia: Charaka Samhita; Sharma, P. V. (1992)."
+  },
+  {
+    "nombre": "Ritucharya (ajuste estacional)",
+    "codigo": "p_ayurveda_ritucharya",
+    "procesos": ["VB_entorno", "AG_compromisoConductual"],
+    "texto": "Procedimiento que adapta alimentación, actividad y descanso a los cambios estacionales, reconociendo que el entorno influye directamente en el equilibrio psicofísico y que la prevención del malestar incluye ajustes contextuales concretos coherentes con el ciclo anual. Referencia: Sushruta Samhita; Sharma, P. V. (1992)."
+  },
+  {
+    "nombre": "Intervención dietética personalizada",
+    "codigo": "p_ayurveda_dieta",
+    "procesos": ["VB_alimentacion", "RF_intero"],
+    "texto": "Procedimiento clínico que modifica cualidades de la dieta (ligera/pesada, caliente/fría, seca/oleosa) según la constitución y el desequilibrio presente, entendiendo que la alimentación influye directamente en claridad mental, estabilidad emocional y energía, restaurando equilibrio metabólico que sostiene regulación psicológica. Referencia: Charaka Samhita; Sharma, P. V. (1992)."
+  },
+  {
+    "nombre": "Pranayama regulador",
+    "codigo": "p_ayurveda_pranayama",
+    "procesos": ["RF_resp", "RE_modulacion"],
+    "texto": "Procedimiento basado en técnicas específicas de respiración seleccionadas según el dosha predominante, destinadas a modular activación autonómica, estabilizar estados emocionales y favorecer predominio de cualidades mentales equilibradas, funcionando como puente directo entre regulación corporal y mental. Referencia: Yoga Sutras de Patañjali; Sharma, P. V. (1992)."
+  },
+  {
+    "nombre": "Meditación orientada a sattva",
+    "codigo": "p_ayurveda_meditacion",
+    "procesos": ["RE_aceptacion", "RI_mindfulnessSelf"],
+    "texto": "Procedimiento contemplativo que cultiva claridad, ecuanimidad y observación no reactiva de la experiencia interna, promoviendo predominio de sattva y reduciendo impulsividad, confusión emocional y rumiación mediante práctica sostenida de atención consciente. Referencia: Yoga Sutras de Patañjali; Rao et al. (2008)."
+  },
+  {
+    "nombre": "Educación sobre gunas y autorregulación mental",
+    "codigo": "p_ayurveda_gunas",
+    "procesos": [],
+    "texto": "Procedimiento psicoeducativo que introduce el marco de sattva, rajas y tamas como cualidades dinámicas de la mente, ayudando a reconocer estados internos y orientar prácticas de equilibrio sin imponer interpretación psicológica occidentalizada. Referencia: Rao et al. (2008)."
+  },
+  {
+    "nombre": "Recomendaciones de movimiento y ejercicio adaptado",
+    "codigo": "p_ayurveda_movimiento",
+    "procesos": ["VB_movimiento", "AG_compromisoConductual"],
+    "texto": "Procedimiento que prescribe tipos e intensidad de movimiento coherentes con la constitución individual para reducir letargo, exceso de activación o rigidez corporal, entendiendo el movimiento como modulador directo del estado emocional y de la energía vital. Referencia: Sharma, P. V. (1992)."
+  }
+],
+
+
+ "micros": [
+  {
+    "nombre": "Autoobservación de cualidades mentales (gunas)",
+    "codigo": "m_ayurveda_autoobservacion_gunas",
+    "procesos": ["N_metacognicion"],
+    "texto": "Práctica breve de autoobservación diaria en la que el paciente identifica si su estado mental predominante refleja claridad (sattva), agitación (rajas) o letargo (tamas), promoviendo conciencia funcional de fluctuaciones internas sin juicio moral, facilitando regulación progresiva basada en reconocimiento temprano del desequilibrio. Referencia: Rao, Paranjpe & Dalal (2008)."
+  },
+  {
+    "nombre": "Ajuste respiratorio inmediato",
+    "codigo": "m_ayurveda_respiracion_breve",
+    "procesos": ["RF_resp", "RE_modulacion"],
+    "texto": "Uso puntual de respiración lenta y prolongación de la exhalación ante activación emocional aguda, buscando reducir predominio rajas y restablecer estabilidad autonómica en pocos minutos, como intervención reguladora de acceso inmediato transferible fuera de sesión. Referencia: Yoga Sutras de Patañjali; Sharma (1992)."
+  },
+  {
+    "nombre": "Registro de ritmos de sueño",
+    "codigo": "m_ayurveda_registro_sueno",
+    "procesos": ["VB_sueno"],
+    "texto": "Registro simple de horarios de sueño y calidad percibida durante la semana para identificar irregularidades que incrementen desequilibrio vata o pitta, permitiendo intervenciones concretas sobre ritmos antes de profundizar en trabajo emocional complejo. Referencia: Charaka Samhita; Sharma (1992)."
+  },
+  {
+    "nombre": "Chequeo corporal interoceptivo breve",
+    "codigo": "m_ayurveda_interocepcion",
+    "procesos": ["RF_intero"],
+    "texto": "Pausa consciente de uno a tres minutos para explorar sensaciones corporales predominantes (sequedad, calor, pesadez, tensión) como indicadores tempranos de desequilibrio doshico, facilitando intervención preventiva antes de escalada emocional. Referencia: Sharma (1992)."
+  },
+  {
+    "nombre": "Modulación térmica consciente",
+    "codigo": "m_ayurveda_termica",
+    "procesos": ["RF_ground"],
+    "texto": "Uso deliberado de estímulos térmicos (bebidas calientes, agua templada, enfriamiento suave) según el estado interno predominante para modular activación fisiológica y favorecer sensación de regulación inmediata a través de ajuste sensorial directo. Referencia: Charaka Samhita."
+  },
+  {
+    "nombre": "Mini-práctica de centrado matutino",
+    "codigo": "m_ayurveda_centrado",
+    "procesos": ["RI_mindfulnessSelf", "AG_compromisoConductual"],
+    "texto": "Práctica breve al despertar que combina respiración consciente y formulación de intención alineada con equilibrio y claridad mental, fortaleciendo coherencia entre identidad y conducta diaria mediante ritual regulador consistente. Referencia: Yoga Sutras de Patañjali."
+  },
+  {
+    "nombre": "Observación del impulso reactivo",
+    "codigo": "m_ayurveda_impulso",
+    "procesos": ["RE_prevEvitacion", "N_metacognicion"],
+    "texto": "Identificación del momento previo a la reacción impulsiva (ira, irritación, evitación) con etiquetado interno del estado como manifestación rajas o tamas, creando espacio de elección antes de actuar automáticamente. Referencia: Rao et al. (2008)."
+  },
+  {
+    "nombre": "Microajuste alimentario correctivo",
+    "codigo": "m_ayurveda_ajuste_alimentario",
+    "procesos": ["VB_alimentacion"],
+    "texto": "Pequeña modificación puntual de la cualidad de una comida (más ligera, más caliente, menos estimulante) cuando se detecta aumento de agitación o pesadez mental, utilizando la alimentación como modulador inmediato del estado psicofísico. Referencia: Sharma (1992)."
+  },
+  {
+    "nombre": "Ritual nocturno de desaceleración",
+    "codigo": "m_ayurveda_ritual_nocturno",
+    "procesos": ["VB_sueno", "RE_modulacion"],
+    "texto": "Secuencia breve y repetible antes de dormir que incluye reducción de estímulos, respiración calmante y desconexión progresiva de actividad cognitiva intensa para facilitar transición fisiológica hacia descanso reparador y reducir hiperactivación mental nocturna. Referencia: Charaka Samhita."
+  },
+  {
+    "nombre": "Alineación intención–conducta",
+    "codigo": "m_ayurveda_alineacion",
+    "procesos": ["I_valoresAspiracionales", "AG_autoriaResponsabilidad"],
+    "texto": "Microintervención reflexiva que pregunta si la conducta actual favorece claridad (sattva) o incrementa desequilibrio, promoviendo responsabilidad consciente y coherencia entre valores internos y acción cotidiana. Referencia: Rao et al. (2008)."
+  }
+],
+
+
+"ideasPrincipales": [
+  {
+    "id": "idea_ayurveda_1",
+    "titulo": "La mente es inseparable del cuerpo y del entorno",
+    "desarrollo": "La psicología ayurvédica no concibe la mente como entidad autónoma ni puramente intrapsíquica, sino como función emergente de un sistema cuerpo–mente–entorno dinámicamente interrelacionado. El sufrimiento psicológico no puede comprenderse sin considerar ritmos biológicos, alimentación, clima, contexto social y hábitos de vida, lo que sitúa la intervención en un marco ecológico integral. (Charaka Samhita; Sharma, 1992)."
+  },
+  {
+    "id": "idea_ayurveda_2",
+    "titulo": "El equilibrio dinámico es el principio organizador de la salud mental",
+    "desarrollo": "La salud psicológica se define como equilibrio entre doshas (vata, pitta, kapha) y predominio de la cualidad mental sattva sobre rajas y tamas. El malestar emerge cuando estas fuerzas pierden proporción y estabilidad, generando agitación, irritabilidad, letargo o confusión. La intervención no elimina síntomas aislados, sino que restaura armonía sistémica. (Charaka Samhita; Rao et al., 2008)."
+  },
+  {
+    "id": "idea_ayurveda_3",
+    "titulo": "La constitución individual (prakriti) determina vulnerabilidades y recursos",
+    "desarrollo": "Cada persona posee una configuración constitucional relativamente estable que modula su reactividad emocional, estilo cognitivo y tendencia a determinados desequilibrios. La intervención eficaz no es universal, sino personalizada según la constitución, evitando tratamientos homogéneos que ignoran diferencias estructurales en regulación psicofísica. (Sharma, 1992)."
+  },
+  {
+    "id": "idea_ayurveda_4",
+    "titulo": "Los hábitos cotidianos sostienen o erosionan la estabilidad mental",
+    "desarrollo": "El Ayurveda sostiene que la repetición diaria de hábitos desalineados con la constitución genera acumulación progresiva de desequilibrio que termina manifestándose como malestar psicológico. Por tanto, la modificación de rutinas (dinacharya) no es secundaria, sino eje terapéutico central para restaurar estabilidad duradera. (Charaka Samhita)."
+  },
+  {
+    "id": "idea_ayurveda_5",
+    "titulo": "La regulación fisiológica precede al trabajo emocional profundo",
+    "desarrollo": "La tradición ayurvédica prioriza estabilizar sueño, digestión, energía y respiración antes de abordar conflictos emocionales complejos, asumiendo que sin base fisiológica regulada la mente permanece vulnerable a desorganización. Esta jerarquía anticipa enfoques contemporáneos de estabilización previa al procesamiento emocional. (Sharma, 1992)."
+  },
+  {
+    "id": "idea_ayurveda_6",
+    "titulo": "La respiración es puente entre regulación corporal y mental",
+    "desarrollo": "Las prácticas de pranayama se entienden como herramientas directas para modular activación autonómica y cualidades mentales, actuando simultáneamente sobre fisiología y experiencia subjetiva. La respiración consciente reorganiza estados internos sin necesidad de análisis cognitivo explícito. (Yoga Sutras de Patañjali)."
+  },
+  {
+    "id": "idea_ayurveda_7",
+    "titulo": "El cultivo de sattva es un proceso de clarificación progresiva",
+    "desarrollo": "Sattva representa claridad, equilibrio y discernimiento; su cultivo no se logra por imposición moral sino por prácticas sostenidas de regulación, alimentación adecuada, contemplación y coherencia conductual. La estabilidad mental es resultado de acumulación de condiciones favorables, no de insight aislado. (Rao et al., 2008)."
+  },
+  {
+    "id": "idea_ayurveda_8",
+    "titulo": "La prevención es tan central como la intervención",
+    "desarrollo": "El modelo ayurvédico concibe la intervención terapéutica dentro de una lógica preventiva, donde ajustes tempranos en hábitos y entorno evitan cristalización de desequilibrios profundos. Esta orientación preventiva amplía el marco clínico hacia promoción de salud integral y no solo tratamiento del síntoma. (Charaka Samhita)."
+  },
+  {
+    "id": "idea_ayurveda_9",
+    "titulo": "La agencia se ejerce a través de elecciones cotidianas coherentes",
+    "desarrollo": "El cambio no depende únicamente de comprensión intelectual, sino de la repetición de decisiones concretas alineadas con equilibrio constitucional y claridad mental. La transformación psicológica es gradual y acumulativa, sostenida por compromiso conductual coherente con la propia naturaleza. (Sharma, 1992; Rao et al., 2008)."
+  }
+],
+
+
+  "refs": [
+    "Charaka Samhita.",
+    "Sushruta Samhita.",
+    "Sharma, P. V. (1992). Ayurveda: Principles and Practice.",
+    "Rao, K. R., Paranjpe, A. C., & Dalal, A. K. (2008). Handbook of Indian Psychology."
+  ]
+}
