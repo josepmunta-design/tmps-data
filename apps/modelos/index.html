@@ -13,6 +13,8 @@
   // ✅ compatibilidad global (evita ReferenceError)
 var IS_EMBED = false;
 var OPEN_ID = "";
+var OPEN_SCHOOL = "";
+
   // ✅ evita TDZ (Cannot access before initialization)
 var GH_SCHOOLS = null;
 const HOST = location.hostname.toLowerCase();
@@ -3363,6 +3365,8 @@ DATA_BASE = IS_GHPAGES
   const qs = new URLSearchParams(location.search);
   IS_EMBED = ["1","true","yes"].includes((qs.get("embed") || "").toLowerCase());
   OPEN_ID  = (qs.get("open") || "").trim();
+  OPEN_SCHOOL = (qs.get("school") || "").trim();
+
 
   if(IS_EMBED){
     document.body.classList.add("is-embed");
@@ -5125,11 +5129,36 @@ async function openModel(id){
       MODELS.find(x => String(x?.id ?? '').trim() === String(id).trim()) ||
       ALL.find(x => String(x?.id ?? '').trim() === String(id).trim());
 
-    if(!m){
-      console.warn("Modelo no encontrado:", id);
-      renderModelInfo(null);
-      return;
+  if(!m){
+
+  // ✅ En embed: intenta cargar escuelas de GitHub hasta encontrar el id
+  if (window.IS_EMBED && Array.isArray(window.GH_SCHOOLS) && window.GH_SCHOOLS.length){
+    for (const s of window.GH_SCHOOLS){
+      try{
+        const label = s.label || s.id;
+        if (!label) continue;
+
+        await ensureSchoolFromGitHub(label);
+
+        const ALL2 = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
+          ? window.MODELS_ALL
+          : MODELS;
+
+        m = MODELS.find(x => String(x?.id ?? '').trim() === String(id).trim()) ||
+            ALL2.find(x => String(x?.id ?? '').trim() === String(id).trim());
+
+        if (m) break;
+      }catch(e){}
     }
+  }
+
+  if(!m){
+    console.warn("Modelo no encontrado:", id);
+    renderModelInfo(null);
+    return;
+  }
+}
+
 
     // ✅ 2) Expande a “full” si hace falta
     m = await ensureModelFull(m);
@@ -5280,12 +5309,29 @@ if(!window.IS_EMBED && !window.OPEN_ID){
     // 5) open directo: abrir modelo
 if (window.OPEN_ID){
 
-  // Nota: si currentSchool es null, este ensure fallará y no pasa nada (lo atrapamos)
-  try{
-    if(currentSchool) await ensureSchoolFromGitHub(currentSchool);
-  }catch(e){}
+  // ✅ Si nos pasan escuela en la URL, precargar ESA escuela antes de abrir
+  if (window.OPEN_SCHOOL){
+    try{
+      currentSchool = window.OPEN_SCHOOL;
 
-await openModel(window.OPEN_ID);
+      // si tienes selector de escuelas, déjalo coherente
+      if (typeof schoolSelect !== "undefined" && schoolSelect){
+        schoolSelect.value = currentSchool;
+      }
+
+      // opcional pero recomendable: que el estado visual sea consistente
+      try{ renderSchoolInfo(currentSchool); }catch(e){}
+      await ensureSchoolFromGitHub(currentSchool);
+      try{ renderModelsList(); }catch(e){}
+    }catch(e){}
+  }else{
+    // Fallback: comportamiento actual
+    try{
+      if(currentSchool) await ensureSchoolFromGitHub(currentSchool);
+    }catch(e){}
+  }
+
+  await openModel(window.OPEN_ID);
 
   // En embed, forzar scroll arriba tras pintar
   if(window.IS_EMBED){
@@ -5294,6 +5340,7 @@ await openModel(window.OPEN_ID);
     }, 60);
   }
 }
+
 if(window.IS_EMBED){
   document.body.classList.add("embedMode", "is-embed");
 }
