@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_apoyo",
-  "updatedAt": "2026-02-21T12:56:36.889Z",
-  "totalModelos": 13,
+  "updatedAt": "2026-02-21T13:02:28.046Z",
+  "totalModelos": 14,
   "modelos": [
     {
       "modelId": "whanau-ora-modelo-maori-2000",
@@ -269,6 +269,29 @@
           "codigo": "m_reconciliacion_redes",
           "nombre": "Reconstrucción de redes de apoyo",
           "texto": "Intervención focal orientada a identificar personas, organizaciones o recursos comunitarios disponibles para apoyo mutuo, reduciendo aislamiento y aumentando seguridad relacional percibida. Referencia: Martín-Baró (1990).",
+          "sub": "R_sist_apoyo",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-trauma-sociopolitico-1985",
+      "modelLabel": "Psicoterapia del trauma sociopolítico",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Elizabeth Lira; María Isabel Castillo; Ignacio Martín-Baró; equipos clínicos de ILAS y CINTRAS",
+      "modelYear": 1985,
+      "items": [
+        {
+          "codigo": "p_trauma_sociopolitico_redes_comunitarias",
+          "nombre": "Fortalecimiento de redes comunitarias",
+          "texto": "Procedimiento orientado a movilizar apoyo social y comunitario, reduciendo aislamiento y sensación de desprotección. Incluye participación en grupos de memoria, asociaciones de víctimas o espacios colectivos donde el sufrimiento es reconocido públicamente. El objetivo es transformar el trauma privado en experiencia compartida y dignificada, fortaleciendo agencia colectiva. Referencia: Martín-Baró (1998); CINTRAS (2005).",
+          "sub": "R_sist_apoyo",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_trauma_sociopolitico_relato_compartido",
+          "nombre": "Transformación del trauma privado en relato compartido",
+          "texto": "Intervención que anima progresivamente a compartir partes del relato en espacios seguros (familia, grupo terapéutico, comunidad), reduciendo aislamiento y favoreciendo dignificación colectiva. Referencia: CINTRAS (2005).",
           "sub": "R_sist_apoyo",
           "tipo": "micro"
         }
