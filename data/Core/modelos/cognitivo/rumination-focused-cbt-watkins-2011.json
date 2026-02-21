@@ -1,0 +1,234 @@
+{
+  "id": "rumination-focused-cbt-watkins-2011",
+  "grupo": "Cognitivo",
+  "label": "Rumination-Focused Cognitive Behavioral Therapy (RFCBT)",
+  "year": 2011,
+  "importance": 3,
+  "autores": "Edward R. Watkins",
+  "universidad": "University of Exeter",
+  "ciudad": "Exeter",
+  "pais": "Reino Unido",
+  "lat": 50.7365,
+  "lon": -3.5344,
+
+  "descripcion": "Modelo cognitivo-conductual desarrollado para el tratamiento de la depresión recurrente y crónica caracterizada por rumiación persistente. Su foco principal no es la modificación directa del contenido negativo del pensamiento, sino el cambio del estilo de procesamiento cognitivo abstracto–analítico que mantiene el estado depresivo. Propone entrenar un modo de procesamiento concreto, experiencial y orientado a la acción que interrumpe los bucles rumiativos, reduce evitación conductual y facilita resolución de problemas y activación adaptativa.",
+
+  "influencias": [
+    "Terapia cognitivo-conductual",
+    "Modelo de estilos de procesamiento",
+    "Teoría de la rumiación depresiva (Nolen-Hoeksema)",
+    "Activación conductual",
+    "Modelos metacognitivos"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se entiende como organizada en parte por estilos de procesamiento cognitivo que modulan la experiencia emocional. El conocimiento terapéutico es colaborativo y experimental, centrado en observar cómo el modo de procesar la información influye en el estado afectivo. El ser humano es concebido como agente activo capaz de modificar hábitos cognitivos aprendidos. El cambio ocurre cuando se sustituye el procesamiento abstracto rumiativo por un procesamiento concreto y funcional. La relación terapéutica es un espacio de entrenamiento y experimentación guiada.",
+    "teoriaFormal": "El self se organiza en patrones habituales de procesamiento que influyen en la interpretación de eventos y en la regulación emocional. El sufrimiento depresivo se mantiene cuando la activación afectiva negativa dispara un estilo rumiativo abstracto que aumenta pasividad, autocrítica y evitación. El cambio psicológico implica modificar el estilo de procesamiento dominante, promoviendo especificidad contextual, orientación conductual y flexibilidad cognitiva.",
+    "teoriaClinica": "El caso se conceptualiza identificando situaciones que activan rumiación, el estilo predominante (abstracto vs. concreto) y sus consecuencias conductuales y emocionales. Se prioriza interrumpir la rumiación habitual, entrenar procesamiento concreto y aumentar activación conductual dirigida. El progreso terapéutico se evalúa por la reducción de episodios rumiativos, aumento de especificidad cognitiva y mejora en funcionamiento conductual y estado de ánimo."
+  },
+
+  "mjps": ["RE", "N", "RI", "AG"],
+
+  
+  "procedimientos": [
+    {
+      "nombre": "Evaluación funcional y formulación de bucles rumiativos",
+      "codigo": "p_rfcbt_formulacion_rumiacion",
+      "procesos": ["N_metacognicion", "N_marcosCognitivos"],
+      "texto": "Procedimiento inicial orientado a identificar disparadores internos y externos de la rumiación, diferenciar su forma abstracta–analítica de posibles momentos concretos–experienciales, y mapear sus consecuencias emocionales y conductuales a corto y largo plazo, construyendo junto al paciente un diagrama de los bucles que mantienen la depresión (activación afectiva negativa → rumiación abstracta → pasividad/evitación → empeoramiento del estado de ánimo), que servirá como guía estratégica para todo el tratamiento. (Watkins, 2016; Watkins, 2008)."
+    },
+    {
+      "nombre": "Psicoeducación sobre estilos de procesamiento (abstracto vs concreto)",
+      "codigo": "p_rfcbt_psicoeducacion_estilos",
+      "procesos": [],
+      "texto": "Procedimiento explicativo en el que el terapeuta introduce la distinción entre procesamiento abstracto–analítico (global, evaluativo, centrado en causas y significados amplios) y procesamiento concreto–experiencial (específico, contextual, orientado a pasos observables), mostrando cómo el primero prolonga el estado depresivo y el segundo facilita regulación y acción, utilizando ejemplos personalizados para que el paciente reconozca su patrón dominante sin patologizar el hecho de pensar. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Entrenamiento en procesamiento concreto–experiencial",
+      "codigo": "p_rfcbt_entrenamiento_concreto",
+      "procesos": ["N_construccionAlternativa", "RE_modulacion"],
+      "texto": "Procedimiento central del modelo que entrena sistemáticamente al paciente a describir experiencias en términos específicos, situados y conductuales (qué pasó, cuándo, dónde, qué hice, qué podría hacer ahora), sustituyendo preguntas abstractas del tipo \"¿por qué soy así?\" por preguntas concretas orientadas a acción, mediante ejercicios repetidos en sesión y tareas entre sesiones que consolidan el cambio de estilo como nuevo hábito cognitivo. (Watkins, 2016; Watkins, 2008)."
+    },
+    {
+      "nombre": "Práctica experiencial guiada con recuerdos recientes",
+      "codigo": "p_rfcbt_practica_experiencial",
+      "procesos": ["AP_evocacion", "N_metacognicion"],
+      "texto": "Procedimiento en el que se selecciona un episodio reciente de bajo o medio impacto emocional y se guía al paciente a revivirlo en modo concreto–sensorial (detalles contextuales, acciones, secuencia temporal), interrumpiendo desviaciones hacia explicaciones globales o autocríticas y reforzando la atención a la experiencia específica, con el objetivo de debilitar el automatismo rumiativo abstracto. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Interrupción conductual de la rumiación (pattern breaking)",
+      "codigo": "p_rfcbt_pattern_breaking",
+      "procesos": ["AG_compromisoConductual", "RE_prevEvitacion"],
+      "texto": "Procedimiento orientado a detectar momentos tempranos de rumiación y aplicar interrupciones conductuales breves y específicas (cambio de tarea, acción física delimitada, microactividad orientada a meta), no como distracción indiscriminada sino como ruptura estratégica del bucle abstracto que mantiene el ánimo bajo, favoreciendo la transición hacia acción concreta y reduciendo la evitación pasiva. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Resolución concreta de problemas",
+      "codigo": "p_rfcbt_resolucion_problemas",
+      "procesos": ["AG_tomaDecisiones", "N_reformulacion"],
+      "texto": "Procedimiento estructurado que transforma preocupaciones rumiativas generales en problemas definidos y abordables, delimitando metas específicas, generando alternativas conductuales y evaluando pasos realistas, con el fin de sustituir la repetición estéril de análisis por toma de decisiones concreta y acción progresiva, fortaleciendo sensación de eficacia personal. (Watkins, 2016; Watkins, 2008)."
+    },
+    {
+      "nombre": "Activación conductual dirigida por metas específicas",
+      "codigo": "p_rfcbt_activacion_concreta",
+      "procesos": ["AG_motivacionInterna", "AG_compromisoConductual"],
+      "texto": "Procedimiento que vincula el cambio de estilo cognitivo con la implementación de actividades concretas, breves y medibles, seleccionadas por su coherencia con metas personales, utilizando planificación detallada (qué, cuándo, dónde, con quién) para contrarrestar la inercia asociada a la rumiación y generar evidencia experiencial de capacidad de acción. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Entrenamiento en detección temprana de rumiación",
+      "codigo": "p_rfcbt_deteccion_temprana",
+      "procesos": ["N_metacognicion", "RI_mindfulnessSelf"],
+      "texto": "Procedimiento centrado en desarrollar conciencia precoz de señales internas que indican inicio del modo rumiativo (tono mental repetitivo, preguntas globales, postura corporal pasiva), entrenando al paciente a etiquetar el proceso en curso antes de que se intensifique, aumentando así la probabilidad de aplicar estrategias concretas de cambio de estilo. (Watkins, 2016)."
+    }
+  ],
+
+  "micros": [
+    {
+      "nombre": "Cambio de pregunta abstracta a pregunta concreta",
+      "codigo": "m_rfcbt_cambio_pregunta",
+      "procesos": ["N_reformulacion"],
+      "texto": "Microintervención que consiste en transformar en tiempo real preguntas globales del tipo \"¿por qué siempre fracaso?\" en preguntas específicas como \"¿qué ocurrió exactamente en esa situación y qué podría hacer distinto la próxima vez?\", desplazando el foco desde el análisis identitario hacia pasos observables y modificables. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Describir la experiencia en secuencia temporal",
+      "codigo": "m_rfcbt_secuencia_temporal",
+      "procesos": ["N_marcosCognitivos"],
+      "texto": "Microintervención que pide al paciente narrar un episodio siguiendo un orden temporal preciso (primero…, luego…, después…), reduciendo saltos interpretativos globales y promoviendo un procesamiento más estructurado y contextualizado. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Anclaje en detalles sensoriales del episodio",
+      "codigo": "m_rfcbt_detalles_sensoriales",
+      "procesos": ["AP_evocacion"],
+      "texto": "Microintervención que dirige la atención hacia aspectos concretos del entorno (lugar, sonidos, postura corporal) cuando el discurso se vuelve abstracto, facilitando un cambio hacia modo experiencial y disminuyendo la deriva evaluativa generalizada. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Etiqueta metacognitiva \"esto es rumiación\"",
+      "codigo": "m_rfcbt_etiqueta_rumiacion",
+      "procesos": ["N_metacognicion"],
+      "texto": "Microintervención breve en la que el paciente aprende a identificar y nombrar el proceso rumiativo en curso sin fusionarse con su contenido, creando distancia funcional que facilita la elección de una respuesta alternativa. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Definir un siguiente paso conductual mínimo",
+      "codigo": "m_rfcbt_paso_minimo",
+      "procesos": ["AG_tomaDecisiones"],
+      "texto": "Microintervención que traduce un pensamiento rumiativo en un paso conductual pequeño, específico y ejecutable en el mismo día, rompiendo la parálisis asociada al análisis excesivo y reforzando agencia inmediata. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Comparar efectos del modo abstracto vs concreto",
+      "codigo": "m_rfcbt_comparacion_modos",
+      "procesos": ["N_metacognicion"],
+      "texto": "Microintervención experiencial en la que se invita al paciente a reflexionar brevemente sobre cómo se siente y actúa tras varios minutos en modo abstracto frente a modo concreto, consolidando aprendizaje basado en experiencia directa más que en argumento teórico. (Watkins, 2008)."
+    },
+    {
+      "nombre": "Microactividad de interrupción programada",
+      "codigo": "m_rfcbt_microactividad",
+      "procesos": ["AG_compromisoConductual"],
+      "texto": "Pequeña acción previamente planificada (por ejemplo, caminar cinco minutos o enviar un mensaje concreto) que se activa al detectar rumiación, funcionando como corte conductual deliberado del bucle repetitivo. (Watkins, 2016)."
+    },
+    {
+      "nombre": "Especificar contexto futuro con detalle",
+      "codigo": "m_rfcbt_contexto_futuro",
+      "procesos": ["I_selfFuturo"],
+      "texto": "Microintervención que invita a imaginar una situación futura problemática describiéndola con precisión contextual y conductual, facilitando preparación concreta en lugar de anticipación catastrófica global. (Watkins, 2016)."
+    }
+  ],
+
+ 
+  "ideasPrincipales": [
+    {
+      "id": "idea_rfcbt_1",
+      "titulo": "La rumiación es un estilo de procesamiento, no solo contenido negativo",
+      "desarrollo": "El núcleo del modelo sostiene que el problema central en la depresión rumiativa no es únicamente lo que la persona piensa, sino cómo lo procesa. El estilo abstracto–analítico, global y evaluativo prolonga el estado de ánimo negativo y bloquea la acción, mientras que el procesamiento concreto–experiencial facilita regulación y resolución de problemas. El foco terapéutico se dirige al cambio de estilo más que a la discusión del contenido. (Watkins, 2008; Watkins, 2016)."
+    },
+    {
+      "id": "idea_rfcbt_2",
+      "titulo": "El procesamiento abstracto mantiene los bucles depresivos",
+      "desarrollo": "Cuando la activación emocional negativa activa preguntas globales del tipo \"¿por qué soy así?\" o \"¿qué dice esto sobre mí?\", se refuerza la autocrítica, la pasividad y la evitación conductual, generando un bucle autorreforzado que cronifica el episodio depresivo. Este patrón opera como hábito cognitivo aprendido que puede modificarse mediante entrenamiento sistemático. (Watkins, 2016)."
+    },
+    {
+      "id": "idea_rfcbt_3",
+      "titulo": "El procesamiento concreto facilita acción y regulación",
+      "desarrollo": "El cambio terapéutico se apoya en promover un estilo de pensamiento específico, contextualizado y orientado a pasos observables, que reduce la intensidad emocional negativa y aumenta la probabilidad de acción eficaz. El modo concreto no elimina la emoción, pero la sitúa en un marco operativo que permite tomar decisiones y avanzar. (Watkins, 2008; Watkins, 2016)."
+    },
+    {
+      "id": "idea_rfcbt_4",
+      "titulo": "La rumiación funciona como hábito mental automatizado",
+      "desarrollo": "El modelo conceptualiza la rumiación como un hábito cognitivo que se activa automáticamente ante estados de ánimo bajos, reforzado por alivio momentáneo o sensación ilusoria de análisis profundo. La intervención consiste en debilitar este hábito mediante repetición deliberada de un estilo alternativo más funcional. (Watkins & Nolen-Hoeksema, 2014; Watkins, 2016)."
+    },
+    {
+      "id": "idea_rfcbt_5",
+      "titulo": "Cambiar el estilo cognitivo precede al insight profundo",
+      "desarrollo": "RFCBT no prioriza la exploración exhaustiva de causas pasadas ni la interpretación profunda, sino el entrenamiento práctico del modo de procesamiento actual. El cambio experiencial repetido en sesión y fuera de ella produce modificaciones en ánimo y conducta sin requerir necesariamente comprensión narrativa extensa. (Watkins, 2016)."
+    },
+    {
+      "id": "idea_rfcbt_6",
+      "titulo": "La especificidad contextual es antídoto contra la globalización depresiva",
+      "desarrollo": "La depresión rumiativa tiende a generar generalizaciones amplias y estables sobre el self (\"siempre fracaso\", \"soy inútil\"), mientras que el procesamiento concreto obliga a delimitar tiempo, lugar y conducta específica, debilitando inferencias globales y reduciendo la intensidad del autojuicio. (Watkins, 2008)."
+    },
+    {
+      "id": "idea_rfcbt_7",
+      "titulo": "La acción concreta interrumpe la pasividad mantenida por rumiación",
+      "desarrollo": "El modelo integra activación conductual no como técnica añadida, sino como consecuencia lógica del cambio de estilo cognitivo: cuando el pensamiento se orienta a pasos específicos, aumenta la probabilidad de conducta dirigida, lo que genera retroalimentación positiva y rompe la inercia depresiva. (Watkins, 2016)."
+    },
+    {
+      "id": "idea_rfcbt_8",
+      "titulo": "La metacognición es clave para detectar y redirigir el proceso",
+      "desarrollo": "El paciente aprende a reconocer señales tempranas de que está entrando en modo rumiativo abstracto y a etiquetar el proceso antes de quedar atrapado en él. Esta conciencia metacognitiva aumenta la capacidad de elección y facilita la aplicación de estrategias concretas aprendidas. (Watkins, 2016)."
+    },
+    {
+      "id": "idea_rfcbt_9",
+      "titulo": "El tratamiento es especialmente útil en depresión recurrente y crónica",
+      "desarrollo": "La evidencia sugiere que RFCBT resulta particularmente eficaz en pacientes con depresión recurrente caracterizada por alta rumiación, ya que interviene sobre un mecanismo transdiagnóstico que predice recaída y mantenimiento sintomático más allá del contenido específico de los pensamientos. (Watkins, 2016)."
+    }
+  ],
+
+
+  "secuencias": [
+    {
+      "id": "seq_rfcbt_1",
+      "nombre": "Secuencia estándar de intervención en RFCBT",
+      "descripcion": "Progresión estructurada del tratamiento centrada en la identificación, modificación y consolidación de un cambio en el estilo de procesamiento cognitivo desde un modo abstracto–analítico hacia un modo concreto–experiencial, aplicada de forma repetida hasta convertirla en hábito estable.",
+      "fases": [
+        {
+          "fase": 1,
+          "titulo": "Evaluación y formulación funcional de la rumiación",
+          "objetivo": "Identificar disparadores, forma y consecuencias de la rumiación, y construir un mapa explícito de los bucles de mantenimiento depresivos.",
+          "procesosPredominantes": ["N_metacognicion", "N_marcosCognitivos"]
+        },
+        {
+          "fase": 2,
+          "titulo": "Psicoeducación sobre estilos de procesamiento",
+          "objetivo": "Instalar el modelo explicativo diferenciando procesamiento abstracto–analítico y procesamiento concreto–experiencial, mostrando su impacto diferencial sobre el estado de ánimo y la acción.",
+          "procesosPredominantes": []
+        },
+        {
+          "fase": 3,
+          "titulo": "Entrenamiento experiencial en procesamiento concreto",
+          "objetivo": "Practicar de forma repetida en sesión el cambio de estilo cognitivo mediante evocación de episodios recientes y corrección en vivo de desviaciones abstractas.",
+          "procesosPredominantes": ["N_construccionAlternativa", "AP_evocacion"]
+        },
+        {
+          "fase": 4,
+          "titulo": "Generalización y aplicación conductual",
+          "objetivo": "Transferir el nuevo estilo de procesamiento a situaciones reales mediante tareas específicas, activación conductual dirigida y resolución concreta de problemas.",
+          "procesosPredominantes": ["AG_compromisoConductual", "AG_tomaDecisiones"]
+        },
+        {
+          "fase": 5,
+          "titulo": "Consolidación y prevención de recaídas",
+          "objetivo": "Identificar señales tempranas de retorno al modo rumiativo abstracto y establecer planes concretos de respuesta para mantener el cambio como hábito estable.",
+          "procesosPredominantes": ["N_metacognicion", "RI_mindfulnessSelf"]
+        }
+      ],
+      "referencias": [
+        "Watkins, E. R. (2016). Rumination-Focused Cognitive-Behavioral Therapy for Depression.",
+        "Watkins, E. R. (2008). Constructive and unconstructive repetitive thought. Psychological Bulletin."
+      ]
+    }
+  ],
+
+  "refs": [
+    "Watkins, E. R. (2016). Rumination-Focused Cognitive-Behavioral Therapy for Depression.",
+    "Watkins, E. R. (2008). Constructive and unconstructive repetitive thought. Psychological Bulletin.",
+    "Watkins, E. R., & Nolen-Hoeksema, S. (2014). A habit-goal framework of depressive rumination."
+  ]
+}
