@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_ciclos",
-  "updatedAt": "2026-02-19T11:34:56.129Z",
-  "totalModelos": 14,
+  "updatedAt": "2026-02-21T12:30:41.276Z",
+  "totalModelos": 15,
   "modelos": [
     {
       "modelId": "psicoterapia-comunitaria-ubuntu-1995",
@@ -182,6 +182,50 @@
           "texto": "Procedimiento de conceptualización que integra la información BASIC-ID en una formulación de mantenimiento: cómo se conectan conducta, emoción, sensaciones, imágenes, cogniciones, patrones interpersonales y factores biológicos para sostener el problema en bucles de retroalimentación. Se identifican disparadores típicos, respuestas automáticas y consecuencias que refuerzan el patrón, de modo que la formulación no sea solo descriptiva sino utilizable para seleccionar técnicas específicas y anticipar obstáculos de recaída. (Lazarus, 1989)",
           "sub": "R_sist_ciclos",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-grupos-operativos-pichon-riviere-1958",
+      "modelLabel": "Psicoterapia de grupos operativos",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Enrique Pichon-Rivière",
+      "modelYear": 1958,
+      "items": [
+        {
+          "codigo": "p_pichon_tarea",
+          "nombre": "Análisis de la tarea explícita e implícita",
+          "texto": "Procedimiento central del modelo que consiste en diferenciar la tarea explícita (objetivo manifiesto del grupo) de la tarea implícita (procesos inconscientes y ansiedades que interfieren en su realización). El coordinador ayuda al grupo a identificar cómo la evitación, la actuación o la dispersión operan como defensas frente a ansiedades básicas, reconduciendo la atención hacia el aprendizaje de la experiencia. La intervención no se dirige a individuos aislados, sino a la dinámica vincular que obstaculiza la tarea, favoreciendo toma de conciencia colectiva y reorganización funcional del proceso grupal. Referencia: Pichon-Rivière, E. (1971). El proceso grupal.",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pichon_devolucion",
+          "nombre": "Devolución al campo grupal (interpretación al grupo como totalidad)",
+          "texto": "Procedimiento técnico que consiste en formular interpretaciones dirigidas al grupo como totalidad, evitando focalizar exclusivamente en individuos. La devolución conecta el fenómeno observado con la dinámica vincular general y con la tarea, permitiendo que el grupo se reconozca como productor de sus propias dificultades y soluciones. Esta técnica fortalece la responsabilidad colectiva y desplaza la tendencia a personalizar el conflicto. Referencia: Pichon-Rivière, E. (1971).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pichon_comunicacion",
+          "nombre": "Trabajo sobre la comunicación circular",
+          "texto": "Procedimiento orientado a hacer visible la circularidad de las interacciones, mostrando cómo cada intervención es simultáneamente respuesta y estímulo dentro del sistema. El coordinador ayuda al grupo a pasar de explicaciones lineales (culpa individual) a comprensiones circulares, promoviendo mayor mentalización interpersonal y reducción de escaladas defensivas. Este trabajo reorganiza la percepción del conflicto y facilita soluciones cooperativas. Referencia: Pichon-Rivière, E. (1985).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pichon_desvio_tarea",
+          "nombre": "Señalamiento del desvío de tarea",
+          "texto": "Microintervención consistente en señalar en tiempo real cómo el grupo se aleja de la tarea explícita mediante dispersión, conflicto lateral o intelectualización vacía. El coordinador no acusa ni corrige, sino que formula una observación que devuelve responsabilidad colectiva y abre reflexión sobre la función defensiva del desvío, favoreciendo que el grupo retome conscientemente la tarea. Referencia: Pichon-Rivière, E. (1971).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pichon_circularidad",
+          "nombre": "Señalar circularidad interactiva",
+          "texto": "Microintervención que muestra cómo una conducta es simultáneamente respuesta y estímulo dentro del ciclo grupal, desplazando explicaciones lineales basadas en culpa individual. Al evidenciar la circularidad, se favorece mentalización interpersonal y disminuyen escaladas defensivas. Referencia: Pichon-Rivière, E. (1985).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
         }
       ]
     },
