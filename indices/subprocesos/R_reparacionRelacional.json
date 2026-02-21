@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_reparacionRelacional",
-  "updatedAt": "2026-02-21T12:30:41.276Z",
-  "totalModelos": 38,
+  "updatedAt": "2026-02-21T12:37:13.256Z",
+  "totalModelos": 39,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -872,6 +872,36 @@
           "codigo": "m_contextual_micro_reparacion",
           "nombre": "Micro-reparación relacional",
           "texto": "La micro-reparación relacional se concreta en pequeños actos verbales o simbólicos de restitución —disculpas, reconocimientos, gestos de cuidado— que comienzan a restaurar la confianza sin requerir cambios estructurales inmediatos.",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-comunitaria-reconciliacion",
+      "modelLabel": "Psicoterapia comunitaria para la reconciliación",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Desarrollos psicosociales colombianos",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_reconciliacion_justicia_restaurativa",
+          "nombre": "Espacios restaurativos facilitados",
+          "texto": "Encuentros estructurados entre víctimas, responsables y comunidad cuando las condiciones de seguridad lo permiten, orientados a reconocimiento del daño, asunción de responsabilidad y reparación simbólica o material. No se centra en castigo sino en restauración del vínculo social y transformación del ciclo de violencia. El proceso facilita reformulación del sentido del daño, ruptura de narrativas deshumanizadoras y reconstrucción mínima de convivencia. Referencia: Lederach (1997); Zehr (2002).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_reconciliacion_validacion_publica",
+          "nombre": "Validación pública del daño",
+          "texto": "Intervención breve donde el facilitador o una figura comunitaria reconoce explícitamente el daño sufrido por una persona o grupo, utilizando lenguaje claro de validación (“lo que viviste fue injusto”, “no fue tu culpa”). Esta validación pública reduce vergüenza, legitima la experiencia y restituye dignidad simbólica en un contexto relacional ampliado. Referencia: Herman (1992); Martín-Baró (1990).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_reconciliacion_microacuerdos",
+          "nombre": "Microacuerdos restaurativos",
+          "texto": "Pequeños compromisos concretos entre miembros de la comunidad para modificar conductas específicas que perpetúan desconfianza o exclusión, como establecer canales de comunicación o reglas explícitas de respeto. Consolidar acuerdos mínimos fortalece viabilidad relacional y reduce escaladas futuras. Referencia: Lederach (1997); Zehr (2002).",
           "sub": "R_reparacionRelacional",
           "tipo": "micro"
         }
