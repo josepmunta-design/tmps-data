@@ -3143,6 +3143,439 @@ body.is-embed .app{
   }
 }
 
+/* =========================
+   Theme Toggle (Light Mode)
+   ========================= */
+body.theme-light{
+  --bg:#f2f6fc;
+  --panelA: rgba(255,255,255,0.90);
+  --panelB: rgba(247,251,255,0.80);
+  --text:#1d1d1f;
+  --muted:#5f697a;
+  --muted2:#768296;
+  --accent:#0a84ff;
+
+  color:#1d1d1f;
+  background:
+    radial-gradient(1300px 760px at 14% 12%, rgba(112,164,255,.20), transparent 56%),
+    radial-gradient(1100px 760px at 86% 20%, rgba(124,214,255,.16), transparent 58%),
+    radial-gradient(920px 680px at 50% 88%, rgba(180,166,255,.12), transparent 64%),
+    linear-gradient(180deg,#f8fafe 0%,#edf3fb 100%);
+}
+
+body.theme-light .bg-blobs{
+  opacity:.32;
+  filter: blur(72px);
+}
+
+body.theme-light .panel{
+  background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(247,251,255,.82));
+  border:1px solid rgba(118,129,153,.20);
+  box-shadow:
+    0 24px 56px rgba(24,44,74,0.14),
+    0 8px 20px rgba(24,44,74,0.08),
+    inset 0 1px 0 rgba(255,255,255,.98);
+  backdrop-filter: blur(16px) saturate(125%);
+  -webkit-backdrop-filter: blur(16px) saturate(125%);
+}
+
+body.theme-light .panel::before{
+  background:
+    radial-gradient(620px 360px at 88% 12%,
+      color-mix(in srgb, var(--schoolColor, #6f9be6) 38%, transparent), transparent 62%),
+    radial-gradient(700px 420px at 18% 85%, rgba(125,186,255,.14), transparent 67%);
+  mix-blend-mode: normal;
+  opacity:.86;
+}
+
+body.theme-light .panel.right::before{
+  background:
+    radial-gradient(720px 420px at 90% 10%,
+      color-mix(in srgb, var(--schoolColor, #6f9be6) 46%, transparent), transparent 62%),
+    radial-gradient(760px 460px at 20% 90%, rgba(125,186,255,.16), transparent 70%);
+  opacity:.92;
+}
+
+body.theme-light .modelPanel .mp-hero{
+  background:
+    radial-gradient(900px 420px at 15% 10%, rgba(255,255,255,0.28), transparent 60%),
+    radial-gradient(740px 360px at 74% 24%,
+      color-mix(in srgb, var(--schoolColor, #6f9be6) 34%, transparent), transparent 62%),
+    linear-gradient(180deg, rgba(255,255,255,0.72), rgba(245,250,255,0.56));
+}
+
+body.theme-light .title,
+body.theme-light .t-main,
+body.theme-light .modelPanel .mp-title,
+body.theme-light .mi-title{
+  color:#15181f;
+  text-shadow:none;
+}
+
+body.theme-light .subtitle,
+body.theme-light .mi-sub,
+body.theme-light .modelPanel .mp-desc,
+body.theme-light .modelPanel .mp-author,
+body.theme-light .modelPanel .mp-hero-text,
+body.theme-light .modelPanel .mp-hint,
+body.theme-light .school-eyebrow{
+  color:#5f6a7c;
+}
+
+body.theme-light .t-eyebrow,
+body.theme-light label{
+  color:#738196;
+}
+
+body.theme-light select{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.97), rgba(241,247,255,.88));
+  border:1px solid rgba(118,129,153,.24);
+  color:#1a1d24;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.99),
+    0 8px 20px rgba(28,47,79,.10);
+}
+
+body.theme-light select:focus{
+  border-color: rgba(10,132,255,.46);
+  box-shadow:
+    0 0 0 3px rgba(10,132,255,.14),
+    0 10px 24px rgba(28,47,79,.12),
+    inset 0 1px 0 rgba(255,255,255,.99);
+}
+
+body.theme-light select option{
+  background-color:#f5f8fd;
+  color:#202534;
+}
+
+body.theme-light .card,
+body.theme-light .mi-item,
+body.theme-light .mp-acc details,
+body.theme-light .mp-sub details,
+body.theme-light .mp-idea,
+body.theme-light .modelPanel .mp-hero,
+body.theme-light .modelPanel .mp-hint{
+  background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(244,249,255,.84));
+  border:1px solid rgba(118,129,153,.20);
+  box-shadow:
+    0 10px 24px rgba(28,47,79,.10),
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+body.theme-light .mi-item{
+  color:#1a1f29;
+}
+
+body.theme-light .mi-item:hover{
+  border-color: rgba(81,135,255,.35);
+  background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(239,246,255,.90));
+}
+
+body.theme-light .mi-item.active{
+  border-color: color-mix(in srgb, var(--schoolColor) 44%, rgba(118,129,153,.24));
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--schoolColor) 16%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.99);
+}
+
+body.theme-light .pill,
+body.theme-light .modelPanel .mp-pill,
+body.theme-light .modelPanel .mp-tag,
+body.theme-light .mp-acc .sumCount{
+  color:#202838;
+  border:1px solid rgba(118,129,153,.24);
+  background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(242,248,255,.88));
+}
+
+body.theme-light .mp-acc summary,
+body.theme-light .mp-sub summary,
+body.theme-light .mp-idea-title,
+body.theme-light .modelPanel .mp-step,
+body.theme-light .modelPanel .mp-hero-title,
+body.theme-light .modelPanel .mp-author-name{
+  color:#1b2231;
+}
+
+body.theme-light .mp-acc .body,
+body.theme-light .mp-sub .subBody,
+body.theme-light .mp-idea-body{
+  color:#4f5b70;
+}
+
+body.theme-light .mp-mapbg{
+  opacity:.62;
+}
+
+body.theme-light .mp-mapbg .land{
+  filter: blur(.55px);
+}
+
+body.theme-light .mp-mapbg .land path{
+  fill: rgba(38,58,94,0.24);
+  stroke: rgba(38,58,94,0.30);
+}
+
+body.theme-light .mp-mapbg .graticule{
+  opacity:.46;
+}
+
+body.theme-light .mp-mapbg .graticule path{
+  stroke: rgba(38,58,94,0.20);
+}
+
+body.theme-light .nav-fab{
+  background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(243,248,255,.86));
+  border:1px solid rgba(118,129,153,.26);
+  color:#1e2533;
+  box-shadow:
+    0 12px 28px rgba(24,44,74,.14),
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+body.theme-light .nav-fab:hover{
+  border-color: rgba(81,135,255,.42);
+  box-shadow:
+    0 14px 32px rgba(24,44,74,.18),
+    0 0 0 4px rgba(10,132,255,.10);
+}
+
+body.theme-light .nav-fab-main{
+  background: rgba(255,255,255,.92);
+}
+
+body.theme-light .landingOverlay{
+  background: rgba(239,245,252,.72);
+}
+
+body.theme-light .landingCard{
+  background: rgba(255,255,255,.84);
+  border:1px solid rgba(118,129,153,.18);
+  box-shadow: 0 20px 52px rgba(24,44,74,.14);
+}
+
+body.theme-light .landingH1,
+body.theme-light .landingSchoolName{
+  color: var(--schoolColor, #2f4f83);
+  text-shadow:none;
+}
+
+body.theme-light .landingLead,
+body.theme-light .landingSchoolMeta{
+  color:#5e6a7f;
+}
+
+body.theme-light .landingSchool::before{
+  background: var(--schoolColor, #8aa7db);
+  opacity:.88;
+}
+
+body.theme-light .school-title{
+  color: var(--schoolColor, #2f4f83);
+}
+
+body.theme-light .count-school{
+  color: var(--schoolColor, #2f4f83);
+}
+
+body.theme-light .mi-item.active .mi-title{
+  color: var(--schoolColor, #2f4f83);
+}
+
+body.theme-light .modelPanel .mp-tag{
+  color: color-mix(in srgb, var(--schoolColor) 75%, #243756);
+  border-color: color-mix(in srgb, var(--schoolColor) 42%, rgba(118,129,153,.22));
+  background: color-mix(in srgb, var(--schoolColor) 12%, rgba(255,255,255,.78));
+}
+
+/* Sticky header en claro (evita franja oscura) */
+body.theme-light #stickyModelHeader .smh-overlay{
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--schoolColor, #7fa4db) 10%, rgba(255,255,255,.96)),
+    rgba(246,250,255,.88)
+  ) !important;
+  box-shadow:
+    0 8px 22px rgba(24,44,74,.12),
+    0 0 0 1px color-mix(in srgb, var(--schoolColor,#7fa4db) 16%, rgba(118,129,153,.18)) !important;
+  backdrop-filter: blur(18px) saturate(118%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(118%) !important;
+}
+
+body.theme-light #stickyModelHeader .smh-overlay::after{
+  background: linear-gradient(180deg, rgba(255,255,255,.46), transparent 38%) !important;
+}
+
+body.theme-light #stickyModelHeader .smh-title{
+  color: color-mix(in srgb, var(--schoolColor,#4c73a9) 78%, #1c2b42) !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.62), 0 1px 2px rgba(24,44,74,.16) !important;
+}
+
+body.theme-light #stickyModelHeader .smh-author{
+  color: #5e6d84 !important;
+}
+
+body.theme-light #stickyModelHeader .smh-dot{
+  background: color-mix(in srgb, var(--schoolColor,#5f8fd1) 72%, white 8%) !important;
+  border-color: color-mix(in srgb, var(--schoolColor,#5f8fd1) 86%, rgba(118,129,153,.22)) !important;
+  box-shadow:
+    0 0 0 5px color-mix(in srgb, var(--schoolColor,#5f8fd1) 16%, transparent),
+    0 0 10px color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, transparent) !important;
+}
+
+body.theme-light::after{
+  opacity:.16;
+}
+
+body.theme-light #countLine{
+  opacity: 1;
+}
+
+body.theme-light #countLine .count-n{
+  color:#1d2636;
+  font-size:15px;
+  font-weight:900;
+}
+
+body.theme-light #countLine .count-txt{
+  color:#596881;
+  opacity:1;
+  font-weight:700;
+}
+
+body.theme-light #countLine .count-school{
+  color: var(--schoolColor, #2f4f83);
+  font-weight:850;
+}
+
+body.theme-light .mi-title{
+  font-weight:760;
+  font-size:12.8px;
+  line-height:1.22;
+  letter-spacing:-0.01em;
+  color:#1c2433;
+}
+
+body.theme-light .mi-item.is-marco .mi-title{
+  font-weight:640;
+  letter-spacing:.015em;
+}
+
+body.theme-light .mi-year{
+  color:#8a98ae;
+  font-weight:780;
+}
+
+body.theme-light .mi-sub{
+  color:#66748b;
+  opacity:1;
+}
+
+body.theme-light .landingSchoolMeta{
+  color:#5b6880;
+}
+
+body.theme-light .landingSchoolMeta .landingCount{
+  color:#1f2a3d;
+  font-weight:900;
+}
+
+body.theme-light .landingSchoolMeta .landingCountLabel{
+  color:#5e6c84;
+  font-weight:800;
+}
+
+body.theme-light .count-school,
+body.theme-light .school-title,
+body.theme-light .modelPanel .mp-tag,
+body.theme-light .mi-year,
+body.theme-light .landingSchoolMeta .landingCount{
+  text-shadow: 0 1px 0 rgba(255,255,255,.46);
+}
+
+body.theme-light .mi-item.active .mi-title{
+  color: color-mix(in srgb, var(--schoolColor, #6f9be6) 58%, #1d2a40 42%) !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.56) !important;
+}
+
+/* Escuelas claras conflictivas (Otros / Sistemico) en modo light */
+body.theme-light.school-otros .mi-item.active .mi-title,
+body.theme-light.school-sistemico .mi-item.active .mi-title{
+  color:#1f2d44 !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.62) !important;
+}
+
+body.theme-light.school-otros .modelPanel .mp-tag,
+body.theme-light.school-sistemico .modelPanel .mp-tag{
+  box-shadow:
+    0 1px 0 rgba(23,38,64,.26),
+    inset 0 1px 0 rgba(255,255,255,.72) !important;
+}
+
+body.theme-light.school-otros .mi-item.active{
+  border-color: rgba(64,79,104,.50) !important;
+  box-shadow:
+    0 0 0 2px rgba(64,79,104,.18),
+    inset 0 1px 0 rgba(255,255,255,.98) !important;
+}
+
+body.theme-light.school-otros .modelPanel .mp-tag{
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.46),
+    0 1px 2px rgba(20,30,48,.34) !important;
+}
+
+body.theme-light.school-otros .count-school,
+body.theme-light.school-otros #countLine .count-school{
+  color:#304563 !important;
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.58),
+    0 1px 2px rgba(20,30,48,.30) !important;
+}
+
+/* Landing (solo light): legible y limpio sin halo borroso */
+body.theme-light .landingSchool{
+  background: linear-gradient(180deg, rgba(255,255,255,.94), rgba(246,250,255,.88));
+  border-color: rgba(118,129,153,.24);
+  box-shadow:
+    0 12px 28px rgba(24,44,74,.12),
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+body.theme-light .landingSchoolName{
+  color: color-mix(in srgb, var(--schoolColor, #6f9be6) 52%, #1c2a42 48%) !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.64) !important;
+}
+
+body.theme-light .landingKicker,
+body.theme-light .landingLead,
+body.theme-light .landingSchoolMeta,
+body.theme-light .landingSchoolMeta .landingCount,
+body.theme-light .landingSchoolMeta .landingCountLabel{
+  text-shadow: 0 1px 0 rgba(255,255,255,.58) !important;
+}
+
+/* Descripciones más legibles en light */
+body.theme-light .modelPanel .mp-desc,
+body.theme-light .modelPanel .mp-hero-text,
+body.theme-light .mp-acc .body,
+body.theme-light .mp-sub .subBody,
+body.theme-light .mp-idea-body,
+body.theme-light .mp-seqDesc{
+  color:#273246 !important;
+}
+
+@media (max-width: 980px){
+  body.theme-light .panel{
+    background: linear-gradient(180deg, rgba(255,255,255,.94), rgba(248,252,255,.90));
+  }
+
+  body.theme-light .mp-mapbg{
+    opacity:.40;
+  }
+}
+
   </style>
 
 </head>
@@ -4419,8 +4852,22 @@ function filteredModelsBySchool(grupo){
     );
 }
 
+function setSchoolToneClass(grupo){
+  const b = document.body;
+  if(!b) return;
+  b.classList.remove('school-otros', 'school-sistemico');
 
- function renderModelsList(){
+  const g = String(grupo || '')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .toLowerCase()
+    .trim();
+
+  if (g === 'otros') b.classList.add('school-otros');
+  if (g === 'sistemico') b.classList.add('school-sistemico');
+}
+
+
+function renderModelsList(){
 
   const list = filteredModelsBySchool(currentSchool);
 
@@ -4527,9 +4974,12 @@ return `
 
 function renderSchoolInfo(grupo){
   if(!grupo){
+    setSchoolToneClass('');
     renderModelInfo(null);
     return;
   }
+
+  setSchoolToneClass(grupo);
 
   const col = groupColor.get(grupo) || '#ffffff';
 const info = SCHOOL_INFO[grupo] || {};
@@ -4612,6 +5062,7 @@ ${keys.length ? `
 
   // ✅ Si no hay modelo: pinta SIEMPRE el hero y resetea estados
   if(!m || !m.id){
+    setSchoolToneClass(currentSchool || '');
 
     modelInfoEl.classList.remove('school-view');
     modelInfoEl.style.removeProperty('--schoolColor');
@@ -4654,6 +5105,7 @@ ${keys.length ? `
   // ---- a partir de aquí, ya hay modelo real ----
   try{ console.log('OPEN MODEL', m.label, m.id); }catch(e){}
   const col = groupColor.get(m.grupo) || '#ffffff';
+  setSchoolToneClass(m.grupo);
 
   modelInfoEl.classList.remove('school-view');
   modelInfoEl.style.removeProperty('--schoolColor');
@@ -4959,7 +5411,7 @@ function sectionAliInner(obj){
 
   return entries.map(([k,v]) => `
     <div style="margin:10px 0 0 0">
-      <div style="font-weight:900; color:#fff; font-size:12px">${escapeHtml(nice(k))}</div>
+      <div style="font-weight:900; color:var(--text); font-size:12px">${escapeHtml(nice(k))}</div>
       <div style="margin-top:6px; white-space:pre-wrap;">${escapeHtml(v)}</div>
     </div>
   `).join('');
@@ -4983,7 +5435,7 @@ function sectionNeimeyerInner(obj){
 
   return blocks.map(([k,v]) => `
     <div style="margin:10px 0 0 0">
-      <div style="font-weight:900; color:#fff; font-size:12px">${escapeHtml(labels[k] ?? k)}</div>
+      <div style="font-weight:900; color:var(--text); font-size:12px">${escapeHtml(labels[k] ?? k)}</div>
       <div style="margin-top:6px; white-space:pre-wrap;">${escapeHtml(v)}</div>
     </div>
   `).join('');
@@ -5104,7 +5556,7 @@ function sectionIdeasInner(ideas){
           <h4>${escapeHtml(title)}</h4>
           ${entries.map(([k,v]) => `
             <div style="margin:10px 0 0 0">
-              <div style="font-weight:900; color:#fff; font-size:12px">${escapeHtml(nice(k))}</div>
+              <div style="font-weight:900; color:var(--text); font-size:12px">${escapeHtml(nice(k))}</div>
               <div style="margin-top:6px; white-space:pre-wrap; color:#e3ebf6">${escapeHtml(v)}</div>
             </div>
           `).join('')}
@@ -5145,7 +5597,7 @@ function sectionIdeasInner(ideas){
           <h4>${escapeHtml(title)}</h4>
           ${blocks.map(([k,v]) => `
             <div style="margin:10px 0 0 0">
-              <div style="font-weight:900; color:#fff; font-size:12px">${escapeHtml(labels[k] ?? k)}</div>
+              <div style="font-weight:900; color:var(--text); font-size:12px">${escapeHtml(labels[k] ?? k)}</div>
               <div style="margin-top:6px; white-space:pre-wrap; color:#e3ebf6">${escapeHtml(v)}</div>
             </div>
           `).join('')}
@@ -5529,6 +5981,14 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
       </svg>
     </a>
 
+    <button class="nav-fab" role="menuitem" id="btnThemeToggle"
+            type="button" title="Cambiar a oscuro" aria-label="Cambiar a oscuro">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 4.5v2.2M12 17.3v2.2M4.5 12h2.2M17.3 12h2.2M6.9 6.9l1.6 1.6M15.5 15.5l1.6 1.6M17.1 6.9l-1.6 1.6M8.5 15.5l-1.6 1.6M12 15.8a3.8 3.8 0 1 0 0-7.6a3.8 3.8 0 0 0 0 7.6Z"
+          stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
   </div>
 
   <button class="nav-fab nav-fab-main" type="button"
@@ -5547,7 +6007,34 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
 
   const btn  = nav.querySelector('.nav-fab-main');
   const menu = nav.querySelector('.nav-menu');
+  const themeBtn = nav.querySelector('#btnThemeToggle');
   if (!btn || !menu) return;
+
+  const THEME_KEY = 'tmps_modelos_theme';
+  const sunIcon = `
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 4.5v2.2M12 17.3v2.2M4.5 12h2.2M17.3 12h2.2M6.9 6.9l1.6 1.6M15.5 15.5l1.6 1.6M17.1 6.9l-1.6 1.6M8.5 15.5l-1.6 1.6M12 15.8a3.8 3.8 0 1 0 0-7.6a3.8 3.8 0 0 0 0 7.6Z"
+        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>`;
+  const moonIcon = `
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M14.8 4.2a7.8 7.8 0 1 0 5 13.8a8.6 8.6 0 1 1-5-13.8Z"
+        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>`;
+
+  function applyTheme(mode){
+    const light = (mode === 'light');
+    document.body.classList.toggle('theme-light', light);
+
+    if (themeBtn){
+      themeBtn.innerHTML = light ? moonIcon : sunIcon;
+      themeBtn.title = light ? 'Cambiar a oscuro' : 'Cambiar a claro';
+      themeBtn.setAttribute('aria-label', light ? 'Cambiar a oscuro' : 'Cambiar a claro');
+    }
+  }
+
+  const savedTheme = localStorage.getItem(THEME_KEY);
+  applyTheme(savedTheme === 'light' ? 'light' : 'dark');
 
   const setOpen = (on) => {
     nav.classList.toggle('open', on);
@@ -5569,6 +6056,17 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') setOpen(false);
   });
+
+  if (themeBtn){
+    themeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const toLight = !document.body.classList.contains('theme-light');
+      applyTheme(toLight ? 'light' : 'dark');
+      localStorage.setItem(THEME_KEY, toLight ? 'light' : 'dark');
+      setOpen(false);
+    });
+  }
 
   menu.addEventListener('click', () => setOpen(false));
 
