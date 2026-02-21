@@ -3797,12 +3797,11 @@ AUTHOR_PHOTO_PROMISE = ASSET_VERSION_PROMISE
 
 // ✅ GH_SCHOOLS: útil, pero JAMÁS debe romper el render
 try{
-  const idx = await loadGhSchoolsIndex();      // que devuelva un objeto
-  if(idx && typeof idx === "object"){
-    GH_SCHOOLS = idx;                          // ✅ la variable que usa tu app
-  }else{
-    console.warn("[GH_SCHOOLS] respuesta inválida, uso []");
-    GH_SCHOOLS = Array.isArray(GH_SCHOOLS) ? GH_SCHOOLS : [];
+  const idx = await loadGhSchoolsIndex();
+  GH_SCHOOLS = Array.isArray(idx) ? idx : (Array.isArray(idx?.escuelas) ? idx.escuelas : []);
+  window.GH_SCHOOLS = GH_SCHOOLS;
+  if(!GH_SCHOOLS.length){
+    console.warn("[GH_SCHOOLS] respuesta vacía/invalid, uso []");
   }
 }catch(e){
   console.warn("[GH_SCHOOLS] no se pudo cargar (continúo sin él):", e);
@@ -4164,7 +4163,7 @@ try{
 
 
 // Escuelas disponibles en GitHub (solo para poblar el selector)
-GH_SCHOOLS = []; // array de {id,label,color,order...} o lo que tengas
+if (!Array.isArray(GH_SCHOOLS)) GH_SCHOOLS = []; // no pisar si ya viene cargado
 
 // Cache de escuelas/modelos cargados desde GitHub
 const GH_SCHOOL_LOADED = new Set();   // slugs (ej: "humanista")
@@ -4227,8 +4226,8 @@ function hasLocalSchoolModels(label){
 // Carga index de escuelas de GitHub (si falla, no pasa nada)
 async function loadGhSchoolsIndex(){
   try{
-    GH_SCHOOLS = await fetchJson(gh('Core/escuelas/index.json'));
-    if (!Array.isArray(GH_SCHOOLS)) GH_SCHOOLS = [];
+    const idx = await fetchJson(gh('Core/escuelas/index.json'), { bust:true });
+    GH_SCHOOLS = Array.isArray(idx) ? idx : (Array.isArray(idx?.escuelas) ? idx.escuelas : []);
   }catch(e){
     console.warn('No se pudo cargar index de escuelas desde GitHub:', e);
     GH_SCHOOLS = [];
@@ -4276,16 +4275,38 @@ async function ensureSchoolFromGitHub(schoolLabel){
 
   // ✅ Single-flight real
   const promise = (async () => {
+    const rawFile = String(entry.file || '').trim().replace(/^\/+/, '');
+    if (!rawFile){
+      console.warn('Escuela sin file en index:', entry);
+      return;
+    }
 
-    // usa entry.file
-const school = await fetchJson(gh('Core/' + entry.file));
+    // ✅ tolera index con "Core/..." o sin él, y evita quedarte con un 404 cacheado
+    const schoolUrls = [];
+    const addUrl = (u) => { if (u && !schoolUrls.includes(u)) schoolUrls.push(u); };
+    addUrl(gh(rawFile.startsWith('Core/') ? rawFile : `Core/${rawFile}`));
+    addUrl(gh(rawFile.replace(/^Core\//, '')));
 
+    let school = null;
+    for (const u of schoolUrls){
+      school = await fetchJson(u, { bust:true });
+      if (school) break;
+    }
 
+    if (!school){
+      console.warn('No se pudo cargar escuela desde GH:', schoolLabel, schoolUrls);
+      return;
+    }
 
-    const summaries = (school.modelos || []).map(m => ({
+    // ✅ admite variantes de estructura
+    const listRaw =
+      (Array.isArray(school?.modelos) ? school.modelos : null) ||
+      (Array.isArray(school?.models) ? school.models : null) ||
+      (Array.isArray(school) ? school : []);
+
+    const summaries = listRaw.map(m => ({
       ...m,
-      grupo: String(school.label || schoolLabel).trim()
-
+      grupo: String(school.label || entry.label || schoolLabel).trim()
     }));
 
     // Añade a MODELS sin duplicar
@@ -6033,8 +6054,10 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
     }
   }
 
+  const qsTheme = String(new URLSearchParams(location.search).get('theme') || '').toLowerCase();
+  const forcedTheme = (qsTheme === 'light' || qsTheme === 'dark') ? qsTheme : '';
   const savedTheme = localStorage.getItem(THEME_KEY);
-  applyTheme(savedTheme === 'light' ? 'light' : 'dark');
+  applyTheme(forcedTheme || (savedTheme === 'light' ? 'light' : 'dark'));
 
   const setOpen = (on) => {
     nav.classList.toggle('open', on);
