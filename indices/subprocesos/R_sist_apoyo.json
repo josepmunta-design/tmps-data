@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_apoyo",
-  "updatedAt": "2026-02-21T12:37:13.256Z",
-  "totalModelos": 12,
+  "updatedAt": "2026-02-21T12:47:22.594Z",
+  "totalModelos": 13,
   "modelos": [
     {
       "modelId": "whanau-ora-modelo-maori-2000",
@@ -126,6 +126,29 @@
           "texto": "Procedimiento que incluye evaluación y manejo de factores biológicos y de consumo (sueño, medicación, alcohol/cannabis/estimulantes, salud física), con psicoeducación y, cuando procede, coordinación con recursos médicos. El objetivo es evitar atribuir a “lo psicológico” fenómenos primariamente fisiológicos y reducir ruido biológico que empeora regulación emocional y control conductual, mejorando viabilidad del proceso terapéutico. (Lazarus, 1989)",
           "sub": "R_sist_apoyo",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "tanatologia-clinica-mexico-1990",
+      "modelLabel": "Tanatología clínica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Desarrollos clínicos mexicanos",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_tanatologia_movilizacion_apoyo",
+          "nombre": "Movilización de red de apoyo y sostén comunitario",
+          "texto": "Procedimiento que identifica aislamiento, vergüenza o autoexigencia de “poder solo/a” y activa apoyos realistas (familia, amistades, comunidad, espiritualidad, grupos), distribuyendo carga emocional y práctica; incluye pedir ayuda de forma específica, planificar compañía en momentos críticos y construir un entorno que facilite regulación y continuidad biográfica, especialmente cuando hay riesgo de complicación por soledad o sobrecarga. Referencia: Worden (2009); Instituto Mexicano de Tanatología (2010).",
+          "sub": "R_sist_apoyo",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tanatologia_aislamiento",
+          "nombre": "Detectar aislamiento relacional silencioso",
+          "texto": "Intervención que explora si el paciente ha reducido contacto social por miedo a incomodar o por sentirse incomprendido, identificando oportunidades concretas de reactivar red de apoyo. Referencia: Instituto Mexicano de Tanatología (2010).",
+          "sub": "R_sist_apoyo",
+          "tipo": "micro"
         }
       ]
     },
