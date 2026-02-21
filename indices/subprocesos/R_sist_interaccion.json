@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_interaccion",
-  "updatedAt": "2026-02-21T22:32:38.440Z",
-  "totalModelos": 18,
+  "updatedAt": "2026-02-21T23:01:00.978Z",
+  "totalModelos": 19,
   "modelos": [
     {
       "modelId": "psicoterapia-comunitaria-ubuntu-1995",
@@ -477,6 +477,92 @@
           "texto": "Introducción deliberada de juego, ironía y humor para flexibilizar defensas y permitir nuevas formas de relación.",
           "sub": "R_sist_interaccion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-familiar-sistemica-milan-1975",
+      "modelLabel": "Terapia Familiar Sistémica de Milán",
+      "modelGrupo": "Sistémica",
+      "modelAutores": "Mara Selvini Palazzoli, Gianfranco Cecchin, Luigi Boscolo, Giuliana Prata",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_milan_definicion_sistemica_problema",
+          "nombre": "Definición sistémica inicial del problema: del síntoma individual al patrón relacional",
+          "texto": "Procedimiento de reencuadre clínico donde el foco se desplaza del “paciente identificado” a la descripción de la pauta circular que mantiene el síntoma (quién hace qué, cuándo, ante qué, y cómo responde el resto), formulando el problema como un fenómeno de autorregulación del sistema; se buscan secuencias repetidas, escaladas y estabilizadores, de manera que la familia empiece a verse como un sistema organizado por reglas y retroalimentaciones, no como individuos culpables o defectuosos. (Boscolo et al., 1987; Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_entrevista_circular",
+          "nombre": "Entrevista circular (circular questioning) para mapear diferencias, alianzas y reglas",
+          "texto": "Procedimiento exploratorio altamente distintivo: preguntas dirigidas a un miembro sobre la relación entre otros (p. ej., “¿quién se preocupa más cuando X…?”, “¿quién se enfada antes?”), para hacer visibles diferencias de percepción, jerarquías, coaliciones, triangulaciones y reglas tácitas; la circularidad no es solo ‘preguntar por los otros’, sino producir información relacional y, al mismo tiempo, generar pequeñas perturbaciones que flexibilizan el patrón al obligar al sistema a observarse a sí mismo. (Boscolo et al., 1987).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_prescripcion_invariable",
+          "nombre": "Prescripción invariable (invariant prescription) en familias con juego psicótico/anorexia",
+          "texto": "Procedimiento clásico y muy diferencial del Milán temprano: se prescribe una pauta estable (p. ej., encuentros regulares y secretos entre progenitores, sin informar a los hijos) para reorganizar jerarquías, deshacer coaliciones patológicas y debilitar triangulaciones donde el síntoma mantiene unido al sistema; se aplica con extrema prudencia clínica y solo cuando la formulación sistémica y el encuadre lo sostienen, porque su potencia depende de alterar reglas implícitas sin confrontación directa. (Selvini Palazzoli et al., 1978; Selvini Palazzoli, 1988).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_rituales_prescritos",
+          "nombre": "Rituales terapéuticos prescritos para modificar reglas implícitas",
+          "texto": "Procedimiento de intervención mediante rituales (acciones repetidas, simbólicas y estructuradas) diseñados para cambiar reglas invisibles del sistema (quién habla con quién, qué se permite sentir, cómo se gestiona cercanía/distancia); el ritual funciona como ‘nuevo guion’ que permite reorganización sin debate interminable, generando experiencias de interacción distintas que reconfiguran la pauta por aprendizaje sistémico, no por persuasión. (Selvini Palazzoli et al., 1978; Boscolo et al., 1987).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_paradoja_contraparadoja",
+          "nombre": "Intervenciones paradójicas y contra-paradójicas (Paradox / Counterparadox)",
+          "texto": "Procedimiento estratégico donde se prescribe o valida de manera estructurada un aspecto del patrón (paradoja) para interrumpir la escalada y forzar al sistema a reorganizarse, y se usan maniobras contra-paradójicas para evitar que el sistema absorba la intervención y la convierta en parte del mismo juego; su objetivo no es ‘confundir’, sino romper la homeostasis sintomática y abrir bifurcaciones en el ciclo relacional. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_manejo_impasse_absorcion",
+          "nombre": "Manejo de impasses sistémicos: cuando la terapia es absorbida por el juego familiar",
+          "texto": "Procedimiento para situaciones donde el sistema convierte la terapia en parte del patrón (p. ej., usa al terapeuta como árbitro, refuerza coaliciones o utiliza tareas para ‘demostrar’ algo): se detecta el bucle, se restablece neutralidad, se reformula la función del impasse y se introducen intervenciones contra-paradójicas o rituales que cambian el contexto relacional del encuadre, devolviendo la terapia a una posición perturbadora y no homeostática. (Selvini Palazzoli et al., 1978; Boscolo et al., 1987).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_milan_pregunta_circular",
+          "nombre": "Pregunta circular básica",
+          "texto": "Microintervención consistente en preguntar a un miembro sobre la relación entre otros dos (por ejemplo, “¿quién se preocupa más cuando él se aísla, tu madre o tu padre?”), con el objetivo de hacer visibles patrones relacionales, diferencias de percepción y posibles alianzas sin confrontación directa; no busca información individual sino perturbar la linealidad causal y activar observación sistémica. (Boscolo et al., 1987).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_secuenciacion_ciclo",
+          "nombre": "Secuenciación explícita del ciclo",
+          "texto": "Microintervención que describe en voz alta la cadena interactiva observada en sesión (“cuando ella critica, tú te callas; cuando te callas, ella intensifica”), ayudando al sistema a verse desde fuera y a reconocer la circularidad que mantiene el problema. (Boscolo et al., 1987).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_redistribucion_palabra",
+          "nombre": "Redistribución de la palabra",
+          "texto": "Intervención mínima que cambia el turno de palabra hacia miembros menos dominantes o excluidos, alterando jerarquías conversacionales y produciendo pequeñas perturbaciones en la estructura de poder comunicacional del sistema. (Boscolo et al., 1987).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_paradoja",
+          "nombre": "Prescripción paradójica puntual",
+          "texto": "Indicación breve que valida o incluso prescribe un aspecto del patrón (“continúen haciéndolo exactamente así esta semana”) con la intención de que el sistema se vea obligado a modificarlo al hacerlo consciente y voluntario, interrumpiendo la automatización circular. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_triangulacion_vivo",
+          "nombre": "Detección de triangulación en vivo",
+          "texto": "Señalamiento mínimo de una triangulación emergente en sesión (“estáis hablando entre vosotros a través de él”), que hace consciente la coalición sin acusación directa y permite devolver la conversación a la díada correspondiente. (Boscolo et al., 1987).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
         }
       ]
     }

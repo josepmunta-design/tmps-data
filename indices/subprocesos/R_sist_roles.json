@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_roles",
-  "updatedAt": "2026-02-21T22:32:38.440Z",
-  "totalModelos": 20,
+  "updatedAt": "2026-02-21T23:01:00.978Z",
+  "totalModelos": 21,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -454,6 +454,99 @@
           "codigo": "m_bowen_funcion_sintoma",
           "nombre": "Señalar ‘función del síntoma’ sin culpabilizar",
           "texto": "Microintervención que conecta el síntoma con la regulación del sistema (‘cuando tú colapsas, el conflicto entre ellos baja’). Se formula con cuidado para evitar que el consultante se sienta usado o culpable. Bien hecha, aumenta comprensión y abre destriangulación.",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-familiar-sistemica-milan-1975",
+      "modelLabel": "Terapia Familiar Sistémica de Milán",
+      "modelGrupo": "Sistémica",
+      "modelAutores": "Mara Selvini Palazzoli, Gianfranco Cecchin, Luigi Boscolo, Giuliana Prata",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_milan_hipotesis_sistemicas_contraste",
+          "nombre": "Formulación de hipótesis sistémicas y contraste en vivo",
+          "texto": "Procedimiento central: el equipo genera hipótesis provisionales sobre la función del síntoma, las reglas del sistema, y las coaliciones/triangulaciones relevantes; luego las contrasta en directo mediante preguntas y observación de micro-reacciones, buscando coherencia pragmática más que “verdad histórica”, y actualizando la hipótesis si la interacción no encaja; la hipótesis guía qué se pregunta, a quién, en qué orden y con qué propósito estratégico. (Boscolo et al., 1987; Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_entrevista_circular",
+          "nombre": "Entrevista circular (circular questioning) para mapear diferencias, alianzas y reglas",
+          "texto": "Procedimiento exploratorio altamente distintivo: preguntas dirigidas a un miembro sobre la relación entre otros (p. ej., “¿quién se preocupa más cuando X…?”, “¿quién se enfada antes?”), para hacer visibles diferencias de percepción, jerarquías, coaliciones, triangulaciones y reglas tácitas; la circularidad no es solo ‘preguntar por los otros’, sino producir información relacional y, al mismo tiempo, generar pequeñas perturbaciones que flexibilizan el patrón al obligar al sistema a observarse a sí mismo. (Boscolo et al., 1987).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_connotacion_positiva",
+          "nombre": "Connotación positiva del síntoma como función organizativa del sistema",
+          "texto": "Procedimiento de reatribución: el síntoma se describe como una solución relacional que, en algún nivel, protege la estabilidad del sistema o evita un conflicto mayor (sin romantizarlo), lo que reduce defensividad, permite reconocer la lógica del patrón y abre opciones de cambio; la connotación positiva se usa de forma estratégica para disminuir polarizaciones, facilitar cooperación y hacer viable una intervención paradójica sin que la familia la viva como ataque. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_prescripcion_invariable",
+          "nombre": "Prescripción invariable (invariant prescription) en familias con juego psicótico/anorexia",
+          "texto": "Procedimiento clásico y muy diferencial del Milán temprano: se prescribe una pauta estable (p. ej., encuentros regulares y secretos entre progenitores, sin informar a los hijos) para reorganizar jerarquías, deshacer coaliciones patológicas y debilitar triangulaciones donde el síntoma mantiene unido al sistema; se aplica con extrema prudencia clínica y solo cuando la formulación sistémica y el encuadre lo sostienen, porque su potencia depende de alterar reglas implícitas sin confrontación directa. (Selvini Palazzoli et al., 1978; Selvini Palazzoli, 1988).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_coaliciones_fronteras",
+          "nombre": "Trabajo explícito con coaliciones, alianzas y fronteras del sistema",
+          "texto": "Procedimiento de reorganización relacional centrado en identificar coaliciones encubiertas (p. ej., padre-hija contra madre), alianzas rígidas y fronteras difusas o excesivamente rígidas, y promover reconfiguraciones que devuelvan los conflictos a las díadas correspondientes y restauren jerarquías funcionales; en Milán se hace típicamente sin “señalar culpables”, sino mediante preguntas circulares, connotación positiva y prescripciones que cambian la estructura desde la interacción. (Boscolo et al., 1987; Selvini Palazzoli, 1988).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_milan_pregunta_comparativa",
+          "nombre": "Pregunta comparativa de diferencias",
+          "texto": "Microintervención que solicita comparaciones (“¿quién se enfada antes?”, “¿quién se retira más rápido?”) para introducir matices, romper explicaciones globales y forzar al sistema a precisar secuencias interactivas, facilitando que la familia empiece a pensar en términos de patrón y no de culpable. (Boscolo et al., 1987).",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_connotacion_positiva",
+          "nombre": "Connotación positiva puntual",
+          "texto": "Reatribución breve que describe el síntoma o una conducta problemática como intento de proteger o sostener algo valioso del sistema (“parece que tu retirada ayuda a que no estalle el conflicto”), reduciendo defensividad y permitiendo abordar la función sin atacar al portador del síntoma. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_redistribucion_palabra",
+          "nombre": "Redistribución de la palabra",
+          "texto": "Intervención mínima que cambia el turno de palabra hacia miembros menos dominantes o excluidos, alterando jerarquías conversacionales y produciendo pequeñas perturbaciones en la estructura de poder comunicacional del sistema. (Boscolo et al., 1987).",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_neutralizacion_alianza",
+          "nombre": "Neutralización de invitación a alianza",
+          "texto": "Respuesta breve y estratégica ante intentos de que el terapeuta tome partido, devolviendo la responsabilidad al sistema (“eso parece importante para vosotros como padres”) y evitando quedar atrapado en coaliciones que perpetúan el patrón. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_funcion_sintoma",
+          "nombre": "Reformulación de función del síntoma",
+          "texto": "Microintervención que articula explícitamente qué equilibrio parece sostener el síntoma dentro del sistema, desplazando la atención del contenido del problema a su utilidad organizativa, preparando el terreno para cambios estructurales. (Boscolo et al., 1987).",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_reglas_implicitas",
+          "nombre": "Pregunta sobre reglas implícitas",
+          "texto": "Intervención que explora normas no verbalizadas (“¿en vuestra familia quién puede enfadarse y quién no?”), ayudando a hacer visibles guiones intergeneracionales que organizan la interacción y mantienen el síntoma. (Selvini Palazzoli, 1988).",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_alianzas_generacionales",
+          "nombre": "Exploración de alianzas generacionales",
+          "texto": "Pregunta específica orientada a detectar coaliciones intergeneracionales (“¿con quién se alía cada uno cuando hay conflicto?”), clarificando jerarquías y posibles inversiones parentales que sostienen el síntoma. (Boscolo et al., 1987).",
           "sub": "R_sist_roles",
           "tipo": "micro"
         }

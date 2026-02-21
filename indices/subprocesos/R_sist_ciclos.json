@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_ciclos",
-  "updatedAt": "2026-02-21T22:32:38.440Z",
-  "totalModelos": 20,
+  "updatedAt": "2026-02-21T23:01:00.978Z",
+  "totalModelos": 21,
   "modelos": [
     {
       "modelId": "psicoterapia-comunitaria-ubuntu-1995",
@@ -487,6 +487,78 @@
           "codigo": "m_bowen_pregunta_proceso",
           "nombre": "Pregunta de proceso (¿qué pasa entre vosotros cuando…?)",
           "texto": "Microintervención para desplazar el foco de contenido y culpables hacia secuencias interaccionales. Ayuda a que el consultante observe patrones repetidos y detecte triángulos, escaladas o retiradas. Es una herramienta rápida para salir del ‘drama’ y entrar en análisis funcional.",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-familiar-sistemica-milan-1975",
+      "modelLabel": "Terapia Familiar Sistémica de Milán",
+      "modelGrupo": "Sistémica",
+      "modelAutores": "Mara Selvini Palazzoli, Gianfranco Cecchin, Luigi Boscolo, Giuliana Prata",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_milan_definicion_sistemica_problema",
+          "nombre": "Definición sistémica inicial del problema: del síntoma individual al patrón relacional",
+          "texto": "Procedimiento de reencuadre clínico donde el foco se desplaza del “paciente identificado” a la descripción de la pauta circular que mantiene el síntoma (quién hace qué, cuándo, ante qué, y cómo responde el resto), formulando el problema como un fenómeno de autorregulación del sistema; se buscan secuencias repetidas, escaladas y estabilizadores, de manera que la familia empiece a verse como un sistema organizado por reglas y retroalimentaciones, no como individuos culpables o defectuosos. (Boscolo et al., 1987; Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_connotacion_positiva",
+          "nombre": "Connotación positiva del síntoma como función organizativa del sistema",
+          "texto": "Procedimiento de reatribución: el síntoma se describe como una solución relacional que, en algún nivel, protege la estabilidad del sistema o evita un conflicto mayor (sin romantizarlo), lo que reduce defensividad, permite reconocer la lógica del patrón y abre opciones de cambio; la connotación positiva se usa de forma estratégica para disminuir polarizaciones, facilitar cooperación y hacer viable una intervención paradójica sin que la familia la viva como ataque. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_paradoja_contraparadoja",
+          "nombre": "Intervenciones paradójicas y contra-paradójicas (Paradox / Counterparadox)",
+          "texto": "Procedimiento estratégico donde se prescribe o valida de manera estructurada un aspecto del patrón (paradoja) para interrumpir la escalada y forzar al sistema a reorganizarse, y se usan maniobras contra-paradójicas para evitar que el sistema absorba la intervención y la convierta en parte del mismo juego; su objetivo no es ‘confundir’, sino romper la homeostasis sintomática y abrir bifurcaciones en el ciclo relacional. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_seguimiento_espaciado_reevaluacion",
+          "nombre": "Seguimiento espaciado y reevaluación circular del cambio (feedback sistémico)",
+          "texto": "Procedimiento de control del proceso: por el espaciado de sesiones, el seguimiento se centra en leer cómo el sistema absorbió o resistió la intervención, qué cambios aparecieron en la pauta circular, y qué nuevos ciclos emergen como sustitutos del síntoma; se reevalúan hipótesis y se ajustan prescripciones para mantener la perturbación útil sin escaladas destructivas, priorizando cambios observables en interacción más que reportes lineales de “me siento mejor”. (Boscolo et al., 1987).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_milan_manejo_impasse_absorcion",
+          "nombre": "Manejo de impasses sistémicos: cuando la terapia es absorbida por el juego familiar",
+          "texto": "Procedimiento para situaciones donde el sistema convierte la terapia en parte del patrón (p. ej., usa al terapeuta como árbitro, refuerza coaliciones o utiliza tareas para ‘demostrar’ algo): se detecta el bucle, se restablece neutralidad, se reformula la función del impasse y se introducen intervenciones contra-paradójicas o rituales que cambian el contexto relacional del encuadre, devolviendo la terapia a una posición perturbadora y no homeostática. (Selvini Palazzoli et al., 1978; Boscolo et al., 1987).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_milan_pregunta_futuro",
+          "nombre": "Pregunta de futuro hipotético",
+          "texto": "Microintervención orientada a explorar cómo reaccionaría cada miembro si el síntoma desapareciera o cambiara (“si mañana dejara de ocurrir, ¿quién lo notaría primero?”), permitiendo anticipar reorganizaciones del sistema y detectar funciones ocultas del síntoma dentro del equilibrio relacional. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_secuenciacion_ciclo",
+          "nombre": "Secuenciación explícita del ciclo",
+          "texto": "Microintervención que describe en voz alta la cadena interactiva observada en sesión (“cuando ella critica, tú te callas; cuando te callas, ella intensifica”), ayudando al sistema a verse desde fuera y a reconocer la circularidad que mantiene el problema. (Boscolo et al., 1987).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_paradoja",
+          "nombre": "Prescripción paradójica puntual",
+          "texto": "Indicación breve que valida o incluso prescribe un aspecto del patrón (“continúen haciéndolo exactamente así esta semana”) con la intención de que el sistema se vea obligado a modificarlo al hacerlo consciente y voluntario, interrumpiendo la automatización circular. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_milan_desplazamiento_foco",
+          "nombre": "Desplazamiento de foco del individuo al patrón",
+          "texto": "Microintervención que reformula comentarios individualizantes hacia descripciones interactivas (“más que que él sea desobediente, parece que cuando tú insistes, él se opone”), sosteniendo coherencia sistémica en la conversación clínica. (Selvini Palazzoli et al., 1978).",
           "sub": "R_sist_ciclos",
           "tipo": "micro"
         }
