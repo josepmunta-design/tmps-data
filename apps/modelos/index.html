@@ -34,6 +34,11 @@ const GH_REPO  = "tmps-data";
 let __ASSET_VER = ""; // SHA corto (12)
 window.__ASSET_VER = ""; // ✅ también global, por consistencia
 
+let ASSET_VERSION_PROMISE = Promise.resolve();
+let D3_READY_PROMISE = null;
+let TOPO_READY_PROMISE = null;
+let AUTHOR_PHOTO_PROMISE = null;
+
 
 async function loadAssetVersion(){
   try{
@@ -349,7 +354,9 @@ animation: panelBreath 5s ease-in-out infinite;
     border-color .12s ease,
     transform .12s ease;
   user-select:none;
-    position: relative;
+  position: relative;
+  content-visibility: auto;
+  contain-intrinsic-size: 78px;
 
 }
 
@@ -1184,19 +1191,6 @@ background: rgba(15,22,32,0.32);
     0 0 0 4px rgba(217,170,63,.04);
 }
 
-/* ===== Entrada suave al cargar ===== */
-body:not(.loaded) .panel{
-  opacity: 0;
-  transform: translateY(8px);
-}
-body.loaded .panel{
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity .35s ease, transform .35s ease;
-}
-body.loaded .panel.right{
-  transition-delay: .08s;
-}
 /* =========================
    Micro-ritual de entrada
    ========================= */
@@ -1482,34 +1476,6 @@ html, body{ position: relative; }
     filter: blur(1.1px);
   }
 }
-.mp-ideas{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.mp-idea{
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:12px;
-  background:rgba(255,255,255,.02);
-  overflow:hidden;
-}
-
-.mp-idea-title{
-  cursor:pointer;
-  padding:12px 14px;
-  font-weight:600;
-  list-style:none;
-}
-
-.mp-idea-title::-webkit-details-marker{ display:none; }
-
-.mp-idea-body{
-  padding:0 14px 14px 14px;
-  opacity:.88;
-  line-height:1.55;
-  white-space:pre-wrap;
-}
     /* =========================
    IDEAS PRINCIPALES – ACORDEÓN INTERNO
    ========================= */
@@ -1582,13 +1548,6 @@ html, body{ position: relative; }
 
   border-bottom: 1px solid rgba(255,255,255,0.10);
   box-shadow: 0 10px 26px rgba(0,0,0,0.28);
-}
-
-/* ✅ Sticky del selector: arriba del todo (todas, y en móvil también) */
-.panel.left .schoolSticky{
-  position: sticky;
-  top: 0;
-  z-index: 30;
   margin-top: 0 !important;
 }
 /* ✅ Cuando el selector está realmente “pegado” arriba: esquinas superiores rectas */
@@ -1781,10 +1740,6 @@ body.infoFull .panel.left{
   align-items: center;
   gap: 10px;
   padding: 12px 12px;
-body.is-embed #stickyModelHeader .smh-overlay,
-body.infoFull #stickyModelHeader .smh-overlay{
-  padding-top: calc(16px + env(safe-area-inset-top));
-}
 
   /* apagado por defecto */
   opacity: 0;
@@ -1810,6 +1765,12 @@ backdrop-filter: blur(38px) saturate(145%) brightness(1.08);
   transition: opacity .18s ease, transform .18s ease, box-shadow .18s ease;
   will-change: opacity, transform;
 }
+
+body.is-embed #stickyModelHeader .smh-overlay,
+body.infoFull #stickyModelHeader .smh-overlay{
+  padding-top: calc(16px + env(safe-area-inset-top));
+}
+
 #stickyModelHeader .smh-overlay::after{
   content:"";
   position:absolute;
@@ -3023,8 +2984,8 @@ body.is-embed #modelSheet{
 /* =========================
    EMBED MODE — anclar arriba
    ========================= */
-body.is-embed,
-body.is-embed html{
+html,
+body.is-embed{
   height: 100%;
 }
 
@@ -3151,7 +3112,35 @@ body.is-embed .app{
   background: transparent !important;
 }
 
+/* =========================
+   PERFORMANCE MODE (smartphone)
+   ========================= */
+@media (max-width: 980px){
+  .panel,
+  .landingCard,
+  .mp-fullBtn,
+  #stickyModelHeader .smh-overlay{
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  .panel::before,
+  .bg-blobs,
+  .bg-blobs::before,
+  .bg-blobs::after,
+  .landingBlobs,
+  .landingBlobs::before,
+  .landingBlobs::after{
+    animation: none !important;
+  }
+
+  body::after{
+    display: none !important;
+  }
+}
+
   </style>
+
 </head>
 
 <body>
@@ -3305,40 +3294,6 @@ window.getModelPhoto = function(modelId, authorName){
 };
 
 
-async function ensureD3(timeoutMs = 8000){
-  if (window.d3) return true;
-
-  const sources = [
-    "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js",
-    "https://unpkg.com/d3@7/dist/d3.min.js",
-    "https://d3js.org/d3.v7.min.js"
-  ];
-
-  function load(src){
-    return new Promise((ok, fail)=>{
-      const s = document.createElement("script");
-      s.src = src;
-      s.async = true;
-      s.onload = ok;
-      s.onerror = fail;
-      document.head.appendChild(s);
-    });
-  }
-
-  const t0 = Date.now();
-  for (const src of sources){
-    try{
-      await Promise.race([
-        load(src),
-        new Promise((_,rej)=>setTimeout(()=>rej(new Error("timeout")), 2500))
-      ]);
-      if (window.d3) return true;
-    }catch(e){}
-    if (Date.now() - t0 > timeoutMs) break;
-  }
-  return !!window.d3;
-}
-
 // ✅ NUEVO: topojson también puede no estar listo aunque esté con defer
 async function ensureTopojson(timeoutMs = 6000){
   if (window.topojson) return true;
@@ -3355,11 +3310,20 @@ async function ensureTopojson(timeoutMs = 6000){
 window.addEventListener('DOMContentLoaded', async () => {
   
 
-await loadAssetVersion(); // ✅ antes de cargar foto.json y fotos
-// ✅ IMPORTANTÍSIMO: recalcula DATA_BASE ya con el SHA cargado
-DATA_BASE = IS_GHPAGES
-  ? (location.origin + '/data')
-  : (cdnBase() + '/data');
+ASSET_VERSION_PROMISE = loadAssetVersion()
+  .catch(() => {})
+  .finally(() => {
+    // Recalcula base en segundo plano cuando llegue el SHA (o fallback @main)
+    DATA_BASE = IS_GHPAGES
+      ? (location.origin + '/data')
+      : (cdnBase() + '/data');
+  });
+
+D3_READY_PROMISE = ensureD3().catch(() => false);
+TOPO_READY_PROMISE = ensureTopojson().catch(() => false);
+AUTHOR_PHOTO_PROMISE = ASSET_VERSION_PROMISE
+  .then(() => loadAuthorPhotoIndex())
+  .catch(() => ({ authors:{}, models:{} }));
 
   
   const qs = new URLSearchParams(location.search);
@@ -3371,11 +3335,6 @@ DATA_BASE = IS_GHPAGES
   if(IS_EMBED){
     document.body.classList.add("is-embed");
   }
-  // ✅ dependencias primero (evita “a veces sí / a veces no”)
-  await ensureD3();
-  await ensureTopojson();
-
-await loadAuthorPhotoIndex();
 
 // ✅ GH_SCHOOLS: útil, pero JAMÁS debe romper el render
 try{
@@ -3383,12 +3342,12 @@ try{
   if(idx && typeof idx === "object"){
     GH_SCHOOLS = idx;                          // ✅ la variable que usa tu app
   }else{
-    console.warn("[GH_SCHOOLS] respuesta inválida, uso {}");
-    GH_SCHOOLS = GH_SCHOOLS && typeof GH_SCHOOLS === "object" ? GH_SCHOOLS : {};
+    console.warn("[GH_SCHOOLS] respuesta inválida, uso []");
+    GH_SCHOOLS = Array.isArray(GH_SCHOOLS) ? GH_SCHOOLS : [];
   }
 }catch(e){
   console.warn("[GH_SCHOOLS] no se pudo cargar (continúo sin él):", e);
-  GH_SCHOOLS = GH_SCHOOLS && typeof GH_SCHOOLS === "object" ? GH_SCHOOLS : {};
+  GH_SCHOOLS = Array.isArray(GH_SCHOOLS) ? GH_SCHOOLS : [];
 }
 
     // =========================================================
@@ -3677,6 +3636,22 @@ const projection = d3.geoMercator()
     .attr('filter', 'url(#dotGlow)'); // evita “cuadrados” (Mapamundi usa dotGlow para halos)
 }
 
+
+async function renderMiniMapBgLazy(m){
+  try{
+    const d3ok = await (D3_READY_PROMISE || ensureD3().catch(() => false));
+    const topook = await (TOPO_READY_PROMISE || ensureTopojson().catch(() => false));
+    if (!d3ok || !topook) return;
+
+    const bgSvg = document.getElementById('miniMapSvgBg');
+    if (!bgSvg) return;
+
+    await miniRender(bgSvg, m);
+  }catch(e){
+    console.warn('miniRender bg failed', e);
+  }
+}
+
 // ⬇️ Usa GitHub Pages (más fiable que raw en embeds tipo Teachable)
 
 
@@ -3711,17 +3686,13 @@ const finalUrl = opts.bust
 
     // ✅ si GitHub Pages te devolviese HTML (caché / error), esto lo detecta
    // ⚠️ No te fíes del content-type: GitHub/jsDelivr a veces sirven JSON como text/plain
+const txt = await res.text();
 try{
-  return await res.json();
+  return JSON.parse(txt);
 }catch(e){
-  const txt = await res.text();
-  try{
-    return JSON.parse(txt);
-  }catch(e2){
-    const ct = res.headers.get('content-type') || '';
-    console.warn('No pude parsear JSON en:', url, 'CT=', ct, 'Body head=', txt.slice(0,120));
-    return null;
-  }
+  const ct = res.headers.get('content-type') || '';
+  console.warn('No pude parsear JSON en:', url, 'CT=', ct, 'Body head=', txt.slice(0,120));
+  return null;
 }
 
   } finally {
@@ -3765,6 +3736,7 @@ async function loadGhSchoolsIndex(){
     // ✅ clave: para que openModel() pueda iterar aunque uses window.GH_SCHOOLS
     window.GH_SCHOOLS = GH_SCHOOLS;
   }
+  return GH_SCHOOLS;
 }
 
 
@@ -4196,6 +4168,14 @@ if (leftPanel){
     let currentModelId = null;
 
     function uniq(arr){ return [...new Set(arr.filter(Boolean))]; }
+
+function scheduleIdleTask(fn, timeout = 1200){
+  if (typeof window.requestIdleCallback === 'function'){
+    return window.requestIdleCallback(fn, { timeout });
+  }
+  return setTimeout(fn, 120);
+}
+
 function showLanding(){
   const ov = document.getElementById('landingOverlay');
   if (!ov) return;
@@ -4424,16 +4404,21 @@ return `
 `;
 
   }).join('');
-  // ✅ Prefetch: reduce muchísimo el “primer click” en cada escuela
-  setTimeout(() => {
+  // ✅ Prefetch adaptativo: evita competir con la UI en smartphone
+  scheduleIdleTask(() => {
     try{
-      const pre = list.slice(0, 6);
+      const saveData = !!(navigator.connection && navigator.connection.saveData);
+      if (saveData) return;
+
+      const isMobile = window.matchMedia && window.matchMedia('(max-width: 980px)').matches;
+      const prefetchCount = isMobile ? 2 : 6;
+      const pre = list.slice(0, prefetchCount);
+
       for (const mm of pre){
-        // lanza en background (no await)
         ensureModelFull(mm).catch(()=>{});
       }
     }catch(e){}
-  }, 0);
+  }, 1500);
 
   // 2) Delegación de eventos (se engancha una sola vez)
   if(!modelsListEl.__boundClick){
@@ -4455,11 +4440,11 @@ return `
     currentModelId = id;
 
     // quita active del resto (rápido)
-    modelsListEl.querySelectorAll('.mi-item.active').forEach(el => el.classList.remove('active'));
-    item.classList.add('active');
+    setActiveModelInList(id);
 
     // ✅ 2) feedback visual en panel derecho antes del fetch
     infoFadeOut();
+    resetModelPanelToTop();
 
     // ✅ 3) cede un frame para que el navegador renderice (esto mata el “lag percibido”)
     await new Promise(r => requestAnimationFrame(r));
@@ -4736,14 +4721,10 @@ if (window.__SMH){
 }
 
 
-      // === Mini map de fondo (misma estética Mapamundi) ===
-try{
-const bgSvg = document.getElementById('miniMapSvgBg');
-requestAnimationFrame(() => miniRender(bgSvg, m));
-
-}catch(e){
-  console.warn('miniRender bg failed', e);
-}
+      // === Mini map de fondo (lazy: no bloquea la ficha en móvil) ===
+requestAnimationFrame(() => {
+  renderMiniMapBgLazy(m);
+});
 
 }
 
@@ -4877,7 +4858,7 @@ return `
             </summary>
             <div class="subBody">
               <div class="mp-seqDesc">${desc}</div>
-<div class="mp-flow ${String(seq.tipo||'') === 'protocolo_ciclico' ? 'mp-flow-loop' : ''}">
+<div class="mp-flow ${String(seq.tipo||'') === 'protocolo_ciclico' ? 'mp-flow-circ mp-flow-loop' : ''}">
   ${stepsHtml || '—'}
 </div>
 
@@ -5107,20 +5088,30 @@ function getAllModelsPool(){
     : (Array.isArray(MODELS) ? MODELS : []);
 }
 
+function setActiveModelInList(id){
+  const key = String(id ?? '').trim();
+  if (!modelsListEl) return;
+
+  modelsListEl.querySelectorAll('.mi-item.active').forEach(el => el.classList.remove('active'));
+
+  const target = modelsListEl.querySelector(`.mi-item[data-id="${CSS.escape(encodeURIComponent(key))}"]`);
+  if (target) target.classList.add('active');
+}
+
+function resetModelPanelToTop(){
+  const rp = document.querySelector('.panel.right');
+  if (!rp) return;
+  rp.scrollTop = 0;
+  requestAnimationFrame(() => { rp.scrollTop = 0; });
+}
+
 
 async function openModel(id){
-  // ✅ 1) Fade OUT inmediato
-  infoFadeOut();
-
   try{
-    // (tu lógica actual: localizar modelo, cargar escuela GH si hace falta, etc.)
     currentModelId = id;
+    setActiveModelInList(id);
+    resetModelPanelToTop();
 
-    // ✅ si tu modelo puede estar en una escuela GH aún no cargada:
-    // (si ya lo haces, deja tu versión)
-    // await ensureSchoolFromGitHub(currentSchool);
-
-    // Busca en pool completo
     const ALL = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
       ? window.MODELS_ALL
       : MODELS;
@@ -5129,59 +5120,54 @@ async function openModel(id){
       MODELS.find(x => String(x?.id ?? '').trim() === String(id).trim()) ||
       ALL.find(x => String(x?.id ?? '').trim() === String(id).trim());
 
-  if(!m){
+    if(!m){
+      // En embed: intenta cargar escuelas de GitHub hasta encontrar el id
+      if (window.IS_EMBED && Array.isArray(window.GH_SCHOOLS) && window.GH_SCHOOLS.length){
+        for (const s of window.GH_SCHOOLS){
+          try{
+            const label = s.label || s.id;
+            if (!label) continue;
 
-  // ✅ En embed: intenta cargar escuelas de GitHub hasta encontrar el id
-  if (window.IS_EMBED && Array.isArray(window.GH_SCHOOLS) && window.GH_SCHOOLS.length){
-    for (const s of window.GH_SCHOOLS){
-      try{
-        const label = s.label || s.id;
-        if (!label) continue;
+            await ensureSchoolFromGitHub(label);
 
-        await ensureSchoolFromGitHub(label);
+            const ALL2 = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
+              ? window.MODELS_ALL
+              : MODELS;
 
-        const ALL2 = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
-          ? window.MODELS_ALL
-          : MODELS;
+            m = MODELS.find(x => String(x?.id ?? '').trim() === String(id).trim()) ||
+                ALL2.find(x => String(x?.id ?? '').trim() === String(id).trim());
 
-        m = MODELS.find(x => String(x?.id ?? '').trim() === String(id).trim()) ||
-            ALL2.find(x => String(x?.id ?? '').trim() === String(id).trim());
+            if (m) break;
+          }catch(e){}
+        }
+      }
 
-        if (m) break;
-      }catch(e){}
-    }
-  }
-
-  if(!m){
-    console.warn("Modelo no encontrado:", id);
-    renderModelInfo(null);
-    return;
-  }
-}
-
-
-    // ✅ 2) Expande a “full” si hace falta
-    m = await ensureModelFull(m);
-
-    // ✅ 3) Render ficha
-    renderModelInfo(m);
-
-    // ✅ 4) Mini mapa (si existe el SVG)
-    const svgEl = document.getElementById('miniMapSvgBg');
-    if (svgEl){
-      try{ await miniRender(svgEl, m); }catch(e){}
+      if(!m){
+        console.warn("Modelo no encontrado:", id);
+        renderModelInfo(null);
+        return;
+      }
     }
 
-    // ✅ 5) Marca activo en lista (si lo haces en otro lado, ok)
-    renderModelsList();
+    // Render rápido con resumen (percepción inmediata)
+    const baseModel = m;
+    renderModelInfo(baseModel);
+    infoFadeIn();
 
-    // ✅ 6) Sticky header: rescaneo tras render
+    // Completa la ficha en segundo plano
+    const fullModel = await ensureModelFull(baseModel);
+    if (fullModel && fullModel !== baseModel){
+      m = fullModel;
+      renderModelInfo(m);
+    }else{
+      m = baseModel;
+    }
+
     if (window.__SMH) window.__SMH.rescan();
 
   }catch(err){
     console.error("openModel error:", err);
   }finally{
-    // ✅ 7) Fade IN garantizado (siempre)
     infoFadeIn();
   }
 }
@@ -5282,7 +5268,9 @@ window.OPEN_ID = (window.__QS.get("open") || "").trim();
 (async function init(){
   try{
     // 1) índice de escuelas GH
-    await loadGhSchoolsIndex();
+    if (!Array.isArray(GH_SCHOOLS) || !GH_SCHOOLS.length){
+      await loadGhSchoolsIndex();
+    }
 
     // 2) selector
     buildSchoolOptions();
