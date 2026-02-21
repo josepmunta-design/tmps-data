@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-02-21T22:13:18.848Z",
-  "totalModelos": 51,
+  "updatedAt": "2026-02-21T22:29:11.457Z",
+  "totalModelos": 52,
   "modelos": [
     {
       "modelId": "meditacion-seon-zen-contextos-terapeuticos-corea-1985",
@@ -275,6 +275,36 @@
           "codigo": "m_ba_evitacion_encubierta",
           "nombre": "Identificación de evitación encubierta",
           "texto": "Señalamiento específico de conductas como rumiación, sueño excesivo o distracción digital como formas de evitación funcional, ayudando al paciente a reconocer su función reguladora inmediata y su coste a largo plazo. Referencia: Martell et al. (2010).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cbt-inhibicion-miedo-craske-2014",
+      "modelLabel": "CBT basada en inhibición del miedo (Fear Inhibition Model)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michelle G. Craske",
+      "modelYear": 2014,
+      "items": [
+        {
+          "codigo": "p_craske_eliminacion_seguridad",
+          "nombre": "Eliminación sistemática de conductas y señales de seguridad",
+          "texto": "Procedimiento destinado a identificar y retirar conductas de seguridad (comprobaciones, distracciones, acompañantes, autoverbalizaciones tranquilizadoras) que interfieren con la violación de expectativas y mantienen la atribución de seguridad a factores externos. Se trabaja colaborativamente para graduar su retirada durante la exposición, permitiendo que el paciente experimente directamente la no ocurrencia del daño anticipado sin apoyos encubiertos. El objetivo es atribuir el resultado al aprendizaje inhibitorio y no a la presencia de protección artificial. Referencia: Craske et al. (2014).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_craske_seguridad_encubierta",
+          "nombre": "Detección de conductas de seguridad encubiertas",
+          "texto": "Exploración detallada de pequeñas estrategias de autoprotección (tensión muscular, distracción mental, frases tranquilizadoras, chequeos sutiles) que pueden estar reduciendo la ansiedad pero bloqueando el aprendizaje, ayudando al paciente a reconocerlas y planificar su retirada gradual. Referencia: Craske et al. (2014).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_craske_retirada_seguridad",
+          "nombre": "Retirada progresiva de señal de seguridad",
+          "texto": "Microintervención que consiste en acordar eliminar o reducir una conducta de seguridad específica durante la exposición, permitiendo que el resultado no catastrófico se atribuya al aprendizaje propio y no a la protección externa. Referencia: Craske et al. (2014).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
