@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_comunicacionEmocional",
-  "updatedAt": "2026-02-21T14:26:20.010Z",
-  "totalModelos": 49,
+  "updatedAt": "2026-02-21T22:13:18.848Z",
+  "totalModelos": 50,
   "modelos": [
     {
       "modelId": "mindfulness-comprometido-thich-nhat-hanh-1982",
@@ -391,6 +391,57 @@
           "codigo": "m_aedp_validacion",
           "nombre": "Validación explícita",
           "texto": "El terapeuta valida activamente la experiencia emocional del paciente, reduciendo vergüenza y aislamiento.",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "emotion-focused-skills-training-efst-2016",
+      "modelLabel": "Emotion-Focused Skills Training (EFST)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Jan Reidar Stiegler; Rune Zahl-Olsen; Nadia Ansar; Helene A. Nissen-Lie; Leslie S. Greenberg",
+      "modelYear": 2016,
+      "items": [
+        {
+          "codigo": "p_efst_validacion",
+          "nombre": "Entrenamiento en validación emocional",
+          "texto": "Procedimiento estructurado para enseñar al cuidador a identificar, nombrar y legitimar la emoción del menor sin invalidación ni sobreexplicación cognitiva, practicando escucha empática, reflejo emocional y tono regulador, con role-play supervisado para consolidar habilidad antes de aplicación en casa. (Ansar et al., 2022).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_efst_reparacion",
+          "nombre": "Reparación relacional tras conflicto",
+          "texto": "Procedimiento para enseñar al cuidador a reparar tras episodios de escalada (gritos, retirada, castigo excesivo), promoviendo disculpa auténtica, validación del impacto en el niño y restablecimiento del vínculo sin pérdida de autoridad funcional. (Severinsen et al., 2022).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_efst_reflejo_simple",
+          "nombre": "Reflejo emocional simple al niño",
+          "texto": "Entrenar al cuidador a formular frases breves que nombran la emoción del menor sin interpretación añadida (“parece que estás frustrado”, “esto te ha dado miedo”), reduciendo invalidación y facilitando regulación desde reconocimiento explícito. (Ansar et al., 2022).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_efst_validacion_sin_solucion",
+          "nombre": "Validación sin solución inmediata",
+          "texto": "Microintervención que enseña al cuidador a permanecer en la emoción del niño sin ofrecer consejo prematuro ni minimizar (“entiendo que esto duele”) fortaleciendo experiencia de comprensión antes de pasar a resolución de problemas. (Severinsen et al., 2022).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_efst_reparacion_verbal",
+          "nombre": "Reparación verbal tras escalada",
+          "texto": "Entrenar al cuidador a formular disculpa clara y específica tras conflicto (“antes grité y eso pudo asustarte”), restaurando vínculo sin perder autoridad funcional. (Ansar et al., 2022).",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_efst_necesidad_relacional",
+          "nombre": "Nombrar necesidad relacional subyacente",
+          "texto": "Entrenar al cuidador para identificar y verbalizar la necesidad relacional bajo la emoción (“cuando grita quizá necesita sentirse escuchado”), facilitando respuesta más ajustada. (Greenberg).",
           "sub": "R_comunicacionEmocional",
           "tipo": "micro"
         }
