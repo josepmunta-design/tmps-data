@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-21T14:02:50.943Z",
-  "totalModelos": 73,
+  "updatedAt": "2026-02-21T14:26:20.010Z",
+  "totalModelos": 74,
   "modelos": [
     {
       "modelId": "taoismo-psicologia-puentes-1980",
@@ -215,6 +215,29 @@
           "codigo": "m_rebt_pragmatico",
           "nombre": "Debate pragmático",
           "texto": "Evaluar si mantener la creencia ayuda o perjudica en términos de metas y bienestar.\n(Referencia: DiGiuseppe et al., 2014.)",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rumination-focused-cbt-watkins-2011",
+      "modelLabel": "Rumination-Focused Cognitive Behavioral Therapy (RFCBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Edward R. Watkins",
+      "modelYear": 2011,
+      "items": [
+        {
+          "codigo": "p_rfcbt_resolucion_problemas",
+          "nombre": "Resolución concreta de problemas",
+          "texto": "Procedimiento estructurado que transforma preocupaciones rumiativas generales en problemas definidos y abordables, delimitando metas específicas, generando alternativas conductuales y evaluando pasos realistas, con el fin de sustituir la repetición estéril de análisis por toma de decisiones concreta y acción progresiva, fortaleciendo sensación de eficacia personal. (Watkins, 2016; Watkins, 2008).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_rfcbt_paso_minimo",
+          "nombre": "Definir un siguiente paso conductual mínimo",
+          "texto": "Microintervención que traduce un pensamiento rumiativo en un paso conductual pequeño, específico y ejecutable en el mismo día, rompiendo la parálisis asociada al análisis excesivo y reforzando agencia inmediata. (Watkins, 2016).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

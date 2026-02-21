@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-21T14:02:50.943Z",
-  "totalModelos": 120,
+  "updatedAt": "2026-02-21T14:26:20.010Z",
+  "totalModelos": 121,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -876,6 +876,36 @@
           "codigo": "m_rebt_riesgo",
           "nombre": "Entrenamiento en riesgo social",
           "texto": "Pequeños actos que desafían miedo al juicio: hacer preguntas simples, pedir aclaraciones, exponerse al error.\n(Referencia: Ellis, 1962.)",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rumination-focused-cbt-watkins-2011",
+      "modelLabel": "Rumination-Focused Cognitive Behavioral Therapy (RFCBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Edward R. Watkins",
+      "modelYear": 2011,
+      "items": [
+        {
+          "codigo": "p_rfcbt_pattern_breaking",
+          "nombre": "Interrupción conductual de la rumiación (pattern breaking)",
+          "texto": "Procedimiento orientado a detectar momentos tempranos de rumiación y aplicar interrupciones conductuales breves y específicas (cambio de tarea, acción física delimitada, microactividad orientada a meta), no como distracción indiscriminada sino como ruptura estratégica del bucle abstracto que mantiene el ánimo bajo, favoreciendo la transición hacia acción concreta y reduciendo la evitación pasiva. (Watkins, 2016).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_rfcbt_activacion_concreta",
+          "nombre": "Activación conductual dirigida por metas específicas",
+          "texto": "Procedimiento que vincula el cambio de estilo cognitivo con la implementación de actividades concretas, breves y medibles, seleccionadas por su coherencia con metas personales, utilizando planificación detallada (qué, cuándo, dónde, con quién) para contrarrestar la inercia asociada a la rumiación y generar evidencia experiencial de capacidad de acción. (Watkins, 2016).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_rfcbt_microactividad",
+          "nombre": "Microactividad de interrupción programada",
+          "texto": "Pequeña acción previamente planificada (por ejemplo, caminar cinco minutos o enviar un mensaje concreto) que se activa al detectar rumiación, funcionando como corte conductual deliberado del bucle repetitivo. (Watkins, 2016).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

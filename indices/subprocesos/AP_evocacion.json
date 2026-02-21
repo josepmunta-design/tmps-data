@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-02-21T14:02:50.943Z",
-  "totalModelos": 47,
+  "updatedAt": "2026-02-21T14:26:20.010Z",
+  "totalModelos": 48,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -154,6 +154,29 @@
           "codigo": "m_rebt_imaginada",
           "nombre": "Exposición imaginada racional",
           "texto": "Exposición mental prolongada mientras se verbaliza pensamiento racional alternativo.\n(Referencia: Ellis & Dryden, 1997.)",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rumination-focused-cbt-watkins-2011",
+      "modelLabel": "Rumination-Focused Cognitive Behavioral Therapy (RFCBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Edward R. Watkins",
+      "modelYear": 2011,
+      "items": [
+        {
+          "codigo": "p_rfcbt_practica_experiencial",
+          "nombre": "Práctica experiencial guiada con recuerdos recientes",
+          "texto": "Procedimiento en el que se selecciona un episodio reciente de bajo o medio impacto emocional y se guía al paciente a revivirlo en modo concreto–sensorial (detalles contextuales, acciones, secuencia temporal), interrumpiendo desviaciones hacia explicaciones globales o autocríticas y reforzando la atención a la experiencia específica, con el objetivo de debilitar el automatismo rumiativo abstracto. (Watkins, 2016).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_rfcbt_detalles_sensoriales",
+          "nombre": "Anclaje en detalles sensoriales del episodio",
+          "texto": "Microintervención que dirige la atención hacia aspectos concretos del entorno (lugar, sonidos, postura corporal) cuando el discurso se vuelve abstracto, facilitando un cambio hacia modo experiencial y disminuyendo la deriva evaluativa generalizada. (Watkins, 2016).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-02-21T14:02:50.943Z",
-  "totalModelos": 59,
+  "updatedAt": "2026-02-21T14:26:20.010Z",
+  "totalModelos": 60,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -408,6 +408,29 @@
           "codigo": "m_rebt_demanda",
           "nombre": "Identificación de demandas irracionales",
           "texto": "Detectar exigencias absolutistas (“debo hacerlo perfecto”, “no puedo fallar”) y convertirlas en preferencias.\n(Referencia: Ellis, 1962.)",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rumination-focused-cbt-watkins-2011",
+      "modelLabel": "Rumination-Focused Cognitive Behavioral Therapy (RFCBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Edward R. Watkins",
+      "modelYear": 2011,
+      "items": [
+        {
+          "codigo": "p_rfcbt_formulacion_rumiacion",
+          "nombre": "Evaluación funcional y formulación de bucles rumiativos",
+          "texto": "Procedimiento inicial orientado a identificar disparadores internos y externos de la rumiación, diferenciar su forma abstracta–analítica de posibles momentos concretos–experienciales, y mapear sus consecuencias emocionales y conductuales a corto y largo plazo, construyendo junto al paciente un diagrama de los bucles que mantienen la depresión (activación afectiva negativa → rumiación abstracta → pasividad/evitación → empeoramiento del estado de ánimo), que servirá como guía estratégica para todo el tratamiento. (Watkins, 2016; Watkins, 2008).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_rfcbt_secuencia_temporal",
+          "nombre": "Describir la experiencia en secuencia temporal",
+          "texto": "Microintervención que pide al paciente narrar un episodio siguiendo un orden temporal preciso (primero…, luego…, después…), reduciendo saltos interpretativos globales y promoviendo un procesamiento más estructurado y contextualizado. (Watkins, 2016).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-21T14:02:50.943Z",
-  "totalModelos": 126,
+  "updatedAt": "2026-02-21T14:26:20.010Z",
+  "totalModelos": 127,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -1240,6 +1240,50 @@
           "codigo": "m_rebt_demanda",
           "nombre": "Identificación de demandas irracionales",
           "texto": "Detectar exigencias absolutistas (“debo hacerlo perfecto”, “no puedo fallar”) y convertirlas en preferencias.\n(Referencia: Ellis, 1962.)",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rumination-focused-cbt-watkins-2011",
+      "modelLabel": "Rumination-Focused Cognitive Behavioral Therapy (RFCBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Edward R. Watkins",
+      "modelYear": 2011,
+      "items": [
+        {
+          "codigo": "p_rfcbt_formulacion_rumiacion",
+          "nombre": "Evaluación funcional y formulación de bucles rumiativos",
+          "texto": "Procedimiento inicial orientado a identificar disparadores internos y externos de la rumiación, diferenciar su forma abstracta–analítica de posibles momentos concretos–experienciales, y mapear sus consecuencias emocionales y conductuales a corto y largo plazo, construyendo junto al paciente un diagrama de los bucles que mantienen la depresión (activación afectiva negativa → rumiación abstracta → pasividad/evitación → empeoramiento del estado de ánimo), que servirá como guía estratégica para todo el tratamiento. (Watkins, 2016; Watkins, 2008).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_rfcbt_practica_experiencial",
+          "nombre": "Práctica experiencial guiada con recuerdos recientes",
+          "texto": "Procedimiento en el que se selecciona un episodio reciente de bajo o medio impacto emocional y se guía al paciente a revivirlo en modo concreto–sensorial (detalles contextuales, acciones, secuencia temporal), interrumpiendo desviaciones hacia explicaciones globales o autocríticas y reforzando la atención a la experiencia específica, con el objetivo de debilitar el automatismo rumiativo abstracto. (Watkins, 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_rfcbt_deteccion_temprana",
+          "nombre": "Entrenamiento en detección temprana de rumiación",
+          "texto": "Procedimiento centrado en desarrollar conciencia precoz de señales internas que indican inicio del modo rumiativo (tono mental repetitivo, preguntas globales, postura corporal pasiva), entrenando al paciente a etiquetar el proceso en curso antes de que se intensifique, aumentando así la probabilidad de aplicar estrategias concretas de cambio de estilo. (Watkins, 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_rfcbt_etiqueta_rumiacion",
+          "nombre": "Etiqueta metacognitiva \"esto es rumiación\"",
+          "texto": "Microintervención breve en la que el paciente aprende a identificar y nombrar el proceso rumiativo en curso sin fusionarse con su contenido, creando distancia funcional que facilita la elección de una respuesta alternativa. (Watkins, 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_rfcbt_comparacion_modos",
+          "nombre": "Comparar efectos del modo abstracto vs concreto",
+          "texto": "Microintervención experiencial en la que se invita al paciente a reflexionar brevemente sobre cómo se siente y actúa tras varios minutos en modo abstracto frente a modo concreto, consolidando aprendizaje basado en experiencia directa más que en argumento teórico. (Watkins, 2008).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
