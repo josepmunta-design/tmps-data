@@ -1077,12 +1077,16 @@ body::after{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  /* Contenedor transparente al puntero para no bloquear clics del contenido */
+  pointer-events: none;
 }
 
 /* asegura que el botón principal siempre quede clicable */
 .nav-fab-main{
   position: relative;
   z-index: 2;
+  pointer-events: auto;
 }
 .nav-menu{
   position: relative;
