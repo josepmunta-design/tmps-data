@@ -3710,6 +3710,47 @@ GH_SCHOOLS = []; // array de {id,label,color,order...} o lo que tengas
 // Cache de escuelas/modelos cargados desde GitHub
 const GH_SCHOOL_LOADED = new Set();   // slugs (ej: "humanista")
 const GH_MODEL_CACHE   = new Map();   // id -> modelo completo
+const MODEL_SESSION_PREFIX = 'tmps:model:';
+const MODEL_SESSION_TTL_MS = 6 * 60 * 60 * 1000; // 6h
+
+function readModelFromSession(id){
+  try{
+    const raw = sessionStorage.getItem(MODEL_SESSION_PREFIX + String(id));
+    if (!raw) return null;
+
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== 'object') return null;
+
+    // Compatibilidad: formato antiguo guardaba directamente el objeto del modelo
+    if (!('data' in parsed) || !('ts' in parsed)){
+      return parsed;
+    }
+
+    const ts = Number(parsed.ts || 0);
+    if (!Number.isFinite(ts) || ts <= 0){
+      sessionStorage.removeItem(MODEL_SESSION_PREFIX + String(id));
+      return null;
+    }
+
+    if ((Date.now() - ts) > MODEL_SESSION_TTL_MS){
+      sessionStorage.removeItem(MODEL_SESSION_PREFIX + String(id));
+      return null;
+    }
+
+    const data = parsed.data;
+    return (data && typeof data === 'object') ? data : null;
+  }catch(e){
+    return null;
+  }
+}
+
+function writeModelToSession(id, obj){
+  try{
+    if (!obj || typeof obj !== 'object') return;
+    const payload = { ts: Date.now(), data: obj };
+    sessionStorage.setItem(MODEL_SESSION_PREFIX + String(id), JSON.stringify(payload));
+  }catch(e){}
+}
 
 function slugify(s){
   return String(s)
@@ -3824,90 +3865,84 @@ await Promise.resolve();
 async function ensureModelFull(m){
   if(!m) return m;
 
-  // ✅ ya es "full" si tiene campos extensos típicos
   const isFull = (obj) =>
     !!obj &&
     (typeof obj.descripcion === 'string' && obj.descripcion.trim().length > 0) &&
     (Array.isArray(obj.procedimientos) || Array.isArray(obj.micros) || Array.isArray(obj.influencias));
 
-  if (isFull(m)) return m;
-
-  // ✅ single-flight + cache SIN declarar globals
-  ensureModelFull._pending = ensureModelFull._pending || new Map(); // id -> Promise
-  const PENDING = ensureModelFull._pending;
-
   const id = String(m.id ?? '').trim();
   if (!id) return m;
 
-  // cache ya cargado
-  if (typeof GH_MODEL_CACHE !== 'undefined' && GH_MODEL_CACHE.has(id)){
-    const cached = GH_MODEL_CACHE.get(id);
-    return isFull(cached) ? cached : cached; // si por lo que sea cacheó incompleto, seguirá intentando abajo
+  if (isFull(m)){
+    GH_MODEL_CACHE.set(id, m);
+    writeModelToSession(id, m);
+    return m;
   }
 
-  // si ya hay una carga en vuelo, espera
+  ensureModelFull._pending = ensureModelFull._pending || new Map(); // id -> Promise
+  const PENDING = ensureModelFull._pending;
+
+  // 1) cache en memoria
+  if (GH_MODEL_CACHE.has(id)){
+    const cached = { ...m, ...GH_MODEL_CACHE.get(id) };
+    if (isFull(cached)) return cached;
+  }
+
+  // 2) cache en sessionStorage
+  const sessionCached = readModelFromSession(id);
+  if (sessionCached){
+    const mergedSession = { ...m, ...sessionCached };
+    GH_MODEL_CACHE.set(id, mergedSession);
+    if (isFull(mergedSession)) return mergedSession;
+  }
+
+  // 3) fetch deduplicado por id (single-flight)
   if (PENDING.has(id)){
     return PENDING.get(id);
   }
 
   const p = (async () => {
-    // si no hay file, no se puede cargar nada
     if (!m.file){
       console.warn('⚠️ Modelo sin "file":', m);
       return m;
     }
 
- const file = String(m.file || '').trim();
-const url = gh(`Core/${file}`);
+    const file = String(m.file || '').trim();
+    const url = gh(`Core/${file}`);
 
-// ✅ Fallback por si "file" trae la carpeta en minúsculas y en GitHub está con mayúscula (case-sensitive)
-const tryUrls = [url];
+    const tryUrls = [url];
+    if (file.startsWith('modelos/')){
+      const parts = file.split('/');
+      if (parts[1]){
+        const fixedFolder = parts[1].charAt(0).toUpperCase() + parts[1].slice(1);
+        const altFile = ['modelos', fixedFolder, ...parts.slice(2)].join('/');
+        tryUrls.push(gh(`Core/${altFile}`));
+      }
+    }
 
-if (file.startsWith('modelos/')){
-  const parts = file.split('/');
-  // parts[0] = 'modelos', parts[1] = carpeta (a veces viene en minúsculas)
-  if (parts[1]){
-    const fixedFolder = parts[1].charAt(0).toUpperCase() + parts[1].slice(1);
-    const altFile = ['modelos', fixedFolder, ...parts.slice(2)].join('/');
-    tryUrls.push(gh(`Core/${altFile}`));
-  }
-}
-
-
-    // ✅ reintentos con backoff (esto es lo que te elimina el “segundo clic”)
-  const delays = [0, 250]; // ✅ suficiente; no mates la UX
-
+    const delays = [0, 250];
     let lastErr = null;
 
     for (let i = 0; i < delays.length; i++){
       if (delays[i]) await new Promise(r => setTimeout(r, delays[i]));
+
       try{
         let full = null;
-let last = null;
+        for (const u of tryUrls){
+          try{
+            full = await fetchJson(u);
+            if (full) break;
+          }catch(e){}
+        }
 
-for (const u of tryUrls){
-  try{
-    full = await fetchJson(u);
-    if(full){
-      last = u;
-      break;
-    }
-  }catch(e){
-    // guardamos error y seguimos probando
-    last = u;
-  }
-}
+        if(!full) throw new Error(`No se pudo cargar JSON del modelo. Probadas: ${tryUrls.join(' | ')}`);
 
-if(!full) throw new Error(`No se pudo cargar JSON del modelo. Probadas: ${tryUrls.join(' | ')}`);
-
-
-        // mezcla segura: full gana, pero mantenemos grupo/label si vinieran mejor en resumen
         const merged = { ...m, ...full };
         if (!merged.grupo) merged.grupo = m.grupo;
         if (!merged.label) merged.label = m.label;
 
-        // guarda en cache
-        if (typeof GH_MODEL_CACHE !== 'undefined') GH_MODEL_CACHE.set(id, merged);
+        GH_MODEL_CACHE.set(id, merged);
+        writeModelToSession(id, merged);
 
         return merged;
       }catch(e){
@@ -3916,7 +3951,7 @@ if(!full) throw new Error(`No se pudo cargar JSON del modelo. Probadas: ${tryUrl
     }
 
     console.error('❌ No se pudo cargar JSON del modelo (tras reintentos):', { id, url, file: m.file }, lastErr);
-    return m; // no rompemos UI
+    return m;
   })();
 
   PENDING.set(id, p);
@@ -5149,18 +5184,37 @@ async function openModel(id){
       }
     }
 
-    // Render rápido con resumen (percepción inmediata)
     const baseModel = m;
+    const fullPromise = ensureModelFull(baseModel);
+
+    // Si el modelo completo llega muy rápido, evita doble render (sin flicker)
+    const QUICK_FULL_WAIT_MS = 180;
+    let quickFull = null;
+    try{
+      quickFull = await Promise.race([
+        fullPromise,
+        new Promise(resolve => setTimeout(() => resolve(null), QUICK_FULL_WAIT_MS))
+      ]);
+    }catch(e){}
+
+    if (quickFull && quickFull !== baseModel){
+      renderModelInfo(quickFull);
+      if (window.__SMH) window.__SMH.rescan();
+      infoFadeIn();
+      return;
+    }
+
+    // Fallback progresivo: primero resumen, luego completo
     renderModelInfo(baseModel);
     infoFadeIn();
 
-    // Completa la ficha en segundo plano
-    const fullModel = await ensureModelFull(baseModel);
+    const fullModel = await fullPromise;
+
+    // Si el usuario ya cambió de modelo, no repintes
+    if (String(currentModelId ?? '').trim() !== String(id ?? '').trim()) return;
+
     if (fullModel && fullModel !== baseModel){
-      m = fullModel;
-      renderModelInfo(m);
-    }else{
-      m = baseModel;
+      renderModelInfo(fullModel);
     }
 
     if (window.__SMH) window.__SMH.rescan();
