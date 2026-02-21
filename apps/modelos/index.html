@@ -3260,6 +3260,28 @@ function normAuthorKey(s){
     .trim();
 }
 
+function resolveAuthorPhotoUrl(model){
+  if(!model) return null;
+
+  const idx = window.AUTHOR_PHOTO_INDEX || { authors:{}, models:{} };
+  const fullAutores = String(model.autores ?? '').trim();
+  const autorFoto = (fullAutores.split(';')[0] || '').trim() || '';
+  const autorFotoKey = autorFoto.split(',')[0].trim();
+
+  const authorKey = normAuthorKey(autorFotoKey);
+  if (idx.authors?.[authorKey]) {
+    return `${DATA_BASE}/Core/fotos/${idx.authors[authorKey]}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
+  }
+
+  const modelKey = String(model.id ?? '').trim();
+  if (idx.models?.[modelKey]) {
+    return `${DATA_BASE}/Core/fotos/${idx.models[modelKey]}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
+  }
+
+  return null;
+}
+
+
 
 window.getAuthorPhoto = function(authorName){
 
@@ -4677,24 +4699,7 @@ const autoresDisplay = fullAutores
   ? fullAutores.split(';').map(s => s.trim()).filter(Boolean).join(' · ')
   : '—';
 
-let fotoUrl = null;
-
-const IDX = window.AUTHOR_PHOTO_INDEX || { authors:{}, models:{} };
-
-// Busca por autor (con la MISMA normalización que usas en el index)
-const authorKey = normAuthorKey(autorFotoKey);
-if (IDX.authors?.[authorKey]) {
-  fotoUrl = `${DATA_BASE}/Core/fotos/${IDX.authors[authorKey]}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
-}
-
-
-// Fallback por modelo
-if (!fotoUrl) {
-  const modelKey = String(m.id ?? '').trim();
-  if (IDX.models?.[modelKey]) {
-    fotoUrl = `${DATA_BASE}/Core/fotos/${IDX.models[modelKey]}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
-  }
-}
+const fotoUrl = resolveAuthorPhotoUrl(m);
 
 
 const authorHTML =
@@ -4759,6 +4764,36 @@ if (window.__SMH){
   window.__SMH.rescan();
 }
 
+
+// Si la foto aún no estaba disponible (carga asíncrona de foto.json), hidrátala en caliente
+if (!fotoUrl && AUTHOR_PHOTO_PROMISE){
+  AUTHOR_PHOTO_PROMISE.then(() => {
+    if (String(currentModelId ?? '').trim() !== String(m.id ?? '').trim()) return;
+
+    const lateUrl = resolveAuthorPhotoUrl(m);
+    if (!lateUrl) return;
+
+    const wrap = modelInfoEl.querySelector('.mp-author-wrap');
+    if (!wrap) return;
+
+    const existingImg = wrap.querySelector('img.mp-author-photo');
+    if (existingImg){
+      if (!existingImg.getAttribute('src')) existingImg.setAttribute('src', lateUrl);
+      return;
+    }
+
+    const ph = wrap.querySelector('.mp-author-photo');
+    if (!ph) return;
+
+    const img = document.createElement('img');
+    img.className = 'mp-author-photo';
+    img.src = lateUrl;
+    img.alt = autoresDisplay || 'Autor';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    ph.replaceWith(img);
+  }).catch(() => {});
+}
 
       // === Mini map de fondo (lazy: no bloquea la ficha en móvil) ===
 requestAnimationFrame(() => {
