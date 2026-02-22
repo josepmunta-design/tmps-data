@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_interaccion",
-  "updatedAt": "2026-02-22T18:13:23.044Z",
-  "totalModelos": 19,
+  "updatedAt": "2026-02-22T18:15:56.730Z",
+  "totalModelos": 20,
   "modelos": [
     {
       "modelId": "psicoterapia-comunitaria-ubuntu-1995",
@@ -83,6 +83,50 @@
           "codigo": "m_tbct_refuerzo_intentos",
           "nombre": "Refuerzo diferencial de intentos de cambio",
           "texto": "Reconocimiento explícito de aproximaciones al cambio, aunque sean imperfectas, para evitar castigo inadvertido de esfuerzos iniciales. Referencia: Stuart (1969).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "construccionismo-social-gergen-1985",
+      "modelLabel": "Construccionismo social (Kenneth Gergen)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Kenneth J. Gergen",
+      "modelYear": 1985,
+      "items": [
+        {
+          "codigo": "p_gergen_coordinacion_relacional",
+          "nombre": "Análisis de secuencias de coordinación: del “quién tiene razón” al “qué hacemos juntos”",
+          "texto": "Se describe con precisión cómo se co-produce el conflicto o el bloqueo en interacciones reales (inicio, escalada, cierres, silencios, defensas, reproches), sustituyendo explicaciones internalistas por una lectura de coordinación; el objetivo es identificar puntos de bifurcación donde cambiar una respuesta cambia el sistema, orientando la terapia a construir nuevas formas de “hacer juntos” más que a convencer o interpretar una verdad interna. (Gergen, 2009).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gergen_desplazamiento_interioridad",
+          "nombre": "Desplazamiento de la interioridad: del “cómo soy” al “qué hacemos”",
+          "texto": "Cuando el relato se centra en rasgos internos estables, se redirige la conversación hacia secuencias observables de acción y coordinación (“¿qué ocurre entre vosotros cuando…?”), transformando explicaciones disposicionales en análisis prácticos de interacción; esto reduce fatalismo identitario y orienta el trabajo hacia cambios concretos en la práctica relacional. (Gergen, 2009).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gergen_reencuadre_impasse_coordinacion",
+          "nombre": "Reencuadre del impasse como problema de coordinación",
+          "texto": "Ante bloqueos persistentes, se abandona la pregunta por la causa interna y se formula el estancamiento como patrón de coordinación (“cada vez que X hace A, Y responde B y el ciclo se cierra”), identificando alternativas mínimas en la secuencia que podrían alterar el sistema; el cambio se concibe como modificación de la danza relacional, no como conversión de creencias privadas. (Gergen, 2009).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gergen_micro_interrupcion",
+          "nombre": "Micro-interrupción del ciclo conversacional",
+          "texto": "Se ensaya una pequeña variación en la secuencia habitual de respuesta (por ejemplo, reconocer antes de defenderse) para comprobar cómo una alteración mínima puede modificar la coordinación relacional completa. (Gergen, 2009).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gergen_nombrar_coordinacion",
+          "nombre": "Nombrar la coordinación",
+          "texto": "Durante el relato de un conflicto, el terapeuta verbaliza el patrón de interacción emergente (“cuando tú dices X, él responde Y y se activa Z”), ayudando a ver el problema como danza relacional y no como defecto individual. (Gergen, 2009).",
           "sub": "R_sist_interaccion",
           "tipo": "micro"
         }
