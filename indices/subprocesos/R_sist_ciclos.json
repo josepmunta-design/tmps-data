@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_ciclos",
-  "updatedAt": "2026-02-23T08:34:53.879Z",
-  "totalModelos": 21,
+  "updatedAt": "2026-02-23T08:46:56.612Z",
+  "totalModelos": 22,
   "modelos": [
     {
       "modelId": "psicoterapia-comunitaria-ubuntu-1995",
@@ -559,6 +559,36 @@
           "codigo": "m_milan_desplazamiento_foco",
           "nombre": "Desplazamiento de foco del individuo al patrón",
           "texto": "Microintervención que reformula comentarios individualizantes hacia descripciones interactivas (“más que que él sea desobediente, parece que cuando tú insistes, él se opone”), sosteniendo coherencia sistémica en la conversación clínica. (Selvini Palazzoli et al., 1978).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-individual-sistemica-canevaro-2012",
+      "modelLabel": "Terapia Individual Sistémica (Escuela de Milán, Canevaro)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Alfredo Canevaro",
+      "modelYear": 2012,
+      "items": [
+        {
+          "codigo": "p_canevaro_ciclos",
+          "nombre": "Identificación de ciclos relacionales actuales",
+          "texto": "Procedimiento orientado a detectar secuencias circulares activas en la actualidad (acción–reacción–confirmación) que mantienen el problema, desplazando la explicación lineal hacia una comprensión interactiva. Se clarifica cómo cada conducta del paciente y de sus figuras significativas funciona simultáneamente como respuesta y estímulo dentro del ciclo, abriendo puntos estratégicos de intervención. Referencia: Boscolo et al. (1987); Canevaro (2012).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_canevaro_reformulacion",
+          "nombre": "Reformulación relacional del síntoma",
+          "texto": "Procedimiento que redefine el síntoma individual como fenómeno relacional con función sistémica, desplazando atribuciones culpabilizadoras hacia comprensión circular. La reformulación permite que el paciente perciba alternativas de acción dentro del sistema sin quedar fijado a identidad sintomática. Referencia: Boscolo et al. (1987); Canevaro (2012).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_canevaro_equilibrio",
+          "nombre": "Redefinición del síntoma como intento de equilibrio",
+          "texto": "Microintervención que reformula el síntoma como intento adaptativo de mantener equilibrio sistémico ante tensiones no resueltas, desplazando la identidad patológica hacia función relacional. Se diferencia del estilo milanés más neutral al vincular explícitamente esta función con el proceso de diferenciación personal del paciente. Referencia: Boscolo et al. (1987); Canevaro (2012).",
           "sub": "R_sist_ciclos",
           "tipo": "micro"
         }

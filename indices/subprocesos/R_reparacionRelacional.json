@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_reparacionRelacional",
-  "updatedAt": "2026-02-23T08:34:53.879Z",
-  "totalModelos": 42,
+  "updatedAt": "2026-02-23T08:46:56.612Z",
+  "totalModelos": 43,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -888,6 +888,29 @@
           "codigo": "m_contextual_micro_reparacion",
           "nombre": "Micro-reparación relacional",
           "texto": "La micro-reparación relacional se concreta en pequeños actos verbales o simbólicos de restitución —disculpas, reconocimientos, gestos de cuidado— que comienzan a restaurar la confianza sin requerir cambios estructurales inmediatos.",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-individual-sistemica-canevaro-2012",
+      "modelLabel": "Terapia Individual Sistémica (Escuela de Milán, Canevaro)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Alfredo Canevaro",
+      "modelYear": 2012,
+      "items": [
+        {
+          "codigo": "p_canevaro_convocatoria_familia",
+          "nombre": "Convocatoria estratégica de familiares significativos",
+          "texto": "Procedimiento mediante el cual, dentro de un encuadre de terapia individual, se invita puntualmente a familiares o pareja cuando el cambio requiere modificación directa de la interacción. La participación no transforma el encuadre en terapia familiar completa, sino que introduce un movimiento estratégico para desbloquear dinámicas rígidas o facilitar conversaciones estructuralmente necesarias. Referencia: Canevaro (2012).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_canevaro_conversacion_pendiente",
+          "nombre": "Escenificación imaginaria de conversación pendiente",
+          "texto": "Microintervención que invita al paciente a ensayar en sesión una conversación estructuralmente necesaria con un familiar significativo antes de convocarlo, clarificando posiciones, límites y expectativas. A diferencia de la tradición milanesa centrada en preguntas circulares, aquí se prepara activamente un movimiento relacional concreto. Referencia: Canevaro (2012).",
           "sub": "R_reparacionRelacional",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_roles",
-  "updatedAt": "2026-02-23T08:34:53.879Z",
-  "totalModelos": 21,
+  "updatedAt": "2026-02-23T08:46:56.612Z",
+  "totalModelos": 22,
   "modelos": [
     {
       "modelId": "aba-analisis-conducta-aplicado-1968",
@@ -547,6 +547,43 @@
           "codigo": "m_milan_alianzas_generacionales",
           "nombre": "Exploración de alianzas generacionales",
           "texto": "Pregunta específica orientada a detectar coaliciones intergeneracionales (“¿con quién se alía cada uno cuando hay conflicto?”), clarificando jerarquías y posibles inversiones parentales que sostienen el síntoma. (Boscolo et al., 1987).",
+          "sub": "R_sist_roles",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-individual-sistemica-canevaro-2012",
+      "modelLabel": "Terapia Individual Sistémica (Escuela de Milán, Canevaro)",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Alfredo Canevaro",
+      "modelYear": 2012,
+      "items": [
+        {
+          "codigo": "p_canevaro_trigeneracional",
+          "nombre": "Exploración trigeneracional focalizada",
+          "texto": "Procedimiento dirigido a mapear mandatos, repeticiones, lealtades y posiciones relacionales a lo largo de al menos tres generaciones, identificando patrones de transmisión intergeneracional que influyen en la organización actual del síntoma. No se trata de reconstrucción histórica exhaustiva, sino de localizar nodos relacionales activos que mantienen bloqueos de separación, culpa o sobre-responsabilidad. Referencia: Canevaro (2012).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_canevaro_posicion_relacional",
+          "nombre": "Análisis de posición relacional del paciente",
+          "texto": "Procedimiento que examina la posición que el paciente ocupa dentro de su sistema significativo (hijo mediador, cuidador parentalizado, leal silencioso, rebelde excluido, etc.), evaluando cómo dicha posición limita su autonomía o sostiene el síntoma. El objetivo es facilitar movimientos de diferenciación y redefinición de rol sin ruptura destructiva del vínculo. Referencia: Canevaro (2012).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_canevaro_limites",
+          "nombre": "Reestructuración de límites intergeneracionales",
+          "texto": "Procedimiento destinado a clarificar y redefinir límites entre generaciones cuando existen inversiones jerárquicas, triangulaciones o parentalización. El cambio se produce al reorganizar responsabilidades y devolver a cada miembro una posición funcional más adecuada a su etapa vital. Referencia: Canevaro (2012).",
+          "sub": "R_sist_roles",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_canevaro_beneficios_secundarios",
+          "nombre": "Exploración de beneficios secundarios relacionales",
+          "texto": "Microintervención orientada a detectar qué posición relacional o reconocimiento obtiene el paciente a través del síntoma (atención, cercanía, evitación de conflicto), facilitando conciencia sin culpabilización. A diferencia del enfoque milanés clásico más descriptivo, aquí se trabaja explícitamente la ganancia posicional individual. Referencia: Canevaro (2012).",
           "sub": "R_sist_roles",
           "tipo": "micro"
         }
