@@ -285,23 +285,43 @@ animation: panelBreath 5s ease-in-out infinite;
   display:flex;
   gap:6px;
   align-items:baseline;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
+  white-space:nowrap;
+  min-width:0;
+  flex:1 1 auto;
+  overflow:hidden;
 }
 
 #countLine .count-n{
   font-weight:900;
   font-size:14px;
   color:#fff;
+  flex:0 0 auto;
 }
 
 #countLine .count-txt{
   font-weight:600;
   opacity:.75;
+  flex:0 0 auto;
 }
 
 #countLine .count-school{
   font-weight:800;
   color: var(--schoolColor, #dfe6f1);
+  min-width:0;
+  flex:1 1 auto;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.countFiltersRow{
+  margin-top:10px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:10px;
+  min-width:0;
 }
 
     .card{
@@ -313,6 +333,121 @@ animation: panelBreath 5s ease-in-out infinite;
     }
     .row{display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
     label{font-size:12px;color:var(--muted2);}
+
+    .schoolControls{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:10px;
+      align-items:end;
+    }
+
+    .schoolControlHead{
+      margin-bottom:8px;
+    }
+
+    .schoolSelectRow{
+      display:block;
+    }
+
+    .mobileTypeSlot{
+      display:none;
+    }
+
+    .typeFilters{
+      display:flex;
+      gap:8px;
+      flex-wrap:nowrap;
+      margin-top:0;
+      flex-shrink:0;
+      justify-self:end;
+    }
+
+    .tf-chip{
+      border:1px solid rgba(255,255,255,.16);
+      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+      color: rgba(234,240,248,.86);
+      border-radius:999px;
+      padding:6px 11px;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.28px;
+      text-transform:uppercase;
+      cursor:pointer;
+      transition: all .15s ease;
+    }
+
+    .tf-chip:hover{
+      border-color: rgba(255,255,255,.26);
+      color:#fff;
+    }
+
+    .tf-chip.active{
+      color:#fff;
+      border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 56%, rgba(255,255,255,.24));
+      background:
+        linear-gradient(180deg,
+          color-mix(in srgb, var(--schoolColor, #D9AA3F) 28%, rgba(255,255,255,.18)),
+          color-mix(in srgb, var(--schoolColor, #D9AA3F) 46%, rgba(0,0,0,.10)));
+      box-shadow:
+        0 0 0 3px color-mix(in srgb, var(--schoolColor, #D9AA3F) 18%, transparent),
+        inset 0 1px 0 rgba(255,255,255,.20);
+    }
+
+    .complexityScaleMeta{
+      display:flex;
+      justify-content:space-between;
+      font-size:10px;
+      font-weight:700;
+      color:rgba(231,237,245,.62);
+      margin:0 2px 6px;
+      letter-spacing:.3px;
+      text-transform:uppercase;
+    }
+
+    .complexitySwitch{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0,1fr));
+      gap:6px;
+      padding:4px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.12);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)),
+        radial-gradient(120px 60px at 90% 50%, rgba(217,170,63,.15), transparent 60%);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.10),
+        0 10px 26px rgba(0,0,0,.24);
+    }
+
+    .cx-step{
+      border:1px solid transparent;
+      background:transparent;
+      color:rgba(236,242,250,.78);
+      border-radius:9px;
+      height:32px;
+      font-weight:900;
+      font-size:12px;
+      letter-spacing:.2px;
+      cursor:pointer;
+      transition:all .15s ease;
+    }
+
+    .cx-step:hover{
+      background:rgba(255,255,255,.08);
+      color:#fff;
+    }
+
+    .cx-step.active{
+      color:#fff;
+      border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 55%, rgba(255,255,255,.24));
+      background:
+        linear-gradient(180deg,
+          color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,.18)),
+          color-mix(in srgb, var(--schoolColor, #D9AA3F) 54%, rgba(0,0,0,.10)));
+      box-shadow:
+        0 0 0 3px color-mix(in srgb, var(--schoolColor, #D9AA3F) 20%, transparent),
+        inset 0 1px 0 rgba(255,255,255,.22);
+    }
 
     select{
       width: 100%;
@@ -1576,6 +1711,110 @@ html, body{ position: relative; }
 
 /* ================== MÓVIL ================== */
 @media (max-width: 980px){
+  .schoolControls{
+    grid-template-columns:minmax(0, 1.35fr) minmax(0, .85fr);
+    gap:6px;
+    align-items:end;
+  }
+
+  .complexityScaleMeta{
+    display:none;
+  }
+
+  .complexitySwitch{
+    width:100%;
+    gap:4px;
+    padding:3px;
+  }
+
+  .cx-step{
+    height:30px;
+    font-size:11px;
+  }
+
+  .typeFilters{
+    margin-top:0;
+    gap:6px;
+  }
+
+  .tf-chip{
+    padding:6px 10px;
+    font-size:10.5px;
+  }
+
+  .schoolControl-main{
+    min-width:0;
+  }
+
+  .schoolControl-main .schoolSelectRow{
+    display:grid;
+    grid-template-columns:minmax(0, 1fr) minmax(0, .72fr);
+    gap:6px;
+    align-items:stretch;
+  }
+
+  .schoolControl-main .mobileTypeSlot{
+    display:block;
+    min-width:0;
+  }
+
+  .schoolControl-main .schoolSelectRow select{
+    width:100%;
+  }
+
+  .schoolControl-main .mobileTypeSlot .typeFilters{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:0;
+    width:100%;
+    height:36px;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.12);
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)),
+      radial-gradient(120px 60px at 90% 50%, rgba(217,170,63,.15), transparent 60%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.10),
+      0 10px 26px rgba(0,0,0,.24);
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip{
+    border:0;
+    border-radius:0;
+    margin:0;
+    padding:0 8px;
+    height:100%;
+    font-size:0;
+    letter-spacing:.2px;
+    text-transform:uppercase;
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip::before{
+    font-size:10.5px;
+    font-weight:800;
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="model"]::before{
+    content:"Mod";
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"]::before{
+    content:"Marc";
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip + .tf-chip{
+    border-left:1px solid rgba(255,255,255,.18);
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip.active{
+    box-shadow:none;
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip:hover{
+    background:rgba(255,255,255,.08);
+  }
+
 
   :root{
     --leftH: 300px;     /* alto fijo panel izquierdo */
@@ -1619,6 +1858,10 @@ html, body{ position: relative; }
     display: none !important;
   }
 
+  .panel.left .schoolSticky .countFiltersRow{
+    display:none;
+  }
+
   /* Reduce el margen de la fila del label si sigue ocupando sitio */
   .panel.left .schoolSticky .row{
     margin-bottom: 0 !important;
@@ -1628,7 +1871,9 @@ html, body{ position: relative; }
   /* Ajuste fino del select para que se vea “barra” */
   .panel.left .schoolSticky select{
     width: 100%;
-    height: 40px;                /* compacto */
+    height: 36px;                /* más corto */
+    padding: 8px 34px 8px 10px;
+    font-size: 12px;
   }
 
   /* ✅ Mantén contain (pero quita will-change de animación) */
@@ -3250,6 +3495,86 @@ body.theme-light select option{
   color:#202534;
 }
 
+body.theme-light .complexityScaleMeta{
+  color:#6d7a8f;
+}
+
+body.theme-light .tf-chip{
+  color:#55637a;
+  border:1px solid rgba(118,129,153,.24);
+  background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(242,248,255,.90));
+}
+
+body.theme-light .tf-chip:hover{
+  color:#1f2d44;
+  border-color: rgba(89,128,188,.40);
+  background: linear-gradient(180deg, rgba(255,255,255,1), rgba(236,245,255,.94));
+}
+
+body.theme-light .tf-chip.active{
+  color:#102744;
+  border-color: color-mix(in srgb, var(--schoolColor,#5f8fd1) 42%, rgba(118,129,153,.22));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
+      color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(255,255,255,.82)));
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--schoolColor,#5f8fd1) 13%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+@media (max-width: 980px){
+  body.theme-light .schoolControl-main .mobileTypeSlot .typeFilters{
+    border:1px solid rgba(118,129,153,.24);
+    background: linear-gradient(180deg, rgba(255,255,255,.97), rgba(241,247,255,.88));
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.99),
+      0 8px 20px rgba(28,47,79,.10);
+  }
+
+  body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip + .tf-chip{
+    border-left:1px solid rgba(118,129,153,.26);
+  }
+
+  body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip.active{
+    background:
+      linear-gradient(180deg,
+        color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
+        color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(255,255,255,.82)));
+    color:#102744;
+  }
+}
+
+body.theme-light .complexitySwitch{
+  border:1px solid rgba(118,129,153,.24);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.97), rgba(241,247,255,.88));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.99),
+    0 8px 20px rgba(28,47,79,.10);
+}
+
+body.theme-light .cx-step{
+  color:#5a667b;
+}
+
+body.theme-light .cx-step:hover{
+  background:rgba(102,135,188,.12);
+  color:#1e2d45;
+}
+
+body.theme-light .cx-step.active{
+  color:#102744;
+  border-color: color-mix(in srgb, var(--schoolColor,#5f8fd1) 42%, rgba(118,129,153,.22));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
+      color-mix(in srgb, var(--schoolColor,#5f8fd1) 36%, rgba(255,255,255,.80)));
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--schoolColor,#5f8fd1) 14%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
 body.theme-light .card,
 body.theme-light .mi-item,
 body.theme-light .mp-acc details,
@@ -3593,13 +3918,40 @@ body.theme-light .mp-seqDesc{
      
 
      <div class="card schoolSticky">
+        <div class="schoolControls">
+          <div class="schoolControl schoolControl-main">
+            <div class="row schoolControlHead">
+              <label for="schoolSelect">Escuela</label>
+            </div>
+            <div class="schoolSelectRow">
+              <select id="schoolSelect"></select>
+              <div id="mobileTypeSlot" class="mobileTypeSlot" aria-hidden="true"></div>
+            </div>
+          </div>
 
-        <div class="row" style="margin-bottom:8px">
-          <label for="schoolSelect">Escuela</label>
+          <div class="schoolControl">
+            <div class="row schoolControlHead">
+            </div>
+            <div class="complexityScaleMeta" aria-hidden="true">
+              <span>Menos</span>
+              <span>Mas</span>
+            </div>
+            <div id="complexitySwitch" class="complexitySwitch" role="radiogroup" aria-label="Nivel de complejidad">
+              <button type="button" class="cx-step active" data-level="1" role="radio" aria-checked="true">1</button>
+              <button type="button" class="cx-step" data-level="2" role="radio" aria-checked="false">2</button>
+              <button type="button" class="cx-step" data-level="3" role="radio" aria-checked="false">3</button>
+              <button type="button" class="cx-step" data-level="4" role="radio" aria-checked="false">4</button>
+            </div>
+          </div>
         </div>
-        <select id="schoolSelect"></select>
 
-        <div id="countLine" class="subtitle" style="margin:10px 0 0 0; opacity:.9"></div>
+        <div class="countFiltersRow">
+          <div id="countLine" class="subtitle" style="margin:0; opacity:.9"></div>
+          <div id="typeFilters" class="typeFilters" role="group" aria-label="Filtrar tipos">
+            <button type="button" class="tf-chip active" data-kind="model" aria-pressed="true">Modelos</button>
+            <button type="button" class="tf-chip active" data-kind="marco" aria-pressed="true">Marcos</button>
+          </div>
+        </div>
       </div>
 
       <div class="card">
@@ -4448,9 +4800,16 @@ async function ensureModelFull(m){
     // 3) UI: selector de escuela + lista de modelos
     // =========================================================
     const schoolSelect = document.getElementById('schoolSelect');
+    const complexitySwitchEl = document.getElementById('complexitySwitch');
+    const typeFiltersEl = document.getElementById('typeFilters');
+    const mobileTypeSlotEl = document.getElementById('mobileTypeSlot');
+    const countFiltersRowEl = document.querySelector('.countFiltersRow');
     const modelsListEl = document.getElementById('modelsList');
     const countLine = document.getElementById('countLine');
     const modelInfoEl = document.getElementById('modelInfo');
+    let complexityLevel = 1;
+    let showModelItems = true;
+    let showMarcoItems = true;
   function infoFadeOut(){
   if(!modelInfoEl) return;
   modelInfoEl.classList.add('is-loading');
@@ -4826,7 +5185,7 @@ return `
   }
 }
 
- function buildSchoolOptions(){
+function buildSchoolOptions(){
   const localSchools = uniq(LOCAL_MODELS.map(m => m.grupo));
   const ghSchools = (GH_SCHOOLS || []).map(s => s.label || s.id).filter(Boolean);
 
@@ -4861,6 +5220,137 @@ const schools = [...set].sort((a,b)=>{
   schoolSelect.value = currentSchool ?? '';
 }
 
+function normalizeImportanceValue(v){
+  if (typeof v === 'number' && Number.isFinite(v)) return v;
+
+  const txt = String(v ?? '').trim().toLowerCase();
+  if (!txt) return null;
+
+  const normalized = txt
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g,'')
+    .replace(',', '.');
+
+  const parsed = Number(normalized);
+  if (Number.isFinite(parsed)) return parsed;
+
+  if (normalized.includes('muy alta')) return 4;
+  if (normalized.includes('alta')) return 3;
+  if (normalized.includes('media')) return 2;
+  if (normalized.includes('baja')) return 1;
+  return null;
+}
+
+function modelImportanceValue(m){
+  if (!m || typeof m !== 'object') return null;
+
+  const candidates = [
+    m.importance,
+    m.importancia,
+    m.nivelImportancia,
+    m.nivel_importancia
+  ];
+
+  for (const c of candidates){
+    const val = normalizeImportanceValue(c);
+    if (val !== null) return val;
+  }
+  return null;
+}
+
+function effectiveImportanceLevel(m){
+  const raw = modelImportanceValue(m);
+  if (raw === null) return null; // sin importance: solo en nivel 4
+  return Math.max(1, Math.min(4, Math.round(raw)));
+}
+
+function minImportanceForUiLevel(level){
+  const map = { 1: 4, 2: 3, 3: 2, 4: 1 };
+  return map[level] ?? 1;
+}
+
+function applyComplexityFilter(list){
+  if (!Array.isArray(list) || !list.length) return [];
+  const minImportance = minImportanceForUiLevel(complexityLevel);
+  return list.filter(m => {
+    const importance = effectiveImportanceLevel(m);
+    if (importance === null) return complexityLevel === 4;
+    return importance >= minImportance;
+  });
+}
+
+function syncTypeFiltersUi(){
+  if (!typeFiltersEl) return;
+  typeFiltersEl.querySelectorAll('.tf-chip').forEach(btn => {
+    const kind = String(btn.dataset.kind || '');
+    const isActive = (kind === 'marco') ? showMarcoItems : showModelItems;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+  });
+}
+
+function setupTypeFilters(){
+  if (!typeFiltersEl || typeFiltersEl.__bound) return;
+  typeFiltersEl.__bound = true;
+
+  syncTypeFiltersUi();
+
+  typeFiltersEl.addEventListener('click', (evt) => {
+    const btn = evt.target.closest('.tf-chip');
+    if (!btn) return;
+
+    const kind = String(btn.dataset.kind || '');
+    if (kind === 'marco'){
+      showMarcoItems = !showMarcoItems;
+    }else{
+      showModelItems = !showModelItems;
+    }
+
+    syncTypeFiltersUi();
+    renderModelsList();
+  });
+}
+
+function placeTypeFiltersForViewport(){
+  if (!typeFiltersEl || !mobileTypeSlotEl || !countFiltersRowEl) return;
+
+  const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
+  const targetParent = isMobile ? mobileTypeSlotEl : countFiltersRowEl;
+
+  if (typeFiltersEl.parentElement !== targetParent){
+    targetParent.appendChild(typeFiltersEl);
+  }
+}
+
+function setComplexityLevel(level){
+  const n = Number(level);
+  if (!Number.isInteger(n) || n < 1 || n > 4) return;
+  if (complexityLevel === n) return;
+  complexityLevel = n;
+
+  if (complexitySwitchEl){
+    complexitySwitchEl.querySelectorAll('.cx-step').forEach(btn => {
+      const lv = Number(btn.dataset.level || 0);
+      const isActive = lv === complexityLevel;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-checked', isActive ? 'true' : 'false');
+    });
+  }
+
+  renderModelsList();
+}
+
+function setupComplexitySwitch(){
+  if (!complexitySwitchEl || complexitySwitchEl.__bound) return;
+  complexitySwitchEl.__bound = true;
+
+  complexitySwitchEl.addEventListener('click', (evt) => {
+    const btn = evt.target.closest('.cx-step');
+    if (!btn) return;
+    setComplexityLevel(btn.dataset.level);
+  });
+}
+
 
 function filteredModelsBySchool(grupo){
   const target = normSchoolName(grupo);
@@ -4890,20 +5380,35 @@ function setSchoolToneClass(grupo){
 
 function renderModelsList(){
 
-  const list = filteredModelsBySchool(currentSchool);
+  const schoolList = filteredModelsBySchool(currentSchool);
+  const onlyModels = schoolList.filter(m => !(m && m.isMarco));
+  const onlyMarcos = schoolList.filter(m => !!(m && m.isMarco));
+
+  const visibleModels = showModelItems ? applyComplexityFilter(onlyModels) : [];
+  const visibleMarcos = showMarcoItems ? applyComplexityFilter(onlyMarcos) : [];
+
+  const visibleSet = new Set([...visibleModels, ...visibleMarcos]);
+  const list = schoolList.filter(m => visibleSet.has(m));
 
   modelsListEl.style.setProperty('--schoolColor', groupColor.get(currentSchool) || '#D9AA3F');
 
 
   countLine.innerHTML = `
     <span class="count-n">${list.length}</span>
-    <span class="count-txt">modelos/marcos en</span>
+    <span class="count-txt">${(list.length === schoolList.length) ? 'en' : `de ${schoolList.length} en`}</span>
     <span class="count-school">“${escapeHtml(currentSchool)}”</span>
   `;
 
+  if (currentModelId && !list.some(m => String(m.id) === String(currentModelId))){
+    currentModelId = null;
+    renderSchoolInfo(currentSchool);
+    resetRightPanelToTop();
+  }
+
   if(!list.length){
+    const noneSelected = !showModelItems && !showMarcoItems;
     modelsListEl.innerHTML =
-      `<div class="subtitle" style="margin:10px 0 0 0">No hay modelos en esta escuela todavía.</div>`;
+      `<div class="subtitle" style="margin:10px 0 0 0">${noneSelected ? 'Activa Modelos o Marcos para ver resultados.' : 'No hay modelos en esta escuela todavía.'}</div>`;
     return;
   }
 
@@ -5840,6 +6345,13 @@ window.OPEN_ID = (window.__QS.get("open") || "").trim();
 
     // 2) selector
     buildSchoolOptions();
+    setupComplexitySwitch();
+    setupTypeFilters();
+    placeTypeFiltersForViewport();
+    if (!window.__TYPE_FILTERS_VIEWPORT_BOUND){
+      window.__TYPE_FILTERS_VIEWPORT_BOUND = true;
+      window.addEventListener('resize', placeTypeFiltersForViewport, { passive:true });
+    }
 
     // 3) precarga escuela inicial (si procede) + pinta
     if (currentSchool){
