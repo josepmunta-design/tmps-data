@@ -324,6 +324,17 @@ animation: panelBreath 5s ease-in-out infinite;
   min-width:0;
 }
 
+/* Sticky de controles sin "tarjeta" visible */
+.panel.left .schoolSticky{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  padding: 0 !important;
+  margin: 8px 0 10px !important;
+}
+
     .card{
       background: rgba(255,255,255,0.05);
       border:1px solid rgba(255,255,255,0.10);
@@ -336,9 +347,10 @@ animation: panelBreath 5s ease-in-out infinite;
 
     .schoolControls{
       display:grid;
-      grid-template-columns:repeat(2, minmax(0,1fr));
-      gap:10px;
+      grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);
+      gap:12px;
       align-items:end;
+      width:100%;
     }
 
     .schoolControlHead{
@@ -1712,8 +1724,8 @@ html, body{ position: relative; }
 /* ================== MÓVIL ================== */
 @media (max-width: 980px){
   .schoolControls{
-    grid-template-columns:minmax(0, 1.35fr) minmax(0, .85fr);
-    gap:6px;
+    grid-template-columns:minmax(0, 1.45fr) minmax(0, .95fr);
+    gap:8px;
     align-items:end;
   }
 
@@ -1748,8 +1760,8 @@ html, body{ position: relative; }
 
   .schoolControl-main .schoolSelectRow{
     display:grid;
-    grid-template-columns:minmax(0, 1fr) minmax(0, .72fr);
-    gap:6px;
+    grid-template-columns:minmax(0, 1fr) minmax(0, .8fr);
+    gap:8px;
     align-items:stretch;
   }
 
@@ -1764,7 +1776,7 @@ html, body{ position: relative; }
 
   .schoolControl-main .mobileTypeSlot .typeFilters{
     display:grid;
-    grid-template-columns:repeat(2, minmax(0,1fr));
+    grid-template-columns:minmax(0,1fr);
     gap:0;
     width:100%;
     height:36px;
@@ -1785,22 +1797,13 @@ html, body{ position: relative; }
     margin:0;
     padding:0 8px;
     height:100%;
-    font-size:0;
+    font-size:11px;
     letter-spacing:.2px;
     text-transform:uppercase;
   }
 
-  .schoolControl-main .mobileTypeSlot .tf-chip::before{
-    font-size:10.5px;
-    font-weight:800;
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="model"]::before{
-    content:"Mod";
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"]::before{
-    content:"Marc";
+  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="model"]{
+    display:none;
   }
 
   .schoolControl-main .mobileTypeSlot .tf-chip + .tf-chip{
@@ -1845,7 +1848,7 @@ html, body{ position: relative; }
 
   /* ✅ Sticky compacto en móvil: solo el select */
   .panel.left .schoolSticky{
-    padding: 10px 12px;          /* menos alto */
+    padding: 0 !important;
   }
 
   /* Oculta “ESCUELA” (label) */
@@ -1889,6 +1892,18 @@ html, body{ position: relative; }
 
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
+
+  background: linear-gradient(180deg, var(--panelA), var(--panelB)) !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.28) !important;
+  backdrop-filter: blur(12px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(115%) !important;
+}
+
+body.theme-light .panel.left .schoolSticky.stuck{
+  background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(244,249,255,.90)) !important;
+  border: 1px solid rgba(118,129,153,.22) !important;
+  box-shadow: 0 10px 24px rgba(28,47,79,.12) !important;
 }
 /* ===== Botón FULL (arriba derecha dentro del panel de info) ===== */
 .panel.right{ position: fixed; }  /* ya lo es, pero lo dejamos explícito */
@@ -4066,6 +4081,62 @@ function resolveAuthorPhotoUrl(model){
   return null;
 }
 
+function appendUrlParam(url, key, value){
+  if (!url) return url;
+  const sep = url.includes('?') ? '&' : '?';
+  return `${url}${sep}${encodeURIComponent(key)}=${encodeURIComponent(value)}`;
+}
+
+function setupAuthorPhotoRetry(imgEl, baseUrl, modelId){
+  if (!imgEl || !baseUrl) return;
+
+  const modelToken = String(modelId ?? '').trim();
+  const retryDelays = [0, 900, 3800];
+  let attempt = 0;
+  let done = false;
+  let timer = null;
+
+  const clearTimer = () => {
+    if (timer){
+      clearTimeout(timer);
+      timer = null;
+    }
+  };
+
+  const runAttempt = () => {
+    if (done || attempt >= retryDelays.length) return;
+    const delay = retryDelays[attempt];
+
+    timer = setTimeout(() => {
+      if (done) return;
+
+      if (modelToken){
+        const current = String(currentModelId ?? '').trim();
+        if (current && current !== modelToken) return;
+      }
+
+      const src = (attempt === 0)
+        ? baseUrl
+        : appendUrlParam(baseUrl, '_imgRetry', `${Date.now()}_${attempt}`);
+
+      attempt += 1;
+      imgEl.src = src;
+    }, delay);
+  };
+
+  imgEl.onload = () => {
+    done = true;
+    clearTimer();
+  };
+
+  imgEl.onerror = () => {
+    if (done) return;
+    runAttempt();
+  };
+
+  runAttempt();
+}
+
 
 
 window.getAuthorPhoto = function(authorName){
@@ -5315,6 +5386,11 @@ function placeTypeFiltersForViewport(){
   if (!typeFiltersEl || !mobileTypeSlotEl || !countFiltersRowEl) return;
 
   const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
+  if (isMobile && !showModelItems){
+    showModelItems = true;
+    syncTypeFiltersUi();
+    try{ renderModelsList(); }catch(e){}
+  }
   const targetParent = isMobile ? mobileTypeSlotEl : countFiltersRowEl;
 
   if (typeFiltersEl.parentElement !== targetParent){
@@ -5388,7 +5464,14 @@ function renderModelsList(){
   const visibleMarcos = showMarcoItems ? applyComplexityFilter(onlyMarcos) : [];
 
   const visibleSet = new Set([...visibleModels, ...visibleMarcos]);
-  const list = schoolList.filter(m => visibleSet.has(m));
+  let list = schoolList.filter(m => visibleSet.has(m));
+
+  if (currentModelId){
+    const selected = schoolList.find(m => String(m.id ?? '') === String(currentModelId));
+    if (selected && !list.some(m => String(m.id ?? '') === String(currentModelId))){
+      list = schoolList.filter(m => visibleSet.has(m) || String(m.id ?? '') === String(currentModelId));
+    }
+  }
 
   modelsListEl.style.setProperty('--schoolColor', groupColor.get(currentSchool) || '#D9AA3F');
 
@@ -5398,12 +5481,6 @@ function renderModelsList(){
     <span class="count-txt">${(list.length === schoolList.length) ? 'en' : `de ${schoolList.length} en`}</span>
     <span class="count-school">“${escapeHtml(currentSchool)}”</span>
   `;
-
-  if (currentModelId && !list.some(m => String(m.id) === String(currentModelId))){
-    currentModelId = null;
-    renderSchoolInfo(currentSchool);
-    resetRightPanelToTop();
-  }
 
   if(!list.length){
     const noneSelected = !showModelItems && !showMarcoItems;
@@ -5684,7 +5761,7 @@ const authorHTML =
   '<div class="mp-author mp-author-wrap">' +
 
     (fotoUrl
-? '<img class="mp-author-photo" src="' + fotoUrl + '" alt="' + escapeHtml(autoresDisplay) + '" loading="lazy" decoding="async">'
+? '<img class="mp-author-photo" data-photo-url="' + fotoUrl + '" alt="' + escapeHtml(autoresDisplay) + '" loading="lazy" decoding="async">'
 
       : '<div class="mp-author-photo" aria-hidden="true"></div>'
     ) +
@@ -5742,6 +5819,12 @@ if (window.__SMH){
   window.__SMH.rescan();
 }
 
+const authorImgEl = modelInfoEl.querySelector('img.mp-author-photo[data-photo-url]');
+if (authorImgEl){
+  const basePhotoUrl = authorImgEl.getAttribute('data-photo-url');
+  setupAuthorPhotoRetry(authorImgEl, basePhotoUrl, m.id);
+}
+
 
 // Si la foto aún no estaba disponible (carga asíncrona de foto.json), hidrátala en caliente
 if (!fotoUrl && AUTHOR_PHOTO_PROMISE){
@@ -5765,11 +5848,12 @@ if (!fotoUrl && AUTHOR_PHOTO_PROMISE){
 
     const img = document.createElement('img');
     img.className = 'mp-author-photo';
-    img.src = lateUrl;
+    img.setAttribute('data-photo-url', lateUrl);
     img.alt = autoresDisplay || 'Autor';
     img.loading = 'lazy';
     img.decoding = 'async';
     ph.replaceWith(img);
+    setupAuthorPhotoRetry(img, lateUrl, m.id);
   }).catch(() => {});
 }
 
