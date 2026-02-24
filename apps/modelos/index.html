@@ -4093,9 +4093,17 @@ function ensureAuthorPhotoIndexPromise(){
   }
 
   if (!AUTHOR_PHOTO_PROMISE){
+    const doLoad = () => loadAuthorPhotoIndex().catch(() => ({ authors:{}, models:{} }));
     AUTHOR_PHOTO_PROMISE = ASSET_VERSION_PROMISE
-      .then(() => loadAuthorPhotoIndex())
-      .catch(() => ({ authors:{}, models:{} }));
+      .then(() => doLoad())
+      .catch(() => ({ authors:{}, models:{} }))
+      .then((idx) => {
+        // Reintento tardío si llega vacío (móvil / redes lentas)
+        if (!idx || (!Object.keys(idx.authors || {}).length && !Object.keys(idx.models || {}).length)){
+          setTimeout(() => { doLoad(); }, 4000);
+        }
+        return idx;
+      });
   }
 
   return AUTHOR_PHOTO_PROMISE;
@@ -4107,11 +4115,19 @@ function appendUrlParam(url, key, value){
   return `${url}${sep}${encodeURIComponent(key)}=${encodeURIComponent(value)}`;
 }
 
+function replaceAuthorPhotoWithPlaceholder(imgEl){
+  if (!imgEl || !imgEl.parentElement) return;
+  const ph = document.createElement('div');
+  ph.className = 'mp-author-photo';
+  ph.setAttribute('aria-hidden', 'true');
+  imgEl.replaceWith(ph);
+}
+
 function setupAuthorPhotoRetry(imgEl, baseUrl, modelId){
   if (!imgEl || !baseUrl) return;
 
   const modelToken = String(modelId ?? '').trim();
-  const retryDelays = [900, 3800];
+  const retryDelays = [900, 3800, 6500];
   let attempt = 0;
   let done = false;
   let timer = null;
@@ -4153,6 +4169,10 @@ function setupAuthorPhotoRetry(imgEl, baseUrl, modelId){
 
   imgEl.onerror = () => {
     if (done) return;
+    if (attempt >= retryDelays.length){
+      replaceAuthorPhotoWithPlaceholder(imgEl);
+      return;
+    }
     runAttempt();
   };
 
@@ -5783,7 +5803,7 @@ const authorHTML =
   '<div class="mp-author mp-author-wrap">' +
 
     (fotoUrl
-? '<img class="mp-author-photo" src="' + fotoUrl + '" data-photo-url="' + fotoUrl + '" alt="' + escapeHtml(autoresDisplay) + '" loading="lazy" decoding="async">'
+? '<img class="mp-author-photo" src="' + fotoUrl + '" data-photo-url="' + fotoUrl + '" alt="' + escapeHtml(autoresDisplay) + '" loading="eager" decoding="async" fetchpriority="high">'
 
       : '<div class="mp-author-photo" aria-hidden="true"></div>'
     ) +
@@ -5872,8 +5892,9 @@ if (!fotoUrl){
     img.className = 'mp-author-photo';
     img.setAttribute('data-photo-url', lateUrl);
     img.alt = autoresDisplay || 'Autor';
-    img.loading = 'lazy';
+    img.loading = 'eager';
     img.decoding = 'async';
+    img.fetchPriority = 'high';
     ph.replaceWith(img);
     setupAuthorPhotoRetry(img, lateUrl, m.id);
   }).catch(() => {});
