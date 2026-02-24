@@ -1802,12 +1802,38 @@ html, body{ position: relative; }
     text-transform:uppercase;
   }
 
+  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"]{
+    color:#fff;
+    background:
+      linear-gradient(180deg,
+        color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,.18)),
+        color-mix(in srgb, var(--schoolColor, #D9AA3F) 54%, rgba(0,0,0,.10)));
+  }
+
   .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="model"]{
     display:none;
   }
 
-  .schoolControl-main .mobileTypeSlot .tf-chip + .tf-chip{
-    border-left:1px solid rgba(255,255,255,.18);
+  .schoolControl-main .mobileTypeSlot .tf-chip{
+    font-size:0;
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip::before{
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.2px;
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"][data-state="all"]::before{
+    content:"Todos";
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"][data-state="models"]::before{
+    content:"Modelos";
+  }
+
+  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"][data-state="frames"]::before{
+    content:"Marcos";
   }
 
   .schoolControl-main .mobileTypeSlot .tf-chip.active{
@@ -1815,7 +1841,10 @@ html, body{ position: relative; }
   }
 
   .schoolControl-main .mobileTypeSlot .tf-chip:hover{
-    background:rgba(255,255,255,.08);
+    background:
+      linear-gradient(180deg,
+        color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,.18)),
+        color-mix(in srgb, var(--schoolColor, #D9AA3F) 54%, rgba(0,0,0,.10)));
   }
 
 
@@ -3547,11 +3576,27 @@ body.theme-light .tf-chip.active{
       0 8px 20px rgba(28,47,79,.10);
   }
 
+  body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"]{
+    color:#102744;
+    background:
+      linear-gradient(180deg,
+        color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
+        color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(255,255,255,.82)));
+  }
+
   body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip + .tf-chip{
     border-left:1px solid rgba(118,129,153,.26);
   }
 
   body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip.active{
+    background:
+      linear-gradient(180deg,
+        color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
+        color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(255,255,255,.82)));
+    color:#102744;
+  }
+
+  body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip:hover{
     background:
       linear-gradient(180deg,
         color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
@@ -5400,6 +5445,16 @@ function syncTypeFiltersUi(){
     btn.classList.toggle('active', isActive);
     btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
   });
+
+  // Estado móvil: ciclo Todos -> Modelos -> Marcos
+  const marcoBtn = typeFiltersEl.querySelector('.tf-chip[data-kind="marco"]');
+  if (marcoBtn){
+    let state = 'all';
+    if (showModelItems && showMarcoItems) state = 'all';
+    else if (showModelItems && !showMarcoItems) state = 'models';
+    else if (!showModelItems && showMarcoItems) state = 'frames';
+    marcoBtn.setAttribute('data-state', state);
+  }
 }
 
 function setupTypeFilters(){
@@ -5413,7 +5468,21 @@ function setupTypeFilters(){
     if (!btn) return;
 
     const kind = String(btn.dataset.kind || '');
-    if (kind === 'marco'){
+    const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
+
+    if (kind === 'marco' && isMobile){
+      // Ciclo: todos -> modelos -> marcos
+      if (showModelItems && showMarcoItems){
+        showModelItems = true;
+        showMarcoItems = false;
+      }else if (showModelItems && !showMarcoItems){
+        showModelItems = false;
+        showMarcoItems = true;
+      }else{
+        showModelItems = true;
+        showMarcoItems = true;
+      }
+    }else if (kind === 'marco'){
       showMarcoItems = !showMarcoItems;
     }else{
       showModelItems = !showModelItems;
@@ -5428,11 +5497,7 @@ function placeTypeFiltersForViewport(){
   if (!typeFiltersEl || !mobileTypeSlotEl || !countFiltersRowEl) return;
 
   const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
-  if (isMobile && !showModelItems){
-    showModelItems = true;
-    syncTypeFiltersUi();
-    try{ renderModelsList(); }catch(e){}
-  }
+  // no forzamos showModelItems en móvil: ahora hay ciclo de 3 estados
   const targetParent = isMobile ? mobileTypeSlotEl : countFiltersRowEl;
 
   if (typeFiltersEl.parentElement !== targetParent){
@@ -5773,6 +5838,7 @@ const nProc  = Array.isArray(m.procedimientos) ? m.procedimientos.filter(Boolean
 const nMicro = Array.isArray(m.micros) ? m.micros.filter(Boolean).length : 0;
 const nSeq   = Array.isArray(m.secuencias) ? m.secuencias.filter(Boolean).length : 0;
 const nIdeas = Array.isArray(m.ideasPrincipales) ? m.ideasPrincipales.filter(Boolean).length : 0;
+const nConcepts = Array.isArray(m.conceptosClave) ? m.conceptosClave.filter(Boolean).length : 0;
 
   // alianza/neimeyer
   const nAli = (m.alianzaModelo && typeof m.alianzaModelo === 'object')
@@ -5834,6 +5900,7 @@ const authorHTML =
 
     <div class="mp-acc">
       ${acc('Influencias', nInflu, sectionListInner(m.influencias, {asList:false}), true)}
+      ${nConcepts ? acc('Conceptos clave', nConcepts, sectionConceptsInner(m.conceptosClave), false) : ''}
       ${nIdeas ? acc('Ideas principales', nIdeas, sectionIdeasInner(m.ideasPrincipales), false) : ''}
 
 ${nNei ? acc('Niveles', nNei, sectionNeimeyerInner(m.neimeyer), false) : ''}
@@ -5932,6 +5999,49 @@ function sectionListInner(arr, opts={}){
     return `<ul class="mp-list">${a.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ul>`;
   }
   return `<div>${a.map(x => escapeHtml(x)).join(', ')}</div>`;
+}
+
+function sectionConceptsInner(arr){
+  const list = Array.isArray(arr) ? arr.filter(Boolean) : [];
+  if(!list.length) return `<div class="mp-empty">—</div>`;
+
+  return `
+    <div class="mp-ideas">
+      ${list.map((it, idx) => {
+        if (typeof it === 'string'){
+          return `
+            <details class="mp-idea">
+              <summary class="mp-idea-title">${escapeHtml(it)}</summary>
+              <div class="mp-idea-body">—</div>
+            </details>
+          `;
+        }
+
+        const titleRaw = String(
+          it?.titulo ??
+          it?.concepto ??
+          it?.nombre ??
+          it?.title ??
+          `Concepto ${idx+1}`
+        ).trim();
+
+        const bodyRaw = String(
+          it?.descripcion ??
+          it?.definicion ??
+          it?.texto ??
+          it?.body ??
+          ''
+        ).trim();
+
+        return `
+          <details class="mp-idea">
+            <summary class="mp-idea-title">${escapeHtml(titleRaw || `Concepto ${idx+1}`)}</summary>
+            <div class="mp-idea-body">${escapeHtml(bodyRaw || '—')}</div>
+          </details>
+        `;
+      }).join('')}
+    </div>
+  `;
 }
 
 function sectionProceduresInner(arr){
