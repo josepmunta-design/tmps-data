@@ -2200,6 +2200,21 @@ body.infoFull #stickyModelHeader .smh-overlay{
   line-height: 1.2;
 }
 
+.mp-author-part{
+  opacity:.62;
+  transition: opacity .2s ease, color .2s ease, text-shadow .2s ease;
+}
+
+.mp-author-part.is-active{
+  opacity:1;
+  color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 60%, #fff);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--schoolColor, #D9AA3F) 35%, transparent);
+}
+
+.mp-author-sep{
+  opacity:.45;
+}
+
 .mp-author-meta{
   font-size: 12px;
   font-weight: 600;
@@ -5898,9 +5913,10 @@ const autorFoto = (fullAutores.split(';')[0] || '').trim() || '—';
 const autorFotoKey = autorFoto.split(',')[0].trim(); // por si viene "Apellido, Nombre"
 
 // Para MOSTRAR: todos los autores
-const autoresDisplay = fullAutores
-  ? fullAutores.split(';').map(s => s.trim()).filter(Boolean).join(' · ')
-  : '—';
+const autoresList = fullAutores
+  ? fullAutores.split(';').map(s => s.trim()).filter(Boolean)
+  : [];
+const autoresDisplay = autoresList.length ? autoresList.join(' · ') : '—';
 
 const fotoUrl = resolveAuthorPhotoUrl(m);
 const fotoUrls = getModelPhotoUrls(m);
@@ -5915,7 +5931,10 @@ const authorHTML =
       : '<div class="mp-author-photo" aria-hidden="true"></div>'
     ) +
     '<div class="mp-author-text">' +
-      '<div class="mp-author-name">' + escapeHtml(autoresDisplay) + '</div>' +
+      '<div class="mp-author-name">' + autoresList.map((a, i) =>
+        `<span class="mp-author-part" data-author-index="${i}">${escapeHtml(a)}</span>`
+      ).join('<span class="mp-author-sep"> · </span>') +
+      '</div>' +
       // 👇 Quitamos el año aquí para NO duplicarlo (ya está en pills)
       '<div class="mp-author-meta"></div>' +
     '</div>' +
@@ -5975,6 +5994,11 @@ if (authorImgEl){
   setupAuthorPhotoRetry(authorImgEl, basePhotoUrl, m.id);
 }
 
+if (autoresList.length === 1){
+  const single = modelInfoEl.querySelector('.mp-author-part');
+  if (single) single.classList.add('is-active');
+}
+
 // Rotación de fotos por modelo (si hay varias)
 if (window.__PHOTO_ROTATE_TIMER){
   clearInterval(window.__PHOTO_ROTATE_TIMER);
@@ -5985,6 +6009,14 @@ if (window.__PHOTO_ROTATE_TIMER){
     let idx = 0;
     const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
     const intervalMs = isMobile ? 25000 : 15000;
+    const authorParts = modelInfoEl.querySelectorAll('.mp-author-part');
+
+    const markActiveAuthor = (i) => {
+      if (!authorParts || !authorParts.length) return;
+      authorParts.forEach((el, j) => el.classList.toggle('is-active', j === i));
+    };
+
+    markActiveAuthor(idx);
 
     const rotate = () => {
       if (String(currentModelId ?? '').trim() !== String(m.id ?? '').trim()) return;
@@ -5993,8 +6025,10 @@ if (window.__PHOTO_ROTATE_TIMER){
       authorImgEl.style.opacity = '0';
       setTimeout(() => {
         authorImgEl.setAttribute('data-photo-url', nextUrl);
+        authorImgEl.setAttribute('src', nextUrl);
         setupAuthorPhotoRetry(authorImgEl, nextUrl, m.id);
         authorImgEl.style.opacity = '1';
+        markActiveAuthor(idx);
       }, 240);
     };
 
