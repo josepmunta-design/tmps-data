@@ -4081,6 +4081,26 @@ function resolveAuthorPhotoUrl(model){
   return null;
 }
 
+function ensureAuthorPhotoIndexPromise(){
+  if (!ASSET_VERSION_PROMISE || ASSET_VERSION_PROMISE === Promise.resolve()){
+    ASSET_VERSION_PROMISE = loadAssetVersion()
+      .catch(() => {})
+      .finally(() => {
+        DATA_BASE = IS_GHPAGES
+          ? (location.origin + '/data')
+          : (cdnBase() + '/data');
+      });
+  }
+
+  if (!AUTHOR_PHOTO_PROMISE){
+    AUTHOR_PHOTO_PROMISE = ASSET_VERSION_PROMISE
+      .then(() => loadAuthorPhotoIndex())
+      .catch(() => ({ authors:{}, models:{} }));
+  }
+
+  return AUTHOR_PHOTO_PROMISE;
+}
+
 function appendUrlParam(url, key, value){
   if (!url) return url;
   const sep = url.includes('?') ? '&' : '?';
@@ -4091,10 +4111,14 @@ function setupAuthorPhotoRetry(imgEl, baseUrl, modelId){
   if (!imgEl || !baseUrl) return;
 
   const modelToken = String(modelId ?? '').trim();
-  const retryDelays = [0, 900, 3800];
+  const retryDelays = [900, 3800];
   let attempt = 0;
   let done = false;
   let timer = null;
+
+  if (!imgEl.getAttribute('src')){
+    imgEl.setAttribute('src', baseUrl);
+  }
 
   const clearTimer = () => {
     if (timer){
@@ -4115,9 +4139,7 @@ function setupAuthorPhotoRetry(imgEl, baseUrl, modelId){
         if (current && current !== modelToken) return;
       }
 
-      const src = (attempt === 0)
-        ? baseUrl
-        : appendUrlParam(baseUrl, '_imgRetry', `${Date.now()}_${attempt}`);
+      const src = appendUrlParam(baseUrl, '_imgRetry', `${Date.now()}_${attempt}`);
 
       attempt += 1;
       imgEl.src = src;
@@ -5761,7 +5783,7 @@ const authorHTML =
   '<div class="mp-author mp-author-wrap">' +
 
     (fotoUrl
-? '<img class="mp-author-photo" data-photo-url="' + fotoUrl + '" alt="' + escapeHtml(autoresDisplay) + '" loading="lazy" decoding="async">'
+? '<img class="mp-author-photo" src="' + fotoUrl + '" data-photo-url="' + fotoUrl + '" alt="' + escapeHtml(autoresDisplay) + '" loading="lazy" decoding="async">'
 
       : '<div class="mp-author-photo" aria-hidden="true"></div>'
     ) +
@@ -5827,8 +5849,8 @@ if (authorImgEl){
 
 
 // Si la foto aún no estaba disponible (carga asíncrona de foto.json), hidrátala en caliente
-if (!fotoUrl && AUTHOR_PHOTO_PROMISE){
-  AUTHOR_PHOTO_PROMISE.then(() => {
+if (!fotoUrl){
+  ensureAuthorPhotoIndexPromise().then(() => {
     if (String(currentModelId ?? '').trim() !== String(m.id ?? '').trim()) return;
 
     const lateUrl = resolveAuthorPhotoUrl(m);
@@ -6231,7 +6253,12 @@ function setActiveModelInList(id){
   modelsListEl.querySelectorAll('.mi-item.active').forEach(el => el.classList.remove('active'));
 
   const target = modelsListEl.querySelector(`.mi-item[data-id="${CSS.escape(encodeURIComponent(key))}"]`);
-  if (target) target.classList.add('active');
+  if (target){
+    target.classList.add('active');
+  }else{
+    // Si el modelo está filtrado, fuerza un render para incluirlo
+    try{ renderModelsList(); }catch(e){}
+  }
 }
 
 function resetModelPanelToTop(){
