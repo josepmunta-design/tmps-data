@@ -2201,14 +2201,13 @@ body.infoFull #stickyModelHeader .smh-overlay{
 }
 
 .mp-author-part{
-  opacity:.62;
+  color: rgba(231,237,245,0.65);
   transition: opacity .2s ease, color .2s ease, text-shadow .2s ease;
 }
 
 .mp-author-part.is-active{
-  opacity:1;
-  color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 60%, #fff);
-  text-shadow: 0 0 8px color-mix(in srgb, var(--schoolColor, #D9AA3F) 35%, transparent);
+  color: #fff;
+  text-shadow: none;
 }
 
 .mp-author-sep{
@@ -5997,6 +5996,10 @@ if (authorImgEl){
 if (autoresList.length === 1){
   const single = modelInfoEl.querySelector('.mp-author-part');
   if (single) single.classList.add('is-active');
+}
+
+if (fotoUrls.length <= 1){
+  modelInfoEl.querySelectorAll('.mp-author-part').forEach(el => el.classList.add('is-active'));
 }
 
 // Rotación de fotos por modelo (si hay varias)
