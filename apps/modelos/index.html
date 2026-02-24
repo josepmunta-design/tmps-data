@@ -2178,6 +2178,7 @@ body.infoFull #stickyModelHeader .smh-overlay{
   object-fit: cover;
 
   border: 1px solid rgba(255,255,255,0.18);
+  transition: opacity .28s ease;
 
   box-shadow:
     0 6px 18px rgba(0,0,0,0.35),
@@ -4075,7 +4076,25 @@ const url = `${cdnBase()}/data/Core/fotos/foto.json?v=${encodeURIComponent(__ASS
 
     const modelsNorm = {};
     for (const [k, v] of Object.entries(modelsRaw)){
-      if (typeof v === 'string' && v.trim()) modelsNorm[String(k).trim()] = v.trim();
+      const key = String(k).trim();
+      if (!key) continue;
+
+      if (Array.isArray(v)){
+        const arr = v.map(x => String(x || '').trim()).filter(Boolean);
+        if (arr.length) modelsNorm[key] = arr;
+        continue;
+      }
+
+      if (typeof v === 'string' && v.trim()){
+        const str = v.trim();
+        // permite "a.jpg|b.jpg" para rotación
+        if (str.includes('|')){
+          const arr = str.split('|').map(s => s.trim()).filter(Boolean);
+          if (arr.length) modelsNorm[key] = arr;
+        }else{
+          modelsNorm[key] = str;
+        }
+      }
     }
 
     window.AUTHOR_PHOTO_INDEX = { authors: authorsNorm, models: modelsNorm };
@@ -4120,10 +4139,31 @@ function resolveAuthorPhotoUrl(model){
 
   const modelKey = String(model.id ?? '').trim();
   if (idx.models?.[modelKey]) {
-    return `${DATA_BASE}/Core/fotos/${idx.models[modelKey]}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
+    const entry = idx.models[modelKey];
+    if (Array.isArray(entry)){
+      const file = entry[0];
+      return file ? `${DATA_BASE}/Core/fotos/${file}?v=${encodeURIComponent(__ASSET_VER || Date.now())}` : null;
+    }
+    return `${DATA_BASE}/Core/fotos/${entry}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
   }
 
   return null;
+}
+
+function getModelPhotoUrls(model){
+  if (!model) return [];
+  const idx = window.AUTHOR_PHOTO_INDEX || { authors:{}, models:{} };
+  const modelKey = String(model.id ?? '').trim();
+  const entry = idx.models?.[modelKey];
+  if (!entry) return [];
+
+  const rawList = Array.isArray(entry)
+    ? entry
+    : String(entry).split('|').map(s => s.trim()).filter(Boolean);
+
+  return rawList
+    .filter(Boolean)
+    .map(file => `${DATA_BASE}/Core/fotos/${file}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`);
 }
 
 function ensureAuthorPhotoIndexPromise(){
@@ -5863,6 +5903,7 @@ const autoresDisplay = fullAutores
   : '—';
 
 const fotoUrl = resolveAuthorPhotoUrl(m);
+const fotoUrls = getModelPhotoUrls(m);
 
 
 const authorHTML =
@@ -5933,6 +5974,32 @@ if (authorImgEl){
   const basePhotoUrl = authorImgEl.getAttribute('data-photo-url');
   setupAuthorPhotoRetry(authorImgEl, basePhotoUrl, m.id);
 }
+
+// Rotación de fotos por modelo (si hay varias)
+if (window.__PHOTO_ROTATE_TIMER){
+  clearInterval(window.__PHOTO_ROTATE_TIMER);
+  window.__PHOTO_ROTATE_TIMER = null;
+}
+
+  if (authorImgEl && Array.isArray(fotoUrls) && fotoUrls.length > 1){
+    let idx = 0;
+    const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
+    const intervalMs = isMobile ? 25000 : 15000;
+
+    const rotate = () => {
+      if (String(currentModelId ?? '').trim() !== String(m.id ?? '').trim()) return;
+      idx = (idx + 1) % fotoUrls.length;
+      const nextUrl = fotoUrls[idx];
+      authorImgEl.style.opacity = '0';
+      setTimeout(() => {
+        authorImgEl.setAttribute('data-photo-url', nextUrl);
+        setupAuthorPhotoRetry(authorImgEl, nextUrl, m.id);
+        authorImgEl.style.opacity = '1';
+      }, 240);
+    };
+
+    window.__PHOTO_ROTATE_TIMER = setInterval(rotate, intervalMs);
+  }
 
 
 // Si la foto aún no estaba disponible (carga asíncrona de foto.json), hidrátala en caliente
