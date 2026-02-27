@@ -29,8 +29,9 @@ jobs:
       - name: Install deps
         run: npm ci || npm install
 
-      - name: Build temporal index
-        run: npm run build:temporal
+     - name: Build temporal index
+  run: node tools/build-temporal-index.mjs
+
 
       - name: Commit & push temporal index if changed
         run: |
