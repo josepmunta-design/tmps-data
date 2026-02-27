@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-02-27T09:03:54.693Z",
+  "generatedAt": "2026-02-27T09:18:47.591Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 174,
-    "links": 161,
-    "unresolvedInfluences": 614
+    "modelos": 175,
+    "links": 162,
+    "unresolvedInfluences": 617
   },
   "nodes": [
     {
@@ -2324,6 +2324,35 @@
       "ciudad": "Palo Alto, California",
       "pais": "EE. UU.",
       "escuelaId": "sistemico"
+    },
+    {
+      "id": "exposicion-en-vivo-marks-1975",
+      "label": "Exposición en vivo",
+      "year": 1975,
+      "group": "Conductista",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/conductismo/exposicion-en-vivo-marks-1975.json",
+      "authors": "Isaac M. Marks",
+      "summary": "La Exposición en vivo, tal como la desarrolla Isaac M. Marks en la tradición de la terapia de conducta del Maudsley/Institute of Psychiatry, es una intervención centrada en acercar de forma sistemática, graduada y repetida al paciente a los estímulos, situaciones o claves internas temidas en el entorno real, con prevención activa de la evitación y de las conductas de seguridad que mantienen el miedo. El cambio se entiende como resultado de la experiencia correctiva sostenida (tolerar la activación, comprobar la no-catástrofe, y permitir que disminuya la reactividad condicionada) y de la reorganización conductual que devuelve libertad funcional a la vida diaria; el terapeuta estructura jerarquías, planifica tareas, monitoriza ansiedad/evitación y promueve autoexposición entre sesiones para generalizar el aprendizaje y reducir dependencia del terapeuta, integrándose de forma natural con variantes como la exposición prolongada, la exposición guiada y la exposición con prevención de respuesta cuando el patrón principal de mantenimiento es la evitación ritualizada.",
+      "influencias": [
+        "Teoría del aprendizaje (condicionamiento clásico y extinción)",
+        "Terapia de conducta",
+        "Desensibilización sistemática (Wolpe)",
+        "Exposición con prevención de respuesta (Rachman)"
+      ],
+      "refs": [
+        "Marks, I. M., Hodgson, R., & Rachman, S. (1975). Treatment of chronic obsessive-compulsive neurosis by in-vivo exposure. The British Journal of Psychiatry, 127, 349–364.",
+        "Nunes, J. S., & Marks, I. M. (1975). Feedback of true heart rate during exposure in vivo. Archives of General Psychiatry, 32(7), 933–936.",
+        "Marks, I. M. (1969). Fears and Phobias. New York: Academic Press.",
+        "Marks, I. M. (1978). Living with Fear: Understanding and Coping with Anxiety. New York: McGraw-Hill."
+      ],
+      "lat": 51.4693,
+      "lon": -0.09112,
+      "ciudad": "Londres",
+      "pais": "Reino Unido",
+      "escuelaId": "conductismo"
     },
     {
       "id": "kernberg-relaciones-objetales-modernas",
@@ -5199,6 +5228,10 @@
       "target": "economia-fichas-ayllon-azrin-1965"
     },
     {
+      "source": "desensibilizacion-sistematica-wolpe-1958",
+      "target": "exposicion-en-vivo-marks-1975"
+    },
+    {
       "source": "teoria-apego-bowlby",
       "target": "cft-gilbert-2009"
     },
@@ -6151,6 +6184,18 @@
     {
       "target": "activacion-conductual-jacobson-1996",
       "influence": "Análisis funcional de la conducta"
+    },
+    {
+      "target": "exposicion-en-vivo-marks-1975",
+      "influence": "Teoría del aprendizaje (condicionamiento clásico y extinción)"
+    },
+    {
+      "target": "exposicion-en-vivo-marks-1975",
+      "influence": "Terapia de conducta"
+    },
+    {
+      "target": "exposicion-en-vivo-marks-1975",
+      "influence": "Exposición con prevención de respuesta (Rachman)"
     },
     {
       "target": "cft-gilbert-2009",
