@@ -5112,6 +5112,90 @@ function setMobileModelPanelLowered(lowered){
     document.body.classList.remove('mobile-model-lowered');
   }
 }
+
+function applyMobilePanelShiftDuringDrag(shiftPx){
+  const rp = document.querySelector('.panel.right');
+  const lp = document.querySelector('.panel.left');
+  if (!rp || !isMobileViewport() || document.body.classList.contains('infoFull')) return;
+
+  const maxShift = computeMobilePanelShiftPx();
+  const clamped = Math.max(0, Math.min(maxShift, shiftPx));
+  const shift = `${Math.round(clamped)}px`;
+
+  rp.style.setProperty('--mobilePanelShift', shift);
+  if (clamped > 0.5){
+    rp.classList.add('mobile-lowered');
+    document.body.classList.add('mobile-model-lowered');
+  }else{
+    rp.classList.remove('mobile-lowered');
+    document.body.classList.remove('mobile-model-lowered');
+  }
+
+  if (lp){
+    lp.style.setProperty('--mobilePanelShift', shift);
+    if (clamped > 0.5) lp.classList.add('mobile-expanded');
+    else lp.classList.remove('mobile-expanded');
+  }
+}
+
+function setupMobilePanelDragGesture(){
+  const rp = document.querySelector('.panel.right');
+  if (!rp || rp.__mobileDragBound) return;
+  rp.__mobileDragBound = true;
+
+  const state = {
+    active: false,
+    startY: 0,
+    startShift: 0,
+    maxShift: 0
+  };
+
+  const getCurrentShift = () => {
+    const raw = parseFloat(getComputedStyle(rp).getPropertyValue('--mobilePanelShift') || '0');
+    if (Number.isFinite(raw) && raw > 0) return raw;
+    return rp.classList.contains('mobile-lowered') ? computeMobilePanelShiftPx() : 0;
+  };
+
+  rp.addEventListener('touchstart', (evt) => {
+    if (!isMobileViewport() || document.body.classList.contains('infoFull')) return;
+    if (!rp.classList.contains('mobile-lowered')) return;
+    if (!evt.touches || evt.touches.length !== 1) return;
+
+    state.active = true;
+    state.startY = evt.touches[0].clientY;
+    state.maxShift = computeMobilePanelShiftPx();
+    state.startShift = getCurrentShift();
+
+    rp.style.transition = 'none';
+    const lp = document.querySelector('.panel.left');
+    if (lp) lp.style.transition = 'none';
+  }, { passive: true });
+
+  rp.addEventListener('touchmove', (evt) => {
+    if (!state.active || !evt.touches || !evt.touches.length) return;
+
+    const y = evt.touches[0].clientY;
+    const dy = y - state.startY;
+    applyMobilePanelShiftDuringDrag(state.startShift + dy);
+    evt.preventDefault();
+  }, { passive: false });
+
+  const endDrag = () => {
+    if (!state.active) return;
+    state.active = false;
+
+    rp.style.removeProperty('transition');
+    const lp = document.querySelector('.panel.left');
+    if (lp) lp.style.removeProperty('transition');
+
+    const current = parseFloat(getComputedStyle(rp).getPropertyValue('--mobilePanelShift') || '0') || 0;
+    const keepLowered = current > (state.maxShift * 0.42);
+    setMobileModelPanelLowered(keepLowered);
+  };
+
+  rp.addEventListener('touchend', endDrag, { passive: true });
+  rp.addEventListener('touchcancel', endDrag, { passive: true });
+}
 // ===== FULLSCREEN del panel de info (panel derecho) =====
 (function setupInfoFullscreen(){
   const modelInfoEl = document.getElementById('modelInfo');
@@ -5328,6 +5412,8 @@ if (leftPanel){
 window.addEventListener('resize', () => {
   setMobileModelPanelLowered(false);
 }, { passive:true });
+
+setupMobilePanelDragGesture();
 
 // ================= FIN MODO LECTURA (SUAVE) =================
 
