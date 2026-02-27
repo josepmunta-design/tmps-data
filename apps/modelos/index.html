@@ -1856,7 +1856,11 @@ html, body{ position: relative; }
   .panel.left{
     width: calc(100vw - (var(--edgePad) * 2));
     height: var(--leftH);      /* ✅ fijo: sin movimiento */
-    transition: none;
+    transition: height .42s cubic-bezier(.22,.61,.36,1);
+  }
+
+  .panel.left.mobile-expanded{
+    height: calc(var(--leftH) + var(--mobilePanelShift, 0px));
   }
 
   .panel.right{
@@ -1868,11 +1872,20 @@ html, body{ position: relative; }
     top: calc(var(--edgePad) + var(--leftH) + var(--rightGap));
     max-height: calc(100vh - (var(--edgePad) * 2) - (var(--leftH) + var(--rightGap)));
 
-    transition: none;
+    transition: transform .42s cubic-bezier(.22,.61,.36,1);
+    transform: translateY(0);
 
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-y;
+  }
+
+  .panel.right.mobile-lowered{
+    transform: translateY(var(--mobilePanelShift, 0px));
+  }
+
+  body.infoFull .panel.right{
+    transform: none !important;
   }
 
   /* ✅ Sticky compacto en móvil: solo el select */
@@ -1960,12 +1973,22 @@ body.theme-light .panel.left .schoolSticky.stuck{
 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  transition: opacity .24s ease, transform .24s ease, visibility .24s ease;
 }
 /* ===== Ocultar botón FULL mientras está la landing ===== */
 body.landing-on .mp-fullBtn{
   opacity: 0;
   pointer-events: none;
   transform: translateY(-6px);
+}
+
+@media (max-width: 980px){
+  body.mobile-model-lowered .mp-fullBtn{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(8px);
+  }
 }
 
 
@@ -4862,16 +4885,20 @@ async function ensureSchoolFromGitHub(schoolLabel){
       return;
     }
 
-    // ✅ admite variantes de estructura
+    // ✅ admite variantes de estructura (array u objeto)
     const listRaw =
       (Array.isArray(school?.modelos) ? school.modelos : null) ||
       (Array.isArray(school?.models) ? school.models : null) ||
+      (school?.modelos && typeof school.modelos === 'object' ? Object.values(school.modelos) : null) ||
+      (school?.models && typeof school.models === 'object' ? Object.values(school.models) : null) ||
       (Array.isArray(school) ? school : []);
 
-    const summaries = listRaw.map(m => ({
-      ...m,
-      grupo: String(school.label || entry.label || schoolLabel).trim()
-    }));
+    const summaries = listRaw
+      .filter((m) => m && typeof m === 'object')
+      .map(m => ({
+        ...m,
+        grupo: String(school.label || entry.label || schoolLabel).trim()
+      }));
 
     // Añade a MODELS sin duplicar
     const existingIds = new Set(MODELS.map(m => String(m.id)));
@@ -5039,6 +5066,52 @@ function infoFadeIn(){
 
 const leftPanel  = document.querySelector('.panel.left');
 const rightPanel = document.querySelector('.panel.right');
+
+function isMobileViewport(){
+  return !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
+}
+
+function computeMobilePanelShiftPx(){
+  const rp = document.querySelector('.panel.right');
+  if (!rp) return 0;
+  const topPx = parseFloat(getComputedStyle(rp).top || '0') || 0;
+  return Math.max(56, Math.round(topPx * 0.5));
+}
+
+function setMobileModelPanelLowered(lowered){
+  const rp = document.querySelector('.panel.right');
+  const lp = document.querySelector('.panel.left');
+  if (!rp) return;
+  if (!isMobileViewport() || document.body.classList.contains('infoFull')){
+    rp.classList.remove('mobile-lowered');
+    rp.style.removeProperty('--mobilePanelShift');
+    if (lp){
+      lp.classList.remove('mobile-expanded');
+      lp.style.removeProperty('--mobilePanelShift');
+    }
+    document.body.classList.remove('mobile-model-lowered');
+    return;
+  }
+
+  if (lowered){
+    const shift = `${computeMobilePanelShiftPx()}px`;
+    rp.style.setProperty('--mobilePanelShift', shift);
+    rp.classList.add('mobile-lowered');
+    if (lp){
+      lp.style.setProperty('--mobilePanelShift', shift);
+      lp.classList.add('mobile-expanded');
+    }
+    document.body.classList.add('mobile-model-lowered');
+  }else{
+    rp.classList.remove('mobile-lowered');
+    rp.style.setProperty('--mobilePanelShift', '0px');
+    if (lp){
+      lp.classList.remove('mobile-expanded');
+      lp.style.setProperty('--mobilePanelShift', '0px');
+    }
+    document.body.classList.remove('mobile-model-lowered');
+  }
+}
 // ===== FULLSCREEN del panel de info (panel derecho) =====
 (function setupInfoFullscreen(){
   const modelInfoEl = document.getElementById('modelInfo');
@@ -5244,8 +5317,17 @@ if (leftPanel){
     const stuck = Math.abs(r.top - p.top) < 2;
 
     sticky.classList.toggle('stuck', stuck);
+
+    // En móvil: al hacer scroll por tarjetas, baja suavemente el panel de modelo
+    if (leftPanel.scrollTop > 8){
+      setMobileModelPanelLowered(true);
+    }
   }, { passive:true });
 }
+
+window.addEventListener('resize', () => {
+  setMobileModelPanelLowered(false);
+}, { passive:true });
 
 // ================= FIN MODO LECTURA (SUAVE) =================
 
@@ -5321,7 +5403,13 @@ async function landingCountForSchool(label){
   try{
     // Carga el archivo real de la escuela y cuenta sus modelos
     const school = await fetchJson(gh(`Core/${entry.file}`));
-    const ghN = Array.isArray(school?.modelos) ? school.modelos.length : 0;
+    const countList =
+      (Array.isArray(school?.modelos) ? school.modelos : null) ||
+      (Array.isArray(school?.models) ? school.models : null) ||
+      (school?.modelos && typeof school.modelos === 'object' ? Object.values(school.modelos) : null) ||
+      (school?.models && typeof school.models === 'object' ? Object.values(school.models) : null) ||
+      [];
+    const ghN = countList.length;
 
     const n = ghN || localN;
     LANDING_COUNT_CACHE.set(target, n);
@@ -5710,6 +5798,7 @@ return `
   try{
     // ✅ 1) pinta selección INMEDIATA (sin esperar red)
     currentModelId = id;
+    setMobileModelPanelLowered(false);
 
     // quita active del resto (rápido)
     setActiveModelInList(id);
@@ -6633,6 +6722,7 @@ function scrollLeftPanelToStickyPoint(){
 schoolSelect.addEventListener('change', async () => {
   currentSchool = schoolSelect.value;
   currentModelId = null;
+  setMobileModelPanelLowered(false);
 
   // 1) Panel derecho en modo "escuela" + top limpio (instantáneo)
   renderSchoolInfo(currentSchool);
