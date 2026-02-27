@@ -7,7 +7,7 @@ on:
       - "data/Core/escuelas/**"
       - "data/Core/modelos/**"
       - "tools/build-temporal-index.mjs"
-      - "package.json"
+      - ".github/workflows/build-temporal-index.yml"
   workflow_dispatch:
 
 permissions:
@@ -26,19 +26,15 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install deps
-        run: npm ci || npm install
-
-     - name: Build temporal index
-  run: node tools/build-temporal-index.mjs
-
+      - name: Build temporal index
+        run: node tools/build-temporal-index.mjs
 
       - name: Commit & push temporal index if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add indices/temporal
+          git add -A indices/temporal
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
