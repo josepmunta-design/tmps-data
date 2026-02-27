@@ -7031,7 +7031,7 @@ schoolSelect.addEventListener('change', async () => {
 
   if (swipeDir){
     const inCls = (swipeDir === 'next') ? 'school-swipe-in-right' : 'school-swipe-in-left';
-    [modelsListEl, modelInfoEl, countLine].filter(Boolean).forEach(el => {
+    [schoolSelect, modelsListEl, modelInfoEl, countLine].filter(Boolean).forEach(el => {
       el.classList.remove('school-swipe-out-left','school-swipe-out-right','school-swipe-in-left','school-swipe-in-right');
       el.classList.add(inCls);
       setTimeout(() => {
