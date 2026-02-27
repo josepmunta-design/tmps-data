@@ -1789,15 +1789,11 @@ html, body{ position: relative; }
   }
 
   .schoolControl-main .schoolSelectRow{
-    display:grid;
-    grid-template-columns:minmax(0, 1fr) minmax(0, .8fr);
-    gap:8px;
-    align-items:stretch;
+    display:block;
   }
 
   .schoolControl-main .mobileTypeSlot{
-    display:block;
-    min-width:0;
+    display:none !important;
   }
 
   .schoolControl-main .schoolSelectRow select{
@@ -2044,6 +2040,25 @@ body.infoFull .panel.right{
   overflow: auto;
 
   z-index: 999999;
+}
+
+@media (max-width: 980px){
+  body.infoFull.model-swipe-out-right .panel.right{
+    animation: modelSwipeOutRight .24s cubic-bezier(.22,.61,.36,1) forwards;
+  }
+  body.infoFull.model-swipe-out-left .panel.right{
+    animation: modelSwipeOutLeft .24s cubic-bezier(.22,.61,.36,1) forwards;
+  }
+}
+
+@keyframes modelSwipeOutRight{
+  from{ transform: translateX(0); opacity:1; }
+  to{ transform: translateX(52px); opacity:0; }
+}
+
+@keyframes modelSwipeOutLeft{
+  from{ transform: translateX(0); opacity:1; }
+  to{ transform: translateX(-52px); opacity:0; }
 }
 
 /* Oculta el panel superior mientras estás en fullscreen */
@@ -5286,19 +5301,26 @@ btn.addEventListener('click', () => {
 
   });
 
-  function closeModelToListFromSwipe(){
+  function closeModelToListFromSwipe(direction){
     if (!document.body.classList.contains('infoFull')) return;
     if (!currentModelId) return;
 
-    document.body.classList.remove('infoFull');
-    if (window.__SMH) window.__SMH.hide();
-    syncIcon();
+    const outCls = (direction === 'right') ? 'model-swipe-out-right' : 'model-swipe-out-left';
+    document.body.classList.remove('model-swipe-out-left', 'model-swipe-out-right');
+    document.body.classList.add(outCls);
 
-    currentModelId = null;
-    setMobileModelPanelLowered(false);
-    renderSchoolInfo(currentSchool);
-    renderModelsList();
-    resetRightPanelToTop();
+    setTimeout(() => {
+      document.body.classList.remove('infoFull');
+      document.body.classList.remove('model-swipe-out-left', 'model-swipe-out-right');
+      if (window.__SMH) window.__SMH.hide();
+      syncIcon();
+
+      currentModelId = null;
+      setMobileModelPanelLowered(false);
+      renderSchoolInfo(currentSchool);
+      renderModelsList();
+      resetRightPanelToTop();
+    }, 220);
   }
 
 const host = document.querySelector('.panel.right');
@@ -5339,7 +5361,7 @@ if (!host) return;
 
     if (!swipe.lockX) return;
     if (Math.abs(swipe.dx) < 70) return;
-    closeModelToListFromSwipe();
+    closeModelToListFromSwipe(swipe.dx > 0 ? 'right' : 'left');
   };
   host.addEventListener('touchend', endSwipe, { passive:true });
   host.addEventListener('touchcancel', endSwipe, { passive:true });
@@ -5519,7 +5541,7 @@ function cycleSchoolBySwipe(direction){
   if (nextIdx === idx) return;
 
   const outCls = (direction === 'next') ? 'school-swipe-out-right' : 'school-swipe-out-left';
-  const targets = [modelsListEl, modelInfoEl, countLine].filter(Boolean);
+  const targets = [schoolSelect, modelsListEl, modelInfoEl, countLine].filter(Boolean);
   targets.forEach(el => {
     el.classList.remove('school-swipe-out-left','school-swipe-out-right','school-swipe-in-left','school-swipe-in-right');
     el.classList.add(outCls);
@@ -5897,8 +5919,17 @@ function placeTypeFiltersForViewport(){
   if (!typeFiltersEl || !mobileTypeSlotEl || !countFiltersRowEl) return;
 
   const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
-  // no forzamos showModelItems en móvil: ahora hay ciclo de 3 estados
-  const targetParent = isMobile ? mobileTypeSlotEl : countFiltersRowEl;
+  // En móvil ya no hay control de tipos: siempre mostramos todo.
+  if (isMobile){
+    const changed = (!showModelItems || !showMarcoItems);
+    showModelItems = true;
+    showMarcoItems = true;
+    if (changed){
+      syncTypeFiltersUi();
+      try{ renderModelsList(); }catch(e){}
+    }
+  }
+  const targetParent = countFiltersRowEl;
 
   if (typeFiltersEl.parentElement !== targetParent){
     targetParent.appendChild(typeFiltersEl);
