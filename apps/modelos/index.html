@@ -5256,8 +5256,64 @@ btn.addEventListener('click', () => {
 
   });
 
+  function closeModelToListFromSwipe(){
+    if (!document.body.classList.contains('infoFull')) return;
+    if (!currentModelId) return;
+
+    document.body.classList.remove('infoFull');
+    if (window.__SMH) window.__SMH.hide();
+    syncIcon();
+
+    currentModelId = null;
+    setMobileModelPanelLowered(false);
+    renderSchoolInfo(currentSchool);
+    renderModelsList();
+    resetRightPanelToTop();
+  }
+
 const host = document.querySelector('.panel.right');
 if (!host) return;
+
+  // Swipe horizontal en fullscreen móvil para cerrar modelo activo
+  const swipe = { active:false, sx:0, sy:0, dx:0, dy:0, lockX:false };
+  host.addEventListener('touchstart', (evt) => {
+    if (!document.body.classList.contains('infoFull')) return;
+    if (!isMobileViewport()) return;
+    if (!currentModelId) return;
+    if (!evt.touches || evt.touches.length !== 1) return;
+
+    const t = evt.touches[0];
+    swipe.active = true;
+    swipe.sx = t.clientX;
+    swipe.sy = t.clientY;
+    swipe.dx = 0;
+    swipe.dy = 0;
+    swipe.lockX = false;
+  }, { passive:true });
+
+  host.addEventListener('touchmove', (evt) => {
+    if (!swipe.active || !evt.touches || !evt.touches.length) return;
+    const t = evt.touches[0];
+    swipe.dx = t.clientX - swipe.sx;
+    swipe.dy = t.clientY - swipe.sy;
+
+    if (!swipe.lockX && Math.abs(swipe.dx) > 10 && Math.abs(swipe.dx) > Math.abs(swipe.dy) * 1.15){
+      swipe.lockX = true;
+    }
+    if (swipe.lockX) evt.preventDefault();
+  }, { passive:false });
+
+  const endSwipe = () => {
+    if (!swipe.active) return;
+    swipe.active = false;
+
+    if (!swipe.lockX) return;
+    if (Math.abs(swipe.dx) < 70) return;
+    closeModelToListFromSwipe();
+  };
+  host.addEventListener('touchend', endSwipe, { passive:true });
+  host.addEventListener('touchcancel', endSwipe, { passive:true });
+
 // ===== Sticky header (solo en fullscreen y cuando no se ve mp-title/mp-author) =====
 let __smh = document.getElementById('stickyModelHeader');
 if (!__smh){
@@ -5414,6 +5470,79 @@ window.addEventListener('resize', () => {
 }, { passive:true });
 
 setupMobilePanelDragGesture();
+
+function cycleSchoolBySwipe(direction){
+  if (!schoolSelect) return;
+  const values = Array.from(schoolSelect.options || [])
+    .map(o => String(o.value || '').trim())
+    .filter(Boolean);
+  if (values.length < 2) return;
+
+  const current = String(schoolSelect.value || '').trim();
+  let idx = values.indexOf(current);
+  if (idx < 0) idx = 0;
+
+  const nextIdx = (direction === 'next')
+    ? (idx + 1) % values.length
+    : (idx - 1 + values.length) % values.length;
+
+  schoolSelect.value = values[nextIdx];
+  schoolSelect.dispatchEvent(new Event('change', { bubbles:true }));
+}
+
+function setupMobileSchoolSwipe(){
+  if (!modelsListEl || modelsListEl.__boundSwipeSchools) return;
+  modelsListEl.__boundSwipeSchools = true;
+
+  const swipe = { active:false, sx:0, sy:0, dx:0, dy:0, lockX:false };
+
+  modelsListEl.addEventListener('touchstart', (evt) => {
+    if (!isMobileViewport()) return;
+    if (document.body.classList.contains('infoFull')) return;
+    if (!evt.touches || evt.touches.length !== 1) return;
+    if (modelsListEl.__loading) return;
+
+    const interactive = evt.target.closest('button, a, input, textarea, select, label');
+    if (interactive) return;
+
+    const t = evt.touches[0];
+    swipe.active = true;
+    swipe.sx = t.clientX;
+    swipe.sy = t.clientY;
+    swipe.dx = 0;
+    swipe.dy = 0;
+    swipe.lockX = false;
+  }, { passive:true });
+
+  modelsListEl.addEventListener('touchmove', (evt) => {
+    if (!swipe.active || !evt.touches || !evt.touches.length) return;
+    const t = evt.touches[0];
+    swipe.dx = t.clientX - swipe.sx;
+    swipe.dy = t.clientY - swipe.sy;
+
+    if (!swipe.lockX && Math.abs(swipe.dx) > 12 && Math.abs(swipe.dx) > Math.abs(swipe.dy) * 1.15){
+      swipe.lockX = true;
+    }
+    if (swipe.lockX) evt.preventDefault();
+  }, { passive:false });
+
+  const endSwipe = () => {
+    if (!swipe.active) return;
+    swipe.active = false;
+
+    if (!swipe.lockX) return;
+    if (Math.abs(swipe.dx) < 70) return;
+
+    if (swipe.dx > 0){
+      cycleSchoolBySwipe('next'); // derecha -> siguiente
+    }else{
+      cycleSchoolBySwipe('prev'); // izquierda -> anterior
+    }
+  };
+
+  modelsListEl.addEventListener('touchend', endSwipe, { passive:true });
+  modelsListEl.addEventListener('touchcancel', endSwipe, { passive:true });
+}
 
 // ================= FIN MODO LECTURA (SUAVE) =================
 
@@ -6869,6 +6998,7 @@ window.OPEN_ID = (window.__QS.get("open") || "").trim();
     buildSchoolOptions();
     setupComplexitySwitch();
     setupTypeFilters();
+    setupMobileSchoolSwipe();
     placeTypeFiltersForViewport();
     if (!window.__TYPE_FILTERS_VIEWPORT_BOUND){
       window.__TYPE_FILTERS_VIEWPORT_BOUND = true;
