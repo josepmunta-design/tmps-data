@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-27T08:56:19.539Z",
-  "totalModelos": 127,
+  "updatedAt": "2026-02-27T09:18:24.558Z",
+  "totalModelos": 128,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -2100,6 +2100,92 @@
           "codigo": "m_sst_exposicion_interpersonal",
           "nombre": "Exposición interpersonal graduada dentro del SST",
           "texto": "Microintervención que integra práctica de habilidades con exposición gradual a situaciones sociales temidas, asegurando que el paciente no solo “aprende” la habilidad en frío, sino que la ejecuta bajo activación real, reduciendo evitación y consolidando tolerancia al malestar social.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "exposicion-en-vivo-marks-1975",
+      "modelLabel": "Exposición en vivo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Isaac M. Marks",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_exposicionVivo_marks_preparacionTarea",
+          "nombre": "Preparación práctica de una tarea de exposición en vivo",
+          "texto": "Antes de iniciar, la persona concreta la tarea (qué, dónde, cuándo, cuánto tiempo), anticipa obstáculos (ganas de escapar, vergüenza, pensamientos catastróficos) y decide de antemano reglas simples de permanencia (“no me voy antes de X minutos”, “no pido reaseguro”, “no hago comprobaciones”), eligiendo un nivel de dificultad que sea exigente pero realizable. Se pacta que el objetivo no es “estar tranquilo”, sino hacer la tarea completa sin evitación relevante, aceptando la activación como parte del proceso. (Marks, 1978).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exposicionVivo_marks_exposicionGuiada",
+          "nombre": "Exposición en vivo guiada con permanencia suficiente",
+          "texto": "La persona se expone directamente a la situación temida en el entorno real, permaneciendo el tiempo suficiente para impedir el patrón automático de huida y permitir aprendizaje por experiencia (no solo “asomarse y salir”). Durante la tarea se mantiene el foco en “quedarme y observar” en lugar de “controlar para no sentir”, y se refuerza la conducta de aproximación (entrar, permanecer, repetir) más que la reducción inmediata de ansiedad. El criterio clínico es la reducción de evitación y la ampliación de libertad conductual, con repetición planificada. (Marks, 1969; Marks, 1978).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exposicionVivo_marks_prevencionEscape",
+          "nombre": "Prevención de escape y de rituales durante la exposición",
+          "texto": "Se bloquean o desmantelan conductas que funcionan como salida parcial (escapar antes de tiempo, “hacerlo rápido”, neutralizar, comprobar, pedir tranquilización, consumir seguridad) porque son la vía por la que el sistema mantiene la amenaza sin desconfirmación. Si surge impulso de huida, se trabaja con microdecisiones de permanencia (“un minuto más”) y con conductas alternativas compatibles con exposición (quedarme quieto, mirar alrededor, describir lo que veo) para sostener la experiencia sin ritualizar. (Marks et al., 1975; Marks, 1978).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exposicionVivo_marks_autoexposicion",
+          "nombre": "Autoexposición entre sesiones como intervención central",
+          "texto": "Se planifica y ejecuta práctica frecuente fuera de sesión (idealmente diaria o muy regular), porque la generalización y el volumen de aprendizaje dependen de repetición en contextos reales, no solo de sesiones guiadas. La persona se convierte en agente principal del tratamiento: selecciona tareas, las realiza con reglas claras (sin escape/seguridad) y las repite hasta que la evitación se reduce de forma estable, incrementando gradualmente dificultad, duración y variabilidad. (Marks, 1978; Marks, 1969).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exposicionVivo_marks_generalizacion",
+          "nombre": "Variación contextual y generalización del aprendizaje",
+          "texto": "Una vez lograda la tarea en un contexto, se amplía deliberadamente a variaciones (diferentes horas, rutas, lugares, personas presentes, condiciones meteorológicas, niveles de cansancio) para evitar que el afrontamiento quede “encerrado” en un solo escenario seguro. La lógica es entrenar flexibilidad conductual y reducir generalización del miedo, llevando la mejora a los entornos donde la vida ocurre, no donde la tarea “sale mejor”. (Marks, 1978).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exposicionVivo_marks_prevencionRecaidas",
+          "nombre": "Prevención de recaídas y plan de mantenimiento a largo plazo",
+          "texto": "Al final, se construye un plan explícito: prácticas de mantenimiento (exposiciones “recordatorio”), señales tempranas de recaída (aumento de evitación/safety), respuesta rápida (volver a jerarquía, repetir tareas, cortar neutralización) y una explicación clara de los retrocesos como parte normal del aprendizaje, no como fracaso. Se prioriza que la persona conserve una identidad de afrontamiento (“yo hago lo que temo aunque haya ansiedad”) y hábitos conductuales que impidan que la evitación vuelva a expandirse. (Marks, 1978; Marks, 1969).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_reglaPermanencia",
+          "nombre": "Formulación explícita de regla de permanencia",
+          "texto": "Antes de iniciar la tarea se establece una regla concreta de permanencia (“no salir antes de 10 minutos”, “hacer la compra completa”), anticipando el impulso de huida y reduciendo decisiones improvisadas durante el pico de ansiedad. (Marks, 1978).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_unMinutoMas",
+          "nombre": "Microdecisión de ‘un minuto más’",
+          "texto": "Cuando aparece el impulso intenso de escapar, se introduce la decisión breve de permanecer un minuto adicional, fragmentando la tarea en unidades manejables que sostienen la exposición sin abandono total. (Marks, 1978).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_repeticion",
+          "nombre": "Repetición deliberada de la misma tarea",
+          "texto": "Se repite la misma situación en días consecutivos hasta que disminuye evitación y aumenta tolerancia, evitando saltar prematuramente a tareas más difíciles sin consolidación previa. (Marks, 1978).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_permanenciaProlongada",
+          "nombre": "Exposición prolongada hasta descenso natural",
+          "texto": "Se mantiene la exposición el tiempo suficiente para observar fluctuación y eventual descenso espontáneo de la activación, favoreciendo aprendizaje experiencial de tolerancia. (Marks, 1969; Marks, 1978).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_planEntreSesiones",
+          "nombre": "Planificación anticipada de práctica entre sesiones",
+          "texto": "Antes de cerrar sesión, se fija fecha, lugar y condiciones concretas de la siguiente autoexposición, reduciendo ambigüedad y aumentando probabilidad de ejecución real. (Marks, 1978).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

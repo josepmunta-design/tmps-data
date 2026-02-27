@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-02-27T08:56:19.539Z",
-  "totalModelos": 135,
+  "updatedAt": "2026-02-27T09:18:24.558Z",
+  "totalModelos": 136,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -2074,6 +2074,50 @@
           "codigo": "m_sst_registro_in_vivo",
           "nombre": "Registro de intentos in vivo y aprendizaje",
           "texto": "Microintervención de autoobservación estructurada donde el paciente registra situación, conducta, emoción, resultado y aprendizaje, facilitando ajuste fino de estrategias y generalización; convierte la vida cotidiana en laboratorio de práctica sin depender de la memoria sesgada por ansiedad.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "exposicion-en-vivo-marks-1975",
+      "modelLabel": "Exposición en vivo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Isaac M. Marks",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_exposicionVivo_marks_registro",
+          "nombre": "Registro de exposición y seguimiento de práctica",
+          "texto": "Tras cada práctica, la persona registra tarea realizada (situación, duración, grado de evitación/seguridad), intensidad subjetiva aproximada y, sobre todo, qué aprendió (“pude quedarme”, “no pasó X”, “la ansiedad subió y bajó”, “no necesité Y”), para reforzar el aprendizaje y detectar patrones de sabotaje (escapes sutiles, seguridad encubierta). El registro se usa para ajustar la jerarquía, aumentar variabilidad y consolidar autonomía, no para perseguir cifras “perfectas”. (Marks, 1978).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_escaladoSUDS",
+          "nombre": "Escalado subjetivo simple de dificultad",
+          "texto": "La persona asigna un nivel aproximado de ansiedad anticipada a cada ítem de la jerarquía para ordenar tareas de menor a mayor dificultad, utilizando una escala sencilla como guía práctica sin convertirla en objetivo clínico en sí mismo. (Marks, 1978).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_seguridadEncubierta",
+          "nombre": "Detección de conductas de seguridad encubiertas",
+          "texto": "Se identifican maniobras sutiles que alivian ansiedad pero impiden aprendizaje (mirar constantemente la salida, llevar agua “por si acaso”, repetir frases tranquilizadoras), distinguiéndolas del afrontamiento genuino para poder retirarlas progresivamente. (Marks, 1978; Marks et al., 1975).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_registroInmediato",
+          "nombre": "Registro inmediato post-exposición",
+          "texto": "Tras completar la tarea, se anota brevemente qué se hizo, cuánto tiempo se permaneció y qué se aprendió, consolidando memoria de afrontamiento y detectando seguridad residual. (Marks, 1978).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_evitacionSutil",
+          "nombre": "Identificación temprana de evitación sutil",
+          "texto": "Se detectan microconductas como acortar recorrido, hacer tarea “a medias” o acelerar artificialmente, que preservan el patrón evitativo aunque formalmente parezca exposición. (Marks, 1978).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

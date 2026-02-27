@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-02-27T08:56:19.539Z",
-  "totalModelos": 126,
+  "updatedAt": "2026-02-27T09:18:24.558Z",
+  "totalModelos": 127,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -1623,6 +1623,57 @@
           "codigo": "m_sst_exposicion_interpersonal",
           "nombre": "Exposición interpersonal graduada dentro del SST",
           "texto": "Microintervención que integra práctica de habilidades con exposición gradual a situaciones sociales temidas, asegurando que el paciente no solo “aprende” la habilidad en frío, sino que la ejecuta bajo activación real, reduciendo evitación y consolidando tolerancia al malestar social.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "exposicion-en-vivo-marks-1975",
+      "modelLabel": "Exposición en vivo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Isaac M. Marks",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_exposicionVivo_marks_preparacionTarea",
+          "nombre": "Preparación práctica de una tarea de exposición en vivo",
+          "texto": "Antes de iniciar, la persona concreta la tarea (qué, dónde, cuándo, cuánto tiempo), anticipa obstáculos (ganas de escapar, vergüenza, pensamientos catastróficos) y decide de antemano reglas simples de permanencia (“no me voy antes de X minutos”, “no pido reaseguro”, “no hago comprobaciones”), eligiendo un nivel de dificultad que sea exigente pero realizable. Se pacta que el objetivo no es “estar tranquilo”, sino hacer la tarea completa sin evitación relevante, aceptando la activación como parte del proceso. (Marks, 1978).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exposicionVivo_marks_exposicionGuiada",
+          "nombre": "Exposición en vivo guiada con permanencia suficiente",
+          "texto": "La persona se expone directamente a la situación temida en el entorno real, permaneciendo el tiempo suficiente para impedir el patrón automático de huida y permitir aprendizaje por experiencia (no solo “asomarse y salir”). Durante la tarea se mantiene el foco en “quedarme y observar” en lugar de “controlar para no sentir”, y se refuerza la conducta de aproximación (entrar, permanecer, repetir) más que la reducción inmediata de ansiedad. El criterio clínico es la reducción de evitación y la ampliación de libertad conductual, con repetición planificada. (Marks, 1969; Marks, 1978).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exposicionVivo_marks_manejoPicos",
+          "nombre": "Manejo de picos de ansiedad durante exposición sin convertirlo en evitación",
+          "texto": "Cuando la activación sube mucho, se usan recursos de regulación mínimos y compatibles con exposición (orientación al entorno, respiración natural no hipercontrolada, rotulación simple “esto es ansiedad”, permiso para sentir) evitando que estas estrategias se conviertan en seguridad (p. ej., respirar compulsivamente para “bajar” a toda costa). El objetivo es ampliar tolerancia y sostener permanencia, no suprimir sensaciones; se prioriza que la persona descubra que puede atravesar la ola de activación sin escapar. (Marks, 1978; Marks, 1969).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_unMinutoMas",
+          "nombre": "Microdecisión de ‘un minuto más’",
+          "texto": "Cuando aparece el impulso intenso de escapar, se introduce la decisión breve de permanecer un minuto adicional, fragmentando la tarea en unidades manejables que sostienen la exposición sin abandono total. (Marks, 1978).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_orientacion",
+          "nombre": "Orientación al entorno inmediato",
+          "texto": "Se dirige la atención a elementos observables del contexto (colores, sonidos, disposición del espacio) como anclaje conductual que facilita permanencia en la situación real sin recurrir a neutralización. (Marks, 1978).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_permanenciaProlongada",
+          "nombre": "Exposición prolongada hasta descenso natural",
+          "texto": "Se mantiene la exposición el tiempo suficiente para observar fluctuación y eventual descenso espontáneo de la activación, favoreciendo aprendizaje experiencial de tolerancia. (Marks, 1969; Marks, 1978).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

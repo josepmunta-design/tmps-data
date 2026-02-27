@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-02-27T08:56:19.539Z",
-  "totalModelos": 78,
+  "updatedAt": "2026-02-27T09:18:24.558Z",
+  "totalModelos": 79,
   "modelos": [
     {
       "modelId": "taoismo-psicologia-puentes-1980",
@@ -788,6 +788,50 @@
           "codigo": "m_sst_prevencion_recaidas",
           "nombre": "Plan de prevención de recaídas (señales tempranas y plan de acción)",
           "texto": "Microintervención que identifica señales tempranas de retroceso (retirada, irritabilidad, evitación) y define acciones concretas de recuperación (repetir ejercicios, pedir feedback, reparar, bajar dificultad), evitando que un tropiezo se convierta en abandono del repertorio.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "exposicion-en-vivo-marks-1975",
+      "modelLabel": "Exposición en vivo",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Isaac M. Marks",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_exposicionVivo_marks_preparacionTarea",
+          "nombre": "Preparación práctica de una tarea de exposición en vivo",
+          "texto": "Antes de iniciar, la persona concreta la tarea (qué, dónde, cuándo, cuánto tiempo), anticipa obstáculos (ganas de escapar, vergüenza, pensamientos catastróficos) y decide de antemano reglas simples de permanencia (“no me voy antes de X minutos”, “no pido reaseguro”, “no hago comprobaciones”), eligiendo un nivel de dificultad que sea exigente pero realizable. Se pacta que el objetivo no es “estar tranquilo”, sino hacer la tarea completa sin evitación relevante, aceptando la activación como parte del proceso. (Marks, 1978).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_exposicionVivo_marks_generalizacion",
+          "nombre": "Variación contextual y generalización del aprendizaje",
+          "texto": "Una vez lograda la tarea en un contexto, se amplía deliberadamente a variaciones (diferentes horas, rutas, lugares, personas presentes, condiciones meteorológicas, niveles de cansancio) para evitar que el afrontamiento quede “encerrado” en un solo escenario seguro. La lógica es entrenar flexibilidad conductual y reducir generalización del miedo, llevando la mejora a los entornos donde la vida ocurre, no donde la tarea “sale mejor”. (Marks, 1978).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_testPrediccion",
+          "nombre": "Comprobación conductual de predicción catastrófica",
+          "texto": "Tras la tarea, se contrasta explícitamente qué se anticipaba que ocurriría y qué ocurrió realmente, reforzando aprendizaje correctivo basado en experiencia directa más que en argumentación verbal. (Marks et al., 1975).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_variacion",
+          "nombre": "Variación contextual mínima",
+          "texto": "Una vez lograda una tarea, se introduce una pequeña variación (hora distinta, ligera mayor duración) para ampliar generalización sin desbordar la jerarquía. (Marks, 1978).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_exposicionVivo_marks_planEntreSesiones",
+          "nombre": "Planificación anticipada de práctica entre sesiones",
+          "texto": "Antes de cerrar sesión, se fija fecha, lugar y condiciones concretas de la siguiente autoexposición, reduciendo ambigüedad y aumentando probabilidad de ejecución real. (Marks, 1978).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
