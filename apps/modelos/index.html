@@ -480,6 +480,36 @@ animation: panelBreath 5s ease-in-out infinite;
       gap:6px;
     }
 
+    .school-swipe-out-left{
+      animation: schoolSwipeOutLeft .18s ease forwards;
+    }
+    .school-swipe-out-right{
+      animation: schoolSwipeOutRight .18s ease forwards;
+    }
+    .school-swipe-in-left{
+      animation: schoolSwipeInLeft .24s cubic-bezier(.22,.61,.36,1) both;
+    }
+    .school-swipe-in-right{
+      animation: schoolSwipeInRight .24s cubic-bezier(.22,.61,.36,1) both;
+    }
+
+    @keyframes schoolSwipeOutLeft{
+      from{ opacity:1; transform:translateX(0); }
+      to{ opacity:.0; transform:translateX(-26px); }
+    }
+    @keyframes schoolSwipeOutRight{
+      from{ opacity:1; transform:translateX(0); }
+      to{ opacity:.0; transform:translateX(26px); }
+    }
+    @keyframes schoolSwipeInLeft{
+      from{ opacity:.0; transform:translateX(26px); }
+      to{ opacity:1; transform:translateX(0); }
+    }
+    @keyframes schoolSwipeInRight{
+      from{ opacity:.0; transform:translateX(-26px); }
+      to{ opacity:1; transform:translateX(0); }
+    }
+
     /* Lista clicable (doc) */
   .mi-item{
   cursor: pointer;
@@ -5486,8 +5516,21 @@ function cycleSchoolBySwipe(direction){
     ? (idx + 1) % values.length
     : (idx - 1 + values.length) % values.length;
 
-  schoolSelect.value = values[nextIdx];
-  schoolSelect.dispatchEvent(new Event('change', { bubbles:true }));
+  if (nextIdx === idx) return;
+
+  const outCls = (direction === 'next') ? 'school-swipe-out-right' : 'school-swipe-out-left';
+  const targets = [modelsListEl, modelInfoEl, countLine].filter(Boolean);
+  targets.forEach(el => {
+    el.classList.remove('school-swipe-out-left','school-swipe-out-right','school-swipe-in-left','school-swipe-in-right');
+    el.classList.add(outCls);
+  });
+
+  window.__schoolSwipeDir = direction;
+
+  setTimeout(() => {
+    schoolSelect.value = values[nextIdx];
+    schoolSelect.dispatchEvent(new Event('change', { bubbles:true }));
+  }, 170);
 }
 
 function setupMobileSchoolSwipe(){
@@ -6935,6 +6978,8 @@ function scrollLeftPanelToStickyPoint(){
 
 
 schoolSelect.addEventListener('change', async () => {
+  const swipeDir = window.__schoolSwipeDir || null;
+  window.__schoolSwipeDir = null;
   currentSchool = schoolSelect.value;
   currentModelId = null;
   setMobileModelPanelLowered(false);
@@ -6952,6 +6997,17 @@ schoolSelect.addEventListener('change', async () => {
 
   // 3) Render de lista (con lo que haya: GH + local)
   renderModelsList();
+
+  if (swipeDir){
+    const inCls = (swipeDir === 'next') ? 'school-swipe-in-left' : 'school-swipe-in-right';
+    [modelsListEl, modelInfoEl, countLine].filter(Boolean).forEach(el => {
+      el.classList.remove('school-swipe-out-left','school-swipe-out-right','school-swipe-in-left','school-swipe-in-right');
+      el.classList.add(inCls);
+      setTimeout(() => {
+        el.classList.remove(inCls);
+      }, 260);
+    });
+  }
 
   // 4) Ajuste sticky sin baile (doble RAF para asegurar layout)
   requestAnimationFrame(() => {
