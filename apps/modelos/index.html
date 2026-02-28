@@ -358,7 +358,12 @@ animation: panelBreath 5s ease-in-out infinite;
     }
 
     .schoolSelectRow{
+      position:relative;
       display:block;
+    }
+
+    .schoolSelectSwipeText{
+      display:none;
     }
 
     .mobileTypeSlot{
@@ -1798,6 +1803,27 @@ html, body{ position: relative; }
 
   .schoolControl-main .schoolSelectRow select{
     width:100%;
+  }
+
+  .schoolControl-main .schoolSelectRow.hasSchoolSwipeText select{
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .schoolControl-main .schoolSelectRow.hasSchoolSwipeText .schoolSelectSwipeText{
+    position:absolute;
+    left:10px;
+    right:34px;
+    top:0;
+    bottom:0;
+    display:flex;
+    align-items:center;
+    pointer-events:none;
+    font-weight:700;
+    color: var(--text);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
   }
 
   .schoolControl-main .mobileTypeSlot .typeFilters{
@@ -5087,13 +5113,38 @@ async function ensureModelFull(m){
     const complexitySwitchEl = document.getElementById('complexitySwitch');
     const typeFiltersEl = document.getElementById('typeFilters');
     const mobileTypeSlotEl = document.getElementById('mobileTypeSlot');
+    const schoolSelectRowEl = schoolSelect?.closest('.schoolSelectRow') || null;
     const countFiltersRowEl = document.querySelector('.countFiltersRow');
     const modelsListEl = document.getElementById('modelsList');
     const countLine = document.getElementById('countLine');
     const modelInfoEl = document.getElementById('modelInfo');
+    const schoolSelectSwipeTextEl = (() => {
+      if (!schoolSelectRowEl || !schoolSelect) return null;
+      let el = schoolSelectRowEl.querySelector('.schoolSelectSwipeText');
+      if (!el){
+        el = document.createElement('span');
+        el.className = 'schoolSelectSwipeText';
+        el.setAttribute('aria-hidden', 'true');
+        schoolSelectRowEl.appendChild(el);
+      }
+      schoolSelectRowEl.classList.add('hasSchoolSwipeText');
+      return el;
+    })();
     let complexityLevel = 1;
     let showModelItems = true;
     let showMarcoItems = true;
+
+function selectedSchoolText(){
+  if (!schoolSelect) return '';
+  const idx = schoolSelect.selectedIndex;
+  const opt = (idx >= 0) ? schoolSelect.options[idx] : null;
+  return String(opt?.text ?? schoolSelect.value ?? '').trim();
+}
+
+function syncSchoolSelectSwipeText(){
+  if (!schoolSelectSwipeTextEl) return;
+  schoolSelectSwipeTextEl.textContent = selectedSchoolText() || '\u00A0';
+}
   function infoFadeOut(){
   if(!modelInfoEl) return;
   modelInfoEl.classList.add('is-loading');
@@ -5301,7 +5352,7 @@ btn.addEventListener('click', () => {
 
   });
 
-  function closeModelToListFromSwipe(direction){
+  function closeFullscreenFromSwipe(direction){
     if (!document.body.classList.contains('infoFull')) return;
     if (!currentModelId) return;
 
@@ -5312,14 +5363,7 @@ btn.addEventListener('click', () => {
     setTimeout(() => {
       document.body.classList.remove('infoFull');
       document.body.classList.remove('model-swipe-out-left', 'model-swipe-out-right');
-      if (window.__SMH) window.__SMH.hide();
       syncIcon();
-
-      currentModelId = null;
-      setMobileModelPanelLowered(false);
-      renderSchoolInfo(currentSchool);
-      renderModelsList();
-      resetRightPanelToTop();
     }, 220);
   }
 
@@ -5361,7 +5405,7 @@ if (!host) return;
 
     if (!swipe.lockX) return;
     if (Math.abs(swipe.dx) < 70) return;
-    closeModelToListFromSwipe(swipe.dx > 0 ? 'right' : 'left');
+    closeFullscreenFromSwipe(swipe.dx > 0 ? 'right' : 'left');
   };
   host.addEventListener('touchend', endSwipe, { passive:true });
   host.addEventListener('touchcancel', endSwipe, { passive:true });
@@ -5541,7 +5585,8 @@ function cycleSchoolBySwipe(direction){
   if (nextIdx === idx) return;
 
   const outCls = (direction === 'next') ? 'school-swipe-out-right' : 'school-swipe-out-left';
-  const targets = [schoolSelect, modelsListEl, modelInfoEl, countLine].filter(Boolean);
+  const schoolAnimTarget = schoolSelectSwipeTextEl || schoolSelect;
+  const targets = [schoolAnimTarget, modelsListEl, modelInfoEl, countLine].filter(Boolean);
   targets.forEach(el => {
     el.classList.remove('school-swipe-out-left','school-swipe-out-right','school-swipe-in-left','school-swipe-in-right');
     el.classList.add(outCls);
@@ -5798,6 +5843,7 @@ const schools = [...set].sort((a,b)=>{
 
   currentSchool = schools[0] ?? null;
   schoolSelect.value = currentSchool ?? '';
+  syncSchoolSelectSwipeText();
 }
 
 function normalizeImportanceValue(v){
@@ -6334,9 +6380,12 @@ const authorHTML =
     <div class="mp-meta">${pills || `<span class="mp-pill">—</span>`}</div>
 
     <div class="mp-desc">${escapeHtml(m.descripcion ?? '—')}</div>
+    <div class="mp-section">
+      <h4>Influencias</h4>
+      ${sectionListInner(m.influencias, {asList:false})}
+    </div>
 
     <div class="mp-acc">
-      ${acc('Influencias', nInflu, sectionListInner(m.influencias, {asList:false}), true)}
       ${nConcepts ? acc('Conceptos clave', nConcepts, sectionConceptsInner(m.conceptosClave), false) : ''}
       ${nIdeas ? acc('Ideas principales', nIdeas, sectionIdeasInner(m.ideasPrincipales), false) : ''}
 
@@ -6348,12 +6397,14 @@ ${nNei ? acc('Niveles', nNei, sectionNeimeyerInner(m.neimeyer), false) : ''}
 
      ${nMicro ? acc('Microintervenciones', nMicro, sectionProceduresInner(m.micros), false) : ''}
 
-${nRefs ? acc('Referencias', nRefs, sectionListInner(m.refs, {asList:true}), false) : ''}
-
 
       ${nAli ? acc('Alianza terapéutica', nAli, sectionAliInner(m.alianzaModelo), false) : ''}
 
       
+    </div>
+    <div class="mp-section">
+      <h4>Referencias</h4>
+      ${sectionListInner(m.refs, {asList:true})}
     </div>
   `;
       // ✅ Variables globales para todo el panel derecho (sticky incluido)
@@ -7012,6 +7063,7 @@ schoolSelect.addEventListener('change', async () => {
   const swipeDir = window.__schoolSwipeDir || null;
   window.__schoolSwipeDir = null;
   currentSchool = schoolSelect.value;
+  syncSchoolSelectSwipeText();
   currentModelId = null;
   setMobileModelPanelLowered(false);
 
@@ -7031,7 +7083,8 @@ schoolSelect.addEventListener('change', async () => {
 
   if (swipeDir){
     const inCls = (swipeDir === 'next') ? 'school-swipe-in-right' : 'school-swipe-in-left';
-    [schoolSelect, modelsListEl, modelInfoEl, countLine].filter(Boolean).forEach(el => {
+    const schoolAnimTarget = schoolSelectSwipeTextEl || schoolSelect;
+    [schoolAnimTarget, modelsListEl, modelInfoEl, countLine].filter(Boolean).forEach(el => {
       el.classList.remove('school-swipe-out-left','school-swipe-out-right','school-swipe-in-left','school-swipe-in-right');
       el.classList.add(inCls);
       setTimeout(() => {
