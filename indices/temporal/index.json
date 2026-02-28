@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-02-28T19:43:09.525Z",
+  "generatedAt": "2026-02-28T19:43:51.919Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 175,
-    "links": 174,
-    "unresolvedInfluences": 614
+    "links": 175,
+    "unresolvedInfluences": 613
   },
   "nodes": [
     {
@@ -1350,8 +1350,8 @@
       "authors": "Teodoro Ayllon; Nathan Azrin",
       "summary": "La economía de fichas es un sistema conductual aplicado basado en los principios del condicionamiento operante y los programas de refuerzo, en el que se utilizan reforzadores generalizados (fichas, puntos u otros símbolos) canjeables por bienes, privilegios o actividades. Desarrollada inicialmente en contextos institucionales, permite reforzar múltiples conductas de manera sistemática, establecer criterios claros de obtención y pérdida, y mantener el control sobre la frecuencia y el costo del refuerzo, facilitando la modificación conductual en entornos complejos.",
       "influencias": [
-        "Condicionamiento operante (Skinner)",
-        "Programas de refuerzo (Ferster & Skinner)",
+        "Condicionamiento operante",
+        "Programas de refuerzo",
         "Psicología institucional",
         "Empirismo objetivista / Positivismo lógico"
       ],
@@ -1514,7 +1514,7 @@
       "summary": "La Inundación o Terapia Implosiva es un procedimiento de exposición conductual desarrollado a finales de los años sesenta por Thomas Stampfl y James Levis, basado en los principios del condicionamiento clásico y la extinción del miedo. El modelo consiste en la exposición prolongada, intensa y no graduada a estímulos temidos —reales o imaginados— sin permitir conductas de evitación o escape, con el objetivo de producir una reducción rápida de la respuesta de ansiedad mediante habituación y extinción. A diferencia de los protocolos graduales posteriores, la implosión busca provocar una activación máxima desde el inicio, asumiendo que la ausencia de consecuencias aversivas conduce al colapso de la respuesta condicionada. Aunque mostró eficacia en algunos trastornos de ansiedad, su baja tolerabilidad, riesgo de abandono y consideraciones éticas favorecieron su sustitución progresiva por exposiciones graduadas y por la Exposición con Prevención de Respuesta (ERP).",
       "influencias": [
         "Condicionamiento clásico",
-        "Exposición",
+        "Exposición en vivo",
         "Psicoterapia conductual temprana",
         "Empirismo objetivista / Positivismo lógico"
       ],
@@ -5216,6 +5216,10 @@
       "target": "inundacion-implosion-1967"
     },
     {
+      "source": "exposicion-en-vivo-marks-1975",
+      "target": "inundacion-implosion-1967"
+    },
+    {
       "source": "condicionamiento-operante-skinner-1938",
       "target": "terapia-pareja-conductual-tradicional-1979"
     },
@@ -6164,10 +6168,6 @@
     {
       "target": "biofeedback-1969",
       "influence": "Empirismo objetivista / Positivismo lógico"
-    },
-    {
-      "target": "inundacion-implosion-1967",
-      "influence": "Exposición"
     },
     {
       "target": "inundacion-implosion-1967",
