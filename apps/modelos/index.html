@@ -6378,8 +6378,12 @@ const authorHTML =
 
     <div class="mp-desc">${escapeHtml(m.descripcion ?? '—')}</div>
 
+    <div class="mp-section">
+      <h4>Influencias</h4>
+      ${sectionListInner(m.influencias, {asList:false})}
+    </div>
+
     <div class="mp-acc">
-      ${acc('Influencias', nInflu, sectionListInner(m.influencias, {asList:false}), true)}
       ${nConcepts ? acc('Conceptos clave', nConcepts, sectionConceptsInner(m.conceptosClave), false) : ''}
       ${nIdeas ? acc('Ideas principales', nIdeas, sectionIdeasInner(m.ideasPrincipales), false) : ''}
 
@@ -6391,12 +6395,15 @@ ${nNei ? acc('Niveles', nNei, sectionNeimeyerInner(m.neimeyer), false) : ''}
 
      ${nMicro ? acc('Microintervenciones', nMicro, sectionProceduresInner(m.micros), false) : ''}
 
-${nRefs ? acc('Referencias', nRefs, sectionListInner(m.refs, {asList:true}), false) : ''}
-
 
       ${nAli ? acc('Alianza terapéutica', nAli, sectionAliInner(m.alianzaModelo), false) : ''}
 
       
+    </div>
+
+    <div class="mp-section">
+      <h4>Referencias</h4>
+      ${sectionListInner(m.refs, {asList:true})}
     </div>
   `;
       // ✅ Variables globales para todo el panel derecho (sticky incluido)
