@@ -7062,6 +7062,7 @@ schoolSelect.addEventListener('change', async () => {
   const swipeDir = window.__schoolSwipeDir || null;
   window.__schoolSwipeDir = null;
   currentSchool = schoolSelect.value;
+  const requestedSchool = currentSchool;
   currentModelId = null;
   setMobileModelPanelLowered(false);
 
@@ -7069,14 +7070,23 @@ schoolSelect.addEventListener('change', async () => {
   renderSchoolInfo(currentSchool);
   resetRightPanelToTop();
 
-  // 2) Intenta traer modelos de GitHub, pero NO bloquees si falla
+  // 2) Render inmediato con lo que ya haya en memoria (sin bloquear UI)
+  renderModelsList();
+
+  // 3) Intenta traer modelos de GitHub en segundo plano
   try{
     await ensureSchoolFromGitHub(currentSchool);
   }catch(err){
     console.warn('[ensureSchoolFromGitHub] fallo, sigo con lo local:', err);
   }
 
-  // 3) Render de lista (con lo que haya: GH + local)
+  // Si el usuario ya cambió otra vez de escuela, no repintes esta respuesta tardía
+  if (currentSchool !== requestedSchool) return;
+
+  // 4) Re-render con lo que haya llegado (GH + local)
+  if (!currentModelId){
+    renderSchoolInfo(currentSchool);
+  }
   renderModelsList();
 
   if (swipeDir){
@@ -7090,7 +7100,7 @@ schoolSelect.addEventListener('change', async () => {
     });
   }
 
-  // 4) Ajuste sticky sin baile (doble RAF para asegurar layout)
+  // 5) Ajuste sticky sin baile (doble RAF para asegurar layout)
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       scrollLeftPanelToStickyPoint();
