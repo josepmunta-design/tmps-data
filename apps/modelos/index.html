@@ -4082,6 +4082,81 @@ body.theme-light .mp-seqDesc{
   }
 }
 
+/* Browser móvil: ocultar barras de scroll visuales (manteniendo scroll) */
+@media (max-width: 980px), (hover: none) and (pointer: coarse) {
+  html, body,
+  .panel.left, .panel.right,
+  .landingCard, .landingOverlay,
+  .sheet, #modelSheet {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  .panel.left::-webkit-scrollbar,
+  .panel.right::-webkit-scrollbar,
+  .landingCard::-webkit-scrollbar,
+  .landingOverlay::-webkit-scrollbar,
+  .sheet::-webkit-scrollbar,
+  #modelSheet::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+    background: transparent !important;
+  }
+}
+
+/* APK / WebView app-like mode: ocultar barras de scroll visuales */
+@media (display-mode: standalone), (display-mode: fullscreen) {
+  html, body,
+  .panel.left, .panel.right,
+  .landingCard, .landingOverlay,
+  .sheet, #modelSheet {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  .panel.left::-webkit-scrollbar,
+  .panel.right::-webkit-scrollbar,
+  .landingCard::-webkit-scrollbar,
+  .landingOverlay::-webkit-scrollbar,
+  .sheet::-webkit-scrollbar,
+  #modelSheet::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+    background: transparent !important;
+  }
+}
+
+/* Fallback manual por clase si el wrapper APK no expone display-mode */
+body.apk-mode,
+body.apk-mode .panel.left,
+body.apk-mode .panel.right,
+body.apk-mode .landingCard,
+body.apk-mode .landingOverlay,
+body.apk-mode .sheet,
+body.apk-mode #modelSheet {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body.apk-mode::-webkit-scrollbar,
+body.apk-mode .panel.left::-webkit-scrollbar,
+body.apk-mode .panel.right::-webkit-scrollbar,
+body.apk-mode .landingCard::-webkit-scrollbar,
+body.apk-mode .landingOverlay::-webkit-scrollbar,
+body.apk-mode .sheet::-webkit-scrollbar,
+body.apk-mode #modelSheet::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+  background: transparent !important;
+}
+
   </style>
 
 </head>
