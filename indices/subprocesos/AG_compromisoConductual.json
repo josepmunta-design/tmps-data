@@ -1,6 +1,6 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-02-28T19:46:56.963Z",
+  "updatedAt": "2026-03-01T15:49:54.650Z",
   "totalModelos": 128,
   "modelos": [
     {
@@ -2728,36 +2728,6 @@
       ]
     },
     {
-      "modelId": "psicoterapia-constructivista-integrativa",
-      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
-      "modelGrupo": "Constructivista",
-      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
-      "modelYear": 2000,
-      "items": [
-        {
-          "codigo": "p_feixas_rolFijo",
-          "nombre": "Terapia de Rol Fijo (Fixed-Role Therapy) adaptada a objetivos identitarios",
-          "texto": "Procedimiento experiencial donde se diseña, junto al paciente, un rol alternativo coherente con su identidad pero más flexible (un “personaje” viable) y se ensaya en la vida cotidiana durante un periodo acotado; el énfasis está en vivir nuevas anticipaciones y recoger datos sobre qué cambia en emociones, relaciones y autoimagen, usando el ensayo como experimento de significado que amplía el self futuro posible sin exigir una conversión permanente inmediata. (Kelly, 1955; Feixas, 2004)",
-          "sub": "AG_compromisoConductual",
-          "tipo": "procedimiento"
-        },
-        {
-          "codigo": "p_feixas_experimentosSignificado",
-          "nombre": "Diseño de experimentos conductuales de significado",
-          "texto": "Procedimiento que propone acciones pequeñas y específicas para poner a prueba anticipaciones y significados nucleares (p. ej., “si digo que no, me rechazan”), recogiendo evidencia experiencial y revisando el sistema de constructos a partir del resultado; se prioriza que el experimento sea semánticamente relevante, graduado y seguro, y que el aprendizaje se formule en términos de nuevas interpretaciones viables, no solo como “éxito/fracaso” conductual. (Kelly, 1955; Feixas, 2004)",
-          "sub": "AG_compromisoConductual",
-          "tipo": "procedimiento"
-        },
-        {
-          "codigo": "m_feixas_microexperimentos",
-          "nombre": "Microexperimentos de anticipación",
-          "texto": "Diseño de acciones mínimas y reversibles para contrastar anticipaciones clave, recogiendo aprendizaje en términos de significado y no solo de resultado conductual. (Kelly, 1955; Feixas, 2004)",
-          "sub": "AG_compromisoConductual",
-          "tipo": "micro"
-        }
-      ]
-    },
-    {
       "modelId": "psicoterapia-constructivista-neimeyer",
       "modelLabel": "Neimeyer – Psicoterapia constructivista",
       "modelGrupo": "Constructivista",
@@ -2793,6 +2763,43 @@
           "texto": "Este procedimiento introduce pequeñas variaciones deliberadas en patrones habituales de pensamiento, emoción o conducta con el objetivo de perturbar suavemente la estabilidad rígida del sistema personal. Las micro-perturbaciones actúan como catalizadores de reorganización, aprovechando la sensibilidad de los sistemas complejos a cambios mínimos sin generar desbordamiento emocional. El terapeuta diseña estas intervenciones para que sean suficientemente desafiantes como para promover cambio, pero lo bastante seguras como para preservar la coherencia identitaria. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
           "sub": "AG_compromisoConductual",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_feixas_dilemas_resolucion",
+          "nombre": "Resolución de dilemas implicativos mediante construcción de alternativas (terceras posiciones)",
+          "texto": "Intervención focal: (1) validar función del dilema; (2) clarificar qué se protege (valor, pertenencia, dignidad); (3) construir terceras posiciones que desacoplen el cambio deseado de la implicación indeseable; (4) diseñar acciones graduadas para consolidarlas en contexto real.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_feixas_experimentos",
+          "nombre": "Experimentos de significado (pruebas conductuales con lectura constructivista)",
+          "texto": "Acciones pequeñas y seguras para contrastar anticipaciones clave (especialmente las del dilema). El aprendizaje se formula en términos de significado y posición del self (no solo ‘me salió bien/mal’).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_feixas_rol_fijo",
+          "nombre": "Rol fijo adaptado a objetivos identitarios y dilemas",
+          "texto": "Diseño de un rol alternativo viable (personaje) que permita ensayar una tercera posición del dilema en la vida cotidiana durante un tiempo acotado, recogiendo datos sobre cómo cambian emoción, autoimagen, relaciones y agencia.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_feixas_microexperimento",
+          "nombre": "Microexperimento de significado",
+          "texto": "Diseñar una acción mínima, segura y reversible para contrastar anticipaciones del dilema y recoger aprendizaje en términos de significado.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
         }
       ]
     },

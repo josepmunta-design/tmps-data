@@ -1,6 +1,6 @@
 {
   "subprocesoId": "I_continuidadBiografica",
-  "updatedAt": "2026-02-28T19:46:56.963Z",
+  "updatedAt": "2026-03-01T15:49:54.650Z",
   "totalModelos": 46,
   "modelos": [
     {
@@ -234,36 +234,6 @@
       ]
     },
     {
-      "modelId": "psicoterapia-constructivista-integrativa",
-      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
-      "modelGrupo": "Constructivista",
-      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
-      "modelYear": 2000,
-      "items": [
-        {
-          "codigo": "p_feixas_autocaracterizacion",
-          "nombre": "Auto-caracterización (Self-Characterization) y análisis narrativo del self",
-          "texto": "Procedimiento narrativo derivado del PCP donde el paciente escribe o relata una “auto-caracterización” en tercera persona, como si describiera a alguien conocido, permitiendo acceder a constructos implícitos, valores y tramas identitarias sin activar defensas directas; el terapeuta analiza junto al paciente el lenguaje, las metáforas y las oposiciones semánticas que organizan la identidad, conectándolo con dilemas y posibilidades de reautoría para ganar continuidad biográfica sin quedar atrapado en etiquetas rígidas. (Kelly, 1955; Feixas, 2004)",
-          "sub": "I_continuidadBiografica",
-          "tipo": "procedimiento"
-        },
-        {
-          "codigo": "p_feixas_reautoria",
-          "nombre": "Construcción alternativa de sentido y reautoría narrativa",
-          "texto": "Procedimiento de reconstrucción narrativa donde se revisan episodios clave, giros biográficos y escenas repetidas para generar interpretaciones alternativas más complejas y compasivas, integrando información previamente disociada o desvalorizada; se buscan nuevas tramas identitarias que mantengan continuidad biográfica pero abran posibilidades futuras, pasando de historias cerradas (“siempre he sido así”) a historias con agencia (“he aprendido esto, puedo elegir aquello”), cuidando que la nueva narrativa sea vivible y no un relato “bonito” sin soporte experiencial. (Neimeyer, 1993/2009; Feixas, 2004)",
-          "sub": "I_continuidadBiografica",
-          "tipo": "procedimiento"
-        },
-        {
-          "codigo": "m_feixas_cierreProvisional",
-          "nombre": "Cerrar provisionalmente significados",
-          "texto": "Pequeños cierres narrativos temporales que integran lo trabajado hasta el momento en una historia coherente, evitando desorganización del self y preparando el siguiente paso terapéutico. (Neimeyer, 2009; Feixas, 2004)",
-          "sub": "I_continuidadBiografica",
-          "tipo": "micro"
-        }
-      ]
-    },
-    {
       "modelId": "psicoterapia-constructivista-neimeyer",
       "modelLabel": "Neimeyer – Psicoterapia constructivista",
       "modelGrupo": "Constructivista",
@@ -318,6 +288,22 @@
           "codigo": "m_mahoney_registro_proceso",
           "nombre": "Registro reflexivo del proceso de cambio",
           "texto": "Microintervención orientada a que el paciente observe y registre de forma continuada fluctuaciones internas, momentos de reorganización, resistencias, insights y cambios sutiles en su experiencia. El objetivo no es analizar contenidos aislados, sino captar el proceso de cambio como fenómeno dinámico y no lineal, favoreciendo una conciencia progresiva de patrones emergentes y aumentando la reflexividad del sistema personal. Referencia: Mahoney, M. J. (1991). *Human Change Processes*.",
+          "sub": "I_continuidadBiografica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_feixas_cierre_provisional",
+          "nombre": "Cierre narrativo provisional",
+          "texto": "Integrar lo trabajado en una historia coherente (sin forzar conclusiones definitivas), para sostener continuidad y preparar el siguiente paso.",
           "sub": "I_continuidadBiografica",
           "tipo": "micro"
         }

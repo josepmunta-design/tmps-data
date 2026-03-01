@@ -1,6 +1,6 @@
 {
   "subprocesoId": "R_comunicacionEmocional",
-  "updatedAt": "2026-02-28T19:46:56.963Z",
+  "updatedAt": "2026-03-01T15:49:54.650Z",
   "totalModelos": 53,
   "modelos": [
     {
@@ -384,16 +384,23 @@
       ]
     },
     {
-      "modelId": "psicoterapia-constructivista-integrativa",
-      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
+      "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
       "modelGrupo": "Constructivista",
       "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
       "modelYear": 2000,
       "items": [
         {
-          "codigo": "m_feixas_ensayoVerbal",
-          "nombre": "Ensayo verbal de alternativas",
-          "texto": "Pequeños ensayos en sesión donde el paciente prueba a expresarse desde una posición distinta, observando reacciones internas y del terapeuta antes de llevarlo a contextos reales; reduce riesgo y aumenta sensación de control. (Feixas, 2004)",
+          "codigo": "p_feixas_reformulacion",
+          "nombre": "Reformulación constructivista y trabajo con etiquetación (del ‘ser’ a posiciones posibles)",
+          "texto": "Procedimiento conversacional para reducir la reificación de etiquetas (‘soy…’) y promover marcos más operativos (‘me pasa…’, ‘en este contexto…’, ‘cuando anticipo…’). Abre alternativas y reduce vergüenza o fatalismo identitario.",
+          "sub": "R_comunicacionEmocional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_feixas_ensayo_comunicacion",
+          "nombre": "Ensayo de comunicación desde la nueva posición",
+          "texto": "Probar en sesión una frase o petición desde la alternativa construida, observando reacciones internas antes de llevarla afuera.",
           "sub": "R_comunicacionEmocional",
           "tipo": "micro"
         }

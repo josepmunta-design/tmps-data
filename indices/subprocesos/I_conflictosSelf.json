@@ -1,6 +1,6 @@
 {
   "subprocesoId": "I_conflictosSelf",
-  "updatedAt": "2026-02-28T19:46:56.963Z",
+  "updatedAt": "2026-03-01T15:49:54.650Z",
   "totalModelos": 21,
   "modelos": [
     {
@@ -112,23 +112,37 @@
       ]
     },
     {
-      "modelId": "psicoterapia-constructivista-integrativa",
-      "modelLabel": "Psicoterapia constructivista integrativa (Feixas & Villegas)",
+      "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
       "modelGrupo": "Constructivista",
       "modelAutores": "Guillem Feixas; Manuel Villegas Besora",
       "modelYear": 2000,
       "items": [
         {
-          "codigo": "p_feixas_dilemasImplicativos",
-          "nombre": "Detección y trabajo de dilemas implicativos (Implicative Dilemmas)",
-          "texto": "Procedimiento específico para identificar dilemas del tipo “si cambio en X, entonces me convierto en Y (indeseable)” que hacen que el cambio terapéutico se viva como amenaza identitaria; se detectan mediante diálogo clínico y/o rejilla (p. ej., mejorar asertividad implica “ser egoísta”), se hace explícita la lógica protectora del dilema y se trabaja para generar terceras posiciones o definiciones más complejas que permitan el cambio sin pérdida de pertenencia, valor o coherencia del self. (Feixas, 2004)",
+          "codigo": "p_feixas_rejilla",
+          "nombre": "Rejilla de constructos para mapear significados y detectar dilemas implicativos",
+          "texto": "Procedimiento idiográfico que elabora un mapa del sistema de constructos (elementos: self actual/ideal, figuras relevantes, roles) y permite identificar polarización, discrepancias y conflictos, con especial atención a dilemas implicativos. Se usa clínicamente como espejo del significado, no como ‘test’.",
           "sub": "I_conflictosSelf",
           "tipo": "procedimiento"
         },
         {
-          "codigo": "m_feixas_dilemasVivo",
-          "nombre": "Detectar dilemas implicativos en vivo",
-          "texto": "Identificación inmediata de dilemas del tipo “si cambio en X me convierto en Y” cuando emergen durante la sesión, permitiendo detener escaladas defensivas y trabajar el conflicto identitario en el momento exacto en que se activa. (Feixas, 2004)",
+          "codigo": "p_feixas_dilemas_identificacion",
+          "nombre": "Identificación y formulación compartida de dilemas implicativos",
+          "texto": "Procedimiento para traducir el dilema a lenguaje claro: ‘si cambio X, me convierto en Y’. Se valida la lógica protectora (no se moraliza como resistencia) y se acuerda trabajarlo como objetivo clínico explícito.",
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_feixas_dilemas_resolucion",
+          "nombre": "Resolución de dilemas implicativos mediante construcción de alternativas (terceras posiciones)",
+          "texto": "Intervención focal: (1) validar función del dilema; (2) clarificar qué se protege (valor, pertenencia, dignidad); (3) construir terceras posiciones que desacoplen el cambio deseado de la implicación indeseable; (4) diseñar acciones graduadas para consolidarlas en contexto real.",
+          "sub": "I_conflictosSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_feixas_frase_dilema",
+          "nombre": "Extraer la frase bisagra del dilema",
+          "texto": "Localizar y devolver ‘si cambio X, entonces soy/me convierto en Y’, para hacer el conflicto pensable y trabajable.",
           "sub": "I_conflictosSelf",
           "tipo": "micro"
         }
