@@ -12,7 +12,7 @@
   "lon": 30.360909,
   "isFundacional": true,
 "isMarco": true,
-
+"frase": "Aprender es detectar qué anuncia qué.",
   "descripcion": "El Condicionamiento clásico, sistematizado por Iván P. Pávlov y presentado de forma canónica en 1927, describe el aprendizaje asociativo por el cual un estímulo inicialmente neutro (EC) adquiere la capacidad de evocar una respuesta (RC) tras su emparejamiento repetido con un estímulo incondicionado (EI) que ya provocaba esa respuesta de manera natural (RI). Este marco experimental, nacido en la fisiología y la neurofisiología, establece principios como adquisición, generalización, discriminación, extinción, recuperación espontánea e inhibición, mostrando que respuestas emocionales y corporales pueden condicionarse y descondicionarse en función de contingencias ambientales. Aunque no es una psicoterapia, es un fundamento crucial de múltiples intervenciones clínicas (especialmente exposición, prevención de evitación y aprendizaje inhibitorio) y de la comprensión funcional de fobias, ansiedad y respuestas condicionadas al trauma.",
 
   "influencias": [
@@ -32,7 +32,70 @@
     "RE_prevEvitacion",
     "AG_compromisoConductual"
   ],
+"conceptosClave": [
 
+  {
+    "titulo": "Estímulo incondicionado (EI)",
+    "descripcion": "Estímulo biológicamente significativo que provoca una respuesta sin aprendizaje previo (p. ej., comida, dolor, amenaza). Es el evento que ‘enseña’ al organismo qué anticipar. (Pavlov, 1927)."
+  },
+  {
+    "titulo": "Respuesta incondicionada (RI)",
+    "descripcion": "Respuesta refleja o automática provocada por el EI (salivación, sobresalto, activación). Sirve como referencia para identificar qué respuesta puede volverse condicionada. (Pavlov, 1927)."
+  },
+  {
+    "titulo": "Estímulo condicionado (EC)",
+    "descripcion": "Señal inicialmente neutra que adquiere capacidad evocadora tras emparejarse con el EI. Lo central es que el EC pasa a funcionar como predictor del EI. (Pavlov, 1927)."
+  },
+  {
+    "titulo": "Respuesta condicionada (RC)",
+    "descripcion": "Respuesta aprendida que aparece ante el EC una vez establecida la asociación. Suele parecer ‘involuntaria’ porque es anticipatoria y automática. (Pavlov, 1927)."
+  },
+  {
+    "titulo": "Adquisición",
+    "descripcion": "Proceso por el cual la RC aumenta con los emparejamientos EC–EI. Depende de número de ensayos, intensidad del EI y, especialmente, de que el EC prediga al EI. (Pavlov, 1927; Rescorla, 1968)."
+  },
+  {
+    "titulo": "Contigüidad",
+    "descripcion": "Cercanía temporal entre EC y EI. Facilita aprendizaje, pero por sí sola no lo explica todo: puede haber contigüidad sin aprendizaje fuerte si no hay predictividad real. (Pavlov, 1927)."
+  },
+  {
+    "titulo": "Contingencia (predictividad)",
+    "descripcion": "Grado en que el EI es más probable cuando aparece el EC que cuando no aparece. Es el motor moderno del condicionamiento: se aprende lo que predice, no lo que solo coincide. (Rescorla, 1968)."
+  },
+  {
+    "titulo": "Generalización",
+    "descripcion": "Tendencia de la RC a activarse ante estímulos parecidos al EC. Explica la expansión del miedo a contextos cada vez más amplios si no se interviene. (Pavlov, 1927)."
+  },
+  {
+    "titulo": "Discriminación (EC+ / EC−)",
+    "descripcion": "Aprendizaje de responder al EC que predice el EI (EC+) y no responder a señales que no lo predicen (EC−). Es clave para reducir falsas alarmas y entrenar seguridad. (Pavlov, 1927)."
+  },
+  {
+    "titulo": "Extinción",
+    "descripcion": "Disminución de la RC cuando el EC se presenta repetidamente sin EI. No es borrado: es aprendizaje nuevo que compite con el aprendizaje previo. (Pavlov, 1927; Bouton, 2004)."
+  },
+  {
+    "titulo": "Recuperación espontánea",
+    "descripcion": "Reaparición parcial de la RC tras el paso del tiempo después de la extinción. Indica que el aprendizaje previo sigue disponible. (Bouton, 2004)."
+  },
+  {
+    "titulo": "Renovación contextual",
+    "descripcion": "Retorno de la RC cuando el EC aparece en un contexto distinto al de la extinción. La extinción depende mucho del contexto y por eso hay recaídas fuera del ‘lugar de práctica’. (Bouton, 2004)."
+  },
+  {
+    "titulo": "Reinstalación (reinstatement)",
+    "descripcion": "Retorno de la RC tras una nueva exposición al EI (o a un evento aversivo similar), incluso si el EC había sido extinguido. Explica por qué un golpe vital puede reactivar respuestas antiguas. (Bouton, 2004)."
+  },
+  {
+    "titulo": "Condicionamiento de orden superior",
+    "descripcion": "Un estímulo nuevo puede condicionarse al emparejarse con un EC ya condicionado, sin contacto directo con el EI. Ayuda a entender redes de disparadores complejos. (Pavlov, 1927)."
+  },
+  {
+    "titulo": "Inhibición condicionada (señales de seguridad)",
+    "descripcion": "Aprendizaje de señales que predicen la ausencia del EI y reducen la RC. Es base para entender ‘seguridad’ aprendida y, clínicamente, el papel ambiguo de ciertas conductas de seguridad. (Pavlov, 1927; Bouton, 2004)."
+  }
+
+],
   "procedimientos": [
   {
     "nombre": "Definición y operacionalización de EI/RI y EC/RC",
