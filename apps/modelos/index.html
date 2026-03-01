@@ -358,12 +358,7 @@ animation: panelBreath 5s ease-in-out infinite;
     }
 
     .schoolSelectRow{
-      position:relative;
       display:block;
-    }
-
-    .schoolSelectSwipeText{
-      display:none;
     }
 
     .mobileTypeSlot{
@@ -788,6 +783,33 @@ opacity: .75;
       line-height:1.55;
       color:#e3ebf6;
       white-space: pre-wrap;
+    }
+    .modelPanel .mp-quote{
+      margin: 6px 0 10px;
+      padding: 8px 12px;
+      border-left: 3px solid color-mix(in srgb, var(--schoolColor, #b0882c) 72%, #ffffff 10%);
+      border-radius: 0 10px 10px 0;
+      background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0.06) 0%,
+        rgba(255,255,255,0.06) 45%,
+        rgba(255,255,255,0) 50%,
+        rgba(255,255,255,0) 100%
+      );
+      color: #f2f6fd;
+      font-size: 13px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+    .modelPanel .mp-quote::before{
+      content: "“";
+      opacity: .72;
+      margin-right: 2px;
+    }
+    .modelPanel .mp-quote::after{
+      content: "”";
+      opacity: .72;
+      margin-left: 2px;
     }
     /* En vista de ESCUELA: no respetes saltos del template literal */
 .modelPanel.school-view .mp-desc{
@@ -1803,27 +1825,6 @@ html, body{ position: relative; }
 
   .schoolControl-main .schoolSelectRow select{
     width:100%;
-  }
-
-  .schoolControl-main .schoolSelectRow.hasSchoolSwipeText select{
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .schoolControl-main .schoolSelectRow.hasSchoolSwipeText .schoolSelectSwipeText{
-    position:absolute;
-    left:10px;
-    right:34px;
-    top:0;
-    bottom:0;
-    display:flex;
-    align-items:center;
-    pointer-events:none;
-    font-weight:700;
-    color: var(--text);
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
   }
 
   .schoolControl-main .mobileTypeSlot .typeFilters{
@@ -3613,11 +3614,22 @@ body.theme-light .mi-title{
 body.theme-light .subtitle,
 body.theme-light .mi-sub,
 body.theme-light .modelPanel .mp-desc,
+body.theme-light .modelPanel .mp-quote,
 body.theme-light .modelPanel .mp-author,
 body.theme-light .modelPanel .mp-hero-text,
 body.theme-light .modelPanel .mp-hint,
 body.theme-light .school-eyebrow{
   color:#5f6a7c;
+}
+body.theme-light .modelPanel .mp-quote{
+  background: linear-gradient(
+    90deg,
+    rgba(120,153,208,0.12) 0%,
+    rgba(120,153,208,0.12) 45%,
+    rgba(120,153,208,0) 50%,
+    rgba(120,153,208,0) 100%
+  );
+  border-left-color: color-mix(in srgb, var(--schoolColor, #6f9be6) 68%, #ffffff 16%);
 }
 
 body.theme-light .t-eyebrow,
@@ -5113,38 +5125,13 @@ async function ensureModelFull(m){
     const complexitySwitchEl = document.getElementById('complexitySwitch');
     const typeFiltersEl = document.getElementById('typeFilters');
     const mobileTypeSlotEl = document.getElementById('mobileTypeSlot');
-    const schoolSelectRowEl = schoolSelect?.closest('.schoolSelectRow') || null;
     const countFiltersRowEl = document.querySelector('.countFiltersRow');
     const modelsListEl = document.getElementById('modelsList');
     const countLine = document.getElementById('countLine');
     const modelInfoEl = document.getElementById('modelInfo');
-    const schoolSelectSwipeTextEl = (() => {
-      if (!schoolSelectRowEl || !schoolSelect) return null;
-      let el = schoolSelectRowEl.querySelector('.schoolSelectSwipeText');
-      if (!el){
-        el = document.createElement('span');
-        el.className = 'schoolSelectSwipeText';
-        el.setAttribute('aria-hidden', 'true');
-        schoolSelectRowEl.appendChild(el);
-      }
-      schoolSelectRowEl.classList.add('hasSchoolSwipeText');
-      return el;
-    })();
     let complexityLevel = 1;
     let showModelItems = true;
     let showMarcoItems = true;
-
-function selectedSchoolText(){
-  if (!schoolSelect) return '';
-  const idx = schoolSelect.selectedIndex;
-  const opt = (idx >= 0) ? schoolSelect.options[idx] : null;
-  return String(opt?.text ?? schoolSelect.value ?? '').trim();
-}
-
-function syncSchoolSelectSwipeText(){
-  if (!schoolSelectSwipeTextEl) return;
-  schoolSelectSwipeTextEl.textContent = selectedSchoolText() || '\u00A0';
-}
   function infoFadeOut(){
   if(!modelInfoEl) return;
   modelInfoEl.classList.add('is-loading');
@@ -5352,7 +5339,7 @@ btn.addEventListener('click', () => {
 
   });
 
-  function closeFullscreenFromSwipe(direction){
+  function closeModelToListFromSwipe(direction){
     if (!document.body.classList.contains('infoFull')) return;
     if (!currentModelId) return;
 
@@ -5363,7 +5350,14 @@ btn.addEventListener('click', () => {
     setTimeout(() => {
       document.body.classList.remove('infoFull');
       document.body.classList.remove('model-swipe-out-left', 'model-swipe-out-right');
+      if (window.__SMH) window.__SMH.hide();
       syncIcon();
+
+      currentModelId = null;
+      setMobileModelPanelLowered(false);
+      renderSchoolInfo(currentSchool);
+      renderModelsList();
+      resetRightPanelToTop();
     }, 220);
   }
 
@@ -5405,7 +5399,7 @@ if (!host) return;
 
     if (!swipe.lockX) return;
     if (Math.abs(swipe.dx) < 70) return;
-    closeFullscreenFromSwipe(swipe.dx > 0 ? 'right' : 'left');
+    closeModelToListFromSwipe(swipe.dx > 0 ? 'right' : 'left');
   };
   host.addEventListener('touchend', endSwipe, { passive:true });
   host.addEventListener('touchcancel', endSwipe, { passive:true });
@@ -5585,8 +5579,7 @@ function cycleSchoolBySwipe(direction){
   if (nextIdx === idx) return;
 
   const outCls = (direction === 'next') ? 'school-swipe-out-right' : 'school-swipe-out-left';
-  const schoolAnimTarget = schoolSelectSwipeTextEl || schoolSelect;
-  const targets = [schoolAnimTarget, modelsListEl, modelInfoEl, countLine].filter(Boolean);
+  const targets = [schoolSelect, modelsListEl, modelInfoEl, countLine].filter(Boolean);
   targets.forEach(el => {
     el.classList.remove('school-swipe-out-left','school-swipe-out-right','school-swipe-in-left','school-swipe-in-right');
     el.classList.add(outCls);
@@ -5843,7 +5836,6 @@ const schools = [...set].sort((a,b)=>{
 
   currentSchool = schools[0] ?? null;
   schoolSelect.value = currentSchool ?? '';
-  syncSchoolSelectSwipeText();
 }
 
 function normalizeImportanceValue(v){
@@ -6308,6 +6300,9 @@ ${keys.length ? `
     m.universidad ? `<span class="mp-pill">${escapeHtml(m.universidad)}</span>` : '',
     (m.ciudad || m.pais) ? `<span class="mp-pill">${escapeHtml((m.ciudad ?? '') + (m.pais ? ' · ' + m.pais : ''))}</span>` : ''
   ].filter(Boolean).join('');
+  const quoteRaw = [m.frase, m.fraseCorta, m.cita, m.quote]
+    .map(v => (typeof v === 'string' ? v.trim() : ''))
+    .find(Boolean) || '';
 
   // contadores
 const nInflu = Array.isArray(m.influencias) ? m.influencias.filter(Boolean).length : 0;
@@ -6379,13 +6374,12 @@ const authorHTML =
 
     <div class="mp-meta">${pills || `<span class="mp-pill">—</span>`}</div>
 
+    ${quoteRaw ? `<blockquote class="mp-quote"><strong>${escapeHtml(quoteRaw)}</strong></blockquote>` : ''}
+
     <div class="mp-desc">${escapeHtml(m.descripcion ?? '—')}</div>
-    <div class="mp-section">
-      <h4>Influencias</h4>
-      ${sectionListInner(m.influencias, {asList:false})}
-    </div>
 
     <div class="mp-acc">
+      ${acc('Influencias', nInflu, sectionListInner(m.influencias, {asList:false}), true)}
       ${nConcepts ? acc('Conceptos clave', nConcepts, sectionConceptsInner(m.conceptosClave), false) : ''}
       ${nIdeas ? acc('Ideas principales', nIdeas, sectionIdeasInner(m.ideasPrincipales), false) : ''}
 
@@ -6397,14 +6391,12 @@ ${nNei ? acc('Niveles', nNei, sectionNeimeyerInner(m.neimeyer), false) : ''}
 
      ${nMicro ? acc('Microintervenciones', nMicro, sectionProceduresInner(m.micros), false) : ''}
 
+${nRefs ? acc('Referencias', nRefs, sectionListInner(m.refs, {asList:true}), false) : ''}
+
 
       ${nAli ? acc('Alianza terapéutica', nAli, sectionAliInner(m.alianzaModelo), false) : ''}
 
       
-    </div>
-    <div class="mp-section">
-      <h4>Referencias</h4>
-      ${sectionListInner(m.refs, {asList:true})}
     </div>
   `;
       // ✅ Variables globales para todo el panel derecho (sticky incluido)
@@ -7063,7 +7055,6 @@ schoolSelect.addEventListener('change', async () => {
   const swipeDir = window.__schoolSwipeDir || null;
   window.__schoolSwipeDir = null;
   currentSchool = schoolSelect.value;
-  syncSchoolSelectSwipeText();
   currentModelId = null;
   setMobileModelPanelLowered(false);
 
@@ -7083,8 +7074,7 @@ schoolSelect.addEventListener('change', async () => {
 
   if (swipeDir){
     const inCls = (swipeDir === 'next') ? 'school-swipe-in-right' : 'school-swipe-in-left';
-    const schoolAnimTarget = schoolSelectSwipeTextEl || schoolSelect;
-    [schoolAnimTarget, modelsListEl, modelInfoEl, countLine].filter(Boolean).forEach(el => {
+    [schoolSelect, modelsListEl, modelInfoEl, countLine].filter(Boolean).forEach(el => {
       el.classList.remove('school-swipe-out-left','school-swipe-out-right','school-swipe-in-left','school-swipe-in-right');
       el.classList.add(inCls);
       setTimeout(() => {
