@@ -821,10 +821,137 @@ opacity: .75;
       padding-top:12px;
       border-top:1px solid rgba(255,255,255,0.10);
     }
-.modelPanel .mp-section h4{
+    .modelPanel .mp-section h4{
   font-weight: 700;
   letter-spacing: .2px;
   opacity: .95;
+}
+
+.modelPanel .mp-section h3{
+  font-weight: 700;
+  letter-spacing: .2px;
+  opacity: .95;
+  margin: 0 0 10px 0;
+}
+
+.modelPanel .grafica-procesos{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.10),
+    0 8px 24px rgba(0,0,0,0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.modelPanel .fila-proceso{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  transition: border-color .2s ease, background .2s ease, transform .2s ease;
+}
+
+.modelPanel .fila-proceso:hover{
+  border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,.16));
+  background: color-mix(in srgb, var(--schoolColor, #D9AA3F) 10%, rgba(255,255,255,.03));
+  transform: translateY(-1px);
+}
+
+.modelPanel .label-proceso{
+  width: min(48%, 360px);
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.modelPanel .proceso-codigo{
+  flex: 0 0 auto;
+  min-width: 34px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--schoolColor, #D9AA3F) 44%, rgba(255,255,255,.22));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--schoolColor, #D9AA3F) 28%, rgba(255,255,255,.16)),
+      color-mix(in srgb, var(--schoolColor, #D9AA3F) 40%, rgba(0,0,0,.12)));
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--schoolColor, #D9AA3F) 16%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.22);
+  font-weight: 800;
+  letter-spacing: .35px;
+  color: #f2f6fd;
+  text-align: center;
+}
+
+.modelPanel .proceso-nombre{
+  min-width: 0;
+  font-weight: 650;
+  color: rgba(231,237,245,.92);
+}
+
+.modelPanel .barra-container{
+  flex: 0 1 440px;
+  width: 100%;
+  max-width: 440px;
+  height: 10px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.18));
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.25);
+}
+
+.modelPanel .barra{
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--schoolColor, #D9AA3F) 68%, #ffffff 8%),
+    color-mix(in srgb, var(--schoolColor, #D9AA3F) 92%, #1a2230 8%)
+  );
+  border-radius: 999px;
+  transition: width 0.45s cubic-bezier(.2,.8,.2,1);
+  box-shadow:
+    0 0 12px color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.35);
+}
+
+@media (max-width: 980px){
+  .modelPanel .fila-proceso{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .modelPanel .label-proceso{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .modelPanel .proceso-nombre{
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .modelPanel .barra-container{
+    max-width: none;
+    flex-basis: auto;
+  }
 }
 
     .mp-list{ margin:0; padding-left:18px; }
@@ -3810,6 +3937,50 @@ body.theme-light .mp-idea-body{
   color:#4f5b70;
 }
 
+body.theme-light .modelPanel .grafica-procesos{
+  background: linear-gradient(180deg, rgba(255,255,255,.97), rgba(242,248,255,.90));
+  border-color: rgba(118,129,153,.24);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.98),
+    0 10px 24px rgba(28,47,79,.10);
+}
+
+body.theme-light .modelPanel .fila-proceso{
+  background: rgba(255,255,255,.72);
+  border-color: rgba(118,129,153,.20);
+}
+
+body.theme-light .modelPanel .fila-proceso:hover{
+  border-color: color-mix(in srgb, var(--schoolColor,#5f8fd1) 38%, rgba(118,129,153,.22));
+  background: color-mix(in srgb, var(--schoolColor,#5f8fd1) 10%, rgba(255,255,255,.80));
+}
+
+body.theme-light .modelPanel .label-proceso{
+  color: color-mix(in srgb, var(--schoolColor,#4c73a9) 78%, #1c2b42);
+}
+
+body.theme-light .modelPanel .proceso-codigo{
+  color: #1d2e4b;
+  border-color: color-mix(in srgb, var(--schoolColor,#5f8fd1) 52%, rgba(118,129,153,.24));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
+      color-mix(in srgb, var(--schoolColor,#5f8fd1) 32%, rgba(255,255,255,.84)));
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--schoolColor,#5f8fd1) 14%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+body.theme-light .modelPanel .proceso-nombre{
+  color: #40516b;
+}
+
+body.theme-light .modelPanel .barra-container{
+  background: linear-gradient(180deg, rgba(118,129,153,.22), rgba(118,129,153,.15));
+  border-color: rgba(118,129,153,.20);
+  box-shadow: inset 0 1px 1px rgba(44,63,93,.15);
+}
+
 body.theme-light .mp-mapbg{
   opacity:.62;
 }
@@ -6458,6 +6629,8 @@ const authorHTML =
       ${sectionListInner(m.influencias, {asList:false})}
     </div>
 
+    ${m.graficaProcesos ? renderGraficaProcesos(m.graficaProcesos) : ''}
+
     <div class="mp-acc">
       ${nConcepts ? acc('Conceptos clave', nConcepts, sectionConceptsInner(m.conceptosClave), false) : ''}
       ${nIdeas ? acc('Ideas principales', nIdeas, sectionIdeasInner(m.ideasPrincipales), false) : ''}
@@ -6606,6 +6779,51 @@ function sectionListInner(arr, opts={}){
     return `<ul class="mp-list">${a.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ul>`;
   }
   return `<div>${a.map(x => escapeHtml(x)).join(', ')}</div>`;
+}
+
+function renderGraficaProcesos(procesos){
+  if(!procesos || typeof procesos !== 'object') return '';
+
+  const orden = ['RF', 'RE', 'AP', 'RI', 'N', 'I', 'AG', 'R'];
+  const labels = {
+    RF: 'Regulación fisiológica / corporal',
+    RE: 'Regulación emocional',
+    AP: 'Acceso y procesamiento emocional',
+    RI: 'Relación interna',
+    N: 'Significado / narrativa / regulación cognitiva',
+    I: 'Identidad / Self',
+    AG: 'Agencia y acción',
+    R: 'Relacional / interpersonal'
+  };
+
+  const filas = orden.map((code) => {
+    const raw = Number(procesos?.[code]);
+    const valor = Number.isFinite(raw) ? Math.max(0, Math.min(3, raw)) : 0;
+    const width = (valor / 3) * 100;
+    const widthSafe = Math.max(0, Math.min(100, width));
+    const tip = labels[code] || code;
+
+    return `
+      <div class="fila-proceso">
+        <div class="label-proceso" title="${escapeHtml(tip)}">
+          <span class="proceso-codigo">${code}</span>
+          <span class="proceso-nombre">${escapeHtml(tip)}</span>
+        </div>
+        <div class="barra-container" title="${escapeHtml(tip)}">
+          <div class="barra" style="width: ${widthSafe}%"></div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  return `
+    <div class="mp-section">
+      <h3>Procesos</h3>
+      <div class="grafica-procesos">
+        ${filas}
+      </div>
+    </div>
+  `;
 }
 
 function sectionConceptsInner(arr){
