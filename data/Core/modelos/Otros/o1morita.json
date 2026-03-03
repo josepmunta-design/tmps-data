@@ -9,7 +9,7 @@
   "pais": "Japón",
   "lat": 35.658034,
   "lon": 139.745535,
-
+"frase": "Vivir conforme a la realidad y a las responsabilidades, permitiendo que la emoción fluctúe sin interferir en la acción, restaura de forma natural el equilibrio psicológico.",
   "influencias": [
     "Budismo zen",
     "Psiquiatría japonesa temprana",
@@ -72,6 +72,40 @@
     "ALI_monitorizacion": "La monitorización se centra en el nivel de implicación en las tareas, la capacidad de sostener la acción pese a la fluctuación emocional y la reducción de conductas de evitación. El progreso no se evalúa por el descenso inmediato del malestar, sino por la ampliación del repertorio conductual y la disminución de la preocupación por los síntomas.",
     "ALI_contexto": "La Terapia Morita es altamente sensible al contexto vital del paciente: trabajo, familia, deberes sociales y circunstancias reales. El terapeuta adapta las tareas para que encajen con la vida cotidiana concreta, evitando intervenciones abstractas o descontextualizadas. La realidad externa es el principal anclaje del proceso terapéutico."
   },
+  "conceptosClave": [
+  {
+    "titulo": "Shinkeishitsu (temperamento nervioso)",
+    "descripcion": "Concepto central en Morita para describir una predisposición a alta sensibilidad, autoconciencia, perfeccionismo y preocupación por el propio estado interno; no se trata como “defecto”, sino como una configuración que se vuelve patológica cuando la atención queda atrapada en monitorización ansiosa y en intentos repetidos de controlar la emoción. (Morita, 1928; LeVine, 1993)."
+  },
+  {
+    "titulo": "Ciclo de preocupación (autoobservación → lucha/evitación → restricción → aumento del malestar)",
+    "descripcion": "Formulación operativa del mantenimiento: cuanto más se vigila el síntoma y se intenta eliminarlo, más se intensifica la experiencia y más se restringe la vida; la terapia interrumpe el ciclo reduciendo la interferencia voluntarista sobre la emoción y reorientando a la acción concreta. (Morita, 1930; LeVine, 1993)."
+  },
+  {
+    "titulo": "Aceptación pasiva (arugamama)",
+    "descripcion": "Actitud de permitir que pensamientos y emociones surjan y desaparezcan sin intervenir sobre ellos, sin convertir la aceptación en una nueva tarea de control; es una postura experiencial, no una explicación, y funciona como base para recuperar autorregulación espontánea. (Morita, 1928/1930; LeVine, 1993)."
+  },
+  {
+    "titulo": "Acción activa orientada a la realidad",
+    "descripcion": "En Morita la conducta se organiza por lo que la realidad exige (tareas, responsabilidades, hábitos) y no por el estado emocional; el criterio de progreso es hacer lo adecuado con emoción presente, evitando que el síntoma gobierne decisiones. (Morita, 1928; LeVine, 1993)."
+  },
+  {
+    "titulo": "Fases clásicas (reposo → actividad ligera → actividad intensa → reintegración)",
+    "descripcion": "Programa progresivo que combina retirada de la lucha y aumento gradual de actividad funcional; no se usa para “sentirse mejor”, sino para entrenar por práctica repetida el desplazamiento de foco desde el síntoma hacia la vida. (Morita, 1928; LeVine, 1993)."
+  },
+  {
+    "titulo": "Diario Morita (registro no interpretativo)",
+    "descripcion": "Registro breve centrado en hechos y experiencia inmediata, evitando análisis; sirve para detectar rumiación, reforzar orientación a tareas y entrenar observación pasiva sin convertirla en autoevaluación obsesiva. (Morita, 1928; LeVine, 1993; Ishiyama, 2003)."
+  },
+  {
+    "titulo": "No reforzar el síntoma",
+    "descripcion": "Principio técnico: se limita la búsqueda de tranquilidad y el hablar del síntoma como centro para no alimentar el bucle atencional; el terapeuta redirige con sobriedad a la acción adecuada del momento, manteniendo el método como contención. (Morita, 1930; LeVine, 1993)."
+  },
+  {
+    "titulo": "Disciplina cotidiana (ritmo de vida)",
+    "descripcion": "Higiene conductual práctica (horarios, rutinas, responsabilidades) que consolida el cambio de forma implícita: reduce oportunidades de rumiación y estabiliza identidad funcional sin depender de fluctuaciones emocionales. (Morita, 1928; LeVine, 1993)."
+  }
+],
 "procedimientos": [
   {
     "nombre": "Psychoeducación Morita y formulación del “ciclo de preocupación”",
@@ -152,7 +186,7 @@
   {
     "nombre": "Normalización del malestar como fenómeno natural",
     "codigo": "m_morita_normalizacion",
-    "procesos": ["RE_desdramatizacion"],
+    "procesos": ["RE_reapreciacion", "RE_aceptacion"],
     "texto": "Microintervención verbal breve en la que el terapeuta recuerda de forma explícita que la ansiedad, el miedo o la inquietud son respuestas naturales del organismo y no señales de peligro ni indicadores de enfermedad. El objetivo no es tranquilizar ni eliminar la emoción, sino reducir la dramatización secundaria y la interpretación catastrófica del malestar, debilitando así la lucha añadida contra la experiencia interna. Esta normalización prepara el terreno para la aceptación pasiva y reduce la necesidad compulsiva de control emocional (Morita, 1930; LeVine, 1993)."
   },
   {
@@ -164,19 +198,19 @@
   {
     "nombre": "No refuerzo del síntoma como eje conversacional",
     "codigo": "m_morita_noRefuerzo",
-    "procesos": ["RI_desidentificacion"],
+    "procesos": ["RI_mindfulnessSelf", "N_metacognicion"],
     "texto": "Microajuste clínico que consiste en evitar preguntas, comentarios o validaciones centradas en el síntoma, impidiendo que la ansiedad o el malestar se conviertan en el organizador principal del diálogo terapéutico y del self del paciente. Al no reforzar narrativamente el síntoma, el terapeuta facilita una desidentificación progresiva entre la identidad personal y el estado emocional, reduciendo la centralidad del sufrimiento sin necesidad de confrontarlo explícitamente (Morita, 1930; Ishiyama, 2003)."
   },
   {
     "nombre": "Observación silenciosa de la experiencia interna",
     "codigo": "m_morita_observacion",
-    "procesos": ["RF_conciencia"],
+   "procesos": ["RI_mindfulnessSelf", "RF_intero"],
     "texto": "Intervención mínima que invita al paciente a observar pensamientos, emociones y sensaciones corporales tal como aparecen, sin describirlas, analizarlas ni comentarlas en exceso. Esta observación silenciosa no busca insight ni regulación activa, sino permitir que la experiencia siga su curso natural. Contribuye a debilitar la fusión entre emoción y reacción, y entrena una conciencia pasiva compatible con la acción funcional posterior (Morita, 1928; Morita, 1930)."
   },
   {
     "nombre": "Acción funcional con emoción presente",
     "codigo": "m_morita_accion",
-    "procesos": ["AG_exposicionNatural"],
+    "procesos": ["RF_expo", "AG_compromisoConductual"],
     "texto": "Microintervención experiencial que consiste en invitar al paciente a realizar una acción relevante mientras la ansiedad, el miedo u otra emoción desagradable están activas. No se presenta como exposición terapéutica explícita, sino como cumplimiento natural de una tarea necesaria. A través de esta experiencia repetida, el paciente aprende implícitamente que el malestar no impide vivir ni actuar, lo que reduce la evitación y consolida tolerancia emocional sin convertir la emoción en objeto de trabajo directo (LeVine, 1993; Ishiyama, 2003)."
   }
 ],
@@ -218,5 +252,6 @@
     "Ishiyama, F. I. (2003). Morita Therapy: A qualitative analysis. Journal of Counseling Psychology."
   ]
 }
+
 
 
