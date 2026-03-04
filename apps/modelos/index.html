@@ -836,7 +836,7 @@ opacity: .75;
 
 .modelPanel .procesos-grid{
   display:grid;
-  grid-template-columns:minmax(0,1fr) 290px;
+  grid-template-columns:minmax(340px, 38%) minmax(0, 1fr);
   gap:14px;
   align-items:start;
 }
@@ -1001,7 +1001,43 @@ opacity: .75;
   gap:6px;
 }
 
+.modelPanel .dim-group{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.modelPanel .dim-group + .dim-group{
+  margin-top:8px;
+  padding-top:10px;
+  border-top:1px solid rgba(255,255,255,.10);
+}
+
+.modelPanel .dim-groupTitle{
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.34px;
+  text-transform:uppercase;
+  color:rgba(231,237,245,.72);
+}
+
+.modelPanel .dim-reference{
+  margin-top:12px;
+  padding-top:10px;
+  border-top:1px solid rgba(255,255,255,.10);
+  font-size:11px;
+  line-height:1.45;
+  color:rgba(231,237,245,.76);
+}
+
+.modelPanel .dim-item{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
 .modelPanel .dim-row{
+  width:100%;
   display:grid;
   grid-template-columns:auto 1fr auto;
   gap:8px;
@@ -1013,6 +1049,17 @@ opacity: .75;
   border:1px solid rgba(255,255,255,.06);
   color: rgba(231,237,245,.9);
   transition: border-color .2s ease, background .2s ease, color .2s ease, opacity .2s ease;
+  appearance:none;
+  -webkit-appearance:none;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.25;
+  text-align:left;
+  cursor:pointer;
+}
+
+.modelPanel .dim-row.no-justification{
+  cursor:default;
 }
 
 .modelPanel .dim-card.has-hover .dim-row{
@@ -1024,6 +1071,35 @@ opacity: .75;
   border-color: color-mix(in srgb, var(--dot, var(--schoolColor, #D9AA3F)) 48%, rgba(255,255,255,.18));
   background: color-mix(in srgb, var(--dot, var(--schoolColor, #D9AA3F)) 16%, rgba(255,255,255,.03));
   color: #ffffff;
+}
+
+.modelPanel .dim-item.is-open .dim-row{
+  border-color: color-mix(in srgb, var(--dot, var(--schoolColor, #D9AA3F)) 52%, rgba(255,255,255,.20));
+  background: color-mix(in srgb, var(--dot, var(--schoolColor, #D9AA3F)) 14%, rgba(255,255,255,.04));
+  color:#fff;
+  opacity:1;
+}
+
+.modelPanel .dim-detail{
+  margin: -2px 0 2px 22px;
+  padding: 9px 11px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--dot, var(--schoolColor, #D9AA3F)) 34%, rgba(255,255,255,.12));
+  background: color-mix(in srgb, var(--dot, var(--schoolColor, #D9AA3F)) 10%, rgba(8,12,18,.45));
+  color: rgba(231,237,245,.92);
+  font-size: 12px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.modelPanel .dim-detail[hidden]{
+  display:none !important;
+}
+
+.modelPanel .dim-segment.is-linked-open{
+  opacity:1;
+  filter: brightness(1.08) saturate(1.12)
+    drop-shadow(0 0 8px color-mix(in srgb, var(--segmentColor, #D9AA3F) 42%, transparent));
 }
 
 .modelPanel .dim-dot{
@@ -1054,6 +1130,7 @@ opacity: .75;
 }
 
 .modelPanel .fila-proceso{
+  width:100%;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1062,12 +1139,26 @@ opacity: .75;
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.02);
   transition: border-color .2s ease, background .2s ease, transform .2s ease;
+  appearance:none;
+  -webkit-appearance:none;
+  font: inherit;
+  text-align:left;
+  cursor:pointer;
 }
 
 .modelPanel .fila-proceso:hover{
   border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,.16));
   background: color-mix(in srgb, var(--schoolColor, #D9AA3F) 10%, rgba(255,255,255,.03));
   transform: translateY(-1px);
+}
+
+.modelPanel .fila-proceso.no-justification{
+  cursor:default;
+}
+
+.modelPanel .proceso-item.is-open .fila-proceso{
+  border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 52%, rgba(255,255,255,.20));
+  background: color-mix(in srgb, var(--schoolColor, #D9AA3F) 14%, rgba(255,255,255,.04));
 }
 
 .modelPanel .label-proceso{
@@ -1131,15 +1222,59 @@ opacity: .75;
     inset 0 1px 0 rgba(255,255,255,.35);
 }
 
+.modelPanel .proceso-detail{
+  margin: 6px 0 2px 44px;
+  padding: 9px 11px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,.12));
+  background: color-mix(in srgb, var(--schoolColor, #D9AA3F) 10%, rgba(8,12,18,.45));
+  color: rgba(231,237,245,.92);
+  font-size: 12px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.modelPanel .proceso-detail[hidden]{
+  display:none !important;
+}
+
 @media (max-width: 980px){
+  .modelPanel{
+    overflow-x: clip;
+  }
+
   .modelPanel .procesos-grid{
     grid-template-columns:1fr;
+  }
+
+  .modelPanel .procesos-grid > *{
+    min-width:0;
+    width:100%;
+    max-width:100%;
+  }
+
+  .modelPanel .grafica-procesos,
+  .modelPanel .dim-col,
+  .modelPanel .dim-colBody,
+  .modelPanel .dim-card,
+  .modelPanel .proceso-item,
+  .modelPanel .fila-proceso,
+  .modelPanel .proceso-detail,
+  .modelPanel .dim-list,
+  .modelPanel .dim-row{
+    min-width:0;
+    max-width:100%;
   }
 
   .modelPanel .fila-proceso{
     flex-direction: column;
     align-items: stretch;
     gap: 6px;
+  }
+
+  .modelPanel .proceso-detail{
+    margin-left: 0;
+    margin-top: 6px;
   }
 
   .modelPanel .label-proceso{
@@ -1163,6 +1298,46 @@ opacity: .75;
   .modelPanel .dim-pieWrap{
     width: 144px;
     height: 144px;
+  }
+
+  /* El flujo circular desborda en pantallas estrechas: degradamos a layout lineal */
+  .mp-flow.mp-flow-circ{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    padding-left:40px;
+    padding-right:14px;
+  }
+
+  .mp-flow.mp-flow-circ::after{
+    display:none;
+  }
+
+  .mp-flow.mp-flow-circ .mp-flowItem{
+    position:relative;
+    left:auto;
+    top:auto;
+    transform:none;
+    display:grid;
+    grid-template-columns:28px 1fr;
+    column-gap:14px;
+    align-items:center;
+  }
+
+  .mp-flow.mp-flow-circ .mp-flowItem::after{
+    display:block;
+  }
+
+  .mp-flow.mp-flow-circ .mp-flowDot{
+    margin: 0 0 0 calc((var(--col) - var(--dot)) / 2);
+  }
+
+  .mp-flow.mp-flow-circ .mp-flowBox{
+    width:auto;
+    max-width:100%;
+    text-align:left;
   }
 }
 
@@ -4168,6 +4343,11 @@ body.theme-light .modelPanel .fila-proceso:hover{
   background: color-mix(in srgb, var(--schoolColor,#5f8fd1) 10%, rgba(255,255,255,.80));
 }
 
+body.theme-light .modelPanel .proceso-item.is-open .fila-proceso{
+  border-color: color-mix(in srgb, var(--schoolColor,#5f8fd1) 44%, rgba(118,129,153,.24));
+  background: color-mix(in srgb, var(--schoolColor,#5f8fd1) 12%, rgba(255,255,255,.84));
+}
+
 body.theme-light .modelPanel .label-proceso{
   color: color-mix(in srgb, var(--schoolColor,#4c73a9) 78%, #1c2b42);
 }
@@ -4194,6 +4374,12 @@ body.theme-light .modelPanel .barra-container{
   box-shadow: inset 0 1px 1px rgba(44,63,93,.15);
 }
 
+body.theme-light .modelPanel .proceso-detail{
+  color:#2d3b52;
+  border-color: color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(118,129,153,.20));
+  background: color-mix(in srgb, var(--schoolColor,#5f8fd1) 10%, rgba(255,255,255,.88));
+}
+
 body.theme-light .modelPanel .dim-title{
   color:#3f4f67;
 }
@@ -4216,6 +4402,15 @@ body.theme-light .modelPanel .dim-expandBtn{
 
 body.theme-light .modelPanel .dim-val{
   color:#1f2d44;
+}
+
+body.theme-light .modelPanel .dim-groupTitle{
+  color:#52627b;
+}
+
+body.theme-light .modelPanel .dim-reference{
+  color:#44556f;
+  border-top-color: rgba(118,129,153,.24);
 }
 
 
@@ -6986,6 +7181,7 @@ if (!fotoUrl){
 }
 
 initDimHoverSync(modelInfoEl);
+initProcessDetailSync(modelInfoEl);
 initProcesosHeightSync(modelInfoEl);
 
       // === Mini map de fondo (lazy: no bloquea la ficha en móvil) ===
@@ -7023,48 +7219,128 @@ function sectionListInner(arr, opts={}){
 }
 
 const CHANGE_DIMS = [
-  { id:'cognitivo',     label:'Cognitivo' },
-  { id:'emocional',     label:'Emocional' },
-  { id:'conductual',    label:'Conductual' },
-  { id:'experiencial',  label:'Experiencial' },
-  { id:'relacional',    label:'Relacional' },
-  { id:'narrativo',     label:'Narrativo' },
-  { id:'atencional',    label:'Atencional' },
-  { id:'motivacional',  label:'Motivacional' },
-  { id:'fisiologico',   label:'Fisiológico' },
-  { id:'sistemico',     label:'Sistémico' }
+  { id:'cognicion',           label:'1. Cognición',            keys:['cognicion','cognitivo'], group:'psychological' },
+  { id:'afecto',              label:'2. Afecto',               keys:['afecto','emocional','experiencial'], group:'psychological' },
+  { id:'atencion',            label:'3. Atención',             keys:['atencion','atencional'], group:'psychological' },
+  { id:'self',                label:'4. Self',                 keys:['self','identidad','ri'], group:'psychological' },
+  { id:'motivacion',          label:'5. Motivación',           keys:['motivacion','motivacional'], group:'psychological' },
+  { id:'conducta_manifiesta', label:'6. Conducta manifiesta',  keys:['conducta_manifiesta','conductual','agencia'], group:'psychological' },
+  { id:'biofisiologico',      label:'7. Biofisiológico',       keys:['biofisiologico','fisiologico','rf'], group:'contextual' },
+  { id:'sociocultural',       label:'8. Sociocultural',        keys:['sociocultural','sistemico','relacional'], group:'contextual' }
 ];
 
 const CHANGE_DIM_COLORS_BY_ID = {
-  cognitivo:    '#E15759', // Cognitivo (escuela)
-  conductual:   '#d69640', // Conductismo (escuela)
-  sistemico:    '#F1CE63', // Sistémico (escuela)
-  relacional:   '#76B7B2', // cercano a Humanista
-  narrativo:    '#B07AA1', // cercano a Constructivista
-  motivacional: '#FF9DA7', // cercano a Integrativo
-  atencional:   '#4E79A7', // cercano a Psicoanálisis
-  emocional:    '#F26B7A',
-  experiencial: '#69C5C2',
-  fisiologico:  '#88A6C6'
+  cognicion:           '#E15759',
+  afecto:              '#F26B7A',
+  atencion:            '#4E79A7',
+  self:                '#B07AA1',
+  motivacion:          '#FF9DA7',
+  conducta_manifiesta: '#d69640',
+  biofisiologico:      '#88A6C6',
+  sociocultural:       '#F1CE63'
 };
 
-function renderDimensionesCambioChart(dimObj){
-  const vals = CHANGE_DIMS.map((d) => {
-    const raw = Number(dimObj?.[d.id]);
-    const value = Number.isFinite(raw) && raw > 0 ? raw : 0;
+function readDimensionValue(dimObj, keys){
+  const aliases = Array.isArray(keys) ? keys : [];
+  for (const key of aliases){
+    const raw = Number(dimObj?.[key]);
+    if (Number.isFinite(raw) && raw > 0){
+      return raw;
+    }
+  }
+  return 0;
+}
+
+function normDimKey(s){
+  return String(s ?? '')
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,'_')
+    .replace(/^_+|_+$/g,'');
+}
+
+function readDimensionJustification(dimObj, modelMeta, keys){
+  const buckets = [
+    modelMeta?.dimensionesCambioJustificacion,
+    modelMeta?.dimensionesJustificacion,
+    dimObj?._justificacion,
+    dimObj?.justificacion
+  ].filter(v => v && typeof v === 'object');
+
+  if (!buckets.length) return '';
+
+  const aliases = Array.isArray(keys) ? keys : [];
+  const normAliases = aliases.map(normDimKey);
+
+  for (const bucket of buckets){
+    for (const [rawKey, rawVal] of Object.entries(bucket)){
+      if (typeof rawVal !== 'string' || !rawVal.trim()) continue;
+      const nk = normDimKey(rawKey);
+      if (normAliases.includes(nk)){
+        return rawVal.trim();
+      }
+    }
+  }
+  return '';
+}
+
+function normProcKey(s){
+  return String(s ?? '')
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,'_')
+    .replace(/^_+|_+$/g,'');
+}
+
+function readProcessJustification(processObj, modelMeta, code, label){
+  const buckets = [
+    modelMeta?.graficaProcesosJustificacion,
+    modelMeta?.procesosJustificacion,
+    processObj?._justificacion,
+    processObj?.justificacion
+  ].filter(v => v && typeof v === 'object');
+
+  if (!buckets.length) return '';
+
+  const aliases = [
+    String(code ?? ''),
+    String(label ?? ''),
+    String(code ?? '').toLowerCase(),
+    normProcKey(code),
+    normProcKey(label)
+  ].filter(Boolean).map(normProcKey);
+
+  for (const bucket of buckets){
+    for (const [rawKey, rawVal] of Object.entries(bucket)){
+      if (typeof rawVal !== 'string' || !rawVal.trim()) continue;
+      const k = normProcKey(rawKey);
+      if (aliases.includes(k)){
+        return rawVal.trim();
+      }
+    }
+  }
+  return '';
+}
+
+function renderDimensionesCambioChart(dimObj, modelMeta = null){
+  const vals = CHANGE_DIMS.map((d, idx) => {
+    const value = readDimensionValue(dimObj, d.keys);
+    const justification = readDimensionJustification(dimObj, modelMeta, d.keys);
     const color = CHANGE_DIM_COLORS_BY_ID[d.id] || '#A9B1C5';
-    return { ...d, color, value };
+    return { ...d, color, value, justification, _idx: idx };
   });
 
   const total = vals.reduce((acc, d) => acc + d.value, 0);
-  const sortedVals = vals
-    .slice()
-    .sort((a, b) => (b.value - a.value) || a.label.localeCompare(b.label, 'es'));
+  const sortedVals = vals.slice().sort((a, b) => (b.value - a.value) || (a._idx - b._idx));
 
   if (total <= 0){
     return `
       <div class="dim-card">
-        <h4 class="dim-title">Dimensiones de cambio</h4>
+        <h4 class="dim-title">Dimensiones psicológicas y niveles contextuales</h4>
         <div class="dim-empty">Sin definir en este modelo.</div>
       </div>
     `;
@@ -7119,28 +7395,70 @@ function renderDimensionesCambioChart(dimObj){
     `);
   }
 
-  const rows = sortedVals.map((d) => {
+  const hasAnyJustification = sortedVals.some((d) => !!d.justification);
+
+  const rowTemplate = (d) => {
     const pct = (d.value / total) * 100;
+    const hasJustification = !!d.justification;
+    const canOpen = hasAnyJustification && hasJustification;
+    const rowClass = `dim-row${canOpen ? '' : ' no-justification'}`;
+    const detailHtml = canOpen
+      ? `<div class="dim-detail" data-dim-id="${d.id}" hidden>${escapeHtml(d.justification)}</div>`
+      : '';
+
     return `
-      <div class="dim-row" data-dim-id="${d.id}" style="--dot:${d.color}">
-        <span class="dim-dot" style="--dot:${d.color}"></span>
-        <span class="dim-label">${escapeHtml(d.label)}</span>
-        <span class="dim-val">${fmtPct(pct)}</span>
+      <div class="dim-item" data-dim-id="${d.id}" style="--dot:${d.color}">
+        <button
+          type="button"
+          class="${rowClass}"
+          data-dim-id="${d.id}"
+          data-can-open="${canOpen ? '1' : '0'}"
+          style="--dot:${d.color}"
+          aria-expanded="false">
+          <span class="dim-dot" style="--dot:${d.color}"></span>
+          <span class="dim-label">${escapeHtml(d.label)}</span>
+          <span class="dim-val">${fmtPct(pct)}</span>
+        </button>
+        ${detailHtml}
       </div>
     `;
-  }).join('');
+  };
+
+  const psychologicalRows = sortedVals
+    .filter((d) => d.group !== 'contextual')
+    .map(rowTemplate)
+    .join('');
+
+  const contextualRows = sortedVals
+    .filter((d) => d.group === 'contextual')
+    .map(rowTemplate)
+    .join('');
+
+  const rows = `
+    <div class="dim-group">
+      <div class="dim-groupTitle">Dimensiones psicológicas</div>
+      <div class="dim-groupList">${psychologicalRows || '<div class="dim-empty">—</div>'}</div>
+    </div>
+    <div class="dim-group">
+      <div class="dim-groupTitle">Dimensiones contextuales</div>
+      <div class="dim-groupList">${contextualRows || '<div class="dim-empty">—</div>'}</div>
+    </div>
+  `;
 
   return `
     <div class="dim-card">
-      <h4 class="dim-title">Dimensiones de cambio</h4>
+      <h4 class="dim-title">Dimensiones psicológicas y niveles contextuales</h4>
       <div class="dim-pieWrap">
-        <div class="dim-pie dim-interactive" role="img" aria-label="Distribución de dimensiones de cambio">
+        <div class="dim-pie dim-interactive" role="img" aria-label="Distribución de dimensiones psicológicas y niveles contextuales">
           <svg class="dim-pieSvg" viewBox="0 0 120 120" aria-hidden="true">
             ${segments.join('')}
           </svg>
         </div>
       </div>
       <div class="dim-list">${rows}</div>
+      <div class="dim-reference">
+        Basado en la clasifiación descrita en Hofmann, S. G., Hayes, S. C., & Lorscheid, D. N. (2021). <em>Learning Process-Based Therapy: A Skills Training Manual for Targeting the Core Processes of Psychological Change in Clinical Practice</em>. Oakland, CA: New Harbinger Publications.
+      </div>
     </div>
   `;
 }
@@ -7154,6 +7472,8 @@ function initDimHoverSync(rootEl){
     card.dataset.dimHoverBound = '1';
 
     const rows = Array.from(card.querySelectorAll('.dim-row[data-dim-id]'));
+    const items = Array.from(card.querySelectorAll('.dim-item[data-dim-id]'));
+    const details = Array.from(card.querySelectorAll('.dim-detail[data-dim-id]'));
     const segs = Array.from(card.querySelectorAll('.dim-segment[data-dim-id]'));
     if (!rows.length || !segs.length) return;
 
@@ -7163,15 +7483,101 @@ function initDimHoverSync(rootEl){
       segs.forEach((seg) => seg.classList.toggle('is-linked-hover', !!id && seg.dataset.dimId === id));
     };
 
+    const canOpenId = (id) => {
+      const row = rows.find((r) => r.dataset.dimId === id);
+      if (!row) return false;
+      if (row.dataset.canOpen !== '1') return false;
+      return details.some((detail) => detail.dataset.dimId === id);
+    };
+
+    const setOpen = (id) => {
+      if (!canOpenId(id)) return;
+      const current = String(card.dataset.openDimId || '');
+      const next = (current === id) ? '' : id;
+      card.dataset.openDimId = next;
+
+      items.forEach((item) => {
+        const on = !!next && item.dataset.dimId === next;
+        item.classList.toggle('is-open', on);
+      });
+
+      rows.forEach((row) => {
+        const on = !!next && row.dataset.dimId === next;
+        row.setAttribute('aria-expanded', on ? 'true' : 'false');
+      });
+
+      details.forEach((detail) => {
+        const on = !!next && detail.dataset.dimId === next;
+        detail.hidden = !on;
+      });
+
+      segs.forEach((seg) => seg.classList.toggle('is-linked-open', !!next && seg.dataset.dimId === next));
+    };
+
     const bind = (el) => {
       const id = el.dataset.dimId;
       if (!id) return;
       el.addEventListener('mouseenter', () => setHover(id));
       el.addEventListener('mouseleave', () => setHover(''));
+      el.addEventListener('click', () => {
+        if (el.classList.contains('dim-row') && el.dataset.canOpen !== '1') return;
+        setOpen(id);
+      });
     };
 
     rows.forEach(bind);
     segs.forEach(bind);
+  });
+}
+
+function initProcessDetailSync(rootEl){
+  const root = (rootEl && typeof rootEl.querySelectorAll === 'function') ? rootEl : document;
+  const cards = root.querySelectorAll('.grafica-procesos');
+
+  cards.forEach((card) => {
+    if (card.dataset.procDetailBound === '1') return;
+    card.dataset.procDetailBound = '1';
+
+    const rows = Array.from(card.querySelectorAll('.fila-proceso[data-proc-id]'));
+    const items = Array.from(card.querySelectorAll('.proceso-item[data-proc-id]'));
+    const details = Array.from(card.querySelectorAll('.proceso-detail[data-proc-id]'));
+    if (!rows.length) return;
+
+    const canOpenId = (id) => {
+      const row = rows.find((r) => r.dataset.procId === id);
+      if (!row || row.dataset.canOpen !== '1') return false;
+      return details.some((d) => d.dataset.procId === id);
+    };
+
+    const setOpen = (id) => {
+      if (!canOpenId(id)) return;
+      const current = String(card.dataset.openProcId || '');
+      const next = (current === id) ? '' : id;
+      card.dataset.openProcId = next;
+
+      items.forEach((item) => {
+        const on = !!next && item.dataset.procId === next;
+        item.classList.toggle('is-open', on);
+      });
+
+      rows.forEach((row) => {
+        const on = !!next && row.dataset.procId === next;
+        row.setAttribute('aria-expanded', on ? 'true' : 'false');
+      });
+
+      details.forEach((detail) => {
+        const on = !!next && detail.dataset.procId === next;
+        detail.hidden = !on;
+      });
+    };
+
+    rows.forEach((row) => {
+      row.addEventListener('click', () => {
+        const id = row.dataset.procId;
+        if (!id || row.dataset.canOpen !== '1') return;
+        setOpen(id);
+      });
+    });
   });
 }
 
@@ -7260,13 +7666,13 @@ function renderGraficaProcesos(modelOrProcesos){
       <div class="mp-section">
         <h3>Procesos</h3>
         <div class="procesos-grid">
-          <div class="grafica-procesos"><div class="dim-empty">Sin procesos definidos.</div></div>
           <div class="dim-col">
             <div class="dim-colBody" data-expanded="0">
-              ${renderDimensionesCambioChart(dimensiones)}
+              ${renderDimensionesCambioChart(dimensiones, modelOrProcesos)}
             </div>
             <button class="dim-expandBtn" type="button" hidden aria-expanded="false">Ver más</button>
           </div>
+          <div class="grafica-procesos"><div class="dim-empty">Sin procesos definidos.</div></div>
         </div>
       </div>
     `;
@@ -7290,9 +7696,21 @@ function renderGraficaProcesos(modelOrProcesos){
     const width = (valor / 3) * 100;
     const widthSafe = Math.max(0, Math.min(100, width));
     const tip = labels[code] || code;
+    const justification = readProcessJustification(procesos, modelOrProcesos, code, tip);
+    const canOpen = !!justification;
+    const rowClass = `fila-proceso${canOpen ? '' : ' no-justification'}`;
+    const detailHtml = canOpen
+      ? `<div class="proceso-detail" data-proc-id="${code}" hidden>${escapeHtml(justification)}</div>`
+      : '';
 
     return `
-      <div class="fila-proceso">
+      <div class="proceso-item" data-proc-id="${code}">
+        <button
+          type="button"
+          class="${rowClass}"
+          data-proc-id="${code}"
+          data-can-open="${canOpen ? '1' : '0'}"
+          aria-expanded="false">
         <div class="label-proceso" title="${escapeHtml(tip)}">
           <span class="proceso-codigo">${code}</span>
           <span class="proceso-nombre">${escapeHtml(tip)}</span>
@@ -7300,6 +7718,8 @@ function renderGraficaProcesos(modelOrProcesos){
         <div class="barra-container" title="${escapeHtml(tip)}">
           <div class="barra" style="width: ${widthSafe}%"></div>
         </div>
+        </button>
+        ${detailHtml}
       </div>
     `;
   }).join('');
@@ -7308,14 +7728,14 @@ function renderGraficaProcesos(modelOrProcesos){
     <div class="mp-section">
       <h3>Procesos</h3>
       <div class="procesos-grid">
-        <div class="grafica-procesos">
-          ${filas}
-        </div>
         <div class="dim-col">
           <div class="dim-colBody" data-expanded="0">
-            ${renderDimensionesCambioChart(dimensiones)}
+            ${renderDimensionesCambioChart(dimensiones, modelOrProcesos)}
           </div>
           <button class="dim-expandBtn" type="button" hidden aria-expanded="false">Ver más</button>
+        </div>
+        <div class="grafica-procesos">
+          ${filas}
         </div>
       </div>
     </div>
