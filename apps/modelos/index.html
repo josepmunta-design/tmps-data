@@ -834,6 +834,13 @@ opacity: .75;
   margin: 0 0 10px 0;
 }
 
+.modelPanel .procesos-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 290px;
+  gap:14px;
+  align-items:start;
+}
+
 .modelPanel .grafica-procesos{
   display: flex;
   flex-direction: column;
@@ -848,6 +855,202 @@ opacity: .75;
     0 8px 24px rgba(0,0,0,0.18);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+}
+
+.modelPanel .dim-card{
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.14),
+    0 14px 30px rgba(0,0,0,0.22);
+}
+
+.modelPanel .dim-col{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  min-height:0;
+}
+
+.modelPanel .dim-colBody{
+  position:relative;
+  overflow:hidden;
+  min-height:0;
+  transition:max-height .28s ease;
+}
+
+.modelPanel .dim-colBody.is-collapsed::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:56px;
+  pointer-events:none;
+  background: linear-gradient(180deg, rgba(12,17,24,0), rgba(12,17,24,.92));
+}
+
+.modelPanel .dim-expandBtn{
+  align-self:center;
+  border:1px solid color-mix(in srgb, var(--schoolColor, #D9AA3F) 48%, rgba(255,255,255,.24));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--schoolColor, #D9AA3F) 20%, rgba(255,255,255,.14)),
+      color-mix(in srgb, var(--schoolColor, #D9AA3F) 32%, rgba(0,0,0,.16)));
+  color:#f5f8ff;
+  font: inherit;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.35px;
+  text-transform:uppercase;
+  padding:7px 12px;
+  border-radius:999px;
+  cursor:pointer;
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--schoolColor, #D9AA3F) 14%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.24);
+}
+
+.modelPanel .dim-expandBtn:hover{
+  filter:brightness(1.06);
+}
+
+.modelPanel .dim-expandBtn[hidden]{
+  display:none !important;
+}
+
+.modelPanel .dim-title{
+  margin: 0 0 12px 0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .45px;
+  text-transform: uppercase;
+  color: rgba(231,237,245,.84);
+}
+
+.modelPanel .dim-pieWrap{
+  position: relative;
+  width: 164px;
+  height: 164px;
+  margin: 2px auto 14px;
+}
+
+.modelPanel .dim-pieWrap::before{
+  content:"";
+  position:absolute;
+  inset:-8px;
+  border-radius:999px;
+  pointer-events:none;
+  background: radial-gradient(circle, color-mix(in srgb, var(--schoolColor, #D9AA3F) 28%, transparent), transparent 66%);
+  opacity:.35;
+}
+
+.modelPanel .dim-pie{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.20);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.28),
+    0 14px 30px rgba(0,0,0,.28);
+}
+
+.modelPanel .dim-pie::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:999px;
+  pointer-events:none;
+  background:
+    radial-gradient(120px 80px at 32% 22%, rgba(255,255,255,.24), rgba(255,255,255,0) 72%);
+}
+
+.modelPanel .dim-pieSvg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border-radius:999px;
+}
+
+.modelPanel .dim-segment{
+  cursor:pointer;
+  transition: opacity .2s ease, filter .2s ease, transform .2s ease;
+  transform-origin: 60px 60px;
+}
+
+.modelPanel .dim-card.has-hover .dim-segment{
+  opacity:.42;
+}
+
+.modelPanel .dim-card.has-hover .dim-segment.is-linked-hover{
+  opacity:1;
+  filter: brightness(1.12) saturate(1.16)
+    drop-shadow(0 0 8px color-mix(in srgb, var(--segmentColor, #D9AA3F) 48%, transparent));
+  transform: scale(1.03);
+}
+
+
+.modelPanel .dim-list{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.modelPanel .dim-row{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:8px;
+  align-items:center;
+  font-size:11px;
+  padding:4px 6px;
+  border-radius:10px;
+  background: rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);
+  color: rgba(231,237,245,.9);
+  transition: border-color .2s ease, background .2s ease, color .2s ease, opacity .2s ease;
+}
+
+.modelPanel .dim-card.has-hover .dim-row{
+  opacity:.66;
+}
+
+.modelPanel .dim-card.has-hover .dim-row.is-linked-hover{
+  opacity:1;
+  border-color: color-mix(in srgb, var(--dot, var(--schoolColor, #D9AA3F)) 48%, rgba(255,255,255,.18));
+  background: color-mix(in srgb, var(--dot, var(--schoolColor, #D9AA3F)) 16%, rgba(255,255,255,.03));
+  color: #ffffff;
+}
+
+.modelPanel .dim-dot{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  background: var(--dot, #9fb0c3);
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,.10),
+    0 0 8px color-mix(in srgb, var(--dot, #9fb0c3) 42%, transparent);
+}
+
+.modelPanel .dim-label{
+  min-width:0;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.modelPanel .dim-val{
+  font-weight:800;
+  color:#fff;
+}
+
+.modelPanel .dim-empty{
+  font-size:12px;
+  color: rgba(231,237,245,.72);
 }
 
 .modelPanel .fila-proceso{
@@ -929,6 +1132,10 @@ opacity: .75;
 }
 
 @media (max-width: 980px){
+  .modelPanel .procesos-grid{
+    grid-template-columns:1fr;
+  }
+
   .modelPanel .fila-proceso{
     flex-direction: column;
     align-items: stretch;
@@ -951,6 +1158,11 @@ opacity: .75;
   .modelPanel .barra-container{
     max-width: none;
     flex-basis: auto;
+  }
+
+  .modelPanel .dim-pieWrap{
+    width: 144px;
+    height: 144px;
   }
 }
 
@@ -3888,6 +4100,7 @@ body.theme-light .mi-item,
 body.theme-light .mp-acc details,
 body.theme-light .mp-sub details,
 body.theme-light .mp-idea,
+body.theme-light .modelPanel .dim-card,
 body.theme-light .modelPanel .mp-hero,
 body.theme-light .modelPanel .mp-hint{
   background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(244,249,255,.84));
@@ -3980,6 +4193,31 @@ body.theme-light .modelPanel .barra-container{
   border-color: rgba(118,129,153,.20);
   box-shadow: inset 0 1px 1px rgba(44,63,93,.15);
 }
+
+body.theme-light .modelPanel .dim-title{
+  color:#3f4f67;
+}
+
+body.theme-light .modelPanel .dim-row{
+  color:#3f4f67;
+}
+
+body.theme-light .modelPanel .dim-card.has-hover .dim-row.is-linked-hover{
+  color:#1f2d44;
+}
+
+body.theme-light .modelPanel .dim-colBody.is-collapsed::after{
+  background: linear-gradient(180deg, rgba(249,252,255,0), rgba(249,252,255,.95));
+}
+
+body.theme-light .modelPanel .dim-expandBtn{
+  color:#1f2d44;
+}
+
+body.theme-light .modelPanel .dim-val{
+  color:#1f2d44;
+}
+
 
 body.theme-light .mp-mapbg{
   opacity:.62;
@@ -6629,7 +6867,7 @@ const authorHTML =
       ${sectionListInner(m.influencias, {asList:false})}
     </div>
 
-    ${m.graficaProcesos ? renderGraficaProcesos(m.graficaProcesos) : ''}
+    ${(m.graficaProcesos || m.dimensionesCambio) ? renderGraficaProcesos(m) : ''}
 
     <div class="mp-acc">
       ${nConcepts ? acc('Conceptos clave', nConcepts, sectionConceptsInner(m.conceptosClave), false) : ''}
@@ -6747,6 +6985,9 @@ if (!fotoUrl){
   }).catch(() => {});
 }
 
+initDimHoverSync(modelInfoEl);
+initProcesosHeightSync(modelInfoEl);
+
       // === Mini map de fondo (lazy: no bloquea la ficha en móvil) ===
 requestAnimationFrame(() => {
   renderMiniMapBgLazy(m);
@@ -6781,8 +7022,255 @@ function sectionListInner(arr, opts={}){
   return `<div>${a.map(x => escapeHtml(x)).join(', ')}</div>`;
 }
 
-function renderGraficaProcesos(procesos){
-  if(!procesos || typeof procesos !== 'object') return '';
+const CHANGE_DIMS = [
+  { id:'cognitivo',     label:'Cognitivo' },
+  { id:'emocional',     label:'Emocional' },
+  { id:'conductual',    label:'Conductual' },
+  { id:'experiencial',  label:'Experiencial' },
+  { id:'relacional',    label:'Relacional' },
+  { id:'narrativo',     label:'Narrativo' },
+  { id:'atencional',    label:'Atencional' },
+  { id:'motivacional',  label:'Motivacional' },
+  { id:'fisiologico',   label:'Fisiológico' },
+  { id:'sistemico',     label:'Sistémico' }
+];
+
+const CHANGE_DIM_COLORS_BY_ID = {
+  cognitivo:    '#E15759', // Cognitivo (escuela)
+  conductual:   '#d69640', // Conductismo (escuela)
+  sistemico:    '#F1CE63', // Sistémico (escuela)
+  relacional:   '#76B7B2', // cercano a Humanista
+  narrativo:    '#B07AA1', // cercano a Constructivista
+  motivacional: '#FF9DA7', // cercano a Integrativo
+  atencional:   '#4E79A7', // cercano a Psicoanálisis
+  emocional:    '#F26B7A',
+  experiencial: '#69C5C2',
+  fisiologico:  '#88A6C6'
+};
+
+function renderDimensionesCambioChart(dimObj){
+  const vals = CHANGE_DIMS.map((d) => {
+    const raw = Number(dimObj?.[d.id]);
+    const value = Number.isFinite(raw) && raw > 0 ? raw : 0;
+    const color = CHANGE_DIM_COLORS_BY_ID[d.id] || '#A9B1C5';
+    return { ...d, color, value };
+  });
+
+  const total = vals.reduce((acc, d) => acc + d.value, 0);
+  const sortedVals = vals
+    .slice()
+    .sort((a, b) => (b.value - a.value) || a.label.localeCompare(b.label, 'es'));
+
+  if (total <= 0){
+    return `
+      <div class="dim-card">
+        <h4 class="dim-title">Dimensiones de cambio</h4>
+        <div class="dim-empty">Sin definir en este modelo.</div>
+      </div>
+    `;
+  }
+
+  const fmtPct = (n) => `${n.toFixed(1).replace('.', ',')}%`;
+  const polar = (deg, r = 56) => {
+    const rad = (deg * Math.PI) / 180;
+    return [60 + (r * Math.cos(rad)), 60 + (r * Math.sin(rad))];
+  };
+  const pieSectorPath = (startDeg, endDeg, r = 56) => {
+    const span = endDeg - startDeg;
+    const [x1, y1] = polar(startDeg, r);
+    const [x2, y2] = polar(endDeg, r);
+    const largeArc = span > 180 ? 1 : 0;
+    return `M 60 60 L ${x1.toFixed(3)} ${y1.toFixed(3)} A ${r} ${r} 0 ${largeArc} 1 ${x2.toFixed(3)} ${y2.toFixed(3)} Z`;
+  };
+
+  let angleAcc = 0;
+  const segments = [];
+  for (const d of sortedVals){
+    if (d.value <= 0) continue;
+    const startDeg = ((angleAcc / total) * 360) - 90;
+    angleAcc += d.value;
+    const endDeg = ((angleAcc / total) * 360) - 90;
+    const span = endDeg - startDeg;
+    const pct = (d.value / total) * 100;
+    const title = `${d.label} · ${fmtPct(pct)}`;
+
+    if (span >= 359.999){
+      segments.push(`
+        <circle
+          class="dim-segment"
+          data-dim-id="${d.id}"
+          style="--segmentColor:${d.color}"
+          cx="60" cy="60" r="56" fill="${d.color}">
+          <title>${escapeHtml(title)}</title>
+        </circle>
+      `);
+      continue;
+    }
+
+    segments.push(`
+      <path
+        class="dim-segment"
+        data-dim-id="${d.id}"
+        style="--segmentColor:${d.color}"
+        fill="${d.color}"
+        d="${pieSectorPath(startDeg, endDeg)}">
+        <title>${escapeHtml(title)}</title>
+      </path>
+    `);
+  }
+
+  const rows = sortedVals.map((d) => {
+    const pct = (d.value / total) * 100;
+    return `
+      <div class="dim-row" data-dim-id="${d.id}" style="--dot:${d.color}">
+        <span class="dim-dot" style="--dot:${d.color}"></span>
+        <span class="dim-label">${escapeHtml(d.label)}</span>
+        <span class="dim-val">${fmtPct(pct)}</span>
+      </div>
+    `;
+  }).join('');
+
+  return `
+    <div class="dim-card">
+      <h4 class="dim-title">Dimensiones de cambio</h4>
+      <div class="dim-pieWrap">
+        <div class="dim-pie dim-interactive" role="img" aria-label="Distribución de dimensiones de cambio">
+          <svg class="dim-pieSvg" viewBox="0 0 120 120" aria-hidden="true">
+            ${segments.join('')}
+          </svg>
+        </div>
+      </div>
+      <div class="dim-list">${rows}</div>
+    </div>
+  `;
+}
+
+function initDimHoverSync(rootEl){
+  const root = (rootEl && typeof rootEl.querySelectorAll === 'function') ? rootEl : document;
+  const cards = root.querySelectorAll('.dim-card');
+
+  cards.forEach((card) => {
+    if (card.dataset.dimHoverBound === '1') return;
+    card.dataset.dimHoverBound = '1';
+
+    const rows = Array.from(card.querySelectorAll('.dim-row[data-dim-id]'));
+    const segs = Array.from(card.querySelectorAll('.dim-segment[data-dim-id]'));
+    if (!rows.length || !segs.length) return;
+
+    const setHover = (id) => {
+      card.classList.toggle('has-hover', !!id);
+      rows.forEach((row) => row.classList.toggle('is-linked-hover', !!id && row.dataset.dimId === id));
+      segs.forEach((seg) => seg.classList.toggle('is-linked-hover', !!id && seg.dataset.dimId === id));
+    };
+
+    const bind = (el) => {
+      const id = el.dataset.dimId;
+      if (!id) return;
+      el.addEventListener('mouseenter', () => setHover(id));
+      el.addEventListener('mouseleave', () => setHover(''));
+    };
+
+    rows.forEach(bind);
+    segs.forEach(bind);
+  });
+}
+
+function syncProcesosGridHeights(rootEl){
+  const root = (rootEl && typeof rootEl.querySelectorAll === 'function') ? rootEl : document;
+  const isNarrow = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
+  const grids = root.querySelectorAll('.procesos-grid');
+
+  grids.forEach((grid) => {
+    const left = grid.querySelector('.grafica-procesos');
+    const body = grid.querySelector('.dim-colBody');
+    const btn = grid.querySelector('.dim-expandBtn');
+    if (!left || !body || !btn) return;
+
+    body.classList.remove('is-collapsed');
+    body.style.maxHeight = 'none';
+
+    if (isNarrow){
+      body.dataset.expanded = '1';
+      btn.hidden = true;
+      btn.setAttribute('aria-expanded', 'true');
+      return;
+    }
+
+    const target = Math.ceil(left.getBoundingClientRect().height);
+    const natural = Math.ceil(body.scrollHeight);
+    let expanded = body.dataset.expanded === '1';
+    const hasOverflow = natural > (target + 2);
+
+    if (!hasOverflow){
+      body.dataset.expanded = '0';
+      expanded = false;
+    }
+
+    if (!expanded && hasOverflow){
+      body.style.maxHeight = `${target}px`;
+      body.classList.add('is-collapsed');
+    }
+
+    const showBtn = hasOverflow || expanded;
+    btn.hidden = !showBtn;
+    btn.textContent = expanded ? 'Ver menos' : 'Ver más';
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  });
+}
+
+function initProcesosHeightSync(rootEl){
+  const root = (rootEl && typeof rootEl.querySelectorAll === 'function') ? rootEl : document;
+  const grids = root.querySelectorAll('.procesos-grid');
+
+  grids.forEach((grid) => {
+    const body = grid.querySelector('.dim-colBody');
+    const btn = grid.querySelector('.dim-expandBtn');
+    if (!body || !btn) return;
+
+    if (btn.dataset.bound !== '1'){
+      btn.dataset.bound = '1';
+      btn.addEventListener('click', () => {
+        body.dataset.expanded = (body.dataset.expanded === '1') ? '0' : '1';
+        syncProcesosGridHeights(root);
+      });
+    }
+  });
+
+  syncProcesosGridHeights(root);
+
+  if (!window.__procesosHeightResizeBound){
+    window.__procesosHeightResizeBound = true;
+    window.addEventListener('resize', () => {
+      const panel = document.getElementById('modelInfo');
+      if (panel) syncProcesosGridHeights(panel);
+    });
+  }
+}
+
+function renderGraficaProcesos(modelOrProcesos){
+  const procesos = (modelOrProcesos && typeof modelOrProcesos === 'object' && modelOrProcesos.graficaProcesos)
+    ? modelOrProcesos.graficaProcesos
+    : modelOrProcesos;
+  const dimensiones = (modelOrProcesos && typeof modelOrProcesos === 'object')
+    ? modelOrProcesos.dimensionesCambio
+    : null;
+
+  if(!procesos || typeof procesos !== 'object'){
+    return `
+      <div class="mp-section">
+        <h3>Procesos</h3>
+        <div class="procesos-grid">
+          <div class="grafica-procesos"><div class="dim-empty">Sin procesos definidos.</div></div>
+          <div class="dim-col">
+            <div class="dim-colBody" data-expanded="0">
+              ${renderDimensionesCambioChart(dimensiones)}
+            </div>
+            <button class="dim-expandBtn" type="button" hidden aria-expanded="false">Ver más</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
 
   const orden = ['RF', 'RE', 'AP', 'RI', 'N', 'I', 'AG', 'R'];
   const labels = {
@@ -6819,8 +7307,16 @@ function renderGraficaProcesos(procesos){
   return `
     <div class="mp-section">
       <h3>Procesos</h3>
-      <div class="grafica-procesos">
-        ${filas}
+      <div class="procesos-grid">
+        <div class="grafica-procesos">
+          ${filas}
+        </div>
+        <div class="dim-col">
+          <div class="dim-colBody" data-expanded="0">
+            ${renderDimensionesCambioChart(dimensiones)}
+          </div>
+          <button class="dim-expandBtn" type="button" hidden aria-expanded="false">Ver más</button>
+        </div>
       </div>
     </div>
   `;
