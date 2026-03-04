@@ -21,27 +21,46 @@
     "Milton H. Erickson",
     "Psiquiatría estratégica"
   ],
-"graficaProcesos": {
-  "RF": 0,
-  "RE": 1,
-  "AP": 1,
-  "RI": 1,
-  "N": 3,
-  "I": 1,
-  "AG": 3,
-  "R": 3
-},
+ "graficaProcesos": {
+    "RF": 0.1,
+    "RE": 1.0,
+    "AP": 0.6,
+    "RI": 0.3,
+    "N": 2.1,
+    "I": 0.4,
+    "AG": 2.6,
+    "R": 3.0
+  },
+  "graficaProcesosJustificacion": {
+    "RF": "No hay intervención corporal/fisiológica específica: el foco es interacción y comunicación.",
+    "RE": "La emoción se aborda de forma indirecta al alterar escaladas, reencuadrar y modificar reglas relacionales.",
+    "AP": "Se trabaja con episodios presentes y secuencias concretas, pero sin exposición/evocación intrapsíquica sistemática.",
+    "RI": "El modelo no prioriza diálogo interno, parts o procesamiento intrapsíquico: interviene en la pauta externa.",
+    "N": "Uso fuerte de reencuadre, redefinición operativa y cambio de marco (cambio 2º orden) como palanca clínica.",
+    "I": "La identidad/self no es diana principal: aparece solo como efecto secundario de cambios en la interacción.",
+    "AG": "La terapia es activa y prescriptiva: tareas entre sesiones, ‘hacer algo diferente’, prescripción del síntoma.",
+    "R": "Es el núcleo: causalidad circular, bucles de retroalimentación, roles, escaladas y solución intentada."
+  },
+
   "dimensionesCambio": {
-    "cognitivo": 8,
-    "emocional": 3,
-    "conductual": 32,
-    "experiencial": 2,
-    "relacional": 8,
-    "narrativo": 4,
-    "atencional": 1,
-    "motivacional": 4,
-    "fisiologico": 0,
-    "sistemico": 38
+    "cognicion": 2.2,
+    "afecto": 1.2,
+    "atencion": 0.4,
+    "self": 0.6,
+    "motivacion": 1.5,
+    "conducta_manifiesta": 2.7,
+    "biofisiologico": 0.0,
+    "sociocultural": 2.0
+  },
+  "dimensionesCambioJustificacion": {
+    "cognicion": "Cambia el marco interpretativo mediante reencuadres y redefiniciones pragmáticas (qué está pasando y cómo se mantiene).",
+    "afecto": "La emoción cambia al desactivar escaladas y modificar secuencias; no hay trabajo emocional explícito como objetivo primario.",
+    "atencion": "No hay entrenamiento atencional; la atención se dirige a secuencias concretas solo como herramienta de análisis.",
+    "self": "No se trabaja identidad como eje; el cambio del self es indirecto y derivado de cambios en patrones relacionales.",
+    "motivacion": "Se negocia contrato y objetivos concretos; la motivación se sostiene por resultados rápidos y tareas viables.",
+    "conducta_manifiesta": "Es central: se interviene sobre conductas observables y tareas entre sesiones para romper el bucle problema–solución intentada.",
+    "biofisiologico": "Ausente: el modelo no incluye regulación somática como componente clínico.",
+    "sociocultural": "El foco es el sistema y sus reglas; el contexto familiar/institucional cuenta, aunque sin análisis cultural profundo como en narrativas."
   },
   "mjps": ["R", "AG", "N", "RE"],
 
