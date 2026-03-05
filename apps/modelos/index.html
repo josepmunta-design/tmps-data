@@ -173,11 +173,11 @@ async function ensureD3(timeoutMs = 8000){
   --panelGlow: rgba(255,255,255,0.06); /* ✅ valor por defecto si no hay modelo */
 
   background: linear-gradient(180deg, var(--panelA), var(--panelB));
-  border:1px solid rgba(255,255,255,0.10);
+  border:1px solid rgba(255,255,255,0.06);
   border-radius:16px;
   box-shadow:
-    0 18px 50px rgba(0,0,0,0.45),
-    inset 0 1px 0 rgba(255,255,255,0.06);
+    0 16px 42px rgba(0,0,0,0.34),
+    inset 0 1px 0 rgba(255,255,255,0.04);
   backdrop-filter: blur(12px) saturate(115%);
   -webkit-backdrop-filter: blur(12px) saturate(115%);
 }
@@ -212,9 +212,9 @@ async function ensureD3(timeoutMs = 8000){
   z-index: 20;
 
   background: linear-gradient(180deg, var(--panelA), var(--panelB));
-  border:1px solid rgba(255,255,255,0.10);
+  border:1px solid rgba(255,255,255,0.06);
   border-radius:16px;
-  box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+  box-shadow: 0 16px 42px rgba(0,0,0,0.34);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -336,11 +336,14 @@ animation: panelBreath 5s ease-in-out infinite;
 }
 
     .card{
-      background: rgba(255,255,255,0.05);
-      border:1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.06);
       border-radius:14px;
       padding:12px;
       margin:12px 0;
+      box-shadow:
+        0 10px 28px rgba(0,0,0,0.25),
+        inset 0 1px 0 rgba(255,255,255,0.04);
     }
     .row{display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
     label{font-size:12px;color:var(--muted2);}
@@ -511,12 +514,12 @@ animation: panelBreath 5s ease-in-out infinite;
     }
 
     /* Lista clicable (doc) */
-  .mi-item{
+.mi-item{
   cursor: pointer;
   min-height: 78px; 
   border-radius: 12px;
   padding: 10px 10px;
-  border: 1px solid rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.06);
 
   /* 👇 fondo tintado muy sutil por escuela */
   background:
@@ -847,25 +850,33 @@ opacity: .75;
   gap: 10px;
   padding: 12px;
   border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.05);
   background:
+    radial-gradient(140% 120% at 18% 8%, rgba(255,255,255,0.12), rgba(255,255,255,0) 52%),
+    radial-gradient(120% 130% at 92% 92%, color-mix(in srgb, var(--schoolColor, #D9AA3F) 16%, transparent), transparent 58%),
     linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.10),
-    0 8px 24px rgba(0,0,0,0.18);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+    inset 0 1px 0 rgba(255,255,255,0.12),
+    inset 0 0 0 1px rgba(255,255,255,0.02),
+    0 12px 34px rgba(0,0,0,0.26);
+  backdrop-filter: blur(14px) saturate(118%);
+  -webkit-backdrop-filter: blur(14px) saturate(118%);
 }
 
 .modelPanel .dim-card{
   padding: 14px;
   border-radius: 18px;
-  border: 1px solid rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.05);
   background:
+    radial-gradient(140% 120% at 18% 8%, rgba(255,255,255,0.14), rgba(255,255,255,0) 54%),
+    radial-gradient(120% 130% at 92% 92%, color-mix(in srgb, var(--schoolColor, #D9AA3F) 14%, transparent), transparent 58%),
     linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.14),
-    0 14px 30px rgba(0,0,0,0.22);
+    inset 0 1px 0 rgba(255,255,255,0.13),
+    inset 0 0 0 1px rgba(255,255,255,0.02),
+    0 14px 36px rgba(0,0,0,0.28);
+  backdrop-filter: blur(14px) saturate(118%);
+  -webkit-backdrop-filter: blur(14px) saturate(118%);
 }
 
 .modelPanel .dim-col{
@@ -960,8 +971,8 @@ opacity: .75;
 
 .modelPanel .dim-pieWrap{
   position: relative;
-  width: 164px;
-  height: 164px;
+  width: 180px;
+  height: 180px;
   margin: 2px auto 14px;
 }
 
@@ -1008,6 +1019,14 @@ opacity: .75;
   cursor:pointer;
   transition: opacity .2s ease, filter .2s ease, transform .2s ease;
   transform-origin: 60px 60px;
+}
+
+.modelPanel .dim-card.dim-anim-pending .dim-segment{
+  opacity: 1;
+}
+
+.modelPanel .dim-card.dim-anim-running .dim-segment{
+  opacity: 1;
 }
 
 .modelPanel .dim-card.has-hover .dim-segment{
@@ -1243,7 +1262,7 @@ opacity: .75;
     color-mix(in srgb, var(--schoolColor, #D9AA3F) 92%, #1a2230 8%)
   );
   border-radius: 999px;
-  transition: width 0.45s cubic-bezier(.2,.8,.2,1);
+  transition: width 1.55s cubic-bezier(0.16, 1, 0.22, 1);
   box-shadow:
     0 0 12px color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, transparent),
     inset 0 1px 0 rgba(255,255,255,.35);
@@ -1323,8 +1342,8 @@ opacity: .75;
   }
 
   .modelPanel .dim-pieWrap{
-    width: 144px;
-    height: 144px;
+    width: 158px;
+    height: 158px;
   }
 
   /* El flujo circular desborda en pantallas estrechas: degradamos a layout lineal */
@@ -1559,8 +1578,8 @@ opacity: .75;
 }
 
 .mp-acc details{
-  border: 1px solid rgba(255,255,255,0.10);
-  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.03);
   border-radius: 14px;
   margin: 10px 0;
   overflow:hidden;
@@ -4353,11 +4372,31 @@ body.theme-light .mp-idea-body{
 }
 
 body.theme-light .modelPanel .grafica-procesos{
-  background: linear-gradient(180deg, rgba(255,255,255,.97), rgba(242,248,255,.90));
-  border-color: rgba(118,129,153,.24);
+  background:
+    radial-gradient(140% 120% at 18% 8%, rgba(255,255,255,.86), rgba(255,255,255,0) 54%),
+    radial-gradient(120% 130% at 92% 92%, color-mix(in srgb, var(--schoolColor,#5f8fd1) 14%, transparent), transparent 58%),
+    linear-gradient(180deg, rgba(255,255,255,.88), rgba(245,250,255,.72));
+  border-color: rgba(118,129,153,.14);
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.98),
-    0 10px 24px rgba(28,47,79,.10);
+    inset 0 1px 0 rgba(255,255,255,.96),
+    inset 0 0 0 1px rgba(255,255,255,.42),
+    0 12px 28px rgba(28,47,79,.12);
+  backdrop-filter: blur(14px) saturate(116%);
+  -webkit-backdrop-filter: blur(14px) saturate(116%);
+}
+
+body.theme-light .modelPanel .dim-card{
+  background:
+    radial-gradient(140% 120% at 18% 8%, rgba(255,255,255,.88), rgba(255,255,255,0) 54%),
+    radial-gradient(120% 130% at 92% 92%, color-mix(in srgb, var(--schoolColor,#5f8fd1) 12%, transparent), transparent 58%),
+    linear-gradient(180deg, rgba(255,255,255,.90), rgba(245,250,255,.74));
+  border-color: rgba(118,129,153,.14);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.96),
+    inset 0 0 0 1px rgba(255,255,255,.40),
+    0 14px 30px rgba(28,47,79,.12);
+  backdrop-filter: blur(14px) saturate(116%);
+  -webkit-backdrop-filter: blur(14px) saturate(116%);
 }
 
 body.theme-light .modelPanel .fila-proceso{
@@ -7209,6 +7248,7 @@ if (!fotoUrl){
 
 initDimHoverSync(modelInfoEl);
 initProcessDetailSync(modelInfoEl);
+initGraphEntranceAnimations(modelInfoEl);
 initProcesosHeightSync(modelInfoEl);
 
       // === Mini map de fondo (lazy: no bloquea la ficha en móvil) ===
@@ -7385,9 +7425,19 @@ function renderDimensionesCambioChart(dimObj, modelMeta = null){
     const largeArc = span > 180 ? 1 : 0;
     return `M 60 60 L ${x1.toFixed(3)} ${y1.toFixed(3)} A ${r} ${r} 0 ${largeArc} 1 ${x2.toFixed(3)} ${y2.toFixed(3)} Z`;
   };
+  const pieRevealPath = (endDeg, r = 86) => {
+    const startDeg = -90;
+    const clampedEnd = Math.max(startDeg + 0.001, Math.min(270, endDeg));
+    const [x1, y1] = polar(startDeg, r);
+    const [x2, y2] = polar(clampedEnd, r);
+    const span = clampedEnd - startDeg;
+    const largeArc = span > 180 ? 1 : 0;
+    return `M 60 60 L ${x1.toFixed(3)} ${y1.toFixed(3)} A ${r} ${r} 0 ${largeArc} 1 ${x2.toFixed(3)} ${y2.toFixed(3)} Z`;
+  };
 
   let angleAcc = 0;
   const segments = [];
+  let segOrder = 0;
   for (const d of sortedVals){
     if (d.value <= 0) continue;
     const startDeg = ((angleAcc / total) * 360) - 90;
@@ -7402,11 +7452,12 @@ function renderDimensionesCambioChart(dimObj, modelMeta = null){
         <circle
           class="dim-segment"
           data-dim-id="${d.id}"
-          style="--segmentColor:${d.color}"
+          style="--segmentColor:${d.color};--seg-i:${segOrder}"
           cx="60" cy="60" r="56" fill="${d.color}">
           <title>${escapeHtml(title)}</title>
         </circle>
       `);
+      segOrder += 1;
       continue;
     }
 
@@ -7414,15 +7465,17 @@ function renderDimensionesCambioChart(dimObj, modelMeta = null){
       <path
         class="dim-segment"
         data-dim-id="${d.id}"
-        style="--segmentColor:${d.color}"
+        style="--segmentColor:${d.color};--seg-i:${segOrder}"
         fill="${d.color}"
         d="${pieSectorPath(startDeg, endDeg)}">
         <title>${escapeHtml(title)}</title>
       </path>
     `);
+    segOrder += 1;
   }
 
   const hasAnyJustification = sortedVals.some((d) => !!d.justification);
+  const clipId = `dimReveal_${Math.random().toString(36).slice(2, 10)}`;
 
   const rowTemplate = (d) => {
     const pct = (d.value / total) * 100;
@@ -7478,7 +7531,14 @@ function renderDimensionesCambioChart(dimObj, modelMeta = null){
       <div class="dim-pieWrap">
         <div class="dim-pie dim-interactive" role="img" aria-label="Distribución de dimensiones psicológicas y niveles contextuales">
           <svg class="dim-pieSvg" viewBox="0 0 120 120" aria-hidden="true">
-            ${segments.join('')}
+            <defs>
+              <clipPath id="${clipId}">
+                <path class="dim-revealMaskPath" data-reveal-path d="${pieRevealPath(-89.8)}"></path>
+              </clipPath>
+            </defs>
+            <g class="dim-segments" clip-path="url(#${clipId})">
+              ${segments.join('')}
+            </g>
           </svg>
         </div>
       </div>
@@ -7608,6 +7668,147 @@ function initProcessDetailSync(rootEl){
   });
 }
 
+function animateProcessBars(rootEl){
+  const root = (rootEl && typeof rootEl.querySelectorAll === 'function') ? rootEl : document;
+  const bars = Array.from(root.querySelectorAll('.grafica-procesos .barra[data-target-width]'));
+  if (!bars.length) return;
+
+  bars.forEach((bar) => {
+    const raw = Number(bar.dataset.targetWidth);
+    const target = Number.isFinite(raw) ? Math.max(0, Math.min(100, raw)) : 0;
+    bar.style.width = '0%';
+    bar.dataset.targetWidth = String(target);
+  });
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      bars.forEach((bar) => {
+        bar.style.width = `${bar.dataset.targetWidth}%`;
+      });
+    });
+  });
+}
+
+function animateDimPie(cardEl){
+  if (!cardEl || cardEl.dataset.dimAnimated === '1') return;
+  const segs = cardEl.querySelectorAll('.dim-segment');
+  if (!segs.length){
+    cardEl.dataset.dimAnimated = '1';
+    return;
+  }
+
+  const revealPathEl = cardEl.querySelector('.dim-revealMaskPath[data-reveal-path]');
+  const revealPathAt = (endDeg, r = 86) => {
+    const startDeg = -90;
+    const clampedEnd = Math.max(startDeg + 0.001, Math.min(270, endDeg));
+    const radA = (startDeg * Math.PI) / 180;
+    const radB = (clampedEnd * Math.PI) / 180;
+    const x1 = 60 + (r * Math.cos(radA));
+    const y1 = 60 + (r * Math.sin(radA));
+    const x2 = 60 + (r * Math.cos(radB));
+    const y2 = 60 + (r * Math.sin(radB));
+    const span = clampedEnd - startDeg;
+    const largeArc = span > 180 ? 1 : 0;
+    return `M 60 60 L ${x1.toFixed(3)} ${y1.toFixed(3)} A ${r} ${r} 0 ${largeArc} 1 ${x2.toFixed(3)} ${y2.toFixed(3)} Z`;
+  };
+  const fullRevealPath = 'M 60 60 m -86 0 a 86 86 0 1 0 172 0 a 86 86 0 1 0 -172 0';
+
+  if (!revealPathEl){
+    cardEl.dataset.dimAnimated = '1';
+    return;
+  }
+
+  cardEl.classList.add('dim-anim-pending');
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      cardEl.classList.add('dim-anim-running');
+      cardEl.classList.remove('dim-anim-pending');
+      const prefersReduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+      if (prefersReduced){
+        revealPathEl.setAttribute('d', fullRevealPath);
+        cardEl.dataset.dimAnimated = '1';
+        cardEl.classList.remove('dim-anim-running');
+        return;
+      }
+
+      const duration = 1250;
+      const startTs = performance.now();
+      const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+      const tick = (now) => {
+        const raw = (now - startTs) / duration;
+        const t = Math.max(0, Math.min(1, raw));
+        const eased = easeOutCubic(t);
+        const endDeg = -90 + (360 * eased);
+        revealPathEl.setAttribute('d', revealPathAt(endDeg));
+
+        if (t < 1){
+          requestAnimationFrame(tick);
+          return;
+        }
+
+        revealPathEl.setAttribute('d', fullRevealPath);
+        cardEl.dataset.dimAnimated = '1';
+        cardEl.classList.remove('dim-anim-running');
+      };
+
+      requestAnimationFrame(tick);
+    });
+  });
+}
+
+function initGraphEntranceAnimations(rootEl){
+  const root = (rootEl && typeof rootEl.querySelectorAll === 'function') ? rootEl : document;
+  const barCards = Array.from(root.querySelectorAll('.grafica-procesos'));
+  const dimCards = Array.from(root.querySelectorAll('.dim-card'));
+  const targets = [...barCards, ...dimCards];
+  if (!targets.length) return;
+
+  // estado inicial: barras a 0 y pie preparado
+  barCards.forEach((card) => {
+    const bars = card.querySelectorAll('.barra[data-target-width]');
+    bars.forEach((bar) => {
+      bar.style.width = '0%';
+    });
+    card.dataset.barsAnimated = '0';
+  });
+
+  dimCards.forEach((card) => {
+    card.classList.add('dim-anim-pending');
+    card.dataset.dimAnimated = '0';
+  });
+
+  const triggerTarget = (el) => {
+    if (!el) return;
+    if (el.classList.contains('grafica-procesos') && el.dataset.barsAnimated !== '1'){
+      animateProcessBars(el);
+      el.dataset.barsAnimated = '1';
+    }
+    if (el.classList.contains('dim-card') && el.dataset.dimAnimated !== '1'){
+      animateDimPie(el);
+    }
+  };
+
+  if (!('IntersectionObserver' in window)){
+    targets.forEach(triggerTarget);
+    return;
+  }
+
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      triggerTarget(entry.target);
+      obs.unobserve(entry.target);
+    });
+  }, {
+    root: null,
+    threshold: 0.28,
+    rootMargin: '0px 0px -8% 0px'
+  });
+
+  targets.forEach((el) => io.observe(el));
+}
+
 function syncProcesosGridHeights(rootEl){
   const root = (rootEl && typeof rootEl.querySelectorAll === 'function') ? rootEl : document;
   const isNarrow = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
@@ -7699,7 +7900,7 @@ function renderGraficaProcesos(modelOrProcesos){
             <button class="dim-expandBtn" type="button" hidden aria-expanded="false">Ver más</button>
           </div>
           <div class="grafica-procesos">
-            <h4 class="dim-title">A través de</h4>
+            <h4 class="dim-title">A través de (procesos de cambio)</h4>
             <div class="dim-empty">Sin procesos definidos.</div>
           </div>
         </div>
@@ -7745,7 +7946,7 @@ function renderGraficaProcesos(modelOrProcesos){
           <span class="proceso-nombre">${escapeHtml(tip)}</span>
         </div>
         <div class="barra-container" title="${escapeHtml(tip)}">
-          <div class="barra" style="width: ${widthSafe}%"></div>
+          <div class="barra" data-target-width="${widthSafe}" style="width:0%"></div>
         </div>
         </button>
         ${detailHtml}
@@ -7763,7 +7964,7 @@ function renderGraficaProcesos(modelOrProcesos){
           <button class="dim-expandBtn" type="button" hidden aria-expanded="false">Ver más</button>
         </div>
         <div class="grafica-procesos">
-          <h4 class="dim-title">A través de</h4>
+          <h4 class="dim-title">A través de (procesos de cambio)</h4>
           ${filas}
         </div>
       </div>
@@ -8648,5 +8849,7 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
 
 </body>
 </html>
+
+
 
 
