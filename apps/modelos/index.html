@@ -869,9 +869,10 @@ opacity: .75;
 }
 
 .modelPanel .dim-col{
+  position:relative;
   display:flex;
   flex-direction:column;
-  gap:8px;
+  gap:0;
   min-height:0;
 }
 
@@ -890,11 +891,29 @@ opacity: .75;
   bottom:0;
   height:56px;
   pointer-events:none;
-  background: linear-gradient(180deg, rgba(12,17,24,0), rgba(12,17,24,.92));
+  display:none;
+}
+
+.modelPanel .dim-colBody.is-collapsed{
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) calc(100% - 56px),
+    rgba(0,0,0,0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) calc(100% - 56px),
+    rgba(0,0,0,0) 100%
+  );
 }
 
 .modelPanel .dim-expandBtn{
+  position:relative;
+  z-index:4;
   align-self:center;
+  margin-top:8px;
   border:1px solid color-mix(in srgb, var(--schoolColor, #D9AA3F) 48%, rgba(255,255,255,.24));
   background:
     linear-gradient(180deg,
@@ -912,6 +931,14 @@ opacity: .75;
   box-shadow:
     0 0 0 2px color-mix(in srgb, var(--schoolColor, #D9AA3F) 14%, transparent),
     inset 0 1px 0 rgba(255,255,255,.24);
+}
+
+.modelPanel .dim-colBody.is-collapsed + .dim-expandBtn{
+  position:absolute;
+  left:50%;
+  bottom:10px;
+  transform:translateX(-50%);
+  margin-top:0;
 }
 
 .modelPanel .dim-expandBtn:hover{
@@ -4393,7 +4420,7 @@ body.theme-light .modelPanel .dim-card.has-hover .dim-row.is-linked-hover{
 }
 
 body.theme-light .modelPanel .dim-colBody.is-collapsed::after{
-  background: linear-gradient(180deg, rgba(249,252,255,0), rgba(249,252,255,.95));
+  display:none;
 }
 
 body.theme-light .modelPanel .dim-expandBtn{
@@ -7340,7 +7367,7 @@ function renderDimensionesCambioChart(dimObj, modelMeta = null){
   if (total <= 0){
     return `
       <div class="dim-card">
-        <h4 class="dim-title">Dimensiones psicológicas y niveles contextuales</h4>
+        <h4 class="dim-title">Interviene en las siguientes dimensiones</h4>
         <div class="dim-empty">Sin definir en este modelo.</div>
       </div>
     `;
@@ -7447,7 +7474,7 @@ function renderDimensionesCambioChart(dimObj, modelMeta = null){
 
   return `
     <div class="dim-card">
-      <h4 class="dim-title">Dimensiones psicológicas y niveles contextuales</h4>
+      <h4 class="dim-title">Interviene en las siguientes dimensiones</h4>
       <div class="dim-pieWrap">
         <div class="dim-pie dim-interactive" role="img" aria-label="Distribución de dimensiones psicológicas y niveles contextuales">
           <svg class="dim-pieSvg" viewBox="0 0 120 120" aria-hidden="true">
@@ -7664,7 +7691,6 @@ function renderGraficaProcesos(modelOrProcesos){
   if(!procesos || typeof procesos !== 'object'){
     return `
       <div class="mp-section">
-        <h3>Procesos</h3>
         <div class="procesos-grid">
           <div class="dim-col">
             <div class="dim-colBody" data-expanded="0">
@@ -7672,7 +7698,10 @@ function renderGraficaProcesos(modelOrProcesos){
             </div>
             <button class="dim-expandBtn" type="button" hidden aria-expanded="false">Ver más</button>
           </div>
-          <div class="grafica-procesos"><div class="dim-empty">Sin procesos definidos.</div></div>
+          <div class="grafica-procesos">
+            <h4 class="dim-title">A través de</h4>
+            <div class="dim-empty">Sin procesos definidos.</div>
+          </div>
         </div>
       </div>
     `;
@@ -7680,14 +7709,14 @@ function renderGraficaProcesos(modelOrProcesos){
 
   const orden = ['RF', 'RE', 'AP', 'RI', 'N', 'I', 'AG', 'R'];
   const labels = {
-    RF: 'Regulación fisiológica / corporal',
-    RE: 'Regulación emocional',
-    AP: 'Acceso y procesamiento emocional',
-    RI: 'Relación interna',
-    N: 'Significado / narrativa / regulación cognitiva',
-    I: 'Identidad / Self',
-    AG: 'Agencia y acción',
-    R: 'Relacional / interpersonal'
+    RF: 'Regular cuerpo',
+    RE: 'Regular emociones',
+    AP: 'Procesar experiencia emocional',
+    RI: 'Transformar la relación con uno mismo',
+    N: 'Construir significado / narrativa',
+    I: 'Configurar identidad',
+    AG: 'Ejercer agencia',
+    R: 'Transformar las relaciones'
   };
 
   const filas = orden.map((code) => {
@@ -7726,7 +7755,6 @@ function renderGraficaProcesos(modelOrProcesos){
 
   return `
     <div class="mp-section">
-      <h3>Procesos</h3>
       <div class="procesos-grid">
         <div class="dim-col">
           <div class="dim-colBody" data-expanded="0">
@@ -7735,6 +7763,7 @@ function renderGraficaProcesos(modelOrProcesos){
           <button class="dim-expandBtn" type="button" hidden aria-expanded="false">Ver más</button>
         </div>
         <div class="grafica-procesos">
+          <h4 class="dim-title">A través de</h4>
           ${filas}
         </div>
       </div>
@@ -8619,3 +8648,5 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
 
 </body>
 </html>
+
+
