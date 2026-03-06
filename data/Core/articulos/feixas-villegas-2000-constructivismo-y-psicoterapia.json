@@ -40,6 +40,378 @@
     { "label": "Eje", "value": "Epistemología constructivista" }
   ],
 
+"charts": {
+  "bookStructureChart": {
+    "title": "Estructura del libro",
+    "subtitle": "Arquitectura general de Constructivismo y Psicoterapia",
+    "type": "stacked-sections",
+    "style": "editorial-clean",
+    "orientation": "vertical",
+    "showLegend": false,
+    "showValues": false,
+    "sections": [
+      {
+        "id": "marco-inicial",
+        "label": "Marco inicial",
+        "kind": "frontmatter",
+        "startPage": 11,
+        "endPage": 28,
+        "approxLength": 18,
+        "shortDescription": "Prólogo, prefacio e introducción general al constructivismo y su relevancia para la psicoterapia."
+      },
+      {
+        "id": "epistemologia-constructivista",
+        "label": "Epistemología constructivista",
+        "kind": "epistemology",
+        "startPage": 29,
+        "endPage": 102,
+        "approxLength": 74,
+        "shortDescription": "Fundamentos meta-teóricos y desarrollos psicológicos del constructivismo.",
+        "children": [
+          {
+            "id": "bases-meta-teoricas",
+            "label": "Bases meta-teóricas",
+            "startPage": 31,
+            "endPage": 70,
+            "approxLength": 40
+          },
+          {
+            "id": "desarrollos-en-psicologia",
+            "label": "Desarrollos en psicología",
+            "startPage": 71,
+            "endPage": 102,
+            "approxLength": 32
+          }
+        ]
+      },
+      {
+        "id": "psicoterapia-constructivista",
+        "label": "Psicoterapia constructivista",
+        "kind": "clinical",
+        "startPage": 103,
+        "endPage": 225,
+        "approxLength": 123,
+        "shortDescription": "Aplicaciones clínicas, enfoques terapéuticos y propuesta integradora del proceso terapéutico.",
+        "children": [
+          {
+            "id": "enfoques-terapeuticos",
+            "label": "Enfoques terapéuticos",
+            "startPage": 105,
+            "endPage": 180,
+            "approxLength": 76
+          },
+          {
+            "id": "proceso-terapeutico",
+            "label": "Proceso terapéutico",
+            "startPage": 181,
+            "endPage": 225,
+            "approxLength": 45
+          }
+        ]
+      },
+      {
+        "id": "apendice-rol-fijo",
+        "label": "Apéndice: técnica de rol fijo",
+        "kind": "appendix",
+        "startPage": 227,
+        "endPage": 238,
+        "approxLength": 12,
+        "shortDescription": "Aplicación clínica del procedimiento kelliano mediante un caso."
+      }
+    ]
+  },
+
+  "constructivistSourcesGraph": {
+    "title": "Fuentes del constructivismo",
+    "subtitle": "Confluencia multidisciplinar que sostiene el marco del libro",
+    "type": "tree",
+    "layout": "vertical",
+    "style": "minimal-apple",
+    "root": "constructivismo",
+    "nodes": [
+      {
+        "id": "constructivismo",
+        "label": "Constructivismo",
+        "level": 0,
+        "parentId": null,
+        "weight": 100,
+        "description": "Marco epistemológico general del libro."
+      },
+
+      {
+        "id": "filosofia",
+        "label": "Filosofía",
+        "level": 1,
+        "parentId": "constructivismo",
+        "weight": 82,
+        "description": "Antecedentes filosóficos del conocimiento como construcción.",
+        "keyAuthors": ["Kant", "Vaihinger", "Brentano", "Husserl"]
+      },
+      {
+        "id": "fisica",
+        "label": "Física",
+        "level": 1,
+        "parentId": "constructivismo",
+        "weight": 58,
+        "description": "Cuestionamiento del observador neutral y de la objetividad ingenua.",
+        "keyAuthors": ["Heisenberg", "Planck", "Einstein"]
+      },
+      {
+        "id": "biologia",
+        "label": "Biología",
+        "level": 1,
+        "parentId": "constructivismo",
+        "weight": 86,
+        "description": "El conocimiento se comprende como actividad de sistemas vivos autoorganizados.",
+        "keyAuthors": ["Maturana", "Varela", "von Uexküll"]
+      },
+      {
+        "id": "cibernetica",
+        "label": "Cibernética",
+        "level": 1,
+        "parentId": "constructivismo",
+        "weight": 74,
+        "description": "Importancia de autorreferencia, circularidad y observación de segundo orden.",
+        "keyAuthors": ["Wiener", "Ashby", "von Foerster"]
+      },
+      {
+        "id": "filosofia-ciencia",
+        "label": "Filosofía de la ciencia",
+        "level": 1,
+        "parentId": "constructivismo",
+        "weight": 71,
+        "description": "Crítica de la ciencia entendida como acceso directo a una verdad definitiva.",
+        "keyAuthors": ["Popper", "Kuhn", "Lakatos", "Feyerabend"]
+      },
+      {
+        "id": "psicologia",
+        "label": "Psicología",
+        "level": 1,
+        "parentId": "constructivismo",
+        "weight": 96,
+        "description": "Desarrollos psicológicos que traducen el constructivismo al estudio de la mente y la clínica.",
+        "keyAuthors": ["Piaget", "Kelly", "Bruner"]
+      },
+
+      {
+        "id": "piaget",
+        "label": "Piaget",
+        "level": 2,
+        "parentId": "psicologia",
+        "weight": 72,
+        "description": "Proceso genético de construcción del conocimiento."
+      },
+      {
+        "id": "kelly",
+        "label": "Kelly",
+        "level": 2,
+        "parentId": "psicologia",
+        "weight": 98,
+        "description": "Alternativismo constructivo y psicología de los constructos personales."
+      },
+      {
+        "id": "construccion-social",
+        "label": "Construcción social",
+        "level": 2,
+        "parentId": "psicologia",
+        "weight": 66,
+        "description": "La realidad psicológica se entiende también como producto de interacción social."
+      }
+    ]
+  },
+
+  "clinicalApproachesChart": {
+    "title": "Enfoques clínicos revisados",
+    "subtitle": "Grandes líneas terapéuticas abordadas en la parte clínica del libro",
+    "type": "cards-comparison",
+    "style": "editorial-cards",
+    "items": [
+      {
+        "id": "constructos-personales",
+        "label": "Terapia de los constructos personales",
+        "authors": ["George A. Kelly"],
+        "bookSectionPage": 107,
+        "focus": "Sistema de constructos, alternativismo constructivo y reconstrucción de significados.",
+        "levelOfAnalysis": "Individual",
+        "distinctiveContribution": "Es la referencia clínica más coherente con la epistemología constructivista defendida por el libro.",
+        "integrationRole": "Núcleo del enfoque y principal eje de articulación clínica."
+      },
+      {
+        "id": "enfoque-sistemico",
+        "label": "Enfoque sistémico",
+        "authors": ["Tradición sistémica constructivista"],
+        "bookSectionPage": 133,
+        "focus": "Interacción, contexto relacional y construcción compartida del significado.",
+        "levelOfAnalysis": "Sistema / relacional",
+        "distinctiveContribution": "Amplía la mirada más allá del individuo aislado.",
+        "integrationRole": "Complementa el constructivismo individual con una lectura contextual y vincular."
+      },
+      {
+        "id": "procesos-cambio-humano",
+        "label": "Teoría de los procesos de cambio humano",
+        "authors": ["Michael J. Mahoney"],
+        "bookSectionPage": 147,
+        "focus": "Cambio psicológico, autoorganización, desarrollo y transformación personal.",
+        "levelOfAnalysis": "Individual en proceso",
+        "distinctiveContribution": "Aporta una visión dinámica y evolutiva del cambio.",
+        "integrationRole": "Sirve de puente entre epistemología constructivista y dinámica clínica."
+      },
+      {
+        "id": "enfoques-evolutivos",
+        "label": "Enfoques evolutivos",
+        "authors": ["Vittorio Guidano", "Giovanni Liotti"],
+        "bookSectionPage": 163,
+        "focus": "Organización del self, desarrollo, identidad y niveles tácitos/explicativos.",
+        "levelOfAnalysis": "Self / desarrollo",
+        "distinctiveContribution": "Integra desarrollo, identidad y organización cognitivo-afectiva.",
+        "integrationRole": "Expande el constructivismo hacia modelos de organización personal."
+      }
+    ]
+  },
+
+  "constructivistTherapyFlow": {
+    "title": "Proceso terapéutico constructivista",
+    "subtitle": "La terapia como reconstrucción y generación de alternativas viables",
+    "type": "flow",
+    "orientation": "vertical",
+    "style": "clean-sequence",
+    "steps": [
+      {
+        "id": "construccion-rigida",
+        "title": "Construcción rígida de la experiencia",
+        "text": "La persona llega con formas de interpretar y organizar su experiencia que han perdido flexibilidad y reducen sus alternativas de acción y significado.",
+        "stage": 1,
+        "theme": "problem"
+      },
+      {
+        "id": "exploracion-sistema",
+        "title": "Exploración del sistema de significados",
+        "text": "El terapeuta intenta comprender cómo el cliente construye su mundo, qué coherencia interna sostiene su problema y qué anticipaciones organizan su experiencia.",
+        "stage": 2,
+        "theme": "exploration"
+      },
+      {
+        "id": "desnaturalizacion",
+        "title": "Cuestionamiento de lo dado por obvio",
+        "text": "Se debilita la idea de que esa lectura de la realidad es la única posible. La terapia abre espacio para nuevas distinciones y perspectivas.",
+        "stage": 3,
+        "theme": "exploration"
+      },
+      {
+        "id": "reconstruccion",
+        "title": "Reconstrucción de significados",
+        "text": "La experiencia se reformula de manera más amplia, diferenciada y habitable, sin imponer una verdad externa al cliente.",
+        "stage": 4,
+        "theme": "reconstruction",
+        "isCore": true
+      },
+      {
+        "id": "alternativas",
+        "title": "Generación de alternativas",
+        "text": "Se construyen nuevas maneras de anticipar, comprender, sentir y actuar.",
+        "stage": 5,
+        "theme": "reconstruction"
+      },
+      {
+        "id": "ensayo-validacion",
+        "title": "Ensayo y validación experiencial",
+        "text": "Las nuevas alternativas se ponen a prueba en la experiencia y se contrastan por su viabilidad, no por una supuesta verdad absoluta.",
+        "stage": 6,
+        "theme": "experimentation"
+      },
+      {
+        "id": "mayor-viabilidad",
+        "title": "Mayor viabilidad y flexibilidad",
+        "text": "El cambio se consolida cuando la persona logra una forma más satisfactoria, flexible y funcional de estar en el mundo.",
+        "stage": 7,
+        "theme": "consolidation"
+      }
+    ]
+  },
+
+  "epistemologyComparison": {
+    "title": "Objetivismo vs constructivismo",
+    "subtitle": "La oposición epistemológica que organiza el libro",
+    "type": "comparison-table",
+    "style": "two-column-editorial",
+    "leftLabel": "Objetivismo",
+    "rightLabel": "Constructivismo",
+    "rows": [
+      {
+        "dimension": "Conocimiento",
+        "left": "Representación de una realidad dada.",
+        "right": "Construcción activa de la experiencia."
+      },
+      {
+        "dimension": "Verdad",
+        "left": "Correspondencia entre mapa y territorio.",
+        "right": "Viabilidad, adecuación y utilidad de la construcción."
+      },
+      {
+        "dimension": "Papel del observador",
+        "left": "Idealmente neutral y externo.",
+        "right": "Participante inevitable en la construcción del conocimiento."
+      },
+      {
+        "dimension": "Función del terapeuta",
+        "left": "Detectar y corregir errores respecto a lo real.",
+        "right": "Comprender el sistema del cliente y abrir alternativas viables."
+      },
+      {
+        "dimension": "Naturaleza del problema",
+        "left": "Déficit, error o distorsión frente a una realidad objetiva.",
+        "right": "Construcción rígida, limitada o poco viable."
+      },
+      {
+        "dimension": "Meta del cambio",
+        "left": "Corregir lo desajustado.",
+        "right": "Reconstruir significados y ampliar posibilidades."
+      },
+      {
+        "dimension": "Criterio clínico",
+        "left": "Ajuste a una lectura correcta.",
+        "right": "Mayor flexibilidad, coherencia y viabilidad vital."
+      }
+    ]
+  },
+
+  "authorsInfluenceMap": {
+    "title": "Mapa de autores e influencias",
+    "subtitle": "Ecosistema intelectual del libro",
+    "type": "network-mini",
+    "style": "clean-nodes",
+    "nodes": [
+      { "id": "kelly", "label": "Kelly", "type": "author", "importance": 100, "cluster": "clinical-core" },
+      { "id": "piaget", "label": "Piaget", "type": "author", "importance": 78, "cluster": "psychology" },
+      { "id": "mahoney", "label": "Mahoney", "type": "author", "importance": 86, "cluster": "clinical-core" },
+      { "id": "guidano", "label": "Guidano", "type": "author", "importance": 80, "cluster": "clinical-core" },
+      { "id": "liotti", "label": "Liotti", "type": "author", "importance": 68, "cluster": "clinical-core" },
+      { "id": "maturana", "label": "Maturana", "type": "author", "importance": 74, "cluster": "biology" },
+      { "id": "varela", "label": "Varela", "type": "author", "importance": 66, "cluster": "biology" },
+      { "id": "von-foerster", "label": "Von Foerster", "type": "author", "importance": 63, "cluster": "cybernetics" },
+      { "id": "kuhn", "label": "Kuhn", "type": "author", "importance": 52, "cluster": "philosophy-of-science" },
+      { "id": "popper", "label": "Popper", "type": "author", "importance": 48, "cluster": "philosophy-of-science" },
+      { "id": "sistemica", "label": "Enfoque sistémico", "type": "school", "importance": 82, "cluster": "clinical-core" }
+    ],
+    "links": [
+      { "source": "kelly", "target": "mahoney", "type": "clinical-influence" },
+      { "source": "kelly", "target": "guidano", "type": "parallelism" },
+      { "source": "kelly", "target": "liotti", "type": "parallelism" },
+      { "source": "kelly", "target": "sistemica", "type": "integrated-by-book" },
+      { "source": "piaget", "target": "kelly", "type": "epistemological-proximity" },
+      { "source": "maturana", "target": "varela", "type": "shared-framework" },
+      { "source": "maturana", "target": "kelly", "type": "epistemological-affinity" },
+      { "source": "von-foerster", "target": "sistemica", "type": "epistemological-base" },
+      { "source": "kuhn", "target": "constructivismo-libro", "type": "meta-theoretical-context" },
+      { "source": "popper", "target": "constructivismo-libro", "type": "meta-theoretical-context" }
+    ],
+    "display": {
+      "maxVisibleNodes": 12,
+      "showLabels": true,
+      "clusterColors": false
+    }
+  }
+},
   "historicalContext": [
     "El libro se presenta como una obra introductoria destinada a acercar al público hispanohablante el movimiento constructivista y su influencia en psicoterapia.",
     "En el prólogo a la tercera edición, los autores explican que diez años después de la redacción inicial el constructivismo había dejado de ser una rareza terminológica en psicoterapia y se había consolidado mediante publicaciones, congresos, formación y desarrollos clínicos.",
