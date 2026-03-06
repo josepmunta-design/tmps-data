@@ -37,7 +37,117 @@
     { "label": "Año", "value": "2015" },
     { "label": "Eje", "value": "Modelo contextual" }
   ],
-
+"changeElementsPercentages": {
+  "title": "Porcentaje de varianza o peso empírico de los elementos de cambio",
+  "subtitle": "Cifras reportadas o derivadas de la evidencia resumida por Wampold e Imel",
+  "note": "Wampold e Imel no presentan un reparto cerrado del resultado terapéutico en porcentajes que sumen 100. Esta sección recoge únicamente porcentajes empíricos citados en la literatura resumida por el libro, o derivados directamente de los tamaños de efecto reportados. Cuando el libro no ofrece un porcentaje defendible, se deja como null.",
+  "elements": [
+    {
+      "id": "therapeutic-alliance",
+      "label": "Alianza terapéutica",
+      "percent": 7.3,
+      "basis": "Correlación alianza-resultado r = .27, equivalente a aproximadamente 7.3% de varianza compartida.",
+      "metricType": "shared_variance",
+      "sourceNote": "Meta-análisis resumido por Wampold (2015), coherente con The Great Psychotherapy Debate."
+    },
+    {
+      "id": "goal-consensus-collaboration",
+      "label": "Consenso en objetivos y colaboración",
+      "percent": 11.5,
+      "basis": "Derivado de d = 0.72, convertido aproximadamente a porcentaje de varianza explicada.",
+      "metricType": "derived_from_d",
+      "sourceNote": "Meta-análisis citado en la síntesis de Wampold sobre factores comunes."
+    },
+    {
+      "id": "empathy",
+      "label": "Empatía del terapeuta",
+      "percent": 9.0,
+      "basis": "Derivado de d = 0.63, convertido aproximadamente a porcentaje de varianza explicada.",
+      "metricType": "derived_from_d",
+      "sourceNote": "Meta-análisis resumido por Wampold."
+    },
+    {
+      "id": "expectations",
+      "label": "Expectativas de mejora",
+      "percent": 1.4,
+      "basis": "Derivado de d = 0.24, convertido aproximadamente a porcentaje de varianza explicada.",
+      "metricType": "derived_from_d",
+      "sourceNote": "Meta-análisis sobre expectativas resumido por Wampold."
+    },
+    {
+      "id": "therapist-effects",
+      "label": "Efecto terapeuta",
+      "percent": 3.0,
+      "basis": "En ensayos clínicos, d = 0.35, equivalente aproximadamente a 3.0% de varianza; otras fuentes asociadas al programa de investigación de Wampold sitúan el efecto terapeuta a menudo en torno al 3–7%, y un estudio naturalista clásico halló alrededor del 5%.",
+      "metricType": "derived_from_d_and_reported_range",
+      "sourceNote": "La magnitud depende del diseño del estudio."
+    },
+    {
+      "id": "specific-treatment-model",
+      "label": "Especificidad del modelo / diferencias entre tratamientos",
+      "percent": 1.0,
+      "basis": "Wampold e Imel afirman que los efectos de tratamiento explican como mucho alrededor del 1% de la variabilidad en resultados.",
+      "metricType": "reported_variance_limit",
+      "sourceNote": "Esto se refiere a diferencias entre modelos/tratamientos, no a la utilidad clínica local de una técnica concreta."
+    },
+    {
+      "id": "specific-ingredients-dismantling",
+      "label": "Ingredientes específicos en estudios de desmontaje",
+      "percent": 0.0,
+      "basis": "Los estudios de desmontaje resumidos por Wampold muestran d = 0.01, es decir, efecto prácticamente nulo del ingrediente aislado eliminado.",
+      "metricType": "near_zero_effect",
+      "sourceNote": "Puede representarse como 0.0% por claridad visual, aunque técnicamente no sea cero absoluto."
+    },
+    {
+      "id": "adherence",
+      "label": "Adherencia al protocolo",
+      "percent": 0.1,
+      "basis": "Derivado de d = 0.04, efecto trivial.",
+      "metricType": "derived_from_d",
+      "sourceNote": "El libro no la presenta como motor principal del cambio."
+    },
+    {
+      "id": "competence",
+      "label": "Competencia técnica observada",
+      "percent": 0.5,
+      "basis": "Derivado de d = 0.14, efecto pequeño.",
+      "metricType": "derived_from_d",
+      "sourceNote": "Wampold e Imel discuten que la competencia medida de este modo no captura bien lo que hace eficaz al terapeuta."
+    },
+    {
+      "id": "real-relationship",
+      "label": "Relación terapéutica real",
+      "percent": null,
+      "basis": "El libro la considera central en el modelo contextual, pero no ofrece un porcentaje único y estable directamente atribuible a este factor.",
+      "metricType": "not_directly_quantified",
+      "sourceNote": "Conviene no inventar cifra."
+    },
+    {
+      "id": "explanation-rationale",
+      "label": "Explicación / razón de ser",
+      "percent": null,
+      "basis": "Es central en el modelo contextual, pero no aparece con un porcentaje único defendible como componente aislado.",
+      "metricType": "not_directly_quantified",
+      "sourceNote": "Conviene no inventar cifra."
+    },
+    {
+      "id": "ritual-therapeutic-actions",
+      "label": "Ritual terapéutico / acciones terapéuticas",
+      "percent": null,
+      "basis": "El libro lo considera parte esencial del mecanismo contextual, pero no proporciona un porcentaje único independiente.",
+      "metricType": "not_directly_quantified",
+      "sourceNote": "Conviene no inventar cifra."
+    },
+    {
+      "id": "patient-participation",
+      "label": "Participación activa del paciente",
+      "percent": null,
+      "basis": "La participación del paciente es nuclear en el modelo, pero no se ofrece una estimación porcentual aislada y estable.",
+      "metricType": "not_directly_quantified",
+      "sourceNote": "Conviene no inventar cifra."
+    }
+  ]
+},
   "historicalContext": [
     "La primera edición de 2001 ya había cuestionado la idea de que las psicoterapias funcionen principalmente por ingredientes específicos análogos a principios activos médicos.",
     "La segunda edición de 2015 amplía la presentación del modelo contextual y añade una revisión más desarrollada sobre historia de prácticas de curación, efecto terapeuta y evidencia sobre factores comunes.",
