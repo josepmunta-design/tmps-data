@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-07T19:21:15.677Z",
+  "generatedAt": "2026-03-07T19:25:57.014Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 175,
-    "links": 173,
-    "unresolvedInfluences": 597
+    "links": 176,
+    "unresolvedInfluences": 603
   },
   "nodes": [
     {
@@ -1236,9 +1236,20 @@
       "isMarco": false,
       "file": "modelos/humanista/terapia-existencial-may-yalom-1961.json",
       "authors": "Rollo May; Irvin D. Yalom; Viktor Frankl; Emmy van Deurzen",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "La terapia existencial se centra en la relación del individuo con las condiciones fundamentales de la existencia: libertad, responsabilidad, muerte, aislamiento y búsqueda de sentido. No parte de un modelo psicopatológico cerrado, sino de una comprensión fenomenológica del vivir humano y de cómo la evitación de estas dadas existenciales puede generar ansiedad, vacío o desorientación vital. Su propósito es ayudar a la persona a confrontar con lucidez su propia existencia, clarificar valores auténticos, sostener la angustia inherente a la libertad y tomar decisiones alineadas con una vida con sentido. Más que eliminar síntomas, busca ampliar conciencia, autenticidad y responsabilidad, facilitando que el individuo asuma su capacidad de elección dentro de los límites inevitables de la condición humana.",
+      "influencias": [
+        "Fenomenología",
+        "Existencialismo",
+        "Logoterapia (Frankl)",
+        "Humanismo fenomenológico",
+        "Psicodinámica relacional"
+      ],
+      "refs": [
+        "May, R. (1953). Man’s Search for Himself.",
+        "Yalom, I. (1980). Existential Psychotherapy.",
+        "Frankl, V. (1959). Man’s Search for Meaning.",
+        "van Deurzen, E. (2012). Existential Counselling & Psychotherapy."
+      ],
       "lat": 40.712776,
       "lon": -74.005974,
       "ciudad": "Nueva York",
@@ -4074,13 +4085,22 @@
       "isMarco": false,
       "file": "modelos/humanista/s13eftp1999.json",
       "authors": "Sue Johnson",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
-      "lat": null,
-      "lon": null,
-      "ciudad": null,
-      "pais": null,
+      "summary": "La Terapia Focalizada en las Emociones de Pareja (EFT-C) es un modelo experiencial, humanista y relacional basado en la teoría del apego adulto. Concibe el sufrimiento de pareja como el resultado de ciclos interactivos negativos que emergen cuando las necesidades básicas de apego —seguridad, accesibilidad emocional y responsividad— no están siendo satisfechas. El problema no reside en los individuos, sino en el patrón relacional que organiza sus respuestas emocionales defensivas. El cambio terapéutico se produce mediante experiencias emocionales correctivas que permiten acceder a emociones primarias de apego, reorganizar la interacción y consolidar un vínculo más seguro y flexible (Johnson, 2004; Johnson, 2019).",
+      "influencias": [
+        "Teoría del apego",
+        "Terapia experiencial",
+        "Humanismo",
+        "Sistémica relacional"
+      ],
+      "refs": [
+        "Johnson, S. (2004). The Practice of Emotionally Focused Couple Therapy.",
+        "Johnson, S. (2019). Attachment Theory in Practice.",
+        "Greenberg, L., & Johnson, S. (1988). Emotionally Focused Therapy for Couples."
+      ],
+      "lat": 45.423106,
+      "lon": -75.683126,
+      "ciudad": "Ottawa",
+      "pais": "Canadá",
       "escuelaId": "humanista"
     },
     {
@@ -5357,6 +5377,14 @@
       "target": "ruler-yale-emotional-intelligence-2012"
     },
     {
+      "source": "teoria-apego-bowlby",
+      "target": "s13eftp1999"
+    },
+    {
+      "source": "terapia-experiencial-1970",
+      "target": "s13eftp1999"
+    },
+    {
       "source": "terapia-gestalt-perls-1951",
       "target": "movimiento-potencial-humano-esalen"
     },
@@ -5431,6 +5459,10 @@
     {
       "source": "psicoanalisis-clasico-freud",
       "target": "terapia-gestalt-perls-1951"
+    },
+    {
+      "source": "logoterapia-1940",
+      "target": "terapia-existencial-may-yalom-1961"
     },
     {
       "source": "k1kelly55",
@@ -6703,6 +6735,14 @@
       "influence": "Psicoanálisis (relectura crítica)"
     },
     {
+      "target": "s13eftp1999",
+      "influence": "Humanismo"
+    },
+    {
+      "target": "s13eftp1999",
+      "influence": "Sistémica relacional"
+    },
+    {
       "target": "h14psdrama1921",
       "influence": "Teatro terapéutico"
     },
@@ -6917,6 +6957,22 @@
     {
       "target": "terapia-gestalt-perls-1951",
       "influence": "Teatro y arte experimental"
+    },
+    {
+      "target": "terapia-existencial-may-yalom-1961",
+      "influence": "Fenomenología"
+    },
+    {
+      "target": "terapia-existencial-may-yalom-1961",
+      "influence": "Existencialismo"
+    },
+    {
+      "target": "terapia-existencial-may-yalom-1961",
+      "influence": "Humanismo fenomenológico"
+    },
+    {
+      "target": "terapia-existencial-may-yalom-1961",
+      "influence": "Psicodinámica relacional"
     },
     {
       "target": "emotion-focused-skills-training-efst-2016",
