@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_coregulacion",
-  "updatedAt": "2026-03-07T19:24:18.679Z",
-  "totalModelos": 27,
+  "updatedAt": "2026-03-07T19:30:31.378Z",
+  "totalModelos": 29,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -271,6 +271,22 @@
       ]
     },
     {
+      "modelId": "eft-greenberg-1990",
+      "modelLabel": "Terapia enfocada en las emociones",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Leslie Greenberg; Robert Elliott",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "m_eft_validacion_correctiva",
+          "nombre": "Micro-validación correctiva",
+          "texto": "Intervención breve que valida explícitamente la legitimidad de la emoción primaria adaptativa del paciente, proporcionando experiencia relacional correctiva que contrarresta invalidación previa internalizada. (Greenberg & Safran, 1987).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "emotion-focused-skills-training-efst-2016",
       "modelLabel": "Emotion-Focused Skills Training (EFST)",
       "modelGrupo": "Humanista",
@@ -304,6 +320,22 @@
           "codigo": "m_psdrama_caldeamiento",
           "nombre": "Caldeamiento",
           "texto": "Fase inicial que prepara al individuo y al grupo para el trabajo dramático, aumentando la activación emocional óptima y la sensación de seguridad relacional. Facilita el paso de la conversación a la acción y promueve disponibilidad emocional para el proceso terapéutico (Moreno, 1953).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "s13eftp1999",
+      "modelLabel": "Terapia Focalizada en las Emociones de Pareja (EFT-C)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Sue Johnson",
+      "modelYear": 1999,
+      "items": [
+        {
+          "codigo": "m_eft_conexion",
+          "nombre": "Tareas de conexión emocional",
+          "texto": "Pequeñas tareas estructuradas fuera de sesión que invitan a la pareja a practicar accesibilidad y responsividad emocional en contextos cotidianos. Refuerzan la consolidación del apego seguro y generalizan el cambio más allá de la consulta (Johnson, 2019).",
           "sub": "R_coregulacion",
           "tipo": "micro"
         }
