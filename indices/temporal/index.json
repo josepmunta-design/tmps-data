@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-07T19:25:57.014Z",
+  "generatedAt": "2026-03-07T19:36:32.955Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 175,
-    "links": 176,
-    "unresolvedInfluences": 603
+    "links": 178,
+    "unresolvedInfluences": 606
   },
   "nodes": [
     {
@@ -3283,17 +3283,27 @@
     },
     {
       "id": "eft-greenberg-1990",
-      "label": "Terapia enfocada en las emociones (EFT)",
+      "label": "Terapia enfocada en las emociones",
       "year": 1990,
       "group": "Humanista",
       "importance": 2,
       "type": "modelo",
       "isMarco": false,
       "file": "modelos/humanista/eft-greenberg-1990.json",
-      "authors": "Leslie S. Greenberg; Robert Elliott",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "authors": "Leslie Greenberg; Robert Elliott",
+      "summary": "La Terapia Enfocada en las Emociones (EFT) integra la tradición humanista-experiencial con investigación contemporánea sobre emoción y cambio terapéutico, sosteniendo que las emociones no son obstáculos a controlar sino sistemas adaptativos que organizan la experiencia y guían la acción cuando se accede a ellas de forma segura y diferenciada. El modelo distingue emociones primarias adaptativas, primarias desadaptativas, secundarias y emocionales instrumentales, y propone que el sufrimiento persiste cuando esquemas emocionales desadaptativos (aprendizajes afectivos centrales ligados a apego, vergüenza, miedo, indefensión) dominan la percepción y la conducta. La intervención se apoya en una relación terapéutica empática y colaborativa y en “tareas” experienciales estructuradas —como silla vacía, diálogo de dos sillas, evocación corporal y focusing— para acceder a emoción primaria, simbolizarla, clarificar necesidades, resignificar experiencias y generar nuevas respuestas emocionales correctivas (p. ej., autocompasión frente a autocrítica, asertividad frente a sumisión, duelo adaptativo frente a bloqueo). El cambio se conceptualiza como un proceso de activar emoción en el presente, regularla dentro de la ventana de tolerancia, transformarla por medio de nuevas emociones adaptativas y consolidar significados e identidades más coherentes.",
+      "influencias": [
+        "Terapia Gestalt",
+        "Terapia centrada en la persona",
+        "Psicología humanista (tercera fuerza)",
+        "Psicoterapia experiencial",
+        "Fenomenología / Hermenéutica"
+      ],
+      "refs": [
+        "Greenberg, L. S., & Safran, J. D. (1987). Emotion in Psychotherapy.",
+        "Greenberg, L. S., Rice, L. N., & Elliott, R. (1993). Facilitating Emotional Change.",
+        "Greenberg, L. S. (2002/2017). Emotion-Focused Therapy."
+      ],
       "lat": 43.773454,
       "lon": -79.501882,
       "ciudad": "Toronto",
@@ -5457,6 +5467,14 @@
       "target": "terapia-transpersonal-1968"
     },
     {
+      "source": "terapia-gestalt-perls-1951",
+      "target": "eft-greenberg-1990"
+    },
+    {
+      "source": "terapia-centrada-en-la-persona-rogers-1951",
+      "target": "eft-greenberg-1990"
+    },
+    {
       "source": "psicoanalisis-clasico-freud",
       "target": "terapia-gestalt-perls-1951"
     },
@@ -6929,6 +6947,18 @@
     {
       "target": "terapia-transpersonal-1968",
       "influence": "Psicología de la conciencia"
+    },
+    {
+      "target": "eft-greenberg-1990",
+      "influence": "Psicología humanista (tercera fuerza)"
+    },
+    {
+      "target": "eft-greenberg-1990",
+      "influence": "Psicoterapia experiencial"
+    },
+    {
+      "target": "eft-greenberg-1990",
+      "influence": "Fenomenología / Hermenéutica"
     },
     {
       "target": "terapia-centrada-en-la-persona-rogers-1951",
