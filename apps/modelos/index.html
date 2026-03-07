@@ -350,18 +350,34 @@ animation: panelBreath 5s ease-in-out infinite;
 
     .schoolControls{
       display:grid;
-      grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);
-      gap:12px;
-      align-items:end;
+      grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(58px,.28fr);
+      gap:8px;
+      align-items:center;
       width:100%;
     }
 
-    .schoolControlHead{
-      margin-bottom:8px;
+    .schoolControls .schoolControl{
+      min-width:0;
+    }
+
+    .schoolControls select{
+      width:100%;
+      height:38px;
+      padding:8px 32px 8px 10px;
+      border-radius:11px;
+      font-size:12px;
+    }
+
+    .compactLabel{
+      display:none;
+    }
+
+    .groupTargetWrap[hidden]{
+      display:none !important;
     }
 
     .schoolSelectRow{
-      display:block;
+      display:none !important;
     }
 
     .mobileTypeSlot{
@@ -2097,6 +2113,50 @@ html, body{ position: relative; }
 #modelInfo.school-view .mp-hint{
   margin-top: 12px; /* en vez de auto */
 }
+
+#modelInfo.school-view .mp-hint.dim-overview-hint{
+  position: relative;
+  margin-top: 14px;
+  padding: 14px 16px 14px 46px;
+  border-radius: 16px;
+  border: 0;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  box-shadow:
+    0 10px 22px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.12);
+  backdrop-filter: blur(10px) saturate(115%);
+  -webkit-backdrop-filter: blur(10px) saturate(115%);
+  color: rgba(232,238,248,.9);
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 1;
+}
+
+#modelInfo.school-view .mp-hint.dim-overview-hint::before{
+  content:"←";
+  position:absolute;
+  left:14px;
+  top:50%;
+  transform:translateY(-50%);
+  width:22px;
+  height:22px;
+  display:grid;
+  place-items:center;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  color: color-mix(in srgb, var(--schoolColor,#D9AA3F) 70%, #ffffff 18%);
+  border:0;
+  background: color-mix(in srgb, var(--schoolColor,#D9AA3F) 14%, rgba(255,255,255,.04));
+  box-shadow:none;
+}
+
+@media (max-width: 980px){
+  #modelInfo.school-view .mp-hint.dim-overview-hint::before{
+    content:"↑";
+  }
+}
 .mi-item.active .mi-title{
   color: var(--schoolColor, #fff);
 }
@@ -2341,23 +2401,14 @@ html, body{ position: relative; }
 /* ================== MÓVIL ================== */
 @media (max-width: 980px){
   .schoolControls{
-    grid-template-columns:minmax(0, 1.45fr) minmax(0, .95fr);
-    gap:8px;
-    align-items:end;
+    grid-template-columns:minmax(0, 1fr) minmax(0, 1fr) minmax(54px,.26fr);
+    gap:6px;
+    align-items:center;
   }
 
-  .complexityScaleMeta{
-    display:none;
-  }
-
-  .complexitySwitch{
-    width:100%;
-    gap:4px;
-    padding:3px;
-  }
-
-  .cx-step{
-    height:30px;
+  .schoolControls select{
+    height:34px;
+    padding:6px 28px 6px 8px;
     font-size:11px;
   }
 
@@ -2376,7 +2427,7 @@ html, body{ position: relative; }
   }
 
   .schoolControl-main .schoolSelectRow{
-    display:block;
+    display:none !important;
   }
 
   .schoolControl-main .mobileTypeSlot{
@@ -4192,6 +4243,16 @@ body.theme-light .modelPanel .mp-quote{
   border-left-color: color-mix(in srgb, var(--schoolColor, #6f9be6) 68%, #ffffff 16%);
 }
 
+body.theme-light #modelInfo.school-view .mp-hint.dim-overview-hint{
+  border:0;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.95), rgba(245,249,255,.86));
+  box-shadow:
+    0 8px 18px rgba(28,47,79,.10),
+    inset 0 1px 0 rgba(255,255,255,.98);
+  color:#3b4a61;
+}
+
 body.theme-light .t-eyebrow,
 body.theme-light label{
   color:#738196;
@@ -4846,28 +4907,31 @@ body.apk-mode #modelSheet::-webkit-scrollbar {
      <div class="card schoolSticky">
         <div class="schoolControls">
           <div class="schoolControl schoolControl-main">
-            <div class="row schoolControlHead">
-              <label for="schoolSelect">Escuela</label>
-            </div>
             <div class="schoolSelectRow">
               <select id="schoolSelect"></select>
               <div id="mobileTypeSlot" class="mobileTypeSlot" aria-hidden="true"></div>
             </div>
+            <label class="compactLabel" for="groupBySelect">Clasificar por</label>
+            <select id="groupBySelect">
+              <option value="school">Escuela</option>
+              <option value="process">Proceso</option>
+              <option value="dimension">Dimensión</option>
+            </select>
           </div>
 
-          <div class="schoolControl">
-            <div class="row schoolControlHead">
-            </div>
-            <div class="complexityScaleMeta" aria-hidden="true">
-              <span>Menos</span>
-              <span>Mas</span>
-            </div>
-            <div id="complexitySwitch" class="complexitySwitch" role="radiogroup" aria-label="Nivel de complejidad">
-              <button type="button" class="cx-step active" data-level="1" role="radio" aria-checked="true">1</button>
-              <button type="button" class="cx-step" data-level="2" role="radio" aria-checked="false">2</button>
-              <button type="button" class="cx-step" data-level="3" role="radio" aria-checked="false">3</button>
-              <button type="button" class="cx-step" data-level="4" role="radio" aria-checked="false">4</button>
-            </div>
+          <div id="groupTargetWrap" class="schoolControl schoolControl-target groupTargetWrap" hidden>
+            <label id="groupTargetLabel" class="compactLabel" for="groupTargetSelect">Escuela</label>
+            <select id="groupTargetSelect"></select>
+          </div>
+
+          <div class="schoolControl schoolControl-level">
+            <label class="compactLabel" for="complexitySwitch">Nivel</label>
+            <select id="complexitySwitch" class="complexitySelect" aria-label="Nivel de complejidad">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option>
+            </select>
           </div>
         </div>
 
@@ -5867,6 +5931,10 @@ async function ensureModelFull(m){
     // 3) UI: selector de escuela + lista de modelos
     // =========================================================
     const schoolSelect = document.getElementById('schoolSelect');
+    const groupBySelectEl = document.getElementById('groupBySelect');
+    const groupTargetWrapEl = document.getElementById('groupTargetWrap');
+    const groupTargetLabelEl = document.getElementById('groupTargetLabel');
+    const groupTargetSelectEl = document.getElementById('groupTargetSelect');
     const complexitySwitchEl = document.getElementById('complexitySwitch');
     const typeFiltersEl = document.getElementById('typeFilters');
     const mobileTypeSlotEl = document.getElementById('mobileTypeSlot');
@@ -5874,9 +5942,144 @@ async function ensureModelFull(m){
     const modelsListEl = document.getElementById('modelsList');
     const countLine = document.getElementById('countLine');
     const modelInfoEl = document.getElementById('modelInfo');
-    let complexityLevel = 1;
+    let complexityLevel = 4;
     let showModelItems = true;
     let showMarcoItems = true;
+    let groupingMode = 'school';
+    let groupingTarget = '';
+    const SIGNIFICANT_DIMENSION_PCT = 20;
+    const PROCESS_FILTERS = [
+      { id:'RF', label:'Regular cuerpo' },
+      { id:'RE', label:'Regular emociones' },
+      { id:'AP', label:'Procesar experiencia emocional' },
+      { id:'RI', label:'Transformar la relación con uno mismo' },
+      { id:'N',  label:'Construir significado / narrativa' },
+      { id:'I',  label:'Configurar identidad' },
+      { id:'AG', label:'Ejercer agencia' },
+      { id:'R',  label:'Transformar las relaciones' }
+    ];
+    const PROCESS_INFO = {
+      RF: {
+        title: 'RF — Regulación fisiológica / corporal',
+        desc: 'Regulación del sistema corporal y autonómico para reducir hiperactivación, estabilizar y aumentar seguridad en sesión y fuera de sesión.',
+        subs: [
+          'RF_resp — Respiración y control autonómico',
+          'RF_ground — Grounding sensorial',
+          'RF_relax — Relajación muscular / somática',
+          'RF_intero — Interocepción y mindfulness corporal',
+          'RF_crisis — Estabilización rápida en crisis',
+          'RF_expo — Exposición fisiológica'
+        ]
+      },
+      RE: {
+        title: 'RE — Regulación emocional',
+        desc: 'Procesos para identificar, sostener y modular emociones sin evitación experiencial rígida.',
+        subs: [
+          'RE_rotulacion — Rotulación y claridad emocional',
+          'RE_aceptacion — Aceptación emocional',
+          'RE_modulacion — Ventana de tolerancia',
+          'RE_coregulacion — Co-regulación',
+          'RE_reapreciacion — Reapreciación emocional',
+          'RE_prevEvitacion — Prevención de evitación emocional'
+        ]
+      },
+      AP: {
+        title: 'AP — Acceso y procesamiento emocional',
+        desc: 'Activar y procesar emocionalmente material relevante para transformarlo e integrarlo clínicamente.',
+        subs: [
+          'AP_evocacion — Evocación emocional guiada',
+          'AP_profundizacion — Profundización experiencial',
+          'AP_somaticoEsquematico — Procesamiento somático / esquemático',
+          'AP_procesamiento — Procesamiento estructurado',
+          'AP_integracionMemorias — Integración de memorias emocionales',
+          'AP_trabajoCorrectivo — Experiencias emocionales correctivas',
+          'AP_resolucionConflictos — Resolución de conflictos afectivos'
+        ]
+      },
+      RI: {
+        title: 'RI — Relación interna',
+        desc: 'Cómo la persona se habla, se observa y se trata internamente; incluye autocrítica, compasión y trabajo con partes.',
+        subs: [
+          'RI_dialogoFuncional — Diálogo interno funcional',
+          'RI_criticoInterno — Crítico interno y vergüenza',
+          'RI_autocompasion — Autocompasión',
+          'RI_mindfulnessSelf — Mindfulness del self',
+          'RI_partesSubpersonalidades — Partes y subpersonalidades',
+          'RI_reparacionRepresentaciones — Reparación de representaciones internas'
+        ]
+      },
+      N: {
+        title: 'N — Significado / narrativa / regulación cognitiva',
+        desc: 'Construcción de marcos de significado, reatribución y flexibilidad cognitiva para reorganizar la experiencia.',
+        subs: [
+          'N_narrativaAutobiografica — Reautoría autobiográfica',
+          'N_marcosCognitivos — Marcos cognitivos y constructivistas',
+          'N_insightPsicodinamico — Interpretación / insight',
+          'N_reformulacion — Reformulación / reatribución',
+          'N_metacognicion — Metacognición',
+          'N_construccionAlternativa — Construcción alternativa de sentido'
+        ]
+      },
+      I: {
+        title: 'I — Identidad / Self',
+        desc: 'Procesos de coherencia, continuidad e integración del self en el tiempo y en la relación con otros.',
+        subs: [
+          'I_coherenciaInterna — Coherencia interna del self',
+          'I_autoimagen — Autoimagen y autovaloración',
+          'I_continuidadBiografica — Continuidad biográfica',
+          'I_conflictosSelf — Integración de conflictos del self',
+          'I_valoresAspiracionales — Valores nucleares e identidad aspiracional',
+          'I_selfFuturo — Self futuro',
+          'I_posicionRelacional — Posición del self en relaciones',
+          'I_fortalezasRecursos — Fortalezas y recursos'
+        ]
+      },
+      AG: {
+        title: 'AG — Agencia y acción',
+        desc: 'Capacidad de elegir, comprometerse y sostener conducta orientada a valores en lugar de alivio inmediato.',
+        subs: [
+          'AG_necesidadesPropias — Discriminación de necesidades propias',
+          'AG_tomaDecisiones — Toma de decisiones',
+          'AG_motivacionInterna — Motivación interna',
+          'AG_autoriaResponsabilidad — Autoría y responsabilidad',
+          'AG_compromisoConductual — Compromiso conductual'
+        ]
+      },
+      R: {
+        title: 'R — Relacional / interpersonal',
+        desc: 'Intervención explícita sobre patrones vinculares, límites, apego, mentalización y ciclos relacionales.',
+        subs: [
+          'R_estilosApego — Estilos de apego',
+          'R_comunicacionEmocional — Comunicación emocional',
+          'R_limitesInterpersonales — Límites interpersonales',
+          'R_reparacionRelacional — Reparación relacional',
+          'R_mentalizacion — Mentalización interpersonal',
+          'R_coregulacion — Co-regulación interpersonal',
+          'R_repertorioInterpersonal — Repertorio interpersonal',
+          'R_valoresRelacionales — Valores relacionales',
+          'R_sist_ciclos — Ciclos relacionales',
+          'R_sist_roles — Roles y reglas del sistema',
+          'R_sist_interaccion — Patrones de interacción',
+          'R_sist_apoyo — Movilización de apoyo',
+          'R_sist_triangulos — Triangulaciones y alianzas',
+          'R_sist_guiones — Mandatos y guiones familiares',
+          'R_sist_contexto — Ajustes contextuales'
+        ]
+      }
+    };
+    const DIMENSION_INFO = {
+      cognicion: 'Procesos de interpretación, creencias, inferencias, sesgos y flexibilidad cognitiva.',
+      afecto: 'Generación, intensidad, duración y regulación emocional; tolerancia al malestar.',
+      atencion: 'Orientación del foco, sesgos atencionales, desenganche y atención plena.',
+      self: 'Identidad, autoconcepto, autocrítica/autocompasión y perspectiva del yo.',
+      motivacion: 'Dirección de conducta por valores, metas, recompensa/castigo y persistencia.',
+      conducta_manifiesta: 'Acciones observables, evitación/aproximación, hábitos y aprendizaje instrumental.',
+      biofisiologico: 'Regulación autonómica, sueño, estrés y soporte somático del cambio.',
+      sociocultural: 'Relaciones, redes, normas, roles y contextos comunitarios/culturales.'
+    };
+    const PROCESS_FILTER_MAP = new Map(PROCESS_FILTERS.map((p) => [p.id, p]));
+    let ENSURE_ALL_SCHOOLS_PROMISE = null;
+    let ENSURE_GROUPING_MODELS_PROMISE = null;
   function infoFadeOut(){
   if(!modelInfoEl) return;
   modelInfoEl.classList.add('is-loading');
@@ -6307,6 +6510,7 @@ window.addEventListener('resize', () => {
 setupMobilePanelDragGesture();
 
 function cycleSchoolBySwipe(direction){
+  if (groupingMode !== 'school') return;
   if (!schoolSelect) return;
   const values = Array.from(schoolSelect.options || [])
     .map(o => String(o.value || '').trim())
@@ -6726,12 +6930,7 @@ function setComplexityLevel(level){
   complexityLevel = n;
 
   if (complexitySwitchEl){
-    complexitySwitchEl.querySelectorAll('.cx-step').forEach(btn => {
-      const lv = Number(btn.dataset.level || 0);
-      const isActive = lv === complexityLevel;
-      btn.classList.toggle('active', isActive);
-      btn.setAttribute('aria-checked', isActive ? 'true' : 'false');
-    });
+    complexitySwitchEl.value = String(complexityLevel);
   }
 
   renderModelsList();
@@ -6740,11 +6939,9 @@ function setComplexityLevel(level){
 function setupComplexitySwitch(){
   if (!complexitySwitchEl || complexitySwitchEl.__bound) return;
   complexitySwitchEl.__bound = true;
-
-  complexitySwitchEl.addEventListener('click', (evt) => {
-    const btn = evt.target.closest('.cx-step');
-    if (!btn) return;
-    setComplexityLevel(btn.dataset.level);
+  complexitySwitchEl.value = String(complexityLevel);
+  complexitySwitchEl.addEventListener('change', () => {
+    setComplexityLevel(complexitySwitchEl.value);
   });
 }
 
@@ -6758,6 +6955,252 @@ function filteredModelsBySchool(grupo){
       (+a.year||0) - (+b.year||0) ||
       String(a.label).localeCompare(String(b.label),'es')
     );
+}
+
+function normalizeScoreToFour(raw){
+  if (typeof raw === 'number' && Number.isFinite(raw)){
+    if (raw <= 0) return 0;
+    if (raw <= 3) return Math.max(1, Math.min(4, Math.round(raw + 1)));
+    if (raw <= 4) return Math.max(1, Math.min(4, Math.round(raw)));
+    if (raw <= 100){
+      if (raw >= 75) return 4;
+      if (raw >= 50) return 3;
+      if (raw >= 25) return 2;
+      return 1;
+    }
+    return 4;
+  }
+
+  const txt = String(raw ?? '')
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g,'')
+    .replace(',', '.');
+  if (!txt) return 0;
+
+  const parsed = Number(txt);
+  if (Number.isFinite(parsed)) return normalizeScoreToFour(parsed);
+
+  if (txt.includes('muy alta')) return 4;
+  if (txt.includes('alta')) return 3;
+  if (txt.includes('media')) return 2;
+  if (txt.includes('baja')) return 1;
+  return 0;
+}
+
+function resolveProcessRawValue(procesos, procDef){
+  if (!procesos || typeof procesos !== 'object' || !procDef) return null;
+
+  const aliases = [procDef.id, procDef.label]
+    .filter(Boolean)
+    .map((v) => normProcKey(v));
+
+  for (const [k, v] of Object.entries(procesos)){
+    if (aliases.includes(normProcKey(k))) return v;
+  }
+  return null;
+}
+
+function modelProcessLevelFour(m, processId){
+  if (!m || typeof m !== 'object' || !processId) return 0;
+  const procDef = PROCESS_FILTER_MAP.get(processId);
+  if (!procDef) return 0;
+  const raw = resolveProcessRawValue(m.graficaProcesos, procDef);
+  return normalizeScoreToFour(raw);
+}
+
+function modelDimensionSharePct(m, dimId){
+  if (!m || typeof m !== 'object' || !dimId) return 0;
+  if (!m.dimensionesCambio || typeof m.dimensionesCambio !== 'object') return 0;
+
+  const total = CHANGE_DIMS.reduce((acc, d) => acc + readDimensionValue(m.dimensionesCambio, d.keys), 0);
+  if (!(total > 0)) return 0;
+
+  const def = CHANGE_DIMS.find((d) => d.id === dimId);
+  if (!def) return 0;
+
+  const own = readDimensionValue(m.dimensionesCambio, def.keys);
+  return (own / total) * 100;
+}
+
+function baseListByGroupingMode(){
+  if (groupingMode === 'school'){
+    return filteredModelsBySchool(currentSchool);
+  }
+
+  return MODELS.slice().sort((a,b) =>
+    (+a.year||0) - (+b.year||0) ||
+    String(a.label).localeCompare(String(b.label),'es')
+  );
+}
+
+function applyGroupingFilterAndSort(list){
+  if (!Array.isArray(list)) return [];
+
+  if (groupingMode === 'process'){
+    const target = groupingTarget || PROCESS_FILTERS[0]?.id || '';
+    return list
+      .map((m) => ({ model: m, score: modelProcessLevelFour(m, target) }))
+      .filter((entry) => entry.score >= 4)
+      .sort((a,b) =>
+        (b.score - a.score) ||
+        (+a.model.year||0) - (+b.model.year||0) ||
+        String(a.model.label).localeCompare(String(b.model.label),'es')
+      )
+      .map((entry) => entry.model);
+  }
+
+  if (groupingMode === 'dimension'){
+    const target = groupingTarget || CHANGE_DIMS[0]?.id || '';
+    return list
+      .map((m) => ({ model: m, share: modelDimensionSharePct(m, target) }))
+      .filter((entry) => entry.share >= SIGNIFICANT_DIMENSION_PCT)
+      .sort((a,b) =>
+        (b.share - a.share) ||
+        (+a.model.year||0) - (+b.model.year||0) ||
+        String(a.model.label).localeCompare(String(b.model.label),'es')
+      )
+      .map((entry) => entry.model);
+  }
+
+  return list;
+}
+
+async function ensureAllSchoolsLoadedForGrouping(){
+  if (ENSURE_ALL_SCHOOLS_PROMISE) return ENSURE_ALL_SCHOOLS_PROMISE;
+
+  const labels = uniq((GH_SCHOOLS || []).map(s => s.label || s.id).filter(Boolean));
+  ENSURE_ALL_SCHOOLS_PROMISE = Promise.all(
+    labels.map((label) => ensureSchoolFromGitHub(label).catch(() => null))
+  ).then(() => null).catch(() => null);
+
+  return ENSURE_ALL_SCHOOLS_PROMISE;
+}
+
+async function ensureModelsHydratedForGrouping(){
+  if (ENSURE_GROUPING_MODELS_PROMISE) return ENSURE_GROUPING_MODELS_PROMISE;
+
+  ENSURE_GROUPING_MODELS_PROMISE = (async () => {
+    await ensureAllSchoolsLoadedForGrouping();
+
+    const jobs = MODELS.map(async (m, idx) => {
+      const full = await ensureModelFull(m).catch(() => m);
+      MODELS[idx] = full || m;
+      return MODELS[idx];
+    });
+
+    await Promise.all(jobs);
+    window.MODELS_ALL = MODELS.filter(mm => !mm.hideInModels);
+  })().catch(() => null);
+
+  return ENSURE_GROUPING_MODELS_PROMISE;
+}
+
+function syncGroupingTargetOptions(){
+  if (!groupTargetSelectEl || !groupTargetLabelEl || !groupTargetWrapEl) return;
+
+  if (groupingMode === 'school'){
+    groupTargetLabelEl.textContent = 'Escuela';
+    groupTargetWrapEl.hidden = false;
+
+    const schools = Array.from(schoolSelect?.options || [])
+      .map((o) => String(o.value || '').trim())
+      .filter(Boolean);
+
+    groupTargetSelectEl.innerHTML = schools
+      .map((s) => `<option value="${escapeHtml(s)}">${escapeHtml(s)}</option>`)
+      .join('');
+
+    if (!schools.includes(String(currentSchool || ''))){
+      currentSchool = schools[0] || null;
+      if (schoolSelect && currentSchool) schoolSelect.value = currentSchool;
+    }
+    groupTargetSelectEl.value = currentSchool || '';
+    return;
+  }
+
+  if (groupingMode === 'process'){
+    groupTargetLabelEl.textContent = 'Proceso';
+    groupTargetWrapEl.hidden = false;
+    groupTargetSelectEl.innerHTML = PROCESS_FILTERS
+      .map((p) => `<option value="${escapeHtml(p.id)}">${escapeHtml(`${p.id} · ${p.label}`)}</option>`)
+      .join('');
+    if (!PROCESS_FILTER_MAP.has(groupingTarget)){
+      groupingTarget = PROCESS_FILTERS[0]?.id || '';
+    }
+    groupTargetSelectEl.value = groupingTarget;
+    return;
+  }
+
+  if (groupingMode === 'dimension'){
+    groupTargetLabelEl.textContent = `Dimensión (>=${SIGNIFICANT_DIMENSION_PCT}%)`;
+    groupTargetWrapEl.hidden = false;
+    groupTargetSelectEl.innerHTML = CHANGE_DIMS
+      .map((d) => `<option value="${escapeHtml(d.id)}">${escapeHtml(d.label)}</option>`)
+      .join('');
+    if (!CHANGE_DIMS.some((d) => d.id === groupingTarget)){
+      groupingTarget = CHANGE_DIMS[0]?.id || '';
+    }
+    groupTargetSelectEl.value = groupingTarget;
+    return;
+  }
+
+  groupTargetWrapEl.hidden = false;
+}
+
+function setupGroupingControls(){
+  if (!groupBySelectEl || groupBySelectEl.__bound) return;
+  groupBySelectEl.__bound = true;
+
+  groupBySelectEl.value = groupingMode;
+  syncGroupingTargetOptions();
+
+  groupBySelectEl.addEventListener('change', async () => {
+    groupingMode = String(groupBySelectEl.value || 'school');
+    syncGroupingTargetOptions();
+    currentModelId = null;
+    setMobileModelPanelLowered(false);
+
+    if (groupingMode === 'school'){
+      const nextSchool = String(groupTargetSelectEl?.value || currentSchool || '').trim();
+      if (nextSchool){
+        schoolSelect.value = nextSchool;
+        schoolSelect.dispatchEvent(new Event('change', { bubbles:true }));
+      }else{
+        renderSchoolInfo(currentSchool);
+        renderModelsList();
+      }
+      resetRightPanelToTop();
+      return;
+    }
+
+    renderModelInfo(null);
+    renderModelsList();
+    resetRightPanelToTop();
+    await ensureModelsHydratedForGrouping();
+    renderModelsList();
+  });
+
+  if (groupTargetSelectEl && !groupTargetSelectEl.__bound){
+    groupTargetSelectEl.__bound = true;
+    groupTargetSelectEl.addEventListener('change', async () => {
+      groupingTarget = String(groupTargetSelectEl.value || '').trim();
+      if (groupingMode === 'school'){
+        if (groupingTarget){
+          schoolSelect.value = groupingTarget;
+          schoolSelect.dispatchEvent(new Event('change', { bubbles:true }));
+        }
+        return;
+      }
+      currentModelId = null;
+      renderModelInfo(null);
+      renderModelsList();
+      await ensureModelsHydratedForGrouping();
+      renderModelsList();
+      resetRightPanelToTop();
+    });
+  }
 }
 
 function setSchoolToneClass(grupo){
@@ -6774,39 +7217,75 @@ function setSchoolToneClass(grupo){
   if (g === 'sistemico') b.classList.add('school-sistemico');
 }
 
+function colorForSchoolLabel(label){
+  const raw = String(label || '').trim();
+  if (groupColor.has(raw)) return groupColor.get(raw);
+
+  const target = normSchoolName(raw);
+  for (const [key, col] of groupColor.entries()){
+    if (normSchoolName(key) === target) return col;
+  }
+  return '#D9AA3F';
+}
+
 
 function renderModelsList(){
 
-  const schoolList = filteredModelsBySchool(currentSchool);
-  const onlyModels = schoolList.filter(m => !(m && m.isMarco));
-  const onlyMarcos = schoolList.filter(m => !!(m && m.isMarco));
+  const baseList = baseListByGroupingMode();
+  const onlyModels = baseList.filter(m => !(m && m.isMarco));
+  const onlyMarcos = baseList.filter(m => !!(m && m.isMarco));
 
   const visibleModels = showModelItems ? applyComplexityFilter(onlyModels) : [];
   const visibleMarcos = showMarcoItems ? applyComplexityFilter(onlyMarcos) : [];
 
   const visibleSet = new Set([...visibleModels, ...visibleMarcos]);
-  let list = schoolList.filter(m => visibleSet.has(m));
+  let list = baseList.filter(m => visibleSet.has(m));
+  list = applyGroupingFilterAndSort(list);
 
   if (currentModelId){
-    const selected = schoolList.find(m => String(m.id ?? '') === String(currentModelId));
+    const selected = baseList.find(m => String(m.id ?? '') === String(currentModelId));
     if (selected && !list.some(m => String(m.id ?? '') === String(currentModelId))){
-      list = schoolList.filter(m => visibleSet.has(m) || String(m.id ?? '') === String(currentModelId));
+      list = baseList.filter(m => visibleSet.has(m) || String(m.id ?? '') === String(currentModelId));
+      list = applyGroupingFilterAndSort(list);
     }
   }
 
   modelsListEl.style.setProperty('--schoolColor', groupColor.get(currentSchool) || '#D9AA3F');
 
 
-  countLine.innerHTML = `
-    <span class="count-n">${list.length}</span>
-    <span class="count-txt">${(list.length === schoolList.length) ? 'en' : `de ${schoolList.length} en`}</span>
-    <span class="count-school">“${escapeHtml(currentSchool)}”</span>
-  `;
+  if (groupingMode === 'process'){
+    const proc = PROCESS_FILTER_MAP.get(groupingTarget) || PROCESS_FILTERS[0];
+    const procLabel = proc ? `${proc.id} · ${proc.label}` : 'Proceso';
+    countLine.innerHTML = `
+      <span class="count-n">${list.length}</span>
+      <span class="count-txt">con nivel 4 en</span>
+      <span class="count-school">“${escapeHtml(procLabel)}”</span>
+    `;
+  }else if (groupingMode === 'dimension'){
+    const dim = CHANGE_DIMS.find((d) => d.id === groupingTarget) || CHANGE_DIMS[0];
+    const dimLabel = dim ? `${dim.label} (>=${SIGNIFICANT_DIMENSION_PCT}%)` : 'Dimensión';
+    countLine.innerHTML = `
+      <span class="count-n">${list.length}</span>
+      <span class="count-txt">con peso significativo en</span>
+      <span class="count-school">“${escapeHtml(dimLabel)}”</span>
+    `;
+  }else{
+    countLine.innerHTML = `
+      <span class="count-n">${list.length}</span>
+      <span class="count-txt">${(list.length === baseList.length) ? 'en' : `de ${baseList.length} en`}</span>
+      <span class="count-school">“${escapeHtml(currentSchool)}”</span>
+    `;
+  }
 
   if(!list.length){
     const noneSelected = !showModelItems && !showMarcoItems;
+    const emptyByGrouping = (groupingMode === 'school')
+      ? 'No hay modelos en esta escuela todavía.'
+      : (groupingMode === 'process'
+        ? 'No hay modelos con nivel 4 en ese proceso.'
+        : `No hay modelos con >=${SIGNIFICANT_DIMENSION_PCT}% en esa dimensión.`);
     modelsListEl.innerHTML =
-      `<div class="subtitle" style="margin:10px 0 0 0">${noneSelected ? 'Activa Modelos o Marcos para ver resultados.' : 'No hay modelos en esta escuela todavía.'}</div>`;
+      `<div class="subtitle" style="margin:10px 0 0 0">${noneSelected ? 'Activa Modelos o Marcos para ver resultados.' : emptyByGrouping}</div>`;
     return;
   }
 
@@ -6824,7 +7303,7 @@ const marcoTag = (m && m.isMarco)
   : '';
 
 return `
-  <div class="mi-item ${active} ${marcoClass}" data-id="${safeId}">
+  <div class="mi-item ${active} ${marcoClass}" data-id="${safeId}" style="--schoolColor:${escapeHtml(colorForSchoolLabel(m.grupo))}">
     <div class="mi-top">
       <div class="mi-title">${escapeHtml(m.label ?? '—')}</div>
       <div class="mi-year">${escapeHtml(m.year ?? '—')}</div>
@@ -6980,6 +7459,96 @@ ${keys.length ? `
   `;
 }
 
+function renderProcessOverviewHtml(){
+  const proc = PROCESS_FILTER_MAP.get(groupingTarget) || PROCESS_FILTERS[0] || null;
+  const info = (proc && PROCESS_INFO[proc.id]) ? PROCESS_INFO[proc.id] : null;
+  const title = info?.title || `${proc?.id || 'Proceso'} — ${proc?.label || ''}`.trim();
+  const desc = info?.desc || 'Proceso de cambio seleccionado en el marco EEMM (PBT).';
+  const subs = Array.isArray(info?.subs) ? info.subs : [];
+  const isRelational = !!(proc && proc.id === 'R');
+
+  return `
+    <span class="mp-tag">Proceso</span>
+    <div class="school-header">
+      <div class="school-eyebrow">Proceso de cambio</div>
+      <div class="school-title">${escapeHtml(proc ? `${proc.id} · ${proc.label}` : 'Proceso')}</div>
+    </div>
+
+    <div class="mp-desc">
+      <div style="font-weight:700;margin-bottom:6px;">Lectura clínica</div>
+      <div>${escapeHtml(desc)}</div>
+    </div>
+
+    <div class="mp-meta">
+      <span class="mp-pill">Escala PBT 0-4</span>
+      <span class="mp-pill">Filtro actual: nivel 4</span>
+      <span class="mp-pill">No subyugado a escuelas</span>
+    </div>
+
+    ${subs.length ? `
+      <div class="mp-desc" style="margin-top:12px">
+        <div style="font-weight:700;margin-bottom:6px;">Subprocesos principales</div>
+        <div style="display:grid; gap:6px;">
+          ${subs.map((s) => `<div class="mp-step"><span class="mp-step-dot"></span>${escapeHtml(s)}</div>`).join('')}
+        </div>
+      </div>
+    ` : ''}
+
+    <div class="mp-desc" style="margin-top:12px">
+      <div style="font-weight:700;margin-bottom:6px;">Regla de puntuación</div>
+      <div>0: no trabajado explícitamente · 1: secundario · 2: importante · 3: nuclear · 4: definitorio del modelo.</div>
+    </div>
+
+    ${isRelational ? `
+      <div class="mp-desc" style="margin-top:12px">
+        <div style="font-weight:700;margin-bottom:6px;">Aclaración para R</div>
+        <div>La alianza terapéutica por sí sola no puntúa R alto. R se puntúa alto cuando el modelo interviene explícitamente para cambiar relaciones externas del paciente (pareja, familia, redes, patrones vinculares).</div>
+      </div>
+    ` : ''}
+
+    <div class="mp-desc" style="margin-top:12px">
+      <div style="font-weight:700;margin-bottom:6px;">Referencia</div>
+      <div>${escapeHtml(title)}</div>
+    </div>
+
+    <div class="mp-hint" style="margin-top:12px">Elige un modelo en la lista para ver cómo justifica este proceso en su ficha.</div>
+  `;
+}
+
+function renderDimensionOverviewHtml(){
+  const dim = CHANGE_DIMS.find((d) => d.id === groupingTarget) || CHANGE_DIMS[0] || null;
+  const dimLabel = dim?.label || 'Dimensión';
+  const dimDesc = (dim && DIMENSION_INFO[dim.id]) ? DIMENSION_INFO[dim.id] : 'Dimensión de cambio dentro del EEMM.';
+
+  const allDims = CHANGE_DIMS.map((d) => {
+    const on = dim && d.id === dim.id;
+    return `<span class="mp-pill"${on ? ' style="outline:2px solid color-mix(in srgb, var(--schoolColor,#D9AA3F) 58%, transparent)"' : ''}>${escapeHtml(d.label)}</span>`;
+  }).join('');
+
+  return `
+    <span class="mp-tag">Dimensión</span>
+    <div class="school-header">
+      <div class="school-eyebrow">Dimensión de cambio</div>
+      <div class="school-title">${escapeHtml(dimLabel)}</div>
+    </div>
+
+    <div class="mp-desc" style="margin-top:12px">
+      <div style="font-weight:700;margin-bottom:6px;">Descripción clínica</div>
+      <div>${escapeHtml(dimDesc)}</div>
+    </div>
+
+    <div class="mp-meta" style="margin-top:10px;gap:8px;flex-wrap:wrap;">
+      ${allDims}
+    </div>
+
+    <div class="dim-reference" style="margin-top:12px;">
+      Basado en la clasifiación descrita en Hofmann, S. G., Hayes, S. C., & Lorscheid, D. N. (2021). <em>Learning Process-Based Therapy: A Skills Training Manual for Targeting the Core Processes of Psychological Change in Clinical Practice</em>. Oakland, CA: New Harbinger Publications.
+    </div>
+
+    <div class="mp-hint dim-overview-hint">Elige un modelo para ver cómo trabaja esta dimensión en su ficha.</div>
+  `;
+}
+
     // =========================================================
     // 4) Render ficha de modelo (sin procesos/mjps)
     // =========================================================
@@ -7006,6 +7575,33 @@ ${keys.length ? `
     }
     const smh = document.getElementById('stickyModelHeader');
     if (smh) smh.classList.remove('is-on');
+
+    if (groupingMode === 'process'){
+      const proc = PROCESS_FILTER_MAP.get(groupingTarget) || PROCESS_FILTERS[0] || null;
+      const procColor = proc ? colorForSchoolLabel('Transversal') : '#D9AA3F';
+      modelInfoEl.classList.add('school-view');
+      modelInfoEl.style.setProperty('--schoolColor', procColor);
+      document.documentElement.style.setProperty('--schoolColor', procColor);
+      document.documentElement.style.setProperty('--panelGlow', hexToRgba(procColor, 0.16));
+      if (rightPanel){
+        rightPanel.style.setProperty('--panelGlow', hexToRgba(procColor, 0.18));
+      }
+      modelInfoEl.innerHTML = renderProcessOverviewHtml();
+      return;
+    }
+    if (groupingMode === 'dimension'){
+      const dim = CHANGE_DIMS.find((d) => d.id === groupingTarget) || CHANGE_DIMS[0] || null;
+      const dimColor = dim ? (CHANGE_DIM_COLORS_BY_ID[dim.id] || '#D9AA3F') : '#D9AA3F';
+      modelInfoEl.classList.add('school-view');
+      modelInfoEl.style.setProperty('--schoolColor', dimColor);
+      document.documentElement.style.setProperty('--schoolColor', dimColor);
+      document.documentElement.style.setProperty('--panelGlow', hexToRgba(dimColor, 0.16));
+      if (rightPanel){
+        rightPanel.style.setProperty('--panelGlow', hexToRgba(dimColor, 0.18));
+      }
+      modelInfoEl.innerHTML = renderDimensionOverviewHtml();
+      return;
+    }
 
     modelInfoEl.innerHTML = `
       <div class="mp-hero">
@@ -8501,6 +9097,12 @@ schoolSelect.addEventListener('change', async () => {
   const swipeDir = window.__schoolSwipeDir || null;
   window.__schoolSwipeDir = null;
   currentSchool = schoolSelect.value;
+  if (groupTargetSelectEl && groupingMode === 'school'){
+    groupTargetSelectEl.value = currentSchool || '';
+  }
+  if (groupingMode !== 'school'){
+    return;
+  }
   const requestedSchool = currentSchool;
   currentModelId = null;
   setMobileModelPanelLowered(false);
@@ -8582,6 +9184,7 @@ window.OPEN_ID = (window.__QS.get("open") || "").trim();
 
     // 2) selector
     buildSchoolOptions();
+    setupGroupingControls();
     setupComplexitySwitch();
     setupTypeFilters();
     setupMobileSchoolSwipe();
@@ -8849,7 +9452,3 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
 
 </body>
 </html>
-
-
-
-
