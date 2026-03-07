@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-07T20:45:37.447Z",
+  "generatedAt": "2026-03-07T20:51:56.948Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 175,
-    "links": 173,
-    "unresolvedInfluences": 598
+    "links": 172,
+    "unresolvedInfluences": 601
   },
   "nodes": [
     {
@@ -445,14 +445,27 @@
       "type": "modelo",
       "isMarco": false,
       "file": "modelos/psicoanalisis/psicologia-yo-hartmann.json",
-      "authors": "Heinz Hartmann",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
-      "lat": null,
-      "lon": null,
-      "ciudad": null,
-      "pais": null,
+      "authors": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "summary": "La Psicología del yo amplía el modelo estructural freudiano al introducir la noción de funciones autónomas del yo que no derivan del conflicto pulsional. Hartmann concibe el yo como un sistema organizador con capacidades propias —percepción, pensamiento, atención, lenguaje, motricidad, prueba de realidad— orientadas a la adaptación eficaz al entorno. El conflicto sigue existiendo, pero deja de ser el único motor del desarrollo, dando lugar a una visión más positiva, evolutiva y realista del funcionamiento psicológico.",
+      "influencias": [
+        "Modelo estructural",
+        "Psicología del desarrollo",
+        "Biología evolutiva",
+        "Fenomenología / Hermenéutica",
+        "Empirismo objetivista / Positivismo lógico"
+      ],
+      "refs": [
+        "Hartmann, H. (1939). Ego Psychology and the Problem of Adaptation.",
+        "Hartmann, H. (1964). Essays on Ego Psychology.",
+        "Kris, E. (1952). Psychoanalytic Explorations in Art.",
+        "Loewenstein, R. (1963). Ego Psychology.",
+        "Heinz Hartmann — Ego Psychology and the Problem of Adaptation (1939)",
+        "Heinz Hartmann — Essays on Ego Psychology (1964)"
+      ],
+      "lat": 40.712776,
+      "lon": -74.005974,
+      "ciudad": "Nueva York",
+      "pais": "EE. UU.",
       "escuelaId": "psicoanalisis"
     },
     {
@@ -3830,16 +3843,9 @@
       "isMarco": false,
       "file": "modelos/psicoanalisis/tfp-transference-focused-psychotherapy-kernberg-1995.json",
       "authors": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
-      "summary": "TFP (Transference-Focused Psychotherapy) es una psicoterapia psicodinámica manualizada para el Trastorno Límite de la Personalidad (y otras organizaciones límite) cuyo objetivo es promover la integración de representaciones escindidas de self–objeto y de los afectos asociados mediante el análisis sistemático y riguroso de la transferencia en el aquí-y-ahora. El tratamiento se apoya en un encuadre estructurado y en una técnica activa (clarificación, confrontación e interpretación) orientada a identificar las díadas relacionales dominantes que se actualizan con el terapeuta, sostenerlas dentro de la relación terapéutica y favorecer una reorganización estructural de la identidad, la regulación afectiva y el control de impulsos.",
-      "influencias": [
-        "Relaciones de objeto (Fairbairn)",
-        "Psicología del yo (Hartmann)",
-        "Relacional (Greenberg & Mitchell)"
-      ],
-      "refs": [
-        "Clarkin, J. F., Yeomans, F. E., & Kernberg, O. F. (1999). Psychotherapy for Borderline Personality: Focusing on Object Relations.",
-        "Clarkin, J. F., Yeomans, F. E., & Kernberg, O. F. (2006/2015). Transference-Focused Psychotherapy for Borderline Personality Disorder."
-      ],
+      "summary": null,
+      "influencias": [],
+      "refs": [],
       "lat": 40.712776,
       "lon": -74.005974,
       "ciudad": "Nueva York",
@@ -4995,6 +5001,10 @@
       "target": "relaciones-objeto-klein"
     },
     {
+      "source": "freud-modelo-estructural-ello-yo-superyo-1923",
+      "target": "psicologia-yo-hartmann"
+    },
+    {
       "source": "psicoanalisis-clasico-freud",
       "target": "neopsicoanalisis"
     },
@@ -5065,14 +5075,6 @@
     {
       "source": "psicologia-self-kohut",
       "target": "psicoanalisis-relacional-greenberg-mitchell-1983"
-    },
-    {
-      "source": "relaciones-objeto-klein",
-      "target": "tfp-transference-focused-psychotherapy-kernberg-1995"
-    },
-    {
-      "source": "psicologia-yo-hartmann",
-      "target": "tfp-transference-focused-psychotherapy-kernberg-1995"
     },
     {
       "source": "psicoanalisis-clasico-freud",
@@ -5801,6 +5803,22 @@
       "influence": "Empirismo objetivista / Positivismo lógico"
     },
     {
+      "target": "psicologia-yo-hartmann",
+      "influence": "Psicología del desarrollo"
+    },
+    {
+      "target": "psicologia-yo-hartmann",
+      "influence": "Biología evolutiva"
+    },
+    {
+      "target": "psicologia-yo-hartmann",
+      "influence": "Fenomenología / Hermenéutica"
+    },
+    {
+      "target": "psicologia-yo-hartmann",
+      "influence": "Empirismo objetivista / Positivismo lógico"
+    },
+    {
       "target": "neopsicoanalisis",
       "influence": "Sociología"
     },
@@ -5935,10 +5953,6 @@
     {
       "target": "psicoanalisis-relacional-greenberg-mitchell-1983",
       "influence": "Fenomenología / Hermenéutica"
-    },
-    {
-      "target": "tfp-transference-focused-psychotherapy-kernberg-1995",
-      "influence": "Relacional (Greenberg & Mitchell)"
     },
     {
       "target": "psicologia-analitica-jung-1913",
