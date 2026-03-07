@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-07T20:53:53.396Z",
+  "generatedAt": "2026-03-07T20:54:33.072Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 175,
-    "links": 174,
-    "unresolvedInfluences": 602
+    "links": 176,
+    "unresolvedInfluences": 605
   },
   "nodes": [
     {
@@ -2056,13 +2056,22 @@
       "isMarco": false,
       "file": "modelos/psicoanalisis/psicologia-self-kohut.json",
       "authors": "Heinz Kohut",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "Heinz Kohut reformula el psicoanálisis al desplazar el eje del conflicto pulsional hacia los déficits en el desarrollo del self derivados de fallas tempranas de empatía. El self se organiza a partir de experiencias relacionales fundamentales —espejamiento, idealización y pertenencia— proporcionadas por figuras selfobject que cumplen funciones reguladoras y cohesionadoras. Cuando estas funciones fallan de forma repetida o traumática, el self queda fragmentado, vulnerable a estados de vacío, grandiosidad defensiva o hipersensibilidad narcisista. La psicopatología narcisista no se explica por conflicto intrapsíquico reprimido, sino por detenciones del desarrollo del self. El proceso terapéutico requiere una actitud empática sostenida, donde la transferencia selfobject se despliega y es gradualmente transformada mediante frustraciones óptimas, permitiendo la internalización de funciones reguladoras y la restauración de la cohesión, vitalidad y continuidad del self.",
+      "influencias": [
+        "Relaciones de objeto (Fairbairn)",
+        "Psicología del yo",
+        "Teoría del narcisismo",
+        "Fenomenología / Hermenéutica",
+        "Constructivismo social / Relacional"
+      ],
+      "refs": [
+        "Heinz Kohut — The Analysis of the Self (1971)",
+        "Heinz Kohut — The Restoration of the Self (1977)"
+      ],
       "lat": 41.789722,
       "lon": -87.599724,
-      "ciudad": null,
-      "pais": null,
+      "ciudad": "Chicago, Illinois",
+      "pais": "EE. UU.",
       "escuelaId": "psicoanalisis"
     },
     {
@@ -5056,6 +5065,14 @@
     },
     {
       "source": "relaciones-objeto-klein",
+      "target": "psicologia-self-kohut"
+    },
+    {
+      "source": "psicologia-yo-hartmann",
+      "target": "psicologia-self-kohut"
+    },
+    {
+      "source": "relaciones-objeto-klein",
       "target": "kernberg-relaciones-objetales-modernas"
     },
     {
@@ -5947,6 +5964,18 @@
     {
       "target": "psicoterapia-psicodinamica-breve",
       "influence": "Relaciones objetales"
+    },
+    {
+      "target": "psicologia-self-kohut",
+      "influence": "Teoría del narcisismo"
+    },
+    {
+      "target": "psicologia-self-kohut",
+      "influence": "Fenomenología / Hermenéutica"
+    },
+    {
+      "target": "psicologia-self-kohut",
+      "influence": "Constructivismo social / Relacional"
     },
     {
       "target": "kernberg-relaciones-objetales-modernas",
