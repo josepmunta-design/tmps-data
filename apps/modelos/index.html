@@ -1633,6 +1633,172 @@ opacity: .75;
   transform: translateY(0);
 }
 
+.networkSelectionCard{
+  display:grid;
+  gap:16px;
+  margin-top:12px;
+  padding:16px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
+    radial-gradient(130% 120% at 0% 0%, color-mix(in srgb, var(--schoolColor, #5F7F78) 18%, rgba(255,255,255,0.08)), transparent 62%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    0 18px 36px rgba(0,0,0,0.18);
+}
+
+.networkSelectionCard[hidden]{
+  display:none !important;
+}
+
+.networkSelectionHead{
+  display:grid;
+  grid-template-columns:84px minmax(0,1fr);
+  gap:14px;
+  align-items:center;
+}
+
+.networkSelectionPhoto{
+  width:84px;
+  height:84px;
+  border-radius:18px;
+  overflow:hidden;
+  background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+.networkSelectionPhoto img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center top;
+}
+
+.networkSelectionSchoolRow{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:0 0 10px;
+}
+
+.networkSelectionSchoolPill{
+  display:inline-flex;
+  align-items:center;
+  min-height:24px;
+  padding:0 10px;
+  border-radius:999px;
+  border:1px solid color-mix(in srgb, var(--schoolColor, #5F7F78) 48%, rgba(255,255,255,0.16));
+  background:color-mix(in srgb, var(--schoolColor, #5F7F78) 14%, rgba(255,255,255,0.04));
+  color:var(--schoolColor, #fff);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.networkSelectionTitle{
+  margin:0;
+  font-size:18px;
+  line-height:1.16;
+  letter-spacing:-.03em;
+  color:#fff;
+}
+
+.networkSelectionMeta{
+  margin:8px 0 0;
+  font-size:12px;
+  line-height:1.5;
+  color:rgba(231,237,245,.78);
+}
+
+.networkSelectionDesc{
+  margin:0;
+  font-size:12.5px;
+  line-height:1.72;
+  color:rgba(231,237,245,.82);
+}
+
+.networkSelectionActions{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+.networkSelectionBtn{
+  appearance:none;
+  border:1px solid color-mix(in srgb, var(--schoolColor, #5F7F78) 42%, rgba(255,255,255,0.14));
+  border-radius:999px;
+  padding:9px 14px;
+  font:inherit;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.02em;
+  color:#fff;
+  background:linear-gradient(180deg, color-mix(in srgb, var(--schoolColor, #5F7F78) 32%, rgba(255,255,255,0.1)), rgba(255,255,255,0.04));
+  cursor:pointer;
+}
+
+.networkZoneList{
+  display:grid;
+  gap:8px;
+}
+
+.networkZoneItem{
+  display:grid;
+  gap:4px;
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid color-mix(in srgb, var(--schoolColor, #5F7F78) 28%, rgba(255,255,255,0.1));
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--schoolColor, #5F7F78) 10%, rgba(255,255,255,0.06)), rgba(255,255,255,0.02));
+}
+
+.networkZoneItemTop{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+.networkZoneItemTitle{
+  font-size:13px;
+  font-weight:800;
+  line-height:1.3;
+  color:#fff;
+}
+
+.networkZoneItemSchool{
+  display:inline-flex;
+  align-items:center;
+  padding:0 8px;
+  min-height:22px;
+  border-radius:999px;
+  border:1px solid color-mix(in srgb, var(--schoolColor, #5F7F78) 48%, rgba(255,255,255,0.14));
+  color:var(--schoolColor, #fff);
+  background:color-mix(in srgb, var(--schoolColor, #5F7F78) 12%, rgba(255,255,255,0.03));
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.networkZoneItemMeta{
+  font-size:11.5px;
+  line-height:1.45;
+  color:rgba(231,237,245,.72);
+}
+
+.networkNodeLabel{
+  pointer-events:none;
+}
+
+.networkZoneNodeLabels{
+  pointer-events:none;
+}
+
 /* ===== Vista red fullscreen (fondo) ===== */
 body.network-mode .panel.right{
   top: 0 !important;
@@ -5208,7 +5374,7 @@ body.apk-mode #modelSheet::-webkit-scrollbar {
 
      
 
-     <div class="card schoolSticky">
+      <div class="card schoolSticky">
         <div class="schoolControls">
           <div class="schoolControl schoolControl-main">
             <div class="schoolSelectRow">
@@ -5256,6 +5422,8 @@ body.apk-mode #modelSheet::-webkit-scrollbar {
         </div>
         <div id="modelsList" class="modelsList"></div>
       </div>
+
+      <div class="card networkSelectionCard" id="networkSelectionCard" hidden></div>
     </aside>
 
     <!-- PANEL DERECHO -->
@@ -6245,6 +6413,7 @@ async function ensureModelFull(m){
     const mobileTypeSlotEl = document.getElementById('mobileTypeSlot');
     const countFiltersRowEl = document.querySelector('.countFiltersRow');
     const modelsListEl = document.getElementById('modelsList');
+    const networkSelectionEl = document.getElementById('networkSelectionCard');
     const countLine = document.getElementById('countLine');
     const modelInfoEl = document.getElementById('modelInfo');
     const leftListTitleEl = document.getElementById('leftListTitle');
@@ -6406,6 +6575,7 @@ async function ensureModelFull(m){
       minSimDelta: 0,
       query: '',
       selectedNodeId: '',
+      selectedZoneKey: '',
       zoomTransform: null,
       profileMode: 'mixed'
     };
@@ -7522,6 +7692,9 @@ function setupGroupingControls(){
     }
 
     if (groupingMode === 'network'){
+      NETWORK_FILTER_STATE.selectedNodeId = '';
+      NETWORK_FILTER_STATE.selectedZoneKey = '';
+      renderNetworkSelectionCard(null);
       renderModelInfo(null);
       renderModelsList();
       resetRightPanelToTop();
@@ -7590,6 +7763,10 @@ function colorForSchoolLabel(label){
 
 function renderModelsList(){
   document.body.classList.toggle('network-mode', groupingMode === 'network');
+  if (groupingMode !== 'network'){
+    NETWORK_FILTER_STATE.selectedZoneKey = '';
+    renderNetworkSelectionCard(null);
+  }
   if (groupingMode === 'network'){
     document.body.classList.remove('infoFull');
   }
@@ -7603,15 +7780,17 @@ function renderModelsList(){
   };
 
   if (groupingMode === 'network'){
+    if (String(NETWORK_FILTER_STATE.profileMode || 'mixed') === 'mixed'){
+      NETWORK_FILTER_STATE.profileMode = 'process';
+    }
     const modeCards = [
-      { id:'mixed', title:'Ambos', desc:'Procesos + dimensiones (actual)' },
       { id:'process', title:'Procesos', desc:'Solo similitud por procesos' },
       { id:'dimension', title:'Dimensiones', desc:'Solo similitud por dimensiones' }
     ];
 
     setLeftListMeta('Clasificación', 'elige modo del grafo');
     countLine.innerHTML = `
-      <span class="count-n">3</span>
+      <span class="count-n">2</span>
       <span class="count-txt">modos en</span>
       <span class="count-school">“Vista red”</span>
     `;
@@ -7751,6 +7930,8 @@ return `
       ? modeKey
       : 'mixed';
     NETWORK_FILTER_STATE.selectedNodeId = '';
+    NETWORK_FILTER_STATE.selectedZoneKey = '';
+    renderNetworkSelectionCard(null);
     renderModelsList();
     renderModelInfo(null);
     return;
@@ -8301,6 +8482,15 @@ function buildNetworkData(){
       const inAuthor = normSearchText(m.autores || '').includes(query);
       return inLabel || inAuthor;
     })
+    .filter((m) => {
+      if (mode === 'process'){
+        return PROCESS_FILTERS.some((p) => modelProcessLevelFour(m, p.id) > 0);
+      }
+      if (mode === 'dimension'){
+        return CHANGE_DIMS.some((d) => modelDimensionSharePct(m, d.id) > 0);
+      }
+      return true;
+    })
     .map((m) => ({
       ...(mode === 'process'
         ? (() => {
@@ -8393,6 +8583,7 @@ async function renderNetworkGraph(){
   if (!nodes.length){
     svgEl.innerHTML = '';
     NETWORK_FILTER_STATE.selectedNodeId = '';
+    renderNetworkSelectionCard(null);
     return;
   }
 
@@ -8410,9 +8601,10 @@ async function renderNetworkGraph(){
   const cy = s.h / 2;
   let zoneAnchors = null;
   let zoneMeta = new Map();
+  let zoneRows = [];
   if (mode === 'process' || mode === 'dimension'){
     const zoneKeys = uniq(nodes.map((n) => String(n.zoneKey || '')).filter(Boolean));
-    const radius = Math.max(84, Math.min(s.w, s.h) * 0.31);
+    const radius = Math.max(112, Math.min(s.w, s.h) * 0.39);
     zoneAnchors = new Map();
     for (const n of nodes){
       if (!n || !n.zoneKey || zoneMeta.has(n.zoneKey)) continue;
@@ -8444,7 +8636,7 @@ async function renderNetworkGraph(){
       zoneCount.set(n.zoneKey, (zoneCount.get(n.zoneKey) || 0) + 1);
     });
 
-    const zoneRows = [...zoneAnchors.entries()].map(([key, pos]) => {
+    zoneRows = [...zoneAnchors.entries()].map(([key, pos]) => {
       const meta = zoneMeta.get(key) || { label:key, color:'#A9B1C5' };
       return {
         key,
@@ -8499,7 +8691,7 @@ async function renderNetworkGraph(){
       });
 
     zoneSel
-      .style('cursor', 'default')
+      .style('cursor', 'pointer')
       .on('mouseenter', (evt, d) => {
         if (!tooltip) return;
         tooltip.innerHTML = `<strong>${escapeHtml(d.label)}</strong><br>${escapeHtml(String(d.count))} modelos`;
@@ -8514,6 +8706,13 @@ async function renderNetworkGraph(){
       .on('mouseleave', () => {
         if (!tooltip) return;
         tooltip.classList.remove('is-on');
+      })
+      .on('click', (evt, d) => {
+        evt.stopPropagation();
+        const key = String(d.key || '');
+        NETWORK_FILTER_STATE.selectedNodeId = '';
+        NETWORK_FILTER_STATE.selectedZoneKey = (String(NETWORK_FILTER_STATE.selectedZoneKey || '') === key) ? '' : key;
+        updateSelectionStyles();
       });
   }
 
@@ -8561,11 +8760,116 @@ async function renderNetworkGraph(){
     .attr('filter', 'url(#networkNodeGlow)')
     .style('cursor', 'pointer');
 
+  const selectedLabel = gViewport.append('g')
+    .attr('class', 'networkNodeLabel')
+    .style('display', 'none');
+
+  const selectedLabelBg = selectedLabel.append('rect')
+    .attr('rx', 12)
+    .attr('ry', 12)
+    .attr('fill', 'rgba(12,18,28,0.86)')
+    .attr('stroke', 'rgba(255,255,255,0.18)')
+    .attr('stroke-width', 1);
+
+  const selectedLabelText = selectedLabel.append('text')
+    .attr('fill', '#f7fbff')
+    .attr('font-size', 12)
+    .attr('font-weight', 800)
+    .attr('style', 'letter-spacing:.2px');
+
+  const zoneNodeLabels = gViewport.append('g')
+    .attr('class', 'networkZoneNodeLabels');
+
   const idExists = new Set(nodes.map((n) => String(n.id)));
   if (!idExists.has(String(NETWORK_FILTER_STATE.selectedNodeId || ''))){
     NETWORK_FILTER_STATE.selectedNodeId = '';
   }
   const nodeById = new Map(nodes.map((n) => [String(n.id), n]));
+
+  function updateZoneNodeLabels(){
+    const zoneKey = String(NETWORK_FILTER_STATE.selectedZoneKey || '');
+    if (!zoneKey){
+      zoneNodeLabels.selectAll('*').remove();
+      return;
+    }
+
+    const activeNodes = nodes.filter((n) => String(n.zoneKey || '') === zoneKey && Number.isFinite(n.x) && Number.isFinite(n.y));
+    const labelSel = zoneNodeLabels.selectAll('g.zone-node-label')
+      .data(activeNodes, (d) => String(d.id));
+
+    labelSel.exit().remove();
+
+    const enter = labelSel.enter()
+      .append('g')
+      .attr('class', 'zone-node-label');
+
+    enter.append('rect')
+      .attr('rx', 10)
+      .attr('ry', 10)
+      .attr('fill', 'rgba(12,18,28,0.78)')
+      .attr('stroke', 'rgba(255,255,255,0.14)')
+      .attr('stroke-width', 1);
+
+    enter.append('text')
+      .attr('fill', '#f7fbff')
+      .attr('font-size', 11)
+      .attr('font-weight', 700)
+      .attr('dominant-baseline', 'middle');
+
+    const merged = enter.merge(labelSel);
+    merged.each(function(d, i){
+      const g = d3.select(this);
+      const text = g.select('text')
+        .text(String(d.label || 'Modelo'));
+      const box = text.node()?.getBBox?.();
+      const width = Math.max(42, (box?.width || 0) + 14);
+      const height = 22;
+      const dir = (i % 2 === 0) ? 1 : -1;
+      const x = Math.max(8, Math.min(s.w - width - 8, d.x + (14 * dir)));
+      const y = Math.max(8, Math.min(s.h - height - 8, d.y - 12 + ((i % 3) * 10)));
+      g.attr('transform', `translate(${x},${y})`);
+      g.select('rect')
+        .attr('x', 0)
+        .attr('y', 0)
+        .attr('width', width)
+        .attr('height', height);
+      text
+        .attr('x', 7)
+        .attr('y', height / 2);
+    });
+  }
+
+  function updateSelectedNodeLabel(){
+    const selected = String(NETWORK_FILTER_STATE.selectedNodeId || '');
+    const selNode = selected ? nodeById.get(selected) : null;
+    if (!selNode || !Number.isFinite(selNode.x) || !Number.isFinite(selNode.y)){
+      selectedLabel.style('display', 'none');
+      return;
+    }
+
+    selectedLabel.style('display', null);
+    selectedLabelText
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('dominant-baseline', 'middle')
+      .text(String(selNode.label || 'Modelo'));
+
+    const box = selectedLabelText.node()?.getBBox?.();
+    const width = Math.max(64, (box?.width || 0) + 18);
+    const height = 28;
+    const x = Math.max(8, Math.min(s.w - width - 8, selNode.x + 12));
+    const y = Math.max(8, Math.min(s.h - height - 8, selNode.y - 26));
+
+    selectedLabel.attr('transform', `translate(${x},${y})`);
+    selectedLabelBg
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('width', width)
+      .attr('height', height);
+    selectedLabelText
+      .attr('x', 10)
+      .attr('y', height / 2);
+  }
 
   function zoneRadiusForValue(val, currentMode){
     if (currentMode === 'process'){
@@ -8581,8 +8885,21 @@ async function renderNetworkGraph(){
 
   function updateSelectionStyles(){
     const selected = String(NETWORK_FILTER_STATE.selectedNodeId || '');
+    const selectedZoneKey = String(NETWORK_FILTER_STATE.selectedZoneKey || '');
     const hasSel = !!selected;
+    const hasZoneSel = !!selectedZoneKey && !hasSel;
     const linkedSet = hasSel ? (adjacency.get(selected) || new Set()) : new Set();
+    const selNode = hasSel ? nodeById.get(selected) : null;
+    const selModel = hasSel
+      ? (getAllModelsPool().find((m) => String(m?.id || '') === selected) || selNode)
+      : null;
+    const selZone = hasZoneSel ? zoneRows.find((z) => String(z.key || '') === selectedZoneKey) : null;
+    const selZoneModels = hasZoneSel
+      ? getAllModelsPool()
+          .filter((m) => String(m?.id || ''))
+          .filter((m) => String(nodeById.get(String(m.id))?.zoneKey || '') === selectedZoneKey)
+          .sort((a, b) => String(a.label || '').localeCompare(String(b.label || ''), 'es'))
+      : [];
 
     nodeSel
       .attr('opacity', (d) => {
@@ -8592,7 +8909,30 @@ async function renderNetworkGraph(){
         return 0.18;
       })
       .attr('stroke-width', (d) => (hasSel && String(d.id) === selected) ? 2.2 : 1.2)
-      .attr('r', (d) => (hasSel && String(d.id) === selected) ? (nodeBaseR(d) + 1.9) : nodeBaseR(d));
+      .attr('r', (d) => {
+        if (hasSel && String(d.id) === selected) return nodeBaseR(d) + 1.9;
+        if (hasZoneSel && String(d.zoneKey || '') === selectedZoneKey) return nodeBaseR(d) + 1.2;
+        return nodeBaseR(d);
+      })
+      .attr('opacity', (d) => {
+        if (hasSel){
+          if (String(d.id) === selected) return 1;
+          if (linkedSet.has(String(d.id))) return 0.95;
+          return 0.18;
+        }
+        if (hasZoneSel){
+          return String(d.zoneKey || '') === selectedZoneKey ? 1 : 0.16;
+        }
+        return 1;
+      });
+
+    if (hasZoneSel){
+      renderNetworkZoneSelectionCard(selZone, selZoneModels);
+    }else{
+      renderNetworkSelectionCard(selModel || null);
+    }
+    updateSelectedNodeLabel();
+    updateZoneNodeLabels();
 
     linkSel
       .attr('stroke-opacity', (l) => {
@@ -8610,8 +8950,25 @@ async function renderNetworkGraph(){
         return (a === selected || b === selected) ? (base + 0.9) : 0.8;
       });
 
+    if (hasZoneSel){
+      linkSel
+        .attr('stroke-opacity', (l) => {
+          const a = String(l.source.id || l.source);
+          const b = String(l.target.id || l.target);
+          const inA = String(nodeById.get(a)?.zoneKey || '') === selectedZoneKey;
+          const inB = String(nodeById.get(b)?.zoneKey || '') === selectedZoneKey;
+          return (inA && inB) ? (0.26 + (l.w * 0.4)) : 0.04;
+        })
+        .attr('stroke-width', (l) => {
+          const a = String(l.source.id || l.source);
+          const b = String(l.target.id || l.target);
+          const inA = String(nodeById.get(a)?.zoneKey || '') === selectedZoneKey;
+          const inB = String(nodeById.get(b)?.zoneKey || '') === selectedZoneKey;
+          return (inA && inB) ? (1 + (l.w * 1.5)) : 0.8;
+        });
+    }
+
     if (zoneRingSel){
-      const selNode = hasSel ? nodeById.get(selected) : null;
       zoneRingSel
         .interrupt()
         .transition()
@@ -8647,6 +9004,33 @@ async function renderNetworkGraph(){
             : Number(selNode.dimensionShares?.[d.key] || 0) / 100;
           const n = Math.max(0, Math.min(1, value));
           return 1 + (1.2 * n);
+        })
+        .attr('fill-opacity', (d) => {
+          if (hasZoneSel && d.key === selectedZoneKey) return 0.11;
+          if (!selNode) return 0.04;
+          const value = (mode === 'process')
+            ? Number(selNode.processScores?.[d.key] || 0) / 4
+            : Number(selNode.dimensionShares?.[d.key] || 0) / 100;
+          const n = Math.max(0, Math.min(1, value));
+          return 0.03 + (0.12 * n);
+        })
+        .attr('stroke-opacity', (d) => {
+          if (hasZoneSel && d.key === selectedZoneKey) return 0.82;
+          if (!selNode) return 0.34;
+          const value = (mode === 'process')
+            ? Number(selNode.processScores?.[d.key] || 0) / 4
+            : Number(selNode.dimensionShares?.[d.key] || 0) / 100;
+          const n = Math.max(0, Math.min(1, value));
+          return 0.26 + (0.44 * n);
+        })
+        .attr('stroke-width', (d) => {
+          if (hasZoneSel && d.key === selectedZoneKey) return 1.9;
+          if (!selNode) return 1.1;
+          const value = (mode === 'process')
+            ? Number(selNode.processScores?.[d.key] || 0) / 4
+            : Number(selNode.dimensionShares?.[d.key] || 0) / 100;
+          const n = Math.max(0, Math.min(1, value));
+          return 1 + (1.2 * n);
         });
     }
   }
@@ -8669,33 +9053,31 @@ async function renderNetworkGraph(){
     })
     .on('click', async (evt, d) => {
       const clickedId = String(d.id);
-      if (NETWORK_FILTER_STATE.selectedNodeId === clickedId){
-        currentModelId = clickedId;
-        setActiveModelInList(currentModelId);
-        infoFadeOut();
-        resetModelPanelToTop();
-        await new Promise(r => requestAnimationFrame(r));
-        await openModel(currentModelId);
-        infoFadeIn();
-        return;
-      }
-
+      evt.stopPropagation();
+      NETWORK_FILTER_STATE.selectedZoneKey = '';
       NETWORK_FILTER_STATE.selectedNodeId = clickedId;
       updateSelectionStyles();
+      const base = getAllModelsPool().find((m) => String(m?.id || '') === clickedId);
+      if (base){
+        const full = await ensureModelFull(base).catch(() => base);
+        if (String(NETWORK_FILTER_STATE.selectedNodeId || '') === clickedId){
+          renderNetworkSelectionCard(full || base);
+        }
+      }
     });
 
   const sim = d3.forceSimulation(nodes)
     .force('link', d3.forceLink(links).id(d => d.id).distance(d => 112 - (d.w * 45)).strength(d => 0.12 + (d.w * 0.22)))
     .force('charge', d3.forceManyBody().strength(-62))
-    .force('collide', d3.forceCollide().radius(11))
+    .force('collide', d3.forceCollide().radius(13))
     .force('x', d3.forceX().x((d) => {
       if (zoneAnchors && d.zoneKey && zoneAnchors.has(d.zoneKey)) return zoneAnchors.get(d.zoneKey).x;
       return cx;
-    }).strength(zoneAnchors ? 0.22 : 0.09))
+    }).strength(zoneAnchors ? 0.26 : 0.09))
     .force('y', d3.forceY().y((d) => {
       if (zoneAnchors && d.zoneKey && zoneAnchors.has(d.zoneKey)) return zoneAnchors.get(d.zoneKey).y;
       return cy;
-    }).strength(zoneAnchors ? 0.22 : 0.09))
+    }).strength(zoneAnchors ? 0.26 : 0.09))
     .force('center', d3.forceCenter(cx, cy))
     .force('zoneRepel', zoneAnchors ? createZoneRepelForce(zoneAnchors, mode) : null)
     .alpha(0.95)
@@ -8734,8 +9116,9 @@ async function renderNetworkGraph(){
   svg.on('click', (evt) => {
     const t = evt.target;
     if (t && String(t.tagName || '').toLowerCase() === 'circle') return;
-    if (!NETWORK_FILTER_STATE.selectedNodeId) return;
+    if (!NETWORK_FILTER_STATE.selectedNodeId && !NETWORK_FILTER_STATE.selectedZoneKey) return;
     NETWORK_FILTER_STATE.selectedNodeId = '';
+    NETWORK_FILTER_STATE.selectedZoneKey = '';
     updateSelectionStyles();
   });
 
@@ -8749,6 +9132,8 @@ async function renderNetworkGraph(){
     nodeSel
       .attr('cx', d => d.x = Math.max(12, Math.min(s.w - 12, d.x)))
       .attr('cy', d => d.y = Math.max(12, Math.min(s.h - 12, d.y)));
+
+    updateSelectedNodeLabel();
   });
   updateSelectionStyles();
 
@@ -10266,6 +10651,138 @@ function sectionIdeasInner(ideas){
     // =========================================================
     // 5) Interacción
     // =========================================================
+function summarizeModelForNetwork(model){
+  const raw = [
+    model?.descripcion,
+    model?.definicion,
+    model?.fraseCorta,
+    model?.frase,
+    model?.quote
+  ].find(v => typeof v === 'string' && v.trim());
+  if (!raw) return 'Sin resumen breve disponible.';
+  const txt = String(raw).trim().replace(/\s+/g, ' ');
+  return txt.length > 210 ? `${txt.slice(0, 207).trim()}...` : txt;
+}
+
+function renderNetworkSelectionCard(model){
+  if (!networkSelectionEl) return;
+  if (!model || !model.id || groupingMode !== 'network'){
+    networkSelectionEl.hidden = true;
+    networkSelectionEl.innerHTML = '';
+    networkSelectionEl.style.removeProperty('--schoolColor');
+    return;
+  }
+
+  const schoolColor = colorForSchoolLabel(model.grupo);
+  const photoUrl = resolveAuthorPhotoUrl(model);
+  const metaBits = [
+    model.autores ? String(model.autores) : '',
+    model.grupo ? String(model.grupo) : '',
+    model.year ? String(model.year) : ''
+  ].filter(Boolean);
+  const schoolName = String(model.grupo || 'Escuela');
+
+  networkSelectionEl.hidden = false;
+  networkSelectionEl.style.setProperty('--schoolColor', schoolColor);
+  networkSelectionEl.innerHTML = `
+    <div class="networkSelectionHead">
+      <div class="networkSelectionPhoto">
+        ${photoUrl
+          ? `<img src="${escapeHtml(photoUrl)}" alt="Autor de ${escapeHtml(model.label || 'modelo')}" loading="lazy" decoding="async">`
+          : ''}
+      </div>
+      <div>
+        <div class="networkSelectionSchoolRow">
+          <span class="networkSelectionSchoolPill">${escapeHtml(schoolName)}</span>
+        </div>
+        <h3 class="networkSelectionTitle">${escapeHtml(model.label || 'Modelo')}</h3>
+        <p class="networkSelectionMeta">${escapeHtml(metaBits.join(' · ') || 'Sin metadatos')}</p>
+      </div>
+    </div>
+    <p class="networkSelectionDesc">${escapeHtml(summarizeModelForNetwork(model))}</p>
+    <div class="networkSelectionActions">
+      <button type="button" class="networkSelectionBtn" data-action="view-model" data-id="${escapeHtml(String(model.id))}">Ver modelo</button>
+    </div>
+  `;
+}
+
+function renderNetworkZoneSelectionCard(zoneMetaRow, zoneModels){
+  if (!networkSelectionEl) return;
+  if (!zoneMetaRow || !groupingMode || groupingMode !== 'network'){
+    networkSelectionEl.hidden = true;
+    networkSelectionEl.innerHTML = '';
+    networkSelectionEl.style.removeProperty('--schoolColor');
+    return;
+  }
+
+  const tint = zoneMetaRow.color || '#5F7F78';
+  const title = String(zoneMetaRow.label || zoneMetaRow.short || 'Zona');
+  const kind = String(NETWORK_FILTER_STATE.profileMode || 'process') === 'dimension' ? 'Dimensión' : 'Proceso';
+  const rows = Array.isArray(zoneModels) ? zoneModels : [];
+
+  networkSelectionEl.hidden = false;
+  networkSelectionEl.style.setProperty('--schoolColor', tint);
+  networkSelectionEl.innerHTML = `
+    <div class="networkSelectionSchoolRow">
+      <span class="networkSelectionSchoolPill">${escapeHtml(kind)}</span>
+    </div>
+    <h3 class="networkSelectionTitle">${escapeHtml(title)}</h3>
+    <p class="networkSelectionMeta">${escapeHtml(String(rows.length))} modelos en esta ${kind.toLowerCase()}.</p>
+    <div class="networkZoneList">
+      ${rows.map((model) => `
+        <article class="networkZoneItem" style="--schoolColor:${escapeHtml(colorForSchoolLabel(model.grupo))}">
+          <div class="networkZoneItemTop">
+            <div class="networkZoneItemTitle">${escapeHtml(model.label || 'Modelo')}</div>
+            <span class="networkZoneItemSchool">${escapeHtml(model.grupo || 'Otros')}</span>
+          </div>
+          <div class="networkZoneItemMeta">${escapeHtml([model.autores || '', model.year || ''].filter(Boolean).join(' · ') || 'Sin metadatos')}</div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+}
+
+async function openModelFromNetworkSelection(id){
+  const key = String(id || '').trim();
+  if (!key) return;
+
+  const pool = getAllModelsPool();
+  const baseModel = pool.find((m) => String(m?.id || '').trim() === key) || MODELS.find((m) => String(m?.id || '').trim() === key);
+  if (!baseModel) return;
+
+  groupingMode = 'school';
+  if (groupBySelectEl) groupBySelectEl.value = 'school';
+  currentSchool = String(baseModel.grupo || currentSchool || '').trim();
+  groupingTarget = currentSchool;
+  NETWORK_FILTER_STATE.selectedNodeId = '';
+  renderNetworkSelectionCard(null);
+  syncGroupingTargetOptions();
+
+  if (currentSchool){
+    if (schoolSelect) schoolSelect.value = currentSchool;
+    if (groupTargetSelectEl) groupTargetSelectEl.value = currentSchool;
+    renderSchoolInfo(currentSchool);
+    renderModelsList();
+    resetRightPanelToTop();
+    await ensureSchoolFromGitHub(currentSchool).catch(() => {});
+    renderModelsList();
+  }
+
+  infoFadeOut();
+  await new Promise(r => requestAnimationFrame(r));
+  await openModel(key);
+  infoFadeIn();
+}
+
+if (networkSelectionEl && !networkSelectionEl.__boundClick){
+  networkSelectionEl.__boundClick = true;
+  networkSelectionEl.addEventListener('click', async (evt) => {
+    const btn = evt.target.closest('[data-action="view-model"]');
+    if (!btn) return;
+    await openModelFromNetworkSelection(btn.getAttribute('data-id') || '');
+  });
+}
+
 function getAllModelsPool(){
   return (window.MODELS_ALL && Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
     ? window.MODELS_ALL
