@@ -1457,6 +1457,310 @@ opacity: .75;
       from{ opacity:0; transform: translateY(6px); }
       to{ opacity:1; transform: translateY(0); }
     }
+/* ===== Vista red ===== */
+.networkView{
+  position: relative;
+  min-height: min(76vh, 760px);
+  padding: 10px 0 0 0;
+}
+
+.networkHeader{
+  position: relative;
+  padding: 10px 12px 12px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.14);
+  background:
+    radial-gradient(760px 280px at 8% 8%, rgba(255,255,255,.14), transparent 58%),
+    radial-gradient(780px 320px at 94% 12%, rgba(116,174,255,.12), transparent 62%),
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  box-shadow:
+    0 14px 34px rgba(0,0,0,.24),
+    inset 0 1px 0 rgba(255,255,255,.20);
+  backdrop-filter: blur(12px) saturate(125%);
+  -webkit-backdrop-filter: blur(12px) saturate(125%);
+}
+
+.networkTitle{
+  font-size: 30px;
+  font-weight: 820;
+  line-height: 1.04;
+  letter-spacing: -0.55px;
+  color: rgba(245,249,255,.96);
+  text-shadow: 0 8px 24px rgba(0,0,0,.28);
+}
+
+.networkSub{
+  margin-top: 7px;
+  font-size: 12px;
+  font-weight: 560;
+  color: rgba(231,237,245,.76);
+  max-width: 62ch;
+}
+
+.networkCanvas{
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: min(68vh, 640px);
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.16);
+  overflow: hidden;
+  background:
+    radial-gradient(980px 520px at 18% 10%, rgba(255,255,255,.14), transparent 58%),
+    radial-gradient(860px 500px at 84% 90%, rgba(126,188,255,.12), transparent 64%),
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  box-shadow:
+    0 28px 56px rgba(5,10,18,.36),
+    inset 0 1px 0 rgba(255,255,255,.26),
+    inset 0 0 0 1px rgba(255,255,255,.06);
+}
+
+.networkCanvas::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 22% 14%, rgba(255,255,255,.14), transparent 42%),
+    radial-gradient(circle at 78% 84%, rgba(183,211,255,.10), transparent 46%);
+}
+
+.networkCanvas::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 34px 34px, 34px 34px;
+  opacity: .34;
+}
+
+#networkSvg{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.networkLegend{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.networkLegend .chip{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.03));
+  font-size: 11px;
+  font-weight: 760;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity .14s ease, border-color .14s ease, background .14s ease, transform .14s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.22),
+    0 8px 16px rgba(0,0,0,.18);
+}
+
+.networkLegend .chip:hover{
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,.24);
+}
+
+.networkLegend .chip.is-off{
+  opacity: .42;
+  border-color: rgba(255,255,255,.10);
+  background: rgba(255,255,255,.02);
+}
+
+.networkLegend .chip.is-on{
+  opacity: 1;
+}
+
+.networkLegend .chip:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(217,170,63,.18);
+}
+
+.networkLegend .chip.reset{
+  border-style: dashed;
+}
+
+.networkLegend .dot{
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+}
+
+.networkTip{
+  margin-top: 10px;
+}
+
+.networkTooltip{
+  position: absolute;
+  z-index: 4;
+  min-width: 180px;
+  max-width: 280px;
+  pointer-events: none;
+  padding: 9px 11px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.22);
+  background:
+    linear-gradient(180deg, rgba(14,20,30,.88), rgba(10,15,24,.82));
+  box-shadow:
+    0 18px 30px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.18);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  font-size: 11px;
+  line-height: 1.4;
+  color: #f4f7fd;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity .12s ease, transform .12s ease;
+}
+
+.networkTooltip.is-on{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Vista red fullscreen (fondo) ===== */
+body.network-mode .panel.right{
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  z-index: 6 !important;
+  overflow: hidden !important;
+}
+
+body.network-mode .panel.right::before{
+  display: none !important;
+}
+
+body.network-mode #modelInfo.modelPanel{
+  height: 100vh;
+  padding: 0 !important;
+}
+
+body.network-mode .networkView{
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0;
+}
+
+body.network-mode .networkHeader{
+  position: absolute;
+  top: 14px;
+  right: calc(var(--edgePad, 14px) + 10px);
+  left: calc(var(--edgePad, 14px) + var(--leftPanelW, 380px) + var(--midGap, 14px) + 10px);
+  z-index: 7;
+  background:
+    radial-gradient(760px 280px at 8% 8%, rgba(255,255,255,.14), transparent 58%),
+    radial-gradient(780px 320px at 94% 12%, rgba(116,174,255,.12), transparent 62%),
+    linear-gradient(180deg, rgba(18,28,40,.56), rgba(15,22,32,.34));
+  box-shadow:
+    0 20px 44px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.22);
+}
+
+body.network-mode .networkCanvas{
+  margin-top: 0;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background:
+    radial-gradient(980px 520px at 18% 10%, rgba(255,255,255,.14), transparent 58%),
+    radial-gradient(860px 500px at 84% 90%, rgba(126,188,255,.12), transparent 64%),
+    linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01));
+}
+
+body.network-mode .networkLegend{
+  margin-top: 8px;
+}
+
+body.network-mode .networkTip{
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  z-index: 7;
+  margin-top: 0;
+  background: linear-gradient(180deg, rgba(18,28,40,.52), rgba(15,22,32,.34));
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 16px 36px rgba(0,0,0,.25);
+}
+
+/* panel izquierdo glass en vista red */
+body.network-mode .panel.left{
+  background: linear-gradient(180deg, rgba(20,28,38,.72), rgba(20,28,38,.56));
+  border: 1px solid rgba(255,255,255,.16);
+  box-shadow:
+    0 26px 56px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.12);
+  backdrop-filter: blur(18px) saturate(130%);
+  -webkit-backdrop-filter: blur(18px) saturate(130%);
+}
+
+body.network-mode .panel.left .card{
+  background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.04));
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow:
+    0 14px 30px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.12);
+}
+
+body.network-mode .panel.left .schoolSticky{
+  background: linear-gradient(180deg, rgba(25,35,48,.78), rgba(22,31,43,.62)) !important;
+  border: 1px solid rgba(255,255,255,.14) !important;
+  box-shadow:
+    0 14px 30px rgba(0,0,0,.24),
+    inset 0 1px 0 rgba(255,255,255,.12) !important;
+  backdrop-filter: blur(16px) saturate(128%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(128%) !important;
+}
+
+@media (max-width: 980px){
+  .networkView{
+    min-height: auto;
+  }
+  .networkCanvas{
+    height: 56vh;
+  }
+  .networkTitle{
+    font-size: 24px;
+  }
+  body.network-mode .networkHeader{
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  body.network-mode .networkTip{
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
 /* ===== Hero de entrada (panel derecho) ===== */
 .modelPanel .mp-hero{
   position: relative;
@@ -4916,6 +5220,7 @@ body.apk-mode #modelSheet::-webkit-scrollbar {
               <option value="school">Escuela</option>
               <option value="process">Proceso</option>
               <option value="dimension">Dimensión</option>
+              <option value="network">Vista red</option>
             </select>
           </div>
 
@@ -4946,8 +5251,8 @@ body.apk-mode #modelSheet::-webkit-scrollbar {
 
       <div class="card">
         <div class="row" style="justify-content:space-between">
-          <div style="font-weight:900; font-size:13px; color:#fff">Modelos</div>
-          <div class="subtitle" style="margin:0; font-size:12px">clic para abrir ficha</div>
+          <div id="leftListTitle" style="font-weight:900; font-size:13px; color:#fff">Modelos</div>
+          <div id="leftListHint" class="subtitle" style="margin:0; font-size:12px">clic para abrir ficha</div>
         </div>
         <div id="modelsList" class="modelsList"></div>
       </div>
@@ -5942,6 +6247,8 @@ async function ensureModelFull(m){
     const modelsListEl = document.getElementById('modelsList');
     const countLine = document.getElementById('countLine');
     const modelInfoEl = document.getElementById('modelInfo');
+    const leftListTitleEl = document.getElementById('leftListTitle');
+    const leftListHintEl = document.getElementById('leftListHint');
     let complexityLevel = 4;
     let showModelItems = true;
     let showMarcoItems = true;
@@ -5958,6 +6265,16 @@ async function ensureModelFull(m){
       { id:'AG', label:'Ejercer agencia' },
       { id:'R',  label:'Transformar las relaciones' }
     ];
+    const PROCESS_ZONE_COLORS = {
+      RF: '#88A6C6',
+      RE: '#F26B7A',
+      AP: '#B07AA1',
+      RI: '#FF9DA7',
+      N:  '#E15759',
+      I:  '#4E79A7',
+      AG: '#d69640',
+      R:  '#F1CE63'
+    };
     const PROCESS_INFO = {
       RF: {
         title: 'RF — Regulación fisiológica / corporal',
@@ -6080,6 +6397,18 @@ async function ensureModelFull(m){
     const PROCESS_FILTER_MAP = new Map(PROCESS_FILTERS.map((p) => [p.id, p]));
     let ENSURE_ALL_SCHOOLS_PROMISE = null;
     let ENSURE_GROUPING_MODELS_PROMISE = null;
+    const NETWORK_STATE = {
+      sim: null,
+      resizeHandler: null
+    };
+    const NETWORK_FILTER_STATE = {
+      activeSchools: new Set(),
+      minSimDelta: 0,
+      query: '',
+      selectedNodeId: '',
+      zoomTransform: null,
+      profileMode: 'mixed'
+    };
   function infoFadeOut(){
   if(!modelInfoEl) return;
   modelInfoEl.classList.add('is-loading');
@@ -7006,27 +7335,38 @@ function modelProcessLevelFour(m, processId){
   if (!m || typeof m !== 'object' || !processId) return 0;
   const procDef = PROCESS_FILTER_MAP.get(processId);
   if (!procDef) return 0;
-  const raw = resolveProcessRawValue(m.graficaProcesos, procDef);
+  const raw = resolveProcessRawValue(getModelProcessMap(m), procDef);
   return normalizeScoreToFour(raw);
 }
 
 function modelDimensionSharePct(m, dimId){
   if (!m || typeof m !== 'object' || !dimId) return 0;
-  if (!m.dimensionesCambio || typeof m.dimensionesCambio !== 'object') return 0;
+  const dimMap = getModelDimensionMap(m);
+  if (!dimMap || typeof dimMap !== 'object') return 0;
 
-  const total = CHANGE_DIMS.reduce((acc, d) => acc + readDimensionValue(m.dimensionesCambio, d.keys), 0);
+  const total = CHANGE_DIMS.reduce((acc, d) => acc + readDimensionValue(dimMap, [d.id]), 0);
   if (!(total > 0)) return 0;
 
   const def = CHANGE_DIMS.find((d) => d.id === dimId);
   if (!def) return 0;
 
-  const own = readDimensionValue(m.dimensionesCambio, def.keys);
+  const own = readDimensionValue(dimMap, [def.id]);
   return (own / total) * 100;
 }
 
 function baseListByGroupingMode(){
   if (groupingMode === 'school'){
     return filteredModelsBySchool(currentSchool);
+  }
+
+  if (groupingMode === 'network'){
+    return MODELS
+      .filter(m => !(m && m.hideInModels) && !(m && m.isMarco))
+      .sort((a,b) =>
+        String(a.grupo || '').localeCompare(String(b.grupo || ''), 'es') ||
+        (+a.year||0) - (+b.year||0) ||
+        String(a.label).localeCompare(String(b.label), 'es')
+      );
   }
 
   return MODELS.slice().sort((a,b) =>
@@ -7146,6 +7486,12 @@ function syncGroupingTargetOptions(){
     return;
   }
 
+  if (groupingMode === 'network'){
+    groupTargetWrapEl.hidden = true;
+    groupTargetSelectEl.innerHTML = '';
+    return;
+  }
+
   groupTargetWrapEl.hidden = false;
 }
 
@@ -7175,6 +7521,16 @@ function setupGroupingControls(){
       return;
     }
 
+    if (groupingMode === 'network'){
+      renderModelInfo(null);
+      renderModelsList();
+      resetRightPanelToTop();
+      await ensureModelsHydratedForGrouping();
+      renderModelsList();
+      renderModelInfo(null);
+      return;
+    }
+
     renderModelInfo(null);
     renderModelsList();
     resetRightPanelToTop();
@@ -7186,6 +7542,9 @@ function setupGroupingControls(){
     groupTargetSelectEl.__bound = true;
     groupTargetSelectEl.addEventListener('change', async () => {
       groupingTarget = String(groupTargetSelectEl.value || '').trim();
+      if (groupingMode === 'network'){
+        return;
+      }
       if (groupingMode === 'school'){
         if (groupingTarget){
           schoolSelect.value = groupingTarget;
@@ -7230,6 +7589,47 @@ function colorForSchoolLabel(label){
 
 
 function renderModelsList(){
+  document.body.classList.toggle('network-mode', groupingMode === 'network');
+  if (groupingMode === 'network'){
+    document.body.classList.remove('infoFull');
+  }
+
+  if (typeFiltersEl){
+    typeFiltersEl.style.display = (groupingMode === 'network') ? 'none' : '';
+  }
+  const setLeftListMeta = (title, hint) => {
+    if (leftListTitleEl) leftListTitleEl.textContent = title;
+    if (leftListHintEl) leftListHintEl.textContent = hint;
+  };
+
+  if (groupingMode === 'network'){
+    const modeCards = [
+      { id:'mixed', title:'Ambos', desc:'Procesos + dimensiones (actual)' },
+      { id:'process', title:'Procesos', desc:'Solo similitud por procesos' },
+      { id:'dimension', title:'Dimensiones', desc:'Solo similitud por dimensiones' }
+    ];
+
+    setLeftListMeta('Clasificación', 'elige modo del grafo');
+    countLine.innerHTML = `
+      <span class="count-n">3</span>
+      <span class="count-txt">modos en</span>
+      <span class="count-school">“Vista red”</span>
+    `;
+
+    modelsListEl.style.setProperty('--schoolColor', '#5F7F78');
+    modelsListEl.innerHTML = modeCards.map((m) => {
+      const active = (String(NETWORK_FILTER_STATE.profileMode || 'mixed') === m.id) ? 'active' : '';
+      return `
+        <div class="mi-item ${active}" data-network-mode="${escapeHtml(m.id)}" style="--schoolColor:#5F7F78">
+          <div class="mi-top">
+            <div class="mi-title">${escapeHtml(m.title)}</div>
+          </div>
+          <div class="mi-sub">${escapeHtml(m.desc)}</div>
+        </div>
+      `;
+    }).join('');
+    return;
+  }
 
   const baseList = baseListByGroupingMode();
   const onlyModels = baseList.filter(m => !(m && m.isMarco));
@@ -7254,6 +7654,7 @@ function renderModelsList(){
 
 
   if (groupingMode === 'process'){
+    setLeftListMeta('Modelos', 'clic para abrir ficha');
     const proc = PROCESS_FILTER_MAP.get(groupingTarget) || PROCESS_FILTERS[0];
     const procLabel = proc ? `${proc.id} · ${proc.label}` : 'Proceso';
     countLine.innerHTML = `
@@ -7262,6 +7663,7 @@ function renderModelsList(){
       <span class="count-school">“${escapeHtml(procLabel)}”</span>
     `;
   }else if (groupingMode === 'dimension'){
+    setLeftListMeta('Modelos', 'clic para abrir ficha');
     const dim = CHANGE_DIMS.find((d) => d.id === groupingTarget) || CHANGE_DIMS[0];
     const dimLabel = dim ? `${dim.label} (>=${SIGNIFICANT_DIMENSION_PCT}%)` : 'Dimensión';
     countLine.innerHTML = `
@@ -7270,6 +7672,7 @@ function renderModelsList(){
       <span class="count-school">“${escapeHtml(dimLabel)}”</span>
     `;
   }else{
+    setLeftListMeta('Modelos', 'clic para abrir ficha');
     countLine.innerHTML = `
       <span class="count-n">${list.length}</span>
       <span class="count-txt">${(list.length === baseList.length) ? 'en' : `de ${baseList.length} en`}</span>
@@ -7283,7 +7686,9 @@ function renderModelsList(){
       ? 'No hay modelos en esta escuela todavía.'
       : (groupingMode === 'process'
         ? 'No hay modelos con nivel 4 en ese proceso.'
-        : `No hay modelos con >=${SIGNIFICANT_DIMENSION_PCT}% en esa dimensión.`);
+        : (groupingMode === 'dimension'
+          ? `No hay modelos con >=${SIGNIFICANT_DIMENSION_PCT}% en esa dimensión.`
+          : 'No hay modelos para la vista red.'));
     modelsListEl.innerHTML =
       `<div class="subtitle" style="margin:10px 0 0 0">${noneSelected ? 'Activa Modelos o Marcos para ver resultados.' : emptyByGrouping}</div>`;
     return;
@@ -7338,6 +7743,18 @@ return `
   modelsListEl.addEventListener('click', async (evt) => {
   const item = evt.target.closest('.mi-item');
   if(!item) return;
+
+  const modeKey = String(item.getAttribute('data-network-mode') || '').trim();
+  if (groupingMode === 'network' && modeKey){
+    if (modeKey === NETWORK_FILTER_STATE.profileMode) return;
+    NETWORK_FILTER_STATE.profileMode = (modeKey === 'process' || modeKey === 'dimension' || modeKey === 'mixed')
+      ? modeKey
+      : 'mixed';
+    NETWORK_FILTER_STATE.selectedNodeId = '';
+    renderModelsList();
+    renderModelInfo(null);
+    return;
+  }
 
   const raw = item.getAttribute('data-id') || '';
   const id = decodeURIComponent(raw);
@@ -7549,6 +7966,806 @@ function renderDimensionOverviewHtml(){
   `;
 }
 
+function disposeNetworkGraph(){
+  if (NETWORK_STATE.sim){
+    try{ NETWORK_STATE.sim.stop(); }catch(e){}
+    NETWORK_STATE.sim = null;
+  }
+  if (NETWORK_STATE.resizeHandler){
+    window.removeEventListener('resize', NETWORK_STATE.resizeHandler);
+    NETWORK_STATE.resizeHandler = null;
+  }
+}
+
+function getNetworkSchoolList(){
+  return uniq(
+    MODELS
+      .filter(m => m && !m.hideInModels && !m.isMarco && m.id && m.label)
+      .map(m => String(m.grupo || 'Otros'))
+      .filter(Boolean)
+  );
+}
+
+function ensureNetworkSchoolFilters(){
+  const schools = getNetworkSchoolList();
+  const active = NETWORK_FILTER_STATE.activeSchools;
+
+  if (!active.size){
+    schools.forEach((s) => active.add(s));
+    return schools;
+  }
+
+  for (const s of [...active]){
+    if (!schools.includes(s)) active.delete(s);
+  }
+  if (!active.size){
+    schools.forEach((s) => active.add(s));
+  }
+  return schools;
+}
+
+function updateNetworkLegendUi(){
+  const legend = document.querySelector('.networkLegend');
+  if (!legend) return;
+  const active = NETWORK_FILTER_STATE.activeSchools;
+  const allSchools = getNetworkSchoolList();
+  legend.querySelectorAll('.chip[data-school]').forEach((chip) => {
+    const school = String(chip.getAttribute('data-school') || '');
+    const on = active.has(school);
+    chip.classList.toggle('is-on', on);
+    chip.classList.toggle('is-off', !on);
+    chip.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+
+  const resetBtn = legend.querySelector('.chip.reset');
+  if (resetBtn){
+    const allOn = allSchools.length > 0 && active.size === allSchools.length;
+    resetBtn.classList.toggle('is-off', allOn);
+    resetBtn.classList.toggle('is-on', !allOn);
+  }
+}
+
+function bindNetworkLegendHandlers(){
+  const legend = document.querySelector('.networkLegend');
+  if (!legend || legend.__bound) return;
+  legend.__bound = true;
+
+  legend.addEventListener('click', (evt) => {
+    const chip = evt.target.closest('.chip[data-school]');
+    if (!chip) return;
+
+    const school = String(chip.getAttribute('data-school') || '');
+    if (!school) return;
+
+    const active = NETWORK_FILTER_STATE.activeSchools;
+    const onlyThis = evt.altKey || evt.metaKey;
+
+    if (onlyThis){
+      active.clear();
+      active.add(school);
+    }else{
+      if (active.has(school)){
+        if (active.size <= 1) return; // evita quedarse sin nodos
+        active.delete(school);
+      }else{
+        active.add(school);
+      }
+    }
+
+    updateNetworkLegendUi();
+    renderNetworkGraphLazy();
+  });
+
+  legend.addEventListener('click', (evt) => {
+    const reset = evt.target.closest('.chip.reset');
+    if (!reset) return;
+    const schools = getNetworkSchoolList();
+    const active = NETWORK_FILTER_STATE.activeSchools;
+    active.clear();
+    schools.forEach((s) => active.add(s));
+    updateNetworkLegendUi();
+    renderNetworkGraphLazy();
+  });
+}
+
+function buildNetworkOverviewHtml(){
+  const schools = ensureNetworkSchoolFilters();
+  const profileMode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
+  const legends = schools.map((s) => {
+    const c = colorForSchoolLabel(s);
+    const on = NETWORK_FILTER_STATE.activeSchools.has(s);
+    return `<button type="button" class="chip ${on ? 'is-on' : 'is-off'}" data-school="${escapeHtml(s)}" aria-pressed="${on ? 'true' : 'false'}"><span class="dot" style="background:${escapeHtml(c)}"></span>${escapeHtml(s)}</button>`;
+  }).join('');
+  const resetLegend = `<button type="button" class="chip reset" title="Mostrar todas las escuelas">Mostrar todas</button>`;
+  const modeLabel = (profileMode === 'process')
+    ? 'similitud por procesos'
+    : (profileMode === 'dimension')
+      ? 'similitud por dimensiones'
+      : 'similitud por procesos + dimensiones';
+
+  return `
+    <div class="networkView">
+      <div class="networkHeader">
+        <span class="mp-tag">Vista red</span>
+        <div class="networkTitle">Mapa relacional de modelos</div>
+        <div class="networkSub">Enlaces y distancias por ${escapeHtml(modeLabel)}, sin usar escuela en el cálculo.</div>
+        <div class="networkLegend">${legends}${resetLegend}</div>
+      </div>
+      <div class="networkCanvas" id="networkCanvas">
+        <svg id="networkSvg" aria-label="Red de modelos"></svg>
+        <div class="networkTooltip" id="networkTooltip"></div>
+      </div>
+      <div class="mp-hint networkTip">Arrastra el fondo para mover, rueda para zoom y arrastra nodos para reordenar. Clic en un nodo: resalta vecinos; clic de nuevo: abre su ficha. En "Solo procesos" o "Solo dimensiones", las zonas se dibujan dentro del grafo con círculos guía.</div>
+    </div>
+  `;
+}
+
+function normSearchText(s){
+  return String(s ?? '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g,'')
+    .trim();
+}
+
+function modelVectorForNetwork(m){
+  const mode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
+  const v = [];
+
+  if (mode === 'process' || mode === 'mixed'){
+    for (const p of PROCESS_FILTERS){
+      v.push(modelProcessLevelFour(m, p.id) / 4);
+    }
+  }
+
+  if (mode === 'dimension' || mode === 'mixed'){
+    for (const d of CHANGE_DIMS){
+      v.push(modelDimensionSharePct(m, d.id) / 100);
+    }
+  }
+
+  if (mode === 'mixed'){
+    const imp = effectiveImportanceLevel(m);
+    v.push(((imp === null ? 2 : imp) / 4));
+  }
+
+  return v;
+}
+
+function dominantProcessForModel(m){
+  let bestId = '';
+  let bestScore = -1;
+  for (const p of PROCESS_FILTERS){
+    const s = modelProcessLevelFour(m, p.id);
+    if (s > bestScore){
+      bestScore = s;
+      bestId = p.id;
+    }
+  }
+  if (!(bestScore > 0)) return null;
+  const def = PROCESS_FILTER_MAP.get(bestId);
+  if (!def) return null;
+  return {
+    key: def.id,
+    label: `${def.id} · ${def.label}`,
+    color: PROCESS_ZONE_COLORS[def.id] || '#A9B1C5'
+  };
+}
+
+function processScoresForModel(m){
+  const out = {};
+  for (const p of PROCESS_FILTERS){
+    out[p.id] = modelProcessLevelFour(m, p.id);
+  }
+  return out;
+}
+
+function dominantDimensionForModel(m){
+  if (!m || typeof m !== 'object') return null;
+  const dimMap = getModelDimensionMap(m);
+  const total = CHANGE_DIMS.reduce((acc, d) => acc + readDimensionValue(dimMap, [d.id]), 0);
+  if (!(total > 0)) return null;
+
+  let best = null;
+  let bestShare = -1;
+  for (const d of CHANGE_DIMS){
+    const own = readDimensionValue(dimMap, [d.id]);
+    const share = (own / total) * 100;
+    if (share > bestShare){
+      bestShare = share;
+      best = d;
+    }
+  }
+  if (!best) return null;
+  return {
+    key: best.id,
+    label: best.label,
+    color: CHANGE_DIM_COLORS_BY_ID[best.id] || '#A9B1C5'
+  };
+}
+
+function dimensionSharesForModel(m){
+  const out = {};
+  for (const d of CHANGE_DIMS){
+    out[d.id] = modelDimensionSharePct(m, d.id);
+  }
+  return out;
+}
+
+function shortZoneLabel(mode, key, label){
+  if (mode === 'process'){
+    return String(key || '').trim().toUpperCase() || 'PROC';
+  }
+
+  if (mode === 'dimension'){
+    const byId = {
+      cognicion: 'COG',
+      afecto: 'AFE',
+      atencion: 'ATN',
+      self: 'SELF',
+      motivacion: 'MOT',
+      conducta_manifiesta: 'COND',
+      biofisiologico: 'BIO',
+      sociocultural: 'SOC'
+    };
+    if (byId[key]) return byId[key];
+  }
+
+  const txt = String(label || key || '')
+    .replace(/^\d+\.\s*/, '')
+    .trim();
+  if (!txt) return 'ZONA';
+
+  const first = txt.split(/\s+/)[0] || txt;
+  return first.slice(0, 4).toUpperCase();
+}
+
+function createZoneRepelForce(zoneAnchors, mode){
+  const anchors = [...(zoneAnchors?.entries?.() || [])].map(([key, pos]) => ({
+    key,
+    x: Number(pos?.x) || 0,
+    y: Number(pos?.y) || 0
+  }));
+  let nodes = [];
+
+  const weightFor = (node, key) => {
+    if (mode === 'process'){
+      const v = Number(node?.processScores?.[key] || 0);
+      return Math.max(0, Math.min(1, v / 4));
+    }
+    if (mode === 'dimension'){
+      const v = Number(node?.dimensionShares?.[key] || 0);
+      return Math.max(0, Math.min(1, v / 100));
+    }
+    return 0.5;
+  };
+
+  // Empuja lejos de zonas con bajo peso cuando el nodo entra en su radio de influencia.
+  const force = (alpha) => {
+    if (!anchors.length || !nodes.length) return;
+    const influenceR = 230;
+    const baseK = 0.24;
+
+    for (const n of nodes){
+      if (!Number.isFinite(n.x) || !Number.isFinite(n.y)) continue;
+      for (const a of anchors){
+        const w = weightFor(n, a.key);
+        const low = 1 - w;
+        if (low <= 0.08) continue;
+
+        const dx = (n.x - a.x);
+        const dy = (n.y - a.y);
+        const d2 = (dx * dx) + (dy * dy) + 0.0001;
+        const d = Math.sqrt(d2);
+        if (d > influenceR) continue;
+
+        const near = (influenceR - d) / influenceR; // 0..1 (más alto = más cerca)
+        const mag = alpha * baseK * low * low * near;
+        n.vx += (dx / d) * mag;
+        n.vy += (dy / d) * mag;
+      }
+    }
+  };
+
+  force.initialize = (_nodes) => { nodes = _nodes || []; };
+  return force;
+}
+
+function cosineSimilarity(a, b){
+  if (!a || !b || a.length !== b.length) return 0;
+  let dot = 0;
+  let na = 0;
+  let nb = 0;
+  for (let i = 0; i < a.length; i++){
+    dot += a[i] * b[i];
+    na += a[i] * a[i];
+    nb += b[i] * b[i];
+  }
+  if (!(na > 0) || !(nb > 0)) return 0;
+  return dot / (Math.sqrt(na) * Math.sqrt(nb));
+}
+
+function buildNetworkData(){
+  const activeSchools = NETWORK_FILTER_STATE.activeSchools;
+  const mode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
+  const query = normSearchText(NETWORK_FILTER_STATE.query || '');
+  const rawNodes = MODELS
+    .filter(m => m && !m.hideInModels && !m.isMarco && m.id && m.label)
+    .filter(m => {
+      const g = String(m.grupo || 'Otros');
+      return !activeSchools.size || activeSchools.has(g);
+    })
+    .filter((m) => {
+      if (!query) return true;
+      const inLabel = normSearchText(m.label).includes(query);
+      const inAuthor = normSearchText(m.autores || '').includes(query);
+      return inLabel || inAuthor;
+    })
+    .map((m) => ({
+      ...(mode === 'process'
+        ? (() => {
+            const z = dominantProcessForModel(m);
+            return {
+              zoneKey: z?.key || '',
+              zoneLabel: z?.label || '',
+              zoneColor: z?.color || ''
+            };
+          })()
+        : mode === 'dimension'
+          ? (() => {
+              const z = dominantDimensionForModel(m);
+              return {
+                zoneKey: z?.key || '',
+                zoneLabel: z?.label || '',
+                zoneColor: z?.color || ''
+              };
+            })()
+          : { zoneKey:'', zoneLabel:'', zoneColor:'' }),
+      id: String(m.id),
+      label: String(m.label || '—'),
+      autores: String(m.autores || ''),
+      grupo: String(m.grupo || 'Otros'),
+      year: Number(m.year || 0) || 0,
+      importance: effectiveImportanceLevel(m),
+      processScores: processScoresForModel(m),
+      dimensionShares: dimensionSharesForModel(m),
+      vector: modelVectorForNetwork(m)
+    }));
+
+  const edges = [];
+  const perNode = new Map();
+  for (let i = 0; i < rawNodes.length; i++){
+    perNode.set(rawNodes[i].id, []);
+  }
+
+  for (let i = 0; i < rawNodes.length; i++){
+    for (let j = i + 1; j < rawNodes.length; j++){
+      const a = rawNodes[i];
+      const b = rawNodes[j];
+      const sim = cosineSimilarity(a.vector, b.vector);
+      const delta = Number(NETWORK_FILTER_STATE.minSimDelta || 0) / 100;
+      const minSimBase = 0.54;
+      const minSim = Math.max(0.12, Math.min(0.92, minSimBase + delta));
+      if (sim < minSim) continue;
+      const e = { source: a.id, target: b.id, w: sim };
+      edges.push(e);
+      perNode.get(a.id).push(e);
+      perNode.get(b.id).push(e);
+    }
+  }
+
+  const maxPerNode = 4;
+  const keep = new Set();
+  for (const n of rawNodes){
+    const top = (perNode.get(n.id) || [])
+      .sort((x, y) => y.w - x.w)
+      .slice(0, maxPerNode);
+    for (const e of top){
+      const key = (String(e.source) < String(e.target))
+        ? `${e.source}__${e.target}`
+        : `${e.target}__${e.source}`;
+      keep.add(key);
+    }
+  }
+
+  const filteredEdges = edges.filter((e) => {
+    const key = (String(e.source) < String(e.target))
+      ? `${e.source}__${e.target}`
+      : `${e.target}__${e.source}`;
+    return keep.has(key);
+  });
+
+  return { nodes: rawNodes, links: filteredEdges };
+}
+
+async function renderNetworkGraph(){
+  const d3ok = await (D3_READY_PROMISE || ensureD3().catch(() => false));
+  if (!d3ok) return;
+
+  const svgEl = document.getElementById('networkSvg');
+  const wrap = document.getElementById('networkCanvas');
+  const tooltip = document.getElementById('networkTooltip');
+  if (!svgEl || !wrap) return;
+
+  disposeNetworkGraph();
+
+  const { nodes, links } = buildNetworkData();
+  if (!nodes.length){
+    svgEl.innerHTML = '';
+    NETWORK_FILTER_STATE.selectedNodeId = '';
+    return;
+  }
+
+  const svg = d3.select(svgEl);
+  const size = () => {
+    const r = wrap.getBoundingClientRect();
+    return { w: Math.max(220, r.width), h: Math.max(240, r.height) };
+  };
+  const s = size();
+  svg.attr('viewBox', `0 0 ${s.w} ${s.h}`);
+  svg.selectAll('*').remove();
+
+  const mode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
+  const cx = s.w / 2;
+  const cy = s.h / 2;
+  let zoneAnchors = null;
+  let zoneMeta = new Map();
+  if (mode === 'process' || mode === 'dimension'){
+    const zoneKeys = uniq(nodes.map((n) => String(n.zoneKey || '')).filter(Boolean));
+    const radius = Math.max(84, Math.min(s.w, s.h) * 0.31);
+    zoneAnchors = new Map();
+    for (const n of nodes){
+      if (!n || !n.zoneKey || zoneMeta.has(n.zoneKey)) continue;
+      zoneMeta.set(n.zoneKey, {
+        label: n.zoneLabel || n.zoneKey,
+        color: n.zoneColor || '#A9B1C5'
+      });
+    }
+    zoneKeys.forEach((k, i) => {
+      const ang = ((Math.PI * 2) / Math.max(1, zoneKeys.length)) * i - (Math.PI / 2);
+      zoneAnchors.set(k, {
+        x: cx + Math.cos(ang) * radius,
+        y: cy + Math.sin(ang) * radius
+      });
+    });
+  }
+
+  const gViewport = svg.append('g').attr('class', 'net-viewport');
+  const gZones = gViewport.append('g').attr('class', 'net-zones');
+  const gLinks = gViewport.append('g').attr('class', 'net-links');
+  const gNodes = gViewport.append('g').attr('class', 'net-nodes');
+  const zoneBaseR = 66;
+  let zoneRingSel = null;
+
+  if (zoneAnchors && zoneAnchors.size){
+    const zoneCount = new Map();
+    nodes.forEach((n) => {
+      if (!n || !n.zoneKey) return;
+      zoneCount.set(n.zoneKey, (zoneCount.get(n.zoneKey) || 0) + 1);
+    });
+
+    const zoneRows = [...zoneAnchors.entries()].map(([key, pos]) => {
+      const meta = zoneMeta.get(key) || { label:key, color:'#A9B1C5' };
+      return {
+        key,
+        x: pos.x,
+        y: pos.y,
+        label: meta.label,
+        short: shortZoneLabel(mode, key, meta.label),
+        color: meta.color,
+        count: zoneCount.get(key) || 0
+      };
+    });
+
+    const zoneSel = gZones.selectAll('g.net-zone')
+      .data(zoneRows, (d) => d.key)
+      .enter()
+      .append('g')
+      .attr('class', 'net-zone');
+
+    zoneRingSel = zoneSel.append('circle')
+      .attr('cx', (d) => d.x)
+      .attr('cy', (d) => d.y)
+      .attr('r', zoneBaseR)
+      .attr('fill', (d) => d.color)
+      .attr('fill-opacity', 0.04)
+      .attr('stroke', (d) => d.color)
+      .attr('stroke-opacity', 0.34)
+      .attr('stroke-width', 1.1);
+
+    zoneSel.append('text')
+      .attr('x', (d) => d.x)
+      .attr('y', (d) => d.y - 4)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', 12)
+      .attr('font-weight', 800)
+      .attr('fill', 'rgba(231,237,245,.95)')
+      .attr('style', 'letter-spacing:.25px')
+      .attr('pointer-events', 'none')
+      .each(function(d){
+        const t = d3.select(this);
+        t.text(null);
+        t.append('tspan')
+          .attr('x', d.x)
+          .attr('dy', 0)
+          .text(d.short);
+        t.append('tspan')
+          .attr('x', d.x)
+          .attr('dy', 14)
+          .attr('font-size', 10)
+          .attr('font-weight', 700)
+          .attr('fill', 'rgba(231,237,245,.72)')
+          .text(String(d.count));
+      });
+
+    zoneSel
+      .style('cursor', 'default')
+      .on('mouseenter', (evt, d) => {
+        if (!tooltip) return;
+        tooltip.innerHTML = `<strong>${escapeHtml(d.label)}</strong><br>${escapeHtml(String(d.count))} modelos`;
+        tooltip.classList.add('is-on');
+      })
+      .on('mousemove', (evt) => {
+        if (!tooltip) return;
+        const r = wrap.getBoundingClientRect();
+        tooltip.style.left = `${evt.clientX - r.left + 12}px`;
+        tooltip.style.top = `${evt.clientY - r.top + 12}px`;
+      })
+      .on('mouseleave', () => {
+        if (!tooltip) return;
+        tooltip.classList.remove('is-on');
+      });
+  }
+
+  const linkSel = gLinks.selectAll('line')
+    .data(links)
+    .enter()
+    .append('line')
+    .attr('stroke', 'rgba(228,236,248,0.42)')
+    .attr('stroke-width', d => 0.7 + (d.w * 1.25))
+    .attr('stroke-opacity', d => 0.10 + (d.w * 0.30));
+
+  const defs = svg.append('defs');
+  const glow = defs.append('filter')
+    .attr('id', 'networkNodeGlow')
+    .attr('x', '-220%')
+    .attr('y', '-220%')
+    .attr('width', '440%')
+    .attr('height', '440%');
+  glow.append('feDropShadow')
+    .attr('dx', 0)
+    .attr('dy', 0)
+    .attr('stdDeviation', 2.4)
+    .attr('flood-color', 'rgba(255,255,255,.45)');
+
+  const adjacency = new Map();
+  nodes.forEach((n) => adjacency.set(n.id, new Set()));
+  links.forEach((l) => {
+    const a = String(l.source);
+    const b = String(l.target);
+    adjacency.get(a)?.add(b);
+    adjacency.get(b)?.add(a);
+  });
+
+  const nodeBaseR = (d) => 5 + (((d.importance || 2)) * 0.65);
+
+  const nodeSel = gNodes.selectAll('circle')
+    .data(nodes)
+    .enter()
+    .append('circle')
+    .attr('r', d => nodeBaseR(d))
+    .attr('fill', d => colorForSchoolLabel(d.grupo))
+    .attr('fill-opacity', 0.96)
+    .attr('stroke', 'rgba(255,255,255,.92)')
+    .attr('stroke-width', 1.35)
+    .attr('filter', 'url(#networkNodeGlow)')
+    .style('cursor', 'pointer');
+
+  const idExists = new Set(nodes.map((n) => String(n.id)));
+  if (!idExists.has(String(NETWORK_FILTER_STATE.selectedNodeId || ''))){
+    NETWORK_FILTER_STATE.selectedNodeId = '';
+  }
+  const nodeById = new Map(nodes.map((n) => [String(n.id), n]));
+
+  function zoneRadiusForValue(val, currentMode){
+    if (currentMode === 'process'){
+      const n = Math.max(0, Math.min(4, Number(val) || 0)) / 4; // 0..1
+      return zoneBaseR * (0.72 + (0.55 * n));                    // 0.72x..1.27x
+    }
+    if (currentMode === 'dimension'){
+      const n = Math.max(0, Math.min(100, Number(val) || 0)) / 100; // 0..1
+      return zoneBaseR * (0.72 + (0.62 * Math.sqrt(n)));             // 0.72x..1.34x
+    }
+    return zoneBaseR;
+  }
+
+  function updateSelectionStyles(){
+    const selected = String(NETWORK_FILTER_STATE.selectedNodeId || '');
+    const hasSel = !!selected;
+    const linkedSet = hasSel ? (adjacency.get(selected) || new Set()) : new Set();
+
+    nodeSel
+      .attr('opacity', (d) => {
+        if (!hasSel) return 1;
+        if (String(d.id) === selected) return 1;
+        if (linkedSet.has(String(d.id))) return 0.95;
+        return 0.18;
+      })
+      .attr('stroke-width', (d) => (hasSel && String(d.id) === selected) ? 2.2 : 1.2)
+      .attr('r', (d) => (hasSel && String(d.id) === selected) ? (nodeBaseR(d) + 1.9) : nodeBaseR(d));
+
+    linkSel
+      .attr('stroke-opacity', (l) => {
+        if (!hasSel) return 0.14 + (l.w * 0.34);
+        const a = String(l.source.id || l.source);
+        const b = String(l.target.id || l.target);
+        if (a === selected || b === selected) return 0.72;
+        return 0.06;
+      })
+      .attr('stroke-width', (l) => {
+        const base = 0.8 + (l.w * 1.4);
+        if (!hasSel) return base;
+        const a = String(l.source.id || l.source);
+        const b = String(l.target.id || l.target);
+        return (a === selected || b === selected) ? (base + 0.9) : 0.8;
+      });
+
+    if (zoneRingSel){
+      const selNode = hasSel ? nodeById.get(selected) : null;
+      zoneRingSel
+        .interrupt()
+        .transition()
+        .duration(420)
+        .ease(d3.easeCubicOut)
+        .attr('r', (d) => {
+          if (!selNode) return zoneBaseR;
+          const value = (mode === 'process')
+            ? Number(selNode.processScores?.[d.key] || 0)
+            : Number(selNode.dimensionShares?.[d.key] || 0);
+          return zoneRadiusForValue(value, mode);
+        })
+        .attr('fill-opacity', (d) => {
+          if (!selNode) return 0.04;
+          const value = (mode === 'process')
+            ? Number(selNode.processScores?.[d.key] || 0) / 4
+            : Number(selNode.dimensionShares?.[d.key] || 0) / 100;
+          const n = Math.max(0, Math.min(1, value));
+          return 0.03 + (0.12 * n);
+        })
+        .attr('stroke-opacity', (d) => {
+          if (!selNode) return 0.34;
+          const value = (mode === 'process')
+            ? Number(selNode.processScores?.[d.key] || 0) / 4
+            : Number(selNode.dimensionShares?.[d.key] || 0) / 100;
+          const n = Math.max(0, Math.min(1, value));
+          return 0.26 + (0.44 * n);
+        })
+        .attr('stroke-width', (d) => {
+          if (!selNode) return 1.1;
+          const value = (mode === 'process')
+            ? Number(selNode.processScores?.[d.key] || 0) / 4
+            : Number(selNode.dimensionShares?.[d.key] || 0) / 100;
+          const n = Math.max(0, Math.min(1, value));
+          return 1 + (1.2 * n);
+        });
+    }
+  }
+
+  nodeSel
+    .on('mouseenter', (evt, d) => {
+      if (!tooltip) return;
+      tooltip.innerHTML = `<strong>${escapeHtml(d.label)}</strong><br>${escapeHtml(d.autores || '—')}<br>${escapeHtml(d.grupo)}${d.year ? ` · ${d.year}` : ''}`;
+      tooltip.classList.add('is-on');
+    })
+    .on('mousemove', (evt) => {
+      if (!tooltip) return;
+      const r = wrap.getBoundingClientRect();
+      tooltip.style.left = `${evt.clientX - r.left + 12}px`;
+      tooltip.style.top = `${evt.clientY - r.top + 12}px`;
+    })
+    .on('mouseleave', () => {
+      if (!tooltip) return;
+      tooltip.classList.remove('is-on');
+    })
+    .on('click', async (evt, d) => {
+      const clickedId = String(d.id);
+      if (NETWORK_FILTER_STATE.selectedNodeId === clickedId){
+        currentModelId = clickedId;
+        setActiveModelInList(currentModelId);
+        infoFadeOut();
+        resetModelPanelToTop();
+        await new Promise(r => requestAnimationFrame(r));
+        await openModel(currentModelId);
+        infoFadeIn();
+        return;
+      }
+
+      NETWORK_FILTER_STATE.selectedNodeId = clickedId;
+      updateSelectionStyles();
+    });
+
+  const sim = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d => d.id).distance(d => 112 - (d.w * 45)).strength(d => 0.12 + (d.w * 0.22)))
+    .force('charge', d3.forceManyBody().strength(-62))
+    .force('collide', d3.forceCollide().radius(11))
+    .force('x', d3.forceX().x((d) => {
+      if (zoneAnchors && d.zoneKey && zoneAnchors.has(d.zoneKey)) return zoneAnchors.get(d.zoneKey).x;
+      return cx;
+    }).strength(zoneAnchors ? 0.22 : 0.09))
+    .force('y', d3.forceY().y((d) => {
+      if (zoneAnchors && d.zoneKey && zoneAnchors.has(d.zoneKey)) return zoneAnchors.get(d.zoneKey).y;
+      return cy;
+    }).strength(zoneAnchors ? 0.22 : 0.09))
+    .force('center', d3.forceCenter(cx, cy))
+    .force('zoneRepel', zoneAnchors ? createZoneRepelForce(zoneAnchors, mode) : null)
+    .alpha(0.95)
+    .alphaDecay(0.028);
+
+  const drag = d3.drag()
+    .on('start', (evt, d) => {
+      if (!evt.active) sim.alphaTarget(0.22).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    })
+    .on('drag', (evt, d) => {
+      d.fx = evt.x;
+      d.fy = evt.y;
+    })
+    .on('end', (evt, d) => {
+      if (!evt.active) sim.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    });
+  nodeSel.call(drag);
+
+  const zoom = d3.zoom()
+    .scaleExtent([0.55, 2.8])
+    .on('zoom', (evt) => {
+      gViewport.attr('transform', evt.transform);
+      NETWORK_FILTER_STATE.zoomTransform = evt.transform;
+    });
+  svg.call(zoom);
+  if (NETWORK_FILTER_STATE.zoomTransform){
+    svg.call(zoom.transform, NETWORK_FILTER_STATE.zoomTransform);
+  }else{
+    const initial = d3.zoomIdentity.translate(s.w * 0.02, s.h * 0.01).scale(0.98);
+    svg.call(zoom.transform, initial);
+  }
+  svg.on('click', (evt) => {
+    const t = evt.target;
+    if (t && String(t.tagName || '').toLowerCase() === 'circle') return;
+    if (!NETWORK_FILTER_STATE.selectedNodeId) return;
+    NETWORK_FILTER_STATE.selectedNodeId = '';
+    updateSelectionStyles();
+  });
+
+  sim.on('tick', () => {
+    linkSel
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+
+    nodeSel
+      .attr('cx', d => d.x = Math.max(12, Math.min(s.w - 12, d.x)))
+      .attr('cy', d => d.y = Math.max(12, Math.min(s.h - 12, d.y)));
+  });
+  updateSelectionStyles();
+
+  NETWORK_STATE.sim = sim;
+  NETWORK_STATE.resizeHandler = () => {
+    if (groupingMode !== 'network') return;
+    renderNetworkGraph().catch(() => {});
+  };
+  window.addEventListener('resize', NETWORK_STATE.resizeHandler, { passive:true });
+}
+
+function renderNetworkGraphLazy(){
+  requestAnimationFrame(() => {
+    renderNetworkGraph().catch((e) => console.warn('network graph error', e));
+  });
+}
+
     // =========================================================
     // 4) Render ficha de modelo (sin procesos/mjps)
     // =========================================================
@@ -7575,6 +8792,26 @@ function renderDimensionOverviewHtml(){
     }
     const smh = document.getElementById('stickyModelHeader');
     if (smh) smh.classList.remove('is-on');
+
+    if (groupingMode === 'network'){
+      const netColor = '#5F7F78';
+      modelInfoEl.classList.remove('school-view');
+      modelInfoEl.style.setProperty('--schoolColor', netColor);
+      document.documentElement.style.setProperty('--schoolColor', netColor);
+      document.documentElement.style.setProperty('--panelGlow', hexToRgba(netColor, 0.16));
+      if (rightPanel){
+        rightPanel.style.setProperty('--panelGlow', hexToRgba(netColor, 0.18));
+      }
+      NETWORK_FILTER_STATE.query = '';
+      NETWORK_FILTER_STATE.minSimDelta = 0;
+      modelInfoEl.innerHTML = buildNetworkOverviewHtml();
+      bindNetworkLegendHandlers();
+      updateNetworkLegendUi();
+      renderNetworkGraphLazy();
+      return;
+    }
+
+    disposeNetworkGraph();
 
     if (groupingMode === 'process'){
       const proc = PROCESS_FILTER_MAP.get(groupingTarget) || PROCESS_FILTERS[0] || null;
@@ -7624,6 +8861,7 @@ function renderDimensionOverviewHtml(){
   }
 
   // ---- a partir de aquí, ya hay modelo real ----
+  disposeNetworkGraph();
   try{ console.log('OPEN MODEL', m.label, m.id); }catch(e){}
   const col = groupColor.get(m.grupo) || '#ffffff';
   setSchoolToneClass(m.grupo);
@@ -7724,7 +8962,7 @@ const authorHTML =
       ${sectionListInner(m.influencias, {asList:false})}
     </div>
 
-    ${(m.graficaProcesos || m.dimensionesCambio) ? renderGraficaProcesos(m) : ''}
+    ${(modelHasProcessData(m) || modelHasDimensionData(m)) ? renderGraficaProcesos(m) : ''}
 
     <div class="mp-acc">
       ${nConcepts ? acc('Conceptos clave', nConcepts, sectionConceptsInner(m.conceptosClave), false) : ''}
@@ -7912,6 +9150,98 @@ function readDimensionValue(dimObj, keys){
     }
   }
   return 0;
+}
+
+function pickFirstObject(...candidates){
+  for (const c of candidates){
+    if (c && typeof c === 'object' && !Array.isArray(c)) return c;
+  }
+  return null;
+}
+
+function numOrNull(v){
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+
+function getModelProcessMap(model){
+  if (!model || typeof model !== 'object') return {};
+
+  const raw = pickFirstObject(
+    model.graficaProcesos,
+    model.grafica_procesos,
+    model.procesosGrafica,
+    model.procesos_grafica,
+    model.procesosCambio,
+    model.procesos_cambio,
+    model.procesos
+  ) || {};
+
+  const out = {};
+  const keyToCode = new Map();
+  for (const p of PROCESS_FILTERS){
+    const code = String(p.id || '').toUpperCase();
+    const label = String(p.label || '');
+    const aliases = [
+      code,
+      label,
+      normProcKey(code),
+      normProcKey(label),
+      label.toLowerCase(),
+      String(code).toLowerCase()
+    ];
+    aliases.forEach((a) => keyToCode.set(normProcKey(a), code));
+  }
+
+  for (const [k, v] of Object.entries(raw)){
+    const parsed = numOrNull(v);
+    if (parsed === null) continue;
+    const nk = normProcKey(k);
+    const code = keyToCode.get(nk);
+    if (!code) continue;
+    out[code] = parsed;
+  }
+
+  return out;
+}
+
+function getModelDimensionMap(model){
+  if (!model || typeof model !== 'object') return {};
+
+  const raw = pickFirstObject(
+    model.dimensionesCambio,
+    model.dimensiones_cambio,
+    model.graficaDimensiones,
+    model.grafica_dimensiones,
+    model.dimensiones
+  ) || {};
+
+  const out = {};
+  for (const d of CHANGE_DIMS){
+    const aliases = [d.id, ...(Array.isArray(d.keys) ? d.keys : [])].map(normDimKey);
+    let val = null;
+    for (const [k, v] of Object.entries(raw)){
+      if (!aliases.includes(normDimKey(k))) continue;
+      const parsed = numOrNull(v);
+      if (parsed !== null){
+        val = parsed;
+        break;
+      }
+    }
+    if (val !== null) out[d.id] = val;
+  }
+
+  return out;
+}
+
+function modelHasProcessData(model){
+  const p = getModelProcessMap(model);
+  return Object.values(p).some((v) => Number(v) > 0);
+}
+
+function modelHasDimensionData(model){
+  const d = getModelDimensionMap(model);
+  return Object.values(d).some((v) => Number(v) > 0);
 }
 
 function normDimKey(s){
@@ -8478,14 +9808,12 @@ function initProcesosHeightSync(rootEl){
 }
 
 function renderGraficaProcesos(modelOrProcesos){
-  const procesos = (modelOrProcesos && typeof modelOrProcesos === 'object' && modelOrProcesos.graficaProcesos)
-    ? modelOrProcesos.graficaProcesos
-    : modelOrProcesos;
-  const dimensiones = (modelOrProcesos && typeof modelOrProcesos === 'object')
-    ? modelOrProcesos.dimensionesCambio
-    : null;
+  const hasModelObj = !!(modelOrProcesos && typeof modelOrProcesos === 'object');
+  const procesos = hasModelObj ? getModelProcessMap(modelOrProcesos) : (modelOrProcesos || {});
+  const dimensiones = hasModelObj ? getModelDimensionMap(modelOrProcesos) : null;
+  const hasProcValues = Object.values(procesos || {}).some((v) => Number(v) > 0);
 
-  if(!procesos || typeof procesos !== 'object'){
+  if(!procesos || typeof procesos !== 'object' || !hasProcValues){
     return `
       <div class="mp-section">
         <div class="procesos-grid">
@@ -8518,8 +9846,8 @@ function renderGraficaProcesos(modelOrProcesos){
 
   const filas = orden.map((code) => {
     const raw = Number(procesos?.[code]);
-    const valor = Number.isFinite(raw) ? Math.max(0, Math.min(3, raw)) : 0;
-    const width = (valor / 3) * 100;
+    const valor = Number.isFinite(raw) ? Math.max(0, Math.min(4, raw)) : 0;
+    const width = (valor / 4) * 100;
     const widthSafe = Math.max(0, Math.min(100, width));
     const tip = labels[code] || code;
     const justification = readProcessJustification(procesos, modelOrProcesos, code, tip);
@@ -9355,6 +10683,18 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
       </svg>
     </a>
 
+    <button class="nav-fab" role="menuitem" id="btnNetworkView"
+            type="button" title="Vista red" aria-label="Vista red">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="6.5" cy="12" r="2.3" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="12" cy="6.6" r="2.3" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="17.5" cy="12" r="2.3" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="12" cy="17.4" r="2.3" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M8.5 11l2-2.2M13.5 8.8l2 2.2M8.5 13l2 2.2M13.5 15.2l2-2.2"
+          stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+
     <button class="nav-fab" role="menuitem" id="btnThemeToggle"
             type="button" title="Cambiar a oscuro" aria-label="Cambiar a oscuro">
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -9381,6 +10721,7 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
 
   const btn  = nav.querySelector('.nav-fab-main');
   const menu = nav.querySelector('.nav-menu');
+  const networkBtn = nav.querySelector('#btnNetworkView');
   const themeBtn = nav.querySelector('#btnThemeToggle');
   if (!btn || !menu) return;
 
@@ -9440,6 +10781,19 @@ window.addEventListener("resize", ()=> setTimeout(sendEmbedHeight, 50));
       const toLight = !document.body.classList.contains('theme-light');
       applyTheme(toLight ? 'light' : 'dark');
       localStorage.setItem(THEME_KEY, toLight ? 'light' : 'dark');
+      setOpen(false);
+    });
+  }
+
+  if (networkBtn){
+    networkBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const select = document.getElementById('groupBySelect');
+      if (select){
+        select.value = 'network';
+        select.dispatchEvent(new Event('change', { bubbles:true }));
+      }
       setOpen(false);
     });
   }
