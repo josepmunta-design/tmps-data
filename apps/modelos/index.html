@@ -38,6 +38,8 @@ let ASSET_VERSION_PROMISE = Promise.resolve();
 let D3_READY_PROMISE = null;
 let TOPO_READY_PROMISE = null;
 let AUTHOR_PHOTO_PROMISE = null;
+let ISOMORPHISM_PROMISE = null;
+window.ISOMORPHISM_INDEX = null;
 
 
 async function loadAssetVersion(){
@@ -1466,18 +1468,13 @@ opacity: .75;
 
 .networkHeader{
   position: relative;
-  padding: 10px 12px 12px 12px;
-  border-radius: 18px;
-  border: 1px solid rgba(255,255,255,.14);
-  background:
-    radial-gradient(760px 280px at 8% 8%, rgba(255,255,255,.14), transparent 58%),
-    radial-gradient(780px 320px at 94% 12%, rgba(116,174,255,.12), transparent 62%),
-    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
-  box-shadow:
-    0 14px 34px rgba(0,0,0,.24),
-    inset 0 1px 0 rgba(255,255,255,.20);
-  backdrop-filter: blur(12px) saturate(125%);
-  -webkit-backdrop-filter: blur(12px) saturate(125%);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  pointer-events: none;
 }
 
 .networkTitle{
@@ -1544,10 +1541,11 @@ opacity: .75;
 }
 
 .networkLegend{
-  margin-top: 10px;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+  pointer-events: auto;
 }
 
 .networkLegend .chip{
@@ -1631,6 +1629,100 @@ opacity: .75;
 .networkTooltip.is-on{
   opacity: 1;
   transform: translateY(0);
+}
+
+.networkModelGraphPanel{
+  position:absolute;
+  top:18px;
+  right:18px;
+  z-index:8;
+  width:min(520px, max(320px, calc(100vw - 460px)));
+  max-width:520px;
+  max-height:calc(100vh - 36px);
+  overflow:auto;
+  padding:16px;
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,.14);
+  background:
+    linear-gradient(180deg, rgba(15,22,32,.90), rgba(11,17,26,.82)),
+    radial-gradient(120% 120% at 0% 0%, color-mix(in srgb, var(--schoolColor, #5F7F78) 18%, rgba(255,255,255,.04)), transparent 62%);
+  box-shadow:
+    0 26px 56px rgba(0,0,0,.32),
+    inset 0 1px 0 rgba(255,255,255,.10);
+  backdrop-filter: blur(18px) saturate(128%);
+  -webkit-backdrop-filter: blur(18px) saturate(128%);
+}
+
+.networkModelGraphPanel[hidden]{
+  display:none !important;
+}
+
+.networkModelGraphHead{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.networkModelGraphKicker{
+  display:inline-flex;
+  align-items:center;
+  min-height:22px;
+  padding:0 8px;
+  border-radius:999px;
+  border:1px solid color-mix(in srgb, var(--schoolColor, #5F7F78) 42%, rgba(255,255,255,.16));
+  background:color-mix(in srgb, var(--schoolColor, #5F7F78) 12%, rgba(255,255,255,.04));
+  color:var(--schoolColor, #fff);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.networkModelGraphTitle{
+  margin:8px 0 0;
+  font-size:20px;
+  line-height:1.14;
+  letter-spacing:-.03em;
+  color:#fff;
+}
+
+.networkModelGraphMeta{
+  margin:8px 0 0;
+  font-size:12px;
+  line-height:1.45;
+  color:rgba(231,237,245,.74);
+}
+
+.networkModelGraphClose{
+  flex:0 0 auto;
+  width:34px;
+  height:34px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.05);
+  color:#fff;
+  font:inherit;
+  font-size:18px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.networkModelGraphBody{
+  display:grid;
+  gap:14px;
+}
+
+.networkModelGraphBody .mp-section{
+  margin-top:0;
+  padding-top:0;
+  border-top:0;
+}
+
+.networkModelGraphBody .grafica-procesos,
+.networkModelGraphBody .dim-card{
+  margin:0;
 }
 
 .networkSelectionCard{
@@ -1839,13 +1931,8 @@ body.network-mode .networkHeader{
   right: calc(var(--edgePad, 14px) + 10px);
   left: calc(var(--edgePad, 14px) + var(--leftPanelW, 380px) + var(--midGap, 14px) + 10px);
   z-index: 7;
-  background:
-    radial-gradient(760px 280px at 8% 8%, rgba(255,255,255,.14), transparent 58%),
-    radial-gradient(780px 320px at 94% 12%, rgba(116,174,255,.12), transparent 62%),
-    linear-gradient(180deg, rgba(18,28,40,.56), rgba(15,22,32,.34));
-  box-shadow:
-    0 20px 44px rgba(0,0,0,.28),
-    inset 0 1px 0 rgba(255,255,255,.22);
+  background: transparent;
+  box-shadow: none;
 }
 
 body.network-mode .networkCanvas{
@@ -1862,7 +1949,7 @@ body.network-mode .networkCanvas{
 }
 
 body.network-mode .networkLegend{
-  margin-top: 8px;
+  margin-top: 0;
 }
 
 body.network-mode .networkTip{
@@ -1897,7 +1984,17 @@ body.network-mode .panel.left .card{
 }
 
 body.network-mode .panel.left .schoolSticky{
-  background: linear-gradient(180deg, rgba(25,35,48,.78), rgba(22,31,43,.62)) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  padding: 0 !important;
+}
+
+body.network-mode .panel.left .schoolSticky.stuck{
+  background: linear-gradient(180deg, rgba(24,34,46,.88), rgba(20,29,40,.76)) !important;
   border: 1px solid rgba(255,255,255,.14) !important;
   box-shadow:
     0 14px 30px rgba(0,0,0,.24),
@@ -1912,6 +2009,15 @@ body.network-mode .panel.left .schoolSticky{
   }
   .networkCanvas{
     height: 56vh;
+  }
+  .networkModelGraphPanel{
+    top:auto;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    width:auto;
+    max-width:none;
+    max-height:min(58vh, 520px);
   }
   .networkTitle{
     font-size: 24px;
@@ -2177,12 +2283,82 @@ body.network-mode .panel.left .schoolSticky{
 .mp-sub .subBody{
   padding: 0 12px 10px 12px;
   color: rgba(227,235,246,0.92);
-  white-space: pre-wrap;
+  white-space: normal;
   line-height: 1.55;
   font-size: 13px;
 }
 
+.mp-sub .subText{
+  white-space: pre-wrap;
+}
+
 .mp-sub details[open] .chev{ transform: rotate(180deg); }
+
+.iso-sub{
+  margin-top:10px;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:10px;
+  background:rgba(255,255,255,0.025);
+}
+
+.iso-sub summary{
+  list-style:none;
+  cursor:pointer;
+  padding:9px 11px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.25px;
+  color:rgba(242,246,252,.92);
+}
+
+.iso-sub summary::-webkit-details-marker{ display:none; }
+
+.iso-sub .iso-meta{
+  font-size:10px;
+  font-weight:700;
+  color:rgba(231,237,245,.66);
+}
+
+.iso-sub .iso-body{
+  padding:0 11px 11px 11px;
+  color:rgba(227,235,246,.9);
+  font-size:12px;
+  line-height:1.5;
+}
+
+.iso-sub .iso-title{
+  font-weight:800;
+  color:#fff;
+  margin-bottom:4px;
+}
+
+.iso-sub .iso-def{
+  color:rgba(231,237,245,.8);
+  margin-bottom:8px;
+}
+
+.iso-sub .iso-list{
+  margin:6px 0 0 18px;
+  padding:0;
+}
+
+.iso-sub .iso-list li + li{
+  margin-top:5px;
+}
+
+.iso-sub .iso-type{
+  display:inline-block;
+  margin-right:6px;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.4px;
+  text-transform:uppercase;
+  color:rgba(231,237,245,.58);
+}
 /* =========================
    Oculta el header/menu de Teachable
    ========================= */
@@ -2866,6 +3042,59 @@ html, body{ position: relative; }
 .panel.left .title{
   padding-top: 14px;
   margin-top: 0;
+}
+
+@media (min-width: 981px){
+  body.desktop-left-list-scroll .panel.left{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+
+  body.desktop-left-list-scroll .panel.left .title,
+  body.desktop-left-list-scroll .panel.left .schoolSticky{
+    flex:0 0 auto;
+  }
+
+  body.desktop-left-list-scroll .panel.left .modelsListCard{
+    flex:1 1 auto;
+    min-height:0;
+    margin-bottom:0;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+
+  body.desktop-left-list-scroll .panel.left .modelsListCard .row{
+    flex:0 0 auto;
+  }
+
+  body.desktop-left-list-scroll .panel.left #modelsList{
+    flex:1 1 auto;
+    min-height:0;
+    overflow:auto;
+    padding-right:2px;
+  }
+
+  body.desktop-network-zone-scroll .panel.left{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+
+  body.desktop-network-zone-scroll .panel.left .title,
+  body.desktop-network-zone-scroll .panel.left .schoolSticky,
+  body.desktop-network-zone-scroll .panel.left .modelsListCard{
+    flex:0 0 auto;
+  }
+
+  body.desktop-network-zone-scroll .panel.left .networkSelectionCard{
+    flex:1 1 auto;
+    min-height:0;
+    margin-bottom:0;
+    overflow:auto;
+    padding-right:14px;
+  }
 }
 
 /* ================== MÓVIL ================== */
@@ -5415,7 +5644,7 @@ body.apk-mode #modelSheet::-webkit-scrollbar {
         </div>
       </div>
 
-      <div class="card">
+      <div class="card modelsListCard">
         <div class="row" style="justify-content:space-between">
           <div id="leftListTitle" style="font-weight:900; font-size:13px; color:#fff">Modelos</div>
           <div id="leftListHint" class="subtitle" style="margin:0; font-size:12px">clic para abrir ficha</div>
@@ -5666,6 +5895,319 @@ function setupAuthorPhotoRetry(imgEl, baseUrl, modelId){
   runAttempt();
 }
 
+function normalizeIsoText(s){
+  return String(s ?? '')
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,' ')
+    .replace(/\s+/g,' ')
+    .trim();
+}
+
+function normalizeIsoPath(s){
+  return String(s ?? '')
+    .trim()
+    .replace(/\\/g, '/')
+    .replace(/^\/+/, '')
+    .toLowerCase();
+}
+
+function buildIsoEntryKey({ archivo = '', tipo = '', nombre = '' } = {}){
+  return [
+    normalizeIsoPath(archivo),
+    normalizeIsoText(tipo),
+    normalizeIsoText(nombre)
+  ].join('|');
+}
+
+function buildIsoFallbackKey({ modelo = '', grupo = '', tipo = '', nombre = '' } = {}){
+  return [
+    normalizeIsoText(modelo),
+    normalizeIsoText(grupo),
+    normalizeIsoText(tipo),
+    normalizeIsoText(nombre)
+  ].join('|');
+}
+
+function buildIsoNameKey({ tipo = '', nombre = '' } = {}){
+  return [
+    normalizeIsoText(tipo),
+    normalizeIsoText(nombre)
+  ].join('|');
+}
+
+function emptyIsomorphismIndex(){
+  return { byEntryKey:new Map(), byFallbackKey:new Map(), byNameKey:new Map() };
+}
+
+function buildIsomorphismIndexFromList(raw){
+  const list = Array.isArray(raw) ? raw : [];
+  const byEntryKey = new Map();
+  const byFallbackKey = new Map();
+  const byNameKey = new Map();
+
+  list.forEach((group) => {
+    const entries = Array.isArray(group?.entradas) ? group.entradas.filter(Boolean) : [];
+    entries.forEach((entry) => {
+      const payload = {
+        operacionAteorica: String(group?.operacion_ateorica || '').trim(),
+        definicion: String(group?.definicion || '').trim(),
+        entries,
+        entry
+      };
+
+      const entryKey = buildIsoEntryKey(entry);
+      if (!byEntryKey.has(entryKey)) byEntryKey.set(entryKey, payload);
+
+      const fallbackKey = buildIsoFallbackKey(entry);
+      if (!byFallbackKey.has(fallbackKey)) byFallbackKey.set(fallbackKey, payload);
+
+      const nameKey = buildIsoNameKey(entry);
+      const bucket = byNameKey.get(nameKey) || [];
+      bucket.push(payload);
+      byNameKey.set(nameKey, bucket);
+    });
+  });
+
+  return { byEntryKey, byFallbackKey, byNameKey };
+}
+
+function buildIsomorphismIndexFromLookup(raw){
+  const safe = (raw && typeof raw === 'object') ? raw : {};
+  if (Array.isArray(safe.records) && Array.isArray(safe.groups)){
+    const byEntryKey = new Map();
+    const byFallbackKey = new Map();
+    const byNameKey = new Map();
+
+    safe.records.forEach((record) => {
+      const group = safe.groups?.[Number(record?.groupIndex)] || {};
+      const entries = Array.isArray(group?.entries) ? group.entries : [];
+      const entry = entries?.[Number(record?.sourceIndex)] || record?.source || {};
+      const payload = {
+        operacionAteorica: String(group?.operacionAteorica || '').trim(),
+        definicion: String(group?.definicion || '').trim(),
+        entries,
+        entry
+      };
+
+      const entryKey = String(record?.entryKey || '').trim();
+      if (entryKey && !byEntryKey.has(entryKey)) byEntryKey.set(entryKey, payload);
+
+      const fallbackKey = String(record?.fallbackKey || '').trim();
+      if (fallbackKey && !byFallbackKey.has(fallbackKey)) byFallbackKey.set(fallbackKey, payload);
+
+      const nameKey = String(record?.nameKey || '').trim();
+      if (nameKey){
+        const bucket = byNameKey.get(nameKey) || [];
+        bucket.push(payload);
+        byNameKey.set(nameKey, bucket);
+      }
+    });
+
+    return { byEntryKey, byFallbackKey, byNameKey };
+  }
+
+  const byEntryKey = new Map(Object.entries(safe.byEntryKey || {}));
+  const byFallbackKey = new Map(Object.entries(safe.byFallbackKey || {}));
+  const byNameKey = new Map(
+    Object.entries(safe.byNameKey || {}).map(([key, arr]) => [key, Array.isArray(arr) ? arr : []])
+  );
+  return { byEntryKey, byFallbackKey, byNameKey };
+}
+
+async function loadIsomorphismIndex(){
+  try{
+    const lookupUrls = [
+      `${location.origin}/data/indices/isomorfismos/iso_lookup.json`,
+      `${cdnBase()}/data/indices/isomorfismos/iso_lookup.json`,
+      gh('indices/isomorfismos/iso_lookup.json')
+    ];
+
+    for (const url of lookupUrls){
+      const rawLookup = await fetchJson(url, { bust:true });
+      const looksLikeLookup = !!(
+        rawLookup &&
+        typeof rawLookup === 'object' &&
+        !Array.isArray(rawLookup) &&
+        (rawLookup.byEntryKey || rawLookup.byFallbackKey || rawLookup.byNameKey)
+      );
+      if (!looksLikeLookup) continue;
+
+      const lookupIndex = buildIsomorphismIndexFromLookup(rawLookup);
+      window.ISOMORPHISM_INDEX = lookupIndex;
+      return lookupIndex;
+    }
+
+    const isoUrls = [
+      `${cdnBase()}/indices/isomorfismos/iso_lista.json`,
+      `${location.origin}/indices/isomorfismos/iso_lista.json`,
+      gh('indices/isomorfismos/iso_lista.json')
+    ];
+    let raw = null;
+    for (const url of isoUrls){
+      raw = await fetchJson(url, { bust:true });
+      if (raw) break;
+    }
+    const index = buildIsomorphismIndexFromList(raw);
+    window.ISOMORPHISM_INDEX = index;
+    return index;
+  }catch(e){
+    console.warn('No se pudo cargar el indice de isomorfismos', e);
+    const empty = emptyIsomorphismIndex();
+    window.ISOMORPHISM_INDEX = empty;
+    return empty;
+  }
+}
+
+function getIsomorphismMatch(modelMeta, itemMeta){
+  const idx = window.ISOMORPHISM_INDEX;
+  if (!idx) return null;
+
+  const entryKey = buildIsoEntryKey({
+    archivo: modelMeta?.file || modelMeta?.archivo || '',
+    tipo: itemMeta?.tipo || '',
+    nombre: itemMeta?.nombre || ''
+  });
+  const hit = idx.byEntryKey?.get(entryKey);
+  if (hit) return hit;
+
+  const fallbackKey = buildIsoFallbackKey({
+    modelo: modelMeta?.label || modelMeta?.modelo || '',
+    grupo: modelMeta?.grupo || '',
+    tipo: itemMeta?.tipo || '',
+    nombre: itemMeta?.nombre || ''
+  });
+  const fallbackHit = idx.byFallbackKey?.get(fallbackKey);
+  if (fallbackHit) return fallbackHit;
+
+  const nameKey = buildIsoNameKey({
+    tipo: itemMeta?.tipo || '',
+    nombre: itemMeta?.nombre || ''
+  });
+  const nameHits = Array.isArray(idx.byNameKey?.get(nameKey)) ? idx.byNameKey.get(nameKey) : [];
+  if (!nameHits.length) return null;
+  if (nameHits.length === 1) return nameHits[0];
+
+  const currentFile = normalizeIsoPath(modelMeta?.file || modelMeta?.archivo || '');
+  const currentModel = normalizeIsoText(modelMeta?.label || modelMeta?.modelo || '');
+  const currentGroup = normalizeIsoText(modelMeta?.grupo || '');
+
+  return nameHits.find((payload) => {
+    const entry = payload?.entry || {};
+    const sameFile = currentFile && normalizeIsoPath(entry?.archivo || '') === currentFile;
+    const sameModel = currentModel && normalizeIsoText(entry?.modelo || '') === currentModel;
+    const sameGroup = currentGroup && normalizeIsoText(entry?.grupo || '') === currentGroup;
+    return sameFile || (sameModel && sameGroup) || sameModel;
+  }) || nameHits[0];
+}
+
+function renderIsomorphismInner(modelMeta, itemMeta){
+  const match = getIsomorphismMatch(modelMeta, itemMeta);
+  if (!match) return '';
+
+  const currentFile = normalizeIsoPath(modelMeta?.file || modelMeta?.archivo || '');
+  const currentModel = normalizeIsoText(modelMeta?.label || modelMeta?.modelo || '');
+  const currentGroup = normalizeIsoText(modelMeta?.grupo || '');
+  const currentType = normalizeIsoText(itemMeta?.tipo || '');
+  const currentName = normalizeIsoText(itemMeta?.nombre || '');
+
+  const others = Array.isArray(match.others)
+    ? match.others
+    : (Array.isArray(match.entries) ? match.entries : [])
+        .filter((entry) => {
+          const sameFile = normalizeIsoPath(entry?.archivo || '') === currentFile && !!currentFile;
+          const sameModel = normalizeIsoText(entry?.modelo || '') === currentModel;
+          const sameGroup = normalizeIsoText(entry?.grupo || '') === currentGroup;
+          const sameType = normalizeIsoText(entry?.tipo || '') === currentType;
+          const sameName = normalizeIsoText(entry?.nombre || '') === currentName;
+          if (sameFile && sameType && sameName) return false;
+          if (sameModel && sameGroup && sameType && sameName) return false;
+          return true;
+        })
+        .sort((a, b) => {
+          const byModel = String(a?.modelo || '').localeCompare(String(b?.modelo || ''), 'es');
+          if (byModel !== 0) return byModel;
+          return String(a?.nombre || '').localeCompare(String(b?.nombre || ''), 'es');
+        });
+
+  const otherCount = others.length;
+  const metaTxt = otherCount
+    ? `${otherCount} equivalencia${otherCount === 1 ? '' : 's'}`
+    : 'Sin equivalencias adicionales';
+
+  return `
+    <details class="iso-sub">
+      <summary>
+        <span>Isomorfismo</span>
+        <span class="iso-meta">${escapeHtml(metaTxt)}</span>
+      </summary>
+      <div class="iso-body">
+        <div class="iso-title">${escapeHtml(match.operacionAteorica || 'Operación ateórica')}</div>
+        ${match.definicion ? `<div class="iso-def">${escapeHtml(match.definicion)}</div>` : ''}
+        ${
+          otherCount
+            ? `<ul class="iso-list">${others.map((entry) => `
+                <li>
+                  <span class="iso-type">${escapeHtml(entry?.tipo || 'entrada')}</span>
+                  ${escapeHtml(entry?.nombre || 'Sin nombre')}
+                  <br>${escapeHtml(entry?.modelo || 'Modelo')}
+                </li>
+              `).join('')}</ul>`
+            : `<div class="iso-def">No hay otros procedimientos o micros asociados a este mismo isomorfismo.</div>`
+        }
+      </div>
+    </details>
+  `;
+}
+
+function hasIsomorphismIndexData(){
+  const idx = window.ISOMORPHISM_INDEX;
+  if (!idx) return false;
+  return !!(
+    (idx.byEntryKey && idx.byEntryKey.size) ||
+    (idx.byFallbackKey && idx.byFallbackKey.size) ||
+    (idx.byNameKey && idx.byNameKey.size)
+  );
+}
+
+function ensureIsomorphismReadyForModel(modelMeta){
+  if (!modelMeta || !modelMeta.id) return;
+  const hasNestedItems =
+    (Array.isArray(modelMeta.procedimientos) && modelMeta.procedimientos.length) ||
+    (Array.isArray(modelMeta.micros) && modelMeta.micros.length);
+  if (!hasNestedItems) return;
+  if (hasIsomorphismIndexData()) return;
+
+  const modelId = String(modelMeta.id || '').trim();
+  if (!modelId) return;
+  if (ensureIsomorphismReadyForModel._pendingFor === modelId) return;
+  ensureIsomorphismReadyForModel._pendingFor = modelId;
+
+  const loadPromise = hasIsomorphismIndexData()
+    ? Promise.resolve(window.ISOMORPHISM_INDEX)
+    : loadIsomorphismIndex();
+  ISOMORPHISM_PROMISE = Promise.resolve(loadPromise).catch(() => emptyIsomorphismIndex());
+
+  Promise.resolve(ISOMORPHISM_PROMISE)
+    .catch(() => null)
+    .then(async () => {
+      if (!hasIsomorphismIndexData()) return;
+      if (String(currentModelId || '').trim() !== modelId) return;
+
+      const baseModel = getAllModelsPool().find((m) => String(m?.id || '').trim() === modelId) || modelMeta;
+      const fullModel = await ensureModelFull(baseModel).catch(() => baseModel);
+      if (String(currentModelId || '').trim() !== modelId) return;
+      renderModelInfo(fullModel || baseModel);
+    })
+    .finally(() => {
+      if (ensureIsomorphismReadyForModel._pendingFor === modelId){
+        ensureIsomorphismReadyForModel._pendingFor = '';
+      }
+    });
+}
+
 
 
 window.getAuthorPhoto = function(authorName){
@@ -5735,6 +6277,21 @@ TOPO_READY_PROMISE = ensureTopojson().catch(() => false);
 AUTHOR_PHOTO_PROMISE = ASSET_VERSION_PROMISE
   .then(() => loadAuthorPhotoIndex())
   .catch(() => ({ authors:{}, models:{} }));
+ISOMORPHISM_PROMISE = ASSET_VERSION_PROMISE
+  .then(() => loadIsomorphismIndex())
+  .catch(() => emptyIsomorphismIndex());
+
+ISOMORPHISM_PROMISE.then(async () => {
+  const activeId = String(currentModelId || '').trim();
+  if (!activeId || groupingMode !== 'school') return;
+
+  const baseModel = getAllModelsPool().find((m) => String(m?.id || '') === activeId);
+  if (!baseModel) return;
+
+  const fullModel = await ensureModelFull(baseModel).catch(() => baseModel);
+  if (String(currentModelId || '').trim() !== activeId) return;
+  renderModelInfo(fullModel || baseModel);
+}).catch(() => {});
 
   
   const qs = new URLSearchParams(location.search);
@@ -7004,6 +7561,7 @@ if (leftPanel){
 
 window.addEventListener('resize', () => {
   setMobileModelPanelLowered(false);
+  syncDesktopLeftListScrollMode();
 }, { passive:true });
 
 setupMobilePanelDragGesture();
@@ -7108,6 +7666,14 @@ function scheduleIdleTask(fn, timeout = 1200){
     return window.requestIdleCallback(fn, { timeout });
   }
   return setTimeout(fn, 120);
+}
+
+function syncDesktopLeftListScrollMode(){
+  const isDesktop = !isMobileViewport();
+  const enableListOnly = isDesktop && (groupingMode === 'process' || groupingMode === 'dimension');
+  const enableNetworkZoneOnly = isDesktop && groupingMode === 'network' && !!String(NETWORK_FILTER_STATE.selectedZoneKey || '').trim();
+  document.body.classList.toggle('desktop-left-list-scroll', enableListOnly);
+  document.body.classList.toggle('desktop-network-zone-scroll', enableNetworkZoneOnly);
 }
 
 function showLanding(){
@@ -7767,6 +8333,7 @@ function renderModelsList(){
     NETWORK_FILTER_STATE.selectedZoneKey = '';
     renderNetworkSelectionCard(null);
   }
+  syncDesktopLeftListScrollMode();
   if (groupingMode === 'network'){
     document.body.classList.remove('infoFull');
   }
@@ -8251,34 +8818,24 @@ function bindNetworkLegendHandlers(){
 
 function buildNetworkOverviewHtml(){
   const schools = ensureNetworkSchoolFilters();
-  const profileMode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
   const legends = schools.map((s) => {
     const c = colorForSchoolLabel(s);
     const on = NETWORK_FILTER_STATE.activeSchools.has(s);
     return `<button type="button" class="chip ${on ? 'is-on' : 'is-off'}" data-school="${escapeHtml(s)}" aria-pressed="${on ? 'true' : 'false'}"><span class="dot" style="background:${escapeHtml(c)}"></span>${escapeHtml(s)}</button>`;
   }).join('');
   const resetLegend = `<button type="button" class="chip reset" title="Mostrar todas las escuelas">Mostrar todas</button>`;
-  const modeLabel = (profileMode === 'process')
-    ? 'similitud por procesos'
-    : (profileMode === 'dimension')
-      ? 'similitud por dimensiones'
-      : 'similitud por procesos + dimensiones';
 
   return `
     <div class="networkView">
       <div class="networkHeader">
-        <span class="mp-tag">Vista red</span>
-        <div class="networkTitle">Mapa relacional de modelos</div>
-        <div class="networkSub">Enlaces y distancias por ${escapeHtml(modeLabel)}, sin usar escuela en el cálculo.</div>
         <div class="networkLegend">${legends}${resetLegend}</div>
       </div>
       <div class="networkCanvas" id="networkCanvas">
         <svg id="networkSvg" aria-label="Red de modelos"></svg>
         <div class="networkTooltip" id="networkTooltip"></div>
       </div>
-      <div class="mp-hint networkTip">Arrastra el fondo para mover, rueda para zoom y arrastra nodos para reordenar. Clic en un nodo: resalta vecinos; clic de nuevo: abre su ficha. En "Solo procesos" o "Solo dimensiones", las zonas se dibujan dentro del grafo con círculos guía.</div>
-    </div>
-  `;
+</div>
+`;
 }
 
 function normSearchText(s){
@@ -8786,6 +9343,12 @@ async function renderNetworkGraph(){
   }
   const nodeById = new Map(nodes.map((n) => [String(n.id), n]));
 
+  function networkLabelScale(){
+    const k = Number(NETWORK_FILTER_STATE.zoomTransform?.k || 1);
+    if (!(k > 1)) return 1;
+    return Math.max(0.76, Math.pow(k, -0.28));
+  }
+
   function updateZoneNodeLabels(){
     const zoneKey = String(NETWORK_FILTER_STATE.selectedZoneKey || '');
     if (!zoneKey){
@@ -8812,21 +9375,26 @@ async function renderNetworkGraph(){
 
     enter.append('text')
       .attr('fill', '#f7fbff')
-      .attr('font-size', 11)
       .attr('font-weight', 700)
       .attr('dominant-baseline', 'middle');
+
+    const labelScale = networkLabelScale();
+    const fontSize = 11 * labelScale;
+    const xPad = 7 * labelScale;
+    const yJitter = 10 * labelScale;
+    const height = Math.max(18, 22 * labelScale);
 
     const merged = enter.merge(labelSel);
     merged.each(function(d, i){
       const g = d3.select(this);
       const text = g.select('text')
+        .attr('font-size', fontSize)
         .text(String(d.label || 'Modelo'));
       const box = text.node()?.getBBox?.();
-      const width = Math.max(42, (box?.width || 0) + 14);
-      const height = 22;
+      const width = Math.max(42 * labelScale, (box?.width || 0) + (xPad * 2));
       const dir = (i % 2 === 0) ? 1 : -1;
       const x = Math.max(8, Math.min(s.w - width - 8, d.x + (14 * dir)));
-      const y = Math.max(8, Math.min(s.h - height - 8, d.y - 12 + ((i % 3) * 10)));
+      const y = Math.max(8, Math.min(s.h - height - 8, d.y - (12 * labelScale) + ((i % 3) * yJitter)));
       g.attr('transform', `translate(${x},${y})`);
       g.select('rect')
         .attr('x', 0)
@@ -8834,7 +9402,7 @@ async function renderNetworkGraph(){
         .attr('width', width)
         .attr('height', height);
       text
-        .attr('x', 7)
+        .attr('x', xPad)
         .attr('y', height / 2);
     });
   }
@@ -8848,15 +9416,19 @@ async function renderNetworkGraph(){
     }
 
     selectedLabel.style('display', null);
+    const labelScale = networkLabelScale();
+    const fontSize = 12 * labelScale;
+    const xPad = 10 * labelScale;
+    const height = Math.max(22, 28 * labelScale);
     selectedLabelText
+      .attr('font-size', fontSize)
       .attr('x', 0)
       .attr('y', 0)
       .attr('dominant-baseline', 'middle')
       .text(String(selNode.label || 'Modelo'));
 
     const box = selectedLabelText.node()?.getBBox?.();
-    const width = Math.max(64, (box?.width || 0) + 18);
-    const height = 28;
+    const width = Math.max(64 * labelScale, (box?.width || 0) + (xPad * 2) - (2 * labelScale));
     const x = Math.max(8, Math.min(s.w - width - 8, selNode.x + 12));
     const y = Math.max(8, Math.min(s.h - height - 8, selNode.y - 26));
 
@@ -8867,7 +9439,7 @@ async function renderNetworkGraph(){
       .attr('width', width)
       .attr('height', height);
     selectedLabelText
-      .attr('x', 10)
+      .attr('x', xPad)
       .attr('y', height / 2);
   }
 
@@ -8928,8 +9500,12 @@ async function renderNetworkGraph(){
 
     if (hasZoneSel){
       renderNetworkZoneSelectionCard(selZone, selZoneModels);
+      hideNetworkModelGraphPanel();
     }else{
       renderNetworkSelectionCard(selModel || null);
+      if (!hasSel){
+        hideNetworkModelGraphPanel();
+      }
     }
     updateSelectedNodeLabel();
     updateZoneNodeLabels();
@@ -9061,7 +9637,9 @@ async function renderNetworkGraph(){
       if (base){
         const full = await ensureModelFull(base).catch(() => base);
         if (String(NETWORK_FILTER_STATE.selectedNodeId || '') === clickedId){
-          renderNetworkSelectionCard(full || base);
+          const selectedModel = full || base;
+          renderNetworkSelectionCard(selectedModel);
+          renderNetworkModelGraphPanel(selectedModel);
         }
       }
     });
@@ -9105,6 +9683,8 @@ async function renderNetworkGraph(){
     .on('zoom', (evt) => {
       gViewport.attr('transform', evt.transform);
       NETWORK_FILTER_STATE.zoomTransform = evt.transform;
+      updateSelectedNodeLabel();
+      updateZoneNodeLabels();
     });
   svg.call(zoom);
   if (NETWORK_FILTER_STATE.zoomTransform){
@@ -9151,6 +9731,100 @@ function renderNetworkGraphLazy(){
   });
 }
 
+function ensureNetworkModelGraphHost(){
+  if (groupingMode !== 'network') return null;
+  const view = document.querySelector('#modelInfo .networkView');
+  if (!view) return null;
+
+  let host = document.getElementById('networkModelGraphPanel');
+  if (host && host.parentElement !== view){
+    host.remove();
+    host = null;
+  }
+
+  if (!host){
+    host = document.createElement('aside');
+    host.id = 'networkModelGraphPanel';
+    host.className = 'networkModelGraphPanel';
+    host.hidden = true;
+    view.appendChild(host);
+  }
+
+  return host;
+}
+
+function hideNetworkModelGraphPanel(){
+  const host = document.getElementById('networkModelGraphPanel');
+  if (!host) return;
+  host.hidden = true;
+  host.innerHTML = '';
+  host.style.removeProperty('--schoolColor');
+}
+
+function bindNetworkModelGraphPanel(host){
+  if (!host || host.dataset.bound === '1') return;
+  host.dataset.bound = '1';
+  host.addEventListener('click', (evt) => {
+    const closeBtn = evt.target.closest('[data-action="close-network-graph"]');
+    if (!closeBtn) return;
+    NETWORK_FILTER_STATE.selectedNodeId = '';
+    renderNetworkSelectionCard(null);
+    hideNetworkModelGraphPanel();
+    try{ renderNetworkGraphLazy(); }catch(e){}
+  });
+}
+
+function renderNetworkModelGraphPanel(model){
+  const host = ensureNetworkModelGraphHost();
+  if (!host || !model || !model.id || groupingMode !== 'network'){
+    hideNetworkModelGraphPanel();
+    return;
+  }
+
+  const mode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
+  const schoolColor = colorForSchoolLabel(model.grupo);
+  const hasProc = modelHasProcessData(model);
+  const hasDim = modelHasDimensionData(model);
+
+  let graphHtml = '';
+  let kicker = 'Modelo';
+
+  if (mode === 'dimension'){
+    kicker = 'Dimensiones';
+    graphHtml = hasDim
+      ? renderDimensionesCambioChart(getModelDimensionMap(model), model)
+      : `<div class="dim-card"><h4 class="dim-title">Interviene en las siguientes dimensiones</h4><div class="dim-empty">Sin dimensiones definidas.</div></div>`;
+  }else{
+    kicker = (mode === 'process') ? 'Procesos' : 'Perfil mixto';
+    graphHtml = (hasProc || hasDim)
+      ? renderGraficaProcesos(model, { includeDimensions: false })
+      : `<div class="grafica-procesos"><h4 class="dim-title">Perfil del modelo</h4><div class="dim-empty">Sin procesos ni dimensiones definidas.</div></div>`;
+  }
+
+  const meta = [model.autores || '', model.grupo || '', model.year || ''].filter(Boolean).join(' · ');
+
+  host.hidden = false;
+  host.style.setProperty('--schoolColor', schoolColor);
+  host.innerHTML = `
+    <div class="networkModelGraphHead">
+      <div>
+        <span class="networkModelGraphKicker">${escapeHtml(kicker)}</span>
+        <h3 class="networkModelGraphTitle">${escapeHtml(model.label || 'Modelo')}</h3>
+        <p class="networkModelGraphMeta">${escapeHtml(meta || 'Sin metadatos')}</p>
+      </div>
+      <button type="button" class="networkModelGraphClose" aria-label="Cerrar grafica" data-action="close-network-graph">x</button>
+    </div>
+    <div class="networkModelGraphBody">${graphHtml}</div>
+  `;
+
+  bindNetworkModelGraphPanel(host);
+  initDimHoverSync(host);
+  initProcessDetailSync(host);
+  initGraphEntranceAnimations(host);
+  initProcesosHeightSync(host);
+  host.scrollTop = 0;
+}
+
     // =========================================================
     // 4) Render ficha de modelo (sin procesos/mjps)
     // =========================================================
@@ -9190,6 +9864,7 @@ function renderNetworkGraphLazy(){
       NETWORK_FILTER_STATE.query = '';
       NETWORK_FILTER_STATE.minSimDelta = 0;
       modelInfoEl.innerHTML = buildNetworkOverviewHtml();
+      hideNetworkModelGraphPanel();
       bindNetworkLegendHandlers();
       updateNetworkLegendUi();
       renderNetworkGraphLazy();
@@ -9248,6 +9923,7 @@ function renderNetworkGraphLazy(){
   // ---- a partir de aquí, ya hay modelo real ----
   disposeNetworkGraph();
   try{ console.log('OPEN MODEL', m.label, m.id); }catch(e){}
+  ensureIsomorphismReadyForModel(m);
   const col = groupColor.get(m.grupo) || '#ffffff';
   setSchoolToneClass(m.grupo);
 
@@ -9355,11 +10031,11 @@ const authorHTML =
 
 ${nNei ? acc('Niveles', nNei, sectionNeimeyerInner(m.neimeyer), false) : ''}
 
-     ${nProc ? acc('Procedimientos', nProc, sectionProceduresInner(m.procedimientos), false) : ''}
+     ${nProc ? acc('Procedimientos', nProc, sectionProceduresInner(m.procedimientos, { type:'procedimiento', model:m }), false) : ''}
 
      ${nSeq ? acc('Secuencias', nSeq, sectionSequencesInner(m.secuencias), false) : ''}
 
-     ${nMicro ? acc('Microintervenciones', nMicro, sectionProceduresInner(m.micros), false) : ''}
+     ${nMicro ? acc('Microintervenciones', nMicro, sectionProceduresInner(m.micros, { type:'micro', model:m }), false) : ''}
 
 
       ${nAli ? acc('Alianza terapéutica', nAli, sectionAliInner(m.alianzaModelo), false) : ''}
@@ -10192,13 +10868,33 @@ function initProcesosHeightSync(rootEl){
   }
 }
 
-function renderGraficaProcesos(modelOrProcesos){
+function renderGraficaProcesos(modelOrProcesos, options = {}){
   const hasModelObj = !!(modelOrProcesos && typeof modelOrProcesos === 'object');
   const procesos = hasModelObj ? getModelProcessMap(modelOrProcesos) : (modelOrProcesos || {});
   const dimensiones = hasModelObj ? getModelDimensionMap(modelOrProcesos) : null;
   const hasProcValues = Object.values(procesos || {}).some((v) => Number(v) > 0);
+  const includeDimensions = options.includeDimensions !== false;
+
+  const processOnlyEmptyHtml = `
+    <div class="mp-section">
+      <div class="grafica-procesos">
+        <h4 class="dim-title">A través de (procesos de cambio)</h4>
+        <div class="dim-empty">Sin procesos definidos.</div>
+      </div>
+    </div>
+  `;
+
+  const processOnlyHtml = (filas) => `
+    <div class="mp-section">
+      <div class="grafica-procesos">
+        <h4 class="dim-title">A través de (procesos de cambio)</h4>
+        ${filas}
+      </div>
+    </div>
+  `;
 
   if(!procesos || typeof procesos !== 'object' || !hasProcValues){
+    if (!includeDimensions) return processOnlyEmptyHtml;
     return `
       <div class="mp-section">
         <div class="procesos-grid">
@@ -10263,6 +10959,10 @@ function renderGraficaProcesos(modelOrProcesos){
     `;
   }).join('');
 
+  if (!includeDimensions){
+    return processOnlyHtml(filas);
+  }
+
   return `
     <div class="mp-section">
       <div class="procesos-grid">
@@ -10324,8 +11024,10 @@ function sectionConceptsInner(arr){
   `;
 }
 
-function sectionProceduresInner(arr){
+function sectionProceduresInner(arr, options = {}){
   const a = Array.isArray(arr) ? arr : [];
+  const itemType = String(options?.type || '').trim().toLowerCase();
+  const modelMeta = options?.model || null;
 
   // ✅ filtra entradas realmente útiles (evita huecos)
   const clean = a
@@ -10347,6 +11049,12 @@ function sectionProceduresInner(arr){
           ? `<span class="mp-code">${escapeHtml(p.codigo)}</span>` : '';
         const bodyText = (p.texto && String(p.texto).trim()) ? p.texto : '—';
 
+        const isoHtml = renderIsomorphismInner(modelMeta, {
+          tipo: itemType,
+          nombre: p.nombre || '',
+          codigo: p.codigo || ''
+        });
+
       const dataCodeAttr = (p.codigo && String(p.codigo).trim())
   ? ` data-code="${escapeHtml(p.codigo)}"`
   : '';
@@ -10363,7 +11071,10 @@ return `
                 <span class="chev">▾</span>
               </span>
             </summary>
-            <div class="subBody">${escapeHtml(bodyText)}</div>
+            <div class="subBody">
+              <div class="subText">${escapeHtml(bodyText)}</div>
+              ${isoHtml}
+            </div>
           </details>
         `;
       }).join('')}
@@ -10670,6 +11381,8 @@ function renderNetworkSelectionCard(model){
     networkSelectionEl.hidden = true;
     networkSelectionEl.innerHTML = '';
     networkSelectionEl.style.removeProperty('--schoolColor');
+    networkSelectionEl.scrollTop = 0;
+    syncDesktopLeftListScrollMode();
     return;
   }
 
@@ -10704,6 +11417,8 @@ function renderNetworkSelectionCard(model){
       <button type="button" class="networkSelectionBtn" data-action="view-model" data-id="${escapeHtml(String(model.id))}">Ver modelo</button>
     </div>
   `;
+  networkSelectionEl.scrollTop = 0;
+  syncDesktopLeftListScrollMode();
 }
 
 function renderNetworkZoneSelectionCard(zoneMetaRow, zoneModels){
@@ -10712,6 +11427,8 @@ function renderNetworkZoneSelectionCard(zoneMetaRow, zoneModels){
     networkSelectionEl.hidden = true;
     networkSelectionEl.innerHTML = '';
     networkSelectionEl.style.removeProperty('--schoolColor');
+    networkSelectionEl.scrollTop = 0;
+    syncDesktopLeftListScrollMode();
     return;
   }
 
@@ -10740,6 +11457,8 @@ function renderNetworkZoneSelectionCard(zoneMetaRow, zoneModels){
       `).join('')}
     </div>
   `;
+  networkSelectionEl.scrollTop = 0;
+  syncDesktopLeftListScrollMode();
 }
 
 async function openModelFromNetworkSelection(id){
