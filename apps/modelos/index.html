@@ -5679,6 +5679,15 @@ body.apk-mode #modelSheet::-webkit-scrollbar {
   </div>
 
   <script>
+      function escapeHtml(s){
+      return String(s ?? '')
+        .replaceAll('&','&amp;')
+        .replaceAll('<','&lt;')
+        .replaceAll('>','&gt;')
+        .replaceAll('"','&quot;')
+        .replaceAll("'","&#039;");
+    }
+    console.log("ESCAPE_HTML_EXISTE", typeof escapeHtml);
     // ================== Índice de fotos de autores (ESCALABLE) ==================
 window.AUTHOR_PHOTO_INDEX = null;
 
@@ -6016,7 +6025,11 @@ function buildIsomorphismIndexFromLookup(raw){
   );
   return { byEntryKey, byFallbackKey, byNameKey };
 }
-
+async function fetchJson(url){
+  const r = await fetch(url);
+  if(!r.ok) throw new Error("HTTP "+r.status+" "+url);
+  return await r.json();
+}
 async function loadIsomorphismIndex(){
   try{
     const lookupUrls = [
@@ -11720,14 +11733,7 @@ schoolSelect.addEventListener('change', async () => {
     // =========================================================
     // 6) Helpers
     // =========================================================
-    function escapeHtml(s){
-      return String(s ?? '')
-        .replaceAll('&','&amp;')
-        .replaceAll('<','&lt;')
-        .replaceAll('>','&gt;')
-        .replaceAll('"','&quot;')
-        .replaceAll("'","&#039;");
-    }
+  
 // (eliminada: ya existe hexToRgba arriba; evita duplicados)
 
 // =========================
