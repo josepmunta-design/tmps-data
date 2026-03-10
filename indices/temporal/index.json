@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-10T11:20:41.018Z",
+  "generatedAt": "2026-03-10T11:21:52.811Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 176,
-    "links": 176,
-    "unresolvedInfluences": 605
+    "links": 177,
+    "unresolvedInfluences": 609
   },
   "nodes": [
     {
@@ -3006,9 +3006,19 @@
       "isMarco": true,
       "file": "modelos/transversal/self-determination-therapy-deci-ryan-1985.json",
       "authors": "Edward L. Deci; Richard M. Ryan",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "La terapia basada en la Teoría de la Autodeterminación (Self-Determination Theory, SDT) se fundamenta en el marco motivacional desarrollado por Edward L. Deci y Richard M. Ryan. Este enfoque sostiene que el bienestar psicológico, la persistencia conductual y el crecimiento personal dependen de la satisfacción de tres necesidades psicológicas básicas universales: autonomía, competencia y relación. Cuando estas necesidades están apoyadas por el contexto relacional —incluida la relación terapéutica— las personas desarrollan motivación autodeterminada, es decir, actúan desde valores, intereses y elecciones internas en lugar de presiones externas o control coercitivo. En cambio, cuando estas necesidades son frustradas, emergen desmotivación, dependencia, rigidez conductual y diversas formas de malestar psicológico. En psicoterapia, el objetivo no es solo reducir síntomas, sino reorganizar las condiciones motivacionales del individuo para que las acciones y decisiones surjan desde la agencia interna. El terapeuta adopta un estilo relacional que apoya la autonomía, reconoce la perspectiva del paciente, fomenta el sentido de competencia y fortalece vínculos significativos, facilitando así la internalización de valores y el desarrollo de motivación intrínseca para el cambio.",
+      "influencias": [
+        "Psicología humanista",
+        "Teoría de la motivación intrínseca",
+        "Psicología del desarrollo",
+        "Teoría del apego",
+        "Motivational Interviewing"
+      ],
+      "refs": [
+        "Deci, E. L., & Ryan, R. M. (1985). Intrinsic Motivation and Self-Determination in Human Behavior.",
+        "Ryan, R. M., & Deci, E. L. (2000). Intrinsic and Extrinsic Motivations: Classic Definitions and New Directions.",
+        "Ryan, R. M., & Deci, E. L. (2017). Self-Determination Theory: Basic Psychological Needs in Motivation, Development, and Wellness."
+      ],
       "lat": 43.1566,
       "lon": -77.6088,
       "ciudad": "Rochester, New York",
@@ -5717,6 +5727,10 @@
     {
       "source": "psicologia-cognitiva-neisser-1967",
       "target": "functional-family-therapy-fft"
+    },
+    {
+      "source": "teoria-apego-bowlby",
+      "target": "self-determination-therapy-deci-ryan-1985"
     }
   ],
   "unresolvedInfluences": [
@@ -8067,6 +8081,22 @@
     {
       "target": "psicoterapia-trauma-colectivo-reconciliacion-2000",
       "influence": "Intervención psicosocial en contextos de violencia masiva"
+    },
+    {
+      "target": "self-determination-therapy-deci-ryan-1985",
+      "influence": "Psicología humanista"
+    },
+    {
+      "target": "self-determination-therapy-deci-ryan-1985",
+      "influence": "Teoría de la motivación intrínseca"
+    },
+    {
+      "target": "self-determination-therapy-deci-ryan-1985",
+      "influence": "Psicología del desarrollo"
+    },
+    {
+      "target": "self-determination-therapy-deci-ryan-1985",
+      "influence": "Motivational Interviewing"
     },
     {
       "target": "a2naikan1940",
