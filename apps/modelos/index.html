@@ -7279,10 +7279,12 @@ async function ensureModelFull(m){
     const PROCESS_FILTER_MAP = new Map(PROCESS_FILTERS.map((p) => [p.id, p]));
     let ENSURE_ALL_SCHOOLS_PROMISE = null;
     let ENSURE_GROUPING_MODELS_PROMISE = null;
-    const NETWORK_STATE = {
-      sim: null,
-      resizeHandler: null
-    };
+const NETWORK_STATE = {
+  sim: null,
+  resizeHandler: null,
+  loadingTimer: null,
+  loadingSince: 0
+};
     const NETWORK_FILTER_STATE = {
       activeSchools: new Set(),
       minSimDelta: 0,
@@ -8432,10 +8434,16 @@ async function handleGroupingModeChange(nextMode){
     renderNetworkSelectionCard(null);
     renderModelInfo(null);
     renderModelsList();
+    setNetworkLoading(true);
     resetRightPanelToTop();
-    await ensureModelsHydratedForGrouping();
-    renderModelsList();
-    renderModelInfo(null);
+    try{
+      await ensureModelsHydratedForGrouping();
+      renderModelsList();
+      renderModelInfo(null);
+    }catch(e){
+      setNetworkLoading(false);
+      throw e;
+    }
     return;
   }
 
@@ -9975,8 +9983,30 @@ function setNetworkLoading(isLoading){
   const wrap = document.getElementById('networkCanvas');
   const loading = document.getElementById('networkLoading');
   if (!wrap || !loading) return;
-  wrap.classList.toggle('is-loading', !!isLoading);
-  loading.setAttribute('aria-hidden', isLoading ? 'false' : 'true');
+  if (NETWORK_STATE.loadingTimer){
+    clearTimeout(NETWORK_STATE.loadingTimer);
+    NETWORK_STATE.loadingTimer = null;
+  }
+  if (isLoading){
+    NETWORK_STATE.loadingSince = Date.now();
+    wrap.classList.add('is-loading');
+    loading.setAttribute('aria-hidden', 'false');
+    return;
+  }
+
+  const elapsed = Date.now() - Number(NETWORK_STATE.loadingSince || 0);
+  const minVisible = 240;
+  const applyOff = () => {
+    wrap.classList.remove('is-loading');
+    loading.setAttribute('aria-hidden', 'true');
+  };
+
+  if (elapsed < minVisible){
+    NETWORK_STATE.loadingTimer = setTimeout(applyOff, minVisible - elapsed);
+    return;
+  }
+
+  applyOff();
 }
 
 function renderNetworkGraphLazy(){
