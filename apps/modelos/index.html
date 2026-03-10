@@ -67,6 +67,8 @@ function cdnBase(){
 let DATA_BASE = IS_GHPAGES
   ? (location.origin + '/data')
   : (cdnBase() + '/data');
+let THREE_READY_PROMISE = null;
+let ORBIT_READY_PROMISE = null;
 
   
 function gh(p){
@@ -115,6 +117,90 @@ async function ensureD3(timeoutMs = 8000){
   }
 
   console.error("No se pudo cargar D3 desde ningún CDN.");
+  return false;
+}
+
+async function ensureThreeJs(timeoutMs = 8000){
+  if (window.THREE && typeof window.THREE.WebGLRenderer === 'function') return true;
+
+  function load(src){
+    return new Promise((ok, fail) => {
+      const s = document.createElement('script');
+      s.src = src;
+      s.async = true;
+      s.onload = ok;
+      s.onerror = fail;
+      document.head.appendChild(s);
+    });
+  }
+
+  const sources = [
+    'https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js',
+    'https://unpkg.com/three@0.128.0/build/three.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'
+  ];
+
+  const started = Date.now();
+  for (const src of sources){
+    try{
+      await Promise.race([
+        load(src),
+        new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), timeoutMs))
+      ]);
+      if (window.THREE && typeof window.THREE.WebGLRenderer === 'function'){
+        console.log('THREE OK:', src);
+        return true;
+      }
+    }catch(e){
+      console.warn('THREE FAIL:', src, e?.message || e);
+      if (Date.now() - started > timeoutMs * sources.length) break;
+    }
+  }
+
+  console.error('No se pudo cargar Three.js desde ningún CDN.');
+  return false;
+}
+
+async function ensureOrbitControls(timeoutMs = 8000){
+  if (window.THREE?.OrbitControls) return true;
+
+  const threeOk = await (THREE_READY_PROMISE || ensureThreeJs().catch(() => false));
+  if (!threeOk) return false;
+
+  function load(src){
+    return new Promise((ok, fail) => {
+      const s = document.createElement('script');
+      s.src = src;
+      s.async = true;
+      s.onload = ok;
+      s.onerror = fail;
+      document.head.appendChild(s);
+    });
+  }
+
+  const sources = [
+    'https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js',
+    'https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js'
+  ];
+
+  const started = Date.now();
+  for (const src of sources){
+    try{
+      await Promise.race([
+        load(src),
+        new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), timeoutMs))
+      ]);
+      if (window.THREE?.OrbitControls){
+        console.log('OrbitControls OK:', src);
+        return true;
+      }
+    }catch(e){
+      console.warn('OrbitControls FAIL:', src, e?.message || e);
+      if (Date.now() - started > timeoutMs * sources.length) break;
+    }
+  }
+
+  console.error('No se pudo cargar OrbitControls desde ningún CDN.');
   return false;
 }
 </script>
@@ -1546,6 +1632,95 @@ opacity: .75;
   display: block;
 }
 
+.networkThreeMount{
+  position:absolute;
+  inset:0;
+  z-index:1;
+}
+
+.networkThreeMount[hidden]{
+  display:none !important;
+}
+
+.networkThreeCanvas{
+  width:100%;
+  height:100%;
+}
+
+.networkThreeCanvas canvas{
+  width:100% !important;
+  height:100% !important;
+  display:block;
+}
+
+.network3dHud{
+  position:absolute;
+  top:16px;
+  left:16px;
+  right:16px;
+  z-index:5;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:10px;
+  pointer-events:none;
+}
+
+.network3dBadge{
+  max-width:min(44ch, 68%);
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(10,16,24,.58);
+  color:rgba(244,248,255,.9);
+  font-size:11px;
+  line-height:1.45;
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.24),
+    inset 0 1px 0 rgba(255,255,255,.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.network3dBadge strong{
+  display:block;
+  margin-bottom:4px;
+  font-size:10px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.96);
+}
+
+.network3dCameraBar{
+  display:flex;
+  gap:8px;
+  pointer-events:auto;
+}
+
+.network3dViewBtn{
+  min-height:34px;
+  padding:0 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(10,16,24,.62);
+  color:#fff;
+  font:inherit;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  cursor:pointer;
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.network3dViewBtn:hover{
+  border-color: rgba(255,255,255,.24);
+}
+
 .networkLoading{
   position: absolute;
   inset: 0;
@@ -2144,6 +2319,20 @@ body.network-mode .panel.left .schoolSticky.stuck{
   }
   .networkTitle{
     font-size: 24px;
+  }
+  .network3dHud{
+    top:10px;
+    left:10px;
+    right:10px;
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .network3dBadge{
+    max-width:none;
+  }
+  .network3dCameraBar{
+    justify-content:flex-end;
+    flex-wrap:wrap;
   }
   body.network-mode .networkHeader{
     top: 10px;
@@ -7283,7 +7472,17 @@ const NETWORK_STATE = {
   sim: null,
   resizeHandler: null,
   loadingTimer: null,
-  loadingSince: 0
+  loadingSince: 0,
+  threeD: null
+};
+const NETWORK_GLOBAL_LAYOUT_CACHE = {
+  threeD: {
+    signature: '',
+    positionsById: new Map(),
+    nodeMetaById: new Map(),
+    extents: { x:1, y:1, z:1 },
+    scale: 120
+  }
 };
     const NETWORK_FILTER_STATE = {
       activeSchools: new Set(),
@@ -8390,7 +8589,7 @@ function syncGroupingTargetOptions(){
 }
 
 function applyNetworkProfileMode(modeKey){
-  const nextMode = (modeKey === 'process' || modeKey === 'dimension' || modeKey === 'mixed')
+  const nextMode = (modeKey === 'process' || modeKey === 'dimension' || modeKey === '3d' || modeKey === 'mixed')
     ? modeKey
     : 'mixed';
 
@@ -8548,12 +8747,13 @@ function renderModelsList(){
     }
     const modeCards = [
       { id:'process', title:'Procesos', desc:'Solo similitud por procesos' },
-      { id:'dimension', title:'Dimensiones', desc:'Solo similitud por dimensiones' }
+      { id:'dimension', title:'Dimensiones', desc:'Solo similitud por dimensiones' },
+      { id:'3d', title:'3D', desc:'Espacio cartesiano estable por ejes teóricos' }
     ];
 
     setLeftListMeta('Clasificación', 'elige modo del grafo');
     countLine.innerHTML = `
-      <span class="count-n">2</span>
+      <span class="count-n">3</span>
       <span class="count-txt">modos en</span>
       <span class="count-school">“Vista red”</span>
     `;
@@ -8911,6 +9111,7 @@ function disposeNetworkGraph(){
     window.removeEventListener('resize', NETWORK_STATE.resizeHandler);
     NETWORK_STATE.resizeHandler = null;
   }
+  disposeNetwork3DView();
 }
 
 function getNetworkSchoolList(){
@@ -9030,12 +9231,14 @@ function buildNetworkOverviewHtml(){
             <select id="networkProfileModeSelect" aria-label="Modo del grafo">
               <option value="process" ${String(NETWORK_FILTER_STATE.profileMode || 'mixed') === 'process' ? 'selected' : ''}>Procesos</option>
               <option value="dimension" ${String(NETWORK_FILTER_STATE.profileMode || 'mixed') === 'dimension' ? 'selected' : ''}>Dimensiones</option>
+              <option value="3d" ${String(NETWORK_FILTER_STATE.profileMode || 'mixed') === '3d' ? 'selected' : ''}>3D</option>
             </select>
           </div>
         </div>
       </div>
       <div class="networkCanvas" id="networkCanvas">
         <svg id="networkSvg" aria-label="Red de modelos"></svg>
+        <div class="networkThreeMount" id="networkThreeMount" hidden></div>
         <div class="networkLoading" id="networkLoading" aria-live="polite" aria-hidden="true">
           <div class="networkLoadingCard">
             <span class="networkLoadingSpinner" aria-hidden="true"></span>
@@ -9253,6 +9456,639 @@ function cosineSimilarity(a, b){
   return dot / (Math.sqrt(na) * Math.sqrt(nb));
 }
 
+function network3DProcessSnapshot(model){
+  const p = processScoresForModel(model);
+  return {
+    N: Number(p.N || 0),
+    I: Number(p.I || 0),
+    RI: Number(p.RI || 0),
+    AG: Number(p.AG || 0),
+    RF: Number(p.RF || 0),
+    AP: Number(p.AP || 0),
+    RE: Number(p.RE || 0),
+    R: Number(p.R || 0)
+  };
+}
+
+function raw3DAxesForModel(model){
+  const p = network3DProcessSnapshot(model);
+  return {
+    x: (p.N + p.I + p.RI) - (p.AG + p.RF),
+    y: (p.AP + p.RE) - (p.N + (0.5 * p.RI)),
+    z: p.R - (p.I + p.RI),
+    processScores: p
+  };
+}
+
+function isModelEligibleFor3D(model){
+  if (!model || model.hideInModels || model.isMarco || !model.id || !model.label) return false;
+  const raw = raw3DAxesForModel(model);
+  const total =
+    Math.abs(raw.processScores.N) +
+    Math.abs(raw.processScores.I) +
+    Math.abs(raw.processScores.RI) +
+    Math.abs(raw.processScores.AG) +
+    Math.abs(raw.processScores.RF) +
+    Math.abs(raw.processScores.AP) +
+    Math.abs(raw.processScores.RE) +
+    Math.abs(raw.processScores.R);
+  return total > 0;
+}
+
+function buildNetwork3DSignature(models){
+  return models
+    .map((m) => {
+      const p = network3DProcessSnapshot(m);
+      return [
+        String(m.id || '').trim(),
+        p.N, p.I, p.RI, p.AG, p.RF, p.AP, p.RE, p.R
+      ].join(':');
+    })
+    .sort()
+    .join('|');
+}
+
+function ensureNetwork3DLayoutCache(){
+  const pool = getAllModelsPool()
+    .filter((m) => isModelEligibleFor3D(m))
+    .sort((a, b) => String(a.id || '').localeCompare(String(b.id || ''), 'es'));
+
+  const signature = buildNetwork3DSignature(pool);
+  const cache = NETWORK_GLOBAL_LAYOUT_CACHE.threeD;
+  if (cache.signature === signature && cache.positionsById?.size){
+    return cache;
+  }
+
+  const rawRows = pool.map((m) => {
+    const raw = raw3DAxesForModel(m);
+    return { model:m, id:String(m.id), rawX:raw.x, rawY:raw.y, rawZ:raw.z, processScores:raw.processScores };
+  });
+
+  const axes = ['rawX', 'rawY', 'rawZ'];
+  const stats = {};
+  for (const key of axes){
+    const vals = rawRows.map((row) => Number(row[key]) || 0);
+    const mean = vals.length ? (vals.reduce((acc, v) => acc + v, 0) / vals.length) : 0;
+    let maxAbs = 0;
+    for (const v of vals){
+      const centered = v - mean;
+      if (Math.abs(centered) > maxAbs) maxAbs = Math.abs(centered);
+    }
+    stats[key] = { mean, maxAbs: maxAbs || 1 };
+  }
+
+  const scale = 120;
+  const positionsById = new Map();
+  const nodeMetaById = new Map();
+  rawRows.forEach((row) => {
+    const x = (((row.rawX - stats.rawX.mean) / stats.rawX.maxAbs) || 0) * scale;
+    const y = (((row.rawY - stats.rawY.mean) / stats.rawY.maxAbs) || 0) * scale;
+    const z = (((row.rawZ - stats.rawZ.mean) / stats.rawZ.maxAbs) || 0) * scale;
+    positionsById.set(row.id, { x, y, z });
+    nodeMetaById.set(row.id, {
+      id: row.id,
+      label: String(row.model.label || 'Modelo'),
+      autores: String(row.model.autores || ''),
+      grupo: String(row.model.grupo || 'Otros'),
+      year: Number(row.model.year || 0) || 0,
+      importance: effectiveImportanceLevel(row.model),
+      rawX: row.rawX,
+      rawY: row.rawY,
+      rawZ: row.rawZ,
+      processScores: row.processScores,
+      modelRef: row.model
+    });
+  });
+
+  cache.signature = signature;
+  cache.positionsById = positionsById;
+  cache.nodeMetaById = nodeMetaById;
+  cache.extents = { x:scale, y:scale, z:scale };
+  cache.scale = scale;
+  return cache;
+}
+
+function getNearestNeighbors3D(nodeId, k = 5, visibleIds = null){
+  const cache = ensureNetwork3DLayoutCache();
+  const origin = cache.positionsById.get(String(nodeId || ''));
+  if (!origin) return [];
+
+  const allow = visibleIds instanceof Set ? visibleIds : null;
+  const rows = [];
+  for (const [otherId, pos] of cache.positionsById.entries()){
+    if (otherId === String(nodeId || '')) continue;
+    if (allow && !allow.has(otherId)) continue;
+    const dx = Number(pos.x || 0) - Number(origin.x || 0);
+    const dy = Number(pos.y || 0) - Number(origin.y || 0);
+    const dz = Number(pos.z || 0) - Number(origin.z || 0);
+    const distance = Math.sqrt((dx * dx) + (dy * dy) + (dz * dz));
+    rows.push({ id:otherId, distance, position:pos, meta:cache.nodeMetaById.get(otherId) || null });
+  }
+  rows.sort((a, b) => a.distance - b.distance);
+  return rows.slice(0, Math.max(0, Number(k) || 0));
+}
+
+function buildNetwork3DData(){
+  const cache = ensureNetwork3DLayoutCache();
+  const activeSchools = NETWORK_FILTER_STATE.activeSchools;
+  const query = normSearchText(NETWORK_FILTER_STATE.query || '');
+  const visibleNodes = [];
+
+  for (const [id, pos] of cache.positionsById.entries()){
+    const meta = cache.nodeMetaById.get(id);
+    if (!meta) continue;
+    if (activeSchools.size && !activeSchools.has(String(meta.grupo || 'Otros'))) continue;
+    if (query){
+      const inLabel = normSearchText(meta.label).includes(query);
+      const inAuthor = normSearchText(meta.autores || '').includes(query);
+      if (!inLabel && !inAuthor) continue;
+    }
+    visibleNodes.push({
+      ...meta,
+      x: Number(pos.x || 0),
+      y: Number(pos.y || 0),
+      z: Number(pos.z || 0)
+    });
+  }
+
+  return { cache, nodes:visibleNodes };
+}
+
+function setNetworkTooltipHtml(html, evt, wrap){
+  const tooltip = document.getElementById('networkTooltip');
+  if (!tooltip || !wrap) return;
+  tooltip.innerHTML = html;
+  const r = wrap.getBoundingClientRect();
+  tooltip.style.left = `${evt.clientX - r.left + 12}px`;
+  tooltip.style.top = `${evt.clientY - r.top + 12}px`;
+  tooltip.classList.add('is-on');
+}
+
+function clearNetworkTooltip(){
+  const tooltip = document.getElementById('networkTooltip');
+  if (!tooltip) return;
+  tooltip.classList.remove('is-on');
+}
+
+function makeNetwork3DTextSprite(text){
+  const canvas = document.createElement('canvas');
+  canvas.width = 512;
+  canvas.height = 128;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return null;
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = 'rgba(10,16,24,0.78)';
+  ctx.strokeStyle = 'rgba(255,255,255,0.16)';
+  ctx.lineWidth = 2;
+  const x = 10;
+  const y = 14;
+  const w = canvas.width - 20;
+  const h = canvas.height - 28;
+  const r = 28;
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.fillStyle = '#f4f8ff';
+  ctx.font = '700 36px Montserrat, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(String(text || ''), canvas.width / 2, canvas.height / 2 + 1);
+
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.needsUpdate = true;
+  const material = new THREE.SpriteMaterial({
+    map: texture,
+    transparent: true,
+    depthWrite: false
+  });
+  const sprite = new THREE.Sprite(material);
+  sprite.scale.set(54, 13.5, 1);
+  return sprite;
+}
+
+function addNetwork3DSceneGuides(scene, range){
+  const lineMaterial = new THREE.LineBasicMaterial({
+    color: 0xdfe7f4,
+    transparent: true,
+    opacity: 0.42
+  });
+  const pts = [
+    new THREE.Vector3(-range, 0, 0), new THREE.Vector3(range, 0, 0),
+    new THREE.Vector3(0, -range, 0), new THREE.Vector3(0, range, 0),
+    new THREE.Vector3(0, 0, -range), new THREE.Vector3(0, 0, range)
+  ];
+  const axes = new THREE.BufferGeometry().setFromPoints(pts);
+  scene.add(new THREE.LineSegments(axes, lineMaterial));
+
+  const gridSize = range * 2.1;
+  const gridDivisions = 8;
+  const grids = [
+    new THREE.GridHelper(gridSize, gridDivisions, 0xffffff, 0xffffff),
+    new THREE.GridHelper(gridSize, gridDivisions, 0xffffff, 0xffffff),
+    new THREE.GridHelper(gridSize, gridDivisions, 0xffffff, 0xffffff)
+  ];
+  grids[0].material.opacity = 0.08;
+  grids[0].material.transparent = true;
+  grids[1].rotation.x = Math.PI / 2;
+  grids[1].material.opacity = 0.05;
+  grids[1].material.transparent = true;
+  grids[2].rotation.z = Math.PI / 2;
+  grids[2].material.opacity = 0.04;
+  grids[2].material.transparent = true;
+  grids.forEach((g) => scene.add(g));
+
+  const labels = [
+    { text:'Significado', pos:[range + 22, 0, 0] },
+    { text:'Acción', pos:[-range - 22, 0, 0] },
+    { text:'Experiencia emocional', pos:[0, range + 18, 0] },
+    { text:'Estructuración cognitiva', pos:[0, -range - 18, 0] },
+    { text:'Relacional', pos:[0, 0, range + 18] },
+    { text:'Intrapersonal', pos:[0, 0, -range - 18] }
+  ];
+  labels.forEach((row) => {
+    const sprite = makeNetwork3DTextSprite(row.text);
+    if (!sprite) return;
+    sprite.position.set(row.pos[0], row.pos[1], row.pos[2]);
+    scene.add(sprite);
+  });
+}
+
+function updateNetwork3DSelectionState(){
+  const state = NETWORK_STATE.threeD;
+  if (!state) return;
+
+  const selectedId = String(NETWORK_FILTER_STATE.selectedNodeId || '');
+  if (selectedId && !state.visibleIds.has(selectedId)){
+    NETWORK_FILTER_STATE.selectedNodeId = '';
+    hideNetworkMobileGraphButton();
+    hideNetworkModelGraphPanel();
+    renderNetworkSelectionCard(null);
+  }
+
+  const currentSelected = String(NETWORK_FILTER_STATE.selectedNodeId || '');
+  const neighbors = currentSelected
+    ? getNearestNeighbors3D(currentSelected, 5, state.visibleIds)
+    : [];
+  state.neighborIds = new Set(neighbors.map((n) => String(n.id)));
+
+  for (const [id, mesh] of state.meshById.entries()){
+    const material = mesh.material;
+    if (!material) continue;
+    const visible = state.visibleIds.has(id);
+    mesh.visible = visible;
+    if (!visible) continue;
+
+    const baseR = Number(mesh.userData.baseRadius || 4.5);
+    const isSel = currentSelected && id === currentSelected;
+    const isNeighbor = !isSel && state.neighborIds.has(id);
+    const faded = !!currentSelected && !isSel && !isNeighbor;
+
+    const scaleFactor = isSel ? 1.42 : (isNeighbor ? 1.18 : 1);
+    mesh.scale.setScalar(baseR * scaleFactor);
+    material.transparent = true;
+    material.opacity = faded ? 0.18 : (isNeighbor ? 0.95 : 0.88);
+    material.emissive = new THREE.Color(isSel ? '#ffffff' : (isNeighbor ? '#dfefff' : '#000000'));
+    material.emissiveIntensity = isSel ? 0.55 : (isNeighbor ? 0.24 : 0.04);
+  }
+}
+
+function syncNetwork3DSceneData(state, networkData){
+  state.visibleIds = new Set(networkData.nodes.map((n) => String(n.id)));
+
+  for (const [id, mesh] of state.meshById.entries()){
+    mesh.visible = state.visibleIds.has(id);
+  }
+
+  if (NETWORK_FILTER_STATE.selectedZoneKey){
+    NETWORK_FILTER_STATE.selectedZoneKey = '';
+  }
+
+  updateNetwork3DSelectionState();
+}
+
+function setNetwork3DOrthoView(kind){
+  const state = NETWORK_STATE.threeD;
+  if (!state) return;
+  const dist = state.range * 2.55;
+  const target = state.controls?.target || new THREE.Vector3(0, 0, 0);
+
+  if (kind === 'front'){
+    state.camera.position.set(target.x, target.y, dist);
+  }else if (kind === 'side'){
+    state.camera.position.set(dist, target.y, target.z);
+  }else if (kind === 'top'){
+    state.camera.position.set(target.x, dist, target.z + 0.001);
+  }
+
+  state.camera.lookAt(target);
+  state.controls?.update();
+}
+
+function disposeNetwork3DView(){
+  const state = NETWORK_STATE.threeD;
+  if (!state) return;
+
+  clearNetworkTooltip();
+  if (state.frameId){
+    cancelAnimationFrame(state.frameId);
+  }
+  if (state.resizeHandler){
+    window.removeEventListener('resize', state.resizeHandler);
+  }
+  if (state.pointerMoveHandler && state.renderer?.domElement){
+    state.renderer.domElement.removeEventListener('pointermove', state.pointerMoveHandler);
+  }
+  if (state.pointerLeaveHandler && state.renderer?.domElement){
+    state.renderer.domElement.removeEventListener('pointerleave', state.pointerLeaveHandler);
+  }
+  if (state.clickHandler && state.renderer?.domElement){
+    state.renderer.domElement.removeEventListener('click', state.clickHandler);
+  }
+  try{ state.controls?.dispose?.(); }catch(e){}
+  for (const mesh of state.meshById?.values?.() || []){
+    try{ mesh.geometry?.dispose?.(); }catch(e){}
+    try{ mesh.material?.dispose?.(); }catch(e){}
+  }
+  state.scene?.traverse?.((obj) => {
+    if (obj?.material?.map){
+      try{ obj.material.map.dispose(); }catch(e){}
+    }
+    if (obj?.material && obj.type === 'Sprite'){
+      try{ obj.material.dispose(); }catch(e){}
+    }
+    if (obj?.geometry && obj.type !== 'Mesh'){
+      try{ obj.geometry.dispose(); }catch(e){}
+    }
+  });
+  try{ state.renderer?.dispose?.(); }catch(e){}
+  if (state.mountEl){
+    state.mountEl.innerHTML = '';
+    state.mountEl.hidden = true;
+  }
+  NETWORK_STATE.threeD = null;
+}
+
+async function initNetwork3DView(){
+  if (!THREE_READY_PROMISE){
+    THREE_READY_PROMISE = ensureThreeJs().catch(() => false);
+  }
+  if (!ORBIT_READY_PROMISE){
+    ORBIT_READY_PROMISE = ensureOrbitControls().catch(() => false);
+  }
+  const threeOk = await THREE_READY_PROMISE;
+  const orbitOk = await ORBIT_READY_PROMISE;
+  if (!threeOk || !orbitOk){
+    setNetworkLoading(false);
+    return null;
+  }
+
+  const wrap = document.getElementById('networkCanvas');
+  const svgEl = document.getElementById('networkSvg');
+  const mountEl = document.getElementById('networkThreeMount');
+  if (!wrap || !mountEl) return null;
+
+  const existing = NETWORK_STATE.threeD;
+  const cache = ensureNetwork3DLayoutCache();
+  if (existing && existing.signature === cache.signature && existing.mountEl === mountEl){
+    existing.mountEl.hidden = false;
+    if (svgEl) svgEl.style.display = 'none';
+    return existing;
+  }
+
+  disposeNetwork3DView();
+  if (svgEl) svgEl.style.display = 'none';
+  mountEl.hidden = false;
+
+  const host = document.createElement('div');
+  host.className = 'networkThreeCanvas';
+  mountEl.innerHTML = '';
+  mountEl.appendChild(host);
+
+  const hud = document.createElement('div');
+  hud.className = 'network3dHud';
+  hud.innerHTML = `
+    <div class="network3dBadge">
+      <strong>Espacio 3D</strong>
+      X: Significado ↔ Acción<br>
+      Y: Experiencia ↔ Estructuración<br>
+      Z: Relacional ↔ Intrapersonal
+    </div>
+    <div class="network3dCameraBar">
+      <button type="button" class="network3dViewBtn" data-view="front">Frontal</button>
+      <button type="button" class="network3dViewBtn" data-view="side">Lateral</button>
+      <button type="button" class="network3dViewBtn" data-view="top">Superior</button>
+    </div>
+  `;
+  mountEl.appendChild(hud);
+
+  const size = () => {
+    const r = wrap.getBoundingClientRect();
+    return { w:Math.max(220, r.width), h:Math.max(240, r.height) };
+  };
+  const s = size();
+  const renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.setSize(s.w, s.h, false);
+  host.appendChild(renderer.domElement);
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(44, s.w / s.h, 1, 1800);
+  const range = Math.max(140, Number(cache.scale || 120) * 1.25);
+  camera.position.set(range * 1.45, range * 1.1, range * 1.55);
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.88));
+  const key = new THREE.DirectionalLight(0xffffff, 0.74);
+  key.position.set(range * 0.9, range * 1.2, range * 1.1);
+  scene.add(key);
+  const rim = new THREE.DirectionalLight(0x91c3ff, 0.22);
+  rim.position.set(-range, range * 0.25, -range);
+  scene.add(rim);
+
+  addNetwork3DSceneGuides(scene, range);
+
+  const controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.075;
+  controls.enablePan = false;
+  controls.minDistance = range * 0.8;
+  controls.maxDistance = range * 4.4;
+  controls.target.set(0, 0, 0);
+  controls.update();
+
+  const geometry = new THREE.SphereGeometry(1, 18, 18);
+  const meshById = new Map();
+  for (const [id, pos] of cache.positionsById.entries()){
+    const meta = cache.nodeMetaById.get(id);
+    if (!meta) continue;
+    const color = colorForSchoolLabel(meta.grupo);
+    const baseRadius = 3.6 + ((Number(meta.importance || 2) || 2) * 0.75);
+    const material = new THREE.MeshStandardMaterial({
+      color,
+      emissive: 0x000000,
+      emissiveIntensity: 0.04,
+      roughness: 0.38,
+      metalness: 0.06,
+      transparent: true,
+      opacity: 0.88
+    });
+    const mesh = new THREE.Mesh(geometry.clone(), material);
+    mesh.position.set(pos.x, pos.y, pos.z);
+    mesh.scale.setScalar(baseRadius);
+    mesh.userData = { id, baseRadius, color, meta };
+    scene.add(mesh);
+    meshById.set(id, mesh);
+  }
+
+  const state = {
+    signature: cache.signature,
+    cache,
+    mountEl,
+    host,
+    hud,
+    renderer,
+    scene,
+    camera,
+    controls,
+    meshById,
+    hoveredId: '',
+    neighborIds: new Set(),
+    visibleIds: new Set(),
+    range,
+    raycaster: new THREE.Raycaster(),
+    pointer: new THREE.Vector2(),
+    frameId: 0,
+    resizeHandler: null,
+    pointerMoveHandler: null,
+    pointerLeaveHandler: null,
+    clickHandler: null
+  };
+
+  hud.querySelectorAll('[data-view]').forEach((btn) => {
+    btn.addEventListener('click', () => setNetwork3DOrthoView(btn.getAttribute('data-view') || 'front'));
+  });
+
+  state.pointerMoveHandler = (evt) => {
+    const r = renderer.domElement.getBoundingClientRect();
+    state.pointer.x = ((evt.clientX - r.left) / Math.max(1, r.width)) * 2 - 1;
+    state.pointer.y = -(((evt.clientY - r.top) / Math.max(1, r.height)) * 2 - 1);
+    state.raycaster.setFromCamera(state.pointer, camera);
+    const targets = [...state.meshById.values()].filter((mesh) => mesh.visible);
+    const hit = state.raycaster.intersectObjects(targets, false)[0];
+    if (!hit?.object){
+      state.hoveredId = '';
+      clearNetworkTooltip();
+      return;
+    }
+
+    const hoveredId = String(hit.object.userData?.id || '');
+    state.hoveredId = hoveredId;
+    const meta = state.cache.nodeMetaById.get(hoveredId);
+    if (!meta) return;
+    const pos = state.cache.positionsById.get(hoveredId) || { x:0, y:0, z:0 };
+    setNetworkTooltipHtml(
+      `<strong>${escapeHtml(meta.label)}</strong><br>${escapeHtml(meta.autores || '—')}<br>${escapeHtml(meta.grupo)}${meta.year ? ` · ${meta.year}` : ''}<br>X ${Number(pos.x || 0).toFixed(1)} · Y ${Number(pos.y || 0).toFixed(1)} · Z ${Number(pos.z || 0).toFixed(1)}`,
+      evt,
+      wrap
+    );
+  };
+
+  state.pointerLeaveHandler = () => {
+    state.hoveredId = '';
+    clearNetworkTooltip();
+  };
+
+  state.clickHandler = async () => {
+    const clickedId = String(state.hoveredId || '');
+    if (!clickedId){
+      if (!NETWORK_FILTER_STATE.selectedNodeId) return;
+      NETWORK_FILTER_STATE.selectedNodeId = '';
+      hideNetworkMobileGraphButton();
+      hideNetworkModelGraphPanel();
+      renderNetworkSelectionCard(null);
+      updateNetwork3DSelectionState();
+      return;
+    }
+
+    NETWORK_FILTER_STATE.selectedZoneKey = '';
+    NETWORK_FILTER_STATE.selectedNodeId = clickedId;
+    updateNetwork3DSelectionState();
+
+    const base = getAllModelsPool().find((m) => String(m?.id || '') === clickedId);
+    if (!base) return;
+    const full = await ensureModelFull(base).catch(() => base);
+    if (String(NETWORK_FILTER_STATE.selectedNodeId || '') !== clickedId) return;
+    const selectedModel = full || base;
+    renderNetworkSelectionCard(selectedModel);
+    if (isMobileViewport()){
+      renderNetworkMobileGraphButton(selectedModel);
+      hideNetworkModelGraphPanel();
+    }else{
+      hideNetworkMobileGraphButton();
+      renderNetworkModelGraphPanel(selectedModel);
+    }
+  };
+
+  renderer.domElement.addEventListener('pointermove', state.pointerMoveHandler, { passive:true });
+  renderer.domElement.addEventListener('pointerleave', state.pointerLeaveHandler, { passive:true });
+  renderer.domElement.addEventListener('click', state.clickHandler);
+
+  state.resizeHandler = () => {
+    if (groupingMode !== 'network' || String(NETWORK_FILTER_STATE.profileMode || '') !== '3d') return;
+    const next = size();
+    camera.aspect = next.w / next.h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(next.w, next.h, false);
+  };
+  window.addEventListener('resize', state.resizeHandler, { passive:true });
+
+  const tick = () => {
+    state.frameId = requestAnimationFrame(tick);
+    controls.update();
+    renderer.render(scene, camera);
+  };
+  tick();
+
+  NETWORK_STATE.threeD = state;
+  return state;
+}
+
+async function renderNetwork3DView(){
+  const { nodes } = buildNetwork3DData();
+  const mountEl = document.getElementById('networkThreeMount');
+  const svgEl = document.getElementById('networkSvg');
+  if (svgEl) svgEl.style.display = 'none';
+  if (mountEl) mountEl.hidden = false;
+
+  const state = await initNetwork3DView();
+  if (!state){
+    setNetworkLoading(false);
+    return;
+  }
+
+  syncNetwork3DSceneData(state, { nodes });
+
+  if (!nodes.length){
+    NETWORK_FILTER_STATE.selectedNodeId = '';
+    hideNetworkMobileGraphButton();
+    hideNetworkModelGraphPanel();
+    renderNetworkSelectionCard(null);
+  }
+
+  requestAnimationFrame(() => setNetworkLoading(false));
+}
+
 function buildNetworkData(){
   const activeSchools = NETWORK_FILTER_STATE.activeSchools;
   const mode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
@@ -9356,12 +10192,6 @@ function buildNetworkData(){
 }
 
 async function renderNetworkGraph(){
-  const d3ok = await (D3_READY_PROMISE || ensureD3().catch(() => false));
-  if (!d3ok){
-    setNetworkLoading(false);
-    return;
-  }
-
   const svgEl = document.getElementById('networkSvg');
   const wrap = document.getElementById('networkCanvas');
   const tooltip = document.getElementById('networkTooltip');
@@ -9370,7 +10200,22 @@ async function renderNetworkGraph(){
     return;
   }
 
+  const threeMount = document.getElementById('networkThreeMount');
+  const mode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
+  if (mode === '3d'){
+    await renderNetwork3DView();
+    return;
+  }
+
+  const d3ok = await (D3_READY_PROMISE || ensureD3().catch(() => false));
+  if (!d3ok){
+    setNetworkLoading(false);
+    return;
+  }
+
   disposeNetworkGraph();
+  svgEl.style.display = '';
+  if (threeMount) threeMount.hidden = true;
 
   const { nodes, links } = buildNetworkData();
   if (!nodes.length){
@@ -9392,7 +10237,6 @@ async function renderNetworkGraph(){
   svg.attr('viewBox', `0 0 ${s.w} ${s.h}`);
   svg.selectAll('*').remove();
 
-  const mode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
   const cx = s.w / 2;
   const cy = s.h / 2;
   let zoneAnchors = null;
@@ -10010,7 +10854,15 @@ function setNetworkLoading(isLoading){
 }
 
 function renderNetworkGraphLazy(){
-  setNetworkLoading(true);
+  let needsLoader = true;
+  if (String(NETWORK_FILTER_STATE.profileMode || '') === '3d'){
+    const current = NETWORK_STATE.threeD;
+    const nextSignature = ensureNetwork3DLayoutCache().signature;
+    needsLoader = !(current && current.signature === nextSignature);
+  }
+  if (needsLoader){
+    setNetworkLoading(true);
+  }
   requestAnimationFrame(() => {
     renderNetworkGraph().catch((e) => {
       setNetworkLoading(false);
@@ -10160,6 +11012,33 @@ function renderNetworkModelGraphPanel(model){
     graphHtml = hasDim
       ? renderDimensionesCambioChart(getModelDimensionMap(model), model)
       : `<div class="dim-card"><h4 class="dim-title">Interviene en las siguientes dimensiones</h4><div class="dim-empty">Sin dimensiones definidas.</div></div>`;
+  }else if (mode === '3d'){
+    const pos = ensureNetwork3DLayoutCache().positionsById.get(String(model.id || '')) || { x:0, y:0, z:0 };
+    const neighbors = getNearestNeighbors3D(String(model.id || ''), 5)
+      .map((row) => row.meta?.label || row.id)
+      .filter(Boolean);
+    kicker = 'Espacio 3D';
+    graphHtml = `
+      <div class="grafica-procesos">
+        <h4 class="dim-title">Coordenadas teóricas</h4>
+        <div class="mp-meta" style="margin-bottom:4px">
+          <span class="mp-pill">X ${escapeHtml(Number(pos.x || 0).toFixed(1))}</span>
+          <span class="mp-pill">Y ${escapeHtml(Number(pos.y || 0).toFixed(1))}</span>
+          <span class="mp-pill">Z ${escapeHtml(Number(pos.z || 0).toFixed(1))}</span>
+        </div>
+        <div class="dim-reference" style="margin-top:8px">
+          X = (N + I + RI) - (AG + RF)<br>
+          Y = (AP + RE) - (N + 0.5 · RI)<br>
+          Z = R - (I + RI)
+        </div>
+        <div class="mp-section">
+          <h4 class="dim-title">Vecinos más cercanos</h4>
+          ${neighbors.length
+            ? `<div class="mp-meta">${neighbors.map((name) => `<span class="mp-pill">${escapeHtml(name)}</span>`).join('')}</div>`
+            : `<div class="dim-empty">Sin vecinos disponibles.</div>`}
+        </div>
+      </div>
+    `;
   }else{
     kicker = (mode === 'process') ? 'Procesos' : 'Perfil mixto';
     graphHtml = (hasProc || hasDim)
@@ -10230,6 +11109,7 @@ function renderNetworkModelGraphPanel(model){
       }
       NETWORK_FILTER_STATE.query = '';
       NETWORK_FILTER_STATE.minSimDelta = 0;
+      disposeNetworkGraph();
       modelInfoEl.innerHTML = buildNetworkOverviewHtml();
       hideNetworkModelGraphPanel();
       bindNetworkLegendHandlers();
