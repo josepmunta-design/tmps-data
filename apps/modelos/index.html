@@ -8971,6 +8971,26 @@ function shortZoneLabel(mode, key, label){
   return first.slice(0, 4).toUpperCase();
 }
 
+function getNetworkZoneDefinitions(mode){
+  if (mode === 'process'){
+    return PROCESS_FILTERS.map((p) => ({
+      key: String(p.id || ''),
+      label: `${p.id} · ${p.label}`,
+      color: PROCESS_ZONE_COLORS[p.id] || '#A9B1C5'
+    }));
+  }
+
+  if (mode === 'dimension'){
+    return CHANGE_DIMS.map((d) => ({
+      key: String(d.id || ''),
+      label: String(d.label || d.id || 'Dimensión'),
+      color: CHANGE_DIM_COLORS_BY_ID[d.id] || '#A9B1C5'
+    }));
+  }
+
+  return [];
+}
+
 function createZoneRepelForce(zoneAnchors, mode){
   const anchors = [...(zoneAnchors?.entries?.() || [])].map(([key, pos]) => ({
     key,
@@ -9173,14 +9193,15 @@ async function renderNetworkGraph(){
   let zoneMeta = new Map();
   let zoneRows = [];
   if (mode === 'process' || mode === 'dimension'){
-    const zoneKeys = uniq(nodes.map((n) => String(n.zoneKey || '')).filter(Boolean));
+    const zoneDefs = getNetworkZoneDefinitions(mode);
+    const zoneKeys = zoneDefs.map((z) => z.key).filter(Boolean);
     const radius = Math.max(112, Math.min(s.w, s.h) * 0.39);
     zoneAnchors = new Map();
-    for (const n of nodes){
-      if (!n || !n.zoneKey || zoneMeta.has(n.zoneKey)) continue;
-      zoneMeta.set(n.zoneKey, {
-        label: n.zoneLabel || n.zoneKey,
-        color: n.zoneColor || '#A9B1C5'
+    for (const zone of zoneDefs){
+      if (!zone || !zone.key) continue;
+      zoneMeta.set(zone.key, {
+        label: zone.label || zone.key,
+        color: zone.color || '#A9B1C5'
       });
     }
     zoneKeys.forEach((k, i) => {
