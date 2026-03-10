@@ -1512,6 +1512,12 @@ opacity: .75;
     inset 0 0 0 1px rgba(255,255,255,.06);
 }
 
+.networkCanvas.is-loading #networkSvg{
+  opacity: .28;
+  filter: saturate(.72) blur(.4px);
+  transition: opacity .18s ease, filter .18s ease;
+}
+
 .networkCanvas::before{
   content:"";
   position:absolute;
@@ -1538,6 +1544,60 @@ opacity: .75;
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.networkLoading{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .18s ease, visibility .18s ease;
+  z-index: 2;
+}
+
+.networkCanvas.is-loading .networkLoading{
+  opacity: 1;
+  visibility: visible;
+}
+
+.networkLoadingCard{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(10,16,24,.78);
+  color: rgba(247,251,255,.94);
+  box-shadow:
+    0 16px 36px rgba(0,0,0,.24),
+    inset 0 1px 0 rgba(255,255,255,.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.networkLoadingSpinner{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.18);
+  border-top-color: rgba(255,255,255,.96);
+  animation: networkSpin .75s linear infinite;
+}
+
+.networkLoadingText{
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .24px;
+  text-transform: uppercase;
+}
+
+@keyframes networkSpin{
+  to{ transform: rotate(360deg); }
 }
 
 .networkLegend{
@@ -8968,6 +9028,12 @@ function buildNetworkOverviewHtml(){
       </div>
       <div class="networkCanvas" id="networkCanvas">
         <svg id="networkSvg" aria-label="Red de modelos"></svg>
+        <div class="networkLoading" id="networkLoading" aria-live="polite" aria-hidden="true">
+          <div class="networkLoadingCard">
+            <span class="networkLoadingSpinner" aria-hidden="true"></span>
+            <span class="networkLoadingText">Cargando nodos...</span>
+          </div>
+        </div>
         <div class="networkTooltip" id="networkTooltip"></div>
       </div>
 </div>
@@ -9283,18 +9349,25 @@ function buildNetworkData(){
 
 async function renderNetworkGraph(){
   const d3ok = await (D3_READY_PROMISE || ensureD3().catch(() => false));
-  if (!d3ok) return;
+  if (!d3ok){
+    setNetworkLoading(false);
+    return;
+  }
 
   const svgEl = document.getElementById('networkSvg');
   const wrap = document.getElementById('networkCanvas');
   const tooltip = document.getElementById('networkTooltip');
-  if (!svgEl || !wrap) return;
+  if (!svgEl || !wrap){
+    setNetworkLoading(false);
+    return;
+  }
 
   disposeNetworkGraph();
 
   const { nodes, links } = buildNetworkData();
   if (!nodes.length){
     svgEl.innerHTML = '';
+    setNetworkLoading(false);
     NETWORK_FILTER_STATE.selectedNodeId = '';
     hideNetworkMobileGraphButton();
     hideNetworkModelGraphPanel();
@@ -9888,18 +9961,31 @@ async function renderNetworkGraph(){
     updateSelectedNodeLabel();
   });
   updateSelectionStyles();
+  requestAnimationFrame(() => setNetworkLoading(false));
 
   NETWORK_STATE.sim = sim;
   NETWORK_STATE.resizeHandler = () => {
     if (groupingMode !== 'network') return;
-    renderNetworkGraph().catch(() => {});
+    renderNetworkGraphLazy();
   };
   window.addEventListener('resize', NETWORK_STATE.resizeHandler, { passive:true });
 }
 
+function setNetworkLoading(isLoading){
+  const wrap = document.getElementById('networkCanvas');
+  const loading = document.getElementById('networkLoading');
+  if (!wrap || !loading) return;
+  wrap.classList.toggle('is-loading', !!isLoading);
+  loading.setAttribute('aria-hidden', isLoading ? 'false' : 'true');
+}
+
 function renderNetworkGraphLazy(){
+  setNetworkLoading(true);
   requestAnimationFrame(() => {
-    renderNetworkGraph().catch((e) => console.warn('network graph error', e));
+    renderNetworkGraph().catch((e) => {
+      setNetworkLoading(false);
+      console.warn('network graph error', e);
+    });
   });
 }
 
