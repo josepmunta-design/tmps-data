@@ -1678,6 +1678,37 @@ opacity: .75;
   display:none !important;
 }
 
+.networkMobileGraphCta{
+  position:absolute;
+  left:50%;
+  bottom:18px;
+  z-index:9;
+  transform:translateX(-50%);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:0 18px;
+  border-radius:999px;
+  border:1px solid color-mix(in srgb, var(--schoolColor, #5F7F78) 42%, rgba(255,255,255,.14));
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--schoolColor, #5F7F78) 30%, rgba(255,255,255,.10)), rgba(17,24,34,.90));
+  box-shadow:
+    0 14px 30px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.10);
+  color:#fff;
+  font:inherit;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+.networkMobileGraphCta[hidden]{
+  display:none !important;
+}
+
 .networkModelGraphHead{
   display:flex;
   align-items:flex-start;
@@ -2043,6 +2074,13 @@ body.network-mode .panel.left .schoolSticky.stuck{
     width:auto;
     max-width:none;
     max-height:min(58vh, 520px);
+  }
+  .networkMobileGraphCta{
+    left:10px;
+    right:10px;
+    bottom:10px;
+    width:auto;
+    transform:none;
   }
   .networkTitle{
     font-size: 24px;
@@ -8299,6 +8337,8 @@ function applyNetworkProfileMode(modeKey){
   NETWORK_FILTER_STATE.profileMode = nextMode;
   NETWORK_FILTER_STATE.selectedNodeId = '';
   NETWORK_FILTER_STATE.selectedZoneKey = '';
+  hideNetworkMobileGraphButton();
+  hideNetworkModelGraphPanel();
   renderNetworkSelectionCard(null);
   renderModelsList();
   renderModelInfo(null);
@@ -8327,6 +8367,8 @@ async function handleGroupingModeChange(nextMode){
   if (groupingMode === 'network'){
     NETWORK_FILTER_STATE.selectedNodeId = '';
     NETWORK_FILTER_STATE.selectedZoneKey = '';
+    hideNetworkMobileGraphButton();
+    hideNetworkModelGraphPanel();
     renderNetworkSelectionCard(null);
     renderModelInfo(null);
     renderModelsList();
@@ -8415,6 +8457,8 @@ function renderModelsList(){
   document.body.classList.toggle('network-mode', groupingMode === 'network');
   if (groupingMode !== 'network'){
     NETWORK_FILTER_STATE.selectedZoneKey = '';
+    hideNetworkMobileGraphButton();
+    hideNetworkModelGraphPanel();
     renderNetworkSelectionCard(null);
   }
   syncDesktopLeftListScrollMode();
@@ -9252,6 +9296,8 @@ async function renderNetworkGraph(){
   if (!nodes.length){
     svgEl.innerHTML = '';
     NETWORK_FILTER_STATE.selectedNodeId = '';
+    hideNetworkMobileGraphButton();
+    hideNetworkModelGraphPanel();
     renderNetworkSelectionCard(null);
     return;
   }
@@ -9382,6 +9428,8 @@ async function renderNetworkGraph(){
         const key = String(d.key || '');
         NETWORK_FILTER_STATE.selectedNodeId = '';
         NETWORK_FILTER_STATE.selectedZoneKey = (String(NETWORK_FILTER_STATE.selectedZoneKey || '') === key) ? '' : key;
+        hideNetworkMobileGraphButton();
+        hideNetworkModelGraphPanel();
         updateSelectionStyles();
       });
   }
@@ -9453,6 +9501,8 @@ async function renderNetworkGraph(){
   const idExists = new Set(nodes.map((n) => String(n.id)));
   if (!idExists.has(String(NETWORK_FILTER_STATE.selectedNodeId || ''))){
     NETWORK_FILTER_STATE.selectedNodeId = '';
+    hideNetworkMobileGraphButton();
+    hideNetworkModelGraphPanel();
   }
   const nodeById = new Map(nodes.map((n) => [String(n.id), n]));
 
@@ -9752,7 +9802,13 @@ async function renderNetworkGraph(){
         if (String(NETWORK_FILTER_STATE.selectedNodeId || '') === clickedId){
           const selectedModel = full || base;
           renderNetworkSelectionCard(selectedModel);
-          renderNetworkModelGraphPanel(selectedModel);
+          if (isMobileViewport()){
+            renderNetworkMobileGraphButton(selectedModel);
+            hideNetworkModelGraphPanel();
+          }else{
+            hideNetworkMobileGraphButton();
+            renderNetworkModelGraphPanel(selectedModel);
+          }
         }
       }
     });
@@ -9812,6 +9868,9 @@ async function renderNetworkGraph(){
     if (!NETWORK_FILTER_STATE.selectedNodeId && !NETWORK_FILTER_STATE.selectedZoneKey) return;
     NETWORK_FILTER_STATE.selectedNodeId = '';
     NETWORK_FILTER_STATE.selectedZoneKey = '';
+    hideNetworkMobileGraphButton();
+    hideNetworkModelGraphPanel();
+    renderNetworkSelectionCard(null);
     updateSelectionStyles();
   });
 
@@ -9886,12 +9945,69 @@ function ensureNetworkModelGraphHost(){
   return host;
 }
 
+function ensureNetworkMobileGraphButton(){
+  if (groupingMode !== 'network') return null;
+  const view = document.querySelector('#modelInfo .networkView');
+  if (!view) return null;
+
+  let btn = document.getElementById('networkMobileGraphCta');
+  if (btn && btn.parentElement !== view){
+    btn.remove();
+    btn = null;
+  }
+
+  if (!btn){
+    btn = document.createElement('button');
+    btn.type = 'button';
+    btn.id = 'networkMobileGraphCta';
+    btn.className = 'networkMobileGraphCta';
+    btn.hidden = true;
+    btn.textContent = 'abrir graph';
+    view.appendChild(btn);
+  }
+
+  if (!btn.dataset.bound){
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', async () => {
+      const key = String(btn.getAttribute('data-id') || '').trim();
+      if (!key || groupingMode !== 'network') return;
+      const base = getAllModelsPool().find((m) => String(m?.id || '').trim() === key);
+      if (!base) return;
+      const full = await ensureModelFull(base).catch(() => base);
+      const selectedModel = full || base;
+      renderNetworkModelGraphPanel(selectedModel);
+      hideNetworkMobileGraphButton();
+    });
+  }
+
+  return btn;
+}
+
 function hideNetworkModelGraphPanel(){
   const host = document.getElementById('networkModelGraphPanel');
   if (!host) return;
   host.hidden = true;
   host.innerHTML = '';
   host.style.removeProperty('--schoolColor');
+}
+
+function hideNetworkMobileGraphButton(){
+  const btn = document.getElementById('networkMobileGraphCta');
+  if (!btn) return;
+  btn.hidden = true;
+  btn.removeAttribute('data-id');
+  btn.style.removeProperty('--schoolColor');
+}
+
+function renderNetworkMobileGraphButton(model){
+  const btn = ensureNetworkMobileGraphButton();
+  if (!btn || !model || !model.id || groupingMode !== 'network' || !isMobileViewport()){
+    hideNetworkMobileGraphButton();
+    return;
+  }
+  btn.hidden = false;
+  btn.setAttribute('data-id', String(model.id));
+  btn.style.setProperty('--schoolColor', colorForSchoolLabel(model.grupo));
 }
 
 function bindNetworkModelGraphPanel(host){
@@ -9902,6 +10018,7 @@ function bindNetworkModelGraphPanel(host){
     if (!closeBtn) return;
     NETWORK_FILTER_STATE.selectedNodeId = '';
     renderNetworkSelectionCard(null);
+    hideNetworkMobileGraphButton();
     hideNetworkModelGraphPanel();
     try{ renderNetworkGraphLazy(); }catch(e){}
   });
@@ -9937,6 +10054,7 @@ function renderNetworkModelGraphPanel(model){
   const meta = [model.autores || '', model.grupo || '', model.year || ''].filter(Boolean).join(' · ');
 
   host.hidden = false;
+  hideNetworkMobileGraphButton();
   host.style.setProperty('--schoolColor', schoolColor);
   host.innerHTML = `
     <div class="networkModelGraphHead">
