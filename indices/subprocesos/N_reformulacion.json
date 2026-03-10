@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_reformulacion",
-  "updatedAt": "2026-03-07T20:48:38.871Z",
-  "totalModelos": 108,
+  "updatedAt": "2026-03-10T08:19:05.354Z",
+  "totalModelos": 110,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -2080,6 +2080,22 @@
       ]
     },
     {
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_internalizacion_transmutadora",
+          "nombre": "Internalización transmutadora",
+          "texto": "Procedimiento evolutivo mediante el cual funciones selfobject inicialmente proporcionadas por el terapeuta son progresivamente internalizadas por el paciente, dando lugar a mayor cohesión, autonomía y estabilidad del self (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "psicoterapia-grupos-operativos-pichon-riviere-1958",
       "modelLabel": "Psicoterapia de grupos operativos",
       "modelGrupo": "Psicoanálisis",
@@ -2097,6 +2113,36 @@
           "codigo": "m_pichon_campo_total",
           "nombre": "Interpretación al campo total",
           "texto": "Formulación breve dirigida al grupo como totalidad, integrando distintos comportamientos en una lectura unificada del momento grupal. Esta intervención evita focalización excesiva en individuos y fortalece la percepción del grupo como sistema productor de sentido. Referencia: Pichon-Rivière, E. (1971).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_foco_dinamico",
+          "nombre": "Formulación temprana del foco dinámico",
+          "texto": "Procedimiento central que consiste en identificar desde las primeras sesiones un conflicto nuclear que articula síntomas, emociones, defensas y patrones relacionales, formulándolo de manera clara y compartida para orientar todo el tratamiento; esta focalización permite intensificar el trabajo terapéutico sin dispersión y aumentar la eficacia del tiempo limitado (Mann, 1973, *Time-Limited Psychotherapy*; Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_spb_ccrt",
+          "nombre": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+          "texto": "Procedimiento específico del modelo de Luborsky que formula el conflicto relacional central en términos de deseos del self, respuestas esperadas de los otros y respuestas del self, permitiendo una conceptualización operativa del patrón inconsciente que guía intervenciones interpretativas consistentes (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_spb_nombrar_foco",
+          "nombre": "Nombrar el foco dinámico en el aquí-ahora",
+          "texto": "Microintervención que recuerda explícitamente cómo lo que está ocurriendo en la sesión se relaciona con el foco dinámico acordado, ayudando al paciente a mantener orientación y a reconocer la repetición del conflicto nuclear en tiempo real (Mann, 1973, *Time-Limited Psychotherapy*).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }

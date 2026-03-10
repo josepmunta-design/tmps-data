@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_profundizacion",
-  "updatedAt": "2026-03-07T20:48:38.871Z",
-  "totalModelos": 37,
+  "updatedAt": "2026-03-10T08:19:05.354Z",
+  "totalModelos": 39,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -815,6 +815,29 @@
       ]
     },
     {
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_fragmentacion",
+          "nombre": "Trabajo con fragmentación del self",
+          "texto": "Procedimiento orientado a sostener estados de desorganización, vacío o colapso narcisista sin interpretarlos como resistencia, priorizando la contención empática hasta que el self recupere cohesión suficiente para elaborar la experiencia (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kohut_colapso_narcisista",
+          "nombre": "Acompañar colapso narcisista",
+          "texto": "Intervención breve que prioriza sostén y presencia empática cuando aparece vergüenza intensa, vacío o desesperanza, evitando interpretaciones que aumentarían la fragmentación del self (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "psicoterapia-grupos-operativos-pichon-riviere-1958",
       "modelLabel": "Psicoterapia de grupos operativos",
       "modelGrupo": "Psicoanálisis",
@@ -832,6 +855,36 @@
           "codigo": "m_pichon_acting",
           "nombre": "Señalar acting-out",
           "texto": "Identificación puntual de conductas impulsivas o desorganizadoras como intentos de evitar una emoción o conflicto emergente. Al nombrar el acting-out sin juicio, se facilita su transformación en material elaborable, promoviendo paso de acción a pensamiento. Referencia: Pichon-Rivière, E. (1971).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_foco_dinamico",
+          "nombre": "Formulación temprana del foco dinámico",
+          "texto": "Procedimiento central que consiste en identificar desde las primeras sesiones un conflicto nuclear que articula síntomas, emociones, defensas y patrones relacionales, formulándolo de manera clara y compartida para orientar todo el tratamiento; esta focalización permite intensificar el trabajo terapéutico sin dispersión y aumentar la eficacia del tiempo limitado (Mann, 1973, *Time-Limited Psychotherapy*; Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_spb_activacion_emocional",
+          "nombre": "Activación emocional controlada",
+          "texto": "Procedimiento que busca intensificar el contacto con afectos centrales del conflicto (rabia, culpa, tristeza, miedo) de forma dosificada, promoviendo experiencia emocional correctiva sin desbordar la capacidad reguladora del paciente (Davanloo, 2000, *Intensive Short-Term Dynamic Psychotherapy*).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_spb_anclar_afecto",
+          "nombre": "Anclar interpretación a un afecto presente",
+          "texto": "Microintervención que vincula cualquier interpretación al afecto observable en el momento, aumentando la probabilidad de insight emocional y evitando una comprensión meramente intelectual (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
           "sub": "AP_profundizacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_insightPsicodinamico",
-  "updatedAt": "2026-03-07T20:48:38.871Z",
-  "totalModelos": 23,
+  "updatedAt": "2026-03-10T08:19:05.354Z",
+  "totalModelos": 25,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -668,6 +668,22 @@
       ]
     },
     {
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "p_hartmann_funciones_autonomas",
+          "nombre": "Clarificación y fortalecimiento de funciones autónomas",
+          "texto": "Trabajo clínico centrado en identificar, entrenar y consolidar funciones del yo relativamente libres de conflicto —como atención, pensamiento lógico, lenguaje y planificación— para mejorar la adaptación y reducir la dependencia de defensas rígidas.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "psicoterapia-grupos-operativos-pichon-riviere-1958",
       "modelLabel": "Psicoterapia de grupos operativos",
       "modelGrupo": "Psicoanálisis",
@@ -685,6 +701,43 @@
           "codigo": "m_pichon_nombrar_emergente",
           "nombre": "Nombrar el emergente",
           "texto": "Intervención breve que consiste en poner en palabras un fenómeno latente que se manifiesta en el clima grupal —tensión, miedo, rivalidad, desconfianza— sin personalizarlo en un miembro concreto. Al simbolizar el emergente, se transforma una vivencia difusa en contenido pensable, disminuyendo acting-out y facilitando elaboración colectiva. Referencia: Pichon-Rivière, E. (1971).",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_transferencia_temprana",
+          "nombre": "Trabajo intensivo con la transferencia temprana",
+          "texto": "Procedimiento que aborda la transferencia desde las primeras sesiones, interpretando cómo el conflicto nuclear se reactiva en la relación terapéutica actual, permitiendo que el paciente observe en vivo sus expectativas, defensas y respuestas emocionales habituales (Strupp & Binder, 1984, *Psychotherapy in a New Key*).",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_spb_interpretacion_focal",
+          "nombre": "Interpretación focal y selectiva",
+          "texto": "Procedimiento interpretativo que prioriza intervenciones directamente vinculadas al foco dinámico, evitando exploraciones laterales, con el fin de concentrar insight emocional y facilitar cambios estructurales dentro del tiempo limitado (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_spb_defensas_predominantes",
+          "nombre": "Trabajo activo con defensas predominantes",
+          "texto": "Procedimiento dirigido a identificar y señalar defensas que interfieren con el contacto emocional —intelectualización, evitación, racionalización— mostrando su función protectora y su relación con el conflicto nuclear, sin desmontarlas prematuramente (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_spb_emocion_vs_defensa",
+          "nombre": "Diferenciar emoción primaria de defensa secundaria",
+          "texto": "Intervención breve que ayuda a distinguir entre el afecto central del conflicto y las reacciones defensivas que lo cubren, facilitando un contacto emocional más directo y transformador (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
           "sub": "N_insightPsicodinamico",
           "tipo": "micro"
         }

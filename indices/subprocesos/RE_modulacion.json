@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-03-07T20:48:38.871Z",
-  "totalModelos": 122,
+  "updatedAt": "2026-03-10T08:19:05.354Z",
+  "totalModelos": 125,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -3264,6 +3264,66 @@
       ]
     },
     {
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_espejamiento",
+          "nombre": "Espejamiento empático del self",
+          "texto": "Intervención que valida y refleja la experiencia subjetiva del paciente —logros, sufrimiento, aspiraciones— facilitando la consolidación de una autoestima estable y reduciendo la necesidad de grandiosidad defensiva (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kohut_fallas_empaticas",
+          "nombre": "Detección y elaboración de fallas empáticas",
+          "texto": "Procedimiento que aborda las inevitables fallas empáticas del terapeuta como oportunidades terapéuticas, explicitándolas y reparándolas para favorecer la internalización de funciones de autorregulación del self (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kohut_frustracion_optima",
+          "nombre": "Frustración óptima",
+          "texto": "Intervención que introduce límites y desilusiones graduales dentro de una relación empáticamente sostenida, permitiendo que el self internalice funciones reguladoras sin fragmentarse ni retraumatizarse (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kohut_micro_falla_empatica",
+          "nombre": "Detectar micro-falla empática",
+          "texto": "Intervención mínima que reconoce un desajuste empático incipiente —tono, timing, incomprensión— antes de que produzca retraimiento o rabia narcisista, facilitando reparación temprana (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kohut_frustracion_optima_micro",
+          "nombre": "Promover frustración óptima en micro-dosis",
+          "texto": "Intervención breve que introduce una pequeña desilusión dentro de un contexto empático seguro, facilitando la transición desde dependencia selfobject hacia mayor autonomía sin desorganización (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "m_hartmann_emocion_vs_accion",
+          "nombre": "Diferenciar emoción de acción",
+          "texto": "Intervención breve que separa lo que se siente de lo que se hace, reforzando el control de impulsos y la capacidad del yo para elegir respuestas más adaptativas.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "psicoterapia-grupos-operativos-pichon-riviere-1958",
       "modelLabel": "Psicoterapia de grupos operativos",
       "modelGrupo": "Psicoanálisis",
@@ -3281,6 +3341,57 @@
           "codigo": "m_pichon_paranoide",
           "nombre": "Señalar fantasía paranoide colectiva",
           "texto": "Identificación breve de percepciones grupales de amenaza, persecución o desconfianza como manifestaciones de ansiedad paranoide básica. Al nombrarla, el coordinador facilita que el grupo la reconozca como estado emocional compartido y no como peligro real, permitiendo elaboración progresiva. Referencia: Pichon-Rivière, E. (1971).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_limite_temporal",
+          "nombre": "Uso activo del límite temporal",
+          "texto": "Procedimiento que utiliza explícitamente la duración limitada del tratamiento como herramienta terapéutica, activando emociones relacionadas con pérdida, urgencia y compromiso, y facilitando la emergencia temprana del conflicto nuclear tanto en la transferencia como en la vida del paciente (Mann, 1973, *Time-Limited Psychotherapy*).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_spb_transferencia_temprana",
+          "nombre": "Trabajo intensivo con la transferencia temprana",
+          "texto": "Procedimiento que aborda la transferencia desde las primeras sesiones, interpretando cómo el conflicto nuclear se reactiva en la relación terapéutica actual, permitiendo que el paciente observe en vivo sus expectativas, defensas y respuestas emocionales habituales (Strupp & Binder, 1984, *Psychotherapy in a New Key*).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_spb_expresivo_soporte",
+          "nombre": "Equilibrio entre intervenciones expresivas y de sostén",
+          "texto": "Procedimiento que combina confrontación e interpretación con intervenciones de apoyo emocional, ajustando el nivel de intensidad para mantener al paciente dentro de una ventana de tolerancia que permita trabajar afectos intensos sin desorganización (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_spb_activacion_emocional",
+          "nombre": "Activación emocional controlada",
+          "texto": "Procedimiento que busca intensificar el contacto con afectos centrales del conflicto (rabia, culpa, tristeza, miedo) de forma dosificada, promoviendo experiencia emocional correctiva sin desbordar la capacidad reguladora del paciente (Davanloo, 2000, *Intensive Short-Term Dynamic Psychotherapy*).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_spb_tiempo_activador",
+          "nombre": "Usar el tiempo limitado como activador emocional",
+          "texto": "Microintervención que recuerda la finitud del proceso terapéutico cuando es clínicamente pertinente, activando emociones de pérdida, urgencia o compromiso que suelen estar ligadas al conflicto nuclear (Mann, 1973, *Time-Limited Psychotherapy*).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_spb_regular_intensidad",
+          "nombre": "Regular intensidad emocional en el momento",
+          "texto": "Intervención breve orientada a bajar o sostener la intensidad emocional para mantener el trabajo dentro de una ventana de tolerancia que permita insight sin desorganización (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

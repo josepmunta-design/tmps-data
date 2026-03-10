@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ALI_rupturaReparacion",
-  "updatedAt": "2026-03-07T20:48:38.871Z",
-  "totalModelos": 12,
+  "updatedAt": "2026-03-10T08:19:05.354Z",
+  "totalModelos": 13,
   "modelos": [
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
@@ -161,6 +161,29 @@
           "codigo": "m_relacional_error",
           "nombre": "Reconocer un error terapéutico",
           "texto": "Intervención breve en la que el terapeuta reconoce explícitamente un error, malentendido o intervención desafinada, mostrando responsabilidad relacional. Tiene un potente efecto reparador y modela una forma no defensiva de afrontar el conflicto interpersonal. Referencia: Safran & Muran (2000).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_fallas_empaticas",
+          "nombre": "Detección y elaboración de fallas empáticas",
+          "texto": "Procedimiento que aborda las inevitables fallas empáticas del terapeuta como oportunidades terapéuticas, explicitándolas y reparándolas para favorecer la internalización de funciones de autorregulación del self (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kohut_reparar_falla",
+          "nombre": "Reparar explícitamente una falla empática",
+          "texto": "Microintervención que nombra y repara una falla empática reconociendo el impacto en el paciente, promoviendo internalización de funciones reguladoras y fortaleciendo la confianza en el vínculo (Kohut, 1971, *The Analysis of the Self*).",
           "sub": "ALI_rupturaReparacion",
           "tipo": "micro"
         }

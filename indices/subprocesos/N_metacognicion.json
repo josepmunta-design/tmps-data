@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-03-07T20:48:38.871Z",
-  "totalModelos": 130,
+  "updatedAt": "2026-03-10T08:19:05.354Z",
+  "totalModelos": 133,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -4585,6 +4585,80 @@
       ]
     },
     {
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_deficits_self",
+          "nombre": "Identificación de déficits del self",
+          "texto": "Procedimiento diagnóstico-clínico que evalúa fallas tempranas en las funciones selfobject —espejamiento, idealización y gemelaridad— responsables de fragmentación, vacío o hipersensibilidad narcisista, desplazando el foco del conflicto reprimido al déficit del desarrollo (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kohut_narcisismo_saludable",
+          "nombre": "Diferenciación entre narcisismo saludable y patológico",
+          "texto": "Procedimiento psicoeducativo-clínico que ayuda a distinguir aspiraciones, ambición y autoestima saludables de defensas narcisistas rígidas, reduciendo culpa y promoviendo una autoimagen más integrada (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kohut_verguenza_vs_culpa",
+          "nombre": "Diferenciar vergüenza narcisista de culpa",
+          "texto": "Microintervención que ayuda a distinguir la vergüenza por fragmentación del self de la culpa por daño al otro, reduciendo autoataque y favoreciendo una regulación emocional más matizada (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "p_hartmann_eval_yo",
+          "nombre": "Evaluación estructural del yo",
+          "texto": "Procedimiento sistemático de evaluación clínica del nivel de funcionamiento del yo, incluyendo prueba de realidad, tolerancia a la frustración, control de impulsos, capacidad reflexiva y flexibilidad defensiva; esta evaluación guía el tipo y la intensidad de las intervenciones para evitar desorganización y promover adaptación progresiva.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_hartmann_defensas_funcionales",
+          "nombre": "Análisis funcional de defensas del yo",
+          "texto": "Procedimiento que examina las defensas no como patología en sí mismas, sino como intentos adaptativos del yo para manejar tensiones; se evalúa su adecuación al contexto y se promueve una transición hacia defensas más maduras y flexibles.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_hartmann_prueba_realidad",
+          "nombre": "Orientación a la realidad y prueba de realidad",
+          "texto": "Intervención dirigida a fortalecer la capacidad del paciente para discriminar entre fantasía, emoción y hechos externos, facilitando decisiones más ajustadas y una relación menos distorsionada con el entorno.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_hartmann_nombrar_funcion_yo",
+          "nombre": "Nombrar función del yo implicada",
+          "texto": "Microintervención que identifica explícitamente qué función del yo está fallando o siendo exigida en una situación concreta (juicio, control de impulsos, atención), ayudando al paciente a observar su funcionamiento sin vivirse defectuoso.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_hartmann_defensa_util_costosa",
+          "nombre": "Señalar defensa útil vs defensa costosa",
+          "texto": "Microintervención que ayuda a evaluar cuándo una defensa cumple una función adaptativa y cuándo empieza a generar más problemas que soluciones, promoviendo flexibilidad sin desactivar prematuramente protecciones necesarias.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "psicoterapia-grupos-operativos-pichon-riviere-1958",
       "modelLabel": "Psicoterapia de grupos operativos",
       "modelGrupo": "Psicoanálisis",
@@ -4609,6 +4683,36 @@
           "codigo": "m_pichon_resistencia",
           "nombre": "Invitar a reflexión sobre resistencia al aprendizaje",
           "texto": "Microintervención que formula preguntas o señalamientos sobre la dificultad del grupo para aprender de la experiencia actual, ayudando a identificar defensas colectivas frente al cambio. Esta invitación a la metarreflexión transforma la resistencia en objeto de análisis y no en obstáculo inconsciente. Referencia: Quiroga, A. (1986).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_patron_relacional",
+          "nombre": "Identificación del patrón relacional repetitivo",
+          "texto": "Procedimiento orientado a detectar la repetición de un mismo patrón relacional a través de distintas relaciones pasadas y presentes, incluyendo la relación terapéutica, mostrando cómo expectativas, emociones y respuestas del paciente tienden a organizarse de forma predecible en torno al conflicto nuclear (Luborsky, 1984, *Principles of Psychoanalytic Psychotherapy*).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_spb_cierre_integrado",
+          "nombre": "Cierre terapéutico integrado",
+          "texto": "Procedimiento final que revisa el foco trabajado, los cambios logrados y los patrones aún activos, integrando la experiencia terapéutica como parte de la narrativa del self y elaborando la separación como una experiencia emocional significativa (Mann, 1973, *Time-Limited Psychotherapy*).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_spb_consolidar_insight",
+          "nombre": "Consolidar insight con ejemplo concreto",
+          "texto": "Microintervención que traduce un insight emergente en un ejemplo concreto de la vida cotidiana del paciente, favoreciendo integración y generalización del cambio (Malan, 1976, *Toward the Validation of Dynamic Psychotherapy*).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_reapreciacion",
-  "updatedAt": "2026-03-07T20:48:38.871Z",
-  "totalModelos": 24,
+  "updatedAt": "2026-03-10T08:19:05.354Z",
+  "totalModelos": 26,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -414,6 +414,45 @@
           "codigo": "m_neopsy_amor_vs_fusion",
           "nombre": "Distinguir amor de fusión ansiosa",
           "texto": "Intervención breve que diferencia cuidado y respeto de la necesidad de calmar ansiedad mediante control o dependencia, apoyando vínculos más recíprocos.",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_narcisismo_saludable",
+          "nombre": "Diferenciación entre narcisismo saludable y patológico",
+          "texto": "Procedimiento psicoeducativo-clínico que ayuda a distinguir aspiraciones, ambición y autoestima saludables de defensas narcisistas rígidas, reduciendo culpa y promoviendo una autoimagen más integrada (Kohut, 1971, *The Analysis of the Self*).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kohut_verguenza_vs_culpa",
+          "nombre": "Diferenciar vergüenza narcisista de culpa",
+          "texto": "Microintervención que ayuda a distinguir la vergüenza por fragmentación del self de la culpa por daño al otro, reduciendo autoataque y favoreciendo una regulación emocional más matizada (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "m_hartmann_defensa_util_costosa",
+          "nombre": "Señalar defensa útil vs defensa costosa",
+          "texto": "Microintervención que ayuda a evaluar cuándo una defensa cumple una función adaptativa y cuándo empieza a generar más problemas que soluciones, promoviendo flexibilidad sin desactivar prematuramente protecciones necesarias.",
           "sub": "RE_reapreciacion",
           "tipo": "micro"
         }

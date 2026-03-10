@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-03-07T20:48:38.871Z",
-  "totalModelos": 99,
+  "updatedAt": "2026-03-10T08:19:05.354Z",
+  "totalModelos": 102,
   "modelos": [
     {
       "modelId": "medicina-tradicional-china-psicoemocional-1950",
@@ -2079,6 +2079,45 @@
       ]
     },
     {
+      "modelId": "psicologia-self-kohut",
+      "modelLabel": "Psicología del self",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Kohut",
+      "modelYear": 1971,
+      "items": [
+        {
+          "codigo": "p_kohut_frustracion_optima",
+          "nombre": "Frustración óptima",
+          "texto": "Intervención que introduce límites y desilusiones graduales dentro de una relación empáticamente sostenida, permitiendo que el self internalice funciones reguladoras sin fragmentarse ni retraumatizarse (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_kohut_frustracion_optima_micro",
+          "nombre": "Promover frustración óptima en micro-dosis",
+          "texto": "Intervención breve que introduce una pequeña desilusión dentro de un contexto empático seguro, facilitando la transición desde dependencia selfobject hacia mayor autonomía sin desorganización (Kohut, 1977, *The Restoration of the Self*).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicologia-yo-hartmann",
+      "modelLabel": "Psicología del yo",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Heinz Hartmann; Ernst Kris; Rudolph Loewenstein",
+      "modelYear": 1939,
+      "items": [
+        {
+          "codigo": "p_hartmann_prueba_realidad",
+          "nombre": "Orientación a la realidad y prueba de realidad",
+          "texto": "Intervención dirigida a fortalecer la capacidad del paciente para discriminar entre fantasía, emoción y hechos externos, facilitando decisiones más ajustadas y una relación menos distorsionada con el entorno.",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "psicoterapia-grupos-operativos-pichon-riviere-1958",
       "modelLabel": "Psicoterapia de grupos operativos",
       "modelGrupo": "Psicoanálisis",
@@ -2089,6 +2128,36 @@
           "codigo": "m_pichon_devolver_grupo",
           "nombre": "Devolver la palabra al grupo",
           "texto": "Microintervención mediante la cual el coordinador evita responder directamente a una demanda individual y la devuelve al conjunto, invitando a que el grupo piense y responda. Esta maniobra reduce dependencia del coordinador como autoridad y fortalece la autorregulación colectiva, promoviendo responsabilidad compartida en la elaboración del conflicto. Referencia: Pichon-Rivière, E. (1985).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Lester Luborsky; James Mann; Hans Strupp; Peter Sifneos; Habib Davanloo",
+      "modelYear": 1970,
+      "items": [
+        {
+          "codigo": "p_spb_limite_temporal",
+          "nombre": "Uso activo del límite temporal",
+          "texto": "Procedimiento que utiliza explícitamente la duración limitada del tratamiento como herramienta terapéutica, activando emociones relacionadas con pérdida, urgencia y compromiso, y facilitando la emergencia temprana del conflicto nuclear tanto en la transferencia como en la vida del paciente (Mann, 1973, *Time-Limited Psychotherapy*).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_spb_cierre_integrado",
+          "nombre": "Cierre terapéutico integrado",
+          "texto": "Procedimiento final que revisa el foco trabajado, los cambios logrados y los patrones aún activos, integrando la experiencia terapéutica como parte de la narrativa del self y elaborando la separación como una experiencia emocional significativa (Mann, 1973, *Time-Limited Psychotherapy*).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_spb_cierre_foco",
+          "nombre": "Cerrar sesión reforzando continuidad del foco",
+          "texto": "Intervención de cierre que resume el avance del trabajo sobre el foco dinámico y refuerza la continuidad del proceso entre sesiones, manteniendo activado el aprendizaje emocional (Mann, 1973, *Time-Limited Psychotherapy*).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }
