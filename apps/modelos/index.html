@@ -1548,6 +1548,27 @@ opacity: .75;
   pointer-events: auto;
 }
 
+.networkControlsBar{
+  display:none;
+  margin-top:10px;
+  gap:8px;
+  pointer-events:auto;
+}
+
+.networkControl{
+  flex:1 1 0;
+  min-width:0;
+}
+
+.networkControl select{
+  width:100%;
+  height:38px;
+  padding:8px 34px 8px 12px;
+  border-radius:12px;
+  font-size:12px;
+  font-weight:800;
+}
+
 .networkLegend .chip{
   display: inline-flex;
   align-items: center;
@@ -2007,6 +2028,10 @@ body.network-mode .panel.left .schoolSticky.stuck{
   .networkView{
     min-height: auto;
   }
+  .networkControlsBar{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  }
   .networkCanvas{
     height: 56vh;
   }
@@ -2026,6 +2051,17 @@ body.network-mode .panel.left .schoolSticky.stuck{
     top: 10px;
     left: 10px;
     right: 10px;
+  }
+  body.network-mode .panel.left{
+    display:none !important;
+  }
+  body.network-mode .networkLegend{
+    gap:6px;
+  }
+  body.network-mode .networkLegend .chip{
+    min-height:32px;
+    padding:5px 9px;
+    font-size:10.5px;
   }
   body.network-mode .networkTip{
     left: 10px;
@@ -5285,6 +5321,15 @@ body.theme-light .landingOverlay{
   background: rgba(239,245,252,.72);
 }
 
+body.theme-light .networkControlsBar select{
+  background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(241,247,255,.90));
+  border:1px solid rgba(118,129,153,.24);
+  color:#1a1d24;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.99),
+    0 8px 20px rgba(28,47,79,.10);
+}
+
 body.theme-light .landingCard{
   background: rgba(255,255,255,.84);
   border:1px solid rgba(118,129,153,.18);
@@ -8244,6 +8289,83 @@ function syncGroupingTargetOptions(){
   groupTargetWrapEl.hidden = false;
 }
 
+function applyNetworkProfileMode(modeKey){
+  const nextMode = (modeKey === 'process' || modeKey === 'dimension' || modeKey === 'mixed')
+    ? modeKey
+    : 'mixed';
+
+  if (nextMode === String(NETWORK_FILTER_STATE.profileMode || 'mixed')) return;
+
+  NETWORK_FILTER_STATE.profileMode = nextMode;
+  NETWORK_FILTER_STATE.selectedNodeId = '';
+  NETWORK_FILTER_STATE.selectedZoneKey = '';
+  renderNetworkSelectionCard(null);
+  renderModelsList();
+  renderModelInfo(null);
+}
+
+async function handleGroupingModeChange(nextMode){
+  groupingMode = String(nextMode || 'school');
+  if (groupBySelectEl) groupBySelectEl.value = groupingMode;
+  syncGroupingTargetOptions();
+  currentModelId = null;
+  setMobileModelPanelLowered(false);
+
+  if (groupingMode === 'school'){
+    const nextSchool = String(groupTargetSelectEl?.value || currentSchool || '').trim();
+    if (nextSchool){
+      schoolSelect.value = nextSchool;
+      schoolSelect.dispatchEvent(new Event('change', { bubbles:true }));
+    }else{
+      renderSchoolInfo(currentSchool);
+      renderModelsList();
+    }
+    resetRightPanelToTop();
+    return;
+  }
+
+  if (groupingMode === 'network'){
+    NETWORK_FILTER_STATE.selectedNodeId = '';
+    NETWORK_FILTER_STATE.selectedZoneKey = '';
+    renderNetworkSelectionCard(null);
+    renderModelInfo(null);
+    renderModelsList();
+    resetRightPanelToTop();
+    await ensureModelsHydratedForGrouping();
+    renderModelsList();
+    renderModelInfo(null);
+    return;
+  }
+
+  renderModelInfo(null);
+  renderModelsList();
+  resetRightPanelToTop();
+  await ensureModelsHydratedForGrouping();
+  renderModelsList();
+}
+
+async function handleGroupingTargetChange(nextTarget){
+  groupingTarget = String(nextTarget || '').trim();
+  if (groupTargetSelectEl) groupTargetSelectEl.value = groupingTarget;
+
+  if (groupingMode === 'network'){
+    return;
+  }
+  if (groupingMode === 'school'){
+    if (groupingTarget){
+      schoolSelect.value = groupingTarget;
+      schoolSelect.dispatchEvent(new Event('change', { bubbles:true }));
+    }
+    return;
+  }
+  currentModelId = null;
+  renderModelInfo(null);
+  renderModelsList();
+  await ensureModelsHydratedForGrouping();
+  renderModelsList();
+  resetRightPanelToTop();
+}
+
 function setupGroupingControls(){
   if (!groupBySelectEl || groupBySelectEl.__bound) return;
   groupBySelectEl.__bound = true;
@@ -8252,64 +8374,13 @@ function setupGroupingControls(){
   syncGroupingTargetOptions();
 
   groupBySelectEl.addEventListener('change', async () => {
-    groupingMode = String(groupBySelectEl.value || 'school');
-    syncGroupingTargetOptions();
-    currentModelId = null;
-    setMobileModelPanelLowered(false);
-
-    if (groupingMode === 'school'){
-      const nextSchool = String(groupTargetSelectEl?.value || currentSchool || '').trim();
-      if (nextSchool){
-        schoolSelect.value = nextSchool;
-        schoolSelect.dispatchEvent(new Event('change', { bubbles:true }));
-      }else{
-        renderSchoolInfo(currentSchool);
-        renderModelsList();
-      }
-      resetRightPanelToTop();
-      return;
-    }
-
-    if (groupingMode === 'network'){
-      NETWORK_FILTER_STATE.selectedNodeId = '';
-      NETWORK_FILTER_STATE.selectedZoneKey = '';
-      renderNetworkSelectionCard(null);
-      renderModelInfo(null);
-      renderModelsList();
-      resetRightPanelToTop();
-      await ensureModelsHydratedForGrouping();
-      renderModelsList();
-      renderModelInfo(null);
-      return;
-    }
-
-    renderModelInfo(null);
-    renderModelsList();
-    resetRightPanelToTop();
-    await ensureModelsHydratedForGrouping();
-    renderModelsList();
+    await handleGroupingModeChange(groupBySelectEl.value || 'school');
   });
 
   if (groupTargetSelectEl && !groupTargetSelectEl.__bound){
     groupTargetSelectEl.__bound = true;
     groupTargetSelectEl.addEventListener('change', async () => {
-      groupingTarget = String(groupTargetSelectEl.value || '').trim();
-      if (groupingMode === 'network'){
-        return;
-      }
-      if (groupingMode === 'school'){
-        if (groupingTarget){
-          schoolSelect.value = groupingTarget;
-          schoolSelect.dispatchEvent(new Event('change', { bubbles:true }));
-        }
-        return;
-      }
-      currentModelId = null;
-      renderModelInfo(null);
-      renderModelsList();
-      await ensureModelsHydratedForGrouping();
-      renderModelsList();
-      resetRightPanelToTop();
+      await handleGroupingTargetChange(groupTargetSelectEl.value || '');
     });
   }
 }
@@ -8505,15 +8576,7 @@ return `
 
   const modeKey = String(item.getAttribute('data-network-mode') || '').trim();
   if (groupingMode === 'network' && modeKey){
-    if (modeKey === NETWORK_FILTER_STATE.profileMode) return;
-    NETWORK_FILTER_STATE.profileMode = (modeKey === 'process' || modeKey === 'dimension' || modeKey === 'mixed')
-      ? modeKey
-      : 'mixed';
-    NETWORK_FILTER_STATE.selectedNodeId = '';
-    NETWORK_FILTER_STATE.selectedZoneKey = '';
-    renderNetworkSelectionCard(null);
-    renderModelsList();
-    renderModelInfo(null);
+    applyNetworkProfileMode(modeKey);
     return;
   }
 
@@ -8842,6 +8905,22 @@ function buildNetworkOverviewHtml(){
     <div class="networkView">
       <div class="networkHeader">
         <div class="networkLegend">${legends}${resetLegend}</div>
+        <div class="networkControlsBar">
+          <div class="networkControl">
+            <select id="networkGroupBySelect" aria-label="Vista actual">
+              <option value="school">Escuelas</option>
+              <option value="process">Procesos</option>
+              <option value="dimension">Dimensiones</option>
+              <option value="network" selected>Vista red</option>
+            </select>
+          </div>
+          <div class="networkControl">
+            <select id="networkProfileModeSelect" aria-label="Modo del grafo">
+              <option value="process" ${String(NETWORK_FILTER_STATE.profileMode || 'mixed') === 'process' ? 'selected' : ''}>Procesos</option>
+              <option value="dimension" ${String(NETWORK_FILTER_STATE.profileMode || 'mixed') === 'dimension' ? 'selected' : ''}>Dimensiones</option>
+            </select>
+          </div>
+        </div>
       </div>
       <div class="networkCanvas" id="networkCanvas">
         <svg id="networkSvg" aria-label="Red de modelos"></svg>
@@ -9765,6 +9844,26 @@ function renderNetworkGraphLazy(){
   });
 }
 
+function bindNetworkCompactControls(){
+  const viewSelect = document.getElementById('networkGroupBySelect');
+  if (viewSelect && viewSelect.dataset.bound !== '1'){
+    viewSelect.dataset.bound = '1';
+    viewSelect.value = groupingMode;
+    viewSelect.addEventListener('change', async () => {
+      await handleGroupingModeChange(viewSelect.value || 'network');
+    });
+  }
+
+  const modeSelect = document.getElementById('networkProfileModeSelect');
+  if (modeSelect && modeSelect.dataset.bound !== '1'){
+    modeSelect.dataset.bound = '1';
+    modeSelect.value = String(NETWORK_FILTER_STATE.profileMode || 'process');
+    modeSelect.addEventListener('change', () => {
+      applyNetworkProfileMode(modeSelect.value || 'process');
+    });
+  }
+}
+
 function ensureNetworkModelGraphHost(){
   if (groupingMode !== 'network') return null;
   const view = document.querySelector('#modelInfo .networkView');
@@ -9900,6 +9999,7 @@ function renderNetworkModelGraphPanel(model){
       modelInfoEl.innerHTML = buildNetworkOverviewHtml();
       hideNetworkModelGraphPanel();
       bindNetworkLegendHandlers();
+      bindNetworkCompactControls();
       updateNetworkLegendUi();
       renderNetworkGraphLazy();
       return;
