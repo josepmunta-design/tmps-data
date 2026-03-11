@@ -6283,18 +6283,59 @@ function emptyIsomorphismIndex(){
   return { byEntryKey:new Map(), byFallbackKey:new Map(), byNameKey:new Map() };
 }
 
+function normalizeIsomorphismEntry(entry){
+  const raw = (entry && typeof entry === 'object') ? entry : {};
+  const modeloObj = (raw.modelo && typeof raw.modelo === 'object') ? raw.modelo : null;
+  const tecnicaObj = (raw.tecnica && typeof raw.tecnica === 'object') ? raw.tecnica : null;
+  return {
+    ...raw,
+    archivo: String(raw.archivo || '').trim(),
+    grupo: String(raw.grupo || '').trim(),
+    tipo: String(raw.tipo || '').trim(),
+    modelo: String(
+      modeloObj?.label ||
+      modeloObj?.nombre ||
+      raw.modelo ||
+      raw.sourceModel ||
+      ''
+    ).trim(),
+    nombre: String(
+      tecnicaObj?.nombre ||
+      tecnicaObj?.label ||
+      raw.nombre ||
+      raw.sourceTechnique ||
+      ''
+    ).trim()
+  };
+}
+
+function normalizeIsomorphismGroup(group){
+  const raw = (group && typeof group === 'object') ? group : {};
+  const entriesRaw = Array.isArray(raw.entries)
+    ? raw.entries
+    : (Array.isArray(raw.entradas) ? raw.entradas : []);
+  return {
+    operacionAteorica: String(raw.operacionAteorica || raw.operacion_ateorica || '').trim(),
+    definicion: String(raw.definicion || '').trim(),
+    entries: entriesRaw.filter(Boolean).map(normalizeIsomorphismEntry)
+  };
+}
+
 function buildIsomorphismIndexFromList(raw){
-  const list = Array.isArray(raw) ? raw : [];
+  const list = Array.isArray(raw)
+    ? raw
+    : (Array.isArray(raw?.groups) ? raw.groups : []);
   const byEntryKey = new Map();
   const byFallbackKey = new Map();
   const byNameKey = new Map();
 
-  list.forEach((group) => {
-    const entries = Array.isArray(group?.entradas) ? group.entradas.filter(Boolean) : [];
+  list.forEach((rawGroup) => {
+    const group = normalizeIsomorphismGroup(rawGroup);
+    const entries = group.entries;
     entries.forEach((entry) => {
       const payload = {
-        operacionAteorica: String(group?.operacion_ateorica || '').trim(),
-        definicion: String(group?.definicion || '').trim(),
+        operacionAteorica: group.operacionAteorica,
+        definicion: group.definicion,
         entries,
         entry
       };
@@ -6323,12 +6364,12 @@ function buildIsomorphismIndexFromLookup(raw){
     const byNameKey = new Map();
 
     safe.records.forEach((record) => {
-      const group = safe.groups?.[Number(record?.groupIndex)] || {};
-      const entries = Array.isArray(group?.entries) ? group.entries : [];
-      const entry = entries?.[Number(record?.sourceIndex)] || record?.source || {};
+      const group = normalizeIsomorphismGroup(safe.groups?.[Number(record?.groupIndex)] || {});
+      const entries = group.entries;
+      const entry = normalizeIsomorphismEntry(entries?.[Number(record?.sourceIndex)] || record?.source || {});
       const payload = {
-        operacionAteorica: String(group?.operacionAteorica || '').trim(),
-        definicion: String(group?.definicion || '').trim(),
+        operacionAteorica: group.operacionAteorica,
+        definicion: group.definicion,
         entries,
         entry
       };
@@ -6376,7 +6417,12 @@ async function loadIsomorphismIndex(){
         rawLookup &&
         typeof rawLookup === 'object' &&
         !Array.isArray(rawLookup) &&
-        (rawLookup.byEntryKey || rawLookup.byFallbackKey || rawLookup.byNameKey)
+        (
+          rawLookup.byEntryKey ||
+          rawLookup.byFallbackKey ||
+          rawLookup.byNameKey ||
+          (Array.isArray(rawLookup.records) && Array.isArray(rawLookup.groups))
+        )
       );
       if (!looksLikeLookup) continue;
 
