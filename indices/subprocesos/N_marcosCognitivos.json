@@ -1,6 +1,6 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-03-12T19:48:31.831Z",
+  "updatedAt": "2026-03-12T20:34:05.863Z",
   "totalModelos": 66,
   "modelos": [
     {
@@ -995,6 +995,41 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_kelly_nucleares_perifericos",
+          "nombre": "Análisis de constructos nucleares y periféricos",
+          "texto": "Procedimiento de diferenciación estructural del sistema de constructos para establecer cuáles organizan la identidad y la continuidad del self y cuáles tienen un carácter más periférico, contextual o fácilmente revisable. Esta distinción guía la secuencia clínica: permite empezar flexibilizando zonas menos amenazantes, detectar puntos de posible desorganización identitaria y decidir con mayor precisión qué cambios son viables sin quebrar la coherencia interna del sistema personal (Kelly, 1955, The Psychology of Personal Constructs; Fransella & Bannister, 1977, A Manual for Repertory Grid Technique).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kelly_permeabilidad_constructos",
+          "nombre": "Análisis de permeabilidad y rigidez de constructos",
+          "texto": "Procedimiento destinado a evaluar hasta qué punto un constructo admite nuevos elementos, matices y excepciones o, por el contrario, opera de forma impermeable y absolutista. El trabajo sobre permeabilidad permite localizar el punto exacto donde el sistema deja de aprender de la experiencia y empieza a forzarla para seguir teniendo razón, facilitando intervenciones de flexibilización ajustadas y evitando discutir contenidos aislados sin modificar la estructura interpretativa que los sostiene (Kelly, 1955, The Psychology of Personal Constructs; Chiari & Nuzzo, 1996, Psicología de la construcción personal).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kelly_secuencias_anticipacion",
+          "nombre": "Reconstrucción de secuencias de anticipación–validación",
+          "texto": "Procedimiento que descompone episodios concretos en la cadena anticipación, acción, respuesta del entorno, validación o invalidación y revisión posterior del significado. Su valor clínico está en hacer visible el modo en que el sistema personal guía la conducta y luego interpreta sus consecuencias, permitiendo detectar profecías autocumplidas, sesgos confirmatorios y puntos de intervención donde ensayar anticipaciones alternativas más flexibles (Kelly, 1955, The Psychology of Personal Constructs; Chiari & Nuzzo, 1996, Psicología de la construcción personal).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kelly_dilemas_implicativos",
+          "nombre": "Exploración de dilemas implicativos",
+          "texto": "Procedimiento centrado en identificar configuraciones del tipo ‘si cambio en este aspecto deseado, me acercaré también a un polo identitariamente temido’, bloqueando así el cambio por sus implicaciones sobre el self. Aunque tu micro de dilemas ya va en esta línea, aquí el nivel es procedimental: mapear sistemáticamente el conflicto, explicitar sus implicaciones y diseñar vías de cambio que no se vivan como traición identitaria o pérdida de coherencia personal (Kelly, 1955, The Psychology of Personal Constructs; Feixas y Saúl, desarrollo clínico de los dilemas implicativos en PCP).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_kelly_posicion_relacional",
+          "nombre": "Análisis de posiciones relacionales y construcción social del self",
+          "texto": "Procedimiento dirigido a examinar cómo los constructos personales organizan la posición del paciente frente a figuras significativas —por ejemplo, subordinado, evaluado, decepcionante, fuerte, indispensable o prescindible— y cómo esas posiciones guían anticipaciones interpersonales recurrentes. Permite conectar la estructura constructiva con patrones vinculares concretos y abrir alternativas relacionales más complejas, menos polarizadas y más compatibles con la identidad deseada (Kelly, 1955, The Psychology of Personal Constructs; Chiari & Nuzzo, 1996, Psicología de la construcción personal).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_kelly_polaridades",
           "nombre": "Explorar polaridades del constructo",
           "texto": "Exploración guiada de los dos polos del constructo (por ejemplo, fuerte–débil, autónomo–dependiente), \nbuscando matices intermedios y condiciones en las que cada polo tiene sentido. \nReduce la rigidez semántica y la intensidad emocional asociada.",
@@ -1005,6 +1040,27 @@
           "codigo": "m_kelly_perifericos",
           "nombre": "Extensión de constructos periféricos",
           "texto": "Microintervención que amplía el campo de aplicación de constructos periféricos (no nucleares), \naumentando la flexibilidad del sistema sin activar amenaza identitaria.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kelly_polo_contraste",
+          "nombre": "Elicitar el polo de contraste",
+          "texto": "Microintervención que, ante un rasgo o cualidad mencionada por el paciente, pregunta explícitamente por su opuesto relevante para completar el constructo bipolar y evitar trabajar con etiquetas unipolares vagas. Hace visible la dimensión organizadora real del significado y permite intervenir sobre ella con mayor precisión clínica (Kelly, 1955, The Psychology of Personal Constructs; Fransella & Bannister, 1977, A Manual for Repertory Grid Technique).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kelly_similitud_diferencia",
+          "nombre": "Preguntar por a quién se parece y de quién se diferencia",
+          "texto": "Microintervención típica de elicitación constructiva en la que se comparan personas, roles o situaciones para descubrir qué criterio usa el paciente para agrupar y discriminar su experiencia. Ayuda a sacar a la superficie constructos implícitos que no emergen cuando se pregunta de forma abstracta o introspectiva directa (Kelly, 1955, The Psychology of Personal Constructs; Fransella & Bannister, 1977, A Manual for Repertory Grid Technique).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kelly_contexto_validez",
+          "nombre": "Explorar el contexto de validez del constructo",
+          "texto": "Microintervención que pregunta en qué contextos, con qué personas o bajo qué condiciones un constructo resulta útil y en cuáles deja de anticipar bien la experiencia. Favorece una visión menos totalizante del significado personal y ayuda a pasar de reglas universales rígidas a construcciones más situadas y flexibles (Kelly, 1955, The Psychology of Personal Constructs; Chiari & Nuzzo, 1996, Psicología de la construcción personal).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }

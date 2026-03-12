@@ -1,6 +1,6 @@
 {
   "subprocesoId": "N_construccionAlternativa",
-  "updatedAt": "2026-03-12T19:48:31.831Z",
+  "updatedAt": "2026-03-12T20:34:05.863Z",
   "totalModelos": 61,
   "modelos": [
     {
@@ -663,9 +663,37 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_kelly_ensayo_nuevas_anticipaciones",
+          "nombre": "Ensayo conductual de nuevas anticipaciones",
+          "texto": "Procedimiento de experimentación activa en el que el paciente pone a prueba en la vida cotidiana una anticipación alternativa suficientemente plausible dentro de su sistema, observando qué cambia en su experiencia, en la respuesta del entorno y en su autoorganización posterior. A diferencia de una mera tarea conductual, aquí la acción funciona como experimento epistemológico sobre el sistema de significados, no solo como exposición o activación (Kelly, 1955, The Psychology of Personal Constructs; Fransella & Bannister, 1977, A Manual for Repertory Grid Technique).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_kelly_alternativas",
           "nombre": "Construcción de alternativas",
           "texto": "Microintervención destinada a generar interpretaciones alternativas que mantengan la coherencia identitaria. \nDisminuye la sensación de inevitabilidad (\"solo puede ser así\") y abre repertorios de anticipación más flexibles.",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kelly_matices_intermedios",
+          "nombre": "Buscar matices intermedios entre polos",
+          "texto": "Microintervención centrada en abrir posiciones intermedias entre dos polos rígidos del constructo, reduciendo la lógica dicotómica sin destruir la inteligibilidad del sistema. Es especialmente útil cuando el paciente organiza su experiencia en términos absolutos y cualquier cambio se vive como pasaje al polo temido (Kelly, 1955, The Psychology of Personal Constructs).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kelly_self_sin_anticipacion",
+          "nombre": "Preguntar quién sería si esta anticipación no mandara",
+          "texto": "Microintervención prospectiva que invita a imaginar una versión de sí mismo menos gobernada por una anticipación rígida, para abrir identidad posible sin imponerla todavía como deber. Es útil cuando el sistema necesita visualizar una alternativa habitable antes de poder experimentarla conductualmente (Kelly, 1955, The Psychology of Personal Constructs).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_kelly_ensayo_verbal_alternativa",
+          "nombre": "Ensayar verbalmente una construcción alternativa",
+          "texto": "Microintervención que invita a formular en voz alta una lectura alternativa de sí mismo, del otro o de la situación, observando cómo resuena, qué objeciones aparecen y qué grado de plausibilidad interna tiene. Funciona como paso previo a la experimentación en vivo cuando el sistema aún no tolera actuar desde la nueva anticipación (Kelly, 1955, The Psychology of Personal Constructs).",
           "sub": "N_construccionAlternativa",
           "tipo": "micro"
         }
