@@ -1,6 +1,6 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-03-10T11:19:43.832Z",
+  "updatedAt": "2026-03-12T19:23:24.379Z",
   "totalModelos": 102,
   "modelos": [
     {
@@ -1499,9 +1499,30 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_nar_excepciones_problema",
+          "nombre": "Exploración de excepciones al problema",
+          "texto": "Procedimiento orientado a identificar momentos concretos en los que el problema no estuvo presente, fue menos intenso o la persona actuó de forma diferente a su influencia habitual. A diferencia de la simple identificación de resultados únicos, la exploración de excepciones analiza las condiciones contextuales, relacionales y personales que permitieron esa diferencia, ampliando la comprensión de las capacidades del paciente y abriendo oportunidades para extender esos patrones en el futuro. Estas excepciones constituyen puntos de entrada privilegiados para el desarrollo de historias alternativas y para fortalecer la percepción de agencia personal (White & Epston, 1990, *Narrative Means to Therapeutic Ends*).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_nar_influencia_persona",
+          "nombre": "Mapeo de la influencia de la persona sobre el problema",
+          "texto": "Procedimiento complementario al mapeo del problema que investiga cómo la persona ha influido, limitado o resistido la acción del problema a lo largo del tiempo. Se exploran decisiones, actos de resistencia, pequeños cambios de posición y recursos personales que han reducido su impacto. Este proceso permite invertir la narrativa dominante centrada en el déficit y construir una historia en la que la persona aparece como agente activo capaz de responder al problema de diversas maneras (White, 2007, *Maps of Narrative Practice*).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_nar_resistencia",
           "nombre": "Explorar actos de resistencia",
           "texto": "Intervención breve orientada a identificar acciones —por pequeñas que sean— en las que la persona no siguió el guion del problema o logró limitar su influencia. Al explorar estas resistencias se refuerza la agencia personal y se generan puntos de apoyo para narrativas alternativas de competencia y dignidad (White, 2007, *Maps of Narrative Practice*).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_nar_excepcion_reciente",
+          "nombre": "Pregunta por excepciones recientes",
+          "texto": "Pregunta breve orientada a identificar momentos recientes en los que el problema no se manifestó o fue menos influyente de lo habitual. Se utiliza para introducir rápidamente la posibilidad de variación en patrones aparentemente rígidos y para localizar episodios que puedan convertirse en resultados únicos explorables narrativamente (White & Epston, 1990, *Narrative Means to Therapeutic Ends*).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }
