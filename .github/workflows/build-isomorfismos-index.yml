@@ -1,1 +1,50 @@
 
+name: Build isomorfismos index
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/indices/isomorfismos/fuente/**/*.json'
+      - 'data/Core/modelos/**/*.json'
+      - 'scripts/build-isomorfismos-lookup.js'
+      - '.github/workflows/build-isomorfismos-index.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-isomorfismos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run build script
+        run: node scripts/build-isomorfismos-lookup.js
+
+      - name: Commit generated files if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/indices/isomorfismos/iso_lookup.json
+          git add data/indices/isomorfismos/iso_missing.json
+          git add data/indices/isomorfismos/iso_report.md
+          git add indices/isomorfismos/iso_lookup.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "build: regenerate isomorfismos lookup"
+            git push
+          fi
