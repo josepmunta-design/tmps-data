@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-12T11:49:01.099Z",
+    "generatedAt": "2026-03-12T11:57:13.813Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -288,40 +288,152 @@
           "tecnicaTipo": "micro",
           "techniqueType": "micro",
           "estado": "ok",
-          "nota": "Corresponde de forma directa a nombrar al problema.",
+          "nota": "Correspondencia directa y exacta: poner un nombre específico al problema para separarlo de la identidad y poder trabajarlo.",
           "sourceFile": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
         },
         {
           "modeloId": "psicologia-individual-adler",
-          "tecnicaId": "p_adler_tareas_vida",
+          "tecnicaId": "p_adler_estilo_vida",
           "modelId": "psicologia-individual-adler",
-          "techniqueId": "p_adler_tareas_vida",
+          "techniqueId": "p_adler_estilo_vida",
           "modeloLabel": "Psicología individual",
           "modelLabel": "Psicología individual",
           "grupo": "Psicoanálisis",
-          "tecnicaLabel": "Entrenamiento en tareas de vida",
-          "techniqueLabel": "Entrenamiento en tareas de vida",
+          "tecnicaLabel": "Análisis del estilo de vida",
+          "techniqueLabel": "Análisis del estilo de vida",
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Se usa como mejor equivalente funcional localizado en el repo para nombrar el patrón de estilo de vida o error dominante.",
+          "nota": "Mejor equivalente que tareas de vida: permite nombrar y formular el patrón global de funcionamiento o estilo de vida que organiza el problema.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "modeloId": "psicologia-individual-adler",
+          "tecnicaId": "m_adler_logica_privada",
+          "modelId": "psicologia-individual-adler",
+          "techniqueId": "m_adler_logica_privada",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+          "techniqueLabel": "Identificación de lógica privada en tiempo real",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención útil para identificar y nombrar la lógica privada que sostiene el patrón problemático.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "modeloId": "psicologia-individual-adler",
+          "tecnicaId": "m_adler_clarificar_meta",
+          "modelId": "psicologia-individual-adler",
+          "techniqueId": "m_adler_clarificar_meta",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Clarificación de meta implícita",
+          "techniqueLabel": "Clarificación de meta implícita",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Aclara y nombra la meta implícita del síntoma o de la conducta, aunque no siempre formula el problema completo.",
           "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "terapia-de-esquemas-young-1990",
-          "tecnicaId": null,
+          "tecnicaId": "m_schema_nombrar_esquema",
           "modelId": "terapia-de-esquemas-young-1990",
-          "techniqueId": null,
+          "techniqueId": "m_schema_nombrar_esquema",
           "modeloLabel": "Terapia de esquemas",
           "modelLabel": "Terapia de esquemas",
           "grupo": "Cognitivo",
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_id",
-          "nota": "En el catálogo aparece como etiquetado de esquema o modo. En el repo ya existen m_schema_nombrar_esquema y m_schema_nombrar_modo. Conviene decidir si este isomorfismo enlaza a una de esas dos micros o a ambas.",
+          "tecnicaLabel": "Nombrar el esquema activado",
+          "techniqueLabel": "Nombrar el esquema activado",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Correspondencia directa para etiquetar el esquema activado y hacerlo observable clínicamente.",
           "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+        },
+        {
+          "modeloId": "terapia-de-esquemas-young-1990",
+          "tecnicaId": "m_schema_nombrar_modo",
+          "modelId": "terapia-de-esquemas-young-1990",
+          "techniqueId": "m_schema_nombrar_modo",
+          "modeloLabel": "Terapia de esquemas",
+          "modelLabel": "Terapia de esquemas",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Nombrar el modo activo",
+          "techniqueLabel": "Nombrar el modo activo",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Correspondencia directa para etiquetar el modo activo, especialmente relevante porque el isomorfismo incluye modos de funcionamiento.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+        },
+        {
+          "modeloId": "terapia-breve-mri-1974",
+          "tecnicaId": "p_mri_definicion",
+          "modelId": "terapia-breve-mri-1974",
+          "techniqueId": "p_mri_definicion",
+          "modeloLabel": "Terapia breve (MRI)",
+          "modelLabel": "Terapia breve (MRI)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Definición operativa del problema",
+          "techniqueLabel": "Definición operativa del problema",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia muy fuerte: definición operativa del problema en términos claros, concretos y trabajables.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+        },
+        {
+          "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "tecnicaId": "m_feixas_nombrar_constructo",
+          "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "techniqueId": "m_feixas_nombrar_constructo",
+          "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Nombrar el constructo implícito en vivo",
+          "techniqueLabel": "Nombrar el constructo implícito en vivo",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Permite identificar y nombrar el constructo implícito que organiza la experiencia problemática.",
+          "sourceFile": "data/Core/modelos/constructivista/psicoterapia-constructos-personales-integrativa-feixas-villegas-2000.json"
+        },
+        {
+          "modeloId": "self-dialogico-hermans",
+          "tecnicaId": "m_hermans_nominarVoz",
+          "modelId": "self-dialogico-hermans",
+          "techniqueId": "m_hermans_nominarVoz",
+          "modeloLabel": "Teoría del self dialógico",
+          "modelLabel": "Teoría del self dialógico",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Nombrar la voz activa",
+          "techniqueLabel": "Nombrar la voz activa",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Encaja bien cuando el problema se conceptualiza como posición subjetiva o voz dominante dentro del self.",
+          "sourceFile": "data/Core/modelos/constructivista/self-dialogico-hermans.json"
+        },
+        {
+          "modeloId": "s20linares",
+          "tecnicaId": "m_linares_externalizar",
+          "modelId": "s20linares",
+          "techniqueId": "m_linares_externalizar",
+          "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+          "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Externalizar el patrón (no la persona)",
+          "techniqueLabel": "Externalizar el patrón (no la persona)",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Nombrar el patrón relacional como una tercera entidad facilita observarlo y modificarlo sin reducirlo a una persona.",
+          "sourceFile": "data/Core/modelos/sistemico/s20linares.json"
         }
       ]
     },
@@ -741,7 +853,7 @@
           "tecnicaTipo": "micro",
           "techniqueType": "micro",
           "estado": "ok",
-          "nota": "Corresponde de forma directa a nombrar al problema.",
+          "nota": "Correspondencia directa y exacta: poner un nombre específico al problema para separarlo de la identidad y poder trabajarlo.",
           "sourceFile": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
         },
         {
@@ -761,15 +873,204 @@
           "modeloLabel": "Psicología individual",
           "modelLabel": "Psicología individual",
           "grupo": "Psicoanálisis",
-          "tecnicaId": "p_adler_tareas_vida",
-          "techniqueId": "p_adler_tareas_vida",
-          "tecnicaLabel": "Entrenamiento en tareas de vida",
-          "techniqueLabel": "Entrenamiento en tareas de vida",
+          "tecnicaId": "p_adler_estilo_vida",
+          "techniqueId": "p_adler_estilo_vida",
+          "tecnicaLabel": "Análisis del estilo de vida",
+          "techniqueLabel": "Análisis del estilo de vida",
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Se usa como mejor equivalente funcional localizado en el repo para nombrar el patrón de estilo de vida o error dominante.",
+          "nota": "Mejor equivalente que tareas de vida: permite nombrar y formular el patrón global de funcionamiento o estilo de vida que organiza el problema.",
           "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "isomorfismoId": "nombrar-el-problema",
+          "isomorfismoLabel": "Nombrar el problema",
+          "categoria": "Nombrado, formulación y clarificación",
+          "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+          "tags": [
+            "nombrado",
+            "etiquetado",
+            "formulacion",
+            "clarificacion",
+            "lenguaje"
+          ],
+          "modeloId": "psicologia-individual-adler",
+          "modelId": "psicologia-individual-adler",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "m_adler_logica_privada",
+          "techniqueId": "m_adler_logica_privada",
+          "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+          "techniqueLabel": "Identificación de lógica privada en tiempo real",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención útil para identificar y nombrar la lógica privada que sostiene el patrón problemático.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "isomorfismoId": "nombrar-el-problema",
+          "isomorfismoLabel": "Nombrar el problema",
+          "categoria": "Nombrado, formulación y clarificación",
+          "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+          "tags": [
+            "nombrado",
+            "etiquetado",
+            "formulacion",
+            "clarificacion",
+            "lenguaje"
+          ],
+          "modeloId": "terapia-de-esquemas-young-1990",
+          "modelId": "terapia-de-esquemas-young-1990",
+          "modeloLabel": "Terapia de esquemas",
+          "modelLabel": "Terapia de esquemas",
+          "grupo": "Cognitivo",
+          "tecnicaId": "m_schema_nombrar_esquema",
+          "techniqueId": "m_schema_nombrar_esquema",
+          "tecnicaLabel": "Nombrar el esquema activado",
+          "techniqueLabel": "Nombrar el esquema activado",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Correspondencia directa para etiquetar el esquema activado y hacerlo observable clínicamente.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+        },
+        {
+          "isomorfismoId": "nombrar-el-problema",
+          "isomorfismoLabel": "Nombrar el problema",
+          "categoria": "Nombrado, formulación y clarificación",
+          "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+          "tags": [
+            "nombrado",
+            "etiquetado",
+            "formulacion",
+            "clarificacion",
+            "lenguaje"
+          ],
+          "modeloId": "terapia-de-esquemas-young-1990",
+          "modelId": "terapia-de-esquemas-young-1990",
+          "modeloLabel": "Terapia de esquemas",
+          "modelLabel": "Terapia de esquemas",
+          "grupo": "Cognitivo",
+          "tecnicaId": "m_schema_nombrar_modo",
+          "techniqueId": "m_schema_nombrar_modo",
+          "tecnicaLabel": "Nombrar el modo activo",
+          "techniqueLabel": "Nombrar el modo activo",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Correspondencia directa para etiquetar el modo activo, especialmente relevante porque el isomorfismo incluye modos de funcionamiento.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+        },
+        {
+          "isomorfismoId": "nombrar-el-problema",
+          "isomorfismoLabel": "Nombrar el problema",
+          "categoria": "Nombrado, formulación y clarificación",
+          "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+          "tags": [
+            "nombrado",
+            "etiquetado",
+            "formulacion",
+            "clarificacion",
+            "lenguaje"
+          ],
+          "modeloId": "terapia-breve-mri-1974",
+          "modelId": "terapia-breve-mri-1974",
+          "modeloLabel": "Terapia breve (MRI)",
+          "modelLabel": "Terapia breve (MRI)",
+          "grupo": "Sistémico",
+          "tecnicaId": "p_mri_definicion",
+          "techniqueId": "p_mri_definicion",
+          "tecnicaLabel": "Definición operativa del problema",
+          "techniqueLabel": "Definición operativa del problema",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia muy fuerte: definición operativa del problema en términos claros, concretos y trabajables.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+        },
+        {
+          "isomorfismoId": "nombrar-el-problema",
+          "isomorfismoLabel": "Nombrar el problema",
+          "categoria": "Nombrado, formulación y clarificación",
+          "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+          "tags": [
+            "nombrado",
+            "etiquetado",
+            "formulacion",
+            "clarificacion",
+            "lenguaje"
+          ],
+          "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_feixas_nombrar_constructo",
+          "techniqueId": "m_feixas_nombrar_constructo",
+          "tecnicaLabel": "Nombrar el constructo implícito en vivo",
+          "techniqueLabel": "Nombrar el constructo implícito en vivo",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Permite identificar y nombrar el constructo implícito que organiza la experiencia problemática.",
+          "sourceFile": "data/Core/modelos/constructivista/psicoterapia-constructos-personales-integrativa-feixas-villegas-2000.json"
+        },
+        {
+          "isomorfismoId": "nombrar-el-problema",
+          "isomorfismoLabel": "Nombrar el problema",
+          "categoria": "Nombrado, formulación y clarificación",
+          "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+          "tags": [
+            "nombrado",
+            "etiquetado",
+            "formulacion",
+            "clarificacion",
+            "lenguaje"
+          ],
+          "modeloId": "self-dialogico-hermans",
+          "modelId": "self-dialogico-hermans",
+          "modeloLabel": "Teoría del self dialógico",
+          "modelLabel": "Teoría del self dialógico",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_hermans_nominarVoz",
+          "techniqueId": "m_hermans_nominarVoz",
+          "tecnicaLabel": "Nombrar la voz activa",
+          "techniqueLabel": "Nombrar la voz activa",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Encaja bien cuando el problema se conceptualiza como posición subjetiva o voz dominante dentro del self.",
+          "sourceFile": "data/Core/modelos/constructivista/self-dialogico-hermans.json"
+        },
+        {
+          "isomorfismoId": "nombrar-el-problema",
+          "isomorfismoLabel": "Nombrar el problema",
+          "categoria": "Nombrado, formulación y clarificación",
+          "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+          "tags": [
+            "nombrado",
+            "etiquetado",
+            "formulacion",
+            "clarificacion",
+            "lenguaje"
+          ],
+          "modeloId": "s20linares",
+          "modelId": "s20linares",
+          "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+          "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+          "grupo": "Sistémico",
+          "tecnicaId": "m_linares_externalizar",
+          "techniqueId": "m_linares_externalizar",
+          "tecnicaLabel": "Externalizar el patrón (no la persona)",
+          "techniqueLabel": "Externalizar el patrón (no la persona)",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Nombrar el patrón relacional como una tercera entidad facilita observarlo y modificarlo sin reducirlo a una persona.",
+          "sourceFile": "data/Core/modelos/sistemico/s20linares.json"
         }
       ]
     },
@@ -1192,7 +1493,7 @@
       "tecnicaTipo": "micro",
       "techniqueType": "micro",
       "estado": "ok",
-      "nota": "Corresponde de forma directa a nombrar al problema.",
+      "nota": "Correspondencia directa y exacta: poner un nombre específico al problema para separarlo de la identidad y poder trabajarlo.",
       "sourceFile": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
     },
     {
@@ -1212,15 +1513,204 @@
       "modeloLabel": "Psicología individual",
       "modelLabel": "Psicología individual",
       "grupo": "Psicoanálisis",
-      "tecnicaId": "p_adler_tareas_vida",
-      "techniqueId": "p_adler_tareas_vida",
-      "tecnicaLabel": "Entrenamiento en tareas de vida",
-      "techniqueLabel": "Entrenamiento en tareas de vida",
+      "tecnicaId": "p_adler_estilo_vida",
+      "techniqueId": "p_adler_estilo_vida",
+      "tecnicaLabel": "Análisis del estilo de vida",
+      "techniqueLabel": "Análisis del estilo de vida",
       "tecnicaTipo": "procedimiento",
       "techniqueType": "procedimiento",
       "estado": "ok",
-      "nota": "Se usa como mejor equivalente funcional localizado en el repo para nombrar el patrón de estilo de vida o error dominante.",
+      "nota": "Mejor equivalente que tareas de vida: permite nombrar y formular el patrón global de funcionamiento o estilo de vida que organiza el problema.",
       "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+    },
+    {
+      "isomorfismoId": "nombrar-el-problema",
+      "isomorfismoLabel": "Nombrar el problema",
+      "categoria": "Nombrado, formulación y clarificación",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
+      "modeloId": "psicologia-individual-adler",
+      "modelId": "psicologia-individual-adler",
+      "modeloLabel": "Psicología individual",
+      "modelLabel": "Psicología individual",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "m_adler_logica_privada",
+      "techniqueId": "m_adler_logica_privada",
+      "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+      "techniqueLabel": "Identificación de lógica privada en tiempo real",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Microintervención útil para identificar y nombrar la lógica privada que sostiene el patrón problemático.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+    },
+    {
+      "isomorfismoId": "nombrar-el-problema",
+      "isomorfismoLabel": "Nombrar el problema",
+      "categoria": "Nombrado, formulación y clarificación",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
+      "modeloId": "terapia-de-esquemas-young-1990",
+      "modelId": "terapia-de-esquemas-young-1990",
+      "modeloLabel": "Terapia de esquemas",
+      "modelLabel": "Terapia de esquemas",
+      "grupo": "Cognitivo",
+      "tecnicaId": "m_schema_nombrar_esquema",
+      "techniqueId": "m_schema_nombrar_esquema",
+      "tecnicaLabel": "Nombrar el esquema activado",
+      "techniqueLabel": "Nombrar el esquema activado",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Correspondencia directa para etiquetar el esquema activado y hacerlo observable clínicamente.",
+      "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+    },
+    {
+      "isomorfismoId": "nombrar-el-problema",
+      "isomorfismoLabel": "Nombrar el problema",
+      "categoria": "Nombrado, formulación y clarificación",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
+      "modeloId": "terapia-de-esquemas-young-1990",
+      "modelId": "terapia-de-esquemas-young-1990",
+      "modeloLabel": "Terapia de esquemas",
+      "modelLabel": "Terapia de esquemas",
+      "grupo": "Cognitivo",
+      "tecnicaId": "m_schema_nombrar_modo",
+      "techniqueId": "m_schema_nombrar_modo",
+      "tecnicaLabel": "Nombrar el modo activo",
+      "techniqueLabel": "Nombrar el modo activo",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Correspondencia directa para etiquetar el modo activo, especialmente relevante porque el isomorfismo incluye modos de funcionamiento.",
+      "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+    },
+    {
+      "isomorfismoId": "nombrar-el-problema",
+      "isomorfismoLabel": "Nombrar el problema",
+      "categoria": "Nombrado, formulación y clarificación",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
+      "modeloId": "terapia-breve-mri-1974",
+      "modelId": "terapia-breve-mri-1974",
+      "modeloLabel": "Terapia breve (MRI)",
+      "modelLabel": "Terapia breve (MRI)",
+      "grupo": "Sistémico",
+      "tecnicaId": "p_mri_definicion",
+      "techniqueId": "p_mri_definicion",
+      "tecnicaLabel": "Definición operativa del problema",
+      "techniqueLabel": "Definición operativa del problema",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Equivalencia muy fuerte: definición operativa del problema en términos claros, concretos y trabajables.",
+      "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+    },
+    {
+      "isomorfismoId": "nombrar-el-problema",
+      "isomorfismoLabel": "Nombrar el problema",
+      "categoria": "Nombrado, formulación y clarificación",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
+      "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+      "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+      "grupo": "Constructivista",
+      "tecnicaId": "m_feixas_nombrar_constructo",
+      "techniqueId": "m_feixas_nombrar_constructo",
+      "tecnicaLabel": "Nombrar el constructo implícito en vivo",
+      "techniqueLabel": "Nombrar el constructo implícito en vivo",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Permite identificar y nombrar el constructo implícito que organiza la experiencia problemática.",
+      "sourceFile": "data/Core/modelos/constructivista/psicoterapia-constructos-personales-integrativa-feixas-villegas-2000.json"
+    },
+    {
+      "isomorfismoId": "nombrar-el-problema",
+      "isomorfismoLabel": "Nombrar el problema",
+      "categoria": "Nombrado, formulación y clarificación",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
+      "modeloId": "self-dialogico-hermans",
+      "modelId": "self-dialogico-hermans",
+      "modeloLabel": "Teoría del self dialógico",
+      "modelLabel": "Teoría del self dialógico",
+      "grupo": "Constructivista",
+      "tecnicaId": "m_hermans_nominarVoz",
+      "techniqueId": "m_hermans_nominarVoz",
+      "tecnicaLabel": "Nombrar la voz activa",
+      "techniqueLabel": "Nombrar la voz activa",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Encaja bien cuando el problema se conceptualiza como posición subjetiva o voz dominante dentro del self.",
+      "sourceFile": "data/Core/modelos/constructivista/self-dialogico-hermans.json"
+    },
+    {
+      "isomorfismoId": "nombrar-el-problema",
+      "isomorfismoLabel": "Nombrar el problema",
+      "categoria": "Nombrado, formulación y clarificación",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
+      "modeloId": "s20linares",
+      "modelId": "s20linares",
+      "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+      "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+      "grupo": "Sistémico",
+      "tecnicaId": "m_linares_externalizar",
+      "techniqueId": "m_linares_externalizar",
+      "tecnicaLabel": "Externalizar el patrón (no la persona)",
+      "techniqueLabel": "Externalizar el patrón (no la persona)",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Nombrar el patrón relacional como una tercera entidad facilita observarlo y modificarlo sin reducirlo a una persona.",
+      "sourceFile": "data/Core/modelos/sistemico/s20linares.json"
     },
     {
       "isomorfismoId": "proyectar-la-vida-sin-el-problema",
@@ -1613,40 +2103,152 @@
           "tecnicaTipo": "micro",
           "techniqueType": "micro",
           "estado": "ok",
-          "nota": "Corresponde de forma directa a nombrar al problema.",
+          "nota": "Correspondencia directa y exacta: poner un nombre específico al problema para separarlo de la identidad y poder trabajarlo.",
           "sourceFile": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
         },
         {
           "modeloId": "psicologia-individual-adler",
-          "tecnicaId": "p_adler_tareas_vida",
+          "tecnicaId": "p_adler_estilo_vida",
           "modelId": "psicologia-individual-adler",
-          "techniqueId": "p_adler_tareas_vida",
+          "techniqueId": "p_adler_estilo_vida",
           "modeloLabel": "Psicología individual",
           "modelLabel": "Psicología individual",
           "grupo": "Psicoanálisis",
-          "tecnicaLabel": "Entrenamiento en tareas de vida",
-          "techniqueLabel": "Entrenamiento en tareas de vida",
+          "tecnicaLabel": "Análisis del estilo de vida",
+          "techniqueLabel": "Análisis del estilo de vida",
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Se usa como mejor equivalente funcional localizado en el repo para nombrar el patrón de estilo de vida o error dominante.",
+          "nota": "Mejor equivalente que tareas de vida: permite nombrar y formular el patrón global de funcionamiento o estilo de vida que organiza el problema.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "modeloId": "psicologia-individual-adler",
+          "tecnicaId": "m_adler_logica_privada",
+          "modelId": "psicologia-individual-adler",
+          "techniqueId": "m_adler_logica_privada",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+          "techniqueLabel": "Identificación de lógica privada en tiempo real",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención útil para identificar y nombrar la lógica privada que sostiene el patrón problemático.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "modeloId": "psicologia-individual-adler",
+          "tecnicaId": "m_adler_clarificar_meta",
+          "modelId": "psicologia-individual-adler",
+          "techniqueId": "m_adler_clarificar_meta",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Clarificación de meta implícita",
+          "techniqueLabel": "Clarificación de meta implícita",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Aclara y nombra la meta implícita del síntoma o de la conducta, aunque no siempre formula el problema completo.",
           "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "terapia-de-esquemas-young-1990",
-          "tecnicaId": null,
+          "tecnicaId": "m_schema_nombrar_esquema",
           "modelId": "terapia-de-esquemas-young-1990",
-          "techniqueId": null,
+          "techniqueId": "m_schema_nombrar_esquema",
           "modeloLabel": "Terapia de esquemas",
           "modelLabel": "Terapia de esquemas",
           "grupo": "Cognitivo",
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_id",
-          "nota": "En el catálogo aparece como etiquetado de esquema o modo. En el repo ya existen m_schema_nombrar_esquema y m_schema_nombrar_modo. Conviene decidir si este isomorfismo enlaza a una de esas dos micros o a ambas.",
+          "tecnicaLabel": "Nombrar el esquema activado",
+          "techniqueLabel": "Nombrar el esquema activado",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Correspondencia directa para etiquetar el esquema activado y hacerlo observable clínicamente.",
           "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+        },
+        {
+          "modeloId": "terapia-de-esquemas-young-1990",
+          "tecnicaId": "m_schema_nombrar_modo",
+          "modelId": "terapia-de-esquemas-young-1990",
+          "techniqueId": "m_schema_nombrar_modo",
+          "modeloLabel": "Terapia de esquemas",
+          "modelLabel": "Terapia de esquemas",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Nombrar el modo activo",
+          "techniqueLabel": "Nombrar el modo activo",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Correspondencia directa para etiquetar el modo activo, especialmente relevante porque el isomorfismo incluye modos de funcionamiento.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+        },
+        {
+          "modeloId": "terapia-breve-mri-1974",
+          "tecnicaId": "p_mri_definicion",
+          "modelId": "terapia-breve-mri-1974",
+          "techniqueId": "p_mri_definicion",
+          "modeloLabel": "Terapia breve (MRI)",
+          "modelLabel": "Terapia breve (MRI)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Definición operativa del problema",
+          "techniqueLabel": "Definición operativa del problema",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia muy fuerte: definición operativa del problema en términos claros, concretos y trabajables.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+        },
+        {
+          "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "tecnicaId": "m_feixas_nombrar_constructo",
+          "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "techniqueId": "m_feixas_nombrar_constructo",
+          "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Nombrar el constructo implícito en vivo",
+          "techniqueLabel": "Nombrar el constructo implícito en vivo",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Permite identificar y nombrar el constructo implícito que organiza la experiencia problemática.",
+          "sourceFile": "data/Core/modelos/constructivista/psicoterapia-constructos-personales-integrativa-feixas-villegas-2000.json"
+        },
+        {
+          "modeloId": "self-dialogico-hermans",
+          "tecnicaId": "m_hermans_nominarVoz",
+          "modelId": "self-dialogico-hermans",
+          "techniqueId": "m_hermans_nominarVoz",
+          "modeloLabel": "Teoría del self dialógico",
+          "modelLabel": "Teoría del self dialógico",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Nombrar la voz activa",
+          "techniqueLabel": "Nombrar la voz activa",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Encaja bien cuando el problema se conceptualiza como posición subjetiva o voz dominante dentro del self.",
+          "sourceFile": "data/Core/modelos/constructivista/self-dialogico-hermans.json"
+        },
+        {
+          "modeloId": "s20linares",
+          "tecnicaId": "m_linares_externalizar",
+          "modelId": "s20linares",
+          "techniqueId": "m_linares_externalizar",
+          "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+          "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Externalizar el patrón (no la persona)",
+          "techniqueLabel": "Externalizar el patrón (no la persona)",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Nombrar el patrón relacional como una tercera entidad facilita observarlo y modificarlo sin reducirlo a una persona.",
+          "sourceFile": "data/Core/modelos/sistemico/s20linares.json"
         }
       ]
     },
@@ -1808,6 +2410,14 @@
         "tecnicaId": "m_mri_excepcion",
         "tecnicaLabel": "Pregunta de excepción",
         "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "p_mri_definicion",
+        "tecnicaLabel": "Definición operativa del problema",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "s20linares": [
@@ -1817,6 +2427,14 @@
         "categoria": "Excepciones, variación y recursos",
         "tecnicaId": "m_linares_excepciones",
         "tecnicaLabel": "Detectar excepción funcional",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "m_linares_externalizar",
+        "tecnicaLabel": "Externalizar el patrón (no la persona)",
         "tecnicaTipo": "micro"
       }
     ],
@@ -1865,9 +2483,17 @@
         "isomorfismoId": "nombrar-el-problema",
         "isomorfismoLabel": "Nombrar el problema",
         "categoria": "Nombrado, formulación y clarificación",
-        "tecnicaId": "p_adler_tareas_vida",
-        "tecnicaLabel": "Entrenamiento en tareas de vida",
+        "tecnicaId": "p_adler_estilo_vida",
+        "tecnicaLabel": "Análisis del estilo de vida",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "m_adler_logica_privada",
+        "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+        "tecnicaTipo": "micro"
       },
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
@@ -1875,6 +2501,44 @@
         "categoria": "Proyección, motivación y dirección de cambio",
         "tecnicaId": "m_adler_the_question",
         "tecnicaLabel": "The question",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-de-esquemas-young-1990": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "m_schema_nombrar_esquema",
+        "tecnicaLabel": "Nombrar el esquema activado",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "m_schema_nombrar_modo",
+        "tecnicaLabel": "Nombrar el modo activo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "m_feixas_nombrar_constructo",
+        "tecnicaLabel": "Nombrar el constructo implícito en vivo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "self-dialogico-hermans": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "m_hermans_nominarVoz",
+        "tecnicaLabel": "Nombrar la voz activa",
         "tecnicaTipo": "micro"
       }
     ],
@@ -2032,16 +2696,100 @@
         "tecnicaTipo": "micro"
       }
     ],
-    "p_adler_tareas_vida": [
+    "p_adler_estilo_vida": [
       {
         "isomorfismoId": "nombrar-el-problema",
         "isomorfismoLabel": "Nombrar el problema",
         "categoria": "Nombrado, formulación y clarificación",
         "modeloId": "psicologia-individual-adler",
         "modeloLabel": "Psicología individual",
-        "tecnicaId": "p_adler_tareas_vida",
-        "tecnicaLabel": "Entrenamiento en tareas de vida",
+        "tecnicaId": "p_adler_estilo_vida",
+        "tecnicaLabel": "Análisis del estilo de vida",
         "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_adler_logica_privada": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "psicologia-individual-adler",
+        "modeloLabel": "Psicología individual",
+        "tecnicaId": "m_adler_logica_privada",
+        "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_schema_nombrar_esquema": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "terapia-de-esquemas-young-1990",
+        "modeloLabel": "Terapia de esquemas",
+        "tecnicaId": "m_schema_nombrar_esquema",
+        "tecnicaLabel": "Nombrar el esquema activado",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_schema_nombrar_modo": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "terapia-de-esquemas-young-1990",
+        "modeloLabel": "Terapia de esquemas",
+        "tecnicaId": "m_schema_nombrar_modo",
+        "tecnicaLabel": "Nombrar el modo activo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_mri_definicion": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "terapia-breve-mri-1974",
+        "modeloLabel": "Terapia breve (MRI)",
+        "tecnicaId": "p_mri_definicion",
+        "tecnicaLabel": "Definición operativa del problema",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_feixas_nombrar_constructo": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+        "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+        "tecnicaId": "m_feixas_nombrar_constructo",
+        "tecnicaLabel": "Nombrar el constructo implícito en vivo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_hermans_nominarVoz": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "self-dialogico-hermans",
+        "modeloLabel": "Teoría del self dialógico",
+        "tecnicaId": "m_hermans_nominarVoz",
+        "tecnicaLabel": "Nombrar la voz activa",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_linares_externalizar": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "s20linares",
+        "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+        "tecnicaId": "m_linares_externalizar",
+        "tecnicaLabel": "Externalizar el patrón (no la persona)",
+        "tecnicaTipo": "micro"
       }
     ],
     "m_adler_the_question": [
@@ -2226,16 +2974,100 @@
         "tecnicaTipo": "micro"
       }
     ],
-    "psicologia-individual-adler::p_adler_tareas_vida": [
+    "psicologia-individual-adler::p_adler_estilo_vida": [
       {
         "isomorfismoId": "nombrar-el-problema",
         "isomorfismoLabel": "Nombrar el problema",
         "categoria": "Nombrado, formulación y clarificación",
         "modeloId": "psicologia-individual-adler",
         "modeloLabel": "Psicología individual",
-        "tecnicaId": "p_adler_tareas_vida",
-        "tecnicaLabel": "Entrenamiento en tareas de vida",
+        "tecnicaId": "p_adler_estilo_vida",
+        "tecnicaLabel": "Análisis del estilo de vida",
         "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicologia-individual-adler::m_adler_logica_privada": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "psicologia-individual-adler",
+        "modeloLabel": "Psicología individual",
+        "tecnicaId": "m_adler_logica_privada",
+        "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-de-esquemas-young-1990::m_schema_nombrar_esquema": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "terapia-de-esquemas-young-1990",
+        "modeloLabel": "Terapia de esquemas",
+        "tecnicaId": "m_schema_nombrar_esquema",
+        "tecnicaLabel": "Nombrar el esquema activado",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-de-esquemas-young-1990::m_schema_nombrar_modo": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "terapia-de-esquemas-young-1990",
+        "modeloLabel": "Terapia de esquemas",
+        "tecnicaId": "m_schema_nombrar_modo",
+        "tecnicaLabel": "Nombrar el modo activo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-breve-mri-1974::p_mri_definicion": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "terapia-breve-mri-1974",
+        "modeloLabel": "Terapia breve (MRI)",
+        "tecnicaId": "p_mri_definicion",
+        "tecnicaLabel": "Definición operativa del problema",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000::m_feixas_nombrar_constructo": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+        "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+        "tecnicaId": "m_feixas_nombrar_constructo",
+        "tecnicaLabel": "Nombrar el constructo implícito en vivo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "self-dialogico-hermans::m_hermans_nominarVoz": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "self-dialogico-hermans",
+        "modeloLabel": "Teoría del self dialógico",
+        "tecnicaId": "m_hermans_nominarVoz",
+        "tecnicaLabel": "Nombrar la voz activa",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "s20linares::m_linares_externalizar": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "s20linares",
+        "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+        "tecnicaId": "m_linares_externalizar",
+        "tecnicaLabel": "Externalizar el patrón (no la persona)",
+        "tecnicaTipo": "micro"
       }
     ],
     "psicologia-individual-adler::m_adler_the_question": [
@@ -2289,9 +3121,9 @@
   },
   "stats": {
     "totalIsomorfismos": 4,
-    "totalEntries": 21,
-    "totalOk": 16,
-    "totalFaltaId": 1,
+    "totalEntries": 28,
+    "totalOk": 23,
+    "totalFaltaId": 0,
     "totalFaltaModelo": 2,
     "totalDudoso": 0,
     "totalDescartado": 0

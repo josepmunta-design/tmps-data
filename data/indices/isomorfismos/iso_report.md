@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T11:49:01.099Z
+Generado: 2026-03-12T11:57:13.813Z
 
 ## Buscar excepciones al problema
 
@@ -37,11 +37,18 @@ Generado: 2026-03-12T11:49:01.099Z
 - ID: `nombrar-el-problema`
 - Categoría: Nombrado, formulación y clarificación
 - Archivo fuente: `data/indices/isomorfismos/fuente/nombrar-el-problema.json`
-- Entradas: 3
+- Entradas: 10
 
 - Terapia narrativa — Nombrar al problema [ok]
-- Psicología individual — Entrenamiento en tareas de vida [ok]
-- Terapia de esquemas — SIN ID [falta_id]
+- Psicología individual — Análisis del estilo de vida [ok]
+- Psicología individual — Identificación de lógica privada en tiempo real [ok]
+- Psicología individual — Clarificación de meta implícita [parcial]
+- Terapia de esquemas — Nombrar el esquema activado [ok]
+- Terapia de esquemas — Nombrar el modo activo [ok]
+- Terapia breve (MRI) — Definición operativa del problema [ok]
+- Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas) — Nombrar el constructo implícito en vivo [ok]
+- Teoría del self dialógico — Nombrar la voz activa [ok]
+- Psicoterapia relacional sistémica (Linares) — Externalizar el patrón (no la persona) [ok]
 
 ## Proyectar la vida sin el problema
 
