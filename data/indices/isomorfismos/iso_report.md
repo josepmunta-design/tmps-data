@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T20:10:15.747Z
+Generado: 2026-03-12T20:15:22.472Z
 
 ## Buscar excepciones al problema
 
@@ -36,6 +36,26 @@ Generado: 2026-03-12T20:10:15.747Z
 - Terapia Gestalt — p_gestalt_que_como_lugar_porque [falta_id]
 - Terapia cognitiva (depresión) — pendiente_repo_behavioral_specification [falta_id]
 - Terapia estratégica — pendiente_repo_interactional_sequence_description [falta_id]
+
+## Diseñar experimentos conductuales
+
+- ID: `disenar-experimentos-conductuales`
+- Categoría: Aprendizaje experiencial y testeo de hipótesis
+- Archivo fuente: `data/indices/isomorfismos/fuente/disenar-experimentos-conductuales.json`
+- Entradas: 12
+
+- Terapia cognitiva (depresión) — Experimentos conductuales [ok]
+- Terapia cognitiva (depresión) — Predicción y comprobación conductual [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Plan de acción comprometida con exposición experiencial [parcial]
+- Terapia de Aceptación y Compromiso (ACT) — Paso mínimo de cinco minutos [parcial]
+- Terapia de Aceptación y Compromiso (ACT) — Pregunta hacia o contra valores [parcial]
+- Terapia metacognitiva (MCT) — Modificación de creencias metacognitivas positivas [parcial]
+- Terapia metacognitiva (MCT) — Desconfirmación experiencial de la incontrolabilidad del pensamiento [parcial]
+- Terapia racional emotiva conductual (REBT) — Tareas conductuales racionales [ok]
+- Terapia racional emotiva conductual (REBT) — Disputa conductual [parcial]
+- Terapia racional emotiva conductual (REBT) — Predicciones alternativas racionales [ok]
+- Teoría de los Constructos Personales (PCP) — Experimentos de anticipación [ok]
+- Teoría de los Constructos Personales (PCP) — Construcción de alternativas [parcial]
 
 ## Exponerse gradualmente a lo evitado
 

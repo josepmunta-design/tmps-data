@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-12T20:10:15.747Z",
+    "generatedAt": "2026-03-12T20:15:22.472Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -341,6 +341,214 @@
           "estado": "falta_id",
           "nota": "La técnica fuente de Haley encaja, pero no existe aún una micro/procedimiento equivalente en el repo.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-estrategica-1967.json"
+        }
+      ]
+    },
+    {
+      "id": "disenar-experimentos-conductuales",
+      "label": "Diseñar experimentos conductuales",
+      "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+      "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+      "tags": [
+        "experimento conductual",
+        "testeo de hipotesis",
+        "aprendizaje experiencial",
+        "accion exploratoria",
+        "validacion empirica personal"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/disenar-experimentos-conductuales.json",
+      "entries": [
+        {
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "tecnicaId": "p_beck_experimentos",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "techniqueId": "p_beck_experimentos",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Experimentos conductuales",
+          "techniqueLabel": "Experimentos conductuales",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Procedimiento central de Beck para contrastar creencias mediante pruebas en la vida real.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "tecnicaId": "m_beck_prediccion",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "techniqueId": "m_beck_prediccion",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Predicción y comprobación conductual",
+          "techniqueLabel": "Predicción y comprobación conductual",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro precisa: formular predicción y comprobarla conductualmente.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_accion_comprometida",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_accion_comprometida",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+          "techniqueLabel": "Plan de acción comprometida con exposición experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "No aparece un 'values experiment' literal en el repo; este es el procedimiento más cercano porque diseña acciones concretas, graduadas y revisables al servicio de valores.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_paso_5_min",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_paso_5_min",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Paso mínimo de cinco minutos",
+          "techniqueLabel": "Paso mínimo de cinco minutos",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Micro compatible: convierte hipótesis o bloqueo en acción mínima comprobable.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_hacia_contra",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_hacia_contra",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Pregunta hacia o contra valores",
+          "techniqueLabel": "Pregunta hacia o contra valores",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Micro de decisión funcional que ayuda a convertir valores en prueba conductual.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "terapia-metacognitiva-wells-1990",
+          "tecnicaId": "p_mct_modificacion_creencias_positivas",
+          "modelId": "terapia-metacognitiva-wells-1990",
+          "techniqueId": "p_mct_modificacion_creencias_positivas",
+          "modeloLabel": "Terapia metacognitiva (MCT)",
+          "modelLabel": "Terapia metacognitiva (MCT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Modificación de creencias metacognitivas positivas",
+          "techniqueLabel": "Modificación de creencias metacognitivas positivas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Incluye uso de experimentos conductuales para cuestionar la utilidad de la preocupación o rumiación.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-metacognitiva-wells-1990.json"
+        },
+        {
+          "modeloId": "terapia-metacognitiva-wells-1990",
+          "tecnicaId": "m_mct_desconfirmacion_incontrolabilidad",
+          "modelId": "terapia-metacognitiva-wells-1990",
+          "techniqueId": "m_mct_desconfirmacion_incontrolabilidad",
+          "modeloLabel": "Terapia metacognitiva (MCT)",
+          "modelLabel": "Terapia metacognitiva (MCT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Desconfirmación experiencial de la incontrolabilidad del pensamiento",
+          "techniqueLabel": "Desconfirmación experiencial de la incontrolabilidad del pensamiento",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Micro experiencial muy afín al testeo de hipótesis metacognitivas.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-metacognitiva-wells-1990.json"
+        },
+        {
+          "modeloId": "rebt-terapia-racional-emotiva-ellis",
+          "tecnicaId": "p_rebt_tareasRacionales",
+          "modelId": "rebt-terapia-racional-emotiva-ellis",
+          "techniqueId": "p_rebt_tareasRacionales",
+          "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+          "modelLabel": "Terapia racional emotiva conductual (REBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Tareas conductuales racionales",
+          "techniqueLabel": "Tareas conductuales racionales",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Tareas conductuales racionales para comprobar creencias en la práctica.",
+          "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+        },
+        {
+          "modeloId": "rebt-terapia-racional-emotiva-ellis",
+          "tecnicaId": "p_rebt_conductual",
+          "modelId": "rebt-terapia-racional-emotiva-ellis",
+          "techniqueId": "p_rebt_conductual",
+          "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+          "modelLabel": "Terapia racional emotiva conductual (REBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Disputa conductual",
+          "techniqueLabel": "Disputa conductual",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Procedimiento conductual de REBT que también funciona como testeo de hipótesis.",
+          "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+        },
+        {
+          "modeloId": "rebt-terapia-racional-emotiva-ellis",
+          "tecnicaId": "m_rebt_prediccion",
+          "modelId": "rebt-terapia-racional-emotiva-ellis",
+          "techniqueId": "m_rebt_prediccion",
+          "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+          "modelLabel": "Terapia racional emotiva conductual (REBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Predicciones alternativas racionales",
+          "techniqueLabel": "Predicciones alternativas racionales",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro muy precisa: formular predicciones alternativas racionales y contrastarlas.",
+          "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+        },
+        {
+          "modeloId": "k1kelly55",
+          "tecnicaId": "m_kelly_anticipacion",
+          "modelId": "k1kelly55",
+          "techniqueId": "m_kelly_anticipacion",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "modelLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Experimentos de anticipación",
+          "techniqueLabel": "Experimentos de anticipación",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro muy directa en PCP: experimentar anticipaciones para comprobar constructos.",
+          "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        },
+        {
+          "modeloId": "k1kelly55",
+          "tecnicaId": "m_kelly_alternativas",
+          "modelId": "k1kelly55",
+          "techniqueId": "m_kelly_alternativas",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "modelLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Construcción de alternativas",
+          "techniqueLabel": "Construcción de alternativas",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Construcción de alternativas que puede convertirse en experimento conductual, aunque no siempre lo implica.",
+          "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
         }
       ]
     },
@@ -1866,6 +2074,156 @@
       "records": []
     },
     {
+      "id": "disenar-experimentos-conductuales",
+      "label": "Diseñar experimentos conductuales",
+      "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+      "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+      "tags": [
+        "experimento conductual",
+        "testeo de hipotesis",
+        "aprendizaje experiencial",
+        "accion exploratoria",
+        "validacion empirica personal"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "disenar-experimentos-conductuales",
+          "isomorfismoLabel": "Diseñar experimentos conductuales",
+          "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+          "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+          "tags": [
+            "experimento conductual",
+            "testeo de hipotesis",
+            "aprendizaje experiencial",
+            "accion exploratoria",
+            "validacion empirica personal"
+          ],
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_beck_experimentos",
+          "techniqueId": "p_beck_experimentos",
+          "tecnicaLabel": "Experimentos conductuales",
+          "techniqueLabel": "Experimentos conductuales",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Procedimiento central de Beck para contrastar creencias mediante pruebas en la vida real.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "isomorfismoId": "disenar-experimentos-conductuales",
+          "isomorfismoLabel": "Diseñar experimentos conductuales",
+          "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+          "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+          "tags": [
+            "experimento conductual",
+            "testeo de hipotesis",
+            "aprendizaje experiencial",
+            "accion exploratoria",
+            "validacion empirica personal"
+          ],
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "m_beck_prediccion",
+          "techniqueId": "m_beck_prediccion",
+          "tecnicaLabel": "Predicción y comprobación conductual",
+          "techniqueLabel": "Predicción y comprobación conductual",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro precisa: formular predicción y comprobarla conductualmente.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "isomorfismoId": "disenar-experimentos-conductuales",
+          "isomorfismoLabel": "Diseñar experimentos conductuales",
+          "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+          "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+          "tags": [
+            "experimento conductual",
+            "testeo de hipotesis",
+            "aprendizaje experiencial",
+            "accion exploratoria",
+            "validacion empirica personal"
+          ],
+          "modeloId": "rebt-terapia-racional-emotiva-ellis",
+          "modelId": "rebt-terapia-racional-emotiva-ellis",
+          "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+          "modelLabel": "Terapia racional emotiva conductual (REBT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_rebt_tareasRacionales",
+          "techniqueId": "p_rebt_tareasRacionales",
+          "tecnicaLabel": "Tareas conductuales racionales",
+          "techniqueLabel": "Tareas conductuales racionales",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Tareas conductuales racionales para comprobar creencias en la práctica.",
+          "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+        },
+        {
+          "isomorfismoId": "disenar-experimentos-conductuales",
+          "isomorfismoLabel": "Diseñar experimentos conductuales",
+          "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+          "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+          "tags": [
+            "experimento conductual",
+            "testeo de hipotesis",
+            "aprendizaje experiencial",
+            "accion exploratoria",
+            "validacion empirica personal"
+          ],
+          "modeloId": "rebt-terapia-racional-emotiva-ellis",
+          "modelId": "rebt-terapia-racional-emotiva-ellis",
+          "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+          "modelLabel": "Terapia racional emotiva conductual (REBT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "m_rebt_prediccion",
+          "techniqueId": "m_rebt_prediccion",
+          "tecnicaLabel": "Predicciones alternativas racionales",
+          "techniqueLabel": "Predicciones alternativas racionales",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro muy precisa: formular predicciones alternativas racionales y contrastarlas.",
+          "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+        },
+        {
+          "isomorfismoId": "disenar-experimentos-conductuales",
+          "isomorfismoLabel": "Diseñar experimentos conductuales",
+          "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+          "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+          "tags": [
+            "experimento conductual",
+            "testeo de hipotesis",
+            "aprendizaje experiencial",
+            "accion exploratoria",
+            "validacion empirica personal"
+          ],
+          "modeloId": "k1kelly55",
+          "modelId": "k1kelly55",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "modelLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_kelly_anticipacion",
+          "techniqueId": "m_kelly_anticipacion",
+          "tecnicaLabel": "Experimentos de anticipación",
+          "techniqueLabel": "Experimentos de anticipación",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro muy directa en PCP: experimentar anticipaciones para comprobar constructos.",
+          "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        }
+      ]
+    },
+    {
       "id": "exponerse-gradualmente-a-lo-evitado",
       "label": "Exponerse gradualmente a lo evitado",
       "categoria": "Aprendizaje emocional correctivo",
@@ -3057,6 +3415,141 @@
       "sourceFile": "data/Core/modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json"
     },
     {
+      "isomorfismoId": "disenar-experimentos-conductuales",
+      "isomorfismoLabel": "Diseñar experimentos conductuales",
+      "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+      "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+      "tags": [
+        "experimento conductual",
+        "testeo de hipotesis",
+        "aprendizaje experiencial",
+        "accion exploratoria",
+        "validacion empirica personal"
+      ],
+      "modeloId": "terapia-cognitiva-beck-depresion-1967",
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modeloLabel": "Terapia cognitiva (depresión)",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_beck_experimentos",
+      "techniqueId": "p_beck_experimentos",
+      "tecnicaLabel": "Experimentos conductuales",
+      "techniqueLabel": "Experimentos conductuales",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Procedimiento central de Beck para contrastar creencias mediante pruebas en la vida real.",
+      "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+    },
+    {
+      "isomorfismoId": "disenar-experimentos-conductuales",
+      "isomorfismoLabel": "Diseñar experimentos conductuales",
+      "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+      "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+      "tags": [
+        "experimento conductual",
+        "testeo de hipotesis",
+        "aprendizaje experiencial",
+        "accion exploratoria",
+        "validacion empirica personal"
+      ],
+      "modeloId": "terapia-cognitiva-beck-depresion-1967",
+      "modelId": "terapia-cognitiva-beck-depresion-1967",
+      "modeloLabel": "Terapia cognitiva (depresión)",
+      "modelLabel": "Terapia cognitiva (depresión)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "m_beck_prediccion",
+      "techniqueId": "m_beck_prediccion",
+      "tecnicaLabel": "Predicción y comprobación conductual",
+      "techniqueLabel": "Predicción y comprobación conductual",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro precisa: formular predicción y comprobarla conductualmente.",
+      "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+    },
+    {
+      "isomorfismoId": "disenar-experimentos-conductuales",
+      "isomorfismoLabel": "Diseñar experimentos conductuales",
+      "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+      "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+      "tags": [
+        "experimento conductual",
+        "testeo de hipotesis",
+        "aprendizaje experiencial",
+        "accion exploratoria",
+        "validacion empirica personal"
+      ],
+      "modeloId": "rebt-terapia-racional-emotiva-ellis",
+      "modelId": "rebt-terapia-racional-emotiva-ellis",
+      "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+      "modelLabel": "Terapia racional emotiva conductual (REBT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_rebt_tareasRacionales",
+      "techniqueId": "p_rebt_tareasRacionales",
+      "tecnicaLabel": "Tareas conductuales racionales",
+      "techniqueLabel": "Tareas conductuales racionales",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Tareas conductuales racionales para comprobar creencias en la práctica.",
+      "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+    },
+    {
+      "isomorfismoId": "disenar-experimentos-conductuales",
+      "isomorfismoLabel": "Diseñar experimentos conductuales",
+      "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+      "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+      "tags": [
+        "experimento conductual",
+        "testeo de hipotesis",
+        "aprendizaje experiencial",
+        "accion exploratoria",
+        "validacion empirica personal"
+      ],
+      "modeloId": "rebt-terapia-racional-emotiva-ellis",
+      "modelId": "rebt-terapia-racional-emotiva-ellis",
+      "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+      "modelLabel": "Terapia racional emotiva conductual (REBT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "m_rebt_prediccion",
+      "techniqueId": "m_rebt_prediccion",
+      "tecnicaLabel": "Predicciones alternativas racionales",
+      "techniqueLabel": "Predicciones alternativas racionales",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro muy precisa: formular predicciones alternativas racionales y contrastarlas.",
+      "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+    },
+    {
+      "isomorfismoId": "disenar-experimentos-conductuales",
+      "isomorfismoLabel": "Diseñar experimentos conductuales",
+      "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+      "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+      "tags": [
+        "experimento conductual",
+        "testeo de hipotesis",
+        "aprendizaje experiencial",
+        "accion exploratoria",
+        "validacion empirica personal"
+      ],
+      "modeloId": "k1kelly55",
+      "modelId": "k1kelly55",
+      "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+      "modelLabel": "Teoría de los Constructos Personales (PCP)",
+      "grupo": "Constructivista",
+      "tecnicaId": "m_kelly_anticipacion",
+      "techniqueId": "m_kelly_anticipacion",
+      "tecnicaLabel": "Experimentos de anticipación",
+      "techniqueLabel": "Experimentos de anticipación",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro muy directa en PCP: experimentar anticipaciones para comprobar constructos.",
+      "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+    },
+    {
       "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
       "isomorfismoLabel": "Exponerse gradualmente a lo evitado",
       "categoria": "Aprendizaje emocional correctivo",
@@ -4205,6 +4698,214 @@
           "estado": "falta_id",
           "nota": "La técnica fuente de Haley encaja, pero no existe aún una micro/procedimiento equivalente en el repo.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-estrategica-1967.json"
+        }
+      ]
+    },
+    "disenar-experimentos-conductuales": {
+      "id": "disenar-experimentos-conductuales",
+      "label": "Diseñar experimentos conductuales",
+      "definicion": "Diseñar acciones deliberadas para poner a prueba hipótesis psicológicas, creencias o predicciones personales, utilizando la experiencia directa como fuente de evidencia.",
+      "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+      "tags": [
+        "experimento conductual",
+        "testeo de hipotesis",
+        "aprendizaje experiencial",
+        "accion exploratoria",
+        "validacion empirica personal"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/disenar-experimentos-conductuales.json",
+      "entries": [
+        {
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "tecnicaId": "p_beck_experimentos",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "techniqueId": "p_beck_experimentos",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Experimentos conductuales",
+          "techniqueLabel": "Experimentos conductuales",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Procedimiento central de Beck para contrastar creencias mediante pruebas en la vida real.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "tecnicaId": "m_beck_prediccion",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "techniqueId": "m_beck_prediccion",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Predicción y comprobación conductual",
+          "techniqueLabel": "Predicción y comprobación conductual",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro precisa: formular predicción y comprobarla conductualmente.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_accion_comprometida",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_accion_comprometida",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+          "techniqueLabel": "Plan de acción comprometida con exposición experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "No aparece un 'values experiment' literal en el repo; este es el procedimiento más cercano porque diseña acciones concretas, graduadas y revisables al servicio de valores.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_paso_5_min",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_paso_5_min",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Paso mínimo de cinco minutos",
+          "techniqueLabel": "Paso mínimo de cinco minutos",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Micro compatible: convierte hipótesis o bloqueo en acción mínima comprobable.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_hacia_contra",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_hacia_contra",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Pregunta hacia o contra valores",
+          "techniqueLabel": "Pregunta hacia o contra valores",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Micro de decisión funcional que ayuda a convertir valores en prueba conductual.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "terapia-metacognitiva-wells-1990",
+          "tecnicaId": "p_mct_modificacion_creencias_positivas",
+          "modelId": "terapia-metacognitiva-wells-1990",
+          "techniqueId": "p_mct_modificacion_creencias_positivas",
+          "modeloLabel": "Terapia metacognitiva (MCT)",
+          "modelLabel": "Terapia metacognitiva (MCT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Modificación de creencias metacognitivas positivas",
+          "techniqueLabel": "Modificación de creencias metacognitivas positivas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Incluye uso de experimentos conductuales para cuestionar la utilidad de la preocupación o rumiación.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-metacognitiva-wells-1990.json"
+        },
+        {
+          "modeloId": "terapia-metacognitiva-wells-1990",
+          "tecnicaId": "m_mct_desconfirmacion_incontrolabilidad",
+          "modelId": "terapia-metacognitiva-wells-1990",
+          "techniqueId": "m_mct_desconfirmacion_incontrolabilidad",
+          "modeloLabel": "Terapia metacognitiva (MCT)",
+          "modelLabel": "Terapia metacognitiva (MCT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Desconfirmación experiencial de la incontrolabilidad del pensamiento",
+          "techniqueLabel": "Desconfirmación experiencial de la incontrolabilidad del pensamiento",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Micro experiencial muy afín al testeo de hipótesis metacognitivas.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-metacognitiva-wells-1990.json"
+        },
+        {
+          "modeloId": "rebt-terapia-racional-emotiva-ellis",
+          "tecnicaId": "p_rebt_tareasRacionales",
+          "modelId": "rebt-terapia-racional-emotiva-ellis",
+          "techniqueId": "p_rebt_tareasRacionales",
+          "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+          "modelLabel": "Terapia racional emotiva conductual (REBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Tareas conductuales racionales",
+          "techniqueLabel": "Tareas conductuales racionales",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Tareas conductuales racionales para comprobar creencias en la práctica.",
+          "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+        },
+        {
+          "modeloId": "rebt-terapia-racional-emotiva-ellis",
+          "tecnicaId": "p_rebt_conductual",
+          "modelId": "rebt-terapia-racional-emotiva-ellis",
+          "techniqueId": "p_rebt_conductual",
+          "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+          "modelLabel": "Terapia racional emotiva conductual (REBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Disputa conductual",
+          "techniqueLabel": "Disputa conductual",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Procedimiento conductual de REBT que también funciona como testeo de hipótesis.",
+          "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+        },
+        {
+          "modeloId": "rebt-terapia-racional-emotiva-ellis",
+          "tecnicaId": "m_rebt_prediccion",
+          "modelId": "rebt-terapia-racional-emotiva-ellis",
+          "techniqueId": "m_rebt_prediccion",
+          "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+          "modelLabel": "Terapia racional emotiva conductual (REBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Predicciones alternativas racionales",
+          "techniqueLabel": "Predicciones alternativas racionales",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro muy precisa: formular predicciones alternativas racionales y contrastarlas.",
+          "sourceFile": "data/Core/modelos/cognitivo/rebt-terapia-racional-emotiva-ellis.json"
+        },
+        {
+          "modeloId": "k1kelly55",
+          "tecnicaId": "m_kelly_anticipacion",
+          "modelId": "k1kelly55",
+          "techniqueId": "m_kelly_anticipacion",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "modelLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Experimentos de anticipación",
+          "techniqueLabel": "Experimentos de anticipación",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro muy directa en PCP: experimentar anticipaciones para comprobar constructos.",
+          "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        },
+        {
+          "modeloId": "k1kelly55",
+          "tecnicaId": "m_kelly_alternativas",
+          "modelId": "k1kelly55",
+          "techniqueId": "m_kelly_alternativas",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "modelLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Construcción de alternativas",
+          "techniqueLabel": "Construcción de alternativas",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Construcción de alternativas que puede convertirse en experimento conductual, aunque no siempre lo implica.",
+          "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
         }
       ]
     },
@@ -5435,6 +6136,9 @@
     "Clarificación operativa del problema": [
       "concretar-el-problema-en-conducta"
     ],
+    "Aprendizaje experiencial y testeo de hipótesis": [
+      "disenar-experimentos-conductuales"
+    ],
     "Aprendizaje emocional correctivo": [
       "exponerse-gradualmente-a-lo-evitado"
     ],
@@ -5518,6 +6222,14 @@
         "tecnicaId": "m_kelly_excepciones",
         "tecnicaLabel": "Explorar excepciones",
         "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "tecnicaId": "m_kelly_anticipacion",
+        "tecnicaLabel": "Experimentos de anticipación",
+        "tecnicaTipo": "micro"
       }
     ],
     "terapia-breve-mri-1974": [
@@ -5593,6 +6305,42 @@
         "categoria": "Excepciones, variación y recursos",
         "tecnicaId": "m_reconciliacion_excepciones",
         "tecnicaLabel": "Exploración de excepciones comunitarias",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-cognitiva-beck-depresion-1967": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "tecnicaId": "p_beck_experimentos",
+        "tecnicaLabel": "Experimentos conductuales",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "tecnicaId": "m_beck_prediccion",
+        "tecnicaLabel": "Predicción y comprobación conductual",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "rebt-terapia-racional-emotiva-ellis": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "tecnicaId": "p_rebt_tareasRacionales",
+        "tecnicaLabel": "Tareas conductuales racionales",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "tecnicaId": "m_rebt_prediccion",
+        "tecnicaLabel": "Predicciones alternativas racionales",
         "tecnicaTipo": "micro"
       }
     ],
@@ -5933,6 +6681,66 @@
         "modeloLabel": "Psicoterapia comunitaria para la reconciliación",
         "tecnicaId": "m_reconciliacion_excepciones",
         "tecnicaLabel": "Exploración de excepciones comunitarias",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_beck_experimentos": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "terapia-cognitiva-beck-depresion-1967",
+        "modeloLabel": "Terapia cognitiva (depresión)",
+        "tecnicaId": "p_beck_experimentos",
+        "tecnicaLabel": "Experimentos conductuales",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_beck_prediccion": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "terapia-cognitiva-beck-depresion-1967",
+        "modeloLabel": "Terapia cognitiva (depresión)",
+        "tecnicaId": "m_beck_prediccion",
+        "tecnicaLabel": "Predicción y comprobación conductual",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_rebt_tareasRacionales": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "rebt-terapia-racional-emotiva-ellis",
+        "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+        "tecnicaId": "p_rebt_tareasRacionales",
+        "tecnicaLabel": "Tareas conductuales racionales",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_rebt_prediccion": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "rebt-terapia-racional-emotiva-ellis",
+        "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+        "tecnicaId": "m_rebt_prediccion",
+        "tecnicaLabel": "Predicciones alternativas racionales",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_kelly_anticipacion": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "k1kelly55",
+        "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+        "tecnicaId": "m_kelly_anticipacion",
+        "tecnicaLabel": "Experimentos de anticipación",
         "tecnicaTipo": "micro"
       }
     ],
@@ -6406,6 +7214,66 @@
         "tecnicaTipo": "micro"
       }
     ],
+    "terapia-cognitiva-beck-depresion-1967::p_beck_experimentos": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "terapia-cognitiva-beck-depresion-1967",
+        "modeloLabel": "Terapia cognitiva (depresión)",
+        "tecnicaId": "p_beck_experimentos",
+        "tecnicaLabel": "Experimentos conductuales",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "terapia-cognitiva-beck-depresion-1967::m_beck_prediccion": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "terapia-cognitiva-beck-depresion-1967",
+        "modeloLabel": "Terapia cognitiva (depresión)",
+        "tecnicaId": "m_beck_prediccion",
+        "tecnicaLabel": "Predicción y comprobación conductual",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "rebt-terapia-racional-emotiva-ellis::p_rebt_tareasRacionales": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "rebt-terapia-racional-emotiva-ellis",
+        "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+        "tecnicaId": "p_rebt_tareasRacionales",
+        "tecnicaLabel": "Tareas conductuales racionales",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "rebt-terapia-racional-emotiva-ellis::m_rebt_prediccion": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "rebt-terapia-racional-emotiva-ellis",
+        "modeloLabel": "Terapia racional emotiva conductual (REBT)",
+        "tecnicaId": "m_rebt_prediccion",
+        "tecnicaLabel": "Predicciones alternativas racionales",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "k1kelly55::m_kelly_anticipacion": [
+      {
+        "isomorfismoId": "disenar-experimentos-conductuales",
+        "isomorfismoLabel": "Diseñar experimentos conductuales",
+        "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "k1kelly55",
+        "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+        "tecnicaId": "m_kelly_anticipacion",
+        "tecnicaLabel": "Experimentos de anticipación",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "unified-protocol-up-barlow-2011::p_up_exposicion_interoceptiva": [
       {
         "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
@@ -6756,9 +7624,9 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 9,
-    "totalEntries": 88,
-    "totalOk": 39,
+    "totalIsomorfismos": 10,
+    "totalEntries": 100,
+    "totalOk": 44,
     "totalFaltaId": 16,
     "totalFaltaModelo": 21,
     "totalDudoso": 0,
