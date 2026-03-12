@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T20:03:47.142Z
+Generado: 2026-03-12T20:06:41.702Z
 
 ## Buscar excepciones al problema
 
@@ -70,6 +70,26 @@ Generado: 2026-03-12T20:03:47.142Z
 - Terapia de Aceptación y Compromiso (ACT) — Expansión somática guiada [parcial]
 - Winnicott – Objeto transicional y ambiente — Handling terapéutico (sostén del cuerpo vivido y del tono somático) [parcial]
 - Winnicott – Objeto transicional y ambiente — Micro-pausa para notar el cuerpo (anclaje suave) [parcial]
+
+## Generar interpretaciones alternativas
+
+- ID: `generar-interpretaciones-alternativas`
+- Categoría: Flexibilización cognitiva y reconstrucción de significado
+- Archivo fuente: `data/indices/isomorfismos/fuente/generar-interpretaciones-alternativas.json`
+- Entradas: 12
+
+- terapia-cognitiva-beck-1967 — p_cbt_generacion_pensamientos_alternativos [falta_modelo]
+- terapia-cognitiva-beck-1967 — m_cbt_buscar_explica_alternativa [falta_modelo]
+- constructivismo-mahoney-1988 — p_mahoney_reconstruccion_significado [falta_modelo]
+- constructivismo-mahoney-1988 — m_mahoney_explorar_marco_interpretativo [falta_modelo]
+- pcp-kelly-1955 — p_pcp_elicitacion_constructos [falta_modelo]
+- pcp-kelly-1955 — p_pcp_experimento_constructos [falta_modelo]
+- terapia-narrativa-white-epston-1990 — p_narr_reautoría_historia [falta_modelo]
+- terapia-narrativa-white-epston-1990 — m_narr_pregunta_significado_alternativo [falta_modelo]
+- Terapia metacognitiva (MCT) — p_mct_desafio_creencias_metacognitivas [falta_id]
+- Terapia de Aceptación y Compromiso (ACT) — m_act_ver_historia_como_historia [falta_id]
+- terapia-interpersonal-klerman-weissman-1984 — p_ipt_reevaluacion_interpersonal [falta_modelo]
+- terapia-racional-emotiva-ellis-1962 — p_rebt_disputa_creencias [falta_modelo]
 
 ## Identificar la función del síntoma
 
