@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-12T11:57:13.813Z",
+    "generatedAt": "2026-03-12T12:05:49.129Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -440,14 +440,16 @@
     {
       "id": "proyectar-la-vida-sin-el-problema",
       "label": "Proyectar la vida sin el problema",
-      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
-      "categoria": "Proyección, motivación y dirección de cambio",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "categoria": "Proyección de futuro, motivación y dirección",
       "tags": [
         "futuro",
+        "contrafactico",
         "motivacion",
         "valores",
-        "excepciones",
-        "direccion"
+        "identidad-posible",
+        "direccion",
+        "esperanza"
       ],
       "sourceFile": "data/indices/isomorfismos/fuente/proyectar-la-vida-sin-el-problema.json",
       "entries": [
@@ -464,7 +466,7 @@
           "tecnicaTipo": "micro",
           "techniqueType": "micro",
           "estado": "ok",
-          "nota": "Corresponde a The Question.",
+          "nota": "Correspondencia directa y casi literal: pregunta qué haría la persona si el síntoma desapareciera, revelando meta vital, evitación y dirección posible.",
           "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
@@ -480,23 +482,71 @@
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Corresponde a la Pregunta Milagro.",
+          "nota": "Correspondencia canónica: proyecta con detalle la vida una vez desaparecido el problema para convertir ese futuro en indicadores concretos de cambio.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
+        },
+        {
+          "modeloId": "terapia-centrada-soluciones-1982",
+          "tecnicaId": "m_sfbt_proyeccion_inmediata",
+          "modelId": "terapia-centrada-soluciones-1982",
+          "techniqueId": "m_sfbt_proyeccion_inmediata",
+          "modeloLabel": "Terapia centrada en soluciones",
+          "modelLabel": "Terapia centrada en soluciones",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Pregunta de proyección inmediata",
+          "techniqueLabel": "Pregunta de proyección inmediata",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Versión micro y cercana del mismo movimiento clínico: imaginar cómo sería la próxima hora, tarde o día si el cambio empezara a ocurrir.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
         },
         {
           "modeloId": "entrevista-motivacional-1983",
-          "tecnicaId": "m_mi_evocar_razones",
+          "tecnicaId": "p_mi_back_forward",
           "modelId": "entrevista-motivacional-1983",
-          "techniqueId": "m_mi_evocar_razones",
+          "techniqueId": "p_mi_back_forward",
           "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
           "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
           "grupo": "Humanista",
-          "tecnicaLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-          "techniqueLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-          "tecnicaTipo": "micro",
-          "techniqueType": "micro",
+          "tecnicaLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+          "techniqueLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Usado como equivalente funcional a la looking forward question.",
+          "nota": "Equivalencia fuerte: explorar el futuro si nada cambia frente al futuro si cambia, evocando discrepancia y self futuro deseable.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        },
+        {
+          "modeloId": "entrevista-motivacional-1983",
+          "tecnicaId": "p_mi_discrepancia",
+          "modelId": "entrevista-motivacional-1983",
+          "techniqueId": "p_mi_discrepancia",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+          "techniqueLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Complemento muy sólido: el futuro imaginado se utiliza para clarificar la distancia entre conducta actual y valores o metas.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        },
+        {
+          "modeloId": "entrevista-motivacional-1983",
+          "tecnicaId": "p_mi_valores_eleccion",
+          "modelId": "entrevista-motivacional-1983",
+          "techniqueId": "p_mi_valores_eleccion",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "techniqueLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Muy relevante cuando la proyección de futuro se usa para revelar qué dirección vital importa realmente y facilitar elección coherente.",
           "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
         },
         {
@@ -512,7 +562,39 @@
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Clarificación estructurada de valores en ausencia del dominio del miedo o la evitación.",
+          "nota": "Mejor equivalente funcional en el repo: al imaginar una vida menos gobernada por miedo o ansiedad, se clarifica qué dirección valiosa quiere elegirse.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_hacia_contra",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_hacia_contra",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Pregunta hacia o contra valores",
+          "techniqueLabel": "Pregunta hacia o contra valores",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención muy congruente: discrimina si una acción acerca o aleja de la persona que se quiere ser cuando el miedo deja de mandar.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_accion_comprometida",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_accion_comprometida",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+          "techniqueLabel": "Plan de acción comprometida con exposición experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "No proyecta por sí sola la vida sin el problema, pero traduce esa dirección valiosa imaginada en conducta concreta y sostenida.",
           "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
         }
       ]
@@ -1077,27 +1159,31 @@
     {
       "id": "proyectar-la-vida-sin-el-problema",
       "label": "Proyectar la vida sin el problema",
-      "categoria": "Proyección, motivación y dirección de cambio",
-      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
       "tags": [
         "futuro",
+        "contrafactico",
         "motivacion",
         "valores",
-        "excepciones",
-        "direccion"
+        "identidad-posible",
+        "direccion",
+        "esperanza"
       ],
       "records": [
         {
           "isomorfismoId": "proyectar-la-vida-sin-el-problema",
           "isomorfismoLabel": "Proyectar la vida sin el problema",
-          "categoria": "Proyección, motivación y dirección de cambio",
-          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+          "categoria": "Proyección de futuro, motivación y dirección",
+          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
           "tags": [
             "futuro",
+            "contrafactico",
             "motivacion",
             "valores",
-            "excepciones",
-            "direccion"
+            "identidad-posible",
+            "direccion",
+            "esperanza"
           ],
           "modeloId": "psicologia-individual-adler",
           "modelId": "psicologia-individual-adler",
@@ -1111,20 +1197,22 @@
           "tecnicaTipo": "micro",
           "techniqueType": "micro",
           "estado": "ok",
-          "nota": "Corresponde a The Question.",
+          "nota": "Correspondencia directa y casi literal: pregunta qué haría la persona si el síntoma desapareciera, revelando meta vital, evitación y dirección posible.",
           "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "isomorfismoId": "proyectar-la-vida-sin-el-problema",
           "isomorfismoLabel": "Proyectar la vida sin el problema",
-          "categoria": "Proyección, motivación y dirección de cambio",
-          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+          "categoria": "Proyección de futuro, motivación y dirección",
+          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
           "tags": [
             "futuro",
+            "contrafactico",
             "motivacion",
             "valores",
-            "excepciones",
-            "direccion"
+            "identidad-posible",
+            "direccion",
+            "esperanza"
           ],
           "modeloId": "terapia-centrada-soluciones-1982",
           "modelId": "terapia-centrada-soluciones-1982",
@@ -1138,47 +1226,138 @@
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Corresponde a la Pregunta Milagro.",
+          "nota": "Correspondencia canónica: proyecta con detalle la vida una vez desaparecido el problema para convertir ese futuro en indicadores concretos de cambio.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
         },
         {
           "isomorfismoId": "proyectar-la-vida-sin-el-problema",
           "isomorfismoLabel": "Proyectar la vida sin el problema",
-          "categoria": "Proyección, motivación y dirección de cambio",
-          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+          "categoria": "Proyección de futuro, motivación y dirección",
+          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
           "tags": [
             "futuro",
+            "contrafactico",
             "motivacion",
             "valores",
-            "excepciones",
-            "direccion"
+            "identidad-posible",
+            "direccion",
+            "esperanza"
+          ],
+          "modeloId": "terapia-centrada-soluciones-1982",
+          "modelId": "terapia-centrada-soluciones-1982",
+          "modeloLabel": "Terapia centrada en soluciones",
+          "modelLabel": "Terapia centrada en soluciones",
+          "grupo": "Sistémico",
+          "tecnicaId": "m_sfbt_proyeccion_inmediata",
+          "techniqueId": "m_sfbt_proyeccion_inmediata",
+          "tecnicaLabel": "Pregunta de proyección inmediata",
+          "techniqueLabel": "Pregunta de proyección inmediata",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Versión micro y cercana del mismo movimiento clínico: imaginar cómo sería la próxima hora, tarde o día si el cambio empezara a ocurrir.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
+        },
+        {
+          "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+          "isomorfismoLabel": "Proyectar la vida sin el problema",
+          "categoria": "Proyección de futuro, motivación y dirección",
+          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+          "tags": [
+            "futuro",
+            "contrafactico",
+            "motivacion",
+            "valores",
+            "identidad-posible",
+            "direccion",
+            "esperanza"
           ],
           "modeloId": "entrevista-motivacional-1983",
           "modelId": "entrevista-motivacional-1983",
           "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
           "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
           "grupo": "Humanista",
-          "tecnicaId": "m_mi_evocar_razones",
-          "techniqueId": "m_mi_evocar_razones",
-          "tecnicaLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-          "techniqueLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-          "tecnicaTipo": "micro",
-          "techniqueType": "micro",
+          "tecnicaId": "p_mi_back_forward",
+          "techniqueId": "p_mi_back_forward",
+          "tecnicaLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+          "techniqueLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Usado como equivalente funcional a la looking forward question.",
+          "nota": "Equivalencia fuerte: explorar el futuro si nada cambia frente al futuro si cambia, evocando discrepancia y self futuro deseable.",
           "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
         },
         {
           "isomorfismoId": "proyectar-la-vida-sin-el-problema",
           "isomorfismoLabel": "Proyectar la vida sin el problema",
-          "categoria": "Proyección, motivación y dirección de cambio",
-          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+          "categoria": "Proyección de futuro, motivación y dirección",
+          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
           "tags": [
             "futuro",
+            "contrafactico",
             "motivacion",
             "valores",
-            "excepciones",
-            "direccion"
+            "identidad-posible",
+            "direccion",
+            "esperanza"
+          ],
+          "modeloId": "entrevista-motivacional-1983",
+          "modelId": "entrevista-motivacional-1983",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaId": "p_mi_discrepancia",
+          "techniqueId": "p_mi_discrepancia",
+          "tecnicaLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+          "techniqueLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Complemento muy sólido: el futuro imaginado se utiliza para clarificar la distancia entre conducta actual y valores o metas.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        },
+        {
+          "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+          "isomorfismoLabel": "Proyectar la vida sin el problema",
+          "categoria": "Proyección de futuro, motivación y dirección",
+          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+          "tags": [
+            "futuro",
+            "contrafactico",
+            "motivacion",
+            "valores",
+            "identidad-posible",
+            "direccion",
+            "esperanza"
+          ],
+          "modeloId": "entrevista-motivacional-1983",
+          "modelId": "entrevista-motivacional-1983",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaId": "p_mi_valores_eleccion",
+          "techniqueId": "p_mi_valores_eleccion",
+          "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "techniqueLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Muy relevante cuando la proyección de futuro se usa para revelar qué dirección vital importa realmente y facilitar elección coherente.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        },
+        {
+          "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+          "isomorfismoLabel": "Proyectar la vida sin el problema",
+          "categoria": "Proyección de futuro, motivación y dirección",
+          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+          "tags": [
+            "futuro",
+            "contrafactico",
+            "motivacion",
+            "valores",
+            "identidad-posible",
+            "direccion",
+            "esperanza"
           ],
           "modeloId": "act-hayes-strosahl-wilson-1999",
           "modelId": "act-hayes-strosahl-wilson-1999",
@@ -1192,7 +1371,36 @@
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Clarificación estructurada de valores en ausencia del dominio del miedo o la evitación.",
+          "nota": "Mejor equivalente funcional en el repo: al imaginar una vida menos gobernada por miedo o ansiedad, se clarifica qué dirección valiosa quiere elegirse.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+          "isomorfismoLabel": "Proyectar la vida sin el problema",
+          "categoria": "Proyección de futuro, motivación y dirección",
+          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+          "tags": [
+            "futuro",
+            "contrafactico",
+            "motivacion",
+            "valores",
+            "identidad-posible",
+            "direccion",
+            "esperanza"
+          ],
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "m_act_hacia_contra",
+          "techniqueId": "m_act_hacia_contra",
+          "tecnicaLabel": "Pregunta hacia o contra valores",
+          "techniqueLabel": "Pregunta hacia o contra valores",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención muy congruente: discrimina si una acción acerca o aleja de la persona que se quiere ser cuando el miedo deja de mandar.",
           "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
         }
       ]
@@ -1715,14 +1923,16 @@
     {
       "isomorfismoId": "proyectar-la-vida-sin-el-problema",
       "isomorfismoLabel": "Proyectar la vida sin el problema",
-      "categoria": "Proyección, motivación y dirección de cambio",
-      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
       "tags": [
         "futuro",
+        "contrafactico",
         "motivacion",
         "valores",
-        "excepciones",
-        "direccion"
+        "identidad-posible",
+        "direccion",
+        "esperanza"
       ],
       "modeloId": "psicologia-individual-adler",
       "modelId": "psicologia-individual-adler",
@@ -1736,20 +1946,22 @@
       "tecnicaTipo": "micro",
       "techniqueType": "micro",
       "estado": "ok",
-      "nota": "Corresponde a The Question.",
+      "nota": "Correspondencia directa y casi literal: pregunta qué haría la persona si el síntoma desapareciera, revelando meta vital, evitación y dirección posible.",
       "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
     },
     {
       "isomorfismoId": "proyectar-la-vida-sin-el-problema",
       "isomorfismoLabel": "Proyectar la vida sin el problema",
-      "categoria": "Proyección, motivación y dirección de cambio",
-      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
       "tags": [
         "futuro",
+        "contrafactico",
         "motivacion",
         "valores",
-        "excepciones",
-        "direccion"
+        "identidad-posible",
+        "direccion",
+        "esperanza"
       ],
       "modeloId": "terapia-centrada-soluciones-1982",
       "modelId": "terapia-centrada-soluciones-1982",
@@ -1763,47 +1975,138 @@
       "tecnicaTipo": "procedimiento",
       "techniqueType": "procedimiento",
       "estado": "ok",
-      "nota": "Corresponde a la Pregunta Milagro.",
+      "nota": "Correspondencia canónica: proyecta con detalle la vida una vez desaparecido el problema para convertir ese futuro en indicadores concretos de cambio.",
       "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
     },
     {
       "isomorfismoId": "proyectar-la-vida-sin-el-problema",
       "isomorfismoLabel": "Proyectar la vida sin el problema",
-      "categoria": "Proyección, motivación y dirección de cambio",
-      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
       "tags": [
         "futuro",
+        "contrafactico",
         "motivacion",
         "valores",
-        "excepciones",
-        "direccion"
+        "identidad-posible",
+        "direccion",
+        "esperanza"
+      ],
+      "modeloId": "terapia-centrada-soluciones-1982",
+      "modelId": "terapia-centrada-soluciones-1982",
+      "modeloLabel": "Terapia centrada en soluciones",
+      "modelLabel": "Terapia centrada en soluciones",
+      "grupo": "Sistémico",
+      "tecnicaId": "m_sfbt_proyeccion_inmediata",
+      "techniqueId": "m_sfbt_proyeccion_inmediata",
+      "tecnicaLabel": "Pregunta de proyección inmediata",
+      "techniqueLabel": "Pregunta de proyección inmediata",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Versión micro y cercana del mismo movimiento clínico: imaginar cómo sería la próxima hora, tarde o día si el cambio empezara a ocurrir.",
+      "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
+    },
+    {
+      "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+      "isomorfismoLabel": "Proyectar la vida sin el problema",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "tags": [
+        "futuro",
+        "contrafactico",
+        "motivacion",
+        "valores",
+        "identidad-posible",
+        "direccion",
+        "esperanza"
       ],
       "modeloId": "entrevista-motivacional-1983",
       "modelId": "entrevista-motivacional-1983",
       "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
       "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
       "grupo": "Humanista",
-      "tecnicaId": "m_mi_evocar_razones",
-      "techniqueId": "m_mi_evocar_razones",
-      "tecnicaLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-      "techniqueLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-      "tecnicaTipo": "micro",
-      "techniqueType": "micro",
+      "tecnicaId": "p_mi_back_forward",
+      "techniqueId": "p_mi_back_forward",
+      "tecnicaLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+      "techniqueLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
       "estado": "ok",
-      "nota": "Usado como equivalente funcional a la looking forward question.",
+      "nota": "Equivalencia fuerte: explorar el futuro si nada cambia frente al futuro si cambia, evocando discrepancia y self futuro deseable.",
       "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
     },
     {
       "isomorfismoId": "proyectar-la-vida-sin-el-problema",
       "isomorfismoLabel": "Proyectar la vida sin el problema",
-      "categoria": "Proyección, motivación y dirección de cambio",
-      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
       "tags": [
         "futuro",
+        "contrafactico",
         "motivacion",
         "valores",
-        "excepciones",
-        "direccion"
+        "identidad-posible",
+        "direccion",
+        "esperanza"
+      ],
+      "modeloId": "entrevista-motivacional-1983",
+      "modelId": "entrevista-motivacional-1983",
+      "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "grupo": "Humanista",
+      "tecnicaId": "p_mi_discrepancia",
+      "techniqueId": "p_mi_discrepancia",
+      "tecnicaLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+      "techniqueLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Complemento muy sólido: el futuro imaginado se utiliza para clarificar la distancia entre conducta actual y valores o metas.",
+      "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+    },
+    {
+      "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+      "isomorfismoLabel": "Proyectar la vida sin el problema",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "tags": [
+        "futuro",
+        "contrafactico",
+        "motivacion",
+        "valores",
+        "identidad-posible",
+        "direccion",
+        "esperanza"
+      ],
+      "modeloId": "entrevista-motivacional-1983",
+      "modelId": "entrevista-motivacional-1983",
+      "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "grupo": "Humanista",
+      "tecnicaId": "p_mi_valores_eleccion",
+      "techniqueId": "p_mi_valores_eleccion",
+      "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+      "techniqueLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Muy relevante cuando la proyección de futuro se usa para revelar qué dirección vital importa realmente y facilitar elección coherente.",
+      "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+    },
+    {
+      "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+      "isomorfismoLabel": "Proyectar la vida sin el problema",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "tags": [
+        "futuro",
+        "contrafactico",
+        "motivacion",
+        "valores",
+        "identidad-posible",
+        "direccion",
+        "esperanza"
       ],
       "modeloId": "act-hayes-strosahl-wilson-1999",
       "modelId": "act-hayes-strosahl-wilson-1999",
@@ -1817,7 +2120,36 @@
       "tecnicaTipo": "procedimiento",
       "techniqueType": "procedimiento",
       "estado": "ok",
-      "nota": "Clarificación estructurada de valores en ausencia del dominio del miedo o la evitación.",
+      "nota": "Mejor equivalente funcional en el repo: al imaginar una vida menos gobernada por miedo o ansiedad, se clarifica qué dirección valiosa quiere elegirse.",
+      "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+    },
+    {
+      "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+      "isomorfismoLabel": "Proyectar la vida sin el problema",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "tags": [
+        "futuro",
+        "contrafactico",
+        "motivacion",
+        "valores",
+        "identidad-posible",
+        "direccion",
+        "esperanza"
+      ],
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "m_act_hacia_contra",
+      "techniqueId": "m_act_hacia_contra",
+      "tecnicaLabel": "Pregunta hacia o contra valores",
+      "techniqueLabel": "Pregunta hacia o contra valores",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Microintervención muy congruente: discrimina si una acción acerca o aleja de la persona que se quiere ser cuando el miedo deja de mandar.",
       "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
     }
   ],
@@ -2255,14 +2587,16 @@
     "proyectar-la-vida-sin-el-problema": {
       "id": "proyectar-la-vida-sin-el-problema",
       "label": "Proyectar la vida sin el problema",
-      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
-      "categoria": "Proyección, motivación y dirección de cambio",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "categoria": "Proyección de futuro, motivación y dirección",
       "tags": [
         "futuro",
+        "contrafactico",
         "motivacion",
         "valores",
-        "excepciones",
-        "direccion"
+        "identidad-posible",
+        "direccion",
+        "esperanza"
       ],
       "sourceFile": "data/indices/isomorfismos/fuente/proyectar-la-vida-sin-el-problema.json",
       "entries": [
@@ -2279,7 +2613,7 @@
           "tecnicaTipo": "micro",
           "techniqueType": "micro",
           "estado": "ok",
-          "nota": "Corresponde a The Question.",
+          "nota": "Correspondencia directa y casi literal: pregunta qué haría la persona si el síntoma desapareciera, revelando meta vital, evitación y dirección posible.",
           "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
@@ -2295,23 +2629,71 @@
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Corresponde a la Pregunta Milagro.",
+          "nota": "Correspondencia canónica: proyecta con detalle la vida una vez desaparecido el problema para convertir ese futuro en indicadores concretos de cambio.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
+        },
+        {
+          "modeloId": "terapia-centrada-soluciones-1982",
+          "tecnicaId": "m_sfbt_proyeccion_inmediata",
+          "modelId": "terapia-centrada-soluciones-1982",
+          "techniqueId": "m_sfbt_proyeccion_inmediata",
+          "modeloLabel": "Terapia centrada en soluciones",
+          "modelLabel": "Terapia centrada en soluciones",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Pregunta de proyección inmediata",
+          "techniqueLabel": "Pregunta de proyección inmediata",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Versión micro y cercana del mismo movimiento clínico: imaginar cómo sería la próxima hora, tarde o día si el cambio empezara a ocurrir.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
         },
         {
           "modeloId": "entrevista-motivacional-1983",
-          "tecnicaId": "m_mi_evocar_razones",
+          "tecnicaId": "p_mi_back_forward",
           "modelId": "entrevista-motivacional-1983",
-          "techniqueId": "m_mi_evocar_razones",
+          "techniqueId": "p_mi_back_forward",
           "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
           "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
           "grupo": "Humanista",
-          "tecnicaLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-          "techniqueLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-          "tecnicaTipo": "micro",
-          "techniqueType": "micro",
+          "tecnicaLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+          "techniqueLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Usado como equivalente funcional a la looking forward question.",
+          "nota": "Equivalencia fuerte: explorar el futuro si nada cambia frente al futuro si cambia, evocando discrepancia y self futuro deseable.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        },
+        {
+          "modeloId": "entrevista-motivacional-1983",
+          "tecnicaId": "p_mi_discrepancia",
+          "modelId": "entrevista-motivacional-1983",
+          "techniqueId": "p_mi_discrepancia",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+          "techniqueLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Complemento muy sólido: el futuro imaginado se utiliza para clarificar la distancia entre conducta actual y valores o metas.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        },
+        {
+          "modeloId": "entrevista-motivacional-1983",
+          "tecnicaId": "p_mi_valores_eleccion",
+          "modelId": "entrevista-motivacional-1983",
+          "techniqueId": "p_mi_valores_eleccion",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "techniqueLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Muy relevante cuando la proyección de futuro se usa para revelar qué dirección vital importa realmente y facilitar elección coherente.",
           "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
         },
         {
@@ -2327,7 +2709,39 @@
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Clarificación estructurada de valores en ausencia del dominio del miedo o la evitación.",
+          "nota": "Mejor equivalente funcional en el repo: al imaginar una vida menos gobernada por miedo o ansiedad, se clarifica qué dirección valiosa quiere elegirse.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_hacia_contra",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_hacia_contra",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Pregunta hacia o contra valores",
+          "techniqueLabel": "Pregunta hacia o contra valores",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención muy congruente: discrimina si una acción acerca o aleja de la persona que se quiere ser cuando el miedo deja de mandar.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_accion_comprometida",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_accion_comprometida",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+          "techniqueLabel": "Plan de acción comprometida con exposición experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "No proyecta por sí sola la vida sin el problema, pero traduce esa dirección valiosa imaginada en conducta concreta y sostenida.",
           "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
         }
       ]
@@ -2343,7 +2757,7 @@
     "Nombrado, formulación y clarificación": [
       "nombrar-el-problema"
     ],
-    "Proyección, motivación y dirección de cambio": [
+    "Proyección de futuro, motivación y dirección": [
       "proyectar-la-vida-sin-el-problema"
     ]
   },
@@ -2368,10 +2782,18 @@
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "tecnicaId": "p_sfbt_pregunta_milagro",
         "tecnicaLabel": "Pregunta milagro",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "tecnicaId": "m_sfbt_proyeccion_inmediata",
+        "tecnicaLabel": "Pregunta de proyección inmediata",
+        "tecnicaTipo": "micro"
       }
     ],
     "terapia-narrativa-white-epston": [
@@ -2498,7 +2920,7 @@
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "tecnicaId": "m_adler_the_question",
         "tecnicaLabel": "The question",
         "tecnicaTipo": "micro"
@@ -2546,20 +2968,44 @@
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
-        "tecnicaId": "m_mi_evocar_razones",
-        "tecnicaLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-        "tecnicaTipo": "micro"
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "tecnicaId": "p_mi_back_forward",
+        "tecnicaLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "tecnicaId": "p_mi_discrepancia",
+        "tecnicaLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "tecnicaId": "p_mi_valores_eleccion",
+        "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "act-hayes-strosahl-wilson-1999": [
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "tecnicaId": "p_act_valores",
         "tecnicaLabel": "Clarificación estructurada de valores",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "tecnicaId": "m_act_hacia_contra",
+        "tecnicaLabel": "Pregunta hacia o contra valores",
+        "tecnicaTipo": "micro"
       }
     ]
   },
@@ -2796,7 +3242,7 @@
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "modeloId": "psicologia-individual-adler",
         "modeloLabel": "Psicología individual",
         "tecnicaId": "m_adler_the_question",
@@ -2808,7 +3254,7 @@
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "modeloId": "terapia-centrada-soluciones-1982",
         "modeloLabel": "Terapia centrada en soluciones",
         "tecnicaId": "p_sfbt_pregunta_milagro",
@@ -2816,28 +3262,76 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
-    "m_mi_evocar_razones": [
+    "m_sfbt_proyeccion_inmediata": [
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "terapia-centrada-soluciones-1982",
+        "modeloLabel": "Terapia centrada en soluciones",
+        "tecnicaId": "m_sfbt_proyeccion_inmediata",
+        "tecnicaLabel": "Pregunta de proyección inmediata",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_mi_back_forward": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "modeloId": "entrevista-motivacional-1983",
         "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
-        "tecnicaId": "m_mi_evocar_razones",
-        "tecnicaLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-        "tecnicaTipo": "micro"
+        "tecnicaId": "p_mi_back_forward",
+        "tecnicaLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "p_mi_discrepancia": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "entrevista-motivacional-1983",
+        "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+        "tecnicaId": "p_mi_discrepancia",
+        "tecnicaLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "p_mi_valores_eleccion": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "entrevista-motivacional-1983",
+        "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+        "tecnicaId": "p_mi_valores_eleccion",
+        "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "p_act_valores": [
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "modeloId": "act-hayes-strosahl-wilson-1999",
         "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
         "tecnicaId": "p_act_valores",
         "tecnicaLabel": "Clarificación estructurada de valores",
         "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_act_hacia_contra": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "m_act_hacia_contra",
+        "tecnicaLabel": "Pregunta hacia o contra valores",
+        "tecnicaTipo": "micro"
       }
     ]
   },
@@ -3074,7 +3568,7 @@
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "modeloId": "psicologia-individual-adler",
         "modeloLabel": "Psicología individual",
         "tecnicaId": "m_adler_the_question",
@@ -3086,7 +3580,7 @@
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "modeloId": "terapia-centrada-soluciones-1982",
         "modeloLabel": "Terapia centrada en soluciones",
         "tecnicaId": "p_sfbt_pregunta_milagro",
@@ -3094,35 +3588,83 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
-    "entrevista-motivacional-1983::m_mi_evocar_razones": [
+    "terapia-centrada-soluciones-1982::m_sfbt_proyeccion_inmediata": [
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "terapia-centrada-soluciones-1982",
+        "modeloLabel": "Terapia centrada en soluciones",
+        "tecnicaId": "m_sfbt_proyeccion_inmediata",
+        "tecnicaLabel": "Pregunta de proyección inmediata",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "entrevista-motivacional-1983::p_mi_back_forward": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "modeloId": "entrevista-motivacional-1983",
         "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
-        "tecnicaId": "m_mi_evocar_razones",
-        "tecnicaLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
-        "tecnicaTipo": "micro"
+        "tecnicaId": "p_mi_back_forward",
+        "tecnicaLabel": "Mirar atrás y mirar adelante (Looking back/forward)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "entrevista-motivacional-1983::p_mi_discrepancia": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "entrevista-motivacional-1983",
+        "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+        "tecnicaId": "p_mi_discrepancia",
+        "tecnicaLabel": "Desarrollar discrepancia (conducta actual vs valores/metas)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "entrevista-motivacional-1983::p_mi_valores_eleccion": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "entrevista-motivacional-1983",
+        "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+        "tecnicaId": "p_mi_valores_eleccion",
+        "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "act-hayes-strosahl-wilson-1999::p_act_valores": [
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
         "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección, motivación y dirección de cambio",
+        "categoria": "Proyección de futuro, motivación y dirección",
         "modeloId": "act-hayes-strosahl-wilson-1999",
         "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
         "tecnicaId": "p_act_valores",
         "tecnicaLabel": "Clarificación estructurada de valores",
         "tecnicaTipo": "procedimiento"
       }
+    ],
+    "act-hayes-strosahl-wilson-1999::m_act_hacia_contra": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "m_act_hacia_contra",
+        "tecnicaLabel": "Pregunta hacia o contra valores",
+        "tecnicaTipo": "micro"
+      }
     ]
   },
   "stats": {
     "totalIsomorfismos": 4,
-    "totalEntries": 28,
-    "totalOk": 23,
+    "totalEntries": 33,
+    "totalOk": 27,
     "totalFaltaId": 0,
     "totalFaltaModelo": 2,
     "totalDudoso": 0,

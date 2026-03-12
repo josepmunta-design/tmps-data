@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T11:57:13.813Z
+Generado: 2026-03-12T12:05:49.129Z
 
 ## Buscar excepciones al problema
 
@@ -53,11 +53,16 @@ Generado: 2026-03-12T11:57:13.813Z
 ## Proyectar la vida sin el problema
 
 - ID: `proyectar-la-vida-sin-el-problema`
-- Categoría: Proyección, motivación y dirección de cambio
+- Categoría: Proyección de futuro, motivación y dirección
 - Archivo fuente: `data/indices/isomorfismos/fuente/proyectar-la-vida-sin-el-problema.json`
-- Entradas: 4
+- Entradas: 9
 
 - Psicología individual — The question [ok]
 - Terapia centrada en soluciones — Pregunta milagro [ok]
-- Entrevista Motivacional (Motivational Interviewing, MI) — Pregunta evocadora de razones (¿qué te preocupa de seguir igual?) [ok]
+- Terapia centrada en soluciones — Pregunta de proyección inmediata [ok]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Mirar atrás y mirar adelante (Looking back/forward) [ok]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Desarrollar discrepancia (conducta actual vs valores/metas) [ok]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Resolver ambivalencia con valores (clarificación orientada a elección) [ok]
 - Terapia de Aceptación y Compromiso (ACT) — Clarificación estructurada de valores [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Pregunta hacia o contra valores [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Plan de acción comprometida con exposición experiencial [parcial]
