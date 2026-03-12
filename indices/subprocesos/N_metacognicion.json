@@ -1,6 +1,6 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-03-12T19:26:53.290Z",
+  "updatedAt": "2026-03-12T19:48:31.831Z",
   "totalModelos": 133,
   "modelos": [
     {
@@ -361,6 +361,27 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_act_evitacion_experiencial",
+          "nombre": "Análisis explícito de evitación experiencial",
+          "texto": "Procedimiento de exploración funcional en el que el terapeuta ayuda a identificar conductas abiertas o encubiertas utilizadas para evitar, suprimir o controlar pensamientos, emociones, recuerdos o sensaciones internas. Se analizan ejemplos concretos y sus consecuencias a corto y largo plazo para mostrar cómo la evitación experiencial mantiene el problema y restringe la vida conductual. Referencia: Hayes, Strosahl & Wilson (1999, 2012).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_act_workability",
+          "nombre": "Análisis de funcionabilidad (workability)",
+          "texto": "Procedimiento que evalúa si una conducta, regla verbal o estrategia mental funciona realmente al servicio de la vida que la persona quiere construir. En lugar de debatir la veracidad del pensamiento, se analiza si su seguimiento amplía o restringe la vida del paciente, facilitando decisiones basadas en utilidad contextual. Referencia: Hayes, Strosahl & Wilson (1999, 2012); Harris (2009).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_act_choice_point",
+          "nombre": "Entrenamiento en punto de elección (choice point)",
+          "texto": "Procedimiento que enseña a identificar momentos concretos donde se abre una bifurcación conductual entre movimientos guiados por evitación experiencial y acciones orientadas por valores. El paciente aprende a detectar estas decisiones en tiempo real y elegir conductas que acerquen a la vida que quiere construir. Referencia: Harris (2009); Polk et al. (2016).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_act_estoy_teniendo_el_pensamiento",
           "nombre": "Etiqueta metacognitiva básica",
           "texto": "Microintervención de defusión que consiste en reformular un pensamiento literal añadiendo la frase 'estoy teniendo el pensamiento de que…', desplazando la experiencia de contenido a evento mental observado. No se discute la veracidad del pensamiento, sino su función, generando distancia psicológica inmediata y reduciendo su control conductual. Referencia: Hayes, Strosahl & Wilson (1999, 2012).",
@@ -385,6 +406,20 @@
           "codigo": "m_act_registro_funcional",
           "nombre": "Registro funcional evitación vs acción valiosa",
           "texto": "Hoja breve que registra disparador, experiencia interna, conducta de evitación, alivio inmediato, coste a largo plazo y alternativa valiosa posible, consolidando aprendizaje funcional entre sesiones. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_act_nominar_evitacion",
+          "nombre": "Nombrar la evitación en vivo",
+          "texto": "Microintervención en la que el terapeuta señala suavemente cuando aparece una conducta de evitación experiencial durante la sesión o en ejemplos recientes, ayudando al paciente a reconocer el patrón en tiempo real. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_act_funciona_para_ti",
+          "nombre": "Pregunta de funcionabilidad",
+          "texto": "Pregunta breve que invita a evaluar una conducta o estrategia mental en términos de si está ayudando realmente a construir la vida deseada o si está manteniendo el problema. Referencia: Hayes, Strosahl & Wilson (1999).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

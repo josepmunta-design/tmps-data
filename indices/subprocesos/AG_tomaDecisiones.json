@@ -1,6 +1,6 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-03-12T19:26:53.290Z",
+  "updatedAt": "2026-03-12T19:48:31.831Z",
   "totalModelos": 78,
   "modelos": [
     {
@@ -48,9 +48,30 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_act_workability",
+          "nombre": "Análisis de funcionabilidad (workability)",
+          "texto": "Procedimiento que evalúa si una conducta, regla verbal o estrategia mental funciona realmente al servicio de la vida que la persona quiere construir. En lugar de debatir la veracidad del pensamiento, se analiza si su seguimiento amplía o restringe la vida del paciente, facilitando decisiones basadas en utilidad contextual. Referencia: Hayes, Strosahl & Wilson (1999, 2012); Harris (2009).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_act_choice_point",
+          "nombre": "Entrenamiento en punto de elección (choice point)",
+          "texto": "Procedimiento que enseña a identificar momentos concretos donde se abre una bifurcación conductual entre movimientos guiados por evitación experiencial y acciones orientadas por valores. El paciente aprende a detectar estas decisiones en tiempo real y elegir conductas que acerquen a la vida que quiere construir. Referencia: Harris (2009); Polk et al. (2016).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_act_hacia_contra",
           "nombre": "Pregunta hacia o contra valores",
           "texto": "Intervención breve que pregunta ante una conducta inminente: '¿esto te acerca o te aleja de la persona que quieres ser?', facilitando discriminación funcional inmediata entre evitación y acción valiosa. Referencia: Hayes, Strosahl & Wilson (2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_act_momento_eleccion",
+          "nombre": "Señalar momento de elección",
+          "texto": "Intervención breve que identifica explícitamente que el paciente está ante un punto de decisión entre evitación y acción valiosa, facilitando conciencia y elección deliberada. Referencia: Harris (2009).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
