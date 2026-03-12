@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T11:31:46.046Z
+Generado: 2026-03-12T11:40:42.339Z
 
 ## Buscar excepciones al problema
 
@@ -11,7 +11,7 @@ Generado: 2026-03-12T11:31:46.046Z
 
 - Terapia centrada en soluciones — Pregunta de excepción parcial [ok]
 - Hipnosis clínica ericksoniana (Milton H. Erickson) — Utilización de resistencias [ok]
-- Terapia narrativa — Preguntar por valores implicados en la resistencia [ok]
+- Terapia narrativa — Exploración de excepciones al problema [ok]
 - Teoría de los Constructos Personales (PCP) — SIN ID [falta_id]
 
 ## Externalización del problema
