@@ -1,11 +1,12 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T10:15:13.792Z
+Generado: 2026-03-12T11:13:19.227Z
 
 ## Buscar excepciones al problema
 
 - ID: `buscar-excepciones-al-problema`
 - Categoría: Excepciones, variación y recursos
+- Archivo fuente: `data/indices/isomorfismos/fuente/buscar-excepciones-al-problema.json`
 - Entradas: 4
 
 - Terapia centrada en soluciones — Pregunta de excepción parcial [ok]
@@ -17,6 +18,7 @@ Generado: 2026-03-12T10:15:13.792Z
 
 - ID: `externalizacion-problema`
 - Categoría: Distanciamiento y observación
+- Archivo fuente: `data/indices/isomorfismos/fuente/externalizacion-problema.json`
 - Entradas: 2
 
 - terapia-narrativa-white-epston-1990 — m_nar_externalizacion_problema [falta_modelo]
@@ -26,6 +28,7 @@ Generado: 2026-03-12T10:15:13.792Z
 
 - ID: `nombrar-el-problema`
 - Categoría: Nombrado, formulación y clarificación
+- Archivo fuente: `data/indices/isomorfismos/fuente/nombrar-el-problema.json`
 - Entradas: 3
 
 - Terapia narrativa — Nombrar al problema [ok]
@@ -36,6 +39,7 @@ Generado: 2026-03-12T10:15:13.792Z
 
 - ID: `proyectar-la-vida-sin-el-problema`
 - Categoría: Proyección, motivación y dirección de cambio
+- Archivo fuente: `data/indices/isomorfismos/fuente/proyectar-la-vida-sin-el-problema.json`
 - Entradas: 4
 
 - Psicología individual — The question [ok]
