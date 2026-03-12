@@ -6518,15 +6518,28 @@ async function fetchJson(url){
   if(!r.ok) throw new Error("HTTP "+r.status+" "+url);
   return await r.json();
 }
+function buildIsomorphismUrlCandidates(relPath){
+  const clean = String(relPath || '').replace(/^\/+/, '');
+  const rootLike = [
+    `${location.origin}/${clean}`,
+    `${location.origin}/data/${clean}`,
+    `${cdnBase()}/${clean}`,
+    `${cdnBase()}/data/${clean}`,
+    gh(clean)
+  ];
+
+  const pageRelative = [
+    new URL(clean, location.href).href,
+    new URL(`./${clean}`, location.href).href,
+    new URL(`data/${clean}`, location.href).href,
+    new URL(`./data/${clean}`, location.href).href
+  ];
+
+  return [...new Set([...pageRelative, ...rootLike])];
+}
 async function loadIsomorphismIndex(){
   try{
-    const lookupUrls = [
-      `${location.origin}/data/indices/isomorfismos/iso_lookup.json`,
-      `${cdnBase()}/data/indices/isomorfismos/iso_lookup.json`,
-      gh('indices/isomorfismos/iso_lookup.json'),
-      `${location.origin}/indices/isomorfismos/iso_lookup.json`,
-      `${cdnBase()}/indices/isomorfismos/iso_lookup.json`
-    ];
+    const lookupUrls = buildIsomorphismUrlCandidates('indices/isomorfismos/iso_lookup.json');
 
     for (const url of lookupUrls){
       const rawLookup = await fetchJson(url, { bust:true });
@@ -6550,11 +6563,7 @@ async function loadIsomorphismIndex(){
       return lookupIndex;
     }
 
-    const isoUrls = [
-      `${cdnBase()}/indices/isomorfismos/iso_lista.json`,
-      `${location.origin}/indices/isomorfismos/iso_lista.json`,
-      gh('indices/isomorfismos/iso_lista.json')
-    ];
+    const isoUrls = buildIsomorphismUrlCandidates('indices/isomorfismos/iso_lista.json');
     let raw = null;
     for (const url of isoUrls){
       raw = await fetchJson(url, { bust:true });
@@ -6614,22 +6623,46 @@ function getIsomorphismMatch(modelMeta, itemMeta){
 }
 
 function getTechniqueIsomorphisms(modelMeta, itemMeta){
-  const idx = window.ISOMORPHISM_INDEX;
-  if (!idx) return [];
+  try{
+    const idx = window.ISOMORPHISM_INDEX;
+    if (!idx) return [];
 
-  const modelId = String(modelMeta?.id || '').trim();
-  const tecnicaId = String(itemMeta?.codigo || '').trim();
-  if (!modelId || !tecnicaId) return [];
+    const modelId = String(modelMeta?.id || '').trim();
+    const tecnicaId = String(itemMeta?.codigo || '').trim();
+    if (!modelId || !tecnicaId) return [];
 
-  const rows = idx.byModelTechniqueKey?.get(buildIsoModelTechniqueKey(modelId, tecnicaId));
-  return Array.isArray(rows) ? rows : [];
+    const lookupKey = buildIsoModelTechniqueKey(modelId, tecnicaId);
+    const source = idx.byModelTechniqueKey;
+
+    let rows = [];
+    if (source instanceof Map){
+      rows = source.get(lookupKey);
+    }else if (source && typeof source === 'object'){
+      rows = source[lookupKey];
+    }
+
+    return Array.isArray(rows) ? rows.filter(Boolean) : [];
+  }catch(err){
+    console.warn('getTechniqueIsomorphisms failed', {
+      modelId: modelMeta?.id,
+      tecnicaId: itemMeta?.codigo,
+      err
+    });
+    return [];
+  }
 }
 
 function getModelAuthorsById(modelId){
-  const id = String(modelId || '').trim();
-  if (!id) return '';
-  const model = getAllModelsPool().find((item) => String(item?.id || '').trim() === id);
-  return String(model?.autores || '').trim();
+  try{
+    const id = String(modelId || '').trim();
+    if (!id) return '';
+    const pool = Array.isArray(getAllModelsPool()) ? getAllModelsPool() : [];
+    const model = pool.find((item) => String(item?.id || '').trim() === id);
+    return String(model?.autores || '').trim();
+  }catch(err){
+    console.warn('getModelAuthorsById failed', { modelId, err });
+    return '';
+  }
 }
 
 function formatTechniqueTypeLabel(type){
@@ -6658,45 +6691,54 @@ function getIsomorphismEquivalences(row, currentModelId){
 }
 
 function renderTechniqueIsomorphisms(modelMeta, itemMeta){
-  const isoList = getTechniqueIsomorphisms(modelMeta, itemMeta);
-  if (!isoList.length) return '';
+  try{
+    const isoList = getTechniqueIsomorphisms(modelMeta, itemMeta);
+    if (!isoList.length) return '';
 
-  return `
-    <div class="iso-tech">
-      <div class="iso-tech-stack">
-        ${isoList.map((row) => {
-          const equivalents = getIsomorphismEquivalences(row, modelMeta?.id);
-          return `
-          <details class="iso-tech-item">
-            <summary>
-              <span class="iso-tech-main">
-                <span class="iso-tech-title">Isomorfismo</span>
-                <span class="iso-tech-name">${escapeHtml(row?.isomorfismoLabel || row?.isomorfismoId || 'Isomorfismo')}</span>
-              </span>
-              <span class="iso-tech-meta">${equivalents.length} equivalencia${equivalents.length === 1 ? '' : 's'}</span>
-            </summary>
-            <div class="iso-tech-body">
-              ${row?.isomorfismoDefinicion ? `<div class="iso-tech-def">${escapeHtml(row.isomorfismoDefinicion)}</div>` : ''}
-              <div class="iso-tech-eqTitle">Equivalencias</div>
-              ${
-                equivalents.length
-                  ? `<ul class="iso-tech-eqList">${equivalents.map((entry) => `
-                      <li>
-                        <span class="iso-tech-eqModel">${escapeHtml(entry?.modeloLabel || 'Modelo')}</span>
-                        ${entry?.autores ? `<span class="iso-tech-eqAuthor"> · ${escapeHtml(entry.autores)}</span>` : ''}
-                        <br>
-                        <span class="iso-tech-eqTechnique">${escapeHtml(formatTechniqueTypeLabel(entry?.tecnicaTipo || ''))}: ${escapeHtml(entry?.tecnicaLabel || entry?.tecnicaId || 'Sin nombre')}</span>
-                      </li>
-                    `).join('')}</ul>`
-                  : `<div class="iso-tech-empty">No hay equivalencias confirmadas en otros modelos.</div>`
-              }
-            </div>
-          </details>
-          `;
-        }).join('')}
+    return `
+      <div class="iso-tech">
+        <div class="iso-tech-stack">
+          ${isoList.map((row) => {
+            const equivalents = getIsomorphismEquivalences(row, modelMeta?.id);
+            return `
+            <details class="iso-tech-item">
+              <summary>
+                <span class="iso-tech-main">
+                  <span class="iso-tech-title">Isomorfismo</span>
+                  <span class="iso-tech-name">${escapeHtml(row?.isomorfismoLabel || row?.isomorfismoId || 'Isomorfismo')}</span>
+                </span>
+                <span class="iso-tech-meta">${equivalents.length} equivalencia${equivalents.length === 1 ? '' : 's'}</span>
+              </summary>
+              <div class="iso-tech-body">
+                ${row?.isomorfismoDefinicion ? `<div class="iso-tech-def">${escapeHtml(row.isomorfismoDefinicion)}</div>` : ''}
+                <div class="iso-tech-eqTitle">Equivalencias</div>
+                ${
+                  equivalents.length
+                    ? `<ul class="iso-tech-eqList">${equivalents.map((entry) => `
+                        <li>
+                          <span class="iso-tech-eqModel">${escapeHtml(entry?.modeloLabel || 'Modelo')}</span>
+                          ${entry?.autores ? `<span class="iso-tech-eqAuthor"> · ${escapeHtml(entry.autores)}</span>` : ''}
+                          <br>
+                          <span class="iso-tech-eqTechnique">${escapeHtml(formatTechniqueTypeLabel(entry?.tecnicaTipo || ''))}: ${escapeHtml(entry?.tecnicaLabel || entry?.tecnicaId || 'Sin nombre')}</span>
+                        </li>
+                      `).join('')}</ul>`
+                    : `<div class="iso-tech-empty">No hay equivalencias confirmadas en otros modelos.</div>`
+                }
+              </div>
+            </details>
+            `;
+          }).join('')}
+        </div>
       </div>
-    </div>
-  `;
+    `;
+  }catch(err){
+    console.warn('renderTechniqueIsomorphisms failed', {
+      modelId: modelMeta?.id,
+      tecnicaId: itemMeta?.codigo,
+      err
+    });
+    return '';
+  }
 }
 
 function renderIsomorphismInner(modelMeta, itemMeta){
@@ -6771,40 +6813,52 @@ function hasIsomorphismIndexData(){
 }
 
 function ensureIsomorphismReadyForModel(modelMeta){
-  if (!modelMeta || !modelMeta.id) return;
-  const hasNestedItems =
-    (Array.isArray(modelMeta.tecnicas) && modelMeta.tecnicas.length) ||
-    (Array.isArray(modelMeta.procedimientos) && modelMeta.procedimientos.length) ||
-    (Array.isArray(modelMeta.micros) && modelMeta.micros.length);
-  if (!hasNestedItems) return;
-  if (hasIsomorphismIndexData()) return;
+  try{
+    if (!modelMeta || !modelMeta.id) return;
+    const hasNestedItems =
+      (Array.isArray(modelMeta.tecnicas) && modelMeta.tecnicas.length) ||
+      (Array.isArray(modelMeta.procedimientos) && modelMeta.procedimientos.length) ||
+      (Array.isArray(modelMeta.micros) && modelMeta.micros.length);
+    if (!hasNestedItems) return;
+    if (hasIsomorphismIndexData()) return;
 
-  const modelId = String(modelMeta.id || '').trim();
-  if (!modelId) return;
-  if (ensureIsomorphismReadyForModel._pendingFor === modelId) return;
-  ensureIsomorphismReadyForModel._pendingFor = modelId;
+    const modelId = String(modelMeta.id || '').trim();
+    if (!modelId) return;
+    if (ensureIsomorphismReadyForModel._pendingFor === modelId) return;
+    ensureIsomorphismReadyForModel._pendingFor = modelId;
 
-  const loadPromise = hasIsomorphismIndexData()
-    ? Promise.resolve(window.ISOMORPHISM_INDEX)
-    : loadIsomorphismIndex();
-  ISOMORPHISM_PROMISE = Promise.resolve(loadPromise).catch(() => emptyIsomorphismIndex());
+    const loadPromise = hasIsomorphismIndexData()
+      ? Promise.resolve(window.ISOMORPHISM_INDEX)
+      : loadIsomorphismIndex();
+    ISOMORPHISM_PROMISE = Promise.resolve(loadPromise).catch(() => emptyIsomorphismIndex());
 
-  Promise.resolve(ISOMORPHISM_PROMISE)
-    .catch(() => null)
-    .then(async () => {
-      if (!hasIsomorphismIndexData()) return;
-      if (String(currentModelId || '').trim() !== modelId) return;
+    Promise.resolve(ISOMORPHISM_PROMISE)
+      .catch(() => null)
+      .then(async () => {
+        if (!hasIsomorphismIndexData()) return;
+        if (String(currentModelId || '').trim() !== modelId) return;
 
-      const baseModel = getAllModelsPool().find((m) => String(m?.id || '').trim() === modelId) || modelMeta;
-      const fullModel = await ensureModelFull(baseModel).catch(() => baseModel);
-      if (String(currentModelId || '').trim() !== modelId) return;
-      renderModelInfo(fullModel || baseModel);
-    })
-    .finally(() => {
-      if (ensureIsomorphismReadyForModel._pendingFor === modelId){
-        ensureIsomorphismReadyForModel._pendingFor = '';
-      }
+        const baseModel = getAllModelsPool().find((m) => String(m?.id || '').trim() === modelId) || modelMeta;
+        const fullModel = await ensureModelFull(baseModel).catch(() => baseModel);
+        if (String(currentModelId || '').trim() !== modelId) return;
+
+        try{
+          renderModelInfo(fullModel || baseModel);
+        }catch(err){
+          console.warn('ensureIsomorphismReadyForModel rerender failed', { modelId, err });
+        }
+      })
+      .finally(() => {
+        if (ensureIsomorphismReadyForModel._pendingFor === modelId){
+          ensureIsomorphismReadyForModel._pendingFor = '';
+        }
+      });
+  }catch(err){
+    console.warn('ensureIsomorphismReadyForModel failed', {
+      modelId: modelMeta?.id,
+      err
     });
+  }
 }
 
 
