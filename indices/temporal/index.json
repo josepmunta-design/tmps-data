@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-12T20:41:29.180Z",
+  "generatedAt": "2026-03-12T20:43:39.732Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 176,
-    "links": 177,
-    "unresolvedInfluences": 613
+    "links": 179,
+    "unresolvedInfluences": 614
   },
   "nodes": [
     {
@@ -3899,9 +3899,16 @@
       "isMarco": false,
       "file": "modelos/psicoanalisis/tfp-transference-focused-psychotherapy-kernberg-1995.json",
       "authors": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "TFP (Transference-Focused Psychotherapy) es una psicoterapia psicodinámica manualizada para el Trastorno Límite de la Personalidad (y otras organizaciones límite) cuyo objetivo es promover la integración de representaciones escindidas de self–objeto y de los afectos asociados mediante el análisis sistemático y riguroso de la transferencia en el aquí-y-ahora. El tratamiento se apoya en un encuadre estructurado y en una técnica activa (clarificación, confrontación e interpretación) orientada a identificar las díadas relacionales dominantes que se actualizan con el terapeuta, sostenerlas dentro de la relación terapéutica y favorecer una reorganización estructural de la identidad, la regulación afectiva y el control de impulsos.",
+      "influencias": [
+        "Relaciones de objeto (Fairbairn)",
+        "Psicología del yo (Hartmann)",
+        "Relacional (Greenberg & Mitchell)"
+      ],
+      "refs": [
+        "Clarkin, J. F., Yeomans, F. E., & Kernberg, O. F. (1999). Psychotherapy for Borderline Personality: Focusing on Object Relations.",
+        "Clarkin, J. F., Yeomans, F. E., & Kernberg, O. F. (2006/2015). Transference-Focused Psychotherapy for Borderline Personality Disorder."
+      ],
       "lat": 40.712776,
       "lon": -74.005974,
       "ciudad": "Nueva York",
@@ -5149,6 +5156,14 @@
       "target": "psicoanalisis-relacional-greenberg-mitchell-1983"
     },
     {
+      "source": "relaciones-objeto-klein",
+      "target": "tfp-transference-focused-psychotherapy-kernberg-1995"
+    },
+    {
+      "source": "psicologia-yo-hartmann",
+      "target": "tfp-transference-focused-psychotherapy-kernberg-1995"
+    },
+    {
       "source": "psicoanalisis-clasico-freud",
       "target": "psicologia-analitica-jung-1913"
     },
@@ -6045,6 +6060,10 @@
     {
       "target": "psicoanalisis-relacional-greenberg-mitchell-1983",
       "influence": "Fenomenología / Hermenéutica"
+    },
+    {
+      "target": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "influence": "Relacional (Greenberg & Mitchell)"
     },
     {
       "target": "psicologia-analitica-jung-1913",
