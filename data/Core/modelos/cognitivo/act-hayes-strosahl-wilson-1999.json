@@ -174,7 +174,37 @@
     "nombre": "Modelado terapéutico de apertura y elección",
     "codigo": "p_act_modelado_terapeuta",
     "texto": "Procedimiento implícito del terapeuta consistente en modelar apertura emocional, lenguaje de elección y disposición ante la experiencia interna durante la interacción clínica, evitando debates de contenido y reforzando consistentemente procesos de flexibilidad psicológica dentro de la relación terapéutica como contexto de aprendizaje experiencial. Referencia: Hayes, Strosahl & Wilson (2012)."
-  }
+  },
+   {
+  "nombre": "Análisis explícito de evitación experiencial",
+  "codigo": "p_act_evitacion_experiencial",
+  "procesos": ["N_metacognicion", "RE_prevEvitacion"],
+  "texto": "Procedimiento de exploración funcional en el que el terapeuta ayuda a identificar conductas abiertas o encubiertas utilizadas para evitar, suprimir o controlar pensamientos, emociones, recuerdos o sensaciones internas. Se analizan ejemplos concretos y sus consecuencias a corto y largo plazo para mostrar cómo la evitación experiencial mantiene el problema y restringe la vida conductual. Referencia: Hayes, Strosahl & Wilson (1999, 2012)."
+},
+{
+  "nombre": "Análisis de funcionabilidad (workability)",
+  "codigo": "p_act_workability",
+  "procesos": ["N_metacognicion", "AG_tomaDecisiones"],
+  "texto": "Procedimiento que evalúa si una conducta, regla verbal o estrategia mental funciona realmente al servicio de la vida que la persona quiere construir. En lugar de debatir la veracidad del pensamiento, se analiza si su seguimiento amplía o restringe la vida del paciente, facilitando decisiones basadas en utilidad contextual. Referencia: Hayes, Strosahl & Wilson (1999, 2012); Harris (2009)."
+},
+{
+  "nombre": "Entrenamiento en disposición (willingness)",
+  "codigo": "p_act_willingness",
+  "procesos": ["RE_aceptacion", "RE_prevEvitacion"],
+  "texto": "Procedimiento que desarrolla la capacidad de permitir pensamientos, emociones o sensaciones difíciles cuando aparecen al actuar hacia valores. La disposición se conceptualiza como apertura voluntaria a experimentar eventos privados sin intentar eliminarlos, cuando hacerlo permite avanzar en direcciones vitales significativas. Referencia: Hayes, Strosahl & Wilson (2012)."
+},
+{
+  "nombre": "Entrenamiento en punto de elección (choice point)",
+  "codigo": "p_act_choice_point",
+  "procesos": ["N_metacognicion", "AG_tomaDecisiones", "I_valoresAspiracionales"],
+  "texto": "Procedimiento que enseña a identificar momentos concretos donde se abre una bifurcación conductual entre movimientos guiados por evitación experiencial y acciones orientadas por valores. El paciente aprende a detectar estas decisiones en tiempo real y elegir conductas que acerquen a la vida que quiere construir. Referencia: Harris (2009); Polk et al. (2016)."
+},
+{
+  "nombre": "Exposición con apertura experiencial",
+  "codigo": "p_act_exposicion_apertura",
+  "procesos": ["RF_expo", "RE_aceptacion", "RE_prevEvitacion"],
+  "texto": "Procedimiento en el que el paciente se expone gradualmente a situaciones, recuerdos o sensaciones temidas mientras practica aceptación y contacto con el presente, reduciendo patrones de evitación experiencial y ampliando repertorio conductual en presencia de malestar interno. Referencia: Hayes, Strosahl & Wilson (2012)."
+}
 
 ],
 
@@ -268,7 +298,43 @@
     "nombre": "Normalización explícita de mente humana",
     "codigo": "m_act_normalizacion",
     "texto": "Intervención verbal del terapeuta que valida que la mente humana genera pensamientos críticos, comparativos y alarmistas por diseño evolutivo, reduciendo patologización y estableciendo marco contextual sin asignar proceso directo al paciente. Referencia: Hayes, Strosahl & Wilson (2012)."
-  }
+  },
+    {
+  "nombre": "Nombrar la evitación en vivo",
+  "codigo": "m_act_nominar_evitacion",
+  "procesos": ["N_metacognicion", "RE_prevEvitacion"],
+  "texto": "Microintervención en la que el terapeuta señala suavemente cuando aparece una conducta de evitación experiencial durante la sesión o en ejemplos recientes, ayudando al paciente a reconocer el patrón en tiempo real. Referencia: Hayes, Strosahl & Wilson (2012)."
+},
+{
+  "nombre": "Pregunta de funcionabilidad",
+  "codigo": "m_act_funciona_para_ti",
+  "procesos": ["N_metacognicion"],
+  "texto": "Pregunta breve que invita a evaluar una conducta o estrategia mental en términos de si está ayudando realmente a construir la vida deseada o si está manteniendo el problema. Referencia: Hayes, Strosahl & Wilson (1999)."
+},
+{
+  "nombre": "Lenguaje de disposición",
+  "codigo": "m_act_estoy_dispuesto",
+  "procesos": ["RE_aceptacion"],
+  "texto": "Reformulación breve que transforma resistencia a la experiencia interna en lenguaje de apertura, por ejemplo '¿estarías dispuesto a sentir esto si te permitiera avanzar hacia lo que te importa?'. Referencia: Hayes, Strosahl & Wilson (2012)."
+},
+{
+  "nombre": "Señalar momento de elección",
+  "codigo": "m_act_momento_eleccion",
+  "procesos": ["AG_tomaDecisiones"],
+  "texto": "Intervención breve que identifica explícitamente que el paciente está ante un punto de decisión entre evitación y acción valiosa, facilitando conciencia y elección deliberada. Referencia: Harris (2009)."
+},
+{
+  "nombre": "Pregunta de valor en acción",
+  "codigo": "m_act_que_importa_aqui",
+  "procesos": ["I_valoresAspiracionales"],
+  "texto": "Pregunta focal utilizada cuando el paciente está atrapado en evitación o lucha interna: '¿qué es importante para ti en esta situación?', orientando la conducta hacia valores en lugar de control del malestar. Referencia: Hayes, Strosahl & Wilson (2012)."
+},
+{
+  "nombre": "Invitación a permanecer con la experiencia",
+  "codigo": "m_act_quedarse_con",
+  "procesos": ["RE_aceptacion", "RF_intero"],
+  "texto": "Microintervención que invita a observar una emoción o sensación corporal difícil durante unos segundos con actitud abierta, entrenando tolerancia y contacto directo con la experiencia. Referencia: Eifert & Forsyth (2005)."
+}
 
 ],
 
