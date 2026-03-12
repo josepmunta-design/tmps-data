@@ -6322,10 +6322,16 @@ function buildIsoNameKey({ tipo = '', nombre = '' } = {}){
   ].join('|');
 }
 
+function normalizeTechniqueLookupValue(value){
+  return String(value ?? '')
+    .trim()
+    .toLowerCase();
+}
+
 function buildIsoModelTechniqueKey(modelId = '', tecnicaId = ''){
   return [
-    String(modelId || '').trim(),
-    String(tecnicaId || '').trim()
+    normalizeTechniqueLookupValue(modelId),
+    normalizeTechniqueLookupValue(tecnicaId)
   ].join('|');
 }
 
@@ -6681,7 +6687,11 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
 
     const modelId = String(modelMeta?.id || '').trim();
     const tecnicaId = String(itemMeta?.codigo || '').trim();
-    if (!modelId || !tecnicaId) return [];
+    const normalizedModelId = normalizeTechniqueLookupValue(modelId);
+    const normalizedTecnicaId = normalizeTechniqueLookupValue(tecnicaId);
+    const normalizedItemName = normalizeIsoText(itemMeta?.nombre || '');
+    const normalizedItemType = normalizeIsoText(itemMeta?.tipo || '');
+    if (!normalizedModelId) return [];
 
     const lookupKey = buildIsoModelTechniqueKey(modelId, tecnicaId);
     const source = idx.byModelTechniqueKey;
@@ -6698,13 +6708,31 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
       return rows.filter(Boolean);
     }
 
-    const modelRowsSource = idx.byModeloId instanceof Map
-      ? idx.byModeloId.get(modelId)
-      : (idx.byModeloId && typeof idx.byModeloId === 'object' ? idx.byModeloId[modelId] : null);
+    const modelRowsSource = (
+      idx.byModelId instanceof Map
+        ? idx.byModelId.get(normalizedModelId) || idx.byModelId.get(modelId)
+        : (idx.byModelId && typeof idx.byModelId === 'object'
+            ? (idx.byModelId[normalizedModelId] || idx.byModelId[modelId] || null)
+            : null)
+    ) || (
+      idx.byModeloId instanceof Map
+        ? idx.byModeloId.get(normalizedModelId) || idx.byModeloId.get(modelId)
+        : (idx.byModeloId && typeof idx.byModeloId === 'object'
+            ? (idx.byModeloId[normalizedModelId] || idx.byModeloId[modelId] || null)
+            : null)
+    );
 
     if (Array.isArray(modelRowsSource) && modelRowsSource.length){
       const modelMatches = modelRowsSource
-        .filter((row) => String(row?.tecnicaId || '').trim() === tecnicaId)
+        .filter((row) => {
+          const rowTechniqueId = normalizeTechniqueLookupValue(row?.tecnicaId || '');
+          const rowTechniqueName = normalizeIsoText(row?.tecnicaLabel || '');
+          const rowTechniqueType = normalizeIsoText(row?.tecnicaTipo || '');
+          if (normalizedTecnicaId && rowTechniqueId === normalizedTecnicaId) return true;
+          if (!normalizedItemName) return false;
+          return rowTechniqueName === normalizedItemName &&
+            (!normalizedItemType || !rowTechniqueType || rowTechniqueType === normalizedItemType);
+        })
         .map((row) => {
           const isoId = String(row?.isomorfismoId || '').trim();
           const iso = idx.byIsomorfismoId instanceof Map
@@ -6712,8 +6740,15 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
             : (idx.byIsomorfismoId && typeof idx.byIsomorfismoId === 'object' ? idx.byIsomorfismoId[isoId] : null);
           const entries = Array.isArray(iso?.entries) ? iso.entries : [];
           const entry = entries.find((item) =>
-            String(item?.modeloId || '').trim() === modelId &&
-            String(item?.tecnicaId || '').trim() === tecnicaId &&
+            normalizeTechniqueLookupValue(item?.modeloId || '') === normalizedModelId &&
+            (
+              (normalizedTecnicaId && normalizeTechniqueLookupValue(item?.tecnicaId || '') === normalizedTecnicaId) ||
+              (
+                normalizedItemName &&
+                normalizeIsoText(item?.tecnicaLabel || '') === normalizedItemName &&
+                (!normalizedItemType || !normalizeIsoText(item?.tecnicaTipo || '') || normalizeIsoText(item?.tecnicaTipo || '') === normalizedItemType)
+              )
+            ) &&
             String(item?.estado || '').trim().toLowerCase() === 'ok'
           ) || row;
 
@@ -6753,8 +6788,15 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
       .map((iso) => {
         const entries = Array.isArray(iso?.entries) ? iso.entries : [];
         const entry = entries.find((item) =>
-          String(item?.modeloId || '').trim() === modelId &&
-          String(item?.tecnicaId || '').trim() === tecnicaId &&
+          normalizeTechniqueLookupValue(item?.modeloId || '') === normalizedModelId &&
+          (
+            (normalizedTecnicaId && normalizeTechniqueLookupValue(item?.tecnicaId || '') === normalizedTecnicaId) ||
+            (
+              normalizedItemName &&
+              normalizeIsoText(item?.tecnicaLabel || '') === normalizedItemName &&
+              (!normalizedItemType || !normalizeIsoText(item?.tecnicaTipo || '') || normalizeIsoText(item?.tecnicaTipo || '') === normalizedItemType)
+            )
+          ) &&
           String(item?.estado || '').trim().toLowerCase() === 'ok'
         );
         if (!entry) return null;
