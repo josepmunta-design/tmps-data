@@ -20,26 +20,49 @@
     "Racionalismo representacional (Cognitivismo clásico)",
     "Empirismo objetivista / Positivismo lógico"
   ],
-    "dimensionesCambio": {
-    "cognicion": 36,
-    "afecto": 12,
-    "atencion": 4,
-    "self": 10,
-    "motivacion": 8,
-    "conducta_manifiesta": 24,
-    "biofisiologico": 6,
-    "sociocultural": 0
-  },
-  "dimensionesCambioJustificacion": {
-    "cognicion": "Es el núcleo del modelo: identificación de pensamientos automáticos, distorsiones, supuestos/reglas y esquemas; reevaluación de evidencia, reestructuración cognitiva y descubrimiento guiado. El cambio se explica como modificación sistemática de interpretaciones y creencias que sostienen el afecto depresivo.",
-    "afecto": "Se trabaja de forma indirecta pero explícita: el objetivo clínico incluye reducción de tristeza/desesperanza y aumento de afecto positivo, monitorizando emoción asociada a cogniciones y usando el cambio cognitivo/conductual para modular el estado de ánimo.",
-    "atencion": "Presente de forma instrumental: entrenamiento en autoobservación y monitorización (darse cuenta de pensamientos/emociones en situación), pero no hay prácticas atencionales sostenidas tipo mindfulness como eje del tratamiento.",
-    "self": "Trabajo relevante sobre autoimagen y creencias nucleares (“soy inútil”, “no valgo”), con reconstrucción gradual de identidad y autovaloración; se mejora la relación consigo mismo, aunque desde un marco cognitivo-evaluativo más que experiencial.",
-    "motivacion": "Se aborda mediante establecimiento de metas, tareas entre sesiones, incremento de autoeficacia y reducción de desesperanza; hay énfasis en activar intención y compromiso con el plan, pero no es un modelo centrado en valores/motivación como dimensión primaria.",
-    "conducta_manifiesta": "Muy explícita: activación conductual, programación de actividades, tareas entre sesiones y experimentos conductuales para generar evidencia nueva; la conducta se usa como palanca directa y como fuente de aprendizaje correctivo.",
-    "biofisiologico": "Intervención limitada: puede considerarse por la mejora de energía/sueño/apetito vía activación y reducción de rumiación, pero no hay técnicas fisiológicas específicas (respiración, exposición interoceptiva, entrenamiento corporal) como componente central.",
-    "sociocultural": "No es foco explícito del modelo clásico: puede explorarse contexto interpersonal o estresores, pero no hay intervención sistemática sobre determinantes sociales, cultura, red o roles como dimensión de cambio."
-  },
+  "graficaProcesos": {
+  "RF": 0,
+  "RE": 2,
+  "AP": 1,
+  "RI": 1,
+  "N": 4,
+  "I": 3,
+  "AG": 3,
+  "R": 1
+},
+
+"graficaProcesosJustificacion": {
+  "RF": "La Terapia Cognitiva de Beck para la depresión no incluye intervenciones fisiológicas específicas como regulación respiratoria, relajación, trabajo somático o exposición interoceptiva; cualquier mejora corporal es indirecta, por lo que la puntuación correcta es 0.",
+  "RE": "El modelo trabaja explícitamente la emoción depresiva mediante monitorización del estado de ánimo, vinculación cognición–emoción y reevaluación emocional tras el cambio cognitivo o conductual, pero la regulación emocional no constituye su arquitectura principal.",
+  "AP": "Hay trabajo atencional solo de forma instrumental, sobre todo en autoobservación, detección de pensamientos automáticos y monitorización de la experiencia interna, sin un entrenamiento atencional sostenido como eje propio del modelo.",
+  "RI": "Existe un trabajo explícito pero secundario sobre la relación con el propio diálogo interno, especialmente al identificar pensamientos automáticos y responder a ellos de forma más reflexiva, aunque Beck no formula esto como un eje central de relación interna en el sentido de modelos posteriores.",
+  "N": "Es el núcleo estructural y definitorio del modelo: identificación de pensamientos automáticos, detección de distorsiones, evaluación de evidencia, generación de alternativas, descubrimiento guiado, trabajo con supuestos y esquemas. Si se elimina este proceso, deja de ser reconocible como Terapia Cognitiva de Beck.",
+  "I": "El modelo trabaja de forma clara creencias nucleares sobre uno mismo, autoimagen depresiva, inutilidad, fracaso y desesperanza, por lo que hay una intervención relevante sobre identidad y self, aunque mediada por el marco cognitivo y no como exploración experiencial profunda del self.",
+  "AG": "La agencia es un motor nuclear del tratamiento por la activación conductual, las tareas entre sesiones, la programación de actividades, los experimentos conductuales y el énfasis en que el paciente aprenda a actuar como co-investigador activo de su cambio.",
+  "R": "La relación terapéutica es importante como base de empirismo colaborativo y cooperación clínica, pero no constituye un foco principal de intervención ni un mecanismo de cambio relacional trabajado de forma extensa como en modelos humanistas o interpersonales."
+},
+
+"graficaDimensiones": {
+  "cognicion": 40,
+  "afecto": 12,
+  "atencion": 4,
+  "self": 12,
+  "motivacion": 8,
+  "conducta_manifiesta": 24,
+  "biofisiologico": 0,
+  "sociocultural": 0
+},
+
+"graficaDimensionesJustificacion": {
+  "cognicion": "Es la dimensión claramente dominante del modelo: pensamientos automáticos, distorsiones, supuestos, esquemas, reevaluación de evidencia, reformulación y descubrimiento guiado organizan toda la arquitectura terapéutica.",
+  "afecto": "La emoción depresiva se trabaja de forma explícita pero subordinada al cambio cognitivo y conductual; se monitoriza, se vincula a interpretaciones y se espera que cambie al modificarse los sesgos depresógenos.",
+  "atencion": "Hay un componente atencional limitado pero real en la autoobservación y la detección momento a momento de pensamientos y emociones, aunque no existe una intervención atencional autónoma o sostenida.",
+  "self": "La terapia interviene directamente sobre creencias nucleares acerca del self, la autoimagen de inutilidad, fracaso o falta de valor, y busca reconstruir una visión más compleja y funcional de uno mismo.",
+  "motivacion": "Se trabaja mediante agenda, tareas, metas, incremento de autoeficacia y superación de la desesperanza, pero no es una terapia centrada primariamente en motivación, valores o conflicto motivacional.",
+  "conducta_manifiesta": "La activación conductual, la programación de actividades, los experimentos conductuales y las tareas entre sesiones hacen que la conducta observable tenga un peso alto y explícito en el modelo.",
+  "biofisiologico": "No hay intervención fisiológica específica en el modelo clásico de Beck para depresión, por lo que esta dimensión debe quedar en 0.",
+  "sociocultural": "El contexto puede considerarse en la formulación, pero no existe un trabajo explícito y sistemático sobre red, cultura, roles o determinantes sociales como dimensión de cambio propia del modelo."
+},
 "conceptosClave": [
 
   {
