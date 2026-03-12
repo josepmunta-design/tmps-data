@@ -6331,6 +6331,10 @@ function buildIsoModelTechniqueKey(modelId = '', tecnicaId = ''){
 
 function emptyIsomorphismIndex(){
   return {
+    rawIsomorfismos:[],
+    byIsomorfismoId:new Map(),
+    byModeloId:new Map(),
+    byTecnicaId:new Map(),
     byModelTechniqueKey:new Map(),
     byModelId:new Map(),
     byEntryKey:new Map(),
@@ -6373,16 +6377,58 @@ function buildIsomorphismIndexFromList(raw){
 
 function buildIsomorphismIndexFromLookup(raw){
   const safe = (raw && typeof raw === 'object') ? raw : {};
+
+  const buildTechniqueIsoRow = (iso, entry, entries) => ({
+    isomorfismoId: String(iso?.id || '').trim(),
+    isomorfismoLabel: String(iso?.label || iso?.id || '').trim(),
+    isomorfismoDefinicion: String(iso?.definicion || '').trim(),
+    isomorfismoCategoria: String(iso?.categoria || '').trim(),
+    isomorfismoEntries: (Array.isArray(entries) ? entries : [])
+      .filter((item) => String(item?.estado || '').trim().toLowerCase() === 'ok')
+      .map((item) => ({
+        modeloId: String(item?.modeloId || '').trim(),
+        modeloLabel: String(item?.modeloLabel || '').trim(),
+        grupo: String(item?.grupo || '').trim(),
+        tecnicaId: String(item?.tecnicaId || '').trim(),
+        tecnicaLabel: String(item?.tecnicaLabel || '').trim(),
+        tecnicaTipo: String(item?.tecnicaTipo || '').trim(),
+        estado: String(item?.estado || '').trim(),
+        nota: String(item?.nota || '').trim(),
+        sourceFile: String(item?.sourceFile || '').trim()
+      })),
+    tecnicaId: String(entry?.tecnicaId || '').trim(),
+    tecnicaLabel: String(entry?.tecnicaLabel || '').trim(),
+    tecnicaTipo: String(entry?.tecnicaTipo || '').trim(),
+    modeloId: String(entry?.modeloId || '').trim(),
+    modeloLabel: String(entry?.modeloLabel || '').trim(),
+    grupo: String(entry?.grupo || '').trim(),
+    nota: String(entry?.nota || '').trim(),
+    sourceFile: String(entry?.sourceFile || '').trim()
+  });
+
+  const sortTechniqueIsoRows = (rows) => rows.slice().sort((a, b) => {
+    const byTechnique = String(a?.tecnicaId || '').localeCompare(String(b?.tecnicaId || ''), 'es');
+    if (byTechnique !== 0) return byTechnique;
+    return String(a?.isomorfismoLabel || '').localeCompare(String(b?.isomorfismoLabel || ''), 'es');
+  });
+
+  const rawIsomorfismos = Array.isArray(safe.isomorfismos) ? safe.isomorfismos.filter(Boolean) : [];
   if (Array.isArray(safe.isomorfismos)){
+    const byIsomorfismoId = new Map();
+    const byModeloId = new Map(
+      Object.entries(safe.byModeloId || {}).map(([key, arr]) => [key, Array.isArray(arr) ? arr : []])
+    );
+    const byTecnicaId = new Map(
+      Object.entries(safe.byTecnicaId || {}).map(([key, arr]) => [key, Array.isArray(arr) ? arr : []])
+    );
     const byModelTechniqueKey = new Map();
     const byModelId = new Map();
     const seen = new Set();
 
-    safe.isomorfismos.forEach((iso) => {
+    rawIsomorfismos.forEach((iso) => {
       const isoId = String(iso?.id || '').trim();
+      if (isoId) byIsomorfismoId.set(isoId, iso);
       const isoLabel = String(iso?.label || '').trim();
-      const isoDef = String(iso?.definicion || '').trim();
-      const isoCategory = String(iso?.categoria || '').trim();
       const entries = Array.isArray(iso?.entries) ? iso.entries : [];
 
       entries.forEach((entry) => {
@@ -6395,34 +6441,7 @@ function buildIsomorphismIndexFromLookup(raw){
         if (seen.has(dedupeKey)) return;
         seen.add(dedupeKey);
 
-        const row = {
-          isomorfismoId: isoId,
-          isomorfismoLabel: isoLabel || isoId,
-          isomorfismoDefinicion: isoDef,
-          isomorfismoCategoria: isoCategory,
-          isomorfismoEntries: entries
-            .filter((item) => {
-              const entryEstado = String(item?.estado || '').trim().toLowerCase();
-              return entryEstado === 'ok' && String(item?.tecnicaId || '').trim();
-            })
-            .map((item) => ({
-              modeloId: String(item?.modeloId || '').trim(),
-              modeloLabel: String(item?.modeloLabel || '').trim(),
-              grupo: String(item?.grupo || '').trim(),
-              tecnicaId: String(item?.tecnicaId || '').trim(),
-              tecnicaLabel: String(item?.tecnicaLabel || '').trim(),
-              tecnicaTipo: String(item?.tecnicaTipo || '').trim(),
-              estado: String(item?.estado || '').trim(),
-              nota: String(item?.nota || '').trim()
-            })),
-          tecnicaId,
-          tecnicaLabel: String(entry?.tecnicaLabel || '').trim(),
-          tecnicaTipo: String(entry?.tecnicaTipo || '').trim(),
-          modeloId: modelId,
-          modeloLabel: String(entry?.modeloLabel || '').trim(),
-          grupo: String(entry?.grupo || '').trim(),
-          nota: String(entry?.nota || '').trim()
-        };
+        const row = buildTechniqueIsoRow(iso, entry, entries);
 
         const techniqueKey = buildIsoModelTechniqueKey(modelId, tecnicaId);
         const techniqueBucket = byModelTechniqueKey.get(techniqueKey) || [];
@@ -6436,19 +6455,17 @@ function buildIsomorphismIndexFromLookup(raw){
     });
 
     byModelTechniqueKey.forEach((rows, key) => {
-      byModelTechniqueKey.set(key, rows.slice().sort((a, b) =>
-        String(a?.isomorfismoLabel || '').localeCompare(String(b?.isomorfismoLabel || ''), 'es')
-      ));
+      byModelTechniqueKey.set(key, sortTechniqueIsoRows(rows));
     });
     byModelId.forEach((rows, key) => {
-      byModelId.set(key, rows.slice().sort((a, b) => {
-        const byTechnique = String(a?.tecnicaId || '').localeCompare(String(b?.tecnicaId || ''), 'es');
-        if (byTechnique !== 0) return byTechnique;
-        return String(a?.isomorfismoLabel || '').localeCompare(String(b?.isomorfismoLabel || ''), 'es');
-      }));
+      byModelId.set(key, sortTechniqueIsoRows(rows));
     });
 
     return {
+      rawIsomorfismos,
+      byIsomorfismoId,
+      byModeloId,
+      byTecnicaId,
       byModelTechniqueKey,
       byModelId,
       byEntryKey:new Map(),
@@ -6487,11 +6504,29 @@ function buildIsomorphismIndexFromLookup(raw){
       }
     });
 
-    return { byEntryKey, byFallbackKey, byNameKey };
+    return {
+      rawIsomorfismos:[],
+      byIsomorfismoId:new Map(),
+      byModeloId:new Map(),
+      byTecnicaId:new Map(),
+      byModelTechniqueKey:new Map(),
+      byModelId:new Map(),
+      byEntryKey,
+      byFallbackKey,
+      byNameKey
+    };
   }
 
-  if (safe.byModelTechniqueKey || safe.byModelId){
+  if (safe.byModelTechniqueKey || safe.byModelId || safe.byModeloId || safe.byTecnicaId || safe.byIsomorfismoId){
     return {
+      rawIsomorfismos,
+      byIsomorfismoId:new Map(Object.entries(safe.byIsomorfismoId || {})),
+      byModeloId:new Map(
+        Object.entries(safe.byModeloId || {}).map(([key, arr]) => [key, Array.isArray(arr) ? arr : []])
+      ),
+      byTecnicaId:new Map(
+        Object.entries(safe.byTecnicaId || {}).map(([key, arr]) => [key, Array.isArray(arr) ? arr : []])
+      ),
       byModelTechniqueKey:new Map(
         Object.entries(safe.byModelTechniqueKey || {}).map(([key, arr]) => [key, Array.isArray(arr) ? arr : []])
       ),
@@ -6511,7 +6546,21 @@ function buildIsomorphismIndexFromLookup(raw){
   const byNameKey = new Map(
     Object.entries(safe.byNameKey || {}).map(([key, arr]) => [key, Array.isArray(arr) ? arr : []])
   );
-  return { byModelTechniqueKey:new Map(), byModelId:new Map(), byEntryKey, byFallbackKey, byNameKey };
+  return {
+    rawIsomorfismos,
+    byIsomorfismoId:new Map(Object.entries(safe.byIsomorfismoId || {})),
+    byModeloId:new Map(
+      Object.entries(safe.byModeloId || {}).map(([key, arr]) => [key, Array.isArray(arr) ? arr : []])
+    ),
+    byTecnicaId:new Map(
+      Object.entries(safe.byTecnicaId || {}).map(([key, arr]) => [key, Array.isArray(arr) ? arr : []])
+    ),
+    byModelTechniqueKey:new Map(),
+    byModelId:new Map(),
+    byEntryKey,
+    byFallbackKey,
+    byNameKey
+  };
 }
 async function fetchJson(url){
   const r = await fetch(url);
@@ -6549,6 +6598,9 @@ async function loadIsomorphismIndex(){
         !Array.isArray(rawLookup) &&
         (
           Array.isArray(rawLookup.isomorfismos) ||
+          rawLookup.byIsomorfismoId ||
+          rawLookup.byModeloId ||
+          rawLookup.byTecnicaId ||
           rawLookup.byModelId ||
           rawLookup.byModelTechniqueKey ||
           rawLookup.byEntryKey ||
@@ -6633,6 +6685,7 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
 
     const lookupKey = buildIsoModelTechniqueKey(modelId, tecnicaId);
     const source = idx.byModelTechniqueKey;
+    const isomorfismos = Array.isArray(idx.rawIsomorfismos) ? idx.rawIsomorfismos : [];
 
     let rows = [];
     if (source instanceof Map){
@@ -6641,7 +6694,101 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
       rows = source[lookupKey];
     }
 
-    return Array.isArray(rows) ? rows.filter(Boolean) : [];
+    if (Array.isArray(rows) && rows.length){
+      return rows.filter(Boolean);
+    }
+
+    const modelRowsSource = idx.byModeloId instanceof Map
+      ? idx.byModeloId.get(modelId)
+      : (idx.byModeloId && typeof idx.byModeloId === 'object' ? idx.byModeloId[modelId] : null);
+
+    if (Array.isArray(modelRowsSource) && modelRowsSource.length){
+      const modelMatches = modelRowsSource
+        .filter((row) => String(row?.tecnicaId || '').trim() === tecnicaId)
+        .map((row) => {
+          const isoId = String(row?.isomorfismoId || '').trim();
+          const iso = idx.byIsomorfismoId instanceof Map
+            ? idx.byIsomorfismoId.get(isoId)
+            : (idx.byIsomorfismoId && typeof idx.byIsomorfismoId === 'object' ? idx.byIsomorfismoId[isoId] : null);
+          const entries = Array.isArray(iso?.entries) ? iso.entries : [];
+          const entry = entries.find((item) =>
+            String(item?.modeloId || '').trim() === modelId &&
+            String(item?.tecnicaId || '').trim() === tecnicaId &&
+            String(item?.estado || '').trim().toLowerCase() === 'ok'
+          ) || row;
+
+          return {
+            isomorfismoId: isoId,
+            isomorfismoLabel: String(iso?.label || row?.isomorfismoLabel || isoId).trim(),
+            isomorfismoDefinicion: String(iso?.definicion || row?.isomorfismoDefinicion || '').trim(),
+            isomorfismoCategoria: String(iso?.categoria || row?.isomorfismoCategoria || '').trim(),
+            isomorfismoEntries: entries
+              .filter((item) => String(item?.estado || '').trim().toLowerCase() === 'ok')
+              .map((item) => ({
+                modeloId: String(item?.modeloId || '').trim(),
+                modeloLabel: String(item?.modeloLabel || '').trim(),
+                grupo: String(item?.grupo || '').trim(),
+                tecnicaId: String(item?.tecnicaId || '').trim(),
+                tecnicaLabel: String(item?.tecnicaLabel || '').trim(),
+                tecnicaTipo: String(item?.tecnicaTipo || '').trim(),
+                estado: String(item?.estado || '').trim(),
+                nota: String(item?.nota || '').trim(),
+                sourceFile: String(item?.sourceFile || '').trim()
+              })),
+            tecnicaId,
+            tecnicaLabel: String(entry?.tecnicaLabel || row?.tecnicaLabel || '').trim(),
+            tecnicaTipo: String(entry?.tecnicaTipo || row?.tecnicaTipo || '').trim(),
+            modeloId,
+            modeloLabel: String(entry?.modeloLabel || row?.modeloLabel || '').trim(),
+            grupo: String(entry?.grupo || row?.grupo || '').trim(),
+            nota: String(entry?.nota || row?.nota || '').trim(),
+            sourceFile: String(entry?.sourceFile || row?.sourceFile || '').trim()
+          };
+        });
+
+      if (modelMatches.length) return modelMatches;
+    }
+
+    return isomorfismos
+      .map((iso) => {
+        const entries = Array.isArray(iso?.entries) ? iso.entries : [];
+        const entry = entries.find((item) =>
+          String(item?.modeloId || '').trim() === modelId &&
+          String(item?.tecnicaId || '').trim() === tecnicaId &&
+          String(item?.estado || '').trim().toLowerCase() === 'ok'
+        );
+        if (!entry) return null;
+
+        return {
+          isomorfismoId: String(iso?.id || '').trim(),
+          isomorfismoLabel: String(iso?.label || iso?.id || '').trim(),
+          isomorfismoDefinicion: String(iso?.definicion || '').trim(),
+          isomorfismoCategoria: String(iso?.categoria || '').trim(),
+          isomorfismoEntries: entries
+            .filter((item) => String(item?.estado || '').trim().toLowerCase() === 'ok')
+            .map((item) => ({
+              modeloId: String(item?.modeloId || '').trim(),
+              modeloLabel: String(item?.modeloLabel || '').trim(),
+              grupo: String(item?.grupo || '').trim(),
+              tecnicaId: String(item?.tecnicaId || '').trim(),
+              tecnicaLabel: String(item?.tecnicaLabel || '').trim(),
+              tecnicaTipo: String(item?.tecnicaTipo || '').trim(),
+              estado: String(item?.estado || '').trim(),
+              nota: String(item?.nota || '').trim(),
+              sourceFile: String(item?.sourceFile || '').trim()
+            })),
+          tecnicaId,
+          tecnicaLabel: String(entry?.tecnicaLabel || '').trim(),
+          tecnicaTipo: String(entry?.tecnicaTipo || '').trim(),
+          modeloId,
+          modeloLabel: String(entry?.modeloLabel || '').trim(),
+          grupo: String(entry?.grupo || '').trim(),
+          nota: String(entry?.nota || '').trim(),
+          sourceFile: String(entry?.sourceFile || '').trim()
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => String(a?.isomorfismoLabel || '').localeCompare(String(b?.isomorfismoLabel || ''), 'es'));
   }catch(err){
     console.warn('getTechniqueIsomorphisms failed', {
       modelId: modelMeta?.id,
@@ -6804,6 +6951,10 @@ function hasIsomorphismIndexData(){
   const idx = window.ISOMORPHISM_INDEX;
   if (!idx) return false;
   return !!(
+    (Array.isArray(idx.rawIsomorfismos) && idx.rawIsomorfismos.length) ||
+    (idx.byIsomorfismoId && idx.byIsomorfismoId.size) ||
+    (idx.byModeloId && idx.byModeloId.size) ||
+    (idx.byTecnicaId && idx.byTecnicaId.size) ||
     (idx.byModelTechniqueKey && idx.byModelTechniqueKey.size) ||
     (idx.byModelId && idx.byModelId.size) ||
     (idx.byEntryKey && idx.byEntryKey.size) ||
