@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T19:17:45.261Z
+Generado: 2026-03-12T19:20:43.979Z
 
 ## Buscar excepciones al problema
 
@@ -46,6 +46,23 @@ Generado: 2026-03-12T19:17:45.261Z
 
 - terapia-narrativa-white-epston-1990 — m_nar_externalizacion_problema [falta_modelo]
 - schema-therapy-young-1990 — SIN ID [falta_modelo]
+
+## Identificar la función del síntoma
+
+- ID: `identificar-funcion-del-sintoma`
+- Categoría: Función y mantenimiento del problema
+- Archivo fuente: `data/indices/isomorfismos/fuente/identificar-funcion-del-sintoma.json`
+- Entradas: 9
+
+- Análisis funcional (clínico) — Análisis ABC (Antecedentes–Conducta–Consecuencias) [ok]
+- Análisis funcional (clínico) — m_af_detectar_funcion_predominante [falta_id]
+- Escuela de Palo Alto / MRI — m_mri_normalizacion_funcional_problema [falta_id]
+- Psicoanálisis clásico — pendiente_repo_secondary_gain [falta_id]
+- logoterapia-frankl-1959 — pendiente_repo_funcion_existencial_sintoma [falta_modelo]
+- Terapia enfocada en las emociones — pendiente_repo_funcion_emocional_sintoma [falta_id]
+- schema-therapy-young-1990 — pendiente_repo_funcion_modo_esquema [falta_modelo]
+- Internal Family Systems (IFS) — pendiente_repo_funcion_protectora_parte [falta_id]
+- Terapia de Aceptación y Compromiso (ACT) — pendiente_repo_evitacion_experiencial_funcion [falta_id]
 
 ## Nombrar el problema
 
