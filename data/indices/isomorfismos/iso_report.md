@@ -1,18 +1,26 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T11:42:13.644Z
+Generado: 2026-03-12T11:49:01.099Z
 
 ## Buscar excepciones al problema
 
 - ID: `buscar-excepciones-al-problema`
 - Categoría: Excepciones, variación y recursos
 - Archivo fuente: `data/indices/isomorfismos/fuente/buscar-excepciones-al-problema.json`
-- Entradas: 4
+- Entradas: 12
 
+- Terapia centrada en soluciones — Exploración de excepciones [ok]
 - Terapia centrada en soluciones — Pregunta de excepción parcial [ok]
-- Hipnosis clínica ericksoniana (Milton H. Erickson) — Utilización de resistencias [ok]
 - Terapia narrativa — Exploración de excepciones al problema [ok]
-- Teoría de los Constructos Personales (PCP) — SIN ID [falta_id]
+- Teoría de los Constructos Personales (PCP) — Explorar excepciones [ok]
+- Terapia breve (MRI) — Pregunta de excepción [ok]
+- Psicoterapia relacional sistémica (Linares) — Detectar excepción funcional [ok]
+- Construccionismo social (Kenneth Gergen) — Amplificación de excepción relacional [ok]
+- Modelo de polaridades semánticas — Introducir excepciones semánticas [ok]
+- Intervención psicosocial en contextos de desplazamiento forzado — Explorar excepción de seguridad [ok]
+- Psicoterapia comunitaria para la reconciliación — Exploración de excepciones comunitarias [ok]
+- Hipnosis clínica ericksoniana (Milton H. Erickson) — Utilización de resistencias [parcial]
+- Terapia colaborativa — Conversación generativa centrada en posibilidades [parcial]
 
 ## Externalización del problema
 

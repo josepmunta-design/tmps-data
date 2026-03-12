@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-12T11:42:13.644Z",
+    "generatedAt": "2026-03-12T11:49:01.099Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -23,6 +23,22 @@
       "entries": [
         {
           "modeloId": "terapia-centrada-soluciones-1982",
+          "tecnicaId": "p_sfbt_exploracion_excepciones",
+          "modelId": "terapia-centrada-soluciones-1982",
+          "techniqueId": "p_sfbt_exploracion_excepciones",
+          "modeloLabel": "Terapia centrada en soluciones",
+          "modelLabel": "Terapia centrada en soluciones",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Exploración de excepciones",
+          "techniqueLabel": "Exploración de excepciones",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa y principal en el repo: procedimiento explícito de exploración de excepciones.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
+        },
+        {
+          "modeloId": "terapia-centrada-soluciones-1982",
           "tecnicaId": "m_sfbt_excepcion_parcial",
           "modelId": "terapia-centrada-soluciones-1982",
           "techniqueId": "m_sfbt_excepcion_parcial",
@@ -34,24 +50,8 @@
           "tecnicaTipo": "micro",
           "techniqueType": "micro",
           "estado": "ok",
-          "nota": "Corresponde a la pregunta de excepción parcial.",
+          "nota": "Micro específica para explorar excepciones parciales al problema.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
-        },
-        {
-          "modeloId": "hipnosis-ericksoniana-1958",
-          "tecnicaId": "p_erickson_utilizacion",
-          "modelId": "hipnosis-ericksoniana-1958",
-          "techniqueId": "p_erickson_utilizacion",
-          "modeloLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
-          "modelLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
-          "grupo": "Sistémico",
-          "tecnicaLabel": "Utilización de resistencias",
-          "techniqueLabel": "Utilización de resistencias",
-          "tecnicaTipo": "procedimiento",
-          "techniqueType": "procedimiento",
-          "estado": "ok",
-          "nota": "Se usa como equivalente funcional a la utilización de éxitos espontáneos o aperturas ya presentes.",
-          "sourceFile": "data/Core/modelos/sistemico/hipnosis-ericksoniana-1958.json"
         },
         {
           "modeloId": "terapia-narrativa-white-epston",
@@ -66,24 +66,152 @@
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "En el catálogo original aparece como Unique Outcomes Question; en tu repo el mejor equivalente técnico localizado es la exploración de valores implicados en la resistencia.",
+          "nota": "Correspondencia directa y exacta en el repo: exploración de excepciones al problema.",
           "sourceFile": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
         },
         {
           "modeloId": "k1kelly55",
-          "tecnicaId": null,
+          "tecnicaId": "m_kelly_excepciones",
           "modelId": "k1kelly55",
-          "techniqueId": null,
+          "techniqueId": "m_kelly_excepciones",
           "modeloLabel": "Teoría de los Constructos Personales (PCP)",
           "modelLabel": "Teoría de los Constructos Personales (PCP)",
           "grupo": "Constructivista",
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_id",
-          "nota": "En el catálogo aparece como búsqueda de episodios discrepantes. En el repo existe m_kelly_excepciones, pero conviene decidir si se enlaza directamente a esa micro o si quieres crear una micro más específica para episodios discrepantes.",
+          "tecnicaLabel": "Explorar excepciones",
+          "techniqueLabel": "Explorar excepciones",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Equivale a la búsqueda de episodios discrepantes o situaciones donde el patrón temido no se cumple.",
           "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        },
+        {
+          "modeloId": "terapia-breve-mri-1974",
+          "tecnicaId": "m_mri_excepcion",
+          "modelId": "terapia-breve-mri-1974",
+          "techniqueId": "m_mri_excepcion",
+          "modeloLabel": "Terapia breve (MRI)",
+          "modelLabel": "Terapia breve (MRI)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Pregunta de excepción",
+          "techniqueLabel": "Pregunta de excepción",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Pregunta de excepción explícita para detectar diferencias útiles.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+        },
+        {
+          "modeloId": "s20linares",
+          "tecnicaId": "m_linares_excepciones",
+          "modelId": "s20linares",
+          "techniqueId": "m_linares_excepciones",
+          "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+          "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Detectar excepción funcional",
+          "techniqueLabel": "Detectar excepción funcional",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Detecta momentos en los que el ciclo problemático no se activa o se repara.",
+          "sourceFile": "data/Core/modelos/sistemico/s20linares.json"
+        },
+        {
+          "modeloId": "construccionismo-social-gergen-1985",
+          "tecnicaId": "m_gergen_amplificacion_excepcion",
+          "modelId": "construccionismo-social-gergen-1985",
+          "techniqueId": "m_gergen_amplificacion_excepcion",
+          "modeloLabel": "Construccionismo social (Kenneth Gergen)",
+          "modelLabel": "Construccionismo social (Kenneth Gergen)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Amplificación de excepción relacional",
+          "techniqueLabel": "Amplificación de excepción relacional",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Explora una ocasión en la que el patrón problemático no se reprodujo y amplifica esa diferencia.",
+          "sourceFile": "data/Core/modelos/constructivista/construccionismo-social-gergen-1985.json"
+        },
+        {
+          "modeloId": "polaridades-semanticas",
+          "tecnicaId": "m_ugazio_excepciones",
+          "modelId": "polaridades-semanticas",
+          "techniqueId": "m_ugazio_excepciones",
+          "modeloLabel": "Modelo de polaridades semánticas",
+          "modelLabel": "Modelo de polaridades semánticas",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Introducir excepciones semánticas",
+          "techniqueLabel": "Introducir excepciones semánticas",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Busca contextos o relaciones donde la polaridad no opera de forma rígida.",
+          "sourceFile": "data/Core/modelos/constructivista/polaridades-semanticas.json"
+        },
+        {
+          "modeloId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+          "tecnicaId": "m_desplazamiento_excepcion_seguridad",
+          "modelId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+          "techniqueId": "m_desplazamiento_excepcion_seguridad",
+          "modeloLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+          "modelLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+          "grupo": "Transversal",
+          "tecnicaLabel": "Explorar excepción de seguridad",
+          "techniqueLabel": "Explorar excepción de seguridad",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Explora momentos recientes de seguridad o eficacia mínima frente a la narrativa traumática dominante.",
+          "sourceFile": "data/Core/modelos/transversal/intervencion-psicosocial-desplazamiento-forzado-2005.json"
+        },
+        {
+          "modeloId": "psicoterapia-comunitaria-reconciliacion-2000",
+          "tecnicaId": "m_reconciliacion_excepciones",
+          "modelId": "psicoterapia-comunitaria-reconciliacion-2000",
+          "techniqueId": "m_reconciliacion_excepciones",
+          "modeloLabel": "Psicoterapia comunitaria para la reconciliación",
+          "modelLabel": "Psicoterapia comunitaria para la reconciliación",
+          "grupo": "Transversal",
+          "tecnicaLabel": "Exploración de excepciones comunitarias",
+          "techniqueLabel": "Exploración de excepciones comunitarias",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Identifica momentos en los que la comunidad ya logró cooperación o resolución pacífica.",
+          "sourceFile": "data/Core/modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json"
+        },
+        {
+          "modeloId": "hipnosis-ericksoniana-1958",
+          "tecnicaId": "p_erickson_utilizacion",
+          "modelId": "hipnosis-ericksoniana-1958",
+          "techniqueId": "p_erickson_utilizacion",
+          "modeloLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
+          "modelLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Utilización de resistencias",
+          "techniqueLabel": "Utilización de resistencias",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Equivalencia funcional débil: utilización de aperturas o recursos ya presentes, pero no es una técnica de excepción en sentido estricto.",
+          "sourceFile": "data/Core/modelos/sistemico/hipnosis-ericksoniana-1958.json"
+        },
+        {
+          "modeloId": "terapia-colaborativa",
+          "tecnicaId": "p_colab_conversacionPosibilidades",
+          "modelId": "terapia-colaborativa",
+          "techniqueId": "p_colab_conversacionPosibilidades",
+          "modeloLabel": "Terapia colaborativa",
+          "modelLabel": "Terapia colaborativa",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Conversación generativa centrada en posibilidades",
+          "techniqueLabel": "Conversación generativa centrada en posibilidades",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Incluye exploración de excepciones y futuros posibles, pero el procedimiento es más amplio que este isomorfismo.",
+          "sourceFile": "data/Core/modelos/constructivista/terapia-colaborativa.json"
         }
       ]
     },
@@ -309,14 +437,14 @@
           "modeloLabel": "Terapia centrada en soluciones",
           "modelLabel": "Terapia centrada en soluciones",
           "grupo": "Sistémico",
-          "tecnicaId": "m_sfbt_excepcion_parcial",
-          "techniqueId": "m_sfbt_excepcion_parcial",
-          "tecnicaLabel": "Pregunta de excepción parcial",
-          "techniqueLabel": "Pregunta de excepción parcial",
-          "tecnicaTipo": "micro",
-          "techniqueType": "micro",
+          "tecnicaId": "p_sfbt_exploracion_excepciones",
+          "techniqueId": "p_sfbt_exploracion_excepciones",
+          "tecnicaLabel": "Exploración de excepciones",
+          "techniqueLabel": "Exploración de excepciones",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "Corresponde a la pregunta de excepción parcial.",
+          "nota": "Correspondencia directa y principal en el repo: procedimiento explícito de exploración de excepciones.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
         },
         {
@@ -331,20 +459,20 @@
             "autoeficacia",
             "contraejemplos"
           ],
-          "modeloId": "hipnosis-ericksoniana-1958",
-          "modelId": "hipnosis-ericksoniana-1958",
-          "modeloLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
-          "modelLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
+          "modeloId": "terapia-centrada-soluciones-1982",
+          "modelId": "terapia-centrada-soluciones-1982",
+          "modeloLabel": "Terapia centrada en soluciones",
+          "modelLabel": "Terapia centrada en soluciones",
           "grupo": "Sistémico",
-          "tecnicaId": "p_erickson_utilizacion",
-          "techniqueId": "p_erickson_utilizacion",
-          "tecnicaLabel": "Utilización de resistencias",
-          "techniqueLabel": "Utilización de resistencias",
-          "tecnicaTipo": "procedimiento",
-          "techniqueType": "procedimiento",
+          "tecnicaId": "m_sfbt_excepcion_parcial",
+          "techniqueId": "m_sfbt_excepcion_parcial",
+          "tecnicaLabel": "Pregunta de excepción parcial",
+          "techniqueLabel": "Pregunta de excepción parcial",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
           "estado": "ok",
-          "nota": "Se usa como equivalente funcional a la utilización de éxitos espontáneos o aperturas ya presentes.",
-          "sourceFile": "data/Core/modelos/sistemico/hipnosis-ericksoniana-1958.json"
+          "nota": "Micro específica para explorar excepciones parciales al problema.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
         },
         {
           "isomorfismoId": "buscar-excepciones-al-problema",
@@ -370,8 +498,197 @@
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "En el catálogo original aparece como Unique Outcomes Question; en tu repo el mejor equivalente técnico localizado es la exploración de valores implicados en la resistencia.",
+          "nota": "Correspondencia directa y exacta en el repo: exploración de excepciones al problema.",
           "sourceFile": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
+        },
+        {
+          "isomorfismoId": "buscar-excepciones-al-problema",
+          "isomorfismoLabel": "Buscar excepciones al problema",
+          "categoria": "Excepciones, variación y recursos",
+          "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+          "tags": [
+            "excepciones",
+            "recursos",
+            "variacion",
+            "autoeficacia",
+            "contraejemplos"
+          ],
+          "modeloId": "k1kelly55",
+          "modelId": "k1kelly55",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "modelLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_kelly_excepciones",
+          "techniqueId": "m_kelly_excepciones",
+          "tecnicaLabel": "Explorar excepciones",
+          "techniqueLabel": "Explorar excepciones",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Equivale a la búsqueda de episodios discrepantes o situaciones donde el patrón temido no se cumple.",
+          "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        },
+        {
+          "isomorfismoId": "buscar-excepciones-al-problema",
+          "isomorfismoLabel": "Buscar excepciones al problema",
+          "categoria": "Excepciones, variación y recursos",
+          "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+          "tags": [
+            "excepciones",
+            "recursos",
+            "variacion",
+            "autoeficacia",
+            "contraejemplos"
+          ],
+          "modeloId": "terapia-breve-mri-1974",
+          "modelId": "terapia-breve-mri-1974",
+          "modeloLabel": "Terapia breve (MRI)",
+          "modelLabel": "Terapia breve (MRI)",
+          "grupo": "Sistémico",
+          "tecnicaId": "m_mri_excepcion",
+          "techniqueId": "m_mri_excepcion",
+          "tecnicaLabel": "Pregunta de excepción",
+          "techniqueLabel": "Pregunta de excepción",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Pregunta de excepción explícita para detectar diferencias útiles.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+        },
+        {
+          "isomorfismoId": "buscar-excepciones-al-problema",
+          "isomorfismoLabel": "Buscar excepciones al problema",
+          "categoria": "Excepciones, variación y recursos",
+          "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+          "tags": [
+            "excepciones",
+            "recursos",
+            "variacion",
+            "autoeficacia",
+            "contraejemplos"
+          ],
+          "modeloId": "s20linares",
+          "modelId": "s20linares",
+          "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+          "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+          "grupo": "Sistémico",
+          "tecnicaId": "m_linares_excepciones",
+          "techniqueId": "m_linares_excepciones",
+          "tecnicaLabel": "Detectar excepción funcional",
+          "techniqueLabel": "Detectar excepción funcional",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Detecta momentos en los que el ciclo problemático no se activa o se repara.",
+          "sourceFile": "data/Core/modelos/sistemico/s20linares.json"
+        },
+        {
+          "isomorfismoId": "buscar-excepciones-al-problema",
+          "isomorfismoLabel": "Buscar excepciones al problema",
+          "categoria": "Excepciones, variación y recursos",
+          "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+          "tags": [
+            "excepciones",
+            "recursos",
+            "variacion",
+            "autoeficacia",
+            "contraejemplos"
+          ],
+          "modeloId": "construccionismo-social-gergen-1985",
+          "modelId": "construccionismo-social-gergen-1985",
+          "modeloLabel": "Construccionismo social (Kenneth Gergen)",
+          "modelLabel": "Construccionismo social (Kenneth Gergen)",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_gergen_amplificacion_excepcion",
+          "techniqueId": "m_gergen_amplificacion_excepcion",
+          "tecnicaLabel": "Amplificación de excepción relacional",
+          "techniqueLabel": "Amplificación de excepción relacional",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Explora una ocasión en la que el patrón problemático no se reprodujo y amplifica esa diferencia.",
+          "sourceFile": "data/Core/modelos/constructivista/construccionismo-social-gergen-1985.json"
+        },
+        {
+          "isomorfismoId": "buscar-excepciones-al-problema",
+          "isomorfismoLabel": "Buscar excepciones al problema",
+          "categoria": "Excepciones, variación y recursos",
+          "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+          "tags": [
+            "excepciones",
+            "recursos",
+            "variacion",
+            "autoeficacia",
+            "contraejemplos"
+          ],
+          "modeloId": "polaridades-semanticas",
+          "modelId": "polaridades-semanticas",
+          "modeloLabel": "Modelo de polaridades semánticas",
+          "modelLabel": "Modelo de polaridades semánticas",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_ugazio_excepciones",
+          "techniqueId": "m_ugazio_excepciones",
+          "tecnicaLabel": "Introducir excepciones semánticas",
+          "techniqueLabel": "Introducir excepciones semánticas",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Busca contextos o relaciones donde la polaridad no opera de forma rígida.",
+          "sourceFile": "data/Core/modelos/constructivista/polaridades-semanticas.json"
+        },
+        {
+          "isomorfismoId": "buscar-excepciones-al-problema",
+          "isomorfismoLabel": "Buscar excepciones al problema",
+          "categoria": "Excepciones, variación y recursos",
+          "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+          "tags": [
+            "excepciones",
+            "recursos",
+            "variacion",
+            "autoeficacia",
+            "contraejemplos"
+          ],
+          "modeloId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+          "modelId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+          "modeloLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+          "modelLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+          "grupo": "Transversal",
+          "tecnicaId": "m_desplazamiento_excepcion_seguridad",
+          "techniqueId": "m_desplazamiento_excepcion_seguridad",
+          "tecnicaLabel": "Explorar excepción de seguridad",
+          "techniqueLabel": "Explorar excepción de seguridad",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Explora momentos recientes de seguridad o eficacia mínima frente a la narrativa traumática dominante.",
+          "sourceFile": "data/Core/modelos/transversal/intervencion-psicosocial-desplazamiento-forzado-2005.json"
+        },
+        {
+          "isomorfismoId": "buscar-excepciones-al-problema",
+          "isomorfismoLabel": "Buscar excepciones al problema",
+          "categoria": "Excepciones, variación y recursos",
+          "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+          "tags": [
+            "excepciones",
+            "recursos",
+            "variacion",
+            "autoeficacia",
+            "contraejemplos"
+          ],
+          "modeloId": "psicoterapia-comunitaria-reconciliacion-2000",
+          "modelId": "psicoterapia-comunitaria-reconciliacion-2000",
+          "modeloLabel": "Psicoterapia comunitaria para la reconciliación",
+          "modelLabel": "Psicoterapia comunitaria para la reconciliación",
+          "grupo": "Transversal",
+          "tecnicaId": "m_reconciliacion_excepciones",
+          "techniqueId": "m_reconciliacion_excepciones",
+          "tecnicaLabel": "Exploración de excepciones comunitarias",
+          "techniqueLabel": "Exploración de excepciones comunitarias",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Identifica momentos en los que la comunidad ya logró cooperación o resolución pacífica.",
+          "sourceFile": "data/Core/modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json"
         }
       ]
     },
@@ -598,14 +915,14 @@
       "modeloLabel": "Terapia centrada en soluciones",
       "modelLabel": "Terapia centrada en soluciones",
       "grupo": "Sistémico",
-      "tecnicaId": "m_sfbt_excepcion_parcial",
-      "techniqueId": "m_sfbt_excepcion_parcial",
-      "tecnicaLabel": "Pregunta de excepción parcial",
-      "techniqueLabel": "Pregunta de excepción parcial",
-      "tecnicaTipo": "micro",
-      "techniqueType": "micro",
+      "tecnicaId": "p_sfbt_exploracion_excepciones",
+      "techniqueId": "p_sfbt_exploracion_excepciones",
+      "tecnicaLabel": "Exploración de excepciones",
+      "techniqueLabel": "Exploración de excepciones",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
       "estado": "ok",
-      "nota": "Corresponde a la pregunta de excepción parcial.",
+      "nota": "Correspondencia directa y principal en el repo: procedimiento explícito de exploración de excepciones.",
       "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
     },
     {
@@ -620,20 +937,20 @@
         "autoeficacia",
         "contraejemplos"
       ],
-      "modeloId": "hipnosis-ericksoniana-1958",
-      "modelId": "hipnosis-ericksoniana-1958",
-      "modeloLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
-      "modelLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
+      "modeloId": "terapia-centrada-soluciones-1982",
+      "modelId": "terapia-centrada-soluciones-1982",
+      "modeloLabel": "Terapia centrada en soluciones",
+      "modelLabel": "Terapia centrada en soluciones",
       "grupo": "Sistémico",
-      "tecnicaId": "p_erickson_utilizacion",
-      "techniqueId": "p_erickson_utilizacion",
-      "tecnicaLabel": "Utilización de resistencias",
-      "techniqueLabel": "Utilización de resistencias",
-      "tecnicaTipo": "procedimiento",
-      "techniqueType": "procedimiento",
+      "tecnicaId": "m_sfbt_excepcion_parcial",
+      "techniqueId": "m_sfbt_excepcion_parcial",
+      "tecnicaLabel": "Pregunta de excepción parcial",
+      "techniqueLabel": "Pregunta de excepción parcial",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
       "estado": "ok",
-      "nota": "Se usa como equivalente funcional a la utilización de éxitos espontáneos o aperturas ya presentes.",
-      "sourceFile": "data/Core/modelos/sistemico/hipnosis-ericksoniana-1958.json"
+      "nota": "Micro específica para explorar excepciones parciales al problema.",
+      "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
     },
     {
       "isomorfismoId": "buscar-excepciones-al-problema",
@@ -659,8 +976,197 @@
       "tecnicaTipo": "procedimiento",
       "techniqueType": "procedimiento",
       "estado": "ok",
-      "nota": "En el catálogo original aparece como Unique Outcomes Question; en tu repo el mejor equivalente técnico localizado es la exploración de valores implicados en la resistencia.",
+      "nota": "Correspondencia directa y exacta en el repo: exploración de excepciones al problema.",
       "sourceFile": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
+    },
+    {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "isomorfismoLabel": "Buscar excepciones al problema",
+      "categoria": "Excepciones, variación y recursos",
+      "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+      "tags": [
+        "excepciones",
+        "recursos",
+        "variacion",
+        "autoeficacia",
+        "contraejemplos"
+      ],
+      "modeloId": "k1kelly55",
+      "modelId": "k1kelly55",
+      "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+      "modelLabel": "Teoría de los Constructos Personales (PCP)",
+      "grupo": "Constructivista",
+      "tecnicaId": "m_kelly_excepciones",
+      "techniqueId": "m_kelly_excepciones",
+      "tecnicaLabel": "Explorar excepciones",
+      "techniqueLabel": "Explorar excepciones",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Equivale a la búsqueda de episodios discrepantes o situaciones donde el patrón temido no se cumple.",
+      "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+    },
+    {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "isomorfismoLabel": "Buscar excepciones al problema",
+      "categoria": "Excepciones, variación y recursos",
+      "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+      "tags": [
+        "excepciones",
+        "recursos",
+        "variacion",
+        "autoeficacia",
+        "contraejemplos"
+      ],
+      "modeloId": "terapia-breve-mri-1974",
+      "modelId": "terapia-breve-mri-1974",
+      "modeloLabel": "Terapia breve (MRI)",
+      "modelLabel": "Terapia breve (MRI)",
+      "grupo": "Sistémico",
+      "tecnicaId": "m_mri_excepcion",
+      "techniqueId": "m_mri_excepcion",
+      "tecnicaLabel": "Pregunta de excepción",
+      "techniqueLabel": "Pregunta de excepción",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Pregunta de excepción explícita para detectar diferencias útiles.",
+      "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+    },
+    {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "isomorfismoLabel": "Buscar excepciones al problema",
+      "categoria": "Excepciones, variación y recursos",
+      "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+      "tags": [
+        "excepciones",
+        "recursos",
+        "variacion",
+        "autoeficacia",
+        "contraejemplos"
+      ],
+      "modeloId": "s20linares",
+      "modelId": "s20linares",
+      "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+      "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+      "grupo": "Sistémico",
+      "tecnicaId": "m_linares_excepciones",
+      "techniqueId": "m_linares_excepciones",
+      "tecnicaLabel": "Detectar excepción funcional",
+      "techniqueLabel": "Detectar excepción funcional",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Detecta momentos en los que el ciclo problemático no se activa o se repara.",
+      "sourceFile": "data/Core/modelos/sistemico/s20linares.json"
+    },
+    {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "isomorfismoLabel": "Buscar excepciones al problema",
+      "categoria": "Excepciones, variación y recursos",
+      "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+      "tags": [
+        "excepciones",
+        "recursos",
+        "variacion",
+        "autoeficacia",
+        "contraejemplos"
+      ],
+      "modeloId": "construccionismo-social-gergen-1985",
+      "modelId": "construccionismo-social-gergen-1985",
+      "modeloLabel": "Construccionismo social (Kenneth Gergen)",
+      "modelLabel": "Construccionismo social (Kenneth Gergen)",
+      "grupo": "Constructivista",
+      "tecnicaId": "m_gergen_amplificacion_excepcion",
+      "techniqueId": "m_gergen_amplificacion_excepcion",
+      "tecnicaLabel": "Amplificación de excepción relacional",
+      "techniqueLabel": "Amplificación de excepción relacional",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Explora una ocasión en la que el patrón problemático no se reprodujo y amplifica esa diferencia.",
+      "sourceFile": "data/Core/modelos/constructivista/construccionismo-social-gergen-1985.json"
+    },
+    {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "isomorfismoLabel": "Buscar excepciones al problema",
+      "categoria": "Excepciones, variación y recursos",
+      "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+      "tags": [
+        "excepciones",
+        "recursos",
+        "variacion",
+        "autoeficacia",
+        "contraejemplos"
+      ],
+      "modeloId": "polaridades-semanticas",
+      "modelId": "polaridades-semanticas",
+      "modeloLabel": "Modelo de polaridades semánticas",
+      "modelLabel": "Modelo de polaridades semánticas",
+      "grupo": "Constructivista",
+      "tecnicaId": "m_ugazio_excepciones",
+      "techniqueId": "m_ugazio_excepciones",
+      "tecnicaLabel": "Introducir excepciones semánticas",
+      "techniqueLabel": "Introducir excepciones semánticas",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Busca contextos o relaciones donde la polaridad no opera de forma rígida.",
+      "sourceFile": "data/Core/modelos/constructivista/polaridades-semanticas.json"
+    },
+    {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "isomorfismoLabel": "Buscar excepciones al problema",
+      "categoria": "Excepciones, variación y recursos",
+      "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+      "tags": [
+        "excepciones",
+        "recursos",
+        "variacion",
+        "autoeficacia",
+        "contraejemplos"
+      ],
+      "modeloId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+      "modelId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+      "modeloLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+      "modelLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+      "grupo": "Transversal",
+      "tecnicaId": "m_desplazamiento_excepcion_seguridad",
+      "techniqueId": "m_desplazamiento_excepcion_seguridad",
+      "tecnicaLabel": "Explorar excepción de seguridad",
+      "techniqueLabel": "Explorar excepción de seguridad",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Explora momentos recientes de seguridad o eficacia mínima frente a la narrativa traumática dominante.",
+      "sourceFile": "data/Core/modelos/transversal/intervencion-psicosocial-desplazamiento-forzado-2005.json"
+    },
+    {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "isomorfismoLabel": "Buscar excepciones al problema",
+      "categoria": "Excepciones, variación y recursos",
+      "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+      "tags": [
+        "excepciones",
+        "recursos",
+        "variacion",
+        "autoeficacia",
+        "contraejemplos"
+      ],
+      "modeloId": "psicoterapia-comunitaria-reconciliacion-2000",
+      "modelId": "psicoterapia-comunitaria-reconciliacion-2000",
+      "modeloLabel": "Psicoterapia comunitaria para la reconciliación",
+      "modelLabel": "Psicoterapia comunitaria para la reconciliación",
+      "grupo": "Transversal",
+      "tecnicaId": "m_reconciliacion_excepciones",
+      "techniqueId": "m_reconciliacion_excepciones",
+      "tecnicaLabel": "Exploración de excepciones comunitarias",
+      "techniqueLabel": "Exploración de excepciones comunitarias",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Identifica momentos en los que la comunidad ya logró cooperación o resolución pacífica.",
+      "sourceFile": "data/Core/modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json"
     },
     {
       "isomorfismoId": "nombrar-el-problema",
@@ -842,6 +1348,22 @@
       "entries": [
         {
           "modeloId": "terapia-centrada-soluciones-1982",
+          "tecnicaId": "p_sfbt_exploracion_excepciones",
+          "modelId": "terapia-centrada-soluciones-1982",
+          "techniqueId": "p_sfbt_exploracion_excepciones",
+          "modeloLabel": "Terapia centrada en soluciones",
+          "modelLabel": "Terapia centrada en soluciones",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Exploración de excepciones",
+          "techniqueLabel": "Exploración de excepciones",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa y principal en el repo: procedimiento explícito de exploración de excepciones.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
+        },
+        {
+          "modeloId": "terapia-centrada-soluciones-1982",
           "tecnicaId": "m_sfbt_excepcion_parcial",
           "modelId": "terapia-centrada-soluciones-1982",
           "techniqueId": "m_sfbt_excepcion_parcial",
@@ -853,24 +1375,8 @@
           "tecnicaTipo": "micro",
           "techniqueType": "micro",
           "estado": "ok",
-          "nota": "Corresponde a la pregunta de excepción parcial.",
+          "nota": "Micro específica para explorar excepciones parciales al problema.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
-        },
-        {
-          "modeloId": "hipnosis-ericksoniana-1958",
-          "tecnicaId": "p_erickson_utilizacion",
-          "modelId": "hipnosis-ericksoniana-1958",
-          "techniqueId": "p_erickson_utilizacion",
-          "modeloLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
-          "modelLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
-          "grupo": "Sistémico",
-          "tecnicaLabel": "Utilización de resistencias",
-          "techniqueLabel": "Utilización de resistencias",
-          "tecnicaTipo": "procedimiento",
-          "techniqueType": "procedimiento",
-          "estado": "ok",
-          "nota": "Se usa como equivalente funcional a la utilización de éxitos espontáneos o aperturas ya presentes.",
-          "sourceFile": "data/Core/modelos/sistemico/hipnosis-ericksoniana-1958.json"
         },
         {
           "modeloId": "terapia-narrativa-white-epston",
@@ -885,24 +1391,152 @@
           "tecnicaTipo": "procedimiento",
           "techniqueType": "procedimiento",
           "estado": "ok",
-          "nota": "En el catálogo original aparece como Unique Outcomes Question; en tu repo el mejor equivalente técnico localizado es la exploración de valores implicados en la resistencia.",
+          "nota": "Correspondencia directa y exacta en el repo: exploración de excepciones al problema.",
           "sourceFile": "data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
         },
         {
           "modeloId": "k1kelly55",
-          "tecnicaId": null,
+          "tecnicaId": "m_kelly_excepciones",
           "modelId": "k1kelly55",
-          "techniqueId": null,
+          "techniqueId": "m_kelly_excepciones",
           "modeloLabel": "Teoría de los Constructos Personales (PCP)",
           "modelLabel": "Teoría de los Constructos Personales (PCP)",
           "grupo": "Constructivista",
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_id",
-          "nota": "En el catálogo aparece como búsqueda de episodios discrepantes. En el repo existe m_kelly_excepciones, pero conviene decidir si se enlaza directamente a esa micro o si quieres crear una micro más específica para episodios discrepantes.",
+          "tecnicaLabel": "Explorar excepciones",
+          "techniqueLabel": "Explorar excepciones",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Equivale a la búsqueda de episodios discrepantes o situaciones donde el patrón temido no se cumple.",
           "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        },
+        {
+          "modeloId": "terapia-breve-mri-1974",
+          "tecnicaId": "m_mri_excepcion",
+          "modelId": "terapia-breve-mri-1974",
+          "techniqueId": "m_mri_excepcion",
+          "modeloLabel": "Terapia breve (MRI)",
+          "modelLabel": "Terapia breve (MRI)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Pregunta de excepción",
+          "techniqueLabel": "Pregunta de excepción",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Pregunta de excepción explícita para detectar diferencias útiles.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+        },
+        {
+          "modeloId": "s20linares",
+          "tecnicaId": "m_linares_excepciones",
+          "modelId": "s20linares",
+          "techniqueId": "m_linares_excepciones",
+          "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+          "modelLabel": "Psicoterapia relacional sistémica (Linares)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Detectar excepción funcional",
+          "techniqueLabel": "Detectar excepción funcional",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Detecta momentos en los que el ciclo problemático no se activa o se repara.",
+          "sourceFile": "data/Core/modelos/sistemico/s20linares.json"
+        },
+        {
+          "modeloId": "construccionismo-social-gergen-1985",
+          "tecnicaId": "m_gergen_amplificacion_excepcion",
+          "modelId": "construccionismo-social-gergen-1985",
+          "techniqueId": "m_gergen_amplificacion_excepcion",
+          "modeloLabel": "Construccionismo social (Kenneth Gergen)",
+          "modelLabel": "Construccionismo social (Kenneth Gergen)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Amplificación de excepción relacional",
+          "techniqueLabel": "Amplificación de excepción relacional",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Explora una ocasión en la que el patrón problemático no se reprodujo y amplifica esa diferencia.",
+          "sourceFile": "data/Core/modelos/constructivista/construccionismo-social-gergen-1985.json"
+        },
+        {
+          "modeloId": "polaridades-semanticas",
+          "tecnicaId": "m_ugazio_excepciones",
+          "modelId": "polaridades-semanticas",
+          "techniqueId": "m_ugazio_excepciones",
+          "modeloLabel": "Modelo de polaridades semánticas",
+          "modelLabel": "Modelo de polaridades semánticas",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Introducir excepciones semánticas",
+          "techniqueLabel": "Introducir excepciones semánticas",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Busca contextos o relaciones donde la polaridad no opera de forma rígida.",
+          "sourceFile": "data/Core/modelos/constructivista/polaridades-semanticas.json"
+        },
+        {
+          "modeloId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+          "tecnicaId": "m_desplazamiento_excepcion_seguridad",
+          "modelId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+          "techniqueId": "m_desplazamiento_excepcion_seguridad",
+          "modeloLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+          "modelLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+          "grupo": "Transversal",
+          "tecnicaLabel": "Explorar excepción de seguridad",
+          "techniqueLabel": "Explorar excepción de seguridad",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Explora momentos recientes de seguridad o eficacia mínima frente a la narrativa traumática dominante.",
+          "sourceFile": "data/Core/modelos/transversal/intervencion-psicosocial-desplazamiento-forzado-2005.json"
+        },
+        {
+          "modeloId": "psicoterapia-comunitaria-reconciliacion-2000",
+          "tecnicaId": "m_reconciliacion_excepciones",
+          "modelId": "psicoterapia-comunitaria-reconciliacion-2000",
+          "techniqueId": "m_reconciliacion_excepciones",
+          "modeloLabel": "Psicoterapia comunitaria para la reconciliación",
+          "modelLabel": "Psicoterapia comunitaria para la reconciliación",
+          "grupo": "Transversal",
+          "tecnicaLabel": "Exploración de excepciones comunitarias",
+          "techniqueLabel": "Exploración de excepciones comunitarias",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Identifica momentos en los que la comunidad ya logró cooperación o resolución pacífica.",
+          "sourceFile": "data/Core/modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json"
+        },
+        {
+          "modeloId": "hipnosis-ericksoniana-1958",
+          "tecnicaId": "p_erickson_utilizacion",
+          "modelId": "hipnosis-ericksoniana-1958",
+          "techniqueId": "p_erickson_utilizacion",
+          "modeloLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
+          "modelLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": "Utilización de resistencias",
+          "techniqueLabel": "Utilización de resistencias",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Equivalencia funcional débil: utilización de aperturas o recursos ya presentes, pero no es una técnica de excepción en sentido estricto.",
+          "sourceFile": "data/Core/modelos/sistemico/hipnosis-ericksoniana-1958.json"
+        },
+        {
+          "modeloId": "terapia-colaborativa",
+          "tecnicaId": "p_colab_conversacionPosibilidades",
+          "modelId": "terapia-colaborativa",
+          "techniqueId": "p_colab_conversacionPosibilidades",
+          "modeloLabel": "Terapia colaborativa",
+          "modelLabel": "Terapia colaborativa",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Conversación generativa centrada en posibilidades",
+          "techniqueLabel": "Conversación generativa centrada en posibilidades",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Incluye exploración de excepciones y futuros posibles, pero el procedimiento es más amplio que este isomorfismo.",
+          "sourceFile": "data/Core/modelos/constructivista/terapia-colaborativa.json"
         }
       ]
     },
@@ -1117,6 +1751,14 @@
         "isomorfismoId": "buscar-excepciones-al-problema",
         "isomorfismoLabel": "Buscar excepciones al problema",
         "categoria": "Excepciones, variación y recursos",
+        "tecnicaId": "p_sfbt_exploracion_excepciones",
+        "tecnicaLabel": "Exploración de excepciones",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
         "tecnicaId": "m_sfbt_excepcion_parcial",
         "tecnicaLabel": "Pregunta de excepción parcial",
         "tecnicaTipo": "micro"
@@ -1127,16 +1769,6 @@
         "categoria": "Proyección, motivación y dirección de cambio",
         "tecnicaId": "p_sfbt_pregunta_milagro",
         "tecnicaLabel": "Pregunta milagro",
-        "tecnicaTipo": "procedimiento"
-      }
-    ],
-    "hipnosis-ericksoniana-1958": [
-      {
-        "isomorfismoId": "buscar-excepciones-al-problema",
-        "isomorfismoLabel": "Buscar excepciones al problema",
-        "categoria": "Excepciones, variación y recursos",
-        "tecnicaId": "p_erickson_utilizacion",
-        "tecnicaLabel": "Utilización de resistencias",
         "tecnicaTipo": "procedimiento"
       }
     ],
@@ -1155,6 +1787,76 @@
         "categoria": "Nombrado, formulación y clarificación",
         "tecnicaId": "m_nar_nominar_problema",
         "tecnicaLabel": "Nombrar al problema",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "k1kelly55": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "tecnicaId": "m_kelly_excepciones",
+        "tecnicaLabel": "Explorar excepciones",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-breve-mri-1974": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "tecnicaId": "m_mri_excepcion",
+        "tecnicaLabel": "Pregunta de excepción",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "s20linares": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "tecnicaId": "m_linares_excepciones",
+        "tecnicaLabel": "Detectar excepción funcional",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "construccionismo-social-gergen-1985": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "tecnicaId": "m_gergen_amplificacion_excepcion",
+        "tecnicaLabel": "Amplificación de excepción relacional",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "polaridades-semanticas": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "tecnicaId": "m_ugazio_excepciones",
+        "tecnicaLabel": "Introducir excepciones semánticas",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "intervencion-psicosocial-desplazamiento-forzado-2005": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "tecnicaId": "m_desplazamiento_excepcion_seguridad",
+        "tecnicaLabel": "Explorar excepción de seguridad",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "psicoterapia-comunitaria-reconciliacion-2000": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "tecnicaId": "m_reconciliacion_excepciones",
+        "tecnicaLabel": "Exploración de excepciones comunitarias",
         "tecnicaTipo": "micro"
       }
     ],
@@ -1198,6 +1900,18 @@
     ]
   },
   "byTecnicaId": {
+    "p_sfbt_exploracion_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "terapia-centrada-soluciones-1982",
+        "modeloLabel": "Terapia centrada en soluciones",
+        "tecnicaId": "p_sfbt_exploracion_excepciones",
+        "tecnicaLabel": "Exploración de excepciones",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "m_sfbt_excepcion_parcial": [
       {
         "isomorfismoId": "buscar-excepciones-al-problema",
@@ -1210,18 +1924,6 @@
         "tecnicaTipo": "micro"
       }
     ],
-    "p_erickson_utilizacion": [
-      {
-        "isomorfismoId": "buscar-excepciones-al-problema",
-        "isomorfismoLabel": "Buscar excepciones al problema",
-        "categoria": "Excepciones, variación y recursos",
-        "modeloId": "hipnosis-ericksoniana-1958",
-        "modeloLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
-        "tecnicaId": "p_erickson_utilizacion",
-        "tecnicaLabel": "Utilización de resistencias",
-        "tecnicaTipo": "procedimiento"
-      }
-    ],
     "p_nar_excepciones_problema": [
       {
         "isomorfismoId": "buscar-excepciones-al-problema",
@@ -1232,6 +1934,90 @@
         "tecnicaId": "p_nar_excepciones_problema",
         "tecnicaLabel": "Exploración de excepciones al problema",
         "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_kelly_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "k1kelly55",
+        "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+        "tecnicaId": "m_kelly_excepciones",
+        "tecnicaLabel": "Explorar excepciones",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_mri_excepcion": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "terapia-breve-mri-1974",
+        "modeloLabel": "Terapia breve (MRI)",
+        "tecnicaId": "m_mri_excepcion",
+        "tecnicaLabel": "Pregunta de excepción",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_linares_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "s20linares",
+        "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+        "tecnicaId": "m_linares_excepciones",
+        "tecnicaLabel": "Detectar excepción funcional",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_gergen_amplificacion_excepcion": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "construccionismo-social-gergen-1985",
+        "modeloLabel": "Construccionismo social (Kenneth Gergen)",
+        "tecnicaId": "m_gergen_amplificacion_excepcion",
+        "tecnicaLabel": "Amplificación de excepción relacional",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_ugazio_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "polaridades-semanticas",
+        "modeloLabel": "Modelo de polaridades semánticas",
+        "tecnicaId": "m_ugazio_excepciones",
+        "tecnicaLabel": "Introducir excepciones semánticas",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_desplazamiento_excepcion_seguridad": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+        "modeloLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+        "tecnicaId": "m_desplazamiento_excepcion_seguridad",
+        "tecnicaLabel": "Explorar excepción de seguridad",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_reconciliacion_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "psicoterapia-comunitaria-reconciliacion-2000",
+        "modeloLabel": "Psicoterapia comunitaria para la reconciliación",
+        "tecnicaId": "m_reconciliacion_excepciones",
+        "tecnicaLabel": "Exploración de excepciones comunitarias",
+        "tecnicaTipo": "micro"
       }
     ],
     "m_nar_nominar_problema": [
@@ -1308,6 +2094,18 @@
     ]
   },
   "byModelTechniqueId": {
+    "terapia-centrada-soluciones-1982::p_sfbt_exploracion_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "terapia-centrada-soluciones-1982",
+        "modeloLabel": "Terapia centrada en soluciones",
+        "tecnicaId": "p_sfbt_exploracion_excepciones",
+        "tecnicaLabel": "Exploración de excepciones",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "terapia-centrada-soluciones-1982::m_sfbt_excepcion_parcial": [
       {
         "isomorfismoId": "buscar-excepciones-al-problema",
@@ -1320,18 +2118,6 @@
         "tecnicaTipo": "micro"
       }
     ],
-    "hipnosis-ericksoniana-1958::p_erickson_utilizacion": [
-      {
-        "isomorfismoId": "buscar-excepciones-al-problema",
-        "isomorfismoLabel": "Buscar excepciones al problema",
-        "categoria": "Excepciones, variación y recursos",
-        "modeloId": "hipnosis-ericksoniana-1958",
-        "modeloLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
-        "tecnicaId": "p_erickson_utilizacion",
-        "tecnicaLabel": "Utilización de resistencias",
-        "tecnicaTipo": "procedimiento"
-      }
-    ],
     "terapia-narrativa-white-epston::p_nar_excepciones_problema": [
       {
         "isomorfismoId": "buscar-excepciones-al-problema",
@@ -1342,6 +2128,90 @@
         "tecnicaId": "p_nar_excepciones_problema",
         "tecnicaLabel": "Exploración de excepciones al problema",
         "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "k1kelly55::m_kelly_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "k1kelly55",
+        "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+        "tecnicaId": "m_kelly_excepciones",
+        "tecnicaLabel": "Explorar excepciones",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-breve-mri-1974::m_mri_excepcion": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "terapia-breve-mri-1974",
+        "modeloLabel": "Terapia breve (MRI)",
+        "tecnicaId": "m_mri_excepcion",
+        "tecnicaLabel": "Pregunta de excepción",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "s20linares::m_linares_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "s20linares",
+        "modeloLabel": "Psicoterapia relacional sistémica (Linares)",
+        "tecnicaId": "m_linares_excepciones",
+        "tecnicaLabel": "Detectar excepción funcional",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "construccionismo-social-gergen-1985::m_gergen_amplificacion_excepcion": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "construccionismo-social-gergen-1985",
+        "modeloLabel": "Construccionismo social (Kenneth Gergen)",
+        "tecnicaId": "m_gergen_amplificacion_excepcion",
+        "tecnicaLabel": "Amplificación de excepción relacional",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "polaridades-semanticas::m_ugazio_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "polaridades-semanticas",
+        "modeloLabel": "Modelo de polaridades semánticas",
+        "tecnicaId": "m_ugazio_excepciones",
+        "tecnicaLabel": "Introducir excepciones semánticas",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "intervencion-psicosocial-desplazamiento-forzado-2005::m_desplazamiento_excepcion_seguridad": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+        "modeloLabel": "Intervención psicosocial en contextos de desplazamiento forzado",
+        "tecnicaId": "m_desplazamiento_excepcion_seguridad",
+        "tecnicaLabel": "Explorar excepción de seguridad",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "psicoterapia-comunitaria-reconciliacion-2000::m_reconciliacion_excepciones": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "isomorfismoLabel": "Buscar excepciones al problema",
+        "categoria": "Excepciones, variación y recursos",
+        "modeloId": "psicoterapia-comunitaria-reconciliacion-2000",
+        "modeloLabel": "Psicoterapia comunitaria para la reconciliación",
+        "tecnicaId": "m_reconciliacion_excepciones",
+        "tecnicaLabel": "Exploración de excepciones comunitarias",
+        "tecnicaTipo": "micro"
       }
     ],
     "terapia-narrativa-white-epston::m_nar_nominar_problema": [
@@ -1419,9 +2289,9 @@
   },
   "stats": {
     "totalIsomorfismos": 4,
-    "totalEntries": 13,
-    "totalOk": 9,
-    "totalFaltaId": 2,
+    "totalEntries": 21,
+    "totalOk": 16,
+    "totalFaltaId": 1,
     "totalFaltaModelo": 2,
     "totalDudoso": 0,
     "totalDescartado": 0
