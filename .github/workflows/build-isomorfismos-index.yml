@@ -30,7 +30,7 @@ jobs:
           node-version: 20
 
       - name: Run build script
-        run: node scripts/build-isomorfismos-lookup.js
+        run: node scripts/build-isomorfismos-lookup.cjs
 
       - name: Commit generated files if changed
         run: |
