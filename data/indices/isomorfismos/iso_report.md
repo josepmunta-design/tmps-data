@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T19:27:36.058Z
+Generado: 2026-03-12T19:31:55.293Z
 
 ## Buscar excepciones al problema
 
@@ -62,7 +62,7 @@ Generado: 2026-03-12T19:27:36.058Z
 - Terapia enfocada en las emociones — Exploración de emoción primaria subyacente al síntoma [ok]
 - schema-therapy-young-1990 — pendiente_repo_funcion_modo_esquema [falta_modelo]
 - Internal Family Systems (IFS) — pendiente_repo_funcion_protectora_parte [falta_id]
-- Terapia de Aceptación y Compromiso (ACT) — pendiente_repo_evitacion_experiencial_funcion [falta_id]
+- Terapia de Aceptación y Compromiso (ACT) — Análisis explícito de evitación experiencial [ok]
 
 ## Nombrar el problema
 
