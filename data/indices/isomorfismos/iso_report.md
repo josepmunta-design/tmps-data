@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T12:05:49.129Z
+Generado: 2026-03-12T19:17:45.261Z
 
 ## Buscar excepciones al problema
 
@@ -21,6 +21,21 @@ Generado: 2026-03-12T12:05:49.129Z
 - Psicoterapia comunitaria para la reconciliación — Exploración de excepciones comunitarias [ok]
 - Hipnosis clínica ericksoniana (Milton H. Erickson) — Utilización de resistencias [parcial]
 - Terapia colaborativa — Conversación generativa centrada en posibilidades [parcial]
+
+## Concretar el problema en conducta
+
+- ID: `concretar-el-problema-en-conducta`
+- Categoría: Clarificación operativa del problema
+- Archivo fuente: `data/indices/isomorfismos/fuente/concretar-el-problema-en-conducta.json`
+- Entradas: 7
+
+- Autocontrol conductual — m_kanfer_definir_conducta_diana_operacional [falta_id]
+- Terapia breve (MRI) — p_mri_definicion_operativa_problema [falta_id]
+- Escuela de Palo Alto / MRI — p_paloalto_definicion_operativa_problema_sistema_cliente [falta_id]
+- Aprendizaje social — m_bandura_precisar_conducta_diana_observable [falta_id]
+- Terapia Gestalt — p_gestalt_que_como_lugar_porque [falta_id]
+- Terapia cognitiva (depresión) — pendiente_repo_behavioral_specification [falta_id]
+- Terapia estratégica — pendiente_repo_interactional_sequence_description [falta_id]
 
 ## Externalización del problema
 

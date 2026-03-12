@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-12T12:05:49.129Z",
+    "generatedAt": "2026-03-12T19:17:45.261Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -212,6 +212,135 @@
           "estado": "parcial",
           "nota": "Incluye exploración de excepciones y futuros posibles, pero el procedimiento es más amplio que este isomorfismo.",
           "sourceFile": "data/Core/modelos/constructivista/terapia-colaborativa.json"
+        }
+      ]
+    },
+    {
+      "id": "concretar-el-problema-en-conducta",
+      "label": "Concretar el problema en conducta",
+      "definicion": "Traducir una formulación abstracta, global o vaga del problema a conductas observables, descripciones operativas o secuencias concretas que permitan identificar qué hace la persona, qué hacen los otros y qué ocurre exactamente en la situación problemática.",
+      "categoria": "Clarificación operativa del problema",
+      "tags": [
+        "conducta observable",
+        "definicion operativa",
+        "operacionalizacion",
+        "conducta diana",
+        "descripcion secuencial",
+        "lenguaje operacional"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/concretar-el-problema-en-conducta.json",
+      "entries": [
+        {
+          "modeloId": "autocontrol-conductual-kanfer-karoly",
+          "tecnicaId": "m_kanfer_definir_conducta_diana_operacional",
+          "modelId": "autocontrol-conductual-kanfer-karoly",
+          "techniqueId": "m_kanfer_definir_conducta_diana_operacional",
+          "modeloLabel": "Autocontrol conductual",
+          "modelLabel": "Autocontrol conductual",
+          "grupo": "Conductismo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia directa: convierte el problema en una conducta diana operacionalizada.",
+          "sourceFile": "data/Core/modelos/conductismo/autocontrol-conductual-kanfer-karoly.json"
+        },
+        {
+          "modeloId": "terapia-breve-mri-1974",
+          "tecnicaId": "p_mri_definicion_operativa_problema",
+          "modelId": "terapia-breve-mri-1974",
+          "techniqueId": "p_mri_definicion_operativa_problema",
+          "modeloLabel": "Terapia breve (MRI)",
+          "modelLabel": "Terapia breve (MRI)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia directa: formula el problema en términos observables y situacionales.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+        },
+        {
+          "modeloId": "escuela-palo-alto-mri-1959",
+          "tecnicaId": "p_paloalto_definicion_operativa_problema_sistema_cliente",
+          "modelId": "escuela-palo-alto-mri-1959",
+          "techniqueId": "p_paloalto_definicion_operativa_problema_sistema_cliente",
+          "modeloLabel": "Escuela de Palo Alto / MRI",
+          "modelLabel": "Escuela de Palo Alto / MRI",
+          "grupo": "Sistémico",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia directa: operacionaliza el problema en su contexto relacional.",
+          "sourceFile": "data/Core/modelos/sistemico/escuela-palo-alto-mri-1959.json"
+        },
+        {
+          "modeloId": "aprendizaje-social-bandura-1977",
+          "tecnicaId": "m_bandura_precisar_conducta_diana_observable",
+          "modelId": "aprendizaje-social-bandura-1977",
+          "techniqueId": "m_bandura_precisar_conducta_diana_observable",
+          "modeloLabel": "Aprendizaje social",
+          "modelLabel": "Aprendizaje social",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia directa: delimita la conducta objetivo en términos visibles y concretos.",
+          "sourceFile": "data/Core/modelos/cognitivo/aprendizaje-social-bandura-1977.json"
+        },
+        {
+          "modeloId": "terapia-gestalt-perls-1951",
+          "tecnicaId": "p_gestalt_que_como_lugar_porque",
+          "modelId": "terapia-gestalt-perls-1951",
+          "techniqueId": "p_gestalt_que_como_lugar_porque",
+          "modeloLabel": "Terapia Gestalt",
+          "modelLabel": "Terapia Gestalt",
+          "grupo": "Humanista",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia suficientemente fuerte: transforma explicaciones abstractas en descripción concreta del hacer y del experimentar.",
+          "sourceFile": "data/Core/modelos/humanista/terapia-gestalt-perls-1951.json"
+        },
+        {
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "tecnicaId": "pendiente_repo_behavioral_specification",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "techniqueId": "pendiente_repo_behavioral_specification",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "La técnica fuente del catálogo encaja, pero no hay una técnica equivalente literal en el repo todavía.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "modeloId": "terapia-estrategica-1967",
+          "tecnicaId": "pendiente_repo_interactional_sequence_description",
+          "modelId": "terapia-estrategica-1967",
+          "techniqueId": "pendiente_repo_interactional_sequence_description",
+          "modeloLabel": "Terapia estratégica",
+          "modelLabel": "Terapia estratégica",
+          "grupo": "Sistémico",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "La técnica fuente de Haley encaja, pero no existe aún una micro/procedimiento equivalente en el repo.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-estrategica-1967.json"
         }
       ]
     },
@@ -885,6 +1014,21 @@
           "sourceFile": "data/Core/modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json"
         }
       ]
+    },
+    {
+      "id": "concretar-el-problema-en-conducta",
+      "label": "Concretar el problema en conducta",
+      "categoria": "Clarificación operativa del problema",
+      "definicion": "Traducir una formulación abstracta, global o vaga del problema a conductas observables, descripciones operativas o secuencias concretas que permitan identificar qué hace la persona, qué hacen los otros y qué ocurre exactamente en la situación problemática.",
+      "tags": [
+        "conducta observable",
+        "definicion operativa",
+        "operacionalizacion",
+        "conducta diana",
+        "descripcion secuencial",
+        "lenguaje operacional"
+      ],
+      "records": []
     },
     {
       "id": "externalizacion-problema",
@@ -2362,6 +2506,135 @@
         }
       ]
     },
+    "concretar-el-problema-en-conducta": {
+      "id": "concretar-el-problema-en-conducta",
+      "label": "Concretar el problema en conducta",
+      "definicion": "Traducir una formulación abstracta, global o vaga del problema a conductas observables, descripciones operativas o secuencias concretas que permitan identificar qué hace la persona, qué hacen los otros y qué ocurre exactamente en la situación problemática.",
+      "categoria": "Clarificación operativa del problema",
+      "tags": [
+        "conducta observable",
+        "definicion operativa",
+        "operacionalizacion",
+        "conducta diana",
+        "descripcion secuencial",
+        "lenguaje operacional"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/concretar-el-problema-en-conducta.json",
+      "entries": [
+        {
+          "modeloId": "autocontrol-conductual-kanfer-karoly",
+          "tecnicaId": "m_kanfer_definir_conducta_diana_operacional",
+          "modelId": "autocontrol-conductual-kanfer-karoly",
+          "techniqueId": "m_kanfer_definir_conducta_diana_operacional",
+          "modeloLabel": "Autocontrol conductual",
+          "modelLabel": "Autocontrol conductual",
+          "grupo": "Conductismo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia directa: convierte el problema en una conducta diana operacionalizada.",
+          "sourceFile": "data/Core/modelos/conductismo/autocontrol-conductual-kanfer-karoly.json"
+        },
+        {
+          "modeloId": "terapia-breve-mri-1974",
+          "tecnicaId": "p_mri_definicion_operativa_problema",
+          "modelId": "terapia-breve-mri-1974",
+          "techniqueId": "p_mri_definicion_operativa_problema",
+          "modeloLabel": "Terapia breve (MRI)",
+          "modelLabel": "Terapia breve (MRI)",
+          "grupo": "Sistémico",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia directa: formula el problema en términos observables y situacionales.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-breve-mri-1974.json"
+        },
+        {
+          "modeloId": "escuela-palo-alto-mri-1959",
+          "tecnicaId": "p_paloalto_definicion_operativa_problema_sistema_cliente",
+          "modelId": "escuela-palo-alto-mri-1959",
+          "techniqueId": "p_paloalto_definicion_operativa_problema_sistema_cliente",
+          "modeloLabel": "Escuela de Palo Alto / MRI",
+          "modelLabel": "Escuela de Palo Alto / MRI",
+          "grupo": "Sistémico",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia directa: operacionaliza el problema en su contexto relacional.",
+          "sourceFile": "data/Core/modelos/sistemico/escuela-palo-alto-mri-1959.json"
+        },
+        {
+          "modeloId": "aprendizaje-social-bandura-1977",
+          "tecnicaId": "m_bandura_precisar_conducta_diana_observable",
+          "modelId": "aprendizaje-social-bandura-1977",
+          "techniqueId": "m_bandura_precisar_conducta_diana_observable",
+          "modeloLabel": "Aprendizaje social",
+          "modelLabel": "Aprendizaje social",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia directa: delimita la conducta objetivo en términos visibles y concretos.",
+          "sourceFile": "data/Core/modelos/cognitivo/aprendizaje-social-bandura-1977.json"
+        },
+        {
+          "modeloId": "terapia-gestalt-perls-1951",
+          "tecnicaId": "p_gestalt_que_como_lugar_porque",
+          "modelId": "terapia-gestalt-perls-1951",
+          "techniqueId": "p_gestalt_que_como_lugar_porque",
+          "modeloLabel": "Terapia Gestalt",
+          "modelLabel": "Terapia Gestalt",
+          "grupo": "Humanista",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Equivalencia suficientemente fuerte: transforma explicaciones abstractas en descripción concreta del hacer y del experimentar.",
+          "sourceFile": "data/Core/modelos/humanista/terapia-gestalt-perls-1951.json"
+        },
+        {
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "tecnicaId": "pendiente_repo_behavioral_specification",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "techniqueId": "pendiente_repo_behavioral_specification",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "La técnica fuente del catálogo encaja, pero no hay una técnica equivalente literal en el repo todavía.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "modeloId": "terapia-estrategica-1967",
+          "tecnicaId": "pendiente_repo_interactional_sequence_description",
+          "modelId": "terapia-estrategica-1967",
+          "techniqueId": "pendiente_repo_interactional_sequence_description",
+          "modeloLabel": "Terapia estratégica",
+          "modelLabel": "Terapia estratégica",
+          "grupo": "Sistémico",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "La técnica fuente de Haley encaja, pero no existe aún una micro/procedimiento equivalente en el repo.",
+          "sourceFile": "data/Core/modelos/sistemico/terapia-estrategica-1967.json"
+        }
+      ]
+    },
     "externalizacion-problema": {
       "id": "externalizacion-problema",
       "label": "Externalización del problema",
@@ -2750,6 +3023,9 @@
   "byCategoria": {
     "Excepciones, variación y recursos": [
       "buscar-excepciones-al-problema"
+    ],
+    "Clarificación operativa del problema": [
+      "concretar-el-problema-en-conducta"
     ],
     "Distanciamiento y observación": [
       "externalizacion-problema"
@@ -3662,10 +3938,10 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 4,
-    "totalEntries": 33,
+    "totalIsomorfismos": 5,
+    "totalEntries": 40,
     "totalOk": 27,
-    "totalFaltaId": 0,
+    "totalFaltaId": 7,
     "totalFaltaModelo": 2,
     "totalDudoso": 0,
     "totalDescartado": 0
