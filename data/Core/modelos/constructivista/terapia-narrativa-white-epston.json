@@ -261,7 +261,37 @@
     "codigo": "p_nar_documentacion",
     "procesos": ["N_narrativaAutobiografica", "I_autoimagen"],
     "texto": "La creación de documentos narrativos —cartas, certificados o declaraciones— actúa como proceso de consolidación del cambio, fijando por escrito los valores, compromisos y logros emergentes. Estos documentos funcionan como testigos materiales de la historia preferida y facilitan su continuidad, legitimación social y transmisión fuera de la sesión terapéutica (Epston, 1994, *Extending the Conversation*)."
-  }
+  },
+  {
+  "nombre": "Exploración de excepciones al problema",
+  "codigo": "p_nar_excepciones_problema",
+  "procesos": ["AG_autoriaResponsabilidad", "N_narrativaAutobiografica"],
+  "texto": "Procedimiento orientado a identificar momentos concretos en los que el problema no estuvo presente, fue menos intenso o la persona actuó de forma diferente a su influencia habitual. A diferencia de la simple identificación de resultados únicos, la exploración de excepciones analiza las condiciones contextuales, relacionales y personales que permitieron esa diferencia, ampliando la comprensión de las capacidades del paciente y abriendo oportunidades para extender esos patrones en el futuro. Estas excepciones constituyen puntos de entrada privilegiados para el desarrollo de historias alternativas y para fortalecer la percepción de agencia personal (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
+},
+{
+  "nombre": "Mapeo de la influencia del problema",
+  "codigo": "p_nar_mapeo_influencia_problema",
+  "procesos": ["N_clarificacion", "I_autoimagen"],
+  "texto": "Procedimiento sistemático mediante el cual se explora cómo el problema influye en distintas áreas de la vida de la persona —pensamientos, emociones, decisiones, relaciones y proyectos vitales— con el objetivo de visibilizar su funcionamiento y sus efectos. El mapeo permite comprender la extensión real del problema, identificar los contextos donde se activa y reconocer también los espacios donde su influencia es menor, generando un mapa narrativo que facilita intervenciones posteriores orientadas a limitar su poder y reforzar historias alternativas (White, 2007, *Maps of Narrative Practice*)."
+},
+{
+  "nombre": "Mapeo de la influencia de la persona sobre el problema",
+  "codigo": "p_nar_influencia_persona",
+  "procesos": ["AG_autoriaResponsabilidad", "I_fortalezasRecursos"],
+  "texto": "Procedimiento complementario al mapeo del problema que investiga cómo la persona ha influido, limitado o resistido la acción del problema a lo largo del tiempo. Se exploran decisiones, actos de resistencia, pequeños cambios de posición y recursos personales que han reducido su impacto. Este proceso permite invertir la narrativa dominante centrada en el déficit y construir una historia en la que la persona aparece como agente activo capaz de responder al problema de diversas maneras (White, 2007, *Maps of Narrative Practice*)."
+},
+{
+  "nombre": "Desarrollo de historias alternativas",
+  "codigo": "p_nar_desarrollo_historia_alternativa",
+  "procesos": ["N_construccionAlternativa", "I_autoimagen"],
+  "texto": "Procedimiento destinado a ampliar y densificar las narrativas emergentes que contradicen la historia dominante. A partir de resultados únicos, valores y actos de agencia identificados previamente, el terapeuta ayuda a conectar episodios, relaciones y significados que sostienen una identidad preferida. El objetivo es que la nueva historia adquiera suficiente coherencia, continuidad y reconocimiento social como para competir efectivamente con la narrativa problemática (White, 2007, *Maps of Narrative Practice*)."
+},
+{
+  "nombre": "Reclutamiento de audiencias de apoyo",
+  "codigo": "p_nar_audiencias_apoyo",
+  "procesos": ["R_reparacionRelacional", "I_autoimagen"],
+  "texto": "Procedimiento mediante el cual se invita a personas significativas o comunidades relevantes a reconocer, validar y sostener la historia preferida emergente. Estas audiencias pueden incluir familiares, amigos, miembros de la comunidad o incluso figuras simbólicas importantes para el paciente. Su función es proporcionar un contexto social donde la narrativa alternativa pueda ser escuchada, legitimada y reforzada más allá del espacio terapéutico (White, 2007, *Maps of Narrative Practice*)."
+}
 ],
 
   "micros": [
@@ -336,7 +366,43 @@
     "codigo": "m_nar_micro_documentos",
     "procesos": ["N_construccionAlternativa"],
     "texto": "Elaboración de textos breves —notas, certificados o mensajes— que reconocen logros, decisiones o valores emergentes. Funcionan como anclajes narrativos que mantienen viva la historia preferida entre sesiones (Epston, 1994, *Extending the Conversation*)."
-  }
+  },
+    {
+  "nombre": "Pregunta por excepciones recientes",
+  "codigo": "m_nar_excepcion_reciente",
+  "procesos": ["AG_autoriaResponsabilidad"],
+  "texto": "Pregunta breve orientada a identificar momentos recientes en los que el problema no se manifestó o fue menos influyente de lo habitual. Se utiliza para introducir rápidamente la posibilidad de variación en patrones aparentemente rígidos y para localizar episodios que puedan convertirse en resultados únicos explorables narrativamente (White & Epston, 1990, *Narrative Means to Therapeutic Ends*)."
+},
+{
+  "nombre": "Pregunta por condiciones de la excepción",
+  "codigo": "m_nar_condiciones_excepcion",
+  "procesos": ["N_clarificacion"],
+  "texto": "Microintervención que explora qué circunstancias personales, relacionales o contextuales permitieron que una excepción al problema ocurriera. Al analizar estas condiciones se identifican recursos implícitos, apoyos relacionales y decisiones que pueden ampliarse o reproducirse en otras situaciones similares (White, 2007, *Maps of Narrative Practice*)."
+},
+{
+  "nombre": "Nombrar valores detrás de la acción",
+  "codigo": "m_nar_nominar_valores",
+  "procesos": ["I_valoresAspiracionales"],
+  "texto": "Microintervención que invita a identificar los valores personales que están presentes en acciones alineadas con la historia preferida. Nombrar estos valores permite transformar actos aislados en expresiones coherentes de identidad, fortaleciendo el vínculo entre acción, significado y sentido de sí mismo (White, 2007, *Maps of Narrative Practice*)."
+},
+{
+  "nombre": "Conectar episodios de la historia alternativa",
+  "codigo": "m_nar_conectar_episodios",
+  "procesos": ["N_narrativaAutobiografica"],
+  "texto": "Intervención que ayuda a relacionar distintos episodios de agencia, resistencia o valor personal identificados durante la terapia, mostrando que no son hechos aislados sino partes de una trama narrativa más amplia. Esta conexión aumenta la densidad y credibilidad de la historia alternativa (White, 2007, *Maps of Narrative Practice*)."
+},
+{
+  "nombre": "Invitar a imaginar testigos significativos",
+  "codigo": "m_nar_testigos_imaginados",
+  "procesos": ["I_continuidadBiografica"],
+  "texto": "Microintervención que invita a reflexionar sobre cómo personas importantes del pasado o del presente podrían reconocer y valorar la historia preferida emergente. Esta técnica amplía el contexto social de la narrativa alternativa y refuerza su legitimidad identitaria (White, 2007, *Maps of Narrative Practice*)."
+},
+{
+  "nombre": "Pregunta de proyección futura de la historia preferida",
+  "codigo": "m_nar_proyeccion_historia",
+  "procesos": ["I_selfFuturo"],
+  "texto": "Pregunta orientada a imaginar cómo podría desarrollarse la historia preferida en el futuro si continúa fortaleciéndose. Permite conectar el cambio actual con una identidad prospectiva y con proyectos vitales coherentes con los valores emergentes (White, 2007, *Maps of Narrative Practice*)."
+}
 ],
 
   "refs": [
