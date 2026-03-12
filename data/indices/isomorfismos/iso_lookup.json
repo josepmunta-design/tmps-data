@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-12T20:06:41.702Z",
+    "generatedAt": "2026-03-12T20:10:15.747Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -341,6 +341,198 @@
           "estado": "falta_id",
           "nota": "La técnica fuente de Haley encaja, pero no existe aún una micro/procedimiento equivalente en el repo.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-estrategica-1967.json"
+        }
+      ]
+    },
+    {
+      "id": "exponerse-gradualmente-a-lo-evitado",
+      "label": "Exponerse gradualmente a lo evitado",
+      "definicion": "Acercamiento progresivo y deliberado a estímulos, situaciones, pensamientos o sensaciones temidas que han sido evitadas, con el objetivo de generar aprendizaje correctivo, reducción de evitación y aumento de tolerancia emocional.",
+      "categoria": "Aprendizaje emocional correctivo",
+      "tags": [
+        "exposicion",
+        "evitacion",
+        "desensibilizacion",
+        "acercamiento progresivo",
+        "aprendizaje inhibitorio"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/exponerse-gradualmente-a-lo-evitado.json",
+      "entries": [
+        {
+          "modeloId": "terapia-conductual-wolpe-1958",
+          "tecnicaId": "p_wolpe_desensibilizacion_sistematica",
+          "modelId": "terapia-conductual-wolpe-1958",
+          "techniqueId": "p_wolpe_desensibilizacion_sistematica",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Procedimiento clásico de exposición gradual emparejado con relajación.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-conductual-wolpe-1958",
+          "tecnicaId": "m_wolpe_jerarquia_ansiedad",
+          "modelId": "terapia-conductual-wolpe-1958",
+          "techniqueId": "m_wolpe_jerarquia_ansiedad",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Construcción de jerarquía de estímulos temidos para exposición progresiva.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "prolonged-exposure-foa-1986",
+          "tecnicaId": "p_pe_exposicion_en_vivo",
+          "modelId": "prolonged-exposure-foa-1986",
+          "techniqueId": "p_pe_exposicion_en_vivo",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exposición repetida a estímulos temidos en el entorno real.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "prolonged-exposure-foa-1986",
+          "tecnicaId": "p_pe_exposicion_imaginada",
+          "modelId": "prolonged-exposure-foa-1986",
+          "techniqueId": "p_pe_exposicion_imaginada",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exposición imaginada prolongada a memorias traumáticas.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_exposicion_aceptacion",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_exposicion_aceptacion",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Exposición basada en aceptación de la experiencia interna en lugar de controlarla.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_acercamiento_valores",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_acercamiento_valores",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Acercamiento conductual guiado por valores hacia situaciones evitadas.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "unified-protocol-up-barlow-2011",
+          "tecnicaId": "p_up_exposicion_emocional",
+          "modelId": "unified-protocol-up-barlow-2011",
+          "techniqueId": "p_up_exposicion_emocional",
+          "modeloLabel": "Protocolo Unificado (UP)",
+          "modelLabel": "Protocolo Unificado (UP)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Exposición sistemática a emociones temidas para promover tolerancia emocional.",
+          "sourceFile": "data/Core/modelos/cognitivo/unified-protocol-up-barlow-2011.json"
+        },
+        {
+          "modeloId": "unified-protocol-up-barlow-2011",
+          "tecnicaId": "p_up_exposicion_interoceptiva",
+          "modelId": "unified-protocol-up-barlow-2011",
+          "techniqueId": "p_up_exposicion_interoceptiva",
+          "modeloLabel": "Protocolo Unificado (UP)",
+          "modelLabel": "Protocolo Unificado (UP)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+          "techniqueLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Exposición a sensaciones corporales temidas.",
+          "sourceFile": "data/Core/modelos/cognitivo/unified-protocol-up-barlow-2011.json"
+        },
+        {
+          "modeloId": "erp-ocd-foa-1970",
+          "tecnicaId": "p_erp_exposicion_prevencion_respuesta",
+          "modelId": "erp-ocd-foa-1970",
+          "techniqueId": "p_erp_exposicion_prevencion_respuesta",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exposición al estímulo obsesivo sin realizar compulsión.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "dbt-linehan-1993",
+          "tecnicaId": "p_dbt_exposicion_emocional",
+          "modelId": "dbt-linehan-1993",
+          "techniqueId": "p_dbt_exposicion_emocional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Uso de exposición gradual dentro del trabajo de regulación emocional.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-cognitiva-beck-1967",
+          "tecnicaId": "p_cbt_experimentos_conductuales",
+          "modelId": "terapia-cognitiva-beck-1967",
+          "techniqueId": "p_cbt_experimentos_conductuales",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Acercamiento conductual a situaciones temidas para comprobar hipótesis.",
+          "sourceFile": null
         }
       ]
     },
@@ -1674,6 +1866,48 @@
       "records": []
     },
     {
+      "id": "exponerse-gradualmente-a-lo-evitado",
+      "label": "Exponerse gradualmente a lo evitado",
+      "categoria": "Aprendizaje emocional correctivo",
+      "definicion": "Acercamiento progresivo y deliberado a estímulos, situaciones, pensamientos o sensaciones temidas que han sido evitadas, con el objetivo de generar aprendizaje correctivo, reducción de evitación y aumento de tolerancia emocional.",
+      "tags": [
+        "exposicion",
+        "evitacion",
+        "desensibilizacion",
+        "acercamiento progresivo",
+        "aprendizaje inhibitorio"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
+          "isomorfismoLabel": "Exponerse gradualmente a lo evitado",
+          "categoria": "Aprendizaje emocional correctivo",
+          "definicion": "Acercamiento progresivo y deliberado a estímulos, situaciones, pensamientos o sensaciones temidas que han sido evitadas, con el objetivo de generar aprendizaje correctivo, reducción de evitación y aumento de tolerancia emocional.",
+          "tags": [
+            "exposicion",
+            "evitacion",
+            "desensibilizacion",
+            "acercamiento progresivo",
+            "aprendizaje inhibitorio"
+          ],
+          "modeloId": "unified-protocol-up-barlow-2011",
+          "modelId": "unified-protocol-up-barlow-2011",
+          "modeloLabel": "Protocolo Unificado (UP)",
+          "modelLabel": "Protocolo Unificado (UP)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_up_exposicion_interoceptiva",
+          "techniqueId": "p_up_exposicion_interoceptiva",
+          "tecnicaLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+          "techniqueLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Exposición a sensaciones corporales temidas.",
+          "sourceFile": "data/Core/modelos/cognitivo/unified-protocol-up-barlow-2011.json"
+        }
+      ]
+    },
+    {
       "id": "externalizacion-problema",
       "label": "Externalización del problema",
       "categoria": "Distanciamiento y observación",
@@ -2823,6 +3057,33 @@
       "sourceFile": "data/Core/modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json"
     },
     {
+      "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
+      "isomorfismoLabel": "Exponerse gradualmente a lo evitado",
+      "categoria": "Aprendizaje emocional correctivo",
+      "definicion": "Acercamiento progresivo y deliberado a estímulos, situaciones, pensamientos o sensaciones temidas que han sido evitadas, con el objetivo de generar aprendizaje correctivo, reducción de evitación y aumento de tolerancia emocional.",
+      "tags": [
+        "exposicion",
+        "evitacion",
+        "desensibilizacion",
+        "acercamiento progresivo",
+        "aprendizaje inhibitorio"
+      ],
+      "modeloId": "unified-protocol-up-barlow-2011",
+      "modelId": "unified-protocol-up-barlow-2011",
+      "modeloLabel": "Protocolo Unificado (UP)",
+      "modelLabel": "Protocolo Unificado (UP)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_up_exposicion_interoceptiva",
+      "techniqueId": "p_up_exposicion_interoceptiva",
+      "tecnicaLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+      "techniqueLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Exposición a sensaciones corporales temidas.",
+      "sourceFile": "data/Core/modelos/cognitivo/unified-protocol-up-barlow-2011.json"
+    },
+    {
       "isomorfismoId": "focalizar-en-experiencia-corporal",
       "isomorfismoLabel": "Focalizar en experiencia corporal",
       "categoria": "Acceso experiencial y simbolización",
@@ -3947,6 +4208,198 @@
         }
       ]
     },
+    "exponerse-gradualmente-a-lo-evitado": {
+      "id": "exponerse-gradualmente-a-lo-evitado",
+      "label": "Exponerse gradualmente a lo evitado",
+      "definicion": "Acercamiento progresivo y deliberado a estímulos, situaciones, pensamientos o sensaciones temidas que han sido evitadas, con el objetivo de generar aprendizaje correctivo, reducción de evitación y aumento de tolerancia emocional.",
+      "categoria": "Aprendizaje emocional correctivo",
+      "tags": [
+        "exposicion",
+        "evitacion",
+        "desensibilizacion",
+        "acercamiento progresivo",
+        "aprendizaje inhibitorio"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/exponerse-gradualmente-a-lo-evitado.json",
+      "entries": [
+        {
+          "modeloId": "terapia-conductual-wolpe-1958",
+          "tecnicaId": "p_wolpe_desensibilizacion_sistematica",
+          "modelId": "terapia-conductual-wolpe-1958",
+          "techniqueId": "p_wolpe_desensibilizacion_sistematica",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Procedimiento clásico de exposición gradual emparejado con relajación.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-conductual-wolpe-1958",
+          "tecnicaId": "m_wolpe_jerarquia_ansiedad",
+          "modelId": "terapia-conductual-wolpe-1958",
+          "techniqueId": "m_wolpe_jerarquia_ansiedad",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Construcción de jerarquía de estímulos temidos para exposición progresiva.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "prolonged-exposure-foa-1986",
+          "tecnicaId": "p_pe_exposicion_en_vivo",
+          "modelId": "prolonged-exposure-foa-1986",
+          "techniqueId": "p_pe_exposicion_en_vivo",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exposición repetida a estímulos temidos en el entorno real.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "prolonged-exposure-foa-1986",
+          "tecnicaId": "p_pe_exposicion_imaginada",
+          "modelId": "prolonged-exposure-foa-1986",
+          "techniqueId": "p_pe_exposicion_imaginada",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exposición imaginada prolongada a memorias traumáticas.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_exposicion_aceptacion",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_exposicion_aceptacion",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Exposición basada en aceptación de la experiencia interna en lugar de controlarla.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_acercamiento_valores",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_acercamiento_valores",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Acercamiento conductual guiado por valores hacia situaciones evitadas.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "unified-protocol-up-barlow-2011",
+          "tecnicaId": "p_up_exposicion_emocional",
+          "modelId": "unified-protocol-up-barlow-2011",
+          "techniqueId": "p_up_exposicion_emocional",
+          "modeloLabel": "Protocolo Unificado (UP)",
+          "modelLabel": "Protocolo Unificado (UP)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Exposición sistemática a emociones temidas para promover tolerancia emocional.",
+          "sourceFile": "data/Core/modelos/cognitivo/unified-protocol-up-barlow-2011.json"
+        },
+        {
+          "modeloId": "unified-protocol-up-barlow-2011",
+          "tecnicaId": "p_up_exposicion_interoceptiva",
+          "modelId": "unified-protocol-up-barlow-2011",
+          "techniqueId": "p_up_exposicion_interoceptiva",
+          "modeloLabel": "Protocolo Unificado (UP)",
+          "modelLabel": "Protocolo Unificado (UP)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+          "techniqueLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Exposición a sensaciones corporales temidas.",
+          "sourceFile": "data/Core/modelos/cognitivo/unified-protocol-up-barlow-2011.json"
+        },
+        {
+          "modeloId": "erp-ocd-foa-1970",
+          "tecnicaId": "p_erp_exposicion_prevencion_respuesta",
+          "modelId": "erp-ocd-foa-1970",
+          "techniqueId": "p_erp_exposicion_prevencion_respuesta",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exposición al estímulo obsesivo sin realizar compulsión.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "dbt-linehan-1993",
+          "tecnicaId": "p_dbt_exposicion_emocional",
+          "modelId": "dbt-linehan-1993",
+          "techniqueId": "p_dbt_exposicion_emocional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Uso de exposición gradual dentro del trabajo de regulación emocional.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-cognitiva-beck-1967",
+          "tecnicaId": "p_cbt_experimentos_conductuales",
+          "modelId": "terapia-cognitiva-beck-1967",
+          "techniqueId": "p_cbt_experimentos_conductuales",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Acercamiento conductual a situaciones temidas para comprobar hipótesis.",
+          "sourceFile": null
+        }
+      ]
+    },
     "externalizacion-problema": {
       "id": "externalizacion-problema",
       "label": "Externalización del problema",
@@ -4982,6 +5435,9 @@
     "Clarificación operativa del problema": [
       "concretar-el-problema-en-conducta"
     ],
+    "Aprendizaje emocional correctivo": [
+      "exponerse-gradualmente-a-lo-evitado"
+    ],
     "Distanciamiento y observación": [
       "externalizacion-problema"
     ],
@@ -5138,6 +5594,16 @@
         "tecnicaId": "m_reconciliacion_excepciones",
         "tecnicaLabel": "Exploración de excepciones comunitarias",
         "tecnicaTipo": "micro"
+      }
+    ],
+    "unified-protocol-up-barlow-2011": [
+      {
+        "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
+        "isomorfismoLabel": "Exponerse gradualmente a lo evitado",
+        "categoria": "Aprendizaje emocional correctivo",
+        "tecnicaId": "p_up_exposicion_interoceptiva",
+        "tecnicaLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "focusing-gendlin-1961": [
@@ -5468,6 +5934,18 @@
         "tecnicaId": "m_reconciliacion_excepciones",
         "tecnicaLabel": "Exploración de excepciones comunitarias",
         "tecnicaTipo": "micro"
+      }
+    ],
+    "p_up_exposicion_interoceptiva": [
+      {
+        "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
+        "isomorfismoLabel": "Exponerse gradualmente a lo evitado",
+        "categoria": "Aprendizaje emocional correctivo",
+        "modeloId": "unified-protocol-up-barlow-2011",
+        "modeloLabel": "Protocolo Unificado (UP)",
+        "tecnicaId": "p_up_exposicion_interoceptiva",
+        "tecnicaLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "p_focusing_elicitacion_felt_sense": [
@@ -5928,6 +6406,18 @@
         "tecnicaTipo": "micro"
       }
     ],
+    "unified-protocol-up-barlow-2011::p_up_exposicion_interoceptiva": [
+      {
+        "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
+        "isomorfismoLabel": "Exponerse gradualmente a lo evitado",
+        "categoria": "Aprendizaje emocional correctivo",
+        "modeloId": "unified-protocol-up-barlow-2011",
+        "modeloLabel": "Protocolo Unificado (UP)",
+        "tecnicaId": "p_up_exposicion_interoceptiva",
+        "tecnicaLabel": "Exposición interoceptiva a sensaciones corporales temidas",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "focusing-gendlin-1961::p_focusing_elicitacion_felt_sense": [
       {
         "isomorfismoId": "focalizar-en-experiencia-corporal",
@@ -6266,11 +6756,11 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 8,
-    "totalEntries": 77,
-    "totalOk": 38,
-    "totalFaltaId": 13,
-    "totalFaltaModelo": 14,
+    "totalIsomorfismos": 9,
+    "totalEntries": 88,
+    "totalOk": 39,
+    "totalFaltaId": 16,
+    "totalFaltaModelo": 21,
     "totalDudoso": 0,
     "totalDescartado": 0
   }

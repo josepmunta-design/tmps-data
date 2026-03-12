@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T20:06:41.702Z
+Generado: 2026-03-12T20:10:15.747Z
 
 ## Buscar excepciones al problema
 
@@ -36,6 +36,25 @@ Generado: 2026-03-12T20:06:41.702Z
 - Terapia Gestalt — p_gestalt_que_como_lugar_porque [falta_id]
 - Terapia cognitiva (depresión) — pendiente_repo_behavioral_specification [falta_id]
 - Terapia estratégica — pendiente_repo_interactional_sequence_description [falta_id]
+
+## Exponerse gradualmente a lo evitado
+
+- ID: `exponerse-gradualmente-a-lo-evitado`
+- Categoría: Aprendizaje emocional correctivo
+- Archivo fuente: `data/indices/isomorfismos/fuente/exponerse-gradualmente-a-lo-evitado.json`
+- Entradas: 11
+
+- terapia-conductual-wolpe-1958 — p_wolpe_desensibilizacion_sistematica [falta_modelo]
+- terapia-conductual-wolpe-1958 — m_wolpe_jerarquia_ansiedad [falta_modelo]
+- prolonged-exposure-foa-1986 — p_pe_exposicion_en_vivo [falta_modelo]
+- prolonged-exposure-foa-1986 — p_pe_exposicion_imaginada [falta_modelo]
+- Terapia de Aceptación y Compromiso (ACT) — p_act_exposicion_aceptacion [falta_id]
+- Terapia de Aceptación y Compromiso (ACT) — m_act_acercamiento_valores [falta_id]
+- Protocolo Unificado (UP) — p_up_exposicion_emocional [falta_id]
+- Protocolo Unificado (UP) — Exposición interoceptiva a sensaciones corporales temidas [ok]
+- erp-ocd-foa-1970 — p_erp_exposicion_prevencion_respuesta [falta_modelo]
+- dbt-linehan-1993 — p_dbt_exposicion_emocional [falta_modelo]
+- terapia-cognitiva-beck-1967 — p_cbt_experimentos_conductuales [falta_modelo]
 
 ## Externalización del problema
 
