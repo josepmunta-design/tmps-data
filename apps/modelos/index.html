@@ -6568,8 +6568,20 @@ function buildIsomorphismIndexFromLookup(raw){
     byNameKey
   };
 }
-async function fetchJson(url){
-  const r = await fetch(url);
+async function fetchJson(url, options = {}){
+  let finalUrl = String(url || '').trim();
+  if (finalUrl && options && options.bust){
+    const bustValue = String(window.__ASSET_VER || Date.now()).trim();
+    try{
+      const u = new URL(finalUrl, location.href);
+      u.searchParams.set('_v', bustValue);
+      finalUrl = u.href;
+    }catch(err){
+      const joiner = finalUrl.includes('?') ? '&' : '?';
+      finalUrl = `${finalUrl}${joiner}_v=${encodeURIComponent(bustValue)}`;
+    }
+  }
+  const r = await fetch(finalUrl);
   if(!r.ok) throw new Error("HTTP "+r.status+" "+url);
   return await r.json();
 }
@@ -6597,7 +6609,12 @@ async function loadIsomorphismIndex(){
     const lookupUrls = buildIsomorphismUrlCandidates('indices/isomorfismos/iso_lookup.json');
 
     for (const url of lookupUrls){
-      const rawLookup = await fetchJson(url, { bust:true });
+      let rawLookup = null;
+      try{
+        rawLookup = await fetchJson(url, { bust:true });
+      }catch(err){
+        continue;
+      }
       const looksLikeLookup = !!(
         rawLookup &&
         typeof rawLookup === 'object' &&
@@ -6624,7 +6641,11 @@ async function loadIsomorphismIndex(){
     const isoUrls = buildIsomorphismUrlCandidates('indices/isomorfismos/iso_lista.json');
     let raw = null;
     for (const url of isoUrls){
-      raw = await fetchJson(url, { bust:true });
+      try{
+        raw = await fetchJson(url, { bust:true });
+      }catch(err){
+        continue;
+      }
       if (raw) break;
     }
     const index = buildIsomorphismIndexFromList(raw);
@@ -6905,8 +6926,7 @@ function renderTechniqueIsomorphisms(modelMeta, itemMeta){
                   equivalents.length
                     ? `<ul class="iso-tech-eqList">${equivalents.map((entry) => `
                         <li>
-                          <span class="iso-tech-eqModel">${escapeHtml(entry?.modeloLabel || 'Modelo')}</span>
-                          ${entry?.autores ? `<span class="iso-tech-eqAuthor"> · ${escapeHtml(entry.autores)}</span>` : ''}
+                          <span class="iso-tech-eqModel">${escapeHtml(entry?.modeloLabel || 'Modelo')}${entry?.autores ? ` · ${escapeHtml(entry.autores)}` : ''}</span>
                           <br>
                           <span class="iso-tech-eqTechnique">${escapeHtml(formatTechniqueTypeLabel(entry?.tecnicaTipo || ''))}: ${escapeHtml(entry?.tecnicaLabel || entry?.tecnicaId || 'Sin nombre')}</span>
                         </li>
