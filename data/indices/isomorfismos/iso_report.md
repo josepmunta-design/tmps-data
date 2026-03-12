@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T19:20:43.979Z
+Generado: 2026-03-12T19:24:38.248Z
 
 ## Buscar excepciones al problema
 
@@ -59,7 +59,7 @@ Generado: 2026-03-12T19:20:43.979Z
 - Escuela de Palo Alto / MRI — m_mri_normalizacion_funcional_problema [falta_id]
 - Psicoanálisis clásico — pendiente_repo_secondary_gain [falta_id]
 - logoterapia-frankl-1959 — pendiente_repo_funcion_existencial_sintoma [falta_modelo]
-- Terapia enfocada en las emociones — pendiente_repo_funcion_emocional_sintoma [falta_id]
+- Terapia enfocada en las emociones — Exploración de emoción primaria subyacente al síntoma [ok]
 - schema-therapy-young-1990 — pendiente_repo_funcion_modo_esquema [falta_modelo]
 - Internal Family Systems (IFS) — pendiente_repo_funcion_protectora_parte [falta_id]
 - Terapia de Aceptación y Compromiso (ACT) — pendiente_repo_evitacion_experiencial_funcion [falta_id]
