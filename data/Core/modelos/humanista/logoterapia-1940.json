@@ -150,7 +150,49 @@
       "codigo": "p_logo_dialogo",
       "procesos": ["N_metacognicion", "I_valoresAspiracionales"],
       "texto": "Uso de preguntas abiertas y no directivas para que el paciente descubra por sí mismo significados y responsabilidades, evitando imponer valores externos."
-    }
+    },
+    {
+  "nombre": "Análisis existencial del vacío",
+  "codigo": "p_logo_vacio_existencial",
+  "procesos": ["N_marcosCognitivos", "I_valoresAspiracionales"],
+  "texto": "Procedimiento orientado a explorar la experiencia subjetiva de vacío existencial, apatía o falta de dirección vital, ayudando al paciente a identificar cómo la pérdida de sentido organiza síntomas como depresión, aburrimiento crónico, compulsiones o conductas evasivas. El terapeuta examina áreas donde la vida ha perdido orientación y facilita la reconstrucción de marcos de significado que devuelvan dirección y responsabilidad personal. (Frankl, 1969; Lukas, 1986)."
+},
+{
+  "nombre": "Interpretación existencial del síntoma",
+  "codigo": "p_logo_interpretacion_existencial_sintoma",
+  "procesos": ["N_reformulacion", "N_marcosCognitivos"],
+  "texto": "Procedimiento en el que el síntoma psicológico se interpreta desde una perspectiva existencial como una señal de conflicto de sentido o como intento fallido de resolver una tensión existencial. El terapeuta ayuda al paciente a comprender que el síntoma puede reflejar frustración de valores, pérdida de dirección vital o evitación de responsabilidades existenciales. El síntoma se interpreta como intento de resolver un conflicto de sentido o vacío existencial. (Frankl, 1969; Fabry, 1988)."
+},
+{
+  "nombre": "Clarificación de valores creativos, experienciales y actitudinales",
+  "codigo": "p_logo_tres_vias_sentido",
+  "procesos": ["I_valoresAspiracionales", "N_construccionAlternativa"],
+  "texto": "Procedimiento estructurado para identificar las tres vías fundamentales de realización de sentido propuestas por Frankl: valores creativos (lo que aportamos al mundo mediante acción), valores experienciales (lo que recibimos mediante amor, belleza o relación) y valores actitudinales (la postura que adoptamos frente al sufrimiento inevitable). Esta clarificación permite descubrir fuentes concretas de sentido disponibles en la vida del paciente. (Frankl, 1969; Frankl, 1984)."
+},
+{
+  "nombre": "Exploración de libertad interior",
+  "codigo": "p_logo_libertad_interior",
+  "procesos": ["I_coherenciaInterna", "AG_autoriaResponsabilidad"],
+  "texto": "Procedimiento dirigido a identificar el margen de libertad interior que permanece incluso cuando las circunstancias externas no pueden cambiarse. El terapeuta explora con el paciente qué aspectos de su respuesta, actitud o posicionamiento siguen estando bajo su responsabilidad personal, reforzando la experiencia de agencia existencial. (Frankl, 1969; Lukas, 1986)."
+},
+{
+  "nombre": "Reorientación hacia autotrascendencia",
+  "codigo": "p_logo_autotrascendencia",
+  "procesos": ["I_valoresAspiracionales", "AG_motivacionInterna"],
+  "texto": "Procedimiento central de la logoterapia que ayuda a desplazar el foco excesivamente autorreferencial hacia metas, valores o personas más allá del propio self. La autotrascendencia permite que el individuo encuentre sentido al orientarse hacia tareas significativas, vínculos o contribuciones al mundo. (Frankl, 1969; Frankl, 1984)."
+},
+{
+  "nombre": "Confrontación existencial",
+  "codigo": "p_logo_confrontacion_existencial",
+  "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+  "texto": "Intervención directa mediante la cual el terapeuta confronta suavemente evitaciones, autoengaños o posiciones nihilistas que impiden asumir responsabilidad personal ante la vida. El objetivo no es juzgar sino invitar al paciente a reconocer su libertad de elección frente a la actitud adoptada ante las circunstancias. (Frankl, 1969; Fabry, 1988)."
+},
+{
+  "nombre": "Formulación de tareas de sentido",
+  "codigo": "p_logo_tareas_sentido",
+  "procesos": ["AG_compromisoConductual", "I_selfFuturo"],
+  "texto": "Procedimiento en el que el terapeuta ayuda al paciente a identificar tareas concretas de sentido en su situación vital actual, traduciendo los valores descubiertos en acciones específicas que puedan realizarse en la vida cotidiana. Estas tareas permiten encarnar el sentido en conducta real y consolidar dirección vital. (Frankl, 1969; Lukas, 1986)."
+}
   ],
 
   "micros": [
@@ -183,7 +225,55 @@
       "codigo": "m_logo_ejemplos",
       "procesos": ["N_narrativaAutobiografica"],
       "texto": "Recordar experiencias pasadas donde el paciente encontró sentido, para ampliar continuidad biográfica."
-    }
+    },
+    {
+  "nombre": "Señalar la pregunta existencial implícita",
+  "codigo": "m_logo_pregunta_existencial",
+  "procesos": ["N_metacognicion"],
+  "texto": "Microintervención que reformula el problema del paciente como una pregunta existencial abierta —por ejemplo, qué le pide la vida en esta situación— desplazando el foco desde la queja hacia la búsqueda de sentido. (Frankl, 1969)."
+},
+{
+  "nombre": "Detectar frustración de sentido",
+  "codigo": "m_logo_frustracion_sentido",
+  "procesos": ["N_marcosCognitivos"],
+  "texto": "Intervención breve destinada a identificar cuándo el malestar emocional está relacionado con la frustración de valores o metas vitales significativas, diferenciándolo de conflictos puramente psicológicos o sintomáticos. (Frankl, 1969)."
+},
+{
+  "nombre": "Nombrar el vacío existencial",
+  "codigo": "m_logo_nominar_vacio",
+  "procesos": ["N_reformulacion"],
+  "texto": "Microintervención que introduce el concepto de vacío existencial para ayudar al paciente a comprender estados de apatía, aburrimiento o pérdida de dirección vital como fenómenos de falta de sentido más que como meros déficits emocionales. (Frankl, 1969; Lukas, 1986)."
+},
+{
+  "nombre": "Señalar libertad de actitud",
+  "codigo": "m_logo_libertad_actitud",
+  "procesos": ["AG_autoriaResponsabilidad"],
+  "texto": "Intervención breve que recuerda al paciente que, incluso en circunstancias inevitables, permanece la libertad de elegir la actitud con la que se enfrenta a la situación. (Frankl, 1984)."
+},
+{
+  "nombre": "Conectar acción con significado",
+  "codigo": "m_logo_conectar_sentido_accion",
+  "procesos": ["AG_motivacionInterna"],
+  "texto": "Microintervención que vincula una acción concreta del paciente con un valor o propósito mayor, reforzando la percepción de sentido en la conducta cotidiana. (Fabry, 1988)."
+},
+{
+  "nombre": "Explorar para quién o para qué vivir",
+  "codigo": "m_logo_para_quien_vivir",
+  "procesos": ["I_valoresAspiracionales"],
+  "texto": "Pregunta focal que invita al paciente a identificar personas, causas o responsabilidades hacia las cuales su vida adquiere significado, facilitando autotrascendencia. (Frankl, 1969)."
+},
+{
+  "nombre": "Señalar responsabilidad personal ante la vida",
+  "codigo": "m_logo_responsabilidad_vida",
+  "procesos": ["AG_autoriaResponsabilidad"],
+  "texto": "Intervención breve que reformula la situación vital como una llamada a responder responsablemente ante las circunstancias presentes, reforzando la postura existencial activa del paciente. (Frankl, 1969)."
+},
+{
+  "nombre": "Reformular sufrimiento como posibilidad de sentido",
+  "codigo": "m_logo_sentido_sufrimiento",
+  "procesos": ["N_construccionAlternativa", "I_coherenciaInterna"],
+  "texto": "Microintervención que introduce la posibilidad de que incluso el sufrimiento inevitable pueda adquirir significado mediante la actitud adoptada frente a él, abriendo una reinterpretación existencial del dolor. (Frankl, 1984)."
+}
   ],
 
   "books": [
