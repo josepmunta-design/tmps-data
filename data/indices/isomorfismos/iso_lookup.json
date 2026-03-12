@@ -1,1 +1,349 @@
-
+{
+  "meta": {
+    "version": 1,
+    "generatedAt": "2026-03-12T10:15:13.792Z",
+    "sourceDir": "data/indices/isomorfismos/fuente",
+    "modelsDir": "data/Core/modelos"
+  },
+  "isomorfismos": [
+    {
+      "id": "buscar-excepciones-al-problema",
+      "label": "Buscar excepciones al problema",
+      "definicion": "Identificar momentos, condiciones o contextos en los que el problema no domina, disminuye o no organiza por completo la conducta, la emoción o la identidad.",
+      "categoria": "Excepciones, variación y recursos",
+      "tags": [
+        "excepciones",
+        "recursos",
+        "variacion",
+        "autoeficacia",
+        "contraejemplos"
+      ],
+      "entries": [
+        {
+          "modeloId": "terapia-centrada-soluciones-1982",
+          "modeloLabel": "Terapia centrada en soluciones",
+          "grupo": "Sistémico",
+          "tecnicaId": "m_sfbt_excepcion_parcial",
+          "tecnicaLabel": "Pregunta de excepción parcial",
+          "tecnicaTipo": "micro",
+          "estado": "ok",
+          "nota": "Corresponde a la pregunta de excepción parcial.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
+        },
+        {
+          "modeloId": "hipnosis-ericksoniana-1958",
+          "modeloLabel": "Hipnosis clínica ericksoniana (Milton H. Erickson)",
+          "grupo": "Sistémico",
+          "tecnicaId": "p_erickson_utilizacion",
+          "tecnicaLabel": "Utilización de resistencias",
+          "tecnicaTipo": "procedimiento",
+          "estado": "ok",
+          "nota": "Se usa como equivalente funcional a la utilización de éxitos espontáneos o aperturas ya presentes.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/sistemico/hipnosis-ericksoniana-1958.json"
+        },
+        {
+          "modeloId": "terapia-narrativa-white-epston",
+          "modeloLabel": "Terapia narrativa",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_nar_valores_resistencia",
+          "tecnicaLabel": "Preguntar por valores implicados en la resistencia",
+          "tecnicaTipo": "micro",
+          "estado": "ok",
+          "nota": "En el catálogo original aparece como Unique Outcomes Question; en tu repo el mejor equivalente técnico localizado es la exploración de valores implicados en la resistencia.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
+        },
+        {
+          "modeloId": "k1kelly55",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaId": null,
+          "tecnicaLabel": null,
+          "tecnicaTipo": null,
+          "estado": "falta_id",
+          "nota": "En el catálogo aparece como búsqueda de episodios discrepantes. En el repo existe m_kelly_excepciones, pero conviene decidir si se enlaza directamente a esa micro o si quieres crear una micro más específica para episodios discrepantes.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/constructivista/k1kelly55.json"
+        }
+      ]
+    },
+    {
+      "id": "externalizacion-problema",
+      "label": "Externalización del problema",
+      "definicion": "Operación terapéutica que separa el problema del self y permite describirlo como algo identificable, con efectos, historia e influencia propia.",
+      "categoria": "Distanciamiento y observación",
+      "tags": [
+        "problema",
+        "distanciamiento",
+        "narrativa"
+      ],
+      "entries": [
+        {
+          "modeloId": "terapia-narrativa-white-epston-1990",
+          "modeloLabel": null,
+          "grupo": null,
+          "tecnicaId": "m_nar_externalizacion_problema",
+          "tecnicaLabel": null,
+          "tecnicaTipo": null,
+          "estado": "falta_modelo",
+          "nota": "modeloId no encontrado en data/Core/modelos",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "schema-therapy-young-1990",
+          "modeloLabel": null,
+          "grupo": null,
+          "tecnicaId": null,
+          "tecnicaLabel": null,
+          "tecnicaTipo": null,
+          "estado": "falta_modelo",
+          "nota": "Revisar si conviene enlazar externalización de modos o etiquetado de modos",
+          "sourceFile": null
+        }
+      ]
+    },
+    {
+      "id": "nombrar-el-problema",
+      "label": "Nombrar el problema",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "categoria": "Nombrado, formulación y clarificación",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
+      "entries": [
+        {
+          "modeloId": "terapia-narrativa-white-epston",
+          "modeloLabel": "Terapia narrativa",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_nar_nominar_problema",
+          "tecnicaLabel": "Nombrar al problema",
+          "tecnicaTipo": "micro",
+          "estado": "ok",
+          "nota": "Corresponde de forma directa a nombrar al problema.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/constructivista/terapia-narrativa-white-epston.json"
+        },
+        {
+          "modeloId": "psicologia-individual-adler",
+          "modeloLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "p_adler_tareas_vida",
+          "tecnicaLabel": "Entrenamiento en tareas de vida",
+          "tecnicaTipo": "procedimiento",
+          "estado": "ok",
+          "nota": "Se usa como mejor equivalente funcional localizado en el repo para nombrar el patrón de estilo de vida o error dominante.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "modeloId": "terapia-de-esquemas-young-1990",
+          "modeloLabel": "Terapia de esquemas",
+          "grupo": "Cognitivo",
+          "tecnicaId": null,
+          "tecnicaLabel": null,
+          "tecnicaTipo": null,
+          "estado": "falta_id",
+          "nota": "En el catálogo aparece como etiquetado de esquema o modo. En el repo ya existen m_schema_nombrar_esquema y m_schema_nombrar_modo. Conviene decidir si este isomorfismo enlaza a una de esas dos micros o a ambas.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+        }
+      ]
+    },
+    {
+      "id": "proyectar-la-vida-sin-el-problema",
+      "label": "Proyectar la vida sin el problema",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección deseada o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "categoria": "Proyección, motivación y dirección de cambio",
+      "tags": [
+        "futuro",
+        "motivacion",
+        "valores",
+        "excepciones",
+        "direccion"
+      ],
+      "entries": [
+        {
+          "modeloId": "psicologia-individual-adler",
+          "modeloLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "m_adler_the_question",
+          "tecnicaLabel": "The question",
+          "tecnicaTipo": "micro",
+          "estado": "ok",
+          "nota": "Corresponde a The Question.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "modeloId": "terapia-centrada-soluciones-1982",
+          "modeloLabel": "Terapia centrada en soluciones",
+          "grupo": "Sistémico",
+          "tecnicaId": "p_sfbt_pregunta_milagro",
+          "tecnicaLabel": "Pregunta milagro",
+          "tecnicaTipo": "procedimiento",
+          "estado": "ok",
+          "nota": "Corresponde a la Pregunta Milagro.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/sistemico/terapia-centrada-soluciones-1982.json"
+        },
+        {
+          "modeloId": "entrevista-motivacional-1983",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaId": "m_mi_evocar_razones",
+          "tecnicaLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
+          "tecnicaTipo": "micro",
+          "estado": "ok",
+          "nota": "Usado como equivalente funcional a la looking forward question.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_act_valores",
+          "tecnicaLabel": "Clarificación estructurada de valores",
+          "tecnicaTipo": "procedimiento",
+          "estado": "ok",
+          "nota": "Clarificación estructurada de valores en ausencia del dominio del miedo o la evitación.",
+          "sourceFile": "/home/runner/work/tmps-data/tmps-data/data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        }
+      ]
+    }
+  ],
+  "byIsomorfismoId": {
+    "buscar-excepciones-al-problema": [
+      0
+    ],
+    "externalizacion-problema": [
+      1
+    ],
+    "nombrar-el-problema": [
+      2
+    ],
+    "proyectar-la-vida-sin-el-problema": [
+      3
+    ]
+  },
+  "byModeloId": {
+    "terapia-centrada-soluciones-1982": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "tecnicaId": "m_sfbt_excepcion_parcial"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "tecnicaId": "p_sfbt_pregunta_milagro"
+      }
+    ],
+    "hipnosis-ericksoniana-1958": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "tecnicaId": "p_erickson_utilizacion"
+      }
+    ],
+    "terapia-narrativa-white-epston": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "tecnicaId": "m_nar_valores_resistencia"
+      },
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "tecnicaId": "m_nar_nominar_problema"
+      }
+    ],
+    "k1kelly55": [
+      {
+        "isomorfismoId": "buscar-excepciones-al-problema",
+        "tecnicaId": null
+      }
+    ],
+    "terapia-narrativa-white-epston-1990": [
+      {
+        "isomorfismoId": "externalizacion-problema",
+        "tecnicaId": "m_nar_externalizacion_problema"
+      }
+    ],
+    "schema-therapy-young-1990": [
+      {
+        "isomorfismoId": "externalizacion-problema",
+        "tecnicaId": null
+      }
+    ],
+    "psicologia-individual-adler": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "tecnicaId": "p_adler_tareas_vida"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "tecnicaId": "m_adler_the_question"
+      }
+    ],
+    "terapia-de-esquemas-young-1990": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "tecnicaId": null
+      }
+    ],
+    "entrevista-motivacional-1983": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "tecnicaId": "m_mi_evocar_razones"
+      }
+    ],
+    "act-hayes-strosahl-wilson-1999": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "tecnicaId": "p_act_valores"
+      }
+    ]
+  },
+  "byTecnicaId": {
+    "m_sfbt_excepcion_parcial": {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "modeloId": "terapia-centrada-soluciones-1982"
+    },
+    "p_erickson_utilizacion": {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "modeloId": "hipnosis-ericksoniana-1958"
+    },
+    "m_nar_valores_resistencia": {
+      "isomorfismoId": "buscar-excepciones-al-problema",
+      "modeloId": "terapia-narrativa-white-epston"
+    },
+    "m_nar_externalizacion_problema": {
+      "isomorfismoId": "externalizacion-problema",
+      "modeloId": "terapia-narrativa-white-epston-1990"
+    },
+    "m_nar_nominar_problema": {
+      "isomorfismoId": "nombrar-el-problema",
+      "modeloId": "terapia-narrativa-white-epston"
+    },
+    "p_adler_tareas_vida": {
+      "isomorfismoId": "nombrar-el-problema",
+      "modeloId": "psicologia-individual-adler"
+    },
+    "m_adler_the_question": {
+      "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+      "modeloId": "psicologia-individual-adler"
+    },
+    "p_sfbt_pregunta_milagro": {
+      "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+      "modeloId": "terapia-centrada-soluciones-1982"
+    },
+    "m_mi_evocar_razones": {
+      "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+      "modeloId": "entrevista-motivacional-1983"
+    },
+    "p_act_valores": {
+      "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+      "modeloId": "act-hayes-strosahl-wilson-1999"
+    }
+  },
+  "stats": {
+    "totalIsomorfismos": 4,
+    "totalEntries": 13,
+    "totalOk": 9,
+    "totalFaltaId": 2,
+    "totalDudoso": 0,
+    "totalDescartado": 0
+  }
+}
