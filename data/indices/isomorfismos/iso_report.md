@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T20:15:22.472Z
+Generado: 2026-03-12T20:23:56.804Z
 
 ## Buscar excepciones al problema
 
@@ -42,7 +42,7 @@ Generado: 2026-03-12T20:15:22.472Z
 - ID: `disenar-experimentos-conductuales`
 - Categoría: Aprendizaje experiencial y testeo de hipótesis
 - Archivo fuente: `data/indices/isomorfismos/fuente/disenar-experimentos-conductuales.json`
-- Entradas: 12
+- Entradas: 13
 
 - Terapia cognitiva (depresión) — Experimentos conductuales [ok]
 - Terapia cognitiva (depresión) — Predicción y comprobación conductual [ok]
@@ -55,6 +55,7 @@ Generado: 2026-03-12T20:15:22.472Z
 - Terapia racional emotiva conductual (REBT) — Disputa conductual [parcial]
 - Terapia racional emotiva conductual (REBT) — Predicciones alternativas racionales [ok]
 - Teoría de los Constructos Personales (PCP) — Experimentos de anticipación [ok]
+- Teoría de los Constructos Personales (PCP) — Ensayo conductual de nuevas anticipaciones [ok]
 - Teoría de los Constructos Personales (PCP) — Construcción de alternativas [parcial]
 
 ## Exponerse gradualmente a lo evitado
