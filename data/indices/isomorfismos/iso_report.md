@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T20:23:56.804Z
+Generado: 2026-03-12T20:54:51.983Z
 
 ## Buscar excepciones al problema
 
