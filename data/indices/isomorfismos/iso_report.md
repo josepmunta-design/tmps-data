@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T19:34:53.958Z
+Generado: 2026-03-12T20:03:47.142Z
 
 ## Buscar excepciones al problema
 
@@ -46,6 +46,30 @@ Generado: 2026-03-12T19:34:53.958Z
 
 - terapia-narrativa-white-epston-1990 — m_nar_externalizacion_problema [falta_modelo]
 - schema-therapy-young-1990 — SIN ID [falta_modelo]
+
+## Focalizar en experiencia corporal
+
+- ID: `focalizar-en-experiencia-corporal`
+- Categoría: Acceso experiencial y simbolización
+- Archivo fuente: `data/indices/isomorfismos/fuente/focalizar-en-experiencia-corporal.json`
+- Entradas: 16
+
+- Focusing — Elicitación del felt sense (formar el sentido corporal global) [ok]
+- Focusing — Orientación atencional al cuerpo vivido [ok]
+- Somatic Experiencing (SE) — Desarrollo de conciencia interoceptiva graduada [ok]
+- Somatic Experiencing (SE) — Seguimiento de sensación corporal específica [ok]
+- Mindfulness (MBSR y tradición contemplativa) — Body scan (exploración corporal consciente) [ok]
+- Mindfulness (MBSR y tradición contemplativa) — Explorar la sensación con curiosidad [ok]
+- Terapia Gestalt — Trabajo con el cuerpo en el aquí-y-ahora (postura, respiración, tensión, micro-movimientos) [ok]
+- Terapia Gestalt — Continuum de awareness (escaneo guiado de experiencia momento a momento) [ok]
+- ISTDP (Intensive Short-Term Dynamic Psychotherapy) — Seguimiento de señales somáticas de ansiedad [parcial]
+- ISTDP (Intensive Short-Term Dynamic Psychotherapy) — Lectura de ansiedad a partir del cuerpo [parcial]
+- Protocolo Unificado (UP) — Entrenamiento en conciencia emocional y observación mindful [parcial]
+- Protocolo Unificado (UP) — Exposición interoceptiva a sensaciones corporales temidas [parcial]
+- Terapia de Aceptación y Compromiso (ACT) — Entrenamiento en aceptación/expansión experiencial [parcial]
+- Terapia de Aceptación y Compromiso (ACT) — Expansión somática guiada [parcial]
+- Winnicott – Objeto transicional y ambiente — Handling terapéutico (sostén del cuerpo vivido y del tono somático) [parcial]
+- Winnicott – Objeto transicional y ambiente — Micro-pausa para notar el cuerpo (anclaje suave) [parcial]
 
 ## Identificar la función del síntoma
 
