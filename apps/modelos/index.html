@@ -7088,7 +7088,22 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
     const lookupKey = buildIsoModelTechniqueKey(modelId, tecnicaId);
     const source = idx.byModelTechniqueKey;
     const isomorfismos = Array.isArray(idx.rawIsomorfismos) ? idx.rawIsomorfismos : [];
+const getIsoEntryYear = (entry) => {
+  const raw =
+    entry?.year ??
+    entry?.modeloYear ??
+    entry?.equivalentYear ??
+    entry?.meta?.year ??
+    null;
 
+  if (raw == null) return null;
+
+  const txt = String(raw).trim();
+  if (!txt) return null;
+
+  const n = Number(txt);
+  return Number.isFinite(n) ? n : null;
+};
     let rows = [];
     if (source instanceof Map){
       rows = source.get(lookupKey);
@@ -7096,9 +7111,21 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
       rows = source[lookupKey];
     }
 
-    if (Array.isArray(rows) && rows.length){
-      return rows.filter(Boolean);
-    }
+   if (Array.isArray(rows) && rows.length){
+  return rows
+    .filter(Boolean)
+    .map((row) => ({
+      ...row,
+      year: getIsoEntryYear(row)
+    }))
+    .sort((a, b) => {
+      const ay = a?.year ?? Number.POSITIVE_INFINITY;
+      const by = b?.year ?? Number.POSITIVE_INFINITY;
+      if (ay !== by) return ay - by;
+
+      return String(a?.modeloLabel || '').localeCompare(String(b?.modeloLabel || ''), 'es');
+    });
+}
 
     const modelRowsSource = (
       idx.byModelId instanceof Map
@@ -7144,33 +7171,57 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
             String(item?.estado || '').trim().toLowerCase() === 'ok'
           ) || row;
 
-          return {
-            isomorfismoId: isoId,
-            isomorfismoLabel: String(iso?.label || row?.isomorfismoLabel || isoId).trim(),
-            isomorfismoDefinicion: String(iso?.definicion || row?.isomorfismoDefinicion || '').trim(),
-            isomorfismoCategoria: String(iso?.categoria || row?.isomorfismoCategoria || '').trim(),
-            isomorfismoEntries: entries
-              .filter((item) => String(item?.estado || '').trim().toLowerCase() === 'ok')
-              .map((item) => ({
-                modeloId: String(item?.modeloId || '').trim(),
-                modeloLabel: String(item?.modeloLabel || '').trim(),
-                grupo: String(item?.grupo || '').trim(),
-                tecnicaId: String(item?.tecnicaId || '').trim(),
-                tecnicaLabel: String(item?.tecnicaLabel || '').trim(),
-                tecnicaTipo: String(item?.tecnicaTipo || '').trim(),
-                estado: String(item?.estado || '').trim(),
-                nota: String(item?.nota || '').trim(),
-                sourceFile: String(item?.sourceFile || '').trim()
-              })),
-            tecnicaId,
-            tecnicaLabel: String(entry?.tecnicaLabel || row?.tecnicaLabel || '').trim(),
-            tecnicaTipo: String(entry?.tecnicaTipo || row?.tecnicaTipo || '').trim(),
-            modeloId,
-            modeloLabel: String(entry?.modeloLabel || row?.modeloLabel || '').trim(),
-            grupo: String(entry?.grupo || row?.grupo || '').trim(),
-            nota: String(entry?.nota || row?.nota || '').trim(),
-            sourceFile: String(entry?.sourceFile || row?.sourceFile || '').trim()
-          };
+         return {
+  isomorfismoId: isoId,
+  isomorfismoLabel: String(iso?.label || row?.isomorfismoLabel || isoId).trim(),
+  isomorfismoDefinicion: String(iso?.definicion || row?.isomorfismoDefinicion || '').trim(),
+  isomorfismoCategoria: String(iso?.categoria || row?.isomorfismoCategoria || '').trim(),
+  isomorfismoEntries: entries
+    .filter((item) => String(item?.estado || '').trim().toLowerCase() === 'ok')
+    .map((item) => ({
+      modeloId: String(item?.modeloId || '').trim(),
+      modeloLabel: String(item?.modeloLabel || '').trim(),
+      grupo: String(item?.grupo || '').trim(),
+      year: (() => {
+        const raw = item?.year ?? item?.anio ?? null;
+        if (raw == null || String(raw).trim() === '') return null;
+        const n = Number(raw);
+        return Number.isFinite(n) ? n : null;
+      })(),
+      autores: String(item?.autores || item?.authors || '').trim(),
+      tecnicaId: String(item?.tecnicaId || '').trim(),
+      tecnicaLabel: String(item?.tecnicaLabel || '').trim(),
+      tecnicaTipo: String(item?.tecnicaTipo || '').trim(),
+      estado: String(item?.estado || '').trim(),
+      nota: String(item?.nota || '').trim(),
+      sourceFile: String(item?.sourceFile || '').trim()
+    }))
+    .sort((a, b) => {
+      const yearA = a?.year ?? Number.MAX_SAFE_INTEGER;
+      const yearB = b?.year ?? Number.MAX_SAFE_INTEGER;
+      if (yearA !== yearB) return yearA - yearB;
+
+      const byModel = String(a?.modeloLabel || '').localeCompare(String(b?.modeloLabel || ''), 'es');
+      if (byModel !== 0) return byModel;
+
+      return String(a?.tecnicaLabel || '').localeCompare(String(b?.tecnicaLabel || ''), 'es');
+    }),
+  tecnicaId,
+  tecnicaLabel: String(entry?.tecnicaLabel || row?.tecnicaLabel || '').trim(),
+  tecnicaTipo: String(entry?.tecnicaTipo || row?.tecnicaTipo || '').trim(),
+  modeloId,
+  modeloLabel: String(entry?.modeloLabel || row?.modeloLabel || '').trim(),
+  grupo: String(entry?.grupo || row?.grupo || '').trim(),
+  year: (() => {
+    const raw = entry?.year ?? entry?.anio ?? row?.year ?? row?.anio ?? null;
+    if (raw == null || String(raw).trim() === '') return null;
+    const n = Number(raw);
+    return Number.isFinite(n) ? n : null;
+  })(),
+  autores: String(entry?.autores || entry?.authors || row?.autores || row?.authors || '').trim(),
+  nota: String(entry?.nota || row?.nota || '').trim(),
+  sourceFile: String(entry?.sourceFile || row?.sourceFile || '').trim()
+};
         });
 
       if (modelMatches.length) return modelMatches;
@@ -7193,36 +7244,70 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
         );
         if (!entry) return null;
 
-        return {
-          isomorfismoId: String(iso?.id || '').trim(),
-          isomorfismoLabel: String(iso?.label || iso?.id || '').trim(),
-          isomorfismoDefinicion: String(iso?.definicion || '').trim(),
-          isomorfismoCategoria: String(iso?.categoria || '').trim(),
-          isomorfismoEntries: entries
-            .filter((item) => String(item?.estado || '').trim().toLowerCase() === 'ok')
-            .map((item) => ({
-              modeloId: String(item?.modeloId || '').trim(),
-              modeloLabel: String(item?.modeloLabel || '').trim(),
-              grupo: String(item?.grupo || '').trim(),
-              tecnicaId: String(item?.tecnicaId || '').trim(),
-              tecnicaLabel: String(item?.tecnicaLabel || '').trim(),
-              tecnicaTipo: String(item?.tecnicaTipo || '').trim(),
-              estado: String(item?.estado || '').trim(),
-              nota: String(item?.nota || '').trim(),
-              sourceFile: String(item?.sourceFile || '').trim()
-            })),
-          tecnicaId,
-          tecnicaLabel: String(entry?.tecnicaLabel || '').trim(),
-          tecnicaTipo: String(entry?.tecnicaTipo || '').trim(),
-          modeloId,
-          modeloLabel: String(entry?.modeloLabel || '').trim(),
-          grupo: String(entry?.grupo || '').trim(),
-          nota: String(entry?.nota || '').trim(),
-          sourceFile: String(entry?.sourceFile || '').trim()
-        };
+     return {
+  isomorfismoId: String(iso?.id || '').trim(),
+  isomorfismoLabel: String(iso?.label || iso?.id || '').trim(),
+  isomorfismoDefinicion: String(iso?.definicion || '').trim(),
+  isomorfismoCategoria: String(iso?.categoria || '').trim(),
+  isomorfismoEntries: entries
+    .filter((item) => String(item?.estado || '').trim().toLowerCase() === 'ok')
+    .map((item) => ({
+      modeloId: String(item?.modeloId || '').trim(),
+      modeloLabel: String(item?.modeloLabel || '').trim(),
+      grupo: String(item?.grupo || '').trim(),
+      year: (() => {
+        const raw = item?.year ?? item?.anio ?? null;
+        if (raw == null) return null;
+        const txt = String(raw).trim();
+        if (!txt) return null;
+        const n = Number(txt);
+        return Number.isFinite(n) ? n : null;
+      })(),
+      autores: String(item?.autores || item?.authors || '').trim(),
+      tecnicaId: String(item?.tecnicaId || '').trim(),
+      tecnicaLabel: String(item?.tecnicaLabel || '').trim(),
+      tecnicaTipo: String(item?.tecnicaTipo || '').trim(),
+      estado: String(item?.estado || '').trim(),
+      nota: String(item?.nota || '').trim(),
+      sourceFile: String(item?.sourceFile || '').trim()
+    }))
+    .sort((a, b) => {
+      const yearA = a?.year ?? Number.MAX_SAFE_INTEGER;
+      const yearB = b?.year ?? Number.MAX_SAFE_INTEGER;
+      if (yearA !== yearB) return yearA - yearB;
+
+      const byModel = String(a?.modeloLabel || '').localeCompare(String(b?.modeloLabel || ''), 'es');
+      if (byModel !== 0) return byModel;
+
+      return String(a?.tecnicaLabel || '').localeCompare(String(b?.tecnicaLabel || ''), 'es');
+    }),
+  tecnicaId,
+  tecnicaLabel: String(entry?.tecnicaLabel || '').trim(),
+  tecnicaTipo: String(entry?.tecnicaTipo || '').trim(),
+  modeloId,
+  modeloLabel: String(entry?.modeloLabel || '').trim(),
+  grupo: String(entry?.grupo || '').trim(),
+  year: (() => {
+    const raw = entry?.year ?? entry?.anio ?? null;
+    if (raw == null) return null;
+    const txt = String(raw).trim();
+    if (!txt) return null;
+    const n = Number(txt);
+    return Number.isFinite(n) ? n : null;
+  })(),
+  autores: String(entry?.autores || entry?.authors || '').trim(),
+  nota: String(entry?.nota || '').trim(),
+  sourceFile: String(entry?.sourceFile || '').trim()
+};
       })
-      .filter(Boolean)
-      .sort((a, b) => String(a?.isomorfismoLabel || '').localeCompare(String(b?.isomorfismoLabel || ''), 'es'));
+     .filter(Boolean)
+.sort((a, b) => {
+  const yearA = a?.year ?? Number.MAX_SAFE_INTEGER;
+  const yearB = b?.year ?? Number.MAX_SAFE_INTEGER;
+  if (yearA !== yearB) return yearA - yearB;
+
+  return String(a?.modeloLabel || '').localeCompare(String(b?.modeloLabel || ''), 'es');
+});
   }catch(err){
     console.warn('getTechniqueIsomorphisms failed', {
       modelId: modelMeta?.id,
@@ -7257,18 +7342,22 @@ function getIsomorphismEquivalences(row, currentModelId){
 
   return entries
     .filter((entry) => String(entry?.modeloId || '').trim() && String(entry?.modeloId || '').trim() !== currentId)
-    .map((entry) => ({
-      ...entry,
-      autores: getModelAuthorsById(entry?.modeloId || ''),
-      year: getModelYearById(entry?.modeloId || '')
-    }))
-    .sort((a, b) => {
-      const byYear = (Number(a?.year || 0) || Number.MAX_SAFE_INTEGER) - (Number(b?.year || 0) || Number.MAX_SAFE_INTEGER);
-      if (byYear !== 0) return byYear;
-      const byModel = String(a?.modeloLabel || '').localeCompare(String(b?.modeloLabel || ''), 'es');
-      if (byModel !== 0) return byModel;
-      return String(a?.tecnicaLabel || '').localeCompare(String(b?.tecnicaLabel || ''), 'es');
-    });
+   .map((entry) => ({
+  ...entry,
+  autores: getModelAuthorsById(entry?.modeloId || '') || entry?.autores || '',
+  year: getModelYearById(entry?.modeloId || '') || entry?.year || null
+}))
+   .sort((a, b) => {
+  const yearA = Number.isFinite(Number(a?.year)) && Number(a?.year) > 0 ? Number(a.year) : Number.MAX_SAFE_INTEGER;
+  const yearB = Number.isFinite(Number(b?.year)) && Number(b?.year) > 0 ? Number(b.year) : Number.MAX_SAFE_INTEGER;
+
+  if (yearA !== yearB) return yearA - yearB;
+
+  const byModel = String(a?.modeloLabel || '').localeCompare(String(b?.modeloLabel || ''), 'es');
+  if (byModel !== 0) return byModel;
+
+  return String(a?.tecnicaLabel || '').localeCompare(String(b?.tecnicaLabel || ''), 'es');
+});
 }
 
 function renderTechniqueIsomorphisms(modelMeta, itemMeta){
@@ -7298,10 +7387,16 @@ function renderTechniqueIsomorphisms(modelMeta, itemMeta){
                   equivalents.length
                     ? `<ul class="iso-tech-eqList">${equivalents.map((entry) => `
                         <li>
-                          <span class="iso-tech-eqModel">${escapeHtml(entry?.modeloLabel || 'Modelo')}${entry?.autores ? ` · ${escapeHtml(entry.autores)}` : ''}</span>
-                          <br>
-                          <span class="iso-tech-eqTechnique">${escapeHtml(formatTechniqueTypeLabel(entry?.tecnicaTipo || ''))}: ${escapeHtml(entry?.tecnicaLabel || entry?.tecnicaId || 'Sin nombre')}</span>
-                        </li>
+                      <span class="iso-tech-eqModel">
+${entry?.year ? `<span class="iso-tech-eqYear">${escapeHtml(String(entry.year))}</span> · ` : ''}
+${escapeHtml(entry?.modeloLabel || entry?.label || 'Modelo')}
+${entry?.autores ? ` · ${escapeHtml(entry.autores)}` : ''}
+</span>
+
+<br>
+
+<span class="iso-tech-eqTechnique">${escapeHtml(formatTechniqueTypeLabel(entry?.tecnicaTipo || ''))}: ${escapeHtml(entry?.tecnicaLabel || entry?.tecnicaId || 'Sin nombre')}</span>
+                          </li>
                       `).join('')}</ul>`
                     : `<div class="iso-tech-empty">No hay equivalencias confirmadas en otros modelos.</div>`
                 }
@@ -7323,62 +7418,7 @@ function renderTechniqueIsomorphisms(modelMeta, itemMeta){
 }
 
 function renderIsomorphismInner(modelMeta, itemMeta){
-  const match = getIsomorphismMatch(modelMeta, itemMeta);
-  if (!match) return '';
-
-  const currentFile = normalizeIsoPath(modelMeta?.file || modelMeta?.archivo || '');
-  const currentModel = normalizeIsoText(modelMeta?.label || modelMeta?.modelo || '');
-  const currentGroup = normalizeIsoText(modelMeta?.grupo || '');
-  const currentType = normalizeIsoText(itemMeta?.tipo || '');
-  const currentName = normalizeIsoText(itemMeta?.nombre || '');
-
-  const others = Array.isArray(match.others)
-    ? match.others
-    : (Array.isArray(match.entries) ? match.entries : [])
-        .filter((entry) => {
-          const sameFile = normalizeIsoPath(entry?.archivo || '') === currentFile && !!currentFile;
-          const sameModel = normalizeIsoText(entry?.modelo || '') === currentModel;
-          const sameGroup = normalizeIsoText(entry?.grupo || '') === currentGroup;
-          const sameType = normalizeIsoText(entry?.tipo || '') === currentType;
-          const sameName = normalizeIsoText(entry?.nombre || '') === currentName;
-          if (sameFile && sameType && sameName) return false;
-          if (sameModel && sameGroup && sameType && sameName) return false;
-          return true;
-        })
-        .sort((a, b) => {
-          const byModel = String(a?.modelo || '').localeCompare(String(b?.modelo || ''), 'es');
-          if (byModel !== 0) return byModel;
-          return String(a?.nombre || '').localeCompare(String(b?.nombre || ''), 'es');
-        });
-
-  const otherCount = others.length;
-  const metaTxt = otherCount
-    ? `${otherCount} equivalencia${otherCount === 1 ? '' : 's'}`
-    : 'Sin equivalencias adicionales';
-
-  return `
-    <details class="iso-sub">
-      <summary>
-        <span>Isomorfismo</span>
-        <span class="iso-meta">${escapeHtml(metaTxt)}</span>
-      </summary>
-      <div class="iso-body">
-        <div class="iso-title">${escapeHtml(match.operacionAteorica || 'Operación ateórica')}</div>
-        ${match.definicion ? `<div class="iso-def">${escapeHtml(match.definicion)}</div>` : ''}
-        ${
-          otherCount
-            ? `<ul class="iso-list">${others.map((entry) => `
-                <li>
-                  <span class="iso-type">${escapeHtml(entry?.tipo || 'entrada')}</span>
-                  ${escapeHtml(entry?.nombre || 'Sin nombre')}
-                  <br>${escapeHtml(entry?.modelo || 'Modelo')}
-                </li>
-              `).join('')}</ul>`
-            : `<div class="iso-def">No hay otros procedimientos o micros asociados a este mismo isomorfismo.</div>`
-        }
-      </div>
-    </details>
-  `;
+  return renderTechniqueIsomorphisms(modelMeta, itemMeta);
 }
 
 function hasIsomorphismIndexData(){
