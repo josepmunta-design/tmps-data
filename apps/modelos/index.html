@@ -581,10 +581,10 @@ animation: panelBreath 5s ease-in-out infinite;
     select:focus{ border-color: rgba(217,170,63,.35); box-shadow: 0 0 0 4px rgba(217,170,63,.10); }
 
     .modelsList{
-      margin-top: 8px;
+      margin-top: 10px;
       display:flex;
       flex-direction:column;
-      gap:6px;
+      gap:10px;
     }
 
     .school-swipe-out-left{
@@ -620,133 +620,308 @@ animation: panelBreath 5s ease-in-out infinite;
     /* Lista clicable (doc) */
 .mi-item{
   cursor: pointer;
-  min-height: 78px; 
-  border-radius: 12px;
-  padding: 10px 10px;
-  border: 1px solid rgba(255,255,255,0.06);
-
-  /* 👇 fondo tintado muy sutil por escuela */
+  height: 96px;
+  min-height: 96px;
+  border-radius: 18px;
+  padding: 13px 14px;
+  border: 1px solid rgba(255,255,255,0.07);
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--schoolColor) 8%, transparent),
-      rgba(255,255,255,0.04)
-    );
-
+      color-mix(in srgb, var(--schoolColor) 5%, rgba(255,255,255,0.035)),
+      rgba(255,255,255,0.022)
+    ),
+    radial-gradient(180px 100px at 96% 8%, rgba(255,255,255,0.05), transparent 72%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.04),
+    0 8px 18px rgba(0,0,0,0.12);
+  backdrop-filter: blur(6px) saturate(106%);
+  -webkit-backdrop-filter: blur(6px) saturate(106%);
   transition:
-    background .15s ease,
-    border-color .12s ease,
-    transform .12s ease;
+    background .16s ease,
+    border-color .14s ease,
+    transform .16s ease,
+    box-shadow .16s ease,
+    opacity .16s ease;
   user-select:none;
   position: relative;
   content-visibility: auto;
-  contain-intrinsic-size: 78px;
-
+  contain-intrinsic-size: 96px;
+  overflow: hidden;
 }
 
     .mi-item:hover{
-      background: rgba(255,255,255,0.06);
-      border-color: rgba(255,255,255,0.16);
-      transform: translateY(-1px);
+      background:
+        linear-gradient(
+          180deg,
+          color-mix(in srgb, var(--schoolColor) 7%, rgba(255,255,255,0.05)),
+          rgba(255,255,255,0.038)
+        ),
+        radial-gradient(200px 110px at 96% 8%, rgba(255,255,255,0.07), transparent 74%);
+      border-color: rgba(255,255,255,0.14);
+      transform: translate3d(0,-1px,0);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.07),
+        0 14px 28px rgba(0,0,0,0.16);
     }
    .mi-item.active{
-  border-color: var(--schoolColor, rgba(217,170,63,.45));
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,0.06),
-    rgba(255,255,255,0.02)
-  );
-  box-shadow:
-    0 0 0 3px color-mix(in srgb, var(--schoolColor) 28%, transparent),
-    inset 0 1px 0 rgba(255,255,255,0.10);
-}
-/* ===== MARCOS: aspecto claramente distinto ===== */
-.mi-item.is-marco{
-
-  position: relative;
-  border-style: solid;
-  border-width: 1px;
-
+  border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,0.18));
   background:
     linear-gradient(
       180deg,
-      rgba(255,255,255,0.045),
-      rgba(255,255,255,0.02)
-    );
-
+      color-mix(in srgb, var(--schoolColor, #D9AA3F) 12%, rgba(255,255,255,0.08)),
+      rgba(255,255,255,0.04)
+    ),
+    radial-gradient(220px 120px at 0% 0%, color-mix(in srgb, var(--schoolColor, #D9AA3F) 16%, transparent), transparent 72%);
   box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--schoolColor, #D9AA3F) 12%, transparent),
+    0 14px 28px color-mix(in srgb, var(--schoolColor, #D9AA3F) 8%, transparent),
+    inset 0 1px 0 rgba(255,255,255,0.12);
+}
+/* ===== MARCOS: aspecto claramente distinto ===== */
+.mi-item.is-marco{
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--schoolColor, #D9AA3F) 0.8%, rgba(255,255,255,0.024)),
+      rgba(255,255,255,0.010)
+    ),
+    radial-gradient(170px 90px at 96% 10%, rgba(255,255,255,0.018), transparent 76%);
+  border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 4%, rgba(255,255,255,0.08));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.028),
+    0 4px 10px rgba(0,0,0,0.08);
+}
+
+.mi-item.is-marco.active{
+  border-color: color-mix(in srgb, var(--schoolColor) 18%, rgba(255,255,255,0.14));
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--schoolColor, #D9AA3F) 3.2%, rgba(255,255,255,0.04)),
+      rgba(255,255,255,0.016)
+    ),
+    radial-gradient(200px 110px at 0% 0%, color-mix(in srgb, var(--schoolColor, #D9AA3F) 5%, transparent), transparent 76%);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--schoolColor) 5%, transparent),
+    0 8px 16px color-mix(in srgb, var(--schoolColor) 3%, transparent),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+.mi-item.is-marco:hover{
+  border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 7%, rgba(255,255,255,0.10));
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--schoolColor, #D9AA3F) 1.4%, rgba(255,255,255,0.032)),
+      rgba(255,255,255,0.015)
+    ),
+    radial-gradient(180px 100px at 96% 8%, rgba(255,255,255,0.026), transparent 76%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.04),
+    0 6px 14px rgba(0,0,0,0.10);
+}
+
+.mi-shell{
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr);
+  gap:12px;
+  align-items:center;
+  height:100%;
+}
+
+.mi-avatar{
+  position:relative;
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border-radius:999px;
+  overflow:hidden;
+  flex:0 0 auto;
+  background:
+    radial-gradient(circle at 30% 28%, rgba(255,255,255,0.16), rgba(255,255,255,0.03) 62%),
+    color-mix(in srgb, var(--schoolColor, #D9AA3F) 14%, rgba(255,255,255,0.03));
+  border:1px solid color-mix(in srgb, var(--schoolColor, #D9AA3F) 18%, rgba(255,255,255,0.12));
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--schoolColor, #D9AA3F) 8%, transparent),
     inset 0 1px 0 rgba(255,255,255,0.10);
 }
 
-
-/* banda vertical izquierda */
-/* sin banda lateral en marcos */
-.mi-item.is-marco::before{
-  display: none;
+.mi-avatar img{
+  grid-area:1 / 1;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center top;
 }
 
-/* ===== MODELOS: banda vertical izquierda (destacar modelos) ===== */
-.mi-item:not(.is-marco)::before{
-  content:'';
-  position:absolute;
-  left:0;
-  top:0;
-  bottom:0;
-  width:6px;
-  border-radius: 14px 0 0 14px;
-background: color-mix(in srgb, var(--schoolColor) 78%, transparent);
-opacity: .75;
-
-  pointer-events:none;
+.mi-avatarFallback{
+  grid-area:1 / 1;
+  width:100%;
+  height:100%;
+  display:grid;
+  place-items:center;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.88);
 }
 
-/* activo: doble “borde” + glow más marcado */
-.mi-item.is-marco.active{
-  border-color: color-mix(in srgb, var(--schoolColor) 55%, rgba(255,255,255,0.18));
+.mi-item.active .mi-avatar{
+  border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,0.16));
   box-shadow:
-    0 0 0 2px rgba(0,0,0,0.35),
-    0 0 0 4px color-mix(in srgb, var(--schoolColor) 35%, transparent),
-    inset 0 1px 0 rgba(255,255,255,0.12);
+    0 0 0 3px color-mix(in srgb, var(--schoolColor, #D9AA3F) 10%, transparent),
+    0 6px 16px color-mix(in srgb, var(--schoolColor, #D9AA3F) 10%, transparent),
+    inset 0 1px 0 rgba(255,255,255,0.14);
 }
 
-/* Etiqueta MARCO minimalista: solo texto */
-.mi-marcoTag{
-
-  position: absolute;
-
-  right: 12px;
-  bottom: 8px;
-
-  padding: 0;              /* sin caja */
-  border: none;           /* sin borde */
-  background: none;       /* sin fondo */
-  box-shadow: none;       /* sin sombra */
-  backdrop-filter: none;
-
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .6px;
-  text-transform: uppercase;
-
-  color: rgba(231,237,245,0.65);  /* discreto */
-
-  pointer-events: none;
+.mi-body{
+  min-width:0;
+  display:grid;
+  grid-template-rows:minmax(0,1fr) auto;
+  gap:5px;
+  align-content:center;
 }
 
+.mi-top{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:10px;
+  align-items:start;
+}
 
+.mi-titleWrap{
+  min-width:0;
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+}
 
-    .mi-top{display:flex; justify-content:space-between; gap:10px; align-items:flex-start;}
-    .mi-title{font-weight:900; font-size:13px; color:#fff; line-height:1.2;}
-    /* ===== TÍTULO EN MARCOS ===== */
+.mi-accentDot{
+  width:6px;
+  height:6px;
+  margin-top:7px;
+  border-radius:999px;
+  flex:0 0 auto;
+  background: color-mix(in srgb, var(--schoolColor, #D9AA3F) 58%, rgba(255,255,255,0.20));
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--schoolColor, #D9AA3F) 8%, transparent);
+  opacity:.72;
+}
+
+.mi-title{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  overflow:hidden;
+  font-weight:760;
+  font-size:13.4px;
+  color:#fff;
+  line-height:1.2;
+  letter-spacing:-0.015em;
+  max-height:calc(1.2em * 2);
+}
 
 .mi-item.is-marco .mi-title{
-  font-weight: 600;     /* antes: 900 */
-  letter-spacing: 0.03em;
-  opacity: 0.95;
+  font-weight: 690;
+  letter-spacing: 0;
+  color: rgba(255,255,255,0.88);
+  opacity: 1;
 }
 
-    .mi-year{font-weight:900; font-size:12px; color: rgba(231,237,245,.85);}
-    .mi-sub{opacity:.9; font-size:12px; color:#c6d2e2; margin-top:4px; line-height:1.25;}
+.mi-item.is-marco .mi-marcoTag{
+  position:absolute;
+  right:14px;
+  bottom:13px;
+}
+
+.mi-item.is-marco .mi-sub{
+  padding-right:72px;
+  color: rgba(184,197,215,0.70);
+}
+
+.mi-item.is-marco .mi-year{
+  color: rgba(231,237,245,.58);
+  border-color: rgba(255,255,255,.06);
+  background: rgba(255,255,255,0.032);
+}
+
+.mi-item.is-marco .mi-avatar{
+  background:
+    radial-gradient(circle at 30% 28%, rgba(255,255,255,0.10), rgba(255,255,255,0.018) 62%),
+    color-mix(in srgb, var(--schoolColor, #D9AA3F) 9%, rgba(255,255,255,0.02));
+  border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 10%, rgba(255,255,255,0.10));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--schoolColor, #D9AA3F) 4%, transparent),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.mi-item.is-marco .mi-accentDot{
+  background: color-mix(in srgb, var(--schoolColor, #D9AA3F) 38%, rgba(255,255,255,0.18));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--schoolColor, #D9AA3F) 5%, transparent);
+  opacity:.56;
+}
+
+.mi-meta{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  align-self:start;
+}
+
+    .mi-year{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:22px;
+      padding:0 8px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.09);
+      background: rgba(255,255,255,0.05);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+      font-weight:800;
+      font-size:10px;
+      letter-spacing:.045em;
+      color: rgba(231,237,245,.72);
+    }
+    .mi-marcoTag{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:20px;
+      padding:0 7px;
+      border-radius:999px;
+      border:1px solid color-mix(in srgb, var(--schoolColor, #D9AA3F) 18%, rgba(255,255,255,0.09));
+      background: color-mix(in srgb, var(--schoolColor, #D9AA3F) 7%, rgba(255,255,255,0.025));
+      font-size:9px;
+      font-weight:800;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+      color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 28%, rgba(231,237,245,0.60));
+      pointer-events:none;
+    }
+    .mi-sub{
+      min-width:0;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      opacity:.8;
+      font-size:12px;
+      font-weight:540;
+      color:#b8c5d7;
+      line-height:1.3;
+      padding-left:15px;
+    }
+    .mi-item.active .mi-sub{
+      color:#d7e1ee;
+    }
     .pill{
       display:inline-block;
       margin-top:6px;
@@ -1389,6 +1564,51 @@ opacity: .75;
 }
 
 @media (max-width: 980px){
+  .modelsList{
+    gap:8px;
+  }
+
+  .mi-item{
+    height:90px;
+    min-height:90px;
+    padding:11px 12px;
+    border-radius:15px;
+  }
+
+  .mi-shell{
+    grid-template-columns:38px minmax(0,1fr);
+    gap:10px;
+  }
+
+  .mi-avatar{
+    width:38px;
+    height:38px;
+  }
+
+  .mi-title{
+    font-size:12.6px;
+  }
+
+  .mi-sub{
+    font-size:11.5px;
+    padding-left:15px;
+  }
+
+  .mi-item.is-marco .mi-marcoTag{
+    right:12px;
+    bottom:11px;
+  }
+
+  .mi-item.is-marco .mi-sub{
+    padding-right:68px;
+  }
+
+  .mi-year{
+    min-height:22px;
+    padding:0 8px;
+    font-size:10px;
+  }
+
   .modelPanel{
     overflow-x: clip;
   }
@@ -2470,17 +2690,26 @@ body.network-mode .panel.left .schoolSticky.stuck{
       scrollbar-width: thin;
       scrollbar-color: rgba(231,237,245,0.28) rgba(255,255,255,0.06);
     }
-    .panel.left::-webkit-scrollbar, .panel.right::-webkit-scrollbar{ width:10px; }
+    .panel.left::-webkit-scrollbar{ width:8px; }
+    .panel.right::-webkit-scrollbar{ width:10px; }
     .panel.left::-webkit-scrollbar-track, .panel.right::-webkit-scrollbar-track{
       background: rgba(255,255,255,0.05);
       border-radius: 999px;
       border: 1px solid rgba(255,255,255,0.06);
+    }
+    .panel.left::-webkit-scrollbar-track{
+      background: rgba(255,255,255,0.035);
+      border-color: rgba(255,255,255,0.04);
     }
     .panel.left::-webkit-scrollbar-thumb, .panel.right::-webkit-scrollbar-thumb{
       background: linear-gradient(180deg, rgba(231,237,245,0.28), rgba(231,237,245,0.14));
       border-radius: 999px;
       border: 1px solid rgba(255,255,255,0.10);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
+    }
+    .panel.left::-webkit-scrollbar-thumb{
+      background: linear-gradient(180deg, rgba(231,237,245,0.22), rgba(231,237,245,0.10));
+      border-color: rgba(255,255,255,0.08);
     }
     .panel.left::-webkit-scrollbar-thumb:hover, .panel.right::-webkit-scrollbar-thumb:hover{
       background: linear-gradient(180deg, rgba(231,237,245,0.36), rgba(231,237,245,0.18));
@@ -5459,18 +5688,97 @@ body.theme-light .modelPanel .mp-hint{
 
 body.theme-light .mi-item{
   color:#1a1f29;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.95), rgba(247,251,255,.88)),
+    radial-gradient(190px 100px at 96% 10%, rgba(255,255,255,.78), transparent 72%);
+  border-color: rgba(118,129,153,.20);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.98),
+    0 10px 24px rgba(28,47,79,.08);
 }
 
 body.theme-light .mi-item:hover{
-  border-color: rgba(81,135,255,.35);
-  background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(239,246,255,.90));
+  border-color: rgba(81,135,255,.28);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.995), rgba(241,247,255,.94)),
+    radial-gradient(200px 110px at 96% 10%, rgba(255,255,255,.88), transparent 72%);
 }
 
 body.theme-light .mi-item.active{
-  border-color: color-mix(in srgb, var(--schoolColor) 44%, rgba(118,129,153,.24));
+  border-color: color-mix(in srgb, var(--schoolColor) 34%, rgba(118,129,153,.24));
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.99), rgba(242,248,255,.94)),
+    radial-gradient(220px 120px at 0% 0%, color-mix(in srgb, var(--schoolColor) 16%, rgba(255,255,255,.78)), transparent 72%);
   box-shadow:
-    0 0 0 2px color-mix(in srgb, var(--schoolColor) 16%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--schoolColor) 12%, transparent),
+    0 14px 24px color-mix(in srgb, var(--schoolColor) 8%, transparent),
     inset 0 1px 0 rgba(255,255,255,.99);
+}
+
+body.theme-light .mi-item.is-marco{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.86), rgba(246,249,255,.79)),
+    radial-gradient(180px 100px at 96% 10%, rgba(255,255,255,.28), transparent 76%);
+  border-color: color-mix(in srgb, var(--schoolColor, #5f8fd1) 5%, rgba(118,129,153,.18));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.98),
+    0 5px 14px rgba(28,47,79,.06);
+}
+
+body.theme-light .mi-item.is-marco:hover{
+  border-color: color-mix(in srgb, var(--schoolColor, #5f8fd1) 8%, rgba(118,129,153,.20));
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.89), rgba(245,248,255,.82)),
+    radial-gradient(180px 100px at 96% 10%, rgba(255,255,255,.34), transparent 76%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.99),
+    0 6px 16px rgba(28,47,79,.07);
+}
+
+body.theme-light .mi-item.is-marco.active{
+  border-color: color-mix(in srgb, var(--schoolColor, #5f8fd1) 14%, rgba(118,129,153,.22));
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.92), rgba(244,248,255,.85)),
+    radial-gradient(200px 110px at 0% 0%, color-mix(in srgb, var(--schoolColor, #5f8fd1) 4%, rgba(255,255,255,.74)), transparent 76%);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--schoolColor, #5f8fd1) 4%, transparent),
+    0 8px 16px color-mix(in srgb, var(--schoolColor, #5f8fd1) 3%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.99);
+}
+
+body.theme-light .mi-avatar{
+  background:
+    radial-gradient(circle at 30% 28%, rgba(255,255,255,.96), rgba(255,255,255,.72) 62%),
+    color-mix(in srgb, var(--schoolColor, #5f8fd1) 10%, rgba(255,255,255,.76));
+  border-color: color-mix(in srgb, var(--schoolColor, #5f8fd1) 18%, rgba(118,129,153,.18));
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--schoolColor, #5f8fd1) 7%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+body.theme-light .mi-avatarFallback{
+  color:#29405f;
+}
+
+body.theme-light .mi-year{
+  color:#52627c;
+  border-color: rgba(118,129,153,.18);
+  background: rgba(255,255,255,.82);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+body.theme-light .mi-marcoTag{
+  color: color-mix(in srgb, var(--schoolColor, #5f8fd1) 44%, #465a79);
+  border-color: color-mix(in srgb, var(--schoolColor, #5f8fd1) 20%, rgba(118,129,153,.18));
+  background: color-mix(in srgb, var(--schoolColor, #5f8fd1) 8%, rgba(255,255,255,.90));
+}
+
+body.theme-light .mi-sub{
+  color:#607089;
+}
+
+body.theme-light .mi-item.active .mi-sub{
+  color:#33445f;
 }
 
 body.theme-light .pill,
@@ -5762,25 +6070,52 @@ body.theme-light #countLine .count-school{
 
 body.theme-light .mi-title{
   font-weight:760;
-  font-size:12.8px;
-  line-height:1.22;
-  letter-spacing:-0.01em;
+  font-size:13.4px;
+  line-height:1.2;
+  letter-spacing:-0.015em;
   color:#1c2433;
 }
 
 body.theme-light .mi-item.is-marco .mi-title{
-  font-weight:640;
-  letter-spacing:.015em;
+  font-weight:690;
+  letter-spacing:0;
+  color:#40516b;
 }
 
 body.theme-light .mi-year{
-  color:#8a98ae;
+  color:#6a7890;
   font-weight:780;
 }
 
+body.theme-light .mi-item.is-marco .mi-year{
+  color:#7b8aa1;
+  border-color: rgba(118,129,153,.14);
+  background: rgba(255,255,255,.68);
+}
+
 body.theme-light .mi-sub{
-  color:#66748b;
+  color:#607089;
   opacity:1;
+}
+
+body.theme-light .mi-item.is-marco .mi-sub{
+  color:#728199;
+}
+
+body.theme-light .mi-item.is-marco .mi-avatar{
+  background:
+    radial-gradient(circle at 30% 28%, rgba(255,255,255,.94), rgba(255,255,255,.64) 62%),
+    color-mix(in srgb, var(--schoolColor, #5f8fd1) 6%, rgba(255,255,255,.82));
+  border-color: color-mix(in srgb, var(--schoolColor, #5f8fd1) 12%, rgba(118,129,153,.18));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--schoolColor, #5f8fd1) 4%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.99);
+}
+
+body.theme-light .mi-item.is-marco .mi-accentDot{
+  background: color-mix(in srgb, var(--schoolColor, #5f8fd1) 34%, rgba(118,129,153,.20));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--schoolColor, #5f8fd1) 5%, transparent);
+  opacity:.54;
 }
 
 body.theme-light .landingSchoolMeta{
@@ -6179,6 +6514,25 @@ function getModelPhotoUrls(model){
   return rawList
     .filter(Boolean)
     .map(file => `${DATA_BASE}/Core/fotos/${file}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`);
+}
+
+function getPrimaryAuthorName(value){
+  const raw = String(value ?? '').trim();
+  if (!raw) return '';
+  return raw.split(';').map(s => s.trim()).filter(Boolean)[0] || '';
+}
+
+function getAuthorInitials(value){
+  const primary = getPrimaryAuthorName(value);
+  if (!primary) return 'M';
+  const clean = primary
+    .split(',')
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const parts = clean.split(' ').filter(Boolean);
+  if (!parts.length) return 'M';
+  return parts.slice(0, 2).map(part => part.charAt(0).toUpperCase()).join('');
 }
 
 function ensureAuthorPhotoIndexPromise(){
@@ -6864,11 +7218,8 @@ function getTechniqueIsomorphisms(modelMeta, itemMeta){
 
 function getModelAuthorsById(modelId){
   try{
-    const id = String(modelId || '').trim();
-    if (!id) return '';
-    const pool = Array.isArray(getAllModelsPool()) ? getAllModelsPool() : [];
-    const model = pool.find((item) => String(item?.id || '').trim() === id);
-    return String(model?.autores || '').trim();
+    const meta = getCachedIsomorphismModelMeta(modelId);
+    return String(meta?.autores || '').trim();
   }catch(err){
     console.warn('getModelAuthorsById failed', { modelId, err });
     return '';
@@ -6891,9 +7242,12 @@ function getIsomorphismEquivalences(row, currentModelId){
     .filter((entry) => String(entry?.modeloId || '').trim() && String(entry?.modeloId || '').trim() !== currentId)
     .map((entry) => ({
       ...entry,
-      autores: getModelAuthorsById(entry?.modeloId || '')
+      autores: getModelAuthorsById(entry?.modeloId || ''),
+      year: getModelYearById(entry?.modeloId || '')
     }))
     .sort((a, b) => {
+      const byYear = (Number(a?.year || 0) || Number.MAX_SAFE_INTEGER) - (Number(b?.year || 0) || Number.MAX_SAFE_INTEGER);
+      if (byYear !== 0) return byYear;
       const byModel = String(a?.modeloLabel || '').localeCompare(String(b?.modeloLabel || ''), 'es');
       if (byModel !== 0) return byModel;
       return String(a?.tecnicaLabel || '').localeCompare(String(b?.tecnicaLabel || ''), 'es');
@@ -6904,6 +7258,7 @@ function renderTechniqueIsomorphisms(modelMeta, itemMeta){
   try{
     const isoList = getTechniqueIsomorphisms(modelMeta, itemMeta);
     if (!isoList.length) return '';
+    ensureIsomorphismMetadataForRows(modelMeta, isoList);
 
     return `
       <div class="iso-tech">
@@ -7023,6 +7378,135 @@ function hasIsomorphismIndexData(){
     (idx.byFallbackKey && idx.byFallbackKey.size) ||
     (idx.byNameKey && idx.byNameKey.size)
   );
+}
+
+const ISOMORPHISM_MODEL_META_CACHE = new Map();
+const ISOMORPHISM_MODEL_META_PENDING = new Map();
+
+function cacheIsomorphismModelMeta(model){
+  if (!model || typeof model !== 'object') return null;
+  const id = String(model?.id || '').trim();
+  if (!id) return null;
+  const prev = ISOMORPHISM_MODEL_META_CACHE.get(id) || {};
+  const next = {
+    id,
+    label: String(model?.label || prev.label || model?.modelo || '').trim(),
+    autores: String(model?.autores || model?.authors || prev.autores || '').trim(),
+    year: Number(model?.year || prev.year || 0) || 0,
+    grupo: String(model?.grupo || model?.group || prev.grupo || '').trim()
+  };
+  ISOMORPHISM_MODEL_META_CACHE.set(id, next);
+  return next;
+}
+
+function primeIsomorphismModelMetaCache(){
+  const pool = Array.isArray(getAllModelsPool()) ? getAllModelsPool() : [];
+  pool.forEach((model) => cacheIsomorphismModelMeta(model));
+}
+
+function getCachedIsomorphismModelMeta(modelId){
+  const id = String(modelId || '').trim();
+  if (!id) return null;
+  primeIsomorphismModelMetaCache();
+  return ISOMORPHISM_MODEL_META_CACHE.get(id) || null;
+}
+
+function getModelYearById(modelId){
+  const meta = getCachedIsomorphismModelMeta(modelId);
+  return Number(meta?.year || 0) || 0;
+}
+
+async function loadIsomorphismSchoolMeta(schoolLabel){
+  const label = String(schoolLabel || '').trim();
+  if (!label) return;
+  if (ISOMORPHISM_MODEL_META_PENDING.has(label)){
+    return ISOMORPHISM_MODEL_META_PENDING.get(label);
+  }
+
+  const promise = (async () => {
+    const targetSlug = slugify(label);
+    const entry = (GH_SCHOOLS || []).find((item) => {
+      const itemLabel = String(item?.label || '').trim();
+      const itemId = String(item?.id || '').trim();
+      return itemLabel === label || itemId === targetSlug || slugify(itemLabel) === targetSlug;
+    });
+    const schoolUrls = [];
+    const addUrl = (u) => { if (u && !schoolUrls.includes(u)) schoolUrls.push(u); };
+    addUrl(gh(`Core/escuelas/${targetSlug}.json`));
+    if (entry?.file){
+      const rawFile = String(entry.file || '').trim().replace(/^\/+/, '');
+      addUrl(gh(rawFile.startsWith('Core/') ? rawFile : `Core/${rawFile}`));
+      addUrl(gh(rawFile.replace(/^Core\//, '')));
+    }
+
+    let school = null;
+    for (const url of schoolUrls){
+      try{
+        school = await fetchJson(url, { bust:true });
+      }catch(err){
+        continue;
+      }
+      if (school) break;
+    }
+    if (!school) return;
+
+    const listRaw =
+      (Array.isArray(school?.modelos) ? school.modelos : null) ||
+      (Array.isArray(school?.models) ? school.models : null) ||
+      (school?.modelos && typeof school.modelos === 'object' ? Object.values(school.modelos) : null) ||
+      (school?.models && typeof school.models === 'object' ? Object.values(school.models) : null) ||
+      (Array.isArray(school) ? school : []);
+
+    listRaw
+      .filter((item) => item && typeof item === 'object')
+      .forEach((item) => cacheIsomorphismModelMeta({
+        ...item,
+        grupo: String(item?.grupo || item?.group || school?.label || entry?.label || label).trim()
+      }));
+  })().finally(() => {
+    ISOMORPHISM_MODEL_META_PENDING.delete(label);
+  });
+
+  ISOMORPHISM_MODEL_META_PENDING.set(label, promise);
+  return promise;
+}
+
+function ensureIsomorphismMetadataForRows(modelMeta, rows){
+  try{
+    const activeModelId = String(modelMeta?.id || '').trim();
+    if (!activeModelId || !Array.isArray(rows) || !rows.length) return;
+
+    primeIsomorphismModelMetaCache();
+
+    const schoolsToLoad = new Set();
+    rows.forEach((row) => {
+      const entries = Array.isArray(row?.isomorfismoEntries) ? row.isomorfismoEntries : [];
+      entries.forEach((entry) => {
+        const modelId = String(entry?.modeloId || '').trim();
+        if (!modelId || modelId === activeModelId) return;
+        const cached = getCachedIsomorphismModelMeta(modelId);
+        const hasAuthor = String(cached?.autores || '').trim();
+        const hasYear = Number(cached?.year || 0) > 0;
+        if (hasAuthor && hasYear) return;
+        const school = String(entry?.grupo || '').trim();
+        if (school) schoolsToLoad.add(school);
+      });
+    });
+
+    if (!schoolsToLoad.size) return;
+
+    Promise.allSettled([...schoolsToLoad].map((school) => loadIsomorphismSchoolMeta(school)))
+      .then(async () => {
+        if (String(currentModelId || '').trim() !== activeModelId) return;
+        const baseModel = getAllModelsPool().find((m) => String(m?.id || '').trim() === activeModelId) || modelMeta;
+        const fullModel = await ensureModelFull(baseModel).catch(() => baseModel);
+        if (String(currentModelId || '').trim() !== activeModelId) return;
+        renderModelInfo(fullModel || baseModel);
+      })
+      .catch(() => {});
+  }catch(err){
+    console.warn('ensureIsomorphismMetadataForRows failed', { modelId: modelMeta?.id, err });
+  }
 }
 
 function ensureIsomorphismReadyForModel(modelMeta){
@@ -9361,24 +9845,36 @@ function renderModelsList(){
   modelsListEl.innerHTML = list.map(m => {
     const active = (String(m.id) === String(currentModelId)) ? 'active' : '';
     const safeId = encodeURIComponent(String(m.id ?? '').trim());
+    const schoolColor = colorForSchoolLabel(m.grupo);
+    const marcoClass = m && m.isMarco ? 'is-marco' : '';
+    const marcoTag = (m && m.isMarco)
+      ? `<div class="mi-marcoTag" aria-label="Marco">Marco</div>`
+      : '';
+    const photoUrl = resolveAuthorPhotoUrl(m);
+    const authorText = escapeHtml(m.autores ?? '—');
+    const authorInitials = escapeHtml(getAuthorInitials(m.autores));
+    const avatarHtml = photoUrl
+      ? `<div class="mi-avatarFallback" aria-hidden="true">${authorInitials}</div><img src="${escapeHtml(photoUrl)}" alt="${authorText}" loading="lazy" decoding="async" onerror="this.remove()">`
+      : `<div class="mi-avatarFallback" aria-hidden="true">${authorInitials}</div>`;
 
-const marcoClass = m && m.isMarco ? 'is-marco' : '';
-const marcoTag = (m && m.isMarco)
- ? `<div class="mi-marcoTag" aria-label="Marco">
-       <span class="mi-marcoTxt">MARCO</span>
-     </div>`
-
-  : '';
-
-return `
-  <div class="mi-item ${active} ${marcoClass}" data-id="${safeId}" style="--schoolColor:${escapeHtml(colorForSchoolLabel(m.grupo))}">
-    <div class="mi-top">
-      <div class="mi-title">${escapeHtml(m.label ?? '—')}</div>
-      <div class="mi-year">${escapeHtml(m.year ?? '—')}</div>
+    return `
+  <div class="mi-item ${active} ${marcoClass}" data-id="${safeId}" style="--schoolColor:${escapeHtml(schoolColor)}">
+    <div class="mi-shell">
+      <div class="mi-avatar">${avatarHtml}</div>
+      <div class="mi-body">
+        <div class="mi-top">
+          <div class="mi-titleWrap">
+            <span class="mi-accentDot" aria-hidden="true"></span>
+            <div class="mi-title">${escapeHtml(m.label ?? '—')}</div>
+          </div>
+          <div class="mi-meta">
+            <div class="mi-year">${escapeHtml(m.year ?? '—')}</div>
+            ${marcoTag}
+          </div>
+        </div>
+        <div class="mi-sub">${authorText}</div>
+      </div>
     </div>
-    <div class="mi-sub">${escapeHtml(m.autores ?? '—')}</div>
-
-    ${marcoTag}
   </div>
 `;
 
