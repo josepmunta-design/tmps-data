@@ -22,16 +22,25 @@ const HOST = location.hostname.toLowerCase();
 const IS_GHPAGES = HOST.endsWith('github.io');
 
 function resolveDataBase(){
+
+  // GitHub Pages
   if (IS_GHPAGES){
-    const segments = String(location.pathname || '/')
-      .split('/')
-      .filter(Boolean);
-    const repoBase = (segments[0] && !segments[0].includes('.'))
-      ? `/${segments[0]}`
-      : '';
+    const repoBase = resolveRepoBasePath();
     return `${location.origin}${repoBase}/data`;
   }
+
+  // Producción (tu dominio)
   return `${cdnBase()}/data`;
+
+}
+
+function resolveRepoBasePath(){
+  const segments = String(location.pathname || '/')
+    .split('/')
+    .filter(Boolean);
+  return (segments[0] && !segments[0].includes('.'))
+    ? `/${segments[0]}`
+    : '';
 }
 
 
@@ -6949,23 +6958,18 @@ async function fetchJson(url, options = {}){
   return await r.json();
 }
 function buildIsomorphismUrlCandidates(relPath){
+
   const clean = String(relPath || '').replace(/^\/+/, '');
+  const rawGithub = `https://raw.githubusercontent.com/${GH_OWNER}/${GH_REPO}/main/data/${clean}`;
+
   const rootLike = [
-    `${location.origin}/${clean}`,
-    `${location.origin}/data/${clean}`,
-    `${cdnBase()}/${clean}`,
+    gh(clean),
     `${cdnBase()}/data/${clean}`,
-    gh(clean)
+    rawGithub
   ];
 
-  const pageRelative = [
-    new URL(clean, location.href).href,
-    new URL(`./${clean}`, location.href).href,
-    new URL(`data/${clean}`, location.href).href,
-    new URL(`./data/${clean}`, location.href).href
-  ];
+  return [...new Set(rootLike)];
 
-  return [...new Set([...pageRelative, ...rootLike])];
 }
 async function loadIsomorphismIndex(){
   try{
@@ -6997,6 +7001,7 @@ async function loadIsomorphismIndex(){
       if (!looksLikeLookup) continue;
 
       const lookupIndex = buildIsomorphismIndexFromLookup(rawLookup);
+      if (!indexHasUsableIsomorphismData(lookupIndex)) continue;
       window.ISOMORPHISM_INDEX = lookupIndex;
       return lookupIndex;
     }
@@ -7012,6 +7017,9 @@ async function loadIsomorphismIndex(){
       if (raw) break;
     }
     const index = buildIsomorphismIndexFromList(raw);
+    if (!indexHasUsableIsomorphismData(index)){
+      throw new Error('Índice de isomorfismos vacío o no utilizable');
+    }
     window.ISOMORPHISM_INDEX = index;
     return index;
   }catch(e){
@@ -7389,6 +7397,21 @@ function hasIsomorphismIndexData(){
   );
 }
 
+function indexHasUsableIsomorphismData(idx){
+  if (!idx) return false;
+  return !!(
+    (Array.isArray(idx.rawIsomorfismos) && idx.rawIsomorfismos.length) ||
+    (idx.byIsomorfismoId && idx.byIsomorfismoId.size) ||
+    (idx.byModeloId && idx.byModeloId.size) ||
+    (idx.byTecnicaId && idx.byTecnicaId.size) ||
+    (idx.byModelTechniqueKey && idx.byModelTechniqueKey.size) ||
+    (idx.byModelId && idx.byModelId.size) ||
+    (idx.byEntryKey && idx.byEntryKey.size) ||
+    (idx.byFallbackKey && idx.byFallbackKey.size) ||
+    (idx.byNameKey && idx.byNameKey.size)
+  );
+}
+
 const ISOMORPHISM_MODEL_META_CACHE = new Map();
 const ISOMORPHISM_MODEL_META_PENDING = new Map();
 
@@ -7409,7 +7432,12 @@ function cacheIsomorphismModelMeta(model){
 }
 
 function primeIsomorphismModelMetaCache(){
-  const pool = Array.isArray(getAllModelsPool()) ? getAllModelsPool() : [];
+
+  const pool = Array.isArray(window.ALL_MODELS)
+    ? window.ALL_MODELS
+    : Array.isArray(window.MODELS)
+      ? window.MODELS
+      : [];
   pool.forEach((model) => cacheIsomorphismModelMeta(model));
 }
 
@@ -7635,7 +7663,10 @@ AUTHOR_PHOTO_PROMISE = ASSET_VERSION_PROMISE
   .then(() => loadAuthorPhotoIndex())
   .catch(() => ({ authors:{}, models:{} }));
 ISOMORPHISM_PROMISE = ASSET_VERSION_PROMISE
-  .then(() => loadIsomorphismIndex())
+  .then(() => {
+    DATA_BASE = resolveDataBase();
+    return loadIsomorphismIndex();
+  })
   .catch(() => emptyIsomorphismIndex());
 
 ISOMORPHISM_PROMISE.then(async () => {
