@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-12T20:54:51.983Z
+Generado: 2026-03-13T12:25:36.464Z
 
 ## Buscar excepciones al problema
 
@@ -165,6 +165,25 @@ Generado: 2026-03-12T20:54:51.983Z
 - Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas) — Nombrar el constructo implícito en vivo [ok]
 - Teoría del self dialógico — Nombrar la voz activa [ok]
 - Psicoterapia relacional sistémica (Linares) — Externalizar el patrón (no la persona) [ok]
+
+## Observar pensamientos como eventos mentales
+
+- ID: `observar-pensamientos-como-eventos-mentales`
+- Categoría: Defusión y descentramiento cognitivo
+- Archivo fuente: `data/indices/isomorfismos/fuente/observar-pensamientos-como-eventos-mentales.json`
+- Entradas: 11
+
+- Terapia de Aceptación y Compromiso (ACT) — Entrenamiento estructurado en defusión cognitiva [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Etiqueta metacognitiva básica [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Repetición rápida hasta pérdida de significado [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Defusión del crítico interno mediante externalización [ok]
+- Mindfulness (MBSR y tradición contemplativa) — Observación consciente de pensamientos [ok]
+- Mindfulness (MBSR y tradición contemplativa) — Observar el pensamiento como evento mental [ok]
+- Mindfulness (MBSR y tradición contemplativa) — Nombrar mentalmente la experiencia [ok]
+- CBT 3ª ola – MBCT — Trabajo con pensamientos depresógenos: ‘pensamientos no son hechos’ (decentramiento) [ok]
+- CBT 3ª ola – MBCT — Descentramiento explícito ("pensamientos no son hechos") [ok]
+- CBT 3ª ola – MBCT — Observar pensamientos como imágenes/palabras (reificación mínima) [ok]
+- CBT 3ª ola – MBCT — Etiquetado breve de actividad mental ("pensando", "planeando", "recordando") [ok]
 
 ## Proyectar la vida sin el problema
 
