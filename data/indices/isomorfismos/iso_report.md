@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-14T11:29:32.952Z
+Generado: 2026-03-14T11:45:41.619Z
 
 ## Aumentar tolerancia emocional
 
@@ -11,12 +11,12 @@ Generado: 2026-03-14T11:29:32.952Z
 
 - Terapia de Aceptación y Compromiso (ACT) — Entrenamiento en aceptación/expansión experiencial [ok]
 - Terapia de Aceptación y Compromiso (ACT) — p_act_expansion_emocional [falta_id]
-- emotion-focused-therapy-greenberg-1990 — p_eft_tolerancia_emocional [falta_modelo]
-- emotion-focused-therapy-greenberg-1990 — p_eft_evocacion_emocional [falta_modelo]
-- terapia-exposicion-1960 — p_exposicion_emocional [falta_modelo]
+- Terapia enfocada en las emociones — Entrenamiento en tolerancia emocional [extra_repo]
+- Terapia enfocada en las emociones — Evocación y profundización emocional [extra_repo]
+- PE – Prolonged Exposure — p_exposicion_emocional [falta_id]
 - Terapia dialéctico–conductual (DBT) — p_dbt_distress_tolerance [falta_id]
-- focusing-gendlin-1978 — p_focusing_permanecer_sensacion [falta_modelo]
-- aedp-fosha-2000 — p_aedp_staying_with_emotion [falta_modelo]
+- Focusing — p_focusing_permanecer_sensacion [falta_id]
+- AEDP (Accelerated Experiential Dynamic Psychotherapy) — p_aedp_staying_with_emotion [falta_id]
 
 ## Buscar excepciones al problema
 
