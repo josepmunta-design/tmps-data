@@ -1,12 +1,158 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-14T11:26:08.977Z",
+    "generatedAt": "2026-03-14T11:29:32.952Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
   },
   "isomorfismos": [
+    {
+      "id": "aumentar-tolerancia-emocional",
+      "label": "Aumentar tolerancia emocional",
+      "definicion": "Entrenar la capacidad de permanecer en contacto con emociones difíciles sin evitarlas, suprimirlas o escapar de ellas, permitiendo que se experimenten plenamente y se integren en la experiencia consciente.",
+      "categoria": "Exposición y procesamiento emocional",
+      "tags": [
+        "emociones",
+        "tolerancia emocional",
+        "aceptacion",
+        "exposicion emocional",
+        "experienciacion",
+        "regulacion emocional",
+        "evitacion experiencial"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/aumentar-tolerancia-emocional.json",
+      "entries": [
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_aceptacion",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_aceptacion",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Entrenamiento en aceptación/expansión experiencial",
+          "techniqueLabel": "Entrenamiento en aceptación/expansión experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Prácticas de aceptación y expansión que entrenan permanecer con emociones difíciles sin evitarlas.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_expansion_emocional",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_expansion_emocional",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Ejercicios de expansión para abrir espacio a emociones intensas en lugar de luchar contra ellas.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "emotion-focused-therapy-greenberg-1990",
+          "tecnicaId": "p_eft_tolerancia_emocional",
+          "modelId": "emotion-focused-therapy-greenberg-1990",
+          "techniqueId": "p_eft_tolerancia_emocional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Entrenamiento para sostener y explorar emociones difíciles dentro de la sesión terapéutica.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "emotion-focused-therapy-greenberg-1990",
+          "tecnicaId": "p_eft_evocacion_emocional",
+          "modelId": "emotion-focused-therapy-greenberg-1990",
+          "techniqueId": "p_eft_evocacion_emocional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Evocación y profundización de emociones para que puedan ser plenamente experimentadas.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-exposicion-1960",
+          "tecnicaId": "p_exposicion_emocional",
+          "modelId": "terapia-exposicion-1960",
+          "techniqueId": "p_exposicion_emocional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exposición directa a emociones temidas para aumentar tolerancia y reducir evitación.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-dialectico-conductual-linehan-1993",
+          "tecnicaId": "p_dbt_distress_tolerance",
+          "modelId": "terapia-dialectico-conductual-linehan-1993",
+          "techniqueId": "p_dbt_distress_tolerance",
+          "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+          "modelLabel": "Terapia dialéctico–conductual (DBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Entrenamiento explícito en tolerar estados emocionales intensos sin conductas impulsivas o evitativas.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-dialectico-conductual-linehan-1993.json"
+        },
+        {
+          "modeloId": "focusing-gendlin-1978",
+          "tecnicaId": "p_focusing_permanecer_sensacion",
+          "modelId": "focusing-gendlin-1978",
+          "techniqueId": "p_focusing_permanecer_sensacion",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Focusing entrena permanecer con la sensación sentida (felt sense) sin interrumpirla.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "aedp-fosha-2000",
+          "tecnicaId": "p_aedp_staying_with_emotion",
+          "modelId": "aedp-fosha-2000",
+          "techniqueId": "p_aedp_staying_with_emotion",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "AEDP enfatiza permanecer con emociones intensas hasta que puedan transformarse y reorganizar la experiencia.",
+          "sourceFile": null
+        }
+      ]
+    },
     {
       "id": "buscar-excepciones-al-problema",
       "label": "Buscar excepciones al problema",
@@ -2757,6 +2903,52 @@
     }
   ],
   "groups": [
+    {
+      "id": "aumentar-tolerancia-emocional",
+      "label": "Aumentar tolerancia emocional",
+      "categoria": "Exposición y procesamiento emocional",
+      "definicion": "Entrenar la capacidad de permanecer en contacto con emociones difíciles sin evitarlas, suprimirlas o escapar de ellas, permitiendo que se experimenten plenamente y se integren en la experiencia consciente.",
+      "tags": [
+        "emociones",
+        "tolerancia emocional",
+        "aceptacion",
+        "exposicion emocional",
+        "experienciacion",
+        "regulacion emocional",
+        "evitacion experiencial"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "aumentar-tolerancia-emocional",
+          "isomorfismoLabel": "Aumentar tolerancia emocional",
+          "categoria": "Exposición y procesamiento emocional",
+          "definicion": "Entrenar la capacidad de permanecer en contacto con emociones difíciles sin evitarlas, suprimirlas o escapar de ellas, permitiendo que se experimenten plenamente y se integren en la experiencia consciente.",
+          "tags": [
+            "emociones",
+            "tolerancia emocional",
+            "aceptacion",
+            "exposicion emocional",
+            "experienciacion",
+            "regulacion emocional",
+            "evitacion experiencial"
+          ],
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_act_aceptacion",
+          "techniqueId": "p_act_aceptacion",
+          "tecnicaLabel": "Entrenamiento en aceptación/expansión experiencial",
+          "techniqueLabel": "Entrenamiento en aceptación/expansión experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Prácticas de aceptación y expansión que entrenan permanecer con emociones difíciles sin evitarlas.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        }
+      ]
+    },
     {
       "id": "buscar-excepciones-al-problema",
       "label": "Buscar excepciones al problema",
@@ -5832,6 +6024,35 @@
   ],
   "records": [
     {
+      "isomorfismoId": "aumentar-tolerancia-emocional",
+      "isomorfismoLabel": "Aumentar tolerancia emocional",
+      "categoria": "Exposición y procesamiento emocional",
+      "definicion": "Entrenar la capacidad de permanecer en contacto con emociones difíciles sin evitarlas, suprimirlas o escapar de ellas, permitiendo que se experimenten plenamente y se integren en la experiencia consciente.",
+      "tags": [
+        "emociones",
+        "tolerancia emocional",
+        "aceptacion",
+        "exposicion emocional",
+        "experienciacion",
+        "regulacion emocional",
+        "evitacion experiencial"
+      ],
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_act_aceptacion",
+      "techniqueId": "p_act_aceptacion",
+      "tecnicaLabel": "Entrenamiento en aceptación/expansión experiencial",
+      "techniqueLabel": "Entrenamiento en aceptación/expansión experiencial",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Prácticas de aceptación y expansión que entrenan permanecer con emociones difíciles sin evitarlas.",
+      "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+    },
+    {
       "isomorfismoId": "buscar-excepciones-al-problema",
       "isomorfismoLabel": "Buscar excepciones al problema",
       "categoria": "Excepciones, variación y recursos",
@@ -8686,6 +8907,152 @@
     }
   ],
   "byIsomorfismoId": {
+    "aumentar-tolerancia-emocional": {
+      "id": "aumentar-tolerancia-emocional",
+      "label": "Aumentar tolerancia emocional",
+      "definicion": "Entrenar la capacidad de permanecer en contacto con emociones difíciles sin evitarlas, suprimirlas o escapar de ellas, permitiendo que se experimenten plenamente y se integren en la experiencia consciente.",
+      "categoria": "Exposición y procesamiento emocional",
+      "tags": [
+        "emociones",
+        "tolerancia emocional",
+        "aceptacion",
+        "exposicion emocional",
+        "experienciacion",
+        "regulacion emocional",
+        "evitacion experiencial"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/aumentar-tolerancia-emocional.json",
+      "entries": [
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_aceptacion",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_aceptacion",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Entrenamiento en aceptación/expansión experiencial",
+          "techniqueLabel": "Entrenamiento en aceptación/expansión experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Prácticas de aceptación y expansión que entrenan permanecer con emociones difíciles sin evitarlas.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_expansion_emocional",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_expansion_emocional",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Ejercicios de expansión para abrir espacio a emociones intensas en lugar de luchar contra ellas.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "emotion-focused-therapy-greenberg-1990",
+          "tecnicaId": "p_eft_tolerancia_emocional",
+          "modelId": "emotion-focused-therapy-greenberg-1990",
+          "techniqueId": "p_eft_tolerancia_emocional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Entrenamiento para sostener y explorar emociones difíciles dentro de la sesión terapéutica.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "emotion-focused-therapy-greenberg-1990",
+          "tecnicaId": "p_eft_evocacion_emocional",
+          "modelId": "emotion-focused-therapy-greenberg-1990",
+          "techniqueId": "p_eft_evocacion_emocional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Evocación y profundización de emociones para que puedan ser plenamente experimentadas.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-exposicion-1960",
+          "tecnicaId": "p_exposicion_emocional",
+          "modelId": "terapia-exposicion-1960",
+          "techniqueId": "p_exposicion_emocional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exposición directa a emociones temidas para aumentar tolerancia y reducir evitación.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-dialectico-conductual-linehan-1993",
+          "tecnicaId": "p_dbt_distress_tolerance",
+          "modelId": "terapia-dialectico-conductual-linehan-1993",
+          "techniqueId": "p_dbt_distress_tolerance",
+          "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+          "modelLabel": "Terapia dialéctico–conductual (DBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Entrenamiento explícito en tolerar estados emocionales intensos sin conductas impulsivas o evitativas.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-dialectico-conductual-linehan-1993.json"
+        },
+        {
+          "modeloId": "focusing-gendlin-1978",
+          "tecnicaId": "p_focusing_permanecer_sensacion",
+          "modelId": "focusing-gendlin-1978",
+          "techniqueId": "p_focusing_permanecer_sensacion",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Focusing entrena permanecer con la sensación sentida (felt sense) sin interrumpirla.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "aedp-fosha-2000",
+          "tecnicaId": "p_aedp_staying_with_emotion",
+          "modelId": "aedp-fosha-2000",
+          "techniqueId": "p_aedp_staying_with_emotion",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "AEDP enfatiza permanecer con emociones intensas hasta que puedan transformarse y reorganizar la experiencia.",
+          "sourceFile": null
+        }
+      ]
+    },
     "buscar-excepciones-al-problema": {
       "id": "buscar-excepciones-al-problema",
       "label": "Buscar excepciones al problema",
@@ -11436,6 +11803,9 @@
     }
   },
   "byCategoria": {
+    "Exposición y procesamiento emocional": [
+      "aumentar-tolerancia-emocional"
+    ],
     "Excepciones, variación y recursos": [
       "buscar-excepciones-al-problema"
     ],
@@ -11480,6 +11850,136 @@
     ]
   },
   "byModeloId": {
+    "act-hayes-strosahl-wilson-1999": [
+      {
+        "isomorfismoId": "aumentar-tolerancia-emocional",
+        "isomorfismoLabel": "Aumentar tolerancia emocional",
+        "categoria": "Exposición y procesamiento emocional",
+        "tecnicaId": "p_act_aceptacion",
+        "tecnicaLabel": "Entrenamiento en aceptación/expansión experiencial",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "identificar-funcion-del-sintoma",
+        "isomorfismoLabel": "Identificar la función del síntoma",
+        "categoria": "Función y mantenimiento del problema",
+        "tecnicaId": "p_act_evitacion_experiencial",
+        "tecnicaLabel": "Análisis explícito de evitación experiencial",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "observar-pensamientos-como-eventos-mentales",
+        "isomorfismoLabel": "Observar pensamientos como eventos mentales",
+        "categoria": "Defusión y descentramiento cognitivo",
+        "tecnicaId": "p_act_defusion",
+        "tecnicaLabel": "Entrenamiento estructurado en defusión cognitiva",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "observar-pensamientos-como-eventos-mentales",
+        "isomorfismoLabel": "Observar pensamientos como eventos mentales",
+        "categoria": "Defusión y descentramiento cognitivo",
+        "tecnicaId": "m_act_estoy_teniendo_el_pensamiento",
+        "tecnicaLabel": "Etiqueta metacognitiva básica",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "observar-pensamientos-como-eventos-mentales",
+        "isomorfismoLabel": "Observar pensamientos como eventos mentales",
+        "categoria": "Defusión y descentramiento cognitivo",
+        "tecnicaId": "m_act_repeticion_palabra",
+        "tecnicaLabel": "Repetición rápida hasta pérdida de significado",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "observar-pensamientos-como-eventos-mentales",
+        "isomorfismoLabel": "Observar pensamientos como eventos mentales",
+        "categoria": "Defusión y descentramiento cognitivo",
+        "tecnicaId": "m_act_nombre_critico",
+        "tecnicaLabel": "Defusión del crítico interno mediante externalización",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "tecnicaId": "m_act_hacia_contra",
+        "tecnicaLabel": "Pregunta hacia o contra valores",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "resolver-ambivalencia",
+        "isomorfismoLabel": "Resolver ambivalencia",
+        "categoria": "Motivación, conflicto y toma de decisiones",
+        "tecnicaId": "p_act_creativa_desesperanza",
+        "tecnicaLabel": "Creativa desesperanza (revisión de la agenda de control)",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "resolver-ambivalencia",
+        "isomorfismoLabel": "Resolver ambivalencia",
+        "categoria": "Motivación, conflicto y toma de decisiones",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "resolver-ambivalencia",
+        "isomorfismoLabel": "Resolver ambivalencia",
+        "categoria": "Motivación, conflicto y toma de decisiones",
+        "tecnicaId": "p_act_matriz",
+        "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "resolver-ambivalencia",
+        "isomorfismoLabel": "Resolver ambivalencia",
+        "categoria": "Motivación, conflicto y toma de decisiones",
+        "tecnicaId": "m_act_hacia_contra",
+        "tecnicaLabel": "Pregunta hacia o contra valores",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "tecnicaId": "p_act_accion_comprometida",
+        "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "tecnicaId": "p_act_matriz",
+        "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "tecnicaId": "m_act_hacia_contra",
+        "tecnicaLabel": "Pregunta hacia o contra valores",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "terapia-centrada-soluciones-1982": [
       {
         "isomorfismoId": "buscar-excepciones-al-problema",
@@ -11852,128 +12352,6 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
-    "act-hayes-strosahl-wilson-1999": [
-      {
-        "isomorfismoId": "identificar-funcion-del-sintoma",
-        "isomorfismoLabel": "Identificar la función del síntoma",
-        "categoria": "Función y mantenimiento del problema",
-        "tecnicaId": "p_act_evitacion_experiencial",
-        "tecnicaLabel": "Análisis explícito de evitación experiencial",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "observar-pensamientos-como-eventos-mentales",
-        "isomorfismoLabel": "Observar pensamientos como eventos mentales",
-        "categoria": "Defusión y descentramiento cognitivo",
-        "tecnicaId": "p_act_defusion",
-        "tecnicaLabel": "Entrenamiento estructurado en defusión cognitiva",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "observar-pensamientos-como-eventos-mentales",
-        "isomorfismoLabel": "Observar pensamientos como eventos mentales",
-        "categoria": "Defusión y descentramiento cognitivo",
-        "tecnicaId": "m_act_estoy_teniendo_el_pensamiento",
-        "tecnicaLabel": "Etiqueta metacognitiva básica",
-        "tecnicaTipo": "micro"
-      },
-      {
-        "isomorfismoId": "observar-pensamientos-como-eventos-mentales",
-        "isomorfismoLabel": "Observar pensamientos como eventos mentales",
-        "categoria": "Defusión y descentramiento cognitivo",
-        "tecnicaId": "m_act_repeticion_palabra",
-        "tecnicaLabel": "Repetición rápida hasta pérdida de significado",
-        "tecnicaTipo": "micro"
-      },
-      {
-        "isomorfismoId": "observar-pensamientos-como-eventos-mentales",
-        "isomorfismoLabel": "Observar pensamientos como eventos mentales",
-        "categoria": "Defusión y descentramiento cognitivo",
-        "tecnicaId": "m_act_nombre_critico",
-        "tecnicaLabel": "Defusión del crítico interno mediante externalización",
-        "tecnicaTipo": "micro"
-      },
-      {
-        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
-        "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección de futuro, motivación y dirección",
-        "tecnicaId": "p_act_valores",
-        "tecnicaLabel": "Clarificación estructurada de valores",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
-        "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección de futuro, motivación y dirección",
-        "tecnicaId": "m_act_hacia_contra",
-        "tecnicaLabel": "Pregunta hacia o contra valores",
-        "tecnicaTipo": "micro"
-      },
-      {
-        "isomorfismoId": "resolver-ambivalencia",
-        "isomorfismoLabel": "Resolver ambivalencia",
-        "categoria": "Motivación, conflicto y toma de decisiones",
-        "tecnicaId": "p_act_creativa_desesperanza",
-        "tecnicaLabel": "Creativa desesperanza (revisión de la agenda de control)",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "resolver-ambivalencia",
-        "isomorfismoLabel": "Resolver ambivalencia",
-        "categoria": "Motivación, conflicto y toma de decisiones",
-        "tecnicaId": "p_act_valores",
-        "tecnicaLabel": "Clarificación estructurada de valores",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "resolver-ambivalencia",
-        "isomorfismoLabel": "Resolver ambivalencia",
-        "categoria": "Motivación, conflicto y toma de decisiones",
-        "tecnicaId": "p_act_matriz",
-        "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "resolver-ambivalencia",
-        "isomorfismoLabel": "Resolver ambivalencia",
-        "categoria": "Motivación, conflicto y toma de decisiones",
-        "tecnicaId": "m_act_hacia_contra",
-        "tecnicaLabel": "Pregunta hacia o contra valores",
-        "tecnicaTipo": "micro"
-      },
-      {
-        "isomorfismoId": "traducir-valores-en-accion",
-        "isomorfismoLabel": "Traducir valores en acción",
-        "categoria": "Acción guiada por valores",
-        "tecnicaId": "p_act_accion_comprometida",
-        "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "traducir-valores-en-accion",
-        "isomorfismoLabel": "Traducir valores en acción",
-        "categoria": "Acción guiada por valores",
-        "tecnicaId": "p_act_valores",
-        "tecnicaLabel": "Clarificación estructurada de valores",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "traducir-valores-en-accion",
-        "isomorfismoLabel": "Traducir valores en acción",
-        "categoria": "Acción guiada por valores",
-        "tecnicaId": "p_act_matriz",
-        "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "traducir-valores-en-accion",
-        "isomorfismoLabel": "Traducir valores en acción",
-        "categoria": "Acción guiada por valores",
-        "tecnicaId": "m_act_hacia_contra",
-        "tecnicaLabel": "Pregunta hacia o contra valores",
-        "tecnicaTipo": "micro"
-      }
-    ],
     "psicologia-individual-adler": [
       {
         "isomorfismoId": "nombrar-el-problema",
@@ -12336,6 +12714,18 @@
     ]
   },
   "byTecnicaId": {
+    "p_act_aceptacion": [
+      {
+        "isomorfismoId": "aumentar-tolerancia-emocional",
+        "isomorfismoLabel": "Aumentar tolerancia emocional",
+        "categoria": "Exposición y procesamiento emocional",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_aceptacion",
+        "tecnicaLabel": "Entrenamiento en aceptación/expansión experiencial",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "p_sfbt_exploracion_excepciones": [
       {
         "isomorfismoId": "buscar-excepciones-al-problema",
@@ -13508,6 +13898,18 @@
     ]
   },
   "byModelTechniqueId": {
+    "act-hayes-strosahl-wilson-1999::p_act_aceptacion": [
+      {
+        "isomorfismoId": "aumentar-tolerancia-emocional",
+        "isomorfismoLabel": "Aumentar tolerancia emocional",
+        "categoria": "Exposición y procesamiento emocional",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_aceptacion",
+        "tecnicaLabel": "Entrenamiento en aceptación/expansión experiencial",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "terapia-centrada-soluciones-1982::p_sfbt_exploracion_excepciones": [
       {
         "isomorfismoId": "buscar-excepciones-al-problema",
@@ -14680,11 +15082,11 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 14,
-    "totalEntries": 157,
-    "totalOk": 99,
-    "totalFaltaId": 16,
-    "totalFaltaModelo": 22,
+    "totalIsomorfismos": 15,
+    "totalEntries": 165,
+    "totalOk": 100,
+    "totalFaltaId": 18,
+    "totalFaltaModelo": 27,
     "totalDudoso": 0,
     "totalDescartado": 0
   }

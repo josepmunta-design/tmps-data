@@ -1,6 +1,22 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-14T11:26:08.977Z
+Generado: 2026-03-14T11:29:32.952Z
+
+## Aumentar tolerancia emocional
+
+- ID: `aumentar-tolerancia-emocional`
+- Categoría: Exposición y procesamiento emocional
+- Archivo fuente: `data/indices/isomorfismos/fuente/aumentar-tolerancia-emocional.json`
+- Entradas: 8
+
+- Terapia de Aceptación y Compromiso (ACT) — Entrenamiento en aceptación/expansión experiencial [ok]
+- Terapia de Aceptación y Compromiso (ACT) — p_act_expansion_emocional [falta_id]
+- emotion-focused-therapy-greenberg-1990 — p_eft_tolerancia_emocional [falta_modelo]
+- emotion-focused-therapy-greenberg-1990 — p_eft_evocacion_emocional [falta_modelo]
+- terapia-exposicion-1960 — p_exposicion_emocional [falta_modelo]
+- Terapia dialéctico–conductual (DBT) — p_dbt_distress_tolerance [falta_id]
+- focusing-gendlin-1978 — p_focusing_permanecer_sensacion [falta_modelo]
+- aedp-fosha-2000 — p_aedp_staying_with_emotion [falta_modelo]
 
 ## Buscar excepciones al problema
 
