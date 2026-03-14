@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-13T12:25:36.464Z
+Generado: 2026-03-14T11:12:52.028Z
 
 ## Buscar excepciones al problema
 
@@ -201,3 +201,21 @@ Generado: 2026-03-13T12:25:36.464Z
 - Terapia de Aceptación y Compromiso (ACT) — Clarificación estructurada de valores [ok]
 - Terapia de Aceptación y Compromiso (ACT) — Pregunta hacia o contra valores [ok]
 - Terapia de Aceptación y Compromiso (ACT) — Plan de acción comprometida con exposición experiencial [parcial]
+
+## Usar la relación terapéutica como muestra
+
+- ID: `usar-la-relacion-terapeutica-como-muestra`
+- Categoría: Relación terapéutica como laboratorio clínico
+- Archivo fuente: `data/indices/isomorfismos/fuente/usar-la-relacion-terapeutica-como-muestra.json`
+- Entradas: 10
+
+- Psicoanálisis clásico — Trabajo con la transferencia [ok]
+- TFP – Transference-Focused Psychotherapy — Análisis sistemático de la transferencia [ok]
+- TFP – Transference-Focused Psychotherapy — Clarificación [ok]
+- TFP – Transference-Focused Psychotherapy — Señalar la activación transferencial inmediata [ok]
+- Psicoanálisis relacional — Análisis relacional de la transferencia [ok]
+- Psicoanálisis relacional — Trabajo con rupturas y reparaciones relacionales [ok]
+- Psicoanálisis relacional — Nombrar el aquí-y-ahora relacional [ok]
+- Psicoanálisis relacional — Señalar un cambio en la sintonía [ok]
+- Psicoanálisis relacional — Reconocer un error terapéutico [ok]
+- Terapia enfocada en las emociones — Micro-validación correctiva [parcial]
