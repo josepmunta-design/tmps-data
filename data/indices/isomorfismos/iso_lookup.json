@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-14T11:12:52.028Z",
+    "generatedAt": "2026-03-14T11:15:52.286Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -1981,6 +1981,135 @@
       ]
     },
     {
+      "id": "resolver-ambivalencia",
+      "label": "Resolver ambivalencia",
+      "definicion": "Explorar simultáneamente los argumentos a favor y en contra del cambio, ayudando al paciente a hacer explícitos los beneficios y costes de mantener el patrón actual frente a modificarlo, de modo que pueda clarificar su posición y avanzar hacia una decisión autónoma.",
+      "categoria": "Toma de decisiones y motivación para el cambio",
+      "tags": [
+        "ambivalencia",
+        "cambio",
+        "motivacion",
+        "balance decisional",
+        "pros y contras",
+        "decision"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/resolver-ambivalencia.json",
+      "entries": [
+        {
+          "modeloId": "motivational-interviewing-miller-rollnick-1991",
+          "tecnicaId": "p_mi_decisional_balance",
+          "modelId": "motivational-interviewing-miller-rollnick-1991",
+          "techniqueId": "p_mi_decisional_balance",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Correspondencia directa: exploración sistemática de ventajas y desventajas del cambio frente al mantenimiento del comportamiento actual.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "motivational-interviewing-miller-rollnick-1991",
+          "tecnicaId": "m_mi_change_talk",
+          "modelId": "motivational-interviewing-miller-rollnick-1991",
+          "techniqueId": "m_mi_change_talk",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Micro central: evocación y refuerzo del discurso de cambio frente al sustain talk para resolver la ambivalencia.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+          "tecnicaId": "p_cbt_pros_contras",
+          "modelId": "terapia-cognitivo-conductual-estandar-1980",
+          "techniqueId": "p_cbt_pros_contras",
+          "modeloLabel": "Terapia cognitivo-conductual estándar",
+          "modelLabel": "Terapia cognitivo-conductual estándar",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Análisis cognitivo clásico de ventajas y desventajas de diferentes cursos de acción.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_creative_hopelessness",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_creative_hopelessness",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Explora el coste de continuar con estrategias de evitación frente a actuar en dirección a valores.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_values_clarification",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_values_clarification",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Ayuda a resolver ambivalencia alineando decisiones con valores personales.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "k1kelly55",
+          "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
+          "modelId": "k1kelly55",
+          "techniqueId": "p_kelly_ensayo_nuevas_anticipaciones",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "modelLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
+          "techniqueLabel": "Ensayo conductual de nuevas anticipaciones",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "La ambivalencia se explora como competencia entre anticipaciones posibles del sistema de constructos.",
+          "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        },
+        {
+          "modeloId": "terapia-dialectico-conductual-linehan-1993",
+          "tecnicaId": "p_dbt_analisis_dialectico",
+          "modelId": "terapia-dialectico-conductual-linehan-1993",
+          "techniqueId": "p_dbt_analisis_dialectico",
+          "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+          "modelLabel": "Terapia dialéctico–conductual (DBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "La dialéctica permite sostener simultáneamente polos opuestos hasta integrar una posición más compleja.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-dialectico-conductual-linehan-1993.json"
+        }
+      ]
+    },
+    {
       "id": "usar-la-relacion-terapeutica-como-muestra",
       "label": "Usar la relación terapéutica como muestra",
       "definicion": "Analizar en la relación terapéutica, y especialmente en el aquí y ahora de la sesión, los patrones relacionales, expectativas, afectos, atribuciones y modos de respuesta del paciente, utilizándolos como muestra viva del funcionamiento interpersonal e intrapsíquico.",
@@ -3881,6 +4010,50 @@
       ]
     },
     {
+      "id": "resolver-ambivalencia",
+      "label": "Resolver ambivalencia",
+      "categoria": "Toma de decisiones y motivación para el cambio",
+      "definicion": "Explorar simultáneamente los argumentos a favor y en contra del cambio, ayudando al paciente a hacer explícitos los beneficios y costes de mantener el patrón actual frente a modificarlo, de modo que pueda clarificar su posición y avanzar hacia una decisión autónoma.",
+      "tags": [
+        "ambivalencia",
+        "cambio",
+        "motivacion",
+        "balance decisional",
+        "pros y contras",
+        "decision"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "resolver-ambivalencia",
+          "isomorfismoLabel": "Resolver ambivalencia",
+          "categoria": "Toma de decisiones y motivación para el cambio",
+          "definicion": "Explorar simultáneamente los argumentos a favor y en contra del cambio, ayudando al paciente a hacer explícitos los beneficios y costes de mantener el patrón actual frente a modificarlo, de modo que pueda clarificar su posición y avanzar hacia una decisión autónoma.",
+          "tags": [
+            "ambivalencia",
+            "cambio",
+            "motivacion",
+            "balance decisional",
+            "pros y contras",
+            "decision"
+          ],
+          "modeloId": "k1kelly55",
+          "modelId": "k1kelly55",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "modelLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
+          "techniqueId": "p_kelly_ensayo_nuevas_anticipaciones",
+          "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
+          "techniqueLabel": "Ensayo conductual de nuevas anticipaciones",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "La ambivalencia se explora como competencia entre anticipaciones posibles del sistema de constructos.",
+          "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        }
+      ]
+    },
+    {
       "id": "usar-la-relacion-terapeutica-como-muestra",
       "label": "Usar la relación terapéutica como muestra",
       "categoria": "Relación terapéutica como laboratorio clínico",
@@ -5712,6 +5885,34 @@
       "estado": "ok",
       "nota": "Microintervención muy congruente: discrimina si una acción acerca o aleja de la persona que se quiere ser cuando el miedo deja de mandar.",
       "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+    },
+    {
+      "isomorfismoId": "resolver-ambivalencia",
+      "isomorfismoLabel": "Resolver ambivalencia",
+      "categoria": "Toma de decisiones y motivación para el cambio",
+      "definicion": "Explorar simultáneamente los argumentos a favor y en contra del cambio, ayudando al paciente a hacer explícitos los beneficios y costes de mantener el patrón actual frente a modificarlo, de modo que pueda clarificar su posición y avanzar hacia una decisión autónoma.",
+      "tags": [
+        "ambivalencia",
+        "cambio",
+        "motivacion",
+        "balance decisional",
+        "pros y contras",
+        "decision"
+      ],
+      "modeloId": "k1kelly55",
+      "modelId": "k1kelly55",
+      "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+      "modelLabel": "Teoría de los Constructos Personales (PCP)",
+      "grupo": "Constructivista",
+      "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
+      "techniqueId": "p_kelly_ensayo_nuevas_anticipaciones",
+      "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
+      "techniqueLabel": "Ensayo conductual de nuevas anticipaciones",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "La ambivalencia se explora como competencia entre anticipaciones posibles del sistema de constructos.",
+      "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
     },
     {
       "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
@@ -7949,6 +8150,135 @@
         }
       ]
     },
+    "resolver-ambivalencia": {
+      "id": "resolver-ambivalencia",
+      "label": "Resolver ambivalencia",
+      "definicion": "Explorar simultáneamente los argumentos a favor y en contra del cambio, ayudando al paciente a hacer explícitos los beneficios y costes de mantener el patrón actual frente a modificarlo, de modo que pueda clarificar su posición y avanzar hacia una decisión autónoma.",
+      "categoria": "Toma de decisiones y motivación para el cambio",
+      "tags": [
+        "ambivalencia",
+        "cambio",
+        "motivacion",
+        "balance decisional",
+        "pros y contras",
+        "decision"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/resolver-ambivalencia.json",
+      "entries": [
+        {
+          "modeloId": "motivational-interviewing-miller-rollnick-1991",
+          "tecnicaId": "p_mi_decisional_balance",
+          "modelId": "motivational-interviewing-miller-rollnick-1991",
+          "techniqueId": "p_mi_decisional_balance",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Correspondencia directa: exploración sistemática de ventajas y desventajas del cambio frente al mantenimiento del comportamiento actual.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "motivational-interviewing-miller-rollnick-1991",
+          "tecnicaId": "m_mi_change_talk",
+          "modelId": "motivational-interviewing-miller-rollnick-1991",
+          "techniqueId": "m_mi_change_talk",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Micro central: evocación y refuerzo del discurso de cambio frente al sustain talk para resolver la ambivalencia.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+          "tecnicaId": "p_cbt_pros_contras",
+          "modelId": "terapia-cognitivo-conductual-estandar-1980",
+          "techniqueId": "p_cbt_pros_contras",
+          "modeloLabel": "Terapia cognitivo-conductual estándar",
+          "modelLabel": "Terapia cognitivo-conductual estándar",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Análisis cognitivo clásico de ventajas y desventajas de diferentes cursos de acción.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_creative_hopelessness",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_creative_hopelessness",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Explora el coste de continuar con estrategias de evitación frente a actuar en dirección a valores.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_values_clarification",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_values_clarification",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Ayuda a resolver ambivalencia alineando decisiones con valores personales.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "k1kelly55",
+          "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
+          "modelId": "k1kelly55",
+          "techniqueId": "p_kelly_ensayo_nuevas_anticipaciones",
+          "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+          "modelLabel": "Teoría de los Constructos Personales (PCP)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
+          "techniqueLabel": "Ensayo conductual de nuevas anticipaciones",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "La ambivalencia se explora como competencia entre anticipaciones posibles del sistema de constructos.",
+          "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        },
+        {
+          "modeloId": "terapia-dialectico-conductual-linehan-1993",
+          "tecnicaId": "p_dbt_analisis_dialectico",
+          "modelId": "terapia-dialectico-conductual-linehan-1993",
+          "techniqueId": "p_dbt_analisis_dialectico",
+          "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+          "modelLabel": "Terapia dialéctico–conductual (DBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "La dialéctica permite sostener simultáneamente polos opuestos hasta integrar una posición más compleja.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-dialectico-conductual-linehan-1993.json"
+        }
+      ]
+    },
     "usar-la-relacion-terapeutica-como-muestra": {
       "id": "usar-la-relacion-terapeutica-como-muestra",
       "label": "Usar la relación terapéutica como muestra",
@@ -8162,6 +8492,9 @@
     "Proyección de futuro, motivación y dirección": [
       "proyectar-la-vida-sin-el-problema"
     ],
+    "Toma de decisiones y motivación para el cambio": [
+      "resolver-ambivalencia"
+    ],
     "Relación terapéutica como laboratorio clínico": [
       "usar-la-relacion-terapeutica-como-muestra"
     ]
@@ -8240,6 +8573,14 @@
         "isomorfismoId": "disenar-experimentos-conductuales",
         "isomorfismoLabel": "Diseñar experimentos conductuales",
         "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
+        "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "resolver-ambivalencia",
+        "isomorfismoLabel": "Resolver ambivalencia",
+        "categoria": "Toma de decisiones y motivación para el cambio",
         "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
         "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
         "tecnicaTipo": "procedimiento"
@@ -8930,6 +9271,16 @@
         "isomorfismoId": "disenar-experimentos-conductuales",
         "isomorfismoLabel": "Diseñar experimentos conductuales",
         "categoria": "Aprendizaje experiencial y testeo de hipótesis",
+        "modeloId": "k1kelly55",
+        "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+        "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
+        "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "resolver-ambivalencia",
+        "isomorfismoLabel": "Resolver ambivalencia",
+        "categoria": "Toma de decisiones y motivación para el cambio",
         "modeloId": "k1kelly55",
         "modeloLabel": "Teoría de los Constructos Personales (PCP)",
         "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
@@ -9717,6 +10068,16 @@
         "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
         "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "resolver-ambivalencia",
+        "isomorfismoLabel": "Resolver ambivalencia",
+        "categoria": "Toma de decisiones y motivación para el cambio",
+        "modeloId": "k1kelly55",
+        "modeloLabel": "Teoría de los Constructos Personales (PCP)",
+        "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
+        "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "unified-protocol-up-barlow-2011::p_up_exposicion_interoceptiva": [
@@ -10309,11 +10670,11 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 12,
-    "totalEntries": 122,
-    "totalOk": 65,
-    "totalFaltaId": 16,
-    "totalFaltaModelo": 21,
+    "totalIsomorfismos": 13,
+    "totalEntries": 129,
+    "totalOk": 66,
+    "totalFaltaId": 20,
+    "totalFaltaModelo": 23,
     "totalDudoso": 0,
     "totalDescartado": 0
   }

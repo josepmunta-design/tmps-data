@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-14T11:12:52.028Z
+Generado: 2026-03-14T11:15:52.286Z
 
 ## Buscar excepciones al problema
 
@@ -201,6 +201,21 @@ Generado: 2026-03-14T11:12:52.028Z
 - Terapia de Aceptación y Compromiso (ACT) — Clarificación estructurada de valores [ok]
 - Terapia de Aceptación y Compromiso (ACT) — Pregunta hacia o contra valores [ok]
 - Terapia de Aceptación y Compromiso (ACT) — Plan de acción comprometida con exposición experiencial [parcial]
+
+## Resolver ambivalencia
+
+- ID: `resolver-ambivalencia`
+- Categoría: Toma de decisiones y motivación para el cambio
+- Archivo fuente: `data/indices/isomorfismos/fuente/resolver-ambivalencia.json`
+- Entradas: 7
+
+- motivational-interviewing-miller-rollnick-1991 — p_mi_decisional_balance [falta_modelo]
+- motivational-interviewing-miller-rollnick-1991 — m_mi_change_talk [falta_modelo]
+- Terapia cognitivo-conductual estándar — p_cbt_pros_contras [falta_id]
+- Terapia de Aceptación y Compromiso (ACT) — p_act_creative_hopelessness [falta_id]
+- Terapia de Aceptación y Compromiso (ACT) — p_act_values_clarification [falta_id]
+- Teoría de los Constructos Personales (PCP) — Ensayo conductual de nuevas anticipaciones [ok]
+- Terapia dialéctico–conductual (DBT) — p_dbt_analisis_dialectico [falta_id]
 
 ## Usar la relación terapéutica como muestra
 
