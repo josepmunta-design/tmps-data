@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-14T11:22:06.198Z
+Generado: 2026-03-14T11:26:08.977Z
 
 ## Buscar excepciones al problema
 
@@ -238,6 +238,20 @@ Generado: 2026-03-14T11:22:06.198Z
 - Terapia dialéctico–conductual (DBT) — Estrategias dialécticas (sí/y, síntesis y flexibilización de polaridades) [ok]
 - Terapia de Solución de Problemas (PST) — Toma de decisiones sistemática (análisis de consecuencias y factibilidad) [ok]
 - Terapia de Solución de Problemas (PST) — Listar pros y contras inmediatos [ok]
+
+## Traducir valores en acción
+
+- ID: `traducir-valores-en-accion`
+- Categoría: Acción guiada por valores
+- Archivo fuente: `data/indices/isomorfismos/fuente/traducir-valores-en-accion.json`
+- Entradas: 6
+
+- Terapia de Aceptación y Compromiso (ACT) — Plan de acción comprometida con exposición experiencial [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Clarificación estructurada de valores [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Matriz ACT (interno/externo × hacia/contra valores) [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Pregunta hacia o contra valores [ok]
+- logoterapia-frankl-1959 — p_frankl_realizacion_valores [falta_modelo]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Resolver ambivalencia con valores (clarificación orientada a elección) [ok]
 
 ## Usar la relación terapéutica como muestra
 

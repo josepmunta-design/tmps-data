@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-14T11:22:06.198Z",
+    "generatedAt": "2026-03-14T11:26:08.977Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -2461,6 +2461,119 @@
           "estado": "ok",
           "nota": "Micro clásica y muy afín al balance decisional.",
           "sourceFile": "data/Core/modelos/cognitivo/pst-solucion-problemas-dzurilla-goldfried-1971.json"
+        }
+      ]
+    },
+    {
+      "id": "traducir-valores-en-accion",
+      "label": "Traducir valores en acción",
+      "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+      "categoria": "Acción guiada por valores",
+      "tags": [
+        "valores",
+        "accion comprometida",
+        "direccion vital",
+        "coherencia personal",
+        "sentido",
+        "compromiso"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/traducir-valores-en-accion.json",
+      "entries": [
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_accion_comprometida",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_accion_comprometida",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+          "techniqueLabel": "Plan de acción comprometida con exposición experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa: transformar valores en compromisos conductuales sostenidos.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_valores",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_valores",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Clarificación estructurada de valores",
+          "techniqueLabel": "Clarificación estructurada de valores",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Identificación explícita de valores que posteriormente se traducen en acciones.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_matriz",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_matriz",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+          "techniqueLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Organiza conductas hacia valores frente a conductas de evitación.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_hacia_contra",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_hacia_contra",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Pregunta hacia o contra valores",
+          "techniqueLabel": "Pregunta hacia o contra valores",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro para discriminar si una conducta concreta se dirige hacia valores o se aleja de ellos.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "logoterapia-frankl-1959",
+          "tecnicaId": "p_frankl_realizacion_valores",
+          "modelId": "logoterapia-frankl-1959",
+          "techniqueId": "p_frankl_realizacion_valores",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "La logoterapia propone realizar valores a través de acciones concretas que expresan sentido.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "entrevista-motivacional-1983",
+          "tecnicaId": "p_mi_valores_eleccion",
+          "modelId": "entrevista-motivacional-1983",
+          "techniqueId": "p_mi_valores_eleccion",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "techniqueLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Explora valores personales y facilita decisiones de cambio coherentes con ellos.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
         }
       ]
     },
@@ -5283,6 +5396,162 @@
       ]
     },
     {
+      "id": "traducir-valores-en-accion",
+      "label": "Traducir valores en acción",
+      "categoria": "Acción guiada por valores",
+      "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+      "tags": [
+        "valores",
+        "accion comprometida",
+        "direccion vital",
+        "coherencia personal",
+        "sentido",
+        "compromiso"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "traducir-valores-en-accion",
+          "isomorfismoLabel": "Traducir valores en acción",
+          "categoria": "Acción guiada por valores",
+          "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+          "tags": [
+            "valores",
+            "accion comprometida",
+            "direccion vital",
+            "coherencia personal",
+            "sentido",
+            "compromiso"
+          ],
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_act_accion_comprometida",
+          "techniqueId": "p_act_accion_comprometida",
+          "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+          "techniqueLabel": "Plan de acción comprometida con exposición experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa: transformar valores en compromisos conductuales sostenidos.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "isomorfismoId": "traducir-valores-en-accion",
+          "isomorfismoLabel": "Traducir valores en acción",
+          "categoria": "Acción guiada por valores",
+          "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+          "tags": [
+            "valores",
+            "accion comprometida",
+            "direccion vital",
+            "coherencia personal",
+            "sentido",
+            "compromiso"
+          ],
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_act_valores",
+          "techniqueId": "p_act_valores",
+          "tecnicaLabel": "Clarificación estructurada de valores",
+          "techniqueLabel": "Clarificación estructurada de valores",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Identificación explícita de valores que posteriormente se traducen en acciones.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "isomorfismoId": "traducir-valores-en-accion",
+          "isomorfismoLabel": "Traducir valores en acción",
+          "categoria": "Acción guiada por valores",
+          "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+          "tags": [
+            "valores",
+            "accion comprometida",
+            "direccion vital",
+            "coherencia personal",
+            "sentido",
+            "compromiso"
+          ],
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_act_matriz",
+          "techniqueId": "p_act_matriz",
+          "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+          "techniqueLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Organiza conductas hacia valores frente a conductas de evitación.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "isomorfismoId": "traducir-valores-en-accion",
+          "isomorfismoLabel": "Traducir valores en acción",
+          "categoria": "Acción guiada por valores",
+          "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+          "tags": [
+            "valores",
+            "accion comprometida",
+            "direccion vital",
+            "coherencia personal",
+            "sentido",
+            "compromiso"
+          ],
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "m_act_hacia_contra",
+          "techniqueId": "m_act_hacia_contra",
+          "tecnicaLabel": "Pregunta hacia o contra valores",
+          "techniqueLabel": "Pregunta hacia o contra valores",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro para discriminar si una conducta concreta se dirige hacia valores o se aleja de ellos.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "isomorfismoId": "traducir-valores-en-accion",
+          "isomorfismoLabel": "Traducir valores en acción",
+          "categoria": "Acción guiada por valores",
+          "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+          "tags": [
+            "valores",
+            "accion comprometida",
+            "direccion vital",
+            "coherencia personal",
+            "sentido",
+            "compromiso"
+          ],
+          "modeloId": "entrevista-motivacional-1983",
+          "modelId": "entrevista-motivacional-1983",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaId": "p_mi_valores_eleccion",
+          "techniqueId": "p_mi_valores_eleccion",
+          "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "techniqueLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Explora valores personales y facilita decisiones de cambio coherentes con ellos.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        }
+      ]
+    },
+    {
       "id": "usar-la-relacion-terapeutica-como-muestra",
       "label": "Usar la relación terapéutica como muestra",
       "categoria": "Relación terapéutica como laboratorio clínico",
@@ -8015,6 +8284,146 @@
       "sourceFile": "data/Core/modelos/cognitivo/pst-solucion-problemas-dzurilla-goldfried-1971.json"
     },
     {
+      "isomorfismoId": "traducir-valores-en-accion",
+      "isomorfismoLabel": "Traducir valores en acción",
+      "categoria": "Acción guiada por valores",
+      "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+      "tags": [
+        "valores",
+        "accion comprometida",
+        "direccion vital",
+        "coherencia personal",
+        "sentido",
+        "compromiso"
+      ],
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_act_accion_comprometida",
+      "techniqueId": "p_act_accion_comprometida",
+      "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+      "techniqueLabel": "Plan de acción comprometida con exposición experiencial",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia directa: transformar valores en compromisos conductuales sostenidos.",
+      "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+    },
+    {
+      "isomorfismoId": "traducir-valores-en-accion",
+      "isomorfismoLabel": "Traducir valores en acción",
+      "categoria": "Acción guiada por valores",
+      "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+      "tags": [
+        "valores",
+        "accion comprometida",
+        "direccion vital",
+        "coherencia personal",
+        "sentido",
+        "compromiso"
+      ],
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_act_valores",
+      "techniqueId": "p_act_valores",
+      "tecnicaLabel": "Clarificación estructurada de valores",
+      "techniqueLabel": "Clarificación estructurada de valores",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Identificación explícita de valores que posteriormente se traducen en acciones.",
+      "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+    },
+    {
+      "isomorfismoId": "traducir-valores-en-accion",
+      "isomorfismoLabel": "Traducir valores en acción",
+      "categoria": "Acción guiada por valores",
+      "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+      "tags": [
+        "valores",
+        "accion comprometida",
+        "direccion vital",
+        "coherencia personal",
+        "sentido",
+        "compromiso"
+      ],
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_act_matriz",
+      "techniqueId": "p_act_matriz",
+      "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+      "techniqueLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Organiza conductas hacia valores frente a conductas de evitación.",
+      "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+    },
+    {
+      "isomorfismoId": "traducir-valores-en-accion",
+      "isomorfismoLabel": "Traducir valores en acción",
+      "categoria": "Acción guiada por valores",
+      "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+      "tags": [
+        "valores",
+        "accion comprometida",
+        "direccion vital",
+        "coherencia personal",
+        "sentido",
+        "compromiso"
+      ],
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "m_act_hacia_contra",
+      "techniqueId": "m_act_hacia_contra",
+      "tecnicaLabel": "Pregunta hacia o contra valores",
+      "techniqueLabel": "Pregunta hacia o contra valores",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro para discriminar si una conducta concreta se dirige hacia valores o se aleja de ellos.",
+      "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+    },
+    {
+      "isomorfismoId": "traducir-valores-en-accion",
+      "isomorfismoLabel": "Traducir valores en acción",
+      "categoria": "Acción guiada por valores",
+      "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+      "tags": [
+        "valores",
+        "accion comprometida",
+        "direccion vital",
+        "coherencia personal",
+        "sentido",
+        "compromiso"
+      ],
+      "modeloId": "entrevista-motivacional-1983",
+      "modelId": "entrevista-motivacional-1983",
+      "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+      "grupo": "Humanista",
+      "tecnicaId": "p_mi_valores_eleccion",
+      "techniqueId": "p_mi_valores_eleccion",
+      "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+      "techniqueLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Explora valores personales y facilita decisiones de cambio coherentes con ellos.",
+      "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+    },
+    {
       "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
       "isomorfismoLabel": "Usar la relación terapéutica como muestra",
       "categoria": "Relación terapéutica como laboratorio clínico",
@@ -10734,6 +11143,119 @@
         }
       ]
     },
+    "traducir-valores-en-accion": {
+      "id": "traducir-valores-en-accion",
+      "label": "Traducir valores en acción",
+      "definicion": "Convertir valores personales o direcciones vitales en compromisos conductuales concretos, de modo que la persona actúe de forma coherente con aquello que considera importante.",
+      "categoria": "Acción guiada por valores",
+      "tags": [
+        "valores",
+        "accion comprometida",
+        "direccion vital",
+        "coherencia personal",
+        "sentido",
+        "compromiso"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/traducir-valores-en-accion.json",
+      "entries": [
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_accion_comprometida",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_accion_comprometida",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+          "techniqueLabel": "Plan de acción comprometida con exposición experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa: transformar valores en compromisos conductuales sostenidos.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_valores",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_valores",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Clarificación estructurada de valores",
+          "techniqueLabel": "Clarificación estructurada de valores",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Identificación explícita de valores que posteriormente se traducen en acciones.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_matriz",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_matriz",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+          "techniqueLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Organiza conductas hacia valores frente a conductas de evitación.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_hacia_contra",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_hacia_contra",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Pregunta hacia o contra valores",
+          "techniqueLabel": "Pregunta hacia o contra valores",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro para discriminar si una conducta concreta se dirige hacia valores o se aleja de ellos.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "logoterapia-frankl-1959",
+          "tecnicaId": "p_frankl_realizacion_valores",
+          "modelId": "logoterapia-frankl-1959",
+          "techniqueId": "p_frankl_realizacion_valores",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "La logoterapia propone realizar valores a través de acciones concretas que expresan sentido.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "entrevista-motivacional-1983",
+          "tecnicaId": "p_mi_valores_eleccion",
+          "modelId": "entrevista-motivacional-1983",
+          "techniqueId": "p_mi_valores_eleccion",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "techniqueLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Explora valores personales y facilita decisiones de cambio coherentes con ellos.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        }
+      ]
+    },
     "usar-la-relacion-terapeutica-como-muestra": {
       "id": "usar-la-relacion-terapeutica-como-muestra",
       "label": "Usar la relación terapéutica como muestra",
@@ -10949,6 +11471,9 @@
     ],
     "Motivación, conflicto y toma de decisiones": [
       "resolver-ambivalencia"
+    ],
+    "Acción guiada por valores": [
+      "traducir-valores-en-accion"
     ],
     "Relación terapéutica como laboratorio clínico": [
       "usar-la-relacion-terapeutica-como-muestra"
@@ -11415,6 +11940,38 @@
         "tecnicaId": "m_act_hacia_contra",
         "tecnicaLabel": "Pregunta hacia o contra valores",
         "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "tecnicaId": "p_act_accion_comprometida",
+        "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "tecnicaId": "p_act_matriz",
+        "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "tecnicaId": "m_act_hacia_contra",
+        "tecnicaLabel": "Pregunta hacia o contra valores",
+        "tecnicaTipo": "micro"
       }
     ],
     "psicologia-individual-adler": [
@@ -11635,6 +12192,14 @@
         "tecnicaId": "m_mi_evocar_razones",
         "tecnicaLabel": "Pregunta evocadora de razones (¿qué te preocupa de seguir igual?)",
         "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "tecnicaId": "p_mi_valores_eleccion",
+        "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "ttm_prochaska_diclemente": [
@@ -12447,6 +13012,16 @@
         "tecnicaId": "p_mi_valores_eleccion",
         "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "entrevista-motivacional-1983",
+        "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+        "tecnicaId": "p_mi_valores_eleccion",
+        "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "p_act_valores": [
@@ -12469,6 +13044,16 @@
         "tecnicaId": "p_act_valores",
         "tecnicaLabel": "Clarificación estructurada de valores",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "m_act_hacia_contra": [
@@ -12486,6 +13071,16 @@
         "isomorfismoId": "resolver-ambivalencia",
         "isomorfismoLabel": "Resolver ambivalencia",
         "categoria": "Motivación, conflicto y toma de decisiones",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "m_act_hacia_contra",
+        "tecnicaLabel": "Pregunta hacia o contra valores",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
         "modeloId": "act-hayes-strosahl-wilson-1999",
         "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
         "tecnicaId": "m_act_hacia_contra",
@@ -12743,6 +13338,16 @@
         "tecnicaId": "p_act_matriz",
         "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_matriz",
+        "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "p_dbt_estrategias_dialecticas": [
@@ -12779,6 +13384,18 @@
         "tecnicaId": "m_pst_pros_contras",
         "tecnicaLabel": "Listar pros y contras inmediatos",
         "tecnicaTipo": "micro"
+      }
+    ],
+    "p_act_accion_comprometida": [
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_accion_comprometida",
+        "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "p_freud_transferencia": [
@@ -13567,6 +14184,16 @@
         "tecnicaId": "p_mi_valores_eleccion",
         "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "entrevista-motivacional-1983",
+        "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+        "tecnicaId": "p_mi_valores_eleccion",
+        "tecnicaLabel": "Resolver ambivalencia con valores (clarificación orientada a elección)",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "act-hayes-strosahl-wilson-1999::p_act_valores": [
@@ -13589,6 +14216,16 @@
         "tecnicaId": "p_act_valores",
         "tecnicaLabel": "Clarificación estructurada de valores",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "act-hayes-strosahl-wilson-1999::m_act_hacia_contra": [
@@ -13606,6 +14243,16 @@
         "isomorfismoId": "resolver-ambivalencia",
         "isomorfismoLabel": "Resolver ambivalencia",
         "categoria": "Motivación, conflicto y toma de decisiones",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "m_act_hacia_contra",
+        "tecnicaLabel": "Pregunta hacia o contra valores",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
         "modeloId": "act-hayes-strosahl-wilson-1999",
         "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
         "tecnicaId": "m_act_hacia_contra",
@@ -13863,6 +14510,16 @@
         "tecnicaId": "p_act_matriz",
         "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
         "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_matriz",
+        "tecnicaLabel": "Matriz ACT (interno/externo × hacia/contra valores)",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "terapia-dialectico-conductual-linehan-1993::p_dbt_estrategias_dialecticas": [
@@ -13899,6 +14556,18 @@
         "tecnicaId": "m_pst_pros_contras",
         "tecnicaLabel": "Listar pros y contras inmediatos",
         "tecnicaTipo": "micro"
+      }
+    ],
+    "act-hayes-strosahl-wilson-1999::p_act_accion_comprometida": [
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_accion_comprometida",
+        "tecnicaLabel": "Plan de acción comprometida con exposición experiencial",
+        "tecnicaTipo": "procedimiento"
       }
     ],
     "psicoanalisis-clasico-freud::p_freud_transferencia": [
@@ -14011,11 +14680,11 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 13,
-    "totalEntries": 151,
-    "totalOk": 94,
+    "totalIsomorfismos": 14,
+    "totalEntries": 157,
+    "totalOk": 99,
     "totalFaltaId": 16,
-    "totalFaltaModelo": 21,
+    "totalFaltaModelo": 22,
     "totalDudoso": 0,
     "totalDescartado": 0
   }
