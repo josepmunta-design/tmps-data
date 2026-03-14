@@ -1,58 +1,193 @@
 {
   "id": "resolver-ambivalencia",
   "label": "Resolver ambivalencia",
-  "definicion": "Explorar simultáneamente los argumentos a favor y en contra del cambio, ayudando al paciente a hacer explícitos los beneficios y costes de mantener el patrón actual frente a modificarlo, de modo que pueda clarificar su posición y avanzar hacia una decisión autónoma.",
-  "categoria": "Toma de decisiones y motivación para el cambio",
+  "definicion": "Explorar simultáneamente los argumentos, significados, costes, beneficios y temores que sostienen tanto el deseo de cambiar como el deseo de mantener el patrón actual, para clarificar la posición del paciente y favorecer una decisión más consciente, viable e internamente coherente.",
+  "categoria": "Motivación, conflicto y toma de decisiones",
   "tags": [
     "ambivalencia",
     "cambio",
-    "motivacion",
     "balance decisional",
-    "pros y contras",
-    "decision"
+    "conflicto interno",
+    "dilema",
+    "valores",
+    "toma de decisiones",
+    "cambio conductual",
+    "polaridades"
   ],
   "links": [
     {
-      "modeloId": "motivational-interviewing-miller-rollnick-1991",
-      "tecnicaId": "p_mi_decisional_balance",
+      "modeloId": "entrevista-motivacional-1983",
+      "tecnicaId": "p_mi_balance_decisional",
       "estado": "ok",
-      "nota": "Correspondencia directa: exploración sistemática de ventajas y desventajas del cambio frente al mantenimiento del comportamiento actual."
+      "nota": "Correspondencia directa y prototípica del isomorfismo: explorar pros y contras de seguir igual y de cambiar."
     },
     {
-      "modeloId": "motivational-interviewing-miller-rollnick-1991",
-      "tecnicaId": "m_mi_change_talk",
+      "modeloId": "entrevista-motivacional-1983",
+      "tecnicaId": "p_mi_doble_cara",
       "estado": "ok",
-      "nota": "Micro central: evocación y refuerzo del discurso de cambio frente al sustain talk para resolver la ambivalencia."
+      "nota": "Muy precisa para sostener simultáneamente los dos polos de la ambivalencia sin empujar al paciente."
     },
     {
-      "modeloId": "terapia-cognitivo-conductual-estandar-1980",
-      "tecnicaId": "p_cbt_pros_contras",
-      "estado": "extra_repo",
-      "nota": "Análisis cognitivo clásico de ventajas y desventajas de diferentes cursos de acción."
+      "modeloId": "entrevista-motivacional-1983",
+      "tecnicaId": "p_mi_valores_eleccion",
+      "estado": "ok",
+      "nota": "Resuelve ambivalencia vinculando la decisión con valores personales y elección autónoma."
     },
     {
-      "modeloId": "act-hayes-strosahl-wilson-1999",
-      "tecnicaId": "p_act_creative_hopelessness",
-      "estado": "extra_repo",
-      "nota": "Explora el coste de continuar con estrategias de evitación frente a actuar en dirección a valores."
+      "modeloId": "entrevista-motivacional-1983",
+      "tecnicaId": "p_mi_discrepancia",
+      "estado": "ok",
+      "nota": "Hace visible la discrepancia entre conducta actual y valores o metas, facilitando resolución de la ambivalencia."
     },
     {
-      "modeloId": "act-hayes-strosahl-wilson-1999",
-      "tecnicaId": "p_act_values_clarification",
-      "estado": "extra_repo",
-      "nota": "Ayuda a resolver ambivalencia alineando decisiones con valores personales."
+      "modeloId": "entrevista-motivacional-1983",
+      "tecnicaId": "p_mi_darn",
+      "estado": "ok",
+      "nota": "Evoca change talk como mecanismo central para inclinar la ambivalencia hacia el cambio."
+    },
+    {
+      "modeloId": "entrevista-motivacional-1983",
+      "tecnicaId": "m_mi_normalizar",
+      "estado": "ok",
+      "nota": "Micro relevante porque normaliza la ambivalencia y reduce defensividad, permitiendo explorarla mejor."
+    },
+    {
+      "modeloId": "entrevista-motivacional-1983",
+      "tecnicaId": "m_mi_evocar_razones",
+      "estado": "ok",
+      "nota": "Micro muy útil para hacer emerger razones propias para cambiar dentro del conflicto ambivalente."
+    },
+    {
+      "modeloId": "ttm_prochaska_diclemente",
+      "tecnicaId": "p_ttm_balance",
+      "estado": "ok",
+      "nota": "Correspondencia clara desde el modelo transteórico: balance decisional explícito de pros y contras."
+    },
+    {
+      "modeloId": "ttm_prochaska_diclemente",
+      "tecnicaId": "p_ttm_mi_changeTalk",
+      "estado": "ok",
+      "nota": "Integra MI dentro del TTM para trabajar ambivalencia y mover al paciente hacia preparación y acción."
+    },
+    {
+      "modeloId": "ttm_prochaska_diclemente",
+      "tecnicaId": "m_ttm_vb_sustancias_balance",
+      "estado": "ok",
+      "nota": "Micro específica de balance ambivalente con ganancias del mantenimiento de la conducta."
     },
     {
       "modeloId": "k1kelly55",
-      "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
+      "tecnicaId": "m_kelly_dilemas",
       "estado": "ok",
-      "nota": "La ambivalencia se explora como competencia entre anticipaciones posibles del sistema de constructos."
+      "nota": "Correspondencia fuerte: explicita dilemas del tipo 'si cambio en X, pierdo Y', que son una forma clara de ambivalencia."
+    },
+    {
+      "modeloId": "k1kelly55",
+      "tecnicaId": "m_kelly_anticipacion",
+      "estado": "ok",
+      "nota": "Permite contrastar anticipaciones opuestas y explorar qué implicaría cada curso de acción."
+    },
+    {
+      "modeloId": "k1kelly55",
+      "tecnicaId": "m_kelly_alternativas",
+      "estado": "ok",
+      "nota": "Ayuda a construir posiciones alternativas cuando el sistema está atrapado en una polaridad ambivalente."
+    },
+    {
+      "modeloId": "k1kelly55",
+      "tecnicaId": "m_kelly_identidad",
+      "estado": "ok",
+      "nota": "Muy relevante cuando la ambivalencia está sostenida por miedo a incompatibilidad identitaria del cambio."
+    },
+    {
+      "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "tecnicaId": "p_feixas_dilemas_identificacion",
+      "estado": "ok",
+      "nota": "Correspondencia central: identifica dilemas implicativos que bloquean cambios deseados."
+    },
+    {
+      "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "tecnicaId": "p_feixas_dilemas_resolucion",
+      "estado": "ok",
+      "nota": "Muy exacta: procedimiento específico para resolver ambivalencia cuando el cambio amenaza identidad o vínculos valiosos."
+    },
+    {
+      "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "tecnicaId": "p_feixas_rejilla",
+      "estado": "ok",
+      "nota": "La rejilla permite mapear discrepancias y correlaciones que revelan dilemas implicativos y conflictos del self."
+    },
+    {
+      "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "tecnicaId": "m_feixas_frase_dilema",
+      "estado": "ok",
+      "nota": "Micro muy precisa para condensar el conflicto ambivalente en una formulación operativa."
+    },
+    {
+      "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "tecnicaId": "m_feixas_validar_dilema",
+      "estado": "ok",
+      "nota": "Micro importante porque valida la lógica protectora del dilema en lugar de patologizar la ambivalencia."
+    },
+    {
+      "modeloId": "terapia-gestalt-perls-1951",
+      "tecnicaId": "p_gestalt_dos_sillas_polaridades",
+      "estado": "ok",
+      "nota": "Encaja claramente: dramatiza y hace experiencial el conflicto entre dos partes o polaridades internas."
+    },
+    {
+      "modeloId": "terapia-gestalt-perls-1951",
+      "tecnicaId": "p_gestalt_integracion_polaridades",
+      "estado": "ok",
+      "nota": "Va un paso más allá de explorar la ambivalencia: busca integrar los polos en una posición más compleja y funcional."
+    },
+    {
+      "modeloId": "terapia-gestalt-perls-1951",
+      "tecnicaId": "m_gestalt_cambio_silla",
+      "estado": "ok",
+      "nota": "Micro operativa que permite encarnar alternadamente cada polo del conflicto y clarificarlo en vivo."
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "tecnicaId": "p_act_creativa_desesperanza",
+      "estado": "ok",
+      "nota": "Muy pertinente cuando la ambivalencia se sostiene por insistir en estrategias de control o evitación que ya no funcionan."
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "tecnicaId": "p_act_valores",
+      "estado": "ok",
+      "nota": "Resuelve ambivalencia orientando la elección hacia direcciones valiosas en vez de hacia alivio inmediato."
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "tecnicaId": "p_act_matriz",
+      "estado": "ok",
+      "nota": "Organiza de forma muy clara el conflicto entre evitación y acción guiada por valores."
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "tecnicaId": "m_act_hacia_contra",
+      "estado": "ok",
+      "nota": "Micro directa para discriminar si una conducta va hacia valores o contra ellos."
     },
     {
       "modeloId": "terapia-dialectico-conductual-linehan-1993",
-      "tecnicaId": "p_dbt_analisis_dialectico",
-      "estado": "extra_repo",
-      "nota": "La dialéctica permite sostener simultáneamente polos opuestos hasta integrar una posición más compleja."
+      "tecnicaId": "p_dbt_estrategias_dialecticas",
+      "estado": "ok",
+      "nota": "Encaja bien cuando la ambivalencia adopta forma de polarización extrema y requiere síntesis dialéctica."
+    },
+    {
+      "modeloId": "pst-solucion-problemas-dzurilla-goldfried-1971",
+      "tecnicaId": "p_pst_toma_decisiones",
+      "estado": "ok",
+      "nota": "Equivalencia funcional clara: comparar alternativas mediante consecuencias, costes y factibilidad."
+    },
+    {
+      "modeloId": "pst-solucion-problemas-dzurilla-goldfried-1971",
+      "tecnicaId": "m_pst_pros_contras",
+      "estado": "ok",
+      "nota": "Micro clásica y muy afín al balance decisional."
     }
   ],
   "procesos": [
