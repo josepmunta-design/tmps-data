@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-15T21:24:25.001Z",
+    "generatedAt": "2026-03-15T21:26:14.670Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -635,6 +635,135 @@
           "estado": "falta_id",
           "nota": "tecnicaId no encontrado en el JSON del modelo",
           "sourceFile": "data/Core/modelos/constructivista/terapia-colaborativa.json"
+        }
+      ]
+    },
+    {
+      "id": "aumentar-percepcion-autoeficacia",
+      "label": "Aumentar percepción de autoeficacia",
+      "definicion": "Fortalecer la creencia del paciente en su capacidad para afrontar dificultades, influir en la situación o realizar cambios significativos en su conducta o en su vida.",
+      "categoria": "Motivación, agencia y cambio conductual",
+      "tags": [
+        "autoeficacia",
+        "agencia",
+        "empoderamiento",
+        "confianza",
+        "capacidad personal",
+        "motivacion"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/aumentar-percepcion-autoeficacia.json",
+      "entries": [
+        {
+          "modeloId": "bandura-social-learning-1977",
+          "tecnicaId": "p_bandura_self_efficacy_enhancement",
+          "modelId": "bandura-social-learning-1977",
+          "techniqueId": "p_bandura_self_efficacy_enhancement",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Fortalecer la expectativa de eficacia mediante experiencias de dominio, modelado y persuasión.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "entrevista-motivacional-1983",
+          "tecnicaId": "p_mi_confidence_scaling",
+          "modelId": "entrevista-motivacional-1983",
+          "techniqueId": "p_mi_confidence_scaling",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Escala de confianza que explora y refuerza la creencia en la capacidad de cambio.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        },
+        {
+          "modeloId": "solution-focused-therapy-de-shazer-1985",
+          "tecnicaId": "p_sft_resource_questions",
+          "modelId": "solution-focused-therapy-de-shazer-1985",
+          "techniqueId": "p_sft_resource_questions",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Explorar recursos y excepciones aumenta la percepción de capacidad personal.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "psicologia-positiva-seligman-2000",
+          "tecnicaId": "p_pp_strengths_identification",
+          "modelId": "psicologia-positiva-seligman-2000",
+          "techniqueId": "p_pp_strengths_identification",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Identificación de fortalezas personales para aumentar la percepción de competencia.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "tecnicaId": "p_beck_mastery_experiences",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "techniqueId": "p_beck_mastery_experiences",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Experiencias de dominio planificadas para aumentar la percepción de eficacia.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_small_steps_commitment",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_small_steps_commitment",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Acciones comprometidas graduadas que fortalecen la percepción de capacidad.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "terapia-de-esquemas-young-1990",
+          "tecnicaId": "m_schema_refuerzo_capacidad",
+          "modelId": "terapia-de-esquemas-young-1990",
+          "techniqueId": "m_schema_refuerzo_capacidad",
+          "modeloLabel": "Terapia de esquemas",
+          "modelLabel": "Terapia de esquemas",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Refuerzo del modo adulto sano enfatizando recursos y capacidad personal.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
         }
       ]
     },
@@ -5512,6 +5641,21 @@
           "sourceFile": "data/Core/modelos/cognitivo/ruler-yale-emotional-intelligence-2012.json"
         }
       ]
+    },
+    {
+      "id": "aumentar-percepcion-autoeficacia",
+      "label": "Aumentar percepción de autoeficacia",
+      "categoria": "Motivación, agencia y cambio conductual",
+      "definicion": "Fortalecer la creencia del paciente en su capacidad para afrontar dificultades, influir en la situación o realizar cambios significativos en su conducta o en su vida.",
+      "tags": [
+        "autoeficacia",
+        "agencia",
+        "empoderamiento",
+        "confianza",
+        "capacidad personal",
+        "motivacion"
+      ],
+      "records": []
     },
     {
       "id": "aumentar-tolerancia-emocional",
@@ -15083,6 +15227,135 @@
         }
       ]
     },
+    "aumentar-percepcion-autoeficacia": {
+      "id": "aumentar-percepcion-autoeficacia",
+      "label": "Aumentar percepción de autoeficacia",
+      "definicion": "Fortalecer la creencia del paciente en su capacidad para afrontar dificultades, influir en la situación o realizar cambios significativos en su conducta o en su vida.",
+      "categoria": "Motivación, agencia y cambio conductual",
+      "tags": [
+        "autoeficacia",
+        "agencia",
+        "empoderamiento",
+        "confianza",
+        "capacidad personal",
+        "motivacion"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/aumentar-percepcion-autoeficacia.json",
+      "entries": [
+        {
+          "modeloId": "bandura-social-learning-1977",
+          "tecnicaId": "p_bandura_self_efficacy_enhancement",
+          "modelId": "bandura-social-learning-1977",
+          "techniqueId": "p_bandura_self_efficacy_enhancement",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Fortalecer la expectativa de eficacia mediante experiencias de dominio, modelado y persuasión.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "entrevista-motivacional-1983",
+          "tecnicaId": "p_mi_confidence_scaling",
+          "modelId": "entrevista-motivacional-1983",
+          "techniqueId": "p_mi_confidence_scaling",
+          "modeloLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "modelLabel": "Entrevista Motivacional (Motivational Interviewing, MI)",
+          "grupo": "Humanista",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Escala de confianza que explora y refuerza la creencia en la capacidad de cambio.",
+          "sourceFile": "data/Core/modelos/humanista/entrevista-motivacional-1983.json"
+        },
+        {
+          "modeloId": "solution-focused-therapy-de-shazer-1985",
+          "tecnicaId": "p_sft_resource_questions",
+          "modelId": "solution-focused-therapy-de-shazer-1985",
+          "techniqueId": "p_sft_resource_questions",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Explorar recursos y excepciones aumenta la percepción de capacidad personal.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "psicologia-positiva-seligman-2000",
+          "tecnicaId": "p_pp_strengths_identification",
+          "modelId": "psicologia-positiva-seligman-2000",
+          "techniqueId": "p_pp_strengths_identification",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Identificación de fortalezas personales para aumentar la percepción de competencia.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "terapia-cognitiva-beck-depresion-1967",
+          "tecnicaId": "p_beck_mastery_experiences",
+          "modelId": "terapia-cognitiva-beck-depresion-1967",
+          "techniqueId": "p_beck_mastery_experiences",
+          "modeloLabel": "Terapia cognitiva (depresión)",
+          "modelLabel": "Terapia cognitiva (depresión)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Experiencias de dominio planificadas para aumentar la percepción de eficacia.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitiva-beck-depresion-1967.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_small_steps_commitment",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_small_steps_commitment",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Acciones comprometidas graduadas que fortalecen la percepción de capacidad.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "terapia-de-esquemas-young-1990",
+          "tecnicaId": "m_schema_refuerzo_capacidad",
+          "modelId": "terapia-de-esquemas-young-1990",
+          "techniqueId": "m_schema_refuerzo_capacidad",
+          "modeloLabel": "Terapia de esquemas",
+          "modelLabel": "Terapia de esquemas",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "Refuerzo del modo adulto sano enfatizando recursos y capacidad personal.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-de-esquemas-young-1990.json"
+        }
+      ]
+    },
     "aumentar-tolerancia-emocional": {
       "id": "aumentar-tolerancia-emocional",
       "label": "Aumentar tolerancia emocional",
@@ -18937,6 +19210,9 @@
     ],
     "Comprensión interpersonal y mentalización": [
       "aumentar-conciencia-del-otro"
+    ],
+    "Motivación, agencia y cambio conductual": [
+      "aumentar-percepcion-autoeficacia"
     ],
     "Exposición y procesamiento emocional": [
       "aumentar-tolerancia-emocional"
@@ -24261,11 +24537,11 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 25,
-    "totalEntries": 252,
+    "totalIsomorfismos": 26,
+    "totalEntries": 259,
     "totalOk": 162,
-    "totalFaltaId": 24,
-    "totalFaltaModelo": 28,
+    "totalFaltaId": 28,
+    "totalFaltaModelo": 31,
     "totalDudoso": 0,
     "totalDescartado": 0
   }

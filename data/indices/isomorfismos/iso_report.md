@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T21:24:25.001Z
+Generado: 2026-03-15T21:26:14.670Z
 
 ## Amplificar experiencia emergente
 
@@ -54,6 +54,21 @@ Generado: 2026-03-15T21:24:25.001Z
 - constructivismo-feixas — m_feixas_perspectiva_otro [falta_modelo]
 - Terapia narrativa — m_narrativa_perspectiva_otro [falta_id]
 - Terapia colaborativa — m_colab_explorar_perspectiva_otro [falta_id]
+
+## Aumentar percepción de autoeficacia
+
+- ID: `aumentar-percepcion-autoeficacia`
+- Categoría: Motivación, agencia y cambio conductual
+- Archivo fuente: `data/indices/isomorfismos/fuente/aumentar-percepcion-autoeficacia.json`
+- Entradas: 7
+
+- bandura-social-learning-1977 — p_bandura_self_efficacy_enhancement [falta_modelo]
+- Entrevista Motivacional (Motivational Interviewing, MI) — p_mi_confidence_scaling [falta_id]
+- solution-focused-therapy-de-shazer-1985 — p_sft_resource_questions [falta_modelo]
+- psicologia-positiva-seligman-2000 — p_pp_strengths_identification [falta_modelo]
+- Terapia cognitiva (depresión) — p_beck_mastery_experiences [falta_id]
+- Terapia de Aceptación y Compromiso (ACT) — p_act_small_steps_commitment [falta_id]
+- Terapia de esquemas — m_schema_refuerzo_capacidad [falta_id]
 
 ## Aumentar tolerancia emocional
 
