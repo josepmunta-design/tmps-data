@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T19:49:29.525Z
+Generado: 2026-03-15T19:50:32.965Z
 
 ## Amplificar experiencia emergente
 
@@ -121,6 +121,32 @@ Generado: 2026-03-15T19:49:29.525Z
 - Teoría de los Constructos Personales (PCP) — Experimentos de anticipación [ok]
 - Teoría de los Constructos Personales (PCP) — Ensayo conductual de nuevas anticipaciones [ok]
 - Teoría de los Constructos Personales (PCP) — Construcción de alternativas [parcial]
+
+## Ensayar interacción interpersonal
+
+- ID: `ensayar-interaccion-interpersonal`
+- Categoría: Intervención interpersonal y ensayo conductual
+- Archivo fuente: `data/indices/isomorfismos/fuente/ensayar-interaccion-interpersonal.json`
+- Entradas: 18
+
+- Interpersonal Psychotherapy (IPT) — Ensayo de nuevas conductas interpersonales [ok]
+- Interpersonal Psychotherapy (IPT) — Role-playing focalizado [ok]
+- Entrenamiento en habilidades sociales — Ensayo conductual (role-playing) con coaching [ok]
+- Entrenamiento en habilidades sociales — Entrenamiento en asertividad (pedir, decir no, expresar límites) [ok]
+- Entrenamiento en habilidades sociales — Ensayo de reparación (disculpa, aclaración, reintento) [ok]
+- Entrenamiento en habilidades sociales — Pausa y reformulación durante el ensayo [ok]
+- Terapia dialéctico–conductual (DBT) — Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada) [ok]
+- Terapia cognitivo-conductual estándar — Entrenamiento en habilidades sociales y asertividad [ok]
+- Terapia cognitivo-conductual estándar — Ensayo conductual en sesión [ok]
+- CBASP – Cognitive Behavioral Analysis System of Psychotherapy — Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping) [ok]
+- Interpersonal – Sullivan — Ensayo de respuestas interpersonales alternativas [ok]
+- Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas) — Ensayo de comunicación desde la nueva posición [ok]
+- Modelo de polaridades semánticas — Ensayo verbal de nuevas posiciones [ok]
+- Teoría del self dialógico — Ensayo verbal de nueva posición [ok]
+- Terapia de pareja conductual tradicional — Ensayo conductual de peticiones [ok]
+- Terapia Gestalt — Micro-ensayo de límite [parcial]
+- Terapia de Aceptación y Compromiso (ACT) — Ensayo en sesión de respuesta interpersonal guiada por valores [extra_repo]
+- Terapia de Aceptación y Compromiso (ACT) — Role-play de conversación difícil con apertura experiencial [extra_repo]
 
 ## Evocar razones propias para cambiar
 

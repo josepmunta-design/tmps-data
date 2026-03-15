@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-15T19:49:29.525Z",
+    "generatedAt": "2026-03-15T19:50:32.965Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -1159,6 +1159,314 @@
           "estado": "parcial",
           "nota": "Construcción de alternativas que puede convertirse en experimento conductual, aunque no siempre lo implica.",
           "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        }
+      ]
+    },
+    {
+      "id": "ensayar-interaccion-interpersonal",
+      "label": "Ensayar interacción interpersonal",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/ensayar-interaccion-interpersonal.json",
+      "entries": [
+        {
+          "modeloId": "ipt-klerman-weissman-1984",
+          "tecnicaId": "p_ipt_ensayo_conductual",
+          "modelId": "ipt-klerman-weissman-1984",
+          "techniqueId": "p_ipt_ensayo_conductual",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Ensayo de nuevas conductas interpersonales",
+          "techniqueLabel": "Ensayo de nuevas conductas interpersonales",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa y prototípica: procedimiento explícito de ensayo de nuevas conductas interpersonales dentro de IPT.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "modeloId": "ipt-klerman-weissman-1984",
+          "tecnicaId": "m_ipt_role_playing",
+          "modelId": "ipt-klerman-weissman-1984",
+          "techniqueId": "m_ipt_role_playing",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Role-playing focalizado",
+          "techniqueLabel": "Role-playing focalizado",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro exacta de role-playing focalizado para practicar respuestas relacionales alternativas.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "tecnicaId": "p_sst_ensayo_conductual",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "techniqueId": "p_sst_ensayo_conductual",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Ensayo conductual (role-playing) con coaching",
+          "techniqueLabel": "Ensayo conductual (role-playing) con coaching",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa: role-playing con coaching para adquirir y afinar respuestas interpersonales nuevas.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "tecnicaId": "p_sst_asertividad",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "techniqueId": "p_sst_asertividad",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+          "techniqueLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Encaja cuando el ensayo interpersonal se orienta a pedir, decir no, expresar necesidades o poner límites.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "tecnicaId": "m_sst_reparacion",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "techniqueId": "m_sst_reparacion",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+          "techniqueLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro específica para ensayar reparación relacional: disculpa, aclaración o reintento comunicativo.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "tecnicaId": "m_sst_pausa_reformular",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "techniqueId": "m_sst_pausa_reformular",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Pausa y reformulación durante el ensayo",
+          "techniqueLabel": "Pausa y reformulación durante el ensayo",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro útil dentro del ensayo para detener, reformular y volver a intentar una respuesta interpersonal más eficaz.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "modeloId": "terapia-dialectico-conductual-linehan-1993",
+          "tecnicaId": "p_dbt_ensayo_conductual",
+          "modelId": "terapia-dialectico-conductual-linehan-1993",
+          "techniqueId": "p_dbt_ensayo_conductual",
+          "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+          "modelLabel": "Terapia dialéctico–conductual (DBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+          "techniqueLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia clara en DBT cuando se practican habilidades de efectividad interpersonal mediante role-play y práctica guiada.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-dialectico-conductual-linehan-1993.json"
+        },
+        {
+          "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+          "tecnicaId": "p_tccstd_habilidades_sociales",
+          "modelId": "terapia-cognitivo-conductual-estandar-1980",
+          "techniqueId": "p_tccstd_habilidades_sociales",
+          "modeloLabel": "Terapia cognitivo-conductual estándar",
+          "modelLabel": "Terapia cognitivo-conductual estándar",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Entrenamiento en habilidades sociales y asertividad",
+          "techniqueLabel": "Entrenamiento en habilidades sociales y asertividad",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia directa en TCC estándar cuando el foco es entrenar repertorio interpersonal y asertividad.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+        },
+        {
+          "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+          "tecnicaId": "m_tccstd_ensayo",
+          "modelId": "terapia-cognitivo-conductual-estandar-1980",
+          "techniqueId": "m_tccstd_ensayo",
+          "modeloLabel": "Terapia cognitivo-conductual estándar",
+          "modelLabel": "Terapia cognitivo-conductual estándar",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Ensayo conductual en sesión",
+          "techniqueLabel": "Ensayo conductual en sesión",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro de ensayo conductual en sesión aplicable a respuestas relacionales nuevas.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+        },
+        {
+          "modeloId": "cbasp-mccullough",
+          "tecnicaId": "p_cbasp_ensayoConductual",
+          "modelId": "cbasp-mccullough",
+          "techniqueId": "p_cbasp_ensayoConductual",
+          "modeloLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+          "modelLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+          "techniqueLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Encaja como ensayo interpersonal correctivo cuando se practican nuevas formas de responder en relaciones problemáticas.",
+          "sourceFile": "data/Core/modelos/integrativo/cbasp-mccullough.json"
+        },
+        {
+          "modeloId": "sullivan-psicoanalisis-interpersonal",
+          "tecnicaId": "p_sullivan_ensayo_respuestas",
+          "modelId": "sullivan-psicoanalisis-interpersonal",
+          "techniqueId": "p_sullivan_ensayo_respuestas",
+          "modeloLabel": "Interpersonal – Sullivan",
+          "modelLabel": "Interpersonal – Sullivan",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Ensayo de respuestas interpersonales alternativas",
+          "techniqueLabel": "Ensayo de respuestas interpersonales alternativas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia válida: ensayo de respuestas interpersonales alternativas dentro de una lógica interpersonal clásica.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json"
+        },
+        {
+          "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "tecnicaId": "m_feixas_ensayo_comunicacion",
+          "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "techniqueId": "m_feixas_ensayo_comunicacion",
+          "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Ensayo de comunicación desde la nueva posición",
+          "techniqueLabel": "Ensayo de comunicación desde la nueva posición",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro pertinente cuando la nueva respuesta relacional expresa una posición personal distinta dentro del sistema de constructos.",
+          "sourceFile": "data/Core/modelos/constructivista/psicoterapia-constructos-personales-integrativa-feixas-villegas-2000.json"
+        },
+        {
+          "modeloId": "polaridades-semanticas",
+          "tecnicaId": "m_ugazio_ensayoVerbal",
+          "modelId": "polaridades-semanticas",
+          "techniqueId": "m_ugazio_ensayoVerbal",
+          "modeloLabel": "Modelo de polaridades semánticas",
+          "modelLabel": "Modelo de polaridades semánticas",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Ensayo verbal de nuevas posiciones",
+          "techniqueLabel": "Ensayo verbal de nuevas posiciones",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro útil para ensayar verbalmente nuevas posiciones relacionales dentro de una polaridad semántica rígida.",
+          "sourceFile": "data/Core/modelos/constructivista/polaridades-semanticas.json"
+        },
+        {
+          "modeloId": "self-dialogico-hermans",
+          "tecnicaId": "m_hermans_ensayoNuevaVoz",
+          "modelId": "self-dialogico-hermans",
+          "techniqueId": "m_hermans_ensayoNuevaVoz",
+          "modeloLabel": "Teoría del self dialógico",
+          "modelLabel": "Teoría del self dialógico",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Ensayo verbal de nueva posición",
+          "techniqueLabel": "Ensayo verbal de nueva posición",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Encaja cuando el ensayo interpersonal se entiende como práctica de una nueva voz o posición del self en relación.",
+          "sourceFile": "data/Core/modelos/constructivista/self-dialogico-hermans.json"
+        },
+        {
+          "modeloId": "terapia-pareja-conductual-tradicional-1979",
+          "tecnicaId": "m_tbct_ensayo_peticiones",
+          "modelId": "terapia-pareja-conductual-tradicional-1979",
+          "techniqueId": "m_tbct_ensayo_peticiones",
+          "modeloLabel": "Terapia de pareja conductual tradicional",
+          "modelLabel": "Terapia de pareja conductual tradicional",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Ensayo conductual de peticiones",
+          "techniqueLabel": "Ensayo conductual de peticiones",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro específica de práctica interpersonal orientada a formular peticiones más claras y funcionales.",
+          "sourceFile": "data/Core/modelos/conductismo/terapia-pareja-conductual-tradicional-1979.json"
+        },
+        {
+          "modeloId": "terapia-gestalt-perls-1951",
+          "tecnicaId": "m_gestalt_micro_limite",
+          "modelId": "terapia-gestalt-perls-1951",
+          "techniqueId": "m_gestalt_micro_limite",
+          "modeloLabel": "Terapia Gestalt",
+          "modelLabel": "Terapia Gestalt",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Micro-ensayo de límite",
+          "techniqueLabel": "Micro-ensayo de límite",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Equivalencia parcial: no es entrenamiento interpersonal estructurado, pero sí micro-ensayo directo de una respuesta relacional nueva, especialmente en límites.",
+          "sourceFile": "data/Core/modelos/humanista/terapia-gestalt-perls-1951.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_ensayo_interpersonal_valores",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_ensayo_interpersonal_valores",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Ensayo en sesión de respuesta interpersonal guiada por valores",
+          "techniqueLabel": "Ensayo en sesión de respuesta interpersonal guiada por valores",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "extra_repo",
+          "nota": "Ensayo en sesión de una interacción interpersonal difícil (por ejemplo pedir algo, poner un límite o expresar desacuerdo) practicando una respuesta alineada con valores mientras se mantiene apertura al malestar interno. Coherente con acción comprometida y choice point en ACT, aunque no aparece con este nombre explícito en el repo.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_role_play_conversacion_dificil",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_role_play_conversacion_dificil",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Role-play de conversación difícil con apertura experiencial",
+          "techniqueLabel": "Role-play de conversación difícil con apertura experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "extra_repo",
+          "nota": "Role-play breve de una conversación interpersonal difícil donde el paciente practica permanecer presente y responder desde valores en lugar de evitación experiencial. Micro coherente con ACT aunque no esté formalizada como técnica explícita en el repo.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
         }
       ]
     },
@@ -5114,6 +5422,490 @@
           "estado": "ok",
           "nota": "Procedimiento prototípico de experimentación en PCP: el paciente pone a prueba anticipaciones alternativas en la vida cotidiana para observar cómo cambian los resultados y reorganizar el sistema de constructos.",
           "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        }
+      ]
+    },
+    {
+      "id": "ensayar-interaccion-interpersonal",
+      "label": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "ipt-klerman-weissman-1984",
+          "modelId": "ipt-klerman-weissman-1984",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaId": "p_ipt_ensayo_conductual",
+          "techniqueId": "p_ipt_ensayo_conductual",
+          "tecnicaLabel": "Ensayo de nuevas conductas interpersonales",
+          "techniqueLabel": "Ensayo de nuevas conductas interpersonales",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa y prototípica: procedimiento explícito de ensayo de nuevas conductas interpersonales dentro de IPT.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "ipt-klerman-weissman-1984",
+          "modelId": "ipt-klerman-weissman-1984",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaId": "m_ipt_role_playing",
+          "techniqueId": "m_ipt_role_playing",
+          "tecnicaLabel": "Role-playing focalizado",
+          "techniqueLabel": "Role-playing focalizado",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro exacta de role-playing focalizado para practicar respuestas relacionales alternativas.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaId": "p_sst_ensayo_conductual",
+          "techniqueId": "p_sst_ensayo_conductual",
+          "tecnicaLabel": "Ensayo conductual (role-playing) con coaching",
+          "techniqueLabel": "Ensayo conductual (role-playing) con coaching",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa: role-playing con coaching para adquirir y afinar respuestas interpersonales nuevas.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaId": "p_sst_asertividad",
+          "techniqueId": "p_sst_asertividad",
+          "tecnicaLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+          "techniqueLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Encaja cuando el ensayo interpersonal se orienta a pedir, decir no, expresar necesidades o poner límites.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaId": "m_sst_reparacion",
+          "techniqueId": "m_sst_reparacion",
+          "tecnicaLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+          "techniqueLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro específica para ensayar reparación relacional: disculpa, aclaración o reintento comunicativo.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaId": "m_sst_pausa_reformular",
+          "techniqueId": "m_sst_pausa_reformular",
+          "tecnicaLabel": "Pausa y reformulación durante el ensayo",
+          "techniqueLabel": "Pausa y reformulación durante el ensayo",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro útil dentro del ensayo para detener, reformular y volver a intentar una respuesta interpersonal más eficaz.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "terapia-dialectico-conductual-linehan-1993",
+          "modelId": "terapia-dialectico-conductual-linehan-1993",
+          "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+          "modelLabel": "Terapia dialéctico–conductual (DBT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_dbt_ensayo_conductual",
+          "techniqueId": "p_dbt_ensayo_conductual",
+          "tecnicaLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+          "techniqueLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia clara en DBT cuando se practican habilidades de efectividad interpersonal mediante role-play y práctica guiada.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-dialectico-conductual-linehan-1993.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+          "modelId": "terapia-cognitivo-conductual-estandar-1980",
+          "modeloLabel": "Terapia cognitivo-conductual estándar",
+          "modelLabel": "Terapia cognitivo-conductual estándar",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_tccstd_habilidades_sociales",
+          "techniqueId": "p_tccstd_habilidades_sociales",
+          "tecnicaLabel": "Entrenamiento en habilidades sociales y asertividad",
+          "techniqueLabel": "Entrenamiento en habilidades sociales y asertividad",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia directa en TCC estándar cuando el foco es entrenar repertorio interpersonal y asertividad.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+          "modelId": "terapia-cognitivo-conductual-estandar-1980",
+          "modeloLabel": "Terapia cognitivo-conductual estándar",
+          "modelLabel": "Terapia cognitivo-conductual estándar",
+          "grupo": "Cognitivo",
+          "tecnicaId": "m_tccstd_ensayo",
+          "techniqueId": "m_tccstd_ensayo",
+          "tecnicaLabel": "Ensayo conductual en sesión",
+          "techniqueLabel": "Ensayo conductual en sesión",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro de ensayo conductual en sesión aplicable a respuestas relacionales nuevas.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "cbasp-mccullough",
+          "modelId": "cbasp-mccullough",
+          "modeloLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+          "modelLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+          "grupo": "Integrativo",
+          "tecnicaId": "p_cbasp_ensayoConductual",
+          "techniqueId": "p_cbasp_ensayoConductual",
+          "tecnicaLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+          "techniqueLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Encaja como ensayo interpersonal correctivo cuando se practican nuevas formas de responder en relaciones problemáticas.",
+          "sourceFile": "data/Core/modelos/integrativo/cbasp-mccullough.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "sullivan-psicoanalisis-interpersonal",
+          "modelId": "sullivan-psicoanalisis-interpersonal",
+          "modeloLabel": "Interpersonal – Sullivan",
+          "modelLabel": "Interpersonal – Sullivan",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "p_sullivan_ensayo_respuestas",
+          "techniqueId": "p_sullivan_ensayo_respuestas",
+          "tecnicaLabel": "Ensayo de respuestas interpersonales alternativas",
+          "techniqueLabel": "Ensayo de respuestas interpersonales alternativas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia válida: ensayo de respuestas interpersonales alternativas dentro de una lógica interpersonal clásica.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_feixas_ensayo_comunicacion",
+          "techniqueId": "m_feixas_ensayo_comunicacion",
+          "tecnicaLabel": "Ensayo de comunicación desde la nueva posición",
+          "techniqueLabel": "Ensayo de comunicación desde la nueva posición",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro pertinente cuando la nueva respuesta relacional expresa una posición personal distinta dentro del sistema de constructos.",
+          "sourceFile": "data/Core/modelos/constructivista/psicoterapia-constructos-personales-integrativa-feixas-villegas-2000.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "polaridades-semanticas",
+          "modelId": "polaridades-semanticas",
+          "modeloLabel": "Modelo de polaridades semánticas",
+          "modelLabel": "Modelo de polaridades semánticas",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_ugazio_ensayoVerbal",
+          "techniqueId": "m_ugazio_ensayoVerbal",
+          "tecnicaLabel": "Ensayo verbal de nuevas posiciones",
+          "techniqueLabel": "Ensayo verbal de nuevas posiciones",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro útil para ensayar verbalmente nuevas posiciones relacionales dentro de una polaridad semántica rígida.",
+          "sourceFile": "data/Core/modelos/constructivista/polaridades-semanticas.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "self-dialogico-hermans",
+          "modelId": "self-dialogico-hermans",
+          "modeloLabel": "Teoría del self dialógico",
+          "modelLabel": "Teoría del self dialógico",
+          "grupo": "Constructivista",
+          "tecnicaId": "m_hermans_ensayoNuevaVoz",
+          "techniqueId": "m_hermans_ensayoNuevaVoz",
+          "tecnicaLabel": "Ensayo verbal de nueva posición",
+          "techniqueLabel": "Ensayo verbal de nueva posición",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Encaja cuando el ensayo interpersonal se entiende como práctica de una nueva voz o posición del self en relación.",
+          "sourceFile": "data/Core/modelos/constructivista/self-dialogico-hermans.json"
+        },
+        {
+          "isomorfismoId": "ensayar-interaccion-interpersonal",
+          "isomorfismoLabel": "Ensayar interacción interpersonal",
+          "categoria": "Intervención interpersonal y ensayo conductual",
+          "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+          "tags": [
+            "interaccion interpersonal",
+            "role playing",
+            "role play",
+            "habilidades sociales",
+            "ensayo conductual",
+            "asertividad",
+            "comunicacion",
+            "relaciones",
+            "practica en sesion"
+          ],
+          "modeloId": "terapia-pareja-conductual-tradicional-1979",
+          "modelId": "terapia-pareja-conductual-tradicional-1979",
+          "modeloLabel": "Terapia de pareja conductual tradicional",
+          "modelLabel": "Terapia de pareja conductual tradicional",
+          "grupo": "Conductismo",
+          "tecnicaId": "m_tbct_ensayo_peticiones",
+          "techniqueId": "m_tbct_ensayo_peticiones",
+          "tecnicaLabel": "Ensayo conductual de peticiones",
+          "techniqueLabel": "Ensayo conductual de peticiones",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro específica de práctica interpersonal orientada a formular peticiones más claras y funcionales.",
+          "sourceFile": "data/Core/modelos/conductismo/terapia-pareja-conductual-tradicional-1979.json"
         }
       ]
     },
@@ -9126,6 +9918,471 @@
       "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
     },
     {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "ipt-klerman-weissman-1984",
+      "modelId": "ipt-klerman-weissman-1984",
+      "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+      "modelLabel": "Interpersonal Psychotherapy (IPT)",
+      "grupo": "Integrativo",
+      "tecnicaId": "p_ipt_ensayo_conductual",
+      "techniqueId": "p_ipt_ensayo_conductual",
+      "tecnicaLabel": "Ensayo de nuevas conductas interpersonales",
+      "techniqueLabel": "Ensayo de nuevas conductas interpersonales",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia directa y prototípica: procedimiento explícito de ensayo de nuevas conductas interpersonales dentro de IPT.",
+      "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "ipt-klerman-weissman-1984",
+      "modelId": "ipt-klerman-weissman-1984",
+      "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+      "modelLabel": "Interpersonal Psychotherapy (IPT)",
+      "grupo": "Integrativo",
+      "tecnicaId": "m_ipt_role_playing",
+      "techniqueId": "m_ipt_role_playing",
+      "tecnicaLabel": "Role-playing focalizado",
+      "techniqueLabel": "Role-playing focalizado",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro exacta de role-playing focalizado para practicar respuestas relacionales alternativas.",
+      "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "entrenamiento-habilidades-sociales",
+      "modelId": "entrenamiento-habilidades-sociales",
+      "modeloLabel": "Entrenamiento en habilidades sociales",
+      "modelLabel": "Entrenamiento en habilidades sociales",
+      "grupo": "Conductismo",
+      "tecnicaId": "p_sst_ensayo_conductual",
+      "techniqueId": "p_sst_ensayo_conductual",
+      "tecnicaLabel": "Ensayo conductual (role-playing) con coaching",
+      "techniqueLabel": "Ensayo conductual (role-playing) con coaching",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia directa: role-playing con coaching para adquirir y afinar respuestas interpersonales nuevas.",
+      "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "entrenamiento-habilidades-sociales",
+      "modelId": "entrenamiento-habilidades-sociales",
+      "modeloLabel": "Entrenamiento en habilidades sociales",
+      "modelLabel": "Entrenamiento en habilidades sociales",
+      "grupo": "Conductismo",
+      "tecnicaId": "p_sst_asertividad",
+      "techniqueId": "p_sst_asertividad",
+      "tecnicaLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+      "techniqueLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Encaja cuando el ensayo interpersonal se orienta a pedir, decir no, expresar necesidades o poner límites.",
+      "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "entrenamiento-habilidades-sociales",
+      "modelId": "entrenamiento-habilidades-sociales",
+      "modeloLabel": "Entrenamiento en habilidades sociales",
+      "modelLabel": "Entrenamiento en habilidades sociales",
+      "grupo": "Conductismo",
+      "tecnicaId": "m_sst_reparacion",
+      "techniqueId": "m_sst_reparacion",
+      "tecnicaLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+      "techniqueLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro específica para ensayar reparación relacional: disculpa, aclaración o reintento comunicativo.",
+      "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "entrenamiento-habilidades-sociales",
+      "modelId": "entrenamiento-habilidades-sociales",
+      "modeloLabel": "Entrenamiento en habilidades sociales",
+      "modelLabel": "Entrenamiento en habilidades sociales",
+      "grupo": "Conductismo",
+      "tecnicaId": "m_sst_pausa_reformular",
+      "techniqueId": "m_sst_pausa_reformular",
+      "tecnicaLabel": "Pausa y reformulación durante el ensayo",
+      "techniqueLabel": "Pausa y reformulación durante el ensayo",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro útil dentro del ensayo para detener, reformular y volver a intentar una respuesta interpersonal más eficaz.",
+      "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "terapia-dialectico-conductual-linehan-1993",
+      "modelId": "terapia-dialectico-conductual-linehan-1993",
+      "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+      "modelLabel": "Terapia dialéctico–conductual (DBT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_dbt_ensayo_conductual",
+      "techniqueId": "p_dbt_ensayo_conductual",
+      "tecnicaLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+      "techniqueLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Equivalencia clara en DBT cuando se practican habilidades de efectividad interpersonal mediante role-play y práctica guiada.",
+      "sourceFile": "data/Core/modelos/cognitivo/terapia-dialectico-conductual-linehan-1993.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+      "modelId": "terapia-cognitivo-conductual-estandar-1980",
+      "modeloLabel": "Terapia cognitivo-conductual estándar",
+      "modelLabel": "Terapia cognitivo-conductual estándar",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_tccstd_habilidades_sociales",
+      "techniqueId": "p_tccstd_habilidades_sociales",
+      "tecnicaLabel": "Entrenamiento en habilidades sociales y asertividad",
+      "techniqueLabel": "Entrenamiento en habilidades sociales y asertividad",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Equivalencia directa en TCC estándar cuando el foco es entrenar repertorio interpersonal y asertividad.",
+      "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+      "modelId": "terapia-cognitivo-conductual-estandar-1980",
+      "modeloLabel": "Terapia cognitivo-conductual estándar",
+      "modelLabel": "Terapia cognitivo-conductual estándar",
+      "grupo": "Cognitivo",
+      "tecnicaId": "m_tccstd_ensayo",
+      "techniqueId": "m_tccstd_ensayo",
+      "tecnicaLabel": "Ensayo conductual en sesión",
+      "techniqueLabel": "Ensayo conductual en sesión",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro de ensayo conductual en sesión aplicable a respuestas relacionales nuevas.",
+      "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "cbasp-mccullough",
+      "modelId": "cbasp-mccullough",
+      "modeloLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+      "modelLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+      "grupo": "Integrativo",
+      "tecnicaId": "p_cbasp_ensayoConductual",
+      "techniqueId": "p_cbasp_ensayoConductual",
+      "tecnicaLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+      "techniqueLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Encaja como ensayo interpersonal correctivo cuando se practican nuevas formas de responder en relaciones problemáticas.",
+      "sourceFile": "data/Core/modelos/integrativo/cbasp-mccullough.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "sullivan-psicoanalisis-interpersonal",
+      "modelId": "sullivan-psicoanalisis-interpersonal",
+      "modeloLabel": "Interpersonal – Sullivan",
+      "modelLabel": "Interpersonal – Sullivan",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "p_sullivan_ensayo_respuestas",
+      "techniqueId": "p_sullivan_ensayo_respuestas",
+      "tecnicaLabel": "Ensayo de respuestas interpersonales alternativas",
+      "techniqueLabel": "Ensayo de respuestas interpersonales alternativas",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia válida: ensayo de respuestas interpersonales alternativas dentro de una lógica interpersonal clásica.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+      "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+      "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+      "grupo": "Constructivista",
+      "tecnicaId": "m_feixas_ensayo_comunicacion",
+      "techniqueId": "m_feixas_ensayo_comunicacion",
+      "tecnicaLabel": "Ensayo de comunicación desde la nueva posición",
+      "techniqueLabel": "Ensayo de comunicación desde la nueva posición",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro pertinente cuando la nueva respuesta relacional expresa una posición personal distinta dentro del sistema de constructos.",
+      "sourceFile": "data/Core/modelos/constructivista/psicoterapia-constructos-personales-integrativa-feixas-villegas-2000.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "polaridades-semanticas",
+      "modelId": "polaridades-semanticas",
+      "modeloLabel": "Modelo de polaridades semánticas",
+      "modelLabel": "Modelo de polaridades semánticas",
+      "grupo": "Constructivista",
+      "tecnicaId": "m_ugazio_ensayoVerbal",
+      "techniqueId": "m_ugazio_ensayoVerbal",
+      "tecnicaLabel": "Ensayo verbal de nuevas posiciones",
+      "techniqueLabel": "Ensayo verbal de nuevas posiciones",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro útil para ensayar verbalmente nuevas posiciones relacionales dentro de una polaridad semántica rígida.",
+      "sourceFile": "data/Core/modelos/constructivista/polaridades-semanticas.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "self-dialogico-hermans",
+      "modelId": "self-dialogico-hermans",
+      "modeloLabel": "Teoría del self dialógico",
+      "modelLabel": "Teoría del self dialógico",
+      "grupo": "Constructivista",
+      "tecnicaId": "m_hermans_ensayoNuevaVoz",
+      "techniqueId": "m_hermans_ensayoNuevaVoz",
+      "tecnicaLabel": "Ensayo verbal de nueva posición",
+      "techniqueLabel": "Ensayo verbal de nueva posición",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Encaja cuando el ensayo interpersonal se entiende como práctica de una nueva voz o posición del self en relación.",
+      "sourceFile": "data/Core/modelos/constructivista/self-dialogico-hermans.json"
+    },
+    {
+      "isomorfismoId": "ensayar-interaccion-interpersonal",
+      "isomorfismoLabel": "Ensayar interacción interpersonal",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "modeloId": "terapia-pareja-conductual-tradicional-1979",
+      "modelId": "terapia-pareja-conductual-tradicional-1979",
+      "modeloLabel": "Terapia de pareja conductual tradicional",
+      "modelLabel": "Terapia de pareja conductual tradicional",
+      "grupo": "Conductismo",
+      "tecnicaId": "m_tbct_ensayo_peticiones",
+      "techniqueId": "m_tbct_ensayo_peticiones",
+      "tecnicaLabel": "Ensayo conductual de peticiones",
+      "techniqueLabel": "Ensayo conductual de peticiones",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro específica de práctica interpersonal orientada a formular peticiones más claras y funcionales.",
+      "sourceFile": "data/Core/modelos/conductismo/terapia-pareja-conductual-tradicional-1979.json"
+    },
+    {
       "isomorfismoId": "evocar-razones-propias-para-cambiar",
       "isomorfismoLabel": "Evocar razones propias para cambiar",
       "categoria": "Motivación, cambio y compromiso",
@@ -12813,6 +14070,314 @@
         }
       ]
     },
+    "ensayar-interaccion-interpersonal": {
+      "id": "ensayar-interaccion-interpersonal",
+      "label": "Ensayar interacción interpersonal",
+      "definicion": "Practicar en sesión nuevas respuestas relacionales mediante simulación, role-playing, coaching o ensayo guiado, con el fin de ampliar el repertorio interpersonal del paciente antes de trasladarlo a situaciones reales.",
+      "categoria": "Intervención interpersonal y ensayo conductual",
+      "tags": [
+        "interaccion interpersonal",
+        "role playing",
+        "role play",
+        "habilidades sociales",
+        "ensayo conductual",
+        "asertividad",
+        "comunicacion",
+        "relaciones",
+        "practica en sesion"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/ensayar-interaccion-interpersonal.json",
+      "entries": [
+        {
+          "modeloId": "ipt-klerman-weissman-1984",
+          "tecnicaId": "p_ipt_ensayo_conductual",
+          "modelId": "ipt-klerman-weissman-1984",
+          "techniqueId": "p_ipt_ensayo_conductual",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Ensayo de nuevas conductas interpersonales",
+          "techniqueLabel": "Ensayo de nuevas conductas interpersonales",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa y prototípica: procedimiento explícito de ensayo de nuevas conductas interpersonales dentro de IPT.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "modeloId": "ipt-klerman-weissman-1984",
+          "tecnicaId": "m_ipt_role_playing",
+          "modelId": "ipt-klerman-weissman-1984",
+          "techniqueId": "m_ipt_role_playing",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Role-playing focalizado",
+          "techniqueLabel": "Role-playing focalizado",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro exacta de role-playing focalizado para practicar respuestas relacionales alternativas.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "tecnicaId": "p_sst_ensayo_conductual",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "techniqueId": "p_sst_ensayo_conductual",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Ensayo conductual (role-playing) con coaching",
+          "techniqueLabel": "Ensayo conductual (role-playing) con coaching",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa: role-playing con coaching para adquirir y afinar respuestas interpersonales nuevas.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "tecnicaId": "p_sst_asertividad",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "techniqueId": "p_sst_asertividad",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+          "techniqueLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Encaja cuando el ensayo interpersonal se orienta a pedir, decir no, expresar necesidades o poner límites.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "tecnicaId": "m_sst_reparacion",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "techniqueId": "m_sst_reparacion",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+          "techniqueLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro específica para ensayar reparación relacional: disculpa, aclaración o reintento comunicativo.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "modeloId": "entrenamiento-habilidades-sociales",
+          "tecnicaId": "m_sst_pausa_reformular",
+          "modelId": "entrenamiento-habilidades-sociales",
+          "techniqueId": "m_sst_pausa_reformular",
+          "modeloLabel": "Entrenamiento en habilidades sociales",
+          "modelLabel": "Entrenamiento en habilidades sociales",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Pausa y reformulación durante el ensayo",
+          "techniqueLabel": "Pausa y reformulación durante el ensayo",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro útil dentro del ensayo para detener, reformular y volver a intentar una respuesta interpersonal más eficaz.",
+          "sourceFile": "data/Core/modelos/conductismo/entrenamiento-habilidades-sociales.json"
+        },
+        {
+          "modeloId": "terapia-dialectico-conductual-linehan-1993",
+          "tecnicaId": "p_dbt_ensayo_conductual",
+          "modelId": "terapia-dialectico-conductual-linehan-1993",
+          "techniqueId": "p_dbt_ensayo_conductual",
+          "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+          "modelLabel": "Terapia dialéctico–conductual (DBT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+          "techniqueLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia clara en DBT cuando se practican habilidades de efectividad interpersonal mediante role-play y práctica guiada.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-dialectico-conductual-linehan-1993.json"
+        },
+        {
+          "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+          "tecnicaId": "p_tccstd_habilidades_sociales",
+          "modelId": "terapia-cognitivo-conductual-estandar-1980",
+          "techniqueId": "p_tccstd_habilidades_sociales",
+          "modeloLabel": "Terapia cognitivo-conductual estándar",
+          "modelLabel": "Terapia cognitivo-conductual estándar",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Entrenamiento en habilidades sociales y asertividad",
+          "techniqueLabel": "Entrenamiento en habilidades sociales y asertividad",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia directa en TCC estándar cuando el foco es entrenar repertorio interpersonal y asertividad.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+        },
+        {
+          "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+          "tecnicaId": "m_tccstd_ensayo",
+          "modelId": "terapia-cognitivo-conductual-estandar-1980",
+          "techniqueId": "m_tccstd_ensayo",
+          "modeloLabel": "Terapia cognitivo-conductual estándar",
+          "modelLabel": "Terapia cognitivo-conductual estándar",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Ensayo conductual en sesión",
+          "techniqueLabel": "Ensayo conductual en sesión",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro de ensayo conductual en sesión aplicable a respuestas relacionales nuevas.",
+          "sourceFile": "data/Core/modelos/cognitivo/terapia-cognitivo-conductual-estandar-1980.json"
+        },
+        {
+          "modeloId": "cbasp-mccullough",
+          "tecnicaId": "p_cbasp_ensayoConductual",
+          "modelId": "cbasp-mccullough",
+          "techniqueId": "p_cbasp_ensayoConductual",
+          "modeloLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+          "modelLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+          "techniqueLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Encaja como ensayo interpersonal correctivo cuando se practican nuevas formas de responder en relaciones problemáticas.",
+          "sourceFile": "data/Core/modelos/integrativo/cbasp-mccullough.json"
+        },
+        {
+          "modeloId": "sullivan-psicoanalisis-interpersonal",
+          "tecnicaId": "p_sullivan_ensayo_respuestas",
+          "modelId": "sullivan-psicoanalisis-interpersonal",
+          "techniqueId": "p_sullivan_ensayo_respuestas",
+          "modeloLabel": "Interpersonal – Sullivan",
+          "modelLabel": "Interpersonal – Sullivan",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Ensayo de respuestas interpersonales alternativas",
+          "techniqueLabel": "Ensayo de respuestas interpersonales alternativas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia válida: ensayo de respuestas interpersonales alternativas dentro de una lógica interpersonal clásica.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json"
+        },
+        {
+          "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "tecnicaId": "m_feixas_ensayo_comunicacion",
+          "modelId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+          "techniqueId": "m_feixas_ensayo_comunicacion",
+          "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "modelLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Ensayo de comunicación desde la nueva posición",
+          "techniqueLabel": "Ensayo de comunicación desde la nueva posición",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro pertinente cuando la nueva respuesta relacional expresa una posición personal distinta dentro del sistema de constructos.",
+          "sourceFile": "data/Core/modelos/constructivista/psicoterapia-constructos-personales-integrativa-feixas-villegas-2000.json"
+        },
+        {
+          "modeloId": "polaridades-semanticas",
+          "tecnicaId": "m_ugazio_ensayoVerbal",
+          "modelId": "polaridades-semanticas",
+          "techniqueId": "m_ugazio_ensayoVerbal",
+          "modeloLabel": "Modelo de polaridades semánticas",
+          "modelLabel": "Modelo de polaridades semánticas",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Ensayo verbal de nuevas posiciones",
+          "techniqueLabel": "Ensayo verbal de nuevas posiciones",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro útil para ensayar verbalmente nuevas posiciones relacionales dentro de una polaridad semántica rígida.",
+          "sourceFile": "data/Core/modelos/constructivista/polaridades-semanticas.json"
+        },
+        {
+          "modeloId": "self-dialogico-hermans",
+          "tecnicaId": "m_hermans_ensayoNuevaVoz",
+          "modelId": "self-dialogico-hermans",
+          "techniqueId": "m_hermans_ensayoNuevaVoz",
+          "modeloLabel": "Teoría del self dialógico",
+          "modelLabel": "Teoría del self dialógico",
+          "grupo": "Constructivista",
+          "tecnicaLabel": "Ensayo verbal de nueva posición",
+          "techniqueLabel": "Ensayo verbal de nueva posición",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Encaja cuando el ensayo interpersonal se entiende como práctica de una nueva voz o posición del self en relación.",
+          "sourceFile": "data/Core/modelos/constructivista/self-dialogico-hermans.json"
+        },
+        {
+          "modeloId": "terapia-pareja-conductual-tradicional-1979",
+          "tecnicaId": "m_tbct_ensayo_peticiones",
+          "modelId": "terapia-pareja-conductual-tradicional-1979",
+          "techniqueId": "m_tbct_ensayo_peticiones",
+          "modeloLabel": "Terapia de pareja conductual tradicional",
+          "modelLabel": "Terapia de pareja conductual tradicional",
+          "grupo": "Conductismo",
+          "tecnicaLabel": "Ensayo conductual de peticiones",
+          "techniqueLabel": "Ensayo conductual de peticiones",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro específica de práctica interpersonal orientada a formular peticiones más claras y funcionales.",
+          "sourceFile": "data/Core/modelos/conductismo/terapia-pareja-conductual-tradicional-1979.json"
+        },
+        {
+          "modeloId": "terapia-gestalt-perls-1951",
+          "tecnicaId": "m_gestalt_micro_limite",
+          "modelId": "terapia-gestalt-perls-1951",
+          "techniqueId": "m_gestalt_micro_limite",
+          "modeloLabel": "Terapia Gestalt",
+          "modelLabel": "Terapia Gestalt",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Micro-ensayo de límite",
+          "techniqueLabel": "Micro-ensayo de límite",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Equivalencia parcial: no es entrenamiento interpersonal estructurado, pero sí micro-ensayo directo de una respuesta relacional nueva, especialmente en límites.",
+          "sourceFile": "data/Core/modelos/humanista/terapia-gestalt-perls-1951.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_ensayo_interpersonal_valores",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_ensayo_interpersonal_valores",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Ensayo en sesión de respuesta interpersonal guiada por valores",
+          "techniqueLabel": "Ensayo en sesión de respuesta interpersonal guiada por valores",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "extra_repo",
+          "nota": "Ensayo en sesión de una interacción interpersonal difícil (por ejemplo pedir algo, poner un límite o expresar desacuerdo) practicando una respuesta alineada con valores mientras se mantiene apertura al malestar interno. Coherente con acción comprometida y choice point en ACT, aunque no aparece con este nombre explícito en el repo.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "m_act_role_play_conversacion_dificil",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "m_act_role_play_conversacion_dificil",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Role-play de conversación difícil con apertura experiencial",
+          "techniqueLabel": "Role-play de conversación difícil con apertura experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "extra_repo",
+          "nota": "Role-play breve de una conversación interpersonal difícil donde el paciente practica permanecer presente y responder desde valores en lugar de evitación experiencial. Micro coherente con ACT aunque no esté formalizada como técnica explícita en el repo.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        }
+      ]
+    },
     "evocar-razones-propias-para-cambiar": {
       "id": "evocar-razones-propias-para-cambiar",
       "label": "Evocar razones propias para cambiar",
@@ -15451,6 +17016,9 @@
     "Aprendizaje experiencial y testeo de hipótesis": [
       "disenar-experimentos-conductuales"
     ],
+    "Intervención interpersonal y ensayo conductual": [
+      "ensayar-interaccion-interpersonal"
+    ],
     "Motivación, cambio y compromiso": [
       "evocar-razones-propias-para-cambiar"
     ],
@@ -16024,6 +17592,14 @@
         "tecnicaId": "m_ugazio_excepciones",
         "tecnicaLabel": "Introducir excepciones semánticas",
         "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "m_ugazio_ensayoVerbal",
+        "tecnicaLabel": "Ensayo verbal de nuevas posiciones",
+        "tecnicaTipo": "micro"
       }
     ],
     "intervencion-psicosocial-desplazamiento-forzado-2005": [
@@ -16108,6 +17684,176 @@
         "tecnicaTipo": "micro"
       }
     ],
+    "ipt-klerman-weissman-1984": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "p_ipt_ensayo_conductual",
+        "tecnicaLabel": "Ensayo de nuevas conductas interpersonales",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "m_ipt_role_playing",
+        "tecnicaLabel": "Role-playing focalizado",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "p_ipt_formulacion_interpersonal",
+        "tecnicaLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "m_ipt_expectativas",
+        "tecnicaLabel": "Exploración de expectativas relacionales",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "entrenamiento-habilidades-sociales": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "p_sst_ensayo_conductual",
+        "tecnicaLabel": "Ensayo conductual (role-playing) con coaching",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "p_sst_asertividad",
+        "tecnicaLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "m_sst_reparacion",
+        "tecnicaLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "m_sst_pausa_reformular",
+        "tecnicaLabel": "Pausa y reformulación durante el ensayo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-dialectico-conductual-linehan-1993": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "p_dbt_ensayo_conductual",
+        "tecnicaLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "terapia-cognitivo-conductual-estandar-1980": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "p_tccstd_habilidades_sociales",
+        "tecnicaLabel": "Entrenamiento en habilidades sociales y asertividad",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "m_tccstd_ensayo",
+        "tecnicaLabel": "Ensayo conductual en sesión",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "cbasp-mccullough": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "p_cbasp_ensayoConductual",
+        "tecnicaLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "sullivan-psicoanalisis-interpersonal": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "p_sullivan_ensayo_respuestas",
+        "tecnicaLabel": "Ensayo de respuestas interpersonales alternativas",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "p_sullivan_patrones_recurrentes",
+        "tecnicaLabel": "Identificación de patrones relacionales recurrentes",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "m_feixas_ensayo_comunicacion",
+        "tecnicaLabel": "Ensayo de comunicación desde la nueva posición",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "m_feixas_nombrar_constructo",
+        "tecnicaLabel": "Nombrar el constructo implícito en vivo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "self-dialogico-hermans": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "m_hermans_ensayoNuevaVoz",
+        "tecnicaLabel": "Ensayo verbal de nueva posición",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "m_hermans_nominarVoz",
+        "tecnicaLabel": "Nombrar la voz activa",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-pareja-conductual-tradicional-1979": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "tecnicaId": "m_tbct_ensayo_peticiones",
+        "tecnicaLabel": "Ensayo conductual de peticiones",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "psicoterapia-psicodinamica-breve": [
       {
         "isomorfismoId": "explorar-patron-relacional-repetido",
@@ -16131,24 +17877,6 @@
         "categoria": "Patrones interpersonales, repetición y mentalización",
         "tecnicaId": "m_spb_senal_repeticion",
         "tecnicaLabel": "Señalar repetición relacional sin acusar",
-        "tecnicaTipo": "micro"
-      }
-    ],
-    "ipt-klerman-weissman-1984": [
-      {
-        "isomorfismoId": "explorar-patron-relacional-repetido",
-        "isomorfismoLabel": "Explorar patrón relacional repetido",
-        "categoria": "Patrones interpersonales, repetición y mentalización",
-        "tecnicaId": "p_ipt_formulacion_interpersonal",
-        "tecnicaLabel": "Evaluación interpersonal y formulación del foco terapéutico",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "explorar-patron-relacional-repetido",
-        "isomorfismoLabel": "Explorar patrón relacional repetido",
-        "categoria": "Patrones interpersonales, repetición y mentalización",
-        "tecnicaId": "m_ipt_expectativas",
-        "tecnicaLabel": "Exploración de expectativas relacionales",
         "tecnicaTipo": "micro"
       }
     ],
@@ -16216,16 +17944,6 @@
         "tecnicaId": "m_relacional_error",
         "tecnicaLabel": "Reconocer un error terapéutico",
         "tecnicaTipo": "micro"
-      }
-    ],
-    "sullivan-psicoanalisis-interpersonal": [
-      {
-        "isomorfismoId": "explorar-patron-relacional-repetido",
-        "isomorfismoLabel": "Explorar patrón relacional repetido",
-        "categoria": "Patrones interpersonales, repetición y mentalización",
-        "tecnicaId": "p_sullivan_patrones_recurrentes",
-        "tecnicaLabel": "Identificación de patrones relacionales recurrentes",
-        "tecnicaTipo": "procedimiento"
       }
     ],
     "psicodinamica-ciclica-wachtel": [
@@ -16485,26 +18203,6 @@
         "categoria": "Nombrado, formulación y clarificación",
         "tecnicaId": "m_schema_nombrar_modo",
         "tecnicaLabel": "Nombrar el modo activo",
-        "tecnicaTipo": "micro"
-      }
-    ],
-    "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000": [
-      {
-        "isomorfismoId": "nombrar-el-problema",
-        "isomorfismoLabel": "Nombrar el problema",
-        "categoria": "Nombrado, formulación y clarificación",
-        "tecnicaId": "m_feixas_nombrar_constructo",
-        "tecnicaLabel": "Nombrar el constructo implícito en vivo",
-        "tecnicaTipo": "micro"
-      }
-    ],
-    "self-dialogico-hermans": [
-      {
-        "isomorfismoId": "nombrar-el-problema",
-        "isomorfismoLabel": "Nombrar el problema",
-        "categoria": "Nombrado, formulación y clarificación",
-        "tecnicaId": "m_hermans_nominarVoz",
-        "tecnicaLabel": "Nombrar la voz activa",
         "tecnicaTipo": "micro"
       }
     ],
@@ -17108,6 +18806,186 @@
         "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
         "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
         "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "p_ipt_ensayo_conductual": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "ipt-klerman-weissman-1984",
+        "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+        "tecnicaId": "p_ipt_ensayo_conductual",
+        "tecnicaLabel": "Ensayo de nuevas conductas interpersonales",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_ipt_role_playing": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "ipt-klerman-weissman-1984",
+        "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+        "tecnicaId": "m_ipt_role_playing",
+        "tecnicaLabel": "Role-playing focalizado",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_sst_ensayo_conductual": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "entrenamiento-habilidades-sociales",
+        "modeloLabel": "Entrenamiento en habilidades sociales",
+        "tecnicaId": "p_sst_ensayo_conductual",
+        "tecnicaLabel": "Ensayo conductual (role-playing) con coaching",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "p_sst_asertividad": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "entrenamiento-habilidades-sociales",
+        "modeloLabel": "Entrenamiento en habilidades sociales",
+        "tecnicaId": "p_sst_asertividad",
+        "tecnicaLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_sst_reparacion": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "entrenamiento-habilidades-sociales",
+        "modeloLabel": "Entrenamiento en habilidades sociales",
+        "tecnicaId": "m_sst_reparacion",
+        "tecnicaLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_sst_pausa_reformular": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "entrenamiento-habilidades-sociales",
+        "modeloLabel": "Entrenamiento en habilidades sociales",
+        "tecnicaId": "m_sst_pausa_reformular",
+        "tecnicaLabel": "Pausa y reformulación durante el ensayo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_dbt_ensayo_conductual": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "terapia-dialectico-conductual-linehan-1993",
+        "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+        "tecnicaId": "p_dbt_ensayo_conductual",
+        "tecnicaLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "p_tccstd_habilidades_sociales": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+        "modeloLabel": "Terapia cognitivo-conductual estándar",
+        "tecnicaId": "p_tccstd_habilidades_sociales",
+        "tecnicaLabel": "Entrenamiento en habilidades sociales y asertividad",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_tccstd_ensayo": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+        "modeloLabel": "Terapia cognitivo-conductual estándar",
+        "tecnicaId": "m_tccstd_ensayo",
+        "tecnicaLabel": "Ensayo conductual en sesión",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_cbasp_ensayoConductual": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "cbasp-mccullough",
+        "modeloLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+        "tecnicaId": "p_cbasp_ensayoConductual",
+        "tecnicaLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "p_sullivan_ensayo_respuestas": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "sullivan-psicoanalisis-interpersonal",
+        "modeloLabel": "Interpersonal – Sullivan",
+        "tecnicaId": "p_sullivan_ensayo_respuestas",
+        "tecnicaLabel": "Ensayo de respuestas interpersonales alternativas",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_feixas_ensayo_comunicacion": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+        "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+        "tecnicaId": "m_feixas_ensayo_comunicacion",
+        "tecnicaLabel": "Ensayo de comunicación desde la nueva posición",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_ugazio_ensayoVerbal": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "polaridades-semanticas",
+        "modeloLabel": "Modelo de polaridades semánticas",
+        "tecnicaId": "m_ugazio_ensayoVerbal",
+        "tecnicaLabel": "Ensayo verbal de nuevas posiciones",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_hermans_ensayoNuevaVoz": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "self-dialogico-hermans",
+        "modeloLabel": "Teoría del self dialógico",
+        "tecnicaId": "m_hermans_ensayoNuevaVoz",
+        "tecnicaLabel": "Ensayo verbal de nueva posición",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_tbct_ensayo_peticiones": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "terapia-pareja-conductual-tradicional-1979",
+        "modeloLabel": "Terapia de pareja conductual tradicional",
+        "tecnicaId": "m_tbct_ensayo_peticiones",
+        "tecnicaLabel": "Ensayo conductual de peticiones",
+        "tecnicaTipo": "micro"
       }
     ],
     "p_spb_patron_relacional": [
@@ -18622,6 +20500,186 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
+    "ipt-klerman-weissman-1984::p_ipt_ensayo_conductual": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "ipt-klerman-weissman-1984",
+        "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+        "tecnicaId": "p_ipt_ensayo_conductual",
+        "tecnicaLabel": "Ensayo de nuevas conductas interpersonales",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "ipt-klerman-weissman-1984::m_ipt_role_playing": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "ipt-klerman-weissman-1984",
+        "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+        "tecnicaId": "m_ipt_role_playing",
+        "tecnicaLabel": "Role-playing focalizado",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "entrenamiento-habilidades-sociales::p_sst_ensayo_conductual": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "entrenamiento-habilidades-sociales",
+        "modeloLabel": "Entrenamiento en habilidades sociales",
+        "tecnicaId": "p_sst_ensayo_conductual",
+        "tecnicaLabel": "Ensayo conductual (role-playing) con coaching",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "entrenamiento-habilidades-sociales::p_sst_asertividad": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "entrenamiento-habilidades-sociales",
+        "modeloLabel": "Entrenamiento en habilidades sociales",
+        "tecnicaId": "p_sst_asertividad",
+        "tecnicaLabel": "Entrenamiento en asertividad (pedir, decir no, expresar límites)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "entrenamiento-habilidades-sociales::m_sst_reparacion": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "entrenamiento-habilidades-sociales",
+        "modeloLabel": "Entrenamiento en habilidades sociales",
+        "tecnicaId": "m_sst_reparacion",
+        "tecnicaLabel": "Ensayo de reparación (disculpa, aclaración, reintento)",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "entrenamiento-habilidades-sociales::m_sst_pausa_reformular": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "entrenamiento-habilidades-sociales",
+        "modeloLabel": "Entrenamiento en habilidades sociales",
+        "tecnicaId": "m_sst_pausa_reformular",
+        "tecnicaLabel": "Pausa y reformulación durante el ensayo",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-dialectico-conductual-linehan-1993::p_dbt_ensayo_conductual": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "terapia-dialectico-conductual-linehan-1993",
+        "modeloLabel": "Terapia dialéctico–conductual (DBT)",
+        "tecnicaId": "p_dbt_ensayo_conductual",
+        "tecnicaLabel": "Entrenamiento y ensayo conductual en sesión (role-play y práctica guiada)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "terapia-cognitivo-conductual-estandar-1980::p_tccstd_habilidades_sociales": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+        "modeloLabel": "Terapia cognitivo-conductual estándar",
+        "tecnicaId": "p_tccstd_habilidades_sociales",
+        "tecnicaLabel": "Entrenamiento en habilidades sociales y asertividad",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "terapia-cognitivo-conductual-estandar-1980::m_tccstd_ensayo": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+        "modeloLabel": "Terapia cognitivo-conductual estándar",
+        "tecnicaId": "m_tccstd_ensayo",
+        "tecnicaLabel": "Ensayo conductual en sesión",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "cbasp-mccullough::p_cbasp_ensayoConductual": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "cbasp-mccullough",
+        "modeloLabel": "CBASP – Cognitive Behavioral Analysis System of Psychotherapy",
+        "tecnicaId": "p_cbasp_ensayoConductual",
+        "tecnicaLabel": "Inoculación Conductual / Ensayo Conductual (Behavioral Practice / Shaping)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "sullivan-psicoanalisis-interpersonal::p_sullivan_ensayo_respuestas": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "sullivan-psicoanalisis-interpersonal",
+        "modeloLabel": "Interpersonal – Sullivan",
+        "tecnicaId": "p_sullivan_ensayo_respuestas",
+        "tecnicaLabel": "Ensayo de respuestas interpersonales alternativas",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000::m_feixas_ensayo_comunicacion": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
+        "modeloLabel": "Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas)",
+        "tecnicaId": "m_feixas_ensayo_comunicacion",
+        "tecnicaLabel": "Ensayo de comunicación desde la nueva posición",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "polaridades-semanticas::m_ugazio_ensayoVerbal": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "polaridades-semanticas",
+        "modeloLabel": "Modelo de polaridades semánticas",
+        "tecnicaId": "m_ugazio_ensayoVerbal",
+        "tecnicaLabel": "Ensayo verbal de nuevas posiciones",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "self-dialogico-hermans::m_hermans_ensayoNuevaVoz": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "self-dialogico-hermans",
+        "modeloLabel": "Teoría del self dialógico",
+        "tecnicaId": "m_hermans_ensayoNuevaVoz",
+        "tecnicaLabel": "Ensayo verbal de nueva posición",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "terapia-pareja-conductual-tradicional-1979::m_tbct_ensayo_peticiones": [
+      {
+        "isomorfismoId": "ensayar-interaccion-interpersonal",
+        "isomorfismoLabel": "Ensayar interacción interpersonal",
+        "categoria": "Intervención interpersonal y ensayo conductual",
+        "modeloId": "terapia-pareja-conductual-tradicional-1979",
+        "modeloLabel": "Terapia de pareja conductual tradicional",
+        "tecnicaId": "m_tbct_ensayo_peticiones",
+        "tecnicaLabel": "Ensayo conductual de peticiones",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "psicoterapia-psicodinamica-breve::p_spb_patron_relacional": [
       {
         "isomorfismoId": "explorar-patron-relacional-repetido",
@@ -19614,9 +21672,9 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 23,
-    "totalEntries": 210,
-    "totalOk": 127,
+    "totalIsomorfismos": 24,
+    "totalEntries": 228,
+    "totalOk": 142,
     "totalFaltaId": 21,
     "totalFaltaModelo": 27,
     "totalDudoso": 0,
