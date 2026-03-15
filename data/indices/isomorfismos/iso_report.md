@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T14:30:12.656Z
+Generado: 2026-03-15T14:31:22.797Z
 
 ## Amplificar experiencia emergente
 
@@ -94,6 +94,18 @@ Generado: 2026-03-15T14:30:12.656Z
 - Teoría de los Constructos Personales (PCP) — Experimentos de anticipación [ok]
 - Teoría de los Constructos Personales (PCP) — Ensayo conductual de nuevas anticipaciones [ok]
 - Teoría de los Constructos Personales (PCP) — Construcción de alternativas [parcial]
+
+## Evocar razones propias para cambiar
+
+- ID: `evocar-razones-propias-para-cambiar`
+- Categoría: Motivación, cambio y compromiso
+- Archivo fuente: `data/indices/isomorfismos/fuente/evocar-razones-propias-para-cambiar.json`
+- Entradas: 4
+
+- entrevista-motivacional-miller-rollnick-1983 — p_mi_evocar_change_talk [falta_modelo]
+- entrevista-motivacional-miller-rollnick-1983 — m_mi_evocative_questions [falta_modelo]
+- process-based-therapy-hayes-hofmann-2021 — p_pbt_clarificacion_motivacional [falta_modelo]
+- Terapia de Aceptación y Compromiso (ACT) — Clarificación estructurada de valores [ok]
 
 ## Explorar patrón relacional repetido
 

@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-15T14:30:12.656Z",
+    "generatedAt": "2026-03-15T14:31:22.797Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -941,6 +941,89 @@
           "estado": "parcial",
           "nota": "Construcción de alternativas que puede convertirse en experimento conductual, aunque no siempre lo implica.",
           "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        }
+      ]
+    },
+    {
+      "id": "evocar-razones-propias-para-cambiar",
+      "label": "Evocar razones propias para cambiar",
+      "definicion": "Facilitar que el paciente verbalice activamente sus propias razones, deseos, capacidades o necesidades de cambio, aumentando la motivación intrínseca mediante lenguaje auto-generado en favor del cambio.",
+      "categoria": "Motivación, cambio y compromiso",
+      "tags": [
+        "motivacion",
+        "change talk",
+        "motivacion intrinseca",
+        "razones para cambiar",
+        "entrevista motivacional",
+        "lenguaje de cambio",
+        "valores",
+        "compromiso"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/evocar-razones-propias-para-cambiar.json",
+      "entries": [
+        {
+          "modeloId": "entrevista-motivacional-miller-rollnick-1983",
+          "tecnicaId": "p_mi_evocar_change_talk",
+          "modelId": "entrevista-motivacional-miller-rollnick-1983",
+          "techniqueId": "p_mi_evocar_change_talk",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Correspondencia prototípica: preguntas evocativas destinadas a generar lenguaje de cambio del propio paciente.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "entrevista-motivacional-miller-rollnick-1983",
+          "tecnicaId": "m_mi_evocative_questions",
+          "modelId": "entrevista-motivacional-miller-rollnick-1983",
+          "techniqueId": "m_mi_evocative_questions",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Microintervención central de MI que provoca que el paciente formule razones personales para cambiar.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "process-based-therapy-hayes-hofmann-2021",
+          "tecnicaId": "p_pbt_clarificacion_motivacional",
+          "modelId": "process-based-therapy-hayes-hofmann-2021",
+          "techniqueId": "p_pbt_clarificacion_motivacional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Procedimiento que busca activar verbalizaciones propias del paciente sobre motivos y metas de cambio.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_valores",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_valores",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Clarificación estructurada de valores",
+          "techniqueLabel": "Clarificación estructurada de valores",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Cuando se utiliza para que el paciente verbalice razones personales para actuar según valores.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
         }
       ]
     },
@@ -4045,6 +4128,54 @@
       ]
     },
     {
+      "id": "evocar-razones-propias-para-cambiar",
+      "label": "Evocar razones propias para cambiar",
+      "categoria": "Motivación, cambio y compromiso",
+      "definicion": "Facilitar que el paciente verbalice activamente sus propias razones, deseos, capacidades o necesidades de cambio, aumentando la motivación intrínseca mediante lenguaje auto-generado en favor del cambio.",
+      "tags": [
+        "motivacion",
+        "change talk",
+        "motivacion intrinseca",
+        "razones para cambiar",
+        "entrevista motivacional",
+        "lenguaje de cambio",
+        "valores",
+        "compromiso"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "evocar-razones-propias-para-cambiar",
+          "isomorfismoLabel": "Evocar razones propias para cambiar",
+          "categoria": "Motivación, cambio y compromiso",
+          "definicion": "Facilitar que el paciente verbalice activamente sus propias razones, deseos, capacidades o necesidades de cambio, aumentando la motivación intrínseca mediante lenguaje auto-generado en favor del cambio.",
+          "tags": [
+            "motivacion",
+            "change talk",
+            "motivacion intrinseca",
+            "razones para cambiar",
+            "entrevista motivacional",
+            "lenguaje de cambio",
+            "valores",
+            "compromiso"
+          ],
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_act_valores",
+          "techniqueId": "p_act_valores",
+          "tecnicaLabel": "Clarificación estructurada de valores",
+          "techniqueLabel": "Clarificación estructurada de valores",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Cuando se utiliza para que el paciente verbalice razones personales para actuar según valores.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        }
+      ]
+    },
+    {
       "id": "explorar-patron-relacional-repetido",
       "label": "Explorar patrón relacional repetido",
       "categoria": "Patrones interpersonales, repetición y mentalización",
@@ -7049,6 +7180,36 @@
       "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
     },
     {
+      "isomorfismoId": "evocar-razones-propias-para-cambiar",
+      "isomorfismoLabel": "Evocar razones propias para cambiar",
+      "categoria": "Motivación, cambio y compromiso",
+      "definicion": "Facilitar que el paciente verbalice activamente sus propias razones, deseos, capacidades o necesidades de cambio, aumentando la motivación intrínseca mediante lenguaje auto-generado en favor del cambio.",
+      "tags": [
+        "motivacion",
+        "change talk",
+        "motivacion intrinseca",
+        "razones para cambiar",
+        "entrevista motivacional",
+        "lenguaje de cambio",
+        "valores",
+        "compromiso"
+      ],
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_act_valores",
+      "techniqueId": "p_act_valores",
+      "tecnicaLabel": "Clarificación estructurada de valores",
+      "techniqueLabel": "Clarificación estructurada de valores",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Cuando se utiliza para que el paciente verbalice razones personales para actuar según valores.",
+      "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+    },
+    {
       "isomorfismoId": "explorar-patron-relacional-repetido",
       "isomorfismoLabel": "Explorar patrón relacional repetido",
       "categoria": "Patrones interpersonales, repetición y mentalización",
@@ -9908,6 +10069,89 @@
         }
       ]
     },
+    "evocar-razones-propias-para-cambiar": {
+      "id": "evocar-razones-propias-para-cambiar",
+      "label": "Evocar razones propias para cambiar",
+      "definicion": "Facilitar que el paciente verbalice activamente sus propias razones, deseos, capacidades o necesidades de cambio, aumentando la motivación intrínseca mediante lenguaje auto-generado en favor del cambio.",
+      "categoria": "Motivación, cambio y compromiso",
+      "tags": [
+        "motivacion",
+        "change talk",
+        "motivacion intrinseca",
+        "razones para cambiar",
+        "entrevista motivacional",
+        "lenguaje de cambio",
+        "valores",
+        "compromiso"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/evocar-razones-propias-para-cambiar.json",
+      "entries": [
+        {
+          "modeloId": "entrevista-motivacional-miller-rollnick-1983",
+          "tecnicaId": "p_mi_evocar_change_talk",
+          "modelId": "entrevista-motivacional-miller-rollnick-1983",
+          "techniqueId": "p_mi_evocar_change_talk",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Correspondencia prototípica: preguntas evocativas destinadas a generar lenguaje de cambio del propio paciente.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "entrevista-motivacional-miller-rollnick-1983",
+          "tecnicaId": "m_mi_evocative_questions",
+          "modelId": "entrevista-motivacional-miller-rollnick-1983",
+          "techniqueId": "m_mi_evocative_questions",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Microintervención central de MI que provoca que el paciente formule razones personales para cambiar.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "process-based-therapy-hayes-hofmann-2021",
+          "tecnicaId": "p_pbt_clarificacion_motivacional",
+          "modelId": "process-based-therapy-hayes-hofmann-2021",
+          "techniqueId": "p_pbt_clarificacion_motivacional",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Procedimiento que busca activar verbalizaciones propias del paciente sobre motivos y metas de cambio.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_valores",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_valores",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Clarificación estructurada de valores",
+          "techniqueLabel": "Clarificación estructurada de valores",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Cuando se utiliza para que el paciente verbalice razones personales para actuar según valores.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        }
+      ]
+    },
     "explorar-patron-relacional-repetido": {
       "id": "explorar-patron-relacional-repetido",
       "label": "Explorar patrón relacional repetido",
@@ -12050,6 +12294,9 @@
     "Aprendizaje experiencial y testeo de hipótesis": [
       "disenar-experimentos-conductuales"
     ],
+    "Motivación, cambio y compromiso": [
+      "evocar-razones-propias-para-cambiar"
+    ],
     "Patrones interpersonales, repetición y mentalización": [
       "explorar-patron-relacional-repetido"
     ],
@@ -12247,6 +12494,14 @@
         "categoria": "Exposición y procesamiento emocional",
         "tecnicaId": "p_act_aceptacion",
         "tecnicaLabel": "Entrenamiento en aceptación/expansión experiencial",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "evocar-razones-propias-para-cambiar",
+        "isomorfismoLabel": "Evocar razones propias para cambiar",
+        "categoria": "Motivación, cambio y compromiso",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
         "tecnicaTipo": "procedimiento"
       },
       {
@@ -13304,6 +13559,38 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
+    "p_act_valores": [
+      {
+        "isomorfismoId": "evocar-razones-propias-para-cambiar",
+        "isomorfismoLabel": "Evocar razones propias para cambiar",
+        "categoria": "Motivación, cambio y compromiso",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "p_spb_patron_relacional": [
       {
         "isomorfismoId": "explorar-patron-relacional-repetido",
@@ -13890,28 +14177,6 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
-    "p_act_valores": [
-      {
-        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
-        "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección de futuro, motivación y dirección",
-        "modeloId": "act-hayes-strosahl-wilson-1999",
-        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
-        "tecnicaId": "p_act_valores",
-        "tecnicaLabel": "Clarificación estructurada de valores",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "traducir-valores-en-accion",
-        "isomorfismoLabel": "Traducir valores en acción",
-        "categoria": "Acción guiada por valores",
-        "modeloId": "act-hayes-strosahl-wilson-1999",
-        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
-        "tecnicaId": "p_act_valores",
-        "tecnicaLabel": "Clarificación estructurada de valores",
-        "tecnicaTipo": "procedimiento"
-      }
-    ],
     "m_act_hacia_contra": [
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
@@ -14459,6 +14724,38 @@
         "modeloLabel": "Teoría de los Constructos Personales (PCP)",
         "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
         "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "act-hayes-strosahl-wilson-1999::p_act_valores": [
+      {
+        "isomorfismoId": "evocar-razones-propias-para-cambiar",
+        "isomorfismoLabel": "Evocar razones propias para cambiar",
+        "categoria": "Motivación, cambio y compromiso",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "traducir-valores-en-accion",
+        "isomorfismoLabel": "Traducir valores en acción",
+        "categoria": "Acción guiada por valores",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_valores",
+        "tecnicaLabel": "Clarificación estructurada de valores",
         "tecnicaTipo": "procedimiento"
       }
     ],
@@ -15048,28 +15345,6 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
-    "act-hayes-strosahl-wilson-1999::p_act_valores": [
-      {
-        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
-        "isomorfismoLabel": "Proyectar la vida sin el problema",
-        "categoria": "Proyección de futuro, motivación y dirección",
-        "modeloId": "act-hayes-strosahl-wilson-1999",
-        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
-        "tecnicaId": "p_act_valores",
-        "tecnicaLabel": "Clarificación estructurada de valores",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "traducir-valores-en-accion",
-        "isomorfismoLabel": "Traducir valores en acción",
-        "categoria": "Acción guiada por valores",
-        "modeloId": "act-hayes-strosahl-wilson-1999",
-        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
-        "tecnicaId": "p_act_valores",
-        "tecnicaLabel": "Clarificación estructurada de valores",
-        "tecnicaTipo": "procedimiento"
-      }
-    ],
     "act-hayes-strosahl-wilson-1999::m_act_hacia_contra": [
       {
         "isomorfismoId": "proyectar-la-vida-sin-el-problema",
@@ -15250,11 +15525,11 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 17,
-    "totalEntries": 173,
-    "totalOk": 97,
+    "totalIsomorfismos": 18,
+    "totalEntries": 177,
+    "totalOk": 98,
     "totalFaltaId": 21,
-    "totalFaltaModelo": 22,
+    "totalFaltaModelo": 25,
     "totalDudoso": 0,
     "totalDescartado": 0
   }
