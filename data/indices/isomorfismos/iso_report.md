@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-14T11:45:41.619Z
+Generado: 2026-03-15T14:20:59.060Z
 
 ## Aumentar tolerancia emocional
 
@@ -223,37 +223,20 @@ Generado: 2026-03-14T11:45:41.619Z
 - ID: `resolver-ambivalencia`
 - Categoría: Motivación, conflicto y toma de decisiones
 - Archivo fuente: `data/indices/isomorfismos/fuente/resolver-ambivalencia.json`
-- Entradas: 29
+- Entradas: 12
 
 - Entrevista Motivacional (Motivational Interviewing, MI) — Balance decisional (pros y contras) [ok]
-- Entrevista Motivacional (Motivational Interviewing, MI) — Reflejo de doble cara (Double-sided reflection) [ok]
-- Entrevista Motivacional (Motivational Interviewing, MI) — Resolver ambivalencia con valores (clarificación orientada a elección) [ok]
-- Entrevista Motivacional (Motivational Interviewing, MI) — Desarrollar discrepancia (conducta actual vs valores/metas) [ok]
-- Entrevista Motivacional (Motivational Interviewing, MI) — Evocar change talk (DARN: Deseo, Capacidad, Razones, Necesidad) [ok]
-- Entrevista Motivacional (Motivational Interviewing, MI) — Normalizar ambivalencia [ok]
-- Entrevista Motivacional (Motivational Interviewing, MI) — Pregunta evocadora de razones (¿qué te preocupa de seguir igual?) [ok]
 - Modelo Transteórico del Cambio (TTM) — Balance decisional (pros y contras) [ok]
-- Modelo Transteórico del Cambio (TTM) — Elicitar “change talk” y resolver ambivalencia (integración MI) [ok]
-- Modelo Transteórico del Cambio (TTM) — VB – Sustancias: ambivalencia y balance decisional (con ganancias del consumo) [ok]
-- Teoría de los Constructos Personales (PCP) — Exploración de dilemas personales [ok]
-- Teoría de los Constructos Personales (PCP) — Experimentos de anticipación [ok]
-- Teoría de los Constructos Personales (PCP) — Construcción de alternativas [ok]
-- Teoría de los Constructos Personales (PCP) — Preguntas de compatibilidad identitaria [ok]
-- Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas) — Identificación y formulación compartida de dilemas implicativos [ok]
-- Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas) — Resolución de dilemas implicativos mediante construcción de alternativas (terceras posiciones) [ok]
-- Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas) — Rejilla de constructos para mapear significados y detectar dilemas implicativos [ok]
-- Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas) — Extraer la frase bisagra del dilema [ok]
-- Psicoterapia de Constructos Personales Integrativa (Feixas & Villegas) — Validar la función protectora del dilema [ok]
-- Terapia Gestalt — Dos sillas para polaridades internas (topdog/underdog, crítico/vulnerable, control/impulso) [ok]
-- Terapia Gestalt — Integración de polaridades (reconocer y unir opuestos del self) [ok]
-- Terapia Gestalt — Cambio de silla instantáneo [ok]
-- Terapia de Aceptación y Compromiso (ACT) — Creativa desesperanza (revisión de la agenda de control) [ok]
-- Terapia de Aceptación y Compromiso (ACT) — Clarificación estructurada de valores [ok]
-- Terapia de Aceptación y Compromiso (ACT) — Matriz ACT (interno/externo × hacia/contra valores) [ok]
-- Terapia de Aceptación y Compromiso (ACT) — Pregunta hacia o contra valores [ok]
-- Terapia dialéctico–conductual (DBT) — Estrategias dialécticas (sí/y, síntesis y flexibilización de polaridades) [ok]
-- Terapia de Solución de Problemas (PST) — Toma de decisiones sistemática (análisis de consecuencias y factibilidad) [ok]
-- Terapia de Solución de Problemas (PST) — Listar pros y contras inmediatos [ok]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Reflejo de doble cara (Double-sided reflection) [parcial]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Resolver ambivalencia con valores (clarificación orientada a elección) [parcial]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Desarrollar discrepancia (conducta actual vs valores/metas) [parcial]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Evocar change talk (DARN: Deseo, Capacidad, Razones, Necesidad) [parcial]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Normalizar ambivalencia [parcial]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Pregunta evocadora de razones (¿qué te preocupa de seguir igual?) [parcial]
+- Modelo Transteórico del Cambio (TTM) — Elicitar “change talk” y resolver ambivalencia (integración MI) [parcial]
+- Modelo Transteórico del Cambio (TTM) — VB – Sustancias: ambivalencia y balance decisional (con ganancias del consumo) [parcial]
+- Terapia de Solución de Problemas (PST) — Toma de decisiones sistemática (análisis de consecuencias y factibilidad) [parcial]
+- Terapia de Solución de Problemas (PST) — Listar pros y contras inmediatos [parcial]
 
 ## Traducir valores en acción
 
