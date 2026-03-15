@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-15T20:11:59.504Z",
+  "generatedAt": "2026-03-15T20:17:14.213Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 177,
-    "links": 179,
-    "unresolvedInfluences": 614
+    "links": 180,
+    "unresolvedInfluences": 618
   },
   "nodes": [
     {
@@ -3062,6 +3062,36 @@
       "escuelaId": "conductismo"
     },
     {
+      "id": "interventive-interviewing-tomm-1987",
+      "label": "Interventive Interviewing",
+      "year": 1987,
+      "group": "Sistémico",
+      "importance": 3,
+      "type": "marco",
+      "isMarco": true,
+      "file": "modelos/sistemico/interventive-interviewing-tomm-1987.json",
+      "authors": "Karl Tomm",
+      "summary": "Interventive Interviewing es un modelo sistémico de entrevista terapéutica desarrollado por Karl Tomm a partir de una reflexión rigurosa sobre los efectos que las preguntas del terapeuta producen en el sistema consultante y en el propio terapeuta. Su tesis central es que preguntar nunca es un acto neutral: toda pregunta presupone una epistemología, posiciona al entrevistador frente al problema y genera efectos relacionales, cognitivos y emocionales. A partir de esta premisa, Tomm distingue distintos tipos de preguntas según dos ejes: si están guiadas por supuestos lineales o circulares, y si su intención principal es orientarse para comprender o intervenir para promover cambio. De esa combinación surgen, en su formulación clásica, las preguntas lineales, circulares, estratégicas y reflexivas. El modelo no reduce la entrevista a una recogida de datos, sino que la entiende como un proceso clínico performativo en el que el lenguaje del terapeuta participa activamente en la co-construcción de realidades, diferencias, posiciones relacionales y alternativas de acción. Aunque nace en el campo de la terapia familiar sistémica y dialoga estrechamente con la tradición de Milán y la cibernética de segundo orden, su valor excede ese contexto y ofrece una teoría fina de la intencionalidad clínica del preguntar, de la responsabilidad del terapeuta sobre los efectos de sus distinciones y de cómo ciertas formas de entrevista pueden favorecer autonomía reflexiva en lugar de control interpersonal.",
+      "influencias": [
+        "Terapia sistémica de Milán",
+        "Cibernética de segundo orden",
+        "Teoría de sistemas",
+        "Constructivismo",
+        "Construccionismo social"
+      ],
+      "refs": [
+        "Tomm, K. (1987). Interventive Interviewing: Part I. Strategizing as a Fourth Guideline for the Therapist. Family Process, 26(1), 3–13.",
+        "Tomm, K. (1987). Interventive Interviewing: Part II. Reflexive Questioning as a Means to Enable Self-Healing. Family Process, 26(2), 167–183.",
+        "Tomm, K. (1988). Interventive Interviewing: Part III. Intending to Ask Lineal, Circular, Strategic, or Reflexive Questions? Family Process, 27(1), 1–15.",
+        "Tomm, K. (1988). Interventive Interviewing: Part IV. The Reflexive Loop as a Frame for the Therapist. Family Process, 27(1)."
+      ],
+      "lat": 51.0447,
+      "lon": -114.0719,
+      "ciudad": "Calgary, Alberta",
+      "pais": "Canadá",
+      "escuelaId": "sistemico"
+    },
+    {
       "id": "emdr-shapiro-1989",
       "label": "EMDR",
       "year": 1989,
@@ -4974,25 +5004,6 @@
       "escuelaId": "cognitivo"
     },
     {
-      "id": "interventive-interviewing-tomm-1987",
-      "label": "Interventive Interviewing",
-      "year": null,
-      "group": "Sistémico",
-      "importance": 3,
-      "type": "marco",
-      "isMarco": true,
-      "file": "modelos/sistemico/interventive-interviewing-tomm-1987.json",
-      "authors": "Karl Tomm",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
-      "lat": 51.0447,
-      "lon": -114.0719,
-      "ciudad": "Calgary, Alberta",
-      "pais": "Canadá",
-      "escuelaId": "sistemico"
-    },
-    {
       "id": "vb_entorno_estabilizacion",
       "label": "Modelo de Estabilización del Entorno Vital",
       "year": null,
@@ -5685,6 +5696,10 @@
     {
       "source": "mindfulness-mbsr-contemplativo-1979",
       "target": "ifs-schwartz-1991"
+    },
+    {
+      "source": "construccionismo-social-gergen-1985",
+      "target": "interventive-interviewing-tomm-1987"
     },
     {
       "source": "escuela-palo-alto-mri-1959",
@@ -7679,6 +7694,22 @@
     {
       "target": "hipnosis-ericksoniana-1958",
       "influence": "Psicoanálisis"
+    },
+    {
+      "target": "interventive-interviewing-tomm-1987",
+      "influence": "Terapia sistémica de Milán"
+    },
+    {
+      "target": "interventive-interviewing-tomm-1987",
+      "influence": "Cibernética de segundo orden"
+    },
+    {
+      "target": "interventive-interviewing-tomm-1987",
+      "influence": "Teoría de sistemas"
+    },
+    {
+      "target": "interventive-interviewing-tomm-1987",
+      "influence": "Constructivismo"
     },
     {
       "target": "escuela-palo-alto-mri-1959",
