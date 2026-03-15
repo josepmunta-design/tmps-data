@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T20:24:24.159Z
+Generado: 2026-03-15T21:24:25.001Z
 
 ## Amplificar experiencia emergente
 
@@ -28,7 +28,7 @@ Generado: 2026-03-15T20:24:24.159Z
 - ID: `aumentar-conciencia-del-otro`
 - Categoría: Comprensión interpersonal y mentalización
 - Archivo fuente: `data/indices/isomorfismos/fuente/aumentar-conciencia-del-otro.json`
-- Entradas: 22
+- Entradas: 24
 
 - Mentalization-Based Treatment (MBT) — Trabajo con episodios concretos (análisis de escena) [ok]
 - Mentalization-Based Treatment (MBT) — Clarificación de malentendidos y chequeo de suposiciones [ok]
@@ -43,15 +43,17 @@ Generado: 2026-03-15T20:24:24.159Z
 - Terapia Metacognitiva Interpersonal (MIT) — Chequeo de evidencia mentalista [ok]
 - Psicoterapia relacional sistémica (Linares) — Preguntas circulares y de perspectiva [ok]
 - Psicoterapia relacional sistémica (Linares) — Invitar a la perspectiva del otro [ok]
-- RULER (Yale Center for Emotional Intelligence) — Blueprint para la resolución de conflictos [ok]
-- RULER (Yale Center for Emotional Intelligence) — Perspectiva emocional del otro (mini-Blueprint) [ok]
 - Interventive Interviewing — Preguntar qué piensa un miembro que otro siente [ok]
 - Interventive Interviewing — Pregunta triádica de observador [ok]
 - Interventive Interviewing — Pregunta de observador externo [ok]
 - Interventive Interviewing — Exploración de diferencias perceptivas entre miembros [ok]
 - Interventive Interviewing — Preguntas reflexivas para activar autoobservación [ok]
-- Interventive Interviewing — Mapeo circular de secuencias interactivas [parcial]
-- Interventive Interviewing — Entrevista de clarificación de efectos de segundo orden [parcial]
+- RULER (Yale Center for Emotional Intelligence) — Blueprint para la resolución de conflictos [ok]
+- RULER (Yale Center for Emotional Intelligence) — Perspectiva emocional del otro (mini-Blueprint) [ok]
+- Teoría de los Constructos Personales (PCP) — m_kelly_perspectiva_otro [falta_id]
+- constructivismo-feixas — m_feixas_perspectiva_otro [falta_modelo]
+- Terapia narrativa — m_narrativa_perspectiva_otro [falta_id]
+- Terapia colaborativa — m_colab_explorar_perspectiva_otro [falta_id]
 
 ## Aumentar tolerancia emocional
 
