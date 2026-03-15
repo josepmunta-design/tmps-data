@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T20:08:06.449Z
+Generado: 2026-03-15T20:24:24.159Z
 
 ## Amplificar experiencia emergente
 
@@ -28,7 +28,7 @@ Generado: 2026-03-15T20:08:06.449Z
 - ID: `aumentar-conciencia-del-otro`
 - Categoría: Comprensión interpersonal y mentalización
 - Archivo fuente: `data/indices/isomorfismos/fuente/aumentar-conciencia-del-otro.json`
-- Entradas: 15
+- Entradas: 22
 
 - Mentalization-Based Treatment (MBT) — Trabajo con episodios concretos (análisis de escena) [ok]
 - Mentalization-Based Treatment (MBT) — Clarificación de malentendidos y chequeo de suposiciones [ok]
@@ -45,6 +45,13 @@ Generado: 2026-03-15T20:08:06.449Z
 - Psicoterapia relacional sistémica (Linares) — Invitar a la perspectiva del otro [ok]
 - RULER (Yale Center for Emotional Intelligence) — Blueprint para la resolución de conflictos [ok]
 - RULER (Yale Center for Emotional Intelligence) — Perspectiva emocional del otro (mini-Blueprint) [ok]
+- Interventive Interviewing — Preguntar qué piensa un miembro que otro siente [ok]
+- Interventive Interviewing — Pregunta triádica de observador [ok]
+- Interventive Interviewing — Pregunta de observador externo [ok]
+- Interventive Interviewing — Exploración de diferencias perceptivas entre miembros [ok]
+- Interventive Interviewing — Preguntas reflexivas para activar autoobservación [ok]
+- Interventive Interviewing — Mapeo circular de secuencias interactivas [parcial]
+- Interventive Interviewing — Entrevista de clarificación de efectos de segundo orden [parcial]
 
 ## Aumentar tolerancia emocional
 
