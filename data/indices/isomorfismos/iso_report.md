@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T19:50:32.965Z
+Generado: 2026-03-15T20:08:06.449Z
 
 ## Amplificar experiencia emergente
 
@@ -22,6 +22,29 @@ Generado: 2026-03-15T19:50:32.965Z
 - AEDP (Accelerated Experiential Dynamic Psychotherapy) — Evocación y profundización emocional [ok]
 - AEDP (Accelerated Experiential Dynamic Psychotherapy) — Seguimiento somático del afecto [ok]
 - AEDP (Accelerated Experiential Dynamic Psychotherapy) — Reflejo empático intensificado [ok]
+
+## Aumentar conciencia del otro
+
+- ID: `aumentar-conciencia-del-otro`
+- Categoría: Comprensión interpersonal y mentalización
+- Archivo fuente: `data/indices/isomorfismos/fuente/aumentar-conciencia-del-otro.json`
+- Entradas: 15
+
+- Mentalization-Based Treatment (MBT) — Trabajo con episodios concretos (análisis de escena) [ok]
+- Mentalization-Based Treatment (MBT) — Clarificación de malentendidos y chequeo de suposiciones [ok]
+- Mentalization-Based Treatment (MBT) — Rebobinar y reconstruir secuencias (rewind) [ok]
+- Mentalization-Based Treatment (MBT) — Pregunta de curiosidad mentalizadora (no-saber) [ok]
+- Mentalization-Based Treatment (MBT) — Distinguir hechos de interpretaciones [ok]
+- Mentalization-Based Treatment (MBT) — Explorar múltiples perspectivas [ok]
+- Mentalization-Based Treatment (MBT) — Chequear intención atribuida [ok]
+- Terapia Metacognitiva Interpersonal (MIT) — Diferenciación entre experiencia interna y realidad interpersonal [ok]
+- Terapia Metacognitiva Interpersonal (MIT) — Reflexión metacognitiva guiada [ok]
+- Terapia Metacognitiva Interpersonal (MIT) — Clarificación del estado mental del otro [ok]
+- Terapia Metacognitiva Interpersonal (MIT) — Chequeo de evidencia mentalista [ok]
+- Psicoterapia relacional sistémica (Linares) — Preguntas circulares y de perspectiva [ok]
+- Psicoterapia relacional sistémica (Linares) — Invitar a la perspectiva del otro [ok]
+- RULER (Yale Center for Emotional Intelligence) — Blueprint para la resolución de conflictos [ok]
+- RULER (Yale Center for Emotional Intelligence) — Perspectiva emocional del otro (mini-Blueprint) [ok]
 
 ## Aumentar tolerancia emocional
 
