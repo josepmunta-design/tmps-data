@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-15T14:36:57.862Z",
+    "generatedAt": "2026-03-15T14:42:27.331Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -2062,19 +2062,19 @@
           "modeloLabel": "Terapia enfocada en las emociones",
           "modelLabel": "Terapia enfocada en las emociones",
           "grupo": "Humanista",
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_id",
+          "tecnicaLabel": "Identificación de evitación emocional",
+          "techniqueLabel": "Identificación de evitación emocional",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
           "nota": "EFT identifica evitación emocional, pero el procedimiento concreto aún no está confirmado en el repo.",
           "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
         },
         {
           "modeloId": "focusing-gendlin-1978",
-          "tecnicaId": "p_focusing_detectar_bloqueo",
+          "tecnicaId": "p_focusing_identificacion_bloqueo_experiencial",
           "modelId": "focusing-gendlin-1978",
-          "techniqueId": "p_focusing_detectar_bloqueo",
+          "techniqueId": "p_focusing_identificacion_bloqueo_experiencial",
           "modeloLabel": null,
           "modelLabel": null,
           "grupo": null,
@@ -5029,6 +5029,34 @@
           "estado": "ok",
           "nota": "Procedimiento explícito de análisis de evitación experiencial.",
           "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "isomorfismoId": "identificar-evitacion-experiencial",
+          "isomorfismoLabel": "Identificar evitación experiencial",
+          "categoria": "Evitación y relación con la experiencia interna",
+          "definicion": "Detectar estrategias mediante las cuales la persona intenta escapar, suprimir o no contactar con pensamientos, emociones, recuerdos o sensaciones internas difíciles.",
+          "tags": [
+            "evitacion experiencial",
+            "emociones",
+            "supresion",
+            "control experiencial",
+            "aceptacion",
+            "rigidez psicologica"
+          ],
+          "modeloId": "eft-greenberg-1990",
+          "modelId": "eft-greenberg-1990",
+          "modeloLabel": "Terapia enfocada en las emociones",
+          "modelLabel": "Terapia enfocada en las emociones",
+          "grupo": "Humanista",
+          "tecnicaId": "p_eft_identificar_evitar_emocion",
+          "techniqueId": "p_eft_identificar_evitar_emocion",
+          "tecnicaLabel": "Identificación de evitación emocional",
+          "techniqueLabel": "Identificación de evitación emocional",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "EFT identifica evitación emocional, pero el procedimiento concreto aún no está confirmado en el repo.",
+          "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
         }
       ]
     },
@@ -8017,6 +8045,34 @@
       "estado": "ok",
       "nota": "Procedimiento explícito de análisis de evitación experiencial.",
       "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+    },
+    {
+      "isomorfismoId": "identificar-evitacion-experiencial",
+      "isomorfismoLabel": "Identificar evitación experiencial",
+      "categoria": "Evitación y relación con la experiencia interna",
+      "definicion": "Detectar estrategias mediante las cuales la persona intenta escapar, suprimir o no contactar con pensamientos, emociones, recuerdos o sensaciones internas difíciles.",
+      "tags": [
+        "evitacion experiencial",
+        "emociones",
+        "supresion",
+        "control experiencial",
+        "aceptacion",
+        "rigidez psicologica"
+      ],
+      "modeloId": "eft-greenberg-1990",
+      "modelId": "eft-greenberg-1990",
+      "modeloLabel": "Terapia enfocada en las emociones",
+      "modelLabel": "Terapia enfocada en las emociones",
+      "grupo": "Humanista",
+      "tecnicaId": "p_eft_identificar_evitar_emocion",
+      "techniqueId": "p_eft_identificar_evitar_emocion",
+      "tecnicaLabel": "Identificación de evitación emocional",
+      "techniqueLabel": "Identificación de evitación emocional",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "EFT identifica evitación emocional, pero el procedimiento concreto aún no está confirmado en el repo.",
+      "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
     },
     {
       "isomorfismoId": "identificar-funcion-del-sintoma",
@@ -11404,19 +11460,19 @@
           "modeloLabel": "Terapia enfocada en las emociones",
           "modelLabel": "Terapia enfocada en las emociones",
           "grupo": "Humanista",
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_id",
+          "tecnicaLabel": "Identificación de evitación emocional",
+          "techniqueLabel": "Identificación de evitación emocional",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
           "nota": "EFT identifica evitación emocional, pero el procedimiento concreto aún no está confirmado en el repo.",
           "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
         },
         {
           "modeloId": "focusing-gendlin-1978",
-          "tecnicaId": "p_focusing_detectar_bloqueo",
+          "tecnicaId": "p_focusing_identificacion_bloqueo_experiencial",
           "modelId": "focusing-gendlin-1978",
-          "techniqueId": "p_focusing_detectar_bloqueo",
+          "techniqueId": "p_focusing_identificacion_bloqueo_experiencial",
           "modeloLabel": null,
           "modelLabel": null,
           "grupo": null,
@@ -12712,6 +12768,14 @@
         "tecnicaId": "m_eft_shift_marker",
         "tecnicaLabel": "Marcaje de cambio experiencial (shift marker)",
         "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "identificar-evitacion-experiencial",
+        "isomorfismoLabel": "Identificar evitación experiencial",
+        "categoria": "Evitación y relación con la experiencia interna",
+        "tecnicaId": "p_eft_identificar_evitar_emocion",
+        "tecnicaLabel": "Identificación de evitación emocional",
+        "tecnicaTipo": "procedimiento"
       },
       {
         "isomorfismoId": "identificar-funcion-del-sintoma",
@@ -14202,6 +14266,18 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
+    "p_eft_identificar_evitar_emocion": [
+      {
+        "isomorfismoId": "identificar-evitacion-experiencial",
+        "isomorfismoLabel": "Identificar evitación experiencial",
+        "categoria": "Evitación y relación con la experiencia interna",
+        "modeloId": "eft-greenberg-1990",
+        "modeloLabel": "Terapia enfocada en las emociones",
+        "tecnicaId": "p_eft_identificar_evitar_emocion",
+        "tecnicaLabel": "Identificación de evitación emocional",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "p_af_abc": [
       {
         "isomorfismoId": "identificar-funcion-del-sintoma",
@@ -15380,6 +15456,18 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
+    "eft-greenberg-1990::p_eft_identificar_evitar_emocion": [
+      {
+        "isomorfismoId": "identificar-evitacion-experiencial",
+        "isomorfismoLabel": "Identificar evitación experiencial",
+        "categoria": "Evitación y relación con la experiencia interna",
+        "modeloId": "eft-greenberg-1990",
+        "modeloLabel": "Terapia enfocada en las emociones",
+        "tecnicaId": "p_eft_identificar_evitar_emocion",
+        "tecnicaLabel": "Identificación de evitación emocional",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "analisis-funcional-clinico-kanfer-saslow-1969::p_af_abc": [
       {
         "isomorfismoId": "identificar-funcion-del-sintoma",
@@ -15908,8 +15996,8 @@
   "stats": {
     "totalIsomorfismos": 20,
     "totalEntries": 183,
-    "totalOk": 99,
-    "totalFaltaId": 23,
+    "totalOk": 100,
+    "totalFaltaId": 22,
     "totalFaltaModelo": 28,
     "totalDudoso": 0,
     "totalDescartado": 0

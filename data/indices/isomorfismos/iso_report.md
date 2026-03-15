@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T14:36:57.862Z
+Generado: 2026-03-15T14:42:27.331Z
 
 ## Amplificar experiencia emergente
 
@@ -219,8 +219,8 @@ Generado: 2026-03-15T14:36:57.862Z
 - Entradas: 4
 
 - Terapia de Aceptación y Compromiso (ACT) — Análisis explícito de evitación experiencial [ok]
-- Terapia enfocada en las emociones — p_eft_identificar_evitar_emocion [falta_id]
-- focusing-gendlin-1978 — p_focusing_detectar_bloqueo [falta_modelo]
+- Terapia enfocada en las emociones — Identificación de evitación emocional [ok]
+- focusing-gendlin-1978 — p_focusing_identificacion_bloqueo_experiencial [falta_modelo]
 - CBT 3ª ola – MBCT — p_mbct_identificar_evitar_experiencia [falta_id]
 
 ## Identificar la función del síntoma
