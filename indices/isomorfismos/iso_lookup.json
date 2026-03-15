@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-15T19:22:11.824Z",
+    "generatedAt": "2026-03-15T19:28:16.681Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -717,6 +717,74 @@
           "estado": "falta_id",
           "nota": "La técnica fuente de Haley encaja, pero no existe aún una micro/procedimiento equivalente en el repo.",
           "sourceFile": "data/Core/modelos/sistemico/terapia-estrategica-1967.json"
+        }
+      ]
+    },
+    {
+      "id": "conectar-emocion-con-necesidad",
+      "label": "Conectar emoción con necesidad",
+      "definicion": "Interpretar la emoción como portadora de información adaptativa sobre una necesidad psicológica, relacional o de autoprotección, ayudando al paciente a pasar de la mera reacción afectiva a la clarificación de qué necesita realmente y qué dirección de acción sería más coherente con ello.",
+      "categoria": "Emoción, necesidad y dirección adaptativa",
+      "tags": [
+        "emocion",
+        "necesidad",
+        "necesidades psicologicas",
+        "clarificacion emocional",
+        "emocion primaria",
+        "señal adaptativa",
+        "direccion de accion",
+        "humanista",
+        "eft"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/conectar-emocion-con-necesidad.json",
+      "entries": [
+        {
+          "modeloId": "eft-greenberg-1990",
+          "tecnicaId": "p_eft_necesidades_insatisfechas",
+          "modelId": "eft-greenberg-1990",
+          "techniqueId": "p_eft_necesidades_insatisfechas",
+          "modeloLabel": "Terapia enfocada en las emociones",
+          "modelLabel": "Terapia enfocada en las emociones",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Trabajo con necesidades emocionales insatisfechas",
+          "techniqueLabel": "Trabajo con necesidades emocionales insatisfechas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa, central y prototípica: en EFT la emoción primaria adaptativa se trabaja explícitamente como vía de acceso a necesidades no satisfechas.",
+          "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+        },
+        {
+          "modeloId": "eft-greenberg-1990",
+          "tecnicaId": "m_eft_clarificacion_necesidad",
+          "modelId": "eft-greenberg-1990",
+          "techniqueId": "m_eft_clarificacion_necesidad",
+          "modeloLabel": "Terapia enfocada en las emociones",
+          "modelLabel": "Terapia enfocada en las emociones",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Clarificación explícita de necesidad emergente",
+          "techniqueLabel": "Clarificación explícita de necesidad emergente",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro exacta del repo: traduce directamente la emoción activada en una necesidad reconocida y verbalizable.",
+          "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+        },
+        {
+          "modeloId": "focusing-gendlin-1961",
+          "tecnicaId": "p_focusing_preguntar_al_feltsense",
+          "modelId": "focusing-gendlin-1961",
+          "techniqueId": "p_focusing_preguntar_al_feltsense",
+          "modeloLabel": "Focusing",
+          "modelLabel": "Focusing",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Preguntar al felt sense (evocación de respuesta implícita)",
+          "techniqueLabel": "Preguntar al felt sense (evocación de respuesta implícita)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Encaje parcial pero sólido: permite preguntar al felt sense 'qué necesita', aunque Focusing no formula tan explícitamente como EFT la emoción en términos de necesidad psicológica.",
+          "sourceFile": "data/Core/modelos/humanista/focusing-gendlin-1961.json"
         }
       ]
     },
@@ -4355,6 +4423,87 @@
         "lenguaje operacional"
       ],
       "records": []
+    },
+    {
+      "id": "conectar-emocion-con-necesidad",
+      "label": "Conectar emoción con necesidad",
+      "categoria": "Emoción, necesidad y dirección adaptativa",
+      "definicion": "Interpretar la emoción como portadora de información adaptativa sobre una necesidad psicológica, relacional o de autoprotección, ayudando al paciente a pasar de la mera reacción afectiva a la clarificación de qué necesita realmente y qué dirección de acción sería más coherente con ello.",
+      "tags": [
+        "emocion",
+        "necesidad",
+        "necesidades psicologicas",
+        "clarificacion emocional",
+        "emocion primaria",
+        "señal adaptativa",
+        "direccion de accion",
+        "humanista",
+        "eft"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "conectar-emocion-con-necesidad",
+          "isomorfismoLabel": "Conectar emoción con necesidad",
+          "categoria": "Emoción, necesidad y dirección adaptativa",
+          "definicion": "Interpretar la emoción como portadora de información adaptativa sobre una necesidad psicológica, relacional o de autoprotección, ayudando al paciente a pasar de la mera reacción afectiva a la clarificación de qué necesita realmente y qué dirección de acción sería más coherente con ello.",
+          "tags": [
+            "emocion",
+            "necesidad",
+            "necesidades psicologicas",
+            "clarificacion emocional",
+            "emocion primaria",
+            "señal adaptativa",
+            "direccion de accion",
+            "humanista",
+            "eft"
+          ],
+          "modeloId": "eft-greenberg-1990",
+          "modelId": "eft-greenberg-1990",
+          "modeloLabel": "Terapia enfocada en las emociones",
+          "modelLabel": "Terapia enfocada en las emociones",
+          "grupo": "Humanista",
+          "tecnicaId": "p_eft_necesidades_insatisfechas",
+          "techniqueId": "p_eft_necesidades_insatisfechas",
+          "tecnicaLabel": "Trabajo con necesidades emocionales insatisfechas",
+          "techniqueLabel": "Trabajo con necesidades emocionales insatisfechas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa, central y prototípica: en EFT la emoción primaria adaptativa se trabaja explícitamente como vía de acceso a necesidades no satisfechas.",
+          "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+        },
+        {
+          "isomorfismoId": "conectar-emocion-con-necesidad",
+          "isomorfismoLabel": "Conectar emoción con necesidad",
+          "categoria": "Emoción, necesidad y dirección adaptativa",
+          "definicion": "Interpretar la emoción como portadora de información adaptativa sobre una necesidad psicológica, relacional o de autoprotección, ayudando al paciente a pasar de la mera reacción afectiva a la clarificación de qué necesita realmente y qué dirección de acción sería más coherente con ello.",
+          "tags": [
+            "emocion",
+            "necesidad",
+            "necesidades psicologicas",
+            "clarificacion emocional",
+            "emocion primaria",
+            "señal adaptativa",
+            "direccion de accion",
+            "humanista",
+            "eft"
+          ],
+          "modeloId": "eft-greenberg-1990",
+          "modelId": "eft-greenberg-1990",
+          "modeloLabel": "Terapia enfocada en las emociones",
+          "modelLabel": "Terapia enfocada en las emociones",
+          "grupo": "Humanista",
+          "tecnicaId": "m_eft_clarificacion_necesidad",
+          "techniqueId": "m_eft_clarificacion_necesidad",
+          "tecnicaLabel": "Clarificación explícita de necesidad emergente",
+          "techniqueLabel": "Clarificación explícita de necesidad emergente",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro exacta del repo: traduce directamente la emoción activada en una necesidad reconocida y verbalizable.",
+          "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+        }
+      ]
     },
     {
       "id": "disenar-experimentos-conductuales",
@@ -8054,6 +8203,68 @@
       "sourceFile": "data/Core/modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json"
     },
     {
+      "isomorfismoId": "conectar-emocion-con-necesidad",
+      "isomorfismoLabel": "Conectar emoción con necesidad",
+      "categoria": "Emoción, necesidad y dirección adaptativa",
+      "definicion": "Interpretar la emoción como portadora de información adaptativa sobre una necesidad psicológica, relacional o de autoprotección, ayudando al paciente a pasar de la mera reacción afectiva a la clarificación de qué necesita realmente y qué dirección de acción sería más coherente con ello.",
+      "tags": [
+        "emocion",
+        "necesidad",
+        "necesidades psicologicas",
+        "clarificacion emocional",
+        "emocion primaria",
+        "señal adaptativa",
+        "direccion de accion",
+        "humanista",
+        "eft"
+      ],
+      "modeloId": "eft-greenberg-1990",
+      "modelId": "eft-greenberg-1990",
+      "modeloLabel": "Terapia enfocada en las emociones",
+      "modelLabel": "Terapia enfocada en las emociones",
+      "grupo": "Humanista",
+      "tecnicaId": "p_eft_necesidades_insatisfechas",
+      "techniqueId": "p_eft_necesidades_insatisfechas",
+      "tecnicaLabel": "Trabajo con necesidades emocionales insatisfechas",
+      "techniqueLabel": "Trabajo con necesidades emocionales insatisfechas",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia directa, central y prototípica: en EFT la emoción primaria adaptativa se trabaja explícitamente como vía de acceso a necesidades no satisfechas.",
+      "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+    },
+    {
+      "isomorfismoId": "conectar-emocion-con-necesidad",
+      "isomorfismoLabel": "Conectar emoción con necesidad",
+      "categoria": "Emoción, necesidad y dirección adaptativa",
+      "definicion": "Interpretar la emoción como portadora de información adaptativa sobre una necesidad psicológica, relacional o de autoprotección, ayudando al paciente a pasar de la mera reacción afectiva a la clarificación de qué necesita realmente y qué dirección de acción sería más coherente con ello.",
+      "tags": [
+        "emocion",
+        "necesidad",
+        "necesidades psicologicas",
+        "clarificacion emocional",
+        "emocion primaria",
+        "señal adaptativa",
+        "direccion de accion",
+        "humanista",
+        "eft"
+      ],
+      "modeloId": "eft-greenberg-1990",
+      "modelId": "eft-greenberg-1990",
+      "modeloLabel": "Terapia enfocada en las emociones",
+      "modelLabel": "Terapia enfocada en las emociones",
+      "grupo": "Humanista",
+      "tecnicaId": "m_eft_clarificacion_necesidad",
+      "techniqueId": "m_eft_clarificacion_necesidad",
+      "tecnicaLabel": "Clarificación explícita de necesidad emergente",
+      "techniqueLabel": "Clarificación explícita de necesidad emergente",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro exacta del repo: traduce directamente la emoción activada en una necesidad reconocida y verbalizable.",
+      "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+    },
+    {
       "isomorfismoId": "disenar-experimentos-conductuales",
       "isomorfismoLabel": "Diseñar experimentos conductuales",
       "categoria": "Aprendizaje experiencial y testeo de hipótesis",
@@ -11461,6 +11672,74 @@
         }
       ]
     },
+    "conectar-emocion-con-necesidad": {
+      "id": "conectar-emocion-con-necesidad",
+      "label": "Conectar emoción con necesidad",
+      "definicion": "Interpretar la emoción como portadora de información adaptativa sobre una necesidad psicológica, relacional o de autoprotección, ayudando al paciente a pasar de la mera reacción afectiva a la clarificación de qué necesita realmente y qué dirección de acción sería más coherente con ello.",
+      "categoria": "Emoción, necesidad y dirección adaptativa",
+      "tags": [
+        "emocion",
+        "necesidad",
+        "necesidades psicologicas",
+        "clarificacion emocional",
+        "emocion primaria",
+        "señal adaptativa",
+        "direccion de accion",
+        "humanista",
+        "eft"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/conectar-emocion-con-necesidad.json",
+      "entries": [
+        {
+          "modeloId": "eft-greenberg-1990",
+          "tecnicaId": "p_eft_necesidades_insatisfechas",
+          "modelId": "eft-greenberg-1990",
+          "techniqueId": "p_eft_necesidades_insatisfechas",
+          "modeloLabel": "Terapia enfocada en las emociones",
+          "modelLabel": "Terapia enfocada en las emociones",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Trabajo con necesidades emocionales insatisfechas",
+          "techniqueLabel": "Trabajo con necesidades emocionales insatisfechas",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa, central y prototípica: en EFT la emoción primaria adaptativa se trabaja explícitamente como vía de acceso a necesidades no satisfechas.",
+          "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+        },
+        {
+          "modeloId": "eft-greenberg-1990",
+          "tecnicaId": "m_eft_clarificacion_necesidad",
+          "modelId": "eft-greenberg-1990",
+          "techniqueId": "m_eft_clarificacion_necesidad",
+          "modeloLabel": "Terapia enfocada en las emociones",
+          "modelLabel": "Terapia enfocada en las emociones",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Clarificación explícita de necesidad emergente",
+          "techniqueLabel": "Clarificación explícita de necesidad emergente",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro exacta del repo: traduce directamente la emoción activada en una necesidad reconocida y verbalizable.",
+          "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+        },
+        {
+          "modeloId": "focusing-gendlin-1961",
+          "tecnicaId": "p_focusing_preguntar_al_feltsense",
+          "modelId": "focusing-gendlin-1961",
+          "techniqueId": "p_focusing_preguntar_al_feltsense",
+          "modeloLabel": "Focusing",
+          "modelLabel": "Focusing",
+          "grupo": "Humanista",
+          "tecnicaLabel": "Preguntar al felt sense (evocación de respuesta implícita)",
+          "techniqueLabel": "Preguntar al felt sense (evocación de respuesta implícita)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Encaje parcial pero sólido: permite preguntar al felt sense 'qué necesita', aunque Focusing no formula tan explícitamente como EFT la emoción en términos de necesidad psicológica.",
+          "sourceFile": "data/Core/modelos/humanista/focusing-gendlin-1961.json"
+        }
+      ]
+    },
     "disenar-experimentos-conductuales": {
       "id": "disenar-experimentos-conductuales",
       "label": "Diseñar experimentos conductuales",
@@ -14314,6 +14593,9 @@
     "Clarificación operativa del problema": [
       "concretar-el-problema-en-conducta"
     ],
+    "Emoción, necesidad y dirección adaptativa": [
+      "conectar-emocion-con-necesidad"
+    ],
     "Aprendizaje experiencial y testeo de hipótesis": [
       "disenar-experimentos-conductuales"
     ],
@@ -14387,6 +14669,22 @@
         "categoria": "Profundización experiencial y procesamiento emocional",
         "tecnicaId": "m_eft_shift_marker",
         "tecnicaLabel": "Marcaje de cambio experiencial (shift marker)",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "conectar-emocion-con-necesidad",
+        "isomorfismoLabel": "Conectar emoción con necesidad",
+        "categoria": "Emoción, necesidad y dirección adaptativa",
+        "tecnicaId": "p_eft_necesidades_insatisfechas",
+        "tecnicaLabel": "Trabajo con necesidades emocionales insatisfechas",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "conectar-emocion-con-necesidad",
+        "isomorfismoLabel": "Conectar emoción con necesidad",
+        "categoria": "Emoción, necesidad y dirección adaptativa",
+        "tecnicaId": "m_eft_clarificacion_necesidad",
+        "tecnicaLabel": "Clarificación explícita de necesidad emergente",
         "tecnicaTipo": "micro"
       },
       {
@@ -15669,6 +15967,30 @@
         "modeloLabel": "Psicoterapia comunitaria para la reconciliación",
         "tecnicaId": "m_reconciliacion_excepciones",
         "tecnicaLabel": "Exploración de excepciones comunitarias",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_eft_necesidades_insatisfechas": [
+      {
+        "isomorfismoId": "conectar-emocion-con-necesidad",
+        "isomorfismoLabel": "Conectar emoción con necesidad",
+        "categoria": "Emoción, necesidad y dirección adaptativa",
+        "modeloId": "eft-greenberg-1990",
+        "modeloLabel": "Terapia enfocada en las emociones",
+        "tecnicaId": "p_eft_necesidades_insatisfechas",
+        "tecnicaLabel": "Trabajo con necesidades emocionales insatisfechas",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_eft_clarificacion_necesidad": [
+      {
+        "isomorfismoId": "conectar-emocion-con-necesidad",
+        "isomorfismoLabel": "Conectar emoción con necesidad",
+        "categoria": "Emoción, necesidad y dirección adaptativa",
+        "modeloId": "eft-greenberg-1990",
+        "modeloLabel": "Terapia enfocada en las emociones",
+        "tecnicaId": "m_eft_clarificacion_necesidad",
+        "tecnicaLabel": "Clarificación explícita de necesidad emergente",
         "tecnicaTipo": "micro"
       }
     ],
@@ -17066,6 +17388,30 @@
         "tecnicaTipo": "micro"
       }
     ],
+    "eft-greenberg-1990::p_eft_necesidades_insatisfechas": [
+      {
+        "isomorfismoId": "conectar-emocion-con-necesidad",
+        "isomorfismoLabel": "Conectar emoción con necesidad",
+        "categoria": "Emoción, necesidad y dirección adaptativa",
+        "modeloId": "eft-greenberg-1990",
+        "modeloLabel": "Terapia enfocada en las emociones",
+        "tecnicaId": "p_eft_necesidades_insatisfechas",
+        "tecnicaLabel": "Trabajo con necesidades emocionales insatisfechas",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "eft-greenberg-1990::m_eft_clarificacion_necesidad": [
+      {
+        "isomorfismoId": "conectar-emocion-con-necesidad",
+        "isomorfismoLabel": "Conectar emoción con necesidad",
+        "categoria": "Emoción, necesidad y dirección adaptativa",
+        "modeloId": "eft-greenberg-1990",
+        "modeloLabel": "Terapia enfocada en las emociones",
+        "tecnicaId": "m_eft_clarificacion_necesidad",
+        "tecnicaLabel": "Clarificación explícita de necesidad emergente",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "terapia-cognitiva-beck-depresion-1967::p_beck_experimentos": [
       {
         "isomorfismoId": "disenar-experimentos-conductuales",
@@ -18162,9 +18508,9 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 21,
-    "totalEntries": 199,
-    "totalOk": 117,
+    "totalIsomorfismos": 22,
+    "totalEntries": 202,
+    "totalOk": 119,
     "totalFaltaId": 21,
     "totalFaltaModelo": 27,
     "totalDudoso": 0,

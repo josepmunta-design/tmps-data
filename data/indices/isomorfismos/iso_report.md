@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T19:22:11.824Z
+Generado: 2026-03-15T19:28:16.681Z
 
 ## Amplificar experiencia emergente
 
@@ -73,6 +73,17 @@ Generado: 2026-03-15T19:22:11.824Z
 - Terapia Gestalt — p_gestalt_que_como_lugar_porque [falta_id]
 - Terapia cognitiva (depresión) — pendiente_repo_behavioral_specification [falta_id]
 - Terapia estratégica — pendiente_repo_interactional_sequence_description [falta_id]
+
+## Conectar emoción con necesidad
+
+- ID: `conectar-emocion-con-necesidad`
+- Categoría: Emoción, necesidad y dirección adaptativa
+- Archivo fuente: `data/indices/isomorfismos/fuente/conectar-emocion-con-necesidad.json`
+- Entradas: 3
+
+- Terapia enfocada en las emociones — Trabajo con necesidades emocionales insatisfechas [ok]
+- Terapia enfocada en las emociones — Clarificación explícita de necesidad emergente [ok]
+- Focusing — Preguntar al felt sense (evocación de respuesta implícita) [parcial]
 
 ## Diseñar experimentos conductuales
 
