@@ -1,6 +1,27 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T14:20:59.060Z
+Generado: 2026-03-15T14:24:48.615Z
+
+## Amplificar experiencia emergente
+
+- ID: `amplificar-experiencia-emergente`
+- Categoría: Profundización experiencial y procesamiento emocional
+- Archivo fuente: `data/indices/isomorfismos/fuente/amplificar-experiencia-emergente.json`
+- Entradas: 13
+
+- Terapia enfocada en las emociones — Amplificación selectiva de frase nuclear [ok]
+- Terapia enfocada en las emociones — Focalización en sensación corporal específica [ok]
+- Terapia enfocada en las emociones — Marcaje de cambio experiencial (shift marker) [ok]
+- Terapia Gestalt — Exageración y amplificación (voz, gesto, postura, expresión facial) [ok]
+- Terapia Gestalt — Intensificar un gesto emergente [ok]
+- Terapia Gestalt — Darle voz a una sensación [ok]
+- Focusing — Elicitación del felt sense (formar el sentido corporal global) [ok]
+- Focusing — Resonancia cuerpo-símbolo (comprobar y corregir el ajuste) [ok]
+- Focusing — Chequeo de resonancia corporal [ok]
+- Focusing — Esperar sin empujar [ok]
+- AEDP (Accelerated Experiential Dynamic Psychotherapy) — Evocación y profundización emocional [ok]
+- AEDP (Accelerated Experiential Dynamic Psychotherapy) — Seguimiento somático del afecto [ok]
+- AEDP (Accelerated Experiential Dynamic Psychotherapy) — Reflejo empático intensificado [ok]
 
 ## Aumentar tolerancia emocional
 
