@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T14:24:48.615Z
+Generado: 2026-03-15T14:29:23.013Z
 
 ## Amplificar experiencia emergente
 
@@ -94,6 +94,27 @@ Generado: 2026-03-15T14:24:48.615Z
 - Teoría de los Constructos Personales (PCP) — Experimentos de anticipación [ok]
 - Teoría de los Constructos Personales (PCP) — Ensayo conductual de nuevas anticipaciones [ok]
 - Teoría de los Constructos Personales (PCP) — Construcción de alternativas [parcial]
+
+## Explorar patrón relacional repetido
+
+- ID: `explorar-patron-relacional-repetido`
+- Categoría: Patrones interpersonales, repetición y mentalización
+- Archivo fuente: `data/indices/isomorfismos/fuente/explorar-patron-relacional-repetido.json`
+- Entradas: 13
+
+- Psicoterapia psicodinámica breve — Identificación del patrón relacional repetitivo [ok]
+- Psicoterapia psicodinámica breve — Construcción del CCRT (Core Conflictual Relationship Theme) [ok]
+- Psicoterapia psicodinámica breve — Señalar repetición relacional sin acusar [ok]
+- Interpersonal Psychotherapy (IPT) — Evaluación interpersonal y formulación del foco terapéutico [ok]
+- Interpersonal Psychotherapy (IPT) — Exploración de expectativas relacionales [ok]
+- Psicoanálisis relacional — Exploración del self relacional [ok]
+- Psicoanálisis relacional — Nombrar una repetición relacional suavemente [ok]
+- Psicoanálisis relacional — Explorar expectativas relacionales implícitas [ok]
+- Interpersonal – Sullivan — Identificación de patrones relacionales recurrentes [ok]
+- Psicodinámica cíclica — Formulación del ciclo psicodinámico-conductual [ok]
+- Psicodinámica cíclica — Nombrar el ciclo en una frase [ok]
+- TFP – Transference-Focused Psychotherapy — Interpretación de las díadas relacionales dominantes [parcial]
+- TFP – Transference-Focused Psychotherapy — Clarificar secuencia afecto–fantasía–conducta [parcial]
 
 ## Exponerse gradualmente a lo evitado
 

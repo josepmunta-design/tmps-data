@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-15T14:24:48.615Z",
+    "generatedAt": "2026-03-15T14:29:23.013Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -941,6 +941,234 @@
           "estado": "parcial",
           "nota": "Construcción de alternativas que puede convertirse en experimento conductual, aunque no siempre lo implica.",
           "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
+        }
+      ]
+    },
+    {
+      "id": "explorar-patron-relacional-repetido",
+      "label": "Explorar patrón relacional repetido",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/explorar-patron-relacional-repetido.json",
+      "entries": [
+        {
+          "modeloId": "psicoterapia-psicodinamica-breve",
+          "tecnicaId": "p_spb_patron_relacional",
+          "modelId": "psicoterapia-psicodinamica-breve",
+          "techniqueId": "p_spb_patron_relacional",
+          "modeloLabel": "Psicoterapia psicodinámica breve",
+          "modelLabel": "Psicoterapia psicodinámica breve",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Identificación del patrón relacional repetitivo",
+          "techniqueLabel": "Identificación del patrón relacional repetitivo",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa y principal en el repo: procedimiento explícito de identificación del patrón relacional repetitivo a través de distintas relaciones.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+        },
+        {
+          "modeloId": "psicoterapia-psicodinamica-breve",
+          "tecnicaId": "p_spb_ccrt",
+          "modelId": "psicoterapia-psicodinamica-breve",
+          "techniqueId": "p_spb_ccrt",
+          "modeloLabel": "Psicoterapia psicodinámica breve",
+          "modelLabel": "Psicoterapia psicodinámica breve",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+          "techniqueLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia exacta con la formulación de Luborsky: construcción del CCRT como mapa del deseo del self, respuesta esperada del otro y respuesta del self.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+        },
+        {
+          "modeloId": "psicoterapia-psicodinamica-breve",
+          "tecnicaId": "m_spb_senal_repeticion",
+          "modelId": "psicoterapia-psicodinamica-breve",
+          "techniqueId": "m_spb_senal_repeticion",
+          "modeloLabel": "Psicoterapia psicodinámica breve",
+          "modelLabel": "Psicoterapia psicodinámica breve",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Señalar repetición relacional sin acusar",
+          "techniqueLabel": "Señalar repetición relacional sin acusar",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención directa para señalar repetición relacional de forma descriptiva y no acusatoria.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+        },
+        {
+          "modeloId": "ipt-klerman-weissman-1984",
+          "tecnicaId": "p_ipt_formulacion_interpersonal",
+          "modelId": "ipt-klerman-weissman-1984",
+          "techniqueId": "p_ipt_formulacion_interpersonal",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+          "techniqueLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia fuerte en IPT: la evaluación interpersonal y formulación del foco identifica patrones relacionales relevantes que organizan síntomas y conflictos actuales.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "modeloId": "ipt-klerman-weissman-1984",
+          "tecnicaId": "m_ipt_expectativas",
+          "modelId": "ipt-klerman-weissman-1984",
+          "techniqueId": "m_ipt_expectativas",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Exploración de expectativas relacionales",
+          "techniqueLabel": "Exploración de expectativas relacionales",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro muy pertinente para explorar expectativas relacionales implícitas, núcleo habitual de los patrones repetidos.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "tecnicaId": "p_relacional_self_relacional",
+          "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "techniqueId": "p_relacional_self_relacional",
+          "modeloLabel": "Psicoanálisis relacional",
+          "modelLabel": "Psicoanálisis relacional",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Exploración del self relacional",
+          "techniqueLabel": "Exploración del self relacional",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia fuerte: explora cómo ciertas formas de ser-con-otros se repiten y organizan el self en distintos vínculos.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+        },
+        {
+          "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "tecnicaId": "m_relacional_repeticion",
+          "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "techniqueId": "m_relacional_repeticion",
+          "modeloLabel": "Psicoanálisis relacional",
+          "modelLabel": "Psicoanálisis relacional",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Nombrar una repetición relacional suavemente",
+          "techniqueLabel": "Nombrar una repetición relacional suavemente",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención muy ajustada: nombrar suavemente una pauta relacional que parece repetirse en sesión y fuera de ella.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+        },
+        {
+          "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "tecnicaId": "m_relacional_expectativas",
+          "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "techniqueId": "m_relacional_expectativas",
+          "modeloLabel": "Psicoanálisis relacional",
+          "modelLabel": "Psicoanálisis relacional",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Explorar expectativas relacionales implícitas",
+          "techniqueLabel": "Explorar expectativas relacionales implícitas",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Hace explícitas expectativas relacionales tácitas y las conecta con patrones previos sin reducirlas mecánicamente al pasado.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+        },
+        {
+          "modeloId": "sullivan-psicoanalisis-interpersonal",
+          "tecnicaId": "p_sullivan_patrones_recurrentes",
+          "modelId": "sullivan-psicoanalisis-interpersonal",
+          "techniqueId": "p_sullivan_patrones_recurrentes",
+          "modeloLabel": "Interpersonal – Sullivan",
+          "modelLabel": "Interpersonal – Sullivan",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Identificación de patrones relacionales recurrentes",
+          "techniqueLabel": "Identificación de patrones relacionales recurrentes",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia muy alta: procedimiento centrado precisamente en identificar regularidades interpersonales recurrentes y su función ansiolítica.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json"
+        },
+        {
+          "modeloId": "psicodinamica-ciclica-wachtel",
+          "tecnicaId": "p_wachtel_formulacionCiclo",
+          "modelId": "psicodinamica-ciclica-wachtel",
+          "techniqueId": "p_wachtel_formulacionCiclo",
+          "modeloLabel": "Psicodinámica cíclica",
+          "modelLabel": "Psicodinámica cíclica",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Formulación del ciclo psicodinámico-conductual",
+          "techniqueLabel": "Formulación del ciclo psicodinámico-conductual",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia fuerte: formula el ciclo relacional auto-mantenido mostrando cómo la persona recrea respuestas del entorno que confirman sus expectativas.",
+          "sourceFile": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json"
+        },
+        {
+          "modeloId": "psicodinamica-ciclica-wachtel",
+          "tecnicaId": "m_wachtel_fraseCiclo",
+          "modelId": "psicodinamica-ciclica-wachtel",
+          "techniqueId": "m_wachtel_fraseCiclo",
+          "modeloLabel": "Psicodinámica cíclica",
+          "modelLabel": "Psicodinámica cíclica",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Nombrar el ciclo en una frase",
+          "techniqueLabel": "Nombrar el ciclo en una frase",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro útil para condensar el patrón relacional repetido en una formulación breve, clara y reconocible por el paciente.",
+          "sourceFile": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json"
+        },
+        {
+          "modeloId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+          "tecnicaId": "p_tfp_diadicas",
+          "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+          "techniqueId": "p_tfp_diadicas",
+          "modeloLabel": "TFP – Transference-Focused Psychotherapy",
+          "modelLabel": "TFP – Transference-Focused Psychotherapy",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Interpretación de las díadas relacionales dominantes",
+          "techniqueLabel": "Interpretación de las díadas relacionales dominantes",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Equivalencia parcial: identifica díadas relacionales dominantes, pero su foco prototípico es más transferencial-estructural que el patrón interpersonal general en múltiples contextos.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/tfp-transference-focused-psychotherapy-kernberg-1995.json"
+        },
+        {
+          "modeloId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+          "tecnicaId": "m_tfp_secuencia",
+          "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+          "techniqueId": "m_tfp_secuencia",
+          "modeloLabel": "TFP – Transference-Focused Psychotherapy",
+          "modelLabel": "TFP – Transference-Focused Psychotherapy",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Clarificar secuencia afecto–fantasía–conducta",
+          "techniqueLabel": "Clarificar secuencia afecto–fantasía–conducta",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Parcialmente equivalente cuando el objetivo es clarificar la secuencia relacional dominante, aunque sigue más anclado al trabajo transferencial y a organización borderline.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/tfp-transference-focused-psychotherapy-kernberg-1995.json"
         }
       ]
     },
@@ -3833,6 +4061,366 @@
       ]
     },
     {
+      "id": "explorar-patron-relacional-repetido",
+      "label": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "psicoterapia-psicodinamica-breve",
+          "modelId": "psicoterapia-psicodinamica-breve",
+          "modeloLabel": "Psicoterapia psicodinámica breve",
+          "modelLabel": "Psicoterapia psicodinámica breve",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "p_spb_patron_relacional",
+          "techniqueId": "p_spb_patron_relacional",
+          "tecnicaLabel": "Identificación del patrón relacional repetitivo",
+          "techniqueLabel": "Identificación del patrón relacional repetitivo",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa y principal en el repo: procedimiento explícito de identificación del patrón relacional repetitivo a través de distintas relaciones.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "psicoterapia-psicodinamica-breve",
+          "modelId": "psicoterapia-psicodinamica-breve",
+          "modeloLabel": "Psicoterapia psicodinámica breve",
+          "modelLabel": "Psicoterapia psicodinámica breve",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "p_spb_ccrt",
+          "techniqueId": "p_spb_ccrt",
+          "tecnicaLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+          "techniqueLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia exacta con la formulación de Luborsky: construcción del CCRT como mapa del deseo del self, respuesta esperada del otro y respuesta del self.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "psicoterapia-psicodinamica-breve",
+          "modelId": "psicoterapia-psicodinamica-breve",
+          "modeloLabel": "Psicoterapia psicodinámica breve",
+          "modelLabel": "Psicoterapia psicodinámica breve",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "m_spb_senal_repeticion",
+          "techniqueId": "m_spb_senal_repeticion",
+          "tecnicaLabel": "Señalar repetición relacional sin acusar",
+          "techniqueLabel": "Señalar repetición relacional sin acusar",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención directa para señalar repetición relacional de forma descriptiva y no acusatoria.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "ipt-klerman-weissman-1984",
+          "modelId": "ipt-klerman-weissman-1984",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaId": "p_ipt_formulacion_interpersonal",
+          "techniqueId": "p_ipt_formulacion_interpersonal",
+          "tecnicaLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+          "techniqueLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia fuerte en IPT: la evaluación interpersonal y formulación del foco identifica patrones relacionales relevantes que organizan síntomas y conflictos actuales.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "ipt-klerman-weissman-1984",
+          "modelId": "ipt-klerman-weissman-1984",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaId": "m_ipt_expectativas",
+          "techniqueId": "m_ipt_expectativas",
+          "tecnicaLabel": "Exploración de expectativas relacionales",
+          "techniqueLabel": "Exploración de expectativas relacionales",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro muy pertinente para explorar expectativas relacionales implícitas, núcleo habitual de los patrones repetidos.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "modeloLabel": "Psicoanálisis relacional",
+          "modelLabel": "Psicoanálisis relacional",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "p_relacional_self_relacional",
+          "techniqueId": "p_relacional_self_relacional",
+          "tecnicaLabel": "Exploración del self relacional",
+          "techniqueLabel": "Exploración del self relacional",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia fuerte: explora cómo ciertas formas de ser-con-otros se repiten y organizan el self en distintos vínculos.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "modeloLabel": "Psicoanálisis relacional",
+          "modelLabel": "Psicoanálisis relacional",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "m_relacional_repeticion",
+          "techniqueId": "m_relacional_repeticion",
+          "tecnicaLabel": "Nombrar una repetición relacional suavemente",
+          "techniqueLabel": "Nombrar una repetición relacional suavemente",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención muy ajustada: nombrar suavemente una pauta relacional que parece repetirse en sesión y fuera de ella.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "modeloLabel": "Psicoanálisis relacional",
+          "modelLabel": "Psicoanálisis relacional",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "m_relacional_expectativas",
+          "techniqueId": "m_relacional_expectativas",
+          "tecnicaLabel": "Explorar expectativas relacionales implícitas",
+          "techniqueLabel": "Explorar expectativas relacionales implícitas",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Hace explícitas expectativas relacionales tácitas y las conecta con patrones previos sin reducirlas mecánicamente al pasado.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "sullivan-psicoanalisis-interpersonal",
+          "modelId": "sullivan-psicoanalisis-interpersonal",
+          "modeloLabel": "Interpersonal – Sullivan",
+          "modelLabel": "Interpersonal – Sullivan",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "p_sullivan_patrones_recurrentes",
+          "techniqueId": "p_sullivan_patrones_recurrentes",
+          "tecnicaLabel": "Identificación de patrones relacionales recurrentes",
+          "techniqueLabel": "Identificación de patrones relacionales recurrentes",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia muy alta: procedimiento centrado precisamente en identificar regularidades interpersonales recurrentes y su función ansiolítica.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "psicodinamica-ciclica-wachtel",
+          "modelId": "psicodinamica-ciclica-wachtel",
+          "modeloLabel": "Psicodinámica cíclica",
+          "modelLabel": "Psicodinámica cíclica",
+          "grupo": "Integrativo",
+          "tecnicaId": "p_wachtel_formulacionCiclo",
+          "techniqueId": "p_wachtel_formulacionCiclo",
+          "tecnicaLabel": "Formulación del ciclo psicodinámico-conductual",
+          "techniqueLabel": "Formulación del ciclo psicodinámico-conductual",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia fuerte: formula el ciclo relacional auto-mantenido mostrando cómo la persona recrea respuestas del entorno que confirman sus expectativas.",
+          "sourceFile": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json"
+        },
+        {
+          "isomorfismoId": "explorar-patron-relacional-repetido",
+          "isomorfismoLabel": "Explorar patrón relacional repetido",
+          "categoria": "Patrones interpersonales, repetición y mentalización",
+          "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+          "tags": [
+            "patron relacional",
+            "repeticion",
+            "interpersonal",
+            "ccrt",
+            "guion relacional",
+            "expectativas relacionales",
+            "mentalizacion",
+            "transferencia",
+            "ciclos interpersonales"
+          ],
+          "modeloId": "psicodinamica-ciclica-wachtel",
+          "modelId": "psicodinamica-ciclica-wachtel",
+          "modeloLabel": "Psicodinámica cíclica",
+          "modelLabel": "Psicodinámica cíclica",
+          "grupo": "Integrativo",
+          "tecnicaId": "m_wachtel_fraseCiclo",
+          "techniqueId": "m_wachtel_fraseCiclo",
+          "tecnicaLabel": "Nombrar el ciclo en una frase",
+          "techniqueLabel": "Nombrar el ciclo en una frase",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro útil para condensar el patrón relacional repetido en una formulación breve, clara y reconocible por el paciente.",
+          "sourceFile": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json"
+        }
+      ]
+    },
+    {
       "id": "exponerse-gradualmente-a-lo-evitado",
       "label": "Exponerse gradualmente a lo evitado",
       "categoria": "Aprendizaje emocional correctivo",
@@ -6477,6 +7065,347 @@
       "sourceFile": "data/Core/modelos/constructivista/k1kelly55.json"
     },
     {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "psicoterapia-psicodinamica-breve",
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modeloLabel": "Psicoterapia psicodinámica breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "p_spb_patron_relacional",
+      "techniqueId": "p_spb_patron_relacional",
+      "tecnicaLabel": "Identificación del patrón relacional repetitivo",
+      "techniqueLabel": "Identificación del patrón relacional repetitivo",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia directa y principal en el repo: procedimiento explícito de identificación del patrón relacional repetitivo a través de distintas relaciones.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "psicoterapia-psicodinamica-breve",
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modeloLabel": "Psicoterapia psicodinámica breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "p_spb_ccrt",
+      "techniqueId": "p_spb_ccrt",
+      "tecnicaLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+      "techniqueLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia exacta con la formulación de Luborsky: construcción del CCRT como mapa del deseo del self, respuesta esperada del otro y respuesta del self.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "psicoterapia-psicodinamica-breve",
+      "modelId": "psicoterapia-psicodinamica-breve",
+      "modeloLabel": "Psicoterapia psicodinámica breve",
+      "modelLabel": "Psicoterapia psicodinámica breve",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "m_spb_senal_repeticion",
+      "techniqueId": "m_spb_senal_repeticion",
+      "tecnicaLabel": "Señalar repetición relacional sin acusar",
+      "techniqueLabel": "Señalar repetición relacional sin acusar",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Microintervención directa para señalar repetición relacional de forma descriptiva y no acusatoria.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "ipt-klerman-weissman-1984",
+      "modelId": "ipt-klerman-weissman-1984",
+      "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+      "modelLabel": "Interpersonal Psychotherapy (IPT)",
+      "grupo": "Integrativo",
+      "tecnicaId": "p_ipt_formulacion_interpersonal",
+      "techniqueId": "p_ipt_formulacion_interpersonal",
+      "tecnicaLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+      "techniqueLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia fuerte en IPT: la evaluación interpersonal y formulación del foco identifica patrones relacionales relevantes que organizan síntomas y conflictos actuales.",
+      "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "ipt-klerman-weissman-1984",
+      "modelId": "ipt-klerman-weissman-1984",
+      "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+      "modelLabel": "Interpersonal Psychotherapy (IPT)",
+      "grupo": "Integrativo",
+      "tecnicaId": "m_ipt_expectativas",
+      "techniqueId": "m_ipt_expectativas",
+      "tecnicaLabel": "Exploración de expectativas relacionales",
+      "techniqueLabel": "Exploración de expectativas relacionales",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro muy pertinente para explorar expectativas relacionales implícitas, núcleo habitual de los patrones repetidos.",
+      "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "modeloLabel": "Psicoanálisis relacional",
+      "modelLabel": "Psicoanálisis relacional",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "p_relacional_self_relacional",
+      "techniqueId": "p_relacional_self_relacional",
+      "tecnicaLabel": "Exploración del self relacional",
+      "techniqueLabel": "Exploración del self relacional",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia fuerte: explora cómo ciertas formas de ser-con-otros se repiten y organizan el self en distintos vínculos.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "modeloLabel": "Psicoanálisis relacional",
+      "modelLabel": "Psicoanálisis relacional",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "m_relacional_repeticion",
+      "techniqueId": "m_relacional_repeticion",
+      "tecnicaLabel": "Nombrar una repetición relacional suavemente",
+      "techniqueLabel": "Nombrar una repetición relacional suavemente",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Microintervención muy ajustada: nombrar suavemente una pauta relacional que parece repetirse en sesión y fuera de ella.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "modeloLabel": "Psicoanálisis relacional",
+      "modelLabel": "Psicoanálisis relacional",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "m_relacional_expectativas",
+      "techniqueId": "m_relacional_expectativas",
+      "tecnicaLabel": "Explorar expectativas relacionales implícitas",
+      "techniqueLabel": "Explorar expectativas relacionales implícitas",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Hace explícitas expectativas relacionales tácitas y las conecta con patrones previos sin reducirlas mecánicamente al pasado.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "sullivan-psicoanalisis-interpersonal",
+      "modelId": "sullivan-psicoanalisis-interpersonal",
+      "modeloLabel": "Interpersonal – Sullivan",
+      "modelLabel": "Interpersonal – Sullivan",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "p_sullivan_patrones_recurrentes",
+      "techniqueId": "p_sullivan_patrones_recurrentes",
+      "tecnicaLabel": "Identificación de patrones relacionales recurrentes",
+      "techniqueLabel": "Identificación de patrones relacionales recurrentes",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Correspondencia muy alta: procedimiento centrado precisamente en identificar regularidades interpersonales recurrentes y su función ansiolítica.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "psicodinamica-ciclica-wachtel",
+      "modelId": "psicodinamica-ciclica-wachtel",
+      "modeloLabel": "Psicodinámica cíclica",
+      "modelLabel": "Psicodinámica cíclica",
+      "grupo": "Integrativo",
+      "tecnicaId": "p_wachtel_formulacionCiclo",
+      "techniqueId": "p_wachtel_formulacionCiclo",
+      "tecnicaLabel": "Formulación del ciclo psicodinámico-conductual",
+      "techniqueLabel": "Formulación del ciclo psicodinámico-conductual",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Equivalencia fuerte: formula el ciclo relacional auto-mantenido mostrando cómo la persona recrea respuestas del entorno que confirman sus expectativas.",
+      "sourceFile": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json"
+    },
+    {
+      "isomorfismoId": "explorar-patron-relacional-repetido",
+      "isomorfismoLabel": "Explorar patrón relacional repetido",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "modeloId": "psicodinamica-ciclica-wachtel",
+      "modelId": "psicodinamica-ciclica-wachtel",
+      "modeloLabel": "Psicodinámica cíclica",
+      "modelLabel": "Psicodinámica cíclica",
+      "grupo": "Integrativo",
+      "tecnicaId": "m_wachtel_fraseCiclo",
+      "techniqueId": "m_wachtel_fraseCiclo",
+      "tecnicaLabel": "Nombrar el ciclo en una frase",
+      "techniqueLabel": "Nombrar el ciclo en una frase",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Micro útil para condensar el patrón relacional repetido en una formulación breve, clara y reconocible por el paciente.",
+      "sourceFile": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json"
+    },
+    {
       "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
       "isomorfismoLabel": "Exponerse gradualmente a lo evitado",
       "categoria": "Aprendizaje emocional correctivo",
@@ -8995,6 +9924,234 @@
         }
       ]
     },
+    "explorar-patron-relacional-repetido": {
+      "id": "explorar-patron-relacional-repetido",
+      "label": "Explorar patrón relacional repetido",
+      "definicion": "Identificar, formular y hacer visible la repetición de dinámicas interpersonales características a través de distintas relaciones y contextos, precisando qué espera la persona del otro, cómo responde el otro real o anticipado, y cómo reacciona el self, para aumentar mentalización y flexibilizar el guion relacional dominante.",
+      "categoria": "Patrones interpersonales, repetición y mentalización",
+      "tags": [
+        "patron relacional",
+        "repeticion",
+        "interpersonal",
+        "ccrt",
+        "guion relacional",
+        "expectativas relacionales",
+        "mentalizacion",
+        "transferencia",
+        "ciclos interpersonales"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/explorar-patron-relacional-repetido.json",
+      "entries": [
+        {
+          "modeloId": "psicoterapia-psicodinamica-breve",
+          "tecnicaId": "p_spb_patron_relacional",
+          "modelId": "psicoterapia-psicodinamica-breve",
+          "techniqueId": "p_spb_patron_relacional",
+          "modeloLabel": "Psicoterapia psicodinámica breve",
+          "modelLabel": "Psicoterapia psicodinámica breve",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Identificación del patrón relacional repetitivo",
+          "techniqueLabel": "Identificación del patrón relacional repetitivo",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia directa y principal en el repo: procedimiento explícito de identificación del patrón relacional repetitivo a través de distintas relaciones.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+        },
+        {
+          "modeloId": "psicoterapia-psicodinamica-breve",
+          "tecnicaId": "p_spb_ccrt",
+          "modelId": "psicoterapia-psicodinamica-breve",
+          "techniqueId": "p_spb_ccrt",
+          "modeloLabel": "Psicoterapia psicodinámica breve",
+          "modelLabel": "Psicoterapia psicodinámica breve",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+          "techniqueLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia exacta con la formulación de Luborsky: construcción del CCRT como mapa del deseo del self, respuesta esperada del otro y respuesta del self.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+        },
+        {
+          "modeloId": "psicoterapia-psicodinamica-breve",
+          "tecnicaId": "m_spb_senal_repeticion",
+          "modelId": "psicoterapia-psicodinamica-breve",
+          "techniqueId": "m_spb_senal_repeticion",
+          "modeloLabel": "Psicoterapia psicodinámica breve",
+          "modelLabel": "Psicoterapia psicodinámica breve",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Señalar repetición relacional sin acusar",
+          "techniqueLabel": "Señalar repetición relacional sin acusar",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención directa para señalar repetición relacional de forma descriptiva y no acusatoria.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoterapia-psicodinamica-breve.json"
+        },
+        {
+          "modeloId": "ipt-klerman-weissman-1984",
+          "tecnicaId": "p_ipt_formulacion_interpersonal",
+          "modelId": "ipt-klerman-weissman-1984",
+          "techniqueId": "p_ipt_formulacion_interpersonal",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+          "techniqueLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia fuerte en IPT: la evaluación interpersonal y formulación del foco identifica patrones relacionales relevantes que organizan síntomas y conflictos actuales.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "modeloId": "ipt-klerman-weissman-1984",
+          "tecnicaId": "m_ipt_expectativas",
+          "modelId": "ipt-klerman-weissman-1984",
+          "techniqueId": "m_ipt_expectativas",
+          "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+          "modelLabel": "Interpersonal Psychotherapy (IPT)",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Exploración de expectativas relacionales",
+          "techniqueLabel": "Exploración de expectativas relacionales",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro muy pertinente para explorar expectativas relacionales implícitas, núcleo habitual de los patrones repetidos.",
+          "sourceFile": "data/Core/modelos/integrativo/ipt-klerman-weissman-1984.json"
+        },
+        {
+          "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "tecnicaId": "p_relacional_self_relacional",
+          "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "techniqueId": "p_relacional_self_relacional",
+          "modeloLabel": "Psicoanálisis relacional",
+          "modelLabel": "Psicoanálisis relacional",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Exploración del self relacional",
+          "techniqueLabel": "Exploración del self relacional",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia fuerte: explora cómo ciertas formas de ser-con-otros se repiten y organizan el self en distintos vínculos.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+        },
+        {
+          "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "tecnicaId": "m_relacional_repeticion",
+          "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "techniqueId": "m_relacional_repeticion",
+          "modeloLabel": "Psicoanálisis relacional",
+          "modelLabel": "Psicoanálisis relacional",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Nombrar una repetición relacional suavemente",
+          "techniqueLabel": "Nombrar una repetición relacional suavemente",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención muy ajustada: nombrar suavemente una pauta relacional que parece repetirse en sesión y fuera de ella.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+        },
+        {
+          "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "tecnicaId": "m_relacional_expectativas",
+          "modelId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+          "techniqueId": "m_relacional_expectativas",
+          "modeloLabel": "Psicoanálisis relacional",
+          "modelLabel": "Psicoanálisis relacional",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Explorar expectativas relacionales implícitas",
+          "techniqueLabel": "Explorar expectativas relacionales implícitas",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Hace explícitas expectativas relacionales tácitas y las conecta con patrones previos sin reducirlas mecánicamente al pasado.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicoanalisis-relacional-greenberg-mitchell-1983.json"
+        },
+        {
+          "modeloId": "sullivan-psicoanalisis-interpersonal",
+          "tecnicaId": "p_sullivan_patrones_recurrentes",
+          "modelId": "sullivan-psicoanalisis-interpersonal",
+          "techniqueId": "p_sullivan_patrones_recurrentes",
+          "modeloLabel": "Interpersonal – Sullivan",
+          "modelLabel": "Interpersonal – Sullivan",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Identificación de patrones relacionales recurrentes",
+          "techniqueLabel": "Identificación de patrones relacionales recurrentes",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Correspondencia muy alta: procedimiento centrado precisamente en identificar regularidades interpersonales recurrentes y su función ansiolítica.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/sullivan-psicoanalisis-interpersonal.json"
+        },
+        {
+          "modeloId": "psicodinamica-ciclica-wachtel",
+          "tecnicaId": "p_wachtel_formulacionCiclo",
+          "modelId": "psicodinamica-ciclica-wachtel",
+          "techniqueId": "p_wachtel_formulacionCiclo",
+          "modeloLabel": "Psicodinámica cíclica",
+          "modelLabel": "Psicodinámica cíclica",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Formulación del ciclo psicodinámico-conductual",
+          "techniqueLabel": "Formulación del ciclo psicodinámico-conductual",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Equivalencia fuerte: formula el ciclo relacional auto-mantenido mostrando cómo la persona recrea respuestas del entorno que confirman sus expectativas.",
+          "sourceFile": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json"
+        },
+        {
+          "modeloId": "psicodinamica-ciclica-wachtel",
+          "tecnicaId": "m_wachtel_fraseCiclo",
+          "modelId": "psicodinamica-ciclica-wachtel",
+          "techniqueId": "m_wachtel_fraseCiclo",
+          "modeloLabel": "Psicodinámica cíclica",
+          "modelLabel": "Psicodinámica cíclica",
+          "grupo": "Integrativo",
+          "tecnicaLabel": "Nombrar el ciclo en una frase",
+          "techniqueLabel": "Nombrar el ciclo en una frase",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Micro útil para condensar el patrón relacional repetido en una formulación breve, clara y reconocible por el paciente.",
+          "sourceFile": "data/Core/modelos/integrativo/psicodinamica-ciclica-wachtel.json"
+        },
+        {
+          "modeloId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+          "tecnicaId": "p_tfp_diadicas",
+          "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+          "techniqueId": "p_tfp_diadicas",
+          "modeloLabel": "TFP – Transference-Focused Psychotherapy",
+          "modelLabel": "TFP – Transference-Focused Psychotherapy",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Interpretación de las díadas relacionales dominantes",
+          "techniqueLabel": "Interpretación de las díadas relacionales dominantes",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "parcial",
+          "nota": "Equivalencia parcial: identifica díadas relacionales dominantes, pero su foco prototípico es más transferencial-estructural que el patrón interpersonal general en múltiples contextos.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/tfp-transference-focused-psychotherapy-kernberg-1995.json"
+        },
+        {
+          "modeloId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+          "tecnicaId": "m_tfp_secuencia",
+          "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+          "techniqueId": "m_tfp_secuencia",
+          "modeloLabel": "TFP – Transference-Focused Psychotherapy",
+          "modelLabel": "TFP – Transference-Focused Psychotherapy",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Clarificar secuencia afecto–fantasía–conducta",
+          "techniqueLabel": "Clarificar secuencia afecto–fantasía–conducta",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
+          "nota": "Parcialmente equivalente cuando el objetivo es clarificar la secuencia relacional dominante, aunque sigue más anclado al trabajo transferencial y a organización borderline.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/tfp-transference-focused-psychotherapy-kernberg-1995.json"
+        }
+      ]
+    },
     "exponerse-gradualmente-a-lo-evitado": {
       "id": "exponerse-gradualmente-a-lo-evitado",
       "label": "Exponerse gradualmente a lo evitado",
@@ -10925,6 +12082,9 @@
     "Aprendizaje experiencial y testeo de hipótesis": [
       "disenar-experimentos-conductuales"
     ],
+    "Patrones interpersonales, repetición y mentalización": [
+      "explorar-patron-relacional-repetido"
+    ],
     "Aprendizaje emocional correctivo": [
       "exponerse-gradualmente-a-lo-evitado"
     ],
@@ -11400,6 +12560,144 @@
         "tecnicaTipo": "micro"
       }
     ],
+    "psicoterapia-psicodinamica-breve": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "p_spb_patron_relacional",
+        "tecnicaLabel": "Identificación del patrón relacional repetitivo",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "p_spb_ccrt",
+        "tecnicaLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "m_spb_senal_repeticion",
+        "tecnicaLabel": "Señalar repetición relacional sin acusar",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "ipt-klerman-weissman-1984": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "p_ipt_formulacion_interpersonal",
+        "tecnicaLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "m_ipt_expectativas",
+        "tecnicaLabel": "Exploración de expectativas relacionales",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "psicoanalisis-relacional-greenberg-mitchell-1983": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "p_relacional_self_relacional",
+        "tecnicaLabel": "Exploración del self relacional",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "m_relacional_repeticion",
+        "tecnicaLabel": "Nombrar una repetición relacional suavemente",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "m_relacional_expectativas",
+        "tecnicaLabel": "Explorar expectativas relacionales implícitas",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
+        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
+        "categoria": "Relación terapéutica como laboratorio clínico",
+        "tecnicaId": "p_relacional_transferencia",
+        "tecnicaLabel": "Análisis relacional de la transferencia",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
+        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
+        "categoria": "Relación terapéutica como laboratorio clínico",
+        "tecnicaId": "p_relacional_ruptura_reparacion",
+        "tecnicaLabel": "Trabajo con rupturas y reparaciones relacionales",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
+        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
+        "categoria": "Relación terapéutica como laboratorio clínico",
+        "tecnicaId": "m_relacional_aqui_ahora",
+        "tecnicaLabel": "Nombrar el aquí-y-ahora relacional",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
+        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
+        "categoria": "Relación terapéutica como laboratorio clínico",
+        "tecnicaId": "m_relacional_sintonia",
+        "tecnicaLabel": "Señalar un cambio en la sintonía",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
+        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
+        "categoria": "Relación terapéutica como laboratorio clínico",
+        "tecnicaId": "m_relacional_error",
+        "tecnicaLabel": "Reconocer un error terapéutico",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "sullivan-psicoanalisis-interpersonal": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "p_sullivan_patrones_recurrentes",
+        "tecnicaLabel": "Identificación de patrones relacionales recurrentes",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicodinamica-ciclica-wachtel": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "p_wachtel_formulacionCiclo",
+        "tecnicaLabel": "Formulación del ciclo psicodinámico-conductual",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "tecnicaId": "m_wachtel_fraseCiclo",
+        "tecnicaLabel": "Nombrar el ciclo en una frase",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "unified-protocol-up-barlow-2011": [
       {
         "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
@@ -11663,48 +12961,6 @@
         "categoria": "Relación terapéutica como laboratorio clínico",
         "tecnicaId": "m_tfp_transferencia_aqui_ahora",
         "tecnicaLabel": "Señalar la activación transferencial inmediata",
-        "tecnicaTipo": "micro"
-      }
-    ],
-    "psicoanalisis-relacional-greenberg-mitchell-1983": [
-      {
-        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
-        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
-        "categoria": "Relación terapéutica como laboratorio clínico",
-        "tecnicaId": "p_relacional_transferencia",
-        "tecnicaLabel": "Análisis relacional de la transferencia",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
-        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
-        "categoria": "Relación terapéutica como laboratorio clínico",
-        "tecnicaId": "p_relacional_ruptura_reparacion",
-        "tecnicaLabel": "Trabajo con rupturas y reparaciones relacionales",
-        "tecnicaTipo": "procedimiento"
-      },
-      {
-        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
-        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
-        "categoria": "Relación terapéutica como laboratorio clínico",
-        "tecnicaId": "m_relacional_aqui_ahora",
-        "tecnicaLabel": "Nombrar el aquí-y-ahora relacional",
-        "tecnicaTipo": "micro"
-      },
-      {
-        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
-        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
-        "categoria": "Relación terapéutica como laboratorio clínico",
-        "tecnicaId": "m_relacional_sintonia",
-        "tecnicaLabel": "Señalar un cambio en la sintonía",
-        "tecnicaTipo": "micro"
-      },
-      {
-        "isomorfismoId": "usar-la-relacion-terapeutica-como-muestra",
-        "isomorfismoLabel": "Usar la relación terapéutica como muestra",
-        "categoria": "Relación terapéutica como laboratorio clínico",
-        "tecnicaId": "m_relacional_error",
-        "tecnicaLabel": "Reconocer un error terapéutico",
         "tecnicaTipo": "micro"
       }
     ]
@@ -12078,6 +13334,138 @@
         "tecnicaId": "p_kelly_ensayo_nuevas_anticipaciones",
         "tecnicaLabel": "Ensayo conductual de nuevas anticipaciones",
         "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "p_spb_patron_relacional": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoterapia-psicodinamica-breve",
+        "modeloLabel": "Psicoterapia psicodinámica breve",
+        "tecnicaId": "p_spb_patron_relacional",
+        "tecnicaLabel": "Identificación del patrón relacional repetitivo",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "p_spb_ccrt": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoterapia-psicodinamica-breve",
+        "modeloLabel": "Psicoterapia psicodinámica breve",
+        "tecnicaId": "p_spb_ccrt",
+        "tecnicaLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_spb_senal_repeticion": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoterapia-psicodinamica-breve",
+        "modeloLabel": "Psicoterapia psicodinámica breve",
+        "tecnicaId": "m_spb_senal_repeticion",
+        "tecnicaLabel": "Señalar repetición relacional sin acusar",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_ipt_formulacion_interpersonal": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "ipt-klerman-weissman-1984",
+        "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+        "tecnicaId": "p_ipt_formulacion_interpersonal",
+        "tecnicaLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_ipt_expectativas": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "ipt-klerman-weissman-1984",
+        "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+        "tecnicaId": "m_ipt_expectativas",
+        "tecnicaLabel": "Exploración de expectativas relacionales",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_relacional_self_relacional": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+        "modeloLabel": "Psicoanálisis relacional",
+        "tecnicaId": "p_relacional_self_relacional",
+        "tecnicaLabel": "Exploración del self relacional",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_relacional_repeticion": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+        "modeloLabel": "Psicoanálisis relacional",
+        "tecnicaId": "m_relacional_repeticion",
+        "tecnicaLabel": "Nombrar una repetición relacional suavemente",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_relacional_expectativas": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+        "modeloLabel": "Psicoanálisis relacional",
+        "tecnicaId": "m_relacional_expectativas",
+        "tecnicaLabel": "Explorar expectativas relacionales implícitas",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "p_sullivan_patrones_recurrentes": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "sullivan-psicoanalisis-interpersonal",
+        "modeloLabel": "Interpersonal – Sullivan",
+        "tecnicaId": "p_sullivan_patrones_recurrentes",
+        "tecnicaLabel": "Identificación de patrones relacionales recurrentes",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "p_wachtel_formulacionCiclo": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicodinamica-ciclica-wachtel",
+        "modeloLabel": "Psicodinámica cíclica",
+        "tecnicaId": "p_wachtel_formulacionCiclo",
+        "tecnicaLabel": "Formulación del ciclo psicodinámico-conductual",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_wachtel_fraseCiclo": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicodinamica-ciclica-wachtel",
+        "modeloLabel": "Psicodinámica cíclica",
+        "tecnicaId": "m_wachtel_fraseCiclo",
+        "tecnicaLabel": "Nombrar el ciclo en una frase",
+        "tecnicaTipo": "micro"
       }
     ],
     "p_up_exposicion_interoceptiva": [
@@ -13106,6 +14494,138 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
+    "psicoterapia-psicodinamica-breve::p_spb_patron_relacional": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoterapia-psicodinamica-breve",
+        "modeloLabel": "Psicoterapia psicodinámica breve",
+        "tecnicaId": "p_spb_patron_relacional",
+        "tecnicaLabel": "Identificación del patrón relacional repetitivo",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicoterapia-psicodinamica-breve::p_spb_ccrt": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoterapia-psicodinamica-breve",
+        "modeloLabel": "Psicoterapia psicodinámica breve",
+        "tecnicaId": "p_spb_ccrt",
+        "tecnicaLabel": "Construcción del CCRT (Core Conflictual Relationship Theme)",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicoterapia-psicodinamica-breve::m_spb_senal_repeticion": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoterapia-psicodinamica-breve",
+        "modeloLabel": "Psicoterapia psicodinámica breve",
+        "tecnicaId": "m_spb_senal_repeticion",
+        "tecnicaLabel": "Señalar repetición relacional sin acusar",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "ipt-klerman-weissman-1984::p_ipt_formulacion_interpersonal": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "ipt-klerman-weissman-1984",
+        "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+        "tecnicaId": "p_ipt_formulacion_interpersonal",
+        "tecnicaLabel": "Evaluación interpersonal y formulación del foco terapéutico",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "ipt-klerman-weissman-1984::m_ipt_expectativas": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "ipt-klerman-weissman-1984",
+        "modeloLabel": "Interpersonal Psychotherapy (IPT)",
+        "tecnicaId": "m_ipt_expectativas",
+        "tecnicaLabel": "Exploración de expectativas relacionales",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "psicoanalisis-relacional-greenberg-mitchell-1983::p_relacional_self_relacional": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+        "modeloLabel": "Psicoanálisis relacional",
+        "tecnicaId": "p_relacional_self_relacional",
+        "tecnicaLabel": "Exploración del self relacional",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicoanalisis-relacional-greenberg-mitchell-1983::m_relacional_repeticion": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+        "modeloLabel": "Psicoanálisis relacional",
+        "tecnicaId": "m_relacional_repeticion",
+        "tecnicaLabel": "Nombrar una repetición relacional suavemente",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "psicoanalisis-relacional-greenberg-mitchell-1983::m_relacional_expectativas": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
+        "modeloLabel": "Psicoanálisis relacional",
+        "tecnicaId": "m_relacional_expectativas",
+        "tecnicaLabel": "Explorar expectativas relacionales implícitas",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "sullivan-psicoanalisis-interpersonal::p_sullivan_patrones_recurrentes": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "sullivan-psicoanalisis-interpersonal",
+        "modeloLabel": "Interpersonal – Sullivan",
+        "tecnicaId": "p_sullivan_patrones_recurrentes",
+        "tecnicaLabel": "Identificación de patrones relacionales recurrentes",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicodinamica-ciclica-wachtel::p_wachtel_formulacionCiclo": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicodinamica-ciclica-wachtel",
+        "modeloLabel": "Psicodinámica cíclica",
+        "tecnicaId": "p_wachtel_formulacionCiclo",
+        "tecnicaLabel": "Formulación del ciclo psicodinámico-conductual",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicodinamica-ciclica-wachtel::m_wachtel_fraseCiclo": [
+      {
+        "isomorfismoId": "explorar-patron-relacional-repetido",
+        "isomorfismoLabel": "Explorar patrón relacional repetido",
+        "categoria": "Patrones interpersonales, repetición y mentalización",
+        "modeloId": "psicodinamica-ciclica-wachtel",
+        "modeloLabel": "Psicodinámica cíclica",
+        "tecnicaId": "m_wachtel_fraseCiclo",
+        "tecnicaLabel": "Nombrar el ciclo en una frase",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "unified-protocol-up-barlow-2011::p_up_exposicion_interoceptiva": [
       {
         "isomorfismoId": "exponerse-gradualmente-a-lo-evitado",
@@ -13762,9 +15282,9 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 16,
-    "totalEntries": 161,
-    "totalOk": 86,
+    "totalIsomorfismos": 17,
+    "totalEntries": 174,
+    "totalOk": 97,
     "totalFaltaId": 21,
     "totalFaltaModelo": 22,
     "totalDudoso": 0,
