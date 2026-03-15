@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T14:33:33.988Z
+Generado: 2026-03-15T14:36:57.862Z
 
 ## Amplificar experiencia emergente
 
@@ -210,6 +210,18 @@ Generado: 2026-03-15T14:33:33.988Z
 
 - terapia-cognitiva-beck-1967 — p_ct_identificar_creencias_nucleares [falta_modelo]
 - psicologia-individual-adler-1912 — p_adler_identificar_estilo_vida [falta_modelo]
+
+## Identificar evitación experiencial
+
+- ID: `identificar-evitacion-experiencial`
+- Categoría: Evitación y relación con la experiencia interna
+- Archivo fuente: `data/indices/isomorfismos/fuente/identificar-evitacion-experiencial.json`
+- Entradas: 4
+
+- Terapia de Aceptación y Compromiso (ACT) — Análisis explícito de evitación experiencial [ok]
+- Terapia enfocada en las emociones — p_eft_identificar_evitar_emocion [falta_id]
+- focusing-gendlin-1978 — p_focusing_detectar_bloqueo [falta_modelo]
+- CBT 3ª ola – MBCT — p_mbct_identificar_evitar_experiencia [falta_id]
 
 ## Identificar la función del síntoma
 

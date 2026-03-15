@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-15T14:33:33.988Z",
+    "generatedAt": "2026-03-15T14:36:57.862Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -2020,6 +2020,87 @@
           "estado": "falta_modelo",
           "nota": "Exploración de las convicciones básicas del estilo de vida que organizan interpretación de la experiencia y metas personales.",
           "sourceFile": null
+        }
+      ]
+    },
+    {
+      "id": "identificar-evitacion-experiencial",
+      "label": "Identificar evitación experiencial",
+      "definicion": "Detectar estrategias mediante las cuales la persona intenta escapar, suprimir o no contactar con pensamientos, emociones, recuerdos o sensaciones internas difíciles.",
+      "categoria": "Evitación y relación con la experiencia interna",
+      "tags": [
+        "evitacion experiencial",
+        "emociones",
+        "supresion",
+        "control experiencial",
+        "aceptacion",
+        "rigidez psicologica"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/identificar-evitacion-experiencial.json",
+      "entries": [
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_evitacion_experiencial",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_evitacion_experiencial",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Análisis explícito de evitación experiencial",
+          "techniqueLabel": "Análisis explícito de evitación experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Procedimiento explícito de análisis de evitación experiencial.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "eft-greenberg-1990",
+          "tecnicaId": "p_eft_identificar_evitar_emocion",
+          "modelId": "eft-greenberg-1990",
+          "techniqueId": "p_eft_identificar_evitar_emocion",
+          "modeloLabel": "Terapia enfocada en las emociones",
+          "modelLabel": "Terapia enfocada en las emociones",
+          "grupo": "Humanista",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "EFT identifica evitación emocional, pero el procedimiento concreto aún no está confirmado en el repo.",
+          "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+        },
+        {
+          "modeloId": "focusing-gendlin-1978",
+          "tecnicaId": "p_focusing_detectar_bloqueo",
+          "modelId": "focusing-gendlin-1978",
+          "techniqueId": "p_focusing_detectar_bloqueo",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Focusing identifica bloqueos al contacto con el felt sense, pero el ID exacto debe verificarse en el modelo.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "mbct-segal-williams-teasdale-2002",
+          "tecnicaId": "p_mbct_identificar_evitar_experiencia",
+          "modelId": "mbct-segal-williams-teasdale-2002",
+          "techniqueId": "p_mbct_identificar_evitar_experiencia",
+          "modeloLabel": "CBT 3ª ola – MBCT",
+          "modelLabel": "CBT 3ª ola – MBCT",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "MBCT reconoce evitación de experiencia interna, pero el procedimiento exacto debe confirmarse.",
+          "sourceFile": "data/Core/modelos/cognitivo/mbct-segal-williams-teasdale-2002.json"
         }
       ]
     },
@@ -4906,6 +4987,50 @@
         "estilo de vida"
       ],
       "records": []
+    },
+    {
+      "id": "identificar-evitacion-experiencial",
+      "label": "Identificar evitación experiencial",
+      "categoria": "Evitación y relación con la experiencia interna",
+      "definicion": "Detectar estrategias mediante las cuales la persona intenta escapar, suprimir o no contactar con pensamientos, emociones, recuerdos o sensaciones internas difíciles.",
+      "tags": [
+        "evitacion experiencial",
+        "emociones",
+        "supresion",
+        "control experiencial",
+        "aceptacion",
+        "rigidez psicologica"
+      ],
+      "records": [
+        {
+          "isomorfismoId": "identificar-evitacion-experiencial",
+          "isomorfismoLabel": "Identificar evitación experiencial",
+          "categoria": "Evitación y relación con la experiencia interna",
+          "definicion": "Detectar estrategias mediante las cuales la persona intenta escapar, suprimir o no contactar con pensamientos, emociones, recuerdos o sensaciones internas difíciles.",
+          "tags": [
+            "evitacion experiencial",
+            "emociones",
+            "supresion",
+            "control experiencial",
+            "aceptacion",
+            "rigidez psicologica"
+          ],
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaId": "p_act_evitacion_experiencial",
+          "techniqueId": "p_act_evitacion_experiencial",
+          "tecnicaLabel": "Análisis explícito de evitación experiencial",
+          "techniqueLabel": "Análisis explícito de evitación experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Procedimiento explícito de análisis de evitación experiencial.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        }
+      ]
     },
     {
       "id": "identificar-funcion-del-sintoma",
@@ -7864,6 +7989,34 @@
       "estado": "ok",
       "nota": "Equivalencia fuerte: escaneo guiado de experiencia momento a momento con foco corporal.",
       "sourceFile": "data/Core/modelos/humanista/terapia-gestalt-perls-1951.json"
+    },
+    {
+      "isomorfismoId": "identificar-evitacion-experiencial",
+      "isomorfismoLabel": "Identificar evitación experiencial",
+      "categoria": "Evitación y relación con la experiencia interna",
+      "definicion": "Detectar estrategias mediante las cuales la persona intenta escapar, suprimir o no contactar con pensamientos, emociones, recuerdos o sensaciones internas difíciles.",
+      "tags": [
+        "evitacion experiencial",
+        "emociones",
+        "supresion",
+        "control experiencial",
+        "aceptacion",
+        "rigidez psicologica"
+      ],
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "modelId": "act-hayes-strosahl-wilson-1999",
+      "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+      "grupo": "Cognitivo",
+      "tecnicaId": "p_act_evitacion_experiencial",
+      "techniqueId": "p_act_evitacion_experiencial",
+      "tecnicaLabel": "Análisis explícito de evitación experiencial",
+      "techniqueLabel": "Análisis explícito de evitación experiencial",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Procedimiento explícito de análisis de evitación experiencial.",
+      "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
     },
     {
       "isomorfismoId": "identificar-funcion-del-sintoma",
@@ -11212,6 +11365,87 @@
         }
       ]
     },
+    "identificar-evitacion-experiencial": {
+      "id": "identificar-evitacion-experiencial",
+      "label": "Identificar evitación experiencial",
+      "definicion": "Detectar estrategias mediante las cuales la persona intenta escapar, suprimir o no contactar con pensamientos, emociones, recuerdos o sensaciones internas difíciles.",
+      "categoria": "Evitación y relación con la experiencia interna",
+      "tags": [
+        "evitacion experiencial",
+        "emociones",
+        "supresion",
+        "control experiencial",
+        "aceptacion",
+        "rigidez psicologica"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/identificar-evitacion-experiencial.json",
+      "entries": [
+        {
+          "modeloId": "act-hayes-strosahl-wilson-1999",
+          "tecnicaId": "p_act_evitacion_experiencial",
+          "modelId": "act-hayes-strosahl-wilson-1999",
+          "techniqueId": "p_act_evitacion_experiencial",
+          "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": "Análisis explícito de evitación experiencial",
+          "techniqueLabel": "Análisis explícito de evitación experiencial",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Procedimiento explícito de análisis de evitación experiencial.",
+          "sourceFile": "data/Core/modelos/cognitivo/act-hayes-strosahl-wilson-1999.json"
+        },
+        {
+          "modeloId": "eft-greenberg-1990",
+          "tecnicaId": "p_eft_identificar_evitar_emocion",
+          "modelId": "eft-greenberg-1990",
+          "techniqueId": "p_eft_identificar_evitar_emocion",
+          "modeloLabel": "Terapia enfocada en las emociones",
+          "modelLabel": "Terapia enfocada en las emociones",
+          "grupo": "Humanista",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "EFT identifica evitación emocional, pero el procedimiento concreto aún no está confirmado en el repo.",
+          "sourceFile": "data/Core/modelos/humanista/eft-greenberg-1990.json"
+        },
+        {
+          "modeloId": "focusing-gendlin-1978",
+          "tecnicaId": "p_focusing_detectar_bloqueo",
+          "modelId": "focusing-gendlin-1978",
+          "techniqueId": "p_focusing_detectar_bloqueo",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Focusing identifica bloqueos al contacto con el felt sense, pero el ID exacto debe verificarse en el modelo.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "mbct-segal-williams-teasdale-2002",
+          "tecnicaId": "p_mbct_identificar_evitar_experiencia",
+          "modelId": "mbct-segal-williams-teasdale-2002",
+          "techniqueId": "p_mbct_identificar_evitar_experiencia",
+          "modeloLabel": "CBT 3ª ola – MBCT",
+          "modelLabel": "CBT 3ª ola – MBCT",
+          "grupo": "Cognitivo",
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_id",
+          "nota": "MBCT reconoce evitación de experiencia interna, pero el procedimiento exacto debe confirmarse.",
+          "sourceFile": "data/Core/modelos/cognitivo/mbct-segal-williams-teasdale-2002.json"
+        }
+      ]
+    },
     "identificar-funcion-del-sintoma": {
       "id": "identificar-funcion-del-sintoma",
       "label": "Identificar la función del síntoma",
@@ -12428,6 +12662,9 @@
     "Estructuras cognitivas profundas": [
       "identificar-creencias-nucleares"
     ],
+    "Evitación y relación con la experiencia interna": [
+      "identificar-evitacion-experiencial"
+    ],
     "Función y mantenimiento del problema": [
       "identificar-funcion-del-sintoma"
     ],
@@ -12618,6 +12855,14 @@
         "categoria": "Motivación, cambio y compromiso",
         "tecnicaId": "p_act_valores",
         "tecnicaLabel": "Clarificación estructurada de valores",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "identificar-evitacion-experiencial",
+        "isomorfismoLabel": "Identificar evitación experiencial",
+        "categoria": "Evitación y relación con la experiencia interna",
+        "tecnicaId": "p_act_evitacion_experiencial",
+        "tecnicaLabel": "Análisis explícito de evitación experiencial",
         "tecnicaTipo": "procedimiento"
       },
       {
@@ -13935,6 +14180,28 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
+    "p_act_evitacion_experiencial": [
+      {
+        "isomorfismoId": "identificar-evitacion-experiencial",
+        "isomorfismoLabel": "Identificar evitación experiencial",
+        "categoria": "Evitación y relación con la experiencia interna",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_evitacion_experiencial",
+        "tecnicaLabel": "Análisis explícito de evitación experiencial",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "identificar-funcion-del-sintoma",
+        "isomorfismoLabel": "Identificar la función del síntoma",
+        "categoria": "Función y mantenimiento del problema",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_evitacion_experiencial",
+        "tecnicaLabel": "Análisis explícito de evitación experiencial",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "p_af_abc": [
       {
         "isomorfismoId": "identificar-funcion-del-sintoma",
@@ -13956,18 +14223,6 @@
         "modeloLabel": "Terapia enfocada en las emociones",
         "tecnicaId": "p_eft_emocion_primaria_bajo_sintoma",
         "tecnicaLabel": "Exploración de emoción primaria subyacente al síntoma",
-        "tecnicaTipo": "procedimiento"
-      }
-    ],
-    "p_act_evitacion_experiencial": [
-      {
-        "isomorfismoId": "identificar-funcion-del-sintoma",
-        "isomorfismoLabel": "Identificar la función del síntoma",
-        "categoria": "Función y mantenimiento del problema",
-        "modeloId": "act-hayes-strosahl-wilson-1999",
-        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
-        "tecnicaId": "p_act_evitacion_experiencial",
-        "tecnicaLabel": "Análisis explícito de evitación experiencial",
         "tecnicaTipo": "procedimiento"
       }
     ],
@@ -15103,6 +15358,28 @@
         "tecnicaTipo": "procedimiento"
       }
     ],
+    "act-hayes-strosahl-wilson-1999::p_act_evitacion_experiencial": [
+      {
+        "isomorfismoId": "identificar-evitacion-experiencial",
+        "isomorfismoLabel": "Identificar evitación experiencial",
+        "categoria": "Evitación y relación con la experiencia interna",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_evitacion_experiencial",
+        "tecnicaLabel": "Análisis explícito de evitación experiencial",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "identificar-funcion-del-sintoma",
+        "isomorfismoLabel": "Identificar la función del síntoma",
+        "categoria": "Función y mantenimiento del problema",
+        "modeloId": "act-hayes-strosahl-wilson-1999",
+        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
+        "tecnicaId": "p_act_evitacion_experiencial",
+        "tecnicaLabel": "Análisis explícito de evitación experiencial",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
     "analisis-funcional-clinico-kanfer-saslow-1969::p_af_abc": [
       {
         "isomorfismoId": "identificar-funcion-del-sintoma",
@@ -15124,18 +15401,6 @@
         "modeloLabel": "Terapia enfocada en las emociones",
         "tecnicaId": "p_eft_emocion_primaria_bajo_sintoma",
         "tecnicaLabel": "Exploración de emoción primaria subyacente al síntoma",
-        "tecnicaTipo": "procedimiento"
-      }
-    ],
-    "act-hayes-strosahl-wilson-1999::p_act_evitacion_experiencial": [
-      {
-        "isomorfismoId": "identificar-funcion-del-sintoma",
-        "isomorfismoLabel": "Identificar la función del síntoma",
-        "categoria": "Función y mantenimiento del problema",
-        "modeloId": "act-hayes-strosahl-wilson-1999",
-        "modeloLabel": "Terapia de Aceptación y Compromiso (ACT)",
-        "tecnicaId": "p_act_evitacion_experiencial",
-        "tecnicaLabel": "Análisis explícito de evitación experiencial",
         "tecnicaTipo": "procedimiento"
       }
     ],
@@ -15641,11 +15906,11 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 19,
-    "totalEntries": 179,
-    "totalOk": 98,
-    "totalFaltaId": 21,
-    "totalFaltaModelo": 27,
+    "totalIsomorfismos": 20,
+    "totalEntries": 183,
+    "totalOk": 99,
+    "totalFaltaId": 23,
+    "totalFaltaModelo": 28,
     "totalDudoso": 0,
     "totalDescartado": 0
   }
