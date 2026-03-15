@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T14:42:27.331Z
+Generado: 2026-03-15T14:51:03.004Z
 
 ## Amplificar experiencia emergente
 
@@ -221,7 +221,7 @@ Generado: 2026-03-15T14:42:27.331Z
 - Terapia de Aceptación y Compromiso (ACT) — Análisis explícito de evitación experiencial [ok]
 - Terapia enfocada en las emociones — Identificación de evitación emocional [ok]
 - focusing-gendlin-1978 — p_focusing_identificacion_bloqueo_experiencial [falta_modelo]
-- CBT 3ª ola – MBCT — p_mbct_identificar_evitar_experiencia [falta_id]
+- CBT 3ª ola – MBCT — Identificación de evitación de la experiencia interna [extra_repo]
 
 ## Identificar la función del síntoma
 
@@ -239,6 +239,30 @@ Generado: 2026-03-15T14:42:27.331Z
 - schema-therapy-young-1990 — pendiente_repo_funcion_modo_esquema [falta_modelo]
 - Internal Family Systems (IFS) — pendiente_repo_funcion_protectora_parte [falta_id]
 - Terapia de Aceptación y Compromiso (ACT) — Análisis explícito de evitación experiencial [ok]
+
+## Identificar recursos personales
+
+- ID: `identificar-recursos-personales`
+- Categoría: Excepciones, variación y recursos
+- Archivo fuente: `data/indices/isomorfismos/fuente/identificar-recursos-personales.json`
+- Entradas: 16
+
+- Terapia centrada en soluciones — Preguntas de afrontamiento (coping questions) [ok]
+- Terapia centrada en soluciones — Elogio terapéutico (compliments) [ok]
+- Terapia centrada en soluciones — Reformulación en términos de capacidad [ok]
+- Terapia centrada en soluciones — Micro-elogio específico [ok]
+- Psicología Positiva — Evaluación y uso de fortalezas (perfil + plan de aplicación) [ok]
+- Psicología Positiva — Preguntas de recurso (¿qué hiciste tú para que esto pasara?) [ok]
+- Entrevista Motivacional (Motivational Interviewing, MI) — OARS: Afirmaciones (Affirmations) [ok]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Apoyar autoeficacia [ok]
+- Entrevista Motivacional (Motivational Interviewing, MI) — Pregunta de capacidad (¿cómo podrías hacerlo si decidieras?) [ok]
+- Positive & Transcultural Psychotherapy (PPT / Positive Psychotherapy) — Inventario de capacidades actuales y potenciales [ok]
+- Positive & Transcultural Psychotherapy (PPT / Positive Psychotherapy) — Pregunta de capacidad latente [ok]
+- Positive & Transcultural Psychotherapy (PPT / Positive Psychotherapy) — Identificación de capacidad infrautilizada [ok]
+- Positive & Transcultural Psychotherapy (PPT / Positive Psychotherapy) — Enfoque en lo ya funcional [ok]
+- Terapia narrativa — Mapeo de la influencia de la persona sobre el problema [ok]
+- Terapia narrativa — Explorar actos de resistencia [ok]
+- Terapia narrativa — Pregunta por condiciones de la excepción [ok]
 
 ## Nombrar el problema
 
