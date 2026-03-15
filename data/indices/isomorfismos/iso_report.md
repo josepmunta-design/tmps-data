@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T14:29:23.013Z
+Generado: 2026-03-15T14:30:12.656Z
 
 ## Amplificar experiencia emergente
 
@@ -299,7 +299,7 @@ Generado: 2026-03-15T14:29:23.013Z
 - ID: `usar-la-relacion-terapeutica-como-muestra`
 - Categoría: Relación terapéutica como laboratorio clínico
 - Archivo fuente: `data/indices/isomorfismos/fuente/usar-la-relacion-terapeutica-como-muestra.json`
-- Entradas: 10
+- Entradas: 9
 
 - Psicoanálisis clásico — Trabajo con la transferencia [ok]
 - TFP – Transference-Focused Psychotherapy — Análisis sistemático de la transferencia [ok]
@@ -310,4 +310,3 @@ Generado: 2026-03-15T14:29:23.013Z
 - Psicoanálisis relacional — Nombrar el aquí-y-ahora relacional [ok]
 - Psicoanálisis relacional — Señalar un cambio en la sintonía [ok]
 - Psicoanálisis relacional — Reconocer un error terapéutico [ok]
-- Terapia enfocada en las emociones — Micro-validación correctiva [parcial]
