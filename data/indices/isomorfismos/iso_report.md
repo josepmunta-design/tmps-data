@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T19:28:16.681Z
+Generado: 2026-03-15T19:43:46.379Z
 
 ## Amplificar experiencia emergente
 
@@ -84,6 +84,22 @@ Generado: 2026-03-15T19:28:16.681Z
 - Terapia enfocada en las emociones — Trabajo con necesidades emocionales insatisfechas [ok]
 - Terapia enfocada en las emociones — Clarificación explícita de necesidad emergente [ok]
 - Focusing — Preguntar al felt sense (evocación de respuesta implícita) [parcial]
+
+## Diferenciar deseo propio de expectativa externa
+
+- ID: `diferenciar-deseo-propio-de-expectativa-externa`
+- Categoría: Autonomía, diferenciación y presión externa
+- Archivo fuente: `data/indices/isomorfismos/fuente/diferenciar-deseo-propio-de-expectativa-externa.json`
+- Entradas: 8
+
+- Terapia Gestalt — Diferenciar yo/otro en confluencia [ok]
+- Terapia Gestalt — Explorar el “debería” [ok]
+- Terapia Gestalt — Trabajo con introyecciones (mandatos tragados sin masticar) [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Reformulación de regla punitiva a lenguaje de elección [ok]
+- Terapia de Aceptación y Compromiso (ACT) — Clarificación estructurada de valores [ok]
+- Terapia basada en la Teoría de la Autodeterminación — Distinguir deseo propio de expectativa externa [ok]
+- Terapia basada en la Teoría de la Autodeterminación — Reconocer presión introyectada [ok]
+- Terapia basada en la Teoría de la Autodeterminación — Evaluación del perfil motivacional [ok]
 
 ## Diseñar experimentos conductuales
 
