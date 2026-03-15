@@ -108,8 +108,110 @@
 
   "mjps": ["RE","RI","N","I","AG","R"],
 
-  "procedimientos": [],
-  "micros": [],
+  "procedimientos": [
+
+{
+  "nombre": "Evaluación del perfil motivacional",
+  "codigo": "p_sdt_evaluacion_perfil_motivacional",
+  "texto": "Procedimiento de evaluación clínica en el que terapeuta y paciente analizan desde qué tipo de regulación motivacional se sostienen las conductas relevantes: regulación externa, introyectada, identificada, integrada o intrínseca. El objetivo es clarificar si las acciones actuales responden a presión externa, culpa, obligación o elección personal, permitiendo visualizar el grado de autodeterminación presente en diferentes áreas de la vida. Este análisis orienta el trabajo terapéutico hacia el desplazamiento progresivo de regulaciones controladas hacia formas más autónomas e integradas de motivación (Deci & Ryan, 1985; Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Análisis de satisfacción y frustración de necesidades básicas",
+  "codigo": "p_sdt_analisis_necesidades_basicas",
+  "texto": "Procedimiento clínico que explora hasta qué punto las necesidades psicológicas de autonomía, competencia y relación están siendo satisfechas o frustradas en distintos dominios vitales (trabajo, pareja, familia, terapia, metas personales). Este análisis permite comprender el origen motivacional del malestar psicológico y formular hipótesis sobre cómo ciertos contextos o dinámicas relacionales mantienen la desmotivación, el agotamiento o la dependencia externa. La intervención se orienta a modificar contextos o significados que impiden la satisfacción de estas necesidades (Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Exploración de la perspectiva personal del paciente",
+  "codigo": "p_sdt_explorar_perspectiva_paciente",
+  "texto": "Procedimiento relacional en el que el terapeuta reconoce y valida activamente la perspectiva subjetiva del paciente, explorando sus significados, razones, ambivalencias y emociones respecto a las decisiones o conductas que están en juego. Este proceso constituye uno de los pilares del apoyo a la autonomía, ya que permite que la persona se perciba comprendida como agente legítimo de su experiencia y reduce la experiencia de presión o control externo (Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Apoyo explícito a la autonomía",
+  "codigo": "p_sdt_apoyo_autonomia",
+  "texto": "Estilo de intervención en el que el terapeuta favorece sistemáticamente la experiencia de elección y autoría del paciente. Esto incluye ofrecer opciones significativas, evitar lenguaje controlador, explicar el sentido de las propuestas terapéuticas y reconocer que la decisión final pertenece al paciente. Este estilo relacional promueve motivación autodeterminada y facilita la internalización de los cambios terapéuticos (Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Facilitación de la internalización de metas",
+  "codigo": "p_sdt_facilitar_internalizacion",
+  "texto": "Procedimiento orientado a ayudar al paciente a apropiarse progresivamente de metas o conductas inicialmente externas. El terapeuta explora el sentido personal de dichas metas, conecta las acciones con valores relevantes y ayuda a integrar los cambios dentro de la identidad del paciente. El objetivo es transformar regulaciones externas o introyectadas en regulaciones identificadas o integradas, aumentando así la autodeterminación (Deci & Ryan, 1985; Ryan & Deci, 2000)."
+},
+
+{
+  "nombre": "Apoyo al desarrollo de competencia",
+  "codigo": "p_sdt_apoyo_competencia",
+  "texto": "Procedimiento mediante el cual el terapeuta estructura la intervención de forma que el paciente experimente progresivamente eficacia y dominio en las tareas terapéuticas. Esto incluye ajustar el nivel de desafío, ofrecer feedback informativo no evaluativo y destacar avances reales. El objetivo es fortalecer la percepción de competencia, una de las condiciones centrales para el desarrollo de motivación intrínseca (Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Fortalecimiento de conexión relacional",
+  "codigo": "p_sdt_fortalecer_relacion",
+  "texto": "Procedimiento orientado a consolidar experiencias de vínculo seguro, aceptación y reconocimiento dentro de la relación terapéutica y en otras relaciones significativas del paciente. Al restaurar la necesidad de relación (relatedness), el contexto interpersonal se vuelve más propicio para la internalización de valores y la motivación autodeterminada (Ryan & Deci, 2017)."
+}
+
+],
+  "micros": [
+
+{
+  "nombre": "Distinguir deseo propio de expectativa externa",
+  "codigo": "m_sdt_distinguir_deseo_vs_presion",
+  "procesos": ["RI_autoconciencia","N_reformulacion","AG_autoriaResponsabilidad"],
+  "texto": "Microintervención en la que el paciente examina una decisión, conducta o meta para identificar si surge de un deseo personal genuino o de presión externa, expectativas sociales, obligación o necesidad de aprobación. Esta diferenciación permite reconocer el grado de autodeterminación presente en la acción y facilita reorganizar la motivación hacia formas más autónomas (Deci & Ryan, 1985; Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Reconocer presión introyectada",
+  "codigo": "m_sdt_reconocer_presion_introyectada",
+  "procesos": ["RI_autoconciencia","N_metacognicion"],
+  "texto": "Microintervención destinada a identificar cuándo la conducta está impulsada por culpa, vergüenza, autoexigencia o necesidad de aprobación internaizada. El paciente aprende a reconocer estas formas de regulación introyectada como distintas de la motivación autodeterminada, lo que permite comenzar a reorganizar la relación con esas exigencias internas (Ryan & Deci, 2000)."
+},
+
+{
+  "nombre": "Identificar valor personal detrás de una meta",
+  "codigo": "m_sdt_identificar_valor_personal",
+  "procesos": ["RI_autoconocimiento","I_identidad","AG_agencia"],
+  "texto": "Microintervención en la que el paciente explora qué valor personal significativo puede estar relacionado con una meta, actividad o cambio terapéutico. Este proceso transforma metas inicialmente externas o instrumentales en compromisos más coherentes con la identidad del individuo, facilitando la internalización motivacional (Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Reformular una obligación como elección",
+  "codigo": "m_sdt_reformular_obligacion_eleccion",
+  "procesos": ["N_reformulacion","RI_autoconciencia","AG_autoriaResponsabilidad"],
+  "texto": "Microintervención que consiste en reformular una conducta percibida como obligación externa en términos de elección personal basada en valores o metas significativas. El objetivo no es negar la realidad de la demanda externa, sino recuperar la experiencia de autoría en la decisión de responder a ella (Ryan & Deci, 2000; Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Reconectar una acción con un valor significativo",
+  "codigo": "m_sdt_reconectar_accion_valor",
+  "procesos": ["RI_autoconocimiento","I_identidad","AG_compromisoConductual"],
+  "texto": "Microintervención en la que el paciente conecta explícitamente una acción concreta con el valor personal que la hace significativa. Este proceso fortalece la regulación identificada o integrada, aumentando la persistencia y la coherencia entre conducta y self (Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Reconocer experiencias de competencia",
+  "codigo": "m_sdt_reconocer_competencia",
+  "procesos": ["RI_autoconocimiento","I_autoimagen","AG_autoeficacia"],
+  "texto": "Microintervención orientada a identificar momentos en los que el paciente ha experimentado eficacia, progreso o dominio frente a un desafío. Reconocer estas experiencias fortalece la necesidad de competencia y aumenta la percepción de capacidad personal para sostener el cambio (Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Detectar contextos que frustran autonomía",
+  "codigo": "m_sdt_detectar_frustracion_autonomia",
+  "procesos": ["N_metacognicion","RI_autoconciencia"],
+  "texto": "Microintervención en la que el paciente identifica situaciones, relaciones o contextos en los que experimenta presión, control excesivo o falta de elección. Este reconocimiento permite comprender cómo el entorno afecta a la motivación y facilita reorganizar decisiones o límites personales (Ryan & Deci, 2017)."
+},
+
+{
+  "nombre": "Traducir valor internalizado en acción elegida",
+  "codigo": "m_sdt_valor_a_accion",
+  "procesos": ["I_identidad","AG_compromisoConductual"],
+  "texto": "Microintervención que consiste en formular una acción concreta que exprese un valor previamente identificado e internalizado. Este paso traduce la integración motivacional en conducta elegida, consolidando el sentido de agencia personal y la coherencia del self (Ryan & Deci, 2000; Ryan & Deci, 2017)."
+}
+
+],
  "ideasPrincipales": [
   {
     "id": "idea_sdt_1",
