@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T14:31:22.797Z
+Generado: 2026-03-15T14:33:33.988Z
 
 ## Amplificar experiencia emergente
 
@@ -200,6 +200,16 @@ Generado: 2026-03-15T14:31:22.797Z
 - Terapia de Aceptación y Compromiso (ACT) — m_act_ver_historia_como_historia [falta_id]
 - terapia-interpersonal-klerman-weissman-1984 — p_ipt_reevaluacion_interpersonal [falta_modelo]
 - terapia-racional-emotiva-ellis-1962 — p_rebt_disputa_creencias [falta_modelo]
+
+## Identificar creencias nucleares
+
+- ID: `identificar-creencias-nucleares`
+- Categoría: Estructuras cognitivas profundas
+- Archivo fuente: `data/indices/isomorfismos/fuente/identificar-creencias-nucleares.json`
+- Entradas: 2
+
+- terapia-cognitiva-beck-1967 — p_ct_identificar_creencias_nucleares [falta_modelo]
+- psicologia-individual-adler-1912 — p_adler_identificar_estilo_vida [falta_modelo]
 
 ## Identificar la función del síntoma
 

@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-15T14:31:22.797Z",
+    "generatedAt": "2026-03-15T14:33:33.988Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -1970,6 +1970,55 @@
           "techniqueType": null,
           "estado": "falta_modelo",
           "nota": "Generación de interpretaciones racionales alternativas frente a creencias irracionales.",
+          "sourceFile": null
+        }
+      ]
+    },
+    {
+      "id": "identificar-creencias-nucleares",
+      "label": "Identificar creencias nucleares",
+      "definicion": "Detectar y formular creencias profundas relativamente estables que organizan la interpretación de la experiencia, las expectativas relacionales y las respuestas emocionales del paciente.",
+      "categoria": "Estructuras cognitivas profundas",
+      "tags": [
+        "creencias nucleares",
+        "supuestos",
+        "significados profundos",
+        "interpretacion",
+        "metacognicion",
+        "estilo de vida"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/identificar-creencias-nucleares.json",
+      "entries": [
+        {
+          "modeloId": "terapia-cognitiva-beck-1967",
+          "tecnicaId": "p_ct_identificar_creencias_nucleares",
+          "modelId": "terapia-cognitiva-beck-1967",
+          "techniqueId": "p_ct_identificar_creencias_nucleares",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Procedimiento central de la terapia cognitiva: identificar creencias nucleares que organizan pensamientos automáticos y emociones.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "psicologia-individual-adler-1912",
+          "tecnicaId": "p_adler_identificar_estilo_vida",
+          "modelId": "psicologia-individual-adler-1912",
+          "techniqueId": "p_adler_identificar_estilo_vida",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exploración de las convicciones básicas del estilo de vida que organizan interpretación de la experiencia y metas personales.",
           "sourceFile": null
         }
       ]
@@ -4840,6 +4889,21 @@
         "hipotesis alternativas",
         "flexibilidad cognitiva",
         "reestructuracion cognitiva"
+      ],
+      "records": []
+    },
+    {
+      "id": "identificar-creencias-nucleares",
+      "label": "Identificar creencias nucleares",
+      "categoria": "Estructuras cognitivas profundas",
+      "definicion": "Detectar y formular creencias profundas relativamente estables que organizan la interpretación de la experiencia, las expectativas relacionales y las respuestas emocionales del paciente.",
+      "tags": [
+        "creencias nucleares",
+        "supuestos",
+        "significados profundos",
+        "interpretacion",
+        "metacognicion",
+        "estilo de vida"
       ],
       "records": []
     },
@@ -11099,6 +11163,55 @@
         }
       ]
     },
+    "identificar-creencias-nucleares": {
+      "id": "identificar-creencias-nucleares",
+      "label": "Identificar creencias nucleares",
+      "definicion": "Detectar y formular creencias profundas relativamente estables que organizan la interpretación de la experiencia, las expectativas relacionales y las respuestas emocionales del paciente.",
+      "categoria": "Estructuras cognitivas profundas",
+      "tags": [
+        "creencias nucleares",
+        "supuestos",
+        "significados profundos",
+        "interpretacion",
+        "metacognicion",
+        "estilo de vida"
+      ],
+      "sourceFile": "data/indices/isomorfismos/fuente/identificar-creencias-nucleares.json",
+      "entries": [
+        {
+          "modeloId": "terapia-cognitiva-beck-1967",
+          "tecnicaId": "p_ct_identificar_creencias_nucleares",
+          "modelId": "terapia-cognitiva-beck-1967",
+          "techniqueId": "p_ct_identificar_creencias_nucleares",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Procedimiento central de la terapia cognitiva: identificar creencias nucleares que organizan pensamientos automáticos y emociones.",
+          "sourceFile": null
+        },
+        {
+          "modeloId": "psicologia-individual-adler-1912",
+          "tecnicaId": "p_adler_identificar_estilo_vida",
+          "modelId": "psicologia-individual-adler-1912",
+          "techniqueId": "p_adler_identificar_estilo_vida",
+          "modeloLabel": null,
+          "modelLabel": null,
+          "grupo": null,
+          "tecnicaLabel": null,
+          "techniqueLabel": null,
+          "tecnicaTipo": null,
+          "techniqueType": null,
+          "estado": "falta_modelo",
+          "nota": "Exploración de las convicciones básicas del estilo de vida que organizan interpretación de la experiencia y metas personales.",
+          "sourceFile": null
+        }
+      ]
+    },
     "identificar-funcion-del-sintoma": {
       "id": "identificar-funcion-del-sintoma",
       "label": "Identificar la función del síntoma",
@@ -12311,6 +12424,9 @@
     ],
     "Flexibilización cognitiva y reconstrucción de significado": [
       "generar-interpretaciones-alternativas"
+    ],
+    "Estructuras cognitivas profundas": [
+      "identificar-creencias-nucleares"
     ],
     "Función y mantenimiento del problema": [
       "identificar-funcion-del-sintoma"
@@ -15525,11 +15641,11 @@
     ]
   },
   "stats": {
-    "totalIsomorfismos": 18,
-    "totalEntries": 177,
+    "totalIsomorfismos": 19,
+    "totalEntries": 179,
     "totalOk": 98,
     "totalFaltaId": 21,
-    "totalFaltaModelo": 25,
+    "totalFaltaModelo": 27,
     "totalDudoso": 0,
     "totalDescartado": 0
   }
