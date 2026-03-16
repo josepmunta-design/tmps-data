@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-15T21:26:14.670Z
+Generado: 2026-03-16T10:28:56.802Z
 
 ## Amplificar experiencia emergente
 
@@ -372,9 +372,9 @@ Generado: 2026-03-15T21:26:14.670Z
 - Entradas: 10
 
 - Terapia narrativa — Nombrar al problema [ok]
-- Psicología individual — Análisis del estilo de vida [ok]
-- Psicología individual — Identificación de lógica privada en tiempo real [ok]
-- Psicología individual — Clarificación de meta implícita [parcial]
+- psicologia-individual-adler — p_adler_estilo_vida [falta_modelo]
+- psicologia-individual-adler — m_adler_logica_privada [falta_modelo]
+- psicologia-individual-adler — m_adler_clarificar_meta [falta_modelo]
 - Terapia de esquemas — Nombrar el esquema activado [ok]
 - Terapia de esquemas — Nombrar el modo activo [ok]
 - Terapia breve (MRI) — Definición operativa del problema [ok]
@@ -408,7 +408,7 @@ Generado: 2026-03-15T21:26:14.670Z
 - Archivo fuente: `data/indices/isomorfismos/fuente/proyectar-la-vida-sin-el-problema.json`
 - Entradas: 9
 
-- Psicología individual — The question [ok]
+- psicologia-individual-adler — m_adler_the_question [falta_modelo]
 - Terapia centrada en soluciones — Pregunta milagro [ok]
 - Terapia centrada en soluciones — Pregunta de proyección inmediata [ok]
 - Entrevista Motivacional (Motivational Interviewing, MI) — Mirar atrás y mirar adelante (Looking back/forward) [ok]
