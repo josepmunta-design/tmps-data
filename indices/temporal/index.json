@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-16T10:31:21.093Z",
+  "generatedAt": "2026-03-16T10:45:12.315Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 177,
-    "links": 179,
-    "unresolvedInfluences": 615
+    "links": 180,
+    "unresolvedInfluences": 618
   },
   "nodes": [
     {
@@ -109,18 +109,34 @@
       "label": "Psicología individual",
       "year": 1912,
       "group": "Psicoanálisis",
-      "importance": 3,
+      "importance": 2,
       "type": "modelo",
       "isMarco": false,
       "file": "modelos/psicoanalisis/psicologia-individual-adler.json",
       "authors": "Alfred Adler",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
-      "lat": null,
-      "lon": null,
-      "ciudad": null,
-      "pais": null,
+      "summary": "Adler se separa de Freud al proponer una visión teleológica del comportamiento humano. El motor del desarrollo no es la libido, sino la búsqueda de sentido y pertenencia. Introduce los conceptos de sentimiento de inferioridad, afán de superación y estilo de vida. Plantea la importancia del contexto social, el propósito y la cooperación como ejes del bienestar. Su pensamiento anticipa el enfoque humanista y educativo, integrando psicología y ética comunitaria.",
+      "influencias": [
+        "Psicoanálisis clásico",
+        "Psicología del desarrollo",
+        "Educación social",
+        "Fenomenología / Hermenéutica"
+      ],
+      "refs": [
+        "Adler, A. (1927). Understanding Human Nature.",
+        "Adler, A. (1927). The Practice and Theory of Individual Psychology.",
+        "Adler, A. (1930). The Science of Living.",
+        "Adler, A. (1930). Problems of Neurosis.",
+        "Adler, A. (1931). What Life Could Mean to You.",
+        "Adler, A. (1933). Social Interest: A Challenge to Mankind.",
+        "Dreikurs, R. (1935). An Introduction to Individual Psychology.",
+        "Alfred Adler — Understanding Human Nature (1927)",
+        "Alfred Adler — What Life Could Mean to You (1931)",
+        "Alfred Adler — Social Interest: A Challenge to Mankind (1933)"
+      ],
+      "lat": 48.2082,
+      "lon": 16.3738,
+      "ciudad": "Viena",
+      "pais": "Austria",
       "escuelaId": "psicoanalisis"
     },
     {
@@ -5066,6 +5082,10 @@
       "target": "freud-modelo-estructural-ello-yo-superyo-1923"
     },
     {
+      "source": "psicoanalisis-clasico-freud",
+      "target": "psicologia-individual-adler"
+    },
+    {
       "source": "relaciones-objeto-klein",
       "target": "relaciones-objeto-fairbairn"
     },
@@ -5874,6 +5894,18 @@
     {
       "target": "freud-modelo-estructural-ello-yo-superyo-1923",
       "influence": "Empirismo objetivista / Positivismo lógico"
+    },
+    {
+      "target": "psicologia-individual-adler",
+      "influence": "Psicología del desarrollo"
+    },
+    {
+      "target": "psicologia-individual-adler",
+      "influence": "Educación social"
+    },
+    {
+      "target": "psicologia-individual-adler",
+      "influence": "Fenomenología / Hermenéutica"
     },
     {
       "target": "relaciones-objeto-fairbairn",
