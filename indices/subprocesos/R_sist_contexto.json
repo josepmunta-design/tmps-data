@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_contexto",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 23,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 24,
   "modelos": [
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
@@ -494,9 +494,30 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_adler_tres_tareas_vida",
+          "nombre": "Evaluación de las tres tareas de la vida",
+          "texto": "Procedimiento de formulación clínica que sitúa el problema en relación con las tres tareas fundamentales de la vida —ocupación, vínculo social/comunitario y amor—, analizando cómo el estilo de vida responde a cada una, dónde evita cooperación o reciprocidad y qué patrón de fracaso, distancia o superioridad defensiva aparece en cada dominio; sirve para convertir una formulación abstracta en mapa vital operativo (Adler, 1931, *What Life Could Mean to You*; Dreikurs, 1935, *An Introduction to Individual Psychology*).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_inferioridad_mimamiento_negligencia",
+          "nombre": "Evaluación de inferioridad orgánica, mimamiento y negligencia",
+          "texto": "Procedimiento de análisis etiológico-clínico que explora si el estilo de vida se organizó sobre condiciones tempranas típicamente adlerianas —inferioridad orgánica o funcional, exceso de mimo o negligencia/rechazo—, no para culpabilizar el pasado, sino para comprender qué conclusiones vitales extrajo el niño sobre su valor, sus posibilidades de cooperación y la necesidad de protegerse o dominar (Adler, 1931, *What Life Could Mean to You*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_adler_tarea_interes_social",
           "nombre": "Tarea de interés social",
           "texto": "Se acuerda una acción concreta de cooperación o contribución en el entorno (familia, trabajo, comunidad) para consolidar pertenencia real y debilitar el estilo de vida centrado en superioridad defensiva o retirada.",
+          "sub": "R_sist_contexto",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_quienes_estaban",
+          "nombre": "Pregunta por quién estaba presente y qué hacía",
+          "texto": "Microexploración que pregunta quién aparecía en la escena, dónde estaba el paciente respecto a esas figuras y qué hacía cada uno, para detectar rápidamente la posición relacional del self —protagonista, excluido, observado, protegido, rival, subordinado— y vincularla con el patrón actual de vínculo y pertenencia (Adler, 1931, *What Life Could Mean to You*; Adler, 1930, *Problems of Neurosis*).",
           "sub": "R_sist_contexto",
           "tipo": "micro"
         }
@@ -573,6 +594,22 @@
           "codigo": "p_fft_generalizacion",
           "nombre": "Generalización y cierre",
           "texto": "Transferencia de habilidades a escuela, justicia y comunidad y prevención de recaídas.",
+          "sub": "R_sist_contexto",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "interventive-interviewing-tomm-1987",
+      "modelLabel": "Interventive Interviewing",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Karl Tomm",
+      "modelYear": "1987",
+      "items": [
+        {
+          "codigo": "p_tomm_preguntas_estrategicas_desestabilizacion",
+          "nombre": "Preguntas estratégicas de desestabilización del patrón",
+          "texto": "Procedimiento en el que el terapeuta utiliza preguntas con intención directiva para confrontar pautas rígidas, inducir toma de posición, poner en evidencia costes relacionales o preparar cambios concretos en la interacción. Tomm describe este cuadrante estratégico como más influente y potencialmente útil cuando el sistema está atrapado en repeticiones estériles, aunque advierte también que incrementa el riesgo de imponer la agenda del terapeuta o generar resistencia si se usa de forma excesiva o poco sensible (Tomm, 1987, Part I; Tomm, 1988, Part III).",
           "sub": "R_sist_contexto",
           "tipo": "procedimiento"
         }

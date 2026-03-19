@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 78,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 81,
   "modelos": [
     {
       "modelId": "taoismo-psicologia-puentes-1980",
@@ -1454,6 +1454,13 @@
       "modelYear": 1951,
       "items": [
         {
+          "codigo": "p_gestalt_masticar_digerir_introyecciones",
+          "nombre": "Masticar y digerir introyecciones",
+          "texto": "Procedimiento explícito del libro que usa el comer como modelo funcional de la asimilación psicológica. Se trabaja la diferencia entre tragar entero e incorporar de forma crítica: morder, masticar, discriminar, rechazar o asimilar. Se aplica tanto a la comida como a normas, ideas, valores o mandatos aceptados sin elaboración propia.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_gestalt_trabajo_introyecciones",
           "nombre": "Trabajo con introyecciones (mandatos tragados sin masticar)",
           "texto": "Procedimiento para identificar reglas y “deberías” internalizados (familia, cultura, pareja) que organizan la conducta sin elección; se hacen explícitos, se confronta su coste en vitalidad y se ensaya discriminación entre valores propios y mandatos, devolviendo capacidad de decidir desde un self más auténtico. (Perls, Hefferline & Goodman, 1951; Polster & Polster, 1973).",
@@ -1746,9 +1753,37 @@
       "modelYear": 1912,
       "items": [
         {
+          "codigo": "p_adler_distancia_tareas",
+          "nombre": "Análisis de la distancia frente a decisiones y tareas",
+          "texto": "Procedimiento destinado a detectar cómo el paciente crea distancia protectora frente a matrimonio, trabajo, exposición, elección o compromiso mediante síntomas, dudas, crisis, demoras o principios rígidos, mostrando que la neurosis no solo expresa sufrimiento sino también una estrategia para no llegar al punto donde habría que decidir y arriesgarse realmente (Adler, 1927, *The Practice and Theory of Individual Psychology*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_excusa_aplazamiento",
+          "nombre": "Lectura del síntoma como excusa, aplazamiento y ennoblecimiento de la derrota",
+          "texto": "Procedimiento que explicita tres funciones frecuentes del síntoma neurótico en Adler: servir de excusa cuando la vida niega el triunfo esperado, posponer decisiones difíciles y convertir los logros o fracasos en algo moralmente más noble por haberse producido ‘a pesar’ de la adversidad, haciendo visible así la utilidad estratégica del trastorno dentro del plan vital (Adler, 1930, *Problems of Neurosis*).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_orientacion_vocacional",
+          "nombre": "Orientación vocacional desde estilo de vida y recuerdo temprano",
+          "texto": "Procedimiento aplicado a elecciones de trabajo o dirección vital que utiliza recuerdos tempranos, intereses dominantes, fantasías de futuro y modo de afrontar dificultad para inferir la meta de vida y distinguir entre elección ocupacional cooperativa y elección compensatoria, grandiosa o evitativa, articulando identidad, tarea laboral y contribución social (Adler, 1931, *What Life Could Mean to You*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_adler_the_question",
           "nombre": "The question",
           "texto": "Pregunta focal que revela prioridad vital al explorar qué haría el paciente si el síntoma desapareciera, conectando evitación actual con meta de vida y abriendo planificación concreta.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_que_evitas_con_sintoma",
+          "nombre": "Pregunta por el problema vital que el síntoma ayuda a evitar",
+          "texto": "Se pregunta qué tarea, decisión, exposición o vínculo se vuelve más aplazable gracias al síntoma, para desplazar la mirada desde el ‘por qué me pasa’ hacia el ‘para qué me sirve’, haciendo visible la función protectora y el coste de oportunidad que el trastorno introduce en la vida (Adler, 1930, *Problems of Neurosis*; Adler, 1927, *The Practice and Theory of Individual Psychology*).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
@@ -1797,6 +1832,22 @@
           "texto": "Microintervención que señala el incremento de curiosidad, iniciativa o autonomía como señales de mayor seguridad de apego, reforzando el cambio sin convertirlo en exigencia de rendimiento (Bowlby, 1969, *Attachment*).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_jerarquia",
+          "nombre": "Jerarquización de objetivos terapéuticos",
+          "texto": "Procedimiento que organiza el foco clínico según una jerarquía clara: primero conductas que amenazan la vida o el tratamiento, después conductas que interfieren en la terapia, y finalmente conflictos relacionales y estructurales. Esta jerarquización permite sostener el trabajo psicodinámico profundo sin perder el control del riesgo clínico. Referencia: Clarkin et al. (2006/2015).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -1891,6 +1942,22 @@
           "texto": "Prescripción o intensificación controlada del síntoma para desactivar luchas internas y devolver sensación de control. Muy influyente en la terapia estratégica posterior.",
           "sub": "AG_tomaDecisiones",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "interventive-interviewing-tomm-1987",
+      "modelLabel": "Interventive Interviewing",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Karl Tomm",
+      "modelYear": "1987",
+      "items": [
+        {
+          "codigo": "m_tomm_consecuencias_futuras",
+          "nombre": "Pregunta sobre consecuencias futuras",
+          "texto": "Microintervención reflexiva que invita a anticipar qué podría ocurrir si el patrón actual continuara igual o si se introdujera un cambio específico, ayudando a evaluar consecuencias relacionales, emocionales o prácticas de diferentes trayectorias. Este tipo de pregunta promueve reflexión prospectiva y favorece decisiones más conscientes dentro del sistema (Tomm, 1987, *Interventive Interviewing: Part II*).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
         }
       ]
     },
@@ -2068,6 +2135,43 @@
           "codigo": "m_desplazamiento_objetivo_funcional",
           "nombre": "Micro-objetivo funcional semanal",
           "texto": "Definir una acción pequeña, realista y verificable que aumente agencia en la semana siguiente, traduciendo intervención psicológica en cambio observable. (WHO, 2013).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "modelLabel": "Modelo procesual de regulación emocional",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James J. Gross",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_gross_seleccion_situacion",
+          "nombre": "Entrenamiento en selección de situación",
+          "texto": "Procedimiento que entrena la capacidad de anticipar el impacto emocional de diferentes contextos y tomar decisiones conscientes sobre a cuáles exponerse o cuáles limitar, diferenciando entre evitación rígida y elección adaptativa basada en valores y recursos disponibles. Se busca optimizar el entorno emocional reduciendo exposiciones innecesarias y favoreciendo contextos que faciliten regulación, sin empobrecer la vida ni reforzar patrones evitativos disfuncionales (Gross, 1998; Gross, 2015).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gross_alternativas_exposicion",
+          "nombre": "Explorar alternativas de exposición contextual",
+          "texto": "Microintervención en la que se generan opciones alternativas de acercamiento a situaciones relevantes, modulando intensidad o condiciones de exposición para favorecer regulación sin caer en evitación rígida (Gross, 2015).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_eleccion_estrategia",
+          "nombre": "Elegir estrategia reguladora según contexto",
+          "texto": "Microintervención que entrena la selección deliberada de estrategias de regulación emocional en función de las demandas situacionales, los objetivos y los recursos disponibles (Gross, 2015).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_anticipar_emocion",
+          "nombre": "Anticipar impacto emocional de una decisión",
+          "texto": "Microintervención en la que se proyecta el impacto emocional probable de distintas decisiones futuras, facilitando elecciones más ajustadas a regulación y bienestar (Gross, 1998; Gross, 2015).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

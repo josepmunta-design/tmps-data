@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 126,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 128,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -2183,9 +2183,23 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_eft_regulacion_ventana_tolerancia",
+          "nombre": "Regulación experiencial dentro de la ventana de tolerancia",
+          "texto": "Procedimiento mediante el cual el terapeuta monitoriza continuamente el nivel de activación emocional del paciente durante el trabajo experiencial, introduciendo ralentización, anclaje sensorial, pausas, orientación al presente o reducción temporal de intensidad cuando la activación amenaza con desbordar o desconectar, con el objetivo de mantener la emoción suficientemente viva para su procesamiento sin que el paciente salga de la ventana de tolerancia necesaria para el cambio (Greenberg, 2002/2017).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_eft_regulacion_respiratoria",
           "nombre": "Regulación por ralentización respiratoria breve",
           "texto": "Uso de respiración consciente breve para reducir activación excesiva y mantener emoción dentro de ventana de tolerancia sin interrumpir proceso transformador. (Greenberg, 2002/2017).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_eft_ralentizacion_discurso",
+          "nombre": "Ralentización del discurso para profundizar",
+          "texto": "Intervención breve en la que el terapeuta invita a bajar el ritmo del relato o a repetir una frase más despacio para que el paciente pueda contactar con la experiencia emocional que acompaña sus palabras, evitando que la rapidez narrativa funcione como defensa frente al sentir (Greenberg, Rice & Elliott, 1993).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }
@@ -2480,6 +2494,13 @@
       "modelYear": 1951,
       "items": [
         {
+          "codigo": "p_gestalt_ansiedad_a_excitacion",
+          "nombre": "Transformar ansiedad en excitación",
+          "texto": "Procedimiento para explorar la ansiedad como excitación bloqueada, especialmente a través de la respiración. Se observa cómo la persona interfiere con la exhalación, contrae el tórax, la garganta o el diafragma y corta la movilización energética. El trabajo consiste en discriminar ese bloqueo y permitir que la activación recupere su curso como excitación utilizable, no como mero síntoma ansioso.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_gestalt_experimentos",
           "nombre": "Experimentos gestálticos (diseño de experiencia en sesión)",
           "texto": "Procedimiento nuclear: el terapeuta co-diseña con el paciente un experimento concreto (con voz, cuerpo, movimiento, diálogo o imaginación) para hacer explícito lo implícito y generar una experiencia correctiva; el foco no es “hacer tareas” por cumplir, sino crear condiciones para que emerja awareness, elección y cierre de gestalts inconclusas. (Zinker, 1977; Perls, 1969).",
@@ -2518,6 +2539,13 @@
           "codigo": "m_gestalt_contacto_ocular",
           "nombre": "Micro-experimento de contacto ocular",
           "texto": "Ensayo breve de sostener la mirada mientras se expresa una emoción relevante, explorando activación y significado del contacto directo en el campo relacional (Yontef, 1993).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_localizar_corte_respiratorio",
+          "nombre": "Localizar el corte respiratorio",
+          "texto": "Señalar y explorar dónde se interrumpe la respiración cuando aparece activación, ansiedad o tensión: garganta, pecho, diafragma o exhalación. Ayuda a reconocer en vivo cómo la persona participa activamente en el bloqueo de su excitación. (Perls, Hefferline, & Goodman, 1951).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }
@@ -3548,6 +3576,29 @@
       ]
     },
     {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_jerarquia",
+          "nombre": "Jerarquización de objetivos terapéuticos",
+          "texto": "Procedimiento que organiza el foco clínico según una jerarquía clara: primero conductas que amenazan la vida o el tratamiento, después conductas que interfieren en la terapia, y finalmente conflictos relacionales y estructurales. Esta jerarquización permite sostener el trabajo psicodinámico profundo sin perder el control del riesgo clínico. Referencia: Clarkin et al. (2006/2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_neutralidad_devaluacion",
+          "nombre": "Mantener neutralidad frente a devaluación",
+          "texto": "Microintervención que sostiene una posición firme y regulada frente a ataques, descalificaciones o desconfianza extrema del paciente, evitando respuestas defensivas o punitivas. Permite que el afecto agresivo se mantenga presente sin ruptura del encuadre. Referencia: Yeomans et al. (2015).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "winnicott-objeto-transicional-ambiente",
       "modelLabel": "Winnicott – Objeto transicional y ambiente",
       "modelGrupo": "Psicoanálisis",
@@ -3989,6 +4040,43 @@
           "codigo": "m_mind_pausa_impulso",
           "nombre": "Detectar impulso y pausar la respuesta",
           "texto": "Microintervención que identifica el surgimiento de un impulso reactivo (huir, atacar, evitar) y crea un breve espacio consciente antes de actuar. Este microespacio facilita elección conductual y disminuye respuestas automáticas desadaptativas. (Kabat-Zinn, 2003).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "modelLabel": "Modelo procesual de regulación emocional",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James J. Gross",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_gross_despliegue_atencional",
+          "nombre": "Entrenamiento en despliegue atencional",
+          "texto": "Procedimiento que entrena la capacidad de dirigir, sostener o redirigir la atención como forma de modular la activación emocional, incluyendo estrategias como distracción flexible, focalización selectiva o atención abierta. El objetivo es reducir la captura atencional rígida por estímulos emocionalmente cargados y aumentar la capacidad de elegir dónde poner el foco, lo que impacta directamente en la intensidad y duración de la emoción (Gross, 1998; Gross, 2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gross_modulacion_respuesta",
+          "nombre": "Entrenamiento en modulación de respuesta",
+          "texto": "Procedimiento orientado a intervenir sobre la emoción una vez activada, modulando sus componentes fisiológicos, expresivos o conductuales mediante técnicas como respiración, relajación o control conductual. Se trabaja especialmente en reducir la dependencia de estrategias como la supresión rígida, enseñando alternativas más flexibles que disminuyan la intensidad emocional sin generar costes acumulativos en salud o relaciones (Gross, 1998; Gross, 2015).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gross_redirigir_atencion",
+          "nombre": "Redirigir voluntariamente la atención",
+          "texto": "Microintervención en la que se entrena la capacidad de desplazar el foco atencional desde estímulos altamente activadores hacia otros neutros o reguladores, reduciendo la amplificación emocional (Gross, 1998).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_reducir_supresion",
+          "nombre": "Reducir la supresión expresiva",
+          "texto": "Microintervención que invita a disminuir el esfuerzo por ocultar o inhibir la expresión emocional, favoreciendo formas más abiertas y menos costosas de relación con la emoción (Gross, 2014).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

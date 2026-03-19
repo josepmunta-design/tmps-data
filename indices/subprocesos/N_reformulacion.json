@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_reformulacion",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 110,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 114,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -1258,6 +1258,22 @@
       ]
     },
     {
+      "modelId": "eft-greenberg-1990",
+      "modelLabel": "Terapia enfocada en las emociones",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Leslie Greenberg; Robert Elliott",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "m_eft_reencuadre_emocional",
+          "nombre": "Reencuadre emocional adaptativo",
+          "texto": "Intervención breve que reformula una emoción o reacción del paciente como una respuesta comprensible desde su historia, necesidades o contexto relacional, reduciendo autojuicio y facilitando aceptación de la emoción como señal significativa en lugar de vivirla únicamente como defecto o exceso personal (Greenberg, 2002/2017).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "emotion-focused-skills-training-efst-2016",
       "modelLabel": "Emotion-Focused Skills Training (EFST)",
       "modelGrupo": "Humanista",
@@ -2120,6 +2136,41 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_adler_significado_vida",
+          "nombre": "Análisis del significado de la vida y del sentido privado",
+          "texto": "Procedimiento orientado a reconstruir qué ‘significado de la vida’ está usando el paciente de forma implícita en sus actos, síntomas, posturas y elecciones, diferenciando entre un sentido privado centrado en autoprotección, superioridad o retirada y un sentido más cooperativo y compartible; permite leer la clínica no como suma de rasgos, sino como expresión coherente de una interpretación vital básica que organiza vínculos, trabajo y amor (Adler, 1931, *What Life Could Mean to You*; Adler, 1930, *The Science of Living*).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_inferioridad_mimamiento_negligencia",
+          "nombre": "Evaluación de inferioridad orgánica, mimamiento y negligencia",
+          "texto": "Procedimiento de análisis etiológico-clínico que explora si el estilo de vida se organizó sobre condiciones tempranas típicamente adlerianas —inferioridad orgánica o funcional, exceso de mimo o negligencia/rechazo—, no para culpabilizar el pasado, sino para comprender qué conclusiones vitales extrajo el niño sobre su valor, sus posibilidades de cooperación y la necesidad de protegerse o dominar (Adler, 1931, *What Life Could Mean to You*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_vida_mentira",
+          "nombre": "Identificación de vida-mentira y autoengaño neurótico",
+          "texto": "Procedimiento que hace visible la ficción protectora mediante la cual el paciente atribuye a destino, trauma, injusticia o incapacidad fija lo que en realidad forma parte de un plan de vida defensivo, permitiendo ver cómo el autoengaño preserva autoestima, posterga decisiones y mantiene la posición subjetiva de excepción o inocencia frente a las tareas comunes de la existencia (Adler, 1927, *The Practice and Theory of Individual Psychology*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_sueno_ensayo",
+          "nombre": "Interpretación de sueños como ensayo para problemas futuros",
+          "texto": "Procedimiento que interpreta el sueño como preparación afectiva e imaginativa ante un problema actual o inminente, leyendo sus imágenes como analogías al servicio del estilo de vida y del deseo de superioridad, más que como cumplimiento de deseo reprimido; el objetivo es conectar el contenido onírico con la actitud que el paciente está ensayando ante una decisión, peligro o conflicto de las tareas de vida (Adler, 1927, *The Practice and Theory of Individual Psychology*; Adler, 1931, *What Life Could Mean to You*).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_excusa_aplazamiento",
+          "nombre": "Lectura del síntoma como excusa, aplazamiento y ennoblecimiento de la derrota",
+          "texto": "Procedimiento que explicita tres funciones frecuentes del síntoma neurótico en Adler: servir de excusa cuando la vida niega el triunfo esperado, posponer decisiones difíciles y convertir los logros o fracasos en algo moralmente más noble por haberse producido ‘a pesar’ de la adversidad, haciendo visible así la utilidad estratégica del trastorno dentro del plan vital (Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_adler_reencuadre_teleologico",
           "nombre": "Reencuadre teleológico breve",
           "texto": "Microreformulación que desplaza la explicación desde culpa o defectos hacia propósito y función, haciendo el problema comprensible y modificable dentro del estilo de vida y sus estrategias de protección.",
@@ -2137,6 +2188,34 @@
           "codigo": "m_adler_spitting_in_the_soup",
           "nombre": "Spitting in the soup",
           "texto": "Consiste en señalar con tacto el ‘beneficio oculto’ o la función de una conducta problemática de modo que pierda su atractivo automático, aumentando elección consciente sin acusación moral.",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_que_evitas_con_sintoma",
+          "nombre": "Pregunta por el problema vital que el síntoma ayuda a evitar",
+          "texto": "Se pregunta qué tarea, decisión, exposición o vínculo se vuelve más aplazable gracias al síntoma, para desplazar la mirada desde el ‘por qué me pasa’ hacia el ‘para qué me sirve’, haciendo visible la función protectora y el coste de oportunidad que el trastorno introduce en la vida (Adler, 1930, *Problems of Neurosis*; Adler, 1927, *The Practice and Theory of Individual Psychology*).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_traducir_sintoma_aplazamiento",
+          "nombre": "Traducción del síntoma a aplazamiento",
+          "texto": "Microreencuadre que formula explícitamente cómo una crisis, fobia, dolor o bloqueo deja en suspenso una elección que la persona teme afrontar, permitiéndole reconocer que el síntoma no solo duele, sino que también organiza tiempo, deberes y responsabilidades a su favor defensivo (Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_beneficio_ennoblecedor",
+          "nombre": "Señalamiento de beneficio ennoblecedor",
+          "texto": "Intervención breve que muestra cómo el paciente puede presentar su esfuerzo, su fracaso o su estancamiento como moralmente más valioso por ocurrir ‘pese a’ la enfermedad o la adversidad, ayudándole a ver el uso de la dificultad como capital simbólico dentro de su estilo de vida (Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_lectura_sueno_preparacion",
+          "nombre": "Lectura del sueño como preparación",
+          "texto": "Microreencuadre que conecta el sueño con la tarea o conflicto presente preguntando para qué estado afectivo, qué cautela o qué actitud está preparando a la persona, tratando la escena onírica como ensayo del estilo de vida ante el futuro inmediato (Adler, 1927, *The Practice and Theory of Individual Psychology*; Adler, 1931, *What Life Could Mean to You*).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }
@@ -2478,6 +2557,50 @@
           "texto": "Prescripción o intensificación controlada del síntoma para desactivar luchas internas y devolver sensación de control. Muy influyente en la terapia estratégica posterior.",
           "sub": "N_reformulacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "interventive-interviewing-tomm-1987",
+      "modelLabel": "Interventive Interviewing",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Karl Tomm",
+      "modelYear": "1987",
+      "items": [
+        {
+          "codigo": "p_tomm_definicion_lineal_problema",
+          "nombre": "Definición lineal inicial del problema",
+          "texto": "Procedimiento de apertura orientado a delimitar el motivo de consulta, los hechos relevantes, la secuencia aparente del problema y las atribuciones causales explícitas de cada miembro o del paciente. Aunque Tomm advierte que una lectura puramente lineal puede simplificar en exceso la complejidad sistémica, esta fase resulta útil para orientarse, recoger definiciones espontáneas del problema y detectar desde qué marcos explicativos está siendo vivido antes de ampliar la mirada hacia formulaciones circulares más complejas (Tomm, 1988, Interventive Interviewing: Part III).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_reglas_premisas_sistema",
+          "nombre": "Exploración de mandatos, reglas y premisas del sistema",
+          "texto": "Procedimiento orientado a hacer explícitas las reglas implícitas y premisas organizadoras del sistema —por ejemplo, qué se puede decir, qué no se puede confrontar, quién debe cuidar, quién no puede fallar o qué significa discrepar— mediante preguntas que revelan mandatos, lealtades y supuestos normativos. La finalidad clínica es transformar lo tácito en pensable, contextualizar esas reglas en la historia del sistema y abrir margen para reformularlas cuando ya no resultan funcionales (Tomm, 1988, Interventive Interviewing: Part III).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_reencuadre_relacional_preguntas",
+          "nombre": "Reencuadre relacional mediante secuencia de preguntas",
+          "texto": "Procedimiento mediante el cual el terapeuta no ofrece un reencuadre en forma de interpretación cerrada, sino que lo construye progresivamente a través de una secuencia de preguntas que desplaza el significado del problema: de defecto individual a patrón recíproco, de mala intención a intento de protección, de resistencia a solución fallida o de culpable a participante en un ciclo. Esta forma de entrevistar permite que el nuevo marco emerja desde la conversación misma y sea vivido como más propio y menos impuesto (Tomm, 1988, Part III).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_efectos_segundo_orden",
+          "nombre": "Entrevista de clarificación de efectos de segundo orden",
+          "texto": "Procedimiento orientado a explorar no solo qué hace cada miembro, sino qué efectos produce en las percepciones, expectativas y respuestas posteriores del resto del sistema, incluyendo los efectos inadvertidos de intentos de ayuda, control o protección. Este nivel de entrevista profundiza la comprensión de segundo orden porque muestra cómo cada acción modifica el campo relacional y reorganiza la respuesta del otro, ampliando la capacidad del sistema para observarse desde fuera y salir de atribuciones simplistas (Tomm, 1988, Part III).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tomm_diferencia_temporal",
+          "nombre": "Pregunta de diferencia temporal",
+          "texto": "Microintervención que compara la situación actual con momentos anteriores o con periodos en los que el problema era menor, invitando a identificar cambios, excepciones o variaciones en el patrón. Estas comparaciones ayudan a introducir diferencias relevantes en la percepción del problema y facilitan la identificación de condiciones que favorecen o reducen su aparición (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -2883,6 +3006,50 @@
       ]
     },
     {
+      "modelId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "modelLabel": "Modelo procesual de regulación emocional",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James J. Gross",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_gross_reevaluacion_cognitiva",
+          "nombre": "Reevaluación cognitiva (reappraisal)",
+          "texto": "Procedimiento dirigido a modificar el significado atribuido a una situación para alterar su impacto emocional antes de que la respuesta se consolide plenamente, generando interpretaciones alternativas plausibles que reduzcan amenaza, aumenten sentido o amplíen perspectiva. A diferencia de la supresión, la reevaluación transforma la emoción desde su base interpretativa, lo que la convierte en una de las estrategias más eficaces y con menor coste fisiológico e interpersonal (Gross, 1998; Gross, 2014).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gross_reformulacion_sintoma_regulacion",
+          "nombre": "Reformulación del síntoma como estrategia reguladora",
+          "texto": "Procedimiento en el que los síntomas emocionales o conductuales se conceptualizan como intentos de regulación emocional que cumplen una función específica dentro del sistema, como reducir activación, evitar malestar o mantener control. Esta reformulación permite disminuir juicio y aumentar comprensión funcional, facilitando la transición hacia estrategias más eficaces y menos costosas (Gross, 2015).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gross_generar_reinterpretaciones",
+          "nombre": "Generar reinterpretaciones alternativas",
+          "texto": "Microintervención en la que se construyen activamente nuevas interpretaciones de una situación, ampliando significados posibles y reduciendo la carga emocional asociada a una única lectura rígida (Gross, 1998).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_perspectiva_temporal",
+          "nombre": "Introducir perspectiva temporal",
+          "texto": "Microintervención que consiste en situar la experiencia actual en una escala temporal más amplia, reduciendo su intensidad percibida y favoreciendo una reevaluación más flexible (Gross, 2015).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_funcion_sintoma",
+          "nombre": "Nombrar la función reguladora del síntoma",
+          "texto": "Microintervención en la que se explicita qué función reguladora cumple un síntoma —reducir activación, evitar exposición, mantener control— aumentando comprensión funcional y reduciendo juicio (Gross, 2015).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "psicoterapia-comunitaria-reconciliacion-2000",
       "modelLabel": "Psicoterapia comunitaria para la reconciliación",
       "modelGrupo": "Transversal",
@@ -2974,6 +3141,29 @@
           "codigo": "m_trauma_sociopolitico_reatribucion",
           "nombre": "Reatribución de responsabilidad estructural",
           "texto": "Intervención breve que sitúa la responsabilidad principal del daño en el sistema represivo y no en decisiones individuales bajo amenaza, reduciendo internalización del opresor y autoacusación persistente. Referencia: Martín-Baró (1990).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "self-determination-therapy-deci-ryan-1985",
+      "modelLabel": "Terapia basada en la Teoría de la Autodeterminación",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Edward L. Deci; Richard M. Ryan",
+      "modelYear": 1985,
+      "items": [
+        {
+          "codigo": "m_sdt_distinguir_deseo_vs_presion",
+          "nombre": "Distinguir deseo propio de expectativa externa",
+          "texto": "Microintervención en la que el paciente examina una decisión, conducta o meta para identificar si surge de un deseo personal genuino o de presión externa, expectativas sociales, obligación o necesidad de aprobación. Esta diferenciación permite reconocer el grado de autodeterminación presente en la acción y facilita reorganizar la motivación hacia formas más autónomas (Deci & Ryan, 1985; Ryan & Deci, 2017).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sdt_reformular_obligacion_eleccion",
+          "nombre": "Reformular una obligación como elección",
+          "texto": "Microintervención que consiste en reformular una conducta percibida como obligación externa en términos de elección personal basada en valores o metas significativas. El objetivo no es negar la realidad de la demanda externa, sino recuperar la experiencia de autoría en la decisión de responder a ella (Ryan & Deci, 2000; Ryan & Deci, 2017).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }

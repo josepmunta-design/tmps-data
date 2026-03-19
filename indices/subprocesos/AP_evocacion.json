@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 50,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 51,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -439,6 +439,20 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_eft_soledad_anhelo_apego",
+          "nombre": "Trabajo con soledad emocional y anhelo de apego",
+          "texto": "Procedimiento centrado en activar y elaborar experiencias de soledad emocional, abandono o anhelo intenso de conexión, ayudando al paciente a diferenciar la protesta secundaria de la necesidad primaria de vínculo, contacto o consuelo, de modo que la emoción deje de expresarse solo como demanda caótica, retirada o resentimiento y pueda organizarse como necesidad relacional legítima y comunicable (Greenberg, Watson & Goldman, 1998; Greenberg, 2002/2017).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_eft_evocacion_emocional",
+          "nombre": "Evocación y profundización emocional",
+          "texto": "Procedimiento central de la Terapia Enfocada en las Emociones que consiste en evocar activamente experiencias emocionalmente significativas en el aquí-y-ahora de la sesión para que la emoción pueda experimentarse con suficiente intensidad y claridad, utilizando recuerdos específicos, imágenes relacionales, diálogo interno o tareas experienciales como las sillas para activar el esquema emocional implicado y permitir que la emoción primaria emerja, se diferencie y se procese hasta producir transformación emocional adaptativa. (Greenberg, Rice & Elliott, 1993; Greenberg, 2002/2017).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_eft_evocacion_recuerdo",
           "nombre": "Evocación de recuerdo emocional específico",
           "texto": "Invitación a revivir escena concreta asociada a emoción primaria desadaptativa para activarla plenamente en sesión y facilitar transformación emocional. (Greenberg, 2002/2017).",
@@ -449,6 +463,20 @@
           "codigo": "m_eft_imagen_emocional",
           "nombre": "Evocación de imagen emocionalmente cargada",
           "texto": "Invitación a visualizar una escena específica asociada a la emoción que emerge en sesión, facilitando activación más completa del esquema emocional implicado. (Greenberg, Rice & Elliott, 1993).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_eft_presente_experiencial",
+          "nombre": "Evocación experiencial en tiempo presente",
+          "texto": "Invitación a describir o revivir una experiencia emocional como si estuviera ocurriendo en este momento, usando presente y cercanía experiencial para aumentar vividez, activación y contacto con el esquema emocional implicado, en lugar de hablar de forma distante o puramente narrativa sobre lo ocurrido (Greenberg, Rice & Elliott, 1993).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_eft_concretar_escena_emocional",
+          "nombre": "Concretar la escena emocional relevante",
+          "texto": "Microintervención orientada a pasar de generalidades abstractas a una escena concreta, específica y situada en el tiempo donde la emoción pueda evocarse con más claridad, facilitando activación experiencial suficiente y evitando quedarse en formulaciones globales que no movilizan el esquema emocional (Greenberg, Rice & Elliott, 1993).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }
@@ -607,6 +635,22 @@
       ]
     },
     {
+      "modelId": "terapia-existencial-humanista-bugental",
+      "modelLabel": "Terapia Existencial-Humanista (Bugental)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "James F. T. Bugental",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "m_bugental_habitar",
+          "nombre": "Invitaciones a habitar la emoción",
+          "texto": "Intervenciones verbales suaves que invitan al cliente a permanecer con una emoción emergente en lugar de explicarla o evitarla. Facilitan contacto directo con la vivencia emocional y aumentan la profundidad experiencial (Bugental, 1978).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "terapia-experiencial-1970",
       "modelLabel": "Terapia Experiencial",
       "modelGrupo": "Humanista",
@@ -630,6 +674,13 @@
       "modelYear": 1951,
       "items": [
         {
+          "codigo": "p_gestalt_recuerdo_sensorial",
+          "nombre": "Recuerdo sensorial en presente",
+          "texto": "Procedimiento de rememoración fenomenológica: el paciente no se limita a contar un recuerdo, sino que intenta revivirlo sensorialmente, reactivando imágenes, sonidos, postura, tono corporal y clima afectivo. El objetivo es devolver densidad experiencial a la memoria y trabajarla como experiencia presente, no solo como relato abstracto.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_gestalt_silla_vacia",
           "nombre": "Silla vacía (diálogo con figura ausente)",
           "texto": "Procedimiento experiencial para activar y elaborar asuntos pendientes con figuras significativas: el paciente dialoga con la persona ausente (o con un aspecto de la relación) en una silla, alternando posiciones para contactar con emociones primarias, necesidades no expresadas y límites; facilita cierre, reparación simbólica y reorganización relacional interna. (Perls, 1969; Polster & Polster, 1973).",
@@ -647,6 +698,13 @@
           "codigo": "m_gestalt_figura_ausente",
           "nombre": "Traer la figura ausente al presente",
           "texto": "Invitación puntual a imaginar a la persona relevante frente a sí y dirigirle una frase directa, activando emoción primaria para facilitar cierre o reparación simbólica (Perls, 1969).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_reviviendo_recuerdo_sensorial",
+          "nombre": "Revivir un recuerdo con detalle sensorial",
+          "texto": "Invitación breve a reconstruir una escena recordada atendiendo a postura, sensaciones, sonidos, imágenes y clima afectivo, en lugar de limitarse a resumirla conceptualmente. Busca devolver densidad experiencial al recuerdo y trabajarlo como vivencia presente. (Perls, Hefferline, & Goodman, 1951).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_aceptacion",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 69,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 71,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -335,6 +335,13 @@
       "modelAutores": "Steven C. Hayes; Kirk D. Strosahl; Kelly G. Wilson",
       "modelYear": 1999,
       "items": [
+        {
+          "codigo": "m_act_role_play_conversacion_dificil",
+          "nombre": "Role-play de conversación difícil con apertura experiencial",
+          "texto": "Microintervención en la que se ensaya brevemente una conversación interpersonal difícil mientras el paciente practica notar y permitir la activación interna sin retirarse ni fusionarse con ella, manteniendo la conducta alineada con lo que considera importante en la relación. El objetivo es entrenar la capacidad de permanecer presente y responder con elección en lugar de obedecer la evitación. Referencia: formulación coherente con ACT clínica aplicada; añadido propuesto fuera del repertorio explícito actual del repo.",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
         {
           "codigo": "p_act_aceptacion",
           "nombre": "Entrenamiento en aceptación/expansión experiencial",
@@ -971,6 +978,22 @@
       ]
     },
     {
+      "modelId": "terapia-existencial-humanista-bugental",
+      "modelLabel": "Terapia Existencial-Humanista (Bugental)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "James F. T. Bugental",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "m_bugental_habitar",
+          "nombre": "Invitaciones a habitar la emoción",
+          "texto": "Intervenciones verbales suaves que invitan al cliente a permanecer con una emoción emergente en lugar de explicarla o evitarla. Facilitan contacto directo con la vivencia emocional y aumentan la profundidad experiencial (Bugental, 1978).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "terapia-transpersonal-1968",
       "modelLabel": "Terapia transpersonal",
       "modelGrupo": "Humanista",
@@ -1460,6 +1483,22 @@
           "texto": "Intervención de cierre que resume la experiencia relacional vivida y reafirma la continuidad del vínculo terapéutico, consolidando la vivencia de base segura y reduciendo ansiedad anticipatoria (Bowlby, 1988, *A Secure Base*).",
           "sub": "RE_aceptacion",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_agresion",
+          "nombre": "Trabajo con la agresión y la destructividad",
+          "texto": "Procedimiento específico de TFP que aborda la agresión intensa y los afectos negativos primitivos no integrados, ayudando al paciente a reconocerlos, tolerarlos y simbolizarlos dentro de la relación terapéutica. La integración de la agresión es clave para la consolidación de una identidad más estable y relaciones menos persecutorias. Referencia: Kernberg (1992); Yeomans et al. (2015).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
         }
       ]
     },

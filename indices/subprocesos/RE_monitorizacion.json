@@ -1,6 +1,6 @@
 {
   "subprocesoId": "RE_monitorizacion",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
+  "updatedAt": "2026-03-19T19:55:12.726Z",
   "totalModelos": 9,
   "modelos": [
     {
@@ -80,6 +80,27 @@
       "modelYear": 1951,
       "items": [
         {
+          "codigo": "p_gestalt_sentir_lo_actual",
+          "nombre": "Sentir lo actual (actuality work)",
+          "texto": "Procedimiento básico de actualización de la experiencia: se entrena al paciente a aumentar la sensación de realidad de lo que ocurre ahora mismo, trayendo la atención a la situación presente y describiendo en tiempo real qué percibe, hace y le pasa. El objetivo no es forzar alerta constante, sino recuperar contacto con lo actual cuando la persona se dispersa, se ausenta o se va a ensoñaciones y automatismos.",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_fuerzas_opuestas",
+          "nombre": "Detección de fuerzas opuestas y resistencias",
+          "texto": "Procedimiento para reconocer que las resistencias no son algo externo, sino fuerzas internas en oposición dentro de la propia actividad del paciente. Se explora cómo una parte intenta hacer algo y otra parte lo interfiere, lo frena o lo vacía, haciendo visible el conflicto en acto en lugar de tratarlo como mera falta de voluntad o déficit de capacidad.",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_continuidad_emocion",
+          "nombre": "Continuidad de la emoción en el campo organismo-entorno",
+          "texto": "Procedimiento para reconocer la emoción no como estallido ocasional, sino como tonalidad continua del campo organismo-entorno. Se invita a percibir el valor afectivo que acompaña en cada momento a la experiencia vivida, reduciendo la escisión artificial entre 'lo de fuera' y 'lo de dentro'.",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_gestalt_ciclo_experiencia",
           "nombre": "Mapeo del ciclo de la experiencia (ciclo de contacto)",
           "texto": "Procedimiento de conceptualización en vivo: terapeuta y paciente rastrean la secuencia necesidad → conciencia → movilización → acción → contacto → satisfacción/retirada para identificar dónde se interrumpe el proceso (bloqueos, confusión, impulsos inhibidos, evitación), lo que clarifica el patrón mantenedor y abre puntos concretos de intervención experiencial. (Perls, Hefferline & Goodman, 1951; Joyce & Sills, 2018).",
@@ -92,6 +113,13 @@
           "texto": "Procedimiento de generalización: se acuerdan micro-experimentos en la vida cotidiana (pedir algo concreto, sostener un no, registrar sensaciones al evitar, practicar un contacto ocular) con foco en awareness y elección, no en rendimiento; luego se revisa la experiencia para aprender del campo real y ajustar el siguiente experimento. (Zinker, 1977; Joyce & Sills, 2018).",
           "sub": "RE_monitorizacion",
           "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gestalt_frases_actualidad",
+          "nombre": "Frases de actualidad en primera persona",
+          "texto": "Invitación a formular en primera persona y en presente lo que está ocurriendo ahora mismo, encadenando frases simples sobre percepción, acción, emoción o pensamiento. Sirve para aumentar la sensación de realidad inmediata, reducir la abstracción y detectar mejor cuándo la atención se escapa de la experiencia presente. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
         }
       ]
     },

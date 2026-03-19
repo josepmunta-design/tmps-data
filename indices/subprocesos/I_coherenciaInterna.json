@@ -1,7 +1,7 @@
 {
   "subprocesoId": "I_coherenciaInterna",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 53,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 55,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -684,6 +684,13 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_eft_reestructuracion_significado",
+          "nombre": "Reestructuración emocional de significado personal",
+          "texto": "Procedimiento en el que la emoción transformada se integra en nuevos significados personales que reorganizan la interpretación de experiencias pasadas y presentes, permitiendo reinterpretar eventos antes vividos desde vergüenza, indefensión o miedo como experiencias ligadas a necesidades legítimas, daño sufrido o límites vulnerados, consolidando así una comprensión más compasiva, digna y coherente del self (Greenberg, 2002/2017).",
+          "sub": "I_coherenciaInterna",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_eft_primera_persona_afectiva",
           "nombre": "Reformulación en primera persona afectiva",
           "texto": "Transformación de descubrimiento emocional en declaración experiencial directa (“Yo me sentí invisible”), fortaleciendo integración narrativa y apropiación del significado. (Greenberg, 2002/2017).",
@@ -855,6 +862,22 @@
           "texto": "Señalar responsabilidad personal desde una postura ética y no punitiva, reforzando dignidad y agencia.",
           "sub": "I_coherenciaInterna",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "terapia-existencial-humanista-bugental",
+      "modelLabel": "Terapia Existencial-Humanista (Bugental)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "James F. T. Bugental",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "p_bugental_exploracion",
+          "nombre": "Exploración experiencial profunda",
+          "texto": "Procedimiento orientado a ralentizar el proceso terapéutico para profundizar en la experiencia emocional del momento. Se busca que el cliente habite plenamente lo que siente, piensa y percibe, ampliando su conciencia y reduciendo respuestas automáticas defensivas (Bugental, 1965).",
+          "sub": "I_coherenciaInterna",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -1337,6 +1360,43 @@
           "codigo": "m_bowlby_cierre_seguridad",
           "nombre": "Cerrar episodio devolviendo continuidad y seguridad",
           "texto": "Intervención de cierre que resume la experiencia relacional vivida y reafirma la continuidad del vínculo terapéutico, consolidando la vivencia de base segura y reduciendo ansiedad anticipatoria (Bowlby, 1988, *A Secure Base*).",
+          "sub": "I_coherenciaInterna",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_confrontacion",
+          "nombre": "Confrontación",
+          "texto": "Procedimiento mediante el cual el terapeuta señala discrepancias, contradicciones o cambios bruscos entre afectos, conductas y representaciones del paciente, especialmente entre polos idealizados y devaluados. La confrontación no busca acusar ni corregir, sino hacer visibles las escisiones activas que organizan la experiencia del self y del otro. Referencia: Kernberg (1984); Clarkin et al. (2006).",
+          "sub": "I_coherenciaInterna",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tfp_integracion",
+          "nombre": "Integración progresiva de representaciones escindidas",
+          "texto": "Procedimiento longitudinal que resulta del trabajo acumulativo de clarificación, confrontación e interpretación, mediante el cual las representaciones polarizadas de self y objeto se integran en configuraciones más complejas, ambivalentes y estables. Esta integración es el principal marcador de cambio estructural en TFP. Referencia: Kernberg (1984); Yeomans et al. (2015).",
+          "sub": "I_coherenciaInterna",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_polos",
+          "nombre": "Diferenciar polos escindidos",
+          "texto": "Microintervención que ayuda a distinguir explícitamente entre representaciones opuestas del self y del objeto que se alternan rápidamente (idealización vs. devaluación), sin forzar su integración inmediata. Permite hacer visible la escisión como organización activa de la experiencia. Referencia: Kernberg (1984).",
+          "sub": "I_coherenciaInterna",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tfp_cambio_estado",
+          "nombre": "Señalar cambio brusco de estado del self",
+          "texto": "Microintervención que llama la atención sobre transiciones rápidas entre estados emocionales o identitarios opuestos durante la sesión, facilitando conciencia de la discontinuidad del self sin patologizarla. Referencia: Kernberg (1984).",
           "sub": "I_coherenciaInterna",
           "tipo": "micro"
         }

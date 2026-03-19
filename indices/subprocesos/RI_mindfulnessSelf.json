@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RI_mindfulnessSelf",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 33,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 35,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -878,6 +878,20 @@
       "modelYear": 1951,
       "items": [
         {
+          "codigo": "p_gestalt_continuidad_emocion",
+          "nombre": "Continuidad de la emoción en el campo organismo-entorno",
+          "texto": "Procedimiento para reconocer la emoción no como estallido ocasional, sino como tonalidad continua del campo organismo-entorno. Se invita a percibir el valor afectivo que acompaña en cada momento a la experiencia vivida, reduciendo la escisión artificial entre 'lo de fuera' y 'lo de dentro'.",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_silencio_interno",
+          "nombre": "Silencio interno y observación del habla subvocal",
+          "texto": "Procedimiento de observación de la actividad verbal interna: se entrena la capacidad de notar el habla subvocal, sus guiones repetitivos y sus funciones, e intentar períodos breves de silencio interno sin perder awareness. Esto permite detectar autoórdenes, sermones, ensayos internos y juicios que ocupan la experiencia e interfieren con el contacto.",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_gestalt_interrupciones_contacto",
           "nombre": "Trabajo con interrupciones del contacto (deflexión, confluencia, introyección, proyección, retroflexión)",
           "texto": "Procedimiento de identificación y transformación de los estilos habituales con los que la persona evita el contacto auténtico: se detectan en el aquí-y-ahora (p. ej., intelectualizar/deflectar, fusionarse/confluir, tragar mandatos/introyectar, atribuir/proyectar, volcar hacia dentro/retroflexionar) y se exploran sus funciones protectoras, sus costes y alternativas más ajustadas para recuperar límites, agencia y presencia relacional. (Perls, Hefferline & Goodman, 1951; Polster & Polster, 1973).",
@@ -890,6 +904,20 @@
           "texto": "Procedimiento de entrenamiento atencional: se guía al paciente a registrar secuencialmente lo que aparece (sensación → emoción → pensamiento → impulso → imagen) sin forzar cambio, aumentando discriminación experiencial y presencia; facilita que la autorregulación emerja por contacto sostenido, no por control cognitivo. (Perls, Hefferline & Goodman, 1951; Yontef, 1993).",
           "sub": "RI_mindfulnessSelf",
           "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gestalt_escuchar_habla_subvocal",
+          "nombre": "Escuchar el habla subvocal",
+          "texto": "Invitación a notar el discurso interno tal como aparece, captando frases sueltas, comentarios, juicios, explicaciones o autoórdenes. Permite reconocer que gran parte de la actividad mental habitual no es pensamiento abstracto puro, sino habla interna automatizada. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_alternar_charla_silencio_interno",
+          "nombre": "Alternar charla interna y silencio interno",
+          "texto": "Microintervención orientada a pasar de la verbalización interna al intento de silencio interno durante breves momentos, observando cómo reaparece el comentario mental. Sirve para discriminar mejor entre experiencia inmediata y capas de explicación, ensayo o rumiación que la cubren. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
         }
       ]
     },
@@ -1020,6 +1048,22 @@
       ]
     },
     {
+      "modelId": "interventive-interviewing-tomm-1987",
+      "modelLabel": "Interventive Interviewing",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Karl Tomm",
+      "modelYear": "1987",
+      "items": [
+        {
+          "codigo": "m_tomm_observador_externo",
+          "nombre": "Pregunta de observador externo",
+          "texto": "Microintervención reflexiva que invita a imaginar cómo describiría la situación un observador externo —un amigo, terapeuta o miembro de la familia no presente— con el objetivo de introducir distancia reflexiva y favorecer una observación más amplia del patrón relacional. Esta estrategia facilita que los participantes reconsideren sus propias interpretaciones desde una perspectiva menos fusionada con el conflicto (Tomm, 1987, *Interventive Interviewing: Part II*).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "mindfulness-mbsr-contemplativo-1979",
       "modelLabel": "Mindfulness (MBSR y tradición contemplativa)",
       "modelGrupo": "Transversal",
@@ -1135,6 +1179,29 @@
           "codigo": "m_mind_cotidiano",
           "nombre": "Reconectar con la experiencia presente cotidiana",
           "texto": "Microintervención que invita a aplicar atención plena a una acción concreta del día a día, favoreciendo transferencia y consolidación del aprendizaje fuera de la práctica formal. Refuerza continuidad entre sesión y vida cotidiana. (Kabat-Zinn, 1990).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "modelLabel": "Modelo procesual de regulación emocional",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James J. Gross",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_gross_despliegue_atencional",
+          "nombre": "Entrenamiento en despliegue atencional",
+          "texto": "Procedimiento que entrena la capacidad de dirigir, sostener o redirigir la atención como forma de modular la activación emocional, incluyendo estrategias como distracción flexible, focalización selectiva o atención abierta. El objetivo es reducir la captura atencional rígida por estímulos emocionalmente cargados y aumentar la capacidad de elegir dónde poner el foco, lo que impacta directamente en la intensidad y duración de la emoción (Gross, 1998; Gross, 2015).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gross_focalizar_atencion",
+          "nombre": "Focalizar la atención en un elemento concreto",
+          "texto": "Microintervención que consiste en mantener la atención de forma sostenida en un estímulo concreto —respiración, sensación corporal o elemento externo— para estabilizar el sistema atencional y reducir dispersión emocional (Gross, 2015).",
           "sub": "RI_mindfulnessSelf",
           "tipo": "micro"
         }

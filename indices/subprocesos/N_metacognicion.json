@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 133,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 138,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -1091,6 +1091,13 @@
           "codigo": "p_mbct_formulacion_recaida",
           "nombre": "Evaluación de vulnerabilidad a recaída y formulación del bucle rumiación–ánimo",
           "texto": "Procedimiento inicial para identificar el patrón personal de recaída: señales tempranas (cognitivas, emocionales y somáticas), disparadores típicos, estilos de afrontamiento que empeoran (rumiación, evitación) y el bucle “ánimo bajo → pensamiento negativo → más ánimo bajo”. Se construye una formulación sencilla y compartida que enmarca el objetivo de MBCT: detectar pronto la activación y cambiar el modo de respuesta antes de que el bucle se autoalimente. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mbct_identificar_evitar_experiencia",
+          "nombre": "Identificación de evitación de la experiencia interna",
+          "texto": "Procedimiento orientado a detectar en tiempo real cómo la persona responde al malestar interno mediante estrategias de evitación o desconexión, como rumiación, retirada, control mental, distracción compulsiva, supresión emocional o alejamiento del cuerpo y del presente. La intervención se centra primero en reconocer y nombrar estos patrones como modos automáticos de relación con la experiencia, diferenciándolos de una respuesta mindful de observación y permiso, sin pasar todavía a modificarlos ni sustituirlos por otras estrategias. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "N_metacognicion",
           "tipo": "procedimiento"
         },
@@ -3035,6 +3042,34 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_eft_evocacion_feltsense",
+          "nombre": "Evocación del felt sense previo a simbolización emocional",
+          "texto": "Procedimiento en el que el terapeuta invita al paciente a permanecer en contacto con la sensación corporal vaga, implícita o todavía no formulada asociada a una experiencia emocional antes de intentar explicarla narrativamente, facilitando que el significado experiencial emerja progresivamente desde la experiencia sentida y pueda simbolizarse en palabras, imágenes o necesidades emocionales; esto permite acceder a esquemas emocionales implícitos y evita una elaboración prematuramente intelectualizada que aleje del núcleo afectivo del problema (Gendlin, 1978; Greenberg, Rice & Elliott, 1993).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_eft_bloqueo_experiencial",
+          "nombre": "Resolución de bloqueo experiencial",
+          "texto": "Procedimiento dirigido a explorar y desmontar procesos que bloquean el acceso a emoción primaria, como intelectualización, minimización, inhibición expresiva, control excesivo o miedo a desorganizarse, ayudando a identificar la función protectora de estas defensas y facilitando gradualmente un acceso más seguro y sostenido a la experiencia emocional evitada (Greenberg, Rice & Elliott, 1993; Greenberg, 2002/2017).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_eft_clarificacion_marcador_tarea",
+          "nombre": "Clarificación de marcador y selección de tarea experiencial",
+          "texto": "Procedimiento en el que el terapeuta identifica con precisión el marcador experiencial presente en la sesión —como autocrítica, asunto no resuelto, bloqueo, vulnerabilidad emergente o escisión interna— y selecciona la tarea experiencial más adecuada para ese momento, asegurando que la intervención no sea genérica sino ajustada al tipo de proceso emocional activo y al punto exacto de acceso al cambio (Greenberg, Rice & Elliott, 1993).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_eft_identificar_evitar_emocion",
+          "nombre": "Identificación de evitación emocional",
+          "texto": "Procedimiento orientado a detectar en tiempo real cómo el paciente evita o interrumpe el contacto con emociones primarias dolorosas mediante intelectualización, cambio de tema, minimización, sobreactivación secundaria, humor defensivo, control excesivo o desconexión corporal, clarificando la función protectora de estas maniobras sin patologizarlas y señalando que bloquean el acceso a la experiencia emocional necesaria para el cambio. (Greenberg & Safran, 1987; Greenberg, Rice & Elliott, 1993; Greenberg, 2002/2017).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_eft_diferenciacion_vivo",
           "nombre": "Diferenciación primaria vs secundaria en vivo",
           "texto": "Intervención puntual que ayuda al paciente a distinguir entre emoción secundaria reactiva y emoción primaria subyacente en el momento experiencial, facilitando acceso a vulnerabilidad auténtica. (Greenberg & Safran, 1987).",
@@ -3052,6 +3087,13 @@
           "codigo": "m_eft_marker_identificacion",
           "nombre": "Marcaje de marcador experiencial",
           "texto": "Identificación explícita por parte del terapeuta de un marcador clínico (autocrítica, asunto no resuelto, vulnerabilidad emergente) que orienta el tipo de intervención experiencial que seguirá. (Greenberg, Rice & Elliott, 1993).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_eft_senalamiento_defensa_secundaria",
+          "nombre": "Señalamiento de defensa emocional secundaria",
+          "texto": "Intervención breve que ayuda a identificar en vivo cuando una emoción secundaria —como irritación, sarcasmo, sobreactivación o control— está cubriendo una emoción primaria más vulnerable, facilitando que el paciente reconozca la función defensiva de esa respuesta y pueda ir más allá de ella sin invalidarla (Greenberg & Safran, 1987; Greenberg, 2002/2017).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
@@ -3164,6 +3206,13 @@
       "modelAutores": "Eugene T. Gendlin",
       "modelYear": 1961,
       "items": [
+        {
+          "codigo": "p_focusing_identificacion_bloqueo_experiencial",
+          "nombre": "Identificación de bloqueo experiencial",
+          "texto": "Procedimiento orientado a detectar cuándo el acceso al felt sense queda interferido por intelectualización, prisa por resolver, vacío aparente, sobreactivación, autoobservación rígida o distancia excesiva respecto a la experiencia corporal, ayudando a discriminar que el problema en ese momento no es la ausencia de contenido sino la interrupción del contacto experiencial. La intervención se centra primero en reconocer y nombrar el bloqueo tal como aparece, sin forzarlo ni intentar resolverlo de inmediato, para que la persona pueda relacionarse con él de forma más precisa y menos reactiva. (Gendlin, 1962; Gendlin, 1981).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
         {
           "codigo": "p_focusing_resonancia",
           "nombre": "Resonancia cuerpo-símbolo (comprobar y corregir el ajuste)",
@@ -3393,6 +3442,22 @@
       ]
     },
     {
+      "modelId": "terapia-existencial-humanista-bugental",
+      "modelLabel": "Terapia Existencial-Humanista (Bugental)",
+      "modelGrupo": "Humanista",
+      "modelAutores": "James F. T. Bugental",
+      "modelYear": 1965,
+      "items": [
+        {
+          "codigo": "m_bugental_evasivas",
+          "nombre": "Señalar evasivas existenciales suaves",
+          "texto": "Intervenciones delicadas que ponen de relieve formas sutiles de evitación, racionalización o desplazamiento del foco experiencial. Facilitan conciencia de cómo el cliente elude la responsabilidad o el contacto pleno con su experiencia (Bugental, 1978).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "terapia-existencial-may-yalom-1961",
       "modelLabel": "Terapia existencial",
       "modelGrupo": "Humanista",
@@ -3467,6 +3532,34 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_gestalt_sentir_lo_actual",
+          "nombre": "Sentir lo actual (actuality work)",
+          "texto": "Procedimiento básico de actualización de la experiencia: se entrena al paciente a aumentar la sensación de realidad de lo que ocurre ahora mismo, trayendo la atención a la situación presente y describiendo en tiempo real qué percibe, hace y le pasa. El objetivo no es forzar alerta constante, sino recuperar contacto con lo actual cuando la persona se dispersa, se ausenta o se va a ensoñaciones y automatismos.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_fuerzas_opuestas",
+          "nombre": "Detección de fuerzas opuestas y resistencias",
+          "texto": "Procedimiento para reconocer que las resistencias no son algo externo, sino fuerzas internas en oposición dentro de la propia actividad del paciente. Se explora cómo una parte intenta hacer algo y otra parte lo interfiere, lo frena o lo vacía, haciendo visible el conflicto en acto en lugar de tratarlo como mera falta de voluntad o déficit de capacidad.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_verbalizacion_autoescucha",
+          "nombre": "Verbalización con autoescucha",
+          "texto": "Procedimiento en el que el paciente verbaliza su experiencia y, al mismo tiempo, aprende a escucharse hablar. El foco no está solo en el contenido de lo dicho, sino en el tono, el estilo, los rodeos, las coletillas, la grandilocuencia o la evitación. Busca reintegrar hablar y escuchar como una misma función, reduciendo la disociación entre experiencia y discurso.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_silencio_interno",
+          "nombre": "Silencio interno y observación del habla subvocal",
+          "texto": "Procedimiento de observación de la actividad verbal interna: se entrena la capacidad de notar el habla subvocal, sus guiones repetitivos y sus funciones, e intentar períodos breves de silencio interno sin perder awareness. Esto permite detectar autoórdenes, sermones, ensayos internos y juicios que ocupan la experiencia e interfieren con el contacto.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_gestalt_aqui_y_ahora",
           "nombre": "Foco en el aquí-y-ahora (actualización del material)",
           "texto": "Procedimiento de actualización: en lugar de hablar “sobre” el pasado, se lo trae al presente mediante lenguaje enactivo (“y ahora, ¿qué notas al decirlo?”), permitiendo que la emoción y el impulso se activen en sesión para ser reconocidos, sostenidos y completados; el pasado se trabaja como experiencia viva en el momento, no como relato distante. (Perls, 1969; Perls, Hefferline & Goodman, 1951).",
@@ -3519,6 +3612,76 @@
           "codigo": "m_gestalt_incongruencia",
           "nombre": "Hacer explícita la incongruencia",
           "texto": "Señalamiento conciso de discrepancias observables entre discurso y expresión no verbal, invitando a integrar ambos planos sin juicio (“dices que estás tranquilo y aprietas la mandíbula”) (Perls, 1969).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_frases_actualidad",
+          "nombre": "Frases de actualidad en primera persona",
+          "texto": "Invitación a formular en primera persona y en presente lo que está ocurriendo ahora mismo, encadenando frases simples sobre percepción, acción, emoción o pensamiento. Sirve para aumentar la sensación de realidad inmediata, reducir la abstracción y detectar mejor cuándo la atención se escapa de la experiencia presente. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_detectar_fuga_actualidad",
+          "nombre": "Detectar la fuga de la actualidad",
+          "texto": "Señalamiento puntual del momento en que la persona pierde contacto con lo que está ocurriendo y se va a divagación, anticipación, recuerdo o embotamiento. La intervención no busca corregir ni moralizar, sino hacer visible la fuga como conducta presente y reconocer también las resistencias que aparecen al sostener el aquí y ahora. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_ahora_me_doy_cuenta",
+          "nombre": "Fórmula \"ahora me doy cuenta\"",
+          "texto": "Uso de una fórmula breve de awareness para encabezar lo que emerge en la experiencia: sensación, emoción, pensamiento, impulso o conducta. Ayuda a transformar vivencias difusas en conciencia explícita y a organizar el flujo de experiencia en unidades reconocibles. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_escuchar_propia_voz",
+          "nombre": "Escuchar la propia voz",
+          "texto": "Invitación a escuchar conscientemente la propia voz mientras se habla, atendiendo a tono, ritmo, afectación, rigidez, queja, grandiosidad o distancia emocional. La función es reintegrar hablar y escuchar, y hacer visible la discrepancia entre autoimagen y expresión real. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_recitar_escuchar_sin_corregir",
+          "nombre": "Recitar y escuchar sin corregirse",
+          "texto": "Pedir a la persona que repita en voz alta un material conocido y lo escuche tal como sale, sin intentar hacerlo más correcto, más claro o más expresivo. El objetivo es abandonar el control correctivo y favorecer una percepción más directa del propio modo de expresarse. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_escuchar_habla_subvocal",
+          "nombre": "Escuchar el habla subvocal",
+          "texto": "Invitación a notar el discurso interno tal como aparece, captando frases sueltas, comentarios, juicios, explicaciones o autoórdenes. Permite reconocer que gran parte de la actividad mental habitual no es pensamiento abstracto puro, sino habla interna automatizada. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_alternar_charla_silencio_interno",
+          "nombre": "Alternar charla interna y silencio interno",
+          "texto": "Microintervención orientada a pasar de la verbalización interna al intento de silencio interno durante breves momentos, observando cómo reaparece el comentario mental. Sirve para discriminar mejor entre experiencia inmediata y capas de explicación, ensayo o rumiación que la cubren. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_nombrar_tono_voz_interna",
+          "nombre": "Nombrar el tono de la voz interna",
+          "texto": "Invitación a identificar la cualidad de la voz interna cuando aparece: si sermonea, se queja, infantiliza, dramatiza, acusa o explica en exceso. El foco está en hacer visible el estilo organizador del diálogo interno, no solo su contenido. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_atribucion_iniciativa_otro",
+          "nombre": "Explorar a quién se atribuye la iniciativa",
+          "texto": "Microintervención para examinar momentos en los que la persona siente que el otro la ataca, la rechaza o la busca, cuando quizá está interrumpiendo su propio movimiento hacia el contacto. Ayuda a clarificar la organización proyectiva de la experiencia interpersonal. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_aburrimiento_irritacion_resistencia",
+          "nombre": "Detectar el aburrimiento o la irritación como resistencia",
+          "texto": "Señalar aburrimiento, fatiga, impaciencia o irritación que aparecen justo al hacer una tarea de awareness, tratándolos como formas de resistencia y no como simples accidentes. Esto permite trabajar la interferencia en el mismo momento en que ocurre. (Perls, Hefferline, & Goodman, 1951).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
@@ -4688,6 +4851,41 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_adler_evaluacion_interes_social",
+          "nombre": "Evaluación del grado de interés social",
+          "texto": "Procedimiento que estima hasta qué punto la persona vive desde cooperación, contribución y sentimiento de pertenencia o, por el contrario, desde autoprotección, rivalidad o retirada, utilizando sus decisiones, vínculos, actitudes hacia el trabajo y reacción ante las necesidades ajenas como indicadores del nivel de Gemeinschaftsgefühl y del criterio de salud adleriano (Adler, 1931, *What Life Could Mean to You*; Adler, 1930, *The Science of Living*).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_primer_recuerdo",
+          "nombre": "Análisis del primer recuerdo como condensación del estilo de vida",
+          "texto": "Procedimiento específico que toma el primer recuerdo disponible no como dato histórico bruto, sino como condensación del punto de partida subjetivo del paciente, atendiendo a cómo empieza la escena, qué peligro, deseo o posición relacional aparece y qué juicio implícito revela sobre sí mismo y el mundo; Adler lo considera una vía privilegiada para captar el estilo de vida, la actitud básica y el grado de cooperación (Adler, 1931, *What Life Could Mean to You*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_distancia_tareas",
+          "nombre": "Análisis de la distancia frente a decisiones y tareas",
+          "texto": "Procedimiento destinado a detectar cómo el paciente crea distancia protectora frente a matrimonio, trabajo, exposición, elección o compromiso mediante síntomas, dudas, crisis, demoras o principios rígidos, mostrando que la neurosis no solo expresa sufrimiento sino también una estrategia para no llegar al punto donde habría que decidir y arriesgarse realmente (Adler, 1927, *The Practice and Theory of Individual Psychology*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_vida_mentira",
+          "nombre": "Identificación de vida-mentira y autoengaño neurótico",
+          "texto": "Procedimiento que hace visible la ficción protectora mediante la cual el paciente atribuye a destino, trauma, injusticia o incapacidad fija lo que en realidad forma parte de un plan de vida defensivo, permitiendo ver cómo el autoengaño preserva autoestima, posterga decisiones y mantiene la posición subjetiva de excepción o inocencia frente a las tareas comunes de la existencia (Adler, 1927, *The Practice and Theory of Individual Psychology*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_adler_orientacion_vocacional",
+          "nombre": "Orientación vocacional desde estilo de vida y recuerdo temprano",
+          "texto": "Procedimiento aplicado a elecciones de trabajo o dirección vital que utiliza recuerdos tempranos, intereses dominantes, fantasías de futuro y modo de afrontar dificultad para inferir la meta de vida y distinguir entre elección ocupacional cooperativa y elección compensatoria, grandiosa o evitativa, articulando identidad, tarea laboral y contribución social (Adler, 1931, *What Life Could Mean to You*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_adler_senalamiento_desanimo",
           "nombre": "Señalamiento del desánimo",
           "texto": "Esta microintervención nombra el desánimo como estado organizador del problema, ayudando al paciente a diferenciarlo de incapacidad real y a verlo como señal de necesidad de pertenencia y valor, lo que reduce vergüenza y abre agencia.",
@@ -4733,6 +4931,41 @@
           "codigo": "m_adler_desafio_salvaguarda",
           "nombre": "Desafío amable de salvaguarda",
           "texto": "Intervención breve que hace visible una excusa, retirada o ataque como forma de protección de autoestima, invitando a un paso mínimo de afrontamiento responsable que preserve dignidad.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_arranque_recuerdo",
+          "nombre": "Atención al arranque del recuerdo",
+          "texto": "Se presta atención a cómo empieza el recuerdo —con peligro, observación, movimiento, pasividad, cercanía o exclusión— porque ese arranque suele condensar la actitud básica con la que la persona se sitúa frente a la vida, permitiendo inferir si anticipa amenaza, examen, competencia, dependencia o cooperación (Adler, 1931, *What Life Could Mean to You*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_tema_dominante_recuerdo",
+          "nombre": "Señalamiento de tema dominante en recuerdos",
+          "texto": "El terapeuta recoge si los recuerdos se organizan en torno a mirar, correr, caer, esconderse, competir, agradar o ser ayudado, usando ese tema recurrente como pista sobre dificultades tempranas, entrenamiento compensatorio y foco principal de autoconstrucción, sin tratar el contenido como anécdota aislada (Adler, 1931, *What Life Could Mean to You*; Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_beneficio_ennoblecedor",
+          "nombre": "Señalamiento de beneficio ennoblecedor",
+          "texto": "Intervención breve que muestra cómo el paciente puede presentar su esfuerzo, su fracaso o su estancamiento como moralmente más valioso por ocurrir ‘pese a’ la enfermedad o la adversidad, ayudándole a ver el uso de la dificultad como capital simbólico dentro de su estilo de vida (Adler, 1930, *Problems of Neurosis*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_si_no_fuera_por",
+          "nombre": "Detección del “si no fuera por…”",
+          "texto": "El terapeuta escucha y devuelve las cláusulas del tipo ‘si no fuera por mi ansiedad’, ‘si no fuera por mi infancia’, ‘si no fuera por mis nervios’, utilizándolas como puerta de entrada a la vida-mentira y al modo en que la persona se exonera de un paso temido mientras conserva intacta su ficción de superioridad posible (Adler, 1927, *The Practice and Theory of Individual Psychology*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_adler_superioridad_defensiva",
+          "nombre": "Exploración de superioridad defensiva",
+          "texto": "Microintervención que detecta cuándo queja, hipersensibilidad, exigencia moral, desprecio o victimización funcionan como forma de colocarse por encima de otros, mostrando que algunas expresiones de inferioridad encubren un intento de conservar primacía, excepción o inocencia superior (Adler, 1930, *Problems of Neurosis*; Adler, 1930, *The Science of Living*).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
@@ -5035,6 +5268,43 @@
       ]
     },
     {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_clarificacion",
+          "nombre": "Clarificación",
+          "texto": "Procedimiento técnico básico orientado a ayudar al paciente a describir con mayor precisión sus estados internos, conductas, afectos y percepciones relacionales, especialmente cuando el discurso es confuso, contradictorio o desorganizado. La clarificación aumenta la coherencia del material clínico y prepara el terreno para intervenciones más profundas sin confrontar prematuramente defensas. Referencia: Kernberg (1984); Yeomans et al. (2015).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tfp_evaluacion_estructura",
+          "nombre": "Evaluación continua de la organización de personalidad",
+          "texto": "Procedimiento permanente que monitoriza el nivel de integración de identidad, el uso de defensas primitivas, la prueba de realidad y la calidad de las relaciones objetales. Esta evaluación guía las decisiones técnicas y permite ajustar el ritmo y profundidad del trabajo interpretativo. Referencia: Kernberg (1984); Clarkin et al. (2006).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_contradicciones",
+          "nombre": "Señalar contradicciones internas",
+          "texto": "Intervención puntual que destaca inconsistencias entre lo que el paciente siente, dice y hace, o entre diferentes relatos de una misma relación, sin interpretarlas aún como defensas. Favorece aumento de reflexión y reduce actuación impulsiva. Referencia: Yeomans et al. (2015).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tfp_secuencia",
+          "nombre": "Clarificar secuencia afecto–fantasía–conducta",
+          "texto": "Intervención breve que ordena la experiencia inmediata del paciente distinguiendo qué sintió, qué pensó del otro y cómo actuó, ayudando a estructurar material clínico fragmentado y a reducir confusión interna. Referencia: Clarkin et al. (2006).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "winnicott-objeto-transicional-ambiente",
       "modelLabel": "Winnicott – Objeto transicional y ambiente",
       "modelGrupo": "Psicoanálisis",
@@ -5135,6 +5405,92 @@
           "codigo": "m_erickson_microcambios",
           "nombre": "Señalar microcambios",
           "texto": "Llamar la atención sobre cambios sutiles en experiencia o conducta para consolidarlos como evidencia de capacidad de cambio.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "interventive-interviewing-tomm-1987",
+      "modelLabel": "Interventive Interviewing",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Karl Tomm",
+      "modelYear": "1987",
+      "items": [
+        {
+          "codigo": "p_tomm_definicion_lineal_problema",
+          "nombre": "Definición lineal inicial del problema",
+          "texto": "Procedimiento de apertura orientado a delimitar el motivo de consulta, los hechos relevantes, la secuencia aparente del problema y las atribuciones causales explícitas de cada miembro o del paciente. Aunque Tomm advierte que una lectura puramente lineal puede simplificar en exceso la complejidad sistémica, esta fase resulta útil para orientarse, recoger definiciones espontáneas del problema y detectar desde qué marcos explicativos está siendo vivido antes de ampliar la mirada hacia formulaciones circulares más complejas (Tomm, 1988, Interventive Interviewing: Part III).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_exploracion_diferencias_perceptivas",
+          "nombre": "Exploración de diferencias perceptivas entre miembros",
+          "texto": "Procedimiento basado en preguntas de diferencia que comparan percepciones, intenciones, emociones y lecturas del problema entre distintos miembros del sistema o entre distintos momentos temporales. El terapeuta pregunta quién lo ve de otra manera, quién se preocupa más, quién cambia antes o quién nota antes una escalada, con el fin de introducir distinciones relevantes que complejicen el mapa del sistema y favorezcan reflexión sobre la propia posición relacional (Tomm, 1988, Interventive Interviewing: Part III).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_preguntas_reflexivas_autoobservacion",
+          "nombre": "Preguntas reflexivas para activar autoobservación",
+          "texto": "Procedimiento nuclear de la propuesta de Tomm en el que las preguntas no buscan dirigir una respuesta concreta, sino estimular que los propios consultantes observen sus patrones, generen conexiones nuevas y elaboren alternativas por sí mismos. El terapeuta adopta una postura facilitadora y formula preguntas que promueven reflexión sobre significados, consecuencias, posibilidades no consideradas y lecturas emergentes, de modo que la entrevista se convierta en un contexto que moviliza la capacidad autoorganizativa y de self-healing del sistema (Tomm, 1987, Interventive Interviewing: Part II).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_efectos_segundo_orden",
+          "nombre": "Entrevista de clarificación de efectos de segundo orden",
+          "texto": "Procedimiento orientado a explorar no solo qué hace cada miembro, sino qué efectos produce en las percepciones, expectativas y respuestas posteriores del resto del sistema, incluyendo los efectos inadvertidos de intentos de ayuda, control o protección. Este nivel de entrevista profundiza la comprensión de segundo orden porque muestra cómo cada acción modifica el campo relacional y reorganiza la respuesta del otro, ampliando la capacidad del sistema para observarse desde fuera y salir de atribuciones simplistas (Tomm, 1988, Part III).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_secuenciacion_deliberada_preguntas",
+          "nombre": "Secuenciación deliberada de preguntas según intención clínica",
+          "texto": "Procedimiento integrador en el que el terapeuta organiza la entrevista pasando de preguntas más orientadas a comprender hacia preguntas más orientadas a promover cambio, calibrando en cada momento si conviene preguntar lineal, circular, estratégica o reflexivamente según el estado del sistema y los efectos observados. No se trata de aplicar tipos de preguntas como recetas aisladas, sino de secuenciarlas con intencionalidad clínica para que la entrevista entera funcione como intervención ajustada y éticamente responsable (Tomm, 1987, Part I; Tomm, 1988, Part III).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tomm_quien_nota_primero_problema",
+          "nombre": "Preguntar quién nota primero el problema",
+          "texto": "Microintervención circular que explora quién detecta antes la aparición del problema o del síntoma dentro del sistema, invitando a identificar diferencias en la percepción y en la sensibilidad relacional entre los miembros. Este tipo de pregunta introduce distinciones relevantes sobre atención, responsabilidad implícita y posiciones dentro de la pauta interactiva, facilitando una comprensión más sistémica de cómo se inicia o se reconoce el ciclo problemático (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_quien_preocupa_mas",
+          "nombre": "Preguntar quién se preocupa más por la situación",
+          "texto": "Microintervención que invita a comparar grados de preocupación entre miembros del sistema, permitiendo visibilizar diferencias en implicación emocional, responsabilidad percibida o posición relacional frente al problema. Al introducir comparaciones explícitas, la pregunta amplía la conciencia sobre cómo se distribuye la carga emocional dentro del sistema y cómo esa distribución influye en las interacciones (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_pregunta_triadica_observador",
+          "nombre": "Pregunta triádica de observador",
+          "texto": "Microintervención en la que el terapeuta pregunta a un miembro cómo cree que otro percibe la relación o la conducta de un tercero, introduciendo una estructura triádica que amplía la perspectiva relacional. Esta forma de preguntar permite observar el sistema desde posiciones múltiples y reduce la rigidez de las interpretaciones individuales al invitar a pensar desde el punto de vista de otros participantes (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_antes_del_problema",
+          "nombre": "Preguntar qué ocurre justo antes del problema",
+          "texto": "Microintervención lineal o circular que invita a describir qué sucede inmediatamente antes de que aparezca el síntoma o conflicto, ayudando a identificar antecedentes relacionales o contextuales que activan la secuencia problemática. Este tipo de pregunta facilita reconstruir la cadena de eventos y situar el problema dentro de una pauta más amplia de interacción (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_diferencia_temporal",
+          "nombre": "Pregunta de diferencia temporal",
+          "texto": "Microintervención que compara la situación actual con momentos anteriores o con periodos en los que el problema era menor, invitando a identificar cambios, excepciones o variaciones en el patrón. Estas comparaciones ayudan a introducir diferencias relevantes en la percepción del problema y facilitan la identificación de condiciones que favorecen o reducen su aparición (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_observador_externo",
+          "nombre": "Pregunta de observador externo",
+          "texto": "Microintervención reflexiva que invita a imaginar cómo describiría la situación un observador externo —un amigo, terapeuta o miembro de la familia no presente— con el objetivo de introducir distancia reflexiva y favorecer una observación más amplia del patrón relacional. Esta estrategia facilita que los participantes reconsideren sus propias interpretaciones desde una perspectiva menos fusionada con el conflicto (Tomm, 1987, *Interventive Interviewing: Part II*).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
@@ -5584,6 +5940,92 @@
       ]
     },
     {
+      "modelId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "modelLabel": "Modelo procesual de regulación emocional",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James J. Gross",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_gross_analisis_secuencial_emocion",
+          "nombre": "Análisis secuencial de la emoción (situación → atención → valoración → respuesta)",
+          "texto": "Procedimiento de conceptualización funcional en el que terapeuta y paciente descomponen episodios emocionales concretos en las fases del modelo procesual —situación, atención, valoración y respuesta— para identificar con precisión dónde se organiza la desregulación emocional y qué punto del proceso resulta más susceptible de intervención. Este análisis permite transformar la experiencia emocional difusa en una secuencia comprensible, diferenciando si el problema radica en la exposición a contextos, en sesgos atencionales, en interpretaciones rígidas o en intentos tardíos de control, facilitando una intervención más específica y eficaz (Gross, 1998; Gross, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gross_mapeo_estrategias_reguladoras",
+          "nombre": "Mapeo de estrategias reguladoras habituales",
+          "texto": "Procedimiento orientado a identificar y clasificar las estrategias de regulación emocional que la persona utiliza de manera recurrente, analizando su frecuencia, contexto de activación, función a corto plazo y coste acumulado. Se exploran patrones como evitación situacional, distracción, reevaluación o supresión expresiva, permitiendo detectar rigidez regulatoria y dependencia de estrategias ineficaces o costosas, lo que facilita abrir espacio a alternativas más flexibles y adaptativas (Gross, 1998; Gross, 2014).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gross_costes_beneficios_regulacion",
+          "nombre": "Análisis funcional de costes y beneficios reguladores",
+          "texto": "Procedimiento en el que se evalúan las consecuencias a corto y largo plazo de cada estrategia reguladora utilizada por la persona, diferenciando entre alivio inmediato y coste acumulado en términos emocionales, fisiológicos e interpersonales. Este análisis permite cuestionar la utilidad real de patrones automáticos como la evitación o la supresión y facilita decisiones más conscientes y ajustadas a objetivos vitales (Gross, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gross_flexibilidad_regulatoria",
+          "nombre": "Entrenamiento en flexibilidad regulatoria",
+          "texto": "Procedimiento dirigido a desarrollar la capacidad de seleccionar estrategias de regulación emocional en función del contexto, las metas y los recursos disponibles, en lugar de aplicar siempre el mismo patrón. Se entrena la discriminación situacional y la adaptación estratégica, promoviendo un repertorio regulador amplio y flexible que reduzca rigidez y aumente eficacia adaptativa (Gross, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gross_identificacion_momento_regulacion",
+          "nombre": "Identificación de momentos óptimos de intervención",
+          "texto": "Procedimiento centrado en entrenar la capacidad de detectar en qué momento del proceso emocional resulta más eficaz intervenir, diferenciando entre estrategias tempranas y tardías y sus respectivos costes. Se busca que la persona aprenda a actuar antes de que la emoción se intensifique, reduciendo la necesidad de control reactivo posterior y aumentando la eficacia reguladora global (Gross, 1998; Gross, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gross_describir_secuencia_emocional",
+          "nombre": "Describir la secuencia emocional en tiempo real",
+          "texto": "Microintervención en la que se invita a la persona a describir en voz alta o internamente qué está ocurriendo en cada momento del proceso emocional —qué ha pasado, dónde está su atención, qué está pensando y qué está sintiendo— para descomponer la experiencia en componentes diferenciados y aumentar claridad sobre su funcionamiento (Gross, 1998; Gross, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_identificar_punto_desregulacion",
+          "nombre": "Identificar el punto exacto de desregulación",
+          "texto": "Microintervención orientada a localizar con precisión en qué fase del proceso emocional —situación, atención, valoración o respuesta— se produce la intensificación o pérdida de control, facilitando intervenciones más dirigidas y evitando abordajes genéricos poco eficaces (Gross, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_detectar_evitacion_situacional",
+          "nombre": "Detectar evitación situacional automática",
+          "texto": "Microintervención en la que se exploran patrones automáticos de evitación de situaciones emocionalmente activadoras, ayudando a hacer explícita su función protectora a corto plazo y sus costes a medio plazo (Gross, 2014).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_detectar_sesgos_atencionales",
+          "nombre": "Detectar sesgos atencionales",
+          "texto": "Microintervención orientada a identificar tendencias automáticas a fijar la atención en estímulos amenazantes o negativos, facilitando una relación más flexible con el foco atencional (Gross, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_coste_beneficio",
+          "nombre": "Comparar alivio inmediato vs coste a largo plazo",
+          "texto": "Microintervención en la que se contrastan los beneficios inmediatos de una estrategia reguladora con sus consecuencias acumulativas, promoviendo decisiones más conscientes y sostenibles (Gross, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gross_detectar_rigidez",
+          "nombre": "Detectar uso rígido de una estrategia",
+          "texto": "Microintervención orientada a identificar la aplicación repetitiva e inflexible de una misma estrategia reguladora, facilitando la apertura a alternativas más adaptativas (Gross, 2015).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "psicoterapia-comunitaria-reconciliacion-2000",
       "modelLabel": "Psicoterapia comunitaria para la reconciliación",
       "modelGrupo": "Transversal",
@@ -5594,6 +6036,29 @@
           "codigo": "m_reconciliacion_responsabilidad",
           "nombre": "Preguntas de responsabilidad diferenciada",
           "texto": "Preguntas breves que distinguen responsabilidad individual, colectiva y estructural en eventos traumáticos, evitando tanto la negación como la sobreculpabilización. Esta diferenciación facilita agencia sin colapso defensivo. Referencia: Martín-Baró (1990).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "self-determination-therapy-deci-ryan-1985",
+      "modelLabel": "Terapia basada en la Teoría de la Autodeterminación",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Edward L. Deci; Richard M. Ryan",
+      "modelYear": 1985,
+      "items": [
+        {
+          "codigo": "m_sdt_reconocer_presion_introyectada",
+          "nombre": "Reconocer presión introyectada",
+          "texto": "Microintervención destinada a identificar cuándo la conducta está impulsada por culpa, vergüenza, autoexigencia o necesidad de aprobación internaizada. El paciente aprende a reconocer estas formas de regulación introyectada como distintas de la motivación autodeterminada, lo que permite comenzar a reorganizar la relación con esas exigencias internas (Ryan & Deci, 2000).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_sdt_detectar_frustracion_autonomia",
+          "nombre": "Detectar contextos que frustran autonomía",
+          "texto": "Microintervención en la que el paciente identifica situaciones, relaciones o contextos en los que experimenta presión, control excesivo o falta de elección. Este reconocimiento permite comprender cómo el entorno afecta a la motivación y facilita reorganizar decisiones o límites personales (Ryan & Deci, 2017).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

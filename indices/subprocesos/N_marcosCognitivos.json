@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 66,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 68,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -1339,6 +1339,20 @@
       "modelYear": 1951,
       "items": [
         {
+          "codigo": "p_gestalt_masticar_digerir_introyecciones",
+          "nombre": "Masticar y digerir introyecciones",
+          "texto": "Procedimiento explícito del libro que usa el comer como modelo funcional de la asimilación psicológica. Se trabaja la diferencia entre tragar entero e incorporar de forma crítica: morder, masticar, discriminar, rechazar o asimilar. Se aplica tanto a la comida como a normas, ideas, valores o mandatos aceptados sin elaboración propia.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_asimilacion_proyecciones",
+          "nombre": "Asimilación de proyecciones",
+          "texto": "Procedimiento para recuperar rasgos, impulsos o intenciones atribuidos al exterior. Se entrena al paciente a detectar cuándo el otro funciona como 'pantalla apropiada' para algo propio no reconocido, y a ensayar la reversión de perspectiva para reintegrar ese contenido en primera persona.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_gestalt_interrupciones_contacto",
           "nombre": "Trabajo con interrupciones del contacto (deflexión, confluencia, introyección, proyección, retroflexión)",
           "texto": "Procedimiento de identificación y transformación de los estilos habituales con los que la persona evita el contacto auténtico: se detectan en el aquí-y-ahora (p. ej., intelectualizar/deflectar, fusionarse/confluir, tragar mandatos/introyectar, atribuir/proyectar, volcar hacia dentro/retroflexionar) y se exploran sus funciones protectoras, sus costes y alternativas más ajustadas para recuperar límites, agencia y presencia relacional. (Perls, Hefferline & Goodman, 1951; Polster & Polster, 1973).",
@@ -1363,6 +1377,20 @@
           "codigo": "m_gestalt_explorar_deberia",
           "nombre": "Explorar el “debería”",
           "texto": "Señalar un mandato internalizado (“debería…”) y preguntar de quién es esa voz y qué coste tiene, diferenciando valores propios de introyecciones rígidas (Perls, Hefferline & Goodman, 1951).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_masticar_antes_tragar",
+          "nombre": "Masticar antes de tragar",
+          "texto": "Invitación a realizar de forma deliberada la secuencia de morder, masticar, saborear y discriminar antes de tragar. Se usa como microexperiencia para simbolizar la diferencia entre asimilar críticamente y aceptar sin elaboración. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_detectar_tragar_sin_discriminar",
+          "nombre": "Detectar el tragar sin discriminar",
+          "texto": "Señalamiento breve de la tendencia a incorporar reglas, opiniones o exigencias sin masticarlas psicológicamente. Busca hacer visible la introyección como aceptación automática de algo que todavía no ha sido examinado, probado ni hecho propio. (Perls, Hefferline, & Goodman, 1951).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }
@@ -1659,6 +1687,29 @@
       ]
     },
     {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_confrontacion",
+          "nombre": "Confrontación",
+          "texto": "Procedimiento mediante el cual el terapeuta señala discrepancias, contradicciones o cambios bruscos entre afectos, conductas y representaciones del paciente, especialmente entre polos idealizados y devaluados. La confrontación no busca acusar ni corregir, sino hacer visibles las escisiones activas que organizan la experiencia del self y del otro. Referencia: Kernberg (1984); Clarkin et al. (2006).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_polos",
+          "nombre": "Diferenciar polos escindidos",
+          "texto": "Microintervención que ayuda a distinguir explícitamente entre representaciones opuestas del self y del objeto que se alternan rápidamente (idealización vs. devaluación), sin forzar su integración inmediata. Permite hacer visible la escisión como organización activa de la experiencia. Referencia: Kernberg (1984).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "cibernetica-teoria-comunicacion-1956",
       "modelLabel": "Cibernética y teoría de la comunicación (Gregory Bateson)",
       "modelGrupo": "Sistémico",
@@ -1805,6 +1856,29 @@
           "texto": "Tareas diseñadas para producir un impacto emocional y perceptivo que reestructure la relación con el síntoma sin necesidad de insight racional.",
           "sub": "N_marcosCognitivos",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "modelLabel": "Modelo procesual de regulación emocional",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James J. Gross",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_gross_reevaluacion_cognitiva",
+          "nombre": "Reevaluación cognitiva (reappraisal)",
+          "texto": "Procedimiento dirigido a modificar el significado atribuido a una situación para alterar su impacto emocional antes de que la respuesta se consolide plenamente, generando interpretaciones alternativas plausibles que reduzcan amenaza, aumenten sentido o amplíen perspectiva. A diferencia de la supresión, la reevaluación transforma la emoción desde su base interpretativa, lo que la convierte en una de las estrategias más eficaces y con menor coste fisiológico e interpersonal (Gross, 1998; Gross, 2014).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gross_cuestionar_interpretacion",
+          "nombre": "Cuestionar la interpretación dominante",
+          "texto": "Microintervención dirigida a poner en duda la interpretación automática de una situación, explorando su evidencia, su utilidad y su impacto emocional para abrir espacio a otras perspectivas (Gross, 2014).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     }

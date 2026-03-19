@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 53,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 55,
   "modelos": [
     {
       "modelId": "meditacion-seon-zen-contextos-terapeuticos-corea-1985",
@@ -481,6 +481,13 @@
       "modelAutores": "Zindel Segal; Mark Williams; John Teasdale",
       "modelYear": 2002,
       "items": [
+        {
+          "codigo": "p_mbct_identificar_evitar_experiencia",
+          "nombre": "Identificación de evitación de la experiencia interna",
+          "texto": "Procedimiento orientado a detectar en tiempo real cómo la persona responde al malestar interno mediante estrategias de evitación o desconexión, como rumiación, retirada, control mental, distracción compulsiva, supresión emocional o alejamiento del cuerpo y del presente. La intervención se centra primero en reconocer y nombrar estos patrones como modos automáticos de relación con la experiencia, diferenciándolos de una respuesta mindful de observación y permiso, sin pasar todavía a modificarlos ni sustituirlos por otras estrategias. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
         {
           "codigo": "p_mbct_prevencion_evitacion",
           "nombre": "Exploración de patrones de evitación y estrategias que mantienen (rumiación, retirada, control)",
@@ -1097,9 +1104,30 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_eft_bloqueo_experiencial",
+          "nombre": "Resolución de bloqueo experiencial",
+          "texto": "Procedimiento dirigido a explorar y desmontar procesos que bloquean el acceso a emoción primaria, como intelectualización, minimización, inhibición expresiva, control excesivo o miedo a desorganizarse, ayudando a identificar la función protectora de estas defensas y facilitando gradualmente un acceso más seguro y sostenido a la experiencia emocional evitada (Greenberg, Rice & Elliott, 1993; Greenberg, 2002/2017).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_eft_identificar_evitar_emocion",
+          "nombre": "Identificación de evitación emocional",
+          "texto": "Procedimiento orientado a detectar en tiempo real cómo el paciente evita o interrumpe el contacto con emociones primarias dolorosas mediante intelectualización, cambio de tema, minimización, sobreactivación secundaria, humor defensivo, control excesivo o desconexión corporal, clarificando la función protectora de estas maniobras sin patologizarlas y señalando que bloquean el acceso a la experiencia emocional necesaria para el cambio. (Greenberg & Safran, 1987; Greenberg, Rice & Elliott, 1993; Greenberg, 2002/2017).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_eft_interrupcion_inmediata",
           "nombre": "Señalamiento de auto-interrupción inmediata",
           "texto": "Identificación en el instante en que el paciente desvía experiencia emocional hacia racionalización o cambio de tema, invitándolo suavemente a regresar a la emoción emergente. (Greenberg, Rice & Elliott, 1993).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_eft_senalamiento_defensa_secundaria",
+          "nombre": "Señalamiento de defensa emocional secundaria",
+          "texto": "Intervención breve que ayuda a identificar en vivo cuando una emoción secundaria —como irritación, sarcasmo, sobreactivación o control— está cubriendo una emoción primaria más vulnerable, facilitando que el paciente reconozca la función defensiva de esa respuesta y pueda ir más allá de ella sin invalidarla (Greenberg & Safran, 1987; Greenberg, 2002/2017).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
@@ -1112,6 +1140,13 @@
       "modelAutores": "Eugene T. Gendlin",
       "modelYear": 1961,
       "items": [
+        {
+          "codigo": "p_focusing_identificacion_bloqueo_experiencial",
+          "nombre": "Identificación de bloqueo experiencial",
+          "texto": "Procedimiento orientado a detectar cuándo el acceso al felt sense queda interferido por intelectualización, prisa por resolver, vacío aparente, sobreactivación, autoobservación rígida o distancia excesiva respecto a la experiencia corporal, ayudando a discriminar que el problema en ese momento no es la ausencia de contenido sino la interrupción del contacto experiencial. La intervención se centra primero en reconocer y nombrar el bloqueo tal como aparece, sin forzarlo ni intentar resolverlo de inmediato, para que la persona pueda relacionarse con él de forma más precisa y menos reactiva. (Gendlin, 1962; Gendlin, 1981).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
         {
           "codigo": "p_focusing_clearing_a_space",
           "nombre": "Despejar un espacio (Clearing a Space) como procedimiento de entrada",
@@ -1169,6 +1204,20 @@
           "codigo": "m_gestalt_detectar_deflexion",
           "nombre": "Detectar deflexión en vivo",
           "texto": "Señalamiento breve de cambios de tema, humor evasivo o vaguedad cuando emerge afecto relevante, invitando a regresar al punto de contacto para sostener la emoción en lugar de dispersarla (Perls, 1969; Yontef, 1993).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_detectar_fuga_actualidad",
+          "nombre": "Detectar la fuga de la actualidad",
+          "texto": "Señalamiento puntual del momento en que la persona pierde contacto con lo que está ocurriendo y se va a divagación, anticipación, recuerdo o embotamiento. La intervención no busca corregir ni moralizar, sino hacer visible la fuga como conducta presente y reconocer también las resistencias que aparecen al sostener el aquí y ahora. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_aburrimiento_irritacion_resistencia",
+          "nombre": "Detectar el aburrimiento o la irritación como resistencia",
+          "texto": "Señalar aburrimiento, fatiga, impaciencia o irritación que aparecen justo al hacer una tarea de awareness, tratándolos como formas de resistencia y no como simples accidentes. Esto permite trabajar la interferencia en el mismo momento en que ocurre. (Perls, Hefferline, & Goodman, 1951).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
@@ -1555,6 +1604,29 @@
       ]
     },
     {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_acting_out",
+          "nombre": "Manejo del acting out",
+          "texto": "Procedimiento orientado a identificar, contener y analizar conductas impulsivas o destructivas que el paciente enactúa fuera de sesión como expresión de conflictos transferenciales no mentalizados. El acting out se aborda siempre dentro del marco contractual y se vincula explícitamente a la dinámica relacional activada con el terapeuta. Referencia: Kernberg (1984); Clarkin et al. (2006).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_acting_transferencia",
+          "nombre": "Vincular conducta impulsiva con transferencia",
+          "texto": "Microintervención que conecta una conducta impulsiva o acting out reciente con la dinámica transferencial activada en sesión, ayudando al paciente a reconocer la función relacional de la conducta sin moralizarla. Refuerza responsabilidad sin culpabilización. Referencia: Clarkin et al. (2006).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "winnicott-objeto-transicional-ambiente",
       "modelLabel": "Winnicott – Objeto transicional y ambiente",
       "modelGrupo": "Psicoanálisis",
@@ -1588,6 +1660,36 @@
           "codigo": "m_nardone_evitar",
           "nombre": "Bloqueo de evitación",
           "texto": "Intervenciones destinadas a impedir conductas evitativas que mantienen el problema.",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "modelLabel": "Modelo procesual de regulación emocional",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James J. Gross",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_gross_mapeo_estrategias_reguladoras",
+          "nombre": "Mapeo de estrategias reguladoras habituales",
+          "texto": "Procedimiento orientado a identificar y clasificar las estrategias de regulación emocional que la persona utiliza de manera recurrente, analizando su frecuencia, contexto de activación, función a corto plazo y coste acumulado. Se exploran patrones como evitación situacional, distracción, reevaluación o supresión expresiva, permitiendo detectar rigidez regulatoria y dependencia de estrategias ineficaces o costosas, lo que facilita abrir espacio a alternativas más flexibles y adaptativas (Gross, 1998; Gross, 2014).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gross_reformulacion_sintoma_regulacion",
+          "nombre": "Reformulación del síntoma como estrategia reguladora",
+          "texto": "Procedimiento en el que los síntomas emocionales o conductuales se conceptualizan como intentos de regulación emocional que cumplen una función específica dentro del sistema, como reducir activación, evitar malestar o mantener control. Esta reformulación permite disminuir juicio y aumentar comprensión funcional, facilitando la transición hacia estrategias más eficaces y menos costosas (Gross, 2015).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gross_detectar_evitacion_situacional",
+          "nombre": "Detectar evitación situacional automática",
+          "texto": "Microintervención en la que se exploran patrones automáticos de evitación de situaciones emocionalmente activadoras, ayudando a hacer explícita su función protectora a corto plazo y sus costes a medio plazo (Gross, 2014).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

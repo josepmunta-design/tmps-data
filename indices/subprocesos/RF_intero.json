@@ -1,6 +1,6 @@
 {
   "subprocesoId": "RF_intero",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
+  "updatedAt": "2026-03-19T19:55:12.726Z",
   "totalModelos": 28,
   "modelos": [
     {
@@ -672,6 +672,13 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_eft_evocacion_feltsense",
+          "nombre": "Evocación del felt sense previo a simbolización emocional",
+          "texto": "Procedimiento en el que el terapeuta invita al paciente a permanecer en contacto con la sensación corporal vaga, implícita o todavía no formulada asociada a una experiencia emocional antes de intentar explicarla narrativamente, facilitando que el significado experiencial emerja progresivamente desde la experiencia sentida y pueda simbolizarse en palabras, imágenes o necesidades emocionales; esto permite acceder a esquemas emocionales implícitos y evita una elaboración prematuramente intelectualizada que aleje del núcleo afectivo del problema (Gendlin, 1978; Greenberg, Rice & Elliott, 1993).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_eft_foco_corporal_especifico",
           "nombre": "Focalización en sensación corporal específica",
           "texto": "Invitación a describir cualidades físicas concretas (presión, opresión, calor) asociadas a emoción emergente, fortaleciendo simbolización y acceso a esquema emocional implícito. (Gendlin, 1978).",
@@ -682,6 +689,20 @@
           "codigo": "m_eft_cambio_corporal",
           "nombre": "Explorar cambio corporal tras transformación emocional",
           "texto": "Microintervención que dirige la atención a cambios corporales que aparecen tras un shift emocional, ayudando a consolidar la experiencia de transformación emocional. (Greenberg, 2002/2017).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_eft_gesto_emocional",
+          "nombre": "Amplificación de gesto emocional",
+          "texto": "Microintervención que invita al paciente a notar, sostener o intensificar ligeramente un gesto, postura, tono o microexpresión que acompaña a una emoción emergente, utilizando esa señal corporal como puerta de entrada al significado emocional implícito y a la tendencia de acción asociada (Greenberg, Rice & Elliott, 1993).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_eft_localizacion_corporal_emocion",
+          "nombre": "Localización corporal de la emoción",
+          "texto": "Invitación puntual a localizar en el cuerpo dónde se siente con más claridad una emoción emergente y cómo se manifiesta allí, favoreciendo anclaje experiencial, diferenciación emocional y acceso a aspectos implícitos del esquema emocional que todavía no están formulados verbalmente (Gendlin, 1978; Greenberg, Rice & Elliott, 1993).",
           "sub": "RF_intero",
           "tipo": "micro"
         }
@@ -782,6 +803,20 @@
       "modelYear": 1951,
       "items": [
         {
+          "codigo": "p_gestalt_recuerdo_sensorial",
+          "nombre": "Recuerdo sensorial en presente",
+          "texto": "Procedimiento de rememoración fenomenológica: el paciente no se limita a contar un recuerdo, sino que intenta revivirlo sensorialmente, reactivando imágenes, sonidos, postura, tono corporal y clima afectivo. El objetivo es devolver densidad experiencial a la memoria y trabajarla como experiencia presente, no solo como relato abstracto.",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_gestalt_movilizacion_muscular_retroflexion",
+          "nombre": "Movilización muscular de la retroflexión",
+          "texto": "Procedimiento corporal para localizar la mecánica muscular de la retroflexión. Se explora cómo el paciente se hace a sí mismo lo que originalmente iba dirigido al entorno, o cómo organiza un contramovimiento crónico que neutraliza el impulso. El foco está en sentir el 'clinch' muscular, diferenciar sus componentes y recuperar awareness del acto de inhibirse.",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_gestalt_trabajo_corporal",
           "nombre": "Trabajo con el cuerpo en el aquí-y-ahora (postura, respiración, tensión, micro-movimientos)",
           "texto": "Procedimiento de acceso somático: se invita a notar sensaciones, tensiones, gestos y posturas mientras se habla, explorando qué emoción/impulso sostienen y qué necesidad queda sin completar; se puede intensificar suavemente un movimiento, permitir un gesto interrumpido o dar voz a una sensación para desbloquear afecto implícito y recuperar autorregulación. (Perls, 1969; Joyce & Sills, 2018).",
@@ -813,6 +848,27 @@
           "codigo": "m_gestalt_intensificar_gesto",
           "nombre": "Intensificar un gesto emergente",
           "texto": "Solicitud breve de exagerar un micro-movimiento o postura que aparece (apretar puños, encoger hombros) para clarificar su significado emocional y desbloquear impulso inhibido mediante amplificación consciente (Perls, 1969; Zinker, 1977).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_reviviendo_recuerdo_sensorial",
+          "nombre": "Revivir un recuerdo con detalle sensorial",
+          "texto": "Invitación breve a reconstruir una escena recordada atendiendo a postura, sensaciones, sonidos, imágenes y clima afectivo, en lugar de limitarse a resumirla conceptualmente. Busca devolver densidad experiencial al recuerdo y trabajarlo como vivencia presente. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_localizar_contramovimiento_muscular",
+          "nombre": "Localizar el contramovimiento muscular",
+          "texto": "Invitación a notar el gesto o ajuste muscular con el que la persona se frena a sí misma cuando emerge un impulso. Se busca reconocer el 'clinch' corporal entre impulso y contraimpulso, especialmente en conductas de retroflexión. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_masticar_antes_tragar",
+          "nombre": "Masticar antes de tragar",
+          "texto": "Invitación a realizar de forma deliberada la secuencia de morder, masticar, saborear y discriminar antes de tragar. Se usa como microexperiencia para simbolizar la diferencia entre asimilar críticamente y aceptar sin elaboración. (Perls, Hefferline, & Goodman, 1951).",
           "sub": "RF_intero",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_mentalizacion",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 44,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 45,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -501,11 +501,32 @@
       "modelYear": 1951,
       "items": [
         {
+          "codigo": "p_gestalt_asimilacion_proyecciones",
+          "nombre": "Asimilación de proyecciones",
+          "texto": "Procedimiento para recuperar rasgos, impulsos o intenciones atribuidos al exterior. Se entrena al paciente a detectar cuándo el otro funciona como 'pantalla apropiada' para algo propio no reconocido, y a ensayar la reversión de perspectiva para reintegrar ese contenido en primera persona.",
+          "sub": "R_mentalizacion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_gestalt_trabajo_proyecciones",
           "nombre": "Trabajo con proyecciones (recuperar lo atribuido al otro)",
           "texto": "Procedimiento para re-apropiarse de cualidades y afectos colocados fuera: se identifica lo que el paciente atribuye rígidamente al otro (“me juzga”, “me domina”) y se explora cómo esa cualidad vive también en su campo interno (miedo, crítico, deseo de poder), ampliando mentalización y reduciendo respuestas automáticas en la relación. (Perls, Hefferline & Goodman, 1951; Yontef, 1993).",
           "sub": "R_mentalizacion",
           "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gestalt_reversion_proyectiva_primera_persona",
+          "nombre": "Reversión proyectiva en primera persona",
+          "texto": "Cuando la persona atribuye intensamente una intención, rasgo o impulso al otro, se le invita a ensayar la reversión en primera persona y comprobar si algo de eso también le pertenece. No pretende imponer interpretación, sino explorar la posible reapropiación de lo proyectado. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "R_mentalizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_atribucion_iniciativa_otro",
+          "nombre": "Explorar a quién se atribuye la iniciativa",
+          "texto": "Microintervención para examinar momentos en los que la persona siente que el otro la ataca, la rechaza o la busca, cuando quizá está interrumpiendo su propio movimiento hacia el contacto. Ayuda a clarificar la organización proyectiva de la experiencia interpersonal. (Perls, Hefferline, & Goodman, 1951).",
+          "sub": "R_mentalizacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -1284,6 +1305,22 @@
           "codigo": "m_bowlby_retirada_defensiva",
           "nombre": "Señalar retirada defensiva",
           "texto": "Microintervención que identifica el distanciamiento emocional o la autosuficiencia rígida como estrategias de apego evitativo ante el riesgo de decepción, facilitando una comprensión más compasiva del propio cierre afectivo (Bowlby, 1973, *Separation: Anxiety and Anger*).",
+          "sub": "R_mentalizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "m_tfp_objeto_terapeuta",
+          "nombre": "Explorar vivencia del terapeuta como objeto",
+          "texto": "Intervención breve que invita al paciente a describir cómo percibe al terapeuta en ese momento (amenazante, ideal, controlador, indiferente), ayudando a hacer explícita la representación objetal activa. Referencia: Yeomans et al. (2015).",
           "sub": "R_mentalizacion",
           "tipo": "micro"
         }

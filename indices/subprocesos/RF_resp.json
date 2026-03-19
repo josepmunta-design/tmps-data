@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_resp",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 20,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 21,
   "modelos": [
     {
       "modelId": "medicina-tradicional-china-psicoemocional-1950",
@@ -433,9 +433,23 @@
       "modelYear": 1951,
       "items": [
         {
+          "codigo": "p_gestalt_ansiedad_a_excitacion",
+          "nombre": "Transformar ansiedad en excitación",
+          "texto": "Procedimiento para explorar la ansiedad como excitación bloqueada, especialmente a través de la respiración. Se observa cómo la persona interfiere con la exhalación, contrae el tórax, la garganta o el diafragma y corta la movilización energética. El trabajo consiste en discriminar ese bloqueo y permitir que la activación recupere su curso como excitación utilizable, no como mero síntoma ansioso.",
+          "sub": "RF_resp",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_gestalt_respiracion_breve",
           "nombre": "Respiración consciente breve",
           "texto": "Pausa corta para observar y ampliar la respiración mientras se sostiene la emoción activada, manteniendo el trabajo dentro de la ventana de tolerancia sin cortar el contacto (Perls, Hefferline & Goodman, 1951).",
+          "sub": "RF_resp",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_gestalt_localizar_corte_respiratorio",
+          "nombre": "Localizar el corte respiratorio",
+          "texto": "Señalar y explorar dónde se interrumpe la respiración cuando aparece activación, ansiedad o tensión: garganta, pecho, diafragma o exhalación. Ayuda a reconocer en vivo cómo la persona participa activamente en el bloqueo de su excitación. (Perls, Hefferline, & Goodman, 1951).",
           "sub": "RF_resp",
           "tipo": "micro"
         }
@@ -502,6 +516,29 @@
           "texto": "Procedimiento básico de mindfulness que utiliza la respiración como ancla atencional para estabilizar la conciencia en el momento presente. A través de la observación deliberada del ritmo respiratorio, se entrena la capacidad de redirigir la atención, reducir la dispersión mental y modular la activación fisiológica. Constituye una base transversal para la regulación autonómica y el desarrollo de presencia consciente. (Kabat-Zinn, 1990; Kabat-Zinn, 2003).",
           "sub": "RF_resp",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "modelLabel": "Modelo procesual de regulación emocional",
+      "modelGrupo": "Transversal",
+      "modelAutores": "James J. Gross",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_gross_modulacion_respuesta",
+          "nombre": "Entrenamiento en modulación de respuesta",
+          "texto": "Procedimiento orientado a intervenir sobre la emoción una vez activada, modulando sus componentes fisiológicos, expresivos o conductuales mediante técnicas como respiración, relajación o control conductual. Se trabaja especialmente en reducir la dependencia de estrategias como la supresión rígida, enseñando alternativas más flexibles que disminuyan la intensidad emocional sin generar costes acumulativos en salud o relaciones (Gross, 1998; Gross, 2015).",
+          "sub": "RF_resp",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_gross_regulacion_respiracion",
+          "nombre": "Regular la respiración para modular activación",
+          "texto": "Microintervención basada en el control respiratorio para influir directamente en la activación fisiológica asociada a la emoción, facilitando una disminución de la intensidad emocional cuando esta ya está activada (Gross, 1998).",
+          "sub": "RF_resp",
+          "tipo": "micro"
         }
       ]
     }

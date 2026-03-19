@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_interaccion",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 21,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 22,
   "modelos": [
     {
       "modelId": "psicoterapia-comunitaria-ubuntu-1995",
@@ -411,6 +411,50 @@
           "codigo": "m_fft_desescalada",
           "nombre": "Interrupción de escalada coercitiva",
           "texto": "Cortar ciclos de ataque-defensa mediante pautas breves.",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "interventive-interviewing-tomm-1987",
+      "modelLabel": "Interventive Interviewing",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Karl Tomm",
+      "modelYear": "1987",
+      "items": [
+        {
+          "codigo": "p_tomm_mapeo_circular_secuencias",
+          "nombre": "Mapeo circular de secuencias interactivas",
+          "texto": "Procedimiento central del modelo en el que el terapeuta desplaza la atención desde causas individuales hacia secuencias recursivas de acción–reacción, preguntando quién responde a qué, cómo una conducta influye en otra y qué ocurre después en el sistema. Su objetivo es hacer visibles los bucles que mantienen el problema, reducir la culpabilización lineal y facilitar una comprensión relacional del síntoma o del conflicto, en coherencia con la tradición sistémica y con la función de las preguntas circulares descrita por Tomm (Tomm, 1988, Interventive Interviewing: Part III).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_preguntas_estrategicas_desestabilizacion",
+          "nombre": "Preguntas estratégicas de desestabilización del patrón",
+          "texto": "Procedimiento en el que el terapeuta utiliza preguntas con intención directiva para confrontar pautas rígidas, inducir toma de posición, poner en evidencia costes relacionales o preparar cambios concretos en la interacción. Tomm describe este cuadrante estratégico como más influente y potencialmente útil cuando el sistema está atrapado en repeticiones estériles, aunque advierte también que incrementa el riesgo de imponer la agenda del terapeuta o generar resistencia si se usa de forma excesiva o poco sensible (Tomm, 1987, Part I; Tomm, 1988, Part III).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_secuenciacion_deliberada_preguntas",
+          "nombre": "Secuenciación deliberada de preguntas según intención clínica",
+          "texto": "Procedimiento integrador en el que el terapeuta organiza la entrevista pasando de preguntas más orientadas a comprender hacia preguntas más orientadas a promover cambio, calibrando en cada momento si conviene preguntar lineal, circular, estratégica o reflexivamente según el estado del sistema y los efectos observados. No se trata de aplicar tipos de preguntas como recetas aisladas, sino de secuenciarlas con intencionalidad clínica para que la entrevista entera funcione como intervención ajustada y éticamente responsable (Tomm, 1987, Part I; Tomm, 1988, Part III).",
+          "sub": "R_sist_interaccion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tomm_quien_influye_cambio",
+          "nombre": "Preguntar quién influye más en el cambio de la situación",
+          "texto": "Microintervención orientada a explorar percepciones de influencia y agencia dentro del sistema, preguntando qué miembro tiene mayor capacidad para modificar la situación o alterar el patrón actual. La pregunta permite desplazar la conversación desde la culpabilización hacia el reconocimiento de potencial de cambio y facilita identificar puntos del sistema donde introducir variaciones significativas (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "R_sist_interaccion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_mentalizacion_relacional",
+          "nombre": "Preguntar qué piensa un miembro que otro siente",
+          "texto": "Microintervención que invita a un miembro a inferir el estado emocional o la experiencia interna de otro, promoviendo procesos de mentalización relacional y ampliando la comprensión empática dentro del sistema. Este tipo de preguntas favorece que los participantes consideren perspectivas ajenas y reconozcan la complejidad emocional de la interacción (Tomm, 1988, *Interventive Interviewing: Part III*).",
           "sub": "R_sist_interaccion",
           "tipo": "micro"
         }

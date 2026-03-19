@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_ciclos",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 22,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 23,
   "modelos": [
     {
       "modelId": "psicoterapia-comunitaria-ubuntu-1995",
@@ -395,6 +395,71 @@
           "codigo": "m_mri_escaladaSimetrica",
           "nombre": "Señalar escalada simétrica",
           "texto": "Nombrar el patrón de competencia creciente donde ambos miembros aumentan intensidad de respuesta, identificando la dinámica que mantiene el conflicto. Referencia: Watzlawick, Beavin & Jackson (1967), cap. 3.",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "interventive-interviewing-tomm-1987",
+      "modelLabel": "Interventive Interviewing",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Karl Tomm",
+      "modelYear": "1987",
+      "items": [
+        {
+          "codigo": "p_tomm_mapeo_circular_secuencias",
+          "nombre": "Mapeo circular de secuencias interactivas",
+          "texto": "Procedimiento central del modelo en el que el terapeuta desplaza la atención desde causas individuales hacia secuencias recursivas de acción–reacción, preguntando quién responde a qué, cómo una conducta influye en otra y qué ocurre después en el sistema. Su objetivo es hacer visibles los bucles que mantienen el problema, reducir la culpabilización lineal y facilitar una comprensión relacional del síntoma o del conflicto, en coherencia con la tradición sistémica y con la función de las preguntas circulares descrita por Tomm (Tomm, 1988, Interventive Interviewing: Part III).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_exploracion_diferencias_perceptivas",
+          "nombre": "Exploración de diferencias perceptivas entre miembros",
+          "texto": "Procedimiento basado en preguntas de diferencia que comparan percepciones, intenciones, emociones y lecturas del problema entre distintos miembros del sistema o entre distintos momentos temporales. El terapeuta pregunta quién lo ve de otra manera, quién se preocupa más, quién cambia antes o quién nota antes una escalada, con el fin de introducir distinciones relevantes que complejicen el mapa del sistema y favorezcan reflexión sobre la propia posición relacional (Tomm, 1988, Interventive Interviewing: Part III).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_reencuadre_relacional_preguntas",
+          "nombre": "Reencuadre relacional mediante secuencia de preguntas",
+          "texto": "Procedimiento mediante el cual el terapeuta no ofrece un reencuadre en forma de interpretación cerrada, sino que lo construye progresivamente a través de una secuencia de preguntas que desplaza el significado del problema: de defecto individual a patrón recíproco, de mala intención a intento de protección, de resistencia a solución fallida o de culpable a participante en un ciclo. Esta forma de entrevistar permite que el nuevo marco emerja desde la conversación misma y sea vivido como más propio y menos impuesto (Tomm, 1988, Part III).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_efectos_segundo_orden",
+          "nombre": "Entrevista de clarificación de efectos de segundo orden",
+          "texto": "Procedimiento orientado a explorar no solo qué hace cada miembro, sino qué efectos produce en las percepciones, expectativas y respuestas posteriores del resto del sistema, incluyendo los efectos inadvertidos de intentos de ayuda, control o protección. Este nivel de entrevista profundiza la comprensión de segundo orden porque muestra cómo cada acción modifica el campo relacional y reorganiza la respuesta del otro, ampliando la capacidad del sistema para observarse desde fuera y salir de atribuciones simplistas (Tomm, 1988, Part III).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tomm_quien_nota_primero_problema",
+          "nombre": "Preguntar quién nota primero el problema",
+          "texto": "Microintervención circular que explora quién detecta antes la aparición del problema o del síntoma dentro del sistema, invitando a identificar diferencias en la percepción y en la sensibilidad relacional entre los miembros. Este tipo de pregunta introduce distinciones relevantes sobre atención, responsabilidad implícita y posiciones dentro de la pauta interactiva, facilitando una comprensión más sistémica de cómo se inicia o se reconoce el ciclo problemático (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_antes_del_problema",
+          "nombre": "Preguntar qué ocurre justo antes del problema",
+          "texto": "Microintervención lineal o circular que invita a describir qué sucede inmediatamente antes de que aparezca el síntoma o conflicto, ayudando a identificar antecedentes relacionales o contextuales que activan la secuencia problemática. Este tipo de pregunta facilita reconstruir la cadena de eventos y situar el problema dentro de una pauta más amplia de interacción (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_despues_del_problema",
+          "nombre": "Preguntar qué ocurre después del problema",
+          "texto": "Microintervención complementaria que explora las consecuencias relacionales o emocionales posteriores al episodio problemático, permitiendo identificar reforzamientos inadvertidos, intentos de solución o reajustes dentro del sistema. Al ampliar la mirada hacia lo que sigue al síntoma, el terapeuta ayuda a comprender cómo la pauta se mantiene o se transforma en el tiempo (Tomm, 1988, *Interventive Interviewing: Part III*).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_excepciones_patron",
+          "nombre": "Pregunta sobre excepciones al patrón",
+          "texto": "Microintervención que explora momentos en los que el problema no aparece o aparece con menor intensidad, preguntando qué fue diferente en esas ocasiones y quién hizo algo distinto. Al identificar excepciones, la conversación se orienta hacia recursos existentes y condiciones relacionales que ya permiten variaciones positivas en el sistema (Tomm, 1987, *Interventive Interviewing: Part II*).",
           "sub": "R_sist_ciclos",
           "tipo": "micro"
         }

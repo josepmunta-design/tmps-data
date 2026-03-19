@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_estilosApego",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 17,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 19,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -53,6 +53,22 @@
           "codigo": "p_liotti_base_segura_relacion_terapeutica",
           "nombre": "Uso de la relación terapéutica como base segura sin activar amenaza ni rango",
           "texto": "Procedimiento relacional continuo: el terapeuta mantiene una presencia estable, predecible y colaborativa, monitorizando microseñales de desorganización (confusión, congelación, irritación súbita, desconexión) para ajustar distancia, ritmo y lenguaje. Se trabaja la reparación de rupturas como eventos motivacionales previsibles (apego vs amenaza/rango) y se evita responder con control, retirada o confrontación que reproduzcan el dilema temprano, convirtiendo la sesión en experiencia correctiva de coordinación y seguridad. (Liotti, 2004; Liotti & Monticelli, 2008).",
+          "sub": "R_estilosApego",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "eft-greenberg-1990",
+      "modelLabel": "Terapia enfocada en las emociones",
+      "modelGrupo": "Humanista",
+      "modelAutores": "Leslie Greenberg; Robert Elliott",
+      "modelYear": 1990,
+      "items": [
+        {
+          "codigo": "p_eft_soledad_anhelo_apego",
+          "nombre": "Trabajo con soledad emocional y anhelo de apego",
+          "texto": "Procedimiento centrado en activar y elaborar experiencias de soledad emocional, abandono o anhelo intenso de conexión, ayudando al paciente a diferenciar la protesta secundaria de la necesidad primaria de vínculo, contacto o consuelo, de modo que la emoción deje de expresarse solo como demanda caótica, retirada o resentimiento y pueda organizarse como necesidad relacional legítima y comunicable (Greenberg, Watson & Goldman, 1998; Greenberg, 2002/2017).",
           "sub": "R_estilosApego",
           "tipo": "procedimiento"
         }
@@ -273,6 +289,29 @@
           "texto": "Procedimiento de formulación que clasifica los patrones relacionales predominantes —seguro, evitativo, ambivalente o desorganizado— a partir de narrativas biográficas, relaciones actuales y respuestas a la cercanía y la separación, permitiendo entender la coherencia histórica del estilo relacional y orientar la intervención sin etiquetar al paciente como deficitario (Bowlby, 1973, *Separation: Anxiety and Anger*; Ainsworth et al., 1978, *Patterns of Attachment*).",
           "sub": "R_estilosApego",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_transferencia",
+          "nombre": "Análisis sistemático de la transferencia",
+          "texto": "Procedimiento nuclear de TFP que consiste en identificar, clarificar y analizar de forma continua cómo las representaciones escindidas de self y objeto se activan en la relación con el terapeuta en el aquí-y-ahora. La transferencia se utiliza como vía principal para acceder a la organización interna del paciente, observando cómo se alternan posiciones idealizadas y persecutorias. Referencia: Kernberg (1984); Clarkin et al. (2006).",
+          "sub": "R_estilosApego",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_transferencia_aqui_ahora",
+          "nombre": "Señalar la activación transferencial inmediata",
+          "texto": "Microintervención consistente en señalar explícitamente que una reacción emocional intensa del paciente está ocurriendo en relación directa con el terapeuta en el momento presente, ayudando a desplazar el foco desde eventos externos hacia la dinámica transferencial viva. Facilita conciencia del aquí-y-ahora sin interpretar aún el significado profundo. Referencia: Kernberg (1984); Yeomans et al. (2015).",
+          "sub": "R_estilosApego",
+          "tipo": "micro"
         }
       ]
     },

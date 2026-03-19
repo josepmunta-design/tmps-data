@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_construccionAlternativa",
-  "updatedAt": "2026-03-12T20:34:05.863Z",
-  "totalModelos": 61,
+  "updatedAt": "2026-03-19T19:55:12.726Z",
+  "totalModelos": 63,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -935,6 +935,13 @@
           "tipo": "procedimiento"
         },
         {
+          "codigo": "p_eft_reestructuracion_significado",
+          "nombre": "Reestructuración emocional de significado personal",
+          "texto": "Procedimiento en el que la emoción transformada se integra en nuevos significados personales que reorganizan la interpretación de experiencias pasadas y presentes, permitiendo reinterpretar eventos antes vividos desde vergüenza, indefensión o miedo como experiencias ligadas a necesidades legítimas, daño sufrido o límites vulnerados, consolidando así una comprensión más compasiva, digna y coherente del self (Greenberg, 2002/2017).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_eft_clarificacion_necesidad",
           "nombre": "Clarificación explícita de necesidad emergente",
           "texto": "Traducción directa de emoción en necesidad concreta reconocida (“Necesitaba protección”), preparando integración conductual posterior. (Greenberg, 2002/2017).",
@@ -1407,6 +1414,29 @@
       ]
     },
     {
+      "modelId": "tfp-transference-focused-psychotherapy-kernberg-1995",
+      "modelLabel": "TFP – Transference-Focused Psychotherapy",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Otto F. Kernberg; John F. Clarkin; Frank Yeomans",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_tfp_integracion",
+          "nombre": "Integración progresiva de representaciones escindidas",
+          "texto": "Procedimiento longitudinal que resulta del trabajo acumulativo de clarificación, confrontación e interpretación, mediante el cual las representaciones polarizadas de self y objeto se integran en configuraciones más complejas, ambivalentes y estables. Esta integración es el principal marcador de cambio estructural en TFP. Referencia: Kernberg (1984); Yeomans et al. (2015).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tfp_integracion_puntual",
+          "nombre": "Invitar a integrar perspectivas opuestas",
+          "texto": "Intervención micro que sugiere considerar simultáneamente aspectos positivos y negativos del self o del otro cuando ambos polos están presentes en sesión, favoreciendo momentos iniciales de integración sin forzar síntesis prematura. Referencia: Kernberg (1984); Yeomans et al. (2015).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "winnicott-objeto-transicional-ambiente",
       "modelLabel": "Winnicott – Objeto transicional y ambiente",
       "modelGrupo": "Psicoanálisis",
@@ -1461,6 +1491,57 @@
           "codigo": "m_mri_microDuda",
           "nombre": "Introducir duda en certezas absolutas",
           "texto": "Cuestionar afirmaciones rígidas mediante preguntas como “¿siempre ocurre así?”, debilitando narrativas absolutas que sostienen la pauta repetitiva. Referencia: Watzlawick, Weakland & Fisch (1974).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "interventive-interviewing-tomm-1987",
+      "modelLabel": "Interventive Interviewing",
+      "modelGrupo": "Sistémico",
+      "modelAutores": "Karl Tomm",
+      "modelYear": "1987",
+      "items": [
+        {
+          "codigo": "p_tomm_preguntas_reflexivas_autoobservacion",
+          "nombre": "Preguntas reflexivas para activar autoobservación",
+          "texto": "Procedimiento nuclear de la propuesta de Tomm en el que las preguntas no buscan dirigir una respuesta concreta, sino estimular que los propios consultantes observen sus patrones, generen conexiones nuevas y elaboren alternativas por sí mismos. El terapeuta adopta una postura facilitadora y formula preguntas que promueven reflexión sobre significados, consecuencias, posibilidades no consideradas y lecturas emergentes, de modo que la entrevista se convierta en un contexto que moviliza la capacidad autoorganizativa y de self-healing del sistema (Tomm, 1987, Interventive Interviewing: Part II).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_escenarios_alternativos_futuro",
+          "nombre": "Generación de escenarios alternativos y futuros posibles",
+          "texto": "Procedimiento reflexivo orientado a explorar qué podría pasar si un miembro respondiera de otro modo, si una secuencia se interrumpiera antes, si un conflicto se abordara desde otra posición o si el sistema actuara según una pauta más funcional en el futuro. Este tipo de entrevista no se limita a analizar el problema, sino que ensaya verbalmente reorganizaciones posibles, facilitando anticipación, agencia y preparación para el cambio sin imponer una solución externa cerrada (Tomm, 1987, Part II; Tomm, 1988, Part III).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_tomm_recursos_excepciones_sistemicas",
+          "nombre": "Entrevista orientada a recursos y excepciones sistémicas",
+          "texto": "Procedimiento que busca identificar momentos en los que el problema se reduce, relaciones que ya funcionan mejor que otras, apoyos disponibles, condiciones contextuales facilitadoras y respuestas útiles que el sistema ya ha producido aunque no las reconozca todavía como recursos. Aunque Tomm no convierte esta línea en una escuela separada, encaja plenamente con el uso reflexivo de preguntas para amplificar diferencias útiles, activar percepción de competencia y ensanchar el repertorio de cambio del sistema consultante (Tomm, 1987, Part II; Tomm, 1988, Part III).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_tomm_escenario_hipotetico",
+          "nombre": "Pregunta de escenario hipotético",
+          "texto": "Microintervención reflexiva que plantea escenarios hipotéticos —por ejemplo, qué ocurriría si alguien reaccionara de otra manera o si una secuencia se interrumpiera antes— con el fin de explorar alternativas de interacción y ampliar el repertorio de posibilidades del sistema. Este tipo de preguntas permite ensayar reorganizaciones relacionales sin imponer una solución concreta (Tomm, 1987, *Interventive Interviewing: Part II*).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_excepciones_patron",
+          "nombre": "Pregunta sobre excepciones al patrón",
+          "texto": "Microintervención que explora momentos en los que el problema no aparece o aparece con menor intensidad, preguntando qué fue diferente en esas ocasiones y quién hizo algo distinto. Al identificar excepciones, la conversación se orienta hacia recursos existentes y condiciones relacionales que ya permiten variaciones positivas en el sistema (Tomm, 1987, *Interventive Interviewing: Part II*).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_tomm_consecuencias_futuras",
+          "nombre": "Pregunta sobre consecuencias futuras",
+          "texto": "Microintervención reflexiva que invita a anticipar qué podría ocurrir si el patrón actual continuara igual o si se introdujera un cambio específico, ayudando a evaluar consecuencias relacionales, emocionales o prácticas de diferentes trayectorias. Este tipo de pregunta promueve reflexión prospectiva y favorece decisiones más conscientes dentro del sistema (Tomm, 1987, *Interventive Interviewing: Part II*).",
           "sub": "N_construccionAlternativa",
           "tipo": "micro"
         }
