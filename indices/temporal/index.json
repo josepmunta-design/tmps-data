@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-19T19:56:33.501Z",
+  "generatedAt": "2026-03-19T19:59:00.697Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 177,
-    "links": 180,
-    "unresolvedInfluences": 618
+    "modelos": 178,
+    "links": 181,
+    "unresolvedInfluences": 622
   },
   "nodes": [
     {
@@ -4095,6 +4095,37 @@
       "escuelaId": "constructivista"
     },
     {
+      "id": "modelo-procesual-regulacion-emocional-gross-1998",
+      "label": "Modelo procesual de regulación emocional",
+      "year": 1998,
+      "group": "Transversal",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/transversal/modelo-procesual-regulacion-emocional-gross-1998.json",
+      "authors": "James J. Gross",
+      "summary": "El modelo procesual de regulación emocional de James Gross conceptualiza la emoción como una secuencia dinámica que se despliega en el tiempo y sobre la que puede intervenirse en varios puntos. La regulación emocional no se entiende como supresión simple del afecto, sino como el conjunto de procesos mediante los cuales una persona influye en qué emociones tiene, cuándo las tiene, cómo las experimenta y cómo las expresa. El núcleo del modelo distingue familias de estrategias en función del momento del proceso emocional en que actúan: selección de situación, modificación de situación, despliegue atencional, cambio cognitivo y modulación de respuesta. Esta arquitectura permitió ordenar empíricamente estrategias que antes aparecían dispersas y mostró que las estrategias antecedente-focalizadas, como la reevaluación cognitiva, suelen tener perfiles más adaptativos que las estrategias centradas en la respuesta, como la supresión expresiva, especialmente cuando esta se usa de manera rígida y crónica. Más adelante, Gross amplió el marco con el modelo extendido de regulación emocional, incorporando fases de identificación, selección e implementación de estrategias, lo que convirtió su propuesta en uno de los marcos transdiagnósticos más influyentes para comprender regulación, desregulación y psicopatología.",
+      "influencias": [
+        "Teorías de la emoción",
+        "Psicología cognitiva",
+        "Teoría de la valoración (appraisal)",
+        "Psicología social",
+        "Investigación en estrés y afrontamiento"
+      ],
+      "refs": [
+        "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271-299.",
+        "Gross, J. J. (1998). Antecedent- and response-focused emotion regulation: Divergent consequences for experience, expression, and physiology. Journal of Personality and Social Psychology, 74(1), 224-237.",
+        "Gross, J. J. (Ed.). (2014). Handbook of Emotion Regulation (2nd ed.).",
+        "Gross, J. J. (2015). Emotion regulation: Current status and future prospects. Psychological Inquiry, 26(1), 1-26.",
+        "Gross, J. J. (2015). The extended process model of emotion regulation: Elaborations, applications, and future directions. Psychological Inquiry, 26(1), 130-137."
+      ],
+      "lat": 37.4275,
+      "lon": -122.1697,
+      "ciudad": "Stanford, California",
+      "pais": "EE. UU.",
+      "escuelaId": "transversal"
+    },
+    {
       "id": "psicologia-positiva-1998",
       "label": "Psicología Positiva",
       "year": 1998,
@@ -5788,6 +5819,10 @@
     {
       "source": "psicologia-cognitiva-neisser-1967",
       "target": "functional-family-therapy-fft"
+    },
+    {
+      "source": "psicologia-cognitiva-neisser-1967",
+      "target": "modelo-procesual-regulacion-emocional-gross-1998"
     },
     {
       "source": "teoria-apego-bowlby",
@@ -8022,6 +8057,22 @@
     {
       "target": "mindfulness-mbsr-contemplativo-1979",
       "influence": "Budismo secular"
+    },
+    {
+      "target": "modelo-procesual-regulacion-emocional-gross-1998",
+      "influence": "Teorías de la emoción"
+    },
+    {
+      "target": "modelo-procesual-regulacion-emocional-gross-1998",
+      "influence": "Teoría de la valoración (appraisal)"
+    },
+    {
+      "target": "modelo-procesual-regulacion-emocional-gross-1998",
+      "influence": "Psicología social"
+    },
+    {
+      "target": "modelo-procesual-regulacion-emocional-gross-1998",
+      "influence": "Investigación en estrés y afrontamiento"
     },
     {
       "target": "k_kublerross69",
