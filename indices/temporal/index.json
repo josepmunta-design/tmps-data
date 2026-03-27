@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-27T09:01:14.641Z",
+  "generatedAt": "2026-03-27T09:02:42.873Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 179,
-    "links": 181,
-    "unresolvedInfluences": 622
+    "links": 183,
+    "unresolvedInfluences": 626
   },
   "nodes": [
     {
@@ -4159,7 +4159,7 @@
       "escuelaId": "humanista"
     },
     {
-      "id": "neurobiologia-interpersonal-siegel",
+      "id": "neurobiologia-interpersonal-siegel-1999",
       "label": "Neurobiología Interpersonal (IPNB)",
       "year": 1999,
       "group": "Integrativo",
@@ -4168,9 +4168,21 @@
       "isMarco": true,
       "file": "modelos/integrativo/neurobiologia-interpersonal-siegel-1999.json",
       "authors": "Daniel J. Siegel",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "La Neurobiología Interpersonal (Interpersonal Neurobiology, IPNB), desarrollada por Daniel J. Siegel, es un marco integrativo que articula hallazgos de la neurociencia, la teoría del apego, la psicología del desarrollo, la teoría de sistemas complejos y la práctica clínica para comprender la mente humana. Define la mente no como un producto exclusivo del cerebro, sino como un proceso emergente que regula el flujo de energía e información tanto dentro del organismo como en las relaciones interpersonales. Desde esta perspectiva, el bienestar psicológico depende del grado de integración del sistema: la capacidad de diferenciar elementos (emociones, pensamientos, estados internos, roles) y al mismo tiempo vincularlos de forma coherente. La psicopatología se conceptualiza como patrones de desintegración —rigidez o caos— en este sistema, que se manifiestan en disfunciones en la regulación emocional, la identidad, la atención y las relaciones. La intervención terapéutica busca restaurar la integración mediante procesos como la conciencia (awareness), la regulación, la narrativa coherente y la experiencia relacional segura, utilizando la relación terapéutica como un contexto de co-regulación y reorganización neurobiológica.",
+      "influencias": [
+        "Teoría del apego",
+        "Neurociencia afectiva",
+        "Teoría de sistemas complejos",
+        "Psicología del desarrollo",
+        "Mindfulness y tradiciones contemplativas",
+        "Psicoterapia integrativa"
+      ],
+      "refs": [
+        "Siegel, D. J. (1999). The Developing Mind.",
+        "Siegel, D. J. (2012). The Developing Mind (2nd ed.).",
+        "Siegel, D. J. (2010). Mindsight.",
+        "Siegel, D. J. (2012). Pocket Guide to Interpersonal Neurobiology."
+      ],
       "lat": 34.0689,
       "lon": -118.4452,
       "ciudad": "Los Ángeles, California",
@@ -5694,6 +5706,14 @@
     {
       "source": "aprendizaje-social-bandura-1977",
       "target": "psicodinamica-ciclica-wachtel"
+    },
+    {
+      "source": "teoria-apego-bowlby",
+      "target": "neurobiologia-interpersonal-siegel-1999"
+    },
+    {
+      "source": "psicoterapia-integrativa-sepi-1992",
+      "target": "neurobiologia-interpersonal-siegel-1999"
     },
     {
       "source": "h19ta64",
@@ -7500,6 +7520,22 @@
     {
       "target": "psicodinamica-ciclica-wachtel",
       "influence": "Cognitivismo"
+    },
+    {
+      "target": "neurobiologia-interpersonal-siegel-1999",
+      "influence": "Neurociencia afectiva"
+    },
+    {
+      "target": "neurobiologia-interpersonal-siegel-1999",
+      "influence": "Teoría de sistemas complejos"
+    },
+    {
+      "target": "neurobiologia-interpersonal-siegel-1999",
+      "influence": "Psicología del desarrollo"
+    },
+    {
+      "target": "neurobiologia-interpersonal-siegel-1999",
+      "influence": "Mindfulness y tradiciones contemplativas"
     },
     {
       "target": "psicoterapia-multimodal-basic-id-lazarus",
