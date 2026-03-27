@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_monitorizacion",
-  "updatedAt": "2026-03-19T19:55:12.726Z",
-  "totalModelos": 9,
+  "updatedAt": "2026-03-27T08:54:47.424Z",
+  "totalModelos": 10,
   "modelos": [
     {
       "modelId": "mbct-segal-williams-teasdale-2002",
@@ -157,6 +157,43 @@
           "codigo": "m_ipt_revision_resultado",
           "nombre": "Revisión de resultado interpersonal",
           "texto": "Breve revisión de cómo resultó una acción interpersonal realizada entre sesiones, extrayendo aprendizaje clínico y ajustando estrategias sin culpabilización. Referencia: Weissman et al. (2000).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "neurobiologia-interpersonal-siegel",
+      "modelLabel": "Neurobiología Interpersonal (IPNB)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Daniel J. Siegel",
+      "modelYear": 1999,
+      "items": [
+        {
+          "codigo": "p_ipnb_rigidez_caos",
+          "nombre": "Identificación de patrones de rigidez y caos",
+          "texto": "Procedimiento de conceptualización en vivo donde el terapeuta ayuda a identificar si el sistema del paciente está funcionando en patrones de rigidez o caos, facilitando conciencia sobre estos estados y orientando el trabajo terapéutico hacia la restauración de la integración. (Siegel, 2012).",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ipnb_detectar_cambio",
+          "nombre": "Señalar cambio en el estado interno",
+          "texto": "El terapeuta identifica y verbaliza cambios sutiles en emoción, activación o postura para aumentar conciencia del proceso y reforzar la capacidad de autoobservación. (Siegel, 2012).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ipnb_limites_ventana",
+          "nombre": "Explorar límites de activación",
+          "texto": "Se ayuda al paciente a identificar cuándo empieza a desbordarse o desconectarse, aumentando conciencia de su ventana de tolerancia y facilitando regulación progresiva. (Siegel, 2012).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ipnb_rigidez_caos_micro",
+          "nombre": "Señalar patrones de rigidez o caos",
+          "texto": "Se hace explícito si el paciente está operando desde control rígido o desorganización, facilitando conciencia del patrón y orientando hacia integración. (Siegel, 2012).",
           "sub": "RE_monitorizacion",
           "tipo": "micro"
         }
