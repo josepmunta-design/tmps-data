@@ -10,6 +10,7 @@
   "pais": "EE. UU.",
   "lat": 37.4275,
   "lon": -122.1697,
+  "frase": "Aprendemos quiénes podemos ser mirando a otros actuar, y cambiamos cuando empezamos a vernos capaces de hacerlo también.",
   "descripcion": "El modelo de modelado e imitacion de Albert Bandura demuestra que una parte significativa del aprendizaje humano ocurre observando la conducta de otros y las consecuencias que reciben, sin necesidad de refuerzo directo. Introduce el concepto de refuerzo vicario y muestra que las personas pueden adquirir nuevas conductas, reglas y expectativas simplemente a traves de la observacion de modelos significativos. El modelo incorpora procesos cognitivos intermedios como la atencion, la retencion, la reproduccion y la motivacion, y formula el principio de determinismo reciproco entre persona, conducta y ambiente. Asimismo, Bandura introduce el constructo de autoeficacia como factor central del cambio conductual, estableciendo un puente claro entre el conductismo clasico y el giro cognitivo.",
   "influencias": [
     "Modelado",
@@ -33,82 +34,241 @@
     "AG",
     "RE"
   ],
-  "procedimientos": [
-    {
-      "nombre": "Modelado directo",
-      "codigo": "p_bandura_modelado_directo",
-      "procesos": [
-        "AG_compromisoConductual"
-      ],
-      "texto": "Procedimiento en el que el terapeuta u otra figura relevante ejecuta de forma visible la conducta objetivo para que el paciente la observe. El modelado directo reduce incertidumbre, proporciona guias claras de accion y disminuye la ansiedad asociada a la novedad conductual."
-    },
-    {
-      "nombre": "Modelado simbolico",
-      "codigo": "p_bandura_modelado_simbolico",
-      "procesos": [
-        "N_marcosCognitivos"
-      ],
-      "texto": "Uso de videos, relatos o representaciones simbolicas donde un modelo ejecuta la conducta deseada. Permite ampliar el acceso a modelos funcionales y preparar al paciente para la accion directa."
-    },
-    {
-      "nombre": "Ensayo conductual guiado",
-      "codigo": "p_bandura_ensayo",
-      "procesos": [
-        "AG_compromisoConductual"
-      ],
-      "texto": "Procedimiento en el que el paciente practica activamente la conducta observada bajo supervision terapeutica. Facilita la transicion de la observacion a la ejecucion real y consolida el aprendizaje."
-    },
-    {
-      "nombre": "Entrenamiento en autoeficacia",
-      "codigo": "p_bandura_autoefficacia",
-      "procesos": [
-        "I_fortalezasRecursos"
-      ],
-      "texto": "Intervencion sistematica orientada a fortalecer la creencia del paciente en su capacidad para afrontar situaciones especificas. Se apoya en experiencias de exito progresivo, feedback correctivo y regulacion emocional."
-    }
-  ],
+ "procedimientos": [
+
+  {
+    "nombre": "Modelado directo en vivo",
+    "codigo": "p_bandura_modelado_directo",
+    "procesos": ["AG_compromisoConductual", "N_marcosCognitivos"],
+    "texto": "Procedimiento en el que el terapeuta u otra figura relevante ejecuta de forma visible y estructurada la conducta objetivo delante del paciente, asegurando que esta sea clara, observable y desglosada en pasos comprensibles. El modelado directo reduce incertidumbre, proporciona guías concretas de acción y disminuye la evitación asociada a la novedad conductual, facilitando la transición hacia la ejecución. Referencia: Bandura (1977), Social Learning Theory."
+  },
+
+  {
+    "nombre": "Modelado simbólico (observacional indirecto)",
+    "codigo": "p_bandura_modelado_simbolico",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Procedimiento que utiliza representaciones simbólicas como vídeos, relatos o dramatizaciones donde un modelo realiza la conducta objetivo, permitiendo ampliar el repertorio de aprendizaje sin necesidad de exposición directa. Este tipo de modelado es especialmente útil cuando la situación real es difícil de reproducir o genera alta ansiedad inicial. Referencia: Bandura (1977), Social Learning Theory."
+  },
+
+  {
+    "nombre": "Modelado participante (modelado + acción)",
+    "codigo": "p_bandura_modelado_participante",
+    "procesos": ["AG_compromisoConductual", "RE_modulacion"],
+    "texto": "Procedimiento en el que el terapeuta no solo muestra la conducta, sino que acompaña activamente al paciente en su ejecución inicial, reduciendo ansiedad y facilitando el paso de la observación a la acción. Este formato es especialmente eficaz en fobias y habilidades sociales, ya que combina exposición y aprendizaje observacional. Referencia: Bandura (1977); Bandura (1986), Social Foundations of Thought and Action."
+  },
+
+  {
+    "nombre": "Ensayo conductual guiado",
+    "codigo": "p_bandura_ensayo",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Procedimiento en el que el paciente practica activamente la conducta observada bajo supervisión, recibiendo feedback inmediato para ajustar su ejecución. Este ensayo permite consolidar el aprendizaje y transformar la representación mental en competencia conductual real. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Entrenamiento en autoeficacia",
+    "codigo": "p_bandura_autoefficacia",
+    "procesos": ["I_fortalezasRecursos", "RE_modulacion"],
+    "texto": "Procedimiento dirigido a fortalecer la creencia del paciente en su capacidad para ejecutar conductas específicas, mediante experiencias de dominio progresivo, observación de modelos similares (modelado vicario), persuasión verbal realista y regulación de la activación emocional. La autoeficacia es uno de los principales predictores del cambio conductual sostenido. Referencia: Bandura (1977); Bandura (1986)."
+  },
+
+  {
+    "nombre": "Selección estratégica de modelos relevantes",
+    "codigo": "p_bandura_seleccion_modelos",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Procedimiento que consiste en elegir modelos que resulten significativos para el paciente (similares en edad, contexto o dificultad), aumentando la probabilidad de identificación y de imitación efectiva. La similitud percibida incrementa el impacto del aprendizaje vicario. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Descomposición de habilidades complejas",
+    "codigo": "p_bandura_descomposicion_habilidades",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Procedimiento mediante el cual una conducta compleja se divide en pasos simples y secuenciales que pueden ser observados, retenidos y reproducidos progresivamente, reduciendo sobrecarga cognitiva y facilitando el aprendizaje gradual. Referencia: Bandura (1986)."
+  },
+
+  {
+    "nombre": "Exposición a consecuencias vicarias",
+    "codigo": "p_bandura_consecuencias_vicarias",
+    "procesos": ["RE_modulacion", "N_marcosCognitivos"],
+    "texto": "Procedimiento en el que el paciente observa las consecuencias que recibe el modelo (éxito, fracaso, refuerzo o castigo), permitiendo anticipar resultados y ajustar su conducta sin necesidad de experimentar directamente todas las contingencias. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Generalización del aprendizaje observacional",
+    "codigo": "p_bandura_generalizacion",
+    "procesos": ["AG_generalizacion"],
+    "texto": "Procedimiento orientado a transferir la conducta aprendida a distintos contextos, personas y situaciones, evitando que el aprendizaje quede restringido al entorno terapéutico o a un único modelo. Referencia: Bandura (1986)."
+  }
+
+],
   "micros": [
-    {
-      "nombre": "Atencion al modelo",
-      "codigo": "m_bandura_atencion",
-      "procesos": [
-        "N_metacognicion"
-      ],
-      "texto": "Focalizacion deliberada en los aspectos relevantes de la conducta del modelo para asegurar un aprendizaje eficaz y evitar imitaciones parciales o distorsionadas."
-    },
-    {
-      "nombre": "Retencion simbolica",
-      "codigo": "m_bandura_retencion",
-      "procesos": [
-        "N_marcosCognitivos"
-      ],
-      "texto": "Ayuda al paciente a codificar mentalmente la conducta observada mediante lenguaje, imagenes o reglas simples que faciliten su recuerdo posterior."
-    },
-    {
-      "nombre": "Reproduccion progresiva",
-      "codigo": "m_bandura_reproduccion",
-      "procesos": [
-        "AG_compromisoConductual"
-      ],
-      "texto": "Division de la conducta objetivo en pasos graduales que el paciente puede reproducir de forma progresiva, reduciendo frustracion y abandono."
-    },
-    {
-      "nombre": "Refuerzo vicario",
-      "codigo": "m_bandura_refuerzo_vicario",
-      "procesos": [
-        "RE_modulacion"
-      ],
-      "texto": "Observacion de consecuencias positivas en el modelo que incrementa la motivacion del paciente para intentar la conducta, incluso antes de experimentarla directamente."
-    },
-    {
-      "nombre": "Persuasion verbal realista",
-      "codigo": "m_bandura_persuasion",
-      "procesos": [
-        "I_fortalezasRecursos"
-      ],
-      "texto": "Mensajes verbales ajustados y creibles que refuerzan la expectativa de exito del paciente sin generar falsas promesas ni presion excesiva."
-    }
-  ],
+
+  {
+    "nombre": "Focalización selectiva en el modelo",
+    "codigo": "m_bandura_atencion",
+    "procesos": ["N_metacognicion"],
+    "texto": "Microintervención que dirige la atención del paciente hacia los aspectos relevantes de la conducta del modelo (qué hace, cómo lo hace, en qué momento), evitando distracciones y mejorando la calidad del aprendizaje observacional. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Codificación verbal o imaginativa",
+    "codigo": "m_bandura_retencion",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Proceso mediante el cual la conducta observada se traduce en representaciones internas (lenguaje, imágenes, reglas simples) que facilitan su almacenamiento y posterior recuperación. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Segmentación de la conducta en pasos",
+    "codigo": "m_bandura_segmentacion",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "División de la conducta en unidades manejables que el paciente puede reproducir progresivamente, reduciendo la complejidad y aumentando la probabilidad de éxito inicial. Referencia: Bandura (1986)."
+  },
+
+  {
+    "nombre": "Imitación inicial aproximada",
+    "codigo": "m_bandura_imitacion_aproximada",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Primer intento de reproducción de la conducta sin exigencia de perfección, favoreciendo el inicio de la acción y reduciendo la evitación por miedo al error. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Ajuste mediante feedback inmediato",
+    "codigo": "m_bandura_feedback",
+    "procesos": ["AG_autoriaResponsabilidad"],
+    "texto": "Corrección en tiempo real de la ejecución conductual para mejorar precisión y consolidar el aprendizaje, evitando la repetición de errores. Referencia: Bandura (1986)."
+  },
+
+  {
+    "nombre": "Observación de éxito en modelo similar",
+    "codigo": "m_bandura_modelo_similar",
+    "procesos": ["I_fortalezasRecursos"],
+    "texto": "Exposición a modelos percibidos como similares que logran la conducta con éxito, aumentando la expectativa de autoeficacia del paciente. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Refuerzo vicario",
+    "codigo": "m_bandura_refuerzo_vicario",
+    "procesos": ["RE_modulacion"],
+    "texto": "Incremento de la motivación al observar que el modelo recibe consecuencias positivas, facilitando la imitación incluso sin refuerzo directo. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Persuasión verbal ajustada",
+    "codigo": "m_bandura_persuasion",
+    "procesos": ["I_fortalezasRecursos"],
+    "texto": "Mensajes verbales creíbles y específicos que fortalecen la expectativa de éxito sin generar presión o expectativas irreales. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Regulación de activación durante ejecución",
+    "codigo": "m_bandura_regulacion_activacion",
+    "procesos": ["RE_modulacion"],
+    "texto": "Ajuste de la activación emocional durante la ejecución para evitar bloqueo o evitación, manteniendo un nivel óptimo para el aprendizaje. Referencia: Bandura (1986)."
+  },
+
+  {
+    "nombre": "Repetición consolidada",
+    "codigo": "m_bandura_repeticion",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Repetición deliberada de la conducta aprendida para estabilizar el patrón y aumentar automatización. Referencia: Bandura (1977)."
+  },
+
+  {
+    "nombre": "Transferencia a contexto real",
+    "codigo": "m_bandura_transferencia",
+    "procesos": ["AG_generalizacion"],
+    "texto": "Aplicación de la conducta fuera del entorno de aprendizaje para consolidar su funcionalidad en la vida cotidiana. Referencia: Bandura (1986)."
+  }
+
+],
+  "ideasPrincipales": [
+  {
+    "id": "idea_bandura_1",
+    "titulo": "Gran parte del aprendizaje humano es observacional",
+    "desarrollo": "Bandura demuestra que las personas no necesitan experimentar directamente las consecuencias para aprender, sino que pueden adquirir conductas, normas y expectativas observando a otros. Este aprendizaje observacional permite una enorme eficiencia adaptativa, evitando ensayo y error directo en muchas situaciones. Referencia: Bandura (1977), Social Learning Theory."
+  },
+  {
+    "id": "idea_bandura_2",
+    "titulo": "El refuerzo vicario modula la conducta sin experiencia directa",
+    "desarrollo": "La observación de las consecuencias que reciben otros (recompensa o castigo) influye en la probabilidad de imitación, incluso sin refuerzo directo. Esto introduce una dimensión social del aprendizaje que amplía los modelos conductistas clásicos centrados únicamente en contingencias propias. Referencia: Bandura (1977)."
+  },
+  {
+    "id": "idea_bandura_3",
+    "titulo": "El aprendizaje requiere procesos cognitivos mediadores",
+    "desarrollo": "Bandura rompe con el conductismo radical al introducir procesos internos necesarios para el aprendizaje: atención (qué se observa), retención (cómo se codifica), reproducción (capacidad de ejecutar) y motivación (razones para hacerlo). Sin estos procesos, la observación no se traduce en conducta. Referencia: Bandura (1986), Social Foundations of Thought and Action."
+  },
+  {
+    "id": "idea_bandura_4",
+    "titulo": "La autoeficacia es el motor central del cambio conductual",
+    "desarrollo": "La creencia en la propia capacidad para ejecutar una conducta (autoeficacia) determina si la persona intentará, persistirá y se recuperará del fracaso. No basta con saber qué hacer: es necesario percibirse capaz de hacerlo. Referencia: Bandura (1977; 1986)."
+  },
+  {
+    "id": "idea_bandura_5",
+    "titulo": "El determinismo es recíproco, no unidireccional",
+    "desarrollo": "Bandura propone que conducta, cognición y ambiente se influyen mutuamente en un sistema dinámico (determinismo recíproco), superando tanto el determinismo ambiental del conductismo clásico como el mentalismo puro. Referencia: Bandura (1986)."
+  },
+  {
+    "id": "idea_bandura_6",
+    "titulo": "Los modelos sociales estructuran el repertorio conductual",
+    "desarrollo": "Las personas aprenden qué es posible, apropiado o eficaz observando modelos significativos (familia, cultura, medios). La ausencia de modelos funcionales o la exposición a modelos disfuncionales contribuye directamente al desarrollo de problemas psicológicos. Referencia: Bandura (1977)."
+  },
+  {
+    "id": "idea_bandura_7",
+    "titulo": "La conducta puede adquirirse sin ser ejecutada inmediatamente",
+    "desarrollo": "Bandura diferencia entre aprendizaje y ejecución: una persona puede aprender una conducta sin mostrarla hasta que existen condiciones motivacionales adecuadas, lo que explica la latencia en la aparición de conductas aprendidas. Referencia: Bandura (1977)."
+  },
+  {
+    "id": "idea_bandura_8",
+    "titulo": "El cambio terapéutico combina observación y acción",
+    "desarrollo": "La intervención eficaz no se limita al modelado pasivo, sino que integra observación, práctica guiada y experiencias de éxito progresivo que consolidan el aprendizaje y la autoeficacia. Referencia: Bandura (1986)."
+  },
+  {
+    "id": "idea_bandura_9",
+    "titulo": "La similitud del modelo aumenta la eficacia del aprendizaje",
+    "desarrollo": "Los modelos percibidos como similares (edad, contexto, dificultad) generan mayor identificación y expectativa de éxito, incrementando la probabilidad de imitación y cambio conductual. Referencia: Bandura (1977)."
+  }
+],
+  "conceptosClave": [
+  {
+    "titulo": "Aprendizaje observacional",
+    "descripcion": "Proceso mediante el cual una persona adquiere nuevas conductas, reglas o expectativas a través de la observación de modelos, sin necesidad de experiencia directa. Es el núcleo del modelo de Bandura. Referencia: Bandura (1977)."
+  },
+  {
+    "titulo": "Modelado",
+    "descripcion": "Exposición a un modelo que ejecuta una conducta, permitiendo que el observador aprenda cómo realizarla y qué consecuencias tiene. Puede ser directo, simbólico o participante. Referencia: Bandura (1977)."
+  },
+  {
+    "titulo": "Refuerzo vicario",
+    "descripcion": "Proceso por el cual la observación de las consecuencias que recibe un modelo (recompensa o castigo) modifica la probabilidad de que el observador imite la conducta. Referencia: Bandura (1977)."
+  },
+  {
+    "titulo": "Autoeficacia",
+    "descripcion": "Creencia en la propia capacidad para ejecutar conductas necesarias para alcanzar un objetivo. Es uno de los constructos centrales del modelo y predictor clave del cambio conductual. Referencia: Bandura (1977; 1986)."
+  },
+  {
+    "titulo": "Determinismo recíproco",
+    "descripcion": "Principio que establece que conducta, factores personales (cognitivos, emocionales) y ambiente interactúan de forma bidireccional y dinámica, influyéndose mutuamente. Referencia: Bandura (1986)."
+  },
+  {
+    "titulo": "Procesos mediadores del aprendizaje",
+    "descripcion": "Conjunto de mecanismos internos necesarios para que el aprendizaje observacional ocurra: atención, retención, reproducción y motivación. Referencia: Bandura (1986)."
+  },
+  {
+    "titulo": "Expectativas de resultado",
+    "descripcion": "Anticipación de las consecuencias que seguirá a una conducta, construida a partir de la observación de modelos y experiencias previas, que influye en la decisión de actuar. Referencia: Bandura (1977)."
+  },
+  {
+    "titulo": "Ensayo conductual",
+    "descripcion": "Práctica activa de la conducta aprendida mediante modelado, que permite consolidar el aprendizaje y aumentar la autoeficacia. Referencia: Bandura (1977)."
+  },
+  {
+    "titulo": "Generalización",
+    "descripcion": "Transferencia de la conducta aprendida a distintos contextos, personas o situaciones, evitando que el aprendizaje quede restringido a un único entorno. Referencia: Bandura (1986)."
+  },
+  {
+    "titulo": "Modelos significativos",
+    "descripcion": "Personas o figuras con alta relevancia para el individuo (por cercanía, prestigio o similitud) cuya conducta tiene mayor probabilidad de ser imitada. Referencia: Bandura (1977)."
+  }
+],
   "refs": [
     "Bandura, A. (1968). Social learning theory of aggression.",
     "Bandura, A. (1977). Social Learning Theory.",
