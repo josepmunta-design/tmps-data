@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "generatedAt": "2026-03-16T10:28:56.802Z",
+    "generatedAt": "2026-03-31T08:31:08.751Z",
     "sourceDir": "data/indices/isomorfismos/fuente",
     "modelsDir": "data/Core/modelos",
     "runtimeSource": "data/indices/isomorfismos/iso_lookup.json"
@@ -3633,48 +3633,48 @@
           "tecnicaId": "p_adler_estilo_vida",
           "modelId": "psicologia-individual-adler",
           "techniqueId": "p_adler_estilo_vida",
-          "modeloLabel": null,
-          "modelLabel": null,
-          "grupo": null,
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_modelo",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Análisis del estilo de vida",
+          "techniqueLabel": "Análisis del estilo de vida",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
           "nota": "Mejor equivalente que tareas de vida: permite nombrar y formular el patrón global de funcionamiento o estilo de vida que organiza el problema.",
-          "sourceFile": null
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "psicologia-individual-adler",
           "tecnicaId": "m_adler_logica_privada",
           "modelId": "psicologia-individual-adler",
           "techniqueId": "m_adler_logica_privada",
-          "modeloLabel": null,
-          "modelLabel": null,
-          "grupo": null,
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_modelo",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+          "techniqueLabel": "Identificación de lógica privada en tiempo real",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
           "nota": "Microintervención útil para identificar y nombrar la lógica privada que sostiene el patrón problemático.",
-          "sourceFile": null
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "psicologia-individual-adler",
           "tecnicaId": "m_adler_clarificar_meta",
           "modelId": "psicologia-individual-adler",
           "techniqueId": "m_adler_clarificar_meta",
-          "modeloLabel": null,
-          "modelLabel": null,
-          "grupo": null,
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_modelo",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Clarificación de meta implícita",
+          "techniqueLabel": "Clarificación de meta implícita",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
           "nota": "Aclara y nombra la meta implícita del síntoma o de la conducta, aunque no siempre formula el problema completo.",
-          "sourceFile": null
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "terapia-de-esquemas-young-1990",
@@ -3988,16 +3988,16 @@
           "tecnicaId": "m_adler_the_question",
           "modelId": "psicologia-individual-adler",
           "techniqueId": "m_adler_the_question",
-          "modeloLabel": null,
-          "modelLabel": null,
-          "grupo": null,
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_modelo",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "The question",
+          "techniqueLabel": "The question",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
           "nota": "Correspondencia directa y casi literal: pregunta qué haría la persona si el síntoma desapareciera, revelando meta vital, evitación y dirección posible.",
-          "sourceFile": null
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "terapia-centrada-soluciones-1982",
@@ -8532,6 +8532,60 @@
             "clarificacion",
             "lenguaje"
           ],
+          "modeloId": "psicologia-individual-adler",
+          "modelId": "psicologia-individual-adler",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "p_adler_estilo_vida",
+          "techniqueId": "p_adler_estilo_vida",
+          "tecnicaLabel": "Análisis del estilo de vida",
+          "techniqueLabel": "Análisis del estilo de vida",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
+          "nota": "Mejor equivalente que tareas de vida: permite nombrar y formular el patrón global de funcionamiento o estilo de vida que organiza el problema.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "isomorfismoId": "nombrar-el-problema",
+          "isomorfismoLabel": "Nombrar el problema",
+          "categoria": "Nombrado, formulación y clarificación",
+          "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+          "tags": [
+            "nombrado",
+            "etiquetado",
+            "formulacion",
+            "clarificacion",
+            "lenguaje"
+          ],
+          "modeloId": "psicologia-individual-adler",
+          "modelId": "psicologia-individual-adler",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "m_adler_logica_privada",
+          "techniqueId": "m_adler_logica_privada",
+          "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+          "techniqueLabel": "Identificación de lógica privada en tiempo real",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Microintervención útil para identificar y nombrar la lógica privada que sostiene el patrón problemático.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
+        {
+          "isomorfismoId": "nombrar-el-problema",
+          "isomorfismoLabel": "Nombrar el problema",
+          "categoria": "Nombrado, formulación y clarificación",
+          "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+          "tags": [
+            "nombrado",
+            "etiquetado",
+            "formulacion",
+            "clarificacion",
+            "lenguaje"
+          ],
           "modeloId": "terapia-de-esquemas-young-1990",
           "modelId": "terapia-de-esquemas-young-1990",
           "modeloLabel": "Terapia de esquemas",
@@ -9023,6 +9077,35 @@
         "esperanza"
       ],
       "records": [
+        {
+          "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+          "isomorfismoLabel": "Proyectar la vida sin el problema",
+          "categoria": "Proyección de futuro, motivación y dirección",
+          "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+          "tags": [
+            "futuro",
+            "contrafactico",
+            "motivacion",
+            "valores",
+            "identidad-posible",
+            "direccion",
+            "esperanza"
+          ],
+          "modeloId": "psicologia-individual-adler",
+          "modelId": "psicologia-individual-adler",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaId": "m_adler_the_question",
+          "techniqueId": "m_adler_the_question",
+          "tecnicaLabel": "The question",
+          "techniqueLabel": "The question",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
+          "nota": "Correspondencia directa y casi literal: pregunta qué haría la persona si el síntoma desapareciera, revelando meta vital, evitación y dirección posible.",
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+        },
         {
           "isomorfismoId": "proyectar-la-vida-sin-el-problema",
           "isomorfismoLabel": "Proyectar la vida sin el problema",
@@ -13308,6 +13391,60 @@
         "clarificacion",
         "lenguaje"
       ],
+      "modeloId": "psicologia-individual-adler",
+      "modelId": "psicologia-individual-adler",
+      "modeloLabel": "Psicología individual",
+      "modelLabel": "Psicología individual",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "p_adler_estilo_vida",
+      "techniqueId": "p_adler_estilo_vida",
+      "tecnicaLabel": "Análisis del estilo de vida",
+      "techniqueLabel": "Análisis del estilo de vida",
+      "tecnicaTipo": "procedimiento",
+      "techniqueType": "procedimiento",
+      "estado": "ok",
+      "nota": "Mejor equivalente que tareas de vida: permite nombrar y formular el patrón global de funcionamiento o estilo de vida que organiza el problema.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+    },
+    {
+      "isomorfismoId": "nombrar-el-problema",
+      "isomorfismoLabel": "Nombrar el problema",
+      "categoria": "Nombrado, formulación y clarificación",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
+      "modeloId": "psicologia-individual-adler",
+      "modelId": "psicologia-individual-adler",
+      "modeloLabel": "Psicología individual",
+      "modelLabel": "Psicología individual",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "m_adler_logica_privada",
+      "techniqueId": "m_adler_logica_privada",
+      "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+      "techniqueLabel": "Identificación de lógica privada en tiempo real",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Microintervención útil para identificar y nombrar la lógica privada que sostiene el patrón problemático.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
+    },
+    {
+      "isomorfismoId": "nombrar-el-problema",
+      "isomorfismoLabel": "Nombrar el problema",
+      "categoria": "Nombrado, formulación y clarificación",
+      "definicion": "Asignar una etiqueta clara, discriminable y clínicamente útil al problema, patrón, posición subjetiva o modo de funcionamiento para poder observarlo, comunicarlo y trabajarlo con mayor precisión.",
+      "tags": [
+        "nombrado",
+        "etiquetado",
+        "formulacion",
+        "clarificacion",
+        "lenguaje"
+      ],
       "modeloId": "terapia-de-esquemas-young-1990",
       "modelId": "terapia-de-esquemas-young-1990",
       "modeloLabel": "Terapia de esquemas",
@@ -13765,6 +13902,35 @@
       "estado": "ok",
       "nota": "Micro compatible con este isomorfismo: el etiquetado breve facilita descentramiento y observación.",
       "sourceFile": "data/Core/modelos/cognitivo/mbct-segal-williams-teasdale-2002.json"
+    },
+    {
+      "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+      "isomorfismoLabel": "Proyectar la vida sin el problema",
+      "categoria": "Proyección de futuro, motivación y dirección",
+      "definicion": "Imaginar contrafácticamente la vida sin el problema para revelar metas, valores, dirección vital, identidad posible o evitaciones que quedan ocultas mientras el síntoma organiza la experiencia.",
+      "tags": [
+        "futuro",
+        "contrafactico",
+        "motivacion",
+        "valores",
+        "identidad-posible",
+        "direccion",
+        "esperanza"
+      ],
+      "modeloId": "psicologia-individual-adler",
+      "modelId": "psicologia-individual-adler",
+      "modeloLabel": "Psicología individual",
+      "modelLabel": "Psicología individual",
+      "grupo": "Psicoanálisis",
+      "tecnicaId": "m_adler_the_question",
+      "techniqueId": "m_adler_the_question",
+      "tecnicaLabel": "The question",
+      "techniqueLabel": "The question",
+      "tecnicaTipo": "micro",
+      "techniqueType": "micro",
+      "estado": "ok",
+      "nota": "Correspondencia directa y casi literal: pregunta qué haría la persona si el síntoma desapareciera, revelando meta vital, evitación y dirección posible.",
+      "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
     },
     {
       "isomorfismoId": "proyectar-la-vida-sin-el-problema",
@@ -18056,48 +18222,48 @@
           "tecnicaId": "p_adler_estilo_vida",
           "modelId": "psicologia-individual-adler",
           "techniqueId": "p_adler_estilo_vida",
-          "modeloLabel": null,
-          "modelLabel": null,
-          "grupo": null,
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_modelo",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Análisis del estilo de vida",
+          "techniqueLabel": "Análisis del estilo de vida",
+          "tecnicaTipo": "procedimiento",
+          "techniqueType": "procedimiento",
+          "estado": "ok",
           "nota": "Mejor equivalente que tareas de vida: permite nombrar y formular el patrón global de funcionamiento o estilo de vida que organiza el problema.",
-          "sourceFile": null
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "psicologia-individual-adler",
           "tecnicaId": "m_adler_logica_privada",
           "modelId": "psicologia-individual-adler",
           "techniqueId": "m_adler_logica_privada",
-          "modeloLabel": null,
-          "modelLabel": null,
-          "grupo": null,
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_modelo",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+          "techniqueLabel": "Identificación de lógica privada en tiempo real",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
           "nota": "Microintervención útil para identificar y nombrar la lógica privada que sostiene el patrón problemático.",
-          "sourceFile": null
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "psicologia-individual-adler",
           "tecnicaId": "m_adler_clarificar_meta",
           "modelId": "psicologia-individual-adler",
           "techniqueId": "m_adler_clarificar_meta",
-          "modeloLabel": null,
-          "modelLabel": null,
-          "grupo": null,
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_modelo",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "Clarificación de meta implícita",
+          "techniqueLabel": "Clarificación de meta implícita",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "parcial",
           "nota": "Aclara y nombra la meta implícita del síntoma o de la conducta, aunque no siempre formula el problema completo.",
-          "sourceFile": null
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "terapia-de-esquemas-young-1990",
@@ -18411,16 +18577,16 @@
           "tecnicaId": "m_adler_the_question",
           "modelId": "psicologia-individual-adler",
           "techniqueId": "m_adler_the_question",
-          "modeloLabel": null,
-          "modelLabel": null,
-          "grupo": null,
-          "tecnicaLabel": null,
-          "techniqueLabel": null,
-          "tecnicaTipo": null,
-          "techniqueType": null,
-          "estado": "falta_modelo",
+          "modeloLabel": "Psicología individual",
+          "modelLabel": "Psicología individual",
+          "grupo": "Psicoanálisis",
+          "tecnicaLabel": "The question",
+          "techniqueLabel": "The question",
+          "tecnicaTipo": "micro",
+          "techniqueType": "micro",
+          "estado": "ok",
           "nota": "Correspondencia directa y casi literal: pregunta qué haría la persona si el síntoma desapareciera, revelando meta vital, evitación y dirección posible.",
-          "sourceFile": null
+          "sourceFile": "data/Core/modelos/psicoanalisis/psicologia-individual-adler.json"
         },
         {
           "modeloId": "terapia-centrada-soluciones-1982",
@@ -20381,6 +20547,32 @@
         "tecnicaTipo": "micro"
       }
     ],
+    "psicologia-individual-adler": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "p_adler_estilo_vida",
+        "tecnicaLabel": "Análisis del estilo de vida",
+        "tecnicaTipo": "procedimiento"
+      },
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "tecnicaId": "m_adler_logica_privada",
+        "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+        "tecnicaTipo": "micro"
+      },
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "tecnicaId": "m_adler_the_question",
+        "tecnicaLabel": "The question",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "terapia-de-esquemas-young-1990": [
       {
         "isomorfismoId": "nombrar-el-problema",
@@ -21923,6 +22115,30 @@
         "tecnicaTipo": "micro"
       }
     ],
+    "p_adler_estilo_vida": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "psicologia-individual-adler",
+        "modeloLabel": "Psicología individual",
+        "tecnicaId": "p_adler_estilo_vida",
+        "tecnicaLabel": "Análisis del estilo de vida",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "m_adler_logica_privada": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "psicologia-individual-adler",
+        "modeloLabel": "Psicología individual",
+        "tecnicaId": "m_adler_logica_privada",
+        "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "m_schema_nombrar_esquema": [
       {
         "isomorfismoId": "nombrar-el-problema",
@@ -22124,6 +22340,18 @@
         "modeloLabel": "CBT 3ª ola – MBCT",
         "tecnicaId": "m_mbct_etiquetado_breve",
         "tecnicaLabel": "Etiquetado breve de actividad mental (\"pensando\", \"planeando\", \"recordando\")",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "m_adler_the_question": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "psicologia-individual-adler",
+        "modeloLabel": "Psicología individual",
+        "tecnicaId": "m_adler_the_question",
+        "tecnicaLabel": "The question",
         "tecnicaTipo": "micro"
       }
     ],
@@ -23819,6 +24047,30 @@
         "tecnicaTipo": "micro"
       }
     ],
+    "psicologia-individual-adler::p_adler_estilo_vida": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "psicologia-individual-adler",
+        "modeloLabel": "Psicología individual",
+        "tecnicaId": "p_adler_estilo_vida",
+        "tecnicaLabel": "Análisis del estilo de vida",
+        "tecnicaTipo": "procedimiento"
+      }
+    ],
+    "psicologia-individual-adler::m_adler_logica_privada": [
+      {
+        "isomorfismoId": "nombrar-el-problema",
+        "isomorfismoLabel": "Nombrar el problema",
+        "categoria": "Nombrado, formulación y clarificación",
+        "modeloId": "psicologia-individual-adler",
+        "modeloLabel": "Psicología individual",
+        "tecnicaId": "m_adler_logica_privada",
+        "tecnicaLabel": "Identificación de lógica privada en tiempo real",
+        "tecnicaTipo": "micro"
+      }
+    ],
     "terapia-de-esquemas-young-1990::m_schema_nombrar_esquema": [
       {
         "isomorfismoId": "nombrar-el-problema",
@@ -24020,6 +24272,18 @@
         "modeloLabel": "CBT 3ª ola – MBCT",
         "tecnicaId": "m_mbct_etiquetado_breve",
         "tecnicaLabel": "Etiquetado breve de actividad mental (\"pensando\", \"planeando\", \"recordando\")",
+        "tecnicaTipo": "micro"
+      }
+    ],
+    "psicologia-individual-adler::m_adler_the_question": [
+      {
+        "isomorfismoId": "proyectar-la-vida-sin-el-problema",
+        "isomorfismoLabel": "Proyectar la vida sin el problema",
+        "categoria": "Proyección de futuro, motivación y dirección",
+        "modeloId": "psicologia-individual-adler",
+        "modeloLabel": "Psicología individual",
+        "tecnicaId": "m_adler_the_question",
+        "tecnicaLabel": "The question",
         "tecnicaTipo": "micro"
       }
     ],
@@ -24275,9 +24539,9 @@
   "stats": {
     "totalIsomorfismos": 26,
     "totalEntries": 259,
-    "totalOk": 159,
+    "totalOk": 162,
     "totalFaltaId": 28,
-    "totalFaltaModelo": 35,
+    "totalFaltaModelo": 31,
     "totalDudoso": 0,
     "totalDescartado": 0
   }
