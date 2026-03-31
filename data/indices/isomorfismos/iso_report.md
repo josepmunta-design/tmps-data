@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-03-31T08:31:08.751Z
+Generado: 2026-03-31T08:47:10.245Z
 
 ## Amplificar experiencia emergente
 
