@@ -1,6 +1,6 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-03-31T16:42:29.497Z",
+  "updatedAt": "2026-03-31T16:47:47.745Z",
   "totalModelos": 129,
   "modelos": [
     {
@@ -1687,9 +1687,37 @@
       "modelYear": 1968,
       "items": [
         {
+          "codigo": "p_bandura_modelado_participante",
+          "nombre": "Modelado participante (modelado + acción)",
+          "texto": "Procedimiento en el que el terapeuta no solo muestra la conducta, sino que acompaña activamente al paciente en su ejecución inicial, reduciendo ansiedad y facilitando el paso de la observación a la acción. Este formato es especialmente eficaz en fobias y habilidades sociales, ya que combina exposición y aprendizaje observacional. Referencia: Bandura (1977); Bandura (1986), Social Foundations of Thought and Action.",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_bandura_autoefficacia",
+          "nombre": "Entrenamiento en autoeficacia",
+          "texto": "Procedimiento dirigido a fortalecer la creencia del paciente en su capacidad para ejecutar conductas específicas, mediante experiencias de dominio progresivo, observación de modelos similares (modelado vicario), persuasión verbal realista y regulación de la activación emocional. La autoeficacia es uno de los principales predictores del cambio conductual sostenido. Referencia: Bandura (1977); Bandura (1986).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_bandura_consecuencias_vicarias",
+          "nombre": "Exposición a consecuencias vicarias",
+          "texto": "Procedimiento en el que el paciente observa las consecuencias que recibe el modelo (éxito, fracaso, refuerzo o castigo), permitiendo anticipar resultados y ajustar su conducta sin necesidad de experimentar directamente todas las contingencias. Referencia: Bandura (1977).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "m_bandura_refuerzo_vicario",
           "nombre": "Refuerzo vicario",
-          "texto": "Observacion de consecuencias positivas en el modelo que incrementa la motivacion del paciente para intentar la conducta, incluso antes de experimentarla directamente.",
+          "texto": "Incremento de la motivación al observar que el modelo recibe consecuencias positivas, facilitando la imitación incluso sin refuerzo directo. Referencia: Bandura (1977).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_bandura_regulacion_activacion",
+          "nombre": "Regulación de activación durante ejecución",
+          "texto": "Ajuste de la activación emocional durante la ejecución para evitar bloqueo o evitación, manteniendo un nivel óptimo para el aprendizaje. Referencia: Bandura (1986).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

@@ -1,6 +1,6 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-03-31T16:42:29.497Z",
+  "updatedAt": "2026-03-31T16:47:47.745Z",
   "totalModelos": 130,
   "modelos": [
     {
@@ -2295,22 +2295,36 @@
       "items": [
         {
           "codigo": "p_bandura_modelado_directo",
-          "nombre": "Modelado directo",
-          "texto": "Procedimiento en el que el terapeuta u otra figura relevante ejecuta de forma visible la conducta objetivo para que el paciente la observe. El modelado directo reduce incertidumbre, proporciona guias claras de accion y disminuye la ansiedad asociada a la novedad conductual.",
+          "nombre": "Modelado directo en vivo",
+          "texto": "Procedimiento en el que el terapeuta u otra figura relevante ejecuta de forma visible y estructurada la conducta objetivo delante del paciente, asegurando que esta sea clara, observable y desglosada en pasos comprensibles. El modelado directo reduce incertidumbre, proporciona guías concretas de acción y disminuye la evitación asociada a la novedad conductual, facilitando la transición hacia la ejecución. Referencia: Bandura (1977), Social Learning Theory.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_bandura_modelado_participante",
+          "nombre": "Modelado participante (modelado + acción)",
+          "texto": "Procedimiento en el que el terapeuta no solo muestra la conducta, sino que acompaña activamente al paciente en su ejecución inicial, reduciendo ansiedad y facilitando el paso de la observación a la acción. Este formato es especialmente eficaz en fobias y habilidades sociales, ya que combina exposición y aprendizaje observacional. Referencia: Bandura (1977); Bandura (1986), Social Foundations of Thought and Action.",
           "sub": "AG_compromisoConductual",
           "tipo": "procedimiento"
         },
         {
           "codigo": "p_bandura_ensayo",
           "nombre": "Ensayo conductual guiado",
-          "texto": "Procedimiento en el que el paciente practica activamente la conducta observada bajo supervision terapeutica. Facilita la transicion de la observacion a la ejecucion real y consolida el aprendizaje.",
+          "texto": "Procedimiento en el que el paciente practica activamente la conducta observada bajo supervisión, recibiendo feedback inmediato para ajustar su ejecución. Este ensayo permite consolidar el aprendizaje y transformar la representación mental en competencia conductual real. Referencia: Bandura (1977).",
           "sub": "AG_compromisoConductual",
           "tipo": "procedimiento"
         },
         {
-          "codigo": "m_bandura_reproduccion",
-          "nombre": "Reproduccion progresiva",
-          "texto": "Division de la conducta objetivo en pasos graduales que el paciente puede reproducir de forma progresiva, reduciendo frustracion y abandono.",
+          "codigo": "m_bandura_imitacion_aproximada",
+          "nombre": "Imitación inicial aproximada",
+          "texto": "Primer intento de reproducción de la conducta sin exigencia de perfección, favoreciendo el inicio de la acción y reduciendo la evitación por miedo al error. Referencia: Bandura (1977).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_bandura_repeticion",
+          "nombre": "Repetición consolidada",
+          "texto": "Repetición deliberada de la conducta aprendida para estabilizar el patrón y aumentar automatización. Referencia: Bandura (1977).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

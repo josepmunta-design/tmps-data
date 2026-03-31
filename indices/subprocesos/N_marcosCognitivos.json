@@ -1,6 +1,6 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-03-31T16:42:29.497Z",
+  "updatedAt": "2026-03-31T16:47:47.745Z",
   "totalModelos": 68,
   "modelos": [
     {
@@ -820,16 +820,37 @@
       "modelYear": 1968,
       "items": [
         {
+          "codigo": "p_bandura_modelado_directo",
+          "nombre": "Modelado directo en vivo",
+          "texto": "Procedimiento en el que el terapeuta u otra figura relevante ejecuta de forma visible y estructurada la conducta objetivo delante del paciente, asegurando que esta sea clara, observable y desglosada en pasos comprensibles. El modelado directo reduce incertidumbre, proporciona guías concretas de acción y disminuye la evitación asociada a la novedad conductual, facilitando la transición hacia la ejecución. Referencia: Bandura (1977), Social Learning Theory.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
           "codigo": "p_bandura_modelado_simbolico",
-          "nombre": "Modelado simbolico",
-          "texto": "Uso de videos, relatos o representaciones simbolicas donde un modelo ejecuta la conducta deseada. Permite ampliar el acceso a modelos funcionales y preparar al paciente para la accion directa.",
+          "nombre": "Modelado simbólico (observacional indirecto)",
+          "texto": "Procedimiento que utiliza representaciones simbólicas como vídeos, relatos o dramatizaciones donde un modelo realiza la conducta objetivo, permitiendo ampliar el repertorio de aprendizaje sin necesidad de exposición directa. Este tipo de modelado es especialmente útil cuando la situación real es difícil de reproducir o genera alta ansiedad inicial. Referencia: Bandura (1977), Social Learning Theory.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_bandura_seleccion_modelos",
+          "nombre": "Selección estratégica de modelos relevantes",
+          "texto": "Procedimiento que consiste en elegir modelos que resulten significativos para el paciente (similares en edad, contexto o dificultad), aumentando la probabilidad de identificación y de imitación efectiva. La similitud percibida incrementa el impacto del aprendizaje vicario. Referencia: Bandura (1977).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_bandura_consecuencias_vicarias",
+          "nombre": "Exposición a consecuencias vicarias",
+          "texto": "Procedimiento en el que el paciente observa las consecuencias que recibe el modelo (éxito, fracaso, refuerzo o castigo), permitiendo anticipar resultados y ajustar su conducta sin necesidad de experimentar directamente todas las contingencias. Referencia: Bandura (1977).",
           "sub": "N_marcosCognitivos",
           "tipo": "procedimiento"
         },
         {
           "codigo": "m_bandura_retencion",
-          "nombre": "Retencion simbolica",
-          "texto": "Ayuda al paciente a codificar mentalmente la conducta observada mediante lenguaje, imagenes o reglas simples que faciliten su recuerdo posterior.",
+          "nombre": "Codificación verbal o imaginativa",
+          "texto": "Proceso mediante el cual la conducta observada se traduce en representaciones internas (lenguaje, imágenes, reglas simples) que facilitan su almacenamiento y posterior recuperación. Referencia: Bandura (1977).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }

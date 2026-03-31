@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-03-31T16:42:29.497Z",
-  "totalModelos": 82,
+  "updatedAt": "2026-03-31T16:47:47.745Z",
+  "totalModelos": 83,
   "modelos": [
     {
       "modelId": "taoismo-psicologia-puentes-1980",
@@ -927,6 +927,29 @@
           "codigo": "m_cm_ajuste_frecuencia",
           "nombre": "Ajuste de frecuencia de pruebas",
           "texto": "Modulación de la frecuencia de verificación (más alta al inicio, más espaciada con estabilidad) para optimizar control de contingencias y costes. (Higgins et al., 2000; Petry, 2012).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelado-imitacion-bandura",
+      "modelLabel": "Modelado e imitacion",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Albert Bandura",
+      "modelYear": 1968,
+      "items": [
+        {
+          "codigo": "p_bandura_descomposicion_habilidades",
+          "nombre": "Descomposición de habilidades complejas",
+          "texto": "Procedimiento mediante el cual una conducta compleja se divide en pasos simples y secuenciales que pueden ser observados, retenidos y reproducidos progresivamente, reduciendo sobrecarga cognitiva y facilitando el aprendizaje gradual. Referencia: Bandura (1986).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_bandura_segmentacion",
+          "nombre": "Segmentación de la conducta en pasos",
+          "texto": "División de la conducta en unidades manejables que el paciente puede reproducir progresivamente, reduciendo la complejidad y aumentando la probabilidad de éxito inicial. Referencia: Bandura (1986).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
