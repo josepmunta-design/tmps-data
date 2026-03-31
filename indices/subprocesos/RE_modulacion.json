@@ -1,6 +1,6 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-03-27T08:54:47.424Z",
+  "updatedAt": "2026-03-31T08:21:14.356Z",
   "totalModelos": 128,
   "modelos": [
     {
@@ -2349,9 +2349,16 @@
         {
           "codigo": "p_logo_intencion_paradojica",
           "nombre": "Intención paradójica",
-          "texto": "Procedimiento dirigido a reducir ansiedad anticipatoria invitando al paciente a exagerar voluntariamente el síntoma temido. Rompe el círculo de miedo–hipercontrol y devuelve sensación de libertad interior.",
+          "texto": "Procedimiento específico indicado sobre todo en ansiedad anticipatoria, fobias de ejecución, insomnio psicógeno, hipercontrol y ciertos círculos viciosos obsesivos, en el que se invita al paciente a desear o exagerar voluntariamente aquello mismo que teme. La finalidad no es el absurdo por el absurdo, sino romper el circuito de miedo al síntoma, autoobservación vigilante y esfuerzo de control que precisamente lo intensifica; al introducir humor, distancia y voluntad paradójica, el síntoma pierde su estatuto de amenaza absoluta y se debilita la tiranía de la anticipación ansiosa. Referencia: Frankl, V. E. (1967). *Psychotherapy and Existentialism*; Frankl, V. E. (1969). *The Will to Meaning*.",
           "sub": "RE_modulacion",
           "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_logo_exagerar_voluntariamente_temor",
+          "nombre": "Invitar a exagerar voluntariamente el temor",
+          "texto": "Microintervención derivada de la intención paradójica en la que el terapeuta invita al paciente, en el momento clínicamente oportuno, a desear humorísticamente aquello que teme que ocurra, debilitando la ansiedad anticipatoria y el intento compulsivo de control que mantiene el círculo vicioso. Referencia: Frankl, V. E. (1967). *Psychotherapy and Existentialism*.",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -2758,7 +2765,7 @@
       ]
     },
     {
-      "modelId": "neurobiologia-interpersonal-siegel",
+      "modelId": "neurobiologia-interpersonal-siegel-1999",
       "modelLabel": "Neurobiología Interpersonal (IPNB)",
       "modelGrupo": "Integrativo",
       "modelAutores": "Daniel J. Siegel",
