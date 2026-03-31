@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_coregulacion",
-  "updatedAt": "2026-03-31T08:42:01.272Z",
-  "totalModelos": 30,
+  "updatedAt": "2026-03-31T09:17:17.856Z",
+  "totalModelos": 31,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -684,6 +684,29 @@
           "codigo": "m_reconciliacion_rotulacion_colectiva",
           "nombre": "Nombrar emociones colectivas",
           "texto": "Microintervención consistente en ayudar al grupo a identificar y diferenciar emociones compartidas como rabia, miedo, tristeza o desconfianza, evitando etiquetas globales (“estamos mal”) y promoviendo claridad emocional colectiva. Nombrar reduce activación difusa y facilita procesamiento posterior. Referencia: Herman (1992).",
+          "sub": "R_coregulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoterapia-trauma-colectivo-reconciliacion-2000",
+      "modelLabel": "Psicoterapia del trauma colectivo y reconciliación",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Judith Herman; Ervin Staub; Jean Decety; Ananda Breed; Brandon Hamber; Phil Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_traumaColectivo_estabilizacionColectiva",
+          "nombre": "Creación de espacios seguros de estabilización colectiva",
+          "texto": "Procedimiento inicial orientado a establecer condiciones mínimas de seguridad física, emocional y relacional antes de cualquier trabajo de evocación traumática, mediante normas explícitas, estructura del grupo, contención emocional y recursos de regulación colectiva, evitando retraumatización y permitiendo que el sistema comunitario entre en una ventana de tolerancia suficiente para el procesamiento posterior. Referencias: Herman (1992); Staub (2006).",
+          "sub": "R_coregulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_traumaColectivo_interrupcionEscalada",
+          "nombre": "Interrupción de escalada emocional grupal",
+          "texto": "Microintervención destinada a detener dinámicas de activación creciente en el grupo mediante pausas, cambio de foco o regulación compartida, evitando contagio emocional y manteniendo el proceso dentro de la ventana de tolerancia. Referencias: Staub (2006); van der Kolk (2014).",
           "sub": "R_coregulacion",
           "tipo": "micro"
         }
