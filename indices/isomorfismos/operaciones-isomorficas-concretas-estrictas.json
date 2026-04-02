@@ -1,7 +1,7 @@
 {
   "fuente": "modelos-unidos iso.txt",
-  "fecha_revision": "2026-04-02",
-  "criterio_revision": "Revisión con criterio estricto de isomorfismo: misma operación clínica con distinto nombre. No se fusionan operaciones meramente similares. Cada isomorfismo requiere un mínimo de dos técnicas.",
+  "fecha_revision": "2026-04-02T20:30:11Z",
+  "criterio_revision": "Pasada de auditoría focalizada sobre familias fragmentadas. Se han corregido equivalencias de operación concreta de alta confianza sin reducir cobertura.",
   "reglas": [
     "Un isomorfismo solo se conserva si al menos dos técnicas realizan la misma acción clínica.",
     "Se separan operaciones similares cuando la maniobra clínica no es exactamente la misma.",
@@ -10,18 +10,77 @@
   ],
   "total_modelos_parseados": 187,
   "total_tecnicas_representadas": 3935,
-  "total_operaciones": 3668,
-  "total_isomorfismos": 177,
-  "total_operaciones_especificas": 3491,
+  "total_operaciones": 3652,
+  "total_isomorfismos": 183,
+  "total_operaciones_especificas": 3469,
   "tecnicas_con_cobertura": 3935,
   "tecnicas_sin_cobertura": 0,
   "grupos": [
     {
       "categoria": "Cognición, significado y metacognición",
-      "total_operaciones": 256,
+      "total_operaciones": 252,
       "total_isomorfismos": 12,
       "total_operaciones_especificas": 244,
       "operaciones": [
+        {
+          "id": "chequear-evidencia-de-una-hipotesis",
+          "label": "Chequear evidencia de una hipótesis",
+          "tipoOperacion": "isomorfismo",
+          "categoria": "Cognición, significado y metacognición",
+          "definicion": "Pedir que se contraste una atribución, creencia o lectura del episodio con datos observables a favor o en contra.",
+          "criterioEquivalencia": "Se agrupan solo maniobras cuya acción clínica inmediata es revisar evidencia de una hipótesis. Se excluyen procedimientos amplios de reestructuración cognitiva.",
+          "links": [
+            {
+              "modeloId": "terapia-cognitiva-beck-depresion-1967",
+              "tecnicaId": "m_beck_evidencia",
+              "tipo": "micro",
+              "nombre": "Búsqueda de evidencia a favor y en contra",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-cognitiva-para-psicosis-cbtp-1994",
+              "tecnicaId": "m_cbtp_evidencia",
+              "tipo": "micro",
+              "nombre": "Exploración de evidencia a favor y en contra",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "psicodinamica-ciclica-wachtel",
+              "tecnicaId": "m_wachtel_evidenciaReciente",
+              "tipo": "micro",
+              "nombre": "Pregunta de evidencia reciente",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "neopsicoanalisis",
+              "tecnicaId": "m_neopsy_evidencia_vs_atribucion",
+              "tipo": "micro",
+              "nombre": "Verificar evidencia vs atribución (distorsión paratáxica)",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-metacognitiva-interpersonal-mit",
+              "tecnicaId": "m_mit_evidencia_mentalista",
+              "tipo": "micro",
+              "nombre": "Chequeo de evidencia mentalista",
+              "funcion": "nucleo",
+              "estado": "ok"
+            }
+          ],
+          "equivalencias": 5,
+          "modelos_distintos": 5,
+          "nombres_equivalentes": [
+            "Búsqueda de evidencia a favor y en contra",
+            "Chequeo de evidencia mentalista",
+            "Exploración de evidencia a favor y en contra",
+            "Pregunta de evidencia reciente",
+            "Verificar evidencia vs atribución (distorsión paratáxica)"
+          ]
+        },
         {
           "id": "bloqueo-de-evitacion",
           "label": "Bloqueo de evitación",
@@ -60,6 +119,47 @@
               "funcion": "auxiliar",
               "estado": "ok"
             }
+          ]
+        },
+        {
+          "id": "generar-una-explicacion-alternativa",
+          "label": "Generar una explicación alternativa",
+          "tipoOperacion": "isomorfismo",
+          "categoria": "Cognición, significado y metacognición",
+          "definicion": "Producir una lectura alternativa plausible del hecho, la experiencia o la situación problemática.",
+          "criterioEquivalencia": "Se agrupan solo técnicas que piden formular una explicación/interpretación/pensamiento alternativo. Se excluyen reautorías narrativas amplias y reencuadres generales.",
+          "links": [
+            {
+              "modeloId": "terapia-cognitiva-beck-depresion-1967",
+              "tecnicaId": "m_beck_alternativo",
+              "tipo": "micro",
+              "nombre": "Generación de pensamiento alternativo",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-cognitiva-para-psicosis-cbtp-1994",
+              "tecnicaId": "m_cbtp_alternativas",
+              "tipo": "micro",
+              "nombre": "Búsqueda de explicaciones alternativas",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "unified-protocol-up-barlow-2011",
+              "tecnicaId": "m_up_interpretacion_alternativa",
+              "tipo": "micro",
+              "nombre": "Generación rápida de interpretación alternativa plausible",
+              "funcion": "nucleo",
+              "estado": "ok"
+            }
+          ],
+          "equivalencias": 3,
+          "modelos_distintos": 3,
+          "nombres_equivalentes": [
+            "Búsqueda de explicaciones alternativas",
+            "Generación de pensamiento alternativo",
+            "Generación rápida de interpretación alternativa plausible"
           ]
         },
         {
@@ -901,29 +1001,6 @@
               "tecnicaId": "m_nei_ambivalencia_sentido",
               "tipo": "micro",
               "nombre": "Autorizar significados ambivalentes",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "busqueda-de-evidencia-a-favor-y-en-contra-terapia-cognitiva-beck-depresion-1967-m-beck-evi",
-          "label": "Búsqueda de evidencia a favor y en contra",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Cognición, significado y metacognición",
-          "definicion": "Operación específica representada por una sola técnica del repo: búsqueda de evidencia a favor y en contra.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Búsqueda de evidencia a favor y en contra"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-cognitiva-beck-depresion-1967",
-              "tecnicaId": "m_beck_evidencia",
-              "tipo": "micro",
-              "nombre": "Búsqueda de evidencia a favor y en contra",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -2057,29 +2134,6 @@
           ]
         },
         {
-          "id": "exploracion-de-evidencia-a-favor-y-en-contra-terapia-cognitiva-para-psicosis-cbtp-1994-m-c",
-          "label": "Exploración de evidencia a favor y en contra",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Cognición, significado y metacognición",
-          "definicion": "Operación específica representada por una sola técnica del repo: exploración de evidencia a favor y en contra.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Exploración de evidencia a favor y en contra"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-cognitiva-para-psicosis-cbtp-1994",
-              "tecnicaId": "m_cbtp_evidencia",
-              "tipo": "micro",
-              "nombre": "Exploración de evidencia a favor y en contra",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "exploracion-de-futuros-posibles-como-construcciones-narrativas-construccionismo-social-ger",
           "label": "Exploración de futuros posibles como construcciones narrativas",
           "tipoOperacion": "operacion_especifica",
@@ -2442,52 +2496,6 @@
               "tecnicaId": "p_gergen_genealogia_significado",
               "tipo": "procedimiento",
               "nombre": "Genealogía del significado: rastreo cultural-histórico de las categorías del problema",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "generacion-de-pensamiento-alternativo-terapia-cognitiva-beck-depresion-1967-m-beck-alterna",
-          "label": "Generación de pensamiento alternativo",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Cognición, significado y metacognición",
-          "definicion": "Operación específica representada por una sola técnica del repo: generación de pensamiento alternativo.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Generación de pensamiento alternativo"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-cognitiva-beck-depresion-1967",
-              "tecnicaId": "m_beck_alternativo",
-              "tipo": "micro",
-              "nombre": "Generación de pensamiento alternativo",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "generacion-rapida-de-interpretacion-alternativa-plausible-unified-protocol-up-barlow-2011-",
-          "label": "Generación rápida de interpretación alternativa plausible",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Cognición, significado y metacognición",
-          "definicion": "Operación específica representada por una sola técnica del repo: generación rápida de interpretación alternativa plausible.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Generación rápida de interpretación alternativa plausible"
-          ],
-          "links": [
-            {
-              "modeloId": "unified-protocol-up-barlow-2011",
-              "tecnicaId": "m_up_interpretacion_alternativa",
-              "tipo": "micro",
-              "nombre": "Generación rápida de interpretación alternativa plausible",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -3914,29 +3922,6 @@
               "tecnicaId": "m_goncalves_diferenciacion_narrativa",
               "tipo": "micro",
               "nombre": "Pregunta de diferenciación narrativa",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "pregunta-de-evidencia-reciente-psicodinamica-ciclica-wachtel-m-wachtel-evidenciareciente",
-          "label": "Pregunta de evidencia reciente",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Cognición, significado y metacognición",
-          "definicion": "Operación específica representada por una sola técnica del repo: pregunta de evidencia reciente.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Pregunta de evidencia reciente"
-          ],
-          "links": [
-            {
-              "modeloId": "psicodinamica-ciclica-wachtel",
-              "tecnicaId": "m_wachtel_evidenciaReciente",
-              "tipo": "micro",
-              "nombre": "Pregunta de evidencia reciente",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -5944,29 +5929,6 @@
           ]
         },
         {
-          "id": "verificar-evidencia-vs-atribucion-neopsicoanalisis-m-neopsy-evidencia-vs-atribucion",
-          "label": "Verificar evidencia vs atribución (distorsión paratáxica)",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Cognición, significado y metacognición",
-          "definicion": "Operación específica representada por una sola técnica del repo: verificar evidencia vs atribución (distorsión paratáxica).",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Verificar evidencia vs atribución (distorsión paratáxica)"
-          ],
-          "links": [
-            {
-              "modeloId": "neopsicoanalisis",
-              "tecnicaId": "m_neopsy_evidencia_vs_atribucion",
-              "tipo": "micro",
-              "nombre": "Verificar evidencia vs atribución (distorsión paratáxica)",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "vincular-emocion-con-significado-neurobiologia-interpersonal-siegel-1999-m-ipnb-emocion-si",
           "label": "Vincular emoción con significado",
           "tipoOperacion": "operacion_especifica",
@@ -6035,7 +5997,8 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 272
     },
     {
       "categoria": "Conducta, aprendizaje y habilidades",
@@ -10735,11 +10698,12 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 212
     },
     {
       "categoria": "Contexto, recursos y sistema",
-      "total_operaciones": 89,
+      "total_operaciones": 88,
       "total_isomorfismos": 2,
       "total_operaciones_especificas": 87,
       "operaciones": [
@@ -11400,29 +11364,6 @@
               "tecnicaId": "p_ppt_formulacion_transcultural",
               "tipo": "procedimiento",
               "nombre": "Formulación transcultural del conflicto",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "formular-prediccion-conductual-terapia-cognitivo-conductual-estandar-1980-m-tccstd-predicc",
-          "label": "Formular predicción conductual",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Contexto, recursos y sistema",
-          "definicion": "Operación específica representada por una sola técnica del repo: formular predicción conductual.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Formular predicción conductual"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-cognitivo-conductual-estandar-1980",
-              "tecnicaId": "m_tccstd_prediccion",
-              "tipo": "micro",
-              "nombre": "Formular predicción conductual",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -12808,7 +12749,8 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 90
     },
     {
       "categoria": "Emoción y regulación",
@@ -19040,7 +18982,8 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 278
     },
     {
       "categoria": "Experiencia corporal y somática",
@@ -21517,14 +21460,56 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 116
     },
     {
       "categoria": "Exposición y cambio experiencial",
-      "total_operaciones": 125,
+      "total_operaciones": 126,
       "total_isomorfismos": 8,
       "total_operaciones_especificas": 117,
       "operaciones": [
+        {
+          "id": "comprobar-prediccion-y-revisar-discrepancia",
+          "label": "Comprobar predicción y revisar discrepancia",
+          "tipoOperacion": "isomorfismo",
+          "categoria": "Exposición y cambio experiencial",
+          "definicion": "Poner a prueba una predicción temida y revisar después la discrepancia entre lo anticipado y lo ocurrido.",
+          "criterioEquivalencia": "Se agrupan solo técnicas que combinan prueba de predicción con revisión posterior del resultado. Se excluye la mera formulación de expectativa.",
+          "links": [
+            {
+              "modeloId": "terapia-cognitiva-beck-depresion-1967",
+              "tecnicaId": "m_beck_prediccion",
+              "tipo": "micro",
+              "nombre": "Predicción y comprobación conductual",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "exposicion-en-vivo-marks-1975",
+              "tecnicaId": "m_exposicionVivo_marks_testPrediccion",
+              "tipo": "micro",
+              "nombre": "Comprobación conductual de predicción catastrófica",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "cbt-inhibicion-miedo-craske-2014",
+              "tecnicaId": "m_craske_discrepancia_post",
+              "tipo": "micro",
+              "nombre": "Chequeo post-exposición de discrepancia",
+              "funcion": "auxiliar",
+              "estado": "ok"
+            }
+          ],
+          "equivalencias": 3,
+          "modelos_distintos": 3,
+          "nombres_equivalentes": [
+            "Chequeo post-exposición de discrepancia",
+            "Comprobación conductual de predicción catastrófica",
+            "Predicción y comprobación conductual"
+          ]
+        },
         {
           "id": "eliminacion-de-conductas-de-seguridad",
           "label": "Eliminación de conductas de seguridad",
@@ -21787,6 +21772,38 @@
               "funcion": "nucleo",
               "estado": "ok"
             }
+          ]
+        },
+        {
+          "id": "formular-prediccion-amenazante-explicita",
+          "label": "Formular predicción amenazante explícita",
+          "tipoOperacion": "isomorfismo",
+          "categoria": "Exposición y cambio experiencial",
+          "definicion": "Hacer explícita la predicción o expectativa de daño antes de la prueba clínica o conductual.",
+          "criterioEquivalencia": "Se agrupan solo maniobras cuya función central es formular de forma explícita qué se teme que ocurra. Se excluye la comprobación posterior.",
+          "links": [
+            {
+              "modeloId": "terapia-cognitivo-conductual-estandar-1980",
+              "tecnicaId": "m_tccstd_prediccion",
+              "tipo": "micro",
+              "nombre": "Formular predicción conductual",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "cbt-inhibicion-miedo-craske-2014",
+              "tecnicaId": "m_craske_expectativa_explicita",
+              "tipo": "micro",
+              "nombre": "Formulación explícita de expectativa de amenaza",
+              "funcion": "nucleo",
+              "estado": "ok"
+            }
+          ],
+          "equivalencias": 2,
+          "modelos_distintos": 2,
+          "nombres_equivalentes": [
+            "Formulación explícita de expectativa de amenaza",
+            "Formular predicción conductual"
           ]
         },
         {
@@ -23239,29 +23256,6 @@
           ]
         },
         {
-          "id": "formulacion-explicita-de-expectativa-de-amenaza-cbt-inhibicion-miedo-craske-2014-m-craske-",
-          "label": "Formulación explícita de expectativa de amenaza",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Exposición y cambio experiencial",
-          "definicion": "Operación específica representada por una sola técnica del repo: formulación explícita de expectativa de amenaza.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Formulación explícita de expectativa de amenaza"
-          ],
-          "links": [
-            {
-              "modeloId": "cbt-inhibicion-miedo-craske-2014",
-              "tecnicaId": "m_craske_expectativa_explicita",
-              "tipo": "micro",
-              "nombre": "Formulación explícita de expectativa de amenaza",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "gestion-de-crisis-y-plan-de-seguridad-multisystemic-therapy-mst-p-mst-crisis-seguridad",
           "label": "Gestión de crisis y plan de seguridad",
           "tipoOperacion": "operacion_especifica",
@@ -24480,7 +24474,8 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 138
     },
     {
       "categoria": "Formulación y análisis del problema",
@@ -24488,6 +24483,74 @@
       "total_isomorfismos": 10,
       "total_operaciones_especificas": 110,
       "operaciones": [
+        {
+          "id": "explorar-excepciones-al-problema",
+          "label": "Explorar excepciones al problema",
+          "tipoOperacion": "isomorfismo",
+          "categoria": "Formulación y análisis del problema",
+          "definicion": "Buscar momentos, contextos o condiciones en los que el problema no dominó o lo hizo menos de lo habitual.",
+          "criterioEquivalencia": "Se agrupan solo técnicas centradas en localizar excepciones al patrón problemático. Se excluyen la amplificación posterior de la excepción y sus variantes comunitarias o de seguridad.",
+          "links": [
+            {
+              "modeloId": "terapia-centrada-soluciones-1982",
+              "tecnicaId": "p_sfbt_exploracion_excepciones",
+              "tipo": "procedimiento",
+              "nombre": "Exploración de excepciones",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-narrativa-white-epston",
+              "tecnicaId": "p_nar_excepciones_problema",
+              "tipo": "procedimiento",
+              "nombre": "Exploración de excepciones al problema",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "k1kelly55",
+              "tecnicaId": "m_kelly_excepciones",
+              "tipo": "micro",
+              "nombre": "Explorar excepciones",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-breve-mri-1974",
+              "tecnicaId": "m_mri_excepcion",
+              "tipo": "micro",
+              "nombre": "Pregunta de excepción",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "s20linares",
+              "tecnicaId": "m_linares_excepciones",
+              "tipo": "micro",
+              "nombre": "Detectar excepción funcional",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "polaridades-semanticas",
+              "tecnicaId": "m_ugazio_excepciones",
+              "tipo": "micro",
+              "nombre": "Introducir excepciones semánticas",
+              "funcion": "nucleo",
+              "estado": "parcial"
+            }
+          ],
+          "equivalencias": 6,
+          "modelos_distintos": 6,
+          "nombres_equivalentes": [
+            "Detectar excepción funcional",
+            "Exploración de excepciones",
+            "Exploración de excepciones al problema",
+            "Explorar excepciones",
+            "Introducir excepciones semánticas",
+            "Pregunta de excepción"
+          ]
+        },
         {
           "id": "resolucion-de-problemas",
           "label": "Resolución de problemas",
@@ -24675,6 +24738,38 @@
               "funcion": "nucleo",
               "estado": "ok"
             }
+          ]
+        },
+        {
+          "id": "amplificar-una-excepcion",
+          "label": "Amplificar una excepción",
+          "tipoOperacion": "isomorfismo",
+          "categoria": "Formulación y análisis del problema",
+          "definicion": "Tomar una excepción ya encontrada y desarrollarla para aumentar su peso clínico, su densidad o su utilidad.",
+          "criterioEquivalencia": "Se agrupan solo maniobras cuyo foco inmediato es ampliar una excepción ya identificada. Se excluye la mera búsqueda inicial de excepciones.",
+          "links": [
+            {
+              "modeloId": "construccionismo-social-gergen-1985",
+              "tecnicaId": "m_gergen_amplificacion_excepcion",
+              "tipo": "micro",
+              "nombre": "Amplificación de excepción relacional",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-centrada-soluciones-1982",
+              "tecnicaId": "p_sfbt_amplificacion_tareas",
+              "tipo": "procedimiento",
+              "nombre": "Amplificación de recursos y excepciones (tareas entre sesiones)",
+              "funcion": "nucleo",
+              "estado": "ok"
+            }
+          ],
+          "equivalencias": 2,
+          "modelos_distintos": 2,
+          "nombres_equivalentes": [
+            "Amplificación de excepción relacional",
+            "Amplificación de recursos y excepciones (tareas entre sesiones)"
           ]
         },
         {
@@ -25882,29 +25977,6 @@
           ]
         },
         {
-          "id": "exploracion-de-excepciones-al-problema-terapia-narrativa-white-epston-p-nar-excepciones-pr",
-          "label": "Exploración de excepciones al problema",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Formulación y análisis del problema",
-          "definicion": "Operación específica representada por una sola técnica del repo: exploración de excepciones al problema.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Exploración de excepciones al problema"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-narrativa-white-epston",
-              "tecnicaId": "p_nar_excepciones_problema",
-              "tipo": "procedimiento",
-              "nombre": "Exploración de excepciones al problema",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "facilitacion-secuencial-flexible-k-rando-r-processes-p-rando-facilitacion",
           "label": "Facilitación secuencial flexible",
           "tipoOperacion": "operacion_especifica",
@@ -26566,29 +26638,6 @@
               "tecnicaId": "m_mri_preguntaSecuencia",
               "tipo": "micro",
               "nombre": "Preguntas de secuencia concreta",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "prescripcion-del-sintoma-escuela-palo-alto-mri-1959-p-mri-prescripcionsintoma",
-          "label": "Prescripción del síntoma (ritualización / programación / intensificación)",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Formulación y análisis del problema",
-          "definicion": "Operación específica representada por una sola técnica del repo: prescripción del síntoma (ritualización / programación / intensificación).",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Prescripción del síntoma (ritualización / programación / intensificación)"
-          ],
-          "links": [
-            {
-              "modeloId": "escuela-palo-alto-mri-1959",
-              "tecnicaId": "p_mri_prescripcionSintoma",
-              "tipo": "procedimiento",
-              "nombre": "Prescripción del síntoma (ritualización / programación / intensificación)",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -27399,7 +27448,8 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 143
     },
     {
       "categoria": "Identidad, self y partes",
@@ -30335,11 +30385,12 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 134
     },
     {
       "categoria": "Interpersonal, relacional y sistema",
-      "total_operaciones": 293,
+      "total_operaciones": 291,
       "total_isomorfismos": 13,
       "total_operaciones_especificas": 280,
       "operaciones": [
@@ -30857,29 +30908,6 @@
           ]
         },
         {
-          "id": "amplificacion-de-excepcion-relacional-construccionismo-social-gergen-1985-m-gergen-amplifi",
-          "label": "Amplificación de excepción relacional",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Interpersonal, relacional y sistema",
-          "definicion": "Operación específica representada por una sola técnica del repo: amplificación de excepción relacional.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Amplificación de excepción relacional"
-          ],
-          "links": [
-            {
-              "modeloId": "construccionismo-social-gergen-1985",
-              "tecnicaId": "m_gergen_amplificacion_excepcion",
-              "tipo": "micro",
-              "nombre": "Amplificación de excepción relacional",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "analisis-de-comunicacion-interpersonal-ipt-klerman-weissman-1984-p-ipt-analisis-comunicaci",
           "label": "Análisis de comunicación interpersonal",
           "tipoOperacion": "operacion_especifica",
@@ -31311,29 +31339,6 @@
               "tecnicaId": "m_mit_chequeo_estados_propios",
               "tipo": "micro",
               "nombre": "Chequeo de estados mentales propios",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "chequeo-de-evidencia-mentalista-terapia-metacognitiva-interpersonal-mit-m-mit-evidencia-me",
-          "label": "Chequeo de evidencia mentalista",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Interpersonal, relacional y sistema",
-          "definicion": "Operación específica representada por una sola técnica del repo: chequeo de evidencia mentalista.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Chequeo de evidencia mentalista"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-metacognitiva-interpersonal-mit",
-              "tecnicaId": "m_mit_evidencia_mentalista",
-              "tipo": "micro",
-              "nombre": "Chequeo de evidencia mentalista",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -37250,11 +37255,12 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 310
     },
     {
       "categoria": "Motivación, valores y decisión",
-      "total_operaciones": 120,
+      "total_operaciones": 118,
       "total_isomorfismos": 5,
       "total_operaciones_especificas": 115,
       "operaciones": [
@@ -37528,29 +37534,6 @@
           ]
         },
         {
-          "id": "amplificacion-de-recursos-y-excepciones-terapia-centrada-soluciones-1982-p-sfbt-amplificac",
-          "label": "Amplificación de recursos y excepciones (tareas entre sesiones)",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Motivación, valores y decisión",
-          "definicion": "Operación específica representada por una sola técnica del repo: amplificación de recursos y excepciones (tareas entre sesiones).",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Amplificación de recursos y excepciones (tareas entre sesiones)"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-centrada-soluciones-1982",
-              "tecnicaId": "p_sfbt_amplificacion_tareas",
-              "tipo": "procedimiento",
-              "nombre": "Amplificación de recursos y excepciones (tareas entre sesiones)",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "anclaje-del-simbolo-en-decision-concreta-psicologia-analitica-jung-1913-m-jung-anclaje-dec",
           "label": "Anclaje del símbolo en decisión concreta",
           "tipoOperacion": "operacion_especifica",
@@ -37706,29 +37689,6 @@
               "tecnicaId": "m_rt_compromiso",
               "tipo": "micro",
               "nombre": "Chequeo de compromiso",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "chequeo-post-exposicion-de-discrepancia-cbt-inhibicion-miedo-craske-2014-m-craske-discrepa",
-          "label": "Chequeo post-exposición de discrepancia",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Motivación, valores y decisión",
-          "definicion": "Operación específica representada por una sola técnica del repo: chequeo post-exposición de discrepancia.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Chequeo post-exposición de discrepancia"
-          ],
-          "links": [
-            {
-              "modeloId": "cbt-inhibicion-miedo-craske-2014",
-              "tecnicaId": "m_craske_discrepancia_post",
-              "tipo": "micro",
-              "nombre": "Chequeo post-exposición de discrepancia",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -40080,11 +40040,12 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 125
     },
     {
       "categoria": "Operaciones específicas",
-      "total_operaciones": 1669,
+      "total_operaciones": 1662,
       "total_isomorfismos": 67,
       "total_operaciones_especificas": 1602,
       "operaciones": [
@@ -40627,52 +40588,53 @@
           ]
         },
         {
-          "id": "intervenciones-paradojicas",
-          "label": "Intervenciones paradójicas",
+          "id": "intencion-paradojica",
+          "label": "Intención paradójica",
           "tipoOperacion": "isomorfismo",
           "categoria": "Operaciones específicas",
-          "definicion": "Operación clínica concreta equivalente identificada a partir de la acción compartida: intervenciones paradójicas.",
-          "criterioEquivalencia": "Se agrupan solo técnicas que realizan sustancialmente la misma acción clínica con nombres distintos o variantes muy próximas.",
-          "equivalencias": 4,
-          "modelos_distintos": 4,
-          "nombres_equivalentes": [
-            "Intervenciones paradójicas",
-            "Intervenciones paradójicas y contra-paradójicas (Paradox / Counterparadox)",
-            "Intervenciones paradójicas y estratégicas"
-          ],
+          "definicion": "Invitar a buscar, querer o intensificar voluntariamente el síntoma temido o el acto problemático para desactivar la ansiedad anticipatoria y romper el control defensivo.",
+          "criterioEquivalencia": "Se agrupan solo técnicas cuya acción clínica central consiste en pedir deliberadamente el síntoma o su intensificación voluntaria. Se excluyen otras paradojas más amplias o la restricción del cambio.",
           "links": [
             {
-              "modeloId": "hipnosis-ericksoniana-1958",
-              "tecnicaId": "p_erickson_paradoja",
+              "modeloId": "logoterapia-1940",
+              "tecnicaId": "p_logo_intencion_paradojica",
               "tipo": "procedimiento",
-              "nombre": "Intervenciones paradójicas",
+              "nombre": "Intención paradójica",
               "funcion": "nucleo",
               "estado": "ok"
             },
             {
-              "modeloId": "terapia-estrategica-1967",
-              "tecnicaId": "p_strat_paradoja",
+              "modeloId": "cbti-insomnio-cronico",
+              "tecnicaId": "p_cbti_paradoxicalIntention",
               "tipo": "procedimiento",
-              "nombre": "Intervenciones paradójicas",
+              "nombre": "Paradoxical intention (reducir ansiedad de rendimiento)",
               "funcion": "nucleo",
               "estado": "ok"
             },
             {
-              "modeloId": "terapia-individual-sistemica-canevaro-2012",
-              "tecnicaId": "p_canevaro_paradojicas",
-              "tipo": "procedimiento",
-              "nombre": "Intervenciones paradójicas y estratégicas",
+              "modeloId": "cbti-insomnio-cronico",
+              "tecnicaId": "m_cbti_PI",
+              "tipo": "micro",
+              "nombre": "Paradoxical intention (si hay esfuerzo por dormir)",
               "funcion": "auxiliar",
               "estado": "ok"
             },
             {
-              "modeloId": "terapia-familiar-sistemica-milan-1975",
-              "tecnicaId": "p_milan_paradoja_contraparadoja",
+              "modeloId": "escuela-palo-alto-mri-1959",
+              "tecnicaId": "p_mri_prescripcionSintoma",
               "tipo": "procedimiento",
-              "nombre": "Intervenciones paradójicas y contra-paradójicas (Paradox / Counterparadox)",
-              "funcion": "auxiliar",
-              "estado": "ok"
+              "nombre": "Prescripción del síntoma (ritualización / programación / intensificación)",
+              "funcion": "nucleo",
+              "estado": "parcial"
             }
+          ],
+          "equivalencias": 4,
+          "modelos_distintos": 3,
+          "nombres_equivalentes": [
+            "Intención paradójica",
+            "Paradoxical intention (reducir ansiedad de rendimiento)",
+            "Paradoxical intention (si hay esfuerzo por dormir)",
+            "Prescripción del síntoma (ritualización / programación / intensificación)"
           ]
         },
         {
@@ -42317,38 +42279,6 @@
           ]
         },
         {
-          "id": "paradoxical-intention",
-          "label": "Paradoxical intention (si hay esfuerzo por dormir)",
-          "tipoOperacion": "isomorfismo",
-          "categoria": "Operaciones específicas",
-          "definicion": "Operación clínica concreta equivalente identificada a partir de la acción compartida: paradoxical intention (si hay esfuerzo por dormir).",
-          "criterioEquivalencia": "Se agrupan solo técnicas que realizan sustancialmente la misma acción clínica con nombres distintos o variantes muy próximas.",
-          "equivalencias": 2,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Paradoxical intention (reducir ansiedad de rendimiento)",
-            "Paradoxical intention (si hay esfuerzo por dormir)"
-          ],
-          "links": [
-            {
-              "modeloId": "cbti-insomnio-cronico",
-              "tecnicaId": "p_cbti_paradoxicalIntention",
-              "tipo": "procedimiento",
-              "nombre": "Paradoxical intention (reducir ansiedad de rendimiento)",
-              "funcion": "nucleo",
-              "estado": "ok"
-            },
-            {
-              "modeloId": "cbti-insomnio-cronico",
-              "tecnicaId": "m_cbti_PI",
-              "tipo": "micro",
-              "nombre": "Paradoxical intention (si hay esfuerzo por dormir)",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "pausa-estrategica",
           "label": "Pausa estratégica",
           "tipoOperacion": "isomorfismo",
@@ -42760,6 +42690,55 @@
               "tipo": "procedimiento",
               "nombre": "Lenguaje sugestivo y ambiguo",
               "funcion": "nucleo",
+              "estado": "ok"
+            }
+          ]
+        },
+        {
+          "id": "intervenciones-paradojicas",
+          "label": "Intervenciones paradójicas",
+          "tipoOperacion": "operacion_especifica",
+          "categoria": "Operaciones específicas",
+          "definicion": "Familia amplia de maniobras paradójicas. Se conserva como operación específica/familiar porque agrupa variantes estratégicas no siempre equivalentes entre sí.",
+          "criterioEquivalencia": "Familia técnica amplia mantenida aparte por no corresponder a una sola maniobra exacta.",
+          "equivalencias": 4,
+          "modelos_distintos": 4,
+          "nombres_equivalentes": [
+            "Intervenciones paradójicas",
+            "Intervenciones paradójicas y contra-paradójicas (Paradox / Counterparadox)",
+            "Intervenciones paradójicas y estratégicas"
+          ],
+          "links": [
+            {
+              "modeloId": "hipnosis-ericksoniana-1958",
+              "tecnicaId": "p_erickson_paradoja",
+              "tipo": "procedimiento",
+              "nombre": "Intervenciones paradójicas",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-estrategica-1967",
+              "tecnicaId": "p_strat_paradoja",
+              "tipo": "procedimiento",
+              "nombre": "Intervenciones paradójicas",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-individual-sistemica-canevaro-2012",
+              "tecnicaId": "p_canevaro_paradojicas",
+              "tipo": "procedimiento",
+              "nombre": "Intervenciones paradójicas y estratégicas",
+              "funcion": "auxiliar",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-familiar-sistemica-milan-1975",
+              "tecnicaId": "p_milan_paradoja_contraparadoja",
+              "tipo": "procedimiento",
+              "nombre": "Intervenciones paradójicas y contra-paradójicas (Paradox / Counterparadox)",
+              "funcion": "auxiliar",
               "estado": "ok"
             }
           ]
@@ -45910,29 +45889,6 @@
               "tecnicaId": "m_kelly_matices_intermedios",
               "tipo": "micro",
               "nombre": "Buscar matices intermedios entre polos",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "busqueda-de-explicaciones-alternativas-terapia-cognitiva-para-psicosis-cbtp-1994-m-cbtp-al",
-          "label": "Búsqueda de explicaciones alternativas",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Operaciones específicas",
-          "definicion": "Operación específica representada por una sola técnica del repo: búsqueda de explicaciones alternativas.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Búsqueda de explicaciones alternativas"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-cognitiva-para-psicosis-cbtp-1994",
-              "tecnicaId": "m_cbtp_alternativas",
-              "tipo": "micro",
-              "nombre": "Búsqueda de explicaciones alternativas",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -51108,29 +51064,6 @@
               "tecnicaId": "m_gestalt_detectar_tragar_sin_discriminar",
               "tipo": "micro",
               "nombre": "Detectar el tragar sin discriminar",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "detectar-excepcion-funcional-s20linares-m-linares-excepciones",
-          "label": "Detectar excepción funcional",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Operaciones específicas",
-          "definicion": "Operación específica representada por una sola técnica del repo: detectar excepción funcional.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Detectar excepción funcional"
-          ],
-          "links": [
-            {
-              "modeloId": "s20linares",
-              "tecnicaId": "m_linares_excepciones",
-              "tipo": "micro",
-              "nombre": "Detectar excepción funcional",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -56496,29 +56429,6 @@
           ]
         },
         {
-          "id": "exploracion-de-excepciones-terapia-centrada-soluciones-1982-p-sfbt-exploracion-excepciones",
-          "label": "Exploración de excepciones",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Operaciones específicas",
-          "definicion": "Operación específica representada por una sola técnica del repo: exploración de excepciones.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Exploración de excepciones"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-centrada-soluciones-1982",
-              "tecnicaId": "p_sfbt_exploracion_excepciones",
-              "tipo": "procedimiento",
-              "nombre": "Exploración de excepciones",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "exploracion-de-la-intencion-de-la-accion-terapia-metacognitiva-interpersonal-mit-m-mit-int",
           "label": "Exploración de la intención de la acción",
           "tipoOperacion": "operacion_especifica",
@@ -57226,29 +57136,6 @@
               "tecnicaId": "m_gestalt_explorar_deberia",
               "tipo": "micro",
               "nombre": "Explorar el “debería”",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "explorar-excepciones-k1kelly55-m-kelly-excepciones",
-          "label": "Explorar excepciones",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Operaciones específicas",
-          "definicion": "Operación específica representada por una sola técnica del repo: explorar excepciones.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Explorar excepciones"
-          ],
-          "links": [
-            {
-              "modeloId": "k1kelly55",
-              "tecnicaId": "m_kelly_excepciones",
-              "tipo": "micro",
-              "nombre": "Explorar excepciones",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -60797,29 +60684,6 @@
           ]
         },
         {
-          "id": "intencion-paradojica-logoterapia-1940-p-logo-intencion-paradojica",
-          "label": "Intención paradójica",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Operaciones específicas",
-          "definicion": "Operación específica representada por una sola técnica del repo: intención paradójica.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Intención paradójica"
-          ],
-          "links": [
-            {
-              "modeloId": "logoterapia-1940",
-              "tecnicaId": "p_logo_intencion_paradojica",
-              "tipo": "procedimiento",
-              "nombre": "Intención paradójica",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "intensificacion-terapia-familiar-estructural-1965-p-struct-intensificacion",
           "label": "Intensificación",
           "tipoOperacion": "operacion_especifica",
@@ -61665,29 +61529,6 @@
               "tecnicaId": "m_mri_microDuda",
               "tipo": "micro",
               "nombre": "Introducir duda en certezas absolutas",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "introducir-excepciones-semanticas-polaridades-semanticas-m-ugazio-excepciones",
-          "label": "Introducir excepciones semánticas",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Operaciones específicas",
-          "definicion": "Operación específica representada por una sola técnica del repo: introducir excepciones semánticas.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Introducir excepciones semánticas"
-          ],
-          "links": [
-            {
-              "modeloId": "polaridades-semanticas",
-              "tecnicaId": "m_ugazio_excepciones",
-              "tipo": "micro",
-              "nombre": "Introducir excepciones semánticas",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -68059,29 +67900,6 @@
               "tecnicaId": "m_tomm_escenario_hipotetico",
               "tipo": "micro",
               "nombre": "Pregunta de escenario hipotético",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "pregunta-de-excepcion-terapia-breve-mri-1974-m-mri-excepcion",
-          "label": "Pregunta de excepción",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Operaciones específicas",
-          "definicion": "Operación específica representada por una sola técnica del repo: pregunta de excepción.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Pregunta de excepción"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-breve-mri-1974",
-              "tecnicaId": "m_mri_excepcion",
-              "tipo": "micro",
-              "nombre": "Pregunta de excepción",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -79610,11 +79428,12 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 1791
     },
     {
       "categoria": "Relación terapéutica y alianza",
-      "total_operaciones": 270,
+      "total_operaciones": 269,
       "total_isomorfismos": 14,
       "total_operaciones_especificas": 256,
       "operaciones": [
@@ -79725,6 +79544,47 @@
               "funcion": "nucleo",
               "estado": "ok"
             }
+          ]
+        },
+        {
+          "id": "reparacion-relacional-de-ruptura-en-sesion",
+          "label": "Reparación relacional de ruptura en sesión",
+          "tipoOperacion": "isomorfismo",
+          "categoria": "Relación terapéutica y alianza",
+          "definicion": "Trabajar activamente una ruptura relacional o malentendido dentro de la sesión para restaurar cooperación y seguridad relacional.",
+          "criterioEquivalencia": "Se agrupan solo procedimientos cuyo objetivo explícito es reparar una ruptura o conflicto dentro del vínculo terapéutico o relacional inmediato. Se excluyen formulaciones generales sobre la alianza.",
+          "links": [
+            {
+              "modeloId": "terapia-integrativa-erskine",
+              "tecnicaId": "p_erskine_reparacionRupturas",
+              "tipo": "procedimiento",
+              "nombre": "Reparación relacional de rupturas en sesión",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "terapia-colaborativa",
+              "tecnicaId": "p_colab_reparacionRupturas",
+              "tipo": "procedimiento",
+              "nombre": "Reparación colaborativa de rupturas",
+              "funcion": "nucleo",
+              "estado": "ok"
+            },
+            {
+              "modeloId": "emotion-focused-skills-training-efst-2016",
+              "tecnicaId": "p_efst_reparacion",
+              "tipo": "procedimiento",
+              "nombre": "Reparación relacional tras conflicto",
+              "funcion": "nucleo",
+              "estado": "parcial"
+            }
+          ],
+          "equivalencias": 3,
+          "modelos_distintos": 3,
+          "nombres_equivalentes": [
+            "Reparación colaborativa de rupturas",
+            "Reparación relacional de rupturas en sesión",
+            "Reparación relacional tras conflicto"
           ]
         },
         {
@@ -83815,29 +83675,6 @@
           ]
         },
         {
-          "id": "reparacion-colaborativa-de-rupturas-terapia-colaborativa-p-colab-reparacionrupturas",
-          "label": "Reparación colaborativa de rupturas",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Relación terapéutica y alianza",
-          "definicion": "Operación específica representada por una sola técnica del repo: reparación colaborativa de rupturas.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Reparación colaborativa de rupturas"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-colaborativa",
-              "tecnicaId": "p_colab_reparacionRupturas",
-              "tipo": "procedimiento",
-              "nombre": "Reparación colaborativa de rupturas",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
           "id": "reparacion-de-fallos-de-integracion-relacional-neurobiologia-interpersonal-siegel-1999-p-i",
           "label": "Reparación de fallos de integración relacional",
           "tipoOperacion": "operacion_especifica",
@@ -83947,29 +83784,6 @@
               "tecnicaId": "m_wachtel_reparacionMinima",
               "tipo": "micro",
               "nombre": "Reparación mínima en el momento",
-              "funcion": "nucleo",
-              "estado": "ok"
-            }
-          ]
-        },
-        {
-          "id": "reparacion-relacional-de-rupturas-en-sesion-terapia-integrativa-erskine-p-erskine-reparaci",
-          "label": "Reparación relacional de rupturas en sesión",
-          "tipoOperacion": "operacion_especifica",
-          "categoria": "Relación terapéutica y alianza",
-          "definicion": "Operación específica representada por una sola técnica del repo: reparación relacional de rupturas en sesión.",
-          "criterioEquivalencia": "No se ha asignado equivalencia estricta adicional en esta revisión.",
-          "equivalencias": 1,
-          "modelos_distintos": 1,
-          "nombres_equivalentes": [
-            "Reparación relacional de rupturas en sesión"
-          ],
-          "links": [
-            {
-              "modeloId": "terapia-integrativa-erskine",
-              "tecnicaId": "p_erskine_reparacionRupturas",
-              "tipo": "procedimiento",
-              "nombre": "Reparación relacional de rupturas en sesión",
               "funcion": "nucleo",
               "estado": "ok"
             }
@@ -85999,7 +85813,8 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 290
     },
     {
       "categoria": "Ritual, simbolización e imaginería",
@@ -86862,7 +86677,8 @@
             }
           ]
         }
-      ]
+      ],
+      "total_equivalencias": 39
     }
   ]
 }
