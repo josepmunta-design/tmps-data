@@ -1,0 +1,47 @@
+name: Build escuelas unidas
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/Core/escuelas/**/*.json'
+      - 'tools/build-escuelas-unidas.mjs'
+      - '.github/workflows/build-escuelas-unidas.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-escuelas-unidas:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generar escuelas-unidas.txt
+        run: node tools/build-escuelas-unidas.mjs
+
+      - name: Commit y push si hay cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/indices/escuelas-unidas.txt
+
+          if git diff --cached --quiet; then
+            echo "No hay cambios para commit"
+            exit 0
+          fi
+
+          git commit -m "chore(indices): actualizar escuelas-unidas"
+          git push
