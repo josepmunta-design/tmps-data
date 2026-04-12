@@ -1,0 +1,203 @@
+{
+  "id": "hipervigilancia_corporal",
+  "areaId": "somatizacion_desregulacion_psicofisiologica",
+  "label": "Hipervigilancia corporal",
+  "definicion": "Patrón de atención sesgada y sostenida hacia sensaciones corporales interpretadas como relevantes, amenazantes o precursoras de daño, que aumenta la reactividad, la comprobación y la dificultad para habitar el cuerpo con seguridad.",
+  "descripcionClinica": "La hipervigilancia corporal no es simplemente conciencia del cuerpo, sino una forma de monitorización ansiosa en la que el organismo se convierte en objeto de escrutinio defensivo. La persona escanea, compara, anticipa cambios y sobredetecta señales internas como si hubiera que prevenir una amenaza inminente. A corto plazo esto da sensación de control o preparación; a largo plazo amplifica la saliencia de las sensaciones, incrementa la activación y refuerza la convicción de que el cuerpo es frágil, imprevisible o peligroso. Puede expresarse como vigilancia de latidos, respiración, mareo, tensión, dolor, digestión, sueño o cualquier microseñal corporal, y suele oscilar entre alarma, comprobación, evitación y búsqueda de reaseguro.",
+  "subtiposClinicos": [
+    {
+      "id": "ansioso_catastrofico",
+      "label": "Ansioso-catastrófico",
+      "descripcion": "Predomina la interpretación de sensaciones como señal de daño, colapso o enfermedad."
+    },
+    {
+      "id": "interoceptivo_reactivo",
+      "label": "Interoceptivo-reactivo",
+      "descripcion": "Predomina la amplificación por atención sostenida y reacción inmediata a cambios internos normales."
+    },
+    {
+      "id": "traumatico_somatico",
+      "label": "Traumático-somático",
+      "descripcion": "La vigilancia corporal está ligada a activación defensiva, memoria implícita o sensación persistente de inseguridad física."
+    },
+    {
+      "id": "nocturno_hiperalerta",
+      "label": "Nocturno-hiperalerta",
+      "descripcion": "Predomina la monitorización corporal al acostarse o durante despertares, con especial foco en activación, respiración o sueño."
+    }
+  ],
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "interpretación amenazante de sensaciones",
+      "atención selectiva al cuerpo",
+      "estimación exagerada de riesgo físico",
+      "dificultad para desatender señales internas"
+    ],
+    "emocionales": [
+      "ansiedad",
+      "alarma anticipatoria",
+      "miedo a perder el control corporal",
+      "frustración ante sensaciones persistentes"
+    ],
+    "conductuales": [
+      "escaneo corporal repetido",
+      "comprobación de pulso, respiración o tensión",
+      "búsqueda de reaseguro",
+      "evitación de sensaciones o contextos activadores"
+    ],
+    "relacionales": [
+      "consulta frecuente para confirmar seguridad",
+      "dependencia de tranquilización externa",
+      "dificultad para sostener incertidumbre sin apoyo"
+    ],
+    "somaticos": [
+      "aumento percibido de latidos",
+      "mareo o inestabilidad sobreatendidos",
+      "tensión muscular",
+      "sensación de respiración forzada",
+      "hiperactivación autonómica"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "sesgo atencional hacia señales corporales de posible amenaza",
+    "interpretación catastrófica de sensaciones ambiguas",
+    "refuerzo negativo del chequeo y del reaseguro",
+    "evitación de sensaciones corporales que impide aprendizaje correctivo",
+    "fusión con la idea de que notar una sensación implica peligro",
+    "aumento de activación fisiológica secundario al monitoreo continuo",
+    "búsqueda de certeza corporal imposible antes de relajarse",
+    "aprendizaje de que el cuerpo debe vigilarse en lugar de habitarse"
+  ],
+  "procesosDominantesMJPS": ["RF", "RE", "N", "AG"],
+  "modelosRelevantes": [
+    {
+      "modeloId": "cbt-inhibicion-miedo-craske-2014",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "desconfirmar_catastrofes_somaticas",
+        "retirar_seguridad",
+        "tolerar_incertidumbre_corporal"
+      ],
+      "explicacion": "Este modelo entiende la hipervigilancia corporal como un sistema de aprendizaje de amenaza mantenido por predicciones catastróficas y conductas de seguridad que impiden corregirlas. El foco está en formular expectativas explícitas sobre las sensaciones corporales y diseñar experiencias que las desconfirmen sin perseguir calma inmediata. Es especialmente útil cuando la vigilancia está sostenida por miedo, comprobación y evitación interoceptiva.",
+      "focoMJPS": ["RF", "RE", "N", "AG"],
+      "tecnicasRelacionadas": [
+        "p_craske_violacion_expectativas",
+        "p_craske_eliminacion_seguridad",
+        "p_craske_incertidumbre",
+        "m_craske_expectativa_explicita",
+        "m_craske_cuantificacion_probabilidad",
+        "m_craske_discrepancia_post",
+        "m_craske_seguridad_encubierta",
+        "m_craske_retirada_seguridad",
+        "m_craske_sin_habituacion"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "desfusionar_lecturas_corporales",
+        "reducir_lucha_con_sensaciones",
+        "actuar_sin_control_total"
+      ],
+      "explicacion": "ACT entiende la hipervigilancia corporal como una combinación de fusión con lecturas amenazantes del cuerpo y evitación experiencial de sensaciones internas. El foco no es convencer a la persona de que no pasa nada, sino cambiar su relación con las sensaciones para que dejen de gobernar la conducta. Es especialmente útil cuando la vigilancia corporal está atrapada en el ciclo notar–alarmarse–controlar–volver a notar.",
+      "focoMJPS": ["RF", "RE", "RI", "AG", "N"],
+      "tecnicasRelacionadas": [
+        "p_act_aceptacion",
+        "p_act_presencia",
+        "p_act_evitacion_experiencial",
+        "p_act_exposicion_apertura",
+        "p_act_workability",
+        "m_act_anclaje_30s",
+        "m_act_expansion_somatica",
+        "m_act_quedarse_con",
+        "m_act_urge_surfing",
+        "m_act_funciona_para_ti"
+      ]
+    },
+    {
+      "modeloId": "sensorimotor-ogden-2001",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "regular_seguimiento_corporal",
+        "convertir_escaneo_en_tracking_seguro",
+        "cerrar_activacion"
+      ],
+      "explicacion": "La psicoterapia sensoriomotriz entiende que, cuando la vigilancia corporal está ligada a trauma o inseguridad encarnada, el problema no es solo cognitivo sino de organización somática defensiva. El foco está en pasar de una observación alarmada del cuerpo a un seguimiento corporal regulado y dosificado. Es especialmente útil cuando la atención al cuerpo desorganiza, desborda o activa memorias implícitas.",
+      "focoMJPS": ["RF", "AP", "RE"],
+      "tecnicasRelacionadas": [
+        "m_sm_aterrizaje",
+        "m_sm_integracion_verbal"
+      ]
+    },
+    {
+      "modeloId": "cbti-insomnio-cronico",
+      "pesoModelo": 2,
+      "tipoOperacion": [
+        "reducir_monitorizacion_nocturna",
+        "desactivar_hiperalerta_fisiologica",
+        "cortar_esfuerzo_de_control"
+      ],
+      "explicacion": "CBT-I aporta una lectura útil cuando la hipervigilancia corporal se intensifica de noche y se organiza alrededor de activación, respiración, pulso o miedo a no dormir. El foco está en desmontar el bucle vigilancia–esfuerzo–hiperactivación. Es secundario, pero clínicamente útil en el subtipo nocturno-hiperalerta.",
+      "focoMJPS": ["RF", "RE", "N", "AG"],
+      "tecnicasRelacionadas": [
+        "p_cbti_cognitivaSueno",
+        "p_cbti_relajacionWindDown",
+        "p_cbti_cognitiveControl",
+        "m_cbti_descatastro",
+        "m_cbti_windDown"
+      ]
+    }
+  ],
+  "nodosTransversalesImportantes": [
+    {
+      "id": "sensibilizacion_interoceptiva",
+      "descripcion": "Aumento de saliencia y reactividad ante señales internas."
+    },
+    {
+      "id": "miedo_a_sensaciones",
+      "descripcion": "Interpretación de la experiencia corporal como precursora de daño, colapso o pérdida de control."
+    },
+    {
+      "id": "comprobacion",
+      "descripcion": "Chequeo repetido del cuerpo para intentar recuperar seguridad."
+    },
+    {
+      "id": "reaseguro",
+      "descripcion": "Búsqueda de confirmación externa para disminuir alarma a corto plazo."
+    },
+    {
+      "id": "evitacion_experiencial",
+      "descripcion": "Intento de no sentir, controlar o escapar de sensaciones internas."
+    },
+    {
+      "id": "hiperactivacion_autonomica",
+      "descripcion": "Activación fisiológica que a la vez se convierte en nuevo objeto de vigilancia."
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿Qué sensación corporal activa más rápidamente la alarma?",
+    "¿Qué cree que significan esas sensaciones cuando aparecen?",
+    "¿Qué hace inmediatamente después de notarlas?",
+    "¿Qué alivio obtiene a corto plazo del chequeo o del reaseguro?",
+    "¿La vigilancia corporal aparece más en contextos de miedo, trauma, enfermedad o al intentar descansar?",
+    "¿Qué pasaría si no comprobara ni intentara corregir la sensación?"
+  ],
+  "criteriosDeProgreso": [
+    "disminuye el escaneo corporal repetido",
+    "tolera sensaciones ambiguas sin interpretarlas automáticamente como amenaza",
+    "reduce comprobación y búsqueda de reaseguro",
+    "puede notar activación sin escalar a alarma secundaria",
+    "distingue mejor entre sensación y catástrofe anticipada",
+    "recupera capacidad de dirigir la atención fuera del cuerpo cuando conviene",
+    "habita el cuerpo con más seguridad y menos control defensivo"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundir conciencia corporal útil con vigilancia defensiva",
+    "tratar solo la interpretación cognitiva y no la conducta de chequeo",
+    "usar relajación como nueva compulsión de control",
+    "confundirla con somatización global cuando el núcleo real es miedo a sensaciones",
+    "forzar exposición corporal sin suficiente dosificación cuando hay trauma somático",
+    "medicalizar todo el cuadro o, al contrario, invalidar síntomas relevantes sin análisis funcional"
+  ]
+}
