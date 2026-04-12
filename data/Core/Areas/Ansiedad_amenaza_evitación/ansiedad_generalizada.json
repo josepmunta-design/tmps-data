@@ -1,0 +1,290 @@
+{
+  "id": "ansiedad_generalizada",
+  "areaId": "ansiedad_amenaza_evitacion",
+  "label": "Ansiedad generalizada",
+  "definicion": "Patrón de alarma sostenida orientado a anticipar amenazas futuras de forma amplia, persistente y difícil de detener, con preocupación repetitiva, búsqueda de control, hipervigilancia y dificultad para tolerar incertidumbre y no-garantía.",
+  "descripcionClinica": "La ansiedad generalizada no se entiende aquí como una categoría diagnóstica cerrada, sino como un modo de funcionamiento en el que la mente se organiza alrededor de prever, prevenir y controlar peligros potenciales. La preocupación funciona muchas veces como intento de preparación, control o evitación de emociones más crudas, y a corto plazo puede dar sensación de vigilancia útil o de responsabilidad. A largo plazo estrecha la atención, aumenta la tensión fisiológica, bloquea el descanso, erosiona la toma de decisiones y mantiene la sensación de amenaza difusa. Puede tomar una forma más cognitiva y anticipatoria, más somática e hipervigilante, o más ligada a duda constante y necesidad de certeza. No equivale simplemente a pánico, fobia o trauma: aquí el núcleo no es tanto un disparador específico ni una memoria traumática concreta, sino una activación amplia, sostenida y orientada al futuro que coloniza múltiples áreas de vida.",
+  "subtiposClinicos": [
+    {
+      "id": "anticipatoria_cognitiva",
+      "label": "Anticipatoria-cognitiva",
+      "descripcion": "Predomina la preocupación encadenada, el análisis excesivo de escenarios futuros y la dificultad para cerrar decisiones sin garantía."
+    },
+    {
+      "id": "somatica_hipervigilante",
+      "label": "Somática-hipervigilante",
+      "descripcion": "Predominan la tensión corporal, la alerta sostenida, la monitorización de sensaciones y la interpretación amenazante de cambios físicos o contextuales."
+    },
+    {
+      "id": "controladora_responsabilizada",
+      "label": "Controladora-responsabilizada",
+      "descripcion": "La ansiedad se organiza alrededor de prevenir errores, cubrir todas las contingencias y asumir que relajarse sería irresponsable o peligroso."
+    }
+  ],
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "preocupación repetitiva difícil de detener",
+      "anticipación de escenarios negativos",
+      "sobreestimación de amenaza",
+      "búsqueda mental de certeza",
+      "dificultad para cerrar decisiones"
+    ],
+    "emocionales": [
+      "ansiedad difusa",
+      "aprensión persistente",
+      "irritabilidad",
+      "sensación de desbordamiento anticipatorio",
+      "alivio breve tras anticipar o comprobar"
+    ],
+    "conductuales": [
+      "búsqueda de tranquilidad o confirmación",
+      "evitación de decisiones sin garantía",
+      "sobrepreparación",
+      "comprobación o repaso mental",
+      "dificultad para desconectar"
+    ],
+    "relacionales": [
+      "consultas repetidas para reducir duda",
+      "hipersensibilidad a señales ambiguas",
+      "necesidad de validación externa",
+      "tendencia a anticipar problemas en vínculos o responsabilidades"
+    ],
+    "somaticos": [
+      "tensión muscular sostenida",
+      "inquietud",
+      "fatiga por hiperalerta",
+      "alteraciones del sueño",
+      "activación autonómica persistente"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "la preocupación funciona como intento de control anticipatorio y reduce momentáneamente la incertidumbre",
+    "la búsqueda de certeza refuerza la idea de que no poder garantizar equivale a peligro",
+    "la hipervigilancia selectiva hacia amenaza aumenta la detección de señales ambiguas y confirma el sesgo ansioso",
+    "las conductas de seguridad y de comprobación impiden comprobar que la no-garantía es tolerable",
+    "el análisis reiterativo sustituye acción o exposición y mantiene el problema en el plano mental",
+    "la evitación cognitiva y conductual reduce malestar a corto plazo pero bloquea aprendizaje correctivo",
+    "la interpretación de activación corporal como signo de riesgo aumenta alarma secundaria",
+    "la responsabilidad excesiva vincula relajarse o soltar control con negligencia o fracaso",
+    "la baja tolerancia a incertidumbre convierte escenarios posibles en problemas que deben resolverse ya",
+    "la dependencia de tranquilidad externa debilita sensación de autoeficacia y autonomía regulatoria"
+  ],
+  "procesosDominantesMJPS": ["N", "RE", "AG", "RF", "RI"],
+  "modelosRelevantes": [
+    {
+      "modeloId": "ert-mennin-fresco-2013",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "regular_hiperactivacion_emocional",
+        "interrumpir_preocupacion_rigida",
+        "entrenar_atencion_flexible",
+        "restaurar_accion_valiosa"
+      ],
+      "explicacion": "ERT entiende la ansiedad generalizada como un bucle entre hiperreactividad emocional, sesgo atencional hacia amenaza y estrategias rígidas de preocupación y evitación que intentan regular el malestar pero lo cronifican. Su foco no está solo en bajar ansiedad, sino en enseñar a sostener emoción, flexibilizar la atención y salir del circuito preocupación-control-inhibición. Es especialmente útil cuando la ansiedad generalizada combina mucha activación interna, rumiación/preocupación persistente y dificultad para actuar con claridad.",
+      "focoMJPS": ["RE", "N", "AG", "RI"],
+      "tecnicasRelacionadas": []
+    },
+    {
+      "modeloId": "mct-wells-2009",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "desactivar_preocupacion_perseverativa",
+        "modificar_creencias_metacognitivas",
+        "reducir_vigilancia_de_amenaza",
+        "soltar_control_mental"
+      ],
+      "explicacion": "La terapia metacognitiva entiende la ansiedad generalizada no como exceso de pensamientos amenazantes en sí, sino como un estilo de procesamiento mantenido por el síndrome cognitivo-atencional: preocupación, vigilancia y afrontamientos mentales contraproducentes. Interviene sobre las creencias que hacen que preocuparse parezca útil o necesario y sobre la idea de que los pensamientos son peligrosos o incontrolables. Es especialmente potente cuando el núcleo es la preocupación interminable, la monitorización mental y el intento constante de controlar la mente.",
+      "focoMJPS": ["N", "RI", "RE", "AG"],
+      "tecnicasRelacionadas": [
+        "p_mct_att",
+        "p_mct_desactivacion_rumiacion",
+        "p_mct_modificacion_creencias_positivas",
+        "p_mct_modificacion_creencias_negativas",
+        "p_mct_eliminacion_afrontamiento",
+        "m_mct_reduccion_comprobacion",
+        "m_mct_normalizacion_intrusivos",
+        "m_mct_autoobservacion_cas"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "desfusionar_predicciones_ansiosas",
+        "aceptar_incertidumbre_y_malestar",
+        "bloquear_agenda_de_control",
+        "reactivar_accion_con_valores"
+      ],
+      "explicacion": "ACT entiende esta subárea como una vida organizada alrededor de evitar ansiedad, duda e incertidumbre. La preocupación no se trata como algo que haya que discutir infinitamente, sino como parte de una agenda de control que estrecha la conducta y aleja de valores. El cambio se busca disminuyendo fusión con escenarios mentales, aumentando disposición al malestar y recuperando acción elegida incluso sin garantía. Aporta mucho cuando la ansiedad generalizada se ha convertido en un estilo vital de control y evitación interna.",
+      "focoMJPS": ["RI", "RE", "AG", "N", "I"],
+      "tecnicasRelacionadas": [
+        "p_act_formulacion_funcional",
+        "p_act_creativa_desesperanza",
+        "p_act_defusion",
+        "p_act_aceptacion",
+        "p_act_presencia",
+        "p_act_valores",
+        "p_act_accion_comprometida",
+        "p_act_evitacion_experiencial",
+        "p_act_workability",
+        "p_act_willingness",
+        "p_act_choice_point",
+        "m_act_estoy_teniendo_el_pensamiento",
+        "m_act_anclaje_30s",
+        "m_act_funciona_para_ti",
+        "m_act_estoy_dispuesto",
+        "m_act_momento_eleccion",
+        "m_act_que_importa_aqui",
+        "m_act_quedarse_con"
+      ]
+    },
+    {
+      "modeloId": "protocolo-unificado-barlow-2011",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "identificar_conductas_impulsadas_por_emocion",
+        "reducir_evitacion_ansiosa",
+        "aumentar_tolerancia_a_activacion",
+        "generalizar_respuestas_flexibles"
+      ],
+      "explicacion": "El Protocolo Unificado sitúa la ansiedad generalizada dentro de un patrón transdiagnóstico de alta reactividad emocional, evitación y conductas impulsadas por emoción. Su aportación distintiva es trabajar la ansiedad no solo como pensamiento preocupante, sino como emoción temida que organiza respuestas automáticas de evitación, control o tranquilización. Es especialmente útil cuando la ansiedad generalizada se expresa en muchos dominios y convive con evitación sutil, reactividad y dificultad para sostener exposición emocional.",
+      "focoMJPS": ["RE", "AG", "N", "RF"],
+      "tecnicasRelacionadas": [
+        "p_up_exposicion_interoceptiva",
+        "p_up_jerarquia_exposicion_emocional_experimentos",
+        "p_up_exposicion_situacional_experiencial",
+        "p_up_generalizacion_aprendizaje_emocional",
+        "m_up_pausa_consciente",
+        "m_up_identificar_edb",
+        "m_up_sustituir_edb",
+        "m_up_interpretacion_alternativa",
+        "m_up_evitacion_sutil",
+        "m_up_anclaje_sensaciones",
+        "m_up_plan_24h"
+      ]
+    },
+    {
+      "modeloId": "cbt-inhibicion-miedo-craske-2014",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "violar_expectativas_catastroficas",
+        "retirar_senales_de_seguridad",
+        "entrenar_incertidumbre",
+        "consolidar_aprendizaje_inhibitorio"
+      ],
+      "explicacion": "Desde el modelo de aprendizaje inhibitorio, una parte de la ansiedad generalizada se mantiene porque las predicciones de amenaza no llegan a ponerse realmente a prueba: la persona se protege, comprueba, anticipa y evita, y así nunca aprende que puede tolerar la incertidumbre ni que muchos desenlaces temidos no ocurren. Este modelo aporta una lógica muy clara para diseñar experimentos y exposiciones que desconfirmen expectativas y retiren muletas de seguridad. Es especialmente útil cuando la ansiedad generalizada está muy organizada por anticipación catastrófica, comprobación y necesidad de garantías.",
+      "focoMJPS": ["N", "AG", "RE", "AP"],
+      "tecnicasRelacionadas": [
+        "p_craske_violacion_expectativas",
+        "p_craske_eliminacion_seguridad",
+        "p_craske_variabilidad_contextual",
+        "p_craske_incertidumbre",
+        "p_craske_recuperacion_aprendizaje",
+        "p_craske_retorno_miedo",
+        "m_craske_expectativa_explicita",
+        "m_craske_cuantificacion_probabilidad",
+        "m_craske_discrepancia_post",
+        "m_craske_seguridad_encubierta",
+        "m_craske_retirada_seguridad",
+        "m_craske_recordatorio_aprendizaje",
+        "m_craske_sin_habituacion"
+      ]
+    },
+    {
+      "modeloId": "aprendizaje-social-bandura-1977",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "construir_autoeficacia",
+        "reducir_inhibicion_por_incapacidad_anticipada",
+        "modelar_afrontamiento",
+        "graduar_exposicion_a_decisiones_y_tareas"
+      ],
+      "explicacion": "Bandura aporta una lectura muy útil cuando la ansiedad generalizada se mezcla con anticipación de incapacidad, baja confianza para afrontar problemas y dependencia de tranquilización o evitación. El foco no está tanto en discutir amenaza como en construir autoeficacia mediante experiencias de dominio, modelado y práctica graduada. Es especialmente valioso cuando la preocupación se acompaña de bloqueo, sobreconsulta o sensación de no poder manejar lo que venga.",
+      "focoMJPS": ["AG", "N", "RE"],
+      "tecnicasRelacionadas": [
+        "p_bandura_evaluacion_autoeficacia",
+        "p_bandura_modelado_practica_gradual",
+        "p_bandura_tareas_graduadas_dominio",
+        "p_bandura_reinterpretacion_activacion",
+        "p_bandura_autoobservacion_autorregistro",
+        "p_bandura_metas_plan_autorefuerzo",
+        "p_bandura_generalizacion_prevencion",
+        "m_bandura_eficacia_vs_resultado",
+        "m_bandura_ensayo_inmediato",
+        "m_bandura_feedback_estrategia",
+        "m_bandura_atribucion_funcional",
+        "m_bandura_normalizar_activacion",
+        "m_bandura_si_entonces",
+        "m_bandura_reencuadre_fallo"
+      ]
+    },
+    {
+      "modeloId": "cft-gilbert-2009",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "regular_sistema_de_amenaza",
+        "reducir_autoataque_ansioso",
+        "desarrollar_base_interna_de_seguridad",
+        "aumentar_tolerancia_sin_colapso"
+      ],
+      "explicacion": "CFT es especialmente relevante cuando la ansiedad generalizada no se sostiene solo por amenaza externa, sino también por crítica interna, vergüenza por no controlar y dificultad para acceder a un estado interno de seguridad. Su aportación diferencial es construir una mente compasiva firme que reduzca amenaza secundaria y necesidad de hipercontrol. Resulta especialmente útil en perfiles muy autoexigentes, avergonzados o castigadores con su propia ansiedad.",
+      "focoMJPS": ["RE", "RI", "RF", "I"],
+      "tecnicasRelacionadas": []
+    }
+  ],
+  "nodosTransversalesImportantes": [
+    {
+      "id": "intolerancia_incertidumbre",
+      "descripcion": "Dificultad para sostener no-garantía, duda o imprevisibilidad sin activar control, preocupación o búsqueda de seguridad."
+    },
+    {
+      "id": "evitacion_experiencial",
+      "descripcion": "Uso de preocupación, control o distracción para no sentir activación, vulnerabilidad o desamparo."
+    },
+    {
+      "id": "hipervigilancia",
+      "descripcion": "Sesgo sostenido hacia señales ambiguas de peligro, error o pérdida de control."
+    },
+    {
+      "id": "autoeficacia",
+      "descripcion": "Percepción de capacidad para afrontar problemas, incertidumbre y activación sin depender de control excesivo."
+    },
+    {
+      "id": "conductas_de_seguridad",
+      "descripcion": "Comprobaciones, consultas, repaso mental o sobrepreparación que alivian a corto plazo pero bloquean aprendizaje correctivo."
+    },
+    {
+      "id": "control_cognitivo_excesivo",
+      "descripcion": "Intento de resolver, cerrar o neutralizar mentalmente todo escenario incierto antes de actuar o descansar."
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿La preocupación intenta prevenir un daño realista, evitar incertidumbre o no sentir vulnerabilidad?",
+    "¿Qué obtiene a corto plazo cuando se preocupa, repasa o busca certeza?",
+    "¿Qué tipo de amenaza domina: error, pérdida de control, rechazo, catástrofe física, irresponsabilidad o incapacidad?",
+    "¿Qué conductas de seguridad mantiene sin reconocer como tales?",
+    "¿Qué pasaría si dejara un problema sin cerrar mentalmente durante un tiempo?",
+    "¿Predomina más la preocupación verbal, la hipervigilancia corporal o la necesidad de comprobar y consultar?",
+    "¿La ansiedad se sostiene más por creencias sobre el pensamiento, por intolerancia a la emoción o por baja autoeficacia para afrontar?",
+    "¿Qué decisiones, acciones o descansos quedan bloqueados por esperar garantía completa?"
+  ],
+  "criteriosDeProgreso": [
+    "reduce tiempo dedicado a preocupación o repaso mental",
+    "tolera más incertidumbre sin buscar tranquilización inmediata",
+    "disminuyen conductas de seguridad y comprobación sutil",
+    "actúa con más rapidez aunque no tenga certeza completa",
+    "aumenta capacidad para notar activación sin escalar a control mental",
+    "mejora el descanso o la desconexión sin necesidad de cerrar todos los riesgos",
+    "aparecen respuestas más flexibles ante escenarios ambiguos",
+    "crece la autoeficacia para afrontar problemas reales sin sobreanticipación"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundirla con pánico cuando el núcleo real es anticipación sostenida y no miedo agudo a una crisis",
+    "confundirla con intolerancia a la incertidumbre pura, cuando aquí ya hay un patrón más amplio de alarma y preocupación generalizada",
+    "tratar solo el contenido de las preocupaciones y no el proceso de preocupación, vigilancia y control",
+    "confundir responsabilidad sana y planificación realista con hipercontrol ansioso",
+    "centrarse solo en relajación y perder el papel de conductas de seguridad, evitación y necesidad de certeza",
+    "confundir la preocupación con resolución de problemas eficaz cuando en realidad bloquea acción y aprendizaje",
+    "trabajar solo activación fisiológica y dejar intactas las reglas de control, comprobación o tranquilización"
+  ]
+}
