@@ -1,0 +1,174 @@
+{
+  "id": "crisis_vital",
+  "areaId": "sentido_valores_orientacion_existencial",
+  "label": "Crisis vital",
+  "definicion": "Proceso de desorganización temporal del sistema de sentido, identidad y dirección vital, en el que la persona pierde coherencia interna, orientación futura o continuidad narrativa tras eventos, transiciones o acumulación de incongruencias.",
+  "descripcionClinica": "La crisis vital no es simplemente malestar o duda, sino una ruptura funcional en la organización del significado. El sistema que orientaba decisiones, identidad y acción deja de ser viable: lo que antes tenía sentido deja de tenerlo o entra en contradicción. Esto puede aparecer tras pérdidas, cambios de rol, logros inesperados, enfermedad, o de forma progresiva por desconexión de valores. Clínicamente se observa desorientación, bloqueo decisional, cuestionamiento identitario, sensación de vida “vacía o equivocada” y dificultad para proyectarse. A corto plazo puede generar parálisis o búsqueda impulsiva de soluciones; a largo plazo, si no se reorganiza, puede cronificarse como vacío existencial o deriva conductual.",
+  "subtiposClinicos": [
+    {
+      "id": "crisis_transicional",
+      "label": "Crisis transicional",
+      "descripcion": "Aparece en cambios vitales (rupturas, mudanzas, cambios laborales) donde el sistema previo deja de servir."
+    },
+    {
+      "id": "crisis_identitaria",
+      "label": "Crisis identitaria",
+      "descripcion": "Centrada en la pregunta por quién soy y quién quiero ser, con pérdida de coherencia del self."
+    },
+    {
+      "id": "crisis_de_sentido",
+      "label": "Crisis de sentido",
+      "descripcion": "Dominada por la pérdida de propósito o significado vital, incluso sin cambios externos claros."
+    },
+    {
+      "id": "crisis_por_exito_fracaso",
+      "label": "Crisis por éxito o fracaso",
+      "descripcion": "Se produce cuando los resultados vitales (logro o caída) invalidan las expectativas que organizaban la vida."
+    }
+  ],
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "cuestionamiento global de decisiones pasadas",
+      "dudas persistentes sobre sentido de vida",
+      "bloqueo en toma de decisiones importantes"
+    ],
+    "emocionales": [
+      "vacío",
+      "angustia existencial",
+      "desorientación",
+      "ansiedad difusa"
+    ],
+    "conductuales": [
+      "parálisis o evitación de decisiones",
+      "cambios impulsivos de dirección",
+      "abandono de proyectos previos"
+    ],
+    "relacionales": [
+      "distanciamiento",
+      "búsqueda intensa de validación externa",
+      "conflictos por cambio de valores"
+    ],
+    "somaticos": [
+      "fatiga",
+      "inquietud interna",
+      "sensación de falta de energía"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "bloqueo narrativo tras ruptura de significado",
+    "evitación de decisiones para reducir ansiedad a corto plazo",
+    "búsqueda de certezas imposibles antes de actuar",
+    "fusión con preguntas existenciales sin acción",
+    "desconexión progresiva de valores y acción",
+    "retroalimentación entre inacción y pérdida de sentido"
+  ],
+  "procesosDominantesMJPS": ["N", "I", "AG", "RE"],
+  "modelosRelevantes": [
+    {
+      "modeloId": "logoterapia-frankl",
+      "pesoModelo": 5,
+      "tipoOperacion": ["reconstruir_sentido", "orientar_valores", "trascender_sufrimiento"],
+      "explicacion": "La logoterapia entiende la crisis vital como una pérdida de sentido que desorganiza la existencia. El foco está en reconstruir significado y orientar la vida hacia valores elegidos, incluso en contextos adversos. Es especialmente útil cuando domina el vacío o la falta de propósito.",
+      "focoMJPS": ["N", "I", "AG"],
+      "tecnicasRelacionadas": [
+        "p_logo_dialogo_socratico",
+        "p_logo_intencion_paradojica",
+        "p_logo_dereflection"
+      ]
+    },
+    {
+      "modeloId": "constructivismo-narrativo-neimeyer",
+      "pesoModelo": 5,
+      "tipoOperacion": ["reconstruir_significado", "integrar_eventos", "restaurar_continuidad"],
+      "explicacion": "El constructivismo narrativo conceptualiza la crisis vital como una ruptura del sistema de significados que organiza la identidad. Interviene reconstruyendo narrativas que integren la experiencia disruptiva y restauren coherencia y continuidad del self :contentReference[oaicite:1]{index=1}.",
+      "focoMJPS": ["N", "I"],
+      "tecnicasRelacionadas": [
+        "p_neim_exploracion_narrativa",
+        "p_neim_rupturas_significado",
+        "p_neim_reconstruccion_significado",
+        "p_neim_dialogo_reflexivo"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-1999",
+      "pesoModelo": 4,
+      "tipoOperacion": ["desfusionar_preguntas", "clarificar_valores", "activar_accion"],
+      "explicacion": "ACT entiende la crisis vital como fusión con dudas y búsqueda de certeza que bloquea la acción. El foco es dejar de resolver cognitivamente la vida y pasar a construirla mediante acción comprometida guiada por valores.",
+      "focoMJPS": ["RI", "AG", "N"],
+      "tecnicasRelacionadas": [
+        "p_act_defusion",
+        "p_act_valores",
+        "p_act_accion_comprometida"
+      ]
+    },
+    {
+      "modeloId": "terapia_existencial",
+      "pesoModelo": 4,
+      "tipoOperacion": ["afrontar_angustia", "asumir_responsabilidad", "elegir_direccion"],
+      "explicacion": "La terapia existencial entiende la crisis vital como confrontación con libertad, responsabilidad y finitud. El foco no es eliminar la angustia sino usarla como motor para tomar decisiones auténticas.",
+      "focoMJPS": ["I", "AG", "N"],
+      "tecnicasRelacionadas": []
+    },
+    {
+      "modeloId": "neurobiologia_interpersonal_siegel",
+      "pesoModelo": 3,
+      "tipoOperacion": ["integrar_experiencia", "regular_sistema", "restaurar_coherencia"],
+      "explicacion": "Desde IPNB, la crisis vital se entiende como desintegración temporal de sistemas de significado, emoción y relación. El foco está en restaurar integración y coherencia entre niveles para permitir reorganización del self.",
+      "focoMJPS": ["RE", "I", "AP"],
+      "tecnicasRelacionadas": []
+    },
+    {
+      "modeloId": "modelo_estabilizacion_entorno_vital",
+      "pesoModelo": 3,
+      "tipoOperacion": ["asegurar_estabilidad", "reducir_amenaza", "permitir_proceso"],
+      "explicacion": "Este modelo plantea que algunas crisis vitales no pueden resolverse si el entorno es inestable. El foco es garantizar un umbral mínimo de estabilidad externa para que el trabajo de significado sea posible :contentReference[oaicite:2]{index=2}.",
+      "focoMJPS": ["RF", "RE", "AG"],
+      "tecnicasRelacionadas": [
+        "p_vb_entorno_evaluacion"
+      ]
+    }
+  ],
+  "nodosTransversalesImportantes": [
+    {
+      "id": "sentido",
+      "descripcion": "Organización global de significado que orienta decisiones y coherencia vital"
+    },
+    {
+      "id": "identidad",
+      "descripcion": "Continuidad del self a lo largo del tiempo"
+    },
+    {
+      "id": "valores",
+      "descripcion": "Direcciones elegidas que guían acción más allá de estados internos"
+    },
+    {
+      "id": "agencia",
+      "descripcion": "Capacidad de actuar pese a la incertidumbre"
+    },
+    {
+      "id": "incertidumbre",
+      "descripcion": "Imposibilidad de conocer completamente el futuro"
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿Qué se ha roto exactamente: sentido, identidad o dirección?",
+    "¿Qué evento o proceso precede a esta crisis?",
+    "¿Qué intenta evitar no tomando decisiones?",
+    "¿Está buscando claridad antes de actuar?",
+    "¿Qué valores siguen presentes aunque haya confusión?"
+  ],
+  "criteriosDeProgreso": [
+    "recupera capacidad de tomar decisiones",
+    "aparece dirección vital aunque no haya certeza total",
+    "integra la experiencia disruptiva en su historia",
+    "actúa en base a valores y no solo a estado emocional",
+    "reduce parálisis y aumenta movimiento con sentido"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundirla con depresión y tratar solo síntomas",
+    "forzar soluciones rápidas sin reconstruir sentido",
+    "cronificarla como vacío existencial",
+    "sobrecognitivizar sin pasar a acción",
+    "ignorar condiciones externas que impiden el cambio"
+  ]
+}
