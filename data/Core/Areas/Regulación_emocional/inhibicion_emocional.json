@@ -2,81 +2,255 @@
   "id": "inhibicion_emocional",
   "areaId": "regulacion_emocional",
   "label": "Inhibición emocional",
-  "definicion": "Patrón de regulación caracterizado por la supresión, contención o bloqueo de la experiencia y/o expresión emocional, con el objetivo de evitar malestar interno, conflicto interpersonal o pérdida de control.",
-  "descripcionClinica": "La inhibición emocional no implica ausencia de emoción, sino una desconexión funcional entre activación emocional y su procesamiento o expresión. La lógica subyacente suele ser protectora: sentir o expresar puede ser percibido como peligroso, desbordante, inaceptable o inútil. A corto plazo reduce la activación o evita consecuencias temidas (rechazo, conflicto, vulnerabilidad), pero a medio-largo plazo genera embotamiento, dificultad para identificar estados internos, acumulación de tensión, somatización, rigidez interpersonal y pérdida de información emocional relevante para la toma de decisiones. Clínicamente puede manifestarse como dificultad para llorar, expresar enfado, conectar con necesidades, hablar de lo emocional o incluso notar lo que se siente.",
-  "indicadores": [
-    "Dificultad para identificar lo que se siente",
-    "Expresión emocional limitada o inapropiada al contexto",
-    "Sensación de vacío o embotamiento emocional",
-    "Tendencia a intelectualizar o racionalizar en exceso",
-    "Evitación de temas emocionales en terapia o relaciones",
-    "Bloqueo al intentar expresar emociones",
-    "Somatización o tensión corporal persistente",
-    "Desconexión entre lo que ocurre y la respuesta emocional esperable"
+  "definicion": "Patrón de regulación en el que la persona bloquea, minimiza, suprime o restringe de forma persistente la vivencia, identificación o expresión de sus emociones para evitar vulnerabilidad, conflicto, desorganización interna o pérdida de control.",
+  "descripcionClinica": "Clínicamente, la inhibición emocional no implica ausencia real de emoción, sino una restricción funcional de su acceso, simbolización o expresión. La persona puede parecer correcta, contenida, racional, sobreadaptada o poco reactiva, mientras por dentro mantiene activación, tensión, malestar difuso o desconexión. A corto plazo este patrón puede dar sensación de control, protección frente al rechazo, prevención del conflicto o evitación de estados afectivos vividos como peligrosos, humillantes o inútiles. A largo plazo, empobrece la autocomprensión, dificulta pedir ayuda, rigidiza la conducta, reduce intimidad relacional y favorece somatización, embotamiento, distancia emocional o estallidos diferidos. Puede aparecer como supresión expresiva, intelectualización, congelación afectiva, complacencia emocional, dificultad para llorar, imposibilidad de nombrar estados internos o costumbre de pasar directamente a la acción o al análisis sin procesar lo sentido.",
+  "subtiposClinicos": [
+    {
+      "id": "supresion_expresiva_controlada",
+      "label": "Supresión expresiva controlada",
+      "descripcion": "La emoción se siente parcialmente pero se inhibe su expresión externa para mantener imagen, orden relacional o sensación de dominio."
+    },
+    {
+      "id": "desconexion_embotada",
+      "label": "Desconexión embotada",
+      "descripcion": "Predomina la dificultad para acceder a la emoción, con vivencia de vacío, lejanía afectiva o escasa claridad interna."
+    },
+    {
+      "id": "intelectualizacion_afectiva",
+      "label": "Intelectualización afectiva",
+      "descripcion": "La experiencia emocional se reemplaza por análisis, explicación, discurso abstracto o hipercomprensión sin contacto afectivo real."
+    },
+    {
+      "id": "inhibicion_relacional_defensiva",
+      "label": "Inhibición relacional defensiva",
+      "descripcion": "La emoción se bloquea especialmente en presencia de otros por miedo a rechazo, crítica, dependencia, conflicto o humillación."
+    }
   ],
-  "hipotesisFuncionales": [
-    "La supresión emocional reduce temporalmente el malestar o el riesgo percibido",
-    "Expresar emociones se asocia a consecuencias negativas (rechazo, crítica, pérdida de control)",
-    "Déficit en habilidades de identificación, diferenciación o simbolización emocional",
-    "Aprendizaje temprano de invalidez emocional o castigo de la expresión",
-    "Evitación experiencial como estrategia dominante de regulación",
-    "Hipercontrol cognitivo que inhibe la activación emocional"
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "dificultad para saber qué siente realmente",
+      "tendencia a explicar sin conectar",
+      "ideas de que expresar emoción es peligroso o inútil",
+      "pensamiento centrado en controlarse",
+      "lectura excesivamente racional de experiencias afectivas"
+    ],
+    "emocionales": [
+      "embotamiento",
+      "bloqueo afectivo",
+      "ansiedad al acercarse a emociones intensas",
+      "vergüenza ante la vulnerabilidad",
+      "malestar difuso difícil de nombrar"
+    ],
+    "conductuales": [
+      "evita llorar o mostrar afecto",
+      "cambia de tema cuando aparece emoción",
+      "sobreadaptación o autocontrol rígido",
+      "habla de hechos sin entrar en la vivencia",
+      "retrasa o evita conversaciones emocionales"
+    ],
+    "relacionales": [
+      "distancia emocional",
+      "dificultad para pedir consuelo o apoyo",
+      "expresión afectiva mínima en vínculos importantes",
+      "complacencia sin mostrarse realmente",
+      "incomodidad cuando otros expresan emoción intensa"
+    ],
+    "somaticos": [
+      "tensión sostenida",
+      "opresión corporal sin simbolización clara",
+      "fatiga por sobrerregulación",
+      "activación interna contenida",
+      "somatización del malestar no expresado"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "aprendizaje temprano de que sentir o expresar emociones tiene coste interpersonal",
+    "supresión expresiva que reduce conflicto a corto plazo y refuerza el patrón",
+    "evitación experiencial de afectos vividos como desorganizadores, vergonzosos o peligrosos",
+    "fusión con reglas internas de control, fortaleza o autosuficiencia",
+    "intelectualización que sustituye procesamiento emocional por comprensión abstracta",
+    "déficit repetido de rotulación emocional que empobrece la autorregulación",
+    "desconexión entre activación corporal y significado emocional consciente",
+    "entornos relacionales que responden mejor al rendimiento, la corrección o la contención que a la vulnerabilidad",
+    "miedo a perder imagen, dignidad o control si la emoción se hace visible",
+    "alivio inmediato tras callar, minimizar o desviar la emoción, que consolida la inhibición"
   ],
-  "procesosImplicados": [
-    "RE",
-    "AP",
-    "RI",
-    "R",
-    "I"
-  ],
-  "intervenciones": [
+  "procesosDominantesMJPS": ["RE", "RI", "N", "R", "I"],
+  "modelosRelevantes": [
     {
-      "modelo": "Terapia Focalizada en la Emoción (EFT)",
-      "tecnicas": [
-        "evocacion_experiencial",
-        "focusing",
-        "acceso_emocional_guiado"
+      "modeloId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "detectar_supresion",
+        "reestructurar_estrategia_regulatoria",
+        "modular_respuesta_emocional",
+        "aumentar_flexibilidad_regulatoria"
+      ],
+      "explicacion": "El modelo de Gross entiende esta subárea como un patrón regulatorio centrado excesivamente en la modulación de respuesta, especialmente en la supresión expresiva, con costes internos y relacionales. Por eso el foco no es solo expresar más, sino identificar en qué momento del proceso emocional la persona empieza a cerrarse y entrenar alternativas más tempranas y flexibles. Es especialmente útil cuando la inhibición adopta forma de autocontrol rígido, racionalización o minimización sistemática de la emoción.",
+      "focoMJPS": ["RE", "N", "RI", "AG"],
+      "tecnicasRelacionadas": [
+        "m_gross_detectar_sesgos_atencionales",
+        "m_gross_focalizar_atencion",
+        "m_gross_redirigir_atencion",
+        "m_gross_generar_reinterpretaciones",
+        "m_gross_cuestionar_interpretacion",
+        "m_gross_modificar_contexto"
       ]
     },
     {
-      "modelo": "Terapia de Aceptación y Compromiso (ACT)",
-      "tecnicas": [
-        "aceptacion_experiencial",
-        "defusion_cognitiva",
-        "contacto_con_el_momento_presente"
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "bloquear_evitacion_experiencial",
+        "aumentar_disposicion_afectiva",
+        "desfusionar_reglas_de_control",
+        "reactivar_expresion_valiosa"
+      ],
+      "explicacion": "ACT entiende la inhibición emocional como una forma de evitación experiencial sostenida por fusión con reglas del tipo 'no debo sentir', 'no debo mostrarme' o 'primero he de controlarme'. Interviene cambiando la relación con la emoción y con esas reglas, para que la persona pueda hacer espacio a la experiencia interna sin organizar su vida alrededor de bloquearla. Es especialmente útil cuando la inhibición está sostenida por miedo al malestar, autoexigencia de control o vida gobernada por protección interna.",
+      "focoMJPS": ["RI", "RE", "AG", "N", "I"],
+      "tecnicasRelacionadas": [
+        "p_act_evitacion_experiencial",
+        "p_act_creativa_desesperanza",
+        "p_act_aceptacion",
+        "p_act_defusion",
+        "p_act_presencia",
+        "m_act_estoy_teniendo_el_pensamiento",
+        "m_act_estoy_dispuesto",
+        "m_act_quedarse_con",
+        "m_act_nominar_evitacion"
       ]
     },
     {
-      "modelo": "Mentalización (MBT)",
-      "tecnicas": [
-        "clarificacion_estados_internos",
-        "reflexion_afectiva",
-        "marcaje_emocional"
+      "modeloId": "cft-gilbert-2009",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "reducir_verguenza",
+        "regular_amenaza",
+        "desactivar_autoataque",
+        "facilitar_seguridad_afiliativa"
+      ],
+      "explicacion": "CFT entiende muchos casos de inhibición emocional como respuestas organizadas por amenaza, vergüenza y miedo a la vulnerabilidad, donde sentir o mostrar emoción se asocia a exposición, debilidad o humillación. Interviene desarrollando una base interna más segura y compasiva que permita acercarse a la emoción sin colapso ni dureza defensiva. Es especialmente útil cuando la inhibición está atravesada por autocrítica, vergüenza, miedo a necesitar o temor a la compasión.",
+      "focoMJPS": ["RE", "RI", "I", "R"],
+      "tecnicasRelacionadas": [
+        "p_cft_formulacion_compasiva",
+        "p_cft_psicoeducacion_tres_sistemas",
+        "p_cft_self_compasivo",
+        "p_cft_trabajo_critico",
+        "p_cft_miedo_compasion",
+        "m_cft_soothing_rhythm",
+        "m_cft_tono_compasivo",
+        "m_cft_validacion_no_culpa",
+        "m_cft_distinguir_compasion_indulgencia"
       ]
     },
     {
-      "modelo": "Psicoterapia Psicodinámica",
-      "tecnicas": [
-        "interpretacion_defensas",
-        "analisis_evitar_afecto",
-        "hacer_consciente_lo_implícito"
+      "modeloId": "metacognitive-interpersonal-therapy-dimaggio-montano-2013",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "rotular_estados_internos",
+        "diferenciar_emociones",
+        "integrar_experiencia_afectiva",
+        "flexibilizar_guiones_interpersonales"
+      ],
+      "explicacion": "La MIT entiende esta subárea como un problema de metacognición afectiva e integración de estados mentales: la persona siente, pero no logra identificar, nombrar, organizar o usar esa información para guiarse. El foco está en volver pensable la experiencia emocional y conectarla con narrativa, necesidades y acción interpersonal. Es especialmente útil cuando la inhibición se mezcla con confusión afectiva, pobreza de rotulación o patrones relacionales rígidos.",
+      "focoMJPS": ["N", "RI", "I", "R", "RE"],
+      "tecnicasRelacionadas": [
+        "p_mit_evaluacion_metacognitiva",
+        "p_mit_narrativa_self",
+        "p_mit_diferenciacion_estados",
+        "p_mit_integracion_estados",
+        "m_mit_rotular_emocion",
+        "m_mit_diferenciar_emociones",
+        "m_mit_vincular_emocion_evento",
+        "m_mit_chequeo_estado_mental"
       ]
     },
     {
-      "modelo": "Terapia Cognitiva",
-      "tecnicas": [
-        "reconocimiento_emocional",
-        "restructuracion_creencias_sobre_emociones"
+      "modeloId": "terapia-narrativa-white-epston",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "externalizar_inhibicion",
+        "deconstruir_reglas_emocionales",
+        "reautorizar_expresion_preferida",
+        "restaurar_agencia_identitaria"
+      ],
+      "explicacion": "La terapia narrativa entiende la inhibición emocional como una historia dominante sobre lo que se puede sentir, mostrar o necesitar, frecuentemente sostenida por mandatos relacionales y culturales. Interviene separando a la persona del patrón inhibitorio y recuperando episodios en los que pudo expresarse, sentir o vincularse de forma más viva y propia. Es especialmente útil cuando la inhibición está organizada por identidad sobreadaptada, discursos familiares o vergüenza moral sobre la emoción.",
+      "focoMJPS": ["N", "I", "R", "AG"],
+      "tecnicasRelacionadas": [
+        "p_nar_externalizacion",
+        "p_nar_deconstruccion",
+        "p_nar_resultados_unicos",
+        "p_nar_reautoria",
+        "p_nar_identidad_narrativa",
+        "p_nar_agencia_responsabilidad",
+        "m_nar_reformulacion_historia",
+        "m_nar_carta_self_preferido",
+        "m_nar_micro_documentos"
       ]
     }
   ],
-  "objetivoTerapeutico": "Restablecer el acceso, la diferenciación y la expresión funcional de la experiencia emocional, reduciendo la evitación y aumentando la integración entre emoción, cognición y acción.",
-  "criteriosCambio": [
-    "Mayor capacidad para identificar y nombrar emociones",
-    "Incremento en la expresión emocional ajustada",
-    "Reducción del embotamiento o desconexión emocional",
-    "Mayor tolerancia a emociones intensas",
-    "Disminución de la evitación experiencial",
-    "Uso de la emoción como guía adaptativa"
+  "nodosTransversalesImportantes": [
+    {
+      "id": "supresion_expresiva",
+      "descripcion": "Bloqueo o contención sistemática de la expresión emocional visible, aunque la activación interna siga presente."
+    },
+    {
+      "id": "evitacion_experiencial",
+      "descripcion": "Tendencia a organizar la conducta en torno a no sentir, no mostrar o no contactar con estados internos difíciles."
+    },
+    {
+      "id": "verguenza",
+      "descripcion": "Vivencia de exposición, defecto o indignidad que hace peligrosa la vulnerabilidad emocional."
+    },
+    {
+      "id": "hipercontrol",
+      "descripcion": "Necesidad rígida de mantener orden interno, compostura o dominio sobre la experiencia afectiva."
+    },
+    {
+      "id": "desconexion_interoceptiva",
+      "descripcion": "Separación entre activación corporal y reconocimiento consciente del estado emocional."
+    },
+    {
+      "id": "autosuficiencia_defensiva",
+      "descripcion": "Posición identitaria que inhibe mostrar necesidad, dependencia, dolor o búsqueda de consuelo."
+    },
+    {
+      "id": "guiones_relacionales_inhibitorios",
+      "descripcion": "Patrones aprendidos en los que expresar emoción se asocia a rechazo, invasión, humillación o descontrol."
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿Qué emoción concreta queda más inhibida: tristeza, rabia, miedo, ternura, necesidad o varias a la vez?",
+    "¿Qué intenta evitar la persona cuando se cierra emocionalmente?",
+    "¿La inhibición ocurre más por vergüenza, por miedo al conflicto, por autosuficiencia o por desconexión interna?",
+    "¿Qué regla interna organiza el patrón: no molestar, no perder el control, no necesitar, no mostrar debilidad?",
+    "¿La emoción se siente pero no se expresa, o directamente cuesta acceder a ella?",
+    "¿Qué obtiene a corto plazo al bloquear lo que siente?",
+    "¿En qué contextos o relaciones aumenta más la inhibición emocional?",
+    "¿Qué historia relacional enseñó que expresar afecto, dolor o enfado era peligroso o inútil?",
+    "¿Qué coste tiene este patrón en intimidad, agencia, salud corporal y autocomprensión?",
+    "¿Qué forma pequeña de contacto o expresión emocional sería hoy tolerable y significativa?"
+  ],
+  "criteriosDeProgreso": [
+    "identifica con más precisión qué siente y cuándo lo siente",
+    "disminuye la necesidad automática de bloquear o minimizar la emoción",
+    "tolera mejor la activación afectiva sin cerrarse de inmediato",
+    "expresa tristeza, enfado, miedo o necesidad de forma más ajustada",
+    "reduce la intelectualización como sustituto rígido del contacto emocional",
+    "pide apoyo o consuelo con menos vergüenza defensiva",
+    "aumenta la conexión entre sensación corporal, emoción y significado personal",
+    "diferencia mejor control funcional de supresión crónica",
+    "mejora la cercanía relacional sin colapsar en sobreexposición",
+    "aparece una relación interna menos punitiva y más permisiva con la vulnerabilidad"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundir inhibición emocional con frialdad rasgo o falta real de afecto",
+    "confundirla con dificultad para identificar emociones cuando el núcleo es defensa y no solo déficit",
+    "forzar catarsis o expresión intensa sin trabajar seguridad, función y ventana de tolerancia",
+    "tratarla solo como problema cognitivo y perder vergüenza, amenaza y aprendizaje relacional",
+    "premiar la contención como madurez sin ver su coste clínico y vincular",
+    "confundir regulación sana con bloqueo crónico de la experiencia afectiva",
+    "interpretar la desconexión como resistencia voluntaria en lugar de protección aprendida",
+    "intervenir solo sobre expresión externa sin restaurar acceso interno y simbolización emocional"
   ]
 }
