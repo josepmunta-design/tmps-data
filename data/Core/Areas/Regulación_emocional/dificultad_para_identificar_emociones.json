@@ -81,96 +81,96 @@
 
   "procesosDominantesMJPS": ["AP", "RE", "N", "I"],
 
-  "modelosRelevantes": [
-    {
-      "modeloId": "modelo-procesual-regulacion-emocional-gross-1998",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "clarificar_emocion",
-        "etiquetar_emocion",
-        "discriminar_respuesta_emocional",
-        "facilitar_conciencia_emocional"
-      ],
-      "explicacion": "El modelo de  sitúa la identificación emocional como paso previo a cualquier regulación eficaz. Sin diferenciación emocional, las estrategias reguladoras fallan o se aplican de forma inespecífica.",
-      "focoMJPS": ["RE", "AP", "N"],
-      "tecnicasRelacionadas": [
-        "p_gross_monitorizacion_emocional",
-        "m_gross_nombrar_emocion",
-        "m_gross_diferenciar_emociones"
-      ]
-    },
-    {
-      "modeloId": "terapia-dialectico-conductual-linehan-1993",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "entrenar_identificacion_emocional",
-        "mapear_componentes_emocion",
-        "psicoeducar_funcion_emocional",
-        "aumentar_conciencia_emocional"
-      ],
-      "explicacion": "DBT de  trabaja explícitamente el reconocimiento y etiquetado de emociones como habilidad básica para regularlas.",
-      "focoMJPS": ["RE", "AP"],
-      "tecnicasRelacionadas": [
-        "p_dbt_educacion_emocional",
-        "p_dbt_registro_emocional",
-        "m_dbt_identificar_emocion",
-        "m_dbt_funcion_emocion"
-      ]
-    },
-    {
-      "modeloId": "terapia-focalizada-en-la-emocion-greenberg",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "acceder_experiencia_emocional",
-        "diferenciar_emociones",
-        "simbolizar_experiencia",
-        "transformar_emocion"
-      ],
-      "explicacion": "EFT de  aborda directamente la diferenciación emocional a través del acceso experiencial guiado.",
-      "focoMJPS": ["AP", "RE", "I"],
-      "tecnicasRelacionadas": [
-        "p_eft_focusing",
-        "p_eft_evocacion_emocional",
-        "m_eft_nombrar_emocion",
-        "m_eft_diferenciar_emocion"
-      ]
-    },
-    {
-      "modeloId": "mentalization-based-treatment-bateman-fonagy",
-      "pesoModelo": 4,
-      "tipoOperacion": [
-        "mentalizar_estado_interno",
-        "explorar_emocion",
-        "diferenciar_emocion_pensamiento",
-        "aumentar_reflexividad"
-      ],
-      "explicacion": "MBT de  y  trabaja la identificación emocional como parte de la capacidad de mentalización.",
-      "focoMJPS": ["RI", "I", "N"],
-      "tecnicasRelacionadas": [
-        "p_mbt_exploracion_estado_mental",
-        "m_mbt_que_sientes",
-        "m_mbt_diferenciar_pensamiento_emocion"
-      ]
-    },
-    {
-      "modeloId": "mindfulness-mbsr-contemplativo-1979",
-      "pesoModelo": 3,
-      "tipoOperacion": [
-        "observar_experiencia_interna",
-        "diferenciar_componentes",
-        "reducir_evitar_experiencia",
-        "aumentar_conciencia_interoceptiva"
-      ],
-      "explicacion": "El mindfulness de  facilita la diferenciación emocional al entrenar la observación no reactiva de la experiencia interna.",
-      "focoMJPS": ["AP", "RE"],
-      "tecnicasRelacionadas": [
-        "p_mbsr_body_scan",
-        "p_mbsr_observacion_emocional",
-        "m_mbsr_notar_experiencia",
-        "m_mbsr_etiquetar_sin_juzgar"
-      ]
-    }
-  ],
+ "modelosRelevantes": [
+  {
+    "modeloId": "modelo-procesual-regulacion-emocional-gross-1998",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "clarificar_emocion",
+      "etiquetar_emocion",
+      "discriminar_respuesta_emocional",
+      "facilitar_conciencia_emocional"
+    ],
+    "explicacion": "El modelo de  conceptualiza la dificultad para identificar emociones como un fallo en las fases tempranas del proceso emocional, especialmente en la atención y la evaluación de la respuesta afectiva. Cuando la persona no discrimina ni etiqueta con precisión lo que siente, pierde acceso a puntos clave de intervención reguladora, lo que conduce a respuestas emocionales difusas, mal moduladas o desajustadas. El problema no es solo de intensidad, sino de falta de especificidad en el procesamiento emocional.",
+    "focoMJPS": ["RE", "AP", "N"],
+    "tecnicasRelacionadas": [
+      "p_gross_monitorizacion_emocional",
+      "m_gross_nombrar_emocion",
+      "m_gross_diferenciar_emociones"
+    ]
+  },
+  {
+    "modeloId": "terapia-dialectico-conductual-linehan-1993",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "entrenar_identificacion_emocional",
+      "mapear_componentes_emocion",
+      "psicoeducar_funcion_emocional",
+      "aumentar_conciencia_emocional"
+    ],
+    "explicacion": "La DBT de  entiende la dificultad para identificar emociones como parte de un déficit en habilidades básicas de regulación emocional dentro de un sistema caracterizado por alta sensibilidad emocional y bajo control modulador. La persona experimenta activación intensa pero carece de las habilidades necesarias para reconocer, etiquetar y comprender sus estados internos, lo que incrementa la desregulación y la impulsividad. La identificación emocional se conceptualiza como una habilidad que debe ser entrenada explícitamente.",
+    "focoMJPS": ["RE", "AP"],
+    "tecnicasRelacionadas": [
+      "p_dbt_educacion_emocional",
+      "p_dbt_registro_emocional",
+      "m_dbt_identificar_emocion",
+      "m_dbt_funcion_emocion"
+    ]
+  },
+  {
+    "modeloId": "terapia-focalizada-en-la-emocion-greenberg",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "acceder_experiencia_emocional",
+      "diferenciar_emociones",
+      "simbolizar_experiencia",
+      "transformar_emocion"
+    ],
+    "explicacion": "La EFT de  conceptualiza esta dificultad como un problema de acceso y simbolización de la experiencia emocional. La emoción está presente pero no ha sido suficientemente procesada a nivel experiencial para diferenciarse y organizarse en categorías significativas. El problema no es ausencia de emoción, sino falta de contacto claro con ella, lo que impide su transformación adaptativa.",
+    "focoMJPS": ["AP", "RE", "I"],
+    "tecnicasRelacionadas": [
+      "p_eft_focusing",
+      "p_eft_evocacion_emocional",
+      "m_eft_nombrar_emocion",
+      "m_eft_diferenciar_emocion"
+    ]
+  },
+  {
+    "modeloId": "mentalization-based-treatment-bateman-fonagy",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "mentalizar_estado_interno",
+      "explorar_emocion",
+      "diferenciar_emocion_pensamiento",
+      "aumentar_reflexividad"
+    ],
+    "explicacion": "La MBT de  y  entiende la dificultad para identificar emociones como un fallo en la capacidad de mentalización, es decir, en la habilidad para representar y comprender los propios estados internos. La persona experimenta estados afectivos pero no logra organizarlos como experiencias mentales diferenciadas, lo que genera confusión entre emoción, pensamiento y sensación, especialmente bajo activación interpersonal.",
+    "focoMJPS": ["RI", "I", "N"],
+    "tecnicasRelacionadas": [
+      "p_mbt_exploracion_estado_mental",
+      "m_mbt_que_sientes",
+      "m_mbt_diferenciar_pensamiento_emocion"
+    ]
+  },
+  {
+    "modeloId": "mindfulness-mbsr-contemplativo-1979",
+    "pesoModelo": 3,
+    "tipoOperacion": [
+      "observar_experiencia_interna",
+      "diferenciar_componentes",
+      "reducir_evitar_experiencia",
+      "aumentar_conciencia_interoceptiva"
+    ],
+    "explicacion": "El enfoque de mindfulness desarrollado por  conceptualiza esta dificultad como una falta de atención sostenida y no reactiva a la experiencia interna. La persona no discrimina sus estados emocionales porque no permanece el tiempo suficiente en contacto con ellos sin evitarlos o reaccionar automáticamente. El problema es, por tanto, un déficit en la conciencia momento a momento de la experiencia interna, más que en su contenido.",
+    "focoMJPS": ["AP", "RE"],
+    "tecnicasRelacionadas": [
+      "p_mbsr_body_scan",
+      "p_mbsr_observacion_emocional",
+      "m_mbsr_notar_experiencia",
+      "m_mbsr_etiquetar_sin_juzgar"
+    ]
+  }
+],
 
   "nodosTransversalesImportantes": [
     {
