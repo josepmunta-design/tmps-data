@@ -1,0 +1,236 @@
+{
+  "id": "dificultad_identificar_emociones",
+  "areaId": "regulacion_emocional",
+  "label": "Dificultad para identificar emociones",
+  "definicion": "Patrón de bajo acceso, diferenciación o etiquetado de los estados emocionales internos, en el que la persona experimenta activación afectiva sin poder reconocer con claridad qué emoción está sintiendo ni discriminar sus componentes.",
+  "descripcionClinica": "Clínicamente, este patrón aparece como confusión emocional, uso de etiquetas globales ('me siento mal'), dificultad para distinguir entre emociones cercanas (ansiedad vs. tristeza, enfado vs. frustración) y tendencia a traducir la experiencia emocional en sensaciones físicas o pensamientos. No se trata solo de falta de vocabulario, sino de un déficit en el acceso experiencial y en la organización de la experiencia interna. Esto compromete la regulación emocional, ya que no se puede modular lo que no se identifica, y genera problemas interpersonales al dificultar la comunicación emocional. Puede adoptar formas más desconectadas (tipo alexitimia), más cognitivas (intelectualización sin contacto emocional) o más somáticas (vivencia emocional como malestar físico inespecífico). A corto plazo, la no identificación puede reducir la intensidad subjetiva o evitar estados dolorosos; a largo plazo, mantiene la desregulación, la confusión interna y la dependencia de claves externas.",
+  
+  "subtiposClinicos": [
+    {
+      "id": "alexitimico_desconectado",
+      "label": "Desconectado-alexitímico",
+      "descripcion": "Predomina la dificultad para acceder a la experiencia emocional interna, con vivencia plana, corporal o poco diferenciada."
+    },
+    {
+      "id": "cognitivo_intelectualizado",
+      "label": "Cognitivo-intelectualizado",
+      "descripcion": "Predomina el análisis cognitivo de la experiencia sin contacto emocional directo."
+    },
+    {
+      "id": "somatico_indiferenciado",
+      "label": "Somático-indiferenciado",
+      "descripcion": "Las emociones se experimentan principalmente como sensaciones físicas difusas sin etiquetado emocional."
+    },
+    {
+      "id": "confusion_emocional",
+      "label": "Confusión emocional",
+      "descripcion": "La persona accede a emociones pero no logra diferenciarlas ni organizarlas con claridad."
+    }
+  ],
+
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "dificultad para nombrar emociones específicas",
+      "confusión entre emoción y pensamiento",
+      "uso de etiquetas globales ('mal', 'raro')",
+      "dificultad para discriminar estados emocionales",
+      "dependencia de claves externas para interpretar lo que siente"
+    ],
+    "emocionales": [
+      "sensación difusa de malestar",
+      "confusión emocional",
+      "desconexión parcial de la experiencia interna",
+      "dificultad para reconocer cambios emocionales",
+      "inseguridad sobre lo que se siente"
+    ],
+    "conductuales": [
+      "bloqueo al describir emociones",
+      "evitación de conversaciones emocionales",
+      "búsqueda de explicaciones racionales en lugar de experienciales",
+      "respuestas emocionales desajustadas al contexto",
+      "dificultad para pedir ayuda emocional"
+    ],
+    "relacionales": [
+      "dificultad para comunicar necesidades emocionales",
+      "malentendidos interpersonales",
+      "sensación de no ser comprendido",
+      "desconexión emocional en vínculos",
+      "dependencia de otros para interpretar estados internos"
+    ],
+    "somaticos": [
+      "activación fisiológica sin significado claro",
+      "sensaciones corporales difusas",
+      "tensión sin identificación emocional",
+      "somatización de estados emocionales",
+      "dificultad para diferenciar señales corporales"
+    ]
+  },
+
+  "mecanismosMantenedores": [
+    "evitación experiencial del mundo emocional",
+    "bajo aprendizaje emocional temprano",
+    "invalidación emocional en el entorno",
+    "predominio del procesamiento cognitivo sobre el experiencial",
+    "desconexión interoceptiva",
+    "sobreactivación fisiológica que dificulta la discriminación",
+    "uso de lenguaje emocional pobre o inespecífico",
+    "falta de práctica en diferenciar emociones",
+    "reducción del contacto con señales internas",
+    "dependencia de interpretación externa"
+  ],
+
+  "procesosDominantesMJPS": ["AP", "RE", "N", "I"],
+
+  "modelosRelevantes": [
+    {
+      "modeloId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "clarificar_emocion",
+        "etiquetar_emocion",
+        "discriminar_respuesta_emocional",
+        "facilitar_conciencia_emocional"
+      ],
+      "explicacion": "El modelo de  sitúa la identificación emocional como paso previo a cualquier regulación eficaz. Sin diferenciación emocional, las estrategias reguladoras fallan o se aplican de forma inespecífica.",
+      "focoMJPS": ["RE", "AP", "N"],
+      "tecnicasRelacionadas": [
+        "p_gross_monitorizacion_emocional",
+        "m_gross_nombrar_emocion",
+        "m_gross_diferenciar_emociones"
+      ]
+    },
+    {
+      "modeloId": "terapia-dialectico-conductual-linehan-1993",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "entrenar_identificacion_emocional",
+        "mapear_componentes_emocion",
+        "psicoeducar_funcion_emocional",
+        "aumentar_conciencia_emocional"
+      ],
+      "explicacion": "DBT de  trabaja explícitamente el reconocimiento y etiquetado de emociones como habilidad básica para regularlas.",
+      "focoMJPS": ["RE", "AP"],
+      "tecnicasRelacionadas": [
+        "p_dbt_educacion_emocional",
+        "p_dbt_registro_emocional",
+        "m_dbt_identificar_emocion",
+        "m_dbt_funcion_emocion"
+      ]
+    },
+    {
+      "modeloId": "terapia-focalizada-en-la-emocion-greenberg",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "acceder_experiencia_emocional",
+        "diferenciar_emociones",
+        "simbolizar_experiencia",
+        "transformar_emocion"
+      ],
+      "explicacion": "EFT de  aborda directamente la diferenciación emocional a través del acceso experiencial guiado.",
+      "focoMJPS": ["AP", "RE", "I"],
+      "tecnicasRelacionadas": [
+        "p_eft_focusing",
+        "p_eft_evocacion_emocional",
+        "m_eft_nombrar_emocion",
+        "m_eft_diferenciar_emocion"
+      ]
+    },
+    {
+      "modeloId": "mentalization-based-treatment-bateman-fonagy",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "mentalizar_estado_interno",
+        "explorar_emocion",
+        "diferenciar_emocion_pensamiento",
+        "aumentar_reflexividad"
+      ],
+      "explicacion": "MBT de  y  trabaja la identificación emocional como parte de la capacidad de mentalización.",
+      "focoMJPS": ["RI", "I", "N"],
+      "tecnicasRelacionadas": [
+        "p_mbt_exploracion_estado_mental",
+        "m_mbt_que_sientes",
+        "m_mbt_diferenciar_pensamiento_emocion"
+      ]
+    },
+    {
+      "modeloId": "mindfulness-mbsr-contemplativo-1979",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "observar_experiencia_interna",
+        "diferenciar_componentes",
+        "reducir_evitar_experiencia",
+        "aumentar_conciencia_interoceptiva"
+      ],
+      "explicacion": "El mindfulness de  facilita la diferenciación emocional al entrenar la observación no reactiva de la experiencia interna.",
+      "focoMJPS": ["AP", "RE"],
+      "tecnicasRelacionadas": [
+        "p_mbsr_body_scan",
+        "p_mbsr_observacion_emocional",
+        "m_mbsr_notar_experiencia",
+        "m_mbsr_etiquetar_sin_juzgar"
+      ]
+    }
+  ],
+
+  "nodosTransversalesImportantes": [
+    {
+      "id": "baja_conciencia_emocional",
+      "descripcion": "Dificultad general para acceder y reconocer estados emocionales internos."
+    },
+    {
+      "id": "alexitimia",
+      "descripcion": "Déficit marcado en la identificación y descripción de emociones."
+    },
+    {
+      "id": "desconexion_interoceptiva",
+      "descripcion": "Dificultad para percibir y usar señales corporales internas."
+    },
+    {
+      "id": "evitacion_experiencial",
+      "descripcion": "Tendencia a evitar el contacto con estados internos."
+    },
+    {
+      "id": "intelectualizacion",
+      "descripcion": "Sustitución del contacto emocional por análisis cognitivo."
+    }
+  ],
+
+  "preguntasDeFormulacion": [
+    "¿Qué notas en tu cuerpo ahora mismo?",
+    "Si tuvieras que ponerle un nombre más concreto a eso, ¿cuál sería?",
+    "¿Qué diferencia hay entre lo que piensas y lo que sientes aquí?",
+    "¿Qué emoción se parece más a esto?",
+    "¿Cuándo aprendiste a no prestar atención a lo que sientes?",
+    "¿Qué pasa si intentas acercarte más a esa experiencia?",
+    "¿Esto es una emoción, un pensamiento o una sensación corporal?",
+    "¿Qué te ayudaría a entender mejor lo que estás sintiendo?",
+    "¿En qué situaciones aparece más esta confusión?",
+    "¿Qué señales internas podrías usar como pista?"
+  ],
+
+  "criteriosDeProgreso": [
+    "identifica emociones con mayor precisión",
+    "diferencia entre emociones similares",
+    "usa lenguaje emocional más específico",
+    "conecta sensaciones corporales con emociones",
+    "reduce confusión entre pensamiento y emoción",
+    "aumenta la conciencia de cambios emocionales",
+    "mejora la comunicación emocional",
+    "aplica regulación emocional más específica",
+    "tolera mejor el contacto con emociones",
+    "requiere menos claves externas para interpretar su estado interno"
+  ],
+
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundirlo con simple falta de vocabulario emocional",
+    "intervenir solo a nivel cognitivo sin acceso experiencial",
+    "tratarlo como evitación cuando hay déficit de acceso real",
+    "sobrecargar con psicoeducación sin práctica experiencial",
+    "confundirlo con somatización primaria",
+    "ignorar el papel de la interocepción",
+    "forzar identificación emocional prematura",
+    "no diferenciar entre alexitimia y evitación emocional",
+    "aplicar técnicas de regulación sin identificación previa",
+    "reducirlo a un problema menor cuando es nuclear en la regulación"
+  ]
+}
