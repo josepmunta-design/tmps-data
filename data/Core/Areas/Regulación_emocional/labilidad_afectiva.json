@@ -1,0 +1,216 @@
+{
+  "id": "labilidad_afectiva",
+  "areaId": "regulacion_emocional",
+  "label": "Labilidad afectiva",
+  "definicion": "Patrón de inestabilidad emocional caracterizado por cambios rápidos, intensos y poco predecibles en el estado afectivo, con dificultad para mantener una continuidad emocional acorde al contexto.",
+  "descripcionClinica": "Clínicamente, la labilidad afectiva se manifiesta como oscilaciones emocionales bruscas, reactividad elevada a estímulos internos o externos y dificultad para sostener un estado emocional estable. La persona puede pasar rápidamente de la calma al enfado, de la tristeza a la activación, o experimentar cambios afectivos aparentemente desproporcionados respecto a la situación. No se trata solo de intensidad emocional, sino de variabilidad y baja estabilidad en el tiempo. A corto plazo, estas oscilaciones pueden aliviar tensión o descargar activación; a largo plazo, generan desorganización interna, dificultades interpersonales y sensación de falta de control. Puede adoptar formas impulsivas (cambios rápidos con acción), reactivas (dependientes del entorno) o internas (cambios rápidos sin expresión conductual clara). A menudo se relaciona con déficits en modulación emocional, sensibilidad elevada a estímulos y dificultades en la integración de estados emocionales.",
+  
+  "subtiposClinicos": [
+    {
+      "id": "reactividad_externa",
+      "label": "Reactiva a estímulos externos",
+      "descripcion": "Los cambios emocionales están fuertemente ligados a eventos interpersonales o contextuales."
+    },
+    {
+      "id": "oscilacion_interna",
+      "label": "Oscilación interna autónoma",
+      "descripcion": "Cambios emocionales rápidos sin desencadenantes claros o con desencadenantes mínimos."
+    },
+    {
+      "id": "impulsiva_expresiva",
+      "label": "Impulsiva-expresiva",
+      "descripcion": "Los cambios emocionales se acompañan de conductas impulsivas o expresivas intensas."
+    },
+    {
+      "id": "contenida_inestable",
+      "label": "Contenida-inestable",
+      "descripcion": "La variabilidad emocional ocurre internamente sin expresión evidente, pero con gran inestabilidad subjetiva."
+    }
+  ],
+
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "sensación de inestabilidad emocional",
+      "dificultad para anticipar reacciones emocionales",
+      "percepción de pérdida de control interno",
+      "interpretaciones rápidas y cambiantes del entorno",
+      "dificultad para mantener perspectiva emocional"
+    ],
+    "emocionales": [
+      "cambios emocionales bruscos",
+      "reactividad elevada",
+      "intensidad emocional variable",
+      "inestabilidad afectiva",
+      "sensación de montaña rusa emocional"
+    ],
+    "conductuales": [
+      "respuestas emocionales impulsivas",
+      "cambios rápidos en conducta",
+      "dificultad para sostener decisiones",
+      "expresión emocional intensa o cambiante",
+      "oscilación entre acercamiento y evitación"
+    ],
+    "relacionales": [
+      "relaciones inestables",
+      "conflictos interpersonales frecuentes",
+      "reacciones emocionales desproporcionadas",
+      "dificultad para sostener vínculos estables",
+      "sensibilidad a cambios en el entorno social"
+    ],
+    "somaticos": [
+      "activación fisiológica fluctuante",
+      "cambios rápidos en tensión corporal",
+      "sensación de desregulación interna",
+      "oscilaciones en energía",
+      "reactividad corporal intensa"
+    ]
+  },
+
+  "mecanismosMantenedores": [
+    "baja capacidad de modulación emocional",
+    "alta sensibilidad a estímulos emocionales",
+    "déficit en regulación fisiológica",
+    "interpretación rápida y reactiva del entorno",
+    "dificultad para integrar estados emocionales",
+    "refuerzo de la descarga emocional inmediata",
+    "entornos invalidantes o impredecibles",
+    "falta de estrategias de regulación eficaces",
+    "sobreactivación del sistema emocional",
+    "escasa tolerancia a estados emocionales intermedios"
+  ],
+
+  "procesosDominantesMJPS": ["RE", "AP", "RI", "I"],
+
+  "modelosRelevantes": [
+    {
+      "modeloId": "terapia-dialectico-conductual-linehan-1993",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "modular_intensidad_emocional",
+        "reducir_reactividad",
+        "entrenar_regulacion_emocional",
+        "aumentar_tolerancia_malestar"
+      ],
+      "explicacion": "La DBT de  conceptualiza la labilidad como desregulación emocional producto de alta sensibilidad y baja modulación.",
+      "focoMJPS": ["RE", "AP"],
+      "tecnicasRelacionadas": [
+        "p_dbt_regulacion_emocional",
+        "p_dbt_tolerancia_malestar",
+        "m_dbt_opuesto_accion",
+        "m_dbt_identificar_emocion"
+      ]
+    },
+    {
+      "modeloId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "modular_respuesta_emocional",
+        "revaluar_estimulo",
+        "regular_activacion",
+        "intervenir_en_proceso_emocional"
+      ],
+      "explicacion": "El modelo de  permite intervenir en distintos puntos del proceso emocional para estabilizar la respuesta.",
+      "focoMJPS": ["RE", "N"],
+      "tecnicasRelacionadas": [
+        "p_gross_revaluacion_cognitiva",
+        "p_gross_modulacion_respuesta",
+        "m_gross_identificar_emocion",
+        "m_gross_reencuadre"
+      ]
+    },
+    {
+      "modeloId": "terapia-focalizada-en-la-emocion-greenberg",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "diferenciar_emociones",
+        "regular_experiencia_emocional",
+        "transformar_emocion",
+        "acceder_emocion_primaria"
+      ],
+      "explicacion": "EFT de  trabaja la labilidad ayudando a diferenciar y transformar emociones no reguladas.",
+      "focoMJPS": ["AP", "RE", "I"],
+      "tecnicasRelacionadas": [
+        "p_eft_evocacion_emocional",
+        "p_eft_transformacion_emocional",
+        "m_eft_diferenciar_emocion",
+        "m_eft_nombrar_emocion"
+      ]
+    },
+    {
+      "modeloId": "mindfulness-mbsr-contemplativo-1979",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "observar_sin_reaccion",
+        "estabilizar_atencion",
+        "reducir_reactividad",
+        "aumentar_regulacion_basica"
+      ],
+      "explicacion": "El mindfulness de  reduce la labilidad al aumentar la estabilidad atencional y disminuir la reactividad automática.",
+      "focoMJPS": ["AP", "RE"],
+      "tecnicasRelacionadas": [
+        "p_mbsr_meditacion",
+        "p_mbsr_body_scan",
+        "m_mbsr_observar_sin_juzgar",
+        "m_mbsr_volver_atencion"
+      ]
+    }
+  ],
+
+  "nodosTransversalesImportantes": [
+    {
+      "id": "reactividad_emocional",
+      "descripcion": "Respuesta emocional rápida e intensa ante estímulos."
+    },
+    {
+      "id": "inestabilidad_afectiva",
+      "descripcion": "Variabilidad elevada en estados emocionales."
+    },
+    {
+      "id": "desregulacion_emocional",
+      "descripcion": "Dificultad para modular intensidad y duración emocional."
+    },
+    {
+      "id": "impulsividad_emocional",
+      "descripcion": "Actuación rápida en respuesta a estados emocionales."
+    }
+  ],
+
+  "preguntasDeFormulacion": [
+    "¿Qué cambia exactamente cuando cambia tu emoción?",
+    "¿Cuánto tarda en cambiar tu estado emocional?",
+    "¿Qué lo desencadena normalmente?",
+    "¿Qué haces justo después del cambio?",
+    "¿Qué emoción aparece primero?",
+    "¿Qué emoción viene después?",
+    "¿Qué parte es intensidad y cuál cambio?",
+    "¿Puedes notar el momento exacto en que cambia?",
+    "¿Qué lo estabiliza aunque sea un poco?",
+    "¿Qué lo empeora claramente?"
+  ],
+
+  "criteriosDeProgreso": [
+    "mayor estabilidad emocional en el tiempo",
+    "reducción de cambios bruscos",
+    "mejor modulación de intensidad emocional",
+    "mayor conciencia de desencadenantes",
+    "incremento de regulación antes de reaccionar",
+    "reducción de conductas impulsivas",
+    "mayor continuidad emocional",
+    "capacidad de sostener estados emocionales",
+    "menor reactividad al entorno",
+    "mayor sensación de control interno"
+  ],
+
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundirlo con intensidad emocional sin inestabilidad",
+    "tratarlo como problema de personalidad en lugar de regulación",
+    "intervenir solo con control cognitivo",
+    "ignorar el componente fisiológico",
+    "confundirlo con impulsividad primaria",
+    "no diferenciarlo de cambios de estado de ánimo más lentos",
+    "sobrerregular sin permitir experiencia emocional",
+    "intervenir sin identificar desencadenantes",
+    "no trabajar la tolerancia emocional",
+    "reducirlo a falta de autocontrol"
+  ]
+}
