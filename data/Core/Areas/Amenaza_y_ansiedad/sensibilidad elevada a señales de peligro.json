@@ -1,0 +1,119 @@
+{
+  "id": "sensibilidad_elevada_senales_peligro",
+  "areaId": "amenaza_ansiedad",
+  "label": "Sensibilidad elevada a señales de peligro",
+  "definicion": "Umbral bajo para activar la respuesta de amenaza ante señales internas o externas mínimas, ambiguas o inciertas, con tendencia a generar falsos positivos de peligro.",
+  "descripcionClinica": "Clínicamente, esta subárea se manifiesta como una activación rápida y frecuente del sistema de alarma ante estímulos de baja intensidad o relevancia incierta. Pequeños cambios en el entorno, sensaciones corporales o pensamientos son interpretados como señales potenciales de peligro, generando una respuesta emocional desproporcionada. A diferencia de la hipervigilancia, el problema no es tanto el escaneo constante del entorno, sino la facilidad con la que la alarma se activa. Este patrón produce una experiencia de mundo impredecible y potencialmente peligroso, incluso en ausencia de amenazas claras, y suele alimentar otras formas de ansiedad como preocupación, pánico o evitación, aunque no se reduce a ellas.",
+  
+  "procesosDominantesMJPS": ["RE", "RF", "AP", "N"],
+
+  "modelosRelevantes": [
+    {
+      "modeloId": "emotion-regulation-therapy-mennin-fresco-2013",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "reducir_hiperreactividad_amenaza",
+        "regular_sensibilidad_emocional",
+        "flexibilizar_respuesta_alarma",
+        "modular_sesgo_deteccion"
+      ],
+      "explicacion": "ERT entiende esta subárea como una combinación de sensibilidad emocional elevada y sesgo atencional hacia amenaza que hace que el sistema se active con facilidad ante señales mínimas. El problema no es solo cognitivo ni conductual, sino un sistema motivacional orientado a la seguridad que reacciona de forma excesiva. El foco está en desarrollar regulación atencional y emocional que permita notar la activación sin amplificarla automáticamente.",
+      "focoMJPS": ["RE", "AP", "N"],
+      "tecnicasRelacionadas": [
+        "p_ert_orienting_allowing",
+        "m_ert_tiron_seguridad",
+        "m_ert_distanciamiento_preocupacion"
+      ]
+    },
+    {
+      "modeloId": "cft-gilbert-2009",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "regular_sistema_amenaza",
+        "reducir_disparo_automatico",
+        "incrementar_sistema_calma",
+        "equilibrar_motivacion_seguridad"
+      ],
+      "explicacion": "CFT conceptualiza esta subárea como un sistema de amenaza hiperactivado que se dispara con facilidad ante señales mínimas. La persona no necesita mucha evidencia para activar la alarma porque su sistema está calibrado hacia la detección de peligro. El foco está en reequilibrar los sistemas emocionales, desarrollando seguridad interna para que el umbral de activación sea menos reactivo.",
+      "focoMJPS": ["RE", "RF", "RI"],
+      "tecnicasRelacionadas": []
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "desactivar_lucha_con_activacion",
+        "permitir_respuesta_emocional",
+        "reducir_control_sobre_alarma",
+        "actuar_con_activacion_presente"
+      ],
+      "explicacion": "ACT entiende esta sensibilidad como parte de la condición humana amplificada por la lucha contra la experiencia interna. El problema no es que la alarma se active, sino que la persona intenta eliminarla o controlarla, lo que la amplifica. El foco está en cambiar la relación con la activación: permitir que aparezca sin escalarla ni organizar la conducta en torno a su eliminación.",
+      "focoMJPS": ["RE", "RI", "AG"],
+      "tecnicasRelacionadas": [
+        "p_act_aceptacion",
+        "p_act_defusion",
+        "p_act_accion_comprometida"
+      ]
+    },
+    {
+      "modeloId": "cbt-inhibicion-miedo-craske-2014",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "recalibrar_sistema_alarma",
+        "reducir_falsos_positivos",
+        "exponer_a_senales_bajas",
+        "generar_aprendizaje_seguridad"
+      ],
+      "explicacion": "Desde este modelo, la sensibilidad elevada se mantiene porque el sistema de miedo ha aprendido a responder de forma excesiva y no ha actualizado adecuadamente la probabilidad real de peligro. El foco está en exponer al sistema a señales ambiguas o de baja intensidad sin evitación, permitiendo que se recalibre y reduzca la tasa de falsas alarmas.",
+      "focoMJPS": ["RE", "AP", "AG"],
+      "tecnicasRelacionadas": [
+        "p_craske_violacion_expectativas",
+        "p_craske_variabilidad_contextual"
+      ]
+    }
+  ],
+
+  "nodosTransversalesImportantes": [
+    {
+      "id": "hiperreactividad_amenaza",
+      "descripcion": "Sistema de alarma que se activa con facilidad ante señales mínimas o ambiguas."
+    },
+    {
+      "id": "falsos_positivos_peligro",
+      "descripcion": "Detección de peligro en ausencia de amenaza real o con evidencia insuficiente."
+    },
+    {
+      "id": "sensibilidad_emocional_elevada",
+      "descripcion": "Tendencia a responder con intensidad y rapidez a estímulos internos o externos."
+    },
+    {
+      "id": "intolerancia_incertidumbre",
+      "descripcion": "Dificultad para tolerar ambigüedad que favorece la activación temprana del sistema de alarma."
+    }
+  ],
+
+  "preguntasDeFormulacion": [
+    "¿Con qué facilidad se activa la alarma ante estímulos pequeños o ambiguos?",
+    "¿Qué tipo de señales disparan más rápidamente la respuesta de amenaza?",
+    "¿La activación aparece antes de que haya una evaluación consciente del peligro?",
+    "¿Qué hace la persona cuando aparece la activación: la amplifica o la deja pasar?",
+    "¿Este patrón alimenta otras formas de ansiedad como preocupación o evitación?"
+  ],
+
+  "criteriosDeProgreso": [
+    "disminuye la activación ante señales de baja intensidad",
+    "aumenta el umbral necesario para disparar la alarma",
+    "reduce la frecuencia de falsas alarmas",
+    "tolera mejor señales ambiguas sin activar respuesta intensa",
+    "mantiene conducta flexible a pesar de activación inicial",
+    "recupera más rápido tras la activación"
+  ],
+
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundirla con hipervigilancia y centrar la intervención en atención en lugar de reactividad",
+    "tratarla como ansiedad generalizada y enfocarse en preocupación en vez de umbral de activación",
+    "interpretarla como problema cognitivo cuando el núcleo es reactividad del sistema",
+    "intentar eliminar la activación en lugar de recalibrar el sistema de alarma",
+    "ignorar que puede ser base transdiagnóstica de múltiples problemas de ansiedad"
+  ]
+}
