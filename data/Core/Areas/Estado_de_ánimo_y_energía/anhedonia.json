@@ -1,0 +1,122 @@
+{
+  "id": "anhedonia",
+  "areaId": "estado_animo_energia",
+  "label": "Anhedonia",
+  "definicion": "Dificultad o incapacidad para experimentar placer, interés o gratificación en actividades que previamente resultaban atractivas o significativas, afectando tanto a la anticipación como a la vivencia del disfrute.",
+  "descripcionClinica": "La anhedonia no se reduce a estar triste ni a tener baja energía. Clínicamente aparece como una desconexión del sistema de recompensa: la persona deja de sentir interés por iniciar actividades (componente anticipatorio), experimenta poco o ningún placer durante ellas (componente consumatorio) o no consolida la experiencia como valiosa para repetirla (aprendizaje de recompensa).\n\nPuede manifestarse como indiferencia emocional, pérdida de curiosidad, reducción del disfrute sensorial o afectivo, desconexión de intereses previos o sensación de que “nada merece la pena”. A menudo coexiste con bajo estado de ánimo, pero no son equivalentes: un paciente puede no sentirse especialmente triste y, sin embargo, no disfrutar de nada.\n\nA nivel funcional, la anhedonia suele implicar una ruptura del bucle motivación–acción–recompensa: se inicia menos conducta, se obtiene menos refuerzo y se debilita progresivamente la capacidad del sistema para responder al mismo. También puede haber interferencias cognitivas (anticipación negativa), evitación experiencial (desconexión del disfrute) o patrones de sobrecontrol que inhiben la respuesta hedónica.",
+  "indicadores": [
+    "Pérdida de interés por actividades previamente gratificantes",
+    "Dificultad para disfrutar incluso cuando se realizan actividades agradables",
+    "Sensación de indiferencia o embotamiento ante estímulos positivos",
+    "Reducción de la curiosidad o exploración",
+    "Desconexión del placer corporal o sensorial",
+    "Pensamientos tipo “nada me llena”, “todo me da igual”",
+    "Disminución de la motivación ligada a recompensa"
+  ],
+  "factoresMantenimiento": [
+    "Reducción de la exposición a estímulos potencialmente reforzantes",
+    "Sesgos cognitivos que anticipan baja recompensa o inutilidad",
+    "Evitación experiencial del contacto con sensaciones positivas o activación",
+    "Sobrecontrol emocional que inhibe la respuesta hedónica",
+    "Aprendizaje de impotencia o baja expectativa de eficacia",
+    "Desconexión narrativa de lo valioso o significativo",
+    "Déficit en la codificación o consolidación de experiencias gratificantes"
+  ],
+  "modelosRelevantes": [
+    {
+      "modeloId": "activacion-conductual-jacobson-1996",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "restaurar_contacto_con_refuerzo",
+        "incrementar_exposicion_a_estimulos_placenteros",
+        "reactivar_circuito_conducta_recompensa",
+        "romper_evitar_bajo_refuerzo"
+      ],
+      "explicacion": "La Activación Conductual conceptualiza la anhedonia como consecuencia directa de la pérdida de contacto con contingencias reforzantes. No se asume que el sistema de placer esté 'roto', sino infraestimulado y progresivamente debilitado por la retirada conductual. Cuanto menos se expone la persona a contextos potencialmente gratificantes, menor es la probabilidad de experimentar recompensa, lo que a su vez reduce aún más la conducta.\n\nEl foco de intervención es conductual y precede al cambio subjetivo: aumentar sistemáticamente la exposición a actividades con potencial reforzante, incluso sin expectativa inicial de disfrute, para reactivar el circuito acción–recompensa. Es el modelo más central cuando la anhedonia se mantiene por empobrecimiento ambiental y evitación.",
+      "focoMJPS": ["AG", "RE", "N"],
+      "tecnicasRelacionadas": [
+        "p_ba_analisis_funcional"
+      ]
+    },
+    {
+      "modeloId": "terapia-cognitiva-beck-depresion-1967",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "modificar_expectativas_de_recompensa",
+        "reducir_sesgos_negativos_sobre_placer",
+        "cuestionar_anticipacion_de_no_disfrute",
+        "reabrir_posibilidad_de_gratificacion"
+      ],
+      "explicacion": "Desde Beck, la anhedonia no es solo falta de respuesta emocional, sino también el resultado de sesgos cognitivos que anticipan que las actividades no serán gratificantes, carecerán de sentido o confirmarán fracaso. Esto reduce la implicación conductual y distorsiona la experiencia, impidiendo registrar o amplificar posibles fuentes de placer.\n\nEl foco de cambio está en identificar y modificar estas anticipaciones negativas, facilitando que la persona vuelva a exponerse a experiencias potencialmente gratificantes con una expectativa menos cerrada. Es especialmente relevante cuando la anhedonia está mediada por creencias como “no voy a disfrutar”, “esto ya no es para mí” o “nada merece la pena”.",
+      "focoMJPS": ["N", "I", "RE"],
+      "tecnicasRelacionadas": [
+        "m_beck_registro_abc",
+        "m_beck_distorsiones",
+        "m_beck_prediccion"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "reducir_evitacion_experiencial",
+        "facilitar_contacto_con_experiencia",
+        "desfusionar_ideas_sobre_placer",
+        "activar_conducta_valiosa_sin_garantia_de_disfrute"
+      ],
+      "explicacion": "ACT entiende que la anhedonia puede mantenerse no solo por falta de refuerzo, sino por una relación evitativa con la experiencia interna. La persona puede desconectarse del momento presente, evaluar constantemente si está disfrutando o evitar exponerse a experiencias que podrían activar emociones intensas.\n\nEl foco no es forzar el placer, sino restaurar la capacidad de contacto con la experiencia tal como es, reduciendo la evitación y la fusión con pensamientos tipo “esto no me llena”. El disfrute reaparece como efecto secundario de una vida más abierta y comprometida, no como objetivo directo.",
+      "focoMJPS": ["RI", "RE", "AG", "N"],
+      "tecnicasRelacionadas": [
+        "p_act_defusion",
+        "p_act_aceptacion",
+        "p_act_valores",
+        "p_act_accion_comprometida"
+      ]
+    },
+    {
+      "modeloId": "cft-gilbert-2009",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "activar_sistema_afiliativo",
+        "reducir_inhibicion_del_placer_por_amenaza",
+        "facilitar_respuesta_calma_y_placer_seguro"
+      ],
+      "explicacion": "CFT aporta una clave distinta: la anhedonia puede derivar de una hiperactivación del sistema de amenaza que inhibe el sistema de calma y afiliación. En estos casos, el problema no es solo falta de estímulo positivo, sino incapacidad del organismo para registrar seguridad, bienestar o placer debido a un tono interno dominado por amenaza, vergüenza o autocrítica.\n\nEl foco está en desarrollar estados internos de seguridad y calidez que permitan reactivar la capacidad de experimentar placer, especialmente en personas con historia de vergüenza o autoataque.",
+      "focoMJPS": ["RE", "RI", "RF"],
+      "tecnicasRelacionadas": []
+    },
+    {
+      "modeloId": "aprendizaje-social-bandura-1977",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "restaurar_expectativa_de_refuerzo",
+        "incrementar_autoeficacia_en_experiencias_placenteras",
+        "facilitar_exploracion_y_exposicion"
+      ],
+      "explicacion": "Desde Bandura, la anhedonia puede estar mediada por una baja expectativa de que las acciones conduzcan a experiencias gratificantes. Si la persona anticipa que no obtendrá recompensa o que no sabrá generarla, reducirá la exploración y la implicación.\n\nEl foco está en reconstruir experiencias de eficacia en contextos potencialmente placenteros, facilitando que la persona vuelva a percibir que puede influir en su experiencia y generar resultados positivos.",
+      "focoMJPS": ["AG", "N", "I"],
+      "tecnicasRelacionadas": [
+        "p_bandura_modelado_practica_gradual"
+      ]
+    },
+    {
+      "modeloId": "modelo-momentos-innovadores-goncalves-2009",
+      "pesoModelo": 2,
+      "tipoOperacion": [
+        "identificar_microexperiencias_de_disfrute",
+        "ampliar_excepciones_a_la_anhedonia",
+        "reorganizar_narrativa_de_indiferencia"
+      ],
+      "explicacion": "El modelo de Gonçalves permite trabajar la anhedonia cuando se ha convertido en una narrativa dominante del tipo “ya no disfruto de nada”. El foco no está solo en generar placer, sino en detectar y amplificar microexperiencias que contradicen esa historia.\n\nEstas excepciones, aunque sean débiles o breves, pueden servir como base para reconstruir una identidad menos definida por la desconexión emocional.",
+      "focoMJPS": ["N", "I", "AG"],
+      "tecnicasRelacionadas": []
+    }
+  ],
+  "subprocesosImplicados": [
+    "RE_contacto_con_recompensa",
+    "AG_activacion_conductual",
+    "N_expectativa_de_refuerzo",
+    "RI_apertura_experiencial",
+    "RF_regulacion_sistema_amenaza_calma"
+  ]
+}
