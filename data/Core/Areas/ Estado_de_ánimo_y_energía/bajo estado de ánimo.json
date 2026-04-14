@@ -63,86 +63,101 @@
     "esperar a sentirse mejor para actuar mantiene el círculo de inmovilidad y desánimo"
   ],
   "procesosDominantesMJPS": ["AG", "N", "RE", "I"],
-  "modelosRelevantes": [
-    {
-      "modeloId": "activacion-conductual-jacobson-1996",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "bloquear_retirada",
-        "restaurar_contacto_con_refuerzo",
-        "reactivar_rutinas_y_dominios_clave",
-        "recuperar_agencia_por_accion"
-      ],
-      "explicacion": "Este modelo entiende el bajo estado de ánimo como un problema mantenido por retirada, evitación e interrupción del contacto con contingencias reforzantes. Su foco no está en discutir primero pensamientos, sino en reorganizar la conducta para que la persona vuelva a moverse, entre en contacto con actividades con valor y recupere experiencias de eficacia y refuerzo real. Es especialmente útil cuando el problema está dominado por inercia, aislamiento, pasividad y pérdida de ritmo vital.",
-      "focoMJPS": ["AG", "RE", "N"],
-      "tecnicasRelacionadas": [
-        "p_ba_analisis_funcional",
-        "p_ba_psicoeducacion",
-        "p_ba_monitorizacion",
-        "p_ba_programacion",
-        "m_ba_cinco_minutos",
-        "m_ba_revision_sin_juicio",
-        "m_ba_retirada_social",
-        "m_ba_dominio_clave"
-      ]
-    },
-    {
-      "modeloId": "terapia-cognitiva-beck-depresion-1967",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "identificar_sesgo_depresogeno",
-        "reestructurar_interpretacion_negativa",
-        "trabajar_autoimagen_y_futuro",
-        "debilitar_reglas_y_esquemas_de_derrota"
-      ],
-      "explicacion": "Este modelo entiende el bajo estado de ánimo como el resultado de sesgos sistemáticos en la interpretación de la experiencia, organizados por pensamientos automáticos negativos, distorsiones y esquemas depresógenos. El foco del cambio está en hacer visibles esas lecturas, contrastarlas y construir interpretaciones más ajustadas sobre uno mismo, el mundo y el futuro. Es especialmente útil cuando el tono bajo se sostiene por autodevaluación, desesperanza cognitiva y visión rígidamente negativa de la realidad.",
-      "focoMJPS": ["N", "I", "AG", "RE"],
-      "tecnicasRelacionadas": [
-        "p_beck_estructura_sesion",
-        "p_beck_conceptualizacion",
-        "p_beck_psicoeducacion",
-        "p_beck_pensamientos_automaticos",
-        "m_beck_registro_abc",
-        "m_beck_distorsiones",
-        "m_beck_programar_actividad",
-        "m_beck_prediccion",
-        "m_beck_revision_tareas",
-        "m_beck_sintesis"
-      ]
-    },
-    {
-      "modeloId": "act-hayes-strosahl-wilson-1999",
-      "pesoModelo": 4,
-      "tipoOperacion": [
-        "reducir_lucha_con_el_estado_interno",
-        "bloquear_evitacion_experiencial",
-        "defusionar_narrativas_de_apatia_o_derrota",
-        "reactivar_direccion_valiosa"
-      ],
-      "explicacion": "ACT entiende el bajo estado de ánimo como un estado que se cronifica cuando la persona queda gobernada por no sentir, no fracasar o no exponerse a más dolor. Su foco no es esperar a que el ánimo suba para vivir, sino cambiar la relación con el malestar, reducir evitación y reabrir conducta guiada por valores incluso en presencia de desgana, tristeza o pensamiento pesimista. Es especialmente útil cuando el problema central es la desconexión, la inacción sostenida y la vida organizada alrededor del repliegue.",
-      "focoMJPS": ["AG", "RE", "RI", "N", "I"],
-      "tecnicasRelacionadas": [
-        "p_act_formulacion_funcional",
-        "p_act_creativa_desesperanza",
-        "p_act_defusion",
-        "p_act_aceptacion",
-        "p_act_evitacion_experiencial",
-        "p_act_workability",
-        "p_act_willingness",
-        "p_act_choice_point",
-        "p_act_valores",
-        "p_act_accion_comprometida",
-        "m_act_estoy_teniendo_el_pensamiento",
-        "m_act_hacia_contra",
-        "m_act_paso_5_min",
-        "m_act_registro_funcional",
-        "m_act_funciona_para_ti",
-        "m_act_estoy_dispuesto",
-        "m_act_momento_eleccion",
-        "m_act_que_importa_aqui"
-      ]
-    }
-  ],
+ "modelosRelevantes": [
+  {
+    "modeloId": "activacion-conductual-jacobson-1996",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "bloquear_retirada",
+      "restaurar_contacto_con_refuerzo",
+      "reactivar_rutinas",
+      "incrementar_agencia"
+    ],
+    "explicacion": "Este modelo entiende el bajo estado de ánimo como un problema fundamentalmente conductual: la persona reduce su actividad y contacto con el entorno, lo que disminuye el acceso a refuerzo positivo y consolida el apagamiento emocional. No es solo que la persona se sienta mal y por eso haga menos, sino que hacer menos mantiene activamente el estado de ánimo bajo.\n\nSu aportación diferencial es invertir la lógica clínica: no se espera a que el estado interno mejore para actuar, sino que se actúa para modificar el estado interno. Es especialmente útil cuando domina la inercia, la pasividad, la pérdida de estructura o el aislamiento, ya que permite reconstruir progresivamente energía, motivación y sensación de eficacia a través de la acción.",
+    "focoMJPS": ["AG", "RE"],
+    "tecnicasRelacionadas": [
+      "p_ba_analisis_funcional",
+      "p_ba_psicoeducacion",
+      "p_ba_monitorizacion",
+      "p_ba_programacion",
+      "m_ba_cinco_minutos",
+      "m_ba_revision_sin_juicio",
+      "m_ba_retirada_social",
+      "m_ba_dominio_clave"
+    ]
+  },
+  {
+    "modeloId": "terapia-cognitiva-beck-depresion-1967",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "identificar_pensamientos_automaticos",
+      "reestructurar_interpretacion",
+      "modificar_sesgo_negativo",
+      "trabajar_autoimagen"
+    ],
+    "explicacion": "Este modelo entiende el bajo estado de ánimo como el resultado de un sesgo sistemático en la interpretación de la experiencia. La persona tiende a filtrar la realidad a través de pensamientos automáticos negativos y esquemas que enfatizan fracaso, inutilidad o pérdida, generando un tono emocional coherente con esa lectura.\n\nSu aportación diferencial es intervenir directamente sobre ese sistema de significado. No se trata solo de pensar en positivo, sino de debilitar la credibilidad de las interpretaciones negativas y generar lecturas más ajustadas. Es especialmente útil cuando el bajo estado de ánimo está sostenido por autocrítica, desesperanza o identidad negativa consolidada.",
+    "focoMJPS": ["N", "I", "RE"],
+    "tecnicasRelacionadas": [
+      "p_beck_estructura_sesion",
+      "p_beck_conceptualizacion",
+      "p_beck_psicoeducacion",
+      "p_beck_pensamientos_automaticos",
+      "m_beck_registro_abc",
+      "m_beck_distorsiones",
+      "m_beck_programar_actividad",
+      "m_beck_prediccion",
+      "m_beck_revision_tareas",
+      "m_beck_sintesis"
+    ]
+  },
+  {
+    "modeloId": "act-hayes-strosahl-wilson-1999",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "reducir_evitacion_experiencial",
+      "defusionar_pensamientos",
+      "aceptar_estado_interno",
+      "activar_conducta_valiosa"
+    ],
+    "explicacion": "ACT entiende el bajo estado de ánimo como un estado que se vuelve problemático cuando la persona organiza su conducta para no sentirlo. La evitación —no hacer, no exponerse, no intentar— reduce malestar a corto plazo, pero empobrece la vida y mantiene el problema.\n\nSu aportación diferencial es cambiar la relación con el estado interno en lugar de intentar eliminarlo directamente. Se trabaja para que la persona pueda actuar con dirección incluso en presencia de apatía o tristeza. Es especialmente útil cuando el problema central es la desconexión vital y la inacción sostenida.",
+    "focoMJPS": ["AG", "RE", "RI", "N"],
+    "tecnicasRelacionadas": [
+      "p_act_formulacion_funcional",
+      "p_act_creativa_desesperanza",
+      "p_act_defusion",
+      "p_act_aceptacion",
+      "p_act_evitacion_experiencial",
+      "p_act_workability",
+      "p_act_willingness",
+      "p_act_choice_point",
+      "p_act_valores",
+      "p_act_accion_comprometida",
+      "m_act_estoy_teniendo_el_pensamiento",
+      "m_act_paso_5_min",
+      "m_act_que_importa_aqui",
+      "m_act_momento_eleccion"
+    ]
+  },
+  {
+    "modeloId": "modelo-procesual-regulacion-emocional-gross-1998",
+    "pesoModelo": 3,
+    "tipoOperacion": [
+      "modular_respuesta_emocional",
+      "reorientar_atencion",
+      "reevaluar_significado",
+      "intervenir_en_secuencia_emocional"
+    ],
+    "explicacion": "El modelo de Gross permite entender el bajo estado de ánimo como una configuración particular de la regulación emocional, donde la persona puede estar atrapada en patrones de atención, interpretación o respuesta que mantienen el tono bajo. No explica por sí solo el origen del problema, pero sí organiza cómo se mantiene y dónde intervenir.\n\nSu aportación diferencial es estructurar los puntos de intervención: situación, atención, interpretación y respuesta. Es útil como modelo transversal para decidir si conviene intervenir más a nivel conductual, cognitivo o regulativo en cada caso.",
+    "focoMJPS": ["RE", "N"],
+    "tecnicasRelacionadas": [
+      "p_gross_despliegue_atencional",
+      "p_gross_cambio_cognitivo",
+      "p_gross_modulacion_respuesta",
+      "m_gross_reorientar_atencion",
+      "m_gross_reevaluacion"
+    ]
+  }
+],
   "nodosTransversalesImportantes": [
     {
       "id": "retirada_conductual",
