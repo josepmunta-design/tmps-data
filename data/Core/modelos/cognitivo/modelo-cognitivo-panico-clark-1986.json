@@ -130,8 +130,145 @@
     "texto": "Procedimiento orientado a trasladar los aprendizajes obtenidos en sesión a situaciones reales previamente evitadas (transporte público, ejercicio, espacios cerrados), asegurando que el cambio no se limita al contexto terapéutico. Implica exposición progresiva sin conductas de seguridad y aplicación activa de reinterpretaciones, consolidando el cambio en la vida cotidiana. Referencia: Clark (1997); Barlow (2002)."
   }
 ],
-  "micros": [],
-  "ideasPrincipales": [],
+  "micros": [
+  {
+    "nombre": "Nombrar la interpretación catastrófica en tiempo real",
+    "codigo": "m_clark_nombrar_catastrofe",
+    "procesos": ["N_metacognicion"],
+    "texto": "Microintervención dirigida a que el paciente identifique y verbalice explícitamente la interpretación catastrófica en el mismo momento en que aparece (por ejemplo, “estoy pensando que me voy a desmayar”). Este acto de etiquetado introduce distancia metacognitiva y permite desactivar la fusión automática entre sensación y significado, facilitando la posterior reformulación. Referencia: Clark, D. M. (1986)."
+  },
+  {
+    "nombre": "Diferenciar sensación de interpretación",
+    "codigo": "m_clark_diferenciar_sensacion",
+    "procesos": ["N_marcosCognitivos", "RE_reapreciacion"],
+    "texto": "Microintervención que consiste en separar deliberadamente la experiencia física (por ejemplo, “tengo palpitaciones”) de la interpretación catastrófica (“voy a tener un infarto”), ayudando al paciente a reconocer que la emoción depende del significado atribuido y no de la sensación en sí misma. Referencia: Clark, D. M. (1986)."
+  },
+  {
+    "nombre": "Reatribución inmediata de la sensación",
+    "codigo": "m_clark_reatribucion",
+    "procesos": ["N_reformulacion"],
+    "texto": "Aplicación rápida de una explicación alternativa a la sensación corporal en el momento de activación (por ejemplo, “esto es ansiedad, no peligro”), reduciendo la intensidad emocional y evitando la escalada del ciclo de pánico. Referencia: Clark, D. M. (1986); Clark (1997)."
+  },
+  {
+    "nombre": "Cuestionamiento breve de evidencia",
+    "codigo": "m_clark_evidencia",
+    "procesos": ["N_metacognicion", "N_reformulacion"],
+    "texto": "Microintervención que introduce preguntas rápidas del tipo “¿cuántas veces ha pasado esto sin que ocurra la catástrofe?” para debilitar la credibilidad de la interpretación catastrófica sin entrar en un debate largo. Referencia: Beck et al. (1985); Clark (1986)."
+  },
+  {
+    "nombre": "Detectar aumento de atención corporal",
+    "codigo": "m_clark_detectar_hipervigilancia",
+    "procesos": ["N_metacognicion", "RF_intero"],
+    "texto": "Ayudar al paciente a darse cuenta de cuándo está escaneando activamente su cuerpo en busca de señales de peligro, identificando este proceso como parte del problema y no como una respuesta útil. Referencia: Clark, D. M. (1986)."
+  },
+  {
+    "nombre": "Redirección atencional externa",
+    "codigo": "m_clark_redireccion_atencion",
+    "procesos": ["RF_ground", "RE_modulacion"],
+    "texto": "Microintervención que consiste en desplazar voluntariamente la atención hacia estímulos externos (sonidos, objetos, tareas) para reducir la amplificación de las sensaciones internas y cortar el bucle de autoobservación ansiosa. Referencia: Clark (1986)."
+  },
+  {
+    "nombre": "Inducción breve de sensación corporal",
+    "codigo": "m_clark_inducir_sensacion",
+    "procesos": ["RF_expo"],
+    "texto": "Provocar de forma controlada una sensación temida (por ejemplo, girar para inducir mareo) para demostrar en directo que es tolerable y no peligrosa, generando aprendizaje correctivo inmediato. Referencia: Clark (1986); Barlow (2002)."
+  },
+  {
+    "nombre": "Comprobación de predicción catastrófica",
+    "codigo": "m_clark_test_prediccion",
+    "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad"],
+    "texto": "Invitar al paciente a formular explícitamente qué cree que va a pasar (“me desmayaré en 1 minuto”) y comprobar el resultado real, facilitando la desconfirmación directa de la creencia. Referencia: Clark (1997)."
+  },
+  {
+    "nombre": "Señalar ausencia de catástrofe",
+    "codigo": "m_clark_ausencia_catastrofe",
+    "procesos": ["N_reformulacion"],
+    "texto": "Tras un episodio de activación, destacar activamente que la consecuencia temida no ocurrió, ayudando a consolidar la nueva interpretación y debilitar la expectativa de peligro futuro. Referencia: Clark (1986)."
+  },
+  {
+    "nombre": "Identificación de conductas de seguridad en el momento",
+    "codigo": "m_clark_detectar_seguridad",
+    "procesos": ["RE_prevEvitacion"],
+    "texto": "Señalar en tiempo real qué conductas está utilizando el paciente para sentirse seguro (por ejemplo, sentarse, respirar de forma controlada, evitar moverse), aumentando la conciencia de su papel mantenedor. Referencia: Salkovskis (1988)."
+  },
+  {
+    "nombre": "Retirada puntual de conducta de seguridad",
+    "codigo": "m_clark_retirar_seguridad",
+    "procesos": ["AG_compromisoConductual"],
+    "texto": "Invitar al paciente a dejar de usar una conducta de seguridad concreta en un momento específico para comprobar que la catástrofe no ocurre, facilitando aprendizaje correctivo directo. Referencia: Clark (1997)."
+  },
+  {
+    "nombre": "Normalización de sensaciones fisiológicas",
+    "codigo": "m_clark_normalizar_sensacion",
+    "procesos": ["N_reformulacion", "RE_reapreciacion"],
+    "texto": "Explicar brevemente que las sensaciones experimentadas son respuestas normales del sistema nervioso (por ejemplo, activación simpática), reduciendo su interpretación como señal de peligro. Referencia: Clark (1986)."
+  },
+  {
+    "nombre": "Escalar conscientemente la atención al síntoma",
+    "codigo": "m_clark_exagerar_atencion",
+    "procesos": ["N_metacognicion"],
+    "texto": "Pedir al paciente que intensifique deliberadamente la atención sobre una sensación corporal para que observe cómo aumenta su intensidad, haciendo evidente el papel de la atención en la amplificación del síntoma. Referencia: Clark (1986)."
+  },
+  {
+    "nombre": "Comparación entre ansiedad y ejercicio",
+    "codigo": "m_clark_comparar_ejercicio",
+    "procesos": ["N_reformulacion"],
+    "texto": "Invitar al paciente a comparar las sensaciones de ansiedad con las del ejercicio físico (palpitaciones, respiración acelerada) para evidenciar que son fisiológicamente similares pero interpretadas de forma distinta. Referencia: Clark (1997)."
+  },
+  {
+    "nombre": "Anclaje temporal del episodio",
+    "codigo": "m_clark_anclaje_temporal",
+    "procesos": ["RF_ground", "RE_modulacion"],
+    "texto": "Recordar al paciente que el pico de ansiedad es limitado en el tiempo (“esto sube y baja”), ayudando a reducir la percepción de descontrol infinito y facilitando tolerancia durante el episodio. Referencia: Clark (1986)."
+  }
+],
+  "ideasPrincipales": [
+  {
+    "id": "idea_clark_panico_1",
+    "titulo": "El pánico no está causado por las sensaciones, sino por su interpretación",
+    "desarrollo": "El modelo de Clark establece una ruptura clara con explicaciones fisiológicas directas del pánico: las sensaciones corporales no son intrínsecamente patológicas ni peligrosas. El factor decisivo es la interpretación que el sujeto realiza sobre ellas. Cuando estas sensaciones son leídas como señales de amenaza inminente (infarto, muerte, pérdida de control), se activa una respuesta de ansiedad que amplifica las propias sensaciones, generando el ataque de pánico. Esto sitúa el fenómeno en el nivel del significado, no del estímulo físico. (Clark, 1986)."
+  },
+  {
+    "id": "idea_clark_panico_2",
+    "titulo": "El ataque de pánico es un bucle de retroalimentación cognitivo-fisiológica",
+    "desarrollo": "El pánico no es un evento puntual, sino un proceso dinámico en bucle donde cognición y fisiología se amplifican mutuamente. La secuencia sensación → interpretación catastrófica → ansiedad → incremento de sensaciones constituye un sistema de retroalimentación positiva que explica la rapidez e intensidad del ataque. Este modelo permite entender por qué el pánico escala en segundos y por qué puede mantenerse sin estímulos externos claros. (Clark, 1986; Clark, 1997)."
+  },
+  {
+    "id": "idea_clark_panico_3",
+    "titulo": "La hipervigilancia interoceptiva amplifica y mantiene el problema",
+    "desarrollo": "El modelo sostiene que la atención selectiva hacia el cuerpo no es neutra, sino un amplificador activo de la experiencia somática. Al escanear continuamente las sensaciones internas, el sujeto incrementa su detección, intensidad percibida y saliencia, aumentando la probabilidad de interpretarlas como peligrosas. La hipervigilancia no es solo consecuencia del pánico, sino uno de sus principales mecanismos de mantenimiento. (Clark, 1986)."
+  },
+  {
+    "id": "idea_clark_panico_4",
+    "titulo": "Las conductas de seguridad mantienen la creencia catastrófica",
+    "desarrollo": "Las estrategias que el paciente utiliza para prevenir la catástrofe (evitar esfuerzo, sentarse, controlar la respiración) generan una ilusión de control que impide la desconfirmación de la creencia central. Al no experimentar directamente que la catástrofe no ocurre, el sistema cognitivo mantiene la atribución errónea de peligro. Estas conductas, aunque reducen ansiedad a corto plazo, son un mecanismo clave de mantenimiento a largo plazo. (Salkovskis, 1988; Clark, 1997)."
+  },
+  {
+    "id": "idea_clark_panico_5",
+    "titulo": "El cambio requiere evidencia experiencial, no solo insight cognitivo",
+    "desarrollo": "El modelo implica que la mera comprensión racional de que las sensaciones no son peligrosas es insuficiente para modificar el pánico. Las creencias catastróficas tienen un carácter experiencial que requiere ser desconfirmado mediante experiencia directa (experimentos conductuales, exposición interoceptiva). El cambio ocurre cuando el paciente vive repetidamente que la catástrofe no se produce, debilitando así la expectativa de peligro. (Clark, 1986; Clark, 1997)."
+  },
+  {
+    "id": "idea_clark_panico_6",
+    "titulo": "El miedo al pánico es más central que el pánico en sí",
+    "desarrollo": "El modelo desplaza el foco del episodio agudo hacia la anticipación y el miedo a las propias sensaciones. Lo que mantiene el trastorno no es tanto la ocurrencia de ataques, sino la expectativa de que puedan ocurrir y las consecuencias temidas asociadas. Este miedo secundario organiza evitaciones, hipervigilancia y conductas de seguridad, configurando un sistema autosostenido. (Clark, 1986)."
+  },
+  {
+    "id": "idea_clark_panico_7",
+    "titulo": "Las sensaciones corporales son ambiguas y dependen del contexto interpretativo",
+    "desarrollo": "El modelo subraya que las mismas sensaciones fisiológicas pueden ser interpretadas de formas radicalmente distintas según el contexto cognitivo (por ejemplo, ejercicio vs. ansiedad). Esta ambigüedad demuestra que la respuesta emocional no está determinada por la sensación en sí, sino por el marco interpretativo en el que se inserta. El trabajo terapéutico consiste en modificar ese marco. (Clark, 1986; Beck et al., 1985)."
+  },
+  {
+    "id": "idea_clark_panico_8",
+    "titulo": "El pánico es una falsa alarma basada en error de significado",
+    "desarrollo": "El ataque de pánico se conceptualiza como una activación legítima del sistema de alarma del organismo, pero disparada por una interpretación errónea de señales internas. No es una disfunción del sistema de ansiedad en sí, sino un error en la atribución de significado a la activación fisiológica. Esto sitúa el problema en la interfaz entre percepción corporal y cognición, no en la biología aislada. (Clark, 1986)."
+  },
+  {
+    "id": "idea_clark_panico_9",
+    "titulo": "La evitación interoceptiva limita el aprendizaje correctivo",
+    "desarrollo": "Evitar sensaciones corporales o contextos que las generan impide que el sistema cognitivo reciba información correctiva. Sin exposición a la experiencia temida, la creencia catastrófica no se pone a prueba y permanece intacta. La evitación, por tanto, no solo reduce ansiedad a corto plazo, sino que bloquea el mecanismo natural de extinción del miedo. (Clark, 1986; Barlow, 2002)."
+  }
+],
 
   "refs": [
     "Clark, D. M. (1986). A cognitive approach to panic. Behaviour Research and Therapy.",
