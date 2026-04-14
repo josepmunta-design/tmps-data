@@ -63,45 +63,34 @@
     "esperar a sentirse mejor para actuar mantiene el círculo de inmovilidad y desánimo"
   ],
   "procesosDominantesMJPS": ["AG", "N", "RE", "I"],
- "modelosRelevantes": [
+"modelosRelevantes": [
   {
     "modeloId": "activacion-conductual-jacobson-1996",
     "pesoModelo": 5,
     "tipoOperacion": [
       "bloquear_retirada",
       "restaurar_contacto_con_refuerzo",
-      "reactivar_rutinas",
-      "incrementar_agencia"
+      "reactivar_agencia",
+      "romper_inercia_conductual"
     ],
-    "explicacion": "Este modelo entiende el bajo estado de ánimo como un problema fundamentalmente conductual: la persona reduce su actividad y contacto con el entorno, lo que disminuye el acceso a refuerzo positivo y consolida el apagamiento emocional. No es solo que la persona se sienta mal y por eso haga menos, sino que hacer menos mantiene activamente el estado de ánimo bajo.\n\nSu aportación diferencial es invertir la lógica clínica: no se espera a que el estado interno mejore para actuar, sino que se actúa para modificar el estado interno. Es especialmente útil cuando domina la inercia, la pasividad, la pérdida de estructura o el aislamiento, ya que permite reconstruir progresivamente energía, motivación y sensación de eficacia a través de la acción.",
-    "focoMJPS": ["AG", "RE"],
+    "explicacion": "La Activación Conductual entiende el bajo estado de ánimo como un patrón mantenido por retirada, evitación y pérdida progresiva de contacto con fuentes de refuerzo positivo. El problema no se formula primero como un déficit de pensamiento correcto ni como una alteración identitaria profunda, sino como una organización conductual empobrecida que reduce experiencias de eficacia, interés y gratificación, consolidando el apagamiento anímico. El estado de ánimo bajo se mantiene porque la persona hace cada vez menos, y al hacer menos recibe cada vez menos del entorno que pueda empujarla de nuevo hacia delante.\n\nSu foco de cambio está en reorganizar la conducta antes de esperar mejoría subjetiva: análisis funcional de la retirada, identificación de patrones evitativos, reintroducción de acción concreta y recuperación de contingencias reforzantes naturales. Es especialmente central cuando el cuadro está dominado por apatía, pasividad, pérdida de rutina, aislamiento y sensación de arrastre. En esta subárea es probablemente el modelo conductual más nuclear del repo. La propia descripción del modelo en el archivo dice explícitamente que el bajo estado de ánimo se mantiene por evitación y retirada que reducen el contacto con refuerzo positivo. :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}",
+    "focoMJPS": ["AG", "RE", "N"],
     "tecnicasRelacionadas": [
-      "p_ba_analisis_funcional",
-      "p_ba_psicoeducacion",
-      "p_ba_monitorizacion",
-      "p_ba_programacion",
-      "m_ba_cinco_minutos",
-      "m_ba_revision_sin_juicio",
-      "m_ba_retirada_social",
-      "m_ba_dominio_clave"
+      "p_ba_analisis_funcional"
     ]
   },
   {
     "modeloId": "terapia-cognitiva-beck-depresion-1967",
     "pesoModelo": 5,
     "tipoOperacion": [
-      "identificar_pensamientos_automaticos",
-      "reestructurar_interpretacion",
-      "modificar_sesgo_negativo",
-      "trabajar_autoimagen"
+      "identificar_sesgo_depresogeno",
+      "reestructurar_interpretacion_negativa",
+      "debilitar_triada_cognitiva",
+      "modificar_autoimagen_y_futuro"
     ],
-    "explicacion": "Este modelo entiende el bajo estado de ánimo como el resultado de un sesgo sistemático en la interpretación de la experiencia. La persona tiende a filtrar la realidad a través de pensamientos automáticos negativos y esquemas que enfatizan fracaso, inutilidad o pérdida, generando un tono emocional coherente con esa lectura.\n\nSu aportación diferencial es intervenir directamente sobre ese sistema de significado. No se trata solo de pensar en positivo, sino de debilitar la credibilidad de las interpretaciones negativas y generar lecturas más ajustadas. Es especialmente útil cuando el bajo estado de ánimo está sostenido por autocrítica, desesperanza o identidad negativa consolidada.",
-    "focoMJPS": ["N", "I", "RE"],
+    "explicacion": "La Terapia Cognitiva de Beck formula el bajo estado de ánimo como el resultado de un procesamiento sistemáticamente sesgado de la experiencia: pensamientos automáticos negativos, errores cognitivos y esquemas depresógenos que organizan una lectura de uno mismo, del mundo y del futuro en clave de pérdida, fracaso o inutilidad. El tono bajo no es solo una reacción afectiva, sino el correlato emocional de una interpretación repetida que se vuelve cada vez más creíble y autosostenida.\n\nSu foco de cambio está en hacer visibles esos pensamientos y reglas intermedias, cuestionar su credibilidad y abrir interpretaciones más ajustadas. En esta subárea aporta algo que BA no cubre del todo: cuando el problema no es solo inercia, sino también autodevaluación, desesperanza cognitiva, generalización negativa y rigidez interpretativa. Es central cuando el bajo estado de ánimo va acompañado de autocrítica, conclusiones globales de fracaso y visión cerrada del futuro. El modelo del repo lo formula explícitamente como depresión mantenida por sesgos sistemáticos de procesamiento y tríada cognitiva negativa. :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}",
+    "focoMJPS": ["N", "I", "RE", "AG"],
     "tecnicasRelacionadas": [
-      "p_beck_estructura_sesion",
-      "p_beck_conceptualizacion",
-      "p_beck_psicoeducacion",
-      "p_beck_pensamientos_automaticos",
       "m_beck_registro_abc",
       "m_beck_distorsiones",
       "m_beck_programar_actividad",
@@ -115,12 +104,12 @@
     "pesoModelo": 4,
     "tipoOperacion": [
       "reducir_evitacion_experiencial",
-      "defusionar_pensamientos",
-      "aceptar_estado_interno",
-      "activar_conducta_valiosa"
+      "defusionar_narrativas_de_derrota",
+      "reactivar_conducta_valiosa",
+      "cambiar_relacion_con_el_estado_interno"
     ],
-    "explicacion": "ACT entiende el bajo estado de ánimo como un estado que se vuelve problemático cuando la persona organiza su conducta para no sentirlo. La evitación —no hacer, no exponerse, no intentar— reduce malestar a corto plazo, pero empobrece la vida y mantiene el problema.\n\nSu aportación diferencial es cambiar la relación con el estado interno en lugar de intentar eliminarlo directamente. Se trabaja para que la persona pueda actuar con dirección incluso en presencia de apatía o tristeza. Es especialmente útil cuando el problema central es la desconexión vital y la inacción sostenida.",
-    "focoMJPS": ["AG", "RE", "RI", "N"],
+    "explicacion": "ACT entiende el bajo estado de ánimo menos como algo que haya que suprimir y más como un estado que se cronifica cuando la vida queda organizada alrededor de no sentirlo, no fracasar y no exponerse a más dolor. El foco no está en corregir primero el contenido de la mente, sino en modificar la función que tienen tristeza, apatía, autocrítica o desesperanza sobre la conducta. Cuando la persona queda gobernada por evitar esos estados internos, la vida se estrecha y el estado de ánimo bajo gana más territorio.\n\nSu aportación diferencial en esta subárea es clara: desbloquear movimiento en presencia de malestar, no después de que desaparezca. Esto es especialmente útil cuando el cuadro mezcla apatía, retirada y fuerte fusión con historias tipo “no puedo”, “no tiene sentido”, “ya no soy el de antes” o “hasta que no me sienta mejor no puedo actuar”. El modelo del repo describe precisamente esa lógica: fusión, evitación experiencial, desconexión de valores e inacción gobernada por el malestar. :contentReference[oaicite:6]{index=6} :contentReference[oaicite:7]{index=7}",
+    "focoMJPS": ["RI", "RE", "AG", "N", "I"],
     "tecnicasRelacionadas": [
       "p_act_formulacion_funcional",
       "p_act_creativa_desesperanza",
@@ -129,32 +118,82 @@
       "p_act_evitacion_experiencial",
       "p_act_workability",
       "p_act_willingness",
-      "p_act_choice_point",
+      "p_act_matriz",
       "p_act_valores",
       "p_act_accion_comprometida",
       "m_act_estoy_teniendo_el_pensamiento",
+      "m_act_anclaje_30s",
+      "m_act_hacia_contra",
       "m_act_paso_5_min",
+      "m_act_funciona_para_ti",
+      "m_act_estoy_dispuesto",
+      "m_act_momento_eleccion",
       "m_act_que_importa_aqui",
-      "m_act_momento_eleccion"
+      "m_act_quedarse_con"
     ]
   },
   {
-    "modeloId": "modelo-procesual-regulacion-emocional-gross-1998",
+    "modeloId": "cft-gilbert-2009",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "reducir_autoataque",
+      "regular_sistema_de_amenaza",
+      "activar_afiliacion_interna",
+      "desarrollar_self_compasivo"
+    ],
+    "explicacion": "CFT aporta una lectura especialmente valiosa cuando el bajo estado de ánimo está íntimamente entrelazado con autocrítica, vergüenza, sensación de inferioridad y un tono interno hostil. Aquí el problema no es solo que la persona esté apagada, sino que además se relacione consigo desde amenaza, descalificación y ataque, lo que hace que cualquier error, bloqueo o comparación reactive aún más el sistema de amenaza y deprima más el tono basal.\n\nSu foco de cambio no es solo pensar distinto o hacer más, sino construir una forma distinta de sostenerse internamente: menos punitiva, más reguladora y más firme. En esta subárea es especialmente útil cuando el estado de ánimo bajo tiene un componente claro de humillación interna, vergüenza persistente o incapacidad para responder al sufrimiento sin crueldad. El modelo del repo define explícitamente CFT como trabajo sobre amenaza hiperactivada, autocrítica y acceso insuficiente al sistema calmante/afiliativo. :contentReference[oaicite:8]{index=8} :contentReference[oaicite:9]{index=9}",
+    "focoMJPS": ["RE", "RI", "I", "RF"],
+    "tecnicasRelacionadas": []
+  },
+  {
+    "modeloId": "psicodinamica-ciclica-wachtel",
     "pesoModelo": 3,
     "tipoOperacion": [
-      "modular_respuesta_emocional",
-      "reorientar_atencion",
-      "reevaluar_significado",
-      "intervenir_en_secuencia_emocional"
+      "identificar_ciclos_interpersonales_de_apagamiento",
+      "romper_patrones_auto_confirmatorios",
+      "intervenir_en_retirada_relacional",
+      "hacer_visible_la_funcion_protectora_del_patron"
     ],
-    "explicacion": "El modelo de Gross permite entender el bajo estado de ánimo como una configuración particular de la regulación emocional, donde la persona puede estar atrapada en patrones de atención, interpretación o respuesta que mantienen el tono bajo. No explica por sí solo el origen del problema, pero sí organiza cómo se mantiene y dónde intervenir.\n\nSu aportación diferencial es estructurar los puntos de intervención: situación, atención, interpretación y respuesta. Es útil como modelo transversal para decidir si conviene intervenir más a nivel conductual, cognitivo o regulativo en cada caso.",
-    "focoMJPS": ["RE", "N"],
+    "explicacion": "La Psicodinámica cíclica de Wachtel aporta una lectura que ni BA ni Beck cubren del todo: el bajo estado de ánimo puede mantenerse dentro de ciclos autoorganizados entre expectativas internas, defensas, miedo, necesidad de protección y respuestas del entorno. No es solo que la persona se retire y por eso empeore, sino que su manera de anticipar, protegerse y relacionarse puede generar precisamente las reacciones interpersonales que consolidan desconexión, soledad, desánimo o confirmación de que no puede esperar mucho de los demás.\n\nSu foco de cambio está en formular con precisión ese ciclo y meter una respuesta diferente en puntos estratégicos: conducta, interacción y significado. En esta subárea es especialmente útil cuando el tono bajo está claramente vinculado a patrones relacionales repetitivos, sensación de que siempre acaba igual con otros, pasividad interpersonal o confirmaciones recíprocas de desvalorización y distancia. El archivo del modelo lo formula exactamente como ciclos automantenidos entre patrones intrapsíquicos y transacciones interpersonales que se refuerzan mutuamente. :contentReference[oaicite:10]{index=10}",
+    "focoMJPS": ["R", "N", "I", "AG", "RE"],
+    "tecnicasRelacionadas": []
+  },
+  {
+    "modeloId": "modelo-momentos-innovadores-goncalves-2009",
+    "pesoModelo": 3,
+    "tipoOperacion": [
+      "detectar_excepciones_al_apagamiento",
+      "ampliar_agencia_narrativa",
+      "debilitar_historia_dominante_de_derrota",
+      "reorganizar_identidad"
+    ],
+    "explicacion": "El modelo de Momentos Innovadores de Gonçalves aporta una lectura constructivista muy útil cuando el bajo estado de ánimo se ha convertido ya en una historia dominante sobre uno mismo: “soy así”, “ya no puedo”, “todo en mí está apagado”, “esto define quién soy”. Aquí el sufrimiento no se organiza solo como emoción baja, sino como monopolio narrativo del problema sobre la identidad y la agencia. El estado de ánimo bajo se estabiliza porque la narrativa problemática absorbe o neutraliza cualquier excepción.\n\nSu foco de cambio está en detectar y desarrollar microexcepciones que la historia depresiva todavía no puede absorber: acciones, pensamientos, decisiones o posiciones subjetivas que contradicen el relato dominante. En esta subárea es especialmente útil cuando el paciente no solo está desanimado, sino narrativamente atrapado en una identidad de impotencia o derrota. El propio modelo del repo se define como reorganización del self a partir de excepciones significativas frente a una narrativa problemática dominante. :contentReference[oaicite:11]{index=11} :contentReference[oaicite:12]{index=12}",
+    "focoMJPS": ["N", "I", "AG", "RE"],
+    "tecnicasRelacionadas": []
+  },
+  {
+    "modeloId": "aprendizaje-social-bandura-1977",
+    "pesoModelo": 3,
+    "tipoOperacion": [
+      "restaurar_autoeficacia",
+      "reconectar_capacidad_y_accion",
+      "construir_experiencias_de_dominio",
+      "desactivar_expectativa_de_incapacidad"
+    ],
+    "explicacion": "Bandura no es un modelo específico de depresión, pero sí aporta algo muy útil para esta subárea: cuando el bajo estado de ánimo se acompaña de sensación de incapacidad, anticipación de fracaso y abandono rápido, la autoeficacia se vuelve una variable decisiva. La persona no solo está triste o apagada; empieza a anticipar que no puede influir, sostener o conseguir nada, y esa expectativa reduce aún más la conducta, la persistencia y el acceso a experiencias correctivas.\n\nSu foco de cambio está en construir dominio real y no solo ánimo subjetivo: modelado, práctica graduada, feedback y experiencias concretas de eficacia. En esta subárea es especialmente útil cuando el bajo estado de ánimo se solapa con pasividad, baja confianza para actuar o tendencia a abandonar por expectativa de fracaso. El modelo del repo subraya justo esto: la autoeficacia como predictor robusto de iniciación, esfuerzo y mantenimiento de la conducta. :contentReference[oaicite:13]{index=13}",
+    "focoMJPS": ["AG", "N", "I", "RE"],
     "tecnicasRelacionadas": [
-      "p_gross_despliegue_atencional",
-      "p_gross_cambio_cognitivo",
-      "p_gross_modulacion_respuesta",
-      "m_gross_reorientar_atencion",
-      "m_gross_reevaluacion"
+      "p_bandura_evaluacion_autoeficacia",
+      "p_bandura_modelado_practica_gradual",
+      "p_bandura_tareas_graduadas_dominio",
+      "p_bandura_persuasion_verbal_feedback",
+      "p_bandura_generalizacion_prevencion",
+      "m_bandura_eficacia_vs_resultado",
+      "m_bandura_ensayo_inmediato",
+      "m_bandura_graduar_dificultad",
+      "m_bandura_feedback_estrategia",
+      "m_bandura_atribucion_funcional",
+      "m_bandura_reencuadre_fallo"
     ]
   }
 ],
