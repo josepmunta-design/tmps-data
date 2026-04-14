@@ -1,0 +1,92 @@
+{
+  "id": "hipervigilancia_amenaza_externa",
+  "areaId": "amenaza_ansiedad",
+  "label": "Hipervigilancia ante amenaza externa",
+  "definicion": "Sesgo atencional hacia el entorno caracterizado por la monitorización constante de señales potenciales de peligro, con priorización automática de estímulos amenazantes frente a estímulos neutros o seguros.",
+  "descripcionClinica": "Clínicamente, la hipervigilancia ante amenaza externa se expresa como un escaneo persistente del entorno en busca de posibles riesgos: personas, gestos, movimientos, cambios contextuales o señales ambiguas. La atención queda capturada por lo potencialmente peligroso, y lo neutro o seguro pierde saliencia. No siempre implica miedo intenso, sino una alerta sostenida que dificulta la relajación y genera fatiga. Funcionalmente, actúa como estrategia de prevención y control: anticipar daño y reducir incertidumbre. Sin embargo, mantiene la activación, refuerza la expectativa de peligro y limita la actualización de seguridad.",
+  
+  "procesosDominantesMJPS": ["AP", "RE", "N", "AG"],
+
+  "modelosRelevantes": [
+    {
+      "modeloId": "cbt-inhibicion-miedo-craske-2014",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "reducir_vigilancia_defensiva",
+        "retirar_senales_de_seguridad",
+        "desconfirmar_peligro",
+        "consolidar_aprendizaje_seguridad"
+      ],
+      "explicacion": "Este modelo entiende la hipervigilancia como parte de un sistema de miedo que sigue tratando el entorno como peligroso porque no se ha producido un aprendizaje correctivo sólido. La vigilancia se mantiene por conductas de seguridad y ausencia de violación de expectativas. El foco está en generar experiencias que desconfirmen el peligro y permitan aprender seguridad sin necesidad de monitorizar constantemente el entorno.",
+      "focoMJPS": ["AP", "RE", "AG", "N"],
+      "tecnicasRelacionadas": [
+        "p_craske_violacion_expectativas",
+        "p_craske_eliminacion_seguridad",
+        "p_craske_variabilidad_contextual",
+        "p_craske_recuperacion_aprendizaje"
+      ]
+    },
+    {
+      "modeloId": "emotion-regulation-therapy-mennin-fresco-2013",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "regular_sesgo_atencional",
+        "flexibilizar_orientacion_atencional",
+        "reducir_enganche_a_amenaza",
+        "entrenar_presencia_no_defensiva"
+      ],
+      "explicacion": "ERT conceptualiza la hipervigilancia como un sesgo atencional hacia la amenaza sostenido por una orientación motivacional centrada en la seguridad. La atención se engancha automáticamente a señales de peligro, alimentando preocupación y evitación. El foco está en entrenar la regulación atencional: poder orientar y sostener la atención sin quedar capturado por la amenaza, recuperando flexibilidad y ampliando el campo experiencial.",
+      "focoMJPS": ["AP", "RE", "N"],
+      "tecnicasRelacionadas": [
+        "p_ert_orienting_allowing",
+        "m_ert_tiron_seguridad",
+        "m_ert_distanciamiento_preocupacion"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "desenganchar_atencion_de_amenaza",
+        "romper_control_del_entorno",
+        "recuperar_contacto_presente",
+        "actuar_sin_vigilancia_constante"
+      ],
+      "explicacion": "ACT entiende la hipervigilancia como un patrón de control en el que la atención se subordina a la agenda de evitar peligro. La persona escanea el entorno para sentirse segura antes de actuar. El foco está en cambiar la función de esa vigilancia: notar el impulso de escanear sin obedecerlo automáticamente y recuperar la capacidad de estar presente y actuar sin necesidad de controlar el entorno.",
+      "focoMJPS": ["AP", "RE", "AG", "RI"],
+      "tecnicasRelacionadas": [
+        "p_act_defusion",
+        "p_act_presencia",
+        "p_act_aceptacion"
+      ]
+    },
+    {
+      "modeloId": "cft-gilbert-2009",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "regular_sistema_amenaza",
+        "reducir_lectura_defensiva_entorno",
+        "incrementar_sensacion_seguridad",
+        "equilibrar_sistemas_motivacionales"
+      ],
+      "explicacion": "CFT entiende la hipervigilancia como expresión de un sistema de amenaza hiperactivado que prioriza detectar riesgo. La persona lee el entorno desde la defensa, incluso en ausencia de peligro real. El foco está en desarrollar un sistema de calma y afiliación que permita reducir la necesidad de escaneo constante y reinterpretar el entorno desde mayor seguridad interna.",
+      "focoMJPS": ["RE", "RF", "RI"],
+      "tecnicasRelacionadas": []
+    }
+  ],
+
+  "nodosTransversalesImportantes": [
+    {
+      "id": "sesgo_atencional_amenaza",
+      "descripcion": "Tendencia a priorizar información potencialmente peligrosa frente a señales neutras o seguras."
+    },
+    {
+      "id": "conductas_de_seguridad",
+      "descripcion": "Estrategias de control del entorno que reducen ansiedad a corto plazo pero mantienen la vigilancia."
+    },
+    {
+      "id": "intolerancia_incertidumbre",
+      "descripcion": "Dificultad para tolerar no saber si el entorno es seguro, lo que impulsa el escaneo constante."
+    }
+  ]
+}
