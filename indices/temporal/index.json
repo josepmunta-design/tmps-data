@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-14T09:21:14.541Z",
+  "generatedAt": "2026-04-14T09:22:11.034Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 180,
-    "links": 185,
-    "unresolvedInfluences": 628
+    "modelos": 181,
+    "links": 188,
+    "unresolvedInfluences": 631
   },
   "nodes": [
     {
@@ -2386,6 +2386,36 @@
       "lon": -0.09112,
       "ciudad": "Londres",
       "pais": "Reino Unido",
+      "escuelaId": "conductismo"
+    },
+    {
+      "id": "indefension-aprendida-seligman-1975",
+      "label": "Indefensión aprendida",
+      "year": 1975,
+      "group": "Conductista",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/conductismo/indefension-aprendida-seligman-1975.json",
+      "authors": "Martin E. P. Seligman",
+      "summary": "La teoría de la indefensión aprendida propuesta por Seligman explica cómo la exposición repetida a situaciones incontrolables conduce a un estado psicológico caracterizado por pasividad, desmotivación, déficit cognitivo y alteraciones emocionales. Originalmente desarrollada a partir de estudios experimentales con animales, la teoría sostiene que cuando un organismo aprende que sus respuestas no tienen efecto sobre los resultados, generaliza esta expectativa de incontrolabilidad a nuevas situaciones. En humanos, este patrón se asocia a síntomas depresivos, baja autoestima, dificultades en la toma de decisiones y reducción de la iniciativa conductual. Posteriormente, la reformulación cognitiva del modelo introdujo el papel de los estilos atribucionales —especialmente atribuciones internas, globales y estables— como mediadores clave en la aparición y mantenimiento de la indefensión. Desde el punto de vista clínico, la intervención se orienta a restaurar la percepción de control, modificar las atribuciones disfuncionales y reactivar la conducta dirigida a metas.",
+      "influencias": [
+        "Conductismo radical (Skinner)",
+        "Condicionamiento clásico",
+        "Condicionamiento operante",
+        "Psicología experimental del aprendizaje",
+        "Psicología cognitiva",
+        "Teoría de la atribución"
+      ],
+      "refs": [
+        "Seligman, M. E. P. (1975). Helplessness: On Depression, Development, and Death.",
+        "Abramson, L. Y., Seligman, M. E. P., & Teasdale, J. D. (1978). Learned helplessness in humans: Critique and reformulation.",
+        "Peterson, C., Maier, S. F., & Seligman, M. E. P. (1993). Learned Helplessness: A Theory for the Age of Personal Control."
+      ],
+      "lat": 39.952583,
+      "lon": -75.165222,
+      "ciudad": "Filadelfia, Pennsylvania",
+      "pais": "EE. UU.",
       "escuelaId": "conductismo"
     },
     {
@@ -5315,6 +5345,18 @@
     },
     {
       "source": "condicionamiento-clasico-pavlov-1927",
+      "target": "indefension-aprendida-seligman-1975"
+    },
+    {
+      "source": "condicionamiento-operante-skinner-1938",
+      "target": "indefension-aprendida-seligman-1975"
+    },
+    {
+      "source": "psicologia-cognitiva-neisser-1967",
+      "target": "indefension-aprendida-seligman-1975"
+    },
+    {
+      "source": "condicionamiento-clasico-pavlov-1927",
       "target": "condicionamiento-aversivo"
     },
     {
@@ -6266,6 +6308,18 @@
     {
       "target": "teoria-bifactorial-ansiedad-mowrer",
       "influence": "Empirismo objetivista / Positivismo lógico"
+    },
+    {
+      "target": "indefension-aprendida-seligman-1975",
+      "influence": "Conductismo radical (Skinner)"
+    },
+    {
+      "target": "indefension-aprendida-seligman-1975",
+      "influence": "Psicología experimental del aprendizaje"
+    },
+    {
+      "target": "indefension-aprendida-seligman-1975",
+      "influence": "Teoría de la atribución"
     },
     {
       "target": "condicionamiento-aversivo",
