@@ -1,0 +1,191 @@
+{
+  "id": "bajo_estado_de_animo",
+  "areaId": "estado_animo_energia",
+  "label": "Bajo estado de ánimo",
+  "definicion": "Descenso persistente del tono afectivo basal caracterizado por tristeza, apatía, pesadez emocional o sensación de apagamiento, con reducción de energía psíquica y dificultad para sostener interés, implicación o vitalidad cotidiana.",
+  "descripcionClinica": "Clínicamente, el bajo estado de ánimo suele vivirse como una mezcla de tristeza sostenida, desánimo, apagamiento, pérdida de empuje y dificultad para sentir que la vida tira de uno. No equivale necesariamente a un episodio depresivo completo ni se reduce a la tristeza emocional pura: muchas veces incluye inercia conductual, retirada, disminución de iniciativa, visión más negativa de uno mismo y del futuro, y una especie de enlentecimiento subjetivo que vuelve costoso incluso lo básico. A corto plazo, aislarse, posponer, dormir más, bajar el nivel de exposición o dejar de intentarlo puede reducir exigencia y malestar. A largo plazo, estas respuestas disminuyen el contacto con refuerzo, consolidan sentimientos de inutilidad o desconexión y alimentan un círculo de pasividad, sesgo depresógeno y pérdida de agencia. Puede adoptar formas más inerciales y conductuales, formas más cognitivas y autodevaluativas o formas más dominadas por evitación del malestar y desconexión de dirección.",
+  "subtiposClinicos": [
+    {
+      "id": "inercial_retirado",
+      "label": "Inercial-retirado",
+      "descripcion": "Predomina la retirada, la pérdida de ritmo y la reducción de actividad, con sensación de arrastre, apagamiento y disminución de contacto con refuerzos."
+    },
+    {
+      "id": "autodevaluativo_cognitivo",
+      "label": "Autodevaluativo-cognitivo",
+      "descripcion": "Predominan pensamientos automáticos negativos, autocrítica, visión de inutilidad y lectura pesimista del presente y del futuro."
+    },
+    {
+      "id": "evitativo_desconectado",
+      "label": "Evitativo-desconectado",
+      "descripcion": "Predomina la organización de la vida alrededor de evitar malestar, esfuerzo o fracaso, con desconexión progresiva de valores, interés y dirección."
+    }
+  ],
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "pensamientos automáticos negativos",
+      "lectura pesimista del futuro",
+      "sesgo hacia fracaso, pérdida o inutilidad",
+      "dificultad para imaginar mejora o salida"
+    ],
+    "emocionales": [
+      "tristeza sostenida",
+      "desánimo",
+      "apatía afectiva",
+      "sensación de apagamiento"
+    ],
+    "conductuales": [
+      "retirada de actividades",
+      "pasividad o disminución de iniciativa",
+      "postergación repetida",
+      "abandono de rutinas previamente sostenidas"
+    ],
+    "relacionales": [
+      "reducción del contacto social",
+      "menor implicación interpersonal",
+      "tendencia a aislarse o responder menos",
+      "dependencia pasiva de que otros tiren del movimiento"
+    ],
+    "somaticos": [
+      "pesadez corporal subjetiva",
+      "enlentecimiento",
+      "baja activación general",
+      "fatigabilidad aumentada"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "la retirada reduce exigencia y malestar a corto plazo, pero disminuye el contacto con refuerzo positivo natural",
+    "la pasividad y la inercia erosionan agencia y refuerzan la sensación de incapacidad o bloqueo",
+    "los sesgos cognitivos depresógenos organizan la experiencia en clave de fracaso, inutilidad y futuro cerrado",
+    "la evitación de esfuerzo, incertidumbre o posible decepción bloquea experiencias correctivas",
+    "la desconexión progresiva de rutinas, vínculos y actividades significativas empobrece el contexto reforzante",
+    "la autocrítica y la autoevaluación negativa consolidan una identidad de insuficiencia o derrota",
+    "esperar a sentirse mejor para actuar mantiene el círculo de inmovilidad y desánimo"
+  ],
+  "procesosDominantesMJPS": ["AG", "N", "RE", "I"],
+  "modelosRelevantes": [
+    {
+      "modeloId": "activacion-conductual-jacobson-1996",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "bloquear_retirada",
+        "restaurar_contacto_con_refuerzo",
+        "reactivar_rutinas_y_dominios_clave",
+        "recuperar_agencia_por_accion"
+      ],
+      "explicacion": "Este modelo entiende el bajo estado de ánimo como un problema mantenido por retirada, evitación e interrupción del contacto con contingencias reforzantes. Su foco no está en discutir primero pensamientos, sino en reorganizar la conducta para que la persona vuelva a moverse, entre en contacto con actividades con valor y recupere experiencias de eficacia y refuerzo real. Es especialmente útil cuando el problema está dominado por inercia, aislamiento, pasividad y pérdida de ritmo vital.",
+      "focoMJPS": ["AG", "RE", "N"],
+      "tecnicasRelacionadas": [
+        "p_ba_analisis_funcional",
+        "p_ba_psicoeducacion",
+        "p_ba_monitorizacion",
+        "p_ba_programacion",
+        "m_ba_cinco_minutos",
+        "m_ba_revision_sin_juicio",
+        "m_ba_retirada_social",
+        "m_ba_dominio_clave"
+      ]
+    },
+    {
+      "modeloId": "terapia-cognitiva-beck-depresion-1967",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "identificar_sesgo_depresogeno",
+        "reestructurar_interpretacion_negativa",
+        "trabajar_autoimagen_y_futuro",
+        "debilitar_reglas_y_esquemas_de_derrota"
+      ],
+      "explicacion": "Este modelo entiende el bajo estado de ánimo como el resultado de sesgos sistemáticos en la interpretación de la experiencia, organizados por pensamientos automáticos negativos, distorsiones y esquemas depresógenos. El foco del cambio está en hacer visibles esas lecturas, contrastarlas y construir interpretaciones más ajustadas sobre uno mismo, el mundo y el futuro. Es especialmente útil cuando el tono bajo se sostiene por autodevaluación, desesperanza cognitiva y visión rígidamente negativa de la realidad.",
+      "focoMJPS": ["N", "I", "AG", "RE"],
+      "tecnicasRelacionadas": [
+        "p_beck_estructura_sesion",
+        "p_beck_conceptualizacion",
+        "p_beck_psicoeducacion",
+        "p_beck_pensamientos_automaticos",
+        "m_beck_registro_abc",
+        "m_beck_distorsiones",
+        "m_beck_programar_actividad",
+        "m_beck_prediccion",
+        "m_beck_revision_tareas",
+        "m_beck_sintesis"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "reducir_lucha_con_el_estado_interno",
+        "bloquear_evitacion_experiencial",
+        "defusionar_narrativas_de_apatia_o_derrota",
+        "reactivar_direccion_valiosa"
+      ],
+      "explicacion": "ACT entiende el bajo estado de ánimo como un estado que se cronifica cuando la persona queda gobernada por no sentir, no fracasar o no exponerse a más dolor. Su foco no es esperar a que el ánimo suba para vivir, sino cambiar la relación con el malestar, reducir evitación y reabrir conducta guiada por valores incluso en presencia de desgana, tristeza o pensamiento pesimista. Es especialmente útil cuando el problema central es la desconexión, la inacción sostenida y la vida organizada alrededor del repliegue.",
+      "focoMJPS": ["AG", "RE", "RI", "N", "I"],
+      "tecnicasRelacionadas": [
+        "p_act_formulacion_funcional",
+        "p_act_creativa_desesperanza",
+        "p_act_defusion",
+        "p_act_aceptacion",
+        "p_act_evitacion_experiencial",
+        "p_act_workability",
+        "p_act_willingness",
+        "p_act_choice_point",
+        "p_act_valores",
+        "p_act_accion_comprometida",
+        "m_act_estoy_teniendo_el_pensamiento",
+        "m_act_hacia_contra",
+        "m_act_paso_5_min",
+        "m_act_registro_funcional",
+        "m_act_funciona_para_ti",
+        "m_act_estoy_dispuesto",
+        "m_act_momento_eleccion",
+        "m_act_que_importa_aqui"
+      ]
+    }
+  ],
+  "nodosTransversalesImportantes": [
+    {
+      "id": "retirada_conductual",
+      "descripcion": "Conecta bajo estado de ánimo con evitación conductual, pasividad, baja motivación y enlentecimiento."
+    },
+    {
+      "id": "perdida_de_refuerzo",
+      "descripcion": "La reducción del contacto con actividades, vínculos y logros significativos atraviesa gran parte de los cuadros de tono bajo."
+    },
+    {
+      "id": "autocritica",
+      "descripcion": "La lectura negativa de uno mismo alimenta y estabiliza formas autodevaluativas del bajo estado de ánimo."
+    },
+    {
+      "id": "desconexion_de_valores",
+      "descripcion": "La pérdida de dirección o implicación con lo importante puede sostener la sensación de apagamiento y vacío."
+    },
+    {
+      "id": "desesperanza",
+      "descripcion": "Aunque es una subárea diferenciable, la expectativa de que nada cambiará suele atravesar muchos cuadros de bajo estado de ánimo."
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿Qué se ha ido dejando de hacer desde que empezó a bajar el tono anímico?",
+    "¿Qué obtiene a corto plazo la persona cuando se retira, pospone o se apaga?",
+    "¿Predomina más la inercia conductual o la autodevaluación cognitiva?",
+    "¿Qué pensamientos automáticos aparecen cuando intenta activarse o retomar algo?",
+    "¿Está esperando a sentirse mejor para actuar o está probando movimiento aunque no tenga ganas?",
+    "¿Qué dominios de la vida han perdido más refuerzo, estructura o sentido?"
+  ],
+  "criteriosDeProgreso": [
+    "aumenta la actividad sostenida aunque el ánimo no haya mejorado del todo",
+    "disminuye la retirada y el aislamiento",
+    "recupera rutinas, cuidado básico o dominios vitales previamente abandonados",
+    "se debilita la autointerpretación global de inutilidad o derrota",
+    "mejora la percepción de capacidad para influir en el propio funcionamiento",
+    "vuelve a aparecer implicación real con actividades, personas o metas"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundir bajo estado de ánimo con anhedonia, desesperanza o fatiga persistente y mezclar subáreas distintas",
+    "centrarse solo en cognición y perder el papel decisivo de la retirada y la pérdida de refuerzo",
+    "centrarse solo en activación y no trabajar esquemas de inutilidad, fracaso o futuro cerrado cuando son dominantes",
+    "tratar la pasividad como simple falta de voluntad y no como patrón mantenido por alivio a corto plazo",
+    "esperar a que suba el ánimo antes de intervenir conductualmente y reforzar así la inmovilidad"
+  ]
+}
