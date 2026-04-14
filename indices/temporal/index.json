@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-14T08:29:41.960Z",
+  "generatedAt": "2026-04-14T08:30:29.134Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 179,
-    "links": 183,
-    "unresolvedInfluences": 626
+    "modelos": 180,
+    "links": 185,
+    "unresolvedInfluences": 628
   },
   "nodes": [
     {
@@ -3051,6 +3051,35 @@
       "escuelaId": "transversal"
     },
     {
+      "id": "modelo-cognitivo-panico-clark-1986",
+      "label": "Modelo cognitivo del pánico",
+      "year": 1986,
+      "group": "Cognitivo",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/cognitivo/modelo-cognitivo-panico-clark-1986.json",
+      "authors": "David M. Clark",
+      "summary": "El modelo cognitivo del pánico de Clark (1986) propone que los ataques de pánico no se deben directamente a las sensaciones fisiológicas en sí, sino a la interpretación catastrófica que la persona hace de dichas sensaciones. Según este modelo, estímulos internos relativamente benignos —como aumento de la frecuencia cardíaca, mareo o dificultad respiratoria— son percibidos como señales de peligro grave (por ejemplo, infarto, desmayo, pérdida de control o muerte). Esta interpretación activa un ciclo de retroalimentación en el que la ansiedad incrementa las sensaciones físicas, lo que a su vez refuerza la interpretación catastrófica, generando una escalada rápida hacia el ataque de pánico. El modelo también destaca el papel de la hipervigilancia interoceptiva, la atención selectiva a las sensaciones corporales y las conductas de seguridad, que impiden la desconfirmación de las creencias catastróficas y mantienen el trastorno en el tiempo.",
+      "influencias": [
+        "Terapia cognitiva de Beck",
+        "Sesgos cognitivos (Kahneman y Tversky)",
+        "Condicionamiento clásico",
+        "Modelo procesual de regulación emocional-gross-1998"
+      ],
+      "refs": [
+        "Clark, D. M. (1986). A cognitive approach to panic. Behaviour Research and Therapy.",
+        "Clark, D. M. (1997). Panic disorder and social phobia. In Cognitive Behaviour Therapy for Psychiatric Problems.",
+        "Salkovskis, P. M. (1988). Misinterpretation of bodily sensations and panic.",
+        "Beck, A. T., Emery, G., & Greenberg, R. (1985). Anxiety Disorders and Phobias: A Cognitive Perspective."
+      ],
+      "lat": 51.752013,
+      "lon": -1.257849,
+      "ciudad": "Oxford",
+      "pais": "Reino Unido",
+      "escuelaId": "cognitivo"
+    },
+    {
       "id": "pe-prolonged-exposure-1986",
       "label": "PE – Prolonged Exposure",
       "year": 1986,
@@ -5413,6 +5442,14 @@
       "target": "cft-gilbert-2009"
     },
     {
+      "source": "kahneman-sesgos-cognitivos-heuristics-biases",
+      "target": "modelo-cognitivo-panico-clark-1986"
+    },
+    {
+      "source": "condicionamiento-clasico-pavlov-1927",
+      "target": "modelo-cognitivo-panico-clark-1986"
+    },
+    {
       "source": "terapia-cognitiva-beck-depresion-1967",
       "target": "terapia-cognitivo-conductual-estandar-1980"
     },
@@ -6465,6 +6502,14 @@
     {
       "target": "cft-gilbert-2009",
       "influence": "Terapias experienciales (imaginería, trabajo con sillas)"
+    },
+    {
+      "target": "modelo-cognitivo-panico-clark-1986",
+      "influence": "Terapia cognitiva de Beck"
+    },
+    {
+      "target": "modelo-cognitivo-panico-clark-1986",
+      "influence": "Modelo procesual de regulación emocional-gross-1998"
     },
     {
       "target": "kahneman-sesgos-cognitivos-heuristics-biases",
