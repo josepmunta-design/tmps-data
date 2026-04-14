@@ -1,0 +1,262 @@
+{
+  "id": "panico",
+  "areaId": "amenaza_ansiedad",
+  "label": "Pánico",
+  "definicion": "Patrón de alarma aguda en el que una activación fisiológica intensa y de rápida escalada se interpreta como señal de catástrofe inminente, generando miedo extremo, urgencia de escape y temor posterior a que el episodio se repita.",
+  "descripcionClinica": "Clínicamente, el pánico suele aparecer como episodios súbitos de terror intenso con taquicardia, disnea, mareo, opresión torácica, temblor, sensación de irrealidad o miedo a morir, desmayarse o perder el control. El problema no se limita al episodio agudo: a menudo se organiza después un sistema de miedo al propio miedo, hipervigilancia corporal, evitación de sensaciones y dependencia de señales de seguridad. A corto plazo, escapar, sentarse, pedir ayuda, controlar rígidamente la respiración o evitar contextos asociados reduce la alarma. A largo plazo, estas respuestas refuerzan la asociación entre activación interna y peligro, consolidan la interpretación catastrófica y estrechan progresivamente la vida cotidiana. Puede adoptar formas más interoceptivas, más anticipatorias o más dominadas por evitación y conductas de seguridad.",
+  "subtiposClinicos": [
+    {
+      "id": "interoceptivo_catastrofico",
+      "label": "Interoceptivo-catastrófico",
+      "descripcion": "Predomina la lectura catastrófica de sensaciones corporales internas como señal de infarto, asfixia, colapso o pérdida de control."
+    },
+    {
+      "id": "anticipatorio_evitativo",
+      "label": "Anticipatorio-evitativo",
+      "descripcion": "Predomina el miedo a que vuelva a ocurrir, con vigilancia constante, evitación de contextos y dependencia de señales o personas de seguridad."
+    },
+    {
+      "id": "desregulacion_aguda",
+      "label": "Desregulación aguda",
+      "descripcion": "Predomina la rápida escalada fisiológica y la dificultad para atravesar el pico de activación sin amplificarlo con intentos urgentes de control."
+    }
+  ],
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "interpretación catastrófica de sensaciones corporales",
+      "miedo a morir, desmayarse o perder el control",
+      "anticipación constante de un nuevo episodio",
+      "atención rígida a señales internas de peligro"
+    ],
+    "emocionales": [
+      "terror agudo",
+      "miedo al miedo",
+      "ansiedad anticipatoria",
+      "sensación de amenaza inminente"
+    ],
+    "conductuales": [
+      "escape rápido de la situación",
+      "búsqueda de ayuda o acompañamiento",
+      "evitación de lugares, esfuerzo físico o contextos asociados",
+      "uso de conductas de seguridad"
+    ],
+    "relacionales": [
+      "dependencia de figuras de seguridad",
+      "petición reiterada de tranquilización",
+      "restricción de autonomía por miedo a episodios en público"
+    ],
+    "somaticos": [
+      "taquicardia",
+      "hiperventilación o sensación de ahogo",
+      "mareo o inestabilidad",
+      "opresión torácica",
+      "temblor",
+      "despersonalización o desrealización"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "la interpretación catastrófica convierte activación fisiológica en amenaza extrema y amplifica el episodio",
+    "la hipervigilancia interoceptiva aumenta la detección y sobrerrepresentación de cambios corporales normales",
+    "el escape y la evitación reducen miedo a corto plazo pero impiden aprender que la activación es tolerable y transitoria",
+    "las conductas de seguridad bloquean la desconfirmación de la catástrofe anticipada",
+    "el miedo al miedo reorganiza la vida alrededor de prevenir episodios futuros",
+    "la búsqueda rígida de control corporal aumenta la monitorización y la sensibilidad a la activación",
+    "la asociación repetida entre sensaciones internas y peligro consolida aprendizaje de alarma"
+  ],
+  "procesosDominantesMJPS": ["RF", "RE", "N", "AP", "AG"],
+  "modelosRelevantes": [
+    {
+      "modeloId": "modelo-cognitivo-panico-clark-1986",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "identificar_interpretacion_catastrofica",
+        "reinterpretar_sensaciones",
+        "desconfirmar_catastrofe",
+        "eliminar_conductas_seguridad"
+      ],
+      "explicacion": "Este modelo entiende el pánico como el resultado de interpretar sensaciones corporales relativamente benignas como señales de peligro extremo e inminente. El foco del cambio no está en eliminar primero la activación, sino en desmontar el significado catastrófico que la convierte en terror, interrumpir el ciclo sensación-interpretación-ansiedad y permitir experiencias correctivas directas. Es especialmente útil cuando el núcleo del problema está en el miedo a las propias sensaciones, la hipervigilancia corporal y la dependencia de conductas de seguridad.",
+      "focoMJPS": ["N", "RF", "RE", "AP", "AG"],
+      "tecnicasRelacionadas": [
+        "p_clark_psicoeducacion_panico",
+        "p_clark_identificacion_cogniciones",
+        "p_clark_reestructuracion_panico",
+        "p_clark_experimentos_panico",
+        "p_clark_exposicion_interoceptiva",
+        "p_clark_eliminacion_seguridad",
+        "p_clark_reduccion_hipervigilancia",
+        "p_clark_reinterpretacion_sensaciones",
+        "p_clark_creencias_vulnerabilidad",
+        "p_clark_generalizacion",
+        "m_clark_nombrar_catastrofe",
+        "m_clark_diferenciar_sensacion",
+        "m_clark_reatribucion",
+        "m_clark_detectar_hipervigilancia",
+        "m_clark_test_prediccion",
+        "m_clark_detectar_seguridad",
+        "m_clark_retirar_seguridad",
+        "m_clark_normalizar_sensacion",
+        "m_clark_ausencia_catastrofe"
+      ]
+    },
+    {
+      "modeloId": "cbt-inhibicion-miedo-craske-2014",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "violar_expectativas_catastroficas",
+        "retirar_senales_seguridad",
+        "exponer_a_sensaciones_y_contextos",
+        "fortalecer_aprendizaje_inhibitorio"
+      ],
+      "explicacion": "Este modelo entiende el pánico como una red de predicciones de amenaza que se mantiene porque la persona evita, escapa o se protege demasiado pronto. Su aporte diferencial no es tanto explicar el origen cognitivo de la catástrofe como optimizar el aprendizaje correctivo: diseñar exposiciones que desconfirmen predicciones, retiren muletas y hagan más recuperable el nuevo aprendizaje en distintos contextos. Es especialmente útil cuando hay retorno persistente del miedo, evitación consolidada y dificultad para generalizar lo aprendido.",
+      "focoMJPS": ["AP", "AG", "N", "RE"],
+      "tecnicasRelacionadas": [
+        "p_craske_violacion_expectativas",
+        "p_craske_eliminacion_seguridad",
+        "p_craske_variabilidad_contextual",
+        "p_craske_profundizacion",
+        "p_craske_incertidumbre",
+        "p_craske_recuperacion_aprendizaje",
+        "m_craske_expectativa_explicita",
+        "m_craske_discrepancia_post",
+        "m_craske_seguridad_encubierta",
+        "m_craske_retirada_seguridad",
+        "m_craske_sin_habituacion"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "reducir_lucha_con_sensaciones",
+        "defusionar_predicciones_catastroficas",
+        "bloquear_evitacion_experiencial",
+        "recuperar_accion_pese_al_miedo"
+      ],
+      "explicacion": "ACT entiende el pánico como un episodio que se vuelve tiránico cuando la vida queda organizada alrededor de no sentirlo. El foco está en cambiar la relación con las sensaciones y pensamientos alarmistas, reduciendo la agenda de control y ampliando la capacidad de permanecer, sentir y actuar sin obedecer automáticamente al miedo. Es especialmente útil cuando el problema principal ya no es solo el ataque, sino la vida estrechada por el miedo a que vuelva.",
+      "focoMJPS": ["RE", "RI", "AG", "N", "RF"],
+      "tecnicasRelacionadas": [
+        "p_act_aceptacion",
+        "p_act_defusion",
+        "p_act_evitacion_experiencial",
+        "p_act_workability",
+        "p_act_willingness",
+        "p_act_exposicion_apertura",
+        "p_act_presencia",
+        "m_act_estoy_teniendo_el_pensamiento",
+        "m_act_anclaje_30s",
+        "m_act_expansion_somatica",
+        "m_act_urge_surfing",
+        "m_act_quedarse_con"
+      ]
+    },
+    {
+      "modeloId": "modelo-procesual-regulacion-emocional-gross-1998",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "intervenir_temprano_en_la_secuencia_emocional",
+        "reorientar_atencion",
+        "cambiar_significado_de_la_activacion",
+        "reducir_modulacion_tardia_rigida"
+      ],
+      "explicacion": "Gross entiende el problema como una secuencia emocional que puede escalar rápidamente si solo se intenta controlar al final, cuando la activación ya está disparada. En pánico, su aporte es ordenar dónde intervenir antes de la explosión completa: situación, atención, reevaluación y modulación de respuesta. Es útil como modelo organizador para formular la escalada y elegir puntos de entrada regulativos.",
+      "focoMJPS": ["RE", "N", "RF", "AP"],
+      "tecnicasRelacionadas": [
+        "p_gross_seleccion_situacion",
+        "p_gross_modificacion_situacion",
+        "p_gross_despliegue_atencional",
+        "p_gross_cambio_cognitivo",
+        "p_gross_modulacion_respuesta",
+        "m_gross_reorientar_atencion",
+        "m_gross_reevaluacion",
+        "m_gross_reducir_supresion"
+      ]
+    },
+    {
+      "modeloId": "terapia-dialectico-conductual-linehan-1993",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "desacelerar_escalada_aguda",
+        "analizar_cadena_de_desregulacion",
+        "generalizar_habilidades_en_crisis",
+        "regular_sin_escape_inmediato"
+      ],
+      "explicacion": "DBT entiende estos episodios como momentos de desregulación intensa en los que vulnerabilidad previa, activación, interpretación y respuesta impulsiva se encadenan muy rápido. Su foco diferencial no está tanto en la teoría específica del pánico como en enseñar a atravesar picos de activación sin colapsar en escape, caos o dependencia de rescate, y en analizar con precisión la cadena que llevó al episodio. Es especialmente útil cuando el pánico aparece dentro de cuadros más amplios de alta desregulación o crisis frecuentes.",
+      "focoMJPS": ["RE", "AG", "N", "RF"],
+      "tecnicasRelacionadas": [
+        "p_dbt_chain_analysis",
+        "p_dbt_diary_card",
+        "p_dbt_homework_practica",
+        "p_dbt_phone_coaching",
+        "p_dbt_validacion_sistematica",
+        "p_dbt_contingency_management"
+      ]
+    },
+    {
+      "modeloId": "psicoterapia-multimodal-lazarus-1976",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "mapear_modalidades_implicadas",
+        "intervenir_en_activacion_somatica",
+        "reestructurar_interpretacion",
+        "coordinar_cambios_multimodales"
+      ],
+      "explicacion": "Lazarus entiende el pánico como un patrón multimodal donde sensaciones, cogniciones, conducta, imágenes y factores biológicos se refuerzan entre sí. Su aporte es evitar una formulación demasiado estrecha y permitir ver qué modalidad domina en cada caso. Es especialmente útil cuando el cuadro mezcla activación corporal, imágenes catastróficas, evitación y factores contextuales o biológicos que están amplificando el problema.",
+      "focoMJPS": ["RF", "N", "AG", "RE"],
+      "tecnicasRelacionadas": [
+        "p_lazarus_sensacion_somatica",
+        "p_lazarus_cognicion_reestructuracion",
+        "p_lazarus_monitorizacion_modal",
+        "p_lazarus_homework_multimodal",
+        "p_lazarus_biologia_sustancias",
+        "m_lazarus_chequeo_biologico",
+        "m_lazarus_revision_progreso",
+        "m_lazarus_ajuste_contextual"
+      ]
+    }
+  ],
+  "nodosTransversalesImportantes": [
+    {
+      "id": "hipervigilancia_corporal",
+      "descripcion": "La atención rígida a sensaciones internas conecta pánico con sensibilidad aumentada a sensaciones internas e hipervigilancia corporal."
+    },
+    {
+      "id": "evitacion_experiencial",
+      "descripcion": "El intento de no sentir activación, miedo o pérdida de control enlaza pánico con evitación interna y restricción conductual."
+    },
+    {
+      "id": "conductas_de_seguridad",
+      "descripcion": "Las maniobras para prevenir, neutralizar o amortiguar un episodio mantienen el problema aunque den alivio inmediato."
+    },
+    {
+      "id": "interpretacion_catastrofica",
+      "descripcion": "La asignación de significado extremo a cambios corporales o emocionales organiza buena parte de la escalada."
+    },
+    {
+      "id": "miedo_al_miedo",
+      "descripcion": "La anticipación de volver a activarse convierte el propio sistema de alarma en disparador."
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿Qué sensaciones concretas disparan más rápido la lectura de catástrofe?",
+    "¿Qué cree la persona que ocurrirá exactamente si no escapa o no se protege?",
+    "¿Qué conductas de seguridad usa justo antes, durante o después del episodio?",
+    "¿El problema principal está más en el episodio agudo o en la vida organizada para evitar que vuelva?",
+    "¿Qué obtiene a corto plazo cuando evita, sale corriendo o busca tranquilización?",
+    "¿Hay factores biológicos o contextuales que estén aumentando la vulnerabilidad a la activación?"
+  ],
+  "criteriosDeProgreso": [
+    "disminuye la interpretación catastrófica automática de sensaciones corporales",
+    "tolera mejor activación fisiológica sin escalar a pánico secundario",
+    "reduce escape y evitación de situaciones asociadas",
+    "retira conductas de seguridad y comprueba más directamente qué ocurre",
+    "recupera actividades que había restringido por miedo a un episodio",
+    "puede atravesar señales tempranas de alarma con más regulación y menos urgencia"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundir pánico con ansiedad generalizada y no trabajar suficientemente el miedo a sensaciones y la evitación interoceptiva",
+    "centrarse solo en bajar activación y no intervenir la interpretación catastrófica ni las señales de seguridad",
+    "tratarlo como simple hiperactivación fisiológica y perder el papel del significado atribuido al episodio",
+    "hacer exposición demasiado protectora y bloquear el aprendizaje correctivo",
+    "incluir modelos muy tangenciales y diluir la especificidad clínica de la subárea"
+  ]
+}
