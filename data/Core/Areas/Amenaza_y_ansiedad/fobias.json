@@ -1,0 +1,216 @@
+{
+  "id": "fobias",
+  "areaId": "amenaza_ansiedad",
+  "label": "Fobias",
+  "definicion": "Patrón de miedo intenso, desproporcionado y persistentemente organizado alrededor de un objeto, situación o estímulo específico, que conduce a evitación, escape o soportación con malestar extremo.",
+  "descripcionClinica": "Clínicamente, las fobias se manifiestan como una activación rápida y consistente ante estímulos concretos —animales, alturas, sangre, vuelo, espacios, procedimientos médicos u otras situaciones específicas— acompañada de urgencia de escape, anticipación ansiosa y reorganización de la conducta para no exponerse. El fenómeno no se reduce al miedo agudo: lo que lo cronifica suele ser la evitación repetida, el alivio inmediato que esta produce, la generalización progresiva a estímulos relacionados y, en algunos casos, el aprendizaje vicario o las reglas rígidas sobre peligro y vulnerabilidad. A corto plazo, evitar, salir, posponer, pedir acompañamiento o usar señales de seguridad disminuye la ansiedad. A largo plazo, estas respuestas impiden el aprendizaje correctivo y consolidan la asociación entre estímulo y amenaza. Puede adoptar formas más circunscritas y simples, formas más generalizadas por extensión del miedo o formas con fuerte dependencia de autoeficacia y modelado.",
+  "subtiposClinicos": [
+    {
+      "id": "circunscrita_directa",
+      "label": "Circunscrita directa",
+      "descripcion": "El miedo está claramente ligado a un estímulo o situación concreta y la evitación se organiza de forma bastante delimitada."
+    },
+    {
+      "id": "generalizada_por_extension",
+      "label": "Generalizada por extensión",
+      "descripcion": "El miedo se va ampliando a estímulos, contextos o señales relacionadas, estrechando progresivamente el repertorio conductual."
+    },
+    {
+      "id": "dependiente_de_seguridad",
+      "label": "Dependiente de seguridad",
+      "descripcion": "La persona puede acercarse al estímulo solo si dispone de acompañamiento, rituales, control o señales de protección."
+    }
+  ],
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "anticipación de daño o catástrofe ante estímulos específicos",
+      "sobreestimación del peligro",
+      "subestimación de capacidad para afrontarlo",
+      "atención sesgada a señales amenazantes"
+    ],
+    "emocionales": [
+      "miedo intenso y rápido",
+      "ansiedad anticipatoria",
+      "alivio inmediato al evitar",
+      "vergüenza secundaria por limitarse"
+    ],
+    "conductuales": [
+      "evitación activa del estímulo",
+      "escape rápido cuando aparece",
+      "uso de acompañantes o señales de seguridad",
+      "restricción progresiva de actividades"
+    ],
+    "relacionales": [
+      "dependencia de otros para afrontar situaciones temidas",
+      "petición de tranquilización o acompañamiento",
+      "limitaciones sociales o familiares por el patrón evitativo"
+    ],
+    "somaticos": [
+      "hiperactivación autonómica",
+      "tensión muscular",
+      "sensación de urgencia de huida",
+      "mareo, náusea o bloqueo corporal según el estímulo"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "la evitación reduce ansiedad a corto plazo y refuerza negativamente el patrón fóbico",
+    "la ausencia de contacto correctivo mantiene intacta la asociación entre estímulo y peligro",
+    "la generalización extiende el miedo a señales o contextos relacionados",
+    "las conductas de seguridad impiden atribuir la no-catástrofe a la propia capacidad de afrontamiento",
+    "el aprendizaje observacional o vicario puede consolidar expectativas de daño incluso sin experiencia directa intensa",
+    "las creencias de baja autoeficacia favorecen inhibición, abandono y dependencia de protección externa",
+    "la lucha rígida por no sentir miedo puede ampliar el problema y estrechar la vida"
+  ],
+  "procesosDominantesMJPS": ["AP", "AG", "RE", "N", "RF"],
+  "modelosRelevantes": [
+    {
+      "modeloId": "cbt-inhibicion-miedo-craske-2014",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "violar_expectativas_de_peligro",
+        "retirar_conductas_de_seguridad",
+        "generalizar_aprendizaje_correctivo",
+        "consolidar_aprendizaje_inhibitorio"
+      ],
+      "explicacion": "Este modelo entiende las fobias como memorias de amenaza que se mantienen porque la persona evita demasiado pronto o se expone con muletas que bloquean el aprendizaje. Su foco diferencial es diseñar exposiciones para desconfirmar predicciones de peligro, reducir señales de seguridad y hacer que el nuevo aprendizaje se recupere en distintos contextos. Es especialmente útil cuando el problema central ya no es solo el miedo, sino su persistencia pese a exposiciones parciales o poco transferibles.",
+      "focoMJPS": ["AP", "AG", "N", "RE"],
+      "tecnicasRelacionadas": [
+        "p_craske_violacion_expectativas",
+        "p_craske_eliminacion_seguridad",
+        "p_craske_variabilidad_contextual",
+        "p_craske_profundizacion",
+        "p_craske_incertidumbre",
+        "p_craske_recuperacion_aprendizaje",
+        "m_craske_expectativa_explicita",
+        "m_craske_discrepancia_post",
+        "m_craske_seguridad_encubierta",
+        "m_craske_retirada_seguridad",
+        "m_craske_rotacion_contextual",
+        "m_craske_recordatorio_aprendizaje",
+        "m_craske_sin_habituacion",
+        "m_craske_practica_espaciada"
+      ]
+    },
+    {
+      "modeloId": "condicionamiento-clasico-pavlov-1927",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "formular_asociacion_estimulo_peligro",
+        "trabajar_generalizacion_y_discriminacion",
+        "debilitar_respuesta_condicionada",
+        "organizar_exposicion_desde_aprendizaje"
+      ],
+      "explicacion": "Este marco entiende las fobias como respuestas condicionadas en las que un estímulo pasa a funcionar como predictor de amenaza. Su aporte no es una técnica cerrada, sino una formulación muy precisa del problema: adquisición, generalización, discriminación, extinción e inhibición. Es especialmente útil para pensar por qué un miedo específico se automatiza, se extiende y requiere nuevas experiencias de aprendizaje para modificarse.",
+      "focoMJPS": ["RF", "RE", "AP", "AG"],
+      "tecnicasRelacionadas": []
+    },
+    {
+      "modeloId": "aprendizaje-social-bandura-1977",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "aumentar_autoeficacia",
+        "usar_modelado",
+        "graduar_dominio",
+        "reducir_inhibicion_por_expectativa_de_fracaso"
+      ],
+      "explicacion": "Bandura entiende que en muchas fobias no solo importa el estímulo temido, sino la expectativa de no ser capaz de afrontarlo. Su foco diferencial está en construir autoeficacia mediante modelado, práctica gradual y experiencias de dominio, lo que resulta especialmente útil cuando el paciente evita porque anticipa incapacidad, no solo daño. También es valioso cuando el miedo se ha aprendido o reforzado observando a otros.",
+      "focoMJPS": ["AG", "N", "RE"],
+      "tecnicasRelacionadas": [
+        "p_bandura_evaluacion_autoeficacia",
+        "p_bandura_seleccion_modelos",
+        "p_bandura_modelado_practica_gradual",
+        "p_bandura_tareas_graduadas_dominio",
+        "p_bandura_persuasion_verbal_feedback",
+        "p_bandura_reinterpretacion_activacion",
+        "p_bandura_generalizacion_prevencion",
+        "m_bandura_eficacia_vs_resultado",
+        "m_bandura_claves_modelo",
+        "m_bandura_ensayo_inmediato",
+        "m_bandura_graduar_dificultad",
+        "m_bandura_feedback_estrategia",
+        "m_bandura_atribucion_funcional",
+        "m_bandura_normalizar_activacion",
+        "m_bandura_comparacion_funcional",
+        "m_bandura_reencuadre_fallo",
+        "m_bandura_variar_contextos"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "reducir_lucha_con_el_miedo",
+        "bloquear_evitacion_experiencial",
+        "defusionar_reglas_de_peligro",
+        "recuperar_accion_con_direccion"
+      ],
+      "explicacion": "ACT entiende las fobias como un problema que se cronifica cuando la vida queda organizada alrededor de no sentir miedo. Su aporte diferencial no es la exposición como simple reducción de ansiedad, sino como ampliación de libertad conductual en presencia de malestar. Es especialmente útil cuando la fobia ya se ha convertido en una restricción de vida sostenida por control, evitación y obediencia rígida a reglas internas.",
+      "focoMJPS": ["RE", "AG", "N", "RI", "AP"],
+      "tecnicasRelacionadas": [
+        "p_act_formulacion_funcional",
+        "p_act_creativa_desesperanza",
+        "p_act_defusion",
+        "p_act_aceptacion",
+        "p_act_evitacion_experiencial",
+        "p_act_workability",
+        "p_act_willingness",
+        "p_act_choice_point",
+        "p_act_exposicion_apertura",
+        "p_act_accion_comprometida",
+        "m_act_estoy_teniendo_el_pensamiento",
+        "m_act_anclaje_30s",
+        "m_act_urge_surfing",
+        "m_act_funciona_para_ti",
+        "m_act_estoy_dispuesto",
+        "m_act_momento_eleccion",
+        "m_act_que_importa_aqui",
+        "m_act_quedarse_con"
+      ]
+    }
+  ],
+  "nodosTransversalesImportantes": [
+    {
+      "id": "evitacion_conductual",
+      "descripcion": "La evitación es uno de los puentes más claros entre fobias y el área de evitación y restricción conductual."
+    },
+    {
+      "id": "conductas_de_seguridad",
+      "descripcion": "Las maniobras de protección o control permiten acercamiento parcial, pero sostienen la asociación de peligro."
+    },
+    {
+      "id": "autoeficacia",
+      "descripcion": "La percepción de incapacidad para afrontar el estímulo modula intensidad del miedo, abandono y generalización."
+    },
+    {
+      "id": "aprendizaje_vicario",
+      "descripcion": "En algunos casos el miedo se consolida observando daño, alarma o evitación en otros."
+    },
+    {
+      "id": "generalizacion_del_miedo",
+      "descripcion": "La extensión a estímulos y contextos relacionados explica buena parte de la cronificación funcional."
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿Qué daño concreto anticipa la persona ante ese estímulo o situación?",
+    "¿Qué hace exactamente para no exponerse o para sentirse segura?",
+    "¿El problema se mantiene más por miedo al estímulo o por sensación de incapacidad para afrontarlo?",
+    "¿Hay aprendizaje directo, aprendizaje vicario o ambos?",
+    "¿Hasta dónde se ha ido extendiendo la evitación en la vida cotidiana?",
+    "¿Qué subtipo domina: miedo muy circunscrito, generalización progresiva o dependencia de seguridad?"
+  ],
+  "criteriosDeProgreso": [
+    "aumenta el acercamiento directo al estímulo temido",
+    "disminuye la evitación y el escape",
+    "reduce el uso de señales o personas de seguridad",
+    "tolera mejor activación sin abandonar la situación",
+    "se amplía el repertorio de contextos afrontados",
+    "mejora la percepción de capacidad para afrontar el miedo"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundir fobias con ansiedad generalizada y perder la especificidad estímulo-situación",
+    "hacer formulaciones demasiado globales y no mapear con precisión evitación, generalización y seguridad",
+    "centrarse solo en tranquilizar o regular y no producir aprendizaje correctivo suficiente",
+    "hacer exposición parcial con demasiadas muletas y mantener intacta la expectativa de peligro",
+    "tratar toda fobia como simple pensamiento irracional y perder el papel del aprendizaje, la evitación y la autoeficacia"
+  ]
+}
