@@ -194,27 +194,27 @@
       "m_bowlby_cierre_seguridad"
     ]
   },
-  {
-    "modeloId": "vb_entorno_estabilizacion",
-    "pesoModelo": 2,
-    "tipoOperacion": [
-      "asegurar_umbral_minimo_de_estabilidad",
-      "posponer_profundizacion_si_hay_riesgo",
-      "reducir_disparadores_contextuales_cronicos",
-      "sostener_trabajo_con_memoria_desde_seguridad_externa"
-    ],
-    "explicacion": "Este modelo no explica las intrusiones por sí mismo, pero sí introduce una distinción clínica muy útil: a veces la memoria traumática sigue irrumpiendo no solo por falta de procesamiento interno, sino porque el entorno mantiene al sistema en supervivencia y no existe estabilidad mínima suficiente para elaborar. Su aporte es práctico y potente: evaluar si conviene seguir profundizando o si antes hay que estabilizar contexto, activar apoyos y reducir amenaza real. Es especialmente conveniente cuando las intrusiones empeoran en entornos todavía inseguros, caóticos o altamente desreguladores.",
-    "focoMJPS": ["VB", "RF", "RE", "R", "AG"],
-    "tecnicasRelacionadas": [
-      "p_vb_entorno_evaluacion",
-      "p_vb_entorno_ems",
-      "p_vb_entorno_triage",
-      "p_vb_entorno_recursos",
-      "p_vb_entorno_si_entonces",
-      "p_vb_entorno_reevaluacion",
-      "m_vb_entorno_mapa5"
-    ]
-  },
+ {
+  "modeloId": "vb_entorno_estabilizacion",
+  "pesoModelo": 2,
+  "tipoOperacion": [
+    "evaluar_estabilidad_externa_minima",
+    "acordar_ems",
+    "priorizar_estabilizacion_antes_de_profundizar",
+    "activar_apoyos_y_reducir_amenaza_contextual"
+  ],
+  "explicacion": "El Modelo de Estabilización del Entorno Vital no conceptualiza los recuerdos intrusivos como un problema primario de memoria traumática, sino como un fenómeno cuyo abordaje depende de que exista un umbral mínimo de estabilidad externa. Su foco está en evaluar si el entorno mantiene al sistema en supervivencia inmediata y, por tanto, impide que la terapia avance hacia elaboración, simbolización o integración de la experiencia. Por eso su operación principal no es reprocesar la intrusión, sino determinar si conviene estabilizar primero el contexto, acordar una Estabilidad Mínima Suficiente, activar apoyos y reducir amenazas externas antes de profundizar en el material traumático. Es especialmente útil cuando las intrusiones empeoran en contextos todavía inseguros, impredecibles o caóticos, y cuando profundizar demasiado pronto aumentaría desorganización, abandono o crisis.",
+  "focoMJPS": ["VB", "RE", "R", "AG"],
+  "tecnicasRelacionadas": [
+    "p_vb_entorno_evaluacion",
+    "p_vb_entorno_ems",
+    "p_vb_entorno_triage",
+    "p_vb_entorno_recursos",
+    "p_vb_entorno_si_entonces",
+    "p_vb_entorno_reevaluacion",
+    "m_vb_entorno_mapa5"
+  ]
+},
     {
       "modeloId": "sensorimotor-ogden-2001",
       "pesoModelo": 4,
