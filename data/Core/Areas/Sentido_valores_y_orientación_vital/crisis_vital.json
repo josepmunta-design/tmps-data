@@ -63,71 +63,88 @@
     "retroalimentación entre inacción y pérdida de sentido"
   ],
   "procesosDominantesMJPS": ["N", "I", "AG", "RE"],
-  "modelosRelevantes": [
-    {
-      "modeloId": "logoterapia-frankl",
-      "pesoModelo": 5,
-      "tipoOperacion": ["reconstruir_sentido", "orientar_valores", "trascender_sufrimiento"],
-      "explicacion": "La logoterapia entiende la crisis vital como una pérdida de sentido que desorganiza la existencia. El foco está en reconstruir significado y orientar la vida hacia valores elegidos, incluso en contextos adversos. Es especialmente útil cuando domina el vacío o la falta de propósito.",
-      "focoMJPS": ["N", "I", "AG"],
-      "tecnicasRelacionadas": [
-        "p_logo_dialogo_socratico",
-        "p_logo_intencion_paradojica",
-        "p_logo_dereflection"
-      ]
-    },
-    {
-      "modeloId": "constructivismo-narrativo-neimeyer",
-      "pesoModelo": 5,
-      "tipoOperacion": ["reconstruir_significado", "integrar_eventos", "restaurar_continuidad"],
-      "explicacion": "El constructivismo narrativo conceptualiza la crisis vital como una ruptura del sistema de significados que organiza la identidad. Interviene reconstruyendo narrativas que integren la experiencia disruptiva y restauren coherencia y continuidad del self :contentReference[oaicite:1]{index=1}.",
-      "focoMJPS": ["N", "I"],
-      "tecnicasRelacionadas": [
-        "p_neim_exploracion_narrativa",
-        "p_neim_rupturas_significado",
-        "p_neim_reconstruccion_significado",
-        "p_neim_dialogo_reflexivo"
-      ]
-    },
-    {
-      "modeloId": "act-hayes-1999",
-      "pesoModelo": 4,
-      "tipoOperacion": ["desfusionar_preguntas", "clarificar_valores", "activar_accion"],
-      "explicacion": "ACT entiende la crisis vital como fusión con dudas y búsqueda de certeza que bloquea la acción. El foco es dejar de resolver cognitivamente la vida y pasar a construirla mediante acción comprometida guiada por valores.",
-      "focoMJPS": ["RI", "AG", "N"],
-      "tecnicasRelacionadas": [
-        "p_act_defusion",
-        "p_act_valores",
-        "p_act_accion_comprometida"
-      ]
-    },
-    {
-      "modeloId": "terapia_existencial",
-      "pesoModelo": 4,
-      "tipoOperacion": ["afrontar_angustia", "asumir_responsabilidad", "elegir_direccion"],
-      "explicacion": "La terapia existencial entiende la crisis vital como confrontación con libertad, responsabilidad y finitud. El foco no es eliminar la angustia sino usarla como motor para tomar decisiones auténticas.",
-      "focoMJPS": ["I", "AG", "N"],
-      "tecnicasRelacionadas": []
-    },
-    {
-      "modeloId": "neurobiologia_interpersonal_siegel",
-      "pesoModelo": 3,
-      "tipoOperacion": ["integrar_experiencia", "regular_sistema", "restaurar_coherencia"],
-      "explicacion": "Desde IPNB, la crisis vital se entiende como desintegración temporal de sistemas de significado, emoción y relación. El foco está en restaurar integración y coherencia entre niveles para permitir reorganización del self.",
-      "focoMJPS": ["RE", "I", "AP"],
-      "tecnicasRelacionadas": []
-    },
-    {
-      "modeloId": "modelo_estabilizacion_entorno_vital",
-      "pesoModelo": 3,
-      "tipoOperacion": ["asegurar_estabilidad", "reducir_amenaza", "permitir_proceso"],
-      "explicacion": "Este modelo plantea que algunas crisis vitales no pueden resolverse si el entorno es inestable. El foco es garantizar un umbral mínimo de estabilidad externa para que el trabajo de significado sea posible :contentReference[oaicite:2]{index=2}.",
-      "focoMJPS": ["RF", "RE", "AG"],
-      "tecnicasRelacionadas": [
-        "p_vb_entorno_evaluacion"
-      ]
-    }
+ "modelosRelevantes": [
+  {
+    "modeloId": "logoterapia-1940",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "reconstruir_sentido",
+      "orientar_responsabilidad_existencial",
+      "reactivar_direccion_vital"
+    ],
+    "explicacion": "La Logoterapia entiende la crisis vital como una desorganización del sentido en la que la persona pierde orientación existencial, propósito y capacidad de responder de forma responsable a su situación. El foco no está en reducir solo angustia, sino en ayudar a descubrir qué tarea, valor o dirección reclama ahora la vida. Es especialmente útil cuando la crisis adopta forma de vacío, desorientación o pérdida de significado tras una ruptura biográfica.",
+    "focoMJPS": ["N", "I", "AG"],
+    "tecnicasRelacionadas": [
+      "p_logo_dialogo_socratico_existencial",
+      "p_logo_intencion_paradojica",
+      "p_logo_dereflection"
+    ]
+  },
+  {
+    "modeloId": "psicoterapia-constructivista-neimeyer",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "reconstruir_significado",
+      "restaurar_continuidad_biografica",
+      "reorganizar_self_narrativo"
+    ],
+    "explicacion": "La Psicoterapia Constructivista de Neimeyer conceptualiza la crisis vital como una ruptura de significado que desorganiza identidad, continuidad narrativa y horizonte de futuro. El foco está en explorar el quiebre, reconstruir marcos de sentido viables e integrar la experiencia disruptiva dentro de una historia más coherente y abierta. Es especialmente útil cuando la persona siente que su vida ha dejado de encajar consigo misma.",
+    "focoMJPS": ["N", "I", "AG", "RE"],
+    "tecnicasRelacionadas": [
+      "p_neim_valores",
+      "p_neim_self_futuro",
+      "p_neim_integracion_vida_cotidiana",
+      "m_neim_invitacion_narrativa",
+      "m_neim_quiebres_narrativos"
+    ]
+  },
+  {
+    "modeloId": "act-hayes-strosahl-wilson-1999",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "desfusionar_bloqueo_existencial",
+      "clarificar_valores",
+      "reactivar_accion_comprometida"
+    ],
+    "explicacion": "ACT entiende la crisis vital como un atrapamiento en dudas, fusión con preguntas irresolubles y búsqueda de certeza antes de vivir. El foco está en soltar la lucha por resolver cognitivamente la existencia, clarificar valores y reconstruir dirección a través de acción comprometida. Es especialmente útil cuando la crisis se mantiene por parálisis decisional, sobreanálisis o desconexión entre valor y conducta.",
+    "focoMJPS": ["RI", "N", "AG", "I"],
+    "tecnicasRelacionadas": [
+      "p_act_defusion",
+      "p_act_valores",
+      "p_act_accion_comprometida",
+      "p_act_workability"
+    ]
+  },
+  {
+    "modeloId": "modelo-momentos-innovadores-goncalves-2009",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "detectar_excepciones_a_la_narrativa_bloqueada",
+      "ampliar_agencia_narrativa",
+      "consolidar_nueva_direccion_identitaria"
+    ],
+    "explicacion": "El Modelo de Momentos Innovadores entiende la crisis vital como una narrativa dominante que ha monopolizado la identidad y ha estrechado la agencia. El foco está en detectar excepciones significativas, elaborarlas y convertirlas en una nueva organización narrativa más viva y orientada al cambio. Es especialmente útil cuando la persona está atrapada en una historia de estancamiento, fracaso o desorientación que parece total.",
+    "focoMJPS": ["N", "I", "AG", "R"],
+    "tecnicasRelacionadas": []
+  },
+{
+  "modeloId": "intervencion-psicosocial-desplazamiento-forzado-2005",
+  "pesoModelo": 3,
+  "tipoOperacion": [
+    "asegurar_seguridad_basica",
+    "estabilizar_activacion",
+    "reducir_amenaza_contextual",
+    "permitir_procesamiento_posterior"
   ],
+  "explicacion": "Este modelo aporta una idea clínica decisiva: cuando el contexto sigue siendo inestable o amenazante, no tiene sentido exigir elaboración profunda como si el problema fuera solo intrapsíquico. El foco está en restaurar seguridad básica, grounding, apoyo realista y reducción de amenaza para que el trabajo posterior sobre significado, identidad o trauma sea viable. Es especialmente útil cuando la crisis está sostenida o amplificada por desprotección, desplazamiento, violencia o gran inestabilidad externa.",
+  "focoMJPS": ["RF", "RE", "AG", "R"],
+  "tecnicasRelacionadas": [
+    "p_desplazamiento_estabilizacion_grounding",
+    "p_desplazamiento_plan_seguridad",
+    "p_desplazamiento_pfa"
+  ]
+}
+],
   "nodosTransversalesImportantes": [
     {
       "id": "sentido",
