@@ -65,7 +65,7 @@
     "en trauma relacional, activación de amenaza de apego que intensifica la evitación"
   ],
   "procesosDominantesMJPS": ["RE", "AP", "AG", "N", "RF"],
- "modelosRelevantes": [
+"modelosRelevantes": [
   {
     "modeloId": "act-hayes-strosahl-wilson-1999",
     "pesoModelo": 5,
@@ -75,7 +75,7 @@
       "desfusionar_agenda_de_control",
       "reabrir_accion_valiosa"
     ],
-    "explicacion": "ACT entiende esta subárea como un patrón de evitación experiencial donde la persona organiza su conducta para no contactar con recuerdos, emociones o sensaciones traumáticas. El problema no es el contenido traumático en sí, sino la rigidez del intento de control. El foco está en debilitar la evitación como regulador principal y ampliar la capacidad de contacto con la experiencia sin que esta determine la conducta. Es especialmente útil cuando la vida está organizada en torno a no sentir o no recordar.",
+    "explicacion": "ACT entiende esta subárea como un patrón de evitación experiencial donde la persona organiza su conducta para no contactar con recuerdos, emociones o sensaciones traumáticas. El problema no es el contenido traumático en sí, sino la rigidez del intento de control. El foco está en debilitar la evitación como regulador principal y ampliar la capacidad de contacto con la experiencia sin que esta determine la conducta.",
     "focoMJPS": ["RE", "RI", "AG", "AP"],
     "tecnicasRelacionadas": [
       "p_act_evitacion_experiencial",
@@ -85,23 +85,7 @@
     ]
   },
   {
-    "modeloId": "prolonged-exposure-foa-1986",
-    "pesoModelo": 5,
-    "tipoOperacion": [
-      "reducir_evitacion_conductual",
-      "exponer_recuerdo_traumatico",
-      "activar_estructura_de_miedo",
-      "corregir_expectativas_de_amenaza"
-    ],
-    "explicacion": "La Exposición Prolongada conceptualiza esta subárea de forma directa: la evitación es el mecanismo central que mantiene el trauma. Al evitar, el sistema no puede aprender que el recuerdo no es peligroso en el presente. El foco es eliminar la evitación mediante exposición repetida y sostenida a recuerdos y situaciones evitadas. Es el modelo más directo cuando la evitación es clara, conductual y sostenida.",
-    "focoMJPS": ["RE", "AP", "AG"],
-    "tecnicasRelacionadas": [
-      "m_pe_suds",
-      "m_pe_grabaciones"
-    ]
-  },
-  {
-    "modeloId": "cognitive-processing-therapy-resick-1993",
+    "modeloId": "cognitive-processing-therapy-resick-1992",
     "pesoModelo": 5,
     "tipoOperacion": [
       "reducir_evitacion_cognitiva",
@@ -109,12 +93,60 @@
       "procesar_significados_traumaticos",
       "flexibilizar_creencias"
     ],
-    "explicacion": "CPT entiende la evitación como un bloqueo del procesamiento del trauma, especialmente a nivel cognitivo y narrativo. La persona evita pensar, recordar o dar significado a lo ocurrido, lo que mantiene intactos los atascos cognitivos. El foco está en forzar un acceso controlado al trauma (especialmente mediante escritura) para reducir la evitación y permitir su procesamiento. Es especialmente útil cuando la evitación es más interna que conductual.",
+    "explicacion": "CPT entiende la evitación como un bloqueo del procesamiento del trauma, especialmente a nivel cognitivo y narrativo. La persona evita pensar, recordar o dar significado a lo ocurrido, lo que mantiene intactos los atascos cognitivos. El foco está en forzar un acceso controlado al trauma para permitir su integración.",
     "focoMJPS": ["N", "RE", "AP"],
     "tecnicasRelacionadas": [
       "p_cpt_exposicion_escrita",
       "p_cpt_escritura_impacto",
       "p_cpt_procesamiento_relato"
+    ]
+  },
+  {
+    "modeloId": "cbt-inhibicion-miedo-craske-2014",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "eliminar_conductas_de_seguridad",
+      "exponer_con_violacion_de_expectativas",
+      "reducir_evitacion",
+      "facilitar_aprendizaje_inhibitorio"
+    ],
+    "explicacion": "El modelo de aprendizaje inhibitorio entiende la evitación como el principal obstáculo para generar nuevo aprendizaje de seguridad. No basta con exponerse: si hay evitación o conductas de seguridad, el aprendizaje no ocurre. El foco está en diseñar exposiciones que rompan expectativas de peligro y reduzcan la necesidad de evitar.",
+    "focoMJPS": ["RE", "AP", "AG"],
+    "tecnicasRelacionadas": [
+      "p_craske_exposicion",
+      "m_craske_violacion_expectativas"
+    ]
+  },
+  {
+    "modeloId": "ert-mennin-fresco-2013",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "reducir_regulacion_evitatativa",
+      "aumentar_contacto_emocional",
+      "regular_atencion",
+      "reorientar_motivacion"
+    ],
+    "explicacion": "ERT conceptualiza la evitación como una estrategia regulatoria fallida basada en la orientación excesiva a la seguridad. La persona evita para reducir activación, pero esto mantiene la sensibilidad emocional. El foco está en cambiar la relación con la emoción y aumentar la capacidad de sostenerla sin recurrir a evitación.",
+    "focoMJPS": ["RE", "AP", "N"],
+    "tecnicasRelacionadas": [
+      "p_ert_regulacion_atencional",
+      "m_ert_cyr"
+    ]
+  },
+  {
+    "modeloId": "terapia-dialectico-conductual-linehan-1993",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "reducir_evitacion_emocional",
+      "aumentar_tolerancia_malestar",
+      "regular_activacion",
+      "prevenir_escape"
+    ],
+    "explicacion": "DBT entiende la evitación como parte de un patrón de desregulación emocional donde la persona no dispone de recursos para sostener el malestar. La evitación no es el problema en sí, sino la incapacidad de tolerar la experiencia interna. El foco está en construir tolerancia y regulación para reducir la necesidad de evitar.",
+    "focoMJPS": ["RE", "RF", "AG"],
+    "tecnicasRelacionadas": [
+      "p_dbt_tolerancia_malestar",
+      "p_dbt_regulacion_emocional"
     ]
   },
   {
@@ -126,7 +158,7 @@
       "reducir_evitacion_somatica",
       "integrar_respuestas_defensivas"
     ],
-    "explicacion": "La Psicoterapia Sensoriomotriz conceptualiza la evitación como una protección frente a activación fisiológica traumática. La persona no evita solo el recuerdo, sino las sensaciones corporales que lo acompañan. El foco no es eliminar la evitación de golpe, sino hacer posible el contacto sin desbordamiento mediante regulación y titulación. Es clave cuando la evitación está mediada por el cuerpo.",
+    "explicacion": "La Psicoterapia Sensoriomotriz conceptualiza la evitación como una protección frente a activación fisiológica traumática. La persona evita especialmente las sensaciones corporales asociadas al trauma. El foco es permitir contacto progresivo sin desbordamiento.",
     "focoMJPS": ["RF", "RE", "AP"],
     "tecnicasRelacionadas": [
       "p_sm_titulacion_pendulacion",
@@ -142,7 +174,7 @@
       "completar_respuestas_defensivas",
       "reintroducir_contacto_gradual"
     ],
-    "explicacion": "Somatic Experiencing entiende que la evitación surge porque el sistema nervioso no puede tolerar la activación asociada al trauma. La persona evita no por decisión cognitiva, sino porque el organismo queda fijado en defensa. El foco es restaurar la regulación fisiológica para que el contacto con el trauma deje de ser peligroso. Es especialmente útil cuando la evitación es automática, corporal y poco consciente.",
+    "explicacion": "Somatic Experiencing entiende la evitación como resultado de un sistema nervioso incapaz de tolerar activación. La evitación no es solo psicológica, sino fisiológica. El foco está en restaurar regulación para que el contacto con el trauma sea posible.",
     "focoMJPS": ["RF", "RE"],
     "tecnicasRelacionadas": [
       "p_se_pendulacion",
@@ -158,7 +190,7 @@
       "reconstruir_narrativa",
       "reabrir_expresion"
     ],
-    "explicacion": "Este enfoque entiende la evitación como silenciamiento del trauma, muchas veces reforzado por el contexto social. La evitación no es solo individual, sino colectiva: no hablar, no recordar, no nombrar. El foco está en recuperar memoria, relato y reconocimiento para romper la evitación estructural. Es especialmente relevante en trauma interpersonal o sociopolítico.",
+    "explicacion": "Este enfoque entiende la evitación como silenciamiento del trauma, muchas veces reforzado por el contexto social. El foco está en recuperar memoria y expresión para romper la evitación estructural.",
     "focoMJPS": ["N", "R", "I"],
     "tecnicasRelacionadas": []
   }
