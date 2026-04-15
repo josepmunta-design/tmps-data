@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-15T06:54:25.496Z",
+  "generatedAt": "2026-04-15T06:57:39.418Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 182,
-    "links": 188,
-    "unresolvedInfluences": 631
+    "links": 189,
+    "unresolvedInfluences": 636
   },
   "nodes": [
     {
@@ -3752,9 +3752,22 @@
       "isMarco": false,
       "file": "modelos/integrativo/modelo-trifasico-trauma-herman-1992.json",
       "authors": "Judith Lewis Herman",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "El Modelo trifásico del trauma formulado por Judith Herman es un marco clínico secuencial para el tratamiento del trauma, especialmente del trauma interpersonal crónico, complejo y prolongado. Herman sostiene que la recuperación traumática no puede abordarse de forma indiscriminada ni centrarse desde el inicio en la exposición al recuerdo, porque el trauma altera de forma profunda la seguridad básica, la regulación emocional, la continuidad identitaria, la confianza relacional y la capacidad de agencia. Por ello propone una secuencia de tres grandes fases: establecimiento de seguridad y estabilización, rememoración y duelo, y reconexión con la vida ordinaria. La primera fase busca restaurar control, previsibilidad y regulación suficiente; la segunda permite elaborar los recuerdos traumáticos y llorar las pérdidas asociadas; y la tercera se orienta a reconstruir vínculos, identidad, proyecto vital y participación en el mundo. El modelo no describe una progresión rígida ni puramente lineal, sino una organización clínica del trabajo que prioriza qué hacer primero, qué riesgos evitar y qué condiciones deben estar presentes para que el procesamiento traumático resulte integrador y no desorganizante. Se trata de uno de los marcos más influyentes en psicoterapia del trauma porque articula regulación, memoria, duelo, relación, poder y reconexión social dentro de una lógica clínica clara y profundamente relacional.",
+      "influencias": [
+        "Psicología del trauma",
+        "Teoría del apego",
+        "Feminismo clínico",
+        "Psiquiatría relacional",
+        "Teoría de la disociación",
+        "Modelos faseados del trauma"
+      ],
+      "refs": [
+        "Herman, J. L. (1992). Trauma and Recovery.",
+        "Herman, J. L. (2015). Trauma and Recovery: The Aftermath of Violence—From Domestic Abuse to Political Terror.",
+        "Courtois, C. A., & Ford, J. D. (Eds.). (2013). Treatment of Complex Trauma: A Sequenced, Relationship-Based Approach.",
+        "Cloitre, M., Courtois, C. A., Charuvastra, A., Carapezza, R., Stolbach, B. C., & Green, B. L. (2011). Treatment of complex PTSD: Results of the ISTSS expert clinician survey on best practices.",
+        "van der Kolk, B. A. (2014). The Body Keeps the Score."
+      ],
       "lat": 42.373616,
       "lon": -71.109734,
       "ciudad": "Cambridge, Massachusetts",
@@ -5820,6 +5833,10 @@
     },
     {
       "source": "teoria-apego-bowlby",
+      "target": "modelo-trifasico-trauma-herman-1992"
+    },
+    {
+      "source": "teoria-apego-bowlby",
       "target": "neurobiologia-interpersonal-siegel-1999"
     },
     {
@@ -7651,6 +7668,26 @@
     {
       "target": "psicodinamica-ciclica-wachtel",
       "influence": "Cognitivismo"
+    },
+    {
+      "target": "modelo-trifasico-trauma-herman-1992",
+      "influence": "Psicología del trauma"
+    },
+    {
+      "target": "modelo-trifasico-trauma-herman-1992",
+      "influence": "Feminismo clínico"
+    },
+    {
+      "target": "modelo-trifasico-trauma-herman-1992",
+      "influence": "Psiquiatría relacional"
+    },
+    {
+      "target": "modelo-trifasico-trauma-herman-1992",
+      "influence": "Teoría de la disociación"
+    },
+    {
+      "target": "modelo-trifasico-trauma-herman-1992",
+      "influence": "Modelos faseados del trauma"
     },
     {
       "target": "neurobiologia-interpersonal-siegel-1999",
