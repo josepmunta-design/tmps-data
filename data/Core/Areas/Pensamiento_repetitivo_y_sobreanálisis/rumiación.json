@@ -1,0 +1,227 @@
+{
+  "id": "rumiacion",
+  "areaId": "pensamiento_repetitivo_sobreanalisis",
+  "label": "Rumiación",
+  "definicion": "Pensamiento repetitivo, circular y centrado en el pasado o en el propio estado emocional, orientado a entender causas, significados o consecuencias del malestar sin avanzar hacia resolución ni acción efectiva.",
+  "descripcionClinica": "La rumiación es un proceso mental persistente en el que la persona da vueltas de forma reiterada a eventos pasados, errores, pérdidas o estados emocionales, intentando comprenderlos o resolverlos. Aunque su función aparente es clarificar o aprender, en la práctica mantiene activado el malestar, amplifica la carga emocional y bloquea la acción.\n\nClínicamente se observa repetición de preguntas sin cierre (\"¿por qué pasó?\", \"¿qué significa?\", \"¿qué hice mal?\"), dificultad para interrumpir el pensamiento, sensación de estar atrapado en la mente y desplazamiento de la acción por análisis interno. La rumiación suele ir acompañada de pasividad conductual y aumento de emociones como tristeza, culpa o ansiedad.\n\nA diferencia de la preocupación, no se orienta al futuro sino al pasado o al estado actual. A diferencia del sobreanálisis, no busca la mejor decisión sino comprender o explicar el malestar. Y a diferencia de los pensamientos intrusivos, es un proceso sostenido y parcialmente voluntario, no una irrupción automática.",
+  "subtiposClinicos": [
+    {
+      "id": "rumiacion_causal",
+      "label": "Rumiación causal",
+      "descripcion": "Foco en por qué ocurrió algo, buscando explicaciones del pasado."
+    },
+    {
+      "id": "rumiacion_consecuencial",
+      "label": "Rumiación sobre consecuencias",
+      "descripcion": "Foco en qué implica lo ocurrido, sus efectos o significados."
+    },
+    {
+      "id": "rumiacion_autocritica",
+      "label": "Rumiación autocrítica",
+      "descripcion": "Pensamiento repetitivo centrado en errores personales, defectos o insuficiencia."
+    },
+    {
+      "id": "rumiacion_emocional",
+      "label": "Rumiación emocional",
+      "descripcion": "Foco en el propio estado interno: por qué me siento así, cuánto durará, qué significa."
+    }
+  ],
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "pensamiento circular sin resolución",
+      "preguntas repetitivas sin cierre",
+      "foco en causas y significados del malestar",
+      "dificultad para cambiar de tema mental"
+    ],
+    "emocionales": [
+      "mantenimiento o incremento del malestar",
+      "tristeza persistente",
+      "culpa o vergüenza recurrente",
+      "sensación de atrapamiento mental"
+    ],
+    "conductuales": [
+      "inactividad o pasividad",
+      "reemplazo de acción por pensamiento",
+      "aislamiento para pensar",
+      "dificultad para implicarse en tareas externas"
+    ],
+    "relacionales": [
+      "repetir los mismos temas en conversación",
+      "búsqueda de validación sin integración",
+      "dificultad para salir de narrativas rígidas"
+    ],
+    "somaticos": [
+      "tensión sostenida",
+      "fatiga mental",
+      "sensación de agotamiento cognitivo"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "creencia de que pensar más ayudará a resolver o entender",
+    "confusión entre análisis y acción",
+    "refuerzo negativo al evitar actuar o sentir directamente",
+    "déficit de control atencional",
+    "fusión con contenido mental",
+    "sustitución de experiencia por pensamiento",
+    "incremento del malestar que reactiva el ciclo",
+    "falta de cierre conductual o experiencial",
+    "estilo cognitivo orientado a problema pero sin implementación",
+    "rigidez en marcos interpretativos"
+  ],
+  "procesosDominantesMJPS": ["N", "RI", "RE", "AG"],
+  "modelosRelevantes": [
+    {
+  "modeloId": "rumination-focused-cbt-watkins-2011",
+  "pesoModelo": 5,
+  "tipoOperacion": [
+    "identificar_bucle_rumiativo",
+    "cambiar_procesamiento_abstracto_a_concreto",
+    "interrumpir_rumiacion_conductualmente",
+    "orientar_a_accion_especifica"
+  ],
+  "explicacion": "La Rumination-Focused Cognitive Behavioral Therapy (RFCBT) entiende la rumiación como un estilo de procesamiento cognitivo abstracto–analítico que mantiene el malestar depresivo y la pasividad. Su foco no está en disputar directamente el contenido del pensamiento, sino en cambiar el modo de procesamiento: pasar de preguntas abstractas, globales y circulares a un procesamiento concreto, experiencial, situado y orientado a la acción. Su aportación diferencial es central en esta subárea porque trabaja la rumiación como hábito mental específico, no solo como ejemplo de perseveración cognitiva general.",
+  "focoMJPS": ["N", "RI", "AG", "RE"],
+  "tecnicasRelacionadas": [
+    "p_rfcbt_formulacion_bucles_rumiativos",
+    "p_rfcbt_psicoeducacion_estilos_procesamiento",
+    "p_rfcbt_entrenamiento_concreto_experiencial",
+    "p_rfcbt_interrupcion_conductual_rumiacion",
+    "p_rfcbt_resolucion_concreta_problemas",
+    "p_rfcbt_activacion_conductual_metas_especificas",
+    "p_rfcbt_deteccion_temprana_rumiacion",
+    "m_rfcbt_cambio_pregunta_abstracta_a_concreta",
+    "m_rfcbt_describir_secuencia_temporal",
+    "m_rfcbt_anclaje_detalles_sensoriales",
+    "m_rfcbt_esto_es_rumiacion",
+    "m_rfcbt_siguiente_paso_minimo",
+    "m_rfcbt_comparar_abstracto_vs_concreto",
+    "m_rfcbt_microactividad_interrupcion",
+    "m_rfcbt_especificar_contexto_futuro"
+  ]
+},
+    {
+      "modeloId": "terapia-metacognitiva-wells-1990",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "identificar_cas",
+        "reducir_rumiacion",
+        "modificar_creencias_metacognitivas",
+        "recuperar_control_atencional"
+      ],
+      "explicacion": "La Terapia Metacognitiva entiende la rumiación como parte del síndrome cognitivo-atencional (CAS), mantenido por creencias metacognitivas sobre la utilidad de pensar y la incontrolabilidad del pensamiento. El problema no es el contenido, sino el proceso repetitivo. Su foco es interrumpir la rumiación y modificar la relación con el pensamiento.",
+      "focoMJPS": ["N", "RI", "RE", "AG"],
+      "tecnicasRelacionadas": [
+        "p_mct_formulacion_cas",
+        "p_mct_psicoeducacion",
+        "p_mct_creencias_metacognitivas",
+        "p_mct_att",
+        "p_mct_desactivacion_rumiacion",
+        "p_mct_eliminacion_afrontamiento"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "defusionar_pensamiento",
+        "reducir_evitacion_experiencial",
+        "descentrarse_del_contenido",
+        "activar_accion_valiosa"
+      ],
+      "explicacion": "ACT conceptualiza la rumiación como fusión cognitiva y evitación experiencial: la persona se queda atrapada en el pensamiento para evitar contacto directo con la experiencia. El foco es cambiar la relación con los pensamientos, no su contenido, y volver a la acción.",
+      "focoMJPS": ["RI", "N", "RE", "AG"],
+      "tecnicasRelacionadas": [
+        "m_act_registro_funcional",
+        "m_act_metafora_autobus",
+        "m_act_normalizacion_mente",
+        "m_act_pregunta_funcionabilidad",
+        "m_act_lenguaje_disposicion"
+      ]
+    },
+    {
+      "modeloId": "activacion-conductual-jacobson-1996",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "bloquear_rumiacion_conductualmente",
+        "reorientar_a_accion",
+        "incrementar_refuerzo_externo",
+        "reducir_inactividad"
+      ],
+      "explicacion": "La Activación Conductual entiende la rumiación como una forma de evitación que sustituye la acción. El foco es romper el ciclo pensamiento–inactividad introduciendo conducta dirigida a objetivos y contacto con refuerzo.",
+      "focoMJPS": ["AG", "RE"]
+    },
+    {
+      "modeloId": "terapia-racional-autoinstruccional-meichenbaum-1971",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "interrumpir_dialogo_rumiativo",
+        "introducir_autoinstrucciones",
+        "reorientar_a_tarea",
+        "regular_proceso_cognitivo"
+      ],
+      "explicacion": "Meichenbaum conceptualiza la rumiación como un fallo en el diálogo interno regulador. El foco es introducir autoinstrucciones que interrumpan el bucle y orienten la acción.",
+      "focoMJPS": ["RI", "N", "AG"],
+      "tecnicasRelacionadas": [
+        "m_meichenbaum_detectar_autoverbalizacion_impulsiva",
+        "m_meichenbaum_autoinstruccion_parada",
+        "m_meichenbaum_orientacion_tarea",
+        "m_meichenbaum_autocontrol_durante_ejecucion",
+        "m_meichenbaum_autoinstruccion_correctiva"
+      ]
+    },
+    {
+      "modeloId": "pst-solucion-problemas-dzurilla-goldfried-1971",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "convertir_analisis_en_problema",
+        "estructurar_resolucion",
+        "pasar_a_accion",
+        "cerrar_bucle_cognitivo"
+      ],
+      "explicacion": "PST entiende la rumiación como un intento fallido de resolución de problemas. El foco es transformar pensamiento difuso en problema definido y avanzar hacia acción concreta.",
+      "focoMJPS": ["N", "AG"],
+      "tecnicasRelacionadas": [
+        "p_pst_definicion_problema",
+        "p_pst_toma_decisiones",
+        "p_pst_plan_implementacion",
+        "m_pst_formular_problema_concreto",
+        "m_pst_descomponer_primer_paso"
+      ]
+    },
+    {
+      "modeloId": "k13coherence-therapy-1993",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "identificar_coherencia_rumiacion",
+        "acceder_memoria_emocional",
+        "resolver_conflicto_implicito",
+        "desactivar_necesidad_de_rumiar"
+      ],
+      "explicacion": "La Terapia de la Coherencia entiende la rumiación como coherente con esquemas implícitos no resueltos. El pensamiento repetitivo persiste porque cumple una función emocional profunda. El foco es acceder a esa coherencia y transformarla.",
+      "focoMJPS": ["AP", "RI", "I"]
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿Qué intenta resolver la rumiación?",
+    "¿Qué malestar evita o regula?",
+    "¿Qué ocurre si la persona deja de pensar en ello?",
+    "¿Se sustituye acción por pensamiento?",
+    "¿Qué creencias hay sobre la utilidad de pensar?",
+    "¿Hay problemas no resueltos o no cerrados?"
+  ],
+  "criteriosDeProgreso": [
+    "reducción de tiempo en rumiación",
+    "mayor capacidad de interrumpir el pensamiento",
+    "incremento de acción dirigida a objetivos",
+    "menor fusión con contenido mental",
+    "mayor flexibilidad cognitiva",
+    "capacidad de dejar pasar pensamientos sin engancharse"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundir rumiación con preocupación y aplicar técnicas de incertidumbre en lugar de interrupción",
+    "trabajar contenido en lugar de proceso",
+    "reforzar la rumiación mediante análisis excesivo en terapia",
+    "ignorar su función evitativa",
+    "no intervenir sobre la inactividad conductual asociada"
+  ]
+}
