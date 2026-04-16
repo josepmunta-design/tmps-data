@@ -1,0 +1,175 @@
+{
+  "id": "preocupacion_constante",
+  "areaId": "pensamiento_repetitivo_y_sobreanalisis",
+  "label": "Preocupación constante",
+  "definicion": "Cadena persistente de pensamiento anticipatorio orientado al futuro, centrado en posibles amenazas, problemas o escenarios negativos, con dificultad para detenerse.",
+  "descripcionClinica": "La preocupación constante es un modo de funcionamiento cognitivo en el que la mente se orienta de forma crónica hacia el futuro, generando escenarios hipotéticos para anticipar y prevenir riesgos. Aunque su función aparente es aumentar control y preparación, en la práctica mantiene la activación del sistema de amenaza, reduce el contacto con la experiencia presente y bloquea la acción efectiva.\n\nClínicamente, se observa una sensación de alerta basal continua, dificultad para desconectar, planificación excesiva, necesidad de certeza y encadenamiento de pensamientos tipo “¿y si…?”. A diferencia de la rumiación, no gira en torno al pasado ni al significado emocional, sino al intento de controlar lo que podría ocurrir. :contentReference[oaicite:0]{index=0}\n\nA corto plazo puede generar sensación de control, pero a medio y largo plazo mantiene la ansiedad, reduce la tolerancia a la incertidumbre y estrecha el repertorio conductual.",
+  "subtiposClinicos": [
+    {
+      "id": "preocupacion_generalizada",
+      "label": "Preocupación difusa generalizada",
+      "descripcion": "Preocupación extendida a múltiples áreas (salud, trabajo, relaciones), sin foco claro y con sensación constante de que algo puede ir mal."
+    },
+    {
+      "id": "preocupacion_anticipatoria_especifica",
+      "label": "Preocupación anticipatoria específica",
+      "descripcion": "Preocupación centrada en eventos concretos futuros (exámenes, reuniones, decisiones), con elaboración detallada de escenarios negativos."
+    },
+    {
+      "id": "preocupacion_controladora",
+      "label": "Preocupación como intento de control",
+      "descripcion": "Uso deliberado de la preocupación como estrategia para sentirse preparado o reducir incertidumbre, aunque aumente la activación."
+    }
+  ],
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "pensamiento tipo ¿y si...?",
+      "anticipación constante de escenarios negativos",
+      "dificultad para detener el flujo de pensamiento",
+      "sensación de necesidad de prever todo"
+    ],
+    "emocionales": [
+      "ansiedad sostenida",
+      "inquietud",
+      "tensión constante",
+      "sensación de amenaza difusa"
+    ],
+    "conductuales": [
+      "planificación excesiva",
+      "búsqueda de seguridad",
+      "dificultad para desconectar",
+      "evitación de incertidumbre"
+    ],
+    "relacionales": [
+      "reaseguración frecuente",
+      "dependencia de confirmación externa",
+      "dificultad para tolerar ambigüedad en relaciones"
+    ],
+    "somaticos": [
+      "tensión muscular",
+      "fatiga",
+      "alteraciones del sueño",
+      "hiperactivación fisiológica leve sostenida"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "creencias de que preocuparse es útil o necesario",
+    "intolerancia a la incertidumbre",
+    "sesgo atencional hacia amenaza",
+    "refuerzo negativo a corto plazo (sensación de control)",
+    "evitación experiencial de emociones primarias",
+    "conductas de seguridad y comprobación",
+    "fusión cognitiva con escenarios anticipatorios"
+  ],
+  "procesosDominantesMJPS": ["RE", "N", "AP"],
+  "modelosRelevantes": [
+    {
+      "modeloId": "terapia-metacognitiva-wells-1990",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "desactivar_preocupacion_como_proceso",
+        "modificar_creencias_metacognitivas",
+        "reducir_vigilancia_amenaza",
+        "entrenar_control_atencional"
+      ],
+      "explicacion": "La Terapia Metacognitiva entiende la preocupación como parte del síndrome cognitivo-atencional (CAS): un patrón de procesamiento mantenido por creencias metacognitivas sobre su utilidad y necesidad. El problema no es el contenido de los pensamientos, sino el hecho de entrar en el bucle de preocupación.\n\nEl foco está en interrumpir la preocupación como proceso, no en discutir cada pensamiento. Se trabaja modificando creencias como “preocuparme me protege” y entrenando una relación más pasiva con la cognición (dejar pasar pensamientos sin responder).\n\nEs especialmente potente cuando la preocupación es persistente, difícil de detener y vivida como incontrolable o necesaria.",
+      "focoMJPS": ["N", "RE", "AG"],
+      "tecnicasRelacionadas": [
+        "p_mct_att",
+        "p_mct_desactivacion_rumiacion",
+        "p_mct_modificacion_creencias_positivas",
+        "p_mct_modificacion_creencias_negativas",
+        "m_mct_reduccion_comprobacion",
+        "m_mct_autoobservacion_cas"
+      ]
+    },
+    {
+      "modeloId": "ert-mennin-fresco-2013",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "reconfigurar_regulacion_emocional",
+        "reducir_orientacion_seguridad",
+        "entrenar_regulacion_atencional",
+        "activar_orientacion_recompensa"
+      ],
+      "explicacion": "ERT conceptualiza la preocupación como un intento fallido de regulación emocional que emerge en contextos de alta sensibilidad afectiva y orientación dominante hacia la seguridad. La persona se preocupa para reducir incertidumbre, pero en realidad amplifica la reactividad.\n\nEl foco está en cambiar el sistema completo: entrenar regulación atencional, sostener la emoción sin sobreelaborarla y reequilibrar motivación hacia recompensa en lugar de seguridad.\n\nEs especialmente útil cuando la preocupación está ligada a hiperactivación emocional y estrechamiento conductual.",
+      "focoMJPS": ["RE", "AP", "N", "AG"],
+      "tecnicasRelacionadas": [
+        "p_ert_regulacion_atencional",
+        "p_ert_regulacion_metacognitiva",
+        "m_ert_orientacion_respiracion",
+        "m_ert_distanciamiento_preocupacion"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "defusionar_pensamientos",
+        "reducir_evitacion_experiencial",
+        "reorientar_a_valores",
+        "romper_control_cognitivo"
+      ],
+      "explicacion": "ACT entiende la preocupación como una forma de evitación experiencial y fusión cognitiva: la persona queda atrapada en pensamientos sobre el futuro intentando controlar lo incontrolable.\n\nEl foco no es eliminar la preocupación, sino cambiar la relación con ella: verla como pensamiento, no como realidad, y actuar igualmente en dirección a valores.\n\nEs especialmente útil cuando la persona está muy atrapada en el contenido mental y ha organizado su vida en torno a evitar incertidumbre.",
+      "focoMJPS": ["RI", "RE", "AG", "N"],
+      "tecnicasRelacionadas": [
+        "p_act_defusion_cognitiva",
+        "m_act_etiqueta_metacognitiva",
+        "m_act_anclaje_atencional",
+        "m_act_pregunta_valores"
+      ]
+    },
+    {
+      "modeloId": "morita-1928",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "reducir_hiperobservacion_interna",
+        "desplazar_foco_a_accion",
+        "aceptar_experiencia_interna",
+        "restaurar_funcionamiento_real"
+      ],
+      "explicacion": "La Terapia Morita sitúa el problema en la hiperobservación del estado interno: la preocupación constante surge de vigilar continuamente cómo uno se siente y tratar de regularlo. :contentReference[oaicite:1]{index=1}\n\nEl foco no está en cambiar el pensamiento, sino en dejar de monitorizarlo y volver a la acción en el mundo real. La emoción se acepta pasivamente, mientras la conducta se organiza activamente.\n\nEs especialmente útil cuando la preocupación se ha convertido en un bucle autoreferencial centrado en el estado interno.",
+      "focoMJPS": ["AG", "RE"],
+      "tecnicasRelacionadas": [
+        "p_morita_accion_progresiva",
+        "p_morita_aceptacion_pasiva",
+        "m_morita_desplazamiento_atencion"
+      ]
+    }
+  ],
+  "nodosTransversalesImportantes": [
+    {
+      "id": "intolerancia_incertidumbre",
+      "descripcion": "Dificultad para sostener lo desconocido sin activar control cognitivo."
+    },
+    {
+      "id": "control_mental",
+      "descripcion": "Intento de regular estados internos mediante pensamiento."
+    },
+    {
+      "id": "vigilancia_amenaza",
+      "descripcion": "Atención sesgada hacia posibles peligros futuros."
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿Qué intenta evitar o controlar la persona al preocuparse?",
+    "¿Qué cree que pasaría si dejara de preocuparse?",
+    "¿Qué obtiene a corto plazo al preocuparse?",
+    "¿Qué coste tiene mantener este patrón a medio plazo?",
+    "¿Dónde está el límite entre prepararse y sobrepreocuparse?"
+  ],
+  "criteriosDeProgreso": [
+    "reducción del tiempo dedicado a preocupación",
+    "mayor capacidad de dejar pasar pensamientos sin engancharse",
+    "aumento de tolerancia a la incertidumbre",
+    "más acción pese a no tener control total",
+    "menor necesidad de comprobación o anticipación"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundirla con rumiación (pasado vs futuro)",
+    "tratar el contenido en lugar del proceso",
+    "reforzar la preocupación como estrategia útil",
+    "no intervenir sobre metacognición",
+    "ignorar su función reguladora"
+  ]
+}
