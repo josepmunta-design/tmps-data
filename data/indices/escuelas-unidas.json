@@ -21,6 +21,43 @@
             "file": "modelos/cognitivo/cft-gilbert-2009.json"
           },
           {
+            "id": "modelo-intolerancia-incertidumbre-dugas",
+            "label": "Modelo de intolerancia a la incertidumbre (TAG)",
+            "year": 1998,
+            "importance": 3,
+            "autores": "Michel J. Dugas; Robert Ladouceur",
+            "ciudad": "Montreal",
+            "pais": "Canadá",
+            "lat": 45.50884,
+            "lon": -73.58781,
+            "file": "modelos/cognitivo/modelo-intolerancia-incertidumbre-dugas.json"
+          },
+          {
+            "id": "modelo-evitacion-cognitiva-borkovec",
+            "label": "Modelo de evitación cognitiva (TAG)",
+            "year": 1994,
+            "importance": 3,
+            "autores": "Thomas D. Borkovec",
+            "ciudad": "University Park, Pennsylvania",
+            "pais": "EE. UU.",
+            "lat": 40.798213,
+            "lon": -77.859909,
+            "file": "modelos/cognitivo/modelo-evitacion-cognitiva-borkovec.json"
+          },
+          {
+            "id": "modelo-cognitivo-panico-clark-1986",
+            "label": "Modelo cognitivo del pánico",
+            "year": 1986,
+            "importance": 3,
+            "autores": "David M. Clark",
+            "ciudad": "Oxford",
+            "pais": "Reino Unido",
+            "lat": 51.752013,
+            "lon": -1.257849,
+            "tipo": "programa",
+            "file": "modelos/cognitivo/modelo-cognitivo-panico-clark-1986.json"
+          },
+          {
             "id": "kahneman-sesgos-cognitivos-heuristics-biases",
             "label": "Sesgos cognitivos (Kahneman y Tversky)",
             "year": 1974,
@@ -384,6 +421,19 @@
             "tipo": "marco"
           },
           {
+            "id": "indefension-aprendida-seligman-1975",
+            "label": "Indefensión aprendida",
+            "year": 1975,
+            "importance": 3,
+            "autores": "Martin E. P. Seligman",
+            "ciudad": "Filadelfia, Pennsylvania",
+            "pais": "EE. UU.",
+            "lat": 39.952583,
+            "lon": -75.165222,
+            "tipo": "constructo",
+            "file": "modelos/conductismo/indefension-aprendida-seligman-1975.json"
+          },
+          {
             "id": "condicionamiento-aversivo-1950",
             "label": "Condicionamiento aversivo",
             "year": 1950,
@@ -715,6 +765,18 @@
             "apps": {
               "temporal": true
             }
+          },
+          {
+            "id": "modelo-significado-post-trauma-janoff-bulman-1992",
+            "label": "Modelo de significado post-trauma (Shattered Assumptions)",
+            "year": 1992,
+            "importance": 3,
+            "autores": "Ronnie Janoff-Bulman",
+            "ciudad": "Amherst, Massachusetts",
+            "pais": "EE. UU.",
+            "lat": 42.373222,
+            "lon": -72.519852,
+            "file": "modelos/constructivista/modelo-significado-post-trauma-janoff-bulman-1992.json"
           },
           {
             "id": "psicoterapia-cognitiva-postracionalista-guidano",
@@ -1284,6 +1346,18 @@
             "lon": -74.005974,
             "file": "modelos/integrativo/psicodinamica-ciclica-wachtel.json",
             "tipo": "modelo"
+          },
+          {
+            "id": "modelo-trifasico-trauma-herman-1992",
+            "label": "Modelo trifásico del trauma",
+            "year": 1992,
+            "importance": 3,
+            "autores": "Judith Lewis Herman",
+            "ciudad": "Cambridge, Massachusetts",
+            "pais": "EE. UU.",
+            "lat": 42.373616,
+            "lon": -71.109734,
+            "file": "modelos/integrativo/modelo-trifasico-trauma-herman-1992.json"
           },
           {
             "id": "neurobiologia-interpersonal-siegel",
@@ -2212,7 +2286,8 @@
             "pais": "EE. UU.",
             "lat": 42.262593,
             "lon": -71.802293,
-            "file": "modelos/transversal/mindfulness-mbsr-contemplativo-1979.json"
+            "file": "modelos/transversal/mindfulness-mbsr-contemplativo-1979.json",
+            "tipo": "programa"
           },
           {
             "id": "modelo-procesual-regulacion-emocional-gross-1998",
@@ -2222,7 +2297,8 @@
             "importance": 3,
             "lat": 37.4275,
             "lon": -122.1697,
-            "file": "modelos/transversal/modelo-procesual-regulacion-emocional-gross-1998.json"
+            "file": "modelos/transversal/modelo-procesual-regulacion-emocional-gross-1998.json",
+            "tipo": "marco"
           },
           {
             "id": "k_kublerross69",
@@ -2236,7 +2312,8 @@
             "pais": "EE. UU.",
             "lat": 41.878113,
             "lon": -87.629799,
-            "file": "modelos/transversal/k_kublerross69.json"
+            "file": "modelos/transversal/k_kublerross69.json",
+            "tipo": "constructo"
           },
           {
             "id": "vb_entorno_estabilizacion",
@@ -2246,7 +2323,8 @@
             "autores": "Judith Herman; desarrollos en trauma-informed care y salud mental comunitaria",
             "grupo": "Transversal",
             "hideInModels": true,
-            "file": "modelos/transversal/vb_entorno_estabilizacion.json"
+            "file": "modelos/transversal/vb_entorno_estabilizacion.json",
+            "tipo": "marco"
           },
           {
             "id": "ttm_prochaska_diclemente",
@@ -2256,7 +2334,8 @@
             "autores": "James O. Prochaska; Carlo C. DiClemente",
             "grupo": "Transversal",
             "hideInModels": true,
-            "file": "modelos/transversal/ttm_prochaska_diclemente.json"
+            "file": "modelos/transversal/ttm_prochaska_diclemente.json",
+            "tipo": "marco"
           },
           {
             "id": "c1nutritional",
@@ -2268,7 +2347,8 @@
             "pais": "Australia",
             "lat": -37.813629,
             "lon": 144.963058,
-            "file": "modelos/transversal/c1nutritional.json"
+            "file": "modelos/transversal/c1nutritional.json",
+            "tipo": "marco"
           },
           {
             "id": "psicoterapia-comunitaria-reconciliacion-2000",
@@ -2280,7 +2360,8 @@
             "pais": "Colombia",
             "lat": 4.711,
             "lon": -74.072092,
-            "file": "modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json"
+            "file": "modelos/transversal/psicoterapia-comunitaria-reconciliacion-2000.json",
+            "tipo": "modelo"
           },
           {
             "id": "psicoterapia-trauma-sociopolitico-1985",
@@ -2293,7 +2374,8 @@
             "lat": -33.44889,
             "lon": -70.669265,
             "isMarco": true,
-            "file": "modelos/transversal/psicoterapia-trauma-sociopolitico-1985.json"
+            "file": "modelos/transversal/psicoterapia-trauma-sociopolitico-1985.json",
+            "tipo": "marco"
           },
           {
             "id": "intervencion-psicosocial-desplazamiento-forzado-2005",
@@ -2302,12 +2384,12 @@
             "importance": 2,
             "isMarco": true,
             "autores": "Theresa S. Betancourt; Judith A. Bass; Mark Jordans; Wietse A. Tol; Michael J. Kirmayer",
-            "universidad": "",
             "ciudad": "Kampala",
             "pais": "Uganda",
             "lat": 0.347596,
             "lon": 32.58252,
-            "file": "modelos/transversal/intervencion-psicosocial-desplazamiento-forzado-2005.json"
+            "file": "modelos/transversal/intervencion-psicosocial-desplazamiento-forzado-2005.json",
+            "tipo": "marco"
           },
           {
             "id": "psicoterapia-trauma-colectivo-reconciliacion-2000",
@@ -2320,7 +2402,8 @@
             "lat": -1.944072,
             "lon": 30.061885,
             "isMarco": true,
-            "file": "modelos/transversal/psicoterapia-trauma-colectivo-reconciliacion-2000.json"
+            "file": "modelos/transversal/psicoterapia-trauma-colectivo-reconciliacion-2000.json",
+            "tipo": "marco"
           },
           {
             "id": "self-determination-therapy-deci-ryan-1985",
@@ -2333,7 +2416,8 @@
             "lat": 43.1566,
             "lon": -77.6088,
             "isMarco": true,
-            "file": "modelos/transversal/self-determination-therapy-deci-ryan-1985.json"
+            "file": "modelos/transversal/self-determination-therapy-deci-ryan-1985.json",
+            "tipo": "marco"
           }
         ]
       }
