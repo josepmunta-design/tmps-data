@@ -1,0 +1,262 @@
+{
+  "id": "procrastinacion",
+  "areaId": "agencia_inhibicion_direccion_accion",
+  "label": "Procrastinación",
+  "definicion": "Retraso sistemático de tareas relevantes que la persona sí considera importantes, sustituyéndolas por actividades menos demandantes, más gratificantes a corto plazo o irrelevantes, con la función de reducir malestar inmediato.",
+  "descripcionClinica": "La procrastinación no consiste simplemente en pereza, desorganización o falta de valores, sino en un patrón funcional en el que la acción se pospone para aliviar a corto plazo emociones o estados internos difíciles como ansiedad, aburrimiento, esfuerzo anticipado, miedo al fracaso, autocrítica o presión evaluativa. La persona suele mantener la intención de hacer la tarea, pero entre la intención y la ejecución aparece una secuencia de evitación, sustitución, alivio momentáneo y coste posterior.\n\nClínicamente se observa posposición repetida de tareas importantes, tendencia a empezar por actividades secundarias, dependencia de la presión de última hora, autoengaño temporal (“luego lo hago mejor”), ciclos de evitación-culpa y sensación de pérdida de control sobre el propio tiempo o conducta. A diferencia de la inhibición conductual, aquí la conducta no se cancela desde el inicio de forma masiva, sino que se va desplazando. A diferencia del bloqueo para actuar, no predomina una imposibilidad aguda de ejecución en un momento crítico, sino una postergación reiterada. Y a diferencia de la dificultad para mantener objetivos, el problema central no es sostener la acción una vez iniciada, sino arrancarla de forma suficientemente temprana y estable.",
+  "subtiposClinicos": [
+    {
+      "id": "evitativa_ansiosa",
+      "label": "Evitativa ansiosa",
+      "descripcion": "La tarea se posterga para reducir miedo al error, fracaso, evaluación o exposición a juicio."
+    },
+    {
+      "id": "aversiva_aburrimiento_esfuerzo",
+      "label": "Aversiva por aburrimiento o esfuerzo",
+      "descripcion": "La postergación aparece ante tareas percibidas como tediosas, largas, costosas o poco reforzantes a corto plazo."
+    },
+    {
+      "id": "autocritica_perfeccionista",
+      "label": "Autocrítica/perfeccionista",
+      "descripcion": "La demora está organizada por estándares rígidos, miedo a no hacerlo suficientemente bien y dificultad para tolerar versiones iniciales imperfectas."
+    },
+    {
+      "id": "ambivalente_motivacional",
+      "label": "Ambivalente/motivacional",
+      "descripcion": "La persona oscila entre querer hacer la tarea y resistirse a ella, sin comprometerse de forma estable con la acción."
+    }
+  ],
+  "marcadoresClinicos": {
+    "cognitivos": [
+      "pensar que luego se hará mejor",
+      "sobreestimar el malestar de empezar",
+      "subestimar el coste de posponer",
+      "reglas rígidas sobre hacerlo perfecto",
+      "foco excesivo en el estado interno antes de actuar"
+    ],
+    "emocionales": [
+      "ansiedad anticipatoria",
+      "aburrimiento",
+      "culpa tras posponer",
+      "alivio inmediato al evitar",
+      "frustración consigo mismo"
+    ],
+    "conductuales": [
+      "posponer tareas relevantes",
+      "sustituir por tareas menores o irrelevantes",
+      "trabajar solo con presión de última hora",
+      "rituales preparatorios interminables",
+      "revisión excesiva antes de empezar"
+    ],
+    "relacionales": [
+      "fallos repetidos en compromisos",
+      "justificaciones ante otros",
+      "dependencia de presión externa para activarse",
+      "conflictos por incumplimiento o demora"
+    ],
+    "somaticos": [
+      "tensión al acercarse a la tarea",
+      "inquietud anticipatoria",
+      "fatiga subjetiva selectiva ante tareas demandantes"
+    ]
+  },
+  "mecanismosMantenedores": [
+    "refuerzo negativo de la postergación al reducir malestar inmediato",
+    "fusión con reglas internas del tipo 'tengo que hacerlo bien o no merece la pena empezar'",
+    "descuento del futuro y preferencia por alivio o recompensa inmediata",
+    "evitación experiencial de ansiedad, esfuerzo, aburrimiento o autocrítica",
+    "ambivalencia no resuelta hacia la tarea o sus implicaciones",
+    "fallos de descomposición conductual de tareas demasiado grandes o difusas",
+    "déficit de autorregulación conductual y control de estímulos",
+    "sesgo metacognitivo que trata rumiación, planificación excesiva o preparación como si fueran avance real",
+    "autoevaluación punitiva tras posponer, que aumenta el malestar y prepara nueva evitación",
+    "dependencia de activación emocional intensa o presión externa para iniciar"
+  ],
+  "procesosDominantesMJPS": ["AG", "RE", "N", "RI"],
+  "modelosRelevantes": [
+    {
+      "modeloId": "activacion-conductual-jacobson-1996",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "bloquear_evitacion",
+        "descomponer_inicio",
+        "programar_accion",
+        "restaurar_refuerzo"
+      ],
+      "explicacion": "La Activación Conductual entiende la procrastinación como una forma de evitación y retirada sostenida por alivio inmediato. La persona no espera a actuar porque 'no tenga ganas', sino que aprende a escapar del malestar de empezar y queda atrapada en actividades alternativas más fáciles o menos amenazantes. El foco del cambio no está en convencer a la persona, sino en modificar la secuencia conductual: analizar la evitación, programar tareas de forma concreta y restaurar contacto con refuerzos reales. Es especialmente útil cuando la procrastinación está mantenida por inercia, evitación y dependencia del estado de ánimo. :contentReference[oaicite:1]{index=1}",
+      "focoMJPS": ["AG", "RE", "VB"],
+      "tecnicasRelacionadas": [
+        "p_ba_monitorizacion_actividades",
+        "p_ba_programacion_actividades",
+        "p_ba_reduccion_evitacion",
+        "m_ba_regla_5_min"
+      ]
+    },
+    {
+      "modeloId": "act-hayes-strosahl-wilson-1999",
+      "pesoModelo": 5,
+      "tipoOperacion": [
+        "reducir_evitacion_experiencial",
+        "desfusionar_reglas",
+        "orientar_a_valores",
+        "activar_paso_minimo"
+      ],
+      "explicacion": "ACT conceptualiza la procrastinación como conducta gobernada por evitación experiencial: la persona posterga para no sentir ansiedad, insuficiencia, aburrimiento o presión interna. El problema no es solo la tarea, sino que la acción queda subordinada al intento de controlar el estado interno antes de empezar. El foco del cambio es disminuir la obediencia a pensamientos y emociones difíciles, recuperar dirección valiosa y actuar con malestar presente. Su aporte diferencial es muy claro cuando la procrastinación está organizada por autocrítica, fusión con reglas o necesidad de sentirse 'listo' antes de actuar. ",
+      "focoMJPS": ["RI", "RE", "AG", "N", "I"],
+      "tecnicasRelacionadas": [
+        "m_act_registro_funcional",
+        "m_act_nominar_evitacion",
+        "m_act_funciona_para_ti",
+        "m_act_hacia_contra",
+        "m_act_paso_5_min",
+        "m_act_urge_surfing"
+      ]
+    },
+    {
+      "modeloId": "autocontrol-conductual-kanfer-karoly",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "entrenar_autorregistro",
+        "reducir_friccion_de_inicio",
+        "redisenar_estimulos",
+        "reforzar_aproximaciones"
+      ],
+      "explicacion": "El modelo de Autocontrol Conductual entiende la procrastinación como un problema de autorregulación aprendida, donde la conducta queda dominada por reforzadores inmediatos, señales ambientales desorganizadoras y falta de contingencias autoaplicadas eficaces. El foco está en observar la conducta, medirla, modificar estímulos y construir sistemas concretos de autocontrol. Su aporte diferencial es pragmático y muy potente: convierte la procrastinación en un patrón modificable mediante autorregistro, preparación del entorno, shaping y auto-refuerzo, sin depender de insight complejo. Es especialmente útil cuando el problema principal es la mala regulación conductual cotidiana. ",
+      "focoMJPS": ["AG", "N", "RE"],
+      "tecnicasRelacionadas": [
+        "p_autocontrol_autorregistro",
+        "p_autocontrol_control_estimulos",
+        "p_autocontrol_auto_refuerzo",
+        "m_autocontrol_reducir_friccion",
+        "m_autocontrol_criterio_minimo"
+      ]
+    },
+    {
+      "modeloId": "pst-solucion-problemas-dzurilla-goldfried-1971",
+      "pesoModelo": 4,
+      "tipoOperacion": [
+        "operativizar_tarea",
+        "reducir_difusion_del_problema",
+        "tomar_decisiones_suficientes",
+        "convertir_intencion_en_plan"
+      ],
+      "explicacion": "La Terapia de Solución de Problemas entiende muchas procrastinaciones como fallos en la orientación al problema y en la traducción de metas difusas a pasos ejecutables. La persona no solo evita: también suele relacionarse con la tarea como algo global, abrumador o mal definido. El foco del cambio es definir el problema, descomponerlo, tomar decisiones suficientemente buenas y convertirlo en una secuencia operativa. Su aporte diferencial aparece cuando la procrastinación está sostenida por confusión, sobreanálisis, indecisión o tareas mal formuladas. ",
+      "focoMJPS": ["N", "AG", "RE"],
+      "tecnicasRelacionadas": [
+        "p_pst_orientacion_problema",
+        "p_pst_definicion_problema",
+        "p_pst_toma_decisiones",
+        "p_pst_implementacion_verificacion",
+        "m_pst_primer_paso_observable"
+      ]
+    },
+    {
+      "modeloId": "terapia-metacognitiva-wells-1990",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "desactivar_rumiacion_preparatoria",
+        "debilitar_creencias_sobre_pensar",
+        "recuperar_control_atencional",
+        "eliminar_afrontamiento_contraproducente"
+      ],
+      "explicacion": "La Terapia Metacognitiva sitúa la procrastinación, en algunos casos, dentro de un síndrome cognitivo-atencional en el que la persona sustituye acción por preocupación, preparación mental, rumiación o comprobación interna. El problema no es solo evitar la tarea, sino quedar atrapado en modos de procesamiento que se viven como útiles pero aplazan la ejecución real. El foco es abandonar rumiación, creencias metacognitivas positivas sobre pensar más y conductas de afrontamiento contraproducentes. Es especialmente útil cuando la procrastinación adopta forma mental: pensar, revisar o anticipar en lugar de hacer. ",
+      "focoMJPS": ["N", "RI", "RE", "AG"],
+      "tecnicasRelacionadas": [
+        "p_mct_formulacion_cas",
+        "p_mct_psicoeducacion",
+        "p_mct_creencias_metacognitivas",
+        "p_mct_att",
+        "p_mct_desactivacion_rumiacion",
+        "p_mct_eliminacion_afrontamiento"
+      ]
+    },
+    {
+      "modeloId": "entrevista-motivacional-1983",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "resolver_ambivalencia",
+        "evocar_razones_propias",
+        "fortalecer_autoeficacia",
+        "traducir_disposicion_en_compromiso"
+      ],
+      "explicacion": "La Entrevista Motivacional entiende algunas procrastinaciones como expresiones de ambivalencia más que de pura evitación: una parte de la persona quiere actuar y otra resiste por coste, miedo, rebelión o falta de apropiación de la meta. El foco no es presionar, sino evocar razones propias para cambiar, clarificar discrepancias y transformar intención vaga en compromiso realista. Su aporte diferencial aparece cuando la persona dice que 'quiere hacerlo' pero no termina de apropiarse de la acción o responde con resistencia a enfoques más directivos. ",
+      "focoMJPS": ["AG", "I", "N", "RE", "R"],
+      "tecnicasRelacionadas": [
+        "p_mi_evocar_change_talk",
+        "p_mi_desarrollar_discrepancia",
+        "p_mi_escalas_importancia_confianza",
+        "p_mi_plan_cambio",
+        "m_mi_pregunta_capacidad",
+        "m_mi_compromiso_suave"
+      ]
+    },
+    {
+      "modeloId": "ert-mennin-fresco-2013",
+      "pesoModelo": 3,
+      "tipoOperacion": [
+        "regular_hiperreactividad",
+        "reducir_orientacion_a_seguridad",
+        "pasar_de_reactividad_a_proactividad",
+        "elegir_accion_valiosa"
+      ],
+      "explicacion": "ERT formula la procrastinación como un problema de regulación motivacional y emocional: ante tareas que activan amenaza, evaluación o sobrecarga, la persona queda orientada a seguridad inmediata y posterga la acción, aunque eso comprometa metas significativas. El foco del cambio es detectar ese tirón hacia seguridad, regular atención y emoción, y restaurar una trayectoria más proactiva orientada a recompensa y valor. Es especialmente útil cuando la procrastinación está ligada a ansiedad anticipatoria elevada, sensibilidad emocional o sobrecarga interna más que a simple hábito. ",
+      "focoMJPS": ["RE", "AG", "N", "RI"],
+      "tecnicasRelacionadas": [
+        "p_ert_regulacion_atencional",
+        "p_ert_regulacion_metacognitiva",
+        "m_ert_cyr",
+        "m_ert_detectar_tiron_seguridad",
+        "m_ert_eleccion_minima_valiosa"
+      ]
+    }
+  ],
+  "nodosTransversalesImportantes": [
+    {
+      "id": "evitacion_experiencial",
+      "descripcion": "La persona posterga para no contactar con ansiedad, aburrimiento, autocrítica o esfuerzo anticipado."
+    },
+    {
+      "id": "autoeficacia",
+      "descripcion": "La expectativa de poder iniciar y sostener la acción modula fuertemente la postergación."
+    },
+    {
+      "id": "autocritica",
+      "descripcion": "El diálogo interno punitivo aumenta malestar anticipatorio y favorece la demora."
+    },
+    {
+      "id": "control_de_estimulos",
+      "descripcion": "La organización del entorno y de las claves situacionales influye en la probabilidad de iniciar."
+    },
+    {
+      "id": "refuerzo_inmediato",
+      "descripcion": "Las alternativas más fáciles o gratificantes a corto plazo compiten con la tarea relevante."
+    }
+  ],
+  "preguntasDeFormulacion": [
+    "¿Qué malestar concreto evita la persona al posponer esta tarea?",
+    "¿Qué obtiene a corto plazo cuando la deja para luego?",
+    "¿La tarea está mal definida, es demasiado grande o está asociada a evaluación y autocrítica?",
+    "¿Predomina ansiedad, aburrimiento, perfeccionismo, ambivalencia o rumiación preparatoria?",
+    "¿Qué hace justo antes de posponer: pensar, revisar, distraerse, organizar de más, buscar otra tarea?",
+    "¿Qué condiciones hacen más probable que sí empiece?",
+    "¿Depende de presión externa o urgencia para activarse?"
+  ],
+  "criteriosDeProgreso": [
+    "inicia antes las tareas relevantes sin esperar a sentirse listo",
+    "reduce la sustitución por actividades irrelevantes o secundarias",
+    "tolera mejor el malestar inicial de empezar",
+    "descompone tareas complejas en pasos ejecutables",
+    "disminuye la dependencia de presión de última hora",
+    "acorta el intervalo entre intención y ejecución",
+    "aparecen rutinas de inicio más estables y menos negociación interna"
+  ],
+  "riesgosSiNoSeDiferenciaBien": [
+    "confundir procrastinación con inhibición conductual y prescribir solo exposición al inicio sin trabajar la demora aprendida",
+    "confundirla con bloqueo agudo y sobrerregular un problema que en realidad es evitación repetida",
+    "tratarla como falta de voluntad o rasgo moral en lugar de secuencia funcional mantenida por refuerzo negativo",
+    "intervenir solo a nivel cognitivo sin rediseño conductual y contextual de la tarea",
+    "confundir planificación, rumiación o preparación excesiva con avance real",
+    "usar objetivos demasiado grandes o difusos y reforzar nuevos ciclos de postergación",
+    "trabajar solo motivación cuando el problema central es evitación experiencial o mala autorregulación conductual"
+  ]
+}
