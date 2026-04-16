@@ -61,74 +61,111 @@
     "fusión cognitiva con escenarios anticipatorios"
   ],
   "procesosDominantesMJPS": ["RE", "N", "AP"],
-  "modelosRelevantes": [
-    {
-      "modeloId": "terapia-metacognitiva-wells-1990",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "desactivar_preocupacion_como_proceso",
-        "modificar_creencias_metacognitivas",
-        "reducir_cas",
-        "entrenar_control_atencional"
-      ],
-      "explicacion": "La Terapia Metacognitiva entiende la preocupación como el núcleo del síndrome cognitivo-atencional (CAS), un patrón de procesamiento mantenido por creencias sobre su utilidad y necesidad. El problema no es el contenido, sino entrar y mantenerse en el proceso de preocuparse.\n\nEl foco es cortar la preocupación como actividad mental y cambiar la relación con ella (no responder, no analizar, no comprobar).\n\nEs el modelo más directo y específico para preocupación crónica.",
-      "focoMJPS": ["N", "RE", "AG"],
-      "tecnicasRelacionadas": [
-        "p_mct_att",
-        "p_mct_desactivacion_rumiacion",
-        "p_mct_modificacion_creencias_positivas",
-        "p_mct_modificacion_creencias_negativas",
-        "m_mct_reduccion_comprobacion"
-      ]
-    },
-    {
-      "modeloId": "ert-mennin-fresco-2013",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "reconfigurar_regulacion_emocional",
-        "reducir_orientacion_seguridad",
-        "sostener_emocion_sin_elaborar",
-        "reactivar_motivacion_recompensa"
-      ],
-      "explicacion": "ERT conceptualiza la preocupación como una estrategia regulatoria fallida en contextos de alta sensibilidad emocional. La persona se preocupa para manejar la emoción, pero en realidad evita el contacto con ella y mantiene la hiperactivación. :contentReference[oaicite:1]{index=1}\n\nEl foco es aprender a sostener la emoción sin sobreelaborarla y salir del modo ‘seguridad primero’, reequilibrando hacia acción basada en recompensa.\n\nEs especialmente útil cuando la preocupación está muy ligada a intensidad emocional.",
-      "focoMJPS": ["RE", "AP", "AG"],
-      "tecnicasRelacionadas": [
-        "p_ert_regulacion_atencional",
-        "p_ert_regulacion_metacognitiva",
-        "m_ert_distanciamiento_preocupacion"
-      ]
-    },
-    {
-      "modeloId": "act-hayes-strosahl-wilson-1999",
-      "pesoModelo": 4,
-      "tipoOperacion": [
-        "defusionar_pensamientos",
-        "reducir_evitacion_experiencial",
-        "romper_control_cognitivo",
-        "reorientar_a_valores"
-      ],
-      "explicacion": "ACT entiende la preocupación como fusión con pensamientos y un intento de controlar la experiencia interna. El problema no es preocuparse, sino quedar atrapado en ello y organizar la conducta en función de evitar incertidumbre.\n\nEl foco es cambiar la relación con el pensamiento y actuar con él presente.\n\nEs especialmente útil cuando la persona está dominada por el contenido mental.",
-      "focoMJPS": ["RI", "RE", "AG", "N"],
-      "tecnicasRelacionadas": [
-        "p_act_defusion_cognitiva",
-        "m_act_etiqueta_metacognitiva",
-        "m_act_anclaje_atencional"
-      ]
-    },
-    {
-      "modeloId": "morita-1928",
-      "pesoModelo": 3,
-      "tipoOperacion": [
-        "reducir_hiperobservacion",
-        "desplazar_a_accion",
-        "aceptar_experiencia",
-        "restaurar_funcionamiento"
-      ],
-      "explicacion": "Morita entiende la preocupación como resultado de una hiperobservación del estado interno. Cuanto más se monitoriza la mente, más se intensifica el problema. :contentReference[oaicite:2]{index=2}\n\nEl foco es dejar de observar y volver a actuar en la realidad.\n\nEs especialmente útil cuando la preocupación se vuelve autoreferencial.",
-      "focoMJPS": ["AG", "RE"],
-      "tecnicasRelacionadas": []
-    }
-  ],
+ "modelosRelevantes": [
+  {
+    "modeloId": "terapia-metacognitiva-wells-1990",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "desactivar_preocupacion_como_proceso",
+      "modificar_creencias_metacognitivas",
+      "reducir_cas",
+      "entrenar_control_atencional"
+    ],
+    "explicacion": "La Terapia Metacognitiva sitúa la preocupación en el núcleo del síndrome cognitivo-atencional (CAS), un patrón de procesamiento mantenido por creencias sobre su utilidad y necesidad. El problema no es el contenido de los pensamientos, sino el hecho de entrar y mantenerse en el proceso de preocuparse.\n\nEl foco clínico es interrumpir la preocupación como actividad mental, modificando creencias metacognitivas y entrenando una relación no reactiva con la cognición.\n\nEs el modelo más directo y específico para preocupación persistente e incontrolable.",
+    "focoMJPS": ["N", "RE", "AG"],
+    "tecnicasRelacionadas": [
+      "p_mct_att",
+      "p_mct_desactivacion_rumiacion",
+      "p_mct_modificacion_creencias_positivas",
+      "p_mct_modificacion_creencias_negativas",
+      "m_mct_reduccion_comprobacion",
+      "m_mct_autoobservacion_cas"
+    ]
+  },
+  {
+    "modeloId": "modelo-evitacion-cognitiva-borkovec",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "reducir_preocupacion_como_evitacion",
+      "facilitar_procesamiento_emocional",
+      "exponer_a_imagenes_emocionales",
+      "bloquear_evitar_con_pensamiento"
+    ],
+    "explicacion": "El modelo de Borkovec entiende la preocupación como una forma de evitación cognitiva: el pensamiento verbal constante bloquea la activación emocional más intensa, evitando el procesamiento completo de la amenaza.\n\nEl foco es interrumpir esta evitación y facilitar un contacto más directo con la experiencia emocional para permitir su procesamiento.\n\nEs especialmente clave cuando la preocupación reduce momentáneamente la ansiedad pero la mantiene a largo plazo.",
+    "focoMJPS": ["RE", "AP"],
+    "tecnicasRelacionadas": []
+  },
+  {
+    "modeloId": "modelo-intolerancia-incertidumbre-dugas",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "aumentar_tolerancia_incertidumbre",
+      "reducir_necesidad_certeza",
+      "modificar_creencias_sobre_preocupacion",
+      "exponer_a_incertidumbre"
+    ],
+    "explicacion": "El modelo de Dugas conceptualiza la preocupación como una respuesta directa a la intolerancia a la incertidumbre. La persona no soporta no saber qué ocurrirá y utiliza la preocupación como intento de generar control o preparación.\n\nEl foco es aumentar la tolerancia a la incertidumbre y reducir la necesidad de certeza, trabajando tanto a nivel cognitivo como conductual.\n\nEs especialmente útil cuando la preocupación está claramente ligada a la necesidad de control y anticipación.",
+    "focoMJPS": ["N", "RE", "AG"],
+    "tecnicasRelacionadas": []
+  },
+  {
+    "modeloId": "ert-mennin-fresco-2013",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "reconfigurar_regulacion_emocional",
+      "reducir_orientacion_seguridad",
+      "sostener_emocion_sin_elaborar",
+      "activar_orientacion_recompensa"
+    ],
+    "explicacion": "ERT entiende la preocupación como un intento fallido de regulación emocional en contextos de alta sensibilidad afectiva. La persona se preocupa para manejar la emoción, pero en realidad evita el contacto con ella y mantiene la hiperactivación. El propio modelo la describe como estrategia regulatoria fallida. :contentReference[oaicite:1]{index=1}\n\nEl foco es entrenar regulación atencional y metacognitiva, sostener la emoción sin sobreelaborarla y reequilibrar la motivación hacia la acción basada en recompensa.\n\nEs especialmente útil cuando la preocupación está fuertemente ligada a intensidad emocional.",
+    "focoMJPS": ["RE", "AP", "AG"],
+    "tecnicasRelacionadas": [
+      "p_ert_regulacion_atencional",
+      "p_ert_regulacion_metacognitiva",
+      "p_ert_cyr",
+      "m_ert_tiron_seguridad",
+      "m_ert_distanciamiento_preocupacion",
+      "m_ert_sostener_emocion"
+    ]
+  },
+  {
+    "modeloId": "act-hayes-strosahl-wilson-1999",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "defusionar_pensamientos",
+      "reducir_evitacion_experiencial",
+      "romper_control_cognitivo",
+      "reorientar_a_valores"
+    ],
+    "explicacion": "ACT conceptualiza la preocupación como fusión con pensamientos y como un intento de controlar la experiencia interna. El problema no es preocuparse, sino quedar atrapado en ese contenido y organizar la conducta para evitar incertidumbre.\n\nEl foco es cambiar la relación con el pensamiento, abrir espacio a la experiencia interna y permitir la acción con incertidumbre presente.\n\nEs especialmente útil cuando la vida está organizada en torno al control mental.",
+    "focoMJPS": ["RI", "RE", "AG", "N"],
+    "tecnicasRelacionadas": [
+      "p_act_defusion",
+      "p_act_aceptacion",
+      "p_act_choice_point",
+      "m_act_estoy_teniendo_el_pensamiento",
+      "m_act_anclaje_30s",
+      "m_act_funciona_para_ti"
+    ]
+  },
+  {
+    "modeloId": "o1morita",
+    "pesoModelo": 3,
+    "tipoOperacion": [
+      "reducir_hiperobservacion",
+      "desplazar_foco_a_accion",
+      "aceptar_experiencia",
+      "restaurar_funcionamiento"
+    ],
+    "explicacion": "La Terapia Morita entiende la preocupación como resultado de la autoobservación ansiosa y del intento de controlar el estado interno. En el propio modelo aparece formulado como un ciclo de preocupación que se amplifica cuando la persona convierte el síntoma en centro de atención. \n\nEl foco es abandonar la monitorización interna, no reforzar el síntoma y volver a la acción guiada por la realidad y las responsabilidades.\n\nEs especialmente útil cuando la preocupación se ha vuelto autoreferencial y centrada en el propio estado.",
+    "focoMJPS": ["AG", "RE", "AP"],
+    "tecnicasRelacionadas": [
+      "p_morita_psicoeducacion_ciclo",
+      "p_morita_disciplina_rutinas",
+      "p_morita_reintegracion_social"
+    ]
+  }
+],
   "nodosTransversalesImportantes": [
     {
       "id": "intolerancia_incertidumbre",
