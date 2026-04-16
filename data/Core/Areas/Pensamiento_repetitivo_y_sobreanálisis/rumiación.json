@@ -69,138 +69,107 @@
     "rigidez en marcos interpretativos"
   ],
   "procesosDominantesMJPS": ["N", "RI", "RE", "AG"],
-  "modelosRelevantes": [
-    {
-  "modeloId": "rumination-focused-cbt-watkins-2011",
-  "pesoModelo": 5,
-  "tipoOperacion": [
-    "identificar_bucle_rumiativo",
-    "cambiar_procesamiento_abstracto_a_concreto",
-    "interrumpir_rumiacion_conductualmente",
-    "orientar_a_accion_especifica"
-  ],
-  "explicacion": "La Rumination-Focused Cognitive Behavioral Therapy (RFCBT) entiende la rumiación como un estilo de procesamiento cognitivo abstracto–analítico que mantiene el malestar depresivo y la pasividad. Su foco no está en disputar directamente el contenido del pensamiento, sino en cambiar el modo de procesamiento: pasar de preguntas abstractas, globales y circulares a un procesamiento concreto, experiencial, situado y orientado a la acción. Su aportación diferencial es central en esta subárea porque trabaja la rumiación como hábito mental específico, no solo como ejemplo de perseveración cognitiva general.",
-  "focoMJPS": ["N", "RI", "AG", "RE"],
-  "tecnicasRelacionadas": [
-    "p_rfcbt_formulacion_bucles_rumiativos",
-    "p_rfcbt_psicoeducacion_estilos_procesamiento",
-    "p_rfcbt_entrenamiento_concreto_experiencial",
-    "p_rfcbt_interrupcion_conductual_rumiacion",
-    "p_rfcbt_resolucion_concreta_problemas",
-    "p_rfcbt_activacion_conductual_metas_especificas",
-    "p_rfcbt_deteccion_temprana_rumiacion",
-    "m_rfcbt_cambio_pregunta_abstracta_a_concreta",
-    "m_rfcbt_describir_secuencia_temporal",
-    "m_rfcbt_anclaje_detalles_sensoriales",
-    "m_rfcbt_esto_es_rumiacion",
-    "m_rfcbt_siguiente_paso_minimo",
-    "m_rfcbt_comparar_abstracto_vs_concreto",
-    "m_rfcbt_microactividad_interrupcion",
-    "m_rfcbt_especificar_contexto_futuro"
-  ]
-},
-    {
-      "modeloId": "terapia-metacognitiva-wells-1990",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "identificar_cas",
-        "reducir_rumiacion",
-        "modificar_creencias_metacognitivas",
-        "recuperar_control_atencional"
-      ],
-      "explicacion": "La Terapia Metacognitiva entiende la rumiación como parte del síndrome cognitivo-atencional (CAS), mantenido por creencias metacognitivas sobre la utilidad de pensar y la incontrolabilidad del pensamiento. El problema no es el contenido, sino el proceso repetitivo. Su foco es interrumpir la rumiación y modificar la relación con el pensamiento.",
-      "focoMJPS": ["N", "RI", "RE", "AG"],
-      "tecnicasRelacionadas": [
-        "p_mct_formulacion_cas",
-        "p_mct_psicoeducacion",
-        "p_mct_creencias_metacognitivas",
-        "p_mct_att",
-        "p_mct_desactivacion_rumiacion",
-        "p_mct_eliminacion_afrontamiento"
-      ]
-    },
-    {
-      "modeloId": "act-hayes-strosahl-wilson-1999",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "defusionar_pensamiento",
-        "reducir_evitacion_experiencial",
-        "descentrarse_del_contenido",
-        "activar_accion_valiosa"
-      ],
-      "explicacion": "ACT conceptualiza la rumiación como fusión cognitiva y evitación experiencial: la persona se queda atrapada en el pensamiento para evitar contacto directo con la experiencia. El foco es cambiar la relación con los pensamientos, no su contenido, y volver a la acción.",
-      "focoMJPS": ["RI", "N", "RE", "AG"],
-      "tecnicasRelacionadas": [
-        "m_act_registro_funcional",
-        "m_act_metafora_autobus",
-        "m_act_normalizacion_mente",
-        "m_act_pregunta_funcionabilidad",
-        "m_act_lenguaje_disposicion"
-      ]
-    },
-    {
-      "modeloId": "activacion-conductual-jacobson-1996",
-      "pesoModelo": 4,
-      "tipoOperacion": [
-        "bloquear_rumiacion_conductualmente",
-        "reorientar_a_accion",
-        "incrementar_refuerzo_externo",
-        "reducir_inactividad"
-      ],
-      "explicacion": "La Activación Conductual entiende la rumiación como una forma de evitación que sustituye la acción. El foco es romper el ciclo pensamiento–inactividad introduciendo conducta dirigida a objetivos y contacto con refuerzo.",
-      "focoMJPS": ["AG", "RE"]
-    },
-    {
-      "modeloId": "terapia-racional-autoinstruccional-meichenbaum-1971",
-      "pesoModelo": 4,
-      "tipoOperacion": [
-        "interrumpir_dialogo_rumiativo",
-        "introducir_autoinstrucciones",
-        "reorientar_a_tarea",
-        "regular_proceso_cognitivo"
-      ],
-      "explicacion": "Meichenbaum conceptualiza la rumiación como un fallo en el diálogo interno regulador. El foco es introducir autoinstrucciones que interrumpan el bucle y orienten la acción.",
-      "focoMJPS": ["RI", "N", "AG"],
-      "tecnicasRelacionadas": [
-        "m_meichenbaum_detectar_autoverbalizacion_impulsiva",
-        "m_meichenbaum_autoinstruccion_parada",
-        "m_meichenbaum_orientacion_tarea",
-        "m_meichenbaum_autocontrol_durante_ejecucion",
-        "m_meichenbaum_autoinstruccion_correctiva"
-      ]
-    },
-    {
-      "modeloId": "pst-solucion-problemas-dzurilla-goldfried-1971",
-      "pesoModelo": 3,
-      "tipoOperacion": [
-        "convertir_analisis_en_problema",
-        "estructurar_resolucion",
-        "pasar_a_accion",
-        "cerrar_bucle_cognitivo"
-      ],
-      "explicacion": "PST entiende la rumiación como un intento fallido de resolución de problemas. El foco es transformar pensamiento difuso en problema definido y avanzar hacia acción concreta.",
-      "focoMJPS": ["N", "AG"],
-      "tecnicasRelacionadas": [
-        "p_pst_definicion_problema",
-        "p_pst_toma_decisiones",
-        "p_pst_plan_implementacion",
-        "m_pst_formular_problema_concreto",
-        "m_pst_descomponer_primer_paso"
-      ]
-    },
-    {
-      "modeloId": "k13coherence-therapy-1993",
-      "pesoModelo": 3,
-      "tipoOperacion": [
-        "identificar_coherencia_rumiacion",
-        "acceder_memoria_emocional",
-        "resolver_conflicto_implicito",
-        "desactivar_necesidad_de_rumiar"
-      ],
-      "explicacion": "La Terapia de la Coherencia entiende la rumiación como coherente con esquemas implícitos no resueltos. El pensamiento repetitivo persiste porque cumple una función emocional profunda. El foco es acceder a esa coherencia y transformarla.",
-      "focoMJPS": ["AP", "RI", "I"]
-    }
-  ],
+ "modelosRelevantes": [
+  {
+    "modeloId": "rumination-focused-cbt-watkins-2011",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "identificar_bucles_rumiativos",
+      "cambiar_procesamiento_abstracto_a_concreto",
+      "interrumpir_rumiacion_conductualmente",
+      "orientar_a_accion_especifica"
+    ],
+    "explicacion": "RFCBT es el modelo más específico para esta subárea. Entiende la rumiación no como simple contenido negativo, sino como un estilo de procesamiento abstracto–analítico que mantiene el malestar y la pasividad. Su foco principal es cambiar ese modo de procesamiento por uno concreto, experiencial y orientado a la acción, interrumpiendo el hábito rumiativo y favoreciendo resolución concreta y activación adaptativa.",
+    "focoMJPS": ["N", "RI", "AG", "RE"],
+    "tecnicasRelacionadas": []
+  },
+  {
+    "modeloId": "terapia-metacognitiva-wells-1990",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "identificar_cas",
+      "desactivar_rumiacion",
+      "modificar_creencias_metacognitivas",
+      "recuperar_control_atencional"
+    ],
+    "explicacion": "MCT entiende la rumiación como parte del síndrome cognitivo-atencional (CAS), mantenido por creencias sobre la utilidad o incontrolabilidad del pensamiento. Su foco no está en discutir el contenido, sino en interrumpir el proceso perseverativo, modificar la metacognición y recuperar una relación más flexible con la actividad mental.",
+    "focoMJPS": ["N", "RI", "RE", "AG"],
+    "tecnicasRelacionadas": [
+      "p_mct_formulacion_cas",
+      "p_mct_psicoeducacion",
+      "p_mct_creencias_metacognitivas",
+      "p_mct_att",
+      "p_mct_desactivacion_rumiacion",
+      "p_mct_eliminacion_afrontamiento",
+      "m_mct_desconfirmacion_incontrolabilidad",
+      "m_mct_exposicion_interna",
+      "m_mct_respuestas_metacognitivas",
+      "m_mct_reduccion_comprobacion",
+      "m_mct_normalizacion_intrusivos",
+      "m_mct_autoobservacion_cas"
+    ]
+  },
+  {
+    "modeloId": "mbct-segal-williams-teasdale-2002",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "descentrarse_del_pensamiento",
+      "interrumpir_espiral_rumiativa",
+      "pasar_de_modo_hacer_a_modo_ser",
+      "detectar_senales_tempranas_de_recaida"
+    ],
+    "explicacion": "MBCT formula la rumiación como un patrón de procesamiento elaborativo-reactivo ligado a la vulnerabilidad depresiva. Su aportación diferencial es enseñar descentramiento y metaconciencia para cambiar la relación con los pensamientos, reduciendo la reactividad al ánimo y cortando la espiral rumiativa antes de que se consolide.",
+    "focoMJPS": ["RI", "N", "RE", "AP", "AG"],
+    "tecnicasRelacionadas": [
+      "p_mbct_formulacion_recaida"
+    ]
+  },
+  {
+    "modeloId": "act-hayes-strosahl-wilson-1999",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "desfusionar_pensamiento",
+      "reducir_evitacion_experiencial",
+      "volver_al_presente",
+      "activar_accion_valiosa"
+    ],
+    "explicacion": "ACT entiende la rumiación como fusión cognitiva y evitación experiencial. Su foco es cambiar la función del pensamiento, dejar de obedecerlo automáticamente y recuperar acción valiosa aunque la mente siga produciendo contenido repetitivo.",
+    "focoMJPS": ["RI", "N", "RE", "AG"],
+    "tecnicasRelacionadas": [
+      "m_act_registro_funcional",
+      "m_act_metafora_autobus",
+      "m_act_normalizacion_mente",
+      "m_act_pregunta_funcionabilidad",
+      "m_act_lenguaje_disposicion"
+    ]
+  },
+  {
+    "modeloId": "activacion-conductual-jacobson-1996",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "romper_pasividad",
+      "interrumpir_evitacion",
+      "reorientar_a_refuerzo_externo",
+      "sustituir_rumiacion_por_accion"
+    ],
+    "explicacion": "BA entiende la rumiación como parte de un ciclo de evitación y retirada que sustituye acción por pensamiento. Su foco es restaurar contacto con contingencias reales, romper pasividad y reducir el espacio funcional que la rumiación ocupa en la vida cotidiana.",
+    "focoMJPS": ["AG", "RE", "VB"],
+    "tecnicasRelacionadas": []
+  },
+  {
+    "modeloId": "terapia-cognitiva-beck-depresion-1967",
+    "pesoModelo": 3,
+    "tipoOperacion": [
+      "identificar_pensamientos_automaticos",
+      "evaluar_evidencia",
+      "reevaluar_significado",
+      "reducir_sesgos_cognitivos"
+    ],
+    "explicacion": "La terapia cognitiva de Beck no es específica de rumiación, pero sí relevante cuando esta está muy ligada a sesgos depresógenos, pensamientos automáticos negativos y esquemas que organizan la repetición mental. Aporta reestructuración cognitiva y empirismo colaborativo, aunque su foco principal no es el estilo rumiativo en sí.",
+    "focoMJPS": ["N", "RE", "AG", "RI"],
+    "tecnicasRelacionadas": []
+  }
+],
   "preguntasDeFormulacion": [
     "¿Qué intenta resolver la rumiación?",
     "¿Qué malestar evita o regula?",
