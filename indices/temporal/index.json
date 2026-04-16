@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-16T08:35:57.128Z",
+  "generatedAt": "2026-04-16T08:37:23.176Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 184,
-    "links": 189,
-    "unresolvedInfluences": 636
+    "links": 193,
+    "unresolvedInfluences": 643
   },
   "nodes": [
     {
@@ -3898,11 +3898,22 @@
       "importance": 3,
       "type": "modelo",
       "isMarco": false,
-      "file": "modelos/cognitivo/modelo-evitacion-cognitiva-borkovec-1994.json",
+      "file": "modelos/cognitivo/modelo-evitacion-cognitiva-borkovec.json",
       "authors": "Thomas D. Borkovec",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "El Modelo de evitación cognitiva de Borkovec propone que la preocupación característica del Trastorno de Ansiedad Generalizada (TAG) no es simplemente un intento fallido de resolver problemas, sino una estrategia activa de evitación emocional. La preocupación, entendida como un flujo verbal-lingüístico de pensamientos orientados al futuro, reduce la activación emocional y somática asociada a imágenes más vívidas o experiencias afectivas directas. De este modo, la persona evita contactar plenamente con emociones como el miedo, la tristeza o la vulnerabilidad, especialmente aquellas vinculadas a experiencias interpersonales o de apego. Sin embargo, esta evitación mantiene el problema a largo plazo, ya que impide el procesamiento emocional completo, la integración de experiencias y la desconfirmación de amenazas temidas. El modelo también introduce el papel del refuerzo negativo (la reducción inmediata de malestar al preocuparse) y el déficit en procesamiento emocional como mecanismos clave de mantenimiento. Clínicamente, el tratamiento se orienta a reducir la evitación cognitiva, aumentar el contacto emocional y promover un procesamiento más completo mediante técnicas experienciales, exposición emocional y modificación de la relación con la preocupación.",
+      "influencias": [
+        "Terapia cognitivo-conductual",
+        "Condicionamiento clásico",
+        "Condicionamiento operante",
+        "Teoría del procesamiento emocional",
+        "Modelo bioinformacional de la emoción (Lang)",
+        "Teoría de la ansiedad (Mowrer)"
+      ],
+      "refs": [
+        "Borkovec, T. D., & Inz, J. (1990). The nature of worry in generalized anxiety disorder.",
+        "Borkovec, T. D., Alcaine, O., & Behar, E. (2004). Avoidance theory of worry and generalized anxiety disorder.",
+        "Borkovec, T. D., Ray, W. J., & Stöber, J. (1998). Worry: A cognitive phenomenon intimately linked to affective, physiological, and interpersonal behavioral processes."
+      ],
       "lat": 40.798213,
       "lon": -77.859909,
       "ciudad": "University Park, Pennsylvania",
@@ -4195,11 +4206,21 @@
       "importance": 3,
       "type": "modelo",
       "isMarco": false,
-      "file": "modelos/cognitivo/modelo-intolerancia-incertidumbre-dugas-1998.json",
+      "file": "modelos/cognitivo/modelo-intolerancia-incertidumbre-dugas.json",
       "authors": "Michel J. Dugas; Robert Ladouceur",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "El Modelo de intolerancia a la incertidumbre de Dugas plantea que el núcleo del Trastorno de Ansiedad Generalizada (TAG) no es la preocupación en sí misma, sino una relación disfuncional con la incertidumbre. La persona percibe la incertidumbre como inaceptable, peligrosa o intolerable, lo que activa una cadena de respuestas cognitivas, emocionales y conductuales destinadas a reducirla o eliminarla. La preocupación emerge como intento de anticipar y controlar posibles amenazas futuras, pero lejos de resolver la incertidumbre, la amplifica y la mantiene activa. El modelo identifica cuatro factores clave de mantenimiento: la intolerancia a la incertidumbre como vulnerabilidad central, las creencias positivas sobre la preocupación (como herramienta útil), la orientación negativa hacia los problemas (percepción de incapacidad para afrontarlos) y la evitación cognitiva. Clínicamente, la intervención se centra en modificar la relación con la incertidumbre, cuestionar creencias disfuncionales, desarrollar tolerancia a lo incierto y promover exposición progresiva a situaciones ambiguas o impredecibles.",
+      "influencias": [
+        "Terapia cognitivo-conductual",
+        "Modelo de evitación cognitiva (TAG)",
+        "Teoría del procesamiento de la información",
+        "Psicología cognitiva",
+        "Modelo de resolución de problemas"
+      ],
+      "refs": [
+        "Dugas, M. J., & Ladouceur, R. (2000). Treatment of GAD: Targeting intolerance of uncertainty.",
+        "Dugas, M. J., Gagnon, F., Ladouceur, R., & Freeston, M. (1998). Generalized anxiety disorder: A preliminary test of a conceptual model.",
+        "Dugas, M. J., & Robichaud, M. (2007). Cognitive-Behavioral Treatment for Generalized Anxiety Disorder."
+      ],
       "lat": 45.50884,
       "lon": -73.58781,
       "ciudad": "Montreal",
@@ -5554,6 +5575,22 @@
       "target": "cft-gilbert-2009"
     },
     {
+      "source": "modelo-evitacion-cognitiva-borkovec",
+      "target": "modelo-intolerancia-incertidumbre-dugas"
+    },
+    {
+      "source": "psicologia-cognitiva-neisser-1967",
+      "target": "modelo-intolerancia-incertidumbre-dugas"
+    },
+    {
+      "source": "condicionamiento-clasico-pavlov-1927",
+      "target": "modelo-evitacion-cognitiva-borkovec"
+    },
+    {
+      "source": "condicionamiento-operante-skinner-1938",
+      "target": "modelo-evitacion-cognitiva-borkovec"
+    },
+    {
       "source": "kahneman-sesgos-cognitivos-heuristics-biases",
       "target": "modelo-cognitivo-panico-clark-1986"
     },
@@ -6630,6 +6667,34 @@
     {
       "target": "cft-gilbert-2009",
       "influence": "Terapias experienciales (imaginería, trabajo con sillas)"
+    },
+    {
+      "target": "modelo-intolerancia-incertidumbre-dugas",
+      "influence": "Terapia cognitivo-conductual"
+    },
+    {
+      "target": "modelo-intolerancia-incertidumbre-dugas",
+      "influence": "Teoría del procesamiento de la información"
+    },
+    {
+      "target": "modelo-intolerancia-incertidumbre-dugas",
+      "influence": "Modelo de resolución de problemas"
+    },
+    {
+      "target": "modelo-evitacion-cognitiva-borkovec",
+      "influence": "Terapia cognitivo-conductual"
+    },
+    {
+      "target": "modelo-evitacion-cognitiva-borkovec",
+      "influence": "Teoría del procesamiento emocional"
+    },
+    {
+      "target": "modelo-evitacion-cognitiva-borkovec",
+      "influence": "Modelo bioinformacional de la emoción (Lang)"
+    },
+    {
+      "target": "modelo-evitacion-cognitiva-borkovec",
+      "influence": "Teoría de la ansiedad (Mowrer)"
     },
     {
       "target": "modelo-cognitivo-panico-clark-1986",
