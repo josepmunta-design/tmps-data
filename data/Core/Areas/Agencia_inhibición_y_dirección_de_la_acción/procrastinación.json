@@ -73,143 +73,99 @@
     "dependencia de activación emocional intensa o presión externa para iniciar"
   ],
   "procesosDominantesMJPS": ["AG", "RE", "N", "RI"],
-  "modelosRelevantes": [
-    {
-      "modeloId": "activacion-conductual-jacobson-1996",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "bloquear_evitacion",
-        "descomponer_inicio",
-        "programar_accion",
-        "restaurar_refuerzo"
-      ],
-      "explicacion": "La Activación Conductual entiende la procrastinación como una forma de evitación y retirada sostenida por alivio inmediato. La persona no espera a actuar porque 'no tenga ganas', sino que aprende a escapar del malestar de empezar y queda atrapada en actividades alternativas más fáciles o menos amenazantes. El foco del cambio no está en convencer a la persona, sino en modificar la secuencia conductual: analizar la evitación, programar tareas de forma concreta y restaurar contacto con refuerzos reales. Es especialmente útil cuando la procrastinación está mantenida por inercia, evitación y dependencia del estado de ánimo. :contentReference[oaicite:1]{index=1}",
-      "focoMJPS": ["AG", "RE", "VB"],
-      "tecnicasRelacionadas": [
-        "p_ba_monitorizacion_actividades",
-        "p_ba_programacion_actividades",
-        "p_ba_reduccion_evitacion",
-        "m_ba_regla_5_min"
-      ]
-    },
-    {
-      "modeloId": "act-hayes-strosahl-wilson-1999",
-      "pesoModelo": 5,
-      "tipoOperacion": [
-        "reducir_evitacion_experiencial",
-        "desfusionar_reglas",
-        "orientar_a_valores",
-        "activar_paso_minimo"
-      ],
-      "explicacion": "ACT conceptualiza la procrastinación como conducta gobernada por evitación experiencial: la persona posterga para no sentir ansiedad, insuficiencia, aburrimiento o presión interna. El problema no es solo la tarea, sino que la acción queda subordinada al intento de controlar el estado interno antes de empezar. El foco del cambio es disminuir la obediencia a pensamientos y emociones difíciles, recuperar dirección valiosa y actuar con malestar presente. Su aporte diferencial es muy claro cuando la procrastinación está organizada por autocrítica, fusión con reglas o necesidad de sentirse 'listo' antes de actuar. ",
-      "focoMJPS": ["RI", "RE", "AG", "N", "I"],
-      "tecnicasRelacionadas": [
-        "m_act_registro_funcional",
-        "m_act_nominar_evitacion",
-        "m_act_funciona_para_ti",
-        "m_act_hacia_contra",
-        "m_act_paso_5_min",
-        "m_act_urge_surfing"
-      ]
-    },
-    {
-      "modeloId": "autocontrol-conductual-kanfer-karoly",
-      "pesoModelo": 4,
-      "tipoOperacion": [
-        "entrenar_autorregistro",
-        "reducir_friccion_de_inicio",
-        "redisenar_estimulos",
-        "reforzar_aproximaciones"
-      ],
-      "explicacion": "El modelo de Autocontrol Conductual entiende la procrastinación como un problema de autorregulación aprendida, donde la conducta queda dominada por reforzadores inmediatos, señales ambientales desorganizadoras y falta de contingencias autoaplicadas eficaces. El foco está en observar la conducta, medirla, modificar estímulos y construir sistemas concretos de autocontrol. Su aporte diferencial es pragmático y muy potente: convierte la procrastinación en un patrón modificable mediante autorregistro, preparación del entorno, shaping y auto-refuerzo, sin depender de insight complejo. Es especialmente útil cuando el problema principal es la mala regulación conductual cotidiana. ",
-      "focoMJPS": ["AG", "N", "RE"],
-      "tecnicasRelacionadas": [
-        "p_autocontrol_autorregistro",
-        "p_autocontrol_control_estimulos",
-        "p_autocontrol_auto_refuerzo",
-        "m_autocontrol_reducir_friccion",
-        "m_autocontrol_criterio_minimo"
-      ]
-    },
-    {
-      "modeloId": "pst-solucion-problemas-dzurilla-goldfried-1971",
-      "pesoModelo": 4,
-      "tipoOperacion": [
-        "operativizar_tarea",
-        "reducir_difusion_del_problema",
-        "tomar_decisiones_suficientes",
-        "convertir_intencion_en_plan"
-      ],
-      "explicacion": "La Terapia de Solución de Problemas entiende muchas procrastinaciones como fallos en la orientación al problema y en la traducción de metas difusas a pasos ejecutables. La persona no solo evita: también suele relacionarse con la tarea como algo global, abrumador o mal definido. El foco del cambio es definir el problema, descomponerlo, tomar decisiones suficientemente buenas y convertirlo en una secuencia operativa. Su aporte diferencial aparece cuando la procrastinación está sostenida por confusión, sobreanálisis, indecisión o tareas mal formuladas. ",
-      "focoMJPS": ["N", "AG", "RE"],
-      "tecnicasRelacionadas": [
-        "p_pst_orientacion_problema",
-        "p_pst_definicion_problema",
-        "p_pst_toma_decisiones",
-        "p_pst_implementacion_verificacion",
-        "m_pst_primer_paso_observable"
-      ]
-    },
-    {
-      "modeloId": "terapia-metacognitiva-wells-1990",
-      "pesoModelo": 3,
-      "tipoOperacion": [
-        "desactivar_rumiacion_preparatoria",
-        "debilitar_creencias_sobre_pensar",
-        "recuperar_control_atencional",
-        "eliminar_afrontamiento_contraproducente"
-      ],
-      "explicacion": "La Terapia Metacognitiva sitúa la procrastinación, en algunos casos, dentro de un síndrome cognitivo-atencional en el que la persona sustituye acción por preocupación, preparación mental, rumiación o comprobación interna. El problema no es solo evitar la tarea, sino quedar atrapado en modos de procesamiento que se viven como útiles pero aplazan la ejecución real. El foco es abandonar rumiación, creencias metacognitivas positivas sobre pensar más y conductas de afrontamiento contraproducentes. Es especialmente útil cuando la procrastinación adopta forma mental: pensar, revisar o anticipar en lugar de hacer. ",
-      "focoMJPS": ["N", "RI", "RE", "AG"],
-      "tecnicasRelacionadas": [
-        "p_mct_formulacion_cas",
-        "p_mct_psicoeducacion",
-        "p_mct_creencias_metacognitivas",
-        "p_mct_att",
-        "p_mct_desactivacion_rumiacion",
-        "p_mct_eliminacion_afrontamiento"
-      ]
-    },
-    {
-      "modeloId": "entrevista-motivacional-1983",
-      "pesoModelo": 3,
-      "tipoOperacion": [
-        "resolver_ambivalencia",
-        "evocar_razones_propias",
-        "fortalecer_autoeficacia",
-        "traducir_disposicion_en_compromiso"
-      ],
-      "explicacion": "La Entrevista Motivacional entiende algunas procrastinaciones como expresiones de ambivalencia más que de pura evitación: una parte de la persona quiere actuar y otra resiste por coste, miedo, rebelión o falta de apropiación de la meta. El foco no es presionar, sino evocar razones propias para cambiar, clarificar discrepancias y transformar intención vaga en compromiso realista. Su aporte diferencial aparece cuando la persona dice que 'quiere hacerlo' pero no termina de apropiarse de la acción o responde con resistencia a enfoques más directivos. ",
-      "focoMJPS": ["AG", "I", "N", "RE", "R"],
-      "tecnicasRelacionadas": [
-        "p_mi_evocar_change_talk",
-        "p_mi_desarrollar_discrepancia",
-        "p_mi_escalas_importancia_confianza",
-        "p_mi_plan_cambio",
-        "m_mi_pregunta_capacidad",
-        "m_mi_compromiso_suave"
-      ]
-    },
-    {
-      "modeloId": "ert-mennin-fresco-2013",
-      "pesoModelo": 3,
-      "tipoOperacion": [
-        "regular_hiperreactividad",
-        "reducir_orientacion_a_seguridad",
-        "pasar_de_reactividad_a_proactividad",
-        "elegir_accion_valiosa"
-      ],
-      "explicacion": "ERT formula la procrastinación como un problema de regulación motivacional y emocional: ante tareas que activan amenaza, evaluación o sobrecarga, la persona queda orientada a seguridad inmediata y posterga la acción, aunque eso comprometa metas significativas. El foco del cambio es detectar ese tirón hacia seguridad, regular atención y emoción, y restaurar una trayectoria más proactiva orientada a recompensa y valor. Es especialmente útil cuando la procrastinación está ligada a ansiedad anticipatoria elevada, sensibilidad emocional o sobrecarga interna más que a simple hábito. ",
-      "focoMJPS": ["RE", "AG", "N", "RI"],
-      "tecnicasRelacionadas": [
-        "p_ert_regulacion_atencional",
-        "p_ert_regulacion_metacognitiva",
-        "m_ert_cyr",
-        "m_ert_detectar_tiron_seguridad",
-        "m_ert_eleccion_minima_valiosa"
-      ]
-    }
-  ],
+ "modelosRelevantes": [
+  {
+    "modeloId": "activacion-conductual-jacobson-1996",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "bloquear_evitacion",
+      "programar_inicio",
+      "restaurar_refuerzo",
+      "activar_conducta_sin_motivacion_previa"
+    ],
+    "explicacion": "La Activación Conductual entiende la procrastinación como un patrón de evitación mantenido por refuerzo negativo: la persona pospone tareas para reducir malestar inmediato, lo que fortalece la postergación. El foco no está en esperar a tener ganas, sino en alterar directamente la secuencia conducta–consecuencia mediante programación de actividades y activación progresiva. Es especialmente útil cuando la procrastinación está dominada por inercia conductual y dependencia del estado de ánimo.",
+    "focoMJPS": ["AG", "RE"]
+  },
+  {
+    "modeloId": "act-hayes-strosahl-wilson-1999",
+    "pesoModelo": 5,
+    "tipoOperacion": [
+      "reducir_evitacion_experiencial",
+      "desfusionar_reglas",
+      "orientar_a_valores",
+      "activar_paso_con_malestar"
+    ],
+    "explicacion": "ACT conceptualiza la procrastinación como evitación experiencial: la acción se pospone para no contactar con ansiedad, autocrítica o esfuerzo. El problema no es la tarea, sino la dominancia del intento de controlar estados internos antes de actuar. El foco es cambiar la relación con la experiencia interna y actuar en presencia de malestar, guiado por valores. Es especialmente útil cuando la procrastinación está organizada por autocrítica, miedo o necesidad de sentirse preparado.",
+    "focoMJPS": ["RI", "RE", "AG", "N"],
+    "tecnicasRelacionadas": [
+      "m_act_registro_funcional",
+      "m_act_metafora_autobus",
+      "m_act_normalizacion_mente",
+      "m_act_pregunta_funcionabilidad",
+      "m_act_lenguaje_disposicion",
+      "m_act_eleccion",
+      "m_act_pregunta_valor"
+    ]
+  },
+  {
+    "modeloId": "terapia-coherencia-ecker-hulley-2012",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "identificar_logica_implicita",
+      "acceder_memoria_emocional",
+      "desactivar_coherencia_del_sintoma",
+      "reconsolidar_aprendizaje"
+    ],
+    "explicacion": "La Terapia de la Coherencia entiende la procrastinación como una conducta coherente con esquemas emocionales implícitos que hacen que actuar resulte peligroso o inadecuado a nivel profundo. La persona no pospone por falta de voluntad, sino porque existe una memoria emocional que hace que no actuar tenga más sentido que actuar. El foco es descubrir esa lógica implícita y transformarla mediante reconsolidación de memoria. Es especialmente útil cuando la procrastinación es rígida, persistente y resistente a intervenciones conductuales.",
+    "focoMJPS": ["AP", "RI", "I", "RE"]
+  },
+  {
+    "modeloId": "autocontrol-conductual-kanfer-karoly",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "entrenar_autorregulacion",
+      "modificar_estimulos",
+      "reducir_friccion_de_inicio",
+      "reforzar_ejecucion"
+    ],
+    "explicacion": "El modelo de autocontrol conductual conceptualiza la procrastinación como un fallo en la autorregulación: la conducta queda dominada por reforzadores inmediatos y contextos mal diseñados. El foco está en observar, medir y rediseñar la conducta mediante autorregistro, control de estímulos y auto-refuerzo. Es especialmente útil cuando el problema es práctico y cotidiano más que emocional profundo.",
+    "focoMJPS": ["AG", "N"]
+  },
+  {
+    "modeloId": "pst-solucion-problemas-dzurilla-goldfried-1971",
+    "pesoModelo": 4,
+    "tipoOperacion": [
+      "definir_tarea",
+      "descomponer_problema",
+      "reducir_indecision",
+      "convertir_intencion_en_plan"
+    ],
+    "explicacion": "La Terapia de Solución de Problemas entiende la procrastinación como un fallo en la estructuración de la acción: tareas mal definidas, excesivamente globales o ambiguas que generan evitación. El foco es convertir problemas difusos en pasos concretos y ejecutables. Es especialmente útil cuando la procrastinación está sostenida por sobreanálisis o falta de claridad operativa.",
+    "focoMJPS": ["N", "AG"]
+  },
+  {
+    "modeloId": "terapia-metacognitiva-wells-1990",
+    "pesoModelo": 3,
+    "tipoOperacion": [
+      "reducir_rumiacion",
+      "desactivar_procesamiento_preparatorio",
+      "recuperar_control_atencional"
+    ],
+    "explicacion": "La Terapia Metacognitiva entiende parte de la procrastinación como sustitución de acción por procesamiento mental: rumiar, anticipar o planificar en exceso. El problema no es solo evitar, sino quedar atrapado en modos cognitivos que parecen útiles pero retrasan la ejecución. El foco es abandonar esos procesos y recuperar acción directa.",
+    "focoMJPS": ["N", "RI", "AG"]
+  },
+  {
+    "modeloId": "entrevista-motivacional-1983",
+    "pesoModelo": 3,
+    "tipoOperacion": [
+      "resolver_ambivalencia",
+      "evocar_motivacion_propia",
+      "fortalecer_compromiso"
+    ],
+    "explicacion": "La Entrevista Motivacional entiende algunas procrastinaciones como ambivalencia no resuelta: una parte quiere actuar y otra no. El foco es clarificar esa ambivalencia y facilitar compromiso con la acción. Es especialmente útil cuando la persona no está realmente decidida a hacer la tarea.",
+    "focoMJPS": ["AG", "I", "N"]
+  }
+],
   "nodosTransversalesImportantes": [
     {
       "id": "evitacion_experiencial",
