@@ -3,20 +3,21 @@
   "areaId": "identidad_autoorganizacion_self",
   "label": "Dificultad para definirse",
   "definicion": "Problema para construir una representación clara, diferenciada y articulada de quién se es.",
-  "descripcionClinica": "La dificultad para definirse aparece cuando la persona no logra organizar una imagen interna relativamente clara de sí misma. Al intentar describirse, ofrece respuestas vagas, cambiantes o excesivamente dependientes del contexto. No hay una sensación interna de identidad suficientemente diferenciada: cuesta identificar rasgos propios, preferencias, valores, límites o dirección vital. En muchos casos, la persona se apoya en roles, etiquetas externas o expectativas de otros para definirse, pero sin una experiencia interna sólida que los sostenga.\n\nA diferencia de la identidad inestable, aquí no predomina el cambio entre versiones del self, sino la falta de definición. Tampoco se trata de una autoimagen negativa: el problema no es que el self esté evaluado de forma crítica, sino que no está suficientemente construido. :contentReference[oaicite:0]{index=0}\n\nClínicamente se observa dificultad para tomar decisiones coherentes, sensación de “no saber quién soy”, dependencia del contexto relacional para definirse, y problemas para sostener límites o dirección personal. Este patrón suele implicar déficit en procesos de construcción narrativa, integración de experiencias y consolidación de agencia.",
+  "descripcionClinica": "La dificultad para definirse aparece cuando la persona no logra organizar una imagen interna suficientemente clara y diferenciada de sí misma. Al intentar describirse, ofrece respuestas vagas, genéricas o dependientes del contexto, sin una sensación interna estable de identidad. Cuesta identificar rasgos propios, valores, preferencias o límites personales, y la definición del self suele apoyarse en roles externos más que en una experiencia interna articulada.\n\nA diferencia de la identidad inestable, aquí no predomina la variabilidad, sino la falta de definición. Tampoco es una autoimagen negativa: el problema no es cómo se valora, sino que no hay una estructura suficientemente clara sobre la que valorar. :contentReference[oaicite:2]{index=2}\n\nClínicamente se observa dificultad para posicionarse, tomar decisiones coherentes, sostener dirección vital o diferenciarse de expectativas externas. El self aparece poco construido más que fragmentado o cambiante.",
+  
   "modelosRelevantes": [
     {
       "modeloId": "psicoterapia-constructivista-neimeyer",
-      "fraseResumen": "La identidad no se encuentra: se construye como una narrativa coherente de significado.",
+      "fraseResumen": "La identidad no se descubre: se construye organizando significado y continuidad.",
       "pesoModelo": 5,
       "tipoOperacion": [
         "construir_coherencia_narrativa",
         "articular_significados_personales",
         "reconstruir_continuidad_biografica",
-        "explorar_valores_implicitos"
+        "explorar_valores"
       ],
-      "explicacion": "El enfoque constructivista entiende la dificultad para definirse como un problema en la organización del sistema de significados personales. La persona no dispone de una narrativa suficientemente articulada que integre experiencias, valores y dirección vital, por lo que el self queda difuso o fragmentado.\n\nEl foco no está en descubrir una esencia interna fija, sino en construir activamente una identidad narrativa viable: conectar episodios, explicitar significados, identificar valores implícitos y generar continuidad biográfica.\n\nEs especialmente útil cuando la persona no sabe responder a quién es porque nunca ha construido activamente esa respuesta, más que porque la haya perdido.",
-      "focoMJPS": ["N", "I", "RE", "AG"],
+      "explicacion": "Neimeyer entiende esta dificultad como un problema en la organización del sistema de significados personales. La persona no dispone de una narrativa suficientemente estructurada que integre su experiencia, por lo que no puede responder de forma clara a quién es.\n\nEl foco clínico es construir identidad, no descubrirla: organizar experiencias, explicitar valores, generar continuidad biográfica y producir una narrativa viable.\n\nEs especialmente útil cuando el problema es difuso, sin conflicto claro, pero con sensación de vacío o indefinición identitaria.",
+      "focoMJPS": ["N", "I", "AG"],
       "tecnicasRelacionadas": [
         "exploracion_narrativa_sistema_significados",
         "deteccion_quiebres_narrativos",
@@ -26,16 +27,16 @@
       ]
     },
     {
-      "modeloId": "terapia-narrativa-white-epston-1990",
-      "fraseResumen": "Si no hay historia propia, el self queda ocupado por relatos externos o difusos.",
+      "modeloId": "terapia-narrativa-white-epston",
+      "fraseResumen": "Si no hay historia propia, el self queda definido por relatos externos.",
       "pesoModelo": 5,
       "tipoOperacion": [
-        "externalizar_problema_identitario",
+        "externalizar_identidad_difusa",
         "construir_historia_identidad",
-        "detectar_resultados_unicos",
-        "reautorizar_identidad"
+        "detectar_excepciones",
+        "reautorizar_self"
       ],
-      "explicacion": "La terapia narrativa conceptualiza esta dificultad como ausencia de una historia de identidad suficientemente definida. Cuando no hay un relato claro de quién se es, la identidad queda dominada por discursos externos, roles o definiciones implícitas no elaboradas.\n\nEl trabajo consiste en ayudar a la persona a construir una narrativa de identidad más explícita: identificar momentos que expresan valores, diferenciarse del problema y generar una historia preferida que dé forma al self.\n\nEs especialmente útil cuando la persona habla en términos genéricos o prestados, sin apropiación real de su propia historia.",
+      "explicacion": "La terapia narrativa entiende la dificultad para definirse como ausencia de una historia de identidad suficientemente desarrollada. La persona no se ha apropiado de una narrativa propia, quedando dominada por definiciones externas o implícitas.\n\nEl trabajo consiste en construir identidad a través del lenguaje: identificar momentos significativos, valores y posiciones, y generar una historia preferida que dé forma al self.\n\nEs especialmente útil cuando la persona habla de sí misma de forma genérica, prestada o poco diferenciada.",
       "focoMJPS": ["N", "I", "R", "AG"],
       "tecnicasRelacionadas": [
         "externalizacion",
@@ -47,16 +48,16 @@
     },
     {
       "modeloId": "act-hayes-strosahl-wilson-1999",
-      "fraseResumen": "El problema no es no tener identidad, sino quedar atrapado en definiciones rígidas o ajenas.",
+      "fraseResumen": "La identidad no se define pensando, sino actuando desde valores.",
       "pesoModelo": 4,
       "tipoOperacion": [
-        "desfusionar_identidad_conceptual",
-        "activar_valores_como_direccion",
-        "desarrollar_self_como_contexto",
-        "promover_accion_identitaria"
+        "desfusionar_autodefiniciones",
+        "activar_valores",
+        "desarrollar_self_contexto",
+        "promover_accion"
       ],
-      "explicacion": "ACT entiende la dificultad para definirse no como ausencia real de self, sino como fusión con conceptos pobres, rígidos o vacíos sobre uno mismo. Cuando la persona intenta definirse desde etiquetas o pensamientos (“soy así/no soy así”), se queda atrapada en un self conceptual limitado.\n\nEl modelo desplaza el foco: en lugar de definir quién eres, construyes identidad actuando desde valores. El self emerge como patrón de acción coherente, no como descripción estática.\n\nEs especialmente útil cuando la persona busca una definición intelectual de sí misma en lugar de construirla a través de la experiencia y la acción.",
-      "focoMJPS": ["RI", "N", "I", "AG"],
+      "explicacion": "ACT conceptualiza la dificultad para definirse como un problema de fusión con autodefiniciones vagas o rígidas. La persona intenta encontrarse en pensamientos sobre sí misma, en lugar de construirse a través de la acción.\n\nEl foco no es definir quién eres, sino construirlo: clarificar valores y actuar en esa dirección. La identidad emerge como patrón de acción coherente.\n\nEs especialmente útil cuando hay sobreanálisis identitario y parálisis asociada.",
+      "focoMJPS": ["RI", "I", "AG", "N"],
       "tecnicasRelacionadas": [
         "defusion_cognitiva",
         "yo_como_contexto",
@@ -67,16 +68,16 @@
     },
     {
       "modeloId": "aprendizaje-social-bandura-1977",
-      "fraseResumen": "La identidad se consolida cuando la persona se percibe capaz de actuar de forma consistente.",
+      "fraseResumen": "El self se define cuando la persona actúa y se percibe capaz.",
       "pesoModelo": 3,
       "tipoOperacion": [
         "construir_autoeficacia",
-        "generar_experiencias_domino",
+        "generar_experiencias",
         "modelado_identitario",
-        "estructurar_conducta_coherente"
+        "estructurar_accion"
       ],
-      "explicacion": "Desde el aprendizaje social, la dificultad para definirse se vincula a baja autoeficacia y falta de experiencias consistentes de acción. Si la persona no actúa de forma estable en diferentes contextos, no puede inferir quién es.\n\nLa identidad no se construye solo desde introspección, sino desde la experiencia repetida de conducta eficaz. A través de microéxitos, modelado y práctica, se va consolidando una percepción más definida del self.\n\nEs especialmente útil cuando la indefinición se acompaña de pasividad, evitación o falta de experiencias estructurantes.",
-      "focoMJPS": ["AG", "N", "RE"],
+      "explicacion": "Desde Bandura, la dificultad para definirse se relaciona con falta de experiencias consistentes de acción. Sin conducta estable, no hay base para construir una percepción de identidad.\n\nEl foco es conductual: generar experiencias de dominio, estructurar acción y construir autoeficacia, a partir de las cuales emerge una identidad más definida.\n\nEs útil cuando la indefinición se asocia a pasividad o falta de experiencias.",
+      "focoMJPS": ["AG", "N"],
       "tecnicasRelacionadas": [
         "tareas_graduadas_domino",
         "modelado_guiado",
@@ -87,40 +88,21 @@
     },
     {
       "modeloId": "psicoanalisis-relacional-greenberg-mitchell-1983",
-      "fraseResumen": "El self no se define en solitario, sino dentro de relaciones que lo configuran.",
+      "fraseResumen": "El self se construye en relación, no en aislamiento.",
       "pesoModelo": 4,
       "tipoOperacion": [
         "explorar_self_relacional",
-        "co_construir_identidad_en_vinculo",
-        "identificar_patrones_relacionales",
-        "reorganizar_experiencia_intersubjetiva"
+        "co_construir_identidad",
+        "identificar_patrones",
+        "trabajar_enactments"
       ],
-      "explicacion": "El psicoanálisis relacional entiende la dificultad para definirse como un problema en la constitución relacional del self. Si la identidad se forma en interacción, experiencias relacionales inconsistentes o poco mentalizadas pueden generar un self difuso.\n\nEl trabajo clínico se centra en explorar cómo el self emerge en la relación terapéutica: patrones, expectativas, posiciones y modos de estar con el otro. La identidad se va clarificando en la experiencia relacional viva.\n\nEs especialmente útil cuando la indefinición aparece ligada a dependencia del contexto interpersonal o dificultad para sostener una posición propia frente a otros.",
-      "focoMJPS": ["R", "I", "N", "RE"],
+      "explicacion": "El psicoanálisis relacional entiende la dificultad para definirse como un problema en la constitución relacional del self. La identidad no se ha consolidado porque las experiencias relacionales no han permitido una definición clara.\n\nEl trabajo se realiza en el vínculo terapéutico, donde el self se observa, se experimenta y se reorganiza en interacción.\n\nEs especialmente útil cuando la identidad depende excesivamente del contexto interpersonal.",
+      "focoMJPS": ["R", "I", "N"],
       "tecnicasRelacionadas": [
         "analisis_campo_intersubjetivo",
         "exploracion_enactments",
         "nombrar_aqui_ahora_relacional",
         "reparacion_relacional"
-      ]
-    },
-    {
-      "modeloId": "kernberg-relaciones-objetales-1975",
-      "fraseResumen": "Cuando no se integran las experiencias del self, la identidad queda difusa.",
-      "pesoModelo": 4,
-      "tipoOperacion": [
-        "integrar_representaciones_self",
-        "reducir_escision",
-        "clarificar_díadas_relacionales",
-        "consolidar_identidad"
-      ],
-      "explicacion": "Kernberg conceptualiza la dificultad para definirse como un grado de difusión de identidad: las representaciones del self no están suficientemente integradas, por lo que la persona no puede acceder a una imagen coherente de sí misma.\n\nEl foco está en identificar y trabajar las escisiones (self bueno vs malo, versiones contradictorias) y promover una integración progresiva que permita una identidad más estable y definida.\n\nEs especialmente útil cuando la indefinición convive con contradicciones internas o dificultad para sostener una imagen consistente de uno mismo. :contentReference[oaicite:1]{index=1}",
-      "focoMJPS": ["I", "RI", "N", "R"],
-      "tecnicasRelacionadas": [
-        "clarificacion_contradicciones",
-        "identificacion_díadas",
-        "interpretacion_defensas_primitivas",
-        "integracion_representaciones"
       ]
     }
   ]
