@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-18T10:51:18.502Z",
+  "generatedAt": "2026-04-18T10:51:40.679Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 193,
-    "links": 203,
-    "unresolvedInfluences": 669
+    "modelos": 194,
+    "links": 205,
+    "unresolvedInfluences": 671
   },
   "nodes": [
     {
@@ -5162,6 +5162,34 @@
       "escuelaId": "humanista"
     },
     {
+      "id": "abbt-roemer-orsillo-2007",
+      "label": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "year": 2007,
+      "group": "Cognitivo",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/cognitivo/abbt-roemer-orsillo-2007.json",
+      "authors": "Andrew T. Roemer; Susan M. Orsillo",
+      "summary": "La Acceptance-Based Behavioral Therapy (ABBT) es un modelo desarrollado para el tratamiento del trastorno de ansiedad generalizada que integra terapia conductual con estrategias de mindfulness y aceptación, centrando el foco en la relación que la persona establece con su experiencia interna. ABBT conceptualiza la ansiedad como un proceso mantenido por tres mecanismos principales: una relación crítica y fusionada con pensamientos y emociones, la evitación experiencial como intento de control, y la restricción conductual que aleja a la persona de una vida significativa. La preocupación se entiende como una forma de evitación que reduce el contacto con emociones más intensas, perpetuando el ciclo de malestar. El tratamiento busca desarrollar una conciencia abierta y no enjuiciadora, cultivar disposición a experimentar estados internos y reorganizar la conducta en torno a valores personales, facilitando una participación más plena, flexible y comprometida en la vida.",
+      "influencias": [
+        "Terapia cognitivo-conductual",
+        "Terapia de Aceptación y Compromiso (ACT)",
+        "Mindfulness",
+        "Análisis funcional de la conducta"
+      ],
+      "refs": [
+        "Roemer, L., & Orsillo, S. M. (2007). An open trial of an acceptance-based behavior therapy for generalized anxiety disorder.",
+        "Roemer, L., & Orsillo, S. M. (2009). Mindfulness- and Acceptance-Based Behavioral Therapies in Practice.",
+        "Orsillo, S. M., & Roemer, L. (2011). The Mindful Way through Anxiety."
+      ],
+      "lat": 42.360082,
+      "lon": -71.05888,
+      "ciudad": "Boston, Massachusetts",
+      "pais": "EE. UU.",
+      "escuelaId": "cognitivo"
+    },
+    {
       "id": "cft-gilbert-2009",
       "label": "Compassion Focused Therapy (CFT)",
       "year": 2009,
@@ -5835,6 +5863,14 @@
     {
       "source": "mindfulness-mbsr-contemplativo-1979",
       "target": "cft-gilbert-2009"
+    },
+    {
+      "source": "act-hayes-strosahl-wilson-1999",
+      "target": "abbt-roemer-orsillo-2007"
+    },
+    {
+      "source": "mindfulness-mbsr-contemplativo-1979",
+      "target": "abbt-roemer-orsillo-2007"
     },
     {
       "source": "psicologia-cognitiva-neisser-1967",
@@ -6965,6 +7001,14 @@
     {
       "target": "cft-gilbert-2009",
       "influence": "Terapias experienciales (imaginería, trabajo con sillas)"
+    },
+    {
+      "target": "abbt-roemer-orsillo-2007",
+      "influence": "Terapia cognitivo-conductual"
+    },
+    {
+      "target": "abbt-roemer-orsillo-2007",
+      "influence": "Análisis funcional de la conducta"
     },
     {
       "target": "preventive-cognitive-therapy-bockting-2005",
