@@ -1,7 +1,7 @@
 {
   "subprocesoId": "I_autoimagen",
-  "updatedAt": "2026-04-18T08:09:19.414Z",
-  "totalModelos": 56,
+  "updatedAt": "2026-04-18T09:50:55.742Z",
+  "totalModelos": 58,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -138,6 +138,36 @@
           "codigo": "m_cft_good_enough",
           "nombre": "Regla del “suficientemente bien” (Good-enough)",
           "texto": "Diseñar conductas deliberadamente imperfectas y sostenibles para debilitar el patrón perfeccionista sin colapso.",
+          "sub": "I_autoimagen",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "modelLabel": "Modelo cognitivo de la fobia social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark; Adrian Wells",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_clarkwells_imagen_self",
+          "nombre": "Trabajo con la imagen negativa del self",
+          "texto": "Procedimiento orientado a identificar, cuestionar y modificar la imagen mental negativa que el paciente utiliza como referencia durante la interacción social. Se explora el origen de la imagen (a menudo ligada a memorias tempranas) y se contrasta con evidencia actual mediante técnicas como vídeo-feedback o experimentos conductuales, facilitando una actualización más realista de la autoimagen social. Referencia: Clark & Wells (1995); Clark (2001).",
+          "sub": "I_autoimagen",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clarkwells_video_feedback",
+          "nombre": "Video-feedback correctivo",
+          "texto": "Procedimiento en el que el paciente observa grabaciones de su propio comportamiento en situaciones sociales para comparar su percepción interna con su comportamiento real. Se guía la observación para evitar interpretaciones sesgadas, ayudando a desmontar la discrepancia entre la imagen negativa interna y la realidad observable, lo que reduce creencias de evaluación negativa extrema. Referencia: Clark et al. (2003).",
+          "sub": "I_autoimagen",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clarkwells_imagen",
+          "nombre": "Nombrar la imagen negativa del self",
+          "texto": "Microintervención que consiste en hacer explícita la imagen interna que el paciente cree que proyecta (por ejemplo, “parezco torpe o ridículo”), permitiendo diferenciar percepción interna de realidad externa y facilitando su posterior cuestionamiento. Referencia: Clark (2001).",
           "sub": "I_autoimagen",
           "tipo": "micro"
         }
@@ -347,6 +377,36 @@
           "texto": "Procedimiento clínico global que organiza la intervención en una secuencia progresiva de recuperación de la agencia, comenzando por tareas simples con alta probabilidad de éxito y avanzando hacia situaciones más complejas. El objetivo es reconstruir una identidad basada en la capacidad de influir en el entorno, integrando cambios conductuales, cognitivos y emocionales. (Peterson et al., 1993).",
           "sub": "I_autoimagen",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "one-session-treatment-ost-1989",
+      "modelLabel": "One-Session Treatment (OST)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Lars-Göran Öst",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_ost_cierre",
+          "nombre": "Cierre con consolidación de autoeficacia",
+          "texto": "Procedimiento final en el que se revisa lo logrado durante la sesión, destacando explícitamente la capacidad del paciente para afrontar el miedo y la evidencia acumulada contra sus creencias previas. Se consolida una narrativa de eficacia personal que facilita el mantenimiento del cambio tras la intervención intensiva. Referencia: Öst, L.-G. (2012).",
+          "sub": "I_autoimagen",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ost_control",
+          "nombre": "Anclar percepción de control",
+          "texto": "Intervención que dirige la atención del paciente hacia su propia capacidad de mantenerse en la situación, reforzando la experiencia de control interno en lugar de atribuir el cambio a factores externos. Referencia: Öst, L.-G. (1989).",
+          "sub": "I_autoimagen",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ost_sintesis",
+          "nombre": "Cierre con síntesis experiencial",
+          "texto": "Microintervención final que organiza verbalmente la experiencia vivida durante la sesión, integrando lo ocurrido en una narrativa de cambio que refuerza la autoeficacia y facilita la generalización posterior. Referencia: Öst, L.-G. (2012).",
+          "sub": "I_autoimagen",
+          "tipo": "micro"
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-04-18T08:09:19.414Z",
-  "totalModelos": 57,
+  "updatedAt": "2026-04-18T09:50:55.742Z",
+  "totalModelos": 59,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -352,6 +352,29 @@
           "texto": "Aplicación progresiva de la jerarquía mediante evocación imaginal de los estímulos mientras se mantiene la respuesta de relajación, repitiendo cada ítem hasta que la ansiedad se inhibe de forma consistente. Constituye el núcleo del procedimiento de contracondicionamiento. Referencia: Wolpe (1958), *Psychotherapy by Reciprocal Inhibition*.",
           "sub": "AP_evocacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "one-session-treatment-ost-1989",
+      "modelLabel": "One-Session Treatment (OST)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Lars-Göran Öst",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_ost_exposicion_intensiva",
+          "nombre": "Exposición en vivo intensiva y prolongada",
+          "texto": "Procedimiento central del modelo que consiste en la exposición directa, continua y sin interrupciones al estímulo temido durante una sesión prolongada, manteniendo el contacto hasta que se produce una reducción significativa del miedo y una desconfirmación clara de las expectativas catastróficas. La clave es la continuidad, evitando pausas que interfieran con el aprendizaje, y asegurando que la experiencia correctiva sea lo suficientemente intensa para consolidar el cambio. Referencia: Öst, L.-G. (1989, 2012).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ost_focalizar_estimulo",
+          "nombre": "Focalizar el estímulo temido",
+          "texto": "Microintervención dirigida a mantener la atención del paciente en el estímulo fóbico sin permitir desvíos atencionales, asegurando que la activación emocional necesaria para el aprendizaje ocurra de forma sostenida. Se corrige activamente la evitación encubierta como mirar a otro lado o distraerse cognitivamente. Referencia: Öst, L.-G. (1989).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -976,7 +999,7 @@
       ]
     },
     {
-      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelId": "rupturas-reparacion-alianza-safran-muran-2000",
       "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
       "modelGrupo": "Integrativo",
       "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
@@ -1254,6 +1277,50 @@
           "codigo": "m_freud_invitarAsociar",
           "nombre": "Invitar a asociar sin censura",
           "texto": "Recordar activamente la regla fundamental de decir todo lo que venga a la mente para reducir la autocensura.",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoanalisis-clasico-freud",
+      "modelLabel": "Psicoanálisis clásico (Freud)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Sigmund Freud",
+      "modelYear": 1896,
+      "items": [
+        {
+          "codigo": "p_freud_asociacion",
+          "nombre": "Asociación libre y atención flotante",
+          "texto": "Se invita al paciente a decir todo lo que le venga a la mente sin censura, incluyendo ideas aparentemente irrelevantes, vergonzosas o contradictorias, mientras el analista escucha con atención flotante para captar conexiones, desplazamientos, silencios y puntos de resistencia.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_suenos",
+          "nombre": "Análisis de sueños",
+          "texto": "Se exploran los sueños como formaciones simbólicas donde se expresan deseos y conflictos reprimidos, analizando condensación, desplazamiento, figurabilidad y elaboración secundaria para reconstruir el contenido latente.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_recuerdos_encubridores",
+          "nombre": "Trabajo con recuerdos encubridores",
+          "texto": "Se exploran recuerdos infantiles vívidos pero aparentemente triviales como posibles formaciones que encubren material más conflictivo, investigando su composición, afecto asociado y asociaciones actuales.",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_freud_invitarAsociar",
+          "nombre": "Invitar a asociar sin censura",
+          "texto": "Recordar activamente la regla fundamental de decir todo lo que venga a la mente, reduciendo autocensura y selección deliberada.",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_topo_ocurrencia",
+          "nombre": "Explorar una ocurrencia emergente",
+          "texto": "Detenerse en una palabra, imagen o idea fugaz antes de que sea racionalizada, aprovechando material preconsciente en tránsito.",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }

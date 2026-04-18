@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-04-18T08:09:19.414Z",
-  "totalModelos": 114,
+  "updatedAt": "2026-04-18T09:50:55.742Z",
+  "totalModelos": 116,
   "modelos": [
     {
       "modelId": "medicina-tradicional-china-psicoemocional-1950",
@@ -1301,6 +1301,50 @@
       ]
     },
     {
+      "modelId": "one-session-treatment-ost-1989",
+      "modelLabel": "One-Session Treatment (OST)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Lars-Göran Öst",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_ost_eliminacion_seguridad",
+          "nombre": "Eliminación activa de conductas de seguridad",
+          "texto": "Procedimiento dirigido a identificar y bloquear estrategias sutiles de evitación o control (mirar hacia otro lado, tensar el cuerpo, distraerse mentalmente) que impiden el aprendizaje correctivo. El terapeuta interviene activamente para que el paciente se exponga de forma plena, favoreciendo la desconfirmación real de las expectativas de peligro. Referencia: Öst, L.-G. (1997).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ost_afrontamiento",
+          "nombre": "Entrenamiento en afrontamiento activo",
+          "texto": "Procedimiento mediante el cual el paciente aprende a adoptar una postura activa frente al miedo, enfrentándose deliberadamente al estímulo en lugar de evitarlo o resistirse pasivamente. Se refuerza la idea de que el cambio depende de su propia acción, consolidando la percepción de autoeficacia y control sobre la situación temida. Referencia: Öst, L.-G. (1989).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ost_cierre",
+          "nombre": "Cierre con consolidación de autoeficacia",
+          "texto": "Procedimiento final en el que se revisa lo logrado durante la sesión, destacando explícitamente la capacidad del paciente para afrontar el miedo y la evidencia acumulada contra sus creencias previas. Se consolida una narrativa de eficacia personal que facilita el mantenimiento del cambio tras la intervención intensiva. Referencia: Öst, L.-G. (2012).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ost_prevenir_escape",
+          "nombre": "Prevenir escape conductual inmediato",
+          "texto": "Intervención directa para impedir que el paciente abandone la situación en momentos de pico de ansiedad, ayudándole a mantenerse el tiempo suficiente para que ocurra el aprendizaje correctivo. Referencia: Öst, L.-G. (1989).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ost_control",
+          "nombre": "Anclar percepción de control",
+          "texto": "Intervención que dirige la atención del paciente hacia su propia capacidad de mantenerse en la situación, reforzando la experiencia de control interno en lugar de atribuir el cambio a factores externos. Referencia: Öst, L.-G. (1989).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "pe-prolonged-exposure-1986",
       "modelLabel": "PE – Prolonged Exposure",
       "modelGrupo": "Conductismo",
@@ -1502,6 +1546,22 @@
           "codigo": "m_janoff_accion_significado",
           "nombre": "Anclar significado en acción",
           "texto": "Microintervención que traduce el proceso de reconstrucción de sentido en pequeñas decisiones o acciones coherentes con los nuevos significados emergentes. Evita que el trabajo quede solo en el plano cognitivo y facilita integración práctica en la vida cotidiana. Referencia: Park, C. L. (2010); Tedeschi & Calhoun (2004).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicologia-constructos-familiares-procter-1981",
+      "modelLabel": "Psicología de constructos familiares",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Harry G. Procter",
+      "modelYear": 1981,
+      "items": [
+        {
+          "codigo": "m_procter_excepciones_posicion",
+          "nombre": "Resaltar excepciones a una posición fija",
+          "texto": "Microintervención que busca momentos concretos en los que un miembro no ocupó el lugar habitual que la familia le asigna, por ejemplo cuando el frágil sostuvo, el distante se acercó o el problemático cooperó. Estas excepciones muestran que la posición no es una esencia sino una construcción estabilizada y, por tanto, modificable. Referencia: Procter (1985).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }
@@ -2126,7 +2186,7 @@
       ]
     },
     {
-      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelId": "rupturas-reparacion-alianza-safran-muran-2000",
       "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
       "modelGrupo": "Integrativo",
       "modelAutores": "Jeremy D. Safran; J. Christopher Muran",

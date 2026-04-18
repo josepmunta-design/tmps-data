@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-04-18T08:09:19.414Z",
-  "totalModelos": 87,
+  "updatedAt": "2026-04-18T09:50:55.742Z",
+  "totalModelos": 89,
   "modelos": [
     {
       "modelId": "taoismo-psicologia-puentes-1980",
@@ -157,6 +157,22 @@
           "texto": "Microintervención de traducir señales tempranas en reglas conductuales concretas (p. ej., “si noto rumiación + cansancio, entonces 3 minutos + caminar 10 min + avisar a X”) para reducir ambivalencia y acelerar respuesta eficaz. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "modelLabel": "Modelo cognitivo de la fobia social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark; Adrian Wells",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_clarkwells_predicciones",
+          "nombre": "Entrenamiento en predicciones específicas y contraste con resultados",
+          "texto": "Procedimiento en el que el paciente formula predicciones concretas antes de una situación social (qué pasará, cómo reaccionarán los demás) y posteriormente compara esas predicciones con los resultados reales, facilitando la toma de conciencia de sesgos cognitivos y la actualización de creencias. Este contraste sistemático es clave para debilitar la convicción en las expectativas negativas. Referencia: Clark et al. (2003).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -1026,6 +1042,29 @@
           "codigo": "m_bandura_segmentacion",
           "nombre": "Segmentación de la conducta en pasos",
           "texto": "División de la conducta en unidades manejables que el paciente puede reproducir progresivamente, reduciendo la complejidad y aumentando la probabilidad de éxito inicial. Referencia: Bandura (1986).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "one-session-treatment-ost-1989",
+      "modelLabel": "One-Session Treatment (OST)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Lars-Göran Öst",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_ost_jerarquia",
+          "nombre": "Construcción de jerarquía de exposición flexible",
+          "texto": "Procedimiento que organiza los estímulos temidos en un continuo de dificultad, desde los menos hasta los más ansiógenos, pero con una lógica flexible que permite avanzar rápidamente dentro de la misma sesión. A diferencia de enfoques tradicionales, la jerarquía no se sigue de forma rígida, sino como guía dinámica que se adapta al progreso del paciente durante la exposición intensiva. Referencia: Öst, L.-G. (1997).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ost_fragmentacion",
+          "nombre": "Fragmentar la tarea en pasos manejables",
+          "texto": "Cuando la tarea es percibida como excesiva, se divide en pasos más pequeños dentro de la misma exposición, facilitando la progresión sin romper la continuidad del proceso. Referencia: Öst, L.-G. (1997).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

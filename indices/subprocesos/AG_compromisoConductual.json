@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-04-18T08:09:19.414Z",
-  "totalModelos": 135,
+  "updatedAt": "2026-04-18T09:50:55.742Z",
+  "totalModelos": 138,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -744,6 +744,50 @@
           "codigo": "m_mbct_microaccion_respuesta",
           "nombre": "Elegir respuesta pequeña (micro-acción anti-espiral)",
           "texto": "Microintervención de seleccionar una acción mínima y concreta tras notar señales tempranas (paseo breve, ducha consciente, llamar a alguien, ordenar una tarea simple) para prevenir retirada/apatía y consolidar ‘responder’ frente a ‘reaccionar’. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "modelLabel": "Modelo cognitivo de la fobia social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark; Adrian Wells",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_clarkwells_eliminar_seguridad",
+          "nombre": "Eliminación sistemática de conductas de seguridad",
+          "texto": "Procedimiento central que consiste en identificar y eliminar gradualmente las conductas de seguridad que el paciente utiliza en situaciones sociales (por ejemplo, evitar mirar, ensayar frases, controlar postura o voz), demostrando mediante experimentos conductuales que estas conductas no previenen el rechazo y, de hecho, lo mantienen. La eliminación permite que el paciente acceda a evidencia real sobre su desempeño social y reduzca la dependencia de estrategias defensivas. Referencia: Clark & Wells (1995); Clark et al. (2003).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clarkwells_experimentos",
+          "nombre": "Experimentos conductuales para testear creencias sociales",
+          "texto": "Procedimiento experimental en el que se diseñan y ejecutan situaciones sociales reales o simuladas para poner a prueba predicciones negativas específicas (por ejemplo, “si me equivoco, pensarán que soy incompetente”), manipulando variables como el uso o no de conductas de seguridad o el foco atencional. El objetivo no es exposición pasiva, sino generar evidencia directa que contradiga las creencias disfuncionales y facilite su modificación. Referencia: Clark et al. (2003); Clark (2001).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clarkwells_soltar_seguridad",
+          "nombre": "Invitar a soltar una conducta de seguridad",
+          "texto": "Propuesta concreta y puntual de dejar de usar una conducta de seguridad en una situación específica (por ejemplo, mantener contacto visual o dejar de ensayar), facilitando experiencias correctivas directas. Referencia: Clark et al. (2003).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clarkwells_foco_tarea",
+          "nombre": "Externalizar foco en la tarea conversacional",
+          "texto": "Microintervención que orienta al paciente a centrarse en el objetivo de la interacción (escuchar, responder, conectar) en lugar de en su desempeño interno, favoreciendo un funcionamiento más natural y menos autoevaluativo. Referencia: Clark (2001).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clarkwells_soltar_control",
+          "nombre": "Reducir control excesivo del comportamiento",
+          "texto": "Invitación puntual a dejar de monitorizar o controlar aspectos de la conducta (tono de voz, postura, palabras), permitiendo un comportamiento más espontáneo y reduciendo carga cognitiva. Referencia: Clark & Wells (1995).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
@@ -2442,6 +2486,50 @@
       ]
     },
     {
+      "modelId": "one-session-treatment-ost-1989",
+      "modelLabel": "One-Session Treatment (OST)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Lars-Göran Öst",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_ost_modelado",
+          "nombre": "Modelado participante",
+          "texto": "Procedimiento en el que el terapeuta realiza primero las conductas de afrontamiento frente al estímulo temido, mostrando de forma explícita que no ocurre la consecuencia catastrófica. El paciente observa y posteriormente replica la conducta, reduciendo incertidumbre y facilitando la aproximación progresiva, especialmente en niveles iniciales de exposición. Referencia: Öst, L.-G. (1989).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ost_afrontamiento",
+          "nombre": "Entrenamiento en afrontamiento activo",
+          "texto": "Procedimiento mediante el cual el paciente aprende a adoptar una postura activa frente al miedo, enfrentándose deliberadamente al estímulo en lugar de evitarlo o resistirse pasivamente. Se refuerza la idea de que el cambio depende de su propia acción, consolidando la percepción de autoeficacia y control sobre la situación temida. Referencia: Öst, L.-G. (1989).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ost_generalizacion",
+          "nombre": "Generalización de la exposición dentro de la sesión",
+          "texto": "Procedimiento que introduce variaciones del estímulo o del contexto durante la misma sesión intensiva para evitar que el aprendizaje quede restringido a una situación específica. Se busca que el paciente enfrente múltiples versiones del estímulo temido, facilitando la transferencia del aprendizaje a la vida real. Referencia: Öst, L.-G. (1997).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ost_refuerzo_afrontamiento",
+          "nombre": "Refuerzo inmediato del afrontamiento",
+          "texto": "Intervención breve de validación cuando el paciente se acerca al estímulo temido o mantiene la exposición, reforzando la conducta de afrontamiento sin sobreproteger ni reducir la exigencia de la tarea. Referencia: Öst, L.-G. (1989).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ost_modelado_puntual",
+          "nombre": "Modelado puntual en momentos de bloqueo",
+          "texto": "Cuando el paciente se bloquea, el terapeuta realiza brevemente la conducta temida para demostrar su seguridad, facilitando la reanudación de la exposición sin prolongar la dependencia del modelado. Referencia: Öst, L.-G. (1997).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "pe-prolonged-exposure-1986",
       "modelLabel": "PE – Prolonged Exposure",
       "modelGrupo": "Conductismo",
@@ -2803,6 +2891,36 @@
           "codigo": "m_ugazio_experimentosMinimos",
           "nombre": "Diseño de experimentos semánticos mínimos",
           "texto": "Propuesta de acciones pequeñas y reversibles que permitan probar una nueva posición del self y observar cómo cambia el significado relacional, reduciendo miedo al error y favoreciendo aprendizaje experiencial. (Ugazio, 2013)",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicologia-constructos-familiares-procter-1981",
+      "modelLabel": "Psicología de constructos familiares",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Harry G. Procter",
+      "modelYear": 1981,
+      "items": [
+        {
+          "codigo": "p_procter_flexibilizacion_roles",
+          "nombre": "Flexibilización de roles y posiciones familiares rígidas",
+          "texto": "Procedimiento mediante el cual se cuestiona la aparente inevitabilidad de ciertos roles familiares estabilizados —por ejemplo, el fuerte, la vulnerable, el problemático o el mediador— y se exploran posiciones relacionales alternativas que no desorganicen al sistema pero sí amplíen su margen de funcionamiento. Se busca que los miembros puedan actuar de manera distinta sin sentir que traicionan la coherencia familiar, permitiendo cambios conductuales sostenibles porque van acompañados de una reconstrucción del significado del rol. Referencia: Procter (1985); Procter & Winter (2020).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_procter_experimentacion_relacional",
+          "nombre": "Ampliación del repertorio relacional mediante experimentación en sesión",
+          "texto": "Procedimiento experiencial en el que se prueban en sesión nuevas formas de posicionarse, responder, preguntar o validar al otro, con el fin de que el sistema experimente alternativas relacionales distintas de las habituales. Estas pequeñas reorganizaciones no se plantean como técnica estratégica externa, sino como ensayo de nuevas construcciones posibles del vínculo, permitiendo que emerjan configuraciones menos rígidas y más viables para todos los miembros. Referencia: Procter (1985); Procter & Winter (2020).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_procter_ensayo_nueva_posicion",
+          "nombre": "Invitar a ensayar una respuesta desde otra posición",
+          "texto": "Microintervención experiencial que propone a un miembro responder en sesión desde una posición relacional menos habitual —por ejemplo, más diferenciada, más directa o menos defensiva— para comprobar qué cambia en la secuencia familiar. Se usa como pequeño experimento de reorganización del significado relacional en acto. Referencia: Procter (1985); Procter & Winter (2020).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-04-18T08:09:19.414Z",
-  "totalModelos": 59,
+  "updatedAt": "2026-04-18T09:50:55.742Z",
+  "totalModelos": 62,
   "modelos": [
     {
       "modelId": "meditacion-seon-zen-contextos-terapeuticos-corea-1985",
@@ -457,6 +457,43 @@
           "texto": "Procedimiento para mapear qué hace la persona cuando se siente mal (evitar, aislarse, rumiar, anestesiarse) y cómo eso alivia a corto plazo pero mantiene a largo plazo. Se entrenan alternativas basadas en aproximación mindful (permitir sentir, volver al cuerpo, acción pequeña con sentido) y se refuerza el aprendizaje por evidencia personal. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "RE_prevEvitacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "modelLabel": "Modelo cognitivo de la fobia social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark; Adrian Wells",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_clarkwells_eliminar_seguridad",
+          "nombre": "Eliminación sistemática de conductas de seguridad",
+          "texto": "Procedimiento central que consiste en identificar y eliminar gradualmente las conductas de seguridad que el paciente utiliza en situaciones sociales (por ejemplo, evitar mirar, ensayar frases, controlar postura o voz), demostrando mediante experimentos conductuales que estas conductas no previenen el rechazo y, de hecho, lo mantienen. La eliminación permite que el paciente acceda a evidencia real sobre su desempeño social y reduzca la dependencia de estrategias defensivas. Referencia: Clark & Wells (1995); Clark et al. (2003).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clarkwells_postevento",
+          "nombre": "Reducción del procesamiento post-evento",
+          "texto": "Procedimiento orientado a identificar y reducir la rumiación posterior a situaciones sociales, ayudando al paciente a reconocer su carácter sesgado y a interrumpirla mediante estrategias metacognitivas, reorientación atencional o limitación temporal. El objetivo es evitar la consolidación de recuerdos negativos distorsionados que mantienen la ansiedad futura. Referencia: Clark & Wells (1995); Clark (2001).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clarkwells_detectar_seguridad",
+          "nombre": "Identificar conductas de seguridad en vivo",
+          "texto": "Microintervención consistente en señalar en el momento conductas de seguridad que el paciente está utilizando (evitar mirar, controlar voz, ensayar mentalmente), aumentando conciencia sobre estrategias que pasan desapercibidas pero mantienen la ansiedad. Referencia: Clark & Wells (1995).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clarkwells_parar_rumiacion",
+          "nombre": "Interrumpir rumiación post-evento",
+          "texto": "Intervención breve que ayuda al paciente a detectar cuándo empieza a revisar mentalmente una interacción social y a cortar el proceso mediante redirección atencional o limitación temporal, evitando consolidación de sesgos negativos. Referencia: Clark (2001).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -1125,6 +1162,43 @@
       ]
     },
     {
+      "modelId": "one-session-treatment-ost-1989",
+      "modelLabel": "One-Session Treatment (OST)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Lars-Göran Öst",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_ost_exposicion_intensiva",
+          "nombre": "Exposición en vivo intensiva y prolongada",
+          "texto": "Procedimiento central del modelo que consiste en la exposición directa, continua y sin interrupciones al estímulo temido durante una sesión prolongada, manteniendo el contacto hasta que se produce una reducción significativa del miedo y una desconfirmación clara de las expectativas catastróficas. La clave es la continuidad, evitando pausas que interfieran con el aprendizaje, y asegurando que la experiencia correctiva sea lo suficientemente intensa para consolidar el cambio. Referencia: Öst, L.-G. (1989, 2012).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ost_eliminacion_seguridad",
+          "nombre": "Eliminación activa de conductas de seguridad",
+          "texto": "Procedimiento dirigido a identificar y bloquear estrategias sutiles de evitación o control (mirar hacia otro lado, tensar el cuerpo, distraerse mentalmente) que impiden el aprendizaje correctivo. El terapeuta interviene activamente para que el paciente se exponga de forma plena, favoreciendo la desconfirmación real de las expectativas de peligro. Referencia: Öst, L.-G. (1997).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ost_bloqueo_evitacion",
+          "nombre": "Bloquear evitación sutil en tiempo real",
+          "texto": "Intervención directa para detectar y cortar conductas de seguridad encubiertas como tensar el cuerpo, cerrar los ojos o controlar la respiración, que interfieren con la exposición efectiva. El terapeuta señala y corrige estas conductas inmediatamente para mantener la exposición plena. Referencia: Öst, L.-G. (1997).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ost_prevenir_escape",
+          "nombre": "Prevenir escape conductual inmediato",
+          "texto": "Intervención directa para impedir que el paciente abandone la situación en momentos de pico de ansiedad, ayudándole a mantenerse el tiempo suficiente para que ocurra el aprendizaje correctivo. Referencia: Öst, L.-G. (1989).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "apego-desorganizado-disociacion-liotti-1992",
       "modelLabel": "Modelo de apego desorganizado, disociación y sistemas motivacionales",
       "modelGrupo": "Constructivista",
@@ -1552,6 +1626,29 @@
           "codigo": "m_freud_senalResistencia",
           "nombre": "Señalar un punto de resistencia",
           "texto": "Marcar con tacto cambios de tema, silencios o racionalizaciones para abrir curiosidad clínica.",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoanalisis-clasico-freud",
+      "modelLabel": "Psicoanálisis clásico (Freud)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Sigmund Freud",
+      "modelYear": 1896,
+      "items": [
+        {
+          "codigo": "p_freud_resistencias",
+          "nombre": "Análisis de resistencias",
+          "texto": "Se identifican bloqueos, silencios, racionalizaciones, cambios de tema, olvidos o intelectualizaciones y se explora qué afecto, deseo o significado se vuelve intolerable y qué función protectora cumple la resistencia.",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_freud_senalResistencia",
+          "nombre": "Señalar un punto de resistencia",
+          "texto": "Marcar con tacto silencios, cambios de tema, racionalizaciones o bloqueos para abrir curiosidad clínica sobre la función defensiva del momento.",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

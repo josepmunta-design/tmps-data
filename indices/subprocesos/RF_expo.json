@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_expo",
-  "updatedAt": "2026-04-18T08:09:19.414Z",
-  "totalModelos": 8,
+  "updatedAt": "2026-04-18T09:50:55.742Z",
+  "totalModelos": 9,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -129,6 +129,50 @@
           "codigo": "m_pavlov_extincion_prolongada",
           "nombre": "Extinción con presentaciones prolongadas del EC",
           "texto": "Mantener el EC el tiempo suficiente y repetirlo las veces necesarias para permitir descenso de RC y aprendizaje inhibitorio, evitando exposiciones demasiado breves que mantienen la respuesta. Referencia: Bouton (2004).",
+          "sub": "RF_expo",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "one-session-treatment-ost-1989",
+      "modelLabel": "One-Session Treatment (OST)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Lars-Göran Öst",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_ost_exposicion_intensiva",
+          "nombre": "Exposición en vivo intensiva y prolongada",
+          "texto": "Procedimiento central del modelo que consiste en la exposición directa, continua y sin interrupciones al estímulo temido durante una sesión prolongada, manteniendo el contacto hasta que se produce una reducción significativa del miedo y una desconfirmación clara de las expectativas catastróficas. La clave es la continuidad, evitando pausas que interfieran con el aprendizaje, y asegurando que la experiencia correctiva sea lo suficientemente intensa para consolidar el cambio. Referencia: Öst, L.-G. (1989, 2012).",
+          "sub": "RF_expo",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ost_generalizacion",
+          "nombre": "Generalización de la exposición dentro de la sesión",
+          "texto": "Procedimiento que introduce variaciones del estímulo o del contexto durante la misma sesión intensiva para evitar que el aprendizaje quede restringido a una situación específica. Se busca que el paciente enfrente múltiples versiones del estímulo temido, facilitando la transferencia del aprendizaje a la vida real. Referencia: Öst, L.-G. (1997).",
+          "sub": "RF_expo",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ost_incremento_intensidad",
+          "nombre": "Aumentar gradualmente la intensidad sin cortar exposición",
+          "texto": "Microajuste continuo que consiste en incrementar la proximidad o intensidad del estímulo temido sin interrumpir la exposición, manteniendo la activación dentro de un rango tolerable pero eficaz. Evita tanto el desbordamiento como la infraactivación, optimizando el aprendizaje. Referencia: Öst, L.-G. (1989, 2012).",
+          "sub": "RF_expo",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ost_mantener_exposicion",
+          "nombre": "Mantener exposición hasta reducción significativa del miedo",
+          "texto": "Intervención que evita terminar la exposición prematuramente, sosteniéndola hasta que se produce una reducción clara de la ansiedad o una desconfirmación relevante, impidiendo el refuerzo de la evitación y consolidando el aprendizaje correctivo. Referencia: Öst, L.-G. (1997).",
+          "sub": "RF_expo",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ost_variacion_contexto",
+          "nombre": "Variar el contexto durante la exposición",
+          "texto": "Introducción de pequeñas variaciones en el entorno o en la forma del estímulo para evitar aprendizaje específico de contexto y favorecer la generalización del cambio. Referencia: Öst, L.-G. (2012).",
           "sub": "RF_expo",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_reapreciacion",
-  "updatedAt": "2026-04-18T08:09:19.414Z",
-  "totalModelos": 26,
+  "updatedAt": "2026-04-18T09:50:55.742Z",
+  "totalModelos": 28,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -126,6 +126,29 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "modelLabel": "Modelo cognitivo de la fobia social",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark; Adrian Wells",
+      "modelYear": 1995,
+      "items": [
+        {
+          "codigo": "p_clarkwells_sensaciones",
+          "nombre": "Entrenamiento en reinterpretación de sensaciones físicas",
+          "texto": "Procedimiento dirigido a modificar la interpretación catastrófica de las sensaciones fisiológicas de ansiedad (rubor, sudoración, temblor), ayudando al paciente a entenderlas como respuestas normales y no como señales de fracaso social. Esto reduce la fusión entre activación corporal y significado negativo, disminuyendo la ansiedad anticipatoria y en situación. Referencia: Clark & Wells (1995).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clarkwells_normalizar_sensaciones",
+          "nombre": "Normalizar sensaciones de ansiedad",
+          "texto": "Intervención breve que redefine las sensaciones físicas (rubor, temblor) como respuestas normales del sistema nervioso y no como señales de fallo social, reduciendo su impacto interpretativo negativo. Referencia: Clark & Wells (1995).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "modelo-cognitivo-panico-clark-1986",
       "modelLabel": "Modelo cognitivo del pánico",
       "modelGrupo": "Cognitivo",
@@ -231,6 +254,29 @@
           "codigo": "m_ruler_reapreciacion_simple",
           "nombre": "Reapreciación simple contextual",
           "texto": "Pequeño ajuste interpretativo inmediato (“quizá no fue intencional”, “puede ser un malentendido”) que reduce intensidad emocional sin negar la experiencia. Esta microintervención favorece regulación flexible y previene escalada interpersonal. Referencia: Mayer, Salovey & Caruso (2004); Brackett (2019).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "one-session-treatment-ost-1989",
+      "modelLabel": "One-Session Treatment (OST)",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Lars-Göran Öst",
+      "modelYear": 1989,
+      "items": [
+        {
+          "codigo": "p_ost_modelado",
+          "nombre": "Modelado participante",
+          "texto": "Procedimiento en el que el terapeuta realiza primero las conductas de afrontamiento frente al estímulo temido, mostrando de forma explícita que no ocurre la consecuencia catastrófica. El paciente observa y posteriormente replica la conducta, reduciendo incertidumbre y facilitando la aproximación progresiva, especialmente en niveles iniciales de exposición. Referencia: Öst, L.-G. (1989).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ost_modelado_puntual",
+          "nombre": "Modelado puntual en momentos de bloqueo",
+          "texto": "Cuando el paciente se bloquea, el terapeuta realiza brevemente la conducta temida para demostrar su seguridad, facilitando la reanudación de la exposición sin prolongar la dependencia del modelado. Referencia: Öst, L.-G. (1997).",
           "sub": "RE_reapreciacion",
           "tipo": "micro"
         }

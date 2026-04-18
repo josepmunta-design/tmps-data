@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_insightPsicodinamico",
-  "updatedAt": "2026-04-18T08:09:19.414Z",
-  "totalModelos": 27,
+  "updatedAt": "2026-04-18T09:50:55.742Z",
+  "totalModelos": 28,
   "modelos": [
     {
       "modelId": "psicoterapia-del-han-1990",
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelId": "rupturas-reparacion-alianza-safran-muran-2000",
       "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
       "modelGrupo": "Integrativo",
       "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
@@ -539,6 +539,113 @@
           "codigo": "m_freud_interpretacionTentativa",
           "nombre": "Hipótesis interpretativa tentativa",
           "texto": "Ofrecer una interpretación no dogmática que se contrasta con la experiencia del paciente.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "psicoanalisis-clasico-freud",
+      "modelLabel": "Psicoanálisis clásico (Freud)",
+      "modelGrupo": "Psicoanálisis",
+      "modelAutores": "Sigmund Freud",
+      "modelYear": 1896,
+      "items": [
+        {
+          "codigo": "p_freud_transferencia",
+          "nombre": "Trabajo con la transferencia",
+          "texto": "Se examina cómo el paciente reactualiza en el vínculo terapéutico expectativas, afectos, defensas y patrones relacionales internalizados, utilizando la transferencia como material clínico vivo.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_interpretacion_latente",
+          "nombre": "Interpretación del contenido manifiesto y latente",
+          "texto": "Se distingue entre lo que aparece directamente en sueños, lapsus, síntomas o relatos y el significado latente subyacente, reconstruyéndolo mediante asociaciones y no mediante símbolos universales prefijados.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_suenos",
+          "nombre": "Análisis de sueños",
+          "texto": "Se exploran los sueños como formaciones simbólicas donde se expresan deseos y conflictos reprimidos, analizando condensación, desplazamiento, figurabilidad y elaboración secundaria para reconstruir el contenido latente.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_lapsus",
+          "nombre": "Análisis de lapsus y actos fallidos",
+          "texto": "Se utilizan errores verbales, olvidos, pérdidas y equivocaciones como vías indirectas de acceso al conflicto inconsciente y a determinantes psíquicos no reconocidos.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_topo_recuerdos_encubridores",
+          "nombre": "Trabajo con recuerdos encubridores",
+          "texto": "Se exploran recuerdos infantiles vívidos pero aparentemente triviales como posibles formaciones que encubren material más conflictivo, investigando su composición, afecto asociado y asociaciones actuales.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_interpretacion_estructural",
+          "nombre": "Interpretación del conflicto estructural (Ello–Yo–Superyó)",
+          "texto": "Se formulan hipótesis clínicas sobre cómo se organiza el conflicto entre impulsos, defensas y exigencias normativas, conectándolo con síntomas, angustia, culpa y repetición.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_freud_defensas_yo",
+          "nombre": "Análisis de defensas del Yo",
+          "texto": "Se identifican defensas predominantes, su función protectora y sus costes clínicos, buscando flexibilizarlas más que suprimirlas de forma directa.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_freud_interpretacionTentativa",
+          "nombre": "Hipótesis interpretativa tentativa",
+          "texto": "Ofrecer una interpretación en forma de posibilidad y no de sentencia, contrastándola con la experiencia del paciente para mantener precisión y alianza.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_topo_lapsus_momento",
+          "nombre": "Leer un lapsus en el momento",
+          "texto": "Tomar un error verbal u olvido inmediato como pista clínica e invitar a asociar sobre él sin cerrar el sentido prematuramente.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_topo_contradiccion",
+          "nombre": "Señalar una contradicción del relato",
+          "texto": "Poner en evidencia una incoherencia, cambio de versión o ambigüedad como posible indicio de tensión entre distintos niveles de la vida psíquica.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_triangulo_deseo_defensa_angustia",
+          "nombre": "Clarificar el triángulo deseo-defensa-angustia",
+          "texto": "Ayudar a discriminar qué deseo o impulso se activa, qué defensa aparece y qué forma de angustia o culpa emerge como señal.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_hipotesis_superyo_punitivo",
+          "nombre": "Hipótesis de Superyó punitivo",
+          "texto": "Formular con tacto la posibilidad de que autoacusación, vergüenza o necesidad de castigo expresen severidad superyoica internalizada.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_vinculo_repeticion_historia",
+          "nombre": "Vincular patrón actual con repetición histórica",
+          "texto": "Enlazar un episodio presente con un patrón repetido en la biografía para convertir la repetición en material pensable.",
+          "sub": "N_insightPsicodinamico",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_freud_nombrar_ambivalencia",
+          "nombre": "Nombrar la ambivalencia",
+          "texto": "Hacer explícita la coexistencia de tendencias opuestas como amor-rabia, deseo-miedo o autonomía-lealtad, reduciendo la necesidad de defensas polarizadoras.",
           "sub": "N_insightPsicodinamico",
           "tipo": "micro"
         }
