@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_reformulacion",
-  "updatedAt": "2026-04-18T09:50:55.742Z",
-  "totalModelos": 123,
+  "updatedAt": "2026-04-18T09:58:21.207Z",
+  "totalModelos": 124,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -463,6 +463,50 @@
           "codigo": "m_fap_feedback_impacto",
           "nombre": "Feedback sobre impacto interpersonal",
           "texto": "Describir cómo una conducta del paciente afecta al terapeuta en ese momento, permitiendo que el paciente observe consecuencias interpersonales reales y modifique su repertorio conductual desde la experiencia directa. Referencia: Kohlenberg & Tsai (1991).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "inference-based-cbt-aardema-2010",
+      "modelLabel": "Inference-Based Cognitive Behavioral Therapy (I-CBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Frederick Aardema; Kieron O’Connor",
+      "modelYear": 2010,
+      "items": [
+        {
+          "codigo": "p_icbt_desmantelar_inferencias",
+          "nombre": "Desmantelamiento de inferencias erróneas",
+          "texto": "Procedimiento dirigido a cuestionar activamente las inferencias que sostienen la obsesión, no en términos de probabilidad, sino en términos de origen: si provienen de la percepción o de la imaginación. Se analizan las premisas implícitas y se muestra cómo la conclusión obsesiva depende de aceptar una posibilidad como si fuera evidencia. El objetivo es debilitar la cadena inferencial desde su base. Referencia: Aardema & O’Connor (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_icbt_rechazo_posibilidad",
+          "nombre": "Entrenamiento en rechazo de la posibilidad irrelevante",
+          "texto": "Procedimiento que entrena a la persona a no conceder relevancia a posibilidades que no están sustentadas en la percepción. En lugar de evaluar su probabilidad o neutralizarlas, se trabaja en descartarlas directamente como base para la acción. Esto implica un cambio clave: dejar de responder a lo posible y empezar a responder a lo real. Referencia: O’Connor, Aardema & Pelissier (2005).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_icbt_desactivar_relevancia",
+          "nombre": "Desactivación de la relevancia subjetiva de la obsesión",
+          "texto": "Procedimiento dirigido a reducir la importancia subjetiva de la obsesión al mostrar que no está basada en la realidad perceptiva. Al perder su estatus de 'posible amenaza real', la obsesión pierde urgencia y carga emocional, lo que disminuye la necesidad de compulsión o comprobación. Referencia: O’Connor, Aardema & Pelissier (2005).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_icbt_posible_vs_real",
+          "nombre": "Marcar la diferencia entre posible y real",
+          "texto": "Microintervención que introduce de forma clara la distinción entre lo que es posible y lo que es real, subrayando que la obsesión se sostiene en lo primero. Se utiliza lenguaje explícito (“eso es posible, pero no está ocurriendo”) para debilitar la equivalencia implícita entre imaginación y realidad. Referencia: O’Connor, Aardema & Pelissier (2005).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_icbt_error_proceso",
+          "nombre": "Reformular como error de proceso",
+          "texto": "Consiste en reinterpretar la obsesión no como un contenido peligroso, sino como un error en el proceso de razonamiento. Esta reformulación reduce la identificación con la obsesión y orienta el foco terapéutico hacia cómo se piensa, no hacia qué se piensa. Referencia: Aardema & O’Connor (2007).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }
@@ -1214,7 +1258,7 @@
     },
     {
       "modelId": "one-session-treatment-ost-1989",
-      "modelLabel": "One-Session Treatment (OST)",
+      "modelLabel": "One-Session Treatment - OST (Fobias)",
       "modelGrupo": "Conductismo",
       "modelAutores": "Lars-Göran Öst",
       "modelYear": 1989,

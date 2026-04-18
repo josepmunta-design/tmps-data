@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_narrativaAutobiografica",
-  "updatedAt": "2026-04-18T09:50:55.742Z",
-  "totalModelos": 63,
+  "updatedAt": "2026-04-18T09:58:21.207Z",
+  "totalModelos": 64,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -158,8 +158,31 @@
       ]
     },
     {
+      "modelId": "inference-based-cbt-aardema-2010",
+      "modelLabel": "Inference-Based Cognitive Behavioral Therapy (I-CBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Frederick Aardema; Kieron O’Connor",
+      "modelYear": 2010,
+      "items": [
+        {
+          "codigo": "p_icbt_narrativa_obsesiva",
+          "nombre": "Análisis de la narrativa obsesiva",
+          "texto": "Procedimiento orientado a reconstruir la historia interna que hace plausible la obsesión. Se examinan los pasos lógicos que conectan una posibilidad remota con una conclusión temida, mostrando cómo la narrativa se sostiene sobre premisas imaginadas. Este análisis permite debilitar la coherencia aparente del relato obsesivo y exponer su desconexión con la realidad perceptiva. Referencia: O’Connor, Aardema & Pelissier (2005).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_icbt_nombrar_narrativa",
+          "nombre": "Nombrar la narrativa obsesiva",
+          "texto": "Intervención que consiste en etiquetar explícitamente el discurso interno como “historia” o “narrativa”, ayudando al paciente a tomar distancia de su contenido. Este etiquetado reduce la fusión cognitiva y permite observar la construcción del pensamiento en lugar de asumirlo como realidad. Referencia: O’Connor, Aardema & Pelissier (2005).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "one-session-treatment-ost-1989",
-      "modelLabel": "One-Session Treatment (OST)",
+      "modelLabel": "One-Session Treatment - OST (Fobias)",
       "modelGrupo": "Conductismo",
       "modelAutores": "Lars-Göran Öst",
       "modelYear": 1989,

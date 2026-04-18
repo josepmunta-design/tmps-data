@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-04-18T09:50:55.742Z",
-  "totalModelos": 139,
+  "updatedAt": "2026-04-18T09:58:21.207Z",
+  "totalModelos": 140,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -765,6 +765,36 @@
           "codigo": "m_ert_sostener_emocion",
           "nombre": "Sostener emoción sin elaboración",
           "texto": "Intervención breve destinada a permanecer con la sensación emocional en el cuerpo durante unos segundos adicionales sin añadir análisis ni juicio, entrenando tolerancia y evitando que la mente amplifique la experiencia mediante rumiación o catastrofización. (Mennin & Fresco, 2014).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "inference-based-cbt-aardema-2010",
+      "modelLabel": "Inference-Based Cognitive Behavioral Therapy (I-CBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Frederick Aardema; Kieron O’Connor",
+      "modelYear": 2010,
+      "items": [
+        {
+          "codigo": "p_icbt_confianza_perceptiva",
+          "nombre": "Restauración de la confianza en los sentidos",
+          "texto": "Procedimiento orientado a reconstruir la confianza del paciente en su experiencia perceptiva directa. Se trabaja reforzando decisiones basadas en lo que se ve, oye o siente en el presente, en lugar de en posibilidades imaginadas. Este proceso reduce la incertidumbre artificial generada por la duda inferencial y estabiliza la relación con la realidad. Referencia: O’Connor & Aardema (2011).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_icbt_desactivar_relevancia",
+          "nombre": "Desactivación de la relevancia subjetiva de la obsesión",
+          "texto": "Procedimiento dirigido a reducir la importancia subjetiva de la obsesión al mostrar que no está basada en la realidad perceptiva. Al perder su estatus de 'posible amenaza real', la obsesión pierde urgencia y carga emocional, lo que disminuye la necesidad de compulsión o comprobación. Referencia: O’Connor, Aardema & Pelissier (2005).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_icbt_reducir_comprobacion",
+          "nombre": "Reducir urgencia de comprobación",
+          "texto": "Microintervención dirigida a disminuir la urgencia emocional asociada a la duda inferencial al recordar que no se basa en evidencia real. Al reducir la carga afectiva, disminuye la necesidad de realizar compulsiones o comprobaciones. Referencia: O’Connor, Aardema & Pelissier (2005).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }
@@ -1840,7 +1870,7 @@
     },
     {
       "modelId": "one-session-treatment-ost-1989",
-      "modelLabel": "One-Session Treatment (OST)",
+      "modelLabel": "One-Session Treatment - OST (Fobias)",
       "modelGrupo": "Conductismo",
       "modelAutores": "Lars-Göran Öst",
       "modelYear": 1989,

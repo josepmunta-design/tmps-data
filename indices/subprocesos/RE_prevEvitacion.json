@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-04-18T09:50:55.742Z",
-  "totalModelos": 62,
+  "updatedAt": "2026-04-18T09:58:21.207Z",
+  "totalModelos": 63,
   "modelos": [
     {
       "modelId": "meditacion-seon-zen-contextos-terapeuticos-corea-1985",
@@ -432,6 +432,29 @@
           "codigo": "m_fap_silencio_evocador",
           "nombre": "Silencio evocador",
           "texto": "Uso deliberado del silencio para aumentar la probabilidad de que emerja una conducta relevante, especialmente cuando el paciente tiende a evitar o intelectualizar, facilitando contacto emocional directo dentro de la relación terapéutica. Referencia: Tsai et al. (2009).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "inference-based-cbt-aardema-2010",
+      "modelLabel": "Inference-Based Cognitive Behavioral Therapy (I-CBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Frederick Aardema; Kieron O’Connor",
+      "modelYear": 2010,
+      "items": [
+        {
+          "codigo": "p_icbt_interrumpir_inferencia",
+          "nombre": "Interrupción del proceso inferencial obsesivo",
+          "texto": "Procedimiento enfocado a detectar en tiempo real el inicio del proceso inferencial obsesivo y detenerlo antes de que se despliegue completamente. Se entrena al paciente a reconocer señales tempranas de entrada en la duda inferencial y a no seguir la cadena narrativa. Esto reduce la consolidación del patrón obsesivo. Referencia: O’Connor & Aardema (2011).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_icbt_interrumpir_y_si",
+          "nombre": "Interrumpir la cadena del ‘¿y si…?’",
+          "texto": "Microintervención dirigida a cortar la progresión de escenarios hipotéticos en el momento en que aparece el primer ‘¿y si…?’. Se entrena al paciente a no seguir desarrollando la cadena narrativa, evitando que la posibilidad gane complejidad y fuerza emocional. Referencia: O’Connor & Aardema (2011).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
@@ -1163,7 +1186,7 @@
     },
     {
       "modelId": "one-session-treatment-ost-1989",
-      "modelLabel": "One-Session Treatment (OST)",
+      "modelLabel": "One-Session Treatment - OST (Fobias)",
       "modelGrupo": "Conductismo",
       "modelAutores": "Lars-Göran Öst",
       "modelYear": 1989,

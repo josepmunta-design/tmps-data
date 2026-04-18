@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-04-18T09:50:55.742Z",
-  "totalModelos": 77,
+  "updatedAt": "2026-04-18T09:58:21.207Z",
+  "totalModelos": 78,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -276,6 +276,50 @@
           "texto": "La conceptualización en ERT se construye de manera colaborativa identificando patrones reactivos (preocupación, rumiación, evitación), respuestas conductuales asociadas y bloqueos en acción dirigida a valores. Se revisa continuamente a lo largo del tratamiento para mapear la transición desde reactividad automática hacia respuestas counteractive y posteriormente proactivas. Este procedimiento permite individualizar el modelo transdiagnóstico a la historia motivacional concreta del paciente. (Fresco et al., 2016).",
           "sub": "N_marcosCognitivos",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "inference-based-cbt-aardema-2010",
+      "modelLabel": "Inference-Based Cognitive Behavioral Therapy (I-CBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Frederick Aardema; Kieron O’Connor",
+      "modelYear": 2010,
+      "items": [
+        {
+          "codigo": "p_icbt_identificar_duda_inferencial",
+          "nombre": "Identificación de la duda inferencial",
+          "texto": "Procedimiento inicial dirigido a detectar el momento exacto en el que la persona abandona la evidencia perceptiva y entra en la duda basada en posibilidad. Se analiza una obsesión concreta descomponiendo la secuencia cognitiva hasta localizar el punto donde aparece la inferencia ('¿y si...?') que no está sustentada en datos sensoriales. El objetivo no es cuestionar el contenido, sino hacer visible el proceso inferencial que genera la duda, diferenciando claramente entre percepción y suposición. Referencia: O’Connor & Aardema (2011).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_icbt_percepcion_vs_imaginacion",
+          "nombre": "Diferenciación percepción vs imaginación",
+          "texto": "Procedimiento central que entrena al paciente a discriminar entre lo que está percibiendo directamente y lo que está imaginando. Se utilizan ejemplos concretos de la vida cotidiana y de las obsesiones para reforzar la distinción entre evidencia sensorial y construcción mental. Este proceso restaura el criterio epistemológico básico del modelo: confiar en la percepción como fuente primaria de realidad. Referencia: O’Connor & Aardema (2011).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_icbt_confianza_perceptiva",
+          "nombre": "Restauración de la confianza en los sentidos",
+          "texto": "Procedimiento orientado a reconstruir la confianza del paciente en su experiencia perceptiva directa. Se trabaja reforzando decisiones basadas en lo que se ve, oye o siente en el presente, en lugar de en posibilidades imaginadas. Este proceso reduce la incertidumbre artificial generada por la duda inferencial y estabiliza la relación con la realidad. Referencia: O’Connor & Aardema (2011).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_icbt_razonamiento_realista",
+          "nombre": "Reconstrucción del razonamiento basado en la realidad",
+          "texto": "Procedimiento dirigido a reconstruir un estilo de razonamiento anclado en la evidencia perceptiva. Se ayuda al paciente a formular conclusiones únicamente a partir de datos observables, evitando introducir posibilidades no verificadas. Este entrenamiento permite sustituir la lógica obsesiva por una lógica basada en la realidad directa. Referencia: Aardema & O’Connor (2007).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_icbt_evidencia_perceptiva",
+          "nombre": "Preguntar por evidencia perceptiva directa",
+          "texto": "Intervención breve en la que se pregunta al paciente qué evidencia sensorial directa tiene en ese momento (“¿qué ves exactamente ahora?”), con el objetivo de reconectar con la realidad percibida y desplazar la atención desde la posibilidad imaginada hacia los datos presentes. No se debate la creencia, se cambia la fuente de conocimiento. Referencia: O’Connor & Aardema (2011).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },
@@ -1008,7 +1052,7 @@
     },
     {
       "modelId": "one-session-treatment-ost-1989",
-      "modelLabel": "One-Session Treatment (OST)",
+      "modelLabel": "One-Session Treatment - OST (Fobias)",
       "modelGrupo": "Conductismo",
       "modelAutores": "Lars-Göran Öst",
       "modelYear": 1989,

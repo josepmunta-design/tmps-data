@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-04-18T09:50:55.742Z",
-  "totalModelos": 89,
+  "updatedAt": "2026-04-18T09:58:21.207Z",
+  "totalModelos": 90,
   "modelos": [
     {
       "modelId": "taoismo-psicologia-puentes-1980",
@@ -102,6 +102,36 @@
           "codigo": "m_bandura_si_entonces",
           "nombre": "Plan ‘si–entonces’ ante obstáculos",
           "texto": "Microintervención orientada a anticipar barreras previsibles mediante planes condicionales del tipo “si ocurre X, entonces haré Y”, automatizando respuestas funcionales ante dificultades. Esta preparación reduce abandono, protege la continuidad de la práctica y facilita la autorregulación bajo estrés. (Bandura, 1997).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "inference-based-cbt-aardema-2010",
+      "modelLabel": "Inference-Based Cognitive Behavioral Therapy (I-CBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Frederick Aardema; Kieron O’Connor",
+      "modelYear": 2010,
+      "items": [
+        {
+          "codigo": "p_icbt_rechazo_posibilidad",
+          "nombre": "Entrenamiento en rechazo de la posibilidad irrelevante",
+          "texto": "Procedimiento que entrena a la persona a no conceder relevancia a posibilidades que no están sustentadas en la percepción. En lugar de evaluar su probabilidad o neutralizarlas, se trabaja en descartarlas directamente como base para la acción. Esto implica un cambio clave: dejar de responder a lo posible y empezar a responder a lo real. Referencia: O’Connor, Aardema & Pelissier (2005).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_icbt_rechazo_posibilidad",
+          "nombre": "Rechazar activamente la posibilidad irrelevante",
+          "texto": "Intervención en la que el paciente practica descartar de forma deliberada una posibilidad no basada en la percepción, sin analizarla ni neutralizarla. Este acto refuerza un cambio clave en I-CBT: decidir no operar en base a lo posible cuando no hay evidencia real. Referencia: O’Connor, Aardema & Pelissier (2005).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_icbt_decision_perceptiva",
+          "nombre": "Volver a la decisión basada en percepción",
+          "texto": "Microintervención que consiste en tomar una decisión concreta (por ejemplo, no comprobar) basándose únicamente en la información perceptiva disponible. Refuerza la confianza en los sentidos y reduce la dependencia del razonamiento obsesivo. Referencia: Aardema & O’Connor (2007).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
@@ -1049,7 +1079,7 @@
     },
     {
       "modelId": "one-session-treatment-ost-1989",
-      "modelLabel": "One-Session Treatment (OST)",
+      "modelLabel": "One-Session Treatment - OST (Fobias)",
       "modelGrupo": "Conductismo",
       "modelAutores": "Lars-Göran Öst",
       "modelYear": 1989,
