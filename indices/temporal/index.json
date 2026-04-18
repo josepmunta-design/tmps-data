@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-18T09:54:27.403Z",
+  "generatedAt": "2026-04-18T09:58:52.797Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 189,
-    "links": 200,
-    "unresolvedInfluences": 658
+    "modelos": 190,
+    "links": 201,
+    "unresolvedInfluences": 662
   },
   "nodes": [
     {
@@ -5145,6 +5145,35 @@
       "escuelaId": "constructivista"
     },
     {
+      "id": "inference-based-cbt-aardema-2010",
+      "label": "Inference-Based Cognitive Behavioral Therapy (I-CBT)",
+      "year": 2010,
+      "group": "Cognitivo",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/cognitivo/inference-based-cbt-aardema-2010.json",
+      "authors": "Frederick Aardema; Kieron O’Connor",
+      "summary": "La Inference-Based Cognitive Behavioral Therapy (I-CBT) es un modelo cognitivo desarrollado específicamente para el trastorno obsesivo-compulsivo (TOC) que reformula el problema central no como una distorsión del contenido del pensamiento, sino como un error en el proceso inferencial que lleva a dudar de la realidad. A diferencia de los modelos cognitivos clásicos que se centran en evaluar la veracidad de las creencias obsesivas, I-CBT propone que las obsesiones surgen cuando la persona sustituye la información sensorial directa (lo que percibe aquí y ahora) por inferencias imaginadas basadas en posibilidades remotas. Este proceso, denominado 'duda inferencial', implica un desplazamiento desde la percepción hacia la imaginación, generando una narrativa interna que parece plausible pero no está anclada en la evidencia perceptiva. La terapia se centra en identificar y desmantelar estas inferencias, restaurar la confianza en los sentidos y en la realidad inmediata, y debilitar la lógica narrativa que sostiene la obsesión, permitiendo que la persona recupere un sentido de certeza basado en la experiencia directa en lugar de en posibilidades hipotéticas.",
+      "influencias": [
+        "Terapia cognitiva de Beck",
+        "Psicología cognitiva",
+        "Razonamiento probabilístico",
+        "Metacognición",
+        "Modelos cognitivos del TOC"
+      ],
+      "refs": [
+        "O’Connor, K., & Aardema, F. (2011). Clinician’s Handbook for Obsessive Compulsive Disorder: Inference-Based Therapy.",
+        "Aardema, F., & O’Connor, K. (2007). The menace within: Obsessions and the self.",
+        "O’Connor, K., Aardema, F., & Pelissier, M. C. (2005). Beyond reasonable doubt: Reasoning processes in obsessive-compulsive disorder."
+      ],
+      "lat": 45.501689,
+      "lon": -73.567256,
+      "ciudad": "Montreal",
+      "pais": "Canadá",
+      "escuelaId": "cognitivo"
+    },
+    {
       "id": "c1nutritional",
       "label": "Psiquiatría nutricional (Nutritional Psychiatry)",
       "year": 2010,
@@ -5730,6 +5759,10 @@
     {
       "source": "mindfulness-mbsr-contemplativo-1979",
       "target": "cft-gilbert-2009"
+    },
+    {
+      "source": "psicologia-cognitiva-neisser-1967",
+      "target": "inference-based-cbt-aardema-2010"
     },
     {
       "source": "modelo-evitacion-cognitiva-borkovec",
@@ -6848,6 +6881,22 @@
     {
       "target": "cft-gilbert-2009",
       "influence": "Terapias experienciales (imaginería, trabajo con sillas)"
+    },
+    {
+      "target": "inference-based-cbt-aardema-2010",
+      "influence": "Terapia cognitiva de Beck"
+    },
+    {
+      "target": "inference-based-cbt-aardema-2010",
+      "influence": "Razonamiento probabilístico"
+    },
+    {
+      "target": "inference-based-cbt-aardema-2010",
+      "influence": "Metacognición"
+    },
+    {
+      "target": "inference-based-cbt-aardema-2010",
+      "influence": "Modelos cognitivos del TOC"
     },
     {
       "target": "modelo-cognitivo-fobia-social-clark-wells-1995",
