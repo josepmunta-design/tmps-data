@@ -1,0 +1,258 @@
+{
+  "id": "inference-based-cbt-aardema-2010",
+  "grupo": "Cognitivo",
+  "label": "Inference-Based Cognitive Behavioral Therapy (I-CBT)",
+  "year": 2010,
+  "importance": 3,
+  "autores": "Frederick Aardema; Kieron O’Connor",
+  "universidad": "Université de Montréal",
+  "ciudad": "Montreal",
+  "pais": "Canadá",
+  "lat": 45.501689,
+  "lon": -73.567256,
+
+ "frase": "El cambio en el TOC ocurre al reconocer y corregir cómo se construyen las creencias obsesivas.",
+
+  "descripcion": "La Inference-Based Cognitive Behavioral Therapy (I-CBT) es un modelo cognitivo desarrollado específicamente para el trastorno obsesivo-compulsivo (TOC) que reformula el problema central no como una distorsión del contenido del pensamiento, sino como un error en el proceso inferencial que lleva a dudar de la realidad. A diferencia de los modelos cognitivos clásicos que se centran en evaluar la veracidad de las creencias obsesivas, I-CBT propone que las obsesiones surgen cuando la persona sustituye la información sensorial directa (lo que percibe aquí y ahora) por inferencias imaginadas basadas en posibilidades remotas. Este proceso, denominado 'duda inferencial', implica un desplazamiento desde la percepción hacia la imaginación, generando una narrativa interna que parece plausible pero no está anclada en la evidencia perceptiva. La terapia se centra en identificar y desmantelar estas inferencias, restaurar la confianza en los sentidos y en la realidad inmediata, y debilitar la lógica narrativa que sostiene la obsesión, permitiendo que la persona recupere un sentido de certeza basado en la experiencia directa en lugar de en posibilidades hipotéticas.",
+
+  "conceptosClave": [
+    {
+      "titulo": "Duda inferencial",
+      "descripcion": "Concepto central del modelo que describe el proceso mediante el cual la persona deja de confiar en la evidencia perceptiva directa y empieza a basarse en inferencias imaginadas sobre lo que podría ser cierto. Esta duda no surge de datos ambiguos, sino de una narrativa interna que introduce posibilidades remotas como si fueran relevantes, generando incertidumbre artificial y sostenida."
+    },
+    {
+      "titulo": "Confusión inferencial",
+      "descripcion": "Proceso cognitivo en el que la persona confunde la posibilidad con la realidad, otorgando el mismo peso a escenarios imaginados que a la información sensorial directa. Esta confusión permite que la duda inferencial se mantenga activa, ya que la persona no discrimina adecuadamente entre lo percibido y lo hipotético."
+    },
+    {
+      "titulo": "Primacía de la imaginación sobre la percepción",
+      "descripcion": "Principio según el cual, en el TOC, la imaginación adquiere mayor autoridad que la percepción sensorial. La persona empieza a actuar en función de lo que podría haber ocurrido o podría ocurrir, ignorando lo que efectivamente está ocurriendo en el presente, lo que desestabiliza el contacto con la realidad."
+    },
+    {
+      "titulo": "Narrativa obsesiva",
+      "descripcion": "Construcción narrativa interna que justifica la duda inferencial mediante una cadena lógica aparentemente coherente. Esta narrativa no es irracional en sí misma, sino que parte de premisas imaginadas que no están ancladas en la realidad perceptiva, lo que la hace persuasiva pero engañosa."
+    },
+    {
+      "titulo": "Desplazamiento de la realidad percibida",
+      "descripcion": "Proceso por el cual la persona abandona progresivamente la referencia a la evidencia sensorial inmediata y se orienta hacia escenarios hipotéticos. Este desplazamiento es clave en la génesis del TOC, ya que rompe el anclaje con el presente y facilita la expansión de la duda."
+    },
+    {
+      "titulo": "Sentido de posibilidad",
+      "descripcion": "Experiencia subjetiva de que algo podría ser cierto, aunque no haya evidencia directa que lo sustente. En I-CBT, este sentido de posibilidad es el motor de la obsesión, ya que genera urgencia por comprobar o neutralizar algo que solo existe en el plano imaginado."
+    },
+    {
+      "titulo": "Confianza en la percepción",
+      "descripcion": "Capacidad de basarse en la información sensorial directa como fuente primaria de conocimiento sobre la realidad. La terapia busca restaurar esta confianza, debilitada en el TOC, para que la persona pueda discriminar entre lo que realmente ocurre y lo que solo imagina."
+    },
+    {
+      "titulo": "Error de razonamiento inferencial",
+      "descripcion": "Distorsión específica del proceso de inferencia que lleva a conclusiones erróneas no por falta de lógica formal, sino por partir de premisas imaginadas en lugar de perceptivas. Este error es el foco principal de intervención en I-CBT."
+    }
+  ],
+
+  "influencias": [
+    "Terapia cognitiva de Beck",
+    "Psicología cognitiva",
+    "Razonamiento probabilístico",
+    "Metacognición",
+    "Modelos cognitivos del TOC"
+  ],
+
+  "neimeyer": {
+    "epistemologico": "La realidad psicológica se concibe como accesible a través de la percepción directa, siendo esta la base primaria del conocimiento válido. El conocimiento terapéutico no se centra en reinterpretar contenidos, sino en restaurar la capacidad de discriminar entre percepción e inferencia. El ser humano es visto como un agente capaz de razonar, pero vulnerable a errores específicos en el proceso inferencial. El cambio ocurre cuando se restablece la primacía de la experiencia perceptiva sobre la imaginación. La relación terapéutica funciona como un contexto donde se cuestiona la validez de las inferencias y se entrena una nueva forma de conocer la realidad.",
+    "teoriaFormal": "El self se organiza en torno a procesos de evaluación de la realidad basados en percepción e inferencia. El sufrimiento en el TOC se mantiene por un fallo en este sistema, donde la inferencia imaginada sustituye a la percepción como fuente de certeza. El cambio psicológico implica corregir este error inferencial, permitiendo que la persona vuelva a confiar en la evidencia directa y reduzca la influencia de narrativas obsesivas.",
+    "teoriaClinica": "El caso se conceptualiza identificando las inferencias obsesivas específicas, las narrativas que las sostienen y los momentos en los que la persona abandona la percepción en favor de la imaginación. Se prioriza desmantelar la cadena inferencial y restaurar el contacto con la realidad percibida. El progreso se evalúa por la reducción de la duda basada en posibilidades y el aumento de confianza en la experiencia directa."
+  },
+
+  "mjps": ["RE", "N", "RI", "I", "AG"],
+
+  "procedimientos": [
+  {
+    "nombre": "Identificación de la duda inferencial",
+    "codigo": "p_icbt_identificar_duda_inferencial",
+    "procesos": ["N_metacognicion", "N_marcosCognitivos"],
+    "texto": "Procedimiento inicial dirigido a detectar el momento exacto en el que la persona abandona la evidencia perceptiva y entra en la duda basada en posibilidad. Se analiza una obsesión concreta descomponiendo la secuencia cognitiva hasta localizar el punto donde aparece la inferencia ('¿y si...?') que no está sustentada en datos sensoriales. El objetivo no es cuestionar el contenido, sino hacer visible el proceso inferencial que genera la duda, diferenciando claramente entre percepción y suposición. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Análisis de la narrativa obsesiva",
+    "codigo": "p_icbt_narrativa_obsesiva",
+    "procesos": ["N_narrativaAutobiografica", "N_metacognicion"],
+    "texto": "Procedimiento orientado a reconstruir la historia interna que hace plausible la obsesión. Se examinan los pasos lógicos que conectan una posibilidad remota con una conclusión temida, mostrando cómo la narrativa se sostiene sobre premisas imaginadas. Este análisis permite debilitar la coherencia aparente del relato obsesivo y exponer su desconexión con la realidad perceptiva. Referencia: O’Connor, Aardema & Pelissier (2005)."
+  },
+  {
+    "nombre": "Diferenciación percepción vs imaginación",
+    "codigo": "p_icbt_percepcion_vs_imaginacion",
+    "procesos": ["N_marcosCognitivos", "N_metacognicion"],
+    "texto": "Procedimiento central que entrena al paciente a discriminar entre lo que está percibiendo directamente y lo que está imaginando. Se utilizan ejemplos concretos de la vida cotidiana y de las obsesiones para reforzar la distinción entre evidencia sensorial y construcción mental. Este proceso restaura el criterio epistemológico básico del modelo: confiar en la percepción como fuente primaria de realidad. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Desmantelamiento de inferencias erróneas",
+    "codigo": "p_icbt_desmantelar_inferencias",
+    "procesos": ["N_reformulacion", "N_metacognicion"],
+    "texto": "Procedimiento dirigido a cuestionar activamente las inferencias que sostienen la obsesión, no en términos de probabilidad, sino en términos de origen: si provienen de la percepción o de la imaginación. Se analizan las premisas implícitas y se muestra cómo la conclusión obsesiva depende de aceptar una posibilidad como si fuera evidencia. El objetivo es debilitar la cadena inferencial desde su base. Referencia: Aardema & O’Connor (2007)."
+  },
+  {
+    "nombre": "Restauración de la confianza en los sentidos",
+    "codigo": "p_icbt_confianza_perceptiva",
+    "procesos": ["RE_modulacion", "N_marcosCognitivos"],
+    "texto": "Procedimiento orientado a reconstruir la confianza del paciente en su experiencia perceptiva directa. Se trabaja reforzando decisiones basadas en lo que se ve, oye o siente en el presente, en lugar de en posibilidades imaginadas. Este proceso reduce la incertidumbre artificial generada por la duda inferencial y estabiliza la relación con la realidad. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Entrenamiento en rechazo de la posibilidad irrelevante",
+    "codigo": "p_icbt_rechazo_posibilidad",
+    "procesos": ["N_reformulacion", "AG_tomaDecisiones"],
+    "texto": "Procedimiento que entrena a la persona a no conceder relevancia a posibilidades que no están sustentadas en la percepción. En lugar de evaluar su probabilidad o neutralizarlas, se trabaja en descartarlas directamente como base para la acción. Esto implica un cambio clave: dejar de responder a lo posible y empezar a responder a lo real. Referencia: O’Connor, Aardema & Pelissier (2005)."
+  },
+  {
+    "nombre": "Reorientación hacia la realidad presente",
+    "codigo": "p_icbt_reorientacion_realidad",
+    "procesos": ["RF_ground", "N_metacognicion"],
+    "texto": "Procedimiento que ayuda a la persona a volver al aquí y ahora cuando se encuentra atrapada en una narrativa obsesiva. Se utilizan anclajes perceptivos (lo que ve, oye, toca) para interrumpir el desplazamiento hacia la imaginación. Este proceso no busca regular emoción directamente, sino restaurar el acceso a la realidad perceptiva como base del conocimiento. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Reconstrucción del razonamiento basado en la realidad",
+    "codigo": "p_icbt_razonamiento_realista",
+    "procesos": ["N_marcosCognitivos", "N_construccionAlternativa"],
+    "texto": "Procedimiento dirigido a reconstruir un estilo de razonamiento anclado en la evidencia perceptiva. Se ayuda al paciente a formular conclusiones únicamente a partir de datos observables, evitando introducir posibilidades no verificadas. Este entrenamiento permite sustituir la lógica obsesiva por una lógica basada en la realidad directa. Referencia: Aardema & O’Connor (2007)."
+  },
+  {
+    "nombre": "Interrupción del proceso inferencial obsesivo",
+    "codigo": "p_icbt_interrumpir_inferencia",
+    "procesos": ["N_metacognicion", "RE_prevEvitacion"],
+    "texto": "Procedimiento enfocado a detectar en tiempo real el inicio del proceso inferencial obsesivo y detenerlo antes de que se despliegue completamente. Se entrena al paciente a reconocer señales tempranas de entrada en la duda inferencial y a no seguir la cadena narrativa. Esto reduce la consolidación del patrón obsesivo. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Desactivación de la relevancia subjetiva de la obsesión",
+    "codigo": "p_icbt_desactivar_relevancia",
+    "procesos": ["RE_modulacion", "N_reformulacion"],
+    "texto": "Procedimiento dirigido a reducir la importancia subjetiva de la obsesión al mostrar que no está basada en la realidad perceptiva. Al perder su estatus de 'posible amenaza real', la obsesión pierde urgencia y carga emocional, lo que disminuye la necesidad de compulsión o comprobación. Referencia: O’Connor, Aardema & Pelissier (2005)."
+  }
+],
+ "micros": [
+  {
+    "nombre": "Señalar el momento de salto inferencial",
+    "codigo": "m_icbt_salto_inferencial",
+    "procesos": ["N_metacognicion"],
+    "texto": "Microintervención consistente en identificar en tiempo real el instante en el que el paciente pasa de la percepción a la imaginación (por ejemplo, de “la puerta está cerrada” a “podría no haberla cerrado bien”). El terapeuta lo señala explícitamente para hacer consciente el cambio de registro cognitivo, ayudando a que el paciente distinga proceso de contenido y pueda detener la escalada obsesiva desde su origen. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Preguntar por evidencia perceptiva directa",
+    "codigo": "m_icbt_evidencia_perceptiva",
+    "procesos": ["N_marcosCognitivos"],
+    "texto": "Intervención breve en la que se pregunta al paciente qué evidencia sensorial directa tiene en ese momento (“¿qué ves exactamente ahora?”), con el objetivo de reconectar con la realidad percibida y desplazar la atención desde la posibilidad imaginada hacia los datos presentes. No se debate la creencia, se cambia la fuente de conocimiento. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Marcar la diferencia entre posible y real",
+    "codigo": "m_icbt_posible_vs_real",
+    "procesos": ["N_reformulacion"],
+    "texto": "Microintervención que introduce de forma clara la distinción entre lo que es posible y lo que es real, subrayando que la obsesión se sostiene en lo primero. Se utiliza lenguaje explícito (“eso es posible, pero no está ocurriendo”) para debilitar la equivalencia implícita entre imaginación y realidad. Referencia: O’Connor, Aardema & Pelissier (2005)."
+  },
+  {
+    "nombre": "Detectar la premisa imaginada",
+    "codigo": "m_icbt_premisa_imaginada",
+    "procesos": ["N_metacognicion"],
+    "texto": "Consiste en identificar la premisa no perceptiva sobre la que se construye la obsesión (por ejemplo, “quizá estaba distraído cuando cerré”). Esta intervención descompone la lógica obsesiva mostrando que la conclusión depende de aceptar una suposición no verificada, debilitando su credibilidad. Referencia: Aardema & O’Connor (2007)."
+  },
+  {
+    "nombre": "Anclar en el aquí y ahora sensorial",
+    "codigo": "m_icbt_anclaje_sensorial",
+    "procesos": ["RF_ground"],
+    "texto": "Microintervención que dirige la atención hacia estímulos sensoriales presentes (lo que se ve, oye o toca) para interrumpir la inmersión en la narrativa obsesiva. No busca relajación, sino restaurar el contacto con la realidad inmediata como base de certeza. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Nombrar la narrativa obsesiva",
+    "codigo": "m_icbt_nombrar_narrativa",
+    "procesos": ["N_narrativaAutobiografica"],
+    "texto": "Intervención que consiste en etiquetar explícitamente el discurso interno como “historia” o “narrativa”, ayudando al paciente a tomar distancia de su contenido. Este etiquetado reduce la fusión cognitiva y permite observar la construcción del pensamiento en lugar de asumirlo como realidad. Referencia: O’Connor, Aardema & Pelissier (2005)."
+  },
+  {
+    "nombre": "Interrumpir la cadena del ‘¿y si…?’",
+    "codigo": "m_icbt_interrumpir_y_si",
+    "procesos": ["N_metacognicion", "RE_prevEvitacion"],
+    "texto": "Microintervención dirigida a cortar la progresión de escenarios hipotéticos en el momento en que aparece el primer ‘¿y si…?’. Se entrena al paciente a no seguir desarrollando la cadena narrativa, evitando que la posibilidad gane complejidad y fuerza emocional. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Rechazar activamente la posibilidad irrelevante",
+    "codigo": "m_icbt_rechazo_posibilidad",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Intervención en la que el paciente practica descartar de forma deliberada una posibilidad no basada en la percepción, sin analizarla ni neutralizarla. Este acto refuerza un cambio clave en I-CBT: decidir no operar en base a lo posible cuando no hay evidencia real. Referencia: O’Connor, Aardema & Pelissier (2005)."
+  },
+  {
+    "nombre": "Volver a la decisión basada en percepción",
+    "codigo": "m_icbt_decision_perceptiva",
+    "procesos": ["AG_tomaDecisiones"],
+    "texto": "Microintervención que consiste en tomar una decisión concreta (por ejemplo, no comprobar) basándose únicamente en la información perceptiva disponible. Refuerza la confianza en los sentidos y reduce la dependencia del razonamiento obsesivo. Referencia: Aardema & O’Connor (2007)."
+  },
+  {
+    "nombre": "Señalar la desconexión con la realidad",
+    "codigo": "m_icbt_desconexion_realidad",
+    "procesos": ["N_metacognicion"],
+    "texto": "Intervención breve en la que el terapeuta señala que el razonamiento actual no está conectado con lo que está ocurriendo en el entorno real. Esto ayuda al paciente a reconocer el desplazamiento hacia la imaginación sin necesidad de discutir el contenido de la obsesión. Referencia: O’Connor & Aardema (2011)."
+  },
+  {
+    "nombre": "Reducir urgencia de comprobación",
+    "codigo": "m_icbt_reducir_comprobacion",
+    "procesos": ["RE_modulacion"],
+    "texto": "Microintervención dirigida a disminuir la urgencia emocional asociada a la duda inferencial al recordar que no se basa en evidencia real. Al reducir la carga afectiva, disminuye la necesidad de realizar compulsiones o comprobaciones. Referencia: O’Connor, Aardema & Pelissier (2005)."
+  },
+  {
+    "nombre": "Reformular como error de proceso",
+    "codigo": "m_icbt_error_proceso",
+    "procesos": ["N_reformulacion"],
+    "texto": "Consiste en reinterpretar la obsesión no como un contenido peligroso, sino como un error en el proceso de razonamiento. Esta reformulación reduce la identificación con la obsesión y orienta el foco terapéutico hacia cómo se piensa, no hacia qué se piensa. Referencia: Aardema & O’Connor (2007)."
+  }
+],
+"ideasPrincipales": [
+  {
+    "id": "idea_icbt_1",
+    "titulo": "El núcleo del TOC es un error inferencial, no una distorsión de contenido",
+    "desarrollo": "I-CBT sostiene que el problema central del TOC no reside en creencias irracionales o sesgos de contenido, sino en un fallo en el proceso mediante el cual la persona llega a creer en la obsesión. La inferencia obsesiva no es ilógica en su forma, sino errónea en su origen: se construye a partir de premisas imaginadas en lugar de evidencia perceptiva. Esto desplaza el foco terapéutico desde la reestructuración cognitiva clásica hacia la corrección del proceso inferencial. (O’Connor & Aardema, 2011)."
+  },
+  {
+    "id": "idea_icbt_2",
+    "titulo": "La duda obsesiva surge al sustituir percepción por imaginación",
+    "desarrollo": "El modelo plantea que la duda obsesiva no aparece por ambigüedad real, sino cuando la persona abandona la información sensorial directa y empieza a razonar en términos de posibilidad. Este desplazamiento desde la percepción hacia la imaginación genera incertidumbre artificial, ya que introduce escenarios no verificables que compiten con la realidad presente. (O’Connor, Aardema & Pelissier, 2005)."
+  },
+  {
+    "id": "idea_icbt_3",
+    "titulo": "La imaginación adquiere primacía sobre la realidad percibida",
+    "desarrollo": "En el TOC, la imaginación no es simplemente un complemento de la percepción, sino que la sustituye como fuente de certeza. La persona actúa en función de lo que podría ser cierto, ignorando lo que efectivamente percibe, lo que genera una desconexión progresiva con la realidad y mantiene la obsesión activa. (Aardema & O’Connor, 2007)."
+  },
+  {
+    "id": "idea_icbt_4",
+    "titulo": "La obsesión se sostiene mediante una narrativa aparentemente lógica",
+    "desarrollo": "Las obsesiones no son pensamientos caóticos, sino narrativas coherentes que conectan una posibilidad remota con una conclusión temida. Esta coherencia formal las hace persuasivas, aunque su base sea imaginada. El problema no es la lógica interna, sino la validez de las premisas sobre las que se construye. (O’Connor, Aardema & Pelissier, 2005)."
+  },
+  {
+    "id": "idea_icbt_5",
+    "titulo": "El sentido de posibilidad genera urgencia sin evidencia",
+    "desarrollo": "El TOC se caracteriza por una fuerte sensación de que algo podría ser cierto, lo que genera urgencia emocional y conductual aunque no exista evidencia real. Este 'sentido de posibilidad' es suficiente para activar compulsiones, ya que el sistema trata la posibilidad como amenaza potencial relevante. (O’Connor & Aardema, 2011)."
+  },
+  {
+    "id": "idea_icbt_6",
+    "titulo": "El cambio terapéutico implica restaurar la confianza en la percepción",
+    "desarrollo": "La intervención no busca convencer al paciente de que su obsesión es improbable, sino ayudarle a volver a confiar en la evidencia sensorial directa como fuente primaria de conocimiento. Este cambio epistemológico reduce la necesidad de comprobar o neutralizar posibilidades imaginadas. (O’Connor & Aardema, 2011)."
+  },
+  {
+    "id": "idea_icbt_7",
+    "titulo": "No todas las posibilidades merecen ser consideradas",
+    "desarrollo": "I-CBT introduce una distinción clave: el hecho de que algo sea posible no implica que deba ser tenido en cuenta como base para la acción. La terapia entrena a descartar posibilidades irrelevantes que no están sustentadas en la realidad perceptiva, rompiendo el principio implícito del TOC de que todo lo posible debe ser evaluado o neutralizado. (O’Connor, Aardema & Pelissier, 2005)."
+  },
+  {
+    "id": "idea_icbt_8",
+    "titulo": "El problema no es la incertidumbre, sino su origen artificial",
+    "desarrollo": "A diferencia de otros modelos que enfatizan la intolerancia a la incertidumbre, I-CBT sostiene que la incertidumbre en el TOC es creada por el propio proceso inferencial. No se trata de aprender a tolerarla, sino de reconocer que surge de premisas no basadas en la realidad y, por tanto, no requiere respuesta. (Aardema & O’Connor, 2007)."
+  },
+  {
+    "id": "idea_icbt_9",
+    "titulo": "Las compulsiones son intentos de resolver una duda mal planteada",
+    "desarrollo": "Las conductas compulsivas no son irracionales en sí mismas, sino coherentes si se acepta la premisa obsesiva. El problema es que intentan resolver una duda que no debería haberse generado, ya que está basada en inferencias imaginadas. Por ello, el foco no está en eliminar la compulsión directamente, sino en desactivar la duda inferencial que la origina. (O’Connor & Aardema, 2011)."
+  }
+],
+
+  "refs": [
+    "O’Connor, K., & Aardema, F. (2011). Clinician’s Handbook for Obsessive Compulsive Disorder: Inference-Based Therapy.",
+    "Aardema, F., & O’Connor, K. (2007). The menace within: Obsessions and the self.",
+    "O’Connor, K., Aardema, F., & Pelissier, M. C. (2005). Beyond reasonable doubt: Reasoning processes in obsessive-compulsive disorder."
+  ]
+}
