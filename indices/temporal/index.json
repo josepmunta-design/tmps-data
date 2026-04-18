@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-18T10:55:29.425Z",
+  "generatedAt": "2026-04-18T11:36:04.611Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 194,
     "links": 205,
-    "unresolvedInfluences": 671
+    "unresolvedInfluences": 673
   },
   "nodes": [
     {
@@ -4591,9 +4591,16 @@
       "isMarco": false,
       "file": "modelos/cognitivo/cognitive-therapy-ptsd-ehlers-clark-2000.json",
       "authors": "Anke Ehlers; David M. Clark",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "La Cognitive Therapy for PTSD de Ehlers y Clark es un modelo cognitivo que explica la persistencia del trastorno de estrés postraumático a partir de la generación interna de un sentido actual de amenaza. Este estado se produce por la interacción entre interpretaciones negativas idiosincrásicas del trauma y una memoria traumática pobremente elaborada y contextualizada, que facilita su reactivación como si estuviera ocurriendo en el presente. El modelo no se centra en el evento en sí, sino en cómo es procesado. La intervención se orienta a tres dianas principales: la elaboración de la memoria traumática, la actualización de significados disfuncionales y la eliminación de estrategias de mantenimiento que impiden el cambio. Es uno de los modelos cognitivos más influyentes y empíricamente validados en el tratamiento del trauma.",
+      "influencias": [
+        "Terapia cognitiva de Beck",
+        "Modelo cognitivo del pánico de Clark"
+      ],
+      "refs": [
+        "Ehlers, A., & Clark, D. M. (2000). A cognitive model of posttraumatic stress disorder.",
+        "Ehlers, A., Clark, D. M. (2005). Cognitive therapy for PTSD: Development and evaluation.",
+        "Ehlers, A. (2013). Cognitive Therapy for PTSD."
+      ],
       "lat": 51.754816,
       "lon": -1.254367,
       "ciudad": "Oxford",
@@ -7025,6 +7032,14 @@
     {
       "target": "preventive-cognitive-therapy-bockting-2005",
       "influence": "Modelo de reactividad cognitiva"
+    },
+    {
+      "target": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "influence": "Terapia cognitiva de Beck"
+    },
+    {
+      "target": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "influence": "Modelo cognitivo del pánico de Clark"
     },
     {
       "target": "inference-based-cbt-aardema-2010",
