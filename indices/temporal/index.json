@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-18T10:25:49.666Z",
+  "generatedAt": "2026-04-18T10:51:18.502Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 192,
-    "links": 202,
-    "unresolvedInfluences": 665
+    "modelos": 193,
+    "links": 203,
+    "unresolvedInfluences": 669
   },
   "nodes": [
     {
@@ -5104,6 +5104,35 @@
       "escuelaId": "integrativo"
     },
     {
+      "id": "preventive-cognitive-therapy-bockting-2005",
+      "label": "Preventive Cognitive Therapy (PCT)",
+      "year": 2005,
+      "group": "Cognitivo",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/cognitivo/preventive-cognitive-therapy-bockting-2005.json",
+      "authors": "Claudi L. H. Bockting",
+      "summary": "La Preventive Cognitive Therapy (PCT) desarrollada por Claudi L. H. Bockting es un enfoque cognitivo específico diseñado para prevenir recaídas en depresión mayor recurrente una vez que el episodio agudo ha remitido. A diferencia de la terapia cognitiva clásica centrada en reducir síntomas actuales, la PCT se orienta a identificar y modificar los factores cognitivos de vulnerabilidad que permanecen activos tras la recuperación, especialmente los estilos de procesamiento negativos latentes, la reactividad cognitiva al estado de ánimo y la persistencia de creencias disfuncionales subyacentes. El modelo asume que, incluso en ausencia de síntomas, ciertos patrones cognitivos pueden reactivarse ante cambios emocionales leves, desencadenando nuevos episodios. Por ello, la intervención se centra en entrenar habilidades metacognitivas, cuestionar creencias residuales, aumentar la conciencia de señales tempranas de recaída y desarrollar estrategias de afrontamiento más flexibles. La PCT ha demostrado eficacia en la reducción significativa de recaídas en pacientes con múltiples episodios depresivos, especialmente cuando se aplica tras la remisión y como complemento a tratamientos farmacológicos o psicoterapéuticos previos.",
+      "influencias": [
+        "Terapia cognitiva de Beck",
+        "Modelo de vulnerabilidad cognitiva a la depresión",
+        "Teoría de esquemas",
+        "Psicología cognitiva",
+        "Modelo de reactividad cognitiva"
+      ],
+      "refs": [
+        "Bockting, C. L. H., et al. (2005). Preventive cognitive therapy for recurrent depression: A randomized controlled trial.",
+        "Bockting, C. L. H., et al. (2009). Preventing relapse/recurrence in recurrent depression with cognitive therapy.",
+        "Beck, A. T. (1979). Cognitive Therapy of Depression."
+      ],
+      "lat": 52.355172,
+      "lon": 4.895168,
+      "ciudad": "Ámsterdam",
+      "pais": "Países Bajos",
+      "escuelaId": "cognitivo"
+    },
+    {
       "id": "psicoterapia-existencial-humanista-contemporanea",
       "label": "Psicoterapia Existencial-Humanista Contemporánea",
       "year": 2005,
@@ -5806,6 +5835,10 @@
     {
       "source": "mindfulness-mbsr-contemplativo-1979",
       "target": "cft-gilbert-2009"
+    },
+    {
+      "source": "psicologia-cognitiva-neisser-1967",
+      "target": "preventive-cognitive-therapy-bockting-2005"
     },
     {
       "source": "psicologia-cognitiva-neisser-1967",
@@ -6932,6 +6965,22 @@
     {
       "target": "cft-gilbert-2009",
       "influence": "Terapias experienciales (imaginería, trabajo con sillas)"
+    },
+    {
+      "target": "preventive-cognitive-therapy-bockting-2005",
+      "influence": "Terapia cognitiva de Beck"
+    },
+    {
+      "target": "preventive-cognitive-therapy-bockting-2005",
+      "influence": "Modelo de vulnerabilidad cognitiva a la depresión"
+    },
+    {
+      "target": "preventive-cognitive-therapy-bockting-2005",
+      "influence": "Teoría de esquemas"
+    },
+    {
+      "target": "preventive-cognitive-therapy-bockting-2005",
+      "influence": "Modelo de reactividad cognitiva"
     },
     {
       "target": "inference-based-cbt-aardema-2010",
