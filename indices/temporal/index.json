@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-18T09:49:33.089Z",
+  "generatedAt": "2026-04-18T09:53:02.576Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 189,
-    "links": 197,
-    "unresolvedInfluences": 656
+    "links": 200,
+    "unresolvedInfluences": 658
   },
   "nodes": [
     {
@@ -3230,7 +3230,7 @@
     },
     {
       "id": "one-session-treatment-ost-1989",
-      "label": "One-Session Treatment (OST)",
+      "label": "One-Session Treatment (Fobias)",
       "year": 1989,
       "group": "Conductista",
       "importance": 3,
@@ -3238,9 +3238,19 @@
       "isMarco": false,
       "file": "modelos/conductismo/one-session-treatment-ost-1989.json",
       "authors": "Lars-Göran Öst",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "El One-Session Treatment (OST) de Lars-Göran Öst es un protocolo conductual intensivo diseñado principalmente para el tratamiento de fobias específicas mediante una única sesión prolongada (habitualmente de 2 a 3 horas) de exposición en vivo, altamente estructurada y guiada. A diferencia de los enfoques graduales tradicionales, OST concentra en una sola sesión todos los elementos terapéuticos clave: psicoeducación, modelado, exposición progresiva pero continua, eliminación de conductas de seguridad y entrenamiento en afrontamiento activo. El modelo parte de los principios del condicionamiento clásico y operante, así como de la teoría del aprendizaje inhibitorio, proponiendo que el cambio no depende tanto de la duración del tratamiento como de la intensidad, continuidad y calidad de la exposición. El objetivo central es producir una experiencia correctiva potente que desconfirme las expectativas de peligro, reduzca la evitación y restablezca la percepción de control, generando cambios rápidos y duraderos en la respuesta de miedo.",
+      "influencias": [
+        "Condicionamiento clásico",
+        "Condicionamiento operante",
+        "Teoría del aprendizaje social (Bandura)",
+        "Exposición en vivo",
+        "Aprendizaje inhibitorio"
+      ],
+      "refs": [
+        "Öst, L.-G. (1989). One-session treatment for specific phobias.",
+        "Öst, L.-G. (1997). Rapid treatment of specific phobias.",
+        "Öst, L.-G. (2012). The efficacy of One-Session Treatment for specific phobias."
+      ],
       "lat": 59.329323,
       "lon": 18.068581,
       "ciudad": "Estocolmo",
@@ -5571,6 +5581,18 @@
     },
     {
       "source": "condicionamiento-clasico-pavlov-1927",
+      "target": "one-session-treatment-ost-1989"
+    },
+    {
+      "source": "condicionamiento-operante-skinner-1938",
+      "target": "one-session-treatment-ost-1989"
+    },
+    {
+      "source": "exposicion-en-vivo-marks-1975",
+      "target": "one-session-treatment-ost-1989"
+    },
+    {
+      "source": "condicionamiento-clasico-pavlov-1927",
       "target": "indefension-aprendida-seligman-1975"
     },
     {
@@ -6570,6 +6592,14 @@
     {
       "target": "teoria-bifactorial-ansiedad-mowrer",
       "influence": "Empirismo objetivista / Positivismo lógico"
+    },
+    {
+      "target": "one-session-treatment-ost-1989",
+      "influence": "Teoría del aprendizaje social (Bandura)"
+    },
+    {
+      "target": "one-session-treatment-ost-1989",
+      "influence": "Aprendizaje inhibitorio"
     },
     {
       "target": "indefension-aprendida-seligman-1975",
