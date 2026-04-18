@@ -1,6 +1,6 @@
 # Informe de isomorfismos
 
-Generado: 2026-04-15T06:54:46.125Z
+Generado: 2026-04-18T09:42:28.165Z
 
 ## Amplificar experiencia emergente
 
@@ -333,7 +333,7 @@ Generado: 2026-04-15T06:54:46.125Z
 - Análisis funcional (clínico) — Análisis ABC (Antecedentes–Conducta–Consecuencias) [ok]
 - Análisis funcional (clínico) — m_af_detectar_funcion_predominante [falta_id]
 - Escuela de Palo Alto / MRI — m_mri_normalizacion_funcional_problema [falta_id]
-- Psicoanálisis clásico — pendiente_repo_secondary_gain [falta_id]
+- Psicoanálisis clásico (Freud) — pendiente_repo_secondary_gain [falta_id]
 - logoterapia-frankl-1959 — p_logo_interpretacion_existencial_sintoma [falta_modelo]
 - Terapia enfocada en las emociones — Exploración de emoción primaria subyacente al síntoma [ok]
 - schema-therapy-young-1990 — pendiente_repo_funcion_modo_esquema [falta_modelo]
@@ -459,7 +459,7 @@ Generado: 2026-04-15T06:54:46.125Z
 - Archivo fuente: `data/indices/isomorfismos/fuente/usar-la-relacion-terapeutica-como-muestra.json`
 - Entradas: 9
 
-- Psicoanálisis clásico — Trabajo con la transferencia [ok]
+- Psicoanálisis clásico (Freud) — Trabajo con la transferencia [ok]
 - TFP – Transference-Focused Psychotherapy — Análisis sistemático de la transferencia [ok]
 - TFP – Transference-Focused Psychotherapy — Clarificación [ok]
 - TFP – Transference-Focused Psychotherapy — Señalar la activación transferencial inmediata [ok]
