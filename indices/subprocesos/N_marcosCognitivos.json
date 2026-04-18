@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 68,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 74,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -341,6 +341,96 @@
           "codigo": "m_mbct_evento_desagradable_registro",
           "nombre": "Registro breve de evento desagradable (hechos vs interpretaciones)",
           "texto": "Microintervención de anotar un evento desagradable separando hechos, pensamientos automáticos, emoción y reacción corporal, para identificar el punto exacto donde se activa la elaboración rumiativa y entrenar respuesta alternativa. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_clark_psicoeducacion_panico",
+          "nombre": "Psicoeducación sobre el modelo del pánico",
+          "texto": "Procedimiento inicial orientado a explicar al paciente el modelo cognitivo del pánico, enfatizando que las sensaciones físicas no son peligrosas en sí mismas, sino que el problema reside en su interpretación catastrófica. Se introduce el ciclo de retroalimentación (sensación → interpretación → ansiedad → más sensación) para que el paciente pueda reconocer su propia experiencia dentro de este marco. Esta comprensión reduce la incertidumbre, disminuye la amenaza percibida y establece una base racional para el trabajo posterior. Referencia: Clark, D. M. (1986); Clark (1997).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_identificacion_cogniciones",
+          "nombre": "Identificación de interpretaciones catastróficas",
+          "texto": "Procedimiento dirigido a detectar y hacer explícitas las interpretaciones automáticas que el paciente realiza ante sus sensaciones corporales (por ejemplo, “me va a dar un infarto”, “voy a desmayarme”). Se analizan episodios recientes de pánico para identificar la secuencia pensamiento–emoción–sensación, aumentando la conciencia sobre el papel central de la cognición en la escalada ansiosa. Este paso es crítico para poder intervenir posteriormente sobre dichas interpretaciones. Referencia: Clark, D. M. (1986).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_creencias_vulnerabilidad",
+          "nombre": "Trabajo con creencias sobre vulnerabilidad corporal",
+          "texto": "Procedimiento dirigido a identificar y modificar creencias más profundas sobre la fragilidad del cuerpo o la incapacidad de tolerar activación fisiológica (por ejemplo, “mi cuerpo es débil”, “no puedo soportar esto”). Estas creencias predisponen a la interpretación catastrófica y su modificación permite una reducción más estable del miedo al pánico. Referencia: Clark, D. M. (1986).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clark_diferenciar_sensacion",
+          "nombre": "Diferenciar sensación de interpretación",
+          "texto": "Microintervención que consiste en separar deliberadamente la experiencia física (por ejemplo, “tengo palpitaciones”) de la interpretación catastrófica (“voy a tener un infarto”), ayudando al paciente a reconocer que la emoción depende del significado atribuido y no de la sensación en sí misma. Referencia: Clark, D. M. (1986).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_borkovec_diferenciacion_preocupacion",
+          "nombre": "Diferenciación entre preocupación productiva e improductiva",
+          "texto": "Procedimiento que distingue entre preocupaciones resolubles (con acciones concretas posibles) y preocupaciones hipotéticas o irresolubles. Se entrena al paciente a responder de forma distinta a cada tipo: resolución activa en el primer caso y abandono o posposición en el segundo, reduciendo la rumiación improductiva y favoreciendo la agencia funcional. Referencia: Borkovec et al. (2004).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_borkovec_reduccion_verbal",
+          "nombre": "Reducción del formato verbal de la preocupación",
+          "texto": "Procedimiento que entrena al paciente a detectar cuándo está en modo verbal abstracto y a transformarlo en experiencia directa (imaginal o emocional). Se busca abandonar el pensamiento analítico repetitivo y acceder a la vivencia emocional subyacente, debilitando la función evitativa del lenguaje. Referencia: Borkovec & Inz (1990).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-intolerancia-incertidumbre-dugas",
+      "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michel J. Dugas; Robert Ladouceur",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_dugas_psicoeducacion_incertidumbre",
+          "nombre": "Psicoeducación sobre la incertidumbre",
+          "texto": "Procedimiento orientado a que el paciente comprenda el papel central de la intolerancia a la incertidumbre en la ansiedad generalizada. Se explica cómo la necesidad de certeza activa preocupación, evitación y búsqueda de control, y cómo estos intentos aumentan el problema a largo plazo. Se introduce la idea de que la incertidumbre es inherente a la vida y no eliminable. Referencia: Dugas & Robichaud (2007).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dugas_creencias_incertidumbre",
+          "nombre": "Detección de creencias sobre la incertidumbre",
+          "texto": "Procedimiento dirigido a identificar creencias nucleares como “no puedo tolerar no saber”, “si no estoy seguro, algo malo pasará” o “debo anticiparlo todo”. Estas creencias organizan la reacción ansiosa y la necesidad de control, y se convierten en foco central de intervención. Referencia: Dugas & Ladouceur (2000).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dugas_problema_real_hipotetico",
+          "nombre": "Diferenciar problema real vs hipotético",
+          "texto": "Intervención breve que distingue entre problemas que pueden resolverse ahora y escenarios hipotéticos inciertos, permitiendo redirigir hacia acción concreta o aceptación según corresponda. Referencia: Dugas & Robichaud (2007).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }
@@ -813,6 +903,43 @@
       ]
     },
     {
+      "modelId": "indefension-aprendida-seligman-1975",
+      "modelLabel": "Indefensión aprendida",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Martin E. P. Seligman",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_seligman_deteccion_control",
+          "nombre": "Entrenamiento en detección de control",
+          "texto": "Procedimiento centrado en entrenar al paciente para identificar cuándo existe realmente control sobre una situación, diferenciándolo de contextos objetivamente incontrolables. Se trabaja la discriminación fina entre contingencias reales y expectativas aprendidas, corrigiendo sesgos de generalización que llevan a percibir ausencia de control donde sí lo hay, lo que permite reactivar la conducta adaptativa. (Abramson, Seligman & Teasdale, 1978).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_seligman_psicoeducacion",
+          "nombre": "Psicoeducación sobre indefensión",
+          "texto": "Procedimiento que explica el modelo de indefensión aprendida al paciente, incluyendo cómo se desarrolla, cómo se mantiene y cómo puede revertirse. Esta comprensión reduce la autoatribución global negativa, externaliza parcialmente el problema y facilita la implicación en tareas de cambio al dotar de sentido a la intervención terapéutica. (Seligman, 1975; Peterson et al., 1993).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_seligman_contingencia_explica",
+          "nombre": "Señalar contingencia explícita",
+          "texto": "Microintervención consistente en hacer explícita en sesión la relación entre conducta y resultado (“has hecho X y ha ocurrido Y”), ayudando al paciente a registrar conexiones que tiende a ignorar por su expectativa de incontrolabilidad, fortaleciendo así la percepción de control real sobre el entorno. (Seligman, 1975).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_seligman_diferenciacion_control",
+          "nombre": "Diferenciación controlable vs. incontrolable",
+          "texto": "Microintervención que ayuda a separar explícitamente los elementos de una situación que dependen del paciente de los que no, evitando la fusión global de “nada depende de mí” y facilitando decisiones más ajustadas. (Abramson et al., 1978).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "modelado-imitacion-bandura",
       "modelLabel": "Modelado e imitacion",
       "modelGrupo": "Conductismo",
@@ -1059,6 +1186,43 @@
           "codigo": "m_kelly_contexto_validez",
           "nombre": "Explorar el contexto de validez del constructo",
           "texto": "Microintervención que pregunta en qué contextos, con qué personas o bajo qué condiciones un constructo resulta útil y en cuáles deja de anticipar bien la experiencia. Favorece una visión menos totalizante del significado personal y ayuda a pasar de reglas universales rígidas a construcciones más situadas y flexibles (Kelly, 1955, The Psychology of Personal Constructs; Chiari & Nuzzo, 1996, Psicología de la construcción personal).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_janoff_assumptions_eval",
+          "nombre": "Evaluación de asunciones básicas dañadas",
+          "texto": "Procedimiento orientado a identificar qué creencias fundamentales han sido alteradas por el trauma, explorando específicamente las dimensiones de mundo benevolente, mundo significativo y valía del self. El terapeuta guía una exploración estructurada de cómo la persona entendía el mundo antes del evento y cómo lo percibe ahora, detectando rupturas, contradicciones y colapsos de sentido. Este proceso permite delimitar el núcleo del impacto traumático más allá del síntoma, situando el foco en la desorganización del significado y estableciendo una base clara para el trabajo posterior de reconstrucción. Referencia: Janoff-Bulman, R. (1992).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_janoff_incongruence_processing",
+          "nombre": "Procesamiento de la incongruencia entre experiencia y creencias previas",
+          "texto": "Procedimiento centrado en trabajar la disonancia entre lo ocurrido y las creencias previas sobre el mundo y el self. En lugar de evitar la contradicción, se facilita que la persona sostenga simultáneamente ambas dimensiones (lo que creía y lo que ocurrió), permitiendo que emerjan emociones asociadas y significados implícitos. Este proceso es necesario para que el sistema de creencias pueda reorganizarse en lugar de fragmentarse o rigidizarse defensivamente. Referencia: Janoff-Bulman, R. (1992).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_janoff_nombrar_creencias",
+          "nombre": "Nombrar creencias implícitas",
+          "texto": "Microintervención dirigida a hacer explícitas asunciones que la persona nunca había formulado verbalmente (por ejemplo, “las cosas malas no pasan sin motivo” o “si haces lo correcto estarás a salvo”), facilitando su observación y cuestionamiento. Permite pasar de un colapso implícito a una reconstrucción consciente. Referencia: Janoff-Bulman, R. (1992).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_janoff_expectativas_rotas",
+          "nombre": "Explorar expectativas rotas",
+          "texto": "Microintervención que identifica qué expectativas implícitas fueron violadas por el trauma (justicia, control, seguridad, predictibilidad), facilitando la comprensión de por qué el evento resulta tan desorganizante. Permite conectar la intensidad emocional con la ruptura de significado. Referencia: Janoff-Bulman, R. (1992).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }
@@ -1589,6 +1753,22 @@
           "texto": "Microintervención que construye frases breves de guía interna (“primero respiro, luego hablo”) para acompañar conductas nuevas en momentos de activación. Estas auto-instrucciones sirven como puente entre cognición y acción. (Lazarus, 1976)",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_safran_muran_exploracion_fenomenologica",
+          "nombre": "Exploración fenomenológica de la experiencia interpersonal del paciente",
+          "texto": "Procedimiento dirigido a clarificar cómo está viviendo el paciente al terapeuta, la sesión y su propia respuesta en la interacción, explorando pensamientos, emociones, impulsos, expectativas y significados sin precipitar interpretaciones abstractas. El objetivo es reconstruir la secuencia interpersonal subjetiva —qué percibió, qué anticipó, qué sintió y qué hizo con ello— para identificar el patrón relacional activado y evitar que la reparación quede en una simple tranquilización superficial. Referencia: Safran & Muran (2000); Safran & Muran (1998).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
         }
       ]
     },

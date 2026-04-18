@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 108,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 114,
   "modelos": [
     {
       "modelId": "medicina-tradicional-china-psicoemocional-1950",
@@ -354,6 +354,38 @@
           "texto": "Procedimiento para mapear qué hace la persona cuando se siente mal (evitar, aislarse, rumiar, anestesiarse) y cómo eso alivia a corto plazo pero mantiene a largo plazo. Se entrenan alternativas basadas en aproximación mindful (permitir sentir, volver al cuerpo, acción pequeña con sentido) y se refuerza el aprendizaje por evidencia personal. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "m_clark_test_prediccion",
+          "nombre": "Comprobación de predicción catastrófica",
+          "texto": "Invitar al paciente a formular explícitamente qué cree que va a pasar (“me desmayaré en 1 minuto”) y comprobar el resultado real, facilitando la desconfirmación directa de la creencia. Referencia: Clark (1997).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-intolerancia-incertidumbre-dugas",
+      "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michel J. Dugas; Robert Ladouceur",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "m_dugas_afrontamiento",
+          "nombre": "Evaluar capacidad de afrontamiento",
+          "texto": "Intervención breve que desplaza el foco desde “¿y si pasa?” hacia “¿podría manejarlo si pasara?”, fortaleciendo la percepción de capacidad y reduciendo la necesidad de certeza previa. Referencia: Dugas et al. (1998).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
         }
       ]
     },
@@ -1119,6 +1151,29 @@
       ]
     },
     {
+      "modelId": "indefension-aprendida-seligman-1975",
+      "modelLabel": "Indefensión aprendida",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Martin E. P. Seligman",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_seligman_restauracion_agencia",
+          "nombre": "Restauración gradual de agencia",
+          "texto": "Procedimiento clínico global que organiza la intervención en una secuencia progresiva de recuperación de la agencia, comenzando por tareas simples con alta probabilidad de éxito y avanzando hacia situaciones más complejas. El objetivo es reconstruir una identidad basada en la capacidad de influir en el entorno, integrando cambios conductuales, cognitivos y emocionales. (Peterson et al., 1993).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_seligman_refuerzo_intento",
+          "nombre": "Refuerzo de intento, no de resultado",
+          "texto": "Se refuerza verbalmente el hecho de haber actuado, independientemente del resultado, para reconstruir la asociación entre acción y valor personal, debilitando la evitación conductual basada en miedo al fracaso. (Seligman, 1975).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "inundacion-implosion-1967",
       "modelLabel": "Inundación / Implosión",
       "modelGrupo": "Conductismo",
@@ -1424,6 +1479,29 @@
           "codigo": "m_goncalves_agencia_implicita",
           "nombre": "Exploración de agencia implícita",
           "texto": "Se pregunta por la parte activa del self en el IM (“¿qué hiciste tú para que eso fuera posible?”), subrayando agencia y responsabilidad sin negar contexto, y reforzando la identidad emergente como actor de cambio. (Gonçalves et al., 2011).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_janoff_adaptive_meaning",
+          "nombre": "Facilitación de meaning-making adaptativo",
+          "texto": "Procedimiento dirigido a transformar la búsqueda de sentido en un proceso activo y flexible, evitando que se convierta en rumiación estéril o búsqueda de explicaciones cerradas. El terapeuta ayuda a la persona a tolerar la incertidumbre, aceptar la ausencia de respuestas completas y construir significados funcionales que orienten la acción y la identidad. Este proceso diferencia entre comprender totalmente el trauma y poder vivir con él de forma integrada. Referencia: Park, C. L. (2010).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_janoff_accion_significado",
+          "nombre": "Anclar significado en acción",
+          "texto": "Microintervención que traduce el proceso de reconstrucción de sentido en pequeñas decisiones o acciones coherentes con los nuevos significados emergentes. Evita que el trabajo quede solo en el plano cognitivo y facilita integración práctica en la vida cotidiana. Referencia: Park, C. L. (2010); Tedeschi & Calhoun (2004).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }
@@ -1986,6 +2064,36 @@
       ]
     },
     {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_control_limites",
+          "nombre": "Reconstrucción de control y límites",
+          "texto": "Procedimiento centrado en restaurar la capacidad de la persona para decidir, poner límites, protegerse y diferenciar lo que es aceptable de lo que no en sus relaciones y contexto. Incluye trabajo explícito sobre consentimiento, asertividad y detección de dinámicas abusivas, revirtiendo el estado de impotencia característico del trauma interpersonal. Referencia: Herman, J. L. (1992).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_herman_reintegracion_social",
+          "nombre": "Reintegración social",
+          "texto": "Procedimiento final orientado a la participación en la comunidad, el compromiso social y la reconstrucción del lugar de la persona en el mundo. Herman plantea que la recuperación completa implica no solo bienestar individual, sino también reconexión con redes sociales, roles y valores que trascienden el trauma. Referencia: Herman, J. L. (1992).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_herman_senal_control",
+          "nombre": "Señal de control en sesión",
+          "texto": "Establecimiento explícito de que el paciente puede parar, ralentizar o cambiar el foco en cualquier momento, restaurando sensación de control y evitando repetición de dinámicas de impotencia. Referencia: Herman, J. L. (1992).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "neurobiologia-interpersonal-siegel-1999",
       "modelLabel": "Neurobiología Interpersonal (IPNB)",
       "modelGrupo": "Integrativo",
@@ -2012,6 +2120,36 @@
           "codigo": "m_lazarus_revision_progreso",
           "nombre": "Revisión multimodal del progreso",
           "texto": "Microintervención que revisa explícitamente qué modalidades han cambiado y cuáles no, reforzando la percepción de avance parcial y ajustando expectativas. Esta revisión evita desmoralización y fortalece la autoría del paciente sobre los cambios logrados. (Lazarus, 1989)",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_safran_muran_generalizacion",
+          "nombre": "Generalización del aprendizaje relacional más allá de la sesión",
+          "texto": "Procedimiento orientado a vincular la ruptura reparada con patrones relacionales más amplios de la vida del paciente, ayudándole a reconocer cómo el modo en que se retiró, confrontó, anticipó daño o gestionó desacuerdo en terapia refleja formas habituales de organizar sus vínculos. El objetivo no es convertir la sesión en mera ilustración, sino usar la experiencia correctiva ya vivida para ampliar conciencia, agencia y repertorio relacional fuera del consultorio, consolidando el cambio como transformación interpersonal generalizable. Referencia: Safran & Muran (2000); Muran et al. (2009); Eubanks et al. (2018).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_safran_corregir_terapeuta",
+          "nombre": "Invitación a corregir al terapeuta",
+          "texto": "Microintervención que anima al paciente a corregir activamente la comprensión del terapeuta (“ayúdame a entender mejor si me estoy equivocando”), promoviendo agencia y participación activa en la construcción del proceso terapéutico. Referencia: Safran & Muran (2000).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_safran_refuerzo_autenticidad",
+          "nombre": "Refuerzo de expresión auténtica",
+          "texto": "Reconocimiento explícito cuando el paciente expresa desacuerdo, malestar o necesidad de forma directa, reforzando la autenticidad relacional como vía de fortalecimiento de la alianza. Referencia: Safran & Muran (2000).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }

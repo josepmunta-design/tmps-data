@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_aceptacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 72,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 76,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -569,6 +569,94 @@
       ]
     },
     {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_borkovec_exposicion_emocional",
+          "nombre": "Exposición a emociones evitadas",
+          "texto": "Procedimiento que implica entrar en contacto directo con emociones evitadas (miedo, tristeza, vulnerabilidad) sin recurrir a preocupación u otras estrategias de evitación. Se trabaja la tolerancia, la permanencia y la integración emocional, permitiendo que la emoción se procese y pierda su carácter amenazante. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_borkovec_sostener_imagen",
+          "nombre": "Sostener la imagen sin escape",
+          "texto": "Intervención que invita a mantener la imagen emocional activada durante un tiempo suficiente sin cambiar de tema, analizar o evitar, permitiendo que la emoción se despliegue y disminuya por sí misma. Es clave para el procesamiento emocional completo. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_borkovec_tolerar_emocion",
+          "nombre": "Tolerar activación emocional",
+          "texto": "Intervención centrada en sostener la emoción sin necesidad de reducirla inmediatamente, reforzando la capacidad de permanencia dentro de la experiencia afectiva sin recurrir a la preocupación como escape. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-intolerancia-incertidumbre-dugas",
+      "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michel J. Dugas; Robert Ladouceur",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_dugas_exposicion_incertidumbre",
+          "nombre": "Exposición conductual a la incertidumbre",
+          "texto": "Procedimiento central del modelo que implica exponerse deliberadamente a situaciones inciertas sin intentar reducir o eliminar la incertidumbre. El objetivo es aprender que la incertidumbre es tolerable y que no necesariamente conduce a resultados negativos, debilitando la necesidad de control. Referencia: Dugas & Ladouceur (2000).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dugas_tolerancia_incertidumbre",
+          "nombre": "Entrenamiento en tolerancia a la incertidumbre",
+          "texto": "Procedimiento orientado a aumentar la capacidad de sostener estados de duda, ambigüedad o imprevisibilidad sin necesidad de resolverlos. Incluye ejercicios progresivos de exposición y aceptación, desarrollando una respuesta emocional más flexible frente a lo incierto. Referencia: Dugas et al. (1998).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dugas_aceptacion_incertidumbre",
+          "nombre": "Aceptación de la incertidumbre como condición de vida",
+          "texto": "Procedimiento dirigido a integrar la incertidumbre como parte inevitable de la experiencia humana, desplazando el objetivo terapéutico de eliminarla a aprender a vivir con ella. Este cambio implica una reorganización profunda de la relación con el futuro y el control. Referencia: Dugas & Robichaud (2007).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dugas_permitir_no_saber",
+          "nombre": "Permitir no saber",
+          "texto": "Microintervención que invita explícitamente a sostener la incertidumbre sin resolverla, facilitando una experiencia directa de tolerancia a la duda. Es una operación central que sustituye el impulso de control por aceptación activa. Referencia: Dugas et al. (1998).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dugas_aceptar_resultado",
+          "nombre": "Aceptar resultado incierto",
+          "texto": "Intervención dirigida a asumir explícitamente que el resultado de una situación no puede conocerse de antemano, facilitando una postura de apertura frente al futuro en lugar de control rígido. Referencia: Dugas & Ladouceur (2000).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dugas_micro_exposicion",
+          "nombre": "Exponerse a pequeña incertidumbre",
+          "texto": "Microintervención que introduce pequeñas dosis de incertidumbre en la vida cotidiana (no comprobar algo, dejar una tarea sin cerrar completamente), entrenando tolerancia progresiva. Referencia: Dugas & Robichaud (2007).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dugas_sostener_duda",
+          "nombre": "Sostener duda sin respuesta",
+          "texto": "Microintervención que entrena al paciente a permanecer con una pregunta abierta sin responderla, desarrollando tolerancia directa a la ambigüedad sin recurrir a preocupación o evitación. Referencia: Dugas & Robichaud (2007).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "process-based-therapy-hayes-hofmann-2020",
       "modelLabel": "Terapia Basada en Procesos (PBT)",
       "modelGrupo": "Cognitivo",
@@ -765,6 +853,22 @@
           "texto": "Procedimiento para abordar la vergüenza y las dinámicas de rango (sentirse inferior, humillado, observado, “en juicio”) que frecuentemente activan amenaza y disociación. Se identifican escenas típicas, voces internas críticas y conductas de sumisión/contraataque, introduciendo autocompasión, validación emocional y reatribuciones realistas que disminuyan la necesidad de defensa extrema, facilitando la vuelta a cooperación y mentalización. (Liotti, 2000; Liotti & Monticelli, 2008).",
           "sub": "RE_aceptacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "m_janoff_normalizacion",
+          "nombre": "Normalizar la ruptura de sentido",
+          "texto": "Microintervención que valida que la pérdida de sentido, la confusión o la sensación de mundo incoherente son respuestas esperables tras trauma, reduciendo la patologización secundaria. Facilita tolerar la desorganización inicial como parte del proceso de reconstrucción. Referencia: Janoff-Bulman, R. (1992).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -1073,6 +1177,29 @@
           "codigo": "m_mbt_validacion",
           "nombre": "Validación sin colusión",
           "texto": "Microintervención que valida la emoción y la lógica subjetiva del paciente sin confirmar automáticamente su interpretación hostil o su certeza, manteniendo seguridad afectiva y apertura a alternativas. Referencia: Bateman & Fonagy (2006).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_psicoeducacion",
+          "nombre": "Psicoeducación sobre trauma",
+          "texto": "Procedimiento dirigido a explicar el funcionamiento del trauma (hiperactivación, disociación, intrusiones, evitación) como respuestas adaptativas del organismo, reduciendo culpa, vergüenza y confusión. Permite que la persona entienda sus síntomas como comprensibles y no como signos de debilidad o locura, facilitando una relación más regulada con su experiencia interna. Referencia: Herman, J. L. (1992).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_herman_validacion",
+          "nombre": "Validación del impacto traumático",
+          "texto": "Reconocimiento explícito del sufrimiento y de la lógica de las respuestas traumáticas, disminuyendo vergüenza, autoacusación y sensación de incomprensión, y fortaleciendo la seguridad relacional en la terapia. Referencia: Herman, J. L. (1992).",
           "sub": "RE_aceptacion",
           "tipo": "micro"
         }

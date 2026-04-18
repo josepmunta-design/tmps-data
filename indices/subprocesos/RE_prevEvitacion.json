@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 56,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 59,
   "modelos": [
     {
       "modelId": "meditacion-seon-zen-contextos-terapeuticos-corea-1985",
@@ -457,6 +457,124 @@
           "texto": "Procedimiento para mapear qué hace la persona cuando se siente mal (evitar, aislarse, rumiar, anestesiarse) y cómo eso alivia a corto plazo pero mantiene a largo plazo. Se entrenan alternativas basadas en aproximación mindful (permitir sentir, volver al cuerpo, acción pequeña con sentido) y se refuerza el aprendizaje por evidencia personal. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "RE_prevEvitacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_clark_exposicion_interoceptiva",
+          "nombre": "Exposición interoceptiva",
+          "texto": "Procedimiento dirigido a inducir deliberadamente sensaciones corporales temidas (mareo, palpitaciones, falta de aire) mediante ejercicios controlados, con el objetivo de reducir el miedo condicionado a dichas sensaciones. A través de la repetición, el paciente aprende que estas experiencias son tolerables y no peligrosas, debilitando la asociación entre sensación y catástrofe. Este procedimiento actúa directamente sobre la base fisiológica del pánico. Referencia: Clark, D. M. (1986); Barlow (2002).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_eliminacion_seguridad",
+          "nombre": "Eliminación de conductas de seguridad",
+          "texto": "Procedimiento orientado a identificar y reducir las conductas de seguridad (como sentarse rápidamente, evitar ejercicio o llevar objetos tranquilizadores), que impiden que el paciente compruebe que las sensaciones no son peligrosas. Su eliminación progresiva permite que la persona experimente directamente la ausencia de catástrofe, facilitando la desconfirmación de creencias y el mantenimiento del cambio. Referencia: Salkovskis (1988); Clark (1997).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_generalizacion",
+          "nombre": "Generalización a situaciones externas",
+          "texto": "Procedimiento orientado a trasladar los aprendizajes obtenidos en sesión a situaciones reales previamente evitadas (transporte público, ejercicio, espacios cerrados), asegurando que el cambio no se limita al contexto terapéutico. Implica exposición progresiva sin conductas de seguridad y aplicación activa de reinterpretaciones, consolidando el cambio en la vida cotidiana. Referencia: Clark (1997); Barlow (2002).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clark_detectar_seguridad",
+          "nombre": "Identificación de conductas de seguridad en el momento",
+          "texto": "Señalar en tiempo real qué conductas está utilizando el paciente para sentirse seguro (por ejemplo, sentarse, respirar de forma controlada, evitar moverse), aumentando la conciencia de su papel mantenedor. Referencia: Salkovskis (1988).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_borkovec_psicoeducacion_preocupacion",
+          "nombre": "Psicoeducación funcional sobre la preocupación",
+          "texto": "Procedimiento orientado a que el paciente comprenda la preocupación no como una herramienta útil de resolución de problemas, sino como una estrategia de evitación emocional que reduce temporalmente la activación pero mantiene el problema a largo plazo. Se explican los mecanismos de refuerzo negativo, el formato verbal de la preocupación y su función reguladora disfuncional, generando una nueva relación con el síntoma que permite empezar a interrumpirlo. Referencia: Borkovec & Inz (1990); Borkovec et al. (2004).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_borkovec_interrupcion_evitacion",
+          "nombre": "Interrupción de la evitación cognitiva",
+          "texto": "Procedimiento transversal que entrena al paciente a detectar y detener activamente el uso de la preocupación como estrategia de evitación. Incluye identificar señales tempranas, nombrar la función evitativa y redirigir hacia contacto emocional o acción. Es el eje clínico que articula todo el modelo. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_borkovec_nombrar_evitacion",
+          "nombre": "Nombrar la función evitativa",
+          "texto": "Intervención breve en la que el terapeuta ayuda al paciente a explicitar que la preocupación está evitando sentir algo más profundo, formulándolo de manera directa (por ejemplo: “esto parece una forma de no entrar en lo que sientes”). Desactiva la ilusión de utilidad de la preocupación. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_borkovec_corte_verbal",
+          "nombre": "Desengancharse de la cadena verbal",
+          "texto": "Intervención breve para cortar la cadena de pensamiento verbal cuando se detecta su función evitativa, utilizando redirección atencional o cambio de canal hacia experiencia directa. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_borkovec_evitacion_sutil",
+          "nombre": "Detectar evitación emocional sutil",
+          "texto": "Intervención dirigida a identificar formas sutiles de evitación dentro de la propia preocupación (intelectualización, análisis excesivo, cambio de tema), aumentando la precisión clínica sobre el proceso evitativo. Referencia: Borkovec et al. (1998).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-intolerancia-incertidumbre-dugas",
+      "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michel J. Dugas; Robert Ladouceur",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_dugas_reducir_certeza",
+          "nombre": "Reducción de conductas de búsqueda de certeza",
+          "texto": "Procedimiento dirigido a identificar y disminuir conductas como comprobación, sobreplanificación o búsqueda de garantías. Estas conductas reducen la ansiedad a corto plazo pero mantienen la intolerancia a la incertidumbre, por lo que su eliminación es clave para el cambio. Referencia: Dugas & Robichaud (2007).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dugas_detectar_control",
+          "nombre": "Señalar intento de control",
+          "texto": "Microintervención que identifica cuándo el paciente intenta reducir la incertidumbre mediante análisis, comprobación o planificación excesiva, devolviendo conciencia sobre el patrón de control que mantiene la ansiedad. Referencia: Dugas & Ladouceur (2000).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dugas_corte_comprobacion",
+          "nombre": "Interrumpir comprobación",
+          "texto": "Microintervención que detiene conductas de comprobación (buscar información, preguntar, revisar), ayudando al paciente a experimentar la incertidumbre sin recurrir a estrategias de alivio inmediato. Referencia: Dugas & Ladouceur (2000).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dugas_reducir_planificacion",
+          "nombre": "Reducir planificación excesiva",
+          "texto": "Microintervención que limita la planificación detallada orientada a eliminar incertidumbre, ayudando al paciente a tolerar variables no controladas en lugar de intentar anticiparlas todas. Referencia: Dugas & Robichaud (2007).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
         }
       ]
     },

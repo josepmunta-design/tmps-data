@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_rotulacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 87,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 90,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -330,6 +330,36 @@
           "codigo": "m_mbct_breathingspace_paso1",
           "nombre": "Respiración de 3 minutos – Paso 1 (reconocer qué hay ahora)",
           "texto": "Microintervención del primer paso del 3-Minute Breathing Space: detenerse y reconocer experiencia presente (pensamientos, emociones, sensaciones) para salir del automatismo y detectar el inicio de la espiral. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_borkovec_conciencia_emocional",
+          "nombre": "Entrenamiento en conciencia emocional",
+          "texto": "Procedimiento orientado a mejorar la identificación, diferenciación y tolerancia de emociones. Muchas personas con TAG tienen dificultades para reconocer qué sienten, lo que favorece la preocupación como sustituto. Este entrenamiento facilita el acceso a emociones primarias y reduce la necesidad de evitarlas cognitivamente. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_borkovec_identificar_emocion",
+          "nombre": "Identificar emoción subyacente",
+          "texto": "Microintervención que ayuda a discriminar qué emoción está debajo de la preocupación (miedo, tristeza, culpa, vulnerabilidad), clarificando el contenido afectivo que está siendo evitado. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_borkovec_pensar_vs_sentir",
+          "nombre": "Diferenciar pensar vs sentir",
+          "texto": "Microintervención que ayuda al paciente a distinguir claramente entre pensamiento (preocupación) y emoción, aumentando la conciencia de que pensar no es lo mismo que procesar lo que se siente. Referencia: Borkovec & Inz (1990).",
           "sub": "RE_rotulacion",
           "tipo": "micro"
         }
@@ -1516,6 +1546,29 @@
       ]
     },
     {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "m_herman_senales_activacion",
+          "nombre": "Identificación de señales de activación",
+          "texto": "Ayuda al paciente a reconocer precozmente señales corporales y emocionales de desregulación (tensión, aceleración, desconexión), facilitando intervención temprana antes de que el sistema se desborde. Referencia: Herman, J. L. (1992).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_herman_rotulacion_emocional",
+          "nombre": "Poner palabras a emociones traumáticas",
+          "texto": "Facilitar que la persona identifique y nombre emociones específicas (miedo, rabia, vergüenza), transformando estados difusos o somáticos en experiencia emocional diferenciada y procesable. Referencia: Herman, J. L. (1992).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "neurobiologia-interpersonal-siegel-1999",
       "modelLabel": "Neurobiología Interpersonal (IPNB)",
       "modelGrupo": "Integrativo",
@@ -1602,6 +1655,43 @@
           "codigo": "m_lazarus_rotulacion_afecto",
           "nombre": "Rotulación afectiva funcional",
           "texto": "Microintervención que entrena la identificación precisa de emociones dominantes y secundarias, diferenciándolas de pensamientos o sensaciones corporales, para reducir confusión afectiva y reactividad. La claridad emocional facilita elecciones conductuales más ajustadas y reduce evitación emocional. (Lazarus, 1989)",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_safran_muran_exploracion_fenomenologica",
+          "nombre": "Exploración fenomenológica de la experiencia interpersonal del paciente",
+          "texto": "Procedimiento dirigido a clarificar cómo está viviendo el paciente al terapeuta, la sesión y su propia respuesta en la interacción, explorando pensamientos, emociones, impulsos, expectativas y significados sin precipitar interpretaciones abstractas. El objetivo es reconstruir la secuencia interpersonal subjetiva —qué percibió, qué anticipó, qué sintió y qué hizo con ello— para identificar el patrón relacional activado y evitar que la reparación quede en una simple tranquilización superficial. Referencia: Safran & Muran (2000); Safran & Muran (1998).",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_safran_muran_temores_deseos",
+          "nombre": "Exploración de temores y deseos vinculados a la autenticidad relacional",
+          "texto": "Procedimiento que profundiza en lo que el paciente teme que ocurra si se muestra plenamente en la relación terapéutica —por ejemplo, ser rechazado, humillado, ignorado, invadido o considerado excesivo— y en lo que desearía recibir pero no se atreve a pedir. Esta exploración permite comprender la lógica protectora de la ruptura, ya sea retirándose o confrontando, y conecta el episodio actual con necesidades relacionales nucleares que suelen haber quedado organizadas defensivamente. Referencia: Safran & Muran (2000); Safran & Segal (1990) como antecedente teórico relacional-cognitivo.",
+          "sub": "RE_rotulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_safran_clarificacion_interpersonal",
+          "nombre": "Preguntas de clarificación interpersonal",
+          "texto": "Uso de preguntas específicas para precisar qué ha ocurrido en la interacción (“¿qué parte de lo que dije te resultó más difícil?”), ayudando a descomponer la experiencia global en elementos comprensibles y trabajables. Referencia: Safran & Muran (2000).",
+          "sub": "RE_rotulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_safran_emociones_evitar",
+          "nombre": "Exploración de emociones evitadas en la ruptura",
+          "texto": "Invitación a identificar emociones subyacentes no expresadas (rabia, vergüenza, miedo) que sostienen la ruptura, facilitando acceso a la experiencia emocional que da sentido al patrón relacional. Referencia: Safran & Muran (2000).",
           "sub": "RE_rotulacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_reparacionRelacional",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 47,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 49,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -512,6 +512,22 @@
       ]
     },
     {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_reconexion_relacional",
+          "nombre": "Reconexión relacional",
+          "texto": "Procedimiento de la tercera fase orientado a restablecer la capacidad de vincularse con otros de forma segura y significativa. Incluye reconstrucción de confianza, desarrollo de intimidad, revisión de patrones de apego y participación en relaciones reales no traumáticas. Es clave para salir del aislamiento traumático. Referencia: Herman, J. L. (1992).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "neurobiologia-interpersonal-siegel-1999",
       "modelLabel": "Neurobiología Interpersonal (IPNB)",
       "modelGrupo": "Integrativo",
@@ -545,6 +561,43 @@
           "codigo": "m_wachtel_reparacionMinima",
           "nombre": "Reparación mínima en el momento",
           "texto": "Microintervención que enseña a realizar una reparación relacional breve cuando el ciclo ya se ha activado, combinando reconocimiento del impacto, clarificación de la intención y un reintento inmediato. Esta reparación mínima evita que la interacción complete la secuencia confirmatoria habitual y entrena la capacidad de corregir el rumbo sin retirarse ni escalar el conflicto. (Wachtel, 2011)",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_safran_muran_resolucion_impasse",
+          "nombre": "Resolución colaborativa del impasse relacional",
+          "texto": "Procedimiento de cierre reparador en el que paciente y terapeuta elaboran una comprensión compartida de lo ocurrido, nombran contribuciones mutuas, aclaran malentendidos, reconocen impactos y acuerdan una forma nueva de seguir trabajando que incorpore el aprendizaje relacional generado. La reparación no se considera completa solo porque baje la tensión, sino cuando la relación recupera colaboración auténtica y el episodio se integra como experiencia nueva de conflicto abordable sin colapso del vínculo. Referencia: Safran & Muran (2000); Safran, Muran, & Eubanks-Carter (2011).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_safran_autorevelacion",
+          "nombre": "Auto-revelación estratégica del terapeuta",
+          "texto": "Uso cuidadoso de la propia experiencia del terapeuta (“me doy cuenta de que quizá fui demasiado directo”) para asumir responsabilidad parcial en la ruptura, modelando responsabilidad relacional y facilitando reparación sin culpabilizar al paciente. Referencia: Safran & Muran (2000); Safran et al. (2011).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_safran_responsabilidad_terapeuta",
+          "nombre": "Señalamiento de contribución del terapeuta",
+          "texto": "Reconocimiento explícito por parte del terapeuta de cómo su intervención pudo haber contribuido a la ruptura, facilitando reparación y modelando responsabilidad relacional sin caer en auto-culpabilización excesiva. Referencia: Safran & Muran (2000).",
+          "sub": "R_reparacionRelacional",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_safran_cierre_reparacion",
+          "nombre": "Cierre explícito de la reparación",
+          "texto": "Síntesis breve en la que terapeuta y paciente reconocen que han atravesado una ruptura y han encontrado una forma de resolverla, consolidando la experiencia como aprendizaje relacional explícito. Referencia: Safran & Muran (2000); Safran et al. (2011).",
           "sub": "R_reparacionRelacional",
           "tipo": "micro"
         }

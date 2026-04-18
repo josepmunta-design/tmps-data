@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_narrativaAutobiografica",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 58,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 61,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -283,6 +283,36 @@
           "codigo": "m_goncalves_conexion_ims",
           "nombre": "Conexión entre IM previos",
           "texto": "Se enlaza un IM actual con otros previos (“esto se parece a cuando…”), construyendo una trayectoria narrativa coherente en lugar de eventos aislados. (Gonçalves et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_janoff_worldview_impact",
+          "nombre": "Exploración del impacto del trauma en la visión del mundo",
+          "texto": "Procedimiento que analiza cómo el evento traumático ha transformado la percepción global del mundo, incluyendo cambios en la sensación de seguridad, justicia, previsibilidad y confianza en los demás. A través de narración guiada y reflexión, se examina el contraste entre la visión pre-trauma y post-trauma, haciendo explícitas las modificaciones implícitas en el sistema de significado. Este trabajo permite externalizar y simbolizar la ruptura, reduciendo la confusión difusa y facilitando la toma de conciencia sobre la reorganización en curso. Referencia: Janoff-Bulman, R. (1992); Park, C. L. (2010).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_janoff_narrative_integration",
+          "nombre": "Integración narrativa del evento traumático",
+          "texto": "Procedimiento orientado a incorporar el trauma dentro de la historia personal de forma coherente, evitando tanto la fragmentación como la sobregeneralización. Se trabaja la elaboración de una narrativa que incluya el evento, sus consecuencias y su significado, conectándolo con el pasado y el futuro. Esta integración reduce la sensación de extrañeza o ruptura identitaria y permite que la experiencia deje de vivirse como un elemento ajeno o intrusivo en la biografía. Referencia: Janoff-Bulman, R. (1992); Park, C. L. (2010).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_janoff_contraste_pre_post",
+          "nombre": "Contraste antes-después del trauma",
+          "texto": "Microintervención que invita a comparar explícitamente cómo era la visión del mundo y de uno mismo antes del trauma y cómo es ahora, identificando cambios concretos en creencias, expectativas y sentido de seguridad. Permite hacer visible la ruptura de significado y delimitar el impacto estructural del evento más allá del malestar difuso. Referencia: Janoff-Bulman, R. (1992).",
           "sub": "N_narrativaAutobiografica",
           "tipo": "micro"
         }
@@ -886,6 +916,29 @@
       ]
     },
     {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_narrativa_trauma",
+          "nombre": "Construcción de narrativa traumática",
+          "texto": "Procedimiento de la segunda fase que implica reconstruir progresivamente la historia del trauma en forma narrativa, integrando recuerdos fragmentados, emociones y significados en una secuencia temporal coherente. No busca exposición desorganizada, sino una elaboración gradual que permita transformar la memoria traumática en experiencia autobiográfica integrada. Referencia: Herman, J. L. (1992).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_herman_secuenciacion",
+          "nombre": "Secuenciación del relato",
+          "texto": "Organización progresiva del recuerdo traumático en una secuencia temporal (antes–durante–después), ayudando a transformar memorias fragmentadas en narrativa coherente. Referencia: Herman, J. L. (1992).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "neurobiologia-interpersonal-siegel-1999",
       "modelLabel": "Neurobiología Interpersonal (IPNB)",
       "modelGrupo": "Integrativo",
@@ -928,6 +981,22 @@
           "texto": "Microintervención que reescribe un episodio reciente incorporando la comprensión del ciclo y el punto de elección disponible, consolidando el aprendizaje y debilitando narrativas fatalistas. Esta reautoría micro-narrativa refuerza la percepción de agencia y facilita la generalización del cambio a futuras situaciones. (Wachtel, 2008)",
           "sub": "N_narrativaAutobiografica",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_safran_muran_generalizacion",
+          "nombre": "Generalización del aprendizaje relacional más allá de la sesión",
+          "texto": "Procedimiento orientado a vincular la ruptura reparada con patrones relacionales más amplios de la vida del paciente, ayudándole a reconocer cómo el modo en que se retiró, confrontó, anticipó daño o gestionó desacuerdo en terapia refleja formas habituales de organizar sus vínculos. El objetivo no es convertir la sesión en mera ilustración, sino usar la experiencia correctiva ya vivida para ampliar conciencia, agencia y repertorio relacional fuera del consultorio, consolidando el cambio como transformación interpersonal generalizable. Referencia: Safran & Muran (2000); Muran et al. (2009); Eubanks et al. (2018).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
         }
       ]
     },

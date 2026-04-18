@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 52,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 57,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -147,6 +147,73 @@
           "texto": "Procedimiento avanzado donde se ensayan mediante imaginería vívida situaciones futuras significativas que activan tanto miedo como deseo de crecimiento, entrenando una configuración motivacional más equilibrada. El paciente practica responder desde valores personales en presencia de activación emocional, fortaleciendo agencia y coherencia identitaria prospectiva. (Mennin & Fresco, 2014; Fresco et al., 2016).",
           "sub": "AP_evocacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_clark_experimentos_panico",
+          "nombre": "Experimentos conductuales sobre sensaciones temidas",
+          "texto": "Procedimiento experiencial clave que consiste en diseñar y realizar pruebas conductuales para evaluar las creencias catastróficas del paciente (por ejemplo, hiperventilar para comprobar si realmente se desmaya). Estos experimentos permiten generar evidencia directa que contradice las interpretaciones de peligro, siendo mucho más eficaces que la discusión verbal. Constituyen el núcleo de desconfirmación del modelo y facilitan un cambio profundo en la creencia. Referencia: Clark, D. M. (1986); Clark (1997).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_exposicion_interoceptiva",
+          "nombre": "Exposición interoceptiva",
+          "texto": "Procedimiento dirigido a inducir deliberadamente sensaciones corporales temidas (mareo, palpitaciones, falta de aire) mediante ejercicios controlados, con el objetivo de reducir el miedo condicionado a dichas sensaciones. A través de la repetición, el paciente aprende que estas experiencias son tolerables y no peligrosas, debilitando la asociación entre sensación y catástrofe. Este procedimiento actúa directamente sobre la base fisiológica del pánico. Referencia: Clark, D. M. (1986); Barlow (2002).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_borkovec_exposicion_preocupacion",
+          "nombre": "Exposición a la preocupación (worry exposure)",
+          "texto": "Procedimiento central del modelo que implica la evocación deliberada y sostenida de los contenidos de preocupación sin recurrir a evitación cognitiva. El paciente se mantiene en contacto con el pensamiento y la emoción asociada hasta que disminuye la activación, permitiendo habituación y procesamiento emocional completo. Se interrumpe el ciclo de evitación y se facilita la desconfirmación de amenazas anticipadas. Referencia: Borkovec & Inz (1990); Borkovec et al. (1998).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_borkovec_exposicion_imaginal",
+          "nombre": "Exposición imaginal a escenarios temidos",
+          "texto": "Procedimiento dirigido a transformar el formato verbal de la preocupación en imágenes vívidas y detalladas de los escenarios temidos. Al activar plenamente la experiencia emocional, se facilita el procesamiento que la preocupación evita. Es especialmente relevante porque rompe el mecanismo central del modelo: la evitación mediante pensamiento abstracto. Referencia: Borkovec et al. (1998).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_borkovec_reduccion_verbal",
+          "nombre": "Reducción del formato verbal de la preocupación",
+          "texto": "Procedimiento que entrena al paciente a detectar cuándo está en modo verbal abstracto y a transformarlo en experiencia directa (imaginal o emocional). Se busca abandonar el pensamiento analítico repetitivo y acceder a la vivencia emocional subyacente, debilitando la función evitativa del lenguaje. Referencia: Borkovec & Inz (1990).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_borkovec_verbal_a_imagen",
+          "nombre": "Cambiar de verbal a imaginal",
+          "texto": "Microintervención que guía al paciente a transformar pensamientos abstractos en imágenes concretas y sensoriales del escenario temido, aumentando la activación emocional y rompiendo la evitación cognitiva basada en lenguaje. Referencia: Borkovec & Inz (1990).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_borkovec_peor_escenario",
+          "nombre": "Focalizar en la peor consecuencia",
+          "texto": "Consiste en llevar deliberadamente la preocupación hasta su peor desenlace imaginable, evitando el salto constante entre escenarios. Permite activar completamente la emoción subyacente y facilita el procesamiento en lugar de la evitación fragmentada. Referencia: Borkovec et al. (1998).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -324,6 +391,22 @@
           "texto": "Microintervención destinada a captar significados implícitos que todavía no están claramente simbolizados, a menudo a través de vacilaciones, contradicciones, cambios de tono o malestar difuso ante ciertos temas. Aunque PCP no es un modelo emocional profundo al estilo experiencial, sí necesita a veces este gesto fino para hacer emerger constructos todavía no formulados que organizan el campo clínico (Kelly, 1955, The Psychology of Personal Constructs; Chiari & Nuzzo, 1996, Psicología de la construcción personal).",
           "sub": "AP_evocacion",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_janoff_worldview_impact",
+          "nombre": "Exploración del impacto del trauma en la visión del mundo",
+          "texto": "Procedimiento que analiza cómo el evento traumático ha transformado la percepción global del mundo, incluyendo cambios en la sensación de seguridad, justicia, previsibilidad y confianza en los demás. A través de narración guiada y reflexión, se examina el contraste entre la visión pre-trauma y post-trauma, haciendo explícitas las modificaciones implícitas en el sistema de significado. Este trabajo permite externalizar y simbolizar la ruptura, reduciendo la confusión difusa y facilitando la toma de conciencia sobre la reorganización en curso. Referencia: Janoff-Bulman, R. (1992); Park, C. L. (2010).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -824,6 +907,29 @@
       ]
     },
     {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_narrativa_trauma",
+          "nombre": "Construcción de narrativa traumática",
+          "texto": "Procedimiento de la segunda fase que implica reconstruir progresivamente la historia del trauma en forma narrativa, integrando recuerdos fragmentados, emociones y significados en una secuencia temporal coherente. No busca exposición desorganizada, sino una elaboración gradual que permita transformar la memoria traumática en experiencia autobiográfica integrada. Referencia: Herman, J. L. (1992).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_herman_dosificacion",
+          "nombre": "Dosificación del recuerdo",
+          "texto": "Ajuste continuo de la intensidad y duración del contacto con material traumático para evitar desbordamiento, manteniendo la activación dentro de la ventana de tolerancia. Referencia: Herman, J. L. (1992); Cloitre et al. (2011).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "neurobiologia-interpersonal-siegel-1999",
       "modelLabel": "Neurobiología Interpersonal (IPNB)",
       "modelGrupo": "Integrativo",
@@ -864,6 +970,22 @@
           "codigo": "m_lazarus_ensayo_imaginado",
           "nombre": "Ensayo imaginado de afrontamiento",
           "texto": "Microintervención que guía al paciente a imaginar de forma vívida una conducta alternativa eficaz frente a una situación temida, preparando respuesta emocional y conductual antes de la exposición real. Este ensayo reduce evitación y aumenta probabilidad de acción. (Lazarus, 1989)",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_safran_emociones_evitar",
+          "nombre": "Exploración de emociones evitadas en la ruptura",
+          "texto": "Invitación a identificar emociones subyacentes no expresadas (rabia, vergüenza, miedo) que sostienen la ruptura, facilitando acceso a la experiencia emocional que da sentido al patrón relacional. Referencia: Safran & Muran (2000).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }

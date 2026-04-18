@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_profundizacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 41,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 44,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -76,6 +76,57 @@
           "codigo": "m_craske_elemento_inesperado",
           "nombre": "Introducción de elemento inesperado",
           "texto": "Se añade deliberadamente un pequeño elemento impredecible a la exposición para aumentar la fuerza del aprendizaje inhibitorio y evitar que el paciente atribuya el éxito a condiciones controladas excesivamente específicas. Referencia: Craske et al. (2014).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_borkovec_exposicion_imaginal",
+          "nombre": "Exposición imaginal a escenarios temidos",
+          "texto": "Procedimiento dirigido a transformar el formato verbal de la preocupación en imágenes vívidas y detalladas de los escenarios temidos. Al activar plenamente la experiencia emocional, se facilita el procesamiento que la preocupación evita. Es especialmente relevante porque rompe el mecanismo central del modelo: la evitación mediante pensamiento abstracto. Referencia: Borkovec et al. (1998).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_borkovec_conciencia_emocional",
+          "nombre": "Entrenamiento en conciencia emocional",
+          "texto": "Procedimiento orientado a mejorar la identificación, diferenciación y tolerancia de emociones. Muchas personas con TAG tienen dificultades para reconocer qué sienten, lo que favorece la preocupación como sustituto. Este entrenamiento facilita el acceso a emociones primarias y reduce la necesidad de evitarlas cognitivamente. Referencia: Borkovec et al. (2004).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_borkovec_peor_escenario",
+          "nombre": "Focalizar en la peor consecuencia",
+          "texto": "Consiste en llevar deliberadamente la preocupación hasta su peor desenlace imaginable, evitando el salto constante entre escenarios. Permite activar completamente la emoción subyacente y facilita el procesamiento en lugar de la evitación fragmentada. Referencia: Borkovec et al. (1998).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_borkovec_sostener_imagen",
+          "nombre": "Sostener la imagen sin escape",
+          "texto": "Intervención que invita a mantener la imagen emocional activada durante un tiempo suficiente sin cambiar de tema, analizar o evitar, permitiendo que la emoción se despliegue y disminuya por sí misma. Es clave para el procesamiento emocional completo. Referencia: Borkovec et al. (2004).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_borkovec_volver_emocion",
+          "nombre": "Volver al foco emocional",
+          "texto": "Intervención breve que redirige al paciente desde el análisis cognitivo hacia la experiencia emocional concreta (“¿qué sientes ahora mismo con esto?”), facilitando acceso directo a la emoción evitada. Referencia: Borkovec et al. (2004).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_borkovec_silencio",
+          "nombre": "Permitir silencio emocional",
+          "texto": "Microintervención consistente en sostener momentos de silencio sin llenarlos con pensamiento, facilitando que emerja la experiencia emocional subyacente que la preocupación bloquea. Referencia: Borkovec et al. (2004).",
           "sub": "AP_profundizacion",
           "tipo": "micro"
         }
@@ -163,6 +214,22 @@
           "texto": "Micro que mantiene la atención del paciente en la experiencia emocional activada el tiempo suficiente para que se despliegue plenamente, evitando escapes cognitivos o narrativos. El terapeuta regula el ritmo y la intensidad para permanecer dentro de la ventana de tolerancia. Esta profundización es condición necesaria para activar procesos de reconsolidación (Ecker, 2015).",
           "sub": "AP_profundizacion",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_janoff_incongruence_processing",
+          "nombre": "Procesamiento de la incongruencia entre experiencia y creencias previas",
+          "texto": "Procedimiento centrado en trabajar la disonancia entre lo ocurrido y las creencias previas sobre el mundo y el self. En lugar de evitar la contradicción, se facilita que la persona sostenga simultáneamente ambas dimensiones (lo que creía y lo que ocurrió), permitiendo que emerjan emociones asociadas y significados implícitos. Este proceso es necesario para que el sistema de creencias pueda reorganizarse en lugar de fragmentarse o rigidizarse defensivamente. Referencia: Janoff-Bulman, R. (1992).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -778,6 +845,22 @@
           "codigo": "p_mbt_foco_afecto",
           "nombre": "Focalización en afecto y mentalización de la emoción",
           "texto": "Procedimiento que guía al paciente a identificar y sostener el afecto relevante en el episodio sin desbordarse, distinguiendo emociones primarias de reacciones secundarias y conectándolas con significados e intenciones. El objetivo no es catarsis, sino recuperar capacidad de pensar sobre la emoción mientras se siente, manteniendo la mente online. Referencia: Fonagy et al. (2002); Bateman & Fonagy (2006).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_procesamiento_emocional",
+          "nombre": "Procesamiento emocional del trauma",
+          "texto": "Procedimiento orientado a activar y atravesar las emociones asociadas al trauma (miedo, rabia, vergüenza, tristeza) dentro de un contexto regulado, permitiendo su transformación y resolución. Implica sostener la experiencia emocional sin evitación ni desbordamiento, facilitando reorganización afectiva profunda. Referencia: Herman, J. L. (1992); Cloitre et al. (2011).",
           "sub": "AP_profundizacion",
           "tipo": "procedimiento"
         }

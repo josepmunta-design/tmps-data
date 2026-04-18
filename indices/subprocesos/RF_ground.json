@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_ground",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 30,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 33,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -289,6 +289,45 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "m_clark_redireccion_atencion",
+          "nombre": "Redirección atencional externa",
+          "texto": "Microintervención que consiste en desplazar voluntariamente la atención hacia estímulos externos (sonidos, objetos, tareas) para reducir la amplificación de las sensaciones internas y cortar el bucle de autoobservación ansiosa. Referencia: Clark (1986).",
+          "sub": "RF_ground",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clark_anclaje_temporal",
+          "nombre": "Anclaje temporal del episodio",
+          "texto": "Recordar al paciente que el pico de ansiedad es limitado en el tiempo (“esto sube y baja”), ayudando a reducir la percepción de descontrol infinito y facilitando tolerancia durante el episodio. Referencia: Clark (1986).",
+          "sub": "RF_ground",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "m_borkovec_anclaje_presente",
+          "nombre": "Anclar en experiencia presente",
+          "texto": "Microintervención que utiliza sensaciones corporales o elementos del entorno para sacar al paciente del bucle de preocupación futura y devolverlo al presente, reduciendo activación y facilitando acceso emocional real. Referencia: Borkovec et al. (2004).",
+          "sub": "RF_ground",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "apego-desorganizado-disociacion-liotti-1992",
       "modelLabel": "Modelo de apego desorganizado, disociación y sistemas motivacionales",
       "modelGrupo": "Constructivista",
@@ -435,6 +474,29 @@
           "codigo": "m_mbt_anclaje",
           "nombre": "Anclaje regulador breve",
           "texto": "Microintervención de grounding breve cuando la activación amenaza con romper la mentalización, devolviendo orientación corporal y presente para poder seguir pensando sin colapsar. Referencia: Bateman & Fonagy (2006).",
+          "sub": "RF_ground",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "m_herman_orientacion_presente",
+          "nombre": "Orientación al presente",
+          "texto": "Intervención breve para anclar a la persona en el aquí y ahora mediante preguntas o indicaciones sensoriales (“¿dónde estás ahora?”, “mira alrededor y nombra tres cosas”), reduciendo desrealización, disociación o intrusión traumática y restaurando orientación temporal y corporal. Referencia: Herman, J. L. (1992).",
+          "sub": "RF_ground",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_herman_objeto_seguridad",
+          "nombre": "Uso de objeto de seguridad",
+          "texto": "Introducción de un objeto físico o estímulo sensorial que ayude a anclar en el presente y generar sensación de seguridad, especialmente útil en momentos de disociación o activación traumática intensa. Referencia: Herman, J. L. (1992).",
           "sub": "RF_ground",
           "tipo": "micro"
         }

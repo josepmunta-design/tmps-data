@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ALI_monitorizacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 19,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 20,
   "modelos": [
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
@@ -110,6 +110,43 @@
           "texto": "Procedimiento de seguimiento sistemático del progreso, evaluando cambios en cada modalidad (conductas clave, intensidad/claridad emocional, síntomas somáticos, intrusiones imaginativas, rumiación/cogniciones, calidad relacional, sueño/sustancias/medicación) para decidir qué mantener, qué intensificar y qué cambiar. Esta monitorización previene estancamientos y reduce el riesgo de tratamientos largos sin dirección, haciendo que la terapia sea adaptable sin perder estructura. (Lazarus, 1989)",
           "sub": "ALI_monitorizacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_safran_muran_monitorizacion_ruptura",
+          "nombre": "Monitorización continua de marcadores de ruptura",
+          "texto": "Procedimiento destinado a detectar de forma temprana microseñales de tensión, distanciamiento, sumisión aparente, complacencia vacía, irritación, desacuerdo, silencios densos, cambios bruscos de tono, intelectualización defensiva o cumplimiento sin implicación, entendiendo que las rupturas suelen empezar como alteraciones sutiles del proceso colaborativo antes de hacerse explícitas. El terapeuta observa simultáneamente contenido, forma de interacción, respuesta corporal y cambios en la mutualidad para identificar cuándo la alianza deja de funcionar como base de trabajo compartido. Referencia: Safran, J. D., & Muran, J. C. (2000); Safran & Muran (1996).",
+          "sub": "ALI_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_safran_muran_autoexploracion_terapeuta",
+          "nombre": "Autoexploración del terapeuta y uso reflexivo de la contratransferencia",
+          "texto": "Procedimiento mediante el cual el terapeuta examina sus propias reacciones afectivas, impulsos defensivos, deseos de retirarse, justificarse, agradar, controlar o confrontar, utilizándolos como datos clínicos sobre el proceso relacional en lugar de actuar automáticamente desde ellos. En este modelo, la autorreflexión del terapeuta es imprescindible porque muchas rupturas se intensifican cuando responde desde puntos ciegos no mentalizados, mientras que su uso reflexivo permite transformar la interacción en un espacio de negociación genuina. Referencia: Safran & Muran (2000); Samstag et al. (2004).",
+          "sub": "ALI_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_safran_microdesconexion",
+          "nombre": "Señalamiento de microdesconexión",
+          "texto": "Microintervención en la que el terapeuta nombra de forma suave y tentativa un cambio sutil en la conexión (“noto que algo ha cambiado ahora mismo entre nosotros”), permitiendo traer a la conciencia una ruptura incipiente antes de que se consolide como retirada o confrontación explícita, facilitando su exploración temprana. Referencia: Safran & Muran (2000).",
+          "sub": "ALI_monitorizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_safran_chequeo_alianza",
+          "nombre": "Chequeo explícito de la alianza",
+          "texto": "Pregunta directa sobre cómo está siendo vivida la terapia (“¿sientes que esto te está ayudando?”), permitiendo detectar rupturas encubiertas y ajustar objetivos o tareas antes de que se traduzcan en abandono o desconexión. Referencia: Safran & Muran (2000); Eubanks et al. (2018).",
+          "sub": "ALI_monitorizacion",
+          "tipo": "micro"
         }
       ]
     },

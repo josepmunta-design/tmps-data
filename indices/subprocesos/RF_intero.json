@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_intero",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 29,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 30,
   "modelos": [
     {
       "modelId": "medicina-tradicional-china-psicoemocional-1950",
@@ -412,6 +412,29 @@
           "codigo": "m_mbct_movimiento_ajuste",
           "nombre": "Movimiento consciente: notar límites y ajustar sin forzar",
           "texto": "Microintervención de usar el cuerpo en movimiento para entrenar autorregulación: notar tensión/dolor, ajustar intensidad y sostener una relación no punitiva con el cuerpo, útil para pacientes con exigencia o desconexión corporal. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_clark_reduccion_hipervigilancia",
+          "nombre": "Reducción de la hipervigilancia corporal",
+          "texto": "Procedimiento destinado a disminuir la atención excesiva a las sensaciones corporales, que amplifica su percepción y facilita su interpretación catastrófica. Se entrenan estrategias de redirección atencional y de observación no reactiva, permitiendo que las sensaciones pierdan saliencia y relevancia amenazante. Este cambio reduce la frecuencia de activación del ciclo de pánico. Referencia: Clark, D. M. (1986).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clark_detectar_hipervigilancia",
+          "nombre": "Detectar aumento de atención corporal",
+          "texto": "Ayudar al paciente a darse cuenta de cuándo está escaneando activamente su cuerpo en busca de señales de peligro, identificando este proceso como parte del problema y no como una respuesta útil. Referencia: Clark, D. M. (1986).",
           "sub": "RF_intero",
           "tipo": "micro"
         }

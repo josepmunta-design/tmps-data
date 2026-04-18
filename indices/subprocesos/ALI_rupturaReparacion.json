@@ -1,7 +1,7 @@
 {
   "subprocesoId": "ALI_rupturaReparacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 13,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 14,
   "modelos": [
     {
       "modelId": "terapia-dialectico-conductual-linehan-1993",
@@ -94,6 +94,78 @@
           "texto": "Procedimiento que utiliza lo que ocurre entre paciente y terapeuta como material clínico para observar en vivo fallos de mentalización, atribuciones y reacciones de apego. Se trabaja con sensibilidad para clarificar impacto, revisar intenciones atribuidas y reparar el vínculo, convirtiendo la sesión en un entrenamiento real de mentalización interpersonal y reparación. Referencia: Bateman & Fonagy (2004, 2006).",
           "sub": "ALI_rupturaReparacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_safran_muran_tipologia_ruptura",
+          "nombre": "Identificación tipológica de la ruptura: retirada o confrontación",
+          "texto": "Procedimiento de discriminación clínica que organiza la ruptura según su forma predominante: retirada, cuando el paciente se desconecta, cede, minimiza, complace o se vuelve difuso para preservar el vínculo evitando el conflicto; o confrontación, cuando expresa queja, desacuerdo, irritación, crítica o presión hacia el terapeuta o el tratamiento. Esta diferenciación no es meramente descriptiva: orienta intervenciones distintas, ya que en la retirada hay que facilitar emergencia de la subjetividad inhibida, mientras que en la confrontación hay que sostener el conflicto sin defenderse ni contraatacar. Referencia: Safran & Muran (2000); Muran, Safran, & Eubanks-Carter (2010).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_safran_muran_metacomunicacion",
+          "nombre": "Metacomunicación focal sobre el aquí y ahora de la relación",
+          "texto": "Procedimiento central del modelo que consiste en desplazar temporalmente el foco desde el problema externo o el contenido narrado hacia lo que está ocurriendo entre paciente y terapeuta en ese mismo momento, formulando observaciones tentativas del tipo “creo que ahora mismo algo entre nosotros se ha tensado” o “me pregunto si lo que acabo de decir ha generado distancia”. La metacomunicación hace visible el proceso implícito, convierte la interacción en objeto compartido de reflexión y abre la posibilidad de transformar enactments relacionales en experiencia pensable y negociable. Referencia: Safran & Muran (2000); Safran, Muran, & Eubanks-Carter (2011).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_safran_muran_retirada",
+          "nombre": "Intervención específica en rupturas de retirada",
+          "texto": "Procedimiento específico para cuando el paciente se somete, se calla, se vuelve vago, intelectualiza, dice “sí” sin convicción o aparenta cooperación mientras se aleja internamente. El terapeuta ralentiza, reduce presión, señala delicadamente la posible desconexión y facilita que el paciente contacte con lo que no está diciendo, incluyendo enfado, decepción, vergüenza, miedo a herir al terapeuta o temor a perder el vínculo. La prioridad no es empujar contenido, sino recuperar presencia subjetiva y participación auténtica en la relación. Referencia: Safran & Muran (2000); Safran, Muran, Samstag, & Stevens (2002).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_safran_muran_confrontacion",
+          "nombre": "Intervención específica en rupturas de confrontación",
+          "texto": "Procedimiento específico para situaciones en las que el paciente critica, desafía, presiona, acusa, expresa frustración o cuestiona el valor de la terapia o del terapeuta. El terapeuta evita responder con defensa, contraargumentación o repliegue técnico, y en su lugar legitima el desacuerdo, lo explora con curiosidad y ayuda a precisar qué aspecto de la interacción o del encuadre ha sido vivido como fallido, intrusivo, desatento o no colaborativo. Esto permite sostener el conflicto sin ruptura adicional y convertir la confrontación en material transformador. Referencia: Safran & Muran (2000); Eubanks, Muran, & Safran (2015, 2018).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_safran_muran_resolucion_impasse",
+          "nombre": "Resolución colaborativa del impasse relacional",
+          "texto": "Procedimiento de cierre reparador en el que paciente y terapeuta elaboran una comprensión compartida de lo ocurrido, nombran contribuciones mutuas, aclaran malentendidos, reconocen impactos y acuerdan una forma nueva de seguir trabajando que incorpore el aprendizaje relacional generado. La reparación no se considera completa solo porque baje la tensión, sino cuando la relación recupera colaboración auténtica y el episodio se integra como experiencia nueva de conflicto abordable sin colapso del vínculo. Referencia: Safran & Muran (2000); Safran, Muran, & Eubanks-Carter (2011).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_safran_aqui_ahora",
+          "nombre": "Focalización en el aquí y ahora relacional",
+          "texto": "Desplazamiento del foco desde narrativas externas hacia la interacción presente, invitando al paciente a explorar lo que está ocurriendo en la relación terapéutica en ese momento, facilitando el trabajo directo sobre el enactment. Referencia: Safran & Muran (2000).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_safran_nombrar_evitacion",
+          "nombre": "Nombrar la evitación relacional",
+          "texto": "Señalamiento cuidadoso de que el paciente podría estar evitando expresar algo importante en la relación (“me pregunto si hay algo que cuesta decirme ahora”), facilitando el acceso a contenido inhibido sin confrontación directa. Referencia: Safran & Muran (2000).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_safran_responsabilidad_terapeuta",
+          "nombre": "Señalamiento de contribución del terapeuta",
+          "texto": "Reconocimiento explícito por parte del terapeuta de cómo su intervención pudo haber contribuido a la ruptura, facilitando reparación y modelando responsabilidad relacional sin caer en auto-culpabilización excesiva. Referencia: Safran & Muran (2000).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_safran_cierre_reparacion",
+          "nombre": "Cierre explícito de la reparación",
+          "texto": "Síntesis breve en la que terapeuta y paciente reconocen que han atravesado una ruptura y han encontrado una forma de resolverla, consolidando la experiencia como aprendizaje relacional explícito. Referencia: Safran & Muran (2000); Safran et al. (2011).",
+          "sub": "ALI_rupturaReparacion",
+          "tipo": "micro"
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_reapreciacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 25,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 26,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -120,6 +120,43 @@
           "codigo": "m_ie_salovey_mayer_reevaluacion_basica",
           "nombre": "Reevaluación básica del significado emocional",
           "texto": "Ajuste inmediato de la interpretación que intensifica la emoción (p. ej., de amenaza global a desafío específico), sin negar el hecho, con el fin de modular activación y mejorar margen de maniobra conductual. (Mayer & Salovey, 1997).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_clark_psicoeducacion_panico",
+          "nombre": "Psicoeducación sobre el modelo del pánico",
+          "texto": "Procedimiento inicial orientado a explicar al paciente el modelo cognitivo del pánico, enfatizando que las sensaciones físicas no son peligrosas en sí mismas, sino que el problema reside en su interpretación catastrófica. Se introduce el ciclo de retroalimentación (sensación → interpretación → ansiedad → más sensación) para que el paciente pueda reconocer su propia experiencia dentro de este marco. Esta comprensión reduce la incertidumbre, disminuye la amenaza percibida y establece una base racional para el trabajo posterior. Referencia: Clark, D. M. (1986); Clark (1997).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_reinterpretacion_sensaciones",
+          "nombre": "Entrenamiento en reinterpretación de sensaciones",
+          "texto": "Procedimiento orientado a automatizar la capacidad del paciente para reinterpretar en tiempo real las sensaciones físicas como inofensivas, especialmente en fases iniciales del ataque de pánico. A través de repetición y práctica, se busca que el paciente pueda interrumpir el ciclo de retroalimentación antes de que escale, transformando la respuesta emocional de forma rápida y eficaz. Referencia: Clark, D. M. (1986); Clark (1997).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clark_diferenciar_sensacion",
+          "nombre": "Diferenciar sensación de interpretación",
+          "texto": "Microintervención que consiste en separar deliberadamente la experiencia física (por ejemplo, “tengo palpitaciones”) de la interpretación catastrófica (“voy a tener un infarto”), ayudando al paciente a reconocer que la emoción depende del significado atribuido y no de la sensación en sí misma. Referencia: Clark, D. M. (1986).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clark_normalizar_sensacion",
+          "nombre": "Normalización de sensaciones fisiológicas",
+          "texto": "Explicar brevemente que las sensaciones experimentadas son respuestas normales del sistema nervioso (por ejemplo, activación simpática), reduciendo su interpretación como señal de peligro. Referencia: Clark (1986).",
           "sub": "RE_reapreciacion",
           "tipo": "micro"
         }

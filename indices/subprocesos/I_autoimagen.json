@@ -1,7 +1,7 @@
 {
   "subprocesoId": "I_autoimagen",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 51,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 56,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -138,6 +138,38 @@
           "codigo": "m_cft_good_enough",
           "nombre": "Regla del “suficientemente bien” (Good-enough)",
           "texto": "Diseñar conductas deliberadamente imperfectas y sostenibles para debilitar el patrón perfeccionista sin colapso.",
+          "sub": "I_autoimagen",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_clark_creencias_vulnerabilidad",
+          "nombre": "Trabajo con creencias sobre vulnerabilidad corporal",
+          "texto": "Procedimiento dirigido a identificar y modificar creencias más profundas sobre la fragilidad del cuerpo o la incapacidad de tolerar activación fisiológica (por ejemplo, “mi cuerpo es débil”, “no puedo soportar esto”). Estas creencias predisponen a la interpretación catastrófica y su modificación permite una reducción más estable del miedo al pánico. Referencia: Clark, D. M. (1986).",
+          "sub": "I_autoimagen",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-intolerancia-incertidumbre-dugas",
+      "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michel J. Dugas; Robert Ladouceur",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "m_dugas_afrontamiento",
+          "nombre": "Evaluar capacidad de afrontamiento",
+          "texto": "Intervención breve que desplaza el foco desde “¿y si pasa?” hacia “¿podría manejarlo si pasara?”, fortaleciendo la percepción de capacidad y reduciendo la necesidad de certeza previa. Referencia: Dugas et al. (1998).",
           "sub": "I_autoimagen",
           "tipo": "micro"
         }
@@ -296,6 +328,29 @@
       ]
     },
     {
+      "modelId": "indefension-aprendida-seligman-1975",
+      "modelLabel": "Indefensión aprendida",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Martin E. P. Seligman",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_seligman_reatribucion",
+          "nombre": "Reentrenamiento atribucional",
+          "texto": "Procedimiento dirigido a modificar el estilo atribucional disfuncional, especialmente las atribuciones internas, estables y globales asociadas al fracaso. Se promueve la reinterpretación de los eventos negativos como externos, específicos y modificables, reduciendo la vulnerabilidad a la indefensión y favoreciendo una autoimagen más flexible y contextualizada. (Abramson, Seligman & Teasdale, 1978).",
+          "sub": "I_autoimagen",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_seligman_restauracion_agencia",
+          "nombre": "Restauración gradual de agencia",
+          "texto": "Procedimiento clínico global que organiza la intervención en una secuencia progresiva de recuperación de la agencia, comenzando por tareas simples con alta probabilidad de éxito y avanzando hacia situaciones más complejas. El objetivo es reconstruir una identidad basada en la capacidad de influir en el entorno, integrando cambios conductuales, cognitivos y emocionales. (Peterson et al., 1993).",
+          "sub": "I_autoimagen",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "construccionismo-social-gergen-1985",
       "modelLabel": "Construccionismo social (Kenneth Gergen)",
       "modelGrupo": "Constructivista",
@@ -389,6 +444,36 @@
           "codigo": "m_goncalves_micro_reconceptualizacion",
           "nombre": "Micro-reconceptualización",
           "texto": "Se ayuda a formular una breve síntesis transformadora del IM (“esto muestra que no eres solo… sino también…”), preparando el terreno para reconceptualizaciones más amplias. (Gonçalves et al., 2011; Gonçalves et al., 2016).",
+          "sub": "I_autoimagen",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_janoff_assumptions_eval",
+          "nombre": "Evaluación de asunciones básicas dañadas",
+          "texto": "Procedimiento orientado a identificar qué creencias fundamentales han sido alteradas por el trauma, explorando específicamente las dimensiones de mundo benevolente, mundo significativo y valía del self. El terapeuta guía una exploración estructurada de cómo la persona entendía el mundo antes del evento y cómo lo percibe ahora, detectando rupturas, contradicciones y colapsos de sentido. Este proceso permite delimitar el núcleo del impacto traumático más allá del síntoma, situando el foco en la desorganización del significado y estableciendo una base clara para el trabajo posterior de reconstrucción. Referencia: Janoff-Bulman, R. (1992).",
+          "sub": "I_autoimagen",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_janoff_self_reorganization",
+          "nombre": "Reorganización de la autoimagen tras el trauma",
+          "texto": "Procedimiento orientado a reconstruir la percepción de uno mismo cuando ha sido dañada por el trauma, especialmente en casos donde emergen culpa, vergüenza o sensación de defectuosidad. Se trabaja la integración de la experiencia sin que esta defina globalmente la identidad, diferenciando lo ocurrido de quién es la persona. Este proceso permite recuperar una autoimagen más compleja, menos punitiva y más estable. Referencia: Janoff-Bulman, R. (1992); Tedeschi & Calhoun (2004).",
+          "sub": "I_autoimagen",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_janoff_evento_identidad",
+          "nombre": "Separar evento de identidad",
+          "texto": "Microintervención orientada a diferenciar lo ocurrido de quién es la persona, especialmente en presencia de culpa o vergüenza (“esto te pasó” vs. “esto te define”). Reduce la fusión entre trauma e identidad y abre espacio para una autoimagen más compleja y menos punitiva. Referencia: Janoff-Bulman, R. (1992).",
           "sub": "I_autoimagen",
           "tipo": "micro"
         }
@@ -732,6 +817,29 @@
           "codigo": "m_ipt_roles",
           "nombre": "Focalización en roles actuales",
           "texto": "Exploración puntual de cómo el paciente se posiciona en un rol interpersonal concreto (pareja, hijo, cuidador, empleado), identificando tensiones entre expectativas internas y externas. Referencia: Klerman et al. (1984).",
+          "sub": "I_autoimagen",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_identidad",
+          "nombre": "Restauración de identidad",
+          "texto": "Procedimiento orientado a reconstruir un sentido de identidad más integrado, coherente y no definido exclusivamente por el trauma. Incluye revisión de autoimagen, integración de partes fragmentadas del self y construcción de una identidad que incluya pero no se reduzca a la experiencia traumática. Referencia: Herman, J. L. (1992).",
+          "sub": "I_autoimagen",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_herman_autoimagen",
+          "nombre": "Construcción de autoimagen no traumática",
+          "texto": "Intervención orientada a identificar aspectos del self no definidos por el trauma, ampliando la identidad más allá del rol de víctima o superviviente. Referencia: Herman, J. L. (1992).",
           "sub": "I_autoimagen",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_reformulacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 113,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 119,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -508,6 +508,138 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_clark_reestructuracion_panico",
+          "nombre": "Reestructuración cognitiva de interpretaciones catastróficas",
+          "texto": "Procedimiento central del modelo que consiste en cuestionar activamente la validez de las interpretaciones catastróficas mediante evidencia empírica, lógica y experiencia directa, y generar explicaciones alternativas más realistas (por ejemplo, “esto es ansiedad, no un infarto”). No se trata de sustituir pensamientos de forma superficial, sino de debilitar la credibilidad de la interpretación de amenaza y construir un marco explicativo más ajustado que reduzca la activación emocional. Referencia: Clark, D. M. (1986); Beck et al. (1985).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_experimentos_panico",
+          "nombre": "Experimentos conductuales sobre sensaciones temidas",
+          "texto": "Procedimiento experiencial clave que consiste en diseñar y realizar pruebas conductuales para evaluar las creencias catastróficas del paciente (por ejemplo, hiperventilar para comprobar si realmente se desmaya). Estos experimentos permiten generar evidencia directa que contradice las interpretaciones de peligro, siendo mucho más eficaces que la discusión verbal. Constituyen el núcleo de desconfirmación del modelo y facilitan un cambio profundo en la creencia. Referencia: Clark, D. M. (1986); Clark (1997).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_reinterpretacion_sensaciones",
+          "nombre": "Entrenamiento en reinterpretación de sensaciones",
+          "texto": "Procedimiento orientado a automatizar la capacidad del paciente para reinterpretar en tiempo real las sensaciones físicas como inofensivas, especialmente en fases iniciales del ataque de pánico. A través de repetición y práctica, se busca que el paciente pueda interrumpir el ciclo de retroalimentación antes de que escale, transformando la respuesta emocional de forma rápida y eficaz. Referencia: Clark, D. M. (1986); Clark (1997).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clark_reatribucion",
+          "nombre": "Reatribución inmediata de la sensación",
+          "texto": "Aplicación rápida de una explicación alternativa a la sensación corporal en el momento de activación (por ejemplo, “esto es ansiedad, no peligro”), reduciendo la intensidad emocional y evitando la escalada del ciclo de pánico. Referencia: Clark, D. M. (1986); Clark (1997).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clark_evidencia",
+          "nombre": "Cuestionamiento breve de evidencia",
+          "texto": "Microintervención que introduce preguntas rápidas del tipo “¿cuántas veces ha pasado esto sin que ocurra la catástrofe?” para debilitar la credibilidad de la interpretación catastrófica sin entrar en un debate largo. Referencia: Beck et al. (1985); Clark (1986).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clark_ausencia_catastrofe",
+          "nombre": "Señalar ausencia de catástrofe",
+          "texto": "Tras un episodio de activación, destacar activamente que la consecuencia temida no ocurrió, ayudando a consolidar la nueva interpretación y debilitar la expectativa de peligro futuro. Referencia: Clark (1986).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clark_normalizar_sensacion",
+          "nombre": "Normalización de sensaciones fisiológicas",
+          "texto": "Explicar brevemente que las sensaciones experimentadas son respuestas normales del sistema nervioso (por ejemplo, activación simpática), reduciendo su interpretación como señal de peligro. Referencia: Clark (1986).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clark_comparar_ejercicio",
+          "nombre": "Comparación entre ansiedad y ejercicio",
+          "texto": "Invitar al paciente a comparar las sensaciones de ansiedad con las del ejercicio físico (palpitaciones, respiración acelerada) para evidenciar que son fisiológicamente similares pero interpretadas de forma distinta. Referencia: Clark (1997).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_borkovec_resolucion_problemas",
+          "nombre": "Entrenamiento en resolución de problemas",
+          "texto": "Procedimiento dirigido a sustituir la preocupación improductiva por un afrontamiento activo cuando los problemas son reales y resolubles. Incluye definición clara del problema, generación de alternativas, evaluación de opciones y planificación de acción. Su función es reducir la necesidad de preocuparse como sustituto de la acción. Referencia: Borkovec et al. (2004).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_borkovec_utilidad_preocupacion",
+          "nombre": "Cuestionar utilidad de la preocupación",
+          "texto": "Intervención breve que invita a evaluar si preocuparse está resolviendo algo o solo manteniendo el malestar, debilitando la creencia implícita en su utilidad funcional. Referencia: Borkovec et al. (2004).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-intolerancia-incertidumbre-dugas",
+      "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michel J. Dugas; Robert Ladouceur",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_dugas_reestructuracion_incertidumbre",
+          "nombre": "Reestructuración de creencias sobre la incertidumbre",
+          "texto": "Procedimiento cognitivo orientado a cuestionar y flexibilizar creencias disfuncionales sobre la incertidumbre. Se utilizan evidencias, experimentos conductuales y análisis funcional para modificar la percepción de la incertidumbre como peligrosa o intolerable, promoviendo una relación más flexible con lo incierto. Referencia: Dugas & Robichaud (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dugas_creencias_preocupacion",
+          "nombre": "Modificación de creencias positivas sobre la preocupación",
+          "texto": "Procedimiento que aborda la creencia de que preocuparse es útil (por ejemplo, para prevenir problemas o prepararse mejor). Se analiza la evidencia a favor y en contra, mostrando cómo la preocupación no reduce realmente la incertidumbre y, en cambio, mantiene la ansiedad. Referencia: Dugas et al. (1998).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dugas_cuestionar_certeza",
+          "nombre": "Cuestionar necesidad de certeza",
+          "texto": "Intervención breve que plantea preguntas como “¿realmente necesitas saber esto ahora?” o “¿qué pasaría si no lo supieras?”, debilitando la creencia implícita de que la certeza es necesaria para actuar o estar tranquilo. Referencia: Dugas & Robichaud (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dugas_probabilidad",
+          "nombre": "Evaluar probabilidad real",
+          "texto": "Microintervención que ajusta la sobreestimación de amenaza evaluando la probabilidad real de los escenarios temidos, reduciendo la intensidad de la reacción ante la incertidumbre. Referencia: Dugas & Robichaud (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dugas_normalizar_incertidumbre",
+          "nombre": "Normalizar la incertidumbre",
+          "texto": "Intervención breve que sitúa la incertidumbre como condición universal y no como señal de peligro, reduciendo su carga emocional y su interpretación catastrófica. Referencia: Dugas et al. (1998).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "process-based-therapy-hayes-hofmann-2020",
       "modelLabel": "Terapia Basada en Procesos (PBT)",
       "modelGrupo": "Cognitivo",
@@ -972,6 +1104,50 @@
       ]
     },
     {
+      "modelId": "indefension-aprendida-seligman-1975",
+      "modelLabel": "Indefensión aprendida",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Martin E. P. Seligman",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_seligman_contingencias_controlables",
+          "nombre": "Exposición a contingencias controlables",
+          "texto": "Procedimiento orientado a reintroducir de forma progresiva situaciones en las que la conducta del paciente tiene un efecto claro y observable sobre el entorno, rompiendo la expectativa de incontrolabilidad aprendida. Se diseñan tareas graduadas donde la relación acción–resultado sea explícita, inmediata y consistente, facilitando una experiencia correctiva directa que restaure la percepción de eficacia personal y debilite la generalización de la indefensión. (Seligman, 1975; Peterson, Maier & Seligman, 1993).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_seligman_reatribucion",
+          "nombre": "Reentrenamiento atribucional",
+          "texto": "Procedimiento dirigido a modificar el estilo atribucional disfuncional, especialmente las atribuciones internas, estables y globales asociadas al fracaso. Se promueve la reinterpretación de los eventos negativos como externos, específicos y modificables, reduciendo la vulnerabilidad a la indefensión y favoreciendo una autoimagen más flexible y contextualizada. (Abramson, Seligman & Teasdale, 1978).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_seligman_fracaso_controlado",
+          "nombre": "Exposición a fracaso controlado",
+          "texto": "Procedimiento que introduce de forma deliberada situaciones donde el resultado no es exitoso pero sí comprensible y controlable en sus causas, con el objetivo de romper la asociación automática entre fracaso e impotencia global. Permite aprender que el error no implica falta de control total, sino información específica que puede utilizarse para ajustar la conducta. (Abramson et al., 1978).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_seligman_reatribucion_puntual",
+          "nombre": "Reatribución puntual guiada",
+          "texto": "Intervención breve que reformula una explicación automática disfuncional (“esto demuestra que no valgo”) hacia una atribución más específica y contextual (“esto no ha salido bien por X factor concreto”), reduciendo la generalización negativa y la autoimagen global deteriorada. (Abramson, Seligman & Teasdale, 1978).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_seligman_fracaso_especifico",
+          "nombre": "Reencuadre de fracaso específico",
+          "texto": "Intervención que redefine un fracaso como limitado en alcance (“esto ha fallado en este contexto concreto”) en lugar de global, reduciendo la generalización de la indefensión a otras áreas de la vida. (Abramson et al., 1978).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "construccionismo-social-gergen-1985",
       "modelLabel": "Construccionismo social (Kenneth Gergen)",
       "modelGrupo": "Constructivista",
@@ -1056,6 +1232,43 @@
           "codigo": "m_kelly_validar_funcion_historica",
           "nombre": "Validar la función histórica del constructo",
           "texto": "Microintervención que reconoce explícitamente que un constructo hoy costoso probablemente tuvo valor adaptativo en otro momento de la biografía o en otro contexto relacional. Esta validación reduce defensividad, protege la alianza y facilita revisar el constructo sin vivirse como absurdo, patológico o vergonzoso (Kelly, 1955, The Psychology of Personal Constructs; Chiari & Nuzzo, 1996, Psicología de la construcción personal).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_janoff_causal_attributions",
+          "nombre": "Análisis de atribuciones causales del trauma",
+          "texto": "Procedimiento dirigido a examinar las explicaciones que la persona ha construido sobre por qué ocurrió el trauma, identificando patrones de auto-culpabilización, atribuciones globales o interpretaciones rígidas. El terapeuta facilita una revisión crítica de estas atribuciones, diferenciando responsabilidad real de inferencias distorsionadas, y ayudando a generar explicaciones más complejas y contextualizadas. Este proceso es clave para reducir culpa, vergüenza y daño en la identidad, especialmente en traumas interpersonales. Referencia: Janoff-Bulman, R. (1992); Park, C. L. (2010).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_janoff_world_differentiation",
+          "nombre": "Diferenciación entre mundo peligroso y mundo totalmente hostil",
+          "texto": "Procedimiento que ayuda a matizar la generalización extrema del peligro tras el trauma, diferenciando entre la existencia real de amenaza y la conclusión de que todo el mundo es completamente inseguro. El objetivo no es negar el riesgo, sino introducir gradaciones que permitan recuperar funcionalidad sin invalidar la experiencia traumática. Este ajuste reduce hipervigilancia global y facilita la reintegración en la vida cotidiana. Referencia: Janoff-Bulman, R. (1992).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_janoff_generalizacion",
+          "nombre": "Detección de generalización extrema",
+          "texto": "Microintervención que identifica inferencias globales derivadas del trauma (por ejemplo, “nadie es confiable”, “el mundo es totalmente peligroso”) y las pone en cuestión señalando su extensión excesiva. No niega la experiencia, pero introduce matices que permiten recuperar flexibilidad interpretativa. Referencia: Janoff-Bulman, R. (1992).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_janoff_injusticia",
+          "nombre": "Reformular la injusticia percibida",
+          "texto": "Microintervención que aborda la vivencia de injusticia (“esto no debería haber pasado”) ayudando a integrar la realidad del evento sin invalidar la reacción emocional. No elimina la injusticia, pero permite que no destruya completamente el sistema de significado. Referencia: Janoff-Bulman, R. (1992).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }
@@ -1673,6 +1886,50 @@
           "texto": "Procedimiento dedicado a detectar inferencias precipitadas sobre la intención del otro y a reabrir el abanico interpretativo mediante chequeos, evidencias y alternativas plausibles. Se busca reemplazar la certeza rígida por duda funcional, reduciendo atribuciones hostiles y facilitando reparación relacional. Referencia: Bateman & Fonagy (2006).",
           "sub": "N_reformulacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_psicoeducacion",
+          "nombre": "Psicoeducación sobre trauma",
+          "texto": "Procedimiento dirigido a explicar el funcionamiento del trauma (hiperactivación, disociación, intrusiones, evitación) como respuestas adaptativas del organismo, reduciendo culpa, vergüenza y confusión. Permite que la persona entienda sus síntomas como comprensibles y no como signos de debilidad o locura, facilitando una relación más regulada con su experiencia interna. Referencia: Herman, J. L. (1992).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_herman_integracion_memoria",
+          "nombre": "Integración de memorias traumáticas",
+          "texto": "Procedimiento mediante el cual las memorias traumáticas dejan de experimentarse como eventos presentes e intrusivos y pasan a integrarse en la narrativa autobiográfica con un significado actualizado. La integración reduce reactividad automática y permite que el pasado deje de organizar el presente de forma dominante. Referencia: Herman, J. L. (1992); van der Kolk (2014).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_herman_reencuadre_recuerdo",
+          "nombre": "Nombrar la experiencia traumática como recuerdo",
+          "texto": "Microintervención que ayuda a diferenciar entre pasado y presente (“esto es un recuerdo, no está ocurriendo ahora”), reduciendo la fusión con la experiencia traumática y facilitando una relación más regulada con la memoria. Referencia: Herman, J. L. (1992).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_herman_culpa_responsabilidad",
+          "nombre": "Diferenciación entre culpa y responsabilidad",
+          "texto": "Intervención dirigida a separar la responsabilidad real de la culpa traumática internalizada, reduciendo autoacusación y permitiendo una comprensión más justa del evento traumático. Referencia: Herman, J. L. (1992).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_herman_oscilaciones",
+          "nombre": "Normalización de oscilaciones",
+          "texto": "Explicación de que los avances y retrocesos son parte esperable del proceso traumático, reduciendo desesperanza y sensación de fracaso cuando aparecen recaídas o reactivaciones. Referencia: Herman, J. L. (1992).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },

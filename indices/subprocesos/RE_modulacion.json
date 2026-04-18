@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 129,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 136,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -852,6 +852,89 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "m_clark_redireccion_atencion",
+          "nombre": "Redirección atencional externa",
+          "texto": "Microintervención que consiste en desplazar voluntariamente la atención hacia estímulos externos (sonidos, objetos, tareas) para reducir la amplificación de las sensaciones internas y cortar el bucle de autoobservación ansiosa. Referencia: Clark (1986).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_clark_anclaje_temporal",
+          "nombre": "Anclaje temporal del episodio",
+          "texto": "Recordar al paciente que el pico de ansiedad es limitado en el tiempo (“esto sube y baja”), ayudando a reducir la percepción de descontrol infinito y facilitando tolerancia durante el episodio. Referencia: Clark (1986).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_borkovec_posponer_preocupacion",
+          "nombre": "Posposición estructurada de la preocupación",
+          "texto": "Procedimiento que consiste en entrenar al paciente a posponer la preocupación a un momento específico del día previamente acordado. Cuando aparece la preocupación, se registra y se difiere, lo que debilita su automatismo y permite comprobar que muchas preocupaciones pierden intensidad o relevancia con el tiempo. También facilita la diferenciación entre activación emocional real y hábito cognitivo. Referencia: Borkovec et al. (1998).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_borkovec_relajacion_aplicada",
+          "nombre": "Entrenamiento en relajación aplicada",
+          "texto": "Procedimiento destinado a reducir la activación fisiológica basal y mejorar la capacidad de autorregulación. Aunque no aborda directamente la evitación cognitiva, disminuye la vulnerabilidad fisiológica que dispara la preocupación y facilita el acceso a procesos emocionales más profundos. Referencia: Borkovec & Costello (1993).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_borkovec_tolerar_emocion",
+          "nombre": "Tolerar activación emocional",
+          "texto": "Intervención centrada en sostener la emoción sin necesidad de reducirla inmediatamente, reforzando la capacidad de permanencia dentro de la experiencia afectiva sin recurrir a la preocupación como escape. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_borkovec_anclaje_presente",
+          "nombre": "Anclar en experiencia presente",
+          "texto": "Microintervención que utiliza sensaciones corporales o elementos del entorno para sacar al paciente del bucle de preocupación futura y devolverlo al presente, reduciendo activación y facilitando acceso emocional real. Referencia: Borkovec et al. (2004).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-intolerancia-incertidumbre-dugas",
+      "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michel J. Dugas; Robert Ladouceur",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_dugas_tolerancia_incertidumbre",
+          "nombre": "Entrenamiento en tolerancia a la incertidumbre",
+          "texto": "Procedimiento orientado a aumentar la capacidad de sostener estados de duda, ambigüedad o imprevisibilidad sin necesidad de resolverlos. Incluye ejercicios progresivos de exposición y aceptación, desarrollando una respuesta emocional más flexible frente a lo incierto. Referencia: Dugas et al. (1998).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dugas_sostener_duda",
+          "nombre": "Sostener duda sin respuesta",
+          "texto": "Microintervención que entrena al paciente a permanecer con una pregunta abierta sin responderla, desarrollando tolerancia directa a la ambigüedad sin recurrir a preocupación o evitación. Referencia: Dugas & Robichaud (2007).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "process-based-therapy-hayes-hofmann-2020",
       "modelLabel": "Terapia Basada en Procesos (PBT)",
       "modelGrupo": "Cognitivo",
@@ -1664,6 +1747,22 @@
       ]
     },
     {
+      "modelId": "indefension-aprendida-seligman-1975",
+      "modelLabel": "Indefensión aprendida",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Martin E. P. Seligman",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_seligman_fracaso_controlado",
+          "nombre": "Exposición a fracaso controlado",
+          "texto": "Procedimiento que introduce de forma deliberada situaciones donde el resultado no es exitoso pero sí comprensible y controlable en sus causas, con el objetivo de romper la asociación automática entre fracaso e impotencia global. Permite aprender que el error no implica falta de control total, sino información específica que puede utilizarse para ajustar la conducta. (Abramson et al., 1978).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "manejo-contingencias-adicciones-1994",
       "modelLabel": "Manejo de contingencias (adicciones)",
       "modelGrupo": "Conductismo",
@@ -1933,6 +2032,22 @@
           "codigo": "p_kelly_transicion_amenaza",
           "nombre": "Análisis de transición y modulación de amenaza",
           "texto": "Procedimiento orientado a identificar qué tipo de transición constructiva está ocurriendo en el proceso —ansiedad, amenaza, culpa, hostilidad o agresión según la terminología de Kelly— y ajustar el ritmo terapéutico en función del grado de desorganización anticipada. Permite discriminar cuándo la persona puede explorar alternativas y cuándo necesita primero reducir amenaza sobre constructos nucleares para no rigidificarse más ni colapsar defensivamente, usando la emoción como señal de viabilidad del cambio más que como objetivo principal del tratamiento (Kelly, 1955, The Psychology of Personal Constructs; Chiari & Nuzzo, 1996, Psicología de la construcción personal).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_janoff_world_differentiation",
+          "nombre": "Diferenciación entre mundo peligroso y mundo totalmente hostil",
+          "texto": "Procedimiento que ayuda a matizar la generalización extrema del peligro tras el trauma, diferenciando entre la existencia real de amenaza y la conclusión de que todo el mundo es completamente inseguro. El objetivo no es negar el riesgo, sino introducir gradaciones que permitan recuperar funcionalidad sin invalidar la experiencia traumática. Este ajuste reduce hipervigilancia global y facilita la reintegración en la vida cotidiana. Referencia: Janoff-Bulman, R. (1992).",
           "sub": "RE_modulacion",
           "tipo": "procedimiento"
         }
@@ -2793,6 +2908,43 @@
       ]
     },
     {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_estabilizacion_fisiologica",
+          "nombre": "Estabilización fisiológica y regulación básica",
+          "texto": "Procedimiento centrado en reducir hiperactivación o hipoactivación mediante técnicas de regulación autonómica, respiración, grounding y control de crisis, con el objetivo de ampliar la ventana de tolerancia y permitir que el sistema deje de operar exclusivamente en modo supervivencia. Es un prerrequisito para cualquier trabajo posterior con memoria traumática. Referencia: Herman, J. L. (1992); van der Kolk, B. A. (2014).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_herman_recursos_regulacion",
+          "nombre": "Desarrollo de recursos de autorregulación",
+          "texto": "Procedimiento orientado a construir un repertorio estable de estrategias de regulación emocional y autocuidado, incluyendo autoobservación, autocompasión, técnicas de calma, identificación de señales de activación y uso de recursos internos y externos. Su objetivo es que la persona pueda sostener activación emocional sin desbordarse ni desconectarse. Referencia: Herman, J. L. (1992); Courtois & Ford (2013).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_herman_objeto_seguridad",
+          "nombre": "Uso de objeto de seguridad",
+          "texto": "Introducción de un objeto físico o estímulo sensorial que ayude a anclar en el presente y generar sensación de seguridad, especialmente útil en momentos de disociación o activación traumática intensa. Referencia: Herman, J. L. (1992).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_herman_dosificacion",
+          "nombre": "Dosificación del recuerdo",
+          "texto": "Ajuste continuo de la intensidad y duración del contacto con material traumático para evitar desbordamiento, manteniendo la activación dentro de la ventana de tolerancia. Referencia: Herman, J. L. (1992); Cloitre et al. (2011).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "neurobiologia-interpersonal-siegel-1999",
       "modelLabel": "Neurobiología Interpersonal (IPNB)",
       "modelGrupo": "Integrativo",
@@ -2905,6 +3057,36 @@
           "codigo": "m_lazarus_anclaje_somatico",
           "nombre": "Anclaje somático breve",
           "texto": "Microintervención que utiliza respiración, presión corporal o estimulación sensorial breve para reducir activación fisiológica cuando la modalidad Sensación está amplificando el problema. Este anclaje mejora acceso a cognición y conducta sin necesidad de intervenciones largas. (Lazarus, 1976)",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "rupturas-reparacion-alianza-safran-muran",
+      "modelLabel": "Modelo de rupturas y reparación de la alianza terapéutica",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Jeremy D. Safran; J. Christopher Muran",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_safran_muran_confrontacion",
+          "nombre": "Intervención específica en rupturas de confrontación",
+          "texto": "Procedimiento específico para situaciones en las que el paciente critica, desafía, presiona, acusa, expresa frustración o cuestiona el valor de la terapia o del terapeuta. El terapeuta evita responder con defensa, contraargumentación o repliegue técnico, y en su lugar legitima el desacuerdo, lo explora con curiosidad y ayuda a precisar qué aspecto de la interacción o del encuadre ha sido vivido como fallido, intrusivo, desatento o no colaborativo. Esto permite sostener el conflicto sin ruptura adicional y convertir la confrontación en material transformador. Referencia: Safran & Muran (2000); Eubanks, Muran, & Safran (2015, 2018).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_safran_normalizacion",
+          "nombre": "Normalización de la ruptura",
+          "texto": "Intervención breve que contextualiza la ruptura como parte esperable del proceso terapéutico, reduciendo vergüenza o miedo a haber dañado la relación y facilitando su abordaje abierto (“esto pasa en terapia y es importante trabajarlo”). Referencia: Safran & Muran (2000).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_safran_desacelerar",
+          "nombre": "Desaceleración del proceso",
+          "texto": "Reducción deliberada del ritmo de la sesión cuando emerge tensión relacional, permitiendo mayor contacto emocional y evitando que el terapeuta avance prematuramente sobre contenido sin haber reparado la ruptura. Referencia: Safran & Muran (2000).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

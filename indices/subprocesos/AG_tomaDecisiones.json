@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 83,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 87,
   "modelos": [
     {
       "modelId": "taoismo-psicologia-puentes-1980",
@@ -155,6 +155,59 @@
           "codigo": "m_mbct_si_entonces_recaida",
           "nombre": "Plan ‘si–entonces’ para recaída (implementación inmediata)",
           "texto": "Microintervención de traducir señales tempranas en reglas conductuales concretas (p. ej., “si noto rumiación + cansancio, entonces 3 minutos + caminar 10 min + avisar a X”) para reducir ambivalencia y acelerar respuesta eficaz. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-evitacion-cognitiva-borkovec",
+      "modelLabel": "Modelo de evitación cognitiva (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Thomas D. Borkovec",
+      "modelYear": 1994,
+      "items": [
+        {
+          "codigo": "p_borkovec_diferenciacion_preocupacion",
+          "nombre": "Diferenciación entre preocupación productiva e improductiva",
+          "texto": "Procedimiento que distingue entre preocupaciones resolubles (con acciones concretas posibles) y preocupaciones hipotéticas o irresolubles. Se entrena al paciente a responder de forma distinta a cada tipo: resolución activa en el primer caso y abandono o posposición en el segundo, reduciendo la rumiación improductiva y favoreciendo la agencia funcional. Referencia: Borkovec et al. (2004).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_borkovec_resolucion_problemas",
+          "nombre": "Entrenamiento en resolución de problemas",
+          "texto": "Procedimiento dirigido a sustituir la preocupación improductiva por un afrontamiento activo cuando los problemas son reales y resolubles. Incluye definición clara del problema, generación de alternativas, evaluación de opciones y planificación de acción. Su función es reducir la necesidad de preocuparse como sustituto de la acción. Referencia: Borkovec et al. (2004).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_borkovec_problema_concreto",
+          "nombre": "Volver al problema concreto",
+          "texto": "Microintervención que redirige desde escenarios hipotéticos a problemas reales y abordables, facilitando acción concreta en lugar de preocupación abstracta. Referencia: Borkovec et al. (2004).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-intolerancia-incertidumbre-dugas",
+      "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michel J. Dugas; Robert Ladouceur",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_dugas_resolucion_problemas",
+          "nombre": "Entrenamiento en resolución de problemas",
+          "texto": "Procedimiento estructurado para abordar problemas reales y concretos mediante pasos definidos: definición del problema, generación de soluciones, evaluación y aplicación. Su función es sustituir la preocupación improductiva por acción efectiva cuando la situación lo permite. Referencia: Dugas & Robichaud (2007).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dugas_problema_real_hipotetico",
+          "nombre": "Diferenciar problema real vs hipotético",
+          "texto": "Intervención breve que distingue entre problemas que pueden resolverse ahora y escenarios hipotéticos inciertos, permitiendo redirigir hacia acción concreta o aceptación según corresponda. Referencia: Dugas & Robichaud (2007).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
@@ -816,6 +869,29 @@
           "codigo": "m_exposicionVivo_marks_planEntreSesiones",
           "nombre": "Planificación anticipada de práctica entre sesiones",
           "texto": "Antes de cerrar sesión, se fija fecha, lugar y condiciones concretas de la siguiente autoexposición, reduciendo ambigüedad y aumentando probabilidad de ejecución real. (Marks, 1978).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "indefension-aprendida-seligman-1975",
+      "modelLabel": "Indefensión aprendida",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Martin E. P. Seligman",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_seligman_solucion_problemas",
+          "nombre": "Entrenamiento en solución de problemas",
+          "texto": "Procedimiento estructurado que enseña a descomponer problemas en pasos manejables, generar alternativas, evaluar consecuencias y ejecutar soluciones, restaurando la sensación de agencia en contextos previamente percibidos como bloqueados. Este entrenamiento combate la pasividad característica de la indefensión al proporcionar herramientas concretas para intervenir activamente en el entorno. (Nezu, Nezu & D’Zurilla, 2013; derivado de modelos aplicados sobre indefensión).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_seligman_eleccion_minima",
+          "nombre": "Activación de elección mínima",
+          "texto": "Se introduce una elección simple y de bajo riesgo (por ejemplo, entre dos opciones concretas) para reactivar la capacidad decisional en pacientes bloqueados, reforzando la experiencia de que pueden influir en su conducta y entorno. (Peterson et al., 1993).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }
@@ -1565,6 +1641,29 @@
           "codigo": "m_transcultural_compatibilidad",
           "nombre": "Pregunta de compatibilidad identitaria cultural",
           "texto": "Intervención breve del tipo “¿puedes hacer esto sin sentir que traicionas quién eres y de dónde vienes?” que alinea decisiones concretas con continuidad biográfica y pertenencia cultural, evitando cambios abruptos que generen fragmentación identitaria (Hermans & Kempen, 1998).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_agencia",
+          "nombre": "Reactivación de agencia y proyecto vital",
+          "texto": "Procedimiento dirigido a recuperar la capacidad de actuar, decidir y comprometerse con metas, valores y proyectos personales. Supone pasar de una posición centrada en la supervivencia o el pasado a una orientación activa hacia el futuro, donde la persona vuelve a ejercer autoría sobre su vida. Referencia: Herman, J. L. (1992).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_herman_decisiones",
+          "nombre": "Refuerzo de decisiones propias",
+          "texto": "Validación activa de elecciones realizadas por el paciente, incluso pequeñas, para consolidar sensación de agencia y autoría. Referencia: Herman, J. L. (1992).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

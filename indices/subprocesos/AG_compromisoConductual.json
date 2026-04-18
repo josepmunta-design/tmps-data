@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-04-05T08:00:33.514Z",
-  "totalModelos": 130,
+  "updatedAt": "2026-04-18T08:09:19.414Z",
+  "totalModelos": 135,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -744,6 +744,87 @@
           "codigo": "m_mbct_microaccion_respuesta",
           "nombre": "Elegir respuesta pequeña (micro-acción anti-espiral)",
           "texto": "Microintervención de seleccionar una acción mínima y concreta tras notar señales tempranas (paseo breve, ducha consciente, llamar a alguien, ordenar una tarea simple) para prevenir retirada/apatía y consolidar ‘responder’ frente a ‘reaccionar’. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-panico-clark-1986",
+      "modelLabel": "Modelo cognitivo del pánico",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David M. Clark",
+      "modelYear": 1986,
+      "items": [
+        {
+          "codigo": "p_clark_experimentos_panico",
+          "nombre": "Experimentos conductuales sobre sensaciones temidas",
+          "texto": "Procedimiento experiencial clave que consiste en diseñar y realizar pruebas conductuales para evaluar las creencias catastróficas del paciente (por ejemplo, hiperventilar para comprobar si realmente se desmaya). Estos experimentos permiten generar evidencia directa que contradice las interpretaciones de peligro, siendo mucho más eficaces que la discusión verbal. Constituyen el núcleo de desconfirmación del modelo y facilitan un cambio profundo en la creencia. Referencia: Clark, D. M. (1986); Clark (1997).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_eliminacion_seguridad",
+          "nombre": "Eliminación de conductas de seguridad",
+          "texto": "Procedimiento orientado a identificar y reducir las conductas de seguridad (como sentarse rápidamente, evitar ejercicio o llevar objetos tranquilizadores), que impiden que el paciente compruebe que las sensaciones no son peligrosas. Su eliminación progresiva permite que la persona experimente directamente la ausencia de catástrofe, facilitando la desconfirmación de creencias y el mantenimiento del cambio. Referencia: Salkovskis (1988); Clark (1997).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_clark_generalizacion",
+          "nombre": "Generalización a situaciones externas",
+          "texto": "Procedimiento orientado a trasladar los aprendizajes obtenidos en sesión a situaciones reales previamente evitadas (transporte público, ejercicio, espacios cerrados), asegurando que el cambio no se limita al contexto terapéutico. Implica exposición progresiva sin conductas de seguridad y aplicación activa de reinterpretaciones, consolidando el cambio en la vida cotidiana. Referencia: Clark (1997); Barlow (2002).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_clark_retirar_seguridad",
+          "nombre": "Retirada puntual de conducta de seguridad",
+          "texto": "Invitar al paciente a dejar de usar una conducta de seguridad concreta en un momento específico para comprobar que la catástrofe no ocurre, facilitando aprendizaje correctivo directo. Referencia: Clark (1997).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-intolerancia-incertidumbre-dugas",
+      "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Michel J. Dugas; Robert Ladouceur",
+      "modelYear": 1998,
+      "items": [
+        {
+          "codigo": "p_dugas_resolucion_problemas",
+          "nombre": "Entrenamiento en resolución de problemas",
+          "texto": "Procedimiento estructurado para abordar problemas reales y concretos mediante pasos definidos: definición del problema, generación de soluciones, evaluación y aplicación. Su función es sustituir la preocupación improductiva por acción efectiva cuando la situación lo permite. Referencia: Dugas & Robichaud (2007).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dugas_exposicion_incertidumbre",
+          "nombre": "Exposición conductual a la incertidumbre",
+          "texto": "Procedimiento central del modelo que implica exponerse deliberadamente a situaciones inciertas sin intentar reducir o eliminar la incertidumbre. El objetivo es aprender que la incertidumbre es tolerable y que no necesariamente conduce a resultados negativos, debilitando la necesidad de control. Referencia: Dugas & Ladouceur (2000).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_dugas_reducir_certeza",
+          "nombre": "Reducción de conductas de búsqueda de certeza",
+          "texto": "Procedimiento dirigido a identificar y disminuir conductas como comprobación, sobreplanificación o búsqueda de garantías. Estas conductas reducen la ansiedad a corto plazo pero mantienen la intolerancia a la incertidumbre, por lo que su eliminación es clave para el cambio. Referencia: Dugas & Robichaud (2007).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_dugas_micro_exposicion",
+          "nombre": "Exponerse a pequeña incertidumbre",
+          "texto": "Microintervención que introduce pequeñas dosis de incertidumbre en la vida cotidiana (no comprobar algo, dejar una tarea sin cerrar completamente), entrenando tolerancia progresiva. Referencia: Dugas & Robichaud (2007).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_dugas_accion_con_incertidumbre",
+          "nombre": "Volver a la acción con incertidumbre",
+          "texto": "Microintervención que impulsa a actuar a pesar de no tener toda la información, reforzando la idea de que la acción no requiere certeza completa. Referencia: Dugas & Robichaud (2007).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
@@ -2134,6 +2215,36 @@
       ]
     },
     {
+      "modelId": "indefension-aprendida-seligman-1975",
+      "modelLabel": "Indefensión aprendida",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "Martin E. P. Seligman",
+      "modelYear": 1975,
+      "items": [
+        {
+          "codigo": "p_seligman_contingencias_controlables",
+          "nombre": "Exposición a contingencias controlables",
+          "texto": "Procedimiento orientado a reintroducir de forma progresiva situaciones en las que la conducta del paciente tiene un efecto claro y observable sobre el entorno, rompiendo la expectativa de incontrolabilidad aprendida. Se diseñan tareas graduadas donde la relación acción–resultado sea explícita, inmediata y consistente, facilitando una experiencia correctiva directa que restaure la percepción de eficacia personal y debilite la generalización de la indefensión. (Seligman, 1975; Peterson, Maier & Seligman, 1993).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_seligman_activacion_control",
+          "nombre": "Activación conductual dirigida a control",
+          "texto": "Procedimiento que combina activación conductual con un foco específico en experiencias de eficacia, seleccionando actividades donde el paciente pueda experimentar influencia directa sobre resultados. A diferencia de la activación general, aquí el criterio clave es la percepción de control, no solo el aumento de actividad, lo que impacta directamente en la reversión de la indefensión. (Seligman, 1975; Peterson et al., 1993).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_seligman_micro_tarea_feedback",
+          "nombre": "Micro-tarea con feedback inmediato",
+          "texto": "Asignación de una acción muy concreta y breve que produce un resultado observable inmediato, diseñada para generar una experiencia rápida de eficacia que contrarreste la pasividad y reactive la motivación conductual en pacientes con indefensión. (Peterson, Maier & Seligman, 1993).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "inundacion-implosion-1967",
       "modelLabel": "Inundación / Implosión",
       "modelGrupo": "Conductismo",
@@ -2655,6 +2766,22 @@
           "texto": "Se pregunta cómo podría repetirse o ampliarse el IM en otra situación concreta, facilitando que la innovación trascienda la sesión y se convierta en práctica coherente con el self emergente. (Gonçalves et al., 2011; Gonçalves et al., 2016).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-significado-post-trauma-janoff-bulman-1992",
+      "modelLabel": "Modelo de los Supuestos Rotos (Shattered Assumptions Theory)",
+      "modelGrupo": "Constructivista",
+      "modelAutores": "Ronnie Janoff-Bulman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_janoff_ptg",
+          "nombre": "Promoción de crecimiento postraumático",
+          "texto": "Procedimiento orientado a identificar y consolidar posibles cambios positivos emergentes tras el trauma, como mayor profundidad personal, redefinición de prioridades o fortalecimiento relacional. No se impone el crecimiento ni se minimiza el sufrimiento, sino que se facilita reconocer transformaciones reales cuando aparecen. Este proceso permite integrar el trauma dentro de una narrativa de desarrollo, aumentando sentido y dirección vital. Referencia: Tedeschi & Calhoun (2004); Janoff-Bulman, R. (1992).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -3349,6 +3476,29 @@
           "codigo": "m_transcultural_ensayo_limites",
           "nombre": "Ensayo verbal de límites culturalmente respetuosos",
           "texto": "Microintervención práctica donde se ensaya en sesión cómo expresar desacuerdo o necesidad propia manteniendo formas respetuosas y culturalmente adecuadas, ampliando repertorio interpersonal sin ruptura abrupta del vínculo (Bernal & Domenech Rodríguez, 2012).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-trifasico-trauma-herman-1992",
+      "modelLabel": "Modelo trifásico del trauma",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Judith Lewis Herman",
+      "modelYear": 1992,
+      "items": [
+        {
+          "codigo": "p_herman_agencia",
+          "nombre": "Reactivación de agencia y proyecto vital",
+          "texto": "Procedimiento dirigido a recuperar la capacidad de actuar, decidir y comprometerse con metas, valores y proyectos personales. Supone pasar de una posición centrada en la supervivencia o el pasado a una orientación activa hacia el futuro, donde la persona vuelve a ejercer autoría sobre su vida. Referencia: Herman, J. L. (1992).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_herman_activacion",
+          "nombre": "Activación conductual básica",
+          "texto": "Promoción de pequeñas acciones en la vida cotidiana que implican salir de la pasividad traumática, favoreciendo reconexión con la acción y el entorno. Referencia: Herman, J. L. (1992).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
