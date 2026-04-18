@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-18T08:10:45.522Z",
+  "generatedAt": "2026-04-18T08:20:35.948Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
     "modelos": 186,
-    "links": 193,
-    "unresolvedInfluences": 648
+    "links": 195,
+    "unresolvedInfluences": 650
   },
   "nodes": [
     {
@@ -4536,9 +4536,19 @@
       "isMarco": false,
       "file": "modelos/integrativo/rupturas-reparacion-alianza-safran-muran-2000.json",
       "authors": "Jeremy D. Safran; J. Christopher Muran",
-      "summary": null,
-      "influencias": [],
-      "refs": [],
+      "summary": "El modelo de rupturas y reparación de la alianza terapéutica desarrollado por Safran y Muran plantea que la relación terapéutica no es un contexto estable sobre el que aplicar técnicas, sino el núcleo mismo del cambio psicológico. La alianza se entiende como un proceso dinámico, continuamente tensionado por patrones relacionales del paciente que emergen en la interacción con el terapeuta. Las rupturas —momentos de desconexión, malentendidos, retirada o confrontación— no son errores a evitar, sino oportunidades privilegiadas para hacer visibles esquemas interpersonales implícitos y transformarlos en vivo. El trabajo terapéutico consiste en detectar estas rupturas, explorarlas mediante metacomunicación y repararlas a través de una negociación auténtica del vínculo, las tareas y los objetivos. Este proceso permite al paciente experimentar nuevas formas de relación que modifican sus expectativas interpersonales profundas, generando cambio estructural más allá del insight cognitivo.",
+      "influencias": [
+        "Psicoanálisis relacional",
+        "Teoría del apego",
+        "Constructivismo",
+        "Modelo de la alianza terapéutica (Bordin)"
+      ],
+      "refs": [
+        "Safran, J. D., & Muran, J. C. (2000). Negotiating the Therapeutic Alliance.",
+        "Safran, J. D., & Muran, J. C. (2006). Has the concept of the therapeutic alliance outlived its usefulness?",
+        "Safran, J. D., Muran, J. C., & Eubanks-Carter, C. (2011). Repairing Alliance Ruptures.",
+        "Eubanks, C. F., Muran, J. C., & Safran, J. D. (2018). Alliance rupture repair: A meta-analysis."
+      ],
       "lat": 40.712776,
       "lon": -74.005974,
       "ciudad": "Nueva York, Nueva York",
@@ -5953,6 +5963,14 @@
     {
       "source": "aprendizaje-social-bandura-1977",
       "target": "psicodinamica-ciclica-wachtel"
+    },
+    {
+      "source": "psicoanalisis-relacional-greenberg-mitchell-1983",
+      "target": "rupturas-reparacion-alianza-safran-muran-2000"
+    },
+    {
+      "source": "teoria-apego-bowlby",
+      "target": "rupturas-reparacion-alianza-safran-muran-2000"
     },
     {
       "source": "teoria-apego-bowlby",
@@ -7839,6 +7857,14 @@
     {
       "target": "psicodinamica-ciclica-wachtel",
       "influence": "Cognitivismo"
+    },
+    {
+      "target": "rupturas-reparacion-alianza-safran-muran-2000",
+      "influence": "Constructivismo"
+    },
+    {
+      "target": "rupturas-reparacion-alianza-safran-muran-2000",
+      "influence": "Modelo de la alianza terapéutica (Bordin)"
     },
     {
       "target": "modelo-trifasico-trauma-herman-1992",
