@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-18T09:09:19.216Z",
+  "generatedAt": "2026-04-18T09:10:17.506Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 186,
+    "modelos": 187,
     "links": 195,
-    "unresolvedInfluences": 650
+    "unresolvedInfluences": 654
   },
   "nodes": [
     {
@@ -4038,6 +4038,34 @@
       "escuelaId": "integrativo"
     },
     {
+      "id": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "label": "Modelo cognitivo de la fobia social",
+      "year": 1995,
+      "group": "Cognitivo",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/cognitivo/modelo-cognitivo-fobia-social-clark-wells-1995.json",
+      "authors": "David M. Clark; Adrian Wells",
+      "summary": "El modelo cognitivo de Clark y Wells para la fobia social propone que el problema central no es tanto la evaluación negativa externa como el procesamiento interno distorsionado que ocurre durante las situaciones sociales. Cuando la persona entra en una situación social percibida como amenazante, activa supuestos disfuncionales sobre sí misma (por ejemplo, “soy aburrido”, “voy a hacer el ridículo”) que desencadenan un cambio atencional hacia el interior. En lugar de atender al entorno, la persona se centra en una imagen interna negativa de sí misma, construida a partir de memoria, inferencias y sensaciones corporales. Este procesamiento autoenfocado se combina con conductas de seguridad (evitar contacto visual, ensayar mentalmente lo que se va a decir, controlar excesivamente la conducta) que, aunque reducen la ansiedad a corto plazo, impiden la desconfirmación de las creencias. Además, la persona tiende a interpretar la información ambigua de forma negativa y a realizar revisiones post-evento rumiativas que consolidan la percepción de fracaso. El mantenimiento del problema se explica por la interacción de estos procesos: autoatención, imagen negativa del self, conductas de seguridad, sesgos interpretativos y procesamiento post-evento.",
+      "influencias": [
+        "Terapia cognitiva de Beck",
+        "Modelo cognitivo de la ansiedad",
+        "Teoría del procesamiento de la información",
+        "Psicología experimental de la atención"
+      ],
+      "refs": [
+        "Clark, D. M., & Wells, A. (1995). A cognitive model of social phobia.",
+        "Clark, D. M. (2001). A cognitive perspective on social phobia.",
+        "Clark, D. M., et al. (2003). Cognitive therapy vs exposure for social phobia."
+      ],
+      "lat": 51.752022,
+      "lon": -1.257677,
+      "ciudad": "Oxford / Manchester",
+      "pais": "Reino Unido",
+      "escuelaId": "cognitivo"
+    },
+    {
       "id": "psicoterapia-constructivista-neimeyer",
       "label": "Neimeyer – Psicoterapia constructivista",
       "year": 1995,
@@ -6733,6 +6761,22 @@
     {
       "target": "cft-gilbert-2009",
       "influence": "Terapias experienciales (imaginería, trabajo con sillas)"
+    },
+    {
+      "target": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "influence": "Terapia cognitiva de Beck"
+    },
+    {
+      "target": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "influence": "Modelo cognitivo de la ansiedad"
+    },
+    {
+      "target": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "influence": "Teoría del procesamiento de la información"
+    },
+    {
+      "target": "modelo-cognitivo-fobia-social-clark-wells-1995",
+      "influence": "Psicología experimental de la atención"
     },
     {
       "target": "modelo-intolerancia-incertidumbre-dugas",
