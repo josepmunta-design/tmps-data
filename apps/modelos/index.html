@@ -234,6 +234,8 @@ async function ensureOrbitControls(timeoutMs = 8000){
   --bg:#0b0f14;
   --panelA: rgba(19,26,34,0.82);
   --panelB: rgba(19,26,34,0.62);
+  --panelRightA: rgb(19,26,34);
+  --panelRightB: rgb(15,21,29);
   --text:#e7edf5;
   --muted:#c7d2e1;
   --muted2:#9fb0c3;
@@ -294,17 +296,65 @@ async function ensureOrbitControls(timeoutMs = 8000){
 
 .panel.left{
   position:fixed;
-  top: var(--edgePad);
-  left: var(--edgePad);
-  width: var(--leftPanelW);
-  max-width: calc(100vw - (var(--edgePad) * 2));
-  max-height: calc(100vh - (var(--edgePad) * 2));
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
   overflow:auto;
 
   padding: 0 14px 14px 14px;   /* ✅ arriba a 0 */
-  z-index: 20;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background:
+    linear-gradient(180deg, var(--panelA), var(--panelB)),
+    radial-gradient(120% 120% at 0% 0%, color-mix(in srgb, var(--schoolColor, #D9AA3F) 16%, rgba(255,255,255,0.08)), transparent 62%);
+  z-index: 10;
 }
 
+.panel.left::before{
+  inset: 0;
+  border-radius: 0;
+}
+
+.panel.left > *{
+  width: min(var(--leftPanelW), calc(100vw - (var(--edgePad) * 2)));
+}
+
+.panel.left .leftTopSticky{
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: linear-gradient(180deg, var(--panelA), var(--panelB));
+  margin-top: 0;
+}
+
+@media (min-width: 981px){
+  .panel.left > *{
+    width: min(calc(var(--leftPanelW) - 18px), calc(100vw - (var(--edgePad) * 2) - 18px));
+  }
+
+  .panel.left .modelsListCard{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 4px 0 0 0;
+    margin-top: 10px;
+  }
+
+  .panel.left .modelsListCard .row{
+    padding: 0 4px 2px 2px;
+  }
+
+  .panel.left #modelsList{
+    padding-right: 14px;
+    scrollbar-gutter: stable;
+  }
+}
 
 .panel.right{
   position: fixed;
@@ -319,12 +369,10 @@ async function ensureOrbitControls(timeoutMs = 8000){
   padding: 0;
   z-index: 20;
 
-  background: linear-gradient(180deg, var(--panelA), var(--panelB));
+  background: linear-gradient(180deg, var(--panelRightA), var(--panelRightB));
   border:1px solid rgba(255,255,255,0.06);
   border-radius:16px;
   box-shadow: 0 16px 42px rgba(0,0,0,0.34);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 .panel::before{
   content:"";
@@ -496,37 +544,56 @@ animation: panelBreath 5s ease-in-out infinite;
       display:flex;
       gap:8px;
       flex-wrap:nowrap;
+      align-items:center;
       margin-top:0;
       flex-shrink:0;
       justify-self:end;
     }
 
-    .tf-chip{
+    .typeFilterSelect{
+      min-width:132px;
+      height:34px;
+      padding:6px 32px 6px 12px;
+      border-radius:12px;
       border:1px solid rgba(255,255,255,.16);
-      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
-      color: rgba(234,240,248,.86);
-      border-radius:999px;
-      padding:6px 11px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04)),
+        radial-gradient(120px 60px at 90% 50%, color-mix(in srgb, var(--schoolColor, #D9AA3F) 15%, transparent), transparent 60%);
+      color:rgba(234,240,248,.92);
       font-size:11px;
       font-weight:800;
       letter-spacing:.28px;
       text-transform:uppercase;
-      cursor:pointer;
-      transition: all .15s ease;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
+      appearance:none;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      background-image:
+        linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04)),
+        radial-gradient(120px 60px at 90% 50%, color-mix(in srgb, var(--schoolColor, #D9AA3F) 15%, transparent), transparent 60%),
+        url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'>\
+<path d='M7 10l5 5 5-5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>\
+</svg>");
+      background-repeat:no-repeat;
+      background-position:
+        0 0,
+        0 0,
+        right 10px center;
+      background-size:
+        auto,
+        auto,
+        16px 16px;
     }
 
-    .tf-chip:hover{
+    .typeFilterSelect:hover{
       border-color: rgba(255,255,255,.26);
       color:#fff;
     }
 
-    .tf-chip.active{
-      color:#fff;
+    .typeFilterSelect:focus{
+      outline:none;
       border-color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 56%, rgba(255,255,255,.24));
-      background:
-        linear-gradient(180deg,
-          color-mix(in srgb, var(--schoolColor, #D9AA3F) 28%, rgba(255,255,255,.18)),
-          color-mix(in srgb, var(--schoolColor, #D9AA3F) 46%, rgba(0,0,0,.10)));
       box-shadow:
         0 0 0 3px color-mix(in srgb, var(--schoolColor, #D9AA3F) 18%, transparent),
         inset 0 1px 0 rgba(255,255,255,.20);
@@ -745,6 +812,38 @@ animation: panelBreath 5s ease-in-out infinite;
     0 6px 14px rgba(0,0,0,0.10);
 }
 
+.mi-section{
+  display:grid;
+  gap:10px;
+  margin:8px 0 6px;
+}
+
+.mi-section + .mi-section{
+  margin-top:18px;
+}
+
+.mi-sectionHeader{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  gap:10px;
+  align-items:center;
+}
+
+.mi-sectionLine{
+  height:1px;
+  border-radius:999px;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
+}
+
+.mi-sectionLabel{
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.62);
+  white-space:nowrap;
+}
+
 .mi-shell{
   display:grid;
   grid-template-columns:42px minmax(0,1fr);
@@ -803,30 +902,32 @@ animation: panelBreath 5s ease-in-out infinite;
 
 .mi-body{
   min-width:0;
-  display:grid;
-  grid-template-rows:minmax(0,1fr) auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
   gap:5px;
-  align-content:center;
+  min-height:100%;
+  position:relative;
 }
 
 .mi-top{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) auto;
-  gap:10px;
-  align-items:start;
+  display:block;
+  position:relative;
 }
 
 .mi-titleWrap{
   min-width:0;
-  display:flex;
-  align-items:flex-start;
-  gap:9px;
+  display:grid;
+  grid-template-columns:6px minmax(0,1fr);
+  column-gap:9px;
+  align-items:center;
+  padding-right:64px;
 }
 
 .mi-accentDot{
   width:6px;
   height:6px;
-  margin-top:7px;
+  margin-top:0;
   border-radius:999px;
   flex:0 0 auto;
   background: color-mix(in srgb, var(--schoolColor, #D9AA3F) 58%, rgba(255,255,255,0.20));
@@ -854,14 +955,13 @@ animation: panelBreath 5s ease-in-out infinite;
   opacity: 1;
 }
 
+.mi-item.is-marco .mi-typeTag,
 .mi-item.is-marco .mi-marcoTag{
-  position:absolute;
-  right:14px;
-  bottom:13px;
+  position:static;
 }
 
 .mi-item.is-marco .mi-sub{
-  padding-right:72px;
+  padding-right:64px;
   color: rgba(184,197,215,0.70);
 }
 
@@ -889,9 +989,13 @@ animation: panelBreath 5s ease-in-out infinite;
 
 .mi-meta{
   display:flex;
-  align-items:center;
+  flex-direction:column;
+  align-items:flex-end;
   gap:6px;
   align-self:start;
+  position:absolute;
+  top:0;
+  right:0;
 }
 
     .mi-year{
@@ -910,34 +1014,42 @@ animation: panelBreath 5s ease-in-out infinite;
       letter-spacing:.045em;
       color: rgba(231,237,245,.72);
     }
+    .mi-typeTag,
     .mi-marcoTag{
       flex:0 0 auto;
       display:inline-flex;
       align-items:center;
       justify-content:center;
-      min-height:20px;
-      padding:0 7px;
+      min-height:18px;
+      max-width:58px;
+      padding:0 6px;
       border-radius:999px;
       border:1px solid color-mix(in srgb, var(--schoolColor, #D9AA3F) 18%, rgba(255,255,255,0.09));
       background: color-mix(in srgb, var(--schoolColor, #D9AA3F) 7%, rgba(255,255,255,0.025));
-      font-size:9px;
+      font-size:8px;
       font-weight:800;
-      letter-spacing:.11em;
+      letter-spacing:.06em;
       text-transform:uppercase;
       color: color-mix(in srgb, var(--schoolColor, #D9AA3F) 28%, rgba(231,237,245,0.60));
       pointer-events:none;
-    }
-    .mi-sub{
-      min-width:0;
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
+    }
+    .mi-sub{
+      min-width:0;
+      display:-webkit-box;
+      -webkit-box-orient:vertical;
+      -webkit-line-clamp:2;
+      overflow:hidden;
       opacity:.8;
       font-size:12px;
       font-weight:540;
       color:#b8c5d7;
-      line-height:1.3;
+      line-height:1.14;
       padding-left:15px;
+      padding-right:64px;
+      margin-top:0;
     }
     .mi-item.active .mi-sub{
       color:#d7e1ee;
@@ -1004,16 +1116,25 @@ animation: panelBreath 5s ease-in-out infinite;
       line-height: 1.45;
     }
 
-    .modelPanel .mp-tag{
-      display:inline-block;
-      padding:4px 10px;
-      border-radius:999px;
-      font-size:11px;
+     .modelPanel .mp-tag{
+       display:inline-flex;
+       align-items:center;
+       gap:6px;
+       padding:4px 10px;
+       border-radius:999px;
+       font-size:11px;
       font-weight:800;
       letter-spacing:.3px;
       margin-bottom:10px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
+       background: rgba(255,255,255,0.08);
+       border: 1px solid rgba(255,255,255,0.12);
+     }
+    .modelPanel .mp-tag-sep{
+      opacity:.72;
+    }
+    .modelPanel .mp-tag-type{
+      font-weight:900;
+      text-transform:none;
     }
 .modelPanel .mp-title{
   font-size:28px;              /* ⬅️ más presencia */
@@ -1584,6 +1705,27 @@ animation: panelBreath 5s ease-in-out infinite;
 }
 
 @media (max-width: 980px){
+  .panel.left{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .panel.left > *{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .panel.left .card{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .panel.left .modelsListCard,
+  .panel.left .schoolSticky{
+    width: 100%;
+    max-width: 100%;
+  }
+
   .modelsList{
     gap:8px;
   }
@@ -1614,9 +1756,9 @@ animation: panelBreath 5s ease-in-out infinite;
     padding-left:15px;
   }
 
+  .mi-item.is-marco .mi-typeTag,
   .mi-item.is-marco .mi-marcoTag{
-    right:12px;
-    bottom:11px;
+    position:static;
   }
 
   .mi-item.is-marco .mi-sub{
@@ -2493,13 +2635,20 @@ body.network-mode .networkTip{
 
 /* panel izquierdo glass en vista red */
 body.network-mode .panel.left{
-  background: linear-gradient(180deg, rgba(20,28,38,.72), rgba(20,28,38,.56));
-  border: 1px solid rgba(255,255,255,.16);
-  box-shadow:
-    0 26px 56px rgba(0,0,0,.34),
-    inset 0 1px 0 rgba(255,255,255,.12);
-  backdrop-filter: blur(18px) saturate(130%);
-  -webkit-backdrop-filter: blur(18px) saturate(130%);
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  pointer-events: none;
+}
+
+body.network-mode .panel.left::before{
+  display: none !important;
+}
+
+body.network-mode .panel.left > *{
+  pointer-events: auto;
 }
 
 body.network-mode .panel.left .card{
@@ -2520,14 +2669,20 @@ body.network-mode .panel.left .schoolSticky{
   padding: 0 !important;
 }
 
-body.network-mode .panel.left .schoolSticky.stuck{
+body.network-mode .panel.left .leftTopSticky.stuck{
   background: linear-gradient(180deg, rgba(24,34,46,.88), rgba(20,29,40,.76)) !important;
-  border: 1px solid rgba(255,255,255,.14) !important;
   box-shadow:
     0 14px 30px rgba(0,0,0,.24),
     inset 0 1px 0 rgba(255,255,255,.12) !important;
-  backdrop-filter: blur(16px) saturate(128%) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(128%) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+body.network-mode .networkSelectionCard,
+body.network-mode .networkModelGraphBody .grafica-procesos,
+body.network-mode .networkModelGraphBody .dim-card{
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 @media (max-width: 980px){
@@ -3626,10 +3781,9 @@ html, body{ position: relative; }
 }
     /* ✅ Sticky: selector de escuela fijo dentro del panel izquierdo (todas) */
 .panel.left .schoolSticky{
-  position: sticky;
-  top: 0;
-
-  z-index: 30;
+  position: relative;
+  top: auto;
+  z-index: 1;
 
   background: linear-gradient(180deg, var(--panelA), var(--panelB));
   backdrop-filter: blur(12px) saturate(115%);
@@ -3643,7 +3797,7 @@ html, body{ position: relative; }
 @media (max-width: 980px){
 
   /* Cuando está en posición sticky activa */
-  .panel.left:has(.schoolSticky:is(:sticky, :not(:has(*)))) .schoolSticky{
+  .panel.left:has(.leftTopSticky:is(:sticky, :not(:has(*)))) .schoolSticky{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
@@ -3666,8 +3820,7 @@ html, body{ position: relative; }
     overflow:hidden;
   }
 
-  body.desktop-left-list-scroll .panel.left .title,
-  body.desktop-left-list-scroll .panel.left .schoolSticky{
+  body.desktop-left-list-scroll .panel.left .leftTopSticky{
     flex:0 0 auto;
   }
 
@@ -3688,7 +3841,34 @@ html, body{ position: relative; }
     flex:1 1 auto;
     min-height:0;
     overflow:auto;
-    padding-right:2px;
+    padding-right:14px;
+    scrollbar-gutter: stable;
+  }
+
+  body.desktop-left-list-scroll .panel.left #modelsList{
+    scrollbar-width: thin;
+    scrollbar-color: rgba(231,237,245,0.28) rgba(255,255,255,0.06);
+  }
+
+  body.desktop-left-list-scroll .panel.left #modelsList::-webkit-scrollbar{
+    width:10px;
+  }
+
+  body.desktop-left-list-scroll .panel.left #modelsList::-webkit-scrollbar-track{
+    background: rgba(255,255,255,0.05);
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  body.desktop-left-list-scroll .panel.left #modelsList::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg, rgba(231,237,245,0.28), rgba(231,237,245,0.14));
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.10);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
+  }
+
+  body.desktop-left-list-scroll .panel.left #modelsList::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(180deg, rgba(231,237,245,0.38), rgba(231,237,245,0.18));
   }
 
   body.desktop-network-zone-scroll .panel.left{
@@ -3697,8 +3877,7 @@ html, body{ position: relative; }
     overflow:hidden;
   }
 
-  body.desktop-network-zone-scroll .panel.left .title,
-  body.desktop-network-zone-scroll .panel.left .schoolSticky,
+  body.desktop-network-zone-scroll .panel.left .leftTopSticky,
   body.desktop-network-zone-scroll .panel.left .modelsListCard{
     flex:0 0 auto;
   }
@@ -3731,8 +3910,9 @@ html, body{ position: relative; }
     gap:6px;
   }
 
-  .tf-chip{
-    padding:6px 10px;
+  .typeFilterSelect{
+    min-width:118px;
+    height:32px;
     font-size:10.5px;
   }
 
@@ -3753,76 +3933,12 @@ html, body{ position: relative; }
   }
 
   .schoolControl-main .mobileTypeSlot .typeFilters{
-    display:grid;
-    grid-template-columns:minmax(0,1fr);
-    gap:0;
     width:100%;
-    height:36px;
-    border-radius:12px;
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,.12);
-    background:
-      linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)),
-      radial-gradient(120px 60px at 90% 50%, rgba(217,170,63,.15), transparent 60%);
-    box-shadow:
-      inset 0 1px 0 rgba(255,255,255,.10),
-      0 10px 26px rgba(0,0,0,.24);
   }
 
-  .schoolControl-main .mobileTypeSlot .tf-chip{
-    border:0;
-    border-radius:0;
-    margin:0;
-    padding:0 8px;
-    height:100%;
-    font-size:11px;
-    letter-spacing:.2px;
-    text-transform:uppercase;
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"]{
-    color:#fff;
-    background:
-      linear-gradient(180deg,
-        color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,.18)),
-        color-mix(in srgb, var(--schoolColor, #D9AA3F) 54%, rgba(0,0,0,.10)));
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="model"]{
-    display:none;
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip{
-    font-size:0;
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip::before{
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:.2px;
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"][data-state="all"]::before{
-    content:"Todos";
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"][data-state="models"]::before{
-    content:"Modelos";
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"][data-state="frames"]::before{
-    content:"Marcos";
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip.active{
-    box-shadow:none;
-  }
-
-  .schoolControl-main .mobileTypeSlot .tf-chip:hover{
-    background:
-      linear-gradient(180deg,
-        color-mix(in srgb, var(--schoolColor, #D9AA3F) 34%, rgba(255,255,255,.18)),
-        color-mix(in srgb, var(--schoolColor, #D9AA3F) 54%, rgba(0,0,0,.10)));
+  .schoolControl-main .mobileTypeSlot .typeFilterSelect{
+    width:100%;
+    min-width:0;
   }
 
 
@@ -3832,13 +3948,75 @@ html, body{ position: relative; }
   }
 
   .panel.left{
-    width: calc(100vw - (var(--edgePad) * 2));
-    height: var(--leftH);      /* ✅ fijo: sin movimiento */
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: auto;
+    padding: 0 var(--edgePad) calc(100vh - (var(--leftH) + var(--rightGap)) + var(--edgePad) + 28px) var(--edgePad);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background:
+      linear-gradient(180deg, var(--panelA), var(--panelB)),
+      radial-gradient(120% 120% at 0% 0%, color-mix(in srgb, var(--schoolColor, #D9AA3F) 16%, rgba(255,255,255,0.08)), transparent 62%);
     transition: height .42s cubic-bezier(.22,.61,.36,1);
+    z-index: 10;
+  }
+
+  .panel.left::before{
+    inset: 0;
+    border-radius: 0;
   }
 
   .panel.left.mobile-expanded{
-    height: calc(var(--leftH) + var(--mobilePanelShift, 0px));
+    height: calc(100vh + var(--mobilePanelShift, 0px));
+    max-height: calc(100vh + var(--mobilePanelShift, 0px));
+  }
+
+  .panel.left .title{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .panel.left .leftTopSticky{
+    background: linear-gradient(180deg, var(--panelA), var(--panelB));
+  }
+
+  .panel.left .card{
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    background: transparent;
+    box-shadow: none;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .panel.left .modelsListCard{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .panel.left .networkSelectionCard{
+    border-radius: 18px;
+    border-left: 1px solid rgba(255,255,255,0.08);
+    border-right: 1px solid rgba(255,255,255,0.08);
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
+      radial-gradient(130% 120% at 0% 0%, color-mix(in srgb, var(--schoolColor, #5F7F78) 18%, rgba(255,255,255,0.08)), transparent 62%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.08),
+      0 18px 36px rgba(0,0,0,0.18);
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .panel.right{
@@ -3856,6 +4034,7 @@ html, body{ position: relative; }
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-y;
+    z-index: 20;
   }
 
   .panel.right.mobile-lowered{
@@ -3906,23 +4085,15 @@ html, body{ position: relative; }
 }
 
 /* ✅ Bordes rectos cuando el sticky está pegado (tu clase .stuck) */
-.panel.left .schoolSticky.stuck{
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
-
+.panel.left .leftTopSticky.stuck{
   background: linear-gradient(180deg, var(--panelA), var(--panelB)) !important;
-  border: 1px solid rgba(255,255,255,0.10) !important;
   box-shadow: 0 10px 26px rgba(0,0,0,0.28) !important;
   backdrop-filter: blur(12px) saturate(115%) !important;
   -webkit-backdrop-filter: blur(12px) saturate(115%) !important;
 }
 
-body.theme-light .panel.left .schoolSticky.stuck{
+body.theme-light .panel.left .leftTopSticky.stuck{
   background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(244,249,255,.90)) !important;
-  border: 1px solid rgba(118,129,153,.22) !important;
   box-shadow: 0 10px 24px rgba(28,47,79,.12) !important;
 }
 /* ===== Botón FULL (arriba derecha dentro del panel de info) ===== */
@@ -5474,6 +5645,8 @@ body.theme-light{
   --bg:#f2f6fc;
   --panelA: rgba(255,255,255,0.90);
   --panelB: rgba(247,251,255,0.80);
+  --panelRightA: rgb(255,255,255);
+  --panelRightB: rgb(244,248,253);
   --text:#1d1d1f;
   --muted:#5f697a;
   --muted2:#768296;
@@ -5599,25 +5772,41 @@ body.theme-light .complexityScaleMeta{
   color:#6d7a8f;
 }
 
-body.theme-light .tf-chip{
+body.theme-light .typeFilterSelect{
   color:#55637a;
   border:1px solid rgba(118,129,153,.24);
-  background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(242,248,255,.90));
+  background-image:
+    linear-gradient(180deg, rgba(255,255,255,.98), rgba(242,248,255,.90)),
+    radial-gradient(120px 60px at 90% 50%, rgba(95,143,209,.10), transparent 60%),
+    url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'>\
+<path d='M7 10l5 5 5-5' stroke='%2355637a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>\
+</svg>");
+  background-repeat:no-repeat;
+  background-position:
+    0 0,
+    0 0,
+    right 10px center;
+  background-size:
+    auto,
+    auto,
+    16px 16px;
 }
 
-body.theme-light .tf-chip:hover{
+body.theme-light .typeFilterSelect:hover{
   color:#1f2d44;
   border-color: rgba(89,128,188,.40);
-  background: linear-gradient(180deg, rgba(255,255,255,1), rgba(236,245,255,.94));
+  background-image:
+    linear-gradient(180deg, rgba(255,255,255,1), rgba(236,245,255,.94)),
+    radial-gradient(120px 60px at 90% 50%, rgba(95,143,209,.12), transparent 60%),
+    url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'>\
+<path d='M7 10l5 5 5-5' stroke='%231f2d44' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>\
+</svg>");
 }
 
-body.theme-light .tf-chip.active{
-  color:#102744;
+body.theme-light .typeFilterSelect:focus{
   border-color: color-mix(in srgb, var(--schoolColor,#5f8fd1) 42%, rgba(118,129,153,.22));
-  background:
-    linear-gradient(180deg,
-      color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
-      color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(255,255,255,.82)));
   box-shadow:
     0 0 0 3px color-mix(in srgb, var(--schoolColor,#5f8fd1) 13%, transparent),
     inset 0 1px 0 rgba(255,255,255,.98);
@@ -5632,32 +5821,17 @@ body.theme-light .tf-chip.active{
       0 8px 20px rgba(28,47,79,.10);
   }
 
-  body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip[data-kind="marco"]{
+  body.theme-light .schoolControl-main .mobileTypeSlot .typeFilterSelect{
     color:#102744;
-    background:
+    background-image:
       linear-gradient(180deg,
         color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
-        color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(255,255,255,.82)));
-  }
-
-  body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip + .tf-chip{
-    border-left:1px solid rgba(118,129,153,.26);
-  }
-
-  body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip.active{
-    background:
-      linear-gradient(180deg,
-        color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
-        color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(255,255,255,.82)));
-    color:#102744;
-  }
-
-  body.theme-light .schoolControl-main .mobileTypeSlot .tf-chip:hover{
-    background:
-      linear-gradient(180deg,
-        color-mix(in srgb, var(--schoolColor,#5f8fd1) 20%, rgba(255,255,255,.95)),
-        color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(255,255,255,.82)));
-    color:#102744;
+        color-mix(in srgb, var(--schoolColor,#5f8fd1) 34%, rgba(255,255,255,.82))),
+      radial-gradient(120px 60px at 90% 50%, rgba(95,143,209,.12), transparent 60%),
+      url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'>\
+<path d='M7 10l5 5 5-5' stroke='%23102744' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>\
+</svg>");
   }
 }
 
@@ -5766,6 +5940,14 @@ body.theme-light .mi-item.is-marco.active{
     inset 0 1px 0 rgba(255,255,255,.99);
 }
 
+body.theme-light .mi-sectionLine{
+  background:linear-gradient(90deg, transparent, rgba(118,129,153,.28), transparent);
+}
+
+body.theme-light .mi-sectionLabel{
+  color:rgba(65,78,102,.66);
+}
+
 body.theme-light .mi-avatar{
   background:
     radial-gradient(circle at 30% 28%, rgba(255,255,255,.96), rgba(255,255,255,.72) 62%),
@@ -5787,6 +5969,7 @@ body.theme-light .mi-year{
   box-shadow: inset 0 1px 0 rgba(255,255,255,.98);
 }
 
+body.theme-light .mi-typeTag,
 body.theme-light .mi-marcoTag{
   color: color-mix(in srgb, var(--schoolColor, #5f8fd1) 44%, #465a79);
   border-color: color-mix(in srgb, var(--schoolColor, #5f8fd1) 20%, rgba(118,129,153,.18));
@@ -6326,14 +6509,13 @@ body.apk-mode #modelSheet::-webkit-scrollbar {
   <div class="app">
     <!-- PANEL IZQUIERDO -->
     <aside class="panel left">
-    <h1 class="title">
-  <span class="t-eyebrow">Buscador por</span>
-  <span class="t-main">Modelos</span>
-</h1>
+      <div class="leftTopSticky">
+        <h1 class="title">
+          <span class="t-eyebrow">Buscador por</span>
+          <span class="t-main">Modelos</span>
+        </h1>
 
-     
-
-      <div class="card schoolSticky">
+        <div class="card schoolSticky">
         <div class="schoolControls">
           <div class="schoolControl schoolControl-main">
             <div class="schoolSelectRow">
@@ -6367,10 +6549,7 @@ body.apk-mode #modelSheet::-webkit-scrollbar {
 
         <div class="countFiltersRow">
           <div id="countLine" class="subtitle" style="margin:0; opacity:.9"></div>
-          <div id="typeFilters" class="typeFilters" role="group" aria-label="Filtrar tipos">
-            <button type="button" class="tf-chip active" data-kind="model" aria-pressed="true">Modelos</button>
-            <button type="button" class="tf-chip active" data-kind="marco" aria-pressed="true">Marcos</button>
-          </div>
+        </div>
         </div>
       </div>
 
@@ -6494,27 +6673,56 @@ function normAuthorKey(s){
     .trim();
 }
 
+function buildAuthorPhotoUrl(file){
+  const clean = String(file ?? '').trim();
+  if (!clean) return null;
+  const encodedPath = clean.split('/').map(part => encodeURIComponent(part)).join('/');
+  return `${DATA_BASE}/Core/fotos/${encodedPath}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
+}
+
+function getDirectModelPhotoEntry(model, idx){
+  const source = idx?.models;
+  if (!source || !model || typeof model !== 'object') return null;
+
+  const rawFile = String(model.file || model.archivo || '').trim();
+  const fileBase = rawFile
+    ? rawFile.split('/').pop().replace(/\.[^.]+$/, '').trim()
+    : '';
+
+  const candidates = [
+    String(model.id ?? '').trim(),
+    String(model.modeloId ?? '').trim(),
+    fileBase
+  ].filter(Boolean);
+
+  for (const key of candidates){
+    if (source[key]) return source[key];
+  }
+
+  return null;
+}
+
 function resolveAuthorPhotoUrl(model){
   if(!model) return null;
 
   const idx = window.AUTHOR_PHOTO_INDEX || { authors:{}, models:{} };
+  const modelEntry = getDirectModelPhotoEntry(model, idx);
+  if (modelEntry) {
+    const entry = modelEntry;
+    if (Array.isArray(entry)){
+      const file = entry[0];
+      return buildAuthorPhotoUrl(file);
+    }
+    return buildAuthorPhotoUrl(entry);
+  }
+
   const fullAutores = String(model.autores ?? '').trim();
   const autorFoto = (fullAutores.split(';')[0] || '').trim() || '';
   const autorFotoKey = autorFoto.split(',')[0].trim();
 
   const authorKey = normAuthorKey(autorFotoKey);
   if (idx.authors?.[authorKey]) {
-    return `${DATA_BASE}/Core/fotos/${idx.authors[authorKey]}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
-  }
-
-  const modelKey = String(model.id ?? '').trim();
-  if (idx.models?.[modelKey]) {
-    const entry = idx.models[modelKey];
-    if (Array.isArray(entry)){
-      const file = entry[0];
-      return file ? `${DATA_BASE}/Core/fotos/${file}?v=${encodeURIComponent(__ASSET_VER || Date.now())}` : null;
-    }
-    return `${DATA_BASE}/Core/fotos/${entry}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`;
+    return buildAuthorPhotoUrl(idx.authors[authorKey]);
   }
 
   return null;
@@ -6523,8 +6731,7 @@ function resolveAuthorPhotoUrl(model){
 function getModelPhotoUrls(model){
   if (!model) return [];
   const idx = window.AUTHOR_PHOTO_INDEX || { authors:{}, models:{} };
-  const modelKey = String(model.id ?? '').trim();
-  const entry = idx.models?.[modelKey];
+  const entry = getDirectModelPhotoEntry(model, idx);
   if (!entry) return [];
 
   const rawList = Array.isArray(entry)
@@ -6533,7 +6740,8 @@ function getModelPhotoUrls(model){
 
   return rawList
     .filter(Boolean)
-    .map(file => `${DATA_BASE}/Core/fotos/${file}?v=${encodeURIComponent(__ASSET_VER || Date.now())}`);
+    .map(file => buildAuthorPhotoUrl(file))
+    .filter(Boolean);
 }
 
 function getPrimaryAuthorName(value){
@@ -6553,6 +6761,101 @@ function getAuthorInitials(value){
   const parts = clean.split(' ').filter(Boolean);
   if (!parts.length) return 'M';
   return parts.slice(0, 2).map(part => part.charAt(0).toUpperCase()).join('');
+}
+
+function buildModelCardAvatarHtml(model, photoUrlOverride){
+  const authorText = escapeHtml(model?.autores ?? '—');
+  const authorInitials = escapeHtml(getAuthorInitials(model?.autores));
+  const photoUrl = photoUrlOverride || resolveAuthorPhotoUrl(model);
+  return photoUrl
+    ? `<div class="mi-avatarFallback" aria-hidden="true">${authorInitials}</div><img src="${escapeHtml(photoUrl)}" data-photo-url="${escapeHtml(photoUrl)}" alt="${authorText}" loading="lazy" decoding="async">`
+    : `<div class="mi-avatarFallback" aria-hidden="true">${authorInitials}</div>`;
+}
+
+function setupModelCardPhotoRetry(imgEl, baseUrl){
+  if (!imgEl || !baseUrl) return;
+  const retryDelays = [900, 3000];
+  let attempt = 0;
+  let done = false;
+  let timer = null;
+
+  const clearTimer = () => {
+    if (!timer) return;
+    clearTimeout(timer);
+    timer = null;
+  };
+
+  const runAttempt = () => {
+    if (done || attempt >= retryDelays.length) return;
+    timer = setTimeout(() => {
+      if (done) return;
+      const src = appendUrlParam(baseUrl, '_cardRetry', `${Date.now()}_${attempt}`);
+      attempt += 1;
+      imgEl.src = src;
+    }, retryDelays[attempt]);
+  };
+
+  imgEl.onload = () => {
+    done = true;
+    clearTimer();
+  };
+
+  imgEl.onerror = () => {
+    clearTimer();
+    if (attempt >= retryDelays.length){
+      imgEl.remove();
+      return;
+    }
+    runAttempt();
+  };
+
+  runAttempt();
+}
+
+function hydrateModelCardAvatars(){
+  if (!modelsListEl || groupingMode === 'network') return;
+
+  const idx = window.AUTHOR_PHOTO_INDEX;
+  const hasPhotoData = !!(
+    idx &&
+    ((idx.authors && Object.keys(idx.authors).length) ||
+     (idx.models && Object.keys(idx.models).length))
+  );
+  if (!hasPhotoData) return;
+
+  const allModels = (Array.isArray(window.MODELS_ALL) && window.MODELS_ALL.length)
+    ? window.MODELS_ALL
+    : (Array.isArray(MODELS) ? MODELS : []);
+
+  modelsListEl.querySelectorAll('.mi-item[data-id]').forEach((item) => {
+    const rawId = item.getAttribute('data-id') || '';
+    const modelId = decodeURIComponent(rawId);
+    const model = allModels.find((entry) => String(entry?.id ?? '').trim() === String(modelId).trim());
+    if (!model) return;
+
+    const photoUrl = resolveAuthorPhotoUrl(model);
+    if (!photoUrl) return;
+
+    const avatarEl = item.querySelector('.mi-avatar');
+    if (!avatarEl) return;
+
+    const currentImg = avatarEl.querySelector('img[data-photo-url]');
+    if (currentImg && currentImg.getAttribute('data-photo-url') === photoUrl) return;
+
+    avatarEl.innerHTML = buildModelCardAvatarHtml(model, photoUrl);
+    const nextImg = avatarEl.querySelector('img[data-photo-url]');
+    if (nextImg) setupModelCardPhotoRetry(nextImg, photoUrl);
+  });
+}
+
+function initVisibleModelCardPhotoRetries(){
+  if (!modelsListEl || groupingMode === 'network') return;
+  modelsListEl.querySelectorAll('.mi-avatar img[data-photo-url]').forEach((imgEl) => {
+    if (imgEl.dataset.retryBound === '1') return;
+    imgEl.dataset.retryBound = '1';
+    const baseUrl = imgEl.getAttribute('data-photo-url') || imgEl.getAttribute('src') || '';
+    if (baseUrl) setupModelCardPhotoRetry(imgEl, baseUrl);
+  });
 }
 
 function ensureAuthorPhotoIndexPromise(){
@@ -6700,6 +7003,83 @@ function normalizeTechniqueLookupValue(value){
     .toLowerCase();
 }
 
+function getModelTypeInfo(model){
+  const candidates = [
+    model?.tipoTarjeta,
+    model?.tipoModelo,
+    model?.tipoDeModelo,
+    model?.tipoFicha,
+    model?.tipo,
+    model?.type,
+    model?.kind,
+    model?.categoriaTipo
+  ];
+
+  for (const rawValue of candidates){
+    const raw = String(rawValue ?? '').trim();
+    if (!raw) continue;
+    const normalized = normalizeIsoText(raw);
+
+    if (
+      normalized === 'constructo' ||
+      normalized === 'constructos' ||
+      normalized === 'constructo cultural' ||
+      normalized.includes('constructo cultural') ||
+      normalized.includes('constructo')
+    ){
+      return { key:'constructo', label:'Constructo' };
+    }
+
+    if (
+      normalized === 'programa' ||
+      normalized === 'programas' ||
+      normalized.includes('programa terapeutico') ||
+      normalized.includes('programa')
+    ){
+      return { key:'programa', label:'Programa' };
+    }
+
+    if (
+      normalized === 'corriente' ||
+      normalized.includes('corriente terapeutica') ||
+      normalized.includes('corriente psicoterapeutica') ||
+      normalized === 'marco' ||
+      normalized === 'marcos' ||
+      normalized.includes('marco teorico') ||
+      normalized.includes('framework')
+    ){
+      return { key:'marco', label:'Marco' };
+    }
+
+    if (
+      normalized === 'modelo' ||
+      normalized === 'modelos' ||
+      normalized.includes('modelo terapeutico') ||
+      normalized.includes('model')
+    ){
+      return { key:'modelo', label:'Modelo' };
+    }
+  }
+
+  if (model?.isMarco){
+    return { key:'marco', label:'Marco' };
+  }
+
+  return { key:'modelo', label:'Modelo' };
+}
+
+function isMarcoModel(model){
+  return getModelTypeInfo(model).key === 'marco';
+}
+
+function getModelTypeCardLabel(model){
+  const key = getModelTypeInfo(model).key;
+  if (key === 'constructo') return 'CON';
+  if (key === 'programa') return 'PRO';
+  if (key === 'marco') return 'MAR';
+  return 'MOD';
+}
+
 function buildIsoModelTechniqueKey(modelId = '', tecnicaId = ''){
   return [
     normalizeTechniqueLookupValue(modelId),
@@ -6751,6 +7131,135 @@ function buildIsomorphismIndexFromList(raw){
   });
 
   return { byEntryKey, byFallbackKey, byNameKey };
+}
+
+function buildIsomorphismIndexFromRepoLinks(raw){
+  const safe = (raw && typeof raw === 'object') ? raw : {};
+  const groups = Array.isArray(safe.entries) ? safe.entries.filter(Boolean) : [];
+  if (!groups.length) return emptyIsomorphismIndex();
+
+  primeIsomorphismModelMetaCache();
+
+  const resolveModelMeta = (modelId = '') => getCachedIsomorphismModelMeta(modelId) || null;
+  const normalizeRepoLink = (link) => {
+    const modeloId = String(link?.modeloId || '').trim();
+    const meta = resolveModelMeta(modeloId);
+    return {
+      modeloId,
+      modeloLabel: String(meta?.label || link?.modeloLabel || modeloId).trim(),
+      grupo: String(meta?.grupo || link?.grupo || '').trim(),
+      tecnicaId: String(link?.tecnicaId || '').trim(),
+      tecnicaLabel: String(link?.tecnicaNombre || link?.tecnicaLabel || link?.tecnicaId || '').trim(),
+      tecnicaTipo: String(link?.tipo || link?.tecnicaTipo || '').trim(),
+      estado: String(link?.estado || '').trim(),
+      nota: String(link?.nota || '').trim(),
+      sourceFile: 'indices/isomorfismos/isomorfismos-links-modeloId-tecnicaId-repo.json'
+    };
+  };
+  const buildTechniqueIsoRow = (iso, entry, entries) => ({
+    isomorfismoId: String(iso?.id || '').trim(),
+    isomorfismoLabel: String(iso?.label || iso?.id || '').trim(),
+    isomorfismoDefinicion: String(iso?.definicion || '').trim(),
+    isomorfismoCategoria: String(iso?.categoria || '').trim(),
+    isomorfismoEntries: (Array.isArray(entries) ? entries : [])
+      .filter((item) => String(item?.estado || '').trim().toLowerCase() === 'ok')
+      .map((item) => ({ ...item })),
+    tecnicaId: String(entry?.tecnicaId || '').trim(),
+    tecnicaLabel: String(entry?.tecnicaLabel || '').trim(),
+    tecnicaTipo: String(entry?.tecnicaTipo || '').trim(),
+    modeloId: String(entry?.modeloId || '').trim(),
+    modeloLabel: String(entry?.modeloLabel || '').trim(),
+    grupo: String(entry?.grupo || '').trim(),
+    nota: String(entry?.nota || '').trim(),
+    sourceFile: String(entry?.sourceFile || '').trim()
+  });
+  const sortTechniqueIsoRows = (rows) => rows.slice().sort((a, b) => {
+    const byTechnique = String(a?.tecnicaId || '').localeCompare(String(b?.tecnicaId || ''), 'es');
+    if (byTechnique !== 0) return byTechnique;
+    return String(a?.isomorfismoLabel || '').localeCompare(String(b?.isomorfismoLabel || ''), 'es');
+  });
+
+  const rawIsomorfismos = groups.map((entry) => {
+    const links = Array.isArray(entry?.links) ? entry.links.filter(Boolean).map(normalizeRepoLink) : [];
+    return {
+      id: String(entry?.id || '').trim(),
+      label: String(entry?.label || entry?.id || '').trim(),
+      definicion: String(entry?.definicion || '').trim(),
+      categoria: String(entry?.categoria || '').trim(),
+      subcategoria: String(entry?.subcategoria || '').trim(),
+      entries: links
+    };
+  }).filter((iso) => String(iso?.id || '').trim());
+
+  const byIsomorfismoId = new Map();
+  const byModeloId = new Map();
+  const byTecnicaId = new Map();
+  const byModelTechniqueKey = new Map();
+  const byModelId = new Map();
+  const seen = new Set();
+
+  rawIsomorfismos.forEach((iso) => {
+    const isoId = String(iso?.id || '').trim();
+    if (isoId) byIsomorfismoId.set(isoId, iso);
+
+    const entries = Array.isArray(iso?.entries) ? iso.entries : [];
+    entries.forEach((entry) => {
+      const modelId = String(entry?.modeloId || '').trim();
+      const tecnicaId = String(entry?.tecnicaId || '').trim();
+      const estado = String(entry?.estado || '').trim().toLowerCase();
+      if (!isoId || !modelId || !tecnicaId || estado !== 'ok') return;
+
+      const dedupeKey = `${modelId}|${tecnicaId}|${isoId}`;
+      if (seen.has(dedupeKey)) return;
+      seen.add(dedupeKey);
+
+      const row = buildTechniqueIsoRow(iso, entry, entries);
+      const normalizedModelId = normalizeTechniqueLookupValue(modelId);
+      const normalizedTecnicaId = normalizeTechniqueLookupValue(tecnicaId);
+
+      const techniqueKey = buildIsoModelTechniqueKey(modelId, tecnicaId);
+      const techniqueBucket = byModelTechniqueKey.get(techniqueKey) || [];
+      techniqueBucket.push(row);
+      byModelTechniqueKey.set(techniqueKey, techniqueBucket);
+
+      const modelBucket = byModelId.get(normalizedModelId) || [];
+      modelBucket.push(row);
+      byModelId.set(normalizedModelId, modelBucket);
+
+      const legacyModelBucket = byModeloId.get(normalizedModelId) || [];
+      legacyModelBucket.push(row);
+      byModeloId.set(normalizedModelId, legacyModelBucket);
+
+      const tecnicaBucket = byTecnicaId.get(normalizedTecnicaId) || [];
+      tecnicaBucket.push(row);
+      byTecnicaId.set(normalizedTecnicaId, tecnicaBucket);
+    });
+  });
+
+  byModelTechniqueKey.forEach((rows, key) => {
+    byModelTechniqueKey.set(key, sortTechniqueIsoRows(rows));
+  });
+  byModelId.forEach((rows, key) => {
+    byModelId.set(key, sortTechniqueIsoRows(rows));
+  });
+  byModeloId.forEach((rows, key) => {
+    byModeloId.set(key, sortTechniqueIsoRows(rows));
+  });
+  byTecnicaId.forEach((rows, key) => {
+    byTecnicaId.set(key, sortTechniqueIsoRows(rows));
+  });
+
+  return {
+    rawIsomorfismos,
+    byIsomorfismoId,
+    byModeloId,
+    byTecnicaId,
+    byModelTechniqueKey,
+    byModelId,
+    byEntryKey:new Map(),
+    byFallbackKey:new Map(),
+    byNameKey:new Map()
+  };
 }
 
 function buildIsomorphismIndexFromLookup(raw){
@@ -6971,8 +7480,47 @@ function buildIsomorphismUrlCandidates(relPath){
   return [...new Set(rootLike)];
 
 }
+
+function buildIsomorphismRepoUrlCandidates(relPath){
+
+  const clean = String(relPath || '').replace(/^\/+/, '');
+  const rawGithub = `https://raw.githubusercontent.com/${GH_OWNER}/${GH_REPO}/main/${clean}`;
+
+  const rootLike = [
+    `${location.origin}${resolveRepoBasePath()}/${clean}`.replace(/([^:]\/)\/+/g, '$1'),
+    `${cdnBase()}/${clean}`,
+    rawGithub
+  ];
+
+  return [...new Set(rootLike)];
+
+}
+
 async function loadIsomorphismIndex(){
   try{
+    const repoLinkUrls = buildIsomorphismRepoUrlCandidates('indices/isomorfismos/isomorfismos-links-modeloId-tecnicaId-repo.json');
+
+    for (const url of repoLinkUrls){
+      let rawRepoLinks = null;
+      try{
+        rawRepoLinks = await fetchJson(url, { bust:true });
+      }catch(err){
+        continue;
+      }
+      const looksLikeRepoLinks = !!(
+        rawRepoLinks &&
+        typeof rawRepoLinks === 'object' &&
+        !Array.isArray(rawRepoLinks) &&
+        Array.isArray(rawRepoLinks.entries)
+      );
+      if (!looksLikeRepoLinks) continue;
+
+      const repoLinkIndex = buildIsomorphismIndexFromRepoLinks(rawRepoLinks);
+      if (!indexHasUsableIsomorphismData(repoLinkIndex)) continue;
+      window.ISOMORPHISM_INDEX = repoLinkIndex;
+      return repoLinkIndex;
+    }
+
     const lookupUrls = buildIsomorphismUrlCandidates('indices/isomorfismos/iso_lookup.json');
 
     for (const url of lookupUrls){
@@ -8394,9 +8942,6 @@ async function ensureModelFull(m){
     const groupTargetLabelEl = document.getElementById('groupTargetLabel');
     const groupTargetSelectEl = document.getElementById('groupTargetSelect');
     const complexitySwitchEl = document.getElementById('complexitySwitch');
-    const typeFiltersEl = document.getElementById('typeFilters');
-    const mobileTypeSlotEl = document.getElementById('mobileTypeSlot');
-    const countFiltersRowEl = document.querySelector('.countFiltersRow');
     const modelsListEl = document.getElementById('modelsList');
     const networkSelectionEl = document.getElementById('networkSelectionCard');
     const countLine = document.getElementById('countLine');
@@ -8404,8 +8949,6 @@ async function ensureModelFull(m){
     const leftListTitleEl = document.getElementById('leftListTitle');
     const leftListHintEl = document.getElementById('leftListHint');
     let complexityLevel = 4;
-    let showModelItems = true;
-    let showMarcoItems = true;
     let groupingMode = 'school';
     let groupingTarget = '';
     const SIGNIFICANT_DIMENSION_PCT = 20;
@@ -8981,7 +9524,7 @@ syncIcon();
 /* ===== DETECTAR STICKY PEGADO ARRIBA ===== */
 if (leftPanel){
   leftPanel.addEventListener('scroll', () => {
-    const sticky = leftPanel.querySelector('.schoolSticky');
+    const sticky = leftPanel.querySelector('.leftTopSticky');
     if (!sticky) return;
 
     const r = sticky.getBoundingClientRect();
@@ -9110,7 +9653,7 @@ function scheduleIdleTask(fn, timeout = 1200){
 
 function syncDesktopLeftListScrollMode(){
   const isDesktop = !isMobileViewport();
-  const enableListOnly = isDesktop && (groupingMode === 'process' || groupingMode === 'dimension');
+  const enableListOnly = isDesktop && groupingMode !== 'network';
   const enableNetworkZoneOnly = isDesktop && groupingMode === 'network' && !!String(NETWORK_FILTER_STATE.selectedZoneKey || '').trim();
   document.body.classList.toggle('desktop-left-list-scroll', enableListOnly);
   document.body.classList.toggle('desktop-network-zone-scroll', enableNetworkZoneOnly);
@@ -9351,81 +9894,62 @@ function applyComplexityFilter(list){
   });
 }
 
-function syncTypeFiltersUi(){
-  if (!typeFiltersEl) return;
-  typeFiltersEl.querySelectorAll('.tf-chip').forEach(btn => {
-    const kind = String(btn.dataset.kind || '');
-    const isActive = (kind === 'marco') ? showMarcoItems : showModelItems;
-    btn.classList.toggle('active', isActive);
-    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-  });
+function buildModelListItemMarkup(model){
+  const active = (String(model.id) === String(currentModelId)) ? 'active' : '';
+  const safeId = encodeURIComponent(String(model.id ?? '').trim());
+  const schoolColor = colorForSchoolLabel(model.grupo);
+  const typeInfo = getModelTypeInfo(model);
+  const marcoClass = typeInfo.key === 'marco' ? 'is-marco' : '';
+  const authorText = escapeHtml(model.autores ?? '-');
+  const avatarHtml = buildModelCardAvatarHtml(model);
 
-  // Estado móvil: ciclo Todos -> Modelos -> Marcos
-  const marcoBtn = typeFiltersEl.querySelector('.tf-chip[data-kind="marco"]');
-  if (marcoBtn){
-    let state = 'all';
-    if (showModelItems && showMarcoItems) state = 'all';
-    else if (showModelItems && !showMarcoItems) state = 'models';
-    else if (!showModelItems && showMarcoItems) state = 'frames';
-    marcoBtn.setAttribute('data-state', state);
-  }
+  return `
+  <div class="mi-item ${active} ${marcoClass}" data-id="${safeId}" style="--schoolColor:${escapeHtml(schoolColor)}">
+    <div class="mi-shell">
+      <div class="mi-avatar">${avatarHtml}</div>
+      <div class="mi-body">
+        <div class="mi-top">
+          <div class="mi-titleWrap">
+            <span class="mi-accentDot" aria-hidden="true"></span>
+            <div class="mi-title">${escapeHtml(model.label ?? '-')}</div>
+          </div>
+          <div class="mi-meta">
+            <div class="mi-year">${escapeHtml(model.year ?? '-')}</div>
+          </div>
+        </div>
+        <div class="mi-sub">${authorText}</div>
+      </div>
+    </div>
+  </div>
+`;
 }
 
-function setupTypeFilters(){
-  if (!typeFiltersEl || typeFiltersEl.__bound) return;
-  typeFiltersEl.__bound = true;
+function buildModelSectionsMarkup(list){
+  const sectionDefs = [
+    { key:'modelo', label:'Modelo' },
+    { key:'marco', label:'Marco teórico' },
+    { key:'programa', label:'Programa o protocolo' },
+    { key:'constructo', label:'Constructo teórico' }
+  ];
 
-  syncTypeFiltersUi();
+  return sectionDefs
+    .map((section) => {
+      const rows = list.filter((model) => getModelTypeInfo(model).key === section.key);
+      if (!rows.length) return '';
 
-  typeFiltersEl.addEventListener('click', (evt) => {
-    const btn = evt.target.closest('.tf-chip');
-    if (!btn) return;
-
-    const kind = String(btn.dataset.kind || '');
-    const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
-
-    if (kind === 'marco' && isMobile){
-      // Ciclo: todos -> modelos -> marcos
-      if (showModelItems && showMarcoItems){
-        showModelItems = true;
-        showMarcoItems = false;
-      }else if (showModelItems && !showMarcoItems){
-        showModelItems = false;
-        showMarcoItems = true;
-      }else{
-        showModelItems = true;
-        showMarcoItems = true;
-      }
-    }else if (kind === 'marco'){
-      showMarcoItems = !showMarcoItems;
-    }else{
-      showModelItems = !showModelItems;
-    }
-
-    syncTypeFiltersUi();
-    renderModelsList();
-  });
-}
-
-function placeTypeFiltersForViewport(){
-  if (!typeFiltersEl || !mobileTypeSlotEl || !countFiltersRowEl) return;
-
-  const isMobile = !!(window.matchMedia && window.matchMedia('(max-width: 980px)').matches);
-  // En móvil ya no hay control de tipos: siempre mostramos todo.
-  if (isMobile){
-    const changed = (!showModelItems || !showMarcoItems);
-    showModelItems = true;
-    showMarcoItems = true;
-    if (changed){
-      syncTypeFiltersUi();
-      try{ renderModelsList(); }catch(e){}
-    }
-  }
-  const targetParent = countFiltersRowEl;
-
-  if (typeFiltersEl.parentElement !== targetParent){
-    targetParent.appendChild(typeFiltersEl);
-  }
+      return `
+        <section class="mi-section" data-section-type="${escapeHtml(section.key)}">
+          <div class="mi-sectionHeader" aria-hidden="true">
+            <span class="mi-sectionLine"></span>
+            <span class="mi-sectionLabel">${escapeHtml(section.label)}</span>
+            <span class="mi-sectionLine"></span>
+          </div>
+          ${rows.map(buildModelListItemMarkup).join('')}
+        </section>
+      `;
+    })
+    .filter(Boolean)
+    .join('');
 }
 
 function setComplexityLevel(level){
@@ -9537,7 +10061,7 @@ function baseListByGroupingMode(){
 
   if (groupingMode === 'network'){
     return MODELS
-      .filter(m => !(m && m.hideInModels) && !(m && m.isMarco))
+      .filter(m => !(m && m.hideInModels) && !isMarcoModel(m))
       .sort((a,b) =>
         String(a.grupo || '').localeCompare(String(b.grupo || ''), 'es') ||
         (+a.year||0) - (+b.year||0) ||
@@ -9816,9 +10340,6 @@ function renderModelsList(){
     document.body.classList.remove('infoFull');
   }
 
-  if (typeFiltersEl){
-    typeFiltersEl.style.display = (groupingMode === 'network') ? 'none' : '';
-  }
   const setLeftListMeta = (title, hint) => {
     if (leftListTitleEl) leftListTitleEl.textContent = title;
     if (leftListHintEl) leftListHintEl.textContent = hint;
@@ -9857,23 +10378,8 @@ function renderModelsList(){
   }
 
   const baseList = baseListByGroupingMode();
-  const onlyModels = baseList.filter(m => !(m && m.isMarco));
-  const onlyMarcos = baseList.filter(m => !!(m && m.isMarco));
-
-  const visibleModels = showModelItems ? applyComplexityFilter(onlyModels) : [];
-  const visibleMarcos = showMarcoItems ? applyComplexityFilter(onlyMarcos) : [];
-
-  const visibleSet = new Set([...visibleModels, ...visibleMarcos]);
-  let list = baseList.filter(m => visibleSet.has(m));
+  let list = applyComplexityFilter(baseList);
   list = applyGroupingFilterAndSort(list);
-
-  if (currentModelId){
-    const selected = baseList.find(m => String(m.id ?? '') === String(currentModelId));
-    if (selected && !list.some(m => String(m.id ?? '') === String(currentModelId))){
-      list = baseList.filter(m => visibleSet.has(m) || String(m.id ?? '') === String(currentModelId));
-      list = applyGroupingFilterAndSort(list);
-    }
-  }
 
   modelsListEl.style.setProperty('--schoolColor', groupColor.get(currentSchool) || '#D9AA3F');
 
@@ -9906,57 +10412,21 @@ function renderModelsList(){
   }
 
   if(!list.length){
-    const noneSelected = !showModelItems && !showMarcoItems;
     const emptyByGrouping = (groupingMode === 'school')
-      ? 'No hay modelos en esta escuela todavía.'
+      ? `No hay modelos en esta escuela todavía.`
       : (groupingMode === 'process'
-        ? 'No hay modelos con nivel 4 en ese proceso.'
+        ? `No hay modelos con nivel 4 en ese proceso.`
         : (groupingMode === 'dimension'
           ? `No hay modelos con >=${SIGNIFICANT_DIMENSION_PCT}% en esa dimensión.`
-          : 'No hay modelos para la vista red.'));
+          : `No hay modelos para la vista red.`));
     modelsListEl.innerHTML =
-      `<div class="subtitle" style="margin:10px 0 0 0">${noneSelected ? 'Activa Modelos o Marcos para ver resultados.' : emptyByGrouping}</div>`;
+      `<div class="subtitle" style="margin:10px 0 0 0">${escapeHtml(emptyByGrouping)}</div>`;
     return;
   }
 
   // 1) Render lista
-  modelsListEl.innerHTML = list.map(m => {
-    const active = (String(m.id) === String(currentModelId)) ? 'active' : '';
-    const safeId = encodeURIComponent(String(m.id ?? '').trim());
-    const schoolColor = colorForSchoolLabel(m.grupo);
-    const marcoClass = m && m.isMarco ? 'is-marco' : '';
-    const marcoTag = (m && m.isMarco)
-      ? `<div class="mi-marcoTag" aria-label="Marco">Marco</div>`
-      : '';
-    const photoUrl = resolveAuthorPhotoUrl(m);
-    const authorText = escapeHtml(m.autores ?? '—');
-    const authorInitials = escapeHtml(getAuthorInitials(m.autores));
-    const avatarHtml = photoUrl
-      ? `<div class="mi-avatarFallback" aria-hidden="true">${authorInitials}</div><img src="${escapeHtml(photoUrl)}" alt="${authorText}" loading="lazy" decoding="async" onerror="this.remove()">`
-      : `<div class="mi-avatarFallback" aria-hidden="true">${authorInitials}</div>`;
+  modelsListEl.innerHTML = buildModelSectionsMarkup(list);
 
-    return `
-  <div class="mi-item ${active} ${marcoClass}" data-id="${safeId}" style="--schoolColor:${escapeHtml(schoolColor)}">
-    <div class="mi-shell">
-      <div class="mi-avatar">${avatarHtml}</div>
-      <div class="mi-body">
-        <div class="mi-top">
-          <div class="mi-titleWrap">
-            <span class="mi-accentDot" aria-hidden="true"></span>
-            <div class="mi-title">${escapeHtml(m.label ?? '—')}</div>
-          </div>
-          <div class="mi-meta">
-            <div class="mi-year">${escapeHtml(m.year ?? '—')}</div>
-            ${marcoTag}
-          </div>
-        </div>
-        <div class="mi-sub">${authorText}</div>
-      </div>
-    </div>
-  </div>
-`;
-
-  }).join('');
   // ✅ Prefetch adaptativo: evita competir con la UI en smartphone
   scheduleIdleTask(() => {
     try{
@@ -9974,8 +10444,9 @@ function renderModelsList(){
   }, 1500);
 
   // 2) Delegación de eventos (se engancha una sola vez)
-  if(!modelsListEl.__boundClick){
+  if(!modelsListEl.__boundClick || !modelsListEl.__clickHealthy){
     modelsListEl.__boundClick = true;
+    modelsListEl.__clickHealthy = true;
 
   modelsListEl.addEventListener('click', async (evt) => {
   const item = evt.target.closest('.mi-item');
@@ -10021,6 +10492,37 @@ function renderModelsList(){
 });
 
   }
+
+  try{
+    initVisibleModelCardPhotoRetries();
+    hydrateModelCardAvatars();
+    ensureAuthorPhotoIndexPromise().then(() => {
+      try{
+        hydrateModelCardAvatars();
+        initVisibleModelCardPhotoRetries();
+      }catch(e){
+        console.warn('hydrateModelCardAvatars failed after photo index load', e);
+      }
+    }).catch(() => {});
+  }catch(e){
+    console.warn('Model card avatar hydration failed', e);
+  }
+
+  // âœ… Prefetch adaptativo: evita competir con la UI en smartphone
+  scheduleIdleTask(() => {
+    try{
+      const saveData = !!(navigator.connection && navigator.connection.saveData);
+      if (saveData) return;
+
+      const isMobile = window.matchMedia && window.matchMedia('(max-width: 980px)').matches;
+      const prefetchCount = isMobile ? 2 : 6;
+      const pre = list.slice(0, prefetchCount);
+
+      for (const mm of pre){
+        ensureModelFull(mm).catch(()=>{});
+      }
+    }catch(e){}
+  }, 1500);
 }
 
 
@@ -10212,7 +10714,7 @@ function disposeNetworkGraph(){
 function getNetworkSchoolList(){
   return uniq(
     MODELS
-      .filter(m => m && !m.hideInModels && !m.isMarco && m.id && m.label)
+      .filter(m => m && !m.hideInModels && !isMarcoModel(m) && m.id && m.label)
       .map(m => String(m.grupo || 'Otros'))
       .filter(Boolean)
   );
@@ -10567,16 +11069,35 @@ function network3DProcessSnapshot(model){
 
 function raw3DAxesForModel(model){
   const p = network3DProcessSnapshot(model);
+  const total =
+    p.RF + p.RE + p.AP + p.RI +
+    p.N + p.I + p.AG + p.R;
+  const share = total > 0
+    ? {
+        RF: p.RF / total,
+        RE: p.RE / total,
+        AP: p.AP / total,
+        RI: p.RI / total,
+        N: p.N / total,
+        I: p.I / total,
+        AG: p.AG / total,
+        R: p.R / total
+      }
+    : { RF:0, RE:0, AP:0, RI:0, N:0, I:0, AG:0, R:0 };
+
+  // Ejes balanceados por polos teóricos.
+  // Antes reutilizábamos N/I/RI en varios ejes con pesos asimétricos,
+  // lo que sesgaba el espacio hacia una diagonal y dejaba cuadrantes casi vacíos.
   return {
-    x: (p.N + p.I + p.RI) - (p.AG + p.RF),
-    y: (p.AP + p.RE) - (p.N + (0.5 * p.RI)),
-    z: p.R - (p.I + p.RI),
+    x: share.N - share.AG,
+    y: (share.AP + share.RE + share.RF) - (share.N + share.I),
+    z: share.R - (share.RI + share.I),
     processScores: p
   };
 }
 
 function isModelEligibleFor3D(model){
-  if (!model || model.hideInModels || model.isMarco || !model.id || !model.label) return false;
+  if (!model || model.hideInModels || isMarcoModel(model) || !model.id || !model.label) return false;
   const raw = raw3DAxesForModel(model);
   const total =
     Math.abs(raw.processScores.N) +
@@ -10624,21 +11145,31 @@ function ensureNetwork3DLayoutCache(){
   for (const key of axes){
     const vals = rawRows.map((row) => Number(row[key]) || 0);
     const mean = vals.length ? (vals.reduce((acc, v) => acc + v, 0) / vals.length) : 0;
-    let maxAbs = 0;
-    for (const v of vals){
-      const centered = v - mean;
-      if (Math.abs(centered) > maxAbs) maxAbs = Math.abs(centered);
+    const centeredAbs = vals
+      .map((v) => Math.abs(v - mean))
+      .sort((a, b) => a - b);
+    const p85Index = centeredAbs.length
+      ? Math.min(centeredAbs.length - 1, Math.floor(centeredAbs.length * 0.85))
+      : 0;
+    let spread = centeredAbs[p85Index] || 0;
+    if (!(spread > 0)){
+      spread = centeredAbs[centeredAbs.length - 1] || 1;
     }
-    stats[key] = { mean, maxAbs: maxAbs || 1 };
+    stats[key] = { mean, spread: spread || 1 };
   }
 
   const scale = 120;
   const positionsById = new Map();
   const nodeMetaById = new Map();
+  const expandSigned = (value) => {
+    const n = Number(value || 0);
+    if (!n) return 0;
+    return Math.sign(n) * Math.pow(Math.min(1.6, Math.abs(n)), 0.82);
+  };
   rawRows.forEach((row) => {
-    const x = (((row.rawX - stats.rawX.mean) / stats.rawX.maxAbs) || 0) * scale;
-    const y = (((row.rawY - stats.rawY.mean) / stats.rawY.maxAbs) || 0) * scale;
-    const z = (((row.rawZ - stats.rawZ.mean) / stats.rawZ.maxAbs) || 0) * scale;
+    const x = expandSigned((row.rawX - stats.rawX.mean) / stats.rawX.spread) * scale;
+    const y = expandSigned((row.rawY - stats.rawY.mean) / stats.rawY.spread) * scale;
+    const z = expandSigned((row.rawZ - stats.rawZ.mean) / stats.rawZ.spread) * scale;
     positionsById.set(row.id, { x, y, z });
     nodeMetaById.set(row.id, {
       id: row.id,
@@ -11189,7 +11720,7 @@ function buildNetworkData(){
   const mode = String(NETWORK_FILTER_STATE.profileMode || 'mixed');
   const query = normSearchText(NETWORK_FILTER_STATE.query || '');
   const rawNodes = MODELS
-    .filter(m => m && !m.hideInModels && !m.isMarco && m.id && m.label)
+    .filter(m => m && !m.hideInModels && !isMarcoModel(m) && m.id && m.label)
     .filter(m => {
       const g = String(m.grupo || 'Otros');
       return !activeSchools.size || activeSchools.has(g);
@@ -12343,13 +12874,17 @@ const authorHTML =
   '</div>';
 
 
+  const typeInfo = getModelTypeInfo(m);
+  const modelTagLabel = typeInfo?.label ? `${m.grupo} · ${typeInfo.label}` : String(m.grupo || '');
+
   modelInfoEl.innerHTML = `
   <div class="mp-mapbg" aria-hidden="true">
   <svg id="miniMapSvgBg"></svg>
 </div>
 
-    <span class="mp-tag" style="color:${col};border-color:${col}">
-      ${escapeHtml(m.grupo)}
+    <span class="mp-tag" style="color:${col};border-color:${col}" aria-label="${escapeHtml(modelTagLabel)}">
+      <span class="mp-tag-main">${escapeHtml(m.grupo)}</span>
+      ${typeInfo?.label ? `<span class="mp-tag-sep" aria-hidden="true">·</span><span class="mp-tag-type">${escapeHtml(typeInfo.label)}</span>` : ''}
     </span>
 
     <div class="mp-title">${escapeHtml(m.label)}</div>
@@ -13983,21 +14518,8 @@ function resetRightPanelToTop(){
 
 function scrollLeftPanelToStickyPoint(){
   const panel = document.querySelector('.panel.left');
-  const title = panel?.querySelector('.title');
   if (!panel) return;
-
-  let offset = 0;
-
-  if (title){
-    const r = title.getBoundingClientRect();
-    offset = r.height;
-
-    const st = getComputedStyle(title);
-    offset += parseFloat(st.marginBottom) || 0;
-  }
-
-  const FUDGE = -10; // ✅ micro-ajuste para que el sticky ya esté “clavado”
-  panel.scrollTop = Math.max(0, offset - FUDGE);
+  panel.scrollTop = 0;
 }
 
 
@@ -14089,13 +14611,7 @@ window.OPEN_ID = (window.__QS.get("open") || "").trim();
     buildSchoolOptions();
     setupGroupingControls();
     setupComplexitySwitch();
-    setupTypeFilters();
     setupMobileSchoolSwipe();
-    placeTypeFiltersForViewport();
-    if (!window.__TYPE_FILTERS_VIEWPORT_BOUND){
-      window.__TYPE_FILTERS_VIEWPORT_BOUND = true;
-      window.addEventListener('resize', placeTypeFiltersForViewport, { passive:true });
-    }
 
     // 3) precarga escuela inicial (si procede) + pinta
     if (currentSchool){
