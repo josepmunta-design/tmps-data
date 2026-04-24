@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-24T08:28:44.448Z",
+  "generatedAt": "2026-04-24T08:29:06.667Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 195,
-    "links": 205,
-    "unresolvedInfluences": 677
+    "modelos": 196,
+    "links": 206,
+    "unresolvedInfluences": 681
   },
   "nodes": [
     {
@@ -3028,6 +3028,35 @@
       "escuelaId": "integrativo"
     },
     {
+      "id": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "label": "Modelo transaccional del estrés",
+      "year": 1984,
+      "group": "Cognitivo",
+      "importance": 3,
+      "type": "marco",
+      "isMarco": true,
+      "file": "modelos/cognitivo/modelo-transaccional-estres-lazarus-folkman-1984.json",
+      "authors": "Richard S. Lazarus; Susan Folkman",
+      "summary": "El modelo transaccional del estrés de Lazarus y Folkman redefine el estrés como un proceso dinámico de interacción entre la persona y el entorno, en lugar de un estímulo externo o una respuesta interna aislada. El núcleo del modelo es la evaluación cognitiva (appraisal), mediante la cual el individuo valora si una situación es relevante, amenazante, desafiante o irrelevante, y si dispone de recursos para afrontarla. El estrés aparece cuando la persona percibe que las demandas superan sus recursos o ponen en riesgo su bienestar. A partir de esta evaluación, se activan estrategias de afrontamiento (coping), que pueden orientarse a modificar la situación (afrontamiento centrado en el problema) o a regular la respuesta emocional (afrontamiento centrado en la emoción). El modelo incluye además el proceso de reevaluación continua (reappraisal), donde la persona ajusta su interpretación en función de la experiencia y los resultados del afrontamiento. Este enfoque introduce una visión procesual, contextual y constructiva del estrés, donde el significado atribuido a la situación es determinante, y sienta las bases para múltiples desarrollos posteriores en psicología de la salud, terapia cognitivo-conductual y modelos de regulación emocional.",
+      "influencias": [
+        "Psicología cognitiva",
+        "Teoría de la evaluación cognitiva",
+        "Psicología de la emoción",
+        "Psicología de la salud",
+        "Interaccionismo persona-entorno"
+      ],
+      "refs": [
+        "Lazarus, R. S. (1966). Psychological Stress and the Coping Process.",
+        "Lazarus, R. S., & Folkman, S. (1984). Stress, Appraisal, and Coping.",
+        "Lazarus, R. S. (1999). Stress and Emotion: A New Synthesis."
+      ],
+      "lat": 37.871593,
+      "lon": -122.272743,
+      "ciudad": "Berkeley, California",
+      "pais": "EE. UU.",
+      "escuelaId": "cognitivo"
+    },
+    {
       "id": "construccionismo-social-gergen-1985",
       "label": "Construccionismo social (Kenneth Gergen)",
       "year": 1985,
@@ -5899,6 +5928,10 @@
       "target": "cft-gilbert-2009"
     },
     {
+      "source": "psicologia-cognitiva-neisser-1967",
+      "target": "modelo-transaccional-estres-lazarus-folkman-1984"
+    },
+    {
       "source": "act-hayes-strosahl-wilson-1999",
       "target": "abbt-roemer-orsillo-2007"
     },
@@ -7051,6 +7084,22 @@
     {
       "target": "cft-gilbert-2009",
       "influence": "Terapias experienciales (imaginería, trabajo con sillas)"
+    },
+    {
+      "target": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "influence": "Teoría de la evaluación cognitiva"
+    },
+    {
+      "target": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "influence": "Psicología de la emoción"
+    },
+    {
+      "target": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "influence": "Psicología de la salud"
+    },
+    {
+      "target": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "influence": "Interaccionismo persona-entorno"
     },
     {
       "target": "abbt-roemer-orsillo-2007",
