@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-24T09:07:37.257Z",
+  "generatedAt": "2026-04-24T20:22:03.582Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 9,
-    "modelos": 196,
-    "links": 206,
-    "unresolvedInfluences": 681
+    "modelos": 197,
+    "links": 208,
+    "unresolvedInfluences": 687
   },
   "nodes": [
     {
@@ -4664,6 +4664,45 @@
       "escuelaId": "cognitivo"
     },
     {
+      "id": "feedback-informed-treatment-duncan-miller-2000",
+      "label": "Feedback-Informed Treatment (FIT)",
+      "year": 2000,
+      "group": "Transversal",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/transversal/feedback-informed-treatment-duncan-miller-2000.json",
+      "authors": "Barry L. Duncan; Scott D. Miller",
+      "summary": "Feedback-Informed Treatment (FIT), también formulado como Client-Directed, Outcome-Informed Therapy y operacionalizado mediante PCOMS, es un marco clínico transteórico desarrollado por Barry L. Duncan, Scott D. Miller y colaboradores para mejorar la eficacia real de la psicoterapia mediante la monitorización sistemática del resultado y de la alianza desde la perspectiva del cliente. Su núcleo no consiste en añadir una técnica terapéutica específica, sino en reorganizar la práctica clínica alrededor de dos preguntas continuas: si la vida del cliente está mejorando y si la terapia se ajusta a sus metas, preferencias, teoría del cambio y experiencia relacional. FIT critica la aplicación rígida del modelo médico en psicoterapia, la confianza excesiva en protocolos definidos por diagnóstico y la ilusión de que la competencia técnica garantiza eficacia. Propone una práctica basada en la evidencia generada en la propia consulta: el terapeuta utiliza instrumentos breves como la Outcome Rating Scale (ORS) y la Session Rating Scale (SRS), conversa abiertamente sobre sus puntuaciones, detecta falta de progreso o rupturas de alianza y modifica el curso del tratamiento antes de que el cliente abandone o permanezca sin beneficio. El cliente queda situado como agente central del cambio y como fuente privilegiada de información sobre el valor real de la intervención.",
+      "influencias": [
+        "Factores comunes",
+        "Investigación de resultados en psicoterapia",
+        "Modelo contextual de la psicoterapia",
+        "Terapia centrada en el cliente",
+        "Terapia breve",
+        "Investigación sobre alianza terapéutica",
+        "Practice-based evidence",
+        "Psicoterapia integrativa"
+      ],
+      "refs": [
+        "Duncan, B. L., Miller, S. D., & Sparks, J. A. (2004). The Heroic Client: A Revolutionary Way to Improve Effectiveness Through Client-Directed, Outcome-Informed Therapy. Jossey-Bass.",
+        "Duncan, B. L. (2010). On Becoming a Better Therapist. American Psychological Association.",
+        "Miller, S. D., & Duncan, B. L. (2000). Paradigm lost: From model-driven to client-directed, outcome-informed clinical work. Journal of Systemic Therapies, 19, 20–34.",
+        "Miller, S. D., Duncan, B. L., Johnson, L. D., & Hubble, M. A. (2000). Client-directed, outcome-informed treatment. In J. K. Zeig (Ed.), Ericksonian Foundations.",
+        "Miller, S. D., Duncan, B. L., & Hubble, M. A. (1997). Escape from Babel: Toward a Unifying Language for Psychotherapy. Norton.",
+        "Duncan, B. L., Miller, S. D., Wampold, B. E., & Hubble, M. A. (Eds.). (2010). The Heart and Soul of Change: Delivering What Works in Therapy. American Psychological Association.",
+        "Miller, S. D., Duncan, B. L., Sorrell, R., & Brown, G. S. (2005). The Partners for Change Outcome Management System. Journal of Clinical Psychology, 61, 199–208.",
+        "Duncan, B. L., Miller, S. D., Sparks, J. A., Claud, D. A., Reynolds, L. R., Brown, J., & Johnson, L. D. (2003). The Session Rating Scale: Preliminary psychometric properties of a working alliance measure. Journal of Brief Therapy, 3, 3–12.",
+        "Miller, S. D., Duncan, B. L., Brown, J., Sparks, J., & Claud, D. (2003). The Outcome Rating Scale: A preliminary study of the reliability, validity, and feasibility of a brief visual analog measure. Journal of Brief Therapy, 2(2), 91–100.",
+        "Anker, M. G., Duncan, B. L., & Sparks, J. A. (2009). Using client feedback to improve couple therapy outcomes: A randomized clinical trial in a naturalistic setting. Journal of Consulting and Clinical Psychology, 77(4), 693–704."
+      ],
+      "lat": 41.878113,
+      "lon": -87.629799,
+      "ciudad": "Chicago, Illinois",
+      "pais": "EE. UU.",
+      "escuelaId": "transversal"
+    },
+    {
       "id": "marco-psicoterapia-integrativa-transcultural-islamico-secular-2000",
       "label": "Marco de psicoterapia integrativa transcultural (contexto islámico-secular)",
       "year": 2000,
@@ -6454,6 +6493,14 @@
     {
       "source": "psicologia-cognitiva-neisser-1967",
       "target": "functional-family-therapy-fft"
+    },
+    {
+      "source": "terapia-breve-mri-1974",
+      "target": "feedback-informed-treatment-duncan-miller-2000"
+    },
+    {
+      "source": "psicoterapia-integrativa-sepi-1992",
+      "target": "feedback-informed-treatment-duncan-miller-2000"
     },
     {
       "source": "psicologia-cognitiva-neisser-1967",
@@ -8928,6 +8975,30 @@
     {
       "target": "mindfulness-mbsr-contemplativo-1979",
       "influence": "Budismo secular"
+    },
+    {
+      "target": "feedback-informed-treatment-duncan-miller-2000",
+      "influence": "Factores comunes"
+    },
+    {
+      "target": "feedback-informed-treatment-duncan-miller-2000",
+      "influence": "Investigación de resultados en psicoterapia"
+    },
+    {
+      "target": "feedback-informed-treatment-duncan-miller-2000",
+      "influence": "Modelo contextual de la psicoterapia"
+    },
+    {
+      "target": "feedback-informed-treatment-duncan-miller-2000",
+      "influence": "Terapia centrada en el cliente"
+    },
+    {
+      "target": "feedback-informed-treatment-duncan-miller-2000",
+      "influence": "Investigación sobre alianza terapéutica"
+    },
+    {
+      "target": "feedback-informed-treatment-duncan-miller-2000",
+      "influence": "Practice-based evidence"
     },
     {
       "target": "modelo-procesual-regulacion-emocional-gross-1998",
