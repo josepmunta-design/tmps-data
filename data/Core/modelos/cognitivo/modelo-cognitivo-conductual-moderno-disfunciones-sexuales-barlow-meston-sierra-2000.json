@@ -59,17 +59,93 @@
     "teoriaFormal": "El self sexual se organiza a partir de aprendizajes corporales, creencias culturales, experiencias relacionales, expectativas de rendimiento y valoraciones sobre el propio atractivo, competencia y deseabilidad. El sufrimiento se mantiene cuando la experiencia sexual queda atrapada en un sistema de amenaza: la persona anticipa fracaso, se observa, interpreta señales corporales como prueba de incapacidad, reduce su excitación y evita nuevas experiencias. El cambio psicológico implica restaurar una relación más flexible con el cuerpo, la excitación, el deseo y el vínculo, sustituyendo la monitorización evaluativa por atención sensorial, comunicación, exposición gradual y significados sexuales más realistas.",
     "teoriaClinica": "El caso se conceptualiza identificando el problema sexual específico, su curso, factores médicos y farmacológicos relevantes, patrones de pareja, creencias sexuales, ansiedad de ejecución, conductas de seguridad, evitaciones y déficits de comunicación o estimulación. Se priorizan procesos de psicoeducación, análisis funcional, reducción de presión de rendimiento, focalización sensorial, reestructuración de creencias, exposición gradual a la intimidad y entrenamiento comunicacional. El progreso se evalúa por la disminución de ansiedad anticipatoria, el aumento de contacto sensorial, la reducción de evitación, la mejora de comunicación sexual, la recuperación de deseo o excitación funcional y el incremento de satisfacción sexual y relacional."
   },
-  "mjps": [
-    "RF",
-    "RE",
-    "AP",
-    "RI",
-    "N",
-    "I",
-    "AG",
-    "R"
+  "mjps": ["RF", "RE", "AP", "RI", "N", "I", "AG", "R"],
+  "procedimientos": [
+    {
+      "nombre": "Evaluación biopsicosocial y análisis funcional de la disfunción sexual",
+      "codigo": "p_cbt_sexual_evaluacion_biopsicosocial_analisis_funcional",
+      "procesos": ["N_metacognicion", "R_comunicacionEmocional", "VB_entorno"],
+      "texto": "Procedimiento inicial orientado a formular la disfunción sexual como un sistema de interacción entre variables médicas, farmacológicas, hormonales, historia sexual, aprendizaje, creencias, ansiedad, atención, evitación, dinámica de pareja y contexto vital; incluye entrevista sexual detallada, evaluación de deseo, excitación, orgasmo, dolor, satisfacción, frecuencia de evitación, situaciones facilitadoras y bloqueadoras, y cribado de factores orgánicos o iatrogénicos que requieren coordinación médica. El objetivo clínico es pasar de una etiqueta global —por ejemplo, ‘no deseo’, ‘fallo’, ‘no funciona’— a una formulación funcional precisa del ciclo que mantiene el problema y de los puntos de intervención prioritarios. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra, Vallejo-Medina, Santos-Iglesias & Lameiras Fernández (2012)."
+    },
+    {
+      "nombre": "Psicoeducación sobre respuesta sexual, variabilidad y ciclo ansiedad-rendimiento",
+      "codigo": "p_cbt_sexual_psicoeducacion_respuesta_sexual_ansiedad_rendimiento",
+      "procesos": ["N_reformulacion", "RE_reapreciacion", "RF_intero"],
+      "texto": "Procedimiento destinado a explicar la respuesta sexual como un proceso psicofisiológico variable, sensible al contexto, al significado, a la atención y al estado emocional, reduciendo interpretaciones moralizantes o defectológicas de las dificultades sexuales. Se trabaja el ciclo en el que la presión por funcionar activa ansiedad, la ansiedad desplaza la atención hacia señales de fallo, la monitorización reduce excitación y el resultado confirma la expectativa negativa, generando evitación posterior. La psicoeducación busca normalizar oscilaciones de deseo, excitación y orgasmo, introducir una explicación plausible del problema y aumentar expectativa de cambio mediante una formulación comprensible. Referencia: Barlow (1986); Masters & Johnson (1970); Meston & Bradford (2007)."
+    },
+    {
+      "nombre": "Focalización sensorial sin exigencia de rendimiento",
+      "codigo": "p_cbt_sexual_focalizacion_sensorial_sin_rendimiento",
+      "procesos": ["RF_intero", "AP_evocacion", "R_comunicacionEmocional"],
+      "texto": "Procedimiento derivado del sensate focus y actualizado dentro de una lógica cognitivo-conductual moderna, en el que la pareja o la persona realiza ejercicios graduados de contacto corporal centrados en sensaciones, temperatura, textura, presión, ritmo y placer, retirando temporalmente objetivos como penetración, erección, lubricación u orgasmo. Su función es desplazar la sexualidad de una tarea evaluativa a una experiencia sensorial segura, reducir el espectador interno, aumentar discriminación corporal y reconstruir asociaciones positivas con la intimidad. Referencia: Masters & Johnson (1970); Barlow (1986); Meston & Bradford (2007)."
+    },
+    {
+      "nombre": "Reducción del espectador interno y entrenamiento atencional erótico",
+      "codigo": "p_cbt_sexual_reduccion_espectador_interno_atencion_erotica",
+      "procesos": ["N_metacognicion", "RI_mindfulnessSelf", "RF_intero"],
+      "texto": "Procedimiento dirigido a detectar y modificar la posición de autoobservación evaluativa durante la actividad sexual, entrenando el paso desde la vigilancia del rendimiento hacia claves sensoriales, emocionales y relacionales presentes. Incluye identificación de momentos de autoevaluación, uso de anclajes atencionales eróticos, retorno deliberado a sensaciones corporales, contacto visual, respiración, tacto o fantasía consensuada, y práctica entre sesiones en contextos de baja exigencia. Su objetivo es disminuir interferencia cognitiva y recuperar disponibilidad excitatoria. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra et al. (2012)."
+    },
+    {
+      "nombre": "Reestructuración de creencias sexuales, mitos y reglas de rendimiento",
+      "codigo": "p_cbt_sexual_reestructuracion_creencias_sexuales",
+      "procesos": ["N_marcosCognitivos", "N_reformulacion", "I_autoimagen"],
+      "texto": "Procedimiento orientado a identificar, examinar y flexibilizar creencias sexuales rígidas sobre deseo espontáneo, erección permanente, orgasmo obligatorio, simetría del deseo, iniciativa sexual, normalidad corporal, deber de satisfacer siempre a la pareja o equivalencia entre dificultad sexual y falta de amor o atractivo. Se emplean diálogo socrático, revisión de evidencia, psicoeducación, experimentos conductuales y construcción de reglas sexuales más realistas, contextuales y compatibles con la variabilidad humana. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra, Ortega & Zubeidat (2003)."
+    },
+    {
+      "nombre": "Exposición gradual a situaciones sexuales evitadas",
+      "codigo": "p_cbt_sexual_exposicion_gradual_situaciones_evitas",
+      "procesos": ["RE_prevEvitacion", "AG_compromisoConductual", "R_repertorioInterpersonal"],
+      "texto": "Procedimiento conductual que organiza una jerarquía de acercamiento progresivo a situaciones sexuales o íntimas evitadas, desde conversaciones eróticas o contacto no genital hasta prácticas más activadoras, siempre retirando metas de rendimiento prematuras y priorizando permanencia tolerable, comunicación y aprendizaje correctivo. La exposición busca debilitar la asociación entre intimidad y amenaza, reducir evitación anticipatoria y generar experiencias nuevas en las que la persona comprueba que puede sostener deseo, excitación, vulnerabilidad o límites sin quedar atrapada en fracaso o presión. Referencia: Barlow (1986); Masters & Johnson (1970); Meston & Bradford (2007)."
+    },
+    {
+      "nombre": "Exposición interoceptiva a sensaciones sexuales temidas",
+      "codigo": "p_cbt_sexual_exposicion_interoceptiva_sensaciones_sexuales",
+      "procesos": ["RF_expo", "RE_aceptacion", "N_reformulacion"],
+      "texto": "Procedimiento específico para pacientes que temen sensaciones corporales vinculadas a la excitación, pérdida de control, erección parcial, lubricación insuficiente, aumento de temperatura, tensión genital, palpitaciones, rubor, dolor anticipado o señales corporales ambiguas. Mediante ejercicios graduados de observación y permanencia con sensaciones internas, se reduce la interpretación catastrófica del cuerpo y se favorece una relación más segura con la activación sexual. Referencia: Barlow (1986); Barlow (2002); Meston & Bradford (2007)."
+    },
+    {
+      "nombre": "Entrenamiento en comunicación sexual y negociación de preferencias",
+      "codigo": "p_cbt_sexual_comunicacion_negociacion_preferencias",
+      "procesos": ["R_comunicacionEmocional", "R_limitesInterpersonales", "AG_necesidadesPropias"],
+      "texto": "Procedimiento relacional orientado a que la persona o la pareja pueda expresar deseos, límites, ritmos, inseguridades, preferencias de estimulación, fantasías y necesidades sin acusación, retirada ni complacencia automática. Incluye entrenamiento en lenguaje concreto, peticiones positivas, feedback durante el contacto, validación del otro, negociación de diferencias de deseo y acuerdos explícitos sobre ritmo y consentimiento. Su función es sustituir lectura mental y evitación por coordinación interpersonal, condición decisiva para que la intervención sexual no quede reducida a ejercicios mecánicos. Referencia: Masters & Johnson (1970); Meston & Bradford (2007); Sierra et al. (2012)."
+    },
+    {
+      "nombre": "Programación de intimidad y recuperación del contexto erótico",
+      "codigo": "p_cbt_sexual_programacion_intimidad_contexto_erotico",
+      "procesos": ["AG_compromisoConductual", "R_valoresRelacionales", "I_valoresAspiracionales"],
+      "texto": "Procedimiento destinado a reconstruir condiciones contextuales que faciliten deseo y conexión sexual, especialmente cuando la sexualidad ha quedado desplazada por estrés, crianza, fatiga, conflicto, rutina o evitación acumulada. Se planifican espacios de intimidad no obligatoriamente coital, rituales de acercamiento, reducción de interferencias, acuerdos de disponibilidad, cuidado corporal y actividades eróticas graduadas, tratando la planificación como creación de condiciones de posibilidad y no como obligación sexual. Referencia: Meston & Bradford (2007); Meston & Buss (2007); Sierra et al. (2012)."
+    },
+    {
+      "nombre": "Trabajo conductual con deseo sexual bajo o discrepancia de deseo",
+      "codigo": "p_cbt_sexual_deseo_bajo_discrepancia_deseo",
+      "procesos": ["AG_motivacionInterna", "R_sist_ciclos", "N_construccionAlternativa"],
+      "texto": "Procedimiento dirigido a diferenciar deseo bajo primario, deseo inhibido por ansiedad, deseo responsivo, discrepancia de deseo en pareja, evitación por presión y pérdida de contexto erótico. La intervención combina psicoeducación sobre deseo contextual, identificación de facilitadores e inhibidores, acuerdos de acercamiento no exigente, aumento de conductas eróticas elegidas y reducción de ciclos de demanda-retirada o presión-evitación. Referencia: Meston & Bradford (2007); Meston & Buss (2007); Sierra et al. (2012)."
+    },
+    {
+      "nombre": "Intervención cognitivo-conductual en dificultades de excitación y erección",
+      "codigo": "p_cbt_sexual_excitacion_ereccion",
+      "procesos": ["RF_intero", "RE_prevEvitacion", "N_reformulacion"],
+      "texto": "Procedimiento orientado a dificultades de excitación genital, lubricación o erección mantenidas por vigilancia corporal, ansiedad anticipatoria, comprobaciones repetidas, evitación de estímulos eróticos y significados de fracaso personal. Se trabaja reducción de chequeo genital, focalización sensorial, reatribución de variaciones normales de excitación, exposición gradual a intimidad, revisión de creencias de rendimiento y, cuando procede, coordinación médica sin convertir la respuesta corporal en una prueba de valía. Referencia: Barlow (1986); Meston & Bradford (2007); Masters & Johnson (1970)."
+    },
+    {
+      "nombre": "Intervención cognitivo-conductual en dificultades orgásmicas",
+      "codigo": "p_cbt_sexual_dificultades_orgasmicas",
+      "procesos": ["RF_intero", "RE_aceptacion", "AG_compromisoConductual"],
+      "texto": "Procedimiento centrado en dificultades para alcanzar el orgasmo, orgasmo retardado o bloqueo orgásmico asociado a control excesivo, vergüenza, desconocimiento del patrón de estimulación, distracción, miedo a perder el control o presión por llegar. Incluye autoexploración graduada, identificación de claves excitatorias, entrenamiento atencional, comunicación de estimulación preferida, reducción de metas obligatorias y exposición a sensaciones de aumento de excitación sin interrupción defensiva. Referencia: Masters & Johnson (1970); Meston & Bradford (2007); Sierra et al. (2012)."
+    },
+    {
+      "nombre": "Intervención cognitivo-conductual en dolor sexual y evitación asociada",
+      "codigo": "p_cbt_sexual_dolor_sexual_evitacion",
+      "procesos": ["RF_relax", "RE_modulacion", "R_limitesInterpersonales"],
+      "texto": "Procedimiento aplicado cuando el dolor sexual, el miedo al dolor o la anticipación de penetración mantienen evitación, tensión muscular, hipervigilancia y pérdida de deseo. Integra psicoeducación, coordinación ginecológica o médica cuando procede, relajación y conciencia del suelo pélvico, jerarquías de aproximación, control de ritmo por parte de la persona afectada, comunicación de límites y retirada de objetivos coitales hasta que exista seguridad suficiente. Referencia: Meston & Bradford (2007); Masters & Johnson (1970); Sierra et al. (2012)."
+    },
+    {
+      "nombre": "Prevención de recaídas y consolidación de repertorio sexual flexible",
+      "codigo": "p_cbt_sexual_prevencion_recaidas_repertorio_flexible",
+      "procesos": ["N_metacognicion", "AG_autoriaResponsabilidad", "R_repertorioInterpersonal"],
+      "texto": "Procedimiento final orientado a consolidar aprendizajes, anticipar oscilaciones normales de deseo y respuesta sexual, identificar señales tempranas de retorno a vigilancia, presión o evitación, y establecer planes de mantenimiento. Se revisan recursos eficaces, acuerdos de pareja, estrategias de comunicación, formas de volver al contacto sensorial y criterios para no convertir un episodio aislado de dificultad en prueba de recaída o defecto estable. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra et al. (2012)."
+    }
   ],
-  "procedimientos": [],
   "micros": [],
   "ideasPrincipales": [],
   "refs": [
