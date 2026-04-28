@@ -1114,6 +1114,28 @@
   ]
 }
 
+### FILE: data/Core/escuelas/Epistemología.json
+{
+  "id": "Epistemología",
+  "label": "Epistemología",
+  "modelos": [
+    {
+      "id": "psicodinamica-ciclica-wachtel",
+      "label": "Psicodinámica cíclica",
+      "year": 1977,
+      "importance": 4,
+      "autores": "Paul L. Wachtel",
+      "ciudad": "Nueva York",
+      "pais": "EE. UU.",
+      "lat": 40.712776,
+      "lon": -74.005974,
+      "file": "modelos/integrativo/psicodinamica-ciclica-wachtel.json",
+      "tipo": "modelo"
+    },
+  
+  ]
+}
+
 ### FILE: data/Core/escuelas/humanista.json
 {
   "id": "Humanista",
@@ -1418,7 +1440,8 @@
   { "id": "integrativo",    "label": "Integrativo",     "file": "escuelas/integrativo.json" },
   { "id": "sistemico",      "label": "Sistémico",       "file": "escuelas/sistemico.json" },
   { "id": "transversal",    "label": "Transversal",     "file": "escuelas/transversal.json" },
-  { "id": "otros",    "label": "Otros",     "file": "escuelas/otros.json" }
+  { "id": "otros",    "label": "Otros",     "file": "escuelas/otros.json" },
+   { "id": "epistemología",    "label": "Epistemología",     "file": "escuelas/epistemología.json" }
   
 ]
 
@@ -1463,7 +1486,7 @@
   "pais": "EE. UU.",
   "lat": 40.712776,
   "lon": -74.005974,
-       "tipo": "constructo",
+       "tipo": "marco",
   "file": "modelos/integrativo/rupturas-reparacion-alianza-safran-muran-2000.json"
 },
     {
