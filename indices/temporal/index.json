@@ -1,13 +1,42 @@
 {
-  "generatedAt": "2026-04-29T13:33:58.359Z",
+  "generatedAt": "2026-04-29T13:48:57.361Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 10,
-    "modelos": 198,
-    "links": 211,
-    "unresolvedInfluences": 689
+    "modelos": 201,
+    "links": 212,
+    "unresolvedInfluences": 700
   },
   "nodes": [
+    {
+      "id": "positivismo",
+      "label": "Positivismo",
+      "year": 1830,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/positivismo.json",
+      "authors": "Auguste Comte",
+      "summary": "El positivismo es un marco epistemológico fundacional que establece que el conocimiento científico debe basarse exclusivamente en hechos observables, medibles y verificables empíricamente. Rechaza explicaciones metafísicas o especulativas y propone que la realidad existe independientemente del observador y puede ser conocida de forma objetiva mediante el método científico. En psicoterapia, el positivismo ha influido profundamente en los modelos conductuales y cognitivo-conductuales, orientando la investigación hacia variables observables, la operacionalización de constructos, el uso de diseños experimentales y la validación empírica de intervenciones. Este enfoque prioriza la predicción, el control y la replicabilidad como criterios de validez, y sitúa al terapeuta en una posición de observador-experto que aplica procedimientos basados en evidencia para modificar variables psicológicas identificables.",
+      "influencias": [
+        "Empirismo",
+        "Ciencia moderna",
+        "Ilustración",
+        "Física clásica",
+        "Biología experimental"
+      ],
+      "refs": [
+        "Comte, A. (1830-1842). Cours de philosophie positive.",
+        "Ayer, A. J. (1936). Language, Truth and Logic.",
+        "Popper, K. (1959). The Logic of Scientific Discovery."
+      ],
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "ciudad": "París",
+      "pais": "Francia",
+      "escuelaId": "epistemologia"
+    },
     {
       "id": "psicoanalisis-clasico-freud",
       "label": "Psicoanálisis clásico",
@@ -1161,6 +1190,34 @@
       "escuelaId": "sistemico"
     },
     {
+      "id": "falsacionismo",
+      "label": "Falsacionismo",
+      "year": 1959,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/falsacionismo.json",
+      "authors": "Karl R. Popper",
+      "summary": "El falsacionismo es un marco epistemológico propuesto por Karl Popper que redefine el criterio de cientificidad: una teoría no es científica por poder verificarse, sino por poder ser refutada. Frente al positivismo clásico, Popper sostiene que ninguna cantidad de observaciones puede confirmar definitivamente una teoría, pero un solo contraejemplo bien establecido puede falsarla. El conocimiento científico progresa mediante un proceso de conjeturas y refutaciones, donde las teorías se someten a pruebas rigurosas diseñadas para intentar demostrar que son falsas. En psicoterapia, este enfoque influye en la formulación de hipótesis clínicas como propuestas provisionales que deben contrastarse activamente en la práctica, favoreciendo modelos abiertos, revisables y sensibles a la evidencia negativa. El terapeuta no busca confirmar su teoría del caso, sino ponerla a prueba continuamente, ajustándola en función de los datos que la contradicen.",
+      "influencias": [
+        "Empirismo crítico",
+        "Lógica de la ciencia",
+        "Debate con el positivismo lógico",
+        "Filosofía de la ciencia del siglo XX"
+      ],
+      "refs": [
+        "Popper, K. R. (1959). The Logic of Scientific Discovery.",
+        "Popper, K. R. (1963). Conjectures and Refutations.",
+        "Popper, K. R. (1972). Objective Knowledge."
+      ],
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "ciudad": "Londres",
+      "pais": "Reino Unido",
+      "escuelaId": "epistemologia"
+    },
+    {
       "id": "principio-premack-1959",
       "label": "Principio de Premack",
       "year": 1959,
@@ -2003,6 +2060,32 @@
       "ciudad": "Pune",
       "pais": "India",
       "escuelaId": "otros"
+    },
+    {
+      "id": "programas-investigacion-lakatos",
+      "label": "Programas de investigación científica",
+      "year": 1970,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/programas-investigacion-lakatos.json",
+      "authors": "Imre Lakatos",
+      "summary": "El marco de los programas de investigación científica de Lakatos integra y supera la tensión entre el falsacionismo de Popper y la práctica real de la ciencia. Propone que las teorías no se abandonan ante una sola refutación, sino que forman parte de programas más amplios compuestos por un núcleo duro de supuestos fundamentales y un cinturón protector de hipótesis auxiliares que pueden modificarse. El progreso científico se evalúa no por la falsación puntual, sino por la capacidad del programa para generar predicciones novedosas y explicar fenómenos nuevos. En psicoterapia, este marco permite entender los modelos como sistemas dinámicos que evolucionan en el tiempo, donde ciertas ideas centrales se mantienen mientras las técnicas y formulaciones clínicas se ajustan. Facilita una visión integradora sin caer en relativismo, al permitir comparar programas según su poder explicativo y su capacidad de generar cambio clínico efectivo.",
+      "influencias": [
+        "Falsacionismo (Popper)",
+        "Historia de la ciencia",
+        "Filosofía de la ciencia del siglo XX"
+      ],
+      "refs": [
+        "Lakatos, I. (1970). Falsification and the Methodology of Scientific Research Programmes.",
+        "Lakatos, I. (1978). The Methodology of Scientific Research Programmes."
+      ],
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "ciudad": "Londres",
+      "pais": "Reino Unido",
+      "escuelaId": "epistemologia"
     },
     {
       "id": "psicoterapia-psicodinamica-breve",
@@ -6554,6 +6637,10 @@
     {
       "source": "teoria-apego-bowlby",
       "target": "self-determination-therapy-deci-ryan-1985"
+    },
+    {
+      "source": "falsacionismo",
+      "target": "programas-investigacion-lakatos"
     }
   ],
   "unresolvedInfluences": [
@@ -9312,6 +9399,50 @@
     {
       "target": "o2sewb2000",
       "influence": "Seguridad cultural (cultural safety)"
+    },
+    {
+      "target": "positivismo",
+      "influence": "Empirismo"
+    },
+    {
+      "target": "positivismo",
+      "influence": "Ciencia moderna"
+    },
+    {
+      "target": "positivismo",
+      "influence": "Ilustración"
+    },
+    {
+      "target": "positivismo",
+      "influence": "Física clásica"
+    },
+    {
+      "target": "positivismo",
+      "influence": "Biología experimental"
+    },
+    {
+      "target": "falsacionismo",
+      "influence": "Empirismo crítico"
+    },
+    {
+      "target": "falsacionismo",
+      "influence": "Lógica de la ciencia"
+    },
+    {
+      "target": "falsacionismo",
+      "influence": "Debate con el positivismo lógico"
+    },
+    {
+      "target": "falsacionismo",
+      "influence": "Filosofía de la ciencia del siglo XX"
+    },
+    {
+      "target": "programas-investigacion-lakatos",
+      "influence": "Historia de la ciencia"
+    },
+    {
+      "target": "programas-investigacion-lakatos",
+      "influence": "Filosofía de la ciencia del siglo XX"
     }
   ]
 }
