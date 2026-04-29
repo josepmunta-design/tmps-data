@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-29T14:14:20.078Z",
+  "generatedAt": "2026-04-29T14:16:43.444Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 10,
-    "modelos": 201,
-    "links": 212,
-    "unresolvedInfluences": 700
+    "modelos": 203,
+    "links": 228,
+    "unresolvedInfluences": 692
   },
   "nodes": [
     {
@@ -380,6 +380,34 @@
       "ciudad": "Londres",
       "pais": "Reino Unido",
       "escuelaId": "psicoanalisis"
+    },
+    {
+      "id": "constructivismo",
+      "label": "Constructivismo",
+      "year": 1936,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/constructivismo.json",
+      "authors": "Jean Piaget",
+      "summary": "El constructivismo es un marco epistemológico que sostiene que la realidad psicológica no se capta de forma directa, sino que es construida activamente por el sujeto a través de sus estructuras cognitivas en interacción con el entorno. Frente al realismo ingenuo del positivismo, el constructivismo plantea que no accedemos a la realidad tal como es, sino a versiones organizadas de la experiencia que resultan funcionales para anticipar, adaptarse y actuar. En psicoterapia, este enfoque fundamenta modelos que entienden el cambio como una reorganización de significados, esquemas o narrativas, más que como una corrección de errores objetivos. El terapeuta no transmite verdades, sino que facilita procesos de reconstrucción que amplían la capacidad del paciente para generar interpretaciones más flexibles, coherentes y adaptativas.",
+      "influencias": [
+        "Epistemología genética",
+        "Biología evolutiva",
+        "Filosofía kantiana",
+        "Psicología del desarrollo"
+      ],
+      "refs": [
+        "Piaget, J. (1936). The Origins of Intelligence in Children.",
+        "Piaget, J. (1970). Genetic Epistemology.",
+        "von Glasersfeld, E. (1995). Radical Constructivism."
+      ],
+      "lat": 46.2044,
+      "lon": 6.1432,
+      "ciudad": "Ginebra",
+      "pais": "Suiza",
+      "escuelaId": "epistemologia"
     },
     {
       "id": "constructivismo-genetico-piaget-1936",
@@ -1386,6 +1414,35 @@
       "ciudad": "Big Sur, California",
       "pais": "EE. UU.",
       "escuelaId": "humanista"
+    },
+    {
+      "id": "paradigmas-kuhn",
+      "label": "Paradigmas y revoluciones científicas",
+      "year": 1962,
+      "group": "Otros",
+      "importance": 3,
+      "type": "marco",
+      "isMarco": true,
+      "file": "modelos/epistemologia/paradigmas-kuhn.json",
+      "authors": "Thomas S. Kuhn",
+      "summary": "El marco de los paradigmas y las revoluciones científicas de Thomas S. Kuhn entiende la ciencia como una práctica histórica, comunitaria y organizada por paradigmas compartidos. Un paradigma no es solo una teoría, sino un conjunto de supuestos, métodos, problemas ejemplares, criterios de evidencia, lenguajes y formas de ver el mundo que guían la actividad de una comunidad científica. Durante los periodos de ciencia normal, los investigadores trabajan resolviendo problemas dentro del paradigma dominante, sin cuestionar sus fundamentos. Cuando las anomalías se acumulan y el paradigma deja de organizar adecuadamente los problemas relevantes, puede abrirse una crisis que desemboque en una revolución científica y en la emergencia de un nuevo paradigma. En psicoterapia, Kuhn permite comprender las escuelas clínicas como comunidades paradigmáticas que no solo discrepan en técnicas, sino en qué consideran problema, cambio, evidencia, sujeto, relación terapéutica y eficacia. Su aportación es decisiva para entender por qué la integración entre modelos exige reconocer diferencias profundas de lenguaje, supuestos y criterios de validez.",
+      "influencias": [
+        "Historia de la ciencia",
+        "Filosofía de la ciencia del siglo XX",
+        "Crítica al positivismo lógico",
+        "Falsacionismo (Popper)",
+        "Sociología del conocimiento científico"
+      ],
+      "refs": [
+        "Kuhn, T. S. (1962). The Structure of Scientific Revolutions.",
+        "Kuhn, T. S. (1970). The Structure of Scientific Revolutions (2nd ed.).",
+        "Kuhn, T. S. (1977). The Essential Tension: Selected Studies in Scientific Tradition and Change."
+      ],
+      "lat": 37.8719,
+      "lon": -122.2585,
+      "ciudad": "Berkeley, California",
+      "pais": "EE. UU.",
+      "escuelaId": "epistemologia"
     },
     {
       "id": "h19ta64",
@@ -5831,11 +5888,19 @@
       "target": "winnicott-objeto-transicional-ambiente"
     },
     {
+      "source": "constructivismo",
+      "target": "winnicott-objeto-transicional-ambiente"
+    },
+    {
       "source": "relaciones-objeto-klein",
       "target": "balint-falla-basica-regresion-benigna"
     },
     {
       "source": "psicologia-yo-hartmann",
+      "target": "balint-falla-basica-regresion-benigna"
+    },
+    {
+      "source": "constructivismo",
       "target": "balint-falla-basica-regresion-benigna"
     },
     {
@@ -5851,7 +5916,15 @@
       "target": "teoria-apego-bowlby"
     },
     {
+      "source": "constructivismo",
+      "target": "teoria-apego-bowlby"
+    },
+    {
       "source": "relaciones-objeto-klein",
+      "target": "bion-teoria-pensar-contencion"
+    },
+    {
+      "source": "constructivismo",
       "target": "bion-teoria-pensar-contencion"
     },
     {
@@ -6175,6 +6248,10 @@
       "target": "terapia-de-esquemas-young-1990"
     },
     {
+      "source": "constructivismo",
+      "target": "terapia-de-esquemas-young-1990"
+    },
+    {
       "source": "terapia-cognitiva-beck-depresion-1967",
       "target": "cognitive-processing-therapy-resick-1992"
     },
@@ -6355,6 +6432,14 @@
       "target": "terapia-existencial-may-yalom-1961"
     },
     {
+      "source": "constructivismo",
+      "target": "k1kelly55"
+    },
+    {
+      "source": "constructivismo",
+      "target": "modelo-significado-post-trauma-janoff-bulman-1992"
+    },
+    {
       "source": "k1kelly55",
       "target": "psicologia-constructos-familiares-procter-1981"
     },
@@ -6365,6 +6450,10 @@
     {
       "source": "k1kelly55",
       "target": "psicoterapia-cognitiva-postracionalista-guidano"
+    },
+    {
+      "source": "constructivismo",
+      "target": "k13coherence-therapy-1993"
     },
     {
       "source": "psicoterapia-constructivista-neimeyer",
@@ -6383,12 +6472,20 @@
       "target": "psicoterapia-constructivista-neimeyer"
     },
     {
+      "source": "constructivismo",
+      "target": "psicoterapia-constructivista-neimeyer"
+    },
+    {
       "source": "psicoanalisis-relacional-greenberg-mitchell-1983",
       "target": "terapia-metacognitiva-interpersonal-mit"
     },
     {
       "source": "teoria-apego-bowlby",
       "target": "terapia-metacognitiva-interpersonal-mit"
+    },
+    {
+      "source": "constructivismo",
+      "target": "polaridades-semanticas"
     },
     {
       "source": "terapia-narrativa-white-epston",
@@ -6447,6 +6544,10 @@
       "target": "modelo-momentos-innovadores-goncalves-2009"
     },
     {
+      "source": "constructivismo",
+      "target": "psicologia-cultural-bruner-1990"
+    },
+    {
       "source": "teoria-apego-bowlby",
       "target": "apego-desorganizado-disociacion-liotti-1992"
     },
@@ -6464,6 +6565,10 @@
     },
     {
       "source": "teoria-apego-bowlby",
+      "target": "rupturas-reparacion-alianza-safran-muran-2000"
+    },
+    {
+      "source": "constructivismo",
       "target": "rupturas-reparacion-alianza-safran-muran-2000"
     },
     {
@@ -6535,6 +6640,10 @@
       "target": "ifs-schwartz-1991"
     },
     {
+      "source": "constructivismo",
+      "target": "interventive-interviewing-tomm-1987"
+    },
+    {
       "source": "construccionismo-social-gergen-1985",
       "target": "interventive-interviewing-tomm-1987"
     },
@@ -6552,6 +6661,10 @@
     },
     {
       "source": "escuela-palo-alto-mri-1959",
+      "target": "terapia-breve-mri-1974"
+    },
+    {
+      "source": "constructivismo",
       "target": "terapia-breve-mri-1974"
     },
     {
@@ -6592,6 +6705,10 @@
     },
     {
       "source": "escuela-palo-alto-mri-1959",
+      "target": "s21nardone"
+    },
+    {
+      "source": "constructivismo",
       "target": "s21nardone"
     },
     {
@@ -6637,6 +6754,10 @@
     {
       "source": "teoria-apego-bowlby",
       "target": "self-determination-therapy-deci-ryan-1985"
+    },
+    {
+      "source": "falsacionismo",
+      "target": "paradigmas-kuhn"
     },
     {
       "source": "falsacionismo",
@@ -6817,20 +6938,12 @@
       "influence": "Fenomenología / Hermenéutica"
     },
     {
-      "target": "winnicott-objeto-transicional-ambiente",
-      "influence": "Constructivismo (Cognitivismo evolutivo)"
-    },
-    {
       "target": "balint-falla-basica-regresion-benigna",
       "influence": "Medicina psicosomática"
     },
     {
       "target": "balint-falla-basica-regresion-benigna",
       "influence": "Fenomenología / Hermenéutica"
-    },
-    {
-      "target": "balint-falla-basica-regresion-benigna",
-      "influence": "Constructivismo (Cognitivismo evolutivo)"
     },
     {
       "target": "sullivan-psicoanalisis-interpersonal",
@@ -6882,10 +6995,6 @@
     },
     {
       "target": "teoria-apego-bowlby",
-      "influence": "Constructivismo (Cognitivismo evolutivo)"
-    },
-    {
-      "target": "teoria-apego-bowlby",
       "influence": "Empirismo objetivista / Positivismo lógico"
     },
     {
@@ -6899,10 +7008,6 @@
     {
       "target": "bion-teoria-pensar-contencion",
       "influence": "Fenomenología / Hermenéutica"
-    },
-    {
-      "target": "bion-teoria-pensar-contencion",
-      "influence": "Constructivismo (Cognitivismo evolutivo)"
     },
     {
       "target": "psicoterapia-psicodinamica-breve",
@@ -7542,10 +7647,6 @@
     },
     {
       "target": "terapia-de-esquemas-young-1990",
-      "influence": "Constructivismo (Cognitivismo evolutivo)"
-    },
-    {
-      "target": "terapia-de-esquemas-young-1990",
       "influence": "Constructivismo social / Relacional"
     },
     {
@@ -8149,14 +8250,6 @@
       "influence": "Epistemología genética"
     },
     {
-      "target": "k1kelly55",
-      "influence": "Constructivismo (cognitivismo evolutivo)"
-    },
-    {
-      "target": "modelo-significado-post-trauma-janoff-bulman-1992",
-      "influence": "Constructivismo (cognitivismo evolutivo)"
-    },
-    {
       "target": "modelo-significado-post-trauma-janoff-bulman-1992",
       "influence": "Psicología del trauma"
     },
@@ -8234,10 +8327,6 @@
     },
     {
       "target": "k13coherence-therapy-1993",
-      "influence": "Constructivismo"
-    },
-    {
-      "target": "k13coherence-therapy-1993",
       "influence": "Fenomenología / Hermenéutica"
     },
     {
@@ -8251,10 +8340,6 @@
     {
       "target": "k13coherence-therapy-1993",
       "influence": "Memoria y reconsolidación"
-    },
-    {
-      "target": "k13coherence-therapy-1993",
-      "influence": "Constructivismo (cognitivismo evolutivo)"
     },
     {
       "target": "terapia-dialogica",
@@ -8289,10 +8374,6 @@
       "influence": "Fenomenología / Hermenéutica"
     },
     {
-      "target": "psicoterapia-constructivista-neimeyer",
-      "influence": "Constructivismo (cognitivismo evolutivo)"
-    },
-    {
       "target": "terapia-metacognitiva-interpersonal-mit",
       "influence": "Guidano – Psicología postracionalista"
     },
@@ -8311,10 +8392,6 @@
     {
       "target": "terapia-metacognitiva-interpersonal-mit",
       "influence": "IPT – Terapia Interpersonal"
-    },
-    {
-      "target": "polaridades-semanticas",
-      "influence": "Constructivismo (cognitivismo evolutivo)"
     },
     {
       "target": "polaridades-semanticas",
@@ -8438,10 +8515,6 @@
     },
     {
       "target": "psicologia-cultural-bruner-1990",
-      "influence": "Constructivismo"
-    },
-    {
-      "target": "psicologia-cultural-bruner-1990",
       "influence": "Sociocultural (Vygotsky)"
     },
     {
@@ -8495,10 +8568,6 @@
     {
       "target": "narrative-exposure-therapy-net-schauer-neuner-elbert-2005",
       "influence": "Terapia de exposición"
-    },
-    {
-      "target": "rupturas-reparacion-alianza-safran-muran-2000",
-      "influence": "Constructivismo"
     },
     {
       "target": "rupturas-reparacion-alianza-safran-muran-2000",
@@ -8805,10 +8874,6 @@
       "influence": "Teoría de sistemas"
     },
     {
-      "target": "interventive-interviewing-tomm-1987",
-      "influence": "Constructivismo"
-    },
-    {
       "target": "escuela-palo-alto-mri-1959",
       "influence": "Teoría general de sistemas"
     },
@@ -8898,10 +8963,6 @@
     },
     {
       "target": "terapia-breve-mri-1974",
-      "influence": "Constructivismo"
-    },
-    {
-      "target": "terapia-breve-mri-1974",
       "influence": "Cibernética de segundo orden"
     },
     {
@@ -8979,10 +9040,6 @@
     {
       "target": "s21nardone",
       "influence": "Hipnosis ericksoniana"
-    },
-    {
-      "target": "s21nardone",
-      "influence": "Constructivismo"
     },
     {
       "target": "s21nardone",
@@ -9419,6 +9476,38 @@
     {
       "target": "positivismo",
       "influence": "Biología experimental"
+    },
+    {
+      "target": "constructivismo",
+      "influence": "Epistemología genética"
+    },
+    {
+      "target": "constructivismo",
+      "influence": "Biología evolutiva"
+    },
+    {
+      "target": "constructivismo",
+      "influence": "Filosofía kantiana"
+    },
+    {
+      "target": "constructivismo",
+      "influence": "Psicología del desarrollo"
+    },
+    {
+      "target": "paradigmas-kuhn",
+      "influence": "Historia de la ciencia"
+    },
+    {
+      "target": "paradigmas-kuhn",
+      "influence": "Filosofía de la ciencia del siglo XX"
+    },
+    {
+      "target": "paradigmas-kuhn",
+      "influence": "Crítica al positivismo lógico"
+    },
+    {
+      "target": "paradigmas-kuhn",
+      "influence": "Sociología del conocimiento científico"
     },
     {
       "target": "falsacionismo",
