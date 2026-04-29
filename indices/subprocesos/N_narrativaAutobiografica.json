@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_narrativaAutobiografica",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 64,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 68,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -158,6 +158,29 @@
       ]
     },
     {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_elaboracion_memoria",
+          "nombre": "Elaboración de la memoria traumática (reliving/narrativa)",
+          "texto": "Procedimiento que implica activar y reconstruir la memoria traumática mediante reliving o narrativa detallada, con el objetivo de transformar una memoria fragmentada en un recuerdo coherente y contextualizado en el pasado, reduciendo su reactivación automática (Ehlers & Clark, 2000).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ehlers_final",
+          "nombre": "Señalización del final del trauma",
+          "texto": "Consiste en marcar explícitamente el final del evento traumático dentro de la memoria, facilitando su integración como evento pasado y reduciendo la vivencia de amenaza actual (Ehlers & Clark, 2000).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "inference-based-cbt-aardema-2010",
       "modelLabel": "Inference-Based Cognitive Behavioral Therapy (I-CBT)",
       "modelGrupo": "Cognitivo",
@@ -175,6 +198,43 @@
           "codigo": "m_icbt_nombrar_narrativa",
           "nombre": "Nombrar la narrativa obsesiva",
           "texto": "Intervención que consiste en etiquetar explícitamente el discurso interno como “historia” o “narrativa”, ayudando al paciente a tomar distancia de su contenido. Este etiquetado reduce la fusión cognitiva y permite observar la construcción del pensamiento en lugar de asumirlo como realidad. Referencia: O’Connor, Aardema & Pelissier (2005).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "preventive-cognitive-therapy-bockting-2005",
+      "modelLabel": "Preventive Cognitive Therapy (PCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Claudi L. H. Bockting",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_pct_memoria_autobiografica",
+          "nombre": "Entrenamiento en memoria autobiográfica específica positiva",
+          "texto": "Procedimiento centrado en contrarrestar la tendencia a la memoria sobregeneral característica de la depresión mediante el registro y evocación de experiencias positivas específicas. Se entrena al paciente a recordar eventos concretos (contexto, tiempo, detalles), lo que mejora el acceso a recursos emocionales y favorece el afrontamiento adaptativo. Referencia: Bockting et al. (2005) :contentReference[oaicite:5]{index=5}.",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pct_registro_positivo",
+          "nombre": "Registro sistemático de experiencias positivas",
+          "texto": "Procedimiento complementario al trabajo de memoria que consiste en mantener un diario de experiencias positivas cotidianas. Este registro aumenta la disponibilidad de recuerdos específicos positivos y reduce el sesgo hacia interpretaciones negativas o generalizadas de la experiencia. Referencia: Bockting et al. (2005, sesiones 4–6) :contentReference[oaicite:6]{index=6}.",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pct_diario_positivo",
+          "nombre": "Registro de experiencias positivas",
+          "texto": "Registro sistemático de eventos positivos cotidianos para contrarrestar la tendencia a la memoria autobiográfica sobregeneral. Este ejercicio aumenta la accesibilidad a recuerdos específicos positivos, lo que mejora el afrontamiento y reduce la vulnerabilidad depresiva. Referencia: Bockting et al. (2005, p. 648–649) :contentReference[oaicite:3]{index=3}.",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pct_memoria_especifica",
+          "nombre": "Evocación de recuerdos específicos positivos",
+          "texto": "Entrenamiento en recuperar recuerdos autobiográficos concretos (evento, lugar, momento) en lugar de recuerdos genéricos, con el objetivo de mejorar la capacidad de acceso a experiencias positivas y facilitar la regulación emocional y el afrontamiento. Referencia: Bockting et al. (2005) :contentReference[oaicite:4]{index=4}.",
           "sub": "N_narrativaAutobiografica",
           "tipo": "micro"
         }
@@ -978,6 +1038,113 @@
       ]
     },
     {
+      "modelId": "narrative-exposure-therapy-net-schauer-neuner-elbert-2005",
+      "modelLabel": "Narrative Exposure Therapy (NET)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Maggie Schauer; Frank Neuner; Thomas Elbert",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_net_linea_vida",
+          "nombre": "Construcción de la línea de vida (lifeline)",
+          "texto": "Procedimiento estructural en el que se representa físicamente la vida del paciente como una línea temporal, utilizando objetos simbólicos (por ejemplo, piedras para eventos traumáticos, flores para positivos). Permite organizar cronológicamente la experiencia y establecer un mapa claro para el trabajo terapéutico posterior (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_net_exposicion_narrativa",
+          "nombre": "Exposición narrativa cronológica de la vida",
+          "texto": "Procedimiento central en el que se recorre la línea de vida de forma secuencial, narrando en detalle los eventos significativos, especialmente los traumáticos, activando tanto componentes emocionales como contextuales. Esta exposición repetida permite procesar las memorias y avanzar hacia su integración (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_net_integracion_memoria",
+          "nombre": "Integración de memoria caliente y fría",
+          "texto": "Procedimiento orientado a conectar los componentes sensoriales y emocionales del trauma con su contexto temporal, espacial y autobiográfico, transformando recuerdos fragmentados en narrativas coherentes que pueden ser ubicadas en el pasado (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_net_contextualizacion",
+          "nombre": "Contextualización temporal y espacial del trauma",
+          "texto": "Procedimiento que enfatiza la ubicación precisa de los eventos traumáticos en el tiempo, el espacio y la biografía del paciente, ayudando a diferenciar el pasado del presente y reduciendo la vivencia de amenaza actual (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_net_reconstruccion_narrativa",
+          "nombre": "Reconstrucción narrativa de la historia de vida",
+          "texto": "Procedimiento que integra todos los eventos trabajados en una narrativa autobiográfica completa y coherente, permitiendo que el trauma quede contextualizado dentro de la vida del paciente y no como elemento dominante o aislado (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_net_testimonio",
+          "nombre": "Testimonio narrativo final",
+          "texto": "Procedimiento final en el que se documenta la narrativa completa del paciente en forma escrita, consolidando la integración del trauma y proporcionando un relato coherente de su historia. En algunos contextos, este testimonio puede tener también valor simbólico o social (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_net_objetos",
+          "nombre": "Uso de objetos simbólicos en la línea de vida",
+          "texto": "Se utilizan objetos físicos (piedras para eventos traumáticos, flores para positivos) para representar visual y corporalmente la historia de vida, facilitando la organización temporal y el acceso emocional a los recuerdos (Schauer, Neuner & Elbert, 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_cronologia",
+          "nombre": "Ubicación cronológica precisa",
+          "texto": "Consiste en situar cada evento en una secuencia temporal clara (edad, lugar, contexto), reforzando la estructura narrativa y reduciendo la fragmentación de la memoria (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_contexto",
+          "nombre": "Conexión con contexto autobiográfico",
+          "texto": "Se introducen elementos contextuales (quién, dónde, cuándo, qué ocurrió antes y después) para vincular la experiencia emocional con la memoria autobiográfica (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_pasado",
+          "nombre": "Anclaje explícito en el pasado",
+          "texto": "Se refuerza verbalmente que el evento ocurrió en el pasado (“esto fue entonces”), ayudando a reducir la vivencia de amenaza actual (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_transiciones",
+          "nombre": "Transición guiada entre eventos",
+          "texto": "Se facilita el paso ordenado de un evento a otro en la narrativa, manteniendo continuidad temporal y evitando saltos desorganizados en la historia (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_escritura",
+          "nombre": "Registro escrito del relato",
+          "texto": "El terapeuta documenta la narrativa durante las sesiones, generando un registro estructurado que será utilizado como testimonio final (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_revision",
+          "nombre": "Lectura y revisión del testimonio",
+          "texto": "Se revisa conjuntamente el relato completo, consolidando la coherencia narrativa y reforzando la integración del trauma en la historia de vida (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_positivos",
+          "nombre": "Marcaje de eventos positivos",
+          "texto": "Se identifican y enfatizan eventos positivos en la línea de vida, equilibrando la narrativa y ampliando la representación autobiográfica más allá del trauma (Schauer et al., 2011).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "neurobiologia-interpersonal-siegel-1999",
       "modelLabel": "Neurobiología Interpersonal (IPNB)",
       "modelGrupo": "Integrativo",
@@ -1457,6 +1624,29 @@
           "texto": "Procedimiento de exploración intencional para recoger información sobre la historia familiar y cómo se han gestionado ansiedad, conflicto, cercanía y distancia. La investigación reduce fantasías y narrativas polarizadas, y convierte el trabajo en un ejercicio de observación más que de acusación. Al comprender la lógica del sistema, el consultante deja de reaccionar como niño en el guion familiar y puede actuar como adulto diferenciado.",
           "sub": "N_narrativaAutobiografica",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "feedback-informed-treatment-duncan-miller-2000",
+      "modelLabel": "Feedback-Informed Treatment (FIT)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Barry L. Duncan; Scott D. Miller",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_fit_metas_cliente",
+          "nombre": "Clarificación de metas del cliente",
+          "texto": "Procedimiento orientado a identificar y definir de forma precisa qué quiere el cliente conseguir en terapia, utilizando su propio lenguaje y criterios de éxito, y revisando continuamente estas metas a lo largo del proceso para asegurar que la terapia sigue siendo relevante y significativa para él, evitando trabajar sobre objetivos implícitos o definidos exclusivamente por el terapeuta (Duncan, Miller & Sparks, 2004).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fit_conectar_metas",
+          "nombre": "Conectar intervención con metas del cliente",
+          "texto": "Microintervención que vincula explícitamente lo que se hace en sesión con las metas definidas por el cliente, aumentando la coherencia del proceso y la percepción de utilidad de la terapia (Duncan, Miller & Sparks, 2004).",
+          "sub": "N_narrativaAutobiografica",
+          "tipo": "micro"
         }
       ]
     },

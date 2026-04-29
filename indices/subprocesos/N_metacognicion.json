@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_metacognicion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 151,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 157,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -319,6 +319,64 @@
       ]
     },
     {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_monitorizacion",
+          "nombre": "Entrenamiento en monitorización de experiencias internas",
+          "texto": "Procedimiento continuo de registro y observación de pensamientos, emociones, sensaciones y conductas, diferenciando primeras reacciones (experiencia directa) y segundas reacciones (intentos de control, evitación o juicio). Facilita conciencia del ciclo de ansiedad y aumenta flexibilidad de respuesta. Referencia: Hayes-Skelton et al. (2013), tabla de sesiones.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_abbt_control_experiencial",
+          "nombre": "Identificación y análisis de estrategias de control",
+          "texto": "Procedimiento orientado a identificar intentos de controlar pensamientos, emociones o sensaciones (supresión, distracción, preocupación, etc.) y analizar sus efectos paradójicos en el mantenimiento del malestar, promoviendo insight sobre los límites del control interno. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_abbt_decentramiento",
+          "nombre": "Entrenamiento en descentramiento (defusion)",
+          "texto": "Procedimiento orientado a observar pensamientos y emociones como eventos mentales transitorios en lugar de realidades definitorias, utilizando ejercicios de distanciamiento atencional que reducen la fusión cognitiva. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_abbt_registro_worry",
+          "nombre": "Registro de preocupación y experiencias internas",
+          "texto": "Tarea de autoobservación en la que el paciente registra pensamientos, emociones y conductas asociadas a la preocupación, facilitando conciencia de patrones y procesos mantenedores. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_control_tracking",
+          "nombre": "Exploración de intentos de control",
+          "texto": "Intervención de análisis en la que el paciente identifica estrategias utilizadas para controlar pensamientos o emociones y observa sus efectos paradójicos en el malestar. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_clouds",
+          "nombre": "Ejercicio de nubes (thoughts as clouds)",
+          "texto": "Ejercicio de visualización en el que pensamientos y emociones se colocan en nubes que pasan, promoviendo distancia psicológica y reducción de fusión cognitiva. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_leaves_stream",
+          "nombre": "Ejercicio de hojas en el río (leaves on a stream)",
+          "texto": "Ejercicio de defusión en el que pensamientos se colocan en hojas que flotan en un río, facilitando observación sin implicación. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "act-hayes-strosahl-wilson-1999",
       "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
       "modelGrupo": "Cognitivo",
@@ -589,6 +647,43 @@
           "codigo": "m_cpt_creencia_evitacion",
           "nombre": "Conexión entre creencia traumática y evitación actual",
           "texto": "Intervención puntual que señala cómo un atasco cognitivo concreto mantiene conductas de evitación o seguridad en la vida actual, ayudando al paciente a comprender el coste funcional de sostener la creencia traumática. (Resick et al., 2016).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_formulacion",
+          "nombre": "Formulación individualizada del sentido actual de amenaza",
+          "texto": "Procedimiento orientado a identificar cómo se mantiene el sentido actual de amenaza en el paciente, analizando la interacción entre interpretaciones negativas, características de la memoria traumática y estrategias de mantenimiento. Esta formulación es específica de cada caso y guía todas las intervenciones terapéuticas (Ehlers & Clark, 2000).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ehlers_experimentos",
+          "nombre": "Experimentos conductuales",
+          "texto": "Procedimiento que utiliza experiencias conductuales para poner a prueba interpretaciones negativas y generar evidencia correctiva directa, facilitando la modificación de creencias disfuncionales relacionadas con el trauma (Ehlers & Clark, 2000).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ehlers_triggers",
+          "nombre": "Señalización de disparadores",
+          "texto": "Consiste en identificar estímulos internos y externos que activan la memoria traumática, aumentando la conciencia sobre los patrones de reactivación (Ehlers & Clark, 2000).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ehlers_expectativas",
+          "nombre": "Comparación de expectativas vs resultados",
+          "texto": "Tras experimentos conductuales, se analiza la discrepancia entre lo esperado y lo ocurrido, facilitando la revisión de interpretaciones negativas (Ehlers & Clark, 2000).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
@@ -1223,6 +1318,127 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_evaluacion_biopsicosocial_analisis_funcional",
+          "nombre": "Evaluación biopsicosocial y análisis funcional de la disfunción sexual",
+          "texto": "Procedimiento inicial orientado a formular la disfunción sexual como un sistema de interacción entre variables médicas, farmacológicas, hormonales, historia sexual, aprendizaje, creencias, ansiedad, atención, evitación, dinámica de pareja y contexto vital; incluye entrevista sexual detallada, evaluación de deseo, excitación, orgasmo, dolor, satisfacción, frecuencia de evitación, situaciones facilitadoras y bloqueadoras, y cribado de factores orgánicos o iatrogénicos que requieren coordinación médica. El objetivo clínico es pasar de una etiqueta global —por ejemplo, ‘no deseo’, ‘fallo’, ‘no funciona’— a una formulación funcional precisa del ciclo que mantiene el problema y de los puntos de intervención prioritarios. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra, Vallejo-Medina, Santos-Iglesias & Lameiras Fernández (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_reduccion_espectador_interno_atencion_erotica",
+          "nombre": "Reducción del espectador interno y entrenamiento atencional erótico",
+          "texto": "Procedimiento dirigido a detectar y modificar la posición de autoobservación evaluativa durante la actividad sexual, entrenando el paso desde la vigilancia del rendimiento hacia claves sensoriales, emocionales y relacionales presentes. Incluye identificación de momentos de autoevaluación, uso de anclajes atencionales eróticos, retorno deliberado a sensaciones corporales, contacto visual, respiración, tacto o fantasía consensuada, y práctica entre sesiones en contextos de baja exigencia. Su objetivo es disminuir interferencia cognitiva y recuperar disponibilidad excitatoria. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_prevencion_recaidas_repertorio_flexible",
+          "nombre": "Prevención de recaídas y consolidación de repertorio sexual flexible",
+          "texto": "Procedimiento final orientado a consolidar aprendizajes, anticipar oscilaciones normales de deseo y respuesta sexual, identificar señales tempranas de retorno a vigilancia, presión o evitación, y establecer planes de mantenimiento. Se revisan recursos eficaces, acuerdos de pareja, estrategias de comunicación, formas de volver al contacto sensorial y criterios para no convertir un episodio aislado de dificultad en prueba de recaída o defecto estable. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_diferenciar_sensacion_interpretacion",
+          "nombre": "Diferenciar sensación corporal de interpretación de fracaso",
+          "texto": "Microintervención que separa el dato corporal —por ejemplo, erección parcial, menor lubricación, fluctuación de excitación, tensión o latido— de la interpretación automática ‘estoy fallando’ o ‘esto saldrá mal’. Esta discriminación reduce fusión cognitiva con señales corporales y permite que la persona observe la respuesta sexual como variable, no como veredicto sobre su valía. Referencia: Barlow (1986); Barlow (2002); Meston & Bradford (2007).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_detectar_espectador_interno",
+          "nombre": "Detectar el momento de entrada del espectador interno",
+          "texto": "Microintervención destinada a identificar el instante exacto en que la persona deja de estar en la experiencia sexual y pasa a mirarse desde fuera, evaluando su cuerpo, su desempeño o la reacción de la pareja. Detectar este cambio de posición permite intervenir antes de que la autoobservación capture todo el campo atencional. Referencia: Masters & Johnson (1970); Barlow (1986).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_registro_anticipaciones",
+          "nombre": "Registrar anticipaciones sexuales antes del encuentro",
+          "texto": "Microintervención de autorregistro en la que la persona anota predicciones previas al encuentro íntimo, como ‘me bloquearé’, ‘mi pareja se decepcionará’ o ‘no sentiré nada’, junto con emoción, intensidad y conducta prevista. El registro permite trabajar predicciones específicas en lugar de ansiedad difusa y facilita experimentos conductuales posteriores. Referencia: Barlow (1986); Sierra et al. (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_comprobar_prediccion",
+          "nombre": "Comprobar la predicción después del ejercicio sexual",
+          "texto": "Microintervención posterior al ejercicio en la que se compara la predicción temida con lo que realmente ocurrió, identificando discrepancias, matices, conductas útiles y señales de aprendizaje. Evita que la persona recuerde el encuentro solo desde el sesgo de fallo y consolida evidencia experiencial correctiva. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_convertir_queja_en_secuencia",
+          "nombre": "Convertir queja sexual global en secuencia observable",
+          "texto": "Microintervención que traduce expresiones globales como ‘no tenemos deseo’, ‘siempre va mal’ o ‘soy un desastre’ en una secuencia concreta de disparadores, pensamientos, emociones, sensaciones, conductas y respuestas de la pareja. Esta operación aumenta precisión clínica y reduce atribuciones identitarias rígidas. Referencia: Barlow (1986); Sierra et al. (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_identificar_conductas_seguridad",
+          "nombre": "Identificar conductas de seguridad sexuales",
+          "texto": "Microintervención que detecta estrategias usadas para prevenir el fallo, como evitar iniciar, comprobar erección o lubricación, acelerar el encuentro, fingir placer, beber para desinhibirse, usar fantasías desconectadas compulsivamente o interrumpir ante cualquier señal ambigua. Nombrarlas permite ver cómo alivian a corto plazo y mantienen el problema a largo plazo. Referencia: Barlow (1986); Barlow (2002).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_registro_facilitadores_inhibidores_deseo",
+          "nombre": "Registrar facilitadores e inhibidores del deseo",
+          "texto": "Microintervención en la que la persona observa qué condiciones aumentan o disminuyen deseo: descanso, conflicto, privacidad, presión, ternura, novedad, imagen corporal, estrés, resentimiento o tipo de estimulación. Ayuda a pasar de ‘tengo/no tengo deseo’ a una formulación contextual y modificable. Referencia: Meston & Bradford (2007); Meston & Buss (2007).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_revisar_evitaciones_posteriores",
+          "nombre": "Revisar evitaciones posteriores al encuentro",
+          "texto": "Microintervención que identifica conductas posteriores a una experiencia sexual difícil, como distanciarse, no hablar, culparse, bromear defensivamente o evitar nuevos acercamientos. Permite intervenir sobre el mantenimiento del problema más allá del momento sexual propiamente dicho. Referencia: Barlow (1986); Masters & Johnson (1970).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_identificar_lectura_mental",
+          "nombre": "Identificar lectura mental sexual",
+          "texto": "Microintervención que detecta inferencias no verificadas sobre lo que la pareja piensa o siente, como ‘seguro que se decepciona’, ‘cree que soy raro’ o ‘ya no le atraigo’. Al hacerlas explícitas, se pueden contrastar mediante comunicación directa y reducir ansiedad relacional. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_convertir_lectura_mental_pregunta",
+          "nombre": "Convertir lectura mental en pregunta verificable",
+          "texto": "Microintervención que transforma una suposición sobre la pareja en una pregunta concreta y respetuosa, por ejemplo ‘cuando paro, ¿qué interpretas?’ o ‘¿qué te ayuda a sentirte cerca?’. Sustituye inferencia ansiosa por información interpersonal real. Referencia: Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_detectar_presion_temporal",
+          "nombre": "Detectar presión temporal en el encuentro sexual",
+          "texto": "Microintervención que identifica prisa, sensación de examen, urgencia por llegar al orgasmo o presión por mantener excitación sin pausa. Al detectarla, se puede introducir ralentización, pausa, cambio de actividad o retirada temporal de metas. Referencia: Masters & Johnson (1970); Barlow (1986).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_senales_tempranas_evitacion",
+          "nombre": "Identificar señales tempranas de evitación sexual",
+          "texto": "Microintervención que reconoce señales iniciales de evitación como cambiar de tema, acostarse más tarde, provocar discusión, mostrarse excesivamente ocupado o evitar contacto físico. Detectarlas antes de la retirada completa permite elegir una respuesta más consciente. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_revisar_sustancias",
+          "nombre": "Revisar el papel del alcohol u otras sustancias",
+          "texto": "Microintervención que explora si alcohol, cannabis, sedantes, estimulantes u otros consumos se usan para reducir ansiedad sexual, facilitar deseo o evitar vergüenza, y cómo afectan excitación, orgasmo, memoria y seguridad relacional. Permite diferenciar ayuda aparente de mantenimiento fisiológico o evitativo. Referencia: Meston & Bradford (2007); Barlow (2002).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
       "modelLabel": "Modelo cognitivo de la fobia social",
       "modelGrupo": "Cognitivo",
@@ -1470,6 +1686,108 @@
           "codigo": "m_dugas_detectar_sobreanalisis",
           "nombre": "Detectar sobreanálisis",
           "texto": "Intervención breve que señala cuando el paciente entra en análisis excesivo intentando resolver incertidumbre, ayudando a cortar el proceso antes de que escale en preocupación sostenida. Referencia: Dugas et al. (1998).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_appraisal_mapping",
+          "nombre": "Evaluación funcional del estrés (appraisal mapping)",
+          "texto": "Procedimiento dirigido a mapear de forma explícita cómo la persona evalúa una situación estresante en términos de evaluación primaria (amenaza, daño o desafío) y secundaria (recursos percibidos), identificando sesgos, automatismos y puntos de distorsión que amplifican el estrés. Permite diferenciar entre características objetivas del evento y significado atribuido, sentando la base para intervenciones posteriores sobre cognición y afrontamiento. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_lazarus_control_diferenciacion",
+          "nombre": "Diferenciación control vs. no control",
+          "texto": "Procedimiento que ayuda a discriminar qué aspectos de una situación son modificables y cuáles no, evitando la aplicación ineficaz de estrategias de afrontamiento centradas en el problema cuando no existe control real. Esta diferenciación optimiza la elección de estrategias y reduce la frustración asociada a intentos fallidos de control. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_lazarus_flexibilidad_coping",
+          "nombre": "Entrenamiento en flexibilidad de afrontamiento",
+          "texto": "Procedimiento orientado a ampliar el repertorio de estrategias de afrontamiento y mejorar la capacidad de seleccionar la más adecuada según el contexto, evitando rigidez en el uso de una única estrategia. La flexibilidad de coping se asocia a mejor adaptación y menor cronificación del estrés. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_lazarus_monitorizacion",
+          "nombre": "Monitoreo continuo del estrés (feedback appraisal)",
+          "texto": "Procedimiento que implica la observación sistemática de cambios en la percepción de estrés, evaluaciones cognitivas y eficacia del afrontamiento a lo largo del tiempo. Permite ajustar estrategias mediante un proceso de reevaluación continua, aumentando la adaptabilidad del sistema persona-entorno. Referencia: Lazarus (1999).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_lazarus_eval_primaria",
+          "nombre": "Nombrar la evaluación primaria",
+          "texto": "Microintervención dirigida a hacer explícito si la persona está interpretando una situación como amenaza, daño o desafío, ayudándole a verbalizar su appraisal automático y tomar distancia de él, lo que permite abrir alternativas de significado. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_lazarus_eval_secundaria",
+          "nombre": "Nombrar recursos percibidos",
+          "texto": "Microintervención orientada a identificar qué recursos cree tener la persona para afrontar la situación, diferenciando entre recursos reales y percibidos, y ampliando la conciencia sobre apoyos disponibles. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_lazarus_reappraisal_momento",
+          "nombre": "Reevaluación en tiempo real",
+          "texto": "Microintervención que invita a revisar la evaluación de la situación en el momento presente, ajustando la interpretación a nueva información o cambios contextuales. Referencia: Lazarus (1999).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_lazarus_normalizacion",
+          "nombre": "Normalización de la variabilidad del estrés",
+          "texto": "Microintervención que explica que la intensidad del estrés fluctúa en función de la evaluación y el contexto, reduciendo la interpretación catastrofista de los cambios emocionales. Referencia: Lazarus (1999).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "preventive-cognitive-therapy-bockting-2005",
+      "modelLabel": "Preventive Cognitive Therapy (PCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Claudi L. H. Bockting",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_pct_identificacion_actitudes",
+          "nombre": "Identificación de pensamientos y actitudes disfuncionales",
+          "texto": "Procedimiento inicial centrado en detectar pensamientos negativos y, especialmente, las actitudes disfuncionales subyacentes que constituyen la vulnerabilidad cognitiva residual tras la remisión. Se apoya en ejemplos personales, cuestionarios de actitudes y exploración guiada para hacer explícitas estructuras cognitivas latentes que no están activas constantemente pero se reactivan ante estados de ánimo bajos. Referencia: Bockting et al. (2005) :contentReference[oaicite:0]{index=0}.",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pct_activacion_cognitiva",
+          "nombre": "Detección de activación cognitiva asociada al estado de ánimo",
+          "texto": "Procedimiento orientado a identificar cómo los pensamientos disfuncionales se reactivan automáticamente ante cambios leves en el estado de ánimo. El objetivo es aumentar la conciencia del vínculo estado de ánimo–cognición, considerado un mecanismo central de recaída en depresión recurrente. Referencia: Bockting et al. (2005); Segal et al. (2002).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pct_vertical_arrow",
+          "nombre": "Aplicación de flecha descendente (vertical arrow)",
+          "texto": "Uso sistemático de preguntas encadenadas para derivar desde pensamientos superficiales hacia creencias nucleares y actitudes disfuncionales subyacentes. Permite identificar estructuras profundas que mantienen la vulnerabilidad a recaídas más allá del contenido inmediato del pensamiento. Referencia: Bockting et al. (2005, p. 648–649) :contentReference[oaicite:0]{index=0}.",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pct_deteccion_activacion",
+          "nombre": "Detección en vivo de activación cognitiva",
+          "texto": "Microintervención orientada a que el paciente identifique en tiempo real cuándo comienzan a activarse patrones cognitivos negativos ante cambios emocionales leves, permitiendo intervenir antes de que escalen. Referencia: Bockting et al. (2005).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }
@@ -6458,6 +6776,64 @@
           "codigo": "m_canevaro_beneficios_secundarios",
           "nombre": "Exploración de beneficios secundarios relacionales",
           "texto": "Microintervención orientada a detectar qué posición relacional o reconocimiento obtiene el paciente a través del síntoma (atención, cercanía, evitación de conflicto), facilitando conciencia sin culpabilización. A diferencia del enfoque milanés clásico más descriptivo, aquí se trabaja explícitamente la ganancia posicional individual. Referencia: Canevaro (2012).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "feedback-informed-treatment-duncan-miller-2000",
+      "modelLabel": "Feedback-Informed Treatment (FIT)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Barry L. Duncan; Scott D. Miller",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_fit_ors",
+          "nombre": "Monitorización sistemática del resultado (ORS)",
+          "texto": "Procedimiento central de FIT que consiste en recoger al inicio de cada sesión la valoración del cliente sobre su funcionamiento personal, relacional y social mediante la Outcome Rating Scale (ORS), utilizando esa información como dato clínico prioritario para evaluar si la terapia está produciendo cambios significativos en su vida y ajustar el tratamiento en consecuencia; el terapeuta no interpreta el progreso de forma unilateral, sino que lo negocia explícitamente con el cliente, explorando qué está ayudando, qué no y qué debería modificarse, lo que permite detectar estancamientos o deterioros tempranos y evitar tratamientos ineficaces prolongados (Duncan, Miller & Sparks, 2004; Miller et al., 2003).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_teoria_cliente",
+          "nombre": "Exploración de la teoría del cambio del cliente",
+          "texto": "Procedimiento que consiste en explorar explícitamente cómo entiende el cliente su problema y qué cree que le ayudaría a cambiar, utilizando esa teoría como base para seleccionar intervenciones, aumentar credibilidad del tratamiento y fortalecer la alianza, en lugar de imponer un modelo explicativo externo que pueda generar resistencia o desconexión (Duncan, Miller & Sparks, 2004).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_no_progreso",
+          "nombre": "Detección temprana de falta de progreso",
+          "texto": "Procedimiento basado en el análisis de la evolución de las puntuaciones ORS para identificar rápidamente cuando el cliente no está mejorando al ritmo esperado, permitiendo intervenir precozmente mediante revisión del enfoque, intensificación del trabajo o reconsideración del caso, evitando cronificación de tratamientos ineficaces que el terapeuta podría no detectar sin datos objetivos del cliente (Miller et al., 2003; Duncan et al., 2010).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_desarrollo_terapeuta",
+          "nombre": "Desarrollo deliberado del terapeuta basado en resultados",
+          "texto": "Procedimiento que implica que el terapeuta utilice los datos agregados de sus resultados clínicos para analizar su propia eficacia, identificar áreas de mejora y ajustar su práctica de forma continua, pasando de una identidad basada en la competencia percibida a una basada en resultados reales observados en sus clientes (Miller, Duncan & Hubble, 2004).",
+          "sub": "N_metacognicion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fit_ors_inicio",
+          "nombre": "Invitar a puntuación ORS inicial",
+          "texto": "Microintervención que consiste en pedir al cliente al inicio de la sesión que valore su semana utilizando la ORS, enmarcando la tarea como una forma de asegurarse de que la terapia está siendo útil y no como una evaluación externa, facilitando así una autoobservación estructurada del cambio percibido (Miller et al., 2003).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_senal_estancamiento",
+          "nombre": "Señalar estancamiento temprano",
+          "texto": "Microintervención en la que el terapeuta comparte de forma transparente que las puntuaciones no están mejorando como se esperaría, invitando a reflexionar conjuntamente sobre posibles cambios en el enfoque antes de que el proceso se cronifique sin beneficio (Miller et al., 2003).",
+          "sub": "N_metacognicion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_discrepancia",
+          "nombre": "Nombrar discrepancia terapeuta-cliente",
+          "texto": "Microintervención que consiste en señalar con delicadeza diferencias entre cómo el terapeuta percibe el progreso y cómo lo percibe el cliente, utilizándolas como punto de partida para una exploración colaborativa en lugar de imponer una visión clínica (Duncan, Miller & Sparks, 2004).",
           "sub": "N_metacognicion",
           "tipo": "micro"
         }

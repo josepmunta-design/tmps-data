@@ -1,7 +1,7 @@
 {
   "subprocesoId": "I_fortalezasRecursos",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 17,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 18,
   "modelos": [
     {
       "modelId": "whanau-ora-modelo-maori-2000",
@@ -14,6 +14,36 @@
           "codigo": "m_whanau_resiliencia",
           "nombre": "Explorar la historia familiar de resiliencia",
           "texto": "Microintervención que identifica episodios históricos de fortaleza, supervivencia o liderazgo dentro de la genealogía familiar, ampliando la narrativa más allá del trauma y reforzando identidad basada en recursos colectivos. Referencia: Durie, M. (2001).",
+          "sub": "I_fortalezasRecursos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_recursos",
+          "nombre": "Activación de recursos de afrontamiento",
+          "texto": "Procedimiento dirigido a identificar, fortalecer y movilizar recursos internos y externos disponibles para afrontar el estrés, incluyendo habilidades personales, experiencias previas, apoyo social y estrategias aprendidas. Incrementa la percepción de eficacia y modula la evaluación secundaria, reduciendo la intensidad del estrés percibido. Referencia: Lazarus (1999).",
+          "sub": "I_fortalezasRecursos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_lazarus_eval_secundaria",
+          "nombre": "Nombrar recursos percibidos",
+          "texto": "Microintervención orientada a identificar qué recursos cree tener la persona para afrontar la situación, diferenciando entre recursos reales y percibidos, y ampliando la conciencia sobre apoyos disponibles. Referencia: Lazarus & Folkman (1984).",
+          "sub": "I_fortalezasRecursos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_lazarus_experiencia_previa",
+          "nombre": "Activación de experiencia previa",
+          "texto": "Intervención breve que recuerda situaciones similares ya afrontadas con éxito, reforzando la percepción de recursos y reduciendo la indefensión. Referencia: Lazarus (1999).",
           "sub": "I_fortalezasRecursos",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_marcosCognitivos",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 78,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 86,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -181,6 +181,22 @@
       ]
     },
     {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_psicoeducacion_modelo",
+          "nombre": "Psicoeducación del modelo de ansiedad y preocupación",
+          "texto": "Procedimiento centrado en construir una comprensión compartida del modelo ABBT, explicando cómo la ansiedad se mantiene por la relación problemática con la experiencia interna, la evitación experiencial y la restricción conductual. Se introduce la función adaptativa de la ansiedad y el papel paradójico de la preocupación como evitación. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "aprendizaje-social-bandura-1977",
       "modelLabel": "Aprendizaje social",
       "modelGrupo": "Cognitivo",
@@ -251,6 +267,29 @@
           "codigo": "m_cft_normalize_fear_comp",
           "nombre": "Normalizar miedo a la compasión como protección aprendida",
           "texto": "Reencuadrar la resistencia: no es “mala voluntad”, es aprendizaje defensivo ante cuidado/vulnerabilidad.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_formulacion",
+          "nombre": "Formulación individualizada del sentido actual de amenaza",
+          "texto": "Procedimiento orientado a identificar cómo se mantiene el sentido actual de amenaza en el paciente, analizando la interacción entre interpretaciones negativas, características de la memoria traumática y estrategias de mantenimiento. Esta formulación es específica de cada caso y guía todas las intervenciones terapéuticas (Ehlers & Clark, 2000).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ehlers_interpretaciones",
+          "nombre": "Identificación de interpretaciones clave",
+          "texto": "Microintervención dirigida a detectar formulaciones específicas de significado disfuncional en momentos de activación, haciendo explícitas las interpretaciones que generan el sentido actual de amenaza y orientando el foco del tratamiento (Ehlers & Clark, 2000).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }
@@ -391,6 +430,29 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_reestructuracion_creencias_sexuales",
+          "nombre": "Reestructuración de creencias sexuales, mitos y reglas de rendimiento",
+          "texto": "Procedimiento orientado a identificar, examinar y flexibilizar creencias sexuales rígidas sobre deseo espontáneo, erección permanente, orgasmo obligatorio, simetría del deseo, iniciativa sexual, normalidad corporal, deber de satisfacer siempre a la pareja o equivalencia entre dificultad sexual y falta de amor o atractivo. Se emplean diálogo socrático, revisión de evidencia, psicoeducación, experimentos conductuales y construcción de reglas sexuales más realistas, contextuales y compatibles con la variabilidad humana. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra, Ortega & Zubeidat (2003).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_significado_fallo_sexual",
+          "nombre": "Explorar el significado personal del fallo sexual",
+          "texto": "Microintervención que pregunta qué dice para la persona tener una dificultad sexual: ‘soy menos hombre’, ‘no soy deseable’, ‘mi relación está rota’, ‘debería poder siempre’. Permite detectar significados identitarios que amplifican ansiedad y dirigir la reestructuración hacia el núcleo del problema. Referencia: Barlow (1986); Sierra et al. (2012).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
       "modelLabel": "Modelo cognitivo de la fobia social",
       "modelGrupo": "Cognitivo",
@@ -498,6 +560,80 @@
           "codigo": "m_dugas_problema_real_hipotetico",
           "nombre": "Diferenciar problema real vs hipotético",
           "texto": "Intervención breve que distingue entre problemas que pueden resolverse ahora y escenarios hipotéticos inciertos, permitiendo redirigir hacia acción concreta o aceptación según corresponda. Referencia: Dugas & Robichaud (2007).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_appraisal_mapping",
+          "nombre": "Evaluación funcional del estrés (appraisal mapping)",
+          "texto": "Procedimiento dirigido a mapear de forma explícita cómo la persona evalúa una situación estresante en términos de evaluación primaria (amenaza, daño o desafío) y secundaria (recursos percibidos), identificando sesgos, automatismos y puntos de distorsión que amplifican el estrés. Permite diferenciar entre características objetivas del evento y significado atribuido, sentando la base para intervenciones posteriores sobre cognición y afrontamiento. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_lazarus_desajuste",
+          "nombre": "Análisis de desajuste persona-entorno",
+          "texto": "Procedimiento dirigido a identificar discrepancias entre las demandas del entorno y las capacidades o necesidades de la persona, analizando tanto factores externos como internos. Facilita decisiones de cambio contextual, ajuste de expectativas o reconfiguración del rol personal en el entorno. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_lazarus_hecho_interpretacion",
+          "nombre": "Diferenciar hecho vs. interpretación",
+          "texto": "Intervención breve que separa los datos objetivos de la situación de la interpretación subjetiva, reduciendo la fusión cognitiva y permitiendo reevaluaciones más ajustadas del estresor. Referencia: Lazarus (1999).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_lazarus_especificar",
+          "nombre": "Reducir globalización del estresor",
+          "texto": "Intervención que ayuda a concretar y delimitar el problema (“esto exacto es lo que está pasando”), evitando generalizaciones amplias que aumentan el estrés percibido. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "preventive-cognitive-therapy-bockting-2005",
+      "modelLabel": "Preventive Cognitive Therapy (PCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Claudi L. H. Bockting",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_pct_identificacion_actitudes",
+          "nombre": "Identificación de pensamientos y actitudes disfuncionales",
+          "texto": "Procedimiento inicial centrado en detectar pensamientos negativos y, especialmente, las actitudes disfuncionales subyacentes que constituyen la vulnerabilidad cognitiva residual tras la remisión. Se apoya en ejemplos personales, cuestionarios de actitudes y exploración guiada para hacer explícitas estructuras cognitivas latentes que no están activas constantemente pero se reactivan ante estados de ánimo bajos. Referencia: Bockting et al. (2005) :contentReference[oaicite:0]{index=0}.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pct_flecha_descendente",
+          "nombre": "Exploración de creencias nucleares mediante flecha descendente",
+          "texto": "Procedimiento estructurado para derivar desde pensamientos concretos hacia actitudes y creencias más profundas mediante la técnica de la flecha descendente (vertical arrow). Permite identificar los supuestos centrales que organizan la vulnerabilidad a recaídas, más allá de cogniciones superficiales, facilitando una intervención dirigida al núcleo del sistema cognitivo. Referencia: Bockting et al. (2005) :contentReference[oaicite:1]{index=1}.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pct_pensamientos_latentes",
+          "nombre": "Identificación de pensamientos negativos latentes",
+          "texto": "Microintervención centrada en detectar pensamientos negativos que no están activamente presentes pero que emergen ante cambios leves en el estado de ánimo. A diferencia de la CT en fase aguda, aquí se trabaja con activaciones sutiles para hacer visible la vulnerabilidad cognitiva residual. Referencia: Bockting et al. (2005).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pct_vertical_arrow",
+          "nombre": "Aplicación de flecha descendente (vertical arrow)",
+          "texto": "Uso sistemático de preguntas encadenadas para derivar desde pensamientos superficiales hacia creencias nucleares y actitudes disfuncionales subyacentes. Permite identificar estructuras profundas que mantienen la vulnerabilidad a recaídas más allá del contenido inmediato del pensamiento. Referencia: Bockting et al. (2005, p. 648–649) :contentReference[oaicite:0]{index=0}.",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }
@@ -964,6 +1100,64 @@
           "codigo": "m_sst_prevencion_recaidas",
           "nombre": "Plan de prevención de recaídas (señales tempranas y plan de acción)",
           "texto": "Microintervención que identifica señales tempranas de retroceso (retirada, irritabilidad, evitación) y define acciones concretas de recuperación (repetir ejercicios, pedir feedback, reparar, bajar dificultad), evitando que un tropiezo se convierta en abandono del repertorio.",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "human-sexual-response-masters-johnson-1966",
+      "modelLabel": "Human Sexual Response",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "William H. Masters; Virginia E. Johnson",
+      "modelYear": 1966,
+      "items": [
+        {
+          "codigo": "p_mj_coterapia_dual_sex",
+          "nombre": "Formato de coterapia dual-sex",
+          "texto": "Procedimiento organizativo en el que un terapeuta hombre y una terapeuta mujer trabajan conjuntamente con la pareja, actuando como traductores, educadores y observadores de la experiencia sexual masculina y femenina. Masters y Johnson sostienen que este formato reduce sesgos, mejora la fiabilidad de la información, incrementa la seguridad subjetiva de cada miembro de la pareja y facilita una educación sexual más creíble y matizada. No es un detalle logístico menor, sino una pieza técnica central del modelo clínico original. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_historia_psicosexual_estructurada",
+          "nombre": "Historia psicosexual-social estructurada",
+          "texto": "Procedimiento de evaluación intensiva realizado durante los primeros días del programa, con entrevistas separadas y cruzadas a ambos miembros de la pareja para reconstruir cronológicamente historia sexual, valores, mitos, experiencias tempranas, pautas maritales y significado de la disfunción. La finalidad no es solo recoger datos, sino situar la dificultad sexual dentro de la biografía, el estilo relacional y el sistema de creencias de cada uno, generando una formulación clínica útil para la intervención posterior. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_roundtable",
+          "nombre": "Roundtable clínico de formulación y psicoeducación",
+          "texto": "Procedimiento conjunto en el que los coterapeutas presentan a la pareja una síntesis interpretativa de la información recogida, relacionando historia personal y marital, miedos de rendimiento, errores de comunicación, mitos sexuales y patrón actual de disfunción. La roundtable funciona como espejo clínico objetivo: clarifica el problema, corrige malentendidos, coloca la sexualidad de nuevo en su contexto natural y prepara a la pareja para entender por qué las siguientes tareas no buscan “rendir”, sino reconstruir una experiencia sexual viable. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_discusion_sentidos",
+          "nombre": "Discusión clínica de los sentidos como apoyo de la respuesta sexual",
+          "texto": "Procedimiento psicoeducativo y exploratorio en el que se amplía la atención desde el tacto hacia otros focos sensoriales —olfato, visión, sonido y cualidades corporales específicas— para ayudar a la pareja a identificar qué experiencias estimulan, bloquean o matizan su receptividad. En Masters y Johnson esto no se presenta como una técnica decorativa, sino como una manera de reconstruir la respuesta sexual desde sus componentes sensoriales concretos y desde el sistema de significado erótico de cada persona. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mj_normalizar_fluctuaciones",
+          "nombre": "Normalizar fluctuaciones de la respuesta sexual",
+          "texto": "Intervención psicoeducativa breve en la que se explicita que la excitación sexual no es lineal ni estable, sino variable y sensible a múltiples factores, reduciendo interpretaciones catastróficas ante pérdidas de erección o cambios en la excitación y desactivando la asociación automática entre variación y fracaso. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_correccion_mitos",
+          "nombre": "Corregir mitos sexuales específicos",
+          "texto": "Microintervención psicoeducativa dirigida a desmontar creencias erróneas concretas —como la obligación de rendimiento masculino continuo o la pasividad femenina— mediante información clara y directa, facilitando un marco cognitivo más realista que permita nuevas conductas sexuales. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_explorar_senales",
+          "nombre": "Explorar señales sensoriales facilitadoras e inhibidoras",
+          "texto": "Microintervención en la que se pide identificar qué estímulos concretos aumentan o disminuyen la excitación —táctiles, visuales, olfativos o contextuales— permitiendo a la pareja construir un mapa funcional de su respuesta sexual y ajustar sus interacciones en consecuencia. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
           "sub": "N_marcosCognitivos",
           "tipo": "micro"
         }
@@ -1822,6 +2016,22 @@
       ]
     },
     {
+      "modelId": "narrative-exposure-therapy-net-schauer-neuner-elbert-2005",
+      "modelLabel": "Narrative Exposure Therapy (NET)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Maggie Schauer; Frank Neuner; Thomas Elbert",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_net_psicoeducacion",
+          "nombre": "Psicoeducación sobre trauma y memoria",
+          "texto": "Procedimiento inicial orientado a explicar al paciente cómo el trauma afecta a los sistemas de memoria, diferenciando entre memoria sensorial-emocional ('caliente') y memoria autobiográfica ('fría'), y cómo su desconexión genera reexperimentación. Esta explicación establece el marco del tratamiento y legitima la exposición narrativa como vía de integración (Schauer, Neuner & Elbert, 2011).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "neurobiologia-interpersonal-siegel-1999",
       "modelLabel": "Neurobiología Interpersonal (IPNB)",
       "modelGrupo": "Integrativo",
@@ -2198,6 +2408,36 @@
           "texto": "Tareas diseñadas para producir un impacto emocional y perceptivo que reestructure la relación con el síntoma sin necesidad de insight racional.",
           "sub": "N_marcosCognitivos",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "feedback-informed-treatment-duncan-miller-2000",
+      "modelLabel": "Feedback-Informed Treatment (FIT)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Barry L. Duncan; Scott D. Miller",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_fit_teoria_cliente",
+          "nombre": "Exploración de la teoría del cambio del cliente",
+          "texto": "Procedimiento que consiste en explorar explícitamente cómo entiende el cliente su problema y qué cree que le ayudaría a cambiar, utilizando esa teoría como base para seleccionar intervenciones, aumentar credibilidad del tratamiento y fortalecer la alianza, en lugar de imponer un modelo explicativo externo que pueda generar resistencia o desconexión (Duncan, Miller & Sparks, 2004).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fit_expectativas",
+          "nombre": "Revisar expectativas de cambio",
+          "texto": "Microintervención que explora qué espera el cliente de la terapia y del cambio, ajustando expectativas irreales o desalineadas que pueden interferir con la percepción de progreso (Duncan, Miller & Sparks, 2004).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_preferencias",
+          "nombre": "Explorar preferencias terapéuticas",
+          "texto": "Microintervención orientada a identificar qué tipo de ayuda prefiere el cliente (más directiva, más exploratoria, más práctica, etc.), ajustando el estilo terapéutico a esas preferencias (Duncan, Miller & Sparks, 2004).",
+          "sub": "N_marcosCognitivos",
+          "tipo": "micro"
         }
       ]
     },

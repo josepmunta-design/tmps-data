@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_tomaDecisiones",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 90,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 92,
   "modelos": [
     {
       "modelId": "taoismo-psicologia-puentes-1980",
@@ -254,6 +254,66 @@
           "codigo": "m_dugas_problema_real_hipotetico",
           "nombre": "Diferenciar problema real vs hipotético",
           "texto": "Intervención breve que distingue entre problemas que pueden resolverse ahora y escenarios hipotéticos inciertos, permitiendo redirigir hacia acción concreta o aceptación según corresponda. Referencia: Dugas & Robichaud (2007).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_coping_problema",
+          "nombre": "Entrenamiento en afrontamiento centrado en el problema",
+          "texto": "Procedimiento que entrena a la persona en estrategias dirigidas a modificar la situación estresante, incluyendo análisis de problemas, generación de alternativas, toma de decisiones y planificación de acciones. Se aplica especialmente cuando la persona dispone de control parcial o total sobre el contexto, aumentando la eficacia adaptativa y reduciendo la percepción de indefensión. Referencia: Lazarus & Folkman (1984).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_lazarus_control_diferenciacion",
+          "nombre": "Diferenciación control vs. no control",
+          "texto": "Procedimiento que ayuda a discriminar qué aspectos de una situación son modificables y cuáles no, evitando la aplicación ineficaz de estrategias de afrontamiento centradas en el problema cuando no existe control real. Esta diferenciación optimiza la elección de estrategias y reduce la frustración asociada a intentos fallidos de control. Referencia: Lazarus & Folkman (1984).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_lazarus_flexibilidad_coping",
+          "nombre": "Entrenamiento en flexibilidad de afrontamiento",
+          "texto": "Procedimiento orientado a ampliar el repertorio de estrategias de afrontamiento y mejorar la capacidad de seleccionar la más adecuada según el contexto, evitando rigidez en el uso de una única estrategia. La flexibilidad de coping se asocia a mejor adaptación y menor cronificación del estrés. Referencia: Lazarus & Folkman (1984).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_lazarus_control_scan",
+          "nombre": "Escaneo rápido de control",
+          "texto": "Evaluación rápida que identifica qué elementos de la situación son controlables y cuáles no, orientando de inmediato la elección de estrategias de afrontamiento más eficaces. Referencia: Lazarus & Folkman (1984).",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "preventive-cognitive-therapy-bockting-2005",
+      "modelLabel": "Preventive Cognitive Therapy (PCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Claudi L. H. Bockting",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_pct_prevencion_recaidas",
+          "nombre": "Formulación de estrategias de prevención de recaídas",
+          "texto": "Procedimiento final en el que se integran los aprendizajes del tratamiento en un conjunto de estrategias concretas para prevenir recaídas, incluyendo identificación de señales tempranas, uso de habilidades cognitivas y planificación de acciones específicas ante activación. Este módulo traduce el trabajo cognitivo en un sistema operativo de prevención a largo plazo. Referencia: Bockting et al. (2005, sesiones finales) :contentReference[oaicite:7]{index=7}.",
+          "sub": "AG_tomaDecisiones",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pct_plan_accion",
+          "nombre": "Construcción de plan de acción ante señales tempranas",
+          "texto": "Definición concreta de pasos a seguir cuando se detectan señales iniciales de recaída, incluyendo qué hacer, cuándo y cómo. Este micro convierte la conciencia en acción preventiva inmediata. Referencia: Bockting et al. (2005).",
           "sub": "AG_tomaDecisiones",
           "tipo": "micro"
         }

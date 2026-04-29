@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_compromisoConductual",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 138,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 145,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -417,6 +417,22 @@
       ]
     },
     {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_compromiso_valores",
+          "nombre": "Compromiso con la acción basada en valores",
+          "texto": "Procedimiento dirigido a establecer compromisos conductuales alineados con valores, promoviendo la acción incluso en presencia de malestar interno, y entendiendo el compromiso como proceso continuo más que como resultado puntual. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "act-hayes-strosahl-wilson-1999",
       "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
       "modelGrupo": "Cognitivo",
@@ -660,6 +676,22 @@
       ]
     },
     {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_experimentos",
+          "nombre": "Experimentos conductuales",
+          "texto": "Procedimiento que utiliza experiencias conductuales para poner a prueba interpretaciones negativas y generar evidencia correctiva directa, facilitando la modificación de creencias disfuncionales relacionadas con el trauma (Ehlers & Clark, 2000).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "ert-mennin-fresco-2013",
       "modelLabel": "ERT – Emotion Regulation Therapy",
       "modelGrupo": "Cognitivo",
@@ -744,6 +776,64 @@
           "codigo": "m_mbct_microaccion_respuesta",
           "nombre": "Elegir respuesta pequeña (micro-acción anti-espiral)",
           "texto": "Microintervención de seleccionar una acción mínima y concreta tras notar señales tempranas (paseo breve, ducha consciente, llamar a alguien, ordenar una tarea simple) para prevenir retirada/apatía y consolidar ‘responder’ frente a ‘reaccionar’. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_exposicion_gradual_situaciones_evitas",
+          "nombre": "Exposición gradual a situaciones sexuales evitadas",
+          "texto": "Procedimiento conductual que organiza una jerarquía de acercamiento progresivo a situaciones sexuales o íntimas evitadas, desde conversaciones eróticas o contacto no genital hasta prácticas más activadoras, siempre retirando metas de rendimiento prematuras y priorizando permanencia tolerable, comunicación y aprendizaje correctivo. La exposición busca debilitar la asociación entre intimidad y amenaza, reducir evitación anticipatoria y generar experiencias nuevas en las que la persona comprueba que puede sostener deseo, excitación, vulnerabilidad o límites sin quedar atrapada en fracaso o presión. Referencia: Barlow (1986); Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_programacion_intimidad_contexto_erotico",
+          "nombre": "Programación de intimidad y recuperación del contexto erótico",
+          "texto": "Procedimiento destinado a reconstruir condiciones contextuales que faciliten deseo y conexión sexual, especialmente cuando la sexualidad ha quedado desplazada por estrés, crianza, fatiga, conflicto, rutina o evitación acumulada. Se planifican espacios de intimidad no obligatoriamente coital, rituales de acercamiento, reducción de interferencias, acuerdos de disponibilidad, cuidado corporal y actividades eróticas graduadas, tratando la planificación como creación de condiciones de posibilidad y no como obligación sexual. Referencia: Meston & Bradford (2007); Meston & Buss (2007); Sierra et al. (2012).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_dificultades_orgasmicas",
+          "nombre": "Intervención cognitivo-conductual en dificultades orgásmicas",
+          "texto": "Procedimiento centrado en dificultades para alcanzar el orgasmo, orgasmo retardado o bloqueo orgásmico asociado a control excesivo, vergüenza, desconocimiento del patrón de estimulación, distracción, miedo a perder el control o presión por llegar. Incluye autoexploración graduada, identificación de claves excitatorias, entrenamiento atencional, comunicación de estimulación preferida, reducción de metas obligatorias y exposición a sensaciones de aumento de excitación sin interrupción defensiva. Referencia: Masters & Johnson (1970); Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_retirar_meta_rendimiento",
+          "nombre": "Retirar temporalmente la meta de penetración u orgasmo",
+          "texto": "Microintervención contractual en la que se acuerda explícitamente que durante un periodo o ejercicio la actividad sexual no tendrá como objetivo penetración, erección completa, lubricación suficiente u orgasmo. Esta retirada de meta reduce presión de rendimiento y permite reabrir contacto erótico sin convertir cada encuentro en una prueba. Referencia: Masters & Johnson (1970); Barlow (1986).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_escalar_jerarquia_intimidad",
+          "nombre": "Escalar la jerarquía de intimidad en unidades pequeñas",
+          "texto": "Microintervención que divide una situación sexual evitada en pasos muy concretos y tolerables, como hablar de deseo, estar juntos sin móvil, caricias no genitales, desnudez parcial, contacto genital breve o práctica erótica específica. Evita saltos prematuros que reinstalan amenaza y permite aprendizaje gradual. Referencia: Barlow (1986); Masters & Johnson (1970).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_planificar_baja_exigencia",
+          "nombre": "Planificar un encuentro de baja exigencia",
+          "texto": "Microintervención de tarea conductual que define un encuentro breve y acotado con objetivo de conexión, exploración o placer sensorial, no de rendimiento. Debe incluir tiempo, límites, actividad permitida y actividad excluida, reduciendo ambigüedad y presión. Referencia: Masters & Johnson (1970); Barlow (1986).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_autoexploracion_graduada",
+          "nombre": "Practicar autoexploración graduada sin juicio",
+          "texto": "Microintervención de exploración corporal privada y gradual orientada a conocer sensaciones, preferencias, ritmos y zonas de placer sin objetivo inmediato de orgasmo. Es útil en dificultades orgásmicas, vergüenza corporal, bajo deseo o desconocimiento del patrón de estimulación. Referencia: Masters & Johnson (1970); Meston & Bradford (2007).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
@@ -869,6 +959,73 @@
           "codigo": "m_dugas_accion_con_incertidumbre",
           "nombre": "Volver a la acción con incertidumbre",
           "texto": "Microintervención que impulsa a actuar a pesar de no tener toda la información, reforzando la idea de que la acción no requiere certeza completa. Referencia: Dugas & Robichaud (2007).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_coping_problema",
+          "nombre": "Entrenamiento en afrontamiento centrado en el problema",
+          "texto": "Procedimiento que entrena a la persona en estrategias dirigidas a modificar la situación estresante, incluyendo análisis de problemas, generación de alternativas, toma de decisiones y planificación de acciones. Se aplica especialmente cuando la persona dispone de control parcial o total sobre el contexto, aumentando la eficacia adaptativa y reduciendo la percepción de indefensión. Referencia: Lazarus & Folkman (1984).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_lazarus_que_puedo_hacer",
+          "nombre": "Pregunta de afrontamiento activo",
+          "texto": "Pregunta focal del tipo “¿qué puedes hacer ahora mismo respecto a esto?” que activa la orientación a la acción y reduce la pasividad ante el estrés. Referencia: Lazarus & Folkman (1984).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_lazarus_siguiente_paso",
+          "nombre": "Focalización en siguiente paso",
+          "texto": "Microintervención que reduce la sobrecarga centrando la atención en la siguiente acción concreta, facilitando el paso de la evaluación a la acción. Referencia: Lazarus & Folkman (1984).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "preventive-cognitive-therapy-bockting-2005",
+      "modelLabel": "Preventive Cognitive Therapy (PCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Claudi L. H. Bockting",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_pct_practica_conductual",
+          "nombre": "Práctica conductual de nuevas actitudes",
+          "texto": "Procedimiento en el que los pacientes aplican activamente en su vida cotidiana las actitudes alternativas desarrolladas en sesión, mediante tareas y experimentos conductuales. Esta práctica permite consolidar el cambio cognitivo a través de experiencia directa, reduciendo la probabilidad de reactivación automática de patrones antiguos. Referencia: Bockting et al. (2005, sesiones 6–8) :contentReference[oaicite:4]{index=4}.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_pct_prevencion_recaidas",
+          "nombre": "Formulación de estrategias de prevención de recaídas",
+          "texto": "Procedimiento final en el que se integran los aprendizajes del tratamiento en un conjunto de estrategias concretas para prevenir recaídas, incluyendo identificación de señales tempranas, uso de habilidades cognitivas y planificación de acciones específicas ante activación. Este módulo traduce el trabajo cognitivo en un sistema operativo de prevención a largo plazo. Referencia: Bockting et al. (2005, sesiones finales) :contentReference[oaicite:7]{index=7}.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pct_practica_actitudes",
+          "nombre": "Práctica conductual de nuevas actitudes",
+          "texto": "Ensayo deliberado en la vida cotidiana de las nuevas actitudes desarrolladas en sesión, permitiendo consolidar cambios cognitivos a través de experiencia directa. Este componente convierte la reestructuración cognitiva en aprendizaje experiencial. Referencia: Bockting et al. (2005, sesiones 6–8) :contentReference[oaicite:2]{index=2}.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pct_plan_accion",
+          "nombre": "Construcción de plan de acción ante señales tempranas",
+          "texto": "Definición concreta de pasos a seguir cuando se detectan señales iniciales de recaída, incluyendo qué hacer, cuándo y cómo. Este micro convierte la conciencia en acción preventiva inmediata. Referencia: Bockting et al. (2005).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
@@ -2253,6 +2410,36 @@
           "codigo": "m_exposicionVivo_marks_planEntreSesiones",
           "nombre": "Planificación anticipada de práctica entre sesiones",
           "texto": "Antes de cerrar sesión, se fija fecha, lugar y condiciones concretas de la siguiente autoexposición, reduciendo ambigüedad y aumentando probabilidad de ejecución real. (Marks, 1978).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "human-sexual-response-masters-johnson-1966",
+      "modelLabel": "Human Sexual Response",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "William H. Masters; Virginia E. Johnson",
+      "modelYear": 1966,
+      "items": [
+        {
+          "codigo": "p_mj_entrenamiento_control_eyaculatorio",
+          "nombre": "Entrenamiento manipulativo para control eyaculatorio",
+          "texto": "Procedimiento específico para la eyaculación precoz en el que la pareja trabaja directamente sobre la estimulación peneana bajo condiciones controladas, abandonando el patrón de “no tocar” y sustituyéndolo por un aprendizaje activo del nivel de excitación masculina. La lógica clínica consiste en que el hombre deje de vivir la excitación como un salto brusco e incontrolable hacia la inevitabilidad eyaculatoria, y la pareja aprenda a reconocer, modular y sostener esa excitación sin precipitación. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_intromision_no_demandante",
+          "nombre": "Progresión desde control manipulativo a intromisión no demandante",
+          "texto": "Procedimiento de avance terapéutico en el que, una vez consolidado el control con la squeeze technique en condiciones manipulativas, la pareja pasa a una intromisión no demandante y posteriormente a un proceso coital cada vez más controlado. El principio es que el control eyaculatorio no se da por adquirido por comprenderlo intelectualmente, sino por trasladarlo gradualmente desde la estimulación manual al contexto coital real, sin reinstaurar prisa, autoobservación ni meta de rendimiento. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mj_bloqueo_meta",
+          "nombre": "Bloquear intentos de coito o orgasmo prematuro",
+          "texto": "Microintervención correctiva en la que el terapeuta detecta y detiene la tendencia a convertir los ejercicios en intentos de coito o búsqueda de orgasmo, redirigiendo la tarea hacia el objetivo terapéutico original de exploración sensorial sin meta. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }
@@ -4633,6 +4820,50 @@
           "codigo": "m_struct_repeticion",
           "nombre": "Repetición dirigida del enactment",
           "texto": "Hacer repetir una interacción con modificaciones para consolidar la nueva estructura.",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "feedback-informed-treatment-duncan-miller-2000",
+      "modelLabel": "Feedback-Informed Treatment (FIT)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Barry L. Duncan; Scott D. Miller",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_fit_ajuste",
+          "nombre": "Ajuste adaptativo del tratamiento",
+          "texto": "Procedimiento que consiste en modificar de forma activa el enfoque terapéutico cuando los datos de resultado indican falta de progreso, incluyendo cambios en técnicas, ritmo, foco, intensidad o incluso modelo de intervención, priorizando siempre la utilidad percibida por el cliente frente a la fidelidad a un protocolo, y asumiendo la responsabilidad clínica de no continuar un tratamiento que no esté funcionando (Duncan, Miller & Sparks, 2004; Miller & Duncan, 2000).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_integracion",
+          "nombre": "Integración transteórica de técnicas",
+          "texto": "Procedimiento que permite utilizar técnicas de diferentes modelos psicoterapéuticos en función de su ajuste al cliente, siempre subordinadas al feedback de resultado y alianza, evitando la fidelidad rígida a un enfoque único y priorizando la eficacia pragmática en el caso concreto (Duncan, Miller & Sparks, 2004).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fit_conectar_metas",
+          "nombre": "Conectar intervención con metas del cliente",
+          "texto": "Microintervención que vincula explícitamente lo que se hace en sesión con las metas definidas por el cliente, aumentando la coherencia del proceso y la percepción de utilidad de la terapia (Duncan, Miller & Sparks, 2004).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_cambio_estrategia",
+          "nombre": "Proponer cambio de estrategia",
+          "texto": "Microintervención que introduce de forma explícita la posibilidad de probar un enfoque diferente cuando el actual no está funcionando, basándose en el feedback del cliente (Miller & Duncan, 2000).",
+          "sub": "AG_compromisoConductual",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_impacto_real",
+          "nombre": "Explorar impacto fuera de sesión",
+          "texto": "Microintervención que conecta el trabajo en sesión con cambios concretos en la vida cotidiana del cliente, asegurando que el progreso es funcional y no solo intra-sesión (Miller et al., 2003).",
           "sub": "AG_compromisoConductual",
           "tipo": "micro"
         }

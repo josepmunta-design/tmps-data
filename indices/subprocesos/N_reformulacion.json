@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_reformulacion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 124,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 130,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -430,6 +430,71 @@
       ]
     },
     {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_actualizacion_significados",
+          "nombre": "Actualización de significados (appraisals)",
+          "texto": "Procedimiento central que consiste en identificar y modificar interpretaciones negativas idiosincrásicas sobre el trauma, el self o el mundo, mediante evidencia correctiva, reestructuración cognitiva y experiencias terapéuticas. El objetivo es reducir el sentido de amenaza actual (Ehlers & Clark, 2000).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ehlers_memory_updating",
+          "nombre": "Actualización de la memoria traumática durante la evocación",
+          "texto": "Procedimiento específico que introduce información correctiva directamente en los momentos más intensos del recuerdo (hot spots), modificando el significado emocional del evento mientras la memoria está activada. Es un mecanismo central de cambio en el modelo (Ehlers & Clark, 2000).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ehlers_hotspots",
+          "nombre": "Trabajo con puntos calientes (hot spots)",
+          "texto": "Procedimiento centrado en identificar los momentos de máxima carga emocional dentro del trauma y trabajar directamente sobre ellos, ya que condensan las interpretaciones clave que mantienen el sentido de amenaza (Ehlers & Clark, 2000).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ehlers_discriminacion",
+          "nombre": "Discriminación entre pasado y presente (Then vs Now)",
+          "texto": "Procedimiento que entrena al paciente a diferenciar entre estímulos asociados al trauma y la situación actual, reduciendo la generalización del miedo y la activación automática de la memoria traumática (Ehlers & Clark, 2000).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ehlers_updating",
+          "nombre": "Actualización de significado dentro del recuerdo",
+          "texto": "Durante la evocación del trauma, se introduce información correctiva directamente en los momentos clave (hot spots), modificando el significado emocional del recuerdo mientras está activado, lo que reduce su impacto y su vivencia como amenaza actual (Ehlers & Clark, 2000).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ehlers_info_correctiva",
+          "nombre": "Introducción de información correctiva",
+          "texto": "Se incorporan datos relevantes no procesados durante el trauma (contexto, probabilidades, recursos, intenciones), facilitando la modificación de interpretaciones disfuncionales (Ehlers & Clark, 2000).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ehlers_intrusiones",
+          "nombre": "Reetiquetado de intrusiones como recuerdos",
+          "texto": "Consiste en ayudar al paciente a identificar las intrusiones como recuerdos del pasado en lugar de señales de peligro actual, reduciendo su impacto emocional y su interpretación amenazante (Ehlers & Clark, 2000).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ehlers_then_now",
+          "nombre": "Discriminación pasado–presente en vivo",
+          "texto": "Microintervención en la que se comparan activamente las condiciones del trauma con la situación actual para reducir la generalización del miedo y la activación automática de la memoria (Ehlers & Clark, 2000).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "ert-mennin-fresco-2013",
       "modelLabel": "ERT – Emotion Regulation Therapy",
       "modelGrupo": "Cognitivo",
@@ -548,6 +613,99 @@
           "texto": "Procedimiento de encuadre y uso del grupo para normalizar recaídas, aprender por resonancia y sostener la práctica mediante co-regulación (escuchar, compartir dificultades, validación). Se establecen reglas de seguridad y se usa el grupo como contexto de mantenimiento del compromiso sin convertirlo en terapia interpersonal abierta. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "N_reformulacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_psicoeducacion_respuesta_sexual_ansiedad_rendimiento",
+          "nombre": "Psicoeducación sobre respuesta sexual, variabilidad y ciclo ansiedad-rendimiento",
+          "texto": "Procedimiento destinado a explicar la respuesta sexual como un proceso psicofisiológico variable, sensible al contexto, al significado, a la atención y al estado emocional, reduciendo interpretaciones moralizantes o defectológicas de las dificultades sexuales. Se trabaja el ciclo en el que la presión por funcionar activa ansiedad, la ansiedad desplaza la atención hacia señales de fallo, la monitorización reduce excitación y el resultado confirma la expectativa negativa, generando evitación posterior. La psicoeducación busca normalizar oscilaciones de deseo, excitación y orgasmo, introducir una explicación plausible del problema y aumentar expectativa de cambio mediante una formulación comprensible. Referencia: Barlow (1986); Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_reestructuracion_creencias_sexuales",
+          "nombre": "Reestructuración de creencias sexuales, mitos y reglas de rendimiento",
+          "texto": "Procedimiento orientado a identificar, examinar y flexibilizar creencias sexuales rígidas sobre deseo espontáneo, erección permanente, orgasmo obligatorio, simetría del deseo, iniciativa sexual, normalidad corporal, deber de satisfacer siempre a la pareja o equivalencia entre dificultad sexual y falta de amor o atractivo. Se emplean diálogo socrático, revisión de evidencia, psicoeducación, experimentos conductuales y construcción de reglas sexuales más realistas, contextuales y compatibles con la variabilidad humana. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra, Ortega & Zubeidat (2003).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_exposicion_interoceptiva_sensaciones_sexuales",
+          "nombre": "Exposición interoceptiva a sensaciones sexuales temidas",
+          "texto": "Procedimiento específico para pacientes que temen sensaciones corporales vinculadas a la excitación, pérdida de control, erección parcial, lubricación insuficiente, aumento de temperatura, tensión genital, palpitaciones, rubor, dolor anticipado o señales corporales ambiguas. Mediante ejercicios graduados de observación y permanencia con sensaciones internas, se reduce la interpretación catastrófica del cuerpo y se favorece una relación más segura con la activación sexual. Referencia: Barlow (1986); Barlow (2002); Meston & Bradford (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_excitacion_ereccion",
+          "nombre": "Intervención cognitivo-conductual en dificultades de excitación y erección",
+          "texto": "Procedimiento orientado a dificultades de excitación genital, lubricación o erección mantenidas por vigilancia corporal, ansiedad anticipatoria, comprobaciones repetidas, evitación de estímulos eróticos y significados de fracaso personal. Se trabaja reducción de chequeo genital, focalización sensorial, reatribución de variaciones normales de excitación, exposición gradual a intimidad, revisión de creencias de rendimiento y, cuando procede, coordinación médica sin convertir la respuesta corporal en una prueba de valía. Referencia: Barlow (1986); Meston & Bradford (2007); Masters & Johnson (1970).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_nominar_ciclo_rendimiento_ansiedad",
+          "nombre": "Nombrar el ciclo rendimiento-ansiedad",
+          "texto": "Microintervención en la que el terapeuta ayuda a poner nombre al bucle concreto que aparece antes o durante la actividad sexual: anticipación de fallo, vigilancia corporal, ansiedad, reducción de excitación, confirmación del temor y evitación posterior. Nombrarlo transforma un problema vivido como defecto personal en una secuencia modificable, disminuye vergüenza y prepara el análisis funcional. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_normalizar_fluctuaciones",
+          "nombre": "Normalizar fluctuaciones de deseo y excitación",
+          "texto": "Microintervención psicoeducativa que ubica las variaciones de deseo, erección, lubricación, orgasmo o intensidad erótica dentro de la respuesta sexual humana normal y contextual. Su efecto clínico es disminuir catastrofización y prevenir que un episodio aislado se convierta en identidad disfuncional o profecía de fracaso. Referencia: Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_distinguir_deseo_espontaneo_responsivo",
+          "nombre": "Distinguir deseo espontáneo y deseo responsivo",
+          "texto": "Microintervención psicoeducativa que diferencia el deseo que aparece antes del contacto de aquel que emerge cuando existen condiciones de seguridad, conexión y estimulación adecuada. Reduce la creencia de que el deseo auténtico debe surgir siempre de forma espontánea y abre vías conductuales para facilitarlo. Referencia: Meston & Bradford (2007); Meston & Buss (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_reatribuir_contexto",
+          "nombre": "Reatribuir un episodio de dificultad a variables contextuales",
+          "texto": "Microintervención que reconstruye un episodio sexual difícil considerando cansancio, alcohol, estrés, presión, conflicto, dolor, falta de tiempo, miedo o distracción, en lugar de atribuirlo automáticamente a incapacidad estable o falta de deseo. Esta reatribución reduce desesperanza y evita generalización excesiva. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_separar_intimidad_obligacion",
+          "nombre": "Separar intimidad de obligación sexual",
+          "texto": "Microintervención que ayuda a diferenciar gestos de intimidad —abrazos, caricias, dormir juntos, ternura, conversación— de la obligación de progresar hacia sexo. Esta distinción reduce evitación de la cercanía cuando la persona teme que cualquier aproximación implique exigencia sexual. Referencia: Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_lenguaje_descriptivo_no_evaluativo",
+          "nombre": "Usar lenguaje descriptivo en vez de evaluativo",
+          "texto": "Microintervención que sustituye formulaciones evaluativas como ‘fatal’, ‘ridículo’ o ‘fracaso’ por descripciones observables: ‘perdí excitación al pensar que tenía que responder’, ‘me tensé cuando anticipé dolor’. El lenguaje descriptivo reduce vergüenza y aumenta capacidad de intervención. Referencia: Barlow (1986); Sierra et al. (2012).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_revisar_sueno_fatiga",
+          "nombre": "Revisar sueño, fatiga y carga vital antes de atribuir falta de deseo",
+          "texto": "Microintervención que comprueba sueño, cansancio, sobrecarga, crianza, horarios o estrés antes de interpretar deseo bajo como defecto sexual o deterioro de la relación. Aporta una atribución contextual y evita psicologizar fenómenos sostenidos por condiciones de viabilidad alteradas. Referencia: Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_nominar_demanda_retirada",
+          "nombre": "Nombrar el ciclo demanda-retirada en la pareja",
+          "texto": "Microintervención que identifica cómo una persona aumenta demanda, presión o queja mientras la otra se distancia, evita o se desconecta, reforzándose mutuamente. Nombrar el ciclo desplaza el foco de culpa individual a patrón relacional modificable. Referencia: Meston & Bradford (2007); Masters & Johnson (1970).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -743,6 +901,66 @@
           "codigo": "m_dugas_normalizar_incertidumbre",
           "nombre": "Normalizar la incertidumbre",
           "texto": "Intervención breve que sitúa la incertidumbre como condición universal y no como señal de peligro, reduciendo su carga emocional y su interpretación catastrófica. Referencia: Dugas et al. (1998).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_reappraisal",
+          "nombre": "Reevaluación cognitiva del estresor (reappraisal)",
+          "texto": "Procedimiento orientado a modificar el significado atribuido a la situación estresante mediante reinterpretaciones más ajustadas, flexibles o funcionales, transformando la percepción de amenaza en desafío o reduciendo la intensidad del daño anticipado. Este proceso no busca negar la realidad, sino ajustar la evaluación para disminuir la activación emocional y facilitar respuestas más adaptativas. Referencia: Lazarus (1999).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_lazarus_reencuadre_desafio",
+          "nombre": "Reencuadre de amenaza a desafío",
+          "texto": "Microintervención que transforma la percepción de una situación de amenaza a desafío manejable, modificando el significado emocional sin negar la dificultad objetiva. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_lazarus_sobreestimacion",
+          "nombre": "Detección de sobreestimación de amenaza",
+          "texto": "Microintervención que identifica cuándo la persona está amplificando el peligro percibido más allá de la evidencia, facilitando ajustes cognitivos más realistas. Referencia: Lazarus & Folkman (1984).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "preventive-cognitive-therapy-bockting-2005",
+      "modelLabel": "Preventive Cognitive Therapy (PCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Claudi L. H. Bockting",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_pct_modificacion_actitudes",
+          "nombre": "Cuestionamiento y modificación de actitudes disfuncionales",
+          "texto": "Procedimiento orientado a cuestionar la validez, utilidad y rigidez de las actitudes disfuncionales identificadas, utilizando técnicas cognitivas como el cuestionamiento socrático. A diferencia de la terapia en fase aguda, el foco está en debilitar estructuras cognitivas estables que predisponen a recaídas, más que en aliviar malestar inmediato. Referencia: Bockting et al. (2005) :contentReference[oaicite:2]{index=2}.",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pct_socratico_actitudes",
+          "nombre": "Cuestionamiento socrático focalizado en actitudes",
+          "texto": "Exploración guiada de la validez, utilidad y consecuencias de actitudes disfuncionales residuales mediante preguntas dirigidas. A diferencia de la CT clásica, el foco no está tanto en pensamientos automáticos sino en creencias más estables que predisponen a recaídas. Referencia: Bockting et al. (2005) :contentReference[oaicite:1]{index=1}.",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pct_reformulacion_estado",
+          "nombre": "Reformulación de pensamientos activados por el estado de ánimo",
+          "texto": "Reinterpretación de pensamientos negativos que emergen en estados de ánimo bajos, ayudando a romper la asociación automática entre disforia y cognición depresiva, considerada uno de los mecanismos clave de recaída. Referencia: Bockting et al. (2005); Segal et al. (2002).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }
@@ -1207,6 +1425,29 @@
           "codigo": "m_autocontrol_plan_recaida_contingencias",
           "nombre": "Preparar plan de recaída como gestión de contingencias",
           "texto": "Microintervención que define por adelantado qué hacer tras un desliz (cómo registrar, qué ajuste aplicar, qué reforzar al día siguiente) para evitar abandono por ‘fracaso’; se trata la recaída como dato funcional que requiere rediseño de estímulos/contingencias, no como defecto personal. Referencia: Kanfer & Karoly (1972).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "human-sexual-response-masters-johnson-1966",
+      "modelLabel": "Human Sexual Response",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "William H. Masters; Virginia E. Johnson",
+      "modelYear": 1966,
+      "items": [
+        {
+          "codigo": "p_mj_roundtable",
+          "nombre": "Roundtable clínico de formulación y psicoeducación",
+          "texto": "Procedimiento conjunto en el que los coterapeutas presentan a la pareja una síntesis interpretativa de la información recogida, relacionando historia personal y marital, miedos de rendimiento, errores de comunicación, mitos sexuales y patrón actual de disfunción. La roundtable funciona como espejo clínico objetivo: clarifica el problema, corrige malentendidos, coloca la sexualidad de nuevo en su contexto natural y prepara a la pareja para entender por qué las siguientes tareas no buscan “rendir”, sino reconstruir una experiencia sexual viable. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mj_reducir_autoobservacion",
+          "nombre": "Reducir autoobservación crítica durante el contacto",
+          "texto": "Intervención focalizada en detectar y disminuir el diálogo interno evaluativo durante la actividad sexual, ayudando a la persona a salir del rol de observador crítico y volver a una participación experiencial directa en la interacción corporal. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }
@@ -3394,6 +3635,29 @@
           "codigo": "m_canevaro_separacion_cuidado",
           "nombre": "Reencuadre de separación como acto de cuidado",
           "texto": "Microintervención que reformula la diferenciación no como abandono o traición sino como movimiento evolutivo saludable que puede beneficiar al sistema completo, reduciendo culpa y facilitando coherencia identitaria. Este énfasis en separación evolutiva marca diferencia respecto a la neutralidad milanesa clásica. Referencia: Canevaro (2012).",
+          "sub": "N_reformulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "feedback-informed-treatment-duncan-miller-2000",
+      "modelLabel": "Feedback-Informed Treatment (FIT)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Barry L. Duncan; Scott D. Miller",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_fit_feedback_dialogo",
+          "nombre": "Conversación clínica basada en feedback",
+          "texto": "Procedimiento que transforma los datos de ORS y SRS en una conversación clínica abierta, donde el terapeuta invita al cliente a explicar el significado de sus puntuaciones, validar su experiencia y co-construir decisiones terapéuticas, evitando un uso mecánico de las escalas y promoviendo un diálogo honesto sobre progreso, expectativas, preferencias y posibles cambios en el enfoque, lo que convierte el feedback en un mecanismo activo de regulación del proceso terapéutico (Duncan, Miller & Sparks, 2004).",
+          "sub": "N_reformulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fit_explorar_puntuacion",
+          "nombre": "Explorar significado de la puntuación",
+          "texto": "Microintervención que implica preguntar al cliente qué significa para él la puntuación dada en ORS o SRS, evitando interpretaciones del terapeuta y permitiendo que el propio cliente construya el sentido del dato y sus implicaciones clínicas (Duncan, Miller & Sparks, 2004).",
           "sub": "N_reformulacion",
           "tipo": "micro"
         }

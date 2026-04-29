@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_aceptacion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 76,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 80,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -329,6 +329,50 @@
       ]
     },
     {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_willingness",
+          "nombre": "Entrenamiento en aceptación y disposición (willingness)",
+          "texto": "Procedimiento central dirigido a desarrollar disposición a experimentar pensamientos, emociones y sensaciones sin intentar modificarlos, como condición para actuar en dirección a valores, utilizando metáforas y ejercicios experienciales. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_abbt_mindfulness_emociones",
+          "nombre": "Mindfulness de emociones",
+          "texto": "Ejercicio dirigido a observar emociones directamente en el cuerpo y la experiencia, sin evitarlas ni modificarlas, favoreciendo aceptación y regulación. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_swamp",
+          "nombre": "Metáfora del pantano (swamp metaphor)",
+          "texto": "Metáfora que ilustra la necesidad de atravesar experiencias desagradables para avanzar hacia lo valioso, promoviendo disposición a experimentar malestar en función de valores. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_guest_house",
+          "nombre": "Metáfora del 'Guest House'",
+          "texto": "Uso del poema de Rumi para facilitar una actitud de apertura hacia todas las experiencias internas, promoviendo aceptación sin rechazo ni sobreidentificación. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_inviting_difficulty",
+          "nombre": "Ejercicio de invitar una dificultad",
+          "texto": "Ejercicio en el que el paciente se abre intencionalmente a una emoción o sensación difícil, facilitando tolerancia y reducción de evitación. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "act-hayes-strosahl-wilson-1999",
       "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
       "modelGrupo": "Cognitivo",
@@ -569,6 +613,36 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_exposicion_interoceptiva_sensaciones_sexuales",
+          "nombre": "Exposición interoceptiva a sensaciones sexuales temidas",
+          "texto": "Procedimiento específico para pacientes que temen sensaciones corporales vinculadas a la excitación, pérdida de control, erección parcial, lubricación insuficiente, aumento de temperatura, tensión genital, palpitaciones, rubor, dolor anticipado o señales corporales ambiguas. Mediante ejercicios graduados de observación y permanencia con sensaciones internas, se reduce la interpretación catastrófica del cuerpo y se favorece una relación más segura con la activación sexual. Referencia: Barlow (1986); Barlow (2002); Meston & Bradford (2007).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_dificultades_orgasmicas",
+          "nombre": "Intervención cognitivo-conductual en dificultades orgásmicas",
+          "texto": "Procedimiento centrado en dificultades para alcanzar el orgasmo, orgasmo retardado o bloqueo orgásmico asociado a control excesivo, vergüenza, desconocimiento del patrón de estimulación, distracción, miedo a perder el control o presión por llegar. Incluye autoexploración graduada, identificación de claves excitatorias, entrenamiento atencional, comunicación de estimulación preferida, reducción de metas obligatorias y exposición a sensaciones de aumento de excitación sin interrupción defensiva. Referencia: Masters & Johnson (1970); Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_permanecer_excitacion_incompleta",
+          "nombre": "Practicar permanencia con excitación incompleta",
+          "texto": "Microintervención de exposición en la que la persona permanece con una excitación parcial, fluctuante o incompleta sin interrumpir, comprobar ni concluir que el encuentro ha fracasado. Aumenta tolerancia a la variabilidad corporal y debilita la regla de que la respuesta sexual debe ser inmediata y lineal. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "modelo-evitacion-cognitiva-borkovec",
       "modelLabel": "Modelo de evitación cognitiva (TAG)",
       "modelGrupo": "Cognitivo",
@@ -651,6 +725,29 @@
           "codigo": "m_dugas_sostener_duda",
           "nombre": "Sostener duda sin respuesta",
           "texto": "Microintervención que entrena al paciente a permanecer con una pregunta abierta sin responderla, desarrollando tolerancia directa a la ambigüedad sin recurrir a preocupación o evitación. Referencia: Dugas & Robichaud (2007).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_coping_emocion",
+          "nombre": "Entrenamiento en afrontamiento centrado en la emoción",
+          "texto": "Procedimiento orientado a desarrollar estrategias para regular la respuesta emocional cuando la situación no es modificable directamente, incluyendo aceptación, distanciamiento, expresión emocional o regulación fisiológica. Permite reducir la sobrecarga emocional sin necesidad de cambiar el estresor, aumentando la tolerancia y flexibilidad ante experiencias inevitables. Referencia: Lazarus & Folkman (1984).",
+          "sub": "RE_aceptacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_lazarus_validacion",
+          "nombre": "Validación emocional contextual",
+          "texto": "Intervención que legitima la emoción en función de la evaluación realizada, ayudando a la persona a entender que su reacción es coherente con el significado atribuido. Referencia: Lazarus (1999).",
           "sub": "RE_aceptacion",
           "tipo": "micro"
         }
@@ -1840,6 +1937,22 @@
           "texto": "El corte emocional se entiende como una solución defensiva: distancia extrema para manejar ansiedad, que suele mantener dependencia invisible y reactividad latente. La intervención busca restablecer contacto gradual, directo y regulado, sin caer en fusión. Esto implica decisiones pequeñas pero consistentes: comunicaciones neutrales, encuentros breves, y práctica de posición-yo. Se trabaja para que la conexión sea posible sin que el sistema ‘se trague’ al individuo.",
           "sub": "RE_aceptacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "feedback-informed-treatment-duncan-miller-2000",
+      "modelLabel": "Feedback-Informed Treatment (FIT)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Barry L. Duncan; Scott D. Miller",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_fit_normalizar_estancamiento",
+          "nombre": "Normalizar falta de progreso",
+          "texto": "Microintervención que valida que no todos los procesos terapéuticos son lineales, reduciendo frustración y facilitando una revisión abierta del enfoque sin vivirse como fracaso (Duncan, Miller & Sparks, 2004).",
+          "sub": "RE_aceptacion",
+          "tipo": "micro"
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_evocacion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 59,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 62,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -128,6 +128,29 @@
       ]
     },
     {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_elaboracion_memoria",
+          "nombre": "Elaboración de la memoria traumática (reliving/narrativa)",
+          "texto": "Procedimiento que implica activar y reconstruir la memoria traumática mediante reliving o narrativa detallada, con el objetivo de transformar una memoria fragmentada en un recuerdo coherente y contextualizado en el pasado, reduciendo su reactivación automática (Ehlers & Clark, 2000).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ehlers_reliving",
+          "nombre": "Activación guiada de la memoria traumática",
+          "texto": "Consiste en facilitar la evocación detallada del evento traumático mediante reliving o narrativa en presente, permitiendo acceder a la memoria emocional y activarla para su posterior procesamiento (Ehlers & Clark, 2000).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "ert-mennin-fresco-2013",
       "modelLabel": "ERT – Emotion Regulation Therapy",
       "modelGrupo": "Cognitivo",
@@ -145,6 +168,22 @@
           "codigo": "p_ert_imagineria_proactiva",
           "nombre": "Imaginería de proacción orientada a valores",
           "texto": "Procedimiento avanzado donde se ensayan mediante imaginería vívida situaciones futuras significativas que activan tanto miedo como deseo de crecimiento, entrenando una configuración motivacional más equilibrada. El paciente practica responder desde valores personales en presencia de activación emocional, fortaleciendo agencia y coherencia identitaria prospectiva. (Mennin & Fresco, 2014; Fresco et al., 2016).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_focalizacion_sensorial_sin_rendimiento",
+          "nombre": "Focalización sensorial sin exigencia de rendimiento",
+          "texto": "Procedimiento derivado del sensate focus y actualizado dentro de una lógica cognitivo-conductual moderna, en el que la pareja o la persona realiza ejercicios graduados de contacto corporal centrados en sensaciones, temperatura, textura, presión, ritmo y placer, retirando temporalmente objetivos como penetración, erección, lubricación u orgasmo. Su función es desplazar la sexualidad de una tarea evaluativa a una experiencia sensorial segura, reducir el espectador interno, aumentar discriminación corporal y reconstruir asociaciones positivas con la intimidad. Referencia: Masters & Johnson (1970); Barlow (1986); Meston & Bradford (2007).",
           "sub": "AP_evocacion",
           "tipo": "procedimiento"
         }
@@ -947,6 +986,29 @@
           "codigo": "m_herman_dosificacion",
           "nombre": "Dosificación del recuerdo",
           "texto": "Ajuste continuo de la intensidad y duración del contacto con material traumático para evitar desbordamiento, manteniendo la activación dentro de la ventana de tolerancia. Referencia: Herman, J. L. (1992); Cloitre et al. (2011).",
+          "sub": "AP_evocacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "narrative-exposure-therapy-net-schauer-neuner-elbert-2005",
+      "modelLabel": "Narrative Exposure Therapy (NET)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Maggie Schauer; Frank Neuner; Thomas Elbert",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_net_exposicion_narrativa",
+          "nombre": "Exposición narrativa cronológica de la vida",
+          "texto": "Procedimiento central en el que se recorre la línea de vida de forma secuencial, narrando en detalle los eventos significativos, especialmente los traumáticos, activando tanto componentes emocionales como contextuales. Esta exposición repetida permite procesar las memorias y avanzar hacia su integración (Schauer et al., 2011).",
+          "sub": "AP_evocacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_net_presente",
+          "nombre": "Narración en primera persona y tiempo presente",
+          "texto": "Se invita al paciente a narrar los eventos traumáticos en primera persona y en presente para activar la memoria emocional y facilitar el acceso a la experiencia sensorial (Schauer et al., 2011).",
           "sub": "AP_evocacion",
           "tipo": "micro"
         }

@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_prevEvitacion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 63,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 68,
   "modelos": [
     {
       "modelId": "meditacion-seon-zen-contextos-terapeuticos-corea-1985",
@@ -207,6 +207,50 @@
       ]
     },
     {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_evaluacion_funcional",
+          "nombre": "Evaluación funcional de la ansiedad y la evitación",
+          "texto": "Procedimiento inicial orientado a analizar cómo la ansiedad, la preocupación y las respuestas de evitación experiencial operan en la vida del paciente, identificando relaciones entre experiencias internas, intentos de control y restricción conductual. Incluye evaluación de interferencia en vida valiosa y patrones de reacción a experiencias internas. Referencia: Hayes-Skelton, Orsillo & Roemer (2013).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_abbt_monitorizacion",
+          "nombre": "Entrenamiento en monitorización de experiencias internas",
+          "texto": "Procedimiento continuo de registro y observación de pensamientos, emociones, sensaciones y conductas, diferenciando primeras reacciones (experiencia directa) y segundas reacciones (intentos de control, evitación o juicio). Facilita conciencia del ciclo de ansiedad y aumenta flexibilidad de respuesta. Referencia: Hayes-Skelton et al. (2013), tabla de sesiones.",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_abbt_control_experiencial",
+          "nombre": "Identificación y análisis de estrategias de control",
+          "texto": "Procedimiento orientado a identificar intentos de controlar pensamientos, emociones o sensaciones (supresión, distracción, preocupación, etc.) y analizar sus efectos paradójicos en el mantenimiento del malestar, promoviendo insight sobre los límites del control interno. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_abbt_obstaculos",
+          "nombre": "Identificación y abordaje de obstáculos internos y externos",
+          "texto": "Procedimiento dirigido a detectar barreras que dificultan la acción basada en valores, incluyendo emociones, pensamientos y condiciones externas, desarrollando estrategias de afrontamiento basadas en mindfulness, aceptación y resolución de problemas. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_abbt_control_tracking",
+          "nombre": "Exploración de intentos de control",
+          "texto": "Intervención de análisis en la que el paciente identifica estrategias utilizadas para controlar pensamientos o emociones y observa sus efectos paradójicos en el malestar. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "act-hayes-strosahl-wilson-1999",
       "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
       "modelGrupo": "Cognitivo",
@@ -385,6 +429,36 @@
       ]
     },
     {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_estrategias_mantenimiento",
+          "nombre": "Identificación y eliminación de estrategias de mantenimiento",
+          "texto": "Procedimiento orientado a detectar y modificar estrategias como evitación, supresión, hipervigilancia o conductas de seguridad, que impiden la elaboración de la memoria y la actualización de significados, manteniendo el trastorno (Ehlers & Clark, 2000).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ehlers_seguridad",
+          "nombre": "Detección de conductas de seguridad",
+          "texto": "Microintervención centrada en identificar conductas utilizadas para prevenir el peligro percibido, que en realidad mantienen el problema al impedir la corrección de creencias (Ehlers & Clark, 2000).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ehlers_evitacion",
+          "nombre": "Interrupción de evitación y supresión",
+          "texto": "Consiste en señalar y reducir estrategias de evitación cognitiva o conductual que impiden la elaboración de la memoria traumática y la actualización de significados (Ehlers & Clark, 2000).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "ert-mennin-fresco-2013",
       "modelLabel": "ERT – Emotion Regulation Therapy",
       "modelGrupo": "Cognitivo",
@@ -480,6 +554,71 @@
           "texto": "Procedimiento para mapear qué hace la persona cuando se siente mal (evitar, aislarse, rumiar, anestesiarse) y cómo eso alivia a corto plazo pero mantiene a largo plazo. Se entrenan alternativas basadas en aproximación mindful (permitir sentir, volver al cuerpo, acción pequeña con sentido) y se refuerza el aprendizaje por evidencia personal. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "RE_prevEvitacion",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_exposicion_gradual_situaciones_evitas",
+          "nombre": "Exposición gradual a situaciones sexuales evitadas",
+          "texto": "Procedimiento conductual que organiza una jerarquía de acercamiento progresivo a situaciones sexuales o íntimas evitadas, desde conversaciones eróticas o contacto no genital hasta prácticas más activadoras, siempre retirando metas de rendimiento prematuras y priorizando permanencia tolerable, comunicación y aprendizaje correctivo. La exposición busca debilitar la asociación entre intimidad y amenaza, reducir evitación anticipatoria y generar experiencias nuevas en las que la persona comprueba que puede sostener deseo, excitación, vulnerabilidad o límites sin quedar atrapada en fracaso o presión. Referencia: Barlow (1986); Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_excitacion_ereccion",
+          "nombre": "Intervención cognitivo-conductual en dificultades de excitación y erección",
+          "texto": "Procedimiento orientado a dificultades de excitación genital, lubricación o erección mantenidas por vigilancia corporal, ansiedad anticipatoria, comprobaciones repetidas, evitación de estímulos eróticos y significados de fracaso personal. Se trabaja reducción de chequeo genital, focalización sensorial, reatribución de variaciones normales de excitación, exposición gradual a intimidad, revisión de creencias de rendimiento y, cuando procede, coordinación médica sin convertir la respuesta corporal en una prueba de valía. Referencia: Barlow (1986); Meston & Bradford (2007); Masters & Johnson (1970).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_retirar_meta_rendimiento",
+          "nombre": "Retirar temporalmente la meta de penetración u orgasmo",
+          "texto": "Microintervención contractual en la que se acuerda explícitamente que durante un periodo o ejercicio la actividad sexual no tendrá como objetivo penetración, erección completa, lubricación suficiente u orgasmo. Esta retirada de meta reduce presión de rendimiento y permite reabrir contacto erótico sin convertir cada encuentro en una prueba. Referencia: Masters & Johnson (1970); Barlow (1986).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_identificar_conductas_seguridad",
+          "nombre": "Identificar conductas de seguridad sexuales",
+          "texto": "Microintervención que detecta estrategias usadas para prevenir el fallo, como evitar iniciar, comprobar erección o lubricación, acelerar el encuentro, fingir placer, beber para desinhibirse, usar fantasías desconectadas compulsivamente o interrumpir ante cualquier señal ambigua. Nombrarlas permite ver cómo alivian a corto plazo y mantienen el problema a largo plazo. Referencia: Barlow (1986); Barlow (2002).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_reducir_chequeo_genital",
+          "nombre": "Reducir chequeo genital durante el contacto",
+          "texto": "Microintervención que ayuda a disminuir comprobaciones repetidas sobre erección, lubricación, tensión, dolor o proximidad del orgasmo, sustituyéndolas por atención distribuida a sensaciones globales y contacto relacional. Reduce vigilancia corporal y facilita que la excitación emerja sin interrupciones evaluativas constantes. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_escalar_jerarquia_intimidad",
+          "nombre": "Escalar la jerarquía de intimidad en unidades pequeñas",
+          "texto": "Microintervención que divide una situación sexual evitada en pasos muy concretos y tolerables, como hablar de deseo, estar juntos sin móvil, caricias no genitales, desnudez parcial, contacto genital breve o práctica erótica específica. Evita saltos prematuros que reinstalan amenaza y permite aprendizaje gradual. Referencia: Barlow (1986); Masters & Johnson (1970).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_revisar_evitaciones_posteriores",
+          "nombre": "Revisar evitaciones posteriores al encuentro",
+          "texto": "Microintervención que identifica conductas posteriores a una experiencia sexual difícil, como distanciarse, no hablar, culparse, bromear defensivamente o evitar nuevos acercamientos. Permite intervenir sobre el mantenimiento del problema más allá del momento sexual propiamente dicho. Referencia: Barlow (1986); Masters & Johnson (1970).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_senales_tempranas_evitacion",
+          "nombre": "Identificar señales tempranas de evitación sexual",
+          "texto": "Microintervención que reconoce señales iniciales de evitación como cambiar de tema, acostarse más tarde, provocar discusión, mostrarse excesivamente ocupado o evitar contacto físico. Detectarlas antes de la retirada completa permite elegir una respuesta más consciente. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
         }
       ]
     },
@@ -633,6 +772,22 @@
           "codigo": "m_dugas_reducir_planificacion",
           "nombre": "Reducir planificación excesiva",
           "texto": "Microintervención que limita la planificación detallada orientada a eliminar incertidumbre, ayudando al paciente a tolerar variables no controladas en lugar de intentar anticiparlas todas. Referencia: Dugas & Robichaud (2007).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "m_lazarus_evitacion",
+          "nombre": "Identificar evitación emocional",
+          "texto": "Intervención breve para detectar cuándo la persona está evitando emociones asociadas al estrés, ayudándole a reconocer el patrón y abrir alternativas más adaptativas. Referencia: Lazarus (1999).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }
@@ -1179,6 +1334,29 @@
           "codigo": "m_exposicionVivo_marks_evitacionSutil",
           "nombre": "Identificación temprana de evitación sutil",
           "texto": "Se detectan microconductas como acortar recorrido, hacer tarea “a medias” o acelerar artificialmente, que preservan el patrón evitativo aunque formalmente parezca exposición. (Marks, 1978).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "human-sexual-response-masters-johnson-1966",
+      "modelLabel": "Human Sexual Response",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "William H. Masters; Virginia E. Johnson",
+      "modelYear": 1966,
+      "items": [
+        {
+          "codigo": "p_mj_suspension_temporal_actividad_sexual",
+          "nombre": "Suspensión temporal de actividad sexual específica",
+          "texto": "Procedimiento de control terapéutico inicial mediante el cual se pide a la pareja abstenerse temporalmente de la actividad sexual específica y de cualquier intento de culminación coital mientras se reorganiza la pauta interactiva. En el texto clínico esta suspensión sirve para retirar presión, frenar la compulsión por “demostrar” funcionamiento y abrir un espacio en el que el contacto corporal pueda dejar de estar sometido al examen del rendimiento. No es evitación del sexo, sino desactivación estratégica del objetivo que cronifica el problema. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_prevEvitacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mj_bloqueo_meta",
+          "nombre": "Bloquear intentos de coito o orgasmo prematuro",
+          "texto": "Microintervención correctiva en la que el terapeuta detecta y detiene la tendencia a convertir los ejercicios en intentos de coito o búsqueda de orgasmo, redirigiendo la tarea hacia el objetivo terapéutico original de exploración sensorial sin meta. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
           "sub": "RE_prevEvitacion",
           "tipo": "micro"
         }

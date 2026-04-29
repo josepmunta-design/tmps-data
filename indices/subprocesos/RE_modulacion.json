@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_modulacion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 140,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 146,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -575,6 +575,22 @@
       ]
     },
     {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_mindfulness_aplicado",
+          "nombre": "Aplicación de mindfulness en contextos emocionalmente activados",
+          "texto": "Procedimiento dirigido a aplicar habilidades mindfulness en situaciones reales de activación emocional, facilitando apertura, regulación y elección conductual en contextos de ansiedad, preocupación o conflicto interpersonal. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
       "modelId": "act-hayes-strosahl-wilson-1999",
       "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
       "modelGrupo": "Cognitivo",
@@ -741,6 +757,29 @@
       ]
     },
     {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_discriminacion",
+          "nombre": "Discriminación entre pasado y presente (Then vs Now)",
+          "texto": "Procedimiento que entrena al paciente a diferenciar entre estímulos asociados al trauma y la situación actual, reduciendo la generalización del miedo y la activación automática de la memoria traumática (Ehlers & Clark, 2000).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ehlers_then_now",
+          "nombre": "Discriminación pasado–presente en vivo",
+          "texto": "Microintervención en la que se comparan activamente las condiciones del trauma con la situación actual para reducir la generalización del miedo y la activación automática de la memoria (Ehlers & Clark, 2000).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "ert-mennin-fresco-2013",
       "modelLabel": "ERT – Emotion Regulation Therapy",
       "modelGrupo": "Cognitivo",
@@ -882,6 +921,50 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_dolor_sexual_evitacion",
+          "nombre": "Intervención cognitivo-conductual en dolor sexual y evitación asociada",
+          "texto": "Procedimiento aplicado cuando el dolor sexual, el miedo al dolor o la anticipación de penetración mantienen evitación, tensión muscular, hipervigilancia y pérdida de deseo. Integra psicoeducación, coordinación ginecológica o médica cuando procede, relajación y conciencia del suelo pélvico, jerarquías de aproximación, control de ritmo por parte de la persona afectada, comunicación de límites y retirada de objetivos coitales hasta que exista seguridad suficiente. Referencia: Meston & Bradford (2007); Masters & Johnson (1970); Sierra et al. (2012).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_senal_pausa_consensuada",
+          "nombre": "Marcar una palabra o señal de pausa consensuada",
+          "texto": "Microintervención que establece una señal breve para detener, ralentizar o cambiar el contacto sexual sin justificar extensamente la decisión. Aumenta control percibido, reduce miedo anticipatorio y permite aproximación gradual en dolor sexual, ansiedad, trauma o evitación. Referencia: Meston & Bradford (2007); Masters & Johnson (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_respiracion_bajar_urgencia",
+          "nombre": "Usar respiración para bajar urgencia evaluativa",
+          "texto": "Microintervención de regulación breve que utiliza respiración lenta y atención a la espiración para disminuir activación y urgencia de comprobar, rendir o escapar durante un encuentro o ejercicio sexual. Funciona como estabilizador inicial, no como técnica para forzar excitación. Referencia: Barlow (2002); Meston & Bradford (2007).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_detectar_presion_temporal",
+          "nombre": "Detectar presión temporal en el encuentro sexual",
+          "texto": "Microintervención que identifica prisa, sensación de examen, urgencia por llegar al orgasmo o presión por mantener excitación sin pausa. Al detectarla, se puede introducir ralentización, pausa, cambio de actividad o retirada temporal de metas. Referencia: Masters & Johnson (1970); Barlow (1986).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_ralentizar_contacto",
+          "nombre": "Ralentizar el ritmo del contacto",
+          "texto": "Microintervención conductual que reduce velocidad, intensidad o progresión del contacto para mantener la experiencia dentro de una ventana de tolerancia erótica. Es especialmente útil en dolor, ansiedad de ejecución, trauma sexual, eyaculación rápida o desconexión sensorial. Referencia: Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
       "modelLabel": "Modelo cognitivo de la fobia social",
       "modelGrupo": "Cognitivo",
@@ -977,6 +1060,22 @@
           "texto": "Microintervención que entrena al paciente a permanecer con una pregunta abierta sin responderla, desarrollando tolerancia directa a la ambigüedad sin recurrir a preocupación o evitación. Referencia: Dugas & Robichaud (2007).",
           "sub": "RE_modulacion",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_coping_emocion",
+          "nombre": "Entrenamiento en afrontamiento centrado en la emoción",
+          "texto": "Procedimiento orientado a desarrollar estrategias para regular la respuesta emocional cuando la situación no es modificable directamente, incluyendo aceptación, distanciamiento, expresión emocional o regulación fisiológica. Permite reducir la sobrecarga emocional sin necesidad de cambiar el estresor, aumentando la tolerancia y flexibilidad ante experiencias inevitables. Referencia: Lazarus & Folkman (1984).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -1787,6 +1886,99 @@
           "codigo": "m_exposicionVivo_marks_permanenciaProlongada",
           "nombre": "Exposición prolongada hasta descenso natural",
           "texto": "Se mantiene la exposición el tiempo suficiente para observar fluctuación y eventual descenso espontáneo de la activación, favoreciendo aprendizaje experiencial de tolerancia. (Marks, 1969; Marks, 1978).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "human-sexual-response-masters-johnson-1966",
+      "modelLabel": "Human Sexual Response",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "William H. Masters; Virginia E. Johnson",
+      "modelYear": 1966,
+      "items": [
+        {
+          "codigo": "p_mj_suspension_temporal_actividad_sexual",
+          "nombre": "Suspensión temporal de actividad sexual específica",
+          "texto": "Procedimiento de control terapéutico inicial mediante el cual se pide a la pareja abstenerse temporalmente de la actividad sexual específica y de cualquier intento de culminación coital mientras se reorganiza la pauta interactiva. En el texto clínico esta suspensión sirve para retirar presión, frenar la compulsión por “demostrar” funcionamiento y abrir un espacio en el que el contacto corporal pueda dejar de estar sometido al examen del rendimiento. No es evitación del sexo, sino desactivación estratégica del objetivo que cronifica el problema. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_sensate_focus_inicial",
+          "nombre": "Sensate Focus inicial sin genitales ni pechos",
+          "texto": "Procedimiento básico de reeducación sexual en el que ambos miembros de la pareja, desnudos y en privacidad, alternan roles de dar y recibir contacto táctil centrado en la experiencia sensorial, excluyendo al inicio genitales y pechos y sin perseguir excitación, orgasmo ni coito. La tarea busca que el placer vuelva a organizarse en torno a temperatura, textura, presión, ritmo y presencia corporal compartida, reduciendo la vigilancia de rendimiento y restaurando el valor de la atención sensorial como base de la respuesta sexual. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_sensate_focus_genital",
+          "nombre": "Sensate Focus ampliado con genitales y pechos, sin meta orgásmica",
+          "texto": "Procedimiento de progresión del sensate focus en el que se incorpora el contacto con genitales y pechos, manteniendo explícitamente la contraindicación de convertir la interacción en una tarea de orgasmo o coito. Masters y Johnson subrayan que esta ampliación permite integrar la excitación sexual dentro de una secuencia todavía no demandante, de modo que la respuesta fisiológica pueda emerger como consecuencia espontánea del intercambio sensorial y no como exigencia impuesta desde fuera. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_entrenamiento_control_eyaculatorio",
+          "nombre": "Entrenamiento manipulativo para control eyaculatorio",
+          "texto": "Procedimiento específico para la eyaculación precoz en el que la pareja trabaja directamente sobre la estimulación peneana bajo condiciones controladas, abandonando el patrón de “no tocar” y sustituyéndolo por un aprendizaje activo del nivel de excitación masculina. La lógica clínica consiste en que el hombre deje de vivir la excitación como un salto brusco e incontrolable hacia la inevitabilidad eyaculatoria, y la pareja aprenda a reconocer, modular y sostener esa excitación sin precipitación. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_squeeze_technique",
+          "nombre": "Squeeze Technique",
+          "texto": "Procedimiento central para el tratamiento de la eyaculación precoz, introducido originalmente por James Semans y sistematizado por Masters y Johnson, en el que la mujer —o la pareja bajo guía terapéutica— aplica una presión firme durante 3–4 segundos sobre el glande/corona y frenillo cuando el hombre alcanza alta excitación, produciendo una caída inmediata del impulso eyaculatorio y una ligera pérdida parcial de erección. Tras esperar 15–30 segundos se reanuda la estimulación, alternando repetidamente activación y presión hasta que el hombre aprende a identificar y demorar el punto previo a la inevitabilidad eyaculatoria. Referencia: Semans, J. H. (1956); Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_intromision_no_demandante",
+          "nombre": "Progresión desde control manipulativo a intromisión no demandante",
+          "texto": "Procedimiento de avance terapéutico en el que, una vez consolidado el control con la squeeze technique en condiciones manipulativas, la pareja pasa a una intromisión no demandante y posteriormente a un proceso coital cada vez más controlado. El principio es que el control eyaculatorio no se da por adquirido por comprenderlo intelectualmente, sino por trasladarlo gradualmente desde la estimulación manual al contexto coital real, sin reinstaurar prisa, autoobservación ni meta de rendimiento. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mj_redirigir_atencion_sensacion",
+          "nombre": "Redirigir la atención desde el rendimiento hacia la sensación",
+          "texto": "Microintervención verbal y experiencial en la que el terapeuta invita de forma repetida a abandonar la monitorización del rendimiento (erección, orgasmo, respuesta del otro) y a centrar la atención en cualidades sensoriales inmediatas como temperatura, presión, textura o ritmo, facilitando que la experiencia sexual deje de organizarse en torno a la evaluación y recupere su base perceptiva directa. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_normalizar_fluctuaciones",
+          "nombre": "Normalizar fluctuaciones de la respuesta sexual",
+          "texto": "Intervención psicoeducativa breve en la que se explicita que la excitación sexual no es lineal ni estable, sino variable y sensible a múltiples factores, reduciendo interpretaciones catastróficas ante pérdidas de erección o cambios en la excitación y desactivando la asociación automática entre variación y fracaso. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_ritmo_lento",
+          "nombre": "Indicar ritmo lento y consciente del contacto",
+          "texto": "Microintervención conductual en la que se prescribe explícitamente ralentizar el contacto físico, sostener cada movimiento y evitar cambios rápidos de estimulación, favoreciendo la percepción detallada de la experiencia corporal y reduciendo la escalada automática hacia la excitación rápida y descontrolada. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_pausa_inevitabilidad",
+          "nombre": "Marcar pausas antes del punto de inevitabilidad eyaculatoria",
+          "texto": "Intervención técnica en la que se instruye a identificar el momento previo a la inevitabilidad eyaculatoria y detener la estimulación antes de alcanzarlo, facilitando el aprendizaje discriminativo del nivel de excitación y su regulación progresiva. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_aplicar_squeeze",
+          "nombre": "Aplicar presión específica en la squeeze technique",
+          "texto": "Microintervención conductual precisa que consiste en aplicar presión firme sobre el glande y el frenillo durante unos segundos cuando la excitación es alta, produciendo una disminución inmediata del impulso eyaculatorio y permitiendo reiniciar el ciclo de estimulación con mayor control. Referencia: Semans, J. H. (1956); Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_reducir_autoobservacion",
+          "nombre": "Reducir autoobservación crítica durante el contacto",
+          "texto": "Intervención focalizada en detectar y disminuir el diálogo interno evaluativo durante la actividad sexual, ayudando a la persona a salir del rol de observador crítico y volver a una participación experiencial directa en la interacción corporal. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }
@@ -3029,6 +3221,29 @@
           "codigo": "m_herman_dosificacion",
           "nombre": "Dosificación del recuerdo",
           "texto": "Ajuste continuo de la intensidad y duración del contacto con material traumático para evitar desbordamiento, manteniendo la activación dentro de la ventana de tolerancia. Referencia: Herman, J. L. (1992); Cloitre et al. (2011).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "narrative-exposure-therapy-net-schauer-neuner-elbert-2005",
+      "modelLabel": "Narrative Exposure Therapy (NET)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Maggie Schauer; Frank Neuner; Thomas Elbert",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "m_net_emociones",
+          "nombre": "Focalización en emociones durante el recuerdo",
+          "texto": "Se invita a identificar y sostener las emociones que emergen durante la narrativa, facilitando su procesamiento en lugar de evitación (Schauer et al., 2011).",
+          "sub": "RE_modulacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_positivos",
+          "nombre": "Marcaje de eventos positivos",
+          "texto": "Se identifican y enfatizan eventos positivos en la línea de vida, equilibrando la narrativa y ampliando la representación autobiográfica más allá del trauma (Schauer et al., 2011).",
           "sub": "RE_modulacion",
           "tipo": "micro"
         }

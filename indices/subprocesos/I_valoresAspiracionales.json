@@ -1,7 +1,7 @@
 {
   "subprocesoId": "I_valoresAspiracionales",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 40,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 43,
   "modelos": [
     {
       "modelId": "a2naikan1940",
@@ -169,6 +169,36 @@
       ]
     },
     {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_valores",
+          "nombre": "Clarificación de valores personales",
+          "texto": "Procedimiento enfocado en identificar qué es importante para el paciente en distintos dominios vitales y diferenciar valores de objetivos, facilitando una orientación de vida basada en significado en lugar de evitación del malestar. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "I_valoresAspiracionales",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_abbt_writing_interference",
+          "nombre": "Escritura sobre interferencia de la ansiedad en la vida",
+          "texto": "Ejercicio de reflexión escrita donde el paciente identifica cómo la ansiedad limita su vida en distintas áreas, facilitando toma de conciencia del coste funcional del problema. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "I_valoresAspiracionales",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_values_clarification",
+          "nombre": "Clarificación guiada de valores en sesión",
+          "texto": "Intervención en la que el terapeuta ayuda al paciente a articular cómo quiere vivir en diferentes dominios vitales, diferenciando valores de objetivos concretos. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "I_valoresAspiracionales",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "act-hayes-strosahl-wilson-1999",
       "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
       "modelGrupo": "Cognitivo",
@@ -252,6 +282,29 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_programacion_intimidad_contexto_erotico",
+          "nombre": "Programación de intimidad y recuperación del contexto erótico",
+          "texto": "Procedimiento destinado a reconstruir condiciones contextuales que faciliten deseo y conexión sexual, especialmente cuando la sexualidad ha quedado desplazada por estrés, crianza, fatiga, conflicto, rutina o evitación acumulada. Se planifican espacios de intimidad no obligatoriamente coital, rituales de acercamiento, reducción de interferencias, acuerdos de disponibilidad, cuidado corporal y actividades eróticas graduadas, tratando la planificación como creación de condiciones de posibilidad y no como obligación sexual. Referencia: Meston & Bradford (2007); Meston & Buss (2007); Sierra et al. (2012).",
+          "sub": "I_valoresAspiracionales",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_regla_flexible_alternativa",
+          "nombre": "Construir una regla sexual flexible alternativa",
+          "texto": "Microintervención que sustituye una regla rígida, como ‘debo estar siempre disponible’ o ‘si paro decepciono’, por una formulación flexible y propia, como ‘puedo cuidar el vínculo y también escuchar mi cuerpo’. Integra cognición, identidad sexual y agencia. Referencia: Barlow (1986); Sierra et al. (2012).",
+          "sub": "I_valoresAspiracionales",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "modelo-intolerancia-incertidumbre-dugas",
       "modelLabel": "Modelo de intolerancia a la incertidumbre (TAG)",
       "modelGrupo": "Cognitivo",
@@ -264,6 +317,29 @@
           "texto": "Procedimiento dirigido a integrar la incertidumbre como parte inevitable de la experiencia humana, desplazando el objetivo terapéutico de eliminarla a aprender a vivir con ella. Este cambio implica una reorganización profunda de la relación con el futuro y el control. Referencia: Dugas & Robichaud (2007).",
           "sub": "I_valoresAspiracionales",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_valores_estres",
+          "nombre": "Reorganización de prioridades y valores ante el estrés",
+          "texto": "Procedimiento orientado a reevaluar la importancia atribuida a situaciones estresantes en función de valores personales, permitiendo reducir la carga de eventos que no son coherentes con la identidad o prioridades del individuo. Este ajuste redefine el significado del estresor y disminuye su impacto psicológico. Referencia: Lazarus (1999).",
+          "sub": "I_valoresAspiracionales",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_lazarus_valores_check",
+          "nombre": "Chequeo de congruencia con valores",
+          "texto": "Intervención que evalúa si la importancia atribuida al estresor es coherente con los valores personales, facilitando una rejerarquización del significado. Referencia: Lazarus (1999).",
+          "sub": "I_valoresAspiracionales",
+          "tipo": "micro"
         }
       ]
     },

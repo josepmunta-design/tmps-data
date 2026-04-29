@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_monitorizacion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 10,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 12,
   "modelos": [
     {
       "modelId": "mbct-segal-williams-teasdale-2002",
@@ -21,6 +21,45 @@
           "codigo": "m_mbct_firma_recaida",
           "nombre": "Señales tempranas personalizadas (lista corta ‘mi firma de recaída’)",
           "texto": "Microintervención de definir y revisar una lista breve de señales propias (sueño, irritabilidad, retirada, rumiación, tensión) para detectar activación precoz y activar el plan de respuesta antes de que el episodio se consolide. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RE_monitorizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_monitorizacion",
+          "nombre": "Monitoreo continuo del estrés (feedback appraisal)",
+          "texto": "Procedimiento que implica la observación sistemática de cambios en la percepción de estrés, evaluaciones cognitivas y eficacia del afrontamiento a lo largo del tiempo. Permite ajustar estrategias mediante un proceso de reevaluación continua, aumentando la adaptabilidad del sistema persona-entorno. Referencia: Lazarus (1999).",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "preventive-cognitive-therapy-bockting-2005",
+      "modelLabel": "Preventive Cognitive Therapy (PCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Claudi L. H. Bockting",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_pct_activacion_cognitiva",
+          "nombre": "Detección de activación cognitiva asociada al estado de ánimo",
+          "texto": "Procedimiento orientado a identificar cómo los pensamientos disfuncionales se reactivan automáticamente ante cambios leves en el estado de ánimo. El objetivo es aumentar la conciencia del vínculo estado de ánimo–cognición, considerado un mecanismo central de recaída en depresión recurrente. Referencia: Bockting et al. (2005); Segal et al. (2002).",
+          "sub": "RE_monitorizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pct_deteccion_activacion",
+          "nombre": "Detección en vivo de activación cognitiva",
+          "texto": "Microintervención orientada a que el paciente identifique en tiempo real cuándo comienzan a activarse patrones cognitivos negativos ante cambios emocionales leves, permitiendo intervenir antes de que escalen. Referencia: Bockting et al. (2005).",
           "sub": "RE_monitorizacion",
           "tipo": "micro"
         }

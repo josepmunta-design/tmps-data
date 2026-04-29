@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_autoriaResponsabilidad",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 116,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 119,
   "modelos": [
     {
       "modelId": "medicina-tradicional-china-psicoemocional-1950",
@@ -296,6 +296,29 @@
       ]
     },
     {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_estrategias_mantenimiento",
+          "nombre": "Identificación y eliminación de estrategias de mantenimiento",
+          "texto": "Procedimiento orientado a detectar y modificar estrategias como evitación, supresión, hipervigilancia o conductas de seguridad, que impiden la elaboración de la memoria y la actualización de significados, manteniendo el trastorno (Ehlers & Clark, 2000).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ehlers_expectativas",
+          "nombre": "Comparación de expectativas vs resultados",
+          "texto": "Tras experimentos conductuales, se analiza la discrepancia entre lo esperado y lo ocurrido, facilitando la revisión de interpretaciones negativas (Ehlers & Clark, 2000).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "functional-analytic-psychotherapy-fap-1991",
       "modelLabel": "Functional Analytic Psychotherapy (FAP)",
       "modelGrupo": "Cognitivo",
@@ -354,6 +377,29 @@
           "texto": "Procedimiento para mapear qué hace la persona cuando se siente mal (evitar, aislarse, rumiar, anestesiarse) y cómo eso alivia a corto plazo pero mantiene a largo plazo. Se entrenan alternativas basadas en aproximación mindful (permitir sentir, volver al cuerpo, acción pequeña con sentido) y se refuerza el aprendizaje por evidencia personal. (Segal, Williams & Teasdale, 2002; 2013).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_prevencion_recaidas_repertorio_flexible",
+          "nombre": "Prevención de recaídas y consolidación de repertorio sexual flexible",
+          "texto": "Procedimiento final orientado a consolidar aprendizajes, anticipar oscilaciones normales de deseo y respuesta sexual, identificar señales tempranas de retorno a vigilancia, presión o evitación, y establecer planes de mantenimiento. Se revisan recursos eficaces, acuerdos de pareja, estrategias de comunicación, formas de volver al contacto sensorial y criterios para no convertir un episodio aislado de dificultad en prueba de recaída o defecto estable. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_comprobar_prediccion",
+          "nombre": "Comprobar la predicción después del ejercicio sexual",
+          "texto": "Microintervención posterior al ejercicio en la que se compara la predicción temida con lo que realmente ocurrió, identificando discrepancias, matices, conductas útiles y señales de aprendizaje. Evita que la persona recuerde el encuentro solo desde el sesgo de fallo y consolida evidencia experiencial correctiva. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
         }
       ]
     },
@@ -2960,6 +3006,99 @@
           "codigo": "m_canevaro_autorizacion_diferenciacion",
           "nombre": "Pregunta de autorización para diferenciarse",
           "texto": "Microintervención en la que se pregunta explícitamente qué tendría que ocurrir —interna o relacionalmente— para que el paciente pudiera sentirse autorizado a tomar una decisión autónoma sin vivirse como traidor o desleal. A diferencia de la Milán clásica centrada en circularidad externa, aquí se focaliza el conflicto interno de separación evolutiva y se trabaja la agencia personal dentro del sistema. Referencia: Canevaro (2012).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "feedback-informed-treatment-duncan-miller-2000",
+      "modelLabel": "Feedback-Informed Treatment (FIT)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Barry L. Duncan; Scott D. Miller",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_fit_ors",
+          "nombre": "Monitorización sistemática del resultado (ORS)",
+          "texto": "Procedimiento central de FIT que consiste en recoger al inicio de cada sesión la valoración del cliente sobre su funcionamiento personal, relacional y social mediante la Outcome Rating Scale (ORS), utilizando esa información como dato clínico prioritario para evaluar si la terapia está produciendo cambios significativos en su vida y ajustar el tratamiento en consecuencia; el terapeuta no interpreta el progreso de forma unilateral, sino que lo negocia explícitamente con el cliente, explorando qué está ayudando, qué no y qué debería modificarse, lo que permite detectar estancamientos o deterioros tempranos y evitar tratamientos ineficaces prolongados (Duncan, Miller & Sparks, 2004; Miller et al., 2003).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_metas_cliente",
+          "nombre": "Clarificación de metas del cliente",
+          "texto": "Procedimiento orientado a identificar y definir de forma precisa qué quiere el cliente conseguir en terapia, utilizando su propio lenguaje y criterios de éxito, y revisando continuamente estas metas a lo largo del proceso para asegurar que la terapia sigue siendo relevante y significativa para él, evitando trabajar sobre objetivos implícitos o definidos exclusivamente por el terapeuta (Duncan, Miller & Sparks, 2004).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_no_progreso",
+          "nombre": "Detección temprana de falta de progreso",
+          "texto": "Procedimiento basado en el análisis de la evolución de las puntuaciones ORS para identificar rápidamente cuando el cliente no está mejorando al ritmo esperado, permitiendo intervenir precozmente mediante revisión del enfoque, intensificación del trabajo o reconsideración del caso, evitando cronificación de tratamientos ineficaces que el terapeuta podría no detectar sin datos objetivos del cliente (Miller et al., 2003; Duncan et al., 2010).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_transparencia",
+          "nombre": "Transparencia y negociación del proceso terapéutico",
+          "texto": "Procedimiento que implica hacer explícitas las decisiones terapéuticas, explicar el propósito de las intervenciones y negociar continuamente con el cliente el rumbo de la terapia, favoreciendo una relación horizontal donde el cliente participa activamente en la toma de decisiones y aumenta su implicación en el proceso (Duncan, Miller & Sparks, 2004).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_desarrollo_terapeuta",
+          "nombre": "Desarrollo deliberado del terapeuta basado en resultados",
+          "texto": "Procedimiento que implica que el terapeuta utilice los datos agregados de sus resultados clínicos para analizar su propia eficacia, identificar áreas de mejora y ajustar su práctica de forma continua, pasando de una identidad basada en la competencia percibida a una basada en resultados reales observados en sus clientes (Miller, Duncan & Hubble, 2004).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_derivacion",
+          "nombre": "Derivación o cambio de terapeuta basado en resultados",
+          "texto": "Procedimiento que contempla la posibilidad de derivar al cliente o facilitar un cambio de terapeuta cuando el feedback indica falta de progreso persistente o desajuste relacional no resoluble, entendiendo que la eficacia terapéutica depende en gran medida del encaje específico cliente-terapeuta y que mantener un caso sin beneficio es clínicamente inadecuado (Duncan, Miller & Sparks, 2004; Wampold, 2001).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fit_senal_estancamiento",
+          "nombre": "Señalar estancamiento temprano",
+          "texto": "Microintervención en la que el terapeuta comparte de forma transparente que las puntuaciones no están mejorando como se esperaría, invitando a reflexionar conjuntamente sobre posibles cambios en el enfoque antes de que el proceso se cronifique sin beneficio (Miller et al., 2003).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_responsabilidad_terapeuta",
+          "nombre": "Externalizar la responsabilidad del ajuste",
+          "texto": "Microintervención en la que el terapeuta explicita que si la terapia no está funcionando es su responsabilidad cambiar el enfoque, disminuyendo la tendencia del cliente a culparse o adaptarse pasivamente a un tratamiento ineficaz (Duncan, Miller & Sparks, 2004).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_corregir_terapeuta",
+          "nombre": "Invitar a corregir al terapeuta",
+          "texto": "Microintervención en la que el terapeuta anima explícitamente al cliente a decir cuando algo no encaja o no ayuda, normalizando la discrepancia y reforzando el rol activo del cliente en el proceso terapéutico (Duncan et al., 2003).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_reforzar_utilidad",
+          "nombre": "Preguntar por qué sí ayuda",
+          "texto": "Microintervención centrada en identificar qué aspectos de la terapia están siendo útiles según el cliente, para amplificarlos y mantenerlos como núcleo del tratamiento (Duncan, Miller & Sparks, 2004).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_excepciones",
+          "nombre": "Explorar excepciones de mejora",
+          "texto": "Microintervención que busca momentos en los que el cliente ha estado mejor para identificar recursos y condiciones de cambio, utilizándolos como base para el avance terapéutico (Duncan, Miller & Sparks, 2004).",
+          "sub": "AG_autoriaResponsabilidad",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_fit_indicadores_exito",
+          "nombre": "Invitar a definir indicadores de éxito",
+          "texto": "Microintervención en la que se pide al cliente que especifique cómo sabrá que la terapia está funcionando, facilitando criterios claros de evaluación del proceso (Duncan, Miller & Sparks, 2004).",
           "sub": "AG_autoriaResponsabilidad",
           "tipo": "micro"
         }

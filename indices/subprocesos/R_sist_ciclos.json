@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_sist_ciclos",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 25,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 27,
   "modelos": [
     {
       "modelId": "psicoterapia-comunitaria-ubuntu-1995",
@@ -37,6 +37,52 @@
           "codigo": "p_whanau_reunion_familiar",
           "nombre": "Reuniones terapéuticas con participación de la whānau",
           "texto": "Intervenciones clínicas que involucran activamente a miembros significativos de la familia extensa para restaurar cohesión, clarificar roles y reforzar apoyo colectivo. Estas reuniones permiten desplazar el foco del síntoma individual hacia dinámicas relacionales compartidas, interrumpir ciclos disfuncionales y fortalecer regulación interpersonal en vivo. Referencia: Ministry of Health NZ (2014). Whānau Ora Framework.",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_deseo_bajo_discrepancia_deseo",
+          "nombre": "Trabajo conductual con deseo sexual bajo o discrepancia de deseo",
+          "texto": "Procedimiento dirigido a diferenciar deseo bajo primario, deseo inhibido por ansiedad, deseo responsivo, discrepancia de deseo en pareja, evitación por presión y pérdida de contexto erótico. La intervención combina psicoeducación sobre deseo contextual, identificación de facilitadores e inhibidores, acuerdos de acercamiento no exigente, aumento de conductas eróticas elegidas y reducción de ciclos de demanda-retirada o presión-evitación. Referencia: Meston & Bradford (2007); Meston & Buss (2007); Sierra et al. (2012).",
+          "sub": "R_sist_ciclos",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_convertir_queja_en_secuencia",
+          "nombre": "Convertir queja sexual global en secuencia observable",
+          "texto": "Microintervención que traduce expresiones globales como ‘no tenemos deseo’, ‘siempre va mal’ o ‘soy un desastre’ en una secuencia concreta de disparadores, pensamientos, emociones, sensaciones, conductas y respuestas de la pareja. Esta operación aumenta precisión clínica y reduce atribuciones identitarias rígidas. Referencia: Barlow (1986); Sierra et al. (2012).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_nominar_demanda_retirada",
+          "nombre": "Nombrar el ciclo demanda-retirada en la pareja",
+          "texto": "Microintervención que identifica cómo una persona aumenta demanda, presión o queja mientras la otra se distancia, evita o se desconecta, reforzándose mutuamente. Nombrar el ciclo desplaza el foco de culpa individual a patrón relacional modificable. Referencia: Meston & Bradford (2007); Masters & Johnson (1970).",
+          "sub": "R_sist_ciclos",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "human-sexual-response-masters-johnson-1966",
+      "modelLabel": "Human Sexual Response",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "William H. Masters; Virginia E. Johnson",
+      "modelYear": 1966,
+      "items": [
+        {
+          "codigo": "p_mj_terapia_unidad_marital",
+          "nombre": "Terapia conjunta de la unidad marital",
+          "texto": "Procedimiento marco del programa clínico de Masters y Johnson en el que el foco terapéutico no recae en un individuo aislado, sino en la pareja como unidad funcional implicada en la disfunción sexual. El tratamiento se organiza desde la premisa de que no existe una pareja realmente “no implicada” cuando hay una dificultad sexual establecida, por lo que ambos miembros participan activamente en la evaluación, la educación sexual y las tareas terapéuticas. Esta estructura busca romper el vacío comunicativo, redistribuir la responsabilidad del problema y convertir la interacción de pareja en el principal vehículo de cambio clínico. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
           "sub": "R_sist_ciclos",
           "tipo": "procedimiento"
         }

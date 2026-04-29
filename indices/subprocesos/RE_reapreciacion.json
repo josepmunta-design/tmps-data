@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RE_reapreciacion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 28,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 32,
   "modelos": [
     {
       "modelId": "o1morita",
@@ -126,6 +126,43 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_psicoeducacion_respuesta_sexual_ansiedad_rendimiento",
+          "nombre": "Psicoeducación sobre respuesta sexual, variabilidad y ciclo ansiedad-rendimiento",
+          "texto": "Procedimiento destinado a explicar la respuesta sexual como un proceso psicofisiológico variable, sensible al contexto, al significado, a la atención y al estado emocional, reduciendo interpretaciones moralizantes o defectológicas de las dificultades sexuales. Se trabaja el ciclo en el que la presión por funcionar activa ansiedad, la ansiedad desplaza la atención hacia señales de fallo, la monitorización reduce excitación y el resultado confirma la expectativa negativa, generando evitación posterior. La psicoeducación busca normalizar oscilaciones de deseo, excitación y orgasmo, introducir una explicación plausible del problema y aumentar expectativa de cambio mediante una formulación comprensible. Referencia: Barlow (1986); Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_nominar_ciclo_rendimiento_ansiedad",
+          "nombre": "Nombrar el ciclo rendimiento-ansiedad",
+          "texto": "Microintervención en la que el terapeuta ayuda a poner nombre al bucle concreto que aparece antes o durante la actividad sexual: anticipación de fallo, vigilancia corporal, ansiedad, reducción de excitación, confirmación del temor y evitación posterior. Nombrarlo transforma un problema vivido como defecto personal en una secuencia modificable, disminuye vergüenza y prepara el análisis funcional. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_normalizar_fluctuaciones",
+          "nombre": "Normalizar fluctuaciones de deseo y excitación",
+          "texto": "Microintervención psicoeducativa que ubica las variaciones de deseo, erección, lubricación, orgasmo o intensidad erótica dentro de la respuesta sexual humana normal y contextual. Su efecto clínico es disminuir catastrofización y prevenir que un episodio aislado se convierta en identidad disfuncional o profecía de fracaso. Referencia: Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_reatribuir_contexto",
+          "nombre": "Reatribuir un episodio de dificultad a variables contextuales",
+          "texto": "Microintervención que reconstruye un episodio sexual difícil considerando cansancio, alcohol, estrés, presión, conflicto, dolor, falta de tiempo, miedo o distracción, en lugar de atribuirlo automáticamente a incapacidad estable o falta de deseo. Esta reatribución reduce desesperanza y evita generalización excesiva. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
       "modelLabel": "Modelo cognitivo de la fobia social",
       "modelGrupo": "Cognitivo",
@@ -180,6 +217,59 @@
           "codigo": "m_clark_normalizar_sensacion",
           "nombre": "Normalización de sensaciones fisiológicas",
           "texto": "Explicar brevemente que las sensaciones experimentadas son respuestas normales del sistema nervioso (por ejemplo, activación simpática), reduciendo su interpretación como señal de peligro. Referencia: Clark (1986).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_reappraisal",
+          "nombre": "Reevaluación cognitiva del estresor (reappraisal)",
+          "texto": "Procedimiento orientado a modificar el significado atribuido a la situación estresante mediante reinterpretaciones más ajustadas, flexibles o funcionales, transformando la percepción de amenaza en desafío o reduciendo la intensidad del daño anticipado. Este proceso no busca negar la realidad, sino ajustar la evaluación para disminuir la activación emocional y facilitar respuestas más adaptativas. Referencia: Lazarus (1999).",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_lazarus_reencuadre_desafio",
+          "nombre": "Reencuadre de amenaza a desafío",
+          "texto": "Microintervención que transforma la percepción de una situación de amenaza a desafío manejable, modificando el significado emocional sin negar la dificultad objetiva. Referencia: Lazarus & Folkman (1984).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_lazarus_reappraisal_momento",
+          "nombre": "Reevaluación en tiempo real",
+          "texto": "Microintervención que invita a revisar la evaluación de la situación en el momento presente, ajustando la interpretación a nueva información o cambios contextuales. Referencia: Lazarus (1999).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "preventive-cognitive-therapy-bockting-2005",
+      "modelLabel": "Preventive Cognitive Therapy (PCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Claudi L. H. Bockting",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_pct_registro_positivo",
+          "nombre": "Registro sistemático de experiencias positivas",
+          "texto": "Procedimiento complementario al trabajo de memoria que consiste en mantener un diario de experiencias positivas cotidianas. Este registro aumenta la disponibilidad de recuerdos específicos positivos y reduce el sesgo hacia interpretaciones negativas o generalizadas de la experiencia. Referencia: Bockting et al. (2005, sesiones 4–6) :contentReference[oaicite:6]{index=6}.",
+          "sub": "RE_reapreciacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pct_diario_positivo",
+          "nombre": "Registro de experiencias positivas",
+          "texto": "Registro sistemático de eventos positivos cotidianos para contrarrestar la tendencia a la memoria autobiográfica sobregeneral. Este ejercicio aumenta la accesibilidad a recuerdos específicos positivos, lo que mejora el afrontamiento y reduce la vulnerabilidad depresiva. Referencia: Bockting et al. (2005, p. 648–649) :contentReference[oaicite:3]{index=3}.",
           "sub": "RE_reapreciacion",
           "tipo": "micro"
         }
@@ -628,6 +718,22 @@
           "codigo": "m_sfbt_micro_elogio",
           "nombre": "Micro-elogio específico",
           "texto": "Reconocimiento breve y específico de una conducta, decisión o esfuerzo concreto del cliente durante la sesión, diseñado para reforzar direcciones útiles sin generar dependencia ni halago vacío. Referencia: Berg & De Jong (1996).",
+          "sub": "RE_reapreciacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "feedback-informed-treatment-duncan-miller-2000",
+      "modelLabel": "Feedback-Informed Treatment (FIT)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Barry L. Duncan; Scott D. Miller",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_fit_senal_progreso",
+          "nombre": "Señalar progreso explícitamente",
+          "texto": "Microintervención que consiste en reflejar al cliente mejoras observadas o reportadas, ayudándole a consolidar la percepción de cambio y fortalecer la motivación (Miller et al., 2003).",
           "sub": "RE_reapreciacion",
           "tipo": "micro"
         }

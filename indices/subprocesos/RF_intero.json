@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RF_intero",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 30,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 32,
   "modelos": [
     {
       "modelId": "medicina-tradicional-china-psicoemocional-1950",
@@ -284,6 +284,36 @@
       ]
     },
     {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_mindfulness_progresivo",
+          "nombre": "Entrenamiento progresivo en mindfulness",
+          "texto": "Procedimiento estructurado de desarrollo de habilidades mindfulness comenzando por atención a la respiración y estímulos neutros, progresando hacia emociones, pensamientos y autocompasión, con prácticas formales e informales. El objetivo es cultivar conciencia no enjuiciadora y reducir reactividad automática. Referencia: Hayes-Skelton et al. (2013), tabla de sesiones.",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_abbt_mindfulness_respiracion",
+          "nombre": "Mindfulness de la respiración",
+          "texto": "Ejercicio básico de atención a la respiración orientado a entrenar la conciencia del momento presente sin modificar la experiencia, facilitando el desarrollo inicial de habilidades mindfulness y reducción de reactividad automática. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_breathing_space",
+          "nombre": "Espacio de respiración de 3 minutos",
+          "texto": "Práctica breve estructurada en tres fases: toma de conciencia, focalización en la respiración y expansión de la atención, utilizada para interrumpir automatismos cognitivos y emocionales. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "act-hayes-strosahl-wilson-1999",
       "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
       "modelGrupo": "Cognitivo",
@@ -412,6 +442,92 @@
           "codigo": "m_mbct_movimiento_ajuste",
           "nombre": "Movimiento consciente: notar límites y ajustar sin forzar",
           "texto": "Microintervención de usar el cuerpo en movimiento para entrenar autorregulación: notar tensión/dolor, ajustar intensidad y sostener una relación no punitiva con el cuerpo, útil para pacientes con exigencia o desconexión corporal. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_psicoeducacion_respuesta_sexual_ansiedad_rendimiento",
+          "nombre": "Psicoeducación sobre respuesta sexual, variabilidad y ciclo ansiedad-rendimiento",
+          "texto": "Procedimiento destinado a explicar la respuesta sexual como un proceso psicofisiológico variable, sensible al contexto, al significado, a la atención y al estado emocional, reduciendo interpretaciones moralizantes o defectológicas de las dificultades sexuales. Se trabaja el ciclo en el que la presión por funcionar activa ansiedad, la ansiedad desplaza la atención hacia señales de fallo, la monitorización reduce excitación y el resultado confirma la expectativa negativa, generando evitación posterior. La psicoeducación busca normalizar oscilaciones de deseo, excitación y orgasmo, introducir una explicación plausible del problema y aumentar expectativa de cambio mediante una formulación comprensible. Referencia: Barlow (1986); Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_focalizacion_sensorial_sin_rendimiento",
+          "nombre": "Focalización sensorial sin exigencia de rendimiento",
+          "texto": "Procedimiento derivado del sensate focus y actualizado dentro de una lógica cognitivo-conductual moderna, en el que la pareja o la persona realiza ejercicios graduados de contacto corporal centrados en sensaciones, temperatura, textura, presión, ritmo y placer, retirando temporalmente objetivos como penetración, erección, lubricación u orgasmo. Su función es desplazar la sexualidad de una tarea evaluativa a una experiencia sensorial segura, reducir el espectador interno, aumentar discriminación corporal y reconstruir asociaciones positivas con la intimidad. Referencia: Masters & Johnson (1970); Barlow (1986); Meston & Bradford (2007).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_reduccion_espectador_interno_atencion_erotica",
+          "nombre": "Reducción del espectador interno y entrenamiento atencional erótico",
+          "texto": "Procedimiento dirigido a detectar y modificar la posición de autoobservación evaluativa durante la actividad sexual, entrenando el paso desde la vigilancia del rendimiento hacia claves sensoriales, emocionales y relacionales presentes. Incluye identificación de momentos de autoevaluación, uso de anclajes atencionales eróticos, retorno deliberado a sensaciones corporales, contacto visual, respiración, tacto o fantasía consensuada, y práctica entre sesiones en contextos de baja exigencia. Su objetivo es disminuir interferencia cognitiva y recuperar disponibilidad excitatoria. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_excitacion_ereccion",
+          "nombre": "Intervención cognitivo-conductual en dificultades de excitación y erección",
+          "texto": "Procedimiento orientado a dificultades de excitación genital, lubricación o erección mantenidas por vigilancia corporal, ansiedad anticipatoria, comprobaciones repetidas, evitación de estímulos eróticos y significados de fracaso personal. Se trabaja reducción de chequeo genital, focalización sensorial, reatribución de variaciones normales de excitación, exposición gradual a intimidad, revisión de creencias de rendimiento y, cuando procede, coordinación médica sin convertir la respuesta corporal en una prueba de valía. Referencia: Barlow (1986); Meston & Bradford (2007); Masters & Johnson (1970).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_cbt_sexual_dificultades_orgasmicas",
+          "nombre": "Intervención cognitivo-conductual en dificultades orgásmicas",
+          "texto": "Procedimiento centrado en dificultades para alcanzar el orgasmo, orgasmo retardado o bloqueo orgásmico asociado a control excesivo, vergüenza, desconocimiento del patrón de estimulación, distracción, miedo a perder el control o presión por llegar. Incluye autoexploración graduada, identificación de claves excitatorias, entrenamiento atencional, comunicación de estimulación preferida, reducción de metas obligatorias y exposición a sensaciones de aumento de excitación sin interrupción defensiva. Referencia: Masters & Johnson (1970); Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "RF_intero",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_diferenciar_sensacion_interpretacion",
+          "nombre": "Diferenciar sensación corporal de interpretación de fracaso",
+          "texto": "Microintervención que separa el dato corporal —por ejemplo, erección parcial, menor lubricación, fluctuación de excitación, tensión o latido— de la interpretación automática ‘estoy fallando’ o ‘esto saldrá mal’. Esta discriminación reduce fusión cognitiva con señales corporales y permite que la persona observe la respuesta sexual como variable, no como veredicto sobre su valía. Referencia: Barlow (1986); Barlow (2002); Meston & Bradford (2007).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_volver_clave_sensorial",
+          "nombre": "Volver a una clave sensorial concreta",
+          "texto": "Microintervención breve que entrena el retorno deliberado desde la evaluación cognitiva hacia una clave sensorial presente, como temperatura de la piel, presión del contacto, respiración, olor, textura o ritmo. Su función es recuperar inmersión corporal y reducir interferencia cognitiva durante ejercicios de focalización sensorial o encuentros íntimos. Referencia: Barlow (1986); Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_reducir_chequeo_genital",
+          "nombre": "Reducir chequeo genital durante el contacto",
+          "texto": "Microintervención que ayuda a disminuir comprobaciones repetidas sobre erección, lubricación, tensión, dolor o proximidad del orgasmo, sustituyéndolas por atención distribuida a sensaciones globales y contacto relacional. Reduce vigilancia corporal y facilita que la excitación emerja sin interrupciones evaluativas constantes. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_ralentizar_contacto",
+          "nombre": "Ralentizar el ritmo del contacto",
+          "texto": "Microintervención conductual que reduce velocidad, intensidad o progresión del contacto para mantener la experiencia dentro de una ventana de tolerancia erótica. Es especialmente útil en dolor, ansiedad de ejecución, trauma sexual, eyaculación rápida o desconexión sensorial. Referencia: Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_autoexploracion_graduada",
+          "nombre": "Practicar autoexploración graduada sin juicio",
+          "texto": "Microintervención de exploración corporal privada y gradual orientada a conocer sensaciones, preferencias, ritmos y zonas de placer sin objetivo inmediato de orgasmo. Es útil en dificultades orgásmicas, vergüenza corporal, bajo deseo o desconocimiento del patrón de estimulación. Referencia: Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "RF_intero",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_claves_excitatorias_personales",
+          "nombre": "Identificar claves excitatorias personales",
+          "texto": "Microintervención que ayuda a reconocer estímulos, contextos, fantasías, ritmos, modalidades de contacto o condiciones emocionales que facilitan excitación. Permite individualizar la intervención y salir de guiones sexuales estandarizados que no se ajustan a la persona. Referencia: Meston & Buss (2007); Meston & Bradford (2007).",
           "sub": "RF_intero",
           "tipo": "micro"
         }

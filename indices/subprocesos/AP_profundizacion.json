@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AP_profundizacion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 44,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 45,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -166,6 +166,78 @@
           "codigo": "m_dbt_pe_grabacion",
           "nombre": "Grabación y escucha repetida de exposición imaginada",
           "texto": "Tras la exposición imaginada en sesión, el paciente escucha la grabación entre sesiones para consolidar la habituación emocional y debilitar la evitación traumática. Este micro facilita integración progresiva y reduce reactividad condicionada mediante repetición estructurada fuera del entorno terapéutico. Referencia: Harned et al. (2014).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "human-sexual-response-masters-johnson-1966",
+      "modelLabel": "Human Sexual Response",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "William H. Masters; Virginia E. Johnson",
+      "modelYear": 1966,
+      "items": [
+        {
+          "codigo": "p_mj_sensate_focus_inicial",
+          "nombre": "Sensate Focus inicial sin genitales ni pechos",
+          "texto": "Procedimiento básico de reeducación sexual en el que ambos miembros de la pareja, desnudos y en privacidad, alternan roles de dar y recibir contacto táctil centrado en la experiencia sensorial, excluyendo al inicio genitales y pechos y sin perseguir excitación, orgasmo ni coito. La tarea busca que el placer vuelva a organizarse en torno a temperatura, textura, presión, ritmo y presencia corporal compartida, reduciendo la vigilancia de rendimiento y restaurando el valor de la atención sensorial como base de la respuesta sexual. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_sensate_focus_genital",
+          "nombre": "Sensate Focus ampliado con genitales y pechos, sin meta orgásmica",
+          "texto": "Procedimiento de progresión del sensate focus en el que se incorpora el contacto con genitales y pechos, manteniendo explícitamente la contraindicación de convertir la interacción en una tarea de orgasmo o coito. Masters y Johnson subrayan que esta ampliación permite integrar la excitación sexual dentro de una secuencia todavía no demandante, de modo que la respuesta fisiológica pueda emerger como consecuencia espontánea del intercambio sensorial y no como exigencia impuesta desde fuera. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_senales_no_verbales",
+          "nombre": "Entrenamiento de señales no verbales y ajuste mutuo",
+          "texto": "Procedimiento destinado a que la pareja aprenda a modular el contacto corporal mediante indicaciones no verbales y microajustes directos sobre la mano o el movimiento del otro, señalando presión, ritmo, zona o tipo de estimulación deseada. El objetivo es desarrollar un sistema de comunicación sexual específico y flexible, opuesto a la fantasía cultural de que uno de los miembros —sobre todo el hombre— debería saber instintivamente qué necesita el otro. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_discusion_sentidos",
+          "nombre": "Discusión clínica de los sentidos como apoyo de la respuesta sexual",
+          "texto": "Procedimiento psicoeducativo y exploratorio en el que se amplía la atención desde el tacto hacia otros focos sensoriales —olfato, visión, sonido y cualidades corporales específicas— para ayudar a la pareja a identificar qué experiencias estimulan, bloquean o matizan su receptividad. En Masters y Johnson esto no se presenta como una técnica decorativa, sino como una manera de reconstruir la respuesta sexual desde sus componentes sensoriales concretos y desde el sistema de significado erótico de cada persona. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_intromision_no_demandante",
+          "nombre": "Progresión desde control manipulativo a intromisión no demandante",
+          "texto": "Procedimiento de avance terapéutico en el que, una vez consolidado el control con la squeeze technique en condiciones manipulativas, la pareja pasa a una intromisión no demandante y posteriormente a un proceso coital cada vez más controlado. El principio es que el control eyaculatorio no se da por adquirido por comprenderlo intelectualmente, sino por trasladarlo gradualmente desde la estimulación manual al contexto coital real, sin reinstaurar prisa, autoobservación ni meta de rendimiento. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AP_profundizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mj_redirigir_atencion_sensacion",
+          "nombre": "Redirigir la atención desde el rendimiento hacia la sensación",
+          "texto": "Microintervención verbal y experiencial en la que el terapeuta invita de forma repetida a abandonar la monitorización del rendimiento (erección, orgasmo, respuesta del otro) y a centrar la atención en cualidades sensoriales inmediatas como temperatura, presión, textura o ritmo, facilitando que la experiencia sexual deje de organizarse en torno a la evaluación y recupere su base perceptiva directa. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_ritmo_lento",
+          "nombre": "Indicar ritmo lento y consciente del contacto",
+          "texto": "Microintervención conductual en la que se prescribe explícitamente ralentizar el contacto físico, sostener cada movimiento y evitar cambios rápidos de estimulación, favoreciendo la percepción detallada de la experiencia corporal y reduciendo la escalada automática hacia la excitación rápida y descontrolada. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_microajustes_tacto",
+          "nombre": "Señalar microajustes táctiles durante el sensate focus",
+          "texto": "Intervención en la que se anima a guiar físicamente la mano del otro para ajustar presión, ritmo o zona de contacto en tiempo real, reforzando un aprendizaje activo y bidireccional del placer y sustituyendo la expectativa implícita de adivinación por comunicación directa. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "AP_profundizacion",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_mj_explorar_senales",
+          "nombre": "Explorar señales sensoriales facilitadoras e inhibidoras",
+          "texto": "Microintervención en la que se pide identificar qué estímulos concretos aumentan o disminuyen la excitación —táctiles, visuales, olfativos o contextuales— permitiendo a la pareja construir un mapa funcional de su respuesta sexual y ajustar sus interacciones en consecuencia. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
           "sub": "AP_profundizacion",
           "tipo": "micro"
         }

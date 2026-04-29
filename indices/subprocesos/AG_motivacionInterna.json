@@ -1,7 +1,7 @@
 {
   "subprocesoId": "AG_motivacionInterna",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 24,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 27,
   "modelos": [
     {
       "modelId": "medicina-tradicional-china-psicoemocional-1950",
@@ -16,6 +16,29 @@
           "texto": "Procedimiento térmico que se emplea cuando predomina vacío/frío (baja energía, retraimiento, tristeza apagada, inseguridad somática) para tonificar y calentar según patrón, buscando mejorar vitalidad y disponibilidad para la acción; clínicamente se usa como soporte somático que ayuda a salir de estados de hipoactivación y a recuperar iniciativa gradual. Referencia: Maciocia, G. (1989); Huangdi Neijing.",
           "sub": "AG_motivacionInterna",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_activacion_valores",
+          "nombre": "Activación conductual orientada a valores",
+          "texto": "Procedimiento centrado en incrementar la participación en actividades valiosas, contrarrestando la restricción conductual asociada a la ansiedad mediante acciones progresivas y contextualizadas en la vida del paciente. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_abbt_action_monitoring",
+          "nombre": "Autoobservación de acciones valiosas realizadas o evitadas",
+          "texto": "Registro sistemático en el que el paciente observa oportunidades de acción valiosa, decisiones tomadas y grado de presencia durante la acción, facilitando aprendizaje conductual. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
         }
       ]
     },
@@ -39,6 +62,59 @@
           "texto": "Microintervención destinada a evocar conscientemente el sentido, crecimiento o valor personal implicado en una situación activadora, contrapesando el predominio del sistema de seguridad y facilitando decisiones orientadas a metas significativas. (Fresco et al., 2016).",
           "sub": "AG_motivacionInterna",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_deseo_bajo_discrepancia_deseo",
+          "nombre": "Trabajo conductual con deseo sexual bajo o discrepancia de deseo",
+          "texto": "Procedimiento dirigido a diferenciar deseo bajo primario, deseo inhibido por ansiedad, deseo responsivo, discrepancia de deseo en pareja, evitación por presión y pérdida de contexto erótico. La intervención combina psicoeducación sobre deseo contextual, identificación de facilitadores e inhibidores, acuerdos de acercamiento no exigente, aumento de conductas eróticas elegidas y reducción de ciclos de demanda-retirada o presión-evitación. Referencia: Meston & Bradford (2007); Meston & Buss (2007); Sierra et al. (2012).",
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_registro_facilitadores_inhibidores_deseo",
+          "nombre": "Registrar facilitadores e inhibidores del deseo",
+          "texto": "Microintervención en la que la persona observa qué condiciones aumentan o disminuyen deseo: descanso, conflicto, privacidad, presión, ternura, novedad, imagen corporal, estrés, resentimiento o tipo de estimulación. Ayuda a pasar de ‘tengo/no tengo deseo’ a una formulación contextual y modificable. Referencia: Meston & Bradford (2007); Meston & Buss (2007).",
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_distinguir_deseo_espontaneo_responsivo",
+          "nombre": "Distinguir deseo espontáneo y deseo responsivo",
+          "texto": "Microintervención psicoeducativa que diferencia el deseo que aparece antes del contacto de aquel que emerge cuando existen condiciones de seguridad, conexión y estimulación adecuada. Reduce la creencia de que el deseo auténtico debe surgir siempre de forma espontánea y abre vías conductuales para facilitarlo. Referencia: Meston & Bradford (2007); Meston & Buss (2007).",
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_claves_excitatorias_personales",
+          "nombre": "Identificar claves excitatorias personales",
+          "texto": "Microintervención que ayuda a reconocer estímulos, contextos, fantasías, ritmos, modalidades de contacto o condiciones emocionales que facilitan excitación. Permite individualizar la intervención y salir de guiones sexuales estandarizados que no se ajustan a la persona. Referencia: Meston & Buss (2007); Meston & Bradford (2007).",
+          "sub": "AG_motivacionInterna",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_recursos",
+          "nombre": "Activación de recursos de afrontamiento",
+          "texto": "Procedimiento dirigido a identificar, fortalecer y movilizar recursos internos y externos disponibles para afrontar el estrés, incluyendo habilidades personales, experiencias previas, apoyo social y estrategias aprendidas. Incrementa la percepción de eficacia y modula la evaluación secundaria, reduciendo la intensidad del estrés percibido. Referencia: Lazarus (1999).",
+          "sub": "AG_motivacionInterna",
+          "tipo": "procedimiento"
         }
       ]
     },

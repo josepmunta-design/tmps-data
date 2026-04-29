@@ -1,8 +1,52 @@
 {
   "subprocesoId": "AP_procesamiento",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 21,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 23,
   "modelos": [
+    {
+      "modelId": "cognitive-therapy-ptsd-ehlers-clark-2000",
+      "modelLabel": "Cognitive Therapy for PTSD",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Anke Ehlers; David M. Clark",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_ehlers_elaboracion_memoria",
+          "nombre": "Elaboración de la memoria traumática (reliving/narrativa)",
+          "texto": "Procedimiento que implica activar y reconstruir la memoria traumática mediante reliving o narrativa detallada, con el objetivo de transformar una memoria fragmentada en un recuerdo coherente y contextualizado en el pasado, reduciendo su reactivación automática (Ehlers & Clark, 2000).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ehlers_memory_updating",
+          "nombre": "Actualización de la memoria traumática durante la evocación",
+          "texto": "Procedimiento específico que introduce información correctiva directamente en los momentos más intensos del recuerdo (hot spots), modificando el significado emocional del evento mientras la memoria está activada. Es un mecanismo central de cambio en el modelo (Ehlers & Clark, 2000).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_ehlers_hotspots",
+          "nombre": "Trabajo con puntos calientes (hot spots)",
+          "texto": "Procedimiento centrado en identificar los momentos de máxima carga emocional dentro del trauma y trabajar directamente sobre ellos, ya que condensan las interpretaciones clave que mantienen el sentido de amenaza (Ehlers & Clark, 2000).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_ehlers_identificar_hotspots",
+          "nombre": "Identificación de hot spots",
+          "texto": "Microintervención centrada en localizar los momentos más intensos del trauma, donde se concentra el significado emocional clave que mantiene el sentido de amenaza (Ehlers & Clark, 2000).",
+          "sub": "AP_procesamiento",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_ehlers_updating",
+          "nombre": "Actualización de significado dentro del recuerdo",
+          "texto": "Durante la evocación del trauma, se introduce información correctiva directamente en los momentos clave (hot spots), modificando el significado emocional del recuerdo mientras está activado, lo que reduce su impacto y su vivencia como amenaza actual (Ehlers & Clark, 2000).",
+          "sub": "AP_procesamiento",
+          "tipo": "micro"
+        }
+      ]
+    },
     {
       "modelId": "modelo-cognitivo-fobia-social-clark-wells-1995",
       "modelLabel": "Modelo cognitivo de la fobia social",
@@ -262,6 +306,64 @@
           "texto": "Procedimiento orientado a activar y atravesar las emociones asociadas al trauma (miedo, rabia, vergüenza, tristeza) dentro de un contexto regulado, permitiendo su transformación y resolución. Implica sostener la experiencia emocional sin evitación ni desbordamiento, facilitando reorganización afectiva profunda. Referencia: Herman, J. L. (1992); Cloitre et al. (2011).",
           "sub": "AP_procesamiento",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "narrative-exposure-therapy-net-schauer-neuner-elbert-2005",
+      "modelLabel": "Narrative Exposure Therapy (NET)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Maggie Schauer; Frank Neuner; Thomas Elbert",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_net_procesamiento_eventos",
+          "nombre": "Procesamiento intensivo de eventos traumáticos",
+          "texto": "Durante la narrativa, los eventos traumáticos se trabajan en profundidad, ralentizando la narración y focalizando en detalles sensoriales, emocionales y contextuales, permitiendo que la memoria 'caliente' se active y pueda ser integrada con la memoria autobiográfica (Schauer et al., 2011).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_net_integracion_memoria",
+          "nombre": "Integración de memoria caliente y fría",
+          "texto": "Procedimiento orientado a conectar los componentes sensoriales y emocionales del trauma con su contexto temporal, espacial y autobiográfico, transformando recuerdos fragmentados en narrativas coherentes que pueden ser ubicadas en el pasado (Schauer et al., 2011).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_net_repeticion",
+          "nombre": "Repetición narrativa y consolidación",
+          "texto": "Procedimiento que implica revisar y re-narrar los eventos traumáticos a lo largo de varias sesiones, facilitando la habituación emocional, la integración progresiva de la memoria y la reducción de la reactividad fisiológica (Schauer et al., 2011).",
+          "sub": "AP_procesamiento",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_net_ralentizacion",
+          "nombre": "Ralentización en momentos traumáticos",
+          "texto": "Durante la exposición, el terapeuta ralentiza la narración en eventos traumáticos para profundizar en los detalles sensoriales, emocionales y contextuales, favoreciendo el procesamiento completo (Schauer et al., 2011).",
+          "sub": "AP_procesamiento",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_sensorial",
+          "nombre": "Focalización en detalles sensoriales",
+          "texto": "Se guía al paciente a describir estímulos sensoriales (imágenes, sonidos, olores, sensaciones corporales) asociados al trauma, activando la memoria 'caliente' para su integración (Schauer et al., 2011).",
+          "sub": "AP_procesamiento",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_emociones",
+          "nombre": "Focalización en emociones durante el recuerdo",
+          "texto": "Se invita a identificar y sostener las emociones que emergen durante la narrativa, facilitando su procesamiento en lugar de evitación (Schauer et al., 2011).",
+          "sub": "AP_procesamiento",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_repeticion",
+          "nombre": "Repetición narrativa estructurada",
+          "texto": "Consiste en volver sobre eventos traumáticos en diferentes sesiones, consolidando su procesamiento e integración progresiva (Schauer et al., 2011).",
+          "sub": "AP_procesamiento",
+          "tipo": "micro"
         }
       ]
     },

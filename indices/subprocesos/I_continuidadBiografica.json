@@ -1,7 +1,7 @@
 {
   "subprocesoId": "I_continuidadBiografica",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 53,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 55,
   "modelos": [
     {
       "modelId": "o2sewb2000",
@@ -85,6 +85,22 @@
           "texto": "Microintervención consistente en recordar y verbalizar explícitamente la pertenencia del consultante a su red familiar y genealógica, reforzando identidad relacional frente a narrativas individualizadas de déficit. Esta afirmación simbólica reduce aislamiento psicológico y reactiva continuidad cultural. Referencia: Durie, M. (1998).",
           "sub": "I_continuidadBiografica",
           "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "human-sexual-response-masters-johnson-1966",
+      "modelLabel": "Human Sexual Response",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "William H. Masters; Virginia E. Johnson",
+      "modelYear": 1966,
+      "items": [
+        {
+          "codigo": "p_mj_historia_psicosexual_estructurada",
+          "nombre": "Historia psicosexual-social estructurada",
+          "texto": "Procedimiento de evaluación intensiva realizado durante los primeros días del programa, con entrevistas separadas y cruzadas a ambos miembros de la pareja para reconstruir cronológicamente historia sexual, valores, mitos, experiencias tempranas, pautas maritales y significado de la disfunción. La finalidad no es solo recoger datos, sino situar la dificultad sexual dentro de la biografía, el estilo relacional y el sistema de creencias de cada uno, generando una formulación clínica útil para la intervención posterior. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "I_continuidadBiografica",
+          "tipo": "procedimiento"
         }
       ]
     },
@@ -669,6 +685,43 @@
           "texto": "Procedimiento dirigido a elaborar las pérdidas asociadas al trauma, incluyendo pérdidas de seguridad, confianza, relaciones, oportunidades y partes del self. El duelo permite cerrar procesos abiertos, integrar el daño en la historia personal y liberar energía psíquica bloqueada en la evitación o la repetición. Referencia: Herman, J. L. (1992).",
           "sub": "I_continuidadBiografica",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "narrative-exposure-therapy-net-schauer-neuner-elbert-2005",
+      "modelLabel": "Narrative Exposure Therapy (NET)",
+      "modelGrupo": "Integrativo",
+      "modelAutores": "Maggie Schauer; Frank Neuner; Thomas Elbert",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_net_reconstruccion_narrativa",
+          "nombre": "Reconstrucción narrativa de la historia de vida",
+          "texto": "Procedimiento que integra todos los eventos trabajados en una narrativa autobiográfica completa y coherente, permitiendo que el trauma quede contextualizado dentro de la vida del paciente y no como elemento dominante o aislado (Schauer et al., 2011).",
+          "sub": "I_continuidadBiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_net_testimonio",
+          "nombre": "Testimonio narrativo final",
+          "texto": "Procedimiento final en el que se documenta la narrativa completa del paciente en forma escrita, consolidando la integración del trauma y proporcionando un relato coherente de su historia. En algunos contextos, este testimonio puede tener también valor simbólico o social (Schauer et al., 2011).",
+          "sub": "I_continuidadBiografica",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_net_revision",
+          "nombre": "Lectura y revisión del testimonio",
+          "texto": "Se revisa conjuntamente el relato completo, consolidando la coherencia narrativa y reforzando la integración del trauma en la historia de vida (Schauer et al., 2011).",
+          "sub": "I_continuidadBiografica",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_net_firma",
+          "nombre": "Firma del testimonio",
+          "texto": "El paciente firma el documento final como acto simbólico de apropiación de su historia, reforzando la integración y el cierre del proceso terapéutico (Schauer et al., 2011).",
+          "sub": "I_continuidadBiografica",
+          "tipo": "micro"
         }
       ]
     },

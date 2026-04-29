@@ -1,7 +1,7 @@
 {
   "subprocesoId": "RI_mindfulnessSelf",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 38,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 40,
   "modelos": [
     {
       "modelId": "kyokan-enfoques-humanistas-japon-1948",
@@ -381,6 +381,92 @@
       ]
     },
     {
+      "modelId": "abbt-roemer-orsillo-2007",
+      "modelLabel": "Acceptance-Based Behavioral Therapy (ABBT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Andrew T. Roemer; Susan M. Orsillo",
+      "modelYear": 2007,
+      "items": [
+        {
+          "codigo": "p_abbt_mindfulness_progresivo",
+          "nombre": "Entrenamiento progresivo en mindfulness",
+          "texto": "Procedimiento estructurado de desarrollo de habilidades mindfulness comenzando por atención a la respiración y estímulos neutros, progresando hacia emociones, pensamientos y autocompasión, con prácticas formales e informales. El objetivo es cultivar conciencia no enjuiciadora y reducir reactividad automática. Referencia: Hayes-Skelton et al. (2013), tabla de sesiones.",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_abbt_decentramiento",
+          "nombre": "Entrenamiento en descentramiento (defusion)",
+          "texto": "Procedimiento orientado a observar pensamientos y emociones como eventos mentales transitorios en lugar de realidades definitorias, utilizando ejercicios de distanciamiento atencional que reducen la fusión cognitiva. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_abbt_mindfulness_aplicado",
+          "nombre": "Aplicación de mindfulness en contextos emocionalmente activados",
+          "texto": "Procedimiento dirigido a aplicar habilidades mindfulness en situaciones reales de activación emocional, facilitando apertura, regulación y elección conductual en contextos de ansiedad, preocupación o conflicto interpersonal. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_abbt_mindfulness_respiracion",
+          "nombre": "Mindfulness de la respiración",
+          "texto": "Ejercicio básico de atención a la respiración orientado a entrenar la conciencia del momento presente sin modificar la experiencia, facilitando el desarrollo inicial de habilidades mindfulness y reducción de reactividad automática. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_raisin",
+          "nombre": "Ejercicio de la pasa (raisin exercise)",
+          "texto": "Ejercicio de atención plena aplicado a la experiencia sensorial de comer una pasa, utilizado para entrenar la conciencia no automática y desarrollar la mente de principiante en actividades cotidianas. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_pmr",
+          "nombre": "Relajación muscular progresiva consciente",
+          "texto": "Ejercicio de tensión y relajación muscular utilizado tanto para aumentar la conciencia corporal como para reducir activación fisiológica, integrando regulación somática con atención plena. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_mindfulness_sonidos",
+          "nombre": "Mindfulness de sonidos",
+          "texto": "Ejercicio de atención plena dirigido a observar sonidos externos sin juicio, entrenando la capacidad de atención abierta y no reactiva. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_observer",
+          "nombre": "Ejercicio de observador (observer exercise)",
+          "texto": "Ejercicio de toma de perspectiva en el que el paciente observa sus pensamientos y emociones como eventos transitorios, facilitando descentramiento. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_leaves_stream",
+          "nombre": "Ejercicio de hojas en el río (leaves on a stream)",
+          "texto": "Ejercicio de defusión en el que pensamientos se colocan en hojas que flotan en un río, facilitando observación sin implicación. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_breathing_space",
+          "nombre": "Espacio de respiración de 3 minutos",
+          "texto": "Práctica breve estructurada en tres fases: toma de conciencia, focalización en la respiración y expansión de la atención, utilizada para interrumpir automatismos cognitivos y emocionales. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_abbt_attention_shift",
+          "nombre": "Redirección atencional al presente",
+          "texto": "Microintervención consistente en notar la distracción por preocupación y volver suavemente a la experiencia presente, reforzando control atencional flexible. Referencia: Hayes-Skelton et al. (2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "act-hayes-strosahl-wilson-1999",
       "modelLabel": "Terapia de Aceptación y Compromiso (ACT)",
       "modelGrupo": "Cognitivo",
@@ -563,6 +649,43 @@
           "codigo": "m_mbct_caminar_contacto",
           "nombre": "Caminar consciente: contacto planta–suelo",
           "texto": "Microintervención de llevar atención al contacto del pie con el suelo durante unos minutos para aterrizar, reducir absorción cognitiva y reorientar a experiencia presente cuando hay tendencia a la rumiación. (Segal, Williams & Teasdale, 2002; 2013).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_reduccion_espectador_interno_atencion_erotica",
+          "nombre": "Reducción del espectador interno y entrenamiento atencional erótico",
+          "texto": "Procedimiento dirigido a detectar y modificar la posición de autoobservación evaluativa durante la actividad sexual, entrenando el paso desde la vigilancia del rendimiento hacia claves sensoriales, emocionales y relacionales presentes. Incluye identificación de momentos de autoevaluación, uso de anclajes atencionales eróticos, retorno deliberado a sensaciones corporales, contacto visual, respiración, tacto o fantasía consensuada, y práctica entre sesiones en contextos de baja exigencia. Su objetivo es disminuir interferencia cognitiva y recuperar disponibilidad excitatoria. Referencia: Barlow (1986); Meston & Bradford (2007); Sierra et al. (2012).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_detectar_espectador_interno",
+          "nombre": "Detectar el momento de entrada del espectador interno",
+          "texto": "Microintervención destinada a identificar el instante exacto en que la persona deja de estar en la experiencia sexual y pasa a mirarse desde fuera, evaluando su cuerpo, su desempeño o la reacción de la pareja. Detectar este cambio de posición permite intervenir antes de que la autoobservación capture todo el campo atencional. Referencia: Masters & Johnson (1970); Barlow (1986).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_volver_clave_sensorial",
+          "nombre": "Volver a una clave sensorial concreta",
+          "texto": "Microintervención breve que entrena el retorno deliberado desde la evaluación cognitiva hacia una clave sensorial presente, como temperatura de la piel, presión del contacto, respiración, olor, textura o ritmo. Su función es recuperar inmersión corporal y reducir interferencia cognitiva durante ejercicios de focalización sensorial o encuentros íntimos. Referencia: Barlow (1986); Masters & Johnson (1970); Meston & Bradford (2007).",
+          "sub": "RI_mindfulnessSelf",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_cbt_sexual_autoexploracion_graduada",
+          "nombre": "Practicar autoexploración graduada sin juicio",
+          "texto": "Microintervención de exploración corporal privada y gradual orientada a conocer sensaciones, preferencias, ritmos y zonas de placer sin objetivo inmediato de orgasmo. Es útil en dificultades orgásmicas, vergüenza corporal, bajo deseo o desconocimiento del patrón de estimulación. Referencia: Masters & Johnson (1970); Meston & Bradford (2007).",
           "sub": "RI_mindfulnessSelf",
           "tipo": "micro"
         }

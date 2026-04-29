@@ -1,7 +1,7 @@
 {
   "subprocesoId": "N_construccionAlternativa",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 70,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 74,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -257,6 +257,29 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_cbt_sexual_deseo_bajo_discrepancia_deseo",
+          "nombre": "Trabajo conductual con deseo sexual bajo o discrepancia de deseo",
+          "texto": "Procedimiento dirigido a diferenciar deseo bajo primario, deseo inhibido por ansiedad, deseo responsivo, discrepancia de deseo en pareja, evitación por presión y pérdida de contexto erótico. La intervención combina psicoeducación sobre deseo contextual, identificación de facilitadores e inhibidores, acuerdos de acercamiento no exigente, aumento de conductas eróticas elegidas y reducción de ciclos de demanda-retirada o presión-evitación. Referencia: Meston & Bradford (2007); Meston & Buss (2007); Sierra et al. (2012).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_cbt_sexual_regla_flexible_alternativa",
+          "nombre": "Construir una regla sexual flexible alternativa",
+          "texto": "Microintervención que sustituye una regla rígida, como ‘debo estar siempre disponible’ o ‘si paro decepciono’, por una formulación flexible y propia, como ‘puedo cuidar el vínculo y también escuchar mi cuerpo’. Integra cognición, identidad sexual y agencia. Referencia: Barlow (1986); Sierra et al. (2012).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "modelo-cognitivo-panico-clark-1986",
       "modelLabel": "Modelo cognitivo del pánico",
       "modelGrupo": "Cognitivo",
@@ -269,6 +292,52 @@
           "texto": "Procedimiento central del modelo que consiste en cuestionar activamente la validez de las interpretaciones catastróficas mediante evidencia empírica, lógica y experiencia directa, y generar explicaciones alternativas más realistas (por ejemplo, “esto es ansiedad, no un infarto”). No se trata de sustituir pensamientos de forma superficial, sino de debilitar la credibilidad de la interpretación de amenaza y construir un marco explicativo más ajustado que reduzca la activación emocional. Referencia: Clark, D. M. (1986); Beck et al. (1985).",
           "sub": "N_construccionAlternativa",
           "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "modelo-transaccional-estres-lazarus-folkman-1984",
+      "modelLabel": "Modelo transaccional del estrés",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Richard S. Lazarus; Susan Folkman",
+      "modelYear": 1984,
+      "items": [
+        {
+          "codigo": "p_lazarus_valores_estres",
+          "nombre": "Reorganización de prioridades y valores ante el estrés",
+          "texto": "Procedimiento orientado a reevaluar la importancia atribuida a situaciones estresantes en función de valores personales, permitiendo reducir la carga de eventos que no son coherentes con la identidad o prioridades del individuo. Este ajuste redefine el significado del estresor y disminuye su impacto psicológico. Referencia: Lazarus (1999).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        }
+      ]
+    },
+    {
+      "modelId": "preventive-cognitive-therapy-bockting-2005",
+      "modelLabel": "Preventive Cognitive Therapy (PCT)",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "Claudi L. H. Bockting",
+      "modelYear": 2005,
+      "items": [
+        {
+          "codigo": "p_pct_actitudes_alternativas",
+          "nombre": "Desarrollo de actitudes alternativas",
+          "texto": "Procedimiento dirigido a construir nuevas actitudes más flexibles y adaptativas que puedan sustituir a las disfuncionales cuando se activan. Estas alternativas se elaboran de forma explícita y se vinculan a situaciones reales, con el objetivo de reducir la reactividad cognitiva ante estados de ánimo negativos. Referencia: Bockting et al. (2005) :contentReference[oaicite:3]{index=3}.",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_pct_actitudes_alternativas",
+          "nombre": "Generación de actitudes alternativas",
+          "texto": "Construcción activa de interpretaciones y actitudes alternativas más flexibles que puedan sustituir a las disfuncionales en momentos de activación emocional. Este proceso busca debilitar la asociación automática entre estado de ánimo bajo y cognición negativa. Referencia: Bockting et al. (2005).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        },
+        {
+          "codigo": "m_pct_practica_actitudes",
+          "nombre": "Práctica conductual de nuevas actitudes",
+          "texto": "Ensayo deliberado en la vida cotidiana de las nuevas actitudes desarrolladas en sesión, permitiendo consolidar cambios cognitivos a través de experiencia directa. Este componente convierte la reestructuración cognitiva en aprendizaje experiencial. Referencia: Bockting et al. (2005, sesiones 6–8) :contentReference[oaicite:2]{index=2}.",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
         }
       ]
     },
@@ -1719,6 +1788,36 @@
           "codigo": "m_milan_pregunta_futuro",
           "nombre": "Pregunta de futuro hipotético",
           "texto": "Microintervención orientada a explorar cómo reaccionaría cada miembro si el síntoma desapareciera o cambiara (“si mañana dejara de ocurrir, ¿quién lo notaría primero?”), permitiendo anticipar reorganizaciones del sistema y detectar funciones ocultas del síntoma dentro del equilibrio relacional. (Selvini Palazzoli et al., 1978).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "feedback-informed-treatment-duncan-miller-2000",
+      "modelLabel": "Feedback-Informed Treatment (FIT)",
+      "modelGrupo": "Transversal",
+      "modelAutores": "Barry L. Duncan; Scott D. Miller",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "p_fit_ajuste",
+          "nombre": "Ajuste adaptativo del tratamiento",
+          "texto": "Procedimiento que consiste en modificar de forma activa el enfoque terapéutico cuando los datos de resultado indican falta de progreso, incluyendo cambios en técnicas, ritmo, foco, intensidad o incluso modelo de intervención, priorizando siempre la utilidad percibida por el cliente frente a la fidelidad a un protocolo, y asumiendo la responsabilidad clínica de no continuar un tratamiento que no esté funcionando (Duncan, Miller & Sparks, 2004; Miller & Duncan, 2000).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_fit_integracion",
+          "nombre": "Integración transteórica de técnicas",
+          "texto": "Procedimiento que permite utilizar técnicas de diferentes modelos psicoterapéuticos en función de su ajuste al cliente, siempre subordinadas al feedback de resultado y alianza, evitando la fidelidad rígida a un enfoque único y priorizando la eficacia pragmática en el caso concreto (Duncan, Miller & Sparks, 2004).",
+          "sub": "N_construccionAlternativa",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_fit_excepciones",
+          "nombre": "Explorar excepciones de mejora",
+          "texto": "Microintervención que busca momentos en los que el cliente ha estado mejor para identificar recursos y condiciones de cambio, utilizándolos como base para el avance terapéutico (Duncan, Miller & Sparks, 2004).",
           "sub": "N_construccionAlternativa",
           "tipo": "micro"
         }

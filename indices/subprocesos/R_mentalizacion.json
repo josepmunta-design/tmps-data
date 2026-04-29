@@ -1,7 +1,7 @@
 {
   "subprocesoId": "R_mentalizacion",
-  "updatedAt": "2026-04-18T09:58:21.207Z",
-  "totalModelos": 49,
+  "updatedAt": "2026-04-29T12:54:45.804Z",
+  "totalModelos": 51,
   "modelos": [
     {
       "modelId": "confucianismo-psicologia-moral-puentes-contemporaneos-1980",
@@ -156,6 +156,22 @@
       ]
     },
     {
+      "modelId": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+      "modelLabel": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+      "modelGrupo": "Cognitivo",
+      "modelAutores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+      "modelYear": 2000,
+      "items": [
+        {
+          "codigo": "m_cbt_sexual_identificar_lectura_mental",
+          "nombre": "Identificar lectura mental sexual",
+          "texto": "Microintervención que detecta inferencias no verificadas sobre lo que la pareja piensa o siente, como ‘seguro que se decepciona’, ‘cree que soy raro’ o ‘ya no le atraigo’. Al hacerlas explícitas, se pueden contrastar mediante comunicación directa y reducir ansiedad relacional. Referencia: Barlow (1986); Meston & Bradford (2007).",
+          "sub": "R_mentalizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
       "modelId": "ruler-yale-emotional-intelligence-2012",
       "modelLabel": "RULER (Yale Center for Emotional Intelligence)",
       "modelGrupo": "Cognitivo",
@@ -212,6 +228,43 @@
           "codigo": "m_sst_role_reversal",
           "nombre": "Role reversal (cambio de roles)",
           "texto": "Microintervención donde el paciente adopta el rol del otro en el role-play para comprender intenciones, necesidades y percepciones ajenas, reduciendo atribuciones rígidas y mejorando ajuste comunicativo; es especialmente útil en conflictos, TLP y patrones interpersonales polarizados.",
+          "sub": "R_mentalizacion",
+          "tipo": "micro"
+        }
+      ]
+    },
+    {
+      "modelId": "human-sexual-response-masters-johnson-1966",
+      "modelLabel": "Human Sexual Response",
+      "modelGrupo": "Conductismo",
+      "modelAutores": "William H. Masters; Virginia E. Johnson",
+      "modelYear": 1966,
+      "items": [
+        {
+          "codigo": "p_mj_coterapia_dual_sex",
+          "nombre": "Formato de coterapia dual-sex",
+          "texto": "Procedimiento organizativo en el que un terapeuta hombre y una terapeuta mujer trabajan conjuntamente con la pareja, actuando como traductores, educadores y observadores de la experiencia sexual masculina y femenina. Masters y Johnson sostienen que este formato reduce sesgos, mejora la fiabilidad de la información, incrementa la seguridad subjetiva de cada miembro de la pareja y facilita una educación sexual más creíble y matizada. No es un detalle logístico menor, sino una pieza técnica central del modelo clínico original. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "R_mentalizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_historia_psicosexual_estructurada",
+          "nombre": "Historia psicosexual-social estructurada",
+          "texto": "Procedimiento de evaluación intensiva realizado durante los primeros días del programa, con entrevistas separadas y cruzadas a ambos miembros de la pareja para reconstruir cronológicamente historia sexual, valores, mitos, experiencias tempranas, pautas maritales y significado de la disfunción. La finalidad no es solo recoger datos, sino situar la dificultad sexual dentro de la biografía, el estilo relacional y el sistema de creencias de cada uno, generando una formulación clínica útil para la intervención posterior. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "R_mentalizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "p_mj_senales_no_verbales",
+          "nombre": "Entrenamiento de señales no verbales y ajuste mutuo",
+          "texto": "Procedimiento destinado a que la pareja aprenda a modular el contacto corporal mediante indicaciones no verbales y microajustes directos sobre la mano o el movimiento del otro, señalando presión, ritmo, zona o tipo de estimulación deseada. El objetivo es desarrollar un sistema de comunicación sexual específico y flexible, opuesto a la fantasía cultural de que uno de los miembros —sobre todo el hombre— debería saber instintivamente qué necesita el otro. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
+          "sub": "R_mentalizacion",
+          "tipo": "procedimiento"
+        },
+        {
+          "codigo": "m_mj_descripcion_experiencia",
+          "nombre": "Pedir descripción en primera persona de la experiencia corporal",
+          "texto": "Intervención en la que se invita a cada miembro de la pareja a verbalizar en primera persona qué está sintiendo corporalmente durante los ejercicios, facilitando la conexión entre experiencia interna y comunicación interpersonal y desarrollando un lenguaje sexual propio más preciso y compartido. Referencia: Masters, W. H., & Johnson, V. E. (1970).",
           "sub": "R_mentalizacion",
           "tipo": "micro"
         }
