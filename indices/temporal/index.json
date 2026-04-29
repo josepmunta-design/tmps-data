@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-29T14:18:24.413Z",
+  "generatedAt": "2026-04-29T14:19:42.311Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 10,
-    "modelos": 204,
-    "links": 228,
-    "unresolvedInfluences": 697
+    "modelos": 205,
+    "links": 232,
+    "unresolvedInfluences": 698
   },
   "nodes": [
     {
@@ -104,6 +104,35 @@
       "ciudad": "Viena",
       "pais": "Austria",
       "escuelaId": "psicoanalisis"
+    },
+    {
+      "id": "pragmatismo",
+      "label": "Pragmatismo",
+      "year": 1907,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/pragmatismo.json",
+      "authors": "William James; John Dewey; Charles S. Peirce",
+      "summary": "El pragmatismo es un marco epistemológico que define el conocimiento en términos de su utilidad práctica y sus efectos en la experiencia. Frente a la búsqueda de verdades absolutas o representaciones exactas de la realidad, el pragmatismo propone que las ideas son herramientas para la acción y deben evaluarse por las consecuencias que producen. La verdad no es una correspondencia estática con la realidad, sino aquello que funciona, que permite resolver problemas y adaptarse de manera eficaz al entorno. En psicoterapia, este enfoque fundamenta modelos que priorizan la funcionalidad del cambio sobre la exactitud teórica, orientando la intervención hacia lo que produce resultados útiles para la vida del paciente. El terapeuta actúa como un facilitador de experimentación, evaluando continuamente qué estrategias generan mejoras reales en la experiencia y en la conducta.",
+      "influencias": [
+        "Empirismo",
+        "Darwinismo",
+        "Filosofía americana",
+        "Psicología funcional",
+        "Constructivismo"
+      ],
+      "refs": [
+        "James, W. (1907). Pragmatism.",
+        "Dewey, J. (1938). Logic: The Theory of Inquiry.",
+        "Peirce, C. S. (1878). How to Make Our Ideas Clear."
+      ],
+      "lat": 42.3736,
+      "lon": -71.1097,
+      "ciudad": "Cambridge, Massachusetts",
+      "pais": "EE. UU.",
+      "escuelaId": "epistemologia"
     },
     {
       "id": "ley-efecto-thorndike-1911",
@@ -6441,6 +6470,10 @@
       "target": "focusing-gendlin-1961"
     },
     {
+      "source": "pragmatismo",
+      "target": "focusing-gendlin-1961"
+    },
+    {
       "source": "psicologia-analitica-jung-1913",
       "target": "terapia-transpersonal-1968"
     },
@@ -6547,6 +6580,10 @@
     {
       "source": "psicologia-self-kohut",
       "target": "self-dialogico-hermans"
+    },
+    {
+      "source": "pragmatismo",
+      "target": "construccionismo-social-gergen-1985"
     },
     {
       "source": "terapia-narrativa-white-epston",
@@ -6783,6 +6820,14 @@
     {
       "source": "teoria-apego-bowlby",
       "target": "self-determination-therapy-deci-ryan-1985"
+    },
+    {
+      "source": "constructivismo",
+      "target": "pragmatismo"
+    },
+    {
+      "source": "pragmatismo",
+      "target": "construccionismo-social"
     },
     {
       "source": "falsacionismo",
@@ -8163,10 +8208,6 @@
       "influence": "Psicología experiencial"
     },
     {
-      "target": "focusing-gendlin-1961",
-      "influence": "Pragmatismo"
-    },
-    {
       "target": "terapia-transpersonal-1968",
       "influence": "Psicología humanista (tercera fuerza)"
     },
@@ -8529,10 +8570,6 @@
     {
       "target": "construccionismo-social-gergen-1985",
       "influence": "Postestructuralismo"
-    },
-    {
-      "target": "construccionismo-social-gergen-1985",
-      "influence": "Pragmatismo"
     },
     {
       "target": "construccionismo-social-gergen-1985",
@@ -9507,8 +9544,20 @@
       "influence": "Biología experimental"
     },
     {
-      "target": "construccionismo-social",
-      "influence": "Pragmatismo"
+      "target": "pragmatismo",
+      "influence": "Empirismo"
+    },
+    {
+      "target": "pragmatismo",
+      "influence": "Darwinismo"
+    },
+    {
+      "target": "pragmatismo",
+      "influence": "Filosofía americana"
+    },
+    {
+      "target": "pragmatismo",
+      "influence": "Psicología funcional"
     },
     {
       "target": "construccionismo-social",
