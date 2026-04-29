@@ -1,6 +1,6 @@
 {
   "source": "data/Core/escuelas",
-  "totalFiles": 10,
+  "totalFiles": 11,
   "files": [
     {
       "path": "data/Core/escuelas/cognitivo.json",
@@ -8,6 +8,19 @@
         "id": "Cognitivo",
         "label": "Cognitivo",
         "modelos": [
+          {
+            "id": "modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000",
+            "label": "Modelo cognitivo-conductual moderno en disfunciones sexuales",
+            "year": 2000,
+            "importance": 2,
+            "tipo": "modelo",
+            "autores": "David H. Barlow; Cindy M. Meston; Juan Carlos Sierra",
+            "ciudad": "Boston, Massachusetts / Austin, Texas / Granada",
+            "pais": "EE. UU. / España",
+            "lat": 42.350499,
+            "lon": -71.105399,
+            "file": "modelos/cognitivo/modelo-cognitivo-conductual-moderno-disfunciones-sexuales-barlow-meston-sierra-2000.json"
+          },
           {
             "id": "cft-gilbert-2009",
             "label": "Compassion Focused Therapy (CFT)",
@@ -19,6 +32,31 @@
             "lat": 52.92253,
             "lon": -1.474619,
             "file": "modelos/cognitivo/cft-gilbert-2009.json"
+          },
+          {
+            "id": "modelo-transaccional-estres-lazarus-folkman-1984",
+            "label": "Modelo transaccional del estrés",
+            "year": 1984,
+            "importance": 3,
+            "autores": "Richard S. Lazarus; Susan Folkman",
+            "ciudad": "Berkeley, California",
+            "pais": "EE. UU.",
+            "lat": 37.871593,
+            "lon": -122.272743,
+            "tipo": "marco",
+            "file": "modelos/cognitivo/modelo-transaccional-estres-lazarus-folkman-1984.json"
+          },
+          {
+            "id": "abbt-roemer-orsillo-2007",
+            "label": "Acceptance-Based Behavioral Therapy (ABBT)",
+            "year": 2007,
+            "autores": "Andrew T. Roemer; Susan M. Orsillo",
+            "file": "modelos/cognitivo/abbt-roemer-orsillo-2007.json",
+            "tipo": "programa",
+            "ciudad": "Boston, Massachusetts",
+            "pais": "EE. UU.",
+            "lat": 42.360082,
+            "lon": -71.05888
           },
           {
             "id": "preventive-cognitive-therapy-bockting-2005",
@@ -470,6 +508,19 @@
             "isMarco": true,
             "file": "modelos/conductismo/teoria-bifactorial-ansiedad-mowrer.json",
             "tipo": "marco"
+          },
+          {
+            "id": "human-sexual-response-masters-johnson-1966",
+            "label": "Human Sexual Response",
+            "year": 1966,
+            "autores": "William H. Masters; Virginia E. Johnson",
+            "grupo": "Conductismo",
+            "tipo": "modelo",
+            "ciudad": "St. Louis, Missouri",
+            "pais": "EE. UU.",
+            "lat": 38.627003,
+            "lon": -90.199402,
+            "file": "modelos/conductismo/human-sexual-response-masters-johnson-1966.json"
           },
           {
             "id": "one-session-treatment-ost-1989",
@@ -945,7 +996,7 @@
             "lat": 45.070312,
             "lon": 7.686857,
             "file": "modelos/constructivista/polaridades-semanticas.json",
-            "tipo": "constructo"
+            "tipo": "marco"
           },
           {
             "id": "psicoterapia-constructos-personales-integrativa-feixas-villegas-2000",
@@ -1056,6 +1107,54 @@
             "isMarco": false,
             "file": "modelos/constructivista/apego-desorganizado-disociacion-liotti-1992.json",
             "tipo": "modelo"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/Core/escuelas/epistemologia.json",
+      "data": {
+        "id": "epistemologia",
+        "label": "Epistemología",
+        "modelos": [
+          {
+            "id": "positivismo",
+            "label": "Positivismo",
+            "year": 1830,
+            "importance": 3,
+            "autores": "Auguste Comte",
+            "ciudad": "París",
+            "pais": "Francia",
+            "lat": 48.8566,
+            "lon": 2.3522,
+            "tipo": "marco",
+            "file": "modelos/epistemologia/positivismo.json"
+          },
+          {
+            "id": "falsacionismo",
+            "label": "Falsacionismo",
+            "year": 1959,
+            "importance": 3,
+            "autores": "Karl R. Popper",
+            "ciudad": "Londres",
+            "pais": "Reino Unido",
+            "lat": 51.5074,
+            "lon": -0.1278,
+            "tipo": "marco",
+            "file": "modelos/epistemologia/falsacionismo.json"
+          },
+          {
+            "id": "programas-investigacion-lakatos",
+            "label": "Programas de investigación científica",
+            "year": 1970,
+            "importance": 3,
+            "autores": "Imre Lakatos",
+            "ciudad": "Londres",
+            "pais": "Reino Unido",
+            "lat": 51.5074,
+            "lon": -0.1278,
+            "tipo": "marco",
+            "file": "modelos/epistemologia/programas-investigacion-lakatos.json"
           }
         ]
       }
@@ -1402,6 +1501,11 @@
           "id": "otros",
           "label": "Otros",
           "file": "escuelas/otros.json"
+        },
+        {
+          "id": "epistemologia",
+          "label": "Epistemología",
+          "file": "escuelas/epistemologia.json"
         }
       ]
     },
@@ -1447,7 +1551,7 @@
             "pais": "EE. UU.",
             "lat": 40.712776,
             "lon": -74.005974,
-            "tipo": "constructo",
+            "tipo": "marco",
             "file": "modelos/integrativo/rupturas-reparacion-alianza-safran-muran-2000.json"
           },
           {
@@ -2391,6 +2495,19 @@
             "lon": -71.802293,
             "file": "modelos/transversal/mindfulness-mbsr-contemplativo-1979.json",
             "tipo": "programa"
+          },
+          {
+            "id": "feedback-informed-treatment-duncan-miller-2000",
+            "label": "Feedback-Informed Treatment (FIT)",
+            "year": 2000,
+            "importance": 3,
+            "autores": "Barry L. Duncan; Scott D. Miller",
+            "tipo": "marco",
+            "ciudad": "Chicago, Illinois",
+            "pais": "EE. UU.",
+            "lat": 41.878113,
+            "lon": -87.629799,
+            "file": "modelos/transversal/feedback-informed-treatment-duncan-miller-2000.json"
           },
           {
             "id": "modelo-procesual-regulacion-emocional-gross-1998",
