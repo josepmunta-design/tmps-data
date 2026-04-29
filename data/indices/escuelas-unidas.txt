@@ -1114,24 +1114,48 @@
   ]
 }
 
-### FILE: data/Core/escuelas/Epistemología.json
+### FILE: data/Core/escuelas/epis.json
 {
-  "id": "Epistemología",
+  "id": "Constructivista",
+  "label": "Constructivista",
+  "modelos": [
+    {
+      "id": "apego-desorganizado-disociacion-liotti-1992",
+      "label": "Modelo de apego desorganizado, disociación y sistemas motivacionales",
+      "year": 1992,
+      "importance": 3,
+      "autores": "Giovanni Liotti",
+      "lat": 41.902783,
+      "lon": 12.496366,
+      "isMarco": false,
+      "file": "modelos/constructivista/apego-desorganizado-disociacion-liotti-1992.json",
+      "tipo": "modelo"
+    }
+  ]
+}
+
+### FILE: data/Core/escuelas/epistemologia.json
+{
+  "id": "epistemologia",
   "label": "Epistemología",
   "modelos": [
-{
-  "id": "positivismo",
-  "label": "Positivismo",
-  "year": 1830,
-  "importance": 3,
-  "autores": "Auguste Comte",
-  "ciudad": "París",
-  "pais": "Francia",
-  "lat": 48.8566,
-  "lon": 2.3522,
-  "file": "modelos/epistemologia/positivismo.json"
-}
-  
+    {"id":"positivismo","label":"Positivismo","year":1830,"importance":3,"autores":"Auguste Comte","ciudad":"París","pais":"Francia","lat":48.8566,"lon":2.3522,"tipo":"epistemologia-base","file":"modelos/epistemologia/positivismo.json"},
+    {"id":"pragmatismo","label":"Pragmatismo","year":1907,"importance":3,"autores":"William James; John Dewey; Charles S. Peirce","ciudad":"Cambridge, Massachusetts","pais":"EE. UU.","lat":42.3736,"lon":-71.1097,"tipo":"epistemologia-base","file":"modelos/epistemologia/pragmatismo.json"},
+    {"id":"constructivismo","label":"Constructivismo","year":1936,"importance":3,"autores":"Jean Piaget","ciudad":"Ginebra","pais":"Suiza","lat":46.2044,"lon":6.1432,"tipo":"epistemologia-base","file":"modelos/epistemologia/constructivismo.json"},
+    {"id":"construccionismo-social","label":"Construccionismo social","year":1985,"importance":3,"autores":"Kenneth J. Gergen","ciudad":"Swarthmore","pais":"EE. UU.","lat":39.9021,"lon":-75.3499,"tipo":"epistemologia-base","file":"modelos/epistemologia/construccionismo-social.json"},
+    {"id":"interaccionismo-simbolico","label":"Interaccionismo simbólico","year":1934,"importance":3,"autores":"George H. Mead; Herbert Blumer","ciudad":"Chicago","pais":"EE. UU.","lat":41.8781,"lon":-87.6298,"tipo":"epistemologia-base","file":"modelos/epistemologia/interaccionismo-simbolico.json"},
+    {"id":"fenomenologia","label":"Fenomenología","year":1900,"importance":3,"autores":"Edmund Husserl","ciudad":"Göttingen","pais":"Alemania","lat":51.5413,"lon":9.9158,"tipo":"epistemologia-base","file":"modelos/epistemologia/fenomenologia.json"},
+    {"id":"hermeneutica","label":"Hermenéutica","year":1960,"importance":3,"autores":"Hans-Georg Gadamer; Paul Ricoeur","ciudad":"Heidelberg","pais":"Alemania","lat":49.3988,"lon":8.6724,"tipo":"epistemologia-base","file":"modelos/epistemologia/hermeneutica.json"},
+    {"id":"realismo-critico","label":"Realismo crítico","year":1975,"importance":3,"autores":"Roy Bhaskar","ciudad":"Oxford","pais":"Reino Unido","lat":51.7548,"lon":-1.2544,"tipo":"epistemologia-base","file":"modelos/epistemologia/realismo-critico.json"},
+    {"id":"posestructuralismo-discurso","label":"Posestructuralismo y discurso","year":1970,"importance":2,"autores":"Michel Foucault","ciudad":"París","pais":"Francia","lat":48.8566,"lon":2.3522,"tipo":"epistemologia-base","file":"modelos/epistemologia/posestructuralismo-discurso.json"},
+    {"id":"enactivismo","label":"Enactivismo","year":1991,"importance":3,"autores":"Francisco J. Varela; Evan Thompson; Eleanor Rosch","ciudad":"París","pais":"Francia","lat":48.8566,"lon":2.3522,"tipo":"epistemologia-base","file":"modelos/epistemologia/enactivismo.json"},
+    {"id":"falsacionismo","label":"Falsacionismo","year":1959,"importance":3,"autores":"Karl R. Popper","ciudad":"Londres","pais":"Reino Unido","lat":51.5074,"lon":-0.1278,"tipo":"metateoria-ciencia","file":"modelos/epistemologia/falsacionismo.json"},
+    {"id":"programas-investigacion-lakatos","label":"Programas de investigación científica","year":1970,"importance":3,"autores":"Imre Lakatos","ciudad":"Londres","pais":"Reino Unido","lat":51.5074,"lon":-0.1278,"tipo":"metateoria-ciencia","file":"modelos/epistemologia/programas-investigacion-lakatos.json"},
+    {"id":"paradigmas-kuhn","label":"Paradigmas y revoluciones científicas","year":1962,"importance":3,"autores":"Thomas S. Kuhn","ciudad":"Berkeley","pais":"EE. UU.","lat":37.8719,"lon":-122.2585,"tipo":"metateoria-ciencia","file":"modelos/epistemologia/paradigmas-kuhn.json"},
+    {"id":"contextualismo-funcional-act","label":"Contextualismo funcional (ACT)","year":2001,"importance":3,"autores":"Steven C. Hayes","ciudad":"Reno","pais":"EE. UU.","lat":39.5296,"lon":-119.8138,"tipo":"epistemologia-aplicada","file":"modelos/epistemologia/contextualismo-funcional-act.json"},
+    {"id":"constructivismo-clinico-postracionalista","label":"Constructivismo clínico (postracionalista)","year":1991,"importance":3,"autores":"Vittorio Guidano","ciudad":"Roma","pais":"Italia","lat":41.9028,"lon":12.4964,"tipo":"epistemologia-aplicada","file":"modelos/epistemologia/constructivismo-clinico-postracionalista.json"},
+    {"id":"construccionismo-narrativo","label":"Construccionismo narrativo","year":1990,"importance":3,"autores":"Michael White; David Epston","ciudad":"Adelaide","pais":"Australia","lat":-34.9285,"lon":138.6007,"tipo":"epistemologia-aplicada","file":"modelos/epistemologia/construccionismo-narrativo.json"},
+    {"id":"epistemologia-sistemica-cibernetica-segundo-orden","label":"Epistemología sistémica","year":1980,"importance":3,"autores":"Heinz von Foerster","ciudad":"Urbana","pais":"EE. UU.","lat":40.1106,"lon":-88.2073,"tipo":"epistemologia-aplicada","file":"modelos/epistemologia/epistemologia-sistemica-cibernetica-segundo-orden.json"}
   ]
 }
 
@@ -1440,7 +1464,8 @@
   { "id": "sistemico",      "label": "Sistémico",       "file": "escuelas/sistemico.json" },
   { "id": "transversal",    "label": "Transversal",     "file": "escuelas/transversal.json" },
   { "id": "otros",    "label": "Otros",     "file": "escuelas/otros.json" },
-   { "id": "epistemología",    "label": "Epistemología",     "file": "escuelas/epistemología.json" }
+    { "id": "epis",    "label": "Epis",     "file": "escuelas/epis.json" },
+   { "id": "epistemologia",    "label": "Epistemología",     "file": "escuelas/epistemologia.json" }
   
 ]
 
