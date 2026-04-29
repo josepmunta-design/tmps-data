@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-29T14:50:26.224Z",
+  "generatedAt": "2026-04-29T14:52:22.488Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 11,
-    "modelos": 213,
-    "links": 254,
-    "unresolvedInfluences": 695
+    "modelos": 214,
+    "links": 255,
+    "unresolvedInfluences": 699
   },
   "nodes": [
     {
@@ -4031,6 +4031,35 @@
       "escuelaId": "epistemologia"
     },
     {
+      "id": "enactivismo",
+      "label": "Enactivismo",
+      "year": 1991,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/enactivismo.json",
+      "authors": "Francisco J. Varela; Evan Thompson; Eleanor Rosch",
+      "summary": "El enactivismo es un marco epistemológico y cognitivo que entiende el conocimiento como una actividad encarnada, situada y relacional. Frente a los modelos representacionalistas que conciben la mente como un sistema que copia o procesa información del mundo externo, el enactivismo sostiene que organismo y entorno se co-determinan dinámicamente mediante la acción. La cognición no está encerrada en la cabeza, sino que emerge de la interacción entre cuerpo, percepción, movimiento, historia biológica, afectividad y contexto. En psicoterapia, este marco permite comprender el cambio psicológico como una reorganización de patrones encarnados de acción, regulación, percepción y sentido, conectando de forma especialmente potente con enfoques fenomenológicos, corporales, experienciales, sistémicos y contextuales.",
+      "influencias": [
+        "Fenomenología",
+        "Biología del conocimiento",
+        "Cibernética",
+        "Ciencias cognitivas",
+        "Budismo y filosofía contemplativa"
+      ],
+      "refs": [
+        "Varela, F. J., Thompson, E., & Rosch, E. (1991). The Embodied Mind: Cognitive Science and Human Experience.",
+        "Thompson, E. (2007). Mind in Life: Biology, Phenomenology, and the Sciences of Mind.",
+        "Di Paolo, E. A., Buhrmann, T., & Barandiaran, X. E. (2017). Sensorimotor Life: An Enactive Proposal."
+      ],
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "ciudad": "París / Berkeley",
+      "pais": "Francia / EE. UU.",
+      "escuelaId": "epistemologia"
+    },
+    {
       "id": "functional-analytic-psychotherapy-fap-1991",
       "label": "Functional Analytic Psychotherapy (FAP)",
       "year": 1991,
@@ -7097,6 +7126,10 @@
       "target": "hermeneutica"
     },
     {
+      "source": "fenomenologia",
+      "target": "enactivismo"
+    },
+    {
       "source": "falsacionismo",
       "target": "programas-investigacion-lakatos"
     },
@@ -9857,6 +9890,22 @@
     {
       "target": "posestructuralismo-discurso",
       "influence": "Estructuralismo"
+    },
+    {
+      "target": "enactivismo",
+      "influence": "Biología del conocimiento"
+    },
+    {
+      "target": "enactivismo",
+      "influence": "Cibernética"
+    },
+    {
+      "target": "enactivismo",
+      "influence": "Ciencias cognitivas"
+    },
+    {
+      "target": "enactivismo",
+      "influence": "Budismo y filosofía contemplativa"
     },
     {
       "target": "falsacionismo",
