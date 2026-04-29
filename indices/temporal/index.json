@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-29T14:31:18.523Z",
+  "generatedAt": "2026-04-29T14:34:26.965Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 10,
-    "modelos": 205,
-    "links": 232,
-    "unresolvedInfluences": 698
+    "modelos": 213,
+    "links": 254,
+    "unresolvedInfluences": 695
   },
   "nodes": [
     {
@@ -14,8 +14,8 @@
       "year": 1830,
       "group": "Otros",
       "importance": 3,
-      "type": "marco",
-      "isMarco": true,
+      "type": "modelo",
+      "isMarco": false,
       "file": "modelos/epistemologia/positivismo.json",
       "authors": "Auguste Comte",
       "summary": "El positivismo es un marco epistemológico fundacional que establece que el conocimiento científico debe basarse exclusivamente en hechos observables, medibles y verificables empíricamente. Rechaza explicaciones metafísicas o especulativas y propone que la realidad existe independientemente del observador y puede ser conocida de forma objetiva mediante el método científico. En psicoterapia, el positivismo ha influido profundamente en los modelos conductuales y cognitivo-conductuales, orientando la investigación hacia variables observables, la operacionalización de constructos, el uso de diseños experimentales y la validación empírica de intervenciones. Este enfoque prioriza la predicción, el control y la replicabilidad como criterios de validez, y sitúa al terapeuta en una posición de observador-experto que aplica procedimientos basados en evidencia para modificar variables psicológicas identificables.",
@@ -76,6 +76,34 @@
       "ciudad": "Viena",
       "pais": "Austria",
       "escuelaId": "psicoanalisis"
+    },
+    {
+      "id": "fenomenologia",
+      "label": "Fenomenología",
+      "year": 1900,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/fenomenologia.json",
+      "authors": "Edmund Husserl",
+      "summary": "La fenomenología es un marco epistemológico que sitúa la experiencia vivida, la intencionalidad de la conciencia y la descripción rigurosa de los fenómenos como base del conocimiento. Su interés principal no es explicar causalmente la conducta desde fuera, sino describir cómo el mundo aparece para un sujeto situado. En psicoterapia, la fenomenología fundamenta modelos centrados en la experiencia inmediata, la presencia, el cuerpo vivido, el significado sentido y la comprensión del mundo subjetivo del paciente antes de imponer categorías externas. Este marco ha influido de forma decisiva en la tradición humanista, existencial, experiencial y corporal, al ofrecer una base para atender a la vivencia tal como se presenta en la conciencia.",
+      "influencias": [
+        "Filosofía alemana",
+        "Brentano",
+        "Psicología descriptiva",
+        "Kantismo"
+      ],
+      "refs": [
+        "Husserl, E. (1900-1901). Logical Investigations.",
+        "Husserl, E. (1913). Ideas Pertaining to a Pure Phenomenology and to a Phenomenological Philosophy.",
+        "Merleau-Ponty, M. (1945). Phenomenology of Perception."
+      ],
+      "lat": 51.5413,
+      "lon": 9.9158,
+      "ciudad": "Göttingen",
+      "pais": "Alemania",
+      "escuelaId": "epistemologia"
     },
     {
       "id": "freud-modelo-topografico-1900",
@@ -1252,8 +1280,8 @@
       "year": 1959,
       "group": "Otros",
       "importance": 3,
-      "type": "marco",
-      "isMarco": true,
+      "type": "modelo",
+      "isMarco": false,
       "file": "modelos/epistemologia/falsacionismo.json",
       "authors": "Karl R. Popper",
       "summary": "El falsacionismo es un marco epistemológico propuesto por Karl Popper que redefine el criterio de cientificidad: una teoría no es científica por poder verificarse, sino por poder ser refutada. Frente al positivismo clásico, Popper sostiene que ninguna cantidad de observaciones puede confirmar definitivamente una teoría, pero un solo contraejemplo bien establecido puede falsarla. El conocimiento científico progresa mediante un proceso de conjeturas y refutaciones, donde las teorías se someten a pruebas rigurosas diseñadas para intentar demostrar que son falsas. En psicoterapia, este enfoque influye en la formulación de hipótesis clínicas como propuestas provisionales que deben contrastarse activamente en la práctica, favoreciendo modelos abiertos, revisables y sensibles a la evidencia negativa. El terapeuta no busca confirmar su teoría del caso, sino ponerla a prueba continuamente, ajustándola en función de los datos que la contradicen.",
@@ -1299,6 +1327,34 @@
       "ciudad": "Columbia, Missouri",
       "pais": "EE. UU.",
       "escuelaId": "conductismo"
+    },
+    {
+      "id": "hermeneutica",
+      "label": "Hermenéutica",
+      "year": 1960,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/hermeneutica.json",
+      "authors": "Hans-Georg Gadamer; Paul Ricoeur",
+      "summary": "La hermenéutica es un marco epistemológico centrado en la interpretación del sentido. Frente a la idea de que conocer consiste únicamente en observar hechos, la hermenéutica sostiene que toda comprensión humana está mediada por lenguaje, tradición, historia, prejuicios productivos y horizontes culturales. En psicoterapia, la hermenéutica fundamenta la comprensión clínica como un proceso interpretativo en el que paciente y terapeuta exploran significados, narrativas, símbolos, conflictos y formas de autocomprensión. La verdad terapéutica no se reduce a correspondencia objetiva, sino que emerge como comprensión transformadora capaz de reorganizar la relación de la persona con su propia historia y con el mundo.",
+      "influencias": [
+        "Fenomenología",
+        "Filosofía del lenguaje",
+        "Historia de la interpretación",
+        "Existencialismo"
+      ],
+      "refs": [
+        "Gadamer, H.-G. (1960). Truth and Method.",
+        "Ricoeur, P. (1983-1985). Time and Narrative.",
+        "Ricoeur, P. (1990). Oneself as Another."
+      ],
+      "lat": 49.3988,
+      "lon": 8.6724,
+      "ciudad": "Heidelberg",
+      "pais": "Alemania",
+      "escuelaId": "epistemologia"
     },
     {
       "id": "terapia-familiar-bowen-1960",
@@ -2148,13 +2204,36 @@
       "escuelaId": "otros"
     },
     {
+      "id": "posestructuralismo-discurso",
+      "label": "Posestructuralismo y discurso",
+      "year": 1970,
+      "group": "Otros",
+      "importance": 2,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/posestructuralismo-discurso.json",
+      "authors": "Michel Foucault",
+      "summary": "El posestructuralismo analiza cómo el conocimiento y la verdad están vinculados a estructuras de poder y discurso. En psicoterapia, permite cuestionar categorías, identidades y normas que organizan la experiencia.",
+      "influencias": [
+        "Estructuralismo"
+      ],
+      "refs": [
+        "Foucault, M. (1975). Discipline and Punish."
+      ],
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "ciudad": "París",
+      "pais": "Francia",
+      "escuelaId": "epistemologia"
+    },
+    {
       "id": "programas-investigacion-lakatos",
       "label": "Programas de investigación científica",
       "year": 1970,
       "group": "Otros",
       "importance": 3,
-      "type": "marco",
-      "isMarco": true,
+      "type": "modelo",
+      "isMarco": false,
       "file": "modelos/epistemologia/programas-investigacion-lakatos.json",
       "authors": "Imre Lakatos",
       "summary": "El marco de los programas de investigación científica de Lakatos integra y supera la tensión entre el falsacionismo de Popper y la práctica real de la ciencia. Propone que las teorías no se abandonan ante una sola refutación, sino que forman parte de programas más amplios compuestos por un núcleo duro de supuestos fundamentales y un cinturón protector de hipótesis auxiliares que pueden modificarse. El progreso científico se evalúa no por la falsación puntual, sino por la capacidad del programa para generar predicciones novedosas y explicar fenómenos nuevos. En psicoterapia, este marco permite entender los modelos como sistemas dinámicos que evolucionan en el tiempo, donde ciertas ideas centrales se mantienen mientras las técnicas y formulaciones clínicas se ajustan. Facilita una visión integradora sin caer en relativismo, al permitir comparar programas según su poder explicativo y su capacidad de generar cambio clínico efectivo.",
@@ -2647,6 +2726,31 @@
       "escuelaId": "psicoanalisis"
     },
     {
+      "id": "realismo-critico",
+      "label": "Realismo crítico",
+      "year": 1975,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/realismo-critico.json",
+      "authors": "Roy Bhaskar",
+      "summary": "El realismo crítico es un marco epistemológico que combina el reconocimiento de una realidad independiente con la idea de que nuestro conocimiento sobre ella es siempre mediado, parcial y revisable. Propone una ontología estratificada donde los fenómenos observables dependen de mecanismos subyacentes que no siempre son directamente accesibles. En psicoterapia, permite integrar enfoques objetivos y constructivos, reconociendo tanto la existencia de procesos psicológicos reales como la mediación interpretativa en su comprensión. Este marco resulta especialmente útil para integrar modelos sin caer en relativismo ni en reduccionismo.",
+      "influencias": [
+        "Filosofía de la ciencia",
+        "Marxismo crítico",
+        "Realismo filosófico"
+      ],
+      "refs": [
+        "Bhaskar, R. (1975). A Realist Theory of Science."
+      ],
+      "lat": 51.7548,
+      "lon": -1.2544,
+      "ciudad": "Oxford",
+      "pais": "Reino Unido",
+      "escuelaId": "epistemologia"
+    },
+    {
       "id": "terapia-familiar-sistemica-milan-1975",
       "label": "Terapia Familiar Sistémica de Milán",
       "year": 1975,
@@ -2964,6 +3068,30 @@
       "ciudad": "Pekín",
       "pais": "China",
       "escuelaId": "otros"
+    },
+    {
+      "id": "epistemologia-sistemica-cibernetica-segundo-orden",
+      "label": "Epistemología sistémica (cibernética de segundo orden)",
+      "year": 1980,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/epistemologia-sistemica-cibernetica-segundo-orden.json",
+      "authors": "Heinz von Foerster",
+      "summary": "La cibernética de segundo orden introduce al observador dentro del sistema observado. En psicoterapia, implica que el terapeuta no es externo ni neutral, sino parte activa del sistema relacional, co-construyendo la realidad clínica.",
+      "influencias": [
+        "Cibernética",
+        "Constructivismo"
+      ],
+      "refs": [
+        "Foerster, H. (1980). Observing Systems."
+      ],
+      "lat": 40.1106,
+      "lon": -88.2073,
+      "ciudad": "Urbana, Illinois",
+      "pais": "EE. UU.",
+      "escuelaId": "epistemologia"
     },
     {
       "id": "taoismo-psicologia-puentes-1980",
@@ -3512,6 +3640,29 @@
       "escuelaId": "conductismo"
     },
     {
+      "id": "construccionismo-narrativo",
+      "label": "Construccionismo narrativo",
+      "year": 1990,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/construccionismo-narrativo.json",
+      "authors": "Michael White; David Epston",
+      "summary": "El construccionismo narrativo entiende la realidad psicológica como construida a través de relatos. La terapia se centra en deconstruir narrativas problemáticas y generar nuevas historias que amplíen la identidad y la acción.",
+      "influencias": [
+        "Construccionismo social"
+      ],
+      "refs": [
+        "White, M. & Epston, D. (1990). Narrative Means to Therapeutic Ends."
+      ],
+      "lat": -34.9285,
+      "lon": 138.6007,
+      "ciudad": "Adelaide",
+      "pais": "Australia",
+      "escuelaId": "epistemologia"
+    },
+    {
       "id": "integracion-asimilativa-1990",
       "label": "Integración asimilativa",
       "year": 1990,
@@ -3854,6 +4005,30 @@
       "ciudad": "Adelaide",
       "pais": "Australia",
       "escuelaId": "constructivista"
+    },
+    {
+      "id": "constructivismo-clinico-postracionalista",
+      "label": "Constructivismo clínico (postracionalista)",
+      "year": 1991,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/constructivismo-clinico-postracionalista.json",
+      "authors": "Vittorio Guidano",
+      "summary": "El constructivismo clínico postracionalista plantea que la experiencia personal se organiza en sistemas de significado que configuran la identidad. La verdad no se define por correspondencia, sino por coherencia interna y continuidad del self. En psicoterapia, el cambio implica reorganizar estos sistemas narrativos para aumentar su flexibilidad e integración.",
+      "influencias": [
+        "Constructivismo",
+        "Teoría del apego"
+      ],
+      "refs": [
+        "Guidano, V. (1991). The Self in Process."
+      ],
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "ciudad": "Roma",
+      "pais": "Italia",
+      "escuelaId": "epistemologia"
     },
     {
       "id": "functional-analytic-psychotherapy-fap-1991",
@@ -5229,6 +5404,30 @@
       "escuelaId": "otros"
     },
     {
+      "id": "contextualismo-funcional-act",
+      "label": "Contextualismo funcional (ACT)",
+      "year": 2001,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/contextualismo-funcional-act.json",
+      "authors": "Steven C. Hayes",
+      "summary": "El contextualismo funcional es la base epistemológica de ACT y define el conocimiento en términos de su capacidad para predecir e influir en la conducta en contextos específicos. Derivado del pragmatismo y del conductismo radical, este enfoque prioriza la utilidad funcional sobre la correspondencia objetiva, centrándose en cómo los eventos psicológicos operan en contexto. En psicoterapia, orienta la intervención hacia la flexibilidad psicológica y la efectividad práctica.",
+      "influencias": [
+        "Pragmatismo",
+        "Conductismo radical"
+      ],
+      "refs": [
+        "Hayes, S. C. (2001). Acceptance and Commitment Therapy."
+      ],
+      "lat": 39.5296,
+      "lon": -119.8138,
+      "ciudad": "Reno, Nevada",
+      "pais": "EE. UU.",
+      "escuelaId": "epistemologia"
+    },
+    {
       "id": "sensorimotor-ogden-2001",
       "label": "Psicoterapia sensoriomotriz",
       "year": 2001,
@@ -5910,6 +6109,10 @@
   ],
   "links": [
     {
+      "source": "hermeneutica",
+      "target": "psicoanalisis-clasico-freud"
+    },
+    {
       "source": "psicoanalisis-clasico-freud",
       "target": "freud-modelo-topografico-1900"
     },
@@ -6126,6 +6329,10 @@
       "target": "analisis-funcional-clinico-kanfer-saslow-1969"
     },
     {
+      "source": "contextualismo-funcional-act",
+      "target": "analisis-funcional-clinico-kanfer-saslow-1969"
+    },
+    {
       "source": "condicionamiento-operante-skinner-1938",
       "target": "autocontrol-conductual-kanfer-karoly"
     },
@@ -6314,11 +6521,19 @@
       "target": "cognitive-processing-therapy-resick-1992"
     },
     {
+      "source": "contextualismo-funcional-act",
+      "target": "terapia-dialectico-conductual-linehan-1993"
+    },
+    {
       "source": "mindfulness-mbsr-contemplativo-1979",
       "target": "terapia-dialectico-conductual-linehan-1993"
     },
     {
       "source": "analisis-funcional-clinico-kanfer-saslow-1969",
+      "target": "functional-analytic-psychotherapy-fap-1991"
+    },
+    {
+      "source": "contextualismo-funcional-act",
       "target": "functional-analytic-psychotherapy-fap-1991"
     },
     {
@@ -6330,12 +6545,28 @@
       "target": "act-hayes-strosahl-wilson-1999"
     },
     {
+      "source": "contextualismo-funcional-act",
+      "target": "act-hayes-strosahl-wilson-1999"
+    },
+    {
       "source": "mindfulness-mbsr-contemplativo-1979",
       "target": "mbct-segal-williams-teasdale-2002"
     },
     {
       "source": "terapia-cognitiva-beck-depresion-1967",
       "target": "mbct-segal-williams-teasdale-2002"
+    },
+    {
+      "source": "contextualismo-funcional-act",
+      "target": "mbct-segal-williams-teasdale-2002"
+    },
+    {
+      "source": "contextualismo-funcional-act",
+      "target": "teoria-marcos-relacionales-rft-hayes-barnesholmes-roche-2001"
+    },
+    {
+      "source": "contextualismo-funcional-act",
+      "target": "process-based-therapy-hayes-hofmann-2020"
     },
     {
       "source": "act-hayes-strosahl-wilson-1999",
@@ -6392,6 +6623,14 @@
     {
       "source": "psicologia-cognitiva-neisser-1967",
       "target": "ruler-yale-emotional-intelligence-2012"
+    },
+    {
+      "source": "fenomenologia",
+      "target": "h10dasein1943"
+    },
+    {
+      "source": "hermeneutica",
+      "target": "h10dasein1943"
     },
     {
       "source": "teoria-apego-bowlby",
@@ -6490,6 +6729,10 @@
       "target": "terapia-gestalt-perls-1951"
     },
     {
+      "source": "fenomenologia",
+      "target": "terapia-existencial-may-yalom-1961"
+    },
+    {
       "source": "logoterapia-1940",
       "target": "terapia-existencial-may-yalom-1961"
     },
@@ -6580,6 +6823,14 @@
     {
       "source": "psicologia-self-kohut",
       "target": "self-dialogico-hermans"
+    },
+    {
+      "source": "fenomenologia",
+      "target": "autopoiesis-maturana-varela-1972"
+    },
+    {
+      "source": "hermeneutica",
+      "target": "construccionismo-social-gergen-1985"
     },
     {
       "source": "pragmatismo",
@@ -6790,7 +7041,15 @@
       "target": "multidimensional-family-therapy-mdft"
     },
     {
+      "source": "contextualismo-funcional-act",
+      "target": "multidimensional-family-therapy-mdft"
+    },
+    {
       "source": "aprendizaje-social-bandura-1977",
+      "target": "multisystemic-therapy-mst"
+    },
+    {
+      "source": "contextualismo-funcional-act",
       "target": "multisystemic-therapy-mst"
     },
     {
@@ -6830,12 +7089,40 @@
       "target": "construccionismo-social"
     },
     {
-      "source": "falsacionismo",
-      "target": "paradigmas-kuhn"
+      "source": "hermeneutica",
+      "target": "construccionismo-social"
+    },
+    {
+      "source": "fenomenologia",
+      "target": "hermeneutica"
     },
     {
       "source": "falsacionismo",
       "target": "programas-investigacion-lakatos"
+    },
+    {
+      "source": "falsacionismo",
+      "target": "paradigmas-kuhn"
+    },
+    {
+      "source": "pragmatismo",
+      "target": "contextualismo-funcional-act"
+    },
+    {
+      "source": "constructivismo",
+      "target": "constructivismo-clinico-postracionalista"
+    },
+    {
+      "source": "teoria-apego-bowlby",
+      "target": "constructivismo-clinico-postracionalista"
+    },
+    {
+      "source": "construccionismo-social",
+      "target": "construccionismo-narrativo"
+    },
+    {
+      "source": "constructivismo",
+      "target": "epistemologia-sistemica-cibernetica-segundo-orden"
     }
   ],
   "unresolvedInfluences": [
@@ -6858,10 +7145,6 @@
     {
       "target": "psicoanalisis-clasico-freud",
       "influence": "Biología evolucionista"
-    },
-    {
-      "target": "psicoanalisis-clasico-freud",
-      "influence": "Hermenéutica"
     },
     {
       "target": "psicoanalisis-clasico-freud",
@@ -7282,10 +7565,6 @@
     {
       "target": "analisis-funcional-clinico-kanfer-saslow-1969",
       "influence": "Análisis experimental de la conducta"
-    },
-    {
-      "target": "analisis-funcional-clinico-kanfer-saslow-1969",
-      "influence": "Contextualismo funcional (Hayes)"
     },
     {
       "target": "autocontrol-conductual-kanfer-karoly",
@@ -7769,10 +8048,6 @@
     },
     {
       "target": "terapia-dialectico-conductual-linehan-1993",
-      "influence": "Contextualismo funcional (Hayes)"
-    },
-    {
-      "target": "terapia-dialectico-conductual-linehan-1993",
       "influence": "Filosofía dialéctica"
     },
     {
@@ -7786,10 +8061,6 @@
     {
       "target": "functional-analytic-psychotherapy-fap-1991",
       "influence": "Conductismo radical"
-    },
-    {
-      "target": "functional-analytic-psychotherapy-fap-1991",
-      "influence": "Contextualismo funcional (Hayes)"
     },
     {
       "target": "functional-analytic-psychotherapy-fap-1991",
@@ -7820,16 +8091,8 @@
       "influence": "RFT (Teoría de marcos relacionales)"
     },
     {
-      "target": "act-hayes-strosahl-wilson-1999",
-      "influence": "Contextualismo funcional (Hayes)"
-    },
-    {
       "target": "mbct-segal-williams-teasdale-2002",
       "influence": "Prevención de recaídas"
-    },
-    {
-      "target": "mbct-segal-williams-teasdale-2002",
-      "influence": "Contextualismo funcional (Hayes)"
     },
     {
       "target": "teoria-marcos-relacionales-rft-hayes-barnesholmes-roche-2001",
@@ -7841,19 +8104,11 @@
     },
     {
       "target": "teoria-marcos-relacionales-rft-hayes-barnesholmes-roche-2001",
-      "influence": "Contextualismo funcional"
-    },
-    {
-      "target": "teoria-marcos-relacionales-rft-hayes-barnesholmes-roche-2001",
       "influence": "Investigación experimental en equivalencia de estímulos"
     },
     {
       "target": "teoria-marcos-relacionales-rft-hayes-barnesholmes-roche-2001",
       "influence": "Pragmmatismo / contextualismo filosófico"
-    },
-    {
-      "target": "process-based-therapy-hayes-hofmann-2020",
-      "influence": "Contextualismo funcional"
     },
     {
       "target": "unified-protocol-up-barlow-2011",
@@ -7989,19 +8244,11 @@
     },
     {
       "target": "h10dasein1943",
-      "influence": "Fenomenología (Husserl)"
-    },
-    {
-      "target": "h10dasein1943",
       "influence": "Fenomenología existencial"
     },
     {
       "target": "h10dasein1943",
       "influence": "Heidegger"
-    },
-    {
-      "target": "h10dasein1943",
-      "influence": "Hermenéutica"
     },
     {
       "target": "h10dasein1943",
@@ -8262,10 +8509,6 @@
     {
       "target": "terapia-gestalt-perls-1951",
       "influence": "Teatro y arte experimental"
-    },
-    {
-      "target": "terapia-existencial-may-yalom-1961",
-      "influence": "Fenomenología"
     },
     {
       "target": "terapia-existencial-may-yalom-1961",
@@ -8537,10 +8780,6 @@
     },
     {
       "target": "autopoiesis-maturana-varela-1972",
-      "influence": "Fenomenología"
-    },
-    {
-      "target": "autopoiesis-maturana-varela-1972",
       "influence": "Teoría de sistemas"
     },
     {
@@ -8562,10 +8801,6 @@
     {
       "target": "constructivismo-genetico-piaget-1936",
       "influence": "Interaccionismo (sujeto-medio)"
-    },
-    {
-      "target": "construccionismo-social-gergen-1985",
-      "influence": "Hermenéutica"
     },
     {
       "target": "construccionismo-social-gergen-1985",
@@ -9140,10 +9375,6 @@
       "influence": "Epistemología genética"
     },
     {
-      "target": "multidimensional-family-therapy-mdft",
-      "influence": "Contextualismo funcional (Hayes)"
-    },
-    {
       "target": "multisystemic-therapy-mst",
       "influence": "Sistémico"
     },
@@ -9154,10 +9385,6 @@
     {
       "target": "multisystemic-therapy-mst",
       "influence": "Intervención comunitaria"
-    },
-    {
-      "target": "multisystemic-therapy-mst",
-      "influence": "Contextualismo funcional (Hayes)"
     },
     {
       "target": "functional-family-therapy-fft",
@@ -9560,22 +9787,6 @@
       "influence": "Psicología funcional"
     },
     {
-      "target": "construccionismo-social",
-      "influence": "Sociología del conocimiento"
-    },
-    {
-      "target": "construccionismo-social",
-      "influence": "Filosofía del lenguaje"
-    },
-    {
-      "target": "construccionismo-social",
-      "influence": "Hermenéutica"
-    },
-    {
-      "target": "construccionismo-social",
-      "influence": "Postestructuralismo"
-    },
-    {
       "target": "constructivismo",
       "influence": "Epistemología genética"
     },
@@ -9592,20 +9803,60 @@
       "influence": "Psicología del desarrollo"
     },
     {
-      "target": "paradigmas-kuhn",
-      "influence": "Historia de la ciencia"
+      "target": "construccionismo-social",
+      "influence": "Sociología del conocimiento"
     },
     {
-      "target": "paradigmas-kuhn",
-      "influence": "Filosofía de la ciencia del siglo XX"
+      "target": "construccionismo-social",
+      "influence": "Filosofía del lenguaje"
     },
     {
-      "target": "paradigmas-kuhn",
-      "influence": "Crítica al positivismo lógico"
+      "target": "construccionismo-social",
+      "influence": "Postestructuralismo"
     },
     {
-      "target": "paradigmas-kuhn",
-      "influence": "Sociología del conocimiento científico"
+      "target": "fenomenologia",
+      "influence": "Filosofía alemana"
+    },
+    {
+      "target": "fenomenologia",
+      "influence": "Brentano"
+    },
+    {
+      "target": "fenomenologia",
+      "influence": "Psicología descriptiva"
+    },
+    {
+      "target": "fenomenologia",
+      "influence": "Kantismo"
+    },
+    {
+      "target": "hermeneutica",
+      "influence": "Filosofía del lenguaje"
+    },
+    {
+      "target": "hermeneutica",
+      "influence": "Historia de la interpretación"
+    },
+    {
+      "target": "hermeneutica",
+      "influence": "Existencialismo"
+    },
+    {
+      "target": "realismo-critico",
+      "influence": "Filosofía de la ciencia"
+    },
+    {
+      "target": "realismo-critico",
+      "influence": "Marxismo crítico"
+    },
+    {
+      "target": "realismo-critico",
+      "influence": "Realismo filosófico"
+    },
+    {
+      "target": "posestructuralismo-discurso",
+      "influence": "Estructuralismo"
     },
     {
       "target": "falsacionismo",
@@ -9630,6 +9881,30 @@
     {
       "target": "programas-investigacion-lakatos",
       "influence": "Filosofía de la ciencia del siglo XX"
+    },
+    {
+      "target": "paradigmas-kuhn",
+      "influence": "Historia de la ciencia"
+    },
+    {
+      "target": "paradigmas-kuhn",
+      "influence": "Filosofía de la ciencia del siglo XX"
+    },
+    {
+      "target": "paradigmas-kuhn",
+      "influence": "Crítica al positivismo lógico"
+    },
+    {
+      "target": "paradigmas-kuhn",
+      "influence": "Sociología del conocimiento científico"
+    },
+    {
+      "target": "contextualismo-funcional-act",
+      "influence": "Conductismo radical"
+    },
+    {
+      "target": "epistemologia-sistemica-cibernetica-segundo-orden",
+      "influence": "Cibernética"
     }
   ]
 }
