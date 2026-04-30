@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-29T14:52:22.488Z",
+  "generatedAt": "2026-04-30T06:26:20.822Z",
   "source": "data/Core/escuelas + data/Core/modelos",
   "stats": {
     "escuelas": 11,
-    "modelos": 214,
-    "links": 255,
-    "unresolvedInfluences": 699
+    "modelos": 215,
+    "links": 256,
+    "unresolvedInfluences": 701
   },
   "nodes": [
     {
@@ -437,6 +437,32 @@
       "ciudad": "Londres",
       "pais": "Reino Unido",
       "escuelaId": "psicoanalisis"
+    },
+    {
+      "id": "interaccionismo-simbolico",
+      "label": "Interaccionismo simbólico",
+      "year": 1934,
+      "group": "Otros",
+      "importance": 3,
+      "type": "modelo",
+      "isMarco": false,
+      "file": "modelos/epistemologia/interaccionismo-simbolico.json",
+      "authors": "George H. Mead; Herbert Blumer",
+      "summary": "El interaccionismo simbólico es un marco epistemológico que sitúa el origen del significado, la identidad y la realidad social en los procesos de interacción simbólica. Las personas actúan en función de los significados que las cosas tienen para ellas, y esos significados se generan y modifican en la interacción con otros mediante el lenguaje y los símbolos. El self se constituye reflexivamente a partir de la internalización de las actitudes de los otros significativos y del grupo social. En psicoterapia, este enfoque permite comprender los problemas como configuraciones de significado sostenidas relacionalmente y orienta el cambio hacia la transformación de patrones de interacción, posiciones identitarias y usos del lenguaje en contextos concretos.",
+      "influencias": [
+        "Pragmatismo",
+        "Sociología de Chicago",
+        "Filosofía del lenguaje"
+      ],
+      "refs": [
+        "Mead, G. H. (1934). Mind, Self, and Society.",
+        "Blumer, H. (1969). Symbolic Interactionism: Perspective and Method."
+      ],
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "ciudad": "Chicago, Illinois",
+      "pais": "EE. UU.",
+      "escuelaId": "epistemologia"
     },
     {
       "id": "constructivismo",
@@ -7122,6 +7148,10 @@
       "target": "construccionismo-social"
     },
     {
+      "source": "pragmatismo",
+      "target": "interaccionismo-simbolico"
+    },
+    {
       "source": "fenomenologia",
       "target": "hermeneutica"
     },
@@ -9846,6 +9876,14 @@
     {
       "target": "construccionismo-social",
       "influence": "Postestructuralismo"
+    },
+    {
+      "target": "interaccionismo-simbolico",
+      "influence": "Sociología de Chicago"
+    },
+    {
+      "target": "interaccionismo-simbolico",
+      "influence": "Filosofía del lenguaje"
     },
     {
       "target": "fenomenologia",
